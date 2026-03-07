@@ -1,0 +1,58 @@
+{
+  "type": "new_delivery",
+  "folder": "obsidian-claude-code-life",
+  "topic": "精读AI",
+  "videoCount": 3,
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "title": "解锁AI潜力！用Obsidian和Claude Code管理人生的秘密【精读AI系列第1集】",
+      "description": "每次与AI对话都要重复背景信息？来看看Vin如何利用Obsidian和Claude Code构建高效的知识管理系统！通过链接文件和命令，AI将瞬间理解你的项目和思维，助你省去重复劳动，发现潜在的思维模式。想要提升个人效率？快来了解这套系统吧！记得点赞关注哦！",
+      "tags": [
+        "Obsidian",
+        "Claude",
+        "AI",
+        "个人知识管理",
+        "效率工具",
+        "精读AI",
+        "AI创业",
+        "LLM"
+      ],
+      "cover": "video_1_cover_photo.png"
+    },
+    {
+      "file": "video_2.mp4",
+      "title": "第2集：用AI命令解锁你的思维潜能！",
+      "description": "你有没有想过，AI不仅可以帮你写东西，更能帮你思考？在这一集中，Vin分享了如何用自定义命令从笔记中提取未被发现的思维模式，让你从繁忙的日常中理清思路。想知道你的思维盲点在哪里吗？快来一起探索吧！",
+      "tags": [
+        "AI",
+        "Claude",
+        "思维模式",
+        "自定义命令",
+        "精读AI",
+        "AI创业",
+        "LLM",
+        "AI Agent"
+      ],
+      "cover": "video_2_cover_photo.png"
+    },
+    {
+      "file": "video_3.mp4",
+      "title": "AI设计命令？Vin用Claude Code实现了！",
+      "description": "你相信AI能为你定制工具吗？在这一集中，Vin通过Claude Code分析了自己的笔记库，AI不仅提出了实用的工具和建议，还设计了独特的命令！从全新的角度了解如何让AI主动为你服务，提升你的工作和生活效率。快来看看，或许你也能找到意想不到的灵感！",
+      "tags": [
+        "AI",
+        "Claude",
+        "AI工具",
+        "内容创作",
+        "元提示",
+        "精读AI",
+        "思维伙伴",
+        "视频号"
+      ],
+      "cover": "video_3_cover_photo.png"
+    }
+  ],
+  "detectedAt": "2026-03-02T12:39:15.647Z",
+  "publishMetaReady": true
+}

@@ -1,0 +1,41 @@
+{
+  "type": "new_delivery",
+  "folder": "ivanhzhao-notion-thoughts",
+  "topic": "精读AI",
+  "videoCount": 2,
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "title": "从10x到40x！Notion创始人的AI秘密武器",
+      "description": "想知道Notion的创始人如何将工作效率提高到惊人的40倍吗？他依靠AI Agent，轻松管理多项任务，让工作不再繁琐。了解他是如何突破知识工作者的瓶颈，开启自动驾驶时代的。快来评论分享你的看法吧！",
+      "tags": [
+        "AI",
+        "AI创业",
+        "AI Agent",
+        "Notion",
+        "效率提升",
+        "精读AI",
+        "知识工作"
+      ],
+      "cover": "video_1_cover_photo.png"
+    },
+    {
+      "file": "video_2.mp4",
+      "title": "Notion的700个AI员工：未来的工作方式已来！",
+      "description": "Notion公司在用700个AI Agent重塑工作流程，这不是远未来，而是当下的现实！AI正在改变我们组织的沟通方式，让效率提升不再是梦想。想知道如何在你的团队中引入AI，实现工作流程的自动化吗？快来留言分享你的看法！",
+      "tags": [
+        "AI",
+        "AI创业",
+        "AI Agent",
+        "工作效率",
+        "组织变革",
+        "精读AI",
+        "职场趋势",
+        "未来工作"
+      ],
+      "cover": "video_2_cover_photo.png"
+    }
+  ],
+  "detectedAt": "2026-03-02T13:11:48.539Z",
+  "publishMetaReady": true
+}

@@ -1,0 +1,25 @@
+{
+  "type": "new_delivery",
+  "folder": "red-green-refactor-claude-code",
+  "topic": "AI编程",
+  "videoCount": 1,
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "title": "如何用TDD驯服AI编程？绝对值得一看！",
+      "description": "AI时代，编程质量如何保障？今天我们聊聊TDD，测试驱动开发如何成为拴住AI的最佳工具。通过红绿循环，让AI写出高质量的代码，避免无效测试。想知道具体操作吗？快来看看吧！",
+      "tags": [
+        "TDD",
+        "AI编程",
+        "测试驱动开发",
+        "软件开发",
+        "精读AI",
+        "AI Agent",
+        "LLM"
+      ],
+      "cover": "video_1_cover_photo.png"
+    }
+  ],
+  "detectedAt": "2026-03-05T14:42:09.376Z",
+  "publishMetaReady": true
+}

@@ -1,0 +1,15 @@
+[2026-03-02 21:01:36 SGT] === Blog2Video Scheduler Started ===
+[2026-03-02 21:01:40 SGT] ✓ xiaohongshu cookie is valid
+[2026-03-02 21:01:49 SGT] ✓ weixin cookie is valid
+[2026-03-02 21:01:49 SGT] [Queue] No meta.json in .notifications, attempting auto-generation...
+[2026-03-02 21:01:49 SGT] [AutoMeta] Skipping /home/ubuntu/blog2video/queue/.notifications: no .mp4 files
+[2026-03-02 21:01:49 SGT] [Queue] Skipping .notifications: meta.json generation failed
+[2026-03-02 21:01:49 SGT] [Queue] No meta.json in test, attempting auto-generation...
+[2026-03-02 21:01:49 SGT] [AutoMeta] Skipping /home/ubuntu/blog2video/queue/test: no .mp4 files
+[2026-03-02 21:01:49 SGT] [Queue] Skipping test: meta.json generation failed
+[2026-03-02 21:01:49 SGT] Found 1 items in queue
+[2026-03-02 21:01:49 SGT] Scheduled 3 videos:
+[2026-03-02 21:01:49 SGT]   2026-03-03 08:00:00 SGT - 解锁AI潜力！用Obsidian和Claude Code管理人生的秘密【精读AI系列第1集】
+[2026-03-02 21:01:49 SGT]   2026-03-03 13:00:00 SGT - 第2集：用AI命令解锁你的思维潜能！
+[2026-03-02 21:01:49 SGT]   2026-03-03 21:00:00 SGT - AI设计命令？Vin用Claude Code实现了！
+[2026-03-02 21:01:49 SGT] Waiting 658 minutes for next slot: 2026-03-03 08:00:00 SGT

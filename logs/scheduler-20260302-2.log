@@ -1,0 +1,18 @@
+[2026-03-02 20:58:19 SGT] === Blog2Video Scheduler Started ===
+[2026-03-02 20:58:24 SGT] ✓ xiaohongshu cookie is valid
+[2026-03-02 20:58:32 SGT] ✓ weixin cookie is valid
+[2026-03-02 20:58:32 SGT] [Queue] No meta.json in .notifications, attempting auto-generation...
+[2026-03-02 20:58:32 SGT] [AutoMeta] Skipping /home/ubuntu/blog2video/queue/.notifications: no .mp4 files
+[2026-03-02 20:58:32 SGT] [Queue] Skipping .notifications: meta.json generation failed
+[2026-03-02 20:58:32 SGT] [Queue] No meta.json in test, attempting auto-generation...
+[2026-03-02 20:58:32 SGT] [AutoMeta] Skipping /home/ubuntu/blog2video/queue/test: no .mp4 files
+[2026-03-02 20:58:32 SGT] [Queue] Skipping test: meta.json generation failed
+[2026-03-02 20:58:32 SGT] Found 2 items in queue
+[2026-03-02 20:58:32 SGT] Scheduled 6 videos:
+[2026-03-02 20:58:32 SGT]   2026-03-02 21:00:00 SGT - AI引爆死亡螺旋！SaaS估值暴跌80%
+[2026-03-02 20:58:32 SGT]   2026-03-03 08:00:00 SGT - AI消灭高薪岗位，引爆13万亿房贷危机
+[2026-03-02 20:58:32 SGT]   2026-03-03 13:00:00 SGT - 劳动收入占GDP暴跌10%！AI让智力不再稀缺
+[2026-03-02 20:58:32 SGT]   2026-03-03 21:00:00 SGT - 解锁AI潜力！用Obsidian和Claude Code管理人生的秘密【精读AI系列第1集】
+[2026-03-02 20:58:32 SGT]   2026-03-04 08:00:00 SGT - 第2集：用AI命令解锁你的思维潜能！
+[2026-03-02 20:58:32 SGT]   2026-03-04 13:00:00 SGT - AI设计命令？Vin用Claude Code实现了！
+[2026-03-02 20:58:32 SGT] Waiting 1 minutes for next slot: 2026-03-02 21:00:00 SGT

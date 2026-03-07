@@ -1,0 +1,25 @@
+{
+  "blog_url": "https://x.com/ivanhzhao/status/2003192654545539400",
+  "topic": "精读AI",
+  "source": "ivanhzhao-notion-thoughts",
+  "series_name": "精读AI · Notion AI思考",
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "title": "1个人顶40个工程师｜Notion创始人怎么做到的",
+      "description": "Notion联合创始人几乎不亲手写代码了。同时操控4个AI Agent，午饭前排好任务，睡觉时Agent还在跑。\n\n精读AI · Notion AI思考系列 第1集\n\nSteve Jobs说电脑是\"心智的自行车\"。几十年过去，大部分人还在信息高速公路上骑自行车。AI Agent让一部分人先开上了车。",
+      "tags": ["AI工具", "Notion", "人工智能", "效率提升", "AIAgent", "程序员", "精读AI", "科技"]
+    },
+    {
+      "file": "video_2.mp4",
+      "cover": "video_2_cover_photo.png",
+      "title": "Notion招了700个AI｜你的岗位还安全吗？",
+      "description": "Notion只有1000个真人员工，旁边已经有700多个AI在工作。记会议、回IT问题、帮新人入职。这不是未来，这是现在。\n\n精读AI · Notion AI思考系列 第2集\n\nIvan Zhao用钢铁的历史类比：铁太重只能盖6层楼，钢出现才有摩天大楼。大部分公司还在用铁的思路加AI聊天框，真正的变化不是提速，是组织变形。",
+      "tags": ["AI工具", "Notion", "人工智能", "职场", "AIAgent", "未来工作", "精读AI", "科技"]
+    }
+  ],
+  "schedule": "auto",
+  "auto_generated": true,
+  "publish_meta_generated_at": "2026-03-04T04:14:00Z"
+}

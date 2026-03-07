@@ -1,0 +1,6 @@
+[2026-03-02 20:43:21 SGT] === Blog2Video Scheduler Started ===
+[2026-03-02 20:43:26 SGT] ✓ xiaohongshu cookie is valid
+[2026-03-02 20:43:34 SGT] [Telegram] 🔐 weixin cookie 已过期，请扫码登录！
+Run: npm run login:weixin
+[2026-03-02 20:43:34 SGT] ERROR: 🔐 weixin cookie 已过期，请扫码登录！
+Run: npm run login:weixin undefined

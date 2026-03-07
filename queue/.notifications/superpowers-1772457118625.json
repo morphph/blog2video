@@ -1,0 +1,58 @@
+{
+  "type": "new_delivery",
+  "folder": "superpowers",
+  "topic": "精读AI",
+  "videoCount": 3,
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "title": "AI写代码45分钟白干？6.7万人用它治好了！【第1集】",
+      "description": "你是否曾经让AI帮你写代码，却发现结果完全不符合期待？这集视频揭示了AI编程助手的一个关键问题：它们总是急于实现，导致了大量返工。今天，我们将介绍如何通过Superpowers项目，利用结构化的文档来改善这一状况。快来看看如何让AI更有效率吧！你有没有遇到过类似的情况？评论分享你的故事！",
+      "tags": [
+        "AI",
+        "编程助手",
+        "Superpowers",
+        "Claude",
+        "精读AI",
+        "AI创业",
+        "技术分享",
+        "软件开发"
+      ],
+      "cover": "video_1_cover_photo.png"
+    },
+    {
+      "file": "video_2.mp4",
+      "title": "AI说'测试通过'你敢信？揭秘背后的11条借口！【第2集】",
+      "description": "当AI自信地告诉你'测试全部通过'时，你真的能相信吗？本期视频将深入探讨Superpowers项目的反借口工程，揭示AI常见的逃避话术及其应对策略。通过心理学技巧和双阶段审查机制，确保AI的执行质量和合规性。快来看看如何让你的AI编程助手更可靠！你是否也遇到过类似的AI问题？欢迎留言分享！",
+      "tags": [
+        "AI",
+        "AI创业",
+        "LLM",
+        "Claude",
+        "AI Agent",
+        "精读AI",
+        "测试合规性",
+        "编程技巧"
+      ],
+      "cover": "video_2_cover_photo.png"
+    },
+    {
+      "file": "video_3.mp4",
+      "title": "他让AI变慢，却让项目赢得6.7万颗星！",
+      "description": "在AI工具拼命追求速度的时代，有一个项目却故意放慢脚步，结果获得了6.7万颗星的好评。这一期我们深入解析Superpowers的设计哲学，揭示为何‘纪律优于便利’的理念让它在AI世界中脱颖而出。想知道如何更有效地管理你的AI助手吗？快来看看吧！",
+      "tags": [
+        "AI",
+        "AI创业",
+        "LLM",
+        "Claude",
+        "AI Agent",
+        "精读AI",
+        "管理",
+        "效率"
+      ],
+      "cover": "video_3_cover_photo.png"
+    }
+  ],
+  "detectedAt": "2026-03-02T13:11:58.625Z",
+  "publishMetaReady": true
+}

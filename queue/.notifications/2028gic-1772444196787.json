@@ -1,0 +1,58 @@
+{
+  "type": "new_delivery",
+  "folder": "2028gic",
+  "topic": "精读 Citrini Research：AI如何引爆行业坍塌、金融危机与社会制度重构",
+  "videoCount": 3,
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "title": "AI引爆死亡螺旋！SaaS估值暴跌80%",
+      "description": "【精读AI·系列1/3】精读 Citrini Research 思想实验：站在2028年回望，AI如何引爆行业级坍塌。一个程序员+AI几周复制一个SaaS产品，护城河被填平，通缩死亡螺旋启动。软件、中介、支付三大行业正在被系统性团灭。",
+      "tags": [
+        "AI",
+        "AI创业",
+        "LLM",
+        "Claude",
+        "AI Agent",
+        "精读AI",
+        "SaaS",
+        "AI取代工作"
+      ],
+      "cover": "video_1_cover_photo.png"
+    },
+    {
+      "file": "video_2.mp4",
+      "title": "AI消灭高薪岗位，引爆13万亿房贷危机",
+      "description": "【精读AI·系列2/3】继续精读 Citrini Research：AI引爆的金融冲击。信用评分780+的优质借款人突然断供，不是因为乱花钱，而是AI消灭了他们的工作。私募信贷50亿违约只是开始，13万亿房贷市场的风控模型正在集体失效。",
+      "tags": [
+        "AI",
+        "AI创业",
+        "LLM",
+        "Claude",
+        "AI Agent",
+        "精读AI",
+        "AI失业",
+        "AI与金融"
+      ],
+      "cover": "video_2_cover_photo.png"
+    },
+    {
+      "file": "video_3.mp4",
+      "title": "劳动收入占GDP暴跌10%！AI让智力不再稀缺",
+      "description": "【精读AI·系列3/3】精读 Citrini Research 最终篇：当人类智力不再稀缺，整个社会怎么办？劳动收入占GDP从56%暴跌到46%，税收、房贷、社保，每一层制度的地基都在松动。你该如何准备？",
+      "tags": [
+        "AI",
+        "AI创业",
+        "LLM",
+        "Claude",
+        "AI Agent",
+        "精读AI",
+        "AI超级个体",
+        "AI时代"
+      ],
+      "cover": "video_3_cover_photo.png"
+    }
+  ],
+  "detectedAt": "2026-03-02T09:36:36.787Z",
+  "publishMetaReady": false
+}

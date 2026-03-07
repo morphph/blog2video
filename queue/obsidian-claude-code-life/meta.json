@@ -1,0 +1,32 @@
+{
+  "blog_url": "https://www.youtube.com/watch?v=6MBq1paspVU",
+  "topic": "精读AI",
+  "source": "obsidian-claude-code-life",
+  "series_name": "精读AI · Obsidian × Claude Code",
+  "videos": [
+    {
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "title": "Obsidian+Claude Code｜一个命令加载你的整个人生",
+      "description": "一个命令，AI瞬间加载你的整个人生。\n\n精读AI · Obsidian×Claude Code系列 第1集\n\n每次开新对话都要从头解释？Vin用Obsidian知识图谱+Claude Code，一个/context命令搞定所有上下文。关键不是AI能读文件，是能看到文件之间那张隐形的关系网。",
+      "tags": ["AI工具", "Claude", "Obsidian", "效率神器", "AI编程", "知识管理", "精读AI", "程序员"]
+    },
+    {
+      "file": "video_2.mp4",
+      "cover": "video_2_cover_photo.png",
+      "title": "Obsidian+Claude Code｜AI读完笔记，发现了他自己不知道的秘密",
+      "description": "AI从13个月的笔记碎片里，拼出一个想法的完整进化史。连他自己都没意识到。\n\n精读AI · Obsidian×Claude Code系列 第2集\n\nVin造了十多个自定义命令，让AI不只干活，还帮他思考。/drift对比你说的和做的，/trace追踪想法13个月的进化。大多数人让AI干活，他让AI当镜子。",
+      "tags": ["AI工具", "Claude", "Obsidian", "效率神器", "AI编程", "思维方式", "精读AI", "个人成长"]
+    },
+    {
+      "file": "video_3.mp4",
+      "cover": "video_3_cover_photo.png",
+      "title": "Obsidian+Claude Code｜5分钟扫完笔记，给了张人生规划",
+      "description": "他没告诉AI该造什么，AI自己设计了一个比他想的还好用的命令。\n\n精读AI · Obsidian×Claude Code系列 第3集\n\n让Claude Code扫描整个笔记库，5分钟输出：该造的工具、该见的人、该写的文章。这叫meta-prompting——你不教AI做菜，让AI看完你的厨房告诉你该学什么菜。",
+      "tags": ["AI工具", "Claude", "人工智能", "效率神器", "AI编程", "精读AI", "提示词", "程序员"]
+    }
+  ],
+  "schedule": "fixed",
+  "auto_generated": true,
+  "publish_meta_generated_at": "2026-03-04T04:14:00Z"
+}

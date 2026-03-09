@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      color: #3B82F6;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .card-test {
+      border-left: 4px solid #10B981;
+    }
+    .card-warn {
+      border-left: 4px solid #EF4444;
+    }
+    .card-action {
+      border-left: 4px solid #F59E0B;
+    }
+    .card .card-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .green { color: #10B981; }
+    .red { color: #EF4444; }
+    .yellow { color: #F59E0B; }
+    .card .desc {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.55;
+    }
+    .desc .white {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .code {
+      color: #8B5CF6;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Puppeteer MCP 浏览器测试</div>
+
+    <div class="card card-test">
+      <div class="card-title"><span class="green">真实测试</span></div>
+      <div class="desc">不是跑单元测试就算过了<br><span class="white">像用户一样打开浏览器点击查看</span></div>
+    </div>
+
+    <div class="card card-warn">
+      <div class="card-title"><span class="red">踩坑</span></div>
+      <div class="desc">Claude <span class="white">没法检测</span>浏览器原生 <span class="code">alert</span> 弹窗</div>
+    </div>
+
+    <div class="card card-action">
+      <div class="card-title"><span class="yellow">今天就建三个文件</span></div>
+      <div class="desc">
+        <span class="code">init.sh</span><br>
+        <span class="code">progress.txt</span><br>
+        <span class="code">features.json</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

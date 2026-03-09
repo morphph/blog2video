@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .icon {
+      font-size: 80px;
+      margin-bottom: 40px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+    .highlight-purple {
+      color: #8B5CF6;
+    }
+    .highlight-orange {
+      color: #F59E0B;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      text-align: left;
+    }
+    .card p {
+      font-size: 34px;
+      line-height: 1.6;
+      color: #B0B0CC;
+    }
+    .card p .white {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">
+      Claude Opus <span class="highlight-purple">克隆</span>了<br>整个 claude.ai
+    </div>
+    <div class="card">
+      <p><span class="white">200+ 功能</span>，全部交给 AI 自己实现</p>
+      <p style="margin-top: 20px;">上期：三种<span class="white" style="color: #EF4444;">致命翻车模式</span></p>
+      <p style="margin-top: 20px;">今天：Anthropic <span class="white" style="color: #10B981;">怎么解决</span>的？</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -183,6 +183,19 @@ async function renderVideo(videoNumber) {
     }
   }
 
+  // Auto-append CTA slide (5 seconds after last content slide)
+  const contentEnd = config.slides.reduce(
+    (max, s) => Math.max(max, s.start_time_seconds + s.duration_seconds),
+    0
+  );
+  config.slides.push({
+    slide_number: config.slides.length + 1,
+    type: "cta",
+    start_time_seconds: contentEnd,
+    duration_seconds: 5,
+    data: { type: "cta" },
+  });
+
   // Save config
   const configPath = path.join(outputDir, `video_${videoNumber}_config.json`);
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2));

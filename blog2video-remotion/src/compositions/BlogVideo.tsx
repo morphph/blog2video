@@ -6,6 +6,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { CtaSlide } from "../slides/CtaSlide";
 
 interface SlideConfig {
   slide_number: number;
@@ -61,12 +62,16 @@ export const BlogVideo: React.FC<{ config: VideoConfigData }> = ({
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0D0D1A" }}>
-      {/* Slide image */}
+      {/* Slide content */}
       <AbsoluteFill style={{ opacity }}>
-        <Img
-          src={staticFile(`slide_${currentSlide.slide_number}.png`)}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
+        {currentSlide.type === "cta" ? (
+          <CtaSlide />
+        ) : (
+          <Img
+            src={staticFile(`slide_${currentSlide.slide_number}.png`)}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        )}
       </AbsoluteFill>
 
       {/* Audio */}

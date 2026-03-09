@@ -1,6 +1,7 @@
 node_modules/
 dist/
 *.png
+!blog2video-remotion/public/qr-subscribe-zh.png
 *.mp4
 tmp-*
 cookies/

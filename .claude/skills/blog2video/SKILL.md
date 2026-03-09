@@ -97,8 +97,9 @@ Slash command `/blog2video` 的执行流程：
 所有输出文件放在 `./blog2video-output/<blog-slug>/`：
 ```
 blog2video-output/
-└── agent-teams/
-    ├── video_plan.json
+└── <slug>/
+    ├── source_blog.md                ← 原始博客内容（清洁 Markdown，LoreAI 导入依赖）
+    ├── video_plan.json               ← 视频拆分计划（LoreAI 导入依赖）
     ├── video_1_script.md
     ├── slide_1.html … slide_N.html  ← 每张 slide 的自包含 HTML
     ├── cover_photo.html              ← 封面图 HTML
@@ -110,3 +111,7 @@ blog2video-output/
     ├── ...
     └── video_2.mp4
 ```
+
+## LoreAI 集成
+
+Pipeline 完成后会提示将外部内容导入 LoreAI 博客。`source_blog.md` 和 `video_plan.json` 是跨系统共享的关键产物。

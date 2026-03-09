@@ -174,6 +174,7 @@ done
 打印所有生成的文件：
 ```
 📁 blog2video-output/<slug>/
+├── source_blog.md         ← 原始博客内容（清洁 Markdown）
 ├── video_plan.json        ← 视频拆分计划
 ├── video_1_script.md      ← 视频1口播稿
 ├── slide_1.html … slide_N.html  ← Slide HTML 文件
@@ -184,9 +185,21 @@ done
 └── ...
 ```
 
+### Step 6: LoreAI 博客导入提示
+
+如果视频源是外部内容（非 LoreAI 自己的博客），在输出汇总之后打印以下提示：
+
+```
+💡 Import to LoreAI blog:
+   cd ../loreai-v2 && npx tsx scripts/import-video-blog.ts --dir=../blog2video/blog2video-output/<slug>
+```
+
+此命令会基于 source_blog.md 和 video_plan.json 在 LoreAI 上生成对应的 EN + ZH 博客文章，并自动关联视频。
+
 ## 注意事项
 
 - 每个 subagent 都是独立的，不要在 subagent 之间共享上下文
 - 如果某个 Stage 失败，先输出已完成的文件，再报告错误
 - video_plan.json 和 script.md 是核心产出（即使渲染失败也有价值）
 - 口播稿质量是最重要的，要检查字数和 Slide 标记的完整性
+- source_blog.md 是跨系统共享的关键产物 — LoreAI 博客导入依赖此文件

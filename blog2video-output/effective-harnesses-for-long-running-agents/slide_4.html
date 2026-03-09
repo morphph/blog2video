@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 180px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .section-label {
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 48px;
+    }
+    .title .accent {
+      color: #10B981;
+    }
+
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid #2A2A4A;
+      border-radius: 16px;
+      padding: 28px 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      position: relative;
+      overflow: hidden;
+    }
+    .check-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: #10B981;
+    }
+    .check-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      border: 2px solid rgba(16, 185, 129, 0.4);
+      color: #10B981;
+      font-size: 26px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .check-content {
+      flex: 1;
+    }
+    .check-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #FFFFFF;
+    }
+    .check-title .key {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 28px;
+    }
+    .check-desc {
+      font-size: 25px;
+      color: #9CA3AF;
+      line-height: 1.5;
+    }
+    .check-desc .warn {
+      color: #EF4444;
+    }
+    .check-desc .tool {
+      color: #3B82F6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="section-label">CHECKLIST</div>
+
+    <div class="title">
+      落地<span class="accent">四要素</span>检查
+    </div>
+
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-num">1</div>
+        <div class="check-content">
+          <div class="check-title">结构化功能清单 <span class="key">JSON</span></div>
+          <div class="check-desc"><span class="warn">Markdown 会被 Agent 偷偷删改</span><br>换成 JSON 格式就老实了</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">2</div>
+        <div class="check-content">
+          <div class="check-title">进度追踪文件</div>
+          <div class="check-desc">每次 session 结束后<br>Agent 必须把当前状态写进去</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">3</div>
+        <div class="check-content">
+          <div class="check-title">端到端测试</div>
+          <div class="check-desc"><span class="warn">Agent 自己说"测过了"不靠谱</span><br>接入 <span class="tool">Puppeteer MCP</span> 像真实用户验证</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">4</div>
+        <div class="check-content">
+          <div class="check-title">标准化启动流程</div>
+          <div class="check-desc">不让 Agent 自由发挥<br>给它一个固定的检查清单</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

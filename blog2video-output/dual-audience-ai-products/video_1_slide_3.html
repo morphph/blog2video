@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .slide-title {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 44px;
+      color: #FFFFFF;
+    }
+
+    .slide-title .accent {
+      color: #EF4444;
+    }
+
+    .signal-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .signal-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+      position: relative;
+    }
+
+    .signal-card.purple { border-left: 4px solid #8B5CF6; }
+    .signal-card.yellow { border-left: 4px solid #F59E0B; }
+    .signal-card.blue   { border-left: 4px solid #3B82F6; }
+
+    .signal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .signal-source {
+      font-size: 20px;
+      color: #6B7280;
+    }
+
+    .signal-number {
+      font-size: 20px;
+      font-weight: 700;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signal-card.purple .signal-number { background: rgba(139, 92, 246, 0.25); color: #8B5CF6; }
+    .signal-card.yellow .signal-number { background: rgba(245, 158, 11, 0.25); color: #F59E0B; }
+    .signal-card.blue .signal-number   { background: rgba(59, 130, 246, 0.25); color: #3B82F6; }
+
+    .signal-quote {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .signal-card.purple .signal-quote .hl { color: #8B5CF6; }
+    .signal-card.yellow .signal-quote .hl { color: #F59E0B; }
+    .signal-card.blue .signal-quote .hl   { color: #3B82F6; }
+
+    .signal-stat {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .signal-stat .stat-value {
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    .signal-card.purple .stat-value { color: #8B5CF6; }
+    .signal-card.yellow .stat-value { color: #F59E0B; }
+    .signal-card.blue .stat-value   { color: #3B82F6; }
+
+    .signal-stat .stat-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title"><span class="accent">三个信号</span> 交叉验证</div>
+
+    <div class="signal-cards">
+      <!-- Signal 1: YC -->
+      <div class="signal-card purple">
+        <div class="signal-header">
+          <div class="signal-source">创业前线 &middot; Y Combinator</div>
+          <div class="signal-number">1</div>
+        </div>
+        <div class="signal-quote">口号从 Make Something <span class="hl">People</span> Want<br>变为 Make Something <span class="hl">Agents</span> Want</div>
+        <div class="signal-stat">
+          <div class="stat-value">47%</div>
+          <div class="stat-desc">YC 公司<br>在做 Agent</div>
+        </div>
+      </div>
+
+      <!-- Signal 2: Gartner -->
+      <div class="signal-card yellow">
+        <div class="signal-header">
+          <div class="signal-source">企业端 &middot; Gartner 预测</div>
+          <div class="signal-number">2</div>
+        </div>
+        <div class="signal-quote">企业应用嵌入 AI Agent<br><span class="hl">&lt;5%</span> &#x279C; <span class="hl">40%</span>（一年之内）</div>
+        <div class="signal-stat">
+          <div class="stat-value">8x</div>
+          <div class="stat-desc">渗透率<br>增速</div>
+        </div>
+      </div>
+
+      <!-- Signal 3: Karpathy -->
+      <div class="signal-card blue">
+        <div class="signal-header">
+          <div class="signal-source">技术演进 &middot; Andrej Karpathy</div>
+          <div class="signal-number">3</div>
+        </div>
+        <div class="signal-quote">2025 <span class="hl">Vibe Coding</span><br>2026 <span class="hl">Agentic Engineering</span></div>
+        <div class="signal-stat">
+          <div class="stat-value">&#x2191;</div>
+          <div class="stat-desc">从打工仔<br>升级成项目经理</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

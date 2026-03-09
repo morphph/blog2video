@@ -1,0 +1,128 @@
+{
+  "blog_metadata": {
+    "title": "Obsidian + Claude Code Skills: The Most Underrated AI Workflow of 2026",
+    "title_zh": "Obsidian + Claude Code：2026年最被低估的AI工作流",
+    "word_count": 1800,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "obsidian-claude-code-skills"
+  },
+  "video_plan": {
+    "total_videos": 2,
+    "rationale": "博客有两个可独立成篇的核心议题：一是为什么Obsidian天然适合AI Agent以及如何在15分钟内完成配置（setup），二是用它能做什么真实工作流以及背后的开放标准哲学（workflow + philosophy）——前者解决【要不要做】，后者解决【做了有什么用】，各自有独立的Hook和结论",
+    "episode_transitions": [
+      {
+        "between_videos": [
+          1,
+          2
+        ],
+        "preview_at_end_of_video_1": "下期我们来看，配好之后Claude到底能帮你做哪些以前要花15分钟的事？",
+        "recap_at_start_of_video_2": "上期我们用15分钟把Obsidian变成了AI可以直接读写的知识库，零API、零认证。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你的笔记库其实是个代码仓库？15分钟让AI读懂你的Obsidian",
+        "hook_question": "你存了几年的Obsidian笔记，AI却连你的双链语法都看不懂——Claude生成的Markdown在Obsidian里打开全是乱的，callout不对、wikilink失效，白折腾",
+        "core_thesis": "Obsidian的本地Markdown文件结构天然适合Claude Code直接操作，配合官方Skills包和CLAUDE.md，15分钟可以让AI真正读懂你的知识库体系",
+        "source_sections": [
+          "Why Obsidian? Why Now?",
+          "What Are Claude Code Skills?",
+          "The Official Obsidian Skills: What's Inside",
+          "Three Ways to Connect Claude Code and Obsidian",
+          "The CLAUDE.md File: Your Vault's Memory",
+          "Getting Started: A 15-Minute Setup"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Obsidian CEO亲自发布了官方Skills包——这是史上第一个由主流工具厂商官方维护的Agent Skills，意味着AI终于能生成在Obsidian里【原生】的笔记，而不是看起来像从别处复制来的",
+        "emotion_arc": "开头制造痛点共鸣（AI生成的笔记在Obsidian里格式全错）→ 中间反转：原来Obsidian天然就是个AI友好的文件系统，不需要任何API→ 结尾落在【15分钟就能搞定】的掌控感和跃跃欲试",
+        "must_include_details": [
+          "Skills的渐进加载机制：启动时每个skill只加载约100个token的名称和描述，只有Claude判断相关时才加载完整指令",
+          "三种接入模式：直接文件系统访问（cd ~/my-vault && claude）、MCP Bridge（obsidian-claude-code-mcp插件）、嵌入式终端",
+          "安装命令：/plugin marketplace add kepano/obsidian-skills",
+          "官方Skills涵盖三种格式：Obsidian Markdown、Obsidian Bases（.base文件）、JSON Canvas（.canvas文件）",
+          "CLAUDE.md由/init命令自动创建，每次session自动加载"
+        ],
+        "actionable_takeaway": "打开终端，cd进你的Obsidian vault目录，运行claude，然后执行/init创建你的CLAUDE.md文件",
+        "key_concepts": [
+          {
+            "concept_en": "Agent Skills",
+            "concept_zh": "Agent技能包",
+            "analogy_direction": "就像给新员工的岗位手册——不用每次都重新解释公司规矩，AI直接按手册行事",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "progressive disclosure",
+            "concept_zh": "渐进式加载",
+            "analogy_direction": "像餐厅菜单：你只看目录决定点什么，选好了才展开详细做法——不是一来就把后厨食谱全念给你听",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "CLAUDE.md",
+            "concept_zh": "AI的vault记忆文件",
+            "analogy_direction": "像给保姆留的家庭说明书：孩子的过敏食物、作息时间表、你家的规矩——保姆每次来都能无缝接手",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "wikilinks / bidirectional links",
+            "concept_zh": "双向链接知识图谱",
+            "analogy_direction": "像城市地图的道路网：每条笔记都是一个节点，链接就是路——AI能顺着路找到整个知识城市",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "你的Obsidian vault本来就是个文件系统，Claude Code天生就能读——官方Skills包让AI说你的笔记语言"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "Claude帮我做了哪些以前要花15分钟的笔记工作？真实案例",
+        "hook_question": "每次写完日记都要手动去补双链——这个人提到过、那本书之前记过——这种【笔记维护】的时间比写笔记本身还长，你有没有这种感觉",
+        "core_thesis": "接入Claude Code后，Obsidian最耗时的维护性工作（补双链、整理会议记录、跨笔记综合信息）都可以自动化，而且因为底层是开放格式，AI随时可替换，知识永远属于你",
+        "source_sections": [
+          "Real-World Workflows That Change Everything",
+          "Building Custom Skills for Your Vault",
+          "Advanced: Skills + MCP = Superpowers",
+          "The Bigger Picture: Why This Matters"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "有开发者用macOS的mdfind命令让Claude搜索vault里积累多年的PDF——研究论文、扫描文档、保存的文章——然后跨文件综合成一篇新笔记，相当于把沉睡的知识库挖出来重新盘活",
+        "emotion_arc": "开头用具体痛苦场景引共鸣（补双链的机械劳动）→ 中间用5个真实workflow案例逐渐堆高兴奋感→ 在【开放格式哲学】处给一个认知升华的反转（Obsidian没做AI按钮，而是让AI来适配它）→ 结尾落在【知识属于你】的安全感",
+        "must_include_details": [
+          "自动补链工作流的具体指令：Read today's journal and add backlinks to all people, places, and books mentioned",
+          "自定义skill的两部分结构：YAML frontmatter（触发条件）+ Markdown正文（执行指令）",
+          "会议记录skill的文件命名规范：/meetings/YYYY-MM-DD-topic.md",
+          "MCP扩展能力：接Google Calendar自动拉会议议程、接Notion同步、接Stripe拉客户数据进pre-call笔记",
+          "Steph Ango（kepano）是Obsidian CEO，官方发布kepano/obsidian-skills"
+        ],
+        "actionable_takeaway": "写一个你最常重复做的笔记操作步骤，把它存成vault里的一个skill文件（.claude/skills/目录下），让Claude下次自动按你的流程来",
+        "key_concepts": [
+          {
+            "concept_en": "automated backlinking",
+            "concept_zh": "自动补充双向链接",
+            "analogy_direction": "像出版社的索引编辑：你写完书稿，他帮你把所有人名地名专有词汇找出来标好页码——只是现在这个编辑是AI，几秒钟搞定",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "custom Skills",
+            "concept_zh": "自定义工作流技能",
+            "analogy_direction": "像给Claude写一份你自己的SOP手册：每次它来【上班】都按你定的流程干活，不用每次重新交代",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "MCP integration",
+            "concept_zh": "MCP外部服务接入",
+            "analogy_direction": "像给你的笔记库装了对外的接口——日历、项目管理、CRM都能把数据直接注入你的vault",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "open format philosophy",
+            "concept_zh": "开放格式哲学",
+            "analogy_direction": "Obsidian没有做【问AI】按钮，就像好的乐高不会帮你拼——它只保证每块砖标准化，让你随时换玩法",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Obsidian没加AI按钮，却成了最好的AI笔记工具——因为开放格式让你的知识永远是你的"
+      }
+    ]
+  }
+}

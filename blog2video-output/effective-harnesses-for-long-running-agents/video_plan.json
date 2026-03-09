@@ -1,0 +1,73 @@
+{
+  "blog_metadata": {
+    "title": "Effective Harnesses for Long-Running Agents",
+    "title_zh": "如何驾驭长时间运行的AI智能体",
+    "word_count": 450,
+    "complexity": "medium",
+    "depth_score": 6,
+    "slug": "effective-harnesses-for-long-running-agents"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "博客不足1000词，围绕一个核心问题展开（如何让AI agent跨session保持工作进度），问题与方案紧密耦合，拆开则失去完整性，适合做成一个完整视频",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI干活干到一半就失忆？揭秘让Agent连续工作不翻车的接力方案！",
+        "hook_question": "你有没有遇到过这种情况——让AI帮你写一个大项目，结果它写到一半突然失忆了，之前做的全不记得，甚至直接跟你说'我做完了'？这个问题到底怎么解？",
+        "core_thesis": "长时间运行的AI Agent会因为上下文窗口断裂而反复犯两类致命错误，解决方案是用'初始化Agent+编码Agent'双角色框架，配合200+功能清单、增量开发和端到端测试来保持持续进展",
+        "source_sections": [
+          "The Problem",
+          "Two-Part Solution",
+          "Key Strategies",
+          "Future Directions"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "在构建一个Claude.ai克隆项目时，团队创建了包含200多个功能的JSON清单，全部标记为failing状态——用这种方式防止Agent看到一点进度就宣布'项目完成了'",
+        "emotion_arc": "痛点共鸣（你也遇到过吧）→ 问题剖析（原来有两种翻车方式）→ 恍然大悟（像医院换班一样交接）→ 层层递进（四个关键策略）→ 实操激励（你也能用起来）",
+        "must_include_details": [
+          "两种失败模式：over-ambition（一口气做太多导致上下文耗尽）和premature completion（过早宣布完成）",
+          "init.sh启动脚本和claude-progress.txt进度追踪文件",
+          "200+功能点的JSON清单全部标记为failing",
+          "每个session只做一个feature的铁律",
+          "Puppeteer MCP做浏览器端到端测试模拟真实用户行为",
+          "5步session启动协议：pwd确认目录→读git log和进度文件→选最高优先级功能→启动dev server→验证基本功能"
+        ],
+        "actionable_takeaway": "在你的下一个AI agent项目中创建一个功能清单JSON文件，把所有需求列出来标记为未完成，每次新对话开头先让Agent读取清单和git log，再只认领一个功能来做",
+        "key_concepts": [
+          {
+            "concept_en": "shift handoff problem",
+            "concept_zh": "换班交接问题",
+            "analogy_direction": "医院护士换班——新来的护士如果看不到病历记录，根本不知道病人之前用了什么药、做了什么检查，只能从头问一遍",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "initializer agent + coding agent",
+            "concept_zh": "初始化Agent与编码Agent双角色分工",
+            "analogy_direction": "装修房子时的设计师和施工队分工——设计师先画好全部图纸、列出验收清单，施工队每天按清单干活并记录进度，下一组施工队接着干",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "feature list architecture",
+            "concept_zh": "功能清单架构",
+            "analogy_direction": "搬家时列一个超详细的物品清单，每搬完一箱就打个勾——绝对不会漏搬东西，也不会搬到一半就以为搬完了",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "incremental single-feature workflow",
+            "concept_zh": "单功能增量开发工作流",
+            "analogy_direction": "游戏里的存档机制——每完成一个小任务就存档，搞砸了可以回退到上一个存档点，不用从头再来",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "end-to-end testing via Puppeteer MCP",
+            "concept_zh": "通过Puppeteer进行端到端验收测试",
+            "analogy_direction": "不要让厨师自己说菜好不好吃，要让真正的食客坐下来点菜、吃完、给评价——像真实用户一样打开浏览器操作",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "让AI长时间干活不翻车的秘诀不是更强的模型，而是更好的交接机制——功能清单、进度记录、端到端测试，三件套缺一不可"
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .bg-glow {
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .series-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 600;
+      margin-bottom: 48px;
+    }
+
+    .title-text {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 48px;
+    }
+    .title-text .yellow { color: #F59E0B; }
+    .title-text .red { color: #EF4444; }
+
+    .output-row {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .output-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .output-card.purple-left { border-left: 4px solid #8B5CF6; }
+    .output-card.green-left { border-left: 4px solid #10B981; }
+    .output-card.blue-left { border-left: 4px solid #3B82F6; }
+
+    .output-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .output-label {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .output-sub {
+      font-size: 20px;
+      color: #6B7280;
+    }
+
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+    }
+    .hook-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: #F59E0B;
+      border-radius: 12px 0 0 12px;
+    }
+    .hook-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .hook-text .white { color: #FFFFFF; font-weight: 600; }
+    .hook-text .yellow { color: #F59E0B; font-weight: 600; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-glow"></div>
+  <div class="series-tag">精读AI &middot; AI工具</div>
+
+  <div class="title-text">
+    Claude Code<span class="red">扫描</span>整个笔记库<br>
+    <span class="yellow">5分钟</span>后输出了什么？
+  </div>
+
+  <div class="output-row">
+    <div class="output-card purple-left">
+      <div class="output-icon">&#128295;</div>
+      <div class="output-label">该造的工具</div>
+      <div class="output-sub">/graduate 命令</div>
+    </div>
+    <div class="output-card green-left">
+      <div class="output-icon">&#129309;</div>
+      <div class="output-label">该见的人</div>
+      <div class="output-sub">Obsidian CEO</div>
+    </div>
+    <div class="output-card blue-left">
+      <div class="output-icon">&#9997;&#65039;</div>
+      <div class="output-label">该写的文章</div>
+      <div class="output-sub">5篇选题</div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-text">
+      更离谱：AI随后<span class="yellow">自己设计了一个新命令</span><br>
+      精准到用了<span class="white">只有Vin才懂的术语</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

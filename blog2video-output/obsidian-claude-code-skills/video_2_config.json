@@ -1,0 +1,219 @@
+{
+  "video_number": 2,
+  "title": "Obsidian接入Claude Code后，最耗时的维护工作能自动化吗？",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "cover",
+      "start_time_seconds": 0,
+      "duration_seconds": 30,
+      "data": {
+        "type": "cover",
+        "source_label": "OBSIDIAN + CLAUDE CODE 社区真实 workflow",
+        "title_line1": "补双链耗时",
+        "title_line2": "比写笔记还长？",
+        "title_line2_color": "red",
+        "subtitle": "接入 Claude Code 后，最耗时的维护工作能真正自动化吗",
+        "subtitle_highlights": [
+          {"text": "自动化", "color": "green"}
+        ],
+        "cards": [
+          {"number": "01", "title": "补双链太耗时", "desc": "手动跳转15分钟起步", "color": "red"},
+          {"number": "02", "title": "会议记录散乱", "desc": "格式不统一难回顾", "color": "red"},
+          {"number": "03", "title": "旧PDF沉睡着", "desc": "积累多年却用不上", "color": "yellow"}
+        ],
+        "bottom_caption": "一句话能解决吗？",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 2,
+      "type": "principle",
+      "start_time_seconds": 30,
+      "duration_seconds": 60,
+      "data": {
+        "type": "principle",
+        "section_label": "THE PHILOSOPHY",
+        "title": "Obsidian 没做 AI 按钮",
+        "left_card": {
+          "icon": "🧱",
+          "title": "开放格式哲学",
+          "body": "kepano 发布开源 Skills 包，让 AI 来适配 Obsidian——不是把数据锁进专有系统，而是让知识永远属于你。"
+        },
+        "right_items": [
+          {
+            "icon": "✅",
+            "icon_color": "green",
+            "title": "文件永远是你的",
+            "desc": "Markdown 不被任何公司锁住"
+          },
+          {
+            "icon": "✅",
+            "icon_color": "green",
+            "title": "AI 随时可替换",
+            "desc": "今天 Claude Code，明天换别的 Agent"
+          },
+          {
+            "icon": "✅",
+            "icon_color": "green",
+            "title": "工作流照常跑",
+            "desc": "Skill 文件跨 AI 工具通用"
+          }
+        ],
+        "bottom_card": {
+          "icon": "🔓",
+          "title": "知识主权",
+          "body": "不是让 Obsidian 适配 AI，而是让 AI 来适配 Obsidian。"
+        },
+        "bottom_caption": "知识永远属于你",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 3,
+      "type": "comparison_cards",
+      "start_time_seconds": 90,
+      "duration_seconds": 75,
+      "data": {
+        "type": "comparison_cards",
+        "section_label": "REAL WORKFLOWS · 1/2",
+        "title": "最值得试的两个自动化",
+        "subtitle_right": "社区验证有效的工作流",
+        "cards": [
+          {
+            "number": 1,
+            "title": "自动补链",
+            "color": "green",
+            "pain_point": "手动补双链耗时 15 分钟",
+            "conditions": [
+              "对 Claude 说：读今天日记，补所有人名/书名/地点的双链",
+              "Claude 搜索 vault，已有笔记补链接，没有的自动新建"
+            ],
+            "quote": "以前要15分钟手动跳转，现在一句话。"
+          },
+          {
+            "number": 2,
+            "title": "跨文件综合搜索",
+            "color": "purple",
+            "pain_point": "沉睡多年的 PDF 无法盘活",
+            "conditions": [
+              "用 macOS mdfind 命令让 Claude 搜索 vault 里的 PDF",
+              "Claude 跨文件综合信息，生成一篇新笔记"
+            ],
+            "quote": "把沉睡的知识库挖出来重新盘活。"
+          }
+        ],
+        "bottom_caption": "从15分钟到一句话",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 4,
+      "type": "comparison_cards",
+      "start_time_seconds": 165,
+      "duration_seconds": 75,
+      "data": {
+        "type": "comparison_cards",
+        "section_label": "REAL WORKFLOWS · 2/2",
+        "title": "更多社区真实在用的方式",
+        "subtitle_right": "社区验证有效的工作流",
+        "cards": [
+          {
+            "number": 1,
+            "title": "会议记录结构化",
+            "color": "blue",
+            "pain_point": "散装要点难以整理和回顾",
+            "conditions": [
+              "散装要点丢给 Claude，自动整理成 YYYY-MM-DD-topic.md",
+              "存进 /meetings/，议程、讨论要点、行动项一套出来"
+            ],
+            "quote": "格式一致，回顾不再费力。"
+          },
+          {
+            "number": 2,
+            "title": "每日笔记生成",
+            "color": "green",
+            "pain_point": "口述内容难以整理成结构化日记",
+            "conditions": [
+              "口述你的一天，Claude 转成完整日记",
+              "实体有双链，任务单独提取，想法归入对应项目笔记"
+            ],
+            "quote": "说一遍，笔记自动归位。"
+          }
+        ],
+        "bottom_caption": "口述一遍就够了",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 5,
+      "type": "checklist",
+      "start_time_seconds": 240,
+      "duration_seconds": 60,
+      "data": {
+        "type": "checklist",
+        "section_label": "CUSTOM SKILLS",
+        "title": "自定义 Skill = 你的 SOP 手册",
+        "items": [
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "YAML frontmatter",
+            "desc": "写触发条件：什么时候激活这个 Skill",
+            "action": "定义 name 和 description"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "Markdown 正文",
+            "desc": "写执行指令：Claude 按步骤操作",
+            "action": "写具体操作流程"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "MCP 扩展",
+            "desc": "接 Google Calendar / Notion / Stripe",
+            "action": "连接外部服务数据"
+          }
+        ],
+        "bottom_caption": "写一次，Claude 每次按你的规矩来",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 6,
+      "type": "summary",
+      "start_time_seconds": 300,
+      "duration_seconds": 60,
+      "data": {
+        "type": "summary",
+        "section_label": "TAKEAWAY",
+        "title": "今天你可以做的一件事",
+        "items": [
+          {
+            "number": 1,
+            "question": "Obsidian 没做 AI 按钮，却是最好的 AI 笔记工具",
+            "note": "开放格式让你的知识永远是你的"
+          },
+          {
+            "number": 2,
+            "question": "最耗时的维护工作都可以自动化",
+            "note": "补链、会议记录、跨文件搜索综合"
+          },
+          {
+            "number": 3,
+            "question": "自定义 Skill 让 Claude 记住你的工作方式",
+            "note": "存到 .claude/skills/ 目录，永久有效"
+          }
+        ],
+        "final_line": "把你最常重复做的笔记操作，写成一个 Skill 文件，存到 vault 的 .claude/skills/ 目录。让 Claude 下次按你的流程来，而不是每次重新解释。",
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    }
+  ]
+}

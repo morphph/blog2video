@@ -1,0 +1,12 @@
+{
+  "video_number": 2,
+  "title": "Notion有700个AI员工？公司要被重新发明了",
+  "cover_photo": "video_2_cover_photo.html",
+  "slides": [
+    {"slide_number": 1, "file": "video_2_slide_1.html", "estimated_duration_seconds": 45},
+    {"slide_number": 2, "file": "video_2_slide_2.html", "estimated_duration_seconds": 115},
+    {"slide_number": 3, "file": "video_2_slide_3.html", "estimated_duration_seconds": 150},
+    {"slide_number": 4, "file": "video_2_slide_4.html", "estimated_duration_seconds": 50},
+    {"slide_number": 5, "file": "video_2_slide_5.html", "estimated_duration_seconds": 60}
+  ]
+}

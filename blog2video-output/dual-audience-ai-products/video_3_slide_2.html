@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .headline {
+      font-size: 52px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .headline .accent {
+      color: #F59E0B;
+    }
+
+    .headline .purple {
+      color: #8B5CF6;
+    }
+
+    .sub-headline {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 56px;
+      font-weight: 500;
+    }
+
+    .dual-track {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+
+    .track {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 24px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: left;
+    }
+
+    .track.gui {
+      border-top: 4px solid #3B82F6;
+    }
+
+    .track.api {
+      border-top: 4px solid #8B5CF6;
+    }
+
+    .track-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .track-icon {
+      font-size: 36px;
+    }
+
+    .track-title {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .track.gui .track-title { color: #3B82F6; }
+    .track.api .track-title { color: #8B5CF6; }
+
+    .track-audience {
+      font-size: 20px;
+      color: #F59E0B;
+      font-weight: 600;
+      margin-bottom: 16px;
+      background: rgba(245, 158, 11, 0.1);
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+
+    .track-items {
+      list-style: none;
+    }
+
+    .track-items li {
+      font-size: 22px;
+      color: #B0B0CC;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+      line-height: 1.5;
+    }
+
+    .track-items li:last-child {
+      border-bottom: none;
+    }
+
+    .track-items li .key {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .seo-section {
+      width: 100%;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 32px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      text-align: left;
+    }
+
+    .seo-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #10B981;
+      margin-bottom: 16px;
+    }
+
+    .seo-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+
+    .seo-desc .em {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .connector {
+      font-size: 28px;
+      color: #6B7280;
+      margin: 8px 0;
+      letter-spacing: 8px;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="headline">
+    <span class="accent">API Docs</span> =<br>
+    <span class="purple">New Landing Page</span>
+  </div>
+  <div class="sub-headline">你的文档，就是 Agent 的第一印象</div>
+
+  <div class="dual-track">
+    <div class="track gui">
+      <div class="track-header">
+        <span class="track-icon">&#128187;</span>
+        <span class="track-title">GUI 界面</span>
+      </div>
+      <div class="track-audience">&#128100; 给人类用户</div>
+      <ul class="track-items">
+        <li><span class="key">Dashboard</span> 可视化操作</li>
+        <li><span class="key">表单</span> 点击式交互</li>
+        <li><span class="key">引导流程</span> 新手友好</li>
+      </ul>
+    </div>
+
+    <div class="track api">
+      <div class="track-header">
+        <span class="track-icon">&#129302;</span>
+        <span class="track-title">API 接口</span>
+      </div>
+      <div class="track-audience">&#129302; 给 AI Agent</div>
+      <ul class="track-items">
+        <li><span class="key">RESTful</span> 结构化端点</li>
+        <li><span class="key">Schema</span> 机器可读</li>
+        <li><span class="key">错误码</span> 可自愈指引</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="seo-section">
+    <div class="seo-title">&#128270; Agent SEO 新概念</div>
+    <div class="seo-desc">
+      Agent 不用 Google，它读你的<span class="em">文档和 Schema</span>。<br>
+      文档质量 = Agent 能否找到你、能否用好你。<br>
+      <span class="em">llms.txt</span> 就是 Agent 时代的 robots.txt。
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

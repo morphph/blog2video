@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .bg-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%); top: 300px; left: 50%; transform: translateX(-50%); pointer-events: none; }
+    .tag { display: inline-block; background: rgba(139, 92, 246, 0.12); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 24px; padding: 8px 24px; font-size: 26px; color: #8B5CF6; font-weight: 600; letter-spacing: 2px; margin-bottom: 48px; position: relative; z-index: 1; }
+    .headline { font-size: 56px; font-weight: 900; line-height: 1.3; margin-bottom: 48px; position: relative; z-index: 1; }
+    .headline .highlight { color: #F59E0B; }
+    .headline .red { color: #EF4444; }
+    .stat-card { width: 100%; background: #1A1A2E; border: 1px solid rgba(139, 92, 246, 0.25); border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 32px; margin-bottom: 24px; text-align: left; position: relative; z-index: 1; }
+    .stat-number { font-size: 64px; font-weight: 800; color: #8B5CF6; margin-bottom: 8px; }
+    .stat-desc { font-size: 28px; color: #B0B0CC; line-height: 1.5; }
+    .stat-desc .em { color: #FFFFFF; font-weight: 700; }
+    .suspense-card { width: 100%; background: #1A1A2E; border: 1px solid rgba(245, 158, 11, 0.25); border-left: 4px solid #F59E0B; border-radius: 12px; padding: 28px 32px; text-align: left; position: relative; z-index: 1; }
+    .suspense-text { font-size: 30px; color: #FFFFFF; font-weight: 700; line-height: 1.5; }
+    .suspense-text .yellow { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="tag">Slash Commands</div>
+    <div class="headline">AI扫描<span class="highlight">13个月</span>笔记<br>拼出你<span class="red">自己都不知道</span><br>的想法进化史</div>
+    <div class="stat-card">
+      <div class="stat-number">13个月 / 4阶段</div>
+      <div class="stat-desc">散落在不同文件的碎片 → AI拼出<span class="em">完整进化史</span></div>
+    </div>
+    <div class="suspense-card">
+      <div class="suspense-text">每个命令都是一面<span class="yellow">不同角度的镜子</span><br>有的照过去，有的照盲区，有的照未来</div>
+    </div>
+  </div>
+</body>
+</html>

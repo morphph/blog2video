@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+    .section-title { font-size: 40px; font-weight: 800; margin-bottom: 36px; color: #FFFFFF; }
+    .section-title .accent { color: #F59E0B; }
+    .toolkit-row { width: 100%; display: flex; gap: 12px; margin-bottom: 36px; }
+    .toolkit-item { flex: 1; background: #1A1A2E; border-radius: 12px; padding: 24px 12px; text-align: center; }
+    .toolkit-item:nth-child(1) { border: 1px solid rgba(139, 92, 246, 0.25); }
+    .toolkit-item:nth-child(2) { border: 1px solid rgba(59, 130, 246, 0.25); }
+    .toolkit-item:nth-child(3) { border: 1px solid rgba(16, 185, 129, 0.25); }
+    .toolkit-name { font-size: 28px; font-weight: 900; margin-bottom: 8px; }
+    .toolkit-item:nth-child(1) .toolkit-name { color: #8B5CF6; }
+    .toolkit-item:nth-child(2) .toolkit-name { color: #3B82F6; }
+    .toolkit-item:nth-child(3) .toolkit-name { color: #10B981; }
+    .toolkit-role { font-size: 22px; color: #B0B0CC; }
+    .plus-sign { display: flex; align-items: center; justify-content: center; font-size: 36px; color: #6B7280; padding: 0 4px; }
+    .equals-row { width: 100%; text-align: center; margin-bottom: 36px; }
+    .equals-text { font-size: 32px; font-weight: 700; color: #F59E0B; }
+    .checklist-title { font-size: 32px; font-weight: 800; color: #FFFFFF; margin-bottom: 24px; width: 100%; text-align: left; }
+    .checklist-title .icon { color: #8B5CF6; }
+    .checklist { width: 100%; display: flex; flex-direction: column; gap: 14px; }
+    .check-item { background: #1A1A2E; border: 1px solid rgba(139, 92, 246, 0.15); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; text-align: left; }
+    .check-box { width: 32px; height: 32px; border-radius: 8px; background: rgba(16, 185, 129, 0.15); border: 2px solid #10B981; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .check-box svg { width: 18px; height: 18px; }
+    .check-text { font-size: 26px; color: #FFFFFF; font-weight: 600; line-height: 1.4; }
+    .check-text .sub { color: #6B7280; font-weight: 400; font-size: 22px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-title"><span class="accent">AX</span> 三件套工具包</div>
+    <div style="width: 100%; display: flex; align-items: center; gap: 0; margin-bottom: 36px;">
+      <div class="toolkit-item">
+        <div class="toolkit-name">MCP</div>
+        <div class="toolkit-role">工具调用</div>
+      </div>
+      <div class="plus-sign">+</div>
+      <div class="toolkit-item">
+        <div class="toolkit-name">A2A</div>
+        <div class="toolkit-role">Agent协作</div>
+      </div>
+      <div class="plus-sign">+</div>
+      <div class="toolkit-item">
+        <div class="toolkit-name">llms.txt</div>
+        <div class="toolkit-role">被AI发现</div>
+      </div>
+    </div>
+    <div class="equals-row">
+      <div class="equals-text">= 完整的 AX 基础设施</div>
+    </div>
+    <div class="checklist-title"><span class="icon">&#9745;</span> AX 审计清单</div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="check-text">部署 MCP Server<br><span class="sub">让 Agent 能调用你的服务</span></div>
+      </div>
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="check-text">实现 A2A 接口<br><span class="sub">让 Agent 能和你的系统对话</span></div>
+      </div>
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="check-text">添加 llms.txt<br><span class="sub">让 Agent 能找到你</span></div>
+      </div>
+      <div class="check-item">
+        <div class="check-box">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="check-text">文档质量 ≥ 产品质量<br><span class="sub">文档是 Agent 的唯一入口</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

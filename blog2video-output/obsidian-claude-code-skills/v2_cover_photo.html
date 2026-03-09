@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Background ambient */
+    .bg-radial-1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.18) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bg-radial-2 {
+      position: absolute;
+      top: 55%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Decorative grid lines */
+    .grid-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(139, 92, 246, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
+      background-size: 108px 108px;
+      pointer-events: none;
+    }
+
+    /* Series label */
+    .series-label {
+      font-size: 28px;
+      font-weight: 600;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      margin-bottom: 72px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Main title area */
+    .title-area {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 72px;
+      width: 100%;
+    }
+    .title-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 300px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .main-title {
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -2px;
+      position: relative;
+    }
+    .main-title .line1 { display: block; color: #FFFFFF; }
+    .main-title .line2 { display: block; color: #FFFFFF; }
+    .main-title .red { color: #EF4444; }
+    .main-title .yellow { color: #F59E0B; }
+
+    /* Source tag */
+    .source-tag-wrap {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .source-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: #1A1A2E;
+      border: 1px solid rgba(176, 176, 204, 0.2);
+      border-radius: 40px;
+      padding: 16px 36px;
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 500;
+    }
+    .source-tag .sep {
+      color: rgba(139, 92, 246, 0.5);
+      font-weight: 300;
+    }
+    .source-tag .highlight { color: #8B5CF6; font-weight: 700; }
+
+    /* Corner decorations */
+    .corner-tl, .corner-br {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      pointer-events: none;
+    }
+    .corner-tl {
+      top: 80px;
+      left: 60px;
+      border-top: 2px solid rgba(139, 92, 246, 0.3);
+      border-left: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    .corner-br {
+      bottom: 440px;
+      right: 60px;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+      border-right: 2px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="grid-lines"></div>
+    <div class="bg-radial-1"></div>
+    <div class="bg-radial-2"></div>
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+
+    <div class="series-label">精读AI · Obsidian</div>
+
+    <div class="title-area">
+      <div class="title-glow"></div>
+      <div class="main-title">
+        <span class="line1">补双链的<span class="red">时间</span></span>
+        <span class="line2">比写笔记<span class="yellow">还长</span>？</span>
+      </div>
+    </div>
+
+    <div class="source-tag-wrap">
+      <div class="source-tag">
+        <span class="highlight">Obsidian</span>
+        <span class="sep">+</span>
+        <span class="highlight">Claude Code</span>
+        <span class="sep">|</span>
+        <span>社区真实 Workflow</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

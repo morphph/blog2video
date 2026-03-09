@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Section tag */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-radius: 30px;
+      padding: 10px 28px;
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 56px;
+    }
+
+    /* Counter-intuitive headline */
+    .headline {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .headline .yellow { color: #F59E0B; }
+
+    /* Core insight card */
+    .insight-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-bottom: 36px;
+      text-align: left;
+      width: 100%;
+    }
+    .insight-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    .insight-text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+    .insight-sub {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.65;
+      margin-top: 12px;
+    }
+    .insight-sub .purple { color: #8B5CF6; font-weight: 600; }
+
+    /* Principle comparison */
+    .comparison {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .cmp-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .cmp-card.bad {
+      border: 1px solid rgba(239, 68, 68, 0.25);
+    }
+    .cmp-card.good {
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .cmp-label {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .cmp-card.bad .cmp-label { color: #EF4444; }
+    .cmp-card.good .cmp-label { color: #10B981; }
+    .cmp-text {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .cmp-text strong { color: #FFFFFF; }
+
+    /* Key principle */
+    .key-principle {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 32px 40px;
+      width: 100%;
+      text-align: center;
+    }
+    .key-principle .kp-title {
+      font-size: 28px;
+      color: #8B5CF6;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .key-principle .kp-text {
+      font-size: 31px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.65;
+    }
+    .key-principle .kp-text .green { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="section-tag">反直觉洞察</div>
+
+    <div class="headline">
+      Obsidian 没加「问问AI」按钮<br>
+      却成了<span class="yellow">最好的 AI 笔记工具</span>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-label">设计哲学</div>
+      <div class="insight-text">不是让 Obsidian 适配 AI</div>
+      <div class="insight-sub">
+        CEO <span class="purple">kepano</span> 开源了 Skills 包——<br>
+        专门教 AI 说 Obsidian 的语言。<br>
+        让 <span class="purple">AI 来适配 Obsidian</span>。
+      </div>
+    </div>
+
+    <div class="comparison">
+      <div class="cmp-card bad">
+        <div class="cmp-label">❌ 普通方案</div>
+        <div class="cmp-text">迁移到<strong>专属 AI 笔记</strong>工具，被平台锁住</div>
+      </div>
+      <div class="cmp-card good">
+        <div class="cmp-label">✓ Obsidian 路径</div>
+        <div class="cmp-text"><strong>Markdown 文件</strong>不被任何公司锁住</div>
+      </div>
+    </div>
+
+    <div class="key-principle">
+      <div class="kp-title">核心判断</div>
+      <div class="kp-text">
+        今天用 Claude Code，明天换别的 Agent<br>
+        文件还在，工作流照常跑<br>
+        <span class="green">你的知识，永远是你的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

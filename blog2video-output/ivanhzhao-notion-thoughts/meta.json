@@ -1,0 +1,21 @@
+{
+  "topic": "精读AI",
+  "videos": [
+    {
+      "video_number": 1,
+      "title": "10x程序员变40x？Notion创始人的秘密",
+      "description": "Notion联合创始人Simon同时操控3-4个AI Agent，一个人产出顶40个工程师。但为什么普通知识工作者还做不到？两个关键瓶颈：上下文碎片化和工作不可验证。从骑自行车到开车再到自动驾驶，这是每个人的升级路线图。",
+      "tags": ["AI", "AI Agent", "Notion", "知识工作", "效率工具"],
+      "cover": "video_1_cover_photo.png",
+      "file": "video_1.mp4"
+    },
+    {
+      "video_number": 2,
+      "title": "Notion有700个AI员工？公司要被重新发明了",
+      "description": "Notion 1000个真人员工旁边，已经有700多个AI Agent在工作。但大部分公司还停留在「把水车换成蒸汽机」的阶段——加个聊天框就算用上AI了。Ivan Zhao用钢铁和蒸汽机的历史告诉你，AI对组织的改变不是提速，是变形。",
+      "tags": ["AI", "AI创业", "Notion", "AI Agent", "组织变革"],
+      "cover": "video_2_cover_photo.png",
+      "file": "video_2.mp4"
+    }
+  ]
+}

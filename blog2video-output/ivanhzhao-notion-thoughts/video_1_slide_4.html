@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .history-tag {
+      font-size: 20px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .history-year {
+      font-size: 72px;
+      font-weight: 900;
+      color: #F59E0B;
+      margin-bottom: 8px;
+    }
+    .history-name {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+    }
+    .quote-block {
+      position: relative;
+      margin-bottom: 48px;
+      padding: 0 20px;
+    }
+    .quote-mark {
+      font-size: 120px;
+      color: rgba(139, 92, 246, 0.2);
+      position: absolute;
+      top: -50px;
+      left: -10px;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .quote-text {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.4;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-text .green {
+      color: #10B981;
+    }
+    .quote-text .red {
+      color: #EF4444;
+    }
+    .quote-divider {
+      width: 80px;
+      height: 3px;
+      background: #8B5CF6;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .roadmap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+    .roadmap-step {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      flex: 1;
+    }
+    .roadmap-step.final {
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+    }
+    .step-icon {
+      font-size: 36px;
+      margin-bottom: 6px;
+    }
+    .step-label {
+      font-size: 22px;
+      font-weight: 600;
+      color: #B0B0CC;
+    }
+    .roadmap-step.final .step-label {
+      color: #10B981;
+    }
+    .roadmap-arrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      flex-shrink: 0;
+    }
+    .attribution {
+      margin-top: 32px;
+      font-size: 20px;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="history-tag">历史的教训</div>
+    <div class="history-year">1865</div>
+    <div class="history-name">英国红旗法案 Red Flag Act</div>
+    <div class="quote-block">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">
+        人在回路<span class="green">上方</span>做监工<br>
+        不在回路<span class="red">里面</span>做门卫
+      </div>
+    </div>
+    <div class="quote-divider"></div>
+    <div class="roadmap">
+      <div class="roadmap-step">
+        <div class="step-icon">🚲</div>
+        <div class="step-label">骑车</div>
+      </div>
+      <div class="roadmap-arrow">→</div>
+      <div class="roadmap-step">
+        <div class="step-icon">🚗</div>
+        <div class="step-label">开车</div>
+      </div>
+      <div class="roadmap-arrow">→</div>
+      <div class="roadmap-step final">
+        <div class="step-icon">🤖</div>
+        <div class="step-label">自动驾驶</div>
+      </div>
+    </div>
+    <div class="attribution">— Ivan Zhao, Notion CEO</div>
+  </div>
+</body>
+</html>

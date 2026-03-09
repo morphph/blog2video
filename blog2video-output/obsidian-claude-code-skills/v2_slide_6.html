@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 24px;
+      color: #6B7280;
+      letter-spacing: 3px;
+      margin-bottom: 36px;
+      font-weight: 500;
+    }
+
+    /* One-line summary */
+    .summary-headline {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 36px 40px;
+      width: 100%;
+      margin-bottom: 48px;
+      text-align: left;
+    }
+    .summary-headline .label {
+      font-size: 20px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .summary-headline .text {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+    .summary-headline .text .purple { color: #8B5CF6; }
+    .summary-headline .text .green { color: #10B981; }
+
+    /* Why it works */
+    .why-block {
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .why-title {
+      font-size: 26px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .why-items {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .why-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 10px;
+      padding: 18px 24px;
+      text-align: left;
+    }
+    .why-icon {
+      font-size: 30px;
+      flex-shrink: 0;
+    }
+    .why-text {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .why-text strong { color: #FFFFFF; font-weight: 600; }
+    .why-text .green { color: #10B981; font-weight: 600; }
+
+    /* CTA block */
+    .cta-block {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(16, 185, 129, 0.06) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 36px 40px;
+      width: 100%;
+      margin-bottom: 48px;
+      text-align: left;
+    }
+    .cta-label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .cta-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .cta-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.55;
+    }
+    .cta-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 700;
+      color: #10B981;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .cta-step .path {
+      color: #8B5CF6;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 24px;
+    }
+
+    /* Closing */
+    .closing {
+      font-size: 27px;
+      color: #6B7280;
+      line-height: 1.7;
+      text-align: center;
+    }
+    .closing .brand {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="section-label">今期精华</div>
+
+    <!-- One-line summary -->
+    <div class="summary-headline">
+      <div class="label">一句话总结</div>
+      <div class="text">
+        Obsidian 没加 <span class="purple">AI 按钮</span>，<br>
+        却成了最好的 AI 笔记工具。<br>
+        原因只有一个：<span class="green">开放格式</span>。
+      </div>
+    </div>
+
+    <!-- Why it works -->
+    <div class="why-block">
+      <div class="why-title">为什么开放格式赢了</div>
+      <div class="why-items">
+        <div class="why-item">
+          <div class="why-icon">📄</div>
+          <div class="why-text">笔记是 <strong>Markdown</strong>，不被任何公司锁住</div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">⚙️</div>
+          <div class="why-text">流程是 <strong>Skill 文件</strong>，可读可改可复用</div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🔄</div>
+          <div class="why-text">AI 随时可换，<span class="green">知识永远属于你</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <div class="cta-label">现在可以做的一件事</div>
+      <div class="cta-steps">
+        <div class="cta-step">
+          <div class="cta-num">1</div>
+          <span>想想你<strong>最常重复</strong>的笔记操作</span>
+        </div>
+        <div class="cta-step">
+          <div class="cta-num">2</div>
+          <span>把步骤写下来，存成 Skill 文件</span>
+        </div>
+        <div class="cta-step">
+          <div class="cta-num">3</div>
+          <span>放到 <span class="path">.claude/skills/</span> 目录下</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="closing">
+      AI 世界很吵，精读一篇，胜过刷一百条<br>
+      <span class="brand">精读AI</span> · 下期再见
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "video_number": 2,
+  "title": "补双链的时间比写笔记还长？Obsidian + Claude Code 社区真实 Workflow",
+  "cover_photo": "v2_cover_photo.html",
+  "slides": [
+    {"slide_number": 1, "file": "v2_slide_1.html", "type": "cover", "estimated_duration_seconds": 30},
+    {"slide_number": 2, "file": "v2_slide_2.html", "type": "principle", "estimated_duration_seconds": 60},
+    {"slide_number": 3, "file": "v2_slide_3.html", "type": "comparison_cards", "estimated_duration_seconds": 75},
+    {"slide_number": 4, "file": "v2_slide_4.html", "type": "comparison_cards", "estimated_duration_seconds": 75},
+    {"slide_number": 5, "file": "v2_slide_5.html", "type": "checklist", "estimated_duration_seconds": 60},
+    {"slide_number": 6, "file": "v2_slide_6.html", "type": "summary", "estimated_duration_seconds": 60}
+  ]
+}

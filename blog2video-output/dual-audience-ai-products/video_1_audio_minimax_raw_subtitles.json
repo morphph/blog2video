@@ -1,0 +1,292 @@
+[
+  {
+    "text": "你知道吗？YC 2025年春季批次，144家公司里有67家在做 AI Agent。百分之47。",
+    "pronounce_text": "你知道吗？YC二零二五年春季批次，一百四十四家公司里有六十七家在做AI Agent。百分之四十七。",
+    "time_begin": 0,
+    "time_end": 8352.063492063493,
+    "text_begin": 0,
+    "text_end": 47,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 49
+  },
+  {
+    "text": "也就是说，硅谷最顶尖的创业加速器里，将近一半的人都在赌同一件事——未来你的产品用户，可能不是人类。",
+    "pronounce_text": "也就是说，硅谷最顶尖的创业加速器里，将近一半的人都在赌同一件事未来你的产品用户，可能不是人类。",
+    "time_begin": 8552.063492063493,
+    "time_end": 16346.84807256236,
+    "text_begin": 47,
+    "text_end": 96,
+    "pronounce_text_begin": 49,
+    "pronounce_text_end": 96
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是一份关于 Agent 经济的深度研究报告。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是一份关于Agent经济的深度研究报告。",
+    "time_begin": 16956,
+    "time_end": 29534.095238095237,
+    "text_begin": 96,
+    "text_end": 175,
+    "pronounce_text_begin": 96,
+    "pronounce_text_end": 168
+  },
+  {
+    "text": "先看几个数字，感受一下量级。",
+    "pronounce_text": "先看几个数字，感受一下量级。",
+    "time_begin": 31176,
+    "time_end": 33699.85487528345,
+    "text_begin": 175,
+    "text_end": 189,
+    "pronounce_text_begin": 168,
+    "pronounce_text_end": 182
+  },
+  {
+    "text": "全球 AI Agent 市场，2024年是79亿美元。2034年的预测呢？2360亿美元。年复合增速百分之45.82。这不是线性增加，这是指数级爆炸。",
+    "pronounce_text": "全球AI Agent市场，二零二四年是七十九亿美元。二零三四年的预测呢？两千三百六十亿美元。年复合增速百分之四十五点八二。这不是线性增加，这是指数级爆炸。",
+    "time_begin": 34308,
+    "time_end": 48081.922902494334,
+    "text_begin": 189,
+    "text_end": 264,
+    "pronounce_text_begin": 182,
+    "pronounce_text_end": 259
+  },
+  {
+    "text": "IDC 的预测更夸张——Agentic AI 的支出到2029年将超过1.3万亿美元。万亿级别。",
+    "pronounce_text": "IDC的预测更夸张Agentic AI的支出到二零二九年将超过一点三万亿美元。万亿级别。",
+    "time_begin": 48708,
+    "time_end": 56351.85487528345,
+    "text_begin": 264,
+    "text_end": 312,
+    "pronounce_text_begin": 259,
+    "pronounce_text_end": 303
+  },
+  {
+    "text": "这些钱花在哪？花在让 AI Agent 替人类完成任务上。订机票、写报告、查数据、管项目。Agent 正在变成新一代\"用户\"。",
+    "pronounce_text": "这些钱花在哪？花在让AI Agent替人类完成任务上。订机票、写报告、查数据、管项目。Agent正在变成新一代\"用户\"。",
+    "time_begin": 56988,
+    "time_end": 66826.14058956916,
+    "text_begin": 312,
+    "text_end": 375,
+    "pronounce_text_begin": 303,
+    "pronounce_text_end": 363
+  },
+  {
+    "text": "这就催生了一个全新的商业模式，叫 B2A。Business to Agent。过去你服务人类消费者叫 B2C，服务企业叫 B2B。",
+    "pronounce_text": "这就催生了一个全新的商业模式，叫B2A。Business to Agent。过去你服务人类消费者叫B2C，服务企业叫B2B。",
+    "time_begin": 67464,
+    "time_end": 77267.31065759638,
+    "text_begin": 375,
+    "text_end": 440,
+    "pronounce_text_begin": 363,
+    "pronounce_text_end": 425
+  },
+  {
+    "text": "现在，你的客户变成了 AI Agent——它来调你的 API，用你的产品，替它背后的人类完成任务。",
+    "pronounce_text": "现在，你的客户变成了AI Agent它来调你的API，用你的产品，替它背后的人类完成任务。",
+    "time_begin": 77467.31065759638,
+    "time_end": 85343.36507936509,
+    "text_begin": 440,
+    "text_end": 489,
+    "pronounce_text_begin": 425,
+    "pronounce_text_end": 470
+  },
+  {
+    "text": "Agent 经济到底有多真实？三个信号，从三个不同维度交叉验证。",
+    "pronounce_text": "Agent经济到底有多真实？三个信号，从三个不同维度交叉验证。",
+    "time_begin": 86976,
+    "time_end": 91694.14058956916,
+    "text_begin": 489,
+    "text_end": 521,
+    "pronounce_text_begin": 470,
+    "pronounce_text_end": 501
+  },
+  {
+    "text": "第一个信号，来自创业前线。YC 曾经的口号是 Make Something People Want，做用户想要的东西。现在呢？变成了 Make Something Agents Want。做 Agent 想要的东西。",
+    "pronounce_text": "第一个信号，来自创业前线。YC曾经的口号是Make Something People Want，做用户想要的东西。现在呢？变成了Make Something Agents Want。做Agent想要的东西。",
+    "time_begin": 92304,
+    "time_end": 105369.71428571429,
+    "text_begin": 521,
+    "text_end": 629,
+    "pronounce_text_begin": 501,
+    "pronounce_text_end": 604
+  },
+  {
+    "text": "当 YC 开始修改信仰级别的标语，说明风向已经彻底变了。",
+    "pronounce_text": "当YC开始修改信仰级别的标语，说明风向已经彻底变了。",
+    "time_begin": 105569.71428571429,
+    "time_end": 109544.81632653062,
+    "text_begin": 629,
+    "text_end": 657,
+    "pronounce_text_begin": 604,
+    "pronounce_text_end": 630
+  },
+  {
+    "text": "百分之47的 YC 公司在做 Agent，这不是趋势预测，这是正在发生的事实。",
+    "pronounce_text": "百分之四十七的YC公司在做Agent，这不是趋势预测，这是正在发生的事实。",
+    "time_begin": 109692,
+    "time_end": 114886.14965986395,
+    "text_begin": 657,
+    "text_end": 696,
+    "pronounce_text_begin": 630,
+    "pronounce_text_end": 667
+  },
+  {
+    "text": "第二个信号，来自企业端。Gartner 预测，2026年百分之40的企业应用会嵌入 AI Agent。而2025年呢？这个数字不到百分之5。从不到百分之5跳到百分之40，一年之内。",
+    "pronounce_text": "第二个信号，来自企业端。Gartner预测，二零二六年百分之四十的企业应用会嵌入AI Agent。而二零二五年呢？这个数字不到百分之五。从不到百分之五跳到百分之四十，一年之内。",
+    "time_begin": 115524,
+    "time_end": 128891.57369614512,
+    "text_begin": 696,
+    "text_end": 786,
+    "pronounce_text_begin": 667,
+    "pronounce_text_end": 755
+  },
+  {
+    "text": "企业对 Agent 的接受速度远超预期。",
+    "pronounce_text": "企业对Agent的接受速度远超预期。",
+    "time_begin": 129060,
+    "time_end": 131699.95464852607,
+    "text_begin": 786,
+    "text_end": 806,
+    "pronounce_text_begin": 755,
+    "pronounce_text_end": 773
+  },
+  {
+    "text": "第三个信号，来自技术演进。Karpathy 给出了一条时间线。2025年是 Vibe Coding，AI 帮你写代码。",
+    "pronounce_text": "第三个信号，来自技术演进。Karpathy给出了一条时间线。二零二五年是Vibe Coding，AI帮你写代码。",
+    "time_begin": 132336,
+    "time_end": 139318.08616780044,
+    "text_begin": 806,
+    "text_end": 865,
+    "pronounce_text_begin": 773,
+    "pronounce_text_end": 829
+  },
+  {
+    "text": "2026年是 Agentic Engineering，AI 不仅写代码，它自己规划、协作、完成整个工程。从打工仔升级成项目经理。",
+    "pronounce_text": "二零二六年是Agentic Engineering，AI不仅写代码，它自己规划、协作、完成整个工程。从打工仔升级成项目经理。",
+    "time_begin": 139518.08616780044,
+    "time_end": 147800.48979591837,
+    "text_begin": 865,
+    "text_end": 929,
+    "pronounce_text_begin": 829,
+    "pronounce_text_end": 891
+  },
+  {
+    "text": "这条路径说明 Agent 的能力边界正在飞速扩展。",
+    "pronounce_text": "这条路径说明Agent的能力边界正在飞速扩展。",
+    "time_begin": 147960,
+    "time_end": 151122.4036281179,
+    "text_begin": 929,
+    "text_end": 954,
+    "pronounce_text_begin": 891,
+    "pronounce_text_end": 914
+  },
+  {
+    "text": "听到这里，你可能会问：这跟我有什么关系？",
+    "pronounce_text": "听到这里，你可能会问：这跟我有什么关系？",
+    "time_begin": 152748,
+    "time_end": 155794.3038548753,
+    "text_begin": 954,
+    "text_end": 974,
+    "pronounce_text_begin": 914,
+    "pronounce_text_end": 934
+  },
+  {
+    "text": "检查一下这四个信号。命中两条以上，说明你的产品需要认真考虑 B2A 策略了。",
+    "pronounce_text": "检查一下这四个信号。命中两条以上，说明你的产品需要认真考虑B2A策略了。",
+    "time_begin": 156420,
+    "time_end": 162693.8775510204,
+    "text_begin": 974,
+    "text_end": 1012,
+    "pronounce_text_begin": 934,
+    "pronounce_text_end": 970
+  },
+  {
+    "text": "第一，你的 API 调用中，是否出现了明显的非人类访问模式？比如请求频率极高、没有界面交互。",
+    "pronounce_text": "第一，你的API调用中，是否出现了明显的非人类访问模式？比如请求频率极高、没有界面交互。",
+    "time_begin": 163332,
+    "time_end": 171312.54421768707,
+    "text_begin": 1012,
+    "text_end": 1058,
+    "pronounce_text_begin": 970,
+    "pronounce_text_end": 1014
+  },
+  {
+    "text": "第二，竞品是否已经推出了 MCP Server 或者 Agent 专用接口？",
+    "pronounce_text": "第二，竞品是否已经推出了MCP Server或者Agent专用接口？",
+    "time_begin": 171936,
+    "time_end": 176503.21088435373,
+    "text_begin": 1058,
+    "text_end": 1096,
+    "pronounce_text_begin": 1014,
+    "pronounce_text_end": 1048
+  },
+  {
+    "text": "第三，客户是否开始问\"你们的产品能被 AI 调用吗？\"",
+    "pronounce_text": "第三，客户是否开始问\"你们的产品能被AI调用吗？\"",
+    "time_begin": 177120,
+    "time_end": 180979.0022675737,
+    "text_begin": 1096,
+    "text_end": 1123,
+    "pronounce_text_begin": 1048,
+    "pronounce_text_end": 1073
+  },
+  {
+    "text": "第四，你所在的赛道是否出现在 YC 最新批次的高频方向里？",
+    "pronounce_text": "第四，你所在的赛道是否出现在YC最新批次的高频方向里？",
+    "time_begin": 181584,
+    "time_end": 186743.31972789115,
+    "text_begin": 1123,
+    "text_end": 1152,
+    "pronounce_text_begin": 1073,
+    "pronounce_text_end": 1100
+  },
+  {
+    "text": "如果你连自己产品有多少 Agent 类请求都不知道，那第一步很明确——去查。",
+    "pronounce_text": "如果你连自己产品有多少Agent类请求都不知道，那第一步很明确去查。",
+    "time_begin": 187380,
+    "time_end": 192910.83900226757,
+    "text_begin": 1152,
+    "text_end": 1190,
+    "pronounce_text_begin": 1100,
+    "pronounce_text_end": 1134
+  },
+  {
+    "text": "总结一下。Agent 经济不是未来，而是正在发生。从 YC 的百分之47，到79亿到2360亿的市场爆发，到 Gartner 预测的百分之40企业渗透率，信号已经足够清晰。",
+    "pronounce_text": "总结一下。Agent经济不是未来，而是正在发生。从YC的百分之四十七，到七十九亿到两千三百六十亿的市场爆发，到Gartner预测的百分之四十企业渗透率，信号已经足够清晰。",
+    "time_begin": 194544,
+    "time_end": 208317.92290249432,
+    "text_begin": 1190,
+    "text_end": 1276,
+    "pronounce_text_begin": 1134,
+    "pronounce_text_end": 1219
+  },
+  {
+    "text": "B2A 正在成为 B2C 和 B2B 之后的第三种商业模式。",
+    "pronounce_text": "B2A正在成为B2C和B2B之后的第三种商业模式。",
+    "time_begin": 208476,
+    "time_end": 212265.3424036281,
+    "text_begin": 1276,
+    "text_end": 1306,
+    "pronounce_text_begin": 1219,
+    "pronounce_text_end": 1244
+  },
+  {
+    "text": "你现在可以做一件事。打开后台，统计你产品 API 调用中，有多少来自自动化或 Agent 类请求。这个数字就是你启动 B2A 策略的起点。",
+    "pronounce_text": "你现在可以做一件事。打开后台，统计你产品API调用中，有多少来自自动化或Agent类请求。这个数字就是你启动B2A策略的起点。",
+    "time_begin": 212904,
+    "time_end": 222521.55102040817,
+    "text_begin": 1306,
+    "text_end": 1375,
+    "pronounce_text_begin": 1244,
+    "pronounce_text_end": 1307
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 223128,
+    "time_end": 227288.86167800453,
+    "text_begin": 1375,
+    "text_end": 1402,
+    "pronounce_text_begin": 1307,
+    "pronounce_text_end": 1333
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "video_number": 1,
+  "title": "AI引爆死亡螺旋！SaaS估值暴跌80%，这些行业正在被团灭",
+  "slides": [
+    {"slide_number": 1, "file": "video_1_slide_1.html", "estimated_duration_seconds": 30},
+    {"slide_number": 2, "file": "video_1_slide_2.html", "estimated_duration_seconds": 90},
+    {"slide_number": 3, "file": "video_1_slide_3.html", "estimated_duration_seconds": 150},
+    {"slide_number": 4, "file": "video_1_slide_4.html", "estimated_duration_seconds": 60},
+    {"slide_number": 5, "file": "video_1_slide_5.html", "estimated_duration_seconds": 30}
+  ],
+  "cover_photo": "video_1_cover_photo.html"
+}

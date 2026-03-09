@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 35%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .summary-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+      margin-bottom: 36px;
+    }
+    .summary-card .card-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #8B5CF6;
+      margin-bottom: 16px;
+    }
+    .summary-card .card-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .summary-card .card-text .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .action-card {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+    }
+    .action-card .card-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #10B981;
+      margin-bottom: 16px;
+    }
+    .action-items {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .action-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .action-bullet {
+      color: #10B981;
+      font-weight: 800;
+      font-size: 28px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .bottom-line {
+      margin-top: 40px;
+      font-size: 26px;
+      color: #6B7280;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">SUMMARY</div>
+
+    <div class="summary-card">
+      <div class="card-title">核心论点</div>
+      <div class="card-text">
+        AI带来<span class="em">智能过剩</span>，软件、中介、支付三大行业首当其冲。通缩螺旋一旦启动，<span class="em">估值重塑不可逆</span>。
+      </div>
+    </div>
+
+    <div class="action-card">
+      <div class="card-title">你该怎么做？</div>
+      <div class="action-items">
+        <div class="action-item">
+          <div class="action-bullet">&rsaquo;</div>
+          <div>审视持仓：是否踩中三大坍塌行业</div>
+        </div>
+        <div class="action-item">
+          <div class="action-bullet">&rsaquo;</div>
+          <div>检查护城河：技术壁垒 vs 网络效应</div>
+        </div>
+        <div class="action-item">
+          <div class="action-bullet">&rsaquo;</div>
+          <div>关注AI原生企业，而非AI改造企业</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-line">危机 = 危险 + 机会</div>
+  </div>
+</body>
+</html>

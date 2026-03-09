@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.07) 0%, transparent 70%);
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-mark {
+      font-size: 80px;
+      color: rgba(139, 92, 246, 0.3);
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-text {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.5;
+      margin-bottom: 48px;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-text .purple {
+      color: #8B5CF6;
+    }
+    .quote-text .yellow {
+      color: #F59E0B;
+    }
+    .distribution-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .dist-card {
+      width: 100%;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .dist-card:nth-child(1) {
+      border-left: 4px solid #10B981;
+    }
+    .dist-card:nth-child(2) {
+      border-left: 4px solid #3B82F6;
+    }
+    .dist-card:nth-child(3) {
+      border-left: 4px solid #8B5CF6;
+    }
+    .dist-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dist-card:nth-child(1) .dist-icon {
+      background: rgba(16, 185, 129, 0.15);
+    }
+    .dist-card:nth-child(2) .dist-icon {
+      background: rgba(59, 130, 246, 0.15);
+    }
+    .dist-card:nth-child(3) .dist-icon {
+      background: rgba(139, 92, 246, 0.15);
+    }
+    .dist-content {
+      flex: 1;
+    }
+    .dist-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .dist-card:nth-child(1) .dist-title { color: #10B981; }
+    .dist-card:nth-child(2) .dist-title { color: #3B82F6; }
+    .dist-card:nth-child(3) .dist-title { color: #8B5CF6; }
+    .dist-desc {
+      font-size: 22px;
+      color: #8B8BA0;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="section-label">OPEN STANDARD</div>
+    <div class="quote-mark">"</div>
+    <div class="quote-text">
+      Skill 像 <span class="purple">USB 接口</span><br>
+      一次构建<br>
+      <span class="yellow">到处能用</span>
+    </div>
+
+    <div class="distribution-cards">
+      <div class="dist-card">
+        <div class="dist-icon">👤</div>
+        <div class="dist-content">
+          <div class="dist-title">个人用户</div>
+          <div class="dist-desc">打包上传到 Claude.ai Settings</div>
+        </div>
+      </div>
+      <div class="dist-card">
+        <div class="dist-icon">🏢</div>
+        <div class="dist-content">
+          <div class="dist-title">组织管理员</div>
+          <div class="dist-desc">工作区统一部署（已上线）</div>
+        </div>
+      </div>
+      <div class="dist-card">
+        <div class="dist-icon">🔌</div>
+        <div class="dist-content">
+          <div class="dist-title">开发者</div>
+          <div class="dist-desc">Skills API + Claude Agent SDK</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

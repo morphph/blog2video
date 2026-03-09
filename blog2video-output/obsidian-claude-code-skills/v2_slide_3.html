@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Header */
+    .page-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 52px;
+    }
+    .page-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .page-badge {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 20px;
+      padding: 8px 22px;
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 600;
+    }
+
+    /* Workflow card */
+    .workflow-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 36px 36px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .workflow-card:last-of-type { margin-bottom: 0; }
+
+    .wf-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+    .wf-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .wf-num.purple {
+      background: rgba(139, 92, 246, 0.2);
+      color: #8B5CF6;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+    }
+    .wf-num.blue {
+      background: rgba(59, 130, 246, 0.2);
+      color: #3B82F6;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+    .wf-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    /* Command box */
+    .cmd-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #8B5CF6;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      line-height: 1.5;
+      word-break: break-all;
+    }
+
+    .wf-desc {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.65;
+    }
+    .wf-desc .highlight { color: #FFFFFF; font-weight: 600; }
+    .wf-desc .green { color: #10B981; font-weight: 600; }
+    .wf-desc .yellow { color: #F59E0B; font-weight: 600; }
+    .wf-desc .purple { color: #8B5CF6; font-weight: 600; }
+
+    /* Result tag */
+    .result-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 600;
+    }
+
+    /* Divider */
+    .card-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .card-divider .line {
+      flex: 1;
+      height: 1px;
+      background: rgba(139, 92, 246, 0.15);
+    }
+    .card-divider .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(139, 92, 246, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="page-header">
+      <div class="page-title">社区真实 Workflow</div>
+      <div class="page-badge">1 / 2</div>
+    </div>
+
+    <!-- Workflow 1: Auto-backlinking -->
+    <div class="workflow-card">
+      <div class="wf-header">
+        <div class="wf-num purple">1</div>
+        <div class="wf-title">自动补双链</div>
+      </div>
+      <div class="cmd-box">
+        "Read today's journal and add backlinks<br>
+        to all people, places, and books mentioned."
+      </div>
+      <div class="wf-desc">
+        Claude 搜索整个 vault，找已有笔记，把<span class="purple">双链写进日记</span>。<br>
+        没有的条目，还会<span class="green">自动新建</span>。
+      </div>
+      <div class="result-tag">以前 15 分钟手动跳转 → 现在一句话</div>
+    </div>
+
+    <div class="card-divider">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Workflow 2: mdfind cross-vault search -->
+    <div class="workflow-card">
+      <div class="wf-header">
+        <div class="wf-num blue">2</div>
+        <div class="wf-title">跨文件综合搜索</div>
+      </div>
+      <div class="cmd-box">
+        mdfind + Claude → 搜索 vault 里的<br>
+        PDF、论文、扫描文档、存档文章
+      </div>
+      <div class="wf-desc">
+        开发者用 macOS 的 <span class="yellow">mdfind</span> 命令，让 Claude 跨文件综合信息，<span class="highlight">生成一篇新笔记</span>。
+      </div>
+      <div class="result-tag">沉睡多年的知识库，重新盘活</div>
+    </div>
+  </div>
+</body>
+</html>

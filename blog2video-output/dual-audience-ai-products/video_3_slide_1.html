@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .topic-tag {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      margin-bottom: 48px;
+      font-weight: 600;
+    }
+
+    .code-block {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 48px;
+      margin-bottom: 56px;
+      width: 100%;
+    }
+
+    .code-label {
+      font-size: 18px;
+      color: #6B7280;
+      text-align: left;
+      margin-bottom: 16px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    .code-line {
+      font-size: 32px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      color: #F59E0B;
+      font-weight: 700;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .code-line .comment {
+      color: #6B7280;
+      font-weight: 400;
+    }
+
+    .dramatic-text {
+      font-size: 72px;
+      font-weight: 900;
+      margin-bottom: 64px;
+      line-height: 1.3;
+    }
+
+    .dramatic-text .highlight {
+      color: #F59E0B;
+    }
+
+    .dramatic-text .sub {
+      color: #B0B0CC;
+      font-size: 40px;
+      font-weight: 600;
+      display: block;
+      margin-top: 12px;
+    }
+
+    .result-row {
+      display: flex;
+      gap: 32px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .result-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 24px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: center;
+    }
+
+    .result-card.fail {
+      border-left: 4px solid #EF4444;
+    }
+
+    .result-card.success {
+      border-left: 4px solid #10B981;
+    }
+
+    .result-icon {
+      font-size: 56px;
+      margin-bottom: 16px;
+    }
+
+    .result-label {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .result-text {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .result-card.fail .result-text {
+      color: #EF4444;
+    }
+
+    .result-card.success .result-text {
+      color: #10B981;
+    }
+
+    .arrow-between {
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      color: #8B5CF6;
+      font-weight: 800;
+    }
+
+    .netlify-badge {
+      position: absolute;
+      top: 140px;
+      right: 72px;
+      font-size: 20px;
+      color: #6B7280;
+      background: rgba(26, 26, 46, 0.8);
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(107, 114, 128, 0.3);
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="netlify-badge">Netlify 真实案例</div>
+
+  <div class="topic-tag">AI 精读 &#183; 实操指南</div>
+
+  <div class="dramatic-text">
+    <span class="highlight">一行代码</span>
+    <span class="sub">= 胜负分水岭</span>
+  </div>
+
+  <div class="code-block">
+    <div class="code-label">// CLI error message fix</div>
+    <div class="code-line">
+      <span class="comment">-</span> "Deploy failed"<br>
+      <span style="color:#10B981;">+</span> <span style="color:#10B981;">"Run `netlify deploy --prod`"</span>
+    </div>
+  </div>
+
+  <div class="result-row">
+    <div class="result-card fail">
+      <div class="result-label">Before</div>
+      <div class="result-icon">&#10060;</div>
+      <div class="result-text">部署失败</div>
+    </div>
+    <div class="arrow-between">&#10132;</div>
+    <div class="result-card success">
+      <div class="result-label">After</div>
+      <div class="result-icon">&#9989;</div>
+      <div class="result-text">一次成功</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

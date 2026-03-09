@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .section-label {
+      font-size: 20px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .title .red { color: #EF4444; }
+
+    .rule-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .rule-label {
+      font-size: 18px;
+      color: #EF4444;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .rule-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .rule-reason {
+      font-size: 23px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .rule-reason .red { color: #EF4444; font-weight: 600; }
+
+    .quote-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .quote-mark {
+      font-size: 48px;
+      color: #F59E0B;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .quote-text {
+      font-size: 26px;
+      color: #F59E0B;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .quote-source {
+      font-size: 20px;
+      color: #6B7280;
+    }
+
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+    }
+    .check-num {
+      font-size: 32px;
+      font-weight: 800;
+      color: #10B981;
+      min-width: 40px;
+    }
+    .check-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .check-text .white { color: #FFFFFF; font-weight: 600; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-label">&#9888;&#65039; VIN &#30340;&#38081;&#24459;</div>
+
+  <div class="title">
+    <span class="red">绝不</span>让AI往Vault里写文件
+  </div>
+
+  <div class="rule-card">
+    <div class="rule-label">WHY</div>
+    <div class="rule-text">Vault必须100%是自己的想法</div>
+    <div class="rule-reason">否则AI下次找思维模式时<br>找到的可能是<span class="red">自己编的模式</span></div>
+  </div>
+
+  <div class="quote-card">
+    <div class="quote-mark">&#10077;</div>
+    <div class="quote-text">Markdown文件就是完美记忆<br>人的记忆会扭曲，文件不会骗你</div>
+    <div class="quote-source">&mdash; Greg</div>
+  </div>
+
+  <div class="checklist">
+    <div class="check-item">
+      <div class="check-num">1</div>
+      <div class="check-text"><span class="white">足够积累</span>：至少几十条跨数周笔记</div>
+    </div>
+    <div class="check-item">
+      <div class="check-num">2</div>
+      <div class="check-text"><span class="white">亲手写的</span>：不能是AI生成的内容</div>
+    </div>
+    <div class="check-item">
+      <div class="check-num">3</div>
+      <div class="check-text"><span class="white">有链接关系</span>：文件互相关联才有价值</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

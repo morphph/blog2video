@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Data comparison section */
+    .data-section {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+
+    .data-label {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .data-comparison {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 12px;
+    }
+
+    .data-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 32px;
+      text-align: center;
+    }
+
+    .data-box.before {
+      border-left: 4px solid #EF4444;
+    }
+
+    .data-box.after {
+      border-left: 4px solid #10B981;
+    }
+
+    .data-number {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .data-number.red { color: #EF4444; }
+    .data-number.green { color: #10B981; }
+
+    .data-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+
+    .arrow-icon {
+      font-size: 48px;
+      color: #F59E0B;
+      font-weight: 800;
+    }
+
+    .data-source {
+      font-size: 18px;
+      color: #6B7280;
+      margin-top: 8px;
+    }
+
+    /* Anchor point */
+    .anchor-card {
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 20px 32px;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 36px;
+    }
+
+    .anchor-label {
+      font-size: 18px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .anchor-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+
+    /* Two-stage review */
+    .review-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 8px;
+    }
+
+    .review-subtitle {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+
+    .review-steps {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 28px;
+    }
+
+    .review-step {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .review-step.step1 {
+      border-top: 4px solid #3B82F6;
+    }
+
+    .review-step.step2 {
+      border-top: 4px solid #10B981;
+    }
+
+    .step-number {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .step-number.blue { color: #3B82F6; }
+    .step-number.green { color: #10B981; }
+
+    .step-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+
+    .step-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+
+    .order-warning {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <!-- Data: compliance rate -->
+    <div class="data-section">
+      <div class="data-label">Meincke 等人 2025 研究 / 28,000 次 AI 对话</div>
+      <div class="data-comparison">
+        <div class="data-box before">
+          <div class="data-number red">33%</div>
+          <div class="data-desc">无说服技巧</div>
+        </div>
+        <div class="arrow-icon">&rarr;</div>
+        <div class="data-box after">
+          <div class="data-number green">72%</div>
+          <div class="data-desc">使用说服技巧</div>
+        </div>
+      </div>
+      <div class="data-source">AI 合规率翻倍</div>
+    </div>
+
+    <div class="anchor-card">
+      <div class="anchor-label">记忆锚点 1</div>
+      <div class="anchor-text">管 AI 不能只靠规则，要靠心理学</div>
+    </div>
+
+    <!-- Two-stage review -->
+    <div class="review-title">双阶段审查</div>
+    <div class="review-subtitle">Two-Stage Review</div>
+
+    <div class="review-steps">
+      <div class="review-step step1">
+        <div class="step-number blue">STEP 1</div>
+        <div class="step-title">规格合规</div>
+        <div class="step-desc">菜端对了没有？</div>
+      </div>
+      <div class="review-step step2">
+        <div class="step-number green">STEP 2</div>
+        <div class="step-title">代码质量</div>
+        <div class="step-desc">味道好不好？</div>
+      </div>
+    </div>
+
+    <div class="order-warning">顺序不能反：先查对不对，再查好不好</div>
+  </div>
+</body>
+</html>

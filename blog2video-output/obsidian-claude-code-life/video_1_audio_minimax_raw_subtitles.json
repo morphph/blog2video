@@ -1,0 +1,302 @@
+[
+  {
+    "text": "每次打开一个新的 Claude 对话，你是不是又要从头解释一遍自己是谁、在做什么项目？有个叫 Vin 的人说，他只需要打一个命令，AI 就能瞬间加载他的整个人生。",
+    "pronounce_text": "每次打开一个新的Claude对话，你是不是又要从头解释一遍自己是谁、在做什么项目？有个叫Vin的人说，他只需要打一个命令，AI就能瞬间加载他的整个人生。",
+    "time_begin": 0,
+    "time_end": 10581.179138321995,
+    "text_begin": 0,
+    "text_end": 81,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 76
+  },
+  {
+    "text": "项目描述、播客上下文、个人工作流，全部到位，一个字都不用解释。",
+    "pronounce_text": "项目描述、播客上下文、个人工作流，全部到位，一个字都不用解释。",
+    "time_begin": 10728,
+    "time_end": 16038.249433106575,
+    "text_begin": 81,
+    "text_end": 112,
+    "pronounce_text_begin": 76,
+    "pronounce_text_end": 107
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 16668,
+    "time_end": 24729.814058956916,
+    "text_begin": 112,
+    "text_end": 160,
+    "pronounce_text_begin": 107,
+    "pronounce_text_end": 152
+  },
+  {
+    "text": "今天我们精读的是一期播客访谈——Internet Vin 分享他如何用 Obsidian 加 Claude Code 管理整个人生。",
+    "pronounce_text": "今天我们精读的是一期播客访谈Internet Vin分享他如何用Obsidian加Claude Code管理整个人生。",
+    "time_begin": 24929.814058956916,
+    "time_end": 33026.45804988662,
+    "text_begin": 160,
+    "text_end": 226,
+    "pronounce_text_begin": 152,
+    "pronounce_text_end": 211
+  },
+  {
+    "text": "先说结论：这套系统的价值，不是 AI 能读你的文件。",
+    "pronounce_text": "先说结论：这套系统的价值，不是AI能读你的文件。",
+    "time_begin": 34668,
+    "time_end": 39200.380952380954,
+    "text_begin": 226,
+    "text_end": 252,
+    "pronounce_text_begin": 211,
+    "pronounce_text_end": 235
+  },
+  {
+    "text": "你可能会说，文件谁不会读？把一个 markdown 丢给 Claude，它当然能读。但问题是，你有几十个文件。项目描述一个，会议记录一个，日记一个，每个文件单独看都没什么特别的。",
+    "pronounce_text": "你可能会说，文件谁不会读？把一个markdown丢给Claude，它当然能读。但问题是，你有几十个文件。项目描述一个，会议记录一个，日记一个，每个文件单独看都没什么特别的。",
+    "time_begin": 39816,
+    "time_end": 53404.163265306124,
+    "text_begin": 252,
+    "text_end": 341,
+    "pronounce_text_begin": 235,
+    "pronounce_text_end": 321
+  },
+  {
+    "text": "打个比方。一堆散落的照片，你翻来翻去也就是零碎的回忆。但如果有人帮你按时间线、按人物关系整理成一本相册，你一翻就能看到完整的故事。",
+    "pronounce_text": "打个比方。一堆散落的照片，你翻来翻去也就是零碎的回忆。但如果有人帮你按时间线、按人物关系整理成一本相册，你一翻就能看到完整的故事。",
+    "time_begin": 54036,
+    "time_end": 64907.42857142857,
+    "text_begin": 341,
+    "text_end": 406,
+    "pronounce_text_begin": 321,
+    "pronounce_text_end": 386
+  },
+  {
+    "text": "Obsidian 做的就是这件事。它不是一个普通的笔记本，它是一个 Vault——知识库。每个文件之间可以用双括号互相链接。你在日记里写了\"今天和 Greg 录播客\"，这句话就会自动连回你的 Greg Eisenberg 笔记。",
+    "pronounce_text": "Obsidian做的就是这件事。它不是一个普通的笔记本，它是一个Vault知识库。每个文件之间可以用双括号互相链接。你在日记里写了\"今天和Greg录播客\"，这句话就会自动连回你的Greg Eisenberg笔记。",
+    "time_begin": 65520,
+    "time_end": 78516.05442176871,
+    "text_begin": 406,
+    "text_end": 520,
+    "pronounce_text_begin": 386,
+    "pronounce_text_end": 492
+  },
+  {
+    "text": "写得越多，链接越密，最终形成一张知识图谱。",
+    "pronounce_text": "写得越多，链接越密，最终形成一张知识图谱。",
+    "time_begin": 78660,
+    "time_end": 82635.10204081633,
+    "text_begin": 520,
+    "text_end": 541,
+    "pronounce_text_begin": 492,
+    "pronounce_text_end": 513
+  },
+  {
+    "text": "关键来了。Obsidian 最近发布了一个 CLI 工具。有了它，Claude Code 不仅能读取 Vault 里的每个文件，还能看到文件之间那些隐形的连线——谁引用了谁，谁和谁相关。",
+    "pronounce_text": "关键来了。Obsidian最近发布了一个CLI工具。有了它，Claude Code不仅能读取Vault里的每个文件，还能看到文件之间那些隐形的连线谁引用了谁，谁和谁相关。",
+    "time_begin": 83268,
+    "time_end": 96403.37414965987,
+    "text_begin": 541,
+    "text_end": 634,
+    "pronounce_text_begin": 513,
+    "pronounce_text_end": 598
+  },
+  {
+    "text": "这就像给 AI 装了一副特殊的眼镜。之前它只能一页一页翻你的笔记本。现在它能看到整张关系网。",
+    "pronounce_text": "这就像给AI装了一副特殊的眼镜。之前它只能一页一页翻你的笔记本。现在它能看到整张关系网。",
+    "time_begin": 97020,
+    "time_end": 104710.2947845805,
+    "text_begin": 634,
+    "text_end": 680,
+    "pronounce_text_begin": 598,
+    "pronounce_text_end": 642
+  },
+  {
+    "text": "那这张关系网到底能带来什么？我们拆成三层来看。",
+    "pronounce_text": "那这张关系网到底能带来什么？我们拆成三层来看。",
+    "time_begin": 106344,
+    "time_end": 109657.33333333333,
+    "text_begin": 680,
+    "text_end": 703,
+    "pronounce_text_begin": 642,
+    "pronounce_text_end": 665
+  },
+  {
+    "text": "第一层，消灭重复解释。Vin 造了一个 /context 命令。一敲回车，Claude Code 自动读取他的 README、项目描述、播客上下文、个人工作流——全部加载完毕。",
+    "pronounce_text": "第一层，消灭重复解释。Vin造了一个，context命令。一敲回车，Claude Code自动读取他的README、项目描述、播客上下文、个人工作流全部加载完毕。",
+    "time_begin": 110268,
+    "time_end": 122114.66666666667,
+    "text_begin": 703,
+    "text_end": 791,
+    "pronounce_text_begin": 665,
+    "pronounce_text_end": 746
+  },
+  {
+    "text": "每次新对话，不需要从头说起，一个命令搞定。",
+    "pronounce_text": "每次新对话，不需要从头说起，一个命令搞定。",
+    "time_begin": 122314.66666666667,
+    "time_end": 125802.14965986395,
+    "text_begin": 791,
+    "text_end": 812,
+    "pronounce_text_begin": 746,
+    "pronounce_text_end": 767
+  },
+  {
+    "text": "这就像每次看新医生都要从头讲病史，和直接递过去一份完整病历的区别。",
+    "pronounce_text": "这就像每次看新医生都要从头讲病史，和直接递过去一份完整病历的区别。",
+    "time_begin": 125964,
+    "time_end": 131343.90929705216,
+    "text_begin": 812,
+    "text_end": 845,
+    "pronounce_text_begin": 767,
+    "pronounce_text_end": 800
+  },
+  {
+    "text": "第二层，理解你的意图。Vin 还有个 /today 命令，拉取日历、任务、iMessages 加上过去一周的日记，生成当日计划。但这不只是简单的日程整合。",
+    "pronounce_text": "第二层，理解你的意图。Vin还有个，today命令，拉取日历、任务、iMessages加上过去一周的日记，生成当日计划。但这不只是简单的日程整合。",
+    "time_begin": 131976,
+    "time_end": 144333.50566893423,
+    "text_begin": 845,
+    "text_end": 922,
+    "pronounce_text_begin": 800,
+    "pronounce_text_end": 873
+  },
+  {
+    "text": "因为 AI 同时读了你的笔记，它知道你最近在思考什么。",
+    "pronounce_text": "因为AI同时读了你的笔记，它知道你最近在思考什么。",
+    "time_begin": 144533.50566893423,
+    "time_end": 148322.84807256237,
+    "text_begin": 922,
+    "text_end": 949,
+    "pronounce_text_begin": 873,
+    "pronounce_text_end": 898
+  },
+  {
+    "text": "如果你的日历里全是社交活动，但笔记里写的全是技术研究，AI 会发现这个落差。",
+    "pronounce_text": "如果你的日历里全是社交活动，但笔记里写的全是技术研究，AI会发现这个落差。",
+    "time_begin": 148464,
+    "time_end": 154076.10884353743,
+    "text_begin": 949,
+    "text_end": 987,
+    "pronounce_text_begin": 898,
+    "pronounce_text_end": 935
+  },
+  {
+    "text": "第三层，发现你自己都没注意到的模式。Vin 用 /trace 命令追踪了\"使用 Obsidian\"这个想法的演变。",
+    "pronounce_text": "第三层，发现你自己都没注意到的模式。Vin用，trace命令追踪了\"使用Obsidian\"这个想法的演变。",
+    "time_begin": 154692,
+    "time_end": 163299.48299319728,
+    "text_begin": 987,
+    "text_end": 1044,
+    "pronounce_text_begin": 935,
+    "pronounce_text_end": 988
+  },
+  {
+    "text": "AI 从散落在不同文件里的笔记中，拼出了四个阶段：2024 年 12 月，Obsidian 完全不在他的工具链里。到 2026 年 1 月，进入了\"爆发式构建期\"。跨度 13 个月。",
+    "pronounce_text": "AI从散落在不同文件里的笔记中，拼出了四个阶段：两千零二十四年十二月，Obsidian完全不在他的工具链里。到两千零二十六年一月，进入了\"爆发式构建期\"。跨度十三个月。",
+    "time_begin": 163440,
+    "time_end": 175913.60544217686,
+    "text_begin": 1044,
+    "text_end": 1135,
+    "pronounce_text_begin": 988,
+    "pronounce_text_end": 1072
+  },
+  {
+    "text": "他自己都没意识到这个想法已经酝酿了这么久。",
+    "pronounce_text": "他自己都没意识到这个想法已经酝酿了这么久。",
+    "time_begin": 176076,
+    "time_end": 178565.02494331065,
+    "text_begin": 1135,
+    "text_end": 1156,
+    "pronounce_text_begin": 1072,
+    "pronounce_text_end": 1093
+  },
+  {
+    "text": "这就是关系网的威力。单个文件是碎片，关系网才是记忆。",
+    "pronounce_text": "这就是关系网的威力。单个文件是碎片，关系网才是记忆。",
+    "time_begin": 179172,
+    "time_end": 183031.0022675737,
+    "text_begin": 1156,
+    "text_end": 1182,
+    "pronounce_text_begin": 1093,
+    "pronounce_text_end": 1119
+  },
+  {
+    "text": "那怎么判断你该不该用这套方案？看三个信号。",
+    "pronounce_text": "那怎么判断你该不该用这套方案？看三个信号。",
+    "time_begin": 184644,
+    "time_end": 188247.5827664399,
+    "text_begin": 1182,
+    "text_end": 1203,
+    "pronounce_text_begin": 1119,
+    "pronounce_text_end": 1140
+  },
+  {
+    "text": "信号一：你每次开新对话都在复制粘贴同样的背景信息。说明你缺的是持久化的上下文，不是更好的提示词。",
+    "pronounce_text": "信号一：你每次开新对话都在复制粘贴同样的背景信息。说明你缺的是持久化的上下文，不是更好的提示词。",
+    "time_begin": 188856,
+    "time_end": 197173.2335600907,
+    "text_begin": 1203,
+    "text_end": 1251,
+    "pronounce_text_begin": 1140,
+    "pronounce_text_end": 1188
+  },
+  {
+    "text": "信号二：你有笔记习惯，但笔记之间没有连接。散落的文件再多，AI 也只能一个一个读。有了链接，AI 才能看到全貌。",
+    "pronounce_text": "信号二：你有笔记习惯，但笔记之间没有连接。散落的文件再多，AI也只能一个一个读。有了链接，AI才能看到全貌。",
+    "time_begin": 197784,
+    "time_end": 207030.03174603175,
+    "text_begin": 1251,
+    "text_end": 1307,
+    "pronounce_text_begin": 1188,
+    "pronounce_text_end": 1242
+  },
+  {
+    "text": "信号三：你希望 AI 不只是执行指令，而是真正理解你在做什么、为什么做。这需要的不是更大的 Context Window，而是更结构化的上下文。",
+    "pronounce_text": "信号三：你希望AI不只是执行指令，而是真正理解你在做什么、为什么做。这需要的不是更大的Context Window，而是更结构化的上下文。",
+    "time_begin": 207648,
+    "time_end": 216859.20181405896,
+    "text_begin": 1307,
+    "text_end": 1379,
+    "pronounce_text_begin": 1242,
+    "pronounce_text_end": 1311
+  },
+  {
+    "text": "一句话总结：AI 的能力上限，取决于你喂给它的上下文质量。而 Obsidian 的关系网络，是目前最高效的上下文投喂方式。",
+    "pronounce_text": "一句话总结：AI的能力上限，取决于你喂给它的上下文质量。而Obsidian的关系网络，是目前最高效的上下文投喂方式。",
+    "time_begin": 218484,
+    "time_end": 227544.27210884355,
+    "text_begin": 1379,
+    "text_end": 1440,
+    "pronounce_text_begin": 1311,
+    "pronounce_text_end": 1369
+  },
+  {
+    "text": "你现在就可以做的一件事：下载 Obsidian，它是免费的。创建一个 Vault，把你最重要的三个项目各写一个 markdown 文件，然后用双括号把它们互相链接起来。就这么简单，你已经开始构建属于自己的知识图谱了。",
+    "pronounce_text": "你现在就可以做的一件事：下载Obsidian，它是免费的。创建一个Vault，把你最重要的三个项目各写一个markdown文件，然后用双括号把它们互相链接起来。就这么简单，你已经开始构建属于自己的知识图谱了。",
+    "time_begin": 228168,
+    "time_end": 241895.48299319728,
+    "text_begin": 1440,
+    "text_end": 1548,
+    "pronounce_text_begin": 1369,
+    "pronounce_text_end": 1473
+  },
+  {
+    "text": "下期我们来看，他用这套系统造了 10 多个命令，其中一个能挖出你自己都没意识到的想法。别忘了收藏这个系列，我们下期见。",
+    "pronounce_text": "下期我们来看，他用这套系统造了十多个命令，其中一个能挖出你自己都没意识到的想法。别忘了收藏这个系列，我们下期见。",
+    "time_begin": 242532,
+    "time_end": 251220.75283446713,
+    "text_begin": 1548,
+    "text_end": 1607,
+    "pronounce_text_begin": 1473,
+    "pronounce_text_end": 1529
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 251856,
+    "time_end": 256237.45124716553,
+    "text_begin": 1607,
+    "text_end": 1634,
+    "pronounce_text_begin": 1529,
+    "pronounce_text_end": 1555
+  }
+]

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: center;
+      text-align: center; position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #B0B0CC;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      max-width: 936px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+      position: relative;
+    }
+    .card-software {
+      border-left: 4px solid #8B5CF6;
+    }
+    .card-intermediation {
+      border-left: 4px solid #EF4444;
+    }
+    .card-payments {
+      border-left: 4px solid #F59E0B;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .card-name {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .card-software .card-name { color: #8B5CF6; }
+    .card-intermediation .card-name { color: #EF4444; }
+    .card-payments .card-name { color: #F59E0B; }
+    .card-badge {
+      font-size: 22px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+    .card-software .card-badge {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8B5CF6;
+    }
+    .card-intermediation .card-badge {
+      background: rgba(239, 68, 68, 0.15);
+      color: #EF4444;
+    }
+    .card-payments .card-badge {
+      background: rgba(245, 158, 11, 0.15);
+      color: #F59E0B;
+    }
+    .card-metric {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .metric-before {
+      font-size: 56px;
+      font-weight: 800;
+      color: #6B7280;
+      text-decoration: line-through;
+      text-decoration-color: #EF4444;
+    }
+    .metric-arrow {
+      font-size: 36px;
+      color: #EF4444;
+    }
+    .metric-after {
+      font-size: 56px;
+      font-weight: 800;
+    }
+    .card-software .metric-after { color: #8B5CF6; }
+    .card-intermediation .metric-after { color: #EF4444; }
+    .card-payments .metric-after { color: #F59E0B; }
+    .card-change {
+      font-size: 28px;
+      font-weight: 800;
+      color: #EF4444;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .metric-label {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 4px;
+    }
+    .metric-single {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">三大行业坍塌</div>
+    <div class="section-title">估值<span style="color:#EF4444;">崩盘</span>全景</div>
+
+    <div class="cards">
+      <!-- Software -->
+      <div class="card card-software">
+        <div class="card-header">
+          <div class="card-name">SaaS 软件</div>
+          <div class="card-badge">EBITDA 倍数</div>
+        </div>
+        <div class="card-metric">
+          <div class="metric-before">25x</div>
+          <div class="metric-arrow">&rarr;</div>
+          <div class="metric-after">5-8x</div>
+        </div>
+        <div class="card-change">&darr; 70%+ 估值蒸发</div>
+        <div class="card-desc">AI让复制成本趋近零</div>
+      </div>
+
+      <!-- Intermediation -->
+      <div class="card card-intermediation">
+        <div class="card-header">
+          <div class="card-name">中介行业</div>
+          <div class="card-badge">摩擦力模型</div>
+        </div>
+        <div class="metric-label">信息摩擦力</div>
+        <div class="metric-single" style="color:#EF4444;">趋近于零</div>
+        <div class="card-desc">AI直连供需，中间商出局</div>
+      </div>
+
+      <!-- Payments -->
+      <div class="card card-payments">
+        <div class="card-header">
+          <div class="card-name">支付行业</div>
+          <div class="card-badge">稳定币冲击</div>
+        </div>
+        <div class="metric-label">传统银行卡通道</div>
+        <div class="metric-single" style="color:#F59E0B;">被绕过</div>
+        <div class="card-desc">稳定币直接结算，手续费归零</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

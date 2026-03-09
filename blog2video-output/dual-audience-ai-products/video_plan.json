@@ -1,0 +1,169 @@
+{
+  "blog_metadata": {
+    "title": "Building Dual-Audience AI Products: Serving Both Humans and AI Agents",
+    "title_zh": "构建"双重受众"AI产品：同时服务人类与AI Agent",
+    "word_count": 3500,
+    "complexity": "medium-high",
+    "depth_score": 8,
+    "slug": "dual-audience-ai-products"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "报告自然分为三大独立主题：第一是Agent经济大爆发的趋势判断（为什么现在必须关注），第二是从UX到AX的核心概念框架加三大协议栈（理解底层逻辑），第三是产品策略与落地实操（怎么做）。三个主题层层递进但各自独立成篇，每篇都能给观众完整价值。",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI Agent市场要爆了！你的产品准备好服务"非人类用户"了吗？",
+        "hook_question": "你知道吗？YC 2025春季批次里，47%的公司都在做AI Agent——也就是说，未来你的产品用户可能一半都不是人类。你的产品准备好了吗？",
+        "core_thesis": "Agent经济正在爆发式增长，一个全新的商业模式B2A（Business-to-Agent）正在诞生——未来产品不仅要服务人类用户，还要服务AI Agent，谁先布局谁就占据先机。",
+        "source_sections": [
+          "Part 1: Why this matters now",
+          "B2A business model",
+          "Karpathy timeline"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "全球AI Agent市场从2024年的79.2亿美元将暴涨到2034年的2360亿美元，年复合增长率高达45.82%——IDC预测Agentic AI支出到2029年将超过1.3万亿美元。",
+        "emotion_arc": "震撼（数据量级惊人）→ 紧迫感（Gartner说2026年40%企业应用将有Agent）→ 顿悟（原来YC已经在喊Make Something Agents Want了）→ 危机意识（不布局就要被淘汰）",
+        "must_include_details": [
+          "YC Spring 2025批次144家公司中67家（47%）在做AI Agent",
+          "全球AI Agent市场：$7.92B（2024）→ $236B（2034），CAGR 45.82%",
+          "Gartner预测：2026年40%企业应用将嵌入AI Agent（2025年不到5%）",
+          "IDC预测：Agentic AI支出到2029年超1.3万亿美元",
+          "YC新口号：Make Something Agents Want（不再只是Make Something People Want）",
+          "Karpathy时间线：2025年Vibe Coding，2026年Agentic Engineering"
+        ],
+        "actionable_takeaway": "统计你产品目前的API调用量中有多少来自自动化/Agent类请求，评估Agent用户占比趋势，作为是否启动B2A战略的数据依据。",
+        "key_concepts": [
+          {
+            "concept_en": "B2A (Business-to-Agent)",
+            "concept_zh": "B2A商业模式",
+            "analogy_direction": "就像B2C是卖东西给消费者、B2B是卖给企业，B2A就是把产品和服务卖给AI Agent——Agent成了你的新客户",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Agent Economy",
+            "concept_zh": "Agent经济/代理经济",
+            "analogy_direction": "像电商刚兴起时的风口——当年是把线下搬到线上，现在是把'人用的产品'扩展为'人和AI都用的产品'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Agentic Engineering",
+            "concept_zh": "Agent化工程",
+            "analogy_direction": "Vibe Coding是让AI帮你写代码，Agentic Engineering是让一群AI自己规划、协作、完成整个工程——从打工仔升级成项目经理",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Make Something Agents Want",
+            "concept_zh": "做Agent需要的东西",
+            "analogy_direction": "YC经典创业圣经'做用户想要的东西'的Agent时代升级版——你的用户画像里要加上AI这个新角色",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Agent经济不是未来，而是正在发生——从YC的47%到万亿美元市场预测，信号已经足够清晰。现在就要开始思考：你的产品如何同时服务人和AI。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "UX→DX→AX：你的产品要讨好的不只是人类了！三大协议一文搞懂",
+        "hook_question": "你听说过用户体验UX、开发者体验DX，但你听说过AX吗？Agent Experience——AI Agent的使用体验。为什么说Agent零容忍失败、不会'联系销售'、只看文档质量来选工具？",
+        "core_thesis": "AX（Agent Experience）是产品设计的新维度，而MCP、A2A、llms.txt三大协议栈正是连接人类产品世界和Agent世界的桥梁——理解它们才能设计出真正的双受众产品。",
+        "source_sections": [
+          "Part 2: Core concept framework - UX → DX → AX",
+          "Part 3: Three protocol stacks",
+          "MCP + A2A complementary relationship"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Supabase之所以被Agent选为默认的Postgres工具，不是因为功能最强，而是因为文档写得最好——Agent选工具只看三个指标：文档清晰度、API质量、响应速度。",
+        "emotion_arc": "新奇（AX是什么新概念？）→ 对比清晰（UX/DX/AX三者区别一目了然）→ 技术满足感（三大协议栈各司其职）→ 融会贯通（MCP+A2A互补的全景图）",
+        "must_include_details": [
+          "AX（Agent Experience）由Netlify CEO Mathias Biilmann提出",
+          "Agent三大选择标准：文档清晰度、API质量、响应速度——不会'联系销售'",
+          "MCP（Model Context Protocol）：Anthropic出品，Agent连工具的标准，被比喻为'AI的USB-C'",
+          "A2A（Agent2Agent Protocol）：Google出品，Agent之间通信标准，150+组织参与",
+          "llms.txt：LLM可读的网站摘要，相当于AI时代的robots.txt",
+          "MCP+A2A互补关系：MCP是工具调用，A2A是Agent间协作"
+        ],
+        "actionable_takeaway": "给你的产品做一次AX审计：检查API文档是否机器可读、错误信息是否结构化、是否有MCP Server或llms.txt，列出Agent使用你产品时会遇到的所有卡点。",
+        "key_concepts": [
+          {
+            "concept_en": "AX (Agent Experience)",
+            "concept_zh": "Agent体验",
+            "analogy_direction": "UX是给人铺红毯，DX是给程序员修高速路，AX就是给AI Agent建专用车道——三条道各走各的，但目的地相同",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "MCP (Model Context Protocol)",
+            "concept_zh": "模型上下文协议",
+            "analogy_direction": "像USB-C接口——不管什么品牌的手机和充电器，一个接口全兼容。MCP让任何AI Agent都能用统一方式调用任何工具",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "A2A (Agent2Agent Protocol)",
+            "concept_zh": "Agent间通信协议",
+            "analogy_direction": "像企业之间的标准合同模板——有了统一格式，不同公司（不同Agent）之间才能高效合作，不用每次都从零谈判",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "llms.txt",
+            "concept_zh": "LLM可读网站摘要",
+            "analogy_direction": "robots.txt告诉搜索引擎'你能爬哪些页面'，llms.txt告诉AI'我这个网站是干什么的、怎么用'——相当于给AI写了一份自我介绍",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "从UX到DX再到AX，产品设计正在进入三重受众时代。MCP解决Agent调工具的问题，A2A解决Agent间协作的问题，llms.txt让Agent能发现你——三件套缺一不可。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "API文档就是新Landing Page！12周落地双受众AI产品实操指南",
+        "hook_question": "Netlify改了一行CLI报错信息，就把Agent从'部署失败'变成了'一次成功'——这种细节决定了Agent时代谁能赢。那具体怎么做？12周落地方案来了。",
+        "core_thesis": "双受众AI产品的落地不需要推倒重来——通过API-First基建、Agent接入层搭建、AX优化三个阶段12周即可完成转型，关键在于把文档当产品、把Agent当用户。",
+        "source_sections": [
+          "Part 4: Product strategies",
+          "Part 5: Implementation framework (Week 1-12)",
+          "Part 6: Case studies",
+          "Part 7: Specific advice for LLM API businesses"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Stripe推出Agent Toolkit后，YC W26批次的Sponge公司直接基于它构建——而Netlify仅仅改了一行CLI错误输出信息，就让Agent从'无法部署'变成'成功部署'，这说明Agent体验的改善往往只需要微小的改动。",
+        "emotion_arc": "认同（API文档确实很重要）→ 案例震撼（Netlify一行代码的故事）→ 清晰有序（12周分阶段很实际）→ 行动力爆棚（马上就能开始第一周）",
+        "must_include_details": [
+          "核心理念：API docs are the new Landing Page",
+          "双轨界面策略：GUI给人用 + API/MCP/A2A给Agent用",
+          "Agent SEO：让你的产品对Agent可见",
+          "Agent友好的商业流程：即时API密钥发放、机器可读定价",
+          "12周落地：Week 1-4 API-First基建，Week 5-8 Agent接入层（MCP Server + llms.txt），Week 9-12 AX优化（A2A + 监控 + 支付）",
+          "Supabase案例：靠文档质量被Agent选为默认Postgres工具",
+          "Stripe案例：Agent Toolkit + Sponge（YC W26）",
+          "Netlify案例：一行CLI报错修改解决Agent部署问题"
+        ],
+        "actionable_takeaway": "从本周开始执行12周计划的第一步：梳理你产品的所有API端点，确保每个都有结构化的错误返回和机器可读的文档，同时创建一个llms.txt文件放到你的网站根目录。",
+        "key_concepts": [
+          {
+            "concept_en": "API docs as Landing Page",
+            "concept_zh": "API文档即首页",
+            "analogy_direction": "传统产品靠好看的首页吸引人类用户，Agent时代靠清晰的API文档吸引AI——你的文档质量就是Agent眼中的'颜值'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Dual-track interface",
+            "concept_zh": "双轨界面",
+            "analogy_direction": "像银行同时有柜台（给人用的GUI）和ATM/网银API（给自动化用）——两条通道服务不同类型的客户",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Agent SEO",
+            "concept_zh": "Agent搜索优化",
+            "analogy_direction": "传统SEO是让Google搜到你，Agent SEO是让AI Agent找到你——从'被人搜到'升级为'被AI选中'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "12-week implementation framework",
+            "concept_zh": "12周落地框架",
+            "analogy_direction": "像装修房子分三期：第一期打地基（API基建），第二期装门窗（Agent接入层），第三期精装修（AX优化）——一步步来不用推倒重建",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "双受众产品落地的核心心法：文档即产品、Agent即用户、小改动大效果。12周三阶段落地，从API文档开始，到MCP+llms.txt接入，最后A2A优化——现在就开始第一步。"
+      }
+    ]
+  }
+}

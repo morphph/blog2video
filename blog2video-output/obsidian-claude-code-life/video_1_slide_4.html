@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .section-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+
+    .slide-title .accent { color: #F59E0B; }
+
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .check-item.signal-1 { border-left: 4px solid #EF4444; }
+    .check-item.signal-2 { border-left: 4px solid #3B82F6; }
+    .check-item.signal-3 { border-left: 4px solid #8B5CF6; }
+
+    .signal-badge {
+      font-size: 18px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      text-align: center;
+      min-width: 72px;
+    }
+
+    .signal-badge.red { background: rgba(239, 68, 68, 0.2); color: #EF4444; }
+    .signal-badge.blue { background: rgba(59, 130, 246, 0.2); color: #3B82F6; }
+    .signal-badge.purple { background: rgba(139, 92, 246, 0.2); color: #8B5CF6; }
+
+    .check-content {
+      flex: 1;
+    }
+
+    .check-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .check-desc {
+      font-size: 24px;
+      color: #6B7280;
+      line-height: 1.5;
+    }
+
+    .check-desc strong {
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">SELF CHECK</div>
+    <div class="slide-title">你该不该用？<br><span class="accent">三个信号</span></div>
+    <div class="checklist">
+      <div class="check-item signal-1">
+        <div class="signal-badge red">信号1</div>
+        <div class="check-content">
+          <div class="check-title">每次新对话都在复制粘贴</div>
+          <div class="check-desc">缺的是<strong>持久化上下文</strong><br>不是更好的提示词</div>
+        </div>
+      </div>
+      <div class="check-item signal-2">
+        <div class="signal-badge blue">信号2</div>
+        <div class="check-content">
+          <div class="check-title">有笔记习惯，但笔记没连接</div>
+          <div class="check-desc">散落文件再多<br>AI 也只能<strong>一个个读</strong></div>
+        </div>
+      </div>
+      <div class="check-item signal-3">
+        <div class="signal-badge purple">信号3</div>
+        <div class="check-content">
+          <div class="check-title">希望 AI 真正理解你</div>
+          <div class="check-desc">需要的不是更大的 Context Window<br>而是<strong>更结构化的上下文</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

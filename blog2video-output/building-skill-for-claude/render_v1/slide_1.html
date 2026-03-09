@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .series-tag {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+    .main-title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 56px;
+      max-width: 900px;
+    }
+    .main-title .highlight {
+      color: #EF4444;
+    }
+    .main-title .highlight-yellow {
+      color: #F59E0B;
+    }
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 36px;
+      width: 100%;
+      max-width: 860px;
+      text-align: left;
+    }
+    .hook-card .pain-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .hook-card .pain-text {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .hook-card .pain-text em {
+      font-style: normal;
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .source-tag {
+      margin-top: 48px;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 24px;
+      padding: 12px 28px;
+      font-size: 22px;
+      color: #6B7280;
+    }
+    /* Subtle glow behind title */
+    .glow-bg {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow-bg"></div>
+    <div class="series-tag">AI精读 &middot; Claude Skills</div>
+    <div class="main-title">
+      每次打开 Claude<br>都在<span class="highlight">"重新培训"</span><br>同一个助手？
+    </div>
+    <div class="hook-card">
+      <div class="pain-text">
+        代码风格、文档格式、工作流程……<br>
+        每次都要<em>从头解释一遍</em><br>
+        官方终于给出了解法
+      </div>
+    </div>
+    <div class="source-tag">Anthropic 官方 Skills 构建指南</div>
+  </div>
+</body>
+</html>

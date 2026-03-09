@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 180px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .bg-glow {
+      position: absolute; width: 800px; height: 800px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.14) 0%, transparent 70%);
+      top: 250px; left: 50%; transform: translateX(-50%); pointer-events: none;
+    }
+    .bg-glow-2 {
+      position: absolute; width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.06) 0%, transparent 70%);
+      top: 600px; left: 30%; transform: translateX(-50%); pointer-events: none;
+    }
+    .series-tag {
+      display: inline-block; background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.4); color: #8B5CF6;
+      font-size: 30px; font-weight: 600; padding: 12px 36px;
+      border-radius: 50px; letter-spacing: 3px; margin-bottom: 64px;
+      position: relative; z-index: 1;
+    }
+    .main-title {
+      font-size: 76px; font-weight: 900; line-height: 1.3;
+      margin-bottom: 48px; position: relative; z-index: 1;
+    }
+    .main-title .highlight-yellow { color: #F59E0B; }
+    .main-title .highlight-red { color: #EF4444; }
+    .sub-line {
+      font-size: 38px; color: #B0B0CC; line-height: 1.55;
+      margin-bottom: 64px; position: relative; z-index: 1;
+    }
+    .source-capsule {
+      display: inline-block; background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 40px; padding: 16px 36px; font-size: 26px;
+      color: #8B8BA0; position: relative; z-index: 1;
+    }
+    .source-capsule span { color: #B0B0CC; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+    <div class="series-tag">AI精读 · Agent Teams</div>
+    <div class="main-title">
+      <span class="highlight-red">Agent互相打架</span><br>任务全乱了？
+    </div>
+    <div class="sub-line">从零搭建AI开发团队 避坑指南</div>
+    <div class="source-capsule">源自 <span>Anthropic "Orchestrate teams of Claude Code sessions"</span></div>
+  </div>
+</body>
+</html>

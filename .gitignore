@@ -5,3 +5,5 @@ dist/
 tmp-*
 cookies/
 .env
+.DS_Store
+**/repo/

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 850px;
+      height: 850px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Header */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-radius: 30px;
+      padding: 10px 28px;
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .main-title {
+      font-size: 48px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .main-subtitle {
+      font-size: 28px;
+      color: #6B7280;
+      margin-bottom: 48px;
+    }
+    .main-subtitle .purple { color: #8B5CF6; font-weight: 600; }
+
+    /* Structure diagram */
+    .structure-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .struct-title {
+      font-size: 26px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .struct-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .struct-item:last-child { border-bottom: none; }
+    .struct-key {
+      font-size: 22px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      color: #8B5CF6;
+      background: rgba(139, 92, 246, 0.1);
+      border-radius: 6px;
+      padding: 4px 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      min-width: 150px;
+      text-align: center;
+    }
+    .struct-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      padding-top: 2px;
+    }
+    .struct-desc strong { color: #FFFFFF; font-weight: 600; }
+
+    /* Example card */
+    .example-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .example-label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .example-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .example-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .step-arrow {
+      color: #10B981;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* MCP extension card */
+    .mcp-card {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.06) 100%);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+    }
+    .mcp-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .mcp-badge {
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 22px;
+      color: #3B82F6;
+      font-weight: 700;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .mcp-title-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .mcp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .mcp-tag {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 22px;
+      color: #3B82F6;
+      font-weight: 500;
+    }
+    .mcp-conclusion {
+      margin-top: 14px;
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .mcp-conclusion .purple { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="section-tag">可复用结构</div>
+
+    <div class="main-title">自定义 Skill</div>
+    <div class="main-subtitle">写一次，Claude 每次都按<span class="purple">你的规矩</span>来</div>
+
+    <!-- Skill structure -->
+    <div class="structure-card">
+      <div class="struct-title">Skill 文件结构</div>
+      <div class="struct-item">
+        <div class="struct-key">YAML frontmatter</div>
+        <div class="struct-desc"><strong>触发条件</strong>——什么时候调用</div>
+      </div>
+      <div class="struct-item">
+        <div class="struct-key">Markdown 正文</div>
+        <div class="struct-desc"><strong>执行指令</strong>——一步步怎么做</div>
+      </div>
+    </div>
+
+    <!-- Example -->
+    <div class="example-card">
+      <div class="example-label">会议记录 Skill 示例</div>
+      <div class="example-steps">
+        <div class="example-step">
+          <span class="step-arrow">→</span>
+          <span>命名：<strong>YYYY-MM-DD-topic.md</strong></span>
+        </div>
+        <div class="example-step">
+          <span class="step-arrow">→</span>
+          <span>存到 <strong>/meetings/</strong> 目录</span>
+        </div>
+        <div class="example-step">
+          <span class="step-arrow">→</span>
+          <span>依次写：摘要 · 讨论要点 · 行动项</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MCP extension -->
+    <div class="mcp-card">
+      <div class="mcp-header">
+        <div class="mcp-badge">MCP</div>
+        <div class="mcp-title-text">接入外部工具扩展</div>
+      </div>
+      <div class="mcp-tags">
+        <div class="mcp-tag">Google Calendar 会议议程</div>
+        <div class="mcp-tag">Notion 团队同步</div>
+        <div class="mcp-tag">Stripe 客户数据</div>
+      </div>
+      <div class="mcp-conclusion">
+        Skill + MCP<br>
+        Claude 成为整个知识工作的<span class="purple">调度层</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

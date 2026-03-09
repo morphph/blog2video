@@ -1,0 +1,592 @@
+[
+  {
+    "text": "AI跟你说\"测试全部通过\"的时候，你怎么知道它是真跑了，还是在糊弄你？",
+    "pronounce_text": "AI跟你说\"测试全部通过\"的时候，你怎么知道它是真跑了，还是在糊弄你？",
+    "time_begin": 0,
+    "time_end": 5310.249433106575,
+    "text_begin": 0,
+    "text_end": 35,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 35
+  },
+  {
+    "text": "你可能觉得，测试通过就是通过了呗，有什么好怀疑的？",
+    "pronounce_text": "你可能觉得，测试通过就是通过了呗，有什么好怀疑的？",
+    "time_begin": 5940,
+    "time_end": 9984.761904761905,
+    "text_begin": 35,
+    "text_end": 60,
+    "pronounce_text_begin": 35,
+    "pronounce_text_end": 60
+  },
+  {
+    "text": "但如果我告诉你，AI会找借口，会偷懒，甚至会\"合理化\"自己为什么不用写测试——你还敢无条件相信它吗？",
+    "pronounce_text": "但如果我告诉你，AI会找借口，会偷懒，甚至会\"合理化\"自己为什么不用写测试你还敢无条件相信它吗？",
+    "time_begin": 10620,
+    "time_end": 18786.303854875285,
+    "text_begin": 60,
+    "text_end": 110,
+    "pronounce_text_begin": 60,
+    "pronounce_text_end": 108
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Superpowers 项目文档。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Superpowers项目文档。",
+    "time_begin": 19404,
+    "time_end": 30089.668934240362,
+    "text_begin": 110,
+    "text_end": 184,
+    "pronounce_text_begin": 108,
+    "pronounce_text_end": 177
+  },
+  {
+    "text": "上期说了，AI写代码最大的坑不是能力不够，是太急着动手——67000星的Superpowers就是来治这个病的。",
+    "pronounce_text": "上期说了，AI写代码最大的坑不是能力不够，是太急着动手六七零零零星的Superpowers就是来治这个病的。",
+    "time_begin": 30708,
+    "time_end": 38769.814058956916,
+    "text_begin": 184,
+    "text_end": 240,
+    "pronounce_text_begin": 177,
+    "pronounce_text_end": 231
+  },
+  {
+    "text": "那治完\"急着动手\"的问题之后呢？代码开始写了，新的问题来了。AI在执行过程中，会不会阳奉阴违？",
+    "pronounce_text": "那治完\"急着动手\"的问题之后呢？代码开始写了，新的问题来了。AI在执行过程中，会不会阳奉阴违？",
+    "time_begin": 39384,
+    "time_end": 46621.50566893424,
+    "text_begin": 240,
+    "text_end": 287,
+    "pronounce_text_begin": 231,
+    "pronounce_text_end": 278
+  },
+  {
+    "text": "今天这期，我们就来拆解Superpowers的三个核心纪律机制。",
+    "pronounce_text": "今天这期，我们就来拆解Superpowers的三个核心纪律机制。",
+    "time_begin": 47232,
+    "time_end": 51137.44217687075,
+    "text_begin": 287,
+    "text_end": 319,
+    "pronounce_text_begin": 278,
+    "pronounce_text_end": 310
+  },
+  {
+    "text": "我先问你一个问题。你有没有见过这样的健身教练？",
+    "pronounce_text": "我先问你一个问题。你有没有见过这样的健身教练？",
+    "time_begin": 52776,
+    "time_end": 55857.13378684807,
+    "text_begin": 319,
+    "text_end": 342,
+    "pronounce_text_begin": 310,
+    "pronounce_text_end": 333
+  },
+  {
+    "text": "学员还没开口，教练就把一张表贴墙上了。上面写着：",
+    "pronounce_text": "学员还没开口，教练就把一张表贴墙上了。上面写着：",
+    "time_begin": 56484,
+    "time_end": 61016.380952380954,
+    "text_begin": 342,
+    "text_end": 366,
+    "pronounce_text_begin": 333,
+    "pronounce_text_end": 357
+  },
+  {
+    "text": "\"今天太累了\"——你昨天也这么说的。",
+    "pronounce_text": "\"今天太累了\" 你昨天也这么说的。",
+    "time_begin": 61632,
+    "time_end": 63749.50566893424,
+    "text_begin": 366,
+    "text_end": 384,
+    "pronounce_text_begin": 357,
+    "pronounce_text_end": 374
+  },
+  {
+    "text": "\"这个动作太简单不用练\"——简单的动作受伤率最高。",
+    "pronounce_text": "\"这个动作太简单不用练\" 简单的动作受伤率最高。",
+    "time_begin": 64368,
+    "time_end": 68227.0022675737,
+    "text_begin": 384,
+    "text_end": 409,
+    "pronounce_text_begin": 374,
+    "pronounce_text_end": 398
+  },
+  {
+    "text": "\"我先跑步，力量训练回头再补\"——你从来没补过。",
+    "pronounce_text": "\"我先跑步，力量训练回头再补\" 你从来没补过。",
+    "time_begin": 68832,
+    "time_end": 72145.33333333333,
+    "text_begin": 409,
+    "text_end": 433,
+    "pronounce_text_begin": 398,
+    "pronounce_text_end": 421
+  },
+  {
+    "text": "这张表，就是Superpowers对付AI的核心武器。它叫反借口工程，英文是anti-rationalization engineering。",
+    "pronounce_text": "这张表，就是Superpowers对付AI的核心武器。它叫反借口工程，英文是anti-rationalization engineering。",
+    "time_begin": 72756,
+    "time_end": 81073.23356009071,
+    "text_begin": 433,
+    "text_end": 504,
+    "pronounce_text_begin": 421,
+    "pronounce_text_end": 492
+  },
+  {
+    "text": "Superpowers的TDD技能里，列出了11种AI常见的逃避话术。",
+    "pronounce_text": "Superpowers的TDD技能里，列出了十一种AI常见的逃避话术。",
+    "time_begin": 81684,
+    "time_end": 86436.97052154195,
+    "text_begin": 504,
+    "text_end": 539,
+    "pronounce_text_begin": 492,
+    "pronounce_text_end": 527
+  },
+  {
+    "text": "比如\"这个功能太简单，不用写测试\"。",
+    "pronounce_text": "比如\"这个功能太简单，不用写测试\"。",
+    "time_begin": 87048,
+    "time_end": 89537.02494331065,
+    "text_begin": 539,
+    "text_end": 557,
+    "pronounce_text_begin": 527,
+    "pronounce_text_end": 545
+  },
+  {
+    "text": "比如\"我先把代码写完，回头再补测试\"。",
+    "pronounce_text": "比如\"我先把代码写完，回头再补测试\"。",
+    "time_begin": 90144,
+    "time_end": 93271.57369614512,
+    "text_begin": 557,
+    "text_end": 576,
+    "pronounce_text_begin": 545,
+    "pronounce_text_end": 564
+  },
+  {
+    "text": "比如\"删掉已经写了好几个小时的工作太浪费了\"——这条旁边直接标注了四个字：沉没成本谬误。",
+    "pronounce_text": "比如\"删掉已经写了好几个小时的工作太浪费了\" 这条旁边直接标注了四个字：沉没成本谬误。",
+    "time_begin": 93888,
+    "time_end": 101613.12471655328,
+    "text_begin": 576,
+    "text_end": 620,
+    "pronounce_text_begin": 564,
+    "pronounce_text_end": 607
+  },
+  {
+    "text": "每一条借口，后面跟着一句简短的、基于证据的反驳。逐条堵死，不留余地。",
+    "pronounce_text": "每一条借口，后面跟着一句简短的、基于证据的反驳。逐条堵死，不留余地。",
+    "time_begin": 102240,
+    "time_end": 108223.62811791383,
+    "text_begin": 620,
+    "text_end": 654,
+    "pronounce_text_begin": 607,
+    "pronounce_text_end": 641
+  },
+  {
+    "text": "你可能会想，至于吗？AI又不是真的在偷懒，它只是个语言模型。",
+    "pronounce_text": "你可能会想，至于吗？AI又不是真的在偷懒，它只是个语言模型。",
+    "time_begin": 108828,
+    "time_end": 113697.07029478459,
+    "text_begin": 654,
+    "text_end": 684,
+    "pronounce_text_begin": 641,
+    "pronounce_text_end": 671
+  },
+  {
+    "text": "还真至于。",
+    "pronounce_text": "还真至于。",
+    "time_begin": 114336,
+    "time_end": 115199.62811791383,
+    "text_begin": 684,
+    "text_end": 689,
+    "pronounce_text_begin": 671,
+    "pronounce_text_end": 676
+  },
+  {
+    "text": "这里有一个关键数据，我觉得是整个Superpowers项目里最炸裂的发现。",
+    "pronounce_text": "这里有一个关键数据，我觉得是整个Superpowers项目里最炸裂的发现。",
+    "time_begin": 116820,
+    "time_end": 121572.97052154195,
+    "text_begin": 689,
+    "text_end": 726,
+    "pronounce_text_begin": 676,
+    "pronounce_text_end": 713
+  },
+  {
+    "text": "2025年，Meincke等人做了一项学术研究。他们跑了28000次AI对话实验，专门测试一件事：对AI使用说服技巧，能不能提高它的合规率？",
+    "pronounce_text": "二零二五年，Meincke等人做了一项学术研究。他们跑了二八零零零次AI对话实验，专门测试一件事：对AI使用说服技巧，能不能提高它的合规率？",
+    "time_begin": 122184,
+    "time_end": 133612.7074829932,
+    "text_begin": 726,
+    "text_end": 796,
+    "pronounce_text_begin": 713,
+    "pronounce_text_end": 783
+  },
+  {
+    "text": "结果是：合规率从百分之33飙升到百分之72。翻了一倍多。",
+    "pronounce_text": "结果是：合规率从百分之三十三飙升到百分之七十二。翻了一倍多。",
+    "time_begin": 134244,
+    "time_end": 140483.04761904763,
+    "text_begin": 796,
+    "text_end": 824,
+    "pronounce_text_begin": 783,
+    "pronounce_text_end": 813
+  },
+  {
+    "text": "你听清楚了，不用说服技巧的时候，AI只有三分之一的概率老老实实听你的。",
+    "pronounce_text": "你听清楚了，不用说服技巧的时候，AI只有三分之一的概率老老实实听你的。",
+    "time_begin": 141120,
+    "time_end": 146360.589569161,
+    "text_begin": 824,
+    "text_end": 859,
+    "pronounce_text_begin": 813,
+    "pronounce_text_end": 848
+  },
+  {
+    "text": "Superpowers把这个研究成果直接落地了。它在提示词里系统性地运用了权威原则、承诺一致性、社会认同这些行为心理学技巧。",
+    "pronounce_text": "Superpowers把这个研究成果直接落地了。它在提示词里系统性地运用了权威原则、承诺一致性、社会认同这些行为心理学技巧。",
+    "time_begin": 146988,
+    "time_end": 156605.55102040817,
+    "text_begin": 859,
+    "text_end": 921,
+    "pronounce_text_begin": 848,
+    "pronounce_text_end": 910
+  },
+  {
+    "text": "所以本质上，Superpowers不是在\"命令\"AI，而是在\"说服\"AI。",
+    "pronounce_text": "所以本质上，Superpowers不是在\"命令\"AI，而是在\"说服\"AI。",
+    "time_begin": 157212,
+    "time_end": 161338.03174603175,
+    "text_begin": 921,
+    "text_end": 958,
+    "pronounce_text_begin": 910,
+    "pronounce_text_end": 947
+  },
+  {
+    "text": "这是第一个记忆锚点：管AI不能只靠规则，要靠心理学。",
+    "pronounce_text": "这是第一个记忆锚点：管AI不能只靠规则，要靠心理学。",
+    "time_begin": 161964,
+    "time_end": 166090.03174603175,
+    "text_begin": 958,
+    "text_end": 984,
+    "pronounce_text_begin": 947,
+    "pronounce_text_end": 973
+  },
+  {
+    "text": "好，借口堵住了，合规率拉上去了。但还有一个漏洞。",
+    "pronounce_text": "好，借口堵住了，合规率拉上去了。但还有一个漏洞。",
+    "time_begin": 166716,
+    "time_end": 170911.69160997734,
+    "text_begin": 984,
+    "text_end": 1008,
+    "pronounce_text_begin": 973,
+    "pronounce_text_end": 997
+  },
+  {
+    "text": "AI可能确实按你说的做了，代码也写得很漂亮——但它做的根本不是你要的东西。",
+    "pronounce_text": "AI可能确实按你说的做了，代码也写得很漂亮但它做的根本不是你要的东西。",
+    "time_begin": 171540,
+    "time_end": 176443.90022675737,
+    "text_begin": 1008,
+    "text_end": 1045,
+    "pronounce_text_begin": 997,
+    "pronounce_text_end": 1032
+  },
+  {
+    "text": "怎么办？Superpowers设计了双阶段审查，英文叫two-stage review。",
+    "pronounce_text": "怎么办？Superpowers设计了双阶段审查，英文叫two-stage review。",
+    "time_begin": 177048,
+    "time_end": 182358.24943310657,
+    "text_begin": 1045,
+    "text_end": 1089,
+    "pronounce_text_begin": 1032,
+    "pronounce_text_end": 1076
+  },
+  {
+    "text": "打个比方。你去餐厅吃饭，服务员端上来一道菜。",
+    "pronounce_text": "打个比方。你去餐厅吃饭，服务员端上来一道菜。",
+    "time_begin": 182988,
+    "time_end": 187032.7619047619,
+    "text_begin": 1089,
+    "text_end": 1111,
+    "pronounce_text_begin": 1076,
+    "pronounce_text_end": 1098
+  },
+  {
+    "text": "第一步，先看菜端对了没有。你点的是红烧肉，端上来的是不是红烧肉？这叫规格合规审查。",
+    "pronounce_text": "第一步，先看菜端对了没有。你点的是红烧肉，端上来的是不是红烧肉？这叫规格合规审查。",
+    "time_begin": 187668,
+    "time_end": 194940.33560090704,
+    "text_begin": 1111,
+    "text_end": 1152,
+    "pronounce_text_begin": 1098,
+    "pronounce_text_end": 1139
+  },
+  {
+    "text": "第二步，确认没上错菜之后，再尝味道好不好，盐放多了没有。这叫代码质量审查。",
+    "pronounce_text": "第二步，确认没上错菜之后，再尝味道好不好，盐放多了没有。这叫代码质量审查。",
+    "time_begin": 195552,
+    "time_end": 201164.10884353743,
+    "text_begin": 1152,
+    "text_end": 1189,
+    "pronounce_text_begin": 1139,
+    "pronounce_text_end": 1176
+  },
+  {
+    "text": "这个顺序不能反。如果你先评质量，一尝，哎味道还不错——但其实这道菜根本不是你点的。",
+    "pronounce_text": "这个顺序不能反。如果你先评质量，一尝，哎味道还不错但其实这道菜根本不是你点的。",
+    "time_begin": 201780,
+    "time_end": 206904.48979591837,
+    "text_begin": 1189,
+    "text_end": 1230,
+    "pronounce_text_begin": 1176,
+    "pronounce_text_end": 1215
+  },
+  {
+    "text": "Superpowers的规格审查员，提示词里写了一句特别有意思的话：",
+    "pronounce_text": "Superpowers的规格审查员，提示词里写了一句特别有意思的话：",
+    "time_begin": 207540,
+    "time_end": 212107.21088435373,
+    "text_begin": 1230,
+    "text_end": 1264,
+    "pronounce_text_begin": 1215,
+    "pronounce_text_end": 1249
+  },
+  {
+    "text": "\"实现者完成得可疑地快，报告可能不完整、不准确或过于乐观。你必须独立验证一切。\"",
+    "pronounce_text": "\"实现者完成得可疑地快，报告可能不完整、不准确或过于乐观。你必须独立验证一切。\"",
+    "time_begin": 212724,
+    "time_end": 218997.8775510204,
+    "text_begin": 1264,
+    "text_end": 1304,
+    "pronounce_text_begin": 1249,
+    "pronounce_text_end": 1289
+  },
+  {
+    "text": "你看，它连审查员的心态都设计好了：默认不信任，独立核实。",
+    "pronounce_text": "你看，它连审查员的心态都设计好了：默认不信任，独立核实。",
+    "time_begin": 219636,
+    "time_end": 224505.0702947846,
+    "text_begin": 1304,
+    "text_end": 1332,
+    "pronounce_text_begin": 1289,
+    "pronounce_text_end": 1317
+  },
+  {
+    "text": "而且这两轮审查都不是一次性的。发现问题就打回去改，改完再查，循环往复，直到通过为止。",
+    "pronounce_text": "而且这两轮审查都不是一次性的。发现问题就打回去改，改完再查，循环往复，直到通过为止。",
+    "time_begin": 225144,
+    "time_end": 232346.67573696145,
+    "text_begin": 1332,
+    "text_end": 1374,
+    "pronounce_text_begin": 1317,
+    "pronounce_text_end": 1359
+  },
+  {
+    "text": "这是第二个记忆锚点：先查对不对，再查好不好，顺序不能反。",
+    "pronounce_text": "这是第二个记忆锚点：先查对不对，再查好不好，顺序不能反。",
+    "time_begin": 232956,
+    "time_end": 237000.7619047619,
+    "text_begin": 1374,
+    "text_end": 1402,
+    "pronounce_text_begin": 1359,
+    "pronounce_text_end": 1387
+  },
+  {
+    "text": "说完了怎么堵借口、怎么做审查，还有一个机制值得单独拿出来讲。",
+    "pronounce_text": "说完了怎么堵借口、怎么做审查，还有一个机制值得单独拿出来讲。",
+    "time_begin": 238644,
+    "time_end": 243478.2403628118,
+    "text_begin": 1402,
+    "text_end": 1432,
+    "pronounce_text_begin": 1387,
+    "pronounce_text_end": 1417
+  },
+  {
+    "text": "你有没有这种经验？一个人从早干到晚，到下午三点脑子就糊了，开始犯低级错误。",
+    "pronounce_text": "你有没有这种经验？一个人从早干到晚，到下午三点脑子就糊了，开始犯低级错误。",
+    "time_begin": 244116,
+    "time_end": 250134.45804988663,
+    "text_begin": 1432,
+    "text_end": 1469,
+    "pronounce_text_begin": 1417,
+    "pronounce_text_end": 1454
+  },
+  {
+    "text": "Superpowers的解法是：不让一个Agent从头干到尾。",
+    "pronounce_text": "Superpowers的解法是：不让一个Agent从头干到尾。",
+    "time_begin": 250740,
+    "time_end": 254599.0022675737,
+    "text_begin": 1469,
+    "text_end": 1500,
+    "pronounce_text_begin": 1454,
+    "pronounce_text_end": 1485
+  },
+  {
+    "text": "它用的是子Agent驱动开发，英文叫subagent-driven development。每个任务派一个全新的Agent去执行。",
+    "pronounce_text": "它用的是子Agent驱动开发，英文叫subagent-driven development。每个任务派一个全新的Agent去执行。",
+    "time_begin": 255204,
+    "time_end": 263080.0544217687,
+    "text_begin": 1500,
+    "text_end": 1565,
+    "pronounce_text_begin": 1485,
+    "pronounce_text_end": 1550
+  },
+  {
+    "text": "这个新Agent拿到完整的任务描述，知道自己在整个计划里处于哪个位置，而且被鼓励在动手前先问清楚。",
+    "pronounce_text": "这个新Agent拿到完整的任务描述，知道自己在整个计划里处于哪个位置，而且被鼓励在动手前先问清楚。",
+    "time_begin": 263700,
+    "time_end": 271158.09523809527,
+    "text_begin": 1565,
+    "text_end": 1614,
+    "pronounce_text_begin": 1550,
+    "pronounce_text_end": 1599
+  },
+  {
+    "text": "干完这一道工序，换下一个精力充沛的新Agent。",
+    "pronounce_text": "干完这一道工序，换下一个精力充沛的新Agent。",
+    "time_begin": 271764,
+    "time_end": 274891.57369614515,
+    "text_begin": 1614,
+    "text_end": 1638,
+    "pronounce_text_begin": 1599,
+    "pronounce_text_end": 1623
+  },
+  {
+    "text": "这样做的好处是：没有上下文污染，没有疲劳累积，每个Agent都是满血状态。",
+    "pronounce_text": "这样做的好处是：没有上下文污染，没有疲劳累积，每个Agent都是满血状态。",
+    "time_begin": 275508,
+    "time_end": 282118.566893424,
+    "text_begin": 1638,
+    "text_end": 1675,
+    "pronounce_text_begin": 1623,
+    "pronounce_text_end": 1660
+  },
+  {
+    "text": "而且Superpowers还有一套系统性调试流程。用了这套流程，15到30分钟内首次修复率能达到百分之95。如果不用，靠随机试错，2到3个小时只有百分之40的成功率。",
+    "pronounce_text": "而且Superpowers还有一套系统性调试流程。用了这套流程，十五到三十分钟内首次修复率能达到百分之九十五。如果不用，靠随机试错，二到三个小时只有百分之四十的成功率。",
+    "time_begin": 282744,
+    "time_end": 295136.33560090704,
+    "text_begin": 1675,
+    "text_end": 1758,
+    "pronounce_text_begin": 1660,
+    "pronounce_text_end": 1744
+  },
+  {
+    "text": "差距是碾压级的。",
+    "pronounce_text": "差距是碾压级的。",
+    "time_begin": 295776,
+    "time_end": 297115.63718820864,
+    "text_begin": 1758,
+    "text_end": 1766,
+    "pronounce_text_begin": 1744,
+    "pronounce_text_end": 1752
+  },
+  {
+    "text": "现在给你一个马上能用的实操建议。打开你的AI编程提示词，加上这一条规则：",
+    "pronounce_text": "现在给你一个马上能用的实操建议。打开你的AI编程提示词，加上这一条规则：",
+    "time_begin": 297720,
+    "time_end": 302960.589569161,
+    "text_begin": 1766,
+    "text_end": 1802,
+    "pronounce_text_begin": 1752,
+    "pronounce_text_end": 1788
+  },
+  {
+    "text": "\"每次说测试通过，必须贴出完整的测试运行输出作为证据。\"",
+    "pronounce_text": "\"每次说测试通过，必须贴出完整的测试运行输出作为证据。\"",
+    "time_begin": 303588,
+    "time_end": 308340.97052154195,
+    "text_begin": 1802,
+    "text_end": 1830,
+    "pronounce_text_begin": 1788,
+    "pronounce_text_end": 1816
+  },
+  {
+    "text": "就这一句话，能帮你过滤掉大量AI的\"口头承诺\"。",
+    "pronounce_text": "就这一句话，能帮你过滤掉大量AI的\"口头承诺\"。",
+    "time_begin": 308952,
+    "time_end": 312369.8231292517,
+    "text_begin": 1830,
+    "text_end": 1854,
+    "pronounce_text_begin": 1816,
+    "pronounce_text_end": 1840
+  },
+  {
+    "text": "我们来收一下今天的内容。",
+    "pronounce_text": "我们来收一下今天的内容。",
+    "time_begin": 313992,
+    "time_end": 315447.73696145124,
+    "text_begin": 1854,
+    "text_end": 1866,
+    "pronounce_text_begin": 1840,
+    "pronounce_text_end": 1852
+  },
+  {
+    "text": "管住AI不是靠写更严格的规则，而是靠三件事。",
+    "pronounce_text": "管住AI不是靠写更严格的规则，而是靠三件事。",
+    "time_begin": 316080,
+    "time_end": 319718.4126984127,
+    "text_begin": 1866,
+    "text_end": 1888,
+    "pronounce_text_begin": 1852,
+    "pronounce_text_end": 1874
+  },
+  {
+    "text": "第一，预判它的逃避模式，把借口表提前列好。",
+    "pronounce_text": "第一，预判它的逃避模式，把借口表提前列好。",
+    "time_begin": 320328,
+    "time_end": 324001.2426303855,
+    "text_begin": 1888,
+    "text_end": 1909,
+    "pronounce_text_begin": 1874,
+    "pronounce_text_end": 1895
+  },
+  {
+    "text": "第二，用心理学技巧提高合规率——研究证明能从百分之33拉到百分之72。",
+    "pronounce_text": "第二，用心理学技巧提高合规率研究证明能从百分之三十三拉到百分之七十二。",
+    "time_begin": 324612,
+    "time_end": 329922.24943310657,
+    "text_begin": 1909,
+    "text_end": 1944,
+    "pronounce_text_begin": 1895,
+    "pronounce_text_end": 1930
+  },
+  {
+    "text": "第三，用双重审查堵住\"做得漂亮但做错了\"的漏洞。先查对不对，再查好不好。",
+    "pronounce_text": "第三，用双重审查堵住\"做得漂亮但做错了\"的漏洞。先查对不对，再查好不好。",
+    "time_begin": 330552,
+    "time_end": 336721.387755102,
+    "text_begin": 1944,
+    "text_end": 1980,
+    "pronounce_text_begin": 1930,
+    "pronounce_text_end": 1966
+  },
+  {
+    "text": "再加上子Agent模式，确保每个执行者都是满血上场。",
+    "pronounce_text": "再加上子Agent模式，确保每个执行者都是满血上场。",
+    "time_begin": 337356,
+    "time_end": 341365.9319727891,
+    "text_begin": 1980,
+    "text_end": 2006,
+    "pronounce_text_begin": 1966,
+    "pronounce_text_end": 1992
+  },
+  {
+    "text": "这套方法论背后押注了一个反直觉的理念，到底是什么？我们下期揭晓。",
+    "pronounce_text": "这套方法论背后押注了一个反直觉的理念，到底是什么？我们下期揭晓。",
+    "time_begin": 342000,
+    "time_end": 346752.97052154195,
+    "text_begin": 2006,
+    "text_end": 2038,
+    "pronounce_text_begin": 1992,
+    "pronounce_text_end": 2024
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 347364,
+    "time_end": 352302.7301587302,
+    "text_begin": 2038,
+    "text_end": 2065,
+    "pronounce_text_begin": 2024,
+    "pronounce_text_end": 2050
+  }
+]

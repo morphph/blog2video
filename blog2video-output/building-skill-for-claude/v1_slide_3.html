@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .layers-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .layer-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 24px;
+    }
+    .layer-card.layer-1 {
+      border-left: 4px solid #10B981;
+    }
+    .layer-card.layer-2 {
+      border-left: 4px solid #F59E0B;
+    }
+    .layer-card.layer-3 {
+      border-left: 4px solid #3B82F6;
+    }
+    .layer-num {
+      font-size: 56px;
+      font-weight: 800;
+      flex-shrink: 0;
+      width: 72px;
+      text-align: center;
+    }
+    .layer-1 .layer-num { color: #10B981; }
+    .layer-2 .layer-num { color: #F59E0B; }
+    .layer-3 .layer-num { color: #3B82F6; }
+    .layer-info {
+      flex: 1;
+    }
+    .layer-name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .layer-1 .layer-name { color: #10B981; }
+    .layer-2 .layer-name { color: #F59E0B; }
+    .layer-3 .layer-name { color: #3B82F6; }
+    .layer-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .layer-metaphor {
+      font-size: 21px;
+      color: #6B7280;
+      margin-top: 4px;
+    }
+    .arrow-down {
+      text-align: center;
+      font-size: 28px;
+      color: #6B7280;
+      letter-spacing: 4px;
+    }
+    .bottom-note {
+      margin-top: 36px;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 28px;
+      width: 100%;
+    }
+    .bottom-note-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .bottom-note-text em {
+      font-style: normal;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title"><span class="accent">三层渐进式加载</span><br>按需取用</div>
+
+    <div class="layers-container">
+      <div class="layer-card layer-1">
+        <div class="layer-num">1</div>
+        <div class="layer-info">
+          <div class="layer-name">YAML Frontmatter</div>
+          <div class="layer-desc">名称 + 描述 &rarr; 永远加载</div>
+          <div class="layer-metaphor">像门口招牌："川菜馆，招牌麻婆豆腐"</div>
+        </div>
+      </div>
+
+      <div class="arrow-down">&darr;</div>
+
+      <div class="layer-card layer-2">
+        <div class="layer-num">2</div>
+        <div class="layer-info">
+          <div class="layer-name">SKILL.md 正文</div>
+          <div class="layer-desc">完整指令 &rarr; 任务相关时加载</div>
+          <div class="layer-metaphor">像坐下来拿到的完整菜单</div>
+        </div>
+      </div>
+
+      <div class="arrow-down">&darr;</div>
+
+      <div class="layer-card layer-3">
+        <div class="layer-num">3</div>
+        <div class="layer-info">
+          <div class="layer-name">scripts / references / assets</div>
+          <div class="layer-desc">深入资料 &rarr; 需要时主动查阅</div>
+          <div class="layer-metaphor">像问厨师推荐</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-note">
+      <div class="bottom-note-text">
+        目的：<em>省 Token</em>，不炸上下文窗口<br>
+        又不丢专业能力
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,582 @@
+[
+  {
+    "text": "你往Obsidian里存了几年笔记，结果AI生成的格式在里面全是乱的。",
+    "pronounce_text": "你往Obsidian里存了几年笔记，结果AI生成的格式在里面全是乱的。",
+    "time_begin": 0,
+    "time_end": 4683.310657596372,
+    "text_begin": 0,
+    "text_end": 35,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 35
+  },
+  {
+    "text": "Callout语法不对，wikilink失效，折腾半天还不如自己手打。",
+    "pronounce_text": "Callout语法不对，wikilink失效，折腾半天还不如自己手打。",
+    "time_begin": 5292,
+    "time_end": 9603.791383219956,
+    "text_begin": 35,
+    "text_end": 70,
+    "pronounce_text_begin": 35,
+    "pronounce_text_end": 70
+  },
+  {
+    "text": "你不是一个人——几乎每个用Obsidian的人都踩过这个坑。",
+    "pronounce_text": "你不是一个人几乎每个用Obsidian的人都踩过这个坑。",
+    "time_begin": 10224,
+    "time_end": 13827.58276643991,
+    "text_begin": 70,
+    "text_end": 100,
+    "pronounce_text_begin": 70,
+    "pronounce_text_end": 98
+  },
+  {
+    "text": "但最近，Obsidian的CEO亲自出手了。他发布了一个官方Skills包，专门教Claude怎么说Obsidian的语言。",
+    "pronounce_text": "但最近，Obsidian的CEO亲自出手了。他发布了一个官方Skills包，专门教Claude怎么说Obsidian的语言。",
+    "time_begin": 14436,
+    "time_end": 22265.614512471657,
+    "text_begin": 100,
+    "text_end": 162,
+    "pronounce_text_begin": 98,
+    "pronounce_text_end": 160
+  },
+  {
+    "text": "这是史上第一个由主流工具厂商官方维护的Agent Skills。AI生成的笔记，终于能在Obsidian里「原生」打开，而不是像从别处复制来的外来户。",
+    "pronounce_text": "这是史上第一个由主流工具厂商官方维护的Agent Skills。AI生成的笔记，终于能在Obsidian里「原生」打开，而不是像从别处复制来的外来户。",
+    "time_begin": 22896,
+    "time_end": 33105.65986394558,
+    "text_begin": 162,
+    "text_end": 237,
+    "pronounce_text_begin": 160,
+    "pronounce_text_end": 235
+  },
+  {
+    "text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 33732,
+    "time_end": 41422.294784580496,
+    "text_begin": 237,
+    "text_end": 282,
+    "pronounce_text_begin": 235,
+    "pronounce_text_end": 280
+  },
+  {
+    "text": "今天我们精读的，是Obsidian官方技术博客和社区发布的Claude Code集成方案。",
+    "pronounce_text": "今天我们精读的，是Obsidian官方技术博客和社区发布的Claude Code集成方案。",
+    "time_begin": 42048,
+    "time_end": 47915.5283446712,
+    "text_begin": 282,
+    "text_end": 327,
+    "pronounce_text_begin": 280,
+    "pronounce_text_end": 325
+  },
+  {
+    "text": "今天要讲的是：你只需要15分钟，就能让Claude真正读懂你的知识库。",
+    "pronounce_text": "今天要讲的是：你只需要十五分钟，就能让Claude真正读懂你的知识库。",
+    "time_begin": 48528,
+    "time_end": 53838.249433106575,
+    "text_begin": 327,
+    "text_end": 362,
+    "pronounce_text_begin": 325,
+    "pronounce_text_end": 360
+  },
+  {
+    "text": "先说一个很多人没意识到的事：你的Obsidian vault，本质上就是一个代码仓库。",
+    "pronounce_text": "先说一个很多人没意识到的事：你的Obsidian vault，本质上就是一个代码仓库。",
+    "time_begin": 55476,
+    "time_end": 61192.598639455784,
+    "text_begin": 362,
+    "text_end": 405,
+    "pronounce_text_begin": 360,
+    "pronounce_text_end": 403
+  },
+  {
+    "text": "不是比喻，是字面意思。",
+    "pronounce_text": "不是比喻，是字面意思。",
+    "time_begin": 61812,
+    "time_end": 63639.25623582766,
+    "text_begin": 405,
+    "text_end": 416,
+    "pronounce_text_begin": 403,
+    "pronounce_text_end": 414
+  },
+  {
+    "text": "一个代码仓库是什么？一堆纯文本文件，按文件夹组织，文件之间互相引用。",
+    "pronounce_text": "一个代码仓库是什么？一堆纯文本文件，按文件夹组织，文件之间互相引用。",
+    "time_begin": 64260,
+    "time_end": 70464.21768707482,
+    "text_begin": 416,
+    "text_end": 450,
+    "pronounce_text_begin": 414,
+    "pronounce_text_end": 448
+  },
+  {
+    "text": "你的Obsidian vault呢？一堆纯文本Markdown文件，按文件夹组织，用双链互相引用。",
+    "pronounce_text": "你的Obsidian vault呢？一堆纯文本Markdown文件，按文件夹组织，用双链互相引用。",
+    "time_begin": 71100,
+    "time_end": 77455.14739229025,
+    "text_begin": 450,
+    "text_end": 499,
+    "pronounce_text_begin": 448,
+    "pronounce_text_end": 497
+  },
+  {
+    "text": "结构是一样的。",
+    "pronounce_text": "结构是一样的。",
+    "time_begin": 78084,
+    "time_end": 79168.21768707482,
+    "text_begin": 499,
+    "text_end": 506,
+    "pronounce_text_begin": 497,
+    "pronounce_text_end": 504
+  },
+  {
+    "text": "这就是为什么Claude Code和Obsidian天然匹配——Claude Code本来就是为读写代码仓库设计的。你的笔记库，对它来说是同一种东西。",
+    "pronounce_text": "这就是为什么Claude Code和Obsidian天然匹配Claude Code本来就是为读写代码仓库设计的。你的笔记库，对它来说是同一种东西。",
+    "time_begin": 79776,
+    "time_end": 88058.40362811791,
+    "text_begin": 506,
+    "text_end": 581,
+    "pronounce_text_begin": 504,
+    "pronounce_text_end": 577
+  },
+  {
+    "text": "而且，Obsidian的笔记是存在本地文件系统里的。没有API，没有账号验证，没有速率限制。",
+    "pronounce_text": "而且，Obsidian的笔记是存在本地文件系统里的。没有API，没有账号验证，没有速率限制。",
+    "time_begin": 88668,
+    "time_end": 95278.56689342404,
+    "text_begin": 581,
+    "text_end": 627,
+    "pronounce_text_begin": 577,
+    "pronounce_text_end": 623
+  },
+  {
+    "text": "你打开终端，输入`cd ~/my-vault && claude`，就接上了。",
+    "pronounce_text": "你打开终端，输入，cd，my-vault，claude，就接上了。",
+    "time_begin": 95904,
+    "time_end": 100807.90022675737,
+    "text_begin": 627,
+    "text_end": 666,
+    "pronounce_text_begin": 623,
+    "pronounce_text_end": 656
+  },
+  {
+    "text": "就这么简单。",
+    "pronounce_text": "就这么简单。",
+    "time_begin": 101412,
+    "time_end": 102275.62811791383,
+    "text_begin": 666,
+    "text_end": 672,
+    "pronounce_text_begin": 656,
+    "pronounce_text_end": 662
+  },
+  {
+    "text": "好，那具体怎么接？有三种模式，你可以根据自己的习惯选。",
+    "pronounce_text": "好，那具体怎么接？有三种模式，你可以根据自己的习惯选。",
+    "time_begin": 103896,
+    "time_end": 108579.31065759638,
+    "text_begin": 672,
+    "text_end": 699,
+    "pronounce_text_begin": 662,
+    "pronounce_text_end": 689
+  },
+  {
+    "text": "**第一种：直接文件系统访问。**",
+    "pronounce_text": "第一种：直接文件系统访问。",
+    "time_begin": 109188,
+    "time_end": 111526.09523809524,
+    "text_begin": 699,
+    "text_end": 716,
+    "pronounce_text_begin": 689,
+    "pronounce_text_end": 702
+  },
+  {
+    "text": "最简单，零配置。打开终端，进入你的vault目录，运行claude。完成。",
+    "pronounce_text": "最简单，零配置。打开终端，进入你的vault目录，运行claude。完成。",
+    "time_begin": 112140,
+    "time_end": 118413.87755102041,
+    "text_begin": 716,
+    "text_end": 753,
+    "pronounce_text_begin": 702,
+    "pronounce_text_end": 739
+  },
+  {
+    "text": "适合大多数人，特别是已经习惯命令行的用户。",
+    "pronounce_text": "适合大多数人，特别是已经习惯命令行的用户。",
+    "time_begin": 119052,
+    "time_end": 122539.48299319728,
+    "text_begin": 753,
+    "text_end": 774,
+    "pronounce_text_begin": 739,
+    "pronounce_text_end": 760
+  },
+  {
+    "text": "**第二种：MCP Bridge。**",
+    "pronounce_text": "第二种：MCP Bridge。",
+    "time_begin": 123156,
+    "time_end": 125087.74603174604,
+    "text_begin": 774,
+    "text_end": 793,
+    "pronounce_text_begin": 760,
+    "pronounce_text_end": 775
+  },
+  {
+    "text": "通过一个叫`obsidian-claude-code-mcp`的插件，在Obsidian内部运行一个MCP服务器。用WebSocket连接Claude Code和Obsidian。",
+    "pronounce_text": "通过一个叫，obsidian-claude-code-mcp，的插件，在Obsidian内部运行一个MCP服务器。用WebSocket连接Claude Code和Obsidian。",
+    "time_begin": 125712,
+    "time_end": 135666.2403628118,
+    "text_begin": 793,
+    "text_end": 883,
+    "pronounce_text_begin": 775,
+    "pronounce_text_end": 865
+  },
+  {
+    "text": "这种模式的好处是：Claude能直接感知到Obsidian的运行状态，比如你当前打开的是哪个文件。",
+    "pronounce_text": "这种模式的好处是：Claude能直接感知到Obsidian的运行状态，比如你当前打开的是哪个文件。",
+    "time_begin": 136296,
+    "time_end": 143243.25623582766,
+    "text_begin": 883,
+    "text_end": 932,
+    "pronounce_text_begin": 865,
+    "pronounce_text_end": 914
+  },
+  {
+    "text": "**第三种：嵌入式终端。**",
+    "pronounce_text": "第三种：嵌入式终端。",
+    "time_begin": 143856,
+    "time_end": 145683.25623582766,
+    "text_begin": 932,
+    "text_end": 946,
+    "pronounce_text_begin": 914,
+    "pronounce_text_end": 924
+  },
+  {
+    "text": "直接在Obsidian界面里内嵌一个终端，左边是笔记，右边是Claude Code，并排工作。",
+    "pronounce_text": "直接在Obsidian界面里内嵌一个终端，左边是笔记，右边是Claude Code，并排工作。",
+    "time_begin": 146304,
+    "time_end": 152984.22675736962,
+    "text_begin": 946,
+    "text_end": 993,
+    "pronounce_text_begin": 924,
+    "pronounce_text_end": 971
+  },
+  {
+    "text": "如果你不喜欢来回切窗口，这种模式最顺手。",
+    "pronounce_text": "如果你不喜欢来回切窗口，这种模式最顺手。",
+    "time_begin": 153612,
+    "time_end": 156553.81405895692,
+    "text_begin": 993,
+    "text_end": 1013,
+    "pronounce_text_begin": 971,
+    "pronounce_text_end": 991
+  },
+  {
+    "text": "三种模式选好之后，第一件事：运行`/init`。",
+    "pronounce_text": "三种模式选好之后，第一件事：运行，init。",
+    "time_begin": 157176,
+    "time_end": 160895.68253968254,
+    "text_begin": 1013,
+    "text_end": 1037,
+    "pronounce_text_begin": 991,
+    "pronounce_text_end": 1013
+  },
+  {
+    "text": "这会在你的vault根目录创建一个`CLAUDE.md`文件。",
+    "pronounce_text": "这会在你的vault根目录创建一个，CLAUDE.md，文件。",
+    "time_begin": 161532,
+    "time_end": 165356.17233560092,
+    "text_begin": 1037,
+    "text_end": 1068,
+    "pronounce_text_begin": 1013,
+    "pronounce_text_end": 1044
+  },
+  {
+    "text": "这个文件是Claude的「记忆」。你在里面写清楚你的vault结构、命名规范、常用模板，Claude每次开新session都会自动加载。",
+    "pronounce_text": "这个文件是Claude的「记忆」。你在里面写清楚你的vault结构、命名规范、常用模板，Claude每次开新session都会自动加载。",
+    "time_begin": 165996,
+    "time_end": 175207.20181405896,
+    "text_begin": 1068,
+    "text_end": 1136,
+    "pronounce_text_begin": 1044,
+    "pronounce_text_end": 1112
+  },
+  {
+    "text": "不用每次都重新解释一遍\"我的日记文件夹在哪、tag怎么写\"。",
+    "pronounce_text": "不用每次都重新解释一遍\"我的日记文件夹在哪、tag怎么写\"。",
+    "time_begin": 175824,
+    "time_end": 179497.24263038547,
+    "text_begin": 1136,
+    "text_end": 1166,
+    "pronounce_text_begin": 1112,
+    "pronounce_text_end": 1142
+  },
+  {
+    "text": "接下来是今天最关键的一步：安装官方Skills包。",
+    "pronounce_text": "接下来是今天最关键的一步：安装官方Skills包。",
+    "time_begin": 180108,
+    "time_end": 183676.75283446713,
+    "text_begin": 1166,
+    "text_end": 1191,
+    "pronounce_text_begin": 1142,
+    "pronounce_text_end": 1167
+  },
+  {
+    "text": "运行这条命令：`/plugin marketplace add kepano/obsidian-skills`",
+    "pronounce_text": "运行这条命令：plugin marketplace add kepano，obsidian-skills，",
+    "time_begin": 184284,
+    "time_end": 189930.9387755102,
+    "text_begin": 1191,
+    "text_end": 1246,
+    "pronounce_text_begin": 1167,
+    "pronounce_text_end": 1220
+  },
+  {
+    "text": "这是Obsidian CEO Steph Ango亲自发布和维护的。史上第一个由主流工具厂商官方出品的Agent Skills包。",
+    "pronounce_text": "这是Obsidian CEO Steph Ango亲自发布和维护的。史上第一个由主流工具厂商官方出品的Agent Skills包。",
+    "time_begin": 190548,
+    "time_end": 198714.3038548753,
+    "text_begin": 1246,
+    "text_end": 1311,
+    "pronounce_text_begin": 1220,
+    "pronounce_text_end": 1285
+  },
+  {
+    "text": "里面包含三个核心Skill：",
+    "pronounce_text": "里面包含三个核心Skill：",
+    "time_begin": 199332,
+    "time_end": 201530.77551020408,
+    "text_begin": 1311,
+    "text_end": 1325,
+    "pronounce_text_begin": 1285,
+    "pronounce_text_end": 1299
+  },
+  {
+    "text": "第一个教Claude认识完整的Obsidian Markdown语法——wikilink、callout、YAML属性、Mermaid图表、LaTeX公式，全覆盖。",
+    "pronounce_text": "第一个教Claude认识完整的Obsidian Markdown语法wikilink、callout、YAML属性、Mermaid图表、LaTeX公式，全覆盖。",
+    "time_begin": 202140,
+    "time_end": 211490.52154195012,
+    "text_begin": 1325,
+    "text_end": 1407,
+    "pronounce_text_begin": 1299,
+    "pronounce_text_end": 1379
+  },
+  {
+    "text": "第二个处理`.base`文件格式，也就是Obsidian的结构化数据视图。",
+    "pronounce_text": "第二个处理，.base，文件格式，也就是Obsidian的结构化数据视图。",
+    "time_begin": 212112,
+    "time_end": 217306.14965986394,
+    "text_begin": 1407,
+    "text_end": 1444,
+    "pronounce_text_begin": 1379,
+    "pronounce_text_end": 1416
+  },
+  {
+    "text": "第三个让Claude能新建和编辑`.canvas`文件，也就是Obsidian的白板格式。",
+    "pronounce_text": "第三个让Claude能新建和编辑，.canvas，文件，也就是Obsidian的白板格式。",
+    "time_begin": 217944,
+    "time_end": 223509.66893424036,
+    "text_begin": 1444,
+    "text_end": 1489,
+    "pronounce_text_begin": 1416,
+    "pronounce_text_end": 1461
+  },
+  {
+    "text": "安装好之后，Claude就不会再写出那种「看起来像Markdown但在Obsidian里打开全是乱的」内容了。",
+    "pronounce_text": "安装好之后，Claude就不会再写出那种「看起来像Markdown但在Obsidian里打开全是乱的」内容了。",
+    "time_begin": 224136,
+    "time_end": 231187.74603174604,
+    "text_begin": 1489,
+    "text_end": 1544,
+    "pronounce_text_begin": 1461,
+    "pronounce_text_end": 1516
+  },
+  {
+    "text": "这里有个技术细节值得单独讲一下，因为它解释了为什么你可以安心安装很多Skills而不担心把Claude的上下文撑爆。",
+    "pronounce_text": "这里有个技术细节值得单独讲一下，因为它解释了为什么你可以安心安装很多Skills而不担心把Claude的上下文撑爆。",
+    "time_begin": 231804,
+    "time_end": 239749.7142857143,
+    "text_begin": 1544,
+    "text_end": 1602,
+    "pronounce_text_begin": 1516,
+    "pronounce_text_end": 1574
+  },
+  {
+    "text": "Skills使用的是「渐进加载」机制。",
+    "pronounce_text": "Skills使用的是「渐进加载」机制。",
+    "time_begin": 240372,
+    "time_end": 242826.19501133787,
+    "text_begin": 1602,
+    "text_end": 1621,
+    "pronounce_text_begin": 1574,
+    "pronounce_text_end": 1593
+  },
+  {
+    "text": "Claude启动时，每个Skill只加载名称和描述——大约100个Token。只有当Claude判断某个Skill和当前任务相关，才会把完整指令加载进来。",
+    "pronounce_text": "Claude启动时，每个Skill只加载名称和描述大约一百个Token。只有当Claude判断某个Skill和当前任务相关，才会把完整指令加载进来。",
+    "time_begin": 243432,
+    "time_end": 254349.86848072562,
+    "text_begin": 1621,
+    "text_end": 1698,
+    "pronounce_text_begin": 1593,
+    "pronounce_text_end": 1667
+  },
+  {
+    "text": "这意味着你可以安装几十个Skills，但Claude的工作内存里同时只有真正用到的那几个。",
+    "pronounce_text": "这意味着你可以安装几十个Skills，但Claude的工作内存里同时只有真正用到的那几个。",
+    "time_begin": 254988,
+    "time_end": 261157.38775510204,
+    "text_begin": 1698,
+    "text_end": 1743,
+    "pronounce_text_begin": 1667,
+    "pronounce_text_end": 1712
+  },
+  {
+    "text": "好，到这里我们把整个15分钟的安装路径梳理一下。",
+    "pronounce_text": "好，到这里我们把整个十五分钟的安装路径梳理一下。",
+    "time_begin": 262800,
+    "time_end": 266333.9229024943,
+    "text_begin": 1743,
+    "text_end": 1767,
+    "pronounce_text_begin": 1712,
+    "pronounce_text_end": 1736
+  },
+  {
+    "text": "你需要按顺序做四件事：",
+    "pronounce_text": "你需要按顺序做四件事：",
+    "time_begin": 266940,
+    "time_end": 268616.32653061225,
+    "text_begin": 1767,
+    "text_end": 1778,
+    "pronounce_text_begin": 1736,
+    "pronounce_text_end": 1747
+  },
+  {
+    "text": "第一，确认你有Claude Pro、Max、Team或者Enterprise订阅——Claude Code需要这个级别的访问权限。",
+    "pronounce_text": "第一，确认你有Claude Pro、Max、Team或者Enterprise订阅Claude Code需要这个级别的访问权限。",
+    "time_begin": 269244,
+    "time_end": 275970.6666666667,
+    "text_begin": 1778,
+    "text_end": 1843,
+    "pronounce_text_begin": 1747,
+    "pronounce_text_end": 1810
+  },
+  {
+    "text": "第二，打开终端，`cd`进入你的Obsidian vault目录，运行`claude`启动Claude Code。",
+    "pronounce_text": "第二，打开终端，cd，进入你的Obsidian vault目录，运行，claude，启动Claude Code。",
+    "time_begin": 276588,
+    "time_end": 283082.4671201814,
+    "text_begin": 1843,
+    "text_end": 1900,
+    "pronounce_text_begin": 1810,
+    "pronounce_text_end": 1866
+  },
+  {
+    "text": "第三，执行`/init`，让Claude在vault根目录创建`CLAUDE.md`文件。",
+    "pronounce_text": "第三，执行，init，让Claude在vault根目录创建，CLAUDE.md，文件。",
+    "time_begin": 283716,
+    "time_end": 289212.0090702948,
+    "text_begin": 1900,
+    "text_end": 1945,
+    "pronounce_text_begin": 1866,
+    "pronounce_text_end": 1909
+  },
+  {
+    "text": "第四，运行`/plugin marketplace add kepano/obsidian-skills`，安装官方Skills包。",
+    "pronounce_text": "第四，运行，plugin marketplace add kepano，obsidian-skills，安装官方Skills包。",
+    "time_begin": 289836,
+    "time_end": 296736.8163265306,
+    "text_begin": 1945,
+    "text_end": 2011,
+    "pronounce_text_begin": 1909,
+    "pronounce_text_end": 1973
+  },
+  {
+    "text": "完成。",
+    "pronounce_text": "完成。",
+    "time_begin": 297360,
+    "time_end": 298142.35827664396,
+    "text_begin": 2011,
+    "text_end": 2014,
+    "pronounce_text_begin": 1973,
+    "pronounce_text_end": 1976
+  },
+  {
+    "text": "今天的核心结论很简单：",
+    "pronounce_text": "今天的核心结论很简单：",
+    "time_begin": 299772,
+    "time_end": 301483.15646258503,
+    "text_begin": 2014,
+    "text_end": 2025,
+    "pronounce_text_begin": 1976,
+    "pronounce_text_end": 1987
+  },
+  {
+    "text": "你的Obsidian vault从来就不需要一个专门的AI接口。它本身就是个文件系统，Claude Code天生就能读。",
+    "pronounce_text": "你的Obsidian vault从来就不需要一个专门的AI接口。它本身就是个文件系统，Claude Code天生就能读。",
+    "time_begin": 302112,
+    "time_end": 308722.566893424,
+    "text_begin": 2025,
+    "text_end": 2085,
+    "pronounce_text_begin": 1987,
+    "pronounce_text_end": 2047
+  },
+  {
+    "text": "你缺的只是让Claude说正确语法的那本「词典」——官方Skills包就是这本词典。",
+    "pronounce_text": "你缺的只是让Claude说正确语法的那本「词典」 官方Skills包就是这本词典。",
+    "time_begin": 309348,
+    "time_end": 315772.8072562358,
+    "text_begin": 2085,
+    "text_end": 2127,
+    "pronounce_text_begin": 2047,
+    "pronounce_text_end": 2088
+  },
+  {
+    "text": "现在你就可以做的一件事：打开终端，`cd`进你的vault目录，运行`claude`，然后执行`/init`创建你的CLAUDE.md文件。",
+    "pronounce_text": "现在你就可以做的一件事：打开终端，cd，进你的vault目录，运行，claude，然后执行，init，创建你的CLAUDE.md文件。",
+    "time_begin": 316404,
+    "time_end": 325986.7210884354,
+    "text_begin": 2127,
+    "text_end": 2197,
+    "pronounce_text_begin": 2088,
+    "pronounce_text_end": 2155
+  },
+  {
+    "text": "就这一步，你的AI工作流就跑起来了。",
+    "pronounce_text": "就这一步，你的AI工作流就跑起来了。",
+    "time_begin": 326592,
+    "time_end": 329266.7845804989,
+    "text_begin": 2197,
+    "text_end": 2215,
+    "pronounce_text_begin": 2155,
+    "pronounce_text_end": 2173
+  },
+  {
+    "text": "下期我们来看，配好之后Claude到底能帮你做哪些以前要花15分钟的事？",
+    "pronounce_text": "下期我们来看，配好之后Claude到底能帮你做哪些以前要花十五分钟的事？",
+    "time_begin": 329904,
+    "time_end": 334877.56009070296,
+    "text_begin": 2215,
+    "text_end": 2251,
+    "pronounce_text_begin": 2173,
+    "pronounce_text_end": 2209
+  },
+  {
+    "text": "别忘了收藏这个系列，我们下期见。",
+    "pronounce_text": "别忘了收藏这个系列，我们下期见。",
+    "time_begin": 335484,
+    "time_end": 337682.7755102041,
+    "text_begin": 2251,
+    "text_end": 2267,
+    "pronounce_text_begin": 2209,
+    "pronounce_text_end": 2225
+  },
+  {
+    "text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 338292,
+    "time_end": 343010.1405895692,
+    "text_begin": 2267,
+    "text_end": 2293,
+    "pronounce_text_begin": 2225,
+    "pronounce_text_end": 2251
+  }
+]

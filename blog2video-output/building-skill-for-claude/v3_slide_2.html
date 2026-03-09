@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 48px;
+    }
+    .main-title .purple {
+      color: #8B5CF6;
+    }
+    .main-title .yellow {
+      color: #F59E0B;
+    }
+    .analogy-container {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .analogy-card {
+      flex: 1;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .analogy-card.mcp {
+      border-top: 4px solid #3B82F6;
+    }
+    .analogy-card.skill {
+      border-top: 4px solid #10B981;
+    }
+    .analogy-icon {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+    .analogy-label {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .analogy-card.mcp .analogy-label {
+      color: #3B82F6;
+    }
+    .analogy-card.skill .analogy-label {
+      color: #10B981;
+    }
+    .analogy-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .analogy-desc strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .arrow-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .arrow-line {
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(to right, #3B82F6, #10B981);
+      position: relative;
+    }
+    .arrow-text {
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: #B0B0CC;
+      white-space: nowrap;
+      background: #0D0D1A;
+      padding: 0 16px;
+    }
+    .contrast-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contrast-row {
+      width: 100%;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+    .contrast-row.bad {
+      border-left: 4px solid #EF4444;
+    }
+    .contrast-row.good {
+      border-left: 4px solid #10B981;
+    }
+    .contrast-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .contrast-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .contrast-text .red { color: #EF4444; font-weight: 700; }
+    .contrast-text .green { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">CORE CONCEPT</div>
+    <div class="main-title">
+      MCP = <span class="purple">专业厨房</span><br>
+      Skill = <span class="yellow">菜谱</span>
+    </div>
+
+    <div class="analogy-container">
+      <div class="analogy-card mcp">
+        <div class="analogy-icon">🍳</div>
+        <div class="analogy-label">MCP</div>
+        <div class="analogy-desc">炉灶、烤箱、食材<br><strong>全都有</strong></div>
+      </div>
+      <div class="analogy-card skill">
+        <div class="analogy-icon">📋</div>
+        <div class="analogy-label">Skill</div>
+        <div class="analogy-desc">第一步做什么<br><strong>第二步做什么</strong></div>
+      </div>
+    </div>
+
+    <div class="contrast-box">
+      <div class="contrast-row bad">
+        <div class="contrast-icon">❌</div>
+        <div class="contrast-text">没有 Skill → 每次从头开始<br><span class="red">效果参差不齐</span></div>
+      </div>
+      <div class="contrast-row good">
+        <div class="contrast-icon">✅</div>
+        <div class="contrast-text">有了 Skill → 工作流自动激活<br><span class="green">最佳实践内嵌每次交互</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

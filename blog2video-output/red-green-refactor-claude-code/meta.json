@@ -1,0 +1,14 @@
+{
+  "topic": "AI编程",
+  "blog_url": "https://www.youtube.com/watch?v=hYZdIwFIy-c",
+  "source": "red-green-refactor-claude-code",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .section-label { font-size: 24px; color: #8B5CF6; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 32px; }
+    .main-insight { font-size: 48px; font-weight: 800; line-height: 1.35; margin-bottom: 48px; }
+    .main-insight .contrast { color: #EF4444; }
+    .main-insight .highlight { color: #10B981; }
+    .versus-row { width: 100%; display: flex; gap: 16px; margin-bottom: 40px; }
+    .versus-card { flex: 1; border-radius: 12px; padding: 28px 20px; text-align: center; }
+    .versus-card.wrong { background: #1A1A2E; border: 1px solid rgba(239, 68, 68, 0.25); border-top: 4px solid #EF4444; }
+    .versus-card.right { background: #1A1A2E; border: 1px solid rgba(16, 185, 129, 0.25); border-top: 4px solid #10B981; }
+    .versus-icon { font-size: 40px; margin-bottom: 12px; }
+    .versus-label { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+    .versus-card.wrong .versus-label { color: #EF4444; }
+    .versus-card.right .versus-label { color: #10B981; }
+    .versus-desc { font-size: 24px; color: #B0B0CC; line-height: 1.5; }
+    .analogy-card { width: 100%; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.06)); border: 1px solid rgba(139, 92, 246, 0.3); border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 28px 32px; text-align: left; }
+    .analogy-text { font-size: 28px; color: #FFFFFF; font-weight: 600; line-height: 1.55; }
+    .analogy-text .purple { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">CORE INSIGHT</div>
+    <div class="main-insight">不是让AI<span class="contrast">做事</span><br>而是让AI帮你<span class="highlight">思考</span></div>
+    <div class="versus-row">
+      <div class="versus-card wrong">
+        <div class="versus-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M18.364 5.636a1 1 0 00-1.414 0L12 10.586 7.05 5.636a1 1 0 10-1.414 1.414L10.586 12l-4.95 4.95a1 1 0 101.414 1.414L12 13.414l4.95 4.95a1 1 0 001.414-1.414L13.414 12l4.95-4.95a1 1 0 000-1.414z" fill="#EF4444"/></svg>
+        </div>
+        <div class="versus-label">大多数人</div>
+        <div class="versus-desc">让AI写文案<br>查资料、做总结</div>
+      </div>
+      <div class="versus-card right">
+        <div class="versus-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="versus-label">Vin 的用法</div>
+        <div class="versus-desc">让AI从笔记里<br>发现你看不到的模式</div>
+      </div>
+    </div>
+    <div class="analogy-card">
+      <div class="analogy-text">你写了一年日记，自己顶多记得几个片段<br>但AI一口气读完所有日记 + <span class="purple">交叉引用</span><br>就能告诉你：你一直在绕着同一个问题打转</div>
+    </div>
+  </div>
+</body>
+</html>

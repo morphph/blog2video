@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Subtle background glow */
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+
+    .main-title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+      max-width: 900px;
+    }
+
+    .highlight-red {
+      color: #EF4444;
+    }
+
+    .highlight-yellow {
+      color: #F59E0B;
+    }
+
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 36px;
+      width: 100%;
+      max-width: 860px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    .hook-card .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hook-card .text {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+
+    .hook-card .text strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .suspense-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 36px;
+      width: 100%;
+      max-width: 860px;
+      text-align: left;
+    }
+
+    .suspense-card .text {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+
+    .suspense-card .text strong {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · Superpowers</div>
+
+    <div class="main-title">
+      AI说<span class="highlight-red">"测试通过了"</span><br>你<span class="highlight-yellow">敢信</span>吗？
+    </div>
+
+    <div class="hook-card">
+      <div class="text">
+        AI会<strong>找借口</strong>、会<strong>偷懒</strong>、甚至会"合理化"自己为什么不用写测试
+      </div>
+    </div>
+
+    <div class="suspense-card">
+      <div class="text">
+        这个项目列了<strong>11条借口反制表</strong><br>逐条堵死，不留余地
+      </div>
+    </div>
+  </div>
+</body>
+</html>

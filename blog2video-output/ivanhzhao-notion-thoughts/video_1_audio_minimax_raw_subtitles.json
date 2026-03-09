@@ -1,0 +1,262 @@
+[
+  {
+    "text": "一个人顶40个工程师。",
+    "pronounce_text": "一个人顶四十个工程师。",
+    "time_begin": 0,
+    "time_end": 1560.2267573696145,
+    "text_begin": 0,
+    "text_end": 11,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 11
+  },
+  {
+    "text": "Notion的联合创始人Simon，原来是标准的10x程序员。但现在他几乎不亲手写代码了。他同时操控三四个AI coding agent，午饭前把任务排好，睡觉的时候Agent仍然在跑。",
+    "pronounce_text": "Notion的联合创始人Simon，原来是标准的十x程序员。但现在他几乎不亲手写代码了。他同时操控三四个AI coding agent，午饭前把任务排好，睡觉的时候Agent仍然在跑。",
+    "time_begin": 2196,
+    "time_end": 14820.53514739229,
+    "text_begin": 11,
+    "text_end": 104,
+    "pronounce_text_begin": 11,
+    "pronounce_text_end": 103
+  },
+  {
+    "text": "一个人的产出，直接从10x飙到了30到40x。",
+    "pronounce_text": "一个人的产出，直接从十x飙到了三十到四十x。",
+    "time_begin": 14976,
+    "time_end": 18916.27210884354,
+    "text_begin": 104,
+    "text_end": 127,
+    "pronounce_text_begin": 103,
+    "pronounce_text_end": 125
+  },
+  {
+    "text": "这到底是怎么做到的？更关键的是，为什么你目前做不到？",
+    "pronounce_text": "这到底是怎么做到的？更关键的是，为什么你目前做不到？",
+    "time_begin": 19548,
+    "time_end": 23592.761904761905,
+    "text_begin": 127,
+    "text_end": 153,
+    "pronounce_text_begin": 125,
+    "pronounce_text_end": 151
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Notion CEO Ivan Zhao 的文章 Steam, Steel, and Infinite Minds。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Notion CEO Ivan Zhao的文章Steam,Steel,and Infinite Minds。",
+    "time_begin": 24228,
+    "time_end": 37816.163265306124,
+    "text_begin": 153,
+    "text_end": 268,
+    "pronounce_text_begin": 151,
+    "pronounce_text_end": 258
+  },
+  {
+    "text": "Ivan Zhao 提了一个特别有意思的比喻。",
+    "pronounce_text": "Ivan Zhao提了一个特别有意思的比喻。",
+    "time_begin": 39456,
+    "time_end": 42095.95464852608,
+    "text_begin": 268,
+    "text_end": 291,
+    "pronounce_text_begin": 258,
+    "pronounce_text_end": 280
+  },
+  {
+    "text": "80年代，Steve Jobs 说电脑是\"心智的自行车\"。后来我们又修了\"信息高速公路\"。但你发现没有？过了几十年，大部分知识工作者仍然在高速公路上骑自行车。",
+    "pronounce_text": "八十年代，Steve Jobs说电脑是\"心智的自行车\"。后来我们又修了\"信息高速公路\"。但你发现没有？过了几十年，大部分知识工作者仍然在高速公路上骑自行车。",
+    "time_begin": 42732,
+    "time_end": 54903.746031746035,
+    "text_begin": 291,
+    "text_end": 370,
+    "pronounce_text_begin": 280,
+    "pronounce_text_end": 358
+  },
+  {
+    "text": "AI Agent 的出现，终于让一部分人从自行车升级到了汽车。Simon就是第一批\"开上车\"的人。",
+    "pronounce_text": "AI Agent的出现，终于让一部分人从自行车升级到了汽车。Simon就是第一批\"开上车\"的人。",
+    "time_begin": 55512,
+    "time_end": 62935.26530612245,
+    "text_begin": 370,
+    "text_end": 419,
+    "pronounce_text_begin": 358,
+    "pronounce_text_end": 406
+  },
+  {
+    "text": "但问题来了。为什么只有程序员先享受到了这个红利？",
+    "pronounce_text": "但问题来了。为什么只有程序员先享受到了这个红利？",
+    "time_begin": 63540,
+    "time_end": 67584.76190476191,
+    "text_begin": 419,
+    "text_end": 443,
+    "pronounce_text_begin": 406,
+    "pronounce_text_end": 430
+  },
+  {
+    "text": "因为编程有两个天然优势。第一，上下文高度集中。代码、终端、仓库，所有信息都在一个地方。第二，结果可以验证。跑一遍测试就知道对不对，报错信息直接告诉你哪里出了问题。",
+    "pronounce_text": "因为编程有两个天然优势。第一，上下文高度集中。代码、终端、仓库，所有信息都在一个地方。第二，结果可以验证。跑一遍测试就知道对不对，报错信息直接告诉你哪里出了问题。",
+    "time_begin": 68220,
+    "time_end": 82435.10204081633,
+    "text_begin": 443,
+    "text_end": 524,
+    "pronounce_text_begin": 430,
+    "pronounce_text_end": 511
+  },
+  {
+    "text": "模型厂商利用这个特性，通过强化学习不断提升AI写代码的能力。但其他知识工作呢？就没这么幸运了。",
+    "pronounce_text": "模型厂商利用这个特性，通过强化学习不断提升AI写代码的能力。但其他知识工作呢？就没这么幸运了。",
+    "time_begin": 83052,
+    "time_end": 90556.5351473923,
+    "text_begin": 524,
+    "text_end": 571,
+    "pronounce_text_begin": 511,
+    "pronounce_text_end": 558
+  },
+  {
+    "text": "Ivan Zhao 指出了两个必须先解决的瓶颈。",
+    "pronounce_text": "Ivan Zhao指出了两个必须先解决的瓶颈。",
+    "time_begin": 92196,
+    "time_end": 94870.78458049886,
+    "text_begin": 571,
+    "text_end": 595,
+    "pronounce_text_begin": 558,
+    "pronounce_text_end": 581
+  },
+  {
+    "text": "第一个瓶颈：上下文碎片化。",
+    "pronounce_text": "第一个瓶颈：上下文碎片化。",
+    "time_begin": 95508,
+    "time_end": 97846.09523809524,
+    "text_begin": 595,
+    "text_end": 608,
+    "pronounce_text_begin": 581,
+    "pronounce_text_end": 594
+  },
+  {
+    "text": "想象你要写一份产品 brief。你得从 Slack 里翻对话记录，从 Google Doc 找战略文档，从数据看板拉指标。更麻烦的是，有些关键信息只存在同事的脑子里。",
+    "pronounce_text": "想象你要写一份产品brief。你得从Slack里翻对话记录，从Google Doc找战略文档，从数据看板拉指标。更麻烦的是，有些关键信息只存在同事的脑子里。",
+    "time_begin": 98460,
+    "time_end": 110445.98639455783,
+    "text_begin": 608,
+    "text_end": 691,
+    "pronounce_text_begin": 594,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "你就是那个复制粘贴的胶水，在十几个工具之间来回切换。AI Agent 想帮你？它连完整的上下文都拼不出来。",
+    "pronounce_text": "你就是那个复制粘贴的胶水，在十几个工具之间来回切换。AI Agent想帮你？它连完整的上下文都拼不出来。",
+    "time_begin": 111060,
+    "time_end": 119040.54421768707,
+    "text_begin": 691,
+    "text_end": 744,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 724
+  },
+  {
+    "text": "第二个瓶颈：工作不可验证。",
+    "pronounce_text": "第二个瓶颈：工作不可验证。",
+    "time_begin": 119664,
+    "time_end": 121630.57596371882,
+    "text_begin": 744,
+    "text_end": 757,
+    "pronounce_text_begin": 724,
+    "pronounce_text_end": 737
+  },
+  {
+    "text": "代码写得对不对，测试一跑就知道。但一份战略 memo 写得好不好？一个项目管理得怎么样？没有明确的判分标准。",
+    "pronounce_text": "代码写得对不对，测试一跑就知道。但一份战略memo写得好不好？一个项目管理得怎么样？没有明确的判分标准。",
+    "time_begin": 122256,
+    "time_end": 130132.05442176871,
+    "text_begin": 757,
+    "text_end": 811,
+    "pronounce_text_begin": 737,
+    "pronounce_text_end": 789
+  },
+  {
+    "text": "没有验证机制，模型就没办法自我提升。所以目前，人必须留在回路里做监督。",
+    "pronounce_text": "没有验证机制，模型就没办法自我提升。所以目前，人必须留在回路里做监督。",
+    "time_begin": 130752,
+    "time_end": 137327.73696145124,
+    "text_begin": 811,
+    "text_end": 846,
+    "pronounce_text_begin": 789,
+    "pronounce_text_end": 824
+  },
+  {
+    "text": "但\"人在回路里\"本身也有讲究。",
+    "pronounce_text": "但\"人在回路里\"本身也有讲究。",
+    "time_begin": 138960,
+    "time_end": 140926.57596371882,
+    "text_begin": 846,
+    "text_end": 861,
+    "pronounce_text_begin": 824,
+    "pronounce_text_end": 839
+  },
+  {
+    "text": "1865年英国出了一个红旗法案，要求每辆汽车前面必须有个人举着红旗开路。听着荒唐吧？但这就是现在很多公司的状态：让人逐条审批每个 Agent 的输出。",
+    "pronounce_text": "一八六五年英国出了一个红旗法案，要求每辆汽车前面必须有个人举着红旗开路。听着荒唐吧？但这就是现在很多公司的状态：让人逐条审批每个Agent的输出。",
+    "time_begin": 141552,
+    "time_end": 152794.947845805,
+    "text_begin": 861,
+    "text_end": 936,
+    "pronounce_text_begin": 839,
+    "pronounce_text_end": 912
+  },
+  {
+    "text": "Ivan Zhao 的观点很清楚：人应该在回路的上方做监工，而不是在回路里面做门卫。",
+    "pronounce_text": "Ivan Zhao的观点很清楚：人应该在回路的上方做监工，而不是在回路里面做门卫。",
+    "time_begin": 153432,
+    "time_end": 159264.6984126984,
+    "text_begin": 936,
+    "text_end": 978,
+    "pronounce_text_begin": 912,
+    "pronounce_text_end": 953
+  },
+  {
+    "text": "从骑自行车，到开车，再到自动驾驶。这才是知识工作者的终局路线图。",
+    "pronounce_text": "从骑自行车，到开车，再到自动驾驶。这才是知识工作者的终局路线图。",
+    "time_begin": 159876,
+    "time_end": 165813.18820861678,
+    "text_begin": 978,
+    "text_end": 1010,
+    "pronounce_text_begin": 953,
+    "pronounce_text_end": 985
+  },
+  {
+    "text": "所以核心结论是：AI Agent 的终局不是 Copilot，而是让你从骑车变成自动驾驶。但前提是，你的工作得先变得可整合、可验证。",
+    "pronounce_text": "所以核心结论是：AI Agent的终局不是Copilot，而是让你从骑车变成自动驾驶。但前提是，你的工作得先变得可整合、可验证。",
+    "time_begin": 167436,
+    "time_end": 176902.62131519275,
+    "text_begin": 1010,
+    "text_end": 1076,
+    "pronounce_text_begin": 985,
+    "pronounce_text_end": 1049
+  },
+  {
+    "text": "今天你就可以做一件事：列一张清单，标出哪些任务的上下文分散在三个以上工具里，哪些任务有明确的对错标准。后者，就是你最先可以交给 Agent 的活。",
+    "pronounce_text": "今天你就可以做一件事：列一张清单，标出哪些任务的上下文分散在三个以上工具里，哪些任务有明确的对错标准。后者，就是你最先可以交给Agent的活。",
+    "time_begin": 177516,
+    "time_end": 188909.8775510204,
+    "text_begin": 1076,
+    "text_end": 1149,
+    "pronounce_text_begin": 1049,
+    "pronounce_text_end": 1120
+  },
+  {
+    "text": "个人变强了，但公司呢？下期聊聊Notion怎么用700个Agent重新定义组织。别忘了收藏这个系列，我们下期见。",
+    "pronounce_text": "个人变强了，但公司呢？下期聊聊Notion怎么用七百个Agent重新定义组织。别忘了收藏这个系列，我们下期见。",
+    "time_begin": 189540,
+    "time_end": 197555.37414965985,
+    "text_begin": 1149,
+    "text_end": 1205,
+    "pronounce_text_begin": 1120,
+    "pronounce_text_end": 1175
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 198180,
+    "time_end": 202863.31065759636,
+    "text_begin": 1205,
+    "text_end": 1232,
+    "pronounce_text_begin": 1175,
+    "pronounce_text_end": 1201
+  }
+]

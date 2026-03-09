@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 180px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .summary-icon {
+      font-size: 76px;
+      margin-bottom: 44px;
+    }
+
+    .core-message {
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 1.45;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .core-message .purple {
+      color: #8B5CF6;
+    }
+    .core-message .green {
+      color: #10B981;
+    }
+
+    .divider {
+      width: 200px;
+      height: 4px;
+      background: linear-gradient(90deg, #8B5CF6, #10B981);
+      border-radius: 2px;
+      margin-bottom: 60px;
+    }
+
+    .action-box {
+      background: #1A1A2E;
+      border: 1px solid #2A2A4A;
+      border-radius: 16px;
+      padding: 36px 40px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .action-label {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .action-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .action-step {
+      font-size: 28px;
+      color: #D1D5DB;
+      line-height: 1.5;
+      display: flex;
+      gap: 14px;
+    }
+    .action-step .bullet {
+      color: #10B981;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .action-step code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 24px;
+      background: rgba(245, 158, 11, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .outro {
+      font-size: 28px;
+      color: #6B7280;
+      text-align: center;
+    }
+    .outro .brand {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="summary-icon">&#x1F3AF;</div>
+
+    <div class="core-message">
+      不靠<span class="purple">更强的模型</span><br>
+      靠<span class="green">更好的交接机制</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="action-box">
+      <div class="action-label">NOW &mdash; 你现在就可以做</div>
+      <div class="action-steps">
+        <div class="action-step">
+          <span class="bullet">&#10148;</span>
+          <span>创建 <code>feature_list.json</code></span>
+        </div>
+        <div class="action-step">
+          <span class="bullet">&#10148;</span>
+          <span>所有需求标记为未完成</span>
+        </div>
+        <div class="action-step">
+          <span class="bullet">&#10148;</span>
+          <span>新对话先读清单 + <code>git log</code></span>
+        </div>
+        <div class="action-step">
+          <span class="bullet">&#10148;</span>
+          <span>每次只认领一个功能</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="outro"><span class="brand">AI 精读</span> &middot; 精读一篇，胜过刷一百条</div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,342 @@
+[
+  {
+    "text": "Netlify有一个Agent部署的Bug。Agent调CLI发起部署，返回了一条人类才看得懂的报错信息。Agent读不懂，一遍遍尝试，全部失败。",
+    "pronounce_text": "Netlify有一个Agent部署的Bug。Agent调CLI发起部署，返回了一条人类才看得懂的报错信息。Agent读不懂，一遍遍尝试，全部失败。",
+    "time_begin": 0,
+    "time_end": 11289.387755102041,
+    "text_begin": 0,
+    "text_end": 73,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 73
+  },
+  {
+    "text": "后来工程师只改了一行代码，把报错换成结构化输出，Agent立刻一次部署成功。",
+    "pronounce_text": "后来工程师只改了一行代码，把报错换成结构化输出，Agent立刻一次部署成功。",
+    "time_begin": 11489.387755102041,
+    "time_end": 17949.02494331066,
+    "text_begin": 73,
+    "text_end": 111,
+    "pronounce_text_begin": 73,
+    "pronounce_text_end": 111
+  },
+  {
+    "text": "一行代码，就是Agent时代胜负的分水岭。",
+    "pronounce_text": "一行代码，就是Agent时代胜负的分水岭。",
+    "time_begin": 18108,
+    "time_end": 21560.65306122449,
+    "text_begin": 111,
+    "text_end": 132,
+    "pronounce_text_begin": 111,
+    "pronounce_text_end": 132
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们来聊实操——怎么把你的产品改造成Agent友好型。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们来聊实操怎么把你的产品改造成Agent友好型。",
+    "time_begin": 22176,
+    "time_end": 34614.77551020408,
+    "text_begin": 132,
+    "text_end": 211,
+    "pronounce_text_begin": 132,
+    "pronounce_text_end": 204
+  },
+  {
+    "text": "先说一个核心观点：API docs are the new Landing Page。API文档就是你的新首页。",
+    "pronounce_text": "先说一个核心观点：API docs are the new Landing Page。API文档就是你的新首页。",
+    "time_begin": 36252,
+    "time_end": 42676.80725623583,
+    "text_begin": 211,
+    "text_end": 267,
+    "pronounce_text_begin": 204,
+    "pronounce_text_end": 260
+  },
+  {
+    "text": "为什么？传统产品靠精美的Landing Page吸引人类用户。人会被设计打动，会点按钮，会联系销售。但Agent不看你的首页。",
+    "pronounce_text": "为什么？传统产品靠精美的Landing Page吸引人类用户。人会被设计打动，会点按钮，会联系销售。但Agent不看你的首页。",
+    "time_begin": 43308,
+    "time_end": 52437.93197278911,
+    "text_begin": 267,
+    "text_end": 330,
+    "pronounce_text_begin": 260,
+    "pronounce_text_end": 323
+  },
+  {
+    "text": "Agent只看三样东西：文档是否清晰、API质量如何、响应速度够不够快。",
+    "pronounce_text": "Agent只看三样东西：文档是否清晰、API质量如何、响应速度够不够快。",
+    "time_begin": 52637.93197278911,
+    "time_end": 58284.87074829932,
+    "text_begin": 330,
+    "text_end": 366,
+    "pronounce_text_begin": 323,
+    "pronounce_text_end": 359
+  },
+  {
+    "text": "文档写得不好，Agent直接跳过你，选下一家。",
+    "pronounce_text": "文档写得不好，Agent直接跳过你，选下一家。",
+    "time_begin": 58428,
+    "time_end": 62252.17233560091,
+    "text_begin": 366,
+    "text_end": 389,
+    "pronounce_text_begin": 359,
+    "pronounce_text_end": 382
+  },
+  {
+    "text": "这意味着产品需要双轨界面。一条轨道是GUI，给人用的图形界面，漂亮、直觉、有引导。",
+    "pronounce_text": "这意味着产品需要双轨界面。一条轨道是GUI，给人用的图形界面，漂亮、直觉、有引导。",
+    "time_begin": 62892,
+    "time_end": 70466.19501133787,
+    "text_begin": 389,
+    "text_end": 430,
+    "pronounce_text_begin": 382,
+    "pronounce_text_end": 423
+  },
+  {
+    "text": "另一条轨道是API加MCP加A2A，给Agent走的专用通道，结构化、可预测、零歧义。",
+    "pronounce_text": "另一条轨道是API加MCP加A2A，给Agent走的专用通道，结构化、可预测、零歧义。",
+    "time_begin": 70666.19501133787,
+    "time_end": 77799.21088435374,
+    "text_begin": 430,
+    "text_end": 473,
+    "pronounce_text_begin": 423,
+    "pronounce_text_end": 466
+  },
+  {
+    "text": "打个比方。这就像银行同时开了柜台和网银。柜台是给你我这样的人用的，有窗口、有服务员、能问问题。网银API是给自动化系统用的，24小时运转，不需要排队。",
+    "pronounce_text": "打个比方。这就像银行同时开了柜台和网银。柜台是给你我这样的人用的，有窗口、有服务员、能问问题。网银API是给自动化系统用的，二十四小时运转，不需要排队。",
+    "time_begin": 78408,
+    "time_end": 91322.78458049886,
+    "text_begin": 473,
+    "text_end": 548,
+    "pronounce_text_begin": 466,
+    "pronounce_text_end": 542
+  },
+  {
+    "text": "两条通道，服务不同客户，但后端是同一套系统。",
+    "pronounce_text": "两条通道，服务不同客户，但后端是同一套系统。",
+    "time_begin": 91476,
+    "time_end": 95335.0022675737,
+    "text_begin": 548,
+    "text_end": 570,
+    "pronounce_text_begin": 542,
+    "pronounce_text_end": 564
+  },
+  {
+    "text": "另外一个概念叫 Agent SEO。传统SEO是让Google搜到你，Agent SEO是让AI Agent找到你、选中你。怎么做？确保你有llms.txt、有机器可读的定价页、有即时发放的API密钥。",
+    "pronounce_text": "另外一个概念叫Agent SEO。传统SEO是让Google搜到你，Agent SEO是让AI Agent找到你、选中你。怎么做？确保你有llms.txt、有机器可读的定价页、有即时发放的API密钥。",
+    "time_begin": 95940,
+    "time_end": 111606.3492063492,
+    "text_begin": 570,
+    "text_end": 671,
+    "pronounce_text_begin": 564,
+    "pronounce_text_end": 664
+  },
+  {
+    "text": "Agent不会填表单、不会\"联系销售\"，它只接受自助流程。",
+    "pronounce_text": "Agent不会填表单、不会\"联系销售\"，它只接受自助流程。",
+    "time_begin": 111744,
+    "time_end": 116055.79138321996,
+    "text_begin": 671,
+    "text_end": 700,
+    "pronounce_text_begin": 664,
+    "pronounce_text_end": 693
+  },
+  {
+    "text": "知道了方向，怎么落地？原文给了一套12周框架，分三个阶段。",
+    "pronounce_text": "知道了方向，怎么落地？原文给了一套一两周框架，分三个阶段。",
+    "time_begin": 117684,
+    "time_end": 122878.14965986395,
+    "text_begin": 700,
+    "text_end": 729,
+    "pronounce_text_begin": 693,
+    "pronounce_text_end": 722
+  },
+  {
+    "text": "第一阶段，第1到第4周，API-First基建。这是打地基。梳理所有API端点，统一错误返回格式，确保每个接口都有结构化的、机器可读的文档。",
+    "pronounce_text": "第一阶段，第一到第四周，API-First基建。这是打地基。梳理所有API端点，统一错误返回格式，确保每个接口都有结构化的、机器可读的文档。",
+    "time_begin": 123516,
+    "time_end": 136732.6439909297,
+    "text_begin": 729,
+    "text_end": 799,
+    "pronounce_text_begin": 722,
+    "pronounce_text_end": 792
+  },
+  {
+    "text": "记住Netlify的教训——一条人类可读但机器看不懂的报错，就能让Agent完全卡死。这四周的目标：让Agent调你的API时，永远能拿到明确的成功或失败信号。",
+    "pronounce_text": "记住Netlify的教训一条人类可读但机器看不懂的报错，就能让Agent完全卡死。这四周的目标：让Agent调你的API时，永远能拿到明确的成功或失败信号。",
+    "time_begin": 136872,
+    "time_end": 147673.768707483,
+    "text_begin": 799,
+    "text_end": 879,
+    "pronounce_text_begin": 792,
+    "pronounce_text_end": 870
+  },
+  {
+    "text": "第二阶段，第5到第8周，Agent接入层。地基打好了，开始装门窗。",
+    "pronounce_text": "第二阶段，第五到第八周，Agent接入层。地基打好了，开始装门窗。",
+    "time_begin": 148284,
+    "time_end": 154453.38775510204,
+    "text_begin": 879,
+    "text_end": 912,
+    "pronounce_text_begin": 870,
+    "pronounce_text_end": 903
+  },
+  {
+    "text": "这阶段做两件事：搭建MCP Server，让Agent通过标准协议调用你的工具；创建llms.txt文件，放到网站根目录，告诉AI\"我是谁、我能做什么、怎么调用我\"。",
+    "pronounce_text": "这阶段做两件事：搭建MCP Server，让Agent通过标准协议调用你的工具;创建llms.txt文件，放到网站根目录，告诉AI\"我是谁、我能做什么、怎么调用我\"。",
+    "time_begin": 154620,
+    "time_end": 166942.67573696145,
+    "text_begin": 912,
+    "text_end": 995,
+    "pronounce_text_begin": 903,
+    "pronounce_text_end": 986
+  },
+  {
+    "text": "这就像给Agent写了一份产品说明书。",
+    "pronounce_text": "这就像给Agent写了一份产品说明书。",
+    "time_begin": 167142.67573696145,
+    "time_end": 169631.7006802721,
+    "text_begin": 995,
+    "text_end": 1014,
+    "pronounce_text_begin": 986,
+    "pronounce_text_end": 1005
+  },
+  {
+    "text": "第三阶段，第9到第12周，AX优化。精装修阶段。接入A2A协议，让你的服务能和其他Agent协作。搭建Agent使用监控面板，观察Agent怎么用你的产品、哪里出错最多。",
+    "pronounce_text": "第三阶段，第九到第一两周，AX优化。精装修阶段。接入A2A协议，让你的服务能和其他Agent协作。搭建Agent使用监控面板，观察Agent怎么用你的产品、哪里出错最多。",
+    "time_begin": 170244,
+    "time_end": 183379.37414965985,
+    "text_begin": 1014,
+    "text_end": 1099,
+    "pronounce_text_begin": 1005,
+    "pronounce_text_end": 1090
+  },
+  {
+    "text": "最后，打通Agent支付通道——让Agent能自主完成从选择到付费的全流程。",
+    "pronounce_text": "最后，打通Agent支付通道让Agent能自主完成从选择到付费的全流程。",
+    "time_begin": 183528,
+    "time_end": 189174.9387755102,
+    "text_begin": 1099,
+    "text_end": 1137,
+    "pronounce_text_begin": 1090,
+    "pronounce_text_end": 1126
+  },
+  {
+    "text": "三个阶段，就像装修房子：打地基、装门窗、精装修。不需要推倒原来的产品从零开始。",
+    "pronounce_text": "三个阶段，就像装修房子：打地基、装门窗、精装修。不需要推倒原来的产品从零开始。",
+    "time_begin": 189792,
+    "time_end": 196657.9863945578,
+    "text_begin": 1137,
+    "text_end": 1176,
+    "pronounce_text_begin": 1126,
+    "pronounce_text_end": 1165
+  },
+  {
+    "text": "三个真实案例，看看头部公司怎么做的。",
+    "pronounce_text": "三个真实案例，看看头部公司怎么做的。",
+    "time_begin": 198288,
+    "time_end": 200777.02494331065,
+    "text_begin": 1176,
+    "text_end": 1194,
+    "pronounce_text_begin": 1165,
+    "pronounce_text_end": 1183
+  },
+  {
+    "text": "第一个，Supabase。它成为Agent默认的Postgres工具，靠的不是功能最强。靠的是文档质量最好。Agent选工具，文档清晰度排第一位。",
+    "pronounce_text": "第一个，Supabase。它成为Agent默认的Postgres工具，靠的不是功能最强。靠的是文档质量最好。Agent选工具，文档清晰度排第一位。",
+    "time_begin": 201384,
+    "time_end": 211814.24943310657,
+    "text_begin": 1194,
+    "text_end": 1267,
+    "pronounce_text_begin": 1183,
+    "pronounce_text_end": 1256
+  },
+  {
+    "text": "Supabase把每个API都写到了机器友好的程度，所以被Agent\"选中\"了。",
+    "pronounce_text": "Supabase把每个API都写到了机器友好的程度，所以被Agent\"选中\"了。",
+    "time_begin": 212014.24943310657,
+    "time_end": 217661.18820861678,
+    "text_begin": 1267,
+    "text_end": 1307,
+    "pronounce_text_begin": 1256,
+    "pronounce_text_end": 1296
+  },
+  {
+    "text": "第二个，Stripe。它推出了Agent Toolkit，专门给Agent提供支付能力。效果多明显？YC W26批次有一家叫Sponge的公司，直接基于Stripe Agent Toolkit构建了自己的产品。",
+    "pronounce_text": "第二个，Stripe。它推出了Agent Toolkit，专门给Agent提供支付能力。效果多明显？YC W二十六批次有一家叫Sponge的公司，直接基于Stripe Agent Toolkit构建了自己的产品。",
+    "time_begin": 218268,
+    "time_end": 230521.0158730159,
+    "text_begin": 1307,
+    "text_end": 1412,
+    "pronounce_text_begin": 1296,
+    "pronounce_text_end": 1402
+  },
+  {
+    "text": "你提供Agent友好的基建，就会有创业公司围绕你壮大。",
+    "pronounce_text": "你提供Agent友好的基建，就会有创业公司围绕你壮大。",
+    "time_begin": 230688,
+    "time_end": 234697.9319727891,
+    "text_begin": 1412,
+    "text_end": 1439,
+    "pronounce_text_begin": 1402,
+    "pronounce_text_end": 1429
+  },
+  {
+    "text": "第三个，又是Netlify。就是开头提到的那个案例。仅仅修改了一行CLI错误输出，从人类可读的自然语言换成结构化格式。",
+    "pronounce_text": "第三个，又是Netlify。就是开头提到的那个案例。仅仅修改了一行CLI错误输出，从人类可读的自然语言换成结构化格式。",
+    "time_begin": 235332,
+    "time_end": 245797.07936507938,
+    "text_begin": 1439,
+    "text_end": 1498,
+    "pronounce_text_begin": 1429,
+    "pronounce_text_end": 1488
+  },
+  {
+    "text": "这一行改动，就让Agent从\"无法部署\"变成\"成功部署\"。小改动，大效果。",
+    "pronounce_text": "这一行改动，就让Agent从\"无法部署\"变成\"成功部署\"。小改动，大效果。",
+    "time_begin": 245997.07936507938,
+    "time_end": 251980.7074829932,
+    "text_begin": 1498,
+    "text_end": 1535,
+    "pronounce_text_begin": 1488,
+    "pronounce_text_end": 1525
+  },
+  {
+    "text": "总结一下核心公式：文档即产品，Agent即用户，小改动即大杠杆。",
+    "pronounce_text": "总结一下核心公式：文档即产品，Agent即用户，小改动即大杠杆。",
+    "time_begin": 253620,
+    "time_end": 260416.32653061225,
+    "text_begin": 1535,
+    "text_end": 1567,
+    "pronounce_text_begin": 1525,
+    "pronounce_text_end": 1557
+  },
+  {
+    "text": "你不需要等12周全部走完才见效。本周就可以开始第一步：梳理你产品的API端点，检查每个接口的错误返回是不是结构化的，然后创建一个llms.txt文件放到网站根目录。",
+    "pronounce_text": "你不需要等一两周全部走完才见效。本周就可以开始第一步：梳理你产品的API端点，检查每个接口的错误返回是不是结构化的，然后创建一个llms.txt文件放到网站根目录。",
+    "time_begin": 261036,
+    "time_end": 274658.99319727893,
+    "text_begin": 1567,
+    "text_end": 1649,
+    "pronounce_text_begin": 1557,
+    "pronounce_text_end": 1639
+  },
+  {
+    "text": "这三件事，就是你的Agent友好型改造的起跑线。",
+    "pronounce_text": "这三件事，就是你的Agent友好型改造的起跑线。",
+    "time_begin": 274824,
+    "time_end": 278206.99319727893,
+    "text_begin": 1649,
+    "text_end": 1673,
+    "pronounce_text_begin": 1639,
+    "pronounce_text_end": 1663
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 278820,
+    "time_end": 283317.55102040817,
+    "text_begin": 1673,
+    "text_end": 1700,
+    "pronounce_text_begin": 1663,
+    "pronounce_text_end": 1689
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "text": "2026年，一个程序员加上 AI 工具，几周就能复制一个中型 SaaS 产品。不是 demo，是完整可用的产品。那些估值几十亿的软件公司，花五年造的护城河，别人几周填平。",
+    "pronounce_text": "二零二六年，一个程序员加上AI工具，几周就能复制一个中型SaaS产品。不是demo，是完整可用的产品。那些估值几十亿的软件公司，花五年造的护城河，别人几周填平。",
+    "time_begin": 0,
+    "time_end": 13994.512471655327,
+    "text_begin": 0,
+    "text_end": 85,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 80
+  },
+  {
+    "text": "更可怕的是，这只是一场连锁崩塌的起点。",
+    "pronounce_text": "更可怕的是，这只是一场连锁崩塌的起点。",
+    "time_begin": 14148,
+    "time_end": 17530.993197278913,
+    "text_begin": 85,
+    "text_end": 104,
+    "pronounce_text_begin": 80,
+    "pronounce_text_end": 99
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 18144,
+    "time_end": 25938.78458049887,
+    "text_begin": 104,
+    "text_end": 154,
+    "pronounce_text_begin": 99,
+    "pronounce_text_end": 144
+  },
+  {
+    "text": "今天我们精读的是 Citrini Research 的一篇思想实验——站在2028年回望，AI 如何引爆一场行业级坍塌。",
+    "pronounce_text": "今天我们精读的是Citrini Research的一篇思想实验站在二零二八年回望，AI如何引爆一场行业级坍塌。",
+    "time_begin": 26138.78458049887,
+    "time_end": 34270.25850340136,
+    "text_begin": 154,
+    "text_end": 214,
+    "pronounce_text_begin": 144,
+    "pronounce_text_end": 199
+  },
+  {
+    "text": "文章提出一个核心概念：Abundant Intelligence，智能过剩。",
+    "pronounce_text": "文章提出一个核心概念：Abundant Intelligence，智能过剩。",
+    "time_begin": 35892,
+    "time_end": 40122.52154195011,
+    "text_begin": 214,
+    "text_end": 252,
+    "pronounce_text_begin": 199,
+    "pronounce_text_end": 237
+  },
+  {
+    "text": "工业革命让体力劳动变成白菜价。一台蒸汽机顶一百个搬运工，搬运工的工资就崩了。现在 AI 对脑力劳动做着同样的事。写代码、做客服、出报告，成本直线下降。",
+    "pronounce_text": "工业革命让体力劳动变成白菜价。一台蒸汽机顶一百个搬运工，搬运工的工资就崩了。现在AI对脑力劳动做着同样的事。写代码、做客服、出报告，成本直线下降。",
+    "time_begin": 40752,
+    "time_end": 53376.53514739229,
+    "text_begin": 252,
+    "text_end": 327,
+    "pronounce_text_begin": 237,
+    "pronounce_text_end": 310
+  },
+  {
+    "text": "但真正致命的不是降本。而是降本触发了一个自我强化的螺旋。",
+    "pronounce_text": "但真正致命的不是降本。而是降本触发了一个自我强化的螺旋。",
+    "time_begin": 54000,
+    "time_end": 58938.73015873016,
+    "text_begin": 327,
+    "text_end": 355,
+    "pronounce_text_begin": 310,
+    "pronounce_text_end": 338
+  },
+  {
+    "text": "文章管这个叫 Deflationary Feedback Loop，通缩死亡螺旋。公司发现用 AI 比雇人便宜，于是裁员。被裁的人消费减少，公司营收下滑，被迫更激进地自动化。",
+    "pronounce_text": "文章管这个叫Deflationary Feedback Loop，通缩死亡螺旋。公司发现用AI比雇人便宜，于是裁员。被裁的人消费减少，公司营收下滑，被迫更激进地自动化。",
+    "time_begin": 59544,
+    "time_end": 72389.12471655328,
+    "text_begin": 355,
+    "text_end": 442,
+    "pronounce_text_begin": 338,
+    "pronounce_text_end": 422
+  },
+  {
+    "text": "然后更多人失业，消费进一步萎缩。",
+    "pronounce_text": "然后更多人失业，消费进一步萎缩。",
+    "time_begin": 72589.12471655328,
+    "time_end": 75298.73922902494,
+    "text_begin": 442,
+    "text_end": 458,
+    "pronounce_text_begin": 422,
+    "pronounce_text_end": 438
+  },
+  {
+    "text": "这个循环没有刹车。被 AI 威胁最深的公司，反而成为 AI 最激进的采用者。不是不知道后果，是不裁员就活不下去。",
+    "pronounce_text": "这个循环没有刹车。被AI威胁最深的公司，反而成为AI最激进的采用者。不是不知道后果，是不裁员就活不下去。",
+    "time_begin": 75924,
+    "time_end": 85576.38095238095,
+    "text_begin": 458,
+    "text_end": 514,
+    "pronounce_text_begin": 438,
+    "pronounce_text_end": 490
+  },
+  {
+    "text": "哪些行业正在被这个螺旋吞噬？三个方向。",
+    "pronounce_text": "哪些行业正在被这个螺旋吞噬？三个方向。",
+    "time_begin": 87192,
+    "time_end": 90319.57369614512,
+    "text_begin": 514,
+    "text_end": 533,
+    "pronounce_text_begin": 490,
+    "pronounce_text_end": 509
+  },
+  {
+    "text": "第一，软件。SaaS 公司的估值原来按 EBITDA 的25倍定价，就像学区房，抢着买。现在呢？压缩到5到8倍。一家原来值100亿的公司，同样的利润，现在只值20到30亿。",
+    "pronounce_text": "第一，软件。SaaS公司的估值原来按EBITDA的二十五倍定价，就像学区房，抢着买。现在呢？压缩到五到八倍。一家原来值一百亿的公司，同样的利润，现在只值二十到三十亿。",
+    "time_begin": 90936,
+    "time_end": 105000.1723356009,
+    "text_begin": 533,
+    "text_end": 619,
+    "pronounce_text_begin": 509,
+    "pronounce_text_end": 592
+  },
+  {
+    "text": "价值蒸发百分之70以上。这就是 Multiple Compression。原因很简单——当谁都能快速复制你的产品，护城河就没了。",
+    "pronounce_text": "价值蒸发百分之七十以上。这就是Multiple Compression。原因很简单当谁都能快速复制你的产品，护城河就没了。",
+    "time_begin": 105156,
+    "time_end": 113473.23356009071,
+    "text_begin": 619,
+    "text_end": 683,
+    "pronounce_text_begin": 592,
+    "pronounce_text_end": 653
+  },
+  {
+    "text": "第二，中介。房产经纪、外卖平台、旅游代理，本质上都是收过路费的。但 AI Agent 直接替你比价、谈判、下单。而且 Agent 不讲品牌忠诚度，只认价格和效率。",
+    "pronounce_text": "第二，中介。房产经纪、外卖平台、旅游代理，本质上都是收过路费的。但AI Agent直接替你比价、谈判、下单。而且Agent不讲品牌忠诚度，只认价格和效率。",
+    "time_begin": 114084,
+    "time_end": 128043.68253968254,
+    "text_begin": 683,
+    "text_end": 764,
+    "pronounce_text_begin": 653,
+    "pronounce_text_end": 730
+  },
+  {
+    "text": "当摩擦力趋近于零，靠摩擦力吃饭的中介就没生意了。文章管这个叫 Friction-to-Zero。",
+    "pronounce_text": "当摩擦力趋近于零，靠摩擦力吃饭的中介就没生意了。文章管这个叫Friction-to-Zero。",
+    "time_begin": 128196,
+    "time_end": 135329.01587301586,
+    "text_begin": 764,
+    "text_end": 812,
+    "pronounce_text_begin": 730,
+    "pronounce_text_end": 777
+  },
+  {
+    "text": "第三，支付。越来越多商务变成机器对机器的交易。AI Agent 替你采购付款，倾向于用区块链稳定币结算，直接跳过银行卡。手续费收入就这样被绕过去了。",
+    "pronounce_text": "第三，支付。越来越多商务变成机器对机器的交易。AI Agent替你采购付款，倾向于用区块链稳定币结算，直接跳过银行卡。手续费收入就这样被绕过去了。",
+    "time_begin": 135936,
+    "time_end": 148885.61451247166,
+    "text_begin": 812,
+    "text_end": 886,
+    "pronounce_text_begin": 777,
+    "pronounce_text_end": 850
+  },
+  {
+    "text": "这跟你有关系吗？检查一下这些信号。",
+    "pronounce_text": "这跟你有关系吗？检查一下这些信号。",
+    "time_begin": 150516,
+    "time_end": 152784.43537414965,
+    "text_begin": 886,
+    "text_end": 903,
+    "pronounce_text_begin": 850,
+    "pronounce_text_end": 867
+  },
+  {
+    "text": "第一，你的公司是否在用 AI 替代岗位？不是实验，是真的在裁人。",
+    "pronounce_text": "第一，你的公司是否在用AI替代岗位？不是实验，是真的在裁人。",
+    "time_begin": 153396,
+    "time_end": 158369.56009070296,
+    "text_begin": 903,
+    "text_end": 935,
+    "pronounce_text_begin": 867,
+    "pronounce_text_end": 897
+  },
+  {
+    "text": "第二，你所在行业的核心价值是不是信息撮合或流程中转？",
+    "pronounce_text": "第二，你所在行业的核心价值是不是信息撮合或流程中转？",
+    "time_begin": 158976,
+    "time_end": 162695.68253968254,
+    "text_begin": 935,
+    "text_end": 961,
+    "pronounce_text_begin": 897,
+    "pronounce_text_end": 923
+  },
+  {
+    "text": "第三，客户是否开始绕过你，直接用 AI 完成以前需要你帮忙的事？",
+    "pronounce_text": "第三，客户是否开始绕过你，直接用AI完成以前需要你帮忙的事？",
+    "time_begin": 163332,
+    "time_end": 167934.04081632654,
+    "text_begin": 961,
+    "text_end": 993,
+    "pronounce_text_begin": 923,
+    "pronounce_text_end": 953
+  },
+  {
+    "text": "第四，行业里是否出现\"越被威胁越激进采用AI\"的现象？",
+    "pronounce_text": "第四，行业里是否出现\"越被威胁越激进采用AI\"的现象？",
+    "time_begin": 168552,
+    "time_end": 172712.86167800453,
+    "text_begin": 993,
+    "text_end": 1020,
+    "pronounce_text_begin": 953,
+    "pronounce_text_end": 980
+  },
+  {
+    "text": "命中两条以上，死亡螺旋可能已经启动了。",
+    "pronounce_text": "命中两条以上，死亡螺旋可能已经启动了。",
+    "time_begin": 173340,
+    "time_end": 176572.0634920635,
+    "text_begin": 1020,
+    "text_end": 1039,
+    "pronounce_text_begin": 980,
+    "pronounce_text_end": 999
+  },
+  {
+    "text": "一句话总结：AI 不是在优化行业，而是在消灭行业。靠信息差和摩擦力赚钱的模式，会系统性坍塌。",
+    "pronounce_text": "一句话总结：AI不是在优化行业，而是在消灭行业。靠信息差和摩擦力赚钱的模式，会系统性坍塌。",
+    "time_begin": 178200,
+    "time_end": 187074.51247165533,
+    "text_begin": 1039,
+    "text_end": 1085,
+    "pronounce_text_begin": 999,
+    "pronounce_text_end": 1044
+  },
+  {
+    "text": "你现在可以做一件事。审视自己每天的工作：本质是信息撮合，或者流程中转？如果是，立刻学 AI 工具，同时建立机器替代不了的人际信任。",
+    "pronounce_text": "你现在可以做一件事。审视自己每天的工作：本质是信息撮合，或者流程中转？如果是，立刻学AI工具，同时建立机器替代不了的人际信任。",
+    "time_begin": 187704,
+    "time_end": 197356.38095238095,
+    "text_begin": 1085,
+    "text_end": 1150,
+    "pronounce_text_begin": 1044,
+    "pronounce_text_end": 1107
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 197964,
+    "time_end": 202380.2811791383,
+    "text_begin": 1150,
+    "text_end": 1177,
+    "pronounce_text_begin": 1107,
+    "pronounce_text_end": 1133
+  }
+]

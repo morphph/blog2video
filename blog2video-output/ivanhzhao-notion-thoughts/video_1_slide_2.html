@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+    .slide-title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .slide-title .purple {
+      color: #8B5CF6;
+    }
+    .evolution-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      width: 100%;
+    }
+    .evo-stage {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 20px;
+      flex: 1;
+      text-align: center;
+    }
+    .evo-stage.active {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .evo-icon {
+      font-size: 56px;
+      margin-bottom: 12px;
+    }
+    .evo-label {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .evo-sub {
+      font-size: 20px;
+      color: #6B7280;
+    }
+    .evo-stage.active .evo-label {
+      color: #10B981;
+    }
+    .arrow {
+      font-size: 36px;
+      color: #8B5CF6;
+      flex-shrink: 0;
+    }
+    .insight-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+    }
+    .insight-title {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .insight-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .insight-text .em {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="section-label">Steve Jobs 的比喻</div>
+    <div class="slide-title">
+      从<span class="purple">自行车</span>到<span class="purple">汽车</span>
+    </div>
+    <div class="evolution-container">
+      <div class="evo-stage">
+        <div class="evo-icon">🚲</div>
+        <div class="evo-label">自行车</div>
+        <div class="evo-sub">传统电脑</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="evo-stage">
+        <div class="evo-icon">🛣️</div>
+        <div class="evo-label">高速公路</div>
+        <div class="evo-sub">互联网时代</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="evo-stage active">
+        <div class="evo-icon">🚗</div>
+        <div class="evo-label">汽车</div>
+        <div class="evo-sub">AI Agent</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-title">为什么程序员先上车？</div>
+      <div class="insight-text">
+        <span class="em">上下文集中</span> + <span class="em">结果可验证</span><br>
+        代码跑一遍就知道对不对
+      </div>
+    </div>
+  </div>
+</body>
+</html>

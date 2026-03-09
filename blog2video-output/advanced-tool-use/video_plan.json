@@ -1,0 +1,80 @@
+{
+  "blog_metadata": {
+    "title": "Advanced Tool Use on the Claude Developer Platform",
+    "title_zh": "Claude 开发者平台的高级工具使用",
+    "word_count": 550,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "advanced-tool-use"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "博客约550词，三个特性（Tool Search、Programmatic Calling、Tool Use Examples）全部围绕'让AI更高效地使用工具'这一核心问题，彼此是递进关系（发现工具→批量调用→学会正确用），单独拆分内容太薄撑不起独立视频，合在一起形成'痛点-三连招-实践'的完整叙事弧线",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude 用工具的方式彻底变了！三招省下 85% 的 Token",
+        "hook_question": "你有没有想过，AI 调用工具的时候，光是'记住工具说明书'就要烧掉十万个 Token？这比它真正干活花的还多——Anthropic 终于出手解决了。",
+        "core_thesis": "Anthropic 发布了工具搜索、程序化调用、使用示例三大特性，让 AI Agent 在大规模工具场景下既省 Token 又更准确",
+        "source_sections": [
+          "Overview",
+          "Tool Search Tool",
+          "Programmatic Tool Calling",
+          "Tool Use Examples",
+          "Best Practices",
+          "Getting Started"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "一个五合一的工具服务器组合（GitHub + Slack + Sentry + Grafana + Splunk）光工具定义就吃掉 55K Token，加上 Jira 直接突破 10 万——而对话还没开始说第一句话。用了 Tool Search 之后，从 77K 降到 8.7K，省了 85%。",
+        "emotion_arc": "震惊（十万Token还没开口就烧完）→ 好奇（怎么解决）→ 恍然大悟（按需加载的思路）→ 兴奋（三招组合拳的效果数据）→ 行动感（一行配置就能用）",
+        "must_include_details": [
+          "5个工具服务器消耗 55K Token，加 Jira 突破 100K",
+          "Tool Search 实现 85% Token 缩减（77K → 8.7K）",
+          "Opus 4 准确率从 49% 提升到 74%，Opus 4.5 从 79.5% 到 88.1%",
+          "Programmatic Calling 省 37% Token（43,588 → 27,297），消除 19+ 次推理传递",
+          "知识检索准确率从 25.6% 升到 28.5%",
+          "Tool Use Examples 让复杂参数处理准确率从 72% 提升到 90%",
+          "defer_loading: true 标记实现按需加载",
+          "启用方式：beta header advanced-tool-use-2025-11-20",
+          "示例最佳数量：1-5 个"
+        ],
+        "actionable_takeaway": "在你的 Claude API 调用中加上 advanced-tool-use-2025-11-20 的 beta header，把低频工具标记为 defer_loading: true，给参数复杂的工具写 1-5 个真实示例——立刻省下大量 Token 开销",
+        "key_concepts": [
+          {
+            "concept_en": "Tool Search Tool (defer loading)",
+            "concept_zh": "工具按需搜索",
+            "analogy_direction": "像手机的 App Store：你不会把十万个 App 全装进手机占满内存，而是需要的时候搜一下、装一个、用完可以卸。AI 用工具也一样，几千个工具定义不用全塞进上下文。",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Programmatic Tool Calling (code execution sandbox)",
+            "concept_zh": "程序化工具调用",
+            "analogy_direction": "像外卖平台的骑手调度：以前是你自己一家店一家店地下单、等餐、取餐，每次都要跟平台确认一轮；现在系统帮你规划路线，一趟跑完所有店，只把最终打包好的外卖送到你手上。",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Tool Use Examples",
+            "concept_zh": "工具使用示例",
+            "analogy_direction": "像宜家的组装说明书 vs 只给零件清单：光告诉你有哪些螺丝和板子（JSON Schema）远远不够，还得给你一份图文并茂的组装步骤图，准确率直接从 72% 飙到 90%。",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Context window token economics",
+            "concept_zh": "上下文窗口的 Token 经济学",
+            "analogy_direction": "像出差只带一个行李箱：箱子总共就这么大，如果工具说明书占了 80% 的空间，你自己的衣服和洗漱用品就没地方放了。三个特性本质上都在帮你'收纳行李'。",
+            "requires_code_replacement": false
+          }
+        ],
+        "content_outline": [
+          "Hook：AI 调工具，光'记说明书'就烧掉十万 Token？",
+          "痛点展开：Token 经济学——行李箱比喻，工具定义占满上下文窗口",
+          "方案一：Tool Search Tool——App Store 比喻，按需搜索加载，85% Token 缩减 + 准确率提升",
+          "方案二：Programmatic Tool Calling——骑手调度比喻，批量编排执行，37% Token 节省 + 消除 19 次推理",
+          "方案三：Tool Use Examples——宜家说明书比喻，参数准确率 72%→90%",
+          "实操建议：从最大瓶颈开始，分层叠加三个特性",
+          "一句话总结 + 行动号召：加 beta header，标记 defer_loading，写示例"
+        ]
+      }
+    ]
+  }
+}

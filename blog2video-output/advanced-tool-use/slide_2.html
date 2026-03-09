@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 48px;
+    }
+    .main-title .warn {
+      color: #EF4444;
+    }
+    .metaphor-box {
+      width: 100%;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .metaphor-text {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.65;
+    }
+    .metaphor-text .em {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .data-row {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .data-card {
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      flex: 1;
+      text-align: center;
+    }
+    .data-card.danger {
+      border-color: rgba(239, 68, 68, 0.35);
+      border-top: 3px solid #EF4444;
+    }
+    .data-number {
+      font-size: 58px;
+      font-weight: 900;
+      color: #EF4444;
+      margin-bottom: 8px;
+    }
+    .data-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .insight {
+      width: 100%;
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-top: 20px;
+      padding: 20px 24px;
+      border-left: 4px solid #8B5CF6;
+      background: rgba(139, 92, 246, 0.06);
+      border-radius: 0 8px 8px 0;
+      text-align: left;
+    }
+    .insight .key {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">PRINCIPLE</div>
+    <div class="main-title">
+      工具越多<br>模型反而<span class="warn">越笨</span>
+    </div>
+
+    <div class="metaphor-box">
+      <div class="metaphor-text">
+        出差打包行李箱：箱子就这么大<br>
+        <span class="em">说明书塞了 80%</span>，衣服没地方放<br>
+        Context Window 也一样
+      </div>
+    </div>
+
+    <div class="data-row">
+      <div class="data-card danger">
+        <div class="data-number">55K</div>
+        <div class="data-label">5 个 MCP Server<br>消耗的 Token</div>
+      </div>
+      <div class="data-card danger">
+        <div class="data-number">100K+</div>
+        <div class="data-label">加上 Jira 后<br>Token 总量</div>
+      </div>
+    </div>
+
+    <div class="data-row">
+      <div class="data-card danger">
+        <div class="data-number">49%</div>
+        <div class="data-label">Opus 4 工具过多时<br>选对工具的准确率</div>
+      </div>
+    </div>
+
+    <div class="insight">
+      核心问题不是 <span class="key">"接更多工具"</span><br>而是 <span class="key">"按需获取"</span>
+    </div>
+  </div>
+</body>
+</html>

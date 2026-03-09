@@ -1,0 +1,154 @@
+{
+  "blog_metadata": {
+    "title": "The Complete Guide to Building Skills for Claude",
+    "title_zh": "Claude Skills 构建完全指南",
+    "word_count": 2800,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "building-skill-for-claude"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "指南包含3个可独立成篇的核心问题：Skill到底是什么以及为什么需要它（概念认知）、怎么从零构建一个Skill（实操方法论）、MCP+Skill的组合打法（进阶应用）。每个主题回答一个独立问题，且有递进关系。",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude官方教你造'技能包'：再也不用重复教AI做事了！",
+        "hook_question": "你有没有这种体验——每次用Claude都要重新解释一遍你的偏好、流程、规范？如果Claude能'学一次，永远记住'呢？",
+        "core_thesis": "Skill是一种让Claude永久学会你的工作流程的机制，本质是一个文件夹里的指令集，教一次就能反复使用，而且跨平台通用。",
+        "source_sections": [
+          "Introduction",
+          "Chapter 1: Fundamentals"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "一个Skill本质上就是一个文件夹加一个SKILL.md文件——没有SDK、没有编译、没有部署，15-30分钟就能从零建好一个可用的Skill",
+        "emotion_arc": "开头：制造'每次都要重新教AI'的痛点共鸣 → 中间：揭秘Skill的三层渐进式加载机制，让人觉得设计精妙 → 结尾：赋能感，原来这么简单，一个文件夹就搞定",
+        "must_include_details": [
+          "Skill的三层渐进式披露：YAML frontmatter（始终加载）→ SKILL.md正文（按需加载）→ 链接文件（深度引用）",
+          "文件结构：SKILL.md（必须）+ scripts/ + references/ + assets/（可选）",
+          "跨平台通用：Claude.ai、Claude Code、API三端一致",
+          "15-30分钟即可构建并测试第一个可用Skill"
+        ],
+        "actionable_takeaway": "现在就在你电脑上建一个文件夹，里面放一个SKILL.md，用YAML frontmatter写上name和description，把你最常重复给Claude讲的工作流写进去",
+        "key_concepts": [
+          {
+            "concept_en": "skill as a folder of instructions",
+            "concept_zh": "Skill就是一个指令文件夹",
+            "analogy_direction": "就像你给新员工写的入职手册——写一次，每个新人来了直接看，不用每次口头教",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "progressive disclosure (three-level system)",
+            "concept_zh": "三层渐进式披露",
+            "analogy_direction": "像餐厅菜单：门口看招牌菜（YAML），坐下看完整菜单（SKILL.md正文），需要时再问厨师推荐（链接文件）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "composability and portability",
+            "concept_zh": "可组合性和跨平台通用",
+            "analogy_direction": "像乐高积木——每块积木独立设计，但可以和其他积木自由组合，而且在任何桌子上都能搭",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Skill就是给Claude写的'工作手册'，一个文件夹就能让Claude永久记住你的工作流。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "手把手教你造Claude技能包：从规划到测试的完整流程",
+        "hook_question": "知道Skill是什么了，但从零开始到底怎么建？有哪些坑是官方文档里藏着的？",
+        "core_thesis": "构建Skill的核心不是写代码，而是先想清楚用例、写好YAML description让Claude知道何时触发、然后通过三层测试迭代优化。",
+        "source_sections": [
+          "Chapter 2: Planning and design",
+          "Chapter 3: Testing and iteration"
+        ],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "Skill触不触发全靠YAML里那一句description——写得太泛会乱触发，写得太窄又永远不触发。官方建议的格式是'做什么 + 什么时候用 + 核心能力'三段式",
+        "emotion_arc": "开头：你以为建Skill就是写个Markdown？太天真了 → 中间：揭秘三大类用例模式和YAML description的写法玄机 → 结尾：掌控感，按这个流程走，15分钟出成品",
+        "must_include_details": [
+          "三大用例类型：文档/资产生成、工作流自动化、MCP增强",
+          "YAML description的三段式写法：[做什么] + [什么时候用] + [核心能力]",
+          "三层测试：触发测试（该触发时触发吗）、功能测试（输出对不对）、性能对比测试（比没Skill时好吗）",
+          "迭代策略：触发不足加描述细节，触发过度加负面触发条件，执行出错改指令加错误处理",
+          "关键规则：文件必须叫SKILL.md（大小写敏感），文件夹用kebab-case命名"
+        ],
+        "actionable_takeaway": "用三段式重写你Skill的YAML description：第一句说它做什么，第二句说用户说什么话时触发，第三句列核心能力——然后分别用相关和不相关的提问各测试5次",
+        "key_concepts": [
+          {
+            "concept_en": "use case categories (document creation, workflow automation, MCP enhancement)",
+            "concept_zh": "三大用例类型",
+            "analogy_direction": "像厨师分三种：做菜的（生成内容）、管后厨流程的（自动化）、把食材供应商和菜谱打通的（MCP增强）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "YAML description as trigger mechanism",
+            "concept_zh": "YAML description就是触发开关",
+            "analogy_direction": "像便利店的招牌——写'24小时营业便利店'顾客就来了，写'综合性零售服务机构'谁也找不到你",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "three-layer testing (triggering, functional, performance)",
+            "concept_zh": "三层测试法",
+            "analogy_direction": "像考驾照：科目一看你懂不懂规则（触发测试）、科目二看你会不会操作（功能测试）、科目三看你上路行不行（性能对比）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "iteration based on feedback patterns",
+            "concept_zh": "根据反馈模式迭代",
+            "analogy_direction": "触发不足就是'太内向'——多介绍自己；触发过度就是'太社牛'——学会说'这事不归我管'",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Skill好不好用，80%取决于YAML description写得好不好。先定用例，再写触发描述，最后三层测试迭代。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "MCP+Skill组合拳：让Claude从'能连'变成'会用'！",
+        "hook_question": "你的MCP连上了Notion、Linear、Sentry……然后呢？Claude连上了工具但不知道怎么用，这不就是给了一把菜刀但没给菜谱吗？",
+        "core_thesis": "MCP解决的是连接问题（Claude能做什么），Skill解决的是知识问题（Claude该怎么做）。两者结合才能让AI工具集成真正可用。",
+        "source_sections": [
+          "Chapter 1: Fundamentals",
+          "Chapter 5: Patterns and troubleshooting",
+          "Chapter 4: Distribution and sharing"
+        ],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "没有Skill的MCP集成，用户最常见的反馈是提support ticket问'怎么用你的集成做X'——每次对话都从零开始，用户还会怪你的连接器不好用，其实是缺工作流引导",
+        "emotion_arc": "开头：你辛辛苦苦做了MCP集成，用户却说不好用——问题出在哪？ → 中间：五大实战模式逐一拆解，每个都有具体场景 → 结尾：格局打开，Skill是开放标准，像MCP一样可以跨平台分享",
+        "must_include_details": [
+          "MCP = 专业厨房（工具和食材），Skill = 菜谱（怎么用工具做出好东西）",
+          "五大模式：顺序工作流编排、多MCP协调、迭代优化、上下文感知工具选择、领域专业知识",
+          "Sentry代码审查Skill实例：自动分析GitHub PR中Sentry检测到的bug",
+          "关键调试技巧：对于关键验证，用脚本而不是语言指令——代码是确定性的，语言理解不是",
+          "分发方式：个人上传、组织级部署（2025年12月18日上线）、Skills API编程接入"
+        ],
+        "actionable_takeaway": "选你用得最多的一个MCP集成（比如Notion或Linear），把你每次都要手动告诉Claude的使用步骤写成一个Skill，放到Settings > Capabilities > Skills里",
+        "key_concepts": [
+          {
+            "concept_en": "MCP (connectivity) vs Skill (knowledge)",
+            "concept_zh": "MCP管连接，Skill管知识",
+            "analogy_direction": "MCP是给你一个专业厨房（炉灶、烤箱、食材都有），Skill是菜谱——没有菜谱，面对一堆食材你也不知道做什么菜",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "multi-MCP coordination pattern",
+            "concept_zh": "多MCP协调模式",
+            "analogy_direction": "像一个项目经理同时协调设计师（Figma MCP）、开发（GitHub MCP）和项目管理（Linear MCP），Skill就是这个项目经理的SOP手册",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "code over language for critical validations",
+            "concept_zh": "关键验证用代码不用语言",
+            "analogy_direction": "让AI用自然语言检查'文件是否存在'不靠谱，写个脚本跑一下是确定性的——就像不要口头问'门锁了没'，直接推一下门",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "skills as an open standard",
+            "concept_zh": "Skill是开放标准",
+            "analogy_direction": "像USB接口一样——不管什么品牌的设备，插上就能用，Skill也是一次构建、到处运行",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "MCP让Claude连得上工具，Skill让Claude用得好工具。做MCP集成的人，一定要配套Skill才算完整。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .slide-title {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+
+    .slide-title .accent {
+      color: #8B5CF6;
+    }
+
+    /* Market growth hero */
+    .market-hero {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 36px 28px;
+      margin-bottom: 28px;
+    }
+
+    .market-hero .label {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .market-hero .numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .market-hero .amount {
+      font-size: 64px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.1;
+    }
+
+    .market-hero .amount.to {
+      color: #EF4444;
+    }
+
+    .market-hero .arrow {
+      font-size: 48px;
+      color: #EF4444;
+    }
+
+    .market-hero .cagr {
+      font-size: 26px;
+      color: #F59E0B;
+      font-weight: 700;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* IDC card */
+    .idc-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    .idc-card .source {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 12px;
+    }
+
+    .idc-card .stat-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .idc-card .big-num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #F59E0B;
+    }
+
+    .idc-card .desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+
+    /* B2A concept */
+    .b2a-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+    }
+
+    .b2a-card .concept-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 12px;
+    }
+
+    .b2a-card .concept-name {
+      font-size: 48px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 12px;
+    }
+
+    .b2a-card .concept-full {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 16px;
+    }
+
+    .b2a-card .model-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .b2a-card .model-tag {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+
+    .b2a-card .model-tag.active {
+      background: rgba(139, 92, 246, 0.25);
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title"><span class="accent">Agent Economy</span> 数据爆炸</div>
+
+    <div class="market-hero">
+      <div class="label">全球 AI Agent 市场规模 (2024 → 2034)</div>
+      <div class="numbers">
+        <div class="amount">$7.9B</div>
+        <div class="arrow">&#x279C;</div>
+        <div class="amount to">$236B</div>
+      </div>
+      <div class="cagr">CAGR 45.82% &middot; 指数级爆炸</div>
+    </div>
+
+    <div class="idc-card">
+      <div class="source">IDC 预测 &middot; 2029年</div>
+      <div class="stat-row">
+        <div class="big-num">$1.3T</div>
+        <div class="desc">Agentic AI<br>年度支出</div>
+      </div>
+    </div>
+
+    <div class="b2a-card">
+      <div class="concept-label">全新商业模式</div>
+      <div class="concept-name">B2A</div>
+      <div class="concept-full">Business to Agent &mdash; 你的客户变成了 AI Agent</div>
+      <div class="model-row">
+        <div class="model-tag">B2C</div>
+        <div class="model-tag">B2B</div>
+        <div class="model-tag active">B2A &#x2728;</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

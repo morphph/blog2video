@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .section-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .purple { color: #8B5CF6; }
+
+    .concept-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .concept-label {
+      font-size: 18px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .concept-term {
+      font-size: 40px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 12px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .concept-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .concept-desc .white { color: #FFFFFF; font-weight: 600; }
+
+    .analogy-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .analogy-label {
+      font-size: 18px;
+      color: #F59E0B;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .analogy-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .analogy-text .yellow { color: #F59E0B; font-weight: 700; }
+
+    .shift-card {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .shift-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #10B981;
+      line-height: 1.4;
+    }
+    .shift-text .white { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-label">CORE CONCEPT</div>
+
+  <div class="title">
+    什么是<span class="purple">Meta-prompting</span>？
+  </div>
+
+  <div class="concept-card">
+    <div class="concept-label">META-PROMPTING 元提示</div>
+    <div class="concept-desc">
+      不是告诉AI<span class="white">"帮我做什么"</span><br>
+      而是问AI<span class="white">"你觉得我需要什么？"</span>
+    </div>
+  </div>
+
+  <div class="analogy-card">
+    <div class="analogy-label">&#127860; 比喻</div>
+    <div class="analogy-text">
+      不是教AI做一道菜<br>
+      是让AI看完你的<span class="yellow">厨房和冰箱</span><br>
+      告诉你应该学什么菜
+    </div>
+  </div>
+
+  <div class="shift-card">
+    <div class="shift-text">
+      <span class="white">你指挥AI</span> &#10132; AI主动为你定制工具
+    </div>
+  </div>
+</div>
+</body>
+</html>

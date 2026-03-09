@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .title {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .title .accent {
+      color: #F59E0B;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+    }
+
+    .cases {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .case-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 28px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: left;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .case-card.supabase { border-left: 4px solid #8B5CF6; }
+    .case-card.stripe { border-left: 4px solid #3B82F6; }
+    .case-card.netlify { border-left: 4px solid #10B981; }
+
+    .case-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      flex-shrink: 0;
+      font-weight: 800;
+    }
+
+    .case-card.supabase .case-icon {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8B5CF6;
+    }
+
+    .case-card.stripe .case-icon {
+      background: rgba(59, 130, 246, 0.15);
+      color: #3B82F6;
+    }
+
+    .case-card.netlify .case-icon {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10B981;
+    }
+
+    .case-content {
+      flex: 1;
+    }
+
+    .case-name {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .case-card.supabase .case-name { color: #8B5CF6; }
+    .case-card.stripe .case-name { color: #3B82F6; }
+    .case-card.netlify .case-name { color: #10B981; }
+
+    .case-tag {
+      font-size: 18px;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .case-card.supabase .case-tag {
+      background: rgba(139, 92, 246, 0.12);
+      color: #8B5CF6;
+    }
+
+    .case-card.stripe .case-tag {
+      background: rgba(59, 130, 246, 0.12);
+      color: #3B82F6;
+    }
+
+    .case-card.netlify .case-tag {
+      background: rgba(16, 185, 129, 0.12);
+      color: #10B981;
+    }
+
+    .case-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .case-desc .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .case-result {
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .case-card.supabase .case-result { color: #8B5CF6; }
+    .case-card.stripe .case-result { color: #3B82F6; }
+    .case-card.netlify .case-result { color: #10B981; }
+
+    .result-arrow {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="title">三个 <span class="accent">真实案例</span></div>
+  <div class="subtitle">文档、工具包、一行代码 -- 各有制胜招</div>
+
+  <div class="cases">
+
+    <div class="case-card supabase">
+      <div class="case-icon">S</div>
+      <div class="case-content">
+        <div class="case-name">Supabase</div>
+        <div class="case-tag">&#128218; 文档制胜</div>
+        <div class="case-desc">
+          开源数据库把<span class="em">文档当产品</span>来做。<br>
+          结构化 API 参考 + 每个端点带示例，<br>
+          成为 Agent <span class="em">首选</span>后端。
+        </div>
+        <div class="case-result">
+          <span class="result-arrow">&#10132;</span> Agent 生态自然涌现
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card stripe">
+      <div class="case-icon">&#9889;</div>
+      <div class="case-content">
+        <div class="case-name">Stripe</div>
+        <div class="case-tag">&#129520; Agent Toolkit</div>
+        <div class="case-desc">
+          推出 <span class="em">Agent Toolkit SDK</span>，<br>
+          让 AI 直接调用支付、订阅、退款等能力。<br>
+          催生 <span class="em">Sponge (YC W26)</span> 等 AI-native 创业公司。
+        </div>
+        <div class="case-result">
+          <span class="result-arrow">&#10132;</span> 从支付工具变 Agent 平台
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card netlify">
+      <div class="case-icon">N</div>
+      <div class="case-content">
+        <div class="case-name">Netlify</div>
+        <div class="case-tag">&#128295; 一行改动</div>
+        <div class="case-desc">
+          CLI 报错信息从"失败"改为<span class="em">可操作指令</span>。<br>
+          Agent 解析报错后<span class="em">自动修复</span>，<br>
+          部署成功率飙升。
+        </div>
+        <div class="case-result">
+          <span class="result-arrow">&#10132;</span> 小改动，大杠杆
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

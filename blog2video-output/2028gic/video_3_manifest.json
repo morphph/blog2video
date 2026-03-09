@@ -1,0 +1,12 @@
+{
+  "video_number": 3,
+  "title": "劳动收入占GDP暴跌10个百分点！当人类智力不再稀缺，整个社会怎么办？",
+  "slides": [
+    {"slide_number": 1, "file": "video_3_slide_1.html", "estimated_duration_seconds": 25},
+    {"slide_number": 2, "file": "video_3_slide_2.html", "estimated_duration_seconds": 80},
+    {"slide_number": 3, "file": "video_3_slide_3.html", "estimated_duration_seconds": 105},
+    {"slide_number": 4, "file": "video_3_slide_4.html", "estimated_duration_seconds": 45},
+    {"slide_number": 5, "file": "video_3_slide_5.html", "estimated_duration_seconds": 45}
+  ],
+  "cover_photo": "video_3_cover_photo.html"
+}

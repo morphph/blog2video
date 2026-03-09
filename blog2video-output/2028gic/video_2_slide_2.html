@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+    .slide-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .slide-title {
+      font-size: 42px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .slide-title .purple { color: #8B5CF6; }
+    .chain-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .chain-node {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+      position: relative;
+    }
+    .chain-node.alert {
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+    .chain-node.alert::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #EF4444;
+      border-radius: 12px 0 0 12px;
+    }
+    .chain-node.warning {
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+    .chain-node.warning::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #F59E0B;
+      border-radius: 12px 0 0 12px;
+    }
+    .node-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .node-content {
+      flex: 1;
+    }
+    .node-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .node-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .node-number {
+      font-size: 56px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .node-number.red { color: #EF4444; }
+    .node-number.yellow { color: #F59E0B; }
+    .arrow-down {
+      text-align: center;
+      font-size: 32px;
+      color: #6B7280;
+      line-height: 1;
+    }
+    .insight-box {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: left;
+    }
+    .insight-title {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .insight-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="slide-label">PRIVATE CREDIT</div>
+  <div class="slide-title">
+    <span class="purple">私募信贷</span>：金融体系的<br>隐藏血管
+  </div>
+
+  <div class="chain-container">
+    <div class="chain-node alert">
+      <div class="node-content">
+        <div class="node-title">Moody's 批量降级</div>
+        <div class="node-desc">私募信贷资产遭评级下调</div>
+      </div>
+      <div class="node-number red">$180<span style="font-size:32px;">亿</span></div>
+    </div>
+
+    <div class="arrow-down">&#9660;</div>
+
+    <div class="chain-node alert">
+      <div class="node-content">
+        <div class="node-title">Zendesk 违约</div>
+        <div class="node-desc">科技企业私募债爆雷</div>
+      </div>
+      <div class="node-number red">$50<span style="font-size:32px;">亿</span></div>
+    </div>
+
+    <div class="arrow-down">&#9660;</div>
+
+    <div class="chain-node warning">
+      <div class="node-content">
+        <div class="node-title">保险公司资金链</div>
+        <div class="node-desc">保险 &rarr; 私募信贷 &rarr; PE基金</div>
+      </div>
+      <div class="node-icon">&#9888;</div>
+    </div>
+
+    <div class="arrow-down">&#9660;</div>
+
+    <div class="chain-node warning">
+      <div class="node-content">
+        <div class="node-title">多米诺效应</div>
+        <div class="node-desc">保险资金撤出 &rarr; PE爆仓 &rarr; 企业倒闭链</div>
+      </div>
+      <div class="node-icon" style="font-size:32px;">&#128165;</div>
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <div class="insight-title">核心机制</div>
+    <div class="insight-desc">保险公司大量持有私募信贷资产。一旦违约潮来袭，保险赔付能力将受到直接冲击——这是2008年AIG危机的翻版。</div>
+  </div>
+</div>
+</body>
+</html>

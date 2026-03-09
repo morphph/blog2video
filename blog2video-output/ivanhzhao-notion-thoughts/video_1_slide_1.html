@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .number-hero {
+      font-size: 180px;
+      font-weight: 900;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .number-unit {
+      font-size: 56px;
+      font-weight: 700;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+    }
+    .hook-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+    }
+    .hook-title .highlight {
+      color: #EF4444;
+    }
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 36px;
+      width: 100%;
+      text-align: left;
+    }
+    .hook-card-text {
+      font-size: 32px;
+      font-weight: 500;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .hook-card-text .em {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .source-tag {
+      margin-top: 48px;
+      font-size: 22px;
+      color: #6B7280;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="number-hero">40x</div>
+    <div class="number-unit">一个人的产出</div>
+    <div class="hook-title">
+      <span class="highlight">不写代码</span>的程序员<br>
+      凭什么顶40人？
+    </div>
+    <div class="hook-card">
+      <div class="hook-card-text">
+        同时操控 <span class="em">3-4个 AI Agent</span><br>
+        午饭前排任务，睡觉时还在跑
+      </div>
+    </div>
+    <div class="source-tag">Notion 联合创始人 Simon 的真实工作流</div>
+  </div>
+</body>
+</html>

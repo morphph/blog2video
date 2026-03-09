@@ -1,0 +1,142 @@
+[
+  {
+    "text": "你有没有想过，让好几个AI同时帮你写代码？一个搞前端、一个搞后端、一个跑测试。就像带了一个AI开发团队。Claude Code现在真的能做到了。",
+    "pronounce_text": "你有没有想过，让好几个AI同时帮你写代码？一个搞前端、一个搞后端、一个跑测试。就像带了一个AI开发团队。Claude Code现在真的能做到了。",
+    "time_begin": 0,
+    "time_end": 10871.42857142857,
+    "text_begin": 0,
+    "text_end": 72,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 72
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Claude Code 官方文档中关于 Agent Teams 的最新能力。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Claude Code官方文档中关于Agent Teams的最新能力。",
+    "time_begin": 11484,
+    "time_end": 24329.124716553288,
+    "text_begin": 72,
+    "text_end": 169,
+    "pronounce_text_begin": 72,
+    "pronounce_text_end": 160
+  },
+  {
+    "text": "Agent Teams 是什么？想象一个项目组。组长协调全局，组员各负责不同模块。关键是，组员之间可以直接沟通，不用事事通过组长传话。",
+    "pronounce_text": "Agent Teams是什么？想象一个项目组。组长协调全局，组员各负责不同模块。关键是，组员之间可以直接沟通，不用事事通过组长传话。",
+    "time_begin": 25956,
+    "time_end": 37164.117913832204,
+    "text_begin": 169,
+    "text_end": 236,
+    "pronounce_text_begin": 160,
+    "pronounce_text_end": 226
+  },
+  {
+    "text": "你启动一个 Claude Code 会话当组长，让它召集几个 Teammate。每个 Teammate 是独立的 Claude 实例，有自己的 Context Window，也就是自己的工作台面。",
+    "pronounce_text": "你启动一个Claude Code会话当组长，让它召集几个Teammate。每个Teammate是独立的Claude实例，有自己的Context Window，也就是自己的工作台面。",
+    "time_begin": 37800,
+    "time_end": 47789.07029478458,
+    "text_begin": 236,
+    "text_end": 334,
+    "pronounce_text_begin": 226,
+    "pronounce_text_end": 316
+  },
+  {
+    "text": "这里有个细节很关键。Teammate 之间可以直接互相发消息。前端的 Teammate 发现接口有问题，直接找后端的商量，不用等组长转达。这才是真正的团队协作。",
+    "pronounce_text": "这里有个细节很关键。Teammate之间可以直接互相发消息。前端的Teammate发现接口有问题，直接找后端的商量，不用等组长转达。这才是真正的团队协作。",
+    "time_begin": 48420,
+    "time_end": 59662.947845804985,
+    "text_begin": 334,
+    "text_end": 414,
+    "pronounce_text_begin": 316,
+    "pronounce_text_end": 393
+  },
+  {
+    "text": "那跟之前的 Subagent 有什么区别？",
+    "pronounce_text": "那跟之前的Subagent有什么区别？",
+    "time_begin": 61308,
+    "time_end": 63321.01587301587,
+    "text_begin": 414,
+    "text_end": 435,
+    "pronounce_text_begin": 393,
+    "pronounce_text_end": 412
+  },
+  {
+    "text": "Subagent 像外卖骑手。你下单，骑手独立完成，把结果送回来。他不会跟其他骑手商量路线。Agent Teams 呢？是真正的项目组，组员之间随时沟通，遇到问题当场讨论。",
+    "pronounce_text": "Subagent像外卖骑手。你下单，骑手独立完成，把结果送回来。他不会跟其他骑手商量路线。Agent Teams呢？是真正的项目组，组员之间随时沟通，遇到问题当场讨论。",
+    "time_begin": 63936,
+    "time_end": 76781.12471655328,
+    "text_begin": 435,
+    "text_end": 521,
+    "pronounce_text_begin": 412,
+    "pronounce_text_end": 496
+  },
+  {
+    "text": "核心差异在沟通。Subagent 只能向主 Agent 汇报结果。Agent Teams 的队友可以直接互相发消息，通过共享任务列表自主协调。",
+    "pronounce_text": "核心差异在沟通。Subagent只能向主Agent汇报结果。Agent Teams的队友可以直接互相发消息，通过共享任务列表自主协调。",
+    "time_begin": 77400,
+    "time_end": 86529.93197278911,
+    "text_begin": 521,
+    "text_end": 592,
+    "pronounce_text_begin": 496,
+    "pronounce_text_end": 563
+  },
+  {
+    "text": "Subagent 适合只需要结果的聚焦任务。Agent Teams 适合需要讨论的复杂工作。官方给了四大场景：多角度调研、模块并行开发、竞争假设调试、跨层协调。",
+    "pronounce_text": "Subagent适合只需要结果的聚焦任务。Agent Teams适合需要讨论的复杂工作。官方给了四大场景：多角度调研、模块并行开发、竞争假设调试、跨层协调。",
+    "time_begin": 87156,
+    "time_end": 99664.43537414966,
+    "text_begin": 592,
+    "text_end": 672,
+    "pronounce_text_begin": 563,
+    "pronounce_text_end": 641
+  },
+  {
+    "text": "比如让五个队友同时测试不同的 Bug 理论，互相质疑对方的假设，像科学辩论一样。这种玩法 Subagent 做不到。",
+    "pronounce_text": "比如让五个队友同时测试不同的Bug理论，互相质疑对方的假设，像科学辩论一样。这种玩法Subagent做不到。",
+    "time_begin": 100296,
+    "time_end": 109205.34240362812,
+    "text_begin": 672,
+    "text_end": 730,
+    "pronounce_text_begin": 641,
+    "pronounce_text_end": 695
+  },
+  {
+    "text": "但要注意，每多一个 Teammate 就像多雇一个员工，Token 成本会上升。因为每个都是独立实例，不共享上下文。简单任务用 Subagent 就够了。",
+    "pronounce_text": "但要注意，每多一个Teammate就像多雇一个员工，Token成本会上升。因为每个都是独立实例，不共享上下文。简单任务用Subagent就够了。",
+    "time_begin": 109836,
+    "time_end": 120753.86848072562,
+    "text_begin": 730,
+    "text_end": 807,
+    "pronounce_text_begin": 695,
+    "pronounce_text_end": 767
+  },
+  {
+    "text": "总结一下。Agent Teams 是 Subagent 的升级版。当任务复杂到需要多个AI互相讨论时，它比单打独斗高效得多。但也要权衡 Token 成本。",
+    "pronounce_text": "总结一下。Agent Teams是Subagent的升级版。当任务复杂到需要多个AI互相讨论时，它比单打独斗高效得多。但也要权衡Token成本。",
+    "time_begin": 122400,
+    "time_end": 133271.42857142858,
+    "text_begin": 807,
+    "text_end": 884,
+    "pronounce_text_begin": 767,
+    "pronounce_text_end": 839
+  },
+  {
+    "text": "你现在可以做一件事。看看手上的项目，有没有三个以上可以同时推进的独立模块。如果有，就值得试试 Agent Teams。",
+    "pronounce_text": "你现在可以做一件事。看看手上的项目，有没有三个以上可以同时推进的独立模块。如果有，就值得试试Agent Teams。",
+    "time_begin": 133884,
+    "time_end": 142015.47392290249,
+    "text_begin": 884,
+    "text_end": 943,
+    "pronounce_text_begin": 839,
+    "pronounce_text_end": 897
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 142632,
+    "time_end": 146456.17233560092,
+    "text_begin": 943,
+    "text_end": 970,
+    "pronounce_text_begin": 897,
+    "pronounce_text_end": 923
+  }
+]

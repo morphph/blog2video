@@ -1,0 +1,262 @@
+[
+  {
+    "text": "你有没有这种体验：每次打开 Claude，都要重新解释一遍你的代码风格、文档格式、工作流程。说白了，就是每次都在\"重新培训\"同一个助手。现在 Claude 官方给出了解法。",
+    "pronounce_text": "你有没有这种体验：每次打开Claude，都要重新解释一遍你的代码风格、文档格式、工作流程。说白了，就是每次都在\"重新培训\"同一个助手。现在Claude官方给出了解法。",
+    "time_begin": 0,
+    "time_end": 13135.374149659863,
+    "text_begin": 0,
+    "text_end": 86,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 83
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 官方发布的 Claude Skills 构建完全指南。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Anthropic官方发布的Claude Skills构建完全指南。",
+    "time_begin": 13752,
+    "time_end": 27003.473922902493,
+    "text_begin": 86,
+    "text_end": 182,
+    "pronounce_text_begin": 83,
+    "pronounce_text_end": 170
+  },
+  {
+    "text": "这份指南开头就说了一句话，很有意思：与其每次对话都重新教 Claude，不如教它一次，然后永远受益。",
+    "pronounce_text": "这份指南开头就说了一句话，很有意思：与其每次对话都重新教Claude，不如教它一次，然后永远受益。",
+    "time_begin": 28620,
+    "time_end": 36263.85487528345,
+    "text_begin": 182,
+    "text_end": 232,
+    "pronounce_text_begin": 170,
+    "pronounce_text_end": 219
+  },
+  {
+    "text": "怎么做到的？答案就是 Skill。",
+    "pronounce_text": "怎么做到的？答案就是Skill。",
+    "time_begin": 36900,
+    "time_end": 38913.01587301587,
+    "text_begin": 232,
+    "text_end": 249,
+    "pronounce_text_begin": 219,
+    "pronounce_text_end": 235
+  },
+  {
+    "text": "Skill 是什么？说出来你可能不信。它本质上就是一个文件夹，里面放一个叫 SKILL.md 的 Markdown 文件。没有 SDK，没有编译，没有部署。官方说，十五到三十分钟就能从零建好一个可用的 Skill。",
+    "pronounce_text": "Skill是什么？说出来你可能不信。它本质上就是一个文件夹，里面放一个叫SKILL.md的Markdown文件。没有SDK，没有编译，没有部署。官方说，十五到三十分钟就能从零建好一个可用的Skill。",
+    "time_begin": 39528,
+    "time_end": 53812.76190476191,
+    "text_begin": 249,
+    "text_end": 356,
+    "pronounce_text_begin": 235,
+    "pronounce_text_end": 335
+  },
+  {
+    "text": "打个比方。你是一个团队负责人，来了一个新员工，你会怎么做？口头讲一遍流程？下次再来一个新人，你还得再讲一遍。聪明的做法是什么？写一份入职手册。",
+    "pronounce_text": "打个比方。你是一个团队负责人，来了一个新员工，你会怎么做？口头讲一遍流程？下次再来一个新人，你还得再讲一遍。聪明的做法是什么？写一份入职手册。",
+    "time_begin": 54432,
+    "time_end": 66638.57596371882,
+    "text_begin": 356,
+    "text_end": 427,
+    "pronounce_text_begin": 335,
+    "pronounce_text_end": 406
+  },
+  {
+    "text": "新人来了直接看手册，不用你每次口头教。",
+    "pronounce_text": "新人来了直接看手册，不用你每次口头教。",
+    "time_begin": 66780,
+    "time_end": 69826.30385487528,
+    "text_begin": 427,
+    "text_end": 446,
+    "pronounce_text_begin": 406,
+    "pronounce_text_end": 425
+  },
+  {
+    "text": "Skill 就是你给 Claude 写的\"入职手册\"。",
+    "pronounce_text": "Skill就是你给Claude写的\"入职手册\"。",
+    "time_begin": 70452,
+    "time_end": 73091.95464852608,
+    "text_begin": 446,
+    "text_end": 473,
+    "pronounce_text_begin": 425,
+    "pronounce_text_end": 449
+  },
+  {
+    "text": "你把工作流程、偏好设定、领域知识写进去，Claude 读一次就记住了。下次再遇到类似任务，它自动按照你的规范来。",
+    "pronounce_text": "你把工作流程、偏好设定、领域知识写进去，Claude读一次就记住了。下次再遇到类似任务，它自动按照你的规范来。",
+    "time_begin": 73728,
+    "time_end": 82637.34240362812,
+    "text_begin": 473,
+    "text_end": 529,
+    "pronounce_text_begin": 449,
+    "pronounce_text_end": 504
+  },
+  {
+    "text": "而且，同一个 Skill 可以在 Claude.ai、Claude Code 和 API 三个平台通用。写一次，到处能用。",
+    "pronounce_text": "而且，同一个Skill可以在Claude点ai、Claude Code和API三个平台通用。写一次，到处能用。",
+    "time_begin": 82837.34240362812,
+    "time_end": 90783.0566893424,
+    "text_begin": 529,
+    "text_end": 590,
+    "pronounce_text_begin": 504,
+    "pronounce_text_end": 559
+  },
+  {
+    "text": "那 Skill 的文件夹里到底放什么？",
+    "pronounce_text": "那Skill的文件夹里到底放什么？",
+    "time_begin": 92412,
+    "time_end": 94529.50566893425,
+    "text_begin": 590,
+    "text_end": 609,
+    "pronounce_text_begin": 559,
+    "pronounce_text_end": 576
+  },
+  {
+    "text": "核心只有一个必选项：SKILL.md。这个文件分两部分。顶部是 YAML frontmatter，写上 Skill 的名称和描述。下面是 Markdown 正文，写具体的指令和工作流。",
+    "pronounce_text": "核心只有一个必选项：SKILL.md。这个文件分两部分。顶部是YAML frontmatter，写上Skill的名称和描述。下面是Markdown正文，写具体的指令和工作流。",
+    "time_begin": 95148,
+    "time_end": 107540.33560090703,
+    "text_begin": 609,
+    "text_end": 701,
+    "pronounce_text_begin": 576,
+    "pronounce_text_end": 663
+  },
+  {
+    "text": "除此之外，还有三个可选目录。scripts 放可执行脚本，比如 Python 或 Bash。references 放参考文档，按需加载。assets 放模板、字体、图标这些素材。",
+    "pronounce_text": "除此之外，还有三个可选目录。scripts放可执行脚本，比如Python或Bash。references放参考文档，按需加载。assets放模板、字体、图标这些素材。",
+    "time_begin": 108180,
+    "time_end": 120839.36507936507,
+    "text_begin": 701,
+    "text_end": 790,
+    "pronounce_text_begin": 663,
+    "pronounce_text_end": 746
+  },
+  {
+    "text": "但这里最精妙的设计，是它的三层渐进式加载机制。",
+    "pronounce_text": "但这里最精妙的设计，是它的三层渐进式加载机制。",
+    "time_begin": 121464,
+    "time_end": 125473.93197278911,
+    "text_begin": 790,
+    "text_end": 813,
+    "pronounce_text_begin": 746,
+    "pronounce_text_end": 769
+  },
+  {
+    "text": "你可以把它想象成一个餐厅的菜单系统。第一层是门口的招牌，写着\"川菜馆，招牌菜麻婆豆腐\"。这就是 YAML frontmatter，永远会被加载到 Claude 的系统提示里。",
+    "pronounce_text": "你可以把它想象成一个餐厅的菜单系统。第一层是门口的招牌，写着\"川菜馆，招牌菜麻婆豆腐\"。这就是YAML frontmatter，永远会被加载到Claude的系统提示里。",
+    "time_begin": 126108,
+    "time_end": 137803.73696145124,
+    "text_begin": 813,
+    "text_end": 900,
+    "pronounce_text_begin": 769,
+    "pronounce_text_end": 853
+  },
+  {
+    "text": "Claude 靠这个来判断：这个 Skill 跟当前任务有没有关系。",
+    "pronounce_text": "Claude靠这个来判断：这个Skill跟当前任务有没有关系。",
+    "time_begin": 137952,
+    "time_end": 141927.10204081633,
+    "text_begin": 900,
+    "text_end": 934,
+    "pronounce_text_begin": 853,
+    "pronounce_text_end": 884
+  },
+  {
+    "text": "第二层是你坐下来之后拿到的完整菜单。这就是 SKILL.md 的正文内容。只有当 Claude 判断这个 Skill 跟你当前的任务相关时，才会加载这部分。",
+    "pronounce_text": "第二层是你坐下来之后拿到的完整菜单。这就是SKILL.md的正文内容。只有当Claude判断这个Skill跟你当前的任务相关时，才会加载这部分。",
+    "time_begin": 142560,
+    "time_end": 152061.45124716553,
+    "text_begin": 934,
+    "text_end": 1012,
+    "pronounce_text_begin": 884,
+    "pronounce_text_end": 956
+  },
+  {
+    "text": "第三层是问厨师推荐。这就是 Skill 文件夹里的其他文件。只有在 Claude 需要更深入的信息时，才会主动去查阅。",
+    "pronounce_text": "第三层是问厨师推荐。这就是Skill文件夹里的其他文件。只有在Claude需要更深入的信息时，才会主动去查阅。",
+    "time_begin": 152676,
+    "time_end": 161283.48299319728,
+    "text_begin": 1012,
+    "text_end": 1071,
+    "pronounce_text_begin": 956,
+    "pronounce_text_end": 1011
+  },
+  {
+    "text": "为什么要这么设计？因为 Token 是有成本的。如果每次对话都把所有 Skill 的全部内容塞进去，那上下文窗口很快就爆了。渐进式加载，按需取用，既省 Token 又不丢专业能力。",
+    "pronounce_text": "为什么要这么设计？因为Token是有成本的。如果每次对话都把所有Skill的全部内容塞进去，那上下文窗口很快就爆了。渐进式加载，按需取用，既省Token又不丢专业能力。",
+    "time_begin": 161892,
+    "time_end": 173320.7074829932,
+    "text_begin": 1071,
+    "text_end": 1161,
+    "pronounce_text_begin": 1011,
+    "pronounce_text_end": 1095
+  },
+  {
+    "text": "那什么样的任务适合做成 Skill？你可以对照这三个信号。",
+    "pronounce_text": "那什么样的任务适合做成Skill？你可以对照这三个信号。",
+    "time_begin": 174960,
+    "time_end": 178528.75283446713,
+    "text_begin": 1161,
+    "text_end": 1190,
+    "pronounce_text_begin": 1095,
+    "pronounce_text_end": 1123
+  },
+  {
+    "text": "信号一：你发现自己每次跟 Claude 对话都在重复同一段提示词。比如每次都要说\"用 TypeScript，不要用 any 类型，文件名用 kebab-case\"。这种重复性的偏好设定，非常适合写成 Skill。",
+    "pronounce_text": "信号一：你发现自己每次跟Claude对话都在重复同一段提示词。比如每次都要说\"用TypeScript，不要用any类型，文件名用kebab-case\"。这种重复性的偏好设定，非常适合写成Skill。",
+    "time_begin": 179136,
+    "time_end": 192828.6530612245,
+    "text_begin": 1190,
+    "text_end": 1296,
+    "pronounce_text_begin": 1123,
+    "pronounce_text_end": 1222
+  },
+  {
+    "text": "信号二：你有一套固定的工作流程。比如\"先从设计稿提取颜色，再生成组件代码，最后跑一遍测试\"。这种多步骤的工作流编排，正是 Skill 擅长的。",
+    "pronounce_text": "信号二：你有一套固定的工作流程。比如\"先从设计稿提取颜色，再生成组件代码，最后跑一遍测试\"。这种多步骤的工作流编排，正是Skill擅长的。",
+    "time_begin": 193464,
+    "time_end": 205124.90702947846,
+    "text_begin": 1296,
+    "text_end": 1367,
+    "pronounce_text_begin": 1222,
+    "pronounce_text_end": 1291
+  },
+  {
+    "text": "信号三：你的团队里不同人用 Claude 的效果参差不齐。有人写的提示词效果好，有人写的不行。Skill 可以把最佳实践固化下来，让全团队的 Claude 使用水平拉齐。",
+    "pronounce_text": "信号三：你的团队里不同人用Claude的效果参差不齐。有人写的提示词效果好，有人写的不行。Skill可以把最佳实践固化下来，让全团队的Claude使用水平拉齐。",
+    "time_begin": 205740,
+    "time_end": 218503.85487528343,
+    "text_begin": 1367,
+    "text_end": 1452,
+    "pronounce_text_begin": 1291,
+    "pronounce_text_end": 1371
+  },
+  {
+    "text": "总结一下。Skill 就是给 Claude 写的\"工作手册\"。一个文件夹，一个 SKILL.md，就能让 Claude 永久记住你的工作流。三层加载保证效率，三端通用保证灵活。",
+    "pronounce_text": "总结一下。Skill就是给Claude写的\"工作手册\"。一个文件夹，一个SKILL.md，就能让Claude永久记住你的工作流。三层加载保证效率，三端通用保证灵活。",
+    "time_begin": 220140,
+    "time_end": 232903.85487528343,
+    "text_begin": 1452,
+    "text_end": 1540,
+    "pronounce_text_begin": 1371,
+    "pronounce_text_end": 1453
+  },
+  {
+    "text": "你现在就可以试试：在电脑上建一个文件夹，放一个 SKILL.md 文件。顶部用 YAML 写上名称和描述，正文把你最常重复给 Claude 讲的工作流写进去。十五分钟搞定。",
+    "pronounce_text": "你现在就可以试试：在电脑上建一个文件夹，放一个SKILL.md文件。顶部用YAML写上名称和描述，正文把你最常重复给Claude讲的工作流写进去。十五分钟搞定。",
+    "time_begin": 233532,
+    "time_end": 245668.91609977325,
+    "text_begin": 1540,
+    "text_end": 1626,
+    "pronounce_text_begin": 1453,
+    "pronounce_text_end": 1533
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 246276,
+    "time_end": 251110.2403628118,
+    "text_begin": 1626,
+    "text_end": 1653,
+    "pronounce_text_begin": 1533,
+    "pronounce_text_end": 1559
+  }
+]

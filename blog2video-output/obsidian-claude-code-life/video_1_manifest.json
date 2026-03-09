@@ -1,0 +1,12 @@
+{
+  "video_number": 1,
+  "title": "Obsidian+Claude Code：AI终于能读懂你了？",
+  "slides": [
+    {"slide_number": 1, "file": "video_1_slide_1.html", "estimated_duration_seconds": 30},
+    {"slide_number": 2, "file": "video_1_slide_2.html", "estimated_duration_seconds": 105},
+    {"slide_number": 3, "file": "video_1_slide_3.html", "estimated_duration_seconds": 120},
+    {"slide_number": 4, "file": "video_1_slide_4.html", "estimated_duration_seconds": 60},
+    {"slide_number": 5, "file": "video_1_slide_5.html", "estimated_duration_seconds": 45}
+  ],
+  "cover_photo": "video_1_cover_photo.html"
+}

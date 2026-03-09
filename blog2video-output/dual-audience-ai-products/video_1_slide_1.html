@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .series-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+
+    .giant-number {
+      font-size: 220px;
+      font-weight: 900;
+      color: #EF4444;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .giant-unit {
+      font-size: 80px;
+      font-weight: 900;
+      color: #EF4444;
+      margin-bottom: 40px;
+    }
+
+    .context-line {
+      font-size: 32px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+      line-height: 1.5;
+    }
+
+    .context-line strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .tension-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .tension-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .tension-card .icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+
+    .tension-card .text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+
+    .tension-card .text strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .tension-card .text .highlight {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-label">AI精读 &middot; Agent经济</div>
+    <div class="giant-number">47</div>
+    <div class="giant-unit">%</div>
+    <div class="context-line">YC 2025春季批次 <strong>144</strong> 家公司中<br><strong>67</strong> 家在做 AI Agent</div>
+    <div class="tension-cards">
+      <div class="tension-card">
+        <div class="icon">&#x1F916;</div>
+        <div class="text">硅谷最顶尖的创业加速器<br><strong>将近一半</strong>赌同一件事</div>
+      </div>
+      <div class="tension-card">
+        <div class="icon">&#x1F465;</div>
+        <div class="text">未来你的产品用户<br>可能<span class="highlight">不是人类</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

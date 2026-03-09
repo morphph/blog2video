@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .slide-label {
+      font-size: 20px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .slide-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 36px;
+      line-height: 1.3;
+    }
+    .slide-title .red { color: #EF4444; }
+    .columns {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .col-header {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .col-header-label {
+      font-size: 16px;
+      color: #6B7280;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .col-header-title {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    .col-header-title.red { color: #EF4444; }
+    .col-header-title.green { color: #10B981; }
+    .step-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: left;
+      position: relative;
+    }
+    .step-card.trap {
+      border-left: 4px solid #EF4444;
+    }
+    .step-card.right {
+      border-left: 4px solid #10B981;
+    }
+    .card-step {
+      font-size: 14px;
+      color: #6B7280;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .card-desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .card-result {
+      margin-top: 8px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .card-result.red { color: #EF4444; }
+    .card-result.green { color: #10B981; }
+    .arrow-down {
+      text-align: center;
+      font-size: 22px;
+      color: #6B7280;
+      line-height: 1;
+      padding: 2px 0;
+    }
+    .columns-wrapper {
+      position: relative;
+      width: 100%;
+    }
+    .vs-badge {
+      width: 44px;
+      height: 44px;
+      background: rgba(139, 92, 246, 0.2);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      color: #8B5CF6;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+    .bottom-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 20px 24px;
+      width: 100%;
+      text-align: left;
+      margin-top: 24px;
+    }
+    .bottom-card-label {
+      font-size: 16px;
+      color: #F59E0B;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .bottom-card-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .bottom-card-text .yellow { color: #F59E0B; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="slide-label">&#9888; KEY TRAP</div>
+  <div class="slide-title">
+    <span class="red">蒸汽机陷阱</span>：换动力 ≠ 换思维
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="columns">
+      <!-- Left: The Trap -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-header-label">大多数公司</div>
+          <div class="col-header-title red">水车换蒸汽机</div>
+        </div>
+
+        <div class="step-card trap">
+          <div class="card-step">做法</div>
+          <div class="card-title">现有工具+聊天框</div>
+          <div class="card-desc">流程不变，组织不变</div>
+        </div>
+
+        <div class="arrow-down">&#9660;</div>
+
+        <div class="step-card trap">
+          <div class="card-step">结果</div>
+          <div class="card-title">工厂还在河边</div>
+          <div class="card-desc">生产力提升有限</div>
+          <div class="card-result red">&#10005; 惯性思维</div>
+        </div>
+      </div>
+
+      <!-- Right: The Right Way -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-header-label">Notion 的做法</div>
+          <div class="col-header-title green">重新设计工厂</div>
+        </div>
+
+        <div class="step-card right">
+          <div class="card-step">做法</div>
+          <div class="card-title">700 Agent接管实务</div>
+          <div class="card-desc">会议·工单·入职·周报</div>
+        </div>
+
+        <div class="arrow-down">&#9660;</div>
+
+        <div class="step-card right">
+          <div class="card-step">结果</div>
+          <div class="card-title">搬离河边，靠近港口</div>
+          <div class="card-desc">围绕AI重造流程</div>
+          <div class="card-result green">&#10003; 想象力驱动</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vs-badge">VS</div>
+  </div>
+
+  <div class="bottom-card">
+    <div class="bottom-card-label">IVAN ZHAO</div>
+    <div class="bottom-card-text">收益上限取决于<span class="yellow">想象力</span>，不是惯性</div>
+  </div>
+</div>
+</body>
+</html>

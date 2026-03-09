@@ -1,0 +1,352 @@
+[
+  {
+    "text": "每次写完日记，最耗时间的不是写本身，是维护。",
+    "pronounce_text": "每次写完日记，最耗时间的不是写本身，是维护。",
+    "time_begin": 0,
+    "time_end": 3789.342403628118,
+    "text_begin": 0,
+    "text_end": 22,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 22
+  },
+  {
+    "text": "这个人提到过，得补双链。那本书上期记过，得手动关联。",
+    "pronounce_text": "这个人提到过，得补双链。那本书上期记过，得手动关联。",
+    "time_begin": 4428,
+    "time_end": 8739.791383219956,
+    "text_begin": 22,
+    "text_end": 48,
+    "pronounce_text_begin": 22,
+    "pronounce_text_end": 48
+  },
+  {
+    "text": "笔记维护的时间，比写笔记本身还长。你有没有这种感觉？",
+    "pronounce_text": "笔记维护的时间，比写笔记本身还长。你有没有这种感觉？",
+    "time_begin": 9360,
+    "time_end": 13265.442176870749,
+    "text_begin": 48,
+    "text_end": 74,
+    "pronounce_text_begin": 48,
+    "pronounce_text_end": 74
+  },
+  {
+    "text": "这里是精读AI。每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天精读Obsidian社区的真实workflow案例。",
+    "pronounce_text": "这里是精读AI。每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天精读Obsidian社区的真实workflow案例。",
+    "time_begin": 13896,
+    "time_end": 23327.791383219956,
+    "text_begin": 74,
+    "text_end": 140,
+    "pronounce_text_begin": 74,
+    "pronounce_text_end": 140
+  },
+  {
+    "text": "上期我们用15分钟把Obsidian变成了AI可以直接读写的知识库，零API、零认证。",
+    "pronounce_text": "上期我们用十五分钟把Obsidian变成了AI可以直接读写的知识库，零API、零认证。",
+    "time_begin": 23940,
+    "time_end": 29993.28798185941,
+    "text_begin": 140,
+    "text_end": 183,
+    "pronounce_text_begin": 140,
+    "pronounce_text_end": 183
+  },
+  {
+    "text": "这期继续深挖：接入Claude Code后，那些最耗时的维护工作，能不能真正自动化？",
+    "pronounce_text": "这期继续深挖：接入Claude Code后，那些最耗时的维护工作，能不能真正自动化？",
+    "time_begin": 30600,
+    "time_end": 36432.69841269841,
+    "text_begin": 183,
+    "text_end": 225,
+    "pronounce_text_begin": 183,
+    "pronounce_text_end": 225
+  },
+  {
+    "text": "先说一个反直觉的事。",
+    "pronounce_text": "先说一个反直觉的事。",
+    "time_begin": 38520,
+    "time_end": 40080.226757369615,
+    "text_begin": 225,
+    "text_end": 235,
+    "pronounce_text_begin": 225,
+    "pronounce_text_end": 235
+  },
+  {
+    "text": "Obsidian没有加「问问AI」的按钮。但它的CEO Steph Ango，也就是kepano，发布了开源Skills包，专门教AI怎么说Obsidian的语言。",
+    "pronounce_text": "Obsidian没有加「问问AI」的按钮。但它的CEO Steph Ango，也就是kepano，发布了开源Skills包，专门教AI怎么说Obsidian的语言。",
+    "time_begin": 40716,
+    "time_end": 50739.90022675737,
+    "text_begin": 235,
+    "text_end": 317,
+    "pronounce_text_begin": 235,
+    "pronounce_text_end": 317
+  },
+  {
+    "text": "不是让Obsidian适配AI，而是让AI来适配Obsidian。",
+    "pronounce_text": "不是让Obsidian适配AI，而是让AI来适配Obsidian。",
+    "time_begin": 51372,
+    "time_end": 55381.93197278911,
+    "text_begin": 317,
+    "text_end": 350,
+    "pronounce_text_begin": 317,
+    "pronounce_text_end": 350
+  },
+  {
+    "text": "背后是一个清醒的判断：你的知识，应该永远是你的。",
+    "pronounce_text": "背后是一个清醒的判断：你的知识，应该永远是你的。",
+    "time_begin": 56016,
+    "time_end": 59956.272108843536,
+    "text_begin": 350,
+    "text_end": 374,
+    "pronounce_text_begin": 350,
+    "pronounce_text_end": 374
+  },
+  {
+    "text": "Markdown文件不被任何公司锁住。今天用Claude Code，明天换别的Agent，文件还在，工作流照常跑。",
+    "pronounce_text": "Markdown文件不被任何公司锁住。今天用Claude Code，明天换别的Agent，文件还在，工作流照常跑。",
+    "time_begin": 60588,
+    "time_end": 67419.15646258503,
+    "text_begin": 374,
+    "text_end": 431,
+    "pronounce_text_begin": 374,
+    "pronounce_text_end": 431
+  },
+  {
+    "text": "那接好之后，Claude能帮你做什么？5个社区真实在用的workflow。",
+    "pronounce_text": "那接好之后，Claude能帮你做什么？五个社区真实在用的workflow。",
+    "time_begin": 69516,
+    "time_end": 73897.45124716553,
+    "text_begin": 431,
+    "text_end": 468,
+    "pronounce_text_begin": 431,
+    "pronounce_text_end": 468
+  },
+  {
+    "text": "**自动补链。**",
+    "pronounce_text": "自动补链。",
+    "time_begin": 74520,
+    "time_end": 75383.62811791383,
+    "text_begin": 468,
+    "text_end": 477,
+    "pronounce_text_begin": 468,
+    "pronounce_text_end": 473
+  },
+  {
+    "text": "写完今天的日记，对Claude说：\"Read today's journal and add backlinks to all people, places, and books mentioned。\"",
+    "pronounce_text": "写完今天的日记，对Claude说：\"Read today's journal and add backlinks to all people,places,and books mentioned。\"",
+    "time_begin": 75996,
+    "time_end": 82606.56689342404,
+    "text_begin": 477,
+    "text_end": 578,
+    "pronounce_text_begin": 473,
+    "pronounce_text_end": 572
+  },
+  {
+    "text": "Claude搜索你的vault，找已有笔记，把双链写进日记。没有的条目，还会帮你新建。",
+    "pronounce_text": "Claude搜索你的vault，找已有笔记，把双链写进日记。没有的条目，还会帮你新建。",
+    "time_begin": 83232,
+    "time_end": 90063.15646258503,
+    "text_begin": 578,
+    "text_end": 621,
+    "pronounce_text_begin": 572,
+    "pronounce_text_end": 615
+  },
+  {
+    "text": "以前要15分钟手动跳转，现在一句话。",
+    "pronounce_text": "以前要十五分钟手动跳转，现在一句话。",
+    "time_begin": 90684,
+    "time_end": 93950.89342403629,
+    "text_begin": 621,
+    "text_end": 639,
+    "pronounce_text_begin": 615,
+    "pronounce_text_end": 633
+  },
+  {
+    "text": "**会议记录结构化。**",
+    "pronounce_text": "会议记录结构化。",
+    "time_begin": 94572,
+    "time_end": 96062.56689342404,
+    "text_begin": 639,
+    "text_end": 651,
+    "pronounce_text_begin": 633,
+    "pronounce_text_end": 641
+  },
+  {
+    "text": "开完会，散装要点丢给Claude，它按你设定的格式整理好：文件命名`YYYY-MM-DD-topic.md`，存进`/meetings/`，议程、讨论要点、行动项，一套出来。",
+    "pronounce_text": "开完会，散装要点丢给Claude，它按你设定的格式整理好：文件命名，YYYY-MM-DD-topic.md，存进，meetings，议程、讨论要点、行动项，一套出来。",
+    "time_begin": 96696,
+    "time_end": 111352.28117913831,
+    "text_begin": 651,
+    "text_end": 738,
+    "pronounce_text_begin": 641,
+    "pronounce_text_end": 724
+  },
+  {
+    "text": "**每日笔记生成。**",
+    "pronounce_text": "每日笔记生成。",
+    "time_begin": 111960,
+    "time_end": 113113.87755102041,
+    "text_begin": 738,
+    "text_end": 749,
+    "pronounce_text_begin": 724,
+    "pronounce_text_end": 731
+  },
+  {
+    "text": "口述你的一天，Claude转成完整日记：实体有双链，任务单独提取，想法归入对应项目笔记。",
+    "pronounce_text": "口述你的一天，Claude转成完整日记：实体有双链，任务单独提取，想法归入对应项目笔记。",
+    "time_begin": 113724,
+    "time_end": 121367.85487528345,
+    "text_begin": 749,
+    "text_end": 793,
+    "pronounce_text_begin": 731,
+    "pronounce_text_end": 775
+  },
+  {
+    "text": "**跨文件综合搜索。**",
+    "pronounce_text": "跨文件综合搜索。",
+    "time_begin": 122004,
+    "time_end": 123680.32653061225,
+    "text_begin": 793,
+    "text_end": 805,
+    "pronounce_text_begin": 775,
+    "pronounce_text_end": 783
+  },
+  {
+    "text": "有开发者用macOS的`mdfind`命令让Claude搜索vault里积累多年的PDF——研究论文、扫描文档、保存的文章。",
+    "pronounce_text": "有开发者用macOS的，mdfind，命令让Claude搜索vault里积累多年的PDF研究论文、扫描文档、保存的文章。",
+    "time_begin": 124308,
+    "time_end": 133333.44217687074,
+    "text_begin": 805,
+    "text_end": 867,
+    "pronounce_text_begin": 783,
+    "pronounce_text_end": 843
+  },
+  {
+    "text": "Claude跨文件综合信息，生成一篇新笔记。相当于把沉睡的知识库挖出来重新盘活。",
+    "pronounce_text": "Claude跨文件综合信息，生成一篇新笔记。相当于把沉睡的知识库挖出来重新盘活。",
+    "time_begin": 133956,
+    "time_end": 140450.46712018142,
+    "text_begin": 867,
+    "text_end": 907,
+    "pronounce_text_begin": 843,
+    "pronounce_text_end": 883
+  },
+  {
+    "text": "这些workflow背后，有一套可以复用的结构——自定义Skill。",
+    "pronounce_text": "这些workflow背后，有一套可以复用的结构自定义Skill。",
+    "time_begin": 142560,
+    "time_end": 146500.27210884355,
+    "text_begin": 907,
+    "text_end": 941,
+    "pronounce_text_begin": 883,
+    "pronounce_text_end": 915
+  },
+  {
+    "text": "Skill文件分两部分：YAML frontmatter写触发条件，Markdown正文写执行指令。",
+    "pronounce_text": "Skill文件分两部分：YAML frontmatter写触发条件，Markdown正文写执行指令。",
+    "time_begin": 147132,
+    "time_end": 153707.73696145124,
+    "text_begin": 941,
+    "text_end": 991,
+    "pronounce_text_begin": 915,
+    "pronounce_text_end": 965
+  },
+  {
+    "text": "会议记录Skill为例：命名`YYYY-MM-DD-topic.md`，存到`/meetings/`，依次写摘要、讨论要点、行动项。",
+    "pronounce_text": "会议记录Skill为例：命名，YYYY-MM-DD-topic.md，存到，meetings，依次写摘要、讨论要点、行动项。",
+    "time_begin": 154332,
+    "time_end": 164054.04081632654,
+    "text_begin": 991,
+    "text_end": 1057,
+    "pronounce_text_begin": 965,
+    "pronounce_text_end": 1027
+  },
+  {
+    "text": "写一次，Claude每次都按你的规矩来。",
+    "pronounce_text": "写一次，Claude每次都按你的规矩来。",
+    "time_begin": 164664,
+    "time_end": 167153.02494331065,
+    "text_begin": 1057,
+    "text_end": 1077,
+    "pronounce_text_begin": 1027,
+    "pronounce_text_end": 1047
+  },
+  {
+    "text": "Skill还可以配合MCP扩展：接Google Calendar自动拉会议议程，接Notion同步研究到团队wiki，接Stripe拉客户数据进pre-call笔记。",
+    "pronounce_text": "Skill还可以配合MCP扩展：接Google Calendar自动拉会议议程，接Notion同步研究到团队wiki，接Stripe拉客户数据进pre-call笔记。",
+    "time_begin": 167760,
+    "time_end": 178120.589569161,
+    "text_begin": 1077,
+    "text_end": 1160,
+    "pronounce_text_begin": 1047,
+    "pronounce_text_end": 1130
+  },
+  {
+    "text": "Skill加MCP，Claude就成了你整个知识工作的调度层。",
+    "pronounce_text": "Skill加MCP，Claude就成了你整个知识工作的调度层。",
+    "time_begin": 178740,
+    "time_end": 182680.27210884355,
+    "text_begin": 1160,
+    "text_end": 1191,
+    "pronounce_text_begin": 1130,
+    "pronounce_text_end": 1161
+  },
+  {
+    "text": "今天这期，一句话：",
+    "pronounce_text": "今天这期，一句话：",
+    "time_begin": 184788,
+    "time_end": 186499.15646258503,
+    "text_begin": 1191,
+    "text_end": 1200,
+    "pronounce_text_begin": 1161,
+    "pronounce_text_end": 1170
+  },
+  {
+    "text": "**Obsidian没加AI按钮，却成了最好的AI笔记工具。**",
+    "pronounce_text": "Obsidian没加AI按钮，却成了最好的AI笔记工具。",
+    "time_begin": 187128,
+    "time_end": 190545.8231292517,
+    "text_begin": 1200,
+    "text_end": 1232,
+    "pronounce_text_begin": 1170,
+    "pronounce_text_end": 1198
+  },
+  {
+    "text": "原因就是开放格式。笔记是Markdown，流程是Skill文件，AI随时可以换，知识永远属于你。",
+    "pronounce_text": "原因就是开放格式。笔记是Markdown，流程是Skill文件，AI随时可以换，知识永远属于你。",
+    "time_begin": 191160,
+    "time_end": 198327.84580498867,
+    "text_begin": 1232,
+    "text_end": 1280,
+    "pronounce_text_begin": 1198,
+    "pronounce_text_end": 1246
+  },
+  {
+    "text": "现在你可以做的一件事：想想你最常重复的笔记操作，把步骤写下来，存成vault里`.claude/skills/`目录下的一个Skill文件。",
+    "pronounce_text": "现在你可以做的一件事：想想你最常重复的笔记操作，把步骤写下来，存成vault里，.claude，skills，目录下的一个Skill文件。",
+    "time_begin": 198936,
+    "time_end": 208658.04081632654,
+    "text_begin": 1280,
+    "text_end": 1350,
+    "pronounce_text_begin": 1246,
+    "pronounce_text_end": 1315
+  },
+  {
+    "text": "让Claude下次按你的流程来，而不是每次重新解释。",
+    "pronounce_text": "让Claude下次按你的流程来，而不是每次重新解释。",
+    "time_begin": 209268,
+    "time_end": 212906.4126984127,
+    "text_begin": 1350,
+    "text_end": 1376,
+    "pronounce_text_begin": 1315,
+    "pronounce_text_end": 1341
+  },
+  {
+    "text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 213516,
+    "time_end": 218350.2403628118,
+    "text_begin": 1376,
+    "text_end": 1402,
+    "pronounce_text_begin": 1341,
+    "pronounce_text_end": 1367
+  }
+]

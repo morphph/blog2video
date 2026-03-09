@@ -1,0 +1,352 @@
+[
+  {
+    "text": "所有AI工具都在卷谁更快、谁更自动。但有一个项目偏偏反着来——故意给AI加摩擦、加限制、加规矩。结果呢？GitHub上6.7万颗星。",
+    "pronounce_text": "所有AI工具都在卷谁更快、谁更自动。但有一个项目偏偏反着来故意给AI加摩擦、加限制、加规矩。结果呢？GitHub上六点七万颗星。",
+    "time_begin": 0,
+    "time_end": 11800.226757369614,
+    "text_begin": 0,
+    "text_end": 66,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 64
+  },
+  {
+    "text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Superpowers的设计哲学与实战成本。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Superpowers的设计哲学与实战成本。",
+    "time_begin": 12420,
+    "time_end": 24998.095238095237,
+    "text_begin": 66,
+    "text_end": 141,
+    "pronounce_text_begin": 64,
+    "pronounce_text_end": 139
+  },
+  {
+    "text": "上期我们拆了Superpowers的反借口表和双重审查机制——AI说的每句\"测试通过了\"它都不信。",
+    "pronounce_text": "上期我们拆了Superpowers的反借口表和双重审查机制AI说的每句\"测试通过了\"它都不信。",
+    "time_begin": 25632,
+    "time_end": 31905.877551020407,
+    "text_begin": 141,
+    "text_end": 190,
+    "pronounce_text_begin": 139,
+    "pronounce_text_end": 186
+  },
+  {
+    "text": "这期是最后一期。我们来回答一个根本性的问题：加摩擦这件事，凭什么能赢？",
+    "pronounce_text": "这期是最后一期。我们来回答一个根本性的问题：加摩擦这件事，凭什么能赢？",
+    "time_begin": 32544,
+    "time_end": 37738.14965986395,
+    "text_begin": 190,
+    "text_end": 225,
+    "pronounce_text_begin": 186,
+    "pronounce_text_end": 221
+  },
+  {
+    "text": "我先讲个类比。",
+    "pronounce_text": "我先讲个类比。",
+    "time_begin": 39384,
+    "time_end": 40503.04761904762,
+    "text_begin": 225,
+    "text_end": 232,
+    "pronounce_text_begin": 221,
+    "pronounce_text_end": 228
+  },
+  {
+    "text": "飞行员起飞前有一张检查清单。哪怕他飞了一万次，每次也必须逐项打钩。不是因为他不会飞，而是因为出事的代价太高。",
+    "pronounce_text": "飞行员起飞前有一张检查清单。哪怕他飞了一万次，每次也必须逐项打钩。不是因为他不会飞，而是因为出事的代价太高。",
+    "time_begin": 41112,
+    "time_end": 50358.031746031746,
+    "text_begin": 232,
+    "text_end": 286,
+    "pronounce_text_begin": 228,
+    "pronounce_text_end": 282
+  },
+  {
+    "text": "Superpowers对AI做的，本质上就是这件事。",
+    "pronounce_text": "Superpowers对AI做的，本质上就是这件事。",
+    "time_begin": 50976,
+    "time_end": 54022.30385487528,
+    "text_begin": 286,
+    "text_end": 312,
+    "pronounce_text_begin": 282,
+    "pronounce_text_end": 308
+  },
+  {
+    "text": "它的核心哲学叫\"radical discipline over convenience\"——纪律优于便利。别的工具拼命帮你减少步骤，它偏要在关键节点加步骤。",
+    "pronounce_text": "它的核心哲学叫\"radical discipline over convenience\" 纪律优于便利。别的工具拼命帮你减少步骤，它偏要在关键节点加步骤。",
+    "time_begin": 54648,
+    "time_end": 64149.45124716553,
+    "text_begin": 312,
+    "text_end": 390,
+    "pronounce_text_begin": 308,
+    "pronounce_text_end": 385
+  },
+  {
+    "text": "为什么？因为AI跑得越快，犯错的代价越高。你让它三秒写完一个模块，它跳过了设计、跳过了测试、跳过了验证。然后你花三个小时返工。",
+    "pronounce_text": "为什么？因为AI跑得越快，犯错的代价越高。你让它三秒写完一个模块，它跳过了设计、跳过了测试、跳过了验证。然后你花三个小时返工。",
+    "time_begin": 64764,
+    "time_end": 76273.97732426303,
+    "text_begin": 390,
+    "text_end": 453,
+    "pronounce_text_begin": 385,
+    "pronounce_text_end": 448
+  },
+  {
+    "text": "所以Superpowers的逻辑是：与其事后擦屁股，不如事前多花三十秒确认方向。",
+    "pronounce_text": "所以Superpowers的逻辑是：与其事后擦屁股，不如事前多花三十秒确认方向。",
+    "time_begin": 76896,
+    "time_end": 83727.15646258503,
+    "text_begin": 453,
+    "text_end": 493,
+    "pronounce_text_begin": 448,
+    "pronounce_text_end": 488
+  },
+  {
+    "text": "这不是反效率，这是真正的效率。",
+    "pronounce_text": "这不是反效率，这是真正的效率。",
+    "time_begin": 84348,
+    "time_end": 86767.36507936507,
+    "text_begin": 493,
+    "text_end": 508,
+    "pronounce_text_begin": 488,
+    "pronounce_text_end": 503
+  },
+  {
+    "text": "Superpowers的设计哲学可以拆成四个支柱。",
+    "pronounce_text": "Superpowers的设计哲学可以拆成四个支柱。",
+    "time_begin": 88380,
+    "time_end": 92053.24263038549,
+    "text_begin": 508,
+    "text_end": 533,
+    "pronounce_text_begin": 503,
+    "pronounce_text_end": 528
+  },
+  {
+    "text": "第一，纪律优于便利。它有一条铁律，叫Iron Law：你先写了代码再补测试？删掉，重来。不是建议你重来，是强制删掉。因为先写代码再补测试，测试就变成了走过场。",
+    "pronounce_text": "第一，纪律优于便利。它有一条铁律，叫Iron Law：你先写了代码再补测试？删掉，重来。不是建议你重来，是强制删掉。因为先写代码再补测试，测试就变成了走过场。",
+    "time_begin": 92664,
+    "time_end": 105845.81405895692,
+    "text_begin": 533,
+    "text_end": 612,
+    "pronounce_text_begin": 528,
+    "pronounce_text_end": 607
+  },
+  {
+    "text": "第二，系统化优于随机试错。它的调试流程分四个阶段：查根因、找规律、验假设、再动手。",
+    "pronounce_text": "第二，系统化优于随机试错。它的调试流程分四个阶段：查根因、找规律、验假设、再动手。",
+    "time_begin": 106452,
+    "time_end": 114142.2947845805,
+    "text_begin": 612,
+    "text_end": 653,
+    "pronounce_text_begin": 607,
+    "pronounce_text_end": 648
+  },
+  {
+    "text": "还有一个升级机制——如果连续三次修不好，Agent必须停下来，不许再提修复方案，而是重新审视底层架构。",
+    "pronounce_text": "还有一个升级机制如果连续三次修不好，Agent必须停下来，不许再提修复方案，而是重新审视底层架构。",
+    "time_begin": 114342.2947845805,
+    "time_end": 122404.10884353741,
+    "text_begin": 653,
+    "text_end": 704,
+    "pronounce_text_begin": 648,
+    "pronounce_text_end": 697
+  },
+  {
+    "text": "官方数据说，系统化调试的一次修复成功率是百分之95，耗时15到30分钟。随机试错呢？成功率百分之40，耗时两到三个小时。",
+    "pronounce_text": "官方数据说，系统化调试的一次修复成功率是百分之九十五，耗时十五到三十分钟。随机试错呢？成功率百分之四十，耗时两到三个小时。",
+    "time_begin": 122544,
+    "time_end": 133229.66893424036,
+    "text_begin": 704,
+    "text_end": 764,
+    "pronounce_text_begin": 697,
+    "pronounce_text_end": 758
+  },
+  {
+    "text": "第三，证据优于声明。AI说\"我改好了\"，不算数。必须拿出验证证据。收到代码审查意见后，禁止说\"你说得对！好建议！\"这种表演性回复，必须用技术事实来回应。",
+    "pronounce_text": "第三，证据优于声明。AI说\"我改好了\"，不算数。必须拿出验证证据。收到代码审查意见后，禁止说\"你说得对！好建议！\"这种表演性回复，必须用技术事实来回应。",
+    "time_begin": 133848,
+    "time_end": 146797.61451247166,
+    "text_begin": 764,
+    "text_end": 840,
+    "pronounce_text_begin": 758,
+    "pronounce_text_end": 834
+  },
+  {
+    "text": "第四，也是最有意思的一点：把AI当准人类来管理。",
+    "pronounce_text": "第四，也是最有意思的一点：把AI当准人类来管理。",
+    "time_begin": 147420,
+    "time_end": 151058.4126984127,
+    "text_begin": 840,
+    "text_end": 864,
+    "pronounce_text_begin": 834,
+    "pronounce_text_end": 858
+  },
+  {
+    "text": "这里要停一下。什么叫\"准人类\"？",
+    "pronounce_text": "这里要停一下。什么叫\"准人类\"？",
+    "time_begin": 151668,
+    "time_end": 154528.54421768707,
+    "text_begin": 864,
+    "text_end": 880,
+    "pronounce_text_begin": 858,
+    "pronounce_text_end": 874
+  },
+  {
+    "text": "你可以想象你带了一个天才新员工。智商极高，学什么都快，但没耐心、爱走捷径、还特别会找借口。你不能用编程语言给他下指令，你得用管理学和心理学。",
+    "pronounce_text": "你可以想象你带了一个天才新员工。智商极高，学什么都快，但没耐心、爱走捷径、还特别会找借口。你不能用编程语言给他下指令，你得用管理学和心理学。",
+    "time_begin": 155160,
+    "time_end": 167366.57596371882,
+    "text_begin": 880,
+    "text_end": 950,
+    "pronounce_text_begin": 874,
+    "pronounce_text_end": 944
+  },
+  {
+    "text": "Superpowers的说服力文档里有一句话：LLM对人类有效的说服技巧同样有效，因为它就是从人类文本中训练出来的。所以你不是在\"编程\"AI，你是在\"管理\"AI。",
+    "pronounce_text": "Superpowers的说服力文档里有一句话：LLM对人类有效的说服技巧同样有效，因为它就是从人类文本中训练出来的。所以你不是在\"编程\"AI，你是在\"管理\"AI。",
+    "time_begin": 167976,
+    "time_end": 180043.25623582766,
+    "text_begin": 950,
+    "text_end": 1031,
+    "pronounce_text_begin": 944,
+    "pronounce_text_end": 1025
+  },
+  {
+    "text": "这是一个全新的视角。",
+    "pronounce_text": "这是一个全新的视角。",
+    "time_begin": 180648,
+    "time_end": 182138.56689342402,
+    "text_begin": 1031,
+    "text_end": 1041,
+    "pronounce_text_begin": 1025,
+    "pronounce_text_end": 1035
+  },
+  {
+    "text": "说完哲学，我们看实证。",
+    "pronounce_text": "说完哲学，我们看实证。",
+    "time_begin": 183780,
+    "time_end": 186083.26530612246,
+    "text_begin": 1041,
+    "text_end": 1052,
+    "pronounce_text_begin": 1035,
+    "pronounce_text_end": 1046
+  },
+  {
+    "text": "Superpowers不是一拍脑袋定出来的规则集。它的每一次版本迭代，都来自真实观察。",
+    "pronounce_text": "Superpowers不是一拍脑袋定出来的规则集。它的每一次版本迭代，都来自真实观察。",
+    "time_begin": 186696,
+    "time_end": 192598.358276644,
+    "text_begin": 1052,
+    "text_end": 1095,
+    "pronounce_text_begin": 1046,
+    "pronounce_text_end": 1089
+  },
+  {
+    "text": "3.2版，加了命名空间标准化——因为发现Agent被不一致的技能引用搞糊涂了。3.2.2版，强化了反借口机制——因为发现Agent嘴上答应用技能，实际偷偷跳过。",
+    "pronounce_text": "三点二版，加了命名空间标准化因为发现Agent被不一致的技能引用搞糊涂了。三点二点二版，强化了反借口机制因为发现Agent嘴上答应用技能，实际偷偷跳过。",
+    "time_begin": 193212,
+    "time_end": 204454.947845805,
+    "text_begin": 1095,
+    "text_end": 1175,
+    "pronounce_text_begin": 1089,
+    "pronounce_text_end": 1165
+  },
+  {
+    "text": "4.0版，加了双阶段代码审查——因为发现单人审查总是漏掉规格问题。4.3版，给头脑风暴阶段加了硬门禁——因为模型总跳过设计，直接冲去写代码。",
+    "pronounce_text": "四点零版，加了双阶段代码审查因为发现单人审查总是漏掉规格问题。四点三版，给头脑风暴阶段加了硬门禁因为模型总跳过设计，直接冲去写代码。",
+    "time_begin": 204624,
+    "time_end": 215727.62811791385,
+    "text_begin": 1175,
+    "text_end": 1245,
+    "pronounce_text_begin": 1165,
+    "pronounce_text_end": 1231
+  },
+  {
+    "text": "每一条规则背后，都有一个真实的翻车案例。这不是理论框架，这是临床医学——观察症状、开药、观察疗效、调整处方。",
+    "pronounce_text": "每一条规则背后，都有一个真实的翻车案例。这不是理论框架，这是临床医学观察症状、开药、观察疗效、调整处方。",
+    "time_begin": 216360,
+    "time_end": 225048.75283446713,
+    "text_begin": 1245,
+    "text_end": 1299,
+    "pronounce_text_begin": 1231,
+    "pronounce_text_end": 1283
+  },
+  {
+    "text": "再看成本。一个完整的Superpowers工作流，包含TDD、双阶段审查、任务追踪，实现一个简单的两函数数学库，总API成本是4.67美元。",
+    "pronounce_text": "再看成本。一个完整的Superpowers工作流，包含TDD、双阶段审查、任务追踪，实现一个简单的两函数数学库，总API成本是四点六七美元。",
+    "time_begin": 225684,
+    "time_end": 236892.1179138322,
+    "text_begin": 1299,
+    "text_end": 1369,
+    "pronounce_text_begin": 1283,
+    "pronounce_text_end": 1353
+  },
+  {
+    "text": "其中主协调器4.09美元，每个子Agent调用只要7到9美分。",
+    "pronounce_text": "其中主协调器四点零九美元，每个子Agent调用只要七到九美分。",
+    "time_begin": 237092.1179138322,
+    "time_end": 241403.90929705216,
+    "text_begin": 1369,
+    "text_end": 1400,
+    "pronounce_text_begin": 1353,
+    "pronounce_text_end": 1384
+  },
+  {
+    "text": "而且安装只要30秒。两条命令，不需要API密钥，不需要额外基础设施。技能装好之后自动触发，你该怎么用Claude Code就怎么用。",
+    "pronounce_text": "而且安装只要三十秒。两条命令，不需要API密钥，不需要额外基础设施。技能装好之后自动触发，你该怎么用Claude Code就怎么用。",
+    "time_begin": 242028,
+    "time_end": 251680.38095238095,
+    "text_begin": 1400,
+    "text_end": 1466,
+    "pronounce_text_begin": 1384,
+    "pronounce_text_end": 1450
+  },
+  {
+    "text": "三期读完，我们回到最开始的问题：AI越来越强，我们到底应该怎么用它？",
+    "pronounce_text": "三期读完，我们回到最开始的问题：AI越来越强，我们到底应该怎么用它？",
+    "time_begin": 253296,
+    "time_end": 259314.45804988663,
+    "text_begin": 1466,
+    "text_end": 1500,
+    "pronounce_text_begin": 1450,
+    "pronounce_text_end": 1484
+  },
+  {
+    "text": "Superpowers给出的答案是：AI越强大，纪律越重要。让AI变慢一点、想多一点，比让它跑得更快更有价值。",
+    "pronounce_text": "Superpowers给出的答案是：AI越强大，纪律越重要。让AI变慢一点、想多一点，比让它跑得更快更有价值。",
+    "time_begin": 259920,
+    "time_end": 269084.7619047619,
+    "text_begin": 1500,
+    "text_end": 1555,
+    "pronounce_text_begin": 1484,
+    "pronounce_text_end": 1539
+  },
+  {
+    "text": "这不只是一套工具的设计哲学。这是一个信号：未来管理AI的方式，可能比AI本身更重要。",
+    "pronounce_text": "这不只是一套工具的设计哲学。这是一个信号：未来管理AI的方式，可能比AI本身更重要。",
+    "time_begin": 269712,
+    "time_end": 276659.2562358277,
+    "text_begin": 1555,
+    "text_end": 1597,
+    "pronounce_text_begin": 1539,
+    "pronounce_text_end": 1581
+  },
+  {
+    "text": "给你一个马上能用的行动建议：给你的AI助手设一条硬规则——任何任务开始前，必须先输出方案和检查清单，得到你的确认后才能动手。哪怕只是改一行配置文件。",
+    "pronounce_text": "给你一个马上能用的行动建议：给你的AI助手设一条硬规则任何任务开始前，必须先输出方案和检查清单，得到你的确认后才能动手。哪怕只是改一行配置文件。",
+    "time_begin": 277272,
+    "time_end": 289850.09523809527,
+    "text_begin": 1597,
+    "text_end": 1671,
+    "pronounce_text_begin": 1581,
+    "pronounce_text_end": 1653
+  },
+  {
+    "text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 290484,
+    "time_end": 294830.6213151927,
+    "text_begin": 1671,
+    "text_end": 1697,
+    "pronounce_text_begin": 1653,
+    "pronounce_text_end": 1679
+  }
+]

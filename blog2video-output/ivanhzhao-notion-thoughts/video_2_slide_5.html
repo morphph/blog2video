@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .slide-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .slide-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 36px;
+      line-height: 1.3;
+    }
+    .slide-title .purple { color: #8B5CF6; }
+    .vision-section {
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .section-header {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .section-header.yellow { color: #F59E0B; }
+    .section-header.green { color: #10B981; }
+    .vision-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .vision-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+      position: relative;
+    }
+    .vision-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #F59E0B;
+      border-radius: 12px 0 0 12px;
+    }
+    .vision-who {
+      background: rgba(245, 158, 11, 0.15);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #F59E0B;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .vision-text {
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.3;
+    }
+    .vision-text .muted { color: #B0B0CC; font-weight: 400; }
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(139, 92, 246, 0.15);
+      margin: 8px 0 24px 0;
+    }
+    .action-section {
+      width: 100%;
+    }
+    .action-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 28px 28px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+    }
+    .action-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #10B981;
+      border-radius: 12px 0 0 12px;
+    }
+    .action-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #10B981;
+      margin-bottom: 16px;
+    }
+    .action-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .action-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: rgba(16, 185, 129, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #10B981;
+      flex-shrink: 0;
+    }
+    .step-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    .step-text .green { color: #10B981; font-weight: 700; }
+    .step-text .yellow { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="slide-label">SUMMARY</div>
+  <div class="slide-title">
+    看着AI，想到<span class="purple">新组织形态</span>
+  </div>
+
+  <!-- Vision Section -->
+  <div class="vision-section">
+    <div class="section-header yellow">&#9632; 他们看到了什么</div>
+    <div class="vision-list">
+      <div class="vision-item">
+        <div class="vision-who">Carnegie</div>
+        <div class="vision-text">看着钢铁 <span class="muted">&rarr;</span> 想到城市天际线</div>
+      </div>
+      <div class="vision-item">
+        <div class="vision-who">工厂主</div>
+        <div class="vision-text">看着蒸汽机 <span class="muted">&rarr;</span> 不需要河流的工厂</div>
+      </div>
+      <div class="vision-item">
+        <div class="vision-who">你</div>
+        <div class="vision-text">看着AI <span class="muted">&rarr;</span> 全新的组织形态</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Action Section -->
+  <div class="action-section">
+    <div class="section-header green">&#9632; 这周就行动</div>
+    <div class="action-card">
+      <div class="action-title">先把一个水车换掉</div>
+      <div class="action-steps">
+        <div class="action-step">
+          <div class="step-num">1</div>
+          <div class="step-text">找出一个<span class="yellow">每周重复</span>的流程</div>
+        </div>
+        <div class="action-step">
+          <div class="step-num">2</div>
+          <div class="step-text">如周报汇总、会议纪要整理</div>
+        </div>
+        <div class="action-step">
+          <div class="step-num">3</div>
+          <div class="step-text">用AI Agent <span class="green">自动化</span>掉它</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

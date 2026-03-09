@@ -1,0 +1,123 @@
+{
+  "blog_metadata": {
+    "title": "Orchestrate teams of Claude Code sessions",
+    "title_zh": "编排 Claude Code 多会话协作团队",
+    "word_count": 3000,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "agent-teams"
+  },
+  "video_plan": {
+    "total_videos": 2,
+    "rationale": "内容自然分为两大主题：第一是Agent Teams的概念定位（是什么、为什么用、与Subagents的区别），第二是实操指南（怎么用、架构原理、最佳实践），两个主题各自独立成篇，都能给观众提供完整价值。",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "一个人写代码太慢？让AI组团帮你干活！",
+        "hook_question": "你有没有想过，让好几个AI同时帮你写代码，一个搞前端、一个搞后端、一个跑测试——就像带了一个AI开发团队？Claude Code现在真的能做到了。",
+        "core_thesis": "Agent Teams让你像管理真实团队一样协调多个Claude Code实例并行工作，适合复杂项目中需要多方面同时推进的场景。",
+        "source_sections": [
+          "Introduction to agent teams",
+          "When to use agent teams",
+          "Compare with subagents"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "Agent Teams中的每个队友（teammate）都有自己独立的上下文窗口，可以直接互相发消息讨论——这不像Subagent只能向主Agent汇报，而是真正的'同事之间平级沟通'。",
+        "emotion_arc": "好奇（AI能组团？）→ 恍然大悟（原来是这样协作的）→ 对比清晰（和Subagent的区别一目了然）→ 跃跃欲试（我也想试试）",
+        "must_include_details": [
+          "Subagent只能向主Agent汇报结果，Agent Teams中队友可以直接互相发消息",
+          "Agent Teams比单会话消耗更多token，每个teammate是独立的Claude实例",
+          "四大适用场景：多角度调研、模块开发、竞争假设调试、跨层协调",
+          "Subagent适合只需要结果的聚焦任务，Agent Teams适合需要讨论协作的复杂工作"
+        ],
+        "actionable_takeaway": "评估你当前项目中是否有可以并行推进的独立模块，如果有3个以上可同时进行的任务，就值得尝试Agent Teams。",
+        "key_concepts": [
+          {
+            "concept_en": "Agent Teams",
+            "concept_zh": "AI协作团队",
+            "analogy_direction": "就像公司里的项目组：有一个组长（Team Lead）协调全局，组员各自负责不同模块，组员之间可以直接沟通，不用事事都通过组长传话",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Subagents",
+            "concept_zh": "子代理",
+            "analogy_direction": "像外卖骑手：你下单（分配任务），骑手独立完成取餐送餐，只把结果（外卖）送回来，你不需要知道他怎么跑的路线",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Context window",
+            "concept_zh": "上下文窗口",
+            "analogy_direction": "就像每个人的工作台面大小——每个队友有自己的工作台，上面放着自己的资料和笔记，看不到别人桌上的东西",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Token cost",
+            "concept_zh": "Token消耗/成本",
+            "analogy_direction": "每多请一个AI队友就像多雇一个员工，每个人都要发工资（消耗token），人越多总成本越高",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Agent Teams是Subagent的升级版——当任务复杂到需要多个AI互相讨论协作时，它比单打独斗高效得多，但也要权衡token成本。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "Claude Code组队实战：从启动到管理的完整攻略！",
+        "hook_question": "知道了Agent Teams很强，但具体怎么用？怎么分配任务？怎么避免队友打架？今天手把手教你从零搭建一个AI开发团队。",
+        "core_thesis": "掌握Agent Teams的启动方式、显示模式、任务分配机制和最佳实践，就能像带真实团队一样高效管理多个AI协作开发。",
+        "source_sections": [
+          "How to start",
+          "Display modes",
+          "Control features",
+          "Architecture",
+          "Best practices",
+          "Limitations"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "团队配置文件存储在本地 ~/.claude/teams/{team-name}/config.json，任务列表存在 ~/.claude/tasks/{team-name}/——这意味着你可以手动查看和调试团队状态，甚至直接编辑任务列表。",
+        "emotion_arc": "期待（终于要学怎么用了）→ 原来如此（架构和通信机制清晰）→ 实用感满满（最佳实践条条有用）→ 心里有底（知道了限制就不会踩坑）",
+        "must_include_details": [
+          "通过设置CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS来启用",
+          "两种显示模式：in-process（Shift+Down切换）和split panes（需要tmux或iTerm2）",
+          "推荐团队规模：3-5个队友，每个队友5-6个任务",
+          "队友不会继承Team Lead的对话上下文，必须给足够的背景信息",
+          "可以通过TeammateIdle和TaskCompleted钩子设置质量门禁",
+          "当前限制：不支持嵌套团队、每个会话只能有一个团队、Lead角色固定"
+        ],
+        "actionable_takeaway": "打开你的终端，设置CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS环境变量，用自然语言描述一个3人团队结构，亲自体验一次Agent Teams的创建和任务分配流程。",
+        "key_concepts": [
+          {
+            "concept_en": "Team Lead",
+            "concept_zh": "团队负责人/主会话",
+            "analogy_direction": "像项目经理：负责拆解需求、分配任务、汇总成果，但不一定自己亲手写每一行代码",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Shared task list",
+            "concept_zh": "共享任务列表",
+            "analogy_direction": "像团队的看板（Kanban Board）：所有人都能看到有哪些待办事项，自己领取适合的任务，标记完成状态",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Mailbox messaging",
+            "concept_zh": "邮箱通信系统",
+            "analogy_direction": "像公司内部的即时通讯工具（企业微信/飞书）：队友之间可以直接发消息讨论问题，不用每次都开全体会议",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Quality gates with hooks",
+            "concept_zh": "质量门禁/钩子",
+            "analogy_direction": "像工厂流水线的质检环节：每个工序完成后自动检查质量，不合格就打回重做，确保最终产品达标",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Split panes display",
+            "concept_zh": "分屏显示模式",
+            "analogy_direction": "像监控室的多屏幕墙：每个队友一个屏幕，你可以同时看到所有人的工作进度，随时点进去交流",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Agent Teams的核心心法：给队友充足上下文、控制团队在3-5人、合理拆分任务粒度、善用质量门禁——像管理真实团队一样管理AI团队。"
+      }
+    ]
+  }
+}

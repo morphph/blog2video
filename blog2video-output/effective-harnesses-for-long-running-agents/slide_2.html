@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 180px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .insight-title {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 52px;
+    }
+    .insight-title .em {
+      color: #8B5CF6;
+    }
+
+    .analogy-scene {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 44px;
+      align-items: stretch;
+    }
+    .shift-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid #2A2A4A;
+      border-radius: 12px;
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .shift-icon {
+      font-size: 52px;
+      margin-bottom: 14px;
+    }
+    .shift-name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .shift-desc {
+      font-size: 23px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .shift-card.day {
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+    .shift-card.day .shift-name {
+      color: #10B981;
+    }
+    .arrow-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 56px;
+    }
+    .arrow-icon {
+      font-size: 44px;
+      color: #6B7280;
+    }
+    .shift-card.night {
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+    .shift-card.night .shift-name {
+      color: #EF4444;
+    }
+
+    .break-banner {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px dashed rgba(239, 68, 68, 0.5);
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .break-banner-text {
+      font-size: 30px;
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .break-banner-sub {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-top: 8px;
+    }
+
+    .failure-modes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .failure-item {
+      background: #1A1A2E;
+      border: 1px solid #2A2A4A;
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .failure-num {
+      flex: 0 0 auto;
+      width: 46px;
+      height: 46px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 800;
+      color: #EF4444;
+    }
+    .failure-content {
+      flex: 1;
+    }
+    .failure-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #FFFFFF;
+    }
+    .failure-title .en {
+      color: #F59E0B;
+    }
+    .failure-desc {
+      font-size: 23px;
+      color: #6B7280;
+      line-height: 1.4;
+    }
+
+    .key-note {
+      margin-top: 40px;
+      font-size: 26px;
+      color: #F59E0B;
+      font-weight: 600;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="section-label">CORE PROBLEM</div>
+
+    <div class="insight-title">
+      Agent 的<span class="em">失忆症</span><br>
+      每次对话都是全新的自己
+    </div>
+
+    <div class="analogy-scene">
+      <div class="shift-card day">
+        <div class="shift-icon">&#x2600;&#xFE0F;</div>
+        <div class="shift-name">白班 Session 1</div>
+        <div class="shift-desc">写了大量代码<br>踩过好几个坑</div>
+      </div>
+      <div class="arrow-col">
+        <div class="arrow-icon">&#x27A1;&#xFE0F;</div>
+      </div>
+      <div class="shift-card night">
+        <div class="shift-icon">&#x1F303;</div>
+        <div class="shift-name">夜班 Session 2</div>
+        <div class="shift-desc">什么都不知道<br>只能从零开始</div>
+      </div>
+    </div>
+
+    <div class="break-banner">
+      <div class="break-banner-text">没有交班记录 = 记忆归零</div>
+      <div class="break-banner-sub">上下文断裂 &mdash; 这才是真正的瓶颈</div>
+    </div>
+
+    <div class="failure-modes">
+      <div class="failure-item">
+        <div class="failure-num">1</div>
+        <div class="failure-content">
+          <div class="failure-title"><span class="en">Over-ambition</span> 贪多嚼不烂</div>
+          <div class="failure-desc">一口气想做太多，Context Window 爆掉</div>
+        </div>
+      </div>
+      <div class="failure-item">
+        <div class="failure-num">2</div>
+        <div class="failure-content">
+          <div class="failure-title"><span class="en">Premature Completion</span> 提前交卷</div>
+          <div class="failure-desc">看到已有代码就宣布"项目完成"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="key-note">不是模型不够强，而是没有交接机制</div>
+
+  </div>
+</body>
+</html>

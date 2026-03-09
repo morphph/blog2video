@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .section-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 44px;
+      line-height: 1.3;
+    }
+    .title .purple { color: #8B5CF6; }
+
+    .steps-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .step-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .step-card.ep1 { border-left: 4px solid #3B82F6; }
+    .step-card.ep2 { border-left: 4px solid #8B5CF6; }
+    .step-card.ep3 { border-left: 4px solid #F59E0B; }
+
+    .step-num {
+      font-size: 20px;
+      font-weight: 700;
+      min-width: 72px;
+      text-align: center;
+      padding: 8px 0;
+      border-radius: 8px;
+    }
+    .step-num.blue { background: rgba(59, 130, 246, 0.15); color: #3B82F6; }
+    .step-num.purple { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+    .step-num.yellow { background: rgba(245, 158, 11, 0.15); color: #F59E0B; }
+
+    .step-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .step-text .white { color: #FFFFFF; font-weight: 600; }
+
+    .arrow-down {
+      text-align: center;
+      font-size: 28px;
+      color: #6B7280;
+      margin: -6px 0;
+    }
+
+    .cta-card {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .cta-label {
+      font-size: 18px;
+      color: #10B981;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .cta-text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .cta-text .green { color: #10B981; }
+
+    .cta-prompt {
+      margin-top: 16px;
+      font-size: 22px;
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-label">SERIES RECAP</div>
+
+  <div class="title">
+    三期串联：<span class="purple">终极模式</span>
+  </div>
+
+  <div class="steps-container">
+    <div class="step-card ep1">
+      <div class="step-num blue">&#31532;1&#26399;</div>
+      <div class="step-text">给AI喂<span class="white">好的上下文</span></div>
+    </div>
+
+    <div class="arrow-down">&#9660;</div>
+
+    <div class="step-card ep2">
+      <div class="step-num purple">&#31532;2&#26399;</div>
+      <div class="step-text">用命令让AI成为<span class="white">思维伙伴</span></div>
+    </div>
+
+    <div class="arrow-down">&#9660;</div>
+
+    <div class="step-card ep3">
+      <div class="step-num yellow">&#31532;3&#26399;</div>
+      <div class="step-text">让AI反过来告诉你<span class="white">该做什么</span></div>
+    </div>
+  </div>
+
+  <div class="cta-card">
+    <div class="cta-label">&#128640; &#29616;&#22312;&#23601;&#35797;</div>
+    <div class="cta-text">
+      把你的工作流喂给 Claude Code<br>
+      问它<span class="green">一句话</span>：
+    </div>
+    <div class="cta-prompt">"你觉得我还需要什么命令？"</div>
+  </div>
+</div>
+</body>
+</html>

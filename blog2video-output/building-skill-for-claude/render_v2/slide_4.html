@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 36px;
+      line-height: 1.3;
+    }
+    .title .accent { color: #F59E0B; }
+
+    /* Three-layer testing */
+    .test-layers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .test-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .test-card.t1 { border-left: 4px solid #3B82F6; }
+    .test-card.t2 { border-left: 4px solid #8B5CF6; }
+    .test-card.t3 { border-left: 4px solid #10B981; }
+    .test-num {
+      font-size: 40px;
+      font-weight: 800;
+      flex-shrink: 0;
+      width: 52px;
+      text-align: center;
+    }
+    .test-num.blue { color: #3B82F6; }
+    .test-num.purple { color: #8B5CF6; }
+    .test-num.green { color: #10B981; }
+    .test-info { flex: 1; }
+    .test-name {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .test-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .test-metric {
+      font-size: 20px;
+      color: #F59E0B;
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    /* Performance data highlight */
+    .perf-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .perf-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .perf-card.before { border-top: 3px solid #EF4444; }
+    .perf-card.after { border-top: 3px solid #10B981; }
+    .perf-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 8px;
+    }
+    .perf-label.red { color: #EF4444; }
+    .perf-label.green { color: #10B981; }
+    .perf-stat {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .perf-stat.red { color: #EF4444; }
+    .perf-stat.green { color: #10B981; }
+    .perf-unit {
+      font-size: 20px;
+      color: #B0B0CC;
+    }
+
+    /* Iteration section */
+    .iter-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #F59E0B;
+      margin-bottom: 14px;
+      width: 100%;
+      text-align: left;
+    }
+    .iter-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .iter-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 10px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+    }
+    .iter-symptom {
+      font-size: 24px;
+      font-weight: 700;
+      flex-shrink: 0;
+      width: 120px;
+    }
+    .iter-symptom.red { color: #EF4444; }
+    .iter-symptom.yellow { color: #F59E0B; }
+    .iter-symptom.blue { color: #3B82F6; }
+    .iter-arrow {
+      font-size: 22px;
+      color: #6B7280;
+      flex-shrink: 0;
+    }
+    .iter-fix {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">STEP 3</div>
+    <div class="title"><span class="accent">三层测试法</span> + 迭代</div>
+
+    <div class="test-layers">
+      <div class="test-card t1">
+        <div class="test-num blue">L1</div>
+        <div class="test-info">
+          <div class="test-name">触发测试</div>
+          <div class="test-desc">5 个相关 + 5 个无关提问</div>
+          <div class="test-metric">目标：90% 命中率</div>
+        </div>
+      </div>
+      <div class="test-card t2">
+        <div class="test-num purple">L2</div>
+        <div class="test-info">
+          <div class="test-name">功能测试</div>
+          <div class="test-desc">输出正确 &middot; 流程完整 &middot; 零报错</div>
+        </div>
+      </div>
+      <div class="test-card t3">
+        <div class="test-num green">L3</div>
+        <div class="test-info">
+          <div class="test-name">性能对比测试</div>
+          <div class="test-desc">有 Skill vs 无 Skill</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="perf-row">
+      <div class="perf-card before">
+        <div class="perf-label red">无 Skill</div>
+        <div class="perf-stat red">12K</div>
+        <div class="perf-unit">Token &middot; 15 轮 &middot; 3 次报错</div>
+      </div>
+      <div class="perf-card after">
+        <div class="perf-label green">有 Skill</div>
+        <div class="perf-stat green">6K</div>
+        <div class="perf-unit">Token &middot; 自动 &middot; 零报错</div>
+      </div>
+    </div>
+
+    <div class="iter-title">迭代药方</div>
+    <div class="iter-row">
+      <div class="iter-item">
+        <div class="iter-symptom red">触发不足</div>
+        <div class="iter-arrow">&rarr;</div>
+        <div class="iter-fix">description 加关键词</div>
+      </div>
+      <div class="iter-item">
+        <div class="iter-symptom yellow">触发过度</div>
+        <div class="iter-arrow">&rarr;</div>
+        <div class="iter-fix">加负面触发条件</div>
+      </div>
+      <div class="iter-item">
+        <div class="iter-symptom blue">执行出错</div>
+        <div class="iter-arrow">&rarr;</div>
+        <div class="iter-fix">正文补脚本校验</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

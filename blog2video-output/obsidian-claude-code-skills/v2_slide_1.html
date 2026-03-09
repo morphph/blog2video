@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Background glow */
+    .bg-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Series label */
+    .series-label {
+      font-size: 26px;
+      font-weight: 500;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 64px;
+    }
+
+    /* Hook block */
+    .hook-block {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-bottom: 56px;
+      text-align: left;
+      width: 100%;
+    }
+    .hook-line {
+      font-size: 32px;
+      font-weight: 400;
+      color: #B0B0CC;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .hook-line:last-child { margin-bottom: 0; }
+    .hook-highlight {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .hook-red {
+      color: #EF4444;
+      font-weight: 700;
+    }
+
+    /* Pain divider */
+    .pain-divider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 56px;
+      width: 100%;
+    }
+    .pain-divider .line {
+      flex: 1;
+      height: 1px;
+      background: rgba(239, 68, 68, 0.3);
+    }
+    .pain-divider .tag {
+      font-size: 24px;
+      color: #EF4444;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* Info cards row */
+    .info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    .info-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .info-card .icon {
+      font-size: 36px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .info-card .text {
+      font-size: 29px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .info-card .text strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .info-card .text .purple {
+      color: #8B5CF6;
+      font-weight: 600;
+    }
+
+    /* Episode tag */
+    .episode-tag {
+      font-size: 26px;
+      color: #6B7280;
+      letter-spacing: 1px;
+    }
+    .episode-tag span {
+      color: #8B5CF6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="series-label">精读AI · Obsidian</div>
+
+    <div class="hook-block">
+      <div class="hook-line">写完日记，最耗时的不是写，</div>
+      <div class="hook-line">是<span class="hook-red">维护</span>。</div>
+      <div class="hook-line" style="margin-top: 16px;">补双链、手动关联、整理引用……</div>
+      <div class="hook-line"><span class="hook-highlight">笔记维护，比写笔记本身还长。</span></div>
+    </div>
+
+    <div class="pain-divider">
+      <div class="line"></div>
+      <div class="tag">接入 Claude Code 后呢？</div>
+      <div class="line"></div>
+    </div>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="icon">📖</div>
+        <div class="text">
+          精读 <strong>Obsidian 社区</strong>真实 workflow 案例<br>
+          探索自动化维护的边界
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="icon">🔗</div>
+        <div class="text">
+          上期：Obsidian 变成 <span class="purple">AI 可读写知识库</span><br>
+          本期：<strong>最耗时的操作，能否真正自动化？</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="episode-tag">精读AI · 第 <span>2</span> 期</div>
+  </div>
+</body>
+</html>

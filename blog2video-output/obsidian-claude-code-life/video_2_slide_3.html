@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+    .section-title { font-size: 40px; font-weight: 800; margin-bottom: 32px; }
+    .section-title .accent { color: #8B5CF6; }
+    .categories { width: 100%; display: flex; flex-direction: column; gap: 20px; }
+    .category { background: #1A1A2E; border-radius: 12px; padding: 24px 28px; text-align: left; position: relative; overflow: hidden; }
+    .category::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; }
+    .cat-1::before { background: #3B82F6; }
+    .cat-1 { border: 1px solid rgba(59, 130, 246, 0.25); }
+    .cat-2::before { background: #F59E0B; }
+    .cat-2 { border: 1px solid rgba(245, 158, 11, 0.25); }
+    .cat-3::before { background: #10B981; }
+    .cat-3 { border: 1px solid rgba(16, 185, 129, 0.25); }
+    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .cat-name { font-size: 32px; font-weight: 800; }
+    .cat-1 .cat-name { color: #3B82F6; }
+    .cat-2 .cat-name { color: #F59E0B; }
+    .cat-3 .cat-name { color: #10B981; }
+    .cat-badge { font-size: 20px; font-weight: 600; padding: 4px 14px; border-radius: 14px; }
+    .cat-1 .cat-badge { background: rgba(59, 130, 246, 0.12); color: #3B82F6; }
+    .cat-2 .cat-badge { background: rgba(245, 158, 11, 0.12); color: #F59E0B; }
+    .cat-3 .cat-badge { background: rgba(16, 185, 129, 0.12); color: #10B981; }
+    .cmd-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+    .cmd-tag { font-size: 22px; font-weight: 700; color: #FFFFFF; background: rgba(255,255,255,0.06); border-radius: 8px; padding: 4px 12px; font-family: 'SF Mono', 'JetBrains Mono', monospace; }
+    .cat-desc { font-size: 24px; color: #B0B0CC; line-height: 1.5; }
+    .cat-desc .em { color: #FFFFFF; font-weight: 700; }
+    .highlight-card { width: 100%; background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(239, 68, 68, 0.06)); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 24px 28px; margin-top: 20px; text-align: left; }
+    .highlight-label { font-size: 20px; color: #F59E0B; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; }
+    .highlight-text { font-size: 26px; color: #FFFFFF; font-weight: 600; line-height: 1.5; }
+    .highlight-text .yellow { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-title">三类命令，<span class="accent">十面镜子</span></div>
+    <div class="categories">
+      <div class="category cat-1">
+        <div class="cat-header">
+          <div class="cat-name">日常管理</div>
+          <div class="cat-badge">照当下</div>
+        </div>
+        <div class="cmd-list">
+          <span class="cmd-tag">/today</span>
+        </div>
+        <div class="cat-desc">日历 + 任务 + 笔记 → <span class="em">当日计划</span><br>它知道你在想什么，不只知道你几点开会</div>
+      </div>
+      <div class="category cat-2">
+        <div class="cat-header">
+          <div class="cat-name">思维审计</div>
+          <div class="cat-badge">照盲区</div>
+        </div>
+        <div class="cmd-list">
+          <span class="cmd-tag">/ghost</span>
+          <span class="cmd-tag">/challenge</span>
+          <span class="cmd-tag">/drift</span>
+        </div>
+        <div class="cat-desc">声音克隆 / 信念压测 / <span class="em">意图漂移检测</span><br>像教练翻训练日志——你说练腿，记录全是上半身</div>
+      </div>
+      <div class="category cat-3">
+        <div class="cat-header">
+          <div class="cat-name">深层挖掘</div>
+          <div class="cat-badge">照未来</div>
+        </div>
+        <div class="cmd-list">
+          <span class="cmd-tag">/emerge</span>
+          <span class="cmd-tag">/trace</span>
+          <span class="cmd-tag">/connect</span>
+        </div>
+        <div class="cat-desc">发现你<span class="em">从未说出的想法</span>、追踪想法演变、跨域连接</div>
+      </div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-label">DEMO</div>
+      <div class="highlight-text">/trace 追踪"使用Obsidian"想法：<span class="yellow">4阶段 / 13个月</span></div>
+    </div>
+  </div>
+</body>
+</html>

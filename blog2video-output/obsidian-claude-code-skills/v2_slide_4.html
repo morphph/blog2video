@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Header */
+    .page-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 52px;
+    }
+    .page-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .page-badge {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 20px;
+      padding: 8px 22px;
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 600;
+    }
+
+    /* Workflow card */
+    .workflow-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 36px 36px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .wf-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+    .wf-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .wf-num.yellow {
+      background: rgba(245, 158, 11, 0.2);
+      color: #F59E0B;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .wf-num.green {
+      background: rgba(16, 185, 129, 0.2);
+      color: #10B981;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+    .wf-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    /* Output format block */
+    .output-block {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 18px;
+    }
+    .output-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .output-row:last-child { border-bottom: none; }
+    .output-key {
+      font-size: 22px;
+      color: #6B7280;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      min-width: 80px;
+      flex-shrink: 0;
+    }
+    .output-val {
+      font-size: 22px;
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    .wf-desc {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.65;
+    }
+    .wf-desc .highlight { color: #FFFFFF; font-weight: 600; }
+    .wf-desc .green { color: #10B981; font-weight: 600; }
+    .wf-desc .yellow { color: #F59E0B; font-weight: 600; }
+    .wf-desc .purple { color: #8B5CF6; font-weight: 600; }
+
+    /* Result tag */
+    .result-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 600;
+    }
+
+    /* Divider */
+    .card-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .card-divider .line {
+      flex: 1;
+      height: 1px;
+      background: rgba(245, 158, 11, 0.15);
+    }
+    .card-divider .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.4);
+    }
+
+    /* Daily note items */
+    .daily-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .daily-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 26px;
+      color: #B0B0CC;
+    }
+    .daily-item .dot-icon {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      flex-shrink: 0;
+    }
+    .daily-item .green { color: #10B981; font-weight: 600; }
+    .daily-item .purple { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="page-header">
+      <div class="page-title">社区真实 Workflow</div>
+      <div class="page-badge">2 / 2</div>
+    </div>
+
+    <!-- Workflow 3: Meeting notes -->
+    <div class="workflow-card">
+      <div class="wf-header">
+        <div class="wf-num yellow">3</div>
+        <div class="wf-title">会议记录结构化</div>
+      </div>
+      <div class="output-block">
+        <div class="output-row">
+          <div class="output-key">文件名</div>
+          <div class="output-val">YYYY-MM-DD-topic.md</div>
+        </div>
+        <div class="output-row">
+          <div class="output-key">存储</div>
+          <div class="output-val">/meetings/</div>
+        </div>
+        <div class="output-row">
+          <div class="output-key">结构</div>
+          <div class="output-val">议程 · 讨论 · 行动项</div>
+        </div>
+      </div>
+      <div class="wf-desc">
+        开完会，散装要点丢给 Claude，<span class="highlight">按你设定的格式整理好</span>，一套出来。
+      </div>
+      <div class="result-tag">零散笔记 → 标准化归档</div>
+    </div>
+
+    <div class="card-divider">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Workflow 4: Daily notes -->
+    <div class="workflow-card">
+      <div class="wf-header">
+        <div class="wf-num green">4</div>
+        <div class="wf-title">每日笔记生成</div>
+      </div>
+      <div class="daily-items">
+        <div class="daily-item">
+          <div class="dot-icon"></div>
+          <span>口述一天 → Claude 转成<span class="green">完整日记</span></span>
+        </div>
+        <div class="daily-item">
+          <div class="dot-icon"></div>
+          <span>实体自动加<span class="purple">双链</span></span>
+        </div>
+        <div class="daily-item">
+          <div class="dot-icon"></div>
+          <span>任务<span class="green">单独提取</span>，想法归入对应项目</span>
+        </div>
+      </div>
+      <div class="wf-desc">
+        从口述到结构化笔记，<span class="highlight">一次完成</span>，无需二次整理。
+      </div>
+      <div class="result-tag">口述 → 双链日记，全自动</div>
+    </div>
+  </div>
+</body>
+</html>

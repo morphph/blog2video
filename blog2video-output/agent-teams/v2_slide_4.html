@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 44px;
+    }
+    .title .accent {
+      color: #10B981;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+    }
+    .check-item:nth-child(1) { border-left: 4px solid #EF4444; }
+    .check-item:nth-child(2) { border-left: 4px solid #8B5CF6; }
+    .check-item:nth-child(3) { border-left: 4px solid #F59E0B; }
+    .check-item:nth-child(4) { border-left: 4px solid #3B82F6; }
+    .check-item:nth-child(5) { border-left: 4px solid #10B981; }
+    .check-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .check-item:nth-child(1) .check-num { background: rgba(239, 68, 68, 0.15); color: #EF4444; }
+    .check-item:nth-child(2) .check-num { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+    .check-item:nth-child(3) .check-num { background: rgba(245, 158, 11, 0.15); color: #F59E0B; }
+    .check-item:nth-child(4) .check-num { background: rgba(59, 130, 246, 0.15); color: #3B82F6; }
+    .check-item:nth-child(5) .check-num { background: rgba(16, 185, 129, 0.15); color: #10B981; }
+    .check-content {
+      flex: 1;
+    }
+    .check-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .check-item:nth-child(1) .check-title { color: #EF4444; }
+    .check-item:nth-child(2) .check-title { color: #8B5CF6; }
+    .check-item:nth-child(3) .check-title { color: #F59E0B; }
+    .check-item:nth-child(4) .check-title { color: #3B82F6; }
+    .check-item:nth-child(5) .check-title { color: #10B981; }
+    .check-desc {
+      font-size: 21px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .check-desc strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title"><span class="accent">最佳实践</span> Checklist</div>
+
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-num">1</div>
+        <div class="check-content">
+          <div class="check-title">给队友充足上下文</div>
+          <div class="check-desc">队友<strong>不继承</strong> Lead 对话历史</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">2</div>
+        <div class="check-content">
+          <div class="check-title">团队规模 3-5 人</div>
+          <div class="check-desc">太多反而协调成本高</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">3</div>
+        <div class="check-content">
+          <div class="check-title">每人 5-6 个任务</div>
+          <div class="check-desc">太少浪费，太多超负荷</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">4</div>
+        <div class="check-content">
+          <div class="check-title">避免文件冲突</div>
+          <div class="check-desc">每人负责<strong>不同文件</strong></div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-num">5</div>
+        <div class="check-content">
+          <div class="check-title">先调研再动手</div>
+          <div class="check-desc">先读代码、跑测试，再改</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

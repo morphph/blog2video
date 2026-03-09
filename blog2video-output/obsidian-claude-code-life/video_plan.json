@@ -1,0 +1,165 @@
+{
+  "blog_metadata": {
+    "title": "How I Use Obsidian + Claude Code to Run My Life",
+    "title_zh": "用Obsidian+Claude Code管理人生",
+    "word_count": 9591,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "obsidian-claude-code-life"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "9591词的长播客访谈包含3个可独立成篇的核心主题：(1)为什么Obsidian+Claude Code的组合能解决AI上下文问题；(2)10+个自定义命令的实战演示，展示AI如何成为思维伙伴；(3)从反思到行动的哲学转变，以及meta-prompting让AI自己设计命令的高阶玩法。",
+    "episode_transitions": [
+      {
+        "between_videos": [1, 2],
+        "preview_at_end_of_video_1": "下期我们来看，他用这套系统造了10多个命令，其中一个能挖出你自己都没意识到的想法。",
+        "recap_at_start_of_video_2": "上期我们发现，给AI喂一个文件就能省掉每次重复解释的时间——但关键不是文件，是文件之间的关系网。"
+      },
+      {
+        "between_videos": [2, 3],
+        "preview_at_end_of_video_2": "下期我们看最疯狂的部分——让AI自己给你设计新命令，而且比你自己想的还好用？",
+        "recap_at_start_of_video_3": "上期我们看到/trace命令用13个月的笔记画出了一个想法的完整进化史，/ideas命令甚至建议了该见的人。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Obsidian+Claude Code：AI终于能读懂你了？",
+        "hook_question": "你有没有这种体验——每次打开Claude新对话，又要从头解释一遍你是谁、在做什么项目？有个人说，他只需要打一个命令，AI就能瞬间理解他整个人生。",
+        "core_thesis": "Claude Code + Obsidian的核心价值不是AI能读你的文件，而是AI能理解文件之间的关系网——这让AI从一个健忘的工具变成了一个真正了解你的思维伙伴。",
+        "source_sections": ["What Is Claude Code?", "The Context Problem", "What Is Obsidian?", "The Vault and Backlinks", "Obsidian CLI and Claude Code Integration"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Vin打了一个/context命令，Claude Code就自动读取了他的项目描述、媒体公司信息、播客上下文、个人工作流——全部加载完毕，不需要解释一个字",
+        "emotion_arc": "开头：共鸣感——每次新对话都要重复解释，太烦了 → 中间：Obsidian不是普通笔记本，它有backlinks构成的关系网，这才是关键 → 结尾：恍然大悟——AI能看到关系图谱后，它开始发现你自己都没注意到的思维模式",
+        "must_include_details": [
+          "Claude Code是命令行Agent，能用自然语言控制电脑、创建和读取文件",
+          "Obsidian Vault不是普通文件夹——backlinks让文件形成关系网络，有知识图谱可视化",
+          "Obsidian CLI让Claude Code不仅能读文件，还能理解文件之间的互相引用关系",
+          "/context命令一次性加载README、项目描述、播客上下文、个人工作流等全部文件"
+        ],
+        "actionable_takeaway": "今天就下载Obsidian（免费），创建一个Vault，把你最重要的3个项目各写一个markdown文件，用双括号[[]]互相链接起来",
+        "key_concepts": [
+          {
+            "concept_en": "context problem",
+            "concept_zh": "上下文问题",
+            "analogy_direction": "每次见新医生都要从头讲一遍病史 vs 有一份完整病历直接递过去",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "vault vs folder",
+            "concept_zh": "知识库 vs 普通文件夹",
+            "analogy_direction": "普通文件夹像一堆散落的照片，Vault像一本有目录和交叉引用的百科全书",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "backlinks and knowledge graph",
+            "concept_zh": "双向链接与知识图谱",
+            "analogy_direction": "你脑子里想到一个人会自动联想到相关的事——backlinks就是给电脑装上这种联想能力",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Obsidian CLI integration",
+            "concept_zh": "Obsidian CLI集成",
+            "analogy_direction": "给Claude Code装了一副眼镜，不仅能看到每个文件，还能看到文件之间那些隐形的连线",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI的能力上限取决于你喂给它的上下文质量——而Obsidian的关系网络，是目前最高效的上下文投喂方式。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "10个AI命令，让Claude比你更了解你自己",
+        "hook_question": "有个人让AI扫描了他13个月的笔记，AI画出了一个想法从诞生到成熟的完整进化史——连他自己都没意识到这个想法已经酝酿了这么久。",
+        "core_thesis": "通过自定义slash命令，Obsidian+Claude Code不只是知识管理工具，而是一个能发现你思维盲区、追踪想法演变、跨领域连接灵感的AI思维伙伴。",
+        "source_sections": ["Custom Slash Commands Overview", "The /context Command", "The /today Command", "The /closeday, /ghost, /challenge, /emerge, /drift, and /trace Commands", "The /trace Demo", "The /connect Command Demo"],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "Vin的/trace命令追踪了他使用Obsidian的想法演变——AI从散落在不同文件里的笔记中还原出4个阶段：2024年12月Obsidian完全不在他的工具链里，到2026年1月进入'爆发式构建期'，跨度13个月",
+        "emotion_arc": "开头：震撼——AI能追踪一个想法13个月的进化史 → 中间：一个个命令拆解，从/today的日常管理到/ghost的声音克隆到/emerge的洞察挖掘，越来越深入 → 结尾：兴奋感——这不是在用工具，是在跟一个了解你所有笔记的思维伙伴对话",
+        "must_include_details": [
+          "/today命令：拉取日历、任务、iMessages、一周daily notes生成当日计划",
+          "/ghost命令：从vault建立你的声音画像，以你的口吻回答问题",
+          "/challenge命令：用vault历史记录压力测试你当前的信念，找出矛盾和认知偏移",
+          "/emerge命令：发现vault暗示但从未明确说出的想法",
+          "/drift命令：对比30-60天内你说要做的事vs实际做的事，发现你在回避什么",
+          "/trace演示：追踪'使用Obsidian'这个想法从2024.12到2026.1的4阶段演变",
+          "/connect演示：输入'filmmaking'和'worldbuilding'，AI找到两个领域之间的桥梁"
+        ],
+        "actionable_takeaway": "用Claude Code创建你的第一个自定义命令——让它读取你过去一周的笔记，总结你最关心的3件事，看看AI的总结和你自己感觉的是否一致",
+        "key_concepts": [
+          {
+            "concept_en": "slash commands as thinking tools",
+            "concept_zh": "斜杠命令作为思维工具",
+            "analogy_direction": "不是让AI帮你干活，是给自己装了10个不同角度的镜子——有的照过去，有的照盲区，有的照未来",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "idea tracing across time",
+            "concept_zh": "想法溯源",
+            "analogy_direction": "像考古学家从不同地层挖出碎片拼出完整的历史——AI从不同时间的笔记中拼出你一个想法的完整进化",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "cross-domain connection",
+            "concept_zh": "跨领域连接",
+            "analogy_direction": "你脑子里电影和创业是两个抽屉，AI把两个抽屉都倒出来发现里面有三样东西其实是一对的",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "drift detection",
+            "concept_zh": "意图漂移检测",
+            "analogy_direction": "像私人教练翻你的训练日志——你说要练腿，但记录显示你连续三周只练了上半身",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI最强大的用法不是替你写东西，而是读完你所有笔记后告诉你——你自己都没发现的思维模式。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "让AI自己给你造工具？Meta-prompting太离谱了",
+        "hook_question": "Vin让Claude Code扫描了他的整个vault，AI不仅给他列了该建的工具、该见的人、该写的文章——甚至自己设计了一个新命令，比他自己想的还贴合需求。",
+        "core_thesis": "Obsidian+Claude Code的终极玩法不是你设计命令让AI执行，而是让AI基于对你的深度理解来设计命令——从'你指挥AI'升级到'AI主动为你定制工具'。",
+        "source_sections": ["The /ideas Command Demo — From Reflection to Action", "Idea Generation Results", "Building Commands Through Meta-Prompting", "Agent Writing vs. Personal Writing", "Reflection as a Practice", "Files as Perfect Memory", "A Fundamental Shift in Human-Computer Relationships"],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "/ideas命令跑了5分钟扫描整个vault后，不仅生成了该建的工具清单和该写的文章，还建议了具体该见的人——包括Obsidian的CEO Steph Ango，话题是'vault作为一个空间'",
+        "emotion_arc": "开头：震撼——AI花5分钟读完整个vault，输出了一份包含工具、文章、人脉的完整行动报告 → 中间：更震撼——meta-prompting让AI自己设计命令，而且设计出来的/graduate命令精准到用了只有Vin自己才懂的术语 → 结尾：哲学升华——markdown文件是完美记忆，我们正在见证人与电脑关系的根本性转变",
+        "must_include_details": [
+          "/ideas命令读取了daily notes、日历、vault结构，跑了5分钟才完成",
+          "输出包含：该建的工具（/graduate命令）、该用的工具、该实施的系统、该调查的主题、该写的文章、该见的人",
+          "meta-prompting：不是'帮我建个命令'，而是'根据你对我vault的理解，建议我应该用什么命令来提升自己'",
+          "AI设计的/graduate命令：扫描daily notes中的idea标签，提示你决定是否升级为独立笔记",
+          "Vin的铁律：不让AI往vault里写文件——vault必须100%是自己的想法，不是AI的想法",
+          "Greg的金句：markdown文件就是完美记忆——人的记忆会扭曲，文件不会"
+        ],
+        "actionable_takeaway": "打开Claude Code，把你现有的一个自定义命令（或workflow描述）喂给它，然后问：'基于这个命令的风格，你觉得我还需要什么命令？'——让AI帮你设计下一个命令",
+        "key_concepts": [
+          {
+            "concept_en": "meta-prompting",
+            "concept_zh": "元提示",
+            "analogy_direction": "不是教AI做一道菜，是让AI看了你的厨房和冰箱后告诉你——你应该学什么菜",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "from reflection to action pipeline",
+            "concept_zh": "从反思到行动的管道",
+            "analogy_direction": "日记本里的想法不再是死的文字，而是会自动冒出来说'该把我变成一个项目了'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "strict separation of human vs AI writing",
+            "concept_zh": "人写的vs AI写的严格分离",
+            "analogy_direction": "vault是你的大脑扫描——如果AI也往里面写东西，扫描结果就被污染了，AI找到的模式可能是它自己编的",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "files as perfect memory",
+            "concept_zh": "文件即完美记忆",
+            "analogy_direction": "人的记忆像传话游戏越传越走样，markdown文件像录像带——10年后回放还是原样",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "不要只用AI执行你的想法——让AI读懂你之后，主动告诉你该做什么、该建什么、该见谁。"
+      }
+    ]
+  }
+}

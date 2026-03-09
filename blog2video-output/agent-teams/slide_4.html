@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 44px;
+      line-height: 1.3;
+    }
+    .takeaways {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .takeaway {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      text-align: left;
+    }
+    .takeaway .num {
+      font-size: 36px;
+      font-weight: 800;
+      color: #8B5CF6;
+      flex-shrink: 0;
+      line-height: 1.2;
+      min-width: 44px;
+      text-align: center;
+    }
+    .takeaway .text {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .takeaway .text .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .takeaway .text .green {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .takeaway .text .yellow {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .cta {
+      width: 100%;
+      background: linear-gradient(135deg, #1A1A2E 0%, #1E1B3A 100%);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 0 12px 12px 0;
+      padding: 28px 28px;
+      text-align: left;
+    }
+    .cta .cta-label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .cta .cta-text {
+      font-size: 27px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .cta .cta-text .muted {
+      color: #B0B0CC;
+      font-weight: 400;
+    }
+    .outro {
+      margin-top: 36px;
+      font-size: 24px;
+      color: #6B7280;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="content">
+      <div class="section-label">SUMMARY</div>
+      <div class="title">三句话总结</div>
+
+      <div class="takeaways">
+        <div class="takeaway">
+          <div class="num">01</div>
+          <div class="text">Agent Teams 是 Subagent 的<span class="green">升级版</span></div>
+        </div>
+        <div class="takeaway">
+          <div class="num">02</div>
+          <div class="text">多个AI<span class="em">互相讨论</span>，比单打独斗高效</div>
+        </div>
+        <div class="takeaway">
+          <div class="num">03</div>
+          <div class="text">权衡 <span class="yellow">Token 成本</span>，简单任务不必上团队</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="cta-label">现在可以做的一件事</div>
+        <div class="cta-text">
+          看看手上的项目<br>
+          <span class="muted">有没有 3 个以上可同时推进的独立模块？</span><br>
+          如果有，试试 Agent Teams
+        </div>
+      </div>
+
+      <div class="outro">AI精读 — 精读一篇，胜过刷一百条</div>
+    </div>
+  </div>
+</body>
+</html>

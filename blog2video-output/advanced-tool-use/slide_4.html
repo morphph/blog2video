@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .main-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .checklist-item {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+    }
+    .check-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.2);
+      border: 2px solid #10B981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .check-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .item-content {
+      flex: 1;
+    }
+    .item-title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .item-title .keyword {
+      color: #10B981;
+    }
+    .item-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .item-desc .code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 22px;
+      background: rgba(245, 158, 11, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .note {
+      width: 100%;
+      margin-top: 32px;
+      padding: 20px 24px;
+      border-left: 4px solid #8B5CF6;
+      background: rgba(139, 92, 246, 0.06);
+      border-radius: 0 8px 8px 0;
+      font-size: 26px;
+      color: #B0B0CC;
+      text-align: left;
+    }
+    .note .em {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">CHECKLIST</div>
+    <div class="main-title">实操清单</div>
+
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="check-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="item-content">
+          <div class="item-title">超过 10 个工具 → 开启 <span class="keyword">Tool Search</span></div>
+          <div class="item-desc">低频工具标记 <span class="code">defer_loading: true</span></div>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="check-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="item-content">
+          <div class="item-title">频繁连续调用 → 开启 <span class="keyword">Programmatic Calling</span></div>
+          <div class="item-desc">让模型用代码编排批量执行</div>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="check-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="item-content">
+          <div class="item-title">参数经常填错 → 补 <span class="keyword">1-5 个示例</span></div>
+          <div class="item-desc">真实调用示例，数量不用多</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="em">三招可以叠加使用</span>，不是非此即彼
+    </div>
+  </div>
+</body>
+</html>

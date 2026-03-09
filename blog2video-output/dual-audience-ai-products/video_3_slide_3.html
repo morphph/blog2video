@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .title .num {
+      color: #F59E0B;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+      font-weight: 500;
+    }
+
+    .timeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 40px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, #EF4444, #F59E0B, #10B981);
+      border-radius: 2px;
+    }
+
+    .phase {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      position: relative;
+    }
+
+    .phase-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 28px;
+      margin-left: 29px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .phase.p1 .phase-dot { background: #EF4444; box-shadow: 0 0 12px rgba(239, 68, 68, 0.5); }
+    .phase.p2 .phase-dot { background: #F59E0B; box-shadow: 0 0 12px rgba(245, 158, 11, 0.5); }
+    .phase.p3 .phase-dot { background: #10B981; box-shadow: 0 0 12px rgba(16, 185, 129, 0.5); }
+
+    .phase-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: left;
+    }
+
+    .phase.p1 .phase-card { border-left: 4px solid #EF4444; }
+    .phase.p2 .phase-card { border-left: 4px solid #F59E0B; }
+    .phase.p3 .phase-card { border-left: 4px solid #10B981; }
+
+    .phase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .phase-name {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .phase.p1 .phase-name { color: #EF4444; }
+    .phase.p2 .phase-name { color: #F59E0B; }
+    .phase.p3 .phase-name { color: #10B981; }
+
+    .phase-weeks {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .phase.p1 .phase-weeks { color: #EF4444; }
+    .phase.p2 .phase-weeks { color: #F59E0B; }
+    .phase.p3 .phase-weeks { color: #10B981; }
+
+    .phase-metaphor {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    .phase-tasks {
+      list-style: none;
+    }
+
+    .phase-tasks li {
+      font-size: 22px;
+      color: #FFFFFF;
+      padding: 6px 0;
+      line-height: 1.5;
+    }
+
+    .phase-tasks li::before {
+      content: '>';
+      margin-right: 10px;
+      font-weight: 800;
+    }
+
+    .phase.p1 .phase-tasks li::before { color: #EF4444; }
+    .phase.p2 .phase-tasks li::before { color: #F59E0B; }
+    .phase.p3 .phase-tasks li::before { color: #10B981; }
+
+    .phase-tasks li .dim {
+      color: #6B7280;
+      font-size: 19px;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="title"><span class="num">12</span>周落地框架</div>
+  <div class="subtitle">三个阶段，从地基到精装修</div>
+
+  <div class="timeline">
+
+    <div class="phase p1">
+      <div class="phase-dot"></div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <div class="phase-name">&#127959; API-First 打地基</div>
+          <div class="phase-weeks">W1-4</div>
+        </div>
+        <div class="phase-metaphor">"先把地基打牢"</div>
+        <ul class="phase-tasks">
+          <li>审计现有 API 覆盖率</li>
+          <li>补齐缺失端点 <span class="dim">CRUD 全覆盖</span></li>
+          <li>统一错误码 + 可操作提示</li>
+          <li>发布 OpenAPI Spec</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase p2">
+      <div class="phase-dot"></div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <div class="phase-name">&#128682; Agent 接入层</div>
+          <div class="phase-weeks">W5-8</div>
+        </div>
+        <div class="phase-metaphor">"装门窗，让 Agent 进得来"</div>
+        <ul class="phase-tasks">
+          <li>搭建 MCP Server</li>
+          <li>编写 llms.txt <span class="dim">Agent 版 robots.txt</span></li>
+          <li>创建 Agent Toolkit / SDK</li>
+          <li>端到端 Agent 测试</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase p3">
+      <div class="phase-dot"></div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <div class="phase-name">&#9889; AX 优化精装修</div>
+          <div class="phase-weeks">W9-12</div>
+        </div>
+        <div class="phase-metaphor">"精装修，体验拉满"</div>
+        <ul class="phase-tasks">
+          <li>Agent-to-Agent (A2A) 协议</li>
+          <li>Token / 延迟监控面板</li>
+          <li>Rate limit 智能降级</li>
+          <li>Agent 体验评分体系</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

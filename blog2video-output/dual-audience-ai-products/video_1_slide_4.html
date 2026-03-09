@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+
+    .slide-title {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+
+    .slide-title .accent {
+      color: #F59E0B;
+    }
+
+    .slide-subtitle {
+      font-size: 24px;
+      color: #6B7280;
+      margin-bottom: 44px;
+    }
+
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+
+    .check-icon.api     { background: rgba(239, 68, 68, 0.15); }
+    .check-icon.compete { background: rgba(139, 92, 246, 0.15); }
+    .check-icon.customer{ background: rgba(16, 185, 129, 0.15); }
+    .check-icon.trend   { background: rgba(59, 130, 246, 0.15); }
+
+    .check-content {
+      flex: 1;
+    }
+
+    .check-label {
+      font-size: 27px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .check-desc {
+      font-size: 22px;
+      color: #6B7280;
+      line-height: 1.4;
+    }
+
+    .check-number {
+      flex-shrink: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #6B7280;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #6B7280;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .bottom-note {
+      margin-top: 40px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .bottom-note .note-text {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title"><span class="accent">四个信号</span> 自检清单</div>
+    <div class="slide-subtitle">命中 2 条以上 = 需要 B2A 策略</div>
+
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-icon api">&#x1F50C;</div>
+        <div class="check-content">
+          <div class="check-label">API 出现非人类访问模式</div>
+          <div class="check-desc">请求频率极高、无界面交互</div>
+        </div>
+        <div class="check-number">1</div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon compete">&#x2694;&#xFE0F;</div>
+        <div class="check-content">
+          <div class="check-label">竞品已推出 Agent 专用接口</div>
+          <div class="check-desc">MCP Server 或专属 Agent API</div>
+        </div>
+        <div class="check-number">2</div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon customer">&#x1F4AC;</div>
+        <div class="check-content">
+          <div class="check-label">客户询问 AI 可调用性</div>
+          <div class="check-desc">"你们产品能被 AI 调用吗？"</div>
+        </div>
+        <div class="check-number">3</div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon trend">&#x1F4C8;</div>
+        <div class="check-content">
+          <div class="check-label">赛道出现在 YC 高频方向</div>
+          <div class="check-desc">YC 最新批次的热门方向</div>
+        </div>
+        <div class="check-number">4</div>
+      </div>
+    </div>
+
+    <div class="bottom-note">
+      <div class="note-text">&#x26A0;&#xFE0F; 不知道 Agent 请求占比？第一步：去查</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "video_number": 2,
+  "title": "UX→DX→AX：你的产品要讨好的不只是人类了！三大协议一文搞懂",
+  "slides": [
+    {"slide_number": 1, "file": "video_2_slide_1.html", "estimated_duration_seconds": 25},
+    {"slide_number": 2, "file": "video_2_slide_2.html", "estimated_duration_seconds": 95},
+    {"slide_number": 3, "file": "video_2_slide_3.html", "estimated_duration_seconds": 150},
+    {"slide_number": 4, "file": "video_2_slide_4.html", "estimated_duration_seconds": 45},
+    {"slide_number": 5, "file": "video_2_slide_5.html", "estimated_duration_seconds": 45}
+  ],
+  "cover_photo": "video_2_cover_photo.html"
+}

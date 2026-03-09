@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .concept-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .concept-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .concept-main {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .concept-main .hl {
+      color: #F59E0B;
+    }
+    .analogy-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 36px;
+      width: 100%;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .analogy-label {
+      font-size: 20px;
+      color: #10B981;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .analogy-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .analogy-text em {
+      font-style: normal;
+      color: #10B981;
+      font-weight: 700;
+    }
+    .bottom-pills {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .pill {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 20px;
+      padding: 10px 22px;
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .pill .icon {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Skill 是什么？<br>给 Claude 的<span class="accent">"入职手册"</span></div>
+
+    <div class="concept-card">
+      <div class="concept-label">本质</div>
+      <div class="concept-main">
+        一个文件夹 + 一个 <span class="hl">SKILL.md</span><br>
+        没有 SDK / 编译 / 部署
+      </div>
+    </div>
+
+    <div class="analogy-card">
+      <div class="analogy-label">类比理解</div>
+      <div class="analogy-text">
+        新员工入职 → 口头教一遍？<br>
+        聪明做法 → 写<em>入职手册</em><br>
+        Skill = Claude 的入职手册
+      </div>
+    </div>
+
+    <div class="bottom-pills">
+      <div class="pill"><span class="icon">&#9993;</span> Claude.ai</div>
+      <div class="pill"><span class="icon">&#9000;</span> Claude Code</div>
+      <div class="pill"><span class="icon">&#9881;</span> API</div>
+    </div>
+  </div>
+</body>
+</html>

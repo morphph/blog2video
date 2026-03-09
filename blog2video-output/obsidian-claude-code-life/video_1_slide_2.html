@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+
+    .slide-title .accent { color: #8B5CF6; }
+
+    .analogy-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+
+    .analogy-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+    }
+
+    .analogy-card.before { border-left: 4px solid #EF4444; }
+    .analogy-card.after { border-left: 4px solid #10B981; }
+
+    .analogy-label {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .analogy-label.red { color: #EF4444; }
+    .analogy-label.green { color: #10B981; }
+
+    .analogy-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+
+    .analogy-text strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .key-insight {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+
+    .key-insight .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .key-insight .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .key-insight .text .accent {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">CORE PRINCIPLE</div>
+    <div class="slide-title">Obsidian 不是笔记本<br>而是<span class="accent">知识图谱</span></div>
+    <div class="analogy-container">
+      <div class="analogy-card before">
+        <div class="analogy-label red">普通文件夹</div>
+        <div class="analogy-text">一堆<strong>散落的照片</strong><br>翻来翻去只是零碎的回忆</div>
+      </div>
+      <div class="analogy-card after">
+        <div class="analogy-label green">Obsidian Vault</div>
+        <div class="analogy-text">按时间线、人物关系整理的<br><strong>一本相册</strong>，翻开就是完整故事</div>
+      </div>
+    </div>
+    <div class="key-insight">
+      <div class="icon">&#x1F453;</div>
+      <div class="text">Obsidian CLI 给 AI 装了<span class="accent">一副特殊的眼镜</span><br>能看到文件间的隐形连线</div>
+    </div>
+  </div>
+</body>
+</html>

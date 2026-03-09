@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    /* Radial glow behind title */
+    .glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(139, 92, 246, 0.12) 0%, rgba(139, 92, 246, 0.03) 50%, transparent 70%);
+      pointer-events: none;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 500;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .main-title {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 56px;
+      max-width: 920px;
+      position: relative;
+      z-index: 1;
+    }
+    .main-title .highlight-red {
+      color: #EF4444;
+    }
+    .main-title .highlight-yellow {
+      color: #F59E0B;
+    }
+    .source-tag {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 28px;
+      padding: 14px 32px;
+      font-size: 22px;
+      color: #B0B0CC;
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="series-tag">AI精读 &middot; Claude Skills</div>
+    <div class="main-title">
+      Claude官方教你造<br><span class="highlight-red">"技能包"</span>：<br>再也不用<span class="highlight-yellow">重复教</span><br>AI做事了！
+    </div>
+    <div class="source-tag">Anthropic《The Complete Guide to Building Skills for Claude》</div>
+  </div>
+</body>
+</html>

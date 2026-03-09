@@ -1,0 +1,262 @@
+[
+  {
+    "text": "知道了 Agent Teams 很强，但具体怎么用？怎么分配任务？怎么避免队友打架？今天手把手教你从零搭建一个AI开发团队。",
+    "pronounce_text": "知道了Agent Teams很强，但具体怎么用？怎么分配任务？怎么避免队友打架？今天手ㄅㄚˇㄕㄡˇ教你从零搭建一个AI开发团队。",
+    "time_begin": 0,
+    "time_end": 9280.861678004536,
+    "text_begin": 0,
+    "text_end": 62,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 64
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Claude Code 官方文档中关于 Agent Teams 实战操作的部分。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Claude Code官方文档中关于Agent Teams实战操作的部分。",
+    "time_begin": 9900,
+    "time_end": 23743.58276643991,
+    "text_begin": 62,
+    "text_end": 161,
+    "pronounce_text_begin": 64,
+    "pronounce_text_end": 154
+  },
+  {
+    "text": "首先，怎么启动？设置一个环境变量：CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS。在 settings.json 里加上，或者终端里 export 都行。",
+    "pronounce_text": "首先，怎么启动？设置一个环境变量：CLAUDE，CODE，EXPERIMENTAL，AGENT，TEAMS。在settings.json里加上，或者终端里export都行。",
+    "time_begin": 25380,
+    "time_end": 37145.39682539683,
+    "text_begin": 161,
+    "text_end": 251,
+    "pronounce_text_begin": 154,
+    "pronounce_text_end": 240
+  },
+  {
+    "text": "然后，直接用自然语言告诉 Claude：\"创建一个4人团队，重构这几个模块，每个队友用 Sonnet。\" Claude 就会自动建团队、分任务、协调执行。不用写配置文件。",
+    "pronounce_text": "然后，直接用自然语言告诉Claude：\"创建一个四人团队，重构这几个模块，每个队友用Sonnet。\"Claude就会自动建团队、分任务、协调执行。不用写配置文件。",
+    "time_begin": 37764,
+    "time_end": 50272.43537414966,
+    "text_begin": 251,
+    "text_end": 336,
+    "pronounce_text_begin": 240,
+    "pronounce_text_end": 321
+  },
+  {
+    "text": "底层架构长什么样？想象一间办公室。Team Lead 是项目经理，坐在中间。每个 Teammate 是独立工位上的工程师。墙上有一块共享看板，就是 Shared Task List，所有人都能看到待办、领任务、标完成。",
+    "pronounce_text": "底层架构长什么样？想象一间办公室。Team Lead是项目经理，坐在中间。每个Teammate是独立工位上的工程师。墙上有一块共享看板，就是Shared Task List，所有人都能看到待办、领任务、标完成。",
+    "time_begin": 50904,
+    "time_end": 65606.72108843537,
+    "text_begin": 336,
+    "text_end": 445,
+    "pronounce_text_begin": 321,
+    "pronounce_text_end": 426
+  },
+  {
+    "text": "工位之间还有即时通讯，就是 Mailbox，队友可以直接发消息讨论。",
+    "pronounce_text": "工位之间还有即时通讯，就是Mailbox，队友可以直接发消息讨论。",
+    "time_begin": 65772,
+    "time_end": 70339.21088435374,
+    "text_begin": 445,
+    "text_end": 479,
+    "pronounce_text_begin": 426,
+    "pronounce_text_end": 459
+  },
+  {
+    "text": "这里有个值得一提的细节。团队配置文件存在本地的 ~/.claude/teams/ 目录下，任务列表存在 ~/.claude/tasks/ 目录下。",
+    "pronounce_text": "这里有个值得一提的细节。团队配置文件存在本地的，.claude，teams，目录下，任务列表存在，.claude，tasks，目录下。",
+    "time_begin": 70956,
+    "time_end": 79830.51247165533,
+    "text_begin": 479,
+    "text_end": 552,
+    "pronounce_text_begin": 459,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "这意味着你可以直接打开文件看团队状态，甚至手动编辑任务列表来调试。",
+    "pronounce_text": "这意味着你可以直接打开文件看团队状态，甚至手动编辑任务列表来调试。",
+    "time_begin": 79992,
+    "time_end": 85186.14965986395,
+    "text_begin": 552,
+    "text_end": 585,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 559
+  },
+  {
+    "text": "团队启动了，怎么看它们在干什么？这就涉及两种显示模式。",
+    "pronounce_text": "团队启动了，怎么看它们在干什么？这就涉及两种显示模式。",
+    "time_begin": 86832,
+    "time_end": 91619.80045351473,
+    "text_begin": 585,
+    "text_end": 612,
+    "pronounce_text_begin": 559,
+    "pronounce_text_end": 586
+  },
+  {
+    "text": "第一种叫 In-process 模式。所有队友都在你当前这一个终端里运行。用 Shift 加方向键下 来切换查看不同队友的工作状态。优点是什么终端都能用。缺点是同一时间只能看一个队友。",
+    "pronounce_text": "第一种叫In-process模式。所有队友都在你当前这一个终端里运行。用Shift加方向键下来切换查看不同队友的工作状态。优点是什么终端都能用。缺点是同一时间只能看一个队友。",
+    "time_begin": 92232,
+    "time_end": 105889.8231292517,
+    "text_begin": 612,
+    "text_end": 704,
+    "pronounce_text_begin": 586,
+    "pronounce_text_end": 673
+  },
+  {
+    "text": "第二种叫 Split Panes 模式。像监控室的多屏幕墙一样，每个队友占一个独立窗口。你同时看到所有人的进度，点哪个窗口就跟哪个队友说话。但这个模式需要 tmux 或者 iTerm2 的支持。",
+    "pronounce_text": "第二种叫Split Panes模式。像监控室的多屏幕墙一样，每个队友占一个独立窗口。你同时看到所有人的进度，点哪个窗口就跟哪个队友说话。但这个模式需要tmux或者iTerm二的支持。",
+    "time_begin": 106524,
+    "time_end": 119705.81405895692,
+    "text_begin": 704,
+    "text_end": 801,
+    "pronounce_text_begin": 673,
+    "pronounce_text_end": 764
+  },
+  {
+    "text": "默认是自动选择。如果你在 tmux 里，就用 Split Panes。否则就用 In-process。",
+    "pronounce_text": "默认是自动选择。如果你在tmux里，就用Split Panes。否则就用In-process。",
+    "time_begin": 120312,
+    "time_end": 125808.00907029478,
+    "text_begin": 801,
+    "text_end": 852,
+    "pronounce_text_begin": 764,
+    "pronounce_text_end": 811
+  },
+  {
+    "text": "再说控制操作。你可以要求队友提交方案先审批再动手。随时让某个队友关闭。任务完成后，让 Lead 说\"清理团队\"来统一收尾。",
+    "pronounce_text": "再说控制操作。你可以要求队友提交方案先审批再动手。随时让某个队友关闭。任务完成后，让Lead说\"清理团队\"来统一收尾。",
+    "time_begin": 126432,
+    "time_end": 136862.24943310657,
+    "text_begin": 852,
+    "text_end": 913,
+    "pronounce_text_begin": 811,
+    "pronounce_text_end": 870
+  },
+  {
+    "text": "还有一个高阶功能：质量门禁。你可以通过 TeammateIdle Hook 和 TaskCompleted Hook 设置自动检查。就像工厂流水线上的质检环节，每完成一道工序，自动跑一轮检查。",
+    "pronounce_text": "还有一个高阶功能：质量门禁。你可以通过TeammateIdle Hook和TaskCompleted Hook设置自动检查。就像工厂流水线上的质检环节，每完成一道工序，自动跑一轮检查。",
+    "time_begin": 137484,
+    "time_end": 149655.74603174604,
+    "text_begin": 913,
+    "text_end": 1009,
+    "pronounce_text_begin": 870,
+    "pronounce_text_end": 962
+  },
+  {
+    "text": "不合格就打回重做，确保最终产出的质量。",
+    "pronounce_text": "不合格就打回重做，确保最终产出的质量。",
+    "time_begin": 149855.74603174604,
+    "time_end": 152797.56009070296,
+    "text_begin": 1009,
+    "text_end": 1028,
+    "pronounce_text_begin": 962,
+    "pronounce_text_end": 981
+  },
+  {
+    "text": "现在来聊最佳实践。这些都是官方踩过坑之后总结出来的。",
+    "pronounce_text": "现在来聊最佳实践。这些都是官方踩过坑之后总结出来的。",
+    "time_begin": 154440,
+    "time_end": 159158.14058956917,
+    "text_begin": 1028,
+    "text_end": 1054,
+    "pronounce_text_begin": 981,
+    "pronounce_text_end": 1007
+  },
+  {
+    "text": "第一条，给队友充足的上下文。这一点最重要。队友不会继承 Team Lead 的对话历史。你跟 Lead 聊了半天的需求背景，队友一个字都看不到。所以分配任务时，必须把相关信息写清楚。",
+    "pronounce_text": "第一条，给队友充足的上下文。这一点最重要。队友不会继承Team Lead的对话历史。你跟Lead聊了半天的需求背景，队友一个字都看不到。所以分配任务时，必须把相关信息写清楚。",
+    "time_begin": 159768,
+    "time_end": 172462.19501133787,
+    "text_begin": 1054,
+    "text_end": 1145,
+    "pronounce_text_begin": 1007,
+    "pronounce_text_end": 1094
+  },
+  {
+    "text": "第二条，团队规模控制在三到五个人。太多了反而协调成本高，队友之间容易冲突。",
+    "pronounce_text": "第二条，团队规模控制在三到五个人。太多了反而协调成本高，队友之间容易冲突。",
+    "time_begin": 173088,
+    "time_end": 180476.43537414965,
+    "text_begin": 1145,
+    "text_end": 1182,
+    "pronounce_text_begin": 1094,
+    "pronounce_text_end": 1131
+  },
+  {
+    "text": "第三条，每个队友分配五到六个任务。太少了浪费，太多了容易超负荷。",
+    "pronounce_text": "第三条，每个队友分配五到六个任务。太少了浪费，太多了容易超负荷。",
+    "time_begin": 181116,
+    "time_end": 186867.42857142858,
+    "text_begin": 1182,
+    "text_end": 1214,
+    "pronounce_text_begin": 1131,
+    "pronounce_text_end": 1163
+  },
+  {
+    "text": "第四条，避免文件冲突。每个队友负责不同的文件。虽然有文件锁，但最好从源头避免两人改同一个文件。",
+    "pronounce_text": "第四条，避免文件冲突。每个队友负责不同的文件。虽然有文件锁，但最好从源头避免两人改同一个文件。",
+    "time_begin": 187488,
+    "time_end": 196025.8231292517,
+    "text_begin": 1214,
+    "text_end": 1261,
+    "pronounce_text_begin": 1163,
+    "pronounce_text_end": 1210
+  },
+  {
+    "text": "第五条，先从调研任务开始。让队友先读代码、跑测试，熟悉环境再动手改。",
+    "pronounce_text": "第五条，先从调研任务开始。让队友先读代码、跑测试，熟悉环境再动手改。",
+    "time_begin": 196632,
+    "time_end": 203428.32653061225,
+    "text_begin": 1261,
+    "text_end": 1295,
+    "pronounce_text_begin": 1210,
+    "pronounce_text_end": 1244
+  },
+  {
+    "text": "最后说说当前的限制。不支持嵌套团队，你不能让一个队友再组建自己的小团队。每个会话只能有一个团队。Lead 角色一旦确定就不能换人。",
+    "pronounce_text": "最后说说当前的限制。不支持嵌套团队，你不能让一个队友再组建自己的小团队。每个会话只能有一个团队。Lead角色一旦确定就不能换人。",
+    "time_begin": 204048,
+    "time_end": 214222.82993197278,
+    "text_begin": 1295,
+    "text_end": 1360,
+    "pronounce_text_begin": 1244,
+    "pronounce_text_end": 1308
+  },
+  {
+    "text": "In-process 模式下队友断了不能恢复。知道这些，你就不会踩坑。",
+    "pronounce_text": "In-process模式下队友断了不能恢复。知道这些，你就不会踩坑。",
+    "time_begin": 214422.82993197278,
+    "time_end": 219442.82993197278,
+    "text_begin": 1360,
+    "text_end": 1395,
+    "pronounce_text_begin": 1308,
+    "pronounce_text_end": 1342
+  },
+  {
+    "text": "总结一下。Agent Teams 的核心心法就四句话。给队友充足上下文。控制团队在三到五人。合理拆分任务粒度。善用质量门禁。像管理真实团队一样管理AI团队。",
+    "pronounce_text": "总结一下。Agent Teams的核心心法就四句话。给队友充足上下文。控制团队在三到五人。合理拆分任务粒度。善用质量门禁。像管理真实团队一样管理AI团队。",
+    "time_begin": 221076,
+    "time_end": 234548.0634920635,
+    "text_begin": 1395,
+    "text_end": 1473,
+    "pronounce_text_begin": 1342,
+    "pronounce_text_end": 1419
+  },
+  {
+    "text": "你现在就可以做一件事。打开终端，设置 CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS 环境变量，用自然语言描述一个三人团队，亲自体验一次 Agent Teams。",
+    "pronounce_text": "你现在就可以做一件事。打开终端，设置CLAUDE，CODE，EXPERIMENTAL，AGENT，TEAMS环境变量，用自然语言描述一个三人团队，亲自体验一次Agent Teams。",
+    "time_begin": 235188,
+    "time_end": 245954.9387755102,
+    "text_begin": 1473,
+    "text_end": 1567,
+    "pronounce_text_begin": 1419,
+    "pronounce_text_end": 1510
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 246564,
+    "time_end": 251653.6598639456,
+    "text_begin": 1567,
+    "text_end": 1594,
+    "pronounce_text_begin": 1510,
+    "pronounce_text_end": 1536
+  }
+]

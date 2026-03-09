@@ -1,0 +1,227 @@
+{
+  "video_number": 1,
+  "title": "Obsidian + Claude Code：15分钟让AI读懂你的知识库",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "cover",
+      "start_time_seconds": 0,
+      "duration_seconds": 30,
+      "data": {
+        "type": "cover",
+        "source_label": "OBSIDIAN 官方技术博客《Claude Code 集成方案》",
+        "title_line1": "存了几年笔记",
+        "title_line2": "AI全写乱了？",
+        "title_line2_color": "red",
+        "subtitle": "Obsidian CEO 亲自出手，发布官方Skills包",
+        "subtitle_highlights": [
+          {"text": "CEO 亲自出手", "color": "yellow"},
+          {"text": "官方Skills包", "color": "purple"}
+        ],
+        "cards": [
+          {"number": "01", "title": "格式全是乱的", "desc": "Callout语法不对，wikilink失效", "color": "red"},
+          {"number": "02", "title": "像复制过来的", "desc": "Obsidian里打开根本不能用", "color": "red"},
+          {"number": "03", "title": "折腾半天", "desc": "不如自己手打还快", "color": "yellow"}
+        ],
+        "bottom_caption": "你不是一个人",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 2,
+      "type": "principle",
+      "start_time_seconds": 30,
+      "duration_seconds": 90,
+      "data": {
+        "type": "principle",
+        "section_label": "CORE INSIGHT",
+        "title": "你的 vault 本质上是个代码仓库",
+        "left_card": {
+          "icon": "📁",
+          "title": "结构完全一样",
+          "body": "代码仓库 = 纯文本文件 + 文件夹组织 + 相互引用。你的 vault 也一样——Markdown 文件 + 文件夹 + 双链。"
+        },
+        "right_items": [
+          {
+            "icon": "🔗",
+            "icon_color": "purple",
+            "title": "天然匹配",
+            "desc": "Claude Code 本就为代码仓库设计，你的笔记库对它是同一种东西"
+          },
+          {
+            "icon": "💾",
+            "icon_color": "green",
+            "title": "本地文件系统",
+            "desc": "没有 API，没有账号验证，没有速率限制"
+          },
+          {
+            "icon": "⚡",
+            "icon_color": "yellow",
+            "title": "零配置接入",
+            "desc": "cd ~/my-vault && claude，就这么简单"
+          }
+        ],
+        "bottom_card": {
+          "icon": "💡",
+          "title": "不是比喻，是字面意思",
+          "body": "你不需要任何专门的 AI 接口，vault 本身的结构就是 Claude Code 最熟悉的格式。"
+        },
+        "bottom_caption": "打开终端就能接上",
+        "bottom_caption_color": "green"
+      }
+    },
+    {
+      "slide_number": 3,
+      "type": "comparison_cards",
+      "start_time_seconds": 120,
+      "duration_seconds": 90,
+      "data": {
+        "type": "comparison_cards",
+        "section_label": "CONNECTION PATTERNS",
+        "title": "三种接入方式，选一种开始",
+        "subtitle_right": "从简单到强大，按需选择",
+        "cards": [
+          {
+            "number": 1,
+            "title": "直接文件系统访问",
+            "color": "green",
+            "pain_point": "最简单，零配置零依赖",
+            "conditions": [
+              "cd 进入 vault 目录",
+              "运行 claude 即可"
+            ],
+            "quote": "大多数人的起点，命令行用户首选。"
+          },
+          {
+            "number": 2,
+            "title": "MCP Bridge",
+            "color": "blue",
+            "pain_point": "需要感知 Obsidian 运行状态",
+            "conditions": [
+              "安装 obsidian-claude-code-mcp 插件",
+              "WebSocket 连接 Claude Code"
+            ],
+            "quote": "Claude 能直接感知你当前打开的文件。"
+          }
+        ],
+        "bottom_caption": "先从直接访问开始",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 4,
+      "type": "comparison_cards",
+      "start_time_seconds": 210,
+      "duration_seconds": 120,
+      "data": {
+        "type": "comparison_cards",
+        "section_label": "OFFICIAL SKILLS",
+        "title": "官方 Skills 包：三个核心技能",
+        "subtitle_right": "Obsidian CEO 亲自维护",
+        "cards": [
+          {
+            "number": 1,
+            "title": "Obsidian Markdown 语法",
+            "color": "purple",
+            "pain_point": "最关键：让 Claude 说正确的笔记语言",
+            "conditions": [
+              "wikilink、callout、YAML 属性",
+              "Mermaid 图表、LaTeX 公式全覆盖"
+            ],
+            "quote": "AI 生成的内容终于能在 Obsidian 原生打开。"
+          },
+          {
+            "number": 2,
+            "title": "Canvas 与 Base 文件",
+            "color": "blue",
+            "pain_point": "处理 Obsidian 专有格式",
+            "conditions": [
+              ".base 结构化数据视图",
+              ".canvas 白板文件新建与编辑"
+            ],
+            "quote": "渐进加载：只有用到时才占 Token。"
+          }
+        ],
+        "bottom_caption": "史上第一个官方 Agent Skills",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 5,
+      "type": "checklist",
+      "start_time_seconds": 330,
+      "duration_seconds": 60,
+      "data": {
+        "type": "checklist",
+        "section_label": "15-MIN SETUP",
+        "title": "15分钟配置路径",
+        "items": [
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "确认订阅",
+            "desc": "需要 Claude Pro / Max / Team / Enterprise",
+            "action": "确认订阅级别"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "启动 Claude Code",
+            "desc": "cd 进入 vault 目录，运行 claude",
+            "action": "cd ~/my-vault && claude"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "创建记忆文件",
+            "desc": "执行 /init 自动生成 CLAUDE.md",
+            "action": "/init"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "安装官方 Skills",
+            "desc": "kepano/obsidian-skills，CEO 亲自维护",
+            "action": "/plugin marketplace add kepano/obsidian-skills"
+          }
+        ],
+        "bottom_caption": "15分钟，AI说你的笔记语言",
+        "bottom_caption_color": "yellow"
+      }
+    },
+    {
+      "slide_number": 6,
+      "type": "summary",
+      "start_time_seconds": 390,
+      "duration_seconds": 30,
+      "data": {
+        "type": "summary",
+        "section_label": "TAKEAWAY",
+        "title": "今天你可以做的一件事",
+        "items": [
+          {
+            "number": 1,
+            "question": "vault 就是代码仓库，无需专用 API",
+            "note": "Claude Code 天生就能读写你的笔记"
+          },
+          {
+            "number": 2,
+            "question": "官方 Skills 包是 AI 的笔记语言词典",
+            "note": "Obsidian CEO 亲自维护，史上第一个官方 Agent Skills"
+          },
+          {
+            "number": 3,
+            "question": "15 分钟完成配置，现在就能开始",
+            "note": "cd → claude → /init → install skills"
+          }
+        ],
+        "final_line": "打开终端，cd 进你的 vault，运行 claude，执行 /init。",
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .accent { color: #F59E0B; }
+
+    .steps-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 44px;
+    }
+    .step-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .step-card:nth-child(1) { border-left: 4px solid #3B82F6; }
+    .step-card:nth-child(2) { border-left: 4px solid #8B5CF6; }
+    .step-card:nth-child(3) { border-left: 4px solid #10B981; }
+    .step-number {
+      font-size: 48px;
+      font-weight: 800;
+      flex-shrink: 0;
+      width: 56px;
+      text-align: center;
+    }
+    .step-number.blue { color: #3B82F6; }
+    .step-number.purple { color: #8B5CF6; }
+    .step-number.green { color: #10B981; }
+    .step-content { flex: 1; }
+    .step-name {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .step-detail {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+
+    .connector {
+      width: 3px;
+      height: 20px;
+      background: rgba(139, 92, 246, 0.3);
+      margin: -8px auto;
+      position: relative;
+      z-index: 0;
+    }
+
+    .cta-card {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(59, 130, 246, 0.08));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .cta-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #F59E0B;
+      margin-bottom: 12px;
+    }
+    .cta-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .cta-text strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">造 Skill 的<span class="accent">三步走</span></div>
+
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-number blue">1</div>
+        <div class="step-content">
+          <div class="step-name">想清楚用例</div>
+          <div class="step-detail">文档生成 / 工作流自动化 / MCP 增强</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number purple">2</div>
+        <div class="step-content">
+          <div class="step-name">三段式写 Description</div>
+          <div class="step-detail">做什么 &rarr; 何时触发 &rarr; 核心能力</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number green">3</div>
+        <div class="step-content">
+          <div class="step-name">三层测试 + 迭代</div>
+          <div class="step-detail">触发 &rarr; 功能 &rarr; 性能，逐层打磨</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-card">
+      <div class="cta-title">现在就能做的一件事</div>
+      <div class="cta-text">
+        打开你的 Skill，<strong>用三段式重写 Description</strong><br>
+        然后用 5+5 个问题测试触发率<br>
+        15 分钟搞定
+      </div>
+    </div>
+  </div>
+</body>
+</html>

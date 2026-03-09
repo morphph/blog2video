@@ -1,0 +1,252 @@
+[
+  {
+    "text": "你知道吗？一个 AI Agent 接上 GitHub、Slack、Sentry 这些常用工具，对话还没开始，光工具说明书就吃掉了十万个 Token。比它真正干活花的还多。",
+    "pronounce_text": "你知道吗？一个AI Agent接上GitHub、Slack、Sentry这些常用工具，对话还没开始，光工具说明书就吃掉了十万个Token。比它真正干活花的还多。",
+    "time_begin": 0,
+    "time_end": 11289.387755102041,
+    "text_begin": 0,
+    "text_end": 85,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 80
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 官方开发者博客，关于 Advanced Tool Use 的最新实践。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Anthropic官方开发者博客，关于Advanced Tool Use的最新实践。",
+    "time_begin": 11916,
+    "time_end": 25097.814058956916,
+    "text_begin": 85,
+    "text_end": 189,
+    "pronounce_text_begin": 80,
+    "pronounce_text_end": 175
+  },
+  {
+    "text": "很多人觉得，给 Agent 接的工具越多，它就越强。但现实是，工具一多，模型反而变笨了。",
+    "pronounce_text": "很多人觉得，给Agent接的工具越多，它就越强。但现实是，工具一多，模型反而变笨了。",
+    "time_begin": 26712,
+    "time_end": 34286.19501133787,
+    "text_begin": 189,
+    "text_end": 233,
+    "pronounce_text_begin": 175,
+    "pronounce_text_end": 217
+  },
+  {
+    "text": "为什么？每个工具的定义和参数说明，都要塞进 Context Window，也就是上下文窗口。五个工具服务器的定义就要吃掉五万五千个 Token。再加上 Jira，直接突破十万。",
+    "pronounce_text": "为什么？每个工具的定义和参数说明，都要塞进Context Window，也就是上下文窗口。五个工具服务器的定义就要吃掉五万五千个Token。再加上Jira，直接突破十万。",
+    "time_begin": 34920,
+    "time_end": 47428.43537414966,
+    "text_begin": 233,
+    "text_end": 321,
+    "pronounce_text_begin": 217,
+    "pronounce_text_end": 302
+  },
+  {
+    "text": "你可以想象一下出差打包行李箱。箱子就这么大，说明书塞了百分之80，衣服就没地方放了。上下文窗口也一样，工具定义占满了，真正的对话内容就被挤没了。",
+    "pronounce_text": "你可以想象一下出差打包行李箱。箱子就这么大，说明书塞了百分之八十，衣服就没地方放了。上下文窗口也一样，工具定义占满了，真正的对话内容就被挤没了。",
+    "time_begin": 48060,
+    "time_end": 60382.67573696145,
+    "text_begin": 321,
+    "text_end": 393,
+    "pronounce_text_begin": 302,
+    "pronounce_text_end": 374
+  },
+  {
+    "text": "Anthropic 的工程师测试发现，Opus 4 在工具过多时，选对工具的准确率只有百分之49。连一半都不到。",
+    "pronounce_text": "Anthropic的工程师测试发现，Opus四在工具过多时，选对工具的准确率只有百分之四十九。连一半都不到。",
+    "time_begin": 61020,
+    "time_end": 68663.85487528345,
+    "text_begin": 393,
+    "text_end": 449,
+    "pronounce_text_begin": 374,
+    "pronounce_text_end": 428
+  },
+  {
+    "text": "所以核心问题不是\"怎么接更多工具\"，而是\"怎么让模型按需获取\"。Anthropic 给出了三招。",
+    "pronounce_text": "所以核心问题不是\"怎么接更多工具\"，而是\"怎么让模型按需获取\"。Anthropic给出了三招。",
+    "time_begin": 69300,
+    "time_end": 76026.66666666667,
+    "text_begin": 449,
+    "text_end": 497,
+    "pronounce_text_begin": 428,
+    "pronounce_text_end": 475
+  },
+  {
+    "text": "第一招，Tool Search，工具按需搜索。",
+    "pronounce_text": "第一招，Tool Search，工具按需搜索。",
+    "time_begin": 77652,
+    "time_end": 80814.40362811791,
+    "text_begin": 497,
+    "text_end": 520,
+    "pronounce_text_begin": 475,
+    "pronounce_text_end": 498
+  },
+  {
+    "text": "做法很简单。在工具定义里加一个 defer_loading: true 的标记。模型不再预先加载所有工具，而是需要时才搜索拉取。",
+    "pronounce_text": "做法很简单。在工具定义里加一个defer，loading:true的标记。模型不再预先加载所有工具，而是需要时才搜索拉取。",
+    "time_begin": 81432,
+    "time_end": 92198.9387755102,
+    "text_begin": 520,
+    "text_end": 584,
+    "pronounce_text_begin": 498,
+    "pronounce_text_end": 559
+  },
+  {
+    "text": "效果非常炸裂。Token 消耗从七万七千直接降到八千七百，省了百分之85。Opus 4 的准确率从百分之49飙到百分之74，Opus 4.5 从百分之79.5升到百分之88.1。",
+    "pronounce_text": "效果非常炸裂。Token消耗从七万七千直接降到八千七百，省了百分之八十五。Opus四的准确率从百分之四十九飙到百分之七十四，Opus四点五从百分之七十九点五升到百分之八十八点一。",
+    "time_begin": 92808,
+    "time_end": 105095.84580498867,
+    "text_begin": 584,
+    "text_end": 673,
+    "pronounce_text_begin": 559,
+    "pronounce_text_end": 648
+  },
+  {
+    "text": "这就像手机里的 App Store。你不会把所有 App 同时装满内存，需要哪个搜一下装一个就行。",
+    "pronounce_text": "这就像手机里的App Store。你不会把所有App同时装满内存，需要哪个搜一下装一个就行。",
+    "time_begin": 105732,
+    "time_end": 112226.4671201814,
+    "text_begin": 673,
+    "text_end": 722,
+    "pronounce_text_begin": 648,
+    "pronounce_text_end": 694
+  },
+  {
+    "text": "第二招，Programmatic Tool Calling，程序化调用。",
+    "pronounce_text": "第二招，Programmatic Tool Calling，程序化调用。",
+    "time_begin": 112860,
+    "time_end": 116684.1723356009,
+    "text_begin": 722,
+    "text_end": 758,
+    "pronounce_text_begin": 694,
+    "pronounce_text_end": 730
+  },
+  {
+    "text": "传统模式下，模型每调一次工具就做一次完整推理。一个任务连续调十几次工具，Token 像滚雪球一样越滚越大。程序化调用让模型写一段代码，在沙箱里批量执行，只把最终结果返回。",
+    "pronounce_text": "传统模式下，模型每调一次工具就做一次完整推理。一个任务连续调十几次工具，Token像滚雪球一样越滚越大。程序化调用让模型写一段代码，在沙箱里批量执行，只把最终结果返回。",
+    "time_begin": 117324,
+    "time_end": 130610.30385487528,
+    "text_begin": 758,
+    "text_end": 843,
+    "pronounce_text_begin": 730,
+    "pronounce_text_end": 814
+  },
+  {
+    "text": "Token 从四万三千多降到两万七千多，减少百分之37，同时消除了 19 次以上的推理传递。",
+    "pronounce_text": "Token从四万三千多降到两万七千多，减少百分之三十七，同时消除了十九次以上的推理传递。",
+    "time_begin": 130752,
+    "time_end": 137432.22675736962,
+    "text_begin": 843,
+    "text_end": 889,
+    "pronounce_text_begin": 814,
+    "pronounce_text_end": 858
+  },
+  {
+    "text": "第三招，Tool Use Examples，使用示例。",
+    "pronounce_text": "第三招，Tool Use Examples，使用示例。",
+    "time_begin": 138060,
+    "time_end": 141408.16326530612,
+    "text_begin": 889,
+    "text_end": 916,
+    "pronounce_text_begin": 858,
+    "pronounce_text_end": 885
+  },
+  {
+    "text": "很多工具参数结构复杂，光靠定义文档，模型经常填错。给一到五个真实调用示例就行。准确率从百分之72直接拉到百分之90。",
+    "pronounce_text": "很多工具参数结构复杂，光靠定义文档，模型经常填错。给一到五个真实调用示例就行。准确率从百分之七十二直接拉到百分之九十。",
+    "time_begin": 142020,
+    "time_end": 152334.14965986394,
+    "text_begin": 916,
+    "text_end": 974,
+    "pronounce_text_begin": 885,
+    "pronounce_text_end": 944
+  },
+  {
+    "text": "道理很简单。新员工入职，光给岗位说明书是不够的，得有前辈的实操案例才能上手。",
+    "pronounce_text": "道理很简单。新员工入职，光给岗位说明书是不够的，得有前辈的实操案例才能上手。",
+    "time_begin": 152964,
+    "time_end": 159725.49659863947,
+    "text_begin": 974,
+    "text_end": 1012,
+    "pronounce_text_begin": 944,
+    "pronounce_text_end": 982
+  },
+  {
+    "text": "来一份实操清单。",
+    "pronounce_text": "来一份实操清单。",
+    "time_begin": 161352,
+    "time_end": 162621.97732426305,
+    "text_begin": 1012,
+    "text_end": 1020,
+    "pronounce_text_begin": 982,
+    "pronounce_text_end": 990
+  },
+  {
+    "text": "第一，超过十个工具的项目，把低频工具标记为 defer_loading: true，开启 Tool Search。",
+    "pronounce_text": "第一，超过十个工具的项目，把低频工具标记为defer，loading:true，开启Tool Search。",
+    "time_begin": 163260,
+    "time_end": 169870.56689342402,
+    "text_begin": 1020,
+    "text_end": 1077,
+    "pronounce_text_begin": 990,
+    "pronounce_text_end": 1044
+  },
+  {
+    "text": "第二，频繁连续调用、中间数据量大的场景，开启 Programmatic Calling，让模型用代码编排。",
+    "pronounce_text": "第二，频繁连续调用、中间数据量大的场景，开启Programmatic Calling，让模型用代码编排。",
+    "time_begin": 170496,
+    "time_end": 177292.32653061225,
+    "text_begin": 1077,
+    "text_end": 1130,
+    "pronounce_text_begin": 1044,
+    "pronounce_text_end": 1096
+  },
+  {
+    "text": "第三，参数经常填错的工具，补上一到五个真实示例。数量不用多，这个范围效果最好。",
+    "pronounce_text": "第三，参数经常填错的工具，补上一到五个真实示例。数量不用多，这个范围效果最好。",
+    "time_begin": 177912,
+    "time_end": 184034.947845805,
+    "text_begin": 1130,
+    "text_end": 1169,
+    "pronounce_text_begin": 1096,
+    "pronounce_text_end": 1135
+  },
+  {
+    "text": "记住，三招可以叠加使用，不是非此即彼。",
+    "pronounce_text": "记住，三招可以叠加使用，不是非此即彼。",
+    "time_begin": 184644,
+    "time_end": 187957.33333333334,
+    "text_begin": 1169,
+    "text_end": 1188,
+    "pronounce_text_begin": 1135,
+    "pronounce_text_end": 1154
+  },
+  {
+    "text": "一句话总结：AI Agent 用工具，不是越多越好。按需加载、批量执行、示例教学，三招组合下去，省钱又提准。",
+    "pronounce_text": "一句话总结：AI Agent用工具，不是越多越好。按需加载、批量执行、示例教学，三招组合下去，省钱又提准。",
+    "time_begin": 189576,
+    "time_end": 199414.14058956917,
+    "text_begin": 1188,
+    "text_end": 1242,
+    "pronounce_text_begin": 1154,
+    "pronounce_text_end": 1207
+  },
+  {
+    "text": "你现在就可以做一件事。在 API 调用里加上 advanced-tool-use-2025-11-20 这个 beta header，然后把低频工具标记为延迟加载，给复杂工具补上示例。一行配置的事。",
+    "pronounce_text": "你现在就可以做一件事。在API调用里加上advancedtooluse二零二五一一二零这个beta header，然后把低频工具标记为延迟加载，给复杂工具补上示例。一行配置的事。",
+    "time_begin": 200052,
+    "time_end": 213524.0634920635,
+    "text_begin": 1242,
+    "text_end": 1341,
+    "pronounce_text_begin": 1207,
+    "pronounce_text_end": 1296
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 214164,
+    "time_end": 218626.72108843538,
+    "text_begin": 1341,
+    "text_end": 1368,
+    "pronounce_text_begin": 1296,
+    "pronounce_text_end": 1322
+  }
+]

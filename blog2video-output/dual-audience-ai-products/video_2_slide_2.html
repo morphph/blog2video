@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; }
+    .section-title { font-size: 42px; font-weight: 800; margin-bottom: 48px; color: #FFFFFF; }
+    .section-title .accent { color: #8B5CF6; }
+    .lanes-container { width: 100%; display: flex; flex-direction: column; gap: 20px; margin-bottom: 48px; }
+    .lane { background: #1A1A2E; border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; gap: 24px; text-align: left; position: relative; }
+    .lane-ux { border-left: 4px solid #EF4444; }
+    .lane-dx { border-left: 4px solid #3B82F6; }
+    .lane-ax { border-left: 4px solid #F59E0B; }
+    .lane-label { font-size: 40px; font-weight: 900; min-width: 80px; }
+    .lane-ux .lane-label { color: #EF4444; }
+    .lane-dx .lane-label { color: #3B82F6; }
+    .lane-ax .lane-label { color: #F59E0B; }
+    .lane-desc { flex: 1; }
+    .lane-metaphor { font-size: 30px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; }
+    .lane-detail { font-size: 24px; color: #B0B0CC; }
+    .lane-emoji { font-size: 36px; flex-shrink: 0; }
+    .tolerance-section { width: 100%; margin-bottom: 40px; }
+    .tolerance-title { font-size: 28px; font-weight: 700; color: #B0B0CC; margin-bottom: 20px; text-align: left; }
+    .tolerance-bars { display: flex; flex-direction: column; gap: 16px; }
+    .tolerance-row { display: flex; align-items: center; gap: 16px; }
+    .tolerance-label { font-size: 26px; font-weight: 700; min-width: 60px; text-align: right; }
+    .bar-track { flex: 1; height: 32px; background: #1A1A2E; border-radius: 16px; overflow: hidden; position: relative; }
+    .bar-fill { height: 100%; border-radius: 16px; }
+    .bar-fill.ux { width: 85%; background: linear-gradient(90deg, #EF4444, #EF444488); }
+    .bar-fill.dx { width: 50%; background: linear-gradient(90deg, #3B82F6, #3B82F688); }
+    .bar-fill.ax { width: 8%; background: linear-gradient(90deg, #F59E0B, #F59E0B88); }
+    .tolerance-text { font-size: 22px; color: #6B7280; min-width: 80px; }
+    .attribution { width: 100%; background: #1A1A2E; border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
+    .attr-avatar { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #8B5CF6, #3B82F6); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 800; color: #FFF; flex-shrink: 0; }
+    .attr-text { text-align: left; }
+    .attr-name { font-size: 26px; font-weight: 700; color: #FFFFFF; }
+    .attr-role { font-size: 22px; color: #6B7280; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-title">三条<span class="accent">车道</span>，三种用户</div>
+    <div class="lanes-container">
+      <div class="lane lane-ux">
+        <div class="lane-label">UX</div>
+        <div class="lane-desc">
+          <div class="lane-metaphor">红毯体验</div>
+          <div class="lane-detail">终端用户 · 体验为王</div>
+        </div>
+        <div class="lane-emoji">🎪</div>
+      </div>
+      <div class="lane lane-dx">
+        <div class="lane-label">DX</div>
+        <div class="lane-desc">
+          <div class="lane-metaphor">高速公路</div>
+          <div class="lane-detail">开发者 · 效率优先</div>
+        </div>
+        <div class="lane-emoji">🛣️</div>
+      </div>
+      <div class="lane lane-ax">
+        <div class="lane-label">AX</div>
+        <div class="lane-desc">
+          <div class="lane-metaphor">专用车道</div>
+          <div class="lane-detail">AI Agent · 零容忍</div>
+        </div>
+        <div class="lane-emoji">🤖</div>
+      </div>
+    </div>
+
+    <div class="tolerance-section">
+      <div class="tolerance-title">容忍度对比</div>
+      <div class="tolerance-bars">
+        <div class="tolerance-row">
+          <div class="tolerance-label" style="color: #EF4444;">UX</div>
+          <div class="bar-track"><div class="bar-fill ux"></div></div>
+          <div class="tolerance-text">会重试</div>
+        </div>
+        <div class="tolerance-row">
+          <div class="tolerance-label" style="color: #3B82F6;">DX</div>
+          <div class="bar-track"><div class="bar-fill dx"></div></div>
+          <div class="tolerance-text">会绕路</div>
+        </div>
+        <div class="tolerance-row">
+          <div class="tolerance-label" style="color: #F59E0B;">AX</div>
+          <div class="bar-track"><div class="bar-fill ax"></div></div>
+          <div class="tolerance-text">直接走</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <div class="attr-avatar">MB</div>
+      <div class="attr-text">
+        <div class="attr-name">Mathias Biilmann</div>
+        <div class="attr-role">Netlify CEO</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

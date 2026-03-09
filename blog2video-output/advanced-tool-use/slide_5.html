@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .summary-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 48px;
+    }
+    .summary-title .green {
+      color: #10B981;
+    }
+    .three-points {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .point {
+      flex: 1;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .point:nth-child(1) {
+      border-top: 3px solid #10B981;
+    }
+    .point:nth-child(2) {
+      border-top: 3px solid #3B82F6;
+    }
+    .point:nth-child(3) {
+      border-top: 3px solid #F59E0B;
+    }
+    .point-label {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .point:nth-child(1) .point-label { color: #10B981; }
+    .point:nth-child(2) .point-label { color: #3B82F6; }
+    .point:nth-child(3) .point-label { color: #F59E0B; }
+    .point-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+    }
+    .action-box {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .action-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    .action-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.7;
+      text-align: center;
+    }
+    .action-text .code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 22px;
+      background: rgba(245, 158, 11, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      word-break: break-all;
+    }
+    .sign-off {
+      font-size: 28px;
+      color: #8B8BA0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">SUMMARY</div>
+    <div class="summary-title">
+      AI Agent 用工具<br>不是越多越好<br>三招组合 → <span class="green">省钱又提准</span>
+    </div>
+
+    <div class="three-points">
+      <div class="point">
+        <div class="point-label">按需加载</div>
+        <div class="point-desc">Tool Search</div>
+      </div>
+      <div class="point">
+        <div class="point-label">批量执行</div>
+        <div class="point-desc">Programmatic</div>
+      </div>
+      <div class="point">
+        <div class="point-label">示例教学</div>
+        <div class="point-desc">Examples</div>
+      </div>
+    </div>
+
+    <div class="action-box">
+      <div class="action-label">NOW DO THIS</div>
+      <div class="action-text">
+        API 加上 beta header<br>
+        <span class="code">advanced-tool-use-2025-11-20</span><br>
+        低频工具标记延迟加载<br>
+        复杂工具补上示例
+      </div>
+    </div>
+
+    <div class="sign-off">精读一篇，胜过刷一百条</div>
+  </div>
+</body>
+</html>

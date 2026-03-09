@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .section-title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
+
+    /* Subagent flow */
+    .flow-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .agent-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-top: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .agent-label {
+      font-size: 16px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .agent-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.3;
+    }
+
+    .flow-arrow {
+      font-size: 28px;
+      color: #6B7280;
+    }
+
+    .benefit-tag {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+
+    /* Debug stats comparison */
+    .stats-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .stats-container {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 36px;
+    }
+
+    .stat-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .stat-card.bad {
+      border-left: 4px solid #EF4444;
+    }
+
+    .stat-card.good {
+      border-left: 4px solid #10B981;
+    }
+
+    .stat-label {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .stat-label.red { color: #EF4444; }
+    .stat-label.green { color: #10B981; }
+
+    .stat-number {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-number.red { color: #EF4444; }
+    .stat-number.green { color: #10B981; }
+
+    .stat-detail {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.3;
+    }
+
+    /* Actionable tip */
+    .tip-card {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      max-width: 900px;
+      text-align: left;
+    }
+
+    .tip-label {
+      font-size: 18px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .tip-text {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .tip-quote {
+      font-size: 22px;
+      color: #F59E0B;
+      font-style: italic;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-title">子 Agent 驱动开发</div>
+    <div class="section-subtitle">Subagent-Driven Development</div>
+
+    <!-- Flow diagram -->
+    <div class="flow-container">
+      <div class="agent-box">
+        <div class="agent-label">Agent A</div>
+        <div class="agent-desc">任务 1</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="agent-box">
+        <div class="agent-label">Agent B</div>
+        <div class="agent-desc">任务 2</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="agent-box">
+        <div class="agent-label">Agent C</div>
+        <div class="agent-desc">任务 3</div>
+      </div>
+    </div>
+
+    <div class="benefit-tag">无上下文污染 / 无疲劳累积 / 满血状态</div>
+
+    <!-- Debug stats -->
+    <div class="stats-title">系统性调试 vs 随机试错</div>
+    <div class="stats-container">
+      <div class="stat-card bad">
+        <div class="stat-label red">随机试错</div>
+        <div class="stat-number red">40%</div>
+        <div class="stat-detail">成功率<br>耗时 2-3 小时</div>
+      </div>
+      <div class="stat-card good">
+        <div class="stat-label green">系统性调试</div>
+        <div class="stat-number green">95%</div>
+        <div class="stat-detail">首次修复率<br>耗时 15-30 分钟</div>
+      </div>
+    </div>
+
+    <!-- Actionable tip -->
+    <div class="tip-card">
+      <div class="tip-label">实操建议</div>
+      <div class="tip-text">在提示词中加一条规则：</div>
+      <div class="tip-quote">"每次说测试通过，必须贴出完整的测试运行输出作为证据"</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "video_number": 1,
+  "title": "一个人写代码太慢？让AI组团帮你干活！",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    {
+      "slide_number": 1,
+      "file": "slide_1.html",
+      "type": "cover",
+      "estimated_duration_seconds": 25
+    },
+    {
+      "slide_number": 2,
+      "file": "slide_2.html",
+      "type": "principle",
+      "estimated_duration_seconds": 95
+    },
+    {
+      "slide_number": 3,
+      "file": "slide_3.html",
+      "type": "comparison_cards",
+      "estimated_duration_seconds": 120
+    },
+    {
+      "slide_number": 4,
+      "file": "slide_4.html",
+      "type": "summary",
+      "estimated_duration_seconds": 60
+    }
+  ]
+}

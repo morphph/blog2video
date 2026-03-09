@@ -1,0 +1,194 @@
+{
+  "video_number": 1,
+  "title": "AI干活干到一半就失忆？揭秘让Agent连续工作不翻车的接力方案！",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "cover",
+      "start_time_seconds": 0,
+      "duration_seconds": 25,
+      "data": {
+        "source_label": "ANTHROPIC《Effective Harnesses for Long-Running Agents》",
+        "title_line1": "Agent 写到一半就失忆",
+        "title_line2": "还敢说自己做完了？",
+        "title_line2_color": "red",
+        "subtitle": "Anthropic 让模型去克隆 claude.ai 时发现的真相",
+        "subtitle_highlights": [
+          { "text": "克隆 claude.ai", "color": "purple" }
+        ],
+        "cards": [
+          {
+            "number": "01",
+            "title": "写到一半就失忆",
+            "desc": "之前做的全不记得",
+            "color": "red"
+          },
+          {
+            "number": "02",
+            "title": "直接宣布做完了",
+            "desc": "其实还差一大截",
+            "color": "red"
+          },
+          {
+            "number": "03",
+            "title": "方法简单粗暴",
+            "desc": "怎么解？比你想的直接",
+            "color": "yellow"
+          }
+        ],
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    },
+    {
+      "slide_number": 2,
+      "type": "principle",
+      "start_time_seconds": 25,
+      "duration_seconds": 85,
+      "data": {
+        "section_label": "核心问题",
+        "title": "Agent 每次对话都是全新的自己",
+        "left_card": {
+          "icon": "🏥",
+          "title": "轮班护士类比",
+          "body": "没有交班记录，夜班护士上来就懵——不知道病人吃过药没"
+        },
+        "right_items": [
+          {
+            "icon": "💥",
+            "icon_color": "red",
+            "title": "Over-ambition",
+            "desc": "一口气做太多，Context 爆掉"
+          },
+          {
+            "icon": "🏁",
+            "icon_color": "red",
+            "title": "Premature Completion",
+            "desc": "看到有代码就宣布完成"
+          }
+        ],
+        "bottom_card": {
+          "icon": "⚠️",
+          "title": "根因不是模型不够强",
+          "body": "而是没有交接机制"
+        },
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    },
+    {
+      "slide_number": 3,
+      "type": "comparison_cards",
+      "start_time_seconds": 110,
+      "duration_seconds": 110,
+      "data": {
+        "section_label": "解决方案",
+        "title": "双 Agent 接力架构",
+        "subtitle_right": "拆角色 · 定规矩 · 防偷懒",
+        "cards": [
+          {
+            "number": 1,
+            "title": "Initializer Agent",
+            "color": "purple",
+            "pain_point": "搭脚手架，生成 200+ 功能清单",
+            "conditions": [
+              "JSON 功能清单，全部标记 failing",
+              "init.sh 启动脚本",
+              "claude-progress.txt 进度文件"
+            ],
+            "quote": "用 JSON 格式，Agent 就不敢偷删条目了"
+          },
+          {
+            "number": 2,
+            "title": "Coding Agent",
+            "color": "green",
+            "pain_point": "一砖一瓦做功能，每次只做一个",
+            "conditions": [
+              "五步启动协议：pwd → git log → 进度 → 选功能 → 跑测试",
+              "每 session 只做一个 feature",
+              "做完 git commit + 更新进度"
+            ],
+            "quote": "不贪多，不冒进"
+          }
+        ],
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    },
+    {
+      "slide_number": 4,
+      "type": "checklist",
+      "start_time_seconds": 220,
+      "duration_seconds": 50,
+      "data": {
+        "section_label": "实操清单",
+        "title": "让 Agent 稳定工作的四要素",
+        "items": [
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "JSON 功能清单",
+            "desc": "必须是 JSON，不要 Markdown",
+            "action": "创建 feature_list.json"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "进度追踪文件",
+            "desc": "每次 session 结束写入当前状态",
+            "action": "维护 progress.txt"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "端到端测试",
+            "desc": "接入 Puppeteer MCP 验证质量",
+            "action": "不靠 Agent 自证，靠真实操作"
+          },
+          {
+            "icon": "check",
+            "status": "green",
+            "title": "标准化启动流程",
+            "desc": "不让 Agent 自由发挥",
+            "action": "给固定的检查清单"
+          }
+        ],
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    },
+    {
+      "slide_number": 5,
+      "type": "summary",
+      "start_time_seconds": 270,
+      "duration_seconds": 30,
+      "data": {
+        "section_label": "TAKEAWAY",
+        "title": "不靠更强模型，靠更好的交接",
+        "items": [
+          {
+            "number": 1,
+            "question": "功能清单",
+            "note": "JSON 格式，全部标记未完成"
+          },
+          {
+            "number": 2,
+            "question": "进度记录",
+            "note": "每次 session 读写 progress"
+          },
+          {
+            "number": 3,
+            "question": "端到端测试",
+            "note": "三件套缺一不可"
+          }
+        ],
+        "final_line": "下个 Agent 项目，先建 feature_list.json",
+        "bottom_caption": "",
+        "bottom_caption_color": ""
+      }
+    }
+  ]
+}

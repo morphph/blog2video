@@ -1,0 +1,282 @@
+[
+  {
+    "text": "AI自己给你造工具？真有人做到了。Vin让Claude Code扫描了他整个笔记库，跑了5分钟。输出了什么？该造的工具、该见的人、该写的文章。",
+    "pronounce_text": "AI自己给你造工具？真有人做到了。Vin让Claude Code扫描了他整个笔记库，跑了五分钟。输出了什么？该造的工具、该见的人、该写的文章。",
+    "time_begin": 0,
+    "time_end": 11393.877551020407,
+    "text_begin": 0,
+    "text_end": 71,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 71
+  },
+  {
+    "text": "其中一个建议是去找Obsidian的CEO聊\"vault作为一个空间\"。",
+    "pronounce_text": "其中一个建议是去找Obsidian的CEO聊\"vault作为一个空间\"。",
+    "time_begin": 11593.877551020407,
+    "time_end": 15905.668934240362,
+    "text_begin": 71,
+    "text_end": 107,
+    "pronounce_text_begin": 71,
+    "pronounce_text_end": 107
+  },
+  {
+    "text": "更离谱的是，AI随后自己设计了一个新命令，精准到用了只有Vin才懂的术语。",
+    "pronounce_text": "更离谱的是，AI随后自己设计了一个新命令，精准到用了只有Vin才懂的术语。",
+    "time_begin": 16056.000000000002,
+    "time_end": 21296.589569161,
+    "text_begin": 107,
+    "text_end": 144,
+    "pronounce_text_begin": 107,
+    "pronounce_text_end": 144
+  },
+  {
+    "text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 21924,
+    "time_end": 29904.544217687075,
+    "text_begin": 144,
+    "text_end": 189,
+    "pronounce_text_begin": 144,
+    "pronounce_text_end": 189
+  },
+  {
+    "text": "上期我们看到/trace命令用13个月的笔记画出了一个想法的完整进化史，/ideas命令甚至建议了该见的人。",
+    "pronounce_text": "上期我们看到，trace命令用十三个月的笔记画出了一个想法的完整进化史，ideas命令甚至建议了该见的人。",
+    "time_begin": 30528,
+    "time_end": 38775.573696145126,
+    "text_begin": 189,
+    "text_end": 243,
+    "pronounce_text_begin": 189,
+    "pronounce_text_end": 242
+  },
+  {
+    "text": "这期，我们来看最终极的玩法：不是你设计命令让AI执行，而是让AI自己给你造命令。",
+    "pronounce_text": "这期，我们来看最终极的玩法：不是你设计命令让AI执行，而是让AI自己给你造命令。",
+    "time_begin": 38975.573696145126,
+    "time_end": 45957.65986394558,
+    "text_begin": 243,
+    "text_end": 283,
+    "pronounce_text_begin": 242,
+    "pronounce_text_end": 282
+  },
+  {
+    "text": "先说一个反直觉的事。大多数人用AI的方式是：我想到一个需求，我告诉AI去做。但Vin做了一件完全相反的事。他对Claude Code说：你已经读过了我整个vault，你觉得我需要什么命令？",
+    "pronounce_text": "先说一个反直觉的事。大多数人用AI的方式是：我想到一个需求，我告诉AI去做。但Vin做了一件完全相反的事。他对Claude Code说：你已经读过了我整个vault，你觉得我需要什么命令？",
+    "time_begin": 47592,
+    "time_end": 60657.71428571429,
+    "text_begin": 283,
+    "text_end": 377,
+    "pronounce_text_begin": 282,
+    "pronounce_text_end": 376
+  },
+  {
+    "text": "这叫meta-prompting，元提示。打个比方：你不是教AI做一道菜，而是让AI看完你的厨房和冰箱之后，告诉你应该学什么菜。",
+    "pronounce_text": "这叫meta-prompting，元提示。打个比方：你不是教AI做一道菜，而是让AI看完你的厨房和冰箱之后，告诉你应该学什么菜。",
+    "time_begin": 61272,
+    "time_end": 70483.20181405896,
+    "text_begin": 377,
+    "text_end": 441,
+    "pronounce_text_begin": 376,
+    "pronounce_text_end": 440
+  },
+  {
+    "text": "为什么这招能成立？因为vault里有Vin写了13个月的笔记。他的项目、他的偏好、他的思维模式全在里面。AI读完这些之后，对他的理解可能比他自己还全面。",
+    "pronounce_text": "为什么这招能成立？因为vault里有Vin写了十三个月的笔记。他的项目、他的偏好、他的思维模式全在里面。AI读完这些之后，对他的理解可能比他自己还全面。",
+    "time_begin": 71100,
+    "time_end": 83387.84580498867,
+    "text_begin": 441,
+    "text_end": 517,
+    "pronounce_text_begin": 440,
+    "pronounce_text_end": 516
+  },
+  {
+    "text": "你自己很难一次性回顾上千条笔记，但AI可以。",
+    "pronounce_text": "你自己很难一次性回顾上千条笔记，但AI可以。",
+    "time_begin": 83587.84580498867,
+    "time_end": 87005.66893424037,
+    "text_begin": 517,
+    "text_end": 539,
+    "pronounce_text_begin": 516,
+    "pronounce_text_end": 538
+  },
+  {
+    "text": "这就是一个根本性的转变：从\"你指挥AI\"升级到\"AI主动为你定制工具\"。",
+    "pronounce_text": "这就是一个根本性的转变：从\"你指挥AI\"升级到\"AI主动为你定制工具\"。",
+    "time_begin": 87624,
+    "time_end": 93236.10884353741,
+    "text_begin": 539,
+    "text_end": 575,
+    "pronounce_text_begin": 538,
+    "pronounce_text_end": 574
+  },
+  {
+    "text": "那AI具体给Vin造了什么？我们来看/ideas命令的完整输出。",
+    "pronounce_text": "那AI具体给Vin造了什么？我们来看，ideas命令的完整输出。",
+    "time_begin": 94860,
+    "time_end": 99357.55102040817,
+    "text_begin": 575,
+    "text_end": 607,
+    "pronounce_text_begin": 574,
+    "pronounce_text_end": 606
+  },
+  {
+    "text": "第一类是工具建议。AI提议造一个叫/graduate的命令。它发现Vin的daily notes里有大量标记了idea标签的想法，但这些想法从来没有被提升为独立笔记。",
+    "pronounce_text": "第一类是工具建议。AI提议造一个叫，graduate的命令。它发现Vin的daily notes里有大量标记了idea标签的想法，但这些想法从来没有被提升为独立笔记。",
+    "time_begin": 99972,
+    "time_end": 111702.56689342404,
+    "text_begin": 607,
+    "text_end": 690,
+    "pronounce_text_begin": 606,
+    "pronounce_text_end": 689
+  },
+  {
+    "text": "所以它建议：扫描最近的daily notes，找出值得提升的想法，让Vin决定是创建独立笔记、补充到现有文件、还是跳过。",
+    "pronounce_text": "所以它建议：扫描最近的daily notes，找出值得提升的想法，让Vin决定是创建独立笔记、补充到现有文件、还是跳过。",
+    "time_begin": 111852,
+    "time_end": 120761.34240362812,
+    "text_begin": 690,
+    "text_end": 750,
+    "pronounce_text_begin": 689,
+    "pronounce_text_end": 749
+  },
+  {
+    "text": "注意，AI用的\"graduate\"这个词、\"mini essay\"这个概念，都是Vin自己在笔记里反复出现的术语。AI不是在套模板，它是在用Vin的语言给Vin造工具。",
+    "pronounce_text": "注意，AI用的\"graduate\"这个词、\"mini essay\"这个概念，都是Vin自己在笔记里反复出现的术语。AI不是在套模板，它是在用Vin的语言给Vin造工具。",
+    "time_begin": 121392,
+    "time_end": 132158.9387755102,
+    "text_begin": 750,
+    "text_end": 834,
+    "pronounce_text_begin": 749,
+    "pronounce_text_end": 833
+  },
+  {
+    "text": "第二类是人脉建议。AI建议Vin去见Obsidian的CEO Steph Ango，话题是\"vault作为一个空间\"。还建议见另外两个人，话题分别和他正在做的实体空间以及纪录片项目相关。",
+    "pronounce_text": "第二类是人脉建议。AI建议Vin去见Obsidian的CEO Steph Ango，话题是\"vault作为一个空间\"。还建议见另外两个人，话题分别和他正在做的实体空间以及纪录片项目相关。",
+    "time_begin": 132768,
+    "time_end": 146541.92290249432,
+    "text_begin": 834,
+    "text_end": 927,
+    "pronounce_text_begin": 833,
+    "pronounce_text_end": 926
+  },
+  {
+    "text": "这些建议全部来自vault里散落在不同文件中的信息碎片。",
+    "pronounce_text": "这些建议全部来自vault里散落在不同文件中的信息碎片。",
+    "time_begin": 146700,
+    "time_end": 150303.5827664399,
+    "text_begin": 927,
+    "text_end": 955,
+    "pronounce_text_begin": 926,
+    "pronounce_text_end": 954
+  },
+  {
+    "text": "第三类是内容建议。AI列出了5篇该写的文章，包括\"Context Architecture\"和\"The Computer as a Place\"。每一个选题都能追溯到vault中多个互相关联的笔记。",
+    "pronounce_text": "第三类是内容建议。AI列出了五篇该写的文章，包括\"Context Architecture\"和\"The Computer as a Place\"。每一个选题都能追溯到vault中多个互相关联的笔记。",
+    "time_begin": 150912,
+    "time_end": 161458.3492063492,
+    "text_begin": 955,
+    "text_end": 1054,
+    "pronounce_text_begin": 954,
+    "pronounce_text_end": 1053
+  },
+  {
+    "text": "但这里有一条Vin的铁律，很容易被忽略。他绝对不让AI往vault里写文件。",
+    "pronounce_text": "但这里有一条Vin的铁律，很容易被忽略。他绝对不让AI往vault里写文件。",
+    "time_begin": 163080,
+    "time_end": 168506.3492063492,
+    "text_begin": 1054,
+    "text_end": 1092,
+    "pronounce_text_begin": 1053,
+    "pronounce_text_end": 1091
+  },
+  {
+    "text": "为什么？因为vault必须百分之百是他自己的想法。如果AI也往里面写东西，下次AI去找思维模式的时候，它找到的可能是自己编的模式，不是Vin真正的想法。",
+    "pronounce_text": "为什么？因为vault必须百分之百是他自己的想法。如果AI也往里面写东西，下次AI去找思维模式的时候，它找到的可能是自己编的模式，不是Vin真正的想法。",
+    "time_begin": 169128,
+    "time_end": 181230.08616780044,
+    "text_begin": 1092,
+    "text_end": 1168,
+    "pronounce_text_begin": 1091,
+    "pronounce_text_end": 1167
+  },
+  {
+    "text": "数据被污染了，所有后续分析都不可信。",
+    "pronounce_text": "数据被污染了，所有后续分析都不可信。",
+    "time_begin": 181430.08616780044,
+    "time_end": 184406.73015873015,
+    "text_begin": 1168,
+    "text_end": 1186,
+    "pronounce_text_begin": 1167,
+    "pronounce_text_end": 1185
+  },
+  {
+    "text": "Greg说了一句很到位的话：markdown文件就是完美记忆。人的记忆会扭曲，你可能觉得那次理发特别好，但实际上可能糟透了。文件不会骗你，10年后打开还是当时写的原样。",
+    "pronounce_text": "Greg说了一句很到位的话：markdown文件就是完美记忆。人的记忆会扭曲，你可能觉得那次理发特别好，但实际上可能糟透了。文件不会骗你，十年后打开还是当时写的原样。",
+    "time_begin": 185040,
+    "time_end": 197478.77551020408,
+    "text_begin": 1186,
+    "text_end": 1270,
+    "pronounce_text_begin": 1185,
+    "pronounce_text_end": 1268
+  },
+  {
+    "text": "所以如果你也想试meta-prompting，记住三个前提。一，你的笔记库必须有足够的积累，至少几十条跨越数周的笔记。二，笔记必须是你自己写的，不能是AI生成的。",
+    "pronounce_text": "所以如果你也想试meta-prompting，记住三个前提。一，你的笔记库必须有足够的积累，至少几十条跨越数周的笔记。二，笔记必须是你自己写的，不能是AI生成的。",
+    "time_begin": 198108,
+    "time_end": 209617.97732426305,
+    "text_begin": 1270,
+    "text_end": 1351,
+    "pronounce_text_begin": 1268,
+    "pronounce_text_end": 1349
+  },
+  {
+    "text": "三，文件之间要有链接关系，散落的文件远不如互相关联的文件有价值。",
+    "pronounce_text": "三，文件之间要有链接关系，散落的文件远不如互相关联的文件有价值。",
+    "time_begin": 209772,
+    "time_end": 215674.358276644,
+    "text_begin": 1351,
+    "text_end": 1383,
+    "pronounce_text_begin": 1349,
+    "pronounce_text_end": 1381
+  },
+  {
+    "text": "到这里，三期内容的核心串起来了。第一期，给AI喂好的上下文。第二期，用命令让AI成为思维伙伴。第三期，让AI反过来告诉你该造什么工具、该见谁、该写什么。",
+    "pronounce_text": "到这里，三期内容的核心串起来了。第一期，给AI喂好的上下文。第二期，用命令让AI成为思维伙伴。第三期，让AI反过来告诉你该造什么工具、该见谁、该写什么。",
+    "time_begin": 217296,
+    "time_end": 230617.13378684808,
+    "text_begin": 1383,
+    "text_end": 1459,
+    "pronounce_text_begin": 1381,
+    "pronounce_text_end": 1457
+  },
+  {
+    "text": "这才是终极模式：不要只用AI执行你的想法，让AI读懂你之后，主动告诉你该做什么。",
+    "pronounce_text": "这才是终极模式：不要只用AI执行你的想法，让AI读懂你之后，主动告诉你该做什么。",
+    "time_begin": 231228,
+    "time_end": 237838.56689342402,
+    "text_begin": 1459,
+    "text_end": 1499,
+    "pronounce_text_begin": 1457,
+    "pronounce_text_end": 1497
+  },
+  {
+    "text": "你现在就可以试一件事：打开Claude Code，把你现有的一个工作流描述喂给它，然后问它一句话：\"根据你对我的了解，你觉得我还需要什么命令？\"看看AI给你的建议，是不是比你自己想的还贴合需求。",
+    "pronounce_text": "你现在就可以试一件事：打开Claude Code，把你现有的一个工作流描述喂给它，然后问它一句话：\"根据你对我的了解，你觉得我还需要什么命令？\"看看AI给你的建议，是不是比你自己想的还贴合需求。",
+    "time_begin": 238464,
+    "time_end": 252934.52154195012,
+    "text_begin": 1499,
+    "text_end": 1596,
+    "pronounce_text_begin": 1497,
+    "pronounce_text_end": 1594
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 253548,
+    "time_end": 257557.9319727891,
+    "text_begin": 1596,
+    "text_end": 1623,
+    "pronounce_text_begin": 1594,
+    "pronounce_text_end": 1620
+  }
+]

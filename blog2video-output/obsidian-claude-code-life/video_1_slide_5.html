@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+
+    .bg-glow {
+      position: absolute; width: 700px; height: 700px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+      top: 350px; left: 50%; transform: translateX(-50%); pointer-events: none;
+    }
+
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-card {
+      width: 100%;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-mark {
+      font-size: 64px;
+      color: #10B981;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .quote-text {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+
+    .quote-text .accent { color: #10B981; }
+
+    .action-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+    }
+
+    .action-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .action-steps {
+      list-style: none;
+    }
+
+    .action-steps li {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      padding: 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .action-steps li .step-num {
+      color: #8B5CF6;
+      font-weight: 800;
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .action-steps li strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="section-label">TAKEAWAY</div>
+    <div class="quote-card">
+      <div class="quote-mark">&ldquo;</div>
+      <div class="quote-text">
+        AI 的能力上限<br>
+        取决于你喂给它的<br>
+        <span class="accent">上下文质量</span>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-label">现在就能做</div>
+      <ul class="action-steps">
+        <li><span class="step-num">01</span>下载 <strong>Obsidian</strong>（免费）</li>
+        <li><span class="step-num">02</span>创建 Vault，写 <strong>3 个项目</strong>的 Markdown</li>
+        <li><span class="step-num">03</span>用 <strong>[[双括号]]</strong> 互相链接起来</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

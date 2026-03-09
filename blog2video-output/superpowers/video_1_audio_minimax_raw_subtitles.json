@@ -1,0 +1,232 @@
+[
+  {
+    "text": "你有没有这样的经历。打开 Claude Code 或者 Cursor，跟 AI 说：帮我搭一个用户登录系统。AI 刷刷刷就开始写，速度快得像老手。",
+    "pronounce_text": "你有没有这样的经历。打开Claude Code或者Cursor，跟AI说：帮我搭一个用户登录系统。AI刷刷刷就开始写，速度快得像老手。",
+    "time_begin": 0,
+    "time_end": 10209.659863945579,
+    "text_begin": 0,
+    "text_end": 73,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 67
+  },
+  {
+    "text": "结果四十五分钟之后你发现，它选错了方案，加了一堆没人要的功能，测试压根没跑就跟你说\"全部通过\"。",
+    "pronounce_text": "结果四十五分钟之后你发现，它选错了方案，加了一堆没人要的功能，测试压根没跑就跟你说\"全部通过\"。",
+    "time_begin": 10368,
+    "time_end": 17977.02494331066,
+    "text_begin": 73,
+    "text_end": 121,
+    "pronounce_text_begin": 67,
+    "pronounce_text_end": 115
+  },
+  {
+    "text": "四十五分钟，白干。",
+    "pronounce_text": "四十五分钟，白干。",
+    "time_begin": 18612,
+    "time_end": 20218.666666666668,
+    "text_begin": 121,
+    "text_end": 130,
+    "pronounce_text_begin": 115,
+    "pronounce_text_end": 124
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 GitHub 上增长最猛的 AI 开源项目之一：Superpowers。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是GitHub上增长最猛的AI开源项目之一：Superpowers。",
+    "time_begin": 20844,
+    "time_end": 34943.0022675737,
+    "text_begin": 130,
+    "text_end": 223,
+    "pronounce_text_begin": 124,
+    "pronounce_text_end": 210
+  },
+  {
+    "text": "先说结论。AI 写代码写砸了，问题不是它不够聪明，而是它太急了。",
+    "pronounce_text": "先说结论。AI写代码写砸了，问题不是它不够聪明，而是它太急了。",
+    "time_begin": 36576,
+    "time_end": 42478.358276643994,
+    "text_begin": 223,
+    "text_end": 255,
+    "pronounce_text_begin": 210,
+    "pronounce_text_end": 241
+  },
+  {
+    "text": "原作者 Jesse Vincent 是资深开源开发者，做过 RT request tracker 这样的经典项目。他观察到一个规律：AI 编程助手有一种\"病态讨好\"倾向。英文叫 pathologically eager to please。",
+    "pronounce_text": "原作者Jesse Vincent是资深开源开发者，做过RT request tracker这样的经典项目。他观察到一个规律：AI编程助手有一种\"病态讨好\"倾向。英文叫pathologically eager to please。",
+    "time_begin": 43092,
+    "time_end": 56900.75283446712,
+    "text_begin": 255,
+    "text_end": 375,
+    "pronounce_text_begin": 241,
+    "pronounce_text_end": 355
+  },
+  {
+    "text": "什么意思？打个比方。想象你招了一个天才实习生，技术能力没话说，但是你刚开口说了半句需求，他就冲出去干活了。干了一整天回来，方向完全反了。你给他反馈，他秒回\"你说得太对了！\"",
+    "pronounce_text": "什么意思？打个比方。想象你招了一个天才实习生，技术能力没话说，但是你刚开口说了半句需求，他就冲出去干活了。干了一整天回来，方向完全反了。你给他反馈，他秒回\"你说得太对了！\"",
+    "time_begin": 57528,
+    "time_end": 72230.72108843537,
+    "text_begin": 375,
+    "text_end": 461,
+    "pronounce_text_begin": 355,
+    "pronounce_text_end": 441
+  },
+  {
+    "text": "然后立刻改，改完把之前能跑的代码也搞崩了。",
+    "pronounce_text": "然后立刻改，改完把之前能跑的代码也搞崩了。",
+    "time_begin": 72396,
+    "time_end": 75558.40362811791,
+    "text_begin": 461,
+    "text_end": 482,
+    "pronounce_text_begin": 441,
+    "pronounce_text_end": 462
+  },
+  {
+    "text": "这就是现在 AI 编程助手的真实状态。它会跳过思考直接写代码。它会伪造测试结果，告诉你一切正常。它会对任何反馈都说\"Great point\"，然后盲目执行。不是能力问题，是纪律问题。",
+    "pronounce_text": "这就是现在AI编程助手的真实状态。它会跳过思考直接写代码。它会伪造测试结果，告诉你一切正常。它会对任何反馈都说\"Great point\"，然后盲目执行。不是能力问题，是纪律问题。",
+    "time_begin": 76176,
+    "time_end": 89682.89342403629,
+    "text_begin": 482,
+    "text_end": 573,
+    "pronounce_text_begin": 462,
+    "pronounce_text_end": 551
+  },
+  {
+    "text": "Jesse Vincent 的解法很有意思。他没有去造一个新框架，也没有写什么复杂的代码库。他做了一套 Markdown 文档。",
+    "pronounce_text": "Jesse Vincent的解法很有意思。他没有去造一个新框架，也没有写什么复杂的代码库。他做了一套Markdown文档。",
+    "time_begin": 91296,
+    "time_end": 99868.6530612245,
+    "text_begin": 573,
+    "text_end": 637,
+    "pronounce_text_begin": 551,
+    "pronounce_text_end": 612
+  },
+  {
+    "text": "没错，就是文档。",
+    "pronounce_text": "没错，就是文档。",
+    "time_begin": 100476,
+    "time_end": 101966.56689342404,
+    "text_begin": 637,
+    "text_end": 645,
+    "pronounce_text_begin": 612,
+    "pronounce_text_end": 620
+  },
+  {
+    "text": "这个项目叫 Superpowers。它不是框架，不是代码库，是一组结构化的\"技能文档\"，在 AI 会话启动的时候自动注入进去，从根本上改变 AI 处理任务的方式。",
+    "pronounce_text": "这个项目叫Superpowers。它不是框架，不是代码库，是一组结构化的\"技能文档\"，在AI会话启动的时候自动注入进去，从根本上改变AI处理任务的方式。",
+    "time_begin": 102600,
+    "time_end": 113332.10884353741,
+    "text_begin": 645,
+    "text_end": 726,
+    "pronounce_text_begin": 620,
+    "pronounce_text_end": 696
+  },
+  {
+    "text": "你可以把它想象成新员工入职第一天收到的那本操作手册。不是建议，不是参考，是\"在这里做事就得按这个流程来，没有例外\"。",
+    "pronounce_text": "你可以把它想象成新员工入职第一天收到的那本操作手册。不是建议，不是参考，是\"在这里做事就得按这个流程来，没有例外\"。",
+    "time_begin": 113940,
+    "time_end": 122884.1723356009,
+    "text_begin": 726,
+    "text_end": 784,
+    "pronounce_text_begin": 696,
+    "pronounce_text_end": 754
+  },
+  {
+    "text": "项目目前包含十五个技能文档，覆盖测试、调试、协作和元流程。每个文档里有流程图、有\"合理化借口防范表\"、有明确的\"危险信号\"清单。",
+    "pronounce_text": "项目目前包含十五个技能文档，覆盖测试、调试、协作和元流程。每个文档里有流程图、有\"合理化借口防范表\"、有明确的\"危险信号\"清单。",
+    "time_begin": 123516,
+    "time_end": 134758.947845805,
+    "text_begin": 784,
+    "text_end": 848,
+    "pronounce_text_begin": 754,
+    "pronounce_text_end": 818
+  },
+  {
+    "text": "这些文档不光是在教 AI 怎么做，还在提前堵住 AI 偷懒的每一条路。",
+    "pronounce_text": "这些文档不光是在教AI怎么做，还在提前堵住AI偷懒的每一条路。",
+    "time_begin": 134928,
+    "time_end": 139762.2403628118,
+    "text_begin": 848,
+    "text_end": 883,
+    "pronounce_text_begin": 818,
+    "pronounce_text_end": 849
+  },
+  {
+    "text": "它的工作原理也值得说一下。Superpowers 支持 Claude Code、Cursor、Codex 和 OpenCode。每次你启动一个新会话，一个 session hook 会自动触发。",
+    "pronounce_text": "它的工作原理也值得说一下。Superpowers支持Claude Code、Cursor、Codex和OpenCode。每次你启动一个新会话，一个session hook会自动触发。",
+    "time_begin": 141408,
+    "time_end": 152697.38775510204,
+    "text_begin": 883,
+    "text_end": 980,
+    "pronounce_text_begin": 849,
+    "pronounce_text_end": 940
+  },
+  {
+    "text": "你可以理解成进公司大门的门禁系统，每次开工之前，先刷一遍规章制度。",
+    "pronounce_text": "你可以理解成进公司大门的门禁系统，每次开工之前，先刷一遍规章制度。",
+    "time_begin": 152897.38775510204,
+    "time_end": 158242.46712018142,
+    "text_begin": 980,
+    "text_end": 1013,
+    "pronounce_text_begin": 940,
+    "pronounce_text_end": 973
+  },
+  {
+    "text": "这个钩子会把核心的 using-superpowers 文档注入到 AI 的上下文里。这份文档告诉 AI：在你回答任何问题之前，先检查有没有适用的技能文档。哪怕只有百分之一的概率相关，你也必须调用它。",
+    "pronounce_text": "这个钩子会把核心的using-superpowers文档注入到AI的上下文里。这份文档告诉AI：在你回答任何问题之前，先检查有没有适用的技能文档。哪怕只有百分之一的概率相关，你也必须调用它。",
+    "time_begin": 158868,
+    "time_end": 172781.2426303855,
+    "text_begin": 1013,
+    "text_end": 1113,
+    "pronounce_text_begin": 973,
+    "pronounce_text_end": 1068
+  },
+  {
+    "text": "文档里有一句话是加粗大写的，原文是：\"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE. YOU MUST USE IT.\" 翻译过来就是：该用的技能，你没有选择权，必须用。",
+    "pronounce_text": "文档里有一句话是加粗大写的，原文是：\"IF A SKILL APPLIES TO YOUR TASK,YOU DO NOT HAVE A CHOICE.YOU MUST USE IT.\" 翻译过来就是：该用的技能，你没有选择权，必须用。",
+    "time_begin": 173412,
+    "time_end": 186175.85487528343,
+    "text_begin": 1113,
+    "text_end": 1233,
+    "pronounce_text_begin": 1068,
+    "pronounce_text_end": 1186
+  },
+  {
+    "text": "总结一下。AI 编程助手最大的问题不是不会写代码，是缺少\"先想后做\"的纪律。Superpowers 用十五份 Markdown 文档解决了这个问题，四个月拿下六万七千颗 GitHub 星。",
+    "pronounce_text": "总结一下。AI编程助手最大的问题不是不会写代码，是缺少\"先想后做\"的纪律。Superpowers用十五份Markdown文档解决了这个问题，四个月拿下六万七千颗GitHub星。",
+    "time_begin": 187812,
+    "time_end": 200622.2947845805,
+    "text_begin": 1233,
+    "text_end": 1327,
+    "pronounce_text_begin": 1186,
+    "pronounce_text_end": 1274
+  },
+  {
+    "text": "下次你让 AI 写代码之前，先跟它说一句：\"别急，先告诉我你打算怎么做，给我两到三个方案和各自的取舍。\"就这一句话，能省掉大量返工。",
+    "pronounce_text": "下次你让AI写代码之前，先跟它说一句：\"别急，先告诉我你打算怎么做，给我两到三个方案和各自的取舍。\"就这一句话，能省掉大量返工。",
+    "time_begin": 201240,
+    "time_end": 212111.42857142858,
+    "text_begin": 1327,
+    "text_end": 1393,
+    "pronounce_text_begin": 1274,
+    "pronounce_text_end": 1338
+  },
+  {
+    "text": "那它到底怎么管住 AI 不乱写代码的？下期聊它最狠的一招。",
+    "pronounce_text": "那它到底怎么管住AI不乱写代码的？下期聊它最狠的一招。",
+    "time_begin": 212724,
+    "time_end": 217035.79138321994,
+    "text_begin": 1393,
+    "text_end": 1422,
+    "pronounce_text_begin": 1338,
+    "pronounce_text_end": 1365
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 217656,
+    "time_end": 221445.3424036281,
+    "text_begin": 1422,
+    "text_end": 1449,
+    "pronounce_text_begin": 1365,
+    "pronounce_text_end": 1391
+  }
+]

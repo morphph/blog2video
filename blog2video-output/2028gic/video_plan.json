@@ -1,0 +1,155 @@
+{
+  "blog_metadata": {
+    "title": "The 2028 Global Intelligence Crisis",
+    "title_zh": "2028全球智能危机：当AI把白领全部淘汰之后",
+    "word_count": 4200,
+    "complexity": "high",
+    "depth_score": 9,
+    "slug": "2028gic"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "文章覆盖AI颠覆→行业崩塌→金融危机→政策瘫痪四大板块，数据密集、逻辑链条长，拆分为三个独立视频分别聚焦「死亡螺旋机制+行业坍塌」「金融危机连锁反应」「制度性重定价与未来走向」，每个视频都有独立的叙事弧和冲击力数据点。",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI引爆死亡螺旋！SaaS估值暴跌80%，这些行业正在被团灭",
+        "hook_question": "如果AI让一个程序员几周就能复制一个中型SaaS产品，那现在估值几十亿的软件公司还值多少钱？",
+        "core_thesis": "AI带来的「廉价智能」触发了自我强化的死亡螺旋——公司裁员省钱投AI，被裁的人减少消费，公司收入下降被迫更激进地自动化，形成没有刹车的恶性循环，最终导致软件、中介、支付三大行业系统性坍塌。",
+        "source_sections": ["The Initial Disruption (2025-2026)", "The Feedback Loop", "Sectoral Collapse"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "SaaS估值倍数从25倍EBITDA压缩到5-8倍，相当于价值蒸发了70%以上",
+        "emotion_arc": "好奇→震惊→恐惧→深思",
+        "must_include_details": [
+          "2026年开发者可以几周内复制中型SaaS产品",
+          "SaaS估值倍数从25x压缩到5-8x EBITDA",
+          "佣金模式行业（房产、外卖、旅游）崩塌——摩擦力趋近于零",
+          "AI代理按价格优化不讲品牌忠诚度",
+          "机器对机器商务转向区块链稳定币，银行卡手续费收入受压",
+          "被AI威胁最大的公司反而成为AI最激进的采用者"
+        ],
+        "actionable_takeaway": "审视自己所在行业的「中介摩擦」含量——如果你的工作本质是信息撮合或流程中转，立刻开始学习AI工具并建立不可替代的人际信任资产",
+        "key_concepts": [
+          {
+            "concept_en": "Abundant Intelligence",
+            "concept_zh": "廉价智能/智能过剩",
+            "analogy_direction": "就像工业革命让体力劳动廉价化一样，AI让脑力劳动也变成了白菜价",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Deflationary Feedback Loop",
+            "concept_zh": "通缩死亡螺旋",
+            "analogy_direction": "像多米诺骨牌：裁员→消费下降→营收萎缩→更多裁员，就像2008年房价下跌的恶性循环，只不过这次倒下的是白领岗位",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Multiple Compression",
+            "concept_zh": "估值倍数压缩",
+            "analogy_direction": "把估值比作房价，SaaS公司原来是学区房卖25倍租金，现在变成了郊区老房子只值5倍租金",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Friction-to-Zero",
+            "concept_zh": "摩擦力归零",
+            "analogy_direction": "中介行业就像收过路费的，AI把路全修成了免费高速公路，收费站直接没生意了",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI不是在优化行业，而是在消灭行业——当智能变得廉价，靠信息差和流程摩擦赚钱的商业模式会系统性坍塌。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "AI引爆的金融核弹：50亿美元违约只是开始，13万亿房贷市场才是真正的定时炸弹",
+        "hook_question": "信用评分780以上、首付20%的优质房贷借款人突然开始断供——不是因为他们不靠谱，而是因为AI把他们的工作消灭了。这意味着什么？",
+        "core_thesis": "AI导致的行业坍塌不只是科技圈的事——它通过私募信贷违约和房贷断供两条路径，把危机传导到了整个金融系统。当「放贷那天贷款是好的，但世界在那之后变了」，所有基于历史数据的风控模型全部失效。",
+        "source_sections": ["Financial Crisis", "The Mortgage Question"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Zendesk的50亿美元信贷设施成为历史上最大的软件行业违约，穆迪一次性下调了180亿美元软件债务评级",
+        "emotion_arc": "铺垫→逐步揭示→高潮冲击→余震恐惧",
+        "must_include_details": [
+          "穆迪下调180亿美元软件债务评级",
+          "Zendesk 50亿美元信贷成为史上最大软件违约",
+          "保险担保融资模式暴雷",
+          "13万亿美元住宅房贷市场受到威胁",
+          "信用评分780+、首付20%的优质借款人开始断供",
+          "旧金山、西雅图、奥斯汀等科技重镇早期违约率飙升",
+          "放贷那天贷款是好的，但世界在那之后变了"
+        ],
+        "actionable_takeaway": "重新评估自己的债务杠杆和现金储备——如果你的收入来源高度依赖可能被AI替代的岗位，现在就开始降低负债率并建立至少12个月的应急资金",
+        "key_concepts": [
+          {
+            "concept_en": "Private Credit Contagion",
+            "concept_zh": "私募信贷传染链",
+            "analogy_direction": "就像2008年次贷从房贷蔓延到整个金融系统，这次是从软件公司的杠杆收购贷款开始往外扩散",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Prime Borrower Distress",
+            "concept_zh": "优质借款人暴雷",
+            "analogy_direction": "以前银行觉得学历高、薪资高的人是最安全的借款人，就像觉得大厂员工买房最稳——结果AI一来，这些人反而成了最先断供的群体",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Model Breakdown",
+            "concept_zh": "风控模型失效",
+            "analogy_direction": "所有风控模型都是「后视镜开车」，用过去的数据预测未来——但AI带来的是结构性断裂，就像用晴天的天气模型来预测台风",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Insurance-Backed Funding Exposure",
+            "concept_zh": "保险担保融资暴雷",
+            "analogy_direction": "保险公司给软件公司的债务做担保，以为很安全——就像给泰坦尼克号买保险，觉得永远不会沉一样",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI危机不会止步于科技行业——它正在通过信贷和房贷两条金融管道，把冲击波传导到每一个普通人的房子和存款上。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "劳动收入占GDP暴跌10个百分点！当人类智力不再稀缺，整个社会怎么办？",
+        "hook_question": "人类花了几千年建立的社会契约——学习、工作、纳税、贷款买房——全都建立在一个前提上：人类智力是稀缺的。如果这个前提不存在了呢？",
+        "core_thesis": "AI不只是技术问题，而是在动摇整个社会的制度基础——劳动力市场、税收体系、房贷制度都建立在「人类智力稀缺」的假设上。当这个假设被打破，政府既要给失业者发更多钱，又收不到足够的税，陷入财政死局。",
+        "source_sections": ["Policy Response", "Intelligence Premium Unwind", "Conclusion"],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "劳动收入占GDP比重从2024年的56%暴跌到46%——仅两年时间就下降了10个百分点",
+        "emotion_arc": "宏观视角切入→制度性震撼→深层焦虑→理性反思→警醒",
+        "must_include_details": [
+          "劳动收入占GDP比重从56%降至46%",
+          "「过渡经济法案」和「共享AI繁荣法案」国会僵局",
+          "政府面临悖论：需要给家庭转移更多资金但税收在减少",
+          "人类智力溢价的历史基础：稀缺性",
+          "机器智能正在跨白领岗位进行替代",
+          "文章结尾：金丝雀还活着——这是情景分析不是预测，但风险被严重低估"
+        ],
+        "actionable_takeaway": "开始培养AI无法替代的核心能力——深度人际关系、跨文化判断力、物理世界操作能力——同时关注政策动向，提前规划自己在「后智能稀缺时代」的定位",
+        "key_concepts": [
+          {
+            "concept_en": "Intelligence Premium Unwind",
+            "concept_zh": "智力溢价瓦解",
+            "analogy_direction": "就像印刷术发明后抄书匠失去了高薪地位——人类智力曾经是稀缺资源所以值钱，现在AI让它变得廉价了",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Fiscal Paralysis",
+            "concept_zh": "财政死局",
+            "analogy_direction": "政府就像一个收入骤降但开支暴增的家庭——工资少了一半但房贷、孩子学费一分不能少，只能靠刷信用卡撑着",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Institutional Repricing",
+            "concept_zh": "制度性重定价",
+            "analogy_direction": "整个社会制度就像一栋大楼，地基是「人的脑力值钱」这个假设——现在地基被AI抽走了，从劳动法到房贷制度，每一层楼都要重新审视",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "The Canary Metaphor",
+            "concept_zh": "金丝雀预警",
+            "analogy_direction": "矿井里的金丝雀还活着，但空气已经开始变差——现在还没爆发不代表风险不存在，只是我们还在窗口期",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI带来的不是一次技术升级，而是一次文明级别的制度重定价——我们有一个窗口期来准备，但这个窗口正在关闭。"
+      }
+    ]
+  }
+}

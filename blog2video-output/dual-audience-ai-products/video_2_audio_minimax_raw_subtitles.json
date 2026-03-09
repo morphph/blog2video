@@ -1,0 +1,242 @@
+[
+  {
+    "text": "你听说过 UX 用户体验，也听说过 DX 开发者体验。但你听说过 AX 吗？Agent Experience——AI Agent 的使用体验。",
+    "pronounce_text": "你听说过UX用户体验，也听说过DX开发者体验。但你听说过AX吗？Agent Experience AI Agent的使用体验。",
+    "time_begin": 0,
+    "time_end": 9536.281179138323,
+    "text_begin": 0,
+    "text_end": 71,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 63
+  },
+  {
+    "text": "Agent 选工具不看广告、不看品牌，只看文档清不清晰、API 好不好用、响应快不快。",
+    "pronounce_text": "Agent选工具不看广告、不看品牌，只看文档清不清晰、API好不好用、响应快不快。",
+    "time_begin": 9736.281179138323,
+    "time_end": 17159.54648526077,
+    "text_begin": 71,
+    "text_end": 114,
+    "pronounce_text_begin": 63,
+    "pronounce_text_end": 104
+  },
+  {
+    "text": "它零容忍失败，也不会点\"联系销售\"。",
+    "pronounce_text": "它零容忍失败，也不会点\"联系销售\"。",
+    "time_begin": 17316,
+    "time_end": 20072.054421768706,
+    "text_begin": 114,
+    "text_end": 132,
+    "pronounce_text_begin": 104,
+    "pronounce_text_end": 122
+  },
+  {
+    "text": "这里是 AI 精读。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们继续聊双受众 AI 产品的核心概念和技术基础。",
+    "pronounce_text": "这里是AI精读。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们继续聊双受众AI产品的核心概念和技术基础。",
+    "time_begin": 20700,
+    "time_end": 31652.698412698413,
+    "text_begin": 132,
+    "text_end": 209,
+    "pronounce_text_begin": 122,
+    "pronounce_text_end": 192
+  },
+  {
+    "text": "先来理清 UX、DX 和 AX 的关系。",
+    "pronounce_text": "先来理清UX、DX和AX的关系。",
+    "time_begin": 33300,
+    "time_end": 35974.78458049887,
+    "text_begin": 209,
+    "text_end": 229,
+    "pronounce_text_begin": 192,
+    "pronounce_text_end": 208
+  },
+  {
+    "text": "UX 是给用户铺红毯，DX 是给程序员修高速路，AX 是给 AI Agent 建专用车道。三条道各走各的，但目的地相同——让你的产品被顺畅使用。",
+    "pronounce_text": "UX是给用户铺红毯，DX是给程序员修高速路，AX是给AI Agent建专用车道。三条道各走各的，但目的地相同让你的产品被顺畅使用。",
+    "time_begin": 36612,
+    "time_end": 48563.15646258503,
+    "text_begin": 229,
+    "text_end": 301,
+    "pronounce_text_begin": 208,
+    "pronounce_text_end": 273
+  },
+  {
+    "text": "区别在哪？人类用户容忍度高。页面加载慢三秒，他骂两句，但仍然会等。开发者碰到 SDK 的坑，翻翻 Stack Overflow 也能绕过去。",
+    "pronounce_text": "区别在哪？人类用户容忍度高。页面加载慢三秒，他骂两句，但仍然会等。开发者碰到SDK的坑，翻翻Stack Overflow也能绕过去。",
+    "time_begin": 49176,
+    "time_end": 60569.87755102041,
+    "text_begin": 301,
+    "text_end": 371,
+    "pronounce_text_begin": 273,
+    "pronounce_text_end": 339
+  },
+  {
+    "text": "但 Agent 完全不同。API 返回一个模糊的错误信息，它不会猜，直接放弃，换下一个工具。没有结构化文档？它根本发现不了你。",
+    "pronounce_text": "但Agent完全不同。API返回一个模糊的错误信息，它不会猜，直接放弃，换下一个工具。没有结构化文档？它根本发现不了你。",
+    "time_begin": 61200,
+    "time_end": 70411.20181405896,
+    "text_begin": 371,
+    "text_end": 434,
+    "pronounce_text_begin": 339,
+    "pronounce_text_end": 399
+  },
+  {
+    "text": "这个概念最早由 Netlify CEO Mathias Biilmann 提出。他的判断是：AX 已经成了产品设计的新战场。你的对手不只是功能更强的产品，而是文档写得更好的产品。",
+    "pronounce_text": "这个概念最早由Netlify CEO Mathias Biilmann提出。他的判断是：AX已经成了产品设计的新战场。你的对手不只是功能更强的产品，而是文档写得更好的产品。",
+    "time_begin": 71028,
+    "time_end": 83838.2947845805,
+    "text_begin": 434,
+    "text_end": 523,
+    "pronounce_text_begin": 399,
+    "pronounce_text_end": 485
+  },
+  {
+    "text": "理解了 AX，下一个问题是：Agent 通过什么方式连接你的产品？答案是三大协议。",
+    "pronounce_text": "理解了AX，下一个问题是：Agent通过什么方式连接你的产品？答案是三大协议。",
+    "time_begin": 85464,
+    "time_end": 92329.98639455783,
+    "text_begin": 523,
+    "text_end": 564,
+    "pronounce_text_begin": 485,
+    "pronounce_text_end": 524
+  },
+  {
+    "text": "第一个，MCP，Model Context Protocol，Anthropic 出品。它解决的是 Agent 怎么调用工具。你可以把它理解成\"AI 的 USB-C 接口\"。",
+    "pronounce_text": "第一个，MCP，Model Context Protocol，Anthropic出品。它解决的是Agent怎么调用工具。你可以把它理解成\"AI的USB-C接口\"。",
+    "time_begin": 92952,
+    "time_end": 103904.69841269842,
+    "text_begin": 564,
+    "text_end": 651,
+    "pronounce_text_begin": 524,
+    "pronounce_text_end": 605
+  },
+  {
+    "text": "以前每个工具都要写专门的对接代码，有了 MCP，一个标准接口全兼容。",
+    "pronounce_text": "以前每个工具都要写专门的对接代码，有了MCP，一个标准接口全兼容。",
+    "time_begin": 104104.69841269842,
+    "time_end": 109531.04761904762,
+    "text_begin": 651,
+    "text_end": 685,
+    "pronounce_text_begin": 605,
+    "pronounce_text_end": 638
+  },
+  {
+    "text": "第二个，A2A，Agent2Agent Protocol，Google 出品，超过 150 个组织参与。它解决的是 Agent 之间怎么协作。MCP 是 Agent 调工具，A2A 是 Agent 调 Agent。",
+    "pronounce_text": "第二个，A2A，Agent2Agent Protocol，Google出品，超过一百五十个组织参与。它解决的是Agent之间怎么协作。MCP是Agent调工具，A2A是Agent调Agent。",
+    "time_begin": 110160,
+    "time_end": 122482.67573696145,
+    "text_begin": 685,
+    "text_end": 792,
+    "pronounce_text_begin": 638,
+    "pronounce_text_end": 734
+  },
+  {
+    "text": "就像企业间有标准合同，统一格式才能高效合作。",
+    "pronounce_text": "就像企业间有标准合同，统一格式才能高效合作。",
+    "time_begin": 122682.67573696145,
+    "time_end": 126251.42857142858,
+    "text_begin": 792,
+    "text_end": 814,
+    "pronounce_text_begin": 734,
+    "pronounce_text_end": 756
+  },
+  {
+    "text": "第三个，llms.txt。你知道 robots.txt 吧？它告诉搜索引擎\"你能爬哪些页面\"。llms.txt 做类似的事：告诉 AI\"我这个网站能做什么、API 怎么用\"。",
+    "pronounce_text": "第三个，llms.txt。你知道robots.txt吧？它告诉搜索引擎\"你能爬哪些页面\"。llms.txt做类似的事：告诉AI\"我这个网站能做什么、API怎么用\"。",
+    "time_begin": 126864,
+    "time_end": 140370.89342403627,
+    "text_begin": 814,
+    "text_end": 901,
+    "pronounce_text_begin": 756,
+    "pronounce_text_end": 838
+  },
+  {
+    "text": "相当于给 Agent 写了一份自我介绍。",
+    "pronounce_text": "相当于给Agent写了一份自我介绍。",
+    "time_begin": 140570.89342403627,
+    "time_end": 142502.6394557823,
+    "text_begin": 901,
+    "text_end": 921,
+    "pronounce_text_begin": 838,
+    "pronounce_text_end": 856
+  },
+  {
+    "text": "三者的分工很清晰：MCP 管\"怎么用\"，A2A 管\"怎么合作\"，llms.txt 管\"怎么被发现\"。缺一不可。",
+    "pronounce_text": "三者的分工很清晰：MCP管\"怎么用\"，A2A管\"怎么合作\"，llms.txt管\"怎么被发现\"。缺一不可。",
+    "time_begin": 143136,
+    "time_end": 153450.14965986394,
+    "text_begin": 921,
+    "text_end": 976,
+    "pronounce_text_begin": 856,
+    "pronounce_text_end": 908
+  },
+  {
+    "text": "说到这儿，分享一个让我印象很深的案例。",
+    "pronounce_text": "说到这儿，分享一个让我印象很深的案例。",
+    "time_begin": 155088,
+    "time_end": 157878.8843537415,
+    "text_begin": 976,
+    "text_end": 995,
+    "pronounce_text_begin": 908,
+    "pronounce_text_end": 927
+  },
+  {
+    "text": "Supabase 被 Agent 选为默认的 Postgres 工具。注意，不是因为功能最强，也不是价格最低——而是因为文档写得最好。",
+    "pronounce_text": "Supabase被Agent选为默认的Postgres工具。注意，不是因为功能最强，也不是价格最低而是因为文档写得最好。",
+    "time_begin": 158508,
+    "time_end": 166012.53514739228,
+    "text_begin": 995,
+    "text_end": 1062,
+    "pronounce_text_begin": 927,
+    "pronounce_text_end": 987
+  },
+  {
+    "text": "这就是 AX 的力量。Agent 只看文档清晰度、API 质量和响应速度。你投再多广告它看不到，销售团队再强它不会接电话。唯一能打动它的，是技术文档和 API 接口。",
+    "pronounce_text": "这就是AX的力量。Agent只看文档清晰度、API质量和响应速度。你投再多广告它看不到，销售团队再强它不会接电话。唯一能打动它的，是技术文档和API接口。",
+    "time_begin": 166644,
+    "time_end": 179965.13378684808,
+    "text_begin": 1062,
+    "text_end": 1145,
+    "pronounce_text_begin": 987,
+    "pronounce_text_end": 1064
+  },
+  {
+    "text": "从 UX 到 DX 再到 AX，产品设计进入了多受众时代。MCP、A2A、llms.txt 三大协议，就是连接人类世界和 Agent 世界的桥梁。",
+    "pronounce_text": "从UX到DX再到AX，产品设计进入了多受众时代。MCP、A2A、llms.txt三大协议，就是连接人类世界和Agent世界的桥梁。",
+    "time_begin": 181584,
+    "time_end": 192826.947845805,
+    "text_begin": 1145,
+    "text_end": 1218,
+    "pronounce_text_begin": 1064,
+    "pronounce_text_end": 1129
+  },
+  {
+    "text": "你现在就可以做一件事：给你的产品做一次 AX 审计。检查 API 文档是否机器可读，错误信息是否结构化，有没有 MCP Server 或 llms.txt。",
+    "pronounce_text": "你现在就可以做一件事：给你的产品做一次AX审计。检查API文档是否机器可读，错误信息是否结构化，有没有MCP Server或llms.txt。",
+    "time_begin": 193464,
+    "time_end": 206413.61451247166,
+    "text_begin": 1218,
+    "text_end": 1296,
+    "pronounce_text_begin": 1129,
+    "pronounce_text_end": 1200
+  },
+  {
+    "text": "列出 Agent 使用你产品时的所有卡点，逐个消除。",
+    "pronounce_text": "列出Agent使用你产品时的所有卡点，逐个消除。",
+    "time_begin": 206613.61451247166,
+    "time_end": 210147.53741496598,
+    "text_begin": 1296,
+    "text_end": 1322,
+    "pronounce_text_begin": 1200,
+    "pronounce_text_end": 1224
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 210780,
+    "time_end": 215463.31065759636,
+    "text_begin": 1322,
+    "text_end": 1349,
+    "pronounce_text_begin": 1224,
+    "pronounce_text_end": 1250
+  }
+]

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 36px;
+      line-height: 1.3;
+    }
+    .title .accent { color: #F59E0B; }
+    .timeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .timeline-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .version-tag {
+      background: rgba(59, 130, 246, 0.15);
+      color: #3B82F6;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+      min-width: 72px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .timeline-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .timeline-text .highlight {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .cost-section {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+    }
+    .cost-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    .cost-card.main {
+      border-left: 4px solid #10B981;
+    }
+    .cost-card.sub {
+      border-left: 4px solid #8B5CF6;
+    }
+    .cost-card.setup {
+      border-left: 4px solid #F59E0B;
+    }
+    .cost-num {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .cost-num.green { color: #10B981; }
+    .cost-num.purple { color: #8B5CF6; }
+    .cost-num.yellow { color: #F59E0B; }
+    .cost-label {
+      font-size: 19px;
+      color: #6B7280;
+      margin-top: 8px;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">实证数据</div>
+    <div class="title">每条规则背后的<span class="accent">翻车案例</span></div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="version-tag">v3.2</div>
+        <div class="timeline-text"><span class="highlight">命名空间标准化</span><br>Agent被不一致引用搞糊涂</div>
+      </div>
+      <div class="timeline-item">
+        <div class="version-tag">v3.2.2</div>
+        <div class="timeline-text"><span class="highlight">强化反借口机制</span><br>Agent偷偷跳过技能</div>
+      </div>
+      <div class="timeline-item">
+        <div class="version-tag">v4.0</div>
+        <div class="timeline-text"><span class="highlight">双阶段代码审查</span><br>单人审查总漏掉规格问题</div>
+      </div>
+      <div class="timeline-item">
+        <div class="version-tag">v4.3</div>
+        <div class="timeline-text"><span class="highlight">头脑风暴硬门禁</span><br>模型总跳过设计直接写代码</div>
+      </div>
+    </div>
+    <div class="cost-section">
+      <div class="cost-card main">
+        <div class="cost-num green">$4.67</div>
+        <div class="cost-label">完整工作流<br>总API成本</div>
+      </div>
+      <div class="cost-card sub">
+        <div class="cost-num purple">$0.09</div>
+        <div class="cost-label">每个子Agent<br>调用成本</div>
+      </div>
+      <div class="cost-card setup">
+        <div class="cost-num yellow">30s</div>
+        <div class="cost-label">安装时间<br>两条命令</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

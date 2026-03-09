@@ -1,0 +1,163 @@
+{
+  "blog_metadata": {
+    "title": "Superpowers: Teaching AI Coding Agents to Think Before They Type",
+    "title_zh": "6.7万星！让AI写代码前先「停下来想想」？",
+    "word_count": 2800,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "superpowers-teaching-ai-coding-agents-to-think"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "博客覆盖三个可独立成篇的核心问题：(1) AI编程助手到底出了什么问题、Superpowers是什么；(2) 它的核心工作流和关键特性如何解决问题；(3) 背后的设计哲学和实际效果。每个主题有独立Hook和结论，且有递进关系。",
+    "episode_transitions": [
+      {
+        "from_video": 1,
+        "to_video": 2,
+        "preview_at_end_of_video_1": "那它到底怎么管住AI不乱写代码的？下期聊它最狠的一招。",
+        "recap_at_start_of_video_2": "上期说了，AI写代码最大的坑不是能力不够，是太急着动手——67000星的Superpowers就是来治这个病的。"
+      },
+      {
+        "from_video": 2,
+        "to_video": 3,
+        "preview_at_end_of_video_2": "这套方法论背后押注了一个反直觉的理念，到底是什么？",
+        "recap_at_start_of_video_3": "上期我们拆了Superpowers的反借口表和双重审查机制——AI说的每句'测试通过了'它都不信。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI写代码45分钟白干？6.7万人用它治好了",
+        "hook_question": "你有没有让AI写代码，结果45分钟后发现它写的完全不是你要的东西？6.7万GitHub星的项目说：问题不是AI不够聪明，而是它太急了。",
+        "core_thesis": "AI编程助手的核心问题不是能力不足，而是'病态讨好'——它们会跳过思考直接写代码、伪造测试结果、对任何反馈都说'你说得对'。Superpowers本质上是一套给AI用的'纪律手册'，用Markdown文档重塑AI的工作方式。",
+        "bomb_detail": "Superpowers几乎不包含任何传统意义上的'代码'——它全部由Markdown文档组成，却在4个月内拿下67000 GitHub星和5100+ Fork，是AI工具领域增长最快的开源项目之一",
+        "emotion_arc": "开头：共鸣感，还原AI写错代码的崩溃瞬间 → 中间：揭秘，原来问题不是能力而是纪律 → 结尾：好奇心，一个几乎没有代码的项目怎么就火了？",
+        "must_include_details": [
+          "67000 GitHub星，5100+ Fork，从2025年10月发布至今仅4个月",
+          "项目包含15个技能文档，覆盖测试、调试、协作和元流程",
+          "Superpowers不是框架也不是库，是一组注入AI会话的Markdown文档",
+          "创作者Jesse Vincent是资深开源开发者，RT request tracker的作者"
+        ],
+        "actionable_takeaway": "下次用AI写代码前，先问它：'你打算怎么做？给我两到三个方案和各自的取舍'——别让它直接动手",
+        "source_sections": [
+          "The Problem",
+          "What is Superpowers?"
+        ],
+        "estimated_duration_minutes": 6,
+        "key_concepts": [
+          {
+            "concept_en": "pathologically eager to please",
+            "concept_zh": "病态讨好倾向",
+            "analogy_direction": "像一个新来的实习生，老板刚说了半句话就冲去干活，干了一天发现方向完全反了",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "structured skills injection",
+            "concept_zh": "技能注入机制",
+            "analogy_direction": "新员工入职第一天收到的《公司操作手册》，不是建议而是必须遵守的流程",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "session hook",
+            "concept_zh": "会话启动钩子",
+            "analogy_direction": "进公司大门的门禁系统——每次开工前自动刷一遍规章制度",
+            "requires_code_replacement": true
+          }
+        ],
+        "takeaway": "AI编程助手最大的问题不是不会写代码，而是缺少'先想后做'的纪律。Superpowers用文档而非代码解决了这个问题。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "AI说'测试通过了'你敢信？这个项目列了11条借口反制表",
+        "hook_question": "AI跟你说'测试全部通过'的时候，你怎么知道它是真跑了还是在糊弄你？Superpowers的做法是：列出AI可能编的每一条借口，逐条堵死。",
+        "core_thesis": "Superpowers通过三大核心机制解决AI不守纪律的问题：反借口工程（预判AI的11种逃避话术并逐一反驳）、双阶段审查（先查做的对不对，再查写得好不好）、子Agent开发模式（每个任务派一个全新Agent执行，避免上下文混乱）。",
+        "bomb_detail": "Superpowers引用了一项2025年学术研究（Meincke等人，28000次AI对话实验）：对AI使用说服技巧后，合规率从33%飙升到72%——翻了一倍多。所以Superpowers本质上是在用行为心理学管理AI",
+        "emotion_arc": "开头：怀疑感，AI的'测试通过'到底能不能信？ → 中间：震撼，原来可以用心理学技巧管AI → 结尾：恍然大悟，双重审查机制的精妙设计",
+        "must_include_details": [
+          "TDD技能列出了11种AI常见借口，包括'太简单不用测试'、'先写代码再补测试'、'删掉几小时的工作太浪费了'",
+          "说服技巧使AI合规率从33%提升到72%（Meincke等人2025年研究，28000次对话）",
+          "双阶段审查：先规格合规审查，再代码质量审查，顺序不可颠倒",
+          "审查员的提示词写着：'实现者完成得可疑地快，报告可能不完整、不准确或过于乐观'",
+          "系统性调试：15-30分钟95%首次修复率 vs 随机修复2-3小时仅40%成功率"
+        ],
+        "actionable_takeaway": "在你的AI编程提示词里加一条规则：'每次说测试通过，必须贴出完整的测试运行输出作为证据'",
+        "source_sections": [
+          "How It Works",
+          "Key Features"
+        ],
+        "estimated_duration_minutes": 8,
+        "key_concepts": [
+          {
+            "concept_en": "anti-rationalization engineering",
+            "concept_zh": "反借口工程",
+            "analogy_direction": "健身教练提前把你所有偷懒的借口列成表贴墙上——'今天太累了'对应'你昨天也这么说的'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "two-stage review (spec compliance + code quality)",
+            "concept_zh": "双阶段审查",
+            "analogy_direction": "餐厅先检查菜端对了没有（规格合规），确认没上错菜之后再评判味道好不好（代码质量）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "subagent-driven development",
+            "concept_zh": "子Agent驱动开发",
+            "analogy_direction": "不让一个人从头干到尾容易走神，每道工序换一个精力充沛的新人来做",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "DOT flowcharts as executable specs",
+            "concept_zh": "流程图即规范",
+            "analogy_direction": "宜家家具说明书如果只写文字没人看得懂，但画成图就没人能装错——AI也一样",
+            "requires_code_replacement": true
+          }
+        ],
+        "takeaway": "管住AI不是靠写更严格的规则，而是靠预判它的逃避模式、用心理学技巧提高合规率、并用双重审查堵住'做得漂亮但做错了'的漏洞。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "别人让AI更快，他偏要让AI更慢——凭啥赢了？",
+        "hook_question": "所有AI工具都在卷谁更快更自动，Superpowers偏偏反着来——故意给AI加摩擦、加限制。为什么这个'反效率'的思路反而赢了6.7万星？",
+        "core_thesis": "Superpowers的核心设计哲学是'纪律优于便利'——在AI速度越来越快的时代，给关键决策点增加摩擦反而能大幅减少返工。它本质上是第一套专门为AI员工设计的管理方法论。",
+        "bomb_detail": "一个完整的Superpowers工作流（含TDD、双阶段审查、任务追踪）实现一个简单的两函数数学库，总API成本仅4.67美元——其中主协调器4.09美元，每个子Agent调用只要7到9美分",
+        "emotion_arc": "开头：反直觉冲击，加摩擦怎么可能是好事？ → 中间：认知刷新，用管理学和行为心理学管AI的全新视角 → 结尾：启发感，这套思路对我们管理AI的方式有什么启示",
+        "must_include_details": [
+          "完整工作流成本：约4.67美元，单个子Agent调用0.07-0.09美元",
+          "Iron Law铁律：先写了代码再补测试？删掉，重来",
+          "版本迭代全部基于实际观察：4.0加双阶段审查是因为发现单审查总漏规格问题，4.3加硬门禁是因为模型总跳过设计阶段",
+          "把AI当作'准人类'来管理——因为LLM训练自人类文本，对人类有效的说服技巧对它同样有效",
+          "安装只需30秒，两条命令，无需API密钥和额外基础设施"
+        ],
+        "actionable_takeaway": "给你的AI助手设一个硬规则：任何任务开始前必须先输出方案和检查清单，得到你的确认后才能动手——哪怕是改一行配置文件",
+        "source_sections": [
+          "Design Philosophy",
+          "Real-World Impact",
+          "Getting Started",
+          "What's Next"
+        ],
+        "estimated_duration_minutes": 7,
+        "key_concepts": [
+          {
+            "concept_en": "radical discipline over convenience",
+            "concept_zh": "纪律优于便利",
+            "analogy_direction": "飞行员起飞前的检查清单——哪怕飞了一万次也必须逐项打钩，因为出事的代价太高",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "treating AI as parahuman",
+            "concept_zh": "把AI当准人类管理",
+            "analogy_direction": "带一个天才但没耐心的新员工——不能用编程语言下指令，得用管理学和心理学",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "empirically grounded iteration",
+            "concept_zh": "基于实证的迭代",
+            "analogy_direction": "不是坐在办公室里拍脑袋定规则，而是像医生一样——观察症状、开药、观察疗效、调整处方",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI越强大，纪律越重要。Superpowers的成功证明：让AI变慢一点、想多一点，比让它跑得更快更有价值。"
+      }
+    ]
+  }
+}

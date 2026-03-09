@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .section-title { font-size: 42px; font-weight: 800; margin-bottom: 48px; }
+    .section-title .accent { color: #10B981; }
+    .signals { width: 100%; display: flex; flex-direction: column; gap: 24px; }
+    .signal-card { background: #1A1A2E; border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 12px; padding: 28px 28px 28px 28px; display: flex; align-items: flex-start; gap: 20px; text-align: left; position: relative; }
+    .signal-num { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; flex-shrink: 0; }
+    .signal-1 .signal-num { background: rgba(59, 130, 246, 0.15); color: #3B82F6; }
+    .signal-2 .signal-num { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+    .signal-3 .signal-num { background: rgba(245, 158, 11, 0.15); color: #F59E0B; }
+    .signal-content { flex: 1; }
+    .signal-symptom { font-size: 28px; font-weight: 700; color: #FFFFFF; margin-bottom: 8px; line-height: 1.4; }
+    .signal-symptom .red { color: #EF4444; }
+    .signal-rx { font-size: 24px; color: #B0B0CC; line-height: 1.5; }
+    .signal-rx .cmd { font-family: 'SF Mono', 'JetBrains Mono', monospace; color: #10B981; font-weight: 700; background: rgba(16, 185, 129, 0.1); padding: 2px 8px; border-radius: 6px; }
+    .good-news { width: 100%; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.06)); border: 1px solid rgba(16, 185, 129, 0.3); border-left: 4px solid #10B981; border-radius: 12px; padding: 24px 28px; margin-top: 32px; text-align: left; }
+    .good-news-text { font-size: 28px; color: #FFFFFF; font-weight: 600; line-height: 1.5; }
+    .good-news-text .green { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-title"><span class="accent">三个信号</span>，该不该动手？</div>
+    <div class="signals">
+      <div class="signal-card signal-1">
+        <div class="signal-num">1</div>
+        <div class="signal-content">
+          <div class="signal-symptom">每次新对话都要<span class="red">从头解释</span></div>
+          <div class="signal-rx">你需要 <span class="cmd">/context</span> 一次性加载背景</div>
+        </div>
+      </div>
+      <div class="signal-card signal-2">
+        <div class="signal-num">2</div>
+        <div class="signal-content">
+          <div class="signal-symptom">笔记越来越多，<span class="red">翻旧笔记越来越少</span></div>
+          <div class="signal-rx">你需要 <span class="cmd">/emerge</span> <span class="cmd">/trace</span> 挖旧笔记</div>
+        </div>
+      </div>
+      <div class="signal-card signal-3">
+        <div class="signal-num">3</div>
+        <div class="signal-content">
+          <div class="signal-symptom">感觉在忙，<span class="red">说不清在忙什么</span></div>
+          <div class="signal-rx">你需要 <span class="cmd">/drift</span> 对比意图 vs 行动</div>
+        </div>
+      </div>
+    </div>
+    <div class="good-news">
+      <div class="good-news-text"><span class="green">好消息：</span>用自然语言告诉 Claude Code 你想要什么，它就能帮你建好</div>
+    </div>
+  </div>
+</body>
+</html>

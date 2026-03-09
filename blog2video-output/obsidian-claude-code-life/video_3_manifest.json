@@ -1,0 +1,12 @@
+{
+  "video_number": 3,
+  "title": "让AI自己给你造工具？Meta-prompting太离谱了",
+  "cover_photo": "video_3_cover_photo.html",
+  "slides": [
+    {"slide_number": 1, "file": "video_3_slide_1.html", "estimated_duration_seconds": 35},
+    {"slide_number": 2, "file": "video_3_slide_2.html", "estimated_duration_seconds": 100},
+    {"slide_number": 3, "file": "video_3_slide_3.html", "estimated_duration_seconds": 135},
+    {"slide_number": 4, "file": "video_3_slide_4.html", "estimated_duration_seconds": 80},
+    {"slide_number": 5, "file": "video_3_slide_5.html", "estimated_duration_seconds": 70}
+  ]
+}

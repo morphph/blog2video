@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 120px 72px 520px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .giant-letters { font-size: 220px; font-weight: 900; letter-spacing: 12px; background: linear-gradient(135deg, #F59E0B, #EF4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1.1; margin-bottom: 16px; }
+    .subtitle { font-size: 48px; font-weight: 700; color: #B0B0CC; margin-bottom: 72px; letter-spacing: 4px; }
+    .pain-points { display: flex; flex-direction: column; gap: 24px; width: 100%; }
+    .pain-point { background: #1A1A2E; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 24px 32px; display: flex; align-items: center; gap: 20px; text-align: left; }
+    .pain-icon { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+    .pain-icon.red { background: rgba(239, 68, 68, 0.15); }
+    .pain-text { font-size: 32px; font-weight: 600; color: #FFFFFF; line-height: 1.4; }
+    .pain-text .highlight { color: #EF4444; font-weight: 700; }
+    .tag { position: absolute; top: 120px; left: 72px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 20px; padding: 8px 20px; font-size: 24px; color: #F59E0B; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">Agent Experience</div>
+    <div class="giant-letters">AX</div>
+    <div class="subtitle">Agent Experience</div>
+    <div class="pain-points">
+      <div class="pain-point">
+        <div class="pain-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18.364 5.636a1 1 0 00-1.414 0L12 10.586 7.05 5.636a1 1 0 10-1.414 1.414L10.586 12l-4.95 4.95a1 1 0 101.414 1.414L12 13.414l4.95 4.95a1 1 0 001.414-1.414L13.414 12l4.95-4.95a1 1 0 000-1.414z" fill="#EF4444"/></svg>
+        </div>
+        <div class="pain-text"><span class="highlight">零容忍</span>失败 — 一次报错就走</div>
+      </div>
+      <div class="pain-point">
+        <div class="pain-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18.364 5.636a1 1 0 00-1.414 0L12 10.586 7.05 5.636a1 1 0 10-1.414 1.414L10.586 12l-4.95 4.95a1 1 0 101.414 1.414L12 13.414l4.95 4.95a1 1 0 001.414-1.414L13.414 12l4.95-4.95a1 1 0 000-1.414z" fill="#EF4444"/></svg>
+        </div>
+        <div class="pain-text">不会点<span class="highlight">"联系销售"</span></div>
+      </div>
+      <div class="pain-point">
+        <div class="pain-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18.364 5.636a1 1 0 00-1.414 0L12 10.586 7.05 5.636a1 1 0 10-1.414 1.414L10.586 12l-4.95 4.95a1 1 0 101.414 1.414L12 13.414l4.95 4.95a1 1 0 001.414-1.414L13.414 12l4.95-4.95a1 1 0 000-1.414z" fill="#EF4444"/></svg>
+        </div>
+        <div class="pain-text">只看<span class="highlight">文档 / API / 速度</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

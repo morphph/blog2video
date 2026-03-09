@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A; font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .series-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 600;
+      margin-bottom: 48px;
+    }
+    .title-text {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .title-text .red { color: #EF4444; }
+    .title-text .yellow { color: #F59E0B; }
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .stat-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 40px;
+      text-align: center;
+      flex: 1;
+    }
+    .stat-card.purple-border {
+      border-left: 4px solid #8B5CF6;
+    }
+    .stat-card.red-border {
+      border-left: 4px solid #EF4444;
+    }
+    .stat-number {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-number.purple { color: #8B5CF6; }
+    .stat-number.red { color: #EF4444; }
+    .stat-label {
+      font-size: 24px;
+      color: #6B7280;
+      font-weight: 500;
+    }
+    .stat-sublabel {
+      font-size: 20px;
+      color: #B0B0CC;
+      margin-top: 4px;
+    }
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+    }
+    .hook-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #F59E0B;
+      border-radius: 12px 0 0 12px;
+    }
+    .hook-label {
+      font-size: 18px;
+      color: #F59E0B;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .hook-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .hook-list li {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.4;
+      padding-left: 20px;
+      position: relative;
+    }
+    .hook-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #F59E0B;
+    }
+    .hook-list li .white { color: #FFFFFF; font-weight: 600; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="series-tag">精读AI &middot; AI思想</div>
+
+  <div class="title-text">
+    <span class="red">700个AI</span>在上班<br>这不是未来，是<span class="yellow">现在</span>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card purple-border">
+      <div class="stat-number purple">1000</div>
+      <div class="stat-label">真人员工</div>
+      <div class="stat-sublabel">Notion</div>
+    </div>
+    <div class="stat-card red-border">
+      <div class="stat-number red">700<span style="font-size:40px;">+</span></div>
+      <div class="stat-label">AI Agent</div>
+      <div class="stat-sublabel">每天在干活</div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-label">AGENT 日常工作</div>
+    <ul class="hook-list">
+      <li><span class="white">记会议纪要</span> · 回答IT问题</li>
+      <li><span class="white">整理客户反馈</span> · 帮新人入职</li>
+      <li>Ivan Zhao说：这才是 <span class="white">baby steps</span></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

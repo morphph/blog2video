@@ -1,35 +1,42 @@
-# Effective Harnesses for Long-Running Agents
+# Effective harnesses for long-running agents
 
-## Introduction
+Published Nov 26, 2025
 
-As AI agents become increasingly capable, developers are asking them to handle complex tasks spanning hours or days. However, maintaining consistent progress across multiple context windows remains challenging.
+Agents still face challenges working across many context windows. We looked to human engineers for inspiration in creating a more effective harness for long-running agents.
 
-The core issue: agents work in discrete sessions with no memory of previous work. Like engineers on shifts with no handoff documentation, agents struggle to bridge gaps between coding sessions due to limited context windows.
+As AI agents become more capable, developers are increasingly asking them to take on complex tasks requiring work that spans hours, or even days. However, getting agents to make consistent progress across multiple context windows remains an open problem.
 
-## Solution Overview
+The core challenge of long-running agents is that they must work in discrete sessions, and each new session begins with no memory of what came before. Imagine a software project staffed by engineers working in shifts, where each new engineer arrives with no memory of what happened on the previous shift. Because context windows are limited, and because most complex projects cannot be completed within a single window, agents need a way to bridge the gap between coding sessions.
 
-Anthropic developed a two-part approach using the Claude Agent SDK:
+We developed a two-fold solution to enable the Claude Agent SDK to work effectively across many context windows: an initializer agent that sets up the environment on the first run, and a coding agent that is tasked with making incremental progress in every session, while leaving clear artifacts for the next session. You can find code examples in the accompanying quickstart.
 
-1. **Initializer Agent** - Sets up the environment on first run
-2. **Coding Agent** - Makes incremental progress while leaving clear artifacts for the next session
+## The long-running agent problem
 
-Code examples are available in the quickstart repository.
+The Claude Agent SDK is a powerful, general-purpose agent harness adept at coding, as well as other tasks that require the model to use tools to gather context, plan, and execute. It has context management capabilities such as compaction, which enables an agent to work on a task without exhausting the context window. Theoretically, given this setup, it should be possible for an agent to continue to do useful work for an arbitrarily long time.
 
-## The Long-Running Agent Problem
+However, compaction isn't sufficient. Out of the box, even a frontier coding model like Opus 4.5 running on the Claude Agent SDK in a loop across multiple context windows will fall short of building a production-quality web app if it's only given a high-level prompt, such as "build a clone of claude.ai."
 
-Even frontier models like Opus 4.5 struggle with high-level prompts like "build a claude.ai clone" across multiple context windows. Two failure patterns emerged:
+Claude's failures manifested in two patterns. First, the agent tended to try to do too much at once—essentially to attempt to one-shot the app. Often, this led to the model running out of context in the middle of its implementation, leaving the next session to start with a feature half-implemented and undocumented. The agent would then have to guess at what had happened, and spend substantial time trying to get the basic app working again. This happens even with compaction, which doesn't always pass perfectly clear instructions to the next agent.
 
-**Pattern 1:** Agents attempt too much at once, running out of context mid-implementation, leaving features undocumented and forcing subsequent sessions to troubleshoot rather than progress.
+A second failure mode would often occur later in a project. After some features had already been built, a later agent instance would look around, see that progress had been made, and declare the job done.
 
-**Pattern 2:** Later agent instances declare projects complete after seeing progress, without finishing all required features.
+This decomposes the problem into two parts. First, we need to set up an initial environment that lays the foundation for all the features that a given prompt requires, which sets up the agent to work step-by-step and feature-by-feature. Second, we should prompt each agent to make incremental progress towards its goal while also leaving the environment in a clean state at the end of a session. By "clean state" we mean the kind of code that would be appropriate for merging to a main branch: there are no major bugs, the code is orderly and well-documented, and in general, a developer could easily begin work on a new feature without first having to clean up an unrelated mess.
 
-The solution decomposes into two parts: establish an initial environment supporting *all* required features, and prompt each agent to make incremental progress while maintaining clean, mergeable code.
+When experimenting internally, we addressed these problems using a two-part solution:
 
-## Environment Management
+**Initializer agent:** The very first agent session uses a specialized prompt that asks the model to set up the initial environment: an init.sh script, a claude-progress.txt file that keeps a log of what agents have done, and an initial git commit that shows what files were added.
 
-### Feature List
+**Coding agent:** Every subsequent session asks the model to make incremental progress, then leave structured updates.
 
-The initializer agent creates a comprehensive JSON file with 200+ features marked as "failing":
+The key insight here was finding a way for agents to quickly understand the state of work when starting with a fresh context window, which is accomplished with the claude-progress.txt file alongside the git history. Inspiration for these practices came from knowing what effective software engineers do every day.
+
+## Environment management
+
+In the updated Claude 4 prompting guide, we shared some best practices for multi-context window workflows, including a harness structure that uses "a different prompt for the very first context window." This "different prompt" requests that the initializer agent set up the environment with all the necessary context that future coding agents will need to work effectively. Here, we provide a deeper dive on some of the key components of such an environment.
+
+### Feature list
+
+To address the problem of the agent one-shotting an app or prematurely considering the project complete, we prompted the initializer agent to write a comprehensive file of feature requirements expanding on the user's initial prompt. In the claude.ai clone example, this meant over 200 features, such as "a user can open a new chat, type in a query, press enter, and see an AI response." These features were all initially marked as "failing" so that later coding agents would have a clear outline of what full functionality looked like.
 
 ```json
 {
@@ -46,63 +53,72 @@ The initializer agent creates a comprehensive JSON file with 200+ features marke
 }
 ```
 
-Instructions emphasize: "It is unacceptable to remove or edit tests because this could lead to missing or buggy functionality." JSON format reduces inappropriate model modifications versus Markdown.
+We prompt coding agents to edit this file only by changing the status of a passes field, and we use strongly-worded instructions like "It is unacceptable to remove or edit tests because this could lead to missing or buggy functionality." After some experimentation, we landed on using JSON for this, as the model is less likely to inappropriately change or overwrite JSON files compared to Markdown files.
 
-### Incremental Progress
+### Incremental progress
 
-Coding agents work on one feature at a time. Clean state is maintained through:
-- Git commits with descriptive messages
-- Progress file summaries
-- Ability to revert failed changes
+Given this initial environment scaffolding, the next iteration of the coding agent was then asked to work on only one feature at a time. This incremental approach turned out to be critical to addressing the agent's tendency to do too much at once.
 
-This eliminates wasted time guessing at prior work.
+Once working incrementally, it's still essential that the model leaves the environment in a clean state after making a code change. In our experiments, we found that the best way to elicit this behavior was to ask the model to commit its progress to git with descriptive commit messages and to write summaries of its progress in a progress file. This allowed the model to use git to revert bad code changes and recover working states of the code base.
+
+These approaches also increased efficiency, as they eliminated the need for an agent to have to guess at what had happened and spend its time trying to get the basic app working again.
 
 ### Testing
 
-Claude initially marked features complete without proper end-to-end testing. Explicit prompting to use browser automation tools (Puppeteer MCP) dramatically improved verification. Agents tested like human users rather than relying on unit tests or curl commands.
+One final major failure mode that we observed was Claude's tendency to mark a feature as complete without proper testing. Absent explicit prompting, Claude tended to make code changes, and even do testing with unit tests or curl commands against a development server, but would fail recognize that the feature didn't work end-to-end.
 
-Limitations remain: Claude cannot see browser-native alert modals through Puppeteer, making features relying on these modals buggier.
+In the case of building a web app, Claude mostly did well at verifying features end-to-end once explicitly prompted to use browser automation tools and do all testing as a human user would.
 
-## Getting Up to Speed
+Providing Claude with these kinds of testing tools dramatically improved performance, as the agent was able to identify and fix bugs that weren't obvious from the code alone.
 
-Each session follows these steps:
+Some issues remain, like limitations to Claude's vision and to browser automation tools making it difficult to identify every kind of bug. For example, Claude can't see browser-native alert modals through the Puppeteer MCP, and features relying on these modals tended to be buggier as a result.
 
-1. Run `pwd` to verify working directory
-2. Read git logs and progress files for recent context
-3. Review feature list and select highest-priority incomplete feature
+### Getting up to speed
 
-An `init.sh` script runs the development server, and agents perform basic end-to-end testing before implementing new features.
+With all of the above in place, every coding agent is prompted to run through a series of steps to get its bearings, some quite basic but still helpful:
 
-Typical session start:
+1. Run pwd to see the directory you're working in. You'll only be able to edit files in this directory.
+2. Read the git logs and progress files to get up to speed on what was recently worked on.
+3. Read the features list file and choose the highest-priority feature that's not yet done to work on.
+
+This approach saves Claude some tokens in every session since it doesn't have to figure out how to test the code. It also helps to ask the initializer agent to write an init.sh script that can run the development server, and then run through a basic end-to-end test before implementing a new feature.
+
+In the case of the claude.ai clone, this meant that the agent always started the local development server and used the Puppeteer MCP to start a new chat, send a message, and receive a response. This ensured that Claude could quickly identify if the app had been left in a broken state, and immediately fix any existing bugs. If the agent had instead started implementing a new feature, it would likely make the problem worse.
+
+Given all this, a typical session starts off with the following assistant messages:
+
 ```
 [Assistant] I'll start by getting my bearings and understanding the current state of the project.
-[Tool Use] bash - pwd
-[Tool Use] read - claude-progress.txt
-[Tool Use] read - feature_list.json
+[Tool Use] <bash - pwd>
+[Tool Use] <read - claude-progress.txt>
+[Tool Use] <read - feature_list.json>
 [Assistant] Let me check the git log to see recent work.
-[Tool Use] bash - git log --oneline -20
+[Tool Use] <bash - git log --oneline -20>
+[Assistant] Now let me check if there's an init.sh script to restart the servers.
+<Starts the development server>
+[Assistant] Excellent! Now let me navigate to the application and verify that some fundamental features are still working.
+<Tests basic functionality>
+[Assistant] Based on my verification testing, I can see that the fundamental functionality is working well. The core chat features, theme switching, conversation loading, and error handling are all functioning correctly. Now let me review the tests.json file more comprehensively to understand what needs to be implemented next.
+<Starts work on a new feature>
 ```
 
-## Agent Failure Modes and Solutions
+## Agent failure modes and solutions
 
 | Problem | Initializer Agent Behavior | Coding Agent Behavior |
 |---------|---------------------------|----------------------|
-| Declares victory too early | Set up feature list file with end-to-end descriptions | Read feature list at session start; work on single features |
-| Leaves buggy code | Create git repo and progress notes file | Read progress/logs; run basic tests; commit with updates |
-| Marks features done prematurely | Set up feature list file | Self-verify all features before marking passing |
-| Wastes time figuring out app setup | Write init.sh script | Start session by reading init.sh |
+| Claude declares victory on the entire project too early. | Set up a feature list file: based on the input spec, set up a structured JSON file with a list of end-to-end feature descriptions. | Read the feature list file at the beginning of a session. Choose a single feature to start working on. |
+| Claude leaves the environment in a state with bugs or undocumented progress. | An initial git repo and progress notes file is written. | Start the session by reading the progress notes file and git commit logs, and run a basic test on the development server to catch any undocumented bugs. End the session by writing a git commit and progress update. |
+| Claude marks features as done prematurely. | Set up a feature list file. | Self-verify all features. Only mark features as "passing" after careful testing. |
+| Claude has to spend time figuring out how to run the app. | Write an init.sh script that can run the development server. | Start the session by reading init.sh. |
 
-## Future Work
+## Future work
 
-Key open questions remain:
+This research demonstrates one possible set of solutions in a long-running agent harness to enable the model to make incremental progress across many context windows. However, there remain open questions.
 
-- Does a single general-purpose agent outperform specialized agents (testing, QA, cleanup)?
-- Can these findings generalize beyond web app development to scientific research or financial modeling?
+Most notably, it's still unclear whether a single, general-purpose coding agent performs best across contexts, or if better performance can be achieved through a multi-agent architecture. It seems reasonable that specialized agents like a testing agent, a quality assurance agent, or a code cleanup agent, could do an even better job at sub-tasks across the software development lifecycle.
 
-The approach is optimized for full-stack development but offers lessons applicable across domains requiring long-running autonomous work.
+Additionally, this demo is optimized for full-stack web app development. A future direction is to generalize these findings to other fields. It's likely that some or all of these lessons can be applied to the types of long-running agentic tasks required in, for example, scientific research or financial modeling.
 
-## Acknowledgements
+---
 
-Written by Justin Young. The work reflects efforts from Anthropic's code RL and Claude Code teams.
-
-Footnote: The initializer and coding agents differ only in initial prompts; system prompts, tools, and harness are identical.
+Written by Justin Young. Special thanks to David Hershey, Prithvi Rajasakeran, Jeremy Hadfield, Naia Bouscal, Michael Tingley, Jesse Mu, Jake Eaton, Marius Buleandara, Maggie Vo, Pedram Navid, Nadine Yasser, and Alex Notov for their contributions.

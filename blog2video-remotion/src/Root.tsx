@@ -1,8 +1,8 @@
-import { Composition } from "remotion";
+import { Composition, registerRoot } from "remotion";
 import { BlogVideo } from "./compositions/BlogVideo";
 import videoConfig from "./data/video_config.json";
 
-export const RemotionRoot: React.FC = () => {
+const RemotionRoot: React.FC = () => {
   const fps = videoConfig.fps || 30;
   const totalDuration = videoConfig.slides.reduce(
     (sum: number, s: any) =>
@@ -23,3 +23,5 @@ export const RemotionRoot: React.FC = () => {
     />
   );
 };
+
+registerRoot(RemotionRoot);

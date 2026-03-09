@@ -1,6 +1,6 @@
 # AI Agent连续工作就崩溃？失忆才是元凶
 
-[SLIDE 1: cover]
+[SLIDE 1: cover] (0:00 - 0:25)
 
 想象一下，你的公司每天换一批新员工，没有交接文档，没有代码注释，每个人上班第一件事就是猜昨天做了什么。
 
@@ -8,7 +8,7 @@
 
 这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 官方工程博客：《Effective Harnesses for Long-Running Agents》。
 
-[SLIDE 2: principle]
+[SLIDE 2: principle] (0:25 - 1:50)
 
 先说一个反直觉的事实。你可能觉得，模型够强就行了，让它一直跑不就完了？
 
@@ -18,7 +18,7 @@ Anthropic自己做了实验——用最强的Opus 4.5跑Claude Agent SDK，给�
 
 你可能会问，不是有Compaction吗？可以把之前的内容压缩一下继续用。没错，但压缩就像把一本详细的项目手册缩成一页摘要——关键细节会丢失。
 
-[SLIDE 3: comparison_cards]
+[SLIDE 3: comparison_cards] (1:50 - 3:30)
 
 Anthropic发现，Agent翻车不是随机的，而是两种固定模式反复出现。
 
@@ -30,7 +30,7 @@ Anthropic发现，Agent翻车不是随机的，而是两种固定模式反复出
 
 这就像公司里项目经理先做好规划和文档，然后工程师按照计划一步步执行，每个人下班前必须写交接笔记。
 
-[SLIDE 4: checklist]
+[SLIDE 4: checklist] (3:30 - 4:30)
 
 所以，如果你现在在做Agent工作流，可以对照检查这几点。
 
@@ -42,7 +42,7 @@ Anthropic发现，Agent翻车不是随机的，而是两种固定模式反复出
 
 这三条，就是Anthropic双Agent架构的核心交接协议。
 
-[SLIDE 5: summary]
+[SLIDE 5: summary] (4:30 - 5:00)
 
 今天的核心结论：AI Agent不是不够聪明，而是缺少跨Context Window的记忆传递机制。没有交接协议的Agent，就像没有交接文档的换班——必然翻车。
 

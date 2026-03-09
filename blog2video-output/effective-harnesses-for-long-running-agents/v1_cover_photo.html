@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      font-weight: 600;
+      margin-bottom: 48px;
+      letter-spacing: 2px;
+    }
+    .main-title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .main-title .highlight-red {
+      color: #EF4444;
+    }
+    .main-title .highlight-orange {
+      color: #F59E0B;
+    }
+    .source-tag {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 999px;
+      padding: 14px 36px;
+      font-size: 26px;
+      color: #B0B0CC;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · AI Agent翻车模式</div>
+    <div class="main-title">
+      AI Agent跑几小时<br>就<span class="highlight-red">废</span>了？<br>3个<span class="highlight-orange">致命翻车</span>模式
+    </div>
+    <div class="source-tag">Effective Harnesses for Long-Running Agents</div>
+  </div>
+</body>
+</html>

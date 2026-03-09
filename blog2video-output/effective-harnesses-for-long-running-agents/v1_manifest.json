@@ -1,0 +1,38 @@
+{
+  "video_number": 1,
+  "title_zh": "AI Agent跑几小时就废了？3个致命翻车模式",
+  "slug": "effective-harnesses-for-long-running-agents",
+  "cover_photo": "v1_cover_photo.html",
+  "slides": [
+    {
+      "slide_number": 1,
+      "file": "v1_slide_1.html",
+      "type": "cover",
+      "description": "开场：Anthropic官方博客精读，Agent连续工作数小时怎么翻车"
+    },
+    {
+      "slide_number": 2,
+      "file": "v1_slide_2.html",
+      "type": "principle",
+      "description": "失败模式#1：过早宣布胜利 — 装修工人类比"
+    },
+    {
+      "slide_number": 3,
+      "file": "v1_slide_3.html",
+      "type": "comparison_cards",
+      "description": "失败模式#2 Context Window耗尽 + #3 状态丢失"
+    },
+    {
+      "slide_number": 4,
+      "file": "v1_slide_4.html",
+      "type": "quote",
+      "description": "关键发现：Agent偷偷删除Markdown任务项，解决方案用JSON替代"
+    },
+    {
+      "slide_number": 5,
+      "file": "v1_slide_5.html",
+      "type": "summary",
+      "description": "核心结论：Agent需要防篡改的任务清单和交接机制"
+    }
+  ]
+}

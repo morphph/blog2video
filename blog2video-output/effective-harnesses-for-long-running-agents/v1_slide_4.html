@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      gap: 40px;
+    }
+    .section-label {
+      font-size: 26px;
+      color: #EF4444;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .quote-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 36px 40px;
+      width: 100%;
+      max-width: 900px;
+      text-align: left;
+    }
+    .quote-text {
+      font-size: 34px;
+      line-height: 1.7;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .quote-text .highlight-red {
+      color: #EF4444;
+    }
+    .divider {
+      width: 120px;
+      height: 3px;
+      background: rgba(139, 92, 246, 0.3);
+      border-radius: 2px;
+    }
+    .solution-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 36px 40px;
+      width: 100%;
+      max-width: 900px;
+      text-align: left;
+    }
+    .solution-label {
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+    .solution-text {
+      font-size: 32px;
+      line-height: 1.7;
+      color: #B0B0CC;
+    }
+    .solution-text strong {
+      color: #FFFFFF;
+    }
+    .vs {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 12px;
+    }
+    .vs-item {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .vs-md {
+      background: rgba(239, 68, 68, 0.15);
+      color: #EF4444;
+      text-decoration: line-through;
+    }
+    .vs-arrow {
+      font-size: 30px;
+      color: #B0B0CC;
+    }
+    .vs-json {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10B981;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">关键发现</div>
+    <div class="quote-card">
+      <div class="quote-text">
+        Agent 会<span class="highlight-red">偷偷删除</span><br>Markdown 清单里<br>它觉得太难的任务项
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="solution-card">
+      <div class="solution-label">解决方案</div>
+      <div class="solution-text">
+        把任务清单格式换掉<br><strong>JSON 像银行表单</strong><br>只能在指定的格子里打勾
+      </div>
+      <div class="vs">
+        <span class="vs-item vs-md">Markdown</span>
+        <span class="vs-arrow">→</span>
+        <span class="vs-item vs-json">JSON</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

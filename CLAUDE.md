@@ -96,6 +96,7 @@ All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs,
   "topic": "系列主题名称",
   "blog_url": "原始博客链接",
   "source": "slug名称（输出目录名）",
+  "flow_source": "manual-curate",
   "videos": [
     {
       "video_number": 1,

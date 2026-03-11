@@ -1,0 +1,66 @@
+{
+  "blog_metadata": {
+    "title": "Run Claude Code programmatically",
+    "title_zh": "用命令行自动化运行 Claude Code",
+    "word_count": 520,
+    "complexity": "medium",
+    "depth_score": 4,
+    "slug": "headless-mode"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "博客不足1000词，围绕单一核心功能（CLI -p 模式）展开，所有示例都是同一模式的变体，适合一个视频讲透",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "一行命令让AI自动改Bug？",
+        "hook_question": "你还在手动打开 Claude Code 一句一句聊天？如果告诉你一行终端命令就能让它自动跑完整个任务——审代码、修Bug、跑测试、甚至帮你写 commit message，你会怎么用？",
+        "core_thesis": "Claude Code 的 -p 模式让你像调用普通命令行工具一样调用 AI agent，可以嵌入脚本和 CI/CD 流水线，实现真正的 AI 自动化",
+        "source_sections": [
+          "Run Claude Code programmatically",
+          "Basic usage",
+          "Examples"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "只需在 claude 命令后加一个 -p 参数，就能把一个交互式 AI 助手变成可被脚本调用的自动化工具——同样的 agent loop、同样的工具链、同样的上下文管理能力，零代码改造",
+        "emotion_arc": "好奇（还能这样用？）→ 恍然大悟（原来就是加个 -p）→ 兴奋（6个实战场景逐个点燃）→ 行动冲动（我今晚就试）",
+        "must_include_details": [
+          "-p 或 --print 参数是核心开关",
+          "--output-format 支持 text / json / stream-json 三种格式",
+          "--allowedTools 可以精确控制工具权限，语法中空格+星号表示前缀匹配",
+          "--continue 和 --resume + session_id 实现多轮对话",
+          "--append-system-prompt 可以自定义角色指令",
+          "可配合 gh pr diff 做自动化 PR 安全审查"
+        ],
+        "actionable_takeaway": "打开终端输入 claude -p \"Summarize this project\" --output-format json 体验你的第一次 AI 自动化调用",
+        "key_concepts": [
+          {
+            "concept_en": "Headless mode / -p flag",
+            "concept_zh": "无头模式 / -p 参数",
+            "analogy_direction": "就像餐厅从堂食变外卖——同样的厨师和菜品，但不需要你坐在店里点单了，打个电话（一行命令）就送到家",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Structured output (--output-format json)",
+            "concept_zh": "结构化输出",
+            "analogy_direction": "就像让快递员不只把包裹扔门口，而是按你要求放指定位置、拍照确认——AI 的回答不再是一段散文，而是你程序能直接解析的标准格式",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Tool allowlisting (--allowedTools)",
+            "concept_zh": "工具白名单授权",
+            "analogy_direction": "就像给保姆配一串钥匙——厨房钥匙可以给，保险箱钥匙不给。你精确控制 AI 能用哪些工具，既放手又放心",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Session continuation (--continue / --resume)",
+            "concept_zh": "会话接续",
+            "analogy_direction": "就像跟同一个医生复诊——不用重新描述病史，上次聊到哪儿接着聊，AI 记得之前的上下文",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "加一个 -p 参数，Claude Code 就从聊天工具变成了你脚本里的自动化引擎"
+      }
+    ]
+  }
+}

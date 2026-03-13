@@ -41,6 +41,13 @@
    - 从 URL 提取 slug
    - 创建输出目录：`./blog2video-output/<slug>/`
    - 将博客原文保存为 `./blog2video-output/<slug>/source_blog.md`
+   - **图片下载**：保存 `source_blog.md` 之后，扫描其中的远程图片引用（`![...](https://...)`），下载到本地：
+     1. 找出所有匹配 `![...](https://...)` 的图片 URL（跳过 `.svg` 后缀）
+     2. 创建 `./blog2video-output/<slug>/images/` 目录
+     3. 用 `curl -sL` 逐个下载，保存为 `images/image_1.jpg`, `image_2.jpg`, ...
+     4. 下载后检查文件大小，删除小于 5KB 的文件（通常是 icon/badge）
+     5. 将 `source_blog.md` 中对应的远程 URL 替换为本地路径 `images/image_N.jpg`
+     6. 如果没有找到任何远程图片引用，跳过此步骤
 
    **d) 本地文件**（其他情况）：
    - 读取文件内容（现有行为）
@@ -49,6 +56,29 @@
    - 将内容保存为 `./blog2video-output/<slug>/source_blog.md`
 
 2. 验证 `source_blog.md` 已生成且非空，否则报错退出
+
+### Step 0.7: Image Enrichment（图片分析）
+
+**由 orchestrator 直接执行，不使用 subagent。** 仅在 `<output-dir>/images/` 目录存在且包含图片文件时执行，否则跳过。
+
+对每张图片（上限 15 张）：
+
+1. 用 Read 工具读取图片文件（多模态读取）
+2. 在 `source_blog.md` 中找到对应的 `![...](images/image_N.jpg)` 引用及其上下文
+3. 判断图片类型：
+   - `diagram`（架构图、流程图、对比表、示意图）→ 详细描述，捕捉标签、数据、布局结构、箭头方向等视觉信息
+   - `photo`（照片、产品截图、实物图）→ 简要描述主要内容
+   - `decorative`（装饰性图片、logo、纯色背景）→ 跳过，不添加描述
+4. 在图片引用的下一行插入描述（使用 Edit 工具）：
+   ```
+   <!-- [IMAGE DESCRIPTION] 2-4句描述，50-150词，捕捉标签、数据、布局结构等视觉信息 [/IMAGE DESCRIPTION] -->
+   ```
+
+描述写作要求：
+- 50-150 词（英文）或等量中文
+- 重点捕捉：标签文字、数据数值、箭头/流程方向、对比项、层级结构
+- 使用客观描述，不做主观评价
+- 结合 `source_blog.md` 中图片周围的文字上下文来理解图片含义
 
 ### Step 1: Content Analyzer（内容分析）
 

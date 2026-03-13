@@ -46,6 +46,7 @@ Puppeteer 提取的 `innerText` 会包含 Twitter 界面元素的文本。
 - 确保图片引用位于相关文本段落附近
 - 如果图片的 caption 是空泛的（如 `Image 1`），根据上下文补充描述性 caption
 - 图片引用应单独成行，前后各有一个空行
+- 图片的视觉内容分析由后续 Step 0.7（Image Enrichment）完成，Twitter Cleaner 只需确保图片引用的位置正确、caption 合理即可，不需要描述图片内容
 
 ### 5. 标题和结构重建
 X 长文章通常有内在的章节结构，但提取后可能丢失。

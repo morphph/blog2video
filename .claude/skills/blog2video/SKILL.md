@@ -5,11 +5,11 @@
 ## Pipeline Overview
 
 ```
-Blog URL    → [Step 0: fetch]             → source_blog.md → [Step 1: Content Analyzer] → ...
-PDF         → [Step 0: pdfminer]          → source_raw.md  → [Step 0.5: PDF Cleaner]         → source_blog.md → [Step 1] → ...
-YouTube     → [Step 0: yt-dlp + VTT]      → source_raw.md  → [Step 0.5: Transcript Organizer] → source_blog.md → [Step 1] → ...
-GitHub repo → [Step 0: git clone]         → repo/           → [Step 0.5: Repo Summarizer]      → source_blog.md → [Step 1] → ...
-Twitter/X   → [Step 0: fetch-twitter.mjs] → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → [Step 1] → ...
+Blog URL    → [Step 0: fetch + download images] → source_blog.md + images/ → [Step 0.7: Image Enrichment] → [Step 1: Content Analyzer] → ...
+PDF         → [Step 0: pdfminer]                → source_raw.md  → [Step 0.5: PDF Cleaner]         → source_blog.md → [Step 1] → ...
+YouTube     → [Step 0: yt-dlp + VTT]            → source_raw.md  → [Step 0.5: Transcript Organizer] → source_blog.md → [Step 1] → ...
+GitHub repo → [Step 0: git clone]               → repo/           → [Step 0.5: Repo Summarizer]      → source_blog.md → [Step 1] → ...
+Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → [Step 0.7: Image Enrichment] → [Step 1] → ...
 
 ... → [Script Writer] → [Slide HTML Generator] → [Remotion Render + TTS] → MP4
 ```
@@ -24,6 +24,7 @@ Twitter/X   → [Step 0: fetch-twitter.mjs] → source_raw.md + images/ → [Ste
 | 0.5 | Transcript Organizer | `source_raw.md`（VTT 纯文本） | `source_blog.md`（结构化 Markdown） |
 | 0.5 | Repo Summarizer | cloned repo + `repo_metadata.txt` | `source_blog.md`（3000-5000词博客文章） |
 | 0.5 | Twitter Cleaner | `source_raw.md`（Puppeteer 提取文本） | `source_blog.md`（清洁 Markdown） |
+| 0.7 | Image Enrichment（orchestrator 直接执行） | `source_blog.md` + `images/` | `source_blog.md`（含 `[IMAGE DESCRIPTION]` 注释） |
 | 1 | Content Analyzer | `source_blog.md` | `video_plan.json` |
 | 2 | Script Writer | video_plan.json + `source_blog.md` | `video_N_script.md` (每个视频一个) |
 | 3 | Slide HTML Generator | video_N_script.md | `slide_N.html` + `cover_photo.html` + `manifest.json` |
@@ -69,7 +70,8 @@ Slash command `/blog2video` 的执行流程：
 
 ```
 1. 读取内容（URL fetch / pdfminer / yt-dlp / git clone）
-1.5. 内容预处理（按输入类型）：PDF → PDF Cleaner / YouTube → Transcript Organizer / GitHub → Repo Summarizer / Twitter/X → Twitter Cleaner / 博客 → 跳过
+1.5. 内容预处理（按输入类型）：PDF → PDF Cleaner / YouTube → Transcript Organizer / GitHub → Repo Summarizer / Twitter/X → Twitter Cleaner / 博客 → 跳过（博客 URL 在 Step 0 中已下载图片）
+1.7. Image Enrichment（orchestrator 直接执行）：检查 images/ 目录，对每张图片用 Read 多模态读取并在 source_blog.md 中插入 `[IMAGE DESCRIPTION]` 描述。无图片则跳过
 2. 调用 Content Analyzer subagent → 输出 video_plan.json
 3. 检查 video_plan.json，确认视频数量
 4. 对每个视频，依次调用：

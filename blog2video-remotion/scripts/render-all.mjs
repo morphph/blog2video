@@ -123,13 +123,23 @@ function buildVideoConfig(videoNumber, subtitlesPath, manifestPath) {
     fps: 30,
     width: 1080,
     height: 1920,
-    slides: manifest.slides.map((s) => ({
-      slide_number: s.slide_number,
-      type: "image",
-      start_time_seconds: parseTime(s.start_time),
-      duration_seconds: s.estimated_duration_seconds,
-      data: {},
-    })),
+    slides: manifest.slides.map((s, index) => {
+      let startTime;
+      if (s.start_time !== undefined) {
+        startTime = parseTime(s.start_time);
+      } else {
+        startTime = manifest.slides
+          .slice(0, index)
+          .reduce((sum, prev) => sum + (prev.estimated_duration_seconds || 0), 0);
+      }
+      return {
+        slide_number: s.slide_number,
+        type: "image",
+        start_time_seconds: startTime,
+        duration_seconds: s.estimated_duration_seconds,
+        data: {},
+      };
+    }),
     subtitles: subtitles,
   };
 
@@ -169,18 +179,27 @@ async function renderVideo(videoNumber) {
   const subtitlesPath = path.join(outputDir, `video_${videoNumber}_audio_subtitles.json`);
   const config = buildVideoConfig(videoNumber, subtitlesPath, manifestPath);
 
-  // Adjust slide timing based on actual audio duration
+  // Proportionally scale slide timing to match actual audio duration
   const rawSubPath = path.join(outputDir, `video_${videoNumber}_audio_minimax_raw_subtitles.json`);
   const rawSubs = JSON.parse(fs.readFileSync(rawSubPath, "utf-8"));
   const audioDuration = rawSubs.length > 0 ? rawSubs[rawSubs.length - 1].time_end / 1000 : 300;
 
-  // Adjust last slide to cover remaining time
-  if (config.slides.length > 0) {
-    const lastSlide = config.slides[config.slides.length - 1];
-    const lastSlideEnd = lastSlide.start_time_seconds + lastSlide.duration_seconds;
-    if (audioDuration > lastSlideEnd) {
-      lastSlide.duration_seconds = audioDuration - lastSlide.start_time_seconds + 2;
+  const totalEstimated = config.slides.reduce((sum, s) => sum + s.duration_seconds, 0);
+
+  if (totalEstimated > 0 && audioDuration > 0) {
+    const scaleFactor = audioDuration / totalEstimated;
+    console.log(`  Timing scale: ${totalEstimated.toFixed(1)}s estimated → ${audioDuration.toFixed(1)}s actual (×${scaleFactor.toFixed(3)})`);
+
+    let cumulativeTime = 0;
+    for (const slide of config.slides) {
+      slide.start_time_seconds = cumulativeTime;
+      slide.duration_seconds = slide.duration_seconds * scaleFactor;
+      cumulativeTime += slide.duration_seconds;
     }
+
+    // Extend last slide by 1s buffer to prevent premature cutoff
+    const lastSlide = config.slides[config.slides.length - 1];
+    lastSlide.duration_seconds = audioDuration - lastSlide.start_time_seconds + 1;
   }
 
   // Auto-append CTA slide (5 seconds after last content slide)

@@ -1,0 +1,22 @@
+{
+  "topic": "Spec-Driven Development：AI编程时代的规格驱动开发",
+  "blog_url": "https://x.com/juliandeangeIis/status/2033303156340240481",
+  "source": "juliandeangelis-ai-agents-future",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    },
+    {
+      "video_number": 2,
+      "file": "video_2.mp4",
+      "cover": "video_2_cover_photo.png",
+      "script": "video_2_script.md",
+      "subtitle": "video_2_audio.vtt"
+    }
+  ]
+}

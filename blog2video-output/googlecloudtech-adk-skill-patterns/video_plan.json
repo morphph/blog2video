@@ -1,0 +1,132 @@
+{
+  "blog_metadata": {
+    "title": "5 Agent Skill Design Patterns Every ADK Developer Should Know",
+    "title_zh": "ADK开发者必知的5种Agent Skill设计模式",
+    "word_count": 1500,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "googlecloudtech-adk-skill-patterns"
+  },
+  "video_plan": {
+    "total_videos": 2,
+    "rationale": "内容约1500词，含5个设计模式+决策框架。前3个模式（Tool Wrapper、Generator、Reviewer）属于"输出导向"，后2个（Inversion、Pipeline）属于"流程导向"，逻辑分界清晰，加上决策框架作为收尾，自然拆成2个独立可理解的视频。",
+    "episode_transitions": [
+      {
+        "between_videos": [1, 2],
+        "preview_at_end_of_video_1": "但当Agent需要主动问你问题、甚至把你变成被访谈对象时，还用这三种模式够吗？",
+        "recap_at_start_of_video_2": "上期我们学到：Skill不是工具，是知识包——Agent靠它按需变成领域专家。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "原来Agent一直在假装懂你？",
+        "hook_question": "你精心写了一大堆系统提示词，结果Agent一开口就跑偏——它根本不懂你的领域规范。问题不是提示词不够长，而是你根本用错了架构。",
+        "core_thesis": "Agent Skill是一种按需加载的知识包，能让泛化Agent在不塞爆上下文窗口的情况下，随时变身特定领域专家——Tool Wrapper、Generator、Reviewer三种模式覆盖90%的日常使用场景。",
+        "source_sections": [
+          "What Are Agent Skills?",
+          "The Three-Level Architecture",
+          "The SkillToolset",
+          "Pattern 1: Tool Wrapper",
+          "Pattern 2: Generator",
+          "Pattern 3: Reviewer"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Google ADK的Skill设计里，L1元数据永远可见、L2指令按需加载、L3资源文件按需拉取——Agent看到的永远只是一小块，但能做的事远超你的想象。就像餐厅服务员，点菜单（L1）随时在手，具体做法（L2）进厨房才看，食材供应商电话（L3）真正要用才打。",
+        "emotion_arc": "开头：你遇到过的痛点——Agent老是不懂行业规范，想补充又怕撑爆上下文。中间反转：原来Skill根本不是工具，是知识包，专门解决这个问题，还有三层渐进式加载架构。结尾：掌握三种基础模式（Tool Wrapper/Generator/Reviewer），90%场景有解了，但……更复杂的场景呢？",
+        "must_include_details": [
+          "三层架构：L1元数据（YAML frontmatter，始终可见）、L2指令（SKILL.md正文，按需加载）、L3资源（references/和assets/目录，按需拉取）",
+          "SkillToolset三个核心函数：list_skills / load_skill / load_skill_resource",
+          "Skill目录结构：SKILL.md + references/ + assets/",
+          "Tool Wrapper：无脚本无模板，纯知识注入；加载references/conventions.md后Agent变身领域专家",
+          "Generator：style-guide.md（怎么写）+ report-template.md（写什么）分离，每次输出结构一致",
+          "Reviewer：只需换review-checklist.md就能切换为安全审计/代码审查/可及性检查等不同场景"
+        ],
+        "actionable_takeaway": "给你下一个ADK项目创建一个Tool Wrapper Skill：新建SKILL.md写上触发关键词，把你的团队编码规范或领域最佳实践放进references/conventions.md，让Agent随时按需加载。",
+        "key_concepts": [
+          {
+            "concept_en": "Agent Skill",
+            "concept_zh": "Agent技能包",
+            "analogy_direction": "不是瑞士军刀（工具），是资格证书（知识）——厨师拿到米其林培训证后，才知道怎么用手边的刀",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Progressive Disclosure",
+            "concept_zh": "渐进式信息加载",
+            "analogy_direction": "图书馆检索系统：书名目录（L1）永远可见，只有你要借的书才搬到桌上（L2），需要参考文献才去找期刊库（L3）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Tool Wrapper Pattern",
+            "concept_zh": "工具包装模式",
+            "analogy_direction": "老员工带新人：不给代码，给的是「在这个公司做事的潜规则手册」",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Generator Pattern",
+            "concept_zh": "生成器模式",
+            "analogy_direction": "填空题卷子（模板）+ 评分标准（风格指南）——两样都有，每次答案格式再也不会乱",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Reviewer Pattern",
+            "concept_zh": "审查者模式",
+            "analogy_direction": "换一份checklist就能从食品安全检查员变成消防检查员——流程不变，标准换人",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Skill是知识包，不是工具——三层渐进加载让Agent按需变身专家，Tool Wrapper、Generator、Reviewer搞定大多数场景。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "Agent反客为主来问你：这5种模式选哪个？",
+        "hook_question": "你给Agent发了需求，它礼貌地回复：请先告诉我你要解决什么问题、用户是谁、规模有多大……等等，现在谁在指挥谁？",
+        "core_thesis": "Inversion和Pipeline两种高阶模式解决了Agent在信息不完整或流程复杂时的核心难题；配合一张决策树，你能在5秒内选出适合任何场景的正确Skill设计模式。",
+        "source_sections": [
+          "Pattern 4: Inversion",
+          "Pattern 5: Pipeline",
+          "Choosing the Right Pattern",
+          "Integration with ADK",
+          "Key Takeaways"
+        ],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Pipeline模式里，Gate条件是硬性拦截——Agent不能自作主张跳过用户确认直接进行下一步。这意味着哪怕Agent已经「看懂了」整个任务，它也必须停在Gate前等你点头，否则永远不继续。就像流水线上的质检工位，机器再聪明也不能自己盖通过章。",
+        "emotion_arc": "开头：颠覆认知时刻——原来Agent可以主动来问你，而不是等你告诉它。中间：Pipeline的Gate机制讲出来让人眼前一亮（原来可以强制让Agent等人类确认）。结尾：决策树把5种模式串起来，观众获得「我已经掌握全局」的满足感，同时知道下一步怎么用ADK集成。",
+        "must_include_details": [
+          "Inversion模式三阶段：Phase 1发现（Q1问题是什么/Q2谁是用户/Q3规模多大）→ Phase 2约束（Q4平台/Q5技术栈/Q6需求）→ Phase 3综合（加载模板/填入答案/用户确认）",
+          "Pipeline具体步骤：search_code（解析清单）→ Gate1用户确认 → edit_document（生成文档注释）→ Gate2用户批准 → merge_documents（组装文档）→ verified（质量检查）",
+          "决策树核心分支：产出输出？→ 用模板？→ Generator；不用→ Tool Wrapper；评估已有输入？→ Reviewer；需要先收集用户输入？→ Inversion；有有序步骤？→ Pipeline；否则→ Tool Wrapper",
+          "ADK集成代码：load_skill_from_dir + SkillToolset + Agent(tools=[my_skill_toolset])"
+        ],
+        "actionable_takeaway": "用今天的决策树评估你手头一个卡壳的Agent任务：从「它需要产出内容吗？」开始，沿着分支走到底，确定用哪种Skill模式，然后新建对应的SKILL.md文件开始动手。",
+        "key_concepts": [
+          {
+            "concept_en": "Inversion Pattern",
+            "concept_zh": "反转模式",
+            "analogy_direction": "不是你填表格，是表格来问你——Agent把自己变成需求顾问，先问清楚再动手",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Pipeline Pattern",
+            "concept_zh": "流水线模式",
+            "analogy_direction": "工厂流水线的质检工位：每道工序之间都有人工盖章才能放行，机器再快也不能自己跳过",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Gate Condition",
+            "concept_zh": "门控条件",
+            "analogy_direction": "地铁闸机：刷卡才能过，不刷永远堵在这里——Agent无法自行绕过",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Decision Framework",
+            "concept_zh": "模式决策树",
+            "analogy_direction": "医院挂号导诊台：不是随便找哪个科，一路问下去才知道该看哪个专科",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "5种模式一张决策树全覆盖——Agent主动问你是Inversion，强制人工审批是Pipeline，5秒选出正确模式，别再把复杂逻辑硬塞进一个提示词了。"
+      }
+    ]
+  }
+}

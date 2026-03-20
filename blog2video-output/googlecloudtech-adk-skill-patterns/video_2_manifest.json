@@ -1,0 +1,37 @@
+{
+  "video_number": 2,
+  "title": "Agent反客为主来问你：这5种模式选哪个？",
+  "cover_photo": "video_2_cover_photo.html",
+  "slides": [
+    {
+      "slide_number": 1,
+      "file": "video_2_slide_1.html",
+      "type": "cover",
+      "estimated_duration_seconds": 30
+    },
+    {
+      "slide_number": 2,
+      "file": "video_2_slide_2.html",
+      "type": "principle",
+      "estimated_duration_seconds": 90
+    },
+    {
+      "slide_number": 3,
+      "file": "video_2_slide_3.html",
+      "type": "comparison_cards",
+      "estimated_duration_seconds": 150
+    },
+    {
+      "slide_number": 4,
+      "file": "video_2_slide_4.html",
+      "type": "checklist",
+      "estimated_duration_seconds": 60
+    },
+    {
+      "slide_number": 5,
+      "file": "video_2_slide_5.html",
+      "type": "summary",
+      "estimated_duration_seconds": 30
+    }
+  ]
+}

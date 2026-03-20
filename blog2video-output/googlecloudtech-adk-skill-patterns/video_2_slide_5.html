@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, rgba(16, 185, 129, 0.05) 40%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+      width: 100%;
+    }
+
+    /* 标签 */
+    .section-label {
+      font-size: 14px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* 主标题 */
+    .main-title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #FFFFFF;
+    }
+
+    /* 核心要点 */
+    .takeaway-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .takeaway-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .takeaway-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .icon-purple {
+      background: rgba(139, 92, 246, 0.2);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+    }
+
+    .icon-blue {
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+
+    .icon-green {
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+
+    .takeaway-body {}
+
+    .takeaway-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .takeaway-desc {
+      font-size: 19px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+
+    .takeaway-desc strong {
+      color: #FFFFFF;
+    }
+
+    /* 代码预览 */
+    .code-card {
+      width: 100%;
+      background: #0F0F1E;
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+
+    .code-label {
+      font-size: 13px;
+      color: #3B82F6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .code-block {
+      font-family: 'SF Mono', 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #B0B0CC;
+    }
+
+    .code-block .kw { color: #8B5CF6; }
+    .code-block .fn { color: #10B981; }
+    .code-block .str { color: #F59E0B; }
+    .code-block .comment { color: #4B5563; }
+
+    /* 行动号召 */
+    .cta-card {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(139, 92, 246, 0.1));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .cta-label {
+      font-size: 14px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .cta-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .cta-text em {
+      font-style: normal;
+      color: #10B981;
+      font-weight: 700;
+    }
+
+    /* 底部金句 */
+    .closing-quote {
+      font-size: 26px;
+      color: #6B7280;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .closing-quote strong {
+      color: #B0B0CC;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="content">
+
+      <div class="section-label">今天的核心拿走</div>
+      <div class="main-title">五种模式<br>一张决策树</div>
+
+      <div class="takeaway-cards">
+        <div class="takeaway-card">
+          <div class="takeaway-icon icon-purple">🔄</div>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Inversion</div>
+            <div class="takeaway-desc">Agent <strong>主动来问你</strong>，三阶段收集完整信息后才动手</div>
+          </div>
+        </div>
+        <div class="takeaway-card">
+          <div class="takeaway-icon icon-blue">🏭</div>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Pipeline + Gate</div>
+            <div class="takeaway-desc">强制人工审批——<strong>每个关卡等你点头</strong>才继续</div>
+          </div>
+        </div>
+        <div class="takeaway-card">
+          <div class="takeaway-icon icon-green">🌲</div>
+          <div class="takeaway-body">
+            <div class="takeaway-title">决策树全覆盖</div>
+            <div class="takeaway-desc">从「需要产出内容吗？」出发，<strong>5秒选出正确模式</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-label">ADK 集成三行搞定</div>
+        <div class="code-block">
+          <span class="kw">skill</span> = <span class="fn">load_skill_from_dir</span>(<span class="str">"./skills"</span>)<br>
+          toolset = <span class="fn">SkillToolset</span>([skill])<br>
+          agent = <span class="fn">Agent</span>(tools=[toolset])
+        </div>
+      </div>
+
+      <div class="cta-card">
+        <div class="cta-label">现在就可以做</div>
+        <div class="cta-text">
+          用决策树评估一个<em>卡壳的 Agent 任务</em><br>
+          从「需要产出内容吗？」开始走<br>
+          确定模式 → 新建 SKILL.md → 动手
+        </div>
+      </div>
+
+      <div class="closing-quote">
+        别再把复杂逻辑<br><strong>硬塞进一个提示词了</strong>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

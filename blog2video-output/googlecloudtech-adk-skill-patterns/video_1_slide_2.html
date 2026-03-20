@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.10) 0%, rgba(13, 13, 26, 0) 70%);
+      pointer-events: none;
+    }
+    .section-label {
+      font-size: 14px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .main-title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 48px;
+    }
+    .highlight-purple {
+      color: #8B5CF6;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .concept-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .concept-card .label {
+      font-size: 13px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .concept-card .title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .concept-card .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .levels-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .level-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      text-align: left;
+    }
+    .level-badge {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .level-badge.l1 { background: rgba(59, 130, 246, 0.2); color: #3B82F6; border: 2px solid #3B82F6; }
+    .level-badge.l2 { background: rgba(139, 92, 246, 0.2); color: #8B5CF6; border: 2px solid #8B5CF6; }
+    .level-badge.l3 { background: rgba(16, 185, 129, 0.2); color: #10B981; border: 2px solid #10B981; }
+    .level-info .name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .level-info .detail {
+      font-size: 19px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .level-info .always {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    .always-visible { color: #3B82F6; }
+    .on-demand { color: #8B5CF6; }
+    .as-needed { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="section-label">反直觉事实</div>
+    <div class="main-title">
+      Agent Skill<br>
+      <span class="highlight-red">不是工具</span>——<br>
+      是<span class="highlight-purple">知识包</span>
+    </div>
+
+    <div class="concept-card">
+      <div class="label">核心比喻</div>
+      <div class="title">资格证书 vs 瑞士军刀</div>
+      <div class="desc">厨师拿到米其林培训认证（Skill），才知道怎么用手边的刀（Tool）</div>
+    </div>
+
+    <div class="levels-container">
+      <div class="level-card">
+        <div class="level-badge l1">L1</div>
+        <div class="level-info">
+          <div class="name">元数据——书名目录</div>
+          <div class="detail">YAML 文件头，记录每个 Skill 的名字和用途</div>
+          <div class="always always-visible">▶ 永远可见</div>
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-badge l2">L2</div>
+        <div class="level-info">
+          <div class="name">指令——行为准则</div>
+          <div class="detail">SKILL.md 正文，真正的操作规范</div>
+          <div class="always on-demand">▶ 按需加载</div>
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-badge l3">L3</div>
+        <div class="level-info">
+          <div class="name">资源文件——参考与模板</div>
+          <div class="detail">references/ 和 assets/ 目录内容</div>
+          <div class="always as-needed">▶ 用时拉取</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

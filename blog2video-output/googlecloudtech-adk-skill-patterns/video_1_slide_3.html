@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 900px;
+      background: radial-gradient(ellipse, rgba(139, 92, 246, 0.08) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+    }
+    .section-label {
+      font-size: 14px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .main-title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    .pattern-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .pattern-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .pattern-card.blue { border-left: 4px solid #3B82F6; }
+    .pattern-card.purple { border-left: 4px solid #8B5CF6; }
+    .pattern-card.green { border-left: 4px solid #10B981; }
+
+    .pattern-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .pattern-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .num-blue { background: rgba(59, 130, 246, 0.2); color: #3B82F6; }
+    .num-purple { background: rgba(139, 92, 246, 0.2); color: #8B5CF6; }
+    .num-green { background: rgba(16, 185, 129, 0.2); color: #10B981; }
+
+    .pattern-name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .pattern-type {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .type-blue { color: #3B82F6; }
+    .type-purple { color: #8B5CF6; }
+    .type-green { color: #10B981; }
+
+    .pattern-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .pattern-analogy {
+      font-size: 17px;
+      color: #6B7280;
+      line-height: 1.45;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      font-style: italic;
+    }
+    .pattern-analogy span {
+      font-style: normal;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+
+    <div class="section-label">三种核心模式</div>
+    <div class="main-title">90% 场景<br>全覆盖</div>
+
+    <div class="pattern-cards">
+      <div class="pattern-card blue">
+        <div class="pattern-header">
+          <div class="pattern-num num-blue">1</div>
+          <div>
+            <div class="pattern-name">Tool Wrapper</div>
+            <div class="pattern-type type-blue">纯知识注入</div>
+          </div>
+        </div>
+        <div class="pattern-desc">无脚本无模板，只有领域知识——加载 references/conventions.md，Agent 立刻变身领域专家</div>
+        <div class="pattern-analogy">老员工带新人：不给代码，给的是<span>「公司做事的潜规则手册」</span></div>
+      </div>
+
+      <div class="pattern-card purple">
+        <div class="pattern-header">
+          <div class="pattern-num num-purple">2</div>
+          <div>
+            <div class="pattern-name">Generator</div>
+            <div class="pattern-type type-purple">模板驱动输出</div>
+          </div>
+        </div>
+        <div class="pattern-desc">style-guide.md（怎么写）+ report-template.md（写什么）分离管理，格式永远一致</div>
+        <div class="pattern-analogy"><span>填空题卷子</span>（模板）+ <span>评分标准</span>（风格）——两样都有，答案格式不乱</div>
+      </div>
+
+      <div class="pattern-card green">
+        <div class="pattern-header">
+          <div class="pattern-num num-green">3</div>
+          <div>
+            <div class="pattern-name">Reviewer</div>
+            <div class="pattern-type type-green">可替换评审标准</div>
+          </div>
+        </div>
+        <div class="pattern-desc">换一份 review-checklist.md = 换一种审查类型；代码审查 → 安全漏洞 → 可及性检查</div>
+        <div class="pattern-analogy">同一个检查员，拿<span>不同检查表</span>，从食品安全变消防安全</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

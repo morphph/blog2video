@@ -1,0 +1,22 @@
+{
+  "topic": "Agent Harness：2026年AI竞争的真正护城河",
+  "blog_url": "https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e",
+  "source": "agent-harnesses-2026",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    },
+    {
+      "video_number": 2,
+      "file": "video_2.mp4",
+      "cover": "video_2_cover_photo.png",
+      "script": "video_2_script.md",
+      "subtitle": "video_2_audio.vtt"
+    }
+  ]
+}

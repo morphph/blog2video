@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .core-quote {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 40px;
+    }
+    .quote-mark {
+      font-size: 48px;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .quote-text {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .quote-text .highlight {
+      color: #F59E0B;
+    }
+    .quote-source {
+      font-size: 20px;
+      color: #6B7280;
+      margin-top: 16px;
+    }
+    .action-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .action-label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .action-steps {
+      list-style: none;
+    }
+    .action-steps li {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      padding-left: 28px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .action-steps li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #10B981;
+      font-weight: 700;
+    }
+    .action-steps li .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">差的不是钱，是<span class="accent">架构</span></div>
+    <div class="core-quote">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">
+        先找最简方案<br>
+        只在<span class="highlight">必要时</span>增加复杂度
+      </div>
+      <div class="quote-source">—— Anthropic 工程师总结</div>
+    </div>
+    <div class="action-card">
+      <div class="action-label">TODAY'S ACTION</div>
+      <ul class="action-steps">
+        <li>列出你 Agent 系统的<span class="em">每一个组件</span></li>
+        <li>问自己：它解决的是<span class="em">什么模型局限</span>？</li>
+        <li>最新模型没这个局限了？<span class="em">大胆拆掉它</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

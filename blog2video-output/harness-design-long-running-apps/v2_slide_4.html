@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 44px;
+    }
+    .title .accent {
+      color: #EF4444;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .check-item:nth-child(1) {
+      border-left: 4px solid #EF4444;
+    }
+    .check-item:nth-child(2) {
+      border-left: 4px solid #F59E0B;
+    }
+    .check-item:nth-child(3) {
+      border-left: 4px solid #8B5CF6;
+    }
+    .check-number {
+      font-size: 36px;
+      font-weight: 800;
+      flex-shrink: 0;
+      width: 48px;
+      text-align: center;
+    }
+    .check-item:nth-child(1) .check-number { color: #EF4444; }
+    .check-item:nth-child(2) .check-number { color: #F59E0B; }
+    .check-item:nth-child(3) .check-number { color: #8B5CF6; }
+    .check-body {
+      flex: 1;
+    }
+    .check-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #FFFFFF;
+    }
+    .check-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .check-desc .keyword {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">三个<span class="accent">坑</span>，值得记住</div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-number">01</div>
+        <div class="check-body">
+          <div class="check-title">Context Anxiety</div>
+          <div class="check-desc">
+            接近上下文窗口限制时，AI会<span class="keyword">"慌"</span><br>
+            像考试快交卷，开始草草收尾<br>
+            解法：<span class="keyword">Context Reset</span>，给一张全新的卷子
+          </div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-number">02</div>
+        <div class="check-body">
+          <div class="check-title">Prompt 蝴蝶效应</div>
+          <div class="check-desc">
+            写了"museum quality"<br>
+            所有设计风格都<span class="keyword">趋同</span>了<br>
+            用词越精确，结果反而越缺多样性
+          </div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-number">03</div>
+        <div class="check-body">
+          <div class="check-title">架构组件会"过期"</div>
+          <div class="check-desc">
+            每个组件都编码了<span class="keyword">模型局限性的假设</span><br>
+            模型一升级，假设就可能失效<br>
+            精心搭的系统，随时可能拆掉重来
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

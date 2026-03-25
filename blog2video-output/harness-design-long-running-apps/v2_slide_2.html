@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .metaphor {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+    .metaphor .highlight {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .agents-row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+    }
+    .agent-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .agent-card.planner {
+      border-left: 4px solid #3B82F6;
+    }
+    .agent-card.generator {
+      border-left: 4px solid #10B981;
+    }
+    .agent-card.evaluator {
+      border-left: 4px solid #EF4444;
+    }
+    .agent-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .agent-name {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .agent-card.planner .agent-name { color: #3B82F6; }
+    .agent-card.generator .agent-name { color: #10B981; }
+    .agent-card.evaluator .agent-name { color: #EF4444; }
+    .agent-role {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .arrow-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .arrow-line {
+      height: 2px;
+      flex: 1;
+      background: linear-gradient(90deg, #3B82F6, #10B981, #EF4444);
+      border-radius: 1px;
+    }
+    .arrow-text {
+      font-size: 20px;
+      color: #6B7280;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">$200 的秘密：<span class="accent">三Agent分工</span></div>
+    <div class="metaphor">
+      就像装修房子——<span class="highlight">设计师出方案</span>，<span class="highlight">工人施工</span>，<span class="highlight">验收员检查</span>
+    </div>
+    <div class="agents-row">
+      <div class="agent-card planner">
+        <div class="agent-icon">📋</div>
+        <div class="agent-name">Planner</div>
+        <div class="agent-role">一句话需求<br>→ 完整产品规格书</div>
+      </div>
+      <div class="agent-card generator">
+        <div class="agent-icon">⚙️</div>
+        <div class="agent-name">Generator</div>
+        <div class="agent-role">按规格增量开发<br>前端 + 后端</div>
+      </div>
+      <div class="agent-card evaluator">
+        <div class="agent-icon">🔍</div>
+        <div class="agent-name">Evaluator</div>
+        <div class="agent-role">Playwright 操作页面<br>像真人一样找 Bug</div>
+      </div>
+    </div>
+    <div class="arrow-row">
+      <div class="arrow-line"></div>
+      <div class="arrow-text">各管各的，质量天差地别</div>
+      <div class="arrow-line"></div>
+    </div>
+  </div>
+</body>
+</html>

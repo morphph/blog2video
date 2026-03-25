@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+    }
+    .title .accent {
+      color: #F59E0B;
+    }
+    .comparison-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .comp-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-align: left;
+    }
+    .comp-card.before {
+      border-left: 4px solid #6B7280;
+    }
+    .comp-card.after {
+      border-left: 4px solid #10B981;
+    }
+    .comp-label {
+      font-size: 22px;
+      font-weight: 700;
+      white-space: nowrap;
+      min-width: 100px;
+      text-align: center;
+    }
+    .comp-card.before .comp-label { color: #6B7280; }
+    .comp-card.after .comp-label { color: #10B981; }
+    .comp-content {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .comp-content .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .arrow-down {
+      font-size: 36px;
+      color: #8B5CF6;
+      text-align: center;
+    }
+    .insight-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      text-align: center;
+    }
+    .insight-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .insight-text .highlight {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+    .daw-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .daw-number {
+      font-size: 56px;
+      font-weight: 800;
+      color: #10B981;
+    }
+    .daw-label {
+      font-size: 24px;
+      color: #B0B0CC;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">架构在<span class="accent">"瘦身"</span></div>
+    <div class="comparison-container">
+      <div class="comp-card before">
+        <div class="comp-label">Opus 4.6 前</div>
+        <div class="comp-content">
+          精心设计 <span class="em">Sprint 分解</span><br>
+          每个 Sprint 做一次评估
+        </div>
+      </div>
+      <div class="arrow-down">↓</div>
+      <div class="comp-card after">
+        <div class="comp-label">Opus 4.6 后</div>
+        <div class="comp-content">
+          <span class="em">砍掉 Sprint 分解</span><br>
+          评估改为最后一次性做
+        </div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-text">
+        原因：<span class="highlight">新模型能hold住更长的连贯工作</span><br>
+        之前的组件假设已经过期
+      </div>
+      <div class="daw-badge">
+        <div class="daw-number">$125</div>
+        <div class="daw-label">4小时做出<br>一个可用的 DAW</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

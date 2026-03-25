@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    .title .accent {
+      color: #F59E0B;
+    }
+    .subtitle {
+      font-size: 26px;
+      color: #6B7280;
+      margin-bottom: 40px;
+    }
+    .iteration-badge {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.15));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 20px 40px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .iteration-number {
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+    }
+    .iteration-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      text-align: left;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .check-item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .check-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .check-icon.warn {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid #EF4444;
+      color: #EF4444;
+    }
+    .check-icon.good {
+      background: rgba(16, 185, 129, 0.15);
+      border: 2px solid #10B981;
+      color: #10B981;
+    }
+    .check-text {
+      font-size: 27px;
+      line-height: 1.4;
+      color: #B0B0CC;
+    }
+    .check-text strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .check-item.highlight {
+      border-left: 4px solid #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">检查你的<span class="accent">AI工作流</span></div>
+    <div class="subtitle">生成 → 评估 → 修改 → 再评估</div>
+
+    <div class="iteration-badge">
+      <div class="iteration-number">5-15</div>
+      <div class="iteration-text">轮迭代循环<br>质量天差地别</div>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-icon warn">?</div>
+        <div class="check-text">Agent自我评价是否<strong>总说"做得不错"</strong>？</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon warn">?</div>
+        <div class="check-text">有没有<strong>独立评估环节</strong>？</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon warn">?</div>
+        <div class="check-text">评估是看截图还是<strong>实际操作产品</strong>？</div>
+      </div>
+      <div class="check-item highlight">
+        <div class="check-icon good">!</div>
+        <div class="check-text">你需要一个<strong>独立的评估Agent</strong></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+    .main-title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .highlight-yellow {
+      color: #F59E0B;
+    }
+    .hook-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .hook-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .hook-card.red {
+      border-left: 4px solid #EF4444;
+    }
+    .hook-card.yellow {
+      border-left: 4px solid #F59E0B;
+    }
+    .card-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .card-text {
+      font-size: 30px;
+      line-height: 1.5;
+      color: #B0B0CC;
+    }
+    .card-text strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · AI Agent架构设计</div>
+    <div class="main-title">
+      AI说"<span class="highlight-yellow">写得完美</span>"<br>
+      你一跑，<span class="highlight-red">全是Bug</span>
+    </div>
+    <div class="hook-cards">
+      <div class="hook-card red">
+        <div class="card-icon">🤖</div>
+        <div class="card-text"><strong>"结构清晰，逻辑完整"</strong><br>——AI的自我评价</div>
+      </div>
+      <div class="hook-card yellow">
+        <div class="card-icon">⚠️</div>
+        <div class="card-text">Anthropic发现：这不是偶尔失误<br>是<strong>系统性缺陷</strong></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

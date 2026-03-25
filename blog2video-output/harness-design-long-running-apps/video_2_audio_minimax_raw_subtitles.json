@@ -1,0 +1,622 @@
+[
+  {
+    "text": "同一个AI，同一个需求：做一个复古游戏编辑器。",
+    "pronounce_text": "同一个AI，同一个需求：做一个复古游戏编辑器。",
+    "time_begin": 0,
+    "time_end": 4335.011337868481,
+    "text_begin": 0,
+    "text_end": 23,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 23
+  },
+  {
+    "text": "一个花了20分钟，9美元。",
+    "pronounce_text": "一个花了二十分钟，九美元。",
+    "time_begin": 4500,
+    "time_end": 6698.775510204081,
+    "text_begin": 23,
+    "text_end": 36,
+    "pronounce_text_begin": 23,
+    "pronounce_text_end": 36
+  },
+  {
+    "text": "另一个花了6小时，200美元。",
+    "pronounce_text": "另一个花了六小时，两百美元。",
+    "time_begin": 6840,
+    "time_end": 9421.904761904761,
+    "text_begin": 36,
+    "text_end": 51,
+    "pronounce_text_begin": 36,
+    "pronounce_text_end": 50
+  },
+  {
+    "text": "9美元那个，核心功能全是坏的。",
+    "pronounce_text": "九美元那个，核心功能全是坏的。",
+    "time_begin": 9576,
+    "time_end": 12541.034013605442,
+    "text_begin": 51,
+    "text_end": 66,
+    "pronounce_text_begin": 50,
+    "pronounce_text_end": 65
+  },
+  {
+    "text": "200美元那个，带物理引擎，带AI辅助关卡设计。",
+    "pronounce_text": "两百美元那个，带物理引擎，带AI辅助关卡设计。",
+    "time_begin": 12708,
+    "time_end": 17251.990929705215,
+    "text_begin": 66,
+    "text_end": 90,
+    "pronounce_text_begin": 65,
+    "pronounce_text_end": 88
+  },
+  {
+    "text": "差距不是\"稍好一点\"，是两个时代。",
+    "pronounce_text": "差距不是\"稍好一点\"，是两个时代。",
+    "time_begin": 17388,
+    "time_end": 20271.7641723356,
+    "text_begin": 90,
+    "text_end": 107,
+    "pronounce_text_begin": 88,
+    "pronounce_text_end": 105
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 20412,
+    "time_end": 29692.861678004534,
+    "text_begin": 107,
+    "text_end": 155,
+    "pronounce_text_begin": 105,
+    "pronounce_text_end": 150
+  },
+  {
+    "text": "上期我们说了AI最大的盲点：永远觉得自己做得很好。",
+    "pronounce_text": "上期我们说了AI最大的盲点：永远觉得自己做得很好。",
+    "time_begin": 29844,
+    "time_end": 33795.8820861678,
+    "text_begin": 155,
+    "text_end": 180,
+    "pronounce_text_begin": 150,
+    "pronounce_text_end": 175
+  },
+  {
+    "text": "解法是引入独立的评估Agent，像严格的外部考官。",
+    "pronounce_text": "解法是引入独立的评估Agent，像严格的外部考官。",
+    "time_begin": 33948,
+    "time_end": 38283.011337868484,
+    "text_begin": 180,
+    "text_end": 205,
+    "pronounce_text_begin": 175,
+    "pronounce_text_end": 200
+  },
+  {
+    "text": "那今天的问题是：这套系统实际跑起来，效果到底怎么样？",
+    "pronounce_text": "那今天的问题是：这套系统实际跑起来，效果到底怎么样？",
+    "time_begin": 38448,
+    "time_end": 43247.410430839,
+    "text_begin": 205,
+    "text_end": 231,
+    "pronounce_text_begin": 200,
+    "pronounce_text_end": 226
+  },
+  {
+    "text": "先说那个9美元的版本。",
+    "pronounce_text": "先说那个九美元的版本。",
+    "time_begin": 43416,
+    "time_end": 45278.08616780045,
+    "text_begin": 231,
+    "text_end": 242,
+    "pronounce_text_begin": 226,
+    "pronounce_text_end": 237
+  },
+  {
+    "text": "20分钟跑完，界面有了，按钮有了。",
+    "pronounce_text": "二十分钟跑完，界面有了，按钮有了。",
+    "time_begin": 45432,
+    "time_end": 48652.45351473923,
+    "text_begin": 242,
+    "text_end": 259,
+    "pronounce_text_begin": 237,
+    "pronounce_text_end": 254
+  },
+  {
+    "text": "但你点进游戏编辑器，精灵动不了。",
+    "pronounce_text": "但你点进游戏编辑器，精灵动不了。",
+    "time_begin": 48816,
+    "time_end": 51270.19501133787,
+    "text_begin": 259,
+    "text_end": 275,
+    "pronounce_text_begin": 254,
+    "pronounce_text_end": 270
+  },
+  {
+    "text": "关卡设计器打开就报错。",
+    "pronounce_text": "关卡设计器打开就报错。",
+    "time_begin": 51408,
+    "time_end": 53223.6462585034,
+    "text_begin": 275,
+    "text_end": 286,
+    "pronounce_text_begin": 270,
+    "pronounce_text_end": 281
+  },
+  {
+    "text": "看起来像个产品，用起来像个空壳。",
+    "pronounce_text": "看起来像个产品，用起来像个空壳。",
+    "time_begin": 53388,
+    "time_end": 56306.59410430839,
+    "text_begin": 286,
+    "text_end": 302,
+    "pronounce_text_begin": 281,
+    "pronounce_text_end": 297
+  },
+  {
+    "text": "再看200美元的版本。",
+    "pronounce_text": "再看两百美元的版本。",
+    "time_begin": 56448,
+    "time_end": 58135.93650793651,
+    "text_begin": 302,
+    "text_end": 313,
+    "pronounce_text_begin": 297,
+    "pronounce_text_end": 307
+  },
+  {
+    "text": "三个Agent分工合作。",
+    "pronounce_text": "三个Agent分工合作。",
+    "time_begin": 58284,
+    "time_end": 60146.08616780045,
+    "text_begin": 313,
+    "text_end": 325,
+    "pronounce_text_begin": 307,
+    "pronounce_text_end": 319
+  },
+  {
+    "text": "Planner拿到一句话需求，写出完整的产品规格书。",
+    "pronounce_text": "Planner拿到一句话需求，写出完整的产品规格书。",
+    "time_begin": 60300,
+    "time_end": 63950.02267573696,
+    "text_begin": 325,
+    "text_end": 351,
+    "pronounce_text_begin": 319,
+    "pronounce_text_end": 345
+  },
+  {
+    "text": "Generator按规格增量开发，搭前端和后端。",
+    "pronounce_text": "Generator按规格增量开发，搭前端和后端。",
+    "time_begin": 64116,
+    "time_end": 69089.56009070294,
+    "text_begin": 351,
+    "text_end": 375,
+    "pronounce_text_begin": 345,
+    "pronounce_text_end": 369
+  },
+  {
+    "text": "Evaluator用Playwright操作页面，像真人一样找Bug。",
+    "pronounce_text": "Evaluator用Playwright操作页面，像真人一样找Bug。",
+    "time_begin": 69228,
+    "time_end": 73516.57142857143,
+    "text_begin": 375,
+    "text_end": 410,
+    "pronounce_text_begin": 369,
+    "pronounce_text_end": 404
+  },
+  {
+    "text": "这就像装修房子。",
+    "pronounce_text": "这就像装修房子。",
+    "time_begin": 73656,
+    "time_end": 75262.66666666667,
+    "text_begin": 410,
+    "text_end": 418,
+    "pronounce_text_begin": 404,
+    "pronounce_text_end": 412
+  },
+  {
+    "text": "你可以找一个人又设计又施工又验收。",
+    "pronounce_text": "你可以找一个人又设计又施工又验收。",
+    "time_begin": 75420,
+    "time_end": 78176.05442176871,
+    "text_begin": 418,
+    "text_end": 435,
+    "pronounce_text_begin": 412,
+    "pronounce_text_end": 429
+  },
+  {
+    "text": "也可以设计师出方案、工人施工、验收员检查。",
+    "pronounce_text": "也可以设计师出方案、工人施工、验收员检查。",
+    "time_begin": 78336,
+    "time_end": 82160.1723356009,
+    "text_begin": 435,
+    "text_end": 456,
+    "pronounce_text_begin": 429,
+    "pronounce_text_end": 450
+  },
+  {
+    "text": "9美元是前者，200美元是后者。",
+    "pronounce_text": "九美元是前者，两百美元是后者。",
+    "time_begin": 82332,
+    "time_end": 85250.59410430839,
+    "text_begin": 456,
+    "text_end": 472,
+    "pronounce_text_begin": 450,
+    "pronounce_text_end": 465
+  },
+  {
+    "text": "三个角色各管各的，质量天差地别。",
+    "pronounce_text": "三个角色各管各的，质量天差地别。",
+    "time_begin": 85392,
+    "time_end": 88438.30385487528,
+    "text_begin": 472,
+    "text_end": 488,
+    "pronounce_text_begin": 465,
+    "pronounce_text_end": 481
+  },
+  {
+    "text": "但这还不是最让我震撼的。",
+    "pronounce_text": "但这还不是最让我震撼的。",
+    "time_begin": 88596,
+    "time_end": 90411.6462585034,
+    "text_begin": 488,
+    "text_end": 500,
+    "pronounce_text_begin": 481,
+    "pronounce_text_end": 493
+  },
+  {
+    "text": "最让我震撼的是，这套架构自己在\"瘦身\"。",
+    "pronounce_text": "最让我震撼的是，这套架构自己在\"瘦身\"。",
+    "time_begin": 90576,
+    "time_end": 94307.2925170068,
+    "text_begin": 500,
+    "text_end": 520,
+    "pronounce_text_begin": 493,
+    "pronounce_text_end": 513
+  },
+  {
+    "text": "Opus 4.6发布之后，Anthropic的工程师做了一件事。",
+    "pronounce_text": "Opus四点六发布之后，Anthropic的工程师做了一件事。",
+    "time_begin": 94464,
+    "time_end": 98799.01133786848,
+    "text_begin": 520,
+    "text_end": 552,
+    "pronounce_text_begin": 513,
+    "pronounce_text_end": 544
+  },
+  {
+    "text": "他们把精心设计的Sprint分解直接砍掉了。",
+    "pronounce_text": "他们把精心设计的Sprint分解直接砍掉了。",
+    "time_begin": 98964,
+    "time_end": 102138.01360544217,
+    "text_begin": 552,
+    "text_end": 574,
+    "pronounce_text_begin": 544,
+    "pronounce_text_end": 566
+  },
+  {
+    "text": "评估也从每个Sprint做一次，改成最后一次性做。",
+    "pronounce_text": "评估也从每个Sprint做一次，改成最后一次性做。",
+    "time_begin": 102276,
+    "time_end": 105926.02267573697,
+    "text_begin": 574,
+    "text_end": 599,
+    "pronounce_text_begin": 566,
+    "pronounce_text_end": 591
+  },
+  {
+    "text": "为什么？因为新模型自己能hold住更长的连贯工作了。",
+    "pronounce_text": "为什么？因为新模型自己能hold住更长的连贯工作了。",
+    "time_begin": 106092,
+    "time_end": 110043.8820861678,
+    "text_begin": 599,
+    "text_end": 625,
+    "pronounce_text_begin": 591,
+    "pronounce_text_end": 617
+  },
+  {
+    "text": "之前Sprint分解存在的意义，是怕模型做着做着就忘了。",
+    "pronounce_text": "之前Sprint分解存在的意义，是怕模型做着做着就忘了。",
+    "time_begin": 110196,
+    "time_end": 114275.59183673469,
+    "text_begin": 625,
+    "text_end": 653,
+    "pronounce_text_begin": 617,
+    "pronounce_text_end": 645
+  },
+  {
+    "text": "模型能力一升级，这个假设就不成立了。",
+    "pronounce_text": "模型能力一升级，这个假设就不成立了。",
+    "time_begin": 114444,
+    "time_end": 117490.30385487528,
+    "text_begin": 653,
+    "text_end": 671,
+    "pronounce_text_begin": 645,
+    "pronounce_text_end": 663
+  },
+  {
+    "text": "他们还拿这套系统做了一个数字音频工作站。",
+    "pronounce_text": "他们还拿这套系统做了一个数字音频工作站。",
+    "time_begin": 117648,
+    "time_end": 120566.59410430839,
+    "text_begin": 671,
+    "text_end": 691,
+    "pronounce_text_begin": 663,
+    "pronounce_text_end": 683
+  },
+  {
+    "text": "4小时，125美元，做出了一个可用的DAW。",
+    "pronounce_text": "四小时，一百二十五美元，做出了一个可用的DAW。",
+    "time_begin": 120708,
+    "time_end": 125983.41950113379,
+    "text_begin": 691,
+    "text_end": 713,
+    "pronounce_text_begin": 683,
+    "pronounce_text_end": 707
+  },
+  {
+    "text": "注意，是\"可用\"，不是\"能看\"。",
+    "pronounce_text": "注意，是\"可用\"，不是\"能看\"。",
+    "time_begin": 126144,
+    "time_end": 130003.0022675737,
+    "text_begin": 713,
+    "text_end": 729,
+    "pronounce_text_begin": 707,
+    "pronounce_text_end": 723
+  },
+  {
+    "text": "不过这里面有几个坑，值得你记住。",
+    "pronounce_text": "不过这里面有几个坑，值得你记住。",
+    "time_begin": 130140,
+    "time_end": 133023.7641723356,
+    "text_begin": 729,
+    "text_end": 745,
+    "pronounce_text_begin": 723,
+    "pronounce_text_end": 739
+  },
+  {
+    "text": "第一个叫Context anxiety。",
+    "pronounce_text": "第一个叫Context anxiety。",
+    "time_begin": 133164,
+    "time_end": 135153.79591836734,
+    "text_begin": 745,
+    "text_end": 765,
+    "pronounce_text_begin": 739,
+    "pronounce_text_end": 759
+  },
+  {
+    "text": "Sonnet 4.5在接近上下文窗口限制的时候，会\"慌\"。",
+    "pronounce_text": "Sonnet四点五在接近上下文窗口限制的时候，会\"慌\"。",
+    "time_begin": 135324,
+    "time_end": 139867.9909297052,
+    "text_begin": 765,
+    "text_end": 794,
+    "pronounce_text_begin": 759,
+    "pronounce_text_end": 787
+  },
+  {
+    "text": "就像考试快交卷了，开始乱写。",
+    "pronounce_text": "就像考试快交卷了，开始乱写。",
+    "time_begin": 140004,
+    "time_end": 142667.17460317462,
+    "text_begin": 794,
+    "text_end": 808,
+    "pronounce_text_begin": 787,
+    "pronounce_text_end": 801
+  },
+  {
+    "text": "AI也一样，觉得快没空间了，就草草收尾。",
+    "pronounce_text": "AI也一样，觉得快没空间了，就草草收尾。",
+    "time_begin": 142812,
+    "time_end": 146253.04308390024,
+    "text_begin": 808,
+    "text_end": 828,
+    "pronounce_text_begin": 801,
+    "pronounce_text_end": 821
+  },
+  {
+    "text": "解法是给它一张全新的卷子，做Context reset。",
+    "pronounce_text": "解法是给它一张全新的卷子，做Context reset。",
+    "time_begin": 146412,
+    "time_end": 150271.0022675737,
+    "text_begin": 828,
+    "text_end": 856,
+    "pronounce_text_begin": 821,
+    "pronounce_text_end": 849
+  },
+  {
+    "text": "第二个坑是提示词的蝴蝶效应。",
+    "pronounce_text": "第二个坑是提示词的蝴蝶效应。",
+    "time_begin": 150408,
+    "time_end": 152780.92517006802,
+    "text_begin": 856,
+    "text_end": 870,
+    "pronounce_text_begin": 849,
+    "pronounce_text_end": 863
+  },
+  {
+    "text": "他们在Prompt里写了\"museum quality\"这个词。",
+    "pronounce_text": "他们在Prompt里写了\"museum quality\"这个词。",
+    "time_begin": 152928,
+    "time_end": 156578.02267573695,
+    "text_begin": 870,
+    "text_end": 902,
+    "pronounce_text_begin": 863,
+    "pronounce_text_end": 895
+  },
+  {
+    "text": "结果所有生成的设计，风格都趋同了。",
+    "pronounce_text": "结果所有生成的设计，风格都趋同了。",
+    "time_begin": 156744,
+    "time_end": 160219.87301587302,
+    "text_begin": 902,
+    "text_end": 919,
+    "pronounce_text_begin": 895,
+    "pronounce_text_end": 912
+  },
+  {
+    "text": "就像告诉十个厨师\"做米其林级别的菜\"，端上来的全长一个样。",
+    "pronounce_text": "就像告诉十个厨师\"做米其林级别的菜\"，端上来的全长一个样。",
+    "time_begin": 160380,
+    "time_end": 166247.5283446712,
+    "text_begin": 919,
+    "text_end": 948,
+    "pronounce_text_begin": 912,
+    "pronounce_text_end": 941
+  },
+  {
+    "text": "用词越精确，结果反而越缺乏多样性。",
+    "pronounce_text": "用词越精确，结果反而越缺乏多样性。",
+    "time_begin": 166392,
+    "time_end": 169310.5941043084,
+    "text_begin": 948,
+    "text_end": 965,
+    "pronounce_text_begin": 941,
+    "pronounce_text_end": 958
+  },
+  {
+    "text": "第三个教训最反直觉。",
+    "pronounce_text": "第三个教训最反直觉。",
+    "time_begin": 169452,
+    "time_end": 171441.79591836734,
+    "text_begin": 965,
+    "text_end": 975,
+    "pronounce_text_begin": 958,
+    "pronounce_text_end": 968
+  },
+  {
+    "text": "每一个架构组件，都编码了对模型局限性的假设。",
+    "pronounce_text": "每一个架构组件，都编码了对模型局限性的假设。",
+    "time_begin": 171612,
+    "time_end": 175343.2925170068,
+    "text_begin": 975,
+    "text_end": 997,
+    "pronounce_text_begin": 968,
+    "pronounce_text_end": 990
+  },
+  {
+    "text": "模型一升级，假设就可能过期。",
+    "pronounce_text": "模型一升级，假设就可能过期。",
+    "time_begin": 175500,
+    "time_end": 178337.32426303855,
+    "text_begin": 997,
+    "text_end": 1011,
+    "pronounce_text_begin": 990,
+    "pronounce_text_end": 1004
+  },
+  {
+    "text": "所以你精心搭建的系统，随时可能需要拆掉重来。",
+    "pronounce_text": "所以你精心搭建的系统，随时可能需要拆掉重来。",
+    "time_begin": 178488,
+    "time_end": 182184.46258503402,
+    "text_begin": 1011,
+    "text_end": 1033,
+    "pronounce_text_begin": 1004,
+    "pronounce_text_end": 1026
+  },
+  {
+    "text": "回到开头那个问题。",
+    "pronounce_text": "回到开头那个问题。",
+    "time_begin": 182340,
+    "time_end": 183946.66666666666,
+    "text_begin": 1033,
+    "text_end": 1042,
+    "pronounce_text_begin": 1026,
+    "pronounce_text_end": 1035
+  },
+  {
+    "text": "9美元 vs 200美元，差的不是钱，是架构。",
+    "pronounce_text": "九美元vs两百美元，差的不是钱，是架构。",
+    "time_begin": 184104,
+    "time_end": 188264.86167800453,
+    "text_begin": 1042,
+    "text_end": 1065,
+    "pronounce_text_begin": 1035,
+    "pronounce_text_end": 1055
+  },
+  {
+    "text": "但架构本身也不是越复杂越好。",
+    "pronounce_text": "但架构本身也不是越复杂越好。",
+    "time_begin": 188424,
+    "time_end": 191307.7641723356,
+    "text_begin": 1065,
+    "text_end": 1079,
+    "pronounce_text_begin": 1055,
+    "pronounce_text_end": 1069
+  },
+  {
+    "text": "Anthropic工程师总结了一句话。",
+    "pronounce_text": "Anthropic工程师总结了一句话。",
+    "time_begin": 191448,
+    "time_end": 193820.92517006802,
+    "text_begin": 1079,
+    "text_end": 1098,
+    "pronounce_text_begin": 1069,
+    "pronounce_text_end": 1088
+  },
+  {
+    "text": "先找最简方案，只在必要时增加复杂度。",
+    "pronounce_text": "先找最简方案，只在必要时增加复杂度。",
+    "time_begin": 193968,
+    "time_end": 197281.33333333334,
+    "text_begin": 1098,
+    "text_end": 1116,
+    "pronounce_text_begin": 1088,
+    "pronounce_text_end": 1106
+  },
+  {
+    "text": "因为你今天加的每一层，明天可能就是包袱。",
+    "pronounce_text": "因为你今天加的每一层，明天可能就是包袱。",
+    "time_begin": 197424,
+    "time_end": 200644.45351473923,
+    "text_begin": 1116,
+    "text_end": 1136,
+    "pronounce_text_begin": 1106,
+    "pronounce_text_end": 1126
+  },
+  {
+    "text": "所以今天给你一个具体动作。",
+    "pronounce_text": "所以今天给你一个具体动作。",
+    "time_begin": 200808,
+    "time_end": 202751.3560090703,
+    "text_begin": 1136,
+    "text_end": 1149,
+    "pronounce_text_begin": 1126,
+    "pronounce_text_end": 1139
+  },
+  {
+    "text": "如果你在搭AI Agent系统，列出你现在用的每一个组件。",
+    "pronounce_text": "如果你在搭AI Agent系统，列出你现在用的每一个组件。",
+    "time_begin": 202896,
+    "time_end": 207776.68027210885,
+    "text_begin": 1149,
+    "text_end": 1178,
+    "pronounce_text_begin": 1139,
+    "pronounce_text_end": 1168
+  },
+  {
+    "text": "然后问自己：这个组件解决的是什么模型局限？",
+    "pronounce_text": "然后问自己：这个组件解决的是什么模型局限？",
+    "time_begin": 207936,
+    "time_end": 212224.57142857142,
+    "text_begin": 1178,
+    "text_end": 1199,
+    "pronounce_text_begin": 1168,
+    "pronounce_text_end": 1189
+  },
+  {
+    "text": "如果最新模型已经没这个局限了，大胆拆掉它。",
+    "pronounce_text": "如果最新模型已经没这个局限了，大胆拆掉它。",
+    "time_begin": 212364,
+    "time_end": 215805.04308390024,
+    "text_begin": 1199,
+    "text_end": 1220,
+    "pronounce_text_begin": 1189,
+    "pronounce_text_end": 1210
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 215964,
+    "time_end": 222214.6575963719,
+    "text_begin": 1220,
+    "text_end": 1247,
+    "pronounce_text_begin": 1210,
+    "pronounce_text_end": 1236
+  }
+]

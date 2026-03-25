@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .highlight-yellow {
+      color: #F59E0B;
+    }
+    .cards-row {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-top: 16px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .card-price {
+      font-size: 64px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .card-price.cheap {
+      color: #10B981;
+    }
+    .card-price.expensive {
+      color: #8B5CF6;
+    }
+    .card-time {
+      font-size: 24px;
+      color: #6B7280;
+      margin-bottom: 20px;
+    }
+    .card-result {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .card-result .bad {
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .card-result .good {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .vs-badge {
+      font-size: 36px;
+      font-weight: 800;
+      color: #F59E0B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · AI Agent架构设计</div>
+    <div class="title">
+      同一个AI，同一个需求<br>
+      <span class="highlight-red">$9</span> vs <span class="highlight-yellow">$200</span><br>
+      差了两个时代
+    </div>
+    <div class="cards-row">
+      <div class="card">
+        <div class="card-price cheap">$9</div>
+        <div class="card-time">20 分钟</div>
+        <div class="card-result">
+          界面有了，按钮有了<br>
+          <span class="bad">核心功能全是坏的</span>
+        </div>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="card">
+        <div class="card-price expensive">$200</div>
+        <div class="card-time">6 小时</div>
+        <div class="card-result">
+          物理引擎<br>
+          <span class="good">AI辅助关卡设计</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

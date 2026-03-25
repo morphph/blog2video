@@ -1,0 +1,152 @@
+[
+  {
+    "text": "你让AI写完代码，问它\"写得怎么样？\"它说\"结构清晰，逻辑完整\"。但你一跑，全是Bug。Anthropic工程师发现，这不是偶尔失误，是系统性缺陷。",
+    "pronounce_text": "你让AI写完代码，问它\"写得怎么样？\"它说\"结构清晰，逻辑完整\"。但你一跑，全是Bug。Anthropic工程师发现，这不是偶尔失误，是系统性缺陷。",
+    "time_begin": 0,
+    "time_end": 14528.571428571428,
+    "text_begin": 0,
+    "text_end": 74,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 74
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 工程师关于如何让AI做出真正高质量作品的技术博客。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Anthropic工程师关于如何让AI做出真正高质量作品的技术博客。",
+    "time_begin": 14688,
+    "time_end": 30284.689342403628,
+    "text_begin": 74,
+    "text_end": 166,
+    "pronounce_text_begin": 74,
+    "pronounce_text_end": 161
+  },
+  {
+    "text": "原文有一句话特别扎心。当AI评价自己的作品时，它会 confidently praising the work, even when the quality is obviously mediocre。自信地夸奖自己，哪怕质量明显很一般。",
+    "pronounce_text": "原文有一句话特别扎心。当AI评价自己的作品时，它会confidently praising the work,even when the quality is obviously mediocre。自信地夸奖自己，哪怕质量明显很一般。",
+    "time_begin": 30456,
+    "time_end": 44264.75283446712,
+    "text_begin": 166,
+    "text_end": 285,
+    "pronounce_text_begin": 161,
+    "pronounce_text_end": 278
+  },
+  {
+    "text": "为什么？想象一下考试。学生自己给自己打分，永远手下留情。换一个严格的外部考官批卷，分数马上真实了。生成和评估在认知上是冲突的。",
+    "pronounce_text": "为什么？想象一下考试。学生自己给自己打分，永远手下留情。换一个严格的外部考官批卷，分数马上真实了。生成和评估在认知上是冲突的。",
+    "time_begin": 44424,
+    "time_end": 58743.5918367347,
+    "text_begin": 285,
+    "text_end": 348,
+    "pronounce_text_begin": 278,
+    "pronounce_text_end": 341
+  },
+  {
+    "text": "你没办法让一个Agent一边创作一边严格挑自己毛病。",
+    "pronounce_text": "你没办法让一个Agent一边创作一边严格挑自己毛病。",
+    "time_begin": 58943.5918367347,
+    "time_end": 62674.884353741494,
+    "text_begin": 348,
+    "text_end": 374,
+    "pronounce_text_begin": 341,
+    "pronounce_text_end": 367
+  },
+  {
+    "text": "这个思路借鉴了GAN，生成对抗网络。一个生成器造假，一个判别器鉴定。互相博弈，生成器水平被逼到极高。",
+    "pronounce_text": "这个思路借鉴了GAN，生成对抗网络。一个生成器造假，一个判别器鉴定。互相博弈，生成器水平被逼到极高。",
+    "time_begin": 62820,
+    "time_end": 73296.68934240362,
+    "text_begin": 374,
+    "text_end": 424,
+    "pronounce_text_begin": 367,
+    "pronounce_text_end": 417
+  },
+  {
+    "text": "Anthropic把同样思路搬到Agent架构：一个Agent生成，另一个Agent评估。各司其职。",
+    "pronounce_text": "Anthropic把同样思路搬到Agent架构：一个Agent生成，另一个Agent评估。各司其职。",
+    "time_begin": 73496.68934240362,
+    "time_end": 81790.7029478458,
+    "text_begin": 424,
+    "text_end": 474,
+    "pronounce_text_begin": 417,
+    "pronounce_text_end": 467
+  },
+  {
+    "text": "评估Agent怎么评？四个具体维度。Design Quality，风格是否统一有氛围感。Originality，有没有自主设计决策。Craft，字体间距配色的技术执行。Functionality，用户能不能顺畅完成操作。",
+    "pronounce_text": "评估Agent怎么评？四个具体维度。Design Quality，风格是否统一有氛围感。Originality，有没有自主设计决策。Craft，字体间距配色的技术执行。Functionality，用户能不能顺畅完成操作。",
+    "time_begin": 81936,
+    "time_end": 98728.51700680272,
+    "text_begin": 474,
+    "text_end": 584,
+    "pronounce_text_begin": 467,
+    "pronounce_text_end": 577
+  },
+  {
+    "text": "更关键的是方式。评估Agent不是看截图打分。它用 Playwright 实际操作页面，点按钮、滚页面、填表单，像真实用户一样体验完再评分。就像大众点评的神秘访客，亲自去吃一顿再写点评。",
+    "pronounce_text": "更关键的是方式。评估Agent不是看截图打分。它用Playwright实际操作页面，点按钮、滚页面、填表单，像真实用户一样体验完再评分。就像大众点评的神秘访客，亲自去吃一顿再写点评。",
+    "time_begin": 98892,
+    "time_end": 115045.96825396825,
+    "text_begin": 584,
+    "text_end": 677,
+    "pronounce_text_begin": 577,
+    "pronounce_text_end": 668
+  },
+  {
+    "text": "评完之后，生成Agent根据反馈修改。改完再评，评完再改。这个循环跑5到15轮。像老师批改作文，每次圈出问题让你从头改，改个十遍下来质量天差地别。",
+    "pronounce_text": "评完之后，生成Agent根据反馈修改。改完再评，评完再改。这个循环跑五到十五轮。像老师批改作文，每次圈出问题让你从头改，改个十遍下来质量天差地别。",
+    "time_begin": 115200,
+    "time_end": 130494.82993197278,
+    "text_begin": 677,
+    "text_end": 750,
+    "pronounce_text_begin": 668,
+    "pronounce_text_end": 741
+  },
+  {
+    "text": "检查一下你的AI工作流。Agent自我评价是不是总说\"做得不错\"？有没有独立评估环节？评估是看截图还是实际操作产品？迭代次数够不够？如果答案不理想，你需要一个独立的评估Agent。",
+    "pronounce_text": "检查一下你的AI工作流。Agent自我评价是不是总说\"做得不错\"？有没有独立评估环节？评估是看截图还是实际操作产品？迭代次数够不够？如果答案不理想，你需要一个独立的评估Agent。",
+    "time_begin": 130644,
+    "time_end": 146194.24943310657,
+    "text_begin": 750,
+    "text_end": 840,
+    "pronounce_text_begin": 741,
+    "pronounce_text_end": 831
+  },
+  {
+    "text": "总结一下。AI自评天然不可靠，这是架构问题。解决方法：把生成和评估拆开，交给不同的Agent。评估要像真实用户一样操作，用具体维度打分，驱动5到15轮迭代。",
+    "pronounce_text": "总结一下。AI自评天然不可靠，这是架构问题。解决方法：把生成和评估拆开，交给不同的Agent。评估要像真实用户一样操作，用具体维度打分，驱动五到十五轮迭代。",
+    "time_begin": 146340,
+    "time_end": 162366.25850340136,
+    "text_begin": 840,
+    "text_end": 918,
+    "pronounce_text_begin": 831,
+    "pronounce_text_end": 909
+  },
+  {
+    "text": "今天就做一件事：把你AI工作流里的\"生成\"和\"评估\"拆成两个独立Agent。永远别指望一个Agent能自我纠错。",
+    "pronounce_text": "今天就做一件事：把你AI工作流里的\"生成\"和\"评估\"拆成两个独立Agent。永远别指望一个Agent能自我纠错。",
+    "time_begin": 162504,
+    "time_end": 171575.8820861678,
+    "text_begin": 918,
+    "text_end": 974,
+    "pronounce_text_begin": 909,
+    "pronounce_text_end": 965
+  },
+  {
+    "text": "那花20分钟9美元，和花6小时200美元，做出来的东西差距有多离谱？下期见。",
+    "pronounce_text": "那花二十分钟九美元，和花六小时两百美元，做出来的东西差距有多离谱？下期见。",
+    "time_begin": 171720,
+    "time_end": 178829.79591836734,
+    "text_begin": 974,
+    "text_end": 1012,
+    "pronounce_text_begin": 965,
+    "pronounce_text_end": 1002
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 178992,
+    "time_end": 184522.83900226757,
+    "text_begin": 1012,
+    "text_end": 1039,
+    "pronounce_text_begin": 1002,
+    "pronounce_text_end": 1028
+  }
+]

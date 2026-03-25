@@ -1,0 +1,27 @@
+[
+  {
+    "slideNumber": 1,
+    "charStart": 0,
+    "charEnd": 166
+  },
+  {
+    "slideNumber": 2,
+    "charStart": 166,
+    "charEnd": 474
+  },
+  {
+    "slideNumber": 3,
+    "charStart": 474,
+    "charEnd": 677
+  },
+  {
+    "slideNumber": 4,
+    "charStart": 677,
+    "charEnd": 840
+  },
+  {
+    "slideNumber": 5,
+    "charStart": 840,
+    "charEnd": 1039
+  }
+]

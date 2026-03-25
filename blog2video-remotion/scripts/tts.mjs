@@ -52,6 +52,43 @@ function extractText(markdown) {
     .join("\n\n");
 }
 
+// Extract plain text AND build slide→character-offset map for precise audio alignment.
+// slideMap offsets track cumulative chars WITHOUT "\n\n" separators, matching MiniMax's
+// text_begin/text_end convention in raw subtitle responses.
+// Returns { text, slideMap: [{ slideNumber, charStart, charEnd }] }
+function extractTextWithSlideMap(markdown) {
+  const slideMap = []; // { slideNumber, charStart, charEnd }
+  const keptLines = [];
+  let charOffset = 0; // cumulative chars, no separators (matches MiniMax text_begin)
+
+  for (const line of markdown.split("\n")) {
+    // Detect [SLIDE N: type] markers
+    const slideMatch = line.match(/^\[SLIDE (\d+):/);
+    if (slideMatch) {
+      // Close previous slide's charEnd
+      if (slideMap.length > 0) {
+        slideMap[slideMap.length - 1].charEnd = charOffset;
+      }
+      slideMap.push({ slideNumber: parseInt(slideMatch[1]), charStart: charOffset, charEnd: charOffset });
+      continue;
+    }
+
+    // Same filtering as extractText()
+    if (line.startsWith("#")) continue;
+    if (line.trim() === "") continue;
+
+    keptLines.push(line);
+    charOffset += line.length; // no +2 for \n\n — MiniMax offsets exclude separators
+  }
+
+  // Close last slide
+  if (slideMap.length > 0) {
+    slideMap[slideMap.length - 1].charEnd = charOffset;
+  }
+
+  return { text: keptLines.join("\n\n"), slideMap };
+}
+
 // Split MiniMax paragraph-level subtitles into sentence-level
 function splitToSentences(rawSubtitles) {
   const sentences = [];
@@ -105,8 +142,16 @@ function formatVTTTime(seconds) {
 async function main() {
   console.log(`Reading script: ${scriptPath}`);
   const markdown = fs.readFileSync(scriptPath, "utf-8");
-  const text = extractText(markdown);
-  console.log(`Extracted ${text.length} characters for TTS`);
+  const { text, slideMap } = extractTextWithSlideMap(markdown);
+
+  // Assertion: extractTextWithSlideMap must produce identical text to extractText
+  const legacyText = extractText(markdown);
+  if (text !== legacyText) {
+    console.error("ASSERTION FAILED: extractTextWithSlideMap text differs from extractText");
+    process.exit(1);
+  }
+
+  console.log(`Extracted ${text.length} characters for TTS (${slideMap.length} slides mapped)`);
 
   console.log("Calling MiniMax TTS API...");
   const response = await fetch("https://api.minimaxi.chat/v1/t2a_v2", {
@@ -197,6 +242,11 @@ async function main() {
   const rawSubPath = path.join(outputDir, `${baseName}_minimax_raw_subtitles.json`);
   fs.writeFileSync(rawSubPath, JSON.stringify(rawSubtitles, null, 2));
   console.log(`Raw subtitles saved: ${rawSubPath} (${rawSubtitles.length} segments)`);
+
+  // Save slide map for audio-slide alignment in render-all.mjs
+  const slideMapPath = path.join(outputDir, `${baseName}_slide_map.json`);
+  fs.writeFileSync(slideMapPath, JSON.stringify(slideMap, null, 2));
+  console.log(`Slide map saved: ${slideMapPath} (${slideMap.length} slides)`);
 
   // Split into sentences
   const sentences = splitToSentences(rawSubtitles);

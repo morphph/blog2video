@@ -14,6 +14,7 @@ import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 import { fileURLToPath } from "url";
+import { gateAlignment, gatePostRender, logGateResult } from "./gates.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const remotionDir = path.join(__dirname, "..");
@@ -155,6 +156,57 @@ function parseTime(timeStr) {
   return 0;
 }
 
+// Align slide timing using MiniMax text_begin offsets from raw subtitles.
+// Maps each subtitle paragraph to its slide via character offsets, giving precise per-slide timing.
+function alignSlideTiming(config, rawSubtitles, slideMap) {
+  // 1. Group raw subtitles by slide using text_begin offsets
+  const slideGroups = new Map(); // slideNumber → [subtitle segments]
+
+  for (const sub of rawSubtitles) {
+    // Find the slide whose char range contains this subtitle's text_begin
+    let slideNum = slideMap[0]?.slideNumber || 1;
+    for (let i = slideMap.length - 1; i >= 0; i--) {
+      if (slideMap[i].charStart <= sub.text_begin) {
+        slideNum = slideMap[i].slideNumber;
+        break;
+      }
+    }
+    if (!slideGroups.has(slideNum)) slideGroups.set(slideNum, []);
+    slideGroups.get(slideNum).push(sub);
+  }
+
+  // 2. Set each slide's timing from its subtitle group
+  for (const slide of config.slides) {
+    const subs = slideGroups.get(slide.slide_number);
+    if (subs && subs.length > 0) {
+      slide.start_time_seconds = subs[0].time_begin / 1000;
+      const lastEnd = subs[subs.length - 1].time_end / 1000;
+      slide.duration_seconds = lastEnd - slide.start_time_seconds;
+    }
+  }
+
+  // 3. Fill inter-slide gaps (natural TTS pauses) — assign gap to preceding slide
+  for (let i = 0; i < config.slides.length - 1; i++) {
+    const current = config.slides[i];
+    const next = config.slides[i + 1];
+    const currentEnd = current.start_time_seconds + current.duration_seconds;
+    const gap = next.start_time_seconds - currentEnd;
+    if (gap > 0) {
+      current.duration_seconds += gap;
+    }
+  }
+
+  // 4. Extend last slide by 1s buffer to prevent premature cutoff
+  const last = config.slides[config.slides.length - 1];
+  last.duration_seconds += 1;
+
+  // Log alignment results
+  for (const slide of config.slides) {
+    const subs = slideGroups.get(slide.slide_number);
+    console.log(`  Slide ${slide.slide_number}: ${slide.start_time_seconds.toFixed(1)}s - ${(slide.start_time_seconds + slide.duration_seconds).toFixed(1)}s (${subs?.length || 0} subtitle segments)`);
+  }
+}
+
 async function renderVideo(videoNumber) {
   console.log(`\n🎬 === Rendering Video ${videoNumber} ===\n`);
 
@@ -179,27 +231,45 @@ async function renderVideo(videoNumber) {
   const subtitlesPath = path.join(outputDir, `video_${videoNumber}_audio_subtitles.json`);
   const config = buildVideoConfig(videoNumber, subtitlesPath, manifestPath);
 
-  // Proportionally scale slide timing to match actual audio duration
+  // Align slide timing to actual audio using text-offset mapping
   const rawSubPath = path.join(outputDir, `video_${videoNumber}_audio_minimax_raw_subtitles.json`);
   const rawSubs = JSON.parse(fs.readFileSync(rawSubPath, "utf-8"));
   const audioDuration = rawSubs.length > 0 ? rawSubs[rawSubs.length - 1].time_end / 1000 : 300;
 
-  const totalEstimated = config.slides.reduce((sum, s) => sum + s.duration_seconds, 0);
+  const slideMapPath = path.join(outputDir, `video_${videoNumber}_audio_slide_map.json`);
 
-  if (totalEstimated > 0 && audioDuration > 0) {
-    const scaleFactor = audioDuration / totalEstimated;
-    console.log(`  Timing scale: ${totalEstimated.toFixed(1)}s estimated → ${audioDuration.toFixed(1)}s actual (×${scaleFactor.toFixed(3)})`);
+  if (fs.existsSync(slideMapPath) && rawSubs.length > 0) {
+    // Precise alignment using MiniMax text_begin offsets
+    const slideMap = JSON.parse(fs.readFileSync(slideMapPath, "utf-8"));
+    console.log(`  Using text-offset alignment (${slideMap.length} slides, ${rawSubs.length} subtitle segments, ${audioDuration.toFixed(1)}s audio)`);
+    alignSlideTiming(config, rawSubs, slideMap);
+  } else {
+    // Legacy fallback: proportional scaling for videos without slide map
+    const totalEstimated = config.slides.reduce((sum, s) => sum + s.duration_seconds, 0);
+    if (totalEstimated > 0 && audioDuration > 0) {
+      const scaleFactor = audioDuration / totalEstimated;
+      console.log(`  Timing scale (legacy): ${totalEstimated.toFixed(1)}s estimated → ${audioDuration.toFixed(1)}s actual (×${scaleFactor.toFixed(3)})`);
 
-    let cumulativeTime = 0;
-    for (const slide of config.slides) {
-      slide.start_time_seconds = cumulativeTime;
-      slide.duration_seconds = slide.duration_seconds * scaleFactor;
-      cumulativeTime += slide.duration_seconds;
+      let cumulativeTime = 0;
+      for (const slide of config.slides) {
+        slide.start_time_seconds = cumulativeTime;
+        slide.duration_seconds = slide.duration_seconds * scaleFactor;
+        cumulativeTime += slide.duration_seconds;
+      }
+
+      const lastSlide = config.slides[config.slides.length - 1];
+      lastSlide.duration_seconds = audioDuration - lastSlide.start_time_seconds + 1;
     }
+  }
 
-    // Extend last slide by 1s buffer to prevent premature cutoff
-    const lastSlide = config.slides[config.slides.length - 1];
-    lastSlide.duration_seconds = audioDuration - lastSlide.start_time_seconds + 1;
+  // Gate 3: Validate alignment before proceeding
+  const slideMapForGate = fs.existsSync(slideMapPath)
+    ? JSON.parse(fs.readFileSync(slideMapPath, "utf-8"))
+    : null;
+  const alignmentResult = gateAlignment(config, rawSubs, slideMapForGate);
+  if (!logGateResult("Alignment", alignmentResult)) {
+    console.error(`\n❌ Alignment gate failed for video ${videoNumber}. Aborting render.`);
+    process.exit(1);
   }
 
   // Auto-append CTA slide (5 seconds after last content slide)
@@ -250,6 +320,11 @@ async function renderVideo(videoNumber) {
   const stats = fs.statSync(outputMp4);
   console.log(`\n✅ Video ${videoNumber} rendered: ${outputMp4} (${(stats.size / 1024 / 1024).toFixed(1)} MB)`);
   console.log(`   Duration: ${totalDuration.toFixed(1)}s, Frames: ${totalFrames}`);
+
+  // Gate 4: Post-render validation
+  const coverPhotoPath = path.join(outputDir, `video_${videoNumber}_cover_photo.png`);
+  const postRenderResult = gatePostRender(outputMp4, coverPhotoPath);
+  logGateResult("PostRender", postRenderResult);
 }
 
 async function main() {

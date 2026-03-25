@@ -119,7 +119,7 @@ meta.json 里**不需要** title、description、tags — 这些由远程服务�
 scp -r ./blog2video-output/<slug> ubuntu@54.172.152.187:/home/ubuntu/blog2video/queue/
 ```
 
-投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`images/` 目录。
+投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`images/` 目录。
 
 ### 投递完成后
 

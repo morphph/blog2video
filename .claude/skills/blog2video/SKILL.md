@@ -59,7 +59,8 @@ blog2video-remotion/              ← 独立 Remotion 项目
 │   └── utils/                    ← 工具函数
 ├── scripts/
 │   ├── render-all.mjs            ← TTS → Puppeteer 截图 → Remotion 渲染
-│   ├── tts.mjs                   ← Edge TTS 生成脚本
+│   ├── tts.mjs                   ← MiniMax TTS + slide map 生成
+│   ├── gates.mjs                 ← Pipeline evaluation gates (script/manifest/alignment/postrender)
 │   └── fetch-twitter.mjs         ← Puppeteer 获取 Twitter/X 长文章 + 图片
 └── package.json
 ```
@@ -76,11 +77,16 @@ Slash command `/blog2video` 的执行流程：
 3. 检查 video_plan.json，确认视频数量
 4. 对每个视频，依次调用：
    a. Script Writer subagent → 输出 video_N_script.md
-   b. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
-5. 渲染（render-all.mjs 统一处理）：
-   a. Edge TTS 生成音频 → video_N_audio.mp3
+   b. **Gate 1 (Script)**: `node scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数
+   c. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
+   d. **Gate 2 (Manifest)**: `node scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在
+5. 渲染（render-all.mjs 统一处理，内含 Gate 3 + Gate 4）：
+   a. MiniMax TTS → audio + subtitles + **slide_map.json**（text-offset 映射）
    b. Puppeteer 截图 HTML slides → slide_N.png
-   c. Remotion 渲染 → video_N.mp4
+   c. **Slide timing alignment**：用 slide_map 精确对齐每张 slide 与音频时间轴
+   d. **Gate 3 (Alignment)**: 验证每张 slide 有字幕映射、时长 > 2s、时间单调递增
+   e. Remotion 渲染 → video_N.mp4
+   f. **Gate 4 (PostRender)**: 验证 MP4 大小、封面图存在
 6. 输出所有文件路径
 ```
 
@@ -107,12 +113,37 @@ blog2video-output/
     ├── cover_photo.html              ← 封面图 HTML
     ├── video_1_manifest.json         ← slide 清单和时间信息
     ├── video_1_audio.mp3
+    ├── video_1_audio_slide_map.json  ← slide 字符偏移映射（用于精确音频对齐）
     ├── video_1.mp4
     ├── video_2_script.md
     ├── video_2_manifest.json
     ├── ...
     └── video_2.mp4
 ```
+
+## Slide-Audio Alignment
+
+TTS 生成音频后，`tts.mjs` 会输出 `video_N_audio_slide_map.json`，记录每张 slide 的口播文字在合并文本中的字符偏移范围。`render-all.mjs` 利用 MiniMax API 返回的 `text_begin` 偏移量，将每个字幕段落精确映射到对应的 slide，得到真实的 per-slide 音频时间轴。
+
+这替代了之前的等比缩放（proportional scaling）方案，解决了因 TTS 对不同内容语速不同导致的 slide 切换与口播内容错位问题。
+
+**关键文件**：
+- `tts.mjs` → `extractTextWithSlideMap()` 生成 slide map
+- `render-all.mjs` → `alignSlideTiming()` 用 slide map + raw subtitles 精确对齐
+- `gates.mjs` → `gateAlignment()` 验证对齐质量
+
+## Evaluation Gates
+
+Pipeline 在每个阶段后运行 evaluation gate，用于捕获错误、防止渲染损坏的视频：
+
+| Gate | Stage | 触发条件 | 检查项 |
+|------|-------|---------|--------|
+| Gate 1: Script | Script Writer 后 | orchestrator 调用 | [SLIDE] 标记、品牌植入、字数 |
+| Gate 2: Manifest | Slide HTML Generator 后 | orchestrator 调用 | slide 数量一致、HTML 文件存在 |
+| Gate 3: Alignment | TTS + alignment 后 | render-all.mjs 内置 | 字幕映射完整、时长 > 2s、单调递增 |
+| Gate 4: PostRender | Remotion 渲染后 | render-all.mjs 内置 | MP4 大小、封面图 |
+
+Gate 1-2 由 orchestrator 在 subagent 之间调用（CLI: `node scripts/gates.mjs script|manifest ...`），失败时 retry once。Gate 3-4 内置在 render-all.mjs 中自动运行。
 
 ## LoreAI 集成
 

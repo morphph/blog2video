@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { execSync } from 'child_process';
 import { QUEUE_DIR, ensureDir, log, logError, formatSGT } from './utils';
 import { generateMeta } from './auto-meta';
 
@@ -114,6 +115,15 @@ async function scanForNewDeliveries(): Promise<void> {
 
       // Write notification for Claudiny
       writeNotification(folder, meta || {});
+
+      // Auto-upload to Google Drive
+      try {
+        log(`[Watcher] Uploading ${folder} to Google Drive...`);
+        execSync(`/home/ubuntu/blog2video/sync-to-gdrive.sh "${folder}"`, { timeout: 300000 });
+        log(`[Watcher] ✓ Uploaded ${folder} to Google Drive`);
+      } catch (uploadErr) {
+        logError(`[Watcher] Google Drive upload failed for ${folder}`, uploadErr);
+      }
 
       // Add to known folders
       state.knownFolders.push(folder);

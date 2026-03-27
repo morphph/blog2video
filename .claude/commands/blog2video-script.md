@@ -1,38 +1,98 @@
-# /blog2video-script — Re-generate narration script
+# /blog2video-script — Generate narration script
 
-Re-generate or iterate on the narration script for a specific video.
+Generate (or re-generate) the narration script for a blog2video project. Supports both URL input (runs full fetch + analyze + script pipeline) and existing output directory input.
 
 ## 使用方式
 ```
-/blog2video-script <output-dir> [video-number]
+/blog2video-script <url-or-output-dir> [video-number]
 ```
 
 例如：
 ```
-/blog2video-script ./blog2video-output/effective-harnesses-for-long-running-agents/ 1
+# 从 URL 开始（自动抓取 + 分析 + 生成脚本）
+/blog2video-script https://x.com/someone/status/123456
+
+# 从已有目录重新生成脚本
+/blog2video-script ./blog2video-output/effective-harnesses/ 1
 ```
 
 ## 参数解析
 
-`$ARGUMENTS` 格式：`<output-dir> [video-number]`
-- `output-dir`：blog2video-output 下的输出目录路径
-- `video-number`：可选，默认为 1
+`$ARGUMENTS` 格式：`<url-or-output-dir> [video-number]`
+- 如果第一个参数以 `http` 开头 → URL 模式（从头开始）
+- 否则 → 目录模式（基于已有数据重新生成）
+- `video-number`：可选。URL 模式下忽略（生成所有视频脚本），目录模式下默认为 1
 
 ## 执行步骤
 
-### Step 1: 读取现有数据
+### URL 模式（参数以 http 开头）
+
+#### Step 0: 抓取内容
+
+按以下顺序检测输入类型并抓取内容：
+
+**a) YouTube 视频**（URL 包含 `youtube.com` 或 `youtu.be`）：
+- 获取视频标题作为 slug：`yt-dlp --print title "<url>"` → 转为 kebab-case slug
+- 创建输出目录：`./blog2video-output/<slug>/`
+- 下载英文字幕：`yt-dlp --write-auto-sub --sub-lang en --skip-download -o "./blog2video-output/<slug>/transcript" "<url>"`
+- 解析 `.vtt` 提取纯文本，保存为 `source_raw.md`
+- 使用 Transcript Organizer subagent 整理为 `source_blog.md`
+
+**b) PDF 文件**（URL 以 `.pdf` 结尾）：
+- 下载 PDF，使用 pdfminer 提取文本
+- 保存为 `source_raw.md`，清洗后保存为 `source_blog.md`
+
+**c) Twitter/X**（URL 包含 `x.com` 或 `twitter.com`）：
+- 用 fxtwitter API 获取文章内容：`curl -sL "https://api.fxtwitter.com/<user>/status/<id>"`
+- 解析 JSON 中的 article blocks 为 Markdown
+- 下载封面图到 `images/` 目录
+- 保存为 `source_raw.md`
+- 使用 Twitter Cleaner subagent 清洗为 `source_blog.md`（如果内容已干净可跳过）
+
+**d) 博客 URL**（其他 http 链接）：
+- `curl -sL` 获取 HTML，转为干净 Markdown
+- 保存为 `source_blog.md`
+
+验证 `source_blog.md` 已生成且非空。
+
+#### Step 1: Content Analyzer
+
+使用 subagent 执行。读取 `.claude/skills/blog2video/prompts/content-analyzer.md` 获取 prompt。
+读取 `.claude/skills/blog2video/examples/example-plan.json` 作为 few-shot 参考。
+
+输出保存为 `./blog2video-output/<slug>/video_plan.json`。
+
+#### Step 2: Script Writer
+
+对 video_plan 中的每个视频，分别使用 subagent 生成脚本（见下方 subagent 指令）。
+
+输出保存为 `./blog2video-output/<slug>/video_N_script.md`。
+
+完成后打印摘要并结束（不继续 slides/render）。
+
+---
+
+### 目录模式（参数不以 http 开头）
+
+#### Step 1: 读取现有数据
 
 1. 解析 `$ARGUMENTS`，提取 output-dir 和 video-number（默认 1）
 2. 读取 `<output-dir>/video_plan.json`，提取对应视频的 plan
 3. 读取 `<output-dir>/source_blog.md`，获取博客原文
 4. 如果已有 `<output-dir>/video_<N>_script.md`，读取它作为"上一版参考"
 
-### Step 2: 调用 Script Writer subagent
+#### Step 2: 调用 Script Writer subagent
+
+（与 URL 模式的 Step 2 相同）
+
+---
+
+## Script Writer Subagent 指令
 
 读取 `.claude/skills/blog2video/prompts/script-writer.md` 获取完整 prompt。
 读取 `.claude/skills/blog2video/examples/example-script-v1.md` 作为 few-shot 参考。
 
-对 subagent 的指令：
+对每个视频的 subagent 指令：
 ```
 你是 Script Writer。请阅读以下prompt规范和参考示例，然后为视频 N 生成口播稿。
 
@@ -65,11 +125,12 @@ Re-generate or iterate on the narration script for a specific video.
 - 生成后检查字数是否在目标范围 ±15% 内
 ```
 
-### Step 3: 保存并对比
+## Step 3: 保存并输出摘要
 
 将输出保存为 `<output-dir>/video_<N>_script.md`（覆盖旧版本）。
 
 打印摘要：
+- 输出目录路径
 - 总字数
 - Slide 数量和类型
 - 预计时长

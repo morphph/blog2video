@@ -1,0 +1,164 @@
+{
+  "blog_metadata": {
+    "title": "gstack — Garry Tan's Claude Code virtual engineering team",
+    "title_zh": "YC CEO的AI软件工厂：一个人顶20人的工具链",
+    "word_count": 4200,
+    "complexity": "medium",
+    "depth_score": 7,
+    "slug": "garrytan-gstack"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "博客有3个可独立成篇的核心问题：(1) 一个人怎么做到60天60万行代码？(2) 这套工具链具体怎么运作？(3) 背后的建造哲学是什么？每个问题独立可理解，且有递进关系。",
+    "episode_transitions": [
+      "视频1讲'震撼的结果'引发好奇 → 视频2讲'具体怎么做到的'满足好奇 → 视频3讲'背后的思维方式'升华认知"
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "YC CEO兼职写代码，60天60万行？",
+        "hook_question": "一个全职CEO，怎么可能兼职60天写出60万行生产代码？",
+        "core_thesis": "AI编程工具让单个人的产出超越传统20人团队，gstack是YC CEO Garry Tan用来把Claude Code变成虚拟工程团队的开源工具集——20个专家角色，全部用Markdown slash命令实现。",
+        "bomb_detail": "Garry Tan一周的retro数据：140,751行代码新增、362次commit、约11.5万行净代码——同时他还在全职管理YC，这不是全职写代码的结果",
+        "emotion_arc": "开头：抛出反常识数据（60天60万行、兼职）制造震撼 → 中间：揭秘身份（YC CEO、Palantir早期员工、投过Coinbase/Instacart）增强可信度 → 结尾：这不是天才，是工具的胜利，引出gstack",
+        "must_include_details": [
+          "60天600,000+行生产代码，35%是测试",
+          "每天10,000-20,000行，同时全职运营YC",
+          "一周retro：140,751行新增，362次commit",
+          "51K GitHub星标",
+          "Karpathy引言：2025年12月以来基本没手写过代码"
+        ],
+        "actionable_takeaway": "去GitHub搜garrytan/gstack，花30秒安装，跑一下/office-hours描述你正在做的产品，体验一次AI虚拟团队的感觉",
+        "source_sections": [
+          "开头引言和个人介绍",
+          "Quick start",
+          "Install — 30 seconds"
+        ],
+        "estimated_duration_minutes": 6,
+        "key_concepts": [
+          {
+            "concept_en": "virtual engineering team via slash commands",
+            "concept_zh": "用slash命令构建虚拟工程团队",
+            "analogy_direction": "一个人开餐厅，但有20个AI员工：一个当主厨决定菜单、一个当服务员招待客人、一个当食品安全检查员，全部通过对讲机（slash命令）调度",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "AI productivity compression ratio",
+            "concept_zh": "AI生产力压缩比",
+            "analogy_direction": "以前手工织布要一个月，工业革命后纺织机一天搞定——AI编程就是软件行业的工业革命，脚手架代码100倍压缩、测试50倍压缩",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "structured roles vs blank prompt",
+            "concept_zh": "结构化角色 vs 空白对话框",
+            "analogy_direction": "新员工入职：直接丢进办公室让他自己干 vs 给他一本岗位手册、流程图和每天的工作清单",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "2026年，单个人+正确的AI工具链可以产出超越传统20人团队。关键不是AI多聪明，而是你给它什么样的角色和流程。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "20个AI专家替你干活：gstack全流程拆解",
+        "hook_question": "一个开源工具怎么把Claude Code变成CEO、设计师、QA、安全官……20个专家同时为你打工？",
+        "core_thesis": "gstack的核心不是工具集合，而是一套完整的sprint流程——Think → Plan → Build → Review → Test → Ship → Reflect——每个环节都有专门的AI角色，前一个环节的输出自动喂给下一个。",
+        "bomb_detail": "/qa命令打开真实浏览器，Claude说'I SEE THE ISSUE'然后直接修bug、写回归测试、验证修复——这个能力让Garry Tan从6个并行任务扩展到12个，因为AI终于有了眼睛",
+        "emotion_arc": "开头：用office-hours的例子（你说日历app，AI说你在做首席幕僚AI）展示AI比你更懂你要什么 → 中间：逐步展示sprint流程的每个环节如何衔接 → 结尾：10-15个并行sprint同时跑的画面",
+        "must_include_details": [
+          "sprint流程：Think → Plan → Build → Review → Test → Ship → Reflect",
+          "/office-hours的6个逼问式问题，重新定义你的产品",
+          "/qa打开真实Chromium浏览器测试",
+          "/cso做OWASP Top 10 + STRIDE威胁建模",
+          "/codex调用OpenAI做跨模型交叉审查",
+          "Conductor可以跑10-15个并行sprint"
+        ],
+        "actionable_takeaway": "在你的下一个feature开发前，先用/office-hours描述需求让AI挑战你的假设，再用/plan-ceo-review审视scope，最后用/review + /qa做质量把关",
+        "source_sections": [
+          "See it work",
+          "The sprint",
+          "Parallel sprints",
+          "10-15 parallel sprints"
+        ],
+        "estimated_duration_minutes": 8,
+        "key_concepts": [
+          {
+            "concept_en": "sprint as process, not tool collection",
+            "concept_zh": "sprint是流程，不是工具堆砌",
+            "analogy_direction": "20把好刀不等于一桌好菜，关键是做菜的顺序——先备料、再炒制、最后摆盘，每步的产出是下一步的输入",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "smart review routing",
+            "concept_zh": "智能审查路由",
+            "analogy_direction": "好的创业公司CEO不会审每一行代码：后端bug不需要设计审查，UI改动不需要基础设施审查——gstack自动判断该叫谁来看",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "real browser QA with Playwright",
+            "concept_zh": "真实浏览器QA测试",
+            "analogy_direction": "以前AI只能看代码猜bug，现在它能打开浏览器亲自点点点，就像质检员亲自去试用产品而不是只看设计图纸",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "cross-model review (Claude + Codex)",
+            "concept_zh": "跨模型交叉审查",
+            "analogy_direction": "看完一个医生后去另一家医院再看一次——两个AI模型独立审查同一段代码，重叠的发现大概率是真问题",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI工具链的价值不在于单个工具多强，而在于流程的串联——每个环节的输出自动成为下个环节的输入，形成闭环。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "为什么90%的代码都该写？Boil the Lake哲学",
+        "hook_question": "AI时代，「先做MVP、砍掉最后10%」还对吗？YC CEO说这是过时思维。",
+        "core_thesis": "gstack背后的Builder Ethos：当AI让边际成本趋近于零时，完整实现比捷径更划算——Boil the Lake（煮沸湖泊）。配合Search Before Building（先搜后建），构成2026年AI时代的新工程哲学。",
+        "bomb_detail": "Garry Tan的压缩比数据：脚手架代码从2天压缩到15分钟（100倍）、测试从1天到15分钟（50倍）、feature实现从1周到30分钟（30倍）——当完整实现只比捷径多花几分钟，砍需求就是'遗留思维'",
+        "emotion_arc": "开头：引用大家熟悉的'先做MVP、砍掉最后10%'共识 → 中间反转：AI时代这个共识过时了，完整实现只多花几分钟 → 结尾：升华到三层知识模型和Eureka时刻",
+        "must_include_details": [
+          "压缩比表格：脚手架100x、测试50x、feature 30x、bug修复20x、架构5x、研究3x",
+          "Boil the Lake原则：湖泊可以煮沸（100%测试覆盖），海洋不行（全系统重写）",
+          "反模式：'选B，代码少覆盖90%'——多70行代码只需几秒钟，选A",
+          "三层知识：久经考验的、新且流行的、第一性原理",
+          "Search Before Building：1000x工程师第一反应是'有没有人已经解决了'"
+        ],
+        "actionable_takeaway": "下次想砍需求或跳过测试时，先估算AI辅助的真实成本——如果完整实现只多花5分钟，做完整版",
+        "source_sections": [
+          "The Golden Age",
+          "1. Boil the Lake",
+          "2. Search Before Building",
+          "How They Work Together",
+          "Build for Yourself"
+        ],
+        "estimated_duration_minutes": 7,
+        "key_concepts": [
+          {
+            "concept_en": "Boil the Lake",
+            "concept_zh": "煮沸湖泊",
+            "analogy_direction": "以前烧水要劈柴生火，烧一壶水就够了，没必要烧满整个湖。但现在有了核电站（AI），烧满一个湖的成本跟烧一壶水差不多——那就把湖烧了",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "lake vs ocean",
+            "concept_zh": "湖泊 vs 海洋",
+            "analogy_direction": "100%测试覆盖是湖（可以煮沸），全系统重写是海洋（别碰）——关键是分辨哪些是湖、哪些是海",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Three Layers of Knowledge",
+            "concept_zh": "三层知识模型",
+            "analogy_direction": "第一层：教科书上的标准答案（但偶尔该质疑）；第二层：知乎热帖和技术博客（可能跟风）；第三层：你自己从问题本质推导出的原创发现（最有价值）",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "marginal cost of completeness near zero",
+            "concept_zh": "完整实现的边际成本趋近于零",
+            "analogy_direction": "以前抄笔记要手写3小时，当然只抄重点。现在AI帮你抄，全抄只多花2分钟——你还会只抄重点吗？",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI时代的新工程哲学：先搜索确认没有现成方案，然后做完整实现而不是捷径——因为完整版的成本已经趋近于零。"
+      }
+    ]
+  }
+}

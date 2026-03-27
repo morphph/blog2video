@@ -222,6 +222,22 @@ async function renderVideo(videoNumber) {
     stdio: "inherit",
   });
 
+  // Step 1.5: Normalize audio volume
+  console.log("\n🔊 Step 1.5: Normalizing audio volume...");
+  const normalizedAudioPath = audioPath.replace(".mp3", "_normalized.mp3");
+  try {
+    execSync(
+      `ffmpeg -y -i "${audioPath}" -af loudnorm=I=-14:TP=-1:LRA=11 "${normalizedAudioPath}"`,
+      { cwd: remotionDir, stdio: "inherit" }
+    );
+    // Replace original with normalized version
+    fs.copyFileSync(normalizedAudioPath, audioPath);
+    fs.unlinkSync(normalizedAudioPath);
+    console.log("Audio normalized to -14 LUFS");
+  } catch (err) {
+    console.warn("⚠️ ffmpeg loudnorm failed, using original audio:", err.message);
+  }
+
   // Step 2: Screenshot slides
   console.log("\n📸 Step 2: Taking slide screenshots...");
   await screenshotSlides(videoNumber);

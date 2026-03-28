@@ -78,7 +78,7 @@ All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs,
 
 ## Post-Render Delivery
 
-视频渲染完成后，自动将以下文件通过 SCP 投递到远程发布服务器。
+视频渲染完成后，自动将交付文件通过 rclone 上传到 Google Drive。
 
 ### 需要传输的文件（每个视频）
 
@@ -113,14 +113,16 @@ meta.json 里**不需要** title、description、tags — 这些由远程服务�
 
 ### 投递命令
 
-将整个输出文件夹作为子目录传输（SSH key 已配好，无需密码）：
+投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`images/` 目录。
+
+使用 rclone 上传到 Google Drive（rclone remote `gdrive:` 已配置）：
 
 ```bash
-scp -r ./blog2video-output/<slug> ubuntu@54.172.152.187:/home/ubuntu/blog2video/queue/
+rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="images/**" --exclude="*_narration.txt" --exclude="*_config.json" --progress
 ```
 
-投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`images/` 目录。
+注意：slide 截图 PNG 不传，但 `*_cover_photo.png` 需要传。用 `--include` 无法精确控制时，可先手动清理再 `rclone copy`。
 
 ### 投递完成后
 
-告知用户：**视频已投递到发布队列，Claudiny 会基于脚本内容自动生成标题、描述和标签，并排期发布到小红书和微信视频号。**
+告知用户：**视频已上传到 Google Drive (blog2video/<slug>/)，Claudiny 会基于脚本内容自动生成标题、描述和标签，并排期发布到小红书和微信视频号。**

@@ -1,0 +1,82 @@
+{
+  "blog_metadata": {
+    "title": "How to build Claude Skills 2.0 Better than 99% of People",
+    "title_zh": "Claude Skills 2.0：让AI变成你公司的专属员工",
+    "word_count": 850,
+    "complexity": "medium",
+    "depth_score": 5,
+    "slug": "leopardracer-claude-skills"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "博客不足1000词，核心论点单一（如何理解和使用Claude Skills），虽然涉及多个小节但都围绕同一主题展开，适合一个视频完整讲透",
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Anthropic刚发布的Skills功能，为什么说它比提示词强10倍？",
+        "hook_question": "你有没有这种痛苦——每次跟AI对话都要重复解释一遍公司的规则和流程？如果AI能像老员工一样，一教就会、永远记住，会怎样？",
+        "core_thesis": "Claude Skills是一种可复用的知识包机制，通过SKILL.md文件将业务流程和专业知识固化下来，让AI从'每次都要教'变成'教一次永远会'，本质上是把隐性工作经验变成AI能理解的显性规则",
+        "source_sections": [
+          "What are Skills?",
+          "What is Skill-creator?",
+          "How to write SKILL.md?",
+          "How Skills Work",
+          "MCP Vs Skills",
+          "Installing Skills",
+          "The main text should only include things that Claude doesn't know",
+          "Match the degrees of freedom of instructions to the task"
+        ],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "每个Skill的元数据只消耗几十个token，详细指令只在触发时才加载——这意味着你可以装很多Skill而不影响性能，这是一个'渐进式披露'的三层架构设计",
+        "emotion_arc": [
+          "痛点共鸣：每次都要重复教AI的挫败感",
+          "好奇：原来有个功能能一劳永逸？",
+          "理解：用厨房比喻搞懂MCP和Skills的关系",
+          "实操兴奋：原来创建一个Skill这么简单",
+          "行动欲：我也要给自己的工作流建一个"
+        ],
+        "must_include_details": [
+          "SKILL.md使用YAML Front Matter定义元数据+Markdown写具体指令的双层结构",
+          "官方建议SKILL.md控制在500行以内，超出部分拆分为独立引用文件",
+          "Skill-creator的五步迭代流程：提需求→生成草稿→测试运行→评估改进→循环",
+          "渐进式披露机制：YAML前言、正文、文件引用三层结构",
+          "每个Skill元数据只消耗几十个token"
+        ],
+        "actionable_takeaway": "打开你的项目，在.claude/skills目录下创建第一个SKILL.md，把你每天重复最多的一个工作流程写进去，用Skill-creator测试迭代三轮",
+        "key_concepts": [
+          {
+            "concept_en": "Claude Skills (SKILL.md)",
+            "concept_zh": "技能包",
+            "analogy_direction": "就像给新员工写的标准操作手册（SOP），写一次，以后谁来都能照着做",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Progressive Disclosure",
+            "concept_zh": "渐进式披露",
+            "analogy_direction": "像公司培训：入职第一天只告诉你核心规则，具体细节等你接手项目时再展开——不一次性灌输所有信息",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "MCP vs Skills",
+            "concept_zh": "工具 vs 流程",
+            "analogy_direction": "MCP是专业厨房（提供锅碗瓢盆和食材），Skills是菜谱（告诉你先放什么后放什么）。光有厨房不够，还得有菜谱才能做出好菜",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Skill-creator",
+            "concept_zh": "技能生成器",
+            "analogy_direction": "像一个老师傅手把手带你写SOP：你说需求，他帮你写初稿，实际跑一遍看效果，不满意就改，改到好为止",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Degrees of Freedom in Instructions",
+            "concept_zh": "指令的自由度",
+            "analogy_direction": "像导航设置：高自由度是'你自己选路'，中等是'推荐走高速'，低自由度是'严格按这条路走'——根据任务的容错率选择",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Claude Skills的本质不是让AI更聪明，而是让你的工作经验变成可复用的资产。与其每次聊天都重复解释，不如花30分钟写一个SKILL.md，从此解放自己。"
+      }
+    ]
+  }
+}

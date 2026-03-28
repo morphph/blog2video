@@ -1,0 +1,15 @@
+{
+  "topic": "Claude Skills 2.0：让AI变成你的专属员工",
+  "blog_url": "https://x.com/leopardracer/status/2035999459729895493",
+  "source": "leopardracer-claude-skills",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

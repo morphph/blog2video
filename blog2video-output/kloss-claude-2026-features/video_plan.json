@@ -1,0 +1,102 @@
+{
+  "blog_metadata": {
+    "title": "Everything Claude Has Shipped in 2026 and How to Actually Use It",
+    "title_zh": "Claude 2026 全部更新与实战指南",
+    "word_count": 8074,
+    "complexity": "high",
+    "depth_score": 8,
+    "slug": "kloss-claude-2026-features"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "8000+词长文，覆盖模型、产品模式、开发者工具三大独立主题",
+    "episode_transitions": [
+      {
+        "between_videos": [1, 2],
+        "preview_at_end_of_video_1": "模型够强了，但Anthropic用它10天造出的产品，让SaaS股票蒸发了数千亿……",
+        "recap_at_start_of_video_2": "上期我们看到Opus 4.6能跑14.5小时任务、100万token不加价。"
+      },
+      {
+        "between_videos": [2, 3],
+        "preview_at_end_of_video_2": "Cowork适合普通用户，但开发者手里还有一套更猛的武器库……",
+        "recap_at_start_of_video_3": "上期讲了Cowork如何10天内被Claude自己造出来，并让SaaS市值蒸发千亿。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "100万token不加价？Claude 2026模型参数全拆解",
+        "hook_question": "你知道现在一个AI模型能连续工作14.5小时不中断吗？",
+        "core_thesis": "Claude 2026年的模型升级通过超长上下文和极致性价比彻底改变了AI的使用方式",
+        "source_sections": ["The Models", "The Numbers"],
+        "estimated_duration_minutes": 5,
+        "bomb_detail": "一家公司把上下文窗口从200K提高到500K后，总token消耗反而降低了",
+        "emotion_arc": "震撼开场(14.5小时) → 模型对比 → 反直觉(上下文越大越省钱) → 怎么选模型",
+        "must_include_details": [
+          "Opus 4.6: 100万token上下文，$5/$25，MRCR v2 78.3%，14.5小时任务",
+          "Sonnet 4.6: 70%偏好超过Sonnet 4.5，59%超过Opus 4.5，快30-50%",
+          "100万token标准定价无附加费",
+          "600张图片/PDF页面（6倍提升）",
+          "128K最大输出（Opus），64K（Sonnet）"
+        ],
+        "actionable_takeaway": "把上下文窗口提高到500K以上测试是否降低总token消耗，日常用Sonnet省钱提速，复杂任务切Opus",
+        "key_concepts": [
+          {"concept_en": "1M token context", "concept_zh": "百万token上下文", "analogy_direction": "就像桌面从一张A4纸变成一张超大会议桌，所有资料同时摊开", "requires_code_replacement": false},
+          {"concept_en": "Model tiering", "concept_zh": "模型分层", "analogy_direction": "Opus是高级律师，Sonnet是资深助理，Haiku是实习生", "requires_code_replacement": false},
+          {"concept_en": "Context = cost efficiency", "concept_zh": "上下文越大越省钱", "analogy_direction": "不用反复翻箱倒柜找文件，一次全铺开反而更快", "requires_code_replacement": false}
+        ],
+        "takeaway": "2026年的AI不是更贵了，是更聪明地省钱了。选对模型、用对上下文，成本可以降一半。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "10天造出的AI产品，让SaaS蒸发数千亿市值？",
+        "hook_question": "一个用AI自己写出来的AI产品，上线几天就让整个SaaS行业股价暴跌",
+        "core_thesis": "Cowork模式用上下文文件消灭冷启动问题，真正实现了'AI替你干活'而不是'AI帮你想'",
+        "source_sections": ["Four Claude Modes", "Claude Cowork"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Anthropic用Claude Code在大约10天内构建了Cowork，上线后SaaS公司股票在几天内蒸发了数千亿美元市值",
+        "emotion_arc": "悬念开场(SaaS股价暴跌) → 四种模式 → Cowork设计哲学 → 实操 → 局限性",
+        "must_include_details": [
+          "1月12日研究预览，1月16日Pro，1月23日Team/Enterprise",
+          "Anthropic用Claude Code约10天构建Cowork",
+          "SaaS股票蒸发数千亿美元市值",
+          "三个上下文文件：about-me.md、brand-voice.md、working-preferences.md",
+          "ChatGPT训练你写更好的prompt，Cowork奖励你写更好的文件",
+          "局限：会话间无记忆、不能跨文件夹、Actions可能坏"
+        ],
+        "actionable_takeaway": "创建三个上下文文件放进Cowork项目，消灭冷启动",
+        "key_concepts": [
+          {"concept_en": "Four Claude modes", "concept_zh": "四种Claude模式", "analogy_direction": "Chat是聊天、Cowork是助理、Code是程序员、Projects是办公室", "requires_code_replacement": false},
+          {"concept_en": "Context files kill cold start", "concept_zh": "上下文文件消灭冷启动", "analogy_direction": "像给新同事写一份交接文档，以后每天来都不用重新解释", "requires_code_replacement": false},
+          {"concept_en": "Better files > better prompts", "concept_zh": "好文件比好提示词更有价值", "analogy_direction": "提示词是一次性技巧，文件是可复利的资产", "requires_code_replacement": false}
+        ],
+        "takeaway": "'我在用AI'和'AI在替我干活'之间的差距，完全取决于你的设置。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "Claude Code + API 开发者武器库：省90%token的秘密",
+        "hook_question": "同样调用API，有人花100块，有人只花10块，差距在哪？",
+        "core_thesis": "CLAUDE.md分层指令和API的token高效工具调用，让开发者能用更少的钱构建更强的AI应用",
+        "source_sections": ["Claude Code", "The API", "What This Means for AI Builders"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Token-efficient tool use能减少高达90%的token消耗",
+        "emotion_arc": "痛点(API账单太贵) → CLAUDE.md架构 → Skills和Agents → 90%节省 → MCP展望",
+        "must_include_details": [
+          "CLAUDE.md三层层级：全局 → 项目 → 子文件夹",
+          "Commands vs Skills vs Agents的区别",
+          "模型分配：只读用Haiku，编码用Sonnet，架构用Opus",
+          "Token-efficient tool use：最高减少90%",
+          "Files API：上传一次跨会话引用",
+          "MCP：连接AI与外部工具的通用标准"
+        ],
+        "actionable_takeaway": "建立CLAUDE.md三层指令体系，把重复工作流封装为Skills，API开启token-efficient tool use",
+        "key_concepts": [
+          {"concept_en": "CLAUDE.md hierarchy", "concept_zh": "分层指令", "analogy_direction": "像公司的制度文件：总部规章→部门手册→岗位SOP", "requires_code_replacement": false},
+          {"concept_en": "Token-efficient tool use", "concept_zh": "token高效工具调用", "analogy_direction": "工具说明书从100页压缩到10页，功能一样但成本低90%", "requires_code_replacement": false},
+          {"concept_en": "MCP protocol", "concept_zh": "模型上下文协议", "analogy_direction": "像USB-C统一了充电口，MCP统一了AI连接外部工具的方式", "requires_code_replacement": false}
+        ],
+        "takeaway": "AI开发的竞争力不在于用了多强的模型，而在于指令架构和token效率优化做得多好。"
+      }
+    ]
+  }
+}

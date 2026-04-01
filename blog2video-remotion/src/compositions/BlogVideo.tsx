@@ -75,7 +75,7 @@ export const BlogVideo: React.FC<{ config: VideoConfigData }> = ({
       </AbsoluteFill>
 
       {/* Audio */}
-      <Audio src={staticFile(audioFile)} volume={1.5} />
+      <Audio src={staticFile(audioFile)} volume={3} />
 
       {/* Subtitle overlay */}
       {currentSubtitle && (

@@ -1,0 +1,139 @@
+{
+  "blog_metadata": {
+    "title": "一文了解 Anthropic 的 Claude Code 源码：为什么它就是比别人好用？",
+    "title_zh": "一文了解 Anthropic 的 Claude Code 源码：为什么它就是比别人好用？",
+    "word_count": 2800,
+    "complexity": "high",
+    "depth_score": 9,
+    "slug": "yukerx-claude-code-source"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "文章包含3个可独立成篇的核心主题：安全哲学与权限体系、提示词工程与工具系统、记忆/子Agent/上下文压缩，每个主题都有独立的Hook和结论",
+    "episode_transitions": [
+      {
+        "preview_at_end_of_video_1": "安全系统搞定了，但AI怎么知道该用42个工具里的哪一个？",
+        "recap_at_start_of_video_2": "上期我们聊了Claude Code的9层安全审查，今天聊它怎么把提示词变成编译器输出"
+      },
+      {
+        "preview_at_end_of_video_2": "工具和提示词都有了，但聊到第50轮对话就超限了怎么办？",
+        "recap_at_start_of_video_3": "上期我们拆解了42个工具的延迟加载机制，今天聊它怎么让对话永不超限"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "51万行代码只为一件事：让AI安全敲命令",
+        "hook_question": "你敢让一个AI直接操作你的电脑吗？Cursor不敢，Copilot不敢，但Claude Code敢——因为它为一个Bash工具写了18个安全文件、9层审查机制。今天我们从泄露的源码里，拆解这套安检系统到底怎么运作的。",
+        "core_thesis": "Claude Code选择了最难的安全路线——让AI直接用你的环境，但配备极其精密的权限系统，这是它体验远超竞品的根本原因",
+        "source_sections": ["一、先讲一个故事：如果你要雇一个远程程序员", "二、你以为的 Claude Code vs 实际的 Claude Code"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Claude Code为一个Bash工具写了18个安全文件，执行rm -rf要经过9层审查——包括AST解析、ML分类器、沙箱检查、200ms防误触延迟",
+        "emotion_arc": "开头：用'雇远程程序员'的比喻拉近距离 → 中间：三种安全哲学的对比制造认知冲突 → 高潮：9层审查的震撼 → 结尾：理解为什么51万行代码是值得的",
+        "must_include_details": [
+          "51.2万行TypeScript源码，1903个文件",
+          "source map文件未剥离导致源码泄露",
+          "三种安全哲学：Cursor旁观式、Copilot隔离式、Claude Code安检式",
+          "9层安全审查：AST解析、ML分类器、沙箱检查",
+          "权限竞争解析：本地键盘/IDE/Hook/AI分类器同时竞争",
+          "200ms防误触延迟"
+        ],
+        "actionable_takeaway": "打开你的AI编程工具设置页，看它到底能访问你电脑的哪些权限——如果它连权限管理页面都没有，说明它根本没在认真对待安全问题",
+        "key_concepts": [
+          {
+            "concept_en": "permission system / security layers",
+            "concept_zh": "权限系统/安全层",
+            "analogy_direction": "机场安检：你要登机（执行命令），但行李过X光（AST解析）、人过安检门（ML分类器）、随机开箱检查（沙箱）——每一层都在拦截不同类型的风险",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "fail-closed design",
+            "concept_zh": "默认拒绝设计",
+            "analogy_direction": "银行金库的门：断电时自动锁死而不是自动打开——Claude Code的工具默认不允许并发、不允许写入，必须显式声明才能开放权限",
+            "requires_code_replacement": true
+          }
+        ],
+        "takeaway": "Claude Code之所以好用，不是因为AI更聪明，而是因为它敢让AI直接操作你的环境——但前提是51万行代码构建的安全网。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "42个工具怎么管？Claude Code把提示词当编译器",
+        "hook_question": "你写过的最长提示词有多少行？100行？500行？Claude Code的一个Bash工具说明书就370行。更离谱的是，它有42个这样的工具，但大部分你根本看不到——因为它们是按需加载的。",
+        "core_thesis": "Claude Code把提示词工程做成了系统工程——7层动态组装、静态/动态分离缓存优化、工具延迟加载，这才是'AI编程操作系统'的核心架构",
+        "source_sections": ["三、第一个秘密：提示词不是写出来的，是'拼装'出来的", "四、第二个秘密：42个工具，但你只看到了冰山一角"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "BashTool的使用手册约370行，包含Git Safety Protocol等规则；设置CLAUDE_CODE_SIMPLE=true后42个工具直接缩减到3个",
+        "emotion_arc": "开头：用'370行说明书'制造惊讶 → 中间：拆解7层提示词组装的精妙 → 高潮：延迟加载和缓存优化的工程美感 → 结尾：重新定义什么是'提示词工程'",
+        "must_include_details": [
+          "7层系统提示词动态组装",
+          "SYSTEM_PROMPT_DYNAMIC_BOUNDARY分界静态和动态部分",
+          "注入Git状态、项目约定、历史记忆",
+          "每个工具目录下有prompt.ts——写给LLM看的使用手册",
+          "BashTool说明书约370行",
+          "42个工具通过ToolSearchTool延迟加载",
+          "CLAUDE_CODE_SIMPLE=true只剩3个工具",
+          "FileEditTool强制先读后改",
+          "buildTool工厂默认isConcurrencySafe=false, isReadOnly=false"
+        ],
+        "actionable_takeaway": "把你的AI提示词拆成'静态规则'和'动态上下文'两部分，静态部分固定复用，动态部分每次按需注入——这一招能让API调用成本降低一半以上",
+        "key_concepts": [
+          {
+            "concept_en": "prompt caching / static-dynamic boundary",
+            "concept_zh": "提示词缓存/静态动态分界",
+            "analogy_direction": "餐厅菜单：固定菜单印在纸上（静态缓存），今日特价写在小黑板上（动态注入）——厨师不用每次重新记菜单，只看小黑板就知道今天有什么变化",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "lazy tool loading / ToolSearchTool",
+            "concept_zh": "工具延迟加载",
+            "analogy_direction": "手机App Store：你手机里不会预装所有App，需要什么搜索下载什么——Claude Code的42个工具也是按需加载，避免LLM被工具列表淹没",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "好的提示词不是写出来的，是像编译器一样拼装出来的——静态缓存+动态注入+按需加载，这才是工业级提示词工程。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "AI也要睡觉整理记忆？Claude Code的3大隐藏机制",
+        "hook_question": "你有没有发现，Claude Code聊到后面越来越懂你？它甚至能记住你三天前提过的一个偏好。更神奇的是，它在你不用的时候会偷偷'整理记忆'。这背后是三套你从没见过的系统。",
+        "core_thesis": "Claude Code通过记忆系统、子Agent蜂群、三层上下文压缩三大机制，解决了AI Agent最难的三个问题：个性化、并行任务、长对话",
+        "source_sections": ["五、第三个秘密：记忆系统——为什么它能'记住你'", "六、第五个秘密：它不是一个Agent，是一群", "七、第六个秘密：三层压缩，让对话'永不超限'", "八、读完这份源码，我学到了什么"],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "Claude Code用另一个AI（Claude Sonnet）来筛选记忆，还有/dream技能在低活跃期自动蒸馏记忆——AI在'睡觉'的时候整理白天的对话",
+        "emotion_arc": "开头：用'AI睡觉整理记忆'制造好奇 → 记忆系统揭秘 → 子Agent蜂群的震撼 → 三层压缩的精妙 → 结尾：升华到'这是一个操作系统'的认知",
+        "must_include_details": [
+          "用Claude Sonnet筛选相关记忆，精确度优先于召回率",
+          "KAIROS模式：按日期追加式记忆日志",
+          "/dream技能在低活跃期蒸馏为结构化文件",
+          "AgentTool生成子Agent，注入自我意识防止递归",
+          "Coordinator模式：Phase 1-4并行/串行分配",
+          "Prompt Cache优化：所有fork子代理用相同占位符最大化缓存命中",
+          "三层压缩：微压缩替换旧工具调用、87%时自动压缩带熔断器、完全压缩禁止调用工具",
+          "AI Agent的90%工作量在AI之外"
+        ],
+        "actionable_takeaway": "在你的AI工作流里加一个'记忆层'——每次对话结束后让AI总结3条关键决策存到文件里，下次对话开头注入，你的AI助手会质变",
+        "key_concepts": [
+          {
+            "concept_en": "memory distillation / KAIROS mode",
+            "concept_zh": "记忆蒸馏/KAIROS模式",
+            "analogy_direction": "人的睡眠记忆整理：白天经历的事情在睡觉时被大脑分类、压缩、存入长期记忆——Claude Code的/dream技能就是AI版的'睡眠记忆整理'",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "agent swarm / coordinator pattern",
+            "concept_zh": "子Agent蜂群/协调者模式",
+            "analogy_direction": "项目经理分活：一个总指挥不写代码只分任务，4个组长各带一摊并行干活，干完汇总——Coordinator模式就是这个总指挥",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "context compression / three-layer compaction",
+            "concept_zh": "上下文压缩/三层压缩",
+            "analogy_direction": "整理行李箱：第一次把大件折叠（微压缩），第二次用真空袋抽气（自动压缩），第三次只带必需品其他全寄存（完全压缩）——每层都在token快满时触发",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Claude Code不是一个AI编程助手，它是一个操作系统——42个工具是系统调用，权限系统是用户管理，技能系统是应用商店，记忆系统是文件系统。"
+      }
+    ]
+  }
+}

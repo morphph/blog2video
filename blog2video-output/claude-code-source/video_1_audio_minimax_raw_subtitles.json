@@ -1,0 +1,432 @@
+[
+  {
+    "text": "Claude Code，51万行的源代码泄漏了。",
+    "pronounce_text": "Claude Code，五十一万行的源代码泄漏了。",
+    "time_begin": 0,
+    "time_end": 3348.1632653061224,
+    "text_begin": 0,
+    "text_end": 24,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 25
+  },
+  {
+    "text": "很多人的第一反应是去扒它的system prompt写了什么，或者去看它调了哪些工具。说实话，这些确实有意思，但如果你只盯着这些看，你看到的只是表面。",
+    "pronounce_text": "很多人的第一反应是去扒它的system prompt写了什么，或者去看它调了哪些工具。说实话，这些确实有意思，但如果你只盯着这些看，你看到的只是表面。",
+    "time_begin": 3492,
+    "time_end": 15245.786848072563,
+    "text_begin": 24,
+    "text_end": 99,
+    "pronounce_text_begin": 25,
+    "pronounce_text_end": 100
+  },
+  {
+    "text": "我把这些代码的分析都看了一遍，最大的感受是——Claude Code根本不是一个\"大模型加一段prompt再接几个工具\"的东西。它更像一个完整的AI操作系统。",
+    "pronounce_text": "我把这些代码的分析都看了一遍，最大的感受是Claude Code根本不是一个\"大模型加一段prompt再接几个工具\"的东西。它更像一个完整的AI操作系统。",
+    "time_begin": 15408,
+    "time_end": 25582.82993197279,
+    "text_begin": 99,
+    "text_end": 178,
+    "pronounce_text_begin": 100,
+    "pronounce_text_end": 177
+  },
+  {
+    "text": "为什么这么说呢？因为它最关键的设计不是某一个点做得好，而是把好几个本来很分散的能力做成了一个稳定的闭环。",
+    "pronounce_text": "为什么这么说呢？因为它最关键的设计不是某一个点做得好，而是把好几个本来很分散的能力做成了一个稳定的闭环。",
+    "time_begin": 25740,
+    "time_end": 33999.183673469386,
+    "text_begin": 178,
+    "text_end": 230,
+    "pronounce_text_begin": 177,
+    "pronounce_text_end": 229
+  },
+  {
+    "text": "今天我从五个角度来拆一下，Claude Code到底泄漏了什么真正值钱的东西。",
+    "pronounce_text": "今天我从五个角度来拆一下，Claude Code到底泄漏了什么真正值钱的东西。",
+    "time_begin": 34164,
+    "time_end": 38835.70068027211,
+    "text_begin": 230,
+    "text_end": 269,
+    "pronounce_text_begin": 229,
+    "pronounce_text_end": 268
+  },
+  {
+    "text": "第一，prompt不是一段咒语，是一整套动态配置系统。",
+    "pronounce_text": "第一，prompt不是一段咒语，是一整套动态配置系统。",
+    "time_begin": 38988,
+    "time_end": 42939.8820861678,
+    "text_begin": 269,
+    "text_end": 296,
+    "pronounce_text_begin": 268,
+    "pronounce_text_end": 295
+  },
+  {
+    "text": "很多人对prompt的理解还停留在\"写一段很厉害的话，模型就会变聪明\"。但Claude Code完全不是这么干的。",
+    "pronounce_text": "很多人对prompt的理解还停留在\"写一段很厉害的话，模型就会变聪明\"。但Claude Code完全不是这么干的。",
+    "time_begin": 43092,
+    "time_end": 49470.36734693877,
+    "text_begin": 296,
+    "text_end": 353,
+    "pronounce_text_begin": 295,
+    "pronounce_text_end": 352
+  },
+  {
+    "text": "它的prompt是在运行时动态拼接出来的。前面一层是稳定的规则，你可以理解成系统的宪法——核心身份、安全约束、行为边界，这一层几乎不变。",
+    "pronounce_text": "它的prompt是在运行时动态拼接出来的。前面一层是稳定的规则，你可以理解成系统的宪法核心身份、安全约束、行为边界，这一层几乎不变。",
+    "time_begin": 49608,
+    "time_end": 62255.755102040814,
+    "text_begin": 353,
+    "text_end": 421,
+    "pronounce_text_begin": 352,
+    "pronounce_text_end": 418
+  },
+  {
+    "text": "后面一层是这次会话的实时配置——你的项目记忆、你连了哪些工具、你在什么环境工作——全部动态拼进去。",
+    "pronounce_text": "后面一层是这次会话的实时配置你的项目记忆、你连了哪些工具、你在什么环境工作全部动态拼进去。",
+    "time_begin": 62424,
+    "time_end": 70764.45351473923,
+    "text_begin": 421,
+    "text_end": 470,
+    "pronounce_text_begin": 418,
+    "pronounce_text_end": 463
+  },
+  {
+    "text": "这个差别很大。当你把prompt当文章来写，你优化的只是表达。但当你把prompt做成配置系统，你优化的是整个agent的行为逻辑。",
+    "pronounce_text": "这个差别很大。当你把prompt当文章来写，你优化的只是表达。但当你把prompt做成配置系统，你优化的是整个agent的行为逻辑。",
+    "time_begin": 70920,
+    "time_end": 80375.01133786848,
+    "text_begin": 470,
+    "text_end": 536,
+    "pronounce_text_begin": 463,
+    "pronounce_text_end": 529
+  },
+  {
+    "text": "它甚至会根据你是不是在公共仓库工作来注入完全不同的指令。有一个叫Undercover Mode的模块，检测到你在非内部仓库时会自动激活，告诉模型不要暴露任何Anthropic的内部信息。",
+    "pronounce_text": "它甚至会根据你是不是在公共仓库工作来注入完全不同的指令。有一个叫Undercover Mode的模块，检测到你在非内部仓库时会自动激活，告诉模型不要暴露任何Anthropic的内部信息。",
+    "time_begin": 80532,
+    "time_end": 94340.75283446712,
+    "text_begin": 536,
+    "text_end": 629,
+    "pronounce_text_begin": 529,
+    "pronounce_text_end": 622
+  },
+  {
+    "text": "而讽刺的是——这个防泄漏模块自己也跟着源码一起泄漏了。",
+    "pronounce_text": "而讽刺的是这个防泄漏模块自己也跟着源码一起泄漏了。",
+    "time_begin": 94500,
+    "time_end": 98277.73242630386,
+    "text_begin": 629,
+    "text_end": 656,
+    "pronounce_text_begin": 622,
+    "pronounce_text_end": 647
+  },
+  {
+    "text": "第二，多agent不是炫技，是职责拆分。",
+    "pronounce_text": "第二，多agent不是炫技，是职责拆分。",
+    "time_begin": 98424,
+    "time_end": 101690.89342403629,
+    "text_begin": 656,
+    "text_end": 676,
+    "pronounce_text_begin": 647,
+    "pronounce_text_end": 667
+  },
+  {
+    "text": "这点我觉得特别关键。",
+    "pronounce_text": "这点我觉得特别关键。",
+    "time_begin": 101844,
+    "time_end": 103102.36734693877,
+    "text_begin": 676,
+    "text_end": 686,
+    "pronounce_text_begin": 667,
+    "pronounce_text_end": 677
+  },
+  {
+    "text": "现在很多人做agent的思路还是一个agent从头干到尾。查资料、写代码、测试、判断完成——全是同一个。问题在哪？它既是运动员又是裁判，天然会对自己宽容，最后做成\"差不多就行\"。",
+    "pronounce_text": "现在很多人做agent的思路还是一个agent从头干到尾。查资料、写代码、测试、判断完成全是同一个。问题在哪？它既是运动员又是裁判，天然会对自己宽容，最后做成\"差不多就行\"。",
+    "time_begin": 103248,
+    "time_end": 118763.41950113379,
+    "text_begin": 686,
+    "text_end": 775,
+    "pronounce_text_begin": 677,
+    "pronounce_text_end": 764
+  },
+  {
+    "text": "Claude Code不是这样的。它会把探索、规划、实现、验证拆给不同的子agent。探索型agent是只读的，只能搜索和分析，不能改文件。规划型也是只读的。实现型才有写入权限。",
+    "pronounce_text": "Claude Code不是这样的。它会把探索、规划、实现、验证拆给不同的子agent。探索型agent是只读的，只能搜索和分析，不能改文件。规划型也是只读的。实现型才有写入权限。",
+    "time_begin": 118908,
+    "time_end": 133483.0113378685,
+    "text_begin": 775,
+    "text_end": 864,
+    "pronounce_text_begin": 764,
+    "pronounce_text_end": 853
+  },
+  {
+    "text": "更精妙的是子agent之间的协调——子agent直接继承父agent的缓存，不需要重新加载上下文。同时有一个可变状态感知机制，如果父agent改了文件，子agent能知道自己的缓存可能过期了。",
+    "pronounce_text": "更精妙的是子agent之间的协调子agent直接继承父agent的缓存，不需要重新加载上下文。同时有一个可变状态感知机制，如果父agent改了文件，子agent能知道自己的缓存可能过期了。",
+    "time_begin": 133632,
+    "time_end": 149054.53968253967,
+    "text_begin": 864,
+    "text_end": 960,
+    "pronounce_text_begin": 853,
+    "pronounce_text_end": 947
+  },
+  {
+    "text": "这解决了多agent系统最核心的问题：并行效率和状态一致性的平衡。背后其实是很经典的软件工程思想——关注点分离。",
+    "pronounce_text": "这解决了多agent系统最核心的问题：并行效率和状态一致性的平衡。背后其实是很经典的软件工程思想关注点分离。",
+    "time_begin": 149220,
+    "time_end": 157862.31292517006,
+    "text_begin": 960,
+    "text_end": 1016,
+    "pronounce_text_begin": 947,
+    "pronounce_text_end": 1001
+  },
+  {
+    "text": "第三，最值钱的地方可能不是生成，而是验证。",
+    "pronounce_text": "第三，最值钱的地方可能不是生成，而是验证。",
+    "time_begin": 158004,
+    "time_end": 162164.86167800453,
+    "text_begin": 1016,
+    "text_end": 1037,
+    "pronounce_text_begin": 1001,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "这点很多人会忽略。大家总觉得AI编程最重要的是\"写出来\"。但真正做过系统的人都知道，难的从来不是写——是怎么确认它写的是对的。",
+    "pronounce_text": "这点很多人会忽略。大家总觉得AI编程最重要的是\"写出来\"。但真正做过系统的人都知道，难的从来不是写是怎么确认它写的是对的。",
+    "time_begin": 162324,
+    "time_end": 171686.13151927438,
+    "text_begin": 1037,
+    "text_end": 1100,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1083
+  },
+  {
+    "text": "Claude Code有一层专门的验证逻辑。它会强制跑build、测试、linter、类型检查。不同类型的改动有不同的验证方式。甚至它会主动找边界情况——不是确认能跑，是想办法把它搞坏。",
+    "pronounce_text": "Claude Code有一层专门的验证逻辑。它会强制跑build、测试、linter、类型检查。不同类型的改动有不同的验证方式。甚至它会主动找边界情况不是确认能跑，是想办法把它搞坏。",
+    "time_begin": 171828,
+    "time_end": 187854.25850340136,
+    "text_begin": 1100,
+    "text_end": 1193,
+    "pronounce_text_begin": 1083,
+    "pronounce_text_end": 1174
+  },
+  {
+    "text": "为什么这层重要？因为大多数agent失败不是因为完全不会做——而是做了个80分，然后特别自信地说\"我已经完成了\"。",
+    "pronounce_text": "为什么这层重要？因为大多数agent失败不是因为完全不会做而是做了个八十分，然后特别自信地说\"我已经完成了\"。",
+    "time_begin": 187992,
+    "time_end": 196460.16326530612,
+    "text_begin": 1193,
+    "text_end": 1250,
+    "pronounce_text_begin": 1174,
+    "pronounce_text_end": 1229
+  },
+  {
+    "text": "所以从做产品的角度看，顶级agent的核心能力不只是生成能力，而是验收能力。",
+    "pronounce_text": "所以从做产品的角度看，顶级agent的核心能力不只是生成能力，而是验收能力。",
+    "time_begin": 196632,
+    "time_end": 201907.4195011338,
+    "text_begin": 1250,
+    "text_end": 1288,
+    "pronounce_text_begin": 1229,
+    "pronounce_text_end": 1267
+  },
+  {
+    "text": "第四，工具调用不是能调就行，是必须被治理的。",
+    "pronounce_text": "第四，工具调用不是能调就行，是必须被治理的。",
+    "time_begin": 202068,
+    "time_end": 206611.9909297052,
+    "text_begin": 1288,
+    "text_end": 1310,
+    "pronounce_text_begin": 1267,
+    "pronounce_text_end": 1289
+  },
+  {
+    "text": "很多人理解agent调工具很简单——模型说一句，拿到结果，结束。但真实系统不是这样的。",
+    "pronounce_text": "很多人理解agent调工具很简单模型说一句，拿到结果，结束。但真实系统不是这样的。",
+    "time_begin": 206748,
+    "time_end": 213730.08616780044,
+    "text_begin": 1310,
+    "text_end": 1353,
+    "pronounce_text_begin": 1289,
+    "pronounce_text_end": 1330
+  },
+  {
+    "text": "Claude Code的工具执行链路是：执行前做输入校验、权限检查、风险判断；执行后有hooks机制和上下文补充——把结果格式化成模型最容易理解的形式。",
+    "pronounce_text": "Claude Code的工具执行链路是：执行前做输入校验、权限检查、风险判断;执行后有hooks机制和上下文补充把结果格式化成模型最容易理解的形式。",
+    "time_begin": 213876,
+    "time_end": 226488.92517006802,
+    "text_begin": 1353,
+    "text_end": 1429,
+    "pronounce_text_begin": 1330,
+    "pronounce_text_end": 1404
+  },
+  {
+    "text": "它甚至重新封装了grep、find这些系统工具，不是功能不够，而是原始输出是为人类终端优化的，不是为大语言模型优化的。",
+    "pronounce_text": "它甚至重新封装了grep、find这些系统工具，不是功能不够，而是原始输出是为人类终端优化的，不是为大语言模型优化的。",
+    "time_begin": 226656,
+    "time_end": 237515.81859410432,
+    "text_begin": 1429,
+    "text_end": 1488,
+    "pronounce_text_begin": 1404,
+    "pronounce_text_end": 1463
+  },
+  {
+    "text": "还有一个反蒸馏机制——它会在API请求里静默注入虚假的工具定义。如果有竞争对手截取API流量训练模型，这些假工具会污染训练数据。对正常用户透明，但对抄作业的人是毒药。",
+    "pronounce_text": "还有一个反蒸刘机制它会在API请求里静默注入虚假的工具定义。如果有竞争对手截取API流量训练模型，这些假工具会污染训练数据。对正常用户透明，但对抄作业的人是毒药。",
+    "time_begin": 237672,
+    "time_end": 251608.46258503402,
+    "text_begin": 1488,
+    "text_end": 1571,
+    "pronounce_text_begin": 1463,
+    "pronounce_text_end": 1544
+  },
+  {
+    "text": "这背后就是一个核心原则：防御性编程。默认事情会出问题，你不能假设一切都正常。",
+    "pronounce_text": "这背后就是一个核心原则：防御性编程。默认事情会出问题，你不能假设一切都正常。",
+    "time_begin": 251748,
+    "time_end": 257615.5283446712,
+    "text_begin": 1571,
+    "text_end": 1609,
+    "pronounce_text_begin": 1544,
+    "pronounce_text_end": 1582
+  },
+  {
+    "text": "第五，它已经在认真处理agent的生命周期了。",
+    "pronounce_text": "第五，它已经在认真处理agent的生命周期了。",
+    "time_begin": 257760,
+    "time_end": 260934.0136054422,
+    "text_begin": 1609,
+    "text_end": 1632,
+    "pronounce_text_begin": 1582,
+    "pronounce_text_end": 1605
+  },
+  {
+    "text": "这个特别重要。很多agent demo第一次用特别惊艳，问题都出在后面。任务断了怎么办？上下文脏了怎么办？会话怎么恢复？",
+    "pronounce_text": "这个特别重要。很多agent demo第一次用特别惊艳，问题都出在后面。任务断了怎么办？上下文脏了怎么办？会话怎么恢复？",
+    "time_begin": 261072,
+    "time_end": 270735.9909297052,
+    "text_begin": 1632,
+    "text_end": 1692,
+    "pronounce_text_begin": 1605,
+    "pronounce_text_end": 1665
+  },
+  {
+    "text": "Claude Code有一个三层记忆系统。最上层叫MEMORY.md——不存具体信息，只存指针，每行150个字符，告诉模型\"信息在哪\"而不是\"信息是什么\"。只占几百token，但让模型随时知道项目全貌。",
+    "pronounce_text": "Claude Code有一个三层记忆系统。最上层叫MEMORY.md不存具体信息，只存指针，每行一百五十个字符，告诉模型\"信息在哪\"而不是\"信息是什么\"。只占几百token，但让模型随时知道项目全貌。",
+    "time_begin": 270900,
+    "time_end": 287518.36734693876,
+    "text_begin": 1692,
+    "text_end": 1793,
+    "pronounce_text_begin": 1665,
+    "pronounce_text_end": 1765
+  },
+  {
+    "text": "中间层是跨session的记忆整合——每次会话结束自动提炼关键信息，下次打开不从零开始。底层是子agent的缓存继承。",
+    "pronounce_text": "中间层是跨session的记忆整合每次会话结束自动提炼关键信息，下次打开不从零开始。底层是子agent的缓存继承。",
+    "time_begin": 287676,
+    "time_end": 297548.97052154195,
+    "text_begin": 1793,
+    "text_end": 1852,
+    "pronounce_text_begin": 1765,
+    "pronounce_text_end": 1822
+  },
+  {
+    "text": "这三层用最少的token占用实现了最大的上下文覆盖。Claude Code不是靠更大的context window赢的，是靠更聪明的记忆管理赢的。",
+    "pronounce_text": "这三层用最少的token占用实现了最大的上下文覆盖。Claude Code不是靠更大的context window赢的，是靠更聪明的记忆管理赢的。",
+    "time_begin": 297720,
+    "time_end": 307047.3015873016,
+    "text_begin": 1852,
+    "text_end": 1925,
+    "pronounce_text_begin": 1822,
+    "pronounce_text_end": 1895
+  },
+  {
+    "text": "它还有一个叫KAIROS的守护进程模式，在代码里被提到150多次。有心跳、推送通知、PR订阅——AI不等你输入指令，它自己主动行动。这决定了它到底是一个工具还是一个AI同事。",
+    "pronounce_text": "它还有一个叫KAIROS的守护进程模式，在代码里被提到幺五零多次。有心跳、推送通知、PR订阅AI不等你输入指令，它自己主动行动。这决定了它到底是一个工具还是一个AI同事。",
+    "time_begin": 307188,
+    "time_end": 321716.5714285714,
+    "text_begin": 1925,
+    "text_end": 2012,
+    "pronounce_text_begin": 1895,
+    "pronounce_text_end": 1980
+  },
+  {
+    "text": "这些东西听起来不炫酷，但特别值钱。因为它决定了你的东西是demo还是产品。",
+    "pronounce_text": "这些东西听起来不炫酷，但特别值钱。因为它决定了你的东西是demo还是产品。",
+    "time_begin": 321876,
+    "time_end": 327917.67800453515,
+    "text_begin": 2012,
+    "text_end": 2049,
+    "pronounce_text_begin": 1980,
+    "pronounce_text_end": 2017
+  },
+  {
+    "text": "所以如果问我，Claude Code这次到底泄漏了什么？",
+    "pronounce_text": "所以如果问我，Claude Code这次到底泄漏了什么？",
+    "time_begin": 328068,
+    "time_end": 331334.8934240363,
+    "text_begin": 2049,
+    "text_end": 2077,
+    "pronounce_text_begin": 2017,
+    "pronounce_text_end": 2045
+  },
+  {
+    "text": "我会说，它真正透露出来的是——agent的竞争已经不是模型能力的竞争了，开始进入系统工程能力的竞争。",
+    "pronounce_text": "我会说，它真正透露出来的是agent的竞争已经不是模型能力的竞争了，开始进入系统工程能力的竞争。",
+    "time_begin": 331488,
+    "time_end": 340339.2925170068,
+    "text_begin": 2077,
+    "text_end": 2127,
+    "pronounce_text_begin": 2045,
+    "pronounce_text_end": 2093
+  },
+  {
+    "text": "以后你再看一个agent产品，不要只看它会不会说。你看五件事：",
+    "pronounce_text": "以后你再看一个agent产品，不要只看它会不会说。你看五件事：",
+    "time_begin": 340488,
+    "time_end": 344950.7210884354,
+    "text_begin": 2127,
+    "text_end": 2158,
+    "pronounce_text_begin": 2093,
+    "pronounce_text_end": 2124
+  },
+  {
+    "text": "它有没有规则系统——prompt是静态的还是动态编排的？ 它有没有分工——是一个agent从头干到尾，还是有探索、规划、验证的拆分？它有没有验证——做完之后谁来验收？",
+    "pronounce_text": "它有没有规则系统prompt是静态的还是动态编排的？它有没有分工是一个agent从头干到尾，还是有探索、规划、验证的拆分？它有没有验证做完之后谁来验收？",
+    "time_begin": 345096,
+    "time_end": 357407.06575963716,
+    "text_begin": 2158,
+    "text_end": 2241,
+    "pronounce_text_begin": 2124,
+    "pronounce_text_end": 2200
+  },
+  {
+    "text": "它有没有工具治理——调用前有没有校验，调用后有没有兜底？ 它有没有生命周期——断了能不能恢复，记忆能不能持续？",
+    "pronounce_text": "它有没有工具治理调用前有没有校验，调用后有没有兜底？它有没有生命周期断了能不能恢复，记忆能不能持续？",
+    "time_begin": 357552,
+    "time_end": 367134.7210884354,
+    "text_begin": 2241,
+    "text_end": 2296,
+    "pronounce_text_begin": 2200,
+    "pronounce_text_end": 2250
+  },
+  {
+    "text": "这才是行家看门道的地方。",
+    "pronounce_text": "这才是行家看门道的地方。",
+    "time_begin": 367272,
+    "time_end": 369134.0861678005,
+    "text_begin": 2296,
+    "text_end": 2308,
+    "pronounce_text_begin": 2250,
+    "pronounce_text_end": 2262
+  },
+  {
+    "text": "顶级agent的秘密不在于它多会说——而在于它背后有没有一套认真编织起来的系统。",
+    "pronounce_text": "顶级agent的秘密不在于它多会说而在于它背后有没有一套认真编织起来的系统。",
+    "time_begin": 369288,
+    "time_end": 374342.8299319728,
+    "text_begin": 2308,
+    "text_end": 2348,
+    "pronounce_text_begin": 2262,
+    "pronounce_text_end": 2300
+  }
+]

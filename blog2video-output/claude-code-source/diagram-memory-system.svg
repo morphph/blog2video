@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a1a2e">三层记忆系统：用最少Token实现最大覆盖</text>
+
+  <!-- Layer 1 -->
+  <rect x="100" y="80" width="600" height="120" rx="14" fill="#F0FDF4" stroke="#10b981" stroke-width="2.5"/>
+  <text x="140" y="115" font-size="18" font-weight="bold" fill="#065f46">第一层：MEMORY.md 轻量指针</text>
+  <text x="140" y="142" font-size="14" fill="#64748b">每行 ~150字符 · 常驻 context · 只占几百 token</text>
+  <text x="140" y="168" font-size="14" fill="#64748b">记录"信息在哪里"，不是"信息是什么"</text>
+  <!-- Right side annotation -->
+  <rect x="530" y="92" width="150" height="28" rx="6" fill="#10b981" opacity="0.12"/>
+  <text x="605" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#059669">成本极低 覆盖极广</text>
+  <!-- Example -->
+  <rect x="530" y="130" width="150" height="52" rx="6" fill="#f8fafc" stroke="#d1d5db" stroke-width="1"/>
+  <text x="540" y="148" font-size="11" fill="#6b7280" font-family="monospace">Stack: FastAPI</text>
+  <text x="540" y="163" font-size="11" fill="#6b7280" font-family="monospace">Key: /src/core/</text>
+  <text x="540" y="178" font-size="11" fill="#6b7280" font-family="monospace">Issue: line 142</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M400 200 L400 220" stroke="#94a3b8" stroke-width="2"/>
+  <text x="420" y="215" font-size="12" fill="#94a3b8">Session结束时提炼</text>
+  <polygon points="395,218 405,218 400,225" fill="#94a3b8"/>
+
+  <!-- Layer 2 -->
+  <rect x="100" y="230" width="600" height="120" rx="14" fill="#EFF6FF" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="140" y="265" font-size="18" font-weight="bold" fill="#1e40af">第二层：跨Session 记忆整合</text>
+  <text x="140" y="292" font-size="14" fill="#64748b">会话结束 → 自动提炼关键决策 → 压缩 → 更新指针</text>
+  <text x="140" y="318" font-size="14" fill="#64748b">下次打开不是从零开始，记忆有"成长性"</text>
+  <!-- Right side annotation -->
+  <rect x="530" y="242" width="150" height="28" rx="6" fill="#3b82f6" opacity="0.12"/>
+  <text x="605" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">提炼→压缩→索引</text>
+  <!-- Cycle icon -->
+  <path d="M580 310 C595 295, 615 295, 620 310 C625 325, 605 330, 595 320" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <polygon points="593,322 598,318 596,325" fill="#3b82f6"/>
+  <text x="640" y="318" font-size="11" fill="#3b82f6">持续循环</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M400 350 L400 370" stroke="#94a3b8" stroke-width="2"/>
+  <text x="420" y="365" font-size="12" fill="#94a3b8">生成子Agent时继承</text>
+  <polygon points="395,368 405,368 400,375" fill="#94a3b8"/>
+
+  <!-- Layer 3 -->
+  <rect x="100" y="380" width="600" height="120" rx="14" fill="#F5F3FF" stroke="#8b5cf6" stroke-width="2.5"/>
+  <text x="140" y="415" font-size="18" font-weight="bold" fill="#5b21b6">第三层：子Agent 缓存继承</text>
+  <text x="140" y="442" font-size="14" fill="#64748b">子Agent直接继承父Agent的prompt缓存，零初始化成本</text>
+  <text x="140" y="468" font-size="14" fill="#64748b">可变状态感知：文件变更时自动标记缓存过期</text>
+  <!-- Right side annotation -->
+  <rect x="530" y="392" width="150" height="28" rx="6" fill="#8b5cf6" opacity="0.12"/>
+  <text x="605" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">并行 + 一致性</text>
+  <!-- Parent-child icon -->
+  <circle cx="560" cy="465" r="16" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="560" y="470" text-anchor="middle" font-size="11" fill="#7c3aed">父</text>
+  <line x1="576" y1="465" x2="600" y2="450" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="576" y1="465" x2="600" y2="480" stroke="#8b5cf6" stroke-width="1.5"/>
+  <circle cx="612" cy="450" r="12" fill="#8b5cf6" opacity="0.1" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="612" y="454" text-anchor="middle" font-size="10" fill="#7c3aed">子</text>
+  <circle cx="612" cy="480" r="12" fill="#8b5cf6" opacity="0.1" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="612" y="484" text-anchor="middle" font-size="10" fill="#7c3aed">子</text>
+
+  <!-- Bottom summary -->
+  <rect x="180" y="530" width="440" height="42" rx="10" fill="#6366f1" opacity="0.08" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="400" y="557" text-anchor="middle" font-size="16" font-weight="bold" fill="#4338ca">200K窗口 → 发挥500K的效果</text>
+</svg>

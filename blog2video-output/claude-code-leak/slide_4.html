@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+    }
+    .top-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 56px;
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    .hero-number {
+      font-size: 120px;
+      font-weight: 900;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .hero-label {
+      font-size: 32px;
+      color: #B0B0CC;
+      margin-bottom: 56px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+    .feature-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 24px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .card-emoji {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-tag">HARNESS #2</div>
+    <div class="hero-number">46,000</div>
+    <div class="hero-label">行查询引擎代码</div>
+    <div class="grid">
+      <div class="feature-card">
+        <div class="card-emoji">📡</div>
+        <div class="card-title">流式传输</div>
+        <div class="card-desc">分块处理逻辑</div>
+      </div>
+      <div class="feature-card">
+        <div class="card-emoji">💾</div>
+        <div class="card-title">缓存边界</div>
+        <div class="card-desc">启发式最优切割点</div>
+      </div>
+      <div class="feature-card">
+        <div class="card-emoji">🔄</div>
+        <div class="card-title">重试策略</div>
+        <div class="card-desc">失败降级机制</div>
+      </div>
+      <div class="feature-card">
+        <div class="card-emoji">📊</div>
+        <div class="card-title">Token追踪</div>
+        <div class="card-desc">实时预算控制</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

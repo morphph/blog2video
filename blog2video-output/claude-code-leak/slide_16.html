@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+    }
+    .card-red { border-left: 4px solid #EF4444; }
+    .card-purple { border-left: 4px solid #8B5CF6; }
+    .card-yellow { border-left: 4px solid #F59E0B; }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .card-number {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .num-red { color: #EF4444; }
+    .num-purple { color: #8B5CF6; }
+    .num-yellow { color: #F59E0B; }
+    .card-title {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .card-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      padding-left: 52px;
+    }
+    .card-desc div + div {
+      margin-top: 4px;
+    }
+    .sub-items {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.7;
+      padding-left: 52px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">INDUSTRY IMPACT</div>
+    <div class="title">这件事对AI行业意味着什么</div>
+    <div class="cards">
+      <div class="card card-red">
+        <div class="card-header">
+          <span class="card-number num-red">01</span>
+          <span class="card-title">竞争对手获得免费蓝图</span>
+        </div>
+        <div class="card-desc">
+          <div>工程架构 > 用户数据</div>
+          <div>泄漏架构 = 泄漏竞争壁垒</div>
+        </div>
+      </div>
+      <div class="card card-purple">
+        <div class="card-header">
+          <span class="card-number num-purple">02</span>
+          <span class="card-title">护城河重新定义</span>
+        </div>
+        <div class="card-desc">
+          <div>不是模型 → 是 Harness</div>
+          <div>上下文·工具·记忆·子Agent</div>
+        </div>
+      </div>
+      <div class="card card-yellow">
+        <div class="card-header">
+          <span class="card-number num-yellow">03</span>
+          <span class="card-title">三个可学的东西</span>
+        </div>
+        <div class="sub-items">
+          <div>① 记忆 = 指针索引，非全文存储</div>
+          <div>② 反蒸馏 → 保护产品能力</div>
+          <div>③ 投入 harness，而非只想模型</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

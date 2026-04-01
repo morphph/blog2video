@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .top-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.2;
+    }
+    .title .num {
+      color: #F59E0B;
+    }
+    .detail-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 32px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .card-purple { border-left: 4px solid #8B5CF6; }
+    .card-blue { border-left: 4px solid #3B82F6; }
+    .card-green { border-left: 4px solid #10B981; }
+    .card-emoji {
+      font-size: 36px;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 2px;
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .bottom-line {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #B0B0CC;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-tag">HARNESS #3</div>
+    <div class="title"><span class="num">44</span> 个专用工具模块</div>
+
+    <div class="detail-card card-purple">
+      <div class="card-emoji">🔍</div>
+      <div class="card-content">
+        <div class="card-title">Grep 工具</div>
+        <div class="card-desc">基于 ripgrep 重新封装 · 正则搜索 · 文件类型过滤 · LLM 优化输出</div>
+      </div>
+    </div>
+
+    <div class="detail-card card-blue">
+      <div class="card-emoji">🧠</div>
+      <div class="card-content">
+        <div class="card-title">LSP 集成</div>
+        <div class="card-desc">语言服务器协议 · 类型定义 · 引用关系 · 编译错误 · IDE级信息</div>
+      </div>
+    </div>
+
+    <div class="detail-card card-green">
+      <div class="card-emoji">🤖</div>
+      <div class="card-content">
+        <div class="card-title">子Agent生成器</div>
+        <div class="card-desc">并行处理子任务 · 独立工具集 · 独立权限范围</div>
+      </div>
+    </div>
+
+    <div class="bottom-line">让模型"看到"更准确、更结构化的信息</div>
+  </div>
+</body>
+</html>

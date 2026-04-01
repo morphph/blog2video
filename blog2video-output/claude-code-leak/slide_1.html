@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 64px;
+      font-weight: 600;
+    }
+    .title-block {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .title-line {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+    .title-yellow { color: #F59E0B; }
+    .title-red { color: #EF4444; }
+    .leaked-stamp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-15deg);
+      font-size: 120px;
+      font-weight: 900;
+      color: rgba(239, 68, 68, 0.15);
+      letter-spacing: 16px;
+      z-index: 1;
+      white-space: nowrap;
+      pointer-events: none;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+    }
+    .bottom-subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-top: 64px;
+      letter-spacing: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · Claude Code 泄漏解读</div>
+    <div class="title-block">
+      <div class="title-line title-yellow">51万行源代码</div>
+      <div class="title-line title-red">全部泄漏了</div>
+    </div>
+    <div class="leaked-stamp">LEAKED</div>
+    <div class="bottom-subtitle">深度解读 · 你需要知道的一切</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .top-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.2;
+    }
+    .parent-card {
+      background: #1A1A2E;
+      border: 2px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .parent-emoji {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+    .parent-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .parent-subtitle {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .arrow-section {
+      text-align: center;
+      margin: 18px 0;
+      font-size: 22px;
+      color: #6B7280;
+    }
+    .arrow-icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .children-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .child-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px 16px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: center;
+    }
+    .child-blue { border-left: 4px solid #3B82F6; }
+    .child-green { border-left: 4px solid #10B981; }
+    .child-yellow { border-left: 4px solid #F59E0B; }
+    .child-emoji {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .child-name {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .badges {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+    .badge {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.08);
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+    .bottom-insight {
+      font-size: 24px;
+      color: #B0B0CC;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-tag">HARNESS #4</div>
+    <div class="title">子Agent协调系统</div>
+
+    <div class="parent-card">
+      <div class="parent-emoji">🧑‍💻</div>
+      <div class="parent-title">父Agent</div>
+      <div class="parent-subtitle">复杂任务拆分</div>
+    </div>
+
+    <div class="arrow-section">
+      <span class="arrow-icon">↓</span>
+      启动子任务
+    </div>
+
+    <div class="children-row">
+      <div class="child-card child-blue">
+        <div class="child-emoji">⚙️</div>
+        <div class="child-name">子Agent A</div>
+      </div>
+      <div class="child-card child-green">
+        <div class="child-emoji">⚙️</div>
+        <div class="child-name">子Agent B</div>
+      </div>
+      <div class="child-card child-yellow">
+        <div class="child-emoji">⚙️</div>
+        <div class="child-name">子Agent C</div>
+      </div>
+    </div>
+
+    <div class="badges">
+      <div class="badge">✅ 复用父级 Prompt 缓存</div>
+      <div class="badge">✅ 感知可变状态</div>
+    </div>
+
+    <div class="bottom-insight">并行 × 一致性 的平衡</div>
+  </div>
+</body>
+</html>

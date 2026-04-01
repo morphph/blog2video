@@ -1,0 +1,15 @@
+{
+  "topic": "Claude Code源码泄漏深度解读",
+  "blog_url": "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/",
+  "source": "claude-code-leak",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

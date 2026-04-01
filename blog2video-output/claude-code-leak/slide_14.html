@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 36px;
+    }
+    .code-block {
+      background: #1E1E2E;
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 18px;
+      line-height: 1.6;
+      overflow: hidden;
+    }
+    .code-comment {
+      color: #6B7280;
+    }
+    .code-regex {
+      color: #EF4444;
+    }
+    .code-text {
+      color: #E5C07B;
+    }
+    .detect-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 28px;
+      margin-bottom: 36px;
+    }
+    .detect-func {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 22px;
+      color: #10B981;
+      margin-bottom: 10px;
+    }
+    .detect-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .punchline {
+      font-size: 26px;
+      color: #6B7280;
+      font-style: italic;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">EASTER EGG 🥚</div>
+    <div class="title">情绪检测模块</div>
+    <div class="subtitle">用正则表达式做情感分析</div>
+    <div class="code-block">
+      <div class="code-comment">// userPromptKeywords.ts</div>
+      <div>
+        <span class="code-regex">/\b(</span><span class="code-text">wtf|wth|ffs|omfg|shit|</span>
+      </div>
+      <div>
+        <span class="code-text">dumbass|horrible|awful|</span>
+      </div>
+      <div>
+        <span class="code-text">piss(</span><span class="code-regex">ed|ing</span><span class="code-text">)?|piece of (</span><span class="code-regex">shit|</span>
+      </div>
+      <div>
+        <span class="code-regex">crap|junk</span><span class="code-text">)|what the (</span><span class="code-regex">fuck|hell</span><span class="code-text">)|</span>
+      </div>
+      <div>
+        <span class="code-text">fucking? (</span><span class="code-regex">broken|useless|terrible|</span>
+      </div>
+      <div>
+        <span class="code-regex">horrible</span><span class="code-text">)|fuck you|screw (</span><span class="code-regex">this|</span>
+      </div>
+      <div>
+        <span class="code-regex">you</span><span class="code-text">)|so frustrating|this sucks|</span>
+      </div>
+      <div>
+        <span class="code-text">damn it</span><span class="code-regex">)\b/i</span>
+      </div>
+    </div>
+    <div class="detect-card">
+      <div class="detect-func">matchesKeepGoingKeyword()</div>
+      <div class="detect-desc">区分：在骂它 vs 在催它干活</div>
+    </div>
+    <div class="punchline">LLM公司 → 用regex做情感分析</div>
+  </div>
+</body>
+</html>

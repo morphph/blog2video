@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .top-tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 48px;
+      text-transform: uppercase;
+    }
+    .main-statement {
+      margin-bottom: 56px;
+    }
+    .main-statement .line {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .main-statement .highlight {
+      color: #F59E0B;
+    }
+    .cards-row {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 28px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .card-purple { border-left: 4px solid #8B5CF6; }
+    .card-yellow { border-left: 4px solid #F59E0B; }
+    .card-emoji {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .card-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .bottom-quote {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-style: italic;
+      text-align: center;
+      line-height: 1.5;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-tag">CORE INSIGHT</div>
+    <div class="main-statement">
+      <div class="line">模型是引擎</div>
+      <div class="line"><span class="highlight">Harness是整辆车</span></div>
+    </div>
+    <div class="cards-row">
+      <div class="card card-purple">
+        <div class="card-emoji">🔧</div>
+        <div class="card-title">Model 模型</div>
+        <div class="card-desc">GPT-4o / Claude / Gemini，能力趋同</div>
+      </div>
+      <div class="card card-yellow">
+        <div class="card-emoji">🚗</div>
+        <div class="card-title">Harness 编排层</div>
+        <div class="card-desc">上下文 · 工具 · 记忆 · 子Agent</div>
+      </div>
+    </div>
+    <div class="bottom-quote">"引擎差不多时，谁的车造得好，谁就赢"</div>
+  </div>
+</body>
+</html>

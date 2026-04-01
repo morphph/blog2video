@@ -235,7 +235,8 @@ async function renderVideo(videoNumber) {
     fs.unlinkSync(normalizedAudioPath);
     console.log("Audio normalized to -14 LUFS");
   } catch (err) {
-    console.warn("⚠️ ffmpeg loudnorm failed, using original audio:", err.message);
+    console.error("❌ ffmpeg loudnorm FAILED — audio will NOT be normalized. Error:", err.message);
+    console.error("Make sure ffmpeg is installed: brew install ffmpeg");
   }
 
   // Step 2: Screenshot slides

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 48px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .title-sub {
+      font-size: 32px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+    }
+    .instruction-block {
+      background: #1E1E2E;
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 36px;
+      font-style: italic;
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.7;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .badge-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 12px;
+    }
+    .badge {
+      background: rgba(239,68,68,0.2);
+      color: #EF4444;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: line-through;
+    }
+    .irony-box {
+      background: #1A1A2E;
+      border-top: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .irony-line1 {
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .irony-line2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #EF4444;
+    }
+    .bottom-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-style: italic;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">DISCOVERY #3</div>
+    <div class="title">Undercover Mode</div>
+    <div class="title-sub">卧底模式</div>
+
+    <div class="instruction-block">
+      你正在公共仓库中执行卧底任务。你的提交信息、PR描述和代码注释中，绝对不能包含任何 Anthropic 内部信息。不要暴露你的身份。
+    </div>
+
+    <div class="badge-label">禁止出现的关键词：</div>
+    <div class="badge-row">
+      <div class="badge">Capybara</div>
+      <div class="badge">Fennec</div>
+      <div class="badge">Claude Code</div>
+      <div class="badge">内部Slack</div>
+    </div>
+
+    <div class="irony-box">
+      <div class="irony-line1">专门防泄漏的系统</div>
+      <div class="irony-line2">自己被泄漏了</div>
+    </div>
+
+    <div class="bottom-text">安全的最薄弱环节，永远是人</div>
+  </div>
+</body>
+</html>

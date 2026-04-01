@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 64px;
+      font-weight: 800;
+      color: #EF4444;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+    }
+    .code-block {
+      background: #1E1E2E;
+      border-radius: 12px;
+      padding: 24px 28px;
+      border-left: 4px solid #EF4444;
+      margin-bottom: 36px;
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+    .code-block .comment { color: #6B7280; }
+    .code-block .keyword { color: #C678DD; }
+    .code-block .string { color: #98C379; }
+    .code-block .value { color: #E5C07B; }
+    .code-block .prop { color: #FFFFFF; }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .feature-item {
+      font-size: 22px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      padding-left: 4px;
+    }
+    .feature-item .dash {
+      color: #6B7280;
+    }
+    .insight-card {
+      background: #1A1A2E;
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: auto;
+    }
+    .insight-title {
+      font-size: 26px;
+      color: #10B981;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .insight-sub {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">DISCOVERY #1</div>
+    <div class="title">KAIROS</div>
+    <div class="subtitle">全自主守护进程</div>
+
+    <div class="code-block">
+      <span class="comment">// feature flag — 出现 150+ 次</span><br>
+      <span class="prop">KAIROS</span>: {<br>
+      &nbsp;&nbsp;<span class="prop">enabled</span>: <span class="value">false</span>,&nbsp;&nbsp;<span class="comment">// 未发布</span><br>
+      &nbsp;&nbsp;<span class="prop">mode</span>: <span class="string">"autonomous_daemon"</span><br>
+      }
+    </div>
+
+    <div class="feature-list">
+      <div class="feature-item">💓 心跳机制 <span class="dash">—</span> 持续后台运行</div>
+      <div class="feature-item">🔔 推送通知 <span class="dash">—</span> 主动发现问题</div>
+      <div class="feature-item">📋 PR订阅 <span class="dash">—</span> 自动审查你的代码</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">从「被动工具」→「AI 同事」</div>
+      <div class="insight-sub">未来的AI不是你去找它，是它来找你</div>
+    </div>
+  </div>
+</body>
+</html>

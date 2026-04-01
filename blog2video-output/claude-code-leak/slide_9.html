@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at center, rgba(139,92,246,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .quote-mark {
+      font-size: 120px;
+      color: #8B5CF6;
+      opacity: 0.3;
+      position: absolute;
+      top: 200px;
+      left: 72px;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-content {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-line {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .quote-line.yellow {
+      color: #F59E0B;
+    }
+    .divider {
+      width: 120px;
+      height: 2px;
+      background: #8B5CF6;
+      margin: 40px auto;
+    }
+    .sub-text {
+      font-size: 32px;
+      color: #B0B0CC;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bg-glow"></div>
+    <div class="quote-mark">"</div>
+    <div class="quote-content">
+      <div class="quote-line">用最少的 token 占用</div>
+      <div class="quote-line yellow">实现最大的上下文覆盖</div>
+    </div>
+    <div class="divider"></div>
+    <div class="sub-text">200K window → 发挥出 500K 的效果</div>
+  </div>
+</body>
+</html>

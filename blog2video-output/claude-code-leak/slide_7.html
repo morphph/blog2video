@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .title .mono {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      color: #F59E0B;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+    }
+    .file-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+    }
+    .file-header {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 22px;
+      color: #8B5CF6;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(139,92,246,0.15);
+    }
+    .file-entry {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 20px;
+      color: #B0B0CC;
+      padding: 10px 0 10px 16px;
+      line-height: 1.6;
+    }
+    .stats-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .stat-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 20px;
+      color: #8B5CF6;
+      font-weight: 600;
+      flex: 1;
+      text-align: center;
+    }
+    .comparison {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.7;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px 28px;
+      border-left: 4px solid #8B5CF6;
+    }
+    .comparison .bad {
+      color: #EF4444;
+    }
+    .comparison .good {
+      color: #10B981;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">THREE-LAYER MEMORY</div>
+    <div class="title">第一层：<span class="mono">MEMORY.md</span></div>
+    <div class="subtitle">轻量指针索引</div>
+
+    <div class="file-card">
+      <div class="file-header">📄 MEMORY.md</div>
+      <div class="file-entry">• 用户偏好 Python 3.11 + FastAPI 架构</div>
+      <div class="file-entry">• 项目使用 monorepo，核心模块在 /src/core</div>
+      <div class="file-entry">• 最近在重构 auth 模块，注意权限变更</div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">~150 字符/行</div>
+      <div class="stat-card">几百 token</div>
+      <div class="stat-card">每次 API 调用都加载</div>
+    </div>
+
+    <div class="comparison">
+      传统: 全文塞 prompt <span class="bad">❌</span> / RAG 检索延迟 <span class="bad">❌</span><br>
+      → MEMORY.md: 低成本 + 广覆盖 <span class="good">✅</span>
+    </div>
+  </div>
+</body>
+</html>

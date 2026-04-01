@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 120px 72px 520px 72px;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tag {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .section-title.blue { color: #3B82F6; }
+    .section-title.green { color: #10B981; }
+    .flow-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .flow-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      flex: 1;
+    }
+    .flow-arrow {
+      font-size: 28px;
+      color: #6B7280;
+      flex-shrink: 0;
+    }
+    .key-point {
+      font-size: 22px;
+      color: #10B981;
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(139,92,246,0.15);
+      margin: 8px 0 28px 0;
+    }
+    .flow-vertical {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .flow-vertical .flow-card {
+      flex: none;
+      padding: 14px 24px;
+    }
+    .flow-label {
+      font-size: 18px;
+      color: #6B7280;
+      text-align: center;
+      margin-top: -8px;
+      margin-bottom: 12px;
+    }
+    .summary-box {
+      background: #1A1A2E;
+      border-top: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      font-size: 24px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      margin-top: auto;
+    }
+    .summary-box .highlight {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">THREE-LAYER MEMORY</div>
+
+    <div class="section">
+      <div class="section-title blue">第二层：跨Session记忆整合</div>
+      <div class="flow-row">
+        <div class="flow-card">Session结束</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-card">自动提炼</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-card">整合进MEMORY.md</div>
+      </div>
+      <div class="key-point">用得越多，理解越深——有成长性</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="section-title green">第三层：子Agent缓存继承</div>
+      <div class="flow-row">
+        <div class="flow-card" style="flex: none; padding: 14px 32px;">主Agent</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-card" style="flex: none; padding: 14px 32px;">子Agent</div>
+      </div>
+      <div class="flow-label">直接继承 prompt 缓存</div>
+      <div class="key-point">天生了解项目背景 + 可变状态感知</div>
+    </div>
+
+    <div class="summary-box">
+      <span class="highlight">提炼</span> → <span class="highlight">压缩</span> → <span class="highlight">索引</span>，记忆始终紧凑且高质量
+    </div>
+  </div>
+</body>
+</html>

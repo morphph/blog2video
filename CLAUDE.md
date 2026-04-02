@@ -43,14 +43,21 @@ Each stage runs as an independent subagent with no shared context. Prompt specs 
 
 ### Repo mode pipeline (orchestrated by `/repo2video` slash command)
 
-For GitHub repos, a separate pipeline generates multi-episode video series:
+For GitHub repos, a separate pipeline generates multi-episode video series.
+
+**Phase 1 (implemented)** — Repo understanding + planning handoff:
 
 1. **Repo Census** (R0) — Clones repo, generates `repo_manifest.json` + `repo_inventory.md`
 2. **Architecture Mapper** (R1) — Deep code reading, outputs `architecture_map.json` + `evidence_cards.jsonl` + `series_seed_plan.json`
 3. **Series Thesis Gate** (G1) — Quality gate on series structure, outputs `gate_series_thesis.json` (1 auto-retry on fail)
 4. **Repo Series Planner** (1R) — Refined `video_plan.json` + `epXX_dossier.md` per episode
 
-Phase 1 stops at dossiers. Phase 2/3 (insight memo, script, slides, render) to be added.
+Phase 1 outputs: `repo_manifest.json`, `repo_inventory.md`, `architecture_map.json`, `evidence_cards.jsonl`, `series_seed_plan.json`, `gate_series_thesis.json`, `video_plan.json`, `episodes/epXX_dossier.md`
+
+**Phase 2/3 (not yet implemented)** — Per-episode production:
+- Repo Insight Memo Writer → `epXX_insight_memo.md`
+- Repo Script Writer → `epXX_script.md`
+- Existing slide/render pipeline → slides + MP4
 
 Repo mode prompts: `repo-census.md`, `architecture-mapper.md`, `series-thesis-gate.md`, `repo-series-planner.md`
 

@@ -1,0 +1,204 @@
+{
+  "blog_metadata": {
+    "title": "Harness Design for Long-Running Application Development",
+    "title_zh": "长时运行AI应用开发的Harness设计",
+    "word_count": 3800,
+    "complexity": "high",
+    "depth_score": 9,
+    "slug": "harness-design-long-running-apps"
+  },
+  "video_plan": {
+    "total_videos": 3,
+    "rationale": "博客包含3个可独立成篇的核心问题：AI为什么自己评不好自己的作品（自评盲区+GAN式评估器）、Anthropic如何让AI自主编程6小时造出完整应用（三Agent架构细节）、新模型出来后该怎么精简你的Agent系统（Harness迭代哲学）。每个问题有独立Hook和完整结论。",
+    "episode_transitions": [
+      {
+        "between_videos": [1, 2],
+        "preview_at_end_of_video_1": "下期我们看，Anthropic怎么把这套方法用到自主编程，6小时造出完整应用？",
+        "recap_at_start_of_video_2": "上期我们发现，AI评自己的作品永远打高分——分开生成和评估后，设计质量出现了质的飞跃。"
+      },
+      {
+        "between_videos": [2, 3],
+        "preview_at_end_of_video_2": "下期我们来看，当新模型发布时，这套系统该砍哪些部分？",
+        "recap_at_start_of_video_3": "上期我们看到，三Agent系统花6小时200美元，造出了核心功能全部能用的游戏编辑器。"
+      }
+    ],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI永远夸自己？Anthropic用GAN思路破局",
+        "core_thesis": "AI产出质量的瓶颈不是生成能力不够，而是它无法客观评估自己的作品——把生成和评估拆成两个独立Agent，才能打破这个死循环。",
+        "core_question": "为什么AI明明能写代码能做设计，产出却总是平庸无聊？",
+
+        "hook_type": "counterintuitive_fact",
+        "hook_opening_angle": "AI自评永远高分这个现象反直觉——大家以为AI客观理性，实际上它评自己比人类还宽容",
+        "hook_raw_materials": [
+          "Claude做前端设计默认产出：技术上没问题，但视觉上毫无特色、千篇一律的AI风格",
+          "让AI评价自己的作品，它会自信地夸赞——即便在人类看来质量明显平庸",
+          "灵感来自GAN对抗网络：一个生成、一个评判，互相对抗",
+          "荷兰美术馆网站第10轮迭代：AI突然推翻所有方案，做出了CSS 3D透视画廊——棋盘地板、墙上挂画、门廊导航"
+        ],
+        "hook_audience_trigger": "技术误区（以为AI生成质量取决于模型能力，实际取决于评估机制）",
+        "hook_payoff_promise": "解释AI自评失灵的根本原因，以及Anthropic用什么方法让AI设计出让人惊艳的作品",
+
+        "hook_question": "你让AI做一个网站设计，它做出来了，你让它自己打分，它给自己打了高分——但你一看，又是紫色渐变加白色卡片的AI味设计。问题出在哪？",
+        "source_sections": ["Why naive implementations fall short", "Frontend design: making subjective quality gradable"],
+        "estimated_duration_minutes": 7,
+        "bomb_detail": "Anthropic工程师让AI设计荷兰美术馆网站，前9轮都是常规暗色主题着陆页。到第10轮，AI突然推翻一切，做出了CSS 3D透视画廊——棋盘地板、画作挂在虚拟墙上、用门廊在房间之间导航，这是单次生成从未见过的创造力跳跃",
+        "emotion_arc": "开头：揭露AI自评的荒谬（明明平庸却自信满满）→ 中间：GAN思路的四个评分维度让'好不好看'变成可打分的具体标准 → 高潮：荷兰美术馆第10轮的惊人创造力跳跃 → 结尾：赋能感，你也能用这个方法",
+        "must_include_details": [
+          "AI自评问题：自信地夸赞明显平庸的作品",
+          "四个评分维度：设计质量、原创性、工艺、功能性",
+          "评估器用Playwright MCP实际浏览页面再打分，不是看截图",
+          "每次生成跑5-15轮迭代，单次运行最长4小时",
+          "荷兰美术馆第10轮：CSS 3D透视画廊，棋盘地板+墙上挂画+门廊导航"
+        ],
+        "actionable_takeaway": "给你的AI工作流加一个独立的评估步骤：写好评分标准（越具体越好），让另一个Agent实际使用产出后再打分，别让生成者自己评",
+        "key_concepts": [
+          {
+            "concept_en": "self-evaluation blindspot",
+            "concept_zh": "自评盲区",
+            "analogy_direction": "学生写完作文自己改，永远觉得写得不错——请严格的语文老师改，红笔满天飞",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "generator-evaluator separation (GAN-inspired)",
+            "concept_zh": "生成-评估分离（GAN灵感）",
+            "analogy_direction": "厨师做菜+美食评委打分，评委严格了厨师才会真的进步",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "gradable criteria for subjective quality",
+            "concept_zh": "把主观审美变成可打分的标准",
+            "analogy_direction": "'好不好看'没法回答，但'配色是否统一、排版是否有层次、有没有AI味模板'可以逐项打分",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "context anxiety and context resets",
+            "concept_zh": "上下文焦虑与上下文重置",
+            "analogy_direction": "写了3小时论文开始急着收尾——不是写完了，是心理上觉得'该结束了'。重新开一个文档从上次记录接着写，焦虑就没了",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "AI产出平庸不是因为能力不够，是因为没人给它真实反馈——加一个严格的外部评估者，质量立刻飙升。"
+      },
+      {
+        "video_number": 2,
+        "title_zh": "9美元vs200美元：AI自主编程差距有多大？",
+        "core_thesis": "让AI自主完成复杂应用，关键不是模型更强，而是用三个专职Agent（规划者、生成者、评估者）形成分工闭环——规划者定方向、生成者写代码、评估者像真人QA一样逐项验收。",
+        "core_question": "同一个AI同一句需求，为什么有的能造出完整应用，有的连核心功能都跑不通？",
+
+        "hook_type": "expensive_failure",
+        "hook_opening_angle": "同一句prompt的成本和产出对比极具冲击力——9美元20分钟的产出核心功能全坏，200美元6小时的产出真的能玩",
+        "hook_raw_materials": [
+          "同一句prompt'做一个2D复古游戏编辑器'，单Agent花20分钟9美元，三Agent Harness花6小时200美元",
+          "9美元版本：精灵编辑器能用，但打开游戏测试模式——角色出现在屏幕上却不响应任何输入，核心玩法彻底损坏",
+          "200美元版本：16个功能、10个迭代周期，包含AI辅助关卡生成，游戏真的能玩",
+          "评估器单个Sprint就列了27条验收标准，逐项用Playwright点击测试"
+        ],
+        "hook_audience_trigger": "成本焦虑 + 害怕项目翻车（花了钱结果核心功能不能用）",
+        "hook_payoff_promise": "拆解Anthropic三Agent架构的每个角色具体怎么分工，以及评估器是怎么像真人QA一样抓bug的",
+
+        "hook_question": "同一个AI，同一句话需求——'做一个2D游戏编辑器'。一个花了9美元20分钟，一个花了200美元6小时。9美元那个，游戏角色出现了但完全不能动。200美元那个，你真的能玩。",
+        "source_sections": ["Scaling to full-stack coding", "The architecture", "Running the harness"],
+        "estimated_duration_minutes": 8,
+        "bomb_detail": "评估器对单个Sprint列了27条验收标准逐项测试。抓到的真实bug：FastAPI路由定义顺序错误——'reorder'被当成整数ID解析返回422错误，开发Agent完全没发现这个问题",
+        "emotion_arc": "开头：9美元vs200美元的震撼对比 → 中间：三Agent分工细节（规划者故意不写技术细节、生成者和评估者先谈判再动手） → 高潮：评估器抓到的具体bug让人服气 → 结尾：200美元版本也有瑕疵，但核心功能全部能用",
+        "must_include_details": [
+          "单Agent：20分钟、9美元；三Agent Harness：6小时、200美元",
+          "Planner故意只写高层产品设计不写技术细节，避免错误级联到下游",
+          "每个Sprint开始前Generator和Evaluator先谈判Sprint Contract",
+          "评估器用Playwright实际点击应用测试，不是看代码",
+          "Sprint 3的关卡编辑器有27条验收标准",
+          "真实bug案例：FastAPI路由顺序错误导致reorder被解析为frame_id"
+        ],
+        "actionable_takeaway": "在你的AI编程流程里加一步：让AI先写'什么算做完了'的验收清单，完成后用另一个Agent逐条实际测试，而不是让写代码的AI自己说'我做完了'",
+        "key_concepts": [
+          {
+            "concept_en": "planner-generator-evaluator architecture",
+            "concept_zh": "规划者-生成者-评估者三Agent架构",
+            "analogy_direction": "产品经理写需求（只写用户要什么不写怎么实现）→ 工程师写代码 → QA逐项验收",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "sprint contract negotiation",
+            "concept_zh": "Sprint合约谈判",
+            "analogy_direction": "开工前施工方和验收方先签协议：这次要刷哪些墙、达到什么标准——不是干完了再吵",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "evaluator as real QA (Playwright testing)",
+            "concept_zh": "评估器当真人QA（用Playwright实测）",
+            "analogy_direction": "不是看图纸说'应该没问题'，而是真的走进房子开门开灯试水管",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "intentionally high-level planning",
+            "concept_zh": "故意只做高层规划",
+            "analogy_direction": "装修设计师只画'客厅要明亮宽敞'，不规定用哪个型号的灯泡——细节让施工队自己定，免得设计师定错了全盘跟着错",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "让AI自主造应用，关键是分工：一个规划不动手、一个动手不评价、一个评价不开发——各司其职才出活。"
+      },
+      {
+        "video_number": 3,
+        "title_zh": "新模型一出，你的Agent架构该砍哪些？",
+        "core_thesis": "Agent系统里每个组件都是对模型能力不足的补偿假设——新模型发布后必须重新验证这些假设，该砍就砍，该加就加，复杂度永远跟着模型能力走。",
+        "core_question": "模型升级后，我之前搭建的Agent架构还需要那么复杂吗？",
+
+        "hook_type": "counterintuitive_fact",
+        "hook_opening_angle": "大家直觉是模型越强系统越复杂，但Anthropic实际做法相反——Opus 4.6发布后他们反而在砍组件",
+        "hook_raw_materials": [
+          "Opus 4.5需要Sprint分解才能保持连贯，Opus 4.6直接连续编程2小时7分钟不需要Sprint",
+          "从Sprint制+每轮QA简化为单次构建+最后QA，成本从200美元降到124美元",
+          "DAW应用：构建者连续工作2小时7分钟，无需Sprint分解",
+          "评估器是否值得取决于任务难度是否超出模型的原生能力边界——边界随模型升级外移"
+        ],
+        "hook_audience_trigger": "跟不上新变化 + 技术误区（以为Agent系统越复杂越好）",
+        "hook_payoff_promise": "给出一个判断框架：模型升级后，你的Agent架构哪些该留、哪些该砍、什么时候该加新的",
+
+        "hook_question": "你花了几周搭建的多Agent系统，新模型一出来，可能有一半组件都是多余的。Anthropic自己就是这么干的——Opus 4.6发布后，他们直接砍掉了Sprint分解机制。",
+        "source_sections": ["Iterating on the harness", "Removing the sprint construct", "Results from the updated harness", "What comes next"],
+        "estimated_duration_minutes": 6,
+        "bomb_detail": "Opus 4.5必须把任务拆成Sprint才能保持连贯；换成Opus 4.6后，构建Agent连续编程2小时7分钟完全不需要Sprint分解——之前精心设计的核心架构组件，一夜之间变成了多余的累赘",
+        "emotion_arc": "开头：你精心搭建的系统可能有一半是多余的（制造焦虑） → 中间：Anthropic自己砍组件的真实过程（先激进砍失败，再逐个移除验证） → 结尾：赋能感，给出'每个组件都是假设'的判断框架",
+        "must_include_details": [
+          "Opus 4.5有严重的上下文焦虑——接近上下文窗口极限时提前收尾",
+          "Opus 4.6连续编程2小时7分钟无需Sprint分解",
+          "简化后总成本从200美元降到124美元",
+          "DAW应用详细成本：Planner 4.7分钟0.46美元，Build第一轮2小时7分钟71美元，QA 8.8分钟3.24美元",
+          "先激进砍全部失败了，改为逐个移除验证效果",
+          "评估器是否必要取决于任务是否超出模型原生能力边界"
+        ],
+        "actionable_takeaway": "列出你Agent系统中的每个组件，在旁边写上'它补偿了模型的什么不足'。下次模型升级时，逐个测试去掉后效果是否变差——不变差的就砍掉",
+        "key_concepts": [
+          {
+            "concept_en": "every component encodes a capability assumption",
+            "concept_zh": "每个组件都是一个能力假设",
+            "analogy_direction": "给小孩买学步车——长大了还用学步车反而碍事，但你不试就不知道该不该扔",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "capability boundary shifts with model upgrades",
+            "concept_zh": "能力边界随模型升级外移",
+            "analogy_direction": "去年这条路坑多必须开SUV，今年路修好了开轿车更省油——但你得亲自走一趟才知道路修好了没",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "methodical simplification (one component at a time)",
+            "concept_zh": "系统性精简（一次只移除一个组件）",
+            "analogy_direction": "拆炸弹不能一把全剪——先剪一根线看会不会爆，再剪下一根",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "harness design space moves, not shrinks",
+            "concept_zh": "Harness的设计空间在移动，不是在缩小",
+            "analogy_direction": "不是'模型越强Agent越没用'，而是'旧的脚手架拆了，新的更高的楼需要新的脚手架'",
+            "requires_code_replacement": false
+          }
+        ],
+        "takeaway": "Agent架构的复杂度不是越高越好——每个组件都是对模型不足的补偿，模型进步了就该拆掉旧的、探索新的。"
+      }
+    ]
+  }
+}

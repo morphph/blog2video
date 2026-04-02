@@ -11,12 +11,12 @@ YouTube     → [Step 0: yt-dlp + VTT]            → source_raw.md  → [Step 0
 GitHub repo → [Step 0: git clone]               → repo/           → [Step 0.5: Repo Summarizer]      → source_blog.md → [Step 1] → ...
 Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → [Step 0.7: Image Enrichment] → [Step 1] → ...
 
-... → [Script Writer] → [Slide HTML Generator] → [Remotion Render + TTS] → MP4
+... → [Insight Memo Writer] → [Script Writer] → [Slide HTML Generator] → [Remotion Render + TTS] → MP4
 ```
 
 ## Subagent Architecture
 
-本 pipeline 包含 4 个 preprocessor subagent + 3 个 core subagent + 1 个渲染脚本：
+本 pipeline 包含 4 个 preprocessor subagent + 4 个 core subagent + 1 个渲染脚本：
 
 | Stage | Subagent | 输入 | 输出 |
 |-------|----------|------|------|
@@ -25,8 +25,9 @@ Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ �
 | 0.5 | Repo Summarizer | cloned repo + `repo_metadata.txt` | `source_blog.md`（3000-5000词博客文章） |
 | 0.5 | Twitter Cleaner | `source_raw.md`（Puppeteer 提取文本） | `source_blog.md`（清洁 Markdown） |
 | 0.7 | Image Enrichment（orchestrator 直接执行） | `source_blog.md` + `images/` | `source_blog.md`（含 `[IMAGE DESCRIPTION]` 注释） |
-| 1 | Content Analyzer | `source_blog.md` | `video_plan.json` |
-| 2 | Script Writer | video_plan.json + `source_blog.md` | `video_N_script.md` (每个视频一个) |
+| 1 | Content Analyzer | `source_blog.md` | `video_plan.json`（含 hook 规划） |
+| 1.5 | Insight Memo Writer | video_plan entry + `source_blog.md` | `video_N_insight_memo.md`（认知萃取稿） |
+| 2 | Script Writer | insight_memo + video_plan + `source_blog.md` | `video_N_script.md` (每个视频一个) |
 | 3 | Slide HTML Generator | video_N_script.md | `slide_N.html` + `cover_photo.html` + `manifest.json` |
 | 4 | Render (非 subagent) | HTML slides + manifest.json + TTS 音频 | MP4 视频文件 |
 
@@ -40,8 +41,10 @@ Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ �
 │   ├── pdf-cleaner.md            ← Stage 0.5 prompt (PDF 原始文本 → 清洁 Markdown)
 │   ├── transcript-organizer.md   ← Stage 0.5 prompt (YouTube 转录 → 结构化 Markdown)
 │   ├── twitter-cleaner.md        ← Stage 0.5 prompt (Twitter/X 文章 → 清洁 Markdown)
-│   ├── content-analyzer.md       ← Stage 1 prompt
-│   ├── script-writer.md          ← Stage 2 prompt
+│   ├── content-analyzer.md       ← Stage 1 prompt（含 hook 规划）
+│   ├── insight-memo-writer.md    ← Stage 1.5 prompt（认知萃取）
+│   ├── script-writer.md          ← Stage 2 prompt（消费 insight memo）
+│   ├── eval-rubric.md            ← 脚本质量评估 rubric（10 维度打分）
 │   └── slide-html-generator.md   ← Stage 3 prompt (生成自包含 HTML slides)
 ├── examples/
 │   ├── source-blog.md            ← 参考博客原文
@@ -73,13 +76,14 @@ Slash command `/blog2video` 的执行流程：
 1. 读取内容（URL fetch / pdfminer / yt-dlp / git clone）
 1.5. 内容预处理（按输入类型）：PDF → PDF Cleaner / YouTube → Transcript Organizer / GitHub → Repo Summarizer / Twitter/X → Twitter Cleaner / 博客 → 跳过（博客 URL 在 Step 0 中已下载图片）
 1.7. Image Enrichment（orchestrator 直接执行）：检查 images/ 目录，对每张图片用 Read 多模态读取并在 source_blog.md 中插入 `[IMAGE DESCRIPTION]` 描述。无图片则跳过
-2. 调用 Content Analyzer subagent → 输出 video_plan.json
+2. 调用 Content Analyzer subagent → 输出 video_plan.json（含 hook 规划）
 3. 检查 video_plan.json，确认视频数量
 4. 对每个视频，依次调用：
-   a. Script Writer subagent → 输出 video_N_script.md
-   b. **Gate 1 (Script)**: `node scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数
-   c. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
-   d. **Gate 2 (Manifest)**: `node scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在
+   a. Insight Memo Writer subagent → 输出 video_N_insight_memo.md（认知萃取）
+   b. Script Writer subagent → 输出 video_N_script.md（消费 insight memo）
+   c. **Gate 1 (Script)**: `node scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数
+   d. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
+   e. **Gate 2 (Manifest)**: `node scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在
 5. 渲染（render-all.mjs 统一处理，内含 Gate 3 + Gate 4）：
    a. MiniMax TTS → audio + subtitles + **slide_map.json**（text-offset 映射）
    b. Puppeteer 截图 HTML slides → slide_N.png
@@ -107,7 +111,8 @@ Slash command `/blog2video` 的执行流程：
 blog2video-output/
 └── <slug>/
     ├── source_blog.md                ← 原始博客内容（清洁 Markdown，LoreAI 导入依赖）
-    ├── video_plan.json               ← 视频拆分计划（LoreAI 导入依赖）
+    ├── video_plan.json               ← 视频拆分计划（含 hook 规划，LoreAI 导入依赖）
+    ├── video_1_insight_memo.md       ← 视频1认知萃取稿
     ├── video_1_script.md
     ├── slide_1.html … slide_N.html  ← 每张 slide 的自包含 HTML
     ├── cover_photo.html              ← 封面图 HTML

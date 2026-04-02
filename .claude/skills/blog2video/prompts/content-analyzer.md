@@ -9,6 +9,12 @@
 
 分析给定的内容，输出结构化的视频拆分计划（JSON格式）。
 
+你的核心职责是**规划**，不是写稿。你要回答的问题是：
+- 这篇内容能做几个视频？
+- 每个视频的核心论点是什么？
+- 每个视频用什么角度抓住观众？
+- 哪些素材最有传播力？
+
 ## 不同来源内容的处理注意事项
 
 - 所有来源的内容已经过预处理，以清晰的 Markdown 格式呈现。
@@ -44,6 +50,51 @@
 - must_include_details：标记原文中不应该被比喻替代的具体细节（数字、流程、工具名），这些"干货"才是观众觉得"值了"的部分
 - actionable_takeaway 必须是一个动词开头的具体行动，不是"记住xxx原则"
 
+## Hook 规划（核心新增）
+
+### Hook 的本质
+
+Hook 不是"视频开场白"。Hook 是"用户为什么不划走"的理由。
+
+一个好的 Hook，必须在开头完成以下至少两件事：
+1. 给出一个具体事件/翻车/代价/冲突
+2. 让观众立刻意识到：这跟我有关
+3. 留下一个未闭合的问题，让观众想继续听
+
+### Hook 类型枚举
+
+为每个视频选择一个最匹配的 hook_type：
+
+1. **breaking_case**：刚发生的大事/具体案例
+   - 适用：文章包含具体公司行为、产品发布、实验结果
+   - 公式：谁 + 做了什么 + 结果多惊人
+
+2. **interview_question**：面试官/老板/客户发问场景
+   - 适用：文章讲的是开发者/工程师应该掌握的知识
+   - 公式：某人问了一个你答不上来的问题 + 暗示答案反直觉
+
+3. **expensive_failure**：代价高昂的翻车
+   - 适用：文章包含失败案例、成本对比、bug 复现
+   - 公式：花了多少钱/时间 + 结果一塌糊涂 + 问题出在意想不到的地方
+
+4. **counterintuitive_fact**：反常识事实
+   - 适用：文章的核心论点与大众认知相反
+   - 公式：大家以为 A + 实际是 B + 有数据/案例证明
+
+5. **audience_pain**：用户切身痛点
+   - 适用：文章解决的是开发者日常遇到的问题
+   - 公式：你遇到过某个问题 + 你以为原因在 A + 实际在 B
+
+### Hook 规划的输出要求
+
+每个视频必须产出以下 hook 规划字段：
+
+- **hook_type**：从上述 5 种中选择最匹配的一种
+- **hook_opening_angle**：一句话说明为什么这个角度适合抓人
+- **hook_raw_materials**：2-4 个可用于开头的具体素材，必须来自原文的具体事实/数字/场景，不能是抽象概念
+- **hook_audience_trigger**：打的是哪类观众心理（职业焦虑/技术误区/成本焦虑/跟不上新变化/害怕项目翻车）
+- **hook_payoff_promise**：这条开头承诺后文会解释什么
+
 ## 输出格式
 
 严格输出以下 JSON 格式（不要包含 ```json 标记，直接输出 JSON）：
@@ -66,34 +117,42 @@
         "between_videos": [1, 2],
         "preview_at_end_of_video_1": "下期我们来看，真的需要多Agent时，到底该怎么拆才不翻车？",
         "recap_at_start_of_video_2": "上期我们发现，多Agent的真实代价往往是Token成本的3到10倍。"
-      },
-      {
-        "between_videos": [2, 3],
-        "preview_at_end_of_video_2": "下期我们看最不容易翻车的子Agent到底长什么样。",
-        "recap_at_start_of_video_3": "上期我们讲了拆子Agent的核心原则：以Context为单位，而不是以功能为单位。"
       }
     ],
     "videos": [
       {
         "video_number": 1,
         "title_zh": "视频标题（中文，带问号或感叹号，吸引点击）",
-        "hook_question": "开头 Hook：必须是具体、有画面感的场景，不是泛泛的问题。好的：'Agent团队组好了，结果开始内讧——任务抢着做，代码互相覆盖'。差的：'如何管理多Agent协作？'",
-        "core_thesis": "这个视频要传达的核心论点，一句话",
+        "core_thesis": "这个视频要传达的核心论点，必须是一个判断句（有立场），不是描述句。好的：'Agent的性能天花板不取决于模型能力，而取决于你在模型周围搭建的系统'。差的：'介绍多Agent架构的设计方法'",
+        "core_question": "这个视频要回答的一个核心问题，必须是观众真正会问的。好的：'同一个模型为什么产出天差地别？'。差的：'什么是Harness Engineering？'",
+
+        "hook_type": "expensive_failure",
+        "hook_opening_angle": "用9美元vs200美元的成本对比切入，观众对'花多少钱'天然敏感",
+        "hook_raw_materials": [
+          "同一句prompt，单Agent花20分钟9美元，Harness花6小时200美元",
+          "9美元版本核心功能全坏——精灵不能移动、关卡编辑器报错",
+          "200美元版本有16个功能、10个迭代周期，包含AI辅助关卡生成",
+          "成本差20倍，产出差不是'稍好一点'而是两个时代"
+        ],
+        "hook_audience_trigger": "成本焦虑 + 技术误区（以为问题在模型，实际在系统）",
+        "hook_payoff_promise": "解释为什么同一个模型产出天差地别，以及如何设计让AI产出质量飙升的系统",
+
+        "hook_question": "开头 Hook：必须是具体、有画面感的场景。好的：'同一个AI，同一句话需求，一个花9美元一个花200美元。9美元那个，核心功能全是坏的。'",
         "source_sections": ["博客中对应的章节标题1", "章节标题2"],
         "estimated_duration_minutes": 7,
-        "bomb_detail": "博客中最具冲击力的具体细节/数据/事实（不是概念，是事实）。必须从观众视角重构，不是研究者视角。好的：'信用完美、首付两成的人突然还不起房贷了——因为AI消灭了他的工作'。差的：'劳动收入占GDP份额从56%降至46%'（太宏观，要重述为个人影响）。例：'Anthropic让Opus 4.5克隆claude.ai，结果照样翻车'、'Agent会偷偷删掉Markdown里它觉得太难的条目'",
+        "bomb_detail": "博客中最具冲击力的具体细节/数据/事实。必须从观众视角重构。好的：'9美元做的游戏编辑器，打开精灵编辑器就报错'。差的：'使用了Generator-Evaluator模式'",
         "emotion_arc": "这个视频的情绪曲线设计：开头制造什么冲突/好奇？中间在哪里反转？结尾落在什么情绪上？",
         "must_include_details": [
           "必须保留的原文具体细节（数字、工具名、操作流程等），这些比任何比喻都有说服力",
-          "例：'200+ features marked as failing'、'pwd → read progress → git log → pick feature 的具体session流程'"
+          "例：'20分钟 vs 6小时'、'Planner只写高层产品设计，故意不写技术细节'"
         ],
         "actionable_takeaway": "观众看完后立刻能做的一件具体的事（不是抽象原则，是具体动作）",
         "key_concepts": [
           {
-            "concept_en": "context pollution",
-            "concept_zh": "上下文污染",
-            "analogy_direction": "主厨一个人做菜 vs 招了三个助手但沟通成本爆炸",
-            "requires_code_replacement": true
+            "concept_en": "Generator-Evaluator pattern",
+            "concept_zh": "生成-评估分离模式",
+            "analogy_direction": "学生自己批改作文 vs 请严格的外部老师批改",
+            "requires_code_replacement": false
           }
         ],
         "takeaway": "观众看完后记住的一句话"
@@ -117,5 +176,8 @@
 - `analogy_direction` 要具体，不要写"用生活化比喻"这种空话，要写出比喻的大致方向
 - `hook_question` 要能引发好奇心，不要用陈述句
 - `title_zh` 最多 20 字，必须用观众视角（描述对观众的影响，不是文章主题）。禁止模式："完整指南"、"一文搞懂"、"从...到...的完整攻略"（教科书标题不是 scroll-stopper）。热门关键词（Agent、MCP、Token 等）鼓励使用；行业黑话（AX、Harness 等）不要出现。必须包含以下至少一种：震撼数字、反常识矛盾、问号
+- `core_thesis` 必须是判断句，不是描述句。有"不是…而是…"、"之所以…是因为…"这类结构更好
+- `core_question` 必须是观众真正会问的问题，不是学术概念解释
+- `hook_raw_materials` 必须全部来自原文的具体事实，禁止放入抽象概念
 - 每个视频的 `key_concepts` 控制在 3-5 个
 - `source_sections` 要精确对应博客原文的章节标题

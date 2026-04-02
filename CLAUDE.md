@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 4 stages via subagents.
+Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 5 stages via subagents.
 
 ### Supported input types
 - **Blog URLs** — fetched via curl/fetch
@@ -32,10 +32,11 @@ pip install edge-tts
 
 ### Pipeline stages (orchestrated by `/blog2video` slash command)
 
-1. **Content Analyzer** — Analyzes blog, decides video count (1-3), outputs `video_plan.json`
-2. **Script Writer** (×N) — Generates Chinese narration script per video with `[SLIDE N: type]` markers, outputs `video_N_script.md`
-3. **Slide Data Generator** (×N) — Converts script to Remotion-compatible JSON, outputs `video_N_config.json`
-4. **Render** — Edge TTS → audio, then Remotion renders final MP4
+1. **Content Analyzer** — Analyzes blog, decides video count (1-3), outputs `video_plan.json` (with hook planning)
+2. **Insight Memo Writer** (×N) — Extracts deep insights from source + plan into structured memo, outputs `video_N_insight_memo.md`
+3. **Script Writer** (×N) — Converts insight memo into Chinese narration script with `[SLIDE N: type]` markers, outputs `video_N_script.md`
+4. **Slide Data Generator** (×N) — Converts script to Remotion-compatible JSON, outputs `video_N_config.json`
+5. **Render** — Edge TTS → audio, then Remotion renders final MP4
 
 Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 

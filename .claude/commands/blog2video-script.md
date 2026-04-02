@@ -62,6 +62,33 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 
 输出保存为 `./blog2video-output/<slug>/video_plan.json`。
 
+#### Step 1.5: Insight Memo Writer
+
+对 video_plan 中的每个视频，分别使用 subagent 生成 insight memo。
+
+读取 `.claude/skills/blog2video/prompts/insight-memo-writer.md` 获取 prompt。
+
+对每个视频的 subagent 指令：
+```
+你是 Insight Memo Writer。请阅读以下prompt规范，然后为视频 N 生成 insight memo。
+
+<prompt_spec>
+{insight-memo-writer.md 的内容}
+</prompt_spec>
+
+<video_plan_entry>
+{video_plan.json 中这个视频的条目}
+</video_plan_entry>
+
+<blog_content>
+{博客原文}
+</blog_content>
+
+请输出结构化的 insight memo（Markdown 格式）。
+```
+
+输出保存为 `./blog2video-output/<slug>/video_N_insight_memo.md`。
+
 #### Step 2: Script Writer
 
 对 video_plan 中的每个视频，分别使用 subagent 生成脚本（见下方 subagent 指令）。
@@ -108,8 +135,12 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 {video_plan.json 中这个视频的部分}
 </video_plan>
 
+<insight_memo>
+{video_N_insight_memo.md 的内容}
+</insight_memo>
+
 <blog_content>
-{博客原文}
+{博客原文（作为事实核查参考）}
 </blog_content>
 
 {如果有上一版脚本，加入以下内容：}
@@ -120,6 +151,7 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 请在上一版基础上改进。注意保持好的部分，改进不够好的部分。
 
 请输出完整的口播稿 Markdown。注意：
+- 以 insight memo 为主要内容依据，不要重新从原文发明 thesis
 - 目标时长 {estimated_duration_minutes} 分钟 → 约 {minutes * 200} 字
 - 必须包含 [SLIDE N: type] 标记
 - 生成后检查字数是否在目标范围 ±15% 内

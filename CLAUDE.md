@@ -11,6 +11,7 @@ Blog2Video: automated pipeline that converts English technical content (blog pos
 - **PDF files** — local path or remote URL; text extracted via `pdfminer`
 - **YouTube videos** — English subtitles fetched via `yt-dlp`, parsed to plain text
 - **Local text files** — read directly
+- **GitHub repos** (repo mode) — cloned locally, analyzed via `/repo2video <github-url>`
 
 ## Commands
 
@@ -40,8 +41,24 @@ pip install edge-tts
 
 Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 
+### Repo mode pipeline (orchestrated by `/repo2video` slash command)
+
+For GitHub repos, a separate pipeline generates multi-episode video series:
+
+1. **Repo Census** (R0) — Clones repo, generates `repo_manifest.json` + `repo_inventory.md`
+2. **Architecture Mapper** (R1) — Deep code reading, outputs `architecture_map.json` + `evidence_cards.jsonl` + `series_seed_plan.json`
+3. **Series Thesis Gate** (G1) — Quality gate on series structure, outputs `gate_series_thesis.json` (1 auto-retry on fail)
+4. **Repo Series Planner** (1R) — Refined `video_plan.json` + `epXX_dossier.md` per episode
+
+Phase 1 stops at dossiers. Phase 2/3 (insight memo, script, slides, render) to be added.
+
+Repo mode prompts: `repo-census.md`, `architecture-mapper.md`, `series-thesis-gate.md`, `repo-series-planner.md`
+
 ### Output structure
-All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs, audio, and MP4s.
+
+**Article mode**: `./blog2video-output/<blog-slug>/` — plan, scripts, configs, audio, and MP4s.
+
+**Repo mode**: `./blog2video-output/<repo-slug>/repo_mode/` — manifest, architecture map, evidence cards, series plan, gate results, episode dossiers.
 
 ### Remotion rendering engine (`blog2video-remotion/`)
 

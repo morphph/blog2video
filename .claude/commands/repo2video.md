@@ -281,7 +281,131 @@ video_plan.json 格式必须兼容现有 blog2video 下游（参考 existing_pla
 
 ---
 
-### Step 2: 输出汇总
+### Step 2R: Repo Insight Memo Writer（每集洞察提炼）
+
+**对每一集执行以下操作。** 按集号顺序处理（ep01, ep02, ...）。
+
+读取 `.claude/skills/blog2video/prompts/repo-insight-memo-writer.md` 获取完整 prompt。
+读取对应集的 dossier 和所有前置产出。
+
+对每集使用独立 subagent 执行（`general-purpose` 类型，需要读取仓库源码）：
+
+```
+你是 Repo Insight Memo Writer。请阅读以下 prompt 规范，然后为这集视频提炼深度洞察。
+
+<prompt_spec>
+{repo-insight-memo-writer.md 的内容}
+</prompt_spec>
+
+<episode_dossier>
+{epXX_dossier.md 的内容}
+</episode_dossier>
+
+<video_plan_entry>
+{video_plan.json 中对应此集的 videos[N] 条目}
+</video_plan_entry>
+
+<architecture_map>
+{architecture_map.json 的内容}
+</architecture_map>
+
+<evidence_cards>
+{evidence_cards.jsonl 的内容}
+</evidence_cards>
+
+<repo_manifest>
+{repo_manifest.json 的内容}
+</repo_manifest>
+
+<repo_info>
+repo_path: {本地克隆路径}
+</repo_info>
+
+请输出 insight memo — 写入 ./blog2video-output/<slug>/repo_mode/episodes/ep{NN}_insight_memo.md
+
+你可以（也应该）通过 Read 工具深入阅读仓库源码来验证和发现证据。仓库路径是 {本地克隆路径}。
+根据 dossier 的 Evidence Anchors 和 included_slices 开始深读。
+```
+
+验证每集的 memo 已生成：
+- `epXX_insight_memo.md` 非空
+- 包含 `source_trace` 表（至少 5 行）
+- 包含 `speculation_flags` section
+- 包含 `what_we_are_not_claiming` section
+- `proof_chain` 有 3-5 条
+- 打印摘要：thesis、key_mechanisms 数量、source_trace 行数、speculation_flags 数量
+
+---
+
+### Step G2: Evidence Trace Gate（证据审查）
+
+**对每一集的 insight memo 执行审查。** 在该集的 Step 2R 完成后立即执行。
+
+读取 `.claude/skills/blog2video/prompts/evidence-trace-gate.md` 获取完整 prompt。
+
+对每集使用独立 subagent 执行（`general-purpose` 类型，需要读取仓库源码进行抽查验证）：
+
+```
+你是 Evidence Trace Gate Reviewer。请审查以下 insight memo 的证据质量。
+
+<prompt_spec>
+{evidence-trace-gate.md 的内容}
+</prompt_spec>
+
+<insight_memo>
+{epXX_insight_memo.md 的内容}
+</insight_memo>
+
+<episode_dossier>
+{epXX_dossier.md 的内容}
+</episode_dossier>
+
+<evidence_cards>
+{evidence_cards.jsonl 的内容}
+</evidence_cards>
+
+<repo_info>
+repo_path: {本地克隆路径}
+</repo_info>
+
+请输出审查结果 — 写入 ./blog2video-output/<slug>/repo_mode/episodes/gate_evidence_trace_ep{NN}.json
+
+你必须通过 Read 工具抽查 2-3 个 source_trace 条目对应的代码文件，验证论断是否成立。仓库路径是 {本地克隆路径}。
+```
+
+读取 `gate_evidence_trace_epXX.json`，检查 `pass` 字段：
+
+**如果 `pass: true`**：
+- 打印 global_score 和各维度分数
+- 如果有 `severity: medium` findings，打印提醒
+- 继续处理下一集（或进入输出汇总）
+
+**如果 `pass: false`**（第一次）：
+- 打印所有 `severity: critical` 和 `severity: high` findings
+- 打印 `repair_guidance`
+- 重新运行 Step 2R Insight Memo Writer，将 gate 的 repair_guidance 作为额外输入：
+  ```
+  <gate_feedback>
+  上一轮 Evidence Trace Gate 未通过。以下是审查意见和修复指导，请在这一轮中修正：
+  {gate_evidence_trace_epXX.json 中的 findings + repair_guidance}
+  
+  特别注意：
+  - 修复所有 severity: critical 和 high 的问题
+  - 按 repair_guidance 的优先级顺序处理
+  - 确保 source_trace 表中的文件路径可验证
+  </gate_feedback>
+  ```
+- 重新运行 Step G2 检查修改后的 memo
+
+**如果 `pass: false`**（第二次，即 retry 后仍然 fail）：
+- 打印完整的 gate 结果
+- 标记此集为 "needs_manual_review"
+- **不阻塞其他集的处理**——继续处理下一集
+- 在最终输出汇总中标注此集未通过审查
+
+---
+
+### Step 3: 输出汇总
 
 打印所有生成的文件：
 ```
@@ -297,8 +421,12 @@ video_plan.json 格式必须兼容现有 blog2video 下游（参考 existing_pla
     ├── series_seed_plan.json  ← 初版系列规划
     ├── gate_series_thesis.json ← 系列审查结果
     └── episodes/
-        ├── ep01_dossier.md    ← 第 1 集策划 dossier
-        ├── ep02_dossier.md    ← 第 2 集策划 dossier
+        ├── ep01_dossier.md         ← 第 1 集策划 dossier
+        ├── ep01_insight_memo.md    ← 第 1 集洞察 memo
+        ├── gate_evidence_trace_ep01.json ← 第 1 集证据审查
+        ├── ep02_dossier.md         ← 第 2 集策划 dossier
+        ├── ep02_insight_memo.md    ← 第 2 集洞察 memo
+        ├── gate_evidence_trace_ep02.json ← 第 2 集证据审查
         └── ...
 ```
 
@@ -309,22 +437,32 @@ video_plan.json 格式必须兼容现有 blog2video 下游（参考 existing_pla
 
 第 1 期 [{episode_type}]: {title_zh} (~{duration}分钟)
    Thesis: {core_thesis}
+   Evidence Gate: {pass/fail} (score: {global_score})
 第 2 期 [{episode_type}]: {title_zh} (~{duration}分钟)
    Thesis: {core_thesis}
+   Evidence Gate: {pass/fail} (score: {global_score})
 ...
 ```
 
-提示后续步骤：
+如果所有集的 Evidence Trace Gate 通过：
 ```
-✅ Phase 1 完成。已生成仓库分析和系列策划产物。
+✅ Phase 1 + Phase 2 完成。已生成仓库分析、系列策划、和每集洞察 memo。
 
-后续步骤（Phase 2/3）：
-- 对每集生成 insight memo: 使用 repo-insight-memo-writer
+后续步骤（Phase 3）：
 - 对每集生成口播稿: 使用 repo-script-writer
 - 生成 slides 和渲染视频: 使用现有 blog2video 渲染流程
 
 要生成第 1 集的完整视频，运行：
 /repo2video-episode <slug> 1
+```
+
+如果有集未通过 Evidence Trace Gate：
+```
+⚠️ Phase 2 部分完成。以下集的 Evidence Trace Gate 未通过，需要人工审查：
+- 第 {N} 集: {未通过原因摘要}
+
+已通过的集可以继续进入 Phase 3。
+未通过的集请审查 gate_evidence_trace_epXX.json 中的 repair_guidance。
 ```
 
 ---
@@ -335,5 +473,8 @@ video_plan.json 格式必须兼容现有 blog2video 下游（参考 existing_pla
 - subagent 需要读取仓库文件时，使用 `general-purpose` 类型（有 Read 工具访问权限）
 - 如果某个 Stage 失败，先输出已完成的文件，再报告错误
 - Architecture Mapper 是最关键且最耗时的步骤——给它足够的时间深入读代码
-- Gate 失败最多重试 1 次，第 2 次 fail 就停止等待人工干预
+- Insight Memo Writer 也需要深读代码——给它足够的时间验证和发现证据
+- Series Thesis Gate (G1) 失败最多重试 1 次，第 2 次 fail 就停止等待人工干预
+- Evidence Trace Gate (G2) 失败最多重试 1 次，第 2 次 fail 不阻塞其他集
 - repo_clone 目录在整个 pipeline 期间保留，供 subagent 读取源码
+- 全景篇（ep01）的 insight memo 应参考 `example-claw-code.md` 作为认知密度和结构节奏的金标准基准

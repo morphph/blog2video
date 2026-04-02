@@ -54,18 +54,26 @@ For GitHub repos, a separate pipeline generates multi-episode video series.
 
 Phase 1 outputs: `repo_manifest.json`, `repo_inventory.md`, `architecture_map.json`, `evidence_cards.jsonl`, `series_seed_plan.json`, `gate_series_thesis.json`, `video_plan.json`, `episodes/epXX_dossier.md`
 
-**Phase 2/3 (not yet implemented)** — Per-episode production:
-- Repo Insight Memo Writer → `epXX_insight_memo.md`
+**Phase 2 (implemented)** — Per-episode understanding + traceability:
+
+5. **Repo Insight Memo Writer** (2R, ×N) — Deep code reading per episode, outputs `episodes/epXX_insight_memo.md`
+6. **Evidence Trace Gate** (G2, ×N) — Quality gate on insight memo evidence quality, outputs `episodes/gate_evidence_trace_epXX.json` (1 auto-retry on fail per episode)
+
+Phase 2 outputs: `episodes/epXX_insight_memo.md`, `episodes/gate_evidence_trace_epXX.json`
+
+**Phase 3 (not yet implemented)** — Per-episode script + render:
 - Repo Script Writer → `epXX_script.md`
 - Existing slide/render pipeline → slides + MP4
 
-Repo mode prompts: `repo-census.md`, `architecture-mapper.md`, `series-thesis-gate.md`, `repo-series-planner.md`
+Repo mode prompts: `repo-census.md`, `architecture-mapper.md`, `series-thesis-gate.md`, `repo-series-planner.md`, `repo-insight-memo-writer.md`, `evidence-trace-gate.md`
+
+Panoramic gold reference benchmark: `example-claw-code.md`
 
 ### Output structure
 
 **Article mode**: `./blog2video-output/<blog-slug>/` — plan, scripts, configs, audio, and MP4s.
 
-**Repo mode**: `./blog2video-output/<repo-slug>/repo_mode/` — manifest, architecture map, evidence cards, series plan, gate results, episode dossiers.
+**Repo mode**: `./blog2video-output/<repo-slug>/repo_mode/` — manifest, architecture map, evidence cards, series plan, gate results, episode dossiers, insight memos, evidence trace gate results.
 
 ### Remotion rendering engine (`blog2video-remotion/`)
 

@@ -33,7 +33,8 @@ pip install edge-tts
 ### Pipeline stages (orchestrated by `/blog2video` slash command)
 
 1. **Content Analyzer** — Analyzes blog, decides video count (1-3), outputs `video_plan.json`
-2. **Script Writer** (×N) — Generates Chinese narration script per video with `[SLIDE N: type]` markers, outputs `video_N_script.md`
+1.5. **Insight Memo Writer** (×N) — Extracts judgment lines, evidence map, non-obvious insights, tradeoffs per video, outputs `video_N_insight_memo.md`
+2. **Script Writer** (×N) — Generates Chinese narration script from insight memo with `[SLIDE N: type]` markers, outputs `video_N_script.md`
 3. **Slide Data Generator** (×N) — Converts script to Remotion-compatible JSON, outputs `video_N_config.json`
 4. **Render** — Edge TTS → audio, then Remotion renders final MP4
 

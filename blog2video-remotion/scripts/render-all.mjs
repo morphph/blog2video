@@ -230,10 +230,17 @@ async function renderVideo(videoNumber) {
       `ffmpeg -y -i "${audioPath}" -af loudnorm=I=-14:TP=-1:LRA=11 "${normalizedAudioPath}"`,
       { cwd: remotionDir, stdio: "inherit" }
     );
-    // Replace original with normalized version
-    fs.copyFileSync(normalizedAudioPath, audioPath);
+    // Stage 2: Boost volume 3x with limiter (loud without clipping)
+    const boostedAudioPath = audioPath.replace(".mp3", "_boosted.mp3");
+    execSync(
+      `ffmpeg -y -i "${normalizedAudioPath}" -af "volume=3.0,alimiter=limit=0.95:attack=5:release=50" "${boostedAudioPath}"`,
+      { cwd: remotionDir, stdio: "inherit" }
+    );
+    // Replace original with boosted version
+    fs.copyFileSync(boostedAudioPath, audioPath);
     fs.unlinkSync(normalizedAudioPath);
-    console.log("Audio normalized to -14 LUFS");
+    fs.unlinkSync(boostedAudioPath);
+    console.log("Audio normalized to -14 LUFS then boosted 3x with limiter");
   } catch (err) {
     console.error("❌ ffmpeg loudnorm FAILED — audio will NOT be normalized. Error:", err.message);
     console.error("Make sure ffmpeg is installed: brew install ffmpeg");

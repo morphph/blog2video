@@ -1,170 +1,86 @@
 {
   "blog_metadata": {
     "title": "拆解最强 AI Agent 的设计哲学：512,000 行泄漏源码告诉我们，Claude Code 到底在造什么？",
-    "title_zh": "拆解最强AI Agent的设计哲学：51万行泄漏源码告诉我们Claude Code到底在造什么",
+    "title_zh": "拆解最强AI Agent的设计哲学：51万行泄漏源码揭秘Claude Code",
     "word_count": 4200,
     "complexity": "high",
     "depth_score": 9,
     "slug": "claude-code-leaked-architecture-panorama"
   },
   "video_plan": {
-    "total_videos": 3,
-    "rationale": "博客包含3个可独立成篇的核心问题：1）泄漏事件本身+核心结论（模型vs控制系统）；2）三层Harness架构的具体设计（上下文/安全/多Agent）；3）44个Feature Flag揭示的未来方向+5条可带走的工程原则。每个视频回答一个独立问题，有递进但各自闭环。",
-    "episode_transitions": [
-      {
-        "between_videos": [1, 2],
-        "preview_at_end_of_video_1": "那这47万行代码到底在干什么？三层Harness的设计，下期拆给你看。",
-        "recap_at_start_of_video_2": "上期我们发现，Claude Code让模型思考只用了1296行，剩下47万行全是控制系统。"
-      },
-      {
-        "between_videos": [2, 3],
-        "preview_at_end_of_video_2": "源码里还藏了44个未发布功能，有一个叫永远在线的AI——下期揭秘。",
-        "recap_at_start_of_video_3": "上期我们拆了Claude Code的三层防护：上下文压缩、四层安全、Swarm多Agent架构。"
-      }
-    ],
+    "total_videos": 1,
+    "rationale": "博客与benchmark脚本覆盖完全相同的叙事弧：泄漏事件→核心架构→三层Harness→未发布功能→工程原则。三层Harness不是独立子主题，是同一论点（核心简单周边精密）的三个论据层，拆开后必须依赖上期语境。1个密集视频远优于2-3个稀疏视频。",
     "videos": [
       {
         "video_number": 1,
-        "title_zh": "47万行代码泄漏：Claude Code只用1296行思考？",
-        "hook_question": "Anthropic的工程师手一抖，把一个59.8MB的调试文件打进了npm公开包——几个小时后，全球最强AI编程Agent的完整源码被扒了个底朝天。1902个文件、47万行代码，你猜让模型'思考'的核心逻辑有多少行？",
-        "core_thesis": "Claude Code的核心竞争力不在模型本身，而在模型周围那套精密的控制系统——1296行核心逻辑 vs 47万行可靠性工程，这个比例揭示了AI Agent的真正护城河。",
+        "title_zh": "47万行源码泄漏：最强Agent只用1296行思考？",
+        "core_thesis": "Claude Code的核心竞争力不在模型本身，而在模型周围那套精密的三层Harness控制系统——用不到2000行让模型思考，用47万行让思考变得可靠安全可控。",
+        "core_question": "全球最强编码Agent的47万行源码泄漏了，核心逻辑只有1296行，剩下的在干什么？",
+
+        "hook_type": "breaking_case",
+        "hook_opening_angle": "以泄漏事件的戏剧性开场（npm发布事故、凌晨4:23发现、2小时5万Star），迅速转向真正价值：第一次完整看到年收入超10亿美元AI Agent内部架构",
+        "hook_raw_materials": [
+          "59.8MB source map调试文件被打包进公开npm包，安全研究员凌晨4:23发现",
+          "Claw Code开源重写项目2小时拿到50000 GitHub Star，可能是平台历史最快",
+          "1902个文件、477439行TypeScript、42+内置工具、44个未发布feature flags",
+          "核心Query Engine 46000行中，真正让模型思考的只有1296行"
+        ],
+        "hook_audience_trigger": "技术误区（以为Agent竞争力在模型）+ 跟不上新变化（最强竞品内部架构首次曝光）",
+        "hook_payoff_promise": "看完理解：为什么Agent不稳定不是模型的问题是Harness的问题，以及5条可直接带走的Agent工程原则",
+
+        "hook_question": "Claude Code的完整源码泄漏了——47万行代码里，真正让模型思考的只有1296行。剩下的在干什么？",
         "source_sections": [
           "一个先亮出来的核心结论",
-          "Claude Code 的架构骨架：一个循环 + 三层 Harness"
-        ],
-        "estimated_duration_minutes": 6,
-        "bomb_detail": "开源重写项目Claw Code两小时拿到5万GitHub Star，可能是平台历史上增长最快的仓库——但讽刺的是，真正值钱的不是那1296行核心逻辑，而是那47万行'无聊'的工程代码",
-        "emotion_arc": "开头：泄漏事件的戏剧性（凌晨4:23发现、数小时内全网扩散）→ 中间：好奇心升级（到底泄了什么？规模多大？）→ 反转：核心结论颠覆认知（1296行 vs 47万行）→ 结尾：启发感，重新理解什么是AI产品的护城河",
-        "must_include_details": [
-          "59.8MB source map文件，凌晨4:23被安全研究员Chaofan Shou发现",
-          "1902个文件，477,439行TypeScript代码，42+内置工具，44个未发布feature flags",
-          "Claw Code开源重写项目两小时内获得50,000 GitHub Star",
-          "核心Query Engine 46,000行，但核心思考逻辑只有1,296行",
-          "内部约70-90%代码由Claude自己编写"
-        ],
-        "actionable_takeaway": "打开你自己的Agent项目，算一下核心逻辑和周边控制代码的比例——如果控制代码不到50%，说明你的可靠性工程还远远不够",
-        "key_concepts": [
-          {
-            "concept_en": "Query Engine",
-            "concept_zh": "查询引擎",
-            "analogy_direction": "一个餐厅的主厨（核心做菜逻辑）vs 整个餐厅运营系统（采购、卫生、排班、客诉处理），主厨的菜谱只有一页纸，但餐厅运营手册有500页",
-            "requires_code_replacement": true
-          },
-          {
-            "concept_en": "while loop agent core",
-            "concept_zh": "循环核心",
-            "analogy_direction": "像一个不停接单的外卖骑手：接单→取餐→送餐→如果客户要加餐就再跑一趟→直到订单完成或时间用完",
-            "requires_code_replacement": true
-          },
-          {
-            "concept_en": "source map leak",
-            "concept_zh": "源码映射泄漏",
-            "analogy_direction": "相当于银行把金库的建筑图纸不小心夹在了宣传册里发出去",
-            "requires_code_replacement": false
-          }
-        ],
-        "takeaway": "AI Agent的真正护城河不是模型有多聪明，而是让模型的聪明变得可靠、安全、可控的那套工程系统。"
-      },
-      {
-        "video_number": 2,
-        "title_zh": "Claude Code三层防护拆解：300KB安全代码防住了什么？",
-        "hook_question": "你让AI帮你执行一条命令，它偷偷在里面塞了一个Unicode零宽空格——肉眼完全看不见，但执行效果完全不同。Claude Code的源码里，有23条硬编码规则专门防这种事。",
-        "core_thesis": "Claude Code的三层Harness架构（上下文管理、安全约束、多Agent扩展）是一套完整的操作系统级设计，每一层解决一个Agent规模化的核心难题。",
-        "source_sections": [
-          "第一层 Harness：上下文管理（~46K 行）",
-          "第二层 Harness：安全与约束（9.5K行 + 300KB）",
-          "第三层 Harness：多Agent与扩展（~25K行）"
-        ],
-        "estimated_duration_minutes": 8,
-        "bomb_detail": "Claude Code的安全分类器是双层架构：先用纯规则快判（零成本），再用LLM-as-Judge做完整推理——这意味着每次你点'允许执行'，背后可能已经跑了两轮安全检查",
-        "emotion_arc": "开头：恐惧感（零宽空格注入的真实威胁）→ 中间：层层揭秘三层架构的精巧设计（上下文压缩像操作系统管内存）→ 高潮：安全层的偏执级防御细节 → 结尾：敬畏感，理解为什么需要47万行代码",
-        "must_include_details": [
-          "三级压缩流水线：微压缩（纯规则零成本）→ 会话记忆压缩 → 完整压缩（独立模型调用）",
-          "42+工具，核心启动时加载，扩展按需加载",
-          "四层权限模式：逐一确认→半自动→大部分自动→YOLO模式",
-          "23条硬编码bash安全规则，防御Zsh花括号展开、Unicode零宽空格注入、IFS空字节注入",
-          "Swarm架构：Leader + Teammate，上下文严格隔离 + Team Memory Sync",
-          "MCP协议：11000+行代码，外部服务变Agent可调用工具"
-        ],
-        "actionable_takeaway": "给你的Agent加一个安全分类层：先写10条正则规则拦截明显危险操作（rm -rf、sudo等），再用一个轻量LLM做二次判断，两层比一层靠谱得多",
-        "key_concepts": [
-          {
-            "concept_en": "context compression pipeline",
-            "concept_zh": "上下文压缩流水线",
-            "analogy_direction": "像整理衣柜的三步法：先把明显不穿的扔掉（微压缩）→ 把常穿的叠整齐放固定位置（记忆压缩）→ 换季时把整个柜子清一遍只留当季精华（完整压缩）",
-            "requires_code_replacement": true
-          },
-          {
-            "concept_en": "dual-layer classifier",
-            "concept_zh": "双层安全分类器",
-            "analogy_direction": "小区门禁两道关：保安先看你有没有门卡（规则匹配）→ 没卡的再去物业办公室人脸识别核验身份（LLM判断）",
-            "requires_code_replacement": false
-          },
-          {
-            "concept_en": "YOLO mode",
-            "concept_zh": "YOLO模式（全自动执行）",
-            "analogy_direction": "从请示领导每一步操作，到领导说'你看着办吧'——自由度越大，安全检查反而要越严格",
-            "requires_code_replacement": false
-          },
-          {
-            "concept_en": "Swarm architecture",
-            "concept_zh": "Swarm多Agent架构",
-            "analogy_direction": "一个项目经理带几个独立工程师：每人有自己的工作台互不干扰，但项目经理会把关键决定同步到共享白板上",
-            "requires_code_replacement": true
-          }
-        ],
-        "takeaway": "安全不是Agent的附加功能，而是架构的一部分——Claude Code用300KB安全代码和23条硬编码规则告诉我们，好的Agent首先是一个好的防御系统。"
-      },
-      {
-        "video_number": 3,
-        "title_zh": "Claude Code藏了44个隐藏功能？永远在线的AI要来了",
-        "hook_question": "源码里有一个叫KAIROS的功能：AI不等你打字，自己在后台每隔几秒醒来一次，整理记忆、预判你下一步要干什么——甚至在你按回车之前，它已经把结果算好了。",
-        "core_thesis": "Claude Code的44个Feature Flag揭示了AI Agent的下一个形态——从被动响应到永远在线、从工具到伙伴，同时源码中的5条工程原则是每个AI builder都能立刻应用的方法论。",
-        "source_sections": [
-          "冰山之下：44个Feature Flag藏着的未来",
-          "内部数据",
+          "Claude Code 的架构骨架：一个循环 + 三层 Harness",
+          "第一层 Harness：上下文管理",
+          "第二层 Harness：安全与约束",
+          "第三层 Harness：多 Agent 与扩展",
+          "冰山之下：44 个 Feature Flag 藏着的未来",
+          "一些让人意外的内部数据",
           "从 Claude Code 学到的 5 条 Agent 工程原则"
         ],
-        "estimated_duration_minutes": 7,
-        "bomb_detail": "Anthropic内部数据显示Capybara v8的虚假声明率29-30%，比v4版本的16.7%还高——模型越新不一定越靠谱，这就是为什么控制系统比模型本身更重要",
-        "emotion_arc": "开头：科幻感（永远在线的AI、投机执行）→ 中间：意外（电子宠物系统Buddy？反蒸馏防御？）→ 内部数据的反直觉冲击（v8比v4更容易说假话）→ 结尾：赋能感，5条可带走的原则",
+        "estimated_duration_minutes": 10,
+        "bomb_detail": "YOLO Classifier的两阶段LLM-as-Judge架构：第一阶段快速yes/no放行，只有判断要拦截时才进入第二阶段完整推理。错误处理策略是宁可误杀不可放过——解析失败、API错误全部默认拦截。这就是'生成和评估必须分离'原则的工程落地。",
+        "emotion_arc": "震撼开场（泄漏事件戏剧性）→ 好奇驱动（1296行 vs 47万行反差）→ 层层递进认知构建（三层Harness每层都有顿悟）→ 兴奋感（未发布功能前瞻）→ 升华收束（5条可带走的原则）",
         "must_include_details": [
-          "KAIROS：后台daemon + Dream记忆整理引擎，按固定间隔发tick提示",
-          "Speculation：投机执行，用户按回车前就开始预测执行，写入重定向到沙箱",
-          "ULTRAPLAN：规划任务卸载到云端容器，运行Opus 4.6，最长30分钟",
-          "Buddy：类Tamagotchi电子宠物系统，有物种稀有度和闪光变体",
-          "Capybara v8虚假声明率29-30%，v4版本16.7%，实际退步",
-          "内部约70-90%代码由Claude自己编写",
-          "反蒸馏防御：注入虚假工具定义污染竞争对手训练数据"
+          "泄漏数据：1902文件、477439行、59.8MB source map、凌晨4:23发现",
+          "1296行核心逻辑 vs 47万行Harness的极端对比",
+          "微压缩的三条执行路径和两种缓存策略（prompt缓存有效性考量、cache editing API）",
+          "YOLO Classifier两阶段架构和默认拦截策略",
+          "23条硬编码bash安全规则，含HackerOne真实漏洞",
+          "投机执行Speculation：预测下一步、沙箱写入、连续投机",
+          "KAIROS的Dream记忆引擎：白天行动，空闲整理",
+          "Capybara v8虚假声明率29-30%（v4仅16.7%，退步）",
+          "内部约70-90%代码由Claude自己编写"
         ],
-        "actionable_takeaway": "在你的Agent项目里实践'生成和评估分离'原则：让一个模型负责生成方案，另一个独立模型负责检查——就像Claude Code的双层分类器，执行者不能当自己的裁判",
+        "actionable_takeaway": "打开你的Agent项目，检查核心逻辑和控制代码的比例。把80%的工程投入放在模型周围的Harness上：上下文分级管理、安全约束写在代码里、生成和评估分离",
         "key_concepts": [
           {
-            "concept_en": "KAIROS always-on daemon",
-            "concept_zh": "KAIROS永远在线守护进程",
-            "analogy_direction": "像一个随时待命的私人助理：你在开会时它在后台整理笔记、查资料、准备你下一场会议可能需要的文件",
+            "concept_en": "Harness (control system)",
+            "concept_zh": "Harness控制系统",
+            "analogy_direction": "模型是引擎，Harness是整辆车——底盘刹车方向盘安全气囊导航系统",
             "requires_code_replacement": false
           },
           {
-            "concept_en": "speculative execution",
+            "concept_en": "Three-tier compression pipeline",
+            "concept_zh": "三级压缩流水线",
+            "analogy_direction": "微压缩去噪声（零成本）→ 记忆压缩提事实 → 完整压缩清历史，像操作系统管理内存",
+            "requires_code_replacement": true
+          },
+          {
+            "concept_en": "Dual-layer classifier (LLM-as-Judge)",
+            "concept_zh": "双层安全分类器",
+            "analogy_direction": "生成和评估必须分离——主Agent负责干活，分类器Agent负责审查，执行者不能当自己的裁判",
+            "requires_code_replacement": false
+          },
+          {
+            "concept_en": "Speculative execution",
             "concept_zh": "投机执行",
-            "analogy_direction": "外卖平台在你还没点'下单'时，已经根据你浏览记录提前通知附近骑手准备——猜对了省时间，猜错了丢进沙箱不影响你",
-            "requires_code_replacement": false
-          },
-          {
-            "concept_en": "anti-distillation defense",
-            "concept_zh": "反蒸馏防御",
-            "analogy_direction": "像在自家菜谱里故意写几道假配方：如果竞争对手偷了你的菜谱照着做，做出来的菜是难吃的，你就知道他抄了",
-            "requires_code_replacement": false
-          },
-          {
-            "concept_en": "separation of generation and evaluation",
-            "concept_zh": "生成与评估分离",
-            "analogy_direction": "考试时自己答题自己判分肯定不靠谱——所以要让出题人和阅卷人是两个不同的人",
+            "analogy_direction": "在你还没按回车之前就开始执行预测的下一步，猜对合并猜错丢弃",
             "requires_code_replacement": false
           }
         ],
-        "takeaway": "AI Agent的下一个形态不是更大的模型，而是永远在线、主动预判的智能伙伴——但越强大的能力越需要可靠的控制系统。"
+        "takeaway": "最强编码Agent的源码证明：模型是引擎，Harness是整辆车。引擎一样的情况下，谁的车造得好，谁就跑得快。"
       }
     ]
   }

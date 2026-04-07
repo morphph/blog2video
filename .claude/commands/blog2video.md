@@ -111,6 +111,16 @@
 
 将输出保存为 `./blog2video-output/<slug>/narration.md`。
 
+**🔍 Review Checkpoint：暂停，等待用户确认。**
+
+打印叙述稿摘要（标题、字数、预计时长、段落数）并告知用户：
+
+> 叙述稿已生成：`narration.md`（约 X 字 / ~Y 分钟）。
+> 请 review 并提出修改意见。确认后我会自动完成后续所有步骤（分集 → slide → HTML → 渲染）。
+
+如果用户提出修改意见，使用 Script Writer subagent 修订 narration.md，再次暂停等待确认。
+如果用户确认通过，继续执行后续步骤。
+
 ### Step 3: Episode Splitter（分集决策）
 
 **使用 subagent 执行。**

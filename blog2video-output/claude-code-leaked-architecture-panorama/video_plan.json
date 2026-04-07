@@ -13,10 +13,10 @@
     "videos": [
       {
         "video_number": 1,
-        "title_zh": "47万行源码泄漏：最强Agent只用1296行思考？",
-        "core_thesis": "Claude Code的核心竞争力不在模型本身，而在模型周围那套精密的三层Harness控制系统——用不到2000行让模型思考，用47万行让思考变得可靠安全可控。",
-        "core_question": "全球最强编码Agent的47万行源码泄漏了，核心逻辑只有1296行，剩下的在干什么？",
-        "hook_question": "Claude Code的完整源码泄漏了——47万行代码里，真正让模型思考的只有1296行。剩下的在干什么？",
+        "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？",
+        "core_thesis": "Claude Code的核心竞争力不在模型本身，而在模型周围那套精密的三层Harness控制系统——用不到2000行让模型思考，用超过47万行Harness让思考变得可靠安全可控。",
+        "core_question": "全球最强编码Agent的51万行源码泄漏了，核心逻辑只有1296行，剩下的在干什么？",
+        "hook_question": "Claude Code的完整源码泄漏了——51万行代码里，真正让模型思考的只有1296行。剩下的在干什么？",
 
         "source_sections": [
           "一个先亮出来的核心结论",
@@ -43,7 +43,7 @@
 
         "must_include_details": [
           "泄漏数据：1902文件、477439行TypeScript、59.8MB source map、凌晨4:23发现",
-          "1296行核心逻辑 vs 47万行Harness的极端对比",
+          "1296行核心逻辑 vs 超过47万行Harness的极端对比（总代码量51万行）",
           "微压缩的三条执行路径和两种缓存策略（prompt缓存有效性考量、cache editing API）",
           "YOLO Classifier两阶段架构和默认拦截策略",
           "23条硬编码bash安全规则，含HackerOne真实漏洞",

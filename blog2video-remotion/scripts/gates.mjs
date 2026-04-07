@@ -6,7 +6,11 @@
  * Each gate returns { pass: boolean, warnings: string[], errors: string[] }
  *
  * Usage (standalone):
+ *   node scripts/gates.mjs memo <memo_path>
+ *   node scripts/gates.mjs narration <narration_path>
+ *   node scripts/gates.mjs plan <plan_path> <output_dir>
  *   node scripts/gates.mjs script <script_path>
+ *   node scripts/gates.mjs e2e <output_dir>
  *   node scripts/gates.mjs manifest <manifest_path> <script_path>
  *   node scripts/gates.mjs alignment <config_json>  (reads from stdin or file)
  *   node scripts/gates.mjs postrender <mp4_path> <cover_photo_path>
@@ -14,6 +18,275 @@
 
 import fs from "fs";
 import path from "path";
+
+// ─── Gate: Insight Memo Validation ──────────────────────────────────────────
+
+export function gateMemo(memoPath) {
+  const warnings = [];
+  const errors = [];
+
+  if (!fs.existsSync(memoPath)) {
+    return { pass: false, warnings, errors: [`Memo not found: ${memoPath}`] };
+  }
+
+  const content = fs.readFileSync(memoPath, "utf-8");
+
+  if (content.trim().length < 100) {
+    errors.push(`Memo is too short (${content.trim().length} chars)`);
+  }
+
+  // Required sections
+  const requiredSections = [
+    "title_zh",
+    "one_sentence_thesis",
+    "judgment_lines",
+    "evidence_map",
+    "signature_line",
+  ];
+  for (const section of requiredSections) {
+    if (!content.includes(`## ${section}`)) {
+      errors.push(`Missing required section: ## ${section}`);
+    }
+  }
+
+  // title_zh should have content after the header
+  const titleMatch = content.match(/## title_zh\n+([\s\S]*?)(?=\n## |\n*$)/);
+  if (titleMatch) {
+    const titleContent = titleMatch[1].trim();
+    if (titleContent.length === 0) {
+      errors.push("title_zh section is empty");
+    } else if (titleContent.length > 60) {
+      warnings.push(`title_zh seems long (${titleContent.length} chars) — should be ≤20 chars`);
+    }
+  }
+
+  // judgment_lines should have at least 3 items
+  const judgmentMatch = content.match(/## judgment_lines\n+([\s\S]*?)(?=\n## )/);
+  if (judgmentMatch) {
+    const items = judgmentMatch[1].match(/^- /gm) || [];
+    if (items.length < 3) {
+      warnings.push(`judgment_lines has only ${items.length} items (expected 3-5)`);
+    }
+  }
+
+  // evidence_map should have at least 3 items
+  const evidenceMatch = content.match(/## evidence_map\n+([\s\S]*?)(?=\n## )/);
+  if (evidenceMatch) {
+    const items = evidenceMatch[1].match(/^- /gm) || [];
+    if (items.length < 3) {
+      warnings.push(`evidence_map has only ${items.length} items (expected 3+)`);
+    }
+  }
+
+  return { pass: errors.length === 0, warnings, errors };
+}
+
+// ─── Gate: Narration Validation ─────────────────────────────────────────────
+
+export function gateNarration(narrationPath) {
+  const warnings = [];
+  const errors = [];
+
+  if (!fs.existsSync(narrationPath)) {
+    return { pass: false, warnings, errors: [`Narration not found: ${narrationPath}`] };
+  }
+
+  const content = fs.readFileSync(narrationPath, "utf-8");
+
+  if (content.trim().length < 500) {
+    errors.push(`Narration is too short (${content.trim().length} chars)`);
+  }
+
+  // Required sections
+  if (!content.includes("## Hook")) {
+    errors.push("Missing ## Hook section");
+  }
+  if (!content.includes("## Brand Intro")) {
+    errors.push("Missing ## Brand Intro section");
+  }
+  if (!content.includes("## Closing")) {
+    errors.push("Missing ## Closing section");
+  }
+  if (!content.includes("## Synthesis")) {
+    warnings.push("Missing ## Synthesis section (recommended)");
+  }
+
+  // Brand text
+  if (!content.includes("精读AI")) {
+    errors.push("Brand name '精读AI' not found in narration");
+  }
+  if (!content.includes("精读一篇")) {
+    errors.push("Brand outro '精读一篇' not found in narration");
+  }
+
+  // Must NOT contain slide markers
+  if (content.match(/\[SLIDE \d+:/)) {
+    errors.push("Narration contains [SLIDE] markers — these belong in script.md, not narration.md");
+  }
+
+  // Must NOT contain --- horizontal rules
+  if (content.match(/\n---\n/)) {
+    warnings.push("Horizontal rule (---) found — may break downstream TTS alignment");
+  }
+
+  // Section count (should have at least 3 content sections beyond Hook/Brand/Closing)
+  const sections = content.match(/^## /gm) || [];
+  if (sections.length < 5) {
+    warnings.push(`Only ${sections.length} sections found (expected ≥5 including Hook/Brand/Synthesis/Closing)`);
+  }
+
+  // Duration estimate
+  const textOnly = content
+    .split("\n")
+    .filter((l) => !l.startsWith("#") && l.trim() !== "")
+    .join("")
+    .length;
+  const estimatedMinutes = textOnly / 200;
+  if (estimatedMinutes < 3) {
+    warnings.push(`Estimated duration very short: ${estimatedMinutes.toFixed(1)} min`);
+  }
+  if (estimatedMinutes > 25) {
+    warnings.push(`Estimated duration very long: ${estimatedMinutes.toFixed(1)} min`);
+  }
+
+  return { pass: errors.length === 0, warnings, errors };
+}
+
+// ─── Gate: Episode Splitter / Video Plan Validation ─────────────────────────
+
+export function gatePlan(planPath, outputDir) {
+  const warnings = [];
+  const errors = [];
+
+  if (!fs.existsSync(planPath)) {
+    return { pass: false, warnings, errors: [`video_plan.json not found: ${planPath}`] };
+  }
+
+  let plan;
+  try {
+    plan = JSON.parse(fs.readFileSync(planPath, "utf-8"));
+  } catch (e) {
+    return { pass: false, warnings, errors: [`video_plan.json is not valid JSON: ${e.message}`] };
+  }
+
+  // Check required fields
+  if (!plan.blog_metadata) {
+    errors.push("Missing blog_metadata");
+  } else {
+    if (!plan.blog_metadata.title_zh) errors.push("Missing blog_metadata.title_zh");
+    if (!plan.blog_metadata.slug) errors.push("Missing blog_metadata.slug");
+  }
+
+  if (!plan.video_plan) {
+    errors.push("Missing video_plan");
+  } else {
+    const totalVideos = plan.video_plan.total_videos;
+    if (!totalVideos || totalVideos < 1 || totalVideos > 5) {
+      errors.push(`Invalid total_videos: ${totalVideos}`);
+    }
+
+    if (!Array.isArray(plan.video_plan.videos)) {
+      errors.push("video_plan.videos is not an array");
+    } else {
+      if (plan.video_plan.videos.length !== totalVideos) {
+        errors.push(`videos array length (${plan.video_plan.videos.length}) does not match total_videos (${totalVideos})`);
+      }
+      for (const v of plan.video_plan.videos) {
+        if (!v.video_number) errors.push("Video entry missing video_number");
+        if (!v.title_zh) errors.push(`Video ${v.video_number} missing title_zh`);
+      }
+    }
+
+    // Check that video_N_narration.md files exist
+    if (outputDir) {
+      for (let i = 1; i <= totalVideos; i++) {
+        const narrationFile = path.join(outputDir, `video_${i}_narration.md`);
+        if (!fs.existsSync(narrationFile)) {
+          errors.push(`video_${i}_narration.md not found in ${outputDir}`);
+        }
+      }
+    }
+  }
+
+  return { pass: errors.length === 0, warnings, errors };
+}
+
+// ─── Gate: End-to-End Pipeline Validation ───────────────────────────────────
+
+export function gateE2E(outputDir) {
+  const warnings = [];
+  const errors = [];
+
+  if (!fs.existsSync(outputDir)) {
+    return { pass: false, warnings, errors: [`Output directory not found: ${outputDir}`] };
+  }
+
+  // 1. Check all expected files exist
+  const requiredFiles = ["source_blog.md", "insight_memo.md", "narration.md", "video_plan.json"];
+  for (const f of requiredFiles) {
+    if (!fs.existsSync(path.join(outputDir, f))) {
+      errors.push(`Missing required file: ${f}`);
+    }
+  }
+
+  // 2. Run individual gates
+  const memoResult = gateMemo(path.join(outputDir, "insight_memo.md"));
+  if (!memoResult.pass) errors.push(`Memo gate failed: ${memoResult.errors.join("; ")}`);
+  warnings.push(...memoResult.warnings.map((w) => `[Memo] ${w}`));
+
+  const narrationResult = gateNarration(path.join(outputDir, "narration.md"));
+  if (!narrationResult.pass) errors.push(`Narration gate failed: ${narrationResult.errors.join("; ")}`);
+  warnings.push(...narrationResult.warnings.map((w) => `[Narration] ${w}`));
+
+  const planPath = path.join(outputDir, "video_plan.json");
+  const planResult = gatePlan(planPath, outputDir);
+  if (!planResult.pass) errors.push(`Plan gate failed: ${planResult.errors.join("; ")}`);
+  warnings.push(...planResult.warnings.map((w) => `[Plan] ${w}`));
+
+  // 3. Check per-video files and run script gate
+  if (planResult.pass) {
+    const plan = JSON.parse(fs.readFileSync(planPath, "utf-8"));
+    for (let i = 1; i <= plan.video_plan.total_videos; i++) {
+      const scriptFile = path.join(outputDir, `video_${i}_script.md`);
+      if (fs.existsSync(scriptFile)) {
+        const scriptResult = gateScript(scriptFile);
+        if (!scriptResult.pass) errors.push(`Script gate failed for video ${i}: ${scriptResult.errors.join("; ")}`);
+        warnings.push(...scriptResult.warnings.map((w) => `[Script ${i}] ${w}`));
+      } else {
+        warnings.push(`video_${i}_script.md not found (slide planner may not have run yet)`);
+      }
+    }
+  }
+
+  // 4. Content consistency: narration.md text ⊇ video_1_narration.md text (for single-video)
+  if (fs.existsSync(path.join(outputDir, "narration.md")) && fs.existsSync(path.join(outputDir, "video_1_narration.md"))) {
+    const narration = fs.readFileSync(path.join(outputDir, "narration.md"), "utf-8");
+    const video1 = fs.readFileSync(path.join(outputDir, "video_1_narration.md"), "utf-8");
+    // For single-video pass-through, they should be identical
+    const planExists = fs.existsSync(planPath);
+    if (planExists) {
+      const plan = JSON.parse(fs.readFileSync(planPath, "utf-8"));
+      if (plan.video_plan.total_videos === 1 && narration !== video1) {
+        warnings.push("Single-video pass-through: narration.md and video_1_narration.md differ (expected identical)");
+      }
+    }
+  }
+
+  // 5. Title consistency: insight_memo title_zh should appear in video_plan
+  if (fs.existsSync(path.join(outputDir, "insight_memo.md")) && fs.existsSync(planPath)) {
+    const memo = fs.readFileSync(path.join(outputDir, "insight_memo.md"), "utf-8");
+    const titleMatch = memo.match(/## title_zh\n+([\s\S]*?)(?=\n## )/);
+    if (titleMatch) {
+      const memoTitle = titleMatch[1].trim();
+      const plan = JSON.parse(fs.readFileSync(planPath, "utf-8"));
+      if (plan.blog_metadata.title_zh && !plan.blog_metadata.title_zh.includes(memoTitle.slice(0, 10))) {
+        warnings.push(`Title mismatch: memo title_zh "${memoTitle}" vs plan title_zh "${plan.blog_metadata.title_zh}"`);
+      }
+    }
+  }
+
+  return { pass: errors.length === 0, warnings, errors };
+}
 
 // ─── Gate 1: Script Validation ───────────────────────────────────────────────
 
@@ -280,9 +553,33 @@ const args = process.argv.slice(2);
 if (args.length > 0) {
   const command = args[0];
 
+  if (command === "memo" && args[1]) {
+    const result = gateMemo(args[1]);
+    logGateResult("Memo", result);
+    process.exit(result.pass ? 0 : 1);
+  }
+
+  if (command === "narration" && args[1]) {
+    const result = gateNarration(args[1]);
+    logGateResult("Narration", result);
+    process.exit(result.pass ? 0 : 1);
+  }
+
+  if (command === "plan" && args[1]) {
+    const result = gatePlan(args[1], args[2]);
+    logGateResult("Plan", result);
+    process.exit(result.pass ? 0 : 1);
+  }
+
   if (command === "script" && args[1]) {
     const result = gateScript(args[1]);
     logGateResult("Script", result);
+    process.exit(result.pass ? 0 : 1);
+  }
+
+  if (command === "e2e" && args[1]) {
+    const result = gateE2E(args[1]);
+    logGateResult("E2E", result);
     process.exit(result.pass ? 0 : 1);
   }
 

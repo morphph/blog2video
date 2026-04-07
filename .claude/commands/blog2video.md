@@ -112,40 +112,106 @@
 - 总视频数
 - 每个视频的标题和预计时长
 
-### Step 2: Script Writer（口播稿生成）
+### Step 1.5: Insight Memo Writer（编辑备忘）
+
+**对 video_plan 中的每个视频，分别使用 subagent 执行。**
+
+读取 `.claude/skills/blog2video/prompts/insight-memo-writer.md` 获取完整 prompt。
+
+对每个视频的 subagent 指令：
+```
+你是 Insight Memo Writer。请阅读以下prompt规范，然后为视频 N 生成 insight memo。
+
+<prompt_spec>
+{insight-memo-writer.md 的内容}
+</prompt_spec>
+
+<video_plan_entry>
+{video_plan.json 中这个视频的条目}
+</video_plan_entry>
+
+<blog_content>
+{博客原文}
+</blog_content>
+
+请输出结构化的 insight memo（Markdown 格式）。
+```
+
+将输出保存为 `./blog2video-output/<slug>/video_N_insight_memo.md`。
+
+### Step 2: Script Writer（叙述稿生成）
 
 **对 video_plan 中的每个视频，分别使用 subagent 执行。**
 
 读取 `.claude/skills/blog2video/prompts/script-writer.md` 获取完整 prompt。
-读取对应的 example-script（如 `example-script-v1.md`）作为 few-shot 参考。
+读取 `.claude/skills/blog2video/examples/example-narration-v1.md` 作为 few-shot 参考。
 
 对每个视频的 subagent 指令：
 ```
-你是 Script Writer。请阅读以下prompt规范和参考示例，然后为视频 N 生成口播稿。
+你是 Script Writer。请阅读以下prompt规范和参考示例，然后为视频 N 生成叙述稿。
 
 <prompt_spec>
 {script-writer.md 的内容}
 </prompt_spec>
 
 <few_shot_example>
-{对应的 example-script-vN.md 的内容}
+{example-narration-v1.md 的内容}
 </few_shot_example>
+
+<blog_content>
+{博客原文（主要写作来源）}
+</blog_content>
+
+<insight_memo>
+{video_N_insight_memo.md 的内容}
+</insight_memo>
 
 <video_plan>
 {video_plan.json 中这个视频的部分}
 </video_plan>
 
-<blog_content>
-{博客原文中对应章节的内容}
-</blog_content>
-
-请输出完整的口播稿 Markdown。注意：
+请输出完整的叙述稿 Markdown。注意：
+- 以 source_blog 为主要写作来源，insight memo 为编辑判断参考
 - 目标时长 {estimated_duration_minutes} 分钟 → 约 {minutes * 200} 字
-- 必须包含 [SLIDE N: type] 标记
+- 使用 ## 标题分段，不要输出 [SLIDE] 标记
 - 生成后检查字数是否在目标范围 ±15% 内
 ```
 
+将输出保存为 `./blog2video-output/<slug>/video_N_narration.md`。
+
+### Step 2.5: Slide Planner（Slide 分段）
+
+**对每个视频的叙述稿，使用 subagent 执行。**
+
+读取 `.claude/skills/blog2video/prompts/slide-planner.md` 获取完整 prompt。
+
+对每个视频的 subagent 指令：
+```
+你是 Slide Planner。请阅读以下prompt规范，然后为视频 N 的叙述稿生成带 Slide 标记的口播稿。
+
+<prompt_spec>
+{slide-planner.md 的内容}
+</prompt_spec>
+
+<narration>
+{video_N_narration.md 的内容}
+</narration>
+
+<video_plan>
+{video_plan.json 中这个视频的部分}
+</video_plan>
+
+<insight_memo>
+{video_N_insight_memo.md 的内容}
+</insight_memo>
+
+请输出带 [SLIDE N: type] (start_time - end_time) 标记的口播稿。
+注意：不要改写叙述稿的任何文字，只做分段和标注。
+```
+
 将输出保存为 `./blog2video-output/<slug>/video_N_script.md`。
+
+**Gate 1 (Script)**: `node blog2video-remotion/scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数。如果失败，让 Slide Planner subagent 重试一次。
 
 ### Step 3: Slide HTML Generator（Slide 视觉生成）
 
@@ -172,6 +238,8 @@
 subagent 输出：
 - `./blog2video-output/<slug>/slide_N.html` — 每张 slide 的自包含 HTML
 - `./blog2video-output/<slug>/manifest.json` — slide 清单和时间信息
+
+**Gate 2 (Manifest)**: `node blog2video-remotion/scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在。
 
 ### Step 4: 渲染视频
 
@@ -204,14 +272,15 @@ done
 打印所有生成的文件：
 ```
 📁 blog2video-output/<slug>/
-├── source_blog.md         ← 原始博客内容（清洁 Markdown）
-├── video_plan.json        ← 视频拆分计划
-├── video_1_script.md      ← 视频1口播稿
+├── source_blog.md           ← 原始博客内容（清洁 Markdown）
+├── video_plan.json          ← 视频拆分计划
+├── video_1_insight_memo.md  ← 视频1编辑备忘
+├── video_1_narration.md     ← 视频1叙述稿（内部产物）
+├── video_1_script.md        ← 视频1口播稿（带 Slide 标记）
 ├── slide_1.html … slide_N.html  ← Slide HTML 文件
-├── manifest.json          ← Slide 清单和时间
-├── video_1_audio.mp3      ← 视频1配音
-├── video_1.mp4            ← 视频1最终文件
-├── video_2_script.md      ← ...
+├── manifest.json            ← Slide 清单和时间
+├── video_1_audio.mp3        ← 视频1配音
+├── video_1.mp4              ← 视频1最终文件
 └── ...
 ```
 
@@ -230,6 +299,6 @@ done
 
 - 每个 subagent 都是独立的，不要在 subagent 之间共享上下文
 - 如果某个 Stage 失败，先输出已完成的文件，再报告错误
-- video_plan.json 和 script.md 是核心产出（即使渲染失败也有价值）
-- 口播稿质量是最重要的，要检查字数和 Slide 标记的完整性
+- video_plan.json、narration.md 和 script.md 是核心产出（即使渲染失败也有价值）
+- 叙述稿质量是最重要的——检查是否跟随原文 macro-order、是否保留了丰富细节
 - source_blog.md 是跨系统共享的关键产物 — LoreAI 博客导入依赖此文件

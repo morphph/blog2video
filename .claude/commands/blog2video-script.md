@@ -91,7 +91,39 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 
 #### Step 2: Script Writer
 
-对 video_plan 中的每个视频，分别使用 subagent 生成脚本（见下方 subagent 指令）。
+对 video_plan 中的每个视频，分别使用 subagent 生成叙述稿（见下方 subagent 指令）。
+
+输出保存为 `./blog2video-output/<slug>/video_N_narration.md`。
+
+#### Step 2.5: Slide Planner
+
+对每个视频的叙述稿，使用 subagent 生成带 Slide 标记的口播稿。
+
+读取 `.claude/skills/blog2video/prompts/slide-planner.md` 获取 prompt。
+
+对每个视频的 subagent 指令：
+```
+你是 Slide Planner。请阅读以下prompt规范，然后为视频 N 的叙述稿生成带 Slide 标记的口播稿。
+
+<prompt_spec>
+{slide-planner.md 的内容}
+</prompt_spec>
+
+<narration>
+{video_N_narration.md 的内容}
+</narration>
+
+<video_plan>
+{video_plan.json 中这个视频的部分}
+</video_plan>
+
+<insight_memo>
+{video_N_insight_memo.md 的内容}
+</insight_memo>
+
+请输出带 [SLIDE N: type] (start_time - end_time) 标记的口播稿。
+注意：不要改写叙述稿的任何文字，只做分段和标注。
+```
 
 输出保存为 `./blog2video-output/<slug>/video_N_script.md`。
 
@@ -106,60 +138,70 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 1. 解析 `$ARGUMENTS`，提取 output-dir 和 video-number（默认 1）
 2. 读取 `<output-dir>/video_plan.json`，提取对应视频的 plan
 3. 读取 `<output-dir>/source_blog.md`，获取博客原文
-4. 如果已有 `<output-dir>/video_<N>_script.md`，读取它作为"上一版参考"
+4. 如果已有 `<output-dir>/video_<N>_insight_memo.md`，读取它
+5. 如果已有 `<output-dir>/video_<N>_narration.md`，读取它作为"上一版参考"
+
+#### Step 1.5: Insight Memo Writer（如果 insight memo 不存在）
+
+如果 `video_N_insight_memo.md` 不存在，先生成它（同 URL 模式 Step 1.5）。
 
 #### Step 2: 调用 Script Writer subagent
 
 （与 URL 模式的 Step 2 相同）
+
+#### Step 2.5: 调用 Slide Planner subagent
+
+（与 URL 模式的 Step 2.5 相同）
 
 ---
 
 ## Script Writer Subagent 指令
 
 读取 `.claude/skills/blog2video/prompts/script-writer.md` 获取完整 prompt。
-读取 `.claude/skills/blog2video/examples/example-script-v1.md` 作为 few-shot 参考。
+读取 `.claude/skills/blog2video/examples/example-narration-v1.md` 作为 few-shot 参考。
 
 对每个视频的 subagent 指令：
 ```
-你是 Script Writer。请阅读以下prompt规范和参考示例，然后为视频 N 生成口播稿。
+你是 Script Writer。请阅读以下prompt规范和参考示例，然后为视频 N 生成叙述稿。
 
 <prompt_spec>
 {script-writer.md 的内容}
 </prompt_spec>
 
 <few_shot_example>
-{example-script-v1.md 的内容}
+{example-narration-v1.md 的内容}
 </few_shot_example>
 
-<video_plan>
-{video_plan.json 中这个视频的部分}
-</video_plan>
+<blog_content>
+{博客原文（主要写作来源）}
+</blog_content>
 
 <insight_memo>
 {video_N_insight_memo.md 的内容}
 </insight_memo>
 
-<blog_content>
-{博客原文（作为事实核查参考）}
-</blog_content>
+<video_plan>
+{video_plan.json 中这个视频的部分}
+</video_plan>
 
-{如果有上一版脚本，加入以下内容：}
+{如果有上一版叙述稿，加入以下内容：}
 <previous_version>
-{上一版 video_N_script.md 的内容}
+{上一版 video_N_narration.md 的内容}
 </previous_version>
 
 请在上一版基础上改进。注意保持好的部分，改进不够好的部分。
 
-请输出完整的口播稿 Markdown。注意：
-- 以 insight memo 为主要内容依据，不要重新从原文发明 thesis
+请输出完整的叙述稿 Markdown。注意：
+- 以 source_blog 为主要写作来源，insight memo 为编辑判断参考
 - 目标时长 {estimated_duration_minutes} 分钟 → 约 {minutes * 200} 字
-- 必须包含 [SLIDE N: type] 标记
+- 使用 ## 标题分段，不要输出 [SLIDE] 标记
 - 生成后检查字数是否在目标范围 ±15% 内
 ```
 
 ## Step 3: 保存并输出摘要
 
-将输出保存为 `<output-dir>/video_<N>_script.md`（覆盖旧版本）。
+将叙述稿保存为 `<output-dir>/video_<N>_narration.md`。
+将口播稿保存为 `<output-dir>/video_<N>_script.md`（覆盖旧版本）。
 
 打印摘要：
 - 输出目录路径

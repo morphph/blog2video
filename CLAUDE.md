@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 4 stages via subagents.
+Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 5 core stages via subagents.
 
 ### Supported input types
 - **Blog URLs** — fetched via curl/fetch
@@ -33,10 +33,11 @@ pip install edge-tts
 ### Pipeline stages (orchestrated by `/blog2video` slash command)
 
 1. **Content Analyzer** — Analyzes blog, decides video count (1-3), outputs `video_plan.json`
-1.5. **Insight Memo Writer** (×N) — Extracts judgment lines, evidence map, non-obvious insights, tradeoffs per video, outputs `video_N_insight_memo.md`
-2. **Script Writer** (×N) — Generates Chinese narration script from insight memo with `[SLIDE N: type]` markers, outputs `video_N_script.md`
-3. **Slide Data Generator** (×N) — Converts script to Remotion-compatible JSON, outputs `video_N_config.json`
-4. **Render** — Edge TTS → audio, then Remotion renders final MP4
+1.5. **Insight Memo Writer** (×N) — Extracts editorial judgments, evidence, non-obvious insights per video, outputs `video_N_insight_memo.md`
+2. **Script Writer** (×N) — Generates essay-first Chinese narration (no slide markers), outputs `video_N_narration.md`
+2.5. **Slide Planner** (×N) — Segments narration into downstream-compatible slide format, outputs `video_N_script.md`
+3. **Slide HTML Generator** (×N) — Generates self-contained HTML slides + manifest from script, outputs `slide_N.html` + `manifest.json`
+4. **Render** — MiniMax TTS → audio, Puppeteer screenshot → Remotion renders final MP4
 
 Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 
@@ -114,12 +115,12 @@ meta.json 里**不需要** title、description、tags — 这些由远程服务�
 
 ### 投递命令
 
-投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`images/` 目录。
+投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`*_narration.md`、`*_insight_memo.md`、`images/` 目录。
 
 使用 rclone 上传到 Google Drive（rclone remote `gdrive:` 已配置）：
 
 ```bash
-rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="images/**" --exclude="*_narration.txt" --exclude="*_config.json" --progress
+rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="*_narration.md" --exclude="*_insight_memo.md" --exclude="images/**" --exclude="*_config.json" --progress
 ```
 
 注意：slide 截图 PNG 不传，但 `*_cover_photo.png` 需要传。用 `--include` 无法精确控制时，可先手动清理再 `rclone copy`。

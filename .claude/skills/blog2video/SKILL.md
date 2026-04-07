@@ -11,12 +11,12 @@ YouTube     → [Step 0: yt-dlp + VTT]            → source_raw.md  → [Step 0
 GitHub repo → [Step 0: git clone]               → repo/           → [Step 0.5: Repo Summarizer]      → source_blog.md → [Step 1] → ...
 Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → [Step 0.7: Image Enrichment] → [Step 1] → ...
 
-... → [Script Writer] → [Slide HTML Generator] → [Remotion Render + TTS] → MP4
+... → [Insight Memo] → [Script Writer] → [Slide Planner] → [Slide HTML Generator] → [Remotion Render + TTS] → MP4
 ```
 
 ## Subagent Architecture
 
-本 pipeline 包含 4 个 preprocessor subagent + 3 个 core subagent + 1 个渲染脚本：
+本 pipeline 包含 4 个 preprocessor subagent + 4 个 core subagent + 1 个渲染脚本：
 
 | Stage | Subagent | 输入 | 输出 |
 |-------|----------|------|------|
@@ -26,8 +26,10 @@ Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ �
 | 0.5 | Twitter Cleaner | `source_raw.md`（Puppeteer 提取文本） | `source_blog.md`（清洁 Markdown） |
 | 0.7 | Image Enrichment（orchestrator 直接执行） | `source_blog.md` + `images/` | `source_blog.md`（含 `[IMAGE DESCRIPTION]` 注释） |
 | 1 | Content Analyzer | `source_blog.md` | `video_plan.json` |
-| 2 | Script Writer | video_plan.json + `source_blog.md` | `video_N_script.md` (每个视频一个) |
-| 3 | Slide HTML Generator | video_N_script.md | `slide_N.html` + `cover_photo.html` + `manifest.json` |
+| 1.5 | Insight Memo Writer | `source_blog.md` + video_plan | `video_N_insight_memo.md` |
+| 2 | Script Writer | `source_blog.md` + insight_memo + video_plan | `video_N_narration.md` |
+| 2.5 | Slide Planner | `video_N_narration.md` + video_plan + insight_memo | `video_N_script.md` |
+| 3 | Slide HTML Generator | `video_N_script.md` | `slide_N.html` + `cover_photo.html` + `manifest.json` |
 | 4 | Render (非 subagent) | HTML slides + manifest.json + TTS 音频 | MP4 视频文件 |
 
 ## 文件结构
@@ -41,12 +43,15 @@ Twitter/X   → [Step 0: fetch-twitter.mjs]       → source_raw.md + images/ �
 │   ├── transcript-organizer.md   ← Stage 0.5 prompt (YouTube 转录 → 结构化 Markdown)
 │   ├── twitter-cleaner.md        ← Stage 0.5 prompt (Twitter/X 文章 → 清洁 Markdown)
 │   ├── content-analyzer.md       ← Stage 1 prompt
-│   ├── script-writer.md          ← Stage 2 prompt
+│   ├── insight-memo-writer.md    ← Stage 1.5 prompt
+│   ├── script-writer.md          ← Stage 2 prompt (输出 narration.md)
+│   ├── slide-planner.md          ← Stage 2.5 prompt (narration → script with slide markers)
 │   └── slide-html-generator.md   ← Stage 3 prompt (生成自包含 HTML slides)
 ├── examples/
 │   ├── source-blog.md            ← 参考博客原文
 │   ├── example-plan.json         ← 参考视频拆分计划
-│   ├── example-script-v1.md      ← 参考口播稿（视频1）
+│   ├── example-narration-v1.md   ← 参考叙述稿（essay-first，无 slide 标记）
+│   ├── example-script-v1.md      ← 参考口播稿（带 slide 标记，视频1）
 │   ├── example-script-v2.md      ← 参考口播稿（视频2）
 │   └── example-script-v3.md      ← 参考口播稿（视频3）
 └── design/
@@ -72,22 +77,23 @@ Slash command `/blog2video` 的执行流程：
 ```
 1. 读取内容（URL fetch / pdfminer / yt-dlp / git clone）
 1.5. 内容预处理（按输入类型）：PDF → PDF Cleaner / YouTube → Transcript Organizer / GitHub → Repo Summarizer / Twitter/X → Twitter Cleaner / 博客 → 跳过（博客 URL 在 Step 0 中已下载图片）
-1.7. Image Enrichment（orchestrator 直接执行）：检查 images/ 目录，对每张图片用 Read 多模态读取并在 source_blog.md 中插入 `[IMAGE DESCRIPTION]` 描述。无图片则跳过
+1.7. Image Enrichment（orchestrator 直接执行）
 2. 调用 Content Analyzer subagent → 输出 video_plan.json
-3. 检查 video_plan.json，确认视频数量
-4. 对每个视频，依次调用：
-   a. Script Writer subagent → 输出 video_N_script.md
-   b. **Gate 1 (Script)**: `node scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数
-   c. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
-   d. **Gate 2 (Manifest)**: `node scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在
-5. 渲染（render-all.mjs 统一处理，内含 Gate 3 + Gate 4）：
+3. 对每个视频，依次调用：
+   a. Insight Memo Writer subagent → 输出 video_N_insight_memo.md
+   b. Script Writer subagent → 输出 video_N_narration.md
+   c. Slide Planner subagent → 输出 video_N_script.md
+   d. **Gate 1 (Script)**: `node scripts/gates.mjs script <script_path>` — 验证 [SLIDE] 标记、品牌植入、字数
+   e. Slide HTML Generator subagent → 输出 slide_N.html + cover_photo.html + manifest.json
+   f. **Gate 2 (Manifest)**: `node scripts/gates.mjs manifest <manifest_path> <script_path>` — 验证 slide 数量一致、HTML 文件存在
+4. 渲染（render-all.mjs 统一处理，内含 Gate 3 + Gate 4）：
    a. MiniMax TTS → audio + subtitles + **slide_map.json**（text-offset 映射）
    b. Puppeteer 截图 HTML slides → slide_N.png
    c. **Slide timing alignment**：用 slide_map 精确对齐每张 slide 与音频时间轴
    d. **Gate 3 (Alignment)**: 验证每张 slide 有字幕映射、时长 > 2s、时间单调递增
    e. Remotion 渲染 → video_N.mp4
    f. **Gate 4 (PostRender)**: 验证 MP4 大小、封面图存在
-6. 输出所有文件路径
+5. 输出所有文件路径
 ```
 
 ## 使用方式
@@ -108,17 +114,16 @@ blog2video-output/
 └── <slug>/
     ├── source_blog.md                ← 原始博客内容（清洁 Markdown，LoreAI 导入依赖）
     ├── video_plan.json               ← 视频拆分计划（LoreAI 导入依赖）
-    ├── video_1_script.md
+    ├── video_1_insight_memo.md       ← 编辑备忘
+    ├── video_1_narration.md          ← 叙述稿（内部产物，essay-first）
+    ├── video_1_script.md             ← 口播稿（带 Slide 标记，下游消费）
     ├── slide_1.html … slide_N.html  ← 每张 slide 的自包含 HTML
     ├── cover_photo.html              ← 封面图 HTML
     ├── video_1_manifest.json         ← slide 清单和时间信息
     ├── video_1_audio.mp3
     ├── video_1_audio_slide_map.json  ← slide 字符偏移映射（用于精确音频对齐）
     ├── video_1.mp4
-    ├── video_2_script.md
-    ├── video_2_manifest.json
-    ├── ...
-    └── video_2.mp4
+    └── ...
 ```
 
 ## Slide-Audio Alignment
@@ -138,7 +143,7 @@ Pipeline 在每个阶段后运行 evaluation gate，用于捕获错误、防止�
 
 | Gate | Stage | 触发条件 | 检查项 |
 |------|-------|---------|--------|
-| Gate 1: Script | Script Writer 后 | orchestrator 调用 | [SLIDE] 标记、品牌植入、字数 |
+| Gate 1: Script | Slide Planner 后 | orchestrator 调用 | [SLIDE] 标记、品牌植入、字数 |
 | Gate 2: Manifest | Slide HTML Generator 后 | orchestrator 调用 | slide 数量一致、HTML 文件存在 |
 | Gate 3: Alignment | TTS + alignment 后 | render-all.mjs 内置 | 字幕映射完整、时长 > 2s、单调递增 |
 | Gate 4: PostRender | Remotion 渲染后 | render-all.mjs 内置 | MP4 大小、封面图 |

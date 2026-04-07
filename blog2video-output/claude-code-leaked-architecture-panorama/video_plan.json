@@ -1,18 +1,18 @@
 {
   "blog_metadata": {
     "title": "拆解最强 AI Agent 的设计哲学：512,000 行泄漏源码告诉我们，Claude Code 到底在造什么？",
-    "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？",
-    "word_count": 4200,
+    "title_zh": "51万行泄漏，AI Agent靠什么赢？",
+    "word_count": 1253,
     "slug": "claude-code-leaked-architecture-panorama"
   },
   "video_plan": {
     "total_videos": 1,
-    "rationale": "整篇叙述稿是一个连贯的全景论证——从核心循环到三层Harness到未发布功能——拆开后每部分都依赖前面的语境，不适合独立成篇。",
+    "rationale": "叙述稿围绕一个连贯论证展开（Harness是Agent产品核心竞争力），每个部分都在支撑同一个thesis，没有可独立理解的子主题，不拆",
     "episode_transitions": [],
     "videos": [
       {
         "video_number": 1,
-        "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？"
+        "title_zh": "51万行泄漏，AI Agent靠什么赢？"
       }
     ]
   }

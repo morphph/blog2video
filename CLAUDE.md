@@ -32,12 +32,14 @@ pip install edge-tts
 
 ### Pipeline stages (orchestrated by `/blog2video` slash command)
 
-1. **Content Analyzer** — Analyzes blog, decides video count (1-3), outputs `video_plan.json`
-1.5. **Insight Memo Writer** (×N) — Extracts editorial judgments, evidence, non-obvious insights per video, outputs `video_N_insight_memo.md`
-2. **Script Writer** (×N) — Generates essay-first Chinese narration (no slide markers), outputs `video_N_narration.md`
-2.5. **Slide Planner** (×N) — Segments narration into downstream-compatible slide format, outputs `video_N_script.md`
-3. **Slide HTML Generator** (×N) — Generates self-contained HTML slides + manifest from script, outputs `slide_N.html` + `manifest.json`
-4. **Render** — MiniMax TTS → audio, Puppeteer screenshot → Remotion renders final MP4
+1. **Insight Memo Writer** — Analyzes whole blog, extracts editorial judgments, evidence, non-obvious insights, outputs `insight_memo.md`
+2. **Script Writer** — Generates essay-first Chinese narration for whole blog (no slide markers), outputs `narration.md`
+3. **Episode Splitter** — Reads finished narration, decides whether to split into multiple videos, outputs `video_plan.json` + `video_N_narration.md`
+4. **Slide Planner** (×N) — Segments each video's narration into downstream-compatible slide format, outputs `video_N_script.md`
+5. **Slide HTML Generator** (×N) — Generates self-contained HTML slides + manifest from script
+6. **Render** — MiniMax TTS → audio, Puppeteer screenshot → Remotion renders final MP4
+
+Design principle: **write first, split later.** Narration quality is never constrained by splitting decisions. Duration is a result, not an input.
 
 Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 

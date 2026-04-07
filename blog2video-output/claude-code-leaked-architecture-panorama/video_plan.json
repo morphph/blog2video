@@ -1,61 +1,18 @@
 {
   "blog_metadata": {
     "title": "拆解最强 AI Agent 的设计哲学：512,000 行泄漏源码告诉我们，Claude Code 到底在造什么？",
-    "title_zh": "拆解最强AI Agent的设计哲学：51万行泄漏源码揭秘Claude Code",
+    "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？",
     "word_count": 4200,
-    "complexity": "high",
-    "depth_score": 9,
     "slug": "claude-code-leaked-architecture-panorama"
   },
   "video_plan": {
     "total_videos": 1,
-    "rationale": "博客覆盖完整叙事弧：泄漏事件→核心架构→三层Harness→未发布功能→工程原则。三层Harness是同一论点（核心简单周边精密）的三个论据层，拆开后必须依赖上期语境。1个密集视频远优于2-3个稀疏视频。",
+    "rationale": "整篇叙述稿是一个连贯的全景论证——从核心循环到三层Harness到未发布功能——拆开后每部分都依赖前面的语境，不适合独立成篇。",
+    "episode_transitions": [],
     "videos": [
       {
         "video_number": 1,
-        "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？",
-        "core_thesis": "Claude Code的核心竞争力不在模型本身，而在模型周围那套精密的三层Harness控制系统——用不到2000行让模型思考，用超过47万行Harness让思考变得可靠安全可控。",
-        "core_question": "全球最强编码Agent的51万行源码泄漏了，核心逻辑只有1296行，剩下的在干什么？",
-        "hook_question": "Claude Code的完整源码泄漏了——51万行代码里，真正让模型思考的只有1296行。剩下的在干什么？",
-
-        "source_sections": [
-          "一个先亮出来的核心结论",
-          "Claude Code 的架构骨架：一个循环 + 三层 Harness",
-          "第一层 Harness：上下文管理",
-          "第二层 Harness：安全与约束",
-          "第三层 Harness：多 Agent 与扩展",
-          "冰山之下：44 个 Feature Flag 藏着的未来",
-          "一些让人意外的内部数据",
-          "从 Claude Code 学到的 5 条 Agent 工程原则"
-        ],
-        "source_macro_order": [
-          "泄漏事件背景（开篇）",
-          "一个先亮出来的核心结论",
-          "Claude Code 的架构骨架：一个循环 + 三层 Harness",
-          "第一层 Harness：上下文管理",
-          "第二层 Harness：安全与约束",
-          "第三层 Harness：多 Agent 与扩展",
-          "冰山之下：44 个 Feature Flag 藏着的未来",
-          "一些让人意外的内部数据",
-          "从 Claude Code 学到的 5 条 Agent 工程原则"
-        ],
-        "estimated_duration_minutes": 10,
-
-        "must_include_details": [
-          "泄漏数据：1902文件、477439行TypeScript、59.8MB source map、凌晨4:23发现",
-          "1296行核心逻辑 vs 超过47万行Harness的极端对比（总代码量51万行）",
-          "微压缩的三条执行路径和两种缓存策略（prompt缓存有效性考量、cache editing API）",
-          "YOLO Classifier两阶段架构和默认拦截策略",
-          "23条硬编码bash安全规则，含HackerOne真实漏洞",
-          "投机执行Speculation：预测下一步、沙箱写入、连续投机",
-          "KAIROS的Dream记忆引擎：白天行动，空闲整理",
-          "Capybara v8虚假声明率29-30%（v4仅16.7%，退步）",
-          "内部约70-90%代码由Claude自己编写"
-        ],
-
-        "strongest_evidence": "核心Query Engine 46000行中，真正让模型思考的只有1296行，其余45000行处理流式传输、错误恢复、缓存管理、权限检查——思考逻辑仅占总代码量的0.27%",
-        "actionable_takeaway": "打开你的Agent项目，检查核心逻辑和控制代码的比例。把80%的工程投入放在模型周围的Harness上：上下文分级管理、安全约束写在代码里、生成和评估分离",
-        "takeaway": "最强编码Agent的源码证明：模型是引擎，Harness是整辆车。引擎一样的情况下，谁的车造得好，谁就跑得快。"
+        "title_zh": "51万行源码泄漏：最强Agent只用1296行思考？"
       }
     ]
   }

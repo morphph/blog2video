@@ -12,10 +12,11 @@
 
 输入：
 - `source_blog.md`（原始博客全文）
-- 当前视频的 `video_plan` 条目（来自 video_plan.json 中对应此视频的部分）
 
 输出：
-- 一份结构化 Markdown 格式的 insight memo（`video_N_insight_memo.md`）
+- 一份结构化 Markdown 格式的 insight memo（`insight_memo.md`）
+
+这份 memo 覆盖整篇博客的核心认知，不按视频分集。如果后续需要分集，由 Episode Splitter 在叙述稿写完后决定。
 
 ## 核心原则
 
@@ -29,10 +30,16 @@
 ## 输出格式
 
 ```markdown
-# Insight Memo: Video N — [视频主题]
+# Insight Memo: [博客主题]
+
+## title_zh
+为这篇博客拟一个中文视频标题（≤20字）。
+必须用观众视角，包含以下至少一种：震撼数字、反常识矛盾、问号。
+禁止模式："完整指南"、"一文搞懂"、"从...到..."。
+热门关键词（Agent、MCP、Token 等）鼓励使用；行业黑话避免。
 
 ## one_sentence_thesis
-用一句判断句概括这条视频的核心论点。不是"介绍 X"，而是"X 之所以重要是因为 Y"。
+用一句判断句概括这篇博客的核心论点。不是"介绍 X"，而是"X 之所以重要是因为 Y"。
 必须是一个有立场的判断，不是中性描述。
 
 ## why_this_video_exists
@@ -73,15 +80,15 @@
 - [代价/局限] — 具体表现：[...]
 
 ## what_to_leave_out
-原文中存在但不应进入这条视频的内容，以及 Script Writer 应避免的叙事方向。
-标注原因（太细节/与本视频 thesis 无关/适合另一条视频/观众不关心/会误导叙事方向）。
+原文中存在但不应进入视频的内容，以及 Script Writer 应避免的叙事方向。
+标注原因（太细节/与核心 thesis 无关/观众不关心/会误导叙事方向）。
 
 包含两类内容：
-1. **不该进入的素材**：原文中存在但本视频不讲的内容（太细节/无关/适合另一期）
+1. **不该进入的素材**：原文中存在但视频不讲的内容（太细节/无关）
 2. **应避免的叙事方向**：Script Writer 不应采用的叙事策略（如"不要把全片框架建立在单一数字上"、"不要当成教程来写"）
 
 ## signature_line
-为这条视频拟一句"记得住的压缩结论"。
+为这篇内容拟一句"记得住的压缩结论"。
 好的：一句话 + 一个翻转/对比/矛盾。
 差的：概念定义或泛泛总结。
 
@@ -123,9 +130,10 @@
 
 ## 生成后自检
 
-1. one_sentence_thesis 是否是一个判断句（有立场），而不是描述句（中性）？
-2. judgment_lines 是否每条都能被 evidence_map 中的至少一条证据支撑？
-3. non_obvious_points 是否真的不显而易见（不是只看标题就能猜到的）？
-4. tradeoffs_and_limits 是否至少有 1 条实质性的代价或局限？
-5. evidence_map 是否包含至少 3 个具体数字或具体事实？
-6. what_to_leave_out 是否同时包含"不该进入的素材"和"应避免的叙事方向"？
+1. title_zh 是否 ≤20 字且包含震撼数字/反常识/问号？
+2. one_sentence_thesis 是否是一个判断句（有立场），而不是描述句（中性）？
+3. judgment_lines 是否每条都能被 evidence_map 中的至少一条证据支撑？
+4. non_obvious_points 是否真的不显而易见（不是只看标题就能猜到的）？
+5. tradeoffs_and_limits 是否至少有 1 条实质性的代价或局限？
+6. evidence_map 是否包含至少 3 个具体数字或具体事实？
+7. what_to_leave_out 是否同时包含"不该进入的素材"和"应避免的叙事方向"？

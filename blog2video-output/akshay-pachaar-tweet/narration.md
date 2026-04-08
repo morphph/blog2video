@@ -2,7 +2,7 @@
 
 ## Hook
 
-Anthropic、OpenAI、LangChain、CrewAI、AutoGen——五家做 Agent 的公司，底层到底是怎么造的？有人把它们的核心循环拆开做了横向对比。结论很意外：底层循环几乎一模一样。真正的分歧不在模型，而在一个大多数人忽略的东西——Harness。今天只聊一个问题：为什么你选 Agent 框架，本质上是在选操作系统。
+今天我们把全球最主流的 Agent 公司——Anthropic、OpenAI、LangChain 等的 Agent 框架拆开，看看它们的 Harness 到底是怎么造的。拆完之后我发现一件意外的事：这几家底层循环几乎一模一样。真正拉开差距的不是模型本身，而是模型周围那套系统该怎么设计。
 
 ## Brand Intro
 

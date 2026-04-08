@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 48px;
+    }
+    .main-title .accent { color: #8B5CF6; }
+    .data-row {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .data-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .data-card .number {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .data-card .number.purple { color: #8B5CF6; }
+    .data-card .number.blue { color: #3B82F6; }
+    .data-card .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .principle-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .principle-card .icon-row {
+      font-size: 20px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .principle-card .body {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .principle-card .body em {
+      font-style: normal;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">TOOL MANAGEMENT</div>
+    <div class="main-title">工具管理：<span class="accent">按需加载</span></div>
+    <div class="data-row">
+      <div class="data-card">
+        <div class="number purple">42+</div>
+        <div class="desc">内置工具</div>
+      </div>
+      <div class="data-card">
+        <div class="number blue">80+</div>
+        <div class="desc">含 MCP 扩展</div>
+      </div>
+    </div>
+    <div class="principle-card">
+      <div class="icon-row">CORE PRINCIPLE</div>
+      <div class="body">上下文窗口是<em>稀缺资源</em><br>关键不是装不装得下<br>而是<em>该不该</em>装进去</div>
+    </div>
+  </div>
+</body>
+</html>

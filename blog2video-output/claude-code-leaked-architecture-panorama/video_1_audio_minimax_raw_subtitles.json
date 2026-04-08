@@ -1,0 +1,682 @@
+[
+  {
+    "text": "今天聊一个刚刚发生的大事。Claude Code，51万行源代码，全部泄漏了。我花了大量时间全部读完。读完之后，有一个结论越来越清晰。",
+    "pronounce_text": "今天聊一个刚刚发生的大事。Claude Code，五十一万行源代码，全部泄漏了。我花了大量时间全部读完。读完之后，有一个结论越来越清晰。",
+    "time_begin": 0,
+    "time_end": 12612.925170068027,
+    "text_begin": 0,
+    "text_end": 67,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 68
+  },
+  {
+    "text": "Claude Code 的核心竞争力不在模型，在模型周围那套精密的控制系统。",
+    "pronounce_text": "Claude Code的核心竞争力不在模型，在模型周围那套精密的控制系统。",
+    "time_begin": 12812.925170068027,
+    "time_end": 18041.904761904763,
+    "text_begin": 67,
+    "text_end": 105,
+    "pronounce_text_begin": 68,
+    "pronounce_text_end": 105
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Claude Code 泄漏的完整源码。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Claude Code泄漏的完整源码。",
+    "time_begin": 18180,
+    "time_end": 30282.086167800455,
+    "text_begin": 105,
+    "text_end": 182,
+    "pronounce_text_begin": 105,
+    "pronounce_text_end": 177
+  },
+  {
+    "text": "一句话：Claude Code 用了不到 2,000 行让模型\"思考\"，用了超过 47 万行让思考变得可靠、安全、可控。",
+    "pronounce_text": "一句话：Claude Code用了不到两千行让模型\"思考\"，用了超过四十七万行让思考变得可靠、安全、可控。",
+    "time_begin": 30420,
+    "time_end": 38168.34467120181,
+    "text_begin": 182,
+    "text_end": 242,
+    "pronounce_text_begin": 177,
+    "pronounce_text_end": 230
+  },
+  {
+    "text": "Claude Code 最大的单一模块叫 Query Engine，46,000 行代码。但它的核心逻辑，就是那个让 Claude 真正\"思考\"的部分，实际上只有大约 1,296 行。",
+    "pronounce_text": "Claude Code最大的单一模块叫Query Engine，四万六千行代码。但它的核心逻辑，就是那个让Claude真正\"思考\"的部分，实际上只有大约一千两百九十六行。",
+    "time_begin": 38340,
+    "time_end": 50778.77551020408,
+    "text_begin": 242,
+    "text_end": 334,
+    "pronounce_text_begin": 230,
+    "pronounce_text_end": 315
+  },
+  {
+    "text": "剩下的 45,000 行全在处理流式传输、错误恢复、缓存管理、权限检查。",
+    "pronounce_text": "剩下的四万五千行全在处理流式传输、错误恢复、缓存管理、权限检查。",
+    "time_begin": 50940,
+    "time_end": 58084.62585034013,
+    "text_begin": 334,
+    "text_end": 370,
+    "pronounce_text_begin": 315,
+    "pronounce_text_end": 347
+  },
+  {
+    "text": "如果把模型比作引擎，那这 47 万行代码就是整辆车。引擎一样的情况下，谁的车造得好，谁就跑得快。这套\"车身\"在 AI 工程领域有一个专业名称，叫 Harness。",
+    "pronounce_text": "如果把模型比作引擎，那这四十七万行代码就是整辆车。引擎一样的情况下，谁的车造得好，谁就跑得快。这套\"车身\"在AI工程领域有一个专业名称，叫Harness。",
+    "time_begin": 58248,
+    "time_end": 72091.58276643991,
+    "text_begin": 370,
+    "text_end": 451,
+    "pronounce_text_begin": 347,
+    "pronounce_text_end": 424
+  },
+  {
+    "text": "先从整体架构说起。Claude Code 的核心逻辑简单到让人意外。用户输入一句话，QueryEngine 组装系统提示词，调用模型，模型说要用工具就执行工具，把结果喂回去，继续循环，直到模型给出最终回答。",
+    "pronounce_text": "先从整体架构说起。Claude Code的核心逻辑简单到让人意外。用户输入一句话，QueryEngine组装系统提示词，调用模型，模型说要用工具就执行工具，把结果喂回去，继续循环，直到模型给出最终回答。",
+    "time_begin": 72252,
+    "time_end": 88614.94784580499,
+    "text_begin": 451,
+    "text_end": 554,
+    "pronounce_text_begin": 424,
+    "pronounce_text_end": 525
+  },
+  {
+    "text": "没有复杂的状态图，没有条件路由，没有 DAG 编排器。就是一个 while 循环。",
+    "pronounce_text": "没有复杂的状态图，没有条件路由，没有DAG编排器。就是一个while循环。",
+    "time_begin": 88776,
+    "time_end": 96431.4648526077,
+    "text_begin": 554,
+    "text_end": 595,
+    "pronounce_text_begin": 525,
+    "pronounce_text_end": 562
+  },
+  {
+    "text": "但这个\"简单\"的循环周围，包裹着一整套精密的 Harness 系统。这才是 Claude Code 真正的竞争力。我把这套 Harness 分成三层来讲。",
+    "pronounce_text": "但这个\"简单\"的循环周围，包裹着一整套精密的Harness系统。这才是Claude Code真正的竞争力。我把这套Harness分成三层来讲。",
+    "time_begin": 96588,
+    "time_end": 107238.83900226757,
+    "text_begin": 595,
+    "text_end": 672,
+    "pronounce_text_begin": 562,
+    "pronounce_text_end": 633
+  },
+  {
+    "text": "第一层解决的是\"模型该看什么\"的问题。",
+    "pronounce_text": "第一层解决的是\"模型该看什么\"的问题。",
+    "time_begin": 107388,
+    "time_end": 110736.16326530612,
+    "text_begin": 672,
+    "text_end": 691,
+    "pronounce_text_begin": 633,
+    "pronounce_text_end": 652
+  },
+  {
+    "text": "如果你只能从 Claude Code 学一样东西，学这个。Context engineering，上下文工程，是这份源码里工程含量最高的部分。也是我认为 2026 年 Agent 产品最被低估的核心能力。",
+    "pronounce_text": "如果你只能从Claude Code学一样东西，学这个。Context engineering，上下文工程，是这份源码里工程含量最高的部分。也是我认为两千零二十六年Agent产品最被低估的核心能力。",
+    "time_begin": 110880,
+    "time_end": 125106.71201814059,
+    "text_begin": 691,
+    "text_end": 793,
+    "pronounce_text_begin": 652,
+    "pronounce_text_end": 750
+  },
+  {
+    "text": "上下文窗口有限，大约 200K token。但用户的对话可以无限长。Claude Code 设计了三级压缩来应对。",
+    "pronounce_text": "上下文窗口有限，大约两百K token。但用户的对话可以无限长。Claude Code设计了三级压缩来应对。",
+    "time_begin": 125244,
+    "time_end": 133932.75283446713,
+    "text_begin": 793,
+    "text_end": 850,
+    "pronounce_text_begin": 750,
+    "pronounce_text_end": 804
+  },
+  {
+    "text": "第一级叫微压缩。不调用模型，纯规则驱动，成本几乎为零。它按工具类型白名单，保留最近 N 个工具结果，把更早的结果清掉。但怎么清，有讲究。",
+    "pronounce_text": "第一级叫微压缩。不调用模型，纯规则驱动，成本几乎为零。它按工具类型白名单，保留最近N个工具结果，把更早的结果清掉。但怎么清，有讲究。",
+    "time_begin": 134100,
+    "time_end": 148245.44217687074,
+    "text_begin": 850,
+    "text_end": 918,
+    "pronounce_text_begin": 804,
+    "pronounce_text_end": 870
+  },
+  {
+    "text": "调用 API 的时候，Anthropic 会把你发过去的 prompt 前缀缓存在服务端。下次请求如果前缀一样，就不用重新处理，省钱省时间。所以微压缩在清理旧结果的时候，要考虑一个问题。",
+    "pronounce_text": "调用API的时候，Anthropic会把你发过去的prompt前缀缓存在服务端。下次请求如果前缀一样，就不用重新处理，省钱省时间。所以微压缩在清理旧结果的时候，要考虑一个问题。",
+    "time_begin": 148392,
+    "time_end": 163988.68934240364,
+    "text_begin": 918,
+    "text_end": 1011,
+    "pronounce_text_begin": 870,
+    "pronounce_text_end": 958
+  },
+  {
+    "text": "我这一刀下去，会不会把服务端的缓存搞失效？",
+    "pronounce_text": "我这一刀下去，会不会把服务端的缓存搞失效？",
+    "time_begin": 164160,
+    "time_end": 168065.44217687074,
+    "text_begin": 1011,
+    "text_end": 1032,
+    "pronounce_text_begin": 958,
+    "pronounce_text_end": 979
+  },
+  {
+    "text": "如果用户一直在连续对话，服务端缓存还在，微压缩就走一条精细路径。通过 cache editing API 告诉服务端把某些工具结果删了，但不动 prompt 前缀，缓存继续有效。",
+    "pronounce_text": "如果用户一直在连续对话，服务端缓存还在，微压缩就走一条精细路径。通过cache editing API告诉服务端把某些工具结果删了，但不动prompt前缀，缓存继续有效。",
+    "time_begin": 168228,
+    "time_end": 182837.84126984127,
+    "text_begin": 1032,
+    "text_end": 1121,
+    "pronounce_text_begin": 979,
+    "pronounce_text_end": 1064
+  },
+  {
+    "text": "如果用户离开了一段时间回来，服务端缓存早就过期了，那就没必要小心翼翼了，直接把旧的工具输出替换成一个占位符。",
+    "pronounce_text": "如果用户离开了一段时间回来，服务端缓存早就过期了，那就没必要小心翼翼了，直接把旧的工具输出替换成一个占位符。",
+    "time_begin": 182988,
+    "time_end": 192268.86167800453,
+    "text_begin": 1121,
+    "text_end": 1175,
+    "pronounce_text_begin": 1064,
+    "pronounce_text_end": 1118
+  },
+  {
+    "text": "这里面藏着一个反直觉的经济学权衡。直觉上你会觉得\"删旧内容省 token\"总是对的。但如果删的方式破坏了缓存前缀的连续性，后续所有请求都会 miss cache，成本和延迟反而大幅上升。",
+    "pronounce_text": "这里面藏着一个反直觉的经济学权衡。直觉上你会觉得\"删旧内容省token\"总是对的。但如果删的方式破坏了缓存前缀的连续性，后续所有请求都会miss cache，成本和延迟反而大幅上升。",
+    "time_begin": 192420,
+    "time_end": 208399.81859410432,
+    "text_begin": 1175,
+    "text_end": 1268,
+    "pronounce_text_begin": 1118,
+    "pronounce_text_end": 1209
+  },
+  {
+    "text": "所以 Claude Code 宁可用更精细的 API 操作，也不简单粗暴地替换。光这一个微压缩，源码里就有三条执行路径和两种清理策略。",
+    "pronounce_text": "所以Claude Code宁可用更精细的API操作，也不简单粗暴地替换。光这一个微压缩，源码里就有三条执行路径和两种清理策略。",
+    "time_begin": 208548,
+    "time_end": 218815.7097505669,
+    "text_begin": 1268,
+    "text_end": 1335,
+    "pronounce_text_begin": 1209,
+    "pronounce_text_end": 1272
+  },
+  {
+    "text": "第二级叫会话记忆压缩。它不做对话摘要，而是从对话中提取结构化事实。项目结构、用户偏好、任务进度。这些事实被持久化到本地的记忆目录里。提取的是事实，不是叙事。",
+    "pronounce_text": "第二级叫会话记忆压缩。它不做对话摘要，而是从对话中提取结构化事实。项目结构、用户偏好、任务进度。这些事实被持久化到本地的记忆目录里。提取的是事实，不是叙事。",
+    "time_begin": 218952,
+    "time_end": 234212,
+    "text_begin": 1335,
+    "text_end": 1413,
+    "pronounce_text_begin": 1272,
+    "pronounce_text_end": 1350
+  },
+  {
+    "text": "第三级才是完整压缩。用一次独立的模型调用，把整段对话历史总结成一条精简的上下文边界消息。之前的消息从模型视野中移除，但 UI 层保留完整的滚动历史。",
+    "pronounce_text": "第三级才是完整压缩。用一次独立的模型调用，把整段对话历史总结成一条精简的上下文边界消息。之前的消息从模型视野中移除，但UI层保留完整的滚动历史。",
+    "time_begin": 234360,
+    "time_end": 249062.72108843538,
+    "text_begin": 1413,
+    "text_end": 1487,
+    "pronounce_text_begin": 1350,
+    "pronounce_text_end": 1422
+  },
+  {
+    "text": "三级流水线，三个不同粒度的问题，三种不同成本的解法。微压缩去噪声，记忆压缩提事实，完整压缩清历史。",
+    "pronounce_text": "三级流水线，三个不同粒度的问题，三种不同成本的解法。微压缩去噪声，记忆压缩提事实，完整压缩清历史。",
+    "time_begin": 249228,
+    "time_end": 260389.67800453515,
+    "text_begin": 1487,
+    "text_end": 1536,
+    "pronounce_text_begin": 1422,
+    "pronounce_text_end": 1471
+  },
+  {
+    "text": "上下文管理不止压缩。Claude Code 内置了 42 个以上的工具，加上 MCP 扩展超过 80 个。但不是一开始就全部塞进上下文。核心工具启动时加载，扩展工具按需加载。",
+    "pronounce_text": "上下文管理不止压缩。Claude Code内置了四十二个以上的工具，加上MCP扩展超过八十个。但不是一开始就全部塞进上下文。核心工具启动时加载，扩展工具按需加载。",
+    "time_begin": 260532,
+    "time_end": 275617.85034013604,
+    "text_begin": 1536,
+    "text_end": 1623,
+    "pronounce_text_begin": 1471,
+    "pronounce_text_end": 1552
+  },
+  {
+    "text": "如果工具输出太大，系统不会直接截断，而是存到外部，给模型一个摘要加一个指针，让它按需取用。",
+    "pronounce_text": "如果工具输出太大，系统不会直接截断，而是存到外部，给模型一个摘要加一个指针，让它按需取用。",
+    "time_begin": 275760,
+    "time_end": 284739.00226757367,
+    "text_begin": 1623,
+    "text_end": 1668,
+    "pronounce_text_begin": 1552,
+    "pronounce_text_end": 1597
+  },
+  {
+    "text": "所有这些设计都指向同一个原则。上下文窗口是稀缺资源。关键不是装不装得下，而是该不该装进去。",
+    "pronounce_text": "所有这些设计都指向同一个原则。上下文窗口是稀缺资源。关键不是装不装得下，而是该不该装进去。",
+    "time_begin": 284904,
+    "time_end": 293337.3333333333,
+    "text_begin": 1668,
+    "text_end": 1713,
+    "pronounce_text_begin": 1597,
+    "pronounce_text_end": 1642
+  },
+  {
+    "text": "第二层解决的是\"模型不能做什么\"的问题。",
+    "pronounce_text": "第二层解决的是\"模型不能做什么\"的问题。",
+    "time_begin": 293508,
+    "time_end": 296473.03401360544,
+    "text_begin": 1713,
+    "text_end": 1733,
+    "pronounce_text_begin": 1642,
+    "pronounce_text_end": 1662
+  },
+  {
+    "text": "Claude Code 可以直接在你的电脑上执行 bash 命令、读写文件、操作 git。这个能力极其强大，但也极其危险。它的安全不是靠 prompt 里写\"请不要执行危险命令\"来约束的。",
+    "pronounce_text": "Claude Code可以直接在你的电脑上执行bash命令、读写文件、操作git。这个能力极其强大，但也极其危险。它的安全不是靠prompt里写\"请不要执行危险命令\"来约束的。",
+    "time_begin": 296640,
+    "time_end": 310657.73242630385,
+    "text_begin": 1733,
+    "text_end": 1827,
+    "pronounce_text_begin": 1662,
+    "pronounce_text_end": 1750
+  },
+  {
+    "text": "它有四种权限模式，从逐一确认到完全自动。每次工具调用都要过一个五步评估流水线。",
+    "pronounce_text": "它有四种权限模式，从逐一确认到完全自动。每次工具调用都要过一个五步评估流水线。",
+    "time_begin": 310824,
+    "time_end": 318270.48526077095,
+    "text_begin": 1827,
+    "text_end": 1866,
+    "pronounce_text_begin": 1750,
+    "pronounce_text_end": 1789
+  },
+  {
+    "text": "这里面最聪明的设计是双层分类器。第一层叫 Bash Classifier，纯规则匹配，把只读命令自动放行，不调模型，速度极快。",
+    "pronounce_text": "这里面最聪明的设计是双层分类器。第一层叫Bash Classifier，纯规则匹配，把只读命令自动放行，不调模型，速度极快。",
+    "time_begin": 318420,
+    "time_end": 329105.66893424036,
+    "text_begin": 1866,
+    "text_end": 1929,
+    "pronounce_text_begin": 1789,
+    "pronounce_text_end": 1851
+  },
+  {
+    "text": "第二层叫 YOLO Classifier。名字很随意，实现一点都不随意。它是一个完整的 LLM-as-Judge 系统，用独立的模型调用来审查主 Agent 的每一个操作。而且有两阶段架构。",
+    "pronounce_text": "第二层叫YOLO Classifier。名字很随意，实现一点都不随意。它是一个完整的LLM-as-Judge系统，用独立的模型调用来审查主Agent的每一个操作。而且有两阶段架构。",
+    "time_begin": 329256,
+    "time_end": 343738.1315192744,
+    "text_begin": 1929,
+    "text_end": 2024,
+    "pronounce_text_begin": 1851,
+    "pronounce_text_end": 1941
+  },
+  {
+    "text": "第一阶段快速判断，放行就直接过。",
+    "pronounce_text": "第一阶段快速判断，放行就直接过。",
+    "time_begin": 343938.1315192744,
+    "time_end": 346949.60544217686,
+    "text_begin": 2024,
+    "text_end": 2040,
+    "pronounce_text_begin": 1941,
+    "pronounce_text_end": 1957
+  },
+  {
+    "text": "只有判断要拦截时，才进入第二阶段完整推理。这大大减少了误杀率。",
+    "pronounce_text": "只有判断要拦截时，才进入第二阶段完整推理。这大大减少了误杀率。",
+    "time_begin": 347112,
+    "time_end": 352979.5283446712,
+    "text_begin": 2040,
+    "text_end": 2071,
+    "pronounce_text_begin": 1957,
+    "pronounce_text_end": 1988
+  },
+  {
+    "text": "错误处理策略是宁可误杀不可放过。解析失败、API 错误，全部默认拦截。这个设计体现了一个核心原则。生成和评估必须分离。",
+    "pronounce_text": "错误处理策略是宁可误杀不可放过。解析失败、API错误，全部默认拦截。这个设计体现了一个核心原则。生成和评估必须分离。",
+    "time_begin": 353124,
+    "time_end": 364668.8072562358,
+    "text_begin": 2071,
+    "text_end": 2130,
+    "pronounce_text_begin": 1988,
+    "pronounce_text_end": 2046
+  },
+  {
+    "text": "主 Agent 负责\"想做什么\"，分类器 Agent 负责\"能不能做\"。",
+    "pronounce_text": "主Agent负责\"想做什么\"，分类器Agent负责\"能不能做\"。",
+    "time_begin": 364868.8072562358,
+    "time_end": 370562.1859410431,
+    "text_begin": 2130,
+    "text_end": 2166,
+    "pronounce_text_begin": 2046,
+    "pronounce_text_end": 2078
+  },
+  {
+    "text": "但这里有一个结构性的张力。用户选择完全自动模式就是为了不被打断。但分类器的保守策略意味着仍会频繁拦截。自动化程度越高，每次误杀的体验伤害就越大。",
+    "pronounce_text": "但这里有一个结构性的张力。用户选择完全自动模式就是为了不被打断。但分类器的保守策略意味着仍会频繁拦截。自动化程度越高，每次误杀的体验伤害就越大。",
+    "time_begin": 370728,
+    "time_end": 384188.45351473923,
+    "text_begin": 2166,
+    "text_end": 2238,
+    "pronounce_text_begin": 2078,
+    "pronounce_text_end": 2150
+  },
+  {
+    "text": "除了分类器，源码里还有 23 条编号的 bash 安全检查规则，防御零宽空格注入、IFS 空字节注入等攻击。其中至少一条来自 HackerOne 安全审计中发现的真实漏洞。",
+    "pronounce_text": "除了分类器，源码里还有二三条编号的bash安全检查规则，防御零宽空格注入、IFS空字节注入等攻击。其中至少一条来自HackerOne安全审计中发现的真实漏洞。",
+    "time_begin": 384336,
+    "time_end": 397459.7641723356,
+    "text_begin": 2238,
+    "text_end": 2324,
+    "pronounce_text_begin": 2150,
+    "pronounce_text_end": 2229
+  },
+  {
+    "text": "再加上大约 8,000 行的 Hooks 系统，在工具调用前后、HTTP 请求前后都可以挂载回调函数做拦截。",
+    "pronounce_text": "再加上大约八千行的Hooks系统，在工具调用前后、HTTP请求前后都可以挂载回调函数做拦截。",
+    "time_begin": 397620,
+    "time_end": 405623.7641723356,
+    "text_begin": 2324,
+    "text_end": 2378,
+    "pronounce_text_begin": 2229,
+    "pronounce_text_end": 2275
+  },
+  {
+    "text": "这一层的核心思想是什么？Prompt 里的规则是建议，代码里的规则是法律。",
+    "pronounce_text": "这一层的核心思想是什么？Prompt里的规则是建议，代码里的规则是法律。",
+    "time_begin": 405792,
+    "time_end": 411357.66893424036,
+    "text_begin": 2378,
+    "text_end": 2415,
+    "pronounce_text_begin": 2275,
+    "pronounce_text_end": 2311
+  },
+  {
+    "text": "第三层解决的是\"一个模型不够用怎么办\"的问题。",
+    "pronounce_text": "第三层解决的是\"一个模型不够用怎么办\"的问题。",
+    "time_begin": 411516,
+    "time_end": 415166.022675737,
+    "text_begin": 2415,
+    "text_end": 2438,
+    "pronounce_text_begin": 2311,
+    "pronounce_text_end": 2334
+  },
+  {
+    "text": "Claude Code 的多 Agent 系统叫 Swarm。一个 Leader 加多个 Teammate。Leader 拆解任务、分配、收集结果。Teammate 共享权限，但上下文严格隔离。",
+    "pronounce_text": "Claude Code的多Agent系统叫Swarm。一个Leader加多个Teammate。Leader拆解任务、分配、收集结果。Teammate共享权限，但上下文严格隔离。",
+    "time_begin": 415332,
+    "time_end": 428107.4648526077,
+    "text_begin": 2438,
+    "text_end": 2535,
+    "pronounce_text_begin": 2334,
+    "pronounce_text_end": 2422
+  },
+  {
+    "text": "Leader 只看到指令和最终结果，中间过程全部看不到。",
+    "pronounce_text": "Leader只看到指令和最终结果，中间过程全部看不到。",
+    "time_begin": 428307.4648526077,
+    "time_end": 432897.89569161,
+    "text_begin": 2535,
+    "text_end": 2563,
+    "pronounce_text_begin": 2422,
+    "pronounce_text_end": 2449
+  },
+  {
+    "text": "但光隔离还不够。源码里有一个 Team Memory Sync 机制，关键发现会同步回 Leader 的记忆目录，其他 Teammate 也能看到。",
+    "pronounce_text": "但光隔离还不够。源码里有一个Team Memory Sync机制，关键发现会同步回Leader的记忆目录，其他Teammate也能看到。",
+    "time_begin": 433044,
+    "time_end": 442278.42176870746,
+    "text_begin": 2563,
+    "text_end": 2637,
+    "pronounce_text_begin": 2449,
+    "pronounce_text_end": 2517
+  },
+  {
+    "text": "上下文隔离加关键信息同步，解决了 multi-agent 最常见的两个问题。信息爆炸和信息孤岛。",
+    "pronounce_text": "上下文隔离加关键信息同步，解决了multi-agent最常见的两个问题。信息爆炸和信息孤岛。",
+    "time_begin": 442478.42176870746,
+    "time_end": 450261.5963718821,
+    "text_begin": 2637,
+    "text_end": 2685,
+    "pronounce_text_begin": 2517,
+    "pronounce_text_end": 2563
+  },
+  {
+    "text": "还有 Coordinator Mode。开启后 Claude Code 变成纯粹的编排器，自己不干活，只拆任务、派任务、收结果。它的系统提示词里有一句话值得记住。",
+    "pronounce_text": "还有Coordinator Mode。开启后Claude Code变成纯粹的编排器，自己不干活，只拆任务、派任务、收结果。它的系统提示词里有一句话值得记住。",
+    "time_begin": 450432,
+    "time_end": 463079.7551020408,
+    "text_begin": 2685,
+    "text_end": 2766,
+    "pronounce_text_begin": 2563,
+    "pronounce_text_end": 2641
+  },
+  {
+    "text": "Do not say based on your findings. Read the actual findings and specify exactly what to do.",
+    "pronounce_text": "Do not say based on your findings. Read the actual findings and specify exactly what to do.",
+    "time_begin": 463279.7551020408,
+    "time_end": 471062.92970521544,
+    "text_begin": 2766,
+    "text_end": 2857,
+    "pronounce_text_begin": 2641,
+    "pronounce_text_end": 2732
+  },
+  {
+    "text": "编排器不能偷懒委派，必须理解每个子任务的结果再给下一步指令。",
+    "pronounce_text": "编排器不能偷懒委派，必须理解每个子任务的结果再给下一步指令。",
+    "time_begin": 471204,
+    "time_end": 475747.9909297052,
+    "text_begin": 2857,
+    "text_end": 2887,
+    "pronounce_text_begin": 2732,
+    "pronounce_text_end": 2762
+  },
+  {
+    "text": "源码里还藏着几个尚未发布的系统，更有意思。44 个 feature flag，功能已经完整构建，但在公开版本中被关闭。",
+    "pronounce_text": "源码里还藏着几个尚未发布的系统，更有意思。四十四个feature flag，功能已经完整构建，但在公开版本中被关闭。",
+    "time_begin": 475884,
+    "time_end": 485118.42176870746,
+    "text_begin": 2887,
+    "text_end": 2946,
+    "pronounce_text_begin": 2762,
+    "pronounce_text_end": 2820
+  },
+  {
+    "text": "投机执行，源码里叫 Speculation。Claude 回答完你的问题后，在你还没按回车之前，系统就已经在后台执行它预测你会做的下一步了。所有写入重定向到沙箱，接受就合并，拒绝就丢弃。",
+    "pronounce_text": "投机执行，源码里叫Speculation。Claude回答完你的问题后，在你还没按回车之前，系统就已经在后台执行它预测你会做的下一步了。所有写入重定向到沙箱，接受就合并，拒绝就丢弃。",
+    "time_begin": 485280,
+    "time_end": 500540,
+    "text_begin": 2946,
+    "text_end": 3039,
+    "pronounce_text_begin": 2820,
+    "pronounce_text_end": 2911
+  },
+  {
+    "text": "一轮完成后立即开始下一轮，试图始终领先你好几步。",
+    "pronounce_text": "一轮完成后立即开始下一轮，试图始终领先你好几步。",
+    "time_begin": 500688,
+    "time_end": 505185.55102040817,
+    "text_begin": 3039,
+    "text_end": 3063,
+    "pronounce_text_begin": 2911,
+    "pronounce_text_end": 2935
+  },
+  {
+    "text": "不过要注意，这个沙箱方案只在文件系统内可撤销的操作中成立。发 HTTP 请求、写数据库这类不可逆操作，沙箱没办法保护。",
+    "pronounce_text": "不过要注意，这个沙箱方案只在文件系统内可撤销的操作中成立。发HTTP请求、写数据库这类不可逆操作，沙箱没办法保护。",
+    "time_begin": 505332,
+    "time_end": 517178.6666666667,
+    "text_begin": 3063,
+    "text_end": 3122,
+    "pronounce_text_begin": 2935,
+    "pronounce_text_end": 2992
+  },
+  {
+    "text": "再说 KAIROS。当前所有 AI 工具都是被动的，你问一句它答一句。KAIROS 要把 Claude Code 变成一个永远在线的后台 daemon。系统按固定间隔向 Agent 发送 tick 提示，Agent 自主决定要不要主动做点什么。",
+    "pronounce_text": "再说KAIROS。当前所有AI工具都是被动的，你问一句它答一句。KAIROS要把Claude Code变成一个永远在线的后台daemon。系统按固定间隔向Agent发送tick提示，Agent自主决定要不要主动做点什么。",
+    "time_begin": 517320,
+    "time_end": 534066.0770975057,
+    "text_begin": 3122,
+    "text_end": 3244,
+    "pronounce_text_begin": 2992,
+    "pronounce_text_end": 3102
+  },
+  {
+    "text": "还配了一个叫 Dream 的后台记忆整理引擎，空闲时自动整合和修剪记忆。这是从\"工具\"到\"同事\"的转变。",
+    "pronounce_text": "还配了一个叫Dream的后台记忆整理引擎，空闲时自动整合和修剪记忆。这是从\"工具\"到\"同事\"的转变。",
+    "time_begin": 534204,
+    "time_end": 544042.1405895691,
+    "text_begin": 3244,
+    "text_end": 3296,
+    "pronounce_text_begin": 3102,
+    "pronounce_text_end": 3152
+  },
+  {
+    "text": "ULTRAPLAN 把复杂的规划任务卸载到云端容器，运行 Opus 4.6，最长跑 30 分钟。它和 Manus 的区别很精准。",
+    "pronounce_text": "ULTRAPLAN把复杂的规划任务卸载到云端容器，运行Opus四点六，最长跑三十分钟。它和Manus的区别很精准。",
+    "time_begin": 544212,
+    "time_end": 554305.560090703,
+    "text_begin": 3296,
+    "text_end": 3360,
+    "pronounce_text_begin": 3152,
+    "pronounce_text_end": 3209
+  },
+  {
+    "text": "Manus 把整个执行都放云端，ULTRAPLAN 只把规划放云端，实现仍然在本地。",
+    "pronounce_text": "Manus把整个执行都放云端，ULTRAPLAN只把规划放云端，实现仍然在本地。",
+    "time_begin": 554505.560090703,
+    "time_end": 561441.2063492064,
+    "text_begin": 3360,
+    "text_end": 3402,
+    "pronounce_text_begin": 3209,
+    "pronounce_text_end": 3249
+  },
+  {
+    "text": "规划需要深度思考但不需要本地文件系统，实现需要本地环境但不需要 30 分钟推理。拆开放到各自最合适的地方。",
+    "pronounce_text": "规划需要深度思考但不需要本地文件系统，实现需要本地环境但不需要三十分钟推理。拆开放到各自最合适的地方。",
+    "time_begin": 561600,
+    "time_end": 570451.2925170067,
+    "text_begin": 3402,
+    "text_end": 3455,
+    "pronounce_text_begin": 3249,
+    "pronounce_text_end": 3300
+  },
+  {
+    "text": "泄漏还暴露了一些意外的内部数据。",
+    "pronounce_text": "泄漏还暴露了一些意外的内部数据。",
+    "time_begin": 570600,
+    "time_end": 573228.3446712018,
+    "text_begin": 3455,
+    "text_end": 3471,
+    "pronounce_text_begin": 3300,
+    "pronounce_text_end": 3316
+  },
+  {
+    "text": "最新 Capybara v8 的虚假声明率是百分之 29 到百分之 30，而之前 v4 版本只有百分之 16.7。新版本反而退步了。这说明更强的模型可能更\"自信\"地产生虚假声明。",
+    "pronounce_text": "最新Capybara v八的虚假声明率是百分之二十九到百分之三十，而之前v四版本只有百分之十六点七。新版本反而退步了。这说明更强的模型可能更\"自信\"地产生虚假声明。",
+    "time_begin": 573372,
+    "time_end": 589525.9682539683,
+    "text_begin": 3471,
+    "text_end": 3560,
+    "pronounce_text_begin": 3316,
+    "pronounce_text_end": 3398
+  },
+  {
+    "text": "这恰恰解释了为什么 Harness 不会随着模型进步而减轻。模型越强，越需要独立的约束系统来对冲新增的失败模式。",
+    "pronounce_text": "这恰恰解释了为什么Harness不会随着模型进步而减轻。模型越强，越需要独立的约束系统来对冲新增的失败模式。",
+    "time_begin": 589680,
+    "time_end": 598577.7324263039,
+    "text_begin": 3560,
+    "text_end": 3616,
+    "pronounce_text_begin": 3398,
+    "pronounce_text_end": 3452
+  },
+  {
+    "text": "Anthropic 内部大约百分之 70 到百分之 90 的代码由 Claude 自己编写。47 万行 Harness 的维护成本极高，而且和特定模型版本深度耦合。",
+    "pronounce_text": "Anthropic内部大约百分之七十到百分之九十的代码由Claude自己编写。四十七万行Harness的维护成本极高，而且和特定模型版本深度偶合。",
+    "time_begin": 598716,
+    "time_end": 609703.5283446712,
+    "text_begin": 3616,
+    "text_end": 3698,
+    "pronounce_text_begin": 3452,
+    "pronounce_text_end": 3525
+  },
+  {
+    "text": "每次模型升级都可能需要重新校准。人类已经很难独立维护这个规模了。",
+    "pronounce_text": "每次模型升级都可能需要重新校准。人类已经很难独立维护这个规模了。",
+    "time_begin": 609903.5283446712,
+    "time_end": 615852.3265306122,
+    "text_begin": 3698,
+    "text_end": 3730,
+    "pronounce_text_begin": 3525,
+    "pronounce_text_end": 3557
+  },
+  {
+    "text": "源码里还有反蒸馏防御。开启后会在 API 请求中注入虚假的工具定义，污染竞争对手的训练数据。AI 产品之间的竞争已经深入到协议层面了。",
+    "pronounce_text": "源码里还有反蒸刘防御。开启后会在API请求中注入虚假的工具定义，污染竞争对手的训练数据。AI产品之间的竞争已经深入到协议层面了。",
+    "time_begin": 615996,
+    "time_end": 628051.6462585034,
+    "text_begin": 3730,
+    "text_end": 3797,
+    "pronounce_text_begin": 3557,
+    "pronounce_text_end": 3621
+  },
+  {
+    "text": "回过头来看，Claude Code 的每一个子系统都在做同一件事。在概率性的模型周围，构建确定性的工程系统。",
+    "pronounce_text": "回过头来看，Claude Code的每一个子系统都在做同一件事。在概率性的模型周围，构建确定性的工程系统。",
+    "time_begin": 628200,
+    "time_end": 636888.7528344671,
+    "text_begin": 3797,
+    "text_end": 3851,
+    "pronounce_text_begin": 3621,
+    "pronounce_text_end": 3674
+  },
+  {
+    "text": "模型可能输出错误的参数，Zod schema 拦截它。模型可能执行危险的命令，权限分类器阻止它。模型可能在长对话中迷失，压缩流水线为它清理上下文。没有一行代码试图让模型更聪明。",
+    "pronounce_text": "模型可能输出错误的参数，Zod schema拦截它。模型可能执行危险的命令，权限分类器阻止它。模型可能在长对话中迷失，压缩流水线为它清理上下文。没有一行代码试图让模型更聪明。",
+    "time_begin": 637056,
+    "time_end": 653418.947845805,
+    "text_begin": 3851,
+    "text_end": 3939,
+    "pronounce_text_begin": 3674,
+    "pronounce_text_end": 3761
+  },
+  {
+    "text": "所有的工程投入，都在让模型周围的系统更可靠。",
+    "pronounce_text": "所有的工程投入，都在让模型周围的系统更可靠。",
+    "time_begin": 653580,
+    "time_end": 657613.1519274376,
+    "text_begin": 3939,
+    "text_end": 3961,
+    "pronounce_text_begin": 3761,
+    "pronounce_text_end": 3783
+  },
+  {
+    "text": "Claude Code 用 1,296 行让模型学会思考，用 47 万行让思考变得可靠。你的 Agent 产品的护城河不在引擎多强，在你围绕引擎造了一辆什么样的车。",
+    "pronounce_text": "Claude Code用一千两百九十六行让模型学会思考，用四十七万行让思考变得可靠。你的Agent产品的护城河不在引擎多强，在你围绕引擎造了一辆什么样的车。",
+    "time_begin": 657756,
+    "time_end": 669892.9160997733,
+    "text_begin": 3961,
+    "text_end": 4043,
+    "pronounce_text_begin": 3783,
+    "pronounce_text_end": 3861
+  },
+  {
+    "text": "如果你正在做 Agent 产品，认真想想这个问题。你在模型周围构建了什么样的 Harness？上下文怎么管理？安全边界在哪？这些才是决定产品天花板的地方。",
+    "pronounce_text": "如果你正在做Agent产品，认真想想这个问题。你在模型周围构建了什么样的Harness？上下文怎么管理？安全边界在哪？这些才是决定产品天花板的地方。",
+    "time_begin": 670032,
+    "time_end": 682598.485260771,
+    "text_begin": 4043,
+    "text_end": 4120,
+    "pronounce_text_begin": 3861,
+    "pronounce_text_end": 3935
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 682740,
+    "time_end": 687283.9909297052,
+    "text_begin": 4120,
+    "text_end": 4147,
+    "pronounce_text_begin": 3935,
+    "pronounce_text_end": 3961
+  }
+]

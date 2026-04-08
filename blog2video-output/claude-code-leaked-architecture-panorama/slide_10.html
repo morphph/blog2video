@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 44px;
+    }
+    .main-title .accent { color: #8B5CF6; }
+    .comparison {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .compare-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .compare-card.blue { border-top: 4px solid #3B82F6; }
+    .compare-card.purple { border-top: 4px solid #8B5CF6; }
+    .compare-card .card-name {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .compare-card.blue .card-name { color: #3B82F6; }
+    .compare-card.purple .card-name { color: #8B5CF6; }
+    .compare-card .item {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+    }
+    .compare-card .item em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .insight-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .insight-box .insight-label {
+      font-size: 18px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .insight-box .insight-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .insight-box .insight-text em {
+      font-style: normal;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">ULTRAPLAN</div>
+    <div class="main-title"><span class="accent">ULTRAPLAN</span> vs Manus</div>
+    <div class="comparison">
+      <div class="compare-card blue">
+        <div class="card-name">Manus</div>
+        <div class="item">整个执行<em>都放云端</em></div>
+        <div class="item">云端规划<br>云端实现</div>
+      </div>
+      <div class="compare-card purple">
+        <div class="card-name">ULTRAPLAN</div>
+        <div class="item">只把<em>规划</em>放云端</div>
+        <div class="item">Opus 4.6 推理<br><em>最长 30 分钟</em></div>
+        <div class="item">实现仍在<em>本地</em></div>
+      </div>
+    </div>
+    <div class="insight-box">
+      <div class="insight-label">DESIGN PHILOSOPHY</div>
+      <div class="insight-text">规划需要深度思考但<em>不需要本地文件系统</em><br>实现需要本地环境但<em>不需要 30 分钟推理</em></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .main-title .accent { color: #8B5CF6; }
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+    }
+    .pipeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .level {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .level-num {
+      font-size: 56px;
+      font-weight: 800;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .level-1 { border-left: 4px solid #3B82F6; }
+    .level-1 .level-num { color: #3B82F6; }
+    .level-2 { border-left: 4px solid #8B5CF6; }
+    .level-2 .level-num { color: #8B5CF6; }
+    .level-3 { border-left: 4px solid #EF4444; }
+    .level-3 .level-num { color: #EF4444; }
+    .level-body {
+      flex: 1;
+    }
+    .level-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .level-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .level-desc em {
+      font-style: normal;
+      color: #F59E0B;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">LAYER 1 &middot; CONTEXT ENGINEERING</div>
+    <div class="main-title">三级压缩管理 <span class="accent">200K</span> 上下文</div>
+    <div class="subtitle">模型该看什么？看多少？</div>
+    <div class="pipeline">
+      <div class="level level-1">
+        <div class="level-num">1</div>
+        <div class="level-body">
+          <div class="level-title">微压缩</div>
+          <div class="level-desc">纯规则驱动，<em>零模型调用</em><br>按白名单保留最近 N 个工具结果<br>兼顾缓存前缀连续性</div>
+        </div>
+      </div>
+      <div class="level level-2">
+        <div class="level-num">2</div>
+        <div class="level-body">
+          <div class="level-title">会话记忆压缩</div>
+          <div class="level-desc">提取<em>结构化事实</em>（项目结构、偏好、进度）<br>持久化到本地记忆目录</div>
+        </div>
+      </div>
+      <div class="level level-3">
+        <div class="level-num">3</div>
+        <div class="level-body">
+          <div class="level-title">完整压缩</div>
+          <div class="level-desc">独立模型调用，<em>总结全部历史</em><br>UI 保留滚动历史，模型只看摘要</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

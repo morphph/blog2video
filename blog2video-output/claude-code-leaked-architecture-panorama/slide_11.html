@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+    .main-title .accent { color: #EF4444; }
+    .data-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .data-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .data-card.red { border-left: 4px solid #EF4444; }
+    .data-card.purple { border-left: 4px solid #8B5CF6; }
+    .data-card.yellow { border-left: 4px solid #F59E0B; }
+    .data-num {
+      font-size: 56px;
+      font-weight: 800;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .data-card.red .data-num { color: #EF4444; }
+    .data-card.purple .data-num { color: #8B5CF6; }
+    .data-card.yellow .data-num { color: #F59E0B; }
+    .data-body { flex: 1; }
+    .data-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .data-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .data-desc em {
+      font-style: normal;
+      color: #EF4444;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">LEAKED INTERNAL DATA</div>
+    <div class="main-title">泄漏暴露的 <span class="accent">意外数据</span></div>
+    <div class="data-cards">
+      <div class="data-card red">
+        <div class="data-num">29%</div>
+        <div class="data-body">
+          <div class="data-title">Capybara v8 虚假声明率</div>
+          <div class="data-desc">v4 版本只有 16.7%<br>新版本<em>反而退步</em></div>
+        </div>
+      </div>
+      <div class="data-card purple">
+        <div class="data-num">90%</div>
+        <div class="data-body">
+          <div class="data-title">Claude 自己编写的代码比例</div>
+          <div class="data-desc">47 万行 Harness<br>人类已很难独立维护</div>
+        </div>
+      </div>
+      <div class="data-card yellow">
+        <div class="data-num">&#128737;</div>
+        <div class="data-body">
+          <div class="data-title">反蒸馏防御</div>
+          <div class="data-desc">注入虚假工具定义<br>污染竞争对手训练数据</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

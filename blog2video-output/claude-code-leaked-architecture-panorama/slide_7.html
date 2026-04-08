@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .quote-marks {
+      font-size: 120px;
+      color: rgba(245, 158, 11, 0.25);
+      font-family: Georgia, serif;
+      line-height: 0.6;
+      margin-bottom: 32px;
+      z-index: 1;
+    }
+    .quote-text {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.45;
+      margin-bottom: 48px;
+      z-index: 1;
+      max-width: 860px;
+    }
+    .quote-text .highlight { color: #F59E0B; }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: rgba(139, 92, 246, 0.4);
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+    .stats-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      z-index: 1;
+    }
+    .stat-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 40px;
+      font-weight: 800;
+      color: #EF4444;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="quote-marks">&#8220;</div>
+    <div class="quote-text">Prompt 里的规则是<span class="highlight">建议</span><br>代码里的规则是<span class="highlight">法律</span></div>
+    <div class="divider"></div>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="num">23</div>
+        <div class="label">Bash 安全<br>检查规则</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">8K</div>
+        <div class="label">行 Hooks<br>系统代码</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 56px;
+      font-weight: 600;
+      z-index: 1;
+    }
+    .title-block {
+      text-align: center;
+      z-index: 1;
+      margin-bottom: 48px;
+    }
+    .title-line {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+    .highlight-yellow { color: #F59E0B; }
+    .highlight-red { color: #EF4444; }
+    .suspense-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      z-index: 1;
+    }
+    .suspense-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .suspense-card.purple { border-left: 4px solid #8B5CF6; }
+    .suspense-card.red { border-left: 4px solid #EF4444; }
+    .card-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .card-text {
+      font-size: 28px;
+      font-weight: 600;
+      color: #B0B0CC;
+      text-align: left;
+      line-height: 1.4;
+    }
+    .card-text em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="series-tag">精读AI · Claude Code 源码解读</div>
+    <div class="title-block">
+      <div class="title-line"><span class="highlight-yellow">51万行</span>源代码</div>
+      <div class="title-line"><span class="highlight-red">全部泄漏</span></div>
+    </div>
+    <div class="suspense-cards">
+      <div class="suspense-card purple">
+        <div class="card-icon">&#128269;</div>
+        <div class="card-text">核心竞争力<em>不在模型本身</em></div>
+      </div>
+      <div class="suspense-card red">
+        <div class="card-icon">&#9881;</div>
+        <div class="card-text">2,000 行思考 vs <em>47万行</em>控制系统</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

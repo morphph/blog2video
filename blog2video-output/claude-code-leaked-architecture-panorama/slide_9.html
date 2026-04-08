@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+    .main-title .accent { color: #3B82F6; }
+    .feature-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .feature-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .feature-card.blue { border-left: 4px solid #3B82F6; }
+    .feature-card.purple { border-left: 4px solid #8B5CF6; }
+    .feature-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .feature-body { flex: 1; }
+    .feature-name {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .feature-name .kw { color: #3B82F6; }
+    .feature-name .kw-purple { color: #8B5CF6; }
+    .feature-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .feature-desc em {
+      font-style: normal;
+      color: #F59E0B;
+      font-weight: 600;
+    }
+    .flag-badge {
+      margin-bottom: 36px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 24px;
+      padding: 10px 28px;
+      font-size: 22px;
+      color: #3B82F6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">UNRELEASED FEATURES</div>
+    <div class="main-title">隐藏的 <span class="accent">44 个 Feature Flag</span></div>
+    <div class="flag-badge">功能完整构建 &middot; 公开版本关闭</div>
+    <div class="feature-list">
+      <div class="feature-card blue">
+        <div class="feature-icon">&#9889;</div>
+        <div class="feature-body">
+          <div class="feature-name"><span class="kw">Speculation</span> 投机执行</div>
+          <div class="feature-desc">你还没按回车，系统已在<em>后台预执行</em>下一步<br>写入重定向到沙箱，接受合并，拒绝丢弃</div>
+        </div>
+      </div>
+      <div class="feature-card purple">
+        <div class="feature-icon">&#128337;</div>
+        <div class="feature-body">
+          <div class="feature-name"><span class="kw-purple">KAIROS</span> 永远在线 Daemon</div>
+          <div class="feature-desc">按固定间隔发送 tick，Agent <em>自主决定</em>行动<br>配备 Dream 引擎，空闲时整合记忆</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

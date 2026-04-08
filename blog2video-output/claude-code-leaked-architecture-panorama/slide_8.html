@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+    .main-title .accent { color: #8B5CF6; }
+    .arch-diagram {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .leader-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 20px 28px;
+      text-align: center;
+    }
+    .leader-card .card-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #8B5CF6;
+      margin-bottom: 6px;
+    }
+    .leader-card .card-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .connector {
+      text-align: center;
+      font-size: 28px;
+      color: #6B7280;
+    }
+    .teammates-row {
+      display: flex;
+      gap: 16px;
+    }
+    .teammate-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .teammate-card .emoji {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .teammate-card .name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .teammate-card .desc {
+      font-size: 18px;
+      color: #6B7280;
+    }
+    .insight-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+    }
+    .insight-item {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .insight-item.green { border-left: 4px solid #10B981; }
+    .insight-item.blue { border-left: 4px solid #3B82F6; }
+    .insight-item .insight-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .insight-item.green .insight-title { color: #10B981; }
+    .insight-item.blue .insight-title { color: #3B82F6; }
+    .insight-item .insight-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">LAYER 3 &middot; MULTI-AGENT</div>
+    <div class="main-title">Swarm：<span class="accent">一个 Leader + 多个 Teammate</span></div>
+    <div class="arch-diagram">
+      <div class="leader-card">
+        <div class="card-title">Leader</div>
+        <div class="card-desc">拆解任务 &middot; 分配 &middot; 收集结果</div>
+      </div>
+      <div class="connector">&#8595; &#8595; &#8595;</div>
+      <div class="teammates-row">
+        <div class="teammate-card">
+          <div class="emoji">&#128736;</div>
+          <div class="name">Teammate A</div>
+          <div class="desc">独立上下文</div>
+        </div>
+        <div class="teammate-card">
+          <div class="emoji">&#128736;</div>
+          <div class="name">Teammate B</div>
+          <div class="desc">独立上下文</div>
+        </div>
+        <div class="teammate-card">
+          <div class="emoji">&#128736;</div>
+          <div class="name">Teammate C</div>
+          <div class="desc">独立上下文</div>
+        </div>
+      </div>
+    </div>
+    <div class="insight-row">
+      <div class="insight-item green">
+        <div class="insight-title">上下文隔离</div>
+        <div class="insight-desc">防止信息爆炸</div>
+      </div>
+      <div class="insight-item blue">
+        <div class="insight-title">Memory Sync</div>
+        <div class="insight-desc">关键发现同步</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

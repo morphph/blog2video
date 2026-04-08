@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .subtitle-right {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 36px;
+    }
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .comp-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 16px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .comp-card-blue { border-left: 4px solid #3B82F6; }
+    .comp-card-green { border-left: 4px solid #10B981; }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .card-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .comp-card-blue .card-num { background: rgba(59, 130, 246, 0.12); color: #3B82F6; }
+    .comp-card-green .card-num { background: rgba(16, 185, 129, 0.12); color: #10B981; }
+    .card-header-title {
+      font-size: 30px;
+      font-weight: 800;
+    }
+    .comp-card-blue .card-header-title { color: #3B82F6; }
+    .comp-card-green .card-header-title { color: #10B981; }
+    .pain-point {
+      font-size: 22px;
+      color: #F59E0B;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .conditions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .condition-item {
+      font-size: 22px;
+      color: #B0B0CC;
+      padding-left: 16px;
+      position: relative;
+    }
+    .condition-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #6B7280;
+    }
+    .card-quote {
+      font-size: 20px;
+      color: #6B7280;
+      font-style: italic;
+      padding-top: 10px;
+      border-top: 1px solid rgba(139, 92, 246, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">FRAMEWORK COMPARISON</div>
+    <div class="title">五大框架横向对比</div>
+    <div class="subtitle-right">循环方式 &times; 状态管理 &times; 设计哲学</div>
+    <div class="cards-container">
+      <div class="comp-card comp-card-blue">
+        <div class="card-header">
+          <div class="card-num">1</div>
+          <div class="card-header-title">循环方式</div>
+        </div>
+        <div class="pain-point">五种实现，底层都是同一个七步循环</div>
+        <div class="conditions">
+          <div class="condition-item">Claude SDK: 笨循环配聪明模型</div>
+          <div class="condition-item">OpenAI: Runner类</div>
+          <div class="condition-item">LangGraph: 状态图</div>
+        </div>
+        <div class="card-quote">实现不同，本质相同</div>
+      </div>
+      <div class="comp-card comp-card-green">
+        <div class="card-header">
+          <div class="card-num">2</div>
+          <div class="card-header-title">状态管理</div>
+        </div>
+        <div class="pain-point">同一个问题，三种完全不同的工程实现</div>
+        <div class="conditions">
+          <div class="condition-item">Claude SDK: git commits</div>
+          <div class="condition-item">OpenAI: 四种策略可选</div>
+          <div class="condition-item">LangGraph: typed dicts + checkpoints</div>
+        </div>
+        <div class="card-quote">没有标准答案，只有取舍</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

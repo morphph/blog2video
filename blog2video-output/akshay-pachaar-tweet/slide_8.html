@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .title span { color: #EF4444; }
+    .metaphor-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .metaphor-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 16px;
+      padding: 28px 22px;
+      width: 280px;
+      text-align: center;
+    }
+    .metaphor-card .emoji {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    .metaphor-card .role {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .metaphor-card .mapping {
+      font-size: 20px;
+      color: #B0B0CC;
+    }
+    .metaphor-card.building { border-top: 4px solid #3B82F6; }
+    .metaphor-card.building .role { color: #3B82F6; }
+    .metaphor-card.worker { border-top: 4px solid #10B981; }
+    .metaphor-card.worker .role { color: #10B981; }
+    .metaphor-card.scaffold { border-top: 4px solid #8B5CF6; }
+    .metaphor-card.scaffold .role { color: #8B5CF6; }
+    .trap-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .trap-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.15);
+      border-left: 4px solid #EF4444;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .trap-card .num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(239, 68, 68, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      color: #EF4444;
+      flex-shrink: 0;
+    }
+    .trap-card .text {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .trap-card .text .dim { color: #B0B0CC; font-weight: 400; font-size: 20px; }
+    .quote-box {
+      background: rgba(139, 92, 246, 0.06);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      width: 100%;
+      text-align: left;
+    }
+    .quote-box .en {
+      font-size: 20px;
+      color: #8B5CF6;
+      font-style: italic;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">脚手架比喻</div>
+    <div class="title">模型与 Harness 的<span>隐性耦合</span></div>
+    <div class="metaphor-row">
+      <div class="metaphor-card building">
+        <div class="emoji">🏗</div>
+        <div class="role">建筑物</div>
+        <div class="mapping">= Agent</div>
+      </div>
+      <div class="metaphor-card worker">
+        <div class="emoji">👷</div>
+        <div class="role">建筑工人</div>
+        <div class="mapping">= 大模型</div>
+      </div>
+      <div class="metaphor-card scaffold">
+        <div class="emoji">🪜</div>
+        <div class="role">脚手架</div>
+        <div class="mapping">= Harness</div>
+      </div>
+    </div>
+    <div class="trap-section">
+      <div class="trap-card">
+        <div class="num">1</div>
+        <div class="text">换脚手架 &rarr; 性能下降<br><span class="dim">模型在特定 Harness 上训练</span></div>
+      </div>
+      <div class="trap-card">
+        <div class="num">2</div>
+        <div class="text">耦合是动态的<br><span class="dim">模型升级 &rarr; 旧脚手架变技术债</span></div>
+      </div>
+    </div>
+    <div class="quote-box">
+      <div class="en">"The worker was trained on THIS scaffolding, change it and performance drops."</div>
+    </div>
+  </div>
+</body>
+</html>

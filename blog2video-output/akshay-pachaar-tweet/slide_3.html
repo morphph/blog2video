@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 48px;
+    }
+    .rings {
+      position: relative;
+      width: 700px;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .ring-outer {
+      width: 700px;
+      height: 700px;
+      background: rgba(239, 68, 68, 0.06);
+      border: 3px solid rgba(239, 68, 68, 0.4);
+    }
+    .ring-middle {
+      width: 480px;
+      height: 480px;
+      background: rgba(59, 130, 246, 0.06);
+      border: 3px solid rgba(59, 130, 246, 0.4);
+    }
+    .ring-inner {
+      width: 260px;
+      height: 260px;
+      background: rgba(139, 92, 246, 0.1);
+      border: 3px solid rgba(139, 92, 246, 0.5);
+    }
+    .ring-label {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    .ring-sublabel {
+      font-size: 20px;
+      color: #B0B0CC;
+      margin-top: 4px;
+    }
+    .ring-inner .ring-label { color: #8B5CF6; }
+    .outer-label-top {
+      position: absolute;
+      top: 24px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #EF4444;
+    }
+    .outer-sublabel-top {
+      position: absolute;
+      top: 56px;
+      font-size: 18px;
+      color: #B0B0CC;
+    }
+    .middle-label-top {
+      position: absolute;
+      top: 135px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #3B82F6;
+    }
+    .middle-sublabel-top {
+      position: absolute;
+      top: 163px;
+      font-size: 17px;
+      color: #B0B0CC;
+    }
+    .legend {
+      display: flex;
+      gap: 32px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+    .legend-text {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">HARNESS ARCHITECTURE</div>
+    <div class="title">Harness 三层同心环</div>
+    <div class="rings">
+      <div class="ring ring-outer">
+        <span class="outer-label-top">Safety & Scale</span>
+        <span class="outer-sublabel-top">输入输出过滤、权限控制</span>
+      </div>
+      <div class="ring ring-middle">
+        <span class="middle-label-top">Capabilities</span>
+        <span class="middle-sublabel-top">工具调用、记忆、上下文管理</span>
+      </div>
+      <div class="ring ring-inner">
+        <div class="ring-label">Runtime</div>
+        <div class="ring-sublabel">运行时</div>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #8B5CF6;"></div>
+        <div class="legend-text">组装Prompt · 调模型 · 解析</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #3B82F6;"></div>
+        <div class="legend-text">让模型有手有脚</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #EF4444;"></div>
+        <div class="legend-text">进来一道关，出去一道关</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

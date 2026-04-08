@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #10B981;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 44px;
+      line-height: 1.3;
+    }
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.12);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .check-item.green { border-left: 4px solid #10B981; }
+    .check-item.red { border-left: 4px solid #EF4444; }
+    .check-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .icon-green { background: rgba(16, 185, 129, 0.12); color: #10B981; }
+    .icon-red { background: rgba(239, 68, 68, 0.12); color: #EF4444; }
+    .check-body {
+      flex: 1;
+    }
+    .check-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .check-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 6px;
+    }
+    .check-action {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .check-item.green .check-action { color: #10B981; }
+    .check-item.red .check-action { color: #EF4444; }
+    .big-stat {
+      margin-top: 28px;
+      background: rgba(16, 185, 129, 0.06);
+      border: 2px solid rgba(16, 185, 129, 0.25);
+      border-radius: 16px;
+      padding: 28px 36px;
+      width: 100%;
+    }
+    .big-stat .number {
+      font-size: 72px;
+      font-weight: 900;
+      color: #10B981;
+    }
+    .big-stat .label {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">KEY DECISIONS</div>
+    <div class="title">两个被低估的设计杠杆</div>
+    <div class="checklist">
+      <div class="check-item green">
+        <div class="check-icon icon-green">&check;</div>
+        <div class="check-body">
+          <div class="check-title">工具范围最小化</div>
+          <div class="check-desc">按步骤限制可用工具集</div>
+          <div class="check-action">Vercel数据：减少80%冗余调用</div>
+        </div>
+      </div>
+      <div class="check-item red">
+        <div class="check-icon icon-red">&times;</div>
+        <div class="check-body">
+          <div class="check-title">全量工具=性能灾难</div>
+          <div class="check-desc">工具太多，模型反而选不好</div>
+          <div class="check-action">80%不是微调，是量级差别</div>
+        </div>
+      </div>
+      <div class="check-item green">
+        <div class="check-icon icon-green">&check;</div>
+        <div class="check-body">
+          <div class="check-title">验证方式二选一</div>
+          <div class="check-desc">跑测试=标准答案 vs LLM判断=主观打分</div>
+          <div class="check-action">成本和可靠性完全不同</div>
+        </div>
+      </div>
+    </div>
+    <div class="big-stat">
+      <div class="number">80%</div>
+      <div class="label">冗余调用减少 &mdash; 最低成本的性能优化</div>
+    </div>
+  </div>
+</body>
+</html>

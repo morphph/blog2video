@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .analogy-container {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .analogy-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 36px 32px;
+      width: 360px;
+    }
+    .analogy-box .emoji {
+      font-size: 56px;
+      margin-bottom: 16px;
+    }
+    .analogy-box .title {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .analogy-box .desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .analogy-box.cpu { border-left: 4px solid #3B82F6; }
+    .analogy-box.os { border-left: 4px solid #8B5CF6; }
+    .arrow {
+      font-size: 48px;
+      color: #F59E0B;
+    }
+    .mapping-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .mapping-row {
+      display: flex;
+      align-items: center;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 18px 24px;
+      border: 1px solid rgba(139, 92, 246, 0.12);
+    }
+    .mapping-left {
+      flex: 1;
+      text-align: right;
+      padding-right: 20px;
+      font-size: 26px;
+      color: #3B82F6;
+      font-weight: 700;
+    }
+    .mapping-arrow {
+      color: #F59E0B;
+      font-size: 22px;
+      margin: 0 8px;
+    }
+    .mapping-right {
+      flex: 1;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 26px;
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+    .insight {
+      margin-top: 40px;
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 28px;
+      font-size: 26px;
+      color: #F59E0B;
+      line-height: 1.5;
+      text-align: left;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">核心类比</div>
+    <div class="analogy-container">
+      <div class="analogy-box cpu">
+        <div class="emoji">🧠</div>
+        <div class="title" style="color: #3B82F6;">LLM</div>
+        <div class="desc">裸 CPU<br>算力强，无状态</div>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="analogy-box os">
+        <div class="emoji">💻</div>
+        <div class="title" style="color: #8B5CF6;">Harness</div>
+        <div class="desc">操作系统<br>调度一切</div>
+      </div>
+    </div>
+    <div class="mapping-grid">
+      <div class="mapping-row">
+        <div class="mapping-left">RAM</div>
+        <div class="mapping-arrow">&asymp;</div>
+        <div class="mapping-right">Context Window</div>
+      </div>
+      <div class="mapping-row">
+        <div class="mapping-left">硬盘</div>
+        <div class="mapping-arrow">&asymp;</div>
+        <div class="mapping-right">Vector DB</div>
+      </div>
+      <div class="mapping-row">
+        <div class="mapping-left">设备驱动</div>
+        <div class="mapping-arrow">&asymp;</div>
+        <div class="mapping-right">Tool Integration</div>
+      </div>
+    </div>
+    <div class="insight">模型一样强，操作系统不行，应用就不行</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,492 @@
+[
+  {
+    "text": "今天我们把全球最主流的 Agent 公司——Anthropic、OpenAI、LangChain 等的 Agent 框架拆开，看看它们的 Harness 到底是怎么造的。拆完之后我发现一件意外的事：这几家底层循环几乎一模一样。",
+    "pronounce_text": "今天我们把全球最主流的Agent公司Anthropic、OpenAI、LangChain等的Agent框架拆开，看看它们的Harness到底是怎么造的。拆完之后我发现一件意外的事：这几家底层循环几乎一模一样。",
+    "time_begin": 0,
+    "time_end": 16444.21768707483,
+    "text_begin": 0,
+    "text_end": 113,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 104
+  },
+  {
+    "text": "真正拉开差距的不是模型本身，而是模型周围那套系统该怎么设计。",
+    "pronounce_text": "真正拉开差距的不是模型本身，而是模型周围那套系统该怎么设计。",
+    "time_begin": 16596,
+    "time_end": 21650.82993197279,
+    "text_begin": 113,
+    "text_end": 143,
+    "pronounce_text_begin": 104,
+    "pronounce_text_end": 134
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。",
+    "time_begin": 21816,
+    "time_end": 30667.292517006805,
+    "text_begin": 143,
+    "text_end": 191,
+    "pronounce_text_begin": 134,
+    "pronounce_text_end": 179
+  },
+  {
+    "text": "今天我们精读的是 Akshay 的一篇长推文：《The Anatomy of an Agent Harness》。他把五家主流 Agent 框架的架构拆开，做了一次横向解剖。",
+    "pronounce_text": "今天我们精读的是Akshay的一篇长推文：《The Anatomy of an Agent Harness》。他把五家主流Agent框架的架构拆开，做了一次横向解剖。",
+    "time_begin": 30816,
+    "time_end": 41164.97959183673,
+    "text_begin": 191,
+    "text_end": 278,
+    "pronounce_text_begin": 179,
+    "pronounce_text_end": 262
+  },
+  {
+    "text": "先说一个核心类比。大模型本身是无状态的。每次调用之间，它什么都不记得。",
+    "pronounce_text": "先说一个核心类比。大模型本身是无状态的。每次调用之间，它什么都不记得。",
+    "time_begin": 41328,
+    "time_end": 48182.37641723356,
+    "text_begin": 278,
+    "text_end": 313,
+    "pronounce_text_begin": 262,
+    "pronounce_text_end": 297
+  },
+  {
+    "text": "你可以把它理解成一块裸 CPU——算力很强，但没有操作系统，没有文件系统，没有驱动程序。你没法直接用它干活。",
+    "pronounce_text": "你可以把它理解成一块裸CPU算力很强，但没有操作系统，没有文件系统，没有驱动程序。你没法直接用它干活。",
+    "time_begin": 48382.37641723356,
+    "time_end": 58777.79591836735,
+    "text_begin": 313,
+    "text_end": 367,
+    "pronounce_text_begin": 297,
+    "pronounce_text_end": 348
+  },
+  {
+    "text": "Harness 就是这个操作系统。RAM 对应 Context Window，就是模型当前能\"看到\"的信息容量。硬盘对应 Vector DB，也就是向量数据库这类持久化存储。设备驱动对应 Tool Integration，就是工具集成。",
+    "pronounce_text": "Harness就是这个操作系统。RAM对应Context Window，就是模型当前能\"看到\"的信息容量。硬盘对应Vector DB，也就是向量数据库这类持久化存储。设备驱动对应Tool Integration，就是工具集成。",
+    "time_begin": 58932,
+    "time_end": 74865.37868480726,
+    "text_begin": 367,
+    "text_end": 485,
+    "pronounce_text_begin": 348,
+    "pronounce_text_end": 461
+  },
+  {
+    "text": "而用户看到的 Agent，是跑在这个操作系统上面的应用程序。",
+    "pronounce_text": "而用户看到的Agent，是跑在这个操作系统上面的应用程序。",
+    "time_begin": 75024,
+    "time_end": 79057.15192743765,
+    "text_begin": 485,
+    "text_end": 515,
+    "pronounce_text_begin": 461,
+    "pronounce_text_end": 490
+  },
+  {
+    "text": "这个类比的价值在于：它把\"Agent 为什么有时候很蠢\"这个问题，从模型能力转移到了系统架构。模型可能一样强，但如果操作系统不行，跑出来的应用就是不行。",
+    "pronounce_text": "这个类比的价值在于：它把\"Agent为什么有时候很蠢\"这个问题，从模型能力转移到了系统架构。模型可能一样强，但如果操作系统不行，跑出来的应用就是不行。",
+    "time_begin": 79200,
+    "time_end": 92149.61451247166,
+    "text_begin": 515,
+    "text_end": 591,
+    "pronounce_text_begin": 490,
+    "pronounce_text_end": 565
+  },
+  {
+    "text": "Harness 不是一个笼统的 wrapper，它有三层同心环结构。",
+    "pronounce_text": "Harness不是一个笼统的wrapper，它有三层同心环结构。",
+    "time_begin": 92304,
+    "time_end": 96673.84126984127,
+    "text_begin": 591,
+    "text_end": 625,
+    "pronounce_text_begin": 565,
+    "pronounce_text_end": 597
+  },
+  {
+    "text": "最里面那层叫 Runtime，运行时。干的是最脏最累的活：把 Prompt 拼好、调模型、把模型吐出来的东西解析成结构化数据、出错了帮你兜住。没有这层，模型连启动都启动不了。",
+    "pronounce_text": "最里面那层叫Runtime，运行时。干的是最脏最累的活：把Prompt拼好、调模型、把模型吐出来的东西解析成结构化数据、出错了帮你兜住。没有这层，模型连启动都启动不了。",
+    "time_begin": 96840,
+    "time_end": 113806.66666666667,
+    "text_begin": 625,
+    "text_end": 712,
+    "pronounce_text_begin": 597,
+    "pronounce_text_end": 681
+  },
+  {
+    "text": "往外一层叫 Capabilities，能力层。工具调用在这层，记忆系统在这层，上下文管理也在这层。你可以理解为：Runtime 让模型能跑，Capabilities 让模型有手有脚。",
+    "pronounce_text": "往外一层叫Capabilities，能力层。工具调用在这层，记忆系统在这层，上下文管理也在这层。你可以理解为：Runtime让模型能跑，Capabilities让模型有手有脚。",
+    "time_begin": 113976,
+    "time_end": 129363.7097505669,
+    "text_begin": 712,
+    "text_end": 803,
+    "pronounce_text_begin": 681,
+    "pronounce_text_end": 769
+  },
+  {
+    "text": "最外面一层叫 Safety and Scale，安全与扩展层。输入输出过滤、验证循环、子 Agent 编排、工具权限控制。这是防护栏，也是天花板。",
+    "pronounce_text": "最外面一层叫Safety and Scale，安全与扩展层。输入输出过滤、验证循环、子Agent编排、工具权限控制。这是防护栏，也是天花板。",
+    "time_begin": 129528,
+    "time_end": 142013.21541950112,
+    "text_begin": 803,
+    "text_end": 876,
+    "pronounce_text_begin": 769,
+    "pronounce_text_end": 839
+  },
+  {
+    "text": "用户请求从最外层进入，经过安全检查才能到达模型。模型的工具调用从内层往外走，同样要过安全检查。进来一道关，出去一道关。每一层职责分明。",
+    "pronounce_text": "用户请求从最外层进入，经过安全检查才能到达模型。模型的工具调用从内层往外走，同样要过安全检查。进来一道关，出去一道关。每一层职责分明。",
+    "time_begin": 142164,
+    "time_end": 155670.89342403627,
+    "text_begin": 876,
+    "text_end": 943,
+    "pronounce_text_begin": 839,
+    "pronounce_text_end": 906
+  },
+  {
+    "text": "所有 Agent 的核心都是一个循环，拆开来看是七步。Prompt 组装，模型推理，输出分类，工具执行，结果打包，上下文更新，然后回到第一步。",
+    "pronounce_text": "所有Agent的核心都是一个循环，拆开来看是七步。Prompt组装，模型推理，输出分类，工具执行，结果打包，上下文更新，然后回到第一步。",
+    "time_begin": 155808,
+    "time_end": 170208.86167800453,
+    "text_begin": 943,
+    "text_end": 1014,
+    "pronounce_text_begin": 906,
+    "pronounce_text_end": 974
+  },
+  {
+    "text": "关键在第三步：输出分类。模型的回答要么是最终答案，要么是工具调用请求。如果是最终答案，循环结束。如果是工具调用，就继续往下走。",
+    "pronounce_text": "关键在第三步：输出分类。模型的回答要么是最终答案，要么是工具调用请求。如果是最终答案，循环结束。如果是工具调用，就继续往下走。",
+    "time_begin": 170352,
+    "time_end": 183731.18367346938,
+    "text_begin": 1014,
+    "text_end": 1077,
+    "pronounce_text_begin": 974,
+    "pronounce_text_end": 1037
+  },
+  {
+    "text": "这个分支决定了整个循环是继续还是停止。",
+    "pronounce_text": "这个分支决定了整个循环是继续还是停止。",
+    "time_begin": 183931.18367346938,
+    "time_end": 188092.04535147393,
+    "text_begin": 1077,
+    "text_end": 1096,
+    "pronounce_text_begin": 1037,
+    "pronounce_text_end": 1056
+  },
+  {
+    "text": "这里有一个容易被忽略的设计细节。第五步\"结果打包\"的时候，工具执行的错误信息也会被回传给模型。不是悄悄吞掉，不是只返回成功结果，而是把报错原样喂回去。为什么？",
+    "pronounce_text": "这里有一个容易被忽略的设计细节。第五步\"结果打包\"的时候，工具执行的错误信息也会被回传给模型。不是悄悄吞掉，不是只返回成功结果，而是把报错原样喂回去。为什么？",
+    "time_begin": 188244,
+    "time_end": 203109.26077097506,
+    "text_begin": 1096,
+    "text_end": 1175,
+    "pronounce_text_begin": 1056,
+    "pronounce_text_end": 1135
+  },
+  {
+    "text": "因为模型的纠错能力，恰恰来自让它看到失败。吞掉错误等于剥夺了模型自我修正的机会。",
+    "pronounce_text": "因为模型的纠错能力，恰恰来自让它看到失败。吞掉错误等于剥夺了模型自我修正的机会。",
+    "time_begin": 203256,
+    "time_end": 211085.61451247166,
+    "text_begin": 1175,
+    "text_end": 1215,
+    "pronounce_text_begin": 1135,
+    "pronounce_text_end": 1175
+  },
+  {
+    "text": "退出条件有四个：达到最大轮次、Token 预算用完、安全护栏触发、用户中断。没有它们，Agent 可能陷入无限循环，一直调用工具，永远不停。",
+    "pronounce_text": "退出条件有四个：达到最大轮次、Token预算用完、安全护栏触发、用户中断。没有它们，Agent可能陷入无限循环，一直调用工具，永远不停。",
+    "time_begin": 211248,
+    "time_end": 223814.48526077098,
+    "text_begin": 1215,
+    "text_end": 1285,
+    "pronounce_text_begin": 1175,
+    "pronounce_text_end": 1243
+  },
+  {
+    "text": "这个循环，mechanically simple, complex in every step。一张图就能画完，但每一步背后都是大量的工程细节。",
+    "pronounce_text": "这个循环，mechanically simple,complex in every step。一张图就能画完，但每一步背后都是大量的工程细节。",
+    "time_begin": 223956,
+    "time_end": 231913.32426303855,
+    "text_begin": 1285,
+    "text_end": 1357,
+    "pronounce_text_begin": 1243,
+    "pronounce_text_end": 1314
+  },
+  {
+    "text": "这是整篇文章最有价值的部分。把五个主流框架放在一张表里对比，维度是循环方式、状态管理、多 Agent 策略和设计哲学。",
+    "pronounce_text": "这是整篇文章最有价值的部分。把五个主流框架放在一张表里对比，维度是循环方式、状态管理、多Agent策略和设计哲学。",
+    "time_begin": 232056,
+    "time_end": 242741.66893424036,
+    "text_begin": 1357,
+    "text_end": 1416,
+    "pronounce_text_begin": 1314,
+    "pronounce_text_end": 1371
+  },
+  {
+    "text": "先说循环方式。Claude Agent SDK 用的是\"笨循环配聪明模型\"。OpenAI 用 Runner 类。LangGraph 用状态图。CrewAI 用顺序或层级结构。AutoGen 用对话驱动。",
+    "pronounce_text": "先说循环方式。Claude Agent SDK用的是\"笨循环配聪明模型\"。OpenAI用Runner类。LangGraph用状态图。CrewAI用顺序或层级结构。AutoGen用对话驱动。",
+    "time_begin": 242892,
+    "time_end": 258279.7097505669,
+    "text_begin": 1416,
+    "text_end": 1517,
+    "pronounce_text_begin": 1371,
+    "pronounce_text_end": 1465
+  },
+  {
+    "text": "五种实现，但底层都是那个七步循环。",
+    "pronounce_text": "五种实现，但底层都是那个七步循环。",
+    "time_begin": 258479.7097505669,
+    "time_end": 261653.72335600908,
+    "text_begin": 1517,
+    "text_end": 1534,
+    "pronounce_text_begin": 1465,
+    "pronounce_text_end": 1482
+  },
+  {
+    "text": "状态管理的分歧更有意思。Claude SDK 用 git commits 来做状态管理。OpenAI 提供四种策略让你选。LangGraph 用 typed dicts 加 checkpoints。同一个问题，三种完全不同的工程实现。",
+    "pronounce_text": "状态管理的分歧更有意思。Claude SDK用git commits来做状态管理。OpenAI提供四种策略让你选。LangGraph用typed dicts加checkpoints。同一个问题，三种完全不同的工程实现。",
+    "time_begin": 261792,
+    "time_end": 277562.8390022676,
+    "text_begin": 1534,
+    "text_end": 1651,
+    "pronounce_text_begin": 1482,
+    "pronounce_text_end": 1591
+  },
+  {
+    "text": "但最核心的分歧是哲学层面的。Anthropic 和 OpenAI 押注 thin harness，也就是薄壳策略：尽量少写控制逻辑，信任模型自己做决策。",
+    "pronounce_text": "但最核心的分歧是哲学层面的。Anthropic和OpenAI押注thin harness，也就是薄壳策略：尽量少写控制逻辑，信任模型自己做决策。",
+    "time_begin": 277704,
+    "time_end": 289028.21768707485,
+    "text_begin": 1651,
+    "text_end": 1727,
+    "pronounce_text_begin": 1591,
+    "pronounce_text_end": 1663
+  },
+  {
+    "text": "LangGraph 和 CrewAI 押注 thick harness，也就是厚壳策略：用代码显式编排路由和流程。",
+    "pronounce_text": "LangGraph和CrewAI押注thick harness，也就是厚壳策略：用代码显式编排路由和流程。",
+    "time_begin": 289228.21768707485,
+    "time_end": 296674.7029478458,
+    "text_begin": 1727,
+    "text_end": 1784,
+    "pronounce_text_begin": 1663,
+    "pronounce_text_end": 1716
+  },
+  {
+    "text": "这不是技术选择，是信仰赌注。你越相信模型会持续变强，Harness 就应该越薄。你越担心模型犯错，Harness 就应该越厚。",
+    "pronounce_text": "这不是技术选择，是信仰赌注。你越相信模型会持续变强，Harness就应该越薄。你越担心模型犯错，Harness就应该越厚。",
+    "time_begin": 296820,
+    "time_end": 306611.70068027213,
+    "text_begin": 1784,
+    "text_end": 1847,
+    "pronounce_text_begin": 1716,
+    "pronounce_text_end": 1777
+  },
+  {
+    "text": "这里有一个很精准的比喻。Agent 是用户看到的建筑物。大模型是建筑工人。Harness 是脚手架。",
+    "pronounce_text": "这里有一个很精准的比喻。Agent是用户看到的建筑物。大模型是建筑工人。Harness是脚手架。",
+    "time_begin": 306756,
+    "time_end": 315572.462585034,
+    "text_begin": 1847,
+    "text_end": 1897,
+    "pronounce_text_begin": 1777,
+    "pronounce_text_end": 1825
+  },
+  {
+    "text": "脚手架不盖楼。但没有它，工人够不到高层。关键是：脚手架是临时的。楼盖完了，脚手架要拆掉。模型越强，需要的脚手架越少。",
+    "pronounce_text": "脚手架不盖楼。但没有它，工人够不到高层。关键是：脚手架是临时的。楼盖完了，脚手架要拆掉。模型越强，需要的脚手架越少。",
+    "time_begin": 315720,
+    "time_end": 328460.6349206349,
+    "text_begin": 1897,
+    "text_end": 1955,
+    "pronounce_text_begin": 1825,
+    "pronounce_text_end": 1883
+  },
+  {
+    "text": "但这里有一个不显而易见的陷阱。工人是在这套脚手架上训练出来的。你换一套脚手架，工人的表现会下降。原话是：the worker was trained on THIS scaffolding, change it and performance drops。",
+    "pronounce_text": "但这里有一个不显而易见的陷阱。工人是在这套脚手架上训练出来的。你换一套脚手架，工人的表现会下降。原话是：the worker was trained on THIS scaffolding, change it and performance drops。",
+    "time_begin": 328608,
+    "time_end": 343647.410430839,
+    "text_begin": 1955,
+    "text_end": 2083,
+    "pronounce_text_begin": 1883,
+    "pronounce_text_end": 2011
+  },
+  {
+    "text": "这意味着模型和 Harness 之间存在隐性耦合。你以为模型能力是通用的，可以随便换框架。实际上，换框架可能直接导致性能回退。",
+    "pronounce_text": "这意味着模型和Harness之间存在隐性偶合。你以为模型能力是通用的，可以随便换框架。实际上，换框架可能直接导致性能回退。",
+    "time_begin": 343800,
+    "time_end": 355344.8072562358,
+    "text_begin": 2083,
+    "text_end": 2146,
+    "pronounce_text_begin": 2011,
+    "pronounce_text_end": 2072
+  },
+  {
+    "text": "而且这个耦合是动态的。每次模型升级，旧的脚手架可能变成技术债。今天正确的 thick harness，在下一代模型发布后可能需要拆掉重建。这不是一次性的架构决策，而是持续的维护工作。",
+    "pronounce_text": "而且这个偶合是动态的。每次模型升级，旧的脚手架可能变成技术债。今天正确的thick harness，在下一代模型发布后可能需要拆掉重建。这不是一次性的架构决策，而是持续的维护工作。",
+    "time_begin": 355500,
+    "time_end": 370365.26077097503,
+    "text_begin": 2146,
+    "text_end": 2237,
+    "pronounce_text_begin": 2072,
+    "pronounce_text_end": 2162
+  },
+  {
+    "text": "原文总结了七个关键设计决策。我挑三个张力最大的说。",
+    "pronounce_text": "原文总结了七个关键设计决策。我挑三个张力最大的说。",
+    "time_begin": 370512,
+    "time_end": 374591.5918367347,
+    "text_begin": 2237,
+    "text_end": 2262,
+    "pronounce_text_begin": 2162,
+    "pronounce_text_end": 2187
+  },
+  {
+    "text": "第一个，推理策略选 ReAct 还是 Plan-and-Execute。ReAct 灵活，每一步都能临时调整方向，但每一步都要推理，Token 开销大。",
+    "pronounce_text": "第一个，推理策略选ReAct还是Plan-and-Execute。ReAct灵活，每一步都能临时调整方向，但每一步都要推理，Token开销大。",
+    "time_begin": 374760,
+    "time_end": 385573.3786848073,
+    "text_begin": 2262,
+    "text_end": 2338,
+    "pronounce_text_begin": 2187,
+    "pronounce_text_end": 2258
+  },
+  {
+    "text": "Plan-and-Execute 先制定计划再执行，数据显示快三点六倍，但碰到意外情况适应性差。这不是\"哪个更好\"的问题，是\"你的任务有多确定\"的问题。",
+    "pronounce_text": "Plan-and-Execute先制定计划再执行，数据显示快三点六倍，但碰到意外情况适应性差。这不是\"哪个更好\"的问题，是\"你的任务有多确定\"的问题。",
+    "time_begin": 385740,
+    "time_end": 399119.1836734694,
+    "text_begin": 2338,
+    "text_end": 2414,
+    "pronounce_text_begin": 2258,
+    "pronounce_text_end": 2333
+  },
+  {
+    "text": "第二个，工具范围控制。这个被严重低估了。直觉上，给模型越多工具越灵活。但现实是反的。按步骤最小化工具集，Vercel 的数据是减少了百分之八十的冗余工具调用。",
+    "pronounce_text": "第二个，工具范围控制。这个被严重低估了。直觉上，给模型越多工具越灵活。但现实是反的。按步骤最小化工具集，Vercel的数据是减少了百分之八十的冗余工具调用。",
+    "time_begin": 399276,
+    "time_end": 414443.1201814059,
+    "text_begin": 2414,
+    "text_end": 2493,
+    "pronounce_text_begin": 2333,
+    "pronounce_text_end": 2411
+  },
+  {
+    "text": "百分之八十，这不是微调，这是量级差别。工具太多，模型反而选不好。",
+    "pronounce_text": "百分之八十，这不是微调，这是量级差别。工具太多，模型反而选不好。",
+    "time_begin": 414612,
+    "time_end": 421501.20634920633,
+    "text_begin": 2493,
+    "text_end": 2525,
+    "pronounce_text_begin": 2411,
+    "pronounce_text_end": 2443
+  },
+  {
+    "text": "第三个，验证方式。Computational verification，比如跑测试、跑 linter，结果是确定的，对就是对，错就是错。Inferential verification，用另一个 LLM 来判断，灵活但不确定。",
+    "pronounce_text": "第三个，验证方式。Computational verification，比如跑测试、跑linter，结果是确定的，对就是对，错就是错。Inferential verification，用另一个LLM来判断，灵活但不确定。",
+    "time_begin": 421668,
+    "time_end": 436962.8299319728,
+    "text_begin": 2525,
+    "text_end": 2638,
+    "pronounce_text_begin": 2443,
+    "pronounce_text_end": 2553
+  },
+  {
+    "text": "一个是考试有标准答案，一个是开卷由老师主观打分。两者成本和可靠性完全不同。",
+    "pronounce_text": "一个是考试有标准答案，一个是开卷由老师主观打分。两者成本和可靠性完全不同。",
+    "time_begin": 437112,
+    "time_end": 443060.79818594106,
+    "text_begin": 2638,
+    "text_end": 2675,
+    "pronounce_text_begin": 2553,
+    "pronounce_text_end": 2590
+  },
+  {
+    "text": "七个维度，每个都没有标准答案。但这三个的取舍方向，可能对你的系统影响最大。",
+    "pronounce_text": "七个维度，每个都没有标准答案。但这三个的取舍方向，可能对你的系统影响最大。",
+    "time_begin": 443232,
+    "time_end": 450295.3560090703,
+    "text_begin": 2675,
+    "text_end": 2712,
+    "pronounce_text_begin": 2590,
+    "pronounce_text_end": 2627
+  },
+  {
+    "text": "回过头来看，这篇文章最大的贡献不是告诉你哪个框架更好。它做的事情是把\"选框架\"这个问题重新定义了。你不是在选一个工具，你是在做七个架构赌注。",
+    "pronounce_text": "回过头来看，这篇文章最大的贡献不是告诉你哪个框架更好。它做的事情是把\"选框架\"这个问题重新定义了。你不是在选一个工具，你是在做七个架构赌注。",
+    "time_begin": 450432,
+    "time_end": 463428.0544217687,
+    "text_begin": 2712,
+    "text_end": 2782,
+    "pronounce_text_begin": 2627,
+    "pronounce_text_end": 2697
+  },
+  {
+    "text": "每个赌注背后都是对模型能力的判断、对任务特性的理解、对成本的容忍度。",
+    "pronounce_text": "每个赌注背后都是对模型能力的判断、对任务特性的理解、对成本的容忍度。",
+    "time_begin": 463572,
+    "time_end": 470205.78684807254,
+    "text_begin": 2782,
+    "text_end": 2816,
+    "pronounce_text_begin": 2697,
+    "pronounce_text_end": 2731
+  },
+  {
+    "text": "而且这些赌注有保质期。今天押对的厚壳策略，半年后可能因为模型升级变成技术债。今天信任模型的薄壳策略，碰到下一个能力瓶颈可能需要加回控制逻辑。",
+    "pronounce_text": "而且这些赌注有保质期。今天押对的厚壳策略，半年后可能因为模型升级变成技术债。今天信任模型的薄壳策略，碰到下一个能力瓶颈可能需要加回控制逻辑。",
+    "time_begin": 470376,
+    "time_end": 483708.7437641723,
+    "text_begin": 2816,
+    "text_end": 2886,
+    "pronounce_text_begin": 2731,
+    "pronounce_text_end": 2801
+  },
+  {
+    "text": "Harness 架构不是一锤子买卖，它需要跟着模型一起迭代。",
+    "pronounce_text": "Harness架构不是一锤子买卖，它需要跟着模型一起迭代。",
+    "time_begin": 483876,
+    "time_end": 487653.73242630385,
+    "text_begin": 2886,
+    "text_end": 2916,
+    "pronounce_text_begin": 2801,
+    "pronounce_text_end": 2830
+  },
+  {
+    "text": "大模型是建筑工人，Harness 才是脚手架。你以为在选模型，其实在选操作系统。而这个操作系统，还有保质期。",
+    "pronounce_text": "大模型是建筑工人，Harness才是脚手架。你以为在选模型，其实在选操作系统。而这个操作系统，还有保质期。",
+    "time_begin": 487800,
+    "time_end": 496906.7120181406,
+    "text_begin": 2916,
+    "text_end": 2970,
+    "pronounce_text_begin": 2830,
+    "pronounce_text_end": 2883
+  },
+  {
+    "text": "如果你正在搭建 Agent 系统，建议先回答一个问题：你对当前模型的信任度是多少？信任度高，从 thin harness 开始，少写控制逻辑。容错率低，用 thick harness 兜底。",
+    "pronounce_text": "如果你正在搭建Agent系统，建议先回答一个问题：你对当前模型的信任度是多少？信任度高，从thin harness开始，少写控制逻辑。容错率低，用thick harness兜底。",
+    "time_begin": 497052,
+    "time_end": 510733.04308390024,
+    "text_begin": 2970,
+    "text_end": 3065,
+    "pronounce_text_begin": 2883,
+    "pronounce_text_end": 2972
+  },
+  {
+    "text": "但不管选哪个，记住工具范围控制这个杠杆。百分之八十的冗余消除，是最低成本的性能优化。",
+    "pronounce_text": "但不管选哪个，记住工具范围控制这个杠杆。百分之八十的冗余消除，是最低成本的性能优化。",
+    "time_begin": 510876,
+    "time_end": 518705.61451247166,
+    "text_begin": 3065,
+    "text_end": 3107,
+    "pronounce_text_begin": 2972,
+    "pronounce_text_end": 3014
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 518868,
+    "time_end": 523969.2698412698,
+    "text_begin": 3107,
+    "text_end": 3134,
+    "pronounce_text_begin": 3014,
+    "pronounce_text_end": 3040
+  }
+]

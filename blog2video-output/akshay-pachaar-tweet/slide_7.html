@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .quote-mark {
+      font-size: 140px;
+      color: #8B5CF6;
+      opacity: 0.25;
+      line-height: 0.7;
+      margin-bottom: 36px;
+    }
+    .quote-text {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.6;
+      max-width: 860px;
+      margin-bottom: 40px;
+    }
+    .quote-text .hl-purple {
+      color: #8B5CF6;
+      font-weight: 900;
+    }
+    .quote-text .hl-red {
+      color: #EF4444;
+      font-weight: 900;
+    }
+    .attribution {
+      font-size: 24px;
+      color: #6B7280;
+      margin-bottom: 48px;
+    }
+    .insight-card {
+      background: rgba(245, 158, 11, 0.06);
+      border: 2px solid rgba(245, 158, 11, 0.2);
+      border-radius: 16px;
+      padding: 28px 36px;
+      width: 100%;
+    }
+    .insight-card .text {
+      font-size: 28px;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="quote-mark">&ldquo;</div>
+    <div class="quote-text">你越相信模型会持续变强，<br>Harness就应该<span class="hl-purple">越薄</span>。<br>你越担心模型犯错，<br>Harness就应该<span class="hl-red">越厚</span>。</div>
+    <div class="attribution">&mdash; Thin vs Thick Harness 哲学分歧</div>
+    <div class="insight-card">
+      <div class="text">这不是技术选择，是信仰赌注</div>
+    </div>
+  </div>
+</body>
+</html>

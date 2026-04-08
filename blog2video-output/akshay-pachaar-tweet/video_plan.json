@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Anatomy of an Agent Harness",
+    "title_zh": "Agent 的真正大脑不是大模型，是你看不见的那层",
+    "word_count": 2989,
+    "slug": "akshay-pachaar-tweet"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "The narration argues a single coherent thesis (harness-as-OS) with tightly linked sections that build on each other; splitting would break the logical chain from analogy to framework comparison to design decisions.",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Agent的真正大脑是你看不见的那层"
+      }
+    ]
+  }
+}

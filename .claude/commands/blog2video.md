@@ -11,6 +11,7 @@
 - **博客 URL** — `https://example.com/blog-post`
 - **PDF** — 远程 URL（`https://.../*.pdf`）或本地路径（`./paper.pdf`）
 - **YouTube 视频** — `https://www.youtube.com/watch?v=...` 或 `https://youtu.be/...`
+- **Twitter/X** — `https://x.com/...` 或 `https://twitter.com/...`
 - **本地文件** — 任意文本文件路径
 
 ## 执行步骤
@@ -41,7 +42,15 @@
    - 将博客原文保存为 `./blog2video-output/<slug>/source_blog.md`
    - **图片下载**：扫描远程图片引用，下载到 `images/` 目录，替换 URL
 
-   **d) 本地文件**（其他情况）：
+   **d) Twitter/X**（参数包含 `x.com` 或 `twitter.com`）：
+   - 从 URL 提取 slug（作者名-推文ID）
+   - 创建输出目录：`./blog2video-output/<slug>/`
+   - 执行 Twitter/X fallback chain 抓取内容（详见 fetch-source.md section c）：
+     Playwright MCP → WebFetch → Puppeteer → 图片视觉转录
+   - **Step 0.5 — Twitter Cleaner subagent**：
+     读取 `.claude/skills/blog2video/prompts/twitter-cleaner.md` 获取 prompt，调用 subagent 清洗为 `source_blog.md`
+
+   **e) 本地文件**（其他情况）：
    - 读取文件内容，从文件名提取 slug
    - 创建输出目录，保存为 `source_blog.md`
 

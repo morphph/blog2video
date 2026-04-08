@@ -43,16 +43,54 @@
    - 输出保存为 `./blog2video-output/<slug>/source_blog.md`
    - 如果没有 pdf-cleaner prompt，直接将 `source_raw.md` 复制为 `source_blog.md`
 
-### c) Twitter/X 长文章（参数包含 `x.com` 或 `twitter.com`）
+### c) Twitter/X（参数包含 `x.com` 或 `twitter.com`）
 
-1. 从 URL 提取 slug（使用文章 ID 或作者名+ID）
+1. 从 URL 提取 slug（作者名-推文ID，如 `akshay-pachaar-2041146899319971922`）
 2. 创建输出目录：`./blog2video-output/<slug>/`
-3. 使用 WebFetch 工具获取页面内容，提取文章正文
-4. 如果页面中有图片，尝试下载到 `./blog2video-output/<slug>/images/` 目录，在 Markdown 中以 `![caption](images/image_N.jpg)` 引用
-5. 保存原始提取内容为 `./blog2video-output/<slug>/source_raw.md`
+
+3. **文本提取 — Fallback Chain**（按优先级顺序尝试，成功则停止）：
+
+   **方法 A：Playwright MCP（最高精度）**
+   如果 Playwright MCP 工具可用（`browser_navigate` 等工具存在）：
+   - 调用 `browser_navigate` 打开 Twitter/X URL
+   - 等待页面加载完成后，调用 `browser_snapshot` 获取页面无障碍树
+   - 从无障碍树中提取推文正文、作者信息、日期
+   - 如果检测到登录页面（内容包含 "Log in" / "Sign up" 且无推文正文），提示用户在弹出的浏览器窗口中登录 X，登录后重试
+   - **成功判定**：提取到 >100 字符的实质性内容（排除 Twitter UI 样板文字如 "Log in", "Sign up", "Explore", "Repost", "Like"）
+   - 成功后保存为 `source_raw.md`，记录 `method_used: "playwright_mcp"`
+
+   **方法 B：WebFetch（内置工具，无需配置）**
+   - 使用 WebFetch 工具获取页面内容，prompt 要求提取推文全文
+   - **成功判定**：返回内容 >100 字符，且非纯登录/注册页面样板
+   - 成功后保存为 `source_raw.md`，记录 `method_used: "webfetch"`
+
+   **方法 C：Puppeteer 脚本（图片可靠，文字可能失败）**
+   - 运行：`node blog2video-remotion/scripts/fetch-twitter.mjs "<url>" "./blog2video-output/<slug>/"`
+   - 读取 `twitter_metadata.json` 检查 `paragraph_count`
+   - **成功判定**：`paragraph_count >= 2`
+   - 成功后记录 `method_used: "puppeteer"`
+   - **注意**：即使文字提取失败，此步骤通常能成功下载图片到 `images/` 目录
+
+   **方法 D：图片视觉转录（兜底方案）**
+   如果上述方法均未提取到文字，但 `images/` 目录存在图片文件：
+   - 对每张图片使用 Read 工具（多模态视觉）读取内容
+   - 详细转录图片中可见的所有文字和图表内容
+   - 将所有图片转录内容组合成 `source_raw.md`
+   - 记录 `method_used: "image_transcription"`
+
+   **方法 E：中止并提供指引**
+   如果所有方法均失败且无图片可用：
+   - 报错：「无法从此 Twitter/X URL 提取内容」
+   - 建议：在浏览器中打开链接，手动复制文本粘贴到 `source_raw.md`
+
+4. **确保图片已下载**：如果文本通过方法 A/B 提取成功但 `images/` 目录为空，额外运行 Puppeteer 脚本仅下载图片：`node blog2video-remotion/scripts/fetch-twitter.mjs "<url>" "./blog2video-output/<slug>/"`
+
+5. 保存/更新 `twitter_metadata.json`（包含 `url`, `author`, `handle`, `method_used`, `paragraph_count`, `image_count`）
+
 6. **Step 0.5 — Twitter Cleaner subagent**：
    - 读取 `.claude/skills/blog2video/prompts/twitter-cleaner.md` 获取 prompt
    - 调用 subagent 将原始文本清洗为干净 Markdown
+   - 如果 `method_used` 为 `image_transcription`，在 subagent 指令中注明：输入来自图片视觉转录，需要重构自然行文流畅度
    - 输出保存为 `./blog2video-output/<slug>/source_blog.md`
 
 ### d) 博客 URL（参数以 `http` 开头，非 PDF、非 YouTube、非 Twitter/X）

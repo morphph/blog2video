@@ -8,7 +8,7 @@
 Blog URL    → [Step 0: fetch + download images] → source_blog.md + images/ → [Step 0.7: Image Enrichment] → ...
 PDF         → [Step 0: pdfminer]                → source_raw.md  → [Step 0.5: PDF Cleaner]         → source_blog.md → ...
 YouTube     → [Step 0: yt-dlp + VTT]            → source_raw.md  → [Step 0.5: Transcript Organizer] → source_blog.md → ...
-Twitter/X   → [Step 0: fallback chain (Playwright MCP → WebFetch → Puppeteer → Vision)] → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → ...
+Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → ...
 
 ... → [Insight Memo] → [Script Writer] → [Episode Splitter] → [Slide Planner] → [Slide HTML Generator] → [Render + TTS] → MP4
 ```
@@ -67,7 +67,8 @@ blog2video-remotion/              ← 独立 Remotion 项目
 ## Orchestrator 调度逻辑
 
 ```
-1. 读取内容（URL fetch / pdfminer / yt-dlp）
+0. 前置检查（Twitter/X URL）：ToolSearch 确认 Playwright MCP 已加载，未加载则停止并要求用户重启 session
+1. 读取内容（URL fetch / pdfminer / yt-dlp / Playwright MCP）
 1.5. 内容预处理（按输入类型）
 1.7. Image Enrichment（orchestrator 直接执行）
 2. 调用 Insight Memo Writer subagent → insight_memo.md

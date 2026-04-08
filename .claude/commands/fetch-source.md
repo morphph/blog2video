@@ -48,10 +48,16 @@
 1. 从 URL 提取 slug（作者名-推文ID，如 `akshay-pachaar-2041146899319971922`）
 2. 创建输出目录：`./blog2video-output/<slug>/`
 
-3. **文本提取 — Fallback Chain**（按优先级顺序尝试，成功则停止）：
+3. **前置检查 — Playwright MCP 必须可用**
+   在开始抓取之前，使用 ToolSearch 搜索 `mcp__playwright` 或 `browser_navigate` 确认 Playwright MCP 工具已加载。
+   - **如果工具不存在：立即停止，不要继续 fallback chain。** 告知用户：
+     > Playwright MCP 未加载。X/Twitter 内容抓取必须使用 Playwright MCP（其他方法无法获取完整文章文本）。请退出当前 session 并重新启动 Claude Code，确保 Playwright MCP 正常加载后重试。
+   - **原因**：X 已屏蔽 WebFetch 和 Puppeteer 的文本抓取，vision 转录只能获取图片摘要而非完整文章。静默降级会导致严重的内容质量损失。
 
-   **方法 A：Playwright MCP（最高精度）**
-   如果 Playwright MCP 工具可用（`browser_navigate` 等工具存在）：
+4. **文本提取 — Fallback Chain**（按优先级顺序尝试，成功则停止）：
+
+   **方法 A：Playwright MCP（最高精度，Twitter/X 必需）**
+   Playwright MCP 工具已确认可用（前置检查已通过）：
    - 调用 `browser_navigate` 打开 Twitter/X URL
    - 等待页面加载完成后，调用 `browser_snapshot` 获取页面无障碍树
    - 从无障碍树中提取推文正文、作者信息、日期

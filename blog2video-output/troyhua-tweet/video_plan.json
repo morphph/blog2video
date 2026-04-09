@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Claude Code's Context Management: The 6-Layer Memory Pipeline",
+    "title_zh": "Claude Code 的 6 层记忆管线：200K token 背后的经济学",
+    "word_count": 2041,
+    "slug": "troyhua-tweet"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕单一主题——Claude Code 的 6 层记忆管线，各层级层层递进、互为保底，不存在可独立理解的子主题拆分点。拆分会破坏'从便宜到贵'的经济学叙事结构。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude Code 的 6 层记忆管线：200K token 背后的经济学"
+      }
+    ]
+  }
+}

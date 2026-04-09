@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .bg-circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.05;
+    }
+    .bg-circle-1 {
+      width: 450px;
+      height: 450px;
+      background: #8B5CF6;
+      top: 140px;
+      right: -80px;
+    }
+    .bg-circle-2 {
+      width: 300px;
+      height: 300px;
+      background: #F59E0B;
+      bottom: 520px;
+      left: -60px;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 56px;
+      position: relative;
+      z-index: 1;
+    }
+    .main-title {
+      font-size: 90px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 64px;
+      position: relative;
+      z-index: 1;
+    }
+    .main-title .red {
+      color: #EF4444;
+    }
+    .main-title .yellow {
+      color: #F59E0B;
+    }
+    .source-capsule {
+      display: inline-block;
+      background: #1A1A30;
+      color: #6B6B80;
+      font-size: 22px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      letter-spacing: 0.5px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="bg-glow"></div>
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+    <div class="series-tag">精读AI &middot; Claude Code</div>
+    <div class="main-title">
+      Claude Code的<br>
+      <span class="red">6层记忆</span><br>
+      凭什么<span class="yellow">够用</span>？
+    </div>
+    <div class="source-capsule">Troy Hua &middot; CMU Agentic Memory</div>
+  </div>
+</body>
+</html>

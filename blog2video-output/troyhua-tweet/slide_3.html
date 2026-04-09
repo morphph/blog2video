@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #10B981;
+      letter-spacing: 3px;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 46px;
+      font-weight: 900;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .green { color: #10B981; }
+    .layers {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+    }
+    .layer-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 28px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .layer-card-1 { border-left: 4px solid #10B981; }
+    .layer-card-2 { border-left: 4px solid #3B82F6; }
+    .layer-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .num-green { background: rgba(16, 185, 129, 0.12); color: #10B981; }
+    .num-blue { background: rgba(59, 130, 246, 0.12); color: #3B82F6; }
+    .layer-content { flex: 1; }
+    .layer-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .layer-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .layer-cost {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .cost-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .cost-tag-green { background: rgba(16, 185, 129, 0.12); color: #10B981; }
+    .cost-tag-blue { background: rgba(59, 130, 246, 0.12); color: #3B82F6; }
+    .footer-note {
+      margin-top: 32px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">LAYER 1 &amp; 2</div>
+    <div class="title">最便宜的<span class="green">垃圾回收</span></div>
+    <div class="layers">
+      <div class="layer-card layer-card-1">
+        <div class="layer-num num-green">L1</div>
+        <div class="layer-content">
+          <div class="layer-title">工具结果存储</div>
+          <div class="layer-desc">大结果写磁盘，只留预览</div>
+          <div class="layer-cost"><span class="cost-tag cost-tag-green">&lt; 1ms &middot; 不调模型</span></div>
+        </div>
+      </div>
+      <div class="layer-card layer-card-2">
+        <div class="layer-num num-blue">L2</div>
+        <div class="layer-content">
+          <div class="layer-title">微压缩</div>
+          <div class="layer-desc">超过60分钟没引用 &rarr; 移除<br>只保留最近5条</div>
+          <div class="layer-cost"><span class="cost-tag cost-tag-blue">&lt; 1ms &middot; 不调模型</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">大部分情况，光靠它们就够了</div>
+  </div>
+</body>
+</html>

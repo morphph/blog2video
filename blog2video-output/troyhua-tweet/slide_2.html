@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .red { color: #EF4444; }
+    .pyramid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .layer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+    }
+    .layer-cheap {
+      width: 60%;
+      border-left: 4px solid #10B981;
+    }
+    .layer-mid {
+      width: 75%;
+      border-left: 4px solid #F59E0B;
+    }
+    .layer-expensive {
+      width: 90%;
+      border-left: 4px solid #EF4444;
+    }
+    .layer-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+    .layer-text {
+      flex: 1;
+    }
+    .layer-name {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .layer-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+    }
+    .layer-cost {
+      font-size: 20px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .cost-green { color: #10B981; }
+    .cost-yellow { color: #F59E0B; }
+    .cost-red { color: #EF4444; }
+    .insight-box {
+      background: rgba(139, 92, 246, 0.06);
+      border: 2px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+    }
+    .insight-box .text {
+      font-size: 26px;
+      font-weight: 700;
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">CORE PRINCIPLE</div>
+    <div class="title">分层拦截 = <span class="red">经济学</span></div>
+    <div class="pyramid">
+      <div class="layer layer-cheap">
+        <div class="layer-icon">💾</div>
+        <div class="layer-text">
+          <div class="layer-name">便宜层先上</div>
+          <div class="layer-desc">磁盘写入、微压缩</div>
+        </div>
+        <div class="layer-cost cost-green">&lt;1ms</div>
+      </div>
+      <div class="layer layer-mid">
+        <div class="layer-icon">📋</div>
+        <div class="layer-text">
+          <div class="layer-name">中间层兜底</div>
+          <div class="layer-desc">Session Memory 复用笔记</div>
+        </div>
+        <div class="layer-cost cost-yellow">~5s</div>
+      </div>
+      <div class="layer layer-expensive">
+        <div class="layer-icon">🤖</div>
+        <div class="layer-text">
+          <div class="layer-name">昂贵层最后</div>
+          <div class="layer-desc">Fork 摘要 Agent 完整调用</div>
+        </div>
+        <div class="layer-cost cost-red">~10s</div>
+      </div>
+    </div>
+    <div class="insight-box">
+      <div class="text">便宜的能解决，贵的就不启动</div>
+    </div>
+  </div>
+</body>
+</html>

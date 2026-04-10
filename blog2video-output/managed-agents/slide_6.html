@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 44px;
+      width: 100%;
+      text-align: left;
+      line-height: 1.3;
+    }
+    .title .green { color: #10B981; }
+    .arch-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .arch-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .arch-card.brain {
+      border-top: 4px solid #8B5CF6;
+    }
+    .arch-card.hands {
+      border-top: 4px solid #F59E0B;
+    }
+    .arch-card.session {
+      border-top: 4px solid #3B82F6;
+    }
+    .arch-emoji {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .arch-name {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .arch-name.purple { color: #8B5CF6; }
+    .arch-name.yellow { color: #F59E0B; }
+    .arch-name.blue { color: #3B82F6; }
+    .arch-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .interface-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .interface-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .interface-code {
+      font-size: 30px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      color: #10B981;
+      font-weight: 700;
+    }
+    .result-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 24px;
+      text-align: center;
+    }
+    .result-text {
+      font-size: 30px;
+      color: #10B981;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">新架构</div>
+    <div class="title"><span class="green">解耦</span>：脑 / 手 / 日志</div>
+    <div class="arch-row">
+      <div class="arch-card brain">
+        <div class="arch-emoji">🧠</div>
+        <div class="arch-name purple">脑</div>
+        <div class="arch-desc">Claude + Harness<br>推理 & 决策</div>
+      </div>
+      <div class="arch-card hands">
+        <div class="arch-emoji">🤚</div>
+        <div class="arch-name yellow">手</div>
+        <div class="arch-desc">沙箱 + 工具<br>执行操作</div>
+      </div>
+      <div class="arch-card session">
+        <div class="arch-emoji">📋</div>
+        <div class="arch-name blue">日志</div>
+        <div class="arch-desc">Session<br>事件记录</div>
+      </div>
+    </div>
+    <div class="interface-box">
+      <div class="interface-label">统一接口</div>
+      <div class="interface-code">execute(name, input) → string</div>
+    </div>
+    <div class="result-box">
+      <div class="result-text">容器：宠物 → 牲畜，挂了就换</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .title .red { color: #EF4444; }
+    .attack-chain {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .chain-step {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: 12px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .chain-icon {
+      font-size: 26px;
+      color: #EF4444;
+      flex-shrink: 0;
+      width: 32px;
+      text-align: center;
+    }
+    .chain-text {
+      font-size: 28px;
+      color: #F0F0F0;
+    }
+    .chain-arrow {
+      text-align: center;
+      font-size: 24px;
+      color: #EF4444;
+    }
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(139, 92, 246, 0.15);
+      margin: 8px 0;
+    }
+    .fix-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .fix-label {
+      font-size: 20px;
+      color: #6B7280;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .fix-text {
+      font-size: 34px;
+      color: #10B981;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">安全问题</div>
+    <div class="title"><span class="red">凭证可达</span> = 游戏结束</div>
+    <div class="attack-chain">
+      <div class="chain-step">
+        <div class="chain-icon">1</div>
+        <div class="chain-text">Prompt injection 成功</div>
+      </div>
+      <div class="chain-arrow">↓</div>
+      <div class="chain-step">
+        <div class="chain-icon">2</div>
+        <div class="chain-text">读取环境变量 → 拿到凭证</div>
+      </div>
+      <div class="chain-arrow">↓</div>
+      <div class="chain-step">
+        <div class="chain-icon">3</div>
+        <div class="chain-text">生成无限制 session</div>
+      </div>
+      <div class="chain-arrow">↓</div>
+      <div class="chain-step">
+        <div class="chain-icon">!</div>
+        <div class="chain-text">Game Over</div>
+      </div>
+    </div>
+    <div class="fix-box">
+      <div class="fix-label">解决方案</div>
+      <div class="fix-text">让凭证在物理上不可达</div>
+    </div>
+  </div>
+</body>
+</html>

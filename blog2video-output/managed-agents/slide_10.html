@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .title .blue { color: #3B82F6; }
+    .comparison {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .comp-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .comp-card.bad {
+      border-top: 4px solid #EF4444;
+    }
+    .comp-card.good {
+      border-top: 4px solid #10B981;
+    }
+    .comp-header {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .comp-text {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .comp-text.red { color: #EF4444; }
+    .comp-text.green { color: #10B981; }
+    .vs-arrow {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      color: #6B7280;
+      margin-bottom: 28px;
+    }
+    .solution-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .solution-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .solution-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .solution-text .highlight {
+      color: #3B82F6;
+    }
+    .solution-code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 26px;
+      color: #10B981;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">上下文管理</div>
+    <div class="title">Session <span class="blue">≠</span> Context Window</div>
+    <div class="comparison">
+      <div class="comp-card bad">
+        <div class="comp-header">传统方式</div>
+        <div class="comp-text red">压缩 / 摘要 / 裁剪</div>
+        <div class="comp-text" style="color: #B0B0CC; font-size: 24px; margin-top: 8px;">不可逆决策</div>
+      </div>
+      <div class="comp-card good">
+        <div class="comp-header">新方式</div>
+        <div class="comp-text green">独立上下文对象</div>
+        <div class="comp-text" style="color: #B0B0CC; font-size: 24px; margin-top: 8px;">持久 & 可查询</div>
+      </div>
+    </div>
+    <div class="solution-box">
+      <div class="solution-label">SESSION 日志</div>
+      <div class="solution-text">存在 context window <span class="highlight">外面</span>的持久上下文</div>
+      <div class="solution-code">getEvents() → 按位置切片读取</div>
+    </div>
+  </div>
+</body>
+</html>

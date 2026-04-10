@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .pattern {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+    .pattern-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .pattern-badge {
+      font-size: 20px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 6px;
+      color: #FFFFFF;
+    }
+    .badge-purple { background: #8B5CF6; }
+    .badge-blue { background: #3B82F6; }
+    .pattern-name {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .pattern-flow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .flow-item {
+      background: #252542;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .flow-item.highlight {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .flow-sep {
+      font-size: 22px;
+      color: #6B7280;
+    }
+    .pattern-note {
+      font-size: 22px;
+      color: #6B7280;
+      margin-top: 8px;
+    }
+    .key-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+    .key-text {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .key-text .red { color: #EF4444; }
+    .key-text .green { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">安全模式</div>
+    <div class="title">两种凭证隔离方案</div>
+    <div class="pattern">
+      <div class="pattern-header">
+        <div class="pattern-badge badge-purple">Git</div>
+        <div class="pattern-name">Token 写入 remote</div>
+      </div>
+      <div class="pattern-flow">
+        <div class="flow-item">克隆时注入 token</div>
+        <div class="flow-sep">→</div>
+        <div class="flow-item">写入 git remote</div>
+        <div class="flow-sep">→</div>
+        <div class="flow-item highlight">Agent 永不触碰</div>
+      </div>
+    </div>
+    <div class="pattern">
+      <div class="pattern-header">
+        <div class="pattern-badge badge-blue">MCP</div>
+        <div class="pattern-name">OAuth 在保险库</div>
+      </div>
+      <div class="pattern-flow">
+        <div class="flow-item">代理调用 MCP</div>
+        <div class="flow-sep">→</div>
+        <div class="flow-item">从保险库取凭证</div>
+        <div class="flow-sep">→</div>
+        <div class="flow-item highlight">Harness 不知凭证</div>
+      </div>
+    </div>
+    <div class="key-box">
+      <div class="key-text">不是<span class="red">权限太大</span><br>而是<span class="red">凭证可达</span> → 让它<span class="green">不可达</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,702 @@
+[
+  {
+    "text": "Anthropic 重磅发布 Managed Agents。今天我们来深挖一下 Managed Agents 背后的官方架构设计。核心就一件事：把 Agent 的\"脑\"和\"手\"彻底拆开。",
+    "pronounce_text": "Anthropic重磅发布Managed Agents。今天我们来深挖一下Managed Agents背后的官方架构设计。核心就一件事：把Agent的\"脑\"和\"手\"彻底拆开。",
+    "time_begin": 0,
+    "time_end": 12392.33560090703,
+    "text_begin": 0,
+    "text_end": 93,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 87
+  },
+  {
+    "text": "不是造一个更好的 harness，而是造一个能不断替换 harness 的系统。",
+    "pronounce_text": "不是造一个更好的harness，而是造一个能不断替换harness的系统。",
+    "time_begin": 12592.33560090703,
+    "time_end": 17310.47619047619,
+    "text_begin": 93,
+    "text_end": 133,
+    "pronounce_text_begin": 87,
+    "pronounce_text_end": 124
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 工程博客最新发布的 Managed Agents 架构设计。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Anthropic工程博客最新发布的Managed Agents架构设计。",
+    "time_begin": 17460,
+    "time_end": 31860.861678004534,
+    "text_begin": 133,
+    "text_end": 230,
+    "pronounce_text_begin": 124,
+    "pronounce_text_end": 214
+  },
+  {
+    "text": "先说一个关键认知。我们平时说的 Agent harness，就是模型外面包的那层控制系统。循环调用模型、路由工具、管理上下文，这些都算 harness 的活儿。",
+    "pronounce_text": "先说一个关键认知。我们平时说的Agent harness，就是模型外面包的那层控制系统。循环调用模型、路由工具、管理上下文，这些都算harness的活儿。",
+    "time_begin": 32004,
+    "time_end": 45209.034013605444,
+    "text_begin": 230,
+    "text_end": 310,
+    "pronounce_text_begin": 214,
+    "pronounce_text_end": 291
+  },
+  {
+    "text": "但 harness 有一个本质问题：它编码的是\"模型做不到什么\"的假设。模型不会自己管理上下文？harness 来管。模型会执行危险命令？harness 来拦。",
+    "pronounce_text": "但harness有一个本质问题：它编码的是\"模型做不到什么\"的假设。模型不会自己管理上下文？harness来管。模型会执行危险命令？harness来拦。",
+    "time_begin": 45360,
+    "time_end": 58646.30385487528,
+    "text_begin": 310,
+    "text_end": 390,
+    "pronounce_text_begin": 291,
+    "pronounce_text_end": 367
+  },
+  {
+    "text": "问题在于，模型在进步。假设会过期。",
+    "pronounce_text": "问题在于，模型在进步。假设会过期。",
+    "time_begin": 58788,
+    "time_end": 62948.861678004534,
+    "text_begin": 390,
+    "text_end": 407,
+    "pronounce_text_begin": 367,
+    "pronounce_text_end": 384
+  },
+  {
+    "text": "Anthropic 举了一个真实案例。Claude Sonnet 4.5 有一个毛病，叫 context anxiety。当它感觉自己的上下文窗口快用完了，它就会提前草草收场，不管任务做没做完。",
+    "pronounce_text": "Anthropic举了一个真实案例。Claude Sonnet四点五有一个毛病，叫context anxiety。当它感觉自己的上下文窗口快用完了，它就会提前草草收场，不管任务做没做完。",
+    "time_begin": 63108,
+    "time_end": 76440.74376417234,
+    "text_begin": 407,
+    "text_end": 504,
+    "pronounce_text_begin": 384,
+    "pronounce_text_end": 477
+  },
+  {
+    "text": "团队的应对方案是在 harness 里加了 context reset，主动帮它重置上下文。问题解决了。",
+    "pronounce_text": "团队的应对方案是在harness里加了context reset，主动帮它重置上下文。问题解决了。",
+    "time_begin": 76608,
+    "time_end": 83880.33560090703,
+    "text_begin": 504,
+    "text_end": 556,
+    "pronounce_text_begin": 477,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "但是，当他们把同一套 harness 用在 Claude Opus 4.5 上的时候，发现 context anxiety 这个行为已经消失了。模型自己学会了处理这个问题。那个 reset 补丁变成了 dead weight，纯粹的死重量。",
+    "pronounce_text": "但是，当他们把同一套harness用在Claude Opus四点五上的时候，发现context anxiety这个行为已经消失了。模型自己学会了处理这个问题。那个reset补丁变成了dead weight，纯粹的死重量。",
+    "time_begin": 84024,
+    "time_end": 98424.86167800453,
+    "text_begin": 556,
+    "text_end": 676,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 636
+  },
+  {
+    "text": "这不是个例。Anthropic 的判断是，随着模型不断升级，harness 里的补丁会越来越多地变成废代码。你越是精心优化 harness，它过期得越快。",
+    "pronounce_text": "这不是个例。Anthropic的判断是，随着模型不断升级，harness里的补丁会越来越多地变成废代码。你越是精心优化harness，它过期得越快。",
+    "time_begin": 98568,
+    "time_end": 109985.09750566893,
+    "text_begin": 676,
+    "text_end": 753,
+    "pronounce_text_begin": 636,
+    "pronounce_text_end": 710
+  },
+  {
+    "text": "Managed Agents 是 Anthropic 的托管 Agent 服务，帮客户跑长时间的 Agent 任务。最初的架构很直觉：把所有东西放进一个容器。Session 日志、Agent harness、执行沙箱，全在一起。",
+    "pronounce_text": "Managed Agents是Anthropic的托管Agent服务，帮客户跑长时间的Agent任务。最初的架构很直觉：把所有东西放进一个容器。Session日志、Agent harness、执行沙箱，全在一起。",
+    "time_begin": 110124,
+    "time_end": 126022.54875283447,
+    "text_begin": 753,
+    "text_end": 867,
+    "pronounce_text_begin": 710,
+    "pronounce_text_end": 816
+  },
+  {
+    "text": "好处显而易见。文件操作就是本地系统调用，不需要设计任何服务边界。简单粗暴，能跑。",
+    "pronounce_text": "好处显而易见。文件操作就是本地系统调用，不需要设计任何服务边界。简单粗暴，能跑。",
+    "time_begin": 126180,
+    "time_end": 133626.48526077098,
+    "text_begin": 867,
+    "text_end": 907,
+    "pronounce_text_begin": 816,
+    "pronounce_text_end": 856
+  },
+  {
+    "text": "但问题来了。他们养了一只\"宠物\"。",
+    "pronounce_text": "但问题来了。他们养了一只\"宠物\"。",
+    "time_begin": 133776,
+    "time_end": 136485.61451247166,
+    "text_begin": 907,
+    "text_end": 924,
+    "pronounce_text_begin": 856,
+    "pronounce_text_end": 873
+  },
+  {
+    "text": "在基础设施领域有个经典比喻：宠物 vs 牲畜。宠物是有名字的、精心照顾的、坏了就心疼的。牲畜是可替换的、挂了就换一个的。",
+    "pronounce_text": "在基础设施领域有个经典比喻：宠物vs牲畜。宠物是有名字的、精心照顾的、坏了就心疼的。牲畜是可替换的、挂了就换一个的。",
+    "time_begin": 136656,
+    "time_end": 148363.3469387755,
+    "text_begin": 924,
+    "text_end": 984,
+    "pronounce_text_begin": 873,
+    "pronounce_text_end": 931
+  },
+  {
+    "text": "他们的容器变成了宠物。容器一挂，session 就丢了。容器卡住了，就得想办法把它救回来。",
+    "pronounce_text": "他们的容器变成了宠物。容器一挂，session就丢了。容器卡住了，就得想办法把它救回来。",
+    "time_begin": 148500,
+    "time_end": 156631.47392290249,
+    "text_begin": 984,
+    "text_end": 1029,
+    "pronounce_text_begin": 931,
+    "pronounce_text_end": 975
+  },
+  {
+    "text": "救容器这件事本身就是噩梦。当 session 卡住的时候，团队唯一能看到的窗口就是 WebSocket 事件流。但事件流只能告诉你\"出问题了\"，不能告诉你问题出在哪一层。",
+    "pronounce_text": "救容器这件事本身就是噩梦。当session卡住的时候，团队唯一能看到的窗口就是WebSocket事件流。但事件流只能告诉你\"出问题了\"，不能告诉你问题出在哪一层。",
+    "time_begin": 156780,
+    "time_end": 170112.74376417234,
+    "text_begin": 1029,
+    "text_end": 1114,
+    "pronounce_text_begin": 975,
+    "pronounce_text_end": 1056
+  },
+  {
+    "text": "Harness 的 bug、网络丢包、容器离线，这三种完全不同的故障，在事件流里看起来长得一模一样。",
+    "pronounce_text": "Harness的bug、网络丢包、容器离线，这三种完全不同的故障，在事件流里看起来长得一模一样。",
+    "time_begin": 170280,
+    "time_end": 179305.44217687074,
+    "text_begin": 1114,
+    "text_end": 1164,
+    "pronounce_text_begin": 1056,
+    "pronounce_text_end": 1104
+  },
+  {
+    "text": "要搞清楚到底怎么了，工程师得打开一个 shell 进到容器里面去调试。但这个容器里还有用户数据。于是就陷入了一个两难：要调试就得进容器，进容器就碰到了用户数据。实际上等于丧失了调试能力。",
+    "pronounce_text": "要搞清楚到底怎么了，工程师得打开一个shell进到容器里面去调试。但这个容器里还有用户数据。于是就陷入了一个两难：要调试就得进容器，进容器就碰到了用户数据。实际上等于丧失了调试能力。",
+    "time_begin": 179460,
+    "time_end": 196426.66666666666,
+    "text_begin": 1164,
+    "text_end": 1257,
+    "pronounce_text_begin": 1104,
+    "pronounce_text_end": 1195
+  },
+  {
+    "text": "还有第二个问题。harness 默认假设所有资源都在容器里。当客户说，我想让 Claude 连我自己的私有云，行不行？",
+    "pronounce_text": "还有第二个问题。harness默认假设所有资源都在容器里。当客户说，我想让Claude连我自己的私有云，行不行？",
+    "time_begin": 196596,
+    "time_end": 206561.85034013606,
+    "text_begin": 1257,
+    "text_end": 1316,
+    "pronounce_text_begin": 1195,
+    "pronounce_text_end": 1251
+  },
+  {
+    "text": "行，但得把客户的网络和 Anthropic 的网络做对等互联。或者让客户在自己环境里跑 Anthropic 的 harness。两个选项都很重。一个写死在 harness 里的假设，变成了架构级的限制。",
+    "pronounce_text": "行，但得把客户的网络和Anthropic的网络做对等互联。或者让客户在自己环境里跑Anthropic的harness。两个选项都很重。一个写死在harness里的假设，变成了架构级的限制。",
+    "time_begin": 206712,
+    "time_end": 222819.5283446712,
+    "text_begin": 1316,
+    "text_end": 1417,
+    "pronounce_text_begin": 1251,
+    "pronounce_text_end": 1345
+  },
+  {
+    "text": "解决方案是三个字：解耦。",
+    "pronounce_text": "解决方案是三个字：解偶。",
+    "time_begin": 222984,
+    "time_end": 225008.62585034015,
+    "text_begin": 1417,
+    "text_end": 1429,
+    "pronounce_text_begin": 1345,
+    "pronounce_text_end": 1357
+  },
+  {
+    "text": "把\"脑\"和\"手\"拆开。脑就是 Claude 和它的 harness，负责推理和决策。手就是沙箱和工具，负责执行操作。再加上一个独立的 session 日志，记录所有发生过的事情。",
+    "pronounce_text": "把\"脑\"和\"手\"拆开。脑就是Claude和它的harness，负责推理和决策。手就是沙箱和工具，负责执行操作。再加上一个独立的session日志，记录所有发生过的事情。",
+    "time_begin": 225180,
+    "time_end": 240440,
+    "text_begin": 1429,
+    "text_end": 1518,
+    "pronounce_text_begin": 1357,
+    "pronounce_text_end": 1441
+  },
+  {
+    "text": "三者之间通过接口通信，互不依赖。任何一个挂了，不影响其他两个。",
+    "pronounce_text": "三者之间通过接口通信，互不依赖。任何一个挂了，不影响其他两个。",
+    "time_begin": 240588,
+    "time_end": 246246.54875283447,
+    "text_begin": 1518,
+    "text_end": 1549,
+    "pronounce_text_begin": 1441,
+    "pronounce_text_end": 1472
+  },
+  {
+    "text": "具体来说，harness 离开了容器。它调用容器的方式，跟调用任何其他工具一样。一个统一的接口：execute，传入名称和输入，返回一个字符串。",
+    "pronounce_text": "具体来说，harness离开了容器。它调用容器的方式，跟调用任何其他工具一样。一个统一的接口：execute，传入名称和输入，返回一个字符串。",
+    "time_begin": 246384,
+    "time_end": 259124.6349206349,
+    "text_begin": 1549,
+    "text_end": 1621,
+    "pronounce_text_begin": 1472,
+    "pronounce_text_end": 1543
+  },
+  {
+    "text": "容器从宠物变成了牲畜。挂了？harness 把错误当成普通的工具调用失败，传回给 Claude。Claude 觉得应该重试？那就用 provision 接口拉起一个新容器。不用救，直接换。",
+    "pronounce_text": "容器从宠物变成了牲畜。挂了？harness把错误当成普通的工具调用失败，传回给Claude。Claude觉得应该重试？那就用provision接口拉起一个新容器。不用救，直接换。",
+    "time_begin": 259272,
+    "time_end": 272778.8934240363,
+    "text_begin": 1621,
+    "text_end": 1715,
+    "pronounce_text_begin": 1543,
+    "pronounce_text_end": 1632
+  },
+  {
+    "text": "更有意思的是，harness 本身也变成了牲畜。",
+    "pronounce_text": "更有意思的是，harness本身也变成了牲畜。",
+    "time_begin": 272916,
+    "time_end": 276693.73242630385,
+    "text_begin": 1715,
+    "text_end": 1739,
+    "pronounce_text_begin": 1632,
+    "pronounce_text_end": 1655
+  },
+  {
+    "text": "因为 session 日志存在 harness 外面。harness 里面没有任何需要在崩溃后幸存的状态。挂了就挂了。",
+    "pronounce_text": "因为session日志存在harness外面。harness里面没有任何需要在崩溃后幸存的状态。挂了就挂了。",
+    "time_begin": 276840,
+    "time_end": 284750.8843537415,
+    "text_begin": 1739,
+    "text_end": 1798,
+    "pronounce_text_begin": 1655,
+    "pronounce_text_end": 1709
+  },
+  {
+    "text": "新的 harness 启动后，调用 wake 拿到 session ID，调用 getSession 拿回事件日志，从最后一条事件继续跑。在运行过程中，harness 用 emitEvent 不断往 session 写入事件，保证记录是持久的。",
+    "pronounce_text": "新的harness启动后，调用wake拿到session ID，调用getSession拿回事件日志，从最后一条事件继续跑。在运行过程中，harness用emitEvent不断往session写入事件，保证记录是持久的。",
+    "time_begin": 284904,
+    "time_end": 301092.79818594106,
+    "text_begin": 1798,
+    "text_end": 1920,
+    "pronounce_text_begin": 1709,
+    "pronounce_text_end": 1819
+  },
+  {
+    "text": "这意味着系统里没有任何一个组件是不可替换的。脑可以换，手可以换，两者之间的连接也可以换。所有状态都在 session 日志里，而 session 日志是独立的、持久的。",
+    "pronounce_text": "这意味着系统里没有任何一个组件是不可替换的。脑可以换，手可以换，两者之间的连接也可以换。所有状态都在session日志里，而session日志是独立的、持久的。",
+    "time_begin": 301248,
+    "time_end": 314929.04308390024,
+    "text_begin": 1920,
+    "text_end": 2004,
+    "pronounce_text_begin": 1819,
+    "pronounce_text_end": 1899
+  },
+  {
+    "text": "解耦还顺手解决了一个安全问题。",
+    "pronounce_text": "解偶还顺手解决了一个安全问题。",
+    "time_begin": 315072,
+    "time_end": 317955.7641723356,
+    "text_begin": 2004,
+    "text_end": 2019,
+    "pronounce_text_begin": 1899,
+    "pronounce_text_end": 1914
+  },
+  {
+    "text": "在之前的单容器架构里，Claude 生成的代码和凭证跑在同一个环境中。这意味着什么？如果一个 prompt injection 攻击成功说服了 Claude 去读自己的环境变量，攻击者就拿到了凭证。",
+    "pronounce_text": "在之前的单容器架构里，Claude生成的代码和凭证跑在同一个环境中。这意味着什么？如果一个prompt injection攻击成功说服了Claude去读自己的环境变量，攻击者就拿到了凭证。",
+    "time_begin": 318096,
+    "time_end": 331858.31292517006,
+    "text_begin": 2019,
+    "text_end": 2118,
+    "pronounce_text_begin": 1914,
+    "pronounce_text_end": 2008
+  },
+  {
+    "text": "拿到凭证之后能干什么？可以用这些 token 生成新的、不受限制的 session，然后把工作委派给它们。游戏结束。",
+    "pronounce_text": "拿到凭证之后能干什么？可以用这些token生成新的、不受限制的session，然后把工作委派给它们。游戏结束。",
+    "time_begin": 332028,
+    "time_end": 341308.86167800456,
+    "text_begin": 2118,
+    "text_end": 2176,
+    "pronounce_text_begin": 2008,
+    "pronounce_text_end": 2063
+  },
+  {
+    "text": "你可能会说，那就限制 token 的权限范围。但这里有一个反直觉的点：这种限制本质上是在假设\"模型用受限 token 做不了太多事\"。而模型在变聪明。今天做不到的事，明天也许就能做到。",
+    "pronounce_text": "你可能会说，那就限制token的权限范围。但这里有一个反直觉的点：这种限制本质上是在假设\"模型用受限token做不了太多事\"。而模型在变聪明。今天做不到的事，明天也许就能做到。",
+    "time_begin": 341460,
+    "time_end": 357869.387755102,
+    "text_begin": 2176,
+    "text_end": 2268,
+    "pronounce_text_begin": 2063,
+    "pronounce_text_end": 2151
+  },
+  {
+    "text": "所以 Anthropic 的结论是：不要靠限制权限来防御，要让凭证在物理上不可达。",
+    "pronounce_text": "所以Anthropic的结论是：不要靠限制权限来防御，要让凭证在物理上不可达。",
+    "time_begin": 358020,
+    "time_end": 364746.6666666667,
+    "text_begin": 2268,
+    "text_end": 2309,
+    "pronounce_text_begin": 2151,
+    "pronounce_text_end": 2190
+  },
+  {
+    "text": "他们用了两种模式。第一种是 Git 场景。用仓库的 access token 在沙箱初始化时克隆代码，把 token 写进本地 git remote 配置。之后 Claude 在沙箱里 push 和 pull 都正常工作，但它永远接触不到 token 本身。",
+    "pronounce_text": "他们用了两种模式。第一种是Git场景。用仓库的access token在沙箱初始化时克隆代码，把token写进本地git remote配置。之后Claude在沙箱里push和pull都正常工作，但它永远接触不到token本身。",
+    "time_begin": 364896,
+    "time_end": 380666.8390022676,
+    "text_begin": 2309,
+    "text_end": 2438,
+    "pronounce_text_begin": 2190,
+    "pronounce_text_end": 2303
+  },
+  {
+    "text": "第二种是 MCP 工具场景。OAuth token 存在沙箱外面的安全保险库里。Claude 通过一个专门的代理来调用 MCP 工具。代理用 session 关联的 token 去保险库取凭证，完成外部调用。",
+    "pronounce_text": "第二种是MCP工具场景。OAuth token存在沙箱外面的安全保险库里。Claude通过一个专门的代理来调用MCP工具。代理用session关联的token去保险库取凭证，完成外部调用。",
+    "time_begin": 380808,
+    "time_end": 394698.022675737,
+    "text_begin": 2438,
+    "text_end": 2542,
+    "pronounce_text_begin": 2303,
+    "pronounce_text_end": 2397
+  },
+  {
+    "text": "Harness 自始至终不知道任何凭证的内容。",
+    "pronounce_text": "Harness自始至终不知道任何凭证的内容。",
+    "time_begin": 394898.022675737,
+    "time_end": 397909.49659863947,
+    "text_begin": 2542,
+    "text_end": 2565,
+    "pronounce_text_begin": 2397,
+    "pronounce_text_end": 2419
+  },
+  {
+    "text": "安全的核心不是\"权限太大\"，而是\"凭证可达\"。结构性修复就是让它不可达。",
+    "pronounce_text": "安全的核心不是\"权限太大\"，而是\"凭证可达\"。结构性修复就是让它不可达。",
+    "time_begin": 398052,
+    "time_end": 405289.50566893426,
+    "text_begin": 2565,
+    "text_end": 2601,
+    "pronounce_text_begin": 2419,
+    "pronounce_text_end": 2455
+  },
+  {
+    "text": "长任务经常超出 Claude 的上下文窗口。常见的应对方式是压缩、摘要、裁剪。但这些策略有一个共同问题：它们涉及不可逆的决策。",
+    "pronounce_text": "长任务经常超出Claude的上下文窗口。常见的应对方式是压缩、摘要、裁剪。但这些策略有一个共同问题：它们涉及不可逆的决策。",
+    "time_begin": 405432,
+    "time_end": 416036.39909297053,
+    "text_begin": 2601,
+    "text_end": 2664,
+    "pronounce_text_begin": 2455,
+    "pronounce_text_end": 2516
+  },
+  {
+    "text": "你决定扔掉某些 token 的时候，你不知道未来的对话轮次会不会需要它们。压缩后的消息如果没有额外存储，就真的丢了。",
+    "pronounce_text": "你决定扔掉某些token的时候，你不知道未来的对话轮次会不会需要它们。压缩后的消息如果没有额外存储，就真的丢了。",
+    "time_begin": 416196,
+    "time_end": 425349.15192743763,
+    "text_begin": 2664,
+    "text_end": 2722,
+    "pronounce_text_begin": 2516,
+    "pronounce_text_end": 2572
+  },
+  {
+    "text": "Anthropic 之前的工作探索过一种思路：把上下文当成一个独立对象，存在 context window 之外，让模型通过写代码来查询和切片。",
+    "pronounce_text": "Anthropic之前的工作探索过一种思路：把上下文当成一个独立对象，存在context window之外，让模型通过写代码来查询和切片。",
+    "time_begin": 425520,
+    "time_end": 435915.4195011338,
+    "text_begin": 2722,
+    "text_end": 2794,
+    "pronounce_text_begin": 2572,
+    "pronounce_text_end": 2641
+  },
+  {
+    "text": "Managed Agents 把这个思路工程化了。Session 日志就是这个独立的上下文对象。接口是 getEvents，允许 harness 按位置切片读取事件流。",
+    "pronounce_text": "Managed Agents把这个思路工程化了。Session日志就是这个独立的上下文对象。接口是getEvents，允许harness按位置切片读取事件流。",
+    "time_begin": 436068,
+    "time_end": 447914.6666666667,
+    "text_begin": 2794,
+    "text_end": 2878,
+    "pronounce_text_begin": 2641,
+    "pronounce_text_end": 2720
+  },
+  {
+    "text": "可以从上次读到的位置继续往下读。可以倒回某个特定时刻之前几条事件，看看那个动作的前因。可以在执行某个关键操作之前重新读取相关上下文。",
+    "pronounce_text": "可以从上次读到的位置继续往下读。可以倒回某个特定时刻之前几条事件，看看那个动作的前因。可以在执行某个关键操作之前重新读取相关上下文。",
+    "time_begin": 448056,
+    "time_end": 460622.48526077095,
+    "text_begin": 2878,
+    "text_end": 2944,
+    "pronounce_text_begin": 2720,
+    "pronounce_text_end": 2786
+  },
+  {
+    "text": "读出来的事件在传给 Claude 的 context window 之前，harness 还可以做任意变换。比如重新组织顺序来提高 prompt cache 命中率，或者做各种 context engineering。",
+    "pronounce_text": "读出来的事件在传给Claude的context window之前，harness还可以做任意变换。比如重新组织顺序来提高prompt cache命中率，或者做各种context engineering。",
+    "time_begin": 460764,
+    "time_end": 473585.90476190473,
+    "text_begin": 2944,
+    "text_end": 3053,
+    "pronounce_text_begin": 2786,
+    "pronounce_text_end": 2887
+  },
+  {
+    "text": "这里有一个设计巧思。Anthropic 把\"可恢复的上下文存储\"和\"任意的上下文管理\"拆成了两个独立的关注点。存储放在 session 里，保证持久和可查询。管理放在 harness 里，可以随意变换。",
+    "pronounce_text": "这里有一个设计巧思。Anthropic把\"可恢复的上下文存储\"和\"任意的上下文管理\"拆成了两个独立的关注点。存储放在session里，保证持久和可查询。管理放在harness里，可以随意变换。",
+    "time_begin": 473724,
+    "time_end": 489320.6893424036,
+    "text_begin": 3053,
+    "text_end": 3154,
+    "pronounce_text_begin": 2887,
+    "pronounce_text_end": 2983
+  },
+  {
+    "text": "为什么要这样拆？因为他们不知道未来的模型需要什么样的 context engineering。Session 接口只保证一件事：数据在那里，你可以拿。怎么用，harness 说了算。harness 可以换，但数据不会丢。",
+    "pronounce_text": "为什么要这样拆？因为他们不知道未来的模型需要什么样的context engineering。Session接口只保证一件事：数据在那里，你可以拿。怎么用，harness说了算。harness可以换，但数据不会丢。",
+    "time_begin": 489492,
+    "time_end": 503811.5918367347,
+    "text_begin": 3154,
+    "text_end": 3264,
+    "pronounce_text_begin": 2983,
+    "pronounce_text_end": 3089
+  },
+  {
+    "text": "解耦带来了一个意外的性能红利。",
+    "pronounce_text": "解偶带来了一个意外的性能红利。",
+    "time_begin": 503964,
+    "time_end": 506290.48526077095,
+    "text_begin": 3264,
+    "text_end": 3279,
+    "pronounce_text_begin": 3089,
+    "pronounce_text_end": 3104
+  },
+  {
+    "text": "在旧架构里，每个 session 启动的时候，都要先拉起一个容器。哪怕这个 session 可能根本不需要执行任何代码。容器要克隆代码仓库、启动进程、拉取事件日志。这些都是死时间。",
+    "pronounce_text": "在旧架构里，每个session启动的时候，都要先拉起一个容器。哪怕这个session可能根本不需要执行任何代码。容器要克隆代码仓库、启动进程、拉取事件日志。这些都是死时间。",
+    "time_begin": 506448,
+    "time_end": 522044.6893424036,
+    "text_begin": 3279,
+    "text_end": 3369,
+    "pronounce_text_begin": 3104,
+    "pronounce_text_end": 3190
+  },
+  {
+    "text": "用户感受到的延迟叫 TTFT，time to first token。从提交任务到看到第一个回复字符的等待时间。这是用户体感最强烈的延迟。",
+    "pronounce_text": "用户感受到的延迟叫TTFT，time to first token。从提交任务到看到第一个回复字符的等待时间。这是用户体感最强烈的延迟。",
+    "time_begin": 522216,
+    "time_end": 532994.5487528344,
+    "text_begin": 3369,
+    "text_end": 3438,
+    "pronounce_text_begin": 3190,
+    "pronounce_text_end": 3258
+  },
+  {
+    "text": "解耦之后，容器变成了按需分配。不需要容器的 session 就不等容器。推理可以在编排层拿到事件日志后立即开始。",
+    "pronounce_text": "解偶之后，容器变成了按需分配。不需要容器的session就不等容器。推理可以在编排层拿到事件日志后立即开始。",
+    "time_begin": 533160,
+    "time_end": 542313.1519274376,
+    "text_begin": 3438,
+    "text_end": 3494,
+    "pronounce_text_begin": 3258,
+    "pronounce_text_end": 3312
+  },
+  {
+    "text": "结果是 p50 TTFT 下降了大约百分之60，p95 TTFT 下降超过百分之90。",
+    "pronounce_text": "结果是p五十TTFT下降了大约百分之六十，p九十五TTFT下降超过百分之九十。",
+    "time_begin": 542484,
+    "time_end": 549500.9160997733,
+    "text_begin": 3494,
+    "text_end": 3537,
+    "pronounce_text_begin": 3312,
+    "pronounce_text_end": 3351
+  },
+  {
+    "text": "百分之90。这个数字值得停下来想一想。",
+    "pronounce_text": "百分之九十。这个数字值得停下来想一想。",
+    "time_begin": 549648,
+    "time_end": 552914.8934240363,
+    "text_begin": 3537,
+    "text_end": 3556,
+    "pronounce_text_begin": 3351,
+    "pronounce_text_end": 3370
+  },
+  {
+    "text": "p95 代表的是最慢的那百分之5的请求。这些请求的延迟降低超过百分之90，意味着之前那些需要等很久的 session，等待时间变成了原来的十分之一都不到。",
+    "pronounce_text": "p九十五代表的是最慢的那百分之五的请求。这些请求的延迟降低超过百分之九十，意味着之前那些需要等很久的session，等待时间变成了原来的十分之一都不到。",
+    "time_begin": 553068,
+    "time_end": 565843.4648526077,
+    "text_begin": 3556,
+    "text_end": 3633,
+    "pronounce_text_begin": 3370,
+    "pronounce_text_end": 3446
+  },
+  {
+    "text": "而且这个改善不是靠加速什么东西得来的。恰恰相反，是靠消除不必要的依赖得来的。不是让容器启动更快，是让不需要容器的 session 根本不碰容器。",
+    "pronounce_text": "而且这个改善不是靠加速什么东西得来的。恰恰相反，是靠消除不必要的依赖得来的。不是让容器启动更快，是让不需要容器的session根本不碰容器。",
+    "time_begin": 565992,
+    "time_end": 577571.6371882086,
+    "text_begin": 3633,
+    "text_end": 3705,
+    "pronounce_text_begin": 3446,
+    "pronounce_text_end": 3516
+  },
+  {
+    "text": "解耦还打开了一个新的可能性：多脑多手。",
+    "pronounce_text": "解偶还打开了一个新的可能性：多脑多手。",
+    "time_begin": 577728,
+    "time_end": 581424.462585034,
+    "text_begin": 3705,
+    "text_end": 3724,
+    "pronounce_text_begin": 3516,
+    "pronounce_text_end": 3535
+  },
+  {
+    "text": "先说多脑。扩展到多个 brain 只需要启动多个无状态的 harness。它们不需要各自独占一个容器。需要 sandbox 的时候再通过工具调用去分配。",
+    "pronounce_text": "先说多脑。扩展到多个brain只需要启动多个无状态的harness。它们不需要各自独占一个容器。需要sandbox的时候再通过工具调用去分配。",
+    "time_begin": 581580,
+    "time_end": 592648.7981859411,
+    "text_begin": 3724,
+    "text_end": 3800,
+    "pronounce_text_begin": 3535,
+    "pronounce_text_end": 3606
+  },
+  {
+    "text": "这也解决了之前的 VPC 问题。harness 不在容器里了，也就不再假设所有资源都在本地。客户的私有云资源可以作为远程工具被调用，不需要网络对等互联。",
+    "pronounce_text": "这也解决了之前的VPC问题。harness不在容器里了，也就不再假设所有资源都在本地。客户的私有云资源可以作为远程工具被调用，不需要网络对等互联。",
+    "time_begin": 592812,
+    "time_end": 605761.6145124716,
+    "text_begin": 3800,
+    "text_end": 3876,
+    "pronounce_text_begin": 3606,
+    "pronounce_text_end": 3679
+  },
+  {
+    "text": "再说多手。每个 brain 可以连接多个 hand。每个 hand 就是一个工具接口：execute，传入名称和输入，返回字符串。这个接口可以是一个容器，可以是一个 MCP server，甚至可以是一个手机或者一个游戏模拟器。",
+    "pronounce_text": "再说多手。每个brain可以连接多个hand。每个hand就是一个工具接口：execute，传入名称和输入，返回字符串。这个接口可以是一个容器，可以是一个MCP server，甚至可以是一个手机或者一个游戏模拟器。",
+    "time_begin": 605916,
+    "time_end": 622360.2176870748,
+    "text_begin": 3876,
+    "text_end": 3989,
+    "pronounce_text_begin": 3679,
+    "pronounce_text_end": 3786
+  },
+  {
+    "text": "Harness 不关心也不需要知道。",
+    "pronounce_text": "Harness不关心也不需要知道。",
+    "time_begin": 622512,
+    "time_end": 624629.5056689342,
+    "text_begin": 3989,
+    "text_end": 4007,
+    "pronounce_text_begin": 3786,
+    "pronounce_text_end": 3803
+  },
+  {
+    "text": "而且因为 hand 和 brain 不绑定，brain 之间可以互相传递 hand。一个 Agent 用完的沙箱，可以交给另一个 Agent 继续用。",
+    "pronounce_text": "而且因为hand和brain不绑定，brain之间可以互相传递hand。一个Agent用完的沙箱，可以交给另一个Agent继续用。",
+    "time_begin": 624780,
+    "time_end": 633677.7324263039,
+    "text_begin": 4007,
+    "text_end": 4082,
+    "pronounce_text_begin": 3803,
+    "pronounce_text_end": 3868
+  },
+  {
+    "text": "但这里有一个 tradeoff 值得说。让模型同时管理多个执行环境，决定把工作发到哪里，这是一个更难的认知任务。Anthropic 最初把所有东西放进一个容器，其中一个原因就是早期模型做不到多环境决策。",
+    "pronounce_text": "但这里有一个tradeoff值得说。让模型同时管理多个执行环境，决定把工作发到哪里，这是一个更难的认知任务。Anthropic最初把所有东西放进一个容器，其中一个原因就是早期模型做不到多环境决策。",
+    "time_begin": 633816,
+    "time_end": 650353.0975056689,
+    "text_begin": 4082,
+    "text_end": 4183,
+    "pronounce_text_begin": 3868,
+    "pronounce_text_end": 3966
+  },
+  {
+    "text": "是模型能力的提升，才让这个架构成为可能。",
+    "pronounce_text": "是模型能力的提升，才让这个架构成为可能。",
+    "time_begin": 650520,
+    "time_end": 654088.7528344671,
+    "text_begin": 4183,
+    "text_end": 4203,
+    "pronounce_text_begin": 3966,
+    "pronounce_text_end": 3986
+  },
+  {
+    "text": "这又回到了开头的主题：harness 编码的是模型能力的假设。模型变强了，单容器这个限制就反过来变成了瓶颈。",
+    "pronounce_text": "这又回到了开头的主题：harness编码的是模型能力的假设。模型变强了，单容器这个限制就反过来变成了瓶颈。",
+    "time_begin": 654228,
+    "time_end": 663764.2811791383,
+    "text_begin": 4203,
+    "text_end": 4257,
+    "pronounce_text_begin": 3986,
+    "pronounce_text_end": 4039
+  },
+  {
+    "text": "回过头看，Managed Agents 的设计思路其实来自一个几十年前就解决过的问题：怎么为还没被发明的程序设计系统？",
+    "pronounce_text": "回过头看，Managed Agents的设计思路其实来自一个几十年前就解决过的问题：怎么为还没被发明的程序设计系统？",
+    "time_begin": 663912,
+    "time_end": 672507.873015873,
+    "text_begin": 4257,
+    "text_end": 4316,
+    "pronounce_text_begin": 4039,
+    "pronounce_text_end": 4097
+  },
+  {
+    "text": "操作系统的答案是虚拟化。把硬件抽象成进程、文件这些接口。接口比硬件活得久。read 命令不关心底下是70年代的磁盘组还是现代的 SSD。上面的抽象稳定，下面的实现随便换。",
+    "pronounce_text": "操作系统的答案是虚拟化。把硬件抽象成进程、文件这些接口。接口比硬件活得久。read命令不关心底下是七十年代的磁盘组还是现代的SSD。上面的抽象稳定，下面的实现随便换。",
+    "time_begin": 672660,
+    "time_end": 688512.1088435374,
+    "text_begin": 4316,
+    "text_end": 4401,
+    "pronounce_text_begin": 4097,
+    "pronounce_text_end": 4180
+  },
+  {
+    "text": "Managed Agents 做的是同一件事。把 Agent 的组件虚拟化成三个接口：session、harness、sandbox。不对具体实现表态，只对接口的形状表态。",
+    "pronounce_text": "Managed Agents做的是同一件事。把Agent的组件虚拟化成三个接口：session、harness、sandbox。不对具体实现表态，只对接口的形状表态。",
+    "time_begin": 688680,
+    "time_end": 701246.485260771,
+    "text_begin": 4401,
+    "text_end": 4487,
+    "pronounce_text_begin": 4180,
+    "pronounce_text_end": 4263
+  },
+  {
+    "text": "他们赌的是这三个接口能比任何一个具体的 harness 实现活得更久。",
+    "pronounce_text": "他们赌的是这三个接口能比任何一个具体的harness实现活得更久。",
+    "time_begin": 701388,
+    "time_end": 706315.1201814059,
+    "text_begin": 4487,
+    "text_end": 4522,
+    "pronounce_text_begin": 4263,
+    "pronounce_text_end": 4296
+  },
+  {
+    "text": "这个赌注的依据是：模型在进步，harness 里的假设在不断失效，但\"Agent 需要操作状态、需要执行计算、需要可靠地长时间运行\"这些需求不会消失。",
+    "pronounce_text": "这个赌注的依据是：模型在进步，harness里的假设在不断失效，但\"Agent需要操作状态、需要执行计算、需要可靠地长时间运行\"这些需求不会消失。",
+    "time_begin": 706464,
+    "time_end": 720690.7120181406,
+    "text_begin": 4522,
+    "text_end": 4597,
+    "pronounce_text_begin": 4296,
+    "pronounce_text_end": 4369
+  },
+  {
+    "text": "一句话总结。Harness 越好，过期越快。所以 Anthropic 不再优化某一个 harness，而是设计了一个能不断替换 harness 的元系统。这可能是目前对 Agent 架构最务实的工程回答。",
+    "pronounce_text": "一句话总结。Harness越好，过期越快。所以Anthropic不再优化某一个harness，而是设计了一个能不断替换harness的元系统。这可能是目前对Agent架构最务实的工程回答。",
+    "time_begin": 720828,
+    "time_end": 734764.462585034,
+    "text_begin": 4597,
+    "text_end": 4699,
+    "pronounce_text_begin": 4369,
+    "pronounce_text_end": 4463
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 734904,
+    "time_end": 739924,
+    "text_begin": 4699,
+    "text_end": 4726,
+    "pronounce_text_begin": 4463,
+    "pronounce_text_end": 4489
+  }
+]

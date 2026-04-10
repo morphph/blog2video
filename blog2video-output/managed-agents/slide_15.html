@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 36px;
+      line-height: 1.3;
+    }
+    .analogy-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 24px;
+      margin-bottom: 20px;
+    }
+    .analogy-header {
+      font-size: 20px;
+      color: #6B7280;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .analogy-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .analogy-from {
+      font-size: 26px;
+      color: #B0B0CC;
+    }
+    .analogy-arrow {
+      font-size: 22px;
+      color: #6B7280;
+    }
+    .analogy-to {
+      font-size: 26px;
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+    .takeaways {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .takeaway {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 18px 24px;
+      font-size: 26px;
+      color: #F0F0F0;
+      line-height: 1.4;
+    }
+    .signature-box {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(239, 68, 68, 0.08) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .signature-text {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .signature-text .purple { color: #8B5CF6; }
+    .signature-text .red { color: #EF4444; }
+    .closing {
+      width: 100%;
+      text-align: center;
+      margin-top: 24px;
+      font-size: 24px;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">总结</div>
+    <div class="title">虚拟化 Agent 组件</div>
+    <div class="analogy-box">
+      <div class="analogy-header">操作系统类比</div>
+      <div class="analogy-row">
+        <div class="analogy-from">硬件</div>
+        <div class="analogy-arrow">→</div>
+        <div class="analogy-to">进程 / 文件抽象</div>
+      </div>
+      <div class="analogy-row">
+        <div class="analogy-from">Agent</div>
+        <div class="analogy-arrow">→</div>
+        <div class="analogy-to">Session / Harness / Sandbox</div>
+      </div>
+    </div>
+    <div class="takeaways">
+      <div class="takeaway">接口比实现活得久</div>
+      <div class="takeaway">不对实现表态，只对接口表态</div>
+      <div class="takeaway">需求不变，harness 可以换</div>
+    </div>
+    <div class="signature-box">
+      <div class="signature-text"><span class="purple">Harness 越好</span>，<span class="red">过期越快</span></div>
+    </div>
+    <div class="closing">精读一篇，胜过刷一百条</div>
+  </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 ## Hook
 
-你花三个月精心打磨的 Agent 系统，模型一升级，里面的补丁就变成了废代码。这不是假设，是 Anthropic 自己踩过的坑。他们刚公开了 Managed Agents 的内部架构演进，核心结论只有一句话：别再优化 harness 了，设计一个能不断替换 harness 的系统。
+Anthropic 重磅发布 Managed Agents。今天我们来深挖一下 Managed Agents 背后的官方架构设计。核心就一件事：把 Agent 的"脑"和"手"彻底拆开。不是造一个更好的 harness，而是造一个能不断替换 harness 的系统。
 
 ## Brand Intro
 

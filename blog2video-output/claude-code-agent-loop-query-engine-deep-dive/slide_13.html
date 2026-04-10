@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      z-index: 1;
+    }
+    .principle-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 36px 28px;
+      text-align: left;
+      margin-bottom: 32px;
+      z-index: 1;
+    }
+    .principle-title {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .principle-title .accent { color: #F59E0B; }
+    .principle-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.55;
+    }
+    .principle-desc em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .vs-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      z-index: 1;
+    }
+    .vs-box {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .vs-box.wrong {
+      border-top: 4px solid #EF4444;
+    }
+    .vs-box.right {
+      border-top: 4px solid #10B981;
+    }
+    .vs-icon {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+    .vs-label {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .vs-box.wrong .vs-label { color: #EF4444; }
+    .vs-box.right .vs-label { color: #10B981; }
+    .vs-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="section-label">NON-OBVIOUS INSIGHT</div>
+    <div class="principle-card">
+      <div class="principle-title">压缩<span class="accent">不是</span>续命</div>
+      <div class="principle-desc">Token 预算<em>跨压缩边界不重置</em><br>压缩前消耗的预算带到压缩后</div>
+    </div>
+    <div class="vs-row">
+      <div class="vs-box wrong">
+        <div class="vs-icon">&#10060;</div>
+        <div class="vs-label">直觉</div>
+        <div class="vs-desc">压缩 = 新对话<br>预算重置</div>
+      </div>
+      <div class="vs-box right">
+        <div class="vs-icon">&#9989;</div>
+        <div class="vs-label">实际</div>
+        <div class="vs-desc">释放上下文空间<br>不重置工作预算</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

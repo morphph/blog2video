@@ -138,7 +138,20 @@
       "Bash(cd /Users/yufanp/Downloads/blog2video/blog2video-remotion && node -e \"\nconst puppeteer = require\\('puppeteer'\\);\nconst path = require\\('path'\\);\n\n\\(async \\(\\) => {\n  const browser = await puppeteer.launch\\({ headless: true }\\);\n  const dir = '/Users/yufanp/Downloads/blog2video/blog2video-output/building-skill-for-claude';\n  \n  for \\(const [html, png] of [['v1_cover_photo.html', 'v1_cover_photo.png'], ['v2_cover_photo.html', 'v2_cover_photo.png']]\\) {\n    const page = await browser.newPage\\(\\);\n    await page.setViewport\\({ width: 1080, height: 1920 }\\);\n    await page.goto\\('file://' + path.join\\(dir, html\\), { waitUntil: 'networkidle0' }\\);\n    await page.screenshot\\({ path: path.join\\(dir, png\\), fullPage: false }\\);\n    console.log\\('Saved', png\\);\n    await page.close\\(\\);\n  }\n  await browser.close\\(\\);\n}\\)\\(\\);\n\")",
       "Bash(claude --version 2>/dev/null || echo \"claude command not found\")",
       "Bash(npm update -g @anthropic-ai/claude-code)",
-      "Bash(claude --version)"
+      "Bash(claude --version)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "WebFetch(domain:loreai.dev)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:nitter.net)",
+      "WebFetch(domain:xcancel.com)",
+      "Read(//Users/yufanp/.claude/**)",
+      "Bash(npm view:*)",
+      "Bash(npm search:*)",
+      "Bash(ls:*)",
+      "Bash(git pull:*)"
     ]
   }
 }

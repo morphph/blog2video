@@ -1,0 +1,212 @@
+[
+  {
+    "text": "你写了三天的产品需求文档，排版精美、逻辑严密。结果隔壁同事用 AI，一小时就搞出了可运行的原型。你的文档，还有人看吗？",
+    "pronounce_text": "你写了三天的产品需求文档，排版精美、逻辑严密。结果隔壁同事用AI，一小时就搞出了可运行的原型。你的文档，还有人看吗？",
+    "time_begin": 0,
+    "time_end": 10267.709750566893,
+    "text_begin": 0,
+    "text_end": 59,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 58
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 LangChain CEO Harrison Chase 的博客。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是LangChain CEO Harrison Chase的博客。",
+    "time_begin": 10404,
+    "time_end": 24212.752834467123,
+    "text_begin": 59,
+    "text_end": 149,
+    "pronounce_text_begin": 58,
+    "pronounce_text_end": 143
+  },
+  {
+    "text": "他说了一句很重的话：PRD，作为软件开发起点的时代，结束了。",
+    "pronounce_text": "他说了一句很重的话：PRD，作为软件开发起点的时代，结束了。",
+    "time_begin": 24372,
+    "time_end": 29728.689342403628,
+    "text_begin": 149,
+    "text_end": 179,
+    "pronounce_text_begin": 143,
+    "pronounce_text_end": 173
+  },
+  {
+    "text": "先解释一下传统流程。以前做软件，就像开餐厅上菜。先写菜谱，也就是 PRD。再画摆盘图，也就是设计稿。最后厨师下厨，工程师写代码。",
+    "pronounce_text": "先解释一下传统流程。以前做软件，就像开餐厅上菜。先写菜谱，也就是PRD。再画摆盘图，也就是设计稿。最后厨师下厨，工程师写代码。",
+    "time_begin": 29880,
+    "time_end": 44153.15192743764,
+    "text_begin": 179,
+    "text_end": 243,
+    "pronounce_text_begin": 173,
+    "pronounce_text_end": 236
+  },
+  {
+    "text": "Idea，PRD，Mock，Code。四步瀑布，一步接一步。",
+    "pronounce_text": "Idea，PRD，Mock，Code。四步瀑布，一步接一步。",
+    "time_begin": 44316,
+    "time_end": 51681.21541950113,
+    "text_begin": 243,
+    "text_end": 273,
+    "pronounce_text_begin": 236,
+    "pronounce_text_end": 266
+  },
+  {
+    "text": "为什么要这么走？因为写代码太贵了。一个功能动辄几周，所以你得先用文档对齐所有人，避免返工。PRD 就是这条流水线的发令枪。",
+    "pronounce_text": "为什么要这么走？因为写代码太贵了。一个功能动辄几周，所以你得先用文档对齐所有人，避免返工。PRD就是这条流水线的发令枪。",
+    "time_begin": 51840,
+    "time_end": 63036.50793650794,
+    "text_begin": 273,
+    "text_end": 334,
+    "pronounce_text_begin": 266,
+    "pronounce_text_end": 326
+  },
+  {
+    "text": "但 AI Agent 出现后，代码成本暴跌。Harrison Chase 的原话是：anyone can write code now。任何人都能写代码了。",
+    "pronounce_text": "但AI Agent出现后，代码成本暴跌。Harrison Chase的原话是：anyone can write code now。任何人都能写代码了。",
+    "time_begin": 63180,
+    "time_end": 73145.85034013605,
+    "text_begin": 334,
+    "text_end": 412,
+    "pronounce_text_begin": 326,
+    "pronounce_text_end": 401
+  },
+  {
+    "text": "这意味着什么？你不需要先写菜谱了。直接炒出一盘菜端上桌，大家尝了再改。",
+    "pronounce_text": "这意味着什么？你不需要先写菜谱了。直接炒出一盘菜端上桌，大家尝了再改。",
+    "time_begin": 73296,
+    "time_end": 80312.91609977324,
+    "text_begin": 412,
+    "text_end": 447,
+    "pronounce_text_begin": 401,
+    "pronounce_text_end": 436
+  },
+  {
+    "text": "那新流程长什么样？Harrison Chase 画了三个阶段。",
+    "pronounce_text": "那新流程长什么样？Harrison Chase画了三个阶段。",
+    "time_begin": 80460,
+    "time_end": 84411.8820861678,
+    "text_begin": 447,
+    "text_end": 478,
+    "pronounce_text_begin": 436,
+    "pronounce_text_end": 466
+  },
+  {
+    "text": "传统流程：Idea 到 PRD，PRD 到 Mock，Mock 到 Code。瓶颈在最后一步，代码写得太慢。",
+    "pronounce_text": "传统流程：Idea到PRD，PRD到Mock，Mock到Code。瓶颈在最后一步，代码写得太慢。",
+    "time_begin": 84564,
+    "time_end": 92776.74376417234,
+    "text_begin": 478,
+    "text_end": 532,
+    "pronounce_text_begin": 466,
+    "pronounce_text_end": 514
+  },
+  {
+    "text": "现在很多团队的状态：Idea 直接到 Code。三方围着原型给反馈。瓶颈变了，不是写代码慢，而是要 Review 的原型太多。",
+    "pronounce_text": "现在很多团队的状态：Idea直接到Code。三方围着原型给反馈。瓶颈变了，不是写代码慢，而是要Review的原型太多。",
+    "time_begin": 92916,
+    "time_end": 102881.85034013605,
+    "text_begin": 532,
+    "text_end": 595,
+    "pronounce_text_begin": 514,
+    "pronounce_text_end": 573
+  },
+  {
+    "text": "以前 Reviewer 桌上只有几个项目。现在谁都能用 Agent 搞出原型，Review 队列直接爆了。就像外卖平台，以前厨师不够用，现在 AI 当了厨师，但质检员不够了。",
+    "pronounce_text": "以前Reviewer桌上只有几个项目。现在谁都能用Agent搞出原型，Review队列直接爆了。就像外卖平台，以前厨师不够用，现在AI当了厨师，但质检员不够了。",
+    "time_begin": 103032,
+    "time_end": 115900.34467120182,
+    "text_begin": 595,
+    "text_end": 682,
+    "pronounce_text_begin": 573,
+    "pronounce_text_end": 653
+  },
+  {
+    "text": "第三阶段，他认为的终局：Idea 同时产出 Doc 加 Code 的捆绑包，提交 Review。文档不再是起点，而是解释意图的说明书。",
+    "pronounce_text": "第三阶段，他认为的终局：Idea同时产出Doc加Code的捆绑包，提交Review。文档不再是起点，而是解释意图的说明书。",
+    "time_begin": 116064,
+    "time_end": 126029.85034013605,
+    "text_begin": 682,
+    "text_end": 749,
+    "pronounce_text_begin": 653,
+    "pronounce_text_end": 714
+  },
+  {
+    "text": "他还提了一个大胆的想法：未来的 PRD，可能就是一组结构化的、有版本控制的 Prompt。",
+    "pronounce_text": "他还提了一个大胆的想法：未来的PRD，可能就是一组结构化的、有版本控制的Prompt。",
+    "time_begin": 126180,
+    "time_end": 133034.37641723355,
+    "text_begin": 749,
+    "text_end": 794,
+    "pronounce_text_begin": 714,
+    "pronounce_text_end": 757
+  },
+  {
+    "text": "那你现在能做什么？",
+    "pronounce_text": "那你现在能做什么？",
+    "time_begin": 133200,
+    "time_end": 134713.78684807257,
+    "text_begin": 794,
+    "text_end": 803,
+    "pronounce_text_begin": 757,
+    "pronounce_text_end": 766
+  },
+  {
+    "text": "下次有新功能想法，别急着写文档。先用 AI Agent 花一小时搭出可运行的原型。再写一份简短的需求说明，解释设计意图。用原型加文档的组合包，发起评审。",
+    "pronounce_text": "下次有新功能想法，别急着写文档。先用AI Agent花一小时搭出可运行的原型。再写一份简短的需求说明，解释设计意图。用原型加文档的组合包，发起评审。",
+    "time_begin": 134856,
+    "time_end": 149639.9909297052,
+    "text_begin": 803,
+    "text_end": 879,
+    "pronounce_text_begin": 766,
+    "pronounce_text_end": 840
+  },
+  {
+    "text": "让 Review 的人看到活的东西，而不是一堆抽象描述。",
+    "pronounce_text": "让Review的人看到活的东西，而不是一堆抽象描述。",
+    "time_begin": 149796,
+    "time_end": 154293.55102040817,
+    "text_begin": 879,
+    "text_end": 907,
+    "pronounce_text_begin": 840,
+    "pronounce_text_end": 866
+  },
+  {
+    "text": "所以 PRD 死了吗？没有。死掉的是 PRD 作为起点的那套瀑布流程。文档本身在进化，从发令枪变成了说明书，从 Word 文档变成了给 AI 的精确指令。",
+    "pronounce_text": "所以PRD死了吗？没有。死掉的是PRD作为起点的那套瀑布流程。文档本身在进化，从发令枪变成了说明书，从Word文档变成了给AI的精确指令。",
+    "time_begin": 154440,
+    "time_end": 167180.6349206349,
+    "text_begin": 907,
+    "text_end": 984,
+    "pronounce_text_begin": 866,
+    "pronounce_text_end": 935
+  },
+  {
+    "text": "记住这句话：代码生成成本趋近于零的时候，写什么不再是难题，判断该不该写才是。",
+    "pronounce_text": "记住这句话：代码生成成本趋近于零的时候，写什么不再是难题，判断该不该写才是。",
+    "time_begin": 167328,
+    "time_end": 174774.48526077098,
+    "text_begin": 984,
+    "text_end": 1022,
+    "pronounce_text_begin": 935,
+    "pronounce_text_end": 973
+  },
+  {
+    "text": "流程变了，那做产品的人呢？下期聊：谁会被淘汰，谁能活下来。",
+    "pronounce_text": "流程变了，那做产品的人呢？下期聊：谁会被淘汰，谁能活下来。",
+    "time_begin": 174924,
+    "time_end": 180791.5283446712,
+    "text_begin": 1022,
+    "text_end": 1051,
+    "pronounce_text_begin": 973,
+    "pronounce_text_end": 1002
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 180936,
+    "time_end": 185433.55102040817,
+    "text_begin": 1051,
+    "text_end": 1078,
+    "pronounce_text_begin": 1002,
+    "pronounce_text_end": 1028
+  }
+]

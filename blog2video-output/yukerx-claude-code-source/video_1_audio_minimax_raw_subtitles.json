@@ -1,0 +1,302 @@
+[
+  {
+    "text": "你敢让一个 AI 直接操作你的电脑吗？Cursor 不敢，Copilot 不敢，但 Claude Code 敢。因为它为一个 Bash 工具写了 18 个安全文件、9 层审查机制。",
+    "pronounce_text": "你敢让一个AI直接操作你的电脑吗？Cursor不敢，Copilot不敢，但Claude Code敢。因为它为一个Bash工具写了十八个安全文件、九层审查机制。",
+    "time_begin": 0,
+    "time_end": 13251.473922902494,
+    "text_begin": 0,
+    "text_end": 90,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 79
+  },
+  {
+    "text": "今天我们从泄露的源码里，拆解这套安检系统到底怎么运作的。",
+    "pronounce_text": "今天我们从泄露的源码里，拆解这套安检系统到底怎么运作的。",
+    "time_begin": 13451.473922902494,
+    "time_end": 18041.904761904763,
+    "text_begin": 90,
+    "text_end": 118,
+    "pronounce_text_begin": 79,
+    "pronounce_text_end": 107
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是安全研究者从 Claude Code 泄露源码中发现的安全架构。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是安全研究者从Claude Code泄露源码中发现的安全架构。",
+    "time_begin": 18180,
+    "time_end": 33091.70068027211,
+    "text_begin": 118,
+    "text_end": 206,
+    "pronounce_text_begin": 107,
+    "pronounce_text_end": 190
+  },
+  {
+    "text": "先讲个故事。假设你要雇一个远程程序员，给他你电脑的远程访问权限。你会怎么做？",
+    "pronounce_text": "先讲个故事。假设你要雇一个远程程序员，给他你电脑的远程访问权限。你会怎么做？",
+    "time_begin": 33228,
+    "time_end": 39525.097505668935,
+    "text_begin": 206,
+    "text_end": 244,
+    "pronounce_text_begin": 190,
+    "pronounce_text_end": 228
+  },
+  {
+    "text": "第一种做法：让他坐你旁边，每次敲命令之前你看一眼，点一下\"允许\"。简单粗暴，但你得一直盯着。这就是 Cursor 的做法。",
+    "pronounce_text": "第一种做法：让他坐你旁边，每次敲命令之前你看一眼，点一下\"允许\"。简单粗暴，但你得一直盯着。这就是Cursor的做法。",
+    "time_begin": 39672,
+    "time_end": 50276.399092970525,
+    "text_begin": 244,
+    "text_end": 305,
+    "pronounce_text_begin": 228,
+    "pronounce_text_end": 287
+  },
+  {
+    "text": "第二种：给他一台全新的虚拟机，让他在里面随便折腾。搞完了把代码提交上来，你审核后合并。安全，但他看不到你本地的环境。这是 GitHub Copilot Agent 的思路。",
+    "pronounce_text": "第二种：给他一台全新的虚拟机，让他在里面随便折腾。搞完了把代码提交上来，你审核后合并。安全，但他看不到你本地的环境。这是GitHub Copilot Agent的思路。",
+    "time_begin": 50436,
+    "time_end": 65696,
+    "text_begin": 305,
+    "text_end": 391,
+    "pronounce_text_begin": 287,
+    "pronounce_text_end": 371
+  },
+  {
+    "text": "第三种，也是最难的：让他直接用你的电脑。但你给他配了一套极其精密的安检系统。他能做什么、不能做什么、哪些操作需要你点头，全部写得清清楚楚。这就是 Claude Code。",
+    "pronounce_text": "第三种，也是最难的：让他直接用你的电脑。但你给他配了一套极其精密的安检系统。他能做什么、不能做什么、哪些操作需要你点头，全部写得清清楚楚。这就是Claude Code。",
+    "time_begin": 65844,
+    "time_end": 80802.14058956916,
+    "text_begin": 391,
+    "text_end": 476,
+    "pronounce_text_begin": 371,
+    "pronounce_text_end": 455
+  },
+  {
+    "text": "三种完全不同的安全哲学。旁观式、隔离式、安检式。",
+    "pronounce_text": "三种完全不同的安全哲学。旁观式、隔离式、安检式。",
+    "time_begin": 80964,
+    "time_end": 86192.97959183673,
+    "text_begin": 476,
+    "text_end": 500,
+    "pronounce_text_begin": 455,
+    "pronounce_text_end": 479
+  },
+  {
+    "text": "为什么 Anthropic 选了最难的那条路？因为只有这样，AI 才能用你的终端、你的环境、你的配置来干活。这才是\"真正帮你写代码\"，而不是\"在一个干净房间里写一段代码然后复制过来\"。",
+    "pronounce_text": "为什么Anthropic选了最难的那条路？因为只有这样，AI才能用你的终端、你的环境、你的配置来干活。这才是\"真正帮你写代码\"，而不是\"在一个干净房间里写一段代码然后复制过来\"。",
+    "time_begin": 86364,
+    "time_end": 101751.7097505669,
+    "text_begin": 500,
+    "text_end": 592,
+    "pronounce_text_begin": 479,
+    "pronounce_text_end": 568
+  },
+  {
+    "text": "但代价是什么？51.2 万行 TypeScript 源码，1903 个文件。",
+    "pronounce_text": "但代价是什么？五十一点二万行TypeScript源码，幺九零三个文件。",
+    "time_begin": 101916,
+    "time_end": 107481.66893424036,
+    "text_begin": 592,
+    "text_end": 630,
+    "pronounce_text_begin": 568,
+    "pronounce_text_end": 603
+  },
+  {
+    "text": "这些代码到底在干什么？我们来看看一条命令的真实旅程。",
+    "pronounce_text": "这些代码到底在干什么？我们来看看一条命令的真实旅程。",
+    "time_begin": 107640,
+    "time_end": 112567.1201814059,
+    "text_begin": 630,
+    "text_end": 656,
+    "pronounce_text_begin": 603,
+    "pronounce_text_end": 629
+  },
+  {
+    "text": "大多数人以为 AI 编程工具是这样的：用户输入，调用大模型接口，返回结果，完事。四步搞定。",
+    "pronounce_text": "大多数人以为AI编程工具是这样的：用户输入，调用大模型接口，返回结果，完事。四步搞定。",
+    "time_begin": 112716,
+    "time_end": 121311.87301587302,
+    "text_begin": 656,
+    "text_end": 701,
+    "pronounce_text_begin": 629,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "但 Claude Code 实际的链路，远比你想象的长。",
+    "pronounce_text": "但Claude Code实际的链路，远比你想象的长。",
+    "time_begin": 121464,
+    "time_end": 125195.2925170068,
+    "text_begin": 701,
+    "text_end": 729,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 698
+  },
+  {
+    "text": "当你输入一条指令，它会先动态组装 7 层系统提示词，把你项目的 Git 状态、团队约定、历史记忆全部注入上下文。然后，大模型从 42 个工具中选一个来执行。",
+    "pronounce_text": "当你输入一条指令，它会先动态组装七层系统提示词，把你项目的Git状态、团队约定、历史记忆全部注入上下文。然后，大模型从四十二个工具中选一个来执行。",
+    "time_begin": 125352,
+    "time_end": 139114.31292517006,
+    "text_begin": 729,
+    "text_end": 807,
+    "pronounce_text_begin": 698,
+    "pronounce_text_end": 771
+  },
+  {
+    "text": "选完之后，关键来了。假设大模型决定执行一条 Bash 命令，比如 rm -rf。这条命令不会直接跑。它要过 9 层安全审查。",
+    "pronounce_text": "选完之后，关键来了。假设大模型决定执行一条Bash命令，比如rm，rf。这条命令不会直接跑。它要过九层安全审查。",
+    "time_begin": 139284,
+    "time_end": 150573.38775510204,
+    "text_begin": 807,
+    "text_end": 869,
+    "pronounce_text_begin": 771,
+    "pronounce_text_end": 827
+  },
+  {
+    "text": "第一层，AST 解析。把命令拆成语法树，看它到底想干什么。第二层，ML 分类器上场。用机器学习模型判断这条命令的风险等级。",
+    "pronounce_text": "第一层，AST解析。把命令拆成语法树，看它到底想干什么。第二层，ML分类器上场。用机器学习模型判断这条命令的风险等级。",
+    "time_begin": 150732,
+    "time_end": 164447.87301587302,
+    "text_begin": 869,
+    "text_end": 930,
+    "pronounce_text_begin": 827,
+    "pronounce_text_end": 886
+  },
+  {
+    "text": "第三层，检查沙箱状态，看当前环境是不是受保护的。",
+    "pronounce_text": "第三层，检查沙箱状态，看当前环境是不是受保护的。",
+    "time_begin": 164647.87301587302,
+    "time_end": 169958.1224489796,
+    "text_begin": 930,
+    "text_end": 954,
+    "pronounce_text_begin": 886,
+    "pronounce_text_end": 910
+  },
+  {
+    "text": "还没完。接下来是权限竞争解析。什么意思？",
+    "pronounce_text": "还没完。接下来是权限竞争解析。什么意思？",
+    "time_begin": 170100,
+    "time_end": 174260.86167800453,
+    "text_begin": 954,
+    "text_end": 974,
+    "pronounce_text_begin": 910,
+    "pronounce_text_end": 930
+  },
+  {
+    "text": "就是本地键盘配置、IDE 规则、Hook 脚本、AI 分类器，四个来源同时在说\"我觉得该允许\"或者\"我觉得该拒绝\"。系统要解决它们之间的冲突。",
+    "pronounce_text": "就是本地键盘配置、IDE规则、Hook脚本、AI分类器，四个来源同时在说\"我觉得该允许\"或者\"我觉得该拒绝\"。系统要解决它们之间的冲突。",
+    "time_begin": 174460.86167800453,
+    "time_end": 187840.04535147393,
+    "text_begin": 974,
+    "text_end": 1045,
+    "pronounce_text_begin": 930,
+    "pronounce_text_end": 998
+  },
+  {
+    "text": "这里有一个非常精妙的设计，叫 fail-closed。就像银行金库的门，断电时自动锁死，而不是自动打开。只要有任何一层说\"不确定\"，默认就是拒绝。",
+    "pronounce_text": "这里有一个非常精妙的设计，叫fail-closed。就像银行金库的门，断电时自动锁死，而不是自动打开。只要有任何一层说\"不确定\"，默认就是拒绝。",
+    "time_begin": 187992,
+    "time_end": 200941.61451247166,
+    "text_begin": 1045,
+    "text_end": 1118,
+    "pronounce_text_begin": 998,
+    "pronounce_text_end": 1070
+  },
+  {
+    "text": "最后，即使所有审查都通过了，系统还会强制加一个 200 毫秒的延迟。为什么？防误触。给你一个反悔的窗口。",
+    "pronounce_text": "最后，即使所有审查都通过了，系统还会强制加一个两百毫秒的延迟。为什么？防误触。给你一个反悔的窗口。",
+    "time_begin": 201096,
+    "time_end": 212164.79818594104,
+    "text_begin": 1118,
+    "text_end": 1170,
+    "pronounce_text_begin": 1070,
+    "pronounce_text_end": 1119
+  },
+  {
+    "text": "这 9 层审查，就是 Claude Code 写了 18 个安全文件才实现的。",
+    "pronounce_text": "这九层审查，就是Claude Code写了十八个安全文件才实现的。",
+    "time_begin": 212328,
+    "time_end": 217208.68027210885,
+    "text_begin": 1170,
+    "text_end": 1209,
+    "pronounce_text_begin": 1119,
+    "pronounce_text_end": 1152
+  },
+  {
+    "text": "那怎么判断你手上的 AI 编程工具，安全做得到不到位？这里有几个信号。",
+    "pronounce_text": "那怎么判断你手上的AI编程工具，安全做得到不到位？这里有几个信号。",
+    "time_begin": 217368,
+    "time_end": 223490.947845805,
+    "text_begin": 1209,
+    "text_end": 1244,
+    "pronounce_text_begin": 1152,
+    "pronounce_text_end": 1185
+  },
+  {
+    "text": "打开你工具的设置页面。它有没有权限管理入口？你能不能看到它到底能访问你电脑的哪些目录？它执行危险命令之前，会不会弹确认？如果连权限管理页面都没有，说明它根本没在认真对待安全问题。",
+    "pronounce_text": "打开你工具的设置页面。它有没有权限管理入口？你能不能看到它到底能访问你电脑的哪些目录？它执行危险命令之前，会不会弹确认？如果连权限管理页面都没有，说明它根本没在认真对待安全问题。",
+    "time_begin": 223632,
+    "time_end": 239820.79818594104,
+    "text_begin": 1244,
+    "text_end": 1333,
+    "pronounce_text_begin": 1185,
+    "pronounce_text_end": 1274
+  },
+  {
+    "text": "还有一个更根本的问题：它到底是在你的环境里跑，还是在一个远程沙箱里跑？如果是远程沙箱，它当然安全，但它也看不到你本地的真实配置。",
+    "pronounce_text": "还有一个更根本的问题：它到底是在你的环境里跑，还是在一个远程沙箱里跑？如果是远程沙箱，它当然安全，但它也看不到你本地的真实配置。",
+    "time_begin": 239976,
+    "time_end": 251520.80725623583,
+    "text_begin": 1333,
+    "text_end": 1397,
+    "pronounce_text_begin": 1274,
+    "pronounce_text_end": 1338
+  },
+  {
+    "text": "最后总结一下。Claude Code 之所以好用，不是因为 AI 更聪明，而是因为它敢让 AI 直接操作你的环境。这个\"敢\"的背后，是 51 万行代码构建的安全网。",
+    "pronounce_text": "最后总结一下。Claude Code之所以好用，不是因为AI更聪明，而是因为它敢让AI直接操作你的环境。这个\"敢\"的背后，是五十一万行代码构建的安全网。",
+    "time_begin": 251676,
+    "time_end": 265612.462585034,
+    "text_begin": 1397,
+    "text_end": 1479,
+    "pronounce_text_begin": 1338,
+    "pronounce_text_end": 1414
+  },
+  {
+    "text": "9 层审查、fail-closed 设计、200 毫秒防误触，全部是为了一件事：让你放心把键盘交给 AI。",
+    "pronounce_text": "九层审查、fail-closed设计、两百毫秒防误触，全部是为了一件事：让你放心把键盘交给AI。",
+    "time_begin": 265752,
+    "time_end": 275032.86167800456,
+    "text_begin": 1479,
+    "text_end": 1532,
+    "pronounce_text_begin": 1414,
+    "pronounce_text_end": 1462
+  },
+  {
+    "text": "今天先拿一个动作回去：打开你的 AI 编程工具设置页，看看它到底能访问你电脑的哪些权限。",
+    "pronounce_text": "今天先拿一个动作回去：打开你的AI编程工具设置页，看看它到底能访问你电脑的哪些权限。",
+    "time_begin": 275184,
+    "time_end": 282328.6258503401,
+    "text_begin": 1532,
+    "text_end": 1576,
+    "pronounce_text_begin": 1462,
+    "pronounce_text_end": 1504
+  },
+  {
+    "text": "安全系统搞定了，但 AI 怎么知道该用 42 个工具里的哪一个？下一期，我们拆解 Claude Code 的工具调度系统。",
+    "pronounce_text": "安全系统搞定了，但AI怎么知道该用四十二个工具里的哪一个？下一期，我们拆解Claude Code的工具调度系统。",
+    "time_begin": 282492,
+    "time_end": 291645.15192743763,
+    "text_begin": 1576,
+    "text_end": 1637,
+    "pronounce_text_begin": 1504,
+    "pronounce_text_end": 1560
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 291816,
+    "time_end": 297219.1292517007,
+    "text_begin": 1637,
+    "text_end": 1664,
+    "pronounce_text_begin": 1560,
+    "pronounce_text_end": 1586
+  }
+]

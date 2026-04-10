@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .slide-title .accent {
+      color: #8B5CF6;
+    }
+    .analogy-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      padding: 44px 40px;
+      margin-bottom: 36px;
+    }
+    .analogy-header {
+      font-size: 36px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 32px;
+    }
+    .analogy-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .analogy-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .analogy-left {
+      width: 260px;
+      text-align: right;
+      font-size: 28px;
+      color: #B0B0CC;
+      flex-shrink: 0;
+    }
+    .analogy-arrow {
+      font-size: 24px;
+      color: #6B7280;
+      flex-shrink: 0;
+    }
+    .analogy-right {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .bottom-stats {
+      width: 100%;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+    }
+    .bottom-stat {
+      text-align: center;
+    }
+    .bottom-stat-num {
+      font-size: 56px;
+      font-weight: 800;
+    }
+    .bottom-stat-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title">Claude Code = <span class="accent">操作系统</span></div>
+
+    <div class="analogy-card">
+      <div class="analogy-header">架构类比</div>
+      <div class="analogy-rows">
+        <div class="analogy-row">
+          <div class="analogy-left">42 个工具</div>
+          <div class="analogy-arrow">=</div>
+          <div class="analogy-right" style="color: #3B82F6;">系统调用</div>
+        </div>
+        <div class="analogy-row">
+          <div class="analogy-left">记忆系统</div>
+          <div class="analogy-arrow">=</div>
+          <div class="analogy-right" style="color: #10B981;">文件系统</div>
+        </div>
+        <div class="analogy-row">
+          <div class="analogy-left">Agent 蜂群</div>
+          <div class="analogy-arrow">=</div>
+          <div class="analogy-right" style="color: #F59E0B;">进程管理</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-stats">
+      <div class="bottom-stat">
+        <div class="bottom-stat-num" style="color: #8B5CF6;">51万行</div>
+        <div class="bottom-stat-label">总代码量</div>
+      </div>
+      <div class="bottom-stat">
+        <div class="bottom-stat-num" style="color: #EF4444;">&lt;5%</div>
+        <div class="bottom-stat-label">AI 调用代码</div>
+      </div>
+      <div class="bottom-stat">
+        <div class="bottom-stat-num" style="color: #10B981;">95%</div>
+        <div class="bottom-stat-label">工程脚手架</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .main-title {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+    .main-title .accent { color: #F59E0B; }
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .tradeoff-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 24px;
+      text-align: left;
+    }
+    .tradeoff-card.red { border-left: 4px solid #EF4444; }
+    .tradeoff-card.yellow { border-left: 4px solid #F59E0B; }
+    .tradeoff-card.green { border-left: 4px solid #10B981; }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .card-icon { font-size: 24px; }
+    .card-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .tradeoff-card.red .card-title { color: #EF4444; }
+    .tradeoff-card.yellow .card-title { color: #F59E0B; }
+    .tradeoff-card.green .card-title { color: #10B981; }
+    .card-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .card-desc em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">TRADEOFF</div>
+    <div class="main-title">可用性 vs <span class="accent">透明度</span></div>
+    <div class="cards">
+      <div class="tradeoff-card red">
+        <div class="card-header">
+          <div class="card-icon">&#128260;</div>
+          <div class="card-title">回退模型</div>
+        </div>
+        <div class="card-desc">Opus 连续 <em>3 次 529</em> 过载<br>→ 静默切换到 <em>Sonnet</em><br>用户可能不知道在用较弱模型</div>
+      </div>
+      <div class="tradeoff-card yellow">
+        <div class="card-header">
+          <div class="card-icon">&#9878;</div>
+          <div class="card-title">设计哲学</div>
+        </div>
+        <div class="card-desc">宁可用<em>稍弱的模型</em><br>也不让用户<em>等待或报错</em></div>
+      </div>
+      <div class="tradeoff-card green">
+        <div class="card-header">
+          <div class="card-icon">&#128190;</div>
+          <div class="card-title">Transcript-First</div>
+        </div>
+        <div class="card-desc">调 API 之前先<em>写入磁盘</em><br>崩溃后可从断点恢复</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

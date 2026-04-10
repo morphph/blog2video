@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .series-tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .highlight-yellow {
+      color: #F59E0B;
+    }
+    .cards-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .card.warn {
+      border-left: 4px solid #EF4444;
+    }
+    .card.fact {
+      border-left: 4px solid #F59E0B;
+    }
+    .card-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .card-text .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .card-text .red {
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .card-text .yellow {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · AI Agent架构设计</div>
+    <div class="title">
+      精心搭建的Agent系统<br>
+      <span class="highlight-red">一半可能是多余的</span>
+    </div>
+    <div class="cards-container">
+      <div class="card warn">
+        <div class="card-text">
+          任务分解、Sprint合约、每轮QA<br>
+          <span class="red">新模型一出，可能全是累赘</span>
+        </div>
+      </div>
+      <div class="card fact">
+        <div class="card-text">
+          Anthropic自己干的——<br>
+          Opus 4.6一出，<span class="yellow">直接砍掉Sprint分解</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

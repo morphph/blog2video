@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+    .title .highlight {
+      color: #3B82F6;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .check-item {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 14px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .check-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+    .check-icon.purple {
+      background: rgba(139, 92, 246, 0.2);
+      color: #8B5CF6;
+    }
+    .check-icon.yellow {
+      background: rgba(245, 158, 11, 0.2);
+      color: #F59E0B;
+    }
+    .check-icon.red {
+      background: rgba(239, 68, 68, 0.2);
+      color: #EF4444;
+    }
+    .check-icon.green {
+      background: rgba(16, 185, 129, 0.2);
+      color: #10B981;
+    }
+    .check-content {
+      flex: 1;
+    }
+    .check-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #FFFFFF;
+    }
+    .check-desc {
+      font-size: 21px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .check-desc .code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 19px;
+    }
+    .check-item.important {
+      border-left: 4px solid #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">CHECKLIST</div>
+    <div class="title">提示词工程<span class="highlight">实操清单</span></div>
+
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-icon purple">1</div>
+        <div class="check-content">
+          <div class="check-title">拆分静态与动态</div>
+          <div class="check-desc">静态规则固定复用，动态上下文按需注入</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon yellow">2</div>
+        <div class="check-content">
+          <div class="check-title">每个工具写使用手册</div>
+          <div class="check-desc">BashTool 说明书 <span class="code">370 行</span>，写满禁止操作</div>
+        </div>
+      </div>
+
+      <div class="check-item important">
+        <div class="check-icon red">3</div>
+        <div class="check-content">
+          <div class="check-title">先读后改铁律</div>
+          <div class="check-desc">没读过文件？不让你改。防止凭空覆盖</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon green">4</div>
+        <div class="check-content">
+          <div class="check-title">Fail-closed 安全默认值</div>
+          <div class="check-desc">忘了声明安全属性？默认"不安全、会写入"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

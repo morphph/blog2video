@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+    .main-title .accent { color: #3B82F6; }
+    .layers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .layer-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .layer-card.session { border-left: 4px solid #8B5CF6; }
+    .layer-card.turn { border-left: 4px solid #EF4444; }
+    .layer-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .layer-name {
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .layer-card.session .layer-name { color: #8B5CF6; }
+    .layer-card.turn .layer-name { color: #EF4444; }
+    .layer-subtitle {
+      font-size: 22px;
+      color: #6B7280;
+      font-weight: 600;
+    }
+    .layer-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .layer-desc em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .code-num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #EF4444;
+      margin-top: 4px;
+    }
+    .code-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">QUERYENGINE</div>
+    <div class="main-title"><span class="accent">两层分离</span>的设计</div>
+    <div class="layers">
+      <div class="layer-card session">
+        <div class="layer-header">
+          <div class="layer-name">Session Layer</div>
+          <div class="layer-subtitle">会话层</div>
+        </div>
+        <div class="layer-desc">跨轮次状态管理<br>维护<em>累计 Token</em>、追踪<em>权限记录</em></div>
+      </div>
+      <div class="layer-card turn">
+        <div class="layer-header">
+          <div class="layer-name">Turn Layer</div>
+          <div class="layer-subtitle">执行引擎</div>
+        </div>
+        <div class="layer-desc">核心 while(true) 循环<br>预处理 → 组装上下文 → <em>调用模型</em> → 执行工具</div>
+        <div class="code-num">1,730</div>
+        <div class="code-label">行核心代码</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

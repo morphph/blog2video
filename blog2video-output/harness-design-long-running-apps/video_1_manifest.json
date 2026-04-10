@@ -1,0 +1,32 @@
+{
+  "video_number": 1,
+  "title": "AI永远夸自己？Anthropic用GAN思路破局",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    {
+      "slide_number": 1,
+      "file": "slide_1.html",
+      "estimated_duration_seconds": 30
+    },
+    {
+      "slide_number": 2,
+      "file": "slide_2.html",
+      "estimated_duration_seconds": 120
+    },
+    {
+      "slide_number": 3,
+      "file": "slide_3.html",
+      "estimated_duration_seconds": 180
+    },
+    {
+      "slide_number": 4,
+      "file": "slide_4.html",
+      "estimated_duration_seconds": 60
+    },
+    {
+      "slide_number": 5,
+      "file": "slide_5.html",
+      "estimated_duration_seconds": 30
+    }
+  ]
+}

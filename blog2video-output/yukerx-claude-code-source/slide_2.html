@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 56px;
+      color: #FFFFFF;
+    }
+    .slide-title .accent {
+      color: #8B5CF6;
+    }
+    .cards-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 36px 40px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+    }
+    .card-icon {
+      font-size: 44px;
+      flex-shrink: 0;
+      width: 56px;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card-label {
+      font-size: 26px;
+      color: #6B7280;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .card-name {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .card-tool {
+      font-size: 22px;
+      color: #6B7280;
+      margin-top: 8px;
+    }
+    .card.active {
+      border-left: 4px solid #8B5CF6;
+      border-color: rgba(139, 92, 246, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title">三种<span class="accent">安全哲学</span></div>
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-icon">👀</div>
+        <div class="card-content">
+          <div class="card-label">旁观式</div>
+          <div class="card-name" style="color: #F59E0B;">每次操作都要你点允许</div>
+          <div class="card-desc">简单粗暴，但你得一直盯着</div>
+          <div class="card-tool">代表：Cursor</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <div class="card-content">
+          <div class="card-label">隔离式</div>
+          <div class="card-name" style="color: #3B82F6;">在虚拟机里随便折腾</div>
+          <div class="card-desc">安全，但看不到你本地环境</div>
+          <div class="card-tool">代表：GitHub Copilot Agent</div>
+        </div>
+      </div>
+      <div class="card active">
+        <div class="card-icon">🛡️</div>
+        <div class="card-content">
+          <div class="card-label">安检式</div>
+          <div class="card-name" style="color: #10B981;">直接用你电脑 + 精密安检</div>
+          <div class="card-desc">最难，但AI能用你的真实环境</div>
+          <div class="card-tool">代表：Claude Code</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

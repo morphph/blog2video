@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .main-title {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 36px;
+    }
+    .main-title .green { color: #10B981; }
+    .main-title .red { color: #EF4444; }
+    .stats-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .stat-box {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 12px;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .stat-box.continue .num { color: #10B981; }
+    .stat-box.terminate .num { color: #EF4444; }
+    .stat-box .label {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .examples {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .example-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+    }
+    .example-card.green { border-left: 4px solid #10B981; }
+    .example-card.yellow { border-left: 4px solid #F59E0B; }
+    .example-card .icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .example-card .text {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .example-card .text em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .principle-bar {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .principle-bar .text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .principle-bar .text em {
+      font-style: normal;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">14 TRANSITIONS</div>
+    <div class="main-title"><span class="green">7 种续行</span> + <span class="red">7 种终止</span></div>
+    <div class="stats-row">
+      <div class="stat-box continue">
+        <div class="num">7</div>
+        <div class="label">续行原因</div>
+      </div>
+      <div class="stat-box terminate">
+        <div class="num">7</div>
+        <div class="label">终止原因</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="example-card green">
+        <div class="icon">&#8593;</div>
+        <div class="text">输出限制升级：<em>8K → 64K</em> 乐观策略</div>
+      </div>
+      <div class="example-card yellow">
+        <div class="icon">&#128230;</div>
+        <div class="text">被动压缩重试：413 → <em>紧急压缩</em></div>
+      </div>
+      <div class="example-card green">
+        <div class="icon">&#128736;</div>
+        <div class="text">工具调用：<em>最常见</em>的续行原因</div>
+      </div>
+    </div>
+    <div class="principle-bar">
+      <div class="text">每次迭代都能精确说出<br><em>"我为什么在这里"</em></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .main-title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+    .main-title .accent { color: #3B82F6; }
+    .pipeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .pipe-step {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+    .pipe-num {
+      font-size: 32px;
+      font-weight: 800;
+      flex-shrink: 0;
+      width: 44px;
+      text-align: center;
+    }
+    .pipe-step:nth-child(1) { border-left: 4px solid #10B981; }
+    .pipe-step:nth-child(1) .pipe-num { color: #10B981; }
+    .pipe-step:nth-child(2) { border-left: 4px solid #3B82F6; }
+    .pipe-step:nth-child(2) .pipe-num { color: #3B82F6; }
+    .pipe-step:nth-child(3) { border-left: 4px solid #8B5CF6; }
+    .pipe-step:nth-child(3) .pipe-num { color: #8B5CF6; }
+    .pipe-info {
+      flex: 1;
+    }
+    .pipe-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .pipe-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .pipe-badge {
+      font-size: 16px;
+      color: #10B981;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">PREPROCESSING PIPELINE</div>
+    <div class="main-title"><span class="accent">五级</span>预处理管道</div>
+    <div class="pipeline">
+      <div class="pipe-step">
+        <div class="pipe-num">1</div>
+        <div class="pipe-info">
+          <div class="pipe-name">工具结果预算</div>
+          <div class="pipe-desc">规则控制输出总量</div>
+        </div>
+        <div class="pipe-badge">零成本</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">2</div>
+        <div class="pipe-info">
+          <div class="pipe-name">片段裁剪</div>
+          <div class="pipe-desc">移除过时片段</div>
+        </div>
+        <div class="pipe-badge">零成本</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">3</div>
+        <div class="pipe-info">
+          <div class="pipe-name">微压缩</div>
+          <div class="pipe-desc">感知缓存状态，零 API 调用</div>
+        </div>
+        <div class="pipe-badge">零成本</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

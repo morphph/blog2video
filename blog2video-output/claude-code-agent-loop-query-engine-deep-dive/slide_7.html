@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .main-title {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 36px;
+    }
+    .main-title .accent { color: #F59E0B; }
+    .heavy-steps {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .heavy-step {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 20px;
+      text-align: left;
+    }
+    .heavy-step.yellow { border-left: 4px solid #F59E0B; }
+    .heavy-step.red { border-left: 4px solid #EF4444; }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .step-num {
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .heavy-step.yellow .step-num { color: #F59E0B; }
+    .heavy-step.red .step-num { color: #EF4444; }
+    .step-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .step-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .step-desc em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .data-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .data-tag {
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 6px 14px;
+    }
+    .data-tag.red {
+      color: #EF4444;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .principle-card {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .principle-card .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .principle-card .text em {
+      font-style: normal;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">CORE PRINCIPLE</div>
+    <div class="main-title"><span class="accent">预处理</span>比后处理更重要</div>
+    <div class="heavy-steps">
+      <div class="heavy-step yellow">
+        <div class="step-header">
+          <div class="step-num">4</div>
+          <div class="step-name">上下文坍缩</div>
+        </div>
+        <div class="step-desc">旧轮次"归档"成<em>投影视图</em></div>
+      </div>
+      <div class="heavy-step red">
+        <div class="step-header">
+          <div class="step-num">5</div>
+          <div class="step-name">自动压缩</div>
+        </div>
+        <div class="step-desc">接近<em>上下文天花板</em>时触发</div>
+        <div class="data-row">
+          <div class="data-tag red">93.5% 触发</div>
+          <div class="data-tag red">13K 缓冲区</div>
+          <div class="data-tag red">20K 摘要</div>
+        </div>
+      </div>
+    </div>
+    <div class="principle-card">
+      <div class="text">"模型<em>看到什么</em>"<br>比"模型说了什么"价值更高</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 44px;
+    }
+    .title .accent {
+      color: #F59E0B;
+    }
+    .core-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .core-text {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .core-text .yellow {
+      color: #F59E0B;
+    }
+    .actions {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .action-item {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .action-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      width: 40px;
+      text-align: center;
+      color: #8B5CF6;
+      font-weight: 800;
+    }
+    .action-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .action-text .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .bottom-insight {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+    .insight-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .insight-text .green {
+      color: #10B981;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">今天的架构 = 明天的<span class="accent">管理税</span></div>
+    <div class="core-card">
+      <div class="core-text">
+        每次模型升级<br>
+        都该给Agent系统<span class="yellow">开一次刀</span>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="action-item">
+        <div class="action-icon">1</div>
+        <div class="action-text">
+          列出所有自定义组件<br>
+          写上<span class="em">"它补偿了什么不足"</span>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-icon">2</div>
+        <div class="action-text">
+          模型升级时<span class="em">逐个关闭测试</span><br>
+          不变差的，果断拆掉
+        </div>
+      </div>
+    </div>
+    <div class="bottom-insight">
+      <div class="insight-text">
+        设计空间在<span class="green">移动</span>，不是在缩小<br>
+        旧脚手架拆了，新楼需要新脚手架
+      </div>
+    </div>
+  </div>
+</body>
+</html>

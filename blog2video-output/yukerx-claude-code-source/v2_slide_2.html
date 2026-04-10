@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+    .title .highlight {
+      color: #F59E0B;
+    }
+    .analogy-container {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .analogy-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .analogy-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .analogy-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .analogy-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .flow-section {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .flow-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #8B5CF6;
+      margin-bottom: 16px;
+    }
+    .flow-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .flow-desc .code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 22px;
+    }
+    .divider-section {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: left;
+    }
+    .divider-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #F59E0B;
+      margin-bottom: 12px;
+    }
+    .divider-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .divider-item {
+      flex: 1;
+    }
+    .divider-label {
+      font-size: 20px;
+      color: #6B7280;
+      margin-bottom: 6px;
+    }
+    .divider-value {
+      font-size: 22px;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">PRINCIPLE</div>
+    <div class="title">提示词像<span class="highlight">编译器</span>拼装</div>
+
+    <div class="analogy-container">
+      <div class="analogy-card">
+        <div class="analogy-icon">📋</div>
+        <div class="analogy-title">纸质菜单</div>
+        <div class="analogy-desc">固定菜品<br>印一次不变</div>
+      </div>
+      <div class="analogy-card">
+        <div class="analogy-icon">📝</div>
+        <div class="analogy-title">小黑板</div>
+        <div class="analogy-desc">今日特价<br>每天更新</div>
+      </div>
+    </div>
+
+    <div class="flow-section">
+      <div class="flow-title">getSystemPrompt 函数</div>
+      <div class="flow-desc"><span class="code">7 层动态拼装</span> — 角色定义、工具规则、语气风格、Git 分支、项目配置、用户偏好...</div>
+    </div>
+
+    <div class="divider-section">
+      <div class="divider-title">DYNAMIC_BOUNDARY 分界线</div>
+      <div class="divider-row">
+        <div class="divider-item">
+          <div class="divider-label">▲ 静态缓存</div>
+          <div class="divider-value">角色 · 规则 · 风格</div>
+        </div>
+        <div class="divider-item">
+          <div class="divider-label">▼ 动态注入</div>
+          <div class="divider-value">分支 · 配置 · 偏好</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

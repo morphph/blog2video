@@ -1,0 +1,302 @@
+[
+  {
+    "text": "你写过的最长提示词有多少行？100 行？500 行？Claude Code 光一个 Bash 工具的说明书就 370 行。更离谱的是，它有 42 个这样的工具，但大部分你根本看不到。因为它们是按需加载的。",
+    "pronounce_text": "你写过的最长提示词有多少行？一百行？五百行？Claude Code光一个Bash工具的说明书就三百七十行。更离谱的是，它有四十二个这样的工具，但大部分你根本看不到。因为它们是按需加载的。",
+    "time_begin": 0,
+    "time_end": 15213.560090702947,
+    "text_begin": 0,
+    "text_end": 102,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 93
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Claude Code 的提示词架构和工具管理系统。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Claude Code的提示词架构和工具管理系统。",
+    "time_begin": 15372,
+    "time_end": 28193.904761904763,
+    "text_begin": 102,
+    "text_end": 185,
+    "pronounce_text_begin": 93,
+    "pronounce_text_end": 171
+  },
+  {
+    "text": "上期我们聊了 Claude Code 的 9 层安全审查。今天聊一个更底层的问题：它怎么把提示词变成编译器的输出。",
+    "pronounce_text": "上期我们聊了Claude Code的九层安全审查。今天聊一个更底层的问题：它怎么把提示词变成编译器的输出。",
+    "time_begin": 28332,
+    "time_end": 36765.333333333336,
+    "text_begin": 185,
+    "text_end": 242,
+    "pronounce_text_begin": 171,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "打开任何一个 AI 编程工具，你觉得它的提示词是什么样的？大概是一段精心打磨的文字，对吧。",
+    "pronounce_text": "打开任何一个AI编程工具，你觉得它的提示词是什么样的？大概是一段精心打磨的文字，对吧。",
+    "time_begin": 36936,
+    "time_end": 45404.163265306124,
+    "text_begin": 242,
+    "text_end": 287,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 267
+  },
+  {
+    "text": "但 Claude Code 完全不是这么玩的。",
+    "pronounce_text": "但Claude Code完全不是这么玩的。",
+    "time_begin": 45576,
+    "time_end": 47693.50566893424,
+    "text_begin": 287,
+    "text_end": 310,
+    "pronounce_text_begin": 267,
+    "pronounce_text_end": 288
+  },
+  {
+    "text": "打个比方。你去一家餐厅吃饭。普通餐厅的做法是把所有菜印在一张大菜单上，不管你要不要，全摆在面前。菜越多，菜单越厚，你翻得越慢。",
+    "pronounce_text": "打个比方。你去一家餐厅吃饭。普通餐厅的做法是把所有菜印在一张大菜单上，不管你要不要，全摆在面前。菜越多，菜单越厚，你翻得越慢。",
+    "time_begin": 47844,
+    "time_end": 60747.1746031746,
+    "text_begin": 310,
+    "text_end": 373,
+    "pronounce_text_begin": 288,
+    "pronounce_text_end": 351
+  },
+  {
+    "text": "Claude Code 的做法不一样。它的菜单分两部分。固定菜品印在纸质菜单上，每桌都一样，印一次就行。今日特价呢？写在门口的小黑板上，每天换。",
+    "pronounce_text": "Claude Code的做法不一样。它的菜单分两部分。固定菜品印在纸质菜单上，每桌都一样，印一次就行。今日特价呢？写在门口的小黑板上，每天换。",
+    "time_begin": 60912,
+    "time_end": 75440.57142857142,
+    "text_begin": 373,
+    "text_end": 445,
+    "pronounce_text_begin": 351,
+    "pronounce_text_end": 422
+  },
+  {
+    "text": "提示词也是一样。打开 src/constants/prompts.ts，你会看到一个叫 getSystemPrompt 的函数。它把系统提示词分成 7 层，动态拼装。",
+    "pronounce_text": "提示词也是一样。打开src，constants，prompts.ts，你会看到一个叫getSystemPrompt的函数。它把系统提示词分成七层，动态拼装。",
+    "time_begin": 75600,
+    "time_end": 87655.6462585034,
+    "text_begin": 445,
+    "text_end": 528,
+    "pronounce_text_begin": 422,
+    "pronounce_text_end": 500
+  },
+  {
+    "text": "中间有一条分界线，叫 SYSTEM_PROMPT_DYNAMIC_BOUNDARY。这条线以上是静态部分：角色定义、工具使用规则、语气风格。不管你聊什么项目，这些都不变。",
+    "pronounce_text": "中间有一条分界线，叫SYSTEM，PROMPT，DYNAMIC，BOUNDARY。这条线以上是静态部分：角色定义、工具使用规则、语气风格。不管你聊什么项目，这些都不变。",
+    "time_begin": 87804,
+    "time_end": 101821.73242630386,
+    "text_begin": 528,
+    "text_end": 613,
+    "pronounce_text_begin": 500,
+    "pronounce_text_end": 584
+  },
+  {
+    "text": "这条线以下是动态部分。你当前的 Git 分支是什么？项目根目录有没有 CLAUDE.md？你之前告诉它\"我喜欢用 TypeScript\"？这些信息每次对话都不一样，每次都要重新注入。",
+    "pronounce_text": "这条线以下是动态部分。你当前的Git分支是什么？项目根目录有没有CLAUDE.md？你之前告诉它\"我喜欢用TypeScript\"？这些信息每次对话都不一样，每次都要重新注入。",
+    "time_begin": 101988,
+    "time_end": 115274.30385487528,
+    "text_begin": 613,
+    "text_end": 704,
+    "pronounce_text_begin": 584,
+    "pronounce_text_end": 671
+  },
+  {
+    "text": "为什么要这么费劲地拆分？答案是三个字：省 token。",
+    "pronounce_text": "为什么要这么费劲地拆分？答案是三个字：省token。",
+    "time_begin": 115416,
+    "time_end": 120261.85034013605,
+    "text_begin": 704,
+    "text_end": 731,
+    "pronounce_text_begin": 671,
+    "pronounce_text_end": 697
+  },
+  {
+    "text": "静态部分因为每次都一样，Anthropic 的 API 支持提示词缓存。命中缓存后，这些 token 不用重新处理，速度更快，费用直接打折。动态部分虽然每次都变，但它只占总提示词的一小部分。",
+    "pronounce_text": "静态部分因为每次都一样，Anthropic的API支持提示词缓存。命中缓存后，这些token不用重新处理，速度更快，费用直接打折。动态部分虽然每次都变，但它只占总提示词的一小部分。",
+    "time_begin": 120420,
+    "time_end": 136225.66893424036,
+    "text_begin": 731,
+    "text_end": 826,
+    "pronounce_text_begin": 697,
+    "pronounce_text_end": 787
+  },
+  {
+    "text": "这就是工业级提示词工程的核心思想：不是把提示词写得更好，而是把提示词的结构设计得更好。",
+    "pronounce_text": "这就是工业级提示词工程的核心思想：不是把提示词写得更好，而是把提示词的结构设计得更好。",
+    "time_begin": 136368,
+    "time_end": 144534.3038548753,
+    "text_begin": 826,
+    "text_end": 869,
+    "pronounce_text_begin": 787,
+    "pronounce_text_end": 830
+  },
+  {
+    "text": "再看工具管理。42 个工具，如果全部塞进系统提示词，光工具描述就要吃掉几千个 token。Claude Code 怎么解决？",
+    "pronounce_text": "再看工具管理。四十二个工具，如果全部塞进系统提示词，光工具描述就要吃掉几千个token。Claude Code怎么解决？",
+    "time_begin": 144684,
+    "time_end": 154475.7006802721,
+    "text_begin": 869,
+    "text_end": 931,
+    "pronounce_text_begin": 830,
+    "pronounce_text_end": 890
+  },
+  {
+    "text": "它搞了一个叫 ToolSearchTool 的东西。你可以把它想象成手机里的 App Store。手机出厂不会预装几百个 App，而是你需要什么就搜什么、下载什么。Claude Code 也一样，大部分工具默认不加载。",
+    "pronounce_text": "它搞了一个叫ToolSearchTool的东西。你可以把它想象成手机里的App Store。手机出厂不会预装几百个App，而是你需要什么就搜什么、下载什么。Claude Code也一样，大部分工具默认不加载。",
+    "time_begin": 154620,
+    "time_end": 169485.26077097506,
+    "text_begin": 931,
+    "text_end": 1040,
+    "pronounce_text_begin": 890,
+    "pronounce_text_end": 994
+  },
+  {
+    "text": "当大模型觉得\"我可能需要一个操作数据库的工具\"，它就调用 ToolSearchTool 去搜索，按需加载。",
+    "pronounce_text": "当大模型觉得\"我可能需要一个操作数据库的工具\"，它就调用ToolSearchTool去搜索，按需加载。",
+    "time_begin": 169632,
+    "time_end": 177206.19501133787,
+    "text_begin": 1040,
+    "text_end": 1093,
+    "pronounce_text_begin": 994,
+    "pronounce_text_end": 1045
+  },
+  {
+    "text": "还有一个极端模式。设置 CLAUDE_CODE_SIMPLE 等于 true，42 个工具直接缩减到 3 个：Bash、读文件、改文件。这是给极简主义者留的后门。",
+    "pronounce_text": "还有一个极端模式。设置CLAUDE，CODE，SIMPLE等于true，四十二个工具直接缩减到三个：Bash、读文件、改文件。这是给极简主义者留的后门。",
+    "time_begin": 177372,
+    "time_end": 191563.8820861678,
+    "text_begin": 1093,
+    "text_end": 1174,
+    "pronounce_text_begin": 1045,
+    "pronounce_text_end": 1121
+  },
+  {
+    "text": "也说明一个道理：工具不是越多越好，而是够用就行。",
+    "pronounce_text": "也说明一个道理：工具不是越多越好，而是够用就行。",
+    "time_begin": 191763.8820861678,
+    "time_end": 196435.5827664399,
+    "text_begin": 1174,
+    "text_end": 1198,
+    "pronounce_text_begin": 1121,
+    "pronounce_text_end": 1145
+  },
+  {
+    "text": "那这套架构对你有什么启发？这里有一份实操清单。",
+    "pronounce_text": "那这套架构对你有什么启发？这里有一份实操清单。",
+    "time_begin": 196596,
+    "time_end": 200629.15192743763,
+    "text_begin": 1198,
+    "text_end": 1221,
+    "pronounce_text_begin": 1145,
+    "pronounce_text_end": 1168
+  },
+  {
+    "text": "检查你现在的提示词，能不能拆成\"静态规则\"和\"动态上下文\"两部分。静态部分固定复用，动态部分每次按需注入。光这一招，API 调用成本就能降低一半以上。",
+    "pronounce_text": "检查你现在的提示词，能不能拆成\"静态规则\"和\"动态上下文\"两部分。静态部分固定复用，动态部分每次按需注入。光这一招，API调用成本就能降低一半以上。",
+    "time_begin": 200772,
+    "time_end": 215045.15192743763,
+    "text_begin": 1221,
+    "text_end": 1296,
+    "pronounce_text_begin": 1168,
+    "pronounce_text_end": 1242
+  },
+  {
+    "text": "再看工具设计。每个工具有没有自己的 prompt.ts，也就是写给 AI 看的使用手册？Claude Code 的 BashTool 说明书 370 行，里面写满了\"绝对不要做什么\"。",
+    "pronounce_text": "再看工具设计。每个工具有没有自己的prompt.ts，也就是写给AI看的使用手册？Claude Code的BashTool说明书三百七十行，里面写满了\"绝对不要做什么\"。",
+    "time_begin": 215208,
+    "time_end": 227600.33560090704,
+    "text_begin": 1296,
+    "text_end": 1388,
+    "pronounce_text_begin": 1242,
+    "pronounce_text_end": 1327
+  },
+  {
+    "text": "比如 Git Safety Protocol：永远不要更新 git config，永远不要跳过 hooks，永远创建新 commit 而不是 amend。",
+    "pronounce_text": "比如Git Safety Protocol：永远不要更新git config，永远不要跳过hooks，永远创建新commit而不是amend。",
+    "time_begin": 227772,
+    "time_end": 237354.72108843538,
+    "text_begin": 1388,
+    "text_end": 1465,
+    "pronounce_text_begin": 1327,
+    "pronounce_text_end": 1398
+  },
+  {
+    "text": "还有一条铁律值得学。FileEditTool 强制要求\"先读后改\"。没用 Read 工具读过文件？对不起，不让你改。这就是为什么 Claude Code 不会凭空写一段代码覆盖你的文件。",
+    "pronounce_text": "还有一条铁律值得学。FileEditTool强制要求\"先读后改\"。没用Read工具读过文件？对不起，不让你改。这就是为什么Claude Code不会凭空写一段代码覆盖你的文件。",
+    "time_begin": 237492,
+    "time_end": 252148.2811791383,
+    "text_begin": 1465,
+    "text_end": 1558,
+    "pronounce_text_begin": 1398,
+    "pronounce_text_end": 1486
+  },
+  {
+    "text": "最后看安全默认值。buildTool 工厂的默认设置是 isConcurrencySafe 等于 false，isReadOnly 等于 false。什么意思？",
+    "pronounce_text": "最后看安全默认值。buildTool工厂的默认设置是isConcurrencySafe等于false，isReadOnly等于false。什么意思？",
+    "time_begin": 252288,
+    "time_end": 261777.84126984127,
+    "text_begin": 1558,
+    "text_end": 1638,
+    "pronounce_text_begin": 1486,
+    "pronounce_text_end": 1560
+  },
+  {
+    "text": "如果工具作者忘了声明安全属性，系统自动假设它\"不安全、会写入\"。宁可过度保守，也不冒险。",
+    "pronounce_text": "如果工具作者忘了声明安全属性，系统自动假设它\"不安全、会写入\"。宁可过度保守，也不冒险。",
+    "time_begin": 261977.84126984127,
+    "time_end": 270875.57369614515,
+    "text_begin": 1638,
+    "text_end": 1682,
+    "pronounce_text_begin": 1560,
+    "pronounce_text_end": 1604
+  },
+  {
+    "text": "这就是 fail-closed 思维。",
+    "pronounce_text": "这就是fail-closed思维。",
+    "time_begin": 271044,
+    "time_end": 273068.6258503401,
+    "text_begin": 1682,
+    "text_end": 1701,
+    "pronounce_text_begin": 1604,
+    "pronounce_text_end": 1621
+  },
+  {
+    "text": "最后拉回来看全局。好的提示词不是写出来的，是像编译器一样拼装出来的。静态缓存加动态注入加按需加载，这三板斧才是工业级提示词工程。",
+    "pronounce_text": "最后拉回来看全局。好的提示词不是写出来的，是像编译器一样拼装出来的。静态缓存加动态注入加按需加载，这三板斧才是工业级提示词工程。",
+    "time_begin": 273240,
+    "time_end": 286398.5941043084,
+    "text_begin": 1701,
+    "text_end": 1765,
+    "pronounce_text_begin": 1621,
+    "pronounce_text_end": 1685
+  },
+  {
+    "text": "今天带走一个动作：打开你最常用的 AI 提示词，把它拆成两半。上面写死规则，下面注入变量。试一次，你会发现效果和成本都会有明显变化。",
+    "pronounce_text": "今天带走一个动作：打开你最常用的AI提示词，把它拆成两半。上面写死规则，下面注入变量。试一次，你会发现效果和成本都会有明显变化。",
+    "time_begin": 286560,
+    "time_end": 299126.48526077095,
+    "text_begin": 1765,
+    "text_end": 1831,
+    "pronounce_text_begin": 1685,
+    "pronounce_text_end": 1749
+  },
+  {
+    "text": "工具和提示词都搞定了，但聊到第 50 轮对话就超限了怎么办？下一期，我们拆解 Claude Code 怎么管理超长对话的上下文。",
+    "pronounce_text": "工具和提示词都搞定了，但聊到第五十轮对话就超限了怎么办？下一期，我们拆解Claude Code怎么管理超长对话的上下文。",
+    "time_begin": 299268,
+    "time_end": 308804.28117913834,
+    "text_begin": 1831,
+    "text_end": 1895,
+    "pronounce_text_begin": 1749,
+    "pronounce_text_end": 1809
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 308952,
+    "time_end": 314355.1292517007,
+    "text_begin": 1895,
+    "text_end": 1922,
+    "pronounce_text_begin": 1809,
+    "pronounce_text_end": 1835
+  }
+]

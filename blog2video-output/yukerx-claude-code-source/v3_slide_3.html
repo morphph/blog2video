@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 44px;
+      color: #FFFFFF;
+    }
+    .slide-title .accent {
+      color: #3B82F6;
+    }
+    .cards-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .comp-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: left;
+    }
+    .comp-card.highlight {
+      border-left: 4px solid #3B82F6;
+    }
+    .comp-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .comp-icon {
+      font-size: 34px;
+      flex-shrink: 0;
+    }
+    .comp-name {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .comp-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .comp-detail {
+      font-size: 22px;
+      color: #6B7280;
+      line-height: 1.4;
+    }
+    .phase-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .phase-tag {
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 20px;
+      color: #3B82F6;
+      font-weight: 600;
+    }
+    .cache-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: left;
+    }
+    .cache-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .cache-icon {
+      font-size: 34px;
+      flex-shrink: 0;
+    }
+    .cache-name {
+      font-size: 32px;
+      font-weight: 700;
+      color: #F59E0B;
+    }
+    .cache-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title">机制二：<span class="accent">Agent 蜂群</span></div>
+
+    <div class="cards-row">
+      <div class="comp-card highlight">
+        <div class="comp-header">
+          <div class="comp-icon">🐝</div>
+          <div class="comp-name" style="color: #3B82F6;">AgentTool 生成子Agent</div>
+        </div>
+        <div class="comp-desc">注入"自我意识"防止无限递归</div>
+        <div class="comp-detail">每个子Agent知道自己是谁、能做什么</div>
+      </div>
+
+      <div class="comp-card highlight">
+        <div class="comp-header">
+          <div class="comp-icon">🎯</div>
+          <div class="comp-name" style="color: #3B82F6;">Coordinator 模式</div>
+        </div>
+        <div class="comp-desc">四阶段协调多Agent协作</div>
+        <div class="phase-row">
+          <div class="phase-tag">P1 规划</div>
+          <div class="phase-tag">P2 分发</div>
+          <div class="phase-tag">P3 执行</div>
+          <div class="phase-tag">P4 汇总</div>
+        </div>
+      </div>
+
+      <div class="cache-card">
+        <div class="cache-header">
+          <div class="cache-icon">⚡</div>
+          <div class="cache-name">Prompt Cache 优化</div>
+        </div>
+        <div class="cache-desc">相同占位符最大化缓存命中<br>减少重复 Token 消耗</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

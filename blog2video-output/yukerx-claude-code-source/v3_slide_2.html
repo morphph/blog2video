@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .slide-title .accent {
+      color: #8B5CF6;
+    }
+    .principle-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 16px;
+      padding: 36px 40px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .principle-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .principle-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .principle-name {
+      font-size: 34px;
+      font-weight: 700;
+      color: #F59E0B;
+    }
+    .principle-desc {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .principle-detail {
+      font-size: 24px;
+      color: #6B7280;
+      line-height: 1.5;
+    }
+    .kairos-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 16px;
+      padding: 36px 40px;
+      text-align: left;
+    }
+    .kairos-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .kairos-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .kairos-name {
+      font-size: 34px;
+      font-weight: 700;
+      color: #10B981;
+    }
+    .kairos-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .kairos-step {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.2);
+      color: #10B981;
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .step-text .em {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title">机制一：<span class="accent">记忆系统</span></div>
+
+    <div class="principle-card">
+      <div class="principle-header">
+        <div class="principle-icon">🔍</div>
+        <div class="principle-name">Sonnet 筛选记忆</div>
+      </div>
+      <div class="principle-desc">像手机相册搜索一样精准匹配</div>
+      <div class="principle-detail">精确度优先于召回率 —— 宁可少记，不能记错</div>
+    </div>
+
+    <div class="kairos-card">
+      <div class="kairos-header">
+        <div class="kairos-icon">🌙</div>
+        <div class="kairos-name">KAIROS 模式：AI "睡觉"</div>
+      </div>
+      <div class="kairos-steps">
+        <div class="kairos-step">
+          <div class="step-num">1</div>
+          <div class="step-text">按日期写<span class="em">追加式日志</span></div>
+        </div>
+        <div class="kairos-step">
+          <div class="step-num">2</div>
+          <div class="step-text">触发 <span class="em">/dream</span> 技能</div>
+        </div>
+        <div class="kairos-step">
+          <div class="step-num">3</div>
+          <div class="step-text">蒸馏成<span class="em">结构化记忆文件</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

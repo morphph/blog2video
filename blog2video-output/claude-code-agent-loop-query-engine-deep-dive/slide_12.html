@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .main-title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .main-title .accent { color: #10B981; }
+    .threshold-row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .threshold-box {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .threshold-box.green { border-top: 4px solid #10B981; }
+    .threshold-box.yellow { border-top: 4px solid #F59E0B; }
+    .threshold-num {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .threshold-box.green .threshold-num { color: #10B981; }
+    .threshold-box.yellow .threshold-num { color: #F59E0B; }
+    .threshold-label {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .combo-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 24px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .combo-label {
+      font-size: 20px;
+      color: #EF4444;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .combo-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .combo-text em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .danger-bar {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .danger-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .danger-text em {
+      font-style: normal;
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">TOKEN BUDGET</div>
+    <div class="main-title"><span class="accent">双阈值</span>停止机制</div>
+    <div class="threshold-row">
+      <div class="threshold-box green">
+        <div class="threshold-num">90%</div>
+        <div class="threshold-label">完成阈值<br>预算消耗</div>
+      </div>
+      <div class="threshold-box yellow">
+        <div class="threshold-num">500</div>
+        <div class="threshold-label">递减阈值<br>Token / 轮</div>
+      </div>
+    </div>
+    <div class="combo-card">
+      <div class="combo-label">&#9888; 组合判断</div>
+      <div class="combo-text">连续 <em>3 次以上</em>续行<br>每次产出 &lt; 500 Token → <em>停止</em></div>
+    </div>
+    <div class="danger-bar">
+      <div class="danger-text">最危险的 Agent 状态不是报错<br>而是<em>空转</em></div>
+    </div>
+  </div>
+</body>
+</html>

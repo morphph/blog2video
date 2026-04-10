@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .main-title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .main-title .accent { color: #F59E0B; }
+    .state-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .state-title {
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .state-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .state-item {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+      padding-left: 16px;
+      position: relative;
+    }
+    .state-item::before {
+      content: '>';
+      position: absolute;
+      left: 0;
+      color: #6B7280;
+    }
+    .state-item em {
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .highlight-card {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .highlight-card .label {
+      font-size: 20px;
+      color: #F59E0B;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .highlight-card .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">STATE OBJECT</div>
+    <div class="main-title">循环的<span class="accent">自我审计</span></div>
+    <div class="state-card">
+      <div class="state-title">每次迭代携带 State 对象</div>
+      <div class="state-items">
+        <div class="state-item">当前<em>消息历史</em></div>
+        <div class="state-item">自动压缩<em>追踪状态</em></div>
+        <div class="state-item">输出限制<em>恢复计数器</em></div>
+      </div>
+    </div>
+    <div class="highlight-card">
+      <div class="label">&#9733; transition 字段</div>
+      <div class="text">"为什么这次循环要继续"<br>不是调试日志，是决策依据</div>
+    </div>
+  </div>
+</body>
+</html>

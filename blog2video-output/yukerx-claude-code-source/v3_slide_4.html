@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-title {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .slide-title .accent {
+      color: #EF4444;
+    }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .check-item {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .check-item.level-1 {
+      border-left: 4px solid #10B981;
+    }
+    .check-item.level-2 {
+      border-left: 4px solid #F59E0B;
+    }
+    .check-item.level-3 {
+      border-left: 4px solid #EF4444;
+    }
+    .check-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+      width: 44px;
+      text-align: center;
+    }
+    .check-content {
+      flex: 1;
+    }
+    .check-name {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .check-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .token-badge {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 8px;
+      padding: 4px 12px;
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-title">机制三：<span class="accent">三层压缩</span></div>
+
+    <div class="checklist">
+      <div class="check-item level-1">
+        <div class="check-icon">🧹</div>
+        <div class="check-content">
+          <div class="check-name" style="color: #10B981;">微压缩</div>
+          <div class="check-desc">清除旧工具调用结果</div>
+          <div class="token-badge">预算 50,000 tokens</div>
+        </div>
+      </div>
+
+      <div class="check-item level-2">
+        <div class="check-icon">⚠️</div>
+        <div class="check-content">
+          <div class="check-name" style="color: #F59E0B;">自动压缩</div>
+          <div class="check-desc">87% 容量触发 + 熔断器保护</div>
+          <div class="token-badge">预算 5,000 tokens</div>
+        </div>
+      </div>
+
+      <div class="check-item level-3">
+        <div class="check-icon">🔥</div>
+        <div class="check-content">
+          <div class="check-name" style="color: #EF4444;">完全压缩</div>
+          <div class="check-desc">AI 总结全部对话 + 禁止调工具</div>
+          <div class="token-badge">预算 25,000 tokens</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

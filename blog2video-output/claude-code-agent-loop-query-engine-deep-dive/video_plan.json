@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Agent Loop：为什么最强 AI Agent 的核心只是一个 While 循环？",
+    "title_zh": "Agent Loop凭什么只用14种状态？",
+    "word_count": 4560,
+    "slug": "claude-code-agent-loop-query-engine-deep-dive"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "叙述稿围绕一个连贯论证展开（Agent Loop的力量在循环外围），每个部分都在支撑同一个thesis，没有可独立理解的子主题，不拆",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Agent Loop凭什么只用14种状态？"
+      }
+    ]
+  }
+}

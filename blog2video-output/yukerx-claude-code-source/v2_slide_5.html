@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 36px;
+      font-weight: 500;
+    }
+    .quote-mark {
+      font-size: 80px;
+      color: #8B5CF6;
+      opacity: 0.4;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .main-quote {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.5;
+      margin-bottom: 48px;
+      max-width: 850px;
+    }
+    .main-quote .highlight-purple {
+      color: #8B5CF6;
+    }
+    .main-quote .highlight-yellow {
+      color: #F59E0B;
+    }
+    .pillars {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .pillar {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 14px;
+      padding: 28px 16px;
+      text-align: center;
+    }
+    .pillar-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .pillar-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .pillar-desc {
+      font-size: 19px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .takeaway {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .takeaway-label {
+      font-size: 20px;
+      color: #F59E0B;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .takeaway-text {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">SUMMARY</div>
+    <div class="quote-mark">"</div>
+    <div class="main-quote">
+      好的提示词不是<span class="highlight-yellow">写</span>出来的<br>
+      是像<span class="highlight-purple">编译器</span>一样拼装出来的
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">⚡</div>
+        <div class="pillar-title">静态缓存</div>
+        <div class="pillar-desc">规则复用<br>命中缓存</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔄</div>
+        <div class="pillar-title">动态注入</div>
+        <div class="pillar-desc">上下文<br>按需组装</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📦</div>
+        <div class="pillar-title">按需加载</div>
+        <div class="pillar-desc">工具搜索<br>用时再装</div>
+      </div>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-label">今天带走一个动作</div>
+      <div class="takeaway-text">打开你最常用的提示词，拆成两半：上面写死规则，下面注入变量</div>
+    </div>
+  </div>
+</body>
+</html>

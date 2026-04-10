@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .core-principle {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+    .principle-text {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .principle-text .highlight {
+      color: #8B5CF6;
+    }
+    .flow-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .flow-step {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .flow-step.old {
+      border-left: 4px solid #EF4444;
+    }
+    .flow-step.new {
+      border-left: 4px solid #10B981;
+    }
+    .flow-step.result {
+      border-left: 4px solid #F59E0B;
+    }
+    .step-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+      width: 48px;
+      text-align: center;
+    }
+    .step-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .step-text .em {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .step-text .red {
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .step-text .green {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .step-text .yellow {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .arrow {
+      font-size: 28px;
+      color: #6B7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">每个组件 = 一个<span class="accent">能力假设</span></div>
+    <div class="core-principle">
+      <div class="principle-text">
+        架构里的每个组件<br>
+        都是对<span class="highlight">模型能力不足</span>的补偿
+      </div>
+    </div>
+    <div class="flow-container">
+      <div class="flow-step old">
+        <div class="step-icon">4.5</div>
+        <div class="step-text">
+          <span class="red">上下文焦虑</span>——快到极限就急着收尾<br>
+          必须用Sprint分解来兜底
+        </div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="flow-step new">
+        <div class="step-icon">4.6</div>
+        <div class="step-text">
+          <span class="green">连续编程2小时7分钟</span><br>
+          完全不需要Sprint中断
+        </div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="flow-step result">
+        <div class="step-icon">!</div>
+        <div class="step-text">
+          假设过期 → 组件就是<span class="yellow">管理税</span><br>
+          架构不是资产，是<span class="em">待验证的假设清单</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

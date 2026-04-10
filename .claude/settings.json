@@ -43,8 +43,7 @@
           {
             "type": "command",
             "command": "bash scripts/auto-deliver-ec2.sh",
-            "timeout": 120,
-            "if": "Bash(node scripts/render-all*)"
+            "timeout": 120
           }
         ]
       }

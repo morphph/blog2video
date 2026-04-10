@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Scaling Managed Agents: Decoupling the Brain from the Hands",
+    "title_zh": "Anthropic把Agent拆成\"脑\"和\"手\"，性能暴涨90%？",
+    "word_count": 11700,
+    "slug": "managed-agents"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕一个连贯论证展开——从harness假设过期、单容器痛点、到解耦方案及其在安全/性能/扩展性上的收益——每个部分都在支撑同一个thesis，拆分会破坏递进逻辑",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Anthropic把Agent拆成\"脑\"和\"手\"，性能暴涨90%？"
+      }
+    ]
+  }
+}

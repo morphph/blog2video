@@ -2,7 +2,7 @@
 
 ## Hook
 
-全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇博客，解释为什么 Anthropic 和 OpenAI 正在悄悄锁死你的 Agent 记忆。你换模型只要改一行代码，但你换不掉你积累了三个月的偏好、习惯和交互历史。今天不聊模型能力。只聊一个正在发生、但大多数人还没注意到的事。
+全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇博客权威解释。核心观点就四个字：Your Harness, Your Memory。Agent 的 Harness 和记忆是深度绑定的。用了闭源的 Harness，就等于把记忆的所有权交了出去。而这恰恰是 Anthropic、OpenAI 这些大厂正在主动推进的锁定策略。今天只聊这一件事。
 
 ## Brand Intro
 

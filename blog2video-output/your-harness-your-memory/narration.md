@@ -2,7 +2,7 @@
 
 ## Hook
 
-全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇博客权威解释。核心观点就四个字：Your Harness, Your Memory。Agent 的 Harness 和记忆是深度绑定的。用了闭源的 Harness，就等于把记忆的所有权交了出去。而这恰恰是 Anthropic、OpenAI 这些大厂正在主动推进的锁定策略。今天只聊这一件事。
+全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇关于 Agent Harness 的深度解读。核心观点就四个字：Your Harness, Your Memory。Agent 的 Harness 和记忆是深度绑定的。用了闭源的 Harness，就等于把记忆的所有权交了出去。而这恰恰是 Anthropic、OpenAI 这些大厂正在主动推进的锁定策略。今天只聊这一件事。
 
 ## Brand Intro
 

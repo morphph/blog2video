@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "Your Harness, Your Memory",
+    "title_zh": "你的AI记忆，正在被大厂悄悄锁死？",
+    "word_count": 2200,
+    "slug": "your-harness-your-memory"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "完整的递进论证链（harness必要性→memory耦合→闭源代价→大厂行为→动机→加速锁定→tradeoff），每个段落依赖前一段的前提，拆分会破坏逻辑完整性。11分钟时长也在单视频合理范围内。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "sections": ["Hook", "Brand Intro", "Agent Harness 不会消失", "记忆不是插件，而是 Harness 的核心", "闭源 Harness 的三层代价", "大厂正在主动推进锁定", "为什么他们要这么做", "锁定效应会随时间加速", "开放 Harness 的代价与现实", "Synthesis", "Closing"],
+        "estimated_duration_minutes": 11,
+        "word_count": 2200
+      }
+    ]
+  }
+}

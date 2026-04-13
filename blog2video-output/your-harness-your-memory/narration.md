@@ -2,7 +2,7 @@
 
 ## Hook
 
-LangChain 创始人 Harrison Chase 刚发了一篇博客，标题四个字：Your Harness, Your Memory。核心观点只有一句话：你用的 Agent 越久，你就越走不掉。不是因为模型好，是因为你的记忆被锁住了。今天不聊模型能力。只聊一个大多数人还没意识到的问题：你的 Agent 记忆，到底归谁？
+全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇博客，解释为什么 Anthropic 和 OpenAI 正在悄悄锁死你的 Agent 记忆。你换模型只要改一行代码，但你换不掉你积累了三个月的偏好、习惯和交互历史。今天不聊模型能力。只聊一个正在发生、但大多数人还没注意到的事。
 
 ## Brand Intro
 

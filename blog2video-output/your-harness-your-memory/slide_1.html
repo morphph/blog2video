@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .series-label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 36px;
+      font-weight: 600;
+    }
+    .main-title {
+      font-size: 76px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .main-title .highlight {
+      color: #EF4444;
+    }
+    .main-title .accent {
+      color: #F59E0B;
+    }
+    .subtitle {
+      font-size: 30px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+      line-height: 1.5;
+    }
+    .source-pill {
+      background: #1A1A30;
+      color: #8B8BA0;
+      font-size: 22px;
+      padding: 12px 28px;
+      border-radius: 100px;
+      margin-bottom: 48px;
+    }
+    .pain-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .pain-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 20px 28px;
+      font-size: 28px;
+      color: #F0F0F0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .pain-icon {
+      font-size: 26px;
+      color: #EF4444;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .bottom-caption {
+      font-size: 28px;
+      color: #6B7280;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-label">精读AI · Agent架构</div>
+    <div class="main-title">
+      <span class="accent">Agent记忆</span><br>
+      正在被<span class="highlight">悄悄锁死</span>？
+    </div>
+    <div class="subtitle">Harrison Chase / LangChain 创始人深度解读</div>
+    <div class="source-pill">LANGCHAIN BLOG《Your Harness, Your Memory》</div>
+    <div class="pain-cards">
+      <div class="pain-card">
+        <span class="pain-icon">&#10005;</span>
+        对话状态存在别人服务器上
+      </div>
+      <div class="pain-card">
+        <span class="pain-icon">&#10005;</span>
+        记忆格式无法迁移到其他平台
+      </div>
+      <div class="pain-card">
+        <span class="pain-icon">&#10005;</span>
+        长期记忆藏在 API 后面，零可见性
+      </div>
+    </div>
+    <div class="bottom-caption">你的 Agent 记忆，到底归谁所有？</div>
+  </div>
+</body>
+</html>

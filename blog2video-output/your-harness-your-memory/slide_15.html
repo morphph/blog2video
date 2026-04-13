@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .takeaway-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    .takeaway-item {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+    }
+    .takeaway-num {
+      font-size: 32px;
+      font-weight: 900;
+      color: #8B5CF6;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+    .takeaway-text {
+      font-size: 28px;
+      line-height: 1.5;
+      color: #E0E0F0;
+    }
+    .takeaway-text .em {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .takeaway-text .em-red {
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #8B5CF6, transparent);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+    .final-line {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .final-line .key {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">TAKEAWAYS</div>
+    <div class="title">核心要点</div>
+    <div class="takeaway-list">
+      <div class="takeaway-item">
+        <div class="takeaway-num">1</div>
+        <div class="takeaway-text">模型能力竞争正在收敛，真正的战场已转移到<span class="em">谁拥有用户的状态和记忆</span></div>
+      </div>
+      <div class="takeaway-item">
+        <div class="takeaway-num">2</div>
+        <div class="takeaway-text">记忆的锁定效应<span class="em-red">加速增长</span>，等到被锁定了再迁移，代价已高到迁不动</div>
+      </div>
+      <div class="takeaway-item">
+        <div class="takeaway-num">3</div>
+        <div class="takeaway-text">选择<span class="em">开放的 Harness</span>，选择你能控制的记忆存储，这是长期唯一真正拥有的东西</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="final-line">
+      我的 Agent 记忆<br>
+      <span class="key">存在哪里？我能带走吗？</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .title .accent { color: #F59E0B; }
+    .level-card {
+      width: 100%;
+      background: #1A1A2E;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .level-header {
+      background: rgba(245, 158, 11, 0.12);
+      border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .level-badge {
+      background: #F59E0B;
+      color: #0D0D1A;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 6px;
+    }
+    .level-severity {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 600;
+    }
+    .level-body {
+      padding: 28px 28px;
+    }
+    .level-example {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .level-example .tag {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 6px;
+      padding: 3px 12px;
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 600;
+    }
+    .problem-box {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-left: 4px solid #EF4444;
+      border-radius: 10px;
+      padding: 20px 24px;
+    }
+    .problem-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .problem-text .red {
+      color: #EF4444;
+    }
+    .bottom-note {
+      width: 100%;
+      margin-top: 32px;
+      text-align: center;
+      font-size: 24px;
+      color: #6B7280;
+    }
+    .bottom-note .warn {
+      color: #F59E0B;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">锁定代价 &#183; 三层递进</div>
+    <div class="title">Harness 不是你的<br><span class="accent">记忆也不是你的</span></div>
+    <div class="level-card">
+      <div class="level-header">
+        <div class="level-badge">LEVEL 1</div>
+        <div class="level-severity">轻微锁定</div>
+      </div>
+      <div class="level-body">
+        <div class="level-example">
+          使用 <span class="tag">OpenAI Responses API</span><br>
+          或 <span class="tag">Anthropic 服务端压缩</span>
+        </div>
+        <div class="problem-box">
+          <div class="problem-text">
+            对话状态存在<span class="red">别人的服务器</span>上<br>
+            换模型？接着之前的对话？<span class="red">做不到</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-note">这还只是<span class="warn">最轻微</span>的层次 &#8594;</div>
+  </div>
+</body>
+</html>

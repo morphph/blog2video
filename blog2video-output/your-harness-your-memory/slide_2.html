@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 52px;
+    }
+    .title .accent { color: #F59E0B; }
+    .diagram {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .agent-outer {
+      width: 100%;
+      background: #1A1A2E;
+      border: 2px solid rgba(139, 92, 246, 0.4);
+      border-radius: 20px;
+      padding: 32px 28px 32px 28px;
+      position: relative;
+    }
+    .harness-label {
+      position: absolute;
+      top: -16px;
+      left: 32px;
+      background: #8B5CF6;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 4px 20px;
+      border-radius: 8px;
+      letter-spacing: 1px;
+    }
+    .model-core {
+      width: 70%;
+      margin: 24px auto 28px auto;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+      border: 2px solid rgba(245, 158, 11, 0.5);
+      border-radius: 14px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .model-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 8px;
+    }
+    .model-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .harness-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .feature-tag {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .feature-tag .icon {
+      color: #8B5CF6;
+      margin-right: 6px;
+    }
+    .arrow-down {
+      font-size: 36px;
+      color: #6B7280;
+      margin: 20px 0;
+    }
+    .myth-box {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+    .myth-label {
+      font-size: 20px;
+      color: #EF4444;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .myth-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .myth-text .strike {
+      text-decoration: line-through;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">核心概念</div>
+    <div class="title">什么是 <span class="accent">Agent Harness</span>？</div>
+    <div class="diagram">
+      <div class="agent-outer">
+        <div class="harness-label">HARNESS</div>
+        <div class="model-core">
+          <div class="model-title">LLM 大模型</div>
+          <div class="model-desc">只会生成文字</div>
+        </div>
+        <div class="harness-features">
+          <div class="feature-tag"><span class="icon">&#9881;</span>调用工具</div>
+          <div class="feature-tag"><span class="icon">&#128451;</span>读取数据</div>
+          <div class="feature-tag"><span class="icon">&#9881;</span>管理上下文</div>
+          <div class="feature-tag"><span class="icon">&#128451;</span>状态管理</div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-down">&#8595;</div>
+    <div class="myth-box">
+      <div class="myth-label">流行误解</div>
+      <div class="myth-text">"<span class="strike">模型会越来越强，吸收所有外围系统</span>"<br>事实恰恰相反</div>
+    </div>
+  </div>
+</body>
+</html>

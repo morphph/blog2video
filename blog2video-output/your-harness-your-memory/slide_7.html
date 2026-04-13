@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .slide-label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .title .red { color: #EF4444; }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .check-item {
+      width: 100%;
+      background: #1A1A2E;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .check-header {
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .check-header.level2 {
+      background: rgba(245, 158, 11, 0.1);
+      border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+    }
+    .check-header.level3 {
+      background: rgba(239, 68, 68, 0.1);
+      border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+    }
+    .level-badge {
+      font-size: 18px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 6px;
+      color: #0D0D1A;
+    }
+    .level-badge.l2 { background: #F59E0B; }
+    .level-badge.l3 { background: #EF4444; }
+    .level-text {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .level-text.yellow { color: #F59E0B; }
+    .level-text.red { color: #EF4444; }
+    .check-body {
+      padding: 24px 24px;
+    }
+    .check-desc {
+      font-size: 27px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .check-result {
+      border-left: 4px solid;
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .check-result.warn {
+      border-color: #F59E0B;
+      background: rgba(245, 158, 11, 0.06);
+      color: #F59E0B;
+    }
+    .check-result.danger {
+      border-color: #EF4444;
+      background: rgba(239, 68, 68, 0.06);
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-label">锁定代价 &#183; 升级</div>
+    <div class="title">从<span class="red">黑箱</span>到<span class="red">零可见性</span></div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-header level2">
+          <div class="level-badge l2">LEVEL 2</div>
+          <div class="level-text yellow">比较糟糕</div>
+        </div>
+        <div class="check-body">
+          <div class="check-desc">闭源 Harness 在本地生成文件<br>结构未知，其他 Harness 无法读取</div>
+          <div class="check-result warn">记忆变成无法迁移的格式</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-header level3">
+          <div class="level-badge l3">LEVEL 3</div>
+          <div class="level-text red">最糟糕</div>
+        </div>
+        <div class="check-body">
+          <div class="check-desc">整个 Harness + 长期记忆<br>全部藏在 API 后面</div>
+          <div class="check-result danger">零所有权 &#183; 零可见性</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

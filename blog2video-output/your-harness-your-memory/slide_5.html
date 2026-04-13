@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .quote-marks {
+      font-size: 140px;
+      color: rgba(139, 92, 246, 0.3);
+      font-family: Georgia, serif;
+      line-height: 0.6;
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+    .quote-text {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: 52px;
+      z-index: 1;
+      max-width: 880px;
+    }
+    .quote-text .highlight {
+      color: #8B5CF6;
+    }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: rgba(139, 92, 246, 0.4);
+      margin-bottom: 44px;
+      z-index: 1;
+    }
+    .author-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 36px;
+      z-index: 1;
+    }
+    .author-name {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .author-title {
+      font-size: 22px;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="quote-marks">&#8220;</div>
+    <div class="quote-text">
+      管理<span class="highlight">上下文</span>，<br>
+      也就是管理<span class="highlight">记忆</span>，<br>
+      是 Agent Harness 的<br>
+      <span class="highlight">核心职责</span>
+    </div>
+    <div class="divider"></div>
+    <div class="author-card">
+      <div class="author-name">Sarah Wooders</div>
+      <div class="author-title">Letta CTO</div>
+    </div>
+  </div>
+</body>
+</html>

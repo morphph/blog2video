@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .quote-mark {
+      font-size: 120px;
+      color: #8B5CF6;
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: -20px;
+      font-family: Georgia, serif;
+    }
+    .quote-text {
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 1.5;
+      max-width: 860px;
+    }
+    .quote-text .contrast-a {
+      color: #10B981;
+    }
+    .quote-text .contrast-b {
+      color: #EF4444;
+    }
+    .divider {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #8B5CF6, transparent);
+      margin: 40px 0;
+      border-radius: 2px;
+    }
+    .attribution {
+      font-size: 24px;
+      color: #6B7280;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">
+      模型 API 可以<br>
+      <span class="contrast-a">一天换一个</span><br><br>
+      但你的 Agent 记忆<br>
+      一旦交出去<br>
+      <span class="contrast-b">就再也拿不回来</span>
+    </div>
+    <div class="divider"></div>
+    <div class="attribution">Harrison Chase — Your Harness, Your Memory</div>
+  </div>
+</body>
+</html>

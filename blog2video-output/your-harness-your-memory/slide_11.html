@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .story-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 100px;
+      padding: 8px 24px;
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 600;
+      margin-bottom: 28px;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+    .title .name {
+      color: #8B5CF6;
+    }
+    .story-flow {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+    .story-card {
+      width: 100%;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .story-card.good {
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+    }
+    .story-card.bad {
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+    }
+    .story-card.rebuild {
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+    }
+    .card-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .card-text {
+      font-size: 26px;
+      line-height: 1.5;
+      color: #E0E0F0;
+    }
+    .card-text .em {
+      font-weight: 700;
+    }
+    .card-text .em-red {
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .card-text .em-green {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .flow-arrow {
+      width: 4px;
+      height: 24px;
+      background: #6B7280;
+      position: relative;
+    }
+    .flow-arrow::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #6B7280;
+    }
+    .insight-box {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+    .insight-text {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .insight-text .key {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="story-badge">真实案例</div>
+    <div class="title"><span class="name">Harrison Chase</span> 的<br>邮件助手故事</div>
+    <div class="story-flow">
+      <div class="story-card good">
+        <div class="card-icon">&#9993;&#65039;</div>
+        <div class="card-text">用了几个月，Agent 学会了他的<span class="em-green">语气、偏好、处理习惯</span></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="story-card bad">
+        <div class="card-icon">&#128165;</div>
+        <div class="card-text">Agent 被<span class="em-red">意外删除</span></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="story-card rebuild">
+        <div class="card-icon">&#128260;</div>
+        <div class="card-text">用同一模板重建<br>体验<span class="em-red">断崖式下降</span>，一切从头教起</div>
+      </div>
+    </div>
+    <div class="insight-box">
+      <div class="insight-text">
+        记忆 = <span class="key">唯一的专有资产</span><br>
+        没有记忆的 Agent 没有壁垒
+      </div>
+    </div>
+  </div>
+</body>
+</html>

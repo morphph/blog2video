@@ -1,0 +1,532 @@
+[
+  {
+    "text": "全球最大的 Agent 开发框架 LangChain，创始人 Harrison Chase 刚发了一篇关于 Agent Harness 的深度解读。核心观点就四个字：Your Harness, Your Memory。Agent 的 Harness 和记忆是深度绑定的。",
+    "pronounce_text": "全球最大的Agent开发框架LangChain，创始人Harrison Chase刚发了一篇关于Agent Harness的深度解读。核心观点就四个字：Your Harness,Your Memory。Agent的Harness和记忆是深度绑定的。",
+    "time_begin": 0,
+    "time_end": 14992.97052154195,
+    "text_begin": 0,
+    "text_end": 135,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 124
+  },
+  {
+    "text": "用了闭源的 Harness，就等于把记忆的所有权交了出去。而这恰恰是 Anthropic、OpenAI 这些大厂正在主动推进的锁定策略。今天只聊这一件事。",
+    "pronounce_text": "用了闭源的Harness，就等于把记忆的所有权交了出去。而这恰恰是Anthropic、OpenAI这些大厂正在主动推进的锁定策略。今天只聊这一件事。",
+    "time_begin": 15156,
+    "time_end": 26863.34693877551,
+    "text_begin": 135,
+    "text_end": 212,
+    "pronounce_text_begin": 124,
+    "pronounce_text_end": 198
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天精读的就是这篇 Your Harness, Your Memory。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天精读的就是这篇Your Harness,Your Memory。",
+    "time_begin": 27000,
+    "time_end": 40715.87301587302,
+    "text_begin": 212,
+    "text_end": 296,
+    "pronounce_text_begin": 198,
+    "pronounce_text_end": 277
+  },
+  {
+    "text": "先搞清楚一个概念。Agent Harness 是什么？简单说，就是包裹在大模型外面的那套系统。模型本身只会生成文字。",
+    "pronounce_text": "先搞清楚一个概念。Agent Harness是什么？简单说，就是包裹在大模型外面的那套系统。模型本身只会生成文字。",
+    "time_begin": 40860,
+    "time_end": 50698.14058956916,
+    "text_begin": 296,
+    "text_end": 354,
+    "pronounce_text_begin": 277,
+    "pronounce_text_end": 334
+  },
+  {
+    "text": "但一个 Agent 需要调用工具、读取数据、管理上下文。这些事情都不是模型干的，是 Harness 干的。",
+    "pronounce_text": "但一个Agent需要调用工具、读取数据、管理上下文。这些事情都不是模型干的，是Harness干的。",
+    "time_begin": 50898.14058956916,
+    "time_end": 58774.19501133787,
+    "text_begin": 354,
+    "text_end": 407,
+    "pronounce_text_begin": 334,
+    "pronounce_text_end": 383
+  },
+  {
+    "text": "有一种很流行的说法：模型会越来越强，迟早会把这些外围系统全部吸收掉。听起来很有道理，但事实恰恰相反。",
+    "pronounce_text": "有一种很流行的说法：模型会越来越强，迟早会把这些外围系统全部吸收掉。听起来很有道理，但事实恰恰相反。",
+    "time_begin": 58932,
+    "time_end": 68979.12018140589,
+    "text_begin": 407,
+    "text_end": 457,
+    "pronounce_text_begin": 383,
+    "pronounce_text_end": 433
+  },
+  {
+    "text": "Claude Code 的源码泄露之后，大家发现里面有 512k 行代码。这些代码全部是 Harness 层的。连 Anthropic 自己——世界上最强模型的缔造者——都在重度投资 Harness。",
+    "pronounce_text": "Claude Code的源码泄露之后，大家发现里面有五百一十二k行代码。这些代码全部是Harness层的。连Anthropic自己世界上最强模型的缔造者都在重度投资Harness。",
+    "time_begin": 69120,
+    "time_end": 80873.78684807256,
+    "text_begin": 457,
+    "text_end": 557,
+    "pronounce_text_begin": 433,
+    "pronounce_text_end": 523
+  },
+  {
+    "text": "如果模型真的能吸收一切，他们为什么要写五十万行代码？",
+    "pronounce_text": "如果模型真的能吸收一切，他们为什么要写五十万行代码？",
+    "time_begin": 81036,
+    "time_end": 85115.59183673469,
+    "text_begin": 557,
+    "text_end": 583,
+    "pronounce_text_begin": 523,
+    "pronounce_text_end": 549
+  },
+  {
+    "text": "确实，2023年需要的很多 scaffolding 现在不需要了。但它们不是消失了，而是被新的 scaffolding 替代了。Agent 的定义就是大模型加工具加数据。只要这个定义不变，就永远需要一个系统来协调这三者。",
+    "pronounce_text": "确实，二零二三年需要的很多scaffolding现在不需要了。但它们不是消失了，而是被新的scaffolding替代了。Agent的定义就是大模型加工具加数据。只要这个定义不变，就永远需要一个系统来协调这三者。",
+    "time_begin": 85284,
+    "time_end": 100149.26077097506,
+    "text_begin": 583,
+    "text_end": 693,
+    "pronounce_text_begin": 549,
+    "pronounce_text_end": 654
+  },
+  {
+    "text": "这个系统就是 Harness。",
+    "pronounce_text": "这个系统就是Harness。",
+    "time_begin": 100296,
+    "time_end": 101635.63718820861,
+    "text_begin": 693,
+    "text_end": 708,
+    "pronounce_text_begin": 654,
+    "pronounce_text_end": 668
+  },
+  {
+    "text": "接下来是今天最关键的一个认知。很多人觉得 memory 是一个独立的服务。就像数据库一样，接上就能用，拔掉也不影响。",
+    "pronounce_text": "接下来是今天最关键的一个认知。很多人觉得memory是一个独立的服务。就像数据库一样，接上就能用，拔掉也不影响。",
+    "time_begin": 101772,
+    "time_end": 111052.86167800454,
+    "text_begin": 708,
+    "text_end": 766,
+    "pronounce_text_begin": 668,
+    "pronounce_text_end": 724
+  },
+  {
+    "text": "但实际上不是这样的。",
+    "pronounce_text": "但实际上不是这样的。",
+    "time_begin": 111204,
+    "time_end": 112717.78684807256,
+    "text_begin": 766,
+    "text_end": 776,
+    "pronounce_text_begin": 724,
+    "pronounce_text_end": 734
+  },
+  {
+    "text": "你想想 memory 到底涉及什么。对话消息怎么管理？工具调用的结果太大了怎么压缩？system prompt 怎么加载？跨会话的记忆怎么读写？什么信息在上下文压缩的时候保留，什么丢弃？",
+    "pronounce_text": "你想想memory到底涉及什么。对话消息怎么管理？工具调用的结果太大了怎么压缩？system prompt怎么加载？跨会话的记忆怎么读写？什么信息在上下文压缩的时候保留，什么丢弃？",
+    "time_begin": 112860,
+    "time_end": 127690.43083900226,
+    "text_begin": 776,
+    "text_end": 869,
+    "pronounce_text_begin": 734,
+    "pronounce_text_end": 824
+  },
+  {
+    "text": "这些问题，每一个都由 Harness 来决定。Memory 脱离了 Harness，根本无法独立运作。",
+    "pronounce_text": "这些问题，每一个都由Harness来决定。Memory脱离了Harness，根本无法独立运作。",
+    "time_begin": 127836,
+    "time_end": 135282.48526077098,
+    "text_begin": 869,
+    "text_end": 920,
+    "pronounce_text_begin": 824,
+    "pronounce_text_end": 871
+  },
+  {
+    "text": "用一句话概括：Harness 怎么管理上下文和状态，就决定了 Agent 的记忆是什么样的。",
+    "pronounce_text": "用一句话概括：Harness怎么管理上下文和状态，就决定了Agent的记忆是什么样的。",
+    "time_begin": 135432,
+    "time_end": 141856.80725623583,
+    "text_begin": 920,
+    "text_end": 966,
+    "pronounce_text_begin": 871,
+    "pronounce_text_end": 914
+  },
+  {
+    "text": "这不是我的判断。Letta 的 CTO Sarah Wooders 说得很直接：管理上下文，也就是管理记忆，是 Agent Harness 的核心职责。",
+    "pronounce_text": "这不是我的判断。Letta的CTO Sarah Wooders说得很直接：管理上下文，也就是管理记忆，是Agent Harness的核心职责。",
+    "time_begin": 142020,
+    "time_end": 151347.3015873016,
+    "text_begin": 966,
+    "text_end": 1042,
+    "pronounce_text_begin": 914,
+    "pronounce_text_end": 985
+  },
+  {
+    "text": "好，如果记忆和 Harness 是深度耦合的，那问题就来了。如果你用的 Harness 不是你自己的，你的记忆也不是你自己的。",
+    "pronounce_text": "好，如果记忆和Harness是深度偶合的，那问题就来了。如果你用的Harness不是你自己的，你的记忆也不是你自己的。",
+    "time_begin": 151488,
+    "time_end": 160896.57142857142,
+    "text_begin": 1042,
+    "text_end": 1105,
+    "pronounce_text_begin": 985,
+    "pronounce_text_end": 1044
+  },
+  {
+    "text": "这个问题有三个层次，一个比一个严重。",
+    "pronounce_text": "这个问题有三个层次，一个比一个严重。",
+    "time_begin": 161064,
+    "time_end": 164156.74376417234,
+    "text_begin": 1105,
+    "text_end": 1123,
+    "pronounce_text_begin": 1044,
+    "pronounce_text_end": 1062
+  },
+  {
+    "text": "第一层，算轻微的。你用了 OpenAI 的 Responses API，或者 Anthropic 的服务端压缩。你的对话状态存在他们的服务器上。哪天你想换个模型，想接着之前的对话继续？",
+    "pronounce_text": "第一层，算轻微的。你用了OpenAI的Responses API，或者Anthropic的服务端压缩。你的对话状态存在他们的服务器上。哪天你想换个模型，想接着之前的对话继续？",
+    "time_begin": 164304,
+    "time_end": 179389.85034013606,
+    "text_begin": 1123,
+    "text_end": 1215,
+    "pronounce_text_begin": 1062,
+    "pronounce_text_end": 1149
+  },
+  {
+    "text": "做不到了。状态在别人手里。",
+    "pronounce_text": "做不到了。状态在别人手里。",
+    "time_begin": 179589.85034013606,
+    "time_end": 182125.31519274376,
+    "text_begin": 1215,
+    "text_end": 1228,
+    "pronounce_text_begin": 1149,
+    "pronounce_text_end": 1162
+  },
+  {
+    "text": "第二层，比较糟糕。你用了一个闭源的 Harness。它怎么跟记忆交互的，你不知道。它在本地生成了一些文件，但这些文件的结构是什么，另一个 Harness 该怎么读取，完全是黑箱。",
+    "pronounce_text": "第二层，比较糟糕。你用了一个闭源的Harness。它怎么跟记忆交互的，你不知道。它在本地生成了一些文件，但这些文件的结构是什么，另一个Harness该怎么读取，完全是黑箱。",
+    "time_begin": 182268,
+    "time_end": 196204.46258503402,
+    "text_begin": 1228,
+    "text_end": 1317,
+    "pronounce_text_begin": 1162,
+    "pronounce_text_end": 1248
+  },
+  {
+    "text": "你的记忆变成了一种无法迁移的格式。",
+    "pronounce_text": "你的记忆变成了一种无法迁移的格式。",
+    "time_begin": 196344,
+    "time_end": 199227.7641723356,
+    "text_begin": 1317,
+    "text_end": 1334,
+    "pronounce_text_begin": 1248,
+    "pronounce_text_end": 1265
+  },
+  {
+    "text": "第三层，最糟糕的情况。整个 Harness，包括长期记忆，全部藏在一个 API 后面。你看不到记忆的内容，不知道它的结构，甚至不知道它存不存在。",
+    "pronounce_text": "第三层，最糟糕的情况。整个Harness，包括长期记忆，全部藏在一个API后面。你看不到记忆的内容，不知道它的结构，甚至不知道它存不存在。",
+    "time_begin": 199368,
+    "time_end": 212364.0544217687,
+    "text_begin": 1334,
+    "text_end": 1406,
+    "pronounce_text_begin": 1265,
+    "pronounce_text_end": 1334
+  },
+  {
+    "text": "你对自己 Agent 的记忆，零所有权，零可见性。",
+    "pronounce_text": "你对自己Agent的记忆，零所有权，零可见性。",
+    "time_begin": 212564.0544217687,
+    "time_end": 216852.62585034015,
+    "text_begin": 1406,
+    "text_end": 1431,
+    "pronounce_text_begin": 1334,
+    "pronounce_text_end": 1357
+  },
+  {
+    "text": "你可能会问，这是不是想太多了？大厂真的会故意这么干？",
+    "pronounce_text": "你可能会问，这是不是想太多了？大厂真的会故意这么干？",
+    "time_begin": 217008,
+    "time_end": 221470.72108843538,
+    "text_begin": 1431,
+    "text_end": 1457,
+    "pronounce_text_begin": 1357,
+    "pronounce_text_end": 1383
+  },
+  {
+    "text": "答案是，他们已经在干了。",
+    "pronounce_text": "答案是，他们已经在干了。",
+    "time_begin": 221616,
+    "time_end": 224151.46485260772,
+    "text_begin": 1457,
+    "text_end": 1469,
+    "pronounce_text_begin": 1383,
+    "pronounce_text_end": 1395
+  },
+  {
+    "text": "Anthropic 推出了 Claude Managed Agents。这个产品把所有东西都放到了 API 后面。Harness、记忆、状态管理，全部锁在他们的平台上。",
+    "pronounce_text": "Anthropic推出了Claude Managed Agents。这个产品把所有东西都放到了API后面。Harness、记忆、状态管理，全部锁在他们的平台上。",
+    "time_begin": 224316,
+    "time_end": 235349.96825396825,
+    "text_begin": 1469,
+    "text_end": 1553,
+    "pronounce_text_begin": 1395,
+    "pronounce_text_end": 1475
+  },
+  {
+    "text": "OpenAI 的做法更巧妙。Codex 是开源的，代码你都能看到。但它生成的 compaction summary 是加密的。什么意思？就是 Agent 在压缩上下文的时候产生的摘要，只有 OpenAI 的系统能解读。",
+    "pronounce_text": "OpenAI的做法更巧妙。Codex是开源的，代码你都能看到。但它生成的compaction summary是加密的。什么意思？就是Agent在压缩上下文的时候产生的摘要，只有OpenAI的系统能解读。",
+    "time_begin": 235512,
+    "time_end": 251236.39909297053,
+    "text_begin": 1553,
+    "text_end": 1662,
+    "pronounce_text_begin": 1475,
+    "pronounce_text_end": 1576
+  },
+  {
+    "text": "你拿到了代码，但拿不到状态。开源外壳，闭源记忆。",
+    "pronounce_text": "你拿到了代码，但拿不到状态。开源外壳，闭源记忆。",
+    "time_begin": 251388,
+    "time_end": 256106.14058956917,
+    "text_begin": 1662,
+    "text_end": 1686,
+    "pronounce_text_begin": 1576,
+    "pronounce_text_end": 1600
+  },
+  {
+    "text": "还有一个容易被忽略的细节。当 OpenAI 和 Anthropic 说\"我们把 web search 内置到 API 里了\"，听起来像是模型变强了。但实际上呢？这不是模型的能力。",
+    "pronounce_text": "还有一个容易被忽略的细节。当OpenAI和Anthropic说\"我们把web search内置到API里了\"，听起来像是模型变强了。但实际上呢？这不是模型的能力。",
+    "time_begin": 256248,
+    "time_end": 268768.0453514739,
+    "text_begin": 1686,
+    "text_end": 1775,
+    "pronounce_text_begin": 1600,
+    "pronounce_text_end": 1681
+  },
+  {
+    "text": "这是他们在模型外面包了一层轻量的 Harness，通过 tool calling 去调搜索 API，然后以模型 API 的形式呈现给你。Harness 没有消失，只是被藏到了 API 后面。",
+    "pronounce_text": "这是他们在模型外面包了一层轻量的Harness，通过tool calling去调搜索API，然后以模型API的形式呈现给你。Harness没有消失，只是被藏到了API后面。",
+    "time_begin": 268920,
+    "time_end": 280894.37641723355,
+    "text_begin": 1775,
+    "text_end": 1870,
+    "pronounce_text_begin": 1681,
+    "pronounce_text_end": 1767
+  },
+  {
+    "text": "为什么模型提供商这么执着于锁定记忆？因为光靠模型本身，锁定不了用户。",
+    "pronounce_text": "为什么模型提供商这么执着于锁定记忆？因为光靠模型本身，锁定不了用户。",
+    "time_begin": 281052,
+    "time_end": 287221.387755102,
+    "text_begin": 1870,
+    "text_end": 1904,
+    "pronounce_text_begin": 1767,
+    "pronounce_text_end": 1801
+  },
+  {
+    "text": "想想看，现在换一个模型有多容易。API 格式几乎一样。调整一下 prompt，换个 endpoint，就能跑起来。模型本身是无状态的，切换成本极低。",
+    "pronounce_text": "想想看，现在换一个模型有多容易。API格式几乎一样。调整一下prompt，换个endpoint，就能跑起来。模型本身是无状态的，切换成本极低。",
+    "time_begin": 287388,
+    "time_end": 300802.0136054422,
+    "text_begin": 1904,
+    "text_end": 1978,
+    "pronounce_text_begin": 1801,
+    "pronounce_text_end": 1872
+  },
+  {
+    "text": "但一旦有了记忆，一切都变了。",
+    "pronounce_text": "但一旦有了记忆，一切都变了。",
+    "time_begin": 300960,
+    "time_end": 303588.34467120183,
+    "text_begin": 1978,
+    "text_end": 1992,
+    "pronounce_text_begin": 1872,
+    "pronounce_text_end": 1886
+  },
+  {
+    "text": "你的 Agent 用了三个月，积累了你的写作风格偏好、你的工作流习惯、你对不同类型任务的处理方式。这些数据越积越多，迁移的代价就越来越大。",
+    "pronounce_text": "你的Agent用了三个月，积累了你的写作风格偏好、你的工作流习惯、你对不同类型任务的处理方式。这些数据越积越多，迁移的代价就越来越大。",
+    "time_begin": 303732,
+    "time_end": 315868.91609977325,
+    "text_begin": 1992,
+    "text_end": 2061,
+    "pronounce_text_begin": 1886,
+    "pronounce_text_end": 1953
+  },
+  {
+    "text": "有一个真实的故事。Harrison Chase 自己内部有一个邮件助手。用了几个月，Agent 已经学会了他的语气、他的偏好、他处理邮件的习惯。然后有一天，这个 Agent 被意外删除了。",
+    "pronounce_text": "有一个真实的故事。Harrison Chase自己内部有一个邮件助手。用了几个月，Agent已经学会了他的语气、他的偏好、他处理邮件的习惯。然后有一天，这个Agent被意外删除了。",
+    "time_begin": 316008,
+    "time_end": 331093.85034013604,
+    "text_begin": 2061,
+    "text_end": 2155,
+    "pronounce_text_begin": 1953,
+    "pronounce_text_end": 2043
+  },
+  {
+    "text": "他用同一个模板重建了一个。但体验断崖式下降。他不得不从头教这个 Agent 所有的东西。",
+    "pronounce_text": "他用同一个模板重建了一个。但体验断崖式下降。他不得不从头教这个Agent所有的东西。",
+    "time_begin": 331236,
+    "time_end": 337869.78684807254,
+    "text_begin": 2155,
+    "text_end": 2199,
+    "pronounce_text_begin": 2043,
+    "pronounce_text_end": 2085
+  },
+  {
+    "text": "这个故事让我意识到两件事。第一，记忆的价值比我们以为的大得多。第二，没有记忆的 Agent 根本没有壁垒。任何人只要有同样的工具，就能复制你的 Agent。记忆才是唯一的专有资产。",
+    "pronounce_text": "这个故事让我意识到两件事。第一，记忆的价值比我们以为的大得多。第二，没有记忆的Agent根本没有壁垒。任何人只要有同样的工具，就能复制你的Agent。记忆才是唯一的专有资产。",
+    "time_begin": 338040,
+    "time_end": 353636.6893424036,
+    "text_begin": 2199,
+    "text_end": 2289,
+    "pronounce_text_begin": 2085,
+    "pronounce_text_end": 2172
+  },
+  {
+    "text": "这里有一个不太直观的点。记忆的锁定效应不是线性增长的，而是加速增长的。",
+    "pronounce_text": "这里有一个不太直观的点。记忆的锁定效应不是线性增长的，而是加速增长的。",
+    "time_begin": 353808,
+    "time_end": 360743.6462585034,
+    "text_begin": 2289,
+    "text_end": 2324,
+    "pronounce_text_begin": 2172,
+    "pronounce_text_end": 2207
+  },
+  {
+    "text": "你用一个 Agent 一周，切换的代价很小。用一个月，有点不舍得。用半年，你会发现你已经离不开了。因为 Agent 对你的理解是累积的，每一次交互都在加深这种理解。",
+    "pronounce_text": "你用一个Agent一周，切换的代价很小。用一个月，有点不舍得。用半年，你会发现你已经离不开了。因为Agent对你的理解是累积的，每一次交互都在加深这种理解。",
+    "time_begin": 360900,
+    "time_end": 375091.8820861678,
+    "text_begin": 2324,
+    "text_end": 2406,
+    "pronounce_text_begin": 2207,
+    "pronounce_text_end": 2285
+  },
+  {
+    "text": "这就是为什么模型提供商如此积极地把 memory 锁进自己的生态。他们不需要在模型能力上永远领先。他们只需要在你切换之前，积累足够多你的数据。",
+    "pronounce_text": "这就是为什么模型提供商如此积极地把memory锁进自己的生态。他们不需要在模型能力上永远领先。他们只需要在你切换之前，积累足够多你的数据。",
+    "time_begin": 375228,
+    "time_end": 386981.78684807254,
+    "text_begin": 2406,
+    "text_end": 2477,
+    "pronounce_text_begin": 2285,
+    "pronounce_text_end": 2354
+  },
+  {
+    "text": "模型 API 可以一天换一个。但你的 Agent 记忆一旦交出去，就再也拿不回来。",
+    "pronounce_text": "模型API可以一天换一个。但你的Agent记忆一旦交出去，就再也拿不回来。",
+    "time_begin": 387144,
+    "time_end": 393057.9682539682,
+    "text_begin": 2477,
+    "text_end": 2518,
+    "pronounce_text_begin": 2354,
+    "pronounce_text_end": 2391
+  },
+  {
+    "text": "说到这里，我必须讲一下另一面。用开源、开放的 Harness 不是没有代价的。",
+    "pronounce_text": "说到这里，我必须讲一下另一面。用开源、开放的Harness不是没有代价的。",
+    "time_begin": 393228,
+    "time_end": 399525.09750566893,
+    "text_begin": 2518,
+    "text_end": 2557,
+    "pronounce_text_begin": 2391,
+    "pronounce_text_end": 2428
+  },
+  {
+    "text": "最大的代价是运维复杂度。Memory 的存储、索引、检索，全部要自己搞定。对于大多数团队来说，这不是一个轻松的选择。",
+    "pronounce_text": "最大的代价是运维复杂度。Memory的存储、索引、检索，全部要自己搞定。对于大多数团队来说，这不是一个轻松的选择。",
+    "time_begin": 399672,
+    "time_end": 410961.387755102,
+    "text_begin": 2557,
+    "text_end": 2615,
+    "pronounce_text_begin": 2428,
+    "pronounce_text_end": 2485
+  },
+  {
+    "text": "而且坦率地说，现在整个行业对 memory 的理解还在非常早期。没有通用的抽象，没有最佳实践。很多团队连 MVP 里都还没加入长期记忆。先让 Agent 能用起来，再考虑个性化。",
+    "pronounce_text": "而且坦率地说，现在整个行业对memory的理解还在非常早期。没有通用的抽象，没有最佳实践。很多团队连MVP里都还没加入长期记忆。先让Agent能用起来，再考虑个性化。",
+    "time_begin": 411120,
+    "time_end": 426031.70068027213,
+    "text_begin": 2615,
+    "text_end": 2704,
+    "pronounce_text_begin": 2485,
+    "pronounce_text_end": 2568
+  },
+  {
+    "text": "所以短期内，闭源 Harness 的体验可能确实更好。大厂有资源把记忆系统做得更精致、更无缝。",
+    "pronounce_text": "所以短期内，闭源Harness的体验可能确实更好。大厂有资源把记忆系统做得更精致、更无缝。",
+    "time_begin": 426168,
+    "time_end": 433823.4648526077,
+    "text_begin": 2704,
+    "text_end": 2751,
+    "pronounce_text_begin": 2568,
+    "pronounce_text_end": 2613
+  },
+  {
+    "text": "但这恰恰是最危险的时刻。因为你在享受便利的同时，你的数据飞轮正在别人的服务器上转动。等你意识到要迁移的时候，代价已经高到你迁不动了。",
+    "pronounce_text": "但这恰恰是最危险的时刻。因为你在享受便利的同时，你的数据飞轮正在别人的服务器上转动。等你意识到要迁移的时候，代价已经高到你迁不动了。",
+    "time_begin": 433980,
+    "time_end": 446163.3560090703,
+    "text_begin": 2751,
+    "text_end": 2817,
+    "pronounce_text_begin": 2613,
+    "pronounce_text_end": 2679
+  },
+  {
+    "text": "回过头来看这件事的本质。过去三年，大家的注意力一直在模型能力上。哪个模型更强，哪个 benchmark 更高。但模型能力的竞争格局正在收敛，各家的差距越来越小。",
+    "pronounce_text": "回过头来看这件事的本质。过去三年，大家的注意力一直在模型能力上。哪个模型更强，哪个benchmark更高。但模型能力的竞争格局正在收敛，各家的差距越来越小。",
+    "time_begin": 446328,
+    "time_end": 460392.1723356009,
+    "text_begin": 2817,
+    "text_end": 2897,
+    "pronounce_text_begin": 2679,
+    "pronounce_text_end": 2757
+  },
+  {
+    "text": "真正的竞争正在悄悄转移到另一个战场：谁拥有用户的状态和记忆。",
+    "pronounce_text": "真正的竞争正在悄悄转移到另一个战场：谁拥有用户的状态和记忆。",
+    "time_begin": 460548,
+    "time_end": 466032.39909297053,
+    "text_begin": 2897,
+    "text_end": 2927,
+    "pronounce_text_begin": 2757,
+    "pronounce_text_end": 2787
+  },
+  {
+    "text": "这不是一个技术问题，这是一个所有权问题。你的 Agent 越好用，你积累的记忆越多，你就越被锁在当前的平台上。而这正是平台希望看到的。",
+    "pronounce_text": "这不是一个技术问题，这是一个所有权问题。你的Agent越好用，你积累的记忆越多，你就越被锁在当前的平台上。而这正是平台希望看到的。",
+    "time_begin": 466200,
+    "time_end": 477872.5170068027,
+    "text_begin": 2927,
+    "text_end": 2994,
+    "pronounce_text_begin": 2787,
+    "pronounce_text_end": 2852
+  },
+  {
+    "text": "所以在选择 Agent 平台的时候，除了看模型能力、看功能列表，还有一个问题值得认真想一想：我的 Agent 记忆，到底存在哪里？我能带走吗？",
+    "pronounce_text": "所以在选择Agent平台的时候，除了看模型能力、看功能列表，还有一个问题值得认真想一想：我的Agent记忆，到底存在哪里？我能带走吗？",
+    "time_begin": 478044,
+    "time_end": 490819.4648526077,
+    "text_begin": 2994,
+    "text_end": 3065,
+    "pronounce_text_begin": 2852,
+    "pronounce_text_end": 2919
+  },
+  {
+    "text": "如果你正在构建 Agent 应用，现在就该考虑记忆的所有权。不是等到被锁定了再想办法。选择开放的 Harness，选择你能控制的记忆存储。短期可能多花一些功夫，但长期来看，这是你唯一真正拥有的东西。",
+    "pronounce_text": "如果你正在构建Agent应用，现在就该考虑记忆的所有权。不是等到被锁定了再想办法。选择开放的Harness，选择你能控制的记忆存储。短期可能多花一些功夫，但长期来看，这是你唯一真正拥有的东西。",
+    "time_begin": 490968,
+    "time_end": 506645.9591836735,
+    "text_begin": 3065,
+    "text_end": 3164,
+    "pronounce_text_begin": 2919,
+    "pronounce_text_end": 3015
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 506808,
+    "time_end": 511990.5396825397,
+    "text_begin": 3164,
+    "text_end": 3191,
+    "pronounce_text_begin": 3015,
+    "pronounce_text_end": 3041
+  }
+]

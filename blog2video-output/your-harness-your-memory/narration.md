@@ -2,11 +2,11 @@
 
 ## Hook
 
-最近我读到一个观点，读完之后越想越觉得不对劲。我们都在讨论哪个模型更强、哪个 Agent 更好用。但真正的战场可能根本不在模型。而是在你用 Agent 过程中积累的那些记忆——你的偏好、你的习惯、你的交互历史。这些东西正在被悄悄锁进大厂的服务器里。今天只聊一件事：为什么 Agent 的记忆所有权，是你现在就该关心的问题。
+LangChain 创始人 Harrison Chase 刚发了一篇博客，标题四个字：Your Harness, Your Memory。核心观点只有一句话：你用的 Agent 越久，你就越走不掉。不是因为模型好，是因为你的记忆被锁住了。今天不聊模型能力。只聊一个大多数人还没意识到的问题：你的 Agent 记忆，到底归谁？
 
 ## Brand Intro
 
-这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 LangChain 创始人 Harrison Chase 的一篇博客，标题叫 Your Harness, Your Memory。
+这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天精读的就是这篇 Your Harness, Your Memory。
 
 ## Agent Harness 不会消失
 

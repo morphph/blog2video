@@ -351,6 +351,42 @@ async function renderVideo(videoNumber) {
   logGateResult("PostRender", postRenderResult);
 }
 
+function generateMetaJson(renderedVideos) {
+  const metaPath = path.join(outputDir, "meta.json");
+  if (fs.existsSync(metaPath)) return; // don't overwrite manual meta
+
+  const slug = path.basename(outputDir);
+
+  // Try to read blog_url from video_plan.json or source_blog.md
+  let blogUrl = "";
+  let topic = slug;
+  const planPath = path.join(outputDir, "video_plan.json");
+  if (fs.existsSync(planPath)) {
+    const plan = JSON.parse(fs.readFileSync(planPath, "utf-8"));
+    if (plan.blog_metadata) {
+      topic = plan.blog_metadata.title_zh || plan.blog_metadata.title || slug;
+      blogUrl = plan.blog_metadata.url || "";
+    }
+  }
+
+  const meta = {
+    topic,
+    blog_url: blogUrl,
+    source: slug,
+    flow_source: "manual-curate",
+    videos: renderedVideos.map((n) => ({
+      video_number: n,
+      file: `video_${n}.mp4`,
+      cover: `video_${n}_cover_photo.png`,
+      script: `video_${n}_script.md`,
+      subtitle: `video_${n}_audio.vtt`,
+    })),
+  };
+
+  fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2) + "\n");
+  console.log(`\n📋 Generated meta.json for delivery`);
+}
+
 async function main() {
   const videos = findVideos();
   console.log(`Found ${videos.length} video(s) to render: ${videos.join(", ")}`);
@@ -358,6 +394,8 @@ async function main() {
   for (const videoNum of videos) {
     await renderVideo(videoNum);
   }
+
+  generateMetaJson(videos);
 
   console.log("\n🎉 All videos rendered successfully!");
 }

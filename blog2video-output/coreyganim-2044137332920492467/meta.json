@@ -1,0 +1,15 @@
+{
+  "topic": "Claude Code能自动修Bug了？Routines把AI变成7×24员工",
+  "blog_url": "https://x.com/coreyganim/status/2044137332920492467",
+  "source": "coreyganim-2044137332920492467",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

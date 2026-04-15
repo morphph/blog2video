@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 52px;
+      text-align: center;
+    }
+    .constraints {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .constraint {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .constraint-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .constraint:nth-child(1) .constraint-icon {
+      background: rgba(239, 68, 68, 0.15);
+      color: #EF4444;
+    }
+    .constraint:nth-child(2) .constraint-icon {
+      background: rgba(245, 158, 11, 0.15);
+      color: #F59E0B;
+    }
+    .constraint:nth-child(3) .constraint-icon {
+      background: rgba(59, 130, 246, 0.15);
+      color: #3B82F6;
+    }
+    .constraint-content .name {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .constraint-content .desc {
+      font-size: 25px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .constraint-content .code {
+      color: #F59E0B;
+      font-weight: 600;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">技术限制须知</div>
+    <div class="constraints">
+      <div class="constraint">
+        <div class="constraint-icon">!</div>
+        <div class="constraint-content">
+          <div class="name">无状态架构</div>
+          <div class="desc">每次触发全新 session<br>重新 clone，从零开始</div>
+        </div>
+      </div>
+      <div class="constraint">
+        <div class="constraint-icon">⚠</div>
+        <div class="constraint-content">
+          <div class="name">分支限制</div>
+          <div class="desc">默认只能 push 到 <span class="code">claude/</span> 前缀分支</div>
+        </div>
+      </div>
+      <div class="constraint">
+        <div class="constraint-icon">i</div>
+        <div class="constraint-content">
+          <div class="name">权限默认全开</div>
+          <div class="desc">MCP connector 默认全部包含<br>需手动移除多余权限</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 56px;
+      text-align: center;
+    }
+    .triggers {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .trigger-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      border-left: 4px solid;
+    }
+    .trigger-card:nth-child(1) { border-left-color: #8B5CF6; }
+    .trigger-card:nth-child(2) { border-left-color: #3B82F6; }
+    .trigger-card:nth-child(3) { border-left-color: #10B981; }
+    .trigger-num {
+      font-size: 56px;
+      font-weight: 800;
+      width: 72px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .trigger-card:nth-child(1) .trigger-num { color: #8B5CF6; }
+    .trigger-card:nth-child(2) .trigger-num { color: #3B82F6; }
+    .trigger-card:nth-child(3) .trigger-num { color: #10B981; }
+    .trigger-info .name {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .trigger-info .detail {
+      font-size: 26px;
+      color: #B0B0CC;
+    }
+    .footnote {
+      margin-top: 48px;
+      font-size: 28px;
+      color: #6B7280;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .footnote em {
+      color: #F59E0B;
+      font-style: normal;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">三种触发方式</div>
+    <div class="triggers">
+      <div class="trigger-card">
+        <div class="trigger-num">01</div>
+        <div class="trigger-info">
+          <div class="name">定时触发 Cron</div>
+          <div class="detail">每小时 / 每晚 / 每周</div>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <div class="trigger-num">02</div>
+        <div class="trigger-info">
+          <div class="name">API 触发 HTTP</div>
+          <div class="detail">POST 请求 → 立即启动</div>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <div class="trigger-num">03</div>
+        <div class="trigger-info">
+          <div class="name">GitHub 事件触发</div>
+          <div class="detail">PR · Release · 支持条件过滤</div>
+        </div>
+      </div>
+    </div>
+    <div class="footnote">三种触发器<em>可叠加</em>，直接嵌入 DevOps 工具链</div>
+  </div>
+</body>
+</html>

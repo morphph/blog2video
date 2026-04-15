@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Introducing Routines in Claude Code",
+    "title_zh": "Claude Code能自动修Bug了？Routines把AI变成7×24员工",
+    "word_count": 1700,
+    "slug": "coreyganim-2044137332920492467"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕一个核心论点展开——AI编程从对话模式变为事件驱动的后台服务，各部分紧密衔接，不存在可独立成片的子主题",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Routines：AI编程不再需要你在场"
+      }
+    ]
+  }
+}

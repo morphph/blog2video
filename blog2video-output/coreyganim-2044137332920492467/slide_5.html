@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #3B82F6;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .scenes {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+    }
+    .scene {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      position: relative;
+    }
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .scene-num {
+      background: #10B981;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 800;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .scene-title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .scene-flow {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      padding-left: 56px;
+    }
+    .scene-flow .action {
+      color: #F59E0B;
+      font-weight: 600;
+    }
+    .star-badge {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 20px;
+      color: #F59E0B;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">真实场景 ④⑤⑥</div>
+    <div class="scenes">
+      <div class="scene">
+        <div class="scene-header">
+          <div class="scene-num">4</div>
+          <div class="scene-title">部署验证</div>
+        </div>
+        <div class="scene-flow">CD 部署完 → API 触发 → <span class="action">冒烟测试 + 回归扫描</span></div>
+      </div>
+      <div class="scene">
+        <div class="scene-header">
+          <div class="scene-num">5</div>
+          <div class="scene-title">文档漂移检测</div>
+        </div>
+        <div class="scene-flow">每周定时 → 扫合并 PR → <span class="action">自动开文档更新 PR</span></div>
+      </div>
+      <div class="scene">
+        <div class="scene-header">
+          <div class="scene-num">6</div>
+          <div class="scene-title">跨语言 SDK 移植</div>
+        </div>
+        <div class="scene-flow">SDK 合并 PR → 自动移植 → <span class="action">另一语言开对应 PR</span></div>
+        <div class="star-badge">最亮眼</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

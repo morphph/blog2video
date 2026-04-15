@@ -1,0 +1,422 @@
+[
+  {
+    "text": "Anthropic 刚刚给 Claude Code 加了一个新功能，叫 Routines。听起来像个小更新，但它改变了一件根本的事：AI 编程助手不再需要你坐在电脑前了。你合上笔记本，它还在干活。",
+    "pronounce_text": "Anthropic刚刚给Claude Code加了一个新功能，叫Routines。听起来像个小更新，但它改变了一件根本的事：AI编程助手不再需要你坐在电脑前了。你合上笔记本，它还在干活。",
+    "time_begin": 0,
+    "time_end": 13843.58276643991,
+    "text_begin": 0,
+    "text_end": 98,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 93
+  },
+  {
+    "text": "这不是\"更好的自动补全\"，这是 AI 从对话工具变成后台服务。",
+    "pronounce_text": "这不是\"更好的自动补全\"，这是AI从对话工具变成后台服务。",
+    "time_begin": 14004,
+    "time_end": 19999.238095238095,
+    "text_begin": 98,
+    "text_end": 129,
+    "pronounce_text_begin": 93,
+    "pronounce_text_end": 122
+  },
+  {
+    "text": "这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Anthropic 官方博客发布的 Claude Code Routines。",
+    "pronounce_text": "这里是精读AI。AI世界很吵，每期帮你从全球顶级AI团队的一手文献里，读透一篇最值得读的。今天我们精读的是Anthropic官方博客发布的Claude Code Routines。",
+    "time_begin": 20160,
+    "time_end": 32981.90476190476,
+    "text_begin": 129,
+    "text_end": 225,
+    "pronounce_text_begin": 122,
+    "pronounce_text_end": 212
+  },
+  {
+    "text": "先说最基础的。一个 Routine 是什么？",
+    "pronounce_text": "先说最基础的。一个Routine是什么？",
+    "time_begin": 33120,
+    "time_end": 36433.333333333336,
+    "text_begin": 225,
+    "text_end": 247,
+    "pronounce_text_begin": 212,
+    "pronounce_text_end": 232
+  },
+  {
+    "text": "你可以把它理解成一个\"打包好的 Claude Code 任务\"。里面有三样东西：一段 prompt，告诉 AI 该做什么。一个或多个代码仓库，给它工作的上下文。",
+    "pronounce_text": "你可以把它理解成一个\"打包好的Claude Code任务\"。里面有三样东西：一段prompt，告诉AI该做什么。一个或多个代码仓库，给它工作的上下文。",
+    "time_begin": 36576,
+    "time_end": 51998.53968253968,
+    "text_begin": 247,
+    "text_end": 327,
+    "pronounce_text_begin": 232,
+    "pronounce_text_end": 307
+  },
+  {
+    "text": "还有一组 connector，让它能连接外部工具，比如 Slack、Linear 这些。",
+    "pronounce_text": "还有一组connector，让它能连接外部工具，比如Slack、Linear这些。",
+    "time_begin": 52164,
+    "time_end": 58286.947845804985,
+    "text_begin": 327,
+    "text_end": 371,
+    "pronounce_text_begin": 307,
+    "pronounce_text_end": 348
+  },
+  {
+    "text": "打包好之后，这个任务就不在你的电脑上跑了。它跑在 Anthropic 托管的云端。你关机、睡觉、出门，它照样执行。",
+    "pronounce_text": "打包好之后，这个任务就不在你的电脑上跑了。它跑在Anthropic托管的云端。你关机、睡觉、出门，它照样执行。",
+    "time_begin": 58428,
+    "time_end": 68776.97959183673,
+    "text_begin": 371,
+    "text_end": 428,
+    "pronounce_text_begin": 348,
+    "pronounce_text_end": 403
+  },
+  {
+    "text": "而且关键的一点：运行过程中没有权限弹窗，没有审批流程。它是完全自主的。你设定好规则，它自己干。",
+    "pronounce_text": "而且关键的一点：运行过程中没有权限弹窗，没有审批流程。它是完全自主的。你设定好规则，它自己干。",
+    "time_begin": 68940,
+    "time_end": 78685.26077097506,
+    "text_begin": 428,
+    "text_end": 475,
+    "pronounce_text_begin": 403,
+    "pronounce_text_end": 450
+  },
+  {
+    "text": "一个 Routine 怎么启动？Anthropic 给了三种触发方式。",
+    "pronounce_text": "一个Routine怎么启动？Anthropic给了三种触发方式。",
+    "time_begin": 78840,
+    "time_end": 82571.2925170068,
+    "text_begin": 475,
+    "text_end": 510,
+    "pronounce_text_begin": 450,
+    "pronounce_text_end": 482
+  },
+  {
+    "text": "第一种是定时触发。你可以设成每小时、每晚、每周跑一次。最短间隔是一小时。",
+    "pronounce_text": "第一种是定时触发。你可以设成每小时、每晚、每周跑一次。最短间隔是一小时。",
+    "time_begin": 82728,
+    "time_end": 90813.03401360544,
+    "text_begin": 510,
+    "text_end": 546,
+    "pronounce_text_begin": 482,
+    "pronounce_text_end": 518
+  },
+  {
+    "text": "第二种是 API 触发。每个 Routine 有一个专属的 HTTP 端点。你往这个端点发一个 POST 请求，带上 Bearer token，它就启动了。调用后会返回一个 session URL，你可以直接点进去看 AI 正在做什么。",
+    "pronounce_text": "第二种是API触发。每个Routine有一个专属的HTTP端点。你往这个端点发一个POST请求，带上Bearer token，它就启动了。调用后会返回一个session URL，你可以直接点进去看AI正在做什么。",
+    "time_begin": 90972,
+    "time_end": 105930.14058956916,
+    "text_begin": 546,
+    "text_end": 664,
+    "pronounce_text_begin": 518,
+    "pronounce_text_end": 624
+  },
+  {
+    "text": "第三种是 GitHub 触发。有人开了 Pull Request，或者发布了新 Release，Routine 自动响应。还支持按作者、标题、分支、标签这些条件做过滤。",
+    "pronounce_text": "第三种是GitHub触发。有人开了Pull Request，或者发布了新Release，Routine自动响应。还支持按作者、标题、分支、标签这些条件做过滤。",
+    "time_begin": 106092,
+    "time_end": 118995.1746031746,
+    "text_begin": 664,
+    "text_end": 748,
+    "pronounce_text_begin": 624,
+    "pronounce_text_end": 703
+  },
+  {
+    "text": "这三种触发器可以叠加。一个 Routine 可以同时绑定定时触发、API 触发和 GitHub 事件触发。这意味着什么？AI 代理可以直接嵌入你现有的 DevOps 工具链，而不是独立存在。",
+    "pronounce_text": "这三种触发器可以叠加。一个Routine可以同时绑定定时触发、API触发和GitHub事件触发。这意味着什么？AI代理可以直接嵌入你现有的DevOps工具链，而不是独立存在。",
+    "time_begin": 119160,
+    "time_end": 133096.46258503402,
+    "text_begin": 748,
+    "text_end": 843,
+    "pronounce_text_begin": 703,
+    "pronounce_text_end": 790
+  },
+  {
+    "text": "光说触发器太抽象。来看 Anthropic 给的几个真实用例，你就明白这东西能干嘛。",
+    "pronounce_text": "光说触发器太抽象。来看Anthropic给的几个真实用例，你就明白这东西能干嘛。",
+    "time_begin": 133236,
+    "time_end": 139231.2380952381,
+    "text_begin": 843,
+    "text_end": 885,
+    "pronounce_text_begin": 790,
+    "pronounce_text_end": 830
+  },
+  {
+    "text": "第一个，积压工单维护。每天晚上定时跑一次，读取当天新开的 issue，自动打标签，根据代码区域分配负责人，然后往 Slack 发一份总结。第二天早上团队到了，待办已经整理好了。",
+    "pronounce_text": "第一个，积压工单维护。每天晚上定时跑一次，读取当天新开的issue，自动打标签，根据代码区域分配负责人，然后往Slack发一份总结。第二天早上团队到了，待办已经整理好了。",
+    "time_begin": 139392,
+    "time_end": 155836.21768707482,
+    "text_begin": 885,
+    "text_end": 973,
+    "pronounce_text_begin": 830,
+    "pronounce_text_end": 915
+  },
+  {
+    "text": "第二个，报警分诊。监控系统检测到错误率超标，直接调 Routine 的 API 端点，把报警内容传过去。Routine 拉出 stack trace，关联最近的 commit，然后开一个 draft PR，附上修复建议和报警链接。",
+    "pronounce_text": "第二个，报警分诊。监控系统检测到错误率超标，直接调Routine的API端点，把报警内容传过去。Routine拉出stack trace，关联最近的commit，然后开一个draft PR，附上修复建议和报警链接。",
+    "time_begin": 155988,
+    "time_end": 172304.50793650793,
+    "text_begin": 973,
+    "text_end": 1088,
+    "pronounce_text_begin": 915,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "值班的人打开的不是一个空白终端，而是一个已经写好修复方案的 PR。",
+    "pronounce_text": "值班的人打开的不是一个空白终端，而是一个已经写好修复方案的PR。",
+    "time_begin": 172476,
+    "time_end": 177704.97959183675,
+    "text_begin": 1088,
+    "text_end": 1121,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1054
+  },
+  {
+    "text": "第三个，代码审查。有人开了 PR，GitHub 触发器自动启动。Routine 按你团队自己的 review checklist 来审，在代码行上直接留评论，标出安全、性能、风格问题。",
+    "pronounce_text": "第三个，代码审查。有人开了PR，GitHub触发器自动启动。Routine按你团队自己的review checklist来审，在代码行上直接留评论，标出安全、性能、风格问题。",
+    "time_begin": 177876,
+    "time_end": 192659.9909297052,
+    "text_begin": 1121,
+    "text_end": 1213,
+    "pronounce_text_begin": 1054,
+    "pronounce_text_end": 1141
+  },
+  {
+    "text": "人类 reviewer 可以把精力放在设计层面，而不是机械检查上。",
+    "pronounce_text": "人类reviewer可以把精力放在设计层面，而不是机械检查上。",
+    "time_begin": 192816,
+    "time_end": 197185.84126984127,
+    "text_begin": 1213,
+    "text_end": 1246,
+    "pronounce_text_begin": 1141,
+    "pronounce_text_end": 1172
+  },
+  {
+    "text": "第四个，部署验证。CD 流水线部署完成后，调 API 触发 Routine。它跑冒烟测试，扫错误日志找回归，然后在发布频道里发一条\"通过\"或\"不通过\"。",
+    "pronounce_text": "第四个，部署验证。CD流水线部署完成后，调API触发Routine。它跑冒烟测试，扫错误日志找回归，然后在发布频道里发一条\"通过\"或\"不通过\"。",
+    "time_begin": 197352,
+    "time_end": 210348.0544217687,
+    "text_begin": 1246,
+    "text_end": 1322,
+    "pronounce_text_begin": 1172,
+    "pronounce_text_end": 1244
+  },
+  {
+    "text": "第五个，文档漂移检测。每周跑一次，扫描本周合并的 PR，找出文档里引用了已变更 API 的地方，自动开更新 PR。",
+    "pronounce_text": "第五个，文档漂移检测。每周跑一次，扫描本周合并的PR，找出文档里引用了已变更API的地方，自动开更新PR。",
+    "time_begin": 210492,
+    "time_end": 221688.50793650793,
+    "text_begin": 1322,
+    "text_end": 1379,
+    "pronounce_text_begin": 1244,
+    "pronounce_text_end": 1297
+  },
+  {
+    "text": "第六个，这个最有意思——跨语言 SDK 移植。一个 SDK 仓库合并了 PR，Routine 自动把这个改动移植到另一种语言的 SDK 里，开一个对应的 PR。两个仓库自动保持同步，不需要人手动重新实现。",
+    "pronounce_text": "第六个，这个最有意思跨语言SDK移植。一个SDK仓库合并了PR，Routine自动把这个改动移植到另一种语言的SDK里，开一个对应的PR。两个仓库自动保持同步，不需要人手动重新实现。",
+    "time_begin": 221832,
+    "time_end": 237730.54875283447,
+    "text_begin": 1379,
+    "text_end": 1481,
+    "pronounce_text_begin": 1297,
+    "pronounce_text_end": 1388
+  },
+  {
+    "text": "这里有一个很重要的设计细节，值得单独说。",
+    "pronounce_text": "这里有一个很重要的设计细节，值得单独说。",
+    "time_begin": 237888,
+    "time_end": 241062.0136054422,
+    "text_begin": 1481,
+    "text_end": 1501,
+    "pronounce_text_begin": 1388,
+    "pronounce_text_end": 1408
+  },
+  {
+    "text": "Routine 做的所有操作，都以你的个人身份执行。它开的 PR，用的是你的 GitHub 账号。它发的 Slack 消息，用的是你的 Slack 身份。它创建的 Linear ticket，也是你的名字。",
+    "pronounce_text": "Routine做的所有操作，都以你的个人身份执行。它开的PR，用的是你的GitHub账号。它发的Slack消息，用的是你的Slack身份。它创建的Linear ticket，也是你的名字。",
+    "time_begin": 241200,
+    "time_end": 255391.8820861678,
+    "text_begin": 1501,
+    "text_end": 1604,
+    "pronounce_text_begin": 1408,
+    "pronounce_text_end": 1502
+  },
+  {
+    "text": "这不是技术限制，我认为这是一个刻意的信任边界设计。Anthropic 没有给 Routine 创建一个独立的 bot 身份，而是把它绑定在你个人账户上。好处是什么？可追溯。",
+    "pronounce_text": "这不是技术限制，我认为这是一个刻意的信任边界设计。Anthropic没有给Routine创建一个独立的bot身份，而是把它绑定在你个人账户上。好处是什么？可追溯。",
+    "time_begin": 255528,
+    "time_end": 269336.7528344671,
+    "text_begin": 1604,
+    "text_end": 1690,
+    "pronounce_text_begin": 1502,
+    "pronounce_text_end": 1583
+  },
+  {
+    "text": "每一个操作都能追到具体的人。坏处呢？",
+    "pronounce_text": "每一个操作都能追到具体的人。坏处呢？",
+    "time_begin": 269536.7528344671,
+    "time_end": 272850.0861678005,
+    "text_begin": 1690,
+    "text_end": 1708,
+    "pronounce_text_begin": 1583,
+    "pronounce_text_end": 1601
+  },
+  {
+    "text": "如果你的 Routine 在凌晨三点开了一个奇怪的 PR，那上面挂的是你的名字。",
+    "pronounce_text": "如果你的Routine在凌晨三点开了一个奇怪的PR，那上面挂的是你的名字。",
+    "time_begin": 272988,
+    "time_end": 278518.8390022676,
+    "text_begin": 1708,
+    "text_end": 1748,
+    "pronounce_text_begin": 1601,
+    "pronounce_text_end": 1638
+  },
+  {
+    "text": "而且 Routine 目前不支持团队共享。它属于你个人的 claude.ai 账户，也占你个人的每日运行额度。团队协作场景下，这会有摩擦。",
+    "pronounce_text": "而且Routine目前不支持团队共享。它属于你个人的claude点ai账户，也占你个人的每日运行额度。团队协作场景下，这会有摩擦。",
+    "time_begin": 278676,
+    "time_end": 288943.70975056686,
+    "text_begin": 1748,
+    "text_end": 1817,
+    "pronounce_text_begin": 1638,
+    "pronounce_text_end": 1703
+  },
+  {
+    "text": "还有一个技术细节值得注意。",
+    "pronounce_text": "还有一个技术细节值得注意。",
+    "time_begin": 289080,
+    "time_end": 291151.06575963716,
+    "text_begin": 1817,
+    "text_end": 1830,
+    "pronounce_text_begin": 1703,
+    "pronounce_text_end": 1716
+  },
+  {
+    "text": "每次 GitHub 事件触发 Routine，都会启动一个全新的 session。不支持跨事件复用 session。这意味着什么？Routine 本质上是无状态的。每次执行，它都要重新 clone 仓库，重新理解上下文，从零开始。",
+    "pronounce_text": "每次GitHub事件触发Routine，都会启动一个全新的session。不支持跨事件复用session。这意味着什么？Routine本质上是无状态的。每次执行，它都要重新clone仓库，重新理解上下文，从零开始。",
+    "time_begin": 291312,
+    "time_end": 306780.97959183675,
+    "text_begin": 1830,
+    "text_end": 1945,
+    "pronounce_text_begin": 1716,
+    "pronounce_text_end": 1823
+  },
+  {
+    "text": "对于简单任务，这不是问题。但如果你的仓库很大，或者任务需要理解之前几次执行的历史，这个架构就会有效率损耗。",
+    "pronounce_text": "对于简单任务，这不是问题。但如果你的仓库很大，或者任务需要理解之前几次执行的历史，这个架构就会有效率损耗。",
+    "time_begin": 306936,
+    "time_end": 316216.86167800456,
+    "text_begin": 1945,
+    "text_end": 1998,
+    "pronounce_text_begin": 1823,
+    "pronounce_text_end": 1876
+  },
+  {
+    "text": "另外，分支权限也有限制。默认情况下，Routine 只能 push 到 claude/ 前缀的分支。你可以手动解除这个限制，但默认是保守的。还有一点，所有连接的 MCP connector 默认全部包含。",
+    "pronounce_text": "另外，分支权限也有限制。默认情况下，Routine只能push到claude，前缀的分支。你可以手动解除这个限制，但默认是保守的。还有一点，所有连接的MCP connector默认全部包含。",
+    "time_begin": 316368,
+    "time_end": 330815.3015873016,
+    "text_begin": 1998,
+    "text_end": 2100,
+    "pronounce_text_begin": 1876,
+    "pronounce_text_end": 1971
+  },
+  {
+    "text": "如果你不主动去掉不需要的，就可能违反最小权限原则。",
+    "pronounce_text": "如果你不主动去掉不需要的，就可能违反最小权限原则。",
+    "time_begin": 330984,
+    "time_end": 335191.3015873016,
+    "text_begin": 2100,
+    "text_end": 2125,
+    "pronounce_text_begin": 1971,
+    "pronounce_text_end": 1996
+  },
+  {
+    "text": "最后说说限额。Pro 用户每天 5 次，Max 用户 15 次，Team 和 Enterprise 25 次。",
+    "pronounce_text": "最后说说限额。Pro用户每天五次，Max用户十五次，Team和Enterprise二十五次。",
+    "time_begin": 335340,
+    "time_end": 341637.09750566893,
+    "text_begin": 2125,
+    "text_end": 2180,
+    "pronounce_text_begin": 1996,
+    "pronounce_text_end": 2042
+  },
+  {
+    "text": "这个数字本身就传递了一个信号：Anthropic 把 Routines 定位为高价值的精准任务，而不是廉价的批量自动化。你不会拿每天 5 次的额度去跑 lint 检查。",
+    "pronounce_text": "这个数字本身就传递了一个信号：Anthropic把Routines定位为高价值的精准任务，而不是廉价的批量自动化。你不会拿每天五次的额度去跑lint检查。",
+    "time_begin": 341784,
+    "time_end": 353410.0770975057,
+    "text_begin": 2180,
+    "text_end": 2264,
+    "pronounce_text_begin": 2042,
+    "pronounce_text_end": 2119
+  },
+  {
+    "text": "你会用它来做那些真正需要 AI 理解力的事情——审代码、分诊报警、移植 SDK。",
+    "pronounce_text": "你会用它来做那些真正需要AI理解力的事情审代码、分诊报警、移植SDK。",
+    "time_begin": 353556,
+    "time_end": 360445.20634920633,
+    "text_begin": 2264,
+    "text_end": 2304,
+    "pronounce_text_begin": 2119,
+    "pronounce_text_end": 2154
+  },
+  {
+    "text": "Enterprise 用户如果启用了 extra usage，超出上限后可以按用量付费继续跑。但这个限制本身说明，至少在当前阶段，Routines 是一个受控的、渐进式的发布。",
+    "pronounce_text": "Enterprise用户如果启用了extra usage，超出上限后可以按用量付费继续跑。但这个限制本身说明，至少在当前阶段，Routines是一个受控的、渐进式的发布。",
+    "time_begin": 360612,
+    "time_end": 373480.34467120183,
+    "text_begin": 2304,
+    "text_end": 2392,
+    "pronounce_text_begin": 2154,
+    "pronounce_text_end": 2239
+  },
+  {
+    "text": "回头看这个功能，它改变的不是 AI 写代码的质量。Claude Code 之前就能写代码，而且写得不错。Routines 改变的是 AI 工作的模式——从\"你问我答\"的对话模式，变成了事件驱动的后台服务模式。",
+    "pronounce_text": "回头看这个功能，它改变的不是AI写代码的质量。Claude Code之前就能写代码，而且写得不错。Routines改变的是AI工作的模式从\"你问我答\"的对话模式，变成了事件驱动的后台服务模式。",
+    "time_begin": 373644,
+    "time_end": 389496.1088435374,
+    "text_begin": 2392,
+    "text_end": 2496,
+    "pronounce_text_begin": 2239,
+    "pronounce_text_end": 2335
+  },
+  {
+    "text": "这是一个范式的变化。AI 编程助手的工作单位，不再是一次对话，而是一个持续运行的服务。它可以响应 GitHub 事件，可以接收 API 调用，可以按计划执行。",
+    "pronounce_text": "这是一个范式的变化。AI编程助手的工作单位，不再是一次对话，而是一个持续运行的服务。它可以响应GitHub事件，可以接收API调用，可以按计划执行。",
+    "time_begin": 389664,
+    "time_end": 402404.6349206349,
+    "text_begin": 2496,
+    "text_end": 2575,
+    "pronounce_text_begin": 2335,
+    "pronounce_text_end": 2409
+  },
+  {
+    "text": "当然，它目前还有明确的限制：无状态、个人绑定、次数受限。但方向已经非常清晰了。",
+    "pronounce_text": "当然，它目前还有明确的限制：无状态、个人绑定、次数受限。但方向已经非常清晰了。",
+    "time_begin": 402552,
+    "time_end": 410846.0136054422,
+    "text_begin": 2575,
+    "text_end": 2614,
+    "pronounce_text_begin": 2409,
+    "pronounce_text_end": 2448
+  },
+  {
+    "text": "AI 编程助手的下一步，不是写得更好，而是不需要你在场就能工作。",
+    "pronounce_text": "AI编程助手的下一步，不是写得更好，而是不需要你在场就能工作。",
+    "time_begin": 411012,
+    "time_end": 416368.6893424036,
+    "text_begin": 2614,
+    "text_end": 2646,
+    "pronounce_text_begin": 2448,
+    "pronounce_text_end": 2479
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 416520,
+    "time_end": 422213.3786848073,
+    "text_begin": 2646,
+    "text_end": 2673,
+    "pronounce_text_begin": 2479,
+    "pronounce_text_end": 2505
+  }
+]

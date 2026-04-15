@@ -98,26 +98,10 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 打印叙述稿摘要（标题、字数、预计时长、段落数）并告知用户：
 
 > 叙述稿已生成：`narration.md`（约 X 字 / ~Y 分钟）。
-> 请 review 并提出修改意见。确认后我会自动完成后续所有步骤（分集 → slide → HTML → 渲染）。
+> 请 review 并提出修改意见。满意后可用 `/blog2video-slides` 继续后续步骤（分集 → slide plan → HTML → 渲染）。
 
 如果用户提出修改意见，使用 Script Writer subagent 修订 narration.md，再次暂停等待确认。
-如果用户确认通过，继续执行后续步骤。
-
-#### Step 3: Episode Splitter
-
-使用 subagent 执行。读取 `.claude/skills/blog2video/prompts/episode-splitter.md` 获取 prompt。
-
-输出 `video_plan.json` + `video_N_narration.md`。
-
-#### Step 4: Slide Planner
-
-对每个视频的叙述稿，使用 subagent 生成带 Slide 标记的口播稿。
-
-读取 `.claude/skills/blog2video/prompts/slide-planner.md` 获取 prompt。
-
-输出 `video_N_script.md`。
-
-完成后打印摘要并结束（不继续 slides/render）。
+如果用户确认通过，**到此结束，不自动继续后续步骤。**
 
 ---
 
@@ -136,15 +120,7 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 
 #### Step 2: Script Writer
 
-（与 URL 模式的 Step 2 相同）
-
-#### Step 3: Episode Splitter
-
-（与 URL 模式的 Step 3 相同）
-
-#### Step 4: Slide Planner
-
-（与 URL 模式的 Step 4 相同）
+（与 URL 模式的 Step 2 相同，包括 Review Checkpoint）
 
 ---
 
@@ -153,6 +129,5 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 打印：
 - 输出目录路径
 - 总字数和预计时长
-- 视频数量
-- 每个视频的 Slide 数量和类型
+- 段落数
 - 如果有上一版，简述主要改动

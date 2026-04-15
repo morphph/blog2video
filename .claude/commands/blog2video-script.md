@@ -98,7 +98,7 @@ Generate (or re-generate) the narration script for a blog2video project. Support
 打印叙述稿摘要（标题、字数、预计时长、段落数）并告知用户：
 
 > 叙述稿已生成：`narration.md`（约 X 字 / ~Y 分钟）。
-> 请 review 并提出修改意见。满意后可用 `/blog2video-slides` 继续后续步骤（分集 → slide plan → HTML → 渲染）。
+> 请 review 并提出修改意见。满意后可用 `/blog2video-continue <output-dir>` 继续后续步骤（分集 → slide plan → HTML → 渲染）。
 
 如果用户提出修改意见，使用 Script Writer subagent 修订 narration.md，再次暂停等待确认。
 如果用户确认通过，**到此结束，不自动继续后续步骤。**

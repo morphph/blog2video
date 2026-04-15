@@ -1,0 +1,11 @@
+{
+  "url": "https://x.com/coreyganim/status/2044137332920492467",
+  "article_url": "https://x.com/i/article/2044133932354949121",
+  "author": "Corey Ganim",
+  "handle": "coreyganim",
+  "method_used": "webfetch_blog_docs",
+  "paragraph_count": 50,
+  "image_count": 1,
+  "primary_source": "https://claude.com/blog/introducing-routines-in-claude-code",
+  "documentation_source": "https://code.claude.com/docs/en/routines"
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 46px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .concept-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .concept-card .label {
+      font-size: 24px;
+      color: #6B7280;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .concept-card .value {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .concept-card .value .num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+    }
+    .warning-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+    }
+    .warning-card .label {
+      font-size: 28px;
+      font-weight: 700;
+      color: #EF4444;
+      margin-bottom: 10px;
+    }
+    .warning-card .desc {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .warning-card .desc .em {
+      color: #EF4444;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Context Window 是什么</div>
+    <div class="concept-card">
+      <div class="label">上下文窗口容量</div>
+      <div class="value"><span class="num">100万</span> Token</div>
+    </div>
+    <div class="concept-card">
+      <div class="label">包含内容</div>
+      <div class="value">系统提示词 + 对话历史<br>+ 工具调用 + 文件读取</div>
+    </div>
+    <div class="warning-card">
+      <div class="label">Context Rot 上下文腐烂</div>
+      <div class="desc">上下文越长，注意力越分散<br>不相关内容<span class="em">干扰当前任务</span></div>
+    </div>
+  </div>
+</body>
+</html>

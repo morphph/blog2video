@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 44px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      border-left: 4px solid;
+    }
+    .card.bad {
+      border-left-color: #EF4444;
+    }
+    .card.good {
+      border-left-color: #10B981;
+    }
+    .card .card-label {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .card.bad .card-label { color: #EF4444; }
+    .card.good .card-label { color: #10B981; }
+    .card .card-text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .card .card-text .em {
+      font-weight: 600;
+    }
+    .card.bad .card-text .em { color: #EF4444; }
+    .card.good .card-text .em { color: #10B981; }
+    .insight {
+      margin-top: 40px;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .insight .text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">纠错 vs Rewind</div>
+    <div class="cards">
+      <div class="card bad">
+        <div class="card-label">纠错：继续对话</div>
+        <div class="card-text">失败路径的工具调用、输出<br>全部<span class="em">留在上下文</span>里<br>浪费 Token + 制造 Context Rot</div>
+      </div>
+      <div class="card good">
+        <div class="card-label">Rewind：回退重来</div>
+        <div class="card-text">失败路径<span class="em">直接删除</span><br>上下文更干净，模型更聪明</div>
+      </div>
+    </div>
+    <div class="insight">
+      <div class="text">删除比修正更高效</div>
+    </div>
+  </div>
+</body>
+</html>

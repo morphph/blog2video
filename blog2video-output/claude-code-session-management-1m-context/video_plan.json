@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Using Claude Code: Session Management & 1M Context",
+    "title_zh": "你的AI编程效率，输在上下文管理上？",
+    "word_count": 2994,
+    "slug": "claude-code-session-management-1m-context"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕一个核心论点展开——上下文管理是AI编程效率的分水岭，五种操作（继续、Rewind、/clear、Compact、Subagent）都在支撑同一个thesis，无独立子主题，不拆分。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI编程效率的隐藏分水岭"
+      }
+    ]
+  }
+}

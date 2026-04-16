@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .quote-mark {
+      font-size: 96px;
+      font-weight: 900;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .quote-text {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+    }
+    .quote-text .red {
+      color: #EF4444;
+    }
+    .quote-text .yellow {
+      color: #F59E0B;
+    }
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: #8B5CF6;
+      border-radius: 2px;
+      margin-bottom: 40px;
+    }
+    .solution-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+    }
+    .solution-card .label {
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .solution-card .text {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .solution-card .text .em {
+      color: #10B981;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">Compaction 发生在<br>模型<span class="red">最笨</span>的时刻</div>
+    <div class="divider"></div>
+    <div class="solution-card">
+      <div class="label">破解方法</div>
+      <div class="text">不要等 Autocompact 被动触发<br>在模型<span class="em">还聪明</span>的时候<br>主动 /compact</div>
+    </div>
+  </div>
+</body>
+</html>

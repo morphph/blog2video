@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 44px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 44px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      border-left: 4px solid;
+    }
+    .card.compact {
+      border-left-color: #8B5CF6;
+    }
+    .card.clear {
+      border-left-color: #3B82F6;
+    }
+    .card .card-label {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .card.compact .card-label { color: #8B5CF6; }
+    .card.clear .card-label { color: #3B82F6; }
+    .card .card-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+    }
+    .card .card-text .em {
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .card .card-tip {
+      margin-top: 12px;
+      font-size: 24px;
+      color: #6B7280;
+      line-height: 1.5;
+    }
+    .card .card-tip .code {
+      color: #F59E0B;
+      font-weight: 600;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .core-insight {
+      margin-top: 40px;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .core-insight .text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Compact vs /clear</div>
+    <div class="cards">
+      <div class="card compact">
+        <div class="card-label">Compact — 模型决定</div>
+        <div class="card-text"><span class="em">自动总结</span>对话历史<br>用摘要替换原始内容<br>省力，但有损</div>
+        <div class="card-tip">可加指令：<span class="code">/compact focus on auth</span></div>
+      </div>
+      <div class="card clear">
+        <div class="card-label">/clear — 你来决定</div>
+        <div class="card-text"><span class="em">手动写简报</span>开全新会话<br>更费力，但上下文完全可控</div>
+      </div>
+    </div>
+    <div class="core-insight">
+      <div class="text">核心区别：谁来做判断？</div>
+    </div>
+  </div>
+</body>
+</html>

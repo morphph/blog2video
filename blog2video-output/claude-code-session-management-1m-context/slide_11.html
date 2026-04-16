@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #3B82F6;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #6B7280;
+      margin-bottom: 44px;
+      text-align: center;
+    }
+    .examples {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .example {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+    }
+    .example .scenario {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .example .scenario .cmd {
+      color: #F59E0B;
+      font-weight: 600;
+    }
+    .example .need {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .example .need .arrow {
+      font-size: 24px;
+      color: #10B981;
+    }
+    .example .need .text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #10B981;
+    }
+    .test-card {
+      margin-top: 36px;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .test-card .label {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+    .test-card .text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #8B5CF6;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">何时用 Subagent？</div>
+    <div class="subtitle">Mental Test</div>
+    <div class="examples">
+      <div class="example">
+        <div class="scenario"><span class="cmd">验证实现结果</span><br>子代理按规范文件逐项检查</div>
+        <div class="need">
+          <div class="arrow">-></div>
+          <div class="text">只需要：通过 / 未通过</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="scenario"><span class="cmd">读另一个代码库</span><br>总结它的 Auth 实现方案</div>
+        <div class="need">
+          <div class="arrow">-></div>
+          <div class="text">只需要：那份总结</div>
+        </div>
+      </div>
+    </div>
+    <div class="test-card">
+      <div class="label">判断标准</div>
+      <div class="text">需要工具输出本身<br>还是只需要结论？</div>
+    </div>
+  </div>
+</body>
+</html>

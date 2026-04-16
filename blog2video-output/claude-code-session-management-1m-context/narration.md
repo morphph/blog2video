@@ -6,7 +6,7 @@ Claude Code 刚升级到 100 万 token 的上下文窗口。很多人觉得，�
 
 ## Brand Intro
 
-这里是精读AI。AI 世界很吵，每期帮你从全球顶级 AI 团队的一手文献里，读透一篇最值得读的。今天我们精读的是 Claude Code 团队成员 Thariq 发布的一篇关于 Session Management 的实操指南。
+这里是精读AI。今天我们来详细解读一下，Claude Code 官方团队是怎么建议你做 Context Management 的。
 
 ## 上下文窗口不是越大越安全
 

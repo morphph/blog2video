@@ -25,21 +25,36 @@
       position: relative;
     }
     .hook {
-      font-size: 60px;
+      font-size: 52px;
       font-weight: 800;
       line-height: 1.4;
-      margin-bottom: 60px;
+      margin-bottom: 48px;
       letter-spacing: 1px;
     }
     .hook .highlight {
       color: #EF4444;
     }
-    .divider {
-      width: 80px;
-      height: 4px;
-      background: #8B5CF6;
-      border-radius: 2px;
-      margin-bottom: 60px;
+    .hook .yellow {
+      color: #F59E0B;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      margin-bottom: 48px;
+      text-align: left;
+    }
+    .card-text {
+      font-size: 32px;
+      line-height: 1.6;
+      color: #B0B0CC;
+    }
+    .card-text .em {
+      color: #FFFFFF;
+      font-weight: 600;
     }
     .brand {
       font-size: 36px;
@@ -51,17 +66,19 @@
       color: #8B5CF6;
     }
     .topic {
-      font-size: 30px;
+      font-size: 28px;
       color: #6B7280;
-      margin-top: 24px;
+      margin-top: 20px;
       letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
   <div class="slide">
-    <div class="hook">窗口越大<br><span class="highlight">差距反而越大</span></div>
-    <div class="divider"></div>
+    <div class="hook"><span class="yellow">100万 Token</span> 上下文<br>窗口越大<br><span class="highlight">差距反而越大</span></div>
+    <div class="card">
+      <div class="card-text">五个选项里<span class="em">大多数人只会第一个</span><br>这篇文章讲的是<span class="em">另外四个</span></div>
+    </div>
     <div class="brand"><span class="accent">精读AI</span> · AI编程</div>
     <div class="topic">Claude Code Context Management 深度解读</div>
   </div>

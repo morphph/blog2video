@@ -1,0 +1,15 @@
+{
+  "topic": "Agent 100 倍生产力的秘密不是模型",
+  "blog_url": "https://x.com/garrytan/status/2042925773300908103",
+  "source": "thin-harness-fat-skills",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

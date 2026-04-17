@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .hl { color: #F59E0B; }
+    .persona {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .name .co { color: #3B82F6; font-weight: 700; }
+    .claim {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 500;
+    }
+    .claim .quote { color: #3B82F6; font-weight: 700; }
+    .vs-col {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+    .ev {
+      flex: 1;
+      background: #15152A;
+      border-radius: 10px;
+      padding: 20px 18px;
+      text-align: left;
+    }
+    .ev.say { border: 1px solid rgba(239, 68, 68, 0.3); border-left: 4px solid #EF4444; }
+    .ev.do { border: 1px solid rgba(16, 185, 129, 0.3); border-left: 4px solid #10B981; }
+    .ev-label {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .say .ev-label { color: #EF4444; }
+    .do .ev-label { color: #10B981; }
+    .ev-text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .ev-text .big {
+      font-size: 42px;
+      font-weight: 800;
+      color: #10B981;
+      line-height: 1;
+      display: block;
+      margin-top: 4px;
+    }
+    .ev-text .big-red {
+      font-size: 30px;
+      font-weight: 800;
+      color: #EF4444;
+    }
+    .verdict {
+      width: 100%;
+      background: linear-gradient(90deg, rgba(245,158,11,0.15), rgba(139,92,246,0.15));
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 12px;
+      padding: 18px 22px;
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.35;
+    }
+    .verdict .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">Latent space 的完美任务</div>
+    <div class="title">
+      她说的和她做的<span class="hl">不是一个词</span>
+    </div>
+    <div class="persona">
+      <div class="name">Maria Santos · <span class="co">Contrail</span></div>
+      <div class="claim">申请里写：<span class="quote">"AI Agent 的 Datadog"</span></div>
+    </div>
+    <div class="vs-col">
+      <div class="ev say">
+        <div class="ev-label">她说</div>
+        <div class="ev-text">observability<br><span class="big-red">观测性工具</span></div>
+      </div>
+      <div class="ev do">
+        <div class="ev-label">她做</div>
+        <div class="ev-text">GitHub commit 里<span class="big">80%</span>billing 模块</div>
+      </div>
+    </div>
+    <div class="verdict">
+      伪装成 observability 的 <span class="k">FinOps</span><br>
+      embedding 搜不到，模型同时读完才抓得到
+    </div>
+  </div>
+</body>
+</html>

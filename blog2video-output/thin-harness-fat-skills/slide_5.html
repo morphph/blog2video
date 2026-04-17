@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 44px;
+    }
+    .title .hl { color: #EF4444; }
+    .title .k { color: #F59E0B; }
+    .row {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .row.single { flex-direction: column; }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 20px;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      text-align: left;
+    }
+    .card.can { border-left: 4px solid #10B981; }
+    .card.fail { border-left: 4px solid #EF4444; }
+    .card.fix { border-left: 4px solid #8B5CF6; }
+    .ct { font-size: 20px; letter-spacing: 2px; font-weight: 700; margin-bottom: 10px; }
+    .can .ct { color: #10B981; }
+    .fail .ct { color: #EF4444; }
+    .fix .ct { color: #8B5CF6; }
+    .ctext {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .ctext .muted { color: #B0B0CC; font-weight: 500; }
+    .ctext .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">模型真正卡壳的地方</div>
+    <div class="title">
+      不是模型不懂推理<br>
+      是不懂<span class="hl">你的数据</span>
+    </div>
+    <div class="row">
+      <div class="card can">
+        <div class="ct">模型会的</div>
+        <div class="ctext">推理 · 综合 · 写代码</div>
+      </div>
+      <div class="card fail">
+        <div class="ct">模型不会的</div>
+        <div class="ctext">
+          <span class="muted">你的 DB schema</span><br>
+          <span class="muted">团队命名惯例</span>
+        </div>
+      </div>
+    </div>
+    <div class="row single">
+      <div class="card fix">
+        <div class="ct">SKILL 的作用</div>
+        <div class="ctext">
+          把你脑子里"<span class="k">先看日志再查账单</span>"<br>
+          的判断流程，写成 markdown
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

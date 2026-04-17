@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    .title .en { color: #F59E0B; }
+    .arrow-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .num-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    .num-card.before { border-left: 4px solid #EF4444; }
+    .num-card.after { border-left: 4px solid #10B981; }
+    .nlabel {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .before .nlabel { color: #EF4444; }
+    .after .nlabel { color: #10B981; }
+    .nnum {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .before .nnum { color: #EF4444; }
+    .after .nnum { color: #10B981; }
+    .nunit {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .arrow {
+      font-size: 48px;
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .compress {
+      font-size: 34px;
+      font-weight: 800;
+      color: #F59E0B;
+    }
+    .mid-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .mid-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .mid-text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .mid-text .k { color: #F59E0B; }
+    .mid-text .en { color: #8B5CF6; font-weight: 800; }
+    .insight {
+      width: 100%;
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.35;
+      padding: 18px 24px;
+      background: linear-gradient(90deg, rgba(139,92,246,0.12), rgba(59,130,246,0.12));
+      border-radius: 12px;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    .insight .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">Garry Tan 的糗事</div>
+    <div class="title">
+      <span class="en">CLAUDE.md</span> 砍 100 倍
+    </div>
+    <div class="arrow-row">
+      <div class="num-card before">
+        <div class="nlabel">之前</div>
+        <div class="nnum">2 万</div>
+        <div class="nunit">行，模型读不动</div>
+      </div>
+      <div class="compress">→</div>
+      <div class="num-card after">
+        <div class="nlabel">之后</div>
+        <div class="nnum">200</div>
+        <div class="nunit">行，干净高效</div>
+      </div>
+    </div>
+    <div class="mid-card">
+      <div class="mid-label">19,800 行去哪了？</div>
+      <div class="mid-text">
+        转成外部文档<br>
+        靠 <span class="en">resolver</span> 按需加载
+      </div>
+    </div>
+    <div class="insight">
+      瓶颈不是 <span class="k">context window</span> 多大<br>
+      是在对的时机加载对的文档
+    </div>
+  </div>
+</body>
+</html>

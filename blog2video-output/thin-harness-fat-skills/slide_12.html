@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+    .title .en { color: #F59E0B; }
+    .title .hl { color: #EF4444; }
+    .reverse {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .r-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .r-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .r-text .k { color: #F59E0B; }
+    .r-text .muted { color: #B0B0CC; font-weight: 500; font-size: 22px; display: block; margin-top: 6px; }
+    .result {
+      width: 100%;
+      background: linear-gradient(90deg, rgba(16,185,129,0.12), rgba(139,92,246,0.12));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 12px;
+      padding: 22px 22px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .res-left { text-align: left; flex: 1; }
+    .res-label {
+      font-size: 20px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .res-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .res-nums {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .rn-before {
+      font-size: 58px;
+      font-weight: 800;
+      color: #EF4444;
+      line-height: 1;
+    }
+    .rn-arrow {
+      font-size: 32px;
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .rn-after {
+      font-size: 72px;
+      font-weight: 800;
+      color: #10B981;
+      line-height: 1;
+    }
+    .closing {
+      width: 100%;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+      padding: 16px 20px;
+      background: #15152A;
+      border-radius: 10px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .closing .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">/improve 的自我进化</div>
+    <div class="title">
+      Skill 自己<span class="hl">重写自己</span>
+    </div>
+    <div class="reverse">
+      <div class="r-label">反常识操作</div>
+      <div class="r-text">
+        不读差评，只读 <span class="k">"OK"</span> 评价<br>
+        <span class="muted">差评噪声大，OK 最适合反推规则漏洞</span>
+      </div>
+    </div>
+    <div class="result">
+      <div class="res-left">
+        <div class="res-label">下一场</div>
+        <div class="res-text">OK 评级占比</div>
+      </div>
+      <div class="res-nums">
+        <div class="rn-before">12%</div>
+        <div class="rn-arrow">→</div>
+        <div class="rn-after">4%</div>
+      </div>
+    </div>
+    <div class="closing">
+      没人改代码<br>
+      是 <span class="k">skill 文件自己学会的</span>
+    </div>
+  </div>
+</body>
+</html>

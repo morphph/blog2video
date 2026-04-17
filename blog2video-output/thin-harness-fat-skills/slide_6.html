@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .k { color: #F59E0B; }
+    .num-band {
+      width: 100%;
+      background: linear-gradient(90deg, rgba(245,158,11,0.18), rgba(139,92,246,0.12));
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .num {
+      font-size: 88px;
+      font-weight: 800;
+      color: #F59E0B;
+      line-height: 1;
+    }
+    .num-cap {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      text-align: right;
+      line-height: 1.3;
+    }
+    .num-cap .en { color: #F59E0B; }
+    .four {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 10px;
+      padding: 18px 20px;
+      text-align: left;
+    }
+    .idx {
+      font-size: 18px;
+      color: #8B5CF6;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    .itxt {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">Harness 只做四件事</div>
+    <div class="title">
+      薄 Harness ≈ <span class="k">200 行代码</span>
+    </div>
+    <div class="num-band">
+      <div class="num">200</div>
+      <div class="num-cap">行代码<br>JSON 进 · 文本出 · <span class="en">默认只读</span></div>
+    </div>
+    <div class="four">
+      <div class="item">
+        <div class="idx">01</div>
+        <div class="itxt">循环调用模型</div>
+      </div>
+      <div class="item">
+        <div class="idx">02</div>
+        <div class="itxt">读写你的文件</div>
+      </div>
+      <div class="item">
+        <div class="idx">03</div>
+        <div class="itxt">管理上下文</div>
+      </div>
+      <div class="item">
+        <div class="idx">04</div>
+        <div class="itxt">执行安全策略</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

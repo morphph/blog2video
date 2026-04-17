@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Thin Harness, Fat Skills",
+    "title_zh": "Agent 100 倍生产力的秘密不是模型",
+    "word_count": 3900,
+    "slug": "thin-harness-fat-skills"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇叙述稿是围绕'薄 harness + 厚 skill'一条主干展开的连贯论证，所有 section 都在支撑同一个 thesis，没有可以独立成片的子主题，按默认不拆原则做成一集。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Agent 100 倍生产力的秘密不是模型"
+      }
+    ]
+  }
+}

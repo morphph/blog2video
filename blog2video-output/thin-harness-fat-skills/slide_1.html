@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(circle at 20% 15%, rgba(239, 68, 68, 0.10), transparent 50%),
+        radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.10), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .headline {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.15;
+      color: #FFFFFF;
+      letter-spacing: -1px;
+      margin-bottom: 56px;
+    }
+    .headline .hl-red { color: #EF4444; }
+    .headline .hl-yellow { color: #F59E0B; }
+    .compare {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 20px;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    .card.left { border-left: 4px solid #6B7280; }
+    .card.right { border-left: 4px solid #EF4444; }
+    .card-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .card-num {
+      font-size: 88px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .card.left .card-num { color: #B0B0CC; }
+    .card.right .card-num { color: #EF4444; }
+    .card-sub {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .source {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      max-width: 760px;
+    }
+    .source .em { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">精读AI · AI Agent 架构</div>
+    <div class="headline">
+      同样的 <span class="hl-yellow">Claude</span>，<br>
+      为什么 2 倍 vs <span class="hl-red">100 倍</span>？
+    </div>
+    <div class="compare">
+      <div class="card left">
+        <div class="card-label">普通用户</div>
+        <div class="card-num">2x</div>
+        <div class="card-sub">同一个模型</div>
+      </div>
+      <div class="card right">
+        <div class="card-label">顶级用户</div>
+        <div class="card-num">100x</div>
+        <div class="card-sub">同一个套餐</div>
+      </div>
+    </div>
+    <div class="source">
+      YC 总裁 <span class="em">Garry Tan</span> 读完 Claude Code<br>
+      <span class="em">512,000</span> 行源码的架构心法
+    </div>
+  </div>
+</body>
+</html>

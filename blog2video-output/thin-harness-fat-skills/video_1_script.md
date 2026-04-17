@@ -6,7 +6,7 @@
 
 2026 年 3 月 31 日，Anthropic 不小心把 Claude Code 的完整源码发到了 npm，51 万 2 千行。YC 总裁 Garry Tan 读完之后说：这 50 倍的差距，写在一张卡片上就讲完了。
 
-这里是精读AI。今天我们来拆解一下 YC 总裁 Garry Tan 的最新架构心法——薄 harness，厚 skill。
+这里是精读AI。今天我们来拆解一下 YC 总裁 Garry Tan 的最新架构心法——Thin Harness, Fat Skills。
 
 [SLIDE 2: principle] (0:51 - 2:51)
 
@@ -16,7 +16,7 @@
 
 Live repo context、prompt caching、专门打造的工具、压缩上下文、结构化的会话记忆、并行子 Agent。这些东西没有一样是让模型变聪明的。它们做的事只有一件：在正确的时间，把正确的上下文，送到模型面前，不让噪声淹死它。
 
-所以每一个 AI 产品真正要问的问题只有一个——什么东西该进 harness，什么东西不该进。Garry Tan 给出的答案有一个非常具体的形状。薄 harness，厚 skill。
+所以每一个 AI 产品真正要问的问题只有一个——什么东西该进 harness，什么东西不该进。Garry Tan 给出的答案有一个非常具体的形状。Thin Harness, Fat Skills。
 
 [SLIDE 3: principle] (2:51 - 4:11)
 
@@ -126,7 +126,7 @@ Garry Tan 在原文里打了一个感叹号，说这才是该放进 latent space
 
 还有 diarization 这个动作本身——既烧 token 又慢。6 千个创始人要每天跑一次，成本不是小数字。这不是 RAG，embedding 替代不了，只能让模型真的把材料读一遍。
 
-薄 harness 厚 skill 是个方向，不是一个免费午餐。
+Thin Harness, Fat Skills 是个方向，不是一个免费午餐。
 
 [SLIDE 14: summary] (19:22 - 20:30)
 

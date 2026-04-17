@@ -2,71 +2,71 @@
   {
     "slideNumber": 1,
     "charStart": 0,
-    "charEnd": 244
+    "charEnd": 251
   },
   {
     "slideNumber": 2,
-    "charStart": 244,
-    "charEnd": 602
+    "charStart": 251,
+    "charEnd": 616
   },
   {
     "slideNumber": 3,
-    "charStart": 602,
-    "charEnd": 836
+    "charStart": 616,
+    "charEnd": 850
   },
   {
     "slideNumber": 4,
-    "charStart": 836,
-    "charEnd": 1057
+    "charStart": 850,
+    "charEnd": 1071
   },
   {
     "slideNumber": 5,
-    "charStart": 1057,
-    "charEnd": 1280
+    "charStart": 1071,
+    "charEnd": 1294
   },
   {
     "slideNumber": 6,
-    "charStart": 1280,
-    "charEnd": 1488
+    "charStart": 1294,
+    "charEnd": 1502
   },
   {
     "slideNumber": 7,
-    "charStart": 1488,
-    "charEnd": 1781
+    "charStart": 1502,
+    "charEnd": 1795
   },
   {
     "slideNumber": 8,
-    "charStart": 1781,
-    "charEnd": 2177
+    "charStart": 1795,
+    "charEnd": 2191
   },
   {
     "slideNumber": 9,
-    "charStart": 2177,
-    "charEnd": 2589
+    "charStart": 2191,
+    "charEnd": 2603
   },
   {
     "slideNumber": 10,
-    "charStart": 2589,
-    "charEnd": 2938
+    "charStart": 2603,
+    "charEnd": 2952
   },
   {
     "slideNumber": 11,
-    "charStart": 2938,
-    "charEnd": 3301
+    "charStart": 2952,
+    "charEnd": 3315
   },
   {
     "slideNumber": 12,
-    "charStart": 3301,
-    "charEnd": 3722
+    "charStart": 3315,
+    "charEnd": 3736
   },
   {
     "slideNumber": 13,
-    "charStart": 3722,
-    "charEnd": 4113
+    "charStart": 3736,
+    "charEnd": 4134
   },
   {
     "slideNumber": 14,
-    "charStart": 4113,
-    "charEnd": 4308
+    "charStart": 4134,
+    "charEnd": 4329
   }
 ]

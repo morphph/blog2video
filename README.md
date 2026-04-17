@@ -35,7 +35,8 @@ Output: 1-3 vertical MP4 videos (1080×1920, 30fps)
 ```bash
 git clone https://github.com/morphph/blog2video.git
 cd blog2video/blog2video-remotion && npm install
-pip install edge-tts
+# Create .env with MINIMAX_API_KEY and MINIMAX_VOICE_ID
+cp .env.example .env  # then fill in your MiniMax credentials
 ```
 
 ### 2. Run the pipeline
@@ -139,13 +140,7 @@ blog2video-remotion/                    Remotion rendering engine
 
 ### Change the TTS voice
 
-Edit the `VOICE` variable in `blog2video-remotion/scripts/tts.mjs`:
-
-| Voice | Description |
-|---|---|
-| `zh-CN-YunxiNeural` | Male, default (男声) |
-| `zh-CN-XiaoxiaoNeural` | Female (女声) |
-| `zh-CN-YunjianNeural` | Male, authoritative (男声，权威感) |
+TTS uses MiniMax `speech-02-hd`. Set `MINIMAX_VOICE_ID` in `blog2video-remotion/.env` to any voice ID from your MiniMax console (system voices like `male-qn-qingse`, or custom cloned voices like `moss_audio_*`). Voice ID is read at runtime by `scripts/tts.mjs`; no code changes required.
 
 ### Change the color scheme
 

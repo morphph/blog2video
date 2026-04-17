@@ -24,9 +24,12 @@ npm run tts -- <script.md> <output.mp3>  # Generate TTS audio
 ```
 
 ### TTS prerequisite
-```bash
-pip install edge-tts
+`blog2video-remotion/.env` must define:
 ```
+MINIMAX_API_KEY=<your-key>
+MINIMAX_VOICE_ID=moss_audio_ccbe9ed6-3a37-11f1-a1e0-8a43ce7defab
+```
+(The voice ID above is the current custom voice; update if a new one is created.)
 
 ## Architecture
 
@@ -54,7 +57,7 @@ All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs,
 - **types.ts** — TypeScript interfaces for `VideoConfig`, `SlideConfig`, and all slide data types; also defines `COLORS` map
 - **shared.tsx** — Shared animation utilities and styles
 - **render-all.mjs** — Orchestrates per-video: TTS → copy config → copy audio to `public/` → Remotion render
-- **tts.mjs** — Extracts plain text from script markdown, calls `edge-tts` CLI
+- **tts.mjs** — Extracts plain text from script markdown, calls MiniMax TTS API (`speech-02-hd`, voice from `MINIMAX_VOICE_ID` env)
 
 ### Video specs
 - Resolution: 1080×1920 (vertical 9:16)

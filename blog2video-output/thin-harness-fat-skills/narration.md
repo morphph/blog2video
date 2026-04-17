@@ -8,7 +8,7 @@
 
 ## Brand Intro
 
-这里是精读AI。今天我们来详细解读一下，YC 总裁 Garry Tan 在 Agent 架构上最新的一套方法论——薄 harness，厚 skill。
+这里是精读AI。今天我们来拆解一下 YC 总裁 Garry Tan 的最新架构心法——薄 harness，厚 skill。
 
 ## 100 倍差距不在模型脑子里
 

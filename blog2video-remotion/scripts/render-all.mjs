@@ -222,30 +222,6 @@ async function renderVideo(videoNumber) {
     stdio: "inherit",
   });
 
-  // Step 1.5: Normalize audio volume
-  console.log("\n🔊 Step 1.5: Normalizing audio volume...");
-  const normalizedAudioPath = audioPath.replace(".mp3", "_normalized.mp3");
-  try {
-    execSync(
-      `ffmpeg -y -i "${audioPath}" -af loudnorm=I=-14:TP=-1:LRA=11 "${normalizedAudioPath}"`,
-      { cwd: remotionDir, stdio: "inherit" }
-    );
-    // Stage 2: Boost volume 3x with limiter (loud without clipping)
-    const boostedAudioPath = audioPath.replace(".mp3", "_boosted.mp3");
-    execSync(
-      `ffmpeg -y -i "${normalizedAudioPath}" -af "volume=3.0,alimiter=limit=0.95:attack=5:release=50" "${boostedAudioPath}"`,
-      { cwd: remotionDir, stdio: "inherit" }
-    );
-    // Replace original with boosted version
-    fs.copyFileSync(boostedAudioPath, audioPath);
-    fs.unlinkSync(normalizedAudioPath);
-    fs.unlinkSync(boostedAudioPath);
-    console.log("Audio normalized to -14 LUFS then boosted 3x with limiter");
-  } catch (err) {
-    console.error("❌ ffmpeg loudnorm FAILED — audio will NOT be normalized. Error:", err.message);
-    console.error("Make sure ffmpeg is installed: brew install ffmpeg");
-  }
-
   // Step 2: Screenshot slides
   console.log("\n📸 Step 2: Taking slide screenshots...");
   await screenshotSlides(videoNumber);

@@ -74,7 +74,8 @@ All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs,
 - Slide data flows as JSON: subagent generates `video_N_config.json` → copied to `src/data/video_config.json` at render time
 - Audio files go to `public/video_N_audio.mp3` for Remotion's `staticFile()` to find them
 - Script word count target: ~200 chars/minute × target duration
-- TTS voice: `zh-CN-YunxiNeural` (configurable in `scripts/tts.mjs`)
+- TTS: MiniMax `speech-02-hd`, voice ID set via `MINIMAX_VOICE_ID` in `blog2video-remotion/.env` (see `scripts/tts.mjs`)
+- Audio is used raw from MiniMax — no loudnorm/boost processing in the render pipeline
 
 ## Workflow
 

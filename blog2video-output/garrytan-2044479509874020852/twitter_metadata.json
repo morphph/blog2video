@@ -1,9 +1,10 @@
 {
-  "url": "https://x.com/i/article/2017109679416233987",
-  "author": "Log in",
-  "handle": "",
-  "title": "",
-  "date": "",
-  "image_count": 0,
-  "paragraph_count": 6
+  "url": "https://x.com/garrytan/status/2044479509874020852",
+  "author": "Garry Tan",
+  "handle": "garrytan",
+  "title": "Resolvers: The Routing Table for Intelligence",
+  "date": "2026-04-15T18:14:00-07:00",
+  "method_used": "playwright_mcp",
+  "image_count": 1,
+  "paragraph_count": 60
 }

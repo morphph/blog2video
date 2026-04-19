@@ -1,0 +1,3 @@
+[    1134ms] [WARNING] [.WebGL-0x70c0010dc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://x.com/garrytan/status/2044479509874020852:380
+[    1406ms] [WARNING] No available adapters. @ https://x.com/garrytan/status/2044479509874020852:0
+[    2547ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://accounts.google.com/gsi/client:84

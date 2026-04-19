@@ -1,0 +1,5 @@
+{
+  "title": "51万行代码，只为让AI安全敲命令⚡️",
+  "description": "Cursor不敢、Copilot不敢，但Claude Code敢直接操作你的电脑。为什么？因为它为一个Bash工具写了18个安全文件、9层审查机制。从AST解析到ML分类器，从权限竞争到fail-closed设计，拆解这套安检系统的运作逻辑。",
+  "tags": ["#ClaudeCode", "#AI安全", "#源码解析", "#开发工具", "#技术深度"]
+}

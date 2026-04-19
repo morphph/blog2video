@@ -1,0 +1,5 @@
+{
+  "title": "🔗LangChain深度Agent的Harness工程实践",
+  "description": "LangChain分享如何提升深度Agent的可靠性：从Harness工程角度解决Agent幻觉、任务漂移和长链路崩溃问题。本视频精解LangChain的最新工程实践，帮你构建更稳定的AI Agent系统。",
+  "tags": ["#LangChain", "#Agent工程", "#DeepAgent", "#AI可靠性", "#AI架构"]
+}

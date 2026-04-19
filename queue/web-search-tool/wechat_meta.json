@@ -1,0 +1,5 @@
+{
+  "title": "AI搜网页，80%的Token都在读垃圾📉",
+  "description": "以前Claude搜索会把整个网页HTML塞进上下文，广告、导航栏全都算Token。Anthropic新版动态过滤，让AI先写代码筛选内容，只把真正相关的部分加载进来。用更少Token，得到更好答案。",
+  "tags": ["#Claude", "#AI搜索", "#Token优化", "#Anthropic", "#大模型"]
+}

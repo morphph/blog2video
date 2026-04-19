@@ -1,0 +1,5 @@
+{
+  "title": "🔧长任务Agent的Harness设计秘诀",
+  "description": "长时间运行的AI Agent最怕什么？中途崩溃、状态丢失、无法恢复。本视频讲透Effective Harness的核心设计：检查点机制、错误恢复、任务编排，让你的Agent跑得稳、跑得久。",
+  "tags": ["#Agent架构", "#AI工程", "#长任务AI", "#Harness设计", "#AI稳定性"]
+}

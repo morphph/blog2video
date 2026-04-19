@@ -1,0 +1,5 @@
+{
+  "title": "🧠Anthropic把Agent拆成脑和手，性能暴涨90%",
+  "description": "Anthropic最新发布Managed Agents，核心一招：把Agent的"脑"（推理）和"手"（执行）彻底解耦。Harness不再持有状态，容器从宠物变牲畜，挂了直接换。p95启动时间提升超90%。精读官方工程博客，讲透架构背后的设计哲学。",
+  "tags": ["#AI架构", "#Anthropic", "#AI工程师", "#Claude", "#Agent开发"]
+}

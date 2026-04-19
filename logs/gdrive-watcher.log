@@ -1,0 +1,50 @@
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:37:03] 🚀 gdrive-watcher started, watching: /home/ubuntu/blog2video/queue
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:38:03] ⚠️  No meta.json in agent-harnesses-2026 after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:39:03] ⚠️  No meta.json in claude-code-memory after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:40:03] ⚠️  No meta.json in coding-agents-reshaping-epd after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:41:03] ⚠️  No meta.json in effective-harnesses-for-long-running-agents after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:42:03] ⚠️  No meta.json in garrytan-gstack after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:43:03] ⚠️  No meta.json in googlecloudtech-adk-skill-patterns after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:44:03] ⚠️  No meta.json in harness-design-long-running-apps after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:45:04] ⚠️  No meta.json in headless-mode after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:46:04] ⚠️  No meta.json in hooeem-2037250422403113188 after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:47:04] ⚠️  No meta.json in juliandeangelis-ai-agents-future after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:48:04] ⚠️  No meta.json in karpathy-end-of-coding-agents-loopy-era after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:49:04] ⚠️  No meta.json in kloss-claude-2026-features after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:50:04] ⚠️  No meta.json in langchain-improving-deep-agents-harness-engineering after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:51:04] ⚠️  No meta.json in leopardracer-claude-skills after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:51:09] 📤 New folder detected: managed-agents — uploading to Google Drive...
+/home/ubuntu/blog2video/gdrive-watcher.sh: line 47: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:51:09] ❌ Upload failed: managed-agents
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:52:09] ⚠️  No meta.json in scheduled-tasks after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:53:09] ⚠️  No meta.json in trq212-coding-agents after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:54:09] ⚠️  No meta.json in tw-hitw93-2032091246588518683 after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:55:09] ⚠️  No meta.json in web-search-tool after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-10 10:56:09] ⚠️  No meta.json in yukerx-claude-code-source after 60s, skipping
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-14 02:21:15] 📤 New folder detected: your-harness-your-memory — uploading to Google Drive...
+/home/ubuntu/blog2video/gdrive-watcher.sh: line 47: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
+[2026-04-14 02:21:15] ❌ Upload failed: your-harness-your-memory

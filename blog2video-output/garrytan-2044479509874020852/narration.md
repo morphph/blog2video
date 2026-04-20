@@ -3,9 +3,6 @@
 ## Hook
 上次那期我讲过：两个人用同一个 Claude，差 50 倍。那期里我带过一个概念没展开。Garry Tan 最近写了一篇博客专门讲它。他说：这才是 50 倍里真正看不见的那一半。
 
-## Brand Intro
-这里是精读AI。今天我们来拆解 Garry Tan 这篇讲 Agent 路由表的博客。
-
 ## 把两万行砍成两百行
 先铺一下背景。Garry Tan 是 YC 现任掌门，自己也在用 Claude Code 搭了一套个人 Agent 系统。他把所有他遇到过的 quirk、所有的 convention、所有被坑过的边缘 case，全都写进 CLAUDE.md 这个系统提示词文件。
 

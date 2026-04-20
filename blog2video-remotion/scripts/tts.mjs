@@ -31,6 +31,27 @@ if (!MINIMAX_API_KEY || !MINIMAX_VOICE_ID) {
   process.exit(1);
 }
 
+// Guard against .env / .env.example voice-id drift. The April 17 voice switch
+// updated .env.example but not the live .env, so every render through Apr 20
+// used the stale voice. Fail loudly here instead of shipping the wrong voice.
+const envExamplePath = path.join(__dirname, "..", ".env.example");
+if (fs.existsSync(envExamplePath)) {
+  const exampleVoice = fs.readFileSync(envExamplePath, "utf-8")
+    .split("\n")
+    .find((l) => l.startsWith("MINIMAX_VOICE_ID="))
+    ?.split("=")[1]
+    ?.trim();
+  if (exampleVoice && exampleVoice !== MINIMAX_VOICE_ID) {
+    console.error(
+      `\n❌ MINIMAX_VOICE_ID drift:\n` +
+        `   .env         = ${MINIMAX_VOICE_ID}\n` +
+        `   .env.example = ${exampleVoice}\n` +
+        `Update .env to the documented voice, or update .env.example if this is intentional.\n`
+    );
+    process.exit(1);
+  }
+}
+
 const scriptPath = process.argv[2];
 const outputPath = process.argv[3];
 

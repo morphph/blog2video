@@ -314,7 +314,7 @@ async function renderVideo(videoNumber) {
 
   execSync(
     `npx remotion render src/Root.tsx BlogVideo "${outputMp4}" --props=".tmp_render_props.json" --frames=0-${totalFrames - 1}`,
-    { cwd: remotionDir, stdio: "inherit", timeout: 1200000 }
+    { cwd: remotionDir, stdio: "inherit", timeout: 3600000 }
   );
 
   const stats = fs.statSync(outputMp4);

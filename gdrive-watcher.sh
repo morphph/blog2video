@@ -9,7 +9,7 @@ LOG_FILE="/home/ubuntu/blog2video/logs/gdrive-watcher.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 log() {
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG_FILE" 2>&1
 }
 
 log "🚀 gdrive-watcher started, watching: $QUEUE_DIR"
@@ -28,22 +28,43 @@ upload_if_new() {
     return
   fi
 
-  # Wait for meta.json to exist (folder might still be writing)
+  # Check for meta marker file (support both formats)
+  local marker=""
   local retries=0
-  while [ ! -f "$folder/meta.json" ] && [ $retries -lt 30 ]; do
+  while [ $retries -lt 30 ]; do
+    if [ -f "$folder/meta.json" ]; then
+      marker="meta.json"
+      break
+    elif [ -f "$folder/wechat_meta.json" ]; then
+      marker="wechat_meta.json"
+      break
+    fi
     sleep 2
     retries=$((retries + 1))
   done
 
-  if [ ! -f "$folder/meta.json" ]; then
-    log "⚠️  No meta.json in $name after 60s, skipping"
+  if [ -z "$marker" ]; then
+    log "⚠️  No meta.json or wechat_meta.json in $name after 60s, skipping"
     return
   fi
 
-  # Extra wait to ensure all files are written
-  sleep 5
+  # Wait for at least one .mp4 file to exist and be stable
+  retries=0
+  while [ $retries -lt 60 ]; do
+    if ls "$folder"/*.mp4 &>/dev/null; then
+      # Check no file is still being written (size stable for 3s)
+      local size1=$(du -sb "$folder" 2>/dev/null | cut -f1)
+      sleep 3
+      local size2=$(du -sb "$folder" 2>/dev/null | cut -f1)
+      if [ "$size1" = "$size2" ] && [ "$size1" -gt 0 ]; then
+        break
+      fi
+    fi
+    sleep 2
+    retries=$((retries + 1))
+  done
 
-  log "📤 New folder detected: $name — uploading to Google Drive..."
+  log "📤 New folder detected: $name (marker: $marker) — uploading to Google Drive..."
   if "$UPLOAD_SCRIPT" "$folder" >> "$LOG_FILE" 2>&1; then
     echo "$name" >> "$UPLOADED_STATE"
     log "✅ Uploaded: $name"

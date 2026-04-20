@@ -48,3 +48,247 @@ tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
 /home/ubuntu/blog2video/gdrive-watcher.sh: line 47: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
 tee: /home/ubuntu/blog2video/logs/gdrive-watcher.log: Permission denied
 [2026-04-14 02:21:15] ❌ Upload failed: your-harness-your-memory
+[2026-04-20 08:42:59] 🚀 gdrive-watcher started, watching: /home/ubuntu/blog2video/queue
+[2026-04-20 08:43:02] 📤 New folder detected: agent-harnesses-2026 (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: agent-harnesses-2026 → gdrive:blog2video/agent-harnesses-2026
+Transferred:   	        403 B / 403 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /403, 0/s, -Transferred:   	        403 B / 403 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.9s
+Transferring:
+ *                              wechat_meta.json:100% /403, 0/s, -Transferred:   	        403 B / 403 B, 100%, 402 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Transferring:
+ *                              wechat_meta.json:100% /403, 402/s, 0s
+2026/04/20 08:43:04 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        403 B / 403 B, 100%, 402 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.8s
+Transferring:
+ *                              wechat_meta.json:100% /403, 402/s, 0sTransferred:   	        403 B / 403 B, 100%, 402 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.8s
+2026/04/20 08:43:04 INFO  : 
+Transferred:   	        403 B / 403 B, 100%, 402 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.8s
+
+✅ Done: agent-harnesses-2026 uploaded to Google Drive
+[2026-04-20 08:43:04] ✅ Uploaded: agent-harnesses-2026
+[2026-04-20 08:43:07] 📤 New folder detected: claude-code-memory (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: claude-code-memory → gdrive:blog2video/claude-code-memory
+Transferred:   	        392 B / 392 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /392, 0/s, -Transferred:   	        392 B / 392 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.9s
+Transferring:
+ *                              wechat_meta.json:100% /392, 0/s, -Transferred:   	        392 B / 392 B, 100%, 391 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Transferring:
+ *                              wechat_meta.json:100% /392, 391/s, 0s
+2026/04/20 08:43:42 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        392 B / 392 B, 100%, 391 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Transferring:
+ *                              wechat_meta.json:100% /392, 391/s, 0sTransferred:   	        392 B / 392 B, 100%, 391 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.5s
+2026/04/20 08:43:42 INFO  : 
+Transferred:   	        392 B / 392 B, 100%, 391 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.5s
+
+✅ Done: claude-code-memory uploaded to Google Drive
+[2026-04-20 08:43:42] ✅ Uploaded: claude-code-memory
+[2026-04-20 08:43:45] 📤 New folder detected: coding-agents-reshaping-epd (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: coding-agents-reshaping-epd → gdrive:blog2video/coding-agents-reshaping-epd
+Transferred:   	        399 B / 399 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /399, 0/s, -Transferred:   	        399 B / 399 B, 100%, 398 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Transferring:
+ *                              wechat_meta.json:100% /399, 0/s, -Transferred:   	        399 B / 399 B, 100%, 398 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Transferring:
+ *                              wechat_meta.json:100% /399, 398/s, 0s
+2026/04/20 08:43:47 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        399 B / 399 B, 100%, 398 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.6s
+Transferring:
+ *                              wechat_meta.json:100% /399, 398/s, 0sTransferred:   	        399 B / 399 B, 100%, 398 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+2026/04/20 08:43:47 INFO  : 
+Transferred:   	        399 B / 399 B, 100%, 398 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+
+✅ Done: coding-agents-reshaping-epd uploaded to Google Drive
+[2026-04-20 08:43:47] ✅ Uploaded: coding-agents-reshaping-epd
+[2026-04-20 08:43:50] 📤 New folder detected: effective-harnesses-for-long-running-agents (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: effective-harnesses-for-long-running-agents → gdrive:blog2video/effective-harnesses-for-long-running-agents
+Transferred:   	        391 B / 391 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /391, 0/s, -Transferred:   	        391 B / 391 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Transferring:
+ *                              wechat_meta.json:100% /391, 0/s, -Transferred:   	        391 B / 391 B, 100%, 390 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Transferring:
+ *                              wechat_meta.json:100% /391, 390/s, 0s
+2026/04/20 08:43:52 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        391 B / 391 B, 100%, 390 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.7s
+Transferring:
+ *                              wechat_meta.json:100% /391, 390/s, 0sTransferred:   	        391 B / 391 B, 100%, 390 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.7s
+2026/04/20 08:43:52 INFO  : 
+Transferred:   	        391 B / 391 B, 100%, 390 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.7s
+
+✅ Done: effective-harnesses-for-long-running-agents uploaded to Google Drive
+[2026-04-20 08:43:52] ✅ Uploaded: effective-harnesses-for-long-running-agents
+[2026-04-20 08:43:55] 📤 New folder detected: garrytan-gstack (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: garrytan-gstack → gdrive:blog2video/garrytan-gstack
+Transferred:   	        394 B / 394 B, 100%, 0 B/s, ETA -
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /394, 0/s, -Transferred:   	        394 B / 394 B, 100%, 393 B/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Transferring:
+ *                              wechat_meta.json:100% /394, 0/s, -Transferred:   	        394 B / 394 B, 100%, 393 B/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Transferring:
+ *                              wechat_meta.json:100% /394, 393/s, 0s
+2026/04/20 08:43:57 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        394 B / 394 B, 100%, 393 B/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            0 / 1, 0%
+Elapsed time:         1.6s
+Transferring:
+ *                              wechat_meta.json:100% /394, 393/s, 0sTransferred:   	        394 B / 394 B, 100%, 393 B/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+2026/04/20 08:43:57 INFO  : 
+Transferred:   	        394 B / 394 B, 100%, 393 B/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 21
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+
+✅ Done: garrytan-gstack uploaded to Google Drive
+[2026-04-20 08:43:57] ✅ Uploaded: garrytan-gstack
+[2026-04-20 08:44:00] 📤 New folder detected: googlecloudtech-adk-skill-patterns (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: googlecloudtech-adk-skill-patterns → gdrive:blog2video/googlecloudtech-adk-skill-patterns
+Transferred:   	        381 B / 381 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /381, 0/s, -Transferred:   	        381 B / 381 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Transferring:
+ *                              wechat_meta.json:100% /381, 0/s, -
+2026/04/20 08:44:02 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        381 B / 381 B, 100%, 380 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Transferring:
+ *                              wechat_meta.json:100% /381, 380/s, 0sTransferred:   	        381 B / 381 B, 100%, 380 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.4s
+2026/04/20 08:44:02 INFO  : 
+Transferred:   	        381 B / 381 B, 100%, 380 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.4s
+
+✅ Done: googlecloudtech-adk-skill-patterns uploaded to Google Drive
+[2026-04-20 08:44:02] ✅ Uploaded: googlecloudtech-adk-skill-patterns
+[2026-04-20 08:44:05] 📤 New folder detected: harness-design-long-running-apps (marker: wechat_meta.json) — uploading to Google Drive...
+📤 Uploading: harness-design-long-running-apps → gdrive:blog2video/harness-design-long-running-apps
+[2026-04-20 08:44:16] 🚀 gdrive-watcher started, watching: /home/ubuntu/blog2video/queue
+Transferred:   	        395 B / 395 B, 100%, 0 B/s, ETA -
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *                              wechat_meta.json:100% /395, 0/s, -Transferred:   	        395 B / 395 B, 100%, 394 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Transferring:
+ *                              wechat_meta.json:100% /395, 0/s, -
+2026/04/20 08:44:40 INFO  : wechat_meta.json: Copied (new)
+Transferred:   	        395 B / 395 B, 100%, 394 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Transferring:
+ *                              wechat_meta.json:100% /395, 394/s, 0sTransferred:   	        395 B / 395 B, 100%, 394 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.4s
+2026/04/20 08:44:40 INFO  : 
+Transferred:   	        395 B / 395 B, 100%, 394 B/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 15
+Transferred:            1 / 1, 100%
+Elapsed time:         1.4s
+
+✅ Done: harness-design-long-running-apps uploaded to Google Drive
+[2026-04-20 08:44:40] ✅ Uploaded: harness-design-long-running-apps

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .k { color: #F59E0B; }
+    .list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .item {
+      background: #1A1A2E;
+      border-radius: 10px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      text-align: left;
+    }
+    .item.i1 { border-left: 4px solid #10B981; }
+    .item.i2 { border-left: 4px solid #3B82F6; }
+    .item.i3 { border-left: 4px solid #8B5CF6; }
+    .item.i4 { border-left: 4px solid #F59E0B; }
+    .num {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1;
+      min-width: 60px;
+    }
+    .i1 .num { color: #10B981; }
+    .i2 .num { color: #3B82F6; }
+    .i3 .num { color: #8B5CF6; }
+    .i4 .num { color: #F59E0B; }
+    .body-text {
+      flex: 1;
+    }
+    .body-title {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .body-title .k { color: #F59E0B; }
+    .body-sub {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .body-sub .em { color: #FFFFFF; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">他给自己立的</div>
+    <div class="title">
+      四道<span class="k">防线</span>
+    </div>
+    <div class="list">
+      <div class="item i1">
+        <div class="num">01</div>
+        <div class="body-text">
+          <div class="body-title">强制查 <span class="k">RESOLVER</span></div>
+          <div class="body-sub">合约，不是建议</div>
+        </div>
+      </div>
+      <div class="item i2">
+        <div class="num">02</div>
+        <div class="body-text">
+          <div class="body-title">Trigger evals · <span class="k">50 条</span></div>
+          <div class="body-sub">改 markdown 就能修 · 不用动代码</div>
+        </div>
+      </div>
+      <div class="item i3">
+        <div class="num">03</div>
+        <div class="body-text">
+          <div class="body-title"><span class="k">check-resolvable</span> 每周跑</div>
+          <div class="body-sub">像 linter 一样扫不可达</div>
+        </div>
+      </div>
+      <div class="item i4">
+        <div class="num">04</div>
+        <div class="body-text">
+          <div class="body-title">RLM · 自进化路由表</div>
+          <div class="body-sub">AutoDream 的原始版本 · 终局形态</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

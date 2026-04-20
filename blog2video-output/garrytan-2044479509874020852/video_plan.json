@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Resolvers: The Routing Table for Intelligence",
+    "title_zh": "两万行 prompt 越塞越笨？",
+    "word_count": 2700,
+    "slug": "garrytan-2044479509874020852"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "单一连贯论证：从 20000→200 行的修法切入，层层推进到 resolver 即组织管理层的重框。全篇围绕同一 thesis，拆开会削弱论证力度。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "两万行 prompt 越塞越笨？"
+      }
+    ]
+  }
+}

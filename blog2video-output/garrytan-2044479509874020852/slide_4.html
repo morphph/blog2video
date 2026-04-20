@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 36px;
+    }
+    .title .k { color: #F59E0B; }
+    .scenario {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 24px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .scen-label { font-size: 20px; color: #EF4444; letter-spacing: 2px; font-weight: 700; margin-bottom: 8px; }
+    .scen-text { font-size: 24px; color: #FFFFFF; font-weight: 600; line-height: 1.45; }
+    .scen-text .muted { color: #B0B0CC; font-weight: 500; }
+    .bignum-row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .stat {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 16px;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+    .stat.good { border-left: 4px solid #10B981; }
+    .stat.bad { border-left: 4px solid #EF4444; }
+    .stat-num { font-size: 88px; font-weight: 800; line-height: 1; margin-bottom: 6px; }
+    .stat.good .stat-num { color: #10B981; }
+    .stat.bad .stat-num { color: #EF4444; }
+    .stat-label { font-size: 22px; color: #B0B0CC; font-weight: 600; }
+    .footer {
+      font-size: 30px;
+      color: #F59E0B;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">审一下所有技能</div>
+    <div class="title">
+      查过<span class="k">路由表</span>的有几个？
+    </div>
+    <div class="scenario">
+      <div class="scen-label">典型失误</div>
+      <div class="scen-text">
+        政治分析被归到 <span class="muted">sources/</span><br>
+        <span class="muted">（原本用来倒原始数据）</span>
+      </div>
+    </div>
+    <div class="bignum-row">
+      <div class="stat good">
+        <div class="stat-num">3</div>
+        <div class="stat-label">查了路由表</div>
+      </div>
+      <div class="stat bad">
+        <div class="stat-num">10</div>
+        <div class="stat-label">硬写默认路径</div>
+      </div>
+    </div>
+    <div class="footer">
+      13 个技能 · 只有 3 个合规
+    </div>
+  </div>
+</body>
+</html>

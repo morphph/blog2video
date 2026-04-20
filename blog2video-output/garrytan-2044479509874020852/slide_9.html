@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .k { color: #F59E0B; }
+    .title .red { color: #EF4444; }
+    .timeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .day {
+      background: #1A1A2E;
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      text-align: left;
+    }
+    .day.d1 { border-left: 4px solid #10B981; }
+    .day.d30 { border-left: 4px solid #F59E0B; }
+    .day.d60 { border-left: 4px solid #EF4444; }
+    .day.d90 { border-left: 4px solid #6B7280; }
+    .day-num {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1;
+      min-width: 140px;
+    }
+    .d1 .day-num { color: #10B981; }
+    .d30 .day-num { color: #F59E0B; }
+    .d60 .day-num { color: #EF4444; }
+    .d90 .day-num { color: #6B7280; }
+    .day-text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .day-text .muted { color: #B0B0CC; font-weight: 500; }
+    .footer {
+      font-size: 30px;
+      color: #F59E0B;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">最反直觉的判断</div>
+    <div class="title">
+      路由表<br>
+      是会<span class="red">腐烂的</span>
+    </div>
+    <div class="timeline">
+      <div class="day d1">
+        <div class="day-num">Day 1</div>
+        <div class="day-text">每条路径都通<span class="muted"> · 你觉得自己是天才</span></div>
+      </div>
+      <div class="day d30">
+        <div class="day-num">Day 30</div>
+        <div class="day-text">子 agent 凌晨建出新技能<span class="muted"> · 没人登记</span></div>
+      </div>
+      <div class="day d60">
+        <div class="day-num">Day 60</div>
+        <div class="day-text">触发词和用户说法<span class="muted">对不上</span></div>
+      </div>
+      <div class="day d90">
+        <div class="day-num">Day 90</div>
+        <div class="day-text">路由表变成一份<span class="muted">历史文档</span></div>
+      </div>
+    </div>
+    <div class="footer">
+      "这不是系统<br>是一个<span style="color:#EF4444">有文件柜的人</span>"
+    </div>
+  </div>
+</body>
+</html>

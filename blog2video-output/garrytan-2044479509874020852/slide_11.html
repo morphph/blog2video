@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 36px;
+    }
+    .title .k { color: #F59E0B; }
+    .org-row {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      margin-bottom: 22px;
+    }
+    .mini {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 10px;
+      padding: 18px 14px;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 3px solid #8B5CF6;
+    }
+    .mini-key { font-size: 20px; color: #8B5CF6; font-weight: 700; margin-bottom: 6px; }
+    .mini-val { font-size: 20px; color: #FFFFFF; font-weight: 600; line-height: 1.35; }
+    .mini-val .muted { color: #B0B0CC; font-weight: 500; }
+    .reframe {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 24px;
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .reframe-label { font-size: 20px; color: #F59E0B; letter-spacing: 2px; font-weight: 700; margin-bottom: 10px; }
+    .reframe-text { font-size: 28px; color: #FFFFFF; font-weight: 700; line-height: 1.4; }
+    .reframe-text .k { color: #F59E0B; }
+    .punch {
+      font-size: 34px;
+      color: #EF4444;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .punch .em { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">同一套架构 · 每层重复</div>
+    <div class="title">
+      Agent 系统 = <span class="k">组织</span>
+    </div>
+    <div class="org-row">
+      <div class="mini">
+        <div class="mini-key">技能</div>
+        <div class="mini-val">员工<br><span class="muted">一项能力</span></div>
+      </div>
+      <div class="mini">
+        <div class="mini-key">路由表</div>
+        <div class="mini-val">架构图<br><span class="muted">谁处理什么</span></div>
+      </div>
+      <div class="mini">
+        <div class="mini-key">Filing</div>
+        <div class="mini-val">流程<br><span class="muted">信息住哪</span></div>
+      </div>
+      <div class="mini">
+        <div class="mini-key">Evals</div>
+        <div class="mini-val">绩效<br><span class="muted">考核</span></div>
+      </div>
+    </div>
+    <div class="reframe">
+      <div class="reframe-label">扩展规模</div>
+      <div class="reframe-text">
+        5 → 50 技能 · 1k → <span class="k">25k 文件</span><br>
+        玩具 → <span class="k">200 inputs/day</span> 生产系统
+      </div>
+    </div>
+    <div class="punch">
+      问题不是模型不够聪明<br>
+      <span class="em">是在造没有管理层的公司</span>
+    </div>
+  </div>
+</body>
+</html>

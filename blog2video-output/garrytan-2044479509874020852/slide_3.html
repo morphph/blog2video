@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 44px;
+    }
+    .title .k { color: #F59E0B; }
+    .compare {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 18px;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+    .card.left { border-left: 4px solid #EF4444; }
+    .card.right { border-left: 4px solid #10B981; }
+    .card-label {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card.left .card-label { color: #EF4444; }
+    .card.right .card-label { color: #10B981; }
+    .card-num {
+      font-size: 84px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .card.left .card-num { color: #EF4444; }
+    .card.right .card-num { color: #10B981; }
+    .card-sub {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .arrow {
+      font-size: 48px;
+      color: #8B5CF6;
+      font-weight: 900;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: left;
+    }
+    .bottom-label {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .bottom-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .bottom-text .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">他的修法</div>
+    <div class="title">
+      两万行 → <span class="k">两百行</span><br>
+      换成一张路由表
+    </div>
+    <div class="compare">
+      <div class="card left">
+        <div class="card-label">原来</div>
+        <div class="card-num">20000</div>
+        <div class="card-sub">全塞进脑子</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="card right">
+        <div class="card-label">现在</div>
+        <div class="card-num">200</div>
+        <div class="card-sub">按需取用</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-label">RESOLVER 路由表</div>
+      <div class="bottom-text">
+        "这是人" → <span class="k">people/</span><br>
+        "这是公司" → <span class="k">companies/</span><br>
+        "这是政策" → <span class="k">civic/</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

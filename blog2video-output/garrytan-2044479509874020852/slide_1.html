@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 20% 15%, rgba(239, 68, 68, 0.12), transparent 55%),
+        radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 48px;
+    }
+    .headline {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 56px;
+    }
+    .headline .red { color: #EF4444; }
+    .headline .yellow { color: #F59E0B; }
+    .sub {
+      font-size: 36px;
+      color: #B0B0CC;
+      line-height: 1.4;
+      font-weight: 600;
+      max-width: 820px;
+    }
+    .sub .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">精读AI · Agent 架构</div>
+    <div class="headline">
+      两个人用同一个<br>
+      Claude，差 <span class="red">50 倍</span>
+    </div>
+    <div class="sub">
+      那期里看不见的<span class="em">另一半</span><br>
+      今天补上
+    </div>
+  </div>
+</body>
+</html>

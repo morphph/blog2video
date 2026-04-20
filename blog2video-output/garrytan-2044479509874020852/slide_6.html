@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    .title .hl { color: #EF4444; }
+    .title .k { color: #F59E0B; }
+    .card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px 24px;
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: left;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+    .card.bad { border-left: 4px solid #EF4444; }
+    .card.fix { border-left: 4px solid #10B981; }
+    .card-label { font-size: 20px; letter-spacing: 2px; font-weight: 700; margin-bottom: 10px; }
+    .card.bad .card-label { color: #EF4444; }
+    .card.fix .card-label { color: #10B981; }
+    .card-text { font-size: 26px; color: #FFFFFF; font-weight: 600; line-height: 1.4; }
+    .card-text .k { color: #F59E0B; font-weight: 700; }
+    .card-text .muted { color: #B0B0CC; font-weight: 500; }
+    .footer {
+      margin-top: 24px;
+      font-size: 30px;
+      font-weight: 800;
+      color: #10B981;
+    }
+    .footer .k { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">真正的杠杆</div>
+    <div class="title">
+      把归档逻辑<br>
+      从技能里<span class="hl">搬出来</span>
+    </div>
+    <div class="card bad">
+      <div class="card-label">反模式 · 打地鼠</div>
+      <div class="card-text">
+        十个 bug 修十次<br>
+        <span class="muted">修一个，另一个又漂走</span>
+      </div>
+    </div>
+    <div class="card fix">
+      <div class="card-label">共享 filing rules</div>
+      <div class="card-text">
+        每个技能顶端加两行：<br>
+        "先读 <span class="k">RESOLVER.md</span> + filing rules<br>
+        按主题归档，不按来源"
+      </div>
+    </div>
+    <div class="footer">
+      一条规则 · <span class="k">十个技能</span>全修好
+    </div>
+  </div>
+</body>
+</html>

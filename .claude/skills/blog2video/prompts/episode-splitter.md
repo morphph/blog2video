@@ -39,21 +39,21 @@
 
 - 只在 `##` section 边界拆分，不要在 section 中间断开
 - 拆分点应该是话题的自然转折，不是机械的等分
-- `## Hook`、`## Brand Intro`、`## Synthesis`、`## Closing` 不能拆——它们属于第一集（Hook/Brand）和最后一集（Synthesis/Closing）
+- `## Hook`、`## Synthesis`、`## Closing` 不能拆——Hook 属于第一集，Synthesis/Closing 属于最后一集
 
 ## 拆分时的处理
 
 如果决定拆分（2-3 个视频）：
 
 1. **切分叙述稿**：在 `##` 边界切开，每部分保存为 `video_N_narration.md`
-2. **补充 Brand 和 Closing**：
-   - 第一集保留原始的 `## Hook` 和 `## Brand Intro`
-   - 后续每集在开头添加 `## Brand Intro`（同样的品牌介绍）
+2. **补充 Hook 和 Closing**：
+   - 第一集保留原始的 `## Hook`
+   - 后续每集不要添加 Brand Intro，直接用自己的 `## Hook` 起笔（可以包含 recap 句）
    - 只有最后一集保留 `## Synthesis` 和 `## Closing`
    - 每集结尾添加品牌收尾："AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。"
 3. **写 episode transitions**：
    - 每集结尾加 preview 句（≤25字，悬念式，不剧透）
-   - 后续每集 Brand Intro 后加 recap 句（≤30字，回顾上期最颠覆认知的结论）
+   - 后续每集在 Hook 第一句之后加 recap 句（≤30字，回顾上期最颠覆认知的结论）
 4. **生成每集 title_zh**：基于该集的内容主题，≤20 字
 
 ## 不拆时的处理（最常见）

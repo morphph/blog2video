@@ -29,7 +29,7 @@
 
 | 叙事内容 | 推荐 Slide 类型 |
 |----------|----------------|
-| `## Hook` + `## Brand Intro`（+ 可选的 `## Series Recap`） | `cover` |
+| `## Hook`（+ 可选的 `## Series Recap`） | `cover` |
 | 核心论点或原则阐述（"之所以…是因为…"、"关键不是…而是…"） | `principle` |
 | 两个或三个并列对比（方案A vs 方案B、路径1 vs 路径2 vs 路径3） | `comparison_cards` |
 | 信号检查 / 条件列表（"如果你遇到…"、"检查这几项…"） | `checklist` |
@@ -47,8 +47,8 @@
 ## 约束
 
 ### 首尾 Slide
-- 第一个 Slide **必须**是 `cover`，包含 `## Hook` 和 `## Brand Intro` 的内容
-- 如果有 `## Series Recap`，归入 cover slide（Brand Intro 之后）
+- 第一个 Slide **必须**是 `cover`，包含 `## Hook` 的内容
+- 如果有 `## Series Recap`，归入 cover slide（Hook 之后）
 - 最后一个 Slide **必须**是 `summary`，包含 `## Synthesis` 和 `## Closing` 的内容
 - 如果有 `## Series Preview`，归入 summary slide（Closing 之前）
 
@@ -59,7 +59,7 @@
 - 总时长应与叙述稿字数匹配（200字/分钟 ±15%）
 
 ### 品牌文字
-- Brand Intro 原文必须完整保留（"这里是精读AI..."）
+- 叙述稿中不再包含 Brand Intro 段落
 - 品牌收尾原文必须完整保留（"AI 世界很吵，精读一篇..."）
 
 ## 分段策略
@@ -88,8 +88,6 @@
 [SLIDE 1: cover] (0:00 - 0:25)
 
 [Hook 文字]
-
-[Brand Intro 文字]
 
 [SLIDE 2: image] (0:25 - 1:30)
 

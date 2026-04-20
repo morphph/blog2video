@@ -154,7 +154,7 @@ font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', san
 ## 质量标准
 
 ### 封面 Slide
-- 标题必须直接使用或紧密改编口播稿 Hook 中的第一句制造紧张感的话（品牌介绍之前的那段）
+- 标题必须直接使用或紧密改编口播稿 Hook 中的第一句制造紧张感的话
 - 不要自行概括或改写成笼统说法。口播稿写的是"Anthropic 让最强模型去克隆 claude.ai，结果翻车了"，封面就要保留"克隆 claude.ai"和"翻车"这些具体信息，不要变成"AI干活干到一半"这种泛化表述
 - cards 展示"痛点/悬念"，不要剧透结论
 - ✅ "让最强模型克隆 claude.ai" / "写到一半直接宣布'搞定了'"（来自口播稿原文）

@@ -1,0 +1,464 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /trq212/article/2052809885763747935
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Thariq Verified account @trq212 454 replies, 1468 reposts, 7045 likes, 13405 bookmarks, 3483388 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /trq212
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Thariq Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /trq212
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Thariq
+                          - img "Verified account" [ref=e116]
+                      - link "@trq212" [ref=e122] [cursor=pointer]:
+                        - /url: /trq212
+                        - generic [ref=e123]: "@trq212"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /trq212/article/2052809885763747935/media/2052796450510348288
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: "Using Claude Code: The Unreasonable Effectiveness of HTML"
+                      - group "454 replies, 1468 reposts, 7045 likes, 13405 bookmarks, 3483388 views" [ref=e154]:
+                        - button "454 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "454"
+                        - button "1468 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: 1.4K
+                        - button "7045 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: 7K
+                        - link "3483388 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /trq212/status/2052809885763747935/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 3.4M
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - generic [ref=e224]: Markdown has become the dominant file format used by agents to communicate with us. It’s simple, portable, has some rich text capability and is easy for you to edit. Claude has even gotten surprisingly good at using ASCII to make diagrams inside of markdown files.
+                        - generic [ref=e227]: But as agents have become more and more powerful, I have felt that markdown has become a restricting format. I find it difficult to read a markdown file of more than a hundred lines. I want richer visualizations, color and diagrams and I want to be able to share them easily.
+                        - generic [ref=e230]: I'm also increasingly not editing these files myself, but using them as specs, reference files, brainstorming outputs, etc. When I do make edits, I’m usually prompting Claude to edit them, which removes one of markdown’s largest benefits.
+                        - generic [ref=e233]: I’ve started preferring HTML as an output format instead of Markdown and increasingly see this being used by others on the Claude Code team, this is why.
+                        - generic [ref=e235]:
+                          - generic [ref=e236]: "(if you want to start with some examples, you can see a bunch here:"
+                          - link "https://thariqs.github.io/html-effectiveness" [ref=e238] [cursor=pointer]:
+                            - /url: https://thariqs.github.io/html-effectiveness/
+                            - generic [ref=e239]: https://thariqs.github.io/html-effectiveness
+                          - generic [ref=e240]: ", just be sure to come back and read more about why)"
+                        - heading "Why HTML?" [level=1] [ref=e242]:
+                          - generic [ref=e244]: Why HTML?
+                        - heading "Information Density" [level=2] [ref=e246]:
+                          - generic [ref=e248]: Information Density
+                        - link "Image" [ref=e255] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052796642479439872
+                          - generic "Image" [ref=e259]:
+                            - img "Image" [ref=e261]
+                        - generic [ref=e264]: "HTML can convey much richer information compared to markdown. It can of course do simple document structure like headers and formatting, but it can also represent all sorts of other information such as:"
+                        - list [ref=e265]:
+                          - listitem [ref=e266]:
+                            - generic [ref=e268]: Tabular data using tables
+                          - listitem [ref=e269]:
+                            - generic [ref=e271]: Design data with CSS
+                          - listitem [ref=e272]:
+                            - generic [ref=e274]: Illustrations with SVG
+                          - listitem [ref=e275]:
+                            - generic [ref=e277]: Code snippets with script tags
+                          - listitem [ref=e278]:
+                            - generic [ref=e280]: Interactions using HTML elements with javascript + CSS
+                          - listitem [ref=e281]:
+                            - generic [ref=e283]: Workflows using SVG and HTML
+                          - listitem [ref=e284]:
+                            - generic [ref=e286]: Spatial data using absolute positions and canvases
+                          - listitem [ref=e287]:
+                            - generic [ref=e289]: Images using image tags
+                        - generic [ref=e292]: I would go so far as to say that there is almost no set of information that Claude can read that you cannot fairly efficiently represent with HTML. This makes it a highly efficient way for the model to communicate in-depth information to you and for you to revie wit.
+                        - generic [ref=e295]: I’ve found that in the absence of being able to do this, the model may do more inefficient things in markdown like ASCII diagrams or, my favorite, estimating colors with unicode characters like in this screenshot from Claude Code.
+                        - generic [ref=e298]:
+                          - link "Image" [ref=e302] [cursor=pointer]:
+                            - /url: /trq212/article/2052809885763747935/media/2052799263474905088
+                            - generic "Image" [ref=e306]:
+                              - img "Image" [ref=e308]
+                          - generic [ref=e318]: Claude Code trying to show color in markdown
+                        - heading "Visual Clarity & Ease of Reading" [level=2] [ref=e320]:
+                          - generic [ref=e322]: Visual Clarity & Ease of Reading
+                        - link "Image" [ref=e329] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052797566220464128
+                          - generic "Image" [ref=e333]:
+                            - img "Image" [ref=e335]
+                        - generic [ref=e338]: As Claude is able to do more complex work, it is also writing larger and larger specs and plans. In practice, I've found I tend to not actually read more than a 100-line markdown file, and I certainly am not able to get anyone else in my organization to read it.
+                        - generic [ref=e341]: But HTML documents are much easier to read, Claude can organize the structure visually to be ideal to navigate with tabs, illustrations, links, etc. It can even be mobile responsive so you can read it differently based on your form factor.
+                        - heading "Ease of Sharing" [level=2] [ref=e343]:
+                          - generic [ref=e345]: Ease of Sharing
+                        - generic [ref=e348]: Markdown files are fairly hard to share since most browsers do not render them natively well. You often have to add them as attachments to emails or messages.
+                        - generic [ref=e351]: With HTML, as long as you upload the file (for example to S3), you can share the link easily. Your colleagues can open it wherever they wish and easily reference it.
+                        - generic [ref=e354]: The chance of someone actually reading your spec, report or PR writeup is much much higher if it’s in HTML.
+                        - heading "Two-way Interaction" [level=2] [ref=e356]:
+                          - generic [ref=e358]: Two-way Interaction
+                        - link "Image" [ref=e365] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052797706494763008
+                          - generic "Image" [ref=e369]:
+                            - img "Image" [ref=e371]
+                        - generic [ref=e373]:
+                          - generic [ref=e374]: "HTML can allow you to interact with the document, for example you might want to ask it to add sliders or knobs to adjust a design or allow you to tweak different options in the algorithm to see what happens. You can also ask it to let you copy these changes into a prompt to paste back into Claude Code. Read more about my playgrounds post to see examples of this two way interaction:"
+                          - link "https://x.com/trq212/status/2017024445244924382" [ref=e376] [cursor=pointer]:
+                            - /url: https://x.com/trq212/status/2017024445244924382
+                            - generic [ref=e377]: https://x.com/trq212/status/2017024445244924382
+                        - generic [ref=e380]: Data Ingestion
+                        - generic [ref=e383]: Why use Claude Code to make HTML files instead of ClaudeAI or Claude Design for example? One of the biggest reasons is all the context Claude Code can ingest. For example, when writing this article, I asked Claude Code to read through my code folder and find all the HTML files I’ve generated, group and categorize them and then make an HTML file with all diagrams representing each type. The diagrams you see in this article are a direct result of that.
+                        - generic [ref=e386]: Besides the file system, Claude Code can find additional context using your MCPs (like Slack, Linear, etc.), your web browser (with Claude in Chrome), your git history, etc.
+                        - heading "It’s Joyful" [level=2] [ref=e388]:
+                          - generic [ref=e390]: It’s Joyful
+                        - generic [ref=e393]: Making HTML documents with Claude is just more fun and makes me feel more involved and invested in the creation, and that by itself is enough.
+                        - heading "How to Get Started" [level=2] [ref=e395]:
+                          - generic [ref=e397]: How to Get Started
+                        - generic [ref=e400]: I’m a little bit afraid that people will read this article and turn it into a /html skill or something. While there might be some value in that, I want to emphasize that you don’t need to do much to get Claude to do this. You can just ask it to “make a HTML file” or “make a HTML artifact”.
+                        - generic [ref=e403]: The trick is knowing what you want the artifact to do and how you might use it. You may over time make a skill, but for now I’d suggest just prompting from scratch to get a hang of how to use it in different cases.
+                        - heading "Use Cases" [level=1] [ref=e405]:
+                          - generic [ref=e407]: Use Cases
+                        - generic [ref=e409]:
+                          - generic [ref=e410]: "To make this more concrete, I’ve made many different HTML files for different use cases. You can view all of them here:"
+                          - link "https://thariqs.github.io/html-effectiveness/" [ref=e412] [cursor=pointer]:
+                            - /url: https://thariqs.github.io/html-effectiveness/
+                            - generic [ref=e413]: https://thariqs.github.io/html-effectiveness/
+                          - generic [ref=e414]: but here’s an overview.
+                        - heading "Specs, Planning & Exploration" [level=2] [ref=e416]:
+                          - generic [ref=e418]: Specs, Planning & Exploration
+                        - generic [ref=e421]: HTML is a rich canvas for Claude to dive into a problem. When I start working on a problem instead of a simple markdown plan I expect to make a web of HTML files. For example, I might start with asking Claude Code to brainstorm and create some explorations of different options. I would then ask it to expand more into one, maybe make mockups or code snippets. Finally, when I feel good I’ll ask it to write an implementation plan. When I’m happy with the plan I’ll create a new session and pass in all of these files for it to implement.
+                        - generic [ref=e424]: When verifying I’ll also ask the verification agent to read in the files and it will have much broader context on what is needed.
+                        - link "Image" [ref=e431] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052798196515287041
+                          - generic "Image" [ref=e435]:
+                            - img "Image" [ref=e437]
+                        - generic [ref=e440]: "Example Prompts:"
+                        - list [ref=e441]:
+                          - listitem [ref=e442]:
+                            - generic [ref=e444]: I'm not sure what direction to take the onboarding screen. Generate 6 distinctly different approaches — vary layout, tone, and density — and lay them out as a single HTML file in a grid so I can compare them side by side. Label each with the tradeoff it's making.
+                          - listitem [ref=e445]:
+                            - generic [ref=e447]: Create a thorough implementation plan in a HTML file, be sure to make some mockups, show data flow and add important code snippets I might want to review. Make it easy to read and digest.
+                        - generic [ref=e450]: "Use Cases:"
+                        - list [ref=e451]:
+                          - listitem [ref=e452]:
+                            - generic [ref=e454]: Exploring other ways to implement something in code
+                          - listitem [ref=e455]:
+                            - generic [ref=e457]: Exploring multiple visual designs
+                        - heading "Code Review & Understanding" [level=2] [ref=e459]:
+                          - generic [ref=e461]: Code Review & Understanding
+                        - generic [ref=e464]: Code can be difficult to read in a Markdown file. But with HTML we can render diffs, annotations, flowcharts, modules, etc. Use this to understand code that the agent has written, to get code review or to explain a PR to someone reviewing your code. I find this often works better than the default Github diff view, and I attach a HTML code explainer to every PR I make now.
+                        - link "Image" [ref=e471] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052798401620946944
+                          - generic "Image" [ref=e475]:
+                            - img "Image" [ref=e477]
+                        - generic [ref=e480]: "Example prompt:"
+                        - generic [ref=e483]: Help me review this PR by creating an HTML artifact that describes it. I'm not very familiar with the streaming/backpressure logic so focus on that. Render the actual diff with inline margin annotations, color-code findings by severity and whatever else might be needed to convey the concept well.
+                        - generic [ref=e486]: "Use Cases:"
+                        - list [ref=e487]:
+                          - listitem [ref=e488]:
+                            - generic [ref=e490]: Creating a PR
+                          - listitem [ref=e491]:
+                            - generic [ref=e493]: Reviewing a PR
+                          - listitem [ref=e494]:
+                            - generic [ref=e496]: Understanding a topic in Code
+                        - heading "Design & Prototypes" [level=2] [ref=e498]:
+                          - generic [ref=e500]: Design & Prototypes
+                        - generic [ref=e502]:
+                          - generic [ref=e503]: Claude Design is based on HTML because HTML
+                          - generic [ref=e505]: is incredibly expressive at design, even if your end surface is not HTML. Claude can sketch out a design in HTML and then write it in your language of choice, be it React, Swift, etc.
+                        - generic [ref=e508]: You can also prototype interactions, such as animations, actions, etc. Consider asking Claude to make sliders, knobs, etc. to tune in exactly what you’re looking for.
+                        - link "Image" [ref=e515] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052798511222333440
+                          - generic "Image" [ref=e519]:
+                            - img "Image" [ref=e521]
+                        - generic [ref=e524]: "Example prompt:"
+                        - generic [ref=e527]: I want to prototype a new checkout button, when clicked it does a play animation and then turns purple quickly. Create a HTML file with several sliders and options for me to try different options on this animation, give me a copy button to copy the parameters that worked well.
+                        - generic [ref=e530]: "Use this for:"
+                        - list [ref=e531]:
+                          - listitem [ref=e532]:
+                            - generic [ref=e534]: Creating design system artifacts
+                          - listitem [ref=e535]:
+                            - generic [ref=e537]: Adjusting components
+                          - listitem [ref=e538]:
+                            - generic [ref=e540]: Visualizing component libraries
+                          - listitem [ref=e541]:
+                            - generic [ref=e543]: Prototyping Joyful Animations
+                        - heading "Reports, Research & Learning" [level=2] [ref=e545]:
+                          - generic [ref=e547]: Reports, Research & Learning
+                        - generic [ref=e550]: Claude Code is incredibly good at synthesizing information across multiple data sources and converting it into a report for readability. You can prompt Claude to search your Slack, your codebase, git history, the internet, etc. and use it to generate extremely readable reports for yourself, for leadership, for your team, etc.
+                        - generic [ref=e553]: You could assemble this in the form of a long HTML document, an interactive explainer or even a slideshow/deck. Ask Claude to use SVG for diagrams to help visualize it. For example, for my posts on prompt caching, I asked Claude to prepare an in-depth research file in HTML for me to read on all of our changes to prompt caching after reading the git history.
+                        - link "Image" [ref=e560] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052798825388265472
+                          - generic "Image" [ref=e564]:
+                            - img "Image" [ref=e566]
+                        - generic [ref=e568]:
+                          - generic [ref=e569]: "Example prompt:"
+                          - generic [ref=e570]: "I don't understand how our rate limiter actually works. Read the relevant code and produce a single HTML explainer page: a diagram of the token-bucket flow, the 3–4 key code snippets annotated, and a \"gotchas\" section at the bottom. Optimize it for someone reading it once."
+                        - generic [ref=e573]: "Use this for:"
+                        - list [ref=e574]:
+                          - listitem [ref=e575]:
+                            - generic [ref=e577]: Summarize how a feature works
+                          - listitem [ref=e578]:
+                            - generic [ref=e580]: Explain a concept to me
+                          - listitem [ref=e581]:
+                            - generic [ref=e583]: Weekly status reports to your boss
+                          - listitem [ref=e584]:
+                            - generic [ref=e586]: Incident reports to your leadership
+                          - listitem [ref=e587]:
+                            - generic [ref=e589]: SVG illustrations, flowcharts, technical diagrams, etc
+                        - heading "Custom Editing Interfaces" [level=1] [ref=e591]:
+                          - generic [ref=e593]: Custom Editing Interfaces
+                        - generic [ref=e596]: Sometimes it’s hard to describe what you want purely in a text box. In this case, I'll ask Claude to build me a throwaway editor for the exact thing I'm working on. Not a product, or a reusable tool, but a single HTML file, purpose-built for this one piece of data.
+                        - generic [ref=e599]: "The trick is always to end with an export: a \"copy as JSON\" or \"copy as prompt\" button that turns whatever I did in the UI back into something I can paste into Claude Code."
+                        - link "Image" [ref=e606] [cursor=pointer]:
+                          - /url: /trq212/article/2052809885763747935/media/2052802969377394688
+                          - generic "Image" [ref=e610]:
+                            - img "Image" [ref=e612]
+                        - generic [ref=e615]: "Example prompts:"
+                        - list [ref=e616]:
+                          - listitem [ref=e617]:
+                            - generic [ref=e619]: I need to reprioritize these 30 Linear tickets. Make me an HTML file with each ticket as a draggable card across Now / Next / Later / Cut columns. Pre-sort them by your best guess. Add a "copy as markdown" button that exports the final ordering with a one-line rationale per bucket.
+                          - listitem [ref=e620]:
+                            - generic [ref=e622]: Here's our feature flag config. Build a form-based editor for it, group flags by area, show dependencies between them, warn me if I enable a flag whose prerequisite is off. Add a "copy diff" button that gives me just the changed keys.
+                          - listitem [ref=e623]:
+                            - generic [ref=e625]: "I'm tuning this system prompt. Make a side-by-side editor: editable prompt on the left with the variable slots highlighted, three sample inputs on the right that re-render the filled template live. Add a character/token counter and a copy button."
+                        - generic [ref=e628]: "Use this for:"
+                        - list [ref=e629]:
+                          - listitem [ref=e630]:
+                            - generic [ref=e632]: Reordering, triaging, or bucketing anything (tickets, test cases, feedback)
+                          - listitem [ref=e633]:
+                            - generic [ref=e635]: Editing structured config (feature flags, env vars, JSON/YAML with constraints)
+                          - listitem [ref=e636]:
+                            - generic [ref=e638]: Tuning prompts, templates, or copy with live preview
+                          - listitem [ref=e639]:
+                            - generic [ref=e641]: Curating datasets, approve/reject rows, tag examples, export the selection
+                          - listitem [ref=e642]:
+                            - generic [ref=e644]: Annotating a document, transcript, or diff and exporting the annotations
+                          - listitem [ref=e645]:
+                            - generic [ref=e647]: "Picking values that are painful to express in text: colors, easing curves, crop regions, cron schedules, regexes."
+                        - heading "Frequently Asked Questions" [level=2] [ref=e649]:
+                          - generic [ref=e651]: Frequently Asked Questions
+                        - generic [ref=e654]: I’ve been telling many people about how I’ve switched to HTML and I’ve seen a few repeated questions.
+                        - generic [ref=e656]:
+                          - generic [ref=e657]: Isn’t it less token efficient?
+                          - generic [ref=e658]: While markdown often uses fewer tokens, I’ve found that the added expressiveness of HTML and the much higher likelihood of me reading it means I get overall better output. With the 1MM context window in Opus 4.7, the increased token usage is not really noticeable in the context window.
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: When do you use markdown for now?
+                          - generic [ref=e662]: I have honestly stopped using markdown altogether for almost everything, but I’m probably far on the HTML maximalist side of things.
+                        - generic [ref=e664]:
+                          - generic [ref=e665]: How do I view the HTML file?
+                          - generic [ref=e666]: I tend just open it in a browser locally (you can ask Claude to open it), or upload to S3 if you want a shareable link.
+                        - generic [ref=e668]:
+                          - generic [ref=e669]: Doesn't this take longer to generate than markdown?
+                          - generic [ref=e670]: This does take longer! HTML can take 2-4x longer than Markdown, but I've found the results are worth it.
+                        - generic [ref=e672]:
+                          - generic [ref=e673]: What about version control?
+                          - generic [ref=e674]: This is honestly one of the biggest downsides of HTML, HTML diffs are noisy and hard to review compared to Markdown.
+                        - generic [ref=e676]:
+                          - generic [ref=e677]: How do I get Claude to match my taste / not make it ugly?
+                          - generic [ref=e678]: The frontend design plugin helps Claude make good HTML files. But to match your own companies style, you can create a single design system HTML file by pointing Claude at your codebase. You can then use that design system file as a reference for other html files.
+                        - heading "Stay in the Loop" [level=2] [ref=e680]:
+                          - generic [ref=e682]: Stay in the Loop
+                        - generic [ref=e685]: All of the above is to say that I think the real reason I use HTML is that I feel much more in the loop with Claude. I had begun to fear that because I had stopped reading plans in depth I would simply have to leave Claude to make its choices.
+                        - generic [ref=e688]: But I am happy to say instead that I feel more in the loop than ever before when using HTML. I hope you do too.
+                      - status [ref=e690]:
+                        - generic [ref=e691]:
+                          - img [ref=e692]
+                          - generic [ref=e696]:
+                            - generic [ref=e697]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e698] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e702]:
+                    - link "5:56 PM · May 8, 2026" [ref=e704] [cursor=pointer]:
+                      - /url: /trq212/status/2052809885763747935
+                      - time [ref=e705]: 5:56 PM · May 8, 2026
+                    - generic [ref=e706]: ·
+                    - link "3.4M Views" [ref=e707] [cursor=pointer]:
+                      - /url: /trq212/status/2052809885763747935/analytics
+                      - generic [ref=e710]: 3.4M
+                      - generic [ref=e711]: Views
+                  - group "454 replies, 1468 reposts, 7045 likes, 13405 bookmarks, 3483388 views" [ref=e714]:
+                    - button "454 Replies. Reply" [ref=e716] [cursor=pointer]:
+                      - generic [ref=e717]:
+                        - img [ref=e720]
+                        - generic [ref=e725]: "454"
+                    - button "1468 reposts. Repost" [ref=e727] [cursor=pointer]:
+                      - generic [ref=e728]:
+                        - img [ref=e731]
+                        - generic [ref=e736]: 1.4K
+                    - button "7045 Likes. Like" [ref=e738] [cursor=pointer]:
+                      - generic [ref=e739]:
+                        - img [ref=e742]
+                        - generic [ref=e747]: 7K
+                    - button "13405 Bookmarks. Bookmark" [ref=e749] [cursor=pointer]:
+                      - generic [ref=e750]:
+                        - img [ref=e753]
+                        - generic [ref=e758]: 13K
+                    - button "Share post" [ref=e761] [cursor=pointer]:
+                      - img [ref=e765]
+                  - button "Read 454 replies" [ref=e768] [cursor=pointer]:
+                    - generic [ref=e769]:
+                      - img [ref=e770]
+                      - generic [ref=e774]: Read 454 replies
+      - generic "Trending" [ref=e779]:
+        - generic [ref=e780]:
+          - region "Sign up" [ref=e782]:
+            - heading "New to X?" [level=2] [ref=e784]:
+              - generic [ref=e785]: New to X?
+            - generic [ref=e786]: Sign up now to get your own personalized timeline!
+            - generic [ref=e787]:
+              - iframe [ref=e790]:
+                - button "Sign up with Google. Opens in new tab" [ref=f4e3] [cursor=pointer]:
+                  - generic [ref=f4e5]:
+                    - img [ref=f4e7]
+                    - generic [ref=f4e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e791] [cursor=pointer]:
+                - generic [ref=e792]:
+                  - img [ref=e793]
+                  - generic [ref=e797]: Sign up with Apple
+              - link "Create account" [ref=e798] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e801]: Create account
+            - generic [ref=e802]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e803] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e804] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e805] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e807]:
+            - heading "Relevant people" [level=2] [ref=e809]:
+              - generic [ref=e810]: Relevant people
+            - list [ref=e811]:
+              - listitem [ref=e812] [cursor=pointer]:
+                - generic [ref=e813]:
+                  - link [ref=e823]:
+                    - /url: /trq212
+                  - generic [ref=e826]:
+                    - generic [ref=e827]:
+                      - generic [ref=e829]:
+                        - link "Thariq Verified account" [ref=e831]:
+                          - /url: /trq212
+                          - generic [ref=e832]:
+                            - generic [ref=e834]: Thariq
+                            - img "Verified account" [ref=e837]
+                        - link "@trq212" [ref=e842]:
+                          - /url: /trq212
+                          - generic [ref=e844]: "@trq212"
+                      - button "Follow @trq212" [ref=e846]:
+                        - generic [ref=e849]: Follow
+                    - generic [ref=e850]:
+                      - text: Claude Code
+                      - link "@anthropicai" [ref=e853]:
+                        - /url: /anthropicai
+                      - text: . prev YC W20,
+                      - link "@southpkcommons" [ref=e856]:
+                        - /url: /southpkcommons
+                      - text: ","
+                      - link "@medialab" [ref=e859]:
+                        - /url: /medialab
+          - region "Trending now" [ref=e861]:
+            - heading "Trending now" [level=1] [ref=e862]
+            - 'generic "Timeline: Trending now" [ref=e863]':
+              - generic [ref=e864]:
+                - heading "What’s happening" [level=2] [ref=e868]:
+                  - generic [ref=e869]: What’s happening
+                - link "Music · Trending Billy Joel" [ref=e872] [cursor=pointer]:
+                  - generic [ref=e873]:
+                    - generic [ref=e875]: Music · Trending
+                    - generic [ref=e876]: Billy Joel
+                - link "Trending in United States Wembys" [ref=e879] [cursor=pointer]:
+                  - generic [ref=e880]:
+                    - generic [ref=e882]: Trending in United States
+                    - generic [ref=e883]: Wembys
+                - link "Trending in United States Cougar" [ref=e886] [cursor=pointer]:
+                  - generic [ref=e887]:
+                    - generic [ref=e889]: Trending in United States
+                    - generic [ref=e890]: Cougar
+                - link "Politics · Trending French Laundry" [ref=e893] [cursor=pointer]:
+                  - generic [ref=e894]:
+                    - generic [ref=e896]: Politics · Trending
+                    - generic [ref=e897]: French Laundry
+                - link "Show more" [ref=e900] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e901]: Show more
+          - navigation "Footer" [ref=e903]:
+            - generic [ref=e904]:
+              - link "Terms of Service" [ref=e905] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e906]: "|"
+            - generic [ref=e907]:
+              - link "Privacy Policy" [ref=e908] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e909]: "|"
+            - generic [ref=e910]:
+              - link "Cookie Policy" [ref=e911] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e912]: "|"
+            - generic [ref=e913]:
+              - link "Accessibility" [ref=e914] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e915]: "|"
+            - generic [ref=e916]:
+              - link "Ads info" [ref=e917] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e918]: "|"
+            - button "More" [ref=e919] [cursor=pointer]:
+              - generic [ref=e920]:
+                - text: More
+                - img [ref=e921]
+            - generic [ref=e924]: © 2026 X Corp.

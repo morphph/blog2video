@@ -1,0 +1,702 @@
+[
+  {
+    "text": "市面上\"AI agent 替代员工\"的教程一搜一百条。但几乎没有一条讲清楚那个最关键的机制——为什么三个 agent 各跑各的只是工具集合，加上哪一条线，它们才真正变成一个团队。",
+    "pronounce_text": "市面上\"AI agent替代员工\"的教程一搜一百条。但几乎没有一条讲清楚那个最关键的机制为什么三个agent各跑各的只是工具集合，加上哪一条线，它们才真正变成一个团队。",
+    "time_begin": 0,
+    "time_end": 14319.591836734695,
+    "text_begin": 0,
+    "text_end": 89,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 84
+  },
+  {
+    "text": "我读到 Khairallah 这篇 solo founder 实战手册时，最有意思的不是\"省了 18 万美金\"那个煽情对比，是他把\"agent 团队\"这件事的拐点机制，难得讲透了一次。",
+    "pronounce_text": "我读到Khairallah这篇solo founder实战手册时，最有意思的不是\"省了十八万美金\"那个煽情对比，是他把\"agent团队\"这件事的拐点机制，难得讲透了一次。",
+    "time_begin": 14472,
+    "time_end": 27549.32426303855,
+    "text_begin": 89,
+    "text_end": 181,
+    "pronounce_text_begin": 84,
+    "pronounce_text_end": 169
+  },
+  {
+    "text": "今天不聊每个 agent 要装哪些 MCP server——只聊三件事：为什么是 2026 年，关键机制在哪两条线上，边界在什么位置。",
+    "pronounce_text": "今天不聊每个agent要装哪些MCP server只聊三件事：为什么是两千零二十六年，关键机制在哪两条线上，边界在什么位置。",
+    "time_begin": 27720,
+    "time_end": 38962.947845804985,
+    "text_begin": 181,
+    "text_end": 248,
+    "pronounce_text_begin": 169,
+    "pronounce_text_end": 231
+  },
+  {
+    "text": "先说一个反直觉的判断。这件事这一年突然能跑起来，跟模型变聪明关系不大。",
+    "pronounce_text": "先说一个反直觉的判断。这件事这一年突然能跑起来，跟模型变聪明关系不大。",
+    "time_begin": 39132,
+    "time_end": 45463.92743764172,
+    "text_begin": 248,
+    "text_end": 283,
+    "pronounce_text_begin": 231,
+    "pronounce_text_end": 266
+  },
+  {
+    "text": "过去两三年，大家也在喊\"AI 替代员工\"。但你打开看一眼，所谓的 agent 大多还是 GPT wrapper——一个聊天框，加几个 prompt 模板。它能帮你写邮件，但它读不到你的邮箱。",
+    "pronounce_text": "过去两三年，大家也在喊\"AI替代员工\"。但你打开看一眼，所谓的agent大多还是GPT wrapper一个聊天框，加几个prompt模板。它能帮你写邮件，但它读不到你的邮箱。",
+    "time_begin": 45612,
+    "time_end": 60953.26984126984,
+    "text_begin": 283,
+    "text_end": 378,
+    "pronounce_text_begin": 266,
+    "pronounce_text_end": 353
+  },
+  {
+    "text": "它能帮你分析竞品，但它打不开竞品的网站。它能帮你拟周报，但它进不去你的项目管理工具。",
+    "pronounce_text": "它能帮你分析竞品，但它打不开竞品的网站。它能帮你拟周报，但它进不去你的项目管理工具。",
+    "time_begin": 61092,
+    "time_end": 69687.87301587302,
+    "text_begin": 378,
+    "text_end": 420,
+    "pronounce_text_begin": 353,
+    "pronounce_text_end": 395
+  },
+  {
+    "text": "它聪明，但它够不到你的东西。",
+    "pronounce_text": "它聪明，但它够不到你的东西。",
+    "time_begin": 69840,
+    "time_end": 71992.33560090703,
+    "text_begin": 420,
+    "text_end": 434,
+    "pronounce_text_begin": 395,
+    "pronounce_text_end": 409
+  },
+  {
+    "text": "2026 年真正的拐点是 MCP——Model Context Protocol。这套协议让 agent 第一次能稳定地\"接触\"你的工具栈。",
+    "pronounce_text": "两千零二十六年真正的拐点是MCP Model Context Protocol。这套协议让agent第一次能稳定地\"接触\"你的工具栈。",
+    "time_begin": 72144,
+    "time_end": 81599.01133786848,
+    "text_begin": 434,
+    "text_end": 504,
+    "pronounce_text_begin": 409,
+    "pronounce_text_end": 476
+  },
+  {
+    "text": "它能直接读你的 Gmail，能写进你的 Google Calendar，能查竞品公司的最新页面，能调用你的 CMS 发布内容。",
+    "pronounce_text": "它能直接读你的Gmail，能写进你的Google Calendar，能查竞品公司的最新页面，能调用你的CMS发布内容。",
+    "time_begin": 81799.01133786848,
+    "time_end": 90905.72335600907,
+    "text_begin": 504,
+    "text_end": 567,
+    "pronounce_text_begin": 476,
+    "pronounce_text_end": 535
+  },
+  {
+    "text": "注意博客里描述每个 agent 的能力时，作者不是在说\"它的 prompt 写得多牛\"。他在说\"它通过 MCP 连了什么\"。这才是关键。模型本身能力没翻天，但它从一个会聊天的盒子，变成了一个能动手的同事。",
+    "pronounce_text": "注意博客里描述每个agent的能力时，作者不是在说\"它的prompt写得多牛\"。他在说\"它通过MCP连了什么\"。这才是关键。模型本身能力没翻天，但它从一个会聊天的盒子，变成了一个能动手的同事。",
+    "time_begin": 91044,
+    "time_end": 107708.80725623583,
+    "text_begin": 567,
+    "text_end": 669,
+    "pronounce_text_begin": 535,
+    "pronounce_text_end": 631
+  },
+  {
+    "text": "在这个前提下，作者画了一张非常具体的三人小团队图。我用一段话带过，因为这不是这条视频的重点。",
+    "pronounce_text": "在这个前提下，作者画了一张非常具体的三人小团队图。我用一段话带过，因为这不是这条视频的重点。",
+    "time_begin": 107856,
+    "time_end": 117009.15192743765,
+    "text_begin": 669,
+    "text_end": 715,
+    "pronounce_text_begin": 631,
+    "pronounce_text_end": 677
+  },
+  {
+    "text": "第一个是研究员 agent，盯竞品、盯趋势、盯机会，每周一早晨给你一份 brief，告诉你这周市场上发生了什么、你该做什么。",
+    "pronounce_text": "第一个是研究员agent，盯竞品、盯趋势、盯机会，每周一早晨给你一份brief，告诉你这周市场上发生了什么、你该做什么。",
+    "time_begin": 117180,
+    "time_end": 129189.20634920635,
+    "text_begin": 715,
+    "text_end": 777,
+    "pronounce_text_begin": 677,
+    "pronounce_text_end": 737
+  },
+  {
+    "text": "第二个是内容 agent，从选题、初稿、编辑到全平台分发都包了，一个月帮你产出三十个内容点子和三十篇初稿。",
+    "pronounce_text": "第二个是内容agent，从选题、初稿、编辑到全平台分发都包了，一个月帮你产出三十个内容点子和三十篇初稿。",
+    "time_begin": 129348,
+    "time_end": 139905.95918367346,
+    "text_begin": 777,
+    "text_end": 830,
+    "pronounce_text_begin": 737,
+    "pronounce_text_end": 789
+  },
+  {
+    "text": "第三个是运营 agent，相当于你的 chief of staff，处理邮件分类、会议准备、周报输出。",
+    "pronounce_text": "第三个是运营agent，相当于你的chief of staff，处理邮件分类、会议准备、周报输出。",
+    "time_begin": 140105.95918367346,
+    "time_end": 148109.72335600908,
+    "text_begin": 830,
+    "text_end": 881,
+    "pronounce_text_begin": 789,
+    "pronounce_text_end": 838
+  },
+  {
+    "text": "把每天本来要花一两个小时的杂活，压缩到十五分钟的快速 review。",
+    "pronounce_text": "把每天本来要花一两个小时的杂活，压缩到十五分钟的快速review。",
+    "time_begin": 148248,
+    "time_end": 154452.21768707482,
+    "text_begin": 881,
+    "text_end": 915,
+    "pronounce_text_begin": 838,
+    "pronounce_text_end": 871
+  },
+  {
+    "text": "听起来很美对吧。但这个分工本身，市面上一百条教程都讲过。真正的问题是——三个 agent 各自跑得再好，凭什么它们就是一个\"团队\"？",
+    "pronounce_text": "听起来很美对吧。但这个分工本身，市面上一百条教程都讲过。真正的问题是三个agent各自跑得再好，凭什么它们就是一个\"团队\"？",
+    "time_begin": 154620,
+    "time_end": 166327.3469387755,
+    "text_begin": 915,
+    "text_end": 981,
+    "pronounce_text_begin": 871,
+    "pronounce_text_end": 933
+  },
+  {
+    "text": "这是我读完这篇博客最想跟你聊的一段。",
+    "pronounce_text": "这是我读完这篇博客最想跟你聊的一段。",
+    "time_begin": 166464,
+    "time_end": 169382.5941043084,
+    "text_begin": 981,
+    "text_end": 999,
+    "pronounce_text_begin": 933,
+    "pronounce_text_end": 951
+  },
+  {
+    "text": "作者讲了一个具体的协作场景。研究员 agent 周一扫到一条情报：你的主要竞品发了一个新功能。这条情报立刻进入一个共享的 knowledge base。",
+    "pronounce_text": "作者讲了一个具体的协作场景。研究员agent周一扫到一条情报：你的主要竞品发了一个新功能。这条情报立刻进入一个共享的knowledge base。",
+    "time_begin": 169524,
+    "time_end": 181881.50566893423,
+    "text_begin": 999,
+    "text_end": 1075,
+    "pronounce_text_begin": 951,
+    "pronounce_text_end": 1024
+  },
+  {
+    "text": "内容 agent 第二天开工前先读这个 base，发现了这条新情报，自动产出三篇回应内容——一篇分析、一条短视频脚本、一封邮件 newsletter。",
+    "pronounce_text": "内容agent第二天开工前先读这个base，发现了这条新情报，自动产出三篇回应内容一篇分析、一条短视频脚本、一封邮件newsletter。",
+    "time_begin": 182052,
+    "time_end": 195175.7641723356,
+    "text_begin": 1075,
+    "text_end": 1150,
+    "pronounce_text_begin": 1024,
+    "pronounce_text_end": 1093
+  },
+  {
+    "text": "同一时间，运营 agent 也读到了，开始起草一封发给可能受影响客户的沟通邮件，等你早上来 review。",
+    "pronounce_text": "同一时间，运营agent也读到了，开始起草一封发给可能受影响客户的沟通邮件，等你早上来review。",
+    "time_begin": 195336,
+    "time_end": 204489.15192743763,
+    "text_begin": 1150,
+    "text_end": 1203,
+    "pronounce_text_begin": 1093,
+    "pronounce_text_end": 1143
+  },
+  {
+    "text": "这条链上没有任何一个 agent 做了它原本职责之外的事。但你看，这就不是三把瑞士军刀了，这是一个会传话的小团队。",
+    "pronounce_text": "这条链上没有任何一个agent做了它原本职责之外的事。但你看，这就不是三把瑞士军刀了，这是一个会传话的小团队。",
+    "time_begin": 204660,
+    "time_end": 214498.14058956917,
+    "text_begin": 1203,
+    "text_end": 1260,
+    "pronounce_text_begin": 1143,
+    "pronounce_text_end": 1198
+  },
+  {
+    "text": "关键差别在哪里？在于它们共享同一份记忆。",
+    "pronounce_text": "关键差别在哪里？在于它们共享同一份记忆。",
+    "time_begin": 214668,
+    "time_end": 218782.42176870749,
+    "text_begin": 1260,
+    "text_end": 1280,
+    "pronounce_text_begin": 1198,
+    "pronounce_text_end": 1218
+  },
+  {
+    "text": "很多人讲 agent 协作，默认的方式是\"我把 A 的输出粘到 B 的输入里\"。这是串联，不是协作。串联是脆弱的——任何一环手动断了，链路就死了。共享 knowledge base 不一样。",
+    "pronounce_text": "很多人讲agent协作，默认的方式是\"我把A的输出粘到B的输入里\"。这是串联，不是协作。串联是脆弱的任何一环手动断了，链路就死了。共享knowledge base不一样。",
+    "time_begin": 218952,
+    "time_end": 233735.9909297052,
+    "text_begin": 1280,
+    "text_end": 1375,
+    "pronounce_text_begin": 1218,
+    "pronounce_text_end": 1303
+  },
+  {
+    "text": "它是一个所有 agent 都能读、都能写的中央备忘录。研究员发现的事实，不需要主动\"传给\"内容 agent，而是写进共享区，所有人下一次开工时自然读到。",
+    "pronounce_text": "它是一个所有agent都能读、都能写的中央备忘录。研究员发现的事实，不需要主动\"传给\"内容agent，而是写进共享区，所有人下一次开工时自然读到。",
+    "time_begin": 233892,
+    "time_end": 247306.0136054422,
+    "text_begin": 1375,
+    "text_end": 1451,
+    "pronounce_text_begin": 1303,
+    "pronounce_text_end": 1376
+  },
+  {
+    "text": "我读完最深的判断是这个：决定一组 agent 能不能从工具集合升级成团队的，不是 agent 数量，不是模型聪不聪明，是 memory 拓扑。三个 agent 共享一份记忆，远比五个 agent 各自独立有用。",
+    "pronounce_text": "我读完最深的判断是这个：决定一组agent能不能从工具集合升级成团队的，不是agent数量，不是模型聪不聪明，是memory拓扑。三个agent共享一份记忆，远比五个agent各自独立有用。",
+    "time_begin": 247464,
+    "time_end": 263060.6893424036,
+    "text_begin": 1451,
+    "text_end": 1556,
+    "pronounce_text_begin": 1376,
+    "pronounce_text_end": 1471
+  },
+  {
+    "text": "所以如果你真要搭这套东西，最先该想清楚的不是 agent 怎么写，是这个共享记忆的 schema 长什么样——什么字段、谁写、怎么版本化、怎么避免污染。这才是工程的真正起点。",
+    "pronounce_text": "所以如果你真要搭这套东西，最先该想清楚的不是agent怎么写，是这个共享记忆的schema长什么样什么字段、谁写、怎么版本化、怎么避免污染。这才是工程的真正起点。",
+    "time_begin": 263232,
+    "time_end": 278062.43083900225,
+    "text_begin": 1556,
+    "text_end": 1643,
+    "pronounce_text_begin": 1471,
+    "pronounce_text_end": 1552
+  },
+  {
+    "text": "第二条关键机制，藏在内容 agent 里。",
+    "pronounce_text": "第二条关键机制，藏在内容agent里。",
+    "time_begin": 278208,
+    "time_end": 281300.7437641723,
+    "text_begin": 1643,
+    "text_end": 1664,
+    "pronounce_text_begin": 1552,
+    "pronounce_text_end": 1571
+  },
+  {
+    "text": "你一定见过那种一眼就能看出来是 AI 写的内容。空泛、套话、没有立场。大家通常把锅甩给模型——\"AI 就是写不好\"。",
+    "pronounce_text": "你一定见过那种一眼就能看出来是AI写的内容。空泛、套话、没有立场。大家通常把锅甩给模型\"AI就是写不好\"。",
+    "time_begin": 281448,
+    "time_end": 292133.66893424036,
+    "text_begin": 1664,
+    "text_end": 1722,
+    "pronounce_text_begin": 1571,
+    "pronounce_text_end": 1624
+  },
+  {
+    "text": "但作者给了一个更精准的诊断：AI 内容之所以读起来像 AI，不是模型差，是人发了第一稿。",
+    "pronounce_text": "但作者给了一个更精准的诊断：AI内容之所以读起来像AI，不是模型差，是人发了第一稿。",
+    "time_begin": 292333.66893424036,
+    "time_end": 300290.99319727893,
+    "text_begin": 1722,
+    "text_end": 1766,
+    "pronounce_text_begin": 1624,
+    "pronounce_text_end": 1666
+  },
+  {
+    "text": "这句话我读到的时候停了一下。",
+    "pronounce_text": "这句话我读到的时候停了一下。",
+    "time_begin": 300456,
+    "time_end": 302527.06575963716,
+    "text_begin": 1766,
+    "text_end": 1780,
+    "pronounce_text_begin": 1666,
+    "pronounce_text_end": 1680
+  },
+  {
+    "text": "什么意思？意思是，第一稿在哪个模型出来都差不多。差别在于发布之前，有没有一个评判机制把它再筛一遍。人类写手写完初稿会自己读两遍、改三遍、给同事看一眼。",
+    "pronounce_text": "什么意思？意思是，第一稿在哪个模型出来都差不多。差别在于发布之前，有没有一个评判机制把它再筛一遍。人类写手写完初稿会自己读两遍、改三遍、给同事看一眼。",
+    "time_begin": 302688,
+    "time_end": 317007.5918367347,
+    "text_begin": 1780,
+    "text_end": 1855,
+    "pronounce_text_begin": 1680,
+    "pronounce_text_end": 1755
+  },
+  {
+    "text": "但大多数人用 AI 写内容时，第一稿出来直接就发了——根本没有评判这一步。",
+    "pronounce_text": "但大多数人用AI写内容时，第一稿出来直接就发了根本没有评判这一步。",
+    "time_begin": 317160,
+    "time_end": 322946.25850340136,
+    "text_begin": 1855,
+    "text_end": 1892,
+    "pronounce_text_begin": 1755,
+    "pronounce_text_end": 1788
+  },
+  {
+    "text": "所以作者把内容 agent 设计成两个角色，硬是分开。",
+    "pronounce_text": "所以作者把内容agent设计成两个角色，硬是分开。",
+    "time_begin": 323100,
+    "time_end": 327342.1315192744,
+    "text_begin": 1892,
+    "text_end": 1919,
+    "pronounce_text_begin": 1788,
+    "pronounce_text_end": 1813
+  },
+  {
+    "text": "一个 agent 负责\"写\"，另一个 agent 负责\"判断写得好不好\"。",
+    "pronounce_text": "一个agent负责\"写\"，另一个agent负责\"判断写得好不好\"。",
+    "time_begin": 327492,
+    "time_end": 332546.8299319728,
+    "text_begin": 1919,
+    "text_end": 1956,
+    "pronounce_text_begin": 1813,
+    "pronounce_text_end": 1846
+  },
+  {
+    "text": "后者按四个维度打分：voice match，语气是不是像你；hook strength，开头抓不抓人；value density，信息密度够不够；originality，有没有原创视角。",
+    "pronounce_text": "后者按四个维度打分：voice match，语气是不是像你;hook strength，开头抓不抓人;value density，信息密度够不够;originality，有没有原创视角。",
+    "time_begin": 332712,
+    "time_end": 346172.45351473923,
+    "text_begin": 1956,
+    "text_end": 2049,
+    "pronounce_text_begin": 1846,
+    "pronounce_text_end": 1939
+  },
+  {
+    "text": "任何一个维度低于阈值，自动打回去重写。",
+    "pronounce_text": "任何一个维度低于玉值，自动打回去重写。",
+    "time_begin": 346372.45351473923,
+    "time_end": 350103.74603174604,
+    "text_begin": 2049,
+    "text_end": 2068,
+    "pronounce_text_begin": 1939,
+    "pronounce_text_end": 1958
+  },
+  {
+    "text": "这个内循环跑到所有维度都达标为止。",
+    "pronounce_text": "这个内循环跑到所有维度都达标为止。",
+    "time_begin": 350244,
+    "time_end": 353127.7641723356,
+    "text_begin": 2068,
+    "text_end": 2085,
+    "pronounce_text_begin": 1958,
+    "pronounce_text_end": 1975
+  },
+  {
+    "text": "这才是内容 agent 真正的核心。它不是\"会写\"，是\"会判断写得好不好\"，并且会逼自己不达标就重来。",
+    "pronounce_text": "这才是内容agent真正的核心。它不是\"会写\"，是\"会判断写得好不好\"，并且会逼自己不达标就重来。",
+    "time_begin": 353268,
+    "time_end": 363140.97052154195,
+    "text_begin": 2085,
+    "text_end": 2136,
+    "pronounce_text_begin": 1975,
+    "pronounce_text_end": 2024
+  },
+  {
+    "text": "但故事还没完。作者强调了一句话我觉得非常成熟。AI 跑完所有质量门之后，你还要做最后一遍人工 pass。加进去的是什么？",
+    "pronounce_text": "但故事还没完。作者强调了一句话我觉得非常成熟。AI跑完所有质量门之后，你还要做最后一遍人工pass。加进去的是什么？",
+    "time_begin": 363312,
+    "time_end": 374044.1088435374,
+    "text_begin": 2136,
+    "text_end": 2196,
+    "pronounce_text_begin": 2024,
+    "pronounce_text_end": 2082
+  },
+  {
+    "text": "是个人故事、是行业内幕视角、是有立场的判断、是那种只有你能讲的话。",
+    "pronounce_text": "是个人故事、是行业内幕视角、是有立场的判断、是那种只有你能讲的话。",
+    "time_begin": 374244.1088435374,
+    "time_end": 381098.485260771,
+    "text_begin": 2196,
+    "text_end": 2229,
+    "pronounce_text_begin": 2082,
+    "pronounce_text_end": 2115
+  },
+  {
+    "text": "他用了一个非常准的比例——agent 处理 80% 的 production，你处理 20% 的 soul。注意这不是产能比例，是分工边界。production 是格式、变体、调度、跑量，可以完全交出去。",
+    "pronounce_text": "他用了一个非常准的比例agent处理百分之八十的production，你处理百分之二十的soul。注意这不是产能比例，是分工边界。production是格式、变体、调度、跑量，可以完全交出去。",
+    "time_begin": 381240,
+    "time_end": 396836.6893424036,
+    "text_begin": 2229,
+    "text_end": 2331,
+    "pronounce_text_begin": 2115,
+    "pronounce_text_end": 2211
+  },
+  {
+    "text": "soul 是个人立场、独家视角，不能交。一个 agent 设计得好不好，看它有没有把这条线画清楚——能不能识别\"哪一步必须停下来等人\"。",
+    "pronounce_text": "soul是个人立场、独家视角，不能交。一个agent设计得好不好，看它有没有把这条线画清楚能不能识别\"哪一步必须停下来等人\"。",
+    "time_begin": 397008,
+    "time_end": 407740.1088435374,
+    "text_begin": 2331,
+    "text_end": 2399,
+    "pronounce_text_begin": 2211,
+    "pronounce_text_end": 2274
+  },
+  {
+    "text": "讲到这里，整条 pitch 听起来都很美好。但博客里有一段我特别看重，因为它没有继续往上吹。",
+    "pronounce_text": "讲到这里，整条pitch听起来都很美好。但博客里有一段我特别看重，因为它没有继续往上吹。",
+    "time_begin": 407880,
+    "time_end": 415663.1746031746,
+    "text_begin": 2399,
+    "text_end": 2445,
+    "pronounce_text_begin": 2274,
+    "pronounce_text_end": 2318
+  },
+  {
+    "text": "作者直接写了一句：这套方案大概能覆盖三个全职员工 70 到 80 的工作量，适用窗口大约是创业的前 12 到 18 个月。超过这个窗口，你需要的不是 agent 干更多，是真人。",
+    "pronounce_text": "作者直接写了一句：这套方案大概能覆盖三个全职员工七十到八十的工作量，适用窗口大约是创业的前十二到十八个月。超过这个窗口，你需要的不是agent干更多，是真人。",
+    "time_begin": 415800,
+    "time_end": 430920.6802721088,
+    "text_begin": 2445,
+    "text_end": 2534,
+    "pronounce_text_begin": 2318,
+    "pronounce_text_end": 2397
+  },
+  {
+    "text": "他甚至列出了 agent 做不到的事——定价时的市场感觉、和受伤客户的情绪沟通、产品方向上的反直觉转向。这些事情共同点是什么？",
+    "pronounce_text": "他甚至列出了agent做不到的事定价时的市场感觉、和受伤客户的情绪沟通、产品方向上的反直觉转向。这些事情共同点是什么？",
+    "time_begin": 431064,
+    "time_end": 442481.09750566893,
+    "text_begin": 2534,
+    "text_end": 2597,
+    "pronounce_text_begin": 2397,
+    "pronounce_text_end": 2456
+  },
+  {
+    "text": "是判断、是共情、是创造性突破。这三样都是 agent 的硬边界。",
+    "pronounce_text": "是判断、是共情、是创造性突破。这三样都是agent的硬边界。",
+    "time_begin": 442681.09750566893,
+    "time_end": 449233.61451247166,
+    "text_begin": 2597,
+    "text_end": 2629,
+    "pronounce_text_begin": 2456,
+    "pronounce_text_end": 2486
+  },
+  {
+    "text": "我特别想强调一下，这个 70-80% 的数字不是谦虚，是边界。",
+    "pronounce_text": "我特别想强调一下，这个七十到百分之八十的数字不是谦虚，是边界。",
+    "time_begin": 449388,
+    "time_end": 455429.67800453515,
+    "text_begin": 2629,
+    "text_end": 2660,
+    "pronounce_text_begin": 2486,
+    "pronounce_text_end": 2517
+  },
+  {
+    "text": "很多人把 AI 的\"替代率\"理解成一个连续光谱，从 0% 慢慢往 100% 走。",
+    "pronounce_text": "很多人把AI的\"替代率\"理解成一个连续光谱，从百分之零慢慢往百分之一百走。",
+    "time_begin": 455580,
+    "time_end": 463072.92517006805,
+    "text_begin": 2660,
+    "text_end": 2700,
+    "pronounce_text_begin": 2517,
+    "pronounce_text_end": 2554
+  },
+  {
+    "text": "但我读完这篇之后觉得，更准的描述是两个不同性质区域的拼接——执行域里 agent 能做到 100% 替代，判断域里 agent 是 0% 替代。把这两块加权一平均，就是 70 到 80。",
+    "pronounce_text": "但我读完这篇之后觉得，更准的描述是两个不同性质区域的拼接执行域里agent能做到百分之一百替代，判断域里agent是百分之零替代。把这两块加权一平均，就是七十到八十。",
+    "time_begin": 463212,
+    "time_end": 477485.15192743763,
+    "text_begin": 2700,
+    "text_end": 2793,
+    "pronounce_text_begin": 2554,
+    "pronounce_text_end": 2637
+  },
+  {
+    "text": "而 solo founder 阶段最妙的一点是什么？是这个阶段的工作里，本来就有相当大一块是纯执行——格式化邮件、整理周报、扫竞品页面、跑内容变体。",
+    "pronounce_text": "而solo founder阶段最妙的一点是什么？是这个阶段的工作里，本来就有相当大一块是纯执行格式化邮件、整理周报、扫竞品页面、跑内容变体。",
+    "time_begin": 477648,
+    "time_end": 490725.3242630385,
+    "text_begin": 2793,
+    "text_end": 2867,
+    "pronounce_text_begin": 2637,
+    "pronounce_text_end": 2707
+  },
+  {
+    "text": "这些事不需要判断力，agent 在这里是真正的 100% 替代。",
+    "pronounce_text": "这些事不需要判断力，agent在这里是真正的百分之一百替代。",
+    "time_begin": 490925.3242630385,
+    "time_end": 496409.72335600905,
+    "text_begin": 2867,
+    "text_end": 2899,
+    "pronounce_text_begin": 2707,
+    "pronounce_text_end": 2737
+  },
+  {
+    "text": "所以 70-80% 这个数字，恰恰是这套方案能成立的核心论点，而不是它的局限。",
+    "pronounce_text": "所以七十到百分之八十这个数字，恰恰是这套方案能成立的核心论点，而不是它的局限。",
+    "time_begin": 496548,
+    "time_end": 504249.90476190473,
+    "text_begin": 2899,
+    "text_end": 2938,
+    "pronounce_text_begin": 2737,
+    "pronounce_text_end": 2776
+  },
+  {
+    "text": "但既然讲到边界，还有几个代价要诚实地说。",
+    "pronounce_text": "但既然讲到边界，还有几个代价要诚实地说。",
+    "time_begin": 504396,
+    "time_end": 508347.8820861678,
+    "text_begin": 2938,
+    "text_end": 2958,
+    "pronounce_text_begin": 2776,
+    "pronounce_text_end": 2796
+  },
+  {
+    "text": "第一，共享 knowledge base 是协作的力量来源，也是单点故障。任何一个 agent 写脏数据，三个 agent 一起喝毒。",
+    "pronounce_text": "第一，共享knowledge base是协作的力量来源，也是单点故障。任何一个agent写脏数据，三个agent一起喝毒。",
+    "time_begin": 508500,
+    "time_end": 519487.5283446712,
+    "text_begin": 2958,
+    "text_end": 3025,
+    "pronounce_text_begin": 2796,
+    "pronounce_text_end": 2857
+  },
+  {
+    "text": "所以作者的隐含建议是，每个 agent 先单独跑两到三周校准，再连成一片，而不是三个一起上。",
+    "pronounce_text": "所以作者的隐含建议是，每个agent先单独跑两到三周校准，再连成一片，而不是三个一起上。",
+    "time_begin": 519687.5283446712,
+    "time_end": 527900.2721088436,
+    "text_begin": 3025,
+    "text_end": 3071,
+    "pronounce_text_begin": 2857,
+    "pronounce_text_end": 2901
+  },
+  {
+    "text": "第二，\"三周搭完三个 agent\"听起来很爽，但它有一个隐藏前提——你得已经有清晰的品牌 voice 文档、ICP 画像、style guide、关键指标定义。",
+    "pronounce_text": "第二，\"三周搭完三个agent\"听起来很爽，但它有一个隐藏前提你得已经有清晰的品牌voice文档、ICP画像、style guide、关键指标定义。",
+    "time_begin": 528048,
+    "time_end": 541891.5827664399,
+    "text_begin": 3071,
+    "text_end": 3151,
+    "pronounce_text_begin": 2901,
+    "pronounce_text_end": 2975
+  },
+  {
+    "text": "这些前置文档本身的质量决定了 agent 输出的天花板。",
+    "pronounce_text": "这些前置文档本身的质量决定了agent输出的天花板。",
+    "time_begin": 542091.5827664399,
+    "time_end": 546461.4240362812,
+    "text_begin": 3151,
+    "text_end": 3179,
+    "pronounce_text_begin": 2975,
+    "pronounce_text_end": 3001
+  },
+  {
+    "text": "prompt 工程救不了一个想不清楚自己是谁的创始人。",
+    "pronounce_text": "prompt工程救不了一个想不清楚自己是谁的创始人。",
+    "time_begin": 546624,
+    "time_end": 550274.0226757369,
+    "text_begin": 3179,
+    "text_end": 3206,
+    "pronounce_text_begin": 3001,
+    "pronounce_text_end": 3027
+  },
+  {
+    "text": "第三，超过 12 到 18 个月之后，业务复杂度、人际关系深度、品牌叙事一致性这些维度上，70-80% 的覆盖率会持续往下掉。到某个点，必须开始招真人。",
+    "pronounce_text": "第三，超过十二到十八个月之后，业务复杂度、人际关系深度、品牌叙事一致性这些维度上，七十到百分之八十的覆盖率会持续往下掉。到某个点，必须开始招真人。",
+    "time_begin": 550440,
+    "time_end": 564666.7120181406,
+    "text_begin": 3206,
+    "text_end": 3282,
+    "pronounce_text_begin": 3027,
+    "pronounce_text_end": 3100
+  },
+  {
+    "text": "这不是 agent 的失败，是 agent 设计上的硬边界。早点画清楚这条线，对所有人都好。",
+    "pronounce_text": "这不是agent的失败，是agent设计上的硬边界。早点画清楚这条线，对所有人都好。",
+    "time_begin": 564804,
+    "time_end": 572041.5056689342,
+    "text_begin": 3282,
+    "text_end": 3328,
+    "pronounce_text_begin": 3100,
+    "pronounce_text_end": 3142
+  },
+  {
+    "text": "回过头来看整件事。",
+    "pronounce_text": "回过头来看整件事。",
+    "time_begin": 572184,
+    "time_end": 573953.2063492064,
+    "text_begin": 3328,
+    "text_end": 3337,
+    "pronounce_text_begin": 3142,
+    "pronounce_text_end": 3151
+  },
+  {
+    "text": "solo founder 第一次有了\"不雇人也能扩张\"的真实选项，这一点是对的。",
+    "pronounce_text": "solo founder第一次有了\"不雇人也能扩张\"的真实选项，这一点是对的。",
+    "time_begin": 574092,
+    "time_end": 580087.2380952381,
+    "text_begin": 3337,
+    "text_end": 3377,
+    "pronounce_text_begin": 3151,
+    "pronounce_text_end": 3190
+  },
+  {
+    "text": "但能让这件事真正跑起来的不是某个 agent 多聪明，而是两个机制——一个是共享 knowledge base，把三把瑞士军刀变成一个会传话的团队；另一个是内容 agent 里那个\"写\"和\"判断写得好不好\"分开的内循环，",
+    "pronounce_text": "但能让这件事真正跑起来的不是某个agent多聪明，而是两个机制一个是共享knowledge base，把三把瑞士军刀变成一个会传话的团队;另一个是内容agent里那个\"写\"和\"判断写得好不好\"分开的内循环，",
+    "time_begin": 580248,
+    "time_end": 596994.0770975057,
+    "text_begin": 3377,
+    "text_end": 3487,
+    "pronounce_text_begin": 3190,
+    "pronounce_text_end": 3293
+  },
+  {
+    "text": "把 AI 内容从平庸第一稿拉到能直接发布的水准。",
+    "pronounce_text": "把AI内容从平庸第一稿拉到能直接发布的水准。",
+    "time_begin": 597132,
+    "time_end": 600956.172335601,
+    "text_begin": 3487,
+    "text_end": 3511,
+    "pronounce_text_begin": 3293,
+    "pronounce_text_end": 3315
+  },
+  {
+    "text": "这两条线，是这篇博客真正值钱的部分，也是大多数 agent 教程根本不会讲到的地方。",
+    "pronounce_text": "这两条线，是这篇博客真正值钱的部分，也是大多数agent教程根本不会讲到的地方。",
+    "time_begin": 601128,
+    "time_end": 608655.7551020408,
+    "text_begin": 3511,
+    "text_end": 3553,
+    "pronounce_text_begin": 3315,
+    "pronounce_text_end": 3355
+  },
+  {
+    "text": "2026 年最聪明的 solo founder 不是雇人，是建人。但能建成\"团队\"而不是\"工具集\"的，是那条让三个 agent 互相读到对方备忘的共享记忆线。",
+    "pronounce_text": "两千零二十六年最聪明的solo founder不是雇人，是建人。但能建成\"团队\"而不是\"工具集\"的，是那条让三个agent互相读到对方备忘的共享记忆线。",
+    "time_begin": 608796,
+    "time_end": 621234.775510204,
+    "text_begin": 3553,
+    "text_end": 3632,
+    "pronounce_text_begin": 3355,
+    "pronounce_text_end": 3431
+  },
+  {
+    "text": "如果你打算真的动手搭这套东西，给你三条带回家的判断。",
+    "pronounce_text": "如果你打算真的动手搭这套东西，给你三条带回家的判断。",
+    "time_begin": 621396,
+    "time_end": 625893.5510204082,
+    "text_begin": 3632,
+    "text_end": 3658,
+    "pronounce_text_begin": 3431,
+    "pronounce_text_end": 3457
+  },
+  {
+    "text": "一，先想清楚共享记忆的 schema，再写第一个 agent 的 prompt——拓扑决定上限。二，内容 agent 必须有自动质量门，把\"写\"和\"评\"拆成两个角色，否则你就是又生产了一台第一稿发布机。",
+    "pronounce_text": "一，先想清楚共享记忆的schema，再写第一个agent的prompt拓扑决定上限。二，内容agent必须有自动质量门，把\"写\"和\"评\"拆成两个角色，否则你就是又生产了一台第一稿发布机。",
+    "time_begin": 626040,
+    "time_end": 642530.6575963718,
+    "text_begin": 3658,
+    "text_end": 3759,
+    "pronounce_text_begin": 3457,
+    "pronounce_text_end": 3550
+  },
+  {
+    "text": "三，把 70-80% 这个数字记在心里——它告诉你哪些事可以完全交出去，哪些事必须自己做。",
+    "pronounce_text": "三，把七十到百分之八十这个数字记在心里它告诉你哪些事可以完全交出去，哪些事必须自己做。",
+    "time_begin": 642672,
+    "time_end": 651569.7324263039,
+    "text_begin": 3759,
+    "text_end": 3804,
+    "pronounce_text_begin": 3550,
+    "pronounce_text_end": 3593
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 651708,
+    "time_end": 656983.4195011337,
+    "text_begin": 3804,
+    "text_end": 3831,
+    "pronounce_text_begin": 3593,
+    "pronounce_text_end": 3619
+  }
+]

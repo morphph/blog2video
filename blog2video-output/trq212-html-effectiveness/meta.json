@@ -1,0 +1,15 @@
+{
+  "topic": "我为什么不再读 AI 写的 markdown",
+  "blog_url": "https://x.com/trq212/status/2052809885763747935",
+  "source": "trq212-html-effectiveness",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

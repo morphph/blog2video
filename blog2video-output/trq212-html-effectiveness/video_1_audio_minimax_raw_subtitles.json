@@ -1,0 +1,682 @@
+[
+  {
+    "text": "Anthropic Claude Code 团队的工程师 Thariq，悄悄换了个工作习惯——他不再让 Claude 写 markdown 了。所有的 plan、spec、PR review、研究报告，全部切到 HTML。",
+    "pronounce_text": "Anthropic Claude Code团队的工程师Thariq，悄悄换了个工作习惯他不再让Claude写markdown了。所有的plan、spec、PR review、研究报告，全部切到HTML。",
+    "time_begin": 0,
+    "time_end": 14656.281179138321,
+    "text_begin": 0,
+    "text_end": 111,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 101
+  },
+  {
+    "text": "这条推贴出来，三天 3.4M 阅读，1.3 万人收藏。",
+    "pronounce_text": "这条推贴出来，三天三点四M阅读，一点三万人收藏。",
+    "time_begin": 14856.281179138321,
+    "time_end": 19957.551020408162,
+    "text_begin": 111,
+    "text_end": 138,
+    "pronounce_text_begin": 101,
+    "pronounce_text_end": 125
+  },
+  {
+    "text": "但这事跟你想的\"格式偏好\"不是一回事。今天不聊怎么让 Claude 写 HTML，只聊一件事——当 AI 越来越强，你怎么不被它替代决策。",
+    "pronounce_text": "但这事跟你想的\"格式偏好\"不是一回事。今天不聊怎么让Claude写HTML，只聊一件事当AI越来越强，你怎么不被它替代决策。",
+    "time_begin": 20124,
+    "time_end": 31239.238095238095,
+    "text_begin": 138,
+    "text_end": 207,
+    "pronounce_text_begin": 125,
+    "pronounce_text_end": 187
+  },
+  {
+    "text": "我读完这篇的时候，第一句让我停下来的不是什么技术论点。是一句很朴素的自白。",
+    "pronounce_text": "我读完这篇的时候，第一句让我停下来的不是什么技术论点。是一句很朴素的自白。",
+    "time_begin": 31392,
+    "time_end": 38408.91609977324,
+    "text_begin": 207,
+    "text_end": 244,
+    "pronounce_text_begin": 187,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "作者说：超过 100 行的 markdown 文件，我自己其实读不进去。我也没办法让公司里任何人去读它。",
+    "pronounce_text": "作者说：超过一百行的markdown文件，我自己其实读不进去。我也没办法让公司里任何人去读它。",
+    "time_begin": 38556,
+    "time_end": 45793.50566893424,
+    "text_begin": 244,
+    "text_end": 296,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 271
+  },
+  {
+    "text": "这句话说的不是 markdown 不好，是 markdown 被 AI 的产能撑爆了。",
+    "pronounce_text": "这句话说的不是markdown不好，是markdown被AI的产能撑爆了。",
+    "time_begin": 45936,
+    "time_end": 50909.560090702944,
+    "text_begin": 296,
+    "text_end": 339,
+    "pronounce_text_begin": 271,
+    "pronounce_text_end": 308
+  },
+  {
+    "text": "以前你写一份 spec，可能两百行就到头了，因为是你一个字一个字敲的。现在 Claude Code 一秒钟给你产一份八百行的实施计划。语法没问题、结构也清楚。",
+    "pronounce_text": "以前你写一份spec，可能两百行就到头了，因为是你一个字一个字敲的。现在Claude Code一秒钟给你产一份八百行的实施计划。语法没问题、结构也清楚。",
+    "time_begin": 51048,
+    "time_end": 62244.50793650794,
+    "text_begin": 339,
+    "text_end": 418,
+    "pronounce_text_begin": 308,
+    "pronounce_text_end": 384
+  },
+  {
+    "text": "但你打开的瞬间，脑子里就一句话：算了，滑到底直接 approved。",
+    "pronounce_text": "但你打开的瞬间，脑子里就一句话：算了，滑到底直接approved。",
+    "time_begin": 62388,
+    "time_end": 68812.80725623583,
+    "text_begin": 418,
+    "text_end": 452,
+    "pronounce_text_begin": 384,
+    "pronounce_text_end": 417
+  },
+  {
+    "text": "这才是问题。不是 AI 写得不好，是你开始不读 AI 写的东西了。",
+    "pronounce_text": "这才是问题。不是AI写得不好，是你开始不读AI写的东西了。",
+    "time_begin": 68976,
+    "time_end": 74204.97959183673,
+    "text_begin": 452,
+    "text_end": 485,
+    "pronounce_text_begin": 417,
+    "pronounce_text_end": 446
+  },
+  {
+    "text": "作者的反应特别简单。换 HTML。",
+    "pronounce_text": "作者的反应特别简单。换HTML。",
+    "time_begin": 74376,
+    "time_end": 78235.0022675737,
+    "text_begin": 485,
+    "text_end": 502,
+    "pronounce_text_begin": 446,
+    "pronounce_text_end": 462
+  },
+  {
+    "text": "听起来像个表面动作对吧？格式而已。但我读到这里有个直觉：能让 Anthropic 内部团队成员悄悄改习惯的事，背后不是\"换个后缀名\"这么简单。",
+    "pronounce_text": "听起来像个表面动作对吧？格式而已。但我读到这里有个直觉：能让Anthropic内部团队成员悄悄改习惯的事，背后不是\"换个后缀名\"这么简单。",
+    "time_begin": 78372,
+    "time_end": 89951.63718820861,
+    "text_begin": 502,
+    "text_end": 573,
+    "pronounce_text_begin": 462,
+    "pronounce_text_end": 531
+  },
+  {
+    "text": "第一个理由是信息密度。markdown 能干的，HTML 都能干。markdown 干不了的，HTML 还能干。表格、SVG 插画、CSS 设计稿、流程图、甚至嵌一个 canvas。",
+    "pronounce_text": "第一个理由是信息密度。markdown能干的，HTML都能干。markdown干不了的，HTML还能干。表格、SVG插画、CSS设计稿、流程图、甚至嵌一个canvas。",
+    "time_begin": 90108,
+    "time_end": 106343.23809523809,
+    "text_begin": 573,
+    "text_end": 664,
+    "pronounce_text_begin": 531,
+    "pronounce_text_end": 615
+  },
+  {
+    "text": "Claude 能读进去的几乎所有信息，HTML 都能高效表达出来。",
+    "pronounce_text": "Claude能读进去的几乎所有信息，HTML都能高效表达出来。",
+    "time_begin": 106543.2380952381,
+    "time_end": 112201.78684807257,
+    "text_begin": 664,
+    "text_end": 697,
+    "pronounce_text_begin": 615,
+    "pronounce_text_end": 646
+  },
+  {
+    "text": "还有一个让我笑出来的反例。在没有 HTML 可用的时候，Claude 会在 markdown 里干什么？画 ASCII 图。更荒诞的是，它会用 unicode 字符去模拟颜色——拿方块字符近似一个色板。",
+    "pronounce_text": "还有一个让我笑出来的反例。在没有HTML可用的时候，Claude会在markdown里干什么？画ASCII图。更荒诞的是，它会用unicode字符去模拟颜色拿方块字符近似一个色板。",
+    "time_begin": 112356,
+    "time_end": 127348.97052154195,
+    "text_begin": 697,
+    "text_end": 798,
+    "pronounce_text_begin": 646,
+    "pronounce_text_end": 736
+  },
+  {
+    "text": "一个被压在 markdown 里的模型，在用字符估计 RGB 值。",
+    "pronounce_text": "一个被压在markdown里的模型，在用字符估计RGB值。",
+    "time_begin": 127512,
+    "time_end": 132102.43083900228,
+    "text_begin": 798,
+    "text_end": 831,
+    "pronounce_text_begin": 736,
+    "pronounce_text_end": 765
+  },
+  {
+    "text": "但我读到第三段才意识到，密度不是真正的论点。",
+    "pronounce_text": "但我读到第三段才意识到，密度不是真正的论点。",
+    "time_begin": 132264,
+    "time_end": 136552.57142857142,
+    "text_begin": 831,
+    "text_end": 853,
+    "pronounce_text_begin": 765,
+    "pronounce_text_end": 787
+  },
+  {
+    "text": "作者很轻地说了一句：你的 spec、报告、PR writeup，如果是 HTML 的，别人真的去读它的概率，会高得多得多。",
+    "pronounce_text": "作者很轻地说了一句：你的spec、报告、PR writeup，如果是HTML的，别人真的去读它的概率，会高得多得多。",
+    "time_begin": 136692,
+    "time_end": 147505.37868480725,
+    "text_begin": 853,
+    "text_end": 914,
+    "pronounce_text_begin": 787,
+    "pronounce_text_end": 845
+  },
+  {
+    "text": "注意这个用词。不是\"读得更高效\"，是\"读这件事真的会发生\"。",
+    "pronounce_text": "注意这个用词。不是\"读得更高效\"，是\"读这件事真的会发生\"。",
+    "time_begin": 147672,
+    "time_end": 153411.81859410432,
+    "text_begin": 914,
+    "text_end": 944,
+    "pronounce_text_begin": 845,
+    "pronounce_text_end": 875
+  },
+  {
+    "text": "markdown 文件你得下载、得有个 viewer、邮件里只能当附件挂着。HTML 你扔到 S3 上，发个链接，同事点开就看，手机上还能响应式地重新排版。",
+    "pronounce_text": "markdown文件你得下载、得有个viewer、邮件里只能当附件挂着。HTML你扔到S三上，发个链接，同事点开就看，手机上还能响应式地重新排版。",
+    "time_begin": 153576,
+    "time_end": 166699.7641723356,
+    "text_begin": 944,
+    "text_end": 1022,
+    "pronounce_text_begin": 875,
+    "pronounce_text_end": 948
+  },
+  {
+    "text": "这一下我才明白他在说什么。他不是在比格式的能力上限，他是在比格式的触达率。一份没人打开的 plan，写得再细致也是零。",
+    "pronounce_text": "这一下我才明白他在说什么。他不是在比格式的能力上限，他是在比格式的触达率。一份没人打开的plan，写得再细致也是零。",
+    "time_begin": 166860,
+    "time_end": 177801.08843537414,
+    "text_begin": 1022,
+    "text_end": 1081,
+    "pronounce_text_begin": 948,
+    "pronounce_text_end": 1006
+  },
+  {
+    "text": "HTML 在他眼里的核心价值，是把\"被阅读\"这件事的概率从 30% 拉到 80%。",
+    "pronounce_text": "HTML在他眼里的核心价值，是把\"被阅读\"这件事的概率从百分之三十拉到百分之八十。",
+    "time_begin": 177948,
+    "time_end": 184883.6462585034,
+    "text_begin": 1081,
+    "text_end": 1122,
+    "pronounce_text_begin": 1006,
+    "pronounce_text_end": 1047
+  },
+  {
+    "text": "接下来这段，是这篇博客真正反直觉的地方。我第一次读的时候没反应过来，回过头才意识到他在讲一件大事。",
+    "pronounce_text": "接下来这段，是这篇博客真正反直觉的地方。我第一次读的时候没反应过来，回过头才意识到他在讲一件大事。",
+    "time_begin": 185040,
+    "time_end": 194495.0113378685,
+    "text_begin": 1122,
+    "text_end": 1171,
+    "pronounce_text_begin": 1047,
+    "pronounce_text_end": 1096
+  },
+  {
+    "text": "我们一直默认 HTML 是个\"输出\"——就是 Claude 写完给你看的成品。是只读的，是终点。",
+    "pronounce_text": "我们一直默认HTML是个\"输出\" 就是Claude写完给你看的成品。是只读的，是终点。",
+    "time_begin": 194652,
+    "time_end": 202690.5941043084,
+    "text_begin": 1171,
+    "text_end": 1219,
+    "pronounce_text_begin": 1096,
+    "pronounce_text_end": 1139
+  },
+  {
+    "text": "但 Thariq 不是这么用的。他让 Claude 给他做一个动画原型，里面带 sliders，带 knobs，让他用鼠标拖着调缓动曲线、调颜色、调时长。",
+    "pronounce_text": "但Thariq不是这么用的。他让Claude给他做一个动画原型，里面带sliders，带knobs，让他用鼠标拖着调缓动曲线、调颜色、调时长。",
+    "time_begin": 202860,
+    "time_end": 216274.0136054422,
+    "text_begin": 1219,
+    "text_end": 1296,
+    "pronounce_text_begin": 1139,
+    "pronounce_text_end": 1210
+  },
+  {
+    "text": "调到他满意了，按一个 \"copy as prompt\" 按钮，所有当前参数被打包成一段 prompt，他粘回 Claude Code 里，让 Claude 把这套配置写进真正的产品代码。",
+    "pronounce_text": "调到他满意了，按一个\"copy as prompt\" 按钮，所有当前参数被打包成一段prompt，他粘回Claude Code里，让Claude把这套配置写进真正的产品代码。",
+    "time_begin": 216432,
+    "time_end": 229718.3038548753,
+    "text_begin": 1296,
+    "text_end": 1389,
+    "pronounce_text_begin": 1210,
+    "pronounce_text_end": 1297
+  },
+  {
+    "text": "你看出来了吗。HTML 在这里根本不是输出格式。它是 Claude Code 的输入界面。",
+    "pronounce_text": "你看出来了吗。HTML在这里根本不是输出格式。它是Claude Code的输入界面。",
+    "time_begin": 229860,
+    "time_end": 236540.22675736962,
+    "text_begin": 1389,
+    "text_end": 1434,
+    "pronounce_text_begin": 1297,
+    "pronounce_text_end": 1339
+  },
+  {
+    "text": "这就把整个讨论维度抬起来了。chat 输入框打字这种事，能描述的状态太有限了。颜色、缓动、cron 表达式、正则、裁剪区域——这些东西用嘴说说不清楚。",
+    "pronounce_text": "这就把整个讨论维度抬起来了。chat输入框打字这种事，能描述的状态太有限了。颜色、缓动、cron表达式、正则、裁剪区域这些东西用嘴说说不清楚。",
+    "time_begin": 236700,
+    "time_end": 250671.2925170068,
+    "text_begin": 1434,
+    "text_end": 1509,
+    "pronounce_text_begin": 1339,
+    "pronounce_text_end": 1410
+  },
+  {
+    "text": "但你给 AI 一个一次性的可视化界面去操作，操作完再把状态序列化回 prompt，整个反馈环就闭合了。",
+    "pronounce_text": "但你给AI一个一次性的可视化界面去操作，操作完再把状态序列化回prompt，整个反馈环就闭合了。",
+    "time_begin": 250812,
+    "time_end": 259454.31292517006,
+    "text_begin": 1509,
+    "text_end": 1560,
+    "pronounce_text_begin": 1410,
+    "pronounce_text_end": 1458
+  },
+  {
+    "text": "HTML 不是更好看的 markdown。HTML 是 chat 输入框的外接 GUI。",
+    "pronounce_text": "HTML不是更好看的markdown。HTML是chat输入框的外接GUI。",
+    "time_begin": 259596,
+    "time_end": 265718.94784580497,
+    "text_begin": 1560,
+    "text_end": 1604,
+    "pronounce_text_begin": 1458,
+    "pronounce_text_end": 1496
+  },
+  {
+    "text": "顺着这个思路，作者抛出了一个概念：throwaway editor，一次性编辑器。",
+    "pronounce_text": "顺着这个思路，作者抛出了一个概念：throwaway editor，一次性编辑器。",
+    "time_begin": 265860,
+    "time_end": 272366.0770975057,
+    "text_begin": 1604,
+    "text_end": 1645,
+    "pronounce_text_begin": 1496,
+    "pronounce_text_end": 1537
+  },
+  {
+    "text": "举两个例子。30 个 Linear ticket 要重排优先级，他让 Claude 做一个 HTML 文件，每个 ticket 是一张可拖拽的卡片，分到 Now、Next、Later、Cut 四列里。",
+    "pronounce_text": "举两个例子。三十个Linear ticket要重排优先级，他让Claude做一个HTML文件，每个ticket是一张可拖拽的卡片，分到Now、Next、Later、Cut四列里。",
+    "time_begin": 272520,
+    "time_end": 285725.03401360544,
+    "text_begin": 1645,
+    "text_end": 1745,
+    "pronounce_text_begin": 1537,
+    "pronounce_text_end": 1626
+  },
+  {
+    "text": "AI 先按猜测排好，他用鼠标调整，最后一个 \"copy as markdown\" 按钮，把最终顺序连同每档的一句话理由导出来。",
+    "pronounce_text": "AI先按猜测排好，他用鼠标调整，最后一个\"copy as markdown\" 按钮，把最终顺序连同每档的一句话理由导出来。",
+    "time_begin": 285876,
+    "time_end": 296480.39909297053,
+    "text_begin": 1745,
+    "text_end": 1808,
+    "pronounce_text_begin": 1626,
+    "pronounce_text_end": 1687
+  },
+  {
+    "text": "还有一个。系统 prompt 调优界面。左边可编辑的 prompt，变量槽位高亮。右边三个示例输入，模板实时渲染结果。底部一个 token 计数器、一个 copy 按钮。",
+    "pronounce_text": "还有一个。系统prompt调优界面。左边可编辑的prompt，变量槽位高亮。右边三个示例输入，模板实时渲染结果。底部一个token计数器、一个copy按钮。",
+    "time_begin": 296640,
+    "time_end": 311470.43083900225,
+    "text_begin": 1808,
+    "text_end": 1893,
+    "pronounce_text_begin": 1687,
+    "pronounce_text_end": 1765
+  },
+  {
+    "text": "注意这个限定词。不是产品。不是可复用工具。不是要测试、要部署、要维护的东西。就是为这一份数据、这一次任务，做一个用完就扔的界面。",
+    "pronounce_text": "注意这个限定词。不是产品。不是可复用工具。不是要测试、要部署、要维护的东西。就是为这一份数据、这一次任务，做一个用完就扔的界面。",
+    "time_begin": 311616,
+    "time_end": 325807.8820861678,
+    "text_begin": 1893,
+    "text_end": 1957,
+    "pronounce_text_begin": 1765,
+    "pronounce_text_end": 1829
+  },
+  {
+    "text": "工程文化里我们被训练了几十年的\"DRY\"——不要重复造轮子——在这里被反过来用了。当生成成本接近零的时候，DRY 这个原则的前提就消失了。",
+    "pronounce_text": "工程文化里我们被训练了几十年的\"DRY\" 不要重复造轮子在这里被反过来用了。当生成成本接近零的时候，DRY这个原则的前提就消失了。",
+    "time_begin": 325944,
+    "time_end": 339659.873015873,
+    "text_begin": 1957,
+    "text_end": 2026,
+    "pronounce_text_begin": 1829,
+    "pronounce_text_end": 1894
+  },
+  {
+    "text": "一个能在两分钟内被生成出来的 UI，做成可复用的反而更贵。",
+    "pronounce_text": "一个能在两分钟内被生成出来的UI，做成可复用的反而更贵。",
+    "time_begin": 339859.873015873,
+    "time_end": 345425.5419501134,
+    "text_begin": 2026,
+    "text_end": 2055,
+    "pronounce_text_begin": 1894,
+    "pronounce_text_end": 1922
+  },
+  {
+    "text": "throwaway editor 是个新的设计 primitive。它只在 AI 时代成立。",
+    "pronounce_text": "throwaway editor是个新的设计primitive。它只在AI时代成立。",
+    "time_begin": 345564,
+    "time_end": 351477.9682539682,
+    "text_begin": 2055,
+    "text_end": 2101,
+    "pronounce_text_begin": 1922,
+    "pronounce_text_end": 1964
+  },
+  {
+    "text": "中间还有个隐藏问题，作者顺手答了。",
+    "pronounce_text": "中间还有个隐藏问题，作者顺手答了。",
+    "time_begin": 351648,
+    "time_end": 354694.30385487527,
+    "text_begin": 2101,
+    "text_end": 2118,
+    "pronounce_text_begin": 1964,
+    "pronounce_text_end": 1981
+  },
+  {
+    "text": "你可能会想，那为什么不在 ClaudeAI 网页版或 Claude Design 里做这些 HTML？为什么非得是 Claude Code？",
+    "pronounce_text": "你可能会想，那为什么不在ClaudeAI网页版或Claude Design里做这些HTML？为什么非得是Claude Code？",
+    "time_begin": 354852,
+    "time_end": 362855.7641723356,
+    "text_begin": 2118,
+    "text_end": 2188,
+    "pronounce_text_begin": 1981,
+    "pronounce_text_end": 2045
+  },
+  {
+    "text": "他给了一个很直接的答案：context ingestion。Claude Code 能读你的 file system、你的 MCP（比如 Slack、Linear）、你的浏览器、你的 git history。",
+    "pronounce_text": "他给了一个很直接的答案：context ingestion。Claude Code能读你的file system、你的MCP，比如Slack、Linear、你的浏览器、你的git history。",
+    "time_begin": 363024,
+    "time_end": 375845.90476190473,
+    "text_begin": 2188,
+    "text_end": 2292,
+    "pronounce_text_begin": 2045,
+    "pronounce_text_end": 2143
+  },
+  {
+    "text": "听起来像顺嘴一提，但这其实是分水岭。一个无根的 HTML 设计稿和一个带着你整个项目语境的 HTML 报告，是两个东西。他写这篇文章里那些示意图，是怎么来的？",
+    "pronounce_text": "听起来像顺嘴一提，但这其实是分水岭。一个无根的HTML设计稿和一个带着你整个项目语境的HTML报告，是两个东西。他写这篇文章里那些示意图，是怎么来的？",
+    "time_begin": 375984,
+    "time_end": 390814.43083900225,
+    "text_begin": 2292,
+    "text_end": 2371,
+    "pronounce_text_begin": 2143,
+    "pronounce_text_end": 2218
+  },
+  {
+    "text": "他让 Claude Code 翻遍他的代码文件夹，把所有以前生成过的 HTML 文件都找出来、分类、归组，然后做了一个总览页。这事 ClaudeAI 干不了——它根本读不到他的本地文件。",
+    "pronounce_text": "他让Claude Code翻遍他的代码文件夹，把所有以前生成过的HTML文件都找出来、分类、归组，然后做了一个总览页。这事ClaudeAI干不了它根本读不到他的本地文件。",
+    "time_begin": 390960,
+    "time_end": 405407.3015873016,
+    "text_begin": 2371,
+    "text_end": 2464,
+    "pronounce_text_begin": 2218,
+    "pronounce_text_end": 2303
+  },
+  {
+    "text": "context 是 Claude Code 跟其他 Claude 产品的根本差别。HTML 在这里不是终点，是 context 流转的载体。",
+    "pronounce_text": "context是Claude Code跟其他Claude产品的根本差别。HTML在这里不是终点，是context流转的载体。",
+    "time_begin": 405576,
+    "time_end": 414938.1315192744,
+    "text_begin": 2464,
+    "text_end": 2534,
+    "pronounce_text_begin": 2303,
+    "pronounce_text_end": 2365
+  },
+  {
+    "text": "读到这里我必须暂停一下夸节奏。因为这篇博客最让我尊重的部分，是作者主动列出来的代价。",
+    "pronounce_text": "读到这里我必须暂停一下夸节奏。因为这篇博客最让我尊重的部分，是作者主动列出来的代价。",
+    "time_begin": 415080,
+    "time_end": 422445.2154195011,
+    "text_begin": 2534,
+    "text_end": 2576,
+    "pronounce_text_begin": 2365,
+    "pronounce_text_end": 2407
+  },
+  {
+    "text": "第一，慢。HTML 比 markdown 生成慢 2 到 4 倍。这是每次等待从 30 秒变成两分钟。作者直接说 results are worth it，但他没装作没有这个成本。",
+    "pronounce_text": "第一，慢。HTML比markdown生成慢二到四倍。这是每次等待从三十秒变成两分钟。作者直接说results are worth it，但他没装作没有这个成本。",
+    "time_begin": 422604,
+    "time_end": 435855.4739229025,
+    "text_begin": 2576,
+    "text_end": 2666,
+    "pronounce_text_begin": 2407,
+    "pronounce_text_end": 2487
+  },
+  {
+    "text": "第二，版本控制是噩梦。HTML 的 diff 噪声极大，你改一个字，整块标签可能重排。git diff 看不出实际改了什么。",
+    "pronounce_text": "第二，版本控制是噩梦。HTML的diff噪声极大，你改一个字，整块标签可能重排。git diff看不出实际改了什么。",
+    "time_begin": 435996,
+    "time_end": 447111.2380952381,
+    "text_begin": 2666,
+    "text_end": 2728,
+    "pronounce_text_begin": 2487,
+    "pronounce_text_end": 2545
+  },
+  {
+    "text": "第三，token 消耗高得多。HTML 标签开销比 markdown 大一个数量级。他的缓解理由是 Opus 4.7 的 1MM context window 大到让这点开销不再敏感。",
+    "pronounce_text": "第三，token消耗高得多。HTML标签开销比markdown大一个数量级。他的缓解理由是Opus四点七的一毫米context window大到让这点开销不再敏感。",
+    "time_begin": 447264,
+    "time_end": 460550.30385487527,
+    "text_begin": 2728,
+    "text_end": 2820,
+    "pronounce_text_begin": 2545,
+    "pronounce_text_end": 2627
+  },
+  {
+    "text": "但你听得出来，这其实是把成本转嫁给了模型容量。",
+    "pronounce_text": "但你听得出来，这其实是把成本转嫁给了模型容量。",
+    "time_begin": 460750.30385487527,
+    "time_end": 465120.14512471657,
+    "text_begin": 2820,
+    "text_end": 2843,
+    "pronounce_text_begin": 2627,
+    "pronounce_text_end": 2650
+  },
+  {
+    "text": "还有第四，默认产出可能丑。需要你自己建一份公司内部的设计系统 HTML 当参考。",
+    "pronounce_text": "还有第四，默认产出可能丑。需要你自己建一份公司内部的设计系统HTML当参考。",
+    "time_begin": 465264,
+    "time_end": 473476.7437641723,
+    "text_begin": 2843,
+    "text_end": 2883,
+    "pronounce_text_begin": 2650,
+    "pronounce_text_end": 2688
+  },
+  {
+    "text": "他完全可以把 HTML 写成一个新发现的银弹。但他没有。他在文章里几次主动说\"我有点担心有人把这个变成一个 /html skill\"——他反对工具化，反对把这件事简化成一个咒语。这是很成熟的工程姿态。",
+    "pronounce_text": "他完全可以把HTML写成一个新发现的银弹。但他没有。他在文章里几次主动说\"我有点担心有人把这个变成一个，html skill\" 他反对工具化，反对把这件事简化成一个咒语。这是很成熟的工程姿态。",
+    "time_begin": 473616,
+    "time_end": 490536.2267573696,
+    "text_begin": 2883,
+    "text_end": 2983,
+    "pronounce_text_begin": 2688,
+    "pronounce_text_end": 2784
+  },
+  {
+    "text": "读到 FAQ 我以为博客快结束了。结果在最后一节，作者轻描淡写地点破了真正的核心。",
+    "pronounce_text": "读到FAQ我以为博客快结束了。结果在最后一节，作者轻描淡写地点破了真正的核心。",
+    "time_begin": 490680,
+    "time_end": 498463.1746031746,
+    "text_begin": 2983,
+    "text_end": 3024,
+    "pronounce_text_begin": 2784,
+    "pronounce_text_end": 2823
+  },
+  {
+    "text": "他说，所有上面这些话归根到底是想说：用 HTML 让我感觉自己 in the loop with Claude。",
+    "pronounce_text": "他说，所有上面这些话归根到底是想说：用HTML让我感觉自己in the loop with Claude。",
+    "time_begin": 498600,
+    "time_end": 506255.4648526077,
+    "text_begin": 3024,
+    "text_end": 3080,
+    "pronounce_text_begin": 2823,
+    "pronounce_text_end": 2876
+  },
+  {
+    "text": "他原话：我曾经开始害怕，因为我不再深入读那些 plan，我就只能放手让 Claude 自己做选择。",
+    "pronounce_text": "他原话：我曾经开始害怕，因为我不再深入读那些plan，我就只能放手让Claude自己做选择。",
+    "time_begin": 506412,
+    "time_end": 514415.7641723356,
+    "text_begin": 3080,
+    "text_end": 3129,
+    "pronounce_text_begin": 2876,
+    "pronounce_text_end": 2922
+  },
+  {
+    "text": "我读到这一句的时候，前面所有的论点全部对上了。",
+    "pronounce_text": "我读到这一句的时候，前面所有的论点全部对上了。",
+    "time_begin": 514584,
+    "time_end": 518489.44217687077,
+    "text_begin": 3129,
+    "text_end": 3152,
+    "pronounce_text_begin": 2922,
+    "pronounce_text_end": 2945
+  },
+  {
+    "text": "100 行 markdown 没人读，是表象。读不进去意味着什么？意味着你按 approved 的时候根本不知道在批准什么。这等于把判断权外包给了 AI。",
+    "pronounce_text": "一百行markdown没人读，是表象。读不进去意味着什么？意味着你按approved的时候根本不知道在批准什么。这等于把判断权外包给了AI。",
+    "time_begin": 518652,
+    "time_end": 530835.3560090703,
+    "text_begin": 3152,
+    "text_end": 3229,
+    "pronounce_text_begin": 2945,
+    "pronounce_text_end": 3015
+  },
+  {
+    "text": "HTML 信息密度高、好分享、好交互、有 sliders 让你调参——这些机制全部指向同一件事：把人重新拉回那个决策的瞬间。让你看得见、点得动、调得了、改得动。",
+    "pronounce_text": "HTML信息密度高、好分享、好交互、有sliders让你调参这些机制全部指向同一件事：把人重新拉回那个决策的瞬间。让你看得见、点得动、调得了、改得动。",
+    "time_begin": 531000,
+    "time_end": 546724.3990929705,
+    "text_begin": 3229,
+    "text_end": 3309,
+    "pronounce_text_begin": 3015,
+    "pronounce_text_end": 3090
+  },
+  {
+    "text": "throwaway editor 的 \"copy as prompt\" 按钮，不是个 UI 巧思，是个权力移交的动作。AI 准备好初稿，你来做最后一道判断，再把判断推回去。",
+    "pronounce_text": "throwaway editor的\"copy as prompt\" 按钮，不是个UI巧思，是个权力移交的动作。AI准备好初稿，你来做最后一道判断，再把判断推回去。",
+    "time_begin": 546876,
+    "time_end": 559651.4648526077,
+    "text_begin": 3309,
+    "text_end": 3395,
+    "pronounce_text_begin": 3090,
+    "pronounce_text_end": 3171
+  },
+  {
+    "text": "这不是格式之争。这是一个工程师在跟 AI 协作的过程里，对自己说：我不能只剩下按 approved 的功能。",
+    "pronounce_text": "这不是格式之争。这是一个工程师在跟AI协作的过程里，对自己说：我不能只剩下按approved的功能。",
+    "time_begin": 559800,
+    "time_end": 569162.1315192743,
+    "text_begin": 3395,
+    "text_end": 3449,
+    "pronounce_text_begin": 3171,
+    "pronounce_text_end": 3221
+  },
+  {
+    "text": "我读完这篇博客最大的感受是：它表面在讲 HTML，真正在讲一种 AI 时代的人本主义焦虑。",
+    "pronounce_text": "我读完这篇博客最大的感受是：它表面在讲HTML，真正在讲一种AI时代的人本主义焦虑。",
+    "time_begin": 569304,
+    "time_end": 577180.0544217688,
+    "text_begin": 3449,
+    "text_end": 3494,
+    "pronounce_text_begin": 3221,
+    "pronounce_text_end": 3263
+  },
+  {
+    "text": "模型变得比人写得快、想得宽、覆盖得全的时候，一个工程师真正需要捍卫的，不是写代码的能力，是 stay in the loop 的能力——是仍然在驾驶座上的资格。",
+    "pronounce_text": "模型变得比人写得快、想得宽、覆盖得全的时候，一个工程师真正需要捍卫的，不是写代码的能力，是stay in the loop的能力是仍然在驾驶座上的资格。",
+    "time_begin": 577332,
+    "time_end": 589178.6666666666,
+    "text_begin": 3494,
+    "text_end": 3574,
+    "pronounce_text_begin": 3263,
+    "pronounce_text_end": 3339
+  },
+  {
+    "text": "而 stay in the loop 不是靠喊口号实现的，是靠每一个具体的小动作。比如选一个让你愿意打开的格式。比如做一个让你能用鼠标干预的界面。比如在 plan 里嵌入你能调的旋钮。",
+    "pronounce_text": "而stay in the loop不是靠喊口号实现的，是靠每一个具体的小动作。比如选一个让你愿意打开的格式。比如做一个让你能用鼠标干预的界面。比如在plan里嵌入你能调的旋钮。",
+    "time_begin": 589320,
+    "time_end": 603593.1519274376,
+    "text_begin": 3574,
+    "text_end": 3666,
+    "pronounce_text_begin": 3339,
+    "pronounce_text_end": 3427
+  },
+  {
+    "text": "比如在每个一次性 UI 末尾放一个 \"copy as prompt\" 按钮，把权力交还给你自己。",
+    "pronounce_text": "比如在每个一次性UI末尾放一个\"copy as prompt\" 按钮，把权力交还给你自己。",
+    "time_begin": 603756,
+    "time_end": 610389.7868480725,
+    "text_begin": 3666,
+    "text_end": 3714,
+    "pronounce_text_begin": 3427,
+    "pronounce_text_end": 3472
+  },
+  {
+    "text": "100 行的 markdown 让你滑到底直接 approved，HTML 让你停下来读一段。这两秒的差别，就是你和 AI 之间谁在做决策的差别。",
+    "pronounce_text": "一百行的markdown让你滑到底直接approved，HTML让你停下来读一段。这两秒的差别，就是你和AI之间谁在做决策的差别。",
+    "time_begin": 610560,
+    "time_end": 623126.485260771,
+    "text_begin": 3714,
+    "text_end": 3787,
+    "pronounce_text_begin": 3472,
+    "pronounce_text_end": 3537
+  },
+  {
+    "text": "当 AI 写得比你读得快，\"读得进\"就是你保留判断权的最后一道闸。HTML 不是更好的输出格式，HTML 是把人重新按回驾驶座的机制。",
+    "pronounce_text": "当AI写得比你读得快，\"读得进\"就是你保留判断权的最后一道闸。HTML不是更好的输出格式，HTML是把人重新按回驾驶座的机制。",
+    "time_begin": 623268,
+    "time_end": 635788.045351474,
+    "text_begin": 3787,
+    "text_end": 3854,
+    "pronounce_text_begin": 3537,
+    "pronounce_text_end": 3600
+  },
+  {
+    "text": "回过头看，这件事对我们任何一个跟 AI 协作的人都成立。不是只有 Claude Code 团队在面对这个问题。",
+    "pronounce_text": "回过头看，这件事对我们任何一个跟AI协作的人都成立。不是只有Claude Code团队在面对这个问题。",
+    "time_begin": 635940,
+    "time_end": 644501.0430839002,
+    "text_begin": 3854,
+    "text_end": 3909,
+    "pronounce_text_begin": 3600,
+    "pronounce_text_end": 3651
+  },
+  {
+    "text": "你让 ChatGPT 写一个长方案、让 Cursor 重构一大块代码、让 Gemini 做一份调研——只要 AI 的产能超过了你阅读和判断的速度，你就开始面临同一个分岔口。",
+    "pronounce_text": "你让ChatGPT写一个长方案、让Cursor重构一大块代码、让Gemini做一份调研只要AI的产能超过了你阅读和判断的速度，你就开始面临同一个分岔口。",
+    "time_begin": 644652,
+    "time_end": 656963.0657596372,
+    "text_begin": 3909,
+    "text_end": 3995,
+    "pronounce_text_begin": 3651,
+    "pronounce_text_end": 3727
+  },
+  {
+    "text": "下次让 AI 给你产 plan 的时候，问自己一个问题：这个东西我会真的打开来读吗？如果答案是不会，那别管它写得多好——你已经把判断权交出去了。",
+    "pronounce_text": "下次让AI给你产plan的时候，问自己一个问题：这个东西我会真的打开来读吗？如果答案是不会，那别管它写得多好你已经把判断权交出去了。",
+    "time_begin": 657108,
+    "time_end": 668559.9274376418,
+    "text_begin": 3995,
+    "text_end": 4067,
+    "pronounce_text_begin": 3727,
+    "pronounce_text_end": 3793
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 668700,
+    "time_end": 674312.1088435374,
+    "text_begin": 4067,
+    "text_end": 4094,
+    "pronounce_text_begin": 3793,
+    "pronounce_text_end": 3819
+  }
+]

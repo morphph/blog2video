@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(239, 68, 68, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .quote {
+      font-size: 70px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 48px;
+      letter-spacing: -1px;
+    }
+    .quote .red { color: #EF4444; }
+    .quote .y { color: #F59E0B; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #EF4444;
+      margin-bottom: 40px;
+      border-radius: 2px;
+    }
+    .desc {
+      font-size: 36px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.5;
+      max-width: 880px;
+    }
+    .desc .em { color: #F59E0B; font-weight: 800; }
+    .desc .strike {
+      color: #6B7280;
+      text-decoration: line-through;
+      text-decoration-color: #EF4444;
+      text-decoration-thickness: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">精准诊断</div>
+    <div class="quote">
+      AI 内容像 AI<br>
+      不是<span class="strike">模型差</span><br>
+      是<span class="red">人发了第一稿</span>
+    </div>
+    <div class="divider"></div>
+    <div class="desc">
+      第一稿在哪个模型出来都<span class="em">差不多</span><br>
+      差别在于发布前<br>
+      有没有<span class="em">评判机制</span>再筛一遍
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(16, 185, 129, 0.08), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+      max-width: 900px;
+    }
+    .title .y { color: #F59E0B; }
+    .compare {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 36px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .col.exec { border-left: 4px solid #10B981; }
+    .col.judge { border-left: 4px solid #EF4444; }
+    .col .label {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .col.exec .label { color: #10B981; }
+    .col.judge .label { color: #EF4444; }
+    .col .pct {
+      font-size: 88px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .col.exec .pct { color: #10B981; }
+    .col.judge .pct { color: #EF4444; }
+    .col .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .conclusion {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 900px;
+      width: 100%;
+      text-align: left;
+    }
+    .conclusion .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .conclusion .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .conclusion .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">不是连续光谱</div>
+    <div class="title">
+      <span class="y">70-80%</span> 不是谦虚<br>
+      是两个区域的拼接
+    </div>
+    <div class="compare">
+      <div class="col exec">
+        <div class="label">执行域</div>
+        <div class="pct">100%</div>
+        <div class="desc">格式 / 整理 / 跑量<br>真正 100% 替代</div>
+      </div>
+      <div class="col judge">
+        <div class="label">判断域</div>
+        <div class="pct">0%</div>
+        <div class="desc">立场 / 共情 / 创造<br>0% 替代</div>
+      </div>
+    </div>
+    <div class="conclusion">
+      <div class="label">SOLO FOUNDER 阶段最妙的点</div>
+      <div class="text">
+        本来就有<span class="em">相当大一块是纯执行</span>——<br>
+        所以 70-80 是论点成立的<span class="em">核心</span>，不是局限
+      </div>
+    </div>
+  </div>
+</body>
+</html>

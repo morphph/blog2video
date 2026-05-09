@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(16, 185, 129, 0.08), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .step {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .step .day {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      min-width: 110px;
+      padding-top: 4px;
+    }
+    .step .body { flex: 1; }
+    .step .who {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .step .what {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .step .what .k { color: #F59E0B; }
+    .conclusion {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .conclusion .em { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">一条协作链</div>
+    <div class="title">
+      情报进 <span class="y">knowledge base</span><br>
+      下游自己读到
+    </div>
+    <div class="timeline">
+      <div class="step">
+        <div class="day">周一</div>
+        <div class="body">
+          <div class="who">研究员 agent</div>
+          <div class="what">扫到竞品发新功能 → 写入 <span class="k">base</span></div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="day">周二早</div>
+        <div class="body">
+          <div class="who">内容 agent</div>
+          <div class="what">读到情报 → 三篇回应：分析 / 短视频 / newsletter</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="day">同时</div>
+        <div class="body">
+          <div class="who">运营 agent</div>
+          <div class="what">起草客户沟通邮件 → 等你早上 review</div>
+        </div>
+      </div>
+    </div>
+    <div class="conclusion">
+      不是三把瑞士军刀<br>
+      是一个会<span class="em">传话的团队</span>
+    </div>
+  </div>
+</body>
+</html>

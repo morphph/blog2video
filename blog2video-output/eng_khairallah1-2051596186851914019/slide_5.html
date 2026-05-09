@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(139, 92, 246, 0.12), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .quote {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+    .quote .p { color: #8B5CF6; }
+    .quote .y { color: #F59E0B; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #8B5CF6;
+      margin-bottom: 40px;
+      border-radius: 2px;
+    }
+    .principle {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 36px 36px;
+      max-width: 900px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .principle .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .principle .text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .principle .text .em { color: #F59E0B; font-weight: 800; }
+    .principle .text .red { color: #EF4444; font-weight: 800; }
+    .note {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.5;
+      max-width: 880px;
+    }
+    .note .em { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">从工具集到团队</div>
+    <div class="quote">
+      不是 agent 数量<br>
+      是 <span class="p">memory 拓扑</span>
+    </div>
+    <div class="divider"></div>
+    <div class="principle">
+      <div class="label">CORE INSIGHT</div>
+      <div class="text">
+        三个 agent <span class="em">共享一份记忆</span><br>
+        远比五个 agent <span class="red">各自独立</span>有用
+      </div>
+    </div>
+    <div class="note">
+      工程的真正起点：<br>
+      共享记忆的 <span class="em">schema</span> 长什么样
+    </div>
+  </div>
+</body>
+</html>

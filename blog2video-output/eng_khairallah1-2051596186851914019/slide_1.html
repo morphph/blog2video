@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(239, 68, 68, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 78%, rgba(139, 92, 246, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 56px;
+    }
+    .headline {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -1px;
+      margin-bottom: 56px;
+    }
+    .headline .red { color: #EF4444; }
+    .headline .yellow { color: #F59E0B; }
+    .sub {
+      font-size: 36px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      font-weight: 600;
+      max-width: 880px;
+    }
+    .sub .em { color: #F59E0B; font-weight: 800; }
+    .sub .k { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">精读AI · Agent 架构</div>
+    <div class="headline">
+      三个 agent 各跑各的<br>
+      只是<span class="red">工具集</span><br>
+      加上哪条线<br>
+      才是<span class="yellow">团队</span>？
+    </div>
+    <div class="sub">
+      不聊每个 agent 装哪些 <span class="k">MCP</span><br>
+      只聊<span class="em">关键机制</span>在哪两条线上
+    </div>
+  </div>
+</body>
+</html>

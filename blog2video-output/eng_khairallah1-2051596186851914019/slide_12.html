@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.12), transparent 55%),
+        radial-gradient(circle at 78% 78%, rgba(245, 158, 11, 0.10), transparent 55%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+      max-width: 920px;
+    }
+    .title .y { color: #F59E0B; }
+    .title .p { color: #8B5CF6; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 36px;
+    }
+    .row {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .row.r1 { border-left: 4px solid #8B5CF6; }
+    .row.r2 { border-left: 4px solid #3B82F6; }
+    .row.r3 { border-left: 4px solid #F59E0B; }
+    .row .num {
+      font-size: 42px;
+      font-weight: 800;
+      min-width: 56px;
+    }
+    .row.r1 .num { color: #8B5CF6; }
+    .row.r2 .num { color: #3B82F6; }
+    .row.r3 .num { color: #F59E0B; }
+    .row .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .row .text .em { color: #F59E0B; font-weight: 800; }
+    .row .text .red { color: #EF4444; font-weight: 800; }
+    .closer {
+      font-size: 32px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.5;
+      max-width: 880px;
+    }
+    .closer .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">三条带回家的判断</div>
+    <div class="title">
+      不是雇人，是<span class="p">建人</span><br>
+      但建成<span class="y">团队</span>要靠两条线
+    </div>
+    <div class="list">
+      <div class="row r1">
+        <div class="num">01</div>
+        <div class="text">先想清<span class="em">共享记忆 schema</span>，再写第一个 prompt——<span class="em">拓扑决定上限</span></div>
+      </div>
+      <div class="row r2">
+        <div class="num">02</div>
+        <div class="text">内容 agent 必须<span class="em">分写和评</span>——否则只是又一台第一稿发布机</div>
+      </div>
+      <div class="row r3">
+        <div class="num">03</div>
+        <div class="text">把 <span class="em">70-80%</span> 记心里——哪些可以交，哪些<span class="red">必须自己做</span></div>
+      </div>
+    </div>
+    <div class="closer">
+      AI 世界很吵<br>
+      <span class="em">精读一篇，胜过刷一百条</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(245, 158, 11, 0.08), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .roles {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .role {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .role.write { border-left: 4px solid #3B82F6; }
+    .role.judge { border-left: 4px solid #F59E0B; }
+    .role .label {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .role.write .label { color: #3B82F6; }
+    .role.judge .label { color: #F59E0B; }
+    .role .name {
+      font-size: 36px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .role .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .gates {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .gates .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+    .gates .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 32px;
+      text-align: left;
+    }
+    .gates .item {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .gates .item .en { color: #F59E0B; }
+    .gates .item .zh { color: #B0B0CC; font-weight: 600; font-size: 22px; }
+    .footer {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .footer .red { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">内容 agent 的核心</div>
+    <div class="title">
+      把<span class="y">写</span>和<span class="y">评判</span>拆成两个角色
+    </div>
+    <div class="roles">
+      <div class="role write">
+        <div class="label">AGENT A</div>
+        <div class="name">写</div>
+        <div class="desc">出第一稿</div>
+      </div>
+      <div class="role judge">
+        <div class="label">AGENT B</div>
+        <div class="name">判断</div>
+        <div class="desc">不达标自动打回</div>
+      </div>
+    </div>
+    <div class="gates">
+      <div class="label">QUALITY GATES · 四维评分</div>
+      <div class="grid">
+        <div class="item"><span class="en">voice match</span> <span class="zh">语气像不像你</span></div>
+        <div class="item"><span class="en">hook strength</span> <span class="zh">开头抓不抓人</span></div>
+        <div class="item"><span class="en">value density</span> <span class="zh">信息密度够不够</span></div>
+        <div class="item"><span class="en">originality</span> <span class="zh">有没有原创视角</span></div>
+      </div>
+    </div>
+    <div class="footer">
+      跑到所有维度都达标为止——<br>
+      不是<span class="red">会写</span>，是<span class="red">会判断写得好不好</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(59, 130, 246, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 36px;
+    }
+    .title .b { color: #3B82F6; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #3B82F6;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .card .head {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .card .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .card .head .k { color: #8B5CF6; }
+    .card .head .y { color: #F59E0B; }
+    .footer {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .footer .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">作者的应对</div>
+    <div class="title">
+      换 <span class="b">HTML</span>
+    </div>
+    <div class="divider"></div>
+    <div class="cards">
+      <div class="card">
+        <div class="head">表格 / <span class="k">SVG</span> / 流程图</div>
+        <div class="desc">markdown 能干的，HTML 都能干</div>
+      </div>
+      <div class="card">
+        <div class="head">CSS 设计稿 / 嵌 canvas</div>
+        <div class="desc">markdown 干不了的，HTML 还能干</div>
+      </div>
+      <div class="card">
+        <div class="head">荒诞反例：<span class="y">ASCII 估色</span></div>
+        <div class="desc">没 HTML 时 Claude 用方块字符模拟 RGB</div>
+      </div>
+    </div>
+    <div class="footer">
+      被压在 markdown 里的模型<br>
+      在用<span class="em">字符近似颜色</span>
+    </div>
+  </div>
+</body>
+</html>

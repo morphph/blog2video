@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(59, 130, 246, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .quote {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+    .quote .b { color: #3B82F6; }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+    .divider {
+      width: 80px; height: 4px;
+      background: #3B82F6;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 20px 26px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .card .icon {
+      font-size: 28px;
+      color: #3B82F6;
+      font-weight: 900;
+      min-width: 36px;
+    }
+    .card .body {
+      flex: 1;
+    }
+    .card .head {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .card .head .k { color: #8B5CF6; }
+    .card .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .footer {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .footer .em { color: #3B82F6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">为什么必须是 Claude Code</div>
+    <div class="quote">
+      <span class="b">context</span> 是分水岭
+    </div>
+    <div class="subtitle">不是 ClaudeAI / Claude Design</div>
+    <div class="divider"></div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">▸</div>
+        <div class="body">
+          <div class="head">file system</div>
+          <div class="desc">本地文件、代码、历史 HTML</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">▸</div>
+        <div class="body">
+          <div class="head"><span class="k">MCP</span>：Slack / Linear</div>
+          <div class="desc">真实工作语境直接接进来</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">▸</div>
+        <div class="body">
+          <div class="head">浏览器 / git history</div>
+          <div class="desc">无根设计稿 vs 带语境报告</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      HTML 不是终点<br>
+      是 <span class="em">context 流转</span>的载体
+    </div>
+  </div>
+</body>
+</html>

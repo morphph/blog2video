@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.12), transparent 55%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .headline {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+    }
+    .headline .y { color: #F59E0B; }
+    .headline .g { color: #10B981; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #F59E0B;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .ask {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .ask .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .ask .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .ask .text .em { color: #F59E0B; font-weight: 800; }
+    .closing {
+      font-size: 30px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.5;
+      max-width: 880px;
+    }
+    .closing .em { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">不只是 Claude Code</div>
+    <div class="headline">
+      读得进 = <span class="g">留在驾驶座</span>
+    </div>
+    <div class="divider"></div>
+    <div class="ask">
+      <div class="label">下一次让 AI 产 plan，问自己</div>
+      <div class="text">
+        这个东西<br>
+        我会<span class="em">真的打开来读</span>吗？
+      </div>
+    </div>
+    <div class="closing">
+      AI 世界很吵<br>
+      <span class="em">精读一篇，胜过刷一百条</span>
+    </div>
+  </div>
+</body>
+</html>

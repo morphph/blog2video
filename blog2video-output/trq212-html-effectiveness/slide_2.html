@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(239, 68, 68, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .quote {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: -1px;
+      margin-bottom: 36px;
+    }
+    .quote .num { color: #F59E0B; font-size: 96px; font-weight: 900; }
+    .quote .red { color: #EF4444; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #EF4444;
+      margin-bottom: 40px;
+      border-radius: 2px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .card .label {
+      font-size: 22px;
+      color: #EF4444;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .card .text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .card .text .em { color: #F59E0B; font-weight: 800; }
+    .note {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .note .em { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">问题不是 AI 写得不好</div>
+    <div class="quote">
+      <span class="num">100</span> 行的 markdown<br>
+      <span class="red">没人读</span>
+    </div>
+    <div class="divider"></div>
+    <div class="card">
+      <div class="label">作者自白</div>
+      <div class="text">
+        我自己读不进去<br>
+        也<span class="em">让不动</span>公司任何人读它
+      </div>
+    </div>
+    <div class="note">
+      不是格式不好，是 markdown<br>
+      被 AI 的<span class="em">产能撑爆</span>了
+    </div>
+  </div>
+</body>
+</html>

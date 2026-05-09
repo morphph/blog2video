@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 24%, rgba(245, 158, 11, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+    .title .y { color: #F59E0B; }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+    .divider {
+      width: 80px; height: 4px;
+      background: #F59E0B;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .principle {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    .principle .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .principle .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .principle .text .em { color: #F59E0B; font-weight: 800; }
+    .compare {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 920px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 22px;
+      text-align: left;
+    }
+    .col.old { border-left: 4px solid #6B7280; }
+    .col.new { border-left: 4px solid #10B981; }
+    .col .label {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .col.old .label { color: #6B7280; }
+    .col.new .label { color: #10B981; }
+    .col .head {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .col .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">新概念</div>
+    <div class="title">
+      <span class="y">throwaway editor</span>
+    </div>
+    <div class="subtitle">一次性编辑器</div>
+    <div class="divider"></div>
+    <div class="principle">
+      <div class="label">DEFINITION</div>
+      <div class="text">
+        不是产品 / 不是可复用工具<br>
+        为<span class="em">这一次任务</span>做一个用完就扔的界面
+      </div>
+    </div>
+    <div class="compare">
+      <div class="col old">
+        <div class="label">DRY 时代</div>
+        <div class="head">不要重复造轮子</div>
+        <div class="desc">前提：生成成本高</div>
+      </div>
+      <div class="col new">
+        <div class="label">AI 时代</div>
+        <div class="head">两分钟生成 UI</div>
+        <div class="desc">复用反而更贵</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

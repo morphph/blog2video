@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+    "title_zh": "我为什么不再读 AI 写的 markdown",
+    "word_count": 2618,
+    "slug": "trq212-html-effectiveness"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "单一连贯论证：从 100 行 markdown 没人读切入，递进到 HTML 是双向 GUI、throwaway editor、context ingestion，最后揭示 stay in the loop 的人本主义焦虑。全篇围绕同一 thesis，拆开会削弱论证。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "我为什么不再读 AI 写的 markdown"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(139, 92, 246, 0.14), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .quote {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+    }
+    .quote .p { color: #8B5CF6; }
+    .quote .y { color: #F59E0B; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #8B5CF6;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .principle {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .principle .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .principle .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .principle .text .em { color: #F59E0B; font-weight: 800; }
+    .principle .text .g { color: #10B981; font-weight: 800; }
+    .footer {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.5;
+      max-width: 880px;
+    }
+    .footer .em { color: #F59E0B; font-weight: 800; }
+    .footer .r { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">表面讲 HTML，真正讲什么</div>
+    <div class="quote">
+      <span class="p">stay in the loop</span><br>
+      仍然在<span class="y">驾驶座</span>的资格
+    </div>
+    <div class="divider"></div>
+    <div class="principle">
+      <div class="label">CORE THESIS</div>
+      <div class="text">
+        AI 写得比你读得快<br>
+        <span class="em">"读得进"</span>就是你保留<span class="g">判断权</span>的最后一道闸
+      </div>
+    </div>
+    <div class="footer">
+      <span class="r">100 行 markdown</span>：滑到底直接 approved<br>
+      <span class="em">HTML</span>：让你停下来读一段
+    </div>
+  </div>
+</body>
+</html>

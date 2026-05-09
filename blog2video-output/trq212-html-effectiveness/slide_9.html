@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(245, 158, 11, 0.12), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .quote-mark {
+      font-size: 120px;
+      color: #F59E0B;
+      font-weight: 900;
+      line-height: 0.5;
+      margin-bottom: 28px;
+      opacity: 0.7;
+    }
+    .quote {
+      font-size: 76px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+    }
+    .quote .y { color: #F59E0B; }
+    .quote .g { color: #10B981; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #F59E0B;
+      margin: 24px 0 32px;
+      border-radius: 2px;
+    }
+    .attribution {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+    .footer {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .footer .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .footer .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .footer .text .em { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">真正的核心</div>
+    <div class="quote-mark">"</div>
+    <div class="quote">
+      让我感觉<br>
+      <span class="g">in the loop</span><br>
+      with <span class="y">Claude</span>
+    </div>
+    <div class="divider"></div>
+    <div class="attribution">— Thariq, Anthropic</div>
+    <div class="footer">
+      <div class="label">他真正怕的</div>
+      <div class="text">
+        我不再深入读那些 plan<br>
+        就只能<span class="em">放手让 Claude 自己做选择</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

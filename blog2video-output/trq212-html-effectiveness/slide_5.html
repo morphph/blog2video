@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(139, 92, 246, 0.14), transparent 60%),
+        #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .quote {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: -1px;
+      margin-bottom: 36px;
+    }
+    .quote .p { color: #8B5CF6; }
+    .quote .y { color: #F59E0B; }
+    .divider {
+      width: 80px; height: 4px;
+      background: #8B5CF6;
+      margin-bottom: 36px;
+      border-radius: 2px;
+    }
+    .compare {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 32px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .col.md { border-left: 4px solid #6B7280; }
+    .col.html { border-left: 4px solid #8B5CF6; }
+    .col .label {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .col.md .label { color: #6B7280; }
+    .col.html .label { color: #8B5CF6; }
+    .col .head {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .col .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .col.html .desc .em { color: #F59E0B; font-weight: 800; }
+    .footer {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.45;
+      max-width: 880px;
+    }
+    .footer .em { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">最反直觉的一段</div>
+    <div class="quote">
+      HTML 不是输出格式<br>
+      是 chat 的 <span class="y">外接 GUI</span>
+    </div>
+    <div class="divider"></div>
+    <div class="compare">
+      <div class="col md">
+        <div class="label">MARKDOWN</div>
+        <div class="head">只读</div>
+        <div class="desc">看完就完<br>是终点</div>
+      </div>
+      <div class="col html">
+        <div class="label">HTML</div>
+        <div class="head">可操作</div>
+        <div class="desc">sliders / knobs<br>调完<span class="em">copy as prompt</span></div>
+      </div>
+    </div>
+    <div class="footer">
+      闭环：AI 出原型 → 你拖参数<br>
+      → 状态<span class="em">序列化</span>回 prompt
+    </div>
+  </div>
+</body>
+</html>

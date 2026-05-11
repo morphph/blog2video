@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(245, 158, 11, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .quote-text {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 36px;
+      max-width: 920px;
+    }
+    .quote-text .strike {
+      color: #6B7280;
+      text-decoration: line-through;
+      text-decoration-color: #EF4444;
+      text-decoration-thickness: 4px;
+    }
+    .quote-text .y { color: #F59E0B; }
+    .compound {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 22px 28px;
+      width: 100%;
+      max-width: 920px;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+    .compound .label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .compound .row {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .compound .row .em {
+      color: #F59E0B;
+      font-size: 56px;
+      font-weight: 800;
+    }
+    .openrow {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+    }
+    .opensrc {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-align: left;
+    }
+    .opensrc .name {
+      font-size: 26px;
+      color: #8B5CF6;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .opensrc .stat {
+      font-size: 36px;
+      color: #F59E0B;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .opensrc .desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">他真正想要的</div>
+    <div class="quote-text">
+      不是<span class="strike">提高效率</span><br>
+      是 <span class="y">复利</span>
+    </div>
+    <div class="compound">
+      <div class="label">系统的增长曲线</div>
+      <div class="row">
+        今天 = 两个月前 <span class="em">×10</span><br>
+        两个月后 = 今天 <span class="em">×10</span>
+      </div>
+    </div>
+    <div class="openrow">
+      <div class="opensrc">
+        <div class="name">GStack</div>
+        <div class="stat">87,000 ★</div>
+        <div class="desc">底层 coding 框架</div>
+      </div>
+      <div class="opensrc">
+        <div class="name">GBrain</div>
+        <div class="stat">97.6%</div>
+        <div class="desc">LongMemEval 长记忆召回</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

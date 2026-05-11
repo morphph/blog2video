@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(245, 158, 11, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.20), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .quote-mark {
+      font-size: 120px;
+      color: #F59E0B;
+      font-weight: 900;
+      line-height: 0.6;
+      margin-bottom: 20px;
+    }
+    .verdict {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.35;
+      color: #FFFFFF;
+      margin-bottom: 36px;
+      max-width: 920px;
+      letter-spacing: -1px;
+    }
+    .verdict .y { color: #F59E0B; }
+    .verdict .strike {
+      color: #6B7280;
+      text-decoration: line-through;
+      text-decoration-color: #EF4444;
+      text-decoration-thickness: 3px;
+    }
+    .compare {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 24px 28px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+    }
+    .compare .row {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .compare .row:last-child { margin-bottom: 0; }
+    .compare .gray { color: #8B8BA8; }
+    .compare .em { color: #F59E0B; font-weight: 800; }
+    .compare .strong { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">我的判断</div>
+    <div class="quote-mark">"</div>
+    <div class="verdict">
+      竞争维度<br>
+      已经从 <span class="strike">用哪个模型</span><br>
+      换到 <span class="y">私有数据 + skill 厚度</span>
+    </div>
+    <div class="compare">
+      <div class="row"><span class="gray">普通人：</span>聊天窗口</div>
+      <div class="row"><span class="gray">他：</span><span class="em">40 分钟 / 3 万字</span> 落到人生具体场景</div>
+      <div class="row"><span class="strong">把 10 万页人生编译成只属于自己的车</span></div>
+    </div>
+  </div>
+</body>
+</html>

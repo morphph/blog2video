@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 20%, rgba(16, 185, 129, 0.16), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 32px;
+    }
+    .step {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 20px 26px;
+      text-align: left;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .step .num {
+      font-size: 44px;
+      color: #10B981;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 50px;
+    }
+    .step .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .step .text .em { color: #F59E0B; font-weight: 800; }
+    .step .text .gray { color: #8B8BA8; font-weight: 600; font-size: 22px; }
+    .reminder {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 22px 28px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+    }
+    .reminder .label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .reminder .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .reminder .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">想动手 · 记住这个顺序</div>
+    <div class="title">先做一件 <span class="y">真正在乎</span> 的事</div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="text">先做完一件你真在乎的事</div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div class="text">跑 <span class="em">skillify</span><br><span class="gray">沉淀成可复用的 skill</span></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div class="text">不要一上来设计架构<br><span class="gray">那是上个时代工程师的习惯</span></div>
+      </div>
+    </div>
+    <div class="reminder">
+      <div class="label">心理准备</div>
+      <div class="text">
+        前几个月一定 <span class="em">很烂</span><br>
+        这正是要跑通的环节
+      </div>
+    </div>
+  </div>
+</body>
+</html>

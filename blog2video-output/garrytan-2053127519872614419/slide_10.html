@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 22%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.12), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .r { color: #EF4444; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 18px 22px;
+      text-align: left;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .item .num {
+      font-size: 38px;
+      color: #EF4444;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 50px;
+    }
+    .item .body {
+      flex: 1;
+    }
+    .item .head {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .item .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .item .desc .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">不只讲爽点 · 慢慢讲</div>
+    <div class="title">这套系统的 <span class="r">4 个代价</span></div>
+    <div class="list">
+      <div class="item">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="head">隐私暴露极重</div>
+          <div class="desc">家族史 / 治疗记录 / 19 岁聊天<br>全部集中在一个系统</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="head">工程投入门槛高</div>
+          <div class="desc">YC CEO 也要凌晨 2 点写代码<br>100+ cron + 100+ skill 长期运维</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="head">绑定三家前沿模型</div>
+          <div class="desc">Opus + GPT-5.5 + DeepSeek<br>任何一家断供，<span class="em">评估体系动摇</span></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">4</div>
+        <div class="body">
+          <div class="head">潜伏期独自兜错</div>
+          <div class="desc">"第一版必须烂" 的代价<br>有一段不敢拿给任何人看的时间</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

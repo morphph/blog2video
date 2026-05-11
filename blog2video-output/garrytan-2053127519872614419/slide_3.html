@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 22%, rgba(16, 185, 129, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(239, 68, 68, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .title {
+      font-size: 62px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .vs-row {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 920px;
+      align-items: stretch;
+      margin-bottom: 36px;
+    }
+    .vs-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .vs-card.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .vs-card.red {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .vs-card .label {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .vs-card.green .label { color: #10B981; }
+    .vs-card.red .label { color: #EF4444; }
+    .vs-card .num {
+      font-size: 76px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .vs-card.green .num { color: #10B981; }
+    .vs-card.red .num { color: #EF4444; }
+    .vs-card .sub {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .vs-card .price {
+      font-size: 24px;
+      color: #F59E0B;
+      font-weight: 800;
+      margin-top: 6px;
+    }
+    .insight {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 26px 30px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+    }
+    .insight .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .insight .text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .insight .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">真正的<span style="color:#F59E0B;">震撼</span>在这里</div>
+    <div class="title">为什么 <span class="y">40 分钟</span> 干完 40 小时？</div>
+    <div class="vs-row">
+      <div class="vs-card green">
+        <div class="label">他的系统</div>
+        <div class="num">40<span style="font-size:32px;">分钟</span></div>
+        <div class="sub">完整语境图谱</div>
+      </div>
+      <div class="vs-card red">
+        <div class="label">$300/HR 治疗师</div>
+        <div class="num">40<span style="font-size:32px;">小时</span></div>
+        <div class="sub">读同一本书</div>
+        <div class="price">也做不到</div>
+      </div>
+    </div>
+    <div class="insight">
+      <div class="label">差距不在 AI</div>
+      <div class="text">
+        在 AI 旁边那个<br>
+        <span class="em">一直在长大的数据库</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

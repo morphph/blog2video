@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 20%, rgba(59, 130, 246, 0.16), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.18), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 38px;
+    }
+    .time-badge {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      border-radius: 999px;
+      padding: 10px 28px;
+      font-size: 28px;
+      color: #F59E0B;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 18px 18px;
+      text-align: left;
+    }
+    .item .head {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .item .body {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .conclusion {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .conclusion .label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .conclusion .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .conclusion .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">现场 · DEMIS HASSABIS 来 YC</div>
+    <div class="title">他让系统 <span class="y">备战</span> 炉边对话</div>
+    <div class="subtitle">Google DeepMind · 传记刚出</div>
+    <div class="time-badge">2 分钟内全部拉齐</div>
+    <div class="grid">
+      <div class="item">
+        <div class="head">完整 Brain Page</div>
+        <div class="body">几个月文章/播客累积</div>
+      </div>
+      <div class="item">
+        <div class="head">AGI 时间线立场</div>
+        <div class="body">50% 规模 + 50% 创新</div>
+      </div>
+      <div class="item">
+        <div class="head">传记重点</div>
+        <div class="body">Mallaby 最新著作</div>
+      </div>
+      <div class="item">
+        <div class="head">立场分叉点</div>
+        <div class="body">Garry 自己讲过的</div>
+      </div>
+    </div>
+    <div class="conclusion">
+      <div class="label">这不是更好的搜索</div>
+      <div class="text">
+        准备的不是事实<br>
+        是<span class="em">带策略目标的角度</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

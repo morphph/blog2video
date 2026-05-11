@@ -1,0 +1,19 @@
+{
+  "video_number": 1,
+  "title": "10 万页大脑：他凭什么 40 分钟干完 40 小时？",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    { "slide_number": 1, "file": "slide_1.html", "estimated_duration_seconds": 29 },
+    { "slide_number": 2, "file": "slide_2.html", "estimated_duration_seconds": 70 },
+    { "slide_number": 3, "file": "slide_3.html", "estimated_duration_seconds": 63 },
+    { "slide_number": 4, "file": "slide_4.html", "estimated_duration_seconds": 81 },
+    { "slide_number": 5, "file": "slide_5.html", "estimated_duration_seconds": 65 },
+    { "slide_number": 6, "file": "slide_6.html", "estimated_duration_seconds": 62 },
+    { "slide_number": 7, "file": "slide_7.html", "estimated_duration_seconds": 89 },
+    { "slide_number": 8, "file": "slide_8.html", "estimated_duration_seconds": 72 },
+    { "slide_number": 9, "file": "slide_9.html", "estimated_duration_seconds": 86 },
+    { "slide_number": 10, "file": "slide_10.html", "estimated_duration_seconds": 100 },
+    { "slide_number": 11, "file": "slide_11.html", "estimated_duration_seconds": 69 },
+    { "slide_number": 12, "file": "slide_12.html", "estimated_duration_seconds": 38 }
+  ]
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%; height: 100%;
+      padding: 140px 72px 400px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 78%, rgba(139, 92, 246, 0.20), transparent 55%),
+        radial-gradient(circle at 50% 48%, rgba(245, 158, 11, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 56px;
+    }
+    .headline {
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .headline .yellow { color: #F59E0B; }
+    .headline .red { color: #EF4444; }
+    .vs-row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 64px;
+    }
+    .vs-card {
+      background: #1A1A2E;
+      border-radius: 18px;
+      padding: 28px 36px;
+      min-width: 280px;
+      text-align: center;
+    }
+    .vs-card.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .vs-card.red {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .vs-card .num {
+      font-size: 78px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .vs-card.green .num { color: #10B981; }
+    .vs-card.red .num { color: #EF4444; }
+    .vs-card .label {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .vs-sep {
+      font-size: 36px;
+      color: #6B7280;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    .source-tag {
+      display: inline-block;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 999px;
+      padding: 14px 32px;
+      font-size: 22px;
+      color: #6B6B80;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .source-tag .author { color: #8B8BA8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-tag">精读AI · 个人 AI 大脑</div>
+    <div class="headline">
+      <span class="yellow">10 万页大脑</span><br>
+      他凭什么 40 分钟<br>
+      干完 <span class="red">40 小时</span>？
+    </div>
+    <div class="vs-row">
+      <div class="vs-card green">
+        <div class="num">40<span style="font-size:36px;">分钟</span></div>
+        <div class="label">他的系统</div>
+      </div>
+      <div class="vs-sep">VS</div>
+      <div class="vs-card red">
+        <div class="num">40<span style="font-size:36px;">小时</span></div>
+        <div class="label">$300/hr 治疗师</div>
+      </div>
+    </div>
+    <div class="source-tag">
+      <span class="author">Garry Tan · YC CEO</span> · 个人 AI 工程实录
+    </div>
+  </div>
+</body>
+</html>

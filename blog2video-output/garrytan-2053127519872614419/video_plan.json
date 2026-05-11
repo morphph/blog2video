@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Meta-Meta-Prompting: The Secret to Making AI Agents Work",
+    "title_zh": "10 万页大脑：他凭什么 40 分钟干完 40 小时？",
+    "word_count": 4466,
+    "slug": "garrytan-2053127519872614419"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕同一论点（个人 AI 的竞争维度是私有数据厚度+skill 厚度）展开，从 book mirror 故事 → 失败迭代 → meta-skill → 10 万页架构 → 复利 → tradeoff，是一条线性递进的论证。拆开会失去复利感的连贯性。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "10 万页大脑：他凭什么 40 分钟干完 40 小时？"
+      }
+    ]
+  }
+}

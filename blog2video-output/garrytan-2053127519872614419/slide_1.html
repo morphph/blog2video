@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(245, 158, 11, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 56px;
+    }
+    .headline {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.16;
+      letter-spacing: -2px;
+      margin-bottom: 56px;
+    }
+    .headline .yellow { color: #F59E0B; }
+    .headline .red { color: #EF4444; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 28px 32px;
+      max-width: 900px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .verdict .text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+    .author {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .author .name { color: #8B8BA8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">精读AI · 个人 AI 大脑</div>
+    <div class="headline">
+      <span class="yellow">5 个月</span>凌晨 2 点<br>
+      他在写代码<br>
+      造一个<span class="yellow">第二大脑</span>
+    </div>
+    <div class="verdict">
+      <div class="label">今天不聊口号</div>
+      <div class="text">
+        不是"如何提升效率"<br>
+        是<span class="em">真正不一样的地方在哪</span>
+      </div>
+    </div>
+    <div class="author">
+      <span class="name">Garry Tan</span> · Y Combinator CEO
+    </div>
+  </div>
+</body>
+</html>

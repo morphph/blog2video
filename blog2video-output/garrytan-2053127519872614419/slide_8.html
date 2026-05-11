@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(59, 130, 246, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 26px;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 22px 26px;
+      text-align: left;
+    }
+    .card.thin {
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      border-left: 4px solid #3B82F6;
+    }
+    .card.thick {
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+    }
+    .card.data {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .card .head {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .card.thin .head { color: #3B82F6; }
+    .card.thick .head { color: #F59E0B; }
+    .card.data .head { color: #10B981; }
+    .card .body {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .card .body .em { color: #F59E0B; font-weight: 800; }
+    .conclusion {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 22px 28px;
+      width: 100%;
+      max-width: 920px;
+      text-align: left;
+    }
+    .conclusion .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .conclusion .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .conclusion .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">架构 · 三句话压缩</div>
+    <div class="title">Harness <span class="y">薄</span> · Skill <span class="y">厚</span> · 数据 <span class="y">厚</span></div>
+    <div class="cards">
+      <div class="card thin">
+        <div class="head">HARNESS 要薄</div>
+        <div class="body">OpenClaw · 几千行路由逻辑<br>不知道什么是书、会议、创始人</div>
+      </div>
+      <div class="card thick">
+        <div class="head">SKILL 要厚</div>
+        <div class="body">100+ 个自包含 markdown<br>每个只处理一件具体的事</div>
+      </div>
+      <div class="card data">
+        <div class="head">数据要厚</div>
+        <div class="body">10 万页 + 100+ cron 7×24 灌入<br>社交媒体 / 邮件 / Slack</div>
+      </div>
+    </div>
+    <div class="conclusion">
+      <div class="label">所以</div>
+      <div class="text">
+        模型只是<span class="em">发动机</span><br>
+        其他一切才是<span class="em">车</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

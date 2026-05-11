@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 82%, rgba(245, 158, 11, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .quote-mark {
+      font-size: 140px;
+      color: #8B5CF6;
+      font-weight: 900;
+      line-height: 0.6;
+      margin-bottom: 24px;
+    }
+    .quote-text {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      max-width: 920px;
+    }
+    .quote-text .em { color: #F59E0B; }
+    .attribution {
+      font-size: 24px;
+      color: #8B8BA8;
+      font-weight: 600;
+      margin-bottom: 48px;
+      letter-spacing: 1px;
+    }
+    .translation {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 26px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .translation .label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .translation .row {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .translation .row .gray { color: #8B8BA8; }
+    .translation .row .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">关键 SKILL · SKILLIFY</div>
+    <div class="quote-mark">"</div>
+    <div class="quote-text">
+      我不 prompt<br>
+      <span class="em">skill 就是 prompt</span>
+    </div>
+    <div class="attribution">— Garry Tan</div>
+    <div class="translation">
+      <div class="label">翻译过来</div>
+      <div class="row"><span class="gray">Prompt 工程：</span>一次性劳动</div>
+      <div class="row"><span class="gray">Skill：</span><span class="em">会复利的资产</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Lessons from building Claude Code: Prompt caching is everything",
+    "title_zh": "Claude Code 的省钱命门：缓存",
+    "word_count": 4148,
+    "slug": "lessons-from-building-claude-code-prompt-caching-is-everything"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕同一 thesis（缓存是 Agent 基础设施）展开五条反直觉工程原则，每条都在支撑同一个论证，拆开会削弱整体说服力。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude Code 的省钱命门：缓存"
+      }
+    ]
+  }
+}

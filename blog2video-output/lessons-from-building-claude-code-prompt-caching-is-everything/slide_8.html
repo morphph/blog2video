@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background: radial-gradient(circle at 50% 22%, rgba(59, 130, 246, 0.12), transparent 60%), #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .headline {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.16;
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+    }
+    .headline .b { color: #3B82F6; }
+    .headline .y { color: #F59E0B; }
+    .flow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .step {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.22);
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-align: center;
+      min-width: 200px;
+    }
+    .step.stub { border-left: 4px solid #3B82F6; }
+    .step.search { border-left: 4px solid #F59E0B; }
+    .step.full { border-left: 4px solid #10B981; }
+    .step .title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .step.stub .title { color: #3B82F6; }
+    .step.search .title { color: #F59E0B; }
+    .step.full .title { color: #10B981; }
+    .step .desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .arrow {
+      font-size: 40px;
+      color: #8B5CF6;
+      font-weight: 900;
+    }
+    .takeaway {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 22px 28px;
+      max-width: 940px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 14px;
+    }
+    .takeaway .label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .takeaway .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .takeaway .text .em { color: #F59E0B; font-weight: 800; }
+    .bonus {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 18px 28px;
+      max-width: 940px;
+      width: 100%;
+      text-align: left;
+    }
+    .bonus .label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .bonus .text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .bonus .text .em { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">MCP 工具的解法</div>
+    <div class="headline">
+      <span class="y">Defer Loading</span><br>
+      占位<span class="b">不击穿</span>
+    </div>
+    <div class="flow">
+      <div class="step stub">
+        <div class="title">轻量 Stub</div>
+        <div class="desc">只挂工具名<br>放进 prefix</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step search">
+        <div class="title">Tool Search</div>
+        <div class="desc">模型主动发现</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step full">
+        <div class="title">完整 Schema</div>
+        <div class="desc">需要时才加载</div>
+      </div>
+    </div>
+    <div class="takeaway">
+      <div class="label">为什么稳</div>
+      <div class="text">占位 stub <span class="em">位置和顺序</span>始终不动</div>
+    </div>
+    <div class="bonus">
+      <div class="label">意外好处</div>
+      <div class="text">模型遇到难题可<span class="em">自己</span>进入 Plan Mode</div>
+    </div>
+  </div>
+</body>
+</html>

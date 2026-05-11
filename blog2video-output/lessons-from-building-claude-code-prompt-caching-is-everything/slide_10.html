@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background: radial-gradient(circle at 50% 22%, rgba(16, 185, 129, 0.12), transparent 60%), #0D0D1A;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .headline {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.16;
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+    }
+    .headline .g { color: #10B981; }
+    .recipe {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 28px;
+      max-width: 940px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+    .recipe .label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .recipe .row {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .recipe .row .k { color: #8B5CF6; font-weight: 800; }
+    .recipe .row .em { color: #F59E0B; font-weight: 800; }
+    .insight {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      max-width: 940px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    .insight .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .insight .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .insight .text .em { color: #F59E0B; font-weight: 800; }
+    .api {
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 18px 28px;
+      max-width: 940px;
+      width: 100%;
+      text-align: left;
+    }
+    .api .label {
+      font-size: 22px;
+      color: #3B82F6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .api .text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .api .text .em { color: #3B82F6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">Claude Code 的解法</div>
+    <div class="headline">
+      Cache-Safe<br>
+      <span class="g">Forking</span>
+    </div>
+    <div class="recipe">
+      <div class="label">做法</div>
+      <div class="row">同样 <span class="k">system prompt</span> + 同样工具</div>
+      <div class="row">Prepend 全部父历史</div>
+      <div class="row">Append <span class="em">压缩指令</span>到末尾</div>
+    </div>
+    <div class="insight">
+      <div class="label">认知翻转</div>
+      <div class="text">压缩不是"独立任务"<br>是<span class="em">父对话的延伸</span></div>
+    </div>
+    <div class="api">
+      <div class="label">已进 API</div>
+      <div class="text">Anthropic 把这套 pattern <span class="em">原生化</span>了</div>
+    </div>
+  </div>
+</body>
+</html>

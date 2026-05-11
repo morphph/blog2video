@@ -1,0 +1,712 @@
+[
+  {
+    "text": "Anthropic 团队刚刚公开了 Claude Code 的一篇内部工程总结。一句话讲完核心：让一个 Agent 能跑得起来的，不是模型多强，是缓存命中率多高。",
+    "pronounce_text": "Anthropic团队刚刚公开了Claude Code的一篇内部工程总结。一句话讲完核心：让一个Agent能跑得起来的，不是模型多强，是缓存命中率多高。",
+    "time_begin": 0,
+    "time_end": 12229.795918367347,
+    "text_begin": 0,
+    "text_end": 81,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 76
+  },
+  {
+    "text": "今天不聊 prompt 怎么写得更花哨，只聊 Claude Code 团队踩过的那几条反直觉的工程红线。",
+    "pronounce_text": "今天不聊prompt怎么写得更花哨，只聊Claude Code团队踩过的那几条反直觉的工程红线。",
+    "time_begin": 12384,
+    "time_end": 19064.226757369615,
+    "text_begin": 81,
+    "text_end": 133,
+    "pronounce_text_begin": 76,
+    "pronounce_text_end": 124
+  },
+  {
+    "text": "我读完之后最震撼的一点，是 Claude Code 团队对 prompt cache 的态度。",
+    "pronounce_text": "我读完之后最震撼的一点，是Claude Code团队对prompt cache的态度。",
+    "time_begin": 19224,
+    "time_end": 24836.108843537415,
+    "text_begin": 133,
+    "text_end": 180,
+    "pronounce_text_begin": 124,
+    "pronounce_text_end": 167
+  },
+  {
+    "text": "在很多团队里，缓存是个性能优化项，做了更好，没做也能上线。但在 Claude Code 这边，他们把整套 harness，就是包在模型外面的那层工程系统，从第一天就围绕 prompt cache 来设计。",
+    "pronounce_text": "在很多团队里，缓存是个性能优化项，做了更好，没做也能上线。但在Claude Code这边，他们把整套harness，就是包在模型外面的那层工程系统，从第一天就围绕prompt cache来设计。",
+    "time_begin": 24984,
+    "time_end": 41428.21768707483,
+    "text_begin": 180,
+    "text_end": 282,
+    "pronounce_text_begin": 167,
+    "pronounce_text_end": 264
+  },
+  {
+    "text": "更狠的是运维层面。他们对 prompt cache 的命中率设了告警，命中率掉了几个百分点，直接定为 SEV，也就是事故级别的告警。一个工程指标被当成线上事故来对待，这意味着什么？",
+    "pronounce_text": "更狠的是运维层面。他们对prompt cache的命中率设了告警，命中率掉了几个百分点，直接定为SEV，也就是事故级别的告警。一个工程指标被当成线上事故来对待，这意味着什么？",
+    "time_begin": 41580,
+    "time_end": 56491.70068027211,
+    "text_begin": 282,
+    "text_end": 372,
+    "pronounce_text_begin": 264,
+    "pronounce_text_end": 351
+  },
+  {
+    "text": "意味着对一个长会话的 Agent 来说，缓存击穿不是慢一点，是直接让产品的成本结构崩掉。订阅制的合理额度、可接受的延迟，都是建立在高命中率之上的。",
+    "pronounce_text": "意味着对一个长会话的Agent来说，缓存击穿不是慢一点，是直接让产品的成本结构崩掉。订阅制的合理额度、可接受的延迟，都是建立在高命中率之上的。",
+    "time_begin": 56628,
+    "time_end": 71586.14058956916,
+    "text_begin": 372,
+    "text_end": 445,
+    "pronounce_text_begin": 351,
+    "pronounce_text_end": 422
+  },
+  {
+    "text": "命中率一旦掉下来，这些都跟着塌。",
+    "pronounce_text": "命中率一旦掉下来，这些都跟着塌。",
+    "time_begin": 71786.14058956916,
+    "time_end": 75006.59410430839,
+    "text_begin": 445,
+    "text_end": 461,
+    "pronounce_text_begin": 422,
+    "pronounce_text_end": 438
+  },
+  {
+    "text": "为什么缓存对 Agent 这么敏感？因为 Anthropic 的 prompt cache 是按前缀匹配工作的。",
+    "pronounce_text": "为什么缓存对Agent这么敏感？因为Anthropic的prompt cache是按前缀匹配工作的。",
+    "time_begin": 75168,
+    "time_end": 82440.33560090703,
+    "text_begin": 461,
+    "text_end": 517,
+    "pronounce_text_begin": 438,
+    "pronounce_text_end": 488
+  },
+  {
+    "text": "什么意思？你发给 API 的请求，从最开始的第一个字节，一直到你设的某个缓存断点，这一整段如果跟上次一模一样，就直接命中缓存，不用重新处理。",
+    "pronounce_text": "什么意思？你发给API的请求，从最开始的第一个字节，一直到你设的某个缓存断点，这一整段如果跟上次一模一样，就直接命中缓存，不用重新处理。",
+    "time_begin": 82584,
+    "time_end": 96555.2925170068,
+    "text_begin": 517,
+    "text_end": 587,
+    "pronounce_text_begin": 488,
+    "pronounce_text_end": 556
+  },
+  {
+    "text": "但只要这一段里任何一个位置变了，从那个位置往后所有的内容都要重新算，缓存全部作废。",
+    "pronounce_text": "但只要这一段里任何一个位置变了，从那个位置往后所有的内容都要重新算，缓存全部作废。",
+    "time_begin": 96696,
+    "time_end": 103457.49659863945,
+    "text_begin": 587,
+    "text_end": 628,
+    "pronounce_text_begin": 556,
+    "pronounce_text_end": 597
+  },
+  {
+    "text": "这条规则听起来很简单，但带来的设计约束非常强。它意味着你必须把稳定的内容放最前面，把变化的内容放最后面。",
+    "pronounce_text": "这条规则听起来很简单，但带来的设计约束非常强。它意味着你必须把稳定的内容放最前面，把变化的内容放最后面。",
+    "time_begin": 103608,
+    "time_end": 113446.14058956916,
+    "text_begin": 628,
+    "text_end": 680,
+    "pronounce_text_begin": 597,
+    "pronounce_text_end": 649
+  },
+  {
+    "text": "Claude Code 的 prompt 是这样分层的。最前面是静态 system prompt 和工具定义，这一层是全局共享的缓存。第二层是 CLAUDE.md，项目级别的配置，缓存到一个项目内复用。",
+    "pronounce_text": "Claude Code的prompt是这样分层的。最前面是静态system prompt和工具定义，这一层是全局共享的缓存。第二层是CLAUDE.md，项目级别的配置，缓存到一个项目内复用。",
+    "time_begin": 113616,
+    "time_end": 128353.55102040817,
+    "text_begin": 680,
+    "text_end": 781,
+    "pronounce_text_begin": 649,
+    "pronounce_text_end": 744
+  },
+  {
+    "text": "第三层是 session context，这一次会话内复用。最后才是对话消息本身，每一轮都在变。",
+    "pronounce_text": "第三层是session context，这一次会话内复用。最后才是对话消息本身，每一轮都在变。",
+    "time_begin": 128520,
+    "time_end": 136430.8843537415,
+    "text_begin": 781,
+    "text_end": 829,
+    "pronounce_text_begin": 744,
+    "pronounce_text_end": 791
+  },
+  {
+    "text": "这样安排的好处是，越前面的层覆盖的请求越多，缓存的杠杆越大。但代价也很真实。你失去了\"动态调整 prompt\"的自由度。任何想往前面塞动态内容的诱惑，都得抵抗。",
+    "pronounce_text": "这样安排的好处是，越前面的层覆盖的请求越多，缓存的杠杆越大。但代价也很真实。你失去了\"动态调整prompt\"的自由度。任何想往前面塞动态内容的诱惑，都得抵抗。",
+    "time_begin": 136584,
+    "time_end": 151844,
+    "text_begin": 829,
+    "text_end": 909,
+    "pronounce_text_begin": 791,
+    "pronounce_text_end": 870
+  },
+  {
+    "text": "这条原则的脆弱性，藏在很多看不见的细节里。",
+    "pronounce_text": "这条原则的脆弱性，藏在很多看不见的细节里。",
+    "time_begin": 151992,
+    "time_end": 156280.57142857142,
+    "text_begin": 909,
+    "text_end": 930,
+    "pronounce_text_begin": 870,
+    "pronounce_text_end": 891
+  },
+  {
+    "text": "Claude Code 团队自己踩过几个真实的坑。第一个最简单：他们曾经在 static system prompt 里塞了一个精确的时间戳。",
+    "pronounce_text": "Claude Code团队自己踩过几个真实的坑。第一个最简单：他们曾经在static system prompt里塞了一个精确的时间戳。",
+    "time_begin": 156420,
+    "time_end": 166037.55102040817,
+    "text_begin": 930,
+    "text_end": 1001,
+    "pronounce_text_begin": 891,
+    "pronounce_text_end": 959
+  },
+  {
+    "text": "每次请求时间都不一样，等于每个请求的 prefix 从一开始就不一样了。所有静态部分的缓存全部失效。",
+    "pronounce_text": "每次请求时间都不一样，等于每个请求的prefix从一开始就不一样了。所有静态部分的缓存全部失效。",
+    "time_begin": 166237.55102040817,
+    "time_end": 174961.13378684808,
+    "text_begin": 1001,
+    "text_end": 1051,
+    "pronounce_text_begin": 959,
+    "pronounce_text_end": 1007
+  },
+  {
+    "text": "第二个坑更隐蔽。工具定义在序列化的时候顺序非确定，今天工具 A 在前，明天工具 B 在前。对模型来说功能完全等价，但对缓存来说，这是两个不同的 prefix。",
+    "pronounce_text": "第二个坑更隐蔽。工具定义在序列化的时候顺序非确定，今天工具A在前，明天工具B在前。对模型来说功能完全等价，但对缓存来说，这是两个不同的prefix。",
+    "time_begin": 175104,
+    "time_end": 189586.13151927438,
+    "text_begin": 1051,
+    "text_end": 1130,
+    "pronounce_text_begin": 1007,
+    "pronounce_text_end": 1081
+  },
+  {
+    "text": "第三个是 Agent 工具的子 agent 列表参数被改动了。这种修改在功能上看起来无害，但它落在 cached prefix 里，整段缓存就被无声击穿。",
+    "pronounce_text": "第三个是Agent工具的子agent列表参数被改动了。这种修改在功能上看起来无害，但它落在cached prefix里，整段缓存就被无声击穿。",
+    "time_begin": 189756,
+    "time_end": 202368.92517006802,
+    "text_begin": 1130,
+    "text_end": 1207,
+    "pronounce_text_begin": 1081,
+    "pronounce_text_end": 1152
+  },
+  {
+    "text": "这就是这套约束最难处理的地方。它没有报错、没有崩溃、产品照常运行，只是变贵了、变慢了。如果你没有缓存命中率的监控，你根本看不见这件事正在发生。",
+    "pronounce_text": "这就是这套约束最难处理的地方。它没有报错、没有崩溃、产品照常运行，只是变贵了、变慢了。如果你没有缓存命中率的监控，你根本看不见这件事正在发生。",
+    "time_begin": 202536,
+    "time_end": 215822.3038548753,
+    "text_begin": 1207,
+    "text_end": 1278,
+    "pronounce_text_begin": 1152,
+    "pronounce_text_end": 1223
+  },
+  {
+    "text": "那如果信息确实需要更新呢？比如时间变了，比如用户改了一个文件，模型确实需要知道这件事。",
+    "pronounce_text": "那如果信息确实需要更新呢？比如时间变了，比如用户改了一个文件，模型确实需要知道这件事。",
+    "time_begin": 215964,
+    "time_end": 223967.7641723356,
+    "text_begin": 1278,
+    "text_end": 1321,
+    "pronounce_text_begin": 1223,
+    "pronounce_text_end": 1266
+  },
+  {
+    "text": "直觉做法是改 prompt：把新的时间写进去，把新的文件状态写进去。但这就回到上一段那个坑了——任何对 prompt 的修改都是缓存击穿。",
+    "pronounce_text": "直觉做法是改prompt：把新的时间写进去，把新的文件状态写进去。但这就回到上一段那个坑了任何对prompt的修改都是缓存击穿。",
+    "time_begin": 224136,
+    "time_end": 235204.79818594104,
+    "text_begin": 1321,
+    "text_end": 1390,
+    "pronounce_text_begin": 1266,
+    "pronounce_text_end": 1330
+  },
+  {
+    "text": "Claude Code 的做法是另一条路：信息更新走对话消息，不走 prompt。",
+    "pronounce_text": "Claude Code的做法是另一条路：信息更新走对话消息，不走prompt。",
+    "time_begin": 235368,
+    "time_end": 241026.54875283447,
+    "text_begin": 1390,
+    "text_end": 1431,
+    "pronounce_text_begin": 1330,
+    "pronounce_text_end": 1369
+  },
+  {
+    "text": "具体怎么做？他们在下一条 user message 或者 tool 返回结果里，插入一个 system-reminder 标签，把更新的信息放在里面。模型读到这个标签，知道这是系统给它的提醒，行为上跟改 prompt 是等价的。",
+    "pronounce_text": "具体怎么做？他们在下一条user message或者tool返回结果里，插入一个system-reminder标签，把更新的信息放在里面。模型读到这个标签，知道这是系统给它的提醒，行为上跟改prompt是等价的。",
+    "time_begin": 241164,
+    "time_end": 257225.08843537414,
+    "text_begin": 1431,
+    "text_end": 1545,
+    "pronounce_text_begin": 1369,
+    "pronounce_text_end": 1475
+  },
+  {
+    "text": "但因为修改发生在 message 层、不在 prefix 里，缓存继续有效。",
+    "pronounce_text": "但因为修改发生在message层、不在prefix里，缓存继续有效。",
+    "time_begin": 257364,
+    "time_end": 262767.1292517007,
+    "text_begin": 1545,
+    "text_end": 1583,
+    "pronounce_text_begin": 1475,
+    "pronounce_text_end": 1509
+  },
+  {
+    "text": "这是一个很小但很有教育意义的设计。它告诉你，prompt 和 message 的边界，从来不只是\"约定俗成放哪里\"，是缓存这条规则把它们划成了两个完全不同的东西。",
+    "pronounce_text": "这是一个很小但很有教育意义的设计。它告诉你，prompt和message的边界，从来不只是\"约定俗成放哪里\"，是缓存这条规则把它们划成了两个完全不同的东西。",
+    "time_begin": 262908,
+    "time_end": 275811.1746031746,
+    "text_begin": 1583,
+    "text_end": 1664,
+    "pronounce_text_begin": 1509,
+    "pronounce_text_end": 1587
+  },
+  {
+    "text": "这一条最反直觉。我读到的时候愣了一下。",
+    "pronounce_text": "这一条最反直觉。我读到的时候愣了一下。",
+    "time_begin": 275976,
+    "time_end": 279672.462585034,
+    "text_begin": 1664,
+    "text_end": 1683,
+    "pronounce_text_begin": 1587,
+    "pronounce_text_end": 1606
+  },
+  {
+    "text": "设想一个场景。你跟 Opus 已经聊了 10 万 token，对话很长。现在你想问一个简单的问题，就一句话能答完那种。",
+    "pronounce_text": "设想一个场景。你跟Opus已经聊了十万token，对话很长。现在你想问一个简单的问题，就一句话能答完那种。",
+    "time_begin": 279828,
+    "time_end": 288772.1723356009,
+    "text_begin": 1683,
+    "text_end": 1742,
+    "pronounce_text_begin": 1606,
+    "pronounce_text_end": 1659
+  },
+  {
+    "text": "你的第一反应大概是：这种简单问题用 Haiku 答就行了，便宜很多。这是教科书级别的省钱思路，对吧？",
+    "pronounce_text": "你的第一反应大概是：这种简单问题用Haiku答就行了，便宜很多。这是教科书级别的省钱思路，对吧？",
+    "time_begin": 288936,
+    "time_end": 298007.8820861678,
+    "text_begin": 1742,
+    "text_end": 1792,
+    "pronounce_text_begin": 1659,
+    "pronounce_text_end": 1707
+  },
+  {
+    "text": "但 Claude Code 团队的发现是：在这个场景里，切到 Haiku 反而更贵。为什么？因为 prompt cache 是按模型隔离的。Opus 那边缓存好的 10 万 token，Haiku 一个字节都用不上。",
+    "pronounce_text": "但Claude Code团队的发现是：在这个场景里，切到Haiku反而更贵。为什么？因为prompt cache是按模型隔离的。Opus那边缓存好的十万token，Haiku一个字节都用不上。",
+    "time_begin": 298152,
+    "time_end": 312808.28117913834,
+    "text_begin": 1792,
+    "text_end": 1900,
+    "pronounce_text_begin": 1707,
+    "pronounce_text_end": 1803
+  },
+  {
+    "text": "要让 Haiku 回答，整段历史得在 Haiku 这边重新建一次缓存，从头算一遍。",
+    "pronounce_text": "要让Haiku回答，整段历史得在Haiku这边重新建一次缓存，从头算一遍。",
+    "time_begin": 312948,
+    "time_end": 318560.1088435374,
+    "text_begin": 1900,
+    "text_end": 1941,
+    "pronounce_text_begin": 1803,
+    "pronounce_text_end": 1840
+  },
+  {
+    "text": "这一笔重建的成本，比让 Opus 直接答这一个简单问题还高。模型差价省下的钱，远远赶不上 prefix 重建的钱。",
+    "pronounce_text": "这一笔重建的成本，比让Opus直接答这一个简单问题还高。模型差价省下的钱，远远赶不上prefix重建的钱。",
+    "time_begin": 318708,
+    "time_end": 327942.42176870746,
+    "text_begin": 1941,
+    "text_end": 1998,
+    "pronounce_text_begin": 1840,
+    "pronounce_text_end": 1893
+  },
+  {
+    "text": "这就翻转了一个很基础的认知：模型选择的成本计算单位，不是单次调用，是整段缓存的生命周期。",
+    "pronounce_text": "这就翻转了一个很基础的认知：模型选择的成本计算单位，不是单次调用，是整段缓存的生命周期。",
+    "time_begin": 328104,
+    "time_end": 337210.7120181406,
+    "text_begin": 1998,
+    "text_end": 2042,
+    "pronounce_text_begin": 1893,
+    "pronounce_text_end": 1937
+  },
+  {
+    "text": "那真要切模型怎么办？Claude Code 的做法是用子 agent。让 Opus 在自己的会话里准备一段交接消息，然后让 Haiku 作为一个独立的子 agent，从一段干净的、专门给它写的 prompt 开始，单独完成那个任务。",
+    "pronounce_text": "那真要切模型怎么办？Claude Code的做法是用子agent。让Opus在自己的会话里准备一段交接消息，然后让Haiku作为一个独立的子agent，从一段干净的、专门给它写的prompt开始，单独完成那个任务。",
+    "time_begin": 337356,
+    "time_end": 353672.50793650793,
+    "text_begin": 2042,
+    "text_end": 2158,
+    "pronounce_text_begin": 1937,
+    "pronounce_text_end": 2044
+  },
+  {
+    "text": "这样两边的缓存各自独立，没有互相污染。",
+    "pronounce_text": "这样两边的缓存各自独立，没有互相污染。",
+    "time_begin": 353844,
+    "time_end": 357412.7528344671,
+    "text_begin": 2158,
+    "text_end": 2177,
+    "pronounce_text_begin": 2044,
+    "pronounce_text_end": 2063
+  },
+  {
+    "text": "第二个反直觉的设计，关于工具的增删。",
+    "pronounce_text": "第二个反直觉的设计，关于工具的增删。",
+    "time_begin": 357552,
+    "time_end": 361376.1723356009,
+    "text_begin": 2177,
+    "text_end": 2195,
+    "pronounce_text_begin": 2063,
+    "pronounce_text_end": 2081
+  },
+  {
+    "text": "很多人对工具系统有一个直觉：模型当下需要哪些工具，就给它哪些工具，看起来更优雅、更省 token。",
+    "pronounce_text": "很多人对工具系统有一个直觉：模型当下需要哪些工具，就给它哪些工具，看起来更优雅、更省token。",
+    "time_begin": 361548,
+    "time_end": 371420.97052154195,
+    "text_begin": 2195,
+    "text_end": 2244,
+    "pronounce_text_begin": 2081,
+    "pronounce_text_end": 2129
+  },
+  {
+    "text": "Plan Mode 就是一个典型场景——用户进入规划模式，理论上模型只需要只读工具，写工具应该被关掉。",
+    "pronounce_text": "Plan Mode就是一个典型场景用户进入规划模式，理论上模型只需要只读工具，写工具应该被关掉。",
+    "time_begin": 371620.97052154195,
+    "time_end": 379624.7346938776,
+    "text_begin": 2244,
+    "text_end": 2295,
+    "pronounce_text_begin": 2129,
+    "pronounce_text_end": 2177
+  },
+  {
+    "text": "直觉做法是切换工具集：进入 Plan Mode，把工具集换成只读子集。退出再换回来。",
+    "pronounce_text": "直觉做法是切换工具集：进入Plan Mode，把工具集换成只读子集。退出再换回来。",
+    "time_begin": 379764,
+    "time_end": 387640.0544217687,
+    "text_begin": 2295,
+    "text_end": 2337,
+    "pronounce_text_begin": 2177,
+    "pronounce_text_end": 2218
+  },
+  {
+    "text": "但这套设计在 cache 视角下是灾难。工具定义就在 cached prefix 里，你改一个工具，从那一刻往后所有的会话历史的缓存全部失效。",
+    "pronounce_text": "但这套设计在cache视角下是灾难。工具定义就在cached prefix里，你改一个工具，从那一刻往后所有的会话历史的缓存全部失效。",
+    "time_begin": 387792,
+    "time_end": 398396.39909297053,
+    "text_begin": 2337,
+    "text_end": 2408,
+    "pronounce_text_begin": 2218,
+    "pronounce_text_end": 2285
+  },
+  {
+    "text": "Claude Code 的解法很巧妙。所有工具一直留着，一个都不删。Plan Mode 本身被实现成两个工具：EnterPlanMode 和 ExitPlanMode。",
+    "pronounce_text": "Claude Code的解法很巧妙。所有工具一直留着，一个都不删。Plan Mode本身被实现成两个工具：EnterPlanMode和ExitPlanMode。",
+    "time_begin": 398556,
+    "time_end": 408603.1201814059,
+    "text_begin": 2408,
+    "text_end": 2492,
+    "pronounce_text_begin": 2285,
+    "pronounce_text_end": 2365
+  },
+  {
+    "text": "模型调一下 EnterPlanMode，系统就给它发一条状态消息，告诉它\"你现在在 Plan Mode 里，只能探索代码，不要写文件，规划完了调 ExitPlanMode\"。",
+    "pronounce_text": "模型调一下EnterPlanMode，系统就给它发一条状态消息，告诉它\"你现在在Plan Mode里，只能探索代码，不要写文件，规划完了调ExitPlanMode\"。",
+    "time_begin": 408744,
+    "time_end": 422935.8820861678,
+    "text_begin": 2492,
+    "text_end": 2579,
+    "pronounce_text_begin": 2365,
+    "pronounce_text_end": 2448
+  },
+  {
+    "text": "工具集没动一根毫毛，缓存完整保留。",
+    "pronounce_text": "工具集没动一根毫毛，缓存完整保留。",
+    "time_begin": 423135.8820861678,
+    "time_end": 426739.4648526077,
+    "text_begin": 2579,
+    "text_end": 2596,
+    "pronounce_text_begin": 2448,
+    "pronounce_text_end": 2465
+  },
+  {
+    "text": "而且因为 EnterPlanMode 本身就是一个工具，模型遇到难题时可以自己决定进入 Plan Mode，不需要等用户切。这是一个意料之外的好处。",
+    "pronounce_text": "而且因为EnterPlanMode本身就是一个工具，模型遇到难题时可以自己决定进入Plan Mode，不需要等用户切。这是一个意料之外的好处。",
+    "time_begin": 426888,
+    "time_end": 437573.66893424036,
+    "text_begin": 2596,
+    "text_end": 2670,
+    "pronounce_text_begin": 2465,
+    "pronounce_text_end": 2536
+  },
+  {
+    "text": "同样的思路也适用于 MCP 工具。Claude Code 可以加载几十个 MCP 工具，全部塞进每次请求成本太高，但中途删除又会击穿缓存。",
+    "pronounce_text": "同样的思路也适用于MCP工具。Claude Code可以加载几十个MCP工具，全部塞进每次请求成本太高，但中途删除又会击穿缓存。",
+    "time_begin": 437724,
+    "time_end": 449605.49659863947,
+    "text_begin": 2670,
+    "text_end": 2739,
+    "pronounce_text_begin": 2536,
+    "pronounce_text_end": 2600
+  },
+  {
+    "text": "他们的解法叫 defer loading。那些不常用的工具发轻量级的占位 stub，只有工具名加一个标记，告诉模型\"这工具存在，但完整定义先不加载\"。",
+    "pronounce_text": "他们的解法叫defer loading。那些不常用的工具发轻量级的占位stub，只有工具名加一个标记，告诉模型\"这工具存在，但完整定义先不加载\"。",
+    "time_begin": 449748,
+    "time_end": 462140.33560090704,
+    "text_begin": 2739,
+    "text_end": 2814,
+    "pronounce_text_begin": 2600,
+    "pronounce_text_end": 2673
+  },
+  {
+    "text": "模型通过 tool search 主动发现，需要才加载完整 schema。",
+    "pronounce_text": "模型通过tool search主动发现，需要才加载完整schema。",
+    "time_begin": 462340.33560090704,
+    "time_end": 467697.02494331065,
+    "text_begin": 2814,
+    "text_end": 2851,
+    "pronounce_text_begin": 2673,
+    "pronounce_text_end": 2707
+  },
+  {
+    "text": "占位 stub 在 prefix 里位置和顺序一直稳定，缓存就稳。",
+    "pronounce_text": "占位stub在prefix里位置和顺序一直稳定，缓存就稳。",
+    "time_begin": 467856,
+    "time_end": 472574.1405895692,
+    "text_begin": 2851,
+    "text_end": 2884,
+    "pronounce_text_begin": 2707,
+    "pronounce_text_end": 2736
+  },
+  {
+    "text": "这两个设计有同一个底层逻辑：模型的状态切换不应该靠改工具集表达，要靠工具调用本身来表达。",
+    "pronounce_text": "这两个设计有同一个底层逻辑：模型的状态切换不应该靠改工具集表达，要靠工具调用本身来表达。",
+    "time_begin": 472716,
+    "time_end": 480975.1836734694,
+    "text_begin": 2884,
+    "text_end": 2928,
+    "pronounce_text_begin": 2736,
+    "pronounce_text_end": 2780
+  },
+  {
+    "text": "第三个反直觉的点，可能也是这篇博客最精华的一段。",
+    "pronounce_text": "第三个反直觉的点，可能也是这篇博客最精华的一段。",
+    "time_begin": 481140,
+    "time_end": 485637.55102040817,
+    "text_begin": 2928,
+    "text_end": 2952,
+    "pronounce_text_begin": 2780,
+    "pronounce_text_end": 2804
+  },
+  {
+    "text": "什么是压缩？长会话的上下文窗口快满了，要把前面的历史总结成一段摘要，把摘要塞回去当新的起点继续聊。这是所有长 Agent 都要面对的问题。",
+    "pronounce_text": "什么是压缩？长会话的上下文窗口快满了，要把前面的历史总结成一段摘要，把摘要塞回去当新的起点继续聊。这是所有长Agent都要面对的问题。",
+    "time_begin": 485784,
+    "time_end": 498780.0544217687,
+    "text_begin": 2952,
+    "text_end": 3021,
+    "pronounce_text_begin": 2804,
+    "pronounce_text_end": 2871
+  },
+  {
+    "text": "直觉做法是怎么压？另起一个独立的 API call。给它一个新的 system prompt，比如\"请总结下面的对话\"，不挂任何工具，把整段历史发过去，让模型吐摘要。",
+    "pronounce_text": "直觉做法是怎么压？另起一个独立的API call。给它一个新的system prompt，比如\"请总结下面的对话\"，不挂任何工具，把整段历史发过去，让模型吐摘要。",
+    "time_begin": 498924,
+    "time_end": 512430.8934240363,
+    "text_begin": 3021,
+    "text_end": 3104,
+    "pronounce_text_begin": 2871,
+    "pronounce_text_end": 2952
+  },
+  {
+    "text": "这个做法干净、模块化、单一职责，工程师看了第一眼会说\"就该这么写\"。",
+    "pronounce_text": "这个做法干净、模块化、单一职责，工程师看了第一眼会说\"就该这么写\"。",
+    "time_begin": 512568,
+    "time_end": 519120.5170068027,
+    "text_begin": 3104,
+    "text_end": 3138,
+    "pronounce_text_begin": 2952,
+    "pronounce_text_end": 2986
+  },
+  {
+    "text": "但这恰恰是最贵的做法。因为前缀匹配是按字节算的。你换了 system prompt，从第一个 token 开始 prefix 就不一样了。原来父对话那么长的缓存，一字节都用不上。",
+    "pronounce_text": "但这恰恰是最贵的做法。因为前缀匹配是按字节算的。你换了system prompt，从第一个token开始prefix就不一样了。原来父对话那么长的缓存，一字节都用不上。",
+    "time_begin": 519264,
+    "time_end": 533792.5714285715,
+    "text_begin": 3138,
+    "text_end": 3227,
+    "pronounce_text_begin": 2986,
+    "pronounce_text_end": 3070
+  },
+  {
+    "text": "整段对话历史，按未缓存的全价计费一遍。",
+    "pronounce_text": "整段对话历史，按未缓存的全价计费一遍。",
+    "time_begin": 533992.5714285715,
+    "time_end": 537851.5736961451,
+    "text_begin": 3227,
+    "text_end": 3246,
+    "pronounce_text_begin": 3070,
+    "pronounce_text_end": 3089
+  },
+  {
+    "text": "而且越长的对话越需要压缩，越需要压缩这一刀就越贵。这是一个反向放大的成本陷阱。",
+    "pronounce_text": "而且越长的对话越需要压缩，越需要压缩这一刀就越贵。这是一个反向放大的成本陷阱。",
+    "time_begin": 538020,
+    "time_end": 545977.3242630386,
+    "text_begin": 3246,
+    "text_end": 3285,
+    "pronounce_text_begin": 3089,
+    "pronounce_text_end": 3128
+  },
+  {
+    "text": "Claude Code 的解法叫 cache-safe forking。压缩这个操作不是另起一个独立任务，是从父对话叉出来的一个分支。",
+    "pronounce_text": "Claude Code的解法叫cache-safe forking。压缩这个操作不是另起一个独立任务，是从父对话叉出来的一个分支。",
+    "time_begin": 546120,
+    "time_end": 554808.7528344671,
+    "text_begin": 3285,
+    "text_end": 3352,
+    "pronounce_text_begin": 3128,
+    "pronounce_text_end": 3193
+  },
+  {
+    "text": "具体做法是：用跟父对话完全一样的 system prompt、user context、工具定义，把父对话的全部历史 prepend 在前面，再把压缩指令作为一条新的 user message append 在最后。",
+    "pronounce_text": "具体做法是：用跟父对话完全一样的system prompt、user context、工具定义，把父对话的全部历史prepend在前面，再把压缩指令作为一条新的user message append在最后。",
+    "time_begin": 554976,
+    "time_end": 569330.4217687075,
+    "text_begin": 3352,
+    "text_end": 3460,
+    "pronounce_text_begin": 3193,
+    "pronounce_text_end": 3296
+  },
+  {
+    "text": "从 API 看过去，这个请求跟父对话最后一次调用几乎一模一样——同样的 prefix、同样的工具、同样的历史。整段 prefix 命中缓存，新付费的就只有最后那条压缩指令本身。",
+    "pronounce_text": "从API看过去，这个请求跟父对话最后一次调用几乎一模一样同样的prefix、同样的工具、同样的历史。整段prefix命中缓存，新付费的就只有最后那条压缩指令本身。",
+    "time_begin": 569484,
+    "time_end": 585034.2494331066,
+    "text_begin": 3460,
+    "text_end": 3548,
+    "pronounce_text_begin": 3296,
+    "pronounce_text_end": 3377
+  },
+  {
+    "text": "这里有一个让人很容易拐错弯的认知：压缩在心智模型里是\"独立的总结任务\"，但在缓存视角下，它是\"父对话的一次延伸\"。叉出去的操作必须和父对话共享前缀，才能省钱。",
+    "pronounce_text": "这里有一个让人很容易拐错弯的认知：压缩在心智模型里是\"独立的总结任务\"，但在缓存视角下，它是\"父对话的一次延伸\"。叉出去的操作必须和父对话共享前缀，才能省钱。",
+    "time_begin": 585180,
+    "time_end": 600695.4195011337,
+    "text_begin": 3548,
+    "text_end": 3627,
+    "pronounce_text_begin": 3377,
+    "pronounce_text_end": 3456
+  },
+  {
+    "text": "代价当然也存在。这套设计会让上下文窗口变紧——压缩时要带上\"用不到\"的完整工具定义，还要预留一段 compaction buffer 给压缩指令和摘要输出。有效容量被吃掉一部分。",
+    "pronounce_text": "代价当然也存在。这套设计会让上下文窗口变紧压缩时要带上\"用不到\"的完整工具定义，还要预留一段compaction buffer给压缩指令和摘要输出。有效容量被吃掉一部分。",
+    "time_begin": 600840,
+    "time_end": 615623.9909297052,
+    "text_begin": 3627,
+    "text_end": 3716,
+    "pronounce_text_begin": 3456,
+    "pronounce_text_end": 3541
+  },
+  {
+    "text": "但相比缓存击穿带来的成本爆炸，这个代价是划算的。",
+    "pronounce_text": "但相比缓存击穿带来的成本爆炸，这个代价是划算的。",
+    "time_begin": 615780,
+    "time_end": 620370.4308390022,
+    "text_begin": 3716,
+    "text_end": 3740,
+    "pronounce_text_begin": 3541,
+    "pronounce_text_end": 3565
+  },
+  {
+    "text": "Anthropic 后来把这套压缩 pattern 直接做进了 API 里。开发者要做长会话 Agent，可以直接调用，不用再自己重新踩一遍坑。",
+    "pronounce_text": "Anthropic后来把这套压缩pattern直接做进了API里。开发者要做长会话Agent，可以直接调用，不用再自己重新踩一遍坑。",
+    "time_begin": 620532,
+    "time_end": 629476.172335601,
+    "text_begin": 3740,
+    "text_end": 3812,
+    "pronounce_text_begin": 3565,
+    "pronounce_text_end": 3631
+  },
+  {
+    "text": "回过头来看这五条原则——前缀匹配、message 不改 prompt、不切模型、不动工具集、压缩共享父 prefix——它们表面上是五条不相关的工程实践。但底层是同一件事。",
+    "pronounce_text": "回过头来看这五条原则前缀匹配、message不改prompt、不切模型、不动工具集、压缩共享父prefix它们表面上是五条不相关的工程实践。但底层是同一件事。",
+    "time_begin": 629640,
+    "time_end": 644470.4308390022,
+    "text_begin": 3812,
+    "text_end": 3898,
+    "pronounce_text_begin": 3631,
+    "pronounce_text_end": 3710
+  },
+  {
+    "text": "Agent 工程师过去关注的是 prompt 写得多漂亮、工具设计多巧、模型选得多准。这些当然重要。",
+    "pronounce_text": "Agent工程师过去关注的是prompt写得多漂亮、工具设计多巧、模型选得多准。这些当然重要。",
+    "time_begin": 644616,
+    "time_end": 652016.045351474,
+    "text_begin": 3898,
+    "text_end": 3948,
+    "pronounce_text_begin": 3710,
+    "pronounce_text_end": 3757
+  },
+  {
+    "text": "但 Claude Code 这篇博客在告诉你：在长会话场景里，真正决定一个产品能不能跑得起的，是更底层的一条约束——你能不能让一段对话从头到尾共享同一个前缀。",
+    "pronounce_text": "但Claude Code这篇博客在告诉你：在长会话场景里，真正决定一个产品能不能跑得起的，是更底层的一条约束你能不能让一段对话从头到尾共享同一个前缀。",
+    "time_begin": 652176,
+    "time_end": 666530.4217687075,
+    "text_begin": 3948,
+    "text_end": 4027,
+    "pronounce_text_begin": 3757,
+    "pronounce_text_end": 3832
+  },
+  {
+    "text": "这条约束改写了所有上层设计。它告诉你：动态调整工具是反模式，切便宜模型可能更贵，独立的总结任务比延伸任务更贵，prompt 里随便塞一个时间戳会让全公司账单变贵。",
+    "pronounce_text": "这条约束改写了所有上层设计。它告诉你：动态调整工具是反模式，切便宜模型可能更贵，独立的总结任务比延伸任务更贵，prompt里随便塞一个时间戳会让全公司账单变贵。",
+    "time_begin": 666684,
+    "time_end": 682791.5283446712,
+    "text_begin": 4027,
+    "text_end": 4108,
+    "pronounce_text_begin": 3832,
+    "pronounce_text_end": 3912
+  },
+  {
+    "text": "这是只有真正在生产规模上跑过 Agent 的团队才会发现的工程现实。它不是某种花哨的优化技巧，是 Agent 这种产品形态在生产环境里的硬性约束。",
+    "pronounce_text": "这是只有真正在生产规模上跑过Agent的团队才会发现的工程现实。它不是某种花哨的优化技巧，是Agent这种产品形态在生产环境里的硬性约束。",
+    "time_begin": 682956,
+    "time_end": 695603.7551020408,
+    "text_begin": 4108,
+    "text_end": 4181,
+    "pronounce_text_begin": 3912,
+    "pronounce_text_end": 3981
+  },
+  {
+    "text": "如果你也在做长会话的 Agent 产品，这一篇值得收藏反复读。我自己读完之后做了一件事——把缓存命中率加进了我们项目的监控面板，跟可用性放在同一个页面上看。Claude Code 团队把它当 SLI，那它就是 SLI。",
+    "pronounce_text": "如果你也在做长会话的Agent产品，这一篇值得收藏反复读。我自己读完之后做了一件事把缓存命中率加进了我们项目的监控面板，跟可用性放在同一个页面上看。Claude Code团队把它当SLI，那它就是SLI。",
+    "time_begin": 695772,
+    "time_end": 712645.7868480725,
+    "text_begin": 4181,
+    "text_end": 4290,
+    "pronounce_text_begin": 3981,
+    "pronounce_text_end": 4083
+  },
+  {
+    "text": "一句话总结今天这篇：Agent 不是给模型加工具，是给缓存让路。你能不能让一段对话从头到尾共享同一个前缀，决定了它能不能跑得起。",
+    "pronounce_text": "一句话总结今天这篇：Agent不是给模型加工具，是给缓存让路。你能不能让一段对话从头到尾共享同一个前缀，决定了它能不能跑得起。",
+    "time_begin": 712800,
+    "time_end": 725285.2154195012,
+    "text_begin": 4290,
+    "text_end": 4354,
+    "pronounce_text_begin": 4083,
+    "pronounce_text_end": 4146
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 725436,
+    "time_end": 730920.3990929705,
+    "text_begin": 4354,
+    "text_end": 4381,
+    "pronounce_text_begin": 4146,
+    "pronounce_text_end": 4172
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "topic": "Claude Code 的省钱命门：缓存",
+  "blog_url": "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything",
+  "source": "lessons-from-building-claude-code-prompt-caching-is-everything",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

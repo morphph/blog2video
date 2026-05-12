@@ -1,0 +1,15 @@
+{
+  "topic": "1.6 亿美金没解决的 Agent 顽疾？",
+  "blog_url": "https://x.com/garrytan/status/2046876981711769720",
+  "source": "garrytan-2046876981711769720",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -8,3 +8,4 @@ cookies/
 .env
 .DS_Store
 **/repo/
+queue/

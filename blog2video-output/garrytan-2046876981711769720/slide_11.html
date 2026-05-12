@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(16, 185, 129, 0.20), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 38px;
+      letter-spacing: -1px;
+    }
+    .title .g { color: #10B981; }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 26px;
+    }
+    .step {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      text-align: left;
+    }
+    .step .num {
+      font-size: 38px;
+      color: #10B981;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 50px;
+    }
+    .step .body { flex: 1; }
+    .step .head {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .step .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .step .desc .em { color: #F59E0B; font-weight: 800; }
+    .verb {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 20px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: center;
+    }
+    .verb .text {
+      font-size: 36px;
+      color: #F59E0B;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">如果你也在养长期 AGENT</div>
+    <div class="title">挑一个 <span class="g">骂过的位置</span></div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="head">打开聊天记录</div>
+          <div class="desc">搜你骂过 <span class="em">"卧槽"</span>或<span class="em">"什么鬼"</span>的位置</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="head">那是你缺的测试</div>
+          <div class="desc">Garry：最诚实的评测启发式</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="head">挑一个，做掉</div>
+          <div class="desc">变成永远不会再踩的护栏</div>
+        </div>
+      </div>
+    </div>
+    <div class="verb">
+      <div class="text">skillify it.</div>
+    </div>
+  </div>
+</body>
+</html>

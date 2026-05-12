@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How to really stop your agents from making the same mistakes",
+    "title_zh": "1.6 亿美金没解决的 Agent 顽疾？",
+    "word_count": 3922,
+    "slug": "garrytan-2046876981711769720"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕同一论点（agent 可靠性来自闭环工程，不是更强模型）展开：两个失败 → latent/deterministic → skill 双向闭环 → skillify 动词 → 10步抽样 → tradeoffs → Hermes 对比 → big idea。线性递进，拆开会失去论证完整性。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "1.6 亿美金没解决的 Agent 顽疾？"
+      }
+    ]
+  }
+}

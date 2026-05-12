@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 22%, rgba(139, 92, 246, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .compare {
+      display: flex;
+      gap: 18px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 22px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 22px 20px;
+      text-align: left;
+    }
+    .col.red {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .col.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .col .name {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .col.red .name { color: #EF4444; }
+    .col.green .name { color: #10B981; }
+    .col .head {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .col .desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .col .desc .em { color: #F59E0B; font-weight: 800; }
+    .conclusion {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .conclusion .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .conclusion .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .conclusion .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">和 HERMES AGENT 的对比</div>
+    <div class="title">skill 系统 <span class="p">两层</span> 缺一不可</div>
+    <div class="compare">
+      <div class="col red">
+        <div class="name">Hermes</div>
+        <div class="head">只做生成层</div>
+        <div class="desc">Agent 自己创建/修改 skill<br>没测试 · 没评测<br><span class="em">六周后静悄悄腐烂</span></div>
+      </div>
+      <div class="col green">
+        <div class="name">GBrain</div>
+        <div class="head">补上验证层</div>
+        <div class="desc">单测 · resolver 评测<br>check-resolvable · DRY 审计<br><span class="em">每天健康检查</span></div>
+      </div>
+    </div>
+    <div class="conclusion">
+      <div class="label">GARRY 总结</div>
+      <div class="text">
+        生成层 + 验证层<br>
+        <span class="em">两个都要</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

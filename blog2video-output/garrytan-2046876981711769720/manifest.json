@@ -1,0 +1,18 @@
+{
+  "video_number": 1,
+  "title": "1.6 亿美金没解决的 Agent 顽疾？",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    { "slide_number": 1, "file": "slide_1.html", "estimated_duration_seconds": 35 },
+    { "slide_number": 2, "file": "slide_2.html", "estimated_duration_seconds": 120 },
+    { "slide_number": 3, "file": "slide_3.html", "estimated_duration_seconds": 100 },
+    { "slide_number": 4, "file": "slide_4.html", "estimated_duration_seconds": 135 },
+    { "slide_number": 5, "file": "slide_5.html", "estimated_duration_seconds": 125 },
+    { "slide_number": 6, "file": "slide_6.html", "estimated_duration_seconds": 90 },
+    { "slide_number": 7, "file": "slide_7.html", "estimated_duration_seconds": 85 },
+    { "slide_number": 8, "file": "slide_8.html", "estimated_duration_seconds": 135 },
+    { "slide_number": 9, "file": "slide_9.html", "estimated_duration_seconds": 135 },
+    { "slide_number": 10, "file": "slide_10.html", "estimated_duration_seconds": 135 },
+    { "slide_number": 11, "file": "slide_11.html", "estimated_duration_seconds": 100 }
+  ]
+}

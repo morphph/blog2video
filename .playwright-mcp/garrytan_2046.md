@@ -1,0 +1,570 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /garrytan/article/2046876981711769720
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Garry Tan Verified account @garrytan 90 replies, 222 reposts, 1655 likes, 4831 bookmarks, 918086 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /garrytan
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Garry Tan Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /garrytan
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Garry Tan
+                          - generic [ref=e115]:
+                            - img "Verified account" [ref=e116]
+                            - link [ref=e119]
+                      - link "@garrytan" [ref=e129] [cursor=pointer]:
+                        - /url: /garrytan
+                        - generic [ref=e130]: "@garrytan"
+                    - button "More" [ref=e136] [cursor=pointer]:
+                      - img [ref=e140]
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - link "Image" [ref=e150] [cursor=pointer]:
+                      - /url: /garrytan/article/2046876981711769720/media/2046876933779329024
+                      - generic "Image" [ref=e154]:
+                        - img "Image" [ref=e156]
+                    - generic [ref=e157]:
+                      - generic [ref=e159]: How to really stop your agents from making the same mistakes
+                      - group "90 replies, 222 reposts, 1655 likes, 4831 bookmarks, 918086 views" [ref=e161]:
+                        - button "90 Replies. Reply" [ref=e163] [cursor=pointer]:
+                          - generic [ref=e164]:
+                            - img [ref=e167]
+                            - generic [ref=e172]: "90"
+                        - button "222 reposts. Repost" [ref=e174] [cursor=pointer]:
+                          - generic [ref=e175]:
+                            - img [ref=e178]
+                            - generic [ref=e183]: "222"
+                        - button "1655 Likes. Like" [ref=e185] [cursor=pointer]:
+                          - generic [ref=e186]:
+                            - img [ref=e189]
+                            - generic [ref=e194]: 1.6K
+                        - link "918086 views. View post analytics" [ref=e196] [cursor=pointer]:
+                          - /url: /garrytan/status/2046876981711769720/analytics
+                          - generic [ref=e197]:
+                            - img [ref=e200]
+                            - generic [ref=e205]: 918K
+                        - button "Bookmark" [ref=e207] [cursor=pointer]:
+                          - img [ref=e211]
+                        - button "Share post" [ref=e216] [cursor=pointer]:
+                          - img [ref=e220]
+                      - generic [ref=e228]:
+                        - generic [ref=e231]: "LangChain has raised $160 million. Three years of development. A billion-dollar valuation. LangSmith, their testing platform, is genuinely sophisticated: trajectory evals, trace-to-dataset pipelines, LLM-as-judge, regression suites, unit test frameworks for tools. They have the pieces. Credit where it's due."
+                        - generic [ref=e234]: But pieces aren't a practice.
+                        - generic [ref=e236]:
+                          - generic [ref=e237]: LangChain gives you testing
+                          - generic [ref=e238]: tools
+                          - generic [ref=e239]: . It never tells you what to test, in what order, or when you're done.
+                        - generic [ref=e242]: "There's no opinionated workflow that says, in order:"
+                        - list [ref=e243]:
+                          - listitem [ref=e244]:
+                            - generic [ref=e246]: this failure happened
+                          - listitem [ref=e247]:
+                            - generic [ref=e249]: now write a skill
+                          - listitem [ref=e250]:
+                            - generic [ref=e252]: now write the deterministic code
+                          - listitem [ref=e253]:
+                            - generic [ref=e255]: now write unit tests
+                          - listitem [ref=e256]:
+                            - generic [ref=e258]: now write LLM evals
+                          - listitem [ref=e259]:
+                            - generic [ref=e261]: now add a resolver trigger
+                          - listitem [ref=e262]:
+                            - generic [ref=e264]: now eval the resolver
+                          - listitem [ref=e265]:
+                            - generic [ref=e267]: now audit for duplicates
+                          - listitem [ref=e268]:
+                            - generic [ref=e270]: now smoke test
+                          - listitem [ref=e271]:
+                            - generic [ref=e273]: now file correctly
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: That loop doesn't exist.
+                          - generic [ref=e277]: You have to invent it yourself from scattered primitives. A great many users of AI still don't test their agents at all, because
+                          - generic [ref=e278]: the framework they chose probably gave them a gym membership without a workout plan.
+                        - generic [ref=e281]: Most AI agent "reliability" is vibes-based. Prompt tweaks. Bigger system messages. "Please don't hallucinate" incantations. That stuff decays the moment the conversation gets complex. The frameworks that raised hundreds of millions of dollars to solve this gave you monitoring dashboards and unit test helpers and said "good luck."
+                        - generic [ref=e284]: "My agent screwed up twice this week. Neither failure can happen again. Not because I asked nicely. Because I turned each failure into a permanent structural fix: a skill with tests that run every day, forever."
+                        - generic [ref=e286]:
+                          - generic [ref=e287]: I call the practice "skillify."
+                          - generic [ref=e288]: Once you use it, your agents won't keep making the same mistakes. Here's how it works.
+                        - 'heading "Failure 1: The Trip That Was Already in the Database" [level=2] [ref=e290]':
+                          - generic [ref=e292]: "Failure 1: The Trip That Was Already in the Database"
+                        - generic [ref=e295]: I asked my OpenClaw about an old business trip, nearly ten years back, buried somewhere in calendar history. Simple question. Should take one second.
+                        - generic [ref=e298]: "Instead the agent did this:"
+                        - list [ref=e299]:
+                          - listitem [ref=e300]:
+                            - generic [ref=e302]: Called the live calendar API → blocked (too far back).
+                          - listitem [ref=e303]:
+                            - generic [ref=e305]: Tried email search → noisy results, nothing conclusive.
+                          - listitem [ref=e306]:
+                            - generic [ref=e308]: Tried the calendar API again with different params → still blocked.
+                          - listitem [ref=e309]:
+                            - generic [ref=e311]: Five minutes later, searched my local knowledge base and found it instantly.
+                        - generic [ref=e313]:
+                          - generic [ref=e314]: The answer had been sitting in my own data the whole time.
+                          - generic [ref=e315]: 3,146 calendar files spanning 2013 through 2026.
+                          - generic [ref=e316]: Already indexed. Already local. One grep away.
+                        - generic [ref=e319]: The agent just didn't look there first.
+                        - generic [ref=e321]:
+                          - generic [ref=e322]: In the framework I've been writing about (
+                          - link "thin harness, fat skills" [ref=e1039] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2042925773300908103
+                            - generic [ref=e1040]: thin harness, fat skills
+                          - generic [ref=e326]: ) there's a key distinction between work that requires judgment and work that requires precision. I call them
+                          - generic [ref=e327]: latent
+                          - generic [ref=e328]: and
+                          - generic [ref=e329]: deterministic
+                          - generic [ref=e330]: . Calendar grep is deterministic. Same input, same output, every time. No model needed. But the agent did it in latent space anyway, spinning up reasoning, making API calls, interpreting results, when a three-line script would have returned the answer instantly.
+                        - generic [ref=e332]:
+                          - generic [ref=e333]: That's the bug. Not a wrong answer. A wrong
+                          - generic [ref=e334]: side
+                          - generic [ref=e335]: .
+                        - 'heading "The fix: calendar-recall (Steps 1 + 2)" [level=2] [ref=e337]':
+                          - generic [ref=e339]: "The fix: calendar-recall (Steps 1 + 2)"
+                        - generic [ref=e341]:
+                          - generic [ref=e342]: In thin harness / fat skills, a
+                          - generic [ref=e343]: skill
+                          - generic [ref=e344]: "is a markdown procedure that teaches the model how to approach a task. Not what to do (the user supplies the what). The skill supplies the process. Think of it like a method call: same procedure, radically different outputs depending on what you pass in."
+                        - generic [ref=e347]: "Here's the skill that came out of this failure:"
+                        - blockquote [ref=e348]:
+                          - generic [ref=e350]: "name: calendar-recall description: \"Brain-first historical calendar lookup. ALWAYS use this before any live API for any event not in the future or the last 48 hours.\""
+                        - generic [ref=e353]: "And the hard rule inside:"
+                        - blockquote [ref=e354]:
+                          - generic [ref=e356]: Live calendar APIs are ONLY for events in the FUTURE or the LAST 48 HOURS. Everything historical goes through the local knowledge base first.
+                        - generic [ref=e358]:
+                          - generic [ref=e359]: "Here's the thing that makes this work: the agent itself wrote the deterministic script. The skill file (markdown, living in latent space) told the agent"
+                          - generic [ref=e360]: how
+                          - generic [ref=e361]: "to fix the problem. The agent read the skill, understood that calendar search is deterministic work, and generated a script to handle it:"
+                        - blockquote [ref=e362]:
+                          - generic [ref=e364]: "$ node scripts/calendar-recall.mjs search \"Singapore\" Found 2 matching day(s): ── 2016-05-07 ── Flight to Singapore, Mandarin Oriental check-in ── 2016-05-08 ── Lunch with investors at Fullerton Hotel"
+                        - generic [ref=e367]: Code that runs in under 100 milliseconds (most of which is Bun startup; the actual grep is sub-millisecond). Zero LLM calls. Zero network. Just local files.
+                        - generic [ref=e369]:
+                          - generic [ref=e370]: "This is the loop that makes the whole architecture work:"
+                          - generic [ref=e371]: the latent space builds the deterministic tool, then the deterministic tool constrains the latent space.
+                          - generic [ref=e372]: The agent used judgment (latent) to write calendar-recall.mjs. Now the skill forces the agent to
+                          - generic [ref=e373]: run
+                          - generic [ref=e374]: that script instead of reasoning about calendar data. The model's intelligence created the constraint that prevents the model from being stupid.
+                        - generic [ref=e377]: The old failure path becomes structurally unreachable. The skill says "search local first." The script does the search. The agent never gets a chance to be clever about it or get it wrong again.
+                        - 'heading "Failure 2: \"28 Minutes\" (Steps 1 + 2 again)" [level=2] [ref=e379]':
+                          - generic [ref=e381]: "Failure 2: \"28 Minutes\" (Steps 1 + 2 again)"
+                        - generic [ref=e384]: "Same day. Agent says: \"Your next meeting is in 28 minutes.\""
+                        - generic [ref=e387]: "Reality: 88 minutes away. The agent had done UTC→PT timezone math in its head and was off by exactly an hour."
+                        - generic [ref=e390]: "The thing is, a script already existed (context-now.mjs) that outputs this:"
+                        - blockquote [ref=e391]:
+                          - generic [ref=e393]: "{ \"now\": \"2026-04-21T07:38:12-07:00\", \"upcomingEvents\": [{ \"summary\": \"App Ops Sprint Planning\", \"minutesUntil\": 88 }] }"
+                        - generic [ref=e396]: Code that runs in about 50 milliseconds. Zero ambiguity. The agent just didn't run it.
+                        - generic [ref=e399]: "Same shape as before: deterministic work (subtracting timestamps) done in latent space. The model was doing mental math when a script had the answer."
+                        - generic [ref=e402]: "The fix: context-now, the skill:"
+                        - blockquote [ref=e403]:
+                          - generic [ref=e405]: "name: context-now description: \"ALWAYS-ON discipline: run context-now.mjs before making ANY time-sensitive claim. Never do UTC→PT conversion in your head.\""
+                        - generic [ref=e408]: "Here's the simple before/after with and without these simple skills:"
+                        - link "Image" [ref=e415] [cursor=pointer]:
+                          - /url: /garrytan/article/2046876981711769720/media/2046867689805959168
+                          - generic "Image" [ref=e419]:
+                            - img "Image" [ref=e421]
+                        - 'heading "Skillify: The pattern that will save your sanity" [level=2] [ref=e423]':
+                          - generic [ref=e425]: "Skillify: The pattern that will save your sanity"
+                        - generic [ref=e427]:
+                          - generic [ref=e428]: Two failures. Same shape.
+                          - generic [ref=e429]: The agent had the right tool and chose cleverness instead of discipline.
+                          - generic [ref=e430]: The wrong thing happened in the wrong machine space.
+                        - generic [ref=e433]: In a normal AI setup, the AI will apologize, promise to do better, and two weeks later the same thing happens with a different query or a different timezone. The agent has no memory of the bug, no test for the bug, nothing stops it from recurring.
+                        - generic [ref=e435]:
+                          - generic [ref=e436]: Skillify
+                          - generic [ref=e437]: is the fix. Every failure becomes a skill. Every skill has tests. The bug becomes structurally impossible to repeat.
+                        - generic [ref=e440]: "Here's the 10-item checklist I use when a failure gets promoted:"
+                        - blockquote [ref=e441]:
+                          - generic [ref=e443]: □ 1. SKILL.md — the contract (name, triggers, rules) □ 2. Deterministic code — scripts/*.mjs (no LLM for what code can do) □ 3. Unit tests — vitest □ 4. Integration tests — live endpoints □ 5. LLM evals — quality + correctness □ 6. Resolver trigger — entry in AGENTS.md □ 7. Resolver eval — verify the trigger actually routes □ 8. Check resolvable + DRY audit □ 9. E2E smoke test □ 10. Brain filing rules
+                        - generic [ref=e446]: A feature that doesn't pass all ten is not a skill. It's just code that happens to work today.
+                        - generic [ref=e449]: "The two failures above already walked through steps 1 and 2: write the SKILL.md (the contract), then write the deterministic code (the script the agent builds and then uses). But before I walk through the remaining eight steps, I want to show you what skillify looks like in daily use, because it's not just a response to failure. It became a verb."
+                        - heading "Skillify as a verb" [level=2] [ref=e451]:
+                          - generic [ref=e453]: Skillify as a verb
+                        - generic [ref=e456]: For me, building my OpenClaw (and GBrain), the checklist started as a failure-response protocol. Then it became the way I built everything.
+                        - generic [ref=e459]: "Here's what my actual workflow looks like. I'm talking to my agent in natural language. We build something together in conversation. I try it. It works. Then I say one word:"
+                        - blockquote [ref=e460]:
+                          - generic [ref=e461]:
+                            - generic [ref=e462]: "Garry:"
+                            - generic [ref=e463]: hot damn it worked. can you remember this as a webhook skill and skillify it, next time we need to do some webhooks? why was this so hard to get right? anyway it's good now. DRY it up too
+                        - generic [ref=e466]: That was an OAuth webhook integration. We spent an hour getting it to work. Then "skillify it" turned the ad-hoc session into a durable skill with tests, a resolver entry, and documentation. Next time I need a webhook, the skill exists. The agent reads it. The hard-won knowledge from that hour is permanent.
+                        - generic [ref=e469]: "Another one. We discovered that our container needs a headless browser for certain tasks, and a headed browser on my desktop for others:"
+                        - blockquote [ref=e470]:
+                          - generic [ref=e471]:
+                            - generic [ref=e472]: "Garry:"
+                            - generic [ref=e473]: great! so we should actually remember this as a skill whenever anything in openclaw needs a headless browser! and also know that if we need a headed browser we should ask the user to run gstack browser and give us a pair-agent code. skillify it!
+                        - generic [ref=e476]: One message. The agent writes skills/browser/SKILL.md with the decision tree, the deterministic scripts, the tests. Now every future session that needs a browser gets routed to the right tool automatically.
+                        - generic [ref=e479]: "Or this. I noticed the agent kept sending me ngrok links without checking if they actually worked:"
+                        - blockquote [ref=e480]:
+                          - generic [ref=e481]:
+                            - generic [ref=e482]: "Garry:"
+                            - generic [ref=e483]: can we make a skill that says whenever you send me a link you have to curl it yourself to make sure the endpoint is open and the tunnel works? skillify it!
+                        - generic [ref=e486]: "Or the calendar double-booking that almost cost me a meeting:"
+                        - blockquote [ref=e487]:
+                          - generic [ref=e488]:
+                            - generic [ref=e489]: "Garry:"
+                            - generic [ref=e490]: Here is one regular skill I need you to write. It's the calendar check skill. Tomorrow I have a double booked 11am. Make a skill, make it deterministic to check these kinds of things.
+                        - generic [ref=e492]:
+                          - generic [ref=e493]: One sentence. Code, skill, tests, resolver entry, reachability audit. The whole 10-step checklist in one breath. My OpenClaw knows, does it, and now it's a groove. I've done it dozens of times now.
+                          - generic [ref=e494]: I couldn't live without it.
+                        - generic [ref=e496]:
+                          - generic [ref=e497]: "The pattern is always the same: prototype in conversation, see it work, say \"skillify,\" and the prototype becomes permanent infrastructure. I don't write specs. I don't file tickets."
+                          - generic [ref=e498]: I talk to my agent, we solve the problem together, and then the solution becomes a skill that the agent can use forever without me.
+                        - generic [ref=e501]: "This is what $160 million in framework funding missed. Not the testing primitives. Not the eval tooling. The workflow. The moment where a human says \"that worked, now make it permanent\" and the system knows exactly what \"permanent\" means: SKILL.md, deterministic code, unit tests, integration tests, LLM evals, resolver trigger, resolver eval, DRY audit, smoke test, brain filing. Ten steps. One word."
+                        - generic [ref=e504]: Here's what the remaining eight steps look like in practice.
+                        - 'heading "Step 3: Unit tests" [level=2] [ref=e506]':
+                          - generic [ref=e508]: "Step 3: Unit tests"
+                        - generic [ref=e511]: "Classic vitest. Deterministic functions, deterministic assertions. calendar-recall.mjs exports pure functions like parseEventLine, eventMatchesKeyword, searchKeyword, formatJson. Each one gets tested against fixture data: synthetic calendar files in a temp directory, known inputs, known outputs."
+                        - generic [ref=e514]: "The kind of bug these catch: parseEventLine silently drops events with Unicode characters in the location field. dateFromPath returns null for leap-year dates. formatJson omits the attendees array when there's only one person. Small, boring, critical. If the script produces wrong output, the skill produces wrong answers, and the agent confidently tells me the wrong thing."
+                        - generic [ref=e517]: For context-now, unit tests verify timezone formatting, quiet-hours detection, and the minutesUntil calculation across DST boundaries. One test feeds in a time 3 minutes before a DST transition and verifies the output doesn't jump by 60 minutes. That's the exact bug that caused the "28 minutes" failure. It's now structurally impossible.
+                        - generic [ref=e520]: I have 179 unit tests across 5 suites. They run in under 2 seconds.
+                        - 'heading "Step 4: Integration tests" [level=2] [ref=e522]':
+                          - generic [ref=e524]: "Step 4: Integration tests"
+                        - generic [ref=e527]: These hit live endpoints and real data. Does calendar-recall.mjs actually find events in the real brain repo, not just the test fixtures? Does context-now.mjs produce valid JSON when the calendar cache is stale or missing? Integration tests catch the bugs that unit tests miss because the fixture data was too clean. Real data has malformed event lines, missing timezone fields, calendar files with Windows line endings, events that span midnight.
+                        - generic [ref=e530]: "The rule: if you find yourself manually checking whether the script did the right thing on real data, that check should be an integration test."
+                        - 'heading "Step 5: LLM evals" [level=2] [ref=e532]':
+                          - generic [ref=e534]: "Step 5: LLM evals"
+                        - generic [ref=e537]: "This is where it gets interesting. Some outputs require judgment to evaluate. \"Is this calendar summary useful?\" is not a yes/no question a script can answer. So I use LLM-as-judge: a model evaluating another model's output against a rubric."
+                        - generic [ref=e540]: For context-now, 35 evals run daily. One of them feeds the agent a message like "hey, my flight leaves in about 45 minutes, will I make it to SFO?" and checks whether the agent runs context-now.mjs before answering or tries to do the math in its head. If the agent takes the bait and computes the time itself, the eval fails.
+                        - generic [ref=e543]: Another eval gives the agent a UTC timestamp and asks "what time is that for me?" The correct behavior is to run the script and quote the result. The incorrect behavior is to do the conversion mentally. The eval catches both the wrong answer AND the wrong process, because even if the mental math happens to be right this time, it'll be wrong next time.
+                        - generic [ref=e546]: "The most honest eval heuristic I've found: search your conversation history for when you said \"fucking shit\" or \"wtf.\" Those are the test cases you're missing."
+                        - 'heading "Step 6: Resolver trigger" [level=2] [ref=e548]':
+                          - generic [ref=e550]: "Step 6: Resolver trigger"
+                        - generic [ref=e552]:
+                          - generic [ref=e553]: A
+                          - generic [ref=e554]: resolver
+                          - generic [ref=e555]: "is a routing table for context: when task type X appears, load skill Y. I wrote about resolvers in detail"
+                          - link "here" [ref=e1042] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2044479509874020852
+                            - generic [ref=e1043]: here
+                          - generic [ref=e559]: . Each skill needs a trigger entry in AGENTS.md, the file that teaches the agent what skills exist and when to use them.
+                        - generic [ref=e562]: "Resolver triggers are just rows in a markdown table:"
+                        - link "Image" [ref=e569] [cursor=pointer]:
+                          - /url: /garrytan/article/2046876981711769720/media/2046868722351259648
+                          - generic "Image" [ref=e573]:
+                            - img "Image" [ref=e575]
+                        - generic [ref=e577]:
+                          - generic [ref=e578]: "The bug this step catches: you write a new skill but forget to add it to the resolver. The skill exists. The capability exists. The system can't reach it. It's like having a surgeon on staff but not listing them in the hospital directory. Worse than not having the skill at all, because you"
+                          - generic [ref=e579]: think
+                          - generic [ref=e580]: the system handles it.
+                        - 'heading "Step 7: Resolver eval" [level=2] [ref=e582]':
+                          - generic [ref=e584]: "Step 7: Resolver eval"
+                        - generic [ref=e586]:
+                          - generic [ref=e587]: This is the layer most people miss entirely. A resolver trigger says "this phrase should route to this skill." A resolver eval
+                          - generic [ref=e588]: tests
+                          - generic [ref=e589]: that it actually does.
+                        - generic [ref=e592]: "My resolver eval suite has 50+ test cases like this:"
+                        - blockquote [ref=e593]:
+                          - generic [ref=e595]: "{ intent: 'check my signatures', expectedSkill: 'executive-assistant' }, { intent: 'who is Pedro Franceschi', expectedSkill: 'brain-ops' }, { intent: 'save this article', expectedSkill: 'idea-ingest' }, { intent: 'what time is my meeting', expectedSkill: 'context-now' }, { intent: 'find my 2016 trip', expectedSkill: 'calendar-recall' },"
+                        - generic [ref=e598]: "Two failure modes. False negative: the skill should fire but doesn't, because the trigger description is wrong or missing. False positive: the wrong skill fires, because two triggers overlap. \"What's on my calendar tomorrow\" should route to calendar-check, not calendar-recall and not google-calendar. Three skills, three different time domains, one phrase that could plausibly match any of them. The resolver eval catches the ambiguity before a user hits it."
+                        - generic [ref=e601]: I run these evals both as deterministic structural tests (does the AGENTS.md table contain the right mapping?) and as LLM routing tests (given this intent, does the model actually pick the right skill?). Both layers matter. The table can be correct and the model can still route wrong because the trigger description is vague.
+                        - 'heading "Step 8: Check-resolvable + DRY audit" [level=2] [ref=e603]':
+                          - generic [ref=e605]: "Step 8: Check-resolvable + DRY audit"
+                        - generic [ref=e608]: After a month of building, I had 40+ skills. Some created in response to specific incidents, others spawned by sub-agents running crons. Nobody was maintaining the resolver table. Skills were being born but not registered.
+                        - generic [ref=e611]: "So I built check-resolvable. A meta-test that walks the entire chain: AGENTS.md resolver → SKILL.md → script/cron. If a script exists that does useful work but has no path from the resolver, it's unreachable. The LLM will never know to use it."
+                        - generic [ref=e613]:
+                          - generic [ref=e614]: First run found 6 unreachable skills out of 40+.
+                          - generic [ref=e615]: Fifteen percent of the system's capabilities were dark.
+                        - list [ref=e616]:
+                          - listitem [ref=e617]:
+                            - generic [ref=e619]: A flight tracker that nobody could invoke by asking about flights.
+                          - listitem [ref=e620]:
+                            - generic [ref=e622]: A content-ideas generator that only ran on cron but couldn't be triggered manually.
+                          - listitem [ref=e623]:
+                            - generic [ref=e625]: A citation fixer that existed in the skills directory but wasn't listed in the resolver at all.
+                        - generic [ref=e628]: "Fixed in an hour. Just added trigger entries to AGENTS.md. Now check-resolvable runs weekly as part of gbrain doctor. It checks three things:"
+                        - list [ref=e629]:
+                          - listitem [ref=e630]:
+                            - generic [ref=e632]: Every skill directory with a SKILL.md has a corresponding entry in the resolver.
+                          - listitem [ref=e633]:
+                            - generic [ref=e635]: Every script referenced by a skill is actually callable (file exists, exports the right functions).
+                          - listitem [ref=e636]:
+                            - generic [ref=e638]: No two skills have overlapping trigger descriptions that would cause ambiguous routing.
+                        - generic [ref=e641]: "The DRY audit runs alongside it. You end up with fifteen skills that sort of do the same thing if you're not careful, and the resolver picks whichever one the dice roll lands on. For calendar-recall:"
+                        - link "Image" [ref=e648] [cursor=pointer]:
+                          - /url: /garrytan/article/2046876981711769720/media/2046869068071002112
+                          - generic "Image" [ref=e652]:
+                            - img "Image" [ref=e654]
+                        - generic [ref=e657]: Four skills in the same domain. Zero overlap. Each has its lane. That matrix isn't a diagram drawn for this post. It lives inside the SKILL.md, and the audit script parses it. Build a sixth calendar skill that steps on another's lane and the audit fails before the skill can ship.
+                        - 'heading "Step 9: E2E smoke test" [level=2] [ref=e659]':
+                          - generic [ref=e661]: "Step 9: E2E smoke test"
+                        - generic [ref=e664]: The full pipeline, end to end.
+                        - list [ref=e665]:
+                          - listitem [ref=e666]:
+                            - generic [ref=e667]:
+                              - generic [ref=e668]: Ask the agent "when did I go to Singapore?" and verify that it runs
+                              - generic [ref=e669]: calendar-recall.mjs
+                              - generic [ref=e670]: ", gets the right answer, and formats it correctly."
+                          - listitem [ref=e671]:
+                            - generic [ref=e672]:
+                              - generic [ref=e673]: Ask "what time is my next meeting?" and verify it runs
+                              - generic [ref=e674]: context-now.mjs
+                              - generic [ref=e675]: instead of doing mental math.
+                        - generic [ref=e678]: Smoke tests are the last line of defense. Everything else can pass and the system can still fail if the pieces don't connect. The skill can be correct, the script can be correct, the resolver can be correct, and the agent can still choose to ignore all of it and wing it. The smoke test catches that.
+                        - 'heading "Step 10: Brain filing rules" [level=2] [ref=e680]':
+                          - generic [ref=e682]: "Step 10: Brain filing rules"
+                        - generic [ref=e685]: Every skill that writes to the knowledge base needs to know where things go. A person goes in people/. A company goes in companies/. A policy analysis goes in civic/. I caught 10 out of 13 brain-writing skills filing to the wrong directory because they'd each hardcoded their own paths instead of consulting the resolver.
+                        - generic [ref=e688]: The filing rules doc catalogs common misfiling patterns. Sources vs. originals. People vs. companies (when someone IS a company). The skill reads the rules before creating any page. Zero misfilings since.
+                        - 'heading "GBrain: where Skillify lives, and you should adopt it from my GBrain Skill Pack" [level=2] [ref=e690]':
+                          - generic [ref=e692]: "GBrain: where Skillify lives, and you should adopt it from my GBrain Skill Pack"
+                        - generic [ref=e694]:
+                          - generic [ref=e695]: The skillify pattern isn't specific to
+                          - link "OpenClaw" [ref=e1045] [cursor=pointer]:
+                            - /url: https://openclaw.ai/
+                            - generic [ref=e1046]: OpenClaw
+                          - generic [ref=e699]: or any particular harness. It's built into
+                          - link "GBrain" [ref=e1048] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain
+                            - generic [ref=e1049]: GBrain
+                          - generic [ref=e703]: . GBrain is the open source knowledge engine I wrote that sits underneath whatever harness you use. It manages your brain repo, runs your evals, and enforces the quality gates that make skills durable.
+                        - generic [ref=e706]: A GBrain SkillPack is a portable bundle of skills, resolver triggers, deterministic scripts, and tests that you can install into any agent setup just by asking OpenClaw/Hermes Agent to do it. It's how skills and abilities I wrote for my OpenClaw/Hermes Agent can be auto-added to YOUR OpenClaw — including the whole 10-step skillify output, packaged so you can drop it into your OpenClaw/Hermes Agent and it just works.
+                        - generic [ref=e708]:
+                          - generic [ref=e709]: The
+                          - generic [ref=e710]: skillify
+                          - generic [ref=e711]: checklist from earlier isn't a suggestion. It's what gbrain doctor actually checks.
+                        - generic [ref=e714]:
+                          - generic [ref=e715]: gbrain doctor --fix
+                          - generic [ref=e716]: auto-repairs DRY violations, replaces duplicated blocks with convention references, all guarded by git working-tree checks so nothing gets clobbered.
+                        - heading "Why Hermes Agent isn't enough on its own" [level=2] [ref=e718]:
+                          - generic [ref=e720]: Why Hermes Agent isn't enough on its own
+                        - generic [ref=e722]:
+                          - link "Hermes Agent" [ref=e1051] [cursor=pointer]:
+                            - /url: https://github.com/NousResearch/hermes-agent
+                            - generic [ref=e1052]: Hermes Agent
+                          - generic [ref=e726]: "from Nous Research does something genuinely great: it has a skill_manage tool that lets the agent itself create, patch, and delete skills based on what it learns. When the agent finishes a complex task or recovers from an error, it proposes a skill and writes it to disk. That's procedural memory the agent earns on its own. Progressive disclosure (load a skill index first, pull the full SKILL.md only when selected). Bounded memory (MEMORY.md capped at 2,200 chars). Conditional activation (skills auto-hide when required tools aren't available). Smart design."
+                        - generic [ref=e729]: But Hermes doesn't test its skills. No unit tests on the deterministic code. No resolver evals to verify routing. No check-resolvable to find dark skills. No DRY audit to catch duplicates. No daily health check that goes red when something drifts.
+                        - generic [ref=e732]: "The failure modes I've watched accumulate in any untested skill system:"
+                        - list [ref=e733]:
+                          - listitem [ref=e734]:
+                            - generic [ref=e736]: Agent creates deploy-k8s on Monday. Thursday it creates kubernetes-deploy from a different conversation. Both exist. Both trigger on similar phrases. Ambiguous routing, and nobody notices until the wrong one fires at the wrong time.
+                          - listitem [ref=e737]:
+                            - generic [ref=e739]: Skill works perfectly when written. Six weeks later the upstream API changes shape. The skill silently returns garbage until a human spots it.
+                          - listitem [ref=e740]:
+                            - generic [ref=e742]: An autonomously-created skill has a weak trigger that never matches. It becomes an orphan, eating index tokens, never running, slowly rotting.
+                        - generic [ref=e745]: This is the "without tests, any codebase rots" problem that software engineering solved in 2005. Agent skills are no different. Hermes handles creation beautifully. GBrain handles verification. You need both.
+                        - heading "The big idea" [level=2] [ref=e747]:
+                          - generic [ref=e749]: The big idea
+                        - generic [ref=e752]: In a healthy software engineering team, every bug gets a test. That test lives forever. The bug becomes structurally impossible to recur. AI agents should work the same way.
+                        - generic [ref=e754]:
+                          - generic [ref=e755]: Every failure becomes a skill. Every skill has evals. Every eval runs daily. The agent's judgment improves
+                          - generic [ref=e756]: permanently
+                          - generic [ref=e757]: ", not just for the current session, not just while the context window holds."
+                        - generic [ref=e760]: The trip failure won't happen again. The timezone failure won't happen again. And when the next failure shows up (and it will, because this is an adversarial game against entropy and taste) it'll get skillified too.
+                        - generic [ref=e763]: The agent I work with a year from now will be shaped by every mistake it made in the year before. That's not a nice-to-have. That's the whole thesis.
+                        - generic [ref=e766]: Boil the ocean. Make your agent do something, then skillify it. You do that every day and you have a god damn smart OpenClaw that does everything you want it to do.
+                        - generic [ref=e769]: Or you could just load GBrain, use all the code I've already written, and skip ahead to your own Jarvis from Iron Man sooner.
+                        - generic [ref=e772]: "--"
+                        - generic [ref=e774]:
+                          - generic [ref=e775]: GStack to speed up in Claude Code
+                          - link "github.com/garrytan/gstack" [ref=e1054] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gstack
+                            - generic [ref=e1055]: github.com/garrytan/gstack
+                          - generic [ref=e781]: GBrain to build your own Jarvis from Iron Man in OpenClaw/Hermes Agent
+                          - link "github.com/garrytan/gbrain" [ref=e1057] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain
+                            - generic [ref=e1058]: github.com/garrytan/gbrain
+                      - status [ref=e788]:
+                        - generic [ref=e789]:
+                          - img [ref=e790]
+                          - generic [ref=e794]:
+                            - generic [ref=e795]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e796] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e800]:
+                    - link "9:01 AM · Apr 22, 2026" [ref=e802] [cursor=pointer]:
+                      - /url: /garrytan/status/2046876981711769720
+                      - time [ref=e803]: 9:01 AM · Apr 22, 2026
+                    - generic [ref=e804]: ·
+                    - link "918K Views" [ref=e805] [cursor=pointer]:
+                      - /url: /garrytan/status/2046876981711769720/analytics
+                      - generic [ref=e808]: 918K
+                      - generic [ref=e809]: Views
+                  - group "90 replies, 222 reposts, 1655 likes, 4831 bookmarks, 918086 views" [ref=e812]:
+                    - button "90 Replies. Reply" [ref=e814] [cursor=pointer]:
+                      - generic [ref=e815]:
+                        - img [ref=e818]
+                        - generic [ref=e823]: "90"
+                    - button "222 reposts. Repost" [ref=e825] [cursor=pointer]:
+                      - generic [ref=e826]:
+                        - img [ref=e829]
+                        - generic [ref=e834]: "222"
+                    - button "1655 Likes. Like" [ref=e836] [cursor=pointer]:
+                      - generic [ref=e837]:
+                        - img [ref=e840]
+                        - generic [ref=e845]: 1.6K
+                    - button "4831 Bookmarks. Bookmark" [ref=e847] [cursor=pointer]:
+                      - generic [ref=e848]:
+                        - img [ref=e851]
+                        - generic [ref=e856]: 4.8K
+                    - button "Share post" [ref=e859] [cursor=pointer]:
+                      - img [ref=e863]
+                  - button "Read 90 replies" [ref=e866] [cursor=pointer]:
+                    - generic [ref=e867]:
+                      - img [ref=e868]
+                      - generic [ref=e872]: Read 90 replies
+      - generic "Trending" [ref=e877]:
+        - generic [ref=e878]:
+          - region "Sign up" [ref=e880]:
+            - heading "New to X?" [level=2] [ref=e882]:
+              - generic [ref=e883]: New to X?
+            - generic [ref=e884]: Sign up now to get your own personalized timeline!
+            - generic [ref=e885]:
+              - iframe [ref=e888]:
+                - button "Sign up with Google. Opens in new tab" [ref=f5e3] [cursor=pointer]:
+                  - generic [ref=f5e5]:
+                    - img [ref=f5e7]
+                    - generic [ref=f5e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e889] [cursor=pointer]:
+                - generic [ref=e890]:
+                  - img [ref=e891]
+                  - generic [ref=e895]: Sign up with Apple
+              - link "Create account" [ref=e896] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e899]: Create account
+            - generic [ref=e900]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e901] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e902] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e903] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e905]:
+            - heading "Relevant people" [level=2] [ref=e907]:
+              - generic [ref=e908]: Relevant people
+            - list [ref=e909]:
+              - listitem [ref=e910] [cursor=pointer]:
+                - generic [ref=e911]:
+                  - link [ref=e921]:
+                    - /url: /garrytan
+                  - generic [ref=e924]:
+                    - generic [ref=e925]:
+                      - generic [ref=e927]:
+                        - link "Garry Tan Verified account" [ref=e929]:
+                          - /url: /garrytan
+                          - generic [ref=e930]:
+                            - generic [ref=e932]: Garry Tan
+                            - generic [ref=e934]:
+                              - img "Verified account" [ref=e935]
+                              - link [ref=e938]
+                        - link "@garrytan" [ref=e947]:
+                          - /url: /garrytan
+                          - generic [ref=e949]: "@garrytan"
+                      - button "Follow @garrytan" [ref=e951]:
+                        - generic [ref=e954]: Follow
+                    - generic [ref=e955]:
+                      - text: President & CEO
+                      - link "@ycombinator" [ref=e958]:
+                        - /url: /ycombinator
+                      - text: —Founder
+                      - link "@garryslist" [ref=e961]:
+                        - /url: /garryslist
+                      - text: —Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop
+          - region "Trending now" [ref=e963]:
+            - heading "Trending now" [level=1] [ref=e964]
+            - 'generic "Timeline: Trending now" [ref=e965]':
+              - generic [ref=e966]:
+                - heading "What’s happening" [level=2] [ref=e970]:
+                  - generic [ref=e971]: What’s happening
+                - link "Sports · Trending Kleber Trending with JJ Redick, Rui Hachimura" [ref=e974] [cursor=pointer]:
+                  - generic [ref=e975]:
+                    - generic [ref=e977]: Sports · Trending
+                    - generic [ref=e978]: Kleber
+                    - generic [ref=e979]:
+                      - text: Trending with
+                      - link "JJ Redick" [ref=e980]:
+                        - /url: /search?q=JJ%20Redick&src=trend_click&vertical=trends
+                      - text: ","
+                      - link "Rui Hachimura" [ref=e981]:
+                        - /url: /search?q=Rui%20Hachimura&src=trend_click&vertical=trends
+                - link "Trending in United States No Rui" [ref=e984] [cursor=pointer]:
+                  - generic [ref=e985]:
+                    - generic [ref=e987]: Trending in United States
+                    - generic [ref=e988]: No Rui
+                - link "Sports · Trending Jaxson Hayes" [ref=e991] [cursor=pointer]:
+                  - generic [ref=e992]:
+                    - generic [ref=e994]: Sports · Trending
+                    - generic [ref=e995]: Jaxson Hayes
+                - 'link "Sports · Trending #LakeShow Trending with #Lakers, #ThunderUp" [ref=e998] [cursor=pointer]':
+                  - generic [ref=e999]:
+                    - generic [ref=e1001]: Sports · Trending
+                    - generic [ref=e1004]: "#LakeShow"
+                    - generic [ref=e1005]:
+                      - text: Trending with
+                      - link "#Lakers" [ref=e1006]:
+                        - /url: /search?q=%23Lakers&src=trend_click&vertical=trends
+                        - generic [ref=e1007]: "#Lakers"
+                      - text: ","
+                      - link "#ThunderUp" [ref=e1008]:
+                        - /url: /search?q=%23ThunderUp&src=trend_click&vertical=trends
+                        - generic [ref=e1010]: "#ThunderUp"
+                - link "Show more" [ref=e1013] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e1014]: Show more
+          - navigation "Footer" [ref=e1016]:
+            - generic [ref=e1017]:
+              - link "Terms of Service" [ref=e1018] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e1019]: "|"
+            - generic [ref=e1020]:
+              - link "Privacy Policy" [ref=e1021] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e1022]: "|"
+            - generic [ref=e1023]:
+              - link "Cookie Policy" [ref=e1024] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e1025]: "|"
+            - generic [ref=e1026]:
+              - link "Accessibility" [ref=e1027] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e1028]: "|"
+            - generic [ref=e1029]:
+              - link "Ads info" [ref=e1030] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e1031]: "|"
+            - button "More" [ref=e1032] [cursor=pointer]:
+              - generic [ref=e1033]:
+                - text: More
+                - img [ref=e1034]
+            - generic [ref=e1037]: © 2026 X Corp.

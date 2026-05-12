@@ -15,7 +15,7 @@ Configuration lives in `config/wechat-publisher.json`.
    - `published/wechat_publish_log.json`
    - `published/wechat_publish_log.csv`
    - `published/wechat_publish_queue.json`
-7. Codex uses Computer Use on WeChat desktop to upload, schedule, check `声明原创`, and publish.
+7. Codex uses Computer Use on WeChat desktop to upload the video, upload the custom cover photo, schedule, check `声明原创`, and publish.
 8. Google Sheet mirrors the CSV and adds preview/final URL updates.
 
 The intake scan defaults to Drive folders modified in the last `3d`. Set `BLOG2VIDEO_INTAKE_MAX_AGE` to tune the first-run/backfill window.
@@ -66,6 +66,8 @@ The Google Sheet must include:
 ## Notes
 
 WeChat Channels does not have a reliable public publishing API for this workflow, so the final publishing step uses WeChat desktop and Computer Use. Keep deterministic work in scripts; use UI automation only for the WeChat form.
+
+`upload_cover_photo` is enabled by default in `config/wechat-publisher.json`. During UI publishing, click `封面预览` -> `编辑`, choose the dashed `上传封面` tile, upload the delivered `cover_file`, confirm the preview, and only then continue. If the custom cover is not visible in the preview, stop and mark the row `needs_review`.
 
 `declare_original` is enabled by default in `config/wechat-publisher.json`. During UI publishing, check `声明原创`; when WeChat shows the originality rights modal, accept the agreement and confirm the declaration before clicking `发表`.
 

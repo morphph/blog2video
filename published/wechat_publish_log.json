@@ -12,11 +12,11 @@
     "description": "Y Combinator 的 CEO Garry Tan，最近写了一篇文章解释他为什么连续 5 个月凌晨 2 点还在写代码。我读完之后只想说一句话：他已经不是在用 AI 了，他是在给自己造一个永远在长大的第二大脑。今天不聊\"如何提升效率\"这种口号，只聊他这套系统真正不一样的地方在哪里。\n\n#ai #llm #aiagent #agent #anthropic #claude #claudecode #aicoding #agenticcoding #智能体 #大语言模型 #codex #openai #chagpt",
     "collection": "aicoding",
     "scheduled_at_sgt": "2026-05-12 22:30",
-    "status": "scheduled",
+    "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "",
+    "error": "Custom cover photo was not uploaded during the live test; verify or edit the scheduled post before publish.",
     "created_at": "2026-05-12T08:52:59Z",
-    "updated_at": "2026-05-12T08:52:59Z"
+    "updated_at": "2026-05-12T09:09:00Z"
   }
 ]

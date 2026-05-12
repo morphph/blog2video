@@ -17,6 +17,7 @@ Use this skill for the Blog2Video -> 微信视频号 publishing workflow.
 - Time zone: Singapore, `Asia/Singapore`
 - Schedule slots: `13:00` and `22:30`
 - Collections: `aicoding` or `harness`
+- Cover photo upload: required. Use `cover_file`, do not rely on WeChat's auto-selected video frame.
 - Declare original: enabled by default. Check `声明原创`, accept the originality terms modal, then continue publishing.
 - Final target: set scheduled publishing, then click publish so the item enters the WeChat scheduled publish queue.
 
@@ -71,12 +72,18 @@ Use WeChat desktop, not browser, because browser URLs may be blocked for Compute
 3. Choose `发表视频`.
 4. Upload `queue/<source_slug>/<video_file>`.
 5. Fill `description`.
-6. Upload or verify `cover_file` when the UI exposes cover selection.
+6. Upload `cover_file`:
+   - Click `封面预览` -> `编辑`.
+   - In `编辑封面`, click the dashed `上传封面` tile with the plus icon.
+   - Select `queue/<source_slug>/<cover_file>`.
+   - Wait until the uploaded cover is visible in the preview, then click `确认`.
+   - If the uploaded cover is not visible, stop and mark the row `needs_review`; do not publish.
 7. Select collection: `aicoding` or `harness`.
 8. Select `定时` and set `scheduled_at_sgt`.
 9. Check `声明原创`; if the originality rights modal appears, check the agreement box and click `声明原创`.
-10. Click the final publish button to enter the scheduled publish queue after user confirmation when required by Computer Use policy.
-11. Record preview/final URL in the Google Sheet when available.
+10. Before final publish, verify all four required UI states are present: custom cover preview, collection, scheduled time, and originality declaration.
+11. Click the final publish button to enter the scheduled publish queue after user confirmation when required by Computer Use policy.
+12. Record preview/final URL in the Google Sheet when available.
 
 ## Review
 

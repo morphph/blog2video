@@ -18,11 +18,13 @@
       "subtitle_file": "video_1_audio.vtt",
       "collection": "aicoding",
       "scheduled_at_sgt": "2026-05-12 22:30",
-      "status": "scheduled",
+      "status": "needs_review",
+      "upload_cover_photo": true,
       "declare_original": true,
       "wechat_preview_url": "",
       "final_video_url": "",
-      "updated_at": "2026-05-12T08:52:59Z"
+      "error": "Custom cover photo was not uploaded during the live test; verify or edit the scheduled post before publish.",
+      "updated_at": "2026-05-12T09:09:00Z"
     }
   ]
 }

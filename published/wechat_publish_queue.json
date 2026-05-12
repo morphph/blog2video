@@ -5,5 +5,26 @@
     "13:00",
     "22:30"
   ],
-  "items": []
+  "items": [
+    {
+      "source_slug": "garrytan-2046876981711769720",
+      "video_number": 1,
+      "topic": "1.6 亿美金没解决的 Agent 顽疾？",
+      "source_blog_url": "https://x.com/garrytan/status/2046876981711769720",
+      "drive_folder": "gdrive:blog2video/garrytan-2046876981711769720",
+      "video_file": "video_1.mp4",
+      "cover_file": "video_1_cover_photo.png",
+      "script_file": "video_1_script.md",
+      "subtitle_file": "video_1_audio.vtt",
+      "collection": "aicoding",
+      "scheduled_at_sgt": "2026-05-13 13:00",
+      "status": "scheduled",
+      "upload_cover_photo": true,
+      "declare_original": true,
+      "wechat_preview_url": "",
+      "final_video_url": "",
+      "error": "",
+      "updated_at": "2026-05-12T10:34:30Z"
+    }
+  ]
 }

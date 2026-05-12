@@ -13,7 +13,10 @@
     "watch:once": "node dist/queue-watcher.js",
     "cleanup": "node dist/cleanup.js",
     "draft:all": "node dist/batch-draft.js",
-    "publish:xhs:draft": "node dist/publish-xiaohongshu.js --draft"
+    "publish:xhs:draft": "node dist/publish-xiaohongshu.js --draft",
+    "wechat:intake": "node dist/wechat-drive-intake.js",
+    "wechat:intake:dry-run": "node dist/wechat-drive-intake.js --dry-run",
+    "wechat:intake:init-log": "node dist/wechat-drive-intake.js --init-log"
   },
   "dependencies": {
     "openai": "^6.25.0",

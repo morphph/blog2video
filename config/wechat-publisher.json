@@ -1,0 +1,9 @@
+{
+  "drive_remote": "gdrive:blog2video",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1SZ1osc9waK5TuR6XbvLULLQbzf2eU-Pm",
+  "google_sheet_id": "1KmX5qt9R6m-5L0LMB9SZPTlLuS-0mpK_-m29AYyB8Iw",
+  "google_sheet_url": "https://docs.google.com/spreadsheets/d/1KmX5qt9R6m-5L0LMB9SZPTlLuS-0mpK_-m29AYyB8Iw",
+  "timezone": "Asia/Singapore",
+  "schedule_slots_sgt": ["13:00", "22:30"],
+  "collections": ["aicoding", "harness"]
+}

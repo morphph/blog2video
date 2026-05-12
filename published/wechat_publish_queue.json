@@ -5,5 +5,24 @@
     "13:00",
     "22:30"
   ],
-  "items": []
+  "items": [
+    {
+      "source_slug": "garrytan-2053127519872614419",
+      "video_number": 1,
+      "topic": "10 万页大脑：他凭什么 40 分钟干完 40 小时？",
+      "source_blog_url": "https://x.com/garrytan/status/2053127519872614419",
+      "drive_folder": "gdrive:blog2video/garrytan-2053127519872614419",
+      "video_file": "video_1.mp4",
+      "cover_file": "video_1_cover_photo.png",
+      "script_file": "video_1_script.md",
+      "subtitle_file": "video_1_audio.vtt",
+      "collection": "aicoding",
+      "scheduled_at_sgt": "2026-05-12 22:30",
+      "status": "scheduled",
+      "declare_original": true,
+      "wechat_preview_url": "",
+      "final_video_url": "",
+      "updated_at": "2026-05-12T08:52:59Z"
+    }
+  ]
 }

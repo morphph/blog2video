@@ -17,6 +17,7 @@ Use this skill for the Blog2Video -> 微信视频号 publishing workflow.
 - Time zone: Singapore, `Asia/Singapore`
 - Schedule slots: `13:00` and `22:30`
 - Collections: `aicoding` or `harness`
+- Declare original: enabled by default. Check `声明原创`, accept the originality terms modal, then continue publishing.
 - Final target: set scheduled publishing, then click publish so the item enters the WeChat scheduled publish queue.
 
 ## Intake
@@ -73,8 +74,9 @@ Use WeChat desktop, not browser, because browser URLs may be blocked for Compute
 6. Upload or verify `cover_file` when the UI exposes cover selection.
 7. Select collection: `aicoding` or `harness`.
 8. Select `定时` and set `scheduled_at_sgt`.
-9. Click the final publish button to enter the scheduled publish queue after user confirmation when required by Computer Use policy.
-10. Record preview/final URL in the Google Sheet when available.
+9. Check `声明原创`; if the originality rights modal appears, check the agreement box and click `声明原创`.
+10. Click the final publish button to enter the scheduled publish queue after user confirmation when required by Computer Use policy.
+11. Record preview/final URL in the Google Sheet when available.
 
 ## Review
 

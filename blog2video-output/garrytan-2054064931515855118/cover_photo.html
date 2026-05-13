@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%; height: 100%;
+      padding: 140px 72px 400px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(16, 185, 129, 0.20), transparent 55%),
+        radial-gradient(circle at 80% 78%, rgba(139, 92, 246, 0.20), transparent 55%),
+        radial-gradient(circle at 50% 48%, rgba(245, 158, 11, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 44px;
+    }
+    .stats-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 44px;
+      width: 100%;
+      max-width: 920px;
+    }
+    .stat {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 22px 14px;
+      text-align: center;
+    }
+    .stat .num {
+      font-size: 72px;
+      font-weight: 900;
+      color: #10B981;
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -1px;
+    }
+    .stat .num .unit { font-size: 28px; font-weight: 800; }
+    .stat .label {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .headline {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -2px;
+      margin-bottom: 48px;
+      color: #FFFFFF;
+    }
+    .headline .yellow { color: #F59E0B; }
+    .headline .green { color: #10B981; }
+    .source-tag {
+      display: inline-block;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 999px;
+      padding: 14px 32px;
+      font-size: 22px;
+      color: #6B6B80;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .source-tag .author { color: #8B8BA8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-tag">精读AI · 复杂度棘轮</div>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="num">72<span class="unit">小时</span></div>
+        <div class="label">连续输出</div>
+      </div>
+      <div class="stat">
+        <div class="num">14<span class="unit">PR</span></div>
+        <div class="label">全部合并</div>
+      </div>
+      <div class="stat">
+        <div class="num">29K<span class="unit">行</span></div>
+        <div class="label">新增代码</div>
+      </div>
+    </div>
+    <div class="headline">
+      <span class="yellow">百分之九十</span><br>
+      测试覆盖<br>
+      凭什么不再是<span class="green">奢侈</span>？
+    </div>
+    <div class="source-tag">
+      <span class="author">Garry Tan · YC President</span> · Complexity Ratchet
+    </div>
+  </div>
+</body>
+</html>

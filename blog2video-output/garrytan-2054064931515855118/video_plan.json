@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The AI Agent Complexity Ratchet: Why 90% Test Coverage Is Required",
+    "title_zh": "72 小时 14 个 PR：百分之九十测试覆盖凭什么不再是奢侈",
+    "word_count": 4386,
+    "slug": "garrytan-2054064931515855118"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕同一论证（AI 真正解锁的不是写得快而是验证得起，棘轮让质量只升不降）线性递进，14 段紧扣 thesis，拆开会失去复利感。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "72 小时 14 个 PR：百分之九十测试覆盖凭什么不再是奢侈"
+      }
+    ]
+  }
+}

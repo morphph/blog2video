@@ -1,0 +1,282 @@
+[
+  {
+    "text": "Anthropic 在 Claude Code 里加了一个一行命令，叫 /goal。表面上是让 Claude 自己一直跑到事情完成。但它真正藏着的，是一个更大的设计选择。今天不聊怎么用，也不教你写条件——只聊这个选择。",
+    "pronounce_text": "Anthropic在Claude Code里加了一个一行命令，叫，goal。表面上是让Claude自己一直跑到事情完成。但它真正藏着的，是一个更大的设计选择。今天不聊怎么用，也不教你写条件只聊这个选择。",
+    "time_begin": 0,
+    "time_end": 16920.22675736961,
+    "text_begin": 0,
+    "text_end": 109,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 101
+  },
+  {
+    "text": "机制其实很简单。你输入 /goal，后面跟一个完成条件。比如说，test 目录下所有测试通过，并且 lint 步骤干净。Claude Code 收到这一行，立刻开始第一轮工作，条件本身就是任务说明。",
+    "pronounce_text": "机制其实很简单。你输入，goal，后面跟一个完成条件。比如说，test目录下所有测试通过，并且lint步骤干净。Claude Code收到这一行，立刻开始第一轮工作，条件本身就是任务说明。",
+    "time_begin": 17064,
+    "time_end": 32451.709750566893,
+    "text_begin": 109,
+    "text_end": 208,
+    "pronounce_text_begin": 101,
+    "pronounce_text_end": 195
+  },
+  {
+    "text": "每一轮结束之后，系统不会把控制权还给你。它会调用另一个小模型，默认是 Haiku，把你的条件加上目前为止的对话历史，扔给它判断一句话：达成了，还是没达成。",
+    "pronounce_text": "每一轮结束之后，系统不会把控制权还给你。它会调用另一个小模型，默认是Haiku，把你的条件加上目前为止的对话历史，扔给它判断一句话：达成了，还是没达成。",
+    "time_begin": 32616,
+    "time_end": 47225.84126984127,
+    "text_begin": 208,
+    "text_end": 285,
+    "pronounce_text_begin": 195,
+    "pronounce_text_end": 271
+  },
+  {
+    "text": "如果是达成，goal 自动清除，记录一条完成。如果是没达成，小模型会顺手给一句理由，作为下一轮的指导喂回主模型，让它继续。",
+    "pronounce_text": "如果是达成，goal自动清除，记录一条完成。如果是没达成，小模型会顺手给一句理由，作为下一轮的指导喂回主模型，让它继续。",
+    "time_begin": 47376,
+    "time_end": 59640.62585034013,
+    "text_begin": 285,
+    "text_end": 346,
+    "pronounce_text_begin": 271,
+    "pronounce_text_end": 331
+  },
+  {
+    "text": "我读完文档最有感觉的是这一点。大多数人看到这个命令，会以为重点是\"Claude 现在能自己一直跑\"。不是。",
+    "pronounce_text": "我读完文档最有感觉的是这一点。大多数人看到这个命令，会以为重点是\"Claude现在能自己一直跑\"。不是。",
+    "time_begin": 59796,
+    "time_end": 69715.410430839,
+    "text_begin": 346,
+    "text_end": 399,
+    "pronounce_text_begin": 331,
+    "pronounce_text_end": 383
+  },
+  {
+    "text": "重点是 Anthropic 把\"判断做完了没\"这件事，从干活的那个模型手里拿走了，交给一个独立的、级别更低的小模型。",
+    "pronounce_text": "重点是Anthropic把\"判断做完了没\"这件事，从干活的那个模型手里拿走了，交给一个独立的、级别更低的小模型。",
+    "time_begin": 69876,
+    "time_end": 80352.68934240362,
+    "text_begin": 399,
+    "text_end": 457,
+    "pronounce_text_begin": 383,
+    "pronounce_text_end": 439
+  },
+  {
+    "text": "这在 LLM 系统设计里有个名字，叫 generator-evaluator 分离。一个负责生成，一个负责评分，职责切开。以前这种分离通常发生在一整个任务的最后一步，做一次质量打分。",
+    "pronounce_text": "这在LLM系统设计里有个名字，叫generator-evaluator分离。一个负责生成，一个负责评分，职责切开。以前这种分离通常发生在一整个任务的最后一步，做一次质量打分。",
+    "time_begin": 80496,
+    "time_end": 94687.8820861678,
+    "text_begin": 457,
+    "text_end": 548,
+    "pronounce_text_begin": 439,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "/goal 把这件事压到了每一轮对话的粒度上。每一轮结束，评估器都来一次。这不是新功能，是把一个架构选择，做成了一行命令。",
+    "pronounce_text": "goal把这件事压到了每一轮对话的粒度上。每一轮结束，评估器都来一次。这不是新功能，是把一个架构选择，做成了一行命令。",
+    "time_begin": 94824,
+    "time_end": 106322.36734693877,
+    "text_begin": 548,
+    "text_end": 609,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 585
+  },
+  {
+    "text": "文档里有一张对比表，我觉得它比所有功能介绍都更有立场。它把三种\"让 Claude 继续跑\"的方式放在一起。",
+    "pronounce_text": "文档里有一张对比表，我觉得它比所有功能介绍都更有立场。它把三种\"让Claude继续跑\"的方式放在一起。",
+    "time_begin": 106488,
+    "time_end": 115722.42176870749,
+    "text_begin": 609,
+    "text_end": 662,
+    "pronounce_text_begin": 585,
+    "pronounce_text_end": 636
+  },
+  {
+    "text": "第一种是 /goal。上一轮结束，下一轮就开始，直到评估器说条件达成才停。第二种是 /loop。它按时间间隔触发，比如每五分钟跑一次，直到你叫停。第三种叫 Stop hook。",
+    "pronounce_text": "第一种是，goal。上一轮结束，下一轮就开始，直到评估器说条件达成才停。第二种是，loop。它按时间间隔触发，比如每五分钟跑一次，直到你叫停。第三种叫Stop hook。",
+    "time_begin": 115884,
+    "time_end": 132711.3469387755,
+    "text_begin": 662,
+    "text_end": 750,
+    "pronounce_text_begin": 636,
+    "pronounce_text_end": 721
+  },
+  {
+    "text": "每轮结束之后跑你自己写的脚本或者 prompt，由你来决定要不要继续。",
+    "pronounce_text": "每轮结束之后跑你自己写的脚本或者prompt，由你来决定要不要继续。",
+    "time_begin": 132876,
+    "time_end": 138279.12925170068,
+    "text_begin": 750,
+    "text_end": 785,
+    "pronounce_text_begin": 721,
+    "pronounce_text_end": 755
+  },
+  {
+    "text": "这三个不是替代关系。区别也不在能跑多久，而在\"谁来触发下一轮\"。条件达成、时间到了、还是你的代码说了算。",
+    "pronounce_text": "这三个不是替代关系。区别也不在能跑多久，而在\"谁来触发下一轮\"。条件达成、时间到了、还是你的代码说了算。",
+    "time_begin": 138420,
+    "time_end": 150046.07709750568,
+    "text_begin": 785,
+    "text_end": 837,
+    "pronounce_text_begin": 755,
+    "pronounce_text_end": 807
+  },
+  {
+    "text": "这是一个触发器选择问题，选错就是浪费 token，或者根本停不下来。",
+    "pronounce_text": "这是一个触发器选择问题，选错就是浪费token，或者根本停不下来。",
+    "time_begin": 150246.07709750568,
+    "time_end": 156369.02494331065,
+    "text_begin": 837,
+    "text_end": 871,
+    "pronounce_text_begin": 807,
+    "pronounce_text_end": 840
+  },
+  {
+    "text": "讲到这里，有一个最容易被忽略的限制，必须单独拎出来。那个负责判断的小模型，不能调用任何工具。它看不到文件系统，跑不了测试，连一次 grep 都做不了。",
+    "pronounce_text": "讲到这里，有一个最容易被忽略的限制，必须单独拎出来。那个负责判断的小模型，不能调用任何工具。它看不到文件系统，跑不了测试，连一次grep都做不了。",
+    "time_begin": 156528,
+    "time_end": 170162.60317460317,
+    "text_begin": 871,
+    "text_end": 946,
+    "pronounce_text_begin": 840,
+    "pronounce_text_end": 913
+  },
+  {
+    "text": "它能看到的，只有 Claude 自己在对话里\"晒\"出来的内容。",
+    "pronounce_text": "它能看到的，只有Claude自己在对话里\"晒\"出来的内容。",
+    "time_begin": 170316,
+    "time_end": 174685.84126984127,
+    "text_begin": 946,
+    "text_end": 977,
+    "pronounce_text_begin": 913,
+    "pronounce_text_end": 942
+  },
+  {
+    "text": "这条约束直接决定了什么条件能写，什么条件写了等于没写。",
+    "pronounce_text": "这条约束直接决定了什么条件能写，什么条件写了等于没写。",
+    "time_begin": 174852,
+    "time_end": 179732.68027210885,
+    "text_begin": 977,
+    "text_end": 1004,
+    "pronounce_text_begin": 942,
+    "pronounce_text_end": 969
+  },
+  {
+    "text": "举个例子。\"代码没有 bug\"——这个条件评估器没法判断，它没办法跑代码。\"性能优化了\"——也不行，没数据可看。",
+    "pronounce_text": "举个例子。\"代码没有bug\" 这个条件评估器没法判断，它没办法跑代码。\"性能优化了\" 也不行，没数据可看。",
+    "time_begin": 179892,
+    "time_end": 189857.85034013606,
+    "text_begin": 1004,
+    "text_end": 1060,
+    "pronounce_text_begin": 969,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "但\"npm test 退出码是零\"就有效。为什么？因为 Claude 在干活的时候，真的会去跑 npm test，结果会打到对话历史里，评估器读到那段输出，就能判断。",
+    "pronounce_text": "但\"npm test退出码是零\"就有效。为什么？因为Claude在干活的时候，真的会去跑npm test，结果会打到对话历史里，评估器读到那段输出，就能判断。",
+    "time_begin": 190008,
+    "time_end": 203468.45351473923,
+    "text_begin": 1060,
+    "text_end": 1143,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1101
+  },
+  {
+    "text": "这就把\"写条件\"这件事，从一个意图表达问题，变成了一个工程问题——你要想清楚，怎么让主 agent 主动产生可被验证的证据。",
+    "pronounce_text": "这就把\"写条件\"这件事，从一个意图表达问题，变成了一个工程问题你要想清楚，怎么让主agent主动产生可被验证的证据。",
+    "time_begin": 203616,
+    "time_end": 214429.37868480725,
+    "text_begin": 1143,
+    "text_end": 1205,
+    "pronounce_text_begin": 1101,
+    "pronounce_text_end": 1159
+  },
+  {
+    "text": "任何设计都有代价。这个设计的代价至少有三层。",
+    "pronounce_text": "任何设计都有代价。这个设计的代价至少有三层。",
+    "time_begin": 214596,
+    "time_end": 218327.2925170068,
+    "text_begin": 1205,
+    "text_end": 1227,
+    "pronounce_text_begin": 1159,
+    "pronounce_text_end": 1181
+  },
+  {
+    "text": "第一层，评估器可能判错。Haiku 这种小模型能力有限，可能给出错误的\"达成\"，让一个没完成的任务被提前清除；也可能给出错误的\"没达成\"，让明明做完的事继续烧 token。",
+    "pronounce_text": "第一层，评估器可能判错。Haiku这种小模型能力有限，可能给出错误的\"达成\"，让一个没完成的任务被提前清除;也可能给出错误的\"没达成\"，让明明做完的事继续烧token。",
+    "time_begin": 218484,
+    "time_end": 233395.7006802721,
+    "text_begin": 1227,
+    "text_end": 1313,
+    "pronounce_text_begin": 1181,
+    "pronounce_text_end": 1265
+  },
+  {
+    "text": "第二层，条件必须自带证据。这听起来简单，但实际写的时候，你会发现一半你想表达的目标，都没办法在对话里直接呈现证据。条件设计的难度，被低估了。",
+    "pronounce_text": "第二层，条件必须自带证据。这听起来简单，但实际写的时候，你会发现一半你想表达的目标，都没办法在对话里直接呈现证据。条件设计的难度，被低估了。",
+    "time_begin": 233532,
+    "time_end": 247723.8820861678,
+    "text_begin": 1313,
+    "text_end": 1383,
+    "pronounce_text_begin": 1265,
+    "pronounce_text_end": 1335
+  },
+  {
+    "text": "第三层，token 会累积。评估本身很便宜，因为用的是小模型。但只要条件没达成，主轮就会一直跑，主模型一直在烧。文档自己也建议你在条件里加一句兜底，比如最多跑二十轮就停。",
+    "pronounce_text": "第三层，token会累积。评估本身很便宜，因为用的是小模型。但只要条件没达成，主轮就会一直跑，主模型一直在烧。文档自己也建议你在条件里加一句兜底，比如最多跑二十轮就停。",
+    "time_begin": 247860,
+    "time_end": 264095.2380952381,
+    "text_begin": 1383,
+    "text_end": 1468,
+    "pronounce_text_begin": 1335,
+    "pronounce_text_end": 1419
+  },
+  {
+    "text": "还有一点也要交代。/goal 本质上是已有的 Stop hook 机制的语法糖，所以它受 hooks 系统的权限约束。在某些受管的企业环境里，可能根本启用不了。",
+    "pronounce_text": "还有一点也要交代。goal本质上是已有的Stop hook机制的语法糖，所以它受hooks系统的权限约束。在某些受管的企业环境里，可能根本启用不了。",
+    "time_begin": 264240,
+    "time_end": 277398.5941043084,
+    "text_begin": 1468,
+    "text_end": 1548,
+    "pronounce_text_begin": 1419,
+    "pronounce_text_end": 1493
+  },
+  {
+    "text": "我不觉得 /goal 是一个\"新功能\"。它是一个被压缩成一行命令的架构表态——让 agent 继续跑下去的那个开关，不应该握在干活的那个模型手里。",
+    "pronounce_text": "我不觉得，goal是一个\"新功能\"。它是一个被压缩成一行命令的架构表态让agent继续跑下去的那个开关，不应该握在干活的那个模型手里。",
+    "time_begin": 277560,
+    "time_end": 290428.34467120183,
+    "text_begin": 1548,
+    "text_end": 1621,
+    "pronounce_text_begin": 1493,
+    "pronounce_text_end": 1560
+  },
+  {
+    "text": "这件事的影响，远不止 Claude Code 这一个产品。任何在做 agentic loop 的人，都可以把这套思路套用过去：生成和评估分离，评估器轻量化，评估器的反馈作为下一轮的指导。",
+    "pronounce_text": "这件事的影响，远不止Claude Code这一个产品。任何在做agentic loop的人，都可以把这套思路套用过去：生成和评估分离，评估器轻量化，评估器的反馈作为下一轮的指导。",
+    "time_begin": 290592,
+    "time_end": 305550.1405895692,
+    "text_begin": 1621,
+    "text_end": 1714,
+    "pronounce_text_begin": 1560,
+    "pronounce_text_end": 1649
+  },
+  {
+    "text": "一句话总结。让 agent 跑下去的开关，不该握在干活的那个模型手里。",
+    "pronounce_text": "一句话总结。让agent跑下去的开关，不该握在干活的那个模型手里。",
+    "time_begin": 305712,
+    "time_end": 312090.36734693876,
+    "text_begin": 1714,
+    "text_end": 1749,
+    "pronounce_text_begin": 1649,
+    "pronounce_text_end": 1682
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 312228,
+    "time_end": 317758.8390022676,
+    "text_begin": 1749,
+    "text_end": 1776,
+    "pronounce_text_begin": 1682,
+    "pronounce_text_end": 1708
+  }
+]

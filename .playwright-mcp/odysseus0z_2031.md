@@ -1,0 +1,321 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /odysseus0z/article/2031850264240800131
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "George Verified account @odysseus0z 22 replies, 65 reposts, 840 likes, 1996 bookmarks, 222797 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /odysseus0z
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "George Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /odysseus0z
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: George
+                          - generic [ref=e115]:
+                            - img "Verified account" [ref=e116]
+                            - link [ref=e119]
+                      - link "@odysseus0z" [ref=e129] [cursor=pointer]:
+                        - /url: /odysseus0z
+                        - generic [ref=e130]: "@odysseus0z"
+                    - button "More" [ref=e136] [cursor=pointer]:
+                      - img [ref=e140]
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - link "Image" [ref=e150] [cursor=pointer]:
+                      - /url: /odysseus0z/article/2031850264240800131/media/2031848418843496448
+                      - generic "Image" [ref=e154]:
+                        - img "Image" [ref=e156]
+                    - generic [ref=e157]:
+                      - generic [ref=e159]: Getting Started with OpenAI Symphony
+                      - group "22 replies, 65 reposts, 840 likes, 1996 bookmarks, 222797 views" [ref=e161]:
+                        - button "22 Replies. Reply" [ref=e163] [cursor=pointer]:
+                          - generic [ref=e164]:
+                            - img [ref=e167]
+                            - generic [ref=e172]: "22"
+                        - button "65 reposts. Repost" [ref=e174] [cursor=pointer]:
+                          - generic [ref=e175]:
+                            - img [ref=e178]
+                            - generic [ref=e183]: "65"
+                        - button "840 Likes. Like" [ref=e185] [cursor=pointer]:
+                          - generic [ref=e186]:
+                            - img [ref=e189]
+                            - generic [ref=e194]: "840"
+                        - link "222797 views. View post analytics" [ref=e196] [cursor=pointer]:
+                          - /url: /odysseus0z/status/2031850264240800131/analytics
+                          - generic [ref=e197]:
+                            - img [ref=e200]
+                            - generic [ref=e205]: 222K
+                        - button "Bookmark" [ref=e207] [cursor=pointer]:
+                          - img [ref=e211]
+                        - button "Share post" [ref=e216] [cursor=pointer]:
+                          - img [ref=e220]
+                      - generic [ref=e228]:
+                        - generic [ref=e231]: I pushed 50 tickets to Linear before bed — a tech debt rewrite of an Electron app. Woke up to 30 merged PRs. 7,000 net lines deleted. Two days later, nothing has broken.
+                        - generic [ref=e233]:
+                          - generic [ref=e234]: This is
+                          - link "Symphony" [ref=e236] [cursor=pointer]:
+                            - /url: https://github.com/openai/symphony
+                            - generic [ref=e237]: Symphony
+                          - generic [ref=e238]: — OpenAI's open-source orchestrator for Codex agents. Point it at a Linear board and it turns tickets into pull requests.
+                        - generic [ref=e241]: I didn't even know how to properly test an Electron app. The agents figured it out — attaching to the running app over CDP via agent-browser, validating changes end-to-end, entirely self-directed. I'm learning how to test my own app by reading their logs.
+                        - heading "Set it up" [level=2] [ref=e243]:
+                          - generic [ref=e245]: Set it up
+                        - generic [ref=e247]:
+                          - generic [ref=e248]: I maintain a
+                          - link "fork" [ref=e250] [cursor=pointer]:
+                            - /url: https://github.com/odysseus0/symphony
+                            - generic [ref=e251]: fork
+                          - generic [ref=e252]: "that's easier to get started with (changes I made listed in README). From your project repo, run:"
+                        - generic [ref=e255]: "Then tell your agent: \"set up Symphony for my repo.\""
+                        - generic [ref=e257]:
+                          - generic [ref=e258]: For manual setup, follow the
+                          - link "skill instruction" [ref=e260] [cursor=pointer]:
+                            - /url: https://github.com/odysseus0/symphony/blob/main/.agents/skills/symphony-setup/SKILL.md
+                            - generic [ref=e261]: skill instruction
+                          - generic [ref=e262]: manually.
+                        - heading "The Linear board is your control surface" [level=2] [ref=e264]:
+                          - generic [ref=e266]: The Linear board is your control surface
+                        - generic [ref=e269]: Everything happens through Linear. The board is the interface.
+                        - generic [ref=e272]:
+                          - link "Image" [ref=e276] [cursor=pointer]:
+                            - /url: /odysseus0z/article/2031850264240800131/media/2031845372403056640
+                            - generic "Image" [ref=e280]:
+                              - img "Image" [ref=e282]
+                          - generic [ref=e292]: Linear board from OpenAI symphony demo
+                        - generic [ref=e295]: Push a ticket to Todo — an idle agent claims it within seconds. Move a ticket to Rework with review comments — the agent picks it back up and addresses feedback.
+                        - heading "Start with a big idea, not individual tickets" [level=2] [ref=e297]:
+                          - generic [ref=e299]: Start with a big idea, not individual tickets
+                        - generic [ref=e302]: If you already have a well-organized Linear board, point Symphony at it and go. If you don't, have your agent play tech lead — describe the feature and let it decompose the work into tickets with dependencies mapped out.
+                        - generic [ref=e304]:
+                          - generic [ref=e305]: Give your agent access to Linear (
+                          - link "official MCP setup" [ref=e307] [cursor=pointer]:
+                            - /url: https://linear.app/docs/mcp
+                            - generic [ref=e308]: official MCP setup
+                          - generic [ref=e309]: ") and hand it the big picture:"
+                        - blockquote [ref=e310]:
+                          - generic [ref=e312]: Break this into tickets in project [slug]. Scope each ticket to one reviewable PR. Include acceptance criteria. Set blocking relationships where order matters.
+                        - generic [ref=e315]: Push the batch to Todo and let Symphony parallelize across everything that isn't blocked.
+                        - generic [ref=e318]: "My 50-ticket Electron rewrite started as one conversation: \"here's the tech debt, here's what I want the codebase to look like after.\" The agent decomposed it, I reviewed the tickets, adjusted a few, and pushed them to Todo."
+                        - heading "What to expect" [level=2] [ref=e320]:
+                          - generic [ref=e322]: What to expect
+                        - generic [ref=e325]: Each worker gets its own workspace clone, reads the ticket, writes a plan as a Linear comment, implements, validates, and opens a PR.
+                        - generic [ref=e328]:
+                          - link "Image" [ref=e332] [cursor=pointer]:
+                            - /url: /odysseus0z/article/2031850264240800131/media/2031845619896352768
+                            - generic "Image" [ref=e336]:
+                              - img "Image" [ref=e338]
+                          - generic [ref=e348]: Symphony CLI dashboard from OpenAI symphony repo
+                        - generic [ref=e351]: The planning step is worth watching. Before writing code, the agent posts its plan as a Linear comment. Catch bad plans before they become bad PRs. It will check off todos it is done during the run, and give you a demo video at the end!
+                        - generic [ref=e354]:
+                          - generic [ref=e367]:
+                            - generic "Embedded video" [ref=e370]
+                            - button "Play Video. 11 seconds long" [ref=e377] [cursor=pointer]:
+                              - img [ref=e378]
+                          - generic [ref=e391]: Symphony workpad example from OpenAI Symphony demo video
+                        - generic [ref=e394]: One of my tickets asked for a ChatDisplay refactor — no mention of testing. The agent attached to the running Electron app over CDP via agent-browser, injected a temporary probe to force a render error, verified the failure was contained, clicked through recovery, screenshotted both states, and removed the probe. End-to-end validation of a UI change, entirely self-directed.
+                        - generic [ref=e397]:
+                          - link "Image" [ref=e401] [cursor=pointer]:
+                            - /url: /odysseus0z/article/2031850264240800131/media/2031849766897008646
+                            - generic "Image" [ref=e405]:
+                              - img "Image" [ref=e407]
+                          - generic [ref=e417]: workpad example of agent doing QA work diligently itself unprompted
+                        - heading "Tune on the fly" [level=2] [ref=e419]:
+                          - generic [ref=e421]: Tune on the fly
+                        - generic [ref=e424]: Cancel a ticket — the agent stops on the next poll. Move something back to Backlog to hold it. Push a batch to Todo to dispatch.
+                        - generic [ref=e427]: "WORKFLOW.md hot-reloads within a second — no restart needed. Common adjustments:"
+                        - list [ref=e428]:
+                          - listitem [ref=e429]:
+                            - generic [ref=e431]: agent.max_concurrent_agents — start at 2-3, scale up as you trust it
+                          - listitem [ref=e432]:
+                            - generic [ref=e434]: agent.max_turns — turn limit per ticket. Higher for complex work, lower to cap token spend.
+                        - heading "What's actually doing the work" [level=2] [ref=e436]:
+                          - generic [ref=e438]: What's actually doing the work
+                        - generic [ref=e441]: "Most of what makes this effective isn't the orchestrator — it's the prompt in WORKFLOW.md. Symphony is plumbing: poll Linear, dispatch workers, manage slots. The prompt teaches the agent how to plan, test, handle review feedback, and constrain scope."
+                        - generic [ref=e444]: I'll dig into that prompt in a follow-up.
+                      - status [ref=e446]:
+                        - generic [ref=e447]:
+                          - img [ref=e448]
+                          - generic [ref=e452]:
+                            - generic [ref=e453]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e454] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e458]:
+                    - link "9:50 PM · Mar 11, 2026" [ref=e460] [cursor=pointer]:
+                      - /url: /odysseus0z/status/2031850264240800131
+                      - time [ref=e461]: 9:50 PM · Mar 11, 2026
+                    - generic [ref=e462]: ·
+                    - link "222.7K Views" [ref=e463] [cursor=pointer]:
+                      - /url: /odysseus0z/status/2031850264240800131/analytics
+                      - generic [ref=e466]: 222.7K
+                      - generic [ref=e467]: Views
+                  - group "22 replies, 65 reposts, 840 likes, 1996 bookmarks, 222797 views" [ref=e470]:
+                    - button "22 Replies. Reply" [ref=e472] [cursor=pointer]:
+                      - generic [ref=e473]:
+                        - img [ref=e476]
+                        - generic [ref=e481]: "22"
+                    - button "65 reposts. Repost" [ref=e483] [cursor=pointer]:
+                      - generic [ref=e484]:
+                        - img [ref=e487]
+                        - generic [ref=e492]: "65"
+                    - button "840 Likes. Like" [ref=e494] [cursor=pointer]:
+                      - generic [ref=e495]:
+                        - img [ref=e498]
+                        - generic [ref=e503]: "840"
+                    - button "1996 Bookmarks. Bookmark" [ref=e505] [cursor=pointer]:
+                      - generic [ref=e506]:
+                        - img [ref=e509]
+                        - generic [ref=e514]: 1.9K
+                    - button "Share post" [ref=e517] [cursor=pointer]:
+                      - img [ref=e521]
+                  - button "Read 22 replies" [ref=e524] [cursor=pointer]:
+                    - generic [ref=e525]:
+                      - img [ref=e526]
+                      - generic [ref=e530]: Read 22 replies
+      - generic "Trending" [ref=e535]:
+        - generic [ref=e536]:
+          - region "Sign up" [ref=e538]:
+            - heading "New to X?" [level=2] [ref=e540]:
+              - generic [ref=e541]: New to X?
+            - generic [ref=e542]: Sign up now to get your own personalized timeline!
+            - generic [ref=e543]:
+              - iframe [ref=e546]:
+                - button "Sign up with Google. Opens in new tab" [ref=f2e3] [cursor=pointer]:
+                  - generic [ref=f2e5]:
+                    - img [ref=f2e7]
+                    - generic [ref=f2e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e547] [cursor=pointer]:
+                - generic [ref=e548]:
+                  - img [ref=e549]
+                  - generic [ref=e553]: Sign up with Apple
+              - link "Create account" [ref=e554] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e557]: Create account
+            - generic [ref=e558]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e559] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e560] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e561] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e563]:
+            - heading "Relevant people" [level=2] [ref=e565]:
+              - generic [ref=e566]: Relevant people
+            - list [ref=e567]:
+              - listitem [ref=e568] [cursor=pointer]:
+                - generic [ref=e569]:
+                  - link [ref=e579]:
+                    - /url: /odysseus0z
+                  - generic [ref=e582]:
+                    - generic [ref=e583]:
+                      - generic [ref=e585]:
+                        - link "George Verified account" [ref=e587]:
+                          - /url: /odysseus0z
+                          - generic [ref=e588]:
+                            - generic [ref=e590]: George
+                            - generic [ref=e592]:
+                              - img "Verified account" [ref=e593]
+                              - link [ref=e596]
+                        - link "@odysseus0z" [ref=e605]:
+                          - /url: /odysseus0z
+                          - generic [ref=e607]: "@odysseus0z"
+                      - button "Follow @odysseus0z" [ref=e609]:
+                        - generic [ref=e612]: Follow
+                    - generic [ref=e613]:
+                      - text: You are absolutely right | Building
+                      - link "@runneragent" [ref=e616]:
+                        - /url: /runneragent
+          - region "Trending now" [ref=e618]:
+            - heading "Trending now" [level=1] [ref=e619]
+            - 'generic "Timeline: Trending now" [ref=e620]':
+              - generic [ref=e621]:
+                - heading "What’s happening" [level=2] [ref=e625]:
+                  - generic [ref=e626]: What’s happening
+                - link "Trending in United States Bridget Carleton" [ref=e629] [cursor=pointer]:
+                  - generic [ref=e630]:
+                    - generic [ref=e632]: Trending in United States
+                    - generic [ref=e633]: Bridget Carleton
+                - link "Sports · Trending Blake Treinen" [ref=e636] [cursor=pointer]:
+                  - generic [ref=e637]:
+                    - generic [ref=e639]: Sports · Trending
+                    - generic [ref=e640]: Blake Treinen
+                - link "Trending in United States Cavanaugh" [ref=e643] [cursor=pointer]:
+                  - generic [ref=e644]:
+                    - generic [ref=e646]: Trending in United States
+                    - generic [ref=e647]: Cavanaugh
+                - link "Sports · Trending Hank Aaron" [ref=e650] [cursor=pointer]:
+                  - generic [ref=e651]:
+                    - generic [ref=e653]: Sports · Trending
+                    - generic [ref=e654]: Hank Aaron
+                - link "Show more" [ref=e657] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e658]: Show more
+          - navigation "Footer" [ref=e660]:
+            - generic [ref=e661]:
+              - link "Terms of Service" [ref=e662] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e663]: "|"
+            - generic [ref=e664]:
+              - link "Privacy Policy" [ref=e665] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e666]: "|"
+            - generic [ref=e667]:
+              - link "Cookie Policy" [ref=e668] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e669]: "|"
+            - generic [ref=e670]:
+              - link "Accessibility" [ref=e671] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e672]: "|"
+            - generic [ref=e673]:
+              - link "Ads info" [ref=e674] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e675]: "|"
+            - button "More" [ref=e676] [cursor=pointer]:
+              - generic [ref=e677]:
+                - text: More
+                - img [ref=e678]
+            - generic [ref=e681]: © 2026 X Corp.

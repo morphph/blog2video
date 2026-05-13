@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Keep Claude working toward a goal",
+    "title_zh": "让另一个模型来判断\"做完了没\"？",
+    "word_count": 1710,
+    "slug": "claude-code-goal-docs"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "文档页 ~8.6 分钟叙述稿，单一论点（generator-evaluator 分离作为 /goal 的真正设计），不分集。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "让另一个模型来判断\"做完了没\"？"
+      }
+    ]
+  }
+}

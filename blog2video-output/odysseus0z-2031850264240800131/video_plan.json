@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Getting Started with OpenAI Symphony",
+    "title_zh": "睡前推 50 张 ticket，醒来 7000 行没了",
+    "word_count": 1371,
+    "slug": "odysseus0z-2031850264240800131"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "~7 分钟单一论证（Symphony 不重要，WORKFLOW.md 是大脑），数字开场 + 故事中段 + 判断结尾，单视频最有力。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "睡前推 50 张 ticket，醒来 7000 行没了"
+      }
+    ]
+  }
+}

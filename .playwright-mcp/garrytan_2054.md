@@ -1,0 +1,511 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /garrytan/article/2054064931515855118
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Garry Tan Verified account @garrytan 44 replies, 109 reposts, 686 likes, 1345 bookmarks, 139797 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /garrytan
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Garry Tan Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /garrytan
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Garry Tan
+                          - generic [ref=e115]:
+                            - img "Verified account" [ref=e116]
+                            - link [ref=e119]
+                      - link "@garrytan" [ref=e129] [cursor=pointer]:
+                        - /url: /garrytan
+                        - generic [ref=e130]: "@garrytan"
+                    - button "More" [ref=e136] [cursor=pointer]:
+                      - img [ref=e140]
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - link "Image" [ref=e150] [cursor=pointer]:
+                      - /url: /garrytan/article/2054064931515855118/media/2054064158048493568
+                      - generic "Image" [ref=e154]:
+                        - img "Image" [ref=e156]
+                    - generic [ref=e157]:
+                      - generic [ref=e159]: "The AI Agent Complexity Ratchet: Why 90% Test Coverage Is Required"
+                      - group "44 replies, 109 reposts, 686 likes, 1345 bookmarks, 139797 views" [ref=e161]:
+                        - button "44 Replies. Reply" [ref=e163] [cursor=pointer]:
+                          - generic [ref=e164]:
+                            - img [ref=e167]
+                            - generic [ref=e172]: "44"
+                        - button "109 reposts. Repost" [ref=e174] [cursor=pointer]:
+                          - generic [ref=e175]:
+                            - img [ref=e178]
+                            - generic [ref=e183]: "109"
+                        - button "686 Likes. Like" [ref=e185] [cursor=pointer]:
+                          - generic [ref=e186]:
+                            - img [ref=e189]
+                            - generic [ref=e194]: "686"
+                        - link "139797 views. View post analytics" [ref=e196] [cursor=pointer]:
+                          - /url: /garrytan/status/2054064931515855118/analytics
+                          - generic [ref=e197]:
+                            - img [ref=e200]
+                            - generic [ref=e205]: 139K
+                        - button "Bookmark" [ref=e207] [cursor=pointer]:
+                          - img [ref=e211]
+                        - button "Share post" [ref=e216] [cursor=pointer]:
+                          - img [ref=e220]
+                      - generic [ref=e228]:
+                        - generic [ref=e230]:
+                          - generic [ref=e231]: "I've been coding with AI for the past year. Not just prompting -- building real software. Two open-source projects:"
+                          - link "GStack" [ref=e233] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gstack
+                            - generic [ref=e234]: GStack
+                          - generic [ref=e235]: ", which makes AI coding agents better, and"
+                          - link "GBrain" [ref=e237] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain
+                            - generic [ref=e238]: GBrain
+                          - generic [ref=e239]: ", which turns everything you read and write into a searchable knowledge base your AI can use. Between them, about 970,000 lines of code and 665 test files. Pretty much all written by Claude Code and Codex at my direction (15 simultaneous Conductor sessions most of the time)."
+                        - generic [ref=e241]:
+                          - generic [ref=e242]: Last week I
+                          - link "merged fourteen pull requests in 72 hours" [ref=e244] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2054055071017538028
+                            - generic [ref=e245]: merged fourteen pull requests in 72 hours
+                          - generic [ref=e246]: . Nearly 29,000 lines of new code. Each release was better tested than the one before it.
+                        - generic [ref=e249]: That's supposed to be impossible. Speed and quality are supposed to trade off. Ship fast, break things. Move slow, ship right. Pick one.
+                        - generic [ref=e252]: "You don't have to pick anymore. The unlock is 90% test coverage -- and AI agents made it free to get there. For fifty years, that level of verification cost too much human willpower to sustain. Now the agent writes the tests alongside the code. The result is what I call the complexity ratchet: a system that can only get better, never worse."
+                        - generic [ref=e254]:
+                          - generic [ref=e255]: "(This is the seventh in a series about building with AI:"
+                          - link "1" [ref=e257] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2042925773300908103
+                            - generic [ref=e258]: "1"
+                          - link "2" [ref=e261] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2044479509874020852
+                            - generic [ref=e262]: "2"
+                          - link "3" [ref=e265] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2045404377226285538
+                            - generic [ref=e266]: "3"
+                          - link "4" [ref=e269] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2045798603059548364
+                            - generic [ref=e270]: "4"
+                          - link "5" [ref=e273] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2046876981711769720
+                            - generic [ref=e274]: "5"
+                          - link "6" [ref=e277] [cursor=pointer]:
+                            - /url: https://x.com/garrytan/status/2053127519872614419
+                            - generic [ref=e278]: "6"
+                          - generic [ref=e279]: )
+                        - heading "Software used to be brittle" [level=2] [ref=e281]:
+                          - generic [ref=e283]: Software used to be brittle
+                        - generic [ref=e286]: "For fifty years, the whole discipline of software engineering was organized around one idea: prevent errors, because errors are catastrophic."
+                        - generic [ref=e289]: You had to get the code right the first time. Miss one edge case and you crash in production. Ship a bad database migration and you lose customer data. Write a function that does something subtle, and when the one person who understands it quits, nobody knows why it works. The whole system depended on humans being careful, and humans are not careful. So we built elaborate processes -- code reviews, staging environments, QA teams, release trains -- all designed to catch mistakes before they reached users.
+                        - generic [ref=e292]: "It kind of worked. But it was slow. And it meant that the complexity of any software system had a hard ceiling: the number of things one team could hold in their heads simultaneously."
+                        - heading "Now software is squishy" [level=2] [ref=e294]:
+                          - generic [ref=e296]: Now software is squishy
+                        - generic [ref=e299]: I don't mean sloppy. I mean resilient in a way that wasn't possible before.
+                        - generic [ref=e302]: When I say "the models are here," I mean that AI coding agents -- Claude, GPT, Codex, and the ecosystem growing around them -- can now read code, understand context, diagnose errors, and write fixes. Not perfectly. But well enough that the error model for software has changed.
+                        - generic [ref=e305]: The migration breaks? The agent reads the error message, understands the database schema history across 45 versions, writes the fix, writes the test. The file sync hangs on a million symlinks? Agent diagnoses the parser timeout, bounds it at 30 seconds, ships the fix with tests. An extraction pipeline has an attribution bug? A cross-model evaluation catches it, the prompt gets iterated, enforcement gets added at the database layer.
+                        - generic [ref=e308]: "For most code-level errors -- logic bugs, parsing failures, broken edge cases -- agents can now diagnose and fix them in the next turn. That's genuinely new. The errors that remain catastrophic are the ones that destroy state: bad migrations on production data, security holes exploited before detection, privacy leaks that can't be un-leaked. The ratchet helps here too (good tests catch most of these before production) but the real shift is that the vast majority of errors in a codebase are the fixable kind."
+                        - generic [ref=e311]: This is a phase change for how software gets built. But it only works if you have the ratchet.
+                        - heading "The Agent Complexity Ratchet" [level=2] [ref=e313]:
+                          - generic [ref=e315]: The Agent Complexity Ratchet
+                        - generic [ref=e318]: A ratchet is a mechanism that allows motion in one direction only. A socket wrench turns a bolt forward and prevents it from turning back. That's the metaphor.
+                        - generic [ref=e321]: "In agent-coded software, every coding session with an AI agent adds three things to the codebase:"
+                        - list [ref=e322]:
+                          - listitem [ref=e323]:
+                            - generic [ref=e324]:
+                              - generic [ref=e325]: Tests
+                              - generic [ref=e326]: that encode what "correct" means -- automated checks that run every time someone changes the code, and fail loudly if the change breaks something
+                          - listitem [ref=e327]:
+                            - generic [ref=e328]:
+                              - generic [ref=e329]: Documentation
+                              - generic [ref=e330]: that records why decisions were made -- not just what the code does, but the reasoning and tradeoffs behind it
+                          - listitem [ref=e331]:
+                            - generic [ref=e332]:
+                              - generic [ref=e333]: Evaluation results
+                              - generic [ref=e334]: that establish quality thresholds -- structured assessments of output quality with scores, so you know if the next version is better or worse
+                        - generic [ref=e337]: The next time an agent works on the codebase, it loads all three into its context window (the text the AI can see and reason about). It can't regress below the test suite -- the tests would fail. It can't ignore the documentation -- it's right there in context. It can't ship quality below the evaluation baseline -- the scores are recorded.
+                        - generic [ref=e340]: The quality floor goes up with every turn. Forward-only motion. That's the ratchet.
+                        - heading "What this looks like in practice" [level=2] [ref=e342]:
+                          - generic [ref=e344]: What this looks like in practice
+                        - generic [ref=e346]:
+                          - generic [ref=e347]: I'll make this concrete.
+                          - link "GBrain" [ref=e349] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain
+                            - generic [ref=e350]: GBrain
+                          - generic [ref=e351]: is a knowledge system I'm building -- it gives AI agents long-term memory by storing, indexing, and searching through a person's notes, meetings, conversations, and research. Think of it as a second brain that your AI assistant can actually read.
+                        - generic [ref=e354]: "One of its features is epistemological extraction: it reads through thousands of pages and extracts who believes what, with what confidence, over time. \"Garry thinks Bitcoin will hit $300K (confidence: 0.45).\" \"Jared thinks this startup has strong retention (confidence: 0.80).\" Like that, but across 28,000 pages."
+                        - generic [ref=e357]: "The first extraction run pulled 100,720 claims. I used a cross-model evaluation to grade the quality -- I had GPT-5.5 and Claude both independently score the output. Overall: 6.8 out of 10."
+                        - generic [ref=e360]: The biggest problem? Something I call holder confusion. Take the claim "AI will replace 80% of software engineers by 2027." Who holds that belief? Is it the person who wrote it? Is it someone they're quoting? Or is it the system's analysis engine, which inferred it from a podcast transcript? Version 1 got this distinction wrong 35% of the time. That matters -- if you're building a system that tracks what people believe, you need to know WHO believes it.
+                        - generic [ref=e363]: So the evaluation results got documented. Six specific failure modes got identified. The version 2 prompt addressed all six. Weight rounding (the confidence scores) got enforced at the database layer -- no more false precision like 0.74 when 0.75 is the honest answer. Seventeen tests locked in the contract.
+                        - generic [ref=e366]: Now no future version of the extraction can ship without those 17 tests passing. Nobody has to remember why weight rounding matters or what holder confusion is. The tests remember.
+                        - generic [ref=e369]: The quality floor went up permanently. That's one turn of the ratchet.
+                        - heading "Why most vibecoded projects die" [level=2] [ref=e371]:
+                          - generic [ref=e373]: Why most vibecoded projects die
+                        - generic [ref=e375]:
+                          - generic [ref=e376]: "\""
+                          - link "Vibecoding" [ref=e378] [cursor=pointer]:
+                            - /url: https://x.com/karpathy/status/1886192184808149383
+                            - generic [ref=e379]: Vibecoding
+                          - generic [ref=e380]: "\" is Andrej Karpathy's term for coding with AI by describing what you want in natural language and letting the model generate the code. It's powerful and it's how I build. But from what I've seen across YC applications and open-source repos, most vibecoded projects that skip tests start falling apart once they reach moderate complexity -- a few thousand lines, a handful of interacting features."
+                        - generic [ref=e383]: They skip the ratchet. No tests, no docs, no evals. The agent adds complexity but nothing prevents regression. Every new feature has a chance of breaking an old one, and without tests, you don't find out until a user reports it. By version 0.5 the codebase is a haunted house where every change breaks something unexpected. Then the developer writes a blog post about how AI coding doesn't work.
+                        - generic [ref=e386]: AI coding works fine. They just didn't build the ratchet.
+                        - generic [ref=e389]: You could argue that the kind of person who writes tests is also the kind who writes good architecture in the first place. Fair. But the ratchet mechanism isn't about the person -- it's about what happens on the next turn. When a new contributor opens a PR, or when a model version changes, or when you're coding at 2am and your judgment is impaired, the tests catch regressions regardless of who wrote them. The ratchet works even when the human isn't at their best. That's the point.
+                        - generic [ref=e392]: "Without tests, improvement is a noisy process -- agents try to make things better, but without regression signals, good changes and bad changes are equally invisible. With a dense test suite, you get a ratchet on the tested surface: quality can only go up for the behaviors you've encoded. That's most of the system, not all of it. But it's enough to sustain forward motion at speed."
+                        - heading "Tests as institutional memory" [level=2] [ref=e394]:
+                          - generic [ref=e396]: Tests as institutional memory
+                        - generic [ref=e399]: In traditional software companies, institutional memory lives in humans. The senior engineer who knows why that caching layer exists. The architect who remembers the migration that almost destroyed the database. The tech lead who can explain the weird edge case in the billing system.
+                        - generic [ref=e402]: Humans leave. They retire, they get poached, they burn out. When they leave, the knowledge goes with them. Every software company has had the experience of opening a critical file and finding a comment that says // DO NOT CHANGE THIS -- ask Dave and Dave left three years ago.
+                        - generic [ref=e405]: The agent's context window doesn't quit. It doesn't get poached. It doesn't forget. When the test suite encodes "weight rounding must use 0.05 increments" and the documentation explains "because cross-modal eval showed false precision degrades trust in the confidence scores," that knowledge is durable. Any agent, any model, any time can load that context and understand the constraint.
+                        - generic [ref=e408]: Tests are institutional memory that survives employee turnover. For a one-person project, they're even more critical -- they're the only institutional memory you have.
+                        - heading "Everything harnessable is testable" [level=2] [ref=e410]:
+                          - generic [ref=e412]: Everything harnessable is testable
+                        - generic [ref=e415]: The ratchet doesn't just work for traditional code. It works for anything a computer can observe.
+                        - generic [ref=e418]: Think about the layers of a modern system. The OS gives you process trees, file system state, network sockets, cron schedules. The terminal gives you every keystroke, every line of output, every interactive prompt. The browser gives you rendered pages, button states, navigation events. APIs give you structured responses you can parse and validate. And AI agents give you observable behavior -- what they say, what tools they call, what order they do things in, whether they ask before acting.
+                        - generic [ref=e421]: All of these are harnessable. And if you can harness it, you can observe it. If you can observe it, you can assert on it. If you can assert on it, you can ratchet it.
+                        - generic [ref=e424]: This is a much bigger surface area than traditional unit tests. Let me show you.
+                        - generic [ref=e426]:
+                          - link "GStack" [ref=e428] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gstack
+                            - generic [ref=e429]: GStack
+                          - generic [ref=e430]: "is my open-source coding agent framework -- 93,000 GitHub stars, 701,000 lines of code, 46 skills. One of its core features is interactive plan review: you ask it to review your architecture, and it walks through the plan section by section, asking questions, probing edge cases, challenging your assumptions. Like having an engineering manager who actually reads the code."
+                        - generic [ref=e433]: "The problem: Claude Code would sometimes skip the whole interactive part. It would read the plan file, dump every finding in one shot, and exit -- without asking the user a single question. The entire point of the review is the back-and-forth dialogue. Skipping it defeats the purpose."
+                        - generic [ref=e436]: How do you even test that? You can't unit test "did the AI have a conversation." No traditional testing framework covers this.
+                        - generic [ref=e438]:
+                          - generic [ref=e439]: So I used Bun's TTY functionality to
+                          - link "build a test harness" [ref=e441] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gstack/pull/1354
+                            - generic [ref=e442]: build a test harness
+                          - generic [ref=e443]: "(PR #1354) that literally spawns Claude Code inside a pseudo-terminal, feeds it a specific repo scenario, triggers the review skill, and watches the terminal output in real time. The test observes whether the agent fires an interactive question before finishing. If it dumps findings and exits without asking anything, the test fails."
+                        - generic [ref=e446]: That's not testing code. That's testing whether an AI agent follows a behavioral contract. At the TTY level. By literally watching it work.
+                        - generic [ref=e449]: "The ratchet response was three layers:"
+                        - list [ref=e450]:
+                          - listitem [ref=e451]:
+                            - generic [ref=e452]:
+                              - generic [ref=e453]: STOP gates
+                              - generic [ref=e454]: in the skill instructions -- explicit rules that say "you MUST ask the user before proceeding to the next section," with anti-rationalization clauses that name the specific failure mode so the model can't talk itself into skipping
+                          - listitem [ref=e455]:
+                            - generic [ref=e456]:
+                              - generic [ref=e457]: Anti-shortcut clause
+                              - generic [ref=e458]: "-- \"the plan file is the OUTPUT of the interactive review, not a substitute for it.\" One sentence that closes the exact loophole the model kept exploiting."
+                          - listitem [ref=e459]:
+                            - generic [ref=e460]:
+                              - generic [ref=e461]: Gate-tier floor tests
+                              - generic [ref=e462]: "-- the TTY harness tests that spawn Claude Code in controlled scenarios and fail if the agent doesn't ask at least one interactive question"
+                        - generic [ref=e465]: Now when Anthropic ships a new model version, or when I change a skill prompt, the test suite catches any regression in the interactive contract. The agent can't silently stop asking questions. The test watches the terminal and checks.
+                        - generic [ref=e467]:
+                          - generic [ref=e468]: Or take
+                          - 'link "PR #880" [ref=e470] [cursor=pointer]':
+                            - /url: https://github.com/garrytan/gbrain/pull/880
+                            - generic [ref=e471]: "PR #880"
+                          - generic [ref=e472]: ", which shipped a new OpenClaw plugin. The test doesn't just check that the code compiles. It builds the plugin from source, spawns a real OpenClaw instance in an isolated profile, installs the plugin via the CLI, runs plugins inspect to verify the runtime loaded it, sets the config slot, validates the config, and runs plugins doctor to confirm zero diagnostics. A full end-to-end round trip across two separate programs. 359 lines of test code. The kind of test a human would almost never write by hand because the setup is too tedious. Claude wrote it in about five minutes. That's the effort wall disappearing in real time."
+                        - generic [ref=e475]: "The principle generalizes. You can test at the OS level: did the migration create the right tables, did the cron job fire, is the process still alive? At the browser level: did the page render, did the agent fill in the form correctly. At the API level: did the model return valid JSON with the right schema. At the behavioral level: did the agent follow the protocol, did it ask before deleting, did it stop when told to stop."
+                        - generic [ref=e478]: The whole stack is testable. The ratchet applies to all of it. Most people haven't realized this yet because they're still thinking about test coverage as "did my function return the right number." The real test surface is everything the computer can see.
+                        - heading "The 90% number" [level=2] [ref=e480]:
+                          - generic [ref=e482]: The 90% number
+                        - generic [ref=e485]: So what does 90% test coverage actually buy you?
+                        - generic [ref=e487]:
+                          - generic [ref=e488]: Capers Jones studied over 10,000 software projects and measured defect removal efficiency (DRE) -- the percentage of bugs caught before they reach users. His data from
+                          - link "Applied Software Measurement" [ref=e490] [cursor=pointer]:
+                            - /url: https://www.amazon.com/Applied-Software-Measurement-Analysis-Productivity/dp/0071502440
+                            - generic [ref=e491]: Applied Software Measurement
+                          - generic [ref=e492]: "shows a nonlinear curve: below 70% coverage, DRE sits around 65-75%. At 85-95% coverage, DRE jumps to 92-97%. The relationship isn't linear. There's a knee in the curve around 85% where defect escapes drop sharply."
+                        - generic [ref=e494]:
+                          - generic [ref=e495]: The avionics industry figured this out decades ago.
+                          - link "DO-178C" [ref=e497] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/DO-178C
+                            - generic [ref=e498]: DO-178C
+                          - generic [ref=e499]: ", the FAA standard for flight-critical software, requires modified condition/decision coverage (MC/DC) for Level A systems -- the ones where a bug means a plane crash. Branch coverage alone misses 10-20% of faults. MC/DC, which is stricter than line coverage, achieves >99% DRE. They don't mandate this because bureaucrats like paperwork. They mandate it because the data showed that below certain coverage thresholds, critical defects escape at rates incompatible with not killing people."
+                        - generic [ref=e502]: "The reliability engineering parallel is clean. Factories use a system called Six Sigma to measure quality. The idea: count how many defects you get per million units produced, then express that as a \"sigma level\" -- higher sigma means fewer defects. A 3-sigma process produces about 67,000 defects per million (pretty bad). A 4-sigma process produces about 6,200 (ten times better). A 5-sigma process produces 233 (another 27x better). The jump from 4 to 5 sigma is not incremental improvement. It's a phase change."
+                        - generic [ref=e505]: Test coverage follows the same curve. Going from 70% to 90% coverage isn't 30% better. It's an order of magnitude fewer escapes. The defects that slip through at 70% are hiding in the 30% of untested code. At 90%, the hiding places shrink to 10% and most of the dangerous paths are locked down.
+                        - generic [ref=e507]:
+                          - generic [ref=e508]: Now, I should be honest about what the research also shows.
+                          - link "Mockus, Nagappan, and Dinh-Trong" [ref=e510] [cursor=pointer]:
+                            - /url: https://ieeexplore.ieee.org/document/4343756
+                            - generic [ref=e511]: Mockus, Nagappan, and Dinh-Trong
+                          - generic [ref=e512]: studied Windows Vista and found that while coverage correlates with fewer post-release defects, the effort to reach 90%+ rises sharply. The last 20% of coverage takes disproportionately more work than the first 70%. This has been true for decades. It's why most teams stop at 70-80% and call it good enough.
+                        - generic [ref=e514]:
+                          - generic [ref=e515]: "But something changed:"
+                          - generic [ref=e516]: AI coding agents don't experience effort.
+                        - generic [ref=e519]: They don't get bored writing the fourteenth edge-case test. They don't cut corners at 5pm on a Friday. They don't look at a gnarly integration test and think "I'll come back to this later." The effort curve that stopped human teams at 70% doesn't apply to agents. You can ask Claude to write tests for every edge case in a module and it will do it cheerfully, thoroughly, at 2am, without complaining. The brutal last 20% that made 90% coverage impractical for human teams is exactly the kind of work AI agents are best at.
+                        - generic [ref=e521]:
+                          - generic [ref=e522]: This is the real unlock. It's not that AI lets you write code faster. Plenty of people have noticed that. It's that AI lets you
+                          - generic [ref=e523]: verify
+                          - generic [ref=e524]: at a level that was previously too expensive to sustain. The 90% threshold that the data says is magical? It used to cost too much human willpower to reach. Now it's free.
+                        - generic [ref=e527]: That's the key distinction. The ratchet isn't about line coverage as a vanity metric. It's about tests that encode behavioral contracts -- the holder confusion test, the weight rounding test, the interactive review gate. Each test locks in a specific lesson learned. Coverage is the proxy that tells you how much of the system's behavior is under contract. At 90%, nearly every behavior change triggers a test signal. The agent either passes (safe to ship) or breaks a test (caught immediately).
+                        - generic [ref=e530]: The remaining 10% is integration points, infrastructure plumbing, and edge cases that are genuinely hard to test. That's fine. The 90% is what turns chaos into a ratchet.
+                        - generic [ref=e533]: Getting to 90% used to be a heroic effort. Now it's a Tuesday. That's the game change.
+                        - heading "Proof of concept" [level=2] [ref=e535]:
+                          - generic [ref=e537]: Proof of concept
+                        - generic [ref=e540]: I started both projects alone. They're not solo anymore.
+                        - generic [ref=e542]:
+                          - link "GStack" [ref=e544] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gstack
+                            - generic [ref=e545]: GStack
+                          - generic [ref=e546]: now has 37 contributors. v1.30 incorporated 21 community PRs in a single release.
+                          - link "GBrain" [ref=e548] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain
+                            - generic [ref=e549]: GBrain
+                          - generic [ref=e550]: has 25 contributors. v0.31.1.1 landed 22 community fixes in one PR -- auth flow, schema bootstrapping, sync, privacy.
+                        - generic [ref=e553]: The ratchet is what makes this safe. Every external PR has to pass the existing test suite. A new contributor doesn't need to understand the whole system. They need to make the tests pass.
+                        - generic [ref=e556]: "Last week's GBrain releases tell the story:"
+                        - list [ref=e557]:
+                          - listitem [ref=e558]:
+                            - generic [ref=e560]: "v0.31.0: a new facts table for real-time memory, plus a dream consolidation phase that promotes short-term memories into long-term knowledge"
+                          - listitem [ref=e561]:
+                            - generic [ref=e563]: "v0.31.1: fixed 25 CLI commands that were silently routing to an empty local database instead of the user's actual brain"
+                          - listitem [ref=e564]:
+                            - generic [ref=e566]: "v0.31.1.1: twenty-two community-reported fixes in one PR"
+                          - listitem [ref=e567]:
+                            - generic [ref=e569]: "v0.31.2: fixed a code sync that hung forever on large repos with symlinks by adding a 30-second timeout"
+                        - generic [ref=e572]: Each release shipped with more tests than the last. The agent writes the tests alongside the code. The coverage doesn't slip because the effort to maintain it is no longer a human burden.
+                        - heading "The new complexity ceiling" [level=2] [ref=e574]:
+                          - generic [ref=e576]: The new complexity ceiling
+                        - generic [ref=e579]: The complexity ceiling for software just got a lot higher.
+                        - generic [ref=e582]: It used to be bounded by one team's ability to hold the system in their heads. Now it's bounded by one person plus agents who can load the full codebase, schema history, test suite, and documentation into context.
+                        - generic [ref=e585]: That's a much bigger number. And it keeps growing as context windows get larger and models get better at reasoning about code.
+                        - generic [ref=e588]: Every software company that doesn't adopt this model -- agents plus taste plus a test suite that only goes up -- is already shipping slower and with less quality than one person who has.
+                        - generic [ref=e591]: The tools are here. The code is open. Tests are the ratchet. 90% coverage, every PR, no exceptions.
+                        - generic [ref=e594]: For fifty years, 90% coverage was a luxury reserved for avionics and medical devices -- teams with the budget to throw human hours at the effort wall. AI agents demolished that wall. The coverage threshold that makes software reliable is no longer expensive. It's just a setting. The question isn't whether you can afford 90%. It's whether you can afford not to.
+                        - generic [ref=e597]: The ratchet, the skills, and the whole knowledge system are open source and free on GitHub. Go build.
+                        - generic [ref=e600]: "My MIT-licensed open source projects:"
+                        - list [ref=e601]:
+                          - listitem [ref=e602]:
+                            - generic [ref=e603]:
+                              - link "GStack" [ref=e605] [cursor=pointer]:
+                                - /url: https://github.com/garrytan/gstack
+                                - generic [ref=e606]: GStack
+                              - generic [ref=e607]: "-- makes Claude Code dramatically better. 93K stars. Free."
+                          - listitem [ref=e608]:
+                            - generic [ref=e609]:
+                              - link "GBrain" [ref=e611] [cursor=pointer]:
+                                - /url: https://github.com/garrytan/gbrain
+                                - generic [ref=e612]: GBrain
+                              - generic [ref=e613]: "-- your second brain for AI agents. 14K stars. Free."
+                        - generic [ref=e616]: "The AI Explainer series:"
+                        - list [ref=e617]:
+                          - listitem [ref=e618]:
+                            - generic [ref=e619]:
+                              - link "Fat Skills, Fat Code, Thin Harness" [ref=e621] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2042925773300908103
+                                - generic [ref=e622]: Fat Skills, Fat Code, Thin Harness
+                              - generic [ref=e623]: "-- the architecture"
+                          - listitem [ref=e624]:
+                            - generic [ref=e625]:
+                              - link "Resolvers" [ref=e627] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2044479509874020852
+                                - generic [ref=e628]: Resolvers
+                              - generic [ref=e629]: "-- the routing table for intelligence"
+                          - listitem [ref=e630]:
+                            - generic [ref=e631]:
+                              - link "The LOC Controversy" [ref=e633] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2045404377226285538
+                                - generic [ref=e634]: The LOC Controversy
+                              - generic [ref=e635]: "-- what 600K lines actually produced"
+                          - listitem [ref=e636]:
+                            - generic [ref=e637]:
+                              - link "Naked Models Are Stupider" [ref=e639] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2045798603059548364
+                                - generic [ref=e640]: Naked Models Are Stupider
+                              - generic [ref=e641]: "-- the model is the engine, not the car"
+                          - listitem [ref=e642]:
+                            - generic [ref=e643]:
+                              - link "The Skillify Manifesto" [ref=e645] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2046876981711769720
+                                - generic [ref=e646]: The Skillify Manifesto
+                              - generic [ref=e647]: "-- every workflow becomes a testable skill"
+                          - listitem [ref=e648]:
+                            - generic [ref=e649]:
+                              - link "Meta-Meta-Prompting" [ref=e651] [cursor=pointer]:
+                                - /url: https://x.com/garrytan/status/2053127519872614419
+                                - generic [ref=e652]: Meta-Meta-Prompting
+                              - generic [ref=e653]: "-- compounding skills produce emergent capabilities"
+                          - listitem [ref=e654]:
+                            - generic [ref=e655]:
+                              - generic [ref=e656]: The Agent Complexity Ratchet
+                              - generic [ref=e657]: "-- you are here"
+                      - status [ref=e659]:
+                        - generic [ref=e660]:
+                          - img [ref=e661]
+                          - generic [ref=e665]:
+                            - generic [ref=e666]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e667] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e671]:
+                    - link "5:03 AM · May 12, 2026" [ref=e673] [cursor=pointer]:
+                      - /url: /garrytan/status/2054064931515855118
+                      - time [ref=e674]: 5:03 AM · May 12, 2026
+                    - generic [ref=e675]: ·
+                    - link "139.7K Views" [ref=e676] [cursor=pointer]:
+                      - /url: /garrytan/status/2054064931515855118/analytics
+                      - generic [ref=e679]: 139.7K
+                      - generic [ref=e680]: Views
+                  - group "44 replies, 109 reposts, 686 likes, 1345 bookmarks, 139797 views" [ref=e683]:
+                    - button "44 Replies. Reply" [ref=e685] [cursor=pointer]:
+                      - generic [ref=e686]:
+                        - img [ref=e689]
+                        - generic [ref=e694]: "44"
+                    - button "109 reposts. Repost" [ref=e696] [cursor=pointer]:
+                      - generic [ref=e697]:
+                        - img [ref=e700]
+                        - generic [ref=e705]: "109"
+                    - button "686 Likes. Like" [ref=e707] [cursor=pointer]:
+                      - generic [ref=e708]:
+                        - img [ref=e711]
+                        - generic [ref=e716]: "686"
+                    - button "1345 Bookmarks. Bookmark" [ref=e718] [cursor=pointer]:
+                      - generic [ref=e719]:
+                        - img [ref=e722]
+                        - generic [ref=e727]: 1.3K
+                    - button "Share post" [ref=e730] [cursor=pointer]:
+                      - img [ref=e734]
+                  - button "Read 44 replies" [ref=e737] [cursor=pointer]:
+                    - generic [ref=e738]:
+                      - img [ref=e739]
+                      - generic [ref=e743]: Read 44 replies
+      - generic "Trending" [ref=e748]:
+        - generic [ref=e749]:
+          - region "Sign up" [ref=e751]:
+            - heading "New to X?" [level=2] [ref=e753]:
+              - generic [ref=e754]: New to X?
+            - generic [ref=e755]: Sign up now to get your own personalized timeline!
+            - generic [ref=e756]:
+              - iframe [ref=e759]:
+                - button "Sign up with Google. Opens in new tab" [ref=f4e3] [cursor=pointer]:
+                  - generic [ref=f4e5]:
+                    - img [ref=f4e7]
+                    - generic [ref=f4e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e760] [cursor=pointer]:
+                - generic [ref=e761]:
+                  - img [ref=e762]
+                  - generic [ref=e766]: Sign up with Apple
+              - link "Create account" [ref=e767] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e770]: Create account
+            - generic [ref=e771]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e772] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e773] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e774] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e776]:
+            - heading "Relevant people" [level=2] [ref=e778]:
+              - generic [ref=e779]: Relevant people
+            - list [ref=e780]:
+              - listitem [ref=e781] [cursor=pointer]:
+                - generic [ref=e782]:
+                  - link [ref=e792]:
+                    - /url: /garrytan
+                  - generic [ref=e795]:
+                    - generic [ref=e796]:
+                      - generic [ref=e798]:
+                        - link "Garry Tan Verified account" [ref=e800]:
+                          - /url: /garrytan
+                          - generic [ref=e801]:
+                            - generic [ref=e803]: Garry Tan
+                            - generic [ref=e805]:
+                              - img "Verified account" [ref=e806]
+                              - link [ref=e809]
+                        - link "@garrytan" [ref=e818]:
+                          - /url: /garrytan
+                          - generic [ref=e820]: "@garrytan"
+                      - button "Follow @garrytan" [ref=e822]:
+                        - generic [ref=e825]: Follow
+                    - generic [ref=e826]:
+                      - text: President & CEO
+                      - link "@ycombinator" [ref=e829]:
+                        - /url: /ycombinator
+                      - text: —Founder
+                      - link "@garryslist" [ref=e832]:
+                        - /url: /garryslist
+                      - text: —Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop
+          - region "Trending now" [ref=e834]:
+            - heading "Trending now" [level=1] [ref=e835]
+            - 'generic "Timeline: Trending now" [ref=e836]':
+              - generic [ref=e837]:
+                - heading "What’s happening" [level=2] [ref=e841]:
+                  - generic [ref=e842]: What’s happening
+                - link "Trending in United States Sarah Ashlee Barker" [ref=e845] [cursor=pointer]:
+                  - generic [ref=e846]:
+                    - generic [ref=e848]: Trending in United States
+                    - generic [ref=e849]: Sarah Ashlee Barker
+                - link "Sports · Trending Portland Fire" [ref=e852] [cursor=pointer]:
+                  - generic [ref=e853]:
+                    - generic [ref=e855]: Sports · Trending
+                    - generic [ref=e856]: Portland Fire
+                - link "Trending in United States Nia Coffey" [ref=e859] [cursor=pointer]:
+                  - generic [ref=e860]:
+                    - generic [ref=e862]: Trending in United States
+                    - generic [ref=e863]: Nia Coffey
+                - link "Trending in United States Blade Runner" [ref=e866] [cursor=pointer]:
+                  - generic [ref=e867]:
+                    - generic [ref=e869]: Trending in United States
+                    - generic [ref=e870]: Blade Runner
+                - link "Show more" [ref=e873] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e874]: Show more
+          - navigation "Footer" [ref=e876]:
+            - generic [ref=e877]:
+              - link "Terms of Service" [ref=e878] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e879]: "|"
+            - generic [ref=e880]:
+              - link "Privacy Policy" [ref=e881] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e882]: "|"
+            - generic [ref=e883]:
+              - link "Cookie Policy" [ref=e884] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e885]: "|"
+            - generic [ref=e886]:
+              - link "Accessibility" [ref=e887] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e888]: "|"
+            - generic [ref=e889]:
+              - link "Ads info" [ref=e890] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e891]: "|"
+            - button "More" [ref=e892] [cursor=pointer]:
+              - generic [ref=e893]:
+                - text: More
+                - img [ref=e894]
+            - generic [ref=e897]: © 2026 X Corp.

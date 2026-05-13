@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%; height: 100%;
+      padding: 140px 72px 400px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 78%, rgba(245, 158, 11, 0.18), transparent 55%),
+        radial-gradient(circle at 50% 48%, rgba(59, 130, 246, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 64px;
+    }
+    .headline {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -2px;
+      margin-bottom: 64px;
+      color: #FFFFFF;
+    }
+    .headline .purple { color: #8B5CF6; }
+    .headline .yellow { color: #F59E0B; }
+    .command-pill {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 30px 44px;
+      margin-bottom: 56px;
+      font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+    }
+    .command-pill .slash {
+      font-size: 64px;
+      color: #8B5CF6;
+      font-weight: 800;
+    }
+    .command-pill .cmd {
+      font-size: 64px;
+      color: #FFFFFF;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .command-pill .caret {
+      font-size: 60px;
+      color: #F59E0B;
+      font-weight: 800;
+      margin-left: 14px;
+      animation: none;
+    }
+    .source-tag {
+      display: inline-block;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 999px;
+      padding: 14px 32px;
+      font-size: 22px;
+      color: #6B6B80;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .source-tag .author { color: #8B8BA8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-tag">精读AI · Agent 工程</div>
+    <div class="headline">
+      让另一个模型<br>
+      来判断<br>
+      <span class="yellow">"做完了没"</span>？
+    </div>
+    <div class="command-pill">
+      <span class="slash">/</span><span class="cmd">goal</span><span class="caret">_</span>
+    </div>
+    <div class="source-tag">
+      <span class="author">Anthropic</span> · Claude Code Docs
+    </div>
+  </div>
+</body>
+</html>

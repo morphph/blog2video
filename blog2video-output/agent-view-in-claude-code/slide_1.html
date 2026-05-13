@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.20), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 48px;
+    }
+    .headline {
+      font-size: 78px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -2px;
+      margin-bottom: 48px;
+    }
+    .headline .p { color: #8B5CF6; }
+    .headline .y { color: #F59E0B; }
+    .feature {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 26px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .feature .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .feature .text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .feature .text .mono {
+      font-family: 'SF Mono', Consolas, monospace;
+      color: #8B5CF6;
+      font-weight: 800;
+    }
+    .hook {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .hook .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .hook .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .hook .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">ANTHROPIC · 上周更新</div>
+    <div class="headline">
+      看起来<span class="p">很普通</span>的<br>
+      一个<span class="y">小功能</span>
+    </div>
+    <div class="feature">
+      <div class="label">叫 AGENT VIEW</div>
+      <div class="text">
+        所有在跑的 Claude session<br>
+        摊在一个列表里
+      </div>
+    </div>
+    <div class="hook">
+      <div class="label">今天只聊一件事</div>
+      <div class="text">
+        为什么这个无聊更新<br>
+        是 Agent 工作流的<span class="em">拐点</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

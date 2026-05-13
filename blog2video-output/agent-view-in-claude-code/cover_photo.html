@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%; height: 100%;
+      padding: 140px 72px 400px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 78%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 50% 48%, rgba(245, 158, 11, 0.10), transparent 60%),
+        #0D0D1A;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 56px;
+    }
+    .headline {
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -2px;
+      margin-bottom: 56px;
+      color: #FFFFFF;
+    }
+    .headline .red { color: #EF4444; }
+    .headline .yellow { color: #F59E0B; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 28px 32px;
+      max-width: 900px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 56px;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .verdict .text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+    .source-tag {
+      display: inline-block;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 999px;
+      padding: 14px 32px;
+      font-size: 22px;
+      color: #6B6B80;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .source-tag .author { color: #8B8BA8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-tag">精读AI · Agent 工程</div>
+    <div class="headline">
+      并发 Agent 的<br>
+      <span class="red">终点</span>不是<br>
+      <span class="yellow">tmux</span>
+    </div>
+    <div class="verdict">
+      <div class="label">ANTHROPIC 官方措辞</div>
+      <div class="text">
+        我们以前<span class="em">让你受了苦</span><br>
+        靠 tmux 撑出来的脚手架
+      </div>
+    </div>
+    <div class="source-tag">
+      <span class="author">Anthropic · Claude Code</span> · Agent view
+    </div>
+  </div>
+</body>
+</html>

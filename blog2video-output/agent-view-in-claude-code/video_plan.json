@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Agent view in Claude Code",
+    "title_zh": "并发 Agent 的终点不是 tmux",
+    "word_count": 999,
+    "slug": "agent-view-in-claude-code"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "短篇产品发布稿（~5 分钟），单一论点（agent 并发瓶颈是注意力调度，不是模型），不需要分集。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "并发 Agent 的终点不是 tmux"
+      }
+    ]
+  }
+}

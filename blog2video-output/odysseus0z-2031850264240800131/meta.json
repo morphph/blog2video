@@ -1,0 +1,15 @@
+{
+  "topic": "睡前推 50 张 ticket，醒来 7000 行没了",
+  "blog_url": "https://x.com/odysseus0z/status/2031850264240800131",
+  "source": "odysseus0z-2031850264240800131",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

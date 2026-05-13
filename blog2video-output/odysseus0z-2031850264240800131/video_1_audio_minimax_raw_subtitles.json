@@ -1,0 +1,392 @@
+[
+  {
+    "text": "睡前往 Linear 推了 50 张 ticket，醒来 30 个 PR 已经合掉，净删 7000 行代码，两天没出问题。这是 OpenAI 的 George，@odysseus0z，在他自己的 Electron 老项目上跑的真实结果。",
+    "pronounce_text": "睡前往Linear推了五十张ticket，醒来三十个PR已经合掉，净删七千行代码，两天没出问题。这是OpenAI的George，at odysseus零z，在他自己的Electron老项目上跑的真实结果。",
+    "time_begin": 0,
+    "time_end": 15643.12925170068,
+    "text_begin": 0,
+    "text_end": 118,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 102
+  },
+  {
+    "text": "工具叫 Symphony，是 OpenAI 刚开源的 Codex agent 编排器。今天不教你怎么装 Symphony——只聊为什么这件事现在能发生。",
+    "pronounce_text": "工具叫Symphony，是OpenAI刚开源的Codex agent编排器。今天不教你怎么装Symphony只聊为什么这件事现在能发生。",
+    "time_begin": 15804,
+    "time_end": 26071.709750566893,
+    "text_begin": 118,
+    "text_end": 194,
+    "pronounce_text_begin": 102,
+    "pronounce_text_end": 170
+  },
+  {
+    "text": "先把这套方案的骨架拆给你看。它一共四个零件。Symphony，是编排器。Linear，是控制面。Codex，是干活的 agent。还有一份藏在仓库里的 WORKFLOW.md，是 prompt。",
+    "pronounce_text": "先把这套方案的骨架拆给你看。它一共四个零件。Symphony，是编排器。Linear，是控制面。Codex，是干活的agent。还有一份藏在仓库里的WORKFLOW.md，是prompt。",
+    "time_begin": 26208,
+    "time_end": 42269.08843537415,
+    "text_begin": 194,
+    "text_end": 291,
+    "pronounce_text_begin": 170,
+    "pronounce_text_end": 264
+  },
+  {
+    "text": "四个零件里，前三个都是基础设施。真正决定它能不能跑通的，是第四个，也就是那段 prompt。这是后面我会反复回到的判断。",
+    "pronounce_text": "四个零件里，前三个都是基础设施。真正决定它能不能跑通的，是第四个，也就是那段prompt。这是后面我会反复回到的判断。",
+    "time_begin": 42408,
+    "time_end": 53604.50793650794,
+    "text_begin": 291,
+    "text_end": 351,
+    "pronounce_text_begin": 264,
+    "pronounce_text_end": 323
+  },
+  {
+    "text": "但在这之前，我们先看一个非显然的设计——Linear 这个看板，到底为什么会成为控制面。",
+    "pronounce_text": "但在这之前，我们先看一个非显然的设计Linear这个看板，到底为什么会成为控制面。",
+    "time_begin": 53748,
+    "time_end": 60985.50566893424,
+    "text_begin": 351,
+    "text_end": 395,
+    "pronounce_text_begin": 323,
+    "pronounce_text_end": 364
+  },
+  {
+    "text": "你想想，要做人和 Agent 群之间的协作界面，第一直觉应该是什么？是 Slack，是 IDE 里的对话框，是命令行。",
+    "pronounce_text": "你想想，要做人和Agent群之间的协作界面，第一直觉应该是什么？是Slack，是IDE里的对话框，是命令行。",
+    "time_begin": 61128,
+    "time_end": 71813.66893424036,
+    "text_begin": 395,
+    "text_end": 454,
+    "pronounce_text_begin": 364,
+    "pronounce_text_end": 418
+  },
+  {
+    "text": "但 George 选的是 Linear，一个项目管理看板。",
+    "pronounce_text": "但George选的是Linear，一个项目管理看板。",
+    "time_begin": 71964,
+    "time_end": 75439.87301587302,
+    "text_begin": 454,
+    "text_end": 483,
+    "pronounce_text_begin": 418,
+    "pronounce_text_end": 444
+  },
+  {
+    "text": "为什么这是个聪明的选择。因为看板的三个状态——Todo、Rework、Backlog——天然就是\"派单\"、\"返工\"、\"暂停\"这三个指令。",
+    "pronounce_text": "为什么这是个聪明的选择。因为看板的三个状态Todo、Rework、Backlog天然就是\"派单\"、\"返工\"、\"暂停\"这三个指令。",
+    "time_begin": 75600,
+    "time_end": 86842.94784580499,
+    "text_begin": 483,
+    "text_end": 551,
+    "pronounce_text_begin": 444,
+    "pronounce_text_end": 508
+  },
+  {
+    "text": "状态本身就是消息。你把 ticket 拖到 Todo，几秒之内有一个空闲的 Agent 自己接走。",
+    "pronounce_text": "状态本身就是消息。你把ticket拖到Todo，几秒之内有一个空闲的Agent自己接走。",
+    "time_begin": 87042.94784580499,
+    "time_end": 94059.86394557822,
+    "text_begin": 551,
+    "text_end": 600,
+    "pronounce_text_begin": 508,
+    "pronounce_text_end": 552
+  },
+  {
+    "text": "你写一段 review 评论拖到 Rework，原来那个 Agent 自己回来继续改。",
+    "pronounce_text": "你写一段review评论拖到Rework，原来那个Agent自己回来继续改。",
+    "time_begin": 94212,
+    "time_end": 99232,
+    "text_begin": 600,
+    "text_end": 643,
+    "pronounce_text_begin": 552,
+    "pronounce_text_end": 590
+  },
+  {
+    "text": "这是异步消息队列的本质，但被包装成了一个人能读得懂的界面。Slack 做不到，IDE 也做不到——状态即指令，是看板独有的清晰边界。",
+    "pronounce_text": "这是异步消息队列的本质，但被包装成了一个人能读得懂的界面。Slack做不到，IDE也做不到状态即指令，是看板独有的清晰边界。",
+    "time_begin": 99396,
+    "time_end": 111103.3469387755,
+    "text_begin": 643,
+    "text_end": 709,
+    "pronounce_text_begin": 590,
+    "pronounce_text_end": 652
+  },
+  {
+    "text": "接下来这段是这篇博客里我最想让你听到的。",
+    "pronounce_text": "接下来这段是这篇博客里我最想让你听到的。",
+    "time_begin": 111240,
+    "time_end": 114634.60317460318,
+    "text_begin": 709,
+    "text_end": 729,
+    "pronounce_text_begin": 652,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "George 推过去一张 ticket，让 Agent 去重构一个叫 ChatDisplay 的组件。整张 ticket，一个字都没提到要测试。",
+    "pronounce_text": "George推过去一张ticket，让Agent去重构一个叫ChatDisplay的组件。整张ticket，一个字都没提到要测试。",
+    "time_begin": 114804,
+    "time_end": 123144.45351473923,
+    "text_begin": 729,
+    "text_end": 801,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 737
+  },
+  {
+    "text": "Agent 拿到 ticket 之后做了什么。它通过 CDP，也就是 Chrome DevTools Protocol，attach 到那个正在跑的 Electron app 上。",
+    "pronounce_text": "Agent拿到ticket之后做了什么。它通过CDP，也就是Chrome DevTools Protocol，attach到那个正在跑的Electron app上。",
+    "time_begin": 123300,
+    "time_end": 133172.97052154195,
+    "text_begin": 801,
+    "text_end": 891,
+    "pronounce_text_begin": 737,
+    "pronounce_text_end": 819
+  },
+  {
+    "text": "它用一个叫 agent-browser 的工具，往运行中的应用里注入了一个临时的探针，强制触发了一个渲染错误。然后它截图记录失败状态，再点击恢复路径，再截图记录恢复成功，最后把那个临时探针清理干净。",
+    "pronounce_text": "它用一个叫agent-browser的工具，往运行中的应用里注入了一个临时的探针，强制触发了一个渲染错误。然后它截图记录失败状态，再点击恢复路径，再截图记录恢复成功，最后把那个临时探针清理干净。",
+    "time_begin": 133344,
+    "time_end": 149323.81859410432,
+    "text_begin": 891,
+    "text_end": 990,
+    "pronounce_text_begin": 819,
+    "pronounce_text_end": 916
+  },
+  {
+    "text": "整套流程，self-directed。Ticket 上根本没写。",
+    "pronounce_text": "整套流程，self-directed。Ticket上根本没写。",
+    "time_begin": 149472,
+    "time_end": 153551.5918367347,
+    "text_begin": 990,
+    "text_end": 1022,
+    "pronounce_text_begin": 916,
+    "pronounce_text_end": 947
+  },
+  {
+    "text": "George 在原文里有一句话，挺让人停顿的。他说：我自己原本都不知道怎么测一个 Electron app，是通过读 Agent 的日志，反过来学会的。",
+    "pronounce_text": "George在原文里有一句话，挺让人停顿的。他说：我自己原本都不知道怎么测一个Electron app，是通过读Agent的日志，反过来学会的。",
+    "time_begin": 153720,
+    "time_end": 165392.51700680272,
+    "text_begin": 1022,
+    "text_end": 1098,
+    "pronounce_text_begin": 947,
+    "pronounce_text_end": 1019
+  },
+  {
+    "text": "这是一个反向流动。我们一直以为是人教 Agent，但在这一刻是 Agent 教人。",
+    "pronounce_text": "这是一个反向流动。我们一直以为是人教Agent，但在这一刻是Agent教人。",
+    "time_begin": 165564,
+    "time_end": 171129.66893424036,
+    "text_begin": 1098,
+    "text_end": 1139,
+    "pronounce_text_begin": 1019,
+    "pronounce_text_end": 1057
+  },
+  {
+    "text": "聊到这里，你可能以为重点是 Symphony 这个编排器写得多巧。",
+    "pronounce_text": "聊到这里，你可能以为重点是Symphony这个编排器写得多巧。",
+    "time_begin": 171288,
+    "time_end": 175785.55102040817,
+    "text_begin": 1139,
+    "text_end": 1172,
+    "pronounce_text_begin": 1057,
+    "pronounce_text_end": 1088
+  },
+  {
+    "text": "George 自己在文章最后一段，亲口否定了这件事。原文是这样的——Most of what makes this effective isn't the orchestrator. It's the prompt in WORKFLOW.md.Symphony is plumbing.",
+    "pronounce_text": "George自己在文章最后一段，亲口否定了这件事。原文是这样的Most of what makes this effective isn't the orchestrator.It's the prompt in WORKFLOW.md.Symphony is plumbing.",
+    "time_begin": 175932,
+    "time_end": 189520.16326530612,
+    "text_begin": 1172,
+    "text_end": 1316,
+    "pronounce_text_begin": 1088,
+    "pronounce_text_end": 1228
+  },
+  {
+    "text": "翻译过来就是：起作用的不是编排器，是那段 prompt。Symphony 只是水管。",
+    "pronounce_text": "翻译过来就是：起作用的不是编排器，是那段prompt。Symphony只是水管。",
+    "time_begin": 189684,
+    "time_end": 195505.08843537414,
+    "text_begin": 1316,
+    "text_end": 1358,
+    "pronounce_text_begin": 1228,
+    "pronounce_text_end": 1268
+  },
+  {
+    "text": "水管负责轮询 Linear、派发 worker、管并发槽位。但 Agent 该怎么拆计划、怎么测试、怎么处理 review 反馈、怎么把 scope 控制在一个可审 PR 之内——全是那段 prompt 在教。",
+    "pronounce_text": "水管负责轮询Linear、派发worker、管并发槽位。但Agent该怎么拆计划、怎么测试、怎么处理review反馈、怎么把scope控制在一个可审PR之内全是那段prompt在教。",
+    "time_begin": 195660,
+    "time_end": 209979.5918367347,
+    "text_begin": 1358,
+    "text_end": 1463,
+    "pronounce_text_begin": 1268,
+    "pronounce_text_end": 1359
+  },
+  {
+    "text": "而那段 prompt，作者说留到下一篇 follow-up 再讲。这是这套方案的暗物质——核心被留了悬念。",
+    "pronounce_text": "而那段prompt，作者说留到下一篇follow-up再讲。这是这套方案的暗物质核心被留了悬念。",
+    "time_begin": 210132,
+    "time_end": 217961.61451247166,
+    "text_begin": 1463,
+    "text_end": 1516,
+    "pronounce_text_begin": 1359,
+    "pronounce_text_end": 1407
+  },
+  {
+    "text": "但我得诚实地把代价也讲出来。这套东西不是开箱即用的爽文。",
+    "pronounce_text": "但我得诚实地把代价也讲出来。这套东西不是开箱即用的爽文。",
+    "time_begin": 218124,
+    "time_end": 223271.7097505669,
+    "text_begin": 1516,
+    "text_end": 1544,
+    "pronounce_text_begin": 1407,
+    "pronounce_text_end": 1435
+  },
+  {
+    "text": "第一，你的工作必须能被切成 ticket 形状。每张 ticket 得映射到一个能审的 PR，依赖关系得提前画清楚。探索性的、模糊的、跨多个仓库的活，跑不动。",
+    "pronounce_text": "第一，你的工作必须能被切成ticket形状。每张ticket得映射到一个能审的PR，依赖关系得提前画清楚。探索性的、模糊的、跨多个仓库的活，跑不动。",
+    "time_begin": 223416,
+    "time_end": 236795.18367346938,
+    "text_begin": 1544,
+    "text_end": 1623,
+    "pronounce_text_begin": 1435,
+    "pronounce_text_end": 1509
+  },
+  {
+    "text": "第二，你得能接受合并你没逐行 review 的 PR。一晚上 30 个 PR、净删 7000 行——人不可能挨行看。",
+    "pronounce_text": "第二，你得能接受合并你没逐行review的PR。一晚上三十个PR、净删七千行人不可能挨行看。",
+    "time_begin": 236952,
+    "time_end": 245931.0022675737,
+    "text_begin": 1623,
+    "text_end": 1681,
+    "pronounce_text_begin": 1509,
+    "pronounce_text_end": 1555
+  },
+  {
+    "text": "审查权实际上下沉到了 Agent 的 plan、测试，和 WORKFLOW.md 里的那些约束。这是个信任问题，不是技术问题。",
+    "pronounce_text": "审查权实际上下沉到了Agent的plan、测试，和WORKFLOW.md里的那些约束。这是个信任问题，不是技术问题。",
+    "time_begin": 246131.0022675737,
+    "time_end": 255620.84353741497,
+    "text_begin": 1681,
+    "text_end": 1744,
+    "pronounce_text_begin": 1555,
+    "pronounce_text_end": 1613
+  },
+  {
+    "text": "第三，那段最关键的 prompt 没公开。George 说留到下一篇，但今天你想复现这件事，得自己摸索。",
+    "pronounce_text": "第三，那段最关键的prompt没公开。George说留到下一篇，但今天你想复现这件事，得自己摸索。",
+    "time_begin": 255780,
+    "time_end": 264550.022675737,
+    "text_begin": 1744,
+    "text_end": 1796,
+    "pronounce_text_begin": 1613,
+    "pronounce_text_end": 1662
+  },
+  {
+    "text": "第四，并发数得从 2 到 3 起步，慢慢往上加。速度的红利不是开箱即得，得花时间建立信任，调 prompt，调 max_turns。",
+    "pronounce_text": "第四，并发数得从二到三起步，慢慢往上加。速度的红利不是开箱即得，得花时间建立信任，调prompt，调max，turns。",
+    "time_begin": 264708,
+    "time_end": 276380.5170068027,
+    "text_begin": 1796,
+    "text_end": 1862,
+    "pronounce_text_begin": 1662,
+    "pronounce_text_end": 1722
+  },
+  {
+    "text": "把这些放在一起看。",
+    "pronounce_text": "把这些放在一起看。",
+    "time_begin": 276552,
+    "time_end": 278019.3469387755,
+    "text_begin": 1862,
+    "text_end": 1871,
+    "pronounce_text_begin": 1722,
+    "pronounce_text_end": 1731
+  },
+  {
+    "text": "我看 Symphony，看到的不是一个新工具。是一个能力门槛被突破的时刻——一个人，在一晚上里，第一次跑通了多个并行的 codebase agent。",
+    "pronounce_text": "我看Symphony，看到的不是一个新工具。是一个能力门槛被突破的时刻一个人，在一晚上里，第一次跑通了多个并行的codebase agent。",
+    "time_begin": 278172,
+    "time_end": 288857.66893424036,
+    "text_begin": 1871,
+    "text_end": 1946,
+    "pronounce_text_begin": 1731,
+    "pronounce_text_end": 1802
+  },
+  {
+    "text": "但能跑通的前提，是把整套工程流程压成了 ticket 形状。是把 Linear 看板当成了 UI。是写好了那段 prompt。",
+    "pronounce_text": "但能跑通的前提，是把整套工程流程压成了ticket形状。是把Linear看板当成了UI。是写好了那段prompt。",
+    "time_begin": 289008,
+    "time_end": 298242.42176870746,
+    "text_begin": 1946,
+    "text_end": 2009,
+    "pronounce_text_begin": 1802,
+    "pronounce_text_end": 1859
+  },
+  {
+    "text": "模型有没有变强？没有特别变。是 Codex，是大家都能用到的那个 Codex。",
+    "pronounce_text": "模型有没有变强？没有特别变。是Codex，是大家都能用到的那个Codex。",
+    "time_begin": 298404,
+    "time_end": 304701.09750566893,
+    "text_begin": 2009,
+    "text_end": 2048,
+    "pronounce_text_begin": 1859,
+    "pronounce_text_end": 1896
+  },
+  {
+    "text": "变的是别的东西。是工程流程被压扁、被对象化，变成了 Agent 能消费的格式。这条博客 222000 浏览、840 点赞、但 1996 个 bookmark——bookmark 比 like 还多两倍多。",
+    "pronounce_text": "变的是别的东西。是工程流程被压扁、被对象化，变成了Agent能消费的格式。这条博客二二二零零零浏览、八百四十点赞、但一千九百九十六个bookmark bookmark比like还多两倍多。",
+    "time_begin": 304848,
+    "time_end": 321083.2380952381,
+    "text_begin": 2048,
+    "text_end": 2150,
+    "pronounce_text_begin": 1896,
+    "pronounce_text_end": 1990
+  },
+  {
+    "text": "这个比例本身就是信号：观众不是在围观，是在收藏研究、准备回家自己试。",
+    "pronounce_text": "这个比例本身就是信号：观众不是在围观，是在收藏研究、准备回家自己试。",
+    "time_begin": 321228,
+    "time_end": 328035.9365079365,
+    "text_begin": 2150,
+    "text_end": 2184,
+    "pronounce_text_begin": 1990,
+    "pronounce_text_end": 2024
+  },
+  {
+    "text": "合并 PR 比写 PR 难。这是被低估的瓶颈。Symphony 没解决\"怎么写代码\"，它解决的是\"怎么让一个人敢合一晚上 30 个 PR\"。",
+    "pronounce_text": "合并PR比写PR难。这是被低估的瓶颈。Symphony没解决\"怎么写代码\"，它解决的是\"怎么让一个人敢合一晚上三十个PR\"。",
+    "time_begin": 328176,
+    "time_end": 339035.8185941043,
+    "text_begin": 2184,
+    "text_end": 2254,
+    "pronounce_text_begin": 2024,
+    "pronounce_text_end": 2086
+  },
+  {
+    "text": "最后留一句话给你。",
+    "pronounce_text": "最后留一句话给你。",
+    "time_begin": 339192,
+    "time_end": 340624.5170068027,
+    "text_begin": 2254,
+    "text_end": 2263,
+    "pronounce_text_begin": 2086,
+    "pronounce_text_end": 2095
+  },
+  {
+    "text": "真正决定 Agent 能不能干活的，不是 OpenAI 写的编排器，是你自己写的那段 prompt。Symphony 是水管，WORKFLOW.md 才是大脑。",
+    "pronounce_text": "真正决定Agent能不能干活的，不是OpenAI写的编排器，是你自己写的那段prompt。Symphony是水管，WORKFLOW.md才是大脑。",
+    "time_begin": 340776,
+    "time_end": 351554.54875283444,
+    "text_begin": 2263,
+    "text_end": 2343,
+    "pronounce_text_begin": 2095,
+    "pronounce_text_end": 2168
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 351720,
+    "time_end": 356821.2698412698,
+    "text_begin": 2343,
+    "text_end": 2370,
+    "pronounce_text_begin": 2168,
+    "pronounce_text_end": 2194
+  }
+]

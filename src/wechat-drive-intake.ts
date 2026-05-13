@@ -135,7 +135,11 @@ function downloadFolder(slug: string): void {
 
 function readRows(): PublishRow[] {
   if (fs.existsSync(JSON_PATH)) {
-    return JSON.parse(fs.readFileSync(JSON_PATH, 'utf-8')) as PublishRow[];
+    const rows = JSON.parse(fs.readFileSync(JSON_PATH, 'utf-8')) as PublishRow[];
+    return rows.map(row => ({
+      ...row,
+      video_number: String(row.video_number ?? ''),
+    }));
   }
   return [];
 }
@@ -309,7 +313,7 @@ function buildRowsForFolder(folderPath: string, slug: string, existingRows: Publ
   const rows: PublishRow[] = [];
 
   for (const video of videos) {
-    const exists = existingRows.some(row => row.source_slug === slug && row.video_number === String(video.video_number));
+    const exists = existingRows.some(row => row.source_slug === slug && String(row.video_number) === String(video.video_number));
     if (exists) continue;
 
     const scriptFile = video.script || `video_${video.video_number}_script.md`;

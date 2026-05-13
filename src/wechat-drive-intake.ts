@@ -40,12 +40,23 @@ type PublishRow = {
   updated_at: string;
 };
 
+type RemoteFolder = {
+  slug: string;
+  modTime: string;
+};
+
+type IntakeState = {
+  last_successful_at?: string;
+  seen_folders?: Record<string, string>;
+};
+
 const DRIVE_REMOTE = process.env.BLOG2VIDEO_GDRIVE_REMOTE || 'gdrive:blog2video';
 const INTAKE_MAX_AGE = process.env.BLOG2VIDEO_INTAKE_MAX_AGE || '3d';
 const LOG_DIR = path.join(PROJECT_ROOT, 'published');
 const CSV_PATH = process.env.WECHAT_PUBLISH_LOG_CSV || path.join(LOG_DIR, 'wechat_publish_log.csv');
 const JSON_PATH = process.env.WECHAT_PUBLISH_LOG_JSON || path.join(LOG_DIR, 'wechat_publish_log.json');
 const QUEUE_MANIFEST_PATH = path.join(LOG_DIR, 'wechat_publish_queue.json');
+const STATE_PATH = path.join(LOG_DIR, 'wechat_intake_state.json');
 const SGT_TIME_ZONE = 'Asia/Singapore';
 const SCHEDULE_SLOTS = ['13:00', '22:30'];
 const FIXED_TAGS = [
@@ -90,21 +101,20 @@ function runRclone(args: string[]): string {
   return execFileSync('rclone', args, { encoding: 'utf-8', stdio: ['ignore', 'pipe', 'pipe'] });
 }
 
-function listDriveFolders(): string[] {
-  const args = ['lsf', DRIVE_REMOTE, '--dirs-only'];
-  if (INTAKE_MAX_AGE) {
-    args.push('--max-age', INTAKE_MAX_AGE);
-  }
-  const output = runRclone(args);
-  return output
-    .split('\n')
-    .map(line => line.trim().replace(/\/$/, ''))
-    .filter(Boolean)
-    .filter(folder => !folder.startsWith('.'));
+function listDriveFolders(): RemoteFolder[] {
+  const output = runRclone(['lsjson', DRIVE_REMOTE, '--dirs-only']);
+  const entries = JSON.parse(output) as Array<{ Name?: string; ModTime?: string; IsDir?: boolean }>;
+  return entries
+    .filter(entry => entry.IsDir && entry.Name && !entry.Name.startsWith('.'))
+    .map(entry => ({
+      slug: entry.Name as string,
+      modTime: entry.ModTime || new Date(0).toISOString(),
+    }))
+    .sort((a, b) => a.modTime.localeCompare(b.modTime));
 }
 
-function downloadFolder(slug: string): void {
-  const dest = path.join(QUEUE_DIR, slug);
+function copyFolder(slug: string, destRoot: string): void {
+  const dest = path.join(destRoot, slug);
   ensureDir(dest);
   runRclone([
     'copy',
@@ -117,6 +127,10 @@ function downloadFolder(slug: string): void {
     '--retries',
     '3',
   ]);
+}
+
+function downloadFolder(slug: string): void {
+  copyFolder(slug, QUEUE_DIR);
 }
 
 function readRows(): PublishRow[] {
@@ -141,6 +155,18 @@ function writeRows(rows: PublishRow[]): void {
     ...rows.map(row => CSV_HEADERS.map(header => csvEscape(row[header] || '')).join(',')),
   ].join('\n') + '\n';
   fs.writeFileSync(CSV_PATH, csv);
+}
+
+function readState(): IntakeState {
+  if (!fs.existsSync(STATE_PATH)) {
+    return { seen_folders: {} };
+  }
+  return JSON.parse(fs.readFileSync(STATE_PATH, 'utf-8')) as IntakeState;
+}
+
+function writeState(state: IntakeState): void {
+  ensureDir(LOG_DIR);
+  fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2));
 }
 
 function getSgtParts(date: Date): { year: number; month: number; day: number; hour: number; minute: number } {
@@ -270,8 +296,7 @@ function emptyRow(): PublishRow {
   };
 }
 
-function buildRowsForFolder(slug: string, existingRows: PublishRow[], occupied: Set<string>): PublishRow[] {
-  const folderPath = path.join(QUEUE_DIR, slug);
+function buildRowsForFolder(folderPath: string, slug: string, existingRows: PublishRow[], occupied: Set<string>): PublishRow[] {
   const metaPath = path.join(folderPath, 'meta.json');
   if (!fs.existsSync(metaPath)) {
     log(`[WeChat Intake] Skipping ${slug}: no meta.json after download`);
@@ -335,6 +360,50 @@ function writeQueueManifest(rows: PublishRow[]): void {
   }, null, 2));
 }
 
+function parseMaxAgeMs(value: string): number | null {
+  const match = value.match(/^(\d+)([smhdw])$/i);
+  if (!match) return null;
+  const amount = Number(match[1]);
+  const unit = match[2].toLowerCase();
+  const multipliers: Record<string, number> = {
+    s: 1000,
+    m: 60 * 1000,
+    h: 60 * 60 * 1000,
+    d: 24 * 60 * 60 * 1000,
+    w: 7 * 24 * 60 * 60 * 1000,
+  };
+  return amount * multipliers[unit];
+}
+
+function resolveCandidates(folders: RemoteFolder[], state: IntakeState, existingRows: PublishRow[]): RemoteFolder[] {
+  const seen = state.seen_folders || {};
+  const existingSlugs = new Set(existingRows.map(row => row.source_slug));
+  const lastSuccessfulMs = state.last_successful_at ? Date.parse(state.last_successful_at) : NaN;
+
+  if (Number.isFinite(lastSuccessfulMs)) {
+    return folders.filter(folder => {
+      const folderMs = Date.parse(folder.modTime);
+      const seenModTime = seen[folder.slug];
+      if (seenModTime && seenModTime >= folder.modTime) return false;
+      if (folderMs > lastSuccessfulMs) return true;
+      return !existingSlugs.has(folder.slug) && !seenModTime;
+    });
+  }
+
+  const maxAgeMs = parseMaxAgeMs(INTAKE_MAX_AGE);
+  if (maxAgeMs == null) {
+    return folders.filter(folder => !seen[folder.slug] || seen[folder.slug] < folder.modTime);
+  }
+
+  const cutoffMs = Date.now() - maxAgeMs;
+  return folders.filter(folder => {
+    const folderMs = Date.parse(folder.modTime);
+    if (!Number.isFinite(folderMs)) return false;
+    if (folderMs < cutoffMs) return false;
+    return !seen[folder.slug] || seen[folder.slug] < folder.modTime;
+  });
+}
+
 function parseArgs(): { dryRun: boolean; limit: number | null } {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
@@ -354,36 +423,61 @@ async function main(): Promise<void> {
   ensureDir(QUEUE_DIR);
 
   const existingRows = readRows();
+  const state = readState();
   if (hasArg('--init-log')) {
     writeRows(existingRows);
     writeQueueManifest(existingRows);
+    writeState(state);
     log(`[WeChat Intake] Initialized log files: ${CSV_PATH}, ${JSON_PATH}`);
     return;
   }
   const occupied = new Set(existingRows.map(row => row.scheduled_at_sgt).filter(Boolean));
   const folders = listDriveFolders();
-  const knownFolders = new Set(existingRows.map(row => row.source_slug));
-  const candidates = folders.filter(folder => !knownFolders.has(folder));
+  const candidates = resolveCandidates(folders, state, existingRows);
   const selected = limit ? candidates.slice(0, limit) : candidates;
 
-  log(`[WeChat Intake] Drive folders=${folders.length}, known=${knownFolders.size}, new=${candidates.length}, maxAge=${INTAKE_MAX_AGE || 'disabled'}`);
+  log(`[WeChat Intake] Drive folders=${folders.length}, previousSeen=${Object.keys(state.seen_folders || {}).length}, candidates=${candidates.length}, lastSuccessful=${state.last_successful_at || 'none'}, fallbackMaxAge=${INTAKE_MAX_AGE || 'disabled'}`);
   if (selected.length === 0) {
     writeRows(existingRows);
     writeQueueManifest(existingRows);
+    writeState({
+      ...state,
+      last_successful_at: new Date().toISOString(),
+      seen_folders: {
+        ...(state.seen_folders || {}),
+        ...Object.fromEntries(folders.map(folder => [folder.slug, folder.modTime])),
+      },
+    });
     log('[WeChat Intake] No new videos found.');
     return;
   }
 
   const additions: PublishRow[] = [];
-  for (const slug of selected) {
-    try {
-      log(`[WeChat Intake] Downloading ${slug} from ${DRIVE_REMOTE}...`);
-      if (!dryRun) downloadFolder(slug);
-      const folderRows = buildRowsForFolder(slug, [...existingRows, ...additions], occupied);
-      additions.push(...folderRows);
-      log(`[WeChat Intake] Prepared ${folderRows.length} row(s) for ${slug}`);
-    } catch (err) {
-      logError(`[WeChat Intake] Failed to prepare ${slug}`, err);
+  const nextSeenFolders = { ...(state.seen_folders || {}) };
+  const tempRoot = path.join(PROJECT_ROOT, '.tmp');
+  if (dryRun) ensureDir(tempRoot);
+  const stageRoot = dryRun ? fs.mkdtempSync(path.join(tempRoot, 'wechat-intake-')) : QUEUE_DIR;
+  try {
+    for (const folder of selected) {
+      const slug = folder.slug;
+      try {
+        log(`[WeChat Intake] Downloading ${slug} from ${DRIVE_REMOTE}...`);
+        if (dryRun) {
+          copyFolder(slug, stageRoot);
+        } else {
+          downloadFolder(slug);
+        }
+        const folderRows = buildRowsForFolder(path.join(stageRoot, slug), slug, [...existingRows, ...additions], occupied);
+        additions.push(...folderRows);
+        nextSeenFolders[slug] = folder.modTime;
+        log(`[WeChat Intake] Prepared ${folderRows.length} row(s) for ${slug}`);
+      } catch (err) {
+        logError(`[WeChat Intake] Failed to prepare ${slug}`, err);
+      }
+    }
+  } finally {
+    if (dryRun && fs.existsSync(stageRoot)) {
+      fs.rmSync(stageRoot, { recursive: true, force: true });
     }
   }
 
@@ -391,6 +485,10 @@ async function main(): Promise<void> {
   if (!dryRun) {
     writeRows(nextRows);
     writeQueueManifest(nextRows);
+    writeState({
+      last_successful_at: new Date().toISOString(),
+      seen_folders: nextSeenFolders,
+    });
   } else {
     log(`[WeChat Intake] Dry run additions:\n${JSON.stringify(additions, null, 2)}`);
   }

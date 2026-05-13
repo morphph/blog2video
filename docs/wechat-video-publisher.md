@@ -18,9 +18,11 @@ Configuration lives in `config/wechat-publisher.json`.
 7. Codex uses Computer Use on WeChat desktop to upload the video, upload the custom cover photo, schedule, check `声明原创`, and publish.
 8. Google Sheet mirrors the CSV and adds preview/final URL updates.
 
-The intake scan defaults to Drive folders modified in the last `3d`. Set `BLOG2VIDEO_INTAKE_MAX_AGE` to tune the first-run/backfill window.
+The intake scan now persists `published/wechat_intake_state.json` with the last successful sync time plus seen folder modtimes. On normal runs it prefers "folders modified since the last successful intake" instead of relying only on the CSV log. If no state file exists yet, it falls back to Drive folders modified in the last `3d`. Set `BLOG2VIDEO_INTAKE_MAX_AGE` to tune that bootstrap/backfill window.
 
-The CLI expects an `rclone` remote named `gdrive:`. If the local machine does not have that remote, Drive scanning will fail before any queue mutation. In that case, configure `rclone` or use the Google Drive connector to stage the folder manually.
+The CLI expects an `rclone` remote named `gdrive:`. If the local machine does not have that remote, or the machine temporarily cannot resolve Google hosts such as `www.googleapis.com`, Drive scanning will fail before any queue mutation. In that case, restore network/DNS first, or use the Google Drive connector to stage the folder manually.
+
+`npm run wechat:intake:dry-run` now copies candidate folders into a temporary local directory before parsing `meta.json`, so it can validate truly new remote folders instead of only whatever already exists under `queue/`.
 
 ## Schedule
 

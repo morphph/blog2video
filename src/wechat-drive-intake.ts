@@ -447,10 +447,7 @@ async function main(): Promise<void> {
     writeState({
       ...state,
       last_successful_at: new Date().toISOString(),
-      seen_folders: {
-        ...(state.seen_folders || {}),
-        ...Object.fromEntries(folders.map(folder => [folder.slug, folder.modTime])),
-      },
+      seen_folders: Object.fromEntries(folders.map(folder => [folder.slug, folder.modTime])),
     });
     log('[WeChat Intake] No new videos found.');
     return;
@@ -491,7 +488,7 @@ async function main(): Promise<void> {
     writeQueueManifest(nextRows);
     writeState({
       last_successful_at: new Date().toISOString(),
-      seen_folders: nextSeenFolders,
+      seen_folders: Object.fromEntries(folders.map(folder => [folder.slug, folder.modTime])),
     });
   } else {
     log(`[WeChat Intake] Dry run additions:\n${JSON.stringify(additions, null, 2)}`);

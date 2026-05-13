@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 22% 22%, rgba(239, 68, 68, 0.20), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+    .title .r { color: #EF4444; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      width: 100%;
+      max-width: 920px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 16px 22px;
+      text-align: left;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .item .num {
+      font-size: 32px;
+      color: #EF4444;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 42px;
+    }
+    .item .body { flex: 1; }
+    .item .head {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .item .desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .item .desc .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">不讲代价的爽点是耍流氓</div>
+    <div class="title">这套方法的 <span class="r">5 个代价</span></div>
+    <div class="list">
+      <div class="item">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="head">覆盖率给虚假信心</div>
+          <div class="desc">90% 行覆盖 ≠ <span class="em">90% 行为正确</span></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="head">跨模型 eval 非零成本</div>
+          <div class="desc">十万 claim × 双模型 token 账单不便宜</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="head">协议易测 内容难测</div>
+          <div class="desc">能 assert 它问没问 <span class="em">难 assert 问得好不好</span></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">4</div>
+        <div class="body">
+          <div class="head">棘轮会锁死合理重构</div>
+          <div class="desc">机构记忆 → 可能变 <span class="em">"机构化石"</span></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">5</div>
+        <div class="body">
+          <div class="head">灾难性错误没被覆盖</div>
+          <div class="desc">生产迁移 / 隐私泄漏 棘轮帮不到全部</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

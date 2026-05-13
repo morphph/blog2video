@@ -1,0 +1,252 @@
+[
+  {
+    "text": "Anthropic 刚给 Claude Code 加了个看起来很普通的小功能，叫 agent view。一句话说，就是把你所有正在跑的 Claude session 摊在一个列表里。",
+    "pronounce_text": "Anthropic刚给Claude Code加了个看起来很普通的小功能，叫agent view。一句话说，就是把你所有正在跑的Claude session摊在一个列表里。",
+    "time_begin": 0,
+    "time_end": 11068.798185941043,
+    "text_begin": 0,
+    "text_end": 91,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 85
+  },
+  {
+    "text": "今天不聊它有几个快捷键，也不教你怎么打开——只聊一件事：为什么这个看起来无聊的小更新，其实是 Agent 工作流的一个拐点。",
+    "pronounce_text": "今天不聊它有几个快捷键，也不教你怎么打开只聊一件事：为什么这个看起来无聊的小更新，其实是Agent工作流的一个拐点。",
+    "time_begin": 11232,
+    "time_end": 21232.680272108842,
+    "text_begin": 91,
+    "text_end": 153,
+    "pronounce_text_begin": 85,
+    "pronounce_text_end": 143
+  },
+  {
+    "text": "最有意思的是 Anthropic 自己的措辞。他们在发布稿第二段直接承认了一件事：在这个功能之前，用户要并行跑多个 Agent，靠的是什么？",
+    "pronounce_text": "最有意思的是Anthropic自己的措辞。他们在发布稿第二段直接承认了一件事：在这个功能之前，用户要并行跑多个Agent，靠的是什么？",
+    "time_begin": 21384,
+    "time_end": 33265.49659863945,
+    "text_begin": 153,
+    "text_end": 223,
+    "pronounce_text_begin": 143,
+    "pronounce_text_end": 210
+  },
+  {
+    "text": "多个 terminal tab，一个 tmux 网格，再加上自己脑子里那本随时可能漏的待办账本。",
+    "pronounce_text": "多个terminal tab，一个tmux网格，再加上自己脑子里那本随时可能漏的待办账本。",
+    "time_begin": 33408,
+    "time_end": 40552.62585034013,
+    "text_begin": 223,
+    "text_end": 271,
+    "pronounce_text_begin": 210,
+    "pronounce_text_end": 255
+  },
+  {
+    "text": "注意，这是官方文案。等于 Anthropic 自己在说，tmux 是临时方案，是用户硬撑出来的脚手架。这件事其实挺关键的。",
+    "pronounce_text": "注意，这是官方文案。等于Anthropic自己在说，tmux是临时方案，是用户硬撑出来的脚手架。这件事其实挺关键的。",
+    "time_begin": 40716,
+    "time_end": 52167.92743764172,
+    "text_begin": 271,
+    "text_end": 332,
+    "pronounce_text_begin": 255,
+    "pronounce_text_end": 313
+  },
+  {
+    "text": "一个公司愿意在产品发布稿里写\"我们以前让你受了苦\"，意味着他们已经把这种用法当成默认假设，而不是少数极客的边缘玩法。",
+    "pronounce_text": "一个公司愿意在产品发布稿里写\"我们以前让你受了苦\"，意味着他们已经把这种用法当成默认假设，而不是少数极客的边缘玩法。",
+    "time_begin": 52308,
+    "time_end": 62865.95918367347,
+    "text_begin": 332,
+    "text_end": 390,
+    "pronounce_text_begin": 313,
+    "pronounce_text_end": 371
+  },
+  {
+    "text": "我读完最大的感受是这个：并发 Agent 的真正瓶颈，从来都不是模型能力，是人类的注意力调度。",
+    "pronounce_text": "我读完最大的感受是这个：并发Agent的真正瓶颈，从来都不是模型能力，是人类的注意力调度。",
+    "time_begin": 63036,
+    "time_end": 72142.71201814059,
+    "text_begin": 390,
+    "text_end": 437,
+    "pronounce_text_begin": 371,
+    "pronounce_text_end": 416
+  },
+  {
+    "text": "模型能不能同时跑十个 session？早就能了。难的是你怎么知道哪个在等你回话，哪个还在干活，哪个已经交活了。这是个调度问题，不是算力问题。",
+    "pronounce_text": "模型能不能同时跑十个session？早就能了。难的是你怎么知道哪个在等你回话，哪个还在干活，哪个已经交活了。这是个调度问题，不是算力问题。",
+    "time_begin": 72288,
+    "time_end": 85284.05442176871,
+    "text_begin": 437,
+    "text_end": 507,
+    "pronounce_text_begin": 416,
+    "pronounce_text_end": 485
+  },
+  {
+    "text": "以前没人正面解决，是因为大家默认\"一个用户管一个 Agent\"。agent view 的潜台词是：N 等于 1 的时代已经过去了，N 大于 1 已经成为常态。",
+    "pronounce_text": "以前没人正面解决，是因为大家默认\"一个用户管一个Agent\"。agent view的潜台词是：N等于一的时代已经过去了，N大于一已经成为常态。",
+    "time_begin": 85428,
+    "time_end": 97402.37641723357,
+    "text_begin": 507,
+    "text_end": 586,
+    "pronounce_text_begin": 485,
+    "pronounce_text_end": 556
+  },
+  {
+    "text": "agent view 最值得讲的设计，是它的三个状态：waiting，working，done。waiting 是在等你输入，working 是还在跑，done 是干完了。",
+    "pronounce_text": "agent view最值得讲的设计，是它的三个状态：waiting，working，done。waiting是在等你输入，working是还在跑，done是干完了。",
+    "time_begin": 97560,
+    "time_end": 109824.62585034013,
+    "text_begin": 586,
+    "text_end": 672,
+    "pronounce_text_begin": 556,
+    "pronounce_text_end": 638
+  },
+  {
+    "text": "这三个状态的顺序就是优先级。最显眼的位置留给 waiting——谁在等我。这不是监控面板的思路，这是邮件 inbox 的思路。",
+    "pronounce_text": "这三个状态的顺序就是优先级。最显眼的位置留给waiting谁在等我。这不是监控面板的思路，这是邮件inbox的思路。",
+    "time_begin": 109980,
+    "time_end": 120247.7097505669,
+    "text_begin": 672,
+    "text_end": 735,
+    "pronounce_text_begin": 638,
+    "pronounce_text_end": 696
+  },
+  {
+    "text": "差别在哪？dashboard 关心的是\"系统现在的全貌\"，inbox 关心的是\"谁在卡我\"。如果你把它做成 dashboard，最显眼的会是已经完成的产物。",
+    "pronounce_text": "差别在哪？dashboard关心的是\"系统现在的全貌\"，inbox关心的是\"谁在卡我\"。如果你把它做成dashboard，最显眼的会是已经完成的产物。",
+    "time_begin": 120384,
+    "time_end": 134320.46258503402,
+    "text_begin": 735,
+    "text_end": 813,
+    "pronounce_text_begin": 696,
+    "pronounce_text_end": 771
+  },
+  {
+    "text": "但 Anthropic 选了反过来——把\"卡点\"置顶，因为卡点会阻塞其他所有 Agent 推进。这是个有立场的产品判断。",
+    "pronounce_text": "但Anthropic选了反过来把\"卡点\"置顶，因为卡点会阻塞其他所有Agent推进。这是个有立场的产品判断。",
+    "time_begin": 134460,
+    "time_end": 143868.57142857142,
+    "text_begin": 813,
+    "text_end": 873,
+    "pronounce_text_begin": 771,
+    "pronounce_text_end": 825
+  },
+  {
+    "text": "发布稿里塞了一个 flag，`claude --bg`，意思是直接以背景模式启动一个新 session，跳过前台。",
+    "pronounce_text": "发布稿里塞了一个flag，claude，-bg，意思是直接以背景模式启动一个新session，跳过前台。",
+    "time_begin": 144036,
+    "time_end": 152806.02267573695,
+    "text_begin": 873,
+    "text_end": 930,
+    "pronounce_text_begin": 825,
+    "pronounce_text_end": 877
+  },
+  {
+    "text": "听起来只是个开关，但它暗示了一件事：默认形态正在翻转。",
+    "pronounce_text": "听起来只是个开关，但它暗示了一件事：默认形态正在翻转。",
+    "time_begin": 152964,
+    "time_end": 159168.21768707482,
+    "text_begin": 930,
+    "text_end": 957,
+    "pronounce_text_begin": 877,
+    "pronounce_text_end": 904
+  },
+  {
+    "text": "以前我们的直觉是\"前台跑一个，偶尔 detach 到后台\"，前台是默认；这个 flag 在说，未来的默认可能反过来——\"所有 session 默认在背景跑，前台只是你恰好选中的那一个\"。",
+    "pronounce_text": "以前我们的直觉是\"前台跑一个，偶尔detach到后台\"，前台是默认;这个flag在说，未来的默认可能反过来\"所有session默认在背景跑，前台只是你恰好选中的那一个\"。",
+    "time_begin": 159336,
+    "time_end": 176128.51700680272,
+    "text_begin": 957,
+    "text_end": 1050,
+    "pronounce_text_begin": 904,
+    "pronounce_text_end": 989
+  },
+  {
+    "text": "你不是在操作一个 Agent，你是在调度一池 Agent。前台只是这池子里你此刻看的那个窗口。",
+    "pronounce_text": "你不是在操作一个Agent，你是在调度一池Agent。前台只是这池子里你此刻看的那个窗口。",
+    "time_begin": 176292,
+    "time_end": 183784.92517006802,
+    "text_begin": 1050,
+    "text_end": 1097,
+    "pronounce_text_begin": 989,
+    "pronounce_text_end": 1034
+  },
+  {
+    "text": "诚实讲，这个产品不是普惠的。它的价值曲线是非线性的。",
+    "pronounce_text": "诚实讲，这个产品不是普惠的。它的价值曲线是非线性的。",
+    "time_begin": 183924,
+    "time_end": 189582.54875283447,
+    "text_begin": 1097,
+    "text_end": 1123,
+    "pronounce_text_begin": 1034,
+    "pronounce_text_end": 1060
+  },
+  {
+    "text": "如果你一次只开一个 Claude Code，agent view 反而是负收益——多了一层导航，没解决任何问题。session 数从 1 涨到 3，收益一般；从 3 涨到 10，才指数级上升。",
+    "pronounce_text": "如果你一次只开一个Claude Code，agent view反而是负收益多了一层导航，没解决任何问题。session数从一涨到三，收益一般;从三涨到十，才指数级上升。",
+    "time_begin": 189720,
+    "time_end": 203180.45351473923,
+    "text_begin": 1123,
+    "text_end": 1219,
+    "pronounce_text_begin": 1060,
+    "pronounce_text_end": 1144
+  },
+  {
+    "text": "还有一个隐性代价。以前 tmux 帮你\"忘掉\"那些后台 session——它们在别的 tab 里，你看不见就不焦虑。现在所有东西都摊在一个 inbox 里，你必须主动决定：哪个值得派到背景跑，哪个必须前台盯着。",
+    "pronounce_text": "还有一个隐性代价。以前tmux帮你\"忘掉\"那些后台session它们在别的tab里，你看不见就不焦虑。现在所有东西都摊在一个inbox里，你必须主动决定：哪个值得派到背景跑，哪个必须前台盯着。",
+    "time_begin": 203328,
+    "time_end": 220155.3469387755,
+    "text_begin": 1219,
+    "text_end": 1324,
+    "pronounce_text_begin": 1144,
+    "pronounce_text_end": 1240
+  },
+  {
+    "text": "这是新的认知负担，agent view 没替你回答。",
+    "pronounce_text": "这是新的认知负担，agent view没替你回答。",
+    "time_begin": 220320,
+    "time_end": 223970.02267573695,
+    "text_begin": 1324,
+    "text_end": 1350,
+    "pronounce_text_begin": 1240,
+    "pronounce_text_end": 1265
+  },
+  {
+    "text": "所以我的判断是这样的。这个功能不是一次 UI 改进，是 Anthropic 在产品上承认了一件事：一个人管多个 Agent 已经不是高阶玩法，是默认场景。",
+    "pronounce_text": "所以我的判断是这样的。这个功能不是一次UI改进，是Anthropic在产品上承认了一件事：一个人管多个Agent已经不是高阶玩法，是默认场景。",
+    "time_begin": 224136,
+    "time_end": 236319.3560090703,
+    "text_begin": 1350,
+    "text_end": 1427,
+    "pronounce_text_begin": 1265,
+    "pronounce_text_end": 1336
+  },
+  {
+    "text": "以前 Agent 在每个 terminal tab 里各跑各的，靠你脑子串起来。现在 Anthropic 把那个\"脑子里的账本\"做成了产品。并发的边界，不再是模型能跑几个，而是你愿不愿意让所有 session 都进同一个 inbox。",
+    "pronounce_text": "以前Agent在每个terminal tab里各跑各的，靠你脑子串起来。现在Anthropic把那个\"脑子里的账本\"做成了产品。并发的边界，不再是模型能跑几个，而是你愿不愿意让所有session都进同一个inbox。",
+    "time_begin": 236484,
+    "time_end": 252928.21768707482,
+    "text_begin": 1427,
+    "text_end": 1544,
+    "pronounce_text_begin": 1336,
+    "pronounce_text_end": 1444
+  },
+  {
+    "text": "下一个问题就来了：当 inbox 里堆满二十个 Agent 的时候，谁来帮你决定先回哪一个？那大概是下一代 Claude Code 要回答的事。",
+    "pronounce_text": "下一个问题就来了：当inbox里堆满二十个Agent的时候，谁来帮你决定先回哪一个？那大概是下一代Claude Code要回答的事。",
+    "time_begin": 253080,
+    "time_end": 263127.1201814059,
+    "text_begin": 1544,
+    "text_end": 1616,
+    "pronounce_text_begin": 1444,
+    "pronounce_text_end": 1510
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 263268,
+    "time_end": 269054.25850340136,
+    "text_begin": 1616,
+    "text_end": 1643,
+    "pronounce_text_begin": 1510,
+    "pronounce_text_end": 1536
+  }
+]

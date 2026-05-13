@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(16, 185, 129, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .g { color: #10B981; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 18px 22px;
+      text-align: left;
+    }
+    .item .head {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .item .head .r { color: #EF4444; }
+    .item .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .item .desc .em { color: #10B981; font-weight: 800; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .verdict .text .em { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">相位变化 · 错误模型变了</div>
+    <div class="title">代码级错误 <span class="g">已经能修</span></div>
+    <div class="list">
+      <div class="item">
+        <div class="head"><span class="r">迁移脚本崩了</span></div>
+        <div class="desc">读 45 个版本演化史 → 写修复 + <span class="em">写测试</span></div>
+      </div>
+      <div class="item">
+        <div class="head"><span class="r">同步在百万 symlink 卡死</span></div>
+        <div class="desc">诊断 parser 超时 → 30 秒兜底 + <span class="em">ship</span></div>
+      </div>
+      <div class="item">
+        <div class="head"><span class="r">抽取出现归属错误</span></div>
+        <div class="desc">跨模型 eval 抓出 → 约束落到 <span class="em">数据库层</span></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="label">真正的相位变化</div>
+      <div class="text">
+        绝大多数错误<br>
+        从今天起属于 <span class="em">"能修"</span> 那一类
+      </div>
+    </div>
+  </div>
+</body>
+</html>

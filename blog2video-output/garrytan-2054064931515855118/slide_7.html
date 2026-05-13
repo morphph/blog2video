@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.20), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 38px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .compare {
+      display: flex;
+      gap: 18px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 22px 22px;
+      text-align: left;
+    }
+    .col.red {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .col.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .col .name {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+    .col.red .name { color: #EF4444; }
+    .col.green .name { color: #10B981; }
+    .col .li {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .col .li::before {
+      content: "· ";
+      color: #6B7280;
+    }
+    .anchor {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .anchor .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .anchor .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .anchor .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">更深一层 · 机构记忆</div>
+    <div class="title">"去问 Dave" <span class="p">的悖论</span></div>
+    <div class="compare">
+      <div class="col red">
+        <div class="name">长在人身上</div>
+        <div class="li">退休 / 被挖</div>
+        <div class="li">burn out / 离职</div>
+        <div class="li">人走 知识就走</div>
+        <div class="li">Dave 3 年前就走了</div>
+      </div>
+      <div class="col green">
+        <div class="name">长在 context 里</div>
+        <div class="li">不会辞职</div>
+        <div class="li">不会被挖</div>
+        <div class="li">不会忘</div>
+        <div class="li">任何 Agent 都能加载</div>
+      </div>
+    </div>
+    <div class="anchor">
+      <div class="label">对一人项目而言</div>
+      <div class="text">
+        测试是 <span class="em">唯一的机构记忆</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

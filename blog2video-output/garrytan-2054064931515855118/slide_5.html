@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
+    .gears {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .gear {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 24px 18px;
+      text-align: center;
+    }
+    .gear .icon {
+      font-size: 56px;
+      font-weight: 900;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .gear .name {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 900;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .gear .desc {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .ratchet {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .ratchet .label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .ratchet .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .ratchet .text .em { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">命名它 · 复杂度棘轮</div>
+    <div class="title">每次 Agent 工作<br><span class="p">沉淀三样东西</span></div>
+    <div class="subtitle">RATCHET · 只能往一个方向转</div>
+    <div class="gears">
+      <div class="gear">
+        <div class="icon">⚙</div>
+        <div class="name">测试</div>
+        <div class="desc">把"什么叫对"<br>编码下来</div>
+      </div>
+      <div class="gear">
+        <div class="icon">⚙</div>
+        <div class="name">文档</div>
+        <div class="desc">记录"当初为什么<br>这么做"</div>
+      </div>
+      <div class="gear">
+        <div class="icon">⚙</div>
+        <div class="name">评测</div>
+        <div class="desc">给输出质量<br>打了分</div>
+      </div>
+    </div>
+    <div class="ratchet">
+      <div class="label">下一轮 AGENT</div>
+      <div class="text">
+        全部进入 context<br>
+        质量楼底 <span class="em">永远只升不降</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

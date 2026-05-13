@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(239, 68, 68, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .r { color: #EF4444; }
+    .hero {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.5);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    .hero .label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .hero .text {
+      font-size: 34px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .hero .text .em { color: #EF4444; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 22px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 16px 22px;
+      text-align: left;
+    }
+    .item .head {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .item .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .item .desc .em { color: #EF4444; font-weight: 800; }
+    .ceiling {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 18px 26px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .ceiling .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .ceiling .text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .ceiling .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">过去 50 年的核心假设</div>
+    <div class="title">错误 <span class="r">必须被防止</span></div>
+    <div class="hero">
+      <div class="label">前提</div>
+      <div class="text">
+        错误的代价是<span class="em">灾难性的</span><br>
+        所以人要时时刻刻小心
+      </div>
+    </div>
+    <div class="list">
+      <div class="item">
+        <div class="head">于是造了一整套流程</div>
+        <div class="desc">Code Review · Staging · QA · Release Train</div>
+      </div>
+      <div class="item">
+        <div class="head">都在做同一件事</div>
+        <div class="desc">在错误抵达用户之前 <span class="em">拦住它</span></div>
+      </div>
+    </div>
+    <div class="ceiling">
+      <div class="label">硬天花板</div>
+      <div class="text">
+        系统最多复杂到 <span class="em">一个团队的脑容量</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.18), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 28px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .stats-row {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 22px;
+    }
+    .stat {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 18px 12px;
+      text-align: center;
+    }
+    .stat.red {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .stat.red .num { color: #EF4444; }
+    .stat.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .stat.green .num { color: #10B981; }
+    .stat .num {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 6px;
+      letter-spacing: -1px;
+    }
+    .stat .num .unit { font-size: 20px; font-weight: 800; }
+    .stat .label {
+      font-size: 18px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .arrow-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 22px;
+    }
+    .bug, .fix {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 18px 22px;
+      text-align: left;
+    }
+    .bug {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .fix {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .bug .label {
+      font-size: 18px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .fix .label {
+      font-size: 18px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .bug .text, .fix .text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .arrow {
+      font-size: 36px;
+      color: #F59E0B;
+      font-weight: 900;
+    }
+    .lock {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 18px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .lock .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .lock .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .lock .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">GBRAIN 案例 · 信念抽取</div>
+    <div class="title">棘轮的一次 <span class="y">咔哒声</span></div>
+    <div class="stats-row">
+      <div class="stat red">
+        <div class="num">100,720</div>
+        <div class="label">条 claim</div>
+      </div>
+      <div class="stat red">
+        <div class="num">28K<span class="unit">页</span></div>
+        <div class="label">材料</div>
+      </div>
+      <div class="stat red">
+        <div class="num">35<span class="unit">%</span></div>
+        <div class="label">持有者搞错</div>
+      </div>
+    </div>
+    <div class="arrow-row">
+      <div class="bug">
+        <div class="label">V1 失败</div>
+        <div class="text">6 种失败模式<br>谁相信什么 混淆</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="fix">
+        <div class="label">V2 钉死</div>
+        <div class="text">prompt 堵 6 种<br>+ DB 层强制约束</div>
+      </div>
+    </div>
+    <div class="lock">
+      <div class="label">从此以后</div>
+      <div class="text">
+        <span class="em">17 个测试</span>不全绿 → 不能 ship
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 20% 18%, rgba(139, 92, 246, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.12), transparent 55%),
+        #0D0D1A;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 44px;
+    }
+    .subtitle .em { color: #F59E0B; font-weight: 800; }
+    .cards-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 936px;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .card.purple {
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+    }
+    .card.blue {
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      border-left: 4px solid #3B82F6;
+    }
+    .card.yellow {
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+    }
+    .card .badge {
+      font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+      font-size: 28px;
+      font-weight: 800;
+      padding: 12px 18px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      min-width: 200px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+    .card.purple .badge { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+    .card.blue .badge { background: rgba(59, 130, 246, 0.15); color: #3B82F6; }
+    .card.yellow .badge { background: rgba(245, 158, 11, 0.15); color: #F59E0B; }
+    .card .body {
+      flex: 1;
+    }
+    .card .trigger-label {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .card.purple .trigger-label { color: #8B5CF6; }
+    .card.blue .trigger-label { color: #3B82F6; }
+    .card.yellow .trigger-label { color: #F59E0B; }
+    .card .trigger-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    .card .trigger-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 500;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">三种"继续跑"</div>
+    <div class="subtitle">区别只在 <span class="em">谁来触发下一轮</span></div>
+    <div class="cards-row">
+      <div class="card purple">
+        <div class="badge">/goal</div>
+        <div class="body">
+          <div class="trigger-label">条件触发</div>
+          <div class="trigger-text">评估器说达成才停</div>
+          <div class="trigger-desc">连跑直到目标完成</div>
+        </div>
+      </div>
+      <div class="card blue">
+        <div class="badge">/loop</div>
+        <div class="body">
+          <div class="trigger-label">时间触发</div>
+          <div class="trigger-text">按间隔触发</div>
+          <div class="trigger-desc">直到你手动叫停</div>
+        </div>
+      </div>
+      <div class="card yellow">
+        <div class="badge">Stop hook</div>
+        <div class="body">
+          <div class="trigger-label">代码触发</div>
+          <div class="trigger-text">你的脚本说了算</div>
+          <div class="trigger-desc">每轮跑自定义判断</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

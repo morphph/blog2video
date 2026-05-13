@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 40px;
+    }
+    .title .purple { color: #8B5CF6; }
+    .states {
+      display: flex;
+      gap: 18px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 36px;
+    }
+    .state {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .state.red { border-color: rgba(239, 68, 68, 0.4); border-left-color: #EF4444; }
+    .state.gray { border-color: rgba(107, 114, 128, 0.4); border-left-color: #6B7280; }
+    .state .status {
+      font-size: 28px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .state.red .status { color: #EF4444; }
+    .state.gray .status { color: #6B7280; }
+    .state .arrow {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .state .cmd {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .insight {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 24px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .insight .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .insight .text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .insight .em { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">看板为什么是<span class="purple">控制面</span></div>
+    <div class="states">
+      <div class="state">
+        <div class="status">Todo</div>
+        <div class="arrow">↓</div>
+        <div class="cmd">派单</div>
+      </div>
+      <div class="state red">
+        <div class="status">Rework</div>
+        <div class="arrow">↺</div>
+        <div class="cmd">返工</div>
+      </div>
+      <div class="state gray">
+        <div class="status">Backlog</div>
+        <div class="arrow">⏸</div>
+        <div class="cmd">暂停</div>
+      </div>
+    </div>
+    <div class="insight">
+      <div class="label">核心洞察</div>
+      <div class="text">
+        <span class="em">状态本身</span>就是消息
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .subtitle .red { color: #EF4444; font-weight: 800; }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 28px;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-left: 4px solid #3B82F6;
+      border-radius: 14px;
+      padding: 18px 22px;
+      text-align: left;
+    }
+    .step.purple { border-color: rgba(139, 92, 246, 0.4); border-left-color: #8B5CF6; }
+    .step.red { border-color: rgba(239, 68, 68, 0.4); border-left-color: #EF4444; }
+    .step.yellow { border-color: rgba(245, 158, 11, 0.4); border-left-color: #F59E0B; }
+    .step.green { border-color: rgba(16, 185, 129, 0.4); border-left-color: #10B981; }
+    .step .num {
+      font-size: 36px;
+      font-weight: 800;
+      color: #3B82F6;
+      min-width: 50px;
+      line-height: 1;
+    }
+    .step.purple .num { color: #8B5CF6; }
+    .step.red .num { color: #EF4444; }
+    .step.yellow .num { color: #F59E0B; }
+    .step.green .num { color: #10B981; }
+    .step .body { flex: 1; }
+    .step .name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .step .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .reveal {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 20px 26px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .reveal .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .reveal .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Agent 自学怎么测</div>
+    <div class="subtitle">Ticket 一个字都没提<span class="red"> 测试</span></div>
+    <div class="timeline">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="name">CDP attach</div>
+          <div class="desc">连上运行中的 Electron app</div>
+        </div>
+      </div>
+      <div class="step purple">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="name">注入探针</div>
+          <div class="desc">agent-browser 临时挂钩</div>
+        </div>
+      </div>
+      <div class="step red">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="name">触发错误</div>
+          <div class="desc">强制渲染失败 + 截图</div>
+        </div>
+      </div>
+      <div class="step yellow">
+        <div class="num">4</div>
+        <div class="body">
+          <div class="name">恢复 + 截图</div>
+          <div class="desc">点击恢复路径记录</div>
+        </div>
+      </div>
+      <div class="step green">
+        <div class="num">5</div>
+        <div class="body">
+          <div class="name">清理探针</div>
+          <div class="desc">不留痕迹收尾</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="text">
+        反向流动：<span class="em">Agent 教人</span>怎么测
+      </div>
+    </div>
+  </div>
+</body>
+</html>

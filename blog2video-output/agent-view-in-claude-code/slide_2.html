@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(239, 68, 68, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.18), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .title .r { color: #EF4444; }
+    .quote {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 26px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .quote .label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .quote .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .quote .text .em { color: #EF4444; font-weight: 800; }
+    .scaffolds {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .item {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 20px 18px;
+      text-align: center;
+    }
+    .item .icon {
+      font-size: 56px;
+      font-weight: 900;
+      color: #EF4444;
+      line-height: 1;
+      margin-bottom: 10px;
+      font-family: 'SF Mono', Consolas, monospace;
+    }
+    .item .label {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">发布稿第二段 · 自爆</div>
+    <div class="title">官方承认：<span class="r">tmux 是临时方案</span></div>
+    <div class="quote">
+      <div class="label">ANTHROPIC 原话</div>
+      <div class="text">
+        以前并行跑 Agent，靠的是<br>
+        <span class="em">用户硬撑出来的脚手架</span>
+      </div>
+    </div>
+    <div class="scaffolds">
+      <div class="item">
+        <div class="icon">tab</div>
+        <div class="label">多个 terminal</div>
+      </div>
+      <div class="item">
+        <div class="icon">▦</div>
+        <div class="label">tmux 网格</div>
+      </div>
+      <div class="item">
+        <div class="icon">脑</div>
+        <div class="label">心里那本账</div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="label">关键信号</div>
+      <div class="text">
+        并发 Agent 已被当成<span class="em">默认假设</span><br>
+        不再是极客边缘玩法
+      </div>
+    </div>
+  </div>
+</body>
+</html>

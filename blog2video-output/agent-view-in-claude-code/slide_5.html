@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 82%, rgba(245, 158, 11, 0.14), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 38px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .flag {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 26px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .flag .code {
+      font-family: 'SF Mono', Consolas, monospace;
+      font-size: 64px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .flag .meaning {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .shift {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .side {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 20px;
+      text-align: left;
+    }
+    .side.before {
+      border: 1px solid rgba(107, 114, 128, 0.4);
+      border-left: 4px solid #6B7280;
+    }
+    .side.after {
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+    }
+    .side .when {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .side.before .when { color: #6B7280; }
+    .side.after .when { color: #F59E0B; }
+    .side .desc {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .side.before .desc { color: #B0B0CC; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">藏在发布稿里的 FLAG</div>
+    <div class="title">默认形态<span class="p">正在翻转</span></div>
+    <div class="flag">
+      <div class="code">claude --bg</div>
+      <div class="meaning">直接以背景模式启动新 session</div>
+    </div>
+    <div class="shift">
+      <div class="side before">
+        <div class="when">以前</div>
+        <div class="desc">前台跑一个<br>偶尔 detach 到后台</div>
+      </div>
+      <div class="side after">
+        <div class="when">未来</div>
+        <div class="desc">所有 session 默认在后台<br>前台只是你选中的那个</div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="label">心智切换</div>
+      <div class="text">
+        不是操作一个 Agent<br>
+        是<span class="em">调度一池 Agent</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

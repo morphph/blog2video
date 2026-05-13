@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(139, 92, 246, 0.20), transparent 55%),
+        #0D0D1A;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 48px;
+      letter-spacing: -1px;
+      line-height: 1.25;
+    }
+    .title .purple { color: #8B5CF6; }
+    .vs-row {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 936px;
+      align-items: stretch;
+      margin-bottom: 36px;
+    }
+    .role {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .role.gen {
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      border-left: 4px solid #3B82F6;
+    }
+    .role.eval {
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+    }
+    .role .role-tag {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .role.gen .role-tag { color: #3B82F6; }
+    .role.eval .role-tag { color: #F59E0B; }
+    .role .role-name {
+      font-size: 38px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    .role .role-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .vs-divider {
+      align-self: center;
+      font-size: 36px;
+      font-weight: 900;
+      color: #8B5CF6;
+      width: 60px;
+      text-align: center;
+    }
+    .key-point {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 26px 30px;
+      max-width: 936px;
+      width: 100%;
+      text-align: left;
+    }
+    .key-point .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .key-point .text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .key-point .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">真正的重点是<br><span class="purple">职责切开</span></div>
+    <div class="vs-row">
+      <div class="role gen">
+        <div class="role-tag">GENERATOR</div>
+        <div class="role-name">干活的模型</div>
+        <div class="role-desc">写代码 / 跑工具</div>
+      </div>
+      <div class="vs-divider">⇄</div>
+      <div class="role eval">
+        <div class="role-tag">EVALUATOR</div>
+        <div class="role-name">判断的模型</div>
+        <div class="role-desc">只评分 / 不干活</div>
+      </div>
+    </div>
+    <div class="key-point">
+      <div class="label">把架构做成一行命令</div>
+      <div class="text">
+        粒度压到了<span class="em">每一轮对话</span><br>
+        不是任务结束才打分
+      </div>
+    </div>
+  </div>
+</body>
+</html>

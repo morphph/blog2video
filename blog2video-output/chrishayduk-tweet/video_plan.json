@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Using Codex Goals Effectively",
+    "title_zh": "让 Codex 自己跑 3 天，靠的不是模型",
+    "word_count": 1553,
+    "slug": "chrishayduk-tweet"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "三件事（量化目标/紧反馈/外置记忆）在 Synthesis 中被明确收束为同一个论点——为 Agent 搭脚手架；拆开后每集仅约 700 字、远低于 5 分钟门槛，且会破坏作者刻意保留的不均衡判断（EXPERIMENTS.md 比 PLAN.md 重要）。一个连贯论证比三段碎片更有价值。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "让 Codex 自己跑 3 天，靠的不是模型"
+      }
+    ]
+  }
+}

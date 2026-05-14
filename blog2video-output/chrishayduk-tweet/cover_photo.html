@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+      position: relative;
+    }
+    .bg-glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1400px;
+      height: 1400px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(139, 92, 246, 0.05) 35%, transparent 70%);
+      pointer-events: none;
+    }
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+    }
+    .series-label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 80px;
+      text-transform: none;
+    }
+    .title {
+      font-size: 94px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -1px;
+      margin-bottom: 80px;
+    }
+    .title .accent-red {
+      color: #EF4444;
+    }
+    .title .accent-yellow {
+      color: #F59E0B;
+    }
+    .source-pill {
+      background: #1A1A30;
+      color: #6B6B80;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="slide">
+    <div class="series-label">精读AI · Codex Goals</div>
+    <div class="title">
+      让 Codex 自己跑<br>
+      <span class="accent-yellow">3 天</span>，靠的<br>
+      <span class="accent-red">不是模型</span>
+    </div>
+    <div class="source-pill">Chris Hayduk《Using Codex Goals Effectively》</div>
+  </div>
+</body>
+</html>

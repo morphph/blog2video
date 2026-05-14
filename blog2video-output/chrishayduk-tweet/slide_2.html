@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .section-label::before {
+      content: '';
+      width: 4px;
+      height: 28px;
+      background: #8B5CF6;
+    }
+    .title {
+      font-size: 66px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 64px;
+      letter-spacing: -1px;
+    }
+    .title .accent {
+      color: #8B5CF6;
+    }
+    .loop-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .step {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(139, 92, 246, 0.18);
+      color: #8B5CF6;
+      font-size: 26px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-text {
+      font-size: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .arrow {
+      color: #6B7280;
+      font-size: 32px;
+      line-height: 1;
+    }
+    .punchline {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .punchline .hl {
+      color: #F59E0B;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">FIRST PRINCIPLE</div>
+    <div class="title">
+      /goal 本质<br>就是一个<span class="accent">循环</span>
+    </div>
+    <div class="loop-container">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">执行一个动作</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">给这个动作打分</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">判断是否完成</div>
+      </div>
+    </div>
+    <div class="punchline">
+      最不起眼的<span class="hl">第 3 步</span>，决定整个循环能不能跑下去
+    </div>
+  </div>
+</body>
+</html>

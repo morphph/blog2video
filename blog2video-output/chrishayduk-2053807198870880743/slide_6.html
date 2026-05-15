@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 22px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .title .blue {
+      color: #3B82F6;
+    }
+    .sub {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+    }
+    .speed {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .speed-box {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 12px;
+      padding: 32px 18px;
+      text-align: center;
+    }
+    .speed-box.bad {
+      border-color: rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .speed-box.good {
+      border-color: rgba(16, 185, 129, 0.45);
+      border-left: 4px solid #10B981;
+    }
+    .speed-tag {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .bad .speed-tag { color: #EF4444; }
+    .good .speed-tag { color: #10B981; }
+    .speed-num {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .bad .speed-num { color: #EF4444; }
+    .good .speed-num { color: #10B981; }
+    .speed-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .arrow {
+      font-size: 48px;
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .case-title {
+      font-size: 24px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .case-title b {
+      color: #B0B0CC;
+    }
+    .tradeoff {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 26px 24px;
+      text-align: left;
+    }
+    .tradeoff-tag {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .tradeoff-text {
+      font-size: 26px;
+      color: #FDE68A;
+      line-height: 1.5;
+    }
+    .tradeoff-text b {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">FEEDBACK LOOP</div>
+    <h1 class="title">反馈循环要<span class="blue">紧</span></h1>
+    <div class="sub">从"天"压到"分钟"</div>
+    <div class="case-title">蛋白质结构架构搜索 · <b>NanoFold 小数据集</b></div>
+    <div class="speed">
+      <div class="speed-box bad">
+        <div class="speed-tag">完整训练集</div>
+        <div class="speed-num">天</div>
+        <div class="speed-desc">/goal 第二轮就废</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="speed-box good">
+        <div class="speed-tag">NanoFold</div>
+        <div class="speed-num">分钟</div>
+        <div class="speed-desc">连续跑几天</div>
+      </div>
+    </div>
+    <div class="tradeoff">
+      <div class="tradeoff-tag">⚠️ 代价</div>
+      <div class="tradeoff-text">NanoFold <b>不是 /goal 自带的</b>——你必须自己先搭好这条轻量评估管道。前置工程省不掉。</div>
+    </div>
+  </div>
+</body>
+</html>

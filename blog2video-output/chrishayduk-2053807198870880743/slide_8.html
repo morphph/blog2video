@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .title .yellow {
+      color: #F59E0B;
+    }
+    .title .arrow {
+      color: #6B7280;
+    }
+    .sub {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+      line-height: 1.5;
+    }
+    .compare {
+      width: 100%;
+      display: flex;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .col {
+      flex: 1;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .col-plan {
+      background: #1A1A2E;
+      border: 1px solid rgba(176, 176, 204, 0.3);
+      border-left: 4px solid #6B7280;
+    }
+    .col-exp {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 6px solid #F59E0B;
+    }
+    .col-file {
+      font-family: 'JetBrains Mono', Menlo, monospace;
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .col-plan .col-file { color: #B0B0CC; }
+    .col-exp .col-file { color: #F59E0B; }
+    .col-role {
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .col-plan .col-role { color: #FFFFFF; }
+    .col-exp .col-role { color: #F59E0B; }
+    .col-desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .flip {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 26px 24px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .flip-tag {
+      font-size: 20px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .flip-text {
+      font-size: 26px;
+      line-height: 1.5;
+      color: #E5E7EB;
+    }
+    .flip-text .strike {
+      color: #6B7280;
+      text-decoration: line-through;
+    }
+    .flip-text .real {
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .warn {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.06);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 20px 22px;
+      text-align: left;
+    }
+    .warn-tag {
+      font-size: 20px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .warn-text {
+      font-size: 24px;
+      color: #FCA5A5;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">REVERSE INTUITION</div>
+    <h1 class="title"><span class="yellow">失败记忆</span> &gt; 路线图</h1>
+    <div class="sub">长程 Agent 真正会丢失的是<br>"试过哪些路"，不是"要去哪"</div>
+    <div class="compare">
+      <div class="col col-plan">
+        <div class="col-file">PLAN.md</div>
+        <div class="col-role">规划</div>
+        <div class="col-desc">高层路线<br>指明方向</div>
+      </div>
+      <div class="col col-exp">
+        <div class="col-file">EXPERIMENTS.md</div>
+        <div class="col-role">失败记忆</div>
+        <div class="col-desc">哪条路证伪了<br>为什么不通</div>
+      </div>
+    </div>
+    <div class="flip">
+      <div class="flip-tag">NON-OBVIOUS FLIP</div>
+      <div class="flip-text">直觉：<span class="strike">PLAN.md 最重要</span><br>实际：<span class="real">EXPERIMENTS.md 才是核心</span></div>
+    </div>
+    <div class="warn">
+      <div class="warn-tag">⚠️ 注意</div>
+      <div class="warn-text">三个文件全开，Agent 仍然会跑偏——/goal 不是完全自动驾驶。</div>
+    </div>
+  </div>
+</body>
+</html>

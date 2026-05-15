@@ -1,0 +1,472 @@
+[
+  {
+    "text": "OpenAI 的 Chris Hayduk 写了一篇博客，讲 Codex 新出的 /goal 命令到底该怎么用。这个命令的意思是：你给它一个目标，它自己循环干活，直到达成为止。听起来很美对吧？",
+    "pronounce_text": "OpenAI的Chris Hayduk写了一篇博客，讲Codex新出的，goal命令到底该怎么用。这个命令的意思是：你给它一个目标，它自己循环干活，直到达成为止。听起来很美对吧？",
+    "time_begin": 0,
+    "time_end": 15341.269841269841,
+    "text_begin": 0,
+    "text_end": 96,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 89
+  },
+  {
+    "text": "但他在 OpenAI 内部和自己的副业项目里都踩过坑——发现大多数人用错了。今天不聊怎么敲命令，只聊一件事：为什么你之前那套提示词风格，到了 /goal 里会让 Agent 当场崩掉。",
+    "pronounce_text": "但他在OpenAI内部和自己的副业项目里都踩过坑发现大多数人用错了。今天不聊怎么敲命令，只聊一件事：为什么你之前那套提示词风格，到了，goal里会让Agent当场崩掉。",
+    "time_begin": 15480,
+    "time_end": 29544.17233560091,
+    "text_begin": 96,
+    "text_end": 188,
+    "pronounce_text_begin": 89,
+    "pronounce_text_end": 173
+  },
+  {
+    "text": "过去半年模型变强得太快，我们这些用模型的人都被惯坏了。你随便比划两下，GPT 大概也能猜出你想要什么。这种\"差不多就行\"的提示风格，在对话里没问题。但放到 /goal 里，是灾难。",
+    "pronounce_text": "过去半年模型变强得太快，我们这些用模型的人都被惯坏了。你随便比划两下，GPT大概也能猜出你想要什么。这种\"差不多就行\"的提示风格，在对话里没问题。但放到，goal里，是灾难。",
+    "time_begin": 29700,
+    "time_end": 45981.67800453515,
+    "text_begin": 188,
+    "text_end": 278,
+    "pronounce_text_begin": 173,
+    "pronounce_text_end": 260
+  },
+  {
+    "text": "为什么？因为 /goal 的本质是一个循环。Agent 执行一个动作，给这个动作打分，检查分数是不是达到了目标。没达到就继续，达到就停下。整个机制的核心，就是第三步——检查分数是否达标。",
+    "pronounce_text": "为什么？因为，goal的本质是一个循环。Agent执行一个动作，给这个动作打分，检查分数是不是达到了目标。没达到就继续，达到就停下。整个机制的核心，就是第三步检查分数是否达标。",
+    "time_begin": 46152,
+    "time_end": 63118.66666666667,
+    "text_begin": 278,
+    "text_end": 371,
+    "pronounce_text_begin": 260,
+    "pronounce_text_end": 348
+  },
+  {
+    "text": "那现在问题来了：如果你给的目标是\"把代码改好\"，Agent 怎么打分？什么状态算\"改好了\"？什么时候算\"足够好\"可以停了？目标本身没有刻度，循环就没有出口。",
+    "pronounce_text": "那现在问题来了：如果你给的目标是\"把代码改好\"，Agent怎么打分？什么状态算\"改好了\"？什么时候算\"足够好\"可以停了？目标本身没有刻度，循环就没有出口。",
+    "time_begin": 63288,
+    "time_end": 77607.59183673469,
+    "text_begin": 371,
+    "text_end": 449,
+    "pronounce_text_begin": 348,
+    "pronounce_text_end": 425
+  },
+  {
+    "text": "这才是 Chris 这篇博客里我觉得最反直觉的一点。",
+    "pronounce_text": "这才是Chris这篇博客里我觉得最反直觉的一点。",
+    "time_begin": 77760,
+    "time_end": 81456.46258503401,
+    "text_begin": 449,
+    "text_end": 475,
+    "pronounce_text_begin": 425,
+    "pronounce_text_end": 449
+  },
+  {
+    "text": "在对话式模型时代，提示模糊的代价是\"输出质量打个折\"——是一个连续的劣化。但到了 Agent 循环里，模糊不再是\"差一点\"，它会把同一个模糊，分裂成两个对立的极端。",
+    "pronounce_text": "在对话式模型时代，提示模糊的代价是\"输出质量打个折\" 是一个连续的劣化。但到了Agent循环里，模糊不再是\"差一点\"，它会把同一个模糊，分裂成两个对立的极端。",
+    "time_begin": 81612,
+    "time_end": 97336.39909297052,
+    "text_begin": 475,
+    "text_end": 557,
+    "pronounce_text_begin": 449,
+    "pronounce_text_end": 528
+  },
+  {
+    "text": "一种极端是早退。模型干了几分钟，觉得\"差不多了吧\"，就停了。还有一种极端是死循环。模型永远不停，疯狂改代码，瞎转，因为它在追一个本来就追不到的目标。",
+    "pronounce_text": "一种极端是早退。模型干了几分钟，觉得\"差不多了吧\"，就停了。还有一种极端是死循环。模型永远不停，疯狂改代码，瞎转，因为它在追一个本来就追不到的目标。",
+    "time_begin": 97488,
+    "time_end": 112318.43083900226,
+    "text_begin": 557,
+    "text_end": 631,
+    "pronounce_text_begin": 528,
+    "pronounce_text_end": 602
+  },
+  {
+    "text": "同一种模糊，两种相反的死法。普通用户根本预期不到——你以为最坏的结果是\"做得不够好\"，结果它要么直接撂挑子，要么把你的代码改得面目全非还不肯停。",
+    "pronounce_text": "同一种模糊，两种相反的死法。普通用户根本预期不到你以为最坏的结果是\"做得不够好\"，结果它要么直接撂挑子，要么把你的代码改得面目全非还不肯停。",
+    "time_begin": 112464,
+    "time_end": 125750.30385487528,
+    "text_begin": 631,
+    "text_end": 703,
+    "pronounce_text_begin": 602,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "那 Chris 给的解药是什么？非常简单。把\"把代码改好\"改成这样——\"把某个具体文件里的代码运行时间减少百分之20，同时不能让现有的单元测试和集成测试出现任何回归。\"",
+    "pronounce_text": "那Chris给的解药是什么？非常简单。把\"把代码改好\"改成这样\"把某个具体文件里的代码运行时间减少百分之二十，同时不能让现有的单元测试和集成测试出现任何回归。\"",
+    "time_begin": 125892,
+    "time_end": 140722.43083900228,
+    "text_begin": 703,
+    "text_end": 787,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 752
+  },
+  {
+    "text": "你看，一个数字，百分之20。一个硬约束，测试不能挂。Agent 立刻就知道：我跑个 benchmark 就能算出有没有到百分之20，我跑一遍测试就能知道有没有回归。停止条件清清楚楚。",
+    "pronounce_text": "你看，一个数字，百分之二十。一个硬约束，测试不能挂。Agent立刻就知道：我跑个benchmark就能算出有没有到百分之二十，我跑一遍测试就能知道有没有回归。停止条件清清楚楚。",
+    "time_begin": 140868,
+    "time_end": 157103.2380952381,
+    "text_begin": 787,
+    "text_end": 878,
+    "pronounce_text_begin": 752,
+    "pronounce_text_end": 840
+  },
+  {
+    "text": "这个例子看起来普通，但它背后是一个标准：可量化的目标，加上可验证的边界。少一个都不行。光有数字没有边界，Agent 可能为了砍运行时间把测试全删了。",
+    "pronounce_text": "这个例子看起来普通，但它背后是一个标准：可量化的目标，加上可验证的边界。少一个都不行。光有数字没有边界，Agent可能为了砍运行时间把测试全删了。",
+    "time_begin": 157248,
+    "time_end": 171985.55102040817,
+    "text_begin": 878,
+    "text_end": 952,
+    "pronounce_text_begin": 840,
+    "pronounce_text_end": 913
+  },
+  {
+    "text": "光有边界没有数字，Agent 又不知道该停在哪。",
+    "pronounce_text": "光有边界没有数字，Agent又不知道该停在哪。",
+    "time_begin": 172185.55102040817,
+    "time_end": 176218.7029478458,
+    "text_begin": 952,
+    "text_end": 976,
+    "pronounce_text_begin": 913,
+    "pronounce_text_end": 936
+  },
+  {
+    "text": "但你可能马上会问：不是所有任务都能压成一个数字啊。比如要把一篇 NeurIPS 的论文改成 ICML 会议要求的格式，怎么量化？",
+    "pronounce_text": "但你可能马上会问：不是所有任务都能压成一个数字啊。比如要把一篇NeurIPS的论文改成ICML会议要求的格式，怎么量化？",
+    "time_begin": 176364,
+    "time_end": 186631.7097505669,
+    "text_begin": 976,
+    "text_end": 1040,
+    "pronounce_text_begin": 936,
+    "pronounce_text_end": 996
+  },
+  {
+    "text": "Chris 在这里做了一个很妙的动作。ICML 的格式规则全部写在一个 LaTeX 文件里，又长又琐碎，模型直接对着这个文件评分根本不现实。",
+    "pronounce_text": "Chris在这里做了一个很妙的动作。ICML的格式规则全部写在一个LaTeX文件里，又长又琐碎，模型直接对着这个文件评分根本不现实。",
+    "time_begin": 186768,
+    "time_end": 198823.6462585034,
+    "text_begin": 1040,
+    "text_end": 1110,
+    "pronounce_text_begin": 996,
+    "pronounce_text_end": 1062
+  },
+  {
+    "text": "所以他先让 Codex 把这个 LaTeX 文件里的规则全部抽出来，整理成一个 markdown 的 checklist，一共两百多条。",
+    "pronounce_text": "所以他先让Codex把这个LaTeX文件里的规则全部抽出来，整理成一个markdown的checklist，一共两百多条。",
+    "time_begin": 198972,
+    "time_end": 207138.3038548753,
+    "text_begin": 1110,
+    "text_end": 1178,
+    "pronounce_text_begin": 1062,
+    "pronounce_text_end": 1123
+  },
+  {
+    "text": "然后他给 Codex 的目标就变成了：基于这个 checklist 把论文改成 ICML 格式，技术内容不许动。",
+    "pronounce_text": "然后他给Codex的目标就变成了：基于这个checklist把论文改成ICML格式，技术内容不许动。",
+    "time_begin": 207288,
+    "time_end": 216359.8820861678,
+    "text_begin": 1178,
+    "text_end": 1234,
+    "pronounce_text_begin": 1123,
+    "pronounce_text_end": 1173
+  },
+  {
+    "text": "这一步的精髓在哪？Agent 不擅长判断\"这篇论文是不是 ICML 风格\"——这是一个抽象的整体感觉。但它非常擅长判断\"checklist 第73条勾上没有\"——这是一个具体的局部事实。",
+    "pronounce_text": "这一步的精髓在哪？Agent不擅长判断\"这篇论文是不是ICML风格\" 这是一个抽象的整体感觉。但它非常擅长判断\"checklist第七十三条勾上没有\" 这是一个具体的局部事实。",
+    "time_begin": 216504,
+    "time_end": 232483.81859410432,
+    "text_begin": 1234,
+    "text_end": 1327,
+    "pronounce_text_begin": 1173,
+    "pronounce_text_end": 1261
+  },
+  {
+    "text": "把一个抽象目标，拆成两百多个具体小判断，模型就能当自己的裁判了。",
+    "pronounce_text": "把一个抽象目标，拆成两百多个具体小判断，模型就能当自己的裁判了。",
+    "time_begin": 232632,
+    "time_end": 238801.38775510204,
+    "text_begin": 1327,
+    "text_end": 1359,
+    "pronounce_text_begin": 1261,
+    "pronounce_text_end": 1293
+  },
+  {
+    "text": "而且他还让 Codex 边做边在 checklist 上打勾，状态写回文件系统。这样 Agent 自己能看到进度，他也能在旁边看着这个清单一行一行被勾掉。",
+    "pronounce_text": "而且他还让Codex边做边在checklist上打勾，状态写回文件系统。这样Agent自己能看到进度，他也能在旁边看着这个清单一行一行被勾掉。",
+    "time_begin": 238968,
+    "time_end": 250001.96825396825,
+    "text_begin": 1359,
+    "text_end": 1436,
+    "pronounce_text_begin": 1293,
+    "pronounce_text_end": 1364
+  },
+  {
+    "text": "这绕开了一个传统假设——\"自我评分不可靠，必须有外部 evaluator\"。其实不是，关键在于评分标准的颗粒度。粗粒度的标准模型评不准，细粒度的勾选清单它评得很准。",
+    "pronounce_text": "这绕开了一个传统假设\"自我评分不可靠，必须有外部evaluator\"。其实不是，关键在于评分标准的颗粒度。粗粒度的标准模型评不准，细粒度的勾选清单它评得很准。",
+    "time_begin": 250164,
+    "time_end": 264100.462585034,
+    "text_begin": 1436,
+    "text_end": 1518,
+    "pronounce_text_begin": 1364,
+    "pronounce_text_end": 1443
+  },
+  {
+    "text": "讲完目标，第二件事是反馈循环。Agent 要评估自己干得怎么样，得有个测试机制。这个测试跑得越快、越容易触发，Agent 拿到反馈的频率就越高，迭代就越快。",
+    "pronounce_text": "讲完目标，第二件事是反馈循环。Agent要评估自己干得怎么样，得有个测试机制。这个测试跑得越快、越容易触发，Agent拿到反馈的频率就越高，迭代就越快。",
+    "time_begin": 264240,
+    "time_end": 278431.8820861678,
+    "text_begin": 1518,
+    "text_end": 1596,
+    "pronounce_text_begin": 1443,
+    "pronounce_text_end": 1519
+  },
+  {
+    "text": "Chris 自己在做蛋白质结构模型的架构搜索。如果他让 Agent 每次跑完整的训练集来打分，那一次评分就要好几天。/goal 还没等到第二轮就废了。",
+    "pronounce_text": "Chris自己在做蛋白质结构模型的架构搜索。如果他让Agent每次跑完整的训练集来打分，那一次评分就要好几天。goal还没等到第二轮就废了。",
+    "time_begin": 278568,
+    "time_end": 291134.48526077095,
+    "text_begin": 1596,
+    "text_end": 1671,
+    "pronounce_text_begin": 1519,
+    "pronounce_text_end": 1589
+  },
+  {
+    "text": "他的解法是用一个叫 NanoFold 的数据集——小，但采样质量好。同样的评分逻辑，跑完一遍从\"天\"压到\"分钟\"。",
+    "pronounce_text": "他的解法是用一个叫NanoFold的数据集小，但采样质量好。同样的评分逻辑，跑完一遍从\"天\"压到\"分钟\"。",
+    "time_begin": 291276,
+    "time_end": 302263.5283446712,
+    "text_begin": 1671,
+    "text_end": 1728,
+    "pronounce_text_begin": 1589,
+    "pronounce_text_end": 1642
+  },
+  {
+    "text": "这一刀下去，Agent 才真的能在 /goal 里连续运行几天，一轮一轮逼近目标。",
+    "pronounce_text": "这一刀下去，Agent才真的能在，goal里连续运行几天，一轮一轮逼近目标。",
+    "time_begin": 302463.5283446712,
+    "time_end": 309225.02494331065,
+    "text_begin": 1728,
+    "text_end": 1769,
+    "pronounce_text_begin": 1642,
+    "pronounce_text_end": 1680
+  },
+  {
+    "text": "但这里有个代价不能不讲。NanoFold 不是 /goal 命令自带的，是他自己事先准备好的一个轻量评估管道。",
+    "pronounce_text": "但这里有个代价不能不讲。NanoFold不是，goal命令自带的，是他自己事先准备好的一个轻量评估管道。",
+    "time_begin": 309384,
+    "time_end": 318455.8820861678,
+    "text_begin": 1769,
+    "text_end": 1824,
+    "pronounce_text_begin": 1680,
+    "pronounce_text_end": 1732
+  },
+  {
+    "text": "换句话说，紧凑的反馈循环不是开 /goal 就有的——它是你必须先投资搭建的前置工程。",
+    "pronounce_text": "换句话说，紧凑的反馈循环不是开，goal就有的它是你必须先投资搭建的前置工程。",
+    "time_begin": 318655.8820861678,
+    "time_end": 326613.20634920633,
+    "text_begin": 1824,
+    "text_end": 1867,
+    "pronounce_text_begin": 1732,
+    "pronounce_text_end": 1771
+  },
+  {
+    "text": "你想用 goal mode 解决一个大问题，得先花时间把\"小问题版本\"搭出来。这一步省不掉。",
+    "pronounce_text": "你想用goal mode解决一个大问题，得先花时间把\"小问题版本\"搭出来。这一步省不掉。",
+    "time_begin": 326772,
+    "time_end": 334172.0453514739,
+    "text_begin": 1867,
+    "text_end": 1913,
+    "pronounce_text_begin": 1771,
+    "pronounce_text_end": 1815
+  },
+  {
+    "text": "最后一件事，markdown 文件。Chris 说在 /goal 里他能让 GPT 一口气跑好几天。Codex 自己有上下文压缩能力，但跑这么久，让模型靠记忆维持一条连贯的思路，太难了。",
+    "pronounce_text": "最后一件事，markdown文件。Chris说在，goal里他能让GPT一口气跑好几天。Codex自己有上下文压缩能力，但跑这么久，让模型靠记忆维持一条连贯的思路，太难了。",
+    "time_begin": 334332,
+    "time_end": 349034.7210884354,
+    "text_begin": 1913,
+    "text_end": 2006,
+    "pronounce_text_begin": 1815,
+    "pronounce_text_end": 1901
+  },
+  {
+    "text": "他的做法是给 Agent 开三个 markdown 文件，让它边干活边往里写。三个文件名要记一下：PLAN.md、EXPERIMENTS.md、EXPERIMENT_NOTES.md。",
+    "pronounce_text": "他的做法是给Agent开三个markdown文件，让它边干活边往里写。三个文件名要记一下：PLAN.md、EXPERIMENTS.md、EXPERIMENT，NOTES.md。",
+    "time_begin": 349200,
+    "time_end": 361638.7755102041,
+    "text_begin": 2006,
+    "text_end": 2098,
+    "pronounce_text_begin": 1901,
+    "pronounce_text_end": 1989
+  },
+  {
+    "text": "PLAN.md 是高层计划，相当于路线图。EXPERIMENT_NOTES.md 是 scratchpad，按时间顺序记录 Agent 当下在想什么。这俩你大概能猜到用途。",
+    "pronounce_text": "PLAN.md是高层计划，相当于路线图。EXPERIMENT，NOTES.md是scratchpad，按时间顺序记录Agent当下在想什么。这俩你大概能猜到用途。",
+    "time_begin": 361800,
+    "time_end": 375086.30385487527,
+    "text_begin": 2098,
+    "text_end": 2184,
+    "pronounce_text_begin": 1989,
+    "pronounce_text_end": 2070
+  },
+  {
+    "text": "真正有意思的是 EXPERIMENTS.md。它是一个结构化的实验档案——每个尝试都有假设、机制、判断规则、结果。一条一条整整齐齐排下来。",
+    "pronounce_text": "真正有意思的是EXPERIMENTS.md。它是一个结构化的实验档案每个尝试都有假设、机制、判断规则、结果。一条一条整整齐齐排下来。",
+    "time_begin": 375228,
+    "time_end": 387713.2154195011,
+    "text_begin": 2184,
+    "text_end": 2253,
+    "pronounce_text_begin": 2070,
+    "pronounce_text_end": 2136
+  },
+  {
+    "text": "而且 Chris 明确说：这三个文件里，EXPERIMENTS.md 是最重要的那个。",
+    "pronounce_text": "而且Chris明确说：这三个文件里，EXPERIMENTS.md是最重要的那个。",
+    "time_begin": 387864,
+    "time_end": 393220.6893424036,
+    "text_begin": 2253,
+    "text_end": 2296,
+    "pronounce_text_begin": 2136,
+    "pronounce_text_end": 2176
+  },
+  {
+    "text": "这点也反直觉。人的直觉会觉得 PLAN.md 最重要——它指明方向嘛。",
+    "pronounce_text": "这点也反直觉。人的直觉会觉得PLAN.md最重要它指明方向嘛。",
+    "time_begin": 393372,
+    "time_end": 398728.6893424036,
+    "text_begin": 2296,
+    "text_end": 2331,
+    "pronounce_text_begin": 2176,
+    "pronounce_text_end": 2207
+  },
+  {
+    "text": "但 Chris 的判断是：长程 Agent 跑几天下来，真正会丢失的，不是\"我要去哪\"，而是\"我已经试过哪些路、为什么不通\"。一个失去失败记忆的 Agent，会反反复复撞同一堵墙。",
+    "pronounce_text": "但Chris的判断是：长程Agent跑几天下来，真正会丢失的，不是\"我要去哪\"，而是\"我已经试过哪些路、为什么不通\"。一个失去失败记忆的Agent，会反反复复撞同一堵墙。",
+    "time_begin": 398880,
+    "time_end": 413362.1315192744,
+    "text_begin": 2331,
+    "text_end": 2421,
+    "pronounce_text_begin": 2207,
+    "pronounce_text_end": 2292
+  },
+  {
+    "text": "PLAN.md 解决的是规划，EXPERIMENTS.md 解决的是失败记忆。当你和 Agent 一起回头看，你想看的不是它原计划怎么写的，而是它已经踩过哪些坑。",
+    "pronounce_text": "PLAN.md解决的是规划，EXPERIMENTS.md解决的是失败记忆。当你和Agent一起回头看，你想看的不是它原计划怎么写的，而是它已经踩过哪些坑。",
+    "time_begin": 413532,
+    "time_end": 426946.0136054422,
+    "text_begin": 2421,
+    "text_end": 2502,
+    "pronounce_text_begin": 2292,
+    "pronounce_text_end": 2369
+  },
+  {
+    "text": "哪条路证伪了，为什么证伪了，下一条路该往哪走，全部从这个文件里出。",
+    "pronounce_text": "哪条路证伪了，为什么证伪了，下一条路该往哪走，全部从这个文件里出。",
+    "time_begin": 427104,
+    "time_end": 434167.3560090703,
+    "text_begin": 2502,
+    "text_end": 2535,
+    "pronounce_text_begin": 2369,
+    "pronounce_text_end": 2402
+  },
+  {
+    "text": "这也是为什么他还要保留 EXPERIMENT_NOTES.md 那个实时 scratchpad——他自己说原话就是，方便他周期性地审计 Agent 在想什么，需要的时候把它推回正确方向。",
+    "pronounce_text": "这也是为什么他还要保留EXPERIMENT，NOTES.md那个实时scratchpad他自己说原话就是，方便他周期性地审计Agent在想什么，需要的时候把它推回正确方向。",
+    "time_begin": 434304,
+    "time_end": 447985.04308390024,
+    "text_begin": 2535,
+    "text_end": 2628,
+    "pronounce_text_begin": 2402,
+    "pronounce_text_end": 2488
+  },
+  {
+    "text": "注意这个细节。三个文件全开，模型还是会跑偏。/goal 不是完全自动驾驶，长程 Agent 仍然需要人类周期性介入校正。不要被\"连续跑几天\"这个说法误导成完全放手不管。",
+    "pronounce_text": "注意这个细节。三个文件全开，模型还是会跑偏。goal不是完全自动驾驶，长程Agent仍然需要人类周期性介入校正。不要被\"连续跑几天\"这个说法误导成完全放手不管。",
+    "time_begin": 448128,
+    "time_end": 463643.4195011338,
+    "text_begin": 2628,
+    "text_end": 2712,
+    "pronounce_text_begin": 2488,
+    "pronounce_text_end": 2568
+  },
+  {
+    "text": "把这三件事连起来看，Chris 真正在讲的是同一件事：当你把模型从\"对话伙伴\"变成\"循环执行体\"，提示词的角色就变了。",
+    "pronounce_text": "把这三件事连起来看，Chris真正在讲的是同一件事：当你把模型从\"对话伙伴\"变成\"循环执行体\"，提示词的角色就变了。",
+    "time_begin": 463788,
+    "time_end": 475030.94784580497,
+    "text_begin": 2712,
+    "text_end": 2771,
+    "pronounce_text_begin": 2568,
+    "pronounce_text_end": 2626
+  },
+  {
+    "text": "在对话里，提示是一段邀请——告诉模型大概想聊什么。在 /goal 里，提示是一个合同——必须写清楚停止条件、验证机制、外置记忆。",
+    "pronounce_text": "在对话里，提示是一段邀请告诉模型大概想聊什么。在，goal里，提示是一个合同必须写清楚停止条件、验证机制、外置记忆。",
+    "time_begin": 475200,
+    "time_end": 488614.0136054422,
+    "text_begin": 2771,
+    "text_end": 2835,
+    "pronounce_text_begin": 2626,
+    "pronounce_text_end": 2684
+  },
+  {
+    "text": "很多人以为模型变强了就该用得更省力。Chris 的发现刚好相反：模型能跑得更久、更复杂，反而要求你把目标定义得更严格、把反馈循环搭得更紧、把记忆系统设计得更外置。",
+    "pronounce_text": "很多人以为模型变强了就该用得更省力。Chris的发现刚好相反：模型能跑得更久、更复杂，反而要求你把目标定义得更严格、把反馈循环搭得更紧、把记忆系统设计得更外置。",
+    "time_begin": 488772,
+    "time_end": 503730.1405895692,
+    "text_begin": 2835,
+    "text_end": 2916,
+    "pronounce_text_begin": 2684,
+    "pronounce_text_end": 2764
+  },
+  {
+    "text": "模型现在能跑几天不停了，但循环需要一个停下来的理由——你给它的是清单，还是雾。",
+    "pronounce_text": "模型现在能跑几天不停了，但循环需要一个停下来的理由你给它的是清单，还是雾。",
+    "time_begin": 503892,
+    "time_end": 510479.3469387755,
+    "text_begin": 2916,
+    "text_end": 2955,
+    "pronounce_text_begin": 2764,
+    "pronounce_text_end": 2801
+  },
+  {
+    "text": "下次你打开 /goal，先停一下，问自己三件事。第一，我的目标里有没有一个数字和一个硬约束？没有就先补上。第二，评估这个目标的反馈循环要多久才能跑一遍？",
+    "pronounce_text": "下次你打开，goal，先停一下，问自己三件事。第一，我的目标里有没有一个数字和一个硬约束？没有就先补上。第二，评估这个目标的反馈循环要多久才能跑一遍？",
+    "time_begin": 510624,
+    "time_end": 525233.8412698413,
+    "text_begin": 2955,
+    "text_end": 3031,
+    "pronounce_text_begin": 2801,
+    "pronounce_text_end": 2876
+  },
+  {
+    "text": "如果是小时级以上，先去搭一个小数据集或小模型的轻量版。第三，Agent 跑一天之后，它能从哪里读到自己已经试过哪些路？如果没有 EXPERIMENTS.md 这种文件，它一定会原地打转。",
+    "pronounce_text": "如果是小时级以上，先去搭一个小数据集或小模型的轻量版。第三，Agent跑一天之后，它能从哪里读到自己已经试过哪些路？如果没有EXPERIMENTS.md这种文件，它一定会原地打转。",
+    "time_begin": 525384,
+    "time_end": 540597.560090703,
+    "text_begin": 3031,
+    "text_end": 3124,
+    "pronounce_text_begin": 2876,
+    "pronounce_text_end": 2966
+  },
+  {
+    "text": "清单不是模板，是 Agent 的呼吸方式。",
+    "pronounce_text": "清单不是模板，是Agent的呼吸方式。",
+    "time_begin": 540756,
+    "time_end": 544197.0430839002,
+    "text_begin": 3124,
+    "text_end": 3145,
+    "pronounce_text_begin": 2966,
+    "pronounce_text_end": 2985
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 544356,
+    "time_end": 549631.4195011337,
+    "text_begin": 3145,
+    "text_end": 3172,
+    "pronounce_text_begin": 2985,
+    "pronounce_text_end": 3011
+  }
+]

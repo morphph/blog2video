@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .title .purple {
+      color: #8B5CF6;
+    }
+    .sub {
+      font-size: 30px;
+      color: #B0B0CC;
+      margin-bottom: 56px;
+    }
+    .loop {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .step.highlight {
+      border-color: rgba(245, 158, 11, 0.5);
+      border-left: 6px solid #F59E0B;
+      background: rgba(245, 158, 11, 0.08);
+    }
+    .step-num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+      margin-right: 24px;
+      min-width: 80px;
+    }
+    .step.highlight .step-num {
+      color: #F59E0B;
+    }
+    .step-body {
+      flex: 1;
+    }
+    .step-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .step.highlight .step-title {
+      color: #F59E0B;
+    }
+    .step-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+    }
+    .arrow {
+      text-align: center;
+      font-size: 26px;
+      color: #6B7280;
+      margin: -8px 0;
+    }
+    .footer-key {
+      margin-top: 36px;
+      font-size: 28px;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">FIRST PRINCIPLE</div>
+    <h1 class="title"><span class="purple">/goal</span> 是一个循环</h1>
+    <div class="sub">循环需要停止条件</div>
+    <div class="loop">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div class="step-title">Execute</div>
+          <div class="step-desc">执行一个动作</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div class="step-title">Score</div>
+          <div class="step-desc">给这个动作打分</div>
+        </div>
+      </div>
+      <div class="step highlight">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div class="step-title">Check ← 整个机制的核心</div>
+          <div class="step-desc">分数是否达到目标？</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div class="step-title">Continue / Terminate</div>
+          <div class="step-desc">没达到继续，达到停下</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-key">目标没有刻度 → 循环没有出口</div>
+  </div>
+</body>
+</html>

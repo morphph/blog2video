@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .title .yellow {
+      color: #F59E0B;
+    }
+    .sub {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+    }
+    .files {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .file {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #6B7280;
+      border-radius: 12px;
+      padding: 26px 24px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .file.highlight {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 6px solid #F59E0B;
+    }
+    .file-icon {
+      font-size: 44px;
+    }
+    .file-body {
+      flex: 1;
+    }
+    .file-name {
+      font-family: 'JetBrains Mono', Menlo, monospace;
+      font-size: 32px;
+      font-weight: 800;
+      color: #B0B0CC;
+      margin-bottom: 6px;
+    }
+    .file.highlight .file-name {
+      color: #F59E0B;
+    }
+    .file-purpose {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .file.highlight .file-purpose {
+      color: #FDE68A;
+    }
+    .file-badge {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #F59E0B;
+      background: rgba(245, 158, 11, 0.15);
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-left: auto;
+    }
+    .footer {
+      margin-top: 36px;
+      font-size: 28px;
+      color: #F59E0B;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">EXTERNAL MEMORY</div>
+    <h1 class="title">三个 <span class="yellow">markdown</span> 文件</h1>
+    <div class="sub">让 Agent 跑几天还能不迷路</div>
+    <div class="files">
+      <div class="file">
+        <div class="file-icon">📋</div>
+        <div class="file-body">
+          <div class="file-name">PLAN.md</div>
+          <div class="file-purpose">高层路线图：要去哪</div>
+        </div>
+      </div>
+      <div class="file highlight">
+        <div class="file-icon">🧪</div>
+        <div class="file-body">
+          <div class="file-name">EXPERIMENTS.md</div>
+          <div class="file-purpose">结构化实验档案：假设 / 机制 / 判定 / 结果</div>
+        </div>
+        <div class="file-badge">最关键</div>
+      </div>
+      <div class="file">
+        <div class="file-icon">📝</div>
+        <div class="file-body">
+          <div class="file-name">EXPERIMENT_NOTES.md</div>
+          <div class="file-purpose">实时 scratchpad：Agent 当下在想什么</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">三个全开 — 但 EXPERIMENTS.md 才是核心</div>
+  </div>
+</body>
+</html>

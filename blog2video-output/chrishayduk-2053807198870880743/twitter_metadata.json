@@ -1,0 +1,24 @@
+{
+  "url": "https://x.com/chrishayduk/status/2053807198870880743",
+  "author": "Chris Hayduk",
+  "handle": "@ChrisHayduk",
+  "author_bio": "FDE, Life Sciences @OpenAI | Cross-disciplinary writing on AI & where we're going at chrishayduk.com | ex MLE @Meta, Drug Discovery Lead @Deloitte",
+  "title": "Using Codex Goals Effectively",
+  "published": "2026-05-11 11:59 AM",
+  "stats": {
+    "replies": 25,
+    "reposts": 130,
+    "likes": 1174,
+    "bookmarks": 2737,
+    "views": 188229
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {"file": "images/image_1_cover.jpg", "context": "header/cover image at top of article"},
+    {"file": "images/image_2_clear_goal.jpg", "context": "section image for 'Specify A Clear, Quantitative Goal'"},
+    {"file": "images/image_3_checklist.png", "context": "excerpt of ICML formatting checklist (markdown checklist)"},
+    {"file": "images/image_4_feedback_loop.jpg", "context": "section image for 'Make Sure the Feedback Loop Is Tight'"},
+    {"file": "images/image_5_markdown_files.jpg", "context": "section image for 'Give Your Agent Markdown Files for Tracking'"},
+    {"file": "images/image_6_experiments_md.png", "context": "excerpt of EXPERIMENTS.md showing experiment entries"}
+  ]
+}

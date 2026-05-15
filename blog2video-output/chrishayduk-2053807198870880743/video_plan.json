@@ -1,0 +1,20 @@
+{
+  "blog_metadata": {
+    "title": "Using Codex Goals Effectively",
+    "title_zh": "Agent 死循环？目标定错了",
+    "url": "https://x.com/chrishayduk/status/2053807198870880743",
+    "word_count": 3524,
+    "slug": "chrishayduk-2053807198870880743"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "三个支柱（量化目标、紧凑反馈循环、外置 markdown 记忆）都在论证同一个 thesis——goal mode 是循环，循环需要停止条件。拆开会让任何一段都失去支撑感，作为单集呈现更有力。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Agent 死循环？目标定错了"
+      }
+    ]
+  }
+}

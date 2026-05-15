@@ -1,0 +1,15 @@
+{
+  "topic": "Agent 死循环？目标定错了",
+  "blog_url": "https://x.com/chrishayduk/status/2053807198870880743",
+  "source": "chrishayduk-2053807198870880743",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

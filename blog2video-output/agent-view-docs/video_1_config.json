@@ -1,0 +1,603 @@
+{
+  "video_number": 1,
+  "title": "Claude Code 把 session 当进程管，不当 tab",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "image",
+      "start_time_seconds": 0,
+      "duration_seconds": 21.492,
+      "data": {}
+    },
+    {
+      "slide_number": 2,
+      "type": "image",
+      "start_time_seconds": 21.492,
+      "duration_seconds": 83.664,
+      "data": {}
+    },
+    {
+      "slide_number": 3,
+      "type": "image",
+      "start_time_seconds": 105.156,
+      "duration_seconds": 74.62799999999999,
+      "data": {}
+    },
+    {
+      "slide_number": 4,
+      "type": "image",
+      "start_time_seconds": 179.784,
+      "duration_seconds": 103.356,
+      "data": {}
+    },
+    {
+      "slide_number": 5,
+      "type": "image",
+      "start_time_seconds": 283.14,
+      "duration_seconds": 59.148000000000025,
+      "data": {}
+    },
+    {
+      "slide_number": 6,
+      "type": "image",
+      "start_time_seconds": 342.288,
+      "duration_seconds": 68.50799999999998,
+      "data": {}
+    },
+    {
+      "slide_number": 7,
+      "type": "image",
+      "start_time_seconds": 410.796,
+      "duration_seconds": 70.16399999999999,
+      "data": {}
+    },
+    {
+      "slide_number": 8,
+      "type": "image",
+      "start_time_seconds": 480.96,
+      "duration_seconds": 64.44,
+      "data": {}
+    },
+    {
+      "slide_number": 9,
+      "type": "image",
+      "start_time_seconds": 545.4,
+      "duration_seconds": 24.12439909297052,
+      "data": {}
+    },
+    {
+      "slide_number": 10,
+      "type": "cta",
+      "start_time_seconds": 569.5243990929705,
+      "duration_seconds": 5,
+      "data": {
+        "type": "cta"
+      }
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0,
+      "end": 6.33,
+      "text": "Anthropic 刚把 Claude Code 的 agent view 文档放出来了。"
+    },
+    {
+      "start": 6.33,
+      "end": 14.91,
+      "text": "我读完之后最想跟你聊一件事：每一个 session 行尾那条总结，是一个独立的 Haiku 模型，每 15 秒帮你刷一次。"
+    },
+    {
+      "start": 14.91,
+      "end": 16.317,
+      "text": "账单算在你自己头上。"
+    },
+    {
+      "start": 16.488,
+      "end": 21.334,
+      "text": "今天不讲快捷键怎么按，只讲这份文档里藏着的几个设计赌注。"
+    },
+    {
+      "start": 21.492,
+      "end": 26.615,
+      "text": "你打开 agent view，看到每行前面有一个小图标。"
+    },
+    {
+      "start": 26.615,
+      "end": 32.654,
+      "text": "第一反应会觉得，这就是状态指示灯嘛，绿色完成，红色失败，灰色停了。"
+    },
+    {
+      "start": 32.796,
+      "end": 39.174,
+      "text": "但你认真读 docs 会发现，颜色和形状是两套表，两条维度。"
+    },
+    {
+      "start": 39.312,
+      "end": 40.81,
+      "text": "颜色这条管的是语义。"
+    },
+    {
+      "start": 40.81,
+      "end": 50.55,
+      "text": "Working 是动画，Needs input 是黄色，Completed 是绿色，Failed 是红色，Stopped 是灰色。"
+    },
+    {
+      "start": 50.55,
+      "end": 51.449,
+      "text": "这条很正常。"
+    },
+    {
+      "start": 51.588,
+      "end": 53.146,
+      "text": "奇怪的是形状这条。"
+    },
+    {
+      "start": 53.146,
+      "end": 56.435,
+      "text": "`✻` 表示进程还活着，可以立刻回话。"
+    },
+    {
+      "start": 56.435,
+      "end": 62.668,
+      "text": "`∙` 表示进程已经被回收了，但状态还在磁盘上，你点它还能从中断点续起。"
+    },
+    {
+      "start": 62.668,
+      "end": 68.381,
+      "text": "`✢` 是 `/loop` session 在两次迭代之间睡着了。"
+    },
+    {
+      "start": 68.544,
+      "end": 72.306,
+      "text": "两条维度组合在一起，意思就完全不同了。"
+    },
+    {
+      "start": 72.306,
+      "end": 77.058,
+      "text": "一个绿色的 `✻` 是\"任务完成、进程还活着\"。"
+    },
+    {
+      "start": 77.058,
+      "end": 84.779,
+      "text": "一个绿色的 `∙` 是\"任务完成、进程被回收了\"——你看到的是文件，不是进程。"
+    },
+    {
+      "start": 84.924,
+      "end": 87.378,
+      "text": "这两个对你的心智模型完全不一样。"
+    },
+    {
+      "start": 87.516,
+      "end": 89.254,
+      "text": "为什么要做成两层？"
+    },
+    {
+      "start": 89.254,
+      "end": 97.173,
+      "text": "因为团队心里有一个判断：语义状态和进程生死，是两件独立的事，不能合并成一个颜色码。"
+    },
+    {
+      "start": 97.173,
+      "end": 101.615,
+      "text": "你不需要知道进程活着没活着才能判断任务完没完。"
+    },
+    {
+      "start": 101.815,
+      "end": 104.989,
+      "text": "但你需要知道点过去会不会立刻有反应。"
+    },
+    {
+      "start": 105.156,
+      "end": 106.853,
+      "text": "接着说那个行末的一句话总结。"
+    },
+    {
+      "start": 106.853,
+      "end": 119.092,
+      "text": "\"Edit src/physics/CollisionSystem.ts\"、\"needs input: double jump or wall climb\"——你扫一眼就懂这个 session 在干嘛。"
+    },
+    {
+      "start": 119.232,
+      "end": 125.884,
+      "text": "文档里写得非常诚实：这一行总结，是一次独立的 Haiku-class 模型调用。"
+    },
+    {
+      "start": 125.884,
+      "end": 131.206,
+      "text": "最多每 15 秒刷一次，外加每个 turn 结束的时候再刷一次。"
+    },
+    {
+      "start": 131.406,
+      "end": 136.589,
+      "text": "走的是你自己的 provider，按 data usage terms 走和 session 同一份账。"
+    },
+    {
+      "start": 136.728,
+      "end": 139.298,
+      "text": "这条信息我读到的时候停了一下。"
+    },
+    {
+      "start": 139.298,
+      "end": 147.352,
+      "text": "它意味着团队做了一个选择：为了让你\"扫一眼就懂\"这个体验，他们愿意让你为额外的小模型调用付钱。"
+    },
+    {
+      "start": 147.352,
+      "end": 153.521,
+      "text": "不是 Anthropic 偷偷给你的免费 UX 糖，是明确进了你的配额。"
+    },
+    {
+      "start": 153.684,
+      "end": 160.385,
+      "text": "你如果同时开 10 个 session，背景就是 10 路独立计费的 Haiku 在那儿循环跑。"
+    },
+    {
+      "start": 160.385,
+      "end": 161.641,
+      "text": "每 15 秒一刷。"
+    },
+    {
+      "start": 161.784,
+      "end": 163.913,
+      "text": "这个选择我觉得反而是真诚的。"
+    },
+    {
+      "start": 163.913,
+      "end": 170.299,
+      "text": "如果不刷新，你就得 peek 进每个 session 看；如果刷得太快，账单受不了。"
+    },
+    {
+      "start": 170.46,
+      "end": 179.613,
+      "text": "15 秒这个数字大概就是他们权衡出来的最低节流——既不会让你感觉行总结过时，又不会让 Haiku 账单爆炸。"
+    },
+    {
+      "start": 179.784,
+      "end": 184.758,
+      "text": "往下读到 hosting 这一段，整篇文档的架构判断就浮出来了。"
+    },
+    {
+      "start": 184.896,
+      "end": 187.38,
+      "text": "Background session 不挂任何终端。"
+    },
+    {
+      "start": 187.38,
+      "end": 190.436,
+      "text": "它由一个 per-user 的 supervisor 进程托管。"
+    },
+    {
+      "start": 190.436,
+      "end": 193.875,
+      "text": "你关掉 agent view，关掉 shell，session 照常跑。"
+    },
+    {
+      "start": 194.04,
+      "end": 205.585,
+      "text": "更狠的一条：supervisor 会盯着磁盘上的 Claude Code 二进制文件，auto-updater 一替换，supervisor 就 restart into the new version。"
+    },
+    {
+      "start": 205.585,
+      "end": 207.849,
+      "text": "这不是网络检查，是本地文件 watch。"
+    },
+    {
+      "start": 208.008,
+      "end": 209.195,
+      "text": "这条意味着什么？"
+    },
+    {
+      "start": 209.195,
+      "end": 214.984,
+      "text": "意味着 background session 必须设计成可以被无感重启的对象。"
+    },
+    {
+      "start": 214.984,
+      "end": 224.928,
+      "text": "状态全部存在 `~/.claude/jobs/<id>/state.json`、`daemon/roster.json` 这些文件里。"
+    },
+    {
+      "start": 225.072,
+      "end": 230.556,
+      "text": "supervisor 死了，下一个 supervisor 起来，照样能把所有 session 接回去。"
+    },
+    {
+      "start": 230.724,
+      "end": 235.872,
+      "text": "session 不是\"长跑的进程\"，是\"随时可以被 cold-start 的对象\"。"
+    },
+    {
+      "start": 236.016,
+      "end": 239.485,
+      "text": "这跟我们平时对 agent 的理解是反过来的。"
+    },
+    {
+      "start": 239.485,
+      "end": 244.162,
+      "text": "我们以为 agent 跑起来就是一个活着的进程，关掉了就没了。"
+    },
+    {
+      "start": 244.162,
+      "end": 248.838,
+      "text": "Claude Code 的设计是：进程是临时的，对象是永久的。"
+    },
+    {
+      "start": 248.976,
+      "end": 253.629,
+      "text": "空闲一小时左右，supervisor 会主动把进程杀掉释放资源。"
+    },
+    {
+      "start": 253.629,
+      "end": 260.173,
+      "text": "你下次 peek 或者 attach 的时候，从磁盘上的 state 重启一个新进程出来。"
+    },
+    {
+      "start": 260.316,
+      "end": 269.928,
+      "text": "所以 docs 里那条 `claude respawn --all` 才有意义——机器睡眠或者关机之后，所有 session 需要批量重启。"
+    },
+    {
+      "start": 269.928,
+      "end": 275.146,
+      "text": "supervisor 能跨 auto-update 幸存，但跨不了机器重启。"
+    },
+    {
+      "start": 275.292,
+      "end": 279.716,
+      "text": "这是把 session 当系统对象，不当终端 tab。"
+    },
+    {
+      "start": 279.716,
+      "end": 282.994,
+      "text": "tab 关了就没了，对象关了还在磁盘上。"
+    },
+    {
+      "start": 283.14,
+      "end": 286.166,
+      "text": "agent view 底部就一个输入框。"
+    },
+    {
+      "start": 286.166,
+      "end": 289.344,
+      "text": "你打字按回车，是派一个新 session。"
+    },
+    {
+      "start": 289.512,
+      "end": 305.492,
+      "text": "但你打 `a:foo`，是按 agent 名字过滤；打 `s:blocked`，是只看等你输入的 session；打 `#1234` 或者贴一个 PR URL，"
+    },
+    {
+      "start": 305.692,
+      "end": 308.576,
+      "text": "是跳到正在做这个 PR 的 session。"
+    },
+    {
+      "start": 308.736,
+      "end": 312.467,
+      "text": "一个输入框，根据语法前缀切换语义。"
+    },
+    {
+      "start": 312.624,
+      "end": 315.932,
+      "text": "这种\"上下文相关解释\"的设计有它的代价。"
+    },
+    {
+      "start": 315.932,
+      "end": 324.204,
+      "text": "代价是你要记住几个前缀规则——`a:` 是 agent，`s:` 是 state，`#` 是 PR。"
+    },
+    {
+      "start": 324.36,
+      "end": 329.242,
+      "text": "但团队选了这条路而不是再开一行搜索框，原因很明显：屏幕空间。"
+    },
+    {
+      "start": 329.242,
+      "end": 338.842,
+      "text": "agent view 已经被状态分组、PR 状态点、行总结塞得很满了，再加一行 filter input 体验就糟了。"
+    },
+    {
+      "start": 339.012,
+      "end": 342.151,
+      "text": "省下来的不是按键，是屏幕预算。"
+    },
+    {
+      "start": 342.288,
+      "end": 347.436,
+      "text": "这条我读 docs 的时候差点漏掉，但它是整个设计的关键证据。"
+    },
+    {
+      "start": 347.58,
+      "end": 356.396,
+      "text": "文档里专门写了一句：\"Typing another prompt and pressing Enter launches a second session alongside the first rather than sending a follow-up to it.\""
+    },
+    {
+      "start": 356.544,
+      "end": 365.012,
+      "text": "翻译成大白话：你在底部输入框打一句话回车，不是给已有 session 继续发消息，是开一个全新的 session。"
+    },
+    {
+      "start": 365.184,
+      "end": 367.032,
+      "text": "为什么要专门写一句？"
+    },
+    {
+      "start": 367.032,
+      "end": 368.326,
+      "text": "因为这反直觉。"
+    },
+    {
+      "start": 368.326,
+      "end": 375.72,
+      "text": "你看着 agent view 这个界面，本能反应就是把它当聊天室，回车继续对话。"
+    },
+    {
+      "start": 375.72,
+      "end": 380.525,
+      "text": "团队心里清楚这是反直觉的，所以特地用一整句话警告你。"
+    },
+    {
+      "start": 380.664,
+      "end": 387.099,
+      "text": "你想给已有 session 加 instruction，只能 peek 进去或者 attach 进去。"
+    },
+    {
+      "start": 387.099,
+      "end": 390.758,
+      "text": "底部那个输入框只做两件事：派新 session 或者筛选。"
+    },
+    {
+      "start": 390.924,
+      "end": 392.474,
+      "text": "这条限制说明什么？"
+    },
+    {
+      "start": 392.474,
+      "end": 398.331,
+      "text": "说明在团队的心智模型里，session 不是一个对话窗，是一个对象。"
+    },
+    {
+      "start": 398.331,
+      "end": 403.154,
+      "text": "对象创建出来就是独立的，不会因为你长得像它就被合并进去。"
+    },
+    {
+      "start": 403.308,
+      "end": 410.627,
+      "text": "每个 prompt 等于一个新对象、独立的订阅配额、独立的 worktree、独立的进程生命周期。"
+    },
+    {
+      "start": 410.796,
+      "end": 412.731,
+      "text": "讲爽点必须讲代价。"
+    },
+    {
+      "start": 412.731,
+      "end": 419.183,
+      "text": "这几个设计的账单、风险，文档里都写了，我挑三条最该提醒你的。"
+    },
+    {
+      "start": 419.328,
+      "end": 422.21,
+      "text": "第一，并发派单的真实瓶颈不是你的机器，是你的订阅配额。"
+    },
+    {
+      "start": 422.21,
+      "end": 431.175,
+      "text": "docs 在 quick start 第二步就写了：\"Each session uses your subscription quota independently\"。"
+    },
+    {
+      "start": 431.316,
+      "end": 437.613,
+      "text": "10 个并发 session = 10 份配额在烧，外加 10 路 Haiku 行总结在背景刷。"
+    },
+    {
+      "start": 437.76,
+      "end": 441.988,
+      "text": "第二，删除 session 等于删除 worktree。"
+    },
+    {
+      "start": 441.988,
+      "end": 445.611,
+      "text": "`Ctrl+X` 按一次停，两秒内再按一次就删。"
+    },
+    {
+      "start": 445.611,
+      "end": 449.688,
+      "text": "worktree 里没 commit 的改动全部丢掉。"
+    },
+    {
+      "start": 449.856,
+      "end": 457.686,
+      "text": "docs 反复强调 push or commit before delete——这是 worktree 隔离的副作用，便利和危险绑在同一个键上。"
+    },
+    {
+      "start": 457.848,
+      "end": 465.039,
+      "text": "第三，supervisor 这套架构虽然解决了 session 持久化的问题，但排错路径变长了。"
+    },
+    {
+      "start": 465.192,
+      "end": 476.7,
+      "text": "状态散在三个地方：`~/.claude/daemon.log`、`daemon/roster.json`、`jobs/<id>/state.json`。"
+    },
+    {
+      "start": 476.7,
+      "end": 478.214,
+      "text": "不是一个文件能看全。"
+    },
+    {
+      "start": 478.214,
+      "end": 480.789,
+      "text": "一旦出问题，你得知道去哪儿翻日志。"
+    },
+    {
+      "start": 480.96,
+      "end": 488.453,
+      "text": "读完整份 docs，我最大的感受是：这不是一个 TUI，是一个会话管理系统。"
+    },
+    {
+      "start": 488.592,
+      "end": 493.734,
+      "text": "颜色告诉你 session 在想什么，形状告诉你它还活不活着。"
+    },
+    {
+      "start": 493.734,
+      "end": 503.852,
+      "text": "supervisor 把进程和终端剥离，session 因此变成了磁盘上的对象，可以被无感重启、被批量恢复、被跨项目可见。"
+    },
+    {
+      "start": 504,
+      "end": 507.142,
+      "text": "底部输入框被压成两个角色，省屏幕不省语义。"
+    },
+    {
+      "start": 507.142,
+      "end": 514.175,
+      "text": "每个 prompt 都是新对象，回车不是 follow-up，是 instantiation。"
+    },
+    {
+      "start": 514.332,
+      "end": 523.267,
+      "text": "这些选择放在一起看，团队在做的事情很明确：把 session 从终端 tab 提升成系统里的一类对象。"
+    },
+    {
+      "start": 523.267,
+      "end": 526.771,
+      "text": "tab 是 UI 概念，对象是架构概念。"
+    },
+    {
+      "start": 526.932,
+      "end": 536.642,
+      "text": "从 tab 到对象，中间隔的是 supervisor 这个常驻进程、是 state.json 这种持久化合约、是双层 indicator 这种维度拆分。"
+    },
+    {
+      "start": 536.796,
+      "end": 545.229,
+      "text": "Agent view 表面上是给你看 session 在干嘛，本质上是把 session 从终端里抽出来，变成可以被管理的对象。"
+    },
+    {
+      "start": 545.4,
+      "end": 555.83,
+      "text": "下次你打开 `claude agents`，别只看那张表，看看那个 `✻` 还是 `∙`，想想 supervisor 此刻在不在听磁盘上的二进制。"
+    },
+    {
+      "start": 555.984,
+      "end": 562.873,
+      "text": "这份 docs 真正告诉你的，不是怎么用 agent view，是 Anthropic 怎么想 session 这件事。"
+    },
+    {
+      "start": 563.04,
+      "end": 567.103,
+      "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+    },
+    {
+      "start": 567.103,
+      "end": 568.524,
+      "text": "我们下期再见。"
+    }
+  ]
+}

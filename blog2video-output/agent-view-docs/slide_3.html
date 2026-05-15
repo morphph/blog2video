@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(245, 158, 11, 0.20), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(239, 68, 68, 0.18), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .y { color: #F59E0B; }
+    .big-stat {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .big-stat .num {
+      font-size: 120px;
+      font-weight: 800;
+      color: #F59E0B;
+      line-height: 1;
+      letter-spacing: -3px;
+      font-family: 'SF Mono', Consolas, monospace;
+      margin-bottom: 12px;
+    }
+    .big-stat .num .unit {
+      font-size: 56px;
+      color: #FFFFFF;
+      margin-left: 8px;
+    }
+    .big-stat .desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .big-stat .desc .em { color: #F59E0B; font-weight: 800; }
+    .formula {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .formula .n {
+      font-size: 60px;
+      font-weight: 900;
+      color: #EF4444;
+      line-height: 1;
+      font-family: 'SF Mono', Consolas, monospace;
+    }
+    .formula .x {
+      font-size: 36px;
+      color: #B0B0CC;
+      font-weight: 800;
+    }
+    .formula .text {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: left;
+    }
+    .formula .text .em { color: #EF4444; font-weight: 800; }
+    .warn {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .warn .label {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .warn .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .warn .text .em { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">行末总结 · 谁付钱</div>
+    <div class="title">为<span class="y">扫一眼就懂</span>付费</div>
+    <div class="big-stat">
+      <div class="num">15<span class="unit">秒</span></div>
+      <div class="desc">
+        Haiku 调用<span class="em">最低节流</span>间隔
+      </div>
+    </div>
+    <div class="formula">
+      <div class="n">10</div>
+      <div class="x">×</div>
+      <div class="text">
+        并发 session = 10 路 Haiku<br>
+        在背景<span class="em">循环刷</span>
+      </div>
+    </div>
+    <div class="warn">
+      <div class="label">明确进配额</div>
+      <div class="text">
+        不是免费 UX 糖<br>
+        是<span class="em">你的</span> data usage terms
+      </div>
+    </div>
+  </div>
+</body>
+</html>

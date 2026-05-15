@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .quote-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 28px 32px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .quote-box .label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .quote-box .quote {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+      font-style: italic;
+      font-family: -apple-system, 'PingFang SC', Georgia, serif;
+    }
+    .quote-box .quote .em { color: #F59E0B; font-style: normal; font-weight: 800; }
+    .map {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .side {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 20px;
+      text-align: left;
+    }
+    .side.wrong {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .side.right {
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      border-left: 4px solid #10B981;
+    }
+    .side .h {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .side.wrong .h { color: #EF4444; }
+    .side.right .h { color: #10B981; }
+    .side .d {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .side.wrong .d { color: #B0B0CC; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">文档里专门写的一句话</div>
+    <div class="title">回车不是<span class="p">follow-up</span></div>
+    <div class="quote-box">
+      <div class="label">DOCS 原话</div>
+      <div class="quote">
+        "Pressing Enter launches a<br>
+        <span class="em">second session</span> alongside<br>
+        the first rather than sending<br>
+        a follow-up to it."
+      </div>
+    </div>
+    <div class="map">
+      <div class="side wrong">
+        <div class="h">你以为</div>
+        <div class="d">聊天室<br>回车续话</div>
+      </div>
+      <div class="side right">
+        <div class="h">实际</div>
+        <div class="d">对象工厂<br>回车 = 新对象</div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="label">为什么要专门写</div>
+      <div class="text">
+        团队知道这<span class="em">反直觉</span><br>
+        所以用整句话警告你
+      </div>
+    </div>
+  </div>
+</body>
+</html>

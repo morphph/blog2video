@@ -1,0 +1,572 @@
+[
+  {
+    "text": "Anthropic 刚把 Claude Code 的 agent view 文档放出来了。我读完之后最想跟你聊一件事：每一个 session 行尾那条总结，是一个独立的 Haiku 模型，每 15 秒帮你刷一次。账单算在你自己头上。",
+    "pronounce_text": "Anthropic刚把Claude Code的agent view文档放出来了。我读完之后最想跟你聊一件事：每一个session行尾那条总结，是一个独立的Haiku模型，每十五秒帮你刷一次。账单算在你自己头上。",
+    "time_begin": 0,
+    "time_end": 16316.507936507936,
+    "text_begin": 0,
+    "text_end": 116,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 105
+  },
+  {
+    "text": "今天不讲快捷键怎么按，只讲这份文档里藏着的几个设计赌注。",
+    "pronounce_text": "今天不讲快捷键怎么按，只讲这份文档里藏着的几个设计赌注。",
+    "time_begin": 16488,
+    "time_end": 21333.850340136054,
+    "text_begin": 116,
+    "text_end": 144,
+    "pronounce_text_begin": 105,
+    "pronounce_text_end": 133
+  },
+  {
+    "text": "你打开 agent view，看到每行前面有一个小图标。第一反应会觉得，这就是状态指示灯嘛，绿色完成，红色失败，灰色停了。",
+    "pronounce_text": "你打开agent view，看到每行前面有一个小图标。第一反应会觉得，这就是状态指示灯嘛，绿色完成，红色失败，灰色停了。",
+    "time_begin": 21492,
+    "time_end": 32653.678004535148,
+    "text_begin": 144,
+    "text_end": 205,
+    "pronounce_text_begin": 133,
+    "pronounce_text_end": 193
+  },
+  {
+    "text": "但你认真读 docs 会发现，颜色和形状是两套表，两条维度。",
+    "pronounce_text": "但你认真读docs会发现，颜色和形状是两套表，两条维度。",
+    "time_begin": 32796,
+    "time_end": 39174.36734693877,
+    "text_begin": 205,
+    "text_end": 235,
+    "pronounce_text_begin": 193,
+    "pronounce_text_end": 221
+  },
+  {
+    "text": "颜色这条管的是语义。Working 是动画，Needs input 是黄色，Completed 是绿色，Failed 是红色，Stopped 是灰色。这条很正常。",
+    "pronounce_text": "颜色这条管的是语义。Working是动画，Needs input是黄色，Completed是绿色，Failed是红色，Stopped是灰色。这条很正常。",
+    "time_begin": 39312,
+    "time_end": 51448.91609977324,
+    "text_begin": 235,
+    "text_end": 316,
+    "pronounce_text_begin": 221,
+    "pronounce_text_end": 297
+  },
+  {
+    "text": "奇怪的是形状这条。`✻` 表示进程还活着，可以立刻回话。`∙` 表示进程已经被回收了，但状态还在磁盘上，你点它还能从中断点续起。`✢` 是 `/loop` session 在两次迭代之间睡着了。",
+    "pronounce_text": "奇怪的是形状这条。表示进程还活着，可以立刻回话。∙，表示进程已经被回收了，但状态还在磁盘上，你点它还能从中断点续起。是，loop，session在两次迭代之间睡着了。",
+    "time_begin": 51588,
+    "time_end": 68380.51700680272,
+    "text_begin": 316,
+    "text_end": 413,
+    "pronounce_text_begin": 297,
+    "pronounce_text_end": 380
+  },
+  {
+    "text": "两条维度组合在一起，意思就完全不同了。一个绿色的 `✻` 是\"任务完成、进程还活着\"。一个绿色的 `∙` 是\"任务完成、进程被回收了\"——你看到的是文件，不是进程。",
+    "pronounce_text": "两条维度组合在一起，意思就完全不同了。一个绿色的，是\"任务完成、进程还活着\"。一个绿色的，∙，是\"任务完成、进程被回收了\" 你看到的是文件，不是进程。",
+    "time_begin": 68544,
+    "time_end": 84779.23809523809,
+    "text_begin": 413,
+    "text_end": 495,
+    "pronounce_text_begin": 380,
+    "pronounce_text_end": 455
+  },
+  {
+    "text": "这两个对你的心智模型完全不一样。",
+    "pronounce_text": "这两个对你的心智模型完全不一样。",
+    "time_begin": 84924,
+    "time_end": 87378.19501133787,
+    "text_begin": 495,
+    "text_end": 511,
+    "pronounce_text_begin": 455,
+    "pronounce_text_end": 471
+  },
+  {
+    "text": "为什么要做成两层？因为团队心里有一个判断：语义状态和进程生死，是两件独立的事，不能合并成一个颜色码。你不需要知道进程活着没活着才能判断任务完没完。",
+    "pronounce_text": "为什么要做成两层？因为团队心里有一个判断：语义状态和进程生死，是两件独立的事，不能合并成一个颜色码。你不需要知道进程活着没活着才能判断任务完没完。",
+    "time_begin": 87516,
+    "time_end": 101615.0022675737,
+    "text_begin": 511,
+    "text_end": 584,
+    "pronounce_text_begin": 471,
+    "pronounce_text_end": 544
+  },
+  {
+    "text": "但你需要知道点过去会不会立刻有反应。",
+    "pronounce_text": "但你需要知道点过去会不会立刻有反应。",
+    "time_begin": 101815.0022675737,
+    "time_end": 104989.01587301587,
+    "text_begin": 584,
+    "text_end": 602,
+    "pronounce_text_begin": 544,
+    "pronounce_text_end": 562
+  },
+  {
+    "text": "接着说那个行末的一句话总结。\"Edit src/physics/CollisionSystem.ts\"、\"needs input: double jump or wall climb\"——你扫一眼就懂这个 session 在干嘛。",
+    "pronounce_text": "接着说那个行末的一句话总结。\"Edit src，physics，CollisionSystem.ts\"、\"needs input:double jump or wall climb\" 你扫一眼就懂这个session在干嘛。",
+    "time_begin": 105156,
+    "time_end": 119092.46258503401,
+    "text_begin": 602,
+    "text_end": 717,
+    "pronounce_text_begin": 562,
+    "pronounce_text_end": 673
+  },
+  {
+    "text": "文档里写得非常诚实：这一行总结，是一次独立的 Haiku-class 模型调用。最多每 15 秒刷一次，外加每个 turn 结束的时候再刷一次。",
+    "pronounce_text": "文档里写得非常诚实：这一行总结，是一次独立的Haiku-class模型调用。最多每十五秒刷一次，外加每个turn结束的时候再刷一次。",
+    "time_begin": 119232,
+    "time_end": 131206.37641723355,
+    "text_begin": 717,
+    "text_end": 789,
+    "pronounce_text_begin": 673,
+    "pronounce_text_end": 739
+  },
+  {
+    "text": "走的是你自己的 provider，按 data usage terms 走和 session 同一份账。",
+    "pronounce_text": "走的是你自己的provider，按data usage terms走和session同一份账。",
+    "time_begin": 131406.37641723355,
+    "time_end": 136588.91609977325,
+    "text_begin": 789,
+    "text_end": 841,
+    "pronounce_text_begin": 739,
+    "pronounce_text_end": 786
+  },
+  {
+    "text": "这条信息我读到的时候停了一下。它意味着团队做了一个选择：为了让你\"扫一眼就懂\"这个体验，他们愿意让你为额外的小模型调用付钱。不是 Anthropic 偷偷给你的免费 UX 糖，是明确进了你的配额。",
+    "pronounce_text": "这条信息我读到的时候停了一下。它意味着团队做了一个选择：为了让你\"扫一眼就懂\"这个体验，他们愿意让你为额外的小模型调用付钱。不是Anthropic偷偷给你的免费UX糖，是明确进了你的配额。",
+    "time_begin": 136728,
+    "time_end": 153520.51700680272,
+    "text_begin": 841,
+    "text_end": 939,
+    "pronounce_text_begin": 786,
+    "pronounce_text_end": 880
+  },
+  {
+    "text": "你如果同时开 10 个 session，背景就是 10 路独立计费的 Haiku 在那儿循环跑。每 15 秒一刷。",
+    "pronounce_text": "你如果同时开十个session，背景就是十路独立计费的Haiku在那儿循环跑。每十五秒一刷。",
+    "time_begin": 153684,
+    "time_end": 161641.32426303855,
+    "text_begin": 939,
+    "text_end": 996,
+    "pronounce_text_begin": 880,
+    "pronounce_text_end": 926
+  },
+  {
+    "text": "这个选择我觉得反而是真诚的。如果不刷新，你就得 peek 进每个 session 看；如果刷得太快，账单受不了。",
+    "pronounce_text": "这个选择我觉得反而是真诚的。如果不刷新，你就得peek进每个session看;如果刷得太快，账单受不了。",
+    "time_begin": 161784,
+    "time_end": 170298.60317460317,
+    "text_begin": 996,
+    "text_end": 1052,
+    "pronounce_text_begin": 926,
+    "pronounce_text_end": 978
+  },
+  {
+    "text": "15 秒这个数字大概就是他们权衡出来的最低节流——既不会让你感觉行总结过时，又不会让 Haiku 账单爆炸。",
+    "pronounce_text": "十五秒这个数字大概就是他们权衡出来的最低节流既不会让你感觉行总结过时，又不会让Haiku账单爆炸。",
+    "time_begin": 170460,
+    "time_end": 179613.15192743763,
+    "text_begin": 1052,
+    "text_end": 1106,
+    "pronounce_text_begin": 978,
+    "pronounce_text_end": 1027
+  },
+  {
+    "text": "往下读到 hosting 这一段，整篇文档的架构判断就浮出来了。",
+    "pronounce_text": "往下读到hosting这一段，整篇文档的架构判断就浮出来了。",
+    "time_begin": 179784,
+    "time_end": 184757.56009070296,
+    "text_begin": 1106,
+    "text_end": 1138,
+    "pronounce_text_begin": 1027,
+    "pronounce_text_end": 1057
+  },
+  {
+    "text": "Background session 不挂任何终端。它由一个 per-user 的 supervisor 进程托管。你关掉 agent view，关掉 shell，session 照常跑。",
+    "pronounce_text": "Background session不挂任何终端。它由一个per-user的supervisor进程托管。你关掉agent view，关掉shell，session照常跑。",
+    "time_begin": 184896,
+    "time_end": 193875.0022675737,
+    "text_begin": 1138,
+    "text_end": 1232,
+    "pronounce_text_begin": 1057,
+    "pronounce_text_end": 1143
+  },
+  {
+    "text": "更狠的一条：supervisor 会盯着磁盘上的 Claude Code 二进制文件，auto-updater 一替换，supervisor 就 restart into the new version。这不是网络检查，是本地文件 watch。",
+    "pronounce_text": "更狠的一条：supervisor会盯着磁盘上的Claude Code二进制文件，auto-updater一替换，supervisor就restart into the new version。这不是网络检查，是本地文件watch。",
+    "time_begin": 194040,
+    "time_end": 207848.75283446713,
+    "text_begin": 1232,
+    "text_end": 1354,
+    "pronounce_text_begin": 1143,
+    "pronounce_text_end": 1258
+  },
+  {
+    "text": "这条意味着什么？意味着 background session 必须设计成可以被无感重启的对象。状态全部存在 `~/.claude/jobs/<id>/state.json`、`daemon/roster.json` 这些文件里。",
+    "pronounce_text": "这条意味着什么？意味着background session必须设计成可以被无感重启的对象。状态全部存在，.claude，jobs，小于id大于，state.json、daemon，roster.json，这些文件里。",
+    "time_begin": 208008,
+    "time_end": 224928.22675736962,
+    "text_begin": 1354,
+    "text_end": 1468,
+    "pronounce_text_begin": 1258,
+    "pronounce_text_end": 1366
+  },
+  {
+    "text": "supervisor 死了，下一个 supervisor 起来，照样能把所有 session 接回去。",
+    "pronounce_text": "supervisor死了，下一个supervisor起来，照样能把所有session接回去。",
+    "time_begin": 225072,
+    "time_end": 230556.39909297053,
+    "text_begin": 1468,
+    "text_end": 1519,
+    "pronounce_text_begin": 1366,
+    "pronounce_text_end": 1412
+  },
+  {
+    "text": "session 不是\"长跑的进程\"，是\"随时可以被 cold-start 的对象\"。",
+    "pronounce_text": "session不是\"长跑的进程\"，是\"随时可以被cold-start的对象\"。",
+    "time_begin": 230724,
+    "time_end": 235871.7097505669,
+    "text_begin": 1519,
+    "text_end": 1561,
+    "pronounce_text_begin": 1412,
+    "pronounce_text_end": 1451
+  },
+  {
+    "text": "这跟我们平时对 agent 的理解是反过来的。我们以为 agent 跑起来就是一个活着的进程，关掉了就没了。Claude Code 的设计是：进程是临时的，对象是永久的。",
+    "pronounce_text": "这跟我们平时对agent的理解是反过来的。我们以为agent跑起来就是一个活着的进程，关掉了就没了。Claude Code的设计是：进程是临时的，对象是永久的。",
+    "time_begin": 236016,
+    "time_end": 248837.90476190476,
+    "text_begin": 1561,
+    "text_end": 1646,
+    "pronounce_text_begin": 1451,
+    "pronounce_text_end": 1531
+  },
+  {
+    "text": "空闲一小时左右，supervisor 会主动把进程杀掉释放资源。你下次 peek 或者 attach 的时候，从磁盘上的 state 重启一个新进程出来。",
+    "pronounce_text": "空闲一小时左右，supervisor会主动把进程杀掉释放资源。你下次peek或者attach的时候，从磁盘上的state重启一个新进程出来。",
+    "time_begin": 248976,
+    "time_end": 260172.50793650793,
+    "text_begin": 1646,
+    "text_end": 1723,
+    "pronounce_text_begin": 1531,
+    "pronounce_text_end": 1601
+  },
+  {
+    "text": "所以 docs 里那条 `claude respawn --all` 才有意义——机器睡眠或者关机之后，所有 session 需要批量重启。supervisor 能跨 auto-update 幸存，但跨不了机器重启。",
+    "pronounce_text": "所以docs里那条，claude respawn，-all，才有意义机器睡眠或者关机之后，所有session需要批量重启。supervisor能跨auto-update幸存，但跨不了机器重启。",
+    "time_begin": 260316,
+    "time_end": 275146.43083900225,
+    "text_begin": 1723,
+    "text_end": 1831,
+    "pronounce_text_begin": 1601,
+    "pronounce_text_end": 1697
+  },
+  {
+    "text": "这是把 session 当系统对象，不当终端 tab。tab 关了就没了，对象关了还在磁盘上。",
+    "pronounce_text": "这是把session当系统对象，不当终端tab。tab关了就没了，对象关了还在磁盘上。",
+    "time_begin": 275292,
+    "time_end": 282993.90476190473,
+    "text_begin": 1831,
+    "text_end": 1878,
+    "pronounce_text_begin": 1697,
+    "pronounce_text_end": 1740
+  },
+  {
+    "text": "agent view 底部就一个输入框。你打字按回车，是派一个新 session。",
+    "pronounce_text": "agent view底部就一个输入框。你打字按回车，是派一个新session。",
+    "time_begin": 283140,
+    "time_end": 289344.21768707485,
+    "text_begin": 1878,
+    "text_end": 1919,
+    "pronounce_text_begin": 1740,
+    "pronounce_text_end": 1779
+  },
+  {
+    "text": "但你打 `a:foo`，是按 agent 名字过滤；打 `s:blocked`，是只看等你输入的 session；打 `#1234` 或者贴一个 PR URL，",
+    "pronounce_text": "但你打，a:foo，是按agent名字过滤;打，s:blocked，是只看等你输入的session; 打，井号一二三四，或者贴一个PR URL，",
+    "time_begin": 289512,
+    "time_end": 305491.8185941043,
+    "text_begin": 1919,
+    "text_end": 1999,
+    "pronounce_text_begin": 1779,
+    "pronounce_text_end": 1851
+  },
+  {
+    "text": "是跳到正在做这个 PR 的 session。",
+    "pronounce_text": "是跳到正在做这个PR的session。",
+    "time_begin": 305691.8185941043,
+    "time_end": 308575.5827664399,
+    "text_begin": 1999,
+    "text_end": 2021,
+    "pronounce_text_begin": 1851,
+    "pronounce_text_end": 1870
+  },
+  {
+    "text": "一个输入框，根据语法前缀切换语义。",
+    "pronounce_text": "一个输入框，根据语法前缀切换语义。",
+    "time_begin": 308736,
+    "time_end": 312467.2925170068,
+    "text_begin": 2021,
+    "text_end": 2038,
+    "pronounce_text_begin": 1870,
+    "pronounce_text_end": 1887
+  },
+  {
+    "text": "这种\"上下文相关解释\"的设计有它的代价。代价是你要记住几个前缀规则——`a:` 是 agent，`s:` 是 state，`#` 是 PR。",
+    "pronounce_text": "这种\"上下文相关解释\"的设计有它的代价。代价是你要记住几个前缀规则，a:，是agent，s:，是state，是PR。",
+    "time_begin": 312624,
+    "time_end": 324203.63718820864,
+    "text_begin": 2038,
+    "text_end": 2108,
+    "pronounce_text_begin": 1887,
+    "pronounce_text_end": 1945
+  },
+  {
+    "text": "但团队选了这条路而不是再开一行搜索框，原因很明显：屏幕空间。agent view 已经被状态分组、PR 状态点、行总结塞得很满了，再加一行 filter input 体验就糟了。",
+    "pronounce_text": "但团队选了这条路而不是再开一行搜索框，原因很明显：屏幕空间。agent view已经被状态分组、PR状态点、行总结塞得很满了，再加一行filter input体验就糟了。",
+    "time_begin": 324360,
+    "time_end": 338842.1315192744,
+    "text_begin": 2108,
+    "text_end": 2197,
+    "pronounce_text_begin": 1945,
+    "pronounce_text_end": 2030
+  },
+  {
+    "text": "省下来的不是按键，是屏幕预算。",
+    "pronounce_text": "省下来的不是按键，是屏幕预算。",
+    "time_begin": 339012,
+    "time_end": 342151.1836734694,
+    "text_begin": 2197,
+    "text_end": 2212,
+    "pronounce_text_begin": 2030,
+    "pronounce_text_end": 2045
+  },
+  {
+    "text": "这条我读 docs 的时候差点漏掉，但它是整个设计的关键证据。",
+    "pronounce_text": "这条我读docs的时候差点漏掉，但它是整个设计的关键证据。",
+    "time_begin": 342288,
+    "time_end": 347435.70975056686,
+    "text_begin": 2212,
+    "text_end": 2243,
+    "pronounce_text_begin": 2045,
+    "pronounce_text_end": 2074
+  },
+  {
+    "text": "文档里专门写了一句：\"Typing another prompt and pressing Enter launches a second session alongside the first rather than sending a follow-up to it.\"",
+    "pronounce_text": "文档里专门写了一句：\"Typing another prompt and pressing Enter launches a second session alongside the first rather than sending a follow-up to it. \"",
+    "time_begin": 347580,
+    "time_end": 356396.462585034,
+    "text_begin": 2243,
+    "text_end": 2380,
+    "pronounce_text_begin": 2074,
+    "pronounce_text_end": 2212
+  },
+  {
+    "text": "翻译成大白话：你在底部输入框打一句话回车，不是给已有 session 继续发消息，是开一个全新的 session。",
+    "pronounce_text": "翻译成大白话：你在底部输入框打一句话回车，不是给已有session继续发消息，是开一个全新的session。",
+    "time_begin": 356544,
+    "time_end": 365012.1632653061,
+    "text_begin": 2380,
+    "text_end": 2437,
+    "pronounce_text_begin": 2212,
+    "pronounce_text_end": 2266
+  },
+  {
+    "text": "为什么要专门写一句？因为这反直觉。你看着 agent view 这个界面，本能反应就是把它当聊天室，回车继续对话。团队心里清楚这是反直觉的，所以特地用一整句话警告你。",
+    "pronounce_text": "为什么要专门写一句？因为这反直觉。你看着agent view这个界面，本能反应就是把它当聊天室，回车继续对话。团队心里清楚这是反直觉的，所以特地用一整句话警告你。",
+    "time_begin": 365184,
+    "time_end": 380525.2698412698,
+    "text_begin": 2437,
+    "text_end": 2520,
+    "pronounce_text_begin": 2266,
+    "pronounce_text_end": 2347
+  },
+  {
+    "text": "你想给已有 session 加 instruction，只能 peek 进去或者 attach 进去。底部那个输入框只做两件事：派新 session 或者筛选。",
+    "pronounce_text": "你想给已有session加instruction，只能peek进去或者attach进去。底部那个输入框只做两件事：派新session或者筛选。",
+    "time_begin": 380664,
+    "time_end": 390757.56009070296,
+    "text_begin": 2520,
+    "text_end": 2600,
+    "pronounce_text_begin": 2347,
+    "pronounce_text_end": 2418
+  },
+  {
+    "text": "这条限制说明什么？说明在团队的心智模型里，session 不是一个对话窗，是一个对象。对象创建出来就是独立的，不会因为你长得像它就被合并进去。",
+    "pronounce_text": "这条限制说明什么？说明在团队的心智模型里，session不是一个对话窗，是一个对象。对象创建出来就是独立的，不会因为你长得像它就被合并进去。",
+    "time_begin": 390924,
+    "time_end": 403153.79591836734,
+    "text_begin": 2600,
+    "text_end": 2671,
+    "pronounce_text_begin": 2418,
+    "pronounce_text_end": 2488
+  },
+  {
+    "text": "每个 prompt 等于一个新对象、独立的订阅配额、独立的 worktree、独立的进程生命周期。",
+    "pronounce_text": "每个prompt等于一个新对象、独立的订阅配额、独立的worktree、独立的进程生命周期。",
+    "time_begin": 403308,
+    "time_end": 410626.7755102041,
+    "text_begin": 2671,
+    "text_end": 2720,
+    "pronounce_text_begin": 2488,
+    "pronounce_text_end": 2534
+  },
+  {
+    "text": "讲爽点必须讲代价。这几个设计的账单、风险，文档里都写了，我挑三条最该提醒你的。",
+    "pronounce_text": "讲爽点必须讲代价。这几个设计的账单、风险，文档里都写了，我挑三条最该提醒你的。",
+    "time_begin": 410796,
+    "time_end": 419182.8934240363,
+    "text_begin": 2720,
+    "text_end": 2759,
+    "pronounce_text_begin": 2534,
+    "pronounce_text_end": 2573
+  },
+  {
+    "text": "第一，并发派单的真实瓶颈不是你的机器，是你的订阅配额。docs 在 quick start 第二步就写了：\"Each session uses your subscription quota independently\"。",
+    "pronounce_text": "第一，并发派单的真实瓶颈不是你的机器，是你的订阅配额。docs在quick start第二步就写了：\"Each session uses your subscription quota independently\"。",
+    "time_begin": 419328,
+    "time_end": 431174.6666666667,
+    "text_begin": 2759,
+    "text_end": 2870,
+    "pronounce_text_begin": 2573,
+    "pronounce_text_end": 2681
+  },
+  {
+    "text": "10 个并发 session = 10 份配额在烧，外加 10 路 Haiku 行总结在背景刷。",
+    "pronounce_text": "十个并发session等于十份配额在烧，外加十路Haiku行总结在背景刷。",
+    "time_begin": 431316,
+    "time_end": 437613.09750566893,
+    "text_begin": 2870,
+    "text_end": 2918,
+    "pronounce_text_begin": 2681,
+    "pronounce_text_end": 2718
+  },
+  {
+    "text": "第二，删除 session 等于删除 worktree。`Ctrl+X` 按一次停，两秒内再按一次就删。worktree 里没 commit 的改动全部丢掉。",
+    "pronounce_text": "第二，删除session等于删除worktree。Ctrl加X，按一次停，两秒内再按一次就删。worktree里没commit的改动全部丢掉。",
+    "time_begin": 437760,
+    "time_end": 449687.9365079365,
+    "text_begin": 2918,
+    "text_end": 2997,
+    "pronounce_text_begin": 2718,
+    "pronounce_text_end": 2789
+  },
+  {
+    "text": "docs 反复强调 push or commit before delete——这是 worktree 隔离的副作用，便利和危险绑在同一个键上。",
+    "pronounce_text": "docs反复强调push or commit before delete这是worktree隔离的副作用，便利和危险绑在同一个键上。",
+    "time_begin": 449856,
+    "time_end": 457685.61451247166,
+    "text_begin": 2997,
+    "text_end": 3069,
+    "pronounce_text_begin": 2789,
+    "pronounce_text_end": 2855
+  },
+  {
+    "text": "第三，supervisor 这套架构虽然解决了 session 持久化的问题，但排错路径变长了。",
+    "pronounce_text": "第三，supervisor这套架构虽然解决了session持久化的问题，但排错路径变长了。",
+    "time_begin": 457848,
+    "time_end": 465039.06575963716,
+    "text_begin": 3069,
+    "text_end": 3117,
+    "pronounce_text_begin": 2855,
+    "pronounce_text_end": 2900
+  },
+  {
+    "text": "状态散在三个地方：`~/.claude/daemon.log`、`daemon/roster.json`、`jobs/<id>/state.json`。不是一个文件能看全。一旦出问题，你得知道去哪儿翻日志。",
+    "pronounce_text": "状态散在三个地方：.claude，daemon.log、daemon，roster.json、jobs，小于id大于，state.json。不是一个文件能看全。一旦出问题，你得知道去哪儿翻日志。",
+    "time_begin": 465192,
+    "time_end": 480788.6893424036,
+    "text_begin": 3117,
+    "text_end": 3220,
+    "pronounce_text_begin": 2900,
+    "pronounce_text_end": 2997
+  },
+  {
+    "text": "读完整份 docs，我最大的感受是：这不是一个 TUI，是一个会话管理系统。",
+    "pronounce_text": "读完整份docs，我最大的感受是：这不是一个TUI，是一个会话管理系统。",
+    "time_begin": 480960,
+    "time_end": 488452.92517006805,
+    "text_begin": 3220,
+    "text_end": 3258,
+    "pronounce_text_begin": 2997,
+    "pronounce_text_end": 3033
+  },
+  {
+    "text": "颜色告诉你 session 在想什么，形状告诉你它还活不活着。supervisor 把进程和终端剥离，session 因此变成了磁盘上的对象，可以被无感重启、被批量恢复、被跨项目可见。",
+    "pronounce_text": "颜色告诉你session在想什么，形状告诉你它还活不活着。supervisor把进程和终端剥离，session因此变成了磁盘上的对象，可以被无感重启、被批量恢复、被跨项目可见。",
+    "time_begin": 488592,
+    "time_end": 503852,
+    "text_begin": 3258,
+    "text_end": 3350,
+    "pronounce_text_begin": 3033,
+    "pronounce_text_end": 3121
+  },
+  {
+    "text": "底部输入框被压成两个角色，省屏幕不省语义。每个 prompt 都是新对象，回车不是 follow-up，是 instantiation。",
+    "pronounce_text": "底部输入框被压成两个角色，省屏幕不省语义。每个prompt都是新对象，回车不是follow-up，是instantiation。",
+    "time_begin": 504000,
+    "time_end": 514174.8299319728,
+    "text_begin": 3350,
+    "text_end": 3418,
+    "pronounce_text_begin": 3121,
+    "pronounce_text_end": 3185
+  },
+  {
+    "text": "这些选择放在一起看，团队在做的事情很明确：把 session 从终端 tab 提升成系统里的一类对象。tab 是 UI 概念，对象是架构概念。",
+    "pronounce_text": "这些选择放在一起看，团队在做的事情很明确：把session从终端tab提升成系统里的一类对象。tab是UI概念，对象是架构概念。",
+    "time_begin": 514332,
+    "time_end": 526770.775510204,
+    "text_begin": 3418,
+    "text_end": 3489,
+    "pronounce_text_begin": 3185,
+    "pronounce_text_end": 3249
+  },
+  {
+    "text": "从 tab 到对象，中间隔的是 supervisor 这个常驻进程、是 state.json 这种持久化合约、是双层 indicator 这种维度拆分。",
+    "pronounce_text": "从tab到对象，中间隔的是supervisor这个常驻进程、是state.json这种持久化合约、是双层indicator这种维度拆分。",
+    "time_begin": 526932,
+    "time_end": 536642.4308390022,
+    "text_begin": 3489,
+    "text_end": 3565,
+    "pronounce_text_begin": 3249,
+    "pronounce_text_end": 3317
+  },
+  {
+    "text": "Agent view 表面上是给你看 session 在干嘛，本质上是把 session 从终端里抽出来，变成可以被管理的对象。",
+    "pronounce_text": "Agent view表面上是给你看session在干嘛，本质上是把session从终端里抽出来，变成可以被管理的对象。",
+    "time_begin": 536796,
+    "time_end": 545229.3333333334,
+    "text_begin": 3565,
+    "text_end": 3629,
+    "pronounce_text_begin": 3317,
+    "pronounce_text_end": 3376
+  },
+  {
+    "text": "下次你打开 `claude agents`，别只看那张表，看看那个 `✻` 还是 `∙`，想想 supervisor 此刻在不在听磁盘上的二进制。",
+    "pronounce_text": "下次你打开，claude agents，别只看那张表，看看那个，还是，∙，想想supervisor此刻在不在听磁盘上的二进制。",
+    "time_begin": 545400,
+    "time_end": 555830.2494331066,
+    "text_begin": 3629,
+    "text_end": 3702,
+    "pronounce_text_begin": 3376,
+    "pronounce_text_end": 3439
+  },
+  {
+    "text": "这份 docs 真正告诉你的，不是怎么用 agent view，是 Anthropic 怎么想 session 这件事。",
+    "pronounce_text": "这份docs真正告诉你的，不是怎么用agent view，是Anthropic怎么想session这件事。",
+    "time_begin": 555984,
+    "time_end": 562873.2063492064,
+    "text_begin": 3702,
+    "text_end": 3762,
+    "pronounce_text_begin": 3439,
+    "pronounce_text_end": 3492
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 563040,
+    "time_end": 568524.3990929705,
+    "text_begin": 3762,
+    "text_end": 3789,
+    "pronounce_text_begin": 3492,
+    "pronounce_text_end": 3518
+  }
+]

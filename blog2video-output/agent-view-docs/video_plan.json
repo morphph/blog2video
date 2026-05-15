@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Manage multiple agents with agent view",
+    "title_zh": "Claude Code 把 session 当进程管，不当 tab",
+    "word_count": 1860,
+    "slug": "agent-view-docs"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "~9.3 分钟，9 段 single-thesis 论证（agent view 是会话管理系统，不是 TUI）。线性递进，不分集。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude Code 把 session 当进程管，不当 tab"
+      }
+    ]
+  }
+}

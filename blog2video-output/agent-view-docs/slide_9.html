@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(16, 185, 129, 0.18), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.22), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .title .g { color: #10B981; }
+    .cmd-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .cmd-box .cmd {
+      font-family: 'SF Mono', Consolas, monospace;
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 6px;
+    }
+    .cmd-box .desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .check {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .ck {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 14px;
+      text-align: center;
+    }
+    .ck.p {
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-left: 4px solid #8B5CF6;
+    }
+    .ck.b {
+      border: 1px solid rgba(59, 130, 246, 0.5);
+      border-left: 4px solid #3B82F6;
+    }
+    .ck .mark {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-family: 'SF Mono', Consolas, monospace;
+    }
+    .ck.p .mark { color: #8B5CF6; }
+    .ck.b .mark { color: #3B82F6; }
+    .ck .d {
+      font-size: 19px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .ck .d .em { color: #F59E0B; font-weight: 800; }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      border-left: 4px solid #10B981;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .verdict .text .em { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">下次打开 AGENT VIEW</div>
+    <div class="title">看的不是<span class="g">表，是</span>对象</div>
+    <div class="cmd-box">
+      <div class="cmd">claude agents</div>
+      <div class="desc">每行前面那个小符号，背后是 supervisor</div>
+    </div>
+    <div class="check">
+      <div class="ck p">
+        <div class="mark">✻ / ∙</div>
+        <div class="d">进程<span class="em">活没活</span></div>
+      </div>
+      <div class="ck b">
+        <div class="mark">▢</div>
+        <div class="d">supervisor 在<span class="em">听磁盘</span></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="label">这份 DOCS 真正告诉你的</div>
+      <div class="text">
+        不是怎么用 agent view<br>
+        是 Anthropic 怎么<span class="em">想 session</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

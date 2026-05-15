@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(139, 92, 246, 0.22), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.16), transparent 55%),
+        #0D0D1A;
+    }
+    .tag {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .title .p { color: #8B5CF6; }
+    .flow {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      width: 100%;
+      max-width: 920px;
+      margin-bottom: 24px;
+    }
+    .node {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 22px 12px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .node.dead {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .node.live {
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-left: 4px solid #8B5CF6;
+    }
+    .node.disk {
+      border: 1px solid rgba(59, 130, 246, 0.5);
+      border-left: 4px solid #3B82F6;
+    }
+    .node .mark {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-family: 'SF Mono', Consolas, monospace;
+    }
+    .node.dead .mark { color: #EF4444; }
+    .node.live .mark { color: #8B5CF6; }
+    .node.disk .mark { color: #3B82F6; }
+    .node .name {
+      font-size: 20px;
+      color: #FFFFFF;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+    .node .sub {
+      font-size: 15px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: #8B5CF6;
+      font-weight: 900;
+      padding: 0 2px;
+    }
+    .cmd-box {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 14px;
+      padding: 24px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .cmd-box .cmd {
+      font-family: 'SF Mono', Consolas, monospace;
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    .cmd-box .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 14px;
+      padding: 22px 28px;
+      max-width: 920px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict .label {
+      font-size: 22px;
+      color: #F59E0B;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .verdict .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .verdict .text .em { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="tag">SESSION 是磁盘上的对象</div>
+    <div class="title">进程<span class="p">临时</span>，对象<span class="p">永久</span></div>
+    <div class="flow">
+      <div class="node dead">
+        <div class="mark">×</div>
+        <div class="name">terminal</div>
+        <div class="sub">关掉</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="node live">
+        <div class="mark">✓</div>
+        <div class="name">supervisor</div>
+        <div class="sub">per-user 常驻</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="node disk">
+        <div class="mark">▢</div>
+        <div class="name">state.json</div>
+        <div class="sub">磁盘上的对象</div>
+      </div>
+    </div>
+    <div class="cmd-box">
+      <div class="cmd">claude respawn --all</div>
+      <div class="desc">机器重启之后，批量恢复所有 session</div>
+    </div>
+    <div class="verdict">
+      <div class="label">设计赌注</div>
+      <div class="text">
+        session 必须能被<span class="em">无感重启</span><br>
+        所以状态全写进文件
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "topic": "AI 输出像 AI 写的？你的 context 是空的",
+  "blog_url": "https://x.com/eng_khairallah1/status/2053405155630936297",
+  "source": "eng_khairallah1-2053405155630936297",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

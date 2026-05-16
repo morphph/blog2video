@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .title .amber { color: #F59E0B; }
+    .doc-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 36px 32px;
+      width: 100%;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+    .doc-card .icon {
+      font-size: 64px;
+      margin-bottom: 18px;
+      color: #8B5CF6;
+    }
+    .doc-card .head {
+      font-size: 32px;
+      font-weight: 900;
+      color: #8B5CF6;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .doc-card .rows {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .doc-card .row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 26px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .doc-card .row .dot {
+      width: 10px;
+      height: 10px;
+      background: #8B5CF6;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .doc-card .row .key {
+      color: #B0B0CC;
+      min-width: 200px;
+    }
+    .doc-card .row .val { color: #FFFFFF; }
+    .tag {
+      padding: 20px 28px;
+      background: #1A1A30;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 12px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .tag .red { color: #EF4444; }
+    .tag .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1 class="title">管理代价 — <span class="amber">把 Skill 当员工管</span></h1>
+    <div class="doc-card">
+      <div class="icon">▤</div>
+      <div class="head">MASTER DOCUMENT · 主文档</div>
+      <div class="rows">
+        <div class="row"><span class="dot"></span><span class="key">所有 Skill 清单</span><span class="val">名字 · 用途 · 触发短语</span></div>
+        <div class="row"><span class="dot"></span><span class="key">当前状态</span><span class="val">draft / production / deprecated</span></div>
+        <div class="row"><span class="dot"></span><span class="key">上次 refine</span><span class="val">日期 · 改了什么</span></div>
+      </div>
+    </div>
+    <div class="tag">这不是<span class="red">装完即用的魔法</span>，是一个新的工作方式<br>需要<span class="amber">纪律</span> · 需要<span class="amber">每周五雷打不动的 review</span></div>
+  </div>
+</body>
+</html>

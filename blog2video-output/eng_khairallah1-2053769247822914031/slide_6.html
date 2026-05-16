@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 50px;
+    }
+    .title .green { color: #10B981; }
+    .progress {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .step {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 28px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 24px;
+    }
+    .step.gray { border: 1px solid rgba(107, 114, 128, 0.4); border-left: 4px solid #6B7280; }
+    .step.green { border: 1px solid rgba(16, 185, 129, 0.4); border-left: 4px solid #10B981; }
+    .step.gold { border: 1px solid rgba(245, 158, 11, 0.4); border-left: 4px solid #F59E0B; }
+    .step .score {
+      font-size: 64px;
+      font-weight: 900;
+      min-width: 160px;
+      line-height: 1;
+    }
+    .step.gray .score { color: #6B7280; }
+    .step.green .score { color: #10B981; }
+    .step.gold .score { color: #F59E0B; font-size: 44px; }
+    .step .label {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .step .label .sub {
+      display: block;
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+    .arrow-down {
+      text-align: center;
+      color: rgba(139, 92, 246, 0.5);
+      font-size: 28px;
+      margin: -8px 0;
+    }
+    .tag {
+      padding: 18px 32px;
+      background: #1A1A30;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 12px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .tag .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1 class="title">Refine 循环 = <span class="green">production-grade 硬门槛</span></h1>
+    <div class="progress">
+      <div class="step gray">
+        <div class="score">70 分</div>
+        <div class="label">写完 SKILL.md<span class="sub">第一稿 · 大概知道</span></div>
+      </div>
+      <div class="step green">
+        <div class="score">PROD</div>
+        <div class="label">跑过三场景<span class="sub">production-grade gate</span></div>
+      </div>
+      <div class="step gold">
+        <div class="score">≈ 人类专家</div>
+        <div class="label">每周 refine 一个月<span class="sub">indistinguishable from a trained pro</span></div>
+      </div>
+    </div>
+    <div class="tag">Skill 的价值不在写出来 · <span class="amber">在迭代到第四周</span></div>
+  </div>
+</body>
+</html>

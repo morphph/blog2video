@@ -1,0 +1,542 @@
+[
+  {
+    "text": "Khairallah AL-Awady 在 X 上发了一篇关于 Claude Skills 的长文，到现在 130 万阅读。",
+    "pronounce_text": "Khairallah AL-Awady在X上发了一篇关于Claude Skills的长文，到现在一百三十万阅读。",
+    "time_begin": 0,
+    "time_end": 8723.58276643991,
+    "text_begin": 0,
+    "text_end": 62,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 56
+  },
+  {
+    "text": "我读完最大的感受不是\"原来 Skill 这么有用\"——是\"原来过去半年我一直在用错\"。",
+    "pronounce_text": "我读完最大的感受不是\"原来Skill这么有用\"。是\"原来过去半年我一直在用错\"。",
+    "time_begin": 8923.58276643991,
+    "time_end": 17182.766439909297,
+    "text_begin": 62,
+    "text_end": 105,
+    "pronounce_text_begin": 56,
+    "pronounce_text_end": 96
+  },
+  {
+    "text": "今天不聊怎么装、也不挨个走流程——只聊两个让我重新理解 Skill 的认知点，外加一个能直接用的动作。",
+    "pronounce_text": "今天不聊怎么装、也不挨个走流程只聊两个让我重新理解Skill的认知点，外加一个能直接用的动作。",
+    "time_begin": 17352,
+    "time_end": 24717.215419501135,
+    "text_begin": 105,
+    "text_end": 156,
+    "pronounce_text_begin": 96,
+    "pronounce_text_end": 143
+  },
+  {
+    "text": "先讲第一个 reframe，也是整篇文章里最颠覆我的一句话。",
+    "pronounce_text": "先讲第一个reframe，也是整篇文章里最颠覆我的一句话。",
+    "time_begin": 24876,
+    "time_end": 29373.551020408162,
+    "text_begin": 156,
+    "text_end": 186,
+    "pronounce_text_begin": 143,
+    "pronounce_text_end": 172
+  },
+  {
+    "text": "大多数人第一次听说 Skill，反应都差不多——\"哦，就是把 prompt 存下来嘛\"。我之前也这么想。",
+    "pronounce_text": "大多数人第一次听说Skill，反应都差不多\"哦，就是把prompt存下来嘛\"。我之前也这么想。",
+    "time_begin": 29520,
+    "time_end": 37430.884353741494,
+    "text_begin": 186,
+    "text_end": 238,
+    "pronounce_text_begin": 172,
+    "pronounce_text_end": 219
+  },
+  {
+    "text": "不是的。",
+    "pronounce_text": "不是的。",
+    "time_begin": 37584,
+    "time_end": 38412.79818594104,
+    "text_begin": 238,
+    "text_end": 242,
+    "pronounce_text_begin": 219,
+    "pronounce_text_end": 223
+  },
+  {
+    "text": "saved prompt 是一次对话的起点。它告诉模型\"你可以从这里开始聊\"。",
+    "pronounce_text": "saved prompt是一次对话的起点。它告诉模型\"你可以从这里开始聊\"。",
+    "time_begin": 38556,
+    "time_end": 44887.92743764172,
+    "text_begin": 242,
+    "text_end": 281,
+    "pronounce_text_begin": 223,
+    "pronounce_text_end": 261
+  },
+  {
+    "text": "但 Skill 给的是完全不同的东西——它告诉模型\"这件事从头到尾该怎么做，好的输出长什么样，出问题怎么处理，要用哪些工具，最后怎么交付\"。",
+    "pronounce_text": "但Skill给的是完全不同的东西它告诉模型\"这件事从头到尾该怎么做，好的输出长什么样，出问题怎么处理，要用哪些工具，最后怎么交付\"。",
+    "time_begin": 45036,
+    "time_end": 57300.62585034013,
+    "text_begin": 281,
+    "text_end": 351,
+    "pronounce_text_begin": 261,
+    "pronounce_text_end": 327
+  },
+  {
+    "text": "你品一下这两句话的差距。一个是对话开场白，一个是完整的作业 SOP。",
+    "pronounce_text": "你品一下这两句话的差距。一个是对话开场白，一个是完整的作业SOP。",
+    "time_begin": 57456,
+    "time_end": 64774.77551020408,
+    "text_begin": 351,
+    "text_end": 385,
+    "pronounce_text_begin": 327,
+    "pronounce_text_end": 360
+  },
+  {
+    "text": "这就是为什么作者一直用\"员工\"这个词。saved prompt 像随手交代一句话，员工怎么理解全看悟性。Skill 像入职培训手册，谁来都能按这个流程跑出一致的结果。",
+    "pronounce_text": "这就是为什么作者一直用\"员工\"这个词。saved prompt像随手交代一句话，员工怎么理解全看悟性。Skill像入职培训手册，谁来都能按这个流程跑出一致的结果。",
+    "time_begin": 64944,
+    "time_end": 79298.42176870749,
+    "text_begin": 385,
+    "text_end": 468,
+    "pronounce_text_begin": 360,
+    "pronounce_text_end": 441
+  },
+  {
+    "text": "所以我说\"员工\"不是修辞，是工作方法。",
+    "pronounce_text": "所以我说\"员工\"不是修辞，是工作方法。",
+    "time_begin": 79452,
+    "time_end": 83740.57142857143,
+    "text_begin": 468,
+    "text_end": 487,
+    "pronounce_text_begin": 441,
+    "pronounce_text_end": 460
+  },
+  {
+    "text": "一旦你接受这个比喻，你接下来要做的事就完全变了——你要\"招人\"，就是去找别人写好的 Skill；你要\"培训\"，就是写 SKILL.md；",
+    "pronounce_text": "一旦你接受这个比喻，你接下来要做的事就完全变了你要\"招人\"，就是去找别人写好的Skill; 你要\"培训\"，就是写SKILL.md;",
+    "time_begin": 83880,
+    "time_end": 96620.63492063493,
+    "text_begin": 487,
+    "text_end": 555,
+    "pronounce_text_begin": 460,
+    "pronounce_text_end": 525
+  },
+  {
+    "text": "你要\"考核\"，就是跑测试；你要\"管理\"，",
+    "pronounce_text": "你要\"考核\"，就是跑测试;你要\"管理\"，",
+    "time_begin": 96820.63492063493,
+    "time_end": 101620.04535147392,
+    "text_begin": 555,
+    "text_end": 575,
+    "pronounce_text_begin": 525,
+    "pronounce_text_end": 545
+  },
+  {
+    "text": "就是每周迭代。",
+    "pronounce_text": "就是每周迭代。",
+    "time_begin": 101772,
+    "time_end": 102949.09750566893,
+    "text_begin": 575,
+    "text_end": 582,
+    "pronounce_text_begin": 545,
+    "pronounce_text_end": 552
+  },
+  {
+    "text": "这件事的隐含意思是——你之前每次用 Claude 都从零开始打 prompt 的工作方式，相当于公司里每来一个任务都重新面试一遍员工。听起来荒唐，但这就是大多数人现在干的事。",
+    "pronounce_text": "这件事的隐含意思是你之前每次用Claude都从零开始打prompt的工作方式，相当于公司里每来一个任务都重新面试一遍员工。听起来荒唐，但这就是大多数人现在干的事。",
+    "time_begin": 103104,
+    "time_end": 116436.74376417234,
+    "text_begin": 582,
+    "text_end": 669,
+    "pronounce_text_begin": 552,
+    "pronounce_text_end": 633
+  },
+  {
+    "text": "第二个认知冲击，来自一个简单的数字对比。",
+    "pronounce_text": "第二个认知冲击，来自一个简单的数字对比。",
+    "time_begin": 116604,
+    "time_end": 120428.1723356009,
+    "text_begin": 669,
+    "text_end": 689,
+    "pronounce_text_begin": 633,
+    "pronounce_text_end": 653
+  },
+  {
+    "text": "社区里现在有超过 8 万个 Skill，每周还在以\"thousands\"为单位增长。Anthropic 官方也已经发布了覆盖 PDF、Word、PPT、表格、设计的标准 Skill。",
+    "pronounce_text": "社区里现在有超过八万个Skill，每周还在以\"thousands\"为单位增长。Anthropic官方也已经发布了覆盖PDF、Word、PPT、表格、设计的标准Skill。",
+    "time_begin": 120600,
+    "time_end": 134954.42176870749,
+    "text_begin": 689,
+    "text_end": 780,
+    "pronounce_text_begin": 653,
+    "pronounce_text_end": 738
+  },
+  {
+    "text": "但绝大多数用户连一个都没装。",
+    "pronounce_text": "但绝大多数用户连一个都没装。",
+    "time_begin": 135108,
+    "time_end": 137562.19501133787,
+    "text_begin": 780,
+    "text_end": 794,
+    "pronounce_text_begin": 738,
+    "pronounce_text_end": 752
+  },
+  {
+    "text": "我看到这个数字的时候楞了一下。这不是某个能力还不存在、需要被发明出来——这是能力已经堆在仓库里，仓库门也开着，没人进去拿。",
+    "pronounce_text": "我看到这个数字的时候楞了一下。这不是某个能力还不存在、需要被发明出来这是能力已经堆在仓库里，仓库门也开着，没人进去拿。",
+    "time_begin": 137700,
+    "time_end": 147967.7097505669,
+    "text_begin": 794,
+    "text_end": 855,
+    "pronounce_text_begin": 752,
+    "pronounce_text_end": 811
+  },
+  {
+    "text": "为什么会这样？文章给了我一个非常锐的解释。",
+    "pronounce_text": "为什么会这样？文章给了我一个非常锐的解释。",
+    "time_begin": 148104,
+    "time_end": 151707.5827664399,
+    "text_begin": 855,
+    "text_end": 876,
+    "pronounce_text_begin": 811,
+    "pronounce_text_end": 832
+  },
+  {
+    "text": "市面上几乎所有 Claude Skills 教程，都停在\"怎么安装\"这一步。装完就结束了。原文有一句话我特意标了下来——这等于教你怎么雇人，但不教你怎么管人。",
+    "pronounce_text": "市面上几乎所有Claude Skills教程，都停在\"怎么安装\"这一步。装完就结束了。原文有一句话我特意标了下来这等于教你怎么雇人，但不教你怎么管人。",
+    "time_begin": 151848,
+    "time_end": 163950.08616780044,
+    "text_begin": 876,
+    "text_end": 955,
+    "pronounce_text_begin": 832,
+    "pronounce_text_end": 907
+  },
+  {
+    "text": "这句话戳到了 AI 工具普及里最大的一个盲点。我们花了大量时间讨论模型能力、prompt 技巧、Agent 架构，但真正的杠杆缺口——已经有人写好的标准化能力包没被 adoption——几乎没人讲。",
+    "pronounce_text": "这句话戳到了AI工具普及里最大的一个盲点。我们花了大量时间讨论模型能力、prompt技巧、Agent架构，但真正的杠杆缺口已经有人写好的标准化能力包没被adoption几乎没人讲。",
+    "time_begin": 164088,
+    "time_end": 178361.15192743763,
+    "text_begin": 955,
+    "text_end": 1054,
+    "pronounce_text_begin": 907,
+    "pronounce_text_end": 997
+  },
+  {
+    "text": "所以普通用户和高级用户的差距，可能根本不在写 prompt 的水平，而在有没有进入 Skill 生态。同样一个人，用裸 Claude 和用 30 个调好的 Skill，产出完全是两个量级。",
+    "pronounce_text": "所以普通用户和高级用户的差距，可能根本不在写prompt的水平，而在有没有进入Skill生态。同样一个人，用裸Claude和用三十个调好的Skill，产出完全是两个量级。",
+    "time_begin": 178524,
+    "time_end": 192205.04308390024,
+    "text_begin": 1054,
+    "text_end": 1148,
+    "pronounce_text_begin": 997,
+    "pronounce_text_end": 1082
+  },
+  {
+    "text": "这也是为什么这篇文章值得读——它不是又一份安装指南，它是在告诉你\"为什么 8 万个员工在外面排队你一个都没招\"。",
+    "pronounce_text": "这也是为什么这篇文章值得读它不是又一份安装指南，它是在告诉你\"为什么八万个员工在外面排队你一个都没招\"。",
+    "time_begin": 192348,
+    "time_end": 200560.74376417234,
+    "text_begin": 1148,
+    "text_end": 1204,
+    "pronounce_text_begin": 1082,
+    "pronounce_text_end": 1134
+  },
+  {
+    "text": "讲完两个 reframe，给一个可以立刻用的动作。",
+    "pronounce_text": "讲完两个reframe，给一个可以立刻用的动作。",
+    "time_begin": 200700,
+    "time_end": 204048.16326530612,
+    "text_begin": 1204,
+    "text_end": 1229,
+    "pronounce_text_begin": 1134,
+    "pronounce_text_end": 1158
+  },
+  {
+    "text": "如果你今天写了一个 Skill，恭喜你，但它大概率只值 70 分。",
+    "pronounce_text": "如果你今天写了一个Skill，恭喜你，但它大概率只值七十分。",
+    "time_begin": 204192,
+    "time_end": 209212,
+    "text_begin": 1229,
+    "text_end": 1262,
+    "pronounce_text_begin": 1158,
+    "pronounce_text_end": 1188
+  },
+  {
+    "text": "为什么这么说？因为原文给了一个非常硬的标准——一个 Skill 在跑过三个场景之前，都不算 production-grade。",
+    "pronounce_text": "为什么这么说？因为原文给了一个非常硬的标准一个Skill在跑过三个场景之前，都不算production-grade。",
+    "time_begin": 209376,
+    "time_end": 216996.6349206349,
+    "text_begin": 1262,
+    "text_end": 1325,
+    "pronounce_text_begin": 1188,
+    "pronounce_text_end": 1246
+  },
+  {
+    "text": "哪三个场景？happy path，最常见的输入，覆盖你百分之八十的用例。edge case，奇怪的输入，缺数据、格式异常、信息冲突。",
+    "pronounce_text": "哪三个场景？happy path，最常见的输入，覆盖你百分之八十的用例。edge case，奇怪的输入，缺数据、格式异常、信息冲突。",
+    "time_begin": 217152,
+    "time_end": 229718.48526077098,
+    "text_begin": 1325,
+    "text_end": 1391,
+    "pronounce_text_begin": 1246,
+    "pronounce_text_end": 1312
+  },
+  {
+    "text": "stress test，最大最乱最复杂的版本，看这个 Skill 在极限情况下会不会崩。",
+    "pronounce_text": "stress test，最大最乱最复杂的版本，看这个Skill在极限情况下会不会崩。",
+    "time_begin": 229918.48526077098,
+    "time_end": 237411.410430839,
+    "text_begin": 1391,
+    "text_end": 1435,
+    "pronounce_text_begin": 1312,
+    "pronounce_text_end": 1354
+  },
+  {
+    "text": "三个场景都过了，才能拿出去给客户看。任何一个场景失败，失败本身就告诉你该补哪条指令。",
+    "pronounce_text": "三个场景都过了，才能拿出去给客户看。任何一个场景失败，失败本身就告诉你该补哪条指令。",
+    "time_begin": 237564,
+    "time_end": 246926.13151927438,
+    "text_begin": 1435,
+    "text_end": 1477,
+    "pronounce_text_begin": 1354,
+    "pronounce_text_end": 1396
+  },
+  {
+    "text": "这只是第一关。真正决定 Skill 价值的是后面那一关——每周 refine 一次。每次用完发现哪里不对，立刻回去更新 SKILL.md。",
+    "pronounce_text": "这只是第一关。真正决定Skill价值的是后面那一关每周refine一次。每次用完发现哪里不对，立刻回去更新SKILL.md。",
+    "time_begin": 247068,
+    "time_end": 257242.82993197278,
+    "text_begin": 1477,
+    "text_end": 1546,
+    "pronounce_text_begin": 1396,
+    "pronounce_text_end": 1458
+  },
+  {
+    "text": "原文说，这样坚持一个月之后，输出会\"和人类专业人士不可区分\"。",
+    "pronounce_text": "原文说，这样坚持一个月之后，输出会\"和人类专业人士不可区分\"。",
+    "time_begin": 257442.82993197278,
+    "time_end": 264297.20634920633,
+    "text_begin": 1546,
+    "text_end": 1577,
+    "pronounce_text_begin": 1458,
+    "pronounce_text_end": 1489
+  },
+  {
+    "text": "注意这个时间——一个月。不是写完那一刻，是迭代到第四周。",
+    "pronounce_text": "注意这个时间一个月。不是写完那一刻，是迭代到第四周。",
+    "time_begin": 264456,
+    "time_end": 269940.39909297053,
+    "text_begin": 1577,
+    "text_end": 1605,
+    "pronounce_text_begin": 1489,
+    "pronounce_text_end": 1515
+  },
+  {
+    "text": "这就是为什么我说\"装完就放着\"是最大的错误。如果套用员工比喻——这相当于你招了人不分配工作，不给反馈，然后抱怨他没产出。",
+    "pronounce_text": "这就是为什么我说\"装完就放着\"是最大的错误。如果套用员工比喻这相当于你招了人不分配工作，不给反馈，然后抱怨他没产出。",
+    "time_begin": 270108,
+    "time_end": 281780.5170068027,
+    "text_begin": 1605,
+    "text_end": 1665,
+    "pronounce_text_begin": 1515,
+    "pronounce_text_end": 1573
+  },
+  {
+    "text": "文章里还有两条具体到几乎刻薄的工程约束，我特别想拎出来。",
+    "pronounce_text": "文章里还有两条具体到几乎刻薄的工程约束，我特别想拎出来。",
+    "time_begin": 281952,
+    "time_end": 287389.9591836735,
+    "text_begin": 1665,
+    "text_end": 1693,
+    "pronounce_text_begin": 1573,
+    "pronounce_text_end": 1601
+  },
+  {
+    "text": "第一条，SKILL.md 必须控制在 500 行以内。不是建议，是上限。",
+    "pronounce_text": "第一条，SKILL.md必须控制在五百行以内。不是建议，是上限。",
+    "time_begin": 287532,
+    "time_end": 293991.63718820864,
+    "text_begin": 1693,
+    "text_end": 1729,
+    "pronounce_text_begin": 1601,
+    "pronounce_text_end": 1633
+  },
+  {
+    "text": "第二条更狠——\"vague language is banned\"。\"format nicely\"、\"handle appropriately\"这种含糊话，全部禁止。每一条指令必须 specific、必须 testable。",
+    "pronounce_text": "第二条更狠\"vague language is banned\"。\"format nicely\"、\"handle appropriately\"这种含糊话，全部禁止。每一条指令必须specific、必须testable。",
+    "time_begin": 294156,
+    "time_end": 306513.50566893426,
+    "text_begin": 1729,
+    "text_end": 1841,
+    "pronounce_text_begin": 1633,
+    "pronounce_text_end": 1741
+  },
+  {
+    "text": "你看这两条规则，表面是格式约束，本质是在逼你做一件事：把你脑子里\"我大概知道怎么做\"的隐性经验，转译成\"任何人按这个执行都能复现\"的显性流程。",
+    "pronounce_text": "你看这两条规则，表面是格式约束，本质是在逼你做一件事：把你脑子里\"我大概知道怎么做\"的隐性经验，转译成\"任何人按这个执行都能复现\"的显性流程。",
+    "time_begin": 306684,
+    "time_end": 322071.70975056686,
+    "text_begin": 1841,
+    "text_end": 1912,
+    "pronounce_text_begin": 1741,
+    "pronounce_text_end": 1812
+  },
+  {
+    "text": "这一步本身就是把个人手艺变成可规模化资产的过程——和 Skill 是不是被 Claude 执行，已经无关了。换句话说，你哪怕从来不用 Claude，认真写一次 SKILL.md，对你本人的工作方法都是一次升级。",
+    "pronounce_text": "这一步本身就是把个人手艺变成可规模化资产的过程和Skill是不是被Claude执行，已经无关了。换句话说，你哪怕从来不用Claude，认真写一次SKILL.md，对你本人的工作方法都是一次升级。",
+    "time_begin": 322236,
+    "time_end": 336764.5714285714,
+    "text_begin": 1912,
+    "text_end": 2017,
+    "pronounce_text_begin": 1812,
+    "pronounce_text_end": 1909
+  },
+  {
+    "text": "最后聊聊代价，再回到那个被很多人当 hook 的数字。",
+    "pronounce_text": "最后聊聊代价，再回到那个被很多人当hook的数字。",
+    "time_begin": 336924,
+    "time_end": 340783.00226757367,
+    "text_begin": 2017,
+    "text_end": 2044,
+    "pronounce_text_begin": 1909,
+    "pronounce_text_end": 1934
+  },
+  {
+    "text": "讲 ROI 之前我必须诚实地说一件事——把 Skill 当员工来管，是有管理成本的。",
+    "pronounce_text": "讲ROI之前我必须诚实地说一件事把Skill当员工来管，是有管理成本的。",
+    "time_begin": 340920,
+    "time_end": 347217.09750566893,
+    "text_begin": 2044,
+    "text_end": 2086,
+    "pronounce_text_begin": 1934,
+    "pronounce_text_end": 1970
+  },
+  {
+    "text": "原文专门提到，Skill 越多，元管理成本越高。你需要维护一份\"主文档\"——列出所有 Skill、当前状态、上次 refine 是哪天。这跟管理一个真实的小团队没什么区别，只不过员工换成了文件夹。",
+    "pronounce_text": "原文专门提到，Skill越多，元管理成本越高。你需要维护一份\"主文档\" 列出所有Skill、当前状态、上次refine是哪天。这跟管理一个真实的小团队没什么区别，只不过员工换成了文件夹。",
+    "time_begin": 347364,
+    "time_end": 363041.9591836735,
+    "text_begin": 2086,
+    "text_end": 2184,
+    "pronounce_text_begin": 1970,
+    "pronounce_text_end": 2063
+  },
+  {
+    "text": "所以这不是装完即用的魔法。这是一个新的工作方式，需要时间投入、需要纪律、需要每周五雷打不动的 review。",
+    "pronounce_text": "所以这不是装完即用的魔法。这是一个新的工作方式，需要时间投入、需要纪律、需要每周五雷打不动的review。",
+    "time_begin": 363204,
+    "time_end": 372403.5918367347,
+    "text_begin": 2184,
+    "text_end": 2238,
+    "pronounce_text_begin": 2063,
+    "pronounce_text_end": 2116
+  },
+  {
+    "text": "但代价讲完，我们看看回报。",
+    "pronounce_text": "但代价讲完，我们看看回报。",
+    "time_begin": 372564,
+    "time_end": 375099.4648526077,
+    "text_begin": 2238,
+    "text_end": 2251,
+    "pronounce_text_begin": 2116,
+    "pronounce_text_end": 2129
+  },
+  {
+    "text": "一个 Skill，每周给你省 30 分钟。一年 52 周，就是 26 小时。",
+    "pronounce_text": "一个Skill，每周给你省三十分钟。一年五十二周，就是二十六小时。",
+    "time_begin": 375264,
+    "time_end": 381514.6575963719,
+    "text_begin": 2251,
+    "text_end": 2289,
+    "pronounce_text_begin": 2129,
+    "pronounce_text_end": 2162
+  },
+  {
+    "text": "10 个 Skill 跑起来，就是 260 小时——大约 6.5 个完整工作周。",
+    "pronounce_text": "十个Skill跑起来，就是两百六十小时大约六点五个完整工作周。",
+    "time_begin": 381672,
+    "time_end": 387202.8390022676,
+    "text_begin": 2289,
+    "text_end": 2329,
+    "pronounce_text_begin": 2162,
+    "pronounce_text_end": 2193
+  },
+  {
+    "text": "但你如果只把它理解成\"省时间\"，你就低估它了。",
+    "pronounce_text": "但你如果只把它理解成\"省时间\"，你就低估它了。",
+    "time_begin": 387360,
+    "time_end": 391729.84126984124,
+    "text_begin": 2329,
+    "text_end": 2352,
+    "pronounce_text_begin": 2193,
+    "pronounce_text_end": 2216
+  },
+  {
+    "text": "作者真正的主张藏在最后一句——\"Let Claude handle the execution while you handle the strategy\"。让 Claude 干执行，你干策略。",
+    "pronounce_text": "作者真正的主张藏在最后一句\"Let Claude handle the execution while you handle the strategy\"。让Claude干执行，你干策略。",
+    "time_begin": 391896,
+    "time_end": 401606.43083900225,
+    "text_begin": 2352,
+    "text_end": 2449,
+    "pronounce_text_begin": 2216,
+    "pronounce_text_end": 2309
+  },
+  {
+    "text": "这不是效率提升，是工作层级跃迁。从亲自写每一封邮件、整理每一份报告、跑每一次分析——跳到只决定方向、只把关结果。",
+    "pronounce_text": "这不是效率提升，是工作层级跃迁。从亲自写每一封邮件、整理每一份报告、跑每一次分析跳到只决定方向、只把关结果。",
+    "time_begin": 401760,
+    "time_end": 413769.20634920633,
+    "text_begin": 2449,
+    "text_end": 2505,
+    "pronounce_text_begin": 2309,
+    "pronounce_text_end": 2363
+  },
+  {
+    "text": "所以回到 Hook 我说的那句话——为什么我觉得过去半年自己用错了。因为我一直把 Claude 当 prompt 的对话框，每次重新组织语言、重新解释背景。",
+    "pronounce_text": "所以回到Hook我说的那句话为什么我觉得过去半年自己用错了。因为我一直把Claude当prompt的对话框，每次重新组织语言、重新解释背景。",
+    "time_begin": 413928,
+    "time_end": 424834.25850340136,
+    "text_begin": 2505,
+    "text_end": 2583,
+    "pronounce_text_begin": 2363,
+    "pronounce_text_end": 2433
+  },
+  {
+    "text": "我没意识到——我面前其实有 8 万个等着上岗的员工，而我连第一个都没招进来。",
+    "pronounce_text": "我没意识到我面前其实有八万个等着上岗的员工，而我连第一个都没招进来。",
+    "time_begin": 424980,
+    "time_end": 430290.24943310657,
+    "text_begin": 2583,
+    "text_end": 2621,
+    "pronounce_text_begin": 2433,
+    "pronounce_text_end": 2467
+  },
+  {
+    "text": "你以为 Skill 是 prompt 的升级版——其实它是你雇的第一个数字员工，而 8 万个员工正在外面排队等着上岗，你一个都没招。",
+    "pronounce_text": "你以为Skill是prompt的升级版其实它是你雇的第一个数字员工，而八万个员工正在外面排队等着上岗，你一个都没招。",
+    "time_begin": 430452,
+    "time_end": 439047.873015873,
+    "text_begin": 2621,
+    "text_end": 2687,
+    "pronounce_text_begin": 2467,
+    "pronounce_text_end": 2525
+  },
+  {
+    "text": "如果你今天只带走一个动作——挑你重复最多的那件事，写一个 SKILL.md。500 行以内，禁止任何模糊措辞，跑三场景测试，然后每周五迭代一次。一个月以后再回来看输出。",
+    "pronounce_text": "如果你今天只带走一个动作挑你重复最多的那件事，写一个SKILL.md。五百行以内，禁止任何模糊措辞，跑三场景测试，然后每周五迭代一次。一个月以后再回来看输出。",
+    "time_begin": 439200,
+    "time_end": 455946.0770975057,
+    "text_begin": 2687,
+    "text_end": 2771,
+    "pronounce_text_begin": 2525,
+    "pronounce_text_end": 2604
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 456084,
+    "time_end": 461568.39909297053,
+    "text_begin": 2771,
+    "text_end": 2798,
+    "pronounce_text_begin": 2604,
+    "pronounce_text_end": 2630
+  }
+]

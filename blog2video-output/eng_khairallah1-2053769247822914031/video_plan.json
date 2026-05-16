@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "How to Use Claude Skills to Automate Any Workflow (Full Course)",
+    "title_zh": "8 万个 Skill 没人装，问题在哪？",
+    "url": "https://x.com/eng_khairallah1/status/2053769247822914031",
+    "author": "Khairallah AL-Awady (@eng_khairallah1)",
+    "word_count": 2891,
+    "slug": "eng_khairallah1-2053769247822914031"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "两个 reframe + 一条 refine 循环 + 一段管理成本/ROI synthesis，全部服务于'Skill 是数字员工不是 prompt 升级版'这一个 thesis。分集会破坏 reframe→杠杆缺口→落地动作的认知递进。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "8 万个 Skill 没人装，问题在哪？"
+      }
+    ]
+  }
+}

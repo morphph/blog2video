@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 380px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 700px;
+      background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.18) 0%, rgba(239, 68, 68, 0.08) 40%, rgba(13, 13, 26, 0) 75%);
+      pointer-events: none;
+    }
+    .series {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 90px;
+      position: relative;
+      z-index: 1;
+    }
+    .title {
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 90px;
+    }
+    .title .amber { color: #F59E0B; }
+    .title .red { color: #EF4444; }
+    .source {
+      padding: 16px 32px;
+      background: #1A1A30;
+      border: 1px solid rgba(107, 114, 128, 0.3);
+      border-radius: 999px;
+      font-size: 22px;
+      color: #6B6B80;
+      letter-spacing: 0.5px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="glow"></div>
+    <div class="series">精读AI · Claude Skills</div>
+    <h1 class="title"><span class="amber">8 万个</span> Skill <span class="red">没人装</span><br><span class="red">问题在哪？</span></h1>
+    <div class="source">Khairallah AL-Awady · X · 1.3M views</div>
+  </div>
+</body>
+</html>

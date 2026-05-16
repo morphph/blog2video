@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .title .red { color: #EF4444; }
+    .quote-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 50px 40px;
+      width: 100%;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .quote-mark {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      font-size: 120px;
+      font-weight: 900;
+      color: rgba(239, 68, 68, 0.25);
+      line-height: 1;
+    }
+    .quote-text {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.4;
+      color: #FFFFFF;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-text .red { color: #EF4444; }
+    .gap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 36px;
+      font-size: 30px;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+    .pill {
+      padding: 12px 22px;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 999px;
+      color: #B0B0CC;
+    }
+    .pill.high { color: #8B5CF6; border-color: rgba(139, 92, 246, 0.5); }
+    .vs { color: #6B7280; font-size: 24px; }
+    .arrow { color: #F59E0B; font-size: 28px; font-weight: 900; }
+    .reason {
+      font-size: 26px;
+      font-weight: 700;
+      color: #F59E0B;
+    }
+    .tag {
+      padding: 16px 36px;
+      background: #1A1A30;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 999px;
+      font-size: 28px;
+      font-weight: 800;
+      color: #F59E0B;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1 class="title">教程的盲点 — <span class="red">只教雇人，不教管人</span></h1>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">教你怎么<span class="red">雇人</span><br>但不教你怎么<span class="red">管人</span></div>
+    </div>
+    <div class="gap">
+      <span class="pill">普通用户</span>
+      <span class="vs">vs</span>
+      <span class="pill high">高级用户</span>
+      <span class="arrow">→</span>
+      <span class="reason">不在 prompt 水平<br>在 Skill 生态</span>
+    </div>
+    <div class="tag">杠杆缺口</div>
+  </div>
+</body>
+</html>

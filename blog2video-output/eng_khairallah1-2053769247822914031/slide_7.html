@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 60px;
+    }
+    .title .purple { color: #8B5CF6; }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 28px;
+      text-align: left;
+    }
+    .card.green { border: 1px solid rgba(16, 185, 129, 0.4); border-left: 4px solid #10B981; }
+    .card.amber { border: 1px solid rgba(245, 158, 11, 0.4); border-left: 4px solid #F59E0B; }
+    .card.red { border: 1px solid rgba(239, 68, 68, 0.4); border-left: 4px solid #EF4444; }
+    .card .head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .card .name {
+      font-size: 34px;
+      font-weight: 900;
+    }
+    .card.green .name { color: #10B981; }
+    .card.amber .name { color: #F59E0B; }
+    .card.red .name { color: #EF4444; }
+    .card .zh {
+      font-size: 24px;
+      font-weight: 600;
+      color: #B0B0CC;
+    }
+    .card .desc {
+      font-size: 26px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .tag {
+      padding: 18px 28px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .tag .green { color: #10B981; font-weight: 800; }
+    .tag .red { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1 class="title"><span class="purple">三场景</span>测试</h1>
+    <div class="cards">
+      <div class="card green">
+        <div class="head"><span class="name">Happy Path</span><span class="zh">最常见输入</span></div>
+        <div class="desc">覆盖 80% 用例 · 标准输入</div>
+      </div>
+      <div class="card amber">
+        <div class="head"><span class="name">Edge Case</span><span class="zh">奇怪输入</span></div>
+        <div class="desc">缺数据 · 格式异常 · 信息冲突</div>
+      </div>
+      <div class="card red">
+        <div class="head"><span class="name">Stress Test</span><span class="zh">极限版本</span></div>
+        <div class="desc">最大最乱最复杂 · 看会不会崩</div>
+      </div>
+    </div>
+    <div class="tag"><span class="green">三个都过</span> = production-grade<br><span class="red">任一失败</span> = 告诉你该补哪条指令</div>
+  </div>
+</body>
+</html>

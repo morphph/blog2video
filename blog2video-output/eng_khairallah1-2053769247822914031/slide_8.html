@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .title .purple { color: #8B5CF6; }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px;
+      text-align: left;
+    }
+    .card.purple { border: 1px solid rgba(139, 92, 246, 0.4); border-left: 4px solid #8B5CF6; }
+    .card.red { border: 1px solid rgba(239, 68, 68, 0.4); border-left: 4px solid #EF4444; }
+    .card .row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .card .big {
+      font-size: 110px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -3px;
+      min-width: 280px;
+    }
+    .card.purple .big { color: #8B5CF6; }
+    .card .label-zh {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .card .sub {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .card.red .head-en {
+      font-size: 40px;
+      font-weight: 900;
+      color: #EF4444;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .card.red .body {
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .card.red .body .bad {
+      color: #EF4444;
+      font-style: italic;
+    }
+    .card.red .body .must {
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .tag {
+      padding: 18px 28px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .tag .purple { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1 class="title">两条<span class="purple">工程约束</span></h1>
+    <div class="cards">
+      <div class="card purple">
+        <div class="row">
+          <div class="big">500</div>
+          <div>
+            <div class="label-zh">行 · SKILL.md 上限</div>
+            <div class="sub">不是建议，是上限</div>
+          </div>
+        </div>
+      </div>
+      <div class="card red">
+        <div class="head-en">vague language is banned</div>
+        <div class="body">禁止 <span class="bad">"format nicely"</span> · <span class="bad">"handle appropriately"</span><br>每条指令必须 <span class="must">specific & testable</span></div>
+      </div>
+    </div>
+    <div class="tag">本质 = 把<span class="purple">隐性经验</span>转译成<span class="purple">可复现流程</span><br>跟 Claude 执不执行已无关</div>
+  </div>
+</body>
+</html>

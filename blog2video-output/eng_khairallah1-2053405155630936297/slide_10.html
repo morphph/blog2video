@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 62px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 40px;
+    }
+    .title .accent { color: #F59E0B; }
+    .checklist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+    }
+    .item .num {
+      font-size: 28px;
+      font-weight: 900;
+      color: #F59E0B;
+      min-width: 36px;
+    }
+    .item .text {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .item .text .dim { color: #B0B0CC; font-weight: 500; }
+    .item .text .accent { color: #8B5CF6; font-family: 'SF Mono', 'Courier New', monospace; }
+    .item .text .red { color: #EF4444; }
+    .sig {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.12);
+      border: 2px solid rgba(139, 92, 246, 0.5);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 22px;
+      margin-bottom: 18px;
+    }
+    .sig-line {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .sig-line .accent { color: #8B5CF6; }
+    .brand {
+      font-size: 20px;
+      color: #6B7280;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">今天就做<span class="accent">一件事</span></div>
+    <div class="checklist">
+      <div class="item">
+        <div class="num">①</div>
+        <div class="text">关闭 <span class="dim">"100 个 prompt 模板"</span></div>
+      </div>
+      <div class="item">
+        <div class="num">②</div>
+        <div class="text">打开空文件 · 写你的 <span class="accent">identity.md</span></div>
+      </div>
+      <div class="item">
+        <div class="num">③</div>
+        <div class="text">你是谁 · 做什么 · 语气 · 标准</div>
+      </div>
+      <div class="item">
+        <div class="num">④</div>
+        <div class="text">这一份 <span class="red">比一个月的 prompt 调试都值钱</span></div>
+      </div>
+    </div>
+    <div class="sig">
+      <div class="sig-line">Prompt 工程是<span class="accent">语法</span><br/>Context 工程是<span class="accent">基础设施</span></div>
+    </div>
+    <div class="brand">AI 世界很吵，精读一篇，胜过刷一百条</div>
+  </div>
+</body>
+</html>

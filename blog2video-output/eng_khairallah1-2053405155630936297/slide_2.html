@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .title .accent { color: #8B5CF6; }
+    .dichotomy {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 56px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: left;
+    }
+    .col.dim {
+      opacity: 0.55;
+    }
+    .col.active {
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+    }
+    .col-tag {
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #6B7280;
+      margin-bottom: 14px;
+    }
+    .col.active .col-tag { color: #8B5CF6; }
+    .col-title {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .col-sub {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .col-items {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.7;
+    }
+    .col-items div {
+      padding-left: 18px;
+      position: relative;
+    }
+    .col-items div::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #6B7280;
+    }
+    .col.active .col-items div::before { color: #8B5CF6; }
+    .bottom-tag {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-radius: 12px;
+      padding: 28px 24px;
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .bottom-tag .accent { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Prompt 是<span class="accent">配料</span><br/>Context 是整个<span class="accent">厨房</span></div>
+    <div class="dichotomy">
+      <div class="col dim">
+        <div class="col-tag">PROMPT ENG</div>
+        <div class="col-title">语法</div>
+        <div class="col-sub">syntax</div>
+        <div class="col-items">
+          <div>调措辞</div>
+          <div>加 "step by step"</div>
+          <div>换词重试</div>
+        </div>
+      </div>
+      <div class="col active">
+        <div class="col-tag">CONTEXT ENG</div>
+        <div class="col-title">基础设施</div>
+        <div class="col-sub">infrastructure</div>
+        <div class="col-items">
+          <div>文件 / 记忆</div>
+          <div>工具 / 约束</div>
+          <div>范例</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-tag">基础设施每一次都<span class="accent">赢过</span>语法</div>
+  </div>
+</body>
+</html>

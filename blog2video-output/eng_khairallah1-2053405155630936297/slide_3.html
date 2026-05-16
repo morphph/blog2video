@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 64px;
+    }
+    .title .red { color: #EF4444; }
+    .title .accent { color: #8B5CF6; }
+    .chain {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 48px;
+    }
+    .step {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 28px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .step .num {
+      font-size: 28px;
+      font-weight: 800;
+      color: #6B7280;
+      min-width: 40px;
+    }
+    .step .text {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #FFFFFF;
+    }
+    .step.warn {
+      border-left: 4px solid #EF4444;
+    }
+    .step.warn .num { color: #EF4444; }
+    .arrow {
+      text-align: center;
+      font-size: 32px;
+      color: #6B7280;
+      font-weight: 700;
+    }
+    .step .accent { color: #8B5CF6; }
+    .step .red { color: #EF4444; }
+    .note {
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 12px;
+      padding: 22px 24px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .note .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title"><span class="red">失明模型</span><br/>→ 通用废话</div>
+    <div class="chain">
+      <div class="step">
+        <div class="num">①</div>
+        <div class="text">模型对你<span class="accent">一无所知</span></div>
+      </div>
+      <div class="step warn">
+        <div class="num">②</div>
+        <div class="text"><span class="red">失明</span> · 没有眼睛</div>
+      </div>
+      <div class="step">
+        <div class="num">③</div>
+        <div class="text">默认退回到"最平均、最安全、最通用"</div>
+      </div>
+      <div class="step warn">
+        <div class="num">④</div>
+        <div class="text"><span class="red">AI 味</span> 输出</div>
+      </div>
+    </div>
+    <div class="note">不是审美问题，<span class="red">是信息缺失</span></div>
+  </div>
+</body>
+</html>

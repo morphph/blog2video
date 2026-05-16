@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 16px;
+    }
+    .title .accent { color: #10B981; }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .jump {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 56px;
+    }
+    .role-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 14px;
+      padding: 32px 22px;
+      text-align: center;
+    }
+    .role-card.advisor {
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      opacity: 0.85;
+    }
+    .role-card.operator {
+      border: 2px solid rgba(16, 185, 129, 0.6);
+      border-left: 4px solid #10B981;
+      background: linear-gradient(180deg, #1A2A22 0%, #1A1A2E 100%);
+    }
+    .role-tag {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+    .advisor .role-tag { color: #8B5CF6; }
+    .operator .role-tag { color: #10B981; }
+    .role-name {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      color: #FFFFFF;
+    }
+    .role-line {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .arrow-big {
+      font-size: 60px;
+      font-weight: 900;
+      color: #10B981;
+      flex-shrink: 0;
+    }
+    .bottom-tag {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: 12px;
+      padding: 24px 22px;
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .bottom-tag .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Context + MCP</div>
+    <div class="subtitle">从顾问到<span class="accent" style="color:#10B981;">操作员</span></div>
+    <div class="jump">
+      <div class="role-card advisor">
+        <div class="role-tag">ADVISOR</div>
+        <div class="role-name">顾问</div>
+        <div class="role-line">"你的周报<br/>应该包含…"</div>
+      </div>
+      <div class="arrow-big">→</div>
+      <div class="role-card operator">
+        <div class="role-tag">OPERATOR</div>
+        <div class="role-name">操作员</div>
+        <div class="role-line">拉数据 / 跑计算<br/>生成报表 / 存盘</div>
+      </div>
+    </div>
+    <div class="bottom-tag">不是渐进式提升<br/><span class="red">是类别跃迁</span></div>
+  </div>
+</body>
+</html>

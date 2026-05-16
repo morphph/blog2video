@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+      font-weight: 600;
+    }
+    .subtitle .accent { color: #8B5CF6; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .card .fname {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      font-family: 'SF Mono', 'Courier New', monospace;
+    }
+    .card .role {
+      font-size: 20px;
+      color: #B0B0CC;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .card .items {
+      font-size: 22px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .c1 { border-left: 4px solid #8B5CF6; }
+    .c1 .fname { color: #8B5CF6; }
+    .c2 { border-left: 4px solid #3B82F6; }
+    .c2 .fname { color: #3B82F6; }
+    .c3 { border-left: 4px solid #10B981; }
+    .c3 .fname { color: #10B981; }
+    .c4 { border-left: 4px solid #F59E0B; }
+    .c4 .fname { color: #F59E0B; }
+    .bottom-tag {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 22px 24px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .bottom-tag .accent { color: #8B5CF6; }
+    .bottom-tag .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">四文件架构</div>
+    <div class="subtitle">让模型<span class="accent">入职</span></div>
+    <div class="grid">
+      <div class="card c1">
+        <div class="fname">identity.md</div>
+        <div class="role">你是谁</div>
+        <div class="items">背景 · 专业<br/>沟通风格</div>
+      </div>
+      <div class="card c2">
+        <div class="fname">audience.md</div>
+        <div class="role">你为谁写</div>
+        <div class="items">痛点 · 知识水平<br/>日常用词</div>
+      </div>
+      <div class="card c3">
+        <div class="fname">standards.md</div>
+        <div class="role">什么叫"好"</div>
+        <div class="items">质量标准<br/>反例 · 正例</div>
+      </div>
+      <div class="card c4">
+        <div class="fname">project.md</div>
+        <div class="role">当前在做什么</div>
+        <div class="items">月目标 · 活跃项目<br/>近期决定</div>
+      </div>
+    </div>
+    <div class="bottom-tag">前三个<span class="accent">稳定</span> · 第四个<span class="amber">周更</span> · 一次建好半年用</div>
+  </div>
+</body>
+</html>

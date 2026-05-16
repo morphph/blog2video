@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "How to Master Context Engineering & Build AI Systems That Actually Understand You (Full Course)",
+    "title_zh": "AI 输出像 AI 写的？你的 context 是空的",
+    "url": "https://x.com/eng_khairallah1/status/2053405155630936297",
+    "author": "Khairallah AL-Awady (@eng_khairallah1)",
+    "word_count": 3226,
+    "slug": "eng_khairallah1-2053405155630936297"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "三个核心 reframe（syntax vs infrastructure / 三层 context / 四文件架构 + 动态加载反直觉 + MCP 类别跃迁）共同支撑同一个 thesis——AI 输出平庸的根因是 context 架构空白，不是 prompt 不够好。拆分会破坏 reframe → 架构 → 落地动作的认知递进。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI 输出像 AI 写的？你的 context 是空的"
+      }
+    ]
+  }
+}

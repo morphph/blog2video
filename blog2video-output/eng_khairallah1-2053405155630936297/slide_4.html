@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 48px;
+    }
+    .title .accent { color: #F59E0B; }
+    .layers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .layer {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 26px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .layer .badge {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      min-width: 110px;
+      text-align: center;
+    }
+    .layer .body {
+      flex: 1;
+    }
+    .layer .name {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .layer .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .l1 {
+      border: 1px solid rgba(107, 114, 128, 0.4);
+      opacity: 0.7;
+    }
+    .l1 .badge { background: rgba(107, 114, 128, 0.2); color: #B0B0CC; }
+    .l2 {
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      border-left: 4px solid #3B82F6;
+    }
+    .l2 .badge { background: rgba(59, 130, 246, 0.18); color: #3B82F6; }
+    .l3 {
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 4px solid #F59E0B;
+      background: linear-gradient(180deg, #1A1A2E 0%, #251c14 100%);
+    }
+    .l3 .badge { background: rgba(245, 158, 11, 0.22); color: #F59E0B; }
+    .l3 .name .gold { color: #F59E0B; }
+    .l1 .tail { font-size: 22px; color: #EF4444; font-weight: 700; }
+    .l3 .tail { font-size: 22px; color: #F59E0B; font-weight: 700; font-style: italic; }
+    .bottom {
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 12px;
+      padding: 22px 24px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .bottom .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">三层 Context<br/><span class="accent">99% 停在第一层</span></div>
+    <div class="layers">
+      <div class="layer l1">
+        <div class="badge">LAYER 1</div>
+        <div class="body">
+          <div class="name">即时 context</div>
+          <div class="desc">你刚敲的那句话 · 指令 · 格式</div>
+          <div class="tail">→ 99% 用户只在这里</div>
+        </div>
+      </div>
+      <div class="layer l2">
+        <div class="badge">LAYER 2</div>
+        <div class="body">
+          <div class="name">会话 context</div>
+          <div class="desc">上传文件 / 历史 / system prompt</div>
+          <div class="tail" style="color:#3B82F6;">→ 用一点但不设计</div>
+        </div>
+      </div>
+      <div class="layer l3">
+        <div class="badge">LAYER 3</div>
+        <div class="body">
+          <div class="name"><span class="gold">持久 context</span></div>
+          <div class="desc">记忆 / 知识库 / 偏好</div>
+          <div class="tail">"almost nobody · biggest leverage"</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">你在抛光<span class="red">失明者</span>手里那把唯一的刀</div>
+  </div>
+</body>
+</html>

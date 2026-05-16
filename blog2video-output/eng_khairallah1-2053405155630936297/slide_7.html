@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+    .title .accent { color: #10B981; }
+    .compare {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .side {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: left;
+    }
+    .bad {
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+    }
+    .good {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .side-head {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .bad .side-head { color: #EF4444; }
+    .good .side-head { color: #10B981; }
+    .side-items {
+      font-size: 22px;
+      color: #FFFFFF;
+      line-height: 1.7;
+    }
+    .side-items div {
+      padding-left: 16px;
+      position: relative;
+      color: #B0B0CC;
+    }
+    .side-items div::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+    }
+    .bad .side-items div::before { color: #EF4444; }
+    .good .side-items div::before { color: #10B981; }
+    .rules {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .rule {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 3px solid #8B5CF6;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 20px;
+      text-align: left;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .rule .task {
+      color: #8B5CF6;
+      font-weight: 800;
+      min-width: 90px;
+      display: inline-block;
+    }
+    .rule .files {
+      color: #B0B0CC;
+      font-family: 'SF Mono', 'Courier New', monospace;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">外科医生<br/>不会<span class="accent">重读医学教科书</span></div>
+    <div class="compare">
+      <div class="side bad">
+        <div class="side-head">✗ 全部加载</div>
+        <div class="side-items">
+          <div>注意力稀释</div>
+          <div>token 浪费</div>
+          <div>效果反降</div>
+        </div>
+      </div>
+      <div class="side good">
+        <div class="side-head">✓ 动态加载</div>
+        <div class="side-items">
+          <div>按任务定规则</div>
+          <div>只取相关</div>
+          <div>注意力集中</div>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <div class="rule"><span class="task">写作</span><span class="files">identity + audience + standards</span></div>
+      <div class="rule"><span class="task">分析</span><span class="files">identity + project + data</span></div>
+      <div class="rule"><span class="task">研究</span><span class="files">project + methodology + 既有研究</span></div>
+    </div>
+  </div>
+</body>
+</html>

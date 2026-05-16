@@ -1,0 +1,15 @@
+{
+  "topic": "换更贵的模型，为什么没救？",
+  "blog_url": "https://x.com/hitw93/status/2034627967926825175",
+  "source": "hitw93-2034627967926825175",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

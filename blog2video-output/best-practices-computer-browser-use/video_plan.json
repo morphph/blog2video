@@ -1,0 +1,20 @@
+{
+  "blog_metadata": {
+    "title": "Best Practices for Computer and Browser Use with Claude",
+    "title_zh": "Claude 点击不准？多半是你截图开太大了",
+    "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+    "word_count": 3765,
+    "slug": "best-practices-computer-browser-use"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "五个章节都在论证同一个 thesis——'反直觉的工程默认值才是 Computer Use 跑不起来的真凶'。三个反直觉点（分辨率、思考预算、上下文管理）层层递进，安全和演示回放作为收尾的轻量补充。拆开会破坏'三连击'的认知冲击，作为单集更有力。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude 点击不准？多半是你截图开太大了"
+      }
+    ]
+  }
+}

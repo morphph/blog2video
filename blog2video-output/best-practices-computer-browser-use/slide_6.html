@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .vs { color: #B0B0CC; font-weight: 700; }
+    .pair {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 44px;
+    }
+    .model {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .model.sonnet { border-left: 4px solid #10B981; }
+    .model.opus { border-left: 4px solid #8B5CF6; }
+    .model .name {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .model.sonnet .name { color: #10B981; }
+    .model.opus .name { color: #8B5CF6; }
+    .model .role {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .model .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 6px;
+      margin-top: 14px;
+    }
+    .model.sonnet .badge { background: rgba(16, 185, 129, 0.15); color: #10B981; }
+    .model.opus .badge { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
+    .tagline {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .tagline .red { color: #EF4444; }
+    .tagline .green { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">模型选型</div>
+    <div class="title">Sonnet <span class="vs">vs</span> Opus 错配</div>
+
+    <div class="pair">
+      <div class="model sonnet">
+        <div class="name">Sonnet 4.6</div>
+        <div class="role">点击精准</div>
+        <div class="desc">机械动作最稳<br>默认选这个</div>
+        <div class="badge">推荐起步</div>
+      </div>
+      <div class="model opus">
+        <div class="name">Opus 4.6</div>
+        <div class="role">推理强</div>
+        <div class="desc">当顾问 / 规划<br>不是点击工</div>
+        <div class="badge">高层决策</div>
+      </div>
+    </div>
+
+    <div class="tagline">你要的不是<span class="red">最聪明的</span><br>是<span class="green">手最稳的</span></div>
+  </div>
+</body>
+</html>

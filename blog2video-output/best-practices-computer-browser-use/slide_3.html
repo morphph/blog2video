@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .accent { color: #F59E0B; }
+    .resos {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+    .reso-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: left;
+    }
+    .reso-card .label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .reso-card .num {
+      font-size: 60px;
+      font-weight: 800;
+      color: #10B981;
+      line-height: 1.05;
+    }
+    .reso-card .note {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+    .warning {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 26px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .warning .tag {
+      display: inline-block;
+      background: #EF4444;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .warning .head {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .warning .sub {
+      font-size: 26px;
+      color: #FCA5A5;
+      line-height: 1.5;
+    }
+    .lower {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+      font-size: 28px;
+      color: #B0B0CC;
+    }
+    .lower .down {
+      color: #EF4444;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">分辨率甜点区间</div>
+    <div class="title">起步选 <span class="accent">最低预算</span></div>
+
+    <div class="resos">
+      <div class="reso-card">
+        <div class="label">Claude 4.6</div>
+        <div class="num">1280×720</div>
+        <div class="note">约 80% 像素预算</div>
+      </div>
+      <div class="reso-card">
+        <div class="label">Opus 4.7</div>
+        <div class="num">1080p</div>
+        <div class="note">起步分辨率</div>
+      </div>
+    </div>
+
+    <div class="warning">
+      <div class="tag">MACOS 警告</div>
+      <div class="head">DPR = 2</div>
+      <div class="sub">你以为是 1×，实际上传 2×<br>悄悄降采样，坐标全错</div>
+    </div>
+
+    <div class="lower">下限：<span class="down">960×540</span>，再低细节就丢了</div>
+  </div>
+</body>
+</html>

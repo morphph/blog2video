@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .insight {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 26px 28px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-align: left;
+      line-height: 1.45;
+      margin-bottom: 36px;
+    }
+    .insight .accent { color: #8B5CF6; }
+    .data-row {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .data-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 22px;
+      text-align: left;
+    }
+    .data-card .label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .data-card .num {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+    .data-card .note {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .data-card.green .num { color: #10B981; }
+    .data-card.blue .num { color: #3B82F6; }
+    .callout {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 26px;
+      text-align: left;
+    }
+    .callout .big {
+      font-size: 48px;
+      font-weight: 900;
+      color: #EF4444;
+      letter-spacing: 1px;
+    }
+    .callout .sub {
+      font-size: 24px;
+      color: #FCA5A5;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">反直觉 · 二</div>
+    <div class="title">思考预算开 max = 烧钱</div>
+
+    <div class="insight">
+      UI 自动化 = <span class="accent">感知 + 机械</span><br>不是逻辑推理
+    </div>
+
+    <div class="data-row">
+      <div class="data-card green">
+        <div class="label">Opus 4.7 · high</div>
+        <div class="num">≈ max</div>
+        <div class="note">成功率几乎相同<br>token 只用一半</div>
+      </div>
+      <div class="data-card blue">
+        <div class="label">4.6 · medium</div>
+        <div class="num">+ 重试</div>
+        <div class="note">效果 ≈ high<br>成本更低</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="big">不要用 max</div>
+      <div class="sub">官方原话 · 纯粹多花钱</div>
+    </div>
+  </div>
+</body>
+</html>

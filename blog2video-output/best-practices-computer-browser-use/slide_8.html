@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+    .title .accent { color: #10B981; }
+    .rule-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .rule-card .head {
+      font-size: 26px;
+      font-weight: 800;
+      color: #10B981;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .params {
+      display: flex;
+      gap: 28px;
+      margin-top: 6px;
+    }
+    .param .k {
+      font-size: 22px;
+      color: #B0B0CC;
+    }
+    .param .v {
+      font-size: 48px;
+      font-weight: 800;
+      color: #10B981;
+      line-height: 1;
+      margin-top: 4px;
+    }
+    .cache-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .cache-card .head {
+      font-size: 26px;
+      font-weight: 800;
+      color: #3B82F6;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .cache-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 24px;
+      color: #FFFFFF;
+      margin: 10px 0;
+    }
+    .chip {
+      flex-shrink: 0;
+      background: rgba(59, 130, 246, 0.18);
+      color: #3B82F6;
+      font-weight: 800;
+      font-size: 22px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      min-width: 48px;
+      text-align: center;
+    }
+    .trigger {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 20px 26px;
+      margin-bottom: 22px;
+      text-align: left;
+      font-size: 26px;
+      color: #FFFFFF;
+    }
+    .trigger .num { color: #F59E0B; font-weight: 800; font-size: 36px; }
+    .tradeoff {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .tradeoff .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">长任务组合拳</div>
+    <div class="title">滚动缓冲 + 批量裁剪 + <span class="accent">cache</span></div>
+
+    <div class="rule-card">
+      <div class="head">滚动缓冲规则</div>
+      <div class="params">
+        <div class="param">
+          <div class="k">keep_n</div>
+          <div class="v">3</div>
+        </div>
+        <div class="param">
+          <div class="k">interval</div>
+          <div class="v">25</div>
+        </div>
+        <div class="param">
+          <div class="k">触发</div>
+          <div class="v" style="color:#FFFFFF; font-size:30px; padding-top: 14px;">>28 张</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cache-card">
+      <div class="head">4 个 Cache Breakpoint</div>
+      <div class="cache-row"><div class="chip">×1</div><div>系统提示 / 工具定义</div></div>
+      <div class="cache-row"><div class="chip">×3</div><div>最近的 tool result</div></div>
+    </div>
+
+    <div class="trigger">服务端 compaction：<span class="num">150k</span> token 自动触发</div>
+
+    <div class="tradeoff"><span class="red">关键 tradeoff：</span>忍着不删，攒一批再删</div>
+  </div>
+</body>
+</html>

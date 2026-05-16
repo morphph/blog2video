@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .accent { color: #8B5CF6; }
+    .flow {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .flow-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 28px;
+      color: #FFFFFF;
+      margin: 12px 0;
+      line-height: 1.4;
+    }
+    .flow-row .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(139, 92, 246, 0.18);
+      color: #8B5CF6;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .flow-row .arrow {
+      color: #8B5CF6;
+      margin-left: 56px;
+      font-size: 24px;
+    }
+    .flow-row.bad { color: #EF4444; font-weight: 700; }
+    .limits {
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .limit-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
+    }
+    .limit-card .label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .limit-card .num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.05;
+    }
+    .limit-card .unit {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-top: 8px;
+    }
+    .warning {
+      background: rgba(239, 68, 68, 0.10);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 26px;
+      width: 100%;
+      text-align: left;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .warning .red { color: #EF4444; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">反直觉 · 一</div>
+    <div class="title"><span class="accent">静默降采样</span>害死你</div>
+
+    <div class="flow">
+      <div class="flow-row"><div class="step-num">1</div><div>图像超出模型限制</div></div>
+      <div class="flow-row"><div class="step-num">2</div><div>API 静默压缩图像</div></div>
+      <div class="flow-row bad"><div class="step-num" style="background: rgba(239,68,68,0.18); color:#EF4444;">3</div><div>模型看的图 ≠ 屏幕坐标系</div></div>
+    </div>
+
+    <div class="limits">
+      <div class="limit-card">
+        <div class="label">Claude 4.6</div>
+        <div class="num">1568px</div>
+        <div class="unit">长边 / 1.15 MP</div>
+      </div>
+      <div class="limit-card">
+        <div class="label">Opus 4.7</div>
+        <div class="num">2576px</div>
+        <div class="unit">长边 / 3.75 MP</div>
+      </div>
+    </div>
+
+    <div class="warning"><span class="red">1920×1080</span> 已经超过 2MP 上限</div>
+  </div>
+</body>
+</html>

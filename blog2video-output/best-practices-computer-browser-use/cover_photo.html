@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(139, 92, 246, 0.18) 0%, transparent 55%),
+        radial-gradient(circle at 50% 60%, rgba(239, 68, 68, 0.10) 0%, transparent 50%),
+        #0D0D1A;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 90px;
+    }
+    .main-title {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.25;
+      color: #FFFFFF;
+      letter-spacing: -1px;
+      margin-bottom: 110px;
+    }
+    .main-title .line {
+      display: block;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .source-pill {
+      background: #1A1A30;
+      color: #6B6B80;
+      font-size: 22px;
+      padding: 14px 32px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(139, 92, 246, 0.12);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="series-tag">精读AI · Computer Use</div>
+    <div class="main-title">
+      <span class="line">Claude 点击不准？</span>
+      <span class="line">多半是你<span class="highlight-red">截图开太大了</span></span>
+    </div>
+    <div class="source-pill">Anthropic《Best Practices for Computer &amp; Browser Use》</div>
+  </div>
+</body>
+</html>

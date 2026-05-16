@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+    .title .accent { color: #EF4444; }
+    .attack {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 26px;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    .attack .head {
+      font-size: 26px;
+      font-weight: 800;
+      color: #EF4444;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .attack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .attack-list .tag {
+      background: rgba(239, 68, 68, 0.12);
+      color: #FCA5A5;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(239, 68, 68, 0.25);
+    }
+    .classifier {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    .classifier .head {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .classifier-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 26px;
+      margin: 8px 0;
+    }
+    .badge {
+      flex-shrink: 0;
+      font-size: 22px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+    .badge.ok { background: rgba(16, 185, 129, 0.15); color: #10B981; }
+    .badge.no { background: rgba(239, 68, 68, 0.15); color: #EF4444; }
+    .bottom-line {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+    }
+    .bottom-line .head {
+      font-size: 24px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .bottom-grid .item {
+      font-size: 24px;
+      color: #FFFFFF;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .bottom-grid .item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      background: #F59E0B;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">结构性风险</div>
+    <div class="title">Prompt Injection <span class="accent">无处不在</span></div>
+
+    <div class="attack">
+      <div class="head">攻击面</div>
+      <div class="attack-list">
+        <span class="tag">隐藏文字</span>
+        <span class="tag">改过的图</span>
+        <span class="tag">钓鱼弹窗</span>
+        <span class="tag">伪装系统对话框</span>
+      </div>
+    </div>
+
+    <div class="classifier">
+      <div class="head">内置注入分类器</div>
+      <div class="classifier-row"><span class="badge ok">✓ 自动</span><span>官方 Computer Use 工具</span></div>
+      <div class="classifier-row"><span class="badge no">✗ 不会</span><span>自定义工具实现</span></div>
+    </div>
+
+    <div class="bottom-line">
+      <div class="head">四条底线</div>
+      <div class="bottom-grid">
+        <div class="item">人工确认</div>
+        <div class="item">权限收窄</div>
+        <div class="item">全量日志</div>
+        <div class="item">内容当不可信</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

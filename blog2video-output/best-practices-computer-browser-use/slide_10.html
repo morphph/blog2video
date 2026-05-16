@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .accent { color: #8B5CF6; }
+    .paradigm {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .paradigm-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 20px;
+      text-align: left;
+    }
+    .paradigm-card.old { border-left: 4px solid #6B7280; }
+    .paradigm-card.new { border-left: 4px solid #10B981; }
+    .paradigm-card .label {
+      font-size: 22px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .paradigm-card.old .label { color: #6B7280; }
+    .paradigm-card.new .label { color: #10B981; }
+    .paradigm-card .text {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .arrow {
+      font-size: 40px;
+      color: #8B5CF6;
+      font-weight: 900;
+    }
+    .modes-head {
+      width: 100%;
+      font-size: 26px;
+      color: #B0B0CC;
+      text-align: left;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .modes {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+    }
+    .mode {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 18px;
+      text-align: left;
+    }
+    .mode.strict { border-left: 4px solid #EF4444; }
+    .mode.adaptive { border-left: 4px solid #10B981; }
+    .mode.goal { border-left: 4px solid #3B82F6; }
+    .mode .name {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .mode.strict .name { color: #EF4444; }
+    .mode.adaptive .name { color: #10B981; }
+    .mode.goal .name { color: #3B82F6; }
+    .mode .for {
+      font-size: 20px;
+      color: #B0B0CC;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .mode .scene {
+      font-size: 22px;
+      color: #FFFFFF;
+      line-height: 1.45;
+      font-weight: 600;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    .mode.adaptive .pill { background: rgba(16, 185, 129, 0.18); color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">Teaching Claude</div>
+    <div class="title">演示回放 <span class="accent">范式转变</span></div>
+
+    <div class="paradigm">
+      <div class="paradigm-card old">
+        <div class="label">老路</div>
+        <div class="text">改 prompt</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="paradigm-card new">
+        <div class="label">新路</div>
+        <div class="text">录演示</div>
+      </div>
+    </div>
+
+    <div class="modes-head">三种回放模式</div>
+    <div class="modes">
+      <div class="mode strict">
+        <div class="name">Strict</div>
+        <div class="for">严格按步骤</div>
+        <div class="scene">合规场景<br>UI 不变</div>
+      </div>
+      <div class="mode adaptive">
+        <div class="name">Adaptive</div>
+        <div class="for">演示当指南</div>
+        <div class="scene">默认推荐<br>灵活适应</div>
+        <div class="pill">★ 推荐</div>
+      </div>
+      <div class="mode goal">
+        <div class="name">Goal</div>
+        <div class="for">只看终点</div>
+        <div class="scene">UI 频繁改版<br>步骤当提示</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

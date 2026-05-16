@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .title .accent { color: #F59E0B; }
+    .checklist {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 26px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .checklist .head {
+      font-size: 26px;
+      font-weight: 800;
+      color: #10B981;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin: 14px 0;
+    }
+    .item .num {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #10B981;
+      color: #0D0D1A;
+      font-weight: 900;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .item .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.45;
+      padding-top: 6px;
+    }
+    .item .text .hl { color: #F59E0B; font-weight: 800; }
+    .signature {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 26px;
+      text-align: left;
+      margin-bottom: 22px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .signature .red { color: #EF4444; font-weight: 800; }
+    .brand {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">三个反直觉 · 三条行动</div>
+    <div class="title">直觉解法 <span class="accent">全错</span></div>
+
+    <div class="checklist">
+      <div class="head">现在就能改</div>
+      <div class="item">
+        <div class="num">1</div>
+        <div class="text">截图 <span class="hl">1280×720</span> 起步</div>
+      </div>
+      <div class="item">
+        <div class="num">2</div>
+        <div class="text">思考预算 <span class="hl">high / medium</span> 起步</div>
+      </div>
+      <div class="item">
+        <div class="num">3</div>
+        <div class="text">长任务上<span class="hl">滚动缓冲 + 批量裁剪</span></div>
+      </div>
+    </div>
+
+    <div class="signature">三件事的直觉解法<br>全都<span class="red">恰好是错的</span></div>
+
+    <div class="brand">AI 世界很吵<br>精读一篇，胜过刷一百条</div>
+  </div>
+</body>
+</html>

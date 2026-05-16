@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .h2 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+    .h2 .accent { color: #8B5CF6; }
+    .subtitle {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 46px;
+      font-weight: 500;
+    }
+    .columns {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 24px 20px;
+    }
+    .col.red {
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      border-left: 4px solid #EF4444;
+    }
+    .col.green {
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      border-left: 4px solid #10B981;
+    }
+    .col-head {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .col.red .col-head { color: #EF4444; }
+    .col.green .col-head { color: #10B981; }
+    .col-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .step {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.35;
+    }
+    .step:last-child { margin-bottom: 0; }
+    .num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .col.red .num { background: rgba(239, 68, 68, 0.25); color: #EF4444; }
+    .col.green .num { background: rgba(16, 185, 129, 0.25); color: #10B981; }
+    .arrow-row {
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      color: #6B7280;
+      margin: 4px 0 6px 0;
+    }
+    .footer {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .footer .accent { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="h2"><span class="accent">调试顺序</span>重排</div>
+    <div class="subtitle">把因果顺序反过来</div>
+    <div class="columns">
+      <div class="col red">
+        <div class="col-head">本能 ✗</div>
+        <div class="col-title">先怀疑模型</div>
+        <div class="step"><span class="num">1</span>Agent 出问题</div>
+        <div class="step"><span class="num">2</span>改 Agent prompt</div>
+        <div class="step"><span class="num">3</span>换更贵的模型</div>
+      </div>
+      <div class="col green">
+        <div class="col-head">重排 ✓</div>
+        <div class="col-title">最后才动模型</div>
+        <div class="step"><span class="num">1</span>查环境 / 评测</div>
+        <div class="step"><span class="num">2</span>查工具描述</div>
+        <div class="step"><span class="num">3</span>查 Harness</div>
+        <div class="step"><span class="num">4</span>最后才动 Agent</div>
+      </div>
+    </div>
+    <div class="footer">
+      动模型 = <span class="accent">回报最低、成本最高</span><br>
+      先动周边的确定性系统
+    </div>
+  </div>
+</body>
+</html>

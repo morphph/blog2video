@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .h2 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 44px;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+    .h2 .red {
+      color: #EF4444;
+    }
+    .scene-label {
+      font-size: 24px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .scene {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      margin-bottom: 28px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .reflex-chain {
+      position: relative;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .reflex-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(107, 114, 128, 0.3);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 28px;
+      font-weight: 600;
+      color: #B0B0CC;
+      margin-bottom: 10px;
+      text-align: left;
+      position: relative;
+    }
+    .reflex-card .step {
+      color: #6B7280;
+      font-weight: 800;
+      margin-right: 12px;
+    }
+    .big-x {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-12deg);
+      font-size: 280px;
+      font-weight: 900;
+      color: rgba(239, 68, 68, 0.65);
+      line-height: 1;
+      pointer-events: none;
+      text-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+    }
+    .correct {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+      text-align: left;
+    }
+    .correct .accent {
+      color: #10B981;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">反直觉 ②</div>
+    <div class="h2">工具描述<br>是<span class="red">第一嫌疑人</span></div>
+    <div class="scene-label">场景</div>
+    <div class="scene">Agent 选错工具 / 该用工具时没用</div>
+    <div class="reflex-chain">
+      <div class="reflex-card"><span class="step">1.</span>调 prompt</div>
+      <div class="reflex-card"><span class="step">2.</span>加思维链</div>
+      <div class="reflex-card"><span class="step">3.</span>加 few-shot</div>
+      <div class="reflex-card"><span class="step">4.</span>换更贵的模型</div>
+      <div class="big-x">✗</div>
+    </div>
+    <div class="correct">
+      <span class="accent">应该先查 →</span> 工具描述讲清边界了吗？<br>
+      （尤其是<span class="accent">"什么时候不该用"</span>）
+    </div>
+  </div>
+</body>
+</html>

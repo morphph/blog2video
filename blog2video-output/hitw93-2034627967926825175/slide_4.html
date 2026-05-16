@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .h2 {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+    .h2 .accent {
+      color: #8B5CF6;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 60px;
+      font-weight: 500;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .card.green {
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+    }
+    .card.yellow {
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+    }
+    .card-icon {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .card.green .card-icon { color: #10B981; }
+    .card.yellow .card-icon { color: #F59E0B; }
+    .card-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .card-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .card-desc strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .footer-note {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .footer-note .accent {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="h2"><span class="accent">Harness &gt; 模型</span><br>的适用边界</div>
+    <div class="subtitle">这一条不是万能的</div>
+    <div class="cards">
+      <div class="card green">
+        <div class="card-icon">✓</div>
+        <div class="card-title">代码任务</div>
+        <div class="card-desc">可<strong>自动判对错</strong>：编译过 / 测试过<br>→ Harness 杠杆最大</div>
+      </div>
+      <div class="card yellow">
+        <div class="card-icon">✗</div>
+        <div class="card-title">开放研究 / 多轮协商</div>
+        <div class="card-desc"><strong>弱验证</strong>场景<br>→ 模型上限仍是瓶颈</div>
+      </div>
+    </div>
+    <div class="footer-note">前提：<span class="accent">任务能被机器精确验证</span></div>
+  </div>
+</body>
+</html>

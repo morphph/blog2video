@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .h2 {
+      font-size: 54px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+    .h2 .accent { color: #8B5CF6; }
+
+    .case {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .case-row {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .case-row:last-child { margin-bottom: 0; }
+    .case-label {
+      display: inline-block;
+      min-width: 130px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .case-row.reflex .case-label { color: #EF4444; }
+    .case-row.reality .case-label { color: #10B981; }
+    .case-row.reflex .text  { color: #FFFFFF; }
+    .case-row.reality .text { color: #FFFFFF; }
+
+    .chart {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+    .bar-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .bar-row:last-child { margin-bottom: 0; }
+    .bar-label {
+      width: 260px;
+      font-size: 22px;
+      color: #B0B0CC;
+      text-align: left;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .bar-track {
+      flex: 1;
+      height: 36px;
+      background: rgba(139, 92, 246, 0.08);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 4px;
+    }
+    .bar-fill.red-high { width: 78%; background: linear-gradient(90deg, #EF4444 0%, #B91C1C 100%); }
+    .bar-fill.red-low  { width: 6%;  background: #EF4444; }
+    .bar-fill.blue-1   { width: 62%; background: #3B82F6; }
+    .bar-fill.blue-2   { width: 60%; background: #3B82F6; }
+    .bar-val {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .bar-val.muted { color: #6B7280; right: auto; left: 18px; }
+
+    .tag {
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      border-radius: 999px;
+      padding: 14px 26px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">反直觉 ③</div>
+    <div class="h2">评测系统自己的 bug<br><span class="accent">最难发现</span></div>
+    <div class="case">
+      <div class="case-row reflex"><span class="case-label">现象 →</span><span class="text">评测分数掉了</span></div>
+      <div class="case-row reflex"><span class="case-label">本能 →</span><span class="text">"模型退化了" ✗</span></div>
+      <div class="case-row reality"><span class="case-label">真相 →</span><span class="text">评测进程被内存峰值 kill 了</span></div>
+    </div>
+    <div class="chart">
+      <div class="bar-row">
+        <div class="bar-label">基础设施<br>错误率 ↓↓</div>
+        <div class="bar-track"><div class="bar-fill red-high"><span class="bar-val">高</span></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">（放开内存上限）</div>
+        <div class="bar-track"><div class="bar-fill red-low"><span class="bar-val muted">≈ 0</span></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">模型得分 ≈ 平稳</div>
+        <div class="bar-track"><div class="bar-fill blue-1"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">（前后对比）</div>
+        <div class="bar-track"><div class="bar-fill blue-2"></div></div>
+      </div>
+    </div>
+    <div class="tag">聚合分数看不到这一层</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .h2 {
+      font-size: 52px;
+      font-weight: 900;
+      margin-bottom: 36px;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+    .h2 .accent {
+      color: #8B5CF6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 26px 22px;
+      text-align: left;
+    }
+    .card.purple { border-left: 4px solid #8B5CF6; border-color: rgba(139, 92, 246, 0.4); }
+    .card.blue   { border-left: 4px solid #3B82F6; border-color: rgba(59, 130, 246, 0.4); }
+    .card.amber  { border-left: 4px solid #F59E0B; border-color: rgba(245, 158, 11, 0.4); }
+    .card.green  { border-left: 4px solid #10B981; border-color: rgba(16, 185, 129, 0.4); }
+
+    .card-label {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .card.purple .card-label { color: #8B5CF6; }
+    .card.blue .card-label   { color: #3B82F6; }
+    .card.amber .card-label  { color: #F59E0B; }
+    .card.green .card-label  { color: #10B981; }
+
+    .big-num {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .card.purple .big-num { color: #8B5CF6; }
+    .card.blue .big-num   { color: #3B82F6; }
+    .card.amber .big-num  { color: #F59E0B; }
+    .card.green .big-num  { color: #10B981; }
+
+    .sub {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+    .sub strong { color: #FFFFFF; font-weight: 700; }
+
+    .footer {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .footer .accent { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="h2">改描述 vs 换模型<br><span class="accent">便宜一万倍的四组数据</span></div>
+    <div class="grid">
+      <div class="card purple">
+        <div class="card-label">Anthropic Skills</div>
+        <div class="big-num">73% → 85%</div>
+        <div class="sub">加<strong>反例</strong>后准确率提升<br>响应时间 −18%</div>
+      </div>
+      <div class="card blue">
+        <div class="card-label">Tool Search</div>
+        <div class="big-num">49% → 74%</div>
+        <div class="sub">Opus 4 工具调用准确率<br>上下文保留 <strong>95%</strong></div>
+      </div>
+      <div class="card amber">
+        <div class="card-label">Programmatic Tool Calling</div>
+        <div class="big-num">150K → 2K</div>
+        <div class="sub">Token 消耗 <strong>−75×</strong><br>多次调用合成一次代码执行</div>
+      </div>
+      <div class="card green">
+        <div class="card-label">Cursor MCP</div>
+        <div class="big-num">−46.9%</div>
+        <div class="sub">A/B 测试：MCP 任务<br>总 token 消耗下降</div>
+      </div>
+    </div>
+    <div class="footer"><span class="accent">先改描述</span>，比换模型便宜一万倍</div>
+  </div>
+</body>
+</html>

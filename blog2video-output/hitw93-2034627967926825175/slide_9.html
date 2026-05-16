@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 22px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .h2 {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+    .h2 .red { color: #EF4444; }
+    .h2 .green { color: #10B981; }
+    .case-tag {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 46px;
+      font-weight: 600;
+    }
+    .cards {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .card.red {
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      border-left: 4px solid #EF4444;
+    }
+    .card.green {
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      border-left: 4px solid #10B981;
+    }
+    .card-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .card.red .card-title { color: #EF4444; }
+    .card.green .card-title { color: #10B981; }
+    .card-sub {
+      font-size: 22px;
+      color: #6B7280;
+      margin-bottom: 22px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .verdict {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .icon {
+      font-size: 48px;
+      font-weight: 900;
+      margin-top: 8px;
+    }
+    .card.red .icon { color: #EF4444; }
+    .card.green .icon { color: #10B981; }
+    .footer-note {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+      text-align: left;
+    }
+    .footer-note .accent { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">案例</div>
+    <div class="h2"><span class="red">Trace</span> vs <span class="green">Outcome</span></div>
+    <div class="case-tag">Opus 4.5 机票预订 Agent</div>
+    <div class="cards">
+      <div class="card red">
+        <div class="card-title">Trace</div>
+        <div class="card-sub">执行过程</div>
+        <div class="verdict">"没按标准流程"</div>
+        <div class="icon">✗</div>
+      </div>
+      <div class="card green">
+        <div class="card-title">Outcome</div>
+        <div class="card-sub">最终结果</div>
+        <div class="verdict">用户拿到<br>更便宜方案</div>
+        <div class="icon">✓</div>
+      </div>
+    </div>
+    <div class="footer-note"><span class="accent">评分器自己的局限</span>，<br>比 Agent 的局限更难发现</div>
+  </div>
+</body>
+</html>

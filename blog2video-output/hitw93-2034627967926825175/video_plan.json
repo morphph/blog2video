@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "你不知道的 Agent：原理、架构与工程实践",
+    "title_zh": "换更贵的模型，为什么没救？",
+    "url": "https://x.com/hitw93/status/2034627967926825175",
+    "author": "Tw93 (@HiTw93)",
+    "word_count": 3116,
+    "slug": "hitw93-2034627967926825175"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "三个反直觉点（Harness > 模型、工具描述、评测 bug）服务于同一个 thesis——Agent 调试的因果顺序需要重排。拆开会破坏'重排'本身的认知冲击。源文章 30k 字本来可以拆，但叙述稿已经按 thesis 收敛过，作为单集呈现最锋利。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "换更贵的模型，为什么没救？"
+      }
+    ]
+  }
+}

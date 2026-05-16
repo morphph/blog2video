@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .h2 {
+      font-size: 64px;
+      font-weight: 900;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+    }
+    .h2 .accent {
+      color: #8B5CF6;
+    }
+    .big-number-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 16px;
+      padding: 40px 32px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .big-number {
+      font-size: 96px;
+      font-weight: 900;
+      color: #F59E0B;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+    .big-number-label {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .meta-row {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .meta {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 20px 12px;
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .meta strong {
+      display: block;
+      font-size: 42px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 28px;
+    }
+    .subtitle .accent {
+      color: #8B5CF6;
+    }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .pill {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 999px;
+      padding: 12px 22px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #8B5CF6;
+    }
+    .source {
+      font-size: 20px;
+      color: #6B7280;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">反直觉 ①</div>
+    <div class="h2"><span class="accent">Harness</span> &gt; 模型</div>
+    <div class="big-number-card">
+      <div class="big-number">1500 PR · 10×</div>
+      <div class="big-number-label">3 个工程师 · 5 个月 · 近百万行代码</div>
+    </div>
+    <div class="subtitle">杠杆不在模型，<span class="accent">在 Harness</span></div>
+    <div class="pills">
+      <div class="pill">上下文管理</div>
+      <div class="pill">工具集</div>
+      <div class="pill">权限系统</div>
+      <div class="pill">外化状态</div>
+    </div>
+    <div class="source">来源：OpenAI Codex 团队</div>
+  </div>
+</body>
+</html>

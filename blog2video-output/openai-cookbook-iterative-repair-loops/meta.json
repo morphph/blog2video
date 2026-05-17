@@ -1,0 +1,15 @@
+{
+  "topic": "Agent 不是改了，是差距变小",
+  "blog_url": "https://developers.openai.com/cookbook/examples/codex/build_iterative_repair_loops_with_codex",
+  "source": "openai-cookbook-iterative-repair-loops",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

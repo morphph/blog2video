@@ -73,6 +73,11 @@ blog2video-remotion/              ← 独立 Remotion 项目
 1.7. Image Enrichment（orchestrator 直接执行）
 2. 调用 Insight Memo Writer subagent → insight_memo.md
 3. 调用 Script Writer subagent → narration.md
+3.5. ⚠️ **强制 Script Review 检查点** ⚠️
+     - 把 narration.md 的 Hook 段完整展示给用户
+     - 显式询问："Hook 是否通过？通过后继续生成视频；否则告诉我要怎么改"
+     - 在用户明确确认前，绝不进入 Stage 4 / Slide Planner
+     - 用户可能要求重写 Hook、改正文论点、调整结构——按要求迭代 narration.md 直至获得确认
 4. 调用 Episode Splitter subagent → video_plan.json + video_N_narration.md
 5. 对每个视频，依次调用：
    a. Slide Planner subagent → video_N_script.md
@@ -82,6 +87,8 @@ blog2video-remotion/              ← 独立 Remotion 项目
 6. 渲染（render-all.mjs，内含 Gate 3 + Gate 4）
 7. 输出所有文件路径
 ```
+
+**为什么 Step 3.5 必须存在**：Hook 是观众"为什么不划走"的唯一理由。Stage 3 之后的所有产物（slide、TTS 音频、最终视频）都假定 Hook 已经确定，修改 Hook 等于全部重做。把 Hook review 前置到生成视频之前，节省 2-3 小时返工。
 
 ## 输出目录
 

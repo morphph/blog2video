@@ -95,6 +95,20 @@
 示例：
 - "Agent 的性能天花板不取决于模型能做什么，而取决于你在模型周围搭建了什么样的系统。"
 - "今天需要的脚手架，明天可能变成瓶颈。"
+
+## hot_keywords
+扫描原文，列出当前正在火的关键词（如果有）。Script Writer 会用这些词作为 Hook 第一句或第二句的锚点——直接命中听众的搜索意图。
+
+**当前热词清单（2026 年版）**：Claude Code, Context Engineering, Agent Harness, Codex, MCP, Skills, /goal 模式, Computer Use, Subagent
+
+格式：
+- [关键词] — 在原文中出现的位置/语境（说明它是核心概念还是周边提及）
+
+如果原文里某个热词只是一笔带过，不要硬塞——只标注它实质性出现的情况。如果原文里没有任何热词，写"无明显热词"，让 Script Writer 用其他 hook 锚点（事实/数字/痛点）。
+
+示例：
+- Claude Code — 全文核心，反复出现在大代码库使用场景
+- Context Engineering — 全文标题概念，与 prompt engineering 形成对比
 ```
 
 ## 写作标准
@@ -137,3 +151,4 @@
 5. tradeoffs_and_limits 是否至少有 1 条实质性的代价或局限？
 6. evidence_map 是否包含至少 3 个具体数字或具体事实？
 7. what_to_leave_out 是否同时包含"不该进入的素材"和"应避免的叙事方向"？
+8. hot_keywords 段落是否完成（即使是"无明显热词"也要明确写出来）？

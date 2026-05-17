@@ -292,3 +292,218 @@ Elapsed time:         1.4s
 
 ✅ Done: harness-design-long-running-apps uploaded to Google Drive
 [2026-04-20 08:44:40] ✅ Uploaded: harness-design-long-running-apps
+[2026-05-17 06:21:45] 📤 New folder detected: chrishayduk-2053807198870880743 (marker: meta.json) — uploading to Google Drive...
+[2026-05-17 06:21:45] 📤 New folder detected: chrishayduk-2053807198870880743 (marker: meta.json) — uploading to Google Drive...
+📤 Uploading: chrishayduk-2053807198870880743 → gdrive:blog2video/chrishayduk-2053807198870880743
+📤 Uploading: chrishayduk-2053807198870880743 → gdrive:blog2video/chrishayduk-2053807198870880743
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 1 / 6, 17%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Checking:
+ *                                     meta.json: checking
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 1 / 6, 17%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Checking:
+ *                                     meta.json: checking
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:46 INFO  : source_blog.md: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 1 / 6, 17%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.6s
+Checking:
+ *                                     meta.json: checking
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:46 INFO  : meta.json: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 1 / 6, 17%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.7s
+Checking:
+ *                                     meta.json: checking
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:47 INFO  : video_1.mp4: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 2 / 6, 33%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.7s
+Checking:
+ *                                     meta.json: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:47 INFO  : video_1_cover_photo.png: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 3 / 6, 50%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.7s
+Checking:
+ *                                     meta.json: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:47 INFO  : video_1_audio.vtt: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 2 / 6, 33%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         0.7s
+Checking:
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                             video_1_audio.vtt: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 0 B/s, ETA -
+Checks:                 3 / 6, 50%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Checking:
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 4 / 6, 67%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.0s
+Checking:
+ *                                     meta.json: checking
+ *                             video_1_audio.vtt: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 0/s, -
+2026/05/17 06:21:47 INFO  : video_1_script.md: Copied (replaced existing)
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 4 / 6, 67%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Checking:
+ *                                     meta.json: checking
+ *                             video_1_audio.vtt: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.067Ki/s, 0sTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 3 / 6, 50%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Checking:
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.064Ki/s, 0sTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 4 / 6, 67%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         1.5s
+Checking:
+ *                                     meta.json: checking
+ *                             video_1_audio.vtt: checking
+2026/05/17 06:21:47 INFO  : video_1_cover_photo.png: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 3 / 6, 50%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.5s
+Checking:
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+ *                       video_1_cover_photo.png: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.064Ki/s, 0s
+2026/05/17 06:21:47 INFO  : meta.json: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 4 / 6, 67%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         1.5s
+Checking:
+ *                                     meta.json: checking
+ *                             video_1_audio.vtt: checking
+2026/05/17 06:21:47 INFO  : video_1.mp4: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 4 / 6, 67%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.6s
+Checking:
+ *                                source_blog.md: checking
+ *                                   video_1.mp4: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.064Ki/s, 0s
+2026/05/17 06:21:47 INFO  : video_1_audio.vtt: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 5 / 6, 83%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+Checking:
+ *                             video_1_audio.vtt: checkingTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+2026/05/17 06:21:47 INFO  : 
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         1.6s
+
+✅ Done: chrishayduk-2053807198870880743 uploaded to Google Drive
+[2026-05-17 06:21:47] ✅ Uploaded: chrishayduk-2053807198870880743
+
+2026/05/17 06:21:48 INFO  : source_blog.md: Updated modification time in destination
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 5 / 6, 83%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         1.7s
+Checking:
+ *                                source_blog.md: checking
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.064Ki/s, 0sTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 8.074 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         2.0s
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 8.064Ki/s, 0sTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 4.037 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         2.5s
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 4.032Ki/s, 0s
+2026/05/17 06:21:48 INFO  : video_1_script.md: Copied (replaced existing)
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 4.037 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            0 / 1, 0%
+Elapsed time:         2.5s
+Transferring:
+ *                             video_1_script.md:100% /8.075Ki, 4.032Ki/s, 0sTransferred:   	    8.075 KiB / 8.075 KiB, 100%, 4.037 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         2.5s
+2026/05/17 06:21:48 INFO  : 
+Transferred:   	    8.075 KiB / 8.075 KiB, 100%, 4.037 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%, Listed 12
+Transferred:            1 / 1, 100%
+Elapsed time:         2.5s
+
+✅ Done: chrishayduk-2053807198870880743 uploaded to Google Drive
+[2026-05-17 06:21:48] ✅ Uploaded: chrishayduk-2053807198870880743

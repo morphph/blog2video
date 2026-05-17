@@ -2,7 +2,7 @@
 
 ## Hook
 
-OpenAI 官方 cookbook 发了一篇讲 Iterative Repair Loops 的文章。我读完最被刺到的，不是 Codex 又能跑闭环了。而是它把一个我之前没想清楚的问题，说得很直白。今天不聊怎么用 Codex 搭一个修复 Agent，只聊一件事——你怎么知道一个 Agent 循环是在收敛，还是在原地踏步。
+你让 Codex 跑了一晚上的自动修复，早上起来看，几十次 commit、几百行改动。但代码真的更好了吗？OpenAI 自己出的 cookbook 给了一个判断标准，能让你不靠肉眼也能知道——Agent 是真在收敛，还是只是在烧账单。
 
 ## 真正的成功信号，不是 Agent 在动手
 

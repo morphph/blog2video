@@ -2,7 +2,7 @@
 
 [SLIDE 1: cover] (0:00 - 1:00)
 
-OpenAI 官方 cookbook 刚刚发了一篇东西，把"让 Agent 越用越强"这件事第一次拆成了一条可以照抄的流水线。Agents SDK 出 trace，人和 LLM 出 feedback，Promptfoo 跑 eval，HALO 给改动排序，最后 Codex 直接落地成 PR。我读完最大的反应是：原来绝大多数团队改 Agent 的方式，从一开始就改错了地方。今天这期不讲怎么装这套工具，只聊一件事——改 prompt 救不了 Agent，你真正要改的是 5 个面。
+Codex 跑出来效果不对，你的团队大概率在 Slack 里留几句"下次注意要引用真实数据"——下次它照样踩。OpenAI 官方 cookbook 把这件事点穿了：教训留成评论，是一次性消耗品。真正能让 Codex 越用越强的，是一条把每次失败变成永久 eval 的飞轮。
 
 [SLIDE 2: principle] (1:00 - 2:30)
 

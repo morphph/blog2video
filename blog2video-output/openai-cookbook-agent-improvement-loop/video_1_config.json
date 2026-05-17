@@ -9,76 +9,76 @@
       "slide_number": 1,
       "type": "image",
       "start_time_seconds": 0,
-      "duration_seconds": 36.036,
+      "duration_seconds": 22.5,
       "data": {}
     },
     {
       "slide_number": 2,
       "type": "image",
-      "start_time_seconds": 36.036,
-      "duration_seconds": 52.092,
+      "start_time_seconds": 22.5,
+      "duration_seconds": 53.712,
       "data": {}
     },
     {
       "slide_number": 3,
       "type": "image",
-      "start_time_seconds": 88.128,
-      "duration_seconds": 64.61999999999999,
+      "start_time_seconds": 76.212,
+      "duration_seconds": 65.736,
       "data": {}
     },
     {
       "slide_number": 4,
       "type": "image",
-      "start_time_seconds": 152.748,
-      "duration_seconds": 74.88,
+      "start_time_seconds": 141.948,
+      "duration_seconds": 75.23999999999998,
       "data": {}
     },
     {
       "slide_number": 5,
       "type": "image",
-      "start_time_seconds": 227.628,
-      "duration_seconds": 75.92400000000004,
+      "start_time_seconds": 217.188,
+      "duration_seconds": 77.04000000000002,
       "data": {}
     },
     {
       "slide_number": 6,
       "type": "image",
-      "start_time_seconds": 303.552,
-      "duration_seconds": 97.596,
+      "start_time_seconds": 294.228,
+      "duration_seconds": 100.25999999999999,
       "data": {}
     },
     {
       "slide_number": 7,
       "type": "image",
-      "start_time_seconds": 401.148,
-      "duration_seconds": 68.00399999999996,
+      "start_time_seconds": 394.488,
+      "duration_seconds": 69.58800000000002,
       "data": {}
     },
     {
       "slide_number": 8,
       "type": "image",
-      "start_time_seconds": 469.152,
-      "duration_seconds": 92.844,
+      "start_time_seconds": 464.076,
+      "duration_seconds": 94.93200000000002,
       "data": {}
     },
     {
       "slide_number": 9,
       "type": "image",
-      "start_time_seconds": 561.996,
-      "duration_seconds": 61.34400000000005,
+      "start_time_seconds": 559.008,
+      "duration_seconds": 59.219999999999914,
       "data": {}
     },
     {
       "slide_number": 10,
       "type": "image",
-      "start_time_seconds": 623.34,
-      "duration_seconds": 30.991129251700727,
+      "start_time_seconds": 618.228,
+      "duration_seconds": 31.9237097505669,
       "data": {}
     },
     {
       "slide_number": 11,
       "type": "cta",
-      "start_time_seconds": 654.3311292517008,
+      "start_time_seconds": 650.1517097505669,
       "duration_seconds": 5,
       "data": {
         "type": "cta"
@@ -88,622 +88,617 @@
   "subtitles": [
     {
       "start": 0,
-      "end": 8.898,
-      "text": "OpenAI 官方 cookbook 刚刚发了一篇东西，把\"让 Agent 越用越强\"这件事第一次拆成了一条可以照抄的流水线。"
+      "end": 9.061,
+      "text": "Codex 跑出来效果不对，你的团队大概率在 Slack 里留几句\"下次注意要引用真实数据\"——下次它照样踩。"
     },
     {
-      "start": 9.098,
-      "end": 20.039,
-      "text": "Agents SDK 出 trace，人和 LLM 出 feedback，Promptfoo 跑 eval，HALO 给改动排序，最后 Codex 直接落地成 PR。"
+      "start": 9.061,
+      "end": 15.98,
+      "text": "OpenAI 官方 cookbook 把这件事点穿了：教训留成评论，是一次性消耗品。"
     },
     {
-      "start": 20.196,
-      "end": 27.034,
-      "text": "我读完最大的反应是：原来绝大多数团队改 Agent 的方式，从一开始就改错了地方。"
+      "start": 16.128,
+      "end": 22.332,
+      "text": "真正能让 Codex 越用越强的，是一条把每次失败变成永久 eval 的飞轮。"
     },
     {
-      "start": 27.034,
-      "end": 35.874,
-      "text": "今天这期不讲怎么装这套工具，只聊一件事——改 prompt 救不了 Agent，你真正要改的是 5 个面。"
-    },
-    {
-      "start": 36.036,
-      "end": 38.342,
+      "start": 22.5,
+      "end": 24.842,
       "text": "先说一个我特别熟悉的场景。"
     },
     {
-      "start": 38.342,
-      "end": 49.16,
+      "start": 24.842,
+      "end": 35.833,
       "text": "Agent 跑出来效果不对，团队在 Slack 里讨论一通，留几句话：\"下次注意要引用真实数据\"、\"下次不要瞎推断指标\"。"
     },
     {
-      "start": 49.32,
-      "end": 54.34,
+      "start": 36,
+      "end": 41.101,
       "text": "这些话当时看挺像那么回事，但下一次跑，同样的坑还是踩。"
     },
     {
-      "start": 54.504,
-      "end": 65.44,
+      "start": 41.256,
+      "end": 51.564,
       "text": "原文里有一句话点得特别狠，说大多数团队的迭代方式，是把教训留成 disconnected comments——一条条断开的评论。"
     },
     {
-      "start": 65.44,
-      "end": 68.345,
+      "start": 51.564,
+      "end": 54.302,
       "text": "听起来是经验，其实是一次性消耗品。"
     },
     {
-      "start": 68.345,
-      "end": 70.054,
+      "start": 54.302,
+      "end": 55.912,
       "text": "说完就忘，下次重来。"
     },
     {
-      "start": 70.2,
-      "end": 74.121,
+      "start": 56.052,
+      "end": 60.499,
       "text": "而这篇 cookbook 提的方法，是另一种姿态。"
     },
     {
-      "start": 74.121,
-      "end": 77.101,
+      "start": 60.499,
+      "end": 63.88,
       "text": "它不是优化某一次回答，它是建一条飞轮。"
     },
     {
-      "start": 77.101,
-      "end": 82.12,
+      "start": 63.88,
+      "end": 69.572,
       "text": "每一次失败的 feedback，都会被沉淀成下一轮的 eval。"
     },
     {
-      "start": 82.12,
-      "end": 84.473,
+      "start": 69.572,
+      "end": 72.241,
       "text": "学到的东西不靠人记，靠代码记。"
     },
     {
-      "start": 84.636,
-      "end": 87.984,
+      "start": 72.396,
+      "end": 76.046,
       "text": "这才是\"越用越强\"四个字真正的含义。"
     },
     {
-      "start": 88.128,
-      "end": 92.498,
+      "start": 76.212,
+      "end": 80.837,
       "text": "这条飞轮第一个反直觉的点，就在你以为要改的对象上。"
     },
     {
-      "start": 92.664,
-      "end": 101.688,
+      "start": 81,
+      "end": 90.841,
       "text": "你跑了一次 Agent，结果不行，你的第一反应大概率是回到 system prompt，加一句\"请务必引用真实数据\"。"
     },
     {
-      "start": 101.688,
-      "end": 105.358,
+      "start": 90.841,
+      "end": 94.844,
       "text": "但原文一开始就把\"harness\"这个词钉死了。"
     },
     {
-      "start": 105.516,
-      "end": 117.906,
+      "start": 95.004,
+      "end": 108.436,
       "text": "Harness 是一份完整的契约，包含五个面：instructions、tools、routing、output requirements、validation checks。"
     },
     {
-      "start": 117.906,
-      "end": 120.3,
+      "start": 108.436,
+      "end": 111.03,
       "text": "指令、工具、路由、输出要求、校验。"
     },
     {
-      "start": 120.456,
-      "end": 124.966,
+      "start": 111.168,
+      "end": 115.507,
       "text": "你听到这里就明白了——prompt 只是其中一个面。"
     },
     {
-      "start": 124.966,
-      "end": 129.824,
+      "start": 115.507,
+      "end": 120.18,
       "text": "当你只在改 prompt 的时候，你其实只动了五分之一。"
     },
     {
-      "start": 129.824,
-      "end": 137.283,
+      "start": 120.18,
+      "end": 127.357,
       "text": "剩下的四个面，工具够不够、调用顺序对不对、要求模型输出什么、有没有人去校验，全都没动。"
     },
     {
-      "start": 137.448,
-      "end": 145.022,
+      "start": 127.512,
+      "end": 135.423,
       "text": "Agent 表现没改善，不是因为模型笨，是因为你以为问题在 prompt，其实问题在另外四个面里。"
     },
     {
-      "start": 145.188,
-      "end": 146.941,
+      "start": 135.576,
+      "end": 137.045,
       "text": "这一刀切得很干脆。"
     },
     {
-      "start": 146.941,
-      "end": 152.588,
+      "start": 137.045,
+      "end": 141.78,
       "text": "它把\"调 Agent\"从一个写作问题，变成了一个工程问题。"
     },
     {
-      "start": 152.748,
-      "end": 163.696,
+      "start": 141.948,
+      "end": 152.316,
       "text": "整条飞轮里有六个组件：Agents SDK、trace processor、feedback 收集、Promptfoo、HALO、Codex。"
     },
     {
-      "start": 163.696,
-      "end": 170.481,
+      "start": 152.316,
+      "end": 158.741,
       "text": "看起来 trace 很性感，HALO 听起来很高级，Codex 自动出 PR 最像未来。"
     },
     {
-      "start": 170.64,
-      "end": 179.073,
+      "start": 158.904,
+      "end": 167.465,
       "text": "但我读完之后认为，整条飞轮里杠杆最大的那一步，是看起来最不起眼的——把 feedback 转成 Promptfoo eval。"
     },
     {
-      "start": 179.244,
-      "end": 180.073,
+      "start": 167.616,
+      "end": 168.433,
       "text": "为什么？"
     },
     {
-      "start": 180.073,
-      "end": 185.669,
+      "start": 168.433,
+      "end": 173.948,
       "text": "因为这一步是经验从\"一次性\"变成\"可复用\"的唯一接口。"
     },
     {
-      "start": 185.832,
-      "end": 188.283,
+      "start": 174.096,
+      "end": 176.643,
       "text": "你想一下，没有这一步会怎样。"
     },
     {
-      "start": 188.283,
-      "end": 195.986,
+      "start": 176.643,
+      "end": 184.648,
       "text": "你跑 trace，你收 feedback，HALO 给你排序，Codex 帮你改完代码。"
     },
     {
-      "start": 195.986,
-      "end": 196.511,
+      "start": 184.648,
+      "end": 185.194,
       "text": "挺好。"
     },
     {
-      "start": 196.511,
-      "end": 201.238,
+      "start": 185.194,
+      "end": 190.107,
       "text": "但下一次跑，新的 Agent 怎么知道这次学到的东西？"
     },
     {
-      "start": 201.238,
-      "end": 202.114,
+      "start": 190.107,
+      "end": 191.016,
       "text": "没法知道。"
     },
     {
-      "start": 202.284,
-      "end": 207.432,
+      "start": 191.16,
+      "end": 196.691,
       "text": "除非你把这次学到的判准，固化成一条永远会被执行的 eval。"
     },
     {
-      "start": 207.576,
-      "end": 212.935,
+      "start": 196.848,
+      "end": 202.544,
       "text": "只有这一步做到了，下次回归的时候，老错误才会被自动拦下来。"
     },
     {
-      "start": 212.935,
-      "end": 215.707,
+      "start": 202.544,
+      "end": 205.49,
       "text": "其他组件没有这一步，全是空转。"
     },
     {
-      "start": 215.856,
-      "end": 222.13,
+      "start": 205.632,
+      "end": 211.794,
       "text": "这也是为什么我说\"你以为在改 prompt，其实要改的是一条飞轮\"。"
     },
     {
-      "start": 222.13,
-      "end": 227.482,
+      "start": 211.794,
+      "end": 217.049,
       "text": "飞轮的核心齿轮，不是哪个组件最炫，而是哪一步让经验能复利。"
     },
     {
-      "start": 227.628,
-      "end": 231.708,
+      "start": 217.188,
+      "end": 221.047,
       "text": "第二个反直觉的设计，藏在它的样本选择里。"
     },
     {
-      "start": 231.876,
-      "end": 237.351,
+      "start": 221.184,
+      "end": 226.928,
       "text": "这套流水线里有 5 条 traced runs，覆盖 5 种场景。"
     },
     {
-      "start": 237.351,
-      "end": 240.67,
+      "start": 226.928,
+      "end": 230.41,
       "text": "融资风险，要从烧钱速度和现金跑道推出来。"
     },
     {
-      "start": 240.67,
-      "end": 244.32,
+      "start": 230.41,
+      "end": 234.24,
       "text": "营收质量，要把 ARR bridge 对账。"
     },
     {
-      "start": 244.32,
-      "end": 247.473,
+      "start": 234.24,
+      "end": 237.547,
       "text": "客户集中度，要把母账户合并以后重新看。"
     },
     {
-      "start": 247.644,
-      "end": 253.21,
+      "start": 237.708,
+      "end": 242.72,
       "text": "企业级安全准备度，要在 SOC 2 缺位的前提下评估。"
     },
     {
-      "start": 253.21,
-      "end": 259.189,
+      "start": 242.72,
+      "end": 248.103,
       "text": "还有一类，是那种根本不该被模型推断的指标，模型却容易硬猜。"
     },
     {
-      "start": 259.344,
-      "end": 260.693,
+      "start": 248.256,
+      "end": 249.629,
       "text": "你注意到了吗？"
     },
     {
-      "start": 260.693,
-      "end": 264.738,
+      "start": 249.629,
+      "end": 253.75,
       "text": "五条 trace，没有一条是\"演示成功\"。"
     },
     {
-      "start": 264.738,
-      "end": 266.28,
+      "start": 253.75,
+      "end": 255.319,
       "text": "全部是失败模式。"
     },
     {
-      "start": 266.436,
-      "end": 269.532,
+      "start": 255.456,
+      "end": 258.492,
       "text": "这一点和我们大部分人的直觉完全相反。"
     },
     {
-      "start": 269.532,
-      "end": 275.38,
+      "start": 258.492,
+      "end": 264.226,
       "text": "我们做 demo 的时候，总想先挑几个能跑通的场景，让别人看到效果。"
     },
     {
-      "start": 275.544,
-      "end": 286.276,
+      "start": 264.384,
+      "end": 275.801,
       "text": "但这套流水线从一开始就把 eval 当成防回归工具来设计——既然是防回归，样本就必须覆盖\"会出错的地方\"，不是\"已经能跑的地方\"。"
     },
     {
-      "start": 286.416,
-      "end": 290.295,
+      "start": 275.94,
+      "end": 280.07,
       "text": "happy path 不用测，反正大概率能过。"
     },
     {
-      "start": 290.295,
-      "end": 294.849,
+      "start": 280.07,
+      "end": 284.919,
       "text": "真正要测的，是 Agent 历来栽过跟头的那五个地方。"
     },
     {
-      "start": 295.02,
-      "end": 296.919,
+      "start": 285.084,
+      "end": 287.117,
       "text": "这是一种很工程师的思维。"
     },
     {
-      "start": 296.919,
-      "end": 303.407,
+      "start": 287.117,
+      "end": 294.063,
       "text": "但很多团队做 Agent eval，做着做着就变成了在收集成功案例，自己感动自己。"
     },
     {
-      "start": 303.552,
-      "end": 305.817,
+      "start": 294.228,
+      "end": 296.504,
       "text": "接着说第三个面，输出要求。"
     },
     {
-      "start": 305.817,
-      "end": 311.045,
+      "start": 296.504,
+      "end": 301.756,
       "text": "这一段我觉得是整篇 cookbook 里最容易被低估的设计。"
     },
     {
-      "start": 311.184,
-      "end": 316.187,
+      "start": 301.896,
+      "end": 306.997,
       "text": "大多数团队心里\"Agent 做完任务\"的定义是什么？"
     },
     {
-      "start": 316.187,
-      "end": 317.919,
+      "start": 306.997,
+      "end": 308.763,
       "text": "模型回完话就算完。"
     },
     {
-      "start": 317.919,
-      "end": 320.035,
+      "start": 308.763,
+      "end": 310.921,
       "text": "一段漂亮的总结，结束。"
     },
     {
-      "start": 320.184,
-      "end": 325.877,
+      "start": 311.076,
+      "end": 317.373,
       "text": "但这套 harness 把\"完成\"重新定义成一组可机器校验的物理产物。"
     },
     {
-      "start": 326.016,
-      "end": 340.498,
+      "start": 317.52,
+      "end": 332.606,
       "text": "Agent 跑完，必须落下六个文件：summary_answer.md，一句话答案；investment_memo.md，完整版分析；risk_register.json，结构化的风险清单；"
     },
     {
-      "start": 340.698,
-      "end": 345.289,
+      "start": 332.806,
+      "end": 336.92,
       "text": "open_questions.md，还没回答的开放问题；"
     },
     {
-      "start": 345.456,
-      "end": 354.783,
+      "start": 337.068,
+      "end": 348.056,
       "text": "citations.json，每条 claim 对应到了哪份文件；evidence_table.csv，一份审计追溯表。"
     },
     {
-      "start": 354.924,
-      "end": 356.747,
+      "start": 348.192,
+      "end": 350.101,
       "text": "六件产物，落在工作目录里。"
     },
     {
-      "start": 356.747,
-      "end": 358.99,
+      "start": 350.101,
+      "end": 352.451,
       "text": "然后还不算完——还要过两道校验。"
     },
     {
-      "start": 358.99,
-      "end": 370.347,
+      "start": 352.451,
+      "end": 364.346,
       "text": "一个脚本叫 check_evidence_coverage.py，专门检查每一条 claim 是不是真的引用了 dataroom 里存在的文件，防止模型瞎编引用。"
     },
     {
-      "start": 370.512,
-      "end": 380.652,
+      "start": 364.5,
+      "end": 373.862,
       "text": "另一个叫 validate_output_contract.py，检查六个文件存不存在、JSON 结构对不对、引用的 source 合不合法。"
     },
     {
-      "start": 380.808,
-      "end": 382.56,
+      "start": 374.004,
+      "end": 375.734,
       "text": "这套设计的意义在哪里？"
     },
     {
-      "start": 382.56,
-      "end": 390.843,
+      "start": 375.734,
+      "end": 383.915,
       "text": "只有当\"完成\"被定义成机器可校验的东西，Promptfoo 才能把它当成 pass 或 fail 来跑。"
     },
     {
-      "start": 390.843,
-      "end": 394.826,
+      "start": 383.915,
+      "end": 387.848,
       "text": "换句话说，没有这份六件套，eval 根本无从下手。"
     },
     {
-      "start": 394.992,
-      "end": 400.987,
+      "start": 388.008,
+      "end": 394.34,
       "text": "所谓的\"Agent 改进飞轮\"，前提是先有一条机器看得懂的及格线。"
     },
     {
-      "start": 401.148,
-      "end": 403.739,
+      "start": 394.488,
+      "end": 397.178,
       "text": "再往里看一层，你会发现更狠的设计。"
     },
     {
-      "start": 403.739,
-      "end": 408.769,
+      "start": 397.178,
+      "end": 402.399,
       "text": "这套 harness 不靠自然语言约束 Agent，它靠数据结构。"
     },
     {
-      "start": 408.924,
-      "end": 415.898,
+      "start": 402.552,
+      "end": 409.329,
       "text": "源码里有三个 Python dataclass：ModelSettings，AgentConfig，ToolPolicy。"
     },
     {
-      "start": 415.898,
-      "end": 419.556,
+      "start": 409.329,
+      "end": 412.885,
       "text": "allowed data roots，Agent 能读哪些目录。"
     },
     {
-      "start": 419.556,
-      "end": 422.643,
+      "start": 412.885,
+      "end": 415.885,
       "text": "writable output dirs，能往哪里写。"
     },
     {
-      "start": 422.643,
-      "end": 425.844,
+      "start": 416.085,
+      "end": 420.071,
       "text": "required artifacts，必须落下哪些文件。"
     },
     {
-      "start": 425.988,
-      "end": 430.195,
+      "start": 420.228,
+      "end": 423.797,
       "text": "evidence preferences，证据冲突时优先信谁。"
     },
     {
-      "start": 430.344,
-      "end": 436.804,
+      "start": 423.936,
+      "end": 431.046,
       "text": "这些约束不是在 system prompt 里写\"请你只读这些目录\"，而是直接写进 Python 类。"
     },
     {
-      "start": 436.968,
-      "end": 437.881,
+      "start": 431.208,
+      "end": 432.102,
       "text": "差别在哪？"
     },
     {
-      "start": 437.881,
-      "end": 442.261,
+      "start": 432.102,
+      "end": 436.395,
       "text": "写在 prompt 里的，是请求，模型可以不听。"
     },
     {
-      "start": 442.261,
-      "end": 449.743,
+      "start": 436.395,
+      "end": 443.728,
       "text": "写在数据结构里的，是代码对象——HALO 可以给它打分，Codex 可以直接改它。"
     },
     {
-      "start": 449.943,
-      "end": 454.569,
+      "start": 443.928,
+      "end": 449.238,
       "text": "harness 一旦\"数据结构化\"，就变成了可以被自动优化的东西。"
     },
     {
-      "start": 454.716,
-      "end": 459.119,
+      "start": 449.388,
+      "end": 453.87,
       "text": "这也是为什么我说，agent 改进的本质是工程，不是写作。"
     },
     {
-      "start": 459.119,
-      "end": 468.989,
+      "start": 453.87,
+      "end": 463.917,
       "text": "你在 prompt 里再怎么写\"请引用真实数据\"，都不如一个 check_evidence_coverage.py 跑一遍来得硬。"
     },
     {
-      "start": 469.152,
-      "end": 472.326,
+      "start": 464.076,
+      "end": 467.296,
       "text": "讲到这里，我必须把代价也讲清楚。"
     },
     {
-      "start": 472.464,
-      "end": 475.716,
+      "start": 467.46,
+      "end": 470.906,
       "text": "这条飞轮的吸引力很大一部分来自一个数字。"
     },
     {
-      "start": 475.716,
-      "end": 482.058,
+      "start": 470.906,
+      "end": 477.625,
       "text": "原文 prerequisites 里写着：默认配置下，跑完一整轮大约二十分钟。"
     },
     {
-      "start": 482.058,
-      "end": 483.196,
+      "start": 477.625,
+      "end": 478.831,
       "text": "这意味着什么？"
     },
     {
-      "start": 483.336,
-      "end": 493.859,
+      "start": 478.98,
+      "end": 491.419,
       "text": "意味着一次 trace、feedback、eval、HALO 排序、Codex PR 的完整 self-improvement 循环，理论上你午休时间就能跑完一轮。"
     },
     {
-      "start": 494.028,
-      "end": 495.486,
+      "start": 491.58,
+      "end": 493.012,
       "text": "但代价也很实在。"
     },
     {
-      "start": 495.486,
-      "end": 505.144,
+      "start": 493.012,
+      "end": 502.5,
       "text": "这条飞轮要同时跑通四套系统：OpenAI Agents SDK、Promptfoo、HALO、Codex。"
     },
     {
-      "start": 505.144,
-      "end": 507.877,
+      "start": 502.5,
+      "end": 505.185,
       "text": "任何一环挂了，整条飞轮就停摆。"
     },
     {
-      "start": 507.877,
-      "end": 511.157,
+      "start": 505.185,
+      "end": 508.407,
       "text": "团队要承担四套工具的运维和升级成本。"
     },
     {
-      "start": 511.308,
-      "end": 515.221,
+      "start": 508.572,
+      "end": 512.621,
       "text": "更现实的一点是，HALO 是 OpenAI 专有组件。"
     },
     {
-      "start": 515.221,
-      "end": 521.164,
+      "start": 512.621,
+      "end": 518.769,
       "text": "给 harness 改动排序这一步，目前在 OpenAI 生态外没有等价的替代品。"
     },
     {
-      "start": 521.164,
-      "end": 526.092,
+      "start": 518.769,
+      "end": 523.867,
       "text": "如果你哪天想脱离 OpenAI 这套栈，这一块得自己实现一个优化器。"
     },
     {
-      "start": 526.248,
-      "end": 527.69,
+      "start": 524.016,
+      "end": 525.422,
       "text": "还有一个隐性成本。"
     },
     {
-      "start": 527.69,
-      "end": 536.98,
+      "start": 525.422,
+      "end": 534.484,
       "text": "\"feedback 转 eval\"看起来是自动的，实际上仍然需要人判断——这条反馈值不值得变成一条永久的 eval。"
     },
     {
-      "start": 537.18,
-      "end": 543.686,
+      "start": 534.484,
+      "end": 540.89,
       "text": "低质量的 feedback 直接入库，会污染整个评测集，让未来的迭代被噪声牵着走。"
     },
     {
-      "start": 543.852,
-      "end": 545.094,
+      "start": 541.044,
+      "end": 542.268,
       "text": "最后是规模问题。"
     },
     {
-      "start": 545.094,
-      "end": 548.509,
+      "start": 542.268,
+      "end": 545.634,
       "text": "20 分钟一轮，前提是 eval 数量很小。"
     },
     {
-      "start": 548.509,
-      "end": 557.203,
+      "start": 545.634,
+      "end": 554.201,
       "text": "当 eval 从 5 条涨到 100 条，HALO 排序和 Promptfoo 全量复跑都会线性甚至超线性变长。"
     },
     {
-      "start": 557.203,
-      "end": 559.066,
+      "start": 554.201,
+      "end": 556.037,
       "text": "飞轮跑得越久，转速越慢。"
     },
     {
-      "start": 559.224,
-      "end": 561.852,
+      "start": 556.2,
+      "end": 558.863,
       "text": "这是任何 eval 体系都绕不开的代价。"
     },
     {
-      "start": 561.996,
-      "end": 570.29,
+      "start": 559.008,
+      "end": 567.778,
       "text": "回头看这整条飞轮，我想说的判断只有一句：Agent 改进是基础设施工作，不是 prompt 工作。"
     },
     {
-      "start": 570.456,
-      "end": 573.258,
+      "start": 567.936,
+      "end": 570.688,
       "text": "你不在调模型，你在搭一条流水线。"
     },
     {
-      "start": 573.258,
-      "end": 579.563,
+      "start": 570.688,
+      "end": 576.88,
       "text": "流水线的入口是真实的失败 trace，出口是 Codex 提交的 PR。"
     },
     {
-      "start": 579.708,
-      "end": 590.823,
+      "start": 577.044,
+      "end": 586.836,
       "text": "中间最关键的那一步，是把\"这次的教训\"变成\"下次也会跑的 eval\"，让经验从一次性评论变成永久资产。"
     },
     {
-      "start": 590.976,
-      "end": 600.257,
+      "start": 586.98,
+      "end": 596.435,
       "text": "这篇 cookbook 真正值钱的地方，不是它推荐了哪个工具栈，而是它把一件事讲透了：harness 是 5 个面，不是 1 个 prompt。"
     },
     {
-      "start": 600.408,
-      "end": 612.673,
+      "start": 596.592,
+      "end": 608.566,
       "text": "当你只动 prompt 的时候，你只动了五分之一；剩下的四个面——工具、路由、输出契约、校验——才是 Agent 真正越来越靠谱的地方。"
     },
     {
-      "start": 612.828,
-      "end": 619.111,
+      "start": 608.724,
+      "end": 614.408,
       "text": "别人在改 prompt，他们在搭一条让每次失败都变成下次评测的飞轮。"
     },
     {
-      "start": 619.111,
-      "end": 623.177,
+      "start": 614.408,
+      "end": 618.086,
       "text": "Agent 不是被调出来的，是被沉淀出来的。"
     },
     {
-      "start": 623.34,
-      "end": 630.443,
+      "start": 618.228,
+      "end": 625.135,
       "text": "所以下一次你的 Agent 又跑挂了，先别急着回到 system prompt 加一句话。"
     },
     {
-      "start": 630.443,
-      "end": 634.705,
+      "start": 625.135,
+      "end": 629.279,
       "text": "问自己三个问题：这次的失败，能不能变成一条 eval？"
     },
     {
-      "start": 634.705,
-      "end": 637.23,
+      "start": 629.279,
+      "end": 631.735,
       "text": "这条 eval 下次还会被跑吗？"
     },
     {
-      "start": 637.38,
-      "end": 644.873,
+      "start": 631.872,
+      "end": 641.199,
       "text": "要改的，是 prompt，还是工具、路由、输出契约、校验这四个面里的某一个？"
     },
     {
-      "start": 645.012,
-      "end": 647.768,
+      "start": 641.34,
+      "end": 643.841,
       "text": "想清楚这三个问题，再动手。"
     },
     {
-      "start": 647.928,
-      "end": 651.93,
+      "start": 644.004,
+      "end": 647.817,
       "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
     },
     {
-      "start": 651.93,
-      "end": 653.331,
+      "start": 647.817,
+      "end": 649.152,
       "text": "我们下期再见。"
     }
   ]

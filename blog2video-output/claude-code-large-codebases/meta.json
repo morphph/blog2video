@@ -1,0 +1,15 @@
+{
+  "topic": "AI 看大代码库, 不是用 RAG",
+  "blog_url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+  "source": "claude-code-large-codebases",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

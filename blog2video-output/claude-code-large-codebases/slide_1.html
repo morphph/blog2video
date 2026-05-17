@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 280px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 600px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.18), transparent 70%);
+      pointer-events: none;
+    }
+    .title {
+      font-size: 116px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -1px;
+      margin-bottom: 56px;
+      position: relative;
+      z-index: 1;
+    }
+    .title .red {
+      color: #EF4444;
+    }
+    .source-pill {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 999px;
+      color: #B0B0CC;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+      margin-bottom: 72px;
+      position: relative;
+      z-index: 1;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 28px;
+      font-size: 38px;
+      font-weight: 600;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .card .accent {
+      color: #EF4444;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="title">
+      AI 看大代码库<br>
+      <span class="red">不是用 RAG</span>
+    </div>
+    <div class="source-pill">Anthropic · How Claude Code works in large codebases</div>
+    <div class="cards">
+      <div class="card"><span class="accent">embedding</span> 跟不上提交速度</div>
+      <div class="card">Claude <span class="accent">不建索引</span></div>
+    </div>
+  </div>
+</body>
+</html>

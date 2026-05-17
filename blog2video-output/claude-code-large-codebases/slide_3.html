@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .mono {
+      font-family: 'SF Mono', Menlo, monospace;
+      color: #10B981;
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-bottom: 44px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 28px;
+      text-align: left;
+    }
+    .card.green {
+      border-left: 4px solid #10B981;
+    }
+    .card.blue {
+      border-left: 4px solid #3B82F6;
+    }
+    .card .label {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .card.green .label { color: #10B981; }
+    .card.blue .label { color: #3B82F6; }
+    .card .head {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .card .desc {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 999px;
+      padding: 16px 32px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Claude 用 <span class="mono">agentic grep</span><br>+ LSP</div>
+    <div class="cards">
+      <div class="card green">
+        <div class="label">FILESYSTEM + GREP</div>
+        <div class="head">文件系统遍历 + grep</div>
+        <div class="desc">跟工程师一模一样<br>没有 chunking · 没有云端索引</div>
+      </div>
+      <div class="card blue">
+        <div class="label">LSP</div>
+        <div class="head">go-to-definition · find-references</div>
+        <div class="desc">实时符号级精度<br>直接复用 IDE 的基础设施</div>
+      </div>
+    </div>
+    <div class="tag">最古老的工具反而活了下来</div>
+  </div>
+</body>
+</html>

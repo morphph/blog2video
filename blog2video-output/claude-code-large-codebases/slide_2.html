@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 64px;
+    }
+    .pipeline {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+    .pipeline .clock {
+      font-size: 56px;
+    }
+    .pipeline .text {
+      font-size: 38px;
+      font-weight: 700;
+      color: #B0B0CC;
+    }
+    .pipeline .text strong {
+      color: #FFFFFF;
+    }
+    .timeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 28px;
+      gap: 24px;
+    }
+    .row .scale {
+      font-size: 56px;
+      font-weight: 800;
+      color: #EF4444;
+      min-width: 220px;
+      text-align: left;
+    }
+    .row .arrow {
+      color: #6B7280;
+      font-size: 30px;
+    }
+    .row .status {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      flex: 1;
+      text-align: right;
+    }
+    .warning {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px;
+      font-size: 34px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .warning .red {
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Embedding 在大代码库里输了</div>
+    <div class="pipeline">
+      <span class="clock">⏱</span>
+      <span class="text"><strong>Embedding pipeline</strong> 重建索引</span>
+    </div>
+    <div class="timeline">
+      <div class="row">
+        <div class="scale">周级</div>
+        <div class="arrow">→</div>
+        <div class="status">已脱节</div>
+      </div>
+      <div class="row">
+        <div class="scale">天级</div>
+        <div class="arrow">→</div>
+        <div class="status">已脱节</div>
+      </div>
+      <div class="row">
+        <div class="scale">小时级</div>
+        <div class="arrow">→</div>
+        <div class="status">已脱节</div>
+      </div>
+    </div>
+    <div class="warning">
+      AI 看到的 <span class="red">"代码库"</span>,<br>
+      是一个 <span class="red">不存在的过去</span>
+    </div>
+  </div>
+</body>
+</html>

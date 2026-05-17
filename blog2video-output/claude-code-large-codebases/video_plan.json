@@ -1,0 +1,16 @@
+{
+  "blog_metadata": {
+    "title": "How Claude Code works in large codebases: Best practices and where to start",
+    "title_zh": "AI 看大代码库, 不是用 RAG",
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+    "author": "Anthropic",
+    "word_count": 2899,
+    "slug": "claude-code-large-codebases"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕一个反 RAG 主流叙事的判断：在活跃大代码库里 embedding index 追不上提交速度，所以 Claude 用 agentic grep + LSP 替代。三个操作推论（子目录 CLAUDE.md / 配置每 3-6 月主动重写 / hooks 是自进化机制）和组织层面观察都从这一个 thesis 派生。拆开会破坏'反 RAG'本身的认知冲击。",
+    "episode_transitions": [],
+    "videos": [{"video_number": 1, "title_zh": "AI 看大代码库, 不是用 RAG"}]
+  }
+}

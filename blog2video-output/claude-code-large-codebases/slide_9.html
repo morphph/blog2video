@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      font-weight: 800;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }
+    .title .accent {
+      color: #F59E0B;
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 30px 28px;
+      text-align: left;
+    }
+    .card.green { border-left: 4px solid #10B981; }
+    .card.purple { border-left: 4px solid #8B5CF6; }
+    .card .num-label {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .card .num {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .card.green .num { color: #10B981; }
+    .card.purple .num { color: #8B5CF6; }
+    .card .label {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .card.green .label { color: #10B981; }
+    .card.purple .label { color: #8B5CF6; }
+    .card .head {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .card .head .mono {
+      font-family: 'SF Mono', Menlo, monospace;
+    }
+    .card .head .red { color: #EF4444; }
+    .signature {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.45);
+      border-radius: 12px;
+      padding: 24px 28px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .signature .purple { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">SYNTHESIS</div>
+    <div class="title">两条<span class="accent">反直觉结论</span></div>
+    <div class="cards">
+      <div class="card green">
+        <div class="num-label">
+          <div class="num">①</div>
+          <div class="label">GREP-FRIENDLY</div>
+        </div>
+        <div class="head">AI 不靠 embedding,<br>它靠你把代码库写成<br><span class="mono">grep 友好</span>的结构</div>
+      </div>
+      <div class="card purple">
+        <div class="num-label">
+          <div class="num">②</div>
+          <div class="label">配置活着</div>
+        </div>
+        <div class="head"><span class="mono">CLAUDE.md</span> 会衰减<br>hook 应该自进化<br>旧补丁<span class="red">拖垮新模型</span></div>
+      </div>
+    </div>
+    <div class="signature">
+      下一代模型一发布,<br>
+      团队几乎 <span class="purple">零成本接住</span>
+    </div>
+  </div>
+</body>
+</html>

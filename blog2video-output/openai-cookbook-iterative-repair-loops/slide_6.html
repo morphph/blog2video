@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #EF4444;
+    }
+    .cards {
+      display: flex;
+      gap: 18px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 18px;
+      text-align: center;
+    }
+    .card.green { border-left: 4px solid #10B981; }
+    .card.amber { border-left: 4px solid #F59E0B; }
+    .card.purple { border-left: 4px solid #8B5CF6; }
+    .card .icon {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .card.green .icon { color: #10B981; }
+    .card.amber .icon { color: #F59E0B; }
+    .card.purple .icon { color: #8B5CF6; }
+    .card .num {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .card.green .num { color: #10B981; }
+    .card.amber .num { color: #F59E0B; }
+    .card.purple .num { color: #8B5CF6; }
+    .card .name {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .card .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 28px;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom .label {
+      font-size: 22px;
+      color: #EF4444;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .bottom .line {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .bottom .red {
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>没有 stop 的 loop<br>是<span class="accent">死循环</span></h1>
+    <div class="cards">
+      <div class="card green">
+        <div class="icon">✓</div>
+        <div class="num">① PASS</div>
+        <div class="name">全部通过</div>
+        <div class="desc">所有验证<br>都通过</div>
+      </div>
+      <div class="card amber">
+        <div class="icon">⏱</div>
+        <div class="num">② MAX</div>
+        <div class="name">达到上限</div>
+        <div class="desc">最大尝试<br>次数耗尽</div>
+      </div>
+      <div class="card purple">
+        <div class="icon">〰</div>
+        <div class="num">③ PLATEAU</div>
+        <div class="name">收敛瓶颈</div>
+        <div class="desc">delta 不再<br>缩小</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="label">⚠ WARNING</div>
+      <div class="line">看着 Agent 在工作<br>实际只是在<span class="red">烧账单</span></div>
+    </div>
+  </div>
+</body>
+</html>

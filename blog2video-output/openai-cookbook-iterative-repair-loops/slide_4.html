@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #8B5CF6;
+    }
+    .chain {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 36px 28px;
+      margin-bottom: 48px;
+    }
+    .chain .head {
+      font-size: 24px;
+      color: #EF4444;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+    .step:last-child {
+      margin-bottom: 0;
+    }
+    .step .idx {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #EF4444;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+    }
+    .step .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    .step .text .bad {
+      color: #EF4444;
+      font-weight: 800;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 28px;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom .label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .bottom .line {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .bottom .green {
+      color: #10B981;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>阶段隔离 = <span class="accent">测量前提</span><br>不是工程洁癖</h1>
+    <div class="chain">
+      <div class="head">⚠ 失败链路</div>
+      <div class="step">
+        <div class="idx">1</div>
+        <div class="text">Review 阶段 <span class="bad">顺手改了一刀</span></div>
+      </div>
+      <div class="step">
+        <div class="idx">2</div>
+        <div class="text">Validation 差距混进 Review 的改动</div>
+      </div>
+      <div class="step">
+        <div class="idx">3</div>
+        <div class="text">下一轮 delta <span class="bad">不可比较</span></div>
+      </div>
+      <div class="step">
+        <div class="idx">4</div>
+        <div class="text">收敛信号被污染</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="label">三相纯度的真理由</div>
+      <div class="line">让每轮<span class="green">差距快照</span>都干净</div>
+    </div>
+  </div>
+</body>
+</html>

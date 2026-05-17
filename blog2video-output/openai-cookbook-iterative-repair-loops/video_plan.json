@@ -1,0 +1,16 @@
+{
+  "blog_metadata": {
+    "title": "Build Iterative Repair Loops with Codex",
+    "title_zh": "Agent 不是改了，是差距变小",
+    "url": "https://developers.openai.com/cookbook/examples/codex/build_iterative_repair_loops_with_codex",
+    "author": "OpenAI Cookbook",
+    "word_count": 3128,
+    "slug": "openai-cookbook-iterative-repair-loops"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "短源（~350 字英文）压缩成单一论点：delta 是 Agent 循环的成功信号，不是动作。三阶段纯度 + 结构化 JSON + 停止条件共同支撑这一个判断，拆开会让任何一段失去支撑。",
+    "episode_transitions": [],
+    "videos": [{"video_number": 1, "title_zh": "Agent 不是改了，是差距变小"}]
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #10B981;
+    }
+    .qs {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .q {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+    }
+    .q .num {
+      flex-shrink: 0;
+      font-size: 42px;
+      font-weight: 900;
+      color: #8B5CF6;
+      width: 56px;
+      line-height: 1;
+    }
+    .q .text {
+      flex: 1;
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    .q .text .k {
+      color: #10B981;
+      font-weight: 800;
+    }
+    .sig {
+      background: #1A1A2E;
+      border: 2px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .sig .label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
+    }
+    .sig .line {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .sig .g {
+      color: #10B981;
+    }
+    .brand {
+      font-size: 22px;
+      color: #6B7280;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>下次搭循环<br>先答<span class="accent">三个问题</span></h1>
+    <div class="qs">
+      <div class="q">
+        <div class="num">①</div>
+        <div class="text">用什么<span class="k">数字</span>衡量"更接近完成"？</div>
+      </div>
+      <div class="q">
+        <div class="num">②</div>
+        <div class="text">这个数字怎么保证是<span class="k">干净的</span>？</div>
+      </div>
+      <div class="q">
+        <div class="num">③</div>
+        <div class="text">什么时候让它<span class="k">停下来</span>？</div>
+      </div>
+    </div>
+    <div class="sig">
+      <div class="label">★ SIGNATURE</div>
+      <div class="line"><span class="g">差距</span>是信号 · <span class="g">三相纯度</span>是测量前提<br><span class="g">停止条件</span>是出口</div>
+    </div>
+    <div class="brand">AI 世界很吵, 精读一篇, 胜过刷一百条</div>
+  </div>
+</body>
+</html>

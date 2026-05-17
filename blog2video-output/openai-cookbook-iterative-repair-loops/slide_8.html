@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #EF4444;
+    }
+    .sub {
+      font-size: 30px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 48px;
+      letter-spacing: 1px;
+    }
+    .chain {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 40px;
+    }
+    .chain .head {
+      font-size: 24px;
+      color: #EF4444;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .step:last-child {
+      margin-bottom: 0;
+    }
+    .step .idx {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #EF4444;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    .step .text .bad {
+      color: #EF4444;
+      font-weight: 800;
+    }
+    .step .text .trap {
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom .line {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .bottom .y {
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Validator 没有 <span class="accent">Validator</span></h1>
+    <div class="sub">— 根本盲点</div>
+    <div class="chain">
+      <div class="head">⚠ 假收敛陷阱</div>
+      <div class="step">
+        <div class="idx">1</div>
+        <div class="text">Validation 规则<span class="bad">写错</span></div>
+      </div>
+      <div class="step">
+        <div class="idx">2</div>
+        <div class="text">Agent 朝错误方向收敛</div>
+      </div>
+      <div class="step">
+        <div class="idx">3</div>
+        <div class="text">delta 一直变小</div>
+      </div>
+      <div class="step">
+        <div class="idx">4</div>
+        <div class="text"><span class="trap">看起来一切正常</span></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="line">业务规则、验证标准<br>必须在 loop <span class="y">启动前显式定义</span>清楚</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #8B5CF6;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .card.blue { border-left: 4px solid #3B82F6; }
+    .card.purple { border-left: 4px solid #8B5CF6; }
+    .card.green { border-left: 4px solid #10B981; }
+    .card .stage {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      flex-shrink: 0;
+      width: 220px;
+    }
+    .card.blue .stage { color: #3B82F6; }
+    .card.purple .stage { color: #8B5CF6; }
+    .card.green .stage { color: #10B981; }
+    .card .arrow {
+      font-size: 32px;
+      color: #6B7280;
+      flex-shrink: 0;
+    }
+    .card .schema {
+      flex: 1;
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    .card .schema .label {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.15);
+      color: #B0B0CC;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 22px;
+      font-family: 'SF Mono', Menlo, monospace;
+      margin-right: 8px;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom .line {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .bottom .line .y {
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>结构化 JSON = 阶段间的<br><span class="accent">契约</span>, 不是日志</h1>
+    <div class="cards">
+      <div class="card blue">
+        <div class="stage">REVIEW</div>
+        <div class="arrow">→</div>
+        <div class="schema"><span class="label">findings</span>问题类型 + 严重程度</div>
+      </div>
+      <div class="card purple">
+        <div class="stage">REPAIR</div>
+        <div class="arrow">→</div>
+        <div class="schema"><span class="label">change_summary</span>改了什么 + 新路径</div>
+      </div>
+      <div class="card green">
+        <div class="stage">VALIDATE</div>
+        <div class="arrow">→</div>
+        <div class="schema"><span class="label">status</span>执行状态 + 剩余差距</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="line"><span class="y">下游不解释上游, 只签合同</span><br>多轮协作不靠 Agent 更聪明</div>
+    </div>
+  </div>
+</body>
+</html>

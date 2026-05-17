@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 62px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 48px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent {
+      color: #10B981;
+    }
+    .iters {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .iter {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .iter .label {
+      flex-shrink: 0;
+      font-size: 26px;
+      font-weight: 800;
+      color: #10B981;
+      letter-spacing: 1px;
+      width: 130px;
+      text-align: left;
+    }
+    .iter .marks {
+      flex: 1;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 900;
+    }
+    .mark.pass {
+      background: rgba(16, 185, 129, 0.18);
+      color: #10B981;
+      border: 2px solid #10B981;
+    }
+    .mark.fail {
+      background: rgba(239, 68, 68, 0.12);
+      color: #EF4444;
+      border: 2px solid rgba(239, 68, 68, 0.6);
+    }
+    .iter .note {
+      flex-shrink: 0;
+      font-size: 22px;
+      color: #B0B0CC;
+      text-align: right;
+      line-height: 1.3;
+      width: 180px;
+    }
+    .iter .note .g {
+      color: #10B981;
+      font-weight: 700;
+    }
+    .bottom {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom .line {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .bottom .p {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>三 notebook × 三轮<br><span class="accent">单调收敛</span></h1>
+    <div class="iters">
+      <div class="iter">
+        <div class="label">ITER 1</div>
+        <div class="marks">
+          <div class="mark pass">✓</div>
+          <div class="mark fail">✗</div>
+          <div class="mark fail">✗</div>
+        </div>
+        <div class="note">1 通过<br>2 继续</div>
+      </div>
+      <div class="iter">
+        <div class="label">ITER 2</div>
+        <div class="marks">
+          <div class="mark pass">✓</div>
+          <div class="mark pass">✓</div>
+          <div class="mark fail">✗</div>
+        </div>
+        <div class="note">第 2 个通过<br><span class="g">范围在收窄</span></div>
+      </div>
+      <div class="iter">
+        <div class="label">ITER 3</div>
+        <div class="marks">
+          <div class="mark pass">✓</div>
+          <div class="mark pass">✓</div>
+          <div class="mark pass">✓</div>
+        </div>
+        <div class="note"><span class="g">全部通过</span></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="line">不是"三轮就收敛"<br>是<span class="p">曲线单调</span> — 第二轮 delta 就能预判</div>
+    </div>
+  </div>
+</body>
+</html>

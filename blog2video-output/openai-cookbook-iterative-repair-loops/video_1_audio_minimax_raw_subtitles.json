@@ -1,0 +1,502 @@
+[
+  {
+    "text": "OpenAI 官方 cookbook 发了一篇讲 Iterative Repair Loops 的文章。我读完最被刺到的，不是 Codex 又能跑闭环了。而是它把一个我之前没想清楚的问题，说得很直白。",
+    "pronounce_text": "OpenAI官方cookbook发了一篇讲Iterative Repair Loops的文章。我读完最被刺到的，不是Codex又能跑闭环了。而是它把一个我之前没想清楚的问题，说得很直白。",
+    "time_begin": 0,
+    "time_end": 12566.485260770974,
+    "text_begin": 0,
+    "text_end": 100,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 93
+  },
+  {
+    "text": "今天不聊怎么用 Codex 搭一个修复 Agent，只聊一件事——你怎么知道一个 Agent 循环是在收敛，还是在原地踏步。",
+    "pronounce_text": "今天不聊怎么用Codex搭一个修复Agent，只聊一件事你怎么知道一个Agent循环是在收敛，还是在原地踏步。",
+    "time_begin": 12708,
+    "time_end": 20746.59410430839,
+    "text_begin": 100,
+    "text_end": 162,
+    "pronounce_text_begin": 93,
+    "pronounce_text_end": 148
+  },
+  {
+    "text": "先把结论亮出来。原文里有一句话，我觉得是整篇的核心。它说：重要的信号，不是 Codex 又做了一次编辑。重要的信号，是每一轮跑完之后，剩下的验证差距在变小。",
+    "pronounce_text": "先把结论亮出来。原文里有一句话，我觉得是整篇的核心。它说：重要的信号，不是Codex又做了一次编辑。重要的信号，是每一轮跑完之后，剩下的验证差距在变小。",
+    "time_begin": 20916,
+    "time_end": 36129.560090702944,
+    "text_begin": 162,
+    "text_end": 240,
+    "pronounce_text_begin": 148,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "你品一下这句话。我们看 Agent 跑循环的时候，下意识盯着什么？盯着它有没有在动手。日志一直在刷，文件一直在改，看起来很努力，我们就觉得它在工作。但这种\"在工作\"的感觉，可能是假的。",
+    "pronounce_text": "你品一下这句话。我们看Agent跑循环的时候，下意识盯着什么？盯着它有没有在动手。日志一直在刷，文件一直在改，看起来很努力，我们就觉得它在工作。但这种\"在工作\"的感觉，可能是假的。",
+    "time_begin": 36288,
+    "time_end": 53080.51700680272,
+    "text_begin": 240,
+    "text_end": 332,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 314
+  },
+  {
+    "text": "真正的衡量标准只有一个。你把这一轮验证完，剩下多少问题；下一轮验证完，剩下多少问题。两个数字一比。变少，是在收敛。不变，是卡住了。变多，是跑偏了。",
+    "pronounce_text": "真正的衡量标准只有一个。你把这一轮验证完，剩下多少问题;下一轮验证完，剩下多少问题。两个数字一比。变少，是在收敛。不变，是卡住了。变多，是跑偏了。",
+    "time_begin": 53244,
+    "time_end": 70117.78684807256,
+    "text_begin": 332,
+    "text_end": 405,
+    "pronounce_text_begin": 314,
+    "pronounce_text_end": 387
+  },
+  {
+    "text": "Agent 到底有没有在朝目标走，看的是这个差距，叫 delta。不是看它有没有在敲键盘。",
+    "pronounce_text": "Agent到底有没有在朝目标走，看的是这个差距，叫delta。不是看它有没有在敲键盘。",
+    "time_begin": 70272,
+    "time_end": 76778.07709750567,
+    "text_begin": 405,
+    "text_end": 450,
+    "pronounce_text_begin": 387,
+    "pronounce_text_end": 430
+  },
+  {
+    "text": "这个视角翻转，挺反直觉的。但你想想，一个人在解 bug，他改了一百行代码，bug 还在；他改了一行代码，bug 没了。哪个叫工作？我们对人很清楚，对 Agent 反而糊涂。",
+    "pronounce_text": "这个视角翻转，挺反直觉的。但你想想，一个人在解bug，他改了一百行代码，bug还在;他改了一行代码，bug没了。哪个叫工作？我们对人很清楚，对Agent反而糊涂。",
+    "time_begin": 76932,
+    "time_end": 91843.7006802721,
+    "text_begin": 450,
+    "text_end": 536,
+    "pronounce_text_begin": 430,
+    "pronounce_text_end": 511
+  },
+  {
+    "text": "因为 Agent 一直在动，我们就被动作骗了。",
+    "pronounce_text": "因为Agent一直在动，我们就被动作骗了。",
+    "time_begin": 91980,
+    "time_end": 95421.04308390022,
+    "text_begin": 536,
+    "text_end": 559,
+    "pronounce_text_begin": 511,
+    "pronounce_text_end": 532
+  },
+  {
+    "text": "那问题来了。要测 delta，前提是什么？前提是你得有一个干净的、可比较的差距快照。这就引出了原文里另一个非常硬核的规定。",
+    "pronounce_text": "那问题来了。要测delta，前提是什么？前提是你得有一个干净的、可比较的差距快照。这就引出了原文里另一个非常硬核的规定。",
+    "time_begin": 95580,
+    "time_end": 107844.62585034013,
+    "text_begin": 559,
+    "text_end": 620,
+    "pronounce_text_begin": 532,
+    "pronounce_text_end": 592
+  },
+  {
+    "text": "它把整个循环拆成三个阶段。Review，Repair，Validation。Review 负责检查，找问题。Repair 负责修，根据问题改文件。Validation 负责验证，跑一遍看还剩多少问题。",
+    "pronounce_text": "它把整个循环拆成三个阶段。Review，Repair，Validation。Review负责检查，找问题。Repair负责修，根据问题改文件。Validation负责验证，跑一遍看还剩多少问题。",
+    "time_begin": 108000,
+    "time_end": 122992.97052154195,
+    "text_begin": 620,
+    "text_end": 720,
+    "pronounce_text_begin": 592,
+    "pronounce_text_end": 689
+  },
+  {
+    "text": "听起来很普通对吧？但原文有一个特别严格的约束。Review 阶段不准改文件，只准输出发现的问题。Repair 阶段不准重新评估，只按照 Review 给的清单改。Validation 阶段不准修，只准报告。",
+    "pronounce_text": "听起来很普通对吧？但原文有一个特别严格的约束。Review阶段不准改文件，只准输出发现的问题。Repair阶段不准重新评估，只按照Review给的清单改。Validation阶段不准修，只准报告。",
+    "time_begin": 123156,
+    "time_end": 139135.81859410432,
+    "text_begin": 720,
+    "text_end": 823,
+    "pronounce_text_begin": 689,
+    "pronounce_text_end": 787
+  },
+  {
+    "text": "三个动作，被刻意隔离。",
+    "pronounce_text": "三个动作，被刻意隔离。",
+    "time_begin": 139284,
+    "time_end": 141610.48526077098,
+    "text_begin": 823,
+    "text_end": 834,
+    "pronounce_text_begin": 787,
+    "pronounce_text_end": 798
+  },
+  {
+    "text": "我一开始觉得这是工程洁癖。Review 发现了问题，顺手改一下不是更快？但想清楚之后，我觉得这个隔离不是为了分工，是为了测量。",
+    "pronounce_text": "我一开始觉得这是工程洁癖。Review发现了问题，顺手改一下不是更快？但想清楚之后，我觉得这个隔离不是为了分工，是为了测量。",
+    "time_begin": 141768,
+    "time_end": 152627.81859410432,
+    "text_begin": 834,
+    "text_end": 897,
+    "pronounce_text_begin": 798,
+    "pronounce_text_end": 860
+  },
+  {
+    "text": "你想，如果 Review 顺手改了一刀，Validation 这一轮跑出来的差距，就不是\"上一轮 Repair 之后的真实差距\"了，它混进了 Review 自己改的内容。下一轮再跑，delta 不可比较。收敛信号被污染。",
+    "pronounce_text": "你想，如果Review顺手改了一刀，Validation这一轮跑出来的差距，就不是\"上一轮Repair之后的真实差距\"了，它混进了Review自己改的内容。下一轮再跑，delta不可比较。收敛信号被污染。",
+    "time_begin": 152784,
+    "time_end": 169019.2380952381,
+    "text_begin": 897,
+    "text_end": 1007,
+    "pronounce_text_begin": 860,
+    "pronounce_text_end": 962
+  },
+  {
+    "text": "你看着数字在变，但你不知道是 Agent 在收敛，还是阶段之间在互相帮倒忙。",
+    "pronounce_text": "你看着数字在变，但你不知道是Agent在收敛，还是阶段之间在互相帮倒忙。",
+    "time_begin": 169164,
+    "time_end": 175495.92743764172,
+    "text_begin": 1007,
+    "text_end": 1045,
+    "pronounce_text_begin": 962,
+    "pronounce_text_end": 998
+  },
+  {
+    "text": "三相纯度的真正理由，是让每一轮的差距快照都干净。能比较，才能判断在不在收敛。",
+    "pronounce_text": "三相纯度的真正理由，是让每一轮的差距快照都干净。能比较，才能判断在不在收敛。",
+    "time_begin": 175644,
+    "time_end": 183473.61451247166,
+    "text_begin": 1045,
+    "text_end": 1083,
+    "pronounce_text_begin": 998,
+    "pronounce_text_end": 1036
+  },
+  {
+    "text": "三个阶段怎么交接？原文里也写得很清楚。每个阶段都输出机器可读的 JSON。",
+    "pronounce_text": "三个阶段怎么交接？原文里也写得很清楚。每个阶段都输出机器可读的JSON。",
+    "time_begin": 183636,
+    "time_end": 190142.07709750568,
+    "text_begin": 1083,
+    "text_end": 1120,
+    "pronounce_text_begin": 1036,
+    "pronounce_text_end": 1072
+  },
+  {
+    "text": "Review 输出一份 findings 清单，每个问题有类型、有严重程度。Repair 输出一份 change summary，列出改了什么、新的文件路径在哪。Validation 输出执行状态，还剩多少差距。",
+    "pronounce_text": "Review输出一份findings清单，每个问题有类型、有严重程度。Repair输出一份change summary，列出改了什么、新的文件路径在哪。Validation输出执行状态，还剩多少差距。",
+    "time_begin": 190296,
+    "time_end": 205126.43083900228,
+    "text_begin": 1120,
+    "text_end": 1226,
+    "pronounce_text_begin": 1072,
+    "pronounce_text_end": 1172
+  },
+  {
+    "text": "这看着像标准工程实践。但我觉得它背后有个更深的意思。",
+    "pronounce_text": "这看着像标准工程实践。但我觉得它背后有个更深的意思。",
+    "time_begin": 205272,
+    "time_end": 210152.68027210885,
+    "text_begin": 1226,
+    "text_end": 1252,
+    "pronounce_text_begin": 1172,
+    "pronounce_text_end": 1198
+  },
+  {
+    "text": "如果 Review 输出的是一篇自然语言报告，Repair 阶段自己去读，整条链就退化成小作文接龙。每一次\"理解\"都会有偏差，错误会累积。换成 schema 之后，Repair 不需要\"读懂\" Review。",
+    "pronounce_text": "如果Review输出的是一篇自然语言报告，Repair阶段自己去读，整条链就退化成小作文接龙。每一次\"理解\"都会有偏差，错误会累积。换成schema之后，Repair不需要\"读懂\"Review。",
+    "time_begin": 210312,
+    "time_end": 226547.2380952381,
+    "text_begin": 1252,
+    "text_end": 1356,
+    "pronounce_text_begin": 1198,
+    "pronounce_text_end": 1295
+  },
+  {
+    "text": "它消费的是一份字段固定的合同。下游不解释上游，只签合同。",
+    "pronounce_text": "它消费的是一份字段固定的合同。下游不解释上游，只签合同。",
+    "time_begin": 226692,
+    "time_end": 232687.2380952381,
+    "text_begin": 1356,
+    "text_end": 1384,
+    "pronounce_text_begin": 1295,
+    "pronounce_text_end": 1323
+  },
+  {
+    "text": "这才是这个循环能稳定跑好几轮的底座。多轮协作不是靠 Agent 更聪明，是靠阶段之间不需要互相理解。",
+    "pronounce_text": "这才是这个循环能稳定跑好几轮的底座。多轮协作不是靠Agent更聪明，是靠阶段之间不需要互相理解。",
+    "time_begin": 232848,
+    "time_end": 241362.60317460317,
+    "text_begin": 1384,
+    "text_end": 1434,
+    "pronounce_text_begin": 1323,
+    "pronounce_text_end": 1371
+  },
+  {
+    "text": "第三个我觉得特别值的点，是停止条件。",
+    "pronounce_text": "第三个我觉得特别值的点，是停止条件。",
+    "time_begin": 241524,
+    "time_end": 245092.75283446713,
+    "text_begin": 1434,
+    "text_end": 1452,
+    "pronounce_text_begin": 1371,
+    "pronounce_text_end": 1389
+  },
+  {
+    "text": "原文在 Production Considerations 里把它列在第一位。它给了三种合法的停止理由。第一种最干脆，全部通过验证，结束。第二种是兜底，达到最大尝试次数，停。",
+    "pronounce_text": "原文在Production Considerations里把它列在第一位。它给了三种合法的停止理由。第一种最干脆，全部通过验证，结束。第二种是兜底，达到最大尝试次数，停。",
+    "time_begin": 245232,
+    "time_end": 259331.0022675737,
+    "text_begin": 1452,
+    "text_end": 1539,
+    "pronounce_text_begin": 1389,
+    "pronounce_text_end": 1474
+  },
+  {
+    "text": "第三种最有意思，叫 delta plateauing——差距不再缩小了，停。",
+    "pronounce_text": "第三种最有意思，叫delta plateauing差距不再缩小了，停。",
+    "time_begin": 259488,
+    "time_end": 264972.39909297053,
+    "text_begin": 1539,
+    "text_end": 1577,
+    "pronounce_text_begin": 1474,
+    "pronounce_text_end": 1509
+  },
+  {
+    "text": "第三种为什么有意思？因为它等于承认\"打不下去了\"也是一种结论。Agent 不一定要把所有问题都修完才能停。",
+    "pronounce_text": "第三种为什么有意思？因为它等于承认\"打不下去了\"也是一种结论。Agent不一定要把所有问题都修完才能停。",
+    "time_begin": 265140,
+    "time_end": 274246.7120181406,
+    "text_begin": 1577,
+    "text_end": 1630,
+    "pronounce_text_begin": 1509,
+    "pronounce_text_end": 1561
+  },
+  {
+    "text": "如果连续几轮 delta 不再变小，说明它已经收敛到瓶颈了，再跑下去只是烧 token。",
+    "pronounce_text": "如果连续几轮delta不再变小，说明它已经收敛到瓶颈了，再跑下去只是烧token。",
+    "time_begin": 274446.7120181406,
+    "time_end": 282229.8866213152,
+    "text_begin": 1630,
+    "text_end": 1674,
+    "pronounce_text_begin": 1561,
+    "pronounce_text_end": 1602
+  },
+  {
+    "text": "这个时候停下来交给人，比硬撑更诚实。",
+    "pronounce_text": "这个时候停下来交给人，比硬撑更诚实。",
+    "time_begin": 282384,
+    "time_end": 285732.1632653061,
+    "text_begin": 1674,
+    "text_end": 1692,
+    "pronounce_text_begin": 1602,
+    "pronounce_text_end": 1620
+  },
+  {
+    "text": "反过来说，我之前自己写过的 Agent 循环，几乎都没明确写过停止条件。它就一直跑。看着像在工作，其实早就 plateau 了，只是没人量。",
+    "pronounce_text": "反过来说，我之前自己写过的Agent循环，几乎都没明确写过停止条件。它就一直跑。看着像在工作，其实早就plateau了，只是没人量。",
+    "time_begin": 285876,
+    "time_end": 297200.21768707485,
+    "text_begin": 1692,
+    "text_end": 1762,
+    "pronounce_text_begin": 1620,
+    "pronounce_text_end": 1686
+  },
+  {
+    "text": "没有 stop 的 loop，本质上就是死循环。它会让你以为 Agent 在勤奋工作，实际上只是在烧账单。",
+    "pronounce_text": "没有stop的loop，本质上就是死循环。它会让你以为Agent在勤奋工作，实际上只是在烧账单。",
+    "time_begin": 297360,
+    "time_end": 305654.0136054422,
+    "text_begin": 1762,
+    "text_end": 1815,
+    "pronounce_text_begin": 1686,
+    "pronounce_text_end": 1734
+  },
+  {
+    "text": "原文给了一个具体的 demo，验证这套循环到底跑成什么样。三个故意做旧的 notebook，跑了三轮。",
+    "pronounce_text": "原文给了一个具体的demo，验证这套循环到底跑成什么样。三个故意做旧的notebook，跑了三轮。",
+    "time_begin": 305820,
+    "time_end": 314288.1632653061,
+    "text_begin": 1815,
+    "text_end": 1866,
+    "pronounce_text_begin": 1734,
+    "pronounce_text_end": 1783
+  },
+  {
+    "text": "第一轮，一个 notebook 通过，剩下两个继续。第二轮，第二个 notebook 通过，最难的那个范围在收窄。第三轮，全部通过。",
+    "pronounce_text": "第一轮，一个notebook通过，剩下两个继续。第二轮，第二个notebook通过，最难的那个范围在收窄。第三轮，全部通过。",
+    "time_begin": 314460,
+    "time_end": 325656.50793650793,
+    "text_begin": 1866,
+    "text_end": 1932,
+    "pronounce_text_begin": 1783,
+    "pronounce_text_end": 1845
+  },
+  {
+    "text": "我想强调的不是\"三轮就收敛\"这个数字。这是样本结果，不是论点。我想强调的是这条曲线的形状。它是单调的。每一轮剩下的问题都比上一轮少。",
+    "pronounce_text": "我想强调的不是\"三轮就收敛\"这个数字。这是样本结果，不是论点。我想强调的是这条曲线的形状。它是单调的。每一轮剩下的问题都比上一轮少。",
+    "time_begin": 325800,
+    "time_end": 339690.022675737,
+    "text_begin": 1932,
+    "text_end": 1998,
+    "pronounce_text_begin": 1845,
+    "pronounce_text_end": 1911
+  },
+  {
+    "text": "不是前两轮卡住、第三轮突然全好，是稳稳地、可见地在缩小差距。",
+    "pronounce_text": "不是前两轮卡住、第三轮突然全好，是稳稳地、可见地在缩小差距。",
+    "time_begin": 339840,
+    "time_end": 345661.08843537414,
+    "text_begin": 1998,
+    "text_end": 2028,
+    "pronounce_text_begin": 1911,
+    "pronounce_text_end": 1941
+  },
+  {
+    "text": "这就是 delta 这个信号的价值。你不需要等到 Agent 完全跑完，才知道它在不在工作。第二轮验证一出，你看 delta 比第一轮小，就知道这套循环在收敛。",
+    "pronounce_text": "这就是delta这个信号的价值。你不需要等到Agent完全跑完，才知道它在不在工作。第二轮验证一出，你看delta比第一轮小，就知道这套循环在收敛。",
+    "time_begin": 345816,
+    "time_end": 357442.0770975057,
+    "text_begin": 2028,
+    "text_end": 2108,
+    "pronounce_text_begin": 1941,
+    "pronounce_text_end": 2015
+  },
+  {
+    "text": "如果第二轮 delta 跟第一轮一样大，你就该考虑换方案了，不用等它跑到第十轮才发现白跑。",
+    "pronounce_text": "如果第二轮delta跟第一轮一样大，你就该考虑换方案了，不用等它跑到第十轮才发现白跑。",
+    "time_begin": 357588,
+    "time_end": 365371.1746031746,
+    "text_begin": 2108,
+    "text_end": 2153,
+    "pronounce_text_begin": 2015,
+    "pronounce_text_end": 2058
+  },
+  {
+    "text": "讲到这我得说一个 tradeoff，不然就只讲爽点了。",
+    "pronounce_text": "讲到这我得说一个tradeoff，不然就只讲爽点了。",
+    "time_begin": 365508,
+    "time_end": 369459.8820861678,
+    "text_begin": 2153,
+    "text_end": 2180,
+    "pronounce_text_begin": 2058,
+    "pronounce_text_end": 2084
+  },
+  {
+    "text": "这整套循环的成立，依赖一个假设——Validation 输出是可信的。如果验证规则本身写错了，比如把\"应该用新 API\"写成\"应该用旧 API\"，Agent 会朝着错误的方向收敛。",
+    "pronounce_text": "这整套循环的成立，依赖一个假设Validation输出是可信的。如果验证规则本身写错了，比如把\"应该用新API\"写成\"应该用旧API\"，Agent会朝着错误的方向收敛。",
+    "time_begin": 369612,
+    "time_end": 384872,
+    "text_begin": 2180,
+    "text_end": 2270,
+    "pronounce_text_begin": 2084,
+    "pronounce_text_end": 2168
+  },
+  {
+    "text": "而且因为 delta 一直在变小，看起来一切正常。",
+    "pronounce_text": "而且因为delta一直在变小，看起来一切正常。",
+    "time_begin": 385020,
+    "time_end": 388414.6031746032,
+    "text_begin": 2270,
+    "text_end": 2295,
+    "pronounce_text_begin": 2168,
+    "pronounce_text_end": 2191
+  },
+  {
+    "text": "这是闭环模式的根本盲点。validator 没有 validator。",
+    "pronounce_text": "这是闭环模式的根本盲点。validator没有validator。",
+    "time_begin": 388584,
+    "time_end": 393511.1201814059,
+    "text_begin": 2295,
+    "text_end": 2330,
+    "pronounce_text_begin": 2191,
+    "pronounce_text_end": 2224
+  },
+  {
+    "text": "所以业务规则、验证标准这些东西，必须在循环开始之前显式定义清楚，preferred models 是什么、reader experience 长什么样、reproducibility 怎么算通过。",
+    "pronounce_text": "所以业务规则、验证标准这些东西，必须在循环开始之前显式定义清楚，preferred models是什么、reader experience长什么样、reproducibility怎么算通过。",
+    "time_begin": 393660,
+    "time_end": 407074.0136054422,
+    "text_begin": 2330,
+    "text_end": 2428,
+    "pronounce_text_begin": 2224,
+    "pronounce_text_end": 2319
+  },
+  {
+    "text": "validator 写错了，循环再漂亮也是错的。",
+    "pronounce_text": "validator写错了，循环再漂亮也是错的。",
+    "time_begin": 407274.0136054422,
+    "time_end": 411133.01587301586,
+    "text_begin": 2428,
+    "text_end": 2452,
+    "pronounce_text_begin": 2319,
+    "pronounce_text_end": 2342
+  },
+  {
+    "text": "把这几条捏在一起，我自己的判断是这样。",
+    "pronounce_text": "把这几条捏在一起，我自己的判断是这样。",
+    "time_begin": 411300,
+    "time_end": 414392.7437641723,
+    "text_begin": 2452,
+    "text_end": 2471,
+    "pronounce_text_begin": 2342,
+    "pronounce_text_end": 2361
+  },
+  {
+    "text": "判断一个 Agent 循环有没有在工作，别看它改了多少东西，看下一轮的差距有没有变小。",
+    "pronounce_text": "判断一个Agent循环有没有在工作，别看它改了多少东西，看下一轮的差距有没有变小。",
+    "time_begin": 414540,
+    "time_end": 420407.5283446712,
+    "text_begin": 2471,
+    "text_end": 2514,
+    "pronounce_text_begin": 2361,
+    "pronounce_text_end": 2402
+  },
+  {
+    "text": "而要能这么测量，前提是 Review、Repair、Validation 三个动作没有互相帮忙——每个阶段动词单一，输出 schema 化，阶段之间签合同而不是讲故事。",
+    "pronounce_text": "而要能这么测量，前提是Review、Repair、Validation三个动作没有互相帮忙每个阶段动词单一，输出schema化，阶段之间签合同而不是讲故事。",
+    "time_begin": 420552,
+    "time_end": 433037.2154195011,
+    "text_begin": 2514,
+    "text_end": 2598,
+    "pronounce_text_begin": 2402,
+    "pronounce_text_end": 2480
+  },
+  {
+    "text": "最后还得给这个循环明确写出停止条件，pass、max attempts、或者 plateau，三选一。",
+    "pronounce_text": "最后还得给这个循环明确写出停止条件，pass、max attempts、或者plateau，三选一。",
+    "time_begin": 433188,
+    "time_end": 440715.7551020408,
+    "text_begin": 2598,
+    "text_end": 2649,
+    "pronounce_text_begin": 2480,
+    "pronounce_text_end": 2530
+  },
+  {
+    "text": "这三件事缺一不可。差距是信号，三相纯度是测量前提，停止条件是出口。没有这三件，Agent 循环就只是一个看起来很努力、但你不知道它什么时候算完的黑盒。",
+    "pronounce_text": "这三件事缺一不可。差距是信号，三相纯度是测量前提，停止条件是出口。没有这三件，Agent循环就只是一个看起来很努力、但你不知道它什么时候算完的黑盒。",
+    "time_begin": 440856,
+    "time_end": 456150.8299319728,
+    "text_begin": 2649,
+    "text_end": 2724,
+    "pronounce_text_begin": 2530,
+    "pronounce_text_end": 2604
+  },
+  {
+    "text": "下次你再搭一个 Agent 自循环，别先去想怎么让模型修得更好。先回答三个问题：每一轮跑完，我用什么数字衡量\"更接近完成\"？这个数字怎么保证是干净的？什么时候我会让它停下来？",
+    "pronounce_text": "下次你再搭一个Agent自循环，别先去想怎么让模型修得更好。先回答三个问题：每一轮跑完，我用什么数字衡量\"更接近完成\"？这个数字怎么保证是干净的？什么时候我会让它停下来？",
+    "time_begin": 456300,
+    "time_end": 471722.5396825397,
+    "text_begin": 2724,
+    "text_end": 2811,
+    "pronounce_text_begin": 2604,
+    "pronounce_text_end": 2689
+  },
+  {
+    "text": "这三个问题答不出来，再聪明的模型也救不了你的循环。",
+    "pronounce_text": "这三个问题答不出来，再聪明的模型也救不了你的循环。",
+    "time_begin": 471888,
+    "time_end": 476095.3015873016,
+    "text_begin": 2811,
+    "text_end": 2836,
+    "pronounce_text_begin": 2689,
+    "pronounce_text_end": 2714
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 476244,
+    "time_end": 481426.5396825397,
+    "text_begin": 2836,
+    "text_end": 2863,
+    "pronounce_text_begin": 2714,
+    "pronounce_text_end": 2740
+  }
+]

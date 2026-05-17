@@ -1,0 +1,16 @@
+{
+  "blog_metadata": {
+    "title": "Build an Agent Improvement Loop with Traces, Evals, and Codex",
+    "title_zh": "Agent 不是改 prompt，是改 5 个面",
+    "url": "https://developers.openai.com/cookbook/examples/agents_sdk/agent_improvement_loop",
+    "author": "OpenAI Cookbook",
+    "word_count": 4335,
+    "slug": "openai-cookbook-agent-improvement-loop"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕同一个 thesis——'agent 改进是基础设施工作不是 prompt 工作'——展开五个面（5 surfaces）+ feedback-to-eval 飞轮 + 5 failure-mode traces + 6 件套输出契约 + harness 数据结构化 + tradeoff。拆开任何一段会让'飞轮'失去连贯感。",
+    "episode_transitions": [],
+    "videos": [{"video_number": 1, "title_zh": "Agent 不是改 prompt，是改 5 个面"}]
+  }
+}

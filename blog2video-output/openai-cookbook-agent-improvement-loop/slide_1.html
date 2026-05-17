@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(ellipse at center 35%, rgba(139, 92, 246, 0.14) 0%, transparent 55%),
+        #0D0D1A;
+    }
+    .title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      margin-bottom: 56px;
+    }
+    .title .highlight {
+      color: #F59E0B;
+    }
+    .source-pill {
+      background: #1A1A30;
+      padding: 16px 34px;
+      border-radius: 999px;
+      font-size: 22px;
+      color: #6B6B80;
+      letter-spacing: 0.5px;
+      margin-bottom: 96px;
+    }
+    .cards {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      justify-content: center;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 36px 24px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card.left {
+      border-left: 4px solid #EF4444;
+    }
+    .card.right {
+      border-left: 4px solid #8B5CF6;
+    }
+    .card .muted {
+      color: #B0B0CC;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">
+      Agent 不是改 prompt<br>
+      是改 <span class="highlight">5 个面</span>
+    </div>
+    <div class="source-pill">OpenAI Cookbook · Agent Improvement Loop with Traces, Evals & Codex</div>
+    <div class="cards">
+      <div class="card left">改 prompt<br>救不了 Agent</div>
+      <div class="card right">Harness<br>= 5 个面</div>
+    </div>
+  </div>
+</body>
+</html>

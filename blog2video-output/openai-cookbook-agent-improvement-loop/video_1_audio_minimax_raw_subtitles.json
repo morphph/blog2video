@@ -1,0 +1,652 @@
+[
+  {
+    "text": "OpenAI 官方 cookbook 刚刚发了一篇东西，把\"让 Agent 越用越强\"这件事第一次拆成了一条可以照抄的流水线。",
+    "pronounce_text": "OpenAI官方cookbook刚刚发了一篇东西，把\"让Agent越用越强\"这件事第一次拆成了一条可以照抄的流水线。",
+    "time_begin": 0,
+    "time_end": 8897.732426303855,
+    "text_begin": 0,
+    "text_end": 63,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 58
+  },
+  {
+    "text": "Agents SDK 出 trace，人和 LLM 出 feedback，Promptfoo 跑 eval，HALO 给改动排序，最后 Codex 直接落地成 PR。",
+    "pronounce_text": "Agents SDK出trace，人和LLM出feedback，Promptfoo跑eval，HALO给改动排序，最后Codex直接落地成PR。",
+    "time_begin": 9097.732426303855,
+    "time_end": 20038.820861678003,
+    "text_begin": 63,
+    "text_end": 146,
+    "pronounce_text_begin": 58,
+    "pronounce_text_end": 130
+  },
+  {
+    "text": "我读完最大的反应是：原来绝大多数团队改 Agent 的方式，从一开始就改错了地方。今天这期不讲怎么装这套工具，只聊一件事——改 prompt 救不了 Agent，你真正要改的是 5 个面。",
+    "pronounce_text": "我读完最大的反应是：原来绝大多数团队改Agent的方式，从一开始就改错了地方。今天这期不讲怎么装这套工具，只聊一件事改prompt救不了Agent，你真正要改的是五个面。",
+    "time_begin": 20196,
+    "time_end": 35873.95918367347,
+    "text_begin": 146,
+    "text_end": 240,
+    "pronounce_text_begin": 130,
+    "pronounce_text_end": 215
+  },
+  {
+    "text": "先说一个我特别熟悉的场景。Agent 跑出来效果不对，团队在 Slack 里讨论一通，留几句话：\"下次注意要引用真实数据\"、\"下次不要瞎推断指标\"。",
+    "pronounce_text": "先说一个我特别熟悉的场景。Agent跑出来效果不对，团队在Slack里讨论一通，留几句话：\"下次注意要引用真实数据\"、\"下次不要瞎推断指标\"。",
+    "time_begin": 36036,
+    "time_end": 49159.7641723356,
+    "text_begin": 240,
+    "text_end": 314,
+    "pronounce_text_begin": 215,
+    "pronounce_text_end": 286
+  },
+  {
+    "text": "这些话当时看挺像那么回事，但下一次跑，同样的坑还是踩。",
+    "pronounce_text": "这些话当时看挺像那么回事，但下一次跑，同样的坑还是踩。",
+    "time_begin": 49320,
+    "time_end": 54340,
+    "text_begin": 314,
+    "text_end": 341,
+    "pronounce_text_begin": 286,
+    "pronounce_text_end": 313
+  },
+  {
+    "text": "原文里有一句话点得特别狠，说大多数团队的迭代方式，是把教训留成 disconnected comments——一条条断开的评论。听起来是经验，其实是一次性消耗品。说完就忘，下次重来。",
+    "pronounce_text": "原文里有一句话点得特别狠，说大多数团队的迭代方式，是把教训留成disconnected comments一条条断开的评论。听起来是经验，其实是一次性消耗品。说完就忘，下次重来。",
+    "time_begin": 54504,
+    "time_end": 70054.24943310657,
+    "text_begin": 341,
+    "text_end": 432,
+    "pronounce_text_begin": 313,
+    "pronounce_text_end": 401
+  },
+  {
+    "text": "而这篇 cookbook 提的方法，是另一种姿态。它不是优化某一次回答，它是建一条飞轮。每一次失败的 feedback，都会被沉淀成下一轮的 eval。学到的东西不靠人记，靠代码记。",
+    "pronounce_text": "而这篇cookbook提的方法，是另一种姿态。它不是优化某一次回答，它是建一条飞轮。每一次失败的feedback，都会被沉淀成下一轮的eval。学到的东西不靠人记，靠代码记。",
+    "time_begin": 70200,
+    "time_end": 84473.15192743763,
+    "text_begin": 432,
+    "text_end": 523,
+    "pronounce_text_begin": 401,
+    "pronounce_text_end": 488
+  },
+  {
+    "text": "这才是\"越用越强\"四个字真正的含义。",
+    "pronounce_text": "这才是\"越用越强\"四个字真正的含义。",
+    "time_begin": 84636,
+    "time_end": 87984.16326530612,
+    "text_begin": 523,
+    "text_end": 541,
+    "pronounce_text_begin": 488,
+    "pronounce_text_end": 506
+  },
+  {
+    "text": "这条飞轮第一个反直觉的点，就在你以为要改的对象上。",
+    "pronounce_text": "这条飞轮第一个反直觉的点，就在你以为要改的对象上。",
+    "time_begin": 88128,
+    "time_end": 92497.84126984127,
+    "text_begin": 541,
+    "text_end": 566,
+    "pronounce_text_begin": 506,
+    "pronounce_text_end": 531
+  },
+  {
+    "text": "你跑了一次 Agent，结果不行，你的第一反应大概率是回到 system prompt，加一句\"请务必引用真实数据\"。但原文一开始就把\"harness\"这个词钉死了。",
+    "pronounce_text": "你跑了一次Agent，结果不行，你的第一反应大概率是回到system prompt，加一句\"请务必引用真实数据\"。但原文一开始就把\"harness\"这个词钉死了。",
+    "time_begin": 92664,
+    "time_end": 105358.19501133787,
+    "text_begin": 566,
+    "text_end": 649,
+    "pronounce_text_begin": 531,
+    "pronounce_text_end": 612
+  },
+  {
+    "text": "Harness 是一份完整的契约，包含五个面：instructions、tools、routing、output requirements、validation checks。指令、工具、路由、输出要求、校验。",
+    "pronounce_text": "Harness是一份完整的契约，包含五个面：instructions、tools、routing、output requirements、validation checks。指令、工具、路由、输出要求、校验。",
+    "time_begin": 105516,
+    "time_end": 120299.9909297052,
+    "text_begin": 649,
+    "text_end": 754,
+    "pronounce_text_begin": 612,
+    "pronounce_text_end": 716
+  },
+  {
+    "text": "你听到这里就明白了——prompt 只是其中一个面。当你只在改 prompt 的时候，你其实只动了五分之一。剩下的四个面，工具够不够、调用顺序对不对、要求模型输出什么、有没有人去校验，全都没动。",
+    "pronounce_text": "你听到这里就明白了prompt只是其中一个面。当你只在改prompt的时候，你其实只动了五分之一。剩下的四个面，工具够不够、调用顺序对不对、要求模型输出什么、有没有人去校验，全都没动。",
+    "time_begin": 120456,
+    "time_end": 137283.3469387755,
+    "text_begin": 754,
+    "text_end": 851,
+    "pronounce_text_begin": 716,
+    "pronounce_text_end": 808
+  },
+  {
+    "text": "Agent 表现没改善，不是因为模型笨，是因为你以为问题在 prompt，其实问题在另外四个面里。",
+    "pronounce_text": "Agent表现没改善，不是因为模型笨，是因为你以为问题在prompt，其实问题在另外四个面里。",
+    "time_begin": 137448,
+    "time_end": 145022.19501133787,
+    "text_begin": 851,
+    "text_end": 900,
+    "pronounce_text_begin": 808,
+    "pronounce_text_end": 855
+  },
+  {
+    "text": "这一刀切得很干脆。它把\"调 Agent\"从一个写作问题，变成了一个工程问题。",
+    "pronounce_text": "这一刀切得很干脆。它把\"调Agent\"从一个写作问题，变成了一个工程问题。",
+    "time_begin": 145188,
+    "time_end": 152588.04535147393,
+    "text_begin": 900,
+    "text_end": 938,
+    "pronounce_text_begin": 855,
+    "pronounce_text_end": 892
+  },
+  {
+    "text": "整条飞轮里有六个组件：Agents SDK、trace processor、feedback 收集、Promptfoo、HALO、Codex。看起来 trace 很性感，HALO 听起来很高级，Codex 自动出 PR 最像未来。",
+    "pronounce_text": "整条飞轮里有六个组件：Agents SDK、trace processor、feedback收集、Promptfoo、HALO、Codex。看起来trace很性感，HALO听起来很高级，Codex自动出PR最像未来。",
+    "time_begin": 152748,
+    "time_end": 170480.92517006802,
+    "text_begin": 938,
+    "text_end": 1053,
+    "pronounce_text_begin": 892,
+    "pronounce_text_end": 1000
+  },
+  {
+    "text": "但我读完之后认为，整条飞轮里杠杆最大的那一步，是看起来最不起眼的——把 feedback 转成 Promptfoo eval。",
+    "pronounce_text": "但我读完之后认为，整条飞轮里杠杆最大的那一步，是看起来最不起眼的把feedback转成Promptfoo eval。",
+    "time_begin": 170640,
+    "time_end": 179073.33333333334,
+    "text_begin": 1053,
+    "text_end": 1116,
+    "pronounce_text_begin": 1000,
+    "pronounce_text_end": 1058
+  },
+  {
+    "text": "为什么？因为这一步是经验从\"一次性\"变成\"可复用\"的唯一接口。",
+    "pronounce_text": "为什么？因为这一步是经验从\"一次性\"变成\"可复用\"的唯一接口。",
+    "time_begin": 179244,
+    "time_end": 185668.80725623583,
+    "text_begin": 1116,
+    "text_end": 1147,
+    "pronounce_text_begin": 1058,
+    "pronounce_text_end": 1089
+  },
+  {
+    "text": "你想一下，没有这一步会怎样。你跑 trace，你收 feedback，HALO 给你排序，Codex 帮你改完代码。挺好。但下一次跑，新的 Agent 怎么知道这次学到的东西？没法知道。",
+    "pronounce_text": "你想一下，没有这一步会怎样。你跑trace，你收feedback，HALO给你排序，Codex帮你改完代码。挺好。但下一次跑，新的Agent怎么知道这次学到的东西？没法知道。",
+    "time_begin": 185832,
+    "time_end": 202113.67800453515,
+    "text_begin": 1147,
+    "text_end": 1240,
+    "pronounce_text_begin": 1089,
+    "pronounce_text_end": 1176
+  },
+  {
+    "text": "除非你把这次学到的判准，固化成一条永远会被执行的 eval。",
+    "pronounce_text": "除非你把这次学到的判准，固化成一条永远会被执行的eval。",
+    "time_begin": 202284,
+    "time_end": 207431.7097505669,
+    "text_begin": 1240,
+    "text_end": 1270,
+    "pronounce_text_begin": 1176,
+    "pronounce_text_end": 1205
+  },
+  {
+    "text": "只有这一步做到了，下次回归的时候，老错误才会被自动拦下来。其他组件没有这一步，全是空转。",
+    "pronounce_text": "只有这一步做到了，下次回归的时候，老错误才会被自动拦下来。其他组件没有这一步，全是空转。",
+    "time_begin": 207576,
+    "time_end": 215707.47392290249,
+    "text_begin": 1270,
+    "text_end": 1314,
+    "pronounce_text_begin": 1205,
+    "pronounce_text_end": 1249
+  },
+  {
+    "text": "这也是为什么我说\"你以为在改 prompt，其实要改的是一条飞轮\"。飞轮的核心齿轮，不是哪个组件最炫，而是哪一步让经验能复利。",
+    "pronounce_text": "这也是为什么我说\"你以为在改prompt，其实要改的是一条飞轮\"。飞轮的核心齿轮，不是哪个组件最炫，而是哪一步让经验能复利。",
+    "time_begin": 215856,
+    "time_end": 227482.07709750568,
+    "text_begin": 1314,
+    "text_end": 1377,
+    "pronounce_text_begin": 1249,
+    "pronounce_text_end": 1311
+  },
+  {
+    "text": "第二个反直觉的设计，藏在它的样本选择里。",
+    "pronounce_text": "第二个反直觉的设计，藏在它的样本选择里。",
+    "time_begin": 227628,
+    "time_end": 231707.5918367347,
+    "text_begin": 1377,
+    "text_end": 1397,
+    "pronounce_text_begin": 1311,
+    "pronounce_text_end": 1331
+  },
+  {
+    "text": "这套流水线里有 5 条 traced runs，覆盖 5 种场景。融资风险，要从烧钱速度和现金跑道推出来。营收质量，要把 ARR bridge 对账。客户集中度，要把母账户合并以后重新看。",
+    "pronounce_text": "这套流水线里有五条traced runs，覆盖五种场景。融资风险，要从烧钱速度和现金跑道推出来。营收质量，要把ARR bridge对账。客户集中度，要把母账户合并以后重新看。",
+    "time_begin": 231876,
+    "time_end": 247472.68934240364,
+    "text_begin": 1397,
+    "text_end": 1491,
+    "pronounce_text_begin": 1331,
+    "pronounce_text_end": 1418
+  },
+  {
+    "text": "企业级安全准备度，要在 SOC 2 缺位的前提下评估。还有一类，是那种根本不该被模型推断的指标，模型却容易硬猜。",
+    "pronounce_text": "企业级安全准备度，要在SOC二缺位的前提下评估。还有一类，是那种根本不该被模型推断的指标，模型却容易硬猜。",
+    "time_begin": 247644,
+    "time_end": 259188.80725623583,
+    "text_begin": 1491,
+    "text_end": 1547,
+    "pronounce_text_begin": 1418,
+    "pronounce_text_end": 1471
+  },
+  {
+    "text": "你注意到了吗？五条 trace，没有一条是\"演示成功\"。全部是失败模式。",
+    "pronounce_text": "你注意到了吗？五条trace，没有一条是\"演示成功\"。全部是失败模式。",
+    "time_begin": 259344,
+    "time_end": 266279.6462585034,
+    "text_begin": 1547,
+    "text_end": 1583,
+    "pronounce_text_begin": 1471,
+    "pronounce_text_end": 1506
+  },
+  {
+    "text": "这一点和我们大部分人的直觉完全相反。我们做 demo 的时候，总想先挑几个能跑通的场景，让别人看到效果。",
+    "pronounce_text": "这一点和我们大部分人的直觉完全相反。我们做demo的时候，总想先挑几个能跑通的场景，让别人看到效果。",
+    "time_begin": 266436,
+    "time_end": 275380.1723356009,
+    "text_begin": 1583,
+    "text_end": 1635,
+    "pronounce_text_begin": 1506,
+    "pronounce_text_end": 1556
+  },
+  {
+    "text": "但这套流水线从一开始就把 eval 当成防回归工具来设计——既然是防回归，样本就必须覆盖\"会出错的地方\"，不是\"已经能跑的地方\"。",
+    "pronounce_text": "但这套流水线从一开始就把eval当成防回归工具来设计既然是防回归，样本就必须覆盖\"会出错的地方\"，不是\"已经能跑的地方\"。",
+    "time_begin": 275544,
+    "time_end": 286276.1088435374,
+    "text_begin": 1635,
+    "text_end": 1700,
+    "pronounce_text_begin": 1556,
+    "pronounce_text_end": 1617
+  },
+  {
+    "text": "happy path 不用测，反正大概率能过。真正要测的，是 Agent 历来栽过跟头的那五个地方。",
+    "pronounce_text": "happy path不用测，反正大概率能过。真正要测的，是Agent历来栽过跟头的那五个地方。",
+    "time_begin": 286416,
+    "time_end": 294849.3333333333,
+    "text_begin": 1700,
+    "text_end": 1750,
+    "pronounce_text_begin": 1617,
+    "pronounce_text_end": 1664
+  },
+  {
+    "text": "这是一种很工程师的思维。但很多团队做 Agent eval，做着做着就变成了在收集成功案例，自己感动自己。",
+    "pronounce_text": "这是一种很工程师的思维。但很多团队做Agent eval，做着做着就变成了在收集成功案例，自己感动自己。",
+    "time_begin": 295020,
+    "time_end": 303406.8934240363,
+    "text_begin": 1750,
+    "text_end": 1803,
+    "pronounce_text_begin": 1664,
+    "pronounce_text_end": 1716
+  },
+  {
+    "text": "接着说第三个面，输出要求。这一段我觉得是整篇 cookbook 里最容易被低估的设计。",
+    "pronounce_text": "接着说第三个面，输出要求。这一段我觉得是整篇cookbook里最容易被低估的设计。",
+    "time_begin": 303552,
+    "time_end": 311044.92517006805,
+    "text_begin": 1803,
+    "text_end": 1846,
+    "pronounce_text_begin": 1716,
+    "pronounce_text_end": 1757
+  },
+  {
+    "text": "大多数团队心里\"Agent 做完任务\"的定义是什么？模型回完话就算完。一段漂亮的总结，结束。",
+    "pronounce_text": "大多数团队心里\"Agent做完任务\"的定义是什么？模型回完话就算完。一段漂亮的总结，结束。",
+    "time_begin": 311184,
+    "time_end": 320035.2925170068,
+    "text_begin": 1846,
+    "text_end": 1892,
+    "pronounce_text_begin": 1757,
+    "pronounce_text_end": 1802
+  },
+  {
+    "text": "但这套 harness 把\"完成\"重新定义成一组可机器校验的物理产物。",
+    "pronounce_text": "但这套harness把\"完成\"重新定义成一组可机器校验的物理产物。",
+    "time_begin": 320184,
+    "time_end": 325877.3786848073,
+    "text_begin": 1892,
+    "text_end": 1927,
+    "pronounce_text_begin": 1802,
+    "pronounce_text_end": 1835
+  },
+  {
+    "text": "Agent 跑完，必须落下六个文件：summary_answer.md，一句话答案；investment_memo.md，完整版分析；risk_register.json，结构化的风险清单；",
+    "pronounce_text": "Agent跑完，必须落下六个文件：summary，answer.md，一句话答案;investment，memo.md，完整版分析;risk，register.json，结构化的风险清单;",
+    "time_begin": 326016,
+    "time_end": 340498.1315192744,
+    "text_begin": 1927,
+    "text_end": 2022,
+    "pronounce_text_begin": 1835,
+    "pronounce_text_end": 1929
+  },
+  {
+    "text": "open_questions.md，还没回答的开放问题；",
+    "pronounce_text": "open，questions.md，还没回答的开放问题;",
+    "time_begin": 340698.1315192744,
+    "time_end": 345288.5623582766,
+    "text_begin": 2022,
+    "text_end": 2050,
+    "pronounce_text_begin": 1929,
+    "pronounce_text_end": 1957
+  },
+  {
+    "text": "citations.json，每条 claim 对应到了哪份文件；evidence_table.csv，一份审计追溯表。",
+    "pronounce_text": "citations.json，每条claim对应到了哪份文件;evidence，table.csv，一份审计追溯表。",
+    "time_begin": 345456,
+    "time_end": 354783.3015873016,
+    "text_begin": 2050,
+    "text_end": 2110,
+    "pronounce_text_begin": 1957,
+    "pronounce_text_end": 2015
+  },
+  {
+    "text": "六件产物，落在工作目录里。然后还不算完——还要过两道校验。一个脚本叫 check_evidence_coverage.py，专门检查每一条 claim 是不是真的引用了 dataroom 里存在的文件，防止模型瞎编引用。",
+    "pronounce_text": "六件产物，落在工作目录里。然后还不算完还要过两道校验。一个脚本叫check，evidence，coverage.py，专门检查每一条claim是不是真的引用了dataroom里存在的文件，防止模型瞎编引用。",
+    "time_begin": 354924,
+    "time_end": 370346.5396825397,
+    "text_begin": 2110,
+    "text_end": 2220,
+    "pronounce_text_begin": 2015,
+    "pronounce_text_end": 2118
+  },
+  {
+    "text": "另一个叫 validate_output_contract.py，检查六个文件存不存在、JSON 结构对不对、引用的 source 合不合法。",
+    "pronounce_text": "另一个叫validate，output，contract.py，检查六个文件存不存在、JSON结构对不对、引用的source合不合法。",
+    "time_begin": 370512,
+    "time_end": 380652,
+    "text_begin": 2220,
+    "text_end": 2291,
+    "pronounce_text_begin": 2118,
+    "pronounce_text_end": 2185
+  },
+  {
+    "text": "这套设计的意义在哪里？只有当\"完成\"被定义成机器可校验的东西，Promptfoo 才能把它当成 pass 或 fail 来跑。换句话说，没有这份六件套，eval 根本无从下手。",
+    "pronounce_text": "这套设计的意义在哪里？只有当\"完成\"被定义成机器可校验的东西，Promptfoo才能把它当成pass或fail来跑。换句话说，没有这份六件套，eval根本无从下手。",
+    "time_begin": 380808,
+    "time_end": 394825.73242630385,
+    "text_begin": 2291,
+    "text_end": 2379,
+    "pronounce_text_begin": 2185,
+    "pronounce_text_end": 2267
+  },
+  {
+    "text": "所谓的\"Agent 改进飞轮\"，前提是先有一条机器看得懂的及格线。",
+    "pronounce_text": "所谓的\"Agent改进飞轮\"，前提是先有一条机器看得懂的及格线。",
+    "time_begin": 394992,
+    "time_end": 400987.2380952381,
+    "text_begin": 2379,
+    "text_end": 2412,
+    "pronounce_text_begin": 2267,
+    "pronounce_text_end": 2299
+  },
+  {
+    "text": "再往里看一层，你会发现更狠的设计。这套 harness 不靠自然语言约束 Agent，它靠数据结构。",
+    "pronounce_text": "再往里看一层，你会发现更狠的设计。这套harness不靠自然语言约束Agent，它靠数据结构。",
+    "time_begin": 401148,
+    "time_end": 408768.6349206349,
+    "text_begin": 2412,
+    "text_end": 2462,
+    "pronounce_text_begin": 2299,
+    "pronounce_text_end": 2346
+  },
+  {
+    "text": "源码里有三个 Python dataclass：ModelSettings，AgentConfig，ToolPolicy。allowed data roots，Agent 能读哪些目录。writable output dirs，能往哪里写。required artifacts，必须落下哪些文件。",
+    "pronounce_text": "源码里有三个Python dataclass：ModelSettings，AgentConfig，ToolPolicy。allowed data roots，Agent能读哪些目录。writable output dirs，能往哪里写。required artifacts，必须落下哪些文件。",
+    "time_begin": 408924,
+    "time_end": 425844.2267573696,
+    "text_begin": 2462,
+    "text_end": 2610,
+    "pronounce_text_begin": 2346,
+    "pronounce_text_end": 2492
+  },
+  {
+    "text": "evidence preferences，证据冲突时优先信谁。",
+    "pronounce_text": "evidence preferences，证据冲突时优先信谁。",
+    "time_begin": 425988,
+    "time_end": 430195.3015873016,
+    "text_begin": 2610,
+    "text_end": 2641,
+    "pronounce_text_begin": 2492,
+    "pronounce_text_end": 2523
+  },
+  {
+    "text": "这些约束不是在 system prompt 里写\"请你只读这些目录\"，而是直接写进 Python 类。",
+    "pronounce_text": "这些约束不是在system prompt里写\"请你只读这些目录\"，而是直接写进Python类。",
+    "time_begin": 430344,
+    "time_end": 436803.63718820864,
+    "text_begin": 2641,
+    "text_end": 2692,
+    "pronounce_text_begin": 2523,
+    "pronounce_text_end": 2570
+  },
+  {
+    "text": "差别在哪？写在 prompt 里的，是请求，模型可以不听。写在数据结构里的，是代码对象——HALO 可以给它打分，Codex 可以直接改它。",
+    "pronounce_text": "差别在哪？写在prompt里的，是请求，模型可以不听。写在数据结构里的，是代码对象HALO可以给它打分，Codex可以直接改它。",
+    "time_begin": 436968,
+    "time_end": 449743.4648526077,
+    "text_begin": 2692,
+    "text_end": 2762,
+    "pronounce_text_begin": 2570,
+    "pronounce_text_end": 2634
+  },
+  {
+    "text": "harness 一旦\"数据结构化\"，就变成了可以被自动优化的东西。",
+    "pronounce_text": "harness一旦\"数据结构化\"，就变成了可以被自动优化的东西。",
+    "time_begin": 449943.4648526077,
+    "time_end": 454568.7256235828,
+    "text_begin": 2762,
+    "text_end": 2795,
+    "pronounce_text_begin": 2634,
+    "pronounce_text_end": 2666
+  },
+  {
+    "text": "这也是为什么我说，agent 改进的本质是工程，不是写作。你在 prompt 里再怎么写\"请引用真实数据\"，都不如一个 check_evidence_coverage.py 跑一遍来得硬。",
+    "pronounce_text": "这也是为什么我说，agent改进的本质是工程，不是写作。你在prompt里再怎么写\"请引用真实数据\"，都不如一个check，evidence，coverage.py跑一遍来得硬。",
+    "time_begin": 454716,
+    "time_end": 468989.15192743763,
+    "text_begin": 2795,
+    "text_end": 2889,
+    "pronounce_text_begin": 2666,
+    "pronounce_text_end": 2755
+  },
+  {
+    "text": "讲到这里，我必须把代价也讲清楚。",
+    "pronounce_text": "讲到这里，我必须把代价也讲清楚。",
+    "time_begin": 469152,
+    "time_end": 472326.0136054422,
+    "text_begin": 2889,
+    "text_end": 2905,
+    "pronounce_text_begin": 2755,
+    "pronounce_text_end": 2771
+  },
+  {
+    "text": "这条飞轮的吸引力很大一部分来自一个数字。原文 prerequisites 里写着：默认配置下，跑完一整轮大约二十分钟。这意味着什么？",
+    "pronounce_text": "这条飞轮的吸引力很大一部分来自一个数字。原文prerequisites里写着：默认配置下，跑完一整轮大约二十分钟。这意味着什么？",
+    "time_begin": 472464,
+    "time_end": 483196.1088435374,
+    "text_begin": 2905,
+    "text_end": 2971,
+    "pronounce_text_begin": 2771,
+    "pronounce_text_end": 2835
+  },
+  {
+    "text": "意味着一次 trace、feedback、eval、HALO 排序、Codex PR 的完整 self-improvement 循环，理论上你午休时间就能跑完一轮。",
+    "pronounce_text": "意味着一次trace、feedback、eval、HALO排序、Codex PR的完整self-improvement循环，理论上你午休时间就能跑完一轮。",
+    "time_begin": 483336,
+    "time_end": 493859.1292517007,
+    "text_begin": 2971,
+    "text_end": 3053,
+    "pronounce_text_begin": 2835,
+    "pronounce_text_end": 2912
+  },
+  {
+    "text": "但代价也很实在。这条飞轮要同时跑通四套系统：OpenAI Agents SDK、Promptfoo、HALO、Codex。任何一环挂了，整条飞轮就停摆。团队要承担四套工具的运维和升级成本。",
+    "pronounce_text": "但代价也很实在。这条飞轮要同时跑通四套系统：OpenAI Agents SDK、Promptfoo、HALO、Codex。任何一环挂了，整条飞轮就停摆。团队要承担四套工具的运维和升级成本。",
+    "time_begin": 494028,
+    "time_end": 511157.20634920633,
+    "text_begin": 3053,
+    "text_end": 3147,
+    "pronounce_text_begin": 2912,
+    "pronounce_text_end": 3006
+  },
+  {
+    "text": "更现实的一点是，HALO 是 OpenAI 专有组件。给 harness 改动排序这一步，目前在 OpenAI 生态外没有等价的替代品。如果你哪天想脱离 OpenAI 这套栈，这一块得自己实现一个优化器。",
+    "pronounce_text": "更现实的一点是，HALO是OpenAI专有组件。给harness改动排序这一步，目前在OpenAI生态外没有等价的替代品。如果你哪天想脱离OpenAI这套栈，这一块得自己实现一个优化器。",
+    "time_begin": 511308,
+    "time_end": 526091.9909297052,
+    "text_begin": 3147,
+    "text_end": 3249,
+    "pronounce_text_begin": 3006,
+    "pronounce_text_end": 3099
+  },
+  {
+    "text": "还有一个隐性成本。\"feedback 转 eval\"看起来是自动的，实际上仍然需要人判断——这条反馈值不值得变成一条永久的 eval。",
+    "pronounce_text": "还有一个隐性成本。\"feedback转eval\"看起来是自动的，实际上仍然需要人判断这条反馈值不值得变成一条永久的eval。",
+    "time_begin": 526248,
+    "time_end": 536980.1088435374,
+    "text_begin": 3249,
+    "text_end": 3316,
+    "pronounce_text_begin": 3099,
+    "pronounce_text_end": 3161
+  },
+  {
+    "text": "低质量的 feedback 直接入库，会污染整个评测集，让未来的迭代被噪声牵着走。",
+    "pronounce_text": "低质量的feedback直接入库，会污染整个评测集，让未来的迭代被噪声牵着走。",
+    "time_begin": 537180.1088435374,
+    "time_end": 543686.1859410431,
+    "text_begin": 3316,
+    "text_end": 3357,
+    "pronounce_text_begin": 3161,
+    "pronounce_text_end": 3200
+  },
+  {
+    "text": "最后是规模问题。20 分钟一轮，前提是 eval 数量很小。当 eval 从 5 条涨到 100 条，HALO 排序和 Promptfoo 全量复跑都会线性甚至超线性变长。飞轮跑得越久，转速越慢。",
+    "pronounce_text": "最后是规模问题。二十分钟一轮，前提是eval数量很小。当eval从五条涨到一百条，HALO排序和Promptfoo全量复跑都会线性甚至超线性变长。飞轮跑得越久，转速越慢。",
+    "time_begin": 543852,
+    "time_end": 559065.560090703,
+    "text_begin": 3357,
+    "text_end": 3455,
+    "pronounce_text_begin": 3200,
+    "pronounce_text_end": 3285
+  },
+  {
+    "text": "这是任何 eval 体系都绕不开的代价。",
+    "pronounce_text": "这是任何eval体系都绕不开的代价。",
+    "time_begin": 559224,
+    "time_end": 561852.3446712018,
+    "text_begin": 3455,
+    "text_end": 3475,
+    "pronounce_text_begin": 3285,
+    "pronounce_text_end": 3303
+  },
+  {
+    "text": "回头看这整条飞轮，我想说的判断只有一句：Agent 改进是基础设施工作，不是 prompt 工作。",
+    "pronounce_text": "回头看这整条飞轮，我想说的判断只有一句：Agent改进是基础设施工作，不是prompt工作。",
+    "time_begin": 561996,
+    "time_end": 570290.0136054421,
+    "text_begin": 3475,
+    "text_end": 3524,
+    "pronounce_text_begin": 3303,
+    "pronounce_text_end": 3349
+  },
+  {
+    "text": "你不在调模型，你在搭一条流水线。流水线的入口是真实的失败 trace，出口是 Codex 提交的 PR。",
+    "pronounce_text": "你不在调模型，你在搭一条流水线。流水线的入口是真实的失败trace，出口是Codex提交的PR。",
+    "time_begin": 570456,
+    "time_end": 579562.7120181406,
+    "text_begin": 3524,
+    "text_end": 3576,
+    "pronounce_text_begin": 3349,
+    "pronounce_text_end": 3397
+  },
+  {
+    "text": "中间最关键的那一步，是把\"这次的教训\"变成\"下次也会跑的 eval\"，让经验从一次性评论变成永久资产。",
+    "pronounce_text": "中间最关键的那一步，是把\"这次的教训\"变成\"下次也会跑的eval\"，让经验从一次性评论变成永久资产。",
+    "time_begin": 579708,
+    "time_end": 590823.2380952381,
+    "text_begin": 3576,
+    "text_end": 3627,
+    "pronounce_text_begin": 3397,
+    "pronounce_text_end": 3447
+  },
+  {
+    "text": "这篇 cookbook 真正值钱的地方，不是它推荐了哪个工具栈，而是它把一件事讲透了：harness 是 5 个面，不是 1 个 prompt。",
+    "pronounce_text": "这篇cookbook真正值钱的地方，不是它推荐了哪个工具栈，而是它把一件事讲透了：harness是五个面，不是一个prompt。",
+    "time_begin": 590976,
+    "time_end": 600256.8616780045,
+    "text_begin": 3627,
+    "text_end": 3699,
+    "pronounce_text_begin": 3447,
+    "pronounce_text_end": 3511
+  },
+  {
+    "text": "当你只动 prompt 的时候，你只动了五分之一；剩下的四个面——工具、路由、输出契约、校验——才是 Agent 真正越来越靠谱的地方。",
+    "pronounce_text": "当你只动prompt的时候，你只动了五分之一;剩下的四个面工具、路由、输出契约、校验才是Agent真正越来越靠谱的地方。",
+    "time_begin": 600408,
+    "time_end": 612672.6258503401,
+    "text_begin": 3699,
+    "text_end": 3767,
+    "pronounce_text_begin": 3511,
+    "pronounce_text_end": 3571
+  },
+  {
+    "text": "别人在改 prompt，他们在搭一条让每次失败都变成下次评测的飞轮。Agent 不是被调出来的，是被沉淀出来的。",
+    "pronounce_text": "别人在改prompt，他们在搭一条让每次失败都变成下次评测的飞轮。Agent不是被调出来的，是被沉淀出来的。",
+    "time_begin": 612828,
+    "time_end": 623176.9795918367,
+    "text_begin": 3767,
+    "text_end": 3823,
+    "pronounce_text_begin": 3571,
+    "pronounce_text_end": 3625
+  },
+  {
+    "text": "所以下一次你的 Agent 又跑挂了，先别急着回到 system prompt 加一句话。问自己三个问题：这次的失败，能不能变成一条 eval？这条 eval 下次还会被跑吗？",
+    "pronounce_text": "所以下一次你的Agent又跑挂了，先别急着回到system prompt加一句话。问自己三个问题：这次的失败，能不能变成一条eval？这条eval下次还会被跑吗？",
+    "time_begin": 623340,
+    "time_end": 637230.0226757369,
+    "text_begin": 3823,
+    "text_end": 3911,
+    "pronounce_text_begin": 3625,
+    "pronounce_text_end": 3706
+  },
+  {
+    "text": "要改的，是 prompt，还是工具、路由、输出契约、校验这四个面里的某一个？",
+    "pronounce_text": "要改的，是prompt，还是工具、路由、输出契约、校验这四个面里的某一个？",
+    "time_begin": 637380,
+    "time_end": 644872.925170068,
+    "text_begin": 3911,
+    "text_end": 3949,
+    "pronounce_text_begin": 3706,
+    "pronounce_text_end": 3743
+  },
+  {
+    "text": "想清楚这三个问题，再动手。",
+    "pronounce_text": "想清楚这三个问题，再动手。",
+    "time_begin": 645012,
+    "time_end": 647768.0544217688,
+    "text_begin": 3949,
+    "text_end": 3962,
+    "pronounce_text_begin": 3743,
+    "pronounce_text_end": 3756
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 647928,
+    "time_end": 653331.1292517007,
+    "text_begin": 3962,
+    "text_end": 3989,
+    "pronounce_text_begin": 3756,
+    "pronounce_text_end": 3782
+  }
+]

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 36px;
+      letter-spacing: -1px;
+    }
+    .title .em { color: #8B5CF6; }
+    .thesis {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 30px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    .thesis-line {
+      font-size: 34px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .thesis-line .neg {
+      color: #6B7280;
+      text-decoration: line-through;
+      text-decoration-color: rgba(107, 114, 128, 0.6);
+    }
+    .thesis-line .pos {
+      color: #8B5CF6;
+    }
+    .diagram {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .node {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 20px 22px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .node .role {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #6B7280;
+      flex-shrink: 0;
+      width: 90px;
+    }
+    .node .text {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .node.mid {
+      border-left: 4px solid #F59E0B;
+      background: rgba(245, 158, 11, 0.06);
+    }
+    .node.mid .role { color: #F59E0B; }
+    .node.mid .text { color: #F59E0B; }
+    .arrow {
+      text-align: center;
+      color: #6B7280;
+      font-size: 22px;
+    }
+    .bottom {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.5);
+      border-radius: 12px;
+      padding: 22px 24px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Agent 改进是<br><span class="em">基础设施工作</span>, 不是 prompt 工作</div>
+    <div class="thesis">
+      <div class="thesis-line">你不在<span class="neg">调模型</span></div>
+      <div class="thesis-line">你在<span class="pos">搭一条流水线</span></div>
+    </div>
+    <div class="diagram">
+      <div class="node">
+        <div class="role">入口</div>
+        <div class="text">失败 trace</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="node mid">
+        <div class="role">核心齿轮</div>
+        <div class="text">feedback → eval</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="node">
+        <div class="role">出口</div>
+        <div class="text">Codex PR</div>
+      </div>
+    </div>
+    <div class="bottom">Agent 不是被调出来的, 是被沉淀出来的</div>
+  </div>
+</body>
+</html>

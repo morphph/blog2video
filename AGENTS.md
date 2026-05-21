@@ -1,10 +1,10 @@
 # AGENTS.md
 
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
+This file provides guidance to any coding agent (Claude Code, Codex, Aider, Cursor, etc.) working in this repository. It is a duplicate of CLAUDE.md kept in sync for tools that follow the agents.md convention.
 
 ## Project Overview
 
-Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Codex slash command `/blog2video <url-or-file>` that runs 5 core stages via subagents.
+Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 5 core stages via subagents.
 
 ### Supported input types
 - **Blog URLs** — fetched via curl/fetch
@@ -44,7 +44,7 @@ MINIMAX_VOICE_ID=moss_audio_ccbe9ed6-3a37-11f1-a1e0-8a43ce7defab
 
 Design principle: **write first, split later.** Narration quality is never constrained by splitting decisions. Duration is a result, not an input.
 
-Each stage runs as an independent subagent with no shared context. Prompt specs live in `.Codex/skills/blog2video/prompts/`, examples in `examples/`.
+Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 
 ### Output structure
 All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs, audio, and MP4s.

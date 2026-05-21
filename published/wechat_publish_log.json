@@ -15,9 +15,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-12T10:34:30Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "lessons-from-building-claude-code-prompt-caching-is-everything",
@@ -35,9 +35,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:29.944Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "garrytan-2053127519872614419",
@@ -55,9 +55,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:35.230Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "garrytan-2046876981711769720",
@@ -75,9 +75,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:37.752Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "agent-view-in-claude-code",
@@ -95,9 +95,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:41.259Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "claude-code-goal-docs",
@@ -115,9 +115,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:46.053Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "odysseus0z-2031850264240800131",
@@ -135,9 +135,9 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:49.312Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   },
   {
     "source_slug": "garrytan-2054064931515855118",
@@ -155,8 +155,8 @@
     "status": "needs_review",
     "wechat_preview_url": "",
     "final_video_url": "",
-    "error": "2026-05-19 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json was regenerated with items: []; cookies/weixin.json is missing; Computer Use tooling was unavailable in this session.",
+    "error": "2026-05-21 automation blocked: wechat:intake failed because rclone could not resolve oauth2.googleapis.com; published/wechat_publish_queue.json remained items: []; Google Sheets sync was blocked because the Google Drive connector token expired (401 token_expired); cookies/weixin.json is missing, so WeChat desktop scheduling could not start.",
     "created_at": "2026-05-13T06:27:53.807Z",
-    "updated_at": "2026-05-19T06:12:40.164Z"
+    "updated_at": "2026-05-21T09:19:22.000Z"
   }
 ]

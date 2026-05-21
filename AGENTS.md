@@ -31,6 +31,28 @@ MINIMAX_VOICE_ID=moss_audio_ccbe9ed6-3a37-11f1-a1e0-8a43ce7defab
 ```
 (The voice ID above is the current custom voice; update if a new one is created.)
 
+## Slash Commands
+
+| Command | What it does |
+|---------|-------------|
+| `/blog2video <url-or-file>` | Full pipeline: fetch → memo → script → split → slides → render → deliver |
+| `/blog2video-script` | Generate or regenerate narration only (URL or existing output dir) |
+| `/blog2video-slides` | Regenerate Remotion slide data JSON from existing narration |
+| `/blog2video-render` | TTS + Remotion render from existing config (no subagents) |
+| `/blog2video-continue` | Continue from existing `narration.md` through delivery |
+| `/fetch-source <url>` | Fetch clean markdown from blog / PDF / YouTube / X article |
+
+## Skills
+
+`.claude/skills/blog2video/` — pipeline orchestration logic + per-stage prompt specs (`prompts/`, `design/`, `examples/`). Loaded by `/blog2video` and friends.
+
+## NEVER
+- Never apply loudnorm/boost/post-processing to audio — MiniMax TTS output is used raw
+- Never add `title`, `description`, or `tags` to `meta.json` — Claudiny generates these on the server
+- Never upload slide screenshot PNGs — only `*_cover_photo.png` is delivered
+- Never upload `.mp3`, `*_manifest.json`, `*_narration.md`, `*_insight_memo.md`, or other intermediate files — Post-Render Delivery exclusion list is authoritative
+- Never change `MINIMAX_VOICE_ID` casually — it's the show's voice identity; create a new env entry if testing alternatives
+
 ## Architecture
 
 ### Pipeline stages (orchestrated by `/blog2video` slash command)
@@ -134,3 +156,25 @@ rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.m
 ### 投递完成后
 
 告知用户：**视频已上传到 Google Drive (blog2video/<slug>/)，Claudiny 会基于脚本内容自动生成标题、描述和标签，并排期发布到小红书和微信视频号。**
+
+## Documentation Layers
+
+| What changed | Update where |
+|-------------|-------------|
+| Project-wide convention (every session) | AGENTS.md (this file) |
+| Slash command behavior | `.claude/commands/{name}.md`, NOT here |
+| Skill prompts / pipeline-stage logic | `.claude/skills/blog2video/prompts/*.md`, NOT here |
+| Slide type catalog / Remotion components | `blog2video-remotion/src/types.ts` + `src/slides/*.tsx` |
+| Post-render delivery rules | This file (load-bearing every delivery) |
+| Pipeline architecture / 6 stages | This file (Architecture section) |
+
+Principle: **AGENTS.md declares WHAT exists and project-wide rules. HOW each stage works lives inside the skill / command file.**
+
+## Compact Instructions
+
+When compressing context, preserve in priority order:
+1. NEVER list and Post-Render Delivery exclude rules — always re-check before delivery
+2. The 6-stage pipeline architecture (Insight Memo → Script → Splitter → Slide Planner → Slide HTML → Render)
+3. Modified files and key changes
+4. Current task state and open TODOs
+5. Tool outputs can be discarded — keep only pass/fail status

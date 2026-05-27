@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:56px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .four { width:100%; display:flex; flex-direction:column; gap:12px; margin-bottom:24px; }
+  .p { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-left:4px solid #8B5CF6;
+    border-radius:10px; padding:16px 22px; display:flex; align-items:center; gap:16px; font-size:22px; }
+  .p-num { font-size:26px; font-weight:800; color:#8B5CF6; min-width:42px; }
+  .p-text { font-weight:700; line-height:1.4; }
+  .p-text strong { color:#F59E0B; }
+  .punch { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:24px;
+    text-align:center; font-size:26px; font-weight:800; line-height:1.45; }
+  .punch .amber { color:#F59E0B; }
+  .punch .red { color:#EF4444; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">不是谦虚 · 是预告</div>
+    <div class="title">Addy 预告的<span class="amber">4 件事</span></div>
+    <div class="four">
+      <div class="p"><div class="p-num">1</div><div class="p-text">每条规则绑定一次翻车 · <strong>没有抄作业</strong></div></div>
+      <div class="p"><div class="p-num">2</div><div class="p-text">Harness 不消失 · <strong>永远在搭新脚手架</strong></div></div>
+      <div class="p"><div class="p-num">3</div><div class="p-text">HaaS 取代 LLM API · <strong>模型成 runtime 零件</strong></div></div>
+      <div class="p"><div class="p-num">4</div><div class="p-text">Agent 越来越像 · <strong>差异在你的失败史里</strong></div></div>
+    </div>
+    <div class="punch">模型是<span class="amber"> 输入</span><br>不再是<span class="red"> 胜负手</span></div>
+  </div>
+</body>
+</html>

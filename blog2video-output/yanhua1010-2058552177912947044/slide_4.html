@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:58px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .title .green { color:#10B981; }
+  .personas { display:flex; gap:20px; width:100%; margin-bottom:28px; }
+  .persona { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-radius:12px; padding:30px 24px; }
+  .producer { border-left:4px solid #8B5CF6; }
+  .critic { border-left:4px solid #F59E0B; }
+  .persona-tag { font-size:22px; font-weight:800; letter-spacing:2px; margin-bottom:16px; }
+  .producer .persona-tag { color:#8B5CF6; }
+  .critic .persona-tag { color:#F59E0B; }
+  .persona-name { font-size:28px; font-weight:700; margin-bottom:12px; }
+  .persona-desc { font-size:22px; color:#B0B0CC; line-height:1.5; }
+  .cap { width:100%; background:#1A1A2E; border:1px solid rgba(239,68,68,0.4);
+    border-left:4px solid #EF4444; border-radius:12px; padding:24px 28px; text-align:left; }
+  .cap-label { font-size:22px; color:#EF4444; font-weight:700; letter-spacing:2px; margin-bottom:12px; }
+  .cap-text { font-size:26px; font-weight:700; line-height:1.4; }
+  .cap-text .big { font-size:48px; color:#EF4444; font-weight:800; margin-right:10px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">同一 persona 自审 = "挺好的"</div>
+    <div class="title">Producer 和 Critic<br>必须是<span class="red">两个人格</span></div>
+    <div class="personas">
+      <div class="persona producer">
+        <div class="persona-tag">PRODUCER</div>
+        <div class="persona-name">Python 开发者</div>
+        <div class="persona-desc">写阶乘函数<br>处理边界条件和异常</div>
+      </div>
+      <div class="persona critic">
+        <div class="persona-tag">CRITIC</div>
+        <div class="persona-name">吹毛求疵的高级工程师</div>
+        <div class="persona-desc">逐行审 Bug、风格<br>完美则输出 CODE_IS_PERFECT</div>
+      </div>
+    </div>
+    <div class="cap">
+      <div class="cap-label">迭代上限</div>
+      <div class="cap-text"><span class="big">3</span>次封顶 · 追求完美会被 token 反噬</div>
+    </div>
+  </div>
+</body>
+</html>

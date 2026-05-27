@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .why { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #8B5CF6; border-radius:12px; padding:24px 28px; margin-bottom:20px; }
+  .why-label { font-size:22px; color:#8B5CF6; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .why-text { font-size:24px; line-height:1.5; }
+  .why-text strong { color:#F59E0B; }
+  .demo { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(245,158,11,0.4); border-radius:12px; padding:28px; }
+  .demo-tag { font-size:22px; color:#F59E0B; font-weight:800; letter-spacing:2px; margin-bottom:14px; text-align:center; }
+  .demo-pipe { font-size:24px; font-weight:700; line-height:1.5; text-align:center; }
+  .demo-pipe .arrow { color:#F59E0B; margin:0 6px; }
+  .demo-pipe .green { color:#10B981; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Step 6 · 2026 最热的位置</div>
+    <div class="title">Agent = 给 LLM<br><span class="amber">装手脚</span></div>
+    <div class="why">
+      <div class="why-label">MCP · 2026 标准</div>
+      <div class="why-text">读文件 / 查网页 / 发邮件 / 动数据库——<strong>统一接口规范</strong>。没它，每个工具要写一遍桥接代码</div>
+    </div>
+    <div class="demo">
+      <div class="demo-tag">FINAL PROJECT</div>
+      <div class="demo-pipe">Claude + MCP<span class="arrow">→</span>读 Obsidian<span class="arrow">→</span>查更新<span class="arrow">→</span><span class="green">每天发 Telegram</span></div>
+    </div>
+  </div>
+</body>
+</html>

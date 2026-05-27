@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:54px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .green { color:#10B981; }
+  .ladder { width:100%; display:flex; flex-direction:column; gap:14px; margin-bottom:24px; }
+  .rung { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px;
+    padding:22px 26px; display:flex; justify-content:space-between; align-items:center; }
+  .junior { border-left:4px solid #6B7280; }
+  .mid { border-left:4px solid #F59E0B; }
+  .senior { border-left:4px solid #10B981; }
+  .role { font-size:26px; font-weight:700; }
+  .salary { font-size:30px; font-weight:800; }
+  .junior .salary { color:#6B7280; }
+  .mid .salary { color:#F59E0B; }
+  .senior .salary { color:#10B981; }
+  .diff { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(16,185,129,0.4); border-radius:12px; padding:26px;
+    text-align:center; font-size:26px; font-weight:700; line-height:1.5; }
+  .diff .red { color:#EF4444; }
+  .diff .green { color:#10B981; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">公司付的不是 API 调用费</div>
+    <div class="title">debug 模型的人<br><span class="green">起薪 $150K+</span></div>
+    <div class="ladder">
+      <div class="rung junior"><div class="role">Junior AI Engineer</div><div class="salary">$80–120K</div></div>
+      <div class="rung mid"><div class="role">Prompt / Agent Engineer</div><div class="salary">$120–180K</div></div>
+      <div class="rung senior"><div class="role">AI Product Engineer</div><div class="salary">$150–250K</div></div>
+    </div>
+    <div class="diff"><span class="red">会调 API</span> ≠ <span class="green">能拆开看哪一层不对</span></div>
+  </div>
+</body>
+</html>

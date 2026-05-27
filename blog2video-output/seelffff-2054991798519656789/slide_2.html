@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:54px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .title .green { color:#10B981; }
+  .compare { display:flex; gap:20px; width:100%; margin-bottom:24px; }
+  .card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:28px 22px; }
+  .paid { border-left:4px solid #EF4444; }
+  .free { border-left:4px solid #10B981; }
+  .card-tag { font-size:22px; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .paid .card-tag { color:#EF4444; }
+  .free .card-tag { color:#10B981; }
+  .total { font-size:48px; font-weight:800; margin-bottom:8px; }
+  .paid .total { color:#EF4444; }
+  .free .total { color:#10B981; }
+  .breakdown { font-size:18px; color:#B0B0CC; line-height:1.55; }
+  .breakdown strong { color:#FFFFFF; }
+  .insight { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:24px;
+    font-size:24px; line-height:1.5; text-align:center; }
+  .insight strong { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">激励完全反过来了</div>
+    <div class="title"><span class="green">造 AI</span> 的公司<br>比 <span class="red">卖课</span>的更愿意免费教</div>
+    <div class="compare">
+      <div class="card paid">
+        <div class="card-tag">PAID · 卖课方</div>
+        <div class="total">$287 / 月</div>
+        <div class="breakdown">Coursera Plus $49<br>+ DataCamp $39<br>+ Udemy $199</div>
+      </div>
+      <div class="card free">
+        <div class="card-tag">FREE · 造 AI 方</div>
+        <div class="total">$0</div>
+        <div class="breakdown">Anthropic Academy <strong>16 门</strong><br>+ OpenAI Academy<br>+ Google AI · IBM ML</div>
+      </div>
+    </div>
+    <div class="insight">免费课对 Anthropic 是<strong>生态投资</strong><br>对 DataCamp 是<strong>把核心商品送出去</strong></div>
+  </div>
+</body>
+</html>

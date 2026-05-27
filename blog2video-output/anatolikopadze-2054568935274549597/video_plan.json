@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "How to Actually Use Claude. 18 steps that unlock 100% of its potential",
+    "title_zh": "你用 Claude 的方式，决定了它的 90%",
+    "url": "https://x.com/AnatoliKopadze/article/2054568935274549597",
+    "author": "Anatoli Kopadze (@AnatoliKopadze)",
+    "word_count": 2000,
+    "slug": "anatolikopadze-2054568935274549597"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕'使用姿势 = context engineering'一个 thesis 展开, 论证连贯",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你用 Claude 的方式，决定了它的 90%"
+      }
+    ]
+  }
+}

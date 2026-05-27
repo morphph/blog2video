@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:58px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .label { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #F59E0B; border-radius:12px; padding:22px 28px; margin-bottom:20px; }
+  .label-tag { font-size:22px; color:#F59E0B; font-weight:800; letter-spacing:2px; margin-bottom:8px; }
+  .label-text { font-size:26px; font-weight:700; }
+  .prompt { width:100%; background:#0D0D1A; border:2px solid rgba(245,158,11,0.5);
+    border-radius:12px; padding:28px 32px; font-size:26px; line-height:1.55; color:#FFFFFF; margin-bottom:24px;
+    font-family:'SF Mono','Monaco',monospace; }
+  .prompt .amber { color:#F59E0B; font-weight:800; }
+  .why { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:24px;
+    text-align:center; font-size:24px; line-height:1.5; }
+  .why strong { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">第 2 个反转 · 性价比最高</div>
+    <div class="title">让 Claude<br><span class="amber">反问你</span></div>
+    <div class="label">
+      <div class="label-tag">不到 30 字 · 改写整个交互结构</div>
+      <div class="label-text">复杂任务开始前 · 让它先问 5 个问题</div>
+    </div>
+    <div class="prompt">"<span class="amber">先问我 5 个最重要的问题</span>，能帮你把这件事做好。我回答完，你再开始。"</div>
+    <div class="why">Claude 自己挑出的 5 个问题 = <strong>它最缺的 5 个信息</strong></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "Zero to AI Engineer - The Roadmap",
+    "title_zh": "每月300刀，连一个 Agent 都建不出来？",
+    "url": "https://x.com/seelffff/status/2054991798519656789",
+    "author": "self.dll (@seelffff)",
+    "word_count": 2350,
+    "slug": "seelffff-2054991798519656789"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕'14 周路线图 + 顺序是核心'一个 thesis 展开, 不需要拆分",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "每月300刀，连一个 Agent 都建不出来？"
+      }
+    ]
+  }
+}

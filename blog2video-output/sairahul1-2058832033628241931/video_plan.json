@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "How to Build a Software Factory with Claude Code That Ships Features While You Sleep",
+    "title_zh": "1 个 prompt 当 6 个工程师, 注定崩",
+    "url": "https://x.com/sairahul1/status/2058832033628241931",
+    "author": "Rahul (@sairahul1)",
+    "word_count": 3500,
+    "slug": "sairahul1-2058832033628241931"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕 vibe coding→7-agent factory 这一个 thesis 展开, 论证连贯, 不需要拆分",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "1 个 prompt 当 6 个工程师, 注定崩"
+      }
+    ]
+  }
+}

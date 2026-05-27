@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:62px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .scenario { width:100%; background:#0D0D1A; border:2px solid rgba(139,92,246,0.5);
+    border-radius:12px; padding:24px 28px; font-family:'SF Mono','Monaco',monospace;
+    font-size:24px; color:#FFFFFF; margin-bottom:24px; text-align:center; }
+  .scenario .quote { color:#F59E0B; }
+  .stages { width:100%; display:flex; flex-direction:column; gap:14px; }
+  .stage { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #8B5CF6; border-radius:10px; padding:18px 22px;
+    display:flex; align-items:center; gap:16px; font-size:22px; }
+  .stage-num { font-size:32px; font-weight:800; color:#8B5CF6; min-width:50px; }
+  .stage-text { color:#B0B0CC; }
+  .stage-text strong { color:#FFFFFF; }
+  .stage.split { border-left-color:#F59E0B; }
+  .stage.split .stage-num { color:#F59E0B; }
+  .stage.scale { border-left-color:#10B981; }
+  .stage.scale .stage-num { color:#10B981; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">最离谱也最值得记住</div>
+    <div class="title"><span class="amber">变形</span> Multi-Agent</div>
+    <div class="scenario">你只声明 <span class="quote">"做精品咖啡电商"</span></div>
+    <div class="stages">
+      <div class="stage"><div class="stage-num">1</div><div class="stage-text">系统生出 <strong>市场研究 + 品牌</strong> 两个 Agent</div></div>
+      <div class="stage split"><div class="stage-num">2</div><div class="stage-text">品牌不够用 → 系统<strong>自拆</strong>成 Logo/建站/供应链</div></div>
+      <div class="stage scale"><div class="stage-num">3</div><div class="stage-text">建站成瓶颈 → 系统<strong>自复制</strong>三个并行版本</div></div>
+      <div class="stage"><div class="stage-num">→</div><div class="stage-text">过程中 系统<strong>持续调优</strong>每个 Agent 的 prompt</div></div>
+    </div>
+  </div>
+</body>
+</html>

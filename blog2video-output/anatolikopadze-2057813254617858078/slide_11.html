@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:40px; }
+  .big { font-size:120px; font-weight:900; color:#F59E0B; line-height:1; margin-bottom:24px; }
+  .title { font-size:52px; font-weight:900; line-height:1.3; margin-bottom:48px; }
+  .title .green { color:#10B981; }
+  .pills { width:100%; display:flex; flex-direction:column; gap:14px; margin-bottom:32px; }
+  .pill { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-left:4px solid #10B981;
+    border-radius:12px; padding:18px 26px; font-size:26px; font-weight:700; text-align:center; }
+  .anchor { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:24px;
+    font-size:30px; font-weight:800; }
+  .anchor .amber { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">本周可以做的一件事</div>
+    <div class="big">1</div>
+    <div class="title">挑<span class="green">一个</span>开<br>不要全部</div>
+    <div class="pills">
+      <div class="pill">打开 Memory</div>
+      <div class="pill">建一个 Project</div>
+      <div class="pill">毒舌导师 system prompt</div>
+      <div class="pill">访问 claude.ai/design</div>
+    </div>
+    <div class="anchor">知道它存在<br>已经是<span class="amber">一半</span></div>
+  </div>
+</body>
+</html>

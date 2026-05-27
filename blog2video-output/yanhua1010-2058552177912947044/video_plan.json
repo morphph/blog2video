@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "Agentic Design Patterns: A book that made me rethink what an Agent really is",
+    "title_zh": "你的 Agent 到 Level 几了？",
+    "url": "https://x.com/yanhua1010/status/2058552177912947044",
+    "author": "Yanhua (@yanhua1010)",
+    "word_count": 1900,
+    "slug": "yanhua1010-2058552177912947044"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕'Agent 四级诊断尺'一个 thesis 展开, 论证连贯, 不需要拆分",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你的 Agent 到 Level 几了？"
+      }
+    ]
+  }
+}

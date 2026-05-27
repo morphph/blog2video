@@ -1,0 +1,15 @@
+{
+  "video_number": 1,
+  "title": "1 个 prompt 当 6 个工程师，注定崩",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    {"slide_number": 1, "file": "slide_1.html", "estimated_duration_seconds": 25},
+    {"slide_number": 2, "file": "slide_2.html", "estimated_duration_seconds": 125},
+    {"slide_number": 3, "file": "slide_3.html", "estimated_duration_seconds": 100},
+    {"slide_number": 4, "file": "slide_4.html", "estimated_duration_seconds": 120},
+    {"slide_number": 5, "file": "slide_5.html", "estimated_duration_seconds": 110},
+    {"slide_number": 6, "file": "slide_6.html", "estimated_duration_seconds": 85},
+    {"slide_number": 7, "file": "slide_7.html", "estimated_duration_seconds": 80},
+    {"slide_number": 8, "file": "slide_8.html", "estimated_duration_seconds": 55}
+  ]
+}

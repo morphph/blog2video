@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .equation { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:32px;
+    text-align:center; font-size:48px; font-weight:800; margin-bottom:24px; font-family:'SF Mono','Monaco',monospace; }
+  .equation .amber { color:#F59E0B; }
+  .equation .purple { color:#8B5CF6; }
+  .components { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #8B5CF6; border-radius:12px; padding:22px 26px; margin-bottom:20px; }
+  .c-tag { font-size:22px; color:#8B5CF6; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .c-list { display:flex; flex-wrap:wrap; gap:8px; }
+  .ci { background:#0D0D1A; border:1px solid rgba(139,92,246,0.3); padding:8px 14px; border-radius:999px;
+    font-size:18px; color:#FFFFFF; }
+  .examples { width:100%; background:#1A1A2E; border:1px solid rgba(245,158,11,0.4);
+    border-left:4px solid #F59E0B; border-radius:12px; padding:20px 26px; text-align:center; }
+  .ex-tag { font-size:20px; color:#F59E0B; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .ex-list { font-size:24px; font-weight:700; color:#FFFFFF; }
+  .ex-list .sep { color:#8B5CF6; margin:0 8px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">先把名字定下来</div>
+    <div class="title">不是模型 →<br>就是 <span class="amber">Harness</span></div>
+    <div class="equation">Agent = <span class="purple">Model</span> + <span class="amber">Harness</span></div>
+    <div class="components">
+      <div class="c-tag">HARNESS 包含什么</div>
+      <div class="c-list">
+        <div class="ci">系统提示</div>
+        <div class="ci">CLAUDE.md</div>
+        <div class="ci">AGENTS.md</div>
+        <div class="ci">Skills</div>
+        <div class="ci">子 Agent</div>
+        <div class="ci">文件系统</div>
+        <div class="ci">沙箱</div>
+        <div class="ci">Hook</div>
+        <div class="ci">压缩策略</div>
+        <div class="ci">可观测性</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="ex-tag">全部是 HARNESS</div>
+      <div class="ex-list">Claude Code<span class="sep">·</span>Cursor<span class="sep">·</span>Codex<span class="sep">·</span>Aider<span class="sep">·</span>Cline</div>
+    </div>
+  </div>
+</body>
+</html>

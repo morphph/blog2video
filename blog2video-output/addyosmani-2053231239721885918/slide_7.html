@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:58px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .secret { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.4);
+    border-left:4px solid #8B5CF6; border-radius:12px; padding:24px 28px; margin-bottom:20px; }
+  .secret-tag { font-size:20px; color:#8B5CF6; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .secret-text { font-size:24px; font-weight:700; line-height:1.5; }
+  .secret-text strong { color:#F59E0B; }
+  .fit { width:100%; display:flex; gap:18px; margin-bottom:20px; }
+  .fc { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:22px 18px; }
+  .yes { border-left:4px solid #10B981; }
+  .no { border-left:4px solid #EF4444; }
+  .fc-tag { font-size:20px; font-weight:800; letter-spacing:2px; margin-bottom:10px; }
+  .yes .fc-tag { color:#10B981; }
+  .no .fc-tag { color:#EF4444; }
+  .fc-text { font-size:20px; line-height:1.4; color:#FFFFFF; }
+  .fc-text strong { color:#F59E0B; }
+  .moat { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(245,158,11,0.4); border-radius:12px; padding:22px;
+    text-align:center; font-size:22px; line-height:1.5; }
+  .moat .amber { color:#F59E0B; font-weight:800; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">训练循环 ↔ Harness 双向反馈</div>
+    <div class="title">"换 Harness"<br>的<span class="red">物理代价</span></div>
+    <div class="secret">
+      <div class="secret-tag">INSIDE VIEW</div>
+      <div class="secret-text">模型在 post-training 阶段<br><strong>就被拉进特定 Harness 训练</strong></div>
+    </div>
+    <div class="fit">
+      <div class="fc yes">
+        <div class="fc-tag">SEEN IN TRAINING</div>
+        <div class="fc-text">文件操作 / bash / 子 Agent dispatch · <strong>异常顺手</strong></div>
+      </div>
+      <div class="fc no">
+        <div class="fc-tag">UNSEEN</div>
+        <div class="fc-text">奇怪的子 Agent 协议 · <strong>突然变笨</strong></div>
+      </div>
+    </div>
+    <div class="moat">先做大 Harness 范式的玩家<br>在下一代模型上拿到<span class="amber"> 天然优势</span></div>
+  </div>
+</body>
+</html>

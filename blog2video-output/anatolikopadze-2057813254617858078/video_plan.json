@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "Claude Can Do All of This. Most People Have No Idea.",
+    "title_zh": "Claude 有 17 个开关，你开了几个？",
+    "url": "https://x.com/AnatoliKopadze/article/2057813254617858078",
+    "author": "Anatoli Kopadze (@anatolikopadze)",
+    "word_count": 2900,
+    "slug": "anatolikopadze-2057813254617858078"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕'17 个开关 = 配置差距'一个 thesis 展开, 连贯论证, 不拆分",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude 有 17 个开关，你开了几个？"
+      }
+    ]
+  }
+}

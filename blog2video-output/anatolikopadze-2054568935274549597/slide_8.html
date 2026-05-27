@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:56px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .method { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #10B981; border-radius:12px; padding:24px 28px; margin-bottom:20px; }
+  .m-tag { font-size:22px; color:#10B981; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .m-text { font-size:24px; line-height:1.5; }
+  .m-text strong { color:#F59E0B; }
+  .tradeoff { width:100%; background:#1A1A2E; border:1px solid rgba(239,68,68,0.4);
+    border-left:4px solid #EF4444; border-radius:12px; padding:24px 28px; margin-bottom:20px; }
+  .t-tag { font-size:22px; color:#EF4444; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .t-text { font-size:24px; line-height:1.5; }
+  .t-text strong { color:#FFFFFF; }
+  .uses { width:100%; display:flex; gap:14px; }
+  .u { flex:1; background:#0D0D1A; border:1px solid rgba(139,92,246,0.3); border-radius:10px; padding:18px;
+    text-align:center; font-size:22px; }
+  .yes { border-left:4px solid #10B981; }
+  .no { border-left:4px solid #EF4444; }
+  .yes .lab { color:#10B981; font-weight:800; letter-spacing:2px; font-size:18px; margin-bottom:8px; }
+  .no .lab { color:#EF4444; font-weight:800; letter-spacing:2px; font-size:18px; margin-bottom:8px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">第 6 个反转</div>
+    <div class="title">风格克隆<br><span class="amber">只克隆表层</span></div>
+    <div class="method">
+      <div class="m-tag">DO</div>
+      <div class="m-text">给 <strong>3–5 段</strong>你写过的东西 · 让它学句长 / 节奏 / 用词 / 开段收段</div>
+    </div>
+    <div class="tradeoff">
+      <div class="t-tag">CAN'T CLONE</div>
+      <div class="t-text">学得到<strong>你怎么写</strong> · 学不到<strong>你为什么这样写</strong></div>
+    </div>
+    <div class="uses">
+      <div class="u yes"><div class="lab">YES</div>邮件 / 社媒草稿</div>
+      <div class="u no"><div class="lab">NO</div>代表立场的核心稿</div>
+    </div>
+  </div>
+</body>
+</html>

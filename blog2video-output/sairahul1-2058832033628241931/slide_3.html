@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:68px; font-weight:900; line-height:1.3; margin-bottom:64px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .title .green { color:#10B981; }
+  .compare { display:flex; gap:24px; width:100%; }
+  .card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-radius:12px; padding:36px 28px; }
+  .card.soft { border-left:4px solid #EF4444; }
+  .card.hard { border-left:4px solid #10B981; }
+  .card-label { font-size:22px; letter-spacing:2px; font-weight:700; margin-bottom:18px; }
+  .soft .card-label { color:#EF4444; }
+  .hard .card-label { color:#10B981; }
+  .card-headline { font-size:38px; font-weight:800; line-height:1.3; margin-bottom:24px; }
+  .card-detail { font-size:24px; color:#B0B0CC; line-height:1.55; }
+  .card-detail strong { color:#FFFFFF; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">从约束意图 → 约束能力</div>
+    <div class="title">Prompt 是建议<br><span class="red">代码</span>才是<span class="green">法律</span></div>
+    <div class="compare">
+      <div class="card soft">
+        <div class="card-label">软约束 · 会漂移</div>
+        <div class="card-headline">"请不要碰前端文件"</div>
+        <div class="card-detail">prompt 里写规则，AI 在长对话里漂移就<strong>压不住</strong>。</div>
+      </div>
+      <div class="card hard">
+        <div class="card-label">硬隔离 · 做不到</div>
+        <div class="card-headline">工具层直接拦截</div>
+        <div class="card-detail">Backend Builder <strong>物理上没有</strong>访问前端目录的工具。</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

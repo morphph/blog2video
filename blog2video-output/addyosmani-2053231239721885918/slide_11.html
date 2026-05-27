@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:50px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .step { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px;
+    padding:24px 28px; margin-bottom:18px; }
+  .open { border-left:4px solid #8B5CF6; }
+  .audit { border-left:4px solid #F59E0B; }
+  .encode { border-left:4px solid #10B981; }
+  .step-tag { font-size:20px; font-weight:800; letter-spacing:2px; margin-bottom:10px; }
+  .open .step-tag { color:#8B5CF6; }
+  .audit .step-tag { color:#F59E0B; }
+  .encode .step-tag { color:#10B981; }
+  .step-text { font-size:24px; font-weight:700; line-height:1.4; }
+  .step-text .sub { display:block; font-size:18px; color:#B0B0CC; font-weight:500; margin-top:6px; }
+  .anchor { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:22px;
+    text-align:center; font-size:24px; font-weight:800; }
+  .anchor .amber { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">最小可执行动作 · 几分钟做完</div>
+    <div class="title">打开你的 <span class="amber">AGENTS.md</span><br>问每一条规则</div>
+    <div class="step open">
+      <div class="step-tag">1 · OPEN</div>
+      <div class="step-text">从上到下扫一遍<span class="sub">CLAUDE.md / AGENTS.md</span></div>
+    </div>
+    <div class="step audit">
+      <div class="step-tag">2 · ASK</div>
+      <div class="step-text">这条规则是哪次翻车留下的？<span class="sub">想不起来 = 删掉</span></div>
+    </div>
+    <div class="step encode">
+      <div class="step-tag">3 · ENCODE</div>
+      <div class="step-text">留下来的 · 编进 Hook 或 Linter<span class="sub">不再靠模型自觉</span></div>
+    </div>
+    <div class="anchor">几分钟做完 · <span class="amber">复利会一直累积</span></div>
+  </div>
+</body>
+</html>

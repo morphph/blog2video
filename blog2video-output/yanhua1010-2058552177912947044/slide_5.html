@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .title .amber { color:#F59E0B; }
+  .topos { width:100%; display:flex; flex-direction:column; gap:16px; margin-bottom:28px; }
+  .topo { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #8B5CF6; border-radius:12px; padding:22px 26px;
+    display:flex; align-items:center; gap:20px; }
+  .topo-name { font-size:26px; font-weight:800; min-width:200px; color:#8B5CF6; }
+  .topo-desc { font-size:22px; color:#B0B0CC; line-height:1.4; }
+  .topo-desc strong { color:#FFFFFF; }
+  .verdict { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(245,158,11,0.4); border-radius:12px; padding:28px 32px; text-align:center; }
+  .verdict-text { font-size:30px; font-weight:800; line-height:1.4; }
+  .verdict-text .amber { color:#F59E0B; }
+  .verdict-text .red { color:#EF4444; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">书里的反直觉立场</div>
+    <div class="title">先别<span class="red">急着</span>上<br>Multi-Agent</div>
+    <div class="topos">
+      <div class="topo"><div class="topo-name">单 Agent</div><div class="topo-desc">子问题互不依赖 · <strong>最简单</strong></div></div>
+      <div class="topo"><div class="topo-name">对等 P2P</div><div class="topo-desc">无中心 · 容错好但<strong>容易乱</strong></div></div>
+      <div class="topo"><div class="topo-name">Supervisor</div><div class="topo-desc">层级清晰 · <strong>单点故障 + 瓶颈</strong></div></div>
+    </div>
+    <div class="verdict">
+      <div class="verdict-text">Agent 不好用 不是数量不够<br>是<span class="red">一个都没调到</span> <span class="amber">Level 2</span></div>
+    </div>
+  </div>
+</body>
+</html>

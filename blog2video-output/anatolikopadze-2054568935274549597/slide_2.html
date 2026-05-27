@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .pair { width:100%; display:flex; gap:24px; }
+  .card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:36px 28px; }
+  .prev { border-left:4px solid #6B7280; }
+  .this { border-left:4px solid #F59E0B; }
+  .ep { font-size:22px; font-weight:800; letter-spacing:2px; margin-bottom:18px; }
+  .prev .ep { color:#6B7280; }
+  .this .ep { color:#F59E0B; }
+  .what { font-size:38px; font-weight:800; margin-bottom:14px; line-height:1.3; }
+  .desc { font-size:22px; color:#B0B0CC; line-height:1.5; }
+  .desc strong { color:#FFFFFF; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">同一个作者 · 两期连看</div>
+    <div class="title">在哪里 → <span class="amber">怎么用</span></div>
+    <div class="pair">
+      <div class="card prev">
+        <div class="ep">上一期</div>
+        <div class="what">在哪里</div>
+        <div class="desc">17 个功能<br>大部分人<strong>一个都没开</strong></div>
+      </div>
+      <div class="card this">
+        <div class="ep">这一期</div>
+        <div class="what">怎么用</div>
+        <div class="desc">就算全开<br>你的<strong>姿势还是错的</strong></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

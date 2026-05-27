@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; margin-bottom:40px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .levels { width:100%; display:flex; flex-direction:column; gap:14px; }
+  .level { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:22px 26px;
+    display:flex; align-items:center; gap:24px; }
+  .level.l0 { border-left:4px solid #EF4444; }
+  .level.l1 { border-left:4px solid #F59E0B; }
+  .level.l2 { border-left:4px solid #10B981; }
+  .level.l3 { border-left:4px solid #8B5CF6; }
+  .level-tag { font-size:32px; font-weight:800; min-width:140px; }
+  .l0 .level-tag { color:#EF4444; }
+  .l1 .level-tag { color:#F59E0B; }
+  .l2 .level-tag { color:#10B981; }
+  .l3 .level-tag { color:#8B5CF6; }
+  .level-name { font-size:26px; font-weight:700; }
+  .level-name .sub { display:block; font-size:20px; font-weight:500; color:#B0B0CC; margin-top:6px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">把"Agent"的边界切干净</div>
+    <div class="title">四级<span class="amber">诊断尺</span></div>
+    <div class="levels">
+      <div class="level l0"><div class="level-tag">Level 0</div><div class="level-name">裸 LLM<span class="sub">不算 Agent · 只能猜</span></div></div>
+      <div class="level l1"><div class="level-tag">Level 1</div><div class="level-name">工具使用者<span class="sub">"自己意识到该搜"才算入门</span></div></div>
+      <div class="level l2"><div class="level-tag">Level 2</div><div class="level-name">战略思考者<span class="sub">规划 + Context Engineering + Reflection</span></div></div>
+      <div class="level l3"><div class="level-tag">Level 3</div><div class="level-name">多 Agent 协作<span class="sub">PM Agent 带一群专才 Agent</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:56px; font-weight:900; line-height:1.3; margin-bottom:24px; text-align:center; }
+  .title .green { color:#10B981; }
+  .jump { width:100%; background:#1A1A2E; border:1px solid rgba(16,185,129,0.4);
+    border-left:4px solid #10B981; border-radius:12px; padding:24px; margin-bottom:20px; text-align:center; }
+  .jump-vals { font-size:60px; font-weight:800; line-height:1; margin-bottom:8px; }
+  .from { color:#EF4444; }
+  .arrow { color:#10B981; margin:0 12px; }
+  .to { color:#10B981; }
+  .jump-lab { font-size:20px; color:#B0B0CC; }
+  .rules4 { width:100%; display:flex; flex-direction:column; gap:10px; margin-bottom:20px; }
+  .r4 { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-left:4px solid #8B5CF6;
+    border-radius:10px; padding:14px 22px; display:flex; align-items:center; gap:14px; font-size:20px; }
+  .r4-n { font-size:22px; font-weight:800; color:#8B5CF6; min-width:40px; }
+  .r4-t { font-weight:700; }
+  .r4-t .sub { display:block; font-size:16px; color:#B0B0CC; font-weight:500; margin-top:2px; }
+  .reveal { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:20px; text-align:center; font-size:22px; line-height:1.4; }
+  .reveal .amber { color:#F59E0B; font-weight:800; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Karpathy 的 4 条规则</div>
+    <div class="title">不是模型升级<br>是<span class="green">边界感</span></div>
+    <div class="jump">
+      <div class="jump-vals"><span class="from">65%</span><span class="arrow">→</span><span class="to">94%</span></div>
+      <div class="jump-lab">编码任务准确率</div>
+    </div>
+    <div class="rules4">
+      <div class="r4"><div class="r4-n">1</div><div class="r4-t">不懂就问<div class="sub">不要对意图/架构默默猜测</div></div></div>
+      <div class="r4"><div class="r4-n">2</div><div class="r4-t">先用最简单的方案<div class="sub">不主动加抽象/灵活性</div></div></div>
+      <div class="r4"><div class="r4-n">3</div><div class="r4-t">不碰无关代码<div class="sub">不在任务范围 = 不动</div></div></div>
+      <div class="r4"><div class="r4-n">4</div><div class="r4-t">标出不确定<div class="sub">"自信但不确定"损失最大</div></div></div>
+    </div>
+    <div class="reveal">4 句大白话 = <span class="amber">+29 个百分点</span></div>
+  </div>
+</body>
+</html>

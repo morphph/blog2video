@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .repos { width:100%; display:flex; flex-direction:column; gap:18px; margin-bottom:28px; }
+  .repo { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-left:4px solid #F59E0B;
+    border-radius:12px; padding:22px 26px; display:flex; align-items:center; gap:24px; }
+  .stars { font-size:40px; font-weight:800; color:#F59E0B; min-width:160px; text-align:right; }
+  .name { font-size:24px; font-weight:700; line-height:1.4; }
+  .name .sub { display:block; font-size:18px; color:#B0B0CC; margin-top:6px; font-weight:500; font-family:'SF Mono','Monaco',monospace; }
+  .punch { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:26px;
+    text-align:center; font-size:28px; font-weight:700; line-height:1.45; }
+  .punch strong { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">GitHub 上的免费 repo</div>
+    <div class="title"><span class="amber">几十万人</span><br>已经替你验证过</div>
+    <div class="repos">
+      <div class="repo"><div class="stars">95K ★</div><div class="name">21 节课 · 生成式 AI<div class="sub">microsoft/generative-ai-for-beginners</div></div></div>
+      <div class="repo"><div class="stars">45K ★</div><div class="name">12 周机器学习<div class="sub">microsoft/ML-For-Beginners</div></div></div>
+      <div class="repo"><div class="stars">40K ★</div><div class="name">线代到模型量化<div class="sub">mlabonne/llm-course</div></div></div>
+    </div>
+    <div class="punch">付费课只有<strong>几十条评论</strong>验证</div>
+  </div>
+</body>
+</html>

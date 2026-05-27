@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .flip { width:100%; display:flex; gap:18px; margin-bottom:28px; }
+  .f-card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:26px 22px; }
+  .normal { border-left:4px solid #6B7280; color:#B0B0CC; }
+  .reverse { border-left:4px solid #10B981; }
+  .f-tag { font-size:20px; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .normal .f-tag { color:#6B7280; }
+  .reverse .f-tag { color:#10B981; }
+  .f-text { font-size:22px; line-height:1.5; }
+  .reverse .f-text { color:#FFFFFF; }
+  .reverse .f-text strong { color:#F59E0B; }
+  .rule { width:100%; background:#0D0D1A; border:2px solid rgba(245,158,11,0.5);
+    border-radius:12px; padding:24px 28px; font-family:'SF Mono','Monaco',monospace;
+    font-size:26px; line-height:1.5; text-align:center; }
+  .rule .green { color:#10B981; }
+  .rule .red { color:#EF4444; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Working backwards from behavior</div>
+    <div class="title">从<span class="amber">行为</span>反推<br>Harness 组件</div>
+    <div class="flip">
+      <div class="f-card normal">
+        <div class="f-tag">NORMAL</div>
+        <div class="f-text">先搭起来 · 让它跑 · 哪不对再补</div>
+      </div>
+      <div class="f-card reverse">
+        <div class="f-tag">REVERSE</div>
+        <div class="f-text">先<strong>描述要的行为</strong><br>再设计能交付的组件</div>
+      </div>
+    </div>
+    <div class="rule">success is <span class="green">silent</span><br>failures are <span class="red">verbose</span></div>
+  </div>
+</body>
+</html>

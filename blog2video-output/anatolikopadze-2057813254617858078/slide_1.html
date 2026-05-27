@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+  .slide::before { content:''; position:absolute; inset:0;
+    background:radial-gradient(circle at 50% 30%, rgba(239,68,68,0.12) 0%, transparent 55%); }
+  .kicker { font-size:30px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:40px; position:relative; }
+  .title { font-size:74px; font-weight:900; line-height:1.25; margin-bottom:60px; position:relative; }
+  .title .red { color:#EF4444; }
+  .stat-row { display:flex; gap:24px; width:100%; position:relative; }
+  .stat-card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-radius:12px; padding:32px 24px; text-align:left; }
+  .views { border-left:4px solid #8B5CF6; }
+  .bookmarks { border-left:4px solid #F59E0B; }
+  .likes { border-left:4px solid #EF4444; }
+  .stat-num { font-size:56px; font-weight:800; line-height:1; margin-bottom:14px; }
+  .views .stat-num { color:#8B5CF6; }
+  .bookmarks .stat-num { color:#F59E0B; }
+  .likes .stat-num { color:#EF4444; }
+  .stat-label { font-size:22px; color:#B0B0CC; line-height:1.4; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">你用的是出厂最弱配置</div>
+    <div class="title">一大半开关<br>你<span class="red">从来没开过</span></div>
+    <div class="stat-row">
+      <div class="stat-card views"><div class="stat-num">2.6M</div><div class="stat-label">浏览</div></div>
+      <div class="stat-card bookmarks"><div class="stat-num">4,751</div><div class="stat-label">收藏</div></div>
+      <div class="stat-card likes"><div class="stat-num">990</div><div class="stat-label">点赞</div></div>
+    </div>
+  </div>
+</body>
+</html>

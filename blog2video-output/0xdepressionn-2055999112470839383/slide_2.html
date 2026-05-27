@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:62px; font-weight:900; line-height:1.3; margin-bottom:32px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .blank { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #6B7280; border-radius:12px; padding:24px 28px; margin-bottom:20px; }
+  .blank-tag { font-size:22px; color:#6B7280; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .blank-items { display:flex; flex-wrap:wrap; gap:10px; }
+  .bi { background:#0D0D1A; border:1px solid rgba(107,114,128,0.4); padding:10px 18px; border-radius:999px; font-size:20px; color:#B0B0CC; }
+  .chaos { width:100%; background:#1A1A2E; border:1px solid rgba(239,68,68,0.4);
+    border-left:4px solid #EF4444; border-radius:12px; padding:24px 28px; margin-bottom:24px; }
+  .chaos-tag { font-size:22px; color:#EF4444; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .chaos-list { display:flex; flex-direction:column; gap:10px; font-size:22px; color:#FFFFFF; line-height:1.4; }
+  .chaos-list span { color:#EF4444; font-weight:700; }
+  .fix { width:100%; background:linear-gradient(135deg,#1A1A2E,#1A2A2A);
+    border:1px solid rgba(16,185,129,0.4); border-radius:12px; padding:22px;
+    text-align:center; font-size:24px; font-weight:700; line-height:1.45; }
+  .fix .green { color:#10B981; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">每次新 session · Claude 从零开始</div>
+    <div class="title">它<span class="red">一无所知</span><br>所以只能猜</div>
+    <div class="blank">
+      <div class="blank-tag">IT DOESN'T KNOW</div>
+      <div class="blank-items">
+        <div class="bi">你的技术栈</div>
+        <div class="bi">编码规范</div>
+        <div class="bi">项目目标</div>
+        <div class="bi">3 个 session 前你否决过的方案</div>
+      </div>
+    </div>
+    <div class="chaos">
+      <div class="chaos-tag">SO IT GUESSES →</div>
+      <div class="chaos-list">
+        <span>•</span> 重构你没让它动的代码<br>
+        <span>•</span> 推荐破坏架构的框架<br>
+        <span>•</span> 删文件不打招呼
+      </div>
+    </div>
+    <div class="fix">放在<span class="green"> 项目根目录</span> · 每次自动读 · 一次设置 0 次重讲</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+  .slide::before { content:''; position:absolute; inset:0;
+    background:radial-gradient(circle at 50% 30%, rgba(239,68,68,0.12) 0%, transparent 55%); }
+  .kicker { font-size:30px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:40px; position:relative; }
+  .title { font-size:74px; font-weight:900; line-height:1.25; margin-bottom:60px; position:relative; }
+  .title .red { color:#EF4444; }
+  .stats { width:100%; display:flex; gap:24px; position:relative; }
+  .sc { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:32px 24px; text-align:left; }
+  .views { border-left:4px solid #8B5CF6; }
+  .usage { border-left:4px solid #EF4444; }
+  .sc-num { font-size:60px; font-weight:800; line-height:1; margin-bottom:14px; }
+  .views .sc-num { color:#8B5CF6; }
+  .usage .sc-num { color:#EF4444; }
+  .sc-label { font-size:22px; color:#B0B0CC; line-height:1.4; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">两年了 · 你用的还是 10%</div>
+    <div class="title">那 90% 是<br>被你<span class="red">亲手扔掉的</span></div>
+    <div class="stats">
+      <div class="sc views"><div class="sc-num">19.9M</div><div class="sc-label">浏览</div></div>
+      <div class="sc usage"><div class="sc-num">10%</div><div class="sc-label">日活用户实际用到的能力</div></div>
+    </div>
+  </div>
+</body>
+</html>

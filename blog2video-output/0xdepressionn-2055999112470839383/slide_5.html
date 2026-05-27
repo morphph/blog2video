@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:54px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .files { display:flex; gap:20px; width:100%; margin-bottom:24px; }
+  .file { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:28px 22px; }
+  .mem { border-left:4px solid #8B5CF6; }
+  .err { border-left:4px solid #EF4444; }
+  .fname { font-family:'SF Mono','Monaco',monospace; font-size:26px; font-weight:800; margin-bottom:8px; }
+  .mem .fname { color:#8B5CF6; }
+  .err .fname { color:#EF4444; }
+  .ftag { font-size:18px; color:#B0B0CC; font-weight:600; margin-bottom:18px; letter-spacing:1px; }
+  .fdesc { font-size:20px; color:#FFFFFF; line-height:1.5; }
+  .fdesc strong { color:#F59E0B; }
+  .reveal { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(245,158,11,0.4); border-radius:12px; padding:24px;
+    text-align:center; font-size:26px; font-weight:700; line-height:1.45; }
+  .reveal .amber { color:#F59E0B; }
+  .reveal .strike { color:#6B7280; text-decoration:line-through; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">MEMORY+STACK · 第三类</div>
+    <div class="title"><span class="amber">伪长期记忆</span><br>朴素得令人发笑</div>
+    <div class="files">
+      <div class="file mem">
+        <div class="fname">MEMORY.md</div>
+        <div class="ftag">决策日志</div>
+        <div class="fdesc">决定了什么<br>为什么这么定<br><strong>否决了什么、为什么</strong></div>
+      </div>
+      <div class="file err">
+        <div class="fname">ERRORS.md</div>
+        <div class="ftag">失败日志</div>
+        <div class="fdesc">什么没成<br>什么成了<br><strong>下次注意什么</strong></div>
+      </div>
+    </div>
+    <div class="reveal">行业炒的<span class="strike">向量库 · Mem0 · context cache</span><br>真正生效的是<span class="amber"> 让 AI 自己写日志 自己读日志</span></div>
+  </div>
+</body>
+</html>

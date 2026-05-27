@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .steps { width:100%; display:flex; flex-direction:column; gap:10px; margin-bottom:24px; }
+  .step { background:#1A1A2E; border:1px solid rgba(139,92,246,0.2);
+    border-radius:10px; padding:16px 22px; display:flex; align-items:center; gap:18px; font-size:22px; }
+  .step.foundation { border-left:4px solid #10B981; }
+  .step.trap { border-left:4px solid #EF4444; background:#2A1A1A; }
+  .step.late { border-left:4px solid #F59E0B; }
+  .step-num { font-size:24px; font-weight:800; min-width:50px; }
+  .foundation .step-num { color:#10B981; }
+  .trap .step-num { color:#EF4444; }
+  .late .step-num { color:#F59E0B; }
+  .step-name { font-weight:700; flex:1; }
+  .step-warn { font-size:20px; font-weight:800; }
+  .trap .step-warn { color:#EF4444; }
+  .late .step-warn { color:#F59E0B; }
+  .rule { width:100%; background:linear-gradient(135deg,#2A1A1A,#2A1A3A);
+    border:1px solid rgba(239,68,68,0.4); border-radius:12px; padding:24px;
+    text-align:center; }
+  .rule-en { font-family:'SF Mono','Monaco',monospace; font-size:32px; font-weight:800; color:#EF4444; margin-bottom:8px; }
+  .rule-cn { font-size:22px; color:#B0B0CC; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">大多数人在同一个坑里翻车</div>
+    <div class="title">7 步路线图<br><span class="red">绝大多数人反着来</span></div>
+    <div class="steps">
+      <div class="step foundation"><div class="step-num">1</div><div class="step-name">装环境</div></div>
+      <div class="step foundation"><div class="step-num">2</div><div class="step-name">AI 基础概念</div></div>
+      <div class="step foundation"><div class="step-num">3</div><div class="step-name">ML 数学基础</div></div>
+      <div class="step foundation"><div class="step-num">4</div><div class="step-name">手写神经网络</div></div>
+      <div class="step late"><div class="step-num">5</div><div class="step-name">LLM + Prompt</div><div class="step-warn">← 你最想跳到这</div></div>
+      <div class="step late"><div class="step-num">6</div><div class="step-name">Agent</div><div class="step-warn">← 在第 6 步</div></div>
+      <div class="step foundation"><div class="step-num">7</div><div class="step-name">生产化 / 职业</div></div>
+    </div>
+    <div class="rule">
+      <div class="rule-en">Don't skip ahead.</div>
+      <div class="rule-cn">跳过梯度直接学 LLM = 看不懂自己的代码</div>
+    </div>
+  </div>
+</body>
+</html>

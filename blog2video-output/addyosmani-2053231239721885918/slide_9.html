@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:50px; }
+  .quote-mark { font-size:140px; color:#8B5CF6; line-height:0.6; font-family:Georgia,serif; opacity:0.85; margin-bottom:24px; }
+  .quote { font-size:46px; font-weight:900; line-height:1.3; margin-bottom:40px; }
+  .quote .amber { color:#F59E0B; }
+  .convergent { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-left:4px solid #8B5CF6;
+    border-radius:12px; padding:22px; margin-bottom:20px; text-align:left; }
+  .conv-tag { font-size:20px; color:#8B5CF6; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .conv-list { display:flex; flex-wrap:wrap; gap:8px; }
+  .ci { background:#0D0D1A; border:1px solid rgba(139,92,246,0.3); padding:8px 14px; border-radius:8px; font-size:18px; }
+  .moat { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(245,158,11,0.4); border-radius:12px; padding:22px;
+    font-size:22px; font-weight:700; line-height:1.5; text-align:center; }
+  .moat .amber { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">行业收敛的最终判断</div>
+    <div class="quote-mark">"</div>
+    <div class="quote">顶级 Agent 们彼此之间<br>比它们用的<span class="amber">模型还像</span></div>
+    <div class="convergent">
+      <div class="conv-tag">承重脚手架 · 行业标配</div>
+      <div class="conv-list">
+        <div class="ci">文件系统 + git</div>
+        <div class="ci">bash + 沙箱</div>
+        <div class="ci">AGENTS.md + Hook</div>
+        <div class="ci">子 Agent + trace</div>
+      </div>
+    </div>
+    <div class="moat">不能抄、不能买、不能外包——<br>真正护城河是<span class="amber"> 你的失败记录</span></div>
+  </div>
+</body>
+</html>

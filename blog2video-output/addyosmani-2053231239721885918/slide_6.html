@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:58px; font-weight:900; line-height:1.3; margin-bottom:36px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .intuition { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #6B7280; border-radius:12px; padding:22px 28px; margin-bottom:18px; }
+  .i-tag { font-size:20px; color:#6B7280; font-weight:800; letter-spacing:2px; margin-bottom:10px; }
+  .i-text { font-size:24px; color:#B0B0CC; line-height:1.5; }
+  .i-text .strike { color:#EF4444; }
+  .truth { width:100%; background:#1A1A2E; border:1px solid rgba(245,158,11,0.4);
+    border-left:4px solid #F59E0B; border-radius:12px; padding:24px 28px; margin-bottom:24px; }
+  .t-tag { font-size:22px; color:#F59E0B; font-weight:800; letter-spacing:2px; margin-bottom:12px; }
+  .t-text { font-size:26px; font-weight:700; line-height:1.4; }
+  .t-text .amber { color:#F59E0B; }
+  .ladder { width:100%; background:#0D0D1A; border:1px solid rgba(139,92,246,0.3); border-radius:12px; padding:24px;
+    display:flex; flex-direction:column; gap:12px; font-size:20px; }
+  .ladder-row { display:flex; justify-content:space-between; align-items:center; }
+  .ladder-from { color:#6B7280; text-decoration:line-through; }
+  .ladder-to { color:#10B981; font-weight:700; }
+  .ladder-arrow { color:#8B5CF6; margin:0 12px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Don't Shrink — They Move</div>
+    <div class="title">Harness 不会缩小<br>只会<span class="amber">向上挪一层</span></div>
+    <div class="intuition">
+      <div class="i-tag">你的直觉</div>
+      <div class="i-text"><span class="strike">模型更强 → 外面写得越来越少</span></div>
+    </div>
+    <div class="truth">
+      <div class="t-tag">ADDY 的判断</div>
+      <div class="t-text">floor 升高 · <span class="amber">ceiling 也升高</span></div>
+    </div>
+    <div class="ladder">
+      <div class="ladder-row"><span class="ladder-from">token 压缩脚手架</span><span class="ladder-arrow">→</span><span class="ladder-to">多 Agent 编排</span></div>
+      <div class="ladder-row"><span class="ladder-from">上下文焦虑机制</span><span class="ladder-arrow">→</span><span class="ladder-to">自我 trace 修复</span></div>
+      <div class="ladder-row"><span class="ladder-from">小心翼翼调 prompt</span><span class="ladder-arrow">→</span><span class="ladder-to">动态工具拼装</span></div>
+    </div>
+  </div>
+</body>
+</html>

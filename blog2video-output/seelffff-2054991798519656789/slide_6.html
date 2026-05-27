@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:28px; }
+  .title { font-size:56px; font-weight:900; line-height:1.3; margin-bottom:24px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .author { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #8B5CF6; border-radius:12px; padding:20px 24px; margin-bottom:24px; }
+  .author-name { font-size:30px; font-weight:800; color:#8B5CF6; margin-bottom:6px; }
+  .author-bio { font-size:20px; color:#B0B0CC; }
+  .compare { width:100%; display:flex; gap:16px; margin-bottom:24px; }
+  .vs-card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:24px 20px; }
+  .toy { border-left:4px solid #EF4444; }
+  .real { border-left:4px solid #10B981; }
+  .vs-label { font-size:18px; font-weight:800; letter-spacing:2px; margin-bottom:10px; }
+  .toy .vs-label { color:#EF4444; }
+  .real .vs-label { color:#10B981; }
+  .vs-num { font-size:42px; font-weight:800; margin-bottom:8px; }
+  .toy .vs-num { color:#EF4444; }
+  .real .vs-num { color:#10B981; }
+  .vs-desc { font-size:20px; color:#B0B0CC; line-height:1.4; }
+  .vs-desc strong { color:#FFFFFF; }
+  .punch { width:100%; background:linear-gradient(135deg,#1A1A2E,#2A1A3A);
+    border:1px solid rgba(139,92,246,0.4); border-radius:12px; padding:22px;
+    text-align:center; font-size:24px; font-weight:700; }
+  .punch strong { color:#F59E0B; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Step 4 · 整份路线图的核心</div>
+    <div class="title"><span class="amber">Karpathy</span> 那 7 节课<br>纯 Python · 不用框架</div>
+    <div class="author">
+      <div class="author-name">Andrej Karpathy</div>
+      <div class="author-bio">前 Tesla AI 总监 · OpenAI 联合创始人 · nn-zero-to-hero</div>
+    </div>
+    <div class="compare">
+      <div class="vs-card toy">
+        <div class="vs-label">JUPYTER · 你写的</div>
+        <div class="vs-num">10M 参数</div>
+        <div class="vs-desc">玩具模型<br>生成<strong>乱码</strong></div>
+      </div>
+      <div class="vs-card real">
+        <div class="vs-label">OLLAMA · 真实的</div>
+        <div class="vs-num">3B 参数</div>
+        <div class="vs-desc">Llama 3.2<br>写<strong>连贯句子</strong></div>
+      </div>
+    </div>
+    <div class="punch">两个窗口并排 · <strong>突然明白参数规模意味着什么</strong></div>
+  </div>
+</body>
+</html>

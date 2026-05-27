@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:62px; font-weight:900; line-height:1.3; margin-bottom:40px; text-align:center; }
+  .title .amber { color:#F59E0B; }
+  .actions { width:100%; display:flex; flex-direction:column; gap:20px; margin-bottom:24px; }
+  .action { background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:28px 32px; }
+  .a1 { border-left:4px solid #10B981; }
+  .a2 { border-left:4px solid #8B5CF6; }
+  .action-num { font-size:22px; font-weight:800; letter-spacing:2px; margin-bottom:14px; }
+  .a1 .action-num { color:#10B981; }
+  .a2 .action-num { color:#8B5CF6; }
+  .action-title { font-size:32px; font-weight:800; line-height:1.3; margin-bottom:8px; }
+  .action-sub { font-size:22px; color:#B0B0CC; line-height:1.5; }
+  .action-sub strong { color:#F59E0B; }
+  .footer { width:100%; padding:20px 24px; background:#0D0D1A; border:1px solid rgba(107,114,128,0.3);
+    border-radius:12px; text-align:center; font-size:22px; color:#B0B0CC; }
+  .footer strong { color:#FFFFFF; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">只带走两件事</div>
+    <div class="title">Level 1 → Level 2<br>真正的<span class="amber">杠杆</span></div>
+    <div class="actions">
+      <div class="action a1">
+        <div class="action-num">ACTION 1</div>
+        <div class="action-title">加一个 Critic</div>
+        <div class="action-sub">两个对立 system prompt · <strong>迭代封顶 3 次</strong></div>
+      </div>
+      <div class="action a2">
+        <div class="action-num">ACTION 2</div>
+        <div class="action-title">做 Context Engineering<br>不是 Prompt Engineering</div>
+        <div class="action-sub">补"你现在面对什么环境"——<strong>不止"你要怎么做"</strong></div>
+      </div>
+    </div>
+    <div class="footer">至于 Multi-Agent<strong> 先放一放</strong> · Level 2 已经覆盖 80% 场景</div>
+  </div>
+</body>
+</html>

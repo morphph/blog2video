@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; background:#0D0D1A;
+    font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;
+    color:#FFFFFF; overflow:hidden; }
+  .slide { width:100%; height:100%; padding:200px 72px 420px 72px;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .kicker { font-size:28px; color:#8B5CF6; letter-spacing:3px; font-weight:600; margin-bottom:32px; }
+  .title { font-size:60px; font-weight:900; line-height:1.3; margin-bottom:60px; text-align:center; }
+  .title .red { color:#EF4444; }
+  .roles { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #EF4444; border-radius:12px; padding:36px 32px; margin-bottom:36px; }
+  .roles-title { font-size:24px; color:#B0B0CC; margin-bottom:24px; }
+  .role-list { display:flex; flex-wrap:wrap; gap:14px; }
+  .role-pill { background:#0D0D1A; border:1px solid rgba(239,68,68,0.4);
+    padding:14px 20px; border-radius:999px; font-size:26px; color:#FFFFFF; font-weight:600; }
+  .cascade { width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25);
+    border-left:4px solid #F59E0B; border-radius:12px; padding:36px 32px; }
+  .cascade-title { font-size:26px; color:#F59E0B; font-weight:700; margin-bottom:20px; }
+  .cascade-chain { font-size:32px; font-weight:800; line-height:1.5; color:#FFFFFF; }
+  .cascade-chain .arrow { color:#F59E0B; margin:0 8px; }
+  .cascade-chain .wrong { color:#EF4444; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">问题不在模型，在结构</div>
+    <div class="title">1 个 session<br>同时塞 <span class="red">6 个工种</span></div>
+    <div class="roles">
+      <div class="roles-title">挤在同一个对话框，共用一个上下文窗口</div>
+      <div class="role-list">
+        <div class="role-pill">产品分析师</div>
+        <div class="role-pill">架构师</div>
+        <div class="role-pill">后端</div>
+        <div class="role-pill">前端</div>
+        <div class="role-pill">测试</div>
+        <div class="role-pill">代码审查</div>
+      </div>
+    </div>
+    <div class="cascade">
+      <div class="cascade-title">错误级联</div>
+      <div class="cascade-chain">
+        <span class="wrong">错假设</span><span class="arrow">→</span>错模型<span class="arrow">→</span>错 API<span class="arrow">→</span>错 UI
+      </div>
+    </div>
+  </div>
+</body>
+</html>

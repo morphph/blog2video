@@ -1,0 +1,21 @@
+{
+  "blog_metadata": {
+    "title": "Agent Harness Engineering",
+    "title_zh": "模型不再决定 Agent 的胜负",
+    "url": "https://x.com/addyosmani/article/2053231239721885918",
+    "author": "Addy Osmani (@addyosmani)",
+    "word_count": 2750,
+    "slug": "addyosmani-2053231239721885918"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文围绕 'Harness 工程 = 范式转移' 一个 thesis 展开, 论证连贯",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "模型不再决定 Agent 的胜负"
+      }
+    ]
+  }
+}

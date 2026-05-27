@@ -1,0 +1,542 @@
+[
+  {
+    "text": "你的 Agent 是 Level 几？这是 Google 工程总监 Antonio Gullí 在他 453 页的新书《Agentic Design Patterns》里抛出的诊断题。",
+    "pronounce_text": "你的Agent是Level几？这是Google工程总监Antonio Gullí 在他四百五十三页的新书《Agentic Design Patterns》里抛出的诊断题。",
+    "time_begin": 0,
+    "time_end": 9362.131519274375,
+    "text_begin": 0,
+    "text_end": 92,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 85
+  },
+  {
+    "text": "我读完发现一个不太愉快的答案——大多数人天天说自己在\"用 Agent\"，但他们用的根本是 Level 0：裸 LLM，没有工具、没有记忆、不会行动。",
+    "pronounce_text": "我读完发现一个不太愉快的答案。大多数人天天说自己在\"用Agent\"，但他们用的根本是Level零：裸LLM，没有工具、没有记忆、不会行动。",
+    "time_begin": 9504,
+    "time_end": 22709.034013605444,
+    "text_begin": 92,
+    "text_end": 166,
+    "pronounce_text_begin": 85,
+    "pronounce_text_end": 154
+  },
+  {
+    "text": "书里说得很直白，Level 0 的东西，不算 Agent。",
+    "pronounce_text": "书里说得很直白，Level零的东西，不算Agent。",
+    "time_begin": 22909.034013605444,
+    "time_end": 26988.625850340137,
+    "text_begin": 166,
+    "text_end": 195,
+    "pronounce_text_begin": 154,
+    "pronounce_text_end": 180
+  },
+  {
+    "text": "这本书最让我坐不住的，不是它讲了 21 种设计模式，也不是 Springer 这种学术出版社，是它在开头就把\"Agent\"这个词的边界切得很干净。",
+    "pronounce_text": "这本书最让我坐不住的，不是它讲了二十一种设计模式，也不是Springer这种学术出版社，是它在开头就把\"Agent\"这个词的边界切得很干净。",
+    "time_begin": 27144,
+    "time_end": 39408.62585034013,
+    "text_begin": 195,
+    "text_end": 268,
+    "pronounce_text_begin": 180,
+    "pronounce_text_end": 250
+  },
+  {
+    "text": "Level 0，裸 LLM。你打开 ChatGPT 网页版问它今年奥斯卡最佳影片是哪部，它只能猜。没有工具、没有记忆、不会自主行动。书里直接说，这一档不属于 Agent。",
+    "pronounce_text": "Level零，裸LLM。你打开ChatGPT网页版问它今年奥斯卡最佳影片是哪部，它只能猜。没有工具、没有记忆、不会自主行动。书里直接说，这一档不属于Agent。",
+    "time_begin": 39564,
+    "time_end": 54731.120181405895,
+    "text_begin": 268,
+    "text_end": 353,
+    "pronounce_text_begin": 250,
+    "pronounce_text_end": 330
+  },
+  {
+    "text": "Level 1，工具使用者。用户问\"最近有什么新剧\"，Agent 自己判断这条信息不在训练数据里，主动调搜索工具去查。关键词是\"自己判断\"——不是你告诉它去搜，是它意识到该搜。",
+    "pronounce_text": "Level一，工具使用者。用户问\"最近有什么新剧\"，Agent自己判断这条信息不在训练数据里，主动调搜索工具去查。关键词是\"自己判断\"。不是你告诉它去搜，是它意识到该搜。",
+    "time_begin": 54900,
+    "time_end": 71773.78684807256,
+    "text_begin": 353,
+    "text_end": 441,
+    "pronounce_text_begin": 330,
+    "pronounce_text_end": 415
+  },
+  {
+    "text": "这一步是 Agent 真正的门槛。",
+    "pronounce_text": "这一步是Agent真正的门槛。",
+    "time_begin": 71928,
+    "time_end": 74382.19501133787,
+    "text_begin": 441,
+    "text_end": 458,
+    "pronounce_text_begin": 415,
+    "pronounce_text_end": 430
+  },
+  {
+    "text": "Level 2，战略思考者。会规划，会做 Context Engineering，会自我反思干完活回头审一遍。",
+    "pronounce_text": "Level二，战略思考者。会规划，会做Context Engineering，会自我反思干完活回头审一遍。",
+    "time_begin": 74520,
+    "time_end": 84056.28117913833,
+    "text_begin": 458,
+    "text_end": 513,
+    "pronounce_text_begin": 430,
+    "pronounce_text_end": 483
+  },
+  {
+    "text": "Level 3，多 Agent 协作。一个项目经理 Agent 协调一群专才 Agent，像搭团队。",
+    "pronounce_text": "Level三，多Agent协作。一个项目经理Agent协调一群专才Agent，像搭团队。",
+    "time_begin": 84204,
+    "time_end": 91348.62585034013,
+    "text_begin": 513,
+    "text_end": 563,
+    "pronounce_text_begin": 483,
+    "pronounce_text_end": 527
+  },
+  {
+    "text": "我读到这里第一反应是，把这四级当镜子照一下手上那些\"AI 应用\"。能照出来的事实是——大多数所谓\"在用 Agent\"的人，要么卡在 Level 0，要么勉强爬到 Level 1。",
+    "pronounce_text": "我读到这里第一反应是，把这四级当镜子照一下手上那些\"AI应用\"。能照出来的事实是。大多数所谓\"在用Agent\"的人，要么卡在Level零，要么勉强爬到Level一。",
+    "time_begin": 91512,
+    "time_end": 106772,
+    "text_begin": 563,
+    "text_end": 652,
+    "pronounce_text_begin": 527,
+    "pronounce_text_end": 609
+  },
+  {
+    "text": "这个诊断尺一拿出来，行业里很多浮夸的叙述瞬间安静下来。",
+    "pronounce_text": "这个诊断尺一拿出来，行业里很多浮夸的叙述瞬间安静下来。",
+    "time_begin": 106920,
+    "time_end": 111800.68027210885,
+    "text_begin": 652,
+    "text_end": 679,
+    "pronounce_text_begin": 609,
+    "pronounce_text_end": 636
+  },
+  {
+    "text": "为什么大多数 Agent 不好用？不是模型不行，是它根本没爬过 Level 1 到 Level 2 这一级台阶。",
+    "pronounce_text": "为什么大多数Agent不好用？不是模型不行，是它根本没爬过Level一到Level二这一级台阶。",
+    "time_begin": 111960,
+    "time_end": 118721.49659863945,
+    "text_begin": 679,
+    "text_end": 735,
+    "pronounce_text_begin": 636,
+    "pronounce_text_end": 684
+  },
+  {
+    "text": "这一跳里最被低估的概念，叫 Context Engineering。书里给出的定义跟很多人理解的不一样——它不是堆信息，是裁剪、降噪、打包。",
+    "pronounce_text": "这一跳里最被低估的概念，叫Context Engineering。书里给出的定义跟很多人理解的不一样。它不是堆信息，是裁剪、降噪、打包。",
+    "time_begin": 118872,
+    "time_end": 131392.04535147393,
+    "text_begin": 735,
+    "text_end": 805,
+    "pronounce_text_begin": 684,
+    "pronounce_text_end": 752
+  },
+  {
+    "text": "举个书里的例子。Agent 要在两个地点中间找一家咖啡店。它先调地图工具，拿回一堆原始数据——经纬度、距离矩阵、营业时间、评分。",
+    "pronounce_text": "举个书里的例子。Agent要在两个地点中间找一家咖啡店。它先调地图工具，拿回一堆原始数据。经纬度、距离矩阵、营业时间、评分。",
+    "time_begin": 131544,
+    "time_end": 143425.49659863947,
+    "text_begin": 805,
+    "text_end": 869,
+    "pronounce_text_begin": 752,
+    "pronounce_text_end": 814
+  },
+  {
+    "text": "Agent 不会把这一坨直接喂给下一步，而是自己判断\"下一步只需要街道名\"，把数据裁成一个干净的短列表，再交给本地搜索工具。每一步都在主动做信息降噪。",
+    "pronounce_text": "Agent不会把这一坨直接喂给下一步，而是自己判断\"下一步只需要街道名\"，把数据裁成一个干净的短列表，再交给本地搜索工具。每一步都在主动做信息降噪。",
+    "time_begin": 143568,
+    "time_end": 156982.0136054422,
+    "text_begin": 869,
+    "text_end": 944,
+    "pronounce_text_begin": 814,
+    "pronounce_text_end": 888
+  },
+  {
+    "text": "书里那句原话我想念出来——\"要让 AI 达到最高准确率，必须给它短小、聚焦、有力的上下文。\"Context Engineering 干的就是这件事：管的不是你怎么问，是问之前 Agent 眼前摆着什么。",
+    "pronounce_text": "书里那句原话我想念出来。\"要让AI达到最高准确率，必须给它短小、聚焦、有力的上下文。\"Context Engineering干的就是这件事：管的不是你怎么问，是问之前Agent眼前摆着什么。",
+    "time_begin": 157140,
+    "time_end": 171204.17233560092,
+    "text_begin": 944,
+    "text_end": 1045,
+    "pronounce_text_begin": 888,
+    "pronounce_text_end": 983
+  },
+  {
+    "text": "Prompt 是台词，Context 是布景。布景错了，台词再好也演不出来。",
+    "pronounce_text": "Prompt是台词，Context是布景。布景错了，台词再好也演不出来。",
+    "time_begin": 171360,
+    "time_end": 177912.51700680272,
+    "text_begin": 1045,
+    "text_end": 1083,
+    "pronounce_text_begin": 983,
+    "pronounce_text_end": 1019
+  },
+  {
+    "text": "Level 2 的另一个核心能力，叫 Reflection。简单说就是 Agent 干完活后自己审一遍。",
+    "pronounce_text": "Level二的另一个核心能力，叫Reflection。简单说就是Agent干完活后自己审一遍。",
+    "time_begin": 178056,
+    "time_end": 184480.80725623583,
+    "text_begin": 1083,
+    "text_end": 1135,
+    "pronounce_text_begin": 1019,
+    "pronounce_text_end": 1066
+  },
+  {
+    "text": "但书里给出了一条很硬的规则——Producer 和 Critic，必须用两个不同的 system prompt。不是同一个 Agent 自己审自己，是要造一个跟它对立的人格来挑刺。",
+    "pronounce_text": "但书里给出了一条很硬的规则。Producer和Critic，必须用两个不同的system prompt。不是同一个Agent自己审自己，是要造一个跟它对立的人格来挑刺。",
+    "time_begin": 184644,
+    "time_end": 197640.0544217687,
+    "text_begin": 1135,
+    "text_end": 1225,
+    "pronounce_text_begin": 1066,
+    "pronounce_text_end": 1150
+  },
+  {
+    "text": "这条规则乍听有点学究气，实际上是这本书我觉得最值钱的一句话。同一个 persona 审自己写的东西，盲区是会被继承的。",
+    "pronounce_text": "这条规则乍听有点学究气，实际上是这本书我觉得最值钱的一句话。同一个persona审自己写的东西，盲区是会被继承的。",
+    "time_begin": 197784,
+    "time_end": 207366.72108843538,
+    "text_begin": 1225,
+    "text_end": 1284,
+    "pronounce_text_begin": 1150,
+    "pronounce_text_end": 1207
+  },
+  {
+    "text": "你让同一个 LLM 先写代码再审查它自己写的代码，它大概率会说\"挺好的\"。\"挺好的\"是默认输出。",
+    "pronounce_text": "你让同一个LLM先写代码再审查它自己写的代码，它大概率会说\"挺好的\"。\"挺好的\"是默认输出。",
+    "time_begin": 207504,
+    "time_end": 215763.18367346938,
+    "text_begin": 1284,
+    "text_end": 1332,
+    "pronounce_text_begin": 1207,
+    "pronounce_text_end": 1253
+  },
+  {
+    "text": "书里的代码示例很直白。Producer 的 prompt 是\"你是 Python 开发者，写计算阶乘的函数，处理边界条件和异常\"。",
+    "pronounce_text": "书里的代码示例很直白。Producer的prompt是\"你是Python开发者，写计算阶乘的函数，处理边界条件和异常\"。",
+    "time_begin": 215928,
+    "time_end": 226404.68934240364,
+    "text_begin": 1332,
+    "text_end": 1397,
+    "pronounce_text_begin": 1253,
+    "pronounce_text_end": 1313
+  },
+  {
+    "text": "Critic 的 prompt 是\"你是吹毛求疵的高级工程师，逐行审查 Bug、风格、遗漏的边界条件；完美就输出 CODE_IS_PERFECT，否则列出所有问题\"。",
+    "pronounce_text": "Critic的prompt是\"你是吹毛求疵的高级工程师，逐行审查Bug、风格、遗漏的边界条件;完美就输出CODE，IS，PERFECT，否则列出所有问题\"。",
+    "time_begin": 226548,
+    "time_end": 239706.5941043084,
+    "text_begin": 1397,
+    "text_end": 1480,
+    "pronounce_text_begin": 1313,
+    "pronounce_text_end": 1391
+  },
+  {
+    "text": "然后一个循环：写、审、改、再审，直到 Critic 满意或者达到最大迭代次数。",
+    "pronounce_text": "然后一个循环：写、审、改、再审，直到Critic满意或者达到最大迭代次数。",
+    "time_begin": 239868,
+    "time_end": 247953.03401360544,
+    "text_begin": 1480,
+    "text_end": 1519,
+    "pronounce_text_begin": 1391,
+    "pronounce_text_end": 1428
+  },
+  {
+    "text": "这里有一个容易被忽略的代价。每一轮反射都是一次新的 LLM 调用，迭代越多越贵；而且上下文窗口会被前几版代码和批评意见挤满，实际可用的推理空间反而在缩水。",
+    "pronounce_text": "这里有一个容易被忽略的代价。每一轮反射都是一次新的LLM调用，迭代越多越贵;而且上下文窗口会被前几版代码和批评意见挤满，实际可用的推理空间反而在缩水。",
+    "time_begin": 248112,
+    "time_end": 262849.55102040817,
+    "text_begin": 1519,
+    "text_end": 1596,
+    "pronounce_text_begin": 1428,
+    "pronounce_text_end": 1503
+  },
+  {
+    "text": "书里的最大迭代次数默认设 3 次，一旦 Critic 满意就停。不要追求完美——追求完美会被 token 反噬。",
+    "pronounce_text": "书里的最大迭代次数默认设三次，一旦Critic满意就停。不要追求完美。追求完美会被token反噬。",
+    "time_begin": 263016,
+    "time_end": 271995.00226757367,
+    "text_begin": 1596,
+    "text_end": 1652,
+    "pronounce_text_begin": 1503,
+    "pronounce_text_end": 1552
+  },
+  {
+    "text": "我观察过一个怪现象——很多团队听说 Multi-Agent 概念之后，第一反应是去搭 5 个、6 个 Agent 互相通信的复杂系统，花 80% 的时间在调协议、调路由。",
+    "pronounce_text": "我观察过一个怪现象。很多团队听说Multi-Agent概念之后，第一反应是去搭五个、六个Agent互相通信的复杂系统，花百分之八十的时间在调协议、调路由。",
+    "time_begin": 272160,
+    "time_end": 285539.1836734694,
+    "text_begin": 1652,
+    "text_end": 1737,
+    "pronounce_text_begin": 1552,
+    "pronounce_text_end": 1629
+  },
+  {
+    "text": "这本书的立场恰恰相反：先别急着上 Multi-Agent。",
+    "pronounce_text": "这本书的立场恰恰相反：先别急着上Multi-Agent。",
+    "time_begin": 285739.1836734694,
+    "time_end": 290538.5941043084,
+    "text_begin": 1737,
+    "text_end": 1766,
+    "pronounce_text_begin": 1629,
+    "pronounce_text_end": 1657
+  },
+  {
+    "text": "书里画了六种通信拓扑，但真正常用的就三种。单 Agent，任务能拆成互不依赖的子问题，各干各的，最简单。",
+    "pronounce_text": "书里画了六种通信拓扑，但真正常用的就三种。单Agent，任务能拆成互不依赖的子问题，各干各的，最简单。",
+    "time_begin": 290700,
+    "time_end": 300491.70068027213,
+    "text_begin": 1766,
+    "text_end": 1818,
+    "pronounce_text_begin": 1657,
+    "pronounce_text_end": 1708
+  },
+  {
+    "text": "对等网络，Agent 之间直接通信没有中心节点，容错好但协调成本高，容易乱。",
+    "pronounce_text": "对等网络，Agent之间直接通信没有中心节点，容错好但协调成本高，容易乱。",
+    "time_begin": 300691.70068027213,
+    "time_end": 307882.7664399093,
+    "text_begin": 1818,
+    "text_end": 1856,
+    "pronounce_text_begin": 1708,
+    "pronounce_text_end": 1745
+  },
+  {
+    "text": "Supervisor，一个调度 Agent 管一群干活 Agent，层级清晰好管理，但 Supervisor 本身是单点故障也是性能瓶颈。",
+    "pronounce_text": "Supervisor，一个调度Agent管一群干活Agent，层级清晰好管理，但Supervisor本身是单点故障也是性能瓶颈。",
+    "time_begin": 308052,
+    "time_end": 317251.5918367347,
+    "text_begin": 1856,
+    "text_end": 1925,
+    "pronounce_text_begin": 1745,
+    "pronounce_text_end": 1809
+  },
+  {
+    "text": "任务越拆越碎，通信成本会反过来吞掉并行带来的收益。书里给出的判断是——绝大多数你以为需要 Multi-Agent 的场景，其实一个 Level 2 单 Agent 加上 Producer-Critic 和 Context Engineering 就够了。",
+    "pronounce_text": "任务越拆越碎，通信成本会反过来吞掉并行带来的收益。书里给出的判断是。绝大多数你以为需要Multi-Agent的场景，其实一个Level二单Agent加上Producer-Critic和Context Engineering就够了。",
+    "time_begin": 317412,
+    "time_end": 332834.5396825397,
+    "text_begin": 1925,
+    "text_end": 2052,
+    "pronounce_text_begin": 1809,
+    "pronounce_text_end": 1924
+  },
+  {
+    "text": "Level 3 是留给那种真正跨领域、多阶段、需要并行分工的任务。",
+    "pronounce_text": "Level三是留给那种真正跨领域、多阶段、需要并行分工的任务。",
+    "time_begin": 333000,
+    "time_end": 338484.39909297053,
+    "text_begin": 2052,
+    "text_end": 2085,
+    "pronounce_text_begin": 1924,
+    "pronounce_text_end": 1955
+  },
+  {
+    "text": "换句话说，大多数人 Agent 不好用，不是 Agent 数量不够，是一个都没调到 Level 2。",
+    "pronounce_text": "换句话说，大多数人Agent不好用，不是Agent数量不够，是一个都没调到Level二。",
+    "time_begin": 338652,
+    "time_end": 345668.91609977325,
+    "text_begin": 2085,
+    "text_end": 2135,
+    "pronounce_text_begin": 1955,
+    "pronounce_text_end": 1999
+  },
+  {
+    "text": "书末尾抛了五个关于 Agent 未来的假设。前四个还算合理推演——通用型 Agent、深度个性化主动发现、具身智能、Agent 成独立经济实体。",
+    "pronounce_text": "书末尾抛了五个关于Agent未来的假设。前四个还算合理推演。通用型Agent、深度个性化主动发现、具身智能、Agent成独立经济实体。",
+    "time_begin": 345816,
+    "time_end": 358254.7755102041,
+    "text_begin": 2135,
+    "text_end": 2207,
+    "pronounce_text_begin": 1999,
+    "pronounce_text_end": 2066
+  },
+  {
+    "text": "第五个把我看震了，叫\"变形 Multi-Agent\"。",
+    "pronounce_text": "第五个把我看震了，叫\"变形Multi-Agent\"。",
+    "time_begin": 358416,
+    "time_end": 362240.1723356009,
+    "text_begin": 2207,
+    "text_end": 2234,
+    "pronounce_text_begin": 2066,
+    "pronounce_text_end": 2092
+  },
+  {
+    "text": "你只声明一个目标——\"做一个卖精品咖啡的电商生意\"。系统自己决定：先生出\"市场研究 Agent\"和\"品牌 Agent\"。",
+    "pronounce_text": "你只声明一个目标。\"做一个卖精品咖啡的电商生意\"。系统自己决定：先生出\"市场研究Agent\"和\"品牌Agent\"。",
+    "time_begin": 362412,
+    "time_end": 373399.5283446712,
+    "text_begin": 2234,
+    "text_end": 2294,
+    "pronounce_text_begin": 2092,
+    "pronounce_text_end": 2149
+  },
+  {
+    "text": "跑一轮数据之后，系统自己判断品牌 Agent 不够用了，把它拆成三个——Logo 设计、建站、供应链。建站 Agent 后来成了瓶颈，系统再自动复制三个并行版本同时做不同页面。",
+    "pronounce_text": "跑一轮数据之后，系统自己判断品牌Agent不够用了，把它拆成三个。Logo设计、建站、供应链。建站Agent后来成了瓶颈，系统再自动复制三个并行版本同时做不同页面。",
+    "time_begin": 373536,
+    "time_end": 387170.6031746032,
+    "text_begin": 2294,
+    "text_end": 2382,
+    "pronounce_text_begin": 2149,
+    "pronounce_text_end": 2231
+  },
+  {
+    "text": "整个过程中，系统还在不停地调优每个 Agent 的 prompt。",
+    "pronounce_text": "整个过程中，系统还在不停地调优每个Agent的prompt。",
+    "time_begin": 387324,
+    "time_end": 391659.01133786846,
+    "text_begin": 2382,
+    "text_end": 2415,
+    "pronounce_text_begin": 2231,
+    "pronounce_text_end": 2261
+  },
+  {
+    "text": "这跟 Karpathy 的 AutoResearch 还不一样。Karpathy 是你写一个 program.md 定义目标和指标，按启动；人类在循环外面，但团队是固定的。",
+    "pronounce_text": "这跟Karpathy的AutoResearch还不一样。Karpathy是你写一个program.md定义目标和指标，按启动;人类在循环外面，但团队是固定的。",
+    "time_begin": 391824,
+    "time_end": 404820.0544217687,
+    "text_begin": 2415,
+    "text_end": 2501,
+    "pronounce_text_begin": 2261,
+    "pronounce_text_end": 2340
+  },
+  {
+    "text": "这本书更激进——连团队怎么组建、怎么重组，都交给系统。",
+    "pronounce_text": "这本书更激进。连团队怎么组建、怎么重组，都交给系统。",
+    "time_begin": 405020.0544217687,
+    "time_end": 410458.0136054422,
+    "text_begin": 2501,
+    "text_end": 2528,
+    "pronounce_text_begin": 2340,
+    "pronounce_text_end": 2366
+  },
+  {
+    "text": "人类只声明\"要什么\"，剩下的全是系统自我演化。",
+    "pronounce_text": "人类只声明\"要什么\"，剩下的全是系统自我演化。",
+    "time_begin": 410616,
+    "time_end": 415206.43083900225,
+    "text_begin": 2528,
+    "text_end": 2551,
+    "pronounce_text_begin": 2366,
+    "pronounce_text_end": 2389
+  },
+  {
+    "text": "作者也承认这条目前还停留在假设层面，没有成熟的工程实现。",
+    "pronounce_text": "作者也承认这条目前还停留在假设层面，没有成熟的工程实现。",
+    "time_begin": 415368,
+    "time_end": 421061.3786848073,
+    "text_begin": 2551,
+    "text_end": 2579,
+    "pronounce_text_begin": 2389,
+    "pronounce_text_end": 2417
+  },
+  {
+    "text": "但你只要去想象一下这个画面——一个会自己拆分自己、自己复制自己、自己改自己 prompt 的 Agent 群——就会意识到，今天我们讨论的所有 Multi-Agent 拓扑都还只是这条路上的第一公里。",
+    "pronounce_text": "但你只要去想象一下这个画面。一个会自己拆分自己、自己复制自己、自己改自己prompt的Agent群。就会意识到，今天我们讨论的所有Multi-Agent拓扑都还只是这条路上的第一公里。",
+    "time_begin": 421200,
+    "time_end": 437516.50793650793,
+    "text_begin": 2579,
+    "text_end": 2679,
+    "pronounce_text_begin": 2417,
+    "pronounce_text_end": 2509
+  },
+  {
+    "text": "读完整本书，我最大的收获不是任何一个模式，是那把诊断尺本身。",
+    "pronounce_text": "读完整本书，我最大的收获不是任何一个模式，是那把诊断尺本身。",
+    "time_begin": 437688,
+    "time_end": 443346.54875283444,
+    "text_begin": 2679,
+    "text_end": 2709,
+    "pronounce_text_begin": 2509,
+    "pronounce_text_end": 2539
+  },
+  {
+    "text": "以前听到有人说\"我的 Agent 不好用\"，我会问\"哪里不好用\"。现在我会先问一句——你的 Agent 到 Level 几了？",
+    "pronounce_text": "以前听到有人说\"我的Agent不好用\"，我会问\"哪里不好用\"。现在我会先问一句。你的Agent到Level几了？",
+    "time_begin": 443484,
+    "time_end": 452846.1315192744,
+    "text_begin": 2709,
+    "text_end": 2772,
+    "pronounce_text_begin": 2539,
+    "pronounce_text_end": 2595
+  },
+  {
+    "text": "这一问下去，问题立刻从模糊的\"效果不好\"变成具体的\"我连 Level 1 都没爬到\"或者\"我卡在 Level 1 上不去 Level 2\"。一旦问题被定位到具体的层级，下一步该做什么就清楚了。",
+    "pronounce_text": "这一问下去，问题立刻从模糊的\"效果不好\"变成具体的\"我连Level一都没爬到\"或者\"我卡在Level一上不去Level二\"。一旦问题被定位到具体的层级，下一步该做什么就清楚了。",
+    "time_begin": 452988,
+    "time_end": 468712.39909297053,
+    "text_begin": 2772,
+    "text_end": 2868,
+    "pronounce_text_begin": 2595,
+    "pronounce_text_end": 2683
+  },
+  {
+    "text": "你以为你在用 Agent，其实大多数人连 Level 1 都没到——问题从来不是模型不行，是你根本没让它走出聊天框。",
+    "pronounce_text": "你以为你在用Agent，其实大多数人连Level一都没到。问题从来不是模型不行，是你根本没让它走出聊天框。",
+    "time_begin": 468864,
+    "time_end": 477634.022675737,
+    "text_begin": 2868,
+    "text_end": 2926,
+    "pronounce_text_begin": 2683,
+    "pronounce_text_end": 2736
+  },
+  {
+    "text": "如果今天只带走两件事，我建议你做这两件：",
+    "pronounce_text": "如果今天只带走两件事，我建议你做这两件：",
+    "time_begin": 477792,
+    "time_end": 481616.1723356009,
+    "text_begin": 2926,
+    "text_end": 2946,
+    "pronounce_text_begin": 2736,
+    "pronounce_text_end": 2756
+  },
+  {
+    "text": "第一，给你现在的 Agent 加一个 Critic。Producer 和 Critic 用两个完全对立的 system prompt，迭代次数封顶 3 次。一次额外的 LLM 调用，往往换来翻倍的输出质量。",
+    "pronounce_text": "第一，给你现在的Agent加一个Critic。Producer和Critic用两个完全对立的system prompt，迭代次数封顶三次。一次额外的LLM调用，往往换来翻倍的输出质量。",
+    "time_begin": 481788,
+    "time_end": 496188.86167800456,
+    "text_begin": 2946,
+    "text_end": 3049,
+    "pronounce_text_begin": 2756,
+    "pronounce_text_end": 2848
+  },
+  {
+    "text": "第二，开始做 Context Engineering，不是 Prompt Engineering。回头看你写给 Agent 的指令文件，如果全是\"你要怎么做\"的规则，缺少\"你现在面对什么环境\"的上下文，把后者补上。",
+    "pronounce_text": "第二，开始做Context Engineering，不是Prompt Engineering。回头看你写给Agent的指令文件，如果全是\"你要怎么做\"的规则，缺少\"你现在面对什么环境\"的上下文，把后者补上。",
+    "time_begin": 496332,
+    "time_end": 512056.39909297053,
+    "text_begin": 3049,
+    "text_end": 3156,
+    "pronounce_text_begin": 2848,
+    "pronounce_text_end": 2951
+  },
+  {
+    "text": "Context Engineering 才是 Level 1 跳到 Level 2 的真正杠杆。",
+    "pronounce_text": "Context Engineering才是Level一跳到Level二的真正杠杆。",
+    "time_begin": 512208,
+    "time_end": 516287.5918367347,
+    "text_begin": 3156,
+    "text_end": 3204,
+    "pronounce_text_begin": 2951,
+    "pronounce_text_end": 2992
+  },
+  {
+    "text": "至于 Multi-Agent，先放一放。把单 Agent 做到 Level 2，已经能覆盖你 80% 的场景。",
+    "pronounce_text": "至于Multi-Agent，先放一放。把单Agent做到Level二，已经能覆盖你百分之八十的场景。",
+    "time_begin": 516456,
+    "time_end": 523902.48526077095,
+    "text_begin": 3204,
+    "text_end": 3259,
+    "pronounce_text_begin": 2992,
+    "pronounce_text_end": 3042
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 524052,
+    "time_end": 529327.4195011337,
+    "text_begin": 3259,
+    "text_end": 3286,
+    "pronounce_text_begin": 3042,
+    "pronounce_text_end": 3068
+  }
+]

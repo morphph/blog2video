@@ -1,0 +1,762 @@
+[
+  {
+    "text": "Google Cloud AI 的人，公开说模型已经不是 Agent 的胜负手了。",
+    "pronounce_text": "Google Cloud AI的人，公开说模型已经不是Agent的胜负手了。",
+    "time_begin": 0,
+    "time_end": 5403.1292517006805,
+    "text_begin": 0,
+    "text_end": 41,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 38
+  },
+  {
+    "text": "写这话的是 Addy Osmani，Google Cloud AI 与 Gemini Agents 的 Director，之前还管过 Chrome 的工程。他完全可以替自家 Gemini 站台。但他没有。",
+    "pronounce_text": "写这话的是Addy Osmani，Google Cloud AI与Gemini Agents的Director，之前还管过Chrome的工程。他完全可以替自家Gemini站台。但他没有。",
+    "time_begin": 5544,
+    "time_end": 17773.795918367345,
+    "text_begin": 41,
+    "text_end": 143,
+    "pronounce_text_begin": 38,
+    "pronounce_text_end": 131
+  },
+  {
+    "text": "他写了一篇叫《Agent Harness Engineering》的长文，832K 阅读，将近 8 千人收藏。",
+    "pronounce_text": "他写了一篇叫《Agent Harness Engineering》的长文，八百三十二K阅读，将近八千人收藏。",
+    "time_begin": 17973.795918367345,
+    "time_end": 26534.839002267574,
+    "text_begin": 143,
+    "text_end": 198,
+    "pronounce_text_begin": 131,
+    "pronounce_text_end": 185
+  },
+  {
+    "text": "今天我不聊\"模型不重要\"这个老结论，只聊这位模型方内部人士，给整个行业埋了哪些新框架。",
+    "pronounce_text": "今天我不聊\"模型不重要\"这个老结论，只聊这位模型方内部人士，给整个行业埋了哪些新框架。",
+    "time_begin": 26676,
+    "time_end": 34714.59410430839,
+    "text_begin": 198,
+    "text_end": 241,
+    "pronounce_text_begin": 185,
+    "pronounce_text_end": 228
+  },
+  {
+    "text": "你想想这个画面有多怪。",
+    "pronounce_text": "你想想这个画面有多怪。",
+    "time_begin": 34884,
+    "time_end": 36618.37641723356,
+    "text_begin": 241,
+    "text_end": 252,
+    "pronounce_text_begin": 228,
+    "pronounce_text_end": 239
+  },
+  {
+    "text": "一个掌管 Gemini Agent 业务线的 Director，在公开博客里告诉所有人：你换什么模型不重要，重要的是包在模型外面那一层东西。这跟苹果出来说\"你买什么手机不重要\"是一个量级。",
+    "pronounce_text": "一个掌管Gemini Agent业务线的Director，在公开博客里告诉所有人：你换什么模型不重要，重要的是包在模型外面那一层东西。这跟苹果出来说\"你买什么手机不重要\"是一个量级。",
+    "time_begin": 36756,
+    "time_end": 52352.689342403624,
+    "text_begin": 252,
+    "text_end": 346,
+    "pronounce_text_begin": 239,
+    "pronounce_text_end": 330
+  },
+  {
+    "text": "但 Addy 不是在谦虚，他是认真的。他说，相同模型放进定制 Harness 里跑，和放进开箱即用的框架里跑，benchmark 分数会出现剧烈差距。剧烈这个词是他用的，不是我加的。",
+    "pronounce_text": "但Addy不是在谦虚，他是认真的。他说，相同模型放进定制Harness里跑，和放进开箱即用的框架里跑，benchmark分数会出现剧烈差距。剧烈这个词是他用的，不是我加的。",
+    "time_begin": 52524,
+    "time_end": 67389.26077097506,
+    "text_begin": 346,
+    "text_end": 437,
+    "pronounce_text_begin": 330,
+    "pronounce_text_end": 416
+  },
+  {
+    "text": "过去两年，所有人都在比模型。哪家最聪明，哪家写 React 最干净，哪家幻觉最少。这些话题确实有意义，但 Addy 说，这些话题只盖到了系统的一半。模型只是 Agent 运行时的一个输入。",
+    "pronounce_text": "过去两年，所有人都在比模型。哪家最聪明，哪家写React最干净，哪家幻觉最少。这些话题确实有意义，但Addy说，这些话题只盖到了系统的一半。模型只是Agent运行时的一个输入。",
+    "time_begin": 67536,
+    "time_end": 84073.09750566893,
+    "text_begin": 437,
+    "text_end": 531,
+    "pronounce_text_begin": 416,
+    "pronounce_text_end": 504
+  },
+  {
+    "text": "其余的部分，才是真正决定行为的地方。",
+    "pronounce_text": "其余的部分，才是真正决定行为的地方。",
+    "time_begin": 84240,
+    "time_end": 87553.33333333333,
+    "text_begin": 531,
+    "text_end": 549,
+    "pronounce_text_begin": 504,
+    "pronounce_text_end": 522
+  },
+  {
+    "text": "所以这事的信号在哪？模型厂商自己开始承认，下一阶段的竞争，不在模型那张卡上。",
+    "pronounce_text": "所以这事的信号在哪？模型厂商自己开始承认，下一阶段的竞争，不在模型那张卡上。",
+    "time_begin": 87696,
+    "time_end": 95096.04535147392,
+    "text_begin": 549,
+    "text_end": 587,
+    "pronounce_text_begin": 522,
+    "pronounce_text_end": 560
+  },
+  {
+    "text": "先把名字定下来。Harness 这个词由一个叫 Vtrivedy 的工程师在今年提出，Addy 这篇文章是给它做的工程化注解。",
+    "pronounce_text": "先把名字定下来。Harness这个词由一个叫Vtrivedy的工程师在今年提出，Addy这篇文章是给它做的工程化注解。",
+    "time_begin": 95256,
+    "time_end": 105094.14058956916,
+    "text_begin": 587,
+    "text_end": 650,
+    "pronounce_text_begin": 560,
+    "pronounce_text_end": 619
+  },
+  {
+    "text": "Harness 不是工具，也不是框架。它是包在模型外面、所有不是模型本身的东西。",
+    "pronounce_text": "Harness不是工具，也不是框架。它是包在模型外面、所有不是模型本身的东西。",
+    "time_begin": 105264,
+    "time_end": 111816.51700680272,
+    "text_begin": 650,
+    "text_end": 690,
+    "pronounce_text_begin": 619,
+    "pronounce_text_end": 658
+  },
+  {
+    "text": "系统提示、CLAUDE.md、AGENTS.md、Skills、子 Agent 指令、文件系统、沙箱、Hook、压缩策略、可观测性——这些加在一起才是 Agent。",
+    "pronounce_text": "系统提示、CLAUDE.md、AGENTS.md、Skills、子Agent指令、文件系统、沙箱、Hook、压缩策略、可观测性。这些加在一起才是Agent。",
+    "time_begin": 112016.51700680272,
+    "time_end": 126208.39909297053,
+    "text_begin": 690,
+    "text_end": 772,
+    "pronounce_text_begin": 658,
+    "pronounce_text_end": 736
+  },
+  {
+    "text": "Addy 给了一个特别简洁的判断。Agent 等于模型加 Harness。如果你不是模型，那你就是 Harness。",
+    "pronounce_text": "Addy给了一个特别简洁的判断。Agent等于模型加Harness。如果你不是模型，那你就是Harness。",
+    "time_begin": 126360,
+    "time_end": 134143.17460317462,
+    "text_begin": 772,
+    "text_end": 830,
+    "pronounce_text_begin": 736,
+    "pronounce_text_end": 790
+  },
+  {
+    "text": "所以你在用的 Claude Code、Cursor、Codex、Aider、Cline——这些全都是 Harness。底层模型可能一模一样，你体验到的差别，几乎完全来自外面那层。",
+    "pronounce_text": "所以你在用的Claude Code、Cursor、Codex、Aider、Cline。这些全都是Harness。底层模型可能一模一样，你体验到的差别，几乎完全来自外面那层。",
+    "time_begin": 134280,
+    "time_end": 147357.32426303855,
+    "text_begin": 830,
+    "text_end": 919,
+    "pronounce_text_begin": 790,
+    "pronounce_text_end": 876
+  },
+  {
+    "text": "这一段是这篇文章我觉得最值钱的部分。",
+    "pronounce_text": "这一段是这篇文章我觉得最值钱的部分。",
+    "time_begin": 147528,
+    "time_end": 150876.16326530612,
+    "text_begin": 919,
+    "text_end": 937,
+    "pronounce_text_begin": 876,
+    "pronounce_text_end": 894
+  },
+  {
+    "text": "Addy 给 Harness 工程定了一个核心动作，他叫它 Ratchet，棘轮。棘轮的意思是只往一个方向走，永远不退回去。",
+    "pronounce_text": "Addy给Harness工程定了一个核心动作，他叫它Ratchet，棘轮。棘轮的意思是只往一个方向走，永远不退回去。",
+    "time_begin": 151020,
+    "time_end": 160126.7120181406,
+    "text_begin": 937,
+    "text_end": 999,
+    "pronounce_text_begin": 894,
+    "pronounce_text_end": 952
+  },
+  {
+    "text": "具体怎么用？假设你的 Agent 不小心提交了一个被注释掉的测试，PR 被人合并了。这就是一次输入。你下一步要做三件事。AGENTS.md 里加一行：绝不注释测试，要么删，要么修。",
+    "pronounce_text": "具体怎么用？假设你的Agent不小心提交了一个被注释掉的测试，PR被人合并了。这就是一次输入。你下一步要做三件事。AGENTS.md里加一行：绝不注释测试，要么删，要么修。",
+    "time_begin": 160272,
+    "time_end": 176890.3673469388,
+    "text_begin": 999,
+    "text_end": 1089,
+    "pronounce_text_begin": 952,
+    "pronounce_text_end": 1038
+  },
+  {
+    "text": "pre-commit hook 自动 flag 掉所有 `.skip(`。Reviewer 子 Agent 加一条阻断规则。",
+    "pronounce_text": "pre-commit hook自动flag掉所有，.skip(。Reviewer子Agent加一条阻断规则。",
+    "time_begin": 177048,
+    "time_end": 184448.04535147393,
+    "text_begin": 1089,
+    "text_end": 1151,
+    "pronounce_text_begin": 1038,
+    "pronounce_text_end": 1092
+  },
+  {
+    "text": "注意这三件事一件都不靠模型的记性，全部是机制。下一次同样的失败再出现，根本到不了模型的判断这一步，被外面三道闸门先拦下来了。这就是棘轮。",
+    "pronounce_text": "注意这三件事一件都不靠模型的记性，全部是机制。下一次同样的失败再出现，根本到不了模型的判断这一步，被外面三道闸门先拦下来了。这就是棘轮。",
+    "time_begin": 184608,
+    "time_end": 197604.0544217687,
+    "text_begin": 1151,
+    "text_end": 1219,
+    "pronounce_text_begin": 1092,
+    "pronounce_text_end": 1160
+  },
+  {
+    "text": "听起来挺普通。但 Addy 紧接着的判断很狠。他说，一份好的系统提示，每一行都必须能追溯到一次具体的历史失败。",
+    "pronounce_text": "听起来挺普通。但Addy紧接着的判断很狠。他说，一份好的系统提示，每一行都必须能追溯到一次具体的历史失败。",
+    "time_begin": 197748,
+    "time_end": 207841.56009070296,
+    "text_begin": 1219,
+    "text_end": 1274,
+    "pronounce_text_begin": 1160,
+    "pronounce_text_end": 1213
+  },
+  {
+    "text": "读到这里我停了几秒钟。",
+    "pronounce_text": "读到这里我停了几秒钟。",
+    "time_begin": 208008,
+    "time_end": 210125.50566893423,
+    "text_begin": 1274,
+    "text_end": 1285,
+    "pronounce_text_begin": 1213,
+    "pronounce_text_end": 1224
+  },
+  {
+    "text": "意思是反过来——如果你的 AGENTS.md 里有一条规则，你想不起来它是哪次翻车留下的，那这条规则就该删掉。",
+    "pronounce_text": "意思是反过来。如果你的AGENTS.md里有一条规则，你想不起来它是哪次翻车留下的，那这条规则就该删掉。",
+    "time_begin": 210276,
+    "time_end": 219510.42176870749,
+    "text_begin": 1285,
+    "text_end": 1340,
+    "pronounce_text_begin": 1224,
+    "pronounce_text_end": 1276
+  },
+  {
+    "text": "约束只在你观察到真实失败后才加进去，也只在某一代更强的模型让它变成多余时才删掉。",
+    "pronounce_text": "约束只在你观察到真实失败后才加进去，也只在某一代更强的模型让它变成多余时才删掉。",
+    "time_begin": 219710.42176870749,
+    "time_end": 227621.306122449,
+    "text_begin": 1340,
+    "text_end": 1380,
+    "pronounce_text_begin": 1276,
+    "pronounce_text_end": 1316
+  },
+  {
+    "text": "规则不是凭空写的，是疤痕。",
+    "pronounce_text": "规则不是凭空写的，是疤痕。",
+    "time_begin": 227772,
+    "time_end": 230226.19501133787,
+    "text_begin": 1380,
+    "text_end": 1393,
+    "pronounce_text_begin": 1316,
+    "pronounce_text_end": 1329
+  },
+  {
+    "text": "这跟我们以前理解的 prompt 工程完全是两件事。Prompt 工程关注的是\"怎么把话说清楚\"。Harness 工程关注的是\"如何把每一次翻车永久编码\"。",
+    "pronounce_text": "这跟我们以前理解的prompt工程完全是两件事。Prompt工程关注的是\"怎么把话说清楚\"。Harness工程关注的是\"如何把每一次翻车永久编码\"。",
+    "time_begin": 230364,
+    "time_end": 241351.5283446712,
+    "text_begin": 1393,
+    "text_end": 1471,
+    "pronounce_text_begin": 1329,
+    "pronounce_text_end": 1403
+  },
+  {
+    "text": "所以 Addy 才说，Harness 不是一个框架，是一种纪律。一份属于你这套代码库的失败史。他还顺手扔了一个比喻——CLAUDE.md 这种文件，应该当成飞行员清单来对待，不是风格指南。",
+    "pronounce_text": "所以Addy才说，Harness不是一个框架，是一种纪律。一份属于你这套代码库的失败史。他还顺手扔了一个比喻。CLAUDE.md这种文件，应该当成飞行员清单来对待，不是风格指南。",
+    "time_begin": 241488,
+    "time_end": 257897.38775510204,
+    "text_begin": 1471,
+    "text_end": 1565,
+    "pronounce_text_begin": 1403,
+    "pronounce_text_end": 1492
+  },
+  {
+    "text": "清单的特点是每一条都是用事故换来的，没有一条是为了好看。",
+    "pronounce_text": "清单的特点是每一条都是用事故换来的，没有一条是为了好看。",
+    "time_begin": 258048,
+    "time_end": 263149.2698412698,
+    "text_begin": 1565,
+    "text_end": 1593,
+    "pronounce_text_begin": 1492,
+    "pronounce_text_end": 1520
+  },
+  {
+    "text": "第二个新框架，叫 Working backwards from behavior。",
+    "pronounce_text": "第二个新框架，叫Working backwards from behavior。",
+    "time_begin": 263304,
+    "time_end": 267418.42176870746,
+    "text_begin": 1593,
+    "text_end": 1634,
+    "pronounce_text_begin": 1520,
+    "pronounce_text_end": 1560
+  },
+  {
+    "text": "普通做法是这样：我先把 Agent 搭起来，让它跑，然后看哪里不对再补。Addy 反着说：你应该先描述你要的行为，再去设计能交付这个行为的组件。",
+    "pronounce_text": "普通做法是这样：我先把Agent搭起来，让它跑，然后看哪里不对再补。Addy反着说：你应该先描述你要的行为，再去设计能交付这个行为的组件。",
+    "time_begin": 267588,
+    "time_end": 280584.0544217687,
+    "text_begin": 1634,
+    "text_end": 1706,
+    "pronounce_text_begin": 1560,
+    "pronounce_text_end": 1629
+  },
+  {
+    "text": "更狠的是后半句。他说，每一个 Harness 组件都必须能对应一个具体行为。如果你说不出某个组件存在的理由——它解决的是哪个具体行为问题——那这个组件就该被删掉。",
+    "pronounce_text": "更狠的是后半句。他说，每一个Harness组件都必须能对应一个具体行为。如果你说不出某个组件存在的理由。它解决的是哪个具体行为问题。那这个组件就该被删掉。",
+    "time_begin": 280728,
+    "time_end": 294954.7120181406,
+    "text_begin": 1706,
+    "text_end": 1787,
+    "pronounce_text_begin": 1629,
+    "pronounce_text_end": 1706
+  },
+  {
+    "text": "我看完心里默默盘了一下我自己平时配的几个工具，凉了一半。我们很多人加工具不是因为需要，是因为\"看到别人都加了\"。这是 Addy 想纠正的。",
+    "pronounce_text": "我看完心里默默盘了一下我自己平时配的几个工具，凉了一半。我们很多人加工具不是因为需要，是因为\"看到别人都加了\"。这是Addy想纠正的。",
+    "time_begin": 295092,
+    "time_end": 307960.34467120183,
+    "text_begin": 1787,
+    "text_end": 1856,
+    "pronounce_text_begin": 1706,
+    "pronounce_text_end": 1773
+  },
+  {
+    "text": "他还顺手定了一个 Hook 设计的原则，我觉得特别值得记。Success is silent，failures are verbose。",
+    "pronounce_text": "他还顺手定了一个Hook设计的原则，我觉得特别值得记。Success is silent，failures are verbose。",
+    "time_begin": 308124,
+    "time_end": 316290.30385487527,
+    "text_begin": 1856,
+    "text_end": 1924,
+    "pronounce_text_begin": 1773,
+    "pronounce_text_end": 1839
+  },
+  {
+    "text": "意思是类型检查通过的时候，Agent 听不到任何声音，安静地继续往下走；只有失败的时候，错误信息才被原样塞回它的下一轮上下文，逼它自己改。",
+    "pronounce_text": "意思是类型检查通过的时候，Agent听不到任何声音，安静地继续往下走;只有失败的时候，错误信息才被原样塞回它的下一轮上下文，逼它自己改。",
+    "time_begin": 316440,
+    "time_end": 329006.48526077095,
+    "text_begin": 1924,
+    "text_end": 1993,
+    "pronounce_text_begin": 1839,
+    "pronounce_text_end": 1907
+  },
+  {
+    "text": "这是一个特别工程师的设计直觉，很多人写 hook 习惯成功也广播一句\"完成\"，那其实是污染上下文。",
+    "pronounce_text": "这是一个特别工程师的设计直觉，很多人写hook习惯成功也广播一句\"完成\"，那其实是污染上下文。",
+    "time_begin": 329148,
+    "time_end": 338730.7210884354,
+    "text_begin": 1993,
+    "text_end": 2042,
+    "pronounce_text_begin": 1907,
+    "pronounce_text_end": 1954
+  },
+  {
+    "text": "第三个框架更反直觉。",
+    "pronounce_text": "第三个框架更反直觉。",
+    "time_begin": 338868,
+    "time_end": 341113.2154195011,
+    "text_begin": 2042,
+    "text_end": 2052,
+    "pronounce_text_begin": 1954,
+    "pronounce_text_end": 1964
+  },
+  {
+    "text": "你的直觉一定是：模型变强，外面就要写得越来越少。Addy 说，不对。模型变强不让 Harness 消失，只让它往上挪一层。",
+    "pronounce_text": "你的直觉一定是：模型变强，外面就要写得越来越少。Addy说，不对。模型变强不让Harness消失，只让它往上挪一层。",
+    "time_begin": 341280,
+    "time_end": 352987.3469387755,
+    "text_begin": 2052,
+    "text_end": 2113,
+    "pronounce_text_begin": 1964,
+    "pronounce_text_end": 2022
+  },
+  {
+    "text": "他举的例子是，最近一两代模型升级，让那些缓解上下文焦虑的小机制变得没必要了。你以前要小心翼翼地压缩 token，现在窗口大了，那一类脚手架可以拆掉。",
+    "pronounce_text": "他举的例子是，最近一两代模型升级，让那些缓解上下文焦虑的小机制变得没必要了。你以前要小心翼翼地压缩token，现在窗口大了，那一类脚手架可以拆掉。",
+    "time_begin": 353124,
+    "time_end": 365690.48526077095,
+    "text_begin": 2113,
+    "text_end": 2187,
+    "pronounce_text_begin": 2022,
+    "pronounce_text_end": 2095
+  },
+  {
+    "text": "听上去 Harness 不就是变小了吗？没有。因为 floor 升高的同时，ceiling 也升高了。",
+    "pronounce_text": "听上去Harness不就是变小了吗？没有。因为floor升高的同时，ceiling也升高了。",
+    "time_begin": 365832,
+    "time_end": 372895.3560090703,
+    "text_begin": 2187,
+    "text_end": 2238,
+    "pronounce_text_begin": 2095,
+    "pronounce_text_end": 2141
+  },
+  {
+    "text": "以前你不敢让 Agent 做的多 Agent 编排、自我 trace 修复、动态工具拼装——这些以前根本碰不到的任务，现在变成了你必须解决的新失败模式。",
+    "pronounce_text": "以前你不敢让Agent做的多Agent编排、自我trace修复、动态工具拼装。这些以前根本碰不到的任务，现在变成了你必须解决的新失败模式。",
+    "time_begin": 373032,
+    "time_end": 385644.92517006805,
+    "text_begin": 2238,
+    "text_end": 2314,
+    "pronounce_text_begin": 2141,
+    "pronounce_text_end": 2210
+  },
+  {
+    "text": "Addy 的判断是：Harness 的每一个组件，本质上都在编码一个\"模型现在还做不了什么\"的假设。模型变了，那个假设就要重写，但新的假设永远会出现。",
+    "pronounce_text": "Addy的判断是：Harness的每一个组件，本质上都在编码一个\"模型现在还做不了什么\"的假设。模型变了，那个假设就要重写，但新的假设永远会出现。",
+    "time_begin": 385812,
+    "time_end": 399144.7437641723,
+    "text_begin": 2314,
+    "text_end": 2389,
+    "pronounce_text_begin": 2210,
+    "pronounce_text_end": 2283
+  },
+  {
+    "text": "这是个挺残酷的结论。意思是 Harness 工程不是一次性投入，它是一份要持续维护的资产。你不能写一次写完。",
+    "pronounce_text": "这是个挺残酷的结论。意思是Harness工程不是一次性投入，它是一份要持续维护的资产。你不能写一次写完。",
+    "time_begin": 399312,
+    "time_end": 408674.1315192744,
+    "text_begin": 2389,
+    "text_end": 2443,
+    "pronounce_text_begin": 2283,
+    "pronounce_text_end": 2335
+  },
+  {
+    "text": "这一段是技术圈外面的人不太会注意到的，我觉得是整篇里最有内部视角的部分。",
+    "pronounce_text": "这一段是技术圈外面的人不太会注意到的，我觉得是整篇里最有内部视角的部分。",
+    "time_begin": 408816,
+    "time_end": 414346.8390022676,
+    "text_begin": 2443,
+    "text_end": 2479,
+    "pronounce_text_begin": 2335,
+    "pronounce_text_end": 2371
+  },
+  {
+    "text": "Addy 透露了一件事：今天的模型在 post-training 阶段，就把特定的 Harness 拉进了训练循环。也就是说，模型不是先训练好，再被 Harness 调用——而是训练的时候，就已经在某种 Harness 里跑过了无数遍。",
+    "pronounce_text": "Addy透露了一件事：今天的模型在post-training阶段，就把特定的Harness拉进了训练循环。也就是说，模型不是先训练好，再被Harness调用。而是训练的时候，就已经在某种Harness里跑过了无数遍。",
+    "time_begin": 414504,
+    "time_end": 430820.50793650793,
+    "text_begin": 2479,
+    "text_end": 2597,
+    "pronounce_text_begin": 2371,
+    "pronounce_text_end": 2479
+  },
+  {
+    "text": "这意味着什么？意味着模型会对它在训练时见过的那些动作过拟合——文件操作、bash、子 Agent dispatch 这些被 Harness 设计者优先优化的动作，模型用起来会异常顺手。",
+    "pronounce_text": "这意味着什么？意味着模型会对它在训练时见过的那些动作过拟合。文件操作、bash、子Agent dispatch这些被Harness设计者优先优化的动作，模型用起来会异常顺手。",
+    "time_begin": 430992,
+    "time_end": 444452.45351473923,
+    "text_begin": 2597,
+    "text_end": 2689,
+    "pronounce_text_begin": 2479,
+    "pronounce_text_end": 2566
+  },
+  {
+    "text": "反过来呢？如果你切换到一个训练时没见过的 Harness 模式——比如你自己发明了一套奇怪的子 Agent 协议，或者一种不常见的工具调用约定——模型的表现可能会突然下降，而你查不出原因。",
+    "pronounce_text": "反过来呢？如果你切换到一个训练时没见过的Harness模式。比如你自己发明了一套奇怪的子Agent协议，或者一种不常见的工具调用约定。模型的表现可能会突然下降，而你查不出原因。",
+    "time_begin": 444600,
+    "time_end": 460835.2380952381,
+    "text_begin": 2689,
+    "text_end": 2783,
+    "pronounce_text_begin": 2566,
+    "pronounce_text_end": 2654
+  },
+  {
+    "text": "表面看是模型变笨了，实际上是它没在训练里见过你这套用法。",
+    "pronounce_text": "表面看是模型变笨了，实际上是它没在训练里见过你这套用法。",
+    "time_begin": 460980,
+    "time_end": 466975.2380952381,
+    "text_begin": 2783,
+    "text_end": 2811,
+    "pronounce_text_begin": 2654,
+    "pronounce_text_end": 2682
+  },
+  {
+    "text": "这就把\"换 Harness\"这件事的成本拉得很高。它不再是单纯的工程切换，它是在跟\"模型训练时见过什么\"博弈。",
+    "pronounce_text": "这就把\"换Harness\"这件事的成本拉得很高。它不再是单纯的工程切换，它是在跟\"模型训练时见过什么\"博弈。",
+    "time_begin": 467136,
+    "time_end": 477055.410430839,
+    "text_begin": 2811,
+    "text_end": 2866,
+    "pronounce_text_begin": 2682,
+    "pronounce_text_end": 2736
+  },
+  {
+    "text": "也意味着先把某种 Harness 范式做大的玩家，会在下一代模型上拿到天然的优势。这不是阴谋，这是训练流程的物理结果。Claude Code 之所以越用越顺手，跟模型本身的训练有多重视它，是绑在一起的。",
+    "pronounce_text": "也意味着先把某种Harness范式做大的玩家，会在下一代模型上拿到天然的优势。这不是阴谋，这是训练流程的物理结果。Claude Code之所以越用越顺手，跟模型本身的训练有多重视它，是绑在一起的。",
+    "time_begin": 477216,
+    "time_end": 493787.9274376417,
+    "text_begin": 2866,
+    "text_end": 2967,
+    "pronounce_text_begin": 2736,
+    "pronounce_text_end": 2834
+  },
+  {
+    "text": "第四个框架。",
+    "pronounce_text": "第四个框架。",
+    "time_begin": 493956,
+    "time_end": 495214.36734693876,
+    "text_begin": 2967,
+    "text_end": 2973,
+    "pronounce_text_begin": 2834,
+    "pronounce_text_end": 2840
+  },
+  {
+    "text": "Addy 说，行业正在从\"建在 LLM API 上\"转向\"建在 Harness API 上\"。SDK 卖的不再是 completion——一个字一个字吐出来的那种 API——SDK 现在直接卖 runtime。",
+    "pronounce_text": "Addy说，行业正在从\"建在LLM API上\"转向\"建在Harness API上\"。SDK卖的不再是completion。一个字一个字吐出来的那种API。SDK现在直接卖runtime。",
+    "time_begin": 495360,
+    "time_end": 510620,
+    "text_begin": 2973,
+    "text_end": 3078,
+    "pronounce_text_begin": 2840,
+    "pronounce_text_end": 2933
+  },
+  {
+    "text": "runtime 包括什么？包括 loop，包括工具，包括上下文管理，包括 Hook，包括沙箱。整套 Agent 骨架开箱即用。",
+    "pronounce_text": "runtime包括什么？包括loop，包括工具，包括上下文管理，包括Hook，包括沙箱。整套Agent骨架开箱即用。",
+    "time_begin": 510768,
+    "time_end": 521198.24943310657,
+    "text_begin": 3078,
+    "text_end": 3141,
+    "pronounce_text_begin": 2933,
+    "pronounce_text_end": 2991
+  },
+  {
+    "text": "他给这个范式取了个名字，叫 Harness-as-a-Service，简称 HaaS。",
+    "pronounce_text": "他给这个范式取了个名字，叫Harness-as-a-Service，简称HaaS。",
+    "time_begin": 521352,
+    "time_end": 527300.7981859411,
+    "text_begin": 3141,
+    "text_end": 3184,
+    "pronounce_text_begin": 2991,
+    "pronounce_text_end": 3032
+  },
+  {
+    "text": "这话出自 Google Cloud AI 的 Director 之口，含义就有点深了。它隐含的预测是：未来你跟模型厂商签的合同，不会是按 token 算钱，而是按 runtime 实例算钱。模型在这个交易里，变成 runtime 的一个内部配件。",
+    "pronounce_text": "这话出自Google Cloud AI的Director之口，含义就有点深了。它隐含的预测是：未来你跟模型厂商签的合同，不会是按token算钱，而是按runtime实例算钱。模型在这个交易里，变成runtime的一个内部配件。",
+    "time_begin": 527472,
+    "time_end": 544299.3469387755,
+    "text_begin": 3184,
+    "text_end": 3307,
+    "pronounce_text_begin": 3032,
+    "pronounce_text_end": 3145
+  },
+  {
+    "text": "代价是什么？Addy 没明说，但我帮你说出来。HaaS 把\"换 Harness 框架\"变得跟\"换数据库\"一样痛苦。",
+    "pronounce_text": "代价是什么？Addy没明说，但我帮你说出来。HaaS把\"换Harness框架\"变得跟\"换数据库\"一样痛苦。",
+    "time_begin": 544464,
+    "time_end": 553617.1519274376,
+    "text_begin": 3307,
+    "text_end": 3364,
+    "pronounce_text_begin": 3145,
+    "pronounce_text_end": 3198
+  },
+  {
+    "text": "loop 生命周期、压缩策略、子 Agent 协议——这些一旦绑定，你的失败历史就沉淀在这套抽象里，再想搬家成本极高。",
+    "pronounce_text": "loop生命周期、压缩策略、子Agent协议。这些一旦绑定，你的失败历史就沉淀在这套抽象里，再想搬家成本极高。",
+    "time_begin": 553788,
+    "time_end": 563753.8503401361,
+    "text_begin": 3364,
+    "text_end": 3423,
+    "pronounce_text_begin": 3198,
+    "pronounce_text_end": 3253
+  },
+  {
+    "text": "文章最后这句判断，我反复读了几遍。",
+    "pronounce_text": "文章最后这句判断，我反复读了几遍。",
+    "time_begin": 563904,
+    "time_end": 566694.8843537415,
+    "text_begin": 3423,
+    "text_end": 3440,
+    "pronounce_text_begin": 3253,
+    "pronounce_text_end": 3270
+  },
+  {
+    "text": "Addy 说，今天市面上最强的几个 coding Agent，它们彼此之间，比它们用的模型还像。",
+    "pronounce_text": "Addy说，今天市面上最强的几个coding Agent，它们彼此之间，比它们用的模型还像。",
+    "time_begin": 566856,
+    "time_end": 573872.9160997733,
+    "text_begin": 3440,
+    "text_end": 3488,
+    "pronounce_text_begin": 3270,
+    "pronounce_text_end": 3316
+  },
+  {
+    "text": "这句话翻一下就是：表面看 Cursor、Codex、Claude Code 还在拼模型，但实际上它们的 Harness 模式已经在快速收敛到同一组承重脚手架。",
+    "pronounce_text": "这句话翻一下就是：表面看Cursor、Codex、Claude Code还在拼模型，但实际上它们的Harness模式已经在快速收敛到同一组承重脚手架。",
+    "time_begin": 574020,
+    "time_end": 586923.1746031746,
+    "text_begin": 3488,
+    "text_end": 3567,
+    "pronounce_text_begin": 3316,
+    "pronounce_text_end": 3391
+  },
+  {
+    "text": "文件系统加 git、bash 加沙箱、AGENTS.md 加 Hook、子 Agent 加 trace——这些核心组件正在变成行业标配。",
+    "pronounce_text": "文件系统加git、bash加沙箱、AGENTS.md加Hook、子Agent加trace。这些核心组件正在变成行业标配。",
+    "time_begin": 587088,
+    "time_end": 598029.0884353742,
+    "text_begin": 3567,
+    "text_end": 3635,
+    "pronounce_text_begin": 3391,
+    "pronounce_text_end": 3451
+  },
+  {
+    "text": "收敛到一定程度，模型差异在缩小，Harness 差异也在缩小。剩下什么是真正的差异？Addy 没明说，但顺着他的逻辑往下推——剩下的就是你这套 Harness 上沉淀的失败记录。",
+    "pronounce_text": "收敛到一定程度，模型差异在缩小，Harness差异也在缩小。剩下什么是真正的差异？Addy没明说，但顺着他的逻辑往下推。剩下的就是你这套Harness上沉淀的失败记录。",
+    "time_begin": 598176,
+    "time_end": 614457.6780045351,
+    "text_begin": 3635,
+    "text_end": 3724,
+    "pronounce_text_begin": 3451,
+    "pronounce_text_end": 3535
+  },
+  {
+    "text": "一份只属于你这套代码库、你这个团队、你这种任务类型的，几年积累的疤痕。",
+    "pronounce_text": "一份只属于你这套代码库、你这个团队、你这种任务类型的，几年积累的疤痕。",
+    "time_begin": 614628,
+    "time_end": 621435.9365079365,
+    "text_begin": 3724,
+    "text_end": 3759,
+    "pronounce_text_begin": 3535,
+    "pronounce_text_end": 3570
+  },
+  {
+    "text": "这个东西不能抄，不能买，也没法外包。它是 Harness 工程时代真正的护城河。",
+    "pronounce_text": "这个东西不能抄，不能买，也没法外包。它是Harness工程时代真正的护城河。",
+    "time_begin": 621576,
+    "time_end": 628035.6371882086,
+    "text_begin": 3759,
+    "text_end": 3799,
+    "pronounce_text_begin": 3570,
+    "pronounce_text_end": 3608
+  },
+  {
+    "text": "回到开头那个画面。一个掌管 Gemini Agent 业务的 Director，跟全行业说模型不重要。",
+    "pronounce_text": "回到开头那个画面。一个掌管Gemini Agent业务的Director，跟全行业说模型不重要。",
+    "time_begin": 628200,
+    "time_end": 635600.045351474,
+    "text_begin": 3799,
+    "text_end": 3850,
+    "pronounce_text_begin": 3608,
+    "pronounce_text_end": 3656
+  },
+  {
+    "text": "不是谦虚，是预告。",
+    "pronounce_text": "不是谦虚，是预告。",
+    "time_begin": 635760,
+    "time_end": 637784.6258503401,
+    "text_begin": 3850,
+    "text_end": 3859,
+    "pronounce_text_begin": 3656,
+    "pronounce_text_end": 3665
+  },
+  {
+    "text": "预告的事情有四件。第一件，Harness 工程会变成一种独立纪律，每一条规则都要绑定一次翻车，没有抄作业这回事。",
+    "pronounce_text": "预告的事情有四件。第一件，Harness工程会变成一种独立纪律，每一条规则都要绑定一次翻车，没有抄作业这回事。",
+    "time_begin": 637956,
+    "time_end": 648003.1201814059,
+    "text_begin": 3859,
+    "text_end": 3915,
+    "pronounce_text_begin": 3665,
+    "pronounce_text_end": 3720
+  },
+  {
+    "text": "第二件，Harness 不会消失，只会随着模型变强不断往上挪，永远在搭新的脚手架。",
+    "pronounce_text": "第二件，Harness不会消失，只会随着模型变强不断往上挪，永远在搭新的脚手架。",
+    "time_begin": 648203.1201814059,
+    "time_end": 655823.7551020408,
+    "text_begin": 3915,
+    "text_end": 3956,
+    "pronounce_text_begin": 3720,
+    "pronounce_text_end": 3760
+  },
+  {
+    "text": "第三件，HaaS 会取代 LLM API，模型成为 runtime 里的一个零件，被卖给开发者的是整套运行环境。",
+    "pronounce_text": "第三件，HaaS会取代LLM API，模型成为runtime里的一个零件，被卖给开发者的是整套运行环境。",
+    "time_begin": 655992,
+    "time_end": 665783.7006802721,
+    "text_begin": 3956,
+    "text_end": 4012,
+    "pronounce_text_begin": 3760,
+    "pronounce_text_end": 3812
+  },
+  {
+    "text": "第四件，顶级 Agent 们会越来越像，模型也会越来越像，真正的差异沉淀在你的失败历史里。",
+    "pronounce_text": "第四件，顶级Agent们会越来越像，模型也会越来越像，真正的差异沉淀在你的失败历史里。",
+    "time_begin": 665983.7006802721,
+    "time_end": 674672.4535147392,
+    "text_begin": 4012,
+    "text_end": 4057,
+    "pronounce_text_begin": 3812,
+    "pronounce_text_end": 3855
+  },
+  {
+    "text": "模型是 Agent 的输入，不再是 Agent 的胜负手。胜负手是这份只属于你的失败记录。",
+    "pronounce_text": "模型是Agent的输入，不再是Agent的胜负手。胜负手是这份只属于你的失败记录。",
+    "time_begin": 674820,
+    "time_end": 681627.9365079365,
+    "text_begin": 4057,
+    "text_end": 4102,
+    "pronounce_text_begin": 3855,
+    "pronounce_text_end": 3896
+  },
+  {
+    "text": "如果你今天在用 Claude Code、Codex 或者 Cursor，回去打开一下你那份 AGENTS.md 或者 CLAUDE.md，从上到下扫一遍。",
+    "pronounce_text": "如果你今天在用Claude Code、Codex或者Cursor，回去打开一下你那份AGENTS.md或者CLAUDE.md，从上到下扫一遍。",
+    "time_begin": 681768,
+    "time_end": 692035.7097505669,
+    "text_begin": 4102,
+    "text_end": 4179,
+    "pronounce_text_begin": 3896,
+    "pronounce_text_end": 3967
+  },
+  {
+    "text": "问自己一个问题：每一条规则，我能不能想起来它是哪次具体翻车留下来的。",
+    "pronounce_text": "问自己一个问题：每一条规则，我能不能想起来它是哪次具体翻车留下来的。",
+    "time_begin": 692235.7097505669,
+    "time_end": 699043.6462585034,
+    "text_begin": 4179,
+    "text_end": 4213,
+    "pronounce_text_begin": 3967,
+    "pronounce_text_end": 4001
+  },
+  {
+    "text": "想不起来的，删掉。想得起来的，留下，并且把它编码进 Hook 或者 Linter，让它机械执行，不再靠模型自觉。",
+    "pronounce_text": "想不起来的，删掉。想得起来的，留下，并且把它编码进Hook或者Linter，让它机械执行，不再靠模型自觉。",
+    "time_begin": 699192,
+    "time_end": 709413.2698412698,
+    "text_begin": 4213,
+    "text_end": 4269,
+    "pronounce_text_begin": 4001,
+    "pronounce_text_end": 4054
+  },
+  {
+    "text": "这是 Addy 给的最小可执行动作，几分钟就能做完，但它的复利会一直累积下去。",
+    "pronounce_text": "这是Addy给的最小可执行动作，几分钟就能做完，但它的复利会一直累积下去。",
+    "time_begin": 709613.2698412698,
+    "time_end": 716548.9160997733,
+    "text_begin": 4269,
+    "text_end": 4308,
+    "pronounce_text_begin": 4054,
+    "pronounce_text_end": 4091
+  },
+  {
+    "text": "剩下的事情，慢慢做，做几年。等下一代模型出来，再回过头来盘一次，看哪些规则可以删，哪些新失败模式需要加新规则。Harness 就是这样长出来的。",
+    "pronounce_text": "剩下的事情，慢慢做，做几年。等下一代模型出来，再回过头来盘一次，看哪些规则可以删，哪些新失败模式需要加新规则。Harness就是这样长出来的。",
+    "time_begin": 716688,
+    "time_end": 729846.5941043084,
+    "text_begin": 4308,
+    "text_end": 4380,
+    "pronounce_text_begin": 4091,
+    "pronounce_text_end": 4162
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 730008,
+    "time_end": 735747.8185941043,
+    "text_begin": 4380,
+    "text_end": 4407,
+    "pronounce_text_begin": 4162,
+    "pronounce_text_end": 4188
+  }
+]

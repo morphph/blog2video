@@ -1,0 +1,15 @@
+{
+  "topic": "一个 TXT 文件，让 Claude 准确率从 65% 飙到 94%",
+  "blog_url": "https://x.com/0xDepressionn/status/2055999112470839383",
+  "source": "0xdepressionn-2055999112470839383",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

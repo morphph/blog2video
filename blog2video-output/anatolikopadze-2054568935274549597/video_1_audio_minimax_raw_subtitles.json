@@ -1,0 +1,462 @@
+[
+  {
+    "text": "Claude 已经出来两年了，每天用它的人，还在用它的百分之十。Anatoli Kopadze 这条爆了一千九百万阅读的长贴，把矛头指向了一件更尴尬的事——不是你不知道功能在哪里，是你用 Claude 的姿势本身就在浪费它。",
+    "pronounce_text": "Claude已经出来两年了，每天用它的人，还在用它的百分之十。Anatoli Kopadze这条爆了一千九百万阅读的长贴，把矛头指向了一件更尴尬的事。不是你不知道功能在哪里，是你用Claude的姿势本身就在浪费它。",
+    "time_begin": 0,
+    "time_end": 16873.786848072563,
+    "text_begin": 0,
+    "text_end": 112,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 107
+  },
+  {
+    "text": "今天不聊它有什么功能。只聊那剩下的百分之九十，到底是怎么被你亲手扔掉的。",
+    "pronounce_text": "今天不聊它有什么功能。只聊那剩下的百分之九十，到底是怎么被你亲手扔掉的。",
+    "time_begin": 17028,
+    "time_end": 24857.614512471657,
+    "text_begin": 112,
+    "text_end": 148,
+    "pronounce_text_begin": 107,
+    "pronounce_text_end": 143
+  },
+  {
+    "text": "我们上一期刚讲过这个作者另一篇文章——Claude 有十七个功能，大部分人一个都没开。那是一份功能地图，告诉你东西在哪里。",
+    "pronounce_text": "我们上一期刚讲过这个作者另一篇文章。Claude有十七个功能，大部分人一个都没开。那是一份功能地图，告诉你东西在哪里。",
+    "time_begin": 25020,
+    "time_end": 35113.560090702944,
+    "text_begin": 148,
+    "text_end": 209,
+    "pronounce_text_begin": 143,
+    "pronounce_text_end": 202
+  },
+  {
+    "text": "但他这一篇更狠。他说：就算你把这些功能全部打开，你打开 Claude 的方式还是错的。",
+    "pronounce_text": "但他这一篇更狠。他说：就算你把这些功能全部打开，你打开Claude的方式还是错的。",
+    "time_begin": 35280,
+    "time_end": 43028.34467120181,
+    "text_begin": 209,
+    "text_end": 252,
+    "pronounce_text_begin": 202,
+    "pronounce_text_end": 243
+  },
+  {
+    "text": "他把这件事拆成了十八个步骤。我不打算按一到十八念给你听——那是 PPT 目录。我想挑里面最反直觉的五六个出来，让你听完今天就能动手改。",
+    "pronounce_text": "他把这件事拆成了十八个步骤。我不打算按一到十八念给你听。那是PPT目录。我想挑里面最反直觉的五六个出来，让你听完今天就能动手改。",
+    "time_begin": 43200,
+    "time_end": 54233.968253968254,
+    "text_begin": 252,
+    "text_end": 319,
+    "pronounce_text_begin": 243,
+    "pronounce_text_end": 307
+  },
+  {
+    "text": "大部分人用 Claude 的方式，跟用谷歌一样。打开一个新对话，扔一句\"什么是 prompt caching\"，等它把定义吐出来。",
+    "pronounce_text": "大部分人用Claude的方式，跟用谷歌一样。打开一个新对话，扔一句\"什么是prompt caching\"，等它把定义吐出来。",
+    "time_begin": 54396,
+    "time_end": 65081.66893424036,
+    "text_begin": 319,
+    "text_end": 384,
+    "pronounce_text_begin": 307,
+    "pronounce_text_end": 369
+  },
+  {
+    "text": "原作者一句话定性了这种用法：\"你把它当搜索引擎用的那一刻，它的价值就被你砍掉了百分之八十。\"",
+    "pronounce_text": "原作者一句话定性了这种用法：\"你把它当搜索引擎用的那一刻，它的价值就被你砍掉了百分之八十。\"",
+    "time_begin": 65232,
+    "time_end": 73572.45351473923,
+    "text_begin": 384,
+    "text_end": 430,
+    "pronounce_text_begin": 369,
+    "pronounce_text_end": 415
+  },
+  {
+    "text": "为什么砍掉百分之八十？因为 Claude 不是检索工具，它是一个会推理、会综合、会跟你辩论、会基于上下文继续往下想的伙伴。你问它\"什么是 X\"，它就给你背一个定义。",
+    "pronounce_text": "为什么砍掉百分之八十？因为Claude不是检索工具，它是一个会推理、会综合、会跟你辩论、会基于上下文继续往下想的伙伴。你问它\"什么是X\"，它就给你背一个定义。",
+    "time_begin": 73728,
+    "time_end": 89881.96825396825,
+    "text_begin": 430,
+    "text_end": 512,
+    "pronounce_text_begin": 415,
+    "pronounce_text_end": 494
+  },
+  {
+    "text": "你问它\"我在做一个每次会话调用 Claude 二十次的工作流，prompt caching 在我的场景里能不能真的省钱\"——它就跟你一起把这件事想清楚。",
+    "pronounce_text": "你问它\"我在做一个每次会话调用Claude二十次的工作流，prompt caching在我的场景里能不能真的省钱\"。它就跟你一起把这件事想清楚。",
+    "time_begin": 90036,
+    "time_end": 101662.07709750567,
+    "text_begin": 512,
+    "text_end": 588,
+    "pronounce_text_begin": 494,
+    "pronounce_text_end": 566
+  },
+  {
+    "text": "同一个话题，两个问法，输出质量天差地别。",
+    "pronounce_text": "同一个话题，两个问法，输出质量天差地别。",
+    "time_begin": 101808,
+    "time_end": 106143.01133786848,
+    "text_begin": 588,
+    "text_end": 608,
+    "pronounce_text_begin": 566,
+    "pronounce_text_end": 586
+  },
+  {
+    "text": "这是十八条里面，我个人觉得性价比最高的一条。",
+    "pronounce_text": "这是十八条里面，我个人觉得性价比最高的一条。",
+    "time_begin": 106308,
+    "time_end": 109749.04308390022,
+    "text_begin": 608,
+    "text_end": 630,
+    "pronounce_text_begin": 586,
+    "pronounce_text_end": 608
+  },
+  {
+    "text": "大部分人的直觉是，我要把问题问得越清楚越好。这话没错，但不够。真正的杠杆是反过来——在 Claude 开始任何复杂任务之前，让它先反问你五个最重要的问题。",
+    "pronounce_text": "大部分人的直觉是，我要把问题问得越清楚越好。这话没错，但不够。真正的杠杆是反过来。在Claude开始任何复杂任务之前，让它先反问你五个最重要的问题。",
+    "time_begin": 109908,
+    "time_end": 117145.50566893425,
+    "text_begin": 630,
+    "text_end": 707,
+    "pronounce_text_begin": 608,
+    "pronounce_text_end": 682
+  },
+  {
+    "text": "原作者给的 prompt 短得吓人：\"在你开始之前，先问我五个最重要的、能帮你把这件事做好的问题。我回答完，你再开始。\"",
+    "pronounce_text": "原作者给的prompt短得吓人：\"在你开始之前，先问我五个最重要的、能帮你把这件事做好的问题。我回答完，你再开始。\"",
+    "time_begin": 117288,
+    "time_end": 128786.36734693877,
+    "text_begin": 707,
+    "text_end": 767,
+    "pronounce_text_begin": 682,
+    "pronounce_text_end": 740
+  },
+  {
+    "text": "不到三十个字，但它改写了整个交互结构。因为 Claude 自己挑出来的五个问题，是它**最缺的那五个信息**。这比你猜它需要什么准得多。",
+    "pronounce_text": "不到三十个字，但它改写了整个交互结构。因为Claude自己挑出来的五个问题，是它，最缺的那五个信息。这比你猜它需要什么准得多。",
+    "time_begin": 128952,
+    "time_end": 140531.6371882086,
+    "text_begin": 767,
+    "text_end": 835,
+    "pronounce_text_begin": 740,
+    "pronounce_text_end": 803
+  },
+  {
+    "text": "没有这一步，Claude 默默替你做假设，然后你花一堆时间在纠正本来一次就能对的东西。",
+    "pronounce_text": "没有这一步，Claude默默替你做假设，然后你花一堆时间在纠正本来一次就能对的东西。",
+    "time_begin": 140688,
+    "time_end": 147704.91609977325,
+    "text_begin": 835,
+    "text_end": 878,
+    "pronounce_text_begin": 803,
+    "pronounce_text_end": 845
+  },
+  {
+    "text": "如果你不知道怎么 prompt，就让 Claude 自己帮你写 prompt。听起来废话，但几乎没人这么做。",
+    "pronounce_text": "如果你不知道怎么prompt，就让Claude自己帮你写prompt。听起来废话，但几乎没人这么做。",
+    "time_begin": 147852,
+    "time_end": 155089.50566893423,
+    "text_begin": 878,
+    "text_end": 932,
+    "pronounce_text_begin": 845,
+    "pronounce_text_end": 895
+  },
+  {
+    "text": "逻辑很直接：Claude 自己最清楚什么样的指令能拿到什么样的输出。这是它的元知识。",
+    "pronounce_text": "逻辑很直接：Claude自己最清楚什么样的指令能拿到什么样的输出。这是它的元知识。",
+    "time_begin": 155232,
+    "time_end": 162341.79591836734,
+    "text_begin": 932,
+    "text_end": 974,
+    "pronounce_text_begin": 895,
+    "pronounce_text_end": 936
+  },
+  {
+    "text": "你把任务描述给它，让它生成一份包含角色、上下文、格式、约束的完整 prompt，然后立刻执行那个 prompt。",
+    "pronounce_text": "你把任务描述给它，让它生成一份包含角色、上下文、格式、约束的完整prompt，然后立刻执行那个prompt。",
+    "time_begin": 162541.79591836734,
+    "time_end": 173192.6349206349,
+    "text_begin": 974,
+    "text_end": 1030,
+    "pronounce_text_begin": 936,
+    "pronounce_text_end": 990
+  },
+  {
+    "text": "这是少数让 AI 自己来优化使用 AI 的环节。一开始你可能觉得绕，但一旦养成习惯，你 prompt 的平均质量会被它一次次地拉上去。",
+    "pronounce_text": "这是少数让AI自己来优化使用AI的环节。一开始你可能觉得绕，但一旦养成习惯，你prompt的平均质量会被它一次次地拉上去。",
+    "time_begin": 173340,
+    "time_end": 184118.54875283447,
+    "text_begin": 1030,
+    "text_end": 1097,
+    "pronounce_text_begin": 990,
+    "pronounce_text_end": 1051
+  },
+  {
+    "text": "每条 Claude 回复，默认都会先来一句你没要的话。\"好问题，让我帮你分解一下。\"或者把你刚才说的话重新复述一遍。或者一段免责声明。或者结尾再总结一遍它刚说过的东西。",
+    "pronounce_text": "每条Claude回复，默认都会先来一句你没要的话。\"好问题，让我帮你分解一下。\"或者把你刚才说的话重新复述一遍。或者一段免责声明。或者结尾再总结一遍它刚说过的东西。",
+    "time_begin": 184284,
+    "time_end": 200054.83900226757,
+    "text_begin": 1097,
+    "text_end": 1181,
+    "pronounce_text_begin": 1051,
+    "pronounce_text_end": 1133
+  },
+  {
+    "text": "你都没问。但它在那里。它在烧 token，也在烧你的时间。",
+    "pronounce_text": "你都没问。但它在那里。它在烧token，也在烧你的时间。",
+    "time_begin": 200196,
+    "time_end": 205599.12925170068,
+    "text_begin": 1181,
+    "text_end": 1210,
+    "pronounce_text_begin": 1133,
+    "pronounce_text_end": 1161
+  },
+  {
+    "text": "原作者给了一行规则，加进 Custom Instructions 就永久生效——\"永远不要用开场白、附和、或者重复我的问题开头。直接给答案。我没问就不要加结尾总结。除非话题真的需要，不要加免责声明。\"",
+    "pronounce_text": "原作者给了一行规则，加进Custom Instructions就永久生效。\"永远不要用开场白、附和、或者重复我的问题开头。直接给答案。我没问就不要加结尾总结。除非话题真的需要，不要加免责声明。\"",
+    "time_begin": 205740,
+    "time_end": 222404.80725623583,
+    "text_begin": 1210,
+    "text_end": 1310,
+    "pronounce_text_begin": 1161,
+    "pronounce_text_end": 1258
+  },
+  {
+    "text": "这是少数\"写一次、终身受益\"的设置。在这个 Project 里，它再也不出现。",
+    "pronounce_text": "这是少数\"写一次、终身受益\"的设置。在这个Project里，它再也不出现。",
+    "time_begin": 222552,
+    "time_end": 229487.6462585034,
+    "text_begin": 1310,
+    "text_end": 1349,
+    "pronounce_text_begin": 1258,
+    "pronounce_text_end": 1295
+  },
+  {
+    "text": "Claude 的默认是\"我觉得多写一点更稳\"。所以它写得啰嗦。",
+    "pronounce_text": "Claude的默认是\"我觉得多写一点更稳\"。所以它写得啰嗦。",
+    "time_begin": 229644,
+    "time_end": 234060.2811791383,
+    "text_begin": 1349,
+    "text_end": 1380,
+    "pronounce_text_begin": 1295,
+    "pronounce_text_end": 1325
+  },
+  {
+    "text": "加一句\"用三句话回答，最多\"——他给了一个让我惊讶的数字——大部分任务的 token 消耗会被砍掉百分之四十到六十，而你真正需要的价值一点没少。",
+    "pronounce_text": "加一句\"用三句话回答，最多\"。他给了一个让我惊讶的数字。大部分任务的token消耗会被砍掉百分之四十到六十，而你真正需要的价值一点没少。",
+    "time_begin": 234216,
+    "time_end": 247119.17460317462,
+    "text_begin": 1380,
+    "text_end": 1452,
+    "pronounce_text_begin": 1325,
+    "pronounce_text_end": 1393
+  },
+  {
+    "text": "但更重要的不是省钱。是省你的注意力。你读不完的那部分内容，本身就是噪声——它不光浪费 Claude 的输出能力，也在浪费你的接收能力。一句\"最多三句话\"同时优化了两端。",
+    "pronounce_text": "但更重要的不是省钱。是省你的注意力。你读不完的那部分内容，本身就是噪声。它不光浪费Claude的输出能力，也在浪费你的接收能力。一句\"最多三句话\"同时优化了两端。",
+    "time_begin": 247284,
+    "time_end": 262752.97959183675,
+    "text_begin": 1452,
+    "text_end": 1536,
+    "pronounce_text_begin": 1393,
+    "pronounce_text_end": 1474
+  },
+  {
+    "text": "如果你让 Claude 替你写东西，没给它你自己的样本，它就会用它自己的腔调写。结果就是那种\"语法都对、味道全错\"的 AI 文——你能闻到。",
+    "pronounce_text": "如果你让Claude替你写东西，没给它你自己的样本，它就会用它自己的腔调写。结果就是那种\"语法都对、味道全错\"的AI文。你能闻到。",
+    "time_begin": 262908,
+    "time_end": 274325.09750566893,
+    "text_begin": 1536,
+    "text_end": 1606,
+    "pronounce_text_begin": 1474,
+    "pronounce_text_end": 1539
+  },
+  {
+    "text": "正确的做法是给它三到五段你自己写过的东西，让它分析你的句长、节奏、用词偏好、你怎么开段怎么收段、你避免什么。然后告诉它，从今往后写任何东西，都按这个模式来。",
+    "pronounce_text": "正确的做法是给它三到五段你自己写过的东西，让它分析你的句长、节奏、用词偏好、你怎么开段怎么收段、你避免什么。然后告诉它，从今往后写任何东西，都按这个模式来。",
+    "time_begin": 274464,
+    "time_end": 290652.79818594106,
+    "text_begin": 1606,
+    "text_end": 1684,
+    "pronounce_text_begin": 1539,
+    "pronounce_text_end": 1617
+  },
+  {
+    "text": "但这里有一个我必须告诉你的代价：风格克隆克隆得了表层模式，克隆不了你的判断力。它能学会你怎么写，学不会你为什么这样写。所以克隆出来的稿子读起来像你，但说不出你会说的话。",
+    "pronounce_text": "但这里有一个我必须告诉你的代价：风格克隆克隆得了表层模式，克隆不了你的判断力。它能学会你怎么写，学不会你为什么这样写。所以克隆出来的稿子读起来像你，但说不出你会说的话。",
+    "time_begin": 290808,
+    "time_end": 307043.2380952381,
+    "text_begin": 1684,
+    "text_end": 1768,
+    "pronounce_text_begin": 1617,
+    "pronounce_text_end": 1701
+  },
+  {
+    "text": "它适合邮件、社媒草稿这种大量低决策的输出，**不适合代表你立场的核心稿件**。",
+    "pronounce_text": "它适合邮件、社媒草稿这种大量低决策的输出，不适合代表你立场的核心稿件。",
+    "time_begin": 307188,
+    "time_end": 313647.63718820864,
+    "text_begin": 1768,
+    "text_end": 1807,
+    "pronounce_text_begin": 1701,
+    "pronounce_text_end": 1736
+  },
+  {
+    "text": "原文里有两个看起来很像的 prompt，但作者把它们分到了两个完全不同的位置，我得跟你说清楚。",
+    "pronounce_text": "原文里有两个看起来很像的prompt，但作者把它们分到了两个完全不同的位置，我得跟你说清楚。",
+    "time_begin": 313812,
+    "time_end": 321432.6349206349,
+    "text_begin": 1807,
+    "text_end": 1854,
+    "pronounce_text_begin": 1736,
+    "pronounce_text_end": 1782
+  },
+  {
+    "text": "一个叫 sparring partner，让 Claude **攻击**你的方案——不是 critique，是 attack。找出每一个错误的假设、每一种失败可能、用最狠的角度反驳你。",
+    "pronounce_text": "一个叫sparring partner，让Claude，攻击，你的方案。不是critique，是attack。找出每一个错误的假设、每一种失败可能、用最狠的角度反驳你。",
+    "time_begin": 321588,
+    "time_end": 335350.31292517006,
+    "text_begin": 1854,
+    "text_end": 1946,
+    "pronounce_text_begin": 1782,
+    "pronounce_text_end": 1866
+  },
+  {
+    "text": "原话是\"不要客气、不要加限定，就攻击。\"",
+    "pronounce_text": "原话是\"不要客气、不要加限定，就攻击。\"",
+    "time_begin": 335550.31292517006,
+    "time_end": 339920.15419501136,
+    "text_begin": 1946,
+    "text_end": 1966,
+    "pronounce_text_begin": 1866,
+    "pronounce_text_end": 1886
+  },
+  {
+    "text": "另一个叫 thinking partner，让 Claude 在给建议之前，先提问、先理解你说的话、先反馈它听到了什么——然后才说它真正的想法。",
+    "pronounce_text": "另一个叫thinking partner，让Claude在给建议之前，先提问、先理解你说的话、先反馈它听到了什么。然后才说它真正的想法。",
+    "time_begin": 340092,
+    "time_end": 351590.36734693876,
+    "text_begin": 1966,
+    "text_end": 2038,
+    "pronounce_text_begin": 1886,
+    "pronounce_text_end": 1954
+  },
+  {
+    "text": "这两件事的差别，是**决策心态**。当你信心很足、要拍板了，叫 sparring partner，让它把你打醒。当你还在迷茫期，刚开始想一件事，叫 thinking partner，让它陪你把问题想清楚。",
+    "pronounce_text": "这两件事的差别，是，决策心态。当你信心很足、要拍板了，叫sparring partner，让它把你打醒。当你还在迷茫期，刚开始想一件事，叫thinking partner，让它陪你把问题想清楚。",
+    "time_begin": 351756,
+    "time_end": 368676.2267573696,
+    "text_begin": 2038,
+    "text_end": 2140,
+    "pronounce_text_begin": 1954,
+    "pronounce_text_end": 2051
+  },
+  {
+    "text": "用错了会出问题。脆弱期叫一个 sparring partner 上来，你不是被打醒，是被打垮。这个区分原作者写在那里了，但很多人不会去看，照搬第一个 prompt 就开始用。",
+    "pronounce_text": "用错了会出问题。脆弱期叫一个sparring partner上来，你不是被打醒，是被打垮。这个区分原作者写在那里了，但很多人不会去看，照搬第一个prompt就开始用。",
+    "time_begin": 368820,
+    "time_end": 381943.7641723356,
+    "text_begin": 2140,
+    "text_end": 2227,
+    "pronounce_text_begin": 2051,
+    "pronounce_text_end": 2134
+  },
+  {
+    "text": "如果你听完前面这些，会发现一个隐藏的共同点。",
+    "pronounce_text": "如果你听完前面这些，会发现一个隐藏的共同点。",
+    "time_begin": 382104,
+    "time_end": 386311.3015873016,
+    "text_begin": 2227,
+    "text_end": 2249,
+    "pronounce_text_begin": 2134,
+    "pronounce_text_end": 2156
+  },
+  {
+    "text": "\"让 Claude 反问你\"、\"让 Claude 帮你写 prompt\"、\"删掉 preamble\"、\"指定输出长度\"、\"换新话题就开新 chat\"——这些动作看起来很散，本质上都在做同一件事。",
+    "pronounce_text": "\"让Claude反问你\"、\"让Claude帮你写prompt\"、\"删掉preamble\"、\"指定输出长度\"、\"换新话题就开新chat\"。这些动作看起来很散，本质上都在做同一件事。",
+    "time_begin": 386460,
+    "time_end": 398852.33560090704,
+    "text_begin": 2249,
+    "text_end": 2346,
+    "pronounce_text_begin": 2156,
+    "pronounce_text_end": 2245
+  },
+  {
+    "text": "它们都在管理 Claude 看到的上下文：哪些信息要进来、哪些不要、用什么形式进来、不用的时候要怎么扔掉。",
+    "pronounce_text": "它们都在管理Claude看到的上下文：哪些信息要进来、哪些不要、用什么形式进来、不用的时候要怎么扔掉。",
+    "time_begin": 399024,
+    "time_end": 408432.5714285714,
+    "text_begin": 2346,
+    "text_end": 2399,
+    "pronounce_text_begin": 2245,
+    "pronounce_text_end": 2296
+  },
+  {
+    "text": "这件事有个名字，叫 Context Engineering。我们之前讲过 Anthropic 工程师怎么在百万行代码库里做 context engineering，那是基础设施层的玩法。",
+    "pronounce_text": "这件事有个名字，叫Context Engineering。我们之前讲过Anthropic工程师怎么在百万行代码库里做context engineering，那是基础设施层的玩法。",
+    "time_begin": 408600,
+    "time_end": 420098.36734693876,
+    "text_begin": 2399,
+    "text_end": 2492,
+    "pronounce_text_begin": 2296,
+    "pronounce_text_end": 2385
+  },
+  {
+    "text": "但这十八步，是 context engineering 在个人使用层的具象化——你也是在做 context engineering，只是大部分人没意识到自己在做。",
+    "pronounce_text": "但这十八步，是context engineering在个人使用层的具象化。你也是在做context engineering，只是大部分人没意识到自己在做。",
+    "time_begin": 420264,
+    "time_end": 429289.44217687077,
+    "text_begin": 2492,
+    "text_end": 2573,
+    "pronounce_text_begin": 2385,
+    "pronounce_text_end": 2462
+  },
+  {
+    "text": "而一旦你这么去看待它，原作者那句结论才真正落得下来：Claude 不是比你聪明，它没有比你更好的想法。它有的是无限耐心、广博知识、和从你没想过的角度切问题的能力。",
+    "pronounce_text": "而一旦你这么去看待它，原作者那句结论才真正落得下来：Claude不是比你聪明，它没有比你更好的想法。它有的是无限耐心、广博知识、和从你没想过的角度切问题的能力。",
+    "time_begin": 429444,
+    "time_end": 444146.7210884354,
+    "text_begin": 2573,
+    "text_end": 2654,
+    "pronounce_text_begin": 2462,
+    "pronounce_text_end": 2542
+  },
+  {
+    "text": "但前提是，你得让它**理解你**——理解你是谁、你要什么、什么时候该多说、什么时候该闭嘴。这件事一次性投入半小时设置好，剩下每一次会话都在收回报。",
+    "pronounce_text": "但前提是，你得让它，理解你。理解你是谁、你要什么、什么时候该多说、什么时候该闭嘴。这件事一次性投入半小时设置好，剩下每一次会话都在收回报。",
+    "time_begin": 444312,
+    "time_end": 458248.462585034,
+    "text_begin": 2654,
+    "text_end": 2727,
+    "pronounce_text_begin": 2542,
+    "pronounce_text_end": 2611
+  },
+  {
+    "text": "如果你今天只做一件事，做这一件：打开一个 Project，把\"永远不要用开场白和复述\"那一行规则写进 Custom Instructions。三十秒。然后这个 Project 之后所有的对话，你都会觉得清爽一截。",
+    "pronounce_text": "如果你今天只做一件事，做这一件：打开一个Project，把\"永远不要用开场白和复述\"那一行规则写进Custom Instructions。三十秒。然后这个Project之后所有的对话，你都会觉得清爽一截。",
+    "time_begin": 458388,
+    "time_end": 474832.21768707485,
+    "text_begin": 2727,
+    "text_end": 2833,
+    "pronounce_text_begin": 2611,
+    "pronounce_text_end": 2713
+  },
+  {
+    "text": "设一次，永久换掉你和 Claude 的工作方式。",
+    "pronounce_text": "设一次，永久换掉你和Claude的工作方式。",
+    "time_begin": 474984,
+    "time_end": 479702.1405895692,
+    "text_begin": 2833,
+    "text_end": 2857,
+    "pronounce_text_begin": 2713,
+    "pronounce_text_end": 2735
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 479844,
+    "time_end": 484689.85034013604,
+    "text_begin": 2857,
+    "text_end": 2884,
+    "pronounce_text_begin": 2735,
+    "pronounce_text_end": 2761
+  }
+]

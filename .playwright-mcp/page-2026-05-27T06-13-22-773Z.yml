@@ -1,0 +1,118 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: Don’t miss what’s happening
+      - generic [ref=e10]: People on X are the first to know.
+    - generic [ref=e13]:
+      - link "Log in" [ref=e15] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e18]: Log in
+      - link "Sign up" [ref=e20] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e23]: Sign up
+  - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+  - button "Skip to trending" [ref=e26] [cursor=pointer]
+  - banner [ref=e28]:
+    - generic [ref=e31]:
+      - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+        - link "X" [ref=e34]:
+          - /url: /
+          - img [ref=e36]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e39]:
+    - generic [ref=e42]:
+      - generic "Home timeline" [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e51] [cursor=pointer]:
+            - button "Back" [ref=e53]:
+              - img [ref=e55]
+            - heading "Post" [level=2] [ref=e60]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e62]:
+          - heading "Conversation" [level=1] [ref=e63]
+          - 'generic "Timeline: Conversation" [ref=e64]':
+            - progressbar [ref=e66]:
+              - img [ref=e68]
+      - generic "Trending" [ref=e75]:
+        - generic [ref=e76]:
+          - region "Sign up" [ref=e78]:
+            - heading "New to X?" [level=2] [ref=e80]:
+              - generic [ref=e81]: New to X?
+            - generic [ref=e82]: Sign up now to get your own personalized timeline!
+            - generic [ref=e83]:
+              - progressbar [ref=e84]:
+                - img [ref=e86]
+              - button "Sign up with Apple" [disabled] [ref=e89]:
+                - generic [ref=e90]:
+                  - img [ref=e91]
+                  - generic [ref=e95]: Sign up with Apple
+              - link "Create account" [ref=e96] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e99]: Create account
+            - generic [ref=e100]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e101] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e102] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e103] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e105]:
+            - heading "Relevant people" [level=2] [ref=e107]:
+              - generic [ref=e108]: Relevant people
+            - list [ref=e109]:
+              - listitem [ref=e110] [cursor=pointer]:
+                - generic [ref=e111]:
+                  - link [ref=e121]:
+                    - /url: /sairahul1
+                  - generic [ref=e124]:
+                    - generic [ref=e125]:
+                      - generic [ref=e127]:
+                        - link "Rahul Verified account" [ref=e129]:
+                          - /url: /sairahul1
+                          - generic [ref=e130]:
+                            - generic [ref=e132]: Rahul
+                            - img "Verified account" [ref=e135]
+                        - link "@sairahul1" [ref=e140]:
+                          - /url: /sairahul1
+                          - generic [ref=e142]: "@sairahul1"
+                      - button "Follow @sairahul1" [ref=e144]:
+                        - generic [ref=e147]: Follow
+                    - generic [ref=e148]: Building with AI. Sharing what's wild, what's practical, and what's next. Founder of NicheTrafficKit
+          - progressbar "Loading timeline" [ref=e151]:
+            - img [ref=e153]
+          - navigation "Footer" [ref=e157]:
+            - generic [ref=e158]:
+              - link "Terms of Service" [ref=e159] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e160]: "|"
+            - generic [ref=e161]:
+              - link "Privacy Policy" [ref=e162] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e163]: "|"
+            - generic [ref=e164]:
+              - link "Cookie Policy" [ref=e165] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e166]: "|"
+            - generic [ref=e167]:
+              - link "Accessibility" [ref=e168] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e169]: "|"
+            - generic [ref=e170]:
+              - link "Ads info" [ref=e171] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e172]: "|"
+            - button "More" [ref=e173] [cursor=pointer]:
+              - generic [ref=e174]:
+                - text: More
+                - img [ref=e175]
+            - generic [ref=e178]: © 2026 X Corp.

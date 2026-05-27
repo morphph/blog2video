@@ -1,0 +1,440 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: Don’t miss what’s happening
+      - generic [ref=e10]: People on X are the first to know.
+    - generic [ref=e13]:
+      - link "Log in" [ref=e15] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e18]: Log in
+      - link "Sign up" [ref=e20] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e23]: Sign up
+  - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+  - button "Skip to trending" [ref=e26] [cursor=pointer]
+  - banner [ref=e28]:
+    - generic [ref=e31]:
+      - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+        - link "X" [ref=e34]:
+          - /url: /
+          - img [ref=e36]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e39]:
+    - generic [ref=e42]:
+      - generic "Home timeline" [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e51] [cursor=pointer]:
+            - button "Back" [ref=e53]:
+              - img [ref=e55]
+            - heading "Article" [level=2] [ref=e176]
+            - link "Focus mode" [ref=e178]:
+              - /url: /anatolikopadze/article/2057813254617858078
+              - img [ref=e180]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e183]:
+          - heading "Conversation" [level=1] [ref=e184]
+          - 'generic "Timeline: Conversation" [ref=e185]':
+            - article "Anatoli Kopadze Verified account @AnatoliKopadze 36 replies, 200 reposts, 990 likes, 4751 bookmarks, 2605425 views" [ref=e190]:
+              - generic [ref=e192]:
+                - generic [ref=e196]:
+                  - link [active] [ref=e208] [cursor=pointer]:
+                    - /url: /AnatoliKopadze
+                  - generic [ref=e213]:
+                    - generic [ref=e216]:
+                      - link "Anatoli Kopadze Verified account" [ref=e219] [cursor=pointer]:
+                        - /url: /AnatoliKopadze
+                        - generic [ref=e220]:
+                          - generic [ref=e222]: Anatoli Kopadze
+                          - img "Verified account" [ref=e225]
+                      - link "@AnatoliKopadze" [ref=e231] [cursor=pointer]:
+                        - /url: /AnatoliKopadze
+                        - generic [ref=e232]: "@AnatoliKopadze"
+                    - button "More" [ref=e238] [cursor=pointer]:
+                      - img [ref=e242]
+                - generic [ref=e245]:
+                  - generic [ref=e246]:
+                    - link "Image" [ref=e252] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/article/2057813254617858078/media/2057813047784157184
+                      - generic "Image" [ref=e256]:
+                        - img "Image" [ref=e258]
+                    - generic [ref=e259]:
+                      - generic [ref=e261]: Claude Can Do All of This. Most People Have No Idea.
+                      - group "36 replies, 200 reposts, 990 likes, 4751 bookmarks, 2605425 views" [ref=e263]:
+                        - button "36 Replies. Reply" [ref=e265] [cursor=pointer]:
+                          - generic [ref=e266]:
+                            - img [ref=e269]
+                            - generic [ref=e274]: "36"
+                        - button "200 reposts. Repost" [ref=e276] [cursor=pointer]:
+                          - generic [ref=e277]:
+                            - img [ref=e280]
+                            - generic [ref=e285]: "200"
+                        - button "990 Likes. Like" [ref=e287] [cursor=pointer]:
+                          - generic [ref=e288]:
+                            - img [ref=e291]
+                            - generic [ref=e296]: "990"
+                        - link "2605425 views. View post analytics" [ref=e298] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/status/2057813254617858078/analytics
+                          - generic [ref=e299]:
+                            - img [ref=e302]
+                            - generic [ref=e307]: 2.6M
+                        - button "Bookmark" [ref=e309] [cursor=pointer]:
+                          - img [ref=e313]
+                        - button "Share post" [ref=e318] [cursor=pointer]:
+                          - img [ref=e322]
+                      - generic [ref=e330]:
+                        - separator [ref=e332]
+                        - generic [ref=e335]: Claude can do a lot more than most people think. This guide covers all of it - where to find each feature, how to turn it on, and a prompt you can use immediately.
+                        - generic [ref=e338]: Go through it, pick what fits your workflow, and set it up today. Each one takes minutes to set up and pays off every single day after that.
+                        - separator [ref=e340]
+                        - heading "Hidden features in regular Claude" [level=2] [ref=e342]:
+                          - generic [ref=e344]: Hidden features in regular Claude
+                        - generic [ref=e347]: 1. Projects - Claude that actually remembers you
+                        - generic [ref=e350]: Every time you open a new Claude chat, it starts from zero. It doesn't know your name, your work, your preferences - nothing. Most people accept this and re-explain themselves every single conversation.
+                        - generic [ref=e353]: Projects fix this. You create a project, upload your documents, write standing instructions - and Claude holds all of it permanently. Open it next week and it picks up exactly where you left off.
+                        - generic [ref=e356]: If you've never used Projects, this is the first thing to fix before anything else in this article.
+                        - separator [ref=e358]
+                        - link "Image" [ref=e365] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057565888023306240
+                          - generic "Image" [ref=e369]:
+                            - img "Image" [ref=e371]
+                        - separator [ref=e373]
+                        - generic [ref=e376]: Example project instructions - paste into the Project Instructions field
+                        - generic [ref=e379]:
+                          - button "Copy to clipboard" [ref=e382] [cursor=pointer]:
+                            - img [ref=e384]
+                          - code [ref=e388]: "You are my content research assistant. I run a newsletter about AI and crypto for a technical audience. Always assume my readers know the basics. Don't explain what an LLM is or what a blockchain is. When I share a topic or article, your job is to: 1. Identify the 3 most counterintuitive or surprising angles 2. Find connections to recent events I might have missed 3. Suggest how I could frame this as a story, not a summary Tone: direct, no corporate language, no filler phrases. Format: short paragraphs, no bullet points unless I ask. Never start a response with \"Great question\" or \"Certainly\"."
+                        - separator [ref=e390]
+                        - generic [ref=e393]: 2. Artifacts - working apps inside your chat
+                        - generic [ref=e396]: Many people think Claude can only produce text. It can't build anything real. That's wrong. Artifacts are when Claude builds something that actually works inside the chat. Not a block of code you have to copy somewhere - a live product in a side panel. A calculator, a habit tracker, a game, a dashboard with charts. You open it, click it, use it. Without leaving the conversation.
+                        - generic [ref=e399]: SVG graphics, interactive charts, Mermaid diagrams - all supported. Available on the free plan. Most people have never tried it.
+                        - separator [ref=e401]
+                        - generic [ref=e404]: Try this
+                        - generic [ref=e407]:
+                          - button "Copy to clipboard" [ref=e410] [cursor=pointer]:
+                            - img [ref=e412]
+                          - code [ref=e416]: "Build me a habit tracker as a working web app. I want to track 5 daily habits. Each day I can check them off. Show a 7-day streak counter for each habit. If I miss a day, the streak resets. Design: dark background, clean minimal look. Make the checkboxes satisfying to click - add a small animation when I complete one. The data should persist if I refresh the page."
+                        - separator [ref=e418]
+                        - generic [ref=e421]: 3. Adaptive Thinking - a different level of reasoning
+                        - generic [ref=e424]: Most Claude users have never turned this on. Extended Thinking is a mode where Claude reasons through a problem step by step before giving you an answer - and you can watch the entire process.
+                        - generic [ref=e427]: For simple questions, you don't need it. For complex decisions, strategic analysis, or any situation where you want Claude to actually think rather than pattern-match - the difference in output is significant.
+                        - generic [ref=e430]: Turn it on. Ask the same question you've been asking. Compare the answers.
+                        - separator [ref=e432]
+                        - link "Image" [ref=e439] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057564878143959040
+                          - generic "Image" [ref=e443]:
+                            - img "Image" [ref=e445]
+                        - separator [ref=e447]
+                        - generic [ref=e450]: Use this when facing a real decision
+                        - generic [ref=e453]:
+                          - button "Copy to clipboard" [ref=e456] [cursor=pointer]:
+                            - img [ref=e458]
+                          - code [ref=e462]: "I'm deciding between two options and I want you to think through this carefully before answering. Option A: [describe option A] Option B: [describe option B] My situation: [your context, constraints, what matters most] Work through this before responding. Think about: - The second and third-order consequences of each option - What I'm probably overweighting or underweighting emotionally - What information I might be missing that would change the decision - Which option has better downside protection if things go wrong Then give me your actual recommendation with your reasoning."
+                        - separator [ref=e464]
+                        - generic [ref=e467]: 4. Memory - Claude that knows who you are
+                        - generic [ref=e470]: With Memory on, Claude builds a profile of you over time. Your job, your projects, how you like to communicate, what you're currently working on.
+                        - generic [ref=e473]: Start a completely new chat and it already knows the context. You never introduce yourself again.
+                        - generic [ref=e476]: It's off by default. Most people don't know it exists
+                        - separator [ref=e478]
+                        - link "Image" [ref=e485] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057566793095409668
+                          - generic "Image" [ref=e489]:
+                            - img "Image" [ref=e491]
+                        - separator [ref=e493]
+                        - generic [ref=e496]:
+                          - button "Copy to clipboard" [ref=e499] [cursor=pointer]:
+                            - img [ref=e501]
+                          - code [ref=e505]: "I want you to remember the following about me so you don't need to ask again: My name is [name]. I work as [role] at [company or project]. My main focus right now is [what you're working on]. My audience or customers are [who they are]. When I ask for help, always assume this context unless I say otherwise. My preferred communication style: [direct / detailed / casual / formal]. Things I find annoying in responses: [e.g. bullet points, long intros, excessive caveats]. Save all of this to memory now."
+                        - separator [ref=e507]
+                        - heading "Give Claude a role - one prompt changes everything" [level=2] [ref=e509]:
+                          - generic [ref=e511]: Give Claude a role - one prompt changes everything
+                        - generic [ref=e514]: Claude doesn't have to be "an AI assistant." Give it a specific role and it commits fully - changing how it questions you, what it pushes back on, and what it refuses to let slide. Copy any prompt below and paste it at the start of a new chat.
+                        - generic [ref=e517]: 5. Personal psychologist
+                        - generic [ref=e520]: Most people use Claude as a validation machine. They describe a problem. Claude says that sounds hard and offers five bullet points of advice.
+                        - generic [ref=e523]: That's not how good therapy works. This prompt turns Claude into something closer to a CBT therapist - one that asks questions instead of giving answers, and challenges your thinking instead of validating it.
+                        - generic [ref=e526]: Useful for decisions you keep going back and forth on, anxiety you can't pin down, or any situation where you need a clear outside perspective.
+                        - separator [ref=e528]
+                        - generic [ref=e531]:
+                          - button "Copy to clipboard" [ref=e534] [cursor=pointer]:
+                            - img [ref=e536]
+                          - code [ref=e540]: "You are a cognitive behavioral therapist with 20 years of experience. I'm going to share something I'm struggling with. Your approach: - Don't give advice immediately. Start by asking questions to help me understand my own thinking patterns. - Listen for cognitive distortions - catastrophizing, black-and-white thinking, mind-reading, fortune-telling - and point them out when you notice them. - Ask one question at a time. Don't overwhelm me. - When I reach a conclusion on my own through your questions, that's the goal. Don't hand me the answer. - Be warm but honest. Don't validate me if my thinking is clearly distorted. - If I seem to be avoiding something important, name it directly. Don't start with a clinical introduction. Just ask me what's going on."
+                        - separator [ref=e542]
+                        - generic [ref=e545]: 6. The hard mentor
+                        - generic [ref=e548]: By default Claude agrees with you. It adds to your ideas, supports your reasoning, finds the positives. This is almost always the wrong thing.
+                        - generic [ref=e551]: This prompt disables that. Claude stops validating and starts stress-testing. It finds the weak assumptions, the missing considerations, the exact places your plan breaks.
+                        - generic [ref=e554]: It's uncomfortable. That's why it works.
+                        - separator [ref=e556]
+                        - generic [ref=e559]:
+                          - button "Copy to clipboard" [ref=e562] [cursor=pointer]:
+                            - img [ref=e564]
+                          - code [ref=e568]: "You are a brutally honest mentor. You've built and failed at multiple companies. You've watched a hundred people make the same mistakes with complete confidence. Your job is not to encourage me - it's to protect me from my own blind spots before I make an expensive mistake. Rules: - Disagree with me when you think I'm wrong. Be specific about why. - Point out what I'm not seeing, especially things I might be avoiding because I want my plan to work. - Ask hard questions I haven't thought to ask myself. - If something is a bad idea, say it's a bad idea. Don't balance it with \"on the other hand...\" - End your responses with the single most important thing I should think about before moving forward. I'm about to share an idea. Do not be kind about it."
+                        - separator [ref=e570]
+                        - generic [ref=e573]: 7. Personal trainer
+                        - generic [ref=e576]: Generic fitness advice is everywhere. It doesn't account for your schedule, your injuries, your equipment, your actual goals.
+                        - generic [ref=e579]: Give Claude your real numbers and it builds a real plan. Not a template. Not something you could find on any fitness website. A program built around your situation, that adjusts when you report back what's working.
+                        - separator [ref=e581]
+                        - generic [ref=e584]:
+                          - button "Copy to clipboard" [ref=e587] [cursor=pointer]:
+                            - img [ref=e589]
+                          - code [ref=e593]: "You are an expert personal trainer and sports nutritionist. I want you to build me a complete training program. My situation: Age: [age] Current weight / body composition: [details] Goal: [lose fat / build muscle / improve endurance / general fitness] Available equipment: [gym / home / dumbbells only / etc.] Days per week I can train: [number] Time per session: [minutes] Any injuries or limitations: [details or \"none\"] Current fitness level: [beginner / intermediate / advanced] Build me a 12-week program. Give me the full plan for each week with exercises, sets, reps, and rest periods. Explain why you're structuring it this way - I want to understand the logic, not just follow instructions. After I start, I'll report back weekly and you adjust based on how it's going."
+                        - separator [ref=e595]
+                        - generic [ref=e598]: 8. Practice a difficult conversation
+                        - generic [ref=e601]: Most people walk into hard conversations unprepared. They know what they want to say but not what the other person will actually say back.
+                        - generic [ref=e604]: Claude plays the other person. Realistically. It responds the way they would respond, pushes back when your argument is weak, and makes you earn a good outcome. After you practice a few times, the real conversation is easier.
+                        - separator [ref=e606]
+                        - generic [ref=e609]:
+                          - button "Copy to clipboard" [ref=e612] [cursor=pointer]:
+                            - img [ref=e614]
+                          - code [ref=e618]: "I need to prepare for a difficult conversation. I want you to roleplay as the other person so I can practice. The person: [describe who they are - boss, client, co-founder, etc.] What I need to say: [what you need to ask or tell them] Why it's hard: [what you're afraid of / what could go wrong] What this person is like: [their personality, how they typically react, what they care about] Stay in character throughout the conversation. Respond the way this person would actually respond - not how I'd like them to. If I say something weak or unconvincing, push back on it. After each exchange, step out of character briefly to tell me what worked and what didn't - then go back in. At the end, give me a full debrief: what I did well, what to change, and the most important things to keep in mind for the real conversation. Start in character. Wait for me to open."
+                        - separator [ref=e620]
+                        - generic [ref=e623]: 9. Devil's advocate
+                        - generic [ref=e626]: You've made up your mind. You've already thought through the objections. You're convinced.
+                        - generic [ref=e629]: That's exactly the moment to have Claude attack the decision. Not polite concerns. The full case against it. The three most realistic ways it fails. The things you're not seeing because you want it to work.
+                        - generic [ref=e632]: Five minutes now. Before you commit. Not after.
+                        - generic [ref=e635]:
+                          - button "Copy to clipboard" [ref=e638] [cursor=pointer]:
+                            - img [ref=e640]
+                          - code [ref=e644]: "I've made a decision and I want you to build the strongest possible case against it before I commit. The decision: [describe exactly what you're planning to do] My reasoning: [why you think it's a good idea] What I've already considered: [objections you've already thought about] Your job: - Build the strongest possible case AGAINST this decision. - Don't balance it with positives. I already believe in it - I need the counterargument. - Find the assumptions I'm making that could be wrong. - Describe the 3 most realistic ways this fails or backfires. - Tell me what I'm probably underestimating. - Tell me what I would need to believe for this to be a genuinely bad idea. Be ruthless. If this is a mistake, I need to know now."
+                        - separator [ref=e646]
+                        - heading "Product features most people don't know exist" [level=2] [ref=e648]:
+                          - generic [ref=e650]: Product features most people don't know exist
+                        - generic [ref=e653]: 10. Claude in Chrome - Claude that sees what you see
+                        - generic [ref=e656]: Most people use Claude in a separate tab and manually copy-paste what they need. That's the hard way.
+                        - generic [ref=e659]: Claude in Chrome is a browser extension that gives Claude full visibility into your active tab and the ability to act on it. It reads the page, clicks links, fills forms, navigates to new URLs. You describe the task in plain English and step away.
+                        - generic [ref=e662]: Search Claude for Chrome in the Chrome Web Store → install → sign in with your Claude account. Click the extension icon to open the sidebar. Claude can now see and interact with any page you have open.
+                        - separator [ref=e664]
+                        - generic [ref=e667]: Example task to give it
+                        - generic [ref=e670]:
+                          - button "Copy to clipboard" [ref=e673] [cursor=pointer]:
+                            - img [ref=e675]
+                          - code [ref=e679]: "I'm on this job listings page. Go through every listing visible and extract: job title, company name, salary range if shown, and the top 3 requirements. Build me a comparison table sorted by salary, highest first. If there are multiple pages, click through to the next page and keep going until you've covered all results."
+                        - separator [ref=e681]
+                        - generic [ref=e684]: 11. Claude Cowork - Claude that lives on your desktop
+                        - generic [ref=e687]: Claude on the web has no access to your computer. It can't see your files. You have to paste everything manually.
+                        - generic [ref=e690]: Cowork is a desktop app that gives Claude direct access to your file system. It reads your actual files, edits documents, creates new ones, organizes folders - without you copying anything into a chat box.
+                        - separator [ref=e692]
+                        - link "Image" [ref=e699] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057568461753085954
+                          - generic "Image" [ref=e703]:
+                            - img "Image" [ref=e705]
+                        - separator [ref=e707]
+                        - generic [ref=e710]: 12. Scheduled Tasks - Claude that works while you sleep
+                        - generic [ref=e713]: Most people treat Claude as something they have to activate. Open a chat, type a request, wait for output, close the tab.
+                        - generic [ref=e716]: Scheduled Tasks change that. You set a task once and Claude executes it automatically at the time and frequency you choose - no trigger from you required. Every morning. Every Monday. Every hour. Claude runs it and saves the output to your folder.
+                        - separator [ref=e718]
+                        - link "Image" [ref=e725] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057572362325807105
+                          - generic "Image" [ref=e729]:
+                            - img "Image" [ref=e731]
+                        - separator [ref=e733]
+                        - generic [ref=e736]: Example scheduled task description
+                        - generic [ref=e739]:
+                          - button "Copy to clipboard" [ref=e742] [cursor=pointer]:
+                            - img [ref=e744]
+                          - code [ref=e748]: "Every weekday morning at 7:30am, do the following: 1. Search for the top AI and crypto news from the last 24 hours 2. Pick the 5 most important stories - focus on things that are surprising, counterintuitive, or have real implications for builders and investors 3. For each story write: headline, 2-sentence summary, why it matters 4. Save the result as \"brief-[date].md\" in my /briefs folder Keep the tone direct and analytical. No fluff. Readable in 3 minutes."
+                        - separator [ref=e750]
+                        - generic [ref=e753]: 13. Skills in Cowork - install new capabilities like plugins
+                        - generic [ref=e756]: Skills are pre-built instruction sets that give Claude specific capabilities inside Cowork. Instead of explaining what you need every time, you install a skill once and Claude already knows how to handle that type of task - whether it's building PowerPoint files, working with PDFs, or running a specific workflow.
+                        - generic [ref=e758]:
+                          - generic [ref=e759]: Think of it like apps on a phone. The base phone works without them. But with the right apps installed, it does a lot more.
+                          - generic [ref=e760]: "How to find and install: Cowork → Customize → Skills to see what's installed. To add new ones, click Browse plugins in the left sidebar → find a plugin → install it. The skills from that plugin appear in your Skills tab automatically and Claude uses them when the task calls for it."
+                        - separator [ref=e762]
+                        - link "Image" [ref=e769] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057794241238061056
+                          - generic "Image" [ref=e773]:
+                            - img "Image" [ref=e775]
+                        - separator [ref=e777]
+                        - generic [ref=e780]: 14. CLAUDE.md - rules Claude reads automatically every session
+                        - generic [ref=e783]: In Cowork and Claude Code, you can create a CLAUDE.md file in your project folder. Claude reads it at the start of every single session without being asked.
+                        - generic [ref=e786]: Your coding conventions. Your writing style rules. Terminology that means something specific in your company. Brand voice guidelines. Write it once. Claude follows it across every session in that project forever.
+                        - separator [ref=e788]
+                        - generic [ref=e791]:
+                          - button "Copy to clipboard" [ref=e794] [cursor=pointer]:
+                            - img [ref=e796]
+                          - code [ref=e800]: "# Project: AI Newsletter ## About this project Weekly newsletter about AI and crypto for builders and investors. 35,000 subscribers. Tone is direct, analytical, occasionally irreverent. ## Writing rules - Short paragraphs. Max 3 sentences. - No bullet points in editorial content. Prose only. - No em dashes. Use hyphens or restructure the sentence. - Numbers beat adjectives. Write \"saves 3 hours\" not \"saves significant time\". - Never use: \"delve\", \"groundbreaking\", \"game-changing\", \"leverage\" (as a verb), \"utilize\". - Contractions are fine and encouraged. ## Content rules - Assume the reader knows what an LLM is. Don't explain basics. - Lead with the most surprising or counterintuitive thing. - Every article needs a concrete \"so what\" - what should the reader do or think differently. ## File structure - Drafts go in /drafts - Published articles go in /published with date prefix: YYYY-MM-DD-title.md - Research notes go in /research"
+                        - separator [ref=e802]
+                        - generic [ref=e805]: 15. Claude Code - AI that writes, tests, and fixes code in your terminal
+                        - generic [ref=e808]: Some people still don't know you can write code with Claude. Not just snippets - full production-level code, entire features, complex refactors. You describe what you need in plain English and Claude writes it.
+                        - generic [ref=e811]: Claude Code takes that one step further. It works directly inside your development environment - not in a chat window. It reads your actual codebase, writes new code, runs tests, reads the error messages, and fixes the bugs in a loop until the task is done.
+                        - generic [ref=e814]: It integrates with VS Code and JetBrains. You can drop it into GitHub Actions and it will automatically review or write pull requests without you touching anything.
+                        - separator [ref=e816]
+                        - link "Image" [ref=e823] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057789967431249920
+                          - generic "Image" [ref=e827]:
+                            - img "Image" [ref=e829]
+                        - separator [ref=e831]
+                        - generic [ref=e834]: 16. Claude Design - AI for visual work
+                        - generic [ref=e837]: Most people don't know this product exists. Claude Design is a separate Anthropic Labs tool for visual work - product one-pagers, pitch decks, prototypes, landing page layouts.
+                        - generic [ref=e840]: You describe what you need. Claude builds it. Exports to PPTX, Canva, PDF, or HTML. For people who aren't designers, it replaces a 3-hour Figma session with a 10-minute conversatio
+                        - generic [ref=e842]:
+                          - generic [ref=e843]: To get access, just head to
+                          - link "claude.ai/design" [ref=e845] [cursor=pointer]:
+                            - /url: //claude.ai/design
+                            - generic [ref=e846]: claude.ai/design
+                          - generic [ref=e847]: "- that's the direct link to Claude Design, no extra steps needed."
+                        - separator [ref=e849]
+                        - link "Image" [ref=e856] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/article/2057813254617858078/media/2057794854864715776
+                          - generic "Image" [ref=e860]:
+                            - img "Image" [ref=e862]
+                        - separator [ref=e864]
+                        - generic [ref=e867]: 17 Prompt Caching - 90% cost reduction on API calls (DEV)
+                        - generic [ref=e870]: For developers building on the Claude API. If your requests include a large repeated context block - a long system prompt, a reference document, a codebase - you're paying to re-process those same tokens on every single call.
+                        - generic [ref=e873]: Prompt Caching stores that content server-side. Subsequent calls reuse the cache instead of re-processing it. Up to 90% cost reduction on cached tokens. Noticeably faster responses. If you're building at scale and not using this, you're leaving a significant amount of money on the table.
+                        - generic [ref=e876]: "Add \"cache_control\": {\"type\": \"ephemeral\"} to the content block you want cached. Cache persists for 5 minutes and resets the timer on each use. Works for system prompts, large documents, and tool definitions."
+                        - separator [ref=e878]
+                        - generic [ref=e881]:
+                          - button "Copy to clipboard" [ref=e884] [cursor=pointer]:
+                            - img [ref=e886]
+                          - code [ref=e890]: "{ \"model\": \"claude-opus-4-6\", \"system\": [ { \"type\": \"text\", \"text\": \"[your large system prompt or reference document]\", \"cache_control\": {\"type\": \"ephemeral\"} } ], \"messages\": [ { \"role\": \"user\", \"content\": \"[user message - this changes each call]\" } ] } // System prompt gets cached after the first call. // Every subsequent call within 5 minutes reuses the cache. // Cache hit = 90% cheaper + faster response."
+                        - separator [ref=e892]
+                        - generic [ref=e895]: You now know more about Claude than most people who use it every day.
+                        - generic [ref=e898]: Pick one feature from this list. Just one. Set it up today. You don't need to implement everything at once - knowing what exists is already half the battle.
+                        - generic [ref=e901]: Come back to this article when you're ready for the next one.
+                      - status [ref=e903]:
+                        - generic [ref=e904]:
+                          - img [ref=e905]
+                          - generic [ref=e909]:
+                            - generic [ref=e910]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e911] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e915]:
+                    - link "1:18 PM · May 22, 2026" [ref=e917] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/status/2057813254617858078
+                      - time [ref=e918]: 1:18 PM · May 22, 2026
+                    - generic [ref=e919]: ·
+                    - link "2.6M Views" [ref=e920] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/status/2057813254617858078/analytics
+                      - generic [ref=e923]: 2.6M
+                      - generic [ref=e924]: Views
+                  - group "36 replies, 200 reposts, 990 likes, 4751 bookmarks, 2605425 views" [ref=e927]:
+                    - button "36 Replies. Reply" [ref=e929] [cursor=pointer]:
+                      - generic [ref=e930]:
+                        - img [ref=e933]
+                        - generic [ref=e938]: "36"
+                    - button "200 reposts. Repost" [ref=e940] [cursor=pointer]:
+                      - generic [ref=e941]:
+                        - img [ref=e944]
+                        - generic [ref=e949]: "200"
+                    - button "990 Likes. Like" [ref=e951] [cursor=pointer]:
+                      - generic [ref=e952]:
+                        - img [ref=e955]
+                        - generic [ref=e960]: "990"
+                    - button "4751 Bookmarks. Bookmark" [ref=e962] [cursor=pointer]:
+                      - generic [ref=e963]:
+                        - img [ref=e966]
+                        - generic [ref=e971]: 4.7K
+                    - button "Share post" [ref=e974] [cursor=pointer]:
+                      - img [ref=e978]
+                  - button "Read 36 replies" [ref=e981] [cursor=pointer]:
+                    - generic [ref=e982]:
+                      - img [ref=e983]
+                      - generic [ref=e987]: Read 36 replies
+      - generic "Trending" [ref=e72]:
+        - generic [ref=e73]:
+          - region "Sign up" [ref=e75]:
+            - heading "New to X?" [level=2] [ref=e77]:
+              - generic [ref=e78]: New to X?
+            - generic [ref=e79]: Sign up now to get your own personalized timeline!
+            - generic [ref=e80]:
+              - iframe [ref=e990]:
+                - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                  - generic [ref=f1e5]:
+                    - img [ref=f1e7]
+                    - generic [ref=f1e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e86] [cursor=pointer]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - generic [ref=e92]: Sign up with Apple
+              - link "Create account" [ref=e93] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e96]: Create account
+            - generic [ref=e97]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e98] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e99] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e100] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e102]:
+            - heading "Relevant people" [level=2] [ref=e104]:
+              - generic [ref=e105]: Relevant people
+            - list [ref=e106]:
+              - listitem [ref=e107] [cursor=pointer]:
+                - generic [ref=e108]:
+                  - link [ref=e118]:
+                    - /url: /AnatoliKopadze
+                  - generic [ref=e121]:
+                    - generic [ref=e122]:
+                      - generic [ref=e124]:
+                        - link "Anatoli Kopadze Verified account" [ref=e126]:
+                          - /url: /AnatoliKopadze
+                          - generic [ref=e127]:
+                            - generic [ref=e129]: Anatoli Kopadze
+                            - img "Verified account" [ref=e132]
+                        - link "@AnatoliKopadze" [ref=e137]:
+                          - /url: /AnatoliKopadze
+                          - generic [ref=e139]: "@AnatoliKopadze"
+                      - button "Follow @AnatoliKopadze" [ref=e141]:
+                        - generic [ref=e144]: Follow
+                    - generic [ref=e145]: Adapt or die
+          - region "Trending now" [ref=e991]:
+            - heading "Trending now" [level=1] [ref=e992]
+            - 'generic "Timeline: Trending now" [ref=e993]':
+              - generic [ref=e994]:
+                - heading "What’s happening" [level=2] [ref=e998]:
+                  - generic [ref=e999]: What’s happening
+                - link "BTS ARMY · Trending ARMY MEMBERSHIP PRESALE" [ref=e1002] [cursor=pointer]:
+                  - generic [ref=e1003]:
+                    - generic [ref=e1005]: BTS ARMY · Trending
+                    - generic [ref=e1006]: ARMY MEMBERSHIP PRESALE
+                - 'link "Trending in United States #BillyPlayList" [ref=e1009] [cursor=pointer]':
+                  - generic [ref=e1010]:
+                    - generic [ref=e1012]: Trending in United States
+                    - generic [ref=e1014]: "#BillyPlayList"
+                - link "Politics · Trending Al Green" [ref=e1017] [cursor=pointer]:
+                  - generic [ref=e1018]:
+                    - generic [ref=e1020]: Politics · Trending
+                    - generic [ref=e1021]: Al Green
+                - link "Gaming · Trending Zero Hour" [ref=e1024] [cursor=pointer]:
+                  - generic [ref=e1025]:
+                    - generic [ref=e1027]: Gaming · Trending
+                    - generic [ref=e1028]: Zero Hour
+                - link "Show more" [ref=e1031] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e1032]: Show more
+          - navigation "Footer" [ref=e154]:
+            - generic [ref=e155]:
+              - link "Terms of Service" [ref=e156] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e157]: "|"
+            - generic [ref=e158]:
+              - link "Privacy Policy" [ref=e159] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e160]: "|"
+            - generic [ref=e161]:
+              - link "Cookie Policy" [ref=e162] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e163]: "|"
+            - generic [ref=e164]:
+              - link "Accessibility" [ref=e165] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e166]: "|"
+            - generic [ref=e167]:
+              - link "Ads info" [ref=e168] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e169]: "|"
+            - button "More" [ref=e170] [cursor=pointer]:
+              - generic [ref=e171]:
+                - text: More
+                - img [ref=e172]
+            - generic [ref=e175]: © 2026 X Corp.

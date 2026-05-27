@@ -1,0 +1,437 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: Don’t miss what’s happening
+      - generic [ref=e10]: People on X are the first to know.
+    - generic [ref=e13]:
+      - link "Log in" [ref=e15] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e18]: Log in
+      - link "Sign up" [ref=e20] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e23]: Sign up
+  - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+  - button "Skip to trending" [ref=e26] [cursor=pointer]
+  - banner [ref=e28]:
+    - generic [ref=e31]:
+      - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+        - link "X" [ref=e34]:
+          - /url: /
+          - img [ref=e36]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e39]:
+    - generic [ref=e42]:
+      - generic "Home timeline" [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e51] [cursor=pointer]:
+            - button "Back" [ref=e53]:
+              - img [ref=e55]
+            - heading "Article" [level=2] [ref=e72]
+            - link "Focus mode" [ref=e74]:
+              - /url: /0xdepressionn/article/2055999112470839383
+              - img [ref=e76]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e62]:
+          - heading "Conversation" [level=1] [ref=e63]
+          - 'generic "Timeline: Conversation" [ref=e64]':
+            - article "Dep Verified account @0xDepressionn 47 replies, 324 reposts, 2485 likes, 13774 bookmarks, 4463496 views" [ref=e83]:
+              - generic [ref=e85]:
+                - generic [ref=e89]:
+                  - link [active] [ref=e101] [cursor=pointer]:
+                    - /url: /0xDepressionn
+                  - generic [ref=e106]:
+                    - generic [ref=e109]:
+                      - link "Dep Verified account" [ref=e112] [cursor=pointer]:
+                        - /url: /0xDepressionn
+                        - generic [ref=e113]:
+                          - generic [ref=e115]: Dep
+                          - img "Verified account" [ref=e118]
+                      - link "@0xDepressionn" [ref=e124] [cursor=pointer]:
+                        - /url: /0xDepressionn
+                        - generic [ref=e125]: "@0xDepressionn"
+                    - button "More" [ref=e131] [cursor=pointer]:
+                      - img [ref=e135]
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - link "Image" [ref=e145] [cursor=pointer]:
+                      - /url: /0xDepressionn/article/2055999112470839383/media/2055999018266759168
+                      - generic "Image" [ref=e149]:
+                        - img "Image" [ref=e151]
+                    - generic [ref=e152]:
+                      - generic [ref=e154]: "Karpathy's CLAUDE.md hit #1 on GitHub with 82,000 stars. Most devs still haven't read it."
+                      - group "47 replies, 324 reposts, 2485 likes, 13774 bookmarks, 4463496 views" [ref=e156]:
+                        - button "47 Replies. Reply" [ref=e158] [cursor=pointer]:
+                          - generic [ref=e159]:
+                            - img [ref=e162]
+                            - generic [ref=e167]: "47"
+                        - button "324 reposts. Repost" [ref=e169] [cursor=pointer]:
+                          - generic [ref=e170]:
+                            - img [ref=e173]
+                            - generic [ref=e178]: "324"
+                        - button "2485 Likes. Like" [ref=e180] [cursor=pointer]:
+                          - generic [ref=e181]:
+                            - img [ref=e184]
+                            - generic [ref=e189]: 2.4K
+                        - link "4463496 views. View post analytics" [ref=e191] [cursor=pointer]:
+                          - /url: /0xDepressionn/status/2055999112470839383/analytics
+                          - generic [ref=e192]:
+                            - img [ref=e195]
+                            - generic [ref=e200]: 4.4M
+                        - button "Bookmark" [ref=e202] [cursor=pointer]:
+                          - img [ref=e206]
+                        - button "Share post" [ref=e211] [cursor=pointer]:
+                          - img [ref=e215]
+                      - generic [ref=e223]:
+                        - 'heading "A file named CLAUDE.md hit #1 on GitHub Trending." [level=2] [ref=e225]':
+                          - generic [ref=e227]: "A file named CLAUDE.md hit #1 on GitHub Trending."
+                        - generic [ref=e230]: 82,000 stars. 7,800 forks.
+                        - generic [ref=e233]: It started with Andrej Karpathy. Former Director of AI at Tesla. Founding member of OpenAI. He identified 4 behaviors that make Claude Code fail and wrote them down in a single file.
+                        - generic [ref=e236]: A developer took those 4 rules, expanded them, published the file. It went viral..
+                        - generic [ref=e239]: "The reason: coding accuracy went from 65% to 94%."
+                        - generic [ref=e242]: Most developers using Claude Code daily have never set this up. They're starting from zero every session. Re-explaining the same context. Cleaning up unwanted scope changes. Reverting refactors nobody asked for.
+                        - generic [ref=e245]: This is the full file.
+                        - separator [ref=e247]
+                        - link "Image" [ref=e254] [cursor=pointer]:
+                          - /url: /0xDepressionn/article/2055999112470839383/media/2055992739129438209
+                          - generic "Image" [ref=e258]:
+                            - img "Image" [ref=e260]
+                        - separator [ref=e262]
+                        - heading "The setup most devs missed" [level=2] [ref=e264]:
+                          - generic [ref=e266]: The setup most devs missed
+                        - generic [ref=e269]: Every time you open Claude Code, it starts with nothing.
+                        - generic [ref=e272]: It doesn't know your stack. Your standards. Your project context. What you've already tried. What you explicitly decided not to do three sessions ago.
+                        - generic [ref=e275]: So it guesses. And when it guesses, it refactors code you didn't ask it to touch. It suggests frameworks that break your existing architecture. It deletes files without asking. It contradicts decisions you already made.
+                        - generic [ref=e278]: CLAUDE.md is a plain text file you place in your project root. Claude Code reads it automatically at the start of every session.
+                        - generic [ref=e281]: One setup. Zero repeated explanations. Three categories of expensive mistakes fixed.
+                        - separator [ref=e283]
+                        - 'heading "1 / 3 | DEFAULTS: $375/week you''re spending to repeat yourself" [level=2] [ref=e285]':
+                          - generic [ref=e287]: "1 / 3 | DEFAULTS: $375/week you're spending to repeat yourself"
+                        - generic [ref=e290]: The average developer spends 30 minutes per day re-explaining context to Claude.
+                        - generic [ref=e293]: Stack. Coding standards. Project background. What's already been tried. None of it persists between sessions unless you write it down once and let Claude read it every time.
+                        - generic [ref=e296]: "30 minutes per day at $150/hour developer rate: $375/week. Per developer."
+                        - generic [ref=e299]: "For a team of 5: $1,875/week gone."
+                        - separator [ref=e301]
+                        - link "Image" [ref=e308] [cursor=pointer]:
+                          - /url: /0xDepressionn/article/2055999112470839383/media/2055992995946631168
+                          - generic "Image" [ref=e312]:
+                            - img "Image" [ref=e314]
+                        - separator [ref=e316]
+                        - generic [ref=e319]: These 7 rules go at the top of your CLAUDE.md file.
+                        - generic [ref=e322]: "→ Kill the filler:"
+                        - generic [ref=e325]:
+                          - button "Copy to clipboard" [ref=e328] [cursor=pointer]:
+                            - img [ref=e330]
+                          - code [ref=e334]: Never open responses with filler phrases like "Great question!", "Of course!", "Certainly!", or similar warmups. Start every response with the actual answer. No preamble, no acknowledgment of the question.
+                        - generic [ref=e337]: "→ Match length to the task:"
+                        - generic [ref=e340]:
+                          - button "Copy to clipboard" [ref=e343] [cursor=pointer]:
+                            - img [ref=e345]
+                          - code [ref=e349]: Match response length to task complexity. Simple questions get direct, short answers. Complex tasks get full, detailed responses. Never pad responses with restatements of the question or closing sentences that repeat what you just said.
+                        - generic [ref=e352]: "→ Show options before acting:"
+                        - generic [ref=e355]:
+                          - button "Copy to clipboard" [ref=e358] [cursor=pointer]:
+                            - img [ref=e360]
+                          - code [ref=e364]: Before any significant task, show me 2-3 ways you could approach this work. Wait for me to choose before proceeding.
+                        - generic [ref=e367]: "→ Admit uncertainty before it costs me:"
+                        - generic [ref=e370]:
+                          - button "Copy to clipboard" [ref=e373] [cursor=pointer]:
+                            - img [ref=e375]
+                          - code [ref=e379]: "If you are uncertain about any fact, statistic, date, or piece of technical information: say so explicitly before including it. Never fill gaps in your knowledge with plausible-sounding information. When in doubt, say so."
+                        - generic [ref=e382]: "→ Who I am and what I know:"
+                        - generic [ref=e385]:
+                          - button "Copy to clipboard" [ref=e388] [cursor=pointer]:
+                            - img [ref=e390]
+                          - code [ref=e394]: "About me: [Name] / Role: [your role] / Background in: [areas]. Strong in: [what you know well]. Still learning: [gaps]. Adjust the depth of every response to match this. Never over-explain what I already know. Never skip context I need."
+                        - generic [ref=e397]: "→ Current project context:"
+                        - generic [ref=e400]:
+                          - button "Copy to clipboard" [ref=e403] [cursor=pointer]:
+                            - img [ref=e405]
+                          - code [ref=e409]: "What I'm working on: [project name] / Goal: [specific outcome] / Audience: [who uses this] / Stack context: [any relevant constraints] / What to avoid: [list]. Apply this context to every task. When something doesn't fit, flag it before proceeding."
+                        - generic [ref=e412]: "→ Lock your voice:"
+                        - generic [ref=e415]:
+                          - button "Copy to clipboard" [ref=e418] [cursor=pointer]:
+                            - img [ref=e420]
+                          - code [ref=e424]: "My writing style — always match this: [describe your voice] / Sentence length: [preference] / Words I use: [examples] / Words I never use: [examples] / Format: [prose or structured]. When writing anything on my behalf, match this exactly. Do not default to your own patterns."
+                        - blockquote [ref=e425]:
+                          - generic [ref=e427]: "Time spent re-explaining context per day: 30 min At $150/hour developer rate: $75/day Per week: $375/week per developer Team of 5: $1,875/week CLAUDE.md setup for this section: 45 minutes total"
+                        - generic [ref=e429]:
+                          - generic [ref=e430]: "mistake to avoid:"
+                          - generic [ref=e431]: "don't write your CLAUDE.md from scratch. Use this prompt first, then edit the output:"
+                        - generic [ref=e434]:
+                          - button "Copy to clipboard" [ref=e437] [cursor=pointer]:
+                            - img [ref=e439]
+                          - code [ref=e443]: "Based on what I've told you about myself, my project, and how I want to work: write me a complete CLAUDE.md file. Include: who I am, my tech context, my communication preferences, and default behaviors for every session. Be specific. Plain text. Under 500 words."
+                        - separator [ref=e445]
+                        - 'heading "2 / 3 | BEHAVIOR: the $150/hour changes you didn''t authorize" [level=2] [ref=e447]':
+                          - generic [ref=e449]: "2 / 3 | BEHAVIOR: the $150/hour changes you didn't authorize"
+                        - generic [ref=e452]: You ask Claude to fix one function.
+                        - generic [ref=e455]: It refactors three files, renames your variables, reorganizes imports, and rewrites comments you spent time crafting.
+                        - generic [ref=e458]: All without asking.
+                        - generic [ref=e461]: "1 hour to review and revert unwanted changes: $150. Three times a week: $450/week. Per developer."
+                        - generic [ref=e464]: "For a team of 5: $2,250/week spent cleaning up changes nobody authorized."
+                        - separator [ref=e466]
+                        - link "Image" [ref=e473] [cursor=pointer]:
+                          - /url: /0xDepressionn/article/2055999112470839383/media/2055993566896308224
+                          - generic "Image" [ref=e477]:
+                            - img "Image" [ref=e479]
+                        - separator [ref=e481]
+                        - generic [ref=e484]: These 7 rules go in the behavior section of your CLAUDE.md.
+                        - generic [ref=e487]: "→ Stay in scope:"
+                        - generic [ref=e490]:
+                          - button "Copy to clipboard" [ref=e493] [cursor=pointer]:
+                            - img [ref=e495]
+                          - code [ref=e499]: Only modify files, functions, and lines of code directly related to the current task. Do not refactor, rename, reorganize, reformat, or "improve" anything I did not explicitly ask you to change. If you notice something worth fixing elsewhere, mention it in a note at the end. Do not touch it. Ever.
+                        - generic [ref=e502]: "→ Ask before big changes:"
+                        - generic [ref=e505]:
+                          - button "Copy to clipboard" [ref=e508] [cursor=pointer]:
+                            - img [ref=e510]
+                          - code [ref=e514]: "Before making any change that significantly alters content I've already created (rewriting sections, removing paragraphs, restructuring flow, changing tone): stop. Describe exactly what you're about to change and why. Wait for my confirmation before proceeding."
+                        - generic [ref=e517]: "→ Confirm before anything destructive:"
+                        - generic [ref=e520]:
+                          - button "Copy to clipboard" [ref=e523] [cursor=pointer]:
+                            - img [ref=e525]
+                          - code [ref=e529]: "Before deleting any file, overwriting existing code, dropping database records, or removing dependencies: stop. List exactly what will be affected. Ask for explicit confirmation. Only proceed after I say yes in the current message. \"You mentioned this earlier\" is not confirmation."
+                        - generic [ref=e532]: "→ Hard stops for production:"
+                        - generic [ref=e535]:
+                          - button "Copy to clipboard" [ref=e538] [cursor=pointer]:
+                            - img [ref=e540]
+                          - code [ref=e544]: "The following require explicit in-session confirmation, no exceptions: deploying or pushing to any environment, running migrations or schema changes, sending any external API call, executing any command with irreversible side effects. I must say yes in the current message."
+                        - generic [ref=e547]: "→ Always show what changed:"
+                        - generic [ref=e550]:
+                          - button "Copy to clipboard" [ref=e553] [cursor=pointer]:
+                            - img [ref=e555]
+                          - code [ref=e559]: "After any coding task, end with: Files changed (list every file touched) / What was modified (one line per file) / Files intentionally not touched / Follow-up needed."
+                        - generic [ref=e562]: "→ Never act without explicit confirmation:"
+                        - generic [ref=e565]:
+                          - button "Copy to clipboard" [ref=e568] [cursor=pointer]:
+                            - img [ref=e570]
+                          - code [ref=e574]: Never send, post, publish, share, or schedule anything on my behalf without my explicit confirmation in the current message. This includes emails, calendar invites, document shares, or any action outside this conversation. I must say yes in the current message.
+                        - generic [ref=e577]: "→ Think before you write code:"
+                        - generic [ref=e580]:
+                          - button "Copy to clipboard" [ref=e583] [cursor=pointer]:
+                            - img [ref=e585]
+                          - code [ref=e589]: "For any task involving architecture decisions, debugging complex issues, or non-trivial features: work through the problem step by step before writing any code. Show your reasoning. Identify where you're uncertain. Then implement."
+                        - blockquote [ref=e590]:
+                          - generic [ref=e592]: "1 hour/week reverting unwanted scope changes: $150/week 30 min/week doing manual diffs after each task: $75/week Total behavior-related waste per developer: $225/week Team of 5: $1,125/week CLAUDE.md behavior section setup: 30 minutes"
+                        - separator [ref=e594]
+                        - 'heading "3 / 3 | MEMORY + STACK: the setup that makes Claude Code actually reliable" [level=2] [ref=e596]':
+                          - generic [ref=e598]: "3 / 3 | MEMORY + STACK: the setup that makes Claude Code actually reliable"
+                        - generic [ref=e601]: Claude forgets everything between sessions.
+                        - generic [ref=e604]: Every decision you made. Every approach that failed. The reason you chose Prisma over Drizzle six months ago. The constraint that exists because of a specific client requirement.
+                        - generic [ref=e607]: It forgets. Then it suggests exactly what you already ruled out.
+                        - generic [ref=e610]: This section gives Claude the closest thing to real memory that currently exists. And locks your tech stack so it stops proposing tools that break your existing architecture.
+                        - separator [ref=e612]
+                        - link "Image" [ref=e619] [cursor=pointer]:
+                          - /url: /0xDepressionn/article/2055999112470839383/media/2055993933180669952
+                          - generic "Image" [ref=e623]:
+                            - img "Image" [ref=e625]
+                        - separator [ref=e627]
+                        - generic [ref=e630]: "→ MEMORY.md decision log:"
+                        - generic [ref=e633]:
+                          - button "Copy to clipboard" [ref=e636] [cursor=pointer]:
+                            - img [ref=e638]
+                          - code [ref=e642]: "Maintain a file called MEMORY.md in this project. After any significant decision, add an entry: What was decided / Why / What was rejected and why. Read MEMORY.md at the start of every session. Never contradict a logged decision without flagging it first."
+                        - generic [ref=e645]: "→ Session end summary:"
+                        - generic [ref=e648]:
+                          - button "Copy to clipboard" [ref=e651] [cursor=pointer]:
+                            - img [ref=e653]
+                          - code [ref=e657]: "When I say \"session end\", \"wrapping up\", or \"let's stop here\": write a session summary to MEMORY.md. Include: Worked on / Completed / In progress / Decisions made / Next session priorities."
+                        - generic [ref=e660]: "→ ERRORS.md failure log:"
+                        - generic [ref=e663]:
+                          - button "Copy to clipboard" [ref=e666] [cursor=pointer]:
+                            - img [ref=e668]
+                          - code [ref=e672]: "Maintain a file called ERRORS.md. When an approach takes more than 2 attempts to work, log it: What didn't work / What worked instead / Note for next time. Check ERRORS.md before suggesting approaches to similar tasks."
+                        - generic [ref=e675]: "→ Permanent facts list:"
+                        - generic [ref=e678]:
+                          - button "Copy to clipboard" [ref=e681] [cursor=pointer]:
+                            - img [ref=e683]
+                          - code [ref=e687]: "These facts are always true for this project. Apply them to every session without exception: [your permanent constraints, architectural decisions, and rules]. If any task conflicts with one of these, flag it before proceeding."
+                        - generic [ref=e690]: "→ Lock your tech stack:"
+                        - generic [ref=e693]:
+                          - button "Copy to clipboard" [ref=e696] [cursor=pointer]:
+                            - img [ref=e698]
+                          - code [ref=e702]: "Tech stack for this project. Always use these. Never suggest alternatives unless I ask: Language: [e.g. TypeScript] Framework: [e.g. Next.js 14] Package manager: [e.g. pnpm] Database: [e.g. PostgreSQL with Prisma] Testing: [e.g. Vitest] Styling: [e.g. Tailwind CSS] If something seems like the wrong tool, flag it. But use the defined stack unless I explicitly say otherwise."
+                        - generic [ref=e705]: "→ Extended Thinking for hard decisions:"
+                        - generic [ref=e708]:
+                          - button "Copy to clipboard" [ref=e711] [cursor=pointer]:
+                            - img [ref=e713]
+                          - code [ref=e717]: "For questions involving system architecture, performance tradeoffs, database design, or long-term technical decisions: use extended thinking mode. Work through the problem step by step. Surface tradeoffs I haven't considered. Flag assumptions that might not hold at scale. Then give your recommendation."
+                        - generic [ref=e720]: "→ The 4 rules that went viral:"
+                        - generic [ref=e723]: Karpathy identified 4 behaviors that make Claude Code fail. A developer distilled them into these 4 lines. Coding accuracy went from 65% to 94%.
+                        - generic [ref=e726]:
+                          - button "Copy to clipboard" [ref=e729] [cursor=pointer]:
+                            - img [ref=e731]
+                          - code [ref=e735]: 1. Ask, don't assume. If something is unclear, ask before writing a single line. Never make silent assumptions about intent, architecture, or requirements. 2. Simplest solution first. Always implement the simplest thing that could work. Do not add abstractions or flexibility that weren't explicitly requested. 3. Don't touch unrelated code. If a file or function is not directly part of the current task, do not modify it, even if you think it could be improved. 4. Flag uncertainty explicitly. If you are not confident about an approach or technical detail, say so before proceeding. Confidence without certainty causes more damage than admitting a gap.
+                        - blockquote [ref=e736]:
+                          - generic [ref=e738]: "2 hours/week recovering from forgotten decisions and wrong suggestions: $300/week per dev Wrong stack recommendations and incompatible tools: $75/week Total memory-related waste per developer: $375/week Team of 5: $1,875/week MEMORY.md + ERRORS.md + stack setup: 20 minutes"
+                        - separator [ref=e740]
+                        - heading "CONCLUSION" [level=2] [ref=e742]:
+                          - generic [ref=e744]: CONCLUSION
+                        - generic [ref=e747]: Here's the full math.
+                        - blockquote [ref=e748]:
+                          - generic [ref=e749]:
+                            - generic [ref=e750]: $375/week re-explaining context every session $225/week reverting unauthorized changes $375/week recovering from forgotten decisions
+                            - generic [ref=e751]: "Total waste per developer: $975/week"
+                        - blockquote [ref=e752]:
+                          - generic [ref=e753]:
+                            - generic [ref=e754]: "Team of 5 developers: $4,875/week"
+                            - generic [ref=e756]: "Per year: $253,500"
+                        - blockquote [ref=e757]:
+                          - generic [ref=e759]: "CLAUDE.md setup: 2 hours total Karpathy's 4 rules alone: 65% to 94% coding accuracy"
+                        - generic [ref=e762]: One plain text file. 21 rules. Two hours of work.
+                        - generic [ref=e765]: The developers who set this up are working with a version of Claude that remembers decisions, stays in scope, confirms before destroying anything, never suggests a framework that breaks your architecture.
+                        - generic [ref=e768]: The ones who haven't are spending $975/week to repeat themselves.
+                        - separator [ref=e770]
+                        - generic [ref=e773]: p.s. start with Karpathy's 4 rules. just those 4. paste them into a new file called CLAUDE.md in your project root right now. it takes 2 minutes. add the rest one week at a time as you notice what's missing.
+                        - generic [ref=e776]: Bookmark this before it gets buried. If this was useful, share it with one person who needs it.
+                      - status [ref=e778]:
+                        - generic [ref=e779]:
+                          - img [ref=e780]
+                          - generic [ref=e784]:
+                            - generic [ref=e785]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e786] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e790]:
+                    - link "1:09 PM · May 17, 2026" [ref=e792] [cursor=pointer]:
+                      - /url: /0xDepressionn/status/2055999112470839383
+                      - time [ref=e793]: 1:09 PM · May 17, 2026
+                    - generic [ref=e794]: ·
+                    - link "4.4M Views" [ref=e795] [cursor=pointer]:
+                      - /url: /0xDepressionn/status/2055999112470839383/analytics
+                      - generic [ref=e798]: 4.4M
+                      - generic [ref=e799]: Views
+                  - group "47 replies, 324 reposts, 2485 likes, 13774 bookmarks, 4463496 views" [ref=e802]:
+                    - button "47 Replies. Reply" [ref=e804] [cursor=pointer]:
+                      - generic [ref=e805]:
+                        - img [ref=e808]
+                        - generic [ref=e813]: "47"
+                    - button "324 reposts. Repost" [ref=e815] [cursor=pointer]:
+                      - generic [ref=e816]:
+                        - img [ref=e819]
+                        - generic [ref=e824]: "324"
+                    - button "2485 Likes. Like" [ref=e826] [cursor=pointer]:
+                      - generic [ref=e827]:
+                        - img [ref=e830]
+                        - generic [ref=e835]: 2.4K
+                    - button "13774 Bookmarks. Bookmark" [ref=e837] [cursor=pointer]:
+                      - generic [ref=e838]:
+                        - img [ref=e841]
+                        - generic [ref=e846]: 13K
+                    - button "Share post" [ref=e849] [cursor=pointer]:
+                      - img [ref=e853]
+                  - button "Read 47 replies" [ref=e856] [cursor=pointer]:
+                    - generic [ref=e857]:
+                      - img [ref=e858]
+                      - generic [ref=e862]: Read 47 replies
+      - generic "Trending" [ref=e866]:
+        - generic [ref=e867]:
+          - region "Sign up" [ref=e869]:
+            - heading "New to X?" [level=2] [ref=e871]:
+              - generic [ref=e872]: New to X?
+            - generic [ref=e873]: Sign up now to get your own personalized timeline!
+            - generic [ref=e874]:
+              - iframe [ref=e877]:
+                - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                  - generic [ref=f1e5]:
+                    - img [ref=f1e7]
+                    - generic [ref=f1e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e878] [cursor=pointer]:
+                - generic [ref=e879]:
+                  - img [ref=e880]
+                  - generic [ref=e884]: Sign up with Apple
+              - link "Create account" [ref=e885] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e888]: Create account
+            - generic [ref=e889]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e890] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e891] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e892] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e894]:
+            - heading "Relevant people" [level=2] [ref=e896]:
+              - generic [ref=e897]: Relevant people
+            - list [ref=e898]:
+              - listitem [ref=e899] [cursor=pointer]:
+                - generic [ref=e900]:
+                  - link [ref=e910]:
+                    - /url: /0xDepressionn
+                  - generic [ref=e913]:
+                    - generic [ref=e914]:
+                      - generic [ref=e916]:
+                        - link "Dep Verified account" [ref=e918]:
+                          - /url: /0xDepressionn
+                          - generic [ref=e919]:
+                            - generic [ref=e921]: Dep
+                            - img "Verified account" [ref=e924]
+                        - link "@0xDepressionn" [ref=e929]:
+                          - /url: /0xDepressionn
+                          - generic [ref=e931]: "@0xDepressionn"
+                      - button "Follow @0xDepressionn" [ref=e933]:
+                        - generic [ref=e936]: Follow
+                    - generic [ref=e937]:
+                      - text: meow, Co-Founder
+                      - link "@voxlyink" [ref=e940]:
+                        - /url: /voxlyink
+          - region "Trending now" [ref=e942]:
+            - heading "Trending now" [level=1] [ref=e943]
+            - 'generic "Timeline: Trending now" [ref=e944]':
+              - generic [ref=e945]:
+                - heading "What’s happening" [level=2] [ref=e949]:
+                  - generic [ref=e950]: What’s happening
+                - link "Gaming · Trending Witch Queen" [ref=e953] [cursor=pointer]:
+                  - generic [ref=e954]:
+                    - generic [ref=e956]: Gaming · Trending
+                    - generic [ref=e957]: Witch Queen
+                - 'link "Trending in United States #BillyPlayList" [ref=e960] [cursor=pointer]':
+                  - generic [ref=e961]:
+                    - generic [ref=e963]: Trending in United States
+                    - generic [ref=e965]: "#BillyPlayList"
+                - link "Politics · Trending Al Green" [ref=e968] [cursor=pointer]:
+                  - generic [ref=e969]:
+                    - generic [ref=e971]: Politics · Trending
+                    - generic [ref=e972]: Al Green
+                - link "BTS ARMY · Trending ARMY MEMBERSHIP PRESALE" [ref=e975] [cursor=pointer]:
+                  - generic [ref=e976]:
+                    - generic [ref=e978]: BTS ARMY · Trending
+                    - generic [ref=e979]: ARMY MEMBERSHIP PRESALE
+                - link "Show more" [ref=e982] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e983]: Show more
+          - navigation "Footer" [ref=e985]:
+            - generic [ref=e986]:
+              - link "Terms of Service" [ref=e987] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e988]: "|"
+            - generic [ref=e989]:
+              - link "Privacy Policy" [ref=e990] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e991]: "|"
+            - generic [ref=e992]:
+              - link "Cookie Policy" [ref=e993] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e994]: "|"
+            - generic [ref=e995]:
+              - link "Accessibility" [ref=e996] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e997]: "|"
+            - generic [ref=e998]:
+              - link "Ads info" [ref=e999] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e1000]: "|"
+            - button "More" [ref=e1001] [cursor=pointer]:
+              - generic [ref=e1002]:
+                - text: More
+                - img [ref=e1003]
+            - generic [ref=e1006]: © 2026 X Corp.

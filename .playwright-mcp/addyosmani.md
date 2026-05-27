@@ -1,0 +1,433 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /addyosmani/article/2053231239721885918
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Addy Osmani Verified account @addyosmani 83 replies, 565 reposts, 3339 likes, 7949 bookmarks, 832955 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /addyosmani
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Addy Osmani Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /addyosmani
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Addy Osmani
+                          - img "Verified account" [ref=e116]
+                      - link "@addyosmani" [ref=e122] [cursor=pointer]:
+                        - /url: /addyosmani
+                        - generic [ref=e123]: "@addyosmani"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /addyosmani/article/2053231239721885918/media/2053229485047369728
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: Agent Harness Engineering
+                      - group "83 replies, 565 reposts, 3339 likes, 7949 bookmarks, 832955 views" [ref=e154]:
+                        - button "83 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "83"
+                        - button "565 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: "565"
+                        - button "3339 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: 3.3K
+                        - link "832955 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /addyosmani/status/2053231239721885918/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 832K
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - generic [ref=e224]: A coding agent is the model plus everything built around it. Harness engineering treats that scaffolding as a living artifact, tightening it every time the agent makes a mistake.
+                        - generic [ref=e227]: "Simply put: whenever an agent fails, you engineer a permanent solution so it never makes that exact mistake again."
+                        - generic [ref=e230]: "For the last two years, the industry has debated models: which is the smartest, which writes the cleanest React, or which hallucinates the least. While that conversation matters, it misses the other half of the system."
+                        - generic [ref=e232]:
+                          - generic [ref=e233]: The model is merely one input into a running agent. The rest is the
+                          - generic [ref=e234]: harness
+                          - generic [ref=e235]: ": the prompts, tools, context policies, hooks, sandboxes, subagents, feedback loops, and recovery paths wrapped around the model so it can actually complete tasks."
+                        - generic [ref=e237]:
+                          - generic [ref=e238]: A decent model with a great harness consistently beats a great model with a bad harness.
+                          - generic [ref=e239]: Increasingly, the most interesting engineering work isn't in selecting the model, but in designing the scaffolding around it.
+                        - generic [ref=e241]:
+                          - generic [ref=e242]: That discipline now has a name.
+                          - link "@Vtrivedy10" [ref=e244] [cursor=pointer]:
+                            - /url: https://x.com/@Vtrivedy10
+                            - generic [ref=e245]: "@Vtrivedy10"
+                          - generic [ref=e246]: coined the term
+                          - generic [ref=e247]: harness engineering
+                          - generic [ref=e248]: ", providing a clean breakdown of what a harness actually is and why each piece exists. Other industry voices like"
+                          - link "@dexhorthy" [ref=e250] [cursor=pointer]:
+                            - /url: https://x.com/@dexhorthy
+                            - generic [ref=e251]: "@dexhorthy"
+                          - generic [ref=e252]: tracking emergent patterns, HumanLayer framing agent failures as configuration "skill issues" Anthropic's engineering team publishing guides on long-running app design, and Birgitta Böckeler exploring the user-side experience - are all convergng on roughly the same idea.
+                        - generic [ref=e255]: This post pulls those threads together.
+                        - heading "What is a Harness, Really?" [level=2] [ref=e257]:
+                          - generic [ref=e259]: What is a Harness, Really?
+                        - generic [ref=e262]: "Trivedy's core definition does most of the heavy lifting:"
+                        - blockquote [ref=e263]:
+                          - generic [ref=e264]:
+                            - generic [ref=e265]: Agent = Model + Harness.
+                            - generic [ref=e266]: If you're not the model, you're the harness.
+                        - generic [ref=e269]: A harness encompasses every piece of code, configuration, and execution logic that isn't the model itself. A raw model is not an agent. It only becomes one when a harness provides it with state, tool execution, feedback loops, and enforceable constraints.
+                        - link "Image" [ref=e276] [cursor=pointer]:
+                          - /url: /addyosmani/article/2053231239721885918/media/2053229744259469312
+                          - generic "Image" [ref=e280]:
+                            - img "Image" [ref=e282]
+                        - generic [ref=e285]: "Concretely, a harness includes:"
+                        - list [ref=e286]:
+                          - listitem [ref=e287]:
+                            - generic [ref=e289]: System prompts, CLAUDE.md, AGENTS.md, skill files, and subagent instructions.
+                          - listitem [ref=e290]:
+                            - generic [ref=e292]: Tools, skills, MCP servers, and their technical descriptions.
+                          - listitem [ref=e293]:
+                            - generic [ref=e295]: Bundled infrastructure, such as the filesystem, sandboxes, and headless browsers.
+                          - listitem [ref=e296]:
+                            - generic [ref=e298]: Orchestration logic for spawning subagents, handling handoffs, and routing models.
+                          - listitem [ref=e299]:
+                            - generic [ref=e301]: Hooks and middleware for deterministic execution, like lint checks or context compaction.
+                          - listitem [ref=e302]:
+                            - generic [ref=e304]: Observability tools for logs, traces, cost, and latency metering.
+                        - generic [ref=e307]: At its core, an agent is a system that runs tools in a loop to achieve a goal. The real skill lies in designing both the tools and that loop.
+                        - generic [ref=e309]:
+                          - generic [ref=e310]: While this represents a massive surface area, it is
+                          - generic [ref=e311]: your
+                          - generic [ref=e312]: surface area, not the model provider's. Claude Code, Cursor, Codex, Aider, and Cline are all harnesses.
+                          - generic [ref=e313]: The underlying model might be identical across platforms, but the behavior you experience is dominated by the harness.
+                        - heading "Let's reframe the \"skill Issue\"" [level=2] [ref=e315]:
+                          - generic [ref=e317]: Let's reframe the "skill Issue"
+                        - generic [ref=e320]: It is common to see engineers blame the model when an agent does something nonsensical, often filing the problem away as something to "wait for the next version" to fix.
+                        - generic [ref=e322]:
+                          - generic [ref=e323]: The harness-engineering mindset rejects this default. Failures are usually somewhat legible.
+                          - generic [ref=e324]: If the agent ignored a convention, add it to AGENTS.md.
+                          - generic [ref=e325]: If it ran a destructive command, write a hook to block it. If it got lost in a 40-step task, split the architecture into a planner and an executor. If it consistently finishes with broken code, wire a type-checking back-pressure signal into the loop.
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: "As HumanLayer puts it:"
+                          - generic [ref=e329]: "\"It's not a model problem. It's a configuration problem.\""
+                          - generic [ref=e330]: "Consider performance benchmarks: a leading model running inside an off-the-shelf framework often scores drastically lower than the exact same model running in a custom, highly-tuned harness. Moving a model into an environment with better codebase tools, tighter prompts, and sharper back-pressure can unlock capabilities the original setup left behind."
+                        - generic [ref=e333]: The gap between what today's models can theoretically do and what you actually see them doing is largely a harness gap.
+                        - 'heading "The Ratchet: Every mistake becomes a rule" [level=2] [ref=e335]':
+                          - generic [ref=e337]: "The Ratchet: Every mistake becomes a rule"
+                        - generic [ref=e340]: The most vital habit in harness engineering is treating agent mistakes as permanent signals - not one-off flukes to retry and forget.
+                        - generic [ref=e343]: "If an agent ships a PR with a commented-out test that gets merged by accident, that is an input. The next iteration of AGENTS.md must state: \"Never comment out tests; delete or fix them.\" The next pre-commit hook should automatically flag .skip( in the diff. The reviewer subagent must be updated to block commented-out tests."
+                        - generic [ref=e345]:
+                          - generic [ref=e346]: Constraints should only be added when you observe a real failure, and removed only when a capable model renders them redundant.
+                          - generic [ref=e347]: Every line in a good system prompt should trace back to a specific, historical failure.
+                        - generic [ref=e351]: Because of this, harness engineering is a discipline rather than a one-size-fits-all framework. The right harness for a specific codebase is entirely shaped by its unique failure history.
+                        - heading "Working backwards from behavior" [level=2] [ref=e353]:
+                          - generic [ref=e355]: Working backwards from behavior
+                        - generic [ref=e357]:
+                          - generic [ref=e358]: "The most effective way to design a harness is to start with the desired behavior and build the component that delivers it:"
+                          - generic [ref=e359]: Behavior we want → Harness design to achieve it.
+                        - generic [ref=e361]:
+                          - generic [ref=e362]: Every piece of the harness must have a distinct job.
+                          - generic [ref=e363]: If you cannot name the specific behavior a component exists to deliver, it should be removed.
+                        - link "Image" [ref=e370] [cursor=pointer]:
+                          - /url: /addyosmani/article/2053231239721885918/media/2053229933686919168
+                          - generic "Image" [ref=e374]:
+                            - img "Image" [ref=e376]
+                        - generic [ref=e379]: Filesystem and Git - durable state
+                        - generic [ref=e382]: The filesystem is foundational. Models can only operate on what fits in their context window. A filesystem provides a workspace to read data, a place to offload intermediate work, and a surface for multiple agents to coordinate.
+                        - generic [ref=e385]: Adding Git provides free versioning, allowing the agent to track progress, branch experiments, and roll back errors.
+                        - generic [ref=e388]: "Bash and Code Execution: general-purpose tooling"
+                        - generic [ref=e391]: "Most agents operate on a ReAct loop: reason, act via a tool call, observe, repeat. Instead of pre-building a tool for every conceivable action, giving the agent bash access allows it to build what it needs on the fly."
+                        - generic [ref=e394]: Agents generally excel at shell commands, making bash and code execution the default strategy for autonomous problem-solving.
+                        - generic [ref=e397]: Sandboxes and Default Tooling
+                        - generic [ref=e400]: Bash is only useful if it runs safely. Sandboxes provide agents with an isolated environment to run code, inspect files, and verify work without risking the host machine.
+                        - generic [ref=e403]: "A good sandbox ships with strong defaults: pre-installed language runtimes, test CLIs, and headless browsers, allowing the agent to observe its own work and close the self-verification loop."
+                        - generic [ref=e406]: "Memory and Search: Continual Learning"
+                        - generic [ref=e409]: Models have no knowledge beyond their training weights and current context. Harnesses bridge this gap using memory files (like AGENTS.md) that inject knowledge into every session.
+                        - generic [ref=e412]: For real-time information like new library versions or live data web search and MCP tools are baked directly into the harness.
+                        - generic [ref=e415]: Battling Context Rot
+                        - generic [ref=e418]: "Models degrade in reasoning as their context windows fill up. Harnesses manage this scarcity using three primary techniques:"
+                        - list [ref=e419]:
+                          - listitem [ref=e420]:
+                            - generic [ref=e421]:
+                              - generic [ref=e422]: "Compaction:"
+                              - generic [ref=e423]: Intelligently summarizing and offloading older context to prevent API errors.
+                          - listitem [ref=e424]:
+                            - generic [ref=e425]:
+                              - generic [ref=e426]: "Tool-call offloading:"
+                              - generic [ref=e427]: Storing massive tool outputs (like 2,000-line logs) in the filesystem while keeping only the essential headers and footers in context.
+                          - listitem [ref=e428]:
+                            - generic [ref=e429]:
+                              - generic [ref=e430]: "Progressive disclosure:"
+                              - generic [ref=e431]: Revealing instructions and tools only when a task explicitly requires them, rather than loading everything at startup.
+                        - generic [ref=e434]: Long-Horizon Execution
+                        - generic [ref=e437]: "Autonomous, long-running work suffers from early stopping and poor problem decomposition. Harnesses counter this through structural design:"
+                        - list [ref=e438]:
+                          - listitem [ref=e439]:
+                            - generic [ref=e440]:
+                              - generic [ref=e441]: "Loops:"
+                              - generic [ref=e442]: Intercepting a model's attempt to exit and forcing it to continue against a completion goal in a fresh context window.
+                          - listitem [ref=e443]:
+                            - generic [ref=e444]:
+                              - generic [ref=e445]: "Planning:"
+                              - generic [ref=e446]: Forcing the model to decompose goals into a step-by-step plan file, checking its work via self-verification hooks after each step.
+                          - listitem [ref=e447]:
+                            - generic [ref=e448]:
+                              - generic [ref=e449]: "Splits:"
+                              - generic [ref=e450]: Separating generation and evaluation into distinct agents, preventing the inherent positive bias models have when grading their own work.
+                        - generic [ref=e453]: Hooks are your Enforcement Layer
+                        - generic [ref=e456]: "Hooks bridge the gap between requesting an action and enforcing it. They run at specific lifecycles: before a tool call, after a file edit, or before a commit. Hooks block destructive commands, enforce auto-formatting to save tokens, and run test suites."
+                        - generic [ref=e458]:
+                          - generic [ref=e459]: Ideally,
+                          - generic [ref=e460]: success is silent, and failures are verbose.
+                          - generic [ref=e461]: If a typecheck passes, the agent hears nothing; if it fails, the error is injected directly back into the loop for self-correction.
+                        - generic [ref=e464]: Here's the rulebook and tool choice
+                        - generic [ref=e466]:
+                          - generic [ref=e467]: A flat markdown file at the root of a repository is still the highest-leverage configuration point. However, it must be treated like a
+                          - generic [ref=e468]: pilot's checklist, not a style guide.
+                          - generic [ref=e469]: Keep it short, and ensure every rule is earned through a past failure.
+                        - generic [ref=e472]: The same discipline applies to tools. Ten highly focused tools will always outperform fifty overlapping ones.
+                        - generic [ref=e475]: Furthermore, because tool descriptions populate the prompt, malicious or sloppy external integrations (like unverified MCP servers) can inject bad prompts into the agent before it even starts working.
+                        - generic [ref=e478]: What this looks like in production
+                        - generic [ref=e480]:
+                          - generic [ref=e481]: The clearest public picture I’ve seen of a mature harness is Fareed Khan’s (estimated) breakdown of
+                          - link "Claude Code’s architecture" [ref=e483] [cursor=pointer]:
+                            - /url: https://levelup.gitconnected.com/building-claude-code-with-harness-engineering-d2e8c0da85f0
+                            - generic [ref=e484]: Claude Code’s architecture
+                          - generic [ref=e485]: .
+                        - link "Image" [ref=e492] [cursor=pointer]:
+                          - /url: /addyosmani/article/2053231239721885918/media/2053230384444555264
+                          - generic "Image" [ref=e496]:
+                            - img "Image" [ref=e498]
+                        - generic [ref=e500]:
+                          - generic [ref=e501]: Almost every concept from the previous section shows up on this diagram as a named component. Context injection is the knowledge layer. Loop state lives in the memory store and the worktree isolator. Destructive-action hooks sit behind the permission gate. Subagent context firewalls are the entire multi-agent layer. The tool dispatch registry is where MCP servers and bash both plug in.
+                          - generic [ref=e502]: Claude Code’s trajectory is about the harness at least as much as about the model underneath it.
+                        - heading "Harnesses Don't Shrink, They Move" [level=2] [ref=e504]:
+                          - generic [ref=e506]: Harnesses Don't Shrink, They Move
+                        - generic [ref=e509]: As models improve, the need for a harness doesn't disappear - it shifts.
+                        - generic [ref=e512]: It is tempting to assume better models make scaffolding obsolete. For instance, recent model upgrades drastically reduced the need for "context-anxiety" mitigations. But as the floor raises, so does the ceiling. Tasks that were previously unreachable are now in play, bringing entirely new failure modes.
+                        - generic [ref=e515]: Every component in a harness encodes an assumption about what the model cannot do on its own. When the model improves, outdated scaffolding should be removed, and new scaffolding must be built to reach the next horizon.
+                        - generic [ref=e518]: What about the Training Loop?
+                        - generic [ref=e521]: There is an active feedback loop between harness design and model training.
+                        - generic [ref=e524]: Today's models are often post-trained with specific harnesses in the loop, creating a degree of overfitting. The model gets exceptionally good at the specific actions the harness designers prioritized (e.g., filesystem ops, bash, subagent dispatch).
+                        - generic [ref=e527]: This makes the harness a living system, not a static config file, and proves that the "best" harness is the one optimized specifically for your distinct tasks and workflows.
+                        - heading "Harness-as-a-Service (HaaS)" [level=2] [ref=e529]:
+                          - generic [ref=e531]: Harness-as-a-Service (HaaS)
+                        - generic [ref=e534]: The industry is shifting from building on LLM APIs (which provide completions) to building on Harness APIs (which provide a runtime). SDKs now offer the loop, tools, context management, hooks, and sandboxes right out of the box.
+                        - generic [ref=e537]: Instead of building orchestration from scratch, the modern default is to select a harness framework, configure its core pillars, and focus purely on domain-specific prompt and tool design.
+                        - generic [ref=e540]: "This is what makes troubleshooting scalable: you are tuning a well-factored configuration surface rather than reinventing the entire agent architecture."
+                        - heading "Where This Is Going" [level=2] [ref=e542]:
+                          - generic [ref=e544]: Where This Is Going
+                        - generic [ref=e546]:
+                          - generic [ref=e547]: If you look at the top coding agents today,
+                          - generic [ref=e548]: they look more like each other than their underlying models do.
+                          - generic [ref=e549]: The models differ, but the harness patterns are converging. The industry is rapidly identifying the load-bearing scaffolding required to turn generative text into shippable software.
+                        - generic [ref=e552]: "The most exciting open problems are moving beyond single agents: orchestrating multiple agents in parallel, enabling agents to analyze their own traces to fix harness-level failures, and building environments that dynamically assemble tools just-in-time."
+                        - generic [ref=e555]: Ultimately, this is the phase where harnesses stop being static configuration files and start acting much more like compilers.
+                        - generic [ref=e557]:
+                          - generic [ref=e558]: If you are a looking for a great agent harness framework,
+                          - link "@FredKSchott" [ref=e560] [cursor=pointer]:
+                            - /url: https://x.com/@FredKSchott
+                            - generic [ref=e561]: "@FredKSchott"
+                          - generic [ref=e562]: wrote
+                          - link "Flue" [ref=e564] [cursor=pointer]:
+                            - /url: https://x.com/FredKSchott/status/2050274923852210397
+                            - generic [ref=e565]: Flue
+                          - generic [ref=e566]: . It's solid and was apparently inspired by an earlier version of this post!
+                      - status [ref=e568]:
+                        - generic [ref=e569]:
+                          - img [ref=e570]
+                          - generic [ref=e574]:
+                            - generic [ref=e575]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e576] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e580]:
+                    - link "9:50 PM · May 9, 2026" [ref=e582] [cursor=pointer]:
+                      - /url: /addyosmani/status/2053231239721885918
+                      - time [ref=e583]: 9:50 PM · May 9, 2026
+                    - generic [ref=e584]: ·
+                    - link "832.9K Views" [ref=e585] [cursor=pointer]:
+                      - /url: /addyosmani/status/2053231239721885918/analytics
+                      - generic [ref=e588]: 832.9K
+                      - generic [ref=e589]: Views
+                  - group "83 replies, 565 reposts, 3339 likes, 7949 bookmarks, 832955 views" [ref=e592]:
+                    - button "83 Replies. Reply" [ref=e594] [cursor=pointer]:
+                      - generic [ref=e595]:
+                        - img [ref=e598]
+                        - generic [ref=e603]: "83"
+                    - button "565 reposts. Repost" [ref=e605] [cursor=pointer]:
+                      - generic [ref=e606]:
+                        - img [ref=e609]
+                        - generic [ref=e614]: "565"
+                    - button "3339 Likes. Like" [ref=e616] [cursor=pointer]:
+                      - generic [ref=e617]:
+                        - img [ref=e620]
+                        - generic [ref=e625]: 3.3K
+                    - button "7949 Bookmarks. Bookmark" [ref=e627] [cursor=pointer]:
+                      - generic [ref=e628]:
+                        - img [ref=e631]
+                        - generic [ref=e636]: 7.9K
+                    - button "Share post" [ref=e639] [cursor=pointer]:
+                      - img [ref=e643]
+                  - button "Read 83 replies" [ref=e646] [cursor=pointer]:
+                    - generic [ref=e647]:
+                      - img [ref=e648]
+                      - generic [ref=e652]: Read 83 replies
+      - generic "Trending" [ref=e657]:
+        - generic [ref=e658]:
+          - region "Sign up" [ref=e660]:
+            - heading "New to X?" [level=2] [ref=e662]:
+              - generic [ref=e663]: New to X?
+            - generic [ref=e664]: Sign up now to get your own personalized timeline!
+            - generic [ref=e665]:
+              - iframe [ref=e668]:
+                - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                  - generic [ref=f1e5]:
+                    - img [ref=f1e7]
+                    - generic [ref=f1e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e669] [cursor=pointer]:
+                - generic [ref=e670]:
+                  - img [ref=e671]
+                  - generic [ref=e675]: Sign up with Apple
+              - link "Create account" [ref=e676] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e679]: Create account
+            - generic [ref=e680]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e681] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e682] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e683] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e685]:
+            - heading "Relevant people" [level=2] [ref=e687]:
+              - generic [ref=e688]: Relevant people
+            - list [ref=e689]:
+              - listitem [ref=e690] [cursor=pointer]:
+                - generic [ref=e691]:
+                  - link [ref=e701]:
+                    - /url: /addyosmani
+                  - generic [ref=e704]:
+                    - generic [ref=e705]:
+                      - generic [ref=e707]:
+                        - link "Addy Osmani Verified account" [ref=e709]:
+                          - /url: /addyosmani
+                          - generic [ref=e710]:
+                            - generic [ref=e712]: Addy Osmani
+                            - img "Verified account" [ref=e715]
+                        - link "@addyosmani" [ref=e720]:
+                          - /url: /addyosmani
+                          - generic [ref=e722]: "@addyosmani"
+                      - button "Follow @addyosmani" [ref=e724]:
+                        - generic [ref=e727]: Follow
+                    - generic [ref=e728]:
+                      - text: Director,
+                      - link "@GoogleCloud" [ref=e731]:
+                        - /url: /GoogleCloud
+                      - text: AI. Gemini
+                      - img "✨" [ref=e732]
+                      - text: "Agents. Prev: Eng. leader,"
+                      - link "@GoogleChrome" [ref=e735]:
+                        - /url: /GoogleChrome
+                      - text: • Author • Great user, developer & AI experiences •
+                      - link "@GoogleAI" [ref=e738]:
+                        - /url: /GoogleAI
+                      - link "@GoogleDeepMind" [ref=e741]:
+                        - /url: /GoogleDeepMind
+          - region "Trending now" [ref=e743]:
+            - heading "Trending now" [level=1] [ref=e744]
+            - 'generic "Timeline: Trending now" [ref=e745]':
+              - generic [ref=e746]:
+                - heading "What’s happening" [level=2] [ref=e750]:
+                  - generic [ref=e751]: What’s happening
+                - link "Gaming · Trending Witch Queen" [ref=e754] [cursor=pointer]:
+                  - generic [ref=e755]:
+                    - generic [ref=e757]: Gaming · Trending
+                    - generic [ref=e758]: Witch Queen
+                - 'link "Trending in United States #BillyPlayList" [ref=e761] [cursor=pointer]':
+                  - generic [ref=e762]:
+                    - generic [ref=e764]: Trending in United States
+                    - generic [ref=e766]: "#BillyPlayList"
+                - link "Politics · Trending Al Green" [ref=e769] [cursor=pointer]:
+                  - generic [ref=e770]:
+                    - generic [ref=e772]: Politics · Trending
+                    - generic [ref=e773]: Al Green
+                - link "BTS ARMY · Trending ARMY MEMBERSHIP PRESALE" [ref=e776] [cursor=pointer]:
+                  - generic [ref=e777]:
+                    - generic [ref=e779]: BTS ARMY · Trending
+                    - generic [ref=e780]: ARMY MEMBERSHIP PRESALE
+                - link "Show more" [ref=e783] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e784]: Show more
+          - navigation "Footer" [ref=e786]:
+            - generic [ref=e787]:
+              - link "Terms of Service" [ref=e788] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e789]: "|"
+            - generic [ref=e790]:
+              - link "Privacy Policy" [ref=e791] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e792]: "|"
+            - generic [ref=e793]:
+              - link "Cookie Policy" [ref=e794] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e795]: "|"
+            - generic [ref=e796]:
+              - link "Accessibility" [ref=e797] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e798]: "|"
+            - generic [ref=e799]:
+              - link "Ads info" [ref=e800] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e801]: "|"
+            - button "More" [ref=e802] [cursor=pointer]:
+              - generic [ref=e803]:
+                - text: More
+                - img [ref=e804]
+            - generic [ref=e807]: © 2026 X Corp.

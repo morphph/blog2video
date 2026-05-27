@@ -1,0 +1,17 @@
+{
+  "url": "https://x.com/0xcodez/status/2057807200173613450",
+  "author": "Codez",
+  "handle": "@0xCodez",
+  "title": "How to write a prompt the right way: the 4-layer structure pros use",
+  "published": "2026-05-22 12:54 PM",
+  "stats": {"replies": 1, "reposts": 48, "likes": 156, "bookmarks": 648, "views": 291927},
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {"file": "images/image_1_cover.jpg", "context": "article cover"},
+    {"file": "images/image_2_4layers.png", "context": "the 4-layer prompt model overview"},
+    {"file": "images/image_3_xml_order.png", "context": "XML tags + question-at-bottom 30% rule"},
+    {"file": "images/image_4_capability_layer.png", "context": "Layer 3 capability — direction vs capability problem"},
+    {"file": "images/image_5_stack_flow.png", "context": "debug stack flow through the 4 layers"},
+    {"file": "images/image_6_conclusion.png", "context": "conclusion: prompt as a system, not a sentence"}
+  ]
+}

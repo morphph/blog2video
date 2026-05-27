@@ -1,0 +1,786 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /seelffff/article/2054991798519656789
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "self.dll Verified account @seelffff 24 replies, 167 reposts, 1038 likes, 4226 bookmarks, 1914650 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /seelffff
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "self.dll Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /seelffff
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: self.dll
+                          - img "Verified account" [ref=e116]
+                      - link "@seelffff" [ref=e122] [cursor=pointer]:
+                        - /url: /seelffff
+                        - generic [ref=e123]: "@seelffff"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /seelffff/article/2054991798519656789/media/2054987542055784448
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: Zero to AI Engineer - The Roadmap
+                      - group "24 replies, 167 reposts, 1038 likes, 4226 bookmarks, 1914650 views" [ref=e154]:
+                        - button "24 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "24"
+                        - button "167 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: "167"
+                        - button "1038 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: 1K
+                        - link "1914650 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /seelffff/status/2054991798519656789/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 1.9M
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - heading "The $300/month Mistake" [level=1] [ref=e223]:
+                          - generic [ref=e225]: The $300/month Mistake
+                        - generic [ref=e228]: Six months ago I was paying $49/month for Coursera Plus, $39/month for DataCamp, and had dropped $199 on two Udemy bundles. I was collecting certificates like Pokémon cards and couldn’t build a single thing from scratch.
+                        - generic [ref=e230]:
+                          - generic [ref=e231]: "Then I found something that changed everything: the companies that actually"
+                          - generic [ref=e232]: build
+                          - generic [ref=e233]: AI - Google, Anthropic, OpenAI - had started giving away their training for free. Not watered-down intro videos. Full courses with certificates. Meanwhile, GitHub had repositories with 95,000+ stars that taught better than any course I’d paid for.
+                        - generic [ref=e236]: I cancelled every subscription. Built an AI agent that manages my morning routine. And I did it all for $0.
+                        - generic [ref=e239]: "This article is the exact system I wish I had when I started. Not a list of links. Not “30 resources you’ll never open.” This is a step-by-step path: do this first, then this, then build this. Follow it in order. In 14 weeks, you’ll go from zero to deploying real AI systems."
+                        - heading "How to Use This Guide" [level=1] [ref=e241]:
+                          - generic [ref=e243]: How to Use This Guide
+                        - generic [ref=e245]:
+                          - generic [ref=e246]: "Rule 1: Don’t skip ahead."
+                          - generic [ref=e247]: Step 3 assumes you’ve done Step 2. If you jump to LLMs without understanding gradients, you’ll be copying code you don’t understand.
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: "Rule 2: Take notes."
+                          - generic [ref=e251]: "I use Obsidian (free, local, markdown). After every session, write down three things: what you learned, what surprised you, what’s still unclear. This is non-negotiable."
+                        - generic [ref=e253]:
+                          - generic [ref=e254]: "Rule 3: Build at every step."
+                          - generic [ref=e255]: Each step ends with a checkpoint. If you can’t do it, go back.
+                        - heading "Set up this folder structure in Obsidian before you start:" [level=2] [ref=e257]:
+                          - generic [ref=e259]: "Set up this folder structure in Obsidian before you start:"
+                        - generic [ref=e262]:
+                          - generic [ref=e263]:
+                            - generic [ref=e264]: plaintext
+                            - button "Copy to clipboard" [ref=e266] [cursor=pointer]:
+                              - img [ref=e268]
+                          - code [ref=e272]: AI-Learning/ ├── 00-setup/ │ └── accounts-and-tools.md ├── 01-fundamentals/ │ ├── notes.md │ └── key-concepts.md ├── 02-ml-foundations/ │ ├── notes.md │ └── projects/ ├── 03-deep-learning/ │ ├── notes.md │ └── karpathy-exercises/ ├── 04-llms-and-prompting/ │ ├── notes.md │ └── projects/ ├── 05-agents/ │ ├── notes.md │ └── my-agent/ ├── 06-production/ │ ├── deploy-notes.md │ └── eval-results/ ├── 07-portfolio/ │ ├── github-readme-draft.md │ └── linkedin-cases.md └── resources.md
+                        - generic [ref=e288]:
+                          - generic "Embedded video" [ref=e291]
+                          - button "Play Video" [ref=e298] [cursor=pointer]:
+                            - img [ref=e299]
+                        - 'heading "Step 1: Set Up Your Environment (Day 1)" [level=1] [ref=e304]':
+                          - generic [ref=e306]: "Step 1: Set Up Your Environment (Day 1)"
+                        - generic [ref=e309]: Before you learn anything, set up your tools. One evening. Don’t overthink it.
+                        - generic [ref=e312]: Install Your Tools
+                        - generic [ref=e314]:
+                          - generic [ref=e315]: "1."
+                          - generic [ref=e316]: Python 3.11+ -
+                          - link "python.org/downloads" [ref=e319] [cursor=pointer]:
+                            - /url: https://python.org/downloads
+                            - generic [ref=e320]: python.org/downloads
+                          - generic [ref=e321]: . Check “Add to PATH.”
+                        - generic [ref=e323]:
+                          - generic [ref=e324]: "2."
+                          - generic [ref=e325]: VS Code -
+                          - link "code.visualstudio.com" [ref=e328] [cursor=pointer]:
+                            - /url: https://code.visualstudio.com/
+                            - generic [ref=e329]: code.visualstudio.com
+                          - generic [ref=e330]: . Install Python extension.
+                        - generic [ref=e332]:
+                          - generic [ref=e333]: "3."
+                          - generic [ref=e334]: Git + GitHub -
+                          - link "github.com" [ref=e337] [cursor=pointer]:
+                            - /url: https://github.com/
+                            - generic [ref=e338]: github.com
+                          - generic [ref=e339]: . For forking repos and saving projects.
+                        - generic [ref=e341]:
+                          - generic [ref=e342]: "4."
+                          - generic [ref=e343]: Obsidian -
+                          - link "obsidian.md" [ref=e346] [cursor=pointer]:
+                            - /url: https://obsidian.md/
+                            - generic [ref=e347]: obsidian.md
+                          - generic [ref=e348]: . Create the folder structure above.
+                        - generic [ref=e350]:
+                          - generic [ref=e351]: "5."
+                          - generic [ref=e352]: Ollama -
+                          - link "ollama.com" [ref=e355] [cursor=pointer]:
+                            - /url: https://ollama.com/
+                            - generic [ref=e356]: ollama.com
+                          - generic [ref=e357]: . For running models locally. Install now, you’ll use it from Step 4.
+                        - link "Image" [ref=e364] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054960712351457280
+                          - generic "Image" [ref=e368]:
+                            - img "Image" [ref=e370]
+                        - generic [ref=e373]: Create Your Free Accounts
+                        - generic [ref=e375]:
+                          - generic [ref=e376]: "1."
+                          - generic [ref=e377]: Anthropic Academy -
+                          - link "anthropic.skilljar.com" [ref=e380] [cursor=pointer]:
+                            - /url: https://anthropic.skilljar.com/
+                            - generic [ref=e381]: anthropic.skilljar.com
+                          - generic [ref=e382]: . 16 free courses with certificates. The most underrated AI learning platform in 2026.
+                        - generic [ref=e384]:
+                          - generic [ref=e385]: "2."
+                          - generic [ref=e386]: OpenAI Academy -
+                          - link "academy.openai.com" [ref=e389] [cursor=pointer]:
+                            - /url: https://academy.openai.com/
+                            - generic [ref=e390]: academy.openai.com
+                          - generic [ref=e391]: . Free workshops, tutorials, AI Foundations course.
+                        - generic [ref=e393]:
+                          - generic [ref=e394]: "3."
+                          - generic [ref=e395]: Google AI -
+                          - link "grow.google/ai" [ref=e398] [cursor=pointer]:
+                            - /url: https://grow.google/ai
+                            - generic [ref=e399]: grow.google/ai
+                          - generic [ref=e400]: . Google AI Professional Certificate — 7 modules, free via Coursera audit.
+                        - generic [ref=e402]:
+                          - generic [ref=e403]: "4."
+                          - generic [ref=e404]: Coursera -
+                          - link "coursera.org" [ref=e407] [cursor=pointer]:
+                            - /url: https://coursera.org/
+                            - generic [ref=e408]: coursera.org
+                          - generic [ref=e409]: . Audit mode = free. For IBM ML Certificate and Google courses.
+                          - generic [ref=e410]: Audit Mode on Coursera
+                        - generic [ref=e413]: When Coursera asks you to pay, look for the small "Audit this course" link at the bottom. Full access to all videos and materials, free. No Coursera cert, but you’ll get certs directly from Anthropic, OpenAI, and Google instead.
+                        - heading "CHECKPOINT:" [level=2] [ref=e415]:
+                          - generic [ref=e417]: "CHECKPOINT:"
+                        - generic [ref=e420]: Python + VS Code + Ollama installed. GitHub account created. Obsidian vault ready. Accounts on Anthropic Academy, OpenAI Academy, Google AI, and Coursera.
+                        - 'heading "Step 2: AI Fundamentals - Understand What You’re Building (Weeks 1–2)" [level=1] [ref=e424]':
+                          - generic [ref=e426]: "Step 2: AI Fundamentals - Understand What You’re Building (Weeks 1–2)"
+                        - generic [ref=e429]: "Why this matters in 2026:"
+                        - generic [ref=e432]: AI literacy is now a hiring filter. A 2025 WEF analysis found AI-literate workers command 15–22% salary premiums. Understanding the fundamentals puts you ahead of 90% of applicants.
+                        - 'heading "Week 1: The Big Picture" [level=2] [ref=e434]':
+                          - generic [ref=e436]: "Week 1: The Big Picture"
+                        - generic [ref=e439]: First → Google AI Professional Certificate (Modules 1–3)
+                        - generic [ref=e441]:
+                          - link "grow.google/ai-professional" [ref=e443] [cursor=pointer]:
+                            - /url: https://grow.google/ai-professional/
+                            - generic [ref=e444]: grow.google/ai-professional
+                          - generic [ref=e445]: "- Gentlest on-ramp. No code. Covers: what AI is, brainstorming with AI, research with AI. Gives you the vocabulary."
+                        - generic [ref=e448]: "Then → Anthropic Academy: AI Fluency: Framework & Foundations"
+                        - generic [ref=e450]:
+                          - link "anthropic.skilljar.com" [ref=e452] [cursor=pointer]:
+                            - /url: https://anthropic.skilljar.com/
+                            - generic [ref=e453]: anthropic.skilljar.com
+                          - generic [ref=e454]: "- The 4D AI Fluency Framework. Co-developed with university professors. Takes 2–3 hours. This is one of the best intro courses available anywhere in 2026, and the certificate genuinely looks good on LinkedIn - it’s from Anthropic, the company behind Claude."
+                        - 'heading "Week 2: First Code + First Concepts" [level=2] [ref=e456]':
+                          - generic [ref=e458]: "Week 2: First Code + First Concepts"
+                        - generic [ref=e461]: Then → microsoft/generative-ai-for-beginners (Lessons 1–6)
+                        - generic [ref=e463]:
+                          - link "github.com/microsoft/generative-ai-for-beginners" [ref=e465] [cursor=pointer]:
+                            - /url: https://github.com/microsoft/generative-ai-for-beginners
+                            - generic [ref=e466]: github.com/microsoft/generative-ai-for-beginners
+                          - generic [ref=e467]: "- 95,000+ stars. 21 lessons. Fork this repo and work through lessons 1–6: what is GenAI, how LLMs work, using prompts, first chat app."
+                        - generic [ref=e470]:
+                          - button "Copy to clipboard" [ref=e473] [cursor=pointer]:
+                            - img [ref=e475]
+                          - code [ref=e479]: "## Session: [Date] - [Topic] ### What I learned - ... ### What surprised me - ... ### Still unclear - ... ### Key terms - LLM: ... - Transformer: ... - Token: ..."
+                        - generic [ref=e497]:
+                          - generic "Embedded video" [ref=e500]
+                          - button "Play Video" [ref=e507] [cursor=pointer]:
+                            - img [ref=e508]
+                        - heading "CHECKPOINT:" [level=2] [ref=e513]:
+                          - generic [ref=e515]: "CHECKPOINT:"
+                        - generic [ref=e518]: You can explain LLMs, tokens, and transformers in your own words. First Jupyter notebooks run. Obsidian has 4–6 notes.
+                        - 'heading "Step 3: ML Foundations - Learn the Math Behind the Magic (Weeks 3–5)" [level=1] [ref=e520]':
+                          - generic [ref=e522]: "Step 3: ML Foundations - Learn the Math Behind the Magic (Weeks 3–5)"
+                        - generic [ref=e525]: "Why this matters in 2026:"
+                        - generic [ref=e527]:
+                          - generic [ref=e528]: ML fundamentals are the difference between someone who copies tutorials and someone who debugs models. Companies pay
+                          - link "$150K+" [ref=e530] [cursor=pointer]:
+                            - /url: https://x.com/search?q=%24150K%2B&src=cashtag_click
+                            - generic [ref=e531]: $150K+
+                          - generic [ref=e532]: for engineers who understand why a model underperforms, not just how to call an API.
+                        - generic [ref=e535]: "Primary: microsoft/ML-For-Beginners"
+                        - generic [ref=e537]:
+                          - link "github.com/microsoft/ML-For-Beginners" [ref=e539] [cursor=pointer]:
+                            - /url: https://github.com/microsoft/ML-For-Beginners
+                            - generic [ref=e540]: github.com/microsoft/ML-For-Beginners
+                          - generic [ref=e541]: "- 44,900+ stars. 12-week curriculum: regression, classification, clustering, NLP basics. Quizzes, notebooks, challenges. We compress to 3 weeks at 2 lessons/day."
+                        - link "Image" [ref=e548] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054958326769672192
+                          - generic "Image" [ref=e552]:
+                            - img "Image" [ref=e554]
+                        - generic [ref=e557]: "Parallel: IBM Machine Learning on Coursera"
+                        - generic [ref=e559]:
+                          - link "coursera.org/professional-certificates/ibm-machine-learning" [ref=e561] [cursor=pointer]:
+                            - /url: https://www.coursera.org/professional-certificates/ibm-machine-learning
+                            - generic [ref=e562]: coursera.org/professional-certificates/ibm-machine-learning
+                          - generic [ref=e563]: "- Audit mode free. More traditional video format. Use alongside Microsoft repo — two angles on same topic = better retention."
+                        - link "Image" [ref=e570] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054958615962750976
+                          - generic "Image" [ref=e574]:
+                            - img "Image" [ref=e576]
+                        - generic [ref=e579]: "Math Reference: mlabonne/llm-course (Foundations)"
+                        - generic [ref=e581]:
+                          - link "github.com/mlabonne/llm-course" [ref=e583] [cursor=pointer]:
+                            - /url: https://github.com/mlabonne/llm-course
+                            - generic [ref=e584]: github.com/mlabonne/llm-course
+                          - generic [ref=e585]: "— 40K+ stars. First section: linear algebra, calculus, probability. Only the math relevant to ML. Reference it whenever you hit something unfamiliar."
+                        - link "Image" [ref=e592] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054958795185381377
+                          - generic "Image" [ref=e596]:
+                            - img "Image" [ref=e598]
+                        - generic [ref=e600]:
+                          - generic [ref=e601]: "Week 5 Project:"
+                          - generic [ref=e602]: Pick a dataset from the Microsoft repo. Build your own classification model from scratch. Push to GitHub.
+                        - generic [ref=e618]:
+                          - generic "Embedded video" [ref=e621]
+                          - button "Play Video" [ref=e628] [cursor=pointer]:
+                            - img [ref=e629]
+                        - generic [ref=e637]: "CHECKPOINT:"
+                        - generic [ref=e640]: You understand regression, classification, clustering, gradient descent, loss functions, overfitting. You’ve trained a model on real data. One project on GitHub.
+                        - 'heading "Step 4: Deep Learning & Neural Networks - Build From Scratch (Weeks 6–8)" [level=1] [ref=e642]':
+                          - generic [ref=e644]: "Step 4: Deep Learning & Neural Networks - Build From Scratch (Weeks 6–8)"
+                        - generic [ref=e647]: "Primary: karpathy/nn-zero-to-hero"
+                        - generic [ref=e649]:
+                          - link "karpathy.ai/zero-to-hero.html" [ref=e651] [cursor=pointer]:
+                            - /url: https://karpathy.ai/zero-to-hero.html
+                            - generic [ref=e652]: karpathy.ai/zero-to-hero.html
+                          - generic [ref=e653]: (videos) +
+                          - link "github.com/karpathy/nn-zero-to-hero" [ref=e655] [cursor=pointer]:
+                            - /url: https://github.com/karpathy/nn-zero-to-hero
+                            - generic [ref=e656]: github.com/karpathy/nn-zero-to-hero
+                          - generic [ref=e657]: (code)
+                        - link "Image" [ref=e664] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054960094714998784
+                          - generic "Image" [ref=e668]:
+                            - img "Image" [ref=e670]
+                        - generic [ref=e673]: "Andrej Karpathy, former Director of AI at Tesla, co-founder of OpenAI. He builds neural networks from absolute scratch - no frameworks, just Python and math. You build: micrograd, makemore, and nanoGPT."
+                        - generic [ref=e675]:
+                          - generic [ref=e676]: "1."
+                          - generic [ref=e677]: "Week 6:"
+                          - generic [ref=e678]: Lectures 1–3 (micrograd + makemore). Code along. Pause, type every line, run it, break it.
+                        - generic [ref=e680]:
+                          - generic [ref=e681]: "2."
+                          - generic [ref=e682]: "Week 7:"
+                          - generic [ref=e683]: Lectures 4–5 (activations, BatchNorm, backprop). Dense - one lecture per day. Detailed notes.
+                        - generic [ref=e685]:
+                          - generic [ref=e686]: "3."
+                          - generic [ref=e687]: "Week 8:"
+                          - generic [ref=e688]: "Lectures 6–7 (GPT from scratch + tokenization). The payoff: you build a transformer."
+                        - generic [ref=e691]: "Parallel experiment with Ollama:"
+                        - generic [ref=e694]: While you’re building nanoGPT, run ollama run llama3.2:3b in another terminal. Compare your “toy” model’s output with a real 3B-parameter model. This bridges the gap between “I understand the theory” and “I can run models locally.” It’s eye-opening to see what 3 billion parameters vs. your 10 million does to output quality.
+                        - generic [ref=e697]: "Supplement: microsoft/AI-For-Beginners (Deep Learning)"
+                        - generic [ref=e699]:
+                          - link "github.com/microsoft/AI-For-Beginners" [ref=e701] [cursor=pointer]:
+                            - /url: https://github.com/microsoft/AI-For-Beginners
+                            - generic [ref=e702]: github.com/microsoft/AI-For-Beginners
+                          - generic [ref=e703]: "- Weeks 7–12: CNNs, RNNs. Expands beyond Karpathy, especially for computer vision."
+                        - link "Image" [ref=e710] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054960312126672896
+                          - generic "Image" [ref=e714]:
+                            - img "Image" [ref=e716]
+                        - generic [ref=e719]: "Bridge to APIs: Anthropic Academy - Building with the Claude API"
+                        - generic [ref=e721]:
+                          - link "anthropic.skilljar.com" [ref=e723] [cursor=pointer]:
+                            - /url: https://anthropic.skilljar.com/
+                            - generic [ref=e724]: anthropic.skilljar.com
+                          - generic [ref=e725]: "- Now that you understand models from the inside, learn to use them via API. Covers auth, system prompts, tool use, streaming. The bridge from theory to product."
+                        - generic [ref=e741]:
+                          - generic "Embedded video" [ref=e744]
+                          - button "Play Video" [ref=e751] [cursor=pointer]:
+                            - img [ref=e752]
+                        - heading "CHECKPOINT:" [level=2] [ref=e757]:
+                          - generic [ref=e759]: "CHECKPOINT:"
+                        - generic [ref=e762]: You’ve built a neural network from scratch. You understand backprop, attention, transformers. You can explain how GPT works. You can run models locally with Ollama. You know the Claude API.
+                        - 'heading "Step 5: LLMs & Prompt Engineering - Work With Real Models (Weeks 9–10)" [level=1] [ref=e764]':
+                          - generic [ref=e766]: "Step 5: LLMs & Prompt Engineering - Work With Real Models (Weeks 9–10)"
+                        - generic [ref=e769]: "Deep Dive: mlabonne/llm-course (LLM Scientist Track)"
+                        - generic [ref=e771]:
+                          - link "github.com/mlabonne/llm-course" [ref=e773] [cursor=pointer]:
+                            - /url: https://github.com/mlabonne/llm-course
+                            - generic [ref=e774]: github.com/mlabonne/llm-course
+                          - generic [ref=e775]: "- The most comprehensive free LLM curriculum. Colab notebooks for every topic."
+                        - generic [ref=e778]: 1. LLM Architecture - connects to what you built with Karpathy
+                        - generic [ref=e781]: 2. Fine-tuning (LoRA, QLoRA) - customize models for specific tasks
+                        - generic [ref=e784]: 3. Quantization - run models locally (connects to your Ollama setup)
+                        - generic [ref=e787]: 4. Evaluation - measure if your model is actually good
+                        - generic [ref=e790]: Prompt Engineering
+                        - generic [ref=e792]:
+                          - generic [ref=e793]: "OpenAI Academy:"
+                          - link "academy.openai.com/public/content" [ref=e795] [cursor=pointer]:
+                            - /url: https://academy.openai.com/public/content
+                            - generic [ref=e796]: academy.openai.com/public/content
+                          - generic [ref=e797]: "- “Intro to Prompt Engineering” and “ChatGPT for any role” from the team that built ChatGPT."
+                        - link "Image" [ref=e804] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054961191454232576
+                          - generic "Image" [ref=e808]:
+                            - img "Image" [ref=e810]
+                        - generic [ref=e812]:
+                          - generic [ref=e813]: "Anthropic Prompt Engineering:"
+                          - link "docs.anthropic.com" [ref=e815] [cursor=pointer]:
+                            - /url: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+                            - generic [ref=e816]: docs.anthropic.com
+                          - generic [ref=e817]: "- Arguably the best-written prompt engineering guide on the internet. Not a course — a deeply detailed reference."
+                        - generic [ref=e820]: "Continuation: microsoft/generative-ai-for-beginners (Lessons 7–21)"
+                        - generic [ref=e823]: "Go back and finish lessons 7–21. With deep knowledge, these advanced lessons click: RAG, function calling, design patterns, fine-tuning."
+                        - generic [ref=e826]: "Week 10 Project: Build a RAG over your Obsidian notes"
+                        - generic [ref=e829]: Use ChromaDB or LanceDB (both free, both local) to index your AI-Learning vault. Build a tool that answers questions about everything you’ve learned. You’re literally building a second brain over your second brain. Push to GitHub.
+                        - 'heading "Step 6: AI Agents - Build Something Real (Weeks 11–12)" [level=1] [ref=e831]':
+                          - generic [ref=e833]: "Step 6: AI Agents - Build Something Real (Weeks 11–12)"
+                        - generic [ref=e836]: "Primary: microsoft/ai-agents-for-beginners"
+                        - generic [ref=e838]:
+                          - link "github.com/microsoft/ai-agents-for-beginners" [ref=e840] [cursor=pointer]:
+                            - /url: https://github.com/microsoft/ai-agents-for-beginners
+                            - generic [ref=e841]: github.com/microsoft/ai-agents-for-beginners
+                          - generic [ref=e842]: "- 12 lessons: tool use, memory, multi-agent systems, orchestration."
+                        - generic [ref=e845]: "Deep Dive: Anthropic Academy - MCP Courses"
+                        - generic [ref=e847]:
+                          - link "anthropic.skilljar.com" [ref=e849] [cursor=pointer]:
+                            - /url: https://anthropic.skilljar.com/
+                            - generic [ref=e850]: anthropic.skilljar.com
+                          - generic [ref=e851]: "- “Introduction to Model Context Protocol” + “MCP: Advanced Topics.” MCP is Anthropic’s open standard for connecting AI to external tools — the 2026 standard for agent tool-use. These courses teach you to build MCP servers and clients from scratch."
+                        - generic [ref=e854]: "Framework: LangGraph (by LangChain)"
+                        - generic [ref=e857]: Spend 2–3 sessions on LangGraph in free Colab notebooks. It’s the most popular framework for building stateful, multi-step agent workflows. Complements the Anthropic MCP approach — LangGraph for orchestration, MCP for tool connections.
+                        - generic [ref=e860]: "Bonus: Anthropic Cookbook"
+                        - generic [ref=e862]:
+                          - link "docs.anthropic.com/en/docs/about-claude/use-case-guides" [ref=e864] [cursor=pointer]:
+                            - /url: https://docs.anthropic.com/en/docs/about-claude/use-case-guides
+                            - generic [ref=e865]: docs.anthropic.com/en/docs/about-claude/use-case-guides
+                          - generic [ref=e866]: "- The best real-world examples of tool use and MCP patterns. Study these like case studies."
+                        - generic [ref=e869]: "Final Agent Project:"
+                        - generic [ref=e872]: "Build an agent that uses MCP + Claude to work with your local files. Example: an agent that reads your Obsidian vault, checks the web for updates on topics you’re studying, and generates a daily summary to your Telegram. Refer to my article “I Built an AI Agent That Manages My Life” for architecture."
+                        - generic [ref=e888]:
+                          - generic "Embedded video" [ref=e891]
+                          - button "Play Video" [ref=e898] [cursor=pointer]:
+                            - img [ref=e899]
+                        - generic [ref=e918]:
+                          - generic "Embedded video" [ref=e921]
+                          - button "Play Video" [ref=e928] [cursor=pointer]:
+                            - img [ref=e929]
+                        - heading "CHECKPOINT:" [level=2] [ref=e934]:
+                          - generic [ref=e936]: "CHECKPOINT:"
+                        - generic [ref=e939]: You’ve built a working AI agent with MCP. You understand agent architecture, tool use, and multi-step workflows. Your portfolio grows.
+                        - 'heading "Step 7: Production, Portfolio & Responsible AI (Weeks 13–14)" [level=1] [ref=e941]':
+                          - generic [ref=e943]: "Step 7: Production, Portfolio & Responsible AI (Weeks 13–14)"
+                        - generic [ref=e946]: Deploy (all free)
+                        - generic [ref=e949]: "Take your best project and deploy it:"
+                        - generic [ref=e951]:
+                          - generic [ref=e952]: "1."
+                          - generic [ref=e953]: Gradio + Hugging Face Spaces -
+                          - generic [ref=e954]: fastest way to share an ML demo. Free hosting.
+                        - generic [ref=e956]:
+                          - generic [ref=e957]: "2."
+                          - generic [ref=e958]: Streamlit Community Cloud -
+                          - generic [ref=e959]: for data-focused apps. Free tier.
+                        - generic [ref=e961]:
+                          - generic [ref=e962]: "3."
+                          - generic [ref=e963]: Vercel -
+                          - generic [ref=e964]: for web-based AI tools. Free tier.
+                        - generic [ref=e967]: Evaluate Your Models
+                        - generic [ref=e970]: "A deployed model without evaluation is a liability. Learn to measure quality:"
+                        - generic [ref=e972]:
+                          - generic [ref=e973]: "1."
+                          - generic [ref=e974]: DeepEval -
+                          - generic [ref=e975]: open-source framework for LLM evaluation.
+                        - generic [ref=e977]:
+                          - generic [ref=e978]: "2."
+                          - generic [ref=e979]: RAGAS -
+                          - generic [ref=e980]: specifically for evaluating RAG pipelines (your Obsidian RAG from Step 5).
+                        - generic [ref=e982]:
+                          - generic [ref=e983]: "3."
+                          - generic [ref=e984]: LLM-as-Judge -
+                          - generic [ref=e985]: using one LLM to evaluate another’s outputs. Claude is excellent for this.
+                        - generic [ref=e988]: Responsible AI & Safety
+                        - generic [ref=e990]:
+                          - generic [ref=e991]: This is where 90% of free guides fail. They teach you to build but not to build
+                          - generic [ref=e992]: responsibly
+                          - generic [ref=e993]: .
+                        - generic [ref=e995]:
+                          - generic [ref=e996]: "1."
+                          - generic [ref=e997]: Constitutional AI -
+                          - generic [ref=e998]: understand how modern models are aligned. Anthropic’s core approach.
+                        - generic [ref=e1000]:
+                          - generic [ref=e1001]: "2."
+                          - generic [ref=e1002]: Prompt injection defense -
+                          - generic [ref=e1003]: how to protect your apps from adversarial inputs.
+                        - generic [ref=e1005]:
+                          - generic [ref=e1006]: "3."
+                          - generic [ref=e1007]: Red-teaming -
+                          - generic [ref=e1008]: how to stress-test your own systems before users do.
+                        - generic [ref=e1011]: "Resources: Anthropic’s official safety guide + the Responsible AI course in Anthropic Academy."
+                        - generic [ref=e1014]: Portfolio & Career
+                        - generic [ref=e1017]: "Your GitHub profile IS your resume in AI. Here’s how to make it count:"
+                        - generic [ref=e1019]:
+                          - generic [ref=e1020]: "1."
+                          - generic [ref=e1021]: GitHub README -
+                          - generic [ref=e1022]: professional profile README + project READMEs with architecture diagrams and live demo links.
+                        - generic [ref=e1024]:
+                          - generic [ref=e1025]: "2."
+                          - generic [ref=e1026]: LinkedIn cases -
+                          - generic [ref=e1027]: write 2–3 short case studies about your projects. What problem, what you built, what you learned.
+                        - generic [ref=e1029]:
+                          - generic [ref=e1030]: "3."
+                          - generic [ref=e1031]: Career tracks -
+                          - generic [ref=e1032]: Junior AI Engineer ($80–120K) → Prompt/Agent Engineer ($120–180K) → AI Product Engineer ($150–250K).
+                        - generic [ref=e1035]: "The Capstone Project:"
+                        - generic [ref=e1038]: Build a production-grade AI agent that solves a real problem in your life. Deployed. With an evaluation system. With safety checks. This is what you show employers. This is what you tweet about. This is the proof.
+                        - heading "CHECKPOINT:" [level=2] [ref=e1040]:
+                          - generic [ref=e1042]: "CHECKPOINT:"
+                        - generic [ref=e1045]: You have a deployed, evaluated, safety-checked AI system. Professional GitHub profile. LinkedIn case studies. You’re job-ready.
+                        - 'heading "Maintenance Mode: How to Stay Current" [level=2] [ref=e1047]':
+                          - generic [ref=e1049]: "Maintenance Mode: How to Stay Current"
+                        - generic [ref=e1052]: "AI moves fast. Here’s the weekly ritual to stay ahead after finishing the roadmap:"
+                        - generic [ref=e1054]:
+                          - generic [ref=e1055]: "1."
+                          - generic [ref=e1056]: "Monday:"
+                          - generic [ref=e1057]: Check Anthropic, OpenAI, and Google release notes. 10 minutes.
+                        - generic [ref=e1059]:
+                          - generic [ref=e1060]: "2."
+                          - generic [ref=e1061]: "Wednesday:"
+                          - generic [ref=e1062]: Browse arxiv-sanity-lite for interesting papers. Read 1 abstract. 15 minutes.
+                        - generic [ref=e1064]:
+                          - generic [ref=e1065]: "3."
+                          - generic [ref=e1066]: "Friday:"
+                          - generic [ref=e1067]: Watch one Yannic Kilcher or 1littlecoder video on a new paper/tool. 20 minutes.
+                        - generic [ref=e1069]:
+                          - generic [ref=e1070]: "4."
+                          - generic [ref=e1071]: "Monthly:"
+                          - generic [ref=e1072]: Build one small project with a new tool or technique. Push to GitHub.
+                        - generic [ref=e1075]: "Total time: ~1 hour/week. This keeps you in the top 10% of AI practitioners."
+                        - heading "How This Compares" [level=1] [ref=e1077]:
+                          - generic [ref=e1079]: How This Compares
+                        - generic [ref=e1082]: "Honest comparison between this roadmap and the alternatives:"
+                        - link "Image" [ref=e1089] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054980329622908928
+                          - generic "Image" [ref=e1093]:
+                            - img "Image" [ref=e1095]
+                        - heading "Complete Resource List" [level=1] [ref=e1097]:
+                          - generic [ref=e1099]: Complete Resource List
+                        - generic [ref=e1102]: Free Courses (with certificates)
+                        - generic [ref=e1104]:
+                          - generic [ref=e1105]: •
+                          - generic [ref=e1106]: Anthropic Academy -
+                          - link "anthropic.skilljar.com" [ref=e1109] [cursor=pointer]:
+                            - /url: //anthropic.skilljar.com
+                            - generic [ref=e1110]: anthropic.skilljar.com
+                          - generic [ref=e1111]: "- 16 courses, free certs"
+                        - generic [ref=e1113]:
+                          - generic [ref=e1114]: •
+                          - generic [ref=e1115]: OpenAI Academy -
+                          - link "academy.openai.com" [ref=e1118] [cursor=pointer]:
+                            - /url: //academy.openai.com
+                            - generic [ref=e1119]: academy.openai.com
+                          - generic [ref=e1120]: "- workshops, tutorials, AI Foundations"
+                        - generic [ref=e1122]:
+                          - generic [ref=e1123]: •
+                          - generic [ref=e1124]: Google AI Professional Certificate -
+                          - link "grow.google/ai" [ref=e1127] [cursor=pointer]:
+                            - /url: //grow.google/ai
+                            - generic [ref=e1128]: grow.google/ai
+                          - generic [ref=e1129]: "- 7 modules"
+                        - generic [ref=e1131]:
+                          - generic [ref=e1132]: •
+                          - generic [ref=e1133]: IBM ML on Coursera -
+                          - generic [ref=e1134]: audit mode free - full ML certificate
+                        - generic [ref=e1136]:
+                          - generic [ref=e1137]: •
+                          - generic [ref=e1138]: NVIDIA DLI -
+                          - link "developer.nvidia.com/training" [ref=e1141] [cursor=pointer]:
+                            - /url: //developer.nvidia.com/training
+                            - generic [ref=e1142]: developer.nvidia.com/training
+                          - generic [ref=e1143]: "-GPU & deep learning"
+                        - generic [ref=e1145]:
+                          - generic [ref=e1146]: •
+                          - link "DeepLearning.AI" [ref=e1148] [cursor=pointer]:
+                            - /url: //DeepLearning.AI
+                            - generic [ref=e1149]: DeepLearning.AI
+                          - generic [ref=e1150]: "-"
+                          - generic [ref=e1151]: Short courses by Andrew Ng, especially “Agentic AI” and “LangChain for LLM Apps”
+                        - generic [ref=e1154]: GitHub Repositories
+                        - generic [ref=e1156]:
+                          - generic [ref=e1157]: •
+                          - generic [ref=e1158]: microsoft/generative-ai-for-beginners -
+                          - generic [ref=e1159]: 95K★ - 21 lessons GenAI
+                        - generic [ref=e1161]:
+                          - generic [ref=e1162]: •
+                          - generic [ref=e1163]: microsoft/ML-For-Beginners -
+                          - generic [ref=e1164]: 45K★ - 12 weeks classic ML
+                        - generic [ref=e1166]:
+                          - generic [ref=e1167]: •
+                          - generic [ref=e1168]: microsoft/AI-For-Beginners -
+                          - generic [ref=e1169]: 35K★ - 24 lessons deep learning & CV
+                        - generic [ref=e1171]:
+                          - generic [ref=e1172]: •
+                          - generic [ref=e1173]: karpathy/nn-zero-to-hero -
+                          - generic [ref=e1174]: neural nets from scratch by Andrej Karpathy
+                        - generic [ref=e1176]:
+                          - generic [ref=e1177]: •
+                          - generic [ref=e1178]: mlabonne/llm-course -
+                          - generic [ref=e1179]: 40K★ - complete LLM roadmap + Colab
+                        - generic [ref=e1181]:
+                          - generic [ref=e1182]: •
+                          - generic [ref=e1183]: microsoft/ai-agents-for-beginners -
+                          - generic [ref=e1184]: 12 lessons AI agents
+                        - generic [ref=e1186]:
+                          - generic [ref=e1187]: •
+                          - generic [ref=e1188]: ashishpatel26/500-AI-ML-DL-Projects -
+                          - generic [ref=e1189]: 500+ project ideas
+                        - generic [ref=e1192]: Tools (Free)
+                        - generic [ref=e1194]:
+                          - generic [ref=e1195]: •
+                          - generic [ref=e1196]: Ollama + Open WebUI -
+                          - generic [ref=e1197]: run models locally, self-hosted ChatGPT alternative
+                        - generic [ref=e1199]:
+                          - generic [ref=e1200]: •
+                          - generic [ref=e1201]: Anthropic Cookbook -
+                          - link "docs.anthropic.com" [ref=e1204] [cursor=pointer]:
+                            - /url: //docs.anthropic.com
+                            - generic [ref=e1205]: docs.anthropic.com
+                          - generic [ref=e1206]: "- best tool-use and MCP examples"
+                        - generic [ref=e1208]:
+                          - generic [ref=e1209]: •
+                          - generic [ref=e1210]: Hugging Face Course (2026) -
+                          - generic [ref=e1211]: especially Agents and Evaluation sections
+                        - generic [ref=e1213]:
+                          - generic [ref=e1214]: •
+                          - generic [ref=e1215]: ChromaDB / LanceDB -
+                          - generic [ref=e1216]: free local vector databases for RAG projects
+                        - generic [ref=e1219]: YouTube (Free)
+                        - generic [ref=e1221]:
+                          - generic [ref=e1222]: •
+                          - generic [ref=e1223]: Andrej Karpathy -
+                          - generic [ref=e1224]: "Neural Networks: Zero to Hero"
+                        - generic [ref=e1226]:
+                          - generic [ref=e1227]: •
+                          - generic [ref=e1228]: 3Blue1Brown -
+                          - generic [ref=e1229]: neural networks & linear algebra visualized
+                        - generic [ref=e1231]:
+                          - generic [ref=e1232]: •
+                          - generic [ref=e1233]: Yannic Kilcher -
+                          - generic [ref=e1234]: AI paper breakdowns
+                        - generic [ref=e1236]:
+                          - generic [ref=e1237]: •
+                          - generic [ref=e1238]: 1littlecoder -
+                          - generic [ref=e1239]: latest AI tools and implementations (2026 focus)
+                        - generic [ref=e1241]:
+                          - generic [ref=e1242]: •
+                          - generic [ref=e1243]: Matt Wolfe -
+                          - generic [ref=e1244]: AI news and tool reviews
+                        - heading "Start Tonight" [level=1] [ref=e1248]:
+                          - generic [ref=e1250]: Start Tonight
+                        - generic [ref=e1253]: "Here’s exactly what to do in the next 60 minutes:"
+                        - generic [ref=e1255]:
+                          - generic [ref=e1256]: "1."
+                          - generic [ref=e1257]: Install Obsidian
+                          - generic [ref=e1258]: and create the AI-Learning vault. 5 minutes.
+                        - generic [ref=e1260]:
+                          - generic [ref=e1261]: "2."
+                          - generic [ref=e1262]: Sign up for Anthropic Academy.
+                          - generic [ref=e1263]: Start AI Fluency. Watch first module. Write first note. 30 minutes.
+                        - generic [ref=e1265]:
+                          - generic [ref=e1266]: "3."
+                          - generic [ref=e1267]: Fork microsoft/generative-ai-for-beginners
+                          - generic [ref=e1268]: on GitHub. Open Lesson 1. Read it. 20 minutes.
+                        - generic [ref=e1271]: That’s it. Three things. Tonight.
+                        - generic [ref=e1274]: The people who will actually learn AI in 2026 aren’t the ones who bookmark 50 articles. They’re the ones who open a terminal and start.
+                        - generic [ref=e1277]: I started paying $300/month for courses that taught me to copy-paste code I didn’t understand. Today I build AI agents for fun and the entire education cost me $0. The resources are right there. The only question is whether you’ll start.
+                        - separator [ref=e1279]
+                        - generic [ref=e1281]:
+                          - generic [ref=e1282]: pls sub me on tg <3 -
+                          - link "https://t.me/+y1dBeWEIm_plMGNi" [ref=e1284] [cursor=pointer]:
+                            - /url: https://t.me/+y1dBeWEIm_plMGNi
+                            - generic [ref=e1285]: https://t.me/+y1dBeWEIm_plMGNi
+                        - link "Image" [ref=e1292] [cursor=pointer]:
+                          - /url: /seelffff/article/2054991798519656789/media/2054991487574691840
+                          - generic "Image" [ref=e1296]:
+                            - img "Image" [ref=e1298]
+                      - status [ref=e1302]:
+                        - generic [ref=e1303]:
+                          - img [ref=e1304]
+                          - generic [ref=e1308]:
+                            - generic [ref=e1309]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e1310] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e1314]:
+                    - link "6:26 PM · May 14, 2026" [ref=e1316] [cursor=pointer]:
+                      - /url: /seelffff/status/2054991798519656789
+                      - time [ref=e1317]: 6:26 PM · May 14, 2026
+                    - generic [ref=e1318]: ·
+                    - link "1.9M Views" [ref=e1319] [cursor=pointer]:
+                      - /url: /seelffff/status/2054991798519656789/analytics
+                      - generic [ref=e1322]: 1.9M
+                      - generic [ref=e1323]: Views
+                  - group "24 replies, 167 reposts, 1038 likes, 4226 bookmarks, 1914650 views" [ref=e1326]:
+                    - button "24 Replies. Reply" [ref=e1328] [cursor=pointer]:
+                      - generic [ref=e1329]:
+                        - img [ref=e1332]
+                        - generic [ref=e1337]: "24"
+                    - button "167 reposts. Repost" [ref=e1339] [cursor=pointer]:
+                      - generic [ref=e1340]:
+                        - img [ref=e1343]
+                        - generic [ref=e1348]: "167"
+                    - button "1038 Likes. Like" [ref=e1350] [cursor=pointer]:
+                      - generic [ref=e1351]:
+                        - img [ref=e1354]
+                        - generic [ref=e1359]: 1K
+                    - button "4226 Bookmarks. Bookmark" [ref=e1361] [cursor=pointer]:
+                      - generic [ref=e1362]:
+                        - img [ref=e1365]
+                        - generic [ref=e1370]: 4.2K
+                    - button "Share post" [ref=e1373] [cursor=pointer]:
+                      - img [ref=e1377]
+                  - button "Read 24 replies" [ref=e1380] [cursor=pointer]:
+                    - generic [ref=e1381]:
+                      - img [ref=e1382]
+                      - generic [ref=e1386]: Read 24 replies
+      - generic "Trending" [ref=e1391]:
+        - generic [ref=e1392]:
+          - region "Sign up" [ref=e1394]:
+            - heading "New to X?" [level=2] [ref=e1396]:
+              - generic [ref=e1397]: New to X?
+            - generic [ref=e1398]: Sign up now to get your own personalized timeline!
+            - generic [ref=e1399]:
+              - iframe [ref=e1402]:
+                - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                  - generic [ref=f1e5]:
+                    - img [ref=f1e7]
+                    - generic [ref=f1e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e1403] [cursor=pointer]:
+                - generic [ref=e1404]:
+                  - img [ref=e1405]
+                  - generic [ref=e1409]: Sign up with Apple
+              - link "Create account" [ref=e1410] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e1413]: Create account
+            - generic [ref=e1414]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e1415] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e1416] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e1417] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e1419]:
+            - heading "Relevant people" [level=2] [ref=e1421]:
+              - generic [ref=e1422]: Relevant people
+            - list [ref=e1423]:
+              - listitem [ref=e1424] [cursor=pointer]:
+                - generic [ref=e1425]:
+                  - link [ref=e1435]:
+                    - /url: /seelffff
+                  - generic [ref=e1438]:
+                    - generic [ref=e1439]:
+                      - generic [ref=e1441]:
+                        - link "self.dll Verified account" [ref=e1443]:
+                          - /url: /seelffff
+                          - generic [ref=e1444]:
+                            - generic [ref=e1446]: self.dll
+                            - img "Verified account" [ref=e1449]
+                        - link "@seelffff" [ref=e1454]:
+                          - /url: /seelffff
+                          - generic [ref=e1456]: "@seelffff"
+                      - button "Follow @seelffff" [ref=e1458]:
+                        - generic [ref=e1461]: Follow
+                    - generic [ref=e1462]:
+                      - text: AI/ML engineer |
+                      - link "@Polymarket" [ref=e1465]:
+                        - /url: /Polymarket
+                      - text: believer DM is open/long-term cooperation
+          - region "Trending now" [ref=e1467]:
+            - heading "Trending now" [level=1] [ref=e1468]
+            - 'generic "Timeline: Trending now" [ref=e1469]':
+              - generic [ref=e1470]:
+                - heading "What’s happening" [level=2] [ref=e1474]:
+                  - generic [ref=e1475]: What’s happening
+                - link "BTS ARMY · Trending ARMY MEMBERSHIP PRESALE" [ref=e1478] [cursor=pointer]:
+                  - generic [ref=e1479]:
+                    - generic [ref=e1481]: BTS ARMY · Trending
+                    - generic [ref=e1482]: ARMY MEMBERSHIP PRESALE
+                - 'link "Trending in United States #BillyPlayList" [ref=e1485] [cursor=pointer]':
+                  - generic [ref=e1486]:
+                    - generic [ref=e1488]: Trending in United States
+                    - generic [ref=e1490]: "#BillyPlayList"
+                - link "Politics · Trending Al Green" [ref=e1493] [cursor=pointer]:
+                  - generic [ref=e1494]:
+                    - generic [ref=e1496]: Politics · Trending
+                    - generic [ref=e1497]: Al Green
+                - link "Gaming · Trending Zero Hour" [ref=e1500] [cursor=pointer]:
+                  - generic [ref=e1501]:
+                    - generic [ref=e1503]: Gaming · Trending
+                    - generic [ref=e1504]: Zero Hour
+                - link "Show more" [ref=e1507] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e1508]: Show more
+          - navigation "Footer" [ref=e1510]:
+            - generic [ref=e1511]:
+              - link "Terms of Service" [ref=e1512] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e1513]: "|"
+            - generic [ref=e1514]:
+              - link "Privacy Policy" [ref=e1515] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e1516]: "|"
+            - generic [ref=e1517]:
+              - link "Cookie Policy" [ref=e1518] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e1519]: "|"
+            - generic [ref=e1520]:
+              - link "Accessibility" [ref=e1521] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e1522]: "|"
+            - generic [ref=e1523]:
+              - link "Ads info" [ref=e1524] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e1525]: "|"
+            - button "More" [ref=e1526] [cursor=pointer]:
+              - generic [ref=e1527]:
+                - text: More
+                - img [ref=e1528]
+            - generic [ref=e1531]: © 2026 X Corp.

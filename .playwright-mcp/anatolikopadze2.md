@@ -1,0 +1,409 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /anatolikopadze/article/2054568935274549597
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Anatoli Kopadze Verified account @AnatoliKopadze 152 replies, 1250 reposts, 6689 likes, 27998 bookmarks, 19979506 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /AnatoliKopadze
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Anatoli Kopadze Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /AnatoliKopadze
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Anatoli Kopadze
+                          - img "Verified account" [ref=e116]
+                      - link "@AnatoliKopadze" [ref=e122] [cursor=pointer]:
+                        - /url: /AnatoliKopadze
+                        - generic [ref=e123]: "@AnatoliKopadze"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/article/2054568935274549597/media/2054562274157682688
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: How to Actually Use Claude. 18 steps that unlock 100% of its potential
+                      - group "152 replies, 1250 reposts, 6689 likes, 27998 bookmarks, 19979506 views" [ref=e154]:
+                        - button "152 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "152"
+                        - button "1250 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: 1.2K
+                        - button "6689 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: 6.6K
+                        - link "19979506 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /AnatoliKopadze/status/2054568935274549597/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 19M
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - separator [ref=e223]
+                        - generic [ref=e226]: Claude has been out for two years. Most people who use it every day are still using 10% of what it can do.
+                        - generic [ref=e229]: Not because it's complicated. Because nobody showed them what the other 90% looks like. This guide fixes that. By the end you will have Claude set up in a way that remembers you, understands you, and works the way you actually think. And you will know how to use it for things most people have never tried.
+                        - separator [ref=e231]
+                        - heading "Start Here" [level=2] [ref=e233]:
+                          - generic [ref=e235]: Start Here
+                        - generic [ref=e237]:
+                          - generic [ref=e238]: 1 - Create a Project, not a chat
+                          - generic [ref=e239]: Every time you open a new Claude chat, it starts with zero memory. It doesn't know your name, your work, your goals, or how you like to communicate. You spend the first few messages re-explaining yourself, or you don't, and Claude gives you something generic that doesn't fit how you actually work. Projects fix this. A Project is a persistent workspace where Claude keeps context across every conversation inside it. You set it up once and every session that follows starts with Claude already knowing who you are. Go to Claude, click Projects in the sidebar, and create a new one. Name it something like "Work" or "Personal" depending on how you plan to use it. Everything that follows goes inside this Project.
+                        - separator [ref=e241]
+                        - generic [ref=e243]:
+                          - generic [ref=e244]: 2 - Tell Claude who you are
+                          - generic [ref=e245]: Before Claude can help you well, it needs to understand you. Most people skip this step entirely and wonder why Claude gives them answers that feel slightly off. Paste this into your Project and fill in every field honestly. The more specific you are, the better every single response becomes.
+                        - generic [ref=e248]:
+                          - button "Copy to clipboard" [ref=e251] [cursor=pointer]:
+                            - img [ref=e253]
+                          - code [ref=e257]: "My name is [your name]. I work as [your role or profession]. My main responsibilities are [2-3 things you actually do day to day]. Right now my biggest goals are [1-3 specific goals you're working toward]. I use Claude mostly for [list your main use cases — writing, research, analysis, learning, coding, etc]. My background and knowledge level: [what you know well, what you're learning, what you're new to]. How I like to receive information: [e.g. direct and concise / detailed with examples / step by step / no bullet points / short paragraphs]. Things I don't want: [e.g. don't add disclaimers, don't use corporate language, don't repeat what I just said back to me, don't start with \"Great question\"]. Topics and areas I care about: [your interests, industry, niche]."
+                        - generic [ref=e260]: Save this inside your Project's knowledge base. Claude will read it at the start of every conversation in this Project.
+                        - separator [ref=e262]
+                        - generic [ref=e264]:
+                          - generic [ref=e265]: 3 - Turn that into Custom Instructions
+                          - generic [ref=e266]: "Pasting your background is a good start. But Custom Instructions go further. They tell Claude not just who you are, but exactly how to behave with you by default. Paste this prompt into Claude after you've filled in the template above:"
+                        - generic [ref=e269]:
+                          - button "Copy to clipboard" [ref=e272] [cursor=pointer]:
+                            - img [ref=e274]
+                          - code [ref=e278]: "Based on everything I've told you about myself, write me a set of custom instructions for this Claude Project. The instructions should: - Describe who I am and what I do - Set my default communication style and format - Tell Claude what to never do when working with me - Define the tone I want in every response - Include any default behaviors I would want in every session Write them in second person, as if Claude is reading rules about how to help me. Be specific. No generic advice. Under 400 words."
+                        - generic [ref=e281]: Take the output and paste it into your Project Instructions. This becomes Claude's permanent operating mode for every conversation in this Project.
+                        - separator [ref=e283]
+                        - heading "Claude Is Not What You Think" [level=2] [ref=e285]:
+                          - generic [ref=e287]: Claude Is Not What You Think
+                        - generic [ref=e290]: 4 - Claude is not a search engine
+                        - generic [ref=e293]: Most people use Claude the way they use Google. They type a question and wait for an answer. That is the lowest-value way to use it.
+                        - generic [ref=e296]: Claude is not a retrieval tool. It is a thinking partner. It doesn't just pull information, it reasons, synthesizes, argues, and builds on context. The moment you treat it like a search engine, you cut its usefulness by 80 percent.
+                        - separator [ref=e298]
+                        - generic [ref=e301]: "Stop asking Claude what something is. Start asking Claude to help you think through something. Instead of: \"What is prompt caching?\""
+                        - generic [ref=e304]: "Try: \"I'm building a workflow that calls Claude 20 times per session. Walk me through how prompt caching works and whether it would actually reduce my costs given that context.\""
+                        - generic [ref=e307]: The second prompt gives Claude a problem to solve with you. The first gives it a definition to recite.
+                        - separator [ref=e309]
+                        - generic [ref=e312]: 5 - Ask Claude to ask you questions first
+                        - generic [ref=e315]: This is one of the most powerful techniques almost nobody uses. Before Claude starts any complex task, tell it to gather information from you first.
+                        - generic [ref=e318]: When Claude asks you questions before starting, the output is dramatically better because it's built on the right foundation. Without this, Claude makes assumptions and you spend time correcting things that could have been right the first time.
+                        - separator [ref=e320]
+                        - generic [ref=e323]: "Use this before any important task:"
+                        - generic [ref=e326]:
+                          - button "Copy to clipboard" [ref=e329] [cursor=pointer]:
+                            - img [ref=e331]
+                          - code [ref=e335]: Before you start, ask me the 5 most important questions that would help you do this well. After I answer, then begin.
+                        - separator [ref=e337]
+                        - generic [ref=e340]: "Or for a specific task:"
+                        - generic [ref=e343]:
+                          - button "Copy to clipboard" [ref=e346] [cursor=pointer]:
+                            - img [ref=e348]
+                          - code [ref=e352]: I need you to help me write a cold email to a potential client. Before you write anything, ask me what you need to know to make this genuinely good, not generic.
+                        - separator [ref=e354]
+                        - heading "What Even Regular Users Don't Know" [level=2] [ref=e356]:
+                          - generic [ref=e358]: What Even Regular Users Don't Know
+                        - generic [ref=e360]:
+                          - generic [ref=e361]: 6 - Style cloning
+                          - generic [ref=e362]: When Claude writes in your voice without examples, it writes in its own voice. The output is grammatically correct and completely wrong in tone. It sounds like AI because it is.
+                        - generic [ref=e365]: Give Claude three to five samples of your own writing. Ask it to analyze your patterns, not just describe your style. After that analysis, it writes like you, not like a polished corporate assistant.
+                        - generic [ref=e368]:
+                          - button "Copy to clipboard" [ref=e371] [cursor=pointer]:
+                            - img [ref=e373]
+                          - code [ref=e377]: "Here are 3 examples of my writing: [paste sample 1] [paste sample 2] [paste sample 3] Analyze my writing style in detail. Look at: sentence length, rhythm, vocabulary choices, how I open and close paragraphs, what I avoid, how formal or informal I am, and any patterns that make my writing distinct. After this, when I ask you to write anything for me, match this style exactly. Do not default to your own patterns."
+                        - separator [ref=e379]
+                        - generic [ref=e382]: 7 - Claude as your sparring partner
+                        - generic [ref=e385]: Most people ask Claude to help them with ideas. That means Claude builds on what you say, adds to it, expands it. You get agreement and elaboration.
+                        - generic [ref=e388]: That is useful sometimes. But it is not how you stress-test an idea.
+                        - generic [ref=e391]: Before committing to any plan, decision, or piece of writing, ask Claude to attack it. Not critique it. Attack it. The distinction matters.
+                        - generic [ref=e394]:
+                          - button "Copy to clipboard" [ref=e397] [cursor=pointer]:
+                            - img [ref=e399]
+                          - code [ref=e403]: "Here is my plan: [describe your plan] Your job is to destroy it. Find every assumption I'm making that could be wrong. Find every way this could fail. Argue the opposite position as hard as you can. Do not be polite. Do not add qualifications. Just attack. After that, steelman my position. Build the strongest possible case for why I'm right. Then tell me what you actually think."
+                        - separator [ref=e405]
+                        - generic [ref=e408]: 8 - Extended Thinking
+                        - generic [ref=e411]: Most Claude users have never turned this on. Extended Thinking is a mode where Claude reasons through a problem step by step before giving you an answer, instead of going straight to the output.
+                        - generic [ref=e414]: For simple tasks, you don't need it. For complex decisions, analysis, or any question where you want Claude to actually think rather than pattern-match, turn it on.
+                        - generic [ref=e417]: "In Claude, click the brain icon before sending your message. Or add this to your prompt:"
+                        - generic [ref=e420]:
+                          - button "Copy to clipboard" [ref=e423] [cursor=pointer]:
+                            - img [ref=e425]
+                          - code [ref=e429]: Think through this carefully before responding. Work through the problem step by step, show your reasoning, identify where you're uncertain, then give me your conclusion.
+                        - generic [ref=e432]: The difference in output quality on hard questions is significant.
+                        - separator [ref=e434]
+                        - generic [ref=e437]: 9 - Claude writes prompts for Claude
+                        - generic [ref=e440]: This is the most underused thing you can do. If you're not sure how to prompt Claude for a specific task, ask Claude to write the prompt for you.
+                        - generic [ref=e443]: Claude knows what kinds of instructions produce better results. Let it use that knowledge on your behalf.
+                        - generic [ref=e446]:
+                          - button "Copy to clipboard" [ref=e449] [cursor=pointer]:
+                            - img [ref=e451]
+                          - code [ref=e455]: I need Claude to help me [describe your actual task]. Write me the best possible prompt for this task. Include role, context, format instructions, and any constraints that would improve the output. Then use that prompt immediately.
+                        - separator [ref=e457]
+                        - heading "How to Spend Fewer Tokens and Get More" [level=2] [ref=e459]:
+                          - generic [ref=e461]: How to Spend Fewer Tokens and Get More
+                        - generic [ref=e464]: 10 - Specify the output length
+                        - generic [ref=e467]: Claude's default is to write as much as it thinks is appropriate. That is usually more than you need, which means more tokens used, more time spent reading, and more noise in the output.
+                        - generic [ref=e470]: Tell Claude exactly how long you want the answer before it starts.
+                        - generic [ref=e473]:
+                          - button "Copy to clipboard" [ref=e476] [cursor=pointer]:
+                            - img [ref=e478]
+                          - code [ref=e482]: Answer in 3 sentences maximum.
+                        - generic [ref=e485]:
+                          - button "Copy to clipboard" [ref=e488] [cursor=pointer]:
+                            - img [ref=e490]
+                          - code [ref=e494]: Give me 5 bullet points. No explanations. Just the points.
+                        - generic [ref=e497]:
+                          - button "Copy to clipboard" [ref=e500] [cursor=pointer]:
+                            - img [ref=e502]
+                          - code [ref=e506]: Write this in under 150 words.
+                        - generic [ref=e509]: This one instruction cuts token usage on most tasks by 40 to 60 percent without losing any of the value you actually need.
+                        - separator [ref=e511]
+                        - generic [ref=e514]: 11 - Remove the preamble
+                        - generic [ref=e517]: Every Claude response defaults to starting with something you didn't ask for. "Great question. Let me break this down for you." Or a full restatement of what you just said. Or a disclaimer. Or a closing summary that repeats everything it just told you. You didn't ask for any of that. It costs tokens and it wastes your time.
+                        - generic [ref=e520]: "Add this to your Custom Instructions:"
+                        - generic [ref=e523]:
+                          - button "Copy to clipboard" [ref=e526] [cursor=pointer]:
+                            - img [ref=e528]
+                          - code [ref=e532]: Never start responses with preamble, affirmations, or restatements of my question. Go directly to the answer. Do not add a summary at the end unless I specifically ask for one. No disclaimers unless the topic genuinely requires one.
+                        - separator [ref=e534]
+                        - generic [ref=e537]: 12 - Don't re-explain yourself every conversation
+                        - generic [ref=e540]: If you're pasting the same background information into every new chat, you are wasting tokens every single time and training yourself into a habit that costs you more as Claude usage scales.
+                        - generic [ref=e543]: This is exactly what Projects and Custom Instructions are for. Put your context in once. Let Claude read it automatically at the start of every session. Never paste your background again.
+                        - generic [ref=e546]: If you are not using Projects yet, start there before anything else in this article.
+                        - separator [ref=e548]
+                        - generic [ref=e551]: 13 - Start a new chat for a new topic
+                        - generic [ref=e554]: Claude carries the context of everything said earlier in a conversation. When you switch topics inside a long chat, Claude still has all the previous context loaded. That means more tokens used on every response, slower processing, and context bleed from earlier in the conversation affecting your new topic.
+                        - generic [ref=e557]: When you switch to something unrelated, start a fresh chat inside your Project. You keep the Project memory. You lose the irrelevant baggage.
+                        - separator [ref=e559]
+                        - heading "Ready to Use Right Now" [level=2] [ref=e561]:
+                          - generic [ref=e563]: Ready to Use Right Now
+                        - generic [ref=e566]: These are complete prompts you can copy and use immediately.
+                        - generic [ref=e569]: 14 - Understand anything through analogies (Feynman method)
+                        - generic [ref=e572]: Most explanations Claude gives by default are technically correct and practically useless. They use the same vocabulary as the thing you're trying to understand, which means you walk away with a definition but not actual comprehension.
+                        - generic [ref=e575]: The Feynman method forces understanding through simplicity. If Claude can't explain it in plain terms using analogies, it means the explanation isn't clear enough yet. This prompt works for anything from investing to quantum physics to how a specific API works.
+                        - generic [ref=e578]:
+                          - button "Copy to clipboard" [ref=e581] [cursor=pointer]:
+                            - img [ref=e583]
+                          - code [ref=e587]: Explain [topic] to me using only analogies and everyday examples. No jargon. Assume I have no background in this field. After each analogy, check whether I've actually understood it by asking me one question. Based on my answer, go deeper or adjust the explanation. Keep going until I can explain it back to you in my own words without using any technical terms.
+                        - separator [ref=e589]
+                        - generic [ref=e592]: 15 - Travel plan built around how you actually travel
+                        - generic [ref=e595]: "Most travel planning starts with destinations and ends with a generic itinerary you could find on any travel blog. Claude can do something different: build a plan around your specific travel style, pace, budget, and what actually matters to you, not what's on every must-see list."
+                        - generic [ref=e598]: The key is giving it real information about you, not just dates and locations.
+                        - generic [ref=e601]:
+                          - button "Copy to clipboard" [ref=e604] [cursor=pointer]:
+                            - img [ref=e606]
+                          - code [ref=e610]: "I'm planning a trip to [destination]. I'll be there for [number of days]. My budget is approximately [amount] per day including accommodation. Here's how I actually travel: [describe your style — do you like slow mornings or packed days, touristy places or local spots, museums or food, active or relaxed, solo or with someone, etc]. Things I want to avoid: [crowds, tourist traps, expensive restaurants, long transport times, etc]. Build me a day-by-day itinerary that fits this. For each day, include where to stay, what to do, where to eat, and any logistics I need to know. Flag anything that requires booking in advance."
+                        - separator [ref=e612]
+                        - generic [ref=e615]: 16 - Monthly expense analysis with real conclusions
+                        - generic [ref=e618]: Most people look at their bank statement and feel vaguely bad about their spending without understanding what's actually happening. Claude can turn raw numbers into a clear picture of where your money is going and what you should actually do about it.
+                        - generic [ref=e621]: This works best when you paste real data, not estimates.
+                        - generic [ref=e624]:
+                          - button "Copy to clipboard" [ref=e627] [cursor=pointer]:
+                            - img [ref=e629]
+                          - code [ref=e633]: "I'm going to paste my expenses from the last month. Analyze them and tell me: 1. What categories am I spending the most on 2. Where my spending looks unusual compared to what I described as my goals 3. What I could cut without meaningfully affecting my life 4. What I'm probably underspending on that matters 5. One specific change that would have the biggest financial impact Here are my expenses: [paste your bank statement or expense list] My financial goals right now: [describe what you're trying to do — save more, pay off debt, invest, etc]"
+                        - separator [ref=e635]
+                        - generic [ref=e638]: 17 - Claude as your personal thinking partner
+                        - generic [ref=e641]: Most people don't have someone in their life who will listen without judgment, ask the right questions, and help them work through something they're stuck on without pushing their own agenda. Claude can fill that role, but only if you give it the right instructions.
+                        - generic [ref=e644]: This isn't therapy. It's structured self-reflection with an outside perspective that helps you think more clearly.
+                        - generic [ref=e647]:
+                          - button "Copy to clipboard" [ref=e650] [cursor=pointer]:
+                            - img [ref=e652]
+                          - code [ref=e656]: "I want to talk through something I'm dealing with. Your job is not to give me advice right away. First, ask me questions to understand the situation fully. What's actually happening, how I feel about it, what I've already tried, and what outcome I'm hoping for. After you understand the full picture, reflect back what you're hearing — not just the facts but what seems to be underneath them. Then, and only then, offer your perspective. Be honest, not reassuring. Tell me what you actually think, including anything I might not want to hear. Here's what's on my mind: [describe what you want to think through]"
+                        - separator [ref=e658]
+                        - generic [ref=e661]: 18 - Stress-test any business idea before you commit
+                        - generic [ref=e664]: Most business ideas die because people fall in love with them before testing them. They spend months building something nobody wants because they never honestly asked whether the idea was actually good.
+                        - generic [ref=e667]: Claude can act as a ruthless first filter. Not to kill ideas, but to find the real problems before they cost you time and money.
+                        - generic [ref=e670]:
+                          - button "Copy to clipboard" [ref=e673] [cursor=pointer]:
+                            - img [ref=e675]
+                          - code [ref=e679]: "I have a business idea I want to stress-test before I invest serious time in it. Here's the idea: [describe it in detail — what it is, who it's for, how it makes money, why you think it works] Your job is to find everything wrong with it. Specifically: 1. What assumptions am I making that could be wrong 2. Who already does this and why I might lose to them 3. Why the target customer might not actually pay for this 4. What would have to be true for this to work, and how likely is that 5. The single biggest problem with this idea Be specific. Generic risks like \"the market might not be ready\" are not useful. Give me the real version of each problem. After that, tell me what the idea would need to look like to actually work."
+                        - separator [ref=e681]
+                        - heading "The Actual Point" [level=2] [ref=e683]:
+                          - generic [ref=e685]: The Actual Point
+                        - generic [ref=e688]: Claude is not smarter than you. It does not have better ideas than you. What it has is infinite patience, broad knowledge, and the ability to think through problems from angles you haven't considered.
+                        - generic [ref=e691]: The people who get the most from Claude are not the ones with the best questions. They are the ones who have set it up to understand them, who give it real context, and who know how to use it as a partner rather than a dispenser.
+                        - generic [ref=e694]: Most people will read this and keep opening Claude the same way they always have.
+                        - generic [ref=e697]: Set it up once. Change how you work permanently.
+                      - status [ref=e699]:
+                        - generic [ref=e700]:
+                          - img [ref=e701]
+                          - generic [ref=e705]:
+                            - generic [ref=e706]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e707] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e711]:
+                    - link "2:26 PM · May 13, 2026" [ref=e713] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/status/2054568935274549597
+                      - time [ref=e714]: 2:26 PM · May 13, 2026
+                    - generic [ref=e715]: ·
+                    - link "19.9M Views" [ref=e716] [cursor=pointer]:
+                      - /url: /AnatoliKopadze/status/2054568935274549597/analytics
+                      - generic [ref=e719]: 19.9M
+                      - generic [ref=e720]: Views
+                  - group "152 replies, 1250 reposts, 6689 likes, 27998 bookmarks, 19979506 views" [ref=e723]:
+                    - button "152 Replies. Reply" [ref=e725] [cursor=pointer]:
+                      - generic [ref=e726]:
+                        - img [ref=e729]
+                        - generic [ref=e734]: "152"
+                    - button "1250 reposts. Repost" [ref=e736] [cursor=pointer]:
+                      - generic [ref=e737]:
+                        - img [ref=e740]
+                        - generic [ref=e745]: 1.2K
+                    - button "6689 Likes. Like" [ref=e747] [cursor=pointer]:
+                      - generic [ref=e748]:
+                        - img [ref=e751]
+                        - generic [ref=e756]: 6.6K
+                    - button "27998 Bookmarks. Bookmark" [ref=e758] [cursor=pointer]:
+                      - generic [ref=e759]:
+                        - img [ref=e762]
+                        - generic [ref=e767]: 27K
+                    - button "Share post" [ref=e770] [cursor=pointer]:
+                      - img [ref=e774]
+                  - button "Read 152 replies" [ref=e777] [cursor=pointer]:
+                    - generic [ref=e778]:
+                      - img [ref=e779]
+                      - generic [ref=e783]: Read 152 replies
+      - generic "Trending" [ref=e788]:
+        - generic [ref=e789]:
+          - region "Sign up" [ref=e791]:
+            - heading "New to X?" [level=2] [ref=e793]:
+              - generic [ref=e794]: New to X?
+            - generic [ref=e795]: Sign up now to get your own personalized timeline!
+            - generic [ref=e796]:
+              - iframe [ref=e799]:
+                - button "Sign up with Google. Opens in new tab" [ref=f2e3] [cursor=pointer]:
+                  - generic [ref=f2e5]:
+                    - img [ref=f2e7]
+                    - generic [ref=f2e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e800] [cursor=pointer]:
+                - generic [ref=e801]:
+                  - img [ref=e802]
+                  - generic [ref=e806]: Sign up with Apple
+              - link "Create account" [ref=e807] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e810]: Create account
+            - generic [ref=e811]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e812] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e813] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e814] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e816]:
+            - heading "Relevant people" [level=2] [ref=e818]:
+              - generic [ref=e819]: Relevant people
+            - list [ref=e820]:
+              - listitem [ref=e821] [cursor=pointer]:
+                - generic [ref=e822]:
+                  - link [ref=e832]:
+                    - /url: /AnatoliKopadze
+                  - generic [ref=e835]:
+                    - generic [ref=e836]:
+                      - generic [ref=e838]:
+                        - link "Anatoli Kopadze Verified account" [ref=e840]:
+                          - /url: /AnatoliKopadze
+                          - generic [ref=e841]:
+                            - generic [ref=e843]: Anatoli Kopadze
+                            - img "Verified account" [ref=e846]
+                        - link "@AnatoliKopadze" [ref=e851]:
+                          - /url: /AnatoliKopadze
+                          - generic [ref=e853]: "@AnatoliKopadze"
+                      - button "Follow @AnatoliKopadze" [ref=e855]:
+                        - generic [ref=e858]: Follow
+                    - generic [ref=e859]: Adapt or die
+          - region "Trending now" [ref=e861]:
+            - heading "Trending now" [level=1] [ref=e862]
+            - 'generic "Timeline: Trending now" [ref=e863]':
+              - generic [ref=e864]:
+                - heading "What’s happening" [level=2] [ref=e868]:
+                  - generic [ref=e869]: What’s happening
+                - 'link "Trending worldwide #kurbanbayramınızmübarekolsun" [ref=e872] [cursor=pointer]':
+                  - generic [ref=e873]:
+                    - generic [ref=e875]: Trending worldwide
+                    - generic [ref=e877]: "#kurbanbayramınızmübarekolsun"
+                - 'link "Trending worldwide #FB2026Explained" [ref=e880] [cursor=pointer]':
+                  - generic [ref=e881]:
+                    - generic [ref=e883]: Trending worldwide
+                    - generic [ref=e885]: "#FB2026Explained"
+                - link "Trending worldwide Read The Room" [ref=e888] [cursor=pointer]:
+                  - generic [ref=e889]:
+                    - generic [ref=e891]: Trending worldwide
+                    - generic [ref=e892]: Read The Room
+                - 'link "Politics · Trending #UhuruStopPretence" [ref=e895] [cursor=pointer]':
+                  - generic [ref=e896]:
+                    - generic [ref=e898]: Politics · Trending
+                    - generic [ref=e900]: "#UhuruStopPretence"
+                - link "Show more" [ref=e903] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e904]: Show more
+          - navigation "Footer" [ref=e906]:
+            - generic [ref=e907]:
+              - link "Terms of Service" [ref=e908] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e909]: "|"
+            - generic [ref=e910]:
+              - link "Privacy Policy" [ref=e911] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e912]: "|"
+            - generic [ref=e913]:
+              - link "Cookie Policy" [ref=e914] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e915]: "|"
+            - generic [ref=e916]:
+              - link "Accessibility" [ref=e917] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e918]: "|"
+            - generic [ref=e919]:
+              - link "Ads info" [ref=e920] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e921]: "|"
+            - button "More" [ref=e922] [cursor=pointer]:
+              - generic [ref=e923]:
+                - text: More
+                - img [ref=e924]
+            - generic [ref=e927]: © 2026 X Corp.

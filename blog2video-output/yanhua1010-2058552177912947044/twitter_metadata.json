@@ -1,0 +1,18 @@
+{
+  "url": "https://x.com/yanhua1010/status/2058552177912947044",
+  "author": "Yanhua",
+  "handle": "@yanhua1010",
+  "title": "Agentic Design Patterns：一本让我重新理解\"Agent 到底是什么\"的书",
+  "published": "2026-05-24 2:14 PM",
+  "stats": {"replies": 8, "reposts": 127, "likes": 489, "bookmarks": 1122, "views": 77201},
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {"file": "images/image_1_cover.jpg", "context": "article cover"},
+    {"file": "images/image_2_levels.jpg", "context": "Agent 0-3 level diagram"},
+    {"file": "images/image_3_context_eng.jpg", "context": "Context Engineering 4 layers"},
+    {"file": "images/image_4_reflection.jpg", "context": "Producer-Critic Reflection pattern"},
+    {"file": "images/image_5_multiagent.jpg", "context": "Multi-Agent topology diagrams"},
+    {"file": "images/image_6_memory.jpg", "context": "Memory 3-layer model"},
+    {"file": "images/image_7_morphing.jpg", "context": "Morphing multi-agent (5th future assumption)"}
+  ]
+}

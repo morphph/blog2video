@@ -1,0 +1,31 @@
+{
+  "url": "https://x.com/sairahul1/status/2058832033628241931",
+  "author": "Rahul",
+  "handle": "@sairahul1",
+  "author_bio": "Building with AI. Sharing what's wild, what's practical, and what's next. Founder of NicheTrafficKit",
+  "title": "How to Build a Software Factory with Claude Code That Ships Features While You Sleep",
+  "published": "2026-05-25 8:46 AM",
+  "stats": {
+    "replies": 23,
+    "reposts": 205,
+    "likes": 1278,
+    "bookmarks": 6309,
+    "views": 2396198
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {"file": "images/image_1_cover.jpg", "context": "article cover image"},
+    {"file": "images/image_2_vibe_loop.jpg", "context": "vibe coding loop diagram (the productive-feeling but failing loop)"},
+    {"file": "images/image_3_factory_shift.jpg", "context": "factory shift: from vibe coding to a software factory"},
+    {"file": "images/image_4_agent1_researcher.jpg", "context": "Agent 1 the Codebase Researcher card"},
+    {"file": "images/image_5_agent2_storywriter.jpg", "context": "Agent 2 the Story Writer card"},
+    {"file": "images/image_6_agent3_specwriter.jpg", "context": "Agent 3 the Spec Writer card"},
+    {"file": "images/image_7_agent4_backend.jpg", "context": "Agent 4 the Backend Builder card"},
+    {"file": "images/image_8_agent5_frontend.jpg", "context": "Agent 5 the Frontend Builder card"},
+    {"file": "images/image_9_agent6_test_verifier.jpg", "context": "Agent 6 the Test Verifier card"},
+    {"file": "images/image_10_agent7_validator.jpg", "context": "Agent 7 the Implementation Validator card"},
+    {"file": "images/image_11_chain_flow.jpg", "context": "how the chain runs — full 7-agent flow with 3 human checkpoints"},
+    {"file": "images/image_12_claudemd.jpg", "context": "CLAUDE.md as the durable cross-session memory"},
+    {"file": "images/image_13_setup_checklist.jpg", "context": "8-step weekend setup checklist"}
+  ]
+}

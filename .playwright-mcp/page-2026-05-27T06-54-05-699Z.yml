@@ -1,0 +1,41 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: Don’t miss what’s happening
+      - generic [ref=e10]: People on X are the first to know.
+    - generic [ref=e13]:
+      - link "Log in" [ref=e15] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e18]: Log in
+      - link "Sign up" [ref=e20] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e23]: Sign up
+  - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+  - button "Skip to trending" [ref=e26] [cursor=pointer]
+  - banner [ref=e28]:
+    - generic [ref=e31]:
+      - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+        - link "X" [ref=e34]:
+          - /url: /
+          - img [ref=e36]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e39]:
+    - generic "Home timeline" [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e51] [cursor=pointer]:
+          - button "Back" [ref=e53]:
+            - img [ref=e55]
+          - heading "Post" [level=2] [ref=e60]
+        - generic:
+          - generic:
+            - status:
+              - button:
+                - generic:
+                  - img
+                  - generic: See new posts
+      - region "Conversation" [ref=e62]:
+        - heading "Conversation" [level=1] [ref=e63]
+        - 'generic "Timeline: Conversation" [ref=e64]':
+          - progressbar [ref=e66]:
+            - img [ref=e68]

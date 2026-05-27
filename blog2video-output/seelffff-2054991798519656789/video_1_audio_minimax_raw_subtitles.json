@@ -1,0 +1,682 @@
+[
+  {
+    "text": "你刷了一整年 AI 课，Coursera、DataCamp、Udemy 的证书攒了一抽屉，让你从零写出一个 Agent，写不出来。这不是你不够聪明，是顺序错了。",
+    "pronounce_text": "你刷了一整年AI课，Coursera、DataCamp、Udemy的证书攒了一抽屉，让你从零写出一个Agent，写不出来。这不是你不够聪明，是顺序错了。",
+    "time_begin": 0,
+    "time_end": 11800.226757369614,
+    "text_begin": 0,
+    "text_end": 80,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 76
+  },
+  {
+    "text": "X 上有个 ID 叫 self.dll 的 AI/ML 工程师，自己烧过每月接近 300 美元的订阅费才看明白这件事。",
+    "pronounce_text": "X上有个ID叫self.dll的AI，ML工程师，自己烧过每月接近三百美元的订阅费才看明白这件事。",
+    "time_begin": 11952,
+    "time_end": 21407.01133786848,
+    "text_begin": 80,
+    "text_end": 139,
+    "pronounce_text_begin": 76,
+    "pronounce_text_end": 125
+  },
+  {
+    "text": "他写了一份 14 周的路线图，把过去一年我们这群人踩过的坑全部摊开了——而且全程零成本。",
+    "pronounce_text": "他写了一份十四周的路线图，把过去一年我们这群人踩过的坑全部摊开了。而且全程零成本。",
+    "time_begin": 21607.01133786848,
+    "time_end": 29483.06575963719,
+    "text_begin": 139,
+    "text_end": 183,
+    "pronounce_text_begin": 125,
+    "pronounce_text_end": 166
+  },
+  {
+    "text": "我把这份路线图读完之后，最想跟你聊的不是省了多少钱，是它把\"先学什么后学什么\"这件事，掰得有多狠。",
+    "pronounce_text": "我把这份路线图读完之后，最想跟你聊的不是省了多少钱，是它把\"先学什么后学什么\"这件事，掰得有多狠。",
+    "time_begin": 29628,
+    "time_end": 39373.26077097506,
+    "text_begin": 183,
+    "text_end": 232,
+    "pronounce_text_begin": 166,
+    "pronounce_text_end": 215
+  },
+  {
+    "text": "先说一个反直觉的事实。今天你能拿到的最好的 AI 入门课，不在 Coursera Plus、不在 DataCamp，也不在那些 199 美元的 Udemy 大包里。它们在哪？",
+    "pronounce_text": "先说一个反直觉的事实。今天你能拿到的最好的AI入门课，不在Coursera Plus、不在DataCamp，也不在那些一百九十九美元的Udemy大包里。它们在哪？",
+    "time_begin": 39528,
+    "time_end": 53290.31292517007,
+    "text_begin": 232,
+    "text_end": 319,
+    "pronounce_text_begin": 215,
+    "pronounce_text_end": 296
+  },
+  {
+    "text": "在 Anthropic、在 OpenAI、在 Google 自己。",
+    "pronounce_text": "在Anthropic、在OpenAI、在Google自己。",
+    "time_begin": 53490.31292517007,
+    "time_end": 56884.91609977324,
+    "text_begin": 319,
+    "text_end": 352,
+    "pronounce_text_begin": 296,
+    "pronounce_text_end": 325
+  },
+  {
+    "text": "Anthropic 自己开了一个学院，叫 Anthropic Academy，16 门免费课，每门发证书。OpenAI 也开了 Academy，Google 那边是 AI Professional Certificate，7 个模块。",
+    "pronounce_text": "Anthropic自己开了一个学院，叫Anthropic Academy，十六门免费课，每门发证书。OpenAI也开了Academy，Google那边是AI Professional Certificate，七个模块。",
+    "time_begin": 57024,
+    "time_end": 70484.45351473923,
+    "text_begin": 352,
+    "text_end": 469,
+    "pronounce_text_begin": 325,
+    "pronounce_text_end": 434
+  },
+  {
+    "text": "IBM 的 Machine Learning 证书，开 Coursera 审计模式就免费。",
+    "pronounce_text": "IBM的Machine Learning证书，开Coursera审计模式就免费。",
+    "time_begin": 70684.45351473923,
+    "time_end": 75565.13378684808,
+    "text_begin": 469,
+    "text_end": 514,
+    "pronounce_text_begin": 434,
+    "pronounce_text_end": 474
+  },
+  {
+    "text": "self.dll 算了一笔账。他自己之前每个月烧 49 美元 Coursera Plus，再加 39 美元 DataCamp，外加 199 美元的 Udemy 课程包，加起来接近 300 美元。",
+    "pronounce_text": "self.dll算了一笔账。他自己之前每个月烧四十九美元Coursera Plus，再加三十九美元DataCamp，外加一百九十九美元的Udemy课程包，加起来接近三百美元。",
+    "time_begin": 75708,
+    "time_end": 89772.1723356009,
+    "text_begin": 514,
+    "text_end": 611,
+    "pronounce_text_begin": 474,
+    "pronounce_text_end": 561
+  },
+  {
+    "text": "一年下来，证书攒得像宝可梦卡片，从零写一个东西出来——写不出来。",
+    "pronounce_text": "一年下来，证书攒得像宝可梦卡片，从零写一个东西出来。写不出来。",
+    "time_begin": 89928,
+    "time_end": 96306.36734693877,
+    "text_begin": 611,
+    "text_end": 643,
+    "pronounce_text_begin": 561,
+    "pronounce_text_end": 592
+  },
+  {
+    "text": "这件事的本质我想了很久。它的逻辑其实非常清楚：免费课对 Anthropic 来说，是生态投资，多一个人会用 Claude，他们就多一个潜在客户。但免费课对 DataCamp 来说，是把自己的核心商品送出去。",
+    "pronounce_text": "这件事的本质我想了很久。它的逻辑其实非常清楚：免费课对Anthropic来说，是生态投资，多一个人会用Claude，他们就多一个潜在客户。但免费课对DataCamp来说，是把自己的核心商品送出去。",
+    "time_begin": 96444,
+    "time_end": 112505.08843537416,
+    "text_begin": 643,
+    "text_end": 746,
+    "pronounce_text_begin": 592,
+    "pronounce_text_end": 690
+  },
+  {
+    "text": "所以激励是完全反过来的。真正在造 AI 的公司，比卖 AI 课的公司更愿意把训练材料免费给你。",
+    "pronounce_text": "所以激励是完全反过来的。真正在造AI的公司，比卖AI课的公司更愿意把训练材料免费给你。",
+    "time_begin": 112644,
+    "time_end": 121715.8820861678,
+    "text_begin": 746,
+    "text_end": 793,
+    "pronounce_text_begin": 690,
+    "pronounce_text_end": 733
+  },
+  {
+    "text": "除了三大公司的免费学院，self.dll 反复强调的第二件事，是 GitHub 上几个超大型的免费 repo。",
+    "pronounce_text": "除了三大公司的免费学院，self.dll反复强调的第二件事，是GitHub上几个超大型的免费repo。",
+    "time_begin": 121860,
+    "time_end": 129480.63492063493,
+    "text_begin": 793,
+    "text_end": 848,
+    "pronounce_text_begin": 733,
+    "pronounce_text_end": 784
+  },
+  {
+    "text": "最大的一个，microsoft 的 generative-ai-for-beginners，9 万 5 千颗星，21 节课。第二个，microsoft 的 ML-For-Beginners，4 万 5 千颗星，12 周课程。",
+    "pronounce_text": "最大的一个，microsoft的generative-ai-for-beginners，九万五千颗星，二十一节课。第二个，microsoft的ML-For-Beginners，四万五千颗星，十二周课程。",
+    "time_begin": 129636,
+    "time_end": 143351.87301587302,
+    "text_begin": 848,
+    "text_end": 960,
+    "pronounce_text_begin": 784,
+    "pronounce_text_end": 885
+  },
+  {
+    "text": "第三个，mlabonne 的 llm-course，4 万颗星，从线性代数一路讲到模型量化。",
+    "pronounce_text": "第三个，mlabonne的llm-course，四万颗星，从线性代数一路讲到模型量化。",
+    "time_begin": 143496,
+    "time_end": 150303.9365079365,
+    "text_begin": 960,
+    "text_end": 1006,
+    "pronounce_text_begin": 885,
+    "pronounce_text_end": 928
+  },
+  {
+    "text": "你想想这个数字。一个开源 repo 拿 9 万 5 千颗星，意味着它的口碑已经被几十万人验证过了。而你订阅的那个付费课，验证它的可能只有几十条评论。",
+    "pronounce_text": "你想想这个数字。一个开源repo拿九万五千颗星，意味着它的口碑已经被几十万人验证过了。而你订阅的那个付费课，验证它的可能只有几十条评论。",
+    "time_begin": 150444,
+    "time_end": 163219.46485260772,
+    "text_begin": 1006,
+    "text_end": 1080,
+    "pronounce_text_begin": 928,
+    "pronounce_text_end": 996
+  },
+  {
+    "text": "免费的东西不一定差，付费的东西也不一定好——这件事在 AI 教育领域今天已经反过来了。",
+    "pronounce_text": "免费的东西不一定差，付费的东西也不一定好。这件事在AI教育领域今天已经反过来了。",
+    "time_begin": 163368,
+    "time_end": 171069.90476190476,
+    "text_begin": 1080,
+    "text_end": 1123,
+    "pronounce_text_begin": 996,
+    "pronounce_text_end": 1036
+  },
+  {
+    "text": "但读到这儿你可能会想，这些资源我也知道啊，我都收藏了，我就是没学进去。",
+    "pronounce_text": "但读到这儿你可能会想，这些资源我也知道啊，我都收藏了，我就是没学进去。",
+    "time_begin": 171216,
+    "time_end": 177257.67800453515,
+    "text_begin": 1123,
+    "text_end": 1158,
+    "pronounce_text_begin": 1036,
+    "pronounce_text_end": 1071
+  },
+  {
+    "text": "self.dll 在这份路线图里给了一个特别重要的观察。他说，2026 年自学 AI 的人，绝大多数倒在同一个坑里——顺序错了。",
+    "pronounce_text": "self.dll在这份路线图里给了一个特别重要的观察。他说，两千零二十六年自学AI的人，绝大多数倒在同一个坑里。顺序错了。",
+    "time_begin": 177408,
+    "time_end": 189928.04535147393,
+    "text_begin": 1158,
+    "text_end": 1222,
+    "pronounce_text_begin": 1071,
+    "pronounce_text_end": 1132
+  },
+  {
+    "text": "他的路线图分七步。",
+    "pronounce_text": "他的路线图分七步。",
+    "time_begin": 190080,
+    "time_end": 191895.6462585034,
+    "text_begin": 1222,
+    "text_end": 1231,
+    "pronounce_text_begin": 1132,
+    "pronounce_text_end": 1141
+  },
+  {
+    "text": "我快速念一下：第一步装环境，第二步 AI 基础概念，第三步机器学习数学基础，第四步深度学习从零手写神经网络，第五步 LLM 和 Prompt Engineering，第六步 Agent，",
+    "pronounce_text": "我快速念一下：第一步装环境，第二步AI基础概念，第三步机器学习数学基础，第四步深度学习从零手写神经网络，第五步LLM和Prompt Engineering，第六步Agent，",
+    "time_begin": 192095.6462585034,
+    "time_end": 207518.18594104308,
+    "text_begin": 1231,
+    "text_end": 1324,
+    "pronounce_text_begin": 1141,
+    "pronounce_text_end": 1228
+  },
+  {
+    "text": "第七步生产化和职业。",
+    "pronounce_text": "第七步生产化和职业。",
+    "time_begin": 207718.18594104308,
+    "time_end": 210044.67120181405,
+    "text_begin": 1324,
+    "text_end": 1334,
+    "pronounce_text_begin": 1228,
+    "pronounce_text_end": 1238
+  },
+  {
+    "text": "注意看这个顺序。机器学习数学基础在第三步，深度学习手写神经网络在第四步，而 LLM 和 Prompt Engineering——你最想直接跳过去学的那个——它在第五步。Agent 在第六步。",
+    "pronounce_text": "注意看这个顺序。机器学习数学基础在第三步，深度学习手写神经网络在第四步，而LLM和Prompt Engineering。你最想直接跳过去学的那个。它在第五步。Agent在第六步。",
+    "time_begin": 210204,
+    "time_end": 225498.82993197278,
+    "text_begin": 1334,
+    "text_end": 1429,
+    "pronounce_text_begin": 1238,
+    "pronounce_text_end": 1327
+  },
+  {
+    "text": "绝大多数自学 AI 的人，是反着来的。先去刷 Prompt Engineering 视频，因为看起来最酷；再去学 LangChain，因为听起来最值钱；最后再回头补数学，结果补不下去。",
+    "pronounce_text": "绝大多数自学AI的人，是反着来的。先去刷Prompt Engineering视频，因为看起来最酷;再去学LangChain，因为听起来最值钱;最后再回头补数学，结果补不下去。",
+    "time_begin": 225648,
+    "time_end": 239967.5918367347,
+    "text_begin": 1429,
+    "text_end": 1521,
+    "pronounce_text_begin": 1327,
+    "pronounce_text_end": 1414
+  },
+  {
+    "text": "self.dll 把第一条铁律写得很硬，原话是：Don't skip ahead. 不要跳步。然后给了一个很扎心的解释——如果你跳过梯度直接学 LLM，你写出来的代码自己都看不懂，你只是在 copy-paste。",
+    "pronounce_text": "self.dll把第一条铁律写得很硬，原话是：Don't skip ahead.不要跳步。然后给了一个很扎心的解释。如果你跳过梯度直接学LLM，你写出来的代码自己都看不懂，你只是在copy-paste。",
+    "time_begin": 240120,
+    "time_end": 256866.07709750568,
+    "text_begin": 1521,
+    "text_end": 1627,
+    "pronounce_text_begin": 1414,
+    "pronounce_text_end": 1515
+  },
+  {
+    "text": "为什么顺序这么重要？路线图里有一句话我反复看了好几遍。",
+    "pronounce_text": "为什么顺序这么重要？路线图里有一句话我反复看了好几遍。",
+    "time_begin": 257004,
+    "time_end": 261629.26077097506,
+    "text_begin": 1627,
+    "text_end": 1654,
+    "pronounce_text_begin": 1515,
+    "pronounce_text_end": 1542
+  },
+  {
+    "text": "他说，机器学习基础是\"会抄教程的人\"和\"会 debug 模型的人\"之间的分水岭。公司愿意为后者付 15 万美元以上，不是为前者。",
+    "pronounce_text": "他说，机器学习基础是\"会抄教程的人\"和\"会debug模型的人\"之间的分水岭。公司愿意为后者付十五万美元以上，不是为前者。",
+    "time_begin": 261792,
+    "time_end": 273894.0861678005,
+    "text_begin": 1654,
+    "text_end": 1718,
+    "pronounce_text_begin": 1542,
+    "pronounce_text_end": 1602
+  },
+  {
+    "text": "这句话我帮你翻译一下。今天你打开任何一个 AI 创业公司的招聘页，Junior AI Engineer 大概是 8 万到 12 万美元，Prompt 或 Agent Engineer 是 12 万到 18 万，AI Product Engineer 是 15 万到 25 万。",
+    "pronounce_text": "这句话我帮你翻译一下。今天你打开任何一个AI创业公司的招聘页，Junior AI Engineer大概是八万到十二万美元，Prompt或Agent Engineer是十二万到十八万，AI Product Engineer是十五万到二十五万。",
+    "time_begin": 274032,
+    "time_end": 290058.25850340136,
+    "text_begin": 1718,
+    "text_end": 1856,
+    "pronounce_text_begin": 1602,
+    "pronounce_text_end": 1722
+  },
+  {
+    "text": "这三档的差距在哪儿？不在你会不会调 Claude API——API 文档谁都能查。差距在模型出问题的时候，你能不能拆开看哪一层不对。",
+    "pronounce_text": "这三档的差距在哪儿？不在你会不会调Claude API。API文档谁都能查。差距在模型出问题的时候，你能不能拆开看哪一层不对。",
+    "time_begin": 290196,
+    "time_end": 301694.36734693876,
+    "text_begin": 1856,
+    "text_end": 1922,
+    "pronounce_text_begin": 1722,
+    "pronounce_text_end": 1785
+  },
+  {
+    "text": "会调 API 的人，今天已经不稀缺了。稀缺的是看到一个模型输出乱七八糟，能立刻判断是数据问题、是过拟合、还是注意力机制设计的问题。这种判断力，只有你自己手写过一遍神经网络才会有。",
+    "pronounce_text": "会调API的人，今天已经不稀缺了。稀缺的是看到一个模型输出乱七八糟，能立刻判断是数据问题、是过拟合、还是注意力机制设计的问题。这种判断力，只有你自己手写过一遍神经网络才会有。",
+    "time_begin": 301860,
+    "time_end": 318524.80725623586,
+    "text_begin": 1922,
+    "text_end": 2011,
+    "pronounce_text_begin": 1785,
+    "pronounce_text_end": 1872
+  },
+  {
+    "text": "所以第四步是整份路线图的核心。Primary 资源只有一个名字——Andrej Karpathy，前 Tesla AI 总监，OpenAI 联合创始人。他在 YouTube 上有一个系列叫 nn-zero-to-hero，七节课。",
+    "pronounce_text": "所以第四步是整份路线图的核心。Primary资源只有一个名字。Andrej Karpathy，前Tesla AI总监，OpenAI联合创始人。他在YouTube上有一个系列叫nn-zero-to-hero，七节课。",
+    "time_begin": 318672,
+    "time_end": 334059.70975056686,
+    "text_begin": 2011,
+    "text_end": 2126,
+    "pronounce_text_begin": 1872,
+    "pronounce_text_end": 1979
+  },
+  {
+    "text": "这七节课的特点是，全程不用任何深度学习框架，纯 Python 加数学，从零手写神经网络。",
+    "pronounce_text": "这七节课的特点是，全程不用任何深度学习框架，纯Python加数学，从零手写神经网络。",
+    "time_begin": 334224,
+    "time_end": 342564.45351473923,
+    "text_begin": 2126,
+    "text_end": 2170,
+    "pronounce_text_begin": 1979,
+    "pronounce_text_end": 2021
+  },
+  {
+    "text": "第六周你写 micrograd，自动微分引擎；第七周写 makemore，理解激活函数、批归一化、反向传播；第八周直接手写一个 GPT 加 tokenization。",
+    "pronounce_text": "第六周你写micrograd，自动微分引擎;第七周写makemore，理解激活函数、批归一化、反向传播;第八周直接手写一个GPT加tokenization。",
+    "time_begin": 342720,
+    "time_end": 355797.3242630385,
+    "text_begin": 2170,
+    "text_end": 2253,
+    "pronounce_text_begin": 2021,
+    "pronounce_text_end": 2099
+  },
+  {
+    "text": "路线图建议你这样做：一边在 Jupyter 里训练你那个一千万参数的玩具模型，一边在终端跑 ollama run llama3.2:3b。Ollama 是一个本地跑模型的工具，3b 是 30 亿参数的 Llama。",
+    "pronounce_text": "路线图建议你这样做：一边在Jupyter里训练你那个一千万参数的玩具模型，一边在终端跑ollama run llama三，二:三b。Ollama是一个本地跑模型的工具，三b是三十亿参数的Llama。",
+    "time_begin": 355968,
+    "time_end": 371483.4195011338,
+    "text_begin": 2253,
+    "text_end": 2360,
+    "pronounce_text_begin": 2099,
+    "pronounce_text_end": 2198
+  },
+  {
+    "text": "你会同时看到两件事。一边是你的玩具模型在生成乱码，一边是 30 亿参数的真实模型在写连贯句子。你会突然明白参数规模意味着什么——不是某个抽象数字，是你眼前两个窗口里输出质量的差距。",
+    "pronounce_text": "你会同时看到两件事。一边是你的玩具模型在生成乱码，一边是三十亿参数的真实模型在写连贯句子。你会突然明白参数规模意味着什么。不是某个抽象数字，是你眼前两个窗口里输出质量的差距。",
+    "time_begin": 371628,
+    "time_end": 388374.0770975057,
+    "text_begin": 2360,
+    "text_end": 2450,
+    "pronounce_text_begin": 2198,
+    "pronounce_text_end": 2285
+  },
+  {
+    "text": "这个对照实验是这份路线图我最喜欢的设计。理论和实物同时摆在你面前，你不可能学不进去。",
+    "pronounce_text": "这个对照实验是这份路线图我最喜欢的设计。理论和实物同时摆在你面前，你不可能学不进去。",
+    "time_begin": 388512,
+    "time_end": 395656.6258503401,
+    "text_begin": 2450,
+    "text_end": 2492,
+    "pronounce_text_begin": 2285,
+    "pronounce_text_end": 2327
+  },
+  {
+    "text": "接下来才是 LLM 和 Prompt Engineering。Step 5 第十周有一个项目我特别想讲。",
+    "pronounce_text": "接下来才是LLM和Prompt Engineering。Step五第十周有一个项目我特别想讲。",
+    "time_begin": 395820,
+    "time_end": 403185.2154195011,
+    "text_begin": 2492,
+    "text_end": 2544,
+    "pronounce_text_begin": 2327,
+    "pronounce_text_end": 2374
+  },
+  {
+    "text": "self.dll 让你做这件事：用 ChromaDB 或者 LanceDB——都是免费的本地向量数据库——给你前面九周写在 Obsidian 里的所有笔记建一个 RAG。",
+    "pronounce_text": "self.dll让你做这件事：用ChromaDB或者LanceDB。都是免费的本地向量数据库。给你前面九周写在Obsidian里的所有笔记建一个RAG。",
+    "time_begin": 403344,
+    "time_end": 416897.3333333333,
+    "text_begin": 2544,
+    "text_end": 2629,
+    "pronounce_text_begin": 2374,
+    "pronounce_text_end": 2450
+  },
+  {
+    "text": "建好之后你可以问它任何问题：我学过的 transformer 是什么？",
+    "pronounce_text": "建好之后你可以问它任何问题：我学过的transformer是什么？",
+    "time_begin": 417097.3333333333,
+    "time_end": 421513.61451247166,
+    "text_begin": 2629,
+    "text_end": 2664,
+    "pronounce_text_begin": 2450,
+    "pronounce_text_end": 2483
+  },
+  {
+    "text": "我对 backprop 还有什么不懂的？它会从你自己的笔记里把答案翻出来。",
+    "pronounce_text": "我对backprop还有什么不懂的？它会从你自己的笔记里把答案翻出来。",
+    "time_begin": 421668,
+    "time_end": 426896.97959183675,
+    "text_begin": 2664,
+    "text_end": 2701,
+    "pronounce_text_begin": 2483,
+    "pronounce_text_end": 2518
+  },
+  {
+    "text": "他原话挺幽默的，说你这是在给自己的\"第二大脑\"再建一个\"第二大脑\"。",
+    "pronounce_text": "他原话挺幽默的，说你这是在给自己的\"第二大脑\"再建一个\"第二大脑\"。",
+    "time_begin": 427068,
+    "time_end": 432889.08843537414,
+    "text_begin": 2701,
+    "text_end": 2735,
+    "pronounce_text_begin": 2518,
+    "pronounce_text_end": 2552
+  },
+  {
+    "text": "但这个项目的位置很有意思——它放在第十周，不在第一周。网上一大堆\"5 分钟做个 RAG\"的教程会让人误以为 RAG 是 Day 1 玩具。",
+    "pronounce_text": "但这个项目的位置很有意思。它放在第十周，不在第一周。网上一大堆\"五分钟做个RAG\"的教程会让人误以为RAG是Day一玩具。",
+    "time_begin": 433044,
+    "time_end": 443776.1088435374,
+    "text_begin": 2735,
+    "text_end": 2804,
+    "pronounce_text_begin": 2552,
+    "pronounce_text_end": 2613
+  },
+  {
+    "text": "这份路线图把它放在 LLM 架构、量化、评测之后才建，因为前面那些基础没打牢，你建出来的 RAG 是个黑盒——出问题完全不会修。这是顺序设计的另一个体现。",
+    "pronounce_text": "这份路线图把它放在LLM架构、量化、评测之后才建，因为前面那些基础没打牢，你建出来的RAG是个黑盒。出问题完全不会修。这是顺序设计的另一个体现。",
+    "time_begin": 443916,
+    "time_end": 457887.2925170068,
+    "text_begin": 2804,
+    "text_end": 2881,
+    "pronounce_text_begin": 2613,
+    "pronounce_text_end": 2685
+  },
+  {
+    "text": "第六步是 Agent。这是 2026 整个 AI 工程领域最热的位置。",
+    "pronounce_text": "第六步是Agent。这是两千零二十六整个AI工程领域最热的位置。",
+    "time_begin": 458028,
+    "time_end": 463465.9591836735,
+    "text_begin": 2881,
+    "text_end": 2916,
+    "pronounce_text_begin": 2685,
+    "pronounce_text_end": 2717
+  },
+  {
+    "text": "self.dll 在这一步给了一个明确判断：MCP，Model Context Protocol，是 Anthropic 的开放标准，是 2026 Agent 工具接入的标准。",
+    "pronounce_text": "self.dll在这一步给了一个明确判断：MCP，Model Context Protocol，是Anthropic的开放标准，是两千零二十六Agent工具接入的标准。",
+    "time_begin": 463608,
+    "time_end": 476987.1836734694,
+    "text_begin": 2916,
+    "text_end": 3004,
+    "pronounce_text_begin": 2717,
+    "pronounce_text_end": 2801
+  },
+  {
+    "text": "他要求你学 Anthropic Academy 的两门 MCP 课——Introduction to MCP，再加 MCP Advanced Topics——亲手从零写一个 MCP server 和 client。",
+    "pronounce_text": "他要求你学Anthropic Academy的两门MCP课。Introduction to MCP，再加MCP Advanced Topics。亲手从零写一个MCP server和client。",
+    "time_begin": 477144,
+    "time_end": 488642.36734693876,
+    "text_begin": 3004,
+    "text_end": 3111,
+    "pronounce_text_begin": 2801,
+    "pronounce_text_end": 2898
+  },
+  {
+    "text": "为什么 MCP 重要？因为 Agent 的本质就是给 LLM 装手脚。LLM 自己只能输出文字，但接上 MCP 之后，它可以读你的文件、查网页、发邮件、动数据库。MCP 就是那个统一的接口规范。",
+    "pronounce_text": "为什么MCP重要？因为Agent的本质就是给LLM装手脚。LLM自己只能输出文字，但接上MCP之后，它可以读你的文件、查网页、发邮件、动数据库。MCP就是那个统一的接口规范。",
+    "time_begin": 488808,
+    "time_end": 504961.9682539682,
+    "text_begin": 3111,
+    "text_end": 3208,
+    "pronounce_text_begin": 2898,
+    "pronounce_text_end": 2985
+  },
+  {
+    "text": "没有它，每个 Agent 工具都要写一遍自己的桥接代码，重复劳动。",
+    "pronounce_text": "没有它，每个Agent工具都要写一遍自己的桥接代码，重复劳动。",
+    "time_begin": 505116,
+    "time_end": 510472.6893424036,
+    "text_begin": 3208,
+    "text_end": 3241,
+    "pronounce_text_begin": 2985,
+    "pronounce_text_end": 3016
+  },
+  {
+    "text": "最终项目是这样的：一个 Agent，用 MCP 加 Claude，读你的 Obsidian 笔记，去网上查你正在学的话题有没有更新，每天给你的 Telegram 发一份总结。",
+    "pronounce_text": "最终项目是这样的：一个Agent，用MCP加Claude，读你的Obsidian笔记，去网上查你正在学的话题有没有更新，每天给你的Telegram发一份总结。",
+    "time_begin": 510624,
+    "time_end": 523190.48526077095,
+    "text_begin": 3241,
+    "text_end": 3328,
+    "pronounce_text_begin": 3016,
+    "pronounce_text_end": 3095
+  },
+  {
+    "text": "这个 demo 一出来，你的 GitHub 就有了一个能拿出来跟人讲的真东西。",
+    "pronounce_text": "这个demo一出来，你的GitHub就有了一个能拿出来跟人讲的真东西。",
+    "time_begin": 523390.48526077095,
+    "time_end": 528665.9047619047,
+    "text_begin": 3328,
+    "text_end": 3367,
+    "pronounce_text_begin": 3095,
+    "pronounce_text_end": 3130
+  },
+  {
+    "text": "但路线图我也要给你讲讲它的代价。",
+    "pronounce_text": "但路线图我也要给你讲讲它的代价。",
+    "time_begin": 528804,
+    "time_end": 531385.9047619047,
+    "text_begin": 3367,
+    "text_end": 3383,
+    "pronounce_text_begin": 3130,
+    "pronounce_text_end": 3146
+  },
+  {
+    "text": "14 周看起来很短，但每一步都有 Checkpoint。原话是：做不到就回去。这不是建议，是规则。每周大概需要 10 到 15 小时的投入，14 周加起来差不多 140 到 210 小时。",
+    "pronounce_text": "十四周看起来很短，但每一步都有Checkpoint。原话是：做不到就回去。这不是建议，是规则。每周大概需要十到十五小时的投入，十四周加起来差不多一百四十到两百一十小时。",
+    "time_begin": 531540,
+    "time_end": 545859.5918367347,
+    "text_begin": 3383,
+    "text_end": 3477,
+    "pronounce_text_begin": 3146,
+    "pronounce_text_end": 3230
+  },
+  {
+    "text": "这是一份免费的路线图，但\"免费\"只对愿意把这 200 小时摆上来的人成立。对刷视频拿证书的人，它跟之前那个 300 美元一个月的订阅是一样的——什么都建不出来。",
+    "pronounce_text": "这是一份免费的路线图，但\"免费\"只对愿意把这两百小时摆上来的人成立。对刷视频拿证书的人，它跟之前那个三百美元一个月的订阅是一样的。什么都建不出来。",
+    "time_begin": 546012,
+    "time_end": 559089.3242630386,
+    "text_begin": 3477,
+    "text_end": 3557,
+    "pronounce_text_begin": 3230,
+    "pronounce_text_end": 3303
+  },
+  {
+    "text": "而且学完不是终点。路线图最后给的 Maintenance Mode 还要你每周再投 1 小时：周一看 Anthropic、OpenAI、Google 的发布记录，周三读一篇 paper 摘要，周五看一个新工具视频，",
+    "pronounce_text": "而且学完不是终点。路线图最后给的Maintenance Mode还要你每周再投一小时：周一看Anthropic、OpenAI、Google的发布记录，周三读一篇paper摘要，周五看一个新工具视频，",
+    "time_begin": 559260,
+    "time_end": 574601.2698412698,
+    "text_begin": 3557,
+    "text_end": 3664,
+    "pronounce_text_begin": 3303,
+    "pronounce_text_end": 3402
+  },
+  {
+    "text": "每月做一个新的小项目。",
+    "pronounce_text": "每月做一个新的小项目。",
+    "time_begin": 574801.2698412698,
+    "time_end": 576489.2063492064,
+    "text_begin": 3664,
+    "text_end": 3675,
+    "pronounce_text_begin": 3402,
+    "pronounce_text_end": 3413
+  },
+  {
+    "text": "AI 这个领域 14 周学不完，14 周学到的是\"学会持续学习\"。",
+    "pronounce_text": "AI这个领域十四周学不完，十四周学到的是\"学会持续学习\"。",
+    "time_begin": 576648,
+    "time_end": 581876.9795918367,
+    "text_begin": 3675,
+    "text_end": 3708,
+    "pronounce_text_begin": 3413,
+    "pronounce_text_end": 3442
+  },
+  {
+    "text": "读完整份路线图，我觉得它真正的价值不在那些免费链接——链接谁都能搜得到——而在顺序本身。",
+    "pronounce_text": "读完整份路线图，我觉得它真正的价值不在那些免费链接。链接谁都能搜得到。而在顺序本身。",
+    "time_begin": 582048,
+    "time_end": 591537.8412698413,
+    "text_begin": 3708,
+    "text_end": 3752,
+    "pronounce_text_begin": 3442,
+    "pronounce_text_end": 3484
+  },
+  {
+    "text": "self.dll 自己烧了 6 个月、300 美元一个月的订阅，才看明白这件事：先学装环境，再学概念，再学 ML 数学，再手写神经网络，再调 API 学 Prompt，",
+    "pronounce_text": "self.dll自己烧了六个月、三百美元一个月的订阅，才看明白这件事：先学装环境，再学概念，再学ML数学，再手写神经网络，再调API学Prompt，",
+    "time_begin": 591696,
+    "time_end": 606735.410430839,
+    "text_begin": 3752,
+    "text_end": 3836,
+    "pronounce_text_begin": 3484,
+    "pronounce_text_end": 3558
+  },
+  {
+    "text": "再做 Agent，最后部署。",
+    "pronounce_text": "再做Agent，最后部署。",
+    "time_begin": 606935.410430839,
+    "time_end": 609261.8956916099,
+    "text_begin": 3836,
+    "text_end": 3850,
+    "pronounce_text_begin": 3558,
+    "pronounce_text_end": 3571
+  },
+  {
+    "text": "这个顺序，每一步都有理由。",
+    "pronounce_text": "这个顺序，每一步都有理由。",
+    "time_begin": 609408,
+    "time_end": 612454.3038548753,
+    "text_begin": 3850,
+    "text_end": 3863,
+    "pronounce_text_begin": 3571,
+    "pronounce_text_end": 3584
+  },
+  {
+    "text": "倒过来呢？倒过来你就是这一年 AI 圈最普遍的现象——会用十种 Prompt 技巧，会调七种 API，但模型出问题没有任何手感，写代码全靠 copy-paste，简历上挂着十几个证书，",
+    "pronounce_text": "倒过来呢？倒过来你就是这一年AI圈最普遍的现象。会用十种Prompt技巧，会调七种API，但模型出问题没有任何手感，写代码全靠copy-paste，简历上挂着十几个证书，",
+    "time_begin": 612612,
+    "time_end": 628673.0884353742,
+    "text_begin": 3863,
+    "text_end": 3955,
+    "pronounce_text_begin": 3584,
+    "pronounce_text_end": 3669
+  },
+  {
+    "text": "去面试拿不到 offer。",
+    "pronounce_text": "去面试拿不到offer。",
+    "time_begin": 628873.0884353742,
+    "time_end": 630340.4353741497,
+    "text_begin": 3955,
+    "text_end": 3968,
+    "pronounce_text_begin": 3669,
+    "pronounce_text_end": 3681
+  },
+  {
+    "text": "学 AI 在 2026 年最贵的不是订阅费，是把第五步当成第一步的代价。",
+    "pronounce_text": "学AI在两千零二十六年最贵的不是订阅费，是把第五步当成第一步的代价。",
+    "time_begin": 630504,
+    "time_end": 637184.2267573696,
+    "text_begin": 3968,
+    "text_end": 4004,
+    "pronounce_text_begin": 3681,
+    "pronounce_text_end": 3715
+  },
+  {
+    "text": "最后给你一个特别简单的可执行建议。",
+    "pronounce_text": "最后给你一个特别简单的可执行建议。",
+    "time_begin": 637344,
+    "time_end": 640007.1746031746,
+    "text_begin": 4004,
+    "text_end": 4021,
+    "pronounce_text_begin": 3715,
+    "pronounce_text_end": 3732
+  },
+  {
+    "text": "今晚 60 分钟，做三件事：装 Obsidian，建好那个 AI-Learning 文件夹结构；注册 Anthropic Academy，把第一门 AI Fluency 的第一个模块看完，写下第一篇笔记；",
+    "pronounce_text": "今晚六十分钟，做三件事：装Obsidian，建好那个AI-Learning文件夹结构;注册Anthropic Academy，把第一门AI Fluency的第一个模块看完，写下第一篇笔记;",
+    "time_begin": 640207.1746031746,
+    "time_end": 654526.7664399093,
+    "text_begin": 4021,
+    "text_end": 4123,
+    "pronounce_text_begin": 3732,
+    "pronounce_text_end": 3826
+  },
+  {
+    "text": "再去 GitHub fork microsoft 的 generative-ai-for-beginners，打开 Lesson 1 读完。",
+    "pronounce_text": "再去 GitHub fork microsoft 的 generative-ai-for-beginners，打开 Lesson one 读完。",
+    "time_begin": 654696,
+    "time_end": 660517.0884353742,
+    "text_begin": 4123,
+    "text_end": 4193,
+    "pronounce_text_begin": 3826,
+    "pronounce_text_end": 3898
+  },
+  {
+    "text": "self.dll 那篇文章结尾有一句话写得特别狠。他说，2026 年真正学到 AI 的，不是收藏了 50 篇文章的人，是今晚就打开终端开始的人。",
+    "pronounce_text": "self.dll那篇文章结尾有一句话写得特别狠。他说，两千零二十六年真正学到AI的，不是收藏了五十篇文章的人，是今晚就打开终端开始的人。",
+    "time_begin": 660672,
+    "time_end": 672251.6371882086,
+    "text_begin": 4193,
+    "text_end": 4265,
+    "pronounce_text_begin": 3898,
+    "pronounce_text_end": 3966
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 672408,
+    "time_end": 677636.9795918367,
+    "text_begin": 4265,
+    "text_end": 4292,
+    "pronounce_text_begin": 3966,
+    "pronounce_text_end": 3992
+  }
+]

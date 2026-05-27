@@ -1,0 +1,15 @@
+{
+  "topic": "Claude 有 17 个开关，你开了几个？",
+  "blog_url": "https://x.com/AnatoliKopadze/article/2057813254617858078",
+  "source": "anatolikopadze-2057813254617858078",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "topic": "你用 Claude 的方式，决定了它的 90%",
+  "blog_url": "https://x.com/AnatoliKopadze/article/2054568935274549597",
+  "source": "anatolikopadze-2054568935274549597",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

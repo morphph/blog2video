@@ -1,0 +1,612 @@
+[
+  {
+    "text": "一个叫 CLAUDE.md 的纯文本文件，冲上了 GitHub Trending 第一名。8 万 2 千颗星，每天用 Claude Code 的开发者，绝大多数一行都没抄过。",
+    "pronounce_text": "一个叫CLAUDE.md的纯文本文件，冲上了GitHub Trending第一名。八万二千颗星，每天用Claude Code的开发者，绝大多数一行都没抄过。",
+    "time_begin": 0,
+    "time_end": 11626.07709750567,
+    "text_begin": 0,
+    "text_end": 87,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 78
+  },
+  {
+    "text": "这件事起点是 Andrej Karpathy。前 Tesla AI 总监，OpenAI 创始成员。他写下了四条让 Claude Code 翻车的行为，被另一个开发者扩展成完整文件发出来，然后炸了。",
+    "pronounce_text": "这件事起点是Andrej Karpathy。前Tesla AI总监，OpenAI创始成员。他写下了四条让Claude Code翻车的行为，被另一个开发者扩展成完整文件发出来，然后炸了。",
+    "time_begin": 11772,
+    "time_end": 25023.473922902493,
+    "text_begin": 87,
+    "text_end": 185,
+    "pronounce_text_begin": 78,
+    "pronounce_text_end": 170
+  },
+  {
+    "text": "一个叫 Dep 的博主把它拆解成 21 条规则，每条规则背后都对应一笔可量化的浪费。我读完之后想了想，这条视频不是来教你\"怎么用 Claude\"，是来回答另一个问题。",
+    "pronounce_text": "一个叫Dep的博主把它拆解成二十一条规则，每条规则背后都对应一笔可量化的浪费。我读完之后想了想，这条视频不是来教你\"怎么用Claude\"，是来回答另一个问题。",
+    "time_begin": 25164,
+    "time_end": 38543.183673469386,
+    "text_begin": 185,
+    "text_end": 268,
+    "pronounce_text_begin": 170,
+    "pronounce_text_end": 249
+  },
+  {
+    "text": "先说一件你可能没意识到的事。你每次打开 Claude Code，它其实是从零开始的。",
+    "pronounce_text": "先说一件你可能没意识到的事。你每次打开Claude Code，它其实是从零开始的。",
+    "time_begin": 38700,
+    "time_end": 44741.67800453515,
+    "text_begin": 268,
+    "text_end": 310,
+    "pronounce_text_begin": 249,
+    "pronounce_text_end": 290
+  },
+  {
+    "text": "它不知道你的技术栈，不知道你的编码规范，不知道你的项目背景，更不知道你三个 session 之前已经明确否决过什么方案。它一无所知。",
+    "pronounce_text": "它不知道你的技术栈，不知道你的编码规范，不知道你的项目背景，更不知道你三个session之前已经明确否决过什么方案。它一无所知。",
+    "time_begin": 44892,
+    "time_end": 54428.28117913832,
+    "text_begin": 310,
+    "text_end": 376,
+    "pronounce_text_begin": 290,
+    "pronounce_text_end": 354
+  },
+  {
+    "text": "所以它只能猜。一猜，问题就来了——它去重构你根本没让它动的代码，它推荐会破坏你现有架构的框架，它删文件不打招呼，它推翻你已经做过的决定。",
+    "pronounce_text": "所以它只能猜。一猜，问题就来了。它去重构你根本没让它动的代码，它推荐会破坏你现有架构的框架，它删文件不打招呼，它推翻你已经做过的决定。",
+    "time_begin": 54576,
+    "time_end": 68547.2925170068,
+    "text_begin": 376,
+    "text_end": 444,
+    "pronounce_text_begin": 354,
+    "pronounce_text_end": 421
+  },
+  {
+    "text": "CLAUDE.md 就是用来解决这件事的。一个朴素到不能再朴素的纯文本文件，放在你项目根目录。每次新 session 启动，Claude 自动读一遍。一次设置，零次重复解释。",
+    "pronounce_text": "CLAUDE.md就是用来解决这件事的。一个朴素到不能再朴素的纯文本文件，放在你项目根目录。每次新session启动，Claude自动读一遍。一次设置，零次重复解释。",
+    "time_begin": 68688,
+    "time_end": 83808.68027210885,
+    "text_begin": 444,
+    "text_end": 531,
+    "pronounce_text_begin": 421,
+    "pronounce_text_end": 504
+  },
+  {
+    "text": "这就是为什么 8 万人会去收藏一份别人的 CLAUDE.md。不是因为它写得多花哨，是因为它把所有人都在踩的坑系统化地写下来了。",
+    "pronounce_text": "这就是为什么八万人会去收藏一份别人的CLAUDE.md。不是因为它写得多花哨，是因为它把所有人都在踩的坑系统化地写下来了。",
+    "time_begin": 83952,
+    "time_end": 93314.13151927438,
+    "text_begin": 531,
+    "text_end": 595,
+    "pronounce_text_begin": 504,
+    "pronounce_text_end": 565
+  },
+  {
+    "text": "我们来看博客的第一类规则，叫 DEFAULTS，默认行为。",
+    "pronounce_text": "我们来看博客的第一类规则，叫DEFAULTS，默认行为。",
+    "time_begin": 93456,
+    "time_end": 98255.41043083901,
+    "text_begin": 595,
+    "text_end": 624,
+    "pronounce_text_begin": 565,
+    "pronounce_text_end": 593
+  },
+  {
+    "text": "原文给了一个挺扎心的算法。平均每个开发者每天要花 30 分钟，跟 Claude 重新解释一遍上下文。技术栈是什么，编码规范是什么，项目目标是什么，之前试过什么没试过什么。",
+    "pronounce_text": "原文给了一个挺扎心的算法。平均每个开发者每天要花三十分钟，跟Claude重新解释一遍上下文。技术栈是什么，编码规范是什么，项目目标是什么，之前试过什么没试过什么。",
+    "time_begin": 98424,
+    "time_end": 112267.58276643991,
+    "text_begin": 624,
+    "text_end": 709,
+    "pronounce_text_begin": 593,
+    "pronounce_text_end": 674
+  },
+  {
+    "text": "这些信息只要你不写下来，每次都得重讲。",
+    "pronounce_text": "这些信息只要你不写下来，每次都得重讲。",
+    "time_begin": 112428,
+    "time_end": 115741.33333333333,
+    "text_begin": 709,
+    "text_end": 728,
+    "pronounce_text_begin": 674,
+    "pronounce_text_end": 693
+  },
+  {
+    "text": "按一个资深开发者 150 美金一小时算，每天 30 分钟，每周就是 375 美金。一个 5 人团队，每周直接烧掉 1875 美金，就为了\"重新自我介绍\"这件事。",
+    "pronounce_text": "按一个资深开发者一百五十美金一小时算，每天三十分钟，每周就是三百七十五美金。一个五人团队，每周直接烧掉一千八百七十五美金，就为了\"重新自我介绍\"这件事。",
+    "time_begin": 115884,
+    "time_end": 129948.1723356009,
+    "text_begin": 728,
+    "text_end": 808,
+    "pronounce_text_begin": 693,
+    "pronounce_text_end": 769
+  },
+  {
+    "text": "那 CLAUDE.md 第一段要写什么？博客给了 7 条。",
+    "pronounce_text": "那CLAUDE.md第一段要写什么？博客给了七条。",
+    "time_begin": 130104,
+    "time_end": 133963.0022675737,
+    "text_begin": 808,
+    "text_end": 837,
+    "pronounce_text_begin": 769,
+    "pronounce_text_end": 794
+  },
+  {
+    "text": "我挑几条特别有意思的讲。第一条是\"杀掉废话开头\"——明确告诉 Claude，不要再用\"好问题！\"\"当然！\"\"没问题！\"这种暖场词开场。第一句话就给答案，不要铺垫。",
+    "pronounce_text": "我挑几条特别有意思的讲。第一条是\"杀掉废话开头\"。明确告诉Claude，不要再用\"好问题！\"\"当然！\"\"没问题！\"这种暖场词开场。第一句话就给答案，不要铺垫。",
+    "time_begin": 134100,
+    "time_end": 149650.24943310657,
+    "text_begin": 837,
+    "text_end": 918,
+    "pronounce_text_begin": 794,
+    "pronounce_text_end": 873
+  },
+  {
+    "text": "第二条是\"长度匹配任务\"——简单问题给短答案，复杂任务才展开，不要为了显得用心而灌水。",
+    "pronounce_text": "第二条是\"长度匹配任务\"。简单问题给短答案，复杂任务才展开，不要为了显得用心而灌水。",
+    "time_begin": 149796,
+    "time_end": 158484.75283446713,
+    "text_begin": 918,
+    "text_end": 961,
+    "pronounce_text_begin": 873,
+    "pronounce_text_end": 915
+  },
+  {
+    "text": "最值钱的是这两条。第三条叫\"行动前先给选项\"，要求 Claude 在做任何重要任务之前，先列 2 到 3 种解法，等你选。",
+    "pronounce_text": "最值钱的是这两条。第三条叫\"行动前先给选项\"，要求Claude在做任何重要任务之前，先列二到三种解法，等你选。",
+    "time_begin": 158652,
+    "time_end": 169384.10884353743,
+    "text_begin": 961,
+    "text_end": 1022,
+    "pronounce_text_begin": 915,
+    "pronounce_text_end": 970
+  },
+  {
+    "text": "第四条叫\"承认不确定\"——如果对某个事实、数字、技术细节没把握，必须明说，不许用\"听起来合理\"的内容填空。",
+    "pronounce_text": "第四条叫\"承认不确定\"。如果对某个事实、数字、技术细节没把握，必须明说，不许用\"听起来合理\"的内容填空。",
+    "time_begin": 169524,
+    "time_end": 181231.3469387755,
+    "text_begin": 1022,
+    "text_end": 1075,
+    "pronounce_text_begin": 970,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "你看，这些规则的本质，不是教 AI 怎么聪明。是教它怎么诚实。",
+    "pronounce_text": "你看，这些规则的本质，不是教AI怎么聪明。是教它怎么诚实。",
+    "time_begin": 181368,
+    "time_end": 187874.07709750568,
+    "text_begin": 1075,
+    "text_end": 1106,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1051
+  },
+  {
+    "text": "第二类规则叫 BEHAVIOR，行为约束。",
+    "pronounce_text": "第二类规则叫BEHAVIOR，行为约束。",
+    "time_begin": 188028,
+    "time_end": 192188.86167800453,
+    "text_begin": 1106,
+    "text_end": 1127,
+    "pronounce_text_begin": 1051,
+    "pronounce_text_end": 1071
+  },
+  {
+    "text": "博客描述了一个所有人都遇到过的场景。你让 Claude 改一个函数。它转头给你重构了三个文件，重命名了一堆变量，重排了 import 顺序，还把你精心写的注释改了。全程没问你一句。",
+    "pronounce_text": "博客描述了一个所有人都遇到过的场景。你让Claude改一个函数。它转头给你重构了三个文件，重命名了一堆变量，重排了import顺序，还把你精心写的注释改了。全程没问你一句。",
+    "time_begin": 192348,
+    "time_end": 207561.56009070296,
+    "text_begin": 1127,
+    "text_end": 1217,
+    "pronounce_text_begin": 1071,
+    "pronounce_text_end": 1157
+  },
+  {
+    "text": "修这个烂摊子要多久？原文算了一下。光是 review 加回滚不该有的改动，每次大概 1 小时，一周三次，就是 450 美金。",
+    "pronounce_text": "修这个烂摊子要多久？原文算了一下。光是review加回滚不该有的改动，每次大概一小时，一周三次，就是四百五十美金。",
+    "time_begin": 207720,
+    "time_end": 218533.37868480725,
+    "text_begin": 1217,
+    "text_end": 1279,
+    "pronounce_text_begin": 1157,
+    "pronounce_text_end": 1214
+  },
+  {
+    "text": "5 人团队，每周 2250 美金，全部花在收拾\"没人授权过的改动\"上。",
+    "pronounce_text": "五人团队，每周两千两百五十美金，全部花在收拾\"没人授权过的改动\"上。",
+    "time_begin": 218733.37868480725,
+    "time_end": 225111.74603174604,
+    "text_begin": 1279,
+    "text_end": 1314,
+    "pronounce_text_begin": 1214,
+    "pronounce_text_end": 1248
+  },
+  {
+    "text": "这一类的规则就是给 Claude 划红线。",
+    "pronounce_text": "这一类的规则就是给Claude划红线。",
+    "time_begin": 225252,
+    "time_end": 227833.90476190476,
+    "text_begin": 1314,
+    "text_end": 1335,
+    "pronounce_text_begin": 1248,
+    "pronounce_text_end": 1267
+  },
+  {
+    "text": "第一条最关键，叫\"留在范围内\"。原话是这样写的——只修改和当前任务直接相关的文件、函数、代码行。",
+    "pronounce_text": "第一条最关键，叫\"留在范围内\"。原话是这样写的。只修改和当前任务直接相关的文件、函数、代码行。",
+    "time_begin": 227988,
+    "time_end": 238162.82993197278,
+    "text_begin": 1335,
+    "text_end": 1383,
+    "pronounce_text_begin": 1267,
+    "pronounce_text_end": 1314
+  },
+  {
+    "text": "不要重构、重命名、重新组织、重新格式化，也不要\"改进\"我没让你改的任何东西。",
+    "pronounce_text": "不要重构、重命名、重新组织、重新格式化，也不要\"改进\"我没让你改的任何东西。",
+    "time_begin": 238362.82993197278,
+    "time_end": 247341.83219954648,
+    "text_begin": 1383,
+    "text_end": 1421,
+    "pronounce_text_begin": 1314,
+    "pronounce_text_end": 1352
+  },
+  {
+    "text": "如果你发现别处有问题，就在结尾写个备注。别动手。绝对别动手。",
+    "pronounce_text": "如果你发现别处有问题，就在结尾写个备注。别动手。绝对别动手。",
+    "time_begin": 247500,
+    "time_end": 253495.2380952381,
+    "text_begin": 1421,
+    "text_end": 1451,
+    "pronounce_text_begin": 1352,
+    "pronounce_text_end": 1382
+  },
+  {
+    "text": "第二条叫\"大改动前先确认\"。第三条叫\"破坏性操作前必须确认\"。这条里有一句金句我得念给你听——它说，\"你之前提过一次\"不算确认。",
+    "pronounce_text": "第二条叫\"大改动前先确认\"。第三条叫\"破坏性操作前必须确认\"。这条里有一句金句我得念给你听。它说，\"你之前提过一次\"不算确认。",
+    "time_begin": 253656,
+    "time_end": 266431.4648526077,
+    "text_begin": 1451,
+    "text_end": 1515,
+    "pronounce_text_begin": 1382,
+    "pronounce_text_end": 1445
+  },
+  {
+    "text": "必须是当前这条消息里你明确说了\"是\"，才算授权。",
+    "pronounce_text": "必须是当前这条消息里你明确说了\"是\"，才算授权。",
+    "time_begin": 266580,
+    "time_end": 271379.410430839,
+    "text_begin": 1515,
+    "text_end": 1539,
+    "pronounce_text_begin": 1445,
+    "pronounce_text_end": 1469
+  },
+  {
+    "text": "为什么要这么严？因为 Claude 没有\"上下文压力感\"。你三天前在某个对话里随口说过\"那个表可以删\"，它会记一辈子，然后某天真的删了。",
+    "pronounce_text": "为什么要这么严？因为Claude没有\"上下文压力感\"。你三天前在某个对话里随口说过\"那个表可以删\"，它会记一辈子，然后某天真的删了。",
+    "time_begin": 271548,
+    "time_end": 284544.0544217687,
+    "text_begin": 1539,
+    "text_end": 1607,
+    "pronounce_text_begin": 1469,
+    "pronounce_text_end": 1535
+  },
+  {
+    "text": "这条规则的存在，就是把\"沉默授权\"这个漏洞堵死。",
+    "pronounce_text": "这条规则的存在，就是把\"沉默授权\"这个漏洞堵死。",
+    "time_begin": 284744.0544217687,
+    "time_end": 289113.89569161,
+    "text_begin": 1607,
+    "text_end": 1631,
+    "pronounce_text_begin": 1535,
+    "pronounce_text_end": 1559
+  },
+  {
+    "text": "第三类规则我觉得是全文最有意思的，叫 MEMORY + STACK。",
+    "pronounce_text": "第三类规则我觉得是全文最有意思的，叫MEMORY加STACK。",
+    "time_begin": 289260,
+    "time_end": 293420.86167800456,
+    "text_begin": 1631,
+    "text_end": 1665,
+    "pronounce_text_begin": 1559,
+    "pronounce_text_end": 1590
+  },
+  {
+    "text": "我们都知道 Claude 没有跨 session 的记忆。每个决定你做过，每条路你走过的弯，为什么 6 个月前你选了 Prisma 没选 Drizzle，为什么某个约束是因为客户的特殊需求——它全忘。",
+    "pronounce_text": "我们都知道Claude没有跨session的记忆。每个决定你做过，每条路你走过的弯，为什么六个月前你选了Prisma没选Drizzle，为什么某个约束是因为客户的特殊需求。它全忘。",
+    "time_begin": 293580,
+    "time_end": 308236.28117913834,
+    "text_begin": 1665,
+    "text_end": 1765,
+    "pronounce_text_begin": 1590,
+    "pronounce_text_end": 1680
+  },
+  {
+    "text": "然后它转头建议你的，恰好是你早就否决过的方案。",
+    "pronounce_text": "然后它转头建议你的，恰好是你早就否决过的方案。",
+    "time_begin": 308376,
+    "time_end": 312664.5714285714,
+    "text_begin": 1765,
+    "text_end": 1788,
+    "pronounce_text_begin": 1680,
+    "pronounce_text_end": 1703
+  },
+  {
+    "text": "这一类规则给出的方案非常朴素，但 brutal 有效。它让你在项目里建两个文件。",
+    "pronounce_text": "这一类规则给出的方案非常朴素，但brutal有效。它让你在项目里建两个文件。",
+    "time_begin": 312804,
+    "time_end": 319611.9365079365,
+    "text_begin": 1788,
+    "text_end": 1828,
+    "pronounce_text_begin": 1703,
+    "pronounce_text_end": 1741
+  },
+  {
+    "text": "一个叫 MEMORY.md，决策日志。每次做了重要决定，就写一条进去：决定了什么，为什么这么定，否决了什么、为什么。Claude 每次开 session 先读这个文件。",
+    "pronounce_text": "一个叫MEMORY.md，决策日志。每次做了重要决定，就写一条进去：决定了什么，为什么这么定，否决了什么、为什么。Claude每次开session先读这个文件。",
+    "time_begin": 319752,
+    "time_end": 334106.42176870746,
+    "text_begin": 1828,
+    "text_end": 1912,
+    "pronounce_text_begin": 1741,
+    "pronounce_text_end": 1821
+  },
+  {
+    "text": "另一个叫 ERRORS.md，失败日志。某个方案试了两次以上还不行，就记下来：什么没成、什么成了、下次注意什么。Claude 在建议新方案之前先看一遍这个。",
+    "pronounce_text": "另一个叫ERRORS.md，失败日志。某个方案试了两次以上还不行，就记下来：什么没成、什么成了、下次注意什么。Claude在建议新方案之前先看一遍这个。",
+    "time_begin": 334260,
+    "time_end": 350495.2380952381,
+    "text_begin": 1912,
+    "text_end": 1990,
+    "pronounce_text_begin": 1821,
+    "pronounce_text_end": 1897
+  },
+  {
+    "text": "听起来朴素到有点 dumb，对吧？但你停下来想想——所谓\"AI 长期记忆\"，行业里炒了一堆复杂方案，向量库、外置 memory、各种 cache。",
+    "pronounce_text": "听起来朴素到有点dumb，对吧？但你停下来想想。所谓\"AI长期记忆\"，行业里炒了一堆复杂方案，向量库、外置memory、各种cache。",
+    "time_begin": 350640,
+    "time_end": 362904.6258503401,
+    "text_begin": 1990,
+    "text_end": 2063,
+    "pronounce_text_begin": 1897,
+    "pronounce_text_end": 1965
+  },
+  {
+    "text": "但这份 viral CLAUDE.md 给出的答案是：让 AI 自己写日志，再自己读日志。",
+    "pronounce_text": "但这份viral CLAUDE.md给出的答案是：让AI自己写日志，再自己读日志。",
+    "time_begin": 363104.6258503401,
+    "time_end": 369691.9727891156,
+    "text_begin": 2063,
+    "text_end": 2108,
+    "pronounce_text_begin": 1965,
+    "pronounce_text_end": 2006
+  },
+  {
+    "text": "一个 txt 文件，解决了一个被复杂化的问题。",
+    "pronounce_text": "一个txt文件，解决了一个被复杂化的问题。",
+    "time_begin": 369828,
+    "time_end": 373988.86167800456,
+    "text_begin": 2108,
+    "text_end": 2131,
+    "pronounce_text_begin": 2006,
+    "pronounce_text_end": 2027
+  },
+  {
+    "text": "这类规则还包括锁死你的技术栈——明确告诉 Claude，这个项目就用 TypeScript、Next.js、PostgreSQL、Prisma 这套，别再给我推荐别的。",
+    "pronounce_text": "这类规则还包括锁死你的技术栈。明确告诉Claude，这个项目就用TypeScript、Next.js、PostgreSQL、Prisma这套，别再给我推荐别的。",
+    "time_begin": 374148,
+    "time_end": 386029.49659863947,
+    "text_begin": 2131,
+    "text_end": 2215,
+    "pronounce_text_begin": 2027,
+    "pronounce_text_end": 2107
+  },
+  {
+    "text": "还有遇到架构决策、性能权衡、长期技术选型这种问题，必须先用 Extended Thinking 模式过一遍，把假设和 tradeoff 都摊开，再给建议。",
+    "pronounce_text": "还有遇到架构决策、性能权衡、长期技术选型这种问题，必须先用Extended Thinking模式过一遍，把假设和tradeoff都摊开，再给建议。",
+    "time_begin": 386172,
+    "time_end": 397589.09750566893,
+    "text_begin": 2215,
+    "text_end": 2292,
+    "pronounce_text_begin": 2107,
+    "pronounce_text_end": 2180
+  },
+  {
+    "text": "讲到这里，可以揭开这个故事最核心的那一块了。",
+    "pronounce_text": "讲到这里，可以揭开这个故事最核心的那一块了。",
+    "time_begin": 397728,
+    "time_end": 401505.73242630385,
+    "text_begin": 2292,
+    "text_end": 2314,
+    "pronounce_text_begin": 2180,
+    "pronounce_text_end": 2202
+  },
+  {
+    "text": "Karpathy 原本只写了 4 条。就 4 条。然后一个开发者用这 4 条做基线测试，Claude 在编码任务上的准确率，从百分之 65 跳到了百分之 94。",
+    "pronounce_text": "Karpathy原本只写了四条。就四条。然后一个开发者用这四条做基线测试，Claude在编码任务上的准确率，从百分之六十五跳到了百分之九十四。",
+    "time_begin": 401652,
+    "time_end": 413405.78684807254,
+    "text_begin": 2314,
+    "text_end": 2394,
+    "pronounce_text_begin": 2202,
+    "pronounce_text_end": 2273
+  },
+  {
+    "text": "我给你念念这 4 条，你听完会觉得反高潮——因为它们朴素到不像什么\"秘密武器\"。",
+    "pronounce_text": "我给你念念这四条，你听完会觉得反高潮。因为它们朴素到不像什么\"秘密武器\"。",
+    "time_begin": 413568,
+    "time_end": 423023.01133786846,
+    "text_begin": 2394,
+    "text_end": 2434,
+    "pronounce_text_begin": 2273,
+    "pronounce_text_end": 2310
+  },
+  {
+    "text": "第一条：不懂就问，不要假设。任何不清楚的地方，写代码之前先问。不要默默对意图、架构、需求做猜测。",
+    "pronounce_text": "第一条：不懂就问，不要假设。任何不清楚的地方，写代码之前先问。不要默默对意图、架构、需求做猜测。",
+    "time_begin": 423180,
+    "time_end": 434167.5283446712,
+    "text_begin": 2434,
+    "text_end": 2482,
+    "pronounce_text_begin": 2310,
+    "pronounce_text_end": 2358
+  },
+  {
+    "text": "第二条：先用最简单的方案。永远先实现能跑起来的最简版本。不要主动加抽象、加灵活性，除非我明确要求。",
+    "pronounce_text": "第二条：先用最简单的方案。永远先实现能跑起来的最简版本。不要主动加抽象、加灵活性，除非我明确要求。",
+    "time_begin": 434304,
+    "time_end": 445036.1088435374,
+    "text_begin": 2482,
+    "text_end": 2531,
+    "pronounce_text_begin": 2358,
+    "pronounce_text_end": 2407
+  },
+  {
+    "text": "第三条：不要碰无关代码。如果一个文件或函数不在当前任务范围内，就不要改，哪怕你觉得它可以优化。",
+    "pronounce_text": "第三条：不要碰无关代码。如果一个文件或函数不在当前任务范围内，就不要改，哪怕你觉得它可以优化。",
+    "time_begin": 445176,
+    "time_end": 455652.6893424036,
+    "text_begin": 2531,
+    "text_end": 2578,
+    "pronounce_text_begin": 2407,
+    "pronounce_text_end": 2454
+  },
+  {
+    "text": "第四条：明确标出不确定。对某个方案或技术细节没把握，就在动手前说出来。\"自信但不确定\"造成的损失，比\"承认不知道\"大得多。",
+    "pronounce_text": "第四条：明确标出不确定。对某个方案或技术细节没把握，就在动手前说出来。\"自信但不确定\"造成的损失，比\"承认不知道\"大得多。",
+    "time_begin": 455796,
+    "time_end": 469767.2925170068,
+    "text_begin": 2578,
+    "text_end": 2639,
+    "pronounce_text_begin": 2454,
+    "pronounce_text_end": 2515
+  },
+  {
+    "text": "你看出来了吗？这 4 条没有一个字是关于\"模型能力\"的。全部是关于\"边界感\"。AI 准确率从 65 跳到 94，靠的不是更强的模型，是四句用大白话写下来的行为约束。",
+    "pronounce_text": "你看出来了吗？这四条没有一个字是关于\"模型能力\"的。全部是关于\"边界感\"。AI准确率从六十五跳到九十四，靠的不是更强的模型，是四句用大白话写下来的行为约束。",
+    "time_begin": 469908,
+    "time_end": 486270.94784580497,
+    "text_begin": 2639,
+    "text_end": 2721,
+    "pronounce_text_begin": 2515,
+    "pronounce_text_end": 2593
+  },
+  {
+    "text": "把全文的账一起算。",
+    "pronounce_text": "把全文的账一起算。",
+    "time_begin": 486432,
+    "time_end": 488073.49659863947,
+    "text_begin": 2721,
+    "text_end": 2730,
+    "pronounce_text_begin": 2593,
+    "pronounce_text_end": 2602
+  },
+  {
+    "text": "每周 375 美金重复解释上下文，每周 225 美金撤销越权改动，每周 375 美金从被遗忘的决策里恢复。一个开发者，每周 975 美金被烧掉。",
+    "pronounce_text": "每周三百七十五美金重复解释上下文，每周两百二十五美金撤销越权改动，每周三百七十五美金从被遗忘的决策里恢复。一个开发者，每周九百七十五美金被烧掉。",
+    "time_begin": 488232,
+    "time_end": 502632.86167800456,
+    "text_begin": 2730,
+    "text_end": 2802,
+    "pronounce_text_begin": 2602,
+    "pronounce_text_end": 2674
+  },
+  {
+    "text": "5 个人的团队，一年 25 万 3 千 5 百美金，蒸发。",
+    "pronounce_text": "五个人的团队，一年二十五万三千五百美金，蒸发。",
+    "time_begin": 502832.86167800456,
+    "time_end": 507713.5419501134,
+    "text_begin": 2802,
+    "text_end": 2831,
+    "pronounce_text_begin": 2674,
+    "pronounce_text_end": 2697
+  },
+  {
+    "text": "CLAUDE.md 的全套配置，从零到完成，2 小时。",
+    "pronounce_text": "CLAUDE.md的全套配置，从零到完成，二小时。",
+    "time_begin": 507852,
+    "time_end": 512314.7210884354,
+    "text_begin": 2831,
+    "text_end": 2858,
+    "pronounce_text_begin": 2697,
+    "pronounce_text_end": 2722
+  },
+  {
+    "text": "我读完这篇博客之后，最想说的一句话是这样的——AI 帮你省时间这件事是真的，但前提是你先停下来，花两个小时教它一次。",
+    "pronounce_text": "我读完这篇博客之后，最想说的一句话是这样的。AI帮你省时间这件事是真的，但前提是你先停下来，花两个小时教它一次。",
+    "time_begin": 512460,
+    "time_end": 523830.6575963719,
+    "text_begin": 2858,
+    "text_end": 2916,
+    "pronounce_text_begin": 2722,
+    "pronounce_text_end": 2778
+  },
+  {
+    "text": "否则你买的不是生产力，是一个每天忘记一切的实习生，外加一份每周 975 美金的工资单。",
+    "pronounce_text": "否则你买的不是生产力，是一个每天忘记一切的实习生，外加一份每周九百七十五美金的工资单。",
+    "time_begin": 523980,
+    "time_end": 531728.3446712018,
+    "text_begin": 2916,
+    "text_end": 2959,
+    "pronounce_text_begin": 2778,
+    "pronounce_text_end": 2821
+  },
+  {
+    "text": "那些已经搭好 CLAUDE.md 的人，用的是一个会记得决策、守得住范围、动手前会问、不会乱推荐框架的 Claude。",
+    "pronounce_text": "那些已经搭好CLAUDE.md的人，用的是一个会记得决策、守得住范围、动手前会问、不会乱推荐框架的Claude。",
+    "time_begin": 531900,
+    "time_end": 540971.8820861678,
+    "text_begin": 2959,
+    "text_end": 3018,
+    "pronounce_text_begin": 2821,
+    "pronounce_text_end": 2877
+  },
+  {
+    "text": "没搭的人，每周交 975 美金，换的是一个\"每次都要从头解释一遍\"的合作者。",
+    "pronounce_text": "没搭的人，每周交九百七十五美金，换的是一个\"每次都要从头解释一遍\"的合作者。",
+    "time_begin": 541116,
+    "time_end": 548481.2154195012,
+    "text_begin": 3018,
+    "text_end": 3056,
+    "pronounce_text_begin": 2877,
+    "pronounce_text_end": 2915
+  },
+  {
+    "text": "要不要做这件事，其实不是技术问题，是耐心问题。",
+    "pronounce_text": "要不要做这件事，其实不是技术问题，是耐心问题。",
+    "time_begin": 548640,
+    "time_end": 553392.9705215419,
+    "text_begin": 3056,
+    "text_end": 3079,
+    "pronounce_text_begin": 2915,
+    "pronounce_text_end": 2938
+  },
+  {
+    "text": "如果你今天就想动手，按博客作者最后那个建议来——先只抄 Karpathy 那 4 条。就 4 条。在你的项目根目录新建一个叫 CLAUDE.md 的文件，粘贴进去。两分钟就能搞定。",
+    "pronounce_text": "如果你今天就想动手，按博客作者最后那个建议来。先只抄Karpathy那四条。就四条。在你的项目根目录新建一个叫CLAUDE.md的文件，粘贴进去。两分钟就能搞定。",
+    "time_begin": 553536,
+    "time_end": 568238.7210884354,
+    "text_begin": 3079,
+    "text_end": 3169,
+    "pronounce_text_begin": 2938,
+    "pronounce_text_end": 3019
+  },
+  {
+    "text": "剩下那 17 条，每周加一点，按你踩到什么坑、加什么规则。",
+    "pronounce_text": "剩下那十七条，每周加一点，按你踩到什么坑、加什么规则。",
+    "time_begin": 568404,
+    "time_end": 573331.1201814059,
+    "text_begin": 3169,
+    "text_end": 3198,
+    "pronounce_text_begin": 3019,
+    "pronounce_text_end": 3046
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 573480,
+    "time_end": 578917.9591836735,
+    "text_begin": 3198,
+    "text_end": 3225,
+    "pronounce_text_begin": 3046,
+    "pronounce_text_end": 3072
+  }
+]

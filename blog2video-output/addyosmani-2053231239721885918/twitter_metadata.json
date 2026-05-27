@@ -1,0 +1,45 @@
+{
+  "url": "https://x.com/addyosmani/article/2053231239721885918",
+  "title": "Agent Harness Engineering",
+  "author": {
+    "name": "Addy Osmani",
+    "handle": "@addyosmani",
+    "verified": true,
+    "bio": "Director, Google Cloud AI. Gemini Agents. Prev: Eng. leader at Google Chrome. Author. Great user, developer & AI experiences. Affiliated with Google AI, Google DeepMind."
+  },
+  "posted_at": "May 9, 2026 9:50 PM",
+  "metrics": {
+    "views": "832.9K",
+    "views_exact": 832955,
+    "likes": "3.3K",
+    "likes_exact": 3339,
+    "bookmarks": "7.9K",
+    "bookmarks_exact": 7949,
+    "reposts": 565,
+    "replies": 83
+  },
+  "images": [
+    {"file": "image_1.jpg", "caption": "Harness components diagram"},
+    {"file": "image_2.jpg", "caption": "Working backwards from behavior — harness building blocks"},
+    {"file": "image_3.jpg", "caption": "Claude Code architecture (Fareed Khan's estimated breakdown)"},
+    {"file": "image_4.jpg", "caption": "Additional supporting visual"}
+  ],
+  "mentions": [
+    {"handle": "@Vtrivedy10", "note": "Coined the term 'harness engineering'"},
+    {"handle": "@dexhorthy", "note": "Tracking emergent patterns"},
+    {"handle": "@FredKSchott", "note": "Built Flue harness framework"}
+  ],
+  "referenced_entities": [
+    "HumanLayer",
+    "Anthropic",
+    "Birgitta Böckeler",
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "Aider",
+    "Cline",
+    "Fareed Khan",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "topic": "给模型加 CRITICAL 没用, 加工具才有用",
+  "blog_url": "",
+  "source": "0xcodez-2057807200173613450",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

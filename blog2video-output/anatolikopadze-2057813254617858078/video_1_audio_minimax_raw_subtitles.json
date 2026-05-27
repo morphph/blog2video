@@ -1,0 +1,732 @@
+[
+  {
+    "text": "你用的 Claude，可能是全网最弱的那一版。不是模型不行，是它身上一大半开关你从来没打开过。",
+    "pronounce_text": "你用的Claude，可能是全网最弱的那一版。不是模型不行，是它身上一大半开关你从来没打开过。",
+    "time_begin": 0,
+    "time_end": 7272.335600907029,
+    "text_begin": 0,
+    "text_end": 47,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 46
+  },
+  {
+    "text": "X 上有一篇 260 万阅读的长文，作者叫 Anatoli Kopadze，把 Claude 藏在各个角落的 17 个功能列了一遍。",
+    "pronounce_text": "X上有一篇两百六十万阅读的长文，作者叫Anatoli Kopadze，把Claude藏在各个角落的十七个功能列了一遍。",
+    "time_begin": 7472.335600907029,
+    "time_end": 17345.30612244898,
+    "text_begin": 47,
+    "text_end": 113,
+    "pronounce_text_begin": 46,
+    "pronounce_text_end": 105
+  },
+  {
+    "text": "今天不聊每一个怎么配——只聊一件事：为什么这篇文章被收藏了四千七百次，但只点了九百个赞。",
+    "pronounce_text": "今天不聊每一个怎么配。只聊一件事：为什么这篇文章被收藏了四千七百次，但只点了九百个赞。",
+    "time_begin": 17496,
+    "time_end": 26010.603174603173,
+    "text_begin": 113,
+    "text_end": 157,
+    "pronounce_text_begin": 105,
+    "pronounce_text_end": 148
+  },
+  {
+    "text": "我第一眼看这篇文章的统计就觉得不对劲。260 万人看过，4751 个人点了收藏，但只有 990 个人点了赞。收藏比点赞高五倍。这个比例在内容平台上是有含义的。",
+    "pronounce_text": "我第一眼看这篇文章的统计就觉得不对劲。两百六十万人看过，四千七百五十一个人点了收藏，但只有九百九十个人点了赞。收藏比点赞高五倍。这个比例在内容平台上是有含义的。",
+    "time_begin": 26172,
+    "time_end": 40955.990929705215,
+    "text_begin": 157,
+    "text_end": 236,
+    "pronounce_text_begin": 148,
+    "pronounce_text_end": 228
+  },
+  {
+    "text": "点赞是\"我喜欢\"，收藏是\"我以后要做\"。一篇高收藏低点赞的清单文，翻译过来就是：大家把它当作待办事项存了起来，然后再也没打开过。",
+    "pronounce_text": "点赞是\"我喜欢\"，收藏是\"我以后要做\"。一篇高收藏低点赞的清单文，翻译过来就是：大家把它当作待办事项存了起来，然后再也没打开过。",
+    "time_begin": 41112,
+    "time_end": 55594.13151927438,
+    "text_begin": 236,
+    "text_end": 300,
+    "pronounce_text_begin": 228,
+    "pronounce_text_end": 292
+  },
+  {
+    "text": "而文章本身从头到尾在说同一句话。第一节讲 Projects，作者说\"如果你还没用过 Projects，这是这篇文章里你最该先去开的\"。",
+    "pronounce_text": "而文章本身从头到尾在说同一句话。第一节讲Projects，作者说\"如果你还没用过Projects，这是这篇文章里你最该先去开的\"。",
+    "time_begin": 55764,
+    "time_end": 66368.39909297052,
+    "text_begin": 300,
+    "text_end": 367,
+    "pronounce_text_begin": 292,
+    "pronounce_text_end": 357
+  },
+  {
+    "text": "第三节讲 Adaptive Thinking，作者说\"大多数 Claude 用户从来没把这个打开过\"。",
+    "pronounce_text": "第三节讲Adaptive Thinking，作者说\"大多数Claude用户从来没把这个打开过\"。",
+    "time_begin": 66568.39909297052,
+    "time_end": 73759.4648526077,
+    "text_begin": 367,
+    "text_end": 418,
+    "pronounce_text_begin": 357,
+    "pronounce_text_end": 405
+  },
+  {
+    "text": "第四节讲 Memory，作者直接写：\"默认是关的，大多数人不知道它存在。\"",
+    "pronounce_text": "第四节讲Memory，作者直接写：\"默认是关的，大多数人不知道它存在。\"",
+    "time_begin": 73908,
+    "time_end": 81400.92517006803,
+    "text_begin": 418,
+    "text_end": 455,
+    "pronounce_text_begin": 405,
+    "pronounce_text_end": 441
+  },
+  {
+    "text": "你品一下。一个产品有 17 个功能，作者却要在每一段都写一句\"大多数人没开\"——这不是写文章，这是写控诉。",
+    "pronounce_text": "你品一下。一个产品有十七个功能，作者却要在每一段都写一句\"大多数人没开\"。这不是写文章，这是写控诉。",
+    "time_begin": 81540,
+    "time_end": 91203.99092970522,
+    "text_begin": 455,
+    "text_end": 508,
+    "pronounce_text_begin": 441,
+    "pronounce_text_end": 491
+  },
+  {
+    "text": "我把这 17 个功能挑了几个有反差感最强的来讲。",
+    "pronounce_text": "我把这十七个功能挑了几个有反差感最强的来讲。",
+    "time_begin": 91368,
+    "time_end": 94936.75283446712,
+    "text_begin": 508,
+    "text_end": 532,
+    "pronounce_text_begin": 491,
+    "pronounce_text_end": 513
+  },
+  {
+    "text": "第一类是认知层面的反差。很多人觉得 Claude 这种 AI 一打开就是一张白纸，每次重新介绍自己，每次重新解释项目背景。这个状态在产品里有专门的修复方案，叫 Projects。",
+    "pronounce_text": "第一类是认知层面的反差。很多人觉得Claude这种AI一打开就是一张白纸，每次重新介绍自己，每次重新解释项目背景。这个状态在产品里有专门的修复方案，叫Projects。",
+    "time_begin": 95076,
+    "time_end": 109558.13151927438,
+    "text_begin": 532,
+    "text_end": 621,
+    "pronounce_text_begin": 513,
+    "pronounce_text_end": 597
+  },
+  {
+    "text": "你建一个 project，把你的文档传进去，把\"我是谁、我在做什么、回答时该注意什么\"写在 instructions 里——之后你打开这个 project，Claude 就像一个跟了你半年的同事，背景知识不用再讲。",
+    "pronounce_text": "你建一个project，把你的文档传进去，把\"我是谁、我在做什么、回答时该注意什么\"写在instructions里。之后你打开这个project，Claude就像一个跟了你半年的同事，背景知识不用再讲。",
+    "time_begin": 109728,
+    "time_end": 125452.39909297052,
+    "text_begin": 621,
+    "text_end": 728,
+    "pronounce_text_begin": 597,
+    "pronounce_text_end": 698
+  },
+  {
+    "text": "顺带说一句，很多人还以为 Claude 只能产文字，不会做出能跑的东西。这也是错的。",
+    "pronounce_text": "顺带说一句，很多人还以为Claude只能产文字，不会做出能跑的东西。这也是错的。",
+    "time_begin": 125604,
+    "time_end": 132620.91609977325,
+    "text_begin": 728,
+    "text_end": 770,
+    "pronounce_text_begin": 698,
+    "pronounce_text_end": 738
+  },
+  {
+    "text": "Artifacts 这个功能在免费版就能用，你让它做一个习惯打卡的小网页、一个互动的图表、一个流程图——它直接在对话边上开一个面板，渲染一个能点能用的真东西。",
+    "pronounce_text": "Artifacts这个功能在免费版就能用，你让它做一个习惯打卡的小网页、一个互动的图表、一个流程图。它直接在对话边上开一个面板，渲染一个能点能用的真东西。",
+    "time_begin": 132768,
+    "time_end": 145543.46485260772,
+    "text_begin": 770,
+    "text_end": 849,
+    "pronounce_text_begin": 738,
+    "pronounce_text_end": 815
+  },
+  {
+    "text": "作者那句话很扎心：\"免费版就能用，但大多数人从来没试过。\"",
+    "pronounce_text": "作者那句话很扎心：\"免费版就能用，但大多数人从来没试过。\"",
+    "time_begin": 145692,
+    "time_end": 151002.24943310657,
+    "text_begin": 849,
+    "text_end": 878,
+    "pronounce_text_begin": 815,
+    "pronounce_text_end": 844
+  },
+  {
+    "text": "但 Memory 比 Projects 更进一步。Memory 是跨 project 的人物画像。你跟 Claude 聊得越多，它记住的越多——你的工作、你在做什么项目、你喜欢什么沟通风格。",
+    "pronounce_text": "但Memory比Projects更进一步。Memory是跨project的人物画像。你跟Claude聊得越多，它记住的越多。你的工作、你在做什么项目、你喜欢什么沟通风格。",
+    "time_begin": 151164,
+    "time_end": 165483.5918367347,
+    "text_begin": 878,
+    "text_end": 973,
+    "pronounce_text_begin": 844,
+    "pronounce_text_end": 929
+  },
+  {
+    "text": "下次开一个全新的 chat，它已经知道你是谁。",
+    "pronounce_text": "下次开一个全新的chat，它已经知道你是谁。",
+    "time_begin": 165683.5918367347,
+    "time_end": 169589.03401360544,
+    "text_begin": 973,
+    "text_end": 996,
+    "pronounce_text_begin": 929,
+    "pronounce_text_end": 951
+  },
+  {
+    "text": "这两个东西不是新功能，已经在产品里很久了。Memory 默认就是关的。Projects 大多数人从来没建过。所以你每天打开 Claude 重新自我介绍——不是 Claude 没本事，是你用的这个版本，记忆开关没打。",
+    "pronounce_text": "这两个东西不是新功能，已经在产品里很久了。Memory默认就是关的。Projects大多数人从来没建过。所以你每天打开Claude重新自我介绍。不是Claude没本事，是你用的这个版本，记忆开关没打。",
+    "time_begin": 169740,
+    "time_end": 185510.83900226757,
+    "text_begin": 996,
+    "text_end": 1103,
+    "pronounce_text_begin": 951,
+    "pronounce_text_end": 1051
+  },
+  {
+    "text": "再往下还有一个 Adaptive Thinking，也叫扩展思考模式。打开之后，Claude 会先一步一步把思路推一遍，再给你答案。整个推理过程你能看到。简单问题不用开。",
+    "pronounce_text": "再往下还有一个Adaptive Thinking，也叫扩展思考模式。打开之后，Claude会先一步一步把思路推一遍，再给你答案。整个推理过程你能看到。简单问题不用开。",
+    "time_begin": 185652,
+    "time_end": 199623.2925170068,
+    "text_begin": 1103,
+    "text_end": 1188,
+    "pronounce_text_begin": 1051,
+    "pronounce_text_end": 1134
+  },
+  {
+    "text": "但只要遇到要做权衡、要做判断的问题——比如两个 offer 怎么选、一个项目要不要砍——开和不开的差距非常明显。作者写得很直接：\"大多数 Claude 用户从来没把这个打开过。\"",
+    "pronounce_text": "但只要遇到要做权衡、要做判断的问题。比如两个offer怎么选、一个项目要不要砍。开和不开的差距非常明显。作者写得很直接：\"大多数Claude用户从来没把这个打开过。\"",
+    "time_begin": 199764,
+    "time_end": 214501.55102040817,
+    "text_begin": 1188,
+    "text_end": 1277,
+    "pronounce_text_begin": 1134,
+    "pronounce_text_end": 1217
+  },
+  {
+    "text": "你下次面对一个真正难选的事，把同一个问题问两遍——开 thinking 一遍，不开一遍——自己对比。",
+    "pronounce_text": "你下次面对一个真正难选的事，把同一个问题问两遍。开thinking一遍，不开一遍。自己对比。",
+    "time_begin": 214668,
+    "time_end": 222799.47392290249,
+    "text_begin": 1277,
+    "text_end": 1327,
+    "pronounce_text_begin": 1217,
+    "pronounce_text_end": 1263
+  },
+  {
+    "text": "第二类是输出层面的反差。很多人吐槽 Claude 给的答案太软、太正确、太\"五条建议\"。文章里 5 到 9 号，五个 prompt，全部解决这个问题。逻辑是同一个：给 Claude 一个具体的角色。",
+    "pronounce_text": "第二类是输出层面的反差。很多人吐槽Claude给的答案太软、太正确、太\"五条建议\"。文章里五到九号，五个prompt，全部解决这个问题。逻辑是同一个：给Claude一个具体的角色。",
+    "time_begin": 222948,
+    "time_end": 238544.68934240364,
+    "text_begin": 1327,
+    "text_end": 1426,
+    "pronounce_text_begin": 1263,
+    "pronounce_text_end": 1353
+  },
+  {
+    "text": "比如第 6 号叫 the hard mentor，毒舌导师。原文那段 prompt 大概意思是：你是一个建过公司又失败过的老板，你见过一百个人犯一样的错。",
+    "pronounce_text": "比如第六号叫the hard mentor，毒舌导师。原文那段prompt大概意思是：你是一个建过公司又失败过的老板，你见过一百个人犯一样的错。",
+    "time_begin": 238716,
+    "time_end": 251201.21541950112,
+    "text_begin": 1426,
+    "text_end": 1503,
+    "pronounce_text_begin": 1353,
+    "pronounce_text_end": 1425
+  },
+  {
+    "text": "你的工作不是鼓励我，是在我做出贵的决定之前提醒我盲点在哪。",
+    "pronounce_text": "你的工作不是鼓励我，是在我做出贵的决定之前提醒我盲点在哪。",
+    "time_begin": 251401.21541950112,
+    "time_end": 256548.92517006802,
+    "text_begin": 1503,
+    "text_end": 1532,
+    "pronounce_text_begin": 1425,
+    "pronounce_text_end": 1454
+  },
+  {
+    "text": "挂上这段 prompt 之后，你描述一个想法，它不会再说\"听起来不错\"，它会一条一条挑你的漏洞。",
+    "pronounce_text": "挂上这段prompt之后，你描述一个想法，它不会再说\"听起来不错\"，它会一条一条挑你的漏洞。",
+    "time_begin": 256716,
+    "time_end": 265695.00226757367,
+    "text_begin": 1532,
+    "text_end": 1580,
+    "pronounce_text_begin": 1454,
+    "pronounce_text_end": 1500
+  },
+  {
+    "text": "第 9 号叫 devil's advocate。你告诉 Claude 你已经做了一个决定，让它专门给你做反方辩护——三个最现实的失败路径，最被低估的风险，最不愿意面对的假设。",
+    "pronounce_text": "第九号叫devil's advocate。你告诉Claude你已经做了一个决定，让它专门给你做反方辩护。三个最现实的失败路径，最被低估的风险，最不愿意面对的假设。",
+    "time_begin": 265860,
+    "time_end": 278217.50566893426,
+    "text_begin": 1580,
+    "text_end": 1667,
+    "pronounce_text_begin": 1500,
+    "pronounce_text_end": 1581
+  },
+  {
+    "text": "这种 prompt 的有效性，作者总结得很到位：默认的 Claude 会找你想法里的优点来支撑你；但你给它\"魔鬼代言人\"的角色之后，它就只剩攻击你。五分钟的攻击，可能比你自己反复纠结一周都管用。",
+    "pronounce_text": "这种prompt的有效性，作者总结得很到位：默认的Claude会找你想法里的优点来支撑你;但你给它\"魔鬼代言人\"的角色之后，它就只剩攻击你。五分钟的攻击，可能比你自己反复纠结一周都管用。",
+    "time_begin": 278388,
+    "time_end": 295261.78684807254,
+    "text_begin": 1667,
+    "text_end": 1764,
+    "pronounce_text_begin": 1581,
+    "pronounce_text_end": 1674
+  },
+  {
+    "text": "还有第 8 号是难对话陪练。你跟 Claude 描述对方的性格、你想说什么、为什么难——Claude 直接扮演那个人。你说弱的话，它会反驳你。结束以后再跳出角色给你做一个复盘。",
+    "pronounce_text": "还有第八号是难对话陪练。你跟Claude描述对方的性格、你想说什么、为什么难。Claude直接扮演那个人。你说弱的话，它会反驳你。结束以后再跳出角色给你做一个复盘。",
+    "time_begin": 295416,
+    "time_end": 309480.1723356009,
+    "text_begin": 1764,
+    "text_end": 1852,
+    "pronounce_text_begin": 1674,
+    "pronounce_text_end": 1756
+  },
+  {
+    "text": "我自己试过一次，那种\"你不是在被安慰、你是在被对面打\"的真实感，比反复在脑子里演练有用得多。",
+    "pronounce_text": "我自己试过一次，那种\"你不是在被安慰、你是在被对面打\"的真实感，比反复在脑子里演练有用得多。",
+    "time_begin": 309636,
+    "time_end": 318998.1315192744,
+    "text_begin": 1852,
+    "text_end": 1898,
+    "pronounce_text_begin": 1756,
+    "pronounce_text_end": 1802
+  },
+  {
+    "text": "我说一个很反直觉的判断。你给 Claude 换一个更强的模型，它的回答可能没什么变化。但你给它一段\"你是个毒舌导师\"的 system prompt，它立刻翻脸。这两件事的杠杆完全不在一个量级。",
+    "pronounce_text": "我说一个很反直觉的判断。你给Claude换一个更强的模型，它的回答可能没什么变化。但你给它一段\"你是个毒舌导师\"的system prompt，它立刻翻脸。这两件事的杠杆完全不在一个量级。",
+    "time_begin": 319140,
+    "time_end": 333494.42176870746,
+    "text_begin": 1898,
+    "text_end": 1994,
+    "pronounce_text_begin": 1802,
+    "pronounce_text_end": 1895
+  },
+  {
+    "text": "大多数人花精力在等下一代模型，但其实你眼前这一代模型的 90% 的能力，都被一个软绵绵的默认人格挡住了。",
+    "pronounce_text": "大多数人花精力在等下一代模型，但其实你眼前这一代模型的百分之九十的能力，都被一个软绵绵的默认人格挡住了。",
+    "time_begin": 333648,
+    "time_end": 342499.2925170068,
+    "text_begin": 1994,
+    "text_end": 2046,
+    "pronounce_text_begin": 1895,
+    "pronounce_text_end": 1947
+  },
+  {
+    "text": "第三类是产品层面的反差。很多人对 Claude 的印象还停留在\"网页里那个聊天框\"。但作者列了三个完全不在聊天框里的东西。",
+    "pronounce_text": "第三类是产品层面的反差。很多人对Claude的印象还停留在\"网页里那个聊天框\"。但作者列了三个完全不在聊天框里的东西。",
+    "time_begin": 342648,
+    "time_end": 353507.8185941043,
+    "text_begin": 2046,
+    "text_end": 2107,
+    "pronounce_text_begin": 1947,
+    "pronounce_text_end": 2006
+  },
+  {
+    "text": "Claude in Chrome 是一个浏览器扩展。装上以后，Claude 能看你当前打开的那个 tab，能点链接、能填表单、能跳 URL。",
+    "pronounce_text": "Claude in Chrome是一个浏览器扩展。装上以后，Claude能看你当前打开的那个tab，能点链接、能填表单、能跳URL。",
+    "time_begin": 353664,
+    "time_end": 364140.6893424036,
+    "text_begin": 2107,
+    "text_end": 2177,
+    "pronounce_text_begin": 2006,
+    "pronounce_text_end": 2072
+  },
+  {
+    "text": "文章里给的例子是：我现在在一个招聘列表页，你帮我把所有职位的标题、公司、薪资范围、前三个要求抓出来，按薪资排序做成表格——多页就翻到下一页继续。",
+    "pronounce_text": "文章里给的例子是：我现在在一个招聘列表页，你帮我把所有职位的标题、公司、薪资范围、前三个要求抓出来，按薪资排序做成表格。多页就翻到下一页继续。",
+    "time_begin": 364284,
+    "time_end": 378731.3015873016,
+    "text_begin": 2177,
+    "text_end": 2249,
+    "pronounce_text_begin": 2072,
+    "pronounce_text_end": 2143
+  },
+  {
+    "text": "Claude Cowork 是一个桌面 app。桌面 app 的意思是，它直接读你电脑里的文件。不用复制粘贴。它能看你的文件、改你的文档、新建文件、整理文件夹。",
+    "pronounce_text": "Claude Cowork是一个桌面app。桌面app的意思是，它直接读你电脑里的文件。不用复制粘贴。它能看你的文件、改你的文档、新建文件、整理文件夹。",
+    "time_begin": 378900,
+    "time_end": 391036.91609977325,
+    "text_begin": 2249,
+    "text_end": 2329,
+    "pronounce_text_begin": 2143,
+    "pronounce_text_end": 2219
+  },
+  {
+    "text": "Scheduled Tasks 是定时任务。你只配置一次，Claude 在你设定的时间自动跑——每周一早上 7:30 把过去 24 小时的 AI 和加密新闻挑五条最重要的，写两句摘要，存到你 briefs 文件夹里。",
+    "pronounce_text": "Scheduled Tasks是定时任务。你只配置一次，Claude在你设定的时间自动跑。每周一早上七点三十分把过去二十四小时的AI和加密新闻挑五条最重要的，写两句摘要，存到你briefs文件夹里。",
+    "time_begin": 391176,
+    "time_end": 406644.97959183675,
+    "text_begin": 2329,
+    "text_end": 2437,
+    "pronounce_text_begin": 2219,
+    "pronounce_text_end": 2318
+  },
+  {
+    "text": "你睡觉的时候它已经在干活了。",
+    "pronounce_text": "你睡觉的时候它已经在干活了。",
+    "time_begin": 406800,
+    "time_end": 409045.2154195011,
+    "text_begin": 2437,
+    "text_end": 2451,
+    "pronounce_text_begin": 2318,
+    "pronounce_text_end": 2332
+  },
+  {
+    "text": "这三个东西很多人完全不知道。但它们已经发布，已经能用。",
+    "pronounce_text": "这三个东西很多人完全不知道。但它们已经发布，已经能用。",
+    "time_begin": 409212,
+    "time_end": 413500.5714285714,
+    "text_begin": 2451,
+    "text_end": 2478,
+    "pronounce_text_begin": 2332,
+    "pronounce_text_end": 2359
+  },
+  {
+    "text": "我要在这里加一个 tradeoff，不只讲爽点。这三个产品分别是浏览器扩展、桌面 app、和需要在 Cowork 里配置的定时任务——你想全部用上，得跨三四个不同的产品环境去装去登录去配置。",
+    "pronounce_text": "我要在这里加一个tradeoff，不只讲爽点。这三个产品分别是浏览器扩展、桌面app、和需要在Cowork里配置的定时任务。你想全部用上，得跨三四个不同的产品环境去装去登录去配置。",
+    "time_begin": 413640,
+    "time_end": 429828.79818594106,
+    "text_begin": 2478,
+    "text_end": 2573,
+    "pronounce_text_begin": 2359,
+    "pronounce_text_end": 2449
+  },
+  {
+    "text": "文章那句\"几分钟就能搞定\"对技术用户成立，对非技术用户其实是一个不小的认知成本。所以不要一次性全开，挑一个你这周真的会用的，先把那一个跑起来。",
+    "pronounce_text": "文章那句\"几分钟就能搞定\"对技术用户成立，对非技术用户其实是一个不小的认知成本。所以不要一次性全开，挑一个你这周真的会用的，先把那一个跑起来。",
+    "time_begin": 429984,
+    "time_end": 442039.6462585034,
+    "text_begin": 2573,
+    "text_end": 2644,
+    "pronounce_text_begin": 2449,
+    "pronounce_text_end": 2520
+  },
+  {
+    "text": "文章里第 16 节最让我意外。作者写：\"大多数人都不知道这个产品存在。\"",
+    "pronounce_text": "文章里第十六节最让我意外。作者写：\"大多数人都不知道这个产品存在。\"",
+    "time_begin": 442188,
+    "time_end": 449204.91609977325,
+    "text_begin": 2644,
+    "text_end": 2680,
+    "pronounce_text_begin": 2520,
+    "pronounce_text_end": 2554
+  },
+  {
+    "text": "这个产品叫 Claude Design。是 Anthropic Labs 单独做的一个工具，专门做视觉类的东西——产品的一页纸介绍、pitch deck、原型图、落地页布局。",
+    "pronounce_text": "这个产品叫Claude Design。是Anthropic Labs单独做的一个工具，专门做视觉类的东西。产品的一页纸介绍、pitch deck、原型图、落地页布局。",
+    "time_begin": 449352,
+    "time_end": 461454.0861678005,
+    "text_begin": 2680,
+    "text_end": 2767,
+    "pronounce_text_begin": 2554,
+    "pronounce_text_end": 2637
+  },
+  {
+    "text": "你描述你想要什么，Claude 直接给你做出来，可以导出 PPTX、Canva、PDF 或 HTML。",
+    "pronounce_text": "你描述你想要什么，Claude直接给你做出来，可以导出PPTX、Canva、PDF或HTML。",
+    "time_begin": 461654.0861678005,
+    "time_end": 470598.25850340136,
+    "text_begin": 2767,
+    "text_end": 2818,
+    "pronounce_text_begin": 2637,
+    "pronounce_text_end": 2684
+  },
+  {
+    "text": "访问地址就是 claude.ai/design。",
+    "pronounce_text": "访问地址就是claude点ai斜杠design。",
+    "time_begin": 470736,
+    "time_end": 474595.00226757367,
+    "text_begin": 2818,
+    "text_end": 2842,
+    "pronounce_text_begin": 2684,
+    "pronounce_text_end": 2708
+  },
+  {
+    "text": "我自己也是看这篇文章才知道。一个能把三小时 Figma 工作压缩到十分钟对话的产品，连入口都不需要登录跳转，直接打那个 URL 就行。但这个产品就是没什么人知道。",
+    "pronounce_text": "我自己也是看这篇文章才知道。一个能把三小时Figma工作压缩到十分钟对话的产品，连入口都不需要登录跳转，直接打那个URL就行。但这个产品就是没什么人知道。",
+    "time_begin": 474732,
+    "time_end": 488494.31292517006,
+    "text_begin": 2842,
+    "text_end": 2923,
+    "pronounce_text_begin": 2708,
+    "pronounce_text_end": 2785
+  },
+  {
+    "text": "这就是我说\"Claude 是被低估的\"的真正含义。低估不是说它的能力被低估，是说它已经做出来的产品，连存在感都没建立起来。",
+    "pronounce_text": "这就是我说\"Claude是被低估的\"的真正含义。低估不是说它的能力被低估，是说它已经做出来的产品，连存在感都没建立起来。",
+    "time_begin": 488664,
+    "time_end": 499140.6893424036,
+    "text_begin": 2923,
+    "text_end": 2984,
+    "pronounce_text_begin": 2785,
+    "pronounce_text_end": 2845
+  },
+  {
+    "text": "最后一类是给做事的人准备的。如果你已经在用 Cowork 或 Claude Code，文章里第 13 和第 14 是两个最值钱的开关。",
+    "pronounce_text": "最后一类是给做事的人准备的。如果你已经在用Cowork或Claude Code，文章里第十三和第十四是两个最值钱的开关。",
+    "time_begin": 499284,
+    "time_end": 509551.70975056686,
+    "text_begin": 2984,
+    "text_end": 3051,
+    "pronounce_text_begin": 2845,
+    "pronounce_text_end": 2905
+  },
+  {
+    "text": "第 14 节讲 CLAUDE.md。你在你的项目文件夹里建一个叫 CLAUDE.md 的文件，里面写你的规矩——代码风格、写作风格、不能用的词、文件该放哪。",
+    "pronounce_text": "第十四节讲CLAUDE.md。你在你的项目文件夹里建一个叫CLAUDE.md的文件，里面写你的规矩。代码风格、写作风格、不能用的词、文件该放哪。",
+    "time_begin": 509688,
+    "time_end": 525365.9591836735,
+    "text_begin": 3051,
+    "text_end": 3129,
+    "pronounce_text_begin": 2905,
+    "pronounce_text_end": 2977
+  },
+  {
+    "text": "每次 Claude 启动这个项目，自动读一遍。不用你提醒。",
+    "pronounce_text": "每次Claude启动这个项目，自动读一遍。不用你提醒。",
+    "time_begin": 525565.9591836735,
+    "time_end": 530028.6802721089,
+    "text_begin": 3129,
+    "text_end": 3158,
+    "pronounce_text_begin": 2977,
+    "pronounce_text_end": 3004
+  },
+  {
+    "text": "规矩写一次，全部 session 永久生效。",
+    "pronounce_text": "规矩写一次，全部session永久生效。",
+    "time_begin": 530172,
+    "time_end": 534541.8412698413,
+    "text_begin": 3158,
+    "text_end": 3180,
+    "pronounce_text_begin": 3004,
+    "pronounce_text_end": 3024
+  },
+  {
+    "text": "第 13 节讲 Cowork 里的 Skills。Skills 是预先打包好的能力。比如你装一个做 PowerPoint 的 skill，Claude 就自动知道怎么生成 ppt。装一个处理 PDF 的 skill，它就会按那个工作流去做。",
+    "pronounce_text": "第十三节讲Cowork里的Skills。Skills是预先打包好的能力。比如你装一个做PowerPoint的skill，Claude就自动知道怎么生成ppt。装一个处理PDF的skill，它就会按那个工作流去做。",
+    "time_begin": 534708,
+    "time_end": 550478.8390022676,
+    "text_begin": 3180,
+    "text_end": 3300,
+    "pronounce_text_begin": 3024,
+    "pronounce_text_end": 3130
+  },
+  {
+    "text": "作者的比喻是：手机本身是好用的，装了 app 之后它能做的事多得多。",
+    "pronounce_text": "作者的比喻是：手机本身是好用的，装了app之后它能做的事多得多。",
+    "time_begin": 550620,
+    "time_end": 556533.9682539683,
+    "text_begin": 3300,
+    "text_end": 3334,
+    "pronounce_text_begin": 3130,
+    "pronounce_text_end": 3162
+  },
+  {
+    "text": "这两个东西的共同点是：它们是配置文件，不是聊天指令。你不需要每次都提醒 Claude \"记得短段落\"、\"记得不要用 delve 这个词\"——你写一次进文件，永远生效。",
+    "pronounce_text": "这两个东西的共同点是：它们是配置文件，不是聊天指令。你不需要每次都提醒Claude\"记得短段落\"、\"记得不要用delve这个词\"。你写一次进文件，永远生效。",
+    "time_begin": 556704,
+    "time_end": 570292.1632653062,
+    "text_begin": 3334,
+    "text_end": 3417,
+    "pronounce_text_begin": 3162,
+    "pronounce_text_end": 3240
+  },
+  {
+    "text": "文章最后一节是给 API 开发者的。叫 Prompt Caching。",
+    "pronounce_text": "文章最后一节是给API开发者的。叫Prompt Caching。",
+    "time_begin": 570456,
+    "time_end": 575046.4308390022,
+    "text_begin": 3417,
+    "text_end": 3452,
+    "pronounce_text_begin": 3240,
+    "pronounce_text_end": 3272
+  },
+  {
+    "text": "如果你的 API 请求里每次都带着一段巨大的、不变的上下文——一段长 system prompt、一份参考文档、一段 codebase——你每次调用都在为重新处理这些 token 付钱。",
+    "pronounce_text": "如果你的API请求里每次都带着一段巨大的、不变的上下文。一段长system prompt、一份参考文档、一段codebase。你每次调用都在为重新处理这些token付钱。",
+    "time_begin": 575208,
+    "time_end": 589225.7324263039,
+    "text_begin": 3452,
+    "text_end": 3545,
+    "pronounce_text_begin": 3272,
+    "pronounce_text_end": 3357
+  },
+  {
+    "text": "Prompt Caching 把这段内容缓存到服务端，下一次命中就只算便宜价。",
+    "pronounce_text": "Prompt Caching把这段内容缓存到服务端，下一次命中就只算便宜价。",
+    "time_begin": 589425.7324263039,
+    "time_end": 596280.1088435374,
+    "text_begin": 3545,
+    "text_end": 3584,
+    "pronounce_text_begin": 3357,
+    "pronounce_text_end": 3395
+  },
+  {
+    "text": "缓存命中的 token 最高省 90%。响应速度还更快。",
+    "pronounce_text": "缓存命中的token最高省百分之九十。响应速度还更快。",
+    "time_begin": 596448,
+    "time_end": 601293.8503401361,
+    "text_begin": 3584,
+    "text_end": 3612,
+    "pronounce_text_begin": 3395,
+    "pronounce_text_end": 3422
+  },
+  {
+    "text": "启用方式就是一行配置：在你想缓存的 content block 加上 cache_control 字段。缓存 5 分钟过期，每次命中刷新计时。",
+    "pronounce_text": "启用方式就是一行配置：在你想缓存的content block加上cache，control字段。缓存五分钟过期，每次命中刷新计时。",
+    "time_begin": 601452,
+    "time_end": 611847.4195011337,
+    "text_begin": 3612,
+    "text_end": 3683,
+    "pronounce_text_begin": 3422,
+    "pronounce_text_end": 3487
+  },
+  {
+    "text": "这个功能很多大规模在调 API 的人都还没接。一行字段，账单立刻减一大块。",
+    "pronounce_text": "这个功能很多大规模在调API的人都还没接。一行字段，账单立刻减一大块。",
+    "time_begin": 612000,
+    "time_end": 618459.6371882086,
+    "text_begin": 3683,
+    "text_end": 3720,
+    "pronounce_text_begin": 3487,
+    "pronounce_text_end": 3522
+  },
+  {
+    "text": "我从头看完这篇文章，最后一段就一句话：\"你现在比每天用 Claude 的大多数人，都更懂它。\"",
+    "pronounce_text": "我从头看完这篇文章，最后一段就一句话：\"你现在比每天用Claude的大多数人，都更懂它。\"",
+    "time_begin": 618624,
+    "time_end": 626790.3038548753,
+    "text_begin": 3720,
+    "text_end": 3767,
+    "pronounce_text_begin": 3522,
+    "pronounce_text_end": 3567
+  },
+  {
+    "text": "听起来像鸡汤，但你想想前面那 17 节——每一节作者都在重复同一句话：\"默认是关的\"、\"大多数人没开\"、\"大多数人不知道这个产品存在\"。",
+    "pronounce_text": "听起来像鸡汤，但你想想前面那十七节。每一节作者都在重复同一句话：\"默认是关的\"、\"大多数人没开\"、\"大多数人不知道这个产品存在\"。",
+    "time_begin": 626940,
+    "time_end": 640621.0430839002,
+    "text_begin": 3767,
+    "text_end": 3835,
+    "pronounce_text_begin": 3567,
+    "pronounce_text_end": 3632
+  },
+  {
+    "text": "所以这篇文章真正讲的不是\"Claude 有什么\"，是\"为什么大多数人用的那个 Claude，是出厂最弱配置的那一版\"。能力差距不是瓶颈。配置差距才是。",
+    "pronounce_text": "所以这篇文章真正讲的不是\"Claude有什么\"，是\"为什么大多数人用的那个Claude，是出厂最弱配置的那一版\"。能力差距不是瓶颈。配置差距才是。",
+    "time_begin": 640764,
+    "time_end": 654526.3129251701,
+    "text_begin": 3835,
+    "text_end": 3910,
+    "pronounce_text_begin": 3632,
+    "pronounce_text_end": 3705
+  },
+  {
+    "text": "这是一个很常见的模式。一个工具的能力上限，是工程师写出来的；但一个工具的实际能力，是用户开了几个开关决定的。",
+    "pronounce_text": "这是一个很常见的模式。一个工具的能力上限，是工程师写出来的;但一个工具的实际能力，是用户开了几个开关决定的。",
+    "time_begin": 654696,
+    "time_end": 665346.8390022676,
+    "text_begin": 3910,
+    "text_end": 3964,
+    "pronounce_text_begin": 3705,
+    "pronounce_text_end": 3759
+  },
+  {
+    "text": "你看那 17 项里，几乎一半都有一个明确的 toggle 或一个明确的入口——Memory 那个开关、Projects 那个新建按钮、Adaptive Thinking 那个图标、",
+    "pronounce_text": "你看那十七项里，几乎一半都有一个明确的toggle或一个明确的入口。Memory那个开关、Projects那个新建按钮、Adaptive Thinking那个图标、",
+    "time_begin": 665496,
+    "time_end": 677075.6371882086,
+    "text_begin": 3964,
+    "text_end": 4054,
+    "pronounce_text_begin": 3759,
+    "pronounce_text_end": 3841
+  },
+  {
+    "text": "claude.ai/design 那个网址。每一个 toggle 没点开，对应的能力就当作不存在。",
+    "pronounce_text": "claude点ai斜杠design那个网址。每一个toggle没点开，对应的能力就当作不存在。",
+    "time_begin": 677275.6371882086,
+    "time_end": 684083.5736961451,
+    "text_begin": 4054,
+    "text_end": 4103,
+    "pronounce_text_begin": 3841,
+    "pronounce_text_end": 3888
+  },
+  {
+    "text": "我们这两个月聊了一堆 Claude Code 内部架构、Harness 工程、Agent 怎么协同、prompt 怎么分层。这些视频是给搭东西的人看的。",
+    "pronounce_text": "我们这两个月聊了一堆Claude Code内部架构、Harness工程、Agent怎么协同、prompt怎么分层。这些视频是给搭东西的人看的。",
+    "time_begin": 684252,
+    "time_end": 693707.0113378685,
+    "text_begin": 4103,
+    "text_end": 4179,
+    "pronounce_text_begin": 3888,
+    "pronounce_text_end": 3959
+  },
+  {
+    "text": "但今天这一期是反过来的——对绝大多数只是在用 Claude 的人来说，瓶颈根本不在那些花哨架构上。",
+    "pronounce_text": "但今天这一期是反过来的。对绝大多数只是在用Claude的人来说，瓶颈根本不在那些花哨架构上。",
+    "time_begin": 693907.0113378685,
+    "time_end": 701736.6258503401,
+    "text_begin": 4179,
+    "text_end": 4228,
+    "pronounce_text_begin": 3959,
+    "pronounce_text_end": 4005
+  },
+  {
+    "text": "瓶颈在你有没有去点开\"启用 Memory\"那个 toggle，有没有去 claude.ai/design 那个网址看一眼，有没有给你的项目建一个 CLAUDE.md。",
+    "pronounce_text": "瓶颈在你有没有去点开\"启用Memory\"那个toggle，有没有去claude点ai斜杠design那个网址看一眼，有没有给你的项目建一个CLAUDE.md。",
+    "time_begin": 701892,
+    "time_end": 713947.6462585034,
+    "text_begin": 4228,
+    "text_end": 4311,
+    "pronounce_text_begin": 4005,
+    "pronounce_text_end": 4084
+  },
+  {
+    "text": "收藏 4751 次、点赞 990 次——那 4751 个人里，大概率有一大半到今天还没真的去开过一个开关。我希望你不要也是。",
+    "pronounce_text": "收藏四千七百五十一次、点赞九百九十次。那四千七百五十一个人里，大概率有一大半到今天还没真的去开过一个开关。我希望你不要也是。",
+    "time_begin": 714096,
+    "time_end": 725722.0770975057,
+    "text_begin": 4311,
+    "text_end": 4373,
+    "pronounce_text_begin": 4084,
+    "pronounce_text_end": 4146
+  },
+  {
+    "text": "挑一个。就一个。不要全部。今天就去开。Memory 也行，Projects 也行，给 Claude 写一段毒舌导师的 system prompt 也行。",
+    "pronounce_text": "挑一个。就一个。不要全部。今天就去开。Memory也行，Projects也行，给Claude写一段毒舌导师的system prompt也行。",
+    "time_begin": 725868,
+    "time_end": 738515.7551020408,
+    "text_begin": 4373,
+    "text_end": 4449,
+    "pronounce_text_begin": 4146,
+    "pronounce_text_end": 4216
+  },
+  {
+    "text": "最不济，把 claude.ai/design 这个网址收藏起来下次试一试。",
+    "pronounce_text": "最不济，把claude点ai斜杠design这个网址收藏起来下次试一试。",
+    "time_begin": 738715.7551020408,
+    "time_end": 744200.1541950114,
+    "text_begin": 4449,
+    "text_end": 4486,
+    "pronounce_text_begin": 4216,
+    "pronounce_text_end": 4252
+  },
+  {
+    "text": "知道它存在，已经是一半。",
+    "pronounce_text": "知道它存在，已经是一半。",
+    "time_begin": 744372,
+    "time_end": 746744.925170068,
+    "text_begin": 4486,
+    "text_end": 4498,
+    "pronounce_text_begin": 4252,
+    "pronounce_text_end": 4264
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 746892,
+    "time_end": 752422.8390022676,
+    "text_begin": 4498,
+    "text_end": 4525,
+    "pronounce_text_begin": 4264,
+    "pronounce_text_end": 4290
+  }
+]

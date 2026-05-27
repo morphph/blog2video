@@ -1,0 +1,562 @@
+[
+  {
+    "text": "Anthropic 自己刚把\"怎么写 prompt\"拆成了一份 4 层方法论。一份官方文档 + 一门内部课 + 一位应用 AI 工程师的内部演讲，被一个博主压成了 29 万阅读的长帖。",
+    "pronounce_text": "Anthropic自己刚把\"怎么写prompt\"拆成了一份四层方法论。一份官方文档加一门内部课加一位应用AI工程师的内部演讲，被一个博主压成了二十九万阅读的长帖。",
+    "time_begin": 0,
+    "time_end": 13158.59410430839,
+    "text_begin": 0,
+    "text_end": 92,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 81
+  },
+  {
+    "text": "我读完最被打到的，是 Anthropic 工程师在演讲里亲口点穿的那条判断——你给模型加 CRITICAL、加 ALWAYS、加 NEVER，全都没用。指令不等于能力。",
+    "pronounce_text": "我读完最被打到的，是Anthropic工程师在演讲里亲口点穿的那条判断。你给模型加CRITICAL、加ALWAYS、加NEVER，全都没用。指令不等于能力。",
+    "time_begin": 13320,
+    "time_end": 25166.666666666668,
+    "text_begin": 92,
+    "text_end": 176,
+    "pronounce_text_begin": 81,
+    "pronounce_text_end": 159
+  },
+  {
+    "text": "先把这件事讲透。大多数人写 prompt, 流程是这样的: 想到一句话, 敲下去, 模型答得不行, 加几个词, 再不行就加 CRITICAL, 再不行就把 ALWAYS 和 NEVER 一起堆上去,像在跟模型吵架。",
+    "pronounce_text": "先把这件事讲透。大多数人写prompt,流程是这样的:想到一句话,敲下去,模型答得不行,加几个词,再不行就加CRITICAL,再不行就把ALWAYS和NEVER一起堆上去,像在跟模型吵架。",
+    "time_begin": 25308,
+    "time_end": 41078.839002267574,
+    "text_begin": 176,
+    "text_end": 283,
+    "pronounce_text_begin": 159,
+    "pronounce_text_end": 253
+  },
+  {
+    "text": "Anthropic 自己的文档里有一句直接点名这种姿势——\"打一句模糊的话, 按回车, 然后祈祷, 然后纳闷为什么输出又泛又虚\"。这不是讽刺, 这是 99% 的人每天在干的事。",
+    "pronounce_text": "Anthropic自己的文档里有一句直接点名这种姿势。\"打一句模糊的话,按回车,然后祈祷,然后纳闷为什么输出又泛又虚\"。这不是讽刺,这是百分之九十九的人每天在干的事。",
+    "time_begin": 41220,
+    "time_end": 55446.71201814059,
+    "text_begin": 283,
+    "text_end": 371,
+    "pronounce_text_begin": 253,
+    "pronounce_text_end": 336
+  },
+  {
+    "text": "问题不是你不够卷, 是你在错的地方卷。这篇文章给了一个很冷静的判断: prompt 不是一句话, 是一个四层的系统。新手只写第二层, 然后停在那里。专业的人四层一起搭, 而且有顺序。",
+    "pronounce_text": "问题不是你不够卷,是你在错的地方卷。这篇文章给了一个很冷静的判断:prompt不是一句话,是一个四层的系统。新手只写第二层,然后停在那里。专业的人四层一起搭,而且有顺序。",
+    "time_begin": 55584,
+    "time_end": 72155.92743764172,
+    "text_begin": 371,
+    "text_end": 462,
+    "pronounce_text_begin": 336,
+    "pronounce_text_end": 421
+  },
+  {
+    "text": "四层是这样的。",
+    "pronounce_text": "四层是这样的。",
+    "time_begin": 72324,
+    "time_end": 73710.07709750567,
+    "text_begin": 462,
+    "text_end": 469,
+    "pronounce_text_begin": 421,
+    "pronounce_text_end": 428
+  },
+  {
+    "text": "第一层叫 Parseable, 让模型读得懂。XML 标签把角色、政策、数据、示例分开。Claude 是被专门训练过认 XML 结构的, 这不是审美, 是模型的母语。",
+    "pronounce_text": "第一层叫Parseable,让模型读得懂。XML标签把角色、政策、数据、示例分开。Claude是被专门训练过认XML结构的,这不是审美,是模型的母语。",
+    "time_begin": 73872,
+    "time_end": 88992.68027210885,
+    "text_begin": 469,
+    "text_end": 552,
+    "pronounce_text_begin": 428,
+    "pronounce_text_end": 503
+  },
+  {
+    "text": "第二层叫 Direction, 给模型指方向。给它一个 role, 把任务说清楚, 给一两个例子, 让它把思考过程写出来。",
+    "pronounce_text": "第二层叫Direction,给模型指方向。给它一个role,把任务说清楚,给一两个例子,让它把思考过程写出来。",
+    "time_begin": 89136,
+    "time_end": 99229.56009070294,
+    "text_begin": 552,
+    "text_end": 613,
+    "pronounce_text_begin": 503,
+    "pronounce_text_end": 558
+  },
+  {
+    "text": "第三层叫 Capability, 给它真的去做这件事的能力。这层是大多数人完全没意识到的地方, 等下专门讲。",
+    "pronounce_text": "第三层叫Capability,给它真的去做这件事的能力。这层是大多数人完全没意识到的地方,等下专门讲。",
+    "time_begin": 99396,
+    "time_end": 108932.28117913833,
+    "text_begin": 613,
+    "text_end": 667,
+    "pronounce_text_begin": 558,
+    "pronounce_text_end": 609
+  },
+  {
+    "text": "第四层叫 Verification, 你怎么知道它真的对了。写一组 test case, 跑一遍, 改一处, 再跑一遍。没有 eval, 你不是在调 prompt, 你是在猜。",
+    "pronounce_text": "第四层叫Verification,你怎么知道它真的对了。写一组test case,跑一遍,改一处,再跑一遍。没有eval,你不是在调prompt,你是在猜。",
+    "time_begin": 109080,
+    "time_end": 122157.32426303855,
+    "text_begin": 667,
+    "text_end": 755,
+    "pronounce_text_begin": 609,
+    "pronounce_text_end": 687
+  },
+  {
+    "text": "四层叠起来的关键不是哪一层最重要, 是顺序。结构在前, 方向次之, 能力再次之, 验证压底。跳层就废。",
+    "pronounce_text": "四层叠起来的关键不是哪一层最重要,是顺序。结构在前,方向次之,能力再次之,验证压底。跳层就废。",
+    "time_begin": 122328,
+    "time_end": 132375.1201814059,
+    "text_begin": 755,
+    "text_end": 806,
+    "pronounce_text_begin": 687,
+    "pronounce_text_end": 734
+  },
+  {
+    "text": "回到 Hook 里那个客服 bot。它给客户算 prorated 账单, 算得稀里糊涂。工程师做的第一件事, 跟你我一样, 改 prompt。",
+    "pronounce_text": "回到Hook里那个客服bot。它给客户算prorated账单,算得稀里糊涂。工程师做的第一件事,跟你我一样,改prompt。",
+    "time_begin": 132516,
+    "time_end": 143294.54875283447,
+    "text_begin": 806,
+    "text_end": 877,
+    "pronounce_text_begin": 734,
+    "pronounce_text_end": 796
+  },
+  {
+    "text": "原话已经是 \"CRITICAL. Always calculate any prorated amounts correctly. Never give a vague answer.\" 没有比这更强硬的措辞了。",
+    "pronounce_text": "原话已经是\"CRITICAL.Always calculate any prorated amounts correctly.Never give a vague answer.\" 没有比这更强硬的措辞了。",
+    "time_begin": 143460,
+    "time_end": 153681.26984126985,
+    "text_begin": 877,
+    "text_end": 983,
+    "pronounce_text_begin": 796,
+    "pronounce_text_end": 899
+  },
+  {
+    "text": "结果没用。它永远不会有用。",
+    "pronounce_text": "结果没用。它永远不会有用。",
+    "time_begin": 153828,
+    "time_end": 156026.77551020408,
+    "text_begin": 983,
+    "text_end": 996,
+    "pronounce_text_begin": 899,
+    "pronounce_text_end": 912
+  },
+  {
+    "text": "为什么？因为你在让一个不擅长心算的人, 用更大的声音再算一遍。声音再大, 算的还是错的。",
+    "pronounce_text": "为什么？因为你在让一个不擅长心算的人,用更大的声音再算一遍。声音再大,算的还是错的。",
+    "time_begin": 156168,
+    "time_end": 165321.15192743763,
+    "text_begin": 996,
+    "text_end": 1040,
+    "pronounce_text_begin": 912,
+    "pronounce_text_end": 954
+  },
+  {
+    "text": "真正的解法是给它一个计算器。在工具系统里定义一个 calculator, 告诉模型什么时候用它, 后端把数学逻辑写好。换完之后, 所有 test case 全过。",
+    "pronounce_text": "真正的解法是给它一个计算器。在工具系统里定义一个calculator,告诉模型什么时候用它,后端把数学逻辑写好。换完之后,所有test case全过。",
+    "time_begin": 165492,
+    "time_end": 178104.92517006802,
+    "text_begin": 1040,
+    "text_end": 1121,
+    "pronounce_text_begin": 954,
+    "pronounce_text_end": 1029
+  },
+  {
+    "text": "这就是我读完这篇最被震到的判断。Prompt 失败的时候, 别急着改字, 先问自己一个问题——这是个 direction 问题, 还是个 capability 问题？",
+    "pronounce_text": "这就是我读完这篇最被震到的判断。Prompt失败的时候,别急着改字,先问自己一个问题。这是个direction问题,还是个capability问题？",
+    "time_begin": 178272,
+    "time_end": 189468.50793650793,
+    "text_begin": 1121,
+    "text_end": 1204,
+    "pronounce_text_begin": 1029,
+    "pronounce_text_end": 1103
+  },
+  {
+    "text": "Direction 问题的修法在第二层, 换个 role, 加个例子, 让它把思路写出来。",
+    "pronounce_text": "Direction问题的修法在第二层,换个role,加个例子,让它把思路写出来。",
+    "time_begin": 189612,
+    "time_end": 195270.54875283447,
+    "text_begin": 1204,
+    "text_end": 1249,
+    "pronounce_text_begin": 1103,
+    "pronounce_text_end": 1143
+  },
+  {
+    "text": "Capability 问题的修法在第三层, 给它一个工具, 或者给它更大的推理预算。",
+    "pronounce_text": "Capability问题的修法在第三层,给它一个工具,或者给它更大的推理预算。",
+    "time_begin": 195408,
+    "time_end": 202041.78684807257,
+    "text_begin": 1249,
+    "text_end": 1291,
+    "pronounce_text_begin": 1143,
+    "pronounce_text_end": 1182
+  },
+  {
+    "text": "这两条路完全不一样。99% 的人把所有问题都当 direction 问题来调, 在第二层里改一个礼拜, 改的全是同一个意思的不同说法。真正卡住他们的, 是第三层的能力缺口。",
+    "pronounce_text": "这两条路完全不一样。百分之九十九的人把所有问题都当direction问题来调,在第二层里改一个礼拜,改的全是同一个意思的不同说法。真正卡住他们的,是第三层的能力缺口。",
+    "time_begin": 202212,
+    "time_end": 216148.46258503402,
+    "text_begin": 1291,
+    "text_end": 1377,
+    "pronounce_text_begin": 1182,
+    "pronounce_text_end": 1265
+  },
+  {
+    "text": "改字解决不了能力缺口, 这件事光听一遍可能没感觉, 真正写过 prompt 的人会一拍大腿。",
+    "pronounce_text": "改字解决不了能力缺口,这件事光听一遍可能没感觉,真正写过prompt的人会一拍大腿。",
+    "time_begin": 216288,
+    "time_end": 223815.75510204083,
+    "text_begin": 1377,
+    "text_end": 1423,
+    "pronounce_text_begin": 1265,
+    "pronounce_text_end": 1307
+  },
+  {
+    "text": "讲完最贵的那条, 顺手讲个最便宜的。",
+    "pronounce_text": "讲完最贵的那条,顺手讲个最便宜的。",
+    "time_begin": 223956,
+    "time_end": 227431.87301587302,
+    "text_begin": 1423,
+    "text_end": 1441,
+    "pronounce_text_begin": 1307,
+    "pronounce_text_end": 1324
+  },
+  {
+    "text": "Anthropic 长上下文文档里写得很明白——把长文档放 prompt 顶部, 问题放 prompt 底部。同一个 prompt, 同一个模型, 只是换个顺序, 长上下文任务的质量可以提升百分之三十。",
+    "pronounce_text": "Anthropic长上下文文档里写得很明白。把长文档放prompt顶部,问题放prompt底部。同一个prompt,同一个模型,只是换个顺序,长上下文任务的质量可以提升百分之三十。",
+    "time_begin": 227592,
+    "time_end": 243188.68934240364,
+    "text_begin": 1441,
+    "text_end": 1542,
+    "pronounce_text_begin": 1324,
+    "pronounce_text_end": 1414
+  },
+  {
+    "text": "我第一次看到这个数字的时候, 是不信的。模型不就是把整段 prompt 一起看吗, 顺序怎么会差出百分之三十。但这就是真事。",
+    "pronounce_text": "我第一次看到这个数字的时候,是不信的。模型不就是把整段prompt一起看吗,顺序怎么会差出百分之三十。但这就是真事。",
+    "time_begin": 243360,
+    "time_end": 254173.37868480725,
+    "text_begin": 1542,
+    "text_end": 1604,
+    "pronounce_text_begin": 1414,
+    "pronounce_text_end": 1472
+  },
+  {
+    "text": "模型注意力在长输入里有衰减, 问题贴在长文档后面比贴在前面更容易被关注到。",
+    "pronounce_text": "模型注意力在长输入里有衰减,问题贴在长文档后面比贴在前面更容易被关注到。",
+    "time_begin": 254373.37868480725,
+    "time_end": 261901.13378684808,
+    "text_begin": 1604,
+    "text_end": 1641,
+    "pronounce_text_begin": 1472,
+    "pronounce_text_end": 1508
+  },
+  {
+    "text": "这是 prompt 工程里最便宜的一刀。不写代码, 不调工具, 不加 token, 把问题挪到最后, 拿百分之三十。如果你今天只能改一件事, 改这个。",
+    "pronounce_text": "这是prompt工程里最便宜的一刀。不写代码,不调工具,不加token,把问题挪到最后,拿百分之三十。如果你今天只能改一件事,改这个。",
+    "time_begin": 262044,
+    "time_end": 272985.08843537414,
+    "text_begin": 1641,
+    "text_end": 1716,
+    "pronounce_text_begin": 1508,
+    "pronounce_text_end": 1575
+  },
+  {
+    "text": "第二条最容易踩的坑, 是单边指令。",
+    "pronounce_text": "第二条最容易踩的坑,是单边指令。",
+    "time_begin": 273132,
+    "time_end": 276654.31292517006,
+    "text_begin": 1716,
+    "text_end": 1733,
+    "pronounce_text_begin": 1575,
+    "pronounce_text_end": 1591
+  },
+  {
+    "text": "同一个客服 bot 还有一个 bug: 客户账单错了, 它就是不肯升级处理。",
+    "pronounce_text": "同一个客服bot还有一个bug:客户账单错了,它就是不肯升级处理。",
+    "time_begin": 276804,
+    "time_end": 282114.24943310657,
+    "text_begin": 1733,
+    "text_end": 1771,
+    "pronounce_text_begin": 1591,
+    "pronounce_text_end": 1624
+  },
+  {
+    "text": "工程师翻 prompt, 翻到这么一行——\"avoid escalating unless absolutely necessary — it costs about $8 and counts against our metrics.\" 翻译过来就是, 尽量别升级,",
+    "pronounce_text": "工程师翻prompt,翻到这么一行。\"avoid escalating unless absolutely necessary。it costs about八美元and counts against our metrics.\" 翻译过来就是,尽量别升级,",
+    "time_begin": 282276,
+    "time_end": 297744.97959183675,
+    "text_begin": 1771,
+    "text_end": 1905,
+    "pronounce_text_begin": 1624,
+    "pronounce_text_end": 1751
+  },
+  {
+    "text": "一次升级花八块钱, 而且影响我们的指标。",
+    "pronounce_text": "一次升级花八块钱,而且影响我们的指标。",
+    "time_begin": 297944.97959183675,
+    "time_end": 301548.5623582766,
+    "text_begin": 1905,
+    "text_end": 1925,
+    "pronounce_text_begin": 1751,
+    "pronounce_text_end": 1770
+  },
+  {
+    "text": "模型把这条执行得完美无缺。",
+    "pronounce_text": "模型把这条执行得完美无缺。",
+    "time_begin": 301716,
+    "time_end": 304123.7551020408,
+    "text_begin": 1925,
+    "text_end": 1938,
+    "pronounce_text_begin": 1770,
+    "pronounce_text_end": 1783
+  },
+  {
+    "text": "问题是这条 prompt 只写了升级的代价, 没写不升级的代价——客户拿错了答案、要退款、信任掉一截。你只给一面, 模型就只往那一面优化。",
+    "pronounce_text": "问题是这条prompt只写了升级的代价,没写不升级的代价。客户拿错了答案、要退款、信任掉一截。你只给一面,模型就只往那一面优化。",
+    "time_begin": 304272,
+    "time_end": 316838.48526077095,
+    "text_begin": 1938,
+    "text_end": 2007,
+    "pronounce_text_begin": 1783,
+    "pronounce_text_end": 1847
+  },
+  {
+    "text": "这条洞察的可怕之处在于, 模型越聪明, 这件事越严重。弱模型理解不到位, 单边指令可能还不那么照做。强模型理解得越深, 越会把你给的单一目标硬刚到底。",
+    "pronounce_text": "这条洞察的可怕之处在于,模型越聪明,这件事越严重。弱模型理解不到位,单边指令可能还不那么照做。强模型理解得越深,越会把你给的单一目标硬刚到底。",
+    "time_begin": 316980,
+    "time_end": 331845.26077097503,
+    "text_begin": 2007,
+    "text_end": 2082,
+    "pronounce_text_begin": 1847,
+    "pronounce_text_end": 1918
+  },
+  {
+    "text": "你以为升级模型会让 prompt 更稳, 实际上你的 prompt 漏洞被放大了。",
+    "pronounce_text": "你以为升级模型会让prompt更稳,实际上你的prompt漏洞被放大了。",
+    "time_begin": 331992,
+    "time_end": 338451.63718820864,
+    "text_begin": 2082,
+    "text_end": 2123,
+    "pronounce_text_begin": 1918,
+    "pronounce_text_end": 1954
+  },
+  {
+    "text": "写每一条 \"尽量别 X\" 的时候, 把另一边的代价也写出来。这是越强模型越值钱的小动作。",
+    "pronounce_text": "写每一条\"尽量别X\" 的时候,把另一边的代价也写出来。这是越强模型越值钱的小动作。",
+    "time_begin": 338616,
+    "time_end": 347432.462585034,
+    "text_begin": 2123,
+    "text_end": 2167,
+    "pronounce_text_begin": 1954,
+    "pronounce_text_end": 1995
+  },
+  {
+    "text": "第三个坑, 我觉得是这篇里最反直觉的一条。",
+    "pronounce_text": "第三个坑,我觉得是这篇里最反直觉的一条。",
+    "time_begin": 347580,
+    "time_end": 351485.44217687077,
+    "text_begin": 2167,
+    "text_end": 2188,
+    "pronounce_text_begin": 1995,
+    "pronounce_text_end": 2015
+  },
+  {
+    "text": "那个客服 bot 还有最后一个怪症状: 客户问套餐细节, 它明明账户数据里就有答案, 却回答 \"去网站看看吧\"。把已经在手里的信息藏起来。",
+    "pronounce_text": "那个客服bot还有最后一个怪症状:客户问套餐细节,它明明账户数据里就有答案,却回答\"去网站看看吧\"。把已经在手里的信息藏起来。",
+    "time_begin": 351648,
+    "time_end": 362809.67800453515,
+    "text_begin": 2188,
+    "text_end": 2257,
+    "pronounce_text_begin": 2015,
+    "pronounce_text_end": 2078
+  },
+  {
+    "text": "工程师追根溯源, 找到一行老 prompt: \"never give wrong plan details, point them to the URL.\" 永远不要给错套餐细节, 让用户去看 URL。",
+    "pronounce_text": "工程师追根溯源,找到一行老prompt:\"never give wrong plan details,point them to the URL.\" 永远不要给错套餐细节,让用户去看URL。",
+    "time_begin": 362952,
+    "time_end": 374322.6575963719,
+    "text_begin": 2257,
+    "text_end": 2358,
+    "pronounce_text_begin": 2078,
+    "pronounce_text_end": 2173
+  },
+  {
+    "text": "这条当年有道理。当年的模型会幻觉, 编套餐细节, 加这一行就是为了堵幻觉。",
+    "pronounce_text": "这条当年有道理。当年的模型会幻觉,编套餐细节,加这一行就是为了堵幻觉。",
+    "time_begin": 374472,
+    "time_end": 381709.50566893426,
+    "text_begin": 2358,
+    "text_end": 2395,
+    "pronounce_text_begin": 2173,
+    "pronounce_text_end": 2208
+  },
+  {
+    "text": "问题是新模型不幻觉了。可这条补丁还在。新模型只会更认真照做——它不分辨数据在不在手里, 看到指令就让你去看 URL。当年救命的补丁, 今年变成了把客户挡在门外的毒药。",
+    "pronounce_text": "问题是新模型不幻觉了。可这条补丁还在。新模型只会更认真照做。它不分辨数据在不在手里,看到指令就让你去看URL。当年救命的补丁,今年变成了把客户挡在门外的毒药。",
+    "time_begin": 381852,
+    "time_end": 396635.9909297052,
+    "text_begin": 2395,
+    "text_end": 2478,
+    "pronounce_text_begin": 2208,
+    "pronounce_text_end": 2287
+  },
+  {
+    "text": "这条洞察我自己读完愣了一下。我们写 prompt 都是往里加, 没有人养成往外删的习惯。但模型在迭代, 你为旧 bug 加的补丁, 在新模型上往往会反噬你。",
+    "pronounce_text": "这条洞察我自己读完愣了一下。我们写prompt都是往里加,没有人养成往外删的习惯。但模型在迭代,你为旧bug加的补丁,在新模型上往往会反噬你。",
+    "time_begin": 396792,
+    "time_end": 409358.48526077095,
+    "text_begin": 2478,
+    "text_end": 2556,
+    "pronounce_text_begin": 2287,
+    "pronounce_text_end": 2358
+  },
+  {
+    "text": "这件事的解法不是改 prompt, 是改流程。把 prompt 当代码版本控制起来, 每加一条防御性指令记一句为什么加。模型升级的时候, 翻出来一条一条问——还有用吗？没用就删掉。",
+    "pronounce_text": "这件事的解法不是改prompt,是改流程。把prompt当代码版本控制起来,每加一条防御性指令记一句为什么加。模型升级的时候,翻出来一条一条问。还有用吗？没用就删掉。",
+    "time_begin": 409500,
+    "time_end": 425479.8185941043,
+    "text_begin": 2556,
+    "text_end": 2646,
+    "pronounce_text_begin": 2358,
+    "pronounce_text_end": 2441
+  },
+  {
+    "text": "这是这篇文章最值钱的工程纪律。大部分团队不做, 然后下一次模型升级整体翻车。",
+    "pronounce_text": "这是这篇文章最值钱的工程纪律。大部分团队不做,然后下一次模型升级整体翻车。",
+    "time_begin": 425628,
+    "time_end": 432389.49659863947,
+    "text_begin": 2646,
+    "text_end": 2684,
+    "pronounce_text_begin": 2441,
+    "pronounce_text_end": 2478
+  },
+  {
+    "text": "最后说第四层, verification。",
+    "pronounce_text": "最后说第四层,verification。",
+    "time_begin": 432540,
+    "time_end": 435458.5941043084,
+    "text_begin": 2684,
+    "text_end": 2705,
+    "pronounce_text_begin": 2478,
+    "pronounce_text_end": 2498
+  },
+  {
+    "text": "Anthropic 工程师演讲里展示的内部 eval suite, 只有 5 个 test case。你没听错, 5 个。",
+    "pronounce_text": "Anthropic工程师演讲里展示的内部eval suite,只有五个test case。你没听错,五个。",
+    "time_begin": 435600,
+    "time_end": 442616.91609977325,
+    "text_begin": 2705,
+    "text_end": 2766,
+    "pronounce_text_begin": 2498,
+    "pronounce_text_end": 2551
+  },
+  {
+    "text": "不是说 5 个就够, 是说 0 跟 5 的差距, 比 5 跟 50 的差距大得多。重点不在数量, 在覆盖。",
+    "pronounce_text": "不是说五个就够,是说零跟五的差距,比五跟五十的差距大得多。重点不在数量,在覆盖。",
+    "time_begin": 442764,
+    "time_end": 452904,
+    "text_begin": 2766,
+    "text_end": 2819,
+    "pronounce_text_begin": 2551,
+    "pronounce_text_end": 2591
+  },
+  {
+    "text": "三类 case 各拿几个就行: control case, 永远应该通过, 它一旦挂, 说明你刚改的东西出大事了; edge case, 历史上挂过的 bug, 每条都是一次 regression 防御;",
+    "pronounce_text": "三类case各拿几个就行:control case,永远应该通过,它一旦挂,说明你刚改的东西出大事了;edge case,历史上挂过的bug,每条都是一次regression防御;",
+    "time_begin": 453060,
+    "time_end": 466265.03401360544,
+    "text_begin": 2819,
+    "text_end": 2921,
+    "pronounce_text_begin": 2591,
+    "pronounce_text_end": 2681
+  },
+  {
+    "text": "boundary case, 该交给人或该拒答的地方,",
+    "pronounce_text": "boundary case,该交给人或该拒答的地方,",
+    "time_begin": 466465.03401360544,
+    "time_end": 470324.0362811791,
+    "text_begin": 2921,
+    "text_end": 2948,
+    "pronounce_text_begin": 2681,
+    "pronounce_text_end": 2707
+  },
+  {
+    "text": "测的是模型知不知道自己的边界。",
+    "pronounce_text": "测的是模型知不知道自己的边界。",
+    "time_begin": 470484,
+    "time_end": 473019.4648526077,
+    "text_begin": 2948,
+    "text_end": 2963,
+    "pronounce_text_begin": 2707,
+    "pronounce_text_end": 2722
+  },
+  {
+    "text": "跑一遍, 改一处, 再跑一遍。这一刻你不再是改完 prompt 看一个例子说 \"好像变好了\", 你是在知道它变好了。这是 prompt 工程从猜测变成工程的那条线。",
+    "pronounce_text": "跑一遍,改一处,再跑一遍。这一刻你不再是改完prompt看一个例子说\"好像变好了\",你是在知道它变好了。这是prompt工程从猜测变成工程的那条线。",
+    "time_begin": 473184,
+    "time_end": 486818.6031746032,
+    "text_begin": 2963,
+    "text_end": 3045,
+    "pronounce_text_begin": 2722,
+    "pronounce_text_end": 2796
+  },
+  {
+    "text": "我把这篇收尾一下。Prompt 不是你写的一句话, 是你搭的一个系统。四层有顺序, 结构在前, 方向在次, 能力再次, 验证压底。",
+    "pronounce_text": "我把这篇收尾一下。Prompt不是你写的一句话,是你搭的一个系统。四层有顺序,结构在前,方向在次,能力再次,验证压底。",
+    "time_begin": 486972,
+    "time_end": 499619.7551020408,
+    "text_begin": 3045,
+    "text_end": 3110,
+    "pronounce_text_begin": 2796,
+    "pronounce_text_end": 2855
+  },
+  {
+    "text": "碰到 prompt 不工作的时候, 别再一头扎进第二层改字。先问自己: 这是结构问题、方向问题、能力问题, 还是没验证问题？这一句多花的三十秒, 经常省下你三个小时。",
+    "pronounce_text": "碰到prompt不工作的时候,别再一头扎进第二层改字。先问自己:这是结构问题、方向问题、能力问题,还是没验证问题？这一句多花的三十秒,经常省下你三个小时。",
+    "time_begin": 499788,
+    "time_end": 513933.44217687077,
+    "text_begin": 3110,
+    "text_end": 3193,
+    "pronounce_text_begin": 2855,
+    "pronounce_text_end": 2932
+  },
+  {
+    "text": "如果非要我从全篇压一句话出来——你 prompt 失败时改的不是字, 是层。99% 的人活在第二层, 你升一层, 就赢一半的人。",
+    "pronounce_text": "如果非要我从全篇压一句话出来。你prompt失败时改的不是字,是层。百分之九十九的人活在第二层,你升一层,就赢一半的人。",
+    "time_begin": 514080,
+    "time_end": 525322.947845805,
+    "text_begin": 3193,
+    "text_end": 3257,
+    "pronounce_text_begin": 2932,
+    "pronounce_text_end": 2992
+  },
+  {
+    "text": "今天回去做一件事就够: 找一条你最依赖的 prompt, 拉出来, 不要急着改字, 先按四层走一遍——它的结构清楚吗？方向明确吗？该有的工具有吗？",
+    "pronounce_text": "今天回去做一件事就够:找一条你最依赖的prompt,拉出来,不要急着改字,先按四层走一遍。它的结构清楚吗？方向明确吗？该有的工具有吗？",
+    "time_begin": 525492,
+    "time_end": 538952.4535147392,
+    "text_begin": 3257,
+    "text_end": 3330,
+    "pronounce_text_begin": 2992,
+    "pronounce_text_end": 3059
+  },
+  {
+    "text": "有没有 test case？哪一层最薄, 就补哪一层。",
+    "pronounce_text": "有没有test case？哪一层最薄,就补哪一层。",
+    "time_begin": 539152.4535147392,
+    "time_end": 542883.746031746,
+    "text_begin": 3330,
+    "text_end": 3357,
+    "pronounce_text_begin": 3059,
+    "pronounce_text_end": 3084
+  },
+  {
+    "text": "AI 世界很吵, 精读一篇, 胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵,精读一篇,胜过刷一百条。我们下期再见。",
+    "time_begin": 543024,
+    "time_end": 548636.1088435374,
+    "text_begin": 3357,
+    "text_end": 3386,
+    "pronounce_text_begin": 3084,
+    "pronounce_text_end": 3110
+  }
+]

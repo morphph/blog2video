@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 28px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 48px;
+    }
+    .title .green { color: #10B981; }
+    .title .red { color: #EF4444; }
+    .timeline {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .era {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+    }
+    .era.old { border-left: 4px solid #10B981; }
+    .era.new { border-left: 4px solid #EF4444; }
+    .era-head {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .era.old .era-head { color: #10B981; }
+    .era.new .era-head { color: #EF4444; }
+    .era-body {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .era-body .code {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 22px;
+      color: #F59E0B;
+    }
+    .era-body .muted { color: #B0B0CC; font-weight: 500; font-size: 24px; }
+    .discipline {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .discipline-text {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .discipline-text .purple { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">最反直觉的一条</div>
+    <div class="title">
+      去年的<span class="green">补丁</span> · 今年的<span class="red">毒药</span>
+    </div>
+    <div class="timeline">
+      <div class="era old">
+        <div class="era-head">旧模型 · 当年</div>
+        <div class="era-body">
+          <span class="code">"never give wrong plan, point to URL"</span><br>
+          <span class="muted">→ 老模型会幻觉, 这条堵幻觉, 救命</span>
+        </div>
+      </div>
+      <div class="era new">
+        <div class="era-head">新模型 · 今年</div>
+        <div class="era-body">
+          新模型不幻觉了, 但仍逐字照做<br>
+          <span class="muted">→ 把账户里有的答案藏起来, 让你"去看 URL"</span>
+        </div>
+      </div>
+    </div>
+    <div class="discipline">
+      <div class="discipline-text">
+        <span class="purple">把 prompt 当代码版本控制</span> · 每条防御指令记 why<br>
+        模型升级时, 翻出来一条一条问还有用吗
+      </div>
+    </div>
+  </div>
+</body>
+</html>

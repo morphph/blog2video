@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .purple { color: #8B5CF6; }
+    .story {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .story-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 26px 28px;
+      text-align: left;
+    }
+    .story-card.green {
+      border-color: rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+    }
+    .story-tag {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .story-card .story-tag { color: #EF4444; }
+    .story-card.green .story-tag { color: #10B981; }
+    .story-text {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .story-text .code {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 26px;
+      color: #F59E0B;
+    }
+    .split {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+    }
+    .branch {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 22px 22px;
+      text-align: left;
+    }
+    .branch.dir { border-left: 4px solid #F59E0B; }
+    .branch.cap { border-left: 4px solid #10B981; }
+    .branch-q {
+      font-size: 22px;
+      letter-spacing: 1px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .branch.dir .branch-q { color: #F59E0B; }
+    .branch.cap .branch-q { color: #10B981; }
+    .branch-fix {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">全片最贵的判断</div>
+    <div class="title">
+      指令 ≠ <span class="purple">能力</span>
+    </div>
+    <div class="story">
+      <div class="story-card">
+        <div class="story-tag">改 PROMPT</div>
+        <div class="story-text">
+          <span class="code">"CRITICAL. Always calculate correctly."</span><br>
+          → 还是算错。永远不会有用。
+        </div>
+      </div>
+      <div class="story-card green">
+        <div class="story-tag">加 TOOL</div>
+        <div class="story-text">
+          后端塞一个 calculator → 所有 test case 全过
+        </div>
+      </div>
+    </div>
+    <div class="split">
+      <div class="branch dir">
+        <div class="branch-q">DIRECTION?</div>
+        <div class="branch-fix">第 2 层 · 换 role / 加示例</div>
+      </div>
+      <div class="branch cap">
+        <div class="branch-q">CAPABILITY?</div>
+        <div class="branch-fix">第 3 层 · 给工具 / 加推理预算</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

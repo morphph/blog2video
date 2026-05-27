@@ -1,0 +1,16 @@
+{
+  "video_number": 1,
+  "title": "给模型加 CRITICAL 没用, 加工具才有用",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    { "slide_number": 1, "file": "slide_1.html", "estimated_duration_seconds": 48 },
+    { "slide_number": 2, "file": "slide_2.html", "estimated_duration_seconds": 78 },
+    { "slide_number": 3, "file": "slide_3.html", "estimated_duration_seconds": 94 },
+    { "slide_number": 4, "file": "slide_4.html", "estimated_duration_seconds": 168 },
+    { "slide_number": 5, "file": "slide_5.html", "estimated_duration_seconds": 81 },
+    { "slide_number": 6, "file": "slide_6.html", "estimated_duration_seconds": 123 },
+    { "slide_number": 7, "file": "slide_7.html", "estimated_duration_seconds": 143 },
+    { "slide_number": 8, "file": "slide_8.html", "estimated_duration_seconds": 94 },
+    { "slide_number": 9, "file": "slide_9.html", "estimated_duration_seconds": 94 }
+  ]
+}

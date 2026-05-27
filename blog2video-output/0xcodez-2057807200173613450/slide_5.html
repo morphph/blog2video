@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 28px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 60px;
+    }
+    .big-number {
+      font-size: 280px;
+      font-weight: 900;
+      line-height: 1;
+      color: #F59E0B;
+      margin-bottom: 16px;
+      letter-spacing: -8px;
+    }
+    .big-label {
+      font-size: 32px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-bottom: 60px;
+    }
+    .recipe {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .recipe-row {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .recipe-row + .recipe-row {
+      margin-top: 8px;
+    }
+    .recipe-row .top { color: #8B5CF6; }
+    .recipe-row .bottom { color: #10B981; }
+    .recipe-row .arrow { color: #6B7280; margin: 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">PROMPT 工程最便宜的一刀</div>
+    <div class="title">不写代码 · 不调工具 · 拿 30%</div>
+    <div class="big-number">+30%</div>
+    <div class="big-label">长上下文任务质量提升</div>
+    <div class="recipe">
+      <div class="recipe-row"><span class="top">长文档</span> <span class="arrow">→</span> 放 prompt 顶部</div>
+      <div class="recipe-row"><span class="bottom">问题</span> <span class="arrow">→</span> 放 prompt 底部</div>
+    </div>
+  </div>
+</body>
+</html>

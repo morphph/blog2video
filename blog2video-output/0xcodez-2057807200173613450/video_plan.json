@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How to write a prompt the right way: the 4-layer structure pros use",
+    "title_zh": "给模型加 CRITICAL 没用, 加工具才有用",
+    "word_count": 3695,
+    "slug": "0xcodez-2057807200173613450"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "一条连贯的 4 层 prompt 论证, 所有子主题都在支撑 instructions ≠ capability 这个 thesis, 不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "给模型加 CRITICAL 没用, 加工具才有用"
+      }
+    ]
+  }
+}

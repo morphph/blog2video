@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .title .purple { color: #8B5CF6; }
+    .layers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .layer {
+      display: flex;
+      align-items: center;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .layer.l1 { border-left: 4px solid #3B82F6; }
+    .layer.l2 { border-left: 4px solid #F59E0B; }
+    .layer.l3 { border-left: 4px solid #8B5CF6; }
+    .layer.l4 { border-left: 4px solid #10B981; }
+    .layer-num {
+      font-size: 64px;
+      font-weight: 900;
+      width: 90px;
+      flex-shrink: 0;
+    }
+    .layer.l1 .layer-num { color: #3B82F6; }
+    .layer.l2 .layer-num { color: #F59E0B; }
+    .layer.l3 .layer-num { color: #8B5CF6; }
+    .layer.l4 .layer-num { color: #10B981; }
+    .layer-body {
+      flex: 1;
+    }
+    .layer-name {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .layer-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 500;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 30px;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">4 层方法论</div>
+    <div class="title">
+      结构 → 方向 → <span class="purple">能力</span> → 验证
+    </div>
+    <div class="layers">
+      <div class="layer l1">
+        <div class="layer-num">1</div>
+        <div class="layer-body">
+          <div class="layer-name">Parseable</div>
+          <div class="layer-desc">读得懂 · XML 标签是 Claude 的母语</div>
+        </div>
+      </div>
+      <div class="layer l2">
+        <div class="layer-num">2</div>
+        <div class="layer-body">
+          <div class="layer-name">Direction</div>
+          <div class="layer-desc">指方向 · role + 示例 + 思考过程</div>
+        </div>
+      </div>
+      <div class="layer l3">
+        <div class="layer-num">3</div>
+        <div class="layer-body">
+          <div class="layer-name">Capability</div>
+          <div class="layer-desc">给能力 · 99% 的人没意识到这一层</div>
+        </div>
+      </div>
+      <div class="layer l4">
+        <div class="layer-num">4</div>
+        <div class="layer-body">
+          <div class="layer-name">Verification</div>
+          <div class="layer-desc">写 eval · 没 eval 不是调 prompt 是猜</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">跳层就废</div>
+  </div>
+</body>
+</html>

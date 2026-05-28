@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .h {
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 60px;
+      line-height: 1.2;
+    }
+    .matrix {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .row {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 30px;
+      text-align: left;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+    .row.opus { border-left: 4px solid #EF4444; }
+    .row.sonnet { border-left: 4px solid #8B5CF6; }
+    .row.haiku { border-left: 4px solid #10B981; }
+    .model-name {
+      font-size: 44px;
+      font-weight: 900;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .row.opus .model-name { color: #EF4444; }
+    .row.sonnet .model-name { color: #8B5CF6; }
+    .row.haiku .model-name { color: #10B981; }
+    .role-line {
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .role-tag {
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 1px;
+      font-weight: 600;
+      min-width: 110px;
+    }
+    .role-desc {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">CLAUDE 全家桶 · 按复杂度分发</div>
+    <div class="h">三个模型干三件事</div>
+    <div class="matrix">
+      <div class="row opus">
+        <div class="model-name">Opus</div>
+        <div class="role-line">
+          <div class="role-tag">顶层 · 总指挥</div>
+          <div class="role-desc">最高层策略理解 · 决定整体方向</div>
+        </div>
+      </div>
+      <div class="row sonnet">
+        <div class="model-name">Sonnet</div>
+        <div class="role-line">
+          <div class="role-tag">中层 · 规划者</div>
+          <div class="role-desc">拆方向为结构化步骤 · 串成工作流</div>
+        </div>
+      </div>
+      <div class="row haiku">
+        <div class="model-name">Haiku</div>
+        <div class="role-line">
+          <div class="role-tag">底层 · 蒸馏者</div>
+          <div class="role-desc">Context 蒸馏 · 字段归类等窄范围操作</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

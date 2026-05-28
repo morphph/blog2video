@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How CodeRabbit Used Claude to Build an Agent Orchestration System",
+    "title_zh": "每周审 200 万 PR，他们在 Claude Code 前加了一层",
+    "word_count": 3645,
+    "slug": "coderabbit-claude-agent-orchestration"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕同一个论点连贯展开——AI 编码失败的根因 + CodeRabbit 在 Claude Code 之前再加一层规划编排，论证不可拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "每周审 200 万 PR，他们在 Claude Code 前加了一层"
+      }
+    ]
+  }
+}

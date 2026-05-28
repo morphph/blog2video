@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(139, 92, 246, 0) 70%);
+      pointer-events: none;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 72px;
+      position: relative;
+      z-index: 2;
+    }
+    .main-title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      margin-bottom: 96px;
+      position: relative;
+      z-index: 2;
+    }
+    .highlight-amber {
+      color: #F59E0B;
+    }
+    .highlight-red {
+      color: #EF4444;
+    }
+    .source-pill {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 999px;
+      font-size: 22px;
+      color: #6B6B80;
+      letter-spacing: 0.5px;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-tag">精读AI · Claude Code 实战</div>
+    <div class="main-title">
+      每周审 <span class="highlight-amber">200 万</span> PR<br>
+      他们在 Claude Code<br>
+      <span class="highlight-red">前加了一层</span>
+    </div>
+    <div class="source-pill">Anthropic 官方博客 · CodeRabbit case study</div>
+  </div>
+</body>
+</html>

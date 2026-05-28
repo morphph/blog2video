@@ -1,0 +1,15 @@
+{
+  "topic": "每周审 200 万 PR，他们在 Claude Code 前加了一层",
+  "blog_url": "",
+  "source": "coderabbit-claude-agent-orchestration",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

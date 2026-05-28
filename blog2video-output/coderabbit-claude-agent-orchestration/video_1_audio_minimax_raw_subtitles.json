@@ -1,0 +1,572 @@
+[
+  {
+    "text": "Claude Code 自带了 Plan Mode 这个最近大火的功能。但 CodeRabbit 这家每周帮 1.5 万客户审 200 万 PR 的公司说——光靠它还不够。他们在 Plan Mode 之外又自己搭了一层独立的规划编排层，质量明显上去了。",
+    "pronounce_text": "Claude Code自带了Plan Mode这个最近大火的功能。但CodeRabbit这家每周帮一点五万客户审两百万PR的公司说。光靠它还不够。他们在Plan Mode之外又自己搭了一层独立的规划编排层，质量明显上去了。",
+    "time_begin": 0,
+    "time_end": 16746.07709750567,
+    "text_begin": 0,
+    "text_end": 126,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 111
+  },
+  {
+    "text": "今天聊一聊为什么他们觉得官方那一层不够，以及他们补的那一层长什么样。",
+    "pronounce_text": "今天聊一聊为什么他们觉得官方那一层不够，以及他们补的那一层长什么样。",
+    "time_begin": 16884,
+    "time_end": 22542.548752834467,
+    "text_begin": 126,
+    "text_end": 160,
+    "pronounce_text_begin": 111,
+    "pronounce_text_end": 145
+  },
+  {
+    "text": "CodeRabbit 是做 AI 代码评审的。每周 200 万个 PR 经过他们的系统——这个量级，意味着他们扫过的 AI 生成代码，可能比这个世界上任何一家公司都多。所以他们看到的失败模式，特别有代表性。",
+    "pronounce_text": "CodeRabbit是做AI代码评审的。每周两百万个PR经过他们的系统。这个量级，意味着他们扫过的AI生成代码，可能比这个世界上任何一家公司都多。所以他们看到的失败模式，特别有代表性。",
+    "time_begin": 22680,
+    "time_end": 38195.41950113379,
+    "text_begin": 160,
+    "text_end": 263,
+    "pronounce_text_begin": 145,
+    "pronounce_text_end": 237
+  },
+  {
+    "text": "最常见的不是语法错误，也不是逻辑 bug。是\"功能上完全正确、但跟用户想要的根本不是一回事\"。代码能编译、单测能过、跑起来不报错——但它解的就是另一道题。",
+    "pronounce_text": "最常见的不是语法错误，也不是逻辑bug。是\"功能上完全正确、但跟用户想要的根本不是一回事\"。代码能编译、单测能过、跑起来不报错。但它解的就是另一道题。",
+    "time_begin": 38340,
+    "time_end": 51754.013605442175,
+    "text_begin": 263,
+    "text_end": 340,
+    "pronounce_text_begin": 237,
+    "pronounce_text_end": 312
+  },
+  {
+    "text": "这是一个很反直觉的诊断。我们日常聊 AI 编码，焦点全在模型——模型够不够聪明、上下文够不够长、prompt 够不够花哨。但 CodeRabbit 的 VP of AI，David Loker，给了一个完全不同的答案。",
+    "pronounce_text": "这是一个很反直觉的诊断。我们日常聊AI编码，焦点全在模型。模型够不够聪明、上下文够不够长、prompt够不够花哨。但CodeRabbit的VP of AI，David Loker，给了一个完全不同的答案。",
+    "time_begin": 51912,
+    "time_end": 68228.50793650793,
+    "text_begin": 340,
+    "text_end": 449,
+    "pronounce_text_begin": 312,
+    "pronounce_text_end": 414
+  },
+  {
+    "text": "他原话是这么说的：\"我们做开发越久，知识就越是被内化进脑子里。所有这些东西全在我们脑子里，我们就默认其他开发者也知道。\"",
+    "pronounce_text": "他原话是这么说的：\"我们做开发越久，知识就越是被内化进脑子里。所有这些东西全在我们脑子里，我们就默认其他开发者也知道。\"",
+    "time_begin": 68400,
+    "time_end": 79979.63718820861,
+    "text_begin": 449,
+    "text_end": 509,
+    "pronounce_text_begin": 414,
+    "pronounce_text_end": 474
+  },
+  {
+    "text": "他举了一个自己踩的坑。他想让 Agent 帮他做一个记忆系统。需求列了一堆，但漏写了一件事——这个系统该用什么方式登录。Agent 没问，自己脑补了一套实现。几个小时之后，Loker 一看，全是白干的。",
+    "pronounce_text": "他举了一个自己踩的坑。他想让Agent帮他做一个记忆系统。需求列了一堆，但漏写了一件事。这个系统该用什么方式登录。Agent没问，自己脑补了一套实现。几个小时之后，Loker一看，全是白干的。",
+    "time_begin": 80136,
+    "time_end": 96069.37868480726,
+    "text_begin": 509,
+    "text_end": 610,
+    "pronounce_text_begin": 474,
+    "pronounce_text_end": 570
+  },
+  {
+    "text": "听懂这个意思了吗？不是 Agent 蠢。是开发者自己，跳过了那些对他而言\"显而易见\"的事。AI 看不到你脑子里的东西。它只能在你没说的地方，自己猜。",
+    "pronounce_text": "听懂这个意思了吗？不是Agent蠢。是开发者自己，跳过了那些对他而言\"显而易见\"的事。AI看不到你脑子里的东西。它只能在你没说的地方，自己猜。",
+    "time_begin": 96228,
+    "time_end": 109607.1836734694,
+    "text_begin": 610,
+    "text_end": 684,
+    "pronounce_text_begin": 570,
+    "pronounce_text_end": 641
+  },
+  {
+    "text": "那 CodeRabbit 的解法是什么？",
+    "pronounce_text": "那CodeRabbit的解法是什么？",
+    "time_begin": 109764,
+    "time_end": 112044.04535147392,
+    "text_begin": 684,
+    "text_end": 704,
+    "pronounce_text_begin": 641,
+    "pronounce_text_end": 659
+  },
+  {
+    "text": "他们在 Claude Code 之前，又加了一个东西。一个独立的、规划层。这个层不写代码。它的工作就是把你的需求，翻译成一份特别精确的执行计划。",
+    "pronounce_text": "他们在Claude Code之前，又加了一个东西。一个独立的、规划层。这个层不写代码。它的工作就是把你的需求，翻译成一份特别精确的执行计划。",
+    "time_begin": 112212,
+    "time_end": 125718.89342403629,
+    "text_begin": 704,
+    "text_end": 776,
+    "pronounce_text_begin": 659,
+    "pronounce_text_end": 729
+  },
+  {
+    "text": "关键来了。Claude Code 自己是有 Plan Mode 的。Loker 特意澄清：\"这个规划系统不是要替代 Claude Code 的 Plan Mode。它是更高一层的编排，跑在 Claude Code 之前，目的是给 Claude Code 指一个又窄又准的方向。\"",
+    "pronounce_text": "关键来了。Claude Code自己是有Plan Mode的。Loker特意澄清：\"这个规划系统不是要替代Claude Code的Plan Mode。它是更高一层的编排，跑在Claude Code之前，目的是给Claude Code指一个又窄又准的方向。\"",
+    "time_begin": 125856,
+    "time_end": 142555.6371882086,
+    "text_begin": 776,
+    "text_end": 915,
+    "pronounce_text_begin": 729,
+    "pronounce_text_end": 857
+  },
+  {
+    "text": "这句话信息量很大。它在说：单一工具自带的\"规划\"已经不够了。你需要在工具之上，再做一层规划。两层是分工的。",
+    "pronounce_text": "这句话信息量很大。它在说：单一工具自带的\"规划\"已经不够了。你需要在工具之上，再做一层规划。两层是分工的。",
+    "time_begin": 142704,
+    "time_end": 154550.66666666666,
+    "text_begin": 915,
+    "text_end": 968,
+    "pronounce_text_begin": 857,
+    "pronounce_text_end": 910
+  },
+  {
+    "text": "下游那一层管\"怎么写\"，上游这一层管\"到底在写什么\"。",
+    "pronounce_text": "下游那一层管\"怎么写\"，上游这一层管\"到底在写什么\"。",
+    "time_begin": 154750.66666666666,
+    "time_end": 159933.20634920636,
+    "text_begin": 968,
+    "text_end": 995,
+    "pronounce_text_begin": 910,
+    "pronounce_text_end": 937
+  },
+  {
+    "text": "上游产出的不是一段 prompt。是一份可以协作编辑的 PRD——产品需求文档。它把团队的决策、上下文、隐含假设全部显式化，沉淀成一个文档。",
+    "pronounce_text": "上游产出的不是一段prompt。是一份可以协作编辑的PRD。产品需求文档。它把团队的决策、上下文、隐含假设全部显式化，沉淀成一个文档。",
+    "time_begin": 160092,
+    "time_end": 174156.17233560092,
+    "text_begin": 995,
+    "text_end": 1065,
+    "pronounce_text_begin": 937,
+    "pronounce_text_end": 1004
+  },
+  {
+    "text": "新人来了，看这份 PRD 就能进入状态。",
+    "pronounce_text": "新人来了，看这份PRD就能进入状态。",
+    "time_begin": 174356.17233560092,
+    "time_end": 178133.90476190476,
+    "text_begin": 1065,
+    "text_end": 1085,
+    "pronounce_text_begin": 1004,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "我读到这里特别有感触。我们过去几年在被反复教育——AI 时代要做好 prompt engineering、要做好 context engineering。",
+    "pronounce_text": "我读到这里特别有感触。我们过去几年在被反复教育。AI时代要做好prompt engineering、要做好context engineering。",
+    "time_begin": 178272,
+    "time_end": 187889.55102040817,
+    "text_begin": 1085,
+    "text_end": 1162,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1095
+  },
+  {
+    "text": "但 CodeRabbit 给的是一个更激进的版本：在工具的 Plan Mode 之上，再独立做一层产品级的规划系统。",
+    "pronounce_text": "但CodeRabbit给的是一个更激进的版本：在工具的Plan Mode之上，再独立做一层产品级的规划系统。",
+    "time_begin": 188089.55102040817,
+    "time_end": 196302.2947845805,
+    "text_begin": 1162,
+    "text_end": 1220,
+    "pronounce_text_begin": 1095,
+    "pronounce_text_end": 1149
+  },
+  {
+    "text": "规划本身，要被当成一个工程模块来建设。",
+    "pronounce_text": "规划本身，要被当成一个工程模块来建设。",
+    "time_begin": 196452,
+    "time_end": 200148.46258503402,
+    "text_begin": 1220,
+    "text_end": 1239,
+    "pronounce_text_begin": 1149,
+    "pronounce_text_end": 1168
+  },
+  {
+    "text": "那这个规划层内部长什么样？",
+    "pronounce_text": "那这个规划层内部长什么样？",
+    "time_begin": 200304,
+    "time_end": 202584.04535147393,
+    "text_begin": 1239,
+    "text_end": 1252,
+    "pronounce_text_begin": 1168,
+    "pronounce_text_end": 1181
+  },
+  {
+    "text": "CodeRabbit 把 Claude 全家桶拆开用了，按任务复杂度分发。整套规划层不是一个模型在跑，是三个模型在分工。",
+    "pronounce_text": "CodeRabbit把Claude全家桶拆开用了，按任务复杂度分发。整套规划层不是一个模型在跑，是三个模型在分工。",
+    "time_begin": 202752,
+    "time_end": 212369.55102040817,
+    "text_begin": 1252,
+    "text_end": 1312,
+    "pronounce_text_begin": 1181,
+    "pronounce_text_end": 1238
+  },
+  {
+    "text": "Opus 跑顶层。它是这个规划循环的总指挥，做最高层的策略理解——你想做什么、整体方向往哪儿走、有哪些大块需要分头处理。Sonnet 跑中间。",
+    "pronounce_text": "Opus跑顶层。它是这个规划循环的总指挥，做最高层的策略理解。你想做什么、整体方向往哪儿走、有哪些大块需要分头处理。Sonnet跑中间。",
+    "time_begin": 212508,
+    "time_end": 225538.8843537415,
+    "text_begin": 1312,
+    "text_end": 1383,
+    "pronounce_text_begin": 1238,
+    "pronounce_text_end": 1306
+  },
+  {
+    "text": "它把 Opus 给出的方向，拆成一系列结构化的步骤，串成可以执行的工作流。Haiku 跑最底层那些范围很窄的活——比如 context 蒸馏，把一大块上下文压缩成精炼的几句话；比如某个具体字段的归类。",
+    "pronounce_text": "它把Opus给出的方向，拆成一系列结构化的步骤，串成可以执行的工作流。Haiku跑最底层那些范围很窄的活。比如context蒸刘，把一大块上下文压缩成精炼的几句话;比如某个具体字段的归类。",
+    "time_begin": 225684,
+    "time_end": 242302.3673469388,
+    "text_begin": 1383,
+    "text_end": 1483,
+    "pronounce_text_begin": 1306,
+    "pronounce_text_end": 1400
+  },
+  {
+    "text": "为什么要这么分？因为这三类活，对模型的要求完全不同。顶层策略需要的是判断力和宏观理解，必须用最强的模型。中层工作流编排需要的是结构化和稳定性，Sonnet 性价比最优。",
+    "pronounce_text": "为什么要这么分？因为这三类活，对模型的要求完全不同。顶层策略需要的是判断力和宏观理解，必须用最强的模型。中层工作流编排需要的是结构化和稳定性，Sonnet性价比最优。",
+    "time_begin": 242460,
+    "time_end": 258904.21768707482,
+    "text_begin": 1483,
+    "text_end": 1567,
+    "pronounce_text_begin": 1400,
+    "pronounce_text_end": 1483
+  },
+  {
+    "text": "底层窄范围操作不需要太多推理，但被调用的次数特别多，成本敏感，Haiku 又快又便宜。",
+    "pronounce_text": "底层窄范围操作不需要太多推理，但被调用的次数特别多，成本敏感，Haiku又快又便宜。",
+    "time_begin": 259056,
+    "time_end": 266583.7551020408,
+    "text_begin": 1567,
+    "text_end": 1610,
+    "pronounce_text_begin": 1483,
+    "pronounce_text_end": 1525
+  },
+  {
+    "text": "Loker 给了一个特别朴素的判据。原话是：\"如果 Haiku 在某个任务上能做得跟 Sonnet 一样好，我们就用 Haiku。\"",
+    "pronounce_text": "Loker给了一个特别朴素的判据。原话是：\"如果Haiku在某个任务上能做得跟Sonnet一样好，我们就用Haiku。\"",
+    "time_begin": 266724,
+    "time_end": 277026.5396825397,
+    "text_begin": 1610,
+    "text_end": 1676,
+    "pronounce_text_begin": 1525,
+    "pronounce_text_end": 1585
+  },
+  {
+    "text": "听上去像废话，但这背后是一套真实的工程纪律。在生产环境里，每一次模型调用都是钱和延迟。",
+    "pronounce_text": "听上去像废话，但这背后是一套真实的工程纪律。在生产环境里，每一次模型调用都是钱和延迟。",
+    "time_begin": 277164,
+    "time_end": 285632.1632653061,
+    "text_begin": 1676,
+    "text_end": 1719,
+    "pronounce_text_begin": 1585,
+    "pronounce_text_end": 1628
+  },
+  {
+    "text": "你做一个规划系统，里面有几十次模型调用，你能不能把每一次都问一句：\"这一步真的需要 Opus 吗？还是 Sonnet 行？Sonnet 真的需要吗？Haiku 行不行？\"",
+    "pronounce_text": "你做一个规划系统，里面有几十次模型调用，你能不能把每一次都问一句：\"这一步真的需要Opus吗？还是Sonnet行？Sonnet真的需要吗？Haiku行不行？\"",
+    "time_begin": 285804,
+    "time_end": 298962.5941043084,
+    "text_begin": 1719,
+    "text_end": 1804,
+    "pronounce_text_begin": 1628,
+    "pronounce_text_end": 1707
+  },
+  {
+    "text": "这个事知道是一回事，每个节点都真的去测、真的去切，是另一回事。CodeRabbit 是真的做了。",
+    "pronounce_text": "这个事知道是一回事，每个节点都真的去测、真的去切，是另一回事。CodeRabbit是真的做了。",
+    "time_begin": 299124,
+    "time_end": 307336.7437641723,
+    "text_begin": 1804,
+    "text_end": 1852,
+    "pronounce_text_begin": 1707,
+    "pronounce_text_end": 1754
+  },
+  {
+    "text": "接下来是这套系统里我觉得最有意思的一段。",
+    "pronounce_text": "接下来是这套系统里我觉得最有意思的一段。",
+    "time_begin": 307476,
+    "time_end": 310487.4739229025,
+    "text_begin": 1852,
+    "text_end": 1872,
+    "pronounce_text_begin": 1754,
+    "pronounce_text_end": 1774
+  },
+  {
+    "text": "CodeRabbit 单独搭了一套评估基础设施，专门评估\"规划本身\"的质量。手工调过的样本、人工巡检、加上一组 LLM judge——这些 judge 会从不同维度给一份 plan 打分。",
+    "pronounce_text": "CodeRabbit单独搭了一套评估基础设施，专门评估\"规划本身\"的质量。手工调过的样本、人工巡检、加上一组LLM judge。这些judge会从不同维度给一份plan打分。",
+    "time_begin": 310644,
+    "time_end": 325126.1315192744,
+    "text_begin": 1872,
+    "text_end": 1966,
+    "pronounce_text_begin": 1774,
+    "pronounce_text_end": 1861
+  },
+  {
+    "text": "打哪几个分？三个维度。一是生成代码的功能完备度。二是 scope creep——也就是范围有没有蔓延。三是 token 用量。",
+    "pronounce_text": "打哪几个分？三个维度。一是生成代码的功能完备度。二是scope creep。也就是范围有没有蔓延。三是token用量。",
+    "time_begin": 325296,
+    "time_end": 334704.5714285714,
+    "text_begin": 1966,
+    "text_end": 2029,
+    "pronounce_text_begin": 1861,
+    "pronounce_text_end": 1920
+  },
+  {
+    "text": "我想停一下，单独说一下第二个。scope creep。这本来是项目管理领域的词——一个项目原本要做 A，做着做着把 B、C、D 也吞进来了。",
+    "pronounce_text": "我想停一下，单独说一下第二个。scope creep。这本来是项目管理领域的词。一个项目原本要做A，做着做着把B、C、D也吞进来了。",
+    "time_begin": 334872,
+    "time_end": 346289.09750566893,
+    "text_begin": 2029,
+    "text_end": 2099,
+    "pronounce_text_begin": 1920,
+    "pronounce_text_end": 1986
+  },
+  {
+    "text": "CodeRabbit 把这个概念，搬进了对 AI 规划质量的自动评估里。",
+    "pronounce_text": "CodeRabbit把这个概念，搬进了对AI规划质量的自动评估里。",
+    "time_begin": 346489.09750566893,
+    "time_end": 352484.33560090704,
+    "text_begin": 2099,
+    "text_end": 2135,
+    "pronounce_text_begin": 1986,
+    "pronounce_text_end": 2019
+  },
+  {
+    "text": "这意味着他们在 200 万个 PR 的数据里，看到 AI 规划有一个非常稳定的失败模式——它会偷偷扩张范围。你让它做登录，它顺手把注册也规划上了。",
+    "pronounce_text": "这意味着他们在两百万个PR的数据里，看到AI规划有一个非常稳定的失败模式。它会偷偷扩张范围。你让它做登录，它顺手把注册也规划上了。",
+    "time_begin": 352656,
+    "time_end": 364839.3560090703,
+    "text_begin": 2135,
+    "text_end": 2208,
+    "pronounce_text_begin": 2019,
+    "pronounce_text_end": 2084
+  },
+  {
+    "text": "这个倾向稳定到，他们觉得需要持续用一个独立的 judge 去监控。",
+    "pronounce_text": "这个倾向稳定到，他们觉得需要持续用一个独立的judge去监控。",
+    "time_begin": 365039.3560090703,
+    "time_end": 370349.60544217686,
+    "text_begin": 2208,
+    "text_end": 2241,
+    "pronounce_text_begin": 2084,
+    "pronounce_text_end": 2115
+  },
+  {
+    "text": "然后是 plan 本身的抽象层级问题。Loker 说他们花了很多次迭代才找对地方。",
+    "pronounce_text": "然后是plan本身的抽象层级问题。Loker说他们花了很多次迭代才找对地方。",
+    "time_begin": 370512,
+    "time_end": 376460.79818594106,
+    "text_begin": 2241,
+    "text_end": 2282,
+    "pronounce_text_begin": 2115,
+    "pronounce_text_end": 2153
+  },
+  {
+    "text": "太细的 plan，很快就 stale 了——一旦项目稍微变一点，整份 plan 就废了。但反过来，太粗的 plan 又给隐含假设留出了大量缝隙——AI 又开始脑补，又把开头那个\"代码对了但解错题\"的问题，搬了回来。",
+    "pronounce_text": "太细的plan，很快就stale了。一旦项目稍微变一点，整份plan就废了。但反过来，太粗的plan又给隐含假设留出了大量缝隙。AI又开始脑补，又把开头那个\"代码对了但解错题\"的问题，搬了回来。",
+    "time_begin": 376632,
+    "time_end": 393459.3469387755,
+    "text_begin": 2282,
+    "text_end": 2389,
+    "pronounce_text_begin": 2153,
+    "pronounce_text_end": 2250
+  },
+  {
+    "text": "所以\"plan 该写多细\"，本身就是一个需要调的超参数。没有银弹。每个团队、每类任务，可能都得自己迭代。",
+    "pronounce_text": "所以\"plan该写多细\"，本身就是一个需要调的超参数。没有银弹。每个团队、每类任务，可能都得自己迭代。",
+    "time_begin": 393624,
+    "time_end": 403671.1201814059,
+    "text_begin": 2389,
+    "text_end": 2441,
+    "pronounce_text_begin": 2250,
+    "pronounce_text_end": 2301
+  },
+  {
+    "text": "最后是 Loker 那句我特别想留下来的话。他说：\"plan 本身就变成了一道质量门槛。如果我们能保证这份 plan 在最一开始就质量过硬，下游的传导效应会非常显著。\"",
+    "pronounce_text": "最后是Loker那句我特别想留下来的话。他说：\"plan本身就变成了一道质量门槛。如果我们能保证这份plan在最一开始就质量过硬，下游的传导效应会非常显著。\"",
+    "time_begin": 403812,
+    "time_end": 416680.34467120183,
+    "text_begin": 2441,
+    "text_end": 2525,
+    "pronounce_text_begin": 2301,
+    "pronounce_text_end": 2380
+  },
+  {
+    "text": "我读完整篇我的体会是这样——code review 的下半场，是 plan review。",
+    "pronounce_text": "我读完整篇我的体会是这样。code review的下半场，是plan review。",
+    "time_begin": 416844,
+    "time_end": 422456.1088435374,
+    "text_begin": 2525,
+    "text_end": 2570,
+    "pronounce_text_begin": 2380,
+    "pronounce_text_end": 2422
+  },
+  {
+    "text": "过去十几年，软件工程的质量门槛在哪？在 PR、在 code review、在 CI。一段代码写出来，靠几道审查关把它过滤干净。",
+    "pronounce_text": "过去十几年，软件工程的质量门槛在哪？在PR、在code review、在CI。一段代码写出来，靠几道审查关把它过滤干净。",
+    "time_begin": 422604,
+    "time_end": 433800.50793650793,
+    "text_begin": 2570,
+    "text_end": 2633,
+    "pronounce_text_begin": 2422,
+    "pronounce_text_end": 2482
+  },
+  {
+    "text": "但在 AI 写代码的时代，等到代码已经写出来，再去做 review，已经太晚了。因为这时候的\"错\"，不是几行代码的事，是整个方向都跑偏了。",
+    "pronounce_text": "但在AI写代码的时代，等到代码已经写出来，再去做review，已经太晚了。因为这时候的\"错\"，不是几行代码的事，是整个方向都跑偏了。",
+    "time_begin": 433944,
+    "time_end": 446429.2154195011,
+    "text_begin": 2633,
+    "text_end": 2702,
+    "pronounce_text_begin": 2482,
+    "pronounce_text_end": 2548
+  },
+  {
+    "text": "审查再仔细，也只能告诉你\"这段写得不对\"，没法帮你把方向掰回来。",
+    "pronounce_text": "审查再仔细，也只能告诉你\"这段写得不对\"，没法帮你把方向掰回来。",
+    "time_begin": 446580,
+    "time_end": 452528.79818594106,
+    "text_begin": 2702,
+    "text_end": 2734,
+    "pronounce_text_begin": 2548,
+    "pronounce_text_end": 2580
+  },
+  {
+    "text": "所以质量关必须前移。从评审已经写出来的代码，前移到评审还没开始写的那份 plan。CodeRabbit 整套架构，本质上是在做这件事。",
+    "pronounce_text": "所以质量关必须前移。从评审已经写出来的代码，前移到评审还没开始写的那份plan。CodeRabbit整套架构，本质上是在做这件事。",
+    "time_begin": 452700,
+    "time_end": 462665.85034013604,
+    "text_begin": 2734,
+    "text_end": 2801,
+    "pronounce_text_begin": 2580,
+    "pronounce_text_end": 2645
+  },
+  {
+    "text": "这套打法当然不是免费的。多一层规划等于多一层延迟、多消耗多个模型的 token、还要团队搭配套的 eval 基础设施。规划层抽象层级这件事，得自己慢慢试。",
+    "pronounce_text": "这套打法当然不是免费的。多一层规划等于多一层延迟、多消耗多个模型的token、还要团队搭配套的eval基础设施。规划层抽象层级这件事，得自己慢慢试。",
+    "time_begin": 462816,
+    "time_end": 476102.30385487527,
+    "text_begin": 2801,
+    "text_end": 2878,
+    "pronounce_text_begin": 2645,
+    "pronounce_text_end": 2719
+  },
+  {
+    "text": "而且你得说服团队——在写代码之前，先经过一道 plan review。",
+    "pronounce_text": "而且你得说服团队。在写代码之前，先经过一道plan review。",
+    "time_begin": 476302.30385487527,
+    "time_end": 481229.4240362812,
+    "text_begin": 2878,
+    "text_end": 2913,
+    "pronounce_text_begin": 2719,
+    "pronounce_text_end": 2752
+  },
+  {
+    "text": "对很多习惯了\"AI 直接出代码、人审 diff\"的团队来说，这是一个流程上的改变。",
+    "pronounce_text": "对很多习惯了\"AI直接出代码、人审diff\"的团队来说，这是一个流程上的改变。",
+    "time_begin": 481392,
+    "time_end": 487689.09750566893,
+    "text_begin": 2913,
+    "text_end": 2954,
+    "pronounce_text_begin": 2752,
+    "pronounce_text_end": 2791
+  },
+  {
+    "text": "但如果你正在生产环境里被那种\"代码对了但解错题\"的失败反复折磨——这套思路值得认真看一遍。",
+    "pronounce_text": "但如果你正在生产环境里被那种\"代码对了但解错题\"的失败反复折磨。这套思路值得认真看一遍。",
+    "time_begin": 487836,
+    "time_end": 496606.022675737,
+    "text_begin": 2954,
+    "text_end": 2999,
+    "pronounce_text_begin": 2791,
+    "pronounce_text_end": 2835
+  },
+  {
+    "text": "我读完整篇，记住三件事就够了。",
+    "pronounce_text": "我读完整篇，记住三件事就够了。",
+    "time_begin": 496764,
+    "time_end": 499520.0544217687,
+    "text_begin": 2999,
+    "text_end": 3014,
+    "pronounce_text_begin": 2835,
+    "pronounce_text_end": 2850
+  },
+  {
+    "text": "第一，AI 写代码最大的失败不是写错，是写对了别人没问的题。原因不在模型，在你脑子里那些没说出口的\"显而易见\"。",
+    "pronounce_text": "第一，AI写代码最大的失败不是写错，是写对了别人没问的题。原因不在模型，在你脑子里那些没说出口的\"显而易见\"。",
+    "time_begin": 499680,
+    "time_end": 510922.94784580497,
+    "text_begin": 3014,
+    "text_end": 3070,
+    "pronounce_text_begin": 2850,
+    "pronounce_text_end": 2905
+  },
+  {
+    "text": "第二，Plan Mode 不够。你需要在工具的 Plan Mode 之上，再做一层独立的、产品级的规划编排。",
+    "pronounce_text": "第二，Plan Mode不够。你需要在工具的Plan Mode之上，再做一层独立的、产品级的规划编排。",
+    "time_begin": 511092,
+    "time_end": 519525.3333333333,
+    "text_begin": 3070,
+    "text_end": 3124,
+    "pronounce_text_begin": 2905,
+    "pronounce_text_end": 2956
+  },
+  {
+    "text": "第三，规划是可以被评估的。eval harness 不是只能给代码用的，给 plan 用，效果可能更明显——因为质量关一旦前移，整条下游都会跟着变好。",
+    "pronounce_text": "第三，规划是可以被评估的。eval harness不是只能给代码用的，给plan用，效果可能更明显。因为质量关一旦前移，整条下游都会跟着变好。",
+    "time_begin": 519696,
+    "time_end": 532262.485260771,
+    "text_begin": 3124,
+    "text_end": 3199,
+    "pronounce_text_begin": 2956,
+    "pronounce_text_end": 3027
+  },
+  {
+    "text": "代码评审的下半场，是 plan 评审。AI 写错的那行代码，错从你没说出口的那一句开始。",
+    "pronounce_text": "代码评审的下半场，是plan评审。AI写错的那行代码，错从你没说出口的那一句开始。",
+    "time_begin": 532404,
+    "time_end": 540570.3038548753,
+    "text_begin": 3199,
+    "text_end": 3243,
+    "pronounce_text_begin": 3027,
+    "pronounce_text_end": 3068
+  },
+  {
+    "text": "如果你也在用 AI 写代码、并且踩过那种\"明明跑得通就是不对劲\"的坑，今天可以做一件事——把你最近一次给 AI 的需求重新拎出来，问它一句：",
+    "pronounce_text": "如果你也在用AI写代码、并且踩过那种\"明明跑得通就是不对劲\"的坑，今天可以做一件事。把你最近一次给AI的需求重新拎出来，问它一句：",
+    "time_begin": 540720,
+    "time_end": 552044.2176870748,
+    "text_begin": 3243,
+    "text_end": 3313,
+    "pronounce_text_begin": 3068,
+    "pronounce_text_end": 3133
+  },
+  {
+    "text": "\"你觉得我哪几个地方没说清？这份需求里有哪些是隐含假设？\"",
+    "pronounce_text": "\"你觉得我哪几个地方没说清？这份需求里有哪些是隐含假设？\"",
+    "time_begin": 552204,
+    "time_end": 557131.1201814059,
+    "text_begin": 3313,
+    "text_end": 3342,
+    "pronounce_text_begin": 3133,
+    "pronounce_text_end": 3162
+  },
+  {
+    "text": "把这一步做扎实，再让它动手。",
+    "pronounce_text": "把这一步做扎实，再让它动手。",
+    "time_begin": 557280,
+    "time_end": 559989.6145124716,
+    "text_begin": 3342,
+    "text_end": 3356,
+    "pronounce_text_begin": 3162,
+    "pronounce_text_end": 3176
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 560160,
+    "time_end": 565818.5487528344,
+    "text_begin": 3356,
+    "text_end": 3383,
+    "pronounce_text_begin": 3176,
+    "pronounce_text_end": 3202
+  }
+]

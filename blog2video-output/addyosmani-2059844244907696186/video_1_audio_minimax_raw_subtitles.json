@@ -1,0 +1,672 @@
+[
+  {
+    "text": "你同时开着 20 个 Agent 在跑，dashboard 满满当当，感觉自己一个人在干一个小团队的活。但晚上关电脑你比谁都累，今天 merge 的代码你其实没看明白几个。",
+    "pronounce_text": "你同时开着二十个Agent在跑，dashboard满满当当，感觉自己一个人在干一个小团队的活。但晚上关电脑你比谁都累，今天merge的代码你其实没看明白几个。",
+    "time_begin": 0,
+    "time_end": 12566.485260770974,
+    "text_begin": 0,
+    "text_end": 86,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 79
+  },
+  {
+    "text": "这条诊断不是别人下的，是 Google Cloud AI 的总监、Gemini Agents 负责人 Addy Osmani 在 Google I/O 现场说的。",
+    "pronounce_text": "这条诊断不是别人下的，是Google Cloud AI的总监、Gemini Agents负责人Addy Osmani在Google I，O现场说的。",
+    "time_begin": 12708,
+    "time_end": 21396.75283446712,
+    "text_begin": 86,
+    "text_end": 167,
+    "pronounce_text_begin": 79,
+    "pronounce_text_end": 153
+  },
+  {
+    "text": "他给这件事起了个名字，叫 Orchestration Tax，编排税。今天不聊\"教你怎么开更多 Agent\"——只聊为什么你越用越累，而且这笔账你已经在付了。",
+    "pronounce_text": "他给这件事起了个名字，叫Orchestration Tax，编排税。今天不聊\"教你怎么开更多Agent\"。只聊为什么你越用越累，而且这笔账你已经在付了。",
+    "time_begin": 21564,
+    "time_end": 33364.226757369615,
+    "text_begin": 167,
+    "text_end": 246,
+    "pronounce_text_begin": 153,
+    "pronounce_text_end": 229
+  },
+  {
+    "text": "先说一个 Addy 在 panel 上抛出来的矛盾。",
+    "pronounce_text": "先说一个Addy在panel上抛出来的矛盾。",
+    "time_begin": 33516,
+    "time_end": 36527.47392290249,
+    "text_begin": 246,
+    "text_end": 272,
+    "pronounce_text_begin": 229,
+    "pronounce_text_end": 251
+  },
+  {
+    "text": "他说：我从来没觉得自己的工具这么强过，但我也从来没这么累过。",
+    "pronounce_text": "他说：我从来没觉得自己的工具这么强过，但我也从来没这么累过。",
+    "time_begin": 36684,
+    "time_end": 41959.41950113379,
+    "text_begin": 272,
+    "text_end": 302,
+    "pronounce_text_begin": 251,
+    "pronounce_text_end": 281
+  },
+  {
+    "text": "这两句听起来像是情绪发泄，其实是同一个原因。",
+    "pronounce_text": "这两句听起来像是情绪发泄，其实是同一个原因。",
+    "time_begin": 42120,
+    "time_end": 45979.0022675737,
+    "text_begin": 302,
+    "text_end": 324,
+    "pronounce_text_begin": 281,
+    "pronounce_text_end": 303
+  },
+  {
+    "text": "当时旁边坐着的 Richard Seroter 当场给这种状态命名——\"You can't manage twenty agents successfully in your own brain.\"——你的脑子撑不住二十个 Agent 同时跑。",
+    "pronounce_text": "当时旁边坐着的Richard Seroter当场给这种状态命名。\"You can't manage twenty agents successfully in your own brain.\"。你的脑子撑不住二十个Agent同时跑。",
+    "time_begin": 46179.0022675737,
+    "time_end": 59256.32653061225,
+    "text_begin": 324,
+    "text_end": 446,
+    "pronounce_text_begin": 303,
+    "pronounce_text_end": 419
+  },
+  {
+    "text": "Addy 把这件事拆开了。他说这不是态度问题，不是你心态没调整好，也不是你纪律不够。这是一个架构问题。",
+    "pronounce_text": "Addy把这件事拆开了。他说这不是态度问题，不是你心态没调整好，也不是你纪律不够。这是一个架构问题。",
+    "time_begin": 59400,
+    "time_end": 67914.60317460318,
+    "text_begin": 446,
+    "text_end": 497,
+    "pronounce_text_begin": 419,
+    "pronounce_text_end": 469
+  },
+  {
+    "text": "什么意思？意思是你不是用错了工具，你是被错放在了系统里错的位置。这个错位有一个具体的代价，每天都在收，只是你看不见。这就是 Orchestration Tax。",
+    "pronounce_text": "什么意思？意思是你不是用错了工具，你是被错放在了系统里错的位置。这个错位有一个具体的代价，每天都在收，只是你看不见。这就是Orchestration Tax。",
+    "time_begin": 68076,
+    "time_end": 81838.31292517007,
+    "text_begin": 497,
+    "text_end": 577,
+    "pronounce_text_begin": 469,
+    "pronounce_text_end": 548
+  },
+  {
+    "text": "Addy 指出一个大家平时不会停下来想的事实。",
+    "pronounce_text": "Addy指出一个大家平时不会停下来想的事实。",
+    "time_begin": 82008,
+    "time_end": 85356.16326530612,
+    "text_begin": 577,
+    "text_end": 600,
+    "pronounce_text_begin": 548,
+    "pronounce_text_end": 570
+  },
+  {
+    "text": "开一个 Agent 几乎不要钱。一个 keystroke，一句话 prompt，它就跑起来了。所以你很容易开到 5 个、10 个、20 个，反正成本看起来是零。",
+    "pronounce_text": "开一个Agent几乎不要钱。一个keystroke，一句话prompt，它就跑起来了。所以你很容易开到五个、十个、二十个，反正成本看起来是零。",
+    "time_begin": 85500,
+    "time_end": 96313.37868480725,
+    "text_begin": 600,
+    "text_end": 680,
+    "pronounce_text_begin": 570,
+    "pronounce_text_end": 641
+  },
+  {
+    "text": "但关这个 Agent 的环——也就是 close the loop——一点都不便宜。",
+    "pronounce_text": "但关这个Agent的环。也就是close the loop。一点都不便宜。",
+    "time_begin": 96480,
+    "time_end": 101883.12925170068,
+    "text_begin": 680,
+    "text_end": 722,
+    "pronounce_text_begin": 641,
+    "pronounce_text_end": 678
+  },
+  {
+    "text": "什么叫 close the loop？就是 Agent 跑完了把东西交回来，得有人判断它写得对不对、跟其他几个 Agent 改的地方有没有冲突、能不能 merge 进主分支。这件事没人能替你做。",
+    "pronounce_text": "什么叫close the loop？就是Agent跑完了把东西交回来，得有人判断它写得对不对、跟其他几个Agent改的地方有没有冲突、能不能merge进主分支。这件事没人能替你做。",
+    "time_begin": 102024,
+    "time_end": 114973.61451247166,
+    "text_begin": 722,
+    "text_end": 819,
+    "pronounce_text_begin": 678,
+    "pronounce_text_end": 768
+  },
+  {
+    "text": "模型不能替你做，因为它没有你对整个架构的理解。另一个 Agent 也不能替你做，因为最后还是要有人拍板。",
+    "pronounce_text": "模型不能替你做，因为它没有你对整个架构的理解。另一个Agent也不能替你做，因为最后还是要有人拍板。",
+    "time_begin": 115128,
+    "time_end": 123387.1836734694,
+    "text_begin": 819,
+    "text_end": 871,
+    "pronounce_text_begin": 768,
+    "pronounce_text_end": 818
+  },
+  {
+    "text": "所以这里有一个非常不对称的结构。开口是零成本，收口是高成本，而收口的那个人只有一个——就是你。",
+    "pronounce_text": "所以这里有一个非常不对称的结构。开口是零成本，收口是高成本，而收口的那个人只有一个。就是你。",
+    "time_begin": 123552,
+    "time_end": 132960.57142857142,
+    "text_begin": 871,
+    "text_end": 918,
+    "pronounce_text_begin": 818,
+    "pronounce_text_end": 864
+  },
+  {
+    "text": "Addy 说，当你开始把多 Agent 工作流当成一个并发系统来看，你会发现一件不太愉快的事。你不是系统的指挥官，你是系统里的一个组件。而且是那个最慢的、串行的组件。",
+    "pronounce_text": "Addy说，当你开始把多Agent工作流当成一个并发系统来看，你会发现一件不太愉快的事。你不是系统的指挥官，你是系统里的一个组件。而且是那个最慢的、串行的组件。",
+    "time_begin": 133128,
+    "time_end": 147830.72108843538,
+    "text_begin": 918,
+    "text_end": 1001,
+    "pronounce_text_begin": 864,
+    "pronounce_text_end": 944
+  },
+  {
+    "text": "讲到这里 Addy 用了一个特别精确的类比，我觉得这是全篇最值得停下来想的一段。",
+    "pronounce_text": "讲到这里Addy用了一个特别精确的类比，我觉得这是全篇最值得停下来想的一段。",
+    "time_begin": 147996,
+    "time_end": 153817.08843537414,
+    "text_begin": 1001,
+    "text_end": 1041,
+    "pronounce_text_begin": 944,
+    "pronounce_text_end": 982
+  },
+  {
+    "text": "写过 Python 的人都熟悉一个东西叫 GIL，全局解释器锁。Python 允许你开任意多的线程，但同一时间只能有一个线程真的在执行 Python 代码，因为它必须先抢到那把锁。",
+    "pronounce_text": "写过Python的人都熟悉一个东西叫GIL，全局解释器锁。Python允许你开任意多的线程，但同一时间只能有一个线程真的在执行Python代码，因为它必须先抢到那把锁。",
+    "time_begin": 153972,
+    "time_end": 167304.74376417234,
+    "text_begin": 1041,
+    "text_end": 1131,
+    "pronounce_text_begin": 982,
+    "pronounce_text_end": 1066
+  },
+  {
+    "text": "Addy 说：你就是你所有 AI Agent 的那把 GIL。",
+    "pronounce_text": "Addy说：你就是你所有AI Agent的那把GIL。",
+    "time_begin": 167472,
+    "time_end": 172190.14058956917,
+    "text_begin": 1131,
+    "text_end": 1162,
+    "pronounce_text_begin": 1066,
+    "pronounce_text_end": 1093
+  },
+  {
+    "text": "Agent 之间可以并行存在，可以同时在 20 个 worktree 里改东西。但只要哪一个 Agent 的产出需要真正的架构理解、需要解决 merge 冲突、需要判断要不要 ship，这件事就必须排队，排到你这把锁前面。",
+    "pronounce_text": "Agent之间可以并行存在，可以同时在二十个worktree里改东西。但只要哪一个Agent的产出需要真正的架构理解、需要解决merge冲突、需要判断要不要ship，这件事就必须排队，排到你这把锁前面。",
+    "time_begin": 172332,
+    "time_end": 188056.39909297053,
+    "text_begin": 1162,
+    "text_end": 1273,
+    "pronounce_text_begin": 1093,
+    "pronounce_text_end": 1194
+  },
+  {
+    "text": "锁只有一把，你拿着。",
+    "pronounce_text": "锁只有一把，你拿着。",
+    "time_begin": 188208,
+    "time_end": 190279.0657596372,
+    "text_begin": 1273,
+    "text_end": 1283,
+    "pronounce_text_begin": 1194,
+    "pronounce_text_end": 1204
+  },
+  {
+    "text": "你可能听过 Amdahl 定律，性能工程里的老结论。它说一个系统的加速比，是被它里面\"无法并行的那一段\"卡死的。串行部分占 20%，你就算上一万核也突破不了 5 倍加速。",
+    "pronounce_text": "你可能听过Amdahl定律，性能工程里的老结论。它说一个系统的加速比，是被它里面\"无法并行的那一段\"卡死的。串行部分占百分之二十，你就算上一万核也突破不了五倍加速。",
+    "time_begin": 190440,
+    "time_end": 206373.37868480725,
+    "text_begin": 1283,
+    "text_end": 1368,
+    "pronounce_text_begin": 1204,
+    "pronounce_text_end": 1286
+  },
+  {
+    "text": "在 Agent 开发里，那个无法并行的部分就是判断力。Addy 说得特别狠：开 8 个 Agent 不会让你的判断时间变快，它只会让排在你判断力前面的队伍变得更长。",
+    "pronounce_text": "在Agent开发里，那个无法并行的部分就是判断力。Addy说得特别狠：开八个Agent不会让你的判断时间变快，它只会让排在你判断力前面的队伍变得更长。",
+    "time_begin": 206532,
+    "time_end": 217728.50793650793,
+    "text_begin": 1368,
+    "text_end": 1450,
+    "pronounce_text_begin": 1286,
+    "pronounce_text_end": 1361
+  },
+  {
+    "text": "这是个性能工程里反复被验证、但每次都让人惊讶的事实——优化非瓶颈环节不会提高系统的吞吐量。它只会在瓶颈前面堆出更高的待办堆。",
+    "pronounce_text": "这是个性能工程里反复被验证、但每次都让人惊讶的事实。优化非瓶颈环节不会提高系统的吞吐量。它只会在瓶颈前面堆出更高的待办堆。",
+    "time_begin": 217872,
+    "time_end": 229498.07709750568,
+    "text_begin": 1450,
+    "text_end": 1512,
+    "pronounce_text_begin": 1361,
+    "pronounce_text_end": 1422
+  },
+  {
+    "text": "整个系统的真实产能，等于瓶颈那一步的产能。一字不差。",
+    "pronounce_text": "整个系统的真实产能，等于瓶颈那一步的产能。一字不差。",
+    "time_begin": 229698.07709750568,
+    "time_end": 235228.91609977325,
+    "text_begin": 1512,
+    "text_end": 1538,
+    "pronounce_text_begin": 1422,
+    "pronounce_text_end": 1448
+  },
+  {
+    "text": "Orchestration Tax 就是这里来的。它是你的 Agent 写出来的代码，和你真的能 merge 进主分支的代码，二者之间的结构性差距。",
+    "pronounce_text": "Orchestration Tax就是这里来的。它是你的Agent写出来的代码，和你真的能merge进主分支的代码，二者之间的结构性差距。",
+    "time_begin": 235368,
+    "time_end": 245542.82993197278,
+    "text_begin": 1538,
+    "text_end": 1612,
+    "pronounce_text_begin": 1448,
+    "pronounce_text_end": 1517
+  },
+  {
+    "text": "Addy 用一句话给它下了定义——It's what happens when you put a single-threaded resource in charge of a concurrent one.当你让一个单线程资源去管一个并发系统，必然会出现这个差距。",
+    "pronounce_text": "Addy 用一句话给它下了定义 It's what happens when you put a single-threaded resource in charge of a concurrent one.当你让一个单线程资源去管一个并发系统，必然会出现这个差距。",
+    "time_begin": 245700,
+    "time_end": 258057.50566893423,
+    "text_begin": 1612,
+    "text_end": 1746,
+    "pronounce_text_begin": 1517,
+    "pronounce_text_end": 1650
+  },
+  {
+    "text": "讲到这一步，那种\"用 AI 反而更累\"的感觉就有了一个明确解释。",
+    "pronounce_text": "讲到这一步，那种\"用AI反而更累\"的感觉就有了一个明确解释。",
+    "time_begin": 258228,
+    "time_end": 263886.54875283444,
+    "text_begin": 1746,
+    "text_end": 1778,
+    "pronounce_text_begin": 1650,
+    "pronounce_text_end": 1680
+  },
+  {
+    "text": "Addy 说，那种累有一个非常具体的来源。它是一个串行处理器被拉到 100% 利用率、还不留任何 slack 的体感。",
+    "pronounce_text": "Addy说，那种累有一个非常具体的来源。它是一个串行处理器被拉到百分之一百利用率、还不留任何slack的体感。",
+    "time_begin": 264024,
+    "time_end": 274117.56009070296,
+    "text_begin": 1778,
+    "text_end": 1837,
+    "pronounce_text_begin": 1680,
+    "pronounce_text_end": 1735
+  },
+  {
+    "text": "每次你去 check 一个你刚离开过的 Agent，你都在付一笔 context switch 的代价。你得清空当前脑子里装的东西，重新冷加载另一个上下文。",
+    "pronounce_text": "每次你去check一个你刚离开过的Agent，你都在付一笔context switch的代价。你得清空当前脑子里装的东西，重新冷加载另一个上下文。",
+    "time_begin": 274284,
+    "time_end": 285910.0770975057,
+    "text_begin": 1837,
+    "text_end": 1915,
+    "pronounce_text_begin": 1735,
+    "pronounce_text_end": 1808
+  },
+  {
+    "text": "CPU 做这件事是微秒级的，架构师还在拼命想办法避免它。",
+    "pronounce_text": "CPU做这件事是微秒级的，架构师还在拼命想办法避免它。",
+    "time_begin": 286110.0770975057,
+    "time_end": 291385.49659863947,
+    "text_begin": 1915,
+    "text_end": 1943,
+    "pronounce_text_begin": 1808,
+    "pronounce_text_end": 1835
+  },
+  {
+    "text": "你做这件事是分钟级的，而且你永远 reload 不到 100%。",
+    "pronounce_text": "你做这件事是分钟级的，而且你永远reload不到百分之一百。",
+    "time_begin": 291528,
+    "time_end": 296582.8299319728,
+    "text_begin": 1943,
+    "text_end": 1975,
+    "pronounce_text_begin": 1835,
+    "pronounce_text_end": 1865
+  },
+  {
+    "text": "所以 5 个 Agent 不是\"1x 工作量做 5 遍\"。Addy 算得很清楚——它等于 5 次冷加载，外加一个一直在你脑子后台跑的进程，那个进程的任务就是焦虑\"我下一个该去看谁\"。",
+    "pronounce_text": "所以五个Agent不是\"一x工作量做五遍\"。Addy算得很清楚。它等于五次冷加载，外加一个一直在你脑子后台跑的进程，那个进程的任务就是焦虑\"我下一个该去看谁\"。",
+    "time_begin": 296748,
+    "time_end": 310684.462585034,
+    "text_begin": 1975,
+    "text_end": 2066,
+    "pronounce_text_begin": 1865,
+    "pronounce_text_end": 1945
+  },
+  {
+    "text": "这个时候光\"再努力一点\"是没用的。结构限制不会因为你努力就消失。",
+    "pronounce_text": "这个时候光\"再努力一点\"是没用的。结构限制不会因为你努力就消失。",
+    "time_begin": 310824,
+    "time_end": 317248.8072562358,
+    "text_begin": 2066,
+    "text_end": 2098,
+    "pronounce_text_begin": 1945,
+    "pronounce_text_end": 1977
+  },
+  {
+    "text": "这个税你不主动付，它就换一种方式让你付——付的方式是你的 code review 变浅了，是你开始接受 Agent 写的代码不是因为它对，而是因为你已经没有注意力去形成自己的判断了。",
+    "pronounce_text": "这个税你不主动付，它就换一种方式让你付。付的方式是你的code review变浅了，是你开始接受Agent写的代码不是因为它对，而是因为你已经没有注意力去形成自己的判断了。",
+    "time_begin": 317412,
+    "time_end": 331255.5827664399,
+    "text_begin": 2098,
+    "text_end": 2189,
+    "pronounce_text_begin": 1977,
+    "pronounce_text_end": 2063
+  },
+  {
+    "text": "Addy 给这种状态起了个名字叫 cognitive surrender，认知投降。",
+    "pronounce_text": "Addy给这种状态起了个名字叫cognitive surrender，认知投降。",
+    "time_begin": 331416,
+    "time_end": 336436,
+    "text_begin": 2189,
+    "text_end": 2231,
+    "pronounce_text_begin": 2063,
+    "pronounce_text_end": 2103
+  },
+  {
+    "text": "这是这篇文章里我觉得最扎心的一句——你要么主动付这个税，要么让它悄悄毁掉你对自己系统的理解。",
+    "pronounce_text": "这是这篇文章里我觉得最扎心的一句。你要么主动付这个税，要么让它悄悄毁掉你对自己系统的理解。",
+    "time_begin": 336600,
+    "time_end": 344557.3242630385,
+    "text_begin": 2231,
+    "text_end": 2277,
+    "pronounce_text_begin": 2103,
+    "pronounce_text_end": 2148
+  },
+  {
+    "text": "讲到这里你可能会以为他要劝大家少用 Agent。不是。Addy 是 Google Cloud AI 总监，他不是反 AI 的视角。",
+    "pronounce_text": "讲到这里你可能会以为他要劝大家少用Agent。不是。Addy是Google Cloud AI总监，他不是反AI的视角。",
+    "time_begin": 344700,
+    "time_end": 353388.7528344671,
+    "text_begin": 2277,
+    "text_end": 2342,
+    "pronounce_text_begin": 2148,
+    "pronounce_text_end": 2207
+  },
+  {
+    "text": "他的观点是——既然你的注意力是这套并发系统里唯一不能复制的串行资源，那就把它当一个真实的稀缺资源来做架构。你不会随便设计一个分布式系统而不考虑瓶颈，那对自己的脑子也得有同样的尊重。",
+    "pronounce_text": "他的观点是。既然你的注意力是这套并发系统里唯一不能复制的串行资源，那就把它当一个真实的稀缺资源来做架构。你不会随便设计一个分布式系统而不考虑瓶颈，那对自己的脑子也得有同样的尊重。",
+    "time_begin": 353556,
+    "time_end": 369199.1292517007,
+    "text_begin": 2342,
+    "text_end": 2432,
+    "pronounce_text_begin": 2207,
+    "pronounce_text_end": 2296
+  },
+  {
+    "text": "他给了几条他自己反复验证过的做法，我把它们串起来讲。它们看起来是 5 条独立建议，其实是同一个原则——把你的注意力当稀缺资源做架构——的不同应用面。",
+    "pronounce_text": "他给了几条他自己反复验证过的做法，我把它们串起来讲。它们看起来是五条独立建议，其实是同一个原则。把你的注意力当稀缺资源做架构。的不同应用面。",
+    "time_begin": 369360,
+    "time_end": 382866.8934240363,
+    "text_begin": 2432,
+    "text_end": 2506,
+    "pronounce_text_begin": 2296,
+    "pronounce_text_end": 2366
+  },
+  {
+    "text": "第一件事，并发系统里有个概念叫 backpressure，反压。说的是 producer 必须减速来匹配 consumer，否则队列就无限增长。在你这套系统里，Agent 的数量是 producer，你能真正 review 的速度才是 consumer。",
+    "pronounce_text": "第一件事，并发系统里有个概念叫backpressure，反压。说的是producer必须减速来匹配consumer，否则队列就无限增长。在你这套系统里，Agent的数量是producer，你能真正review的速度才是consumer。",
+    "time_begin": 383004,
+    "time_end": 399448.21768707485,
+    "text_begin": 2506,
+    "text_end": 2633,
+    "pronounce_text_begin": 2366,
+    "pronounce_text_end": 2484
+  },
+  {
+    "text": "大多数人对得上的并行 Agent 数，是低个位数。Addy 说一句很犀利的话——AI 工具会很乐意让你 spawn 20 个，但那只是个 UI feature，不是它在建议你这么做。",
+    "pronounce_text": "大多数人对得上的并行Agent数，是低个位数。Addy说一句很犀利的话。AI工具会很乐意让你spawn二十个，但那只是个UI feature，不是它在建议你这么做。",
+    "time_begin": 399600,
+    "time_end": 412468.34467120183,
+    "text_begin": 2633,
+    "text_end": 2724,
+    "pronounce_text_begin": 2484,
+    "pronounce_text_end": 2566
+  },
+  {
+    "text": "第二件事是把任务分两堆。一堆是隔离的、可以丢给云端 background Agent 跑的活——这种你只在终点把个关就行。",
+    "pronounce_text": "第二件事是把任务分两堆。一堆是隔离的、可以丢给云端background Agent跑的活。这种你只在终点把个关就行。",
+    "time_begin": 412632,
+    "time_end": 422295.9909297052,
+    "text_begin": 2724,
+    "text_end": 2785,
+    "pronounce_text_begin": 2566,
+    "pronounce_text_end": 2624
+  },
+  {
+    "text": "另一堆是判断本身就是工作的活，比如怪 bug、架构设计。最大的错误是想把第二堆并行化。",
+    "pronounce_text": "另一堆是判断本身就是工作的活，比如怪bug、架构设计。最大的错误是想把第二堆并行化。",
+    "time_begin": 422495.9909297052,
+    "time_end": 430581.02494331065,
+    "text_begin": 2785,
+    "text_end": 2828,
+    "pronounce_text_begin": 2624,
+    "pronounce_text_end": 2666
+  },
+  {
+    "text": "并行做多个复杂判断不会让你的产出翻倍，它只会让你那把锁被反复抢来抢去，最后每件事都做得更差。",
+    "pronounce_text": "并行做多个复杂判断不会让你的产出翻倍，它只会让你那把锁被反复抢来抢去，最后每件事都做得更差。",
+    "time_begin": 430740,
+    "time_end": 439556.462585034,
+    "text_begin": 2828,
+    "text_end": 2874,
+    "pronounce_text_begin": 2666,
+    "pronounce_text_end": 2712
+  },
+  {
+    "text": "第三件事是 batch review，攒一批再看。Context switch 是单价很贵的开销，看一个走开再回来冷启动那种代价远高于一次性看 4 个。给 Agent 长一点的绳子，让活攒一攒，一次性处理。",
+    "pronounce_text": "第三件事是batch review，攒一批再看。Context switch是单价很贵的开销，看一个走开再回来冷启动那种代价远高于一次性看四个。给Agent长一点的绳子，让活攒一攒，一次性处理。",
+    "time_begin": 439704,
+    "time_end": 455347.1292517007,
+    "text_begin": 2874,
+    "text_end": 2977,
+    "pronounce_text_begin": 2712,
+    "pronounce_text_end": 2809
+  },
+  {
+    "text": "第四件事，把你的锁只花在真正需要判断的地方。能让 Agent 自己写一个通过的测试、生成一张截图自证的，就让它自证。",
+    "pronounce_text": "第四件事，把你的锁只花在真正需要判断的地方。能让Agent自己写一个通过的测试、生成一张截图自证的，就让它自证。",
+    "time_begin": 455508,
+    "time_end": 466576.79818594106,
+    "text_begin": 2977,
+    "text_end": 3035,
+    "pronounce_text_begin": 2809,
+    "pronounce_text_end": 2865
+  },
+  {
+    "text": "无聊的那 80% 它自己搞定，你的注意力只花在真正需要人类判断的那 20%。",
+    "pronounce_text": "无聊的那百分之八十它自己搞定，你的注意力只花在真正需要人类判断的那百分之二十。",
+    "time_begin": 466776.79818594106,
+    "time_end": 473108.7256235828,
+    "text_begin": 3035,
+    "text_end": 3073,
+    "pronounce_text_begin": 2865,
+    "pronounce_text_end": 2904
+  },
+  {
+    "text": "最后一条 Addy 说得几乎像在劝慰——保护你的串行时间。瓶颈需要你最好的几个小时，不是夹在两次 Agent check-in 之间的零碎分钟。",
+    "pronounce_text": "最后一条Addy说得几乎像在劝慰。保护你的串行时间。瓶颈需要你最好的几个小时，不是夹在两次Agent check-in之间的零碎分钟。",
+    "time_begin": 473256,
+    "time_end": 484115.8185941043,
+    "text_begin": 3073,
+    "text_end": 3145,
+    "pronounce_text_begin": 2904,
+    "pronounce_text_end": 2971
+  },
+  {
+    "text": "有时候最高杠杆的动作，是关掉那个开了一堆 Agent 的笔记本，把那把锁攥在手里，只对着一个问题狠狠想。",
+    "pronounce_text": "有时候最高杠杆的动作，是关掉那个开了一堆Agent的笔记本，把那把锁攥在手里，只对着一个问题狠狠想。",
+    "time_begin": 484272,
+    "time_end": 493854.7210884354,
+    "text_begin": 3145,
+    "text_end": 3197,
+    "pronounce_text_begin": 2971,
+    "pronounce_text_end": 3021
+  },
+  {
+    "text": "他说了一句话我特别想转述给你：orchestrating is not the real work. It's the overhead around the work. 编排不是真正的工作，它只是工作周围的开销。",
+    "pronounce_text": "他说了一句话我特别想转述给你：orchestrating is not the real work.It's the overhead around the work.编排不是真正的工作，它只是工作周围的开销。",
+    "time_begin": 493992,
+    "time_end": 505490.36734693876,
+    "text_begin": 3197,
+    "text_end": 3304,
+    "pronounce_text_begin": 3021,
+    "pronounce_text_end": 3126
+  },
+  {
+    "text": "这篇文章里有一段我读完后愣了一下。",
+    "pronounce_text": "这篇文章里有一段我读完后愣了一下。",
+    "time_begin": 505656,
+    "time_end": 508412.0544217687,
+    "text_begin": 3304,
+    "text_end": 3321,
+    "pronounce_text_begin": 3126,
+    "pronounce_text_end": 3143
+  },
+  {
+    "text": "Addy 说这个失败模式最可怕的地方是——你从内部完全感觉不到它发生了。",
+    "pronounce_text": "Addy说这个失败模式最可怕的地方是。你从内部完全感觉不到它发生了。",
+    "time_begin": 508572,
+    "time_end": 514648.50793650793,
+    "text_begin": 3321,
+    "text_end": 3357,
+    "pronounce_text_begin": 3143,
+    "pronounce_text_end": 3177
+  },
+  {
+    "text": "20 个 Agent 在跑、dashboard 满满当当、什么都在动，这给你一种产能爆棚的感觉。但这种感觉是和\"今天真的 ship 了好代码进主分支\"完全脱钩的两件事。",
+    "pronounce_text": "二十个Agent在跑、dashboard满满当当、什么都在动，这给你一种产能爆棚的感觉。但这种感觉是和\"今天真的ship了好代码进主分支\"完全脱钩的两件事。",
+    "time_begin": 514800,
+    "time_end": 527238.775510204,
+    "text_begin": 3357,
+    "text_end": 3441,
+    "pronounce_text_begin": 3177,
+    "pronounce_text_end": 3255
+  },
+  {
+    "text": "你可以最大化地忙，同时几乎什么都没真正做出来。",
+    "pronounce_text": "你可以最大化地忙，同时几乎什么都没真正做出来。",
+    "time_begin": 527438.775510204,
+    "time_end": 531936.3265306122,
+    "text_begin": 3441,
+    "text_end": 3464,
+    "pronounce_text_begin": 3255,
+    "pronounce_text_end": 3278
+  },
+  {
+    "text": "从内部看，这两种状态长得一模一样。",
+    "pronounce_text": "从内部看，这两种状态长得一模一样。",
+    "time_begin": 532080,
+    "time_end": 535300.4535147392,
+    "text_begin": 3464,
+    "text_end": 3481,
+    "pronounce_text_begin": 3278,
+    "pronounce_text_end": 3295
+  },
+  {
+    "text": "同 panel 的 Ciera Jaspan 还提了一个补刀——Margaret-Anne Storey 关于 cognitive debt 的研究。讨论里 Addy 总结说：Orchestration Tax 不付，你是在同时累积技术债和认知债。",
+    "pronounce_text": "同panel的Ciera Jaspan还提了一个补刀。Margaret-Anne Storey关于cognitive debt的研究。讨论里Addy总结说：Orchestration Tax不付，你是在同时累积技术债和认知债。",
+    "time_begin": 535464,
+    "time_end": 550201.5510204082,
+    "text_begin": 3481,
+    "text_end": 3605,
+    "pronounce_text_begin": 3295,
+    "pronounce_text_end": 3408
+  },
+  {
+    "text": "你 merge 进去的代码自己其实没看懂，你对整个 codebase 的心智模型在悄悄过期。dashboard 上今天看不见这件事。",
+    "pronounce_text": "你merge进去的代码自己其实没看懂，你对整个codebase的心智模型在悄悄过期。dashboard上今天看不见这件事。",
+    "time_begin": 550368,
+    "time_end": 559776.5714285715,
+    "text_begin": 3605,
+    "text_end": 3671,
+    "pronounce_text_begin": 3408,
+    "pronounce_text_end": 3469
+  },
+  {
+    "text": "它会在某天 production 炸了你打开系统、发现自己已经认不出自己写的东西的时候，一次性结账。",
+    "pronounce_text": "它会在某天production炸了你打开系统、发现自己已经认不出自己写的东西的时候，一次性结账。",
+    "time_begin": 559976.5714285715,
+    "time_end": 568270.5850340136,
+    "text_begin": 3671,
+    "text_end": 3721,
+    "pronounce_text_begin": 3469,
+    "pronounce_text_end": 3517
+  },
+  {
+    "text": "把整篇拉回到一句话。",
+    "pronounce_text": "把整篇拉回到一句话。",
+    "time_begin": 568440,
+    "time_end": 570336.9160997733,
+    "text_begin": 3721,
+    "text_end": 3731,
+    "pronounce_text_begin": 3517,
+    "pronounce_text_end": 3527
+  },
+  {
+    "text": "Addy 真正想说的是——开 Agent 不是技能。能开 20 个 Agent 不算什么，谁都能开。真正的技能是给那个不能被复制、不能被并行的串行资源——也就是你自己——做架构设计。",
+    "pronounce_text": "Addy真正想说的是。开Agent不是技能。能开二十个Agent不算什么，谁都能开。真正的技能是给那个不能被复制、不能被并行的串行资源。也就是你自己。做架构设计。",
+    "time_begin": 570492,
+    "time_end": 586088.6893424037,
+    "text_begin": 3731,
+    "text_end": 3822,
+    "pronounce_text_begin": 3527,
+    "pronounce_text_end": 3608
+  },
+  {
+    "text": "你过去做分布式系统的时候是怎么想瓶颈的，对自己的脑子也得那么想。它有一个具体的、低的、可测的吞吐量。",
+    "pronounce_text": "你过去做分布式系统的时候是怎么想瓶颈的，对自己的脑子也得那么想。它有一个具体的、低的、可测的吞吐量。",
+    "time_begin": 586260,
+    "time_end": 596608.9795918367,
+    "text_begin": 3822,
+    "text_end": 3872,
+    "pronounce_text_begin": 3608,
+    "pronounce_text_end": 3658
+  },
+  {
+    "text": "系统要么尊重这个数字，要么它就偷偷给你降低标准——表现就是你的 review 越来越浅，你越来越愿意接受不太对的代码。这两种结果只能选一个。",
+    "pronounce_text": "系统要么尊重这个数字，要么它就偷偷给你降低标准。表现就是你的review越来越浅，你越来越愿意接受不太对的代码。这两种结果只能选一个。",
+    "time_begin": 596772,
+    "time_end": 608270.3673469388,
+    "text_begin": 3872,
+    "text_end": 3942,
+    "pronounce_text_begin": 3658,
+    "pronounce_text_end": 3725
+  },
+  {
+    "text": "我读完这篇最大的感受是——这是 Google Cloud AI 总监自己跳出来给整个\"多 Agent 万岁\"的叙事踩了一脚刹车。它不是反 AI，它是给\"什么时候并发、什么时候单线程\"画一条分界线。",
+    "pronounce_text": "我读完这篇最大的感受是。这是Google Cloud AI总监自己跳出来给整个\"多Agent万岁\"的叙事踩了一脚刹车。它不是反AI，它是给\"什么时候并发、什么时候单线程\"画一条分界线。",
+    "time_begin": 608436,
+    "time_end": 625228.5170068027,
+    "text_begin": 3942,
+    "text_end": 4040,
+    "pronounce_text_begin": 3725,
+    "pronounce_text_end": 3817
+  },
+  {
+    "text": "并发的部分留给 Agent，串行的部分留给你。这条界画错的时候，付的不是显性账单，是你对自己代码库的理解。",
+    "pronounce_text": "并发的部分留给Agent，串行的部分留给你。这条界画错的时候，付的不是显性账单，是你对自己代码库的理解。",
+    "time_begin": 625392,
+    "time_end": 635055.9909297052,
+    "text_begin": 4040,
+    "text_end": 4093,
+    "pronounce_text_begin": 3817,
+    "pronounce_text_end": 3869
+  },
+  {
+    "text": "下次你又想开第 11 个、第 20 个 Agent 的时候，停一秒问自己——这件事 close the loop 谁来做？如果答案还是你，你已经在付这笔税了。",
+    "pronounce_text": "下次你又想开第十一个、第二十个Agent的时候，停一秒问自己。这件事close the loop谁来做？如果答案还是你，你已经在付这笔税了。",
+    "time_begin": 635220,
+    "time_end": 647403.3560090703,
+    "text_begin": 4093,
+    "text_end": 4172,
+    "pronounce_text_begin": 3869,
+    "pronounce_text_end": 3939
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 647568,
+    "time_end": 652588,
+    "text_begin": 4172,
+    "text_end": 4199,
+    "pronounce_text_begin": 3939,
+    "pronounce_text_end": 3965
+  }
+]

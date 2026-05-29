@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Orchestration Tax",
+    "title_zh": "你能开 20 个 Agent，但只有一个你",
+    "word_count": 4500,
+    "slug": "addyosmani-2059844244907696186"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "一篇围绕单一论点（人类注意力是多 Agent 并发系统里的串行瓶颈、Orchestration Tax 不可避免）的连贯论证，从悖论到 GIL/Amdahl 类比再到 5 条架构建议层层推进，不存在可独立成片的子主题，不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你能开 20 个 Agent，但只有一个你"
+      }
+    ]
+  }
+}

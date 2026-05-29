@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 80px;
+      color: #FFFFFF;
+    }
+    .h1 .amber { color: #F59E0B; }
+    .h1 .red { color: #EF4444; }
+    .quote-row {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    .quote {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 32px 36px;
+      text-align: left;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .quote.red { border-left-color: #EF4444; }
+    .quote .accent-g { color: #10B981; }
+    .quote .accent-r { color: #EF4444; }
+    .verdict {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(239, 68, 68, 0.12));
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-radius: 16px;
+      padding: 40px 36px;
+      font-size: 42px;
+      font-weight: 700;
+      width: 100%;
+      color: #FFFFFF;
+    }
+    .verdict .amber { color: #F59E0B; }
+    .verdict .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">PARADOX · 同一个原因</div>
+    <h1 class="h1">工具从未这么强<br/>人也<span class="red">从未这么累</span></h1>
+    <div class="quote-row">
+      <div class="quote">
+        <span class="accent-g">↑</span> 我从来没觉得自己的工具这么强过
+      </div>
+      <div class="quote red">
+        <span class="accent-r">↓</span> 我也从来没这么累过
+      </div>
+    </div>
+    <div class="verdict">
+      不是<span class="red">态度问题</span>，<br/>是<span class="amber">架构问题</span>
+    </div>
+  </div>
+</body>
+</html>

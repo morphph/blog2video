@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.22;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+    }
+    .h1 .amber { color: #F59E0B; }
+    .h1 .red { color: #EF4444; }
+    .key-quote {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(245, 158, 11, 0.10));
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      border-radius: 16px;
+      padding: 36px 32px;
+      width: 100%;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .key-quote-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .key-quote-text {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .key-quote-text .amber { color: #F59E0B; }
+    .key-quote-text .purple { color: #8B5CF6; }
+    .split-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 26px 30px;
+      width: 100%;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .split-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .split-row:last-child { margin-bottom: 0; }
+    .split-tag {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 8px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      min-width: 80px;
+      text-align: center;
+    }
+    .split-tag.concurrent {
+      background: rgba(16, 185, 129, 0.18);
+      color: #10B981;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+    .split-tag.serial {
+      background: rgba(239, 68, 68, 0.18);
+      color: #EF4444;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+    .split-text { color: #FFFFFF; }
+    .closing {
+      background: #1A1A2E;
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .closing .white { color: #FFFFFF; font-weight: 600; }
+    .closing .brand { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">SYNTHESIS · 真正的稀缺</div>
+    <h1 class="h1">多 Agent 时代<br/>真正稀缺的不是 Agent，<br/>是<span class="amber">你</span></h1>
+    <div class="key-quote">
+      <div class="key-quote-label">CORE INSIGHT</div>
+      <div class="key-quote-text">
+        开 20 个 Agent 不是技能，<br/>
+        给那个<span class="amber">不能并行的你</span>做<span class="purple">架构设计</span>才是
+      </div>
+    </div>
+    <div class="split-card">
+      <div class="split-row">
+        <span class="split-tag concurrent">并发</span>
+        <span class="split-text">→ 留给 Agent</span>
+      </div>
+      <div class="split-row">
+        <span class="split-tag serial">串行</span>
+        <span class="split-text">→ 留给你</span>
+      </div>
+    </div>
+    <div class="closing">
+      下次想开第 11 个 Agent 时，问一句——<br/>
+      <span class="white">close the loop 谁来做？</span><br/>
+      <span class="brand">精读AI</span>，下期再见
+    </div>
+  </div>
+</body>
+</html>

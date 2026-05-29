@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .h1 {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 56px;
+      color: #FFFFFF;
+    }
+    .h1 .red { color: #EF4444; }
+    .formula {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .formula-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .formula-text {
+      font-size: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .formula-text .amber { color: #F59E0B; }
+    .formula-text .red { color: #EF4444; }
+    .big-num {
+      font-size: 72px;
+      font-weight: 800;
+      color: #EF4444;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+    .verdict {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.1));
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 16px;
+      padding: 36px 36px;
+      font-size: 34px;
+      font-weight: 700;
+      width: 100%;
+      color: #FFFFFF;
+      line-height: 1.4;
+      margin-top: 20px;
+    }
+    .verdict .red { color: #EF4444; }
+    .verdict .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">AMDAHL'S LAW · 串行段卡住一切</div>
+    <h1 class="h1">加 8 个 Agent<br/>队伍只会<span class="red">变得更长</span></h1>
+    <div class="formula">
+      <div class="formula-label">SCENARIO</div>
+      <div class="formula-text">串行部分占 <span class="amber">20%</span><br/>上 <span class="big-num">10000</span>核也突破不了<br/><span class="red">5×</span> 加速</div>
+    </div>
+    <div class="verdict">
+      系统的真实产能 <span class="amber">=</span><br/>
+      <span class="red">瓶颈那一步</span>的产能<br/>
+      <span style="font-size: 24px; color: #B0B0CC; font-weight: 500;">一字不差</span>
+    </div>
+  </div>
+</body>
+</html>

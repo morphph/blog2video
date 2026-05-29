@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 180px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+    }
+    .h1 .amber { color: #F59E0B; }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 26px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      text-align: left;
+    }
+    .item.c1 { border-left: 4px solid #8B5CF6; }
+    .item.c2 { border-left: 4px solid #3B82F6; }
+    .item.c3 { border-left: 4px solid #10B981; }
+    .item.c4 { border-left: 4px solid #F59E0B; }
+    .item.c5 { border-left: 4px solid #EF4444; }
+    .num {
+      font-size: 44px;
+      font-weight: 800;
+      min-width: 56px;
+      line-height: 1;
+    }
+    .item.c1 .num { color: #8B5CF6; }
+    .item.c2 .num { color: #3B82F6; }
+    .item.c3 .num { color: #10B981; }
+    .item.c4 .num { color: #F59E0B; }
+    .item.c5 .num { color: #EF4444; }
+    .text {
+      flex: 1;
+      font-size: 28px;
+      line-height: 1.35;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .text .key { color: #F59E0B; font-weight: 700; }
+    .text .sub {
+      display: block;
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">5 RULES · Attention Architecture</div>
+    <h1 class="h1">把<span class="amber">注意力</span>当稀缺资源做架构</h1>
+    <div class="list">
+      <div class="item c1">
+        <div class="num">①</div>
+        <div class="text">给 fleet 加 <span class="key">backpressure</span><span class="sub">并行 Agent 数对得上你 review 速度——低个位数</span></div>
+      </div>
+      <div class="item c2">
+        <div class="num">②</div>
+        <div class="text">把任务分两堆：<span class="key">隔离 vs 判断密集</span><span class="sub">判断本身就是工作的活，永远不要并行化</span></div>
+      </div>
+      <div class="item c3">
+        <div class="num">③</div>
+        <div class="text">攒一批再看 · <span class="key">batch reviews</span><span class="sub">一次看 4 个，远便宜于走开再回来 4 次冷启动</span></div>
+      </div>
+      <div class="item c4">
+        <div class="num">④</div>
+        <div class="text">锁只花在<span class="key">真正需要判断的 20%</span><span class="sub">无聊的 80%，让 Agent 写测试、截图自证</span></div>
+      </div>
+      <div class="item c5">
+        <div class="num">⑤</div>
+        <div class="text">保护<span class="key">深度时间窗口</span><span class="sub">瓶颈要你最好的几小时，不是 check-in 之间的零碎分钟</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

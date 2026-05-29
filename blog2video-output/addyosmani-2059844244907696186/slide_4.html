@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 750px;
+      height: 750px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+      position: relative; z-index: 2;
+    }
+    .quote-mark {
+      font-size: 140px;
+      color: #8B5CF6;
+      line-height: 0.6;
+      font-family: Georgia, serif;
+      margin-bottom: 30px;
+      position: relative; z-index: 2;
+    }
+    .quote {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #FFFFFF;
+      margin-bottom: 56px;
+      position: relative; z-index: 2;
+    }
+    .quote .purple { color: #8B5CF6; }
+    .quote .amber { color: #F59E0B; }
+    .lock-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 50px;
+      position: relative; z-index: 2;
+    }
+    .thread {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 10px;
+      padding: 14px 22px;
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+    }
+    .thread.waiting { opacity: 0.5; }
+    .lock {
+      background: #1A1A2E;
+      border: 2px solid #F59E0B;
+      border-radius: 50%;
+      width: 96px;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      color: #F59E0B;
+      font-weight: 800;
+    }
+    .source {
+      font-size: 26px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      position: relative; z-index: 2;
+    }
+    .source .name { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">THE GIL ANALOGY</div>
+    <div class="quote-mark">"</div>
+    <div class="quote">
+      你就是你所有 AI Agent<br/>
+      的那把 <span class="amber">GIL</span>
+    </div>
+    <div class="lock-row">
+      <div class="thread waiting">Agent 1</div>
+      <div class="thread waiting">Agent 2</div>
+      <div class="lock">🔒</div>
+      <div class="thread waiting">Agent 3</div>
+      <div class="thread waiting">…20</div>
+    </div>
+    <div class="source"><span class="name">Addy Osmani</span> · 全局解释器锁，只有一把</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      color: #FFFFFF;
+    }
+    .h1 .red { color: #EF4444; }
+    .h1 .ne { color: #F59E0B; }
+    .equation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 44px;
+    }
+    .side {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .side.busy {
+      border-left: 4px solid #F59E0B;
+    }
+    .side.prod {
+      border-left: 4px solid #EF4444;
+    }
+    .side-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .side-val {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .side.busy .side-val { color: #F59E0B; }
+    .side.prod .side-val { color: #EF4444; }
+    .side-desc {
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+    .neq {
+      font-size: 64px;
+      color: #EF4444;
+      font-weight: 800;
+    }
+    .debt-card {
+      background: #1A1A2E;
+      border-left: 4px solid #EF4444;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 12px;
+      padding: 30px 32px;
+      width: 100%;
+      text-align: left;
+    }
+    .debt-title {
+      font-size: 26px;
+      color: #EF4444;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .debt-list {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .debt-list .red { color: #EF4444; }
+    .debt-list .amber { color: #F59E0B; }
+    .debt-list .gray { color: #B0B0CC; font-weight: 500; font-size: 22px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">FAILURE MODE · 内部感觉不到</div>
+    <h1 class="h1">Busy <span class="ne">≠</span> <span class="red">Productive</span></h1>
+    <div class="equation">
+      <div class="side busy">
+        <div class="side-label">FEELING</div>
+        <div class="side-val">20×</div>
+        <div class="side-desc">Agent 在跑<br/>dashboard 满满当当</div>
+      </div>
+      <div class="neq">≠</div>
+      <div class="side prod">
+        <div class="side-label">SHIPPED</div>
+        <div class="side-val">？</div>
+        <div class="side-desc">真正 merge 进主分支<br/>的好代码</div>
+      </div>
+    </div>
+    <div class="debt-card">
+      <div class="debt-title">不付税 · 同时累积两笔债</div>
+      <div class="debt-list">
+        <span class="amber">技术债</span> + <span class="red">认知债</span><br/>
+        <span class="gray">心智模型悄悄过期，production 炸了那天一次性结账</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

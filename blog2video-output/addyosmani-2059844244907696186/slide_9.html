@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .quote-mark {
+      font-size: 200px;
+      color: #F59E0B;
+      line-height: 0.5;
+      font-family: Georgia, serif;
+      margin-bottom: 50px;
+      position: relative; z-index: 2;
+    }
+    .quote-en {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #B0B0CC;
+      margin-bottom: 36px;
+      font-style: italic;
+      position: relative; z-index: 2;
+    }
+    .quote-zh {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+      position: relative; z-index: 2;
+    }
+    .quote-zh .amber { color: #F59E0B; }
+    .quote-zh .red { color: #EF4444; }
+    .source {
+      font-size: 26px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      position: relative; z-index: 2;
+    }
+    .source .name { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="quote-mark">"</div>
+    <div class="quote-en">
+      Orchestrating is not the real work.<br/>
+      It's the overhead around the work.
+    </div>
+    <div class="quote-zh">
+      <span class="amber">编排</span>不是真正的工作，<br/>
+      是工作周围的<span class="red">开销</span>
+    </div>
+    <div class="source"><span class="name">Addy Osmani</span> · Google Cloud AI</div>
+  </div>
+</body>
+</html>

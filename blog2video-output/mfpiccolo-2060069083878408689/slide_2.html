@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 56px;
+      line-height: 1.2;
+    }
+    .title .amber { color: #F59E0B; }
+    .frameworks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      width: 100%;
+      margin-bottom: 64px;
+    }
+    .fw {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 16px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .verdict {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      text-align: left;
+    }
+    .verdict-label {
+      font-size: 20px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .verdict-text {
+      font-size: 38px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .verdict-text .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">主流做法：<span class="amber">挑一个，整体装进去</span></div>
+    <div class="frameworks">
+      <div class="fw">LangChain</div>
+      <div class="fw">LangGraph</div>
+      <div class="fw">OpenAI Agents SDK</div>
+      <div class="fw">Anthropic SDK</div>
+      <div class="fw">CrewAI</div>
+      <div class="fw">AutoGen</div>
+    </div>
+    <div class="verdict">
+      <div class="verdict-label">M I K E 的判断</div>
+      <div class="verdict-text">这个<span class="red">形状本身</span>就错了</div>
+    </div>
+  </div>
+</body>
+</html>

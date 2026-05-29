@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 38px;
+      line-height: 1.25;
+    }
+    .title .amber { color: #F59E0B; }
+    .anchor {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 26px 30px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    .anchor-label {
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #8B5CF6;
+    }
+    .anchor-text {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .anchor.action { border-left-color: #F59E0B; }
+    .anchor.action .anchor-label { color: #F59E0B; }
+    .anchor-text .amber { color: #F59E0B; }
+    .anchor-text .purple { color: #8B5CF6; }
+    .brand {
+      margin-top: auto;
+      padding-top: 28px;
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .brand .accent { color: #8B5CF6; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">合 在 一 起 看</div>
+    <div class="title">主流框架 vs Mike：<span class="amber">主语不一样</span></div>
+    <div class="anchor">
+      <div class="anchor-label">记 忆 锚 点 · 1</div>
+      <div class="anchor-text">Harness 不是<span class="purple"> import</span> 的框架<br>是你装的几个 <span class="amber">Worker</span></div>
+    </div>
+    <div class="anchor">
+      <div class="anchor-label">记 忆 锚 点 · 2</div>
+      <div class="anchor-text">thin / thick 不是分叉路<br>是同一根<span class="amber"> 滑块 </span>上的两个位置</div>
+    </div>
+    <div class="anchor action">
+      <div class="anchor-label">下 次 想 重 写 时 · 先 问</div>
+      <div class="anchor-text">是真的要重写<br>还是只要<span class="amber">换掉一个 Worker</span>？</div>
+    </div>
+    <div class="brand">
+      <span class="accent">精读AI</span> · AI 世界很吵，精读一篇，胜过刷一百条
+    </div>
+  </div>
+</body>
+</html>

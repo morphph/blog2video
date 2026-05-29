@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+    .title .amber { color: #F59E0B; }
+    .subtitle {
+      font-size: 24px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      width: 100%;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-align: left;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.35;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .item .idx {
+      color: #8B5CF6;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .item.blue { border-left-color: #3B82F6; }
+    .item.blue .idx { color: #3B82F6; }
+    .item.amber { border-left-color: #F59E0B; }
+    .item.amber .idx { color: #F59E0B; }
+    .item.green { border-left-color: #10B981; }
+    .item.green .idx { color: #10B981; }
+    .item.red { border-left-color: #EF4444; }
+    .item.red .idx { color: #EF4444; }
+    .total {
+      margin-top: 32px;
+      font-size: 38px;
+      font-weight: 800;
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">剩下的 <span class="amber">11 件</span> job</div>
+    <div class="subtitle">P R O D U C T I O N · A G E N T · H A R N E S S</div>
+    <div class="list">
+      <div class="item"><span class="idx">05</span>加载 / 提供 skill 说明</div>
+      <div class="item"><span class="idx">06</span>组装 system prompt</div>
+      <div class="item blue"><span class="idx">07</span>token 流式吐前端</div>
+      <div class="item red"><span class="idx">08</span>tool call 过 policy</div>
+      <div class="item red"><span class="idx">09</span>挂起人工审批 / 路由回调</div>
+      <div class="item amber"><span class="idx">10</span>追踪预算消耗</div>
+      <div class="item"><span class="idx">11</span>前后跑 hook（日志/脱敏）</div>
+      <div class="item green"><span class="idx">12</span>session 持久化为分支树</div>
+      <div class="item"><span class="idx">13</span>context 满时做压缩</div>
+      <div class="item blue"><span class="idx">14</span>事件流推前端</div>
+      <div class="item blue"><span class="idx">15</span>OpenTelemetry 全链路 trace</div>
+      <div class="item amber" style="border-left-color:#F59E0B"><span class="idx">∑</span><span style="font-weight:800; color:#F59E0B">共 15 件</span></div>
+    </div>
+  </div>
+</body>
+</html>

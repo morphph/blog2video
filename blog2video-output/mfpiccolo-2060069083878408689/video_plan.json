@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How to build your own agent harness???",
+    "title_zh": "Agent Harness 不该是框架，是 11 个可换的 Worker？",
+    "word_count": 5500,
+    "slug": "mfpiccolo-2060069083878408689"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇是一个连贯的论证（framework 打包 → 15 个 job → Worker 组合 → 滑块 → 真实重构证据 → tradeoff → 合在一起看），拆开任何一段都会让"composition 是 substrate"这个核心论点失去支撑。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Agent Harness 不该是框架，是 11 个可换的 Worker？"
+      }
+    ]
+  }
+}

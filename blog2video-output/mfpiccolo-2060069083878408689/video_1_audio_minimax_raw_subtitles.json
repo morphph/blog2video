@@ -1,0 +1,932 @@
+[
+  {
+    "text": "你在 LangChain 上搭了三个月的 Agent，开始想推倒重来。你以为是自己技术选型错了，下一次换 CrewAI，换自家 SDK，半年后又想换一次。这个循环不是你团队的问题。",
+    "pronounce_text": "你在LangChain上搭了三个月的Agent，开始想推倒重来。你以为是自己技术选型错了，下一次换CrewAI，换自家SDK，半年后又想换一次。这个循环不是你团队的问题。",
+    "time_begin": 0,
+    "time_end": 15852.108843537415,
+    "text_begin": 0,
+    "text_end": 90,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 85
+  },
+  {
+    "text": "iii.dev 创始人 Mike Piccolo 把它拆开了——harness 从来不是一个 framework，是 15 个独立的 production job，你只是被框架忽悠你打包了。",
+    "pronounce_text": "iii点de v创始人Mike Piccolo把它拆开了。harness从来不是一个framework，是十五个独立的production job，你只是被框架忽悠你打包了。",
+    "time_begin": 16020,
+    "time_end": 27053.968253968254,
+    "text_begin": 90,
+    "text_end": 185,
+    "pronounce_text_begin": 85,
+    "pronounce_text_end": 172
+  },
+  {
+    "text": "我先把 Mike 文章的起点抛给你。",
+    "pronounce_text": "我先把Mike文章的起点抛给你。",
+    "time_begin": 27216,
+    "time_end": 29414.775510204083,
+    "text_begin": 185,
+    "text_end": 203,
+    "pronounce_text_begin": 172,
+    "pronounce_text_end": 188
+  },
+  {
+    "text": "今天主流的做法是什么？LangChain、LangGraph、OpenAI Agents SDK、Anthropic SDK、CrewAI、AutoGen——你挑一个，把它整体装进项目里。",
+    "pronounce_text": "今天主流的做法是什么？LangChain、LangGraph、OpenAI Agents SDK、Anthropic SDK、CrewAI、AutoGen。你挑一个，把它整体装进项目里。",
+    "time_begin": 29556,
+    "time_end": 43399.58276643991,
+    "text_begin": 203,
+    "text_end": 297,
+    "pronounce_text_begin": 188,
+    "pronounce_text_end": 281
+  },
+  {
+    "text": "这一个决定，等于一次性接受了它内置的循环、它内置的工具、它内置的记忆、它内置的编排。",
+    "pronounce_text": "这一个决定，等于一次性接受了它内置的循环、它内置的工具、它内置的记忆、它内置的编排。",
+    "time_begin": 43599.58276643991,
+    "time_end": 51940.03628117914,
+    "text_begin": 297,
+    "text_end": 339,
+    "pronounce_text_begin": 281,
+    "pronounce_text_end": 323
+  },
+  {
+    "text": "听起来很方便。但 Mike 给的判断是这个形状本身就错了。",
+    "pronounce_text": "听起来很方便。但Mike给的判断是这个形状本身就错了。",
+    "time_begin": 52092,
+    "time_end": 57402.249433106575,
+    "text_begin": 339,
+    "text_end": 368,
+    "pronounce_text_begin": 323,
+    "pronounce_text_end": 350
+  },
+  {
+    "text": "为什么？因为 Harness 根本不是一件东西。它是十几件不同的事情被打包到了一起。打包的原因不是它们天然属于一起，而是底层基础设施没给你一个把它们拆开的办法。",
+    "pronounce_text": "为什么？因为Harness根本不是一件东西。它是十几件不同的事情被打包到了一起。打包的原因不是它们天然属于一起，而是底层基础设施没给你一个把它们拆开的办法。",
+    "time_begin": 57564,
+    "time_end": 69875.06575963719,
+    "text_begin": 368,
+    "text_end": 448,
+    "pronounce_text_begin": 350,
+    "pronounce_text_end": 428
+  },
+  {
+    "text": "所以一年之后，几乎每个长跑的 Agent 团队都会发现同一个问题。你想要的 policy engine，不是框架里的那个 policy engine。你想要的 approval UI，不是框架内置的 chat surface。",
+    "pronounce_text": "所以一年之后，几乎每个长跑的Agent团队都会发现同一个问题。你想要的policy engine，不是框架里的那个policy engine。你想要的approval UI，不是框架内置的chat surface。",
+    "time_begin": 70020,
+    "time_end": 83654.60317460318,
+    "text_begin": 448,
+    "text_end": 561,
+    "pronounce_text_begin": 428,
+    "pronounce_text_end": 535
+  },
+  {
+    "text": "你想要的预算追踪器，不在框架的可观测链路里。",
+    "pronounce_text": "你想要的预算追踪器，不在框架的可观测链路里。",
+    "time_begin": 83808,
+    "time_end": 88096.57142857143,
+    "text_begin": 561,
+    "text_end": 583,
+    "pronounce_text_begin": 535,
+    "pronounce_text_end": 557
+  },
+  {
+    "text": "然后呢？你只有三个选择。fork 它，跟它对着干，或者绕开它。最后大家都走到了第四条路——把整个 Harness 推倒重写。",
+    "pronounce_text": "然后呢？你只有三个选择。fork它，跟它对着干，或者绕开它。最后大家都走到了第四条路。把整个Harness推倒重写。",
+    "time_begin": 88236,
+    "time_end": 99862.07709750567,
+    "text_begin": 583,
+    "text_end": 645,
+    "pronounce_text_begin": 557,
+    "pronounce_text_end": 615
+  },
+  {
+    "text": "那 Harness 里到底装了多少件事？",
+    "pronounce_text": "那Harness里到底装了多少件事？",
+    "time_begin": 100008,
+    "time_end": 102288.04535147392,
+    "text_begin": 645,
+    "text_end": 665,
+    "pronounce_text_begin": 615,
+    "pronounce_text_end": 633
+  },
+  {
+    "text": "Mike 在文章里列了一份非常具体的清单。一份生产级 Agent Harness，剥到只剩责任，大概有 15 件事。",
+    "pronounce_text": "Mike在文章里列了一份非常具体的清单。一份生产级Agent Harness，剥到只剩责任，大概有十五件事。",
+    "time_begin": 102456,
+    "time_end": 111736.86167800454,
+    "text_begin": 665,
+    "text_end": 723,
+    "pronounce_text_begin": 633,
+    "pronounce_text_end": 687
+  },
+  {
+    "text": "我念几条给你听，你感受一下它们之间的关系。",
+    "pronounce_text": "我念几条给你听，你感受一下它们之间的关系。",
+    "time_begin": 111888,
+    "time_end": 115027.1836734694,
+    "text_begin": 723,
+    "text_end": 744,
+    "pronounce_text_begin": 687,
+    "pronounce_text_end": 708
+  },
+  {
+    "text": "接收前端发来的 turn 请求，把它持久化。解析当前要调用的那个模型对应的 credentials。查这个模型到底支不支持 vision、能不能流式、context window 多大。",
+    "pronounce_text": "接收前端发来的turn请求，把它持久化。解析当前要调用的那个模型对应的credentials。查这个模型到底支不支持vision、能不能流式、context window多大。",
+    "time_begin": 115164,
+    "time_end": 127602.77551020408,
+    "text_begin": 744,
+    "text_end": 837,
+    "pronounce_text_begin": 708,
+    "pronounce_text_end": 796
+  },
+  {
+    "text": "驱动每一轮对话的状态机——从分配资源、流式吐 token、跑工具调用、决定是否继续、到收尾。",
+    "pronounce_text": "驱动每一轮对话的状态机。从分配资源、流式吐token、跑工具调用、决定是否继续、到收尾。",
+    "time_begin": 127764,
+    "time_end": 137300.2811791383,
+    "text_begin": 837,
+    "text_end": 883,
+    "pronounce_text_begin": 796,
+    "pronounce_text_end": 840
+  },
+  {
+    "text": "加载并提供每个函数的 skill 说明——这个工具的请求是什么形状、错误码是什么、用法注意事项。",
+    "pronounce_text": "加载并提供每个函数的skill说明。这个工具的请求是什么形状、错误码是什么、用法注意事项。",
+    "time_begin": 137448,
+    "time_end": 146903.0113378685,
+    "text_begin": 883,
+    "text_end": 931,
+    "pronounce_text_begin": 840,
+    "pronounce_text_end": 885
+  },
+  {
+    "text": "组装系统提示词，要拼模式段、要拼身份前缀、要拼工作目录、要拼默认 skill 索引。",
+    "pronounce_text": "组装系统提示词，要拼模式段、要拼身份前缀、要拼工作目录、要拼默认skill索引。",
+    "time_begin": 147103.0113378685,
+    "time_end": 155791.7641723356,
+    "text_begin": 931,
+    "text_end": 973,
+    "pronounce_text_begin": 885,
+    "pronounce_text_end": 925
+  },
+  {
+    "text": "把 token 流式吐给前端。在工具调用真正执行前，过一遍 policy。需要人工审批的工具，挂起来等人决定，决定回来之后路由到正确的那一轮对话上。",
+    "pronounce_text": "把token流式吐给前端。在工具调用真正执行前，过一遍policy。需要人工审批的工具，挂起来等人决定，决定回来之后路由到正确的那一轮对话上。",
+    "time_begin": 155952,
+    "time_end": 170143.8820861678,
+    "text_begin": 973,
+    "text_end": 1047,
+    "pronounce_text_begin": 925,
+    "pronounce_text_end": 996
+  },
+  {
+    "text": "追踪每个 workspace、每个 Agent 的预算消耗。在工具调用前后跑 hook，做日志、做脱敏、做副作用。把 session 持久化成一棵分支树，这样你能 fork、能 resume。context 满了的时候做压缩。",
+    "pronounce_text": "追踪每个workspace、每个Agent的预算消耗。在工具调用前后跑hook，做日志、做脱敏、做副作用。把session持久化成一棵分支树，这样你能fork、能resume。context满了的时候做压缩。",
+    "time_begin": 170280,
+    "time_end": 186724.21768707482,
+    "text_begin": 1047,
+    "text_end": 1160,
+    "pronounce_text_begin": 996,
+    "pronounce_text_end": 1100
+  },
+  {
+    "text": "往前端推一条事件流。最后一条，把一整条 OpenTelemetry trace 串到底，让你能 debug。",
+    "pronounce_text": "往前端推一条事件流。最后一条，把一整条OpenTelemetry trace串到底，让你能debug。",
+    "time_begin": 186876,
+    "time_end": 194961.03401360544,
+    "text_begin": 1160,
+    "text_end": 1214,
+    "pronounce_text_begin": 1100,
+    "pronounce_text_end": 1151
+  },
+  {
+    "text": "15 件事。",
+    "pronounce_text": "十五件事。",
+    "time_begin": 195120,
+    "time_end": 196331.92743764172,
+    "text_begin": 1214,
+    "text_end": 1220,
+    "pronounce_text_begin": 1151,
+    "pronounce_text_end": 1156
+  },
+  {
+    "text": "Mike 的观察是这样的。所有严肃的 Agent Harness 都做了其中大部分。贵的那些都做了。便宜的那些是先省了几件，到生产里再补上。",
+    "pronounce_text": "Mike的观察是这样的。所有严肃的Agent Harness都做了其中大部分。贵的那些都做了。便宜的那些是先省了几件，到生产里再补上。",
+    "time_begin": 196488,
+    "time_end": 207777.38775510204,
+    "text_begin": 1220,
+    "text_end": 1290,
+    "pronounce_text_begin": 1156,
+    "pronounce_text_end": 1223
+  },
+  {
+    "text": "而框架的做法是——把这 15 件事打成一个 monolith，每件事只 ship 一个版本。",
+    "pronounce_text": "而框架的做法是。把这十五件事打成一个monolith，每件事只ship一个版本。",
+    "time_begin": 207977.38775510204,
+    "time_end": 215505.14285714287,
+    "text_begin": 1290,
+    "text_end": 1336,
+    "pronounce_text_begin": 1223,
+    "pronounce_text_end": 1263
+  },
+  {
+    "text": "最后那句是关键。当你一年后发现框架内置的 policy engine 不是你想要的那个，你为了换它，得把整个 Harness 一起换走。",
+    "pronounce_text": "最后那句是关键。当你一年后发现框架内置的policy engine不是你想要的那个，你为了换它，得把整个Harness一起换走。",
+    "time_begin": 215676,
+    "time_end": 225514.14058956917,
+    "text_begin": 1336,
+    "text_end": 1404,
+    "pronounce_text_begin": 1263,
+    "pronounce_text_end": 1327
+  },
+  {
+    "text": "那 iii 这套架构是怎么做的？",
+    "pronounce_text": "那iii这套架构是怎么做的？",
+    "time_begin": 225684,
+    "time_end": 228056.92517006802,
+    "text_begin": 1404,
+    "text_end": 1420,
+    "pronounce_text_begin": 1327,
+    "pronounce_text_end": 1341
+  },
+  {
+    "text": "它把这 15 件事每一件都拆成一个独立的 Worker。每个 Worker 是一个独立进程，通过 WebSocket 连到一个共享的 engine bus。每个 Worker 在 bus 上注册一些函数，注册一些触发器。",
+    "pronounce_text": "它把这十五件事每一件都拆成一个独立的Worker。每个Worker是一个独立进程，通过WebSocket连到一个共享的engine bus。每个Worker在bus上注册一些函数，注册一些触发器。",
+    "time_begin": 228204,
+    "time_end": 241536.74376417234,
+    "text_begin": 1420,
+    "text_end": 1530,
+    "pronounce_text_begin": 1341,
+    "pronounce_text_end": 1439
+  },
+  {
+    "text": "所有 Worker 之间互相调用，只用一个原语——iii.trigger。",
+    "pronounce_text": "所有Worker之间互相调用，只用一个原语。iii.trigger。",
+    "time_begin": 241704,
+    "time_end": 247826.947845805,
+    "text_begin": 1530,
+    "text_end": 1567,
+    "pronounce_text_begin": 1439,
+    "pronounce_text_end": 1473
+  },
+  {
+    "text": "我重复一下这个判断，因为它是文章的核心。Harness 不是你 import 的一个 SDK。Harness 是你装的一组 Worker。它们跑在同一条 bus 上，每一个都可以独立替换，每一个都有独立版本号。",
+    "pronounce_text": "我重复一下这个判断，因为它是文章的核心。Harness不是你import的一个SDK。Harness是你装的一组Worker。它们跑在同一条bus上，每一个都可以独立替换，每一个都有独立版本号。",
+    "time_begin": 247968,
+    "time_end": 263262.8299319728,
+    "text_begin": 1567,
+    "text_end": 1672,
+    "pronounce_text_begin": 1473,
+    "pronounce_text_end": 1570
+  },
+  {
+    "text": "而且 Mike 强调了一句让我印象很深的话——这些 Worker 跟你业务逻辑里的 Worker 用的是同一套原语。换句话说，Harness 不是一个\"特殊的东西\"，它跟你自己写的应用 Worker 完全平起平坐。",
+    "pronounce_text": "而且Mike强调了一句让我印象很深的话。这些Worker跟你业务逻辑里的Worker用的是同一套原语。换句话说，Harness不是一个\"特殊的东西\"，它跟你自己写的应用Worker完全平起平坐。",
+    "time_begin": 263412,
+    "time_end": 278242.43083900225,
+    "text_begin": 1672,
+    "text_end": 1779,
+    "pronounce_text_begin": 1570,
+    "pronounce_text_end": 1667
+  },
+  {
+    "text": "那\"build your own harness\"这件事，就被压缩成了一个非常小的操作——你不是 fork 一个框架，你是换掉几个 Worker。",
+    "pronounce_text": "那\"build your own harness\"这件事，就被压缩成了一个非常小的操作。你不是fork一个框架，你是换掉几个Worker。",
+    "time_begin": 278388,
+    "time_end": 287715.3015873016,
+    "text_begin": 1779,
+    "text_end": 1852,
+    "pronounce_text_begin": 1667,
+    "pronounce_text_end": 1736
+  },
+  {
+    "text": "光这么说有点抽象。Mike 在文章里直接走了一遍——一轮对话在他们的 11 个 Worker 之间是怎么流动的。我挑最有信息量的几步给你讲。",
+    "pronounce_text": "光这么说有点抽象。Mike在文章里直接走了一遍。一轮对话在他们的十一个Worker之间是怎么流动的。我挑最有信息量的几步给你讲。",
+    "time_begin": 287856,
+    "time_end": 297996,
+    "text_begin": 1852,
+    "text_end": 1922,
+    "pronounce_text_begin": 1736,
+    "pronounce_text_end": 1800
+  },
+  {
+    "text": "前端发一个 turn 请求过来，最先到的是一个叫 harness 的元 Worker。它把请求转给 turn-orchestrator。",
+    "pronounce_text": "前端发一个turn请求过来，最先到的是一个叫harness的元Worker。它把请求转给turn-orchestrator。",
+    "time_begin": 298152,
+    "time_end": 305598.48526077095,
+    "text_begin": 1922,
+    "text_end": 1990,
+    "pronounce_text_begin": 1800,
+    "pronounce_text_end": 1862
+  },
+  {
+    "text": "为什么要多这一跳？因为 OpenTelemetry 的 trace 要在这里把 session_id 和 message_id 注入成 baggage。之后所有 Worker 之间互相调用，这两个 ID 会自动跟着传。",
+    "pronounce_text": "为什么要多这一跳？因为OpenTelemetry的trace要在这里把session，id和message，id注入成baggage。之后所有Worker之间互相调用，这两个ID会自动跟着传。",
+    "time_begin": 305748,
+    "time_end": 319254.8934240363,
+    "text_begin": 1990,
+    "text_end": 2099,
+    "pronounce_text_begin": 1862,
+    "pronounce_text_end": 1958
+  },
+  {
+    "text": "最后你在 trace UI 里看到的是一棵完整连通的图，而不是一堆断开的片段。",
+    "pronounce_text": "最后你在trace UI里看到的是一棵完整连通的图，而不是一堆断开的片段。",
+    "time_begin": 319392,
+    "time_end": 324795.1292517007,
+    "text_begin": 2099,
+    "text_end": 2138,
+    "pronounce_text_begin": 1958,
+    "pronounce_text_end": 1995
+  },
+  {
+    "text": "turn-orchestrator 接到请求之后做什么？它把状态写到 iii state 的一个固定路径下，然后立刻返回。真正的工作是在一个可持久的状态机里跑，由队列里的消息驱动一步一步前进。",
+    "pronounce_text": "turn-orchestrator接到请求之后做什么？它把状态写到iii state的一个固定路径下，然后立刻返回。真正的工作是在一个可持久的状态机里跑，由队列里的消息驱动一步一步前进。",
+    "time_begin": 324936,
+    "time_end": 339162.7120181406,
+    "text_begin": 2138,
+    "text_end": 2234,
+    "pronounce_text_begin": 1995,
+    "pronounce_text_end": 2088
+  },
+  {
+    "text": "provisioning 这一步做三件事。它启动一个微型沙箱给工具执行用。它去 iii-directory 那个 Worker 预下载这次需要的 skill。",
+    "pronounce_text": "provisioning这一步做三件事。它启动一个微型沙箱给工具执行用。它去iii-directory那个Worker预下载这次需要的skill。",
+    "time_begin": 339300,
+    "time_end": 350589.387755102,
+    "text_begin": 2234,
+    "text_end": 2313,
+    "pronounce_text_begin": 2088,
+    "pronounce_text_end": 2161
+  },
+  {
+    "text": "然后它组装系统提示词——拼模式段、拼身份前缀、拼 skill 索引。",
+    "pronounce_text": "然后它组装系统提示词。拼模式段、拼身份前缀、拼skill索引。",
+    "time_begin": 350789.387755102,
+    "time_end": 356912.33560090704,
+    "text_begin": 2313,
+    "text_end": 2347,
+    "pronounce_text_begin": 2161,
+    "pronounce_text_end": 2192
+  },
+  {
+    "text": "然后是 assistant_streaming。orchestrator 调 provider 那个 Worker——比如 provider-anthropic、provider-openai、provider-kimi——让它去拉 SSE 流。",
+    "pronounce_text": "然后是assistant，streaming。orchestrator调provider那个Worker。比如provider-anthropic、provider-openai、provider-kimi。让它去拉SSE流。",
+    "time_begin": 357084,
+    "time_end": 371183.00226757367,
+    "text_begin": 2347,
+    "text_end": 2470,
+    "pronounce_text_begin": 2192,
+    "pronounce_text_end": 2305
+  },
+  {
+    "text": "provider 自己去 auth-credentials 那个 Worker 拿 token。",
+    "pronounce_text": "provider自己去auth-credentials那个Worker拿token。",
+    "time_begin": 371383.00226757367,
+    "time_end": 375288.44444444444,
+    "text_begin": 2470,
+    "text_end": 2518,
+    "pronounce_text_begin": 2305,
+    "pronounce_text_end": 2347
+  },
+  {
+    "text": "流式数据一边吐回 orchestrator，一边推给前端。",
+    "pronounce_text": "流式数据一边吐回orchestrator，一边推给前端。",
+    "time_begin": 375444,
+    "time_end": 379303.00226757367,
+    "text_begin": 2518,
+    "text_end": 2547,
+    "pronounce_text_begin": 2347,
+    "pronounce_text_end": 2375
+  },
+  {
+    "text": "每个 Worker 各管一件事。它们之间不互相 import，只通过 bus 上的函数名互相调用。",
+    "pronounce_text": "每个Worker各管一件事。它们之间不互相import，只通过bus上的函数名互相调用。",
+    "time_begin": 379440,
+    "time_end": 386120.2267573696,
+    "text_begin": 2547,
+    "text_end": 2596,
+    "pronounce_text_begin": 2375,
+    "pronounce_text_end": 2419
+  },
+  {
+    "text": "我觉得整篇文章最值得讲的一段，是工具调用经过的那道门。",
+    "pronounce_text": "我觉得整篇文章最值得讲的一段，是工具调用经过的那道门。",
+    "time_begin": 386280,
+    "time_end": 391381.2698412698,
+    "text_begin": 2596,
+    "text_end": 2623,
+    "pronounce_text_begin": 2419,
+    "pronounce_text_end": 2446
+  },
+  {
+    "text": "每一个工具调用，不管来自哪个模型、不管最后要打哪个函数，都要先过一个统一的入口。这个入口直接调 policy::check_permissions——一个 5 秒超时的同步调用。",
+    "pronounce_text": "每一个工具调用，不管来自哪个模型、不管最后要打哪个函数，都要先过一个统一的入口。这个入口直接调policy:check，permissions。一个五秒超时的同步调用。",
+    "time_begin": 391536,
+    "time_end": 406528.97052154195,
+    "text_begin": 2623,
+    "text_end": 2712,
+    "pronounce_text_begin": 2446,
+    "pronounce_text_end": 2530
+  },
+  {
+    "text": "policy Worker 读一份 YAML 配置，匹配这个函数 ID，返回三个结果之一——allow、deny、或者 needs_approval。",
+    "pronounce_text": "policy Worker读一份YAML配置，匹配这个函数ID，返回三个结果之一。allow、deny、或者needs，approval。",
+    "time_begin": 406692,
+    "time_end": 418236.8072562358,
+    "text_begin": 2712,
+    "text_end": 2787,
+    "pronounce_text_begin": 2530,
+    "pronounce_text_end": 2599
+  },
+  {
+    "text": "allow，直接派发，工具跑，结果写回去。deny，短路掉，把拒绝信封写回结果。needs_approval，这一个调用挂到这一轮的\"等待审批\"列表里。",
+    "pronounce_text": "allow，直接派发，工具跑，结果写回去。deny，短路掉，把拒绝信封写回结果。needs，approval，这一个调用挂到这一轮的\"等待审批\"列表里。",
+    "time_begin": 418392,
+    "time_end": 433350.1405895692,
+    "text_begin": 2787,
+    "text_end": 2863,
+    "pronounce_text_begin": 2599,
+    "pronounce_text_end": 2675
+  },
+  {
+    "text": "批次里的其他调用继续派发，不卡住其他工具。",
+    "pronounce_text": "批次里的其他调用继续派发，不卡住其他工具。",
+    "time_begin": 433550.1405895692,
+    "time_end": 437200.1632653061,
+    "text_begin": 2863,
+    "text_end": 2884,
+    "pronounce_text_begin": 2675,
+    "pronounce_text_end": 2696
+  },
+  {
+    "text": "只有当至少一个调用还在等审批，这一轮的状态才转到 function_awaiting_approval。",
+    "pronounce_text": "只有当至少一个调用还在等审批，这一轮的状态才转到function，awaiting，approval。",
+    "time_begin": 437364,
+    "time_end": 444299.6462585034,
+    "text_begin": 2884,
+    "text_end": 2936,
+    "pronounce_text_begin": 2696,
+    "pronounce_text_end": 2747
+  },
+  {
+    "text": "这里有个细节我觉得设计得非常聪明。",
+    "pronounce_text": "这里有个细节我觉得设计得非常聪明。",
+    "time_begin": 444456,
+    "time_end": 446701.2154195011,
+    "text_begin": 2936,
+    "text_end": 2953,
+    "pronounce_text_begin": 2747,
+    "pronounce_text_end": 2764
+  },
+  {
+    "text": "orchestrator 全局只注册了一个触发器——turn::on_approval。它监听的是 approvals/ 这个 scope 下的所有写入。当用户在控制台点了批准，approval-gate Worker 把决定写到 iii state 里。",
+    "pronounce_text": "orchestrator全局只注册了一个触发器。turn:on，approval。它监听的是approvals，这个scope下的所有写入。当用户在控制台点了批准，approval-gate Worker把决定写到iii state里。",
+    "time_begin": 446868,
+    "time_end": 463834.6666666667,
+    "text_begin": 2953,
+    "text_end": 3081,
+    "pronounce_text_begin": 2764,
+    "pronounce_text_end": 2882
+  },
+  {
+    "text": "这个写入立刻 fire 那个全局触发器，触发器把对应的 session 唤醒，那一轮对话从挂起的地方继续往前。",
+    "pronounce_text": "这个写入立刻fire那个全局触发器，触发器把对应的session唤醒，那一轮对话从挂起的地方继续往前。",
+    "time_begin": 464004,
+    "time_end": 472135.4739229025,
+    "text_begin": 3081,
+    "text_end": 3136,
+    "pronounce_text_begin": 2882,
+    "pronounce_text_end": 2933
+  },
+  {
+    "text": "为什么这个设计聪明？因为它替代的是另一种很自然但很难维护的方案——每一个挂起的调用单独注册一个唤醒触发器。",
+    "pronounce_text": "为什么这个设计聪明？因为它替代的是另一种很自然但很难维护的方案。每一个挂起的调用单独注册一个唤醒触发器。",
+    "time_begin": 472284,
+    "time_end": 482075.70068027213,
+    "text_begin": 3136,
+    "text_end": 3189,
+    "pronounce_text_begin": 2933,
+    "pronounce_text_end": 2985
+  },
+  {
+    "text": "那种方案的问题是，你重启服务之后要扫一遍所有挂起的状态，重新注册所有触发器。",
+    "pronounce_text": "那种方案的问题是，你重启服务之后要扫一遍所有挂起的状态，重新注册所有触发器。",
+    "time_begin": 482275.70068027213,
+    "time_end": 489977.60544217686,
+    "text_begin": 3189,
+    "text_end": 3227,
+    "pronounce_text_begin": 2985,
+    "pronounce_text_end": 3023
+  },
+  {
+    "text": "Mike 这个版本不需要。一个全局触发器覆盖所有 session。",
+    "pronounce_text": "Mike这个版本不需要。一个全局触发器覆盖所有session。",
+    "time_begin": 490140,
+    "time_end": 494939.410430839,
+    "text_begin": 3227,
+    "text_end": 3260,
+    "pronounce_text_begin": 3023,
+    "pronounce_text_end": 3054
+  },
+  {
+    "text": "而且这套机制是\"fail-closed by construction\"。policy Worker 不可达了？5 秒超时？默认就是 deny。事件发布本身失败了？也当 deny 处理。",
+    "pronounce_text": "而且这套机制是\"fail-closed by construction\"。policy Worker不可达了？五秒超时？默认就是deny。事件发布本身失败了？也当deny处理。",
+    "time_begin": 495108,
+    "time_end": 506989.49659863947,
+    "text_begin": 3260,
+    "text_end": 3353,
+    "pronounce_text_begin": 3054,
+    "pronounce_text_end": 3142
+  },
+  {
+    "text": "我把这段拎出来讲，是因为它展示了一个具体的工程后果——当 Harness 是由 Worker 拼出来的，单一职责的 Worker 可以做得很扎实。",
+    "pronounce_text": "我把这段拎出来讲，是因为它展示了一个具体的工程后果。当Harness是由Worker拼出来的，单一职责的Worker可以做得很扎实。",
+    "time_begin": 507132,
+    "time_end": 516285.15192743763,
+    "text_begin": 3353,
+    "text_end": 3426,
+    "pronounce_text_begin": 3142,
+    "pronounce_text_end": 3208
+  },
+  {
+    "text": "接下来是 Mike 论点里我最喜欢的一节。",
+    "pronounce_text": "接下来是Mike论点里我最喜欢的一节。",
+    "time_begin": 516456,
+    "time_end": 519119.1746031746,
+    "text_begin": 3426,
+    "text_end": 3447,
+    "pronounce_text_begin": 3208,
+    "pronounce_text_end": 3227
+  },
+  {
+    "text": "行业里讨论 Agent Harness 有一个长期的二元对立——Anthropic 派的 thin loop 极简主义，对阵 LangGraph 派的 explicit DAG 复杂主义。这个对立的前提是你必须选一边。",
+    "pronounce_text": "行业里讨论Agent Harness有一个长期的二元对立。Anthropic派的thin loop极简主义，对阵LangGraph派的explicit DAG复杂主义。这个对立的前提是你必须选一边。",
+    "time_begin": 519264,
+    "time_end": 533618.4217687075,
+    "text_begin": 3447,
+    "text_end": 3556,
+    "pronounce_text_begin": 3227,
+    "pronounce_text_end": 3326
+  },
+  {
+    "text": "Mike 说，当 Harness 是 Worker 拼出来的时候，thin 和 thick 不是一道选择题，它是一根滑块。",
+    "pronounce_text": "Mike说，当Harness是Worker拼出来的时候，thin和thick不是一道选择题，它是一根滑块。",
+    "time_begin": 533772,
+    "time_end": 541218.485260771,
+    "text_begin": 3556,
+    "text_end": 3617,
+    "pronounce_text_begin": 3326,
+    "pronounce_text_end": 3379
+  },
+  {
+    "text": "什么叫滑块？",
+    "pronounce_text": "什么叫滑块？",
+    "time_begin": 541368,
+    "time_end": 542626.3673469388,
+    "text_begin": 3617,
+    "text_end": 3623,
+    "pronounce_text_begin": 3379,
+    "pronounce_text_end": 3385
+  },
+  {
+    "text": "thin Harness 在他这套架构里，等于 turn-orchestrator + provider + auth-credentials + 一个最小的 meta-worker——四个 Worker。",
+    "pronounce_text": "thin Harness在他这套架构里，等于turn-orchestrator加provider加auth-credentials加一个最小的meta-worker。四个Worker。",
+    "time_begin": 542772,
+    "time_end": 552482.4308390022,
+    "text_begin": 3623,
+    "text_end": 3726,
+    "pronounce_text_begin": 3385,
+    "pronounce_text_end": 3477
+  },
+  {
+    "text": "没有审批、没有预算、没有 policy、没有 hook 分发。运行任何东西。信任模型。",
+    "pronounce_text": "没有审批、没有预算、没有policy、没有hook分发。运行任何东西。信任模型。",
+    "time_begin": 552682.4308390022,
+    "time_end": 559873.4965986394,
+    "text_begin": 3726,
+    "text_end": 3769,
+    "pronounce_text_begin": 3477,
+    "pronounce_text_end": 3517
+  },
+  {
+    "text": "这种配置适合什么？自动化的研究 Agent，内部的实验循环，你不想被任何安全机制减速的场景。",
+    "pronounce_text": "这种配置适合什么？自动化的研究Agent，内部的实验循环，你不想被任何安全机制减速的场景。",
+    "time_begin": 560016,
+    "time_end": 567717.9047619047,
+    "text_begin": 3769,
+    "text_end": 3815,
+    "pronounce_text_begin": 3517,
+    "pronounce_text_end": 3562
+  },
+  {
+    "text": "thick Harness 是另一极。全部 13 个核心 Worker 上齐，再加一个自定义的 policy Worker、一个自定义的 approval-gate、一个集成到 Slack 的审批表面、一个把消费滚到 finance dashboard 的预算 Worker。",
+    "pronounce_text": "thick Harness是另一极。全部十三个核心Worker上齐，再加一个自定义的policy Worker、一个自定义的approval-gate、一个集成到Slack的审批表面、一个把消费滚到finance dashboard的预算Worker。",
+    "time_begin": 567864,
+    "time_end": 582775.7006802721,
+    "text_begin": 3815,
+    "text_end": 3953,
+    "pronounce_text_begin": 3562,
+    "pronounce_text_end": 3688
+  },
+  {
+    "text": "这种配置适合什么？给客户跑工作流的 Agent，每一次工具调用都要被审计，每一笔模型消耗都要被归账。",
+    "pronounce_text": "这种配置适合什么？给客户跑工作流的Agent，每一次工具调用都要被审计，每一笔模型消耗都要被归账。",
+    "time_begin": 582912,
+    "time_end": 592703.7006802721,
+    "text_begin": 3953,
+    "text_end": 4003,
+    "pronounce_text_begin": 3688,
+    "pronounce_text_end": 3737
+  },
+  {
+    "text": "而 thin 到 thick 之间的距离，不是一次重写。",
+    "pronounce_text": "而thin到thick之间的距离，不是一次重写。",
+    "time_begin": 592848,
+    "time_end": 596498.0226757369,
+    "text_begin": 4003,
+    "text_end": 4031,
+    "pronounce_text_begin": 3737,
+    "pronounce_text_end": 3761
+  },
+  {
+    "text": "是一个 config 文件的改动。同样的协议、同样的 trace 形状、同样的可观测故事。你往配置里加几个 Worker，你就更厚一点；你删掉几个 Worker，你就更薄一点。",
+    "pronounce_text": "是一个config文件的改动。同样的协议、同样的trace形状、同样的可观测故事。你往配置里加几个Worker，你就更厚一点;你删掉几个Worker，你就更薄一点。",
+    "time_begin": 596664,
+    "time_end": 610600.462585034,
+    "text_begin": 4031,
+    "text_end": 4119,
+    "pronounce_text_begin": 3761,
+    "pronounce_text_end": 3843
+  },
+  {
+    "text": "我读到这里的反应是——这是我看到过的对 thin-thick 之争最干净的瓦解。它不是说哪一边对，而是说这个二元对立本身就建立在一个错误的架构假设上。",
+    "pronounce_text": "我读到这里的反应是。这是我看到过的对thin-thick之争最干净的瓦解。它不是说哪一边对，而是说这个二元对立本身就建立在一个错误的架构假设上。",
+    "time_begin": 610740,
+    "time_end": 624119.1836734693,
+    "text_begin": 4119,
+    "text_end": 4194,
+    "pronounce_text_begin": 3843,
+    "pronounce_text_end": 3915
+  },
+  {
+    "text": "光说\"可以替换\"是一个口号。Mike 给了一个具体证据，证明这个解耦是真的。",
+    "pronounce_text": "光说\"可以替换\"是一个口号。Mike给了一个具体证据，证明这个解偶是真的。",
+    "time_begin": 624276,
+    "time_end": 632024.3446712018,
+    "text_begin": 4194,
+    "text_end": 4232,
+    "pronounce_text_begin": 3915,
+    "pronounce_text_end": 3952
+  },
+  {
+    "text": "最近 turn-orchestrator 自己做了一次重构。它把 FSM 从 11 个状态合并到 7 个状态，删掉了原来 per-call 注册唤醒触发器的那个老机制，换成刚才讲的那个全局 turn::on_approval。",
+    "pronounce_text": "最近turn-orchestrator自己做了一次重构。它把FSM从十一个状态合并到七个状态，删掉了原来per-call注册唤醒触发器的那个老机制，换成刚才讲的那个全局turn:on，approval。",
+    "time_begin": 632196,
+    "time_end": 645784.1632653062,
+    "text_begin": 4232,
+    "text_end": 4345,
+    "pronounce_text_begin": 3952,
+    "pronounce_text_end": 4053
+  },
+  {
+    "text": "tearing_down 那一步直接内联进 finishSession。",
+    "pronounce_text": "tearing，down那一步直接内联进finishSession。",
+    "time_begin": 645948,
+    "time_end": 649981.1519274376,
+    "text_begin": 4345,
+    "text_end": 4381,
+    "pronounce_text_begin": 4053,
+    "pronounce_text_end": 4087
+  },
+  {
+    "text": "这是 orchestrator 内部的一次重大改造。",
+    "pronounce_text": "这是orchestrator内部的一次重大改造。",
+    "time_begin": 650124,
+    "time_end": 653089.0340136054,
+    "text_begin": 4381,
+    "text_end": 4407,
+    "pronounce_text_begin": 4087,
+    "pronounce_text_end": 4111
+  },
+  {
+    "text": "结果是什么？approval-gate Worker 没动。session Worker 没动。llm-budget Worker 没动。provider 系列 Worker 没动。models-catalog 没动。auth-credentials 没动。",
+    "pronounce_text": "结果是什么？approval-gate Worker没动。session Worker没动。llm-budget Worker没动。provider系列Worker没动。models-catalog没动。auth-credentials没动。",
+    "time_begin": 653256,
+    "time_end": 669920.8072562359,
+    "text_begin": 4407,
+    "text_end": 4536,
+    "pronounce_text_begin": 4111,
+    "pronounce_text_end": 4232
+  },
+  {
+    "text": "hook-fanout 没动。context-compaction 没动。",
+    "pronounce_text": "hook-fanout 没动。context-compaction 没动。",
+    "time_begin": 670120.8072562359,
+    "time_end": 674328.1088435374,
+    "text_begin": 4536,
+    "text_end": 4573,
+    "pronounce_text_begin": 4232,
+    "pronounce_text_end": 4269
+  },
+  {
+    "text": "因为大家不互相 import，大家只调 bus 上的函数 ID。approval::resolve 这个函数 ID 没变，wire schema 没变，所有外面的 Worker 都不知道里面发生了什么。",
+    "pronounce_text": "因为大家不互相import，大家只调bus上的函数ID。approval:resolve这个函数ID没变，wire schema没变，所有外面的Worker都不知道里面发生了什么。",
+    "time_begin": 674496,
+    "time_end": 686760.6258503401,
+    "text_begin": 4573,
+    "text_end": 4674,
+    "pronounce_text_begin": 4269,
+    "pronounce_text_end": 4359
+  },
+  {
+    "text": "这个性质很特别。它意味着一个单 Worker 内部的大规模重构，和升级一个独立服务的小版本，在工程意义上是同一件事。",
+    "pronounce_text": "这个性质很特别。它意味着一个单Worker内部的大规模重构，和升级一个独立服务的小版本，在工程意义上是同一件事。",
+    "time_begin": 686916,
+    "time_end": 696069.1519274376,
+    "text_begin": 4674,
+    "text_end": 4732,
+    "pronounce_text_begin": 4359,
+    "pronounce_text_end": 4415
+  },
+  {
+    "text": "我必须给你讲代价。Mike 文章本身就有一节谈这个，我也不会跳过。",
+    "pronounce_text": "我必须给你讲代价。Mike文章本身就有一节谈这个，我也不会跳过。",
+    "time_begin": 696240,
+    "time_end": 701770.8390022676,
+    "text_begin": 4732,
+    "text_end": 4765,
+    "pronounce_text_begin": 4415,
+    "pronounce_text_end": 4447
+  },
+  {
+    "text": "第一，复杂度前置。13 个 Worker 各跑一个进程、走 WebSocket、注册到 engine bus，这个 substrate 的运维成本不低。如果你只是周末写一个小 Agent demo，这套架构是巨大过度工程。",
+    "pronounce_text": "第一，复杂度前置。十三个Worker各跑一个进程、走WebSocket、注册到engine bus，这个substrate的运维成本不低。如果你只是周末写一个小Agent demo，这套架构是巨大过度工程。",
+    "time_begin": 701928,
+    "time_end": 717443.4195011337,
+    "text_begin": 4765,
+    "text_end": 4876,
+    "pronounce_text_begin": 4447,
+    "pronounce_text_end": 4550
+  },
+  {
+    "text": "Mike 自己也说，最 thin 的版本至少要 4 个 Worker。",
+    "pronounce_text": "Mike自己也说，最thin的版本至少要四个Worker。",
+    "time_begin": 717588,
+    "time_end": 721284.462585034,
+    "text_begin": 4876,
+    "text_end": 4911,
+    "pronounce_text_begin": 4550,
+    "pronounce_text_end": 4579
+  },
+  {
+    "text": "第二，你换了一种锁定。框架时代的锁定是被 LangChain 或 LangGraph 锁住。iii 这套架构的锁定是被 iii engine 这个 substrate 锁住——它的 bus、它的 state、它的 channel、它的 trigger。",
+    "pronounce_text": "第二，你换了一种锁定。框架时代的锁定是被LangChain或LangGraph锁住。iii这套架构的锁定是被iii engine这个substrate锁住。它的bus、它的state、它的channel、它的trigger。",
+    "time_begin": 721440,
+    "time_end": 736177.5510204082,
+    "text_begin": 4911,
+    "text_end": 5037,
+    "pronounce_text_begin": 4579,
+    "pronounce_text_end": 4691
+  },
+  {
+    "text": "如果 iii 这个项目自身的演进方向以后不符合你的需求，你想搬走的代价是不小的。",
+    "pronounce_text": "如果iii这个项目自身的演进方向以后不浮合你的需求，你想搬走的代价是不小的。",
+    "time_begin": 736344,
+    "time_end": 742594.6575963718,
+    "text_begin": 5037,
+    "text_end": 5077,
+    "pronounce_text_begin": 4691,
+    "pronounce_text_end": 4729
+  },
+  {
+    "text": "第三，\"build your own\"不等于零成本切换。真要换 policy engine——比方说从默认的 YAML 换成 OPA、Cedar、或者自家 DSL——你还是要写一个 Worker、实现 wire schema、处理 fail-closed 语义、",
+    "pronounce_text": "第三，\"build your own\"不等于零成本切换。真要换policy engine。比方说从默认的YAML换成OPA、Cedar、或者自家DSL。你还是要写一个Worker、实现wire schema、处理fail-closed语义、",
+    "time_begin": 742752,
+    "time_end": 759323.9274376418,
+    "text_begin": 5077,
+    "text_end": 5208,
+    "pronounce_text_begin": 4729,
+    "pronounce_text_end": 4849
+  },
+  {
+    "text": "把 5 秒超时这些不变量都接好。",
+    "pronounce_text": "把五秒超时这些不变量都接好。",
+    "time_begin": 759523.9274376418,
+    "time_end": 762059.3922902495,
+    "text_begin": 5208,
+    "text_end": 5224,
+    "pronounce_text_begin": 4849,
+    "pronounce_text_end": 4863
+  },
+  {
+    "text": "这套架构的真正卖点不是切换成本为零，而是切换的影响半径被压在一个 Worker 内部。这两件事观众容易混。",
+    "pronounce_text": "这套架构的真正卖点不是切换成本为零，而是切换的影响半径被压在一个Worker内部。这两件事观众容易混。",
+    "time_begin": 762228,
+    "time_end": 770742.6031746032,
+    "text_begin": 5224,
+    "text_end": 5277,
+    "pronounce_text_begin": 4863,
+    "pronounce_text_end": 4914
+  },
+  {
+    "text": "把这一切合在一起，我读完的感觉是这样的。",
+    "pronounce_text": "把这一切合在一起，我读完的感觉是这样的。",
+    "time_begin": 770904,
+    "time_end": 774554.0226757369,
+    "text_begin": 5277,
+    "text_end": 5297,
+    "pronounce_text_begin": 4914,
+    "pronounce_text_end": 4934
+  },
+  {
+    "text": "Mike 在做的事情，跟现在主流 Agent 框架在做的事情，主语不一样。",
+    "pronounce_text": "Mike在做的事情，跟现在主流Agent框架在做的事情，主语不一样。",
+    "time_begin": 774720,
+    "time_end": 780378.5487528344,
+    "text_begin": 5297,
+    "text_end": 5334,
+    "pronounce_text_begin": 4934,
+    "pronounce_text_end": 4968
+  },
+  {
+    "text": "主流框架的主语是工程师。框架在告诉你——这是我给你准备好的 Harness，你只管 import。",
+    "pronounce_text": "主流框架的主语是工程师。框架在告诉你。这是我给你准备好的Harness，你只管import。",
+    "time_begin": 780516,
+    "time_end": 788217.9047619047,
+    "text_begin": 5334,
+    "text_end": 5383,
+    "pronounce_text_begin": 4968,
+    "pronounce_text_end": 5014
+  },
+  {
+    "text": "Mike 的主语是 Harness 本身。他在告诉你——Harness 不应该长成一坨打包好的东西，它应该长成一组可以在同一条 bus 上拼装的零件。",
+    "pronounce_text": "Mike的主语是Harness本身。他在告诉你。Harness不应该长成一坨打包好的东西，它应该长成一组可以在同一条bus上拼装的零件。",
+    "time_begin": 788364,
+    "time_end": 800210.6666666666,
+    "text_begin": 5383,
+    "text_end": 5458,
+    "pronounce_text_begin": 5014,
+    "pronounce_text_end": 5082
+  },
+  {
+    "text": "这两个论点是不冲突的。但它们决定了你过两年的命运。",
+    "pronounce_text": "这两个论点是不冲突的。但它们决定了你过两年的命运。",
+    "time_begin": 800352,
+    "time_end": 805070.1405895691,
+    "text_begin": 5458,
+    "text_end": 5483,
+    "pronounce_text_begin": 5082,
+    "pronounce_text_end": 5107
+  },
+  {
+    "text": "如果你接受框架的主语，那你过两年大概率还是在重写 Harness。",
+    "pronounce_text": "如果你接受框架的主语，那你过两年大概率还是在重写Harness。",
+    "time_begin": 805212,
+    "time_end": 810092.6802721089,
+    "text_begin": 5483,
+    "text_end": 5516,
+    "pronounce_text_begin": 5107,
+    "pronounce_text_end": 5139
+  },
+  {
+    "text": "如果你接受 Mike 的主语，那\"换 Harness\"这件事就不是一个项目，是一个 PR——换掉那一个 Worker。",
+    "pronounce_text": "如果你接受Mike的主语，那\"换Harness\"这件事就不是一个项目，是一个PR。换掉那一个Worker。",
+    "time_begin": 810252,
+    "time_end": 818940.7528344671,
+    "text_begin": 5516,
+    "text_end": 5575,
+    "pronounce_text_begin": 5139,
+    "pronounce_text_end": 5192
+  },
+  {
+    "text": "我最后留你一句话。Harness 不是你 import 的框架，是你装的几个 Worker。thin 和 thick 不是分叉路，是同一根滑块上的两个位置。",
+    "pronounce_text": "我最后留你一句话。Harness不是你import的框架，是你装的几个Worker。thin和thick不是ㄈㄣˉㄔㄚˇ路，是同一根滑块上的两个位置。",
+    "time_begin": 819108,
+    "time_end": 829886.5487528344,
+    "text_begin": 5575,
+    "text_end": 5653,
+    "pronounce_text_begin": 5192,
+    "pronounce_text_end": 5267
+  },
+  {
+    "text": "下一次你团队再想\"重写 Harness\"的时候，先问一句——是真的要重写，还是只要换掉某一个 Worker。",
+    "pronounce_text": "下一次你团队再想\"重写Harness\"的时候，先问一句。是真的要重写，还是只要换掉某一个Worker。",
+    "time_begin": 830052,
+    "time_end": 839332.8616780045,
+    "text_begin": 5653,
+    "text_end": 5707,
+    "pronounce_text_begin": 5267,
+    "pronounce_text_end": 5318
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 839484,
+    "time_end": 844364.6802721089,
+    "text_begin": 5707,
+    "text_end": 5734,
+    "pronounce_text_begin": 5318,
+    "pronounce_text_end": 5344
+  }
+]

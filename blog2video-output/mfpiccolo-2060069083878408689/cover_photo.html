@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(ellipse at 50% 35%, rgba(139, 92, 246, 0.18) 0%, rgba(13, 13, 26, 0) 60%),
+        radial-gradient(ellipse at 50% 70%, rgba(245, 158, 11, 0.10) 0%, rgba(13, 13, 26, 0) 55%);
+    }
+    .series-label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 60px;
+    }
+    .title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      margin-bottom: 80px;
+    }
+    .title .line { display: block; }
+    .red { color: #EF4444; }
+    .amber { color: #F59E0B; }
+    .source-pill {
+      display: inline-block;
+      padding: 16px 32px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 999px;
+      font-size: 22px;
+      color: #6B6B80;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="series-label">精读AI · Agent Harness 实战</div>
+    <div class="title">
+      <span class="line">Agent Harness</span>
+      <span class="line"><span class="red">不该是框架</span></span>
+      <span class="line">是 <span class="amber">11 个 Worker</span>？</span>
+    </div>
+    <div class="source-pill">Mike Piccolo · iii.dev founder · @mfpiccolo</div>
+  </div>
+</body>
+</html>

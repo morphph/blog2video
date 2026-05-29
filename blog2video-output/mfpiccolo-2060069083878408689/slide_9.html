@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 36px;
+      line-height: 1.25;
+    }
+    .title .blue { color: #3B82F6; }
+    .stage {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .stage.blue { border-left-color: #3B82F6; }
+    .stage-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .stage.blue .stage-label { color: #3B82F6; }
+    .stage-bullets {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .stage-bullets .b { color: #FFFFFF; }
+    .stage-bullets .dim { color: #B0B0CC; }
+    .key { color: #F59E0B; font-weight: 800; }
+    .principle {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: left;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .principle .green { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">provisioning + <span class="blue">assistant_streaming</span></div>
+    <div class="stage">
+      <div class="stage-label">P R O V I S I O N I N G · 三件事</div>
+      <div class="stage-bullets">
+        <div class="b">▸ 启动微型<span class="key">沙箱</span></div>
+        <div class="b">▸ 预下载本次需要的 <span class="key">skill</span></div>
+        <div class="b">▸ 组装 <span class="key">system prompt</span></div>
+      </div>
+    </div>
+    <div class="stage blue">
+      <div class="stage-label">A S S I S T A N T _ S T R E A M I N G</div>
+      <div class="stage-bullets">
+        <div class="b">orchestrator → provider → auth-credentials</div>
+        <div class="dim" style="font-size:22px; margin-top:6px;">SSE 流一边吐回，一边推给前端</div>
+      </div>
+    </div>
+    <div class="principle">每个 Worker 各管一件事，<span class="green">不互相 import</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background: radial-gradient(ellipse at 50% 40%, rgba(239, 68, 68, 0.12) 0%, rgba(13, 13, 26, 0) 60%);
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 56px;
+    }
+    .headline {
+      font-size: 82px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 80px;
+    }
+    .headline .line { display: block; }
+    .red { color: #EF4444; }
+    .amber { color: #F59E0B; }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .card.amber-bar { border-left-color: #F59E0B; }
+    .card-label {
+      font-size: 20px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .card-text {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">精读AI · Agent Harness 实战</div>
+    <div class="headline">
+      <span class="line"><span class="red">半年一次</span></span>
+      <span class="line">重写 Harness</span>
+      <span class="line">的循环</span>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-label">痛 点</div>
+        <div class="card-text">你的 LangChain Agent，半年后又想推倒重来</div>
+      </div>
+      <div class="card amber-bar">
+        <div class="card-label">M I K E 的判断</div>
+        <div class="card-text">Harness 从来不是 framework，是 15 个 job</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .quote-mark {
+      font-size: 180px;
+      color: #F59E0B;
+      line-height: 0.9;
+      font-family: Georgia, serif;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .quote-text {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+    .quote-text .amber { color: #F59E0B; }
+    .quote-text .purple { color: #8B5CF6; }
+    .slider-viz {
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .track {
+      height: 14px;
+      background: linear-gradient(90deg, #10B981 0%, #F59E0B 50%, #EF4444 100%);
+      border-radius: 999px;
+      position: relative;
+    }
+    .knob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 4px solid #F59E0B;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.6);
+    }
+    .track-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .track-labels .l { color: #10B981; }
+    .track-labels .r { color: #EF4444; }
+    .footer {
+      font-size: 24px;
+      color: #B0B0CC;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .footer .amber { color: #F59E0B; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">同一根 <span class="amber">滑块</span><br><span class="purple">添加/删除</span> Worker 即可</div>
+    <div class="slider-viz">
+      <div class="track">
+        <div class="knob"></div>
+      </div>
+      <div class="track-labels">
+        <span class="l">THIN</span>
+        <span class="r">THICK</span>
+      </div>
+    </div>
+    <div class="footer">对 thin-thick 之争<span class="amber"> 最干净的瓦解</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 36px;
+      line-height: 1.2;
+    }
+    .title .amber { color: #F59E0B; }
+    .compare {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .approach {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+    }
+    .approach.bad { border-left: 4px solid #EF4444; }
+    .approach.good { border-left: 4px solid #10B981; }
+    .a-label {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .approach.bad .a-label { color: #EF4444; }
+    .approach.good .a-label { color: #10B981; }
+    .a-text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .a-text .mono {
+      font-family: 'SF Mono', Menlo, monospace;
+      color: #F59E0B;
+      font-size: 22px;
+    }
+    .fail-closed {
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      width: 100%;
+      text-align: left;
+    }
+    .fail-label {
+      font-size: 20px;
+      color: #3B82F6;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .fail-text {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .fail-text .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">设 计 得 非 常 聪 明 的 细 节</div>
+    <div class="title">一个<span class="amber">全局触发器</span>覆盖所有 session</div>
+    <div class="compare">
+      <div class="approach bad">
+        <div class="a-label">朴 素 方 案</div>
+        <div class="a-text">每个挂起调用单独注册唤醒触发器<br>→ 重启后扫所有挂起状态，重新注册</div>
+      </div>
+      <div class="approach good">
+        <div class="a-label">M I K E 方 案</div>
+        <div class="a-text">只注册 <span class="mono">turn::on_approval</span><br>监听 <span class="mono">approvals/</span> scope 的写入</div>
+      </div>
+    </div>
+    <div class="fail-closed">
+      <div class="fail-label">F A I L - C L O S E D · B Y · C O N S T R U C T I O N</div>
+      <div class="fail-text">policy 不可达 / 5秒超时 / 发布失败<br>默认全是 <span class="red">deny</span></div>
+    </div>
+  </div>
+</body>
+</html>

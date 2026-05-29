@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+    .title .amber { color: #F59E0B; }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+      letter-spacing: 1px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: left;
+    }
+    .card.thin { border: 1px solid rgba(16, 185, 129, 0.4); border-left: 4px solid #10B981; }
+    .card.thick { border: 1px solid rgba(239, 68, 68, 0.4); border-left: 4px solid #EF4444; }
+    .card-label {
+      font-size: 22px;
+      letter-spacing: 3px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .card.thin .card-label { color: #10B981; }
+    .card.thick .card-label { color: #EF4444; }
+    .card-num {
+      font-size: 84px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .card.thin .card-num { color: #10B981; }
+    .card.thick .card-num { color: #EF4444; }
+    .card-unit {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .card-list {
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .card-list .dim { color: #B0B0CC; }
+    .verdict {
+      margin-top: 40px;
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .verdict .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Thin vs Thick：<span class="amber">不是分叉路</span></div>
+    <div class="subtitle">是一根滑块上的两个位置</div>
+    <div class="cards">
+      <div class="card thin">
+        <div class="card-label">T H I N</div>
+        <div class="card-num">4</div>
+        <div class="card-unit">个 Worker</div>
+        <div class="card-list">
+          orchestrator<br>provider<br>auth-credentials<br>meta-worker<br>
+          <span class="dim" style="font-size:18px;">研究 Agent / 实验循环</span>
+        </div>
+      </div>
+      <div class="card thick">
+        <div class="card-label">T H I C K</div>
+        <div class="card-num">13+</div>
+        <div class="card-unit">个 Worker</div>
+        <div class="card-list">
+          全部核心 +<br>自定义 policy<br>Slack approval<br>finance budget<br>
+          <span class="dim" style="font-size:18px;">客户工作流 / 全审计</span>
+        </div>
+      </div>
+    </div>
+    <div class="verdict">两者距离：<span class="amber">一次 config 改动</span></div>
+  </div>
+</body>
+</html>

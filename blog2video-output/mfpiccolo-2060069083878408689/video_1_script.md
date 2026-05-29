@@ -1,10 +1,10 @@
 # Agent Harness 不该是框架，是 11 个可换的 Worker？
 
-## Hook
+[SLIDE 1: cover] (0:00 - 0:51)
 
 你在 LangChain 上搭了三个月的 Agent，开始想推倒重来。你以为是自己技术选型错了，下一次换 CrewAI，换自家 SDK，半年后又想换一次。这个循环不是你团队的问题。iii.dev 创始人 Mike Piccolo 把它拆开了——harness 从来不是一个 framework，是 15 个独立的 production job，你只是被框架忽悠你打包了。
 
-## 为什么 Agent 团队最终都会重写 Harness
+[SLIDE 2: image] (0:51 - 3:02)
 
 我先把 Mike 文章的起点抛给你。
 
@@ -14,11 +14,13 @@
 
 为什么？因为 Harness 根本不是一件东西。它是十几件不同的事情被打包到了一起。打包的原因不是它们天然属于一起，而是底层基础设施没给你一个把它们拆开的办法。
 
+[SLIDE 3: principle] (3:02 - 4:22)
+
 所以一年之后，几乎每个长跑的 Agent 团队都会发现同一个问题。你想要的 policy engine，不是框架里的那个 policy engine。你想要的 approval UI，不是框架内置的 chat surface。你想要的预算追踪器，不在框架的可观测链路里。
 
 然后呢？你只有三个选择。fork 它，跟它对着干，或者绕开它。最后大家都走到了第四条路——把整个 Harness 推倒重写。
 
-## Harness 到底有多少个责任
+[SLIDE 4: image] (4:22 - 6:00)
 
 那 Harness 里到底装了多少件事？
 
@@ -30,6 +32,8 @@ Mike 在文章里列了一份非常具体的清单。一份生产级 Agent Harne
 
 驱动每一轮对话的状态机——从分配资源、流式吐 token、跑工具调用、决定是否继续、到收尾。
 
+[SLIDE 5: checklist] (6:00 - 7:33)
+
 加载并提供每个函数的 skill 说明——这个工具的请求是什么形状、错误码是什么、用法注意事项。组装系统提示词，要拼模式段、要拼身份前缀、要拼工作目录、要拼默认 skill 索引。
 
 把 token 流式吐给前端。在工具调用真正执行前，过一遍 policy。需要人工审批的工具，挂起来等人决定，决定回来之后路由到正确的那一轮对话上。
@@ -40,11 +44,13 @@ Mike 在文章里列了一份非常具体的清单。一份生产级 Agent Harne
 
 15 件事。
 
+[SLIDE 6: quote] (7:33 - 8:35)
+
 Mike 的观察是这样的。所有严肃的 Agent Harness 都做了其中大部分。贵的那些都做了。便宜的那些是先省了几件，到生产里再补上。而框架的做法是——把这 15 件事打成一个 monolith，每件事只 ship 一个版本。
 
 最后那句是关键。当你一年后发现框架内置的 policy engine 不是你想要的那个，你为了换它，得把整个 Harness 一起换走。
 
-## iii 的下注：单一原语，一组 Worker
+[SLIDE 7: principle] (8:35 - 10:38)
 
 那 iii 这套架构是怎么做的？
 
@@ -58,7 +64,7 @@ Mike 的观察是这样的。所有严肃的 Agent Harness 都做了其中大部
 
 那"build your own harness"这件事，就被压缩成了一个非常小的操作——你不是 fork 一个框架，你是换掉几个 Worker。
 
-## 一轮对话在 11 个 Worker 之间是怎么走的
+[SLIDE 8: image] (10:38 - 12:31)
 
 光这么说有点抽象。Mike 在文章里直接走了一遍——一轮对话在他们的 11 个 Worker 之间是怎么流动的。我挑最有信息量的几步给你讲。
 
@@ -68,13 +74,15 @@ Mike 的观察是这样的。所有严肃的 Agent Harness 都做了其中大部
 
 turn-orchestrator 接到请求之后做什么？它把状态写到 iii state 的一个固定路径下，然后立刻返回。真正的工作是在一个可持久的状态机里跑，由队列里的消息驱动一步一步前进。
 
+[SLIDE 9: image] (12:31 - 14:01)
+
 provisioning 这一步做三件事。它启动一个微型沙箱给工具执行用。它去 iii-directory 那个 Worker 预下载这次需要的 skill。然后它组装系统提示词——拼模式段、拼身份前缀、拼 skill 索引。
 
 然后是 assistant_streaming。orchestrator 调 provider 那个 Worker——比如 provider-anthropic、provider-openai、provider-kimi——让它去拉 SSE 流。provider 自己去 auth-credentials 那个 Worker 拿 token。流式数据一边吐回 orchestrator，一边推给前端。
 
 每个 Worker 各管一件事。它们之间不互相 import，只通过 bus 上的函数名互相调用。
 
-## 工具调用前的那道门
+[SLIDE 10: principle] (14:01 - 15:39)
 
 我觉得整篇文章最值得讲的一段，是工具调用经过的那道门。
 
@@ -83,6 +91,8 @@ provisioning 这一步做三件事。它启动一个微型沙箱给工具执行�
 policy Worker 读一份 YAML 配置，匹配这个函数 ID，返回三个结果之一——allow、deny、或者 needs_approval。
 
 allow，直接派发，工具跑，结果写回去。deny，短路掉，把拒绝信封写回结果。needs_approval，这一个调用挂到这一轮的"等待审批"列表里。批次里的其他调用继续派发，不卡住其他工具。只有当至少一个调用还在等审批，这一轮的状态才转到 function_awaiting_approval。
+
+[SLIDE 11: image] (15:39 - 17:51)
 
 这里有个细节我觉得设计得非常聪明。
 
@@ -94,7 +104,7 @@ orchestrator 全局只注册了一个触发器——turn::on_approval。它监�
 
 我把这段拎出来讲，是因为它展示了一个具体的工程后果——当 Harness 是由 Worker 拼出来的，单一职责的 Worker 可以做得很扎实。
 
-## 滑块，不是分叉路
+[SLIDE 12: comparison_cards] (17:51 - 20:11)
 
 接下来是 Mike 论点里我最喜欢的一节。
 
@@ -112,13 +122,15 @@ thick Harness 是另一极。全部 13 个核心 Worker 上齐，再加一个自
 
 这种配置适合什么？给客户跑工作流的 Agent，每一次工具调用都要被审计，每一笔模型消耗都要被归账。
 
+[SLIDE 13: quote] (20:11 - 21:14)
+
 而 thin 到 thick 之间的距离，不是一次重写。
 
 是一个 config 文件的改动。同样的协议、同样的 trace 形状、同样的可观测故事。你往配置里加几个 Worker，你就更厚一点；你删掉几个 Worker，你就更薄一点。
 
 我读到这里的反应是——这是我看到过的对 thin-thick 之争最干净的瓦解。它不是说哪一边对，而是说这个二元对立本身就建立在一个错误的架构假设上。
 
-## 把内部重构变成单 Worker 的私事
+[SLIDE 14: image] (21:14 - 23:43)
 
 光说"可以替换"是一个口号。Mike 给了一个具体证据，证明这个解耦是真的。
 
@@ -132,7 +144,7 @@ thick Harness 是另一极。全部 13 个核心 Worker 上齐，再加一个自
 
 这个性质很特别。它意味着一个单 Worker 内部的大规模重构，和升级一个独立服务的小版本，在工程意义上是同一件事。
 
-## Tradeoff——别只听爽点
+[SLIDE 15: checklist] (23:43 - 26:11)
 
 我必须给你讲代价。Mike 文章本身就有一节谈这个，我也不会跳过。
 
@@ -144,7 +156,7 @@ thick Harness 是另一极。全部 13 个核心 Worker 上齐，再加一个自
 
 这套架构的真正卖点不是切换成本为零，而是切换的影响半径被压在一个 Worker 内部。这两件事观众容易混。
 
-## 合在一起看
+[SLIDE 16: summary] (26:11 - 28:21)
 
 把这一切合在一起，我读完的感觉是这样的。
 
@@ -161,7 +173,5 @@ Mike 的主语是 Harness 本身。他在告诉你——Harness 不应该长成�
 如果你接受 Mike 的主语，那"换 Harness"这件事就不是一个项目，是一个 PR——换掉那一个 Worker。
 
 我最后留你一句话。Harness 不是你 import 的框架，是你装的几个 Worker。thin 和 thick 不是分叉路，是同一根滑块上的两个位置。下一次你团队再想"重写 Harness"的时候，先问一句——是真的要重写，还是只要换掉某一个 Worker。
-
-## Closing
 
 AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。

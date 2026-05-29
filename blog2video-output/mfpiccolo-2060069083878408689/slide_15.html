@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 36px;
+      line-height: 1.2;
+    }
+    .title .red { color: #EF4444; }
+    .tradeoffs {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .t {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .t-num {
+      font-size: 22px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .t-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .t-detail {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+    .reframe {
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      text-align: left;
+    }
+    .reframe-label {
+      font-size: 20px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .reframe-text {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .reframe-text .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">代 价 · 别 只 听 爽 点</div>
+    <div class="title">三个 <span class="red">tradeoff</span> 你必须知道</div>
+    <div class="tradeoffs">
+      <div class="t">
+        <div class="t-num">0 1 · 复 杂 度 前 置</div>
+        <div class="t-title">13 个进程 + WebSocket + bus 注册</div>
+        <div class="t-detail">周末 demo 是巨大过度工程</div>
+      </div>
+      <div class="t">
+        <div class="t-num">0 2 · 换 了 一 种 锁 定</div>
+        <div class="t-title">从框架锁定 → iii engine 锁定</div>
+        <div class="t-detail">bus / state / channel / trigger 全是 iii 原语</div>
+      </div>
+      <div class="t">
+        <div class="t-num">0 3 · 不 是 零 成 本</div>
+        <div class="t-title">换 policy 仍要写 Worker / 实现 schema</div>
+        <div class="t-detail">5秒超时 / fail-closed 不变量都要接好</div>
+      </div>
+    </div>
+    <div class="reframe">
+      <div class="reframe-label">真 正 卖 点</div>
+      <div class="reframe-text">不是切换成本为零<br>是<span class="amber">影响半径压在一个 Worker 内</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -7,7 +7,7 @@
   },
   "video_plan": {
     "total_videos": 1,
-    "rationale": "整篇是一个连贯的论证（framework 打包 → 15 个 job → Worker 组合 → 滑块 → 真实重构证据 → tradeoff → 合在一起看），拆开任何一段都会让"composition 是 substrate"这个核心论点失去支撑。",
+    "rationale": "整篇是一个连贯的论证（framework 打包 → 15 个 job → Worker 组合 → 滑块 → 真实重构证据 → tradeoff → 合在一起看），拆开任何一段都会让 composition 是 substrate 这个核心论点失去支撑。",
     "episode_transitions": [],
     "videos": [
       {

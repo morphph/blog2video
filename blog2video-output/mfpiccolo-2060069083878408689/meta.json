@@ -1,0 +1,15 @@
+{
+  "topic": "Agent Harness 不该是框架，是 11 个可换的 Worker？",
+  "blog_url": "https://x.com/mfpiccolo/status/2060069083878408689",
+  "source": "mfpiccolo-2060069083878408689",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /mfpiccolo/article/2060069083878408689
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Mike Piccolo Verified account @mfpiccolo 6 replies, 35 reposts, 384 likes, 996 bookmarks, 43969 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /mfpiccolo
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Mike Piccolo Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /mfpiccolo
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Mike Piccolo
+                          - img "Verified account" [ref=e116]
+                      - link "@mfpiccolo" [ref=e122] [cursor=pointer]:
+                        - /url: /mfpiccolo
+                        - generic [ref=e123]: "@mfpiccolo"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /mfpiccolo/article/2060069083878408689/media/2060040491975008256
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: How to build your own agent harness???
+                      - group "6 replies, 35 reposts, 384 likes, 996 bookmarks, 43969 views" [ref=e154]:
+                        - button "6 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "6"
+                        - button "35 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: "35"
+                        - button "384 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: "384"
+                        - link "43969 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /mfpiccolo/status/2060069083878408689/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 43K
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: Most agent teams don't build a harness. They adopt one. LangChain, LangGraph, OpenAI Agents SDK, Anthropic SDK, CrewAI, AutoGen, the loop, the tools, the memory, and the orchestration are picked off the shelf as a single decision. The harness is a framework you import. If something inside it doesn't fit,
+                          - generic [ref=e225]: you fork it, fight it, or work around it.
+                        - link "Image" [ref=e232] [cursor=pointer]:
+                          - /url: /mfpiccolo/article/2060069083878408689/media/2060040331945447428
+                          - generic "Image" [ref=e236]:
+                            - img "Image" [ref=e238]
+                        - generic [ref=e240]:
+                          - generic [ref=e241]: I think that shape is
+                          - generic [ref=e242]: wrong
+                          - generic [ref=e243]: ", and it's the reason every long-running agent team eventually ends up rewriting its harness from scratch. The harness isn't one thing. It's ten or twelve different things bundled together because the surrounding ecosystem doesn't give you a way to compose them."
+                          - link "Pi agent" [ref=e245] [cursor=pointer]:
+                            - /url: https://github.com/earendil-works/pi/tree/main/packages/coding-agent
+                            - generic [ref=e246]: Pi agent
+                          - generic [ref=e247]: packages
+                          - generic [ref=e248]: are on the right track, but they are still in the paradigm of “Add another service and integrate it with all others.” The iii engine treats all workers the same and removes the integration logic completely. The
+                          - generic [ref=e249]: provider router, the credential vault, the policy engine, the approval gate, the model catalog, the session storage, the budget tracker, the after-call hook fanout,
+                          - generic [ref=e250]: and
+                          - generic [ref=e251]: the durable turn loop
+                          - generic [ref=e252]: are independent concerns. These are all interoperable with your queue, http/api server, streaming, even browser workers. A framework that ships them as one block is selling you a tradeoff you didn't have to make.
+                        - generic [ref=e254]:
+                          - generic [ref=e255]: The bet underneath
+                          - link "iii" [ref=e257] [cursor=pointer]:
+                            - /url: https://iii.dev/
+                            - generic [ref=e258]: iii
+                          - generic [ref=e259]: "is that they shouldn't be one block. There should be a set of workers on a shared engine, each replaceable, each versioned independently, each connected by a single primitive:"
+                          - generic [ref=e260]: a trigger (iii.trigger())
+                          - generic [ref=e261]: that every other worker also uses. The harness becomes a stack of installable workers, and "
+                          - generic [ref=e262]: build your own
+                          - generic [ref=e263]: "\" stops meaning \""
+                          - generic [ref=e264]: fork a framework.
+                          - generic [ref=e265]: "\" It means \""
+                          - generic [ref=e266]: swap a few workers.
+                          - generic [ref=e267]: "\""
+                        - generic [ref=e270]: This post walks through what that actually looks like. The complete stack that drives an iii agent turn today, why each layer is its own worker, and how you replace any of them.
+                        - heading "The 15 jobs an agent harness has to do" [level=2] [ref=e272]:
+                          - generic [ref=e274]: The 15 jobs an agent harness has to do
+                        - generic [ref=e277]: "If you strip a production agent harness back to its responsibilities, you get a list that looks roughly like this:"
+                        - list [ref=e278]:
+                          - listitem [ref=e279]:
+                            - generic [ref=e281]: Accept a turn request from a client and persist it
+                          - listitem [ref=e282]:
+                            - generic [ref=e284]: Resolve credentials for whichever model provider gets called
+                          - listitem [ref=e285]:
+                            - generic [ref=e287]: Look up what the chosen model can actually do (vision, tools, streaming, context window)
+                          - listitem [ref=e288]:
+                            - generic [ref=e290]: Drive the per-turn state machine, provision, stream assistant, run tools, steer, tear down
+                          - listitem [ref=e291]:
+                            - generic [ref=e293]: Load and serve skill bodies that describe each function's request shape, error codes, and usage notes
+                          - listitem [ref=e294]:
+                            - generic [ref=e296]: Assemble the system prompt, mode paragraph, identity preamble, working directory, and default skills appendix
+                          - listitem [ref=e297]:
+                            - generic [ref=e299]: Stream tokens back to the client as the model produces them
+                          - listitem [ref=e300]:
+                            - generic [ref=e302]: Check every tool call (that’s just a function) against a policy before it runs
+                          - listitem [ref=e303]:
+                            - generic [ref=e305]: Pause tool calls that need a human decision and route the answer back to the right turn
+                          - listitem [ref=e306]:
+                            - generic [ref=e308]: Track LLM spend against per-workspace or per-agent budgets
+                          - listitem [ref=e309]:
+                            - generic [ref=e311]: Run hooks before and after tool calls (logging, redaction, custom side effects)
+                          - listitem [ref=e312]:
+                            - generic [ref=e314]: Persist the session as a branching tree so forks and resumes work
+                          - listitem [ref=e315]:
+                            - generic [ref=e317]: Compact session history when the context window fills up
+                          - listitem [ref=e318]:
+                            - generic [ref=e320]: Emit an event stream that the UI subscribes to
+                          - listitem [ref=e321]:
+                            - generic [ref=e323]: Missing piece from every agent's company building, I see. Carry one OpenTelemetry trace across every step so you can debug it
+                        - generic [ref=e326]: Every serious agent harnesses most of these. The expensive ones do all of them. The cheap ones cut corners and rebuild the corners later when they hit production. The frameworks bundle them into a monolith and ship one version of each. That last part is the part that costs you, because a year in, you find out that the policy engine you want is not the policy engine the framework ships, and replacing it means replacing the harness.
+                        - generic [ref=e328]:
+                          - generic [ref=e329]: The iii harness ships every one of those thirteen jobs as a separate worker on the
+                          - link "workers.iii.dev" [ref=e331] [cursor=pointer]:
+                            - /url: https://workers.iii.dev/
+                            - generic [ref=e332]: workers.iii.dev
+                          - generic [ref=e333]: registry. Each speaks the same WebSocket protocol. Each registers functions and triggers on the same engine bus. Each is iii worker add-able, swappable, and writable in any language with an SDK.
+                        - heading "The stack, by worker" [level=2] [ref=e335]:
+                          - generic [ref=e337]: The stack, by worker
+                        - generic [ref=e339]:
+                          - generic [ref=e340]: Here is the actual production stack from the
+                          - link "iii-hq/workers" [ref=e342] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/workers/tree/main/harness
+                            - generic [ref=e343]: iii-hq/workers
+                          - generic [ref=e344]: monorepo, with each worker's job in one line. The whole bundle ships at
+                          - link "github.com/iii-hq/workers/harness" [ref=e346] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/workers/tree/main/harness
+                            - generic [ref=e347]: github.com/iii-hq/workers/harness
+                          - generic [ref=e348]: ":"
+                        - link "Image" [ref=e355] [cursor=pointer]:
+                          - /url: /mfpiccolo/article/2060069083878408689/media/2060025269541380100
+                          - generic "Image" [ref=e359]:
+                            - img "Image" [ref=e361]
+                        - generic [ref=e363]:
+                          - generic [ref=e364]: Eleven workers. One engine. Each is on a published version. Each is independently runnable as a standalone process (
+                          - generic [ref=e365]: pnpm dev:<worker>
+                          - generic [ref=e366]: in dev,
+                          - generic [ref=e367]: iii worker add <specific-worker>
+                          - generic [ref=e368]: as a release binary) or as part of the composite entry point that spins them up together.
+                        - generic [ref=e370]:
+                          - generic [ref=e371]: "The reason this matters: every box in that table is a place where someone can hand you a different worker, and you keep the rest. Don't like the static model catalogue? Plug in a worker that registers"
+                          - generic [ref=e372]: models::list
+                          - generic [ref=e373]: and reads from a live API. Don't like file-backed credentials? Plug in a worker that registers auth::get_token and reads from a secrets manager. Want a different turn FSM for a workflow that branches differently? Replace t
+                          - generic [ref=e374]: urn-orchestrator
+                          - generic [ref=e375]: ", every dependent calls"
+                          - generic [ref=e376]: run::start
+                          - generic [ref=e377]: and reads
+                          - generic [ref=e378]: turn_state
+                          - generic [ref=e379]: through the same bus, so the rest of the stack doesn't change.
+                        - heading "How the loop actually runs" [level=2] [ref=e381]:
+                          - generic [ref=e383]: How the loop actually runs
+                        - generic [ref=e386]: The shape of one turn looks like this, walking through the workers in the order they fire.
+                        - generic [ref=e388]:
+                          - generic [ref=e389]: A browser/cli/chat POSTs a turn through
+                          - generic [ref=e390]: harness::trigger
+                          - generic [ref=e391]: with
+                          - generic [ref=e392]: "{session_id, message_id, payload}"
+                          - generic [ref=e393]: . The harness meta-worker forwards payload to
+                          - generic [ref=e394]: run::start
+                          - generic [ref=e395]: . That hop exists so the OpenTelemetry span wrapper can seed the session and message IDs as baggage, which propagates to every nested iii.trigger call across every worker in the stack. The trace tree on the other side is one connected graph.
+                        - generic [ref=e397]:
+                          - generic [ref=e398]: run::start lands on the turn-orchestrator. It persists the run request, seeds the initial TurnStateRecord in iii state at
+                          - generic [ref=e399]: session/<sid>/turn_state
+                          - generic [ref=e400]: ", and returns immediately. The actual work happens inside the durable per-state machine, woken by publishes to the turn-step FIFO."
+                        - generic [ref=e402]:
+                          - generic [ref=e403]: The two terminal states are stopped (clean exit via finishSession()) and failed (an unexpected handler throw routes here, acks the queue so it stops retrying, and surfaces
+                          - generic [ref=e404]: "message_complete{stop_reason:'error'}"
+                          - generic [ref=e405]: plus agent_end so the UI shows the reason). Teardown is an inline finishSession() port called from any turn-end path, not a separate enqueued step.
+                        - generic [ref=e407]:
+                          - generic [ref=e408]: provisioning does three things. It boots a
+                          - link "iii-sandbox" [ref=e410] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/iii/tree/main/crates/iii-worker/src/sandbox_daemon
+                            - generic [ref=e411]: iii-sandbox
+                          - generic [ref=e412]: microVM if the run needs isolated execution. It calls directory::skills::download for every namespace in system_default_skills (default
+                          - generic [ref=e413]: "[\"iii://iii-directory/index\"]"
+                          - generic [ref=e414]: ") so iii-directory pre-caches the skill bodies the run starts with. And it assembles the system prompt in three layers: a mode paragraph picked from run_request.mode (plan, ask, or agent), the iii identity preamble that teaches the model the agent_trigger convention and the directory::skills::get on-demand discovery pattern, and an appended index of the default skills the agent boots with. The caller can override the whole prompt by passing system_prompt on run::start; otherwise the orchestrator builds it. Function schemas come from the live engine catalog."
+                        - generic [ref=e417]: assistant_streaming calls provider::<name>::stream on whichever provider worker matches the run's provider field. The provider worker pulls credentials via auth::get_token (auth-credentials), streams the model's SSE response into an iii channel, and the orchestrator drains that channel emitting message_update events on agent::events for the UI fanout. Channel creation and the read loop live behind a pull-based MessagePump in provider-stream.ts, so the streaming state stays focused on transitions.
+                        - generic [ref=e420]: "When the assistant returns tool calls, the FSM enters function_execute. Every tool call passes through dispatchWithHook, the single chokepoint in the orchestrator. consultBefore calls policy::check_permissions directly with a 5-second timeout. The policy worker (the harness meta-worker, in the default stack) reads iii-permissions.yaml, matches the call's function_id against the rule set, and returns one of three outcomes:"
+                        - list [ref=e421]:
+                          - listitem [ref=e422]:
+                            - generic [ref=e423]:
+                              - generic [ref=e424]: "allow:"
+                              - generic [ref=e425]: dispatch proceeds; the orchestrator triggers the target function and writes the result
+                          - listitem [ref=e426]:
+                            - generic [ref=e427]:
+                              - generic [ref=e428]: "deny:"
+                              - generic [ref=e429]: dispatch short-circuits with a DenialEnvelope, the result becomes a denial record
+                          - listitem [ref=e430]:
+                            - generic [ref=e431]:
+                              - generic [ref=e432]: "needs_approval:"
+                              - generic [ref=e433]: the individual call parks into the turn's awaiting_approval list. The rest of the batch keeps dispatching. The turn transitions to
+                              - generic [ref=e434]: function_awaiting_approval
+                              - generic [ref=e435]: only when one or more entries are pending.
+                        - generic [ref=e437]:
+                          - generic [ref=e438]: The approval wake is reactive and shared. The orchestrator registers exactly one
+                          - generic [ref=e439]: turn::on_approval
+                          - generic [ref=e440]: state trigger on scope approvals. When the console calls approval::resolve, the approval-gate worker writes
+                          - generic [ref=e441]: "approvals/<sid>/<cid> = {decision, reason}"
+                          - generic [ref=e442]: to iii state. That write fires
+                          - generic [ref=e443]: turn::on_approval
+                          - generic [ref=e444]: ", which advances the affected session."
+                          - generic [ref=e445]: function_awaiting_approval
+                          - generic [ref=e446]: reads only the decisions that just landed, dispatches each one as it arrives (allow becomes a pre-approved dispatch, deny or aborted becomes a synthetic denial), and advances when
+                          - generic [ref=e447]: awaiting_approval[]
+                          - generic [ref=e448]: is empty. No per-call resume functions to register. No startup re-scan to recover pending approvals. One trigger covers every session.
+                        - generic [ref=e450]:
+                          - generic [ref=e451]: "Fail-closed by construction: if the policy worker is unreachable or the 5-second timeout fires, consultBefore denies the call with a gate_unavailable envelope. If"
+                          - generic [ref=e452]: iii::durable::publish
+                          - generic [ref=e453]: itself errored, the hook fanout returns
+                          - generic [ref=e454]: "publish_failed: true"
+                          - generic [ref=e455]: and the orchestrator treats it as a deny.
+                        - generic [ref=e457]:
+                          - generic [ref=e458]: A few latency wins fall out of this shape. The after-function-call hook short-circuits
+                          - generic [ref=e459]: publish_collect
+                          - generic [ref=e460]: via a subscriber-presence cache when no durable subscriber is registered for the topic, removing roughly 500ms per executed function call.
+                          - generic [ref=e461]: tearing_down
+                          - generic [ref=e462]: is inlined into
+                          - generic [ref=e463]: finishSession()
+                          - generic [ref=e464]: ", removing one durable queue hop per turn. context-compaction subscribes to a dedicated"
+                          - generic [ref=e465]: agent::turn_end
+                          - generic [ref=e466]: stream the orchestrator emits at turn boundaries, so compactor wakeups are per-turn instead of per-event. The session-create fanout state trigger gates by scope alone and matches in-process, so the previous per-write
+                          - generic [ref=e467]: harness::session::is_create_event
+                          - generic [ref=e468]: RPC is gone.
+                        - generic [ref=e470]:
+                          - generic [ref=e471]: After the batch completes, steering_check decides whether to continue, stop, or hit
+                          - generic [ref=e472]: max_turns
+                          - generic [ref=e473]: . If continue, loop back to assistant_streaming. If stop or max,
+                          - generic [ref=e474]: finishSession()
+                          - generic [ref=e475]: "runs inline: emit agent_end, free the sandbox, transition to stopped."
+                        - generic [ref=e477]:
+                          - generic [ref=e478]: Throughout the whole run, every worker that participates emits OTel spans tagged with
+                          - link "iii.session.id" [ref=e480] [cursor=pointer]:
+                            - /url: //iii.session.id
+                            - generic [ref=e481]: iii.session.id
+                          - generic [ref=e482]: ","
+                          - link "iii.message.id" [ref=e484] [cursor=pointer]:
+                            - /url: //iii.message.id
+                            - generic [ref=e485]: iii.message.id
+                          - generic [ref=e486]: ", and"
+                          - link "iii.function.id" [ref=e488] [cursor=pointer]:
+                            - /url: //iii.function.id
+                            - generic [ref=e489]: iii.function.id
+                          - generic [ref=e490]: . Those tags are what the engine's engine::traces::group_by reads to populate "Group by Session" / "Group by Message" / "Group by Function" in the traces UI. The instrumentation is
+                          - generic [ref=e491]: "automatic: src/runtime/worker.ts"
+                          - generic [ref=e492]: wraps every
+                          - generic [ref=e493]: registerFunction
+                          - generic [ref=e494]: in a Proxy so no per-worker code has to remember to add spans.
+                        - heading "Build your own" [level=2] [ref=e496]:
+                          - generic [ref=e498]: Build your own
+                        - generic [ref=e501]: The interesting part is that none of the workers above are special. Each one is a process that opens a WebSocket to the engine, registers some functions and triggers, and runs. The contract is the same as the contract every application worker uses. The harness is built on the same primitive your business logic is built on.
+                        - generic [ref=e504]: Which means "build your own harness" decomposes into the same operation as "write any worker." You pick the layer you want to replace, you write a worker that registers the same functions on the bus, you iii worker add it, and the rest of the stack starts using your worker.
+                        - generic [ref=e506]:
+                          - generic [ref=e507]: Two layers don't show up in the worker table above but matter for how the harness behaves.
+                          - generic [ref=e508]: Skills
+                          - generic [ref=e509]: are how each worker advertises what its functions do. Every worker can publish a skill at iii://<worker>/<function> that the agent fetches via directory::skills::get before calling that function for the first time.
+                          - generic [ref=e510]: The system prompt
+                          - generic [ref=e511]: "is assembled per turn from a mode paragraph, the iii identity preamble, and the default skill bodies the run was configured with. Both are bus-driven: skills are served by the iii-directory worker, the system prompt is assembled by the turn-orchestrator. Both are replaceable."
+                        - generic [ref=e514]: Five concrete examples.
+                        - generic [ref=e516]:
+                          - generic [ref=e517]: Replace the model catalogue with a live API.
+                          - generic [ref=e518]: Write a worker that registers models::list, models::get, models::supports. Have it fetch from your provider's catalog endpoint every N minutes and cache. Publish it. iii worker add your-org/dynamic-models-catalog. Stop the static models-catalog worker. The turn-orchestrator never knows the difference. It calls iii.trigger('models::list') and the engine routes to whichever worker registered that function id most recently.
+                        - generic [ref=e520]:
+                          - generic [ref=e521]: Add a new provider.
+                          - generic [ref=e522]: The shape is provider-kimi and provider-lmstudio already prove out. Each is one worker that registers
+                          - generic [ref=e523]: provider::<name>::stream
+                          - generic [ref=e524]: and
+                          - generic [ref=e525]: provider::<name>::complete
+                          - generic [ref=e526]: ", drains an SSE stream from the upstream API into an iii channel, and writes its model usage to llm-budget via budget::record. Adding a fifth provider is writing one folder with one iii.worker.yaml and one register.ts. Publish to the registry, or keep it local. The turn-orchestrator picks the provider by the run's provider field; new providers become available the instant the worker connects."
+                        - generic [ref=e528]:
+                          - generic [ref=e529]: Serve skills from a private artifact store.
+                          - generic [ref=e530]: Write a worker that registers
+                          - generic [ref=e531]: directory::skills::get and directory::skills::list
+                          - generic [ref=e532]: ", backed by your internal docs system or a private S3 bucket. Disconnect or rename the default iii-directory worker. The orchestrator's bootstrap calls"
+                          - generic [ref=e533]: directory::skills::download
+                          - generic [ref=e534]: per namespace; your worker answers. The agent's "fetch the per-function skill before calling a new function" pattern keeps working unchanged because the wire shape is the same.
+                        - generic [ref=e536]:
+                          - generic [ref=e537]: Override the system prompt entirely.
+                          - generic [ref=e539]: run::start
+                          - generic [ref=e540]: accepts an optional system_prompt field. Pass it and the orchestrator uses your string verbatim, skipping the mode paragraph + identity preamble + skills appendix assembly. Useful when you have an existing prompt asset you want the harness to honour without modification. Skill download still runs in bootstrap, so the agent keeps
+                          - generic [ref=e541]: directory::skills::get
+                          - generic [ref=e542]: on-demand discovery even with a custom prompt.
+                        - generic [ref=e544]:
+                          - generic [ref=e545]: Replace the approval gate UI surface.
+                          - generic [ref=e546]: "The default approval-gate worker registers approval::resolve. The wire schema is one function call:"
+                        - generic [ref=e549]:
+                          - generic [ref=e550]:
+                            - generic [ref=e551]: typescript
+                            - button "Copy to clipboard" [ref=e553] [cursor=pointer]:
+                              - img [ref=e555]
+                          - code [ref=e559]:
+                            - text: "iii.trigger('approval::resolve', { session_id: '...', function_call_id: '...', decision: 'allow' | 'deny' | 'aborted', reason: 'optional human text',"
+                            - text: "})"
+                        - generic [ref=e561]:
+                          - generic [ref=e562]: The handler persists
+                          - generic [ref=e563]: "approvals/<sid>/<cid> = {decision, reason}"
+                          - generic [ref=e564]: to iii state. The orchestrator's single
+                          - generic [ref=e565]: turn::on_approval
+                          - generic [ref=e566]: state trigger picks that write up and wakes the right session. If you want to drive approvals from Slack instead of the console, write a Slack worker that listens for
+                          - generic [ref=e567]: /approve <id> and /deny <id> slash commands
+                          - generic [ref=e568]: ", then calls"
+                          - generic [ref=e569]: approval::resolve
+                          - generic [ref=e570]: with the right payload. The orchestrator never knows the difference. The whole approval-gate worker stays untouched. You added a new worker; you didn't replace the existing one.
+                        - generic [ref=e572]:
+                          - generic [ref=e573]: If you want a different policy engine (OPA, Cedar, your own DSL), write a worker that registers
+                          - generic [ref=e574]: policy::check_permissions
+                          - generic [ref=e575]: and returns
+                          - generic [ref=e576]: "{ decision, rule_id?, matched_constraint? }"
+                          - generic [ref=e577]: . Disconnect the default policy worker (which is wrapped inside the harness meta-worker, so you'd disable that handler or run a stripped-down meta-worker). The turn-orchestrator's consultBefore doesn't know the difference. Same 5-second timeout, same fail-closed semantics, same wire shape.
+                        - generic [ref=e580]: The point of these examples isn't the specific replacements. It's the shape of the operation. Every harness layer in the iii stack is reachable through one or two function ids on the bus. Replacing a layer is writing a worker that registers those ids. The rest of the system stays.
+                        - heading "The harness is a slider, not a fork in the road" [level=2] [ref=e582]:
+                          - generic [ref=e584]: The harness is a slider, not a fork in the road
+                        - generic [ref=e587]: The classic harness debate frames itself as thin vs thick. Anthropic's thin loop versus LangGraph's explicit DAG. The framing assumes you pick one side and live with it.
+                        - generic [ref=e590]: When the harness is composed of workers on the same bus, thin vs thick is just a count of how many workers you install. A thin harness is turn-orchestrator plus provider-anthropic plus auth-credentials plus a minimal harness meta-worker. That's it. No approvals, no budgets, no policy engine, no hook fanout. Run anything. Trust the model. Useful for autonomous research agents, experimental loops, anything internal.
+                        - generic [ref=e593]: A thick harness is all thirteen workers plus context-compaction plus a custom policy worker plus a custom approval-gate plus a Slack-integrated approval surface plus the budget worker enforcing per-workspace caps. Useful for an agent running customer workflows where every tool call needs to be auditable and every model spend has to roll up to a finance dashboard.
+                        - generic [ref=e596]: The architectural distance between thin and thick isn't a rewrite. It's a config change. Same wire protocol, same trace shape, same observability story. The slider moves by adding and removing workers from your config.yaml. Everything else holds.
+                        - generic [ref=e598]:
+                          - generic [ref=e599]: It applies inside a single worker too. The turn-orchestrator just shipped a refactor that collapsed its FSM from eleven states to seven, deleted the per-call
+                          - generic [ref=e600]: turn::approval_resume::<sid>/<cid>
+                          - generic [ref=e601]: mechanism in favour of one reactive turn::on_approval state trigger on scope approvals, and inlined
+                          - generic [ref=e602]: tearing_down
+                          - generic [ref=e603]: into a
+                          - generic [ref=e604]: finishSession()
+                          - generic [ref=e605]: port. Every other worker in the stack (
+                          - generic [ref=e606]: approval-gate, session, llm-budget, providers, models-catalog, auth-credentials, hook-fanout, context-compaction
+                          - generic [ref=e607]: ") stayed unchanged. The approval::resolve wire shape didn't move. The contracts held. That's the property the composition gives you: a major internal rewrite of one worker is a self-contained change because every neighbour talks to it through bus-level function ids."
+                        - generic [ref=e610]: This is the part the framework model can't give you. A framework picks a position on the slider for you and locks you in. The worker model leaves the slider in your hand.
+                        - heading "What this means in practice" [level=2] [ref=e612]:
+                          - generic [ref=e614]: What this means in practice
+                        - generic [ref=e617]: If you've been running an agent on top of a framework and feeling the same boundary problems most teams hit at scale, the answer is probably not "rewrite the harness in our own framework." The policy engine doesn't extend the way you need. The approval UI is wired into the framework's chat surface. The credential store can't talk to your secrets manager. The budget tracker is in a sidecar database the trace can't see. The answer is to switch to a substrate where the harness is decomposed in the first place.
+                        - generic [ref=e619]:
+                          - generic [ref=e620]: The fastest way to feel the argument is to clone
+                          - link "github.com/iii-hq/workers" [ref=e622] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/workers
+                            - generic [ref=e623]: github.com/iii-hq/workers
+                          - generic [ref=e624]: ", pnpm install, pnpm build, and run the composite entry point. You'll get the full fourteen-worker harness pointed at an iii engine. You can disable any worker by removing its entry from the boot list. You can swap any worker by writing a replacement that registers the same function ids. You can extend any worker by adding a subscriber to its hook topics. hook-fanout::publish_collect is the generic every iii hook builds on."
+                        - generic [ref=e626]:
+                          - generic [ref=e627]: The docs live at
+                          - link "iii.dev/docs" [ref=e629] [cursor=pointer]:
+                            - /url: https://iii.dev/docs
+                            - generic [ref=e630]: iii.dev/docs
+                          - generic [ref=e631]: . The engine is at
+                          - link "github.com/iii-hq/iii" [ref=e633] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/iii
+                            - generic [ref=e634]: github.com/iii-hq/iii
+                          - generic [ref=e635]: . The worker registry is at
+                          - link "workers.iii.dev" [ref=e637] [cursor=pointer]:
+                            - /url: https://workers.iii.dev/
+                            - generic [ref=e638]: workers.iii.dev
+                          - generic [ref=e639]: . The harness bundle is at
+                          - link "github.com/iii-hq/workers/harness" [ref=e641] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/workers/tree/main/harness
+                            - generic [ref=e642]: github.com/iii-hq/workers/harness
+                          - generic [ref=e643]: .
+                        - heading "The bet" [level=2] [ref=e645]:
+                          - generic [ref=e647]: The bet
+                        - generic [ref=e650]: A harness is not a thing you install. A harness is a set of jobs your system has to do for an agent to run durably, safely and observably. The framework era bundled those jobs together because nothing underneath gave you a way to compose them.
+                        - generic [ref=e652]:
+                          - generic [ref=e653]: "iii's bet is that one primitive:"
+                          - generic [ref=e654]: a worker
+                          - generic [ref=e655]: that connects to the engine over WebSocket and registers functions and triggers is small enough to absorb every one of those jobs separately, and that the resulting stack is more useful than any framework because every layer is independently replaceable.
+                        - generic [ref=e658]: You don't adopt the iii harness. You install the workers you want, write the ones you need, and end up with a harness shaped exactly like your system. Same protocol on every layer. Same trace across every call. Same iii worker add for the parts you take from the registry as for the parts you publish yourself.
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: That's what "
+                          - generic [ref=e662]: build your own agent harness
+                          - generic [ref=e663]: "\" looks like when the substrate is the right shape. Pick the workers. Write the missing ones. Compose. The harness is the composition."
+                        - generic [ref=e665]:
+                          - generic [ref=e666]: "Join us in building the perfect agent harness that the modern world needs:"
+                          - link "discord.gg/iiidev" [ref=e668] [cursor=pointer]:
+                            - /url: //discord.gg/iiidev
+                            - generic [ref=e669]: discord.gg/iiidev
+                        - generic [ref=e671]:
+                          - generic [ref=e672]: iii is open source. Get started at
+                          - link "iii.dev/docs" [ref=e674] [cursor=pointer]:
+                            - /url: https://iii.dev/docs
+                            - generic [ref=e675]: iii.dev/docs
+                          - generic [ref=e676]: . The harness workers are at
+                          - link "github.com/iii-hq/workers" [ref=e678] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/workers
+                            - generic [ref=e679]: github.com/iii-hq/workers
+                          - generic [ref=e680]: and the engine is at
+                          - link "github.com/iii-hq/iii" [ref=e682] [cursor=pointer]:
+                            - /url: https://github.com/iii-hq/iii
+                            - generic [ref=e683]: github.com/iii-hq/iii
+                          - generic [ref=e684]: .
+                        - generic [ref=e686]:
+                          - generic [ref=e687]: — Mike Piccolo, Founder & CEO
+                          - link "@iiidevs" [ref=e689] [cursor=pointer]:
+                            - /url: https://x.com/@iiidevs
+                            - generic [ref=e690]: "@iiidevs"
+                      - status [ref=e692]:
+                        - generic [ref=e693]:
+                          - img [ref=e694]
+                          - generic [ref=e698]:
+                            - generic [ref=e699]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e700] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e704]:
+                    - link "6:41 PM · May 28, 2026" [ref=e706] [cursor=pointer]:
+                      - /url: /mfpiccolo/status/2060069083878408689
+                      - time [ref=e707]: 6:41 PM · May 28, 2026
+                    - generic [ref=e708]: ·
+                    - link "43.9K Views" [ref=e709] [cursor=pointer]:
+                      - /url: /mfpiccolo/status/2060069083878408689/analytics
+                      - generic [ref=e712]: 43.9K
+                      - generic [ref=e713]: Views
+                  - group "6 replies, 35 reposts, 384 likes, 996 bookmarks, 43969 views" [ref=e716]:
+                    - button "6 Replies. Reply" [ref=e718] [cursor=pointer]:
+                      - generic [ref=e719]:
+                        - img [ref=e722]
+                        - generic [ref=e727]: "6"
+                    - button "35 reposts. Repost" [ref=e729] [cursor=pointer]:
+                      - generic [ref=e730]:
+                        - img [ref=e733]
+                        - generic [ref=e738]: "35"
+                    - button "384 Likes. Like" [ref=e740] [cursor=pointer]:
+                      - generic [ref=e741]:
+                        - img [ref=e744]
+                        - generic [ref=e749]: "384"
+                    - button "996 Bookmarks. Bookmark" [ref=e751] [cursor=pointer]:
+                      - generic [ref=e752]:
+                        - img [ref=e755]
+                        - generic [ref=e760]: "996"
+                    - button "Share post" [ref=e763] [cursor=pointer]:
+                      - img [ref=e767]
+                  - button "Read 6 replies" [ref=e770] [cursor=pointer]:
+                    - generic [ref=e771]:
+                      - img [ref=e772]
+                      - generic [ref=e776]: Read 6 replies
+      - generic "Trending" [ref=e781]:
+        - generic [ref=e782]:
+          - region "Sign up" [ref=e784]:
+            - heading "New to X?" [level=2] [ref=e786]:
+              - generic [ref=e787]: New to X?
+            - generic [ref=e788]: Sign up now to get your own personalized timeline!
+            - generic [ref=e789]:
+              - iframe [ref=e792]:
+                - button "Sign up with Google. Opens in new tab" [ref=f2e3] [cursor=pointer]:
+                  - generic [ref=f2e5]:
+                    - img [ref=f2e7]
+                    - generic [ref=f2e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e793] [cursor=pointer]:
+                - generic [ref=e794]:
+                  - img [ref=e795]
+                  - generic [ref=e799]: Sign up with Apple
+              - link "Create account" [ref=e800] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e803]: Create account
+            - generic [ref=e804]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e805] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e806] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e807] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e809]:
+            - heading "Relevant people" [level=2] [ref=e811]:
+              - generic [ref=e812]: Relevant people
+            - list [ref=e813]:
+              - listitem [ref=e814] [cursor=pointer]:
+                - generic [ref=e815]:
+                  - link [ref=e825]:
+                    - /url: /mfpiccolo
+                  - generic [ref=e828]:
+                    - generic [ref=e829]:
+                      - generic [ref=e831]:
+                        - link "Mike Piccolo Verified account" [ref=e833]:
+                          - /url: /mfpiccolo
+                          - generic [ref=e834]:
+                            - generic [ref=e836]: Mike Piccolo
+                            - img "Verified account" [ref=e839]
+                        - link "@mfpiccolo" [ref=e844]:
+                          - /url: /mfpiccolo
+                          - generic [ref=e846]: "@mfpiccolo"
+                      - button "Follow @mfpiccolo" [ref=e848]:
+                        - generic [ref=e851]: Follow
+                    - generic [ref=e852]:
+                      - text: Founder of
+                      - link "@iiidevs" [ref=e855]:
+                        - /url: /iiidevs
+                      - text: Co-founder and board member of
+                      - link "FullStack.com" [ref=e856]:
+                        - /url: https://t.co/imPpSoV4Gu
+          - region "Trending now" [ref=e858]:
+            - heading "Trending now" [level=1] [ref=e859]
+            - 'generic "Timeline: Trending now" [ref=e860]':
+              - generic [ref=e861]:
+                - heading "What’s happening" [level=2] [ref=e865]:
+                  - generic [ref=e866]: What’s happening
+                - link "Sports · Trending Game 6" [ref=e869] [cursor=pointer]:
+                  - generic [ref=e870]:
+                    - generic [ref=e872]: Sports · Trending
+                    - generic [ref=e873]: Game 6
+                - link "WNBA · Trending Chennedy Carter" [ref=e876] [cursor=pointer]:
+                  - generic [ref=e877]:
+                    - generic [ref=e879]: WNBA · Trending
+                    - generic [ref=e880]: Chennedy Carter
+                - 'link "Love Island USA · Trending #loveislandusa Trending with Beatriz" [ref=e883] [cursor=pointer]':
+                  - generic [ref=e884]:
+                    - generic [ref=e886]: Love Island USA · Trending
+                    - generic [ref=e888]: "#loveislandusa"
+                    - generic [ref=e889]:
+                      - text: Trending with
+                      - link "Beatriz" [ref=e890]:
+                        - /url: /search?q=Beatriz&src=trend_click&vertical=trends
+                - link "Politics · Trending Article 5" [ref=e893] [cursor=pointer]:
+                  - generic [ref=e894]:
+                    - generic [ref=e896]: Politics · Trending
+                    - generic [ref=e897]: Article 5
+                - link "Show more" [ref=e900] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e901]: Show more
+          - navigation "Footer" [ref=e903]:
+            - generic [ref=e904]:
+              - link "Terms of Service" [ref=e905] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e906]: "|"
+            - generic [ref=e907]:
+              - link "Privacy Policy" [ref=e908] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e909]: "|"
+            - generic [ref=e910]:
+              - link "Cookie Policy" [ref=e911] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e912]: "|"
+            - generic [ref=e913]:
+              - link "Accessibility" [ref=e914] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e915]: "|"
+            - generic [ref=e916]:
+              - link "Ads info" [ref=e917] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e918]: "|"
+            - button "More" [ref=e919] [cursor=pointer]:
+              - generic [ref=e920]:
+                - text: More
+                - img [ref=e921]
+            - generic [ref=e924]: © 2026 X Corp.

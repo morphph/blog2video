@@ -1,0 +1,327 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /addyosmani/article/2059844244907696186
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Addy Osmani Verified account @addyosmani 26 replies, 86 reposts, 548 likes, 925 bookmarks, 61407 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /addyosmani
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Addy Osmani Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /addyosmani
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Addy Osmani
+                          - img "Verified account" [ref=e116]
+                      - link "@addyosmani" [ref=e122] [cursor=pointer]:
+                        - /url: /addyosmani
+                        - generic [ref=e123]: "@addyosmani"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /addyosmani/article/2059844244907696186/media/2059843374983806976
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: The Orchestration Tax
+                      - group "26 replies, 86 reposts, 548 likes, 925 bookmarks, 61407 views" [ref=e154]:
+                        - button "26 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "26"
+                        - button "86 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: "86"
+                        - button "548 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: "548"
+                        - link "61407 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /addyosmani/status/2059844244907696186/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 61K
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - generic [ref=e224]: Starting more AI agents is easy now. However, more agents running doesn’t mean there's more of you available - your cognitive bandwidth doesn’t parallelize. All the judgement to actually steer them and merge the changes they make still has to route through exactly one serial processor which is just you. Orchestration tax is basically the price you pay for forgetting this and the only real fix is to start architecting your own attention like you architect any concurrent system.
+                        - generic [ref=e226]:
+                          - generic [ref=e227]: I was on a
+                          - link "panel" [ref=e229] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=VTYx7Ex-0bA
+                            - generic [ref=e230]: panel
+                          - generic [ref=e231]: "at Google I/O with Richard Seroter, Aja Hammerly and Ciera Jaspan talking about what software engineering looks like right now and how it will probably evolve. Near the end Richard asked us what is one thing developers should walk away and do differently. I said the thing I been circling around for months:"
+                          - generic [ref=e232]: feeling busy is definitely not the same as being productive
+                          - generic [ref=e233]: . You can run 20 agents and feel completely busy. But thats not 20 agents worth of shipped work.
+                        - generic [ref=e249]:
+                          - generic "Embedded video" [ref=e252]
+                          - button "Play Video" [ref=e259] [cursor=pointer]:
+                            - img [ref=e260]
+                        - generic [ref=e266]: Earlier in that chat Richard gave this problem a name. "You talked about the orchestration tax" he said. "You can't manage twenty agents successfully in your own brain." He is totally right. I want to breakdown this idea properly because its not a discipline problem. It is an architecture problem.
+                        - generic [ref=e269]: "The line from the panel I keep thinking about is something I said almost randomly: running multiple agents does not mean there is more of you."
+                        - heading "The asymmetry people don’t price in" [level=2] [ref=e271]:
+                          - generic [ref=e273]: The asymmetry people don’t price in
+                        - generic [ref=e276]: There is this hidden asymmetry in agentic workflows. Starting an agent is very cheap. It is just a keystroke or a sentence prompt. But closing the loop on the agent is not cheap at all. Someone has to check if what came back is correct and reconcile it with whatever the other agents touched. That someone is you. And there is exactly one of you.
+                        - generic [ref=e278]:
+                          - generic [ref=e279]: I wrote about a piece of this last month in
+                          - link "Your parallel Agent limit" [ref=e281] [cursor=pointer]:
+                            - /url: https://addyosmani.com/blog/cognitive-parallel-agents/
+                            - generic [ref=e282]: Your parallel Agent limit
+                          - generic [ref=e283]: ", mostly about the ambient anxiety of not knowing which paralell thread is quietly failing. This post is about the shape underneath that cost. When you start seeing agent development as a concurrent system, you realize the human is just a component inside it. The slow serial component."
+                        - heading "You are the single thread resource" [level=2] [ref=e285]:
+                          - generic [ref=e287]: You are the single thread resource
+                        - generic [ref=e290]: If you ever wrote concurrent code you already have the right intuition. You just been pointing it at the wrong part of the system.
+                        - generic [ref=e293]: Python has the Global Interpreter Lock (GIL). You can spawn as many threads as you want but only one executes python bytecode at a time because they must acquire the lock. You are the GIL of your AI agents. They all can run at once. But when any of their work needs genuine understanding of the architecture or resolving merge conflicts, that work has to acquire the lock. There is one lock. You hold it.
+                        - generic [ref=e295]:
+                          - link "Amdahl’s Law" [ref=e297] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/Amdahl's_law
+                            - generic [ref=e298]: Amdahl’s Law
+                          - generic [ref=e299]: makes this very precise. The speedup you get from parallelizing is capped by the fraction of work that stays serial. If a big chunk of your pipeline cant be parallelized, you top out at a hard limit no matter how many cores you throw at it. In agent development the serial fraction is the judgement. Spawning 8 agents doesn’t speed up your judgement time. It just makes the queue of things feeding into it much deeper.
+                        - generic [ref=e302]: "This is an old performance engineering fact that still surprise people: optimizing the non bottleneck part doesn’t increase throughput. You just grow the pile of unfinished work sitting in front of the bottleneck. Adding agents optimize the part that was never the constraint. The constraint is the review step and the throughput of your system equals exactly the throughput of that step. The orchestration tax is the structural gap between agent production and what you can actually merge. It’s what happens when you put a single-threaded resource in charge of a concurrent one."
+                        - heading "Grinding won't fix structural limits" [level=2] [ref=e304]:
+                          - generic [ref=e306]: Grinding won't fix structural limits
+                        - generic [ref=e309]: At the panel I said I never felt more productive with my tools but I am also more tired than I ever been. Both halves are completely real and they have the same cause.
+                        - generic [ref=e312]: The tiredness has a very specific cause. It is how running a serial processor at 100% with no slack feels like. Everytime you check on an agent you been away from you pay a context switch cost. You flush your brain and reload a different context from cold. CPUs do this in microseconds and architects still work hard to avoid it. You do it in minutes and you never reload the context perfectly. Five agents is not 1x workload done five times. It is 5 cold reloads plus a background brain process constantly worrying about which agent you should be checking.
+                        - generic [ref=e314]:
+                          - generic [ref=e315]: You can’t just try harder to fix a structural limit. The tax will be paid anyway. If you try to grind it out, the limit just shows up as shallow code reviews or experiencing
+                          - link "cognitive surrender" [ref=e317] [cursor=pointer]:
+                            - /url: https://addyosmani.com/blog/cognitive-surrender/
+                            - generic [ref=e318]: cognitive surrender
+                          - generic [ref=e319]: where you just accept the agent’s code because forming your own opinion costs attention you don’t have anymore. You either pay the tax deliberately or you let it quietly destroy your understanding of your own system.
+                        - heading "Architect your attention" [level=2] [ref=e321]:
+                          - generic [ref=e323]: Architect your attention
+                        - generic [ref=e326]: So you have to treat your attention as the scarce serial resource it is. You wouldn’t design a distributed system without thinking hard about the bottleneck. Give your brain the same respect.
+                        - generic [ref=e329]: "Some things that actually held up for me:"
+                        - generic [ref=e331]:
+                          - generic [ref=e332]: Scale fleet to review rate, not the UI.
+                          - generic [ref=e333]: A good concurrent system uses backpressure so the queue doesn’t grow infinitely. The producer slows down to match the consumer. Your agent count is the producer and your review rate is the consumer. The right number of parallel agents is how many you can actually code review properly. For most of us this is a low single digit. The AI tool will happily let you spawn 20 but that is just a UI feature.
+                        - generic [ref=e335]:
+                          - generic [ref=e336]: Sort the work.
+                          - generic [ref=e337]: I mentioned this to Richard when he asked how I navigate it. I keep two piles of tasks. One is isolated work that I’m happy to delegate to background agents running in the Cloud. These can run async and often just need me at the final gate. The other pile is complex tasks where the judgement
+                          - generic [ref=e338]: is
+                          - generic [ref=e339]: the work. Like a weird bug or architecture design. The big mistake is trying to paralellize the second pile. Doing multiple complex tasks doesn’t scale your output. It just thrashes the lock and everything comes out worse.
+                        - generic [ref=e341]:
+                          - generic [ref=e342]: Batch your reviews.
+                          - generic [ref=e343]: Context switching cost you heavily everytime you do it. Reviewing 4 agents at the same time in one sitting is much cheaper than checking one, leaving to do something else and returning cold. Give agents a long leash. Let the work pile up a bit and process the batch.
+                        - generic [ref=e345]:
+                          - generic [ref=e346]: Only spend the lock on judgement.
+                          - generic [ref=e347]: Dont waste your brain on things the machine can verify itself. Make the agent write a passing test or generate a screenshot. They can prove the boring 80% themselves so you only spend your scarce attention on the 20% that genuinely needs a human.
+                        - generic [ref=e349]:
+                          - generic [ref=e350]: Protect your serial time.
+                          - generic [ref=e351]: The bottleneck needs your best hours, not the leftover minutes between agent check-ins. Sometimes the highest leverage move is to stop orchestrating entirely, close the laptop full of agents and just think hard about one single problem with the lock held the whole time. Orchestrating is not the real work. Its the overhead around the work.
+                        - generic [ref=e354]: Aja pointed out that architecture is the urgent skill now. Knowing what belongs inside one agent and what is too much for it. I would add that you are a component in that system. Your attention has a known, low serial throughput. The system either respects that number or it routes around it by secretly lowering your standards.
+                        - heading "Busy vs Productive" [level=2] [ref=e356]:
+                          - generic [ref=e358]: Busy vs Productive
+                        - generic [ref=e361]: This is really important because the failure mode is invisible to you. Twenty running agents gives you this feeling of massive productivity. The dashboard is full and everything moves. But that feeling is decoupled from actually shipping good code to main. You can be maximally busy and barely produce anything. From the inside it feels identical.
+                        - generic [ref=e363]:
+                          - generic [ref=e364]: Ciera pointed out
+                          - link "Margaret-Anne Storey’s work on debt" [ref=e366] [cursor=pointer]:
+                            - /url: https://margaretstorey.com/blog/2026/02/09/cognitive-debt/
+                            - generic [ref=e367]: Margaret-Anne Storey’s work on debt
+                          - generic [ref=e368]: . We talked about technical debt and cognitive debt. The orchestration tax left unpaid is how you accumulate both at once. You merge stuff you didn’t read well. Your mental model of the codebase goes completely stale. None of this shows up on the dashboard today. It shows up when production breaks and you look at the system and realize you have no idea how it works anymore.
+                        - generic [ref=e371]: So this is the actual takeaway. Spawning agents is not the skill. Anyone can run 20.
+                        - generic [ref=e374]: The real skill is designing the system around the one serial resource that cannot be cloned or parallelized. That resource is your attention.
+                        - generic [ref=e377]: Architect it the way you architect anything else you depend on in production.
+                      - status [ref=e379]:
+                        - generic [ref=e380]:
+                          - img [ref=e381]
+                          - generic [ref=e385]:
+                            - generic [ref=e386]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e387] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e391]:
+                    - link "3:48 AM · May 28, 2026" [ref=e393] [cursor=pointer]:
+                      - /url: /addyosmani/status/2059844244907696186
+                      - time [ref=e394]: 3:48 AM · May 28, 2026
+                    - generic [ref=e395]: ·
+                    - link "61.4K Views" [ref=e396] [cursor=pointer]:
+                      - /url: /addyosmani/status/2059844244907696186/analytics
+                      - generic [ref=e399]: 61.4K
+                      - generic [ref=e400]: Views
+                  - group "26 replies, 86 reposts, 548 likes, 925 bookmarks, 61407 views" [ref=e403]:
+                    - button "26 Replies. Reply" [ref=e405] [cursor=pointer]:
+                      - generic [ref=e406]:
+                        - img [ref=e409]
+                        - generic [ref=e414]: "26"
+                    - button "86 reposts. Repost" [ref=e416] [cursor=pointer]:
+                      - generic [ref=e417]:
+                        - img [ref=e420]
+                        - generic [ref=e425]: "86"
+                    - button "548 Likes. Like" [ref=e427] [cursor=pointer]:
+                      - generic [ref=e428]:
+                        - img [ref=e431]
+                        - generic [ref=e436]: "548"
+                    - button "925 Bookmarks. Bookmark" [ref=e438] [cursor=pointer]:
+                      - generic [ref=e439]:
+                        - img [ref=e442]
+                        - generic [ref=e447]: "925"
+                    - button "Share post" [ref=e450] [cursor=pointer]:
+                      - img [ref=e454]
+                  - button "Read 26 replies" [ref=e457] [cursor=pointer]:
+                    - generic [ref=e458]:
+                      - img [ref=e459]
+                      - generic [ref=e463]: Read 26 replies
+      - generic "Trending" [ref=e468]:
+        - generic [ref=e469]:
+          - region "Sign up" [ref=e471]:
+            - heading "New to X?" [level=2] [ref=e473]:
+              - generic [ref=e474]: New to X?
+            - generic [ref=e475]: Sign up now to get your own personalized timeline!
+            - generic [ref=e476]:
+              - iframe [ref=e479]:
+                - button "Sign up with Google. Opens in new tab" [ref=f2e3] [cursor=pointer]:
+                  - generic [ref=f2e5]:
+                    - img [ref=f2e7]
+                    - generic [ref=f2e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e480] [cursor=pointer]:
+                - generic [ref=e481]:
+                  - img [ref=e482]
+                  - generic [ref=e486]: Sign up with Apple
+              - link "Create account" [ref=e487] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e490]: Create account
+            - generic [ref=e491]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e492] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e493] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e494] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e496]:
+            - heading "Relevant people" [level=2] [ref=e498]:
+              - generic [ref=e499]: Relevant people
+            - list [ref=e500]:
+              - listitem [ref=e501] [cursor=pointer]:
+                - generic [ref=e502]:
+                  - link [ref=e512]:
+                    - /url: /addyosmani
+                  - generic [ref=e515]:
+                    - generic [ref=e516]:
+                      - generic [ref=e518]:
+                        - link "Addy Osmani Verified account" [ref=e520]:
+                          - /url: /addyosmani
+                          - generic [ref=e521]:
+                            - generic [ref=e523]: Addy Osmani
+                            - img "Verified account" [ref=e526]
+                        - link "@addyosmani" [ref=e531]:
+                          - /url: /addyosmani
+                          - generic [ref=e533]: "@addyosmani"
+                      - button "Follow @addyosmani" [ref=e535]:
+                        - generic [ref=e538]: Follow
+                    - generic [ref=e539]:
+                      - text: Director,
+                      - link "@GoogleCloud" [ref=e542]:
+                        - /url: /GoogleCloud
+                      - text: AI. Gemini
+                      - img "✨" [ref=e543]
+                      - text: "Agents. Prev: Eng. leader,"
+                      - link "@GoogleChrome" [ref=e546]:
+                        - /url: /GoogleChrome
+                      - text: • Author • Great user, developer & AI experiences •
+                      - link "@GoogleAI" [ref=e549]:
+                        - /url: /GoogleAI
+                      - link "@GoogleDeepMind" [ref=e552]:
+                        - /url: /GoogleDeepMind
+          - region "Trending now" [ref=e554]:
+            - heading "Trending now" [level=1] [ref=e555]
+            - 'generic "Timeline: Trending now" [ref=e556]':
+              - generic [ref=e557]:
+                - heading "What’s happening" [level=2] [ref=e561]:
+                  - generic [ref=e562]: What’s happening
+                - 'link "Love Island USA · Trending #loveislandusa Trending with Beatriz" [ref=e565] [cursor=pointer]':
+                  - generic [ref=e566]:
+                    - generic [ref=e568]: Love Island USA · Trending
+                    - generic [ref=e570]: "#loveislandusa"
+                    - generic [ref=e571]:
+                      - text: Trending with
+                      - link "Beatriz" [ref=e572]:
+                        - /url: /search?q=Beatriz&src=trend_click&vertical=trends
+                - link "Sports · Trending Monk" [ref=e575] [cursor=pointer]:
+                  - generic [ref=e576]:
+                    - generic [ref=e578]: Sports · Trending
+                    - generic [ref=e579]: Monk
+                - link "Trending in United States Dream Team" [ref=e582] [cursor=pointer]:
+                  - generic [ref=e583]:
+                    - generic [ref=e585]: Trending in United States
+                    - generic [ref=e586]: Dream Team
+                - link "Trending in United States Brandon Roy" [ref=e589] [cursor=pointer]:
+                  - generic [ref=e590]:
+                    - generic [ref=e592]: Trending in United States
+                    - generic [ref=e593]: Brandon Roy
+                - link "Show more" [ref=e596] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e597]: Show more
+          - navigation "Footer" [ref=e599]:
+            - generic [ref=e600]:
+              - link "Terms of Service" [ref=e601] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e602]: "|"
+            - generic [ref=e603]:
+              - link "Privacy Policy" [ref=e604] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e605]: "|"
+            - generic [ref=e606]:
+              - link "Cookie Policy" [ref=e607] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e608]: "|"
+            - generic [ref=e609]:
+              - link "Accessibility" [ref=e610] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e611]: "|"
+            - generic [ref=e612]:
+              - link "Ads info" [ref=e613] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e614]: "|"
+            - button "More" [ref=e615] [cursor=pointer]:
+              - generic [ref=e616]:
+                - text: More
+                - img [ref=e617]
+            - generic [ref=e620]: © 2026 X Corp.

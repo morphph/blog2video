@@ -1,0 +1,19 @@
+{
+  "url": "https://x.com/addyosmani/article/2059844244907696186",
+  "author": "Addy Osmani",
+  "handle": "@addyosmani",
+  "title": "The Orchestration Tax",
+  "published": "May 28, 2026 3:48 AM",
+  "stats": {
+    "views": 61407,
+    "likes": 548,
+    "bookmarks": 925,
+    "reposts": 86,
+    "replies": 26
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    "images/image_1_cover.jpg",
+    "images/image_2_video_thumb.jpg"
+  ]
+}

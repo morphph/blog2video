@@ -1,0 +1,21 @@
+{
+  "url": "https://x.com/pejmanjohn/status/2061091767030825003",
+  "author": "Pejman Pour-Moezzi",
+  "handle": "@pejmanjohn",
+  "title": "Stop Giving Every Agent Its Own Skull",
+  "published": "2026-05-31T14:25:00Z",
+  "stats": {
+    "replies": 18,
+    "reposts": 41,
+    "likes": 259,
+    "bookmarks": 813,
+    "views": 184486
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {
+      "path": "images/image_1.jpg",
+      "caption": "Hero image: four agents (OpenClaw, Codex, Claude Code, Other Agents) connected to a central shared memory layer labeled 'You Own The Memory'"
+    }
+  ]
+}

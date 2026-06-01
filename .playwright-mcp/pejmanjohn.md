@@ -1,0 +1,313 @@
+- generic [ref=e3]:
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: Don’t miss what’s happening
+      - generic [ref=e18]: People on X are the first to know.
+    - generic [ref=e21]:
+      - link "Log in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+        - generic [ref=e26]: Log in
+      - link "Sign up" [ref=e28] [cursor=pointer]:
+        - /url: /i/flow/signup
+        - generic [ref=e31]: Sign up
+  - button "Skip to home timeline" [ref=e32] [cursor=pointer]
+  - button "Skip to trending" [ref=e34] [cursor=pointer]
+  - banner [ref=e36]:
+    - generic [ref=e39]:
+      - heading "X" [level=1] [ref=e41] [cursor=pointer]:
+        - link "X" [ref=e42]:
+          - /url: /
+          - img [ref=e44]
+      - generic:
+        - navigation "Primary"
+  - main [ref=e4]:
+    - generic [ref=e48]:
+      - generic "Home timeline" [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e57] [cursor=pointer]:
+            - button "Back" [ref=e59]:
+              - img [ref=e61]
+            - heading "Article" [level=2] [ref=e66]
+            - link "Focus mode" [ref=e69]:
+              - /url: /pejmanjohn/article/2061091767030825003
+              - img [ref=e71]
+          - generic:
+            - generic:
+              - status:
+                - button:
+                  - generic:
+                    - img
+                    - generic: See new posts
+        - region "Conversation" [ref=e74]:
+          - heading "Conversation" [level=1] [ref=e75]
+          - 'generic "Timeline: Conversation" [ref=e76]':
+            - article "Pejman Pour-Moezzi Verified account @pejmanjohn 18 replies, 41 reposts, 259 likes, 813 bookmarks, 184486 views" [ref=e81]:
+              - generic [ref=e83]:
+                - generic [ref=e87]:
+                  - link [active] [ref=e99] [cursor=pointer]:
+                    - /url: /pejmanjohn
+                  - generic [ref=e104]:
+                    - generic [ref=e107]:
+                      - link "Pejman Pour-Moezzi Verified account" [ref=e110] [cursor=pointer]:
+                        - /url: /pejmanjohn
+                        - generic [ref=e111]:
+                          - generic [ref=e113]: Pejman Pour-Moezzi
+                          - img "Verified account" [ref=e116]
+                      - link "@pejmanjohn" [ref=e122] [cursor=pointer]:
+                        - /url: /pejmanjohn
+                        - generic [ref=e123]: "@pejmanjohn"
+                    - button "More" [ref=e129] [cursor=pointer]:
+                      - img [ref=e133]
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - link "Image" [ref=e143] [cursor=pointer]:
+                      - /url: /pejmanjohn/article/2061091767030825003/media/2060972603238756352
+                      - generic "Image" [ref=e147]:
+                        - img "Image" [ref=e149]
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: Stop Giving Every Agent Its Own Skull
+                      - group "18 replies, 41 reposts, 259 likes, 813 bookmarks, 184486 views" [ref=e154]:
+                        - button "18 Replies. Reply" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e157]:
+                            - img [ref=e160]
+                            - generic [ref=e165]: "18"
+                        - button "41 reposts. Repost" [ref=e167] [cursor=pointer]:
+                          - generic [ref=e168]:
+                            - img [ref=e171]
+                            - generic [ref=e176]: "41"
+                        - button "259 Likes. Like" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e182]
+                            - generic [ref=e187]: "259"
+                        - link "184486 views. View post analytics" [ref=e189] [cursor=pointer]:
+                          - /url: /pejmanjohn/status/2061091767030825003/analytics
+                          - generic [ref=e190]:
+                            - img [ref=e193]
+                            - generic [ref=e198]: 184K
+                        - button "Bookmark" [ref=e200] [cursor=pointer]:
+                          - img [ref=e204]
+                        - button "Share post" [ref=e209] [cursor=pointer]:
+                          - img [ref=e213]
+                      - generic [ref=e221]:
+                        - generic [ref=e224]: We are building agents to feel like people. That is useful in some ways, but we are also copying one of the biggest limitations of being human.
+                        - generic [ref=e227]: Meet someone new and they know nothing about you. You need to explain things like your interests, your backstory and goals. Then you do it again with the next person, and again with the next.
+                        - generic [ref=e230]: "This is the tax of being human: knowledge lives in skulls, and skulls do not sync."
+                        - generic [ref=e233]: We have paid that tax our whole lives, so we barely notice it. It's just how humans work. But now we are rebuilding it inside software systems that do not need to be so isolated.
+                        - generic [ref=e236]: Each agent is like its own little brain with its own memory. It gets its own partial view of you and your work. If you zoom out and look across the whole suite of agents you are using you'll find that the whole system and the picture of you feels fragmented.
+                        - heading "My Agents Are Strangers" [level=2] [ref=e238]:
+                          - generic [ref=e240]: My Agents Are Strangers
+                        - generic [ref=e243]: I notice this most in my own workflow because I use several agents on purpose.
+                        - generic [ref=e246]: "OpenClaw is my personal assistant. It knows the most about my life: family, schedule, meetings, projects, preferences, and the rhythm of what is going on day to day. It is also where I develop ideas. I talk something through, argue with it, find the shape of the idea, abandon a few branches, resurrect one, and only then move to execution."
+                        - generic [ref=e249]: So OpenClaw ends up with the richest context on both me and my ideas.
+                        - generic [ref=e252]: Codex is where I build. Once an idea is ready, I move there. But the reasoning that produced the idea usually stayed behind in OpenClaw. Codex sees the repo, and a plan. But it does not see the conversation that birthed the plan.
+                        - generic [ref=e255]: "Claude Code is where I go for design and writing. I might build something in Codex, then ask Claude Code to help with a landing page, demo script, or drafting a blog post. The handoff is not terrible as I can point it to the same repo folder on disk. But the reasoning behind the work is still back on OpenClaw: the audience, the tradeoffs, the rejected approaches, the emotional tone of the thing."
+                        - generic [ref=e258]: The output can be competent and context-blind at the same time.
+                        - generic [ref=e261]: There is a physical layer too. OpenClaw runs on my Mac Mini. Codex and Claude Code run on my MacBook Pro. Other agents may live partly or entirely in the cloud. Different machines. Different filesystems. Different local state. The repo can sync through GitHub, but the project’s memory does not.
+                        - generic [ref=e264]: The islands are not just conceptual. They are literal.
+                        - generic [ref=e267]: Each agent re-derives what I have already explained. Each is oblivious to what the agent next door figured out an hour ago.
+                        - heading "The Repo Is Not the Memory" [level=2] [ref=e269]:
+                          - generic [ref=e271]: The Repo Is Not the Memory
+                        - generic [ref=e274]: "The obvious objection is: just write things down."
+                        - generic [ref=e277]: Use markdown. Keep plans in the repo. Store decisions in docs. Write summaries. Have every agent read the same files.
+                        - generic [ref=e280]: This helps but it only captures the destination, not the journey.
+                        - generic [ref=e283]: "The real value is often in the session itself: the sparring, the false starts, the branches you explored and set aside. When you commit a plan to paper, you compress the conversation. You keep the conclusion and throw away most of the path."
+                        - generic [ref=e286]: Then, days later, the path matters again.
+                        - generic [ref=e289]: I will go back to OpenClaw and say, “Remember that thing we talked about? Actually, let’s do it that other way.”
+                        - generic [ref=e292]: What I am really doing is re-entering the idea tree and retrieving a branch I had pruned. That branch never made it into the markdown file because, at the time, it seemed dead.
+                        - generic [ref=e295]: A synced repo cannot solve that. The repo has artifacts. The agent session has context. The written plan is the tip of the iceberg. The conversation is the rest of it.
+                        - generic [ref=e298]: That does not mean dumping every transcript everywhere. A lot of conversation is noise. Some of it is sensitive. Some of it is wrong. Some should expire. Some should stay local to a project or role.
+                        - generic [ref=e301]: The useful unit is the thing worth keeping.
+                        - generic [ref=e304]: When an agent learns one of those things, it should not be trapped inside the agent where it happened.
+                        - heading "The Hive Mind Is the Point" [level=2] [ref=e306]:
+                          - generic [ref=e308]: The Hive Mind Is the Point
+                        - generic [ref=e311]: For humans, knowledge moves slowly. It has to be spoken, written, taught, misunderstood, clarified, retold. Even inside a company, the same fact travels through meetings, memos, Slack threads, and one-on-ones like a rumor trying to become infrastructure.
+                        - generic [ref=e314]: Agents do not have that limitation.
+                        - generic [ref=e317]: If one of them learns something useful, the others can know it too. Right away, if the memory layer is built that way.
+                        - generic [ref=e320]: That starts to feel less like better notes and more like a hive mind.
+                        - generic [ref=e323]: Imagine an AI version of a company leader sitting in ten meetings at once.
+                        - generic [ref=e326]: In one meeting, it learns that a major customer is confused about pricing. In another, the product team is debating whether pricing is clear enough. In a third, sales is trying to explain why a deal stalled.
+                        - generic [ref=e329]: In the human version, those dots might take days or weeks to connect. Maybe they never connect at all. The customer complaint becomes a support note. The product debate becomes a roadmap item. The sales issue becomes a pipeline problem.
+                        - generic [ref=e332]: In the agent version, the collision can happen while the meetings are still happening.
+                        - generic [ref=e335]: The knowledge is not trapped in the room where it was learned.
+                        - generic [ref=e338]: The personal version is smaller, but it has the same shape.
+                        - generic [ref=e341]: A design decision made while coding can improve the launch copy five minutes later. A preference corrected in a personal assistant can change the default in a coding agent. A half-formed idea from last week can resurface when the right project appears.
+                        - generic [ref=e344]: The system stops behaving like a set of assistants and starts behaving like one distributed mind with different hands.
+                        - heading "The Missing Layer" [level=2] [ref=e346]:
+                          - generic [ref=e348]: The Missing Layer
+                        - generic [ref=e351]: Real work does not respect tool boundaries.
+                        - generic [ref=e354]: A project can start as a personal note, become a product decision, turn into code, need design, launch writing, support, and follow-up. That is why I use multiple agents as specialization is useful.
+                        - generic [ref=e357]: "The gap is obvious once you feel it: the tools are getting more capable, but the memory underneath them is still fragmented. And the fragmentation gets worse as agents spread across apps, machines, cloud services, and local environments."
+                        - generic [ref=e360]: This feels like one of the important areas for development over the next year.
+                        - generic [ref=e363]: You can already see promising projects attacking different parts of it.
+                        - generic [ref=e365]:
+                          - link "@garrytan" [ref=e367] [cursor=pointer]:
+                            - /url: https://x.com/@garrytan
+                            - generic [ref=e368]: "@garrytan"
+                          - generic [ref=e369]: ’s
+                          - link "GBrain" [ref=e371] [cursor=pointer]:
+                            - /url: https://github.com/garrytan/gbrain/
+                            - generic [ref=e372]: GBrain
+                          - generic [ref=e373]: "points toward a shared knowledge graph behind MCP: point it at different data sources and the knowledge graph grows and different agents can query it instead of each keeping its own private memory."
+                        - generic [ref=e375]:
+                          - link "@doodlestein" [ref=e377] [cursor=pointer]:
+                            - /url: https://x.com/@doodlestein
+                            - generic [ref=e378]: "@doodlestein"
+                          - generic [ref=e379]: ’s
+                          - link "CASS" [ref=e381] [cursor=pointer]:
+                            - /url: https://github.com/Dicklesworthstone/coding_agent_session_search
+                            - generic [ref=e382]: CASS
+                          - generic [ref=e383]: "tackles the part that markdown and repos miss: the session history itself. It makes local agent sessions searchable across Codex, Claude Code, OpenClaw, Cursor, Aider, and more, which matters because the session often contains the reasoning the repo left behind."
+                        - generic [ref=e386]: These projects are signals that the problem is real, and that important pieces of the answer are starting to come into view.
+                        - generic [ref=e389]: Many agents with one memory layer underneath them, owned by you.
+                      - status [ref=e391]:
+                        - generic [ref=e392]:
+                          - img [ref=e393]
+                          - generic [ref=e397]:
+                            - generic [ref=e398]: Want to publish your own Article?
+                            - link "Upgrade to Premium" [ref=e399] [cursor=pointer]:
+                              - /url: /i/premium_sign_up
+                  - generic [ref=e403]:
+                    - link "2:25 PM · May 31, 2026" [ref=e405] [cursor=pointer]:
+                      - /url: /pejmanjohn/status/2061091767030825003
+                      - time [ref=e406]: 2:25 PM · May 31, 2026
+                    - generic [ref=e407]: ·
+                    - link "184.4K Views" [ref=e408] [cursor=pointer]:
+                      - /url: /pejmanjohn/status/2061091767030825003/analytics
+                      - generic [ref=e411]: 184.4K
+                      - generic [ref=e412]: Views
+                  - group "18 replies, 41 reposts, 259 likes, 813 bookmarks, 184486 views" [ref=e415]:
+                    - button "18 Replies. Reply" [ref=e417] [cursor=pointer]:
+                      - generic [ref=e418]:
+                        - img [ref=e421]
+                        - generic [ref=e426]: "18"
+                    - button "41 reposts. Repost" [ref=e428] [cursor=pointer]:
+                      - generic [ref=e429]:
+                        - img [ref=e432]
+                        - generic [ref=e437]: "41"
+                    - button "259 Likes. Like" [ref=e439] [cursor=pointer]:
+                      - generic [ref=e440]:
+                        - img [ref=e443]
+                        - generic [ref=e448]: "259"
+                    - button "813 Bookmarks. Bookmark" [ref=e450] [cursor=pointer]:
+                      - generic [ref=e451]:
+                        - img [ref=e454]
+                        - generic [ref=e459]: "813"
+                    - button "Share post" [ref=e462] [cursor=pointer]:
+                      - img [ref=e466]
+                  - button "Read 18 replies" [ref=e469] [cursor=pointer]:
+                    - generic [ref=e470]:
+                      - img [ref=e471]
+                      - generic [ref=e475]: Read 18 replies
+      - generic "Trending" [ref=e480]:
+        - generic [ref=e481]:
+          - region "Sign up" [ref=e483]:
+            - heading "New to X?" [level=2] [ref=e485]:
+              - generic [ref=e486]: New to X?
+            - generic [ref=e487]: Sign up now to get your own personalized timeline!
+            - generic [ref=e488]:
+              - iframe [ref=e491]:
+                - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                  - generic [ref=f1e5]:
+                    - img [ref=f1e7]
+                    - generic [ref=f1e14]: Sign up with Google
+              - button "Sign up with Apple" [ref=e492] [cursor=pointer]:
+                - generic [ref=e493]:
+                  - img [ref=e494]
+                  - generic [ref=e498]: Sign up with Apple
+              - link "Create account" [ref=e499] [cursor=pointer]:
+                - /url: /i/flow/signup
+                - generic [ref=e502]: Create account
+            - generic [ref=e503]:
+              - text: By signing up, you agree to the
+              - link "Terms of Service" [ref=e504] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - text: and
+              - link "Privacy Policy" [ref=e505] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - text: ", including"
+              - link "Cookie Use." [ref=e506] [cursor=pointer]:
+                - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - complementary "Relevant people" [ref=e508]:
+            - heading "Relevant people" [level=2] [ref=e510]:
+              - generic [ref=e511]: Relevant people
+            - list [ref=e512]:
+              - listitem [ref=e513] [cursor=pointer]:
+                - generic [ref=e514]:
+                  - link [ref=e524]:
+                    - /url: /pejmanjohn
+                  - generic [ref=e527]:
+                    - generic [ref=e528]:
+                      - generic [ref=e530]:
+                        - link "Pejman Pour-Moezzi Verified account" [ref=e532]:
+                          - /url: /pejmanjohn
+                          - generic [ref=e533]:
+                            - generic [ref=e535]: Pejman Pour-Moezzi
+                            - img "Verified account" [ref=e538]
+                        - link "@pejmanjohn" [ref=e543]:
+                          - /url: /pejmanjohn
+                          - generic [ref=e545]: "@pejmanjohn"
+                      - button "Follow @pejmanjohn" [ref=e547]:
+                        - generic [ref=e550]: Follow
+                    - generic [ref=e551]:
+                      - text: Founded
+                      - link "@Magoosh" [ref=e554]:
+                        - /url: /Magoosh
+                      - text: "& Alo Moves (acquired by Alo Yoga). Exploring what products and companies look like now that agents are here."
+          - region "Trending now" [ref=e556]:
+            - heading "Trending now" [level=1] [ref=e557]
+            - 'generic "Timeline: Trending now" [ref=e558]':
+              - generic [ref=e559]:
+                - heading "What’s happening" [level=2] [ref=e563]:
+                  - generic [ref=e564]: What’s happening
+                - link "Entertainment · Trending Clint Eastwood" [ref=e567] [cursor=pointer]:
+                  - generic [ref=e568]:
+                    - generic [ref=e570]: Entertainment · Trending
+                    - generic [ref=e571]: Clint Eastwood
+                - link "Sports · Trending Wemby" [ref=e574] [cursor=pointer]:
+                  - generic [ref=e575]:
+                    - generic [ref=e577]: Sports · Trending
+                    - generic [ref=e578]: Wemby
+                - 'link "Euphoria · Trending #euphoria Trending with Alamo, Maddy" [ref=e581] [cursor=pointer]':
+                  - generic [ref=e582]:
+                    - generic [ref=e584]: Euphoria · Trending
+                    - generic [ref=e586]: "#euphoria"
+                    - generic [ref=e587]:
+                      - text: Trending with
+                      - link "Alamo" [ref=e588]:
+                        - /url: /search?q=Alamo&src=trend_click&vertical=trends
+                      - text: ","
+                      - link "Maddy" [ref=e589]:
+                        - /url: /search?q=Maddy&src=trend_click&vertical=trends
+                - link "News · Trending Maine" [ref=e592] [cursor=pointer]:
+                  - generic [ref=e593]:
+                    - generic [ref=e595]: News · Trending
+                    - generic [ref=e596]: Maine
+                - link "Show more" [ref=e599] [cursor=pointer]:
+                  - /url: /explore/tabs/for-you
+                  - generic [ref=e600]: Show more
+          - navigation "Footer" [ref=e602]:
+            - generic [ref=e603]:
+              - link "Terms of Service" [ref=e604] [cursor=pointer]:
+                - /url: https://x.com/tos
+              - generic [ref=e605]: "|"
+            - generic [ref=e606]:
+              - link "Privacy Policy" [ref=e607] [cursor=pointer]:
+                - /url: https://x.com/privacy
+              - generic [ref=e608]: "|"
+            - generic [ref=e609]:
+              - link "Cookie Policy" [ref=e610] [cursor=pointer]:
+                - /url: https://support.x.com/articles/20170514
+              - generic [ref=e611]: "|"
+            - generic [ref=e612]:
+              - link "Accessibility" [ref=e613] [cursor=pointer]:
+                - /url: https://help.x.com/resources/accessibility
+              - generic [ref=e614]: "|"
+            - generic [ref=e615]:
+              - link "Ads info" [ref=e616] [cursor=pointer]:
+                - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+              - generic [ref=e617]: "|"
+            - button "More" [ref=e618] [cursor=pointer]:
+              - generic [ref=e619]:
+                - text: More
+                - img [ref=e620]
+            - generic [ref=e623]: © 2026 X Corp.

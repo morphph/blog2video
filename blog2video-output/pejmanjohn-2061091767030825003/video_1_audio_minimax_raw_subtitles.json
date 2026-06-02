@@ -1,0 +1,722 @@
+[
+  {
+    "text": "你同时开着三四个 Agent，OpenClaw 帮你管日程，Codex 帮你写代码，Claude Code 帮你写文案。",
+    "pronounce_text": "你同时开着三四个Agent，OpenClaw帮你管日程，Codex帮你写代码，Claude Code帮你写文案。",
+    "time_begin": 0,
+    "time_end": 7783.174603174603,
+    "text_begin": 0,
+    "text_end": 60,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 56
+  },
+  {
+    "text": "但你有没有发现一件事——每打开一个新窗口，你都得从头解释一次你是谁、这个项目在干嘛、之前为什么选了这条路。",
+    "pronounce_text": "但你有没有发现一件事。每打开一个新窗口，你都得从头解释一次你是谁、这个项目在干嘛、之前为什么选了这条路。",
+    "time_begin": 7983.174603174603,
+    "time_end": 18506.303854875285,
+    "text_begin": 60,
+    "text_end": 113,
+    "pronounce_text_begin": 56,
+    "pronounce_text_end": 108
+  },
+  {
+    "text": "Pejman Pour-Moezzi，Magoosh 和 Alo Moves 的创始人，把这个怪现象拆开讲了。他说，问题不在 Agent 不够聪明，问题在我们正在把人类最大的缺陷，原模原样复制进软件。",
+    "pronounce_text": "Pejman Pour-Moezzi，Magoosh和Alo Moves的创始人，把这个怪现象拆开讲了。他说，问题不在Agent不够聪明，问题在我们正在把人类最大的缺陷，原模原样复制进软件。",
+    "time_begin": 18648,
+    "time_end": 33942.82993197279,
+    "text_begin": 113,
+    "text_end": 213,
+    "pronounce_text_begin": 108,
+    "pronounce_text_end": 203
+  },
+  {
+    "text": "Pejman 起了个特别狠的比喻，叫\"颅腔\"。",
+    "pronounce_text": "Pejman起了个特别狠的比喻，叫\"颅腔\"。",
+    "time_begin": 34092,
+    "time_end": 37358.89342403628,
+    "text_begin": 213,
+    "text_end": 236,
+    "pronounce_text_begin": 203,
+    "pronounce_text_end": 225
+  },
+  {
+    "text": "人和人之间为什么沟通这么累？你认识一个新朋友，他对你一无所知。你得告诉他你是谁、你做过什么、你在乎什么。然后下一个新朋友来了，你再讲一遍。下下一个来了，再讲一遍。",
+    "pronounce_text": "人和人之间为什么沟通这么累？你认识一个新朋友，他对你一无所知。你得告诉他你是谁、你做过什么、你在乎什么。然后下一个新朋友来了，你再讲一遍。下下一个来了，再讲一遍。",
+    "time_begin": 37512,
+    "time_end": 52679.120181405895,
+    "text_begin": 236,
+    "text_end": 317,
+    "pronounce_text_begin": 225,
+    "pronounce_text_end": 306
+  },
+  {
+    "text": "这就是身为人类的隐藏税。知识活在每个人各自的颅腔里，颅腔不能互联。",
+    "pronounce_text": "这就是身为人类的隐藏税。知识活在每个人各自的颅腔里，颅腔不能互联。",
+    "time_begin": 52848,
+    "time_end": 59481.78684807256,
+    "text_begin": 317,
+    "text_end": 350,
+    "pronounce_text_begin": 306,
+    "pronounce_text_end": 339
+  },
+  {
+    "text": "我们活了一辈子都在交这个税，已经麻木到忘了它的存在。这就是人类沟通的基础物理。但现在我们正在用软件搭一套新的系统，本来不该有这个限制的。可你猜怎么着？",
+    "pronounce_text": "我们活了一辈子都在交这个税，已经麻木到忘了它的存在。这就是人类沟通的基础物理。但现在我们正在用软件搭一套新的系统，本来不该有这个限制的。可你猜怎么着？",
+    "time_begin": 59652,
+    "time_end": 73623.2925170068,
+    "text_begin": 350,
+    "text_end": 425,
+    "pronounce_text_begin": 339,
+    "pronounce_text_end": 414
+  },
+  {
+    "text": "我们把这个缺陷又原封不动地搬过去了一遍。",
+    "pronounce_text": "我们把这个缺陷又原封不动地搬过去了一遍。",
+    "time_begin": 73764,
+    "time_end": 77030.89342403629,
+    "text_begin": 425,
+    "text_end": 445,
+    "pronounce_text_begin": 414,
+    "pronounce_text_end": 434
+  },
+  {
+    "text": "每个 Agent 都是一颗自己的小脑袋，自己的记忆。每颗脑袋都只拿到了关于你和你工作的一小片信息。你拉远了看你正在用的所有 Agent 加在一起，整个系统对你的画像，是碎的。",
+    "pronounce_text": "每个Agent都是一颗自己的小脑袋，自己的记忆。每颗脑袋都只拿到了关于你和你工作的一小片信息。你拉远了看你正在用的所有Agent加在一起，整个系统对你的画像，是碎的。",
+    "time_begin": 77184,
+    "time_end": 92734.24943310657,
+    "text_begin": 445,
+    "text_end": 532,
+    "pronounce_text_begin": 434,
+    "pronounce_text_end": 517
+  },
+  {
+    "text": "Pejman 用了一句让我心里咯噔的话——我们正在用软件复刻人类沟通最大的限制。",
+    "pronounce_text": "Pejman用了一句让我心里咯噔的话。我们正在用软件复刻人类沟通最大的限制。",
+    "time_begin": 92880,
+    "time_end": 99304.80725623583,
+    "text_begin": 532,
+    "text_end": 572,
+    "pronounce_text_begin": 517,
+    "pronounce_text_end": 555
+  },
+  {
+    "text": "我跟着 Pejman 的视角往下走，他讲的是自己每天的真实工作流。",
+    "pronounce_text": "我跟着Pejman的视角往下走，他讲的是自己每天的真实工作流。",
+    "time_begin": 99468,
+    "time_end": 104743.41950113379,
+    "text_begin": 572,
+    "text_end": 605,
+    "pronounce_text_begin": 555,
+    "pronounce_text_end": 586
+  },
+  {
+    "text": "他用 OpenClaw 做个人助理。家庭、日程、会议、项目、偏好，全在这里。",
+    "pronounce_text": "他用OpenClaw做个人助理。家庭、日程、会议、项目、偏好，全在这里。",
+    "time_begin": 104904,
+    "time_end": 112687.1746031746,
+    "text_begin": 605,
+    "text_end": 643,
+    "pronounce_text_begin": 586,
+    "pronounce_text_end": 622
+  },
+  {
+    "text": "更关键的是，他在这里发酵想法——跟它来回辩论，找到点子的形状，剪掉几个分支，又把一个起死回生，最后才进入执行阶段。",
+    "pronounce_text": "更关键的是，他在这里发酵想法。跟它来回辩论，找到点子的形状，剪掉几个分支，又把一个起死回生，最后才进入执行阶段。",
+    "time_begin": 112887.1746031746,
+    "time_end": 124257.83219954648,
+    "text_begin": 643,
+    "text_end": 700,
+    "pronounce_text_begin": 622,
+    "pronounce_text_end": 678
+  },
+  {
+    "text": "所以 OpenClaw 拿到的是关于他这个人，和这些点子最完整的上下文。",
+    "pronounce_text": "所以OpenClaw拿到的是关于他这个人，和这些点子最完整的上下文。",
+    "time_begin": 124416,
+    "time_end": 129900.39909297052,
+    "text_begin": 700,
+    "text_end": 736,
+    "pronounce_text_begin": 678,
+    "pronounce_text_end": 712
+  },
+  {
+    "text": "到了写代码的阶段，他切到 Codex。Codex 看到的是仓库，是一份计划。但孕育这份计划的那一整场对话，留在了 OpenClaw 那边。",
+    "pronounce_text": "到了写代码的阶段，他切到Codex。Codex看到的是仓库，是一份计划。但孕育这份计划的那一整场对话，留在了OpenClaw那边。",
+    "time_begin": 130068,
+    "time_end": 140974.25850340136,
+    "text_begin": 736,
+    "text_end": 805,
+    "pronounce_text_begin": 712,
+    "pronounce_text_end": 777
+  },
+  {
+    "text": "到了做设计、写落地页、起草博客文案的阶段，他切到 Claude Code。",
+    "pronounce_text": "到了做设计、写落地页、起草博客文案的阶段，他切到Claude Code。",
+    "time_begin": 141120,
+    "time_end": 146987.5283446712,
+    "text_begin": 805,
+    "text_end": 842,
+    "pronounce_text_begin": 777,
+    "pronounce_text_end": 813
+  },
+  {
+    "text": "代码仓库可以指给它看，但藏在背后的决策——目标读者是谁、为什么这样取舍、之前哪些方案被毙掉了、想要的情感基调是什么——还是被锁在 OpenClaw 那边。",
+    "pronounce_text": "代码仓库可以指给它看，但藏在背后的决策。目标读者是谁、为什么这样取舍、之前哪些方案被毙掉了、想要的情感基调是什么。还是被锁在OpenClaw那边。",
+    "time_begin": 147187.5283446712,
+    "time_end": 162099.2290249433,
+    "text_begin": 842,
+    "text_end": 919,
+    "pronounce_text_begin": 813,
+    "pronounce_text_end": 886
+  },
+  {
+    "text": "Pejman 用了一句让我心里一咯噔的话来概括。他说，这种状态下产出可以\"既能干，又对上下文毫无概念\"。",
+    "pronounce_text": "Pejman用了一句让我心里一咯噔的话来概括。他说，这种状态下产出可以\"既能干，又对上下文毫无概念\"。",
+    "time_begin": 162252,
+    "time_end": 171614.13151927438,
+    "text_begin": 919,
+    "text_end": 971,
+    "pronounce_text_begin": 886,
+    "pronounce_text_end": 937
+  },
+  {
+    "text": "而且分裂不只在认知层。OpenClaw 跑在他的 Mac Mini 上，Codex 和 Claude Code 跑在 MacBook Pro 上，还有些 Agent 一部分一部分泡在云上。不同的机器，不同的文件系统，不同的本地状态。",
+    "pronounce_text": "而且分裂不只在认知层。OpenClaw跑在他的Mac Mini上，Codex和Claude Code跑在MacBook Pro上，还有些Agent一部分一部分泡在云上。不同的机器，不同的文件系统，不同的本地状态。",
+    "time_begin": 171756,
+    "time_end": 187306.24943310657,
+    "text_begin": 971,
+    "text_end": 1087,
+    "pronounce_text_begin": 937,
+    "pronounce_text_end": 1043
+  },
+  {
+    "text": "代码可以靠 GitHub 同步，但项目的记忆同步不了。",
+    "pronounce_text": "代码可以靠GitHub同步，但项目的记忆同步不了。",
+    "time_begin": 187452,
+    "time_end": 191403.8820861678,
+    "text_begin": 1087,
+    "text_end": 1114,
+    "pronounce_text_begin": 1043,
+    "pronounce_text_end": 1068
+  },
+  {
+    "text": "孤岛不只是个比喻，孤岛是字面意义上的。",
+    "pronounce_text": "孤岛不只是个比喻，孤岛是字面意义上的。",
+    "time_begin": 191556,
+    "time_end": 195124.75283446713,
+    "text_begin": 1114,
+    "text_end": 1133,
+    "pronounce_text_begin": 1068,
+    "pronounce_text_end": 1087
+  },
+  {
+    "text": "结果就是，每个 Agent 都在重新推导你已经解释过的东西。每个 Agent 也都对它隔壁那个一小时前刚搞明白的事毫无概念。",
+    "pronounce_text": "结果就是，每个Agent都在重新推导你已经解释过的东西。每个Agent也都对它隔壁那个一小时前刚搞明白的事毫无概念。",
+    "time_begin": 195264,
+    "time_end": 204591.3015873016,
+    "text_begin": 1133,
+    "text_end": 1195,
+    "pronounce_text_begin": 1087,
+    "pronounce_text_end": 1145
+  },
+  {
+    "text": "这时候你大概会说——这不简单吗？写下来就完了。所有人都用 markdown，所有 Agent 都读同一份计划文档。",
+    "pronounce_text": "这时候你大概会说。这不简单吗？写下来就完了。所有人都用markdown，所有Agent都读同一份计划文档。",
+    "time_begin": 204732,
+    "time_end": 214187.0113378685,
+    "text_begin": 1195,
+    "text_end": 1252,
+    "pronounce_text_begin": 1145,
+    "pronounce_text_end": 1198
+  },
+  {
+    "text": "Pejman 说这条路只能走一半。",
+    "pronounce_text": "Pejman说这条路只能走一半。",
+    "time_begin": 214344,
+    "time_end": 216879.46485260772,
+    "text_begin": 1252,
+    "text_end": 1269,
+    "pronounce_text_begin": 1198,
+    "pronounce_text_end": 1214
+  },
+  {
+    "text": "因为你写下来的东西，是终点，不是路径。",
+    "pronounce_text": "因为你写下来的东西，是终点，不是路径。",
+    "time_begin": 217044,
+    "time_end": 221158.42176870749,
+    "text_begin": 1269,
+    "text_end": 1288,
+    "pronounce_text_begin": 1214,
+    "pronounce_text_end": 1233
+  },
+  {
+    "text": "真正值钱的东西，往往不在结论里，而在过程里——你跟 Agent 来回博弈的那些回合、走错过的岔路、试了一下被你剪掉的分支。",
+    "pronounce_text": "真正值钱的东西，往往不在结论里，而在过程里。你跟Agent来回博弈的那些回合、走错过的岔路、试了一下被你剪掉的分支。",
+    "time_begin": 221328,
+    "time_end": 231804.68934240364,
+    "text_begin": 1288,
+    "text_end": 1349,
+    "pronounce_text_begin": 1233,
+    "pronounce_text_end": 1291
+  },
+  {
+    "text": "当你把一份计划落到纸上，你就把整场对话压缩了。你留下了结论，路径基本扔光了。",
+    "pronounce_text": "当你把一份计划落到纸上，你就把整场对话压缩了。你留下了结论，路径基本扔光了。",
+    "time_begin": 232004.68934240364,
+    "time_end": 238986.77551020408,
+    "text_begin": 1349,
+    "text_end": 1387,
+    "pronounce_text_begin": 1291,
+    "pronounce_text_end": 1329
+  },
+  {
+    "text": "然后过了几天，那条被你扔掉的路径，又突然重要起来了。",
+    "pronounce_text": "然后过了几天，那条被你扔掉的路径，又突然重要起来了。",
+    "time_begin": 239148,
+    "time_end": 243819.7006802721,
+    "text_begin": 1387,
+    "text_end": 1413,
+    "pronounce_text_begin": 1329,
+    "pronounce_text_end": 1355
+  },
+  {
+    "text": "Pejman 举了一个我特别有共鸣的例子。他回到 OpenClaw 说，\"还记得我们之前聊过的那个东西吗？其实，我们换种方式做吧。\"",
+    "pronounce_text": "Pejman举了一个我特别有共鸣的例子。他回到OpenClaw说，\"还记得我们之前聊过的那个东西吗？其实，我们换种方式做吧。\"",
+    "time_begin": 243972,
+    "time_end": 254529.95918367346,
+    "text_begin": 1413,
+    "text_end": 1479,
+    "pronounce_text_begin": 1355,
+    "pronounce_text_end": 1418
+  },
+  {
+    "text": "听起来很普通的一句话。但他指出他真正在做的是什么——是重新爬回那棵想法树，找到自己当初剪掉的那条分支。那条分支从来没进过任何 markdown 文件，因为当时它看起来是死的。",
+    "pronounce_text": "听起来很普通的一句话。但他指出他真正在做的是什么。是重新爬回那棵想法树，找到自己当初剪掉的那条分支。那条分支从来没进过任何markdown文件，因为当时它看起来是死的。",
+    "time_begin": 254700,
+    "time_end": 270250.24943310657,
+    "text_begin": 1479,
+    "text_end": 1566,
+    "pronounce_text_begin": 1418,
+    "pronounce_text_end": 1502
+  },
+  {
+    "text": "同步 repo 解决不了这件事。Repo 里装的是成品，Agent 会话里装的是上下文。写下来的计划是冰山的尖，对话本身才是水面下的剩下那 90%。",
+    "pronounce_text": "同步repo解决不了这件事。Repo里装的是成品，Agent会话里装的是上下文。写下来的计划是冰山的尖，对话本身才是水面下的剩下那百分之九十。",
+    "time_begin": 270396,
+    "time_end": 283473.3242630385,
+    "text_begin": 1566,
+    "text_end": 1640,
+    "pronounce_text_begin": 1502,
+    "pronounce_text_end": 1573
+  },
+  {
+    "text": "我想这是这篇文章最值钱的判断。多数人讨论 Agent 记忆，都默认\"记忆就是文档\"——只要文档全了，记忆就全了。但他点出来一件反直觉的事——文档丢的不是细节，是过程。",
+    "pronounce_text": "我想这是这篇文章最值钱的判断。多数人讨论Agent记忆，都默认\"记忆就是文档\"。只要文档全了，记忆就全了。但他点出来一件反直觉的事。文档丢的不是细节，是过程。",
+    "time_begin": 283644,
+    "time_end": 300053.387755102,
+    "text_begin": 1640,
+    "text_end": 1723,
+    "pronounce_text_begin": 1573,
+    "pronounce_text_end": 1652
+  },
+  {
+    "text": "是你为什么没选 B 方案的那段对话。是你试了 C 方案之后才发现走不通的那一轮反馈。这些东西落不进 markdown，但下次你想换条路时，你需要的恰恰就是它们。",
+    "pronounce_text": "是你为什么没选B方案的那段对话。是你试了C方案之后才发现走不通的那一轮反馈。这些东西落不进markdown，但下次你想换条路时，你需要的恰恰就是它们。",
+    "time_begin": 300204,
+    "time_end": 314094.022675737,
+    "text_begin": 1723,
+    "text_end": 1803,
+    "pronounce_text_begin": 1652,
+    "pronounce_text_end": 1727
+  },
+  {
+    "text": "当然 Pejman 也提醒了一句，并不是说要把所有对话一股脑全部倒出来。很多对话其实是噪声，有的涉及隐私，有的本来就推错了，有的应该过期，有的应该锁在某个项目或某个角色内部。",
+    "pronounce_text": "当然Pejman也提醒了一句，并不是说要把所有对话一股脑全部倒出来。很多对话其实是噪声，有的涉及隐私，有的本来就推错了，有的应该过期，有的应该锁在某个项目或某个角色内部。",
+    "time_begin": 314244,
+    "time_end": 329027.9909297052,
+    "text_begin": 1803,
+    "text_end": 1890,
+    "pronounce_text_begin": 1727,
+    "pronounce_text_end": 1812
+  },
+  {
+    "text": "值得留的，是那些值得留的东西。当 Agent 学到了一件这种事，它不该被关在它发生的那个 Agent 里。",
+    "pronounce_text": "值得留的，是那些值得留的东西。当Agent学到了一件这种事，它不该被关在它发生的那个Agent里。",
+    "time_begin": 329184,
+    "time_end": 337617.3333333333,
+    "text_begin": 1890,
+    "text_end": 1943,
+    "pronounce_text_begin": 1812,
+    "pronounce_text_end": 1861
+  },
+  {
+    "text": "讲到这里 Pejman 抛出了一个词——hive mind，蜂群心智。",
+    "pronounce_text": "讲到这里Pejman抛出了一个词。hive mind，蜂群心智。",
+    "time_begin": 337788,
+    "time_end": 343910.94784580497,
+    "text_begin": 1943,
+    "text_end": 1978,
+    "pronounce_text_begin": 1861,
+    "pronounce_text_end": 1893
+  },
+  {
+    "text": "注意，这个词他用得跟行业里常见的用法不一样。多数人提 hive mind 想到的是 Multi-Agent 怎么互相协调、怎么投票、怎么分工。Pejman 不是这个意思。",
+    "pronounce_text": "注意，这个词他用得跟行业里常见的用法不一样。多数人提hive mind想到的是Multi-Agent怎么互相协调、怎么投票、怎么分工。Pejman不是这个意思。",
+    "time_begin": 344052,
+    "time_end": 356664.92517006805,
+    "text_begin": 1978,
+    "text_end": 2063,
+    "pronounce_text_begin": 1893,
+    "pronounce_text_end": 1973
+  },
+  {
+    "text": "他指的是同一个用户在用多个 Agent 时，所有 Agent 共享同一套关于这个用户的认知。",
+    "pronounce_text": "他指的是同一个用户在用多个Agent时，所有Agent共享同一套关于这个用户的认知。",
+    "time_begin": 356832,
+    "time_end": 363848.91609977325,
+    "text_begin": 2063,
+    "text_end": 2109,
+    "pronounce_text_begin": 1973,
+    "pronounce_text_end": 2015
+  },
+  {
+    "text": "他举了一个挺震撼的画面。想象一个 AI 版本的公司高管，同时坐在十个会议里。",
+    "pronounce_text": "他举了一个挺震撼的画面。想象一个AI版本的公司高管，同时坐在十个会议里。",
+    "time_begin": 363996,
+    "time_end": 370502.0770975057,
+    "text_begin": 2109,
+    "text_end": 2147,
+    "pronounce_text_begin": 2015,
+    "pronounce_text_end": 2051
+  },
+  {
+    "text": "第一个会议它听到，一个大客户被定价搞糊涂了。第二个会议它听到，产品团队正在争论定价是不是讲得够清楚。第三个会议它听到，销售在解释一单为什么黄了。",
+    "pronounce_text": "第一个会议它听到，一个大客户被定价搞糊涂了。第二个会议它听到，产品团队正在争论定价是不是讲得够清楚。第三个会议它听到，销售在解释一单为什么黄了。",
+    "time_begin": 370656,
+    "time_end": 384371.873015873,
+    "text_begin": 2147,
+    "text_end": 2219,
+    "pronounce_text_begin": 2051,
+    "pronounce_text_end": 2123
+  },
+  {
+    "text": "在人类版本里，这三个点要靠人脑跨几天甚至几周才能连起来。运气不好，永远连不起来。",
+    "pronounce_text": "在人类版本里，这三个点要靠人脑跨几天甚至几周才能连起来。运气不好，永远连不起来。",
+    "time_begin": 384516,
+    "time_end": 392345.61451247166,
+    "text_begin": 2219,
+    "text_end": 2259,
+    "pronounce_text_begin": 2123,
+    "pronounce_text_end": 2163
+  },
+  {
+    "text": "客户那条变成支持工单，产品那条变成路线图条目，销售那条变成销售管线问题，三条线各走各的。",
+    "pronounce_text": "客户那条变成支持工单，产品那条变成路线图条目，销售那条变成销售管线问题，三条线各走各的。",
+    "time_begin": 392545.61451247166,
+    "time_end": 401780.0362811791,
+    "text_begin": 2259,
+    "text_end": 2303,
+    "pronounce_text_begin": 2163,
+    "pronounce_text_end": 2207
+  },
+  {
+    "text": "在 Agent 版本里，碰撞可以在这十个会议还没开完的时候就发生。",
+    "pronounce_text": "在Agent版本里，碰撞可以在这十个会议还没开完的时候就发生。",
+    "time_begin": 401940,
+    "time_end": 407343.1292517007,
+    "text_begin": 2303,
+    "text_end": 2336,
+    "pronounce_text_begin": 2207,
+    "pronounce_text_end": 2238
+  },
+  {
+    "text": "知识不再被关在它被学到的那个房间里。",
+    "pronounce_text": "知识不再被关在它被学到的那个房间里。",
+    "time_begin": 407484,
+    "time_end": 410832.1632653061,
+    "text_begin": 2336,
+    "text_end": 2354,
+    "pronounce_text_begin": 2238,
+    "pronounce_text_end": 2256
+  },
+  {
+    "text": "为什么 Agent 能做到人做不到的事？因为对人而言，信息要在大脑之间传递，必须经过语言、文字、教学、误解、澄清、复述这一整套慢动作。",
+    "pronounce_text": "为什么Agent能做到人做不到的事？因为对人而言，信息要在大脑之间传递，必须经过语言、文字、教学、误解、澄清、复述这一整套慢动作。",
+    "time_begin": 410976,
+    "time_end": 424784.7528344671,
+    "text_begin": 2354,
+    "text_end": 2421,
+    "pronounce_text_begin": 2256,
+    "pronounce_text_end": 2321
+  },
+  {
+    "text": "即便在一家公司内部，同一个事实也要穿过会议、备忘录、Slack 串、一对一沟通，像谣言一样反复颠簸才能变成基础设施。Agent 没有这个限制。",
+    "pronounce_text": "即便在一家公司内部，同一个事实也要穿过会议、备忘录、Slack串、一对一沟通，像谣言一样反复颠簸才能变成基础设施。Agent没有这个限制。",
+    "time_begin": 424944,
+    "time_end": 438497.3333333333,
+    "text_begin": 2421,
+    "text_end": 2492,
+    "pronounce_text_begin": 2321,
+    "pronounce_text_end": 2390
+  },
+  {
+    "text": "一个 Agent 学到的东西，其他 Agent 可以立刻知道——只要底下的记忆层是这么建的。",
+    "pronounce_text": "一个Agent学到的东西，其他Agent可以立刻知道。只要底下的记忆层是这么建的。",
+    "time_begin": 438660,
+    "time_end": 444910.6575963719,
+    "text_begin": 2492,
+    "text_end": 2538,
+    "pronounce_text_begin": 2390,
+    "pronounce_text_end": 2431
+  },
+  {
+    "text": "个人工作流里规模小一点，但形状一样。你在写代码时定下来的某个设计决定，五分钟后就能改进发布文案。你在个人助理里更正了一个偏好，写代码的 Agent 那边默认值就该跟着变。",
+    "pronounce_text": "个人工作流里规模小一点，但形状一样。你在写代码时定下来的某个设计决定，五分钟后就能改进发布文案。你在个人助理里更正了一个偏好，写代码的Agent那边默认值就该跟着变。",
+    "time_begin": 445068,
+    "time_end": 460153.85034013604,
+    "text_begin": 2538,
+    "text_end": 2623,
+    "pronounce_text_begin": 2431,
+    "pronounce_text_end": 2514
+  },
+  {
+    "text": "上周一个想了一半的点子，等到合适的项目出现时，应该自己浮上来。",
+    "pronounce_text": "上周一个想了一半的点子，等到合适的项目出现时，应该自己浮上来。",
+    "time_begin": 460296,
+    "time_end": 465780.39909297053,
+    "text_begin": 2623,
+    "text_end": 2654,
+    "pronounce_text_begin": 2514,
+    "pronounce_text_end": 2545
+  },
+  {
+    "text": "到这个程度，你用的就不再是一组助理，而是一个长着不同手的、分布式的大脑。",
+    "pronounce_text": "到这个程度，你用的就不再是一组助理，而是一个长着不同手的、分布式的大脑。",
+    "time_begin": 465948,
+    "time_end": 473139.06575963716,
+    "text_begin": 2654,
+    "text_end": 2690,
+    "pronounce_text_begin": 2545,
+    "pronounce_text_end": 2581
+  },
+  {
+    "text": "最后 Pejman 把视角拉到了最高。",
+    "pronounce_text": "最后Pejman把视角拉到了最高。",
+    "time_begin": 473292,
+    "time_end": 475955.1746031746,
+    "text_begin": 2690,
+    "text_end": 2709,
+    "pronounce_text_begin": 2581,
+    "pronounce_text_end": 2598
+  },
+  {
+    "text": "真实工作不会乖乖按工具的边界排队。一个项目可能从一条个人笔记开始，变成一个产品决策，落成代码，再变成发布需要的设计、文案、客服跟进。",
+    "pronounce_text": "真实工作不会乖乖按工具的边界排队。一个项目可能从一条个人笔记开始，变成一个产品决策，落成代码，再变成发布需要的设计、文案、客服跟进。",
+    "time_begin": 476100,
+    "time_end": 489908.7528344671,
+    "text_begin": 2709,
+    "text_end": 2775,
+    "pronounce_text_begin": 2598,
+    "pronounce_text_end": 2664
+  },
+  {
+    "text": "这就是他要用多个 Agent 的原因——专业化是有用的。",
+    "pronounce_text": "这就是他要用多个Agent的原因。专业化是有用的。",
+    "time_begin": 490108.7528344671,
+    "time_end": 494780.45351473923,
+    "text_begin": 2775,
+    "text_end": 2803,
+    "pronounce_text_begin": 2664,
+    "pronounce_text_end": 2689
+  },
+  {
+    "text": "但缺口你只要一感受到就再也忽视不了——工具越来越能干，工具脚下的记忆层却一直是碎的。而且 Agent 散布到越多 app、越多机器、越多云、越多本地环境，碎得越厉害。",
+    "pronounce_text": "但缺口你只要一感受到就再也忽视不了。工具越来越能干，工具脚下的记忆层却一直是碎的。而且Agent散布到越多app、越多机器、越多云、越多本地环境，碎得越厉害。",
+    "time_begin": 494928,
+    "time_end": 510350.5396825397,
+    "text_begin": 2803,
+    "text_end": 2886,
+    "pronounce_text_begin": 2689,
+    "pronounce_text_end": 2768
+  },
+  {
+    "text": "他认为这是接下来一年最值得做的方向之一。",
+    "pronounce_text": "他认为这是接下来一年最值得做的方向之一。",
+    "time_begin": 510516,
+    "time_end": 514119.5827664399,
+    "text_begin": 2886,
+    "text_end": 2906,
+    "pronounce_text_begin": 2768,
+    "pronounce_text_end": 2788
+  },
+  {
+    "text": "而且他点了两个已经在路上的项目。Garry Tan 在做的 GBrain，走的是 MCP 之上的共享知识图——你把不同数据源指给它，知识图自己长起来，多个 Agent 共用同一张图，不用各存各的。",
+    "pronounce_text": "而且他点了两个已经在路上的项目。Garry Tan在做的GBrain，走的是MCP之上的共享知识图。你把不同数据源指给它，知识图自己长起来，多个Agent共用同一张图，不用各存各的。",
+    "time_begin": 514260,
+    "time_end": 529903.1292517007,
+    "text_begin": 2906,
+    "text_end": 3004,
+    "pronounce_text_begin": 2788,
+    "pronounce_text_end": 2879
+  },
+  {
+    "text": "Doodlestein 在做的 CASS 攻的是另一面——它不动 repo，专门做本地 Agent 会话历史的搜索，覆盖 Codex、Claude Code、OpenClaw、Cursor、Aider。",
+    "pronounce_text": "Doodlestein在做的CASS攻的是另一面。它不动repo，专门做本地Agent会话历史的搜索，覆盖Codex、Claude Code、OpenClaw、Cursor、Aider。",
+    "time_begin": 530064,
+    "time_end": 540366.5396825396,
+    "text_begin": 3004,
+    "text_end": 3105,
+    "pronounce_text_begin": 2879,
+    "pronounce_text_end": 2972
+  },
+  {
+    "text": "让你能跨工具搜你之前跟 Agent 聊过的内容，把 repo 留不下来的那一层推理过程捡回来。",
+    "pronounce_text": "让你能跨工具搜你之前跟Agent聊过的内容，把repo留不下来的那一层推理过程捡回来。",
+    "time_begin": 540566.5396825396,
+    "time_end": 548140.7346938775,
+    "text_begin": 3105,
+    "text_end": 3152,
+    "pronounce_text_begin": 2972,
+    "pronounce_text_end": 3015
+  },
+  {
+    "text": "一个走结构化的知识图路线，一个走原始会话索引路线。两个项目方向完全不一样，但都在指向同一件事——问题是真的，答案的几块拼图也开始浮现了。",
+    "pronounce_text": "一个走结构化的知识图路线，一个走原始会话索引路线。两个项目方向完全不一样，但都在指向同一件事。问题是真的，答案的几块拼图也开始浮现了。",
+    "time_begin": 548280,
+    "time_end": 561229.6145124716,
+    "text_begin": 3152,
+    "text_end": 3220,
+    "pronounce_text_begin": 3015,
+    "pronounce_text_end": 3082
+  },
+  {
+    "text": "我把 Pejman 这篇读完，最戳我的不是\"颅腔\"这个比喻，是他最后那一句结论。",
+    "pronounce_text": "我把Pejman这篇读完，最戳我的不是\"颅腔\"这个比喻，是他最后那一句结论。",
+    "time_begin": 561384,
+    "time_end": 568319.6462585034,
+    "text_begin": 3220,
+    "text_end": 3260,
+    "pronounce_text_begin": 3082,
+    "pronounce_text_end": 3120
+  },
+  {
+    "text": "很多 Agent 在底下共享同一层记忆，而这层记忆，归你所有。",
+    "pronounce_text": "很多Agent在底下共享同一层记忆，而这层记忆，归你所有。",
+    "time_begin": 568476,
+    "time_end": 574297.0884353742,
+    "text_begin": 3260,
+    "text_end": 3291,
+    "pronounce_text_begin": 3120,
+    "pronounce_text_end": 3149
+  },
+  {
+    "text": "注意听这句话的重心——归你所有。不是归 OpenAI 所有，不是归 Anthropic 所有，不是归任何一家工具厂商所有。",
+    "pronounce_text": "注意听这句话的重心。归你所有。不是归OpenAI所有，不是归Anthropic所有，不是归任何一家工具厂商所有。",
+    "time_begin": 574452,
+    "time_end": 584592,
+    "text_begin": 3291,
+    "text_end": 3352,
+    "pronounce_text_begin": 3149,
+    "pronounce_text_end": 3205
+  },
+  {
+    "text": "今天的默认状态是什么？每家厂商各自记录一份关于你的画像，互不相通，你也带不走。你换工具就等于换记忆。你想跨工具协作，就只能用 markdown 这种最低公约数当桥。",
+    "pronounce_text": "今天的默认状态是什么？每家厂商各自记录一份关于你的画像，互不相通，你也带不走。你换工具就等于换记忆。你想跨工具协作，就只能用markdown这种最低公约数当桥。",
+    "time_begin": 584748,
+    "time_end": 599578.4308390022,
+    "text_begin": 3352,
+    "text_end": 3434,
+    "pronounce_text_begin": 3205,
+    "pronounce_text_end": 3285
+  },
+  {
+    "text": "Pejman 主张的是反过来——存在一个用户自己拥有的、跨工具的记忆层，工具反过来读它。",
+    "pronounce_text": "Pejman主张的是反过来。存在一个用户自己拥有的、跨工具的记忆层，工具反过来读它。",
+    "time_begin": 599724,
+    "time_end": 607681.3242630386,
+    "text_begin": 3434,
+    "text_end": 3478,
+    "pronounce_text_begin": 3285,
+    "pronounce_text_end": 3327
+  },
+  {
+    "text": "这不只是一个技术问题，这是一个商业格局问题。",
+    "pronounce_text": "这不只是一个技术问题，这是一个商业格局问题。",
+    "time_begin": 607824,
+    "time_end": 611555.2925170067,
+    "text_begin": 3478,
+    "text_end": 3500,
+    "pronounce_text_begin": 3327,
+    "pronounce_text_end": 3349
+  },
+  {
+    "text": "你可以把它跟前几期我们聊过的一些视角合在一起看。yanhua1010 那本 Agentic Design Patterns 把 Agent 内部的记忆拆成 Session、State、Memory 三层，那是从工程实现往里看。",
+    "pronounce_text": "你可以把它跟前几期我们聊过的一些视角合在一起看。yanhua一零一零那本Agentic Design Patterns把Agent内部的记忆拆成Session、State、Memory三层，那是从工程实现往里看。",
+    "time_begin": 611712,
+    "time_end": 628249.0975056689,
+    "text_begin": 3500,
+    "text_end": 3613,
+    "pronounce_text_begin": 3349,
+    "pronounce_text_end": 3455
+  },
+  {
+    "text": "Pejman 这篇是从用户的真实工作流往外看——你用的所有 Agent，对\"你\"的认知应该共享同一层。两个视角合在一起，记忆这件事才算讲完整。",
+    "pronounce_text": "Pejman这篇是从用户的真实工作流往外看。你用的所有Agent，对\"你\"的认知应该共享同一层。两个视角合在一起，记忆这件事才算讲完整。",
+    "time_begin": 628416,
+    "time_end": 640425.2063492064,
+    "text_begin": 3613,
+    "text_end": 3684,
+    "pronounce_text_begin": 3455,
+    "pronounce_text_end": 3523
+  },
+  {
+    "text": "最后一个判断我想留给你。你用的 Agent 越多越能干活，但你这个\"人\"的画像，反而越来越碎。这是当下 Agent 生态里最大的一个悖论。",
+    "pronounce_text": "最后一个判断我想留给你。你用的Agent越多越能干活，但你这个\"人\"的画像，反而越来越碎。这是当下Agent生态里最大的一个悖论。",
+    "time_begin": 640584,
+    "time_end": 652001.0975056689,
+    "text_begin": 3684,
+    "text_end": 3753,
+    "pronounce_text_begin": 3523,
+    "pronounce_text_end": 3588
+  },
+  {
+    "text": "如果你最近正在感受这种割裂——切换工具时永远要重新解释一遍自己、好不容易跟一个 Agent 磨出来的判断、换到下一个 Agent 完全不知道——那这不是你的问题，是当前 Agent 生态默认的形状。",
+    "pronounce_text": "如果你最近正在感受这种割裂。切换工具时永远要重新解释一遍自己、好不容易跟一个Agent磨出来的判断、换到下一个Agent完全不知道。那这不是你的问题，是当前Agent生态默认的形状。",
+    "time_begin": 652140,
+    "time_end": 668630.6575963718,
+    "text_begin": 3753,
+    "text_end": 3852,
+    "pronounce_text_begin": 3588,
+    "pronounce_text_end": 3679
+  },
+  {
+    "text": "至少你现在知道这件事叫什么——叫记忆层缺失。也至少你知道，已经有人在攻这个问题，从 MCP 上的共享知识图到本地会话索引都有人在做。",
+    "pronounce_text": "至少你现在知道这件事叫什么。叫记忆层缺失。也至少你知道，已经有人在攻这个问题，从MCP上的共享知识图到本地会话索引都有人在做。",
+    "time_begin": 668772,
+    "time_end": 681129.5056689342,
+    "text_begin": 3852,
+    "text_end": 3918,
+    "pronounce_text_begin": 3679,
+    "pronounce_text_end": 3742
+  },
+  {
+    "text": "下一次你打开第二个 Agent 时，问自己一个问题——这件事我刚刚是不是已经跟另一个 Agent 讲过一遍了？如果答案是是，那你就在缴 Pejman 说的那笔税。",
+    "pronounce_text": "下一次你打开第二个Agent时，问自己一个问题。这件事我刚刚是不是已经跟另一个Agent讲过一遍了？如果答案是是，那你就在缴Pejman说的那笔税。",
+    "time_begin": 681300,
+    "time_end": 693529.7959183673,
+    "text_begin": 3918,
+    "text_end": 3999,
+    "pronounce_text_begin": 3742,
+    "pronounce_text_end": 3816
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 693684,
+    "time_end": 698831.7097505669,
+    "text_begin": 3999,
+    "text_end": 4026,
+    "pronounce_text_begin": 3816,
+    "pronounce_text_end": 3842
+  }
+]

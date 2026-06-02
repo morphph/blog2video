@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .headline {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .skull-row {
+      display: flex;
+      gap: 28px;
+      width: 100%;
+      margin-bottom: 56px;
+      justify-content: center;
+    }
+    .skull {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 16px;
+      padding: 32px 12px;
+      font-size: 80px;
+      text-align: center;
+    }
+    .skull .label {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      margin-top: 14px;
+      letter-spacing: 1px;
+    }
+    .quote-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      text-align: left;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .red {
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">PEJMAN 的比喻</div>
+    <div class="headline">
+      知识活在<span class="red">颅腔</span>里<br>
+      颅腔不能互联
+    </div>
+    <div class="skull-row">
+      <div class="skull">🧠<div class="label">我</div></div>
+      <div class="skull">🧠<div class="label">朋友 A</div></div>
+      <div class="skull">🧠<div class="label">朋友 B</div></div>
+    </div>
+    <div class="quote-card">
+      我们正在用软件，<span class="red">复刻人类沟通最大的限制</span>
+    </div>
+  </div>
+</body>
+</html>

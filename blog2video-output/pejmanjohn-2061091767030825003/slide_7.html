@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-size: 78px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    .amber { color: #F59E0B; }
+    .purple { color: #8B5CF6; }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+    .compare {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 14px;
+      padding: 28px 22px;
+      text-align: left;
+    }
+    .col.left { border-left: 4px solid #6B7280; }
+    .col.right { border-left: 4px solid #8B5CF6; }
+    .label {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .col.left .label { color: #6B7280; }
+    .col.right .label { color: #8B5CF6; }
+    .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">PEJMAN 的反常识用法</div>
+    <div class="headline">
+      <span class="amber">Hive Mind</span><br>
+      不是 Agent 之间协作
+    </div>
+    <div class="subtitle">
+      是同一个用户用多个 Agent 时<br>
+      它们共享同一套<span class="purple">关于"你"的认知</span>
+    </div>
+    <div class="compare">
+      <div class="col left">
+        <div class="label">行业常见用法</div>
+        <div class="text">Multi-Agent 互相协调 · 投票 · 分工</div>
+      </div>
+      <div class="col right">
+        <div class="label">PEJMAN 的指向</div>
+        <div class="text">所有 Agent 共享同一份"你"的画像</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

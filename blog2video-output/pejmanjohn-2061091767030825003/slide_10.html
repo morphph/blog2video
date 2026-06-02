@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 48px;
+    }
+    .green { color: #10B981; }
+    .row {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 14px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .card.gbrain { border-left: 4px solid #10B981; }
+    .card.cass { border-left: 4px solid #3B82F6; }
+    .name {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .card.gbrain .name { color: #10B981; }
+    .card.cass .name { color: #3B82F6; }
+    .by {
+      font-size: 20px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .approach {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+    .footer {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 30px;
+      width: 100%;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: left;
+      color: #FFFFFF;
+    }
+    .footer b { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">早期信号</div>
+    <div class="headline">
+      <span class="green">两个项目</span>已经在路上
+    </div>
+    <div class="row">
+      <div class="card gbrain">
+        <div class="name">GBrain</div>
+        <div class="by">@garrytan</div>
+        <div class="approach">MCP 之上的共享知识图</div>
+        <div class="desc">指向数据源 · 知识图自己长起来 · 多 Agent 共用同一张图</div>
+      </div>
+      <div class="card cass">
+        <div class="name">CASS</div>
+        <div class="by">@doodlestein</div>
+        <div class="approach">本地 Agent 会话搜索</div>
+        <div class="desc">覆盖 Codex · Claude Code · OpenClaw · Cursor · Aider</div>
+      </div>
+    </div>
+    <div class="footer">方向完全不一样，但都指向同一件事——<b>问题是真的</b>，答案的几块拼图也开始浮现</div>
+  </div>
+</body>
+</html>

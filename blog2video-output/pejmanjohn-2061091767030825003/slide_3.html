@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }
+    .red { color: #EF4444; }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 14px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .card.purple { border-left: 4px solid #8B5CF6; }
+    .card.blue { border-left: 4px solid #3B82F6; }
+    .card.amber { border-left: 4px solid #F59E0B; }
+    .name {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .card.purple .name { color: #8B5CF6; }
+    .card.blue .name { color: #3B82F6; }
+    .card.amber .name { color: #F59E0B; }
+    .role {
+      font-size: 24px;
+      color: #B0B0CC;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .ctx {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .missing {
+      color: #EF4444;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">PEJMAN 的工作流</div>
+    <div class="headline">
+      我用的三个 Agent<br>
+      <span class="red">互相是陌生人</span>
+    </div>
+    <div class="cards">
+      <div class="card purple">
+        <div class="name">OpenClaw</div>
+        <div class="role">个人助理 · 想法发酵</div>
+        <div class="ctx">家庭、日程、来回辩论、剪掉的分支——最完整的上下文</div>
+      </div>
+      <div class="card blue">
+        <div class="name">Codex</div>
+        <div class="role">写代码</div>
+        <div class="ctx">看到 repo 和计划。<span class="missing">孕育计划的对话留在 OpenClaw</span></div>
+      </div>
+      <div class="card amber">
+        <div class="name">Claude Code</div>
+        <div class="role">设计 · 落地页 · 文案</div>
+        <div class="ctx">能看 repo。<span class="missing">目标读者、被毙掉的方案——锁在 OpenClaw</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

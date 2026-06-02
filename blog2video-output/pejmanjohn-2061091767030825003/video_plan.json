@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Stop Giving Every Agent Its Own Skull",
+    "title_zh": "你用的几个 Agent，没一个真的认识你",
+    "word_count": 4000,
+    "slug": "pejmanjohn-2061091767030825003"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全文是一个连贯的论证链条——从颅腔比喻到 repo 不是 memory，再到 hive mind 是用户视角，最后落到记忆归属权——任何拆分都会切断论证。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你用的几个 Agent，没一个真的认识你"
+      }
+    ]
+  }
+}

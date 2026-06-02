@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .quote-mark {
+      font-size: 200px;
+      color: #8B5CF6;
+      line-height: 0.8;
+      font-family: Georgia, serif;
+      font-weight: 700;
+      margin-bottom: 24px;
+      opacity: 0.75;
+    }
+    .quote-text {
+      font-size: 62px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 56px;
+      text-align: center;
+    }
+    .red { color: #EF4444; }
+    .amber { color: #F59E0B; }
+    .row {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #EF4444;
+      border-radius: 14px;
+      padding: 26px 24px;
+      text-align: left;
+    }
+    .num {
+      font-size: 64px;
+      font-weight: 800;
+      color: #EF4444;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .desc {
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+    .island-line {
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    .island-line b {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">
+      既<span class="amber">能干</span><br>
+      又对上下文<span class="red">毫无概念</span>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="num">Mac Mini</div>
+        <div class="desc">OpenClaw 跑这里</div>
+      </div>
+      <div class="card">
+        <div class="num">MacBook</div>
+        <div class="desc">Codex · Claude Code</div>
+      </div>
+      <div class="card">
+        <div class="num">Cloud</div>
+        <div class="desc">部分 Agent 在云上</div>
+      </div>
+    </div>
+    <div class="island-line">代码靠 GitHub 同步 · <b>项目的记忆同步不了</b></div>
+  </div>
+</body>
+</html>

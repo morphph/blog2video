@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 36px;
+    }
+    .red { color: #EF4444; }
+    .green { color: #10B981; }
+    .meetings {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .m-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 10px;
+      padding: 16px 14px;
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      width: 140px;
+      text-align: left;
+    }
+    .m-card.k {
+      border-left: 3px solid #EF4444;
+      color: #FFFFFF;
+    }
+    .m-tag {
+      font-size: 18px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .vs-row {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+    }
+    .vs {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 14px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .vs.human { border-left: 4px solid #EF4444; }
+    .vs.agent { border-left: 4px solid #10B981; }
+    .vs-label {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .vs.human .vs-label { color: #EF4444; }
+    .vs.agent .vs-label { color: #10B981; }
+    .vs-text {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .small {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">震撼画面 · 10 个会议同时开</div>
+    <div class="headline">
+      知识不再被关在<br>
+      <span class="red">它被学到的房间里</span>
+    </div>
+    <div class="meetings">
+      <div class="m-card k"><div class="m-tag">会议 1</div>客户被定价搞糊涂</div>
+      <div class="m-card k"><div class="m-tag">会议 2</div>产品争论定价是否清晰</div>
+      <div class="m-card k"><div class="m-tag">会议 3</div>销售解释一单为何黄</div>
+    </div>
+    <div class="vs-row">
+      <div class="vs human">
+        <div class="vs-label">人类版本</div>
+        <div class="vs-text">几天几周才连起来</div>
+        <div class="small">运气不好，永远连不起来</div>
+      </div>
+      <div class="vs agent">
+        <div class="vs-label">AGENT 版本</div>
+        <div class="vs-text">会议还没开完<br>碰撞已经发生</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

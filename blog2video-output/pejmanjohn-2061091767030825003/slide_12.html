@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-size: 62px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 44px;
+    }
+    .amber { color: #F59E0B; }
+    .red { color: #EF4444; }
+    .purple { color: #8B5CF6; }
+    .takeaways {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .num {
+      font-size: 36px;
+      font-weight: 900;
+      color: #8B5CF6;
+      line-height: 1;
+      min-width: 56px;
+    }
+    .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .text b { color: #F59E0B; }
+    .signoff {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 26px 30px;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      color: #B0B0CC;
+    }
+    .brand {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">行动</div>
+    <div class="headline">
+      下一次打开第二个 Agent<br>
+      <span class="amber">问自己一个问题</span>
+    </div>
+    <div class="takeaways">
+      <div class="item">
+        <div class="num">01</div>
+        <div class="text">这件事我刚刚是不是已经跟<b>另一个 Agent</b> 讲过一遍了？</div>
+      </div>
+      <div class="item">
+        <div class="num">02</div>
+        <div class="text">这不是你的问题。是叫"<b>记忆层缺失</b>"的生态形状</div>
+      </div>
+      <div class="item">
+        <div class="num">03</div>
+        <div class="text">如果答案是"是"，<b>你就在缴 Pejman 说的那笔税</b></div>
+      </div>
+    </div>
+    <div class="signoff">
+      <span class="brand">精读AI</span> · 精读一篇，胜过刷一百条
+    </div>
+  </div>
+</body>
+</html>

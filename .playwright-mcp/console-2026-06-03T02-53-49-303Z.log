@@ -1,0 +1,2 @@
+[     877ms] [WARNING] [.WebGL-0xc54000fca00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://x.com/mvanhorn/status/2061877533885473181:0
+[     977ms] [WARNING] No available adapters. @ https://x.com/mvanhorn/status/2061877533885473181:0

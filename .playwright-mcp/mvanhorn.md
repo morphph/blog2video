@@ -1,0 +1,988 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: Don’t miss what’s happening
+          - generic [ref=e9]: People on X are the first to know.
+        - generic [ref=e12]:
+          - link "Log in" [ref=e14] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e17]: Log in
+          - link "Sign up" [ref=e19] [cursor=pointer]:
+            - /url: /i/flow/signup
+            - generic [ref=e22]: Sign up
+      - generic [ref=e23]:
+        - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+        - button "Skip to trending" [ref=e26] [cursor=pointer]
+        - banner [ref=e28]:
+          - generic [ref=e31]:
+            - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+              - link "X" [ref=e34]:
+                - /url: /
+                - img [ref=e36]
+            - generic:
+              - navigation "Primary"
+        - main [ref=e39]:
+          - generic [ref=e42]:
+            - generic "Home timeline" [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e51] [cursor=pointer]:
+                  - button "Back" [ref=e53]:
+                    - img [ref=e55]
+                  - heading "Article" [level=2] [ref=e191]
+                  - link "Focus mode" [ref=e193]:
+                    - /url: /mvanhorn/article/2061877533885473181
+                    - img [ref=e195]
+                - generic:
+                  - generic:
+                    - status:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: See new posts
+              - region "Conversation" [ref=e62]:
+                - heading "Conversation" [level=1] [ref=e63]
+                - 'generic "Timeline: Conversation" [ref=e64]':
+                  - article "Matt Van Horn Verified account @mvanhorn 58 replies, 122 reposts, 1089 likes, 3369 bookmarks, 172837 views" [ref=e202]:
+                    - generic [ref=e204]:
+                      - generic [ref=e208]:
+                        - link [active] [ref=e220] [cursor=pointer]:
+                          - /url: /mvanhorn
+                        - generic [ref=e225]:
+                          - generic [ref=e228]:
+                            - link "Matt Van Horn Verified account" [ref=e231] [cursor=pointer]:
+                              - /url: /mvanhorn
+                              - generic [ref=e232]:
+                                - generic [ref=e234]: Matt Van Horn
+                                - img "Verified account" [ref=e237]
+                            - link "@mvanhorn" [ref=e243] [cursor=pointer]:
+                              - /url: /mvanhorn
+                              - generic [ref=e244]: "@mvanhorn"
+                          - button "More" [ref=e250] [cursor=pointer]:
+                            - img [ref=e254]
+                      - generic [ref=e257]:
+                        - generic [ref=e258]:
+                          - link "Image" [ref=e264] [cursor=pointer]:
+                            - /url: /mvanhorn/article/2061877533885473181/media/2061443110782291968
+                            - generic "Image" [ref=e268]:
+                              - img "Image" [ref=e270]
+                          - generic [ref=e271]:
+                            - generic [ref=e273]: Every Agentic Engineering Hack I Know (June 2026)
+                            - group "58 replies, 122 reposts, 1089 likes, 3369 bookmarks, 172837 views" [ref=e275]:
+                              - button "58 Replies. Reply" [ref=e277] [cursor=pointer]:
+                                - generic [ref=e278]:
+                                  - img [ref=e281]
+                                  - generic [ref=e286]: "58"
+                              - button "122 reposts. Repost" [ref=e288] [cursor=pointer]:
+                                - generic [ref=e289]:
+                                  - img [ref=e292]
+                                  - generic [ref=e297]: "122"
+                              - button "1089 Likes. Like" [ref=e299] [cursor=pointer]:
+                                - generic [ref=e300]:
+                                  - img [ref=e303]
+                                  - generic [ref=e308]: 1K
+                              - link "172837 views. View post analytics" [ref=e310] [cursor=pointer]:
+                                - /url: /mvanhorn/status/2061877533885473181/analytics
+                                - generic [ref=e311]:
+                                  - img [ref=e314]
+                                  - generic [ref=e319]: 172K
+                              - button "Bookmark" [ref=e321] [cursor=pointer]:
+                                - img [ref=e325]
+                              - button "Share post" [ref=e330] [cursor=pointer]:
+                                - img [ref=e334]
+                            - generic [ref=e342]:
+                              - generic [ref=e344]:
+                                - generic [ref=e345]: Three months ago I posted
+                                - link "\"Every Claude Code Hack I Know.\"" [ref=e347] [cursor=pointer]:
+                                  - /url: https://x.com/mvanhorn/status/2035857346602340637
+                                  - generic [ref=e348]: "\"Every Claude Code Hack I Know.\""
+                                - generic [ref=e349]: It hit 913K views.
+                                - link "@kevinrose" [ref=e351] [cursor=pointer]:
+                                  - /url: https://x.com/@kevinrose
+                                  - generic [ref=e352]: "@kevinrose"
+                                - generic [ref=e353]: "had asked what IDE to use, and my answer was: \"No IDE. Just plan.md files and voice.\""
+                              - generic [ref=e355]:
+                                - generic [ref=e356]: This used to be called vibe coding. Around last Thanksgiving the models got good enough that the toy became real, what people now call Agentic Engineering. It's the only reason I ship. This year I put out
+                                - link "last30days" [ref=e358] [cursor=pointer]:
+                                  - /url: https://github.com/mvanhorn/last30days-skill
+                                  - generic [ref=e359]: last30days
+                                - generic [ref=e360]: (27K stars),
+                                - link "Printing Press" [ref=e362] [cursor=pointer]:
+                                  - /url: https://printingpress.dev/
+                                  - generic [ref=e363]: Printing Press
+                                - generic [ref=e364]: (4K+ stars), and
+                                - link "Agent Cookie" [ref=e366] [cursor=pointer]:
+                                  - /url: https://agentcookie.dev/
+                                  - generic [ref=e367]: Agent Cookie
+                                - generic [ref=e368]: ", just launched, and became a top contributor to some of the biggest projects in open source:"
+                                - link "Python" [ref=e370] [cursor=pointer]:
+                                  - /url: https://github.com/python/cpython
+                                  - generic [ref=e371]: Python
+                                - generic [ref=e372]: ","
+                                - link "Go" [ref=e374] [cursor=pointer]:
+                                  - /url: https://github.com/golang/go
+                                  - generic [ref=e375]: Go
+                                - generic [ref=e376]: ","
+                                - link "GStack" [ref=e378] [cursor=pointer]:
+                                  - /url: https://github.com/garrytan/gstack
+                                  - generic [ref=e379]: GStack
+                                - generic [ref=e380]: ", and"
+                                - link "Paperclip" [ref=e382] [cursor=pointer]:
+                                  - /url: https://github.com/paperclipai/paperclip
+                                  - generic [ref=e383]: Paperclip
+                                - generic [ref=e384]: . I hadn't shipped software anyone valued since high school. These are my hacks.
+                              - generic [ref=e387]: HACKS
+                              - list [ref=e388]:
+                                - listitem [ref=e389]:
+                                  - generic [ref=e391]: "The YOLO TL;DR Hack: paste this entire article to your agent and tell it to make a plan to set up everything in it, then work that plan one hack at a time. That's my whole stack, no reading required."
+                              - heading "1. The Moment You Have an Idea, Make a CE plan.md" [level=2] [ref=e393]:
+                                - generic [ref=e395]: 1. The Moment You Have an Idea, Make a CE plan.md
+                              - generic [ref=e398]: Still rule number one. Still the most important thing I've learned.
+                              - generic [ref=e401]: "The moment I have an idea, it's /ce-plan to make a plan.md. Not \"let me think about this,\" not \"let me start coding.\" /ce-plan, every time. It takes images too, so anything you can capture is a starting point:"
+                              - list [ref=e402]:
+                                - listitem [ref=e403]:
+                                  - generic [ref=e405]: "Crazy product idea: /ce-plan."
+                                - listitem [ref=e406]:
+                                  - generic [ref=e408]: "Bug on GitHub: copy the issue URL, paste it, /ce-plan."
+                                - listitem [ref=e409]:
+                                  - generic [ref=e411]: "Terminal error: Cmd+Shift+4 to screenshot, Ctrl+V to paste, /ce-plan fix this."
+                                - listitem [ref=e412]:
+                                  - generic [ref=e414]: "Screenshots, error messages, design mockups, Slack threads: drop any of them in."
+                              - generic [ref=e417]: When the idea is still fuzzy and I don't even know what I want yet, I start with /ce-brainstorm to think it through with the agent, then /ce-plan once it's sharp.
+                              - generic [ref=e420]: "Under the hood, /ce-plan fans out research agents in parallel. One reads your codebase, finds patterns, checks your conventions. One searches your past solutions for learnings. If the topic warrants it, more go research external docs and best practices. All at once. Then it consolidates and writes a structured plan.md: what's wrong, the approach, which files to touch, acceptance criteria with checkboxes, patterns to follow from your own code. Grounded in your repo, your conventions, your history. Not generic advice."
+                              - generic [ref=e423]: /ce-work takes that plan and builds it. Context blows up? Start a new session, point it at the plan, pick up where you left off. The plan is the checkpoint that survives everything.
+                              - generic [ref=e426]: Traditional dev is 80% coding, 20% planning. This flips it. The thinking goes in the plan. The execution is mechanical.
+                              - generic [ref=e428]:
+                                - link "Compound Engineering" [ref=e430] [cursor=pointer]:
+                                  - /url: https://github.com/EveryInc/compound-engineering-plugin
+                                  - generic [ref=e431]: Compound Engineering
+                                - generic [ref=e432]: ", from"
+                                - link "@kieranklaassen" [ref=e434] [cursor=pointer]:
+                                  - /url: https://x.com/@kieranklaassen
+                                  - generic [ref=e435]: "@kieranklaassen"
+                                - generic [ref=e436]: and
+                                - link "@trevin" [ref=e438] [cursor=pointer]:
+                                  - /url: https://x.com/@trevin
+                                  - generic [ref=e439]: "@trevin"
+                                - generic [ref=e440]: is the plugin that makes it real.
+                              - generic [ref=e443]: "I became a superfan, then a contributor, now I’m the 3rd biggest contributor behind the core team. My rule now: unless it is literally a one-line change, there is always a plan.md first."
+                              - generic [ref=e446]: HACKS
+                              - list [ref=e447]:
+                                - listitem [ref=e448]:
+                                  - generic [ref=e450]: "Install Compound Engineering: /plugin marketplace add EveryInc/compound-engineering-plugin"
+                                - listitem [ref=e451]:
+                                  - generic [ref=e453]: Paste a screenshot, bug URL, or error, then /ce-plan, then /ce-work.
+                                - listitem [ref=e454]:
+                                  - generic [ref=e456]: Fuzzy idea? /ce-brainstorm first.
+                              - heading "2. Don't Read the plan.md" [level=2] [ref=e458]:
+                                - generic [ref=e460]: 2. Don't Read the plan.md
+                              - generic [ref=e463]: I always make the plan.md. I almost never read it. Plans are for agents, you silly human.
+                              - generic [ref=e466]: Forcing a plan to exist makes the agents not lazy. It makes them research, commit to an approach, write down acceptance criteria, and then actually hit them. A coding agent with a plan ships finished work. A coding agent without one cuts corners and stops early. The plan is the leash.
+                              - generic [ref=e469]: "So I let it write the plan, I skim the title, and I run /ce-work. If I have a question I ask it inline, right there in the session: \"wait, why this approach?\" Or I ask for a TLDR. Or, when when I don’t understand, \"eli5 this plan.\" I get the one-paragraph version, nod, keep going. I do not sit there reading 300 lines of markdown. That's the agent's homework, not mine."
+                              - generic [ref=e472]: Make the plan. Trust the plan. Don't read the plan.
+                              - generic [ref=e475]: HACKS
+                              - list [ref=e476]:
+                                - listitem [ref=e477]:
+                                  - generic [ref=e479]: "Don't let yourself read the plan. Ask inline: TLDR?, eli5 this plan, or \"wait, why this approach?\""
+                              - heading "3. Use /ce-plan for Your Deepest Non-Engineering Work, Make a Plan for the Plan" [level=2] [ref=e481]:
+                                - generic [ref=e483]: 3. Use /ce-plan for Your Deepest Non-Engineering Work, Make a Plan for the Plan
+                              - generic [ref=e486]: "People think /ce-plan and /ce-work are for code. The biggest thing I've learned since March is that they aren't. The deepest knowledge work I do now runs through the same loop, and the trick is to make the first plan a plan for the plan. This isn't me forcing a code tool to do something it wasn't built for, either: /ce-plan has a universal planning mode built in, made for exactly this kind of non-code work."
+                              - generic [ref=e489]: It's not just business problems either. Strategy docs, product specs, competitive analysis, board updates, all the same loop.
+                              - generic [ref=e492]: "Here's a real one. I met with Michael Margolis, the former GV research partner known for the bullseye-customer method, about a business challenge I was brewing on. He told me to read his book, free as a PDF on his site. The old move would be to skim it and move on. Instead I opened Claude Code and said, roughly:"
+                              - generic [ref=e495]: "\"/ce-plan make a plan for the plan. I'm about to hand you two things: Margolis's book as a PDF, and the two-hour Granola transcript of the meeting I just had with him, which has the full context of what we discussed. I want a thoughtful plan for how my business problem, that conversation, and the lessons in the book come together into something I can actually use. Do not write that document now. Writing it is the work. Right now I only want the plan for how you'll read the book, mine the transcript, and produce a great document.\""
+                              - generic [ref=e498]: It spent the next 45 minutes creating an EPIC plan.
+                              - generic [ref=e501]: It's also the single best trick I know for making an LLM not lazy. Ask for the deliverable directly and it cuts corners. Ask it to first plan how it will produce the deliverable, then execute that plan, and it does the deep version every time.
+                              - generic [ref=e504]: HACKS
+                              - list [ref=e505]:
+                                - listitem [ref=e506]:
+                                  - generic [ref=e508]: "Deep non-code work: /ce-plan make a plan for the plan, hand it your all your context and transcript, then /ce-work."
+                              - heading "4. Get Voice-Pilled" [level=2] [ref=e510]:
+                                - generic [ref=e512]: 4. Get Voice-Pilled
+                              - generic [ref=e515]: Voice-to-LLM is different from voice-to-anything-else. The transcription doesn't have to be perfect because the listener understands context. It guesses what the mic got wrong. You can mumble, trail off, restart a sentence. Voice finally works because the thing on the other end is smart enough to fill the gaps.
+                              - generic [ref=e518]: "My setup:"
+                              - list [ref=e519]:
+                                - listitem [ref=e520]:
+                                  - generic [ref=e521]:
+                                    - generic [ref=e522]: "Mac:"
+                                    - link "Monologue" [ref=e524] [cursor=pointer]:
+                                      - /url: https://monologue.to/
+                                      - generic [ref=e525]: Monologue
+                                    - generic [ref=e526]: (from Every) or
+                                    - link "Wispr Flow" [ref=e528] [cursor=pointer]:
+                                      - /url: https://wisprflow.ai/
+                                      - generic [ref=e529]: Wispr Flow
+                                    - generic [ref=e530]: . Pick one, pipe speech into whatever app is focused, talk into Claude Code. I bought a gooseneck mic for the office.
+                                - listitem [ref=e531]:
+                                  - generic [ref=e533]: "Phone: skip Monologue and Wispr Flow, switching to them on iOS is too annoying. Apple's built-in dictation is good enough, because you're talking to an LLM, not a human. It can mangle half the words and the agent still gets it. Lazy notes are fine."
+                              - generic [ref=e536]: "One honest admission: I'm great with voice when I'm alone. In the office I struggle with it. People say you can just whisper into the mic, but I find I don't actually do it, because I don't want to be rude or distract the people around me. So a desk in a shared room is still my weak spot for this whole workflow. If you've cracked voice in an open office without being that person, tell me how. I genuinely want the advice."
+                              - generic [ref=e539]: HACKS
+                              - list [ref=e540]:
+                                - listitem [ref=e541]:
+                                  - generic [ref=e542]:
+                                    - generic [ref=e543]: "Mac: install"
+                                    - link "Monologue" [ref=e545] [cursor=pointer]:
+                                      - /url: https://monologue.to/
+                                      - generic [ref=e546]: Monologue
+                                    - generic [ref=e547]: or
+                                    - link "Wispr Flow" [ref=e549] [cursor=pointer]:
+                                      - /url: https://wisprflow.ai/
+                                      - generic [ref=e550]: Wispr Flow
+                                    - generic [ref=e551]: ". Phone: use Apple dictation. Get a"
+                                    - link "gooseneck mic" [ref=e553] [cursor=pointer]:
+                                      - /url: https://www.amazon.com/dp/B0BF969RVP
+                                      - generic [ref=e554]: gooseneck mic
+                                    - generic [ref=e555]: .
+                              - heading "5. Lots and Lots of Tabs in cmux" [level=2] [ref=e557]:
+                                - generic [ref=e559]: 5. Lots and Lots of Tabs in cmux
+                              - generic [ref=e561]:
+                                - generic [ref=e562]: This is how I actually spend a day. Four to six
+                                - link "cmux" [ref=e564] [cursor=pointer]:
+                                  - /url: https://cmux.com/
+                                  - generic [ref=e565]: cmux
+                                - generic [ref=e566]: "tabs, sometimes more, each a separate session:"
+                              - list [ref=e567]:
+                                - listitem [ref=e568]:
+                                  - generic [ref=e570]: One writing a plan.
+                                - listitem [ref=e571]:
+                                  - generic [ref=e573]: One building from a different plan.
+                                - listitem [ref=e574]:
+                                  - generic [ref=e576]: One running last30days.
+                                - listitem [ref=e577]:
+                                  - generic [ref=e579]: One fixing a bug I found testing the last thing.
+                              - generic [ref=e582]: While /ce-plan spins up research in one window, I switch to another and /ce-work a plan that's already written. While that builds, a third window gets a new bug pasted in. By the time I cycle back, the first one is done and waiting.
+                              - generic [ref=e584]:
+                                - generic [ref=e585]: I hear great things about
+                                - link "Orca" [ref=e587] [cursor=pointer]:
+                                  - /url: https://onorca.dev/
+                                  - generic [ref=e588]: Orca
+                                - generic [ref=e589]: for the mobile work they are doing. I also used to be a
+                                - link "Ghostty" [ref=e591] [cursor=pointer]:
+                                  - /url: https://ghostty.org/
+                                  - generic [ref=e592]: Ghostty
+                                - generic [ref=e593]: purist, but I was losing too many notifications in ghostty.
+                              - generic [ref=e596]: HACKS
+                              - list [ref=e597]:
+                                - listitem [ref=e598]:
+                                  - generic [ref=e599]:
+                                    - generic [ref=e600]: Use
+                                    - link "cmux" [ref=e602] [cursor=pointer]:
+                                      - /url: https://cmux.com/
+                                      - generic [ref=e603]: cmux
+                                    - generic [ref=e604]: .
+                                - listitem [ref=e605]:
+                                  - generic [ref=e607]: Keep 4 to 6 tabs open, a different task in each.
+                              - heading "6. Make Your Terminal Default Into Claude or Codex, Not a Shell" [level=2] [ref=e609]:
+                                - generic [ref=e611]: 6. Make Your Terminal Default Into Claude or Codex, Not a Shell
+                              - generic [ref=e614]: A new tab should open straight into Claude Code, not a shell. Open a tab, you're already talking to an agent. No cd, no typing claude. When a new session costs one keystroke, you start a lot more of them. I also don't use folders. Your agent can find your project.
+                              - generic [ref=e617]: HACKS
+                              - list [ref=e618]:
+                                - listitem [ref=e619]:
+                                  - generic [ref=e621]: "Paste to your agent: \"Make every new terminal tab open directly into Claude Code. In ~/.config/ghostty/config, add the line command = ~/.local/bin/claude-launcher.sh without disturbing any other settings already in that file. Then create ~/.local/bin/claude-launcher.sh that runs claude --dangerously-skip-permissions, and when Claude exits prints a short note and drops me into an interactive login zsh. chmod +x the script. This works for both Ghostty and cmux, since cmux reads the same Ghostty config.\""
+                              - heading "7. Remote Control Every Window, and Give Claude Code or Codex an Email Address" [level=2] [ref=e623]:
+                                - generic [ref=e625]: 7. Remote Control Every Window, and Give Claude Code or Codex an Email Address
+                              - generic [ref=e628]: Two hacks that make every session reachable from anywhere.
+                              - generic [ref=e631]: Turn on remote control every time you open a new window
+                              - generic [ref=e634]: Set remote control to turn on automatically for every session.
+                              - generic [ref=e637]: Now every window is reachable from the Claude mobile app. Start a session at your desk, walk away, pick up the exact same live run on your phone mid-task. In a line somewhere, you're steering what's churning away on your Mac at home.
+                              - generic [ref=e640]: Give your Claude an email address
+                              - generic [ref=e642]:
+                                - generic [ref=e643]: Claude Code can have an email address with AgentMail. The founder, Adi
+                                - link "@adisingh" [ref=e645] [cursor=pointer]:
+                                  - /url: https://x.com/@adisingh
+                                  - generic [ref=e646]: "@adisingh"
+                                - generic [ref=e647]: "taught me this. Email the inbox and a fresh session opens and starts working on whatever's in the subject and body, with any attachments available by path. Bug at dinner? Email it from your phone and a session is running before you're back at a screen. I open-sourced the whole thing:"
+                                - link "github.com/mvanhorn/agentmail-to-claude-code" [ref=e649] [cursor=pointer]:
+                                  - /url: //github.com/mvanhorn/agentmail-to-claude-code
+                                  - generic [ref=e650]: github.com/mvanhorn/agentmail-to-claude-code
+                                - generic [ref=e651]: .
+                              - generic [ref=e654]: "Three pieces:"
+                              - list [ref=e655]:
+                                - listitem [ref=e656]:
+                                  - generic [ref=e657]:
+                                    - generic [ref=e658]: A daemon that watches an
+                                    - link "AgentMail" [ref=e660] [cursor=pointer]:
+                                      - /url: https://agentmail.to/
+                                      - generic [ref=e661]: AgentMail
+                                    - generic [ref=e662]: inbox over WebSocket. On every allowlisted email it opens a fresh Claude session, writes the email to a prompt file, and tells Claude to read and act on it.
+                                - listitem [ref=e663]:
+                                  - generic [ref=e665]: Two terminal backends, cmux or standalone Ghostty, so it drives whatever you already launch into.
+                                - listitem [ref=e666]:
+                                  - generic [ref=e668]: A sender. I wired it to a cc command in my Hermes, so from my phone I run cc <task> and it lands as a working session on my Mac, no VPN, no SSH.
+                              - generic [ref=e671]: The allowlist is the gate. Only addresses you control get through, and anything that fails DKIM or SPF is dropped before a session ever opens.
+                              - generic [ref=e674]: HACKS
+                              - list [ref=e675]:
+                                - listitem [ref=e676]:
+                                  - generic [ref=e678]: "Always-on remote control: add \"remoteControlAtStartup\": true to ~/.claude/settings.json."
+                                - listitem [ref=e679]:
+                                  - generic [ref=e680]:
+                                    - generic [ref=e681]: "Give Claude an email. Paste to your agent: \"Give Claude Code an email address using"
+                                    - link "github.com/mvanhorn/agentmail-to-claude-code" [ref=e683] [cursor=pointer]:
+                                      - /url: //github.com/mvanhorn/agentmail-to-claude-code
+                                      - generic [ref=e684]: github.com/mvanhorn/agentmail-to-claude-code
+                                    - generic [ref=e685]: . Clone it, set up an AgentMail inbox, fill cc.env with my API key, the inbox, an allowlist of only my own addresses, and my terminal (cmux or Ghostty), then run the daemon and install it as a launchd job. When I email that inbox, a fresh Claude Code session should open on this Mac and start on the subject and body."
+                              - heading "8. Dangerously Skip Permissions, and Yes I Mean It" [level=2] [ref=e687]:
+                                - generic [ref=e689]: 8. Dangerously Skip Permissions, and Yes I Mean It
+                              - generic [ref=e692]: Claude Code asks permission for every edit and command. With six sessions you can't babysit it. Two settings make it livable. People say auto is the “safer” way to do this, but it slows me down too much.
+                              - generic [ref=e695]: "skipDangerousModePermissionPrompt: true is the key. Without it, Claude asks you to confirm every session. You can also Shift+Tab to toggle. People tell me the newer \"auto\" mode gets you most of the way there with more safety. Maybe. I say YOLO. It's my computer. GitHub is there if I break or ruin everything. When I set up a friend's Claude Code, the AI actively tried to talk him out of enabling this. You have to be direct with it."
+                              - generic [ref=e698]: The other setting is a sound hook, non-negotiable with six sessions.
+                              - generic [ref=e701]: Walk away, come back when you hear it. With six sessions running, the sound is how you know which one just finished.
+                              - generic [ref=e704]: HACKS
+                              - generic [ref=e707]: "Paste into ~/.claude/settings.json:"
+                              - generic [ref=e710]: "{ \"permissions\": { \"allow\": [ \"WebSearch\", \"WebFetch\", \"Bash\", \"Read\", \"Write\", \"Edit\", \"Glob\", \"Grep\", \"Task\", \"TodoWrite\" ], \"deny\": [], \"defaultMode\": \"bypassPermissions\" }, \"skipDangerousModePermissionPrompt\": true }"
+                              - generic [ref=e713]: "{ \"hooks\": { \"Stop\": [ { \"hooks\": [ { \"type\": \"command\", \"command\": \"afplay /System/Library/Sounds/Blow.aiff\" } ] } ] } }"
+                              - generic [ref=e716]: "Codex has the same YOLO mode. In ~/.codex/config.toml:"
+                              - generic [ref=e719]: approval_policy = "never" sandbox_mode = "danger-full-access"
+                              - generic [ref=e722]: Or launch a one-off with codex --yolo.
+                              - heading "9. How I Run Most of My Code Through Codex Without Ever Opening the Codex CLI" [level=2] [ref=e724]:
+                                - generic [ref=e726]: 9. How I Run Most of My Code Through Codex Without Ever Opening the Codex CLI
+                              - generic [ref=e729]: I send work to Codex all day, and I almost never open the Codex CLI to do it. Claude plans, Codex builds, and I never leave my Claude session.
+                              - generic [ref=e732]: "Three ways I hand work to Codex without leaving Claude:"
+                              - list [ref=e733]:
+                                - listitem [ref=e734]:
+                                  - generic [ref=e735]:
+                                    - link "Codex IDE extension" [ref=e737] [cursor=pointer]:
+                                      - /url: https://developers.openai.com/codex/ide
+                                      - generic [ref=e738]: Codex IDE extension
+                                    - generic [ref=e739]: ": send a task, apply the result, never drop into the Codex terminal."
+                                - listitem [ref=e740]:
+                                  - generic [ref=e742]: "/ce-work --codex: delegates the build straight to Codex from inside the Compound Engineering loop."
+                                - listitem [ref=e743]:
+                                  - generic [ref=e745]: "Printing Press Codex mode: put codex at the end of the prompt when printing a new CLI and it hands the build to Codex."
+                              - generic [ref=e748]: "My settings, both engines cranked to extra-high reasoning:"
+                              - list [ref=e749]:
+                                - listitem [ref=e750]:
+                                  - generic [ref=e752]: "Codex: reasoning xhigh, fast mode on, always."
+                                - listitem [ref=e753]:
+                                  - generic [ref=e755]: "Claude Code: reasoning xhigh, fast mode off. Its fast mode bills per token on top of your $200 Max plan, so I skip it."
+                              - generic [ref=e758]: Two $200 plans side by side is a whole second engine. I push big parallel builds to Codex and keep Claude on planning and taste. Some friends run it the other way, Codex builds and Claude reviews.
+                              - generic [ref=e761]: HACKS
+                              - list [ref=e762]:
+                                - listitem [ref=e763]:
+                                  - generic [ref=e765]: "Codex: reasoning xhigh, fast mode on. Claude Code: xhigh, fast mode off."
+                                - listitem [ref=e766]:
+                                  - generic [ref=e767]:
+                                    - generic [ref=e768]: "Hand work to Codex: the"
+                                    - link "Codex IDE extension" [ref=e770] [cursor=pointer]:
+                                      - /url: https://developers.openai.com/codex/ide
+                                      - generic [ref=e771]: Codex IDE extension
+                                    - generic [ref=e772]: ", /ce-work --codex, or codex at the end of a"
+                                    - link "Printing Press" [ref=e774] [cursor=pointer]:
+                                      - /url: https://printingpress.dev/
+                                      - generic [ref=e775]: Printing Press
+                                    - generic [ref=e776]: prompt.
+                              - 'heading "10. Research Before You Plan: last30days" [level=2] [ref=e778]':
+                                - generic [ref=e780]: "10. Research Before You Plan: last30days"
+                              - generic [ref=e783]: Before I /ce-plan, I usually run /last30days on it first.
+                              - generic [ref=e786]: "I was choosing between Vercel's agent-browser and Playwright. Instead of reading docs, I ran /last30days Vercel agent browser vs Playwright. In a few minutes: dozens of Reddit threads, X posts, YouTube videos, HN stories. Agent-browser uses far less context per call, Playwright dumps thousands of tokens just for tool definitions. I fed the whole output into /ce-plan integrate agent-browser. The plan came out grounded in what the community actually knows right now, not six-month-old training data."
+                              - generic [ref=e788]:
+                                - link "last30days" [ref=e790] [cursor=pointer]:
+                                  - /url: https://github.com/mvanhorn/last30days-skill
+                                  - generic [ref=e791]: last30days
+                                - generic [ref=e792]: is open source, now past 26K stars. It searches Reddit, X, YouTube, TikTok, Instagram, HN, Polymarket, GitHub, and the web in parallel. I run it before I pick a library, before I build a feature, before I meet with a business partner, before I write an article. I ran it on a few of the things in this post. Research, plan, build. That's the real loop.
+                              - generic [ref=e795]: HACKS
+                              - list [ref=e796]:
+                                - listitem [ref=e797]:
+                                  - generic [ref=e798]:
+                                    - generic [ref=e799]: Install
+                                    - link "last30days" [ref=e801] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/last30days-skill
+                                      - generic [ref=e802]: last30days
+                                    - generic [ref=e803]: . Before /ce-plan, run /last30days <topic>.
+                                - listitem [ref=e804]:
+                                  - generic [ref=e806]: Make sure you install a ScrapeCreators key
+                              - heading "11. Granola All the Things, and Put the RAW Transcript In your LLM" [level=2] [ref=e808]:
+                                - generic [ref=e810]: 11. Granola All the Things, and Put the RAW Transcript In your LLM
+                              - generic [ref=e812]:
+                                - generic [ref=e813]: I had lunch with a candidate. We talked product, and food, and kids, ninety minutes of normal conversation with a product idea woven through it.
+                                - link "Granola" [ref=e815] [cursor=pointer]:
+                                  - /url: https://granola.ai/
+                                  - generic [ref=e816]: Granola
+                                - generic [ref=e817]: "was running. After, I pasted the full raw transcript into Claude Code: /ce-plan turn this into a product proposal."
+                              - generic [ref=e820]: The trick is raw. I don't summarize first. I drop the whole messy transcript in, tangents about sushi and all, and let Claude do the extraction against my actual codebase and every prior strategy plan I've written. Granola context plus codebase plus prior plans equals gold. It one-shotted a proposal, ignored the restaurant talk, and I sent it that night. The guy works with us full time now.
+                              - generic [ref=e823]: "And the upgrade since March: the Printing Press Granola CLI. It is magic. I pull any meeting as clean structured data straight into a session, search across every meeting I've ever had, find the one thing someone said three weeks ago, and pipe it into a plan. No more copy-paste. Every meeting's context is one command away."
+                              - generic [ref=e826]: HACKS
+                              - list [ref=e827]:
+                                - listitem [ref=e828]:
+                                  - generic [ref=e829]:
+                                    - generic [ref=e830]: Drop the raw
+                                    - link "Granola" [ref=e832] [cursor=pointer]:
+                                      - /url: https://granola.ai/
+                                      - generic [ref=e833]: Granola
+                                    - generic [ref=e834]: transcript into /ce-plan, don't summarize first. Install the Printing Press
+                                    - link "Granola CLI" [ref=e836] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/printing-press-library/tree/main/cli-skills/pp-granola
+                                      - generic [ref=e837]: Granola CLI
+                                    - generic [ref=e838]: .
+                              - heading "12. Human Signal" [level=2] [ref=e840]:
+                                - generic [ref=e842]: 12. Human Signal
+                              - generic [ref=e845]: Here's the mindset shift that took me longest. When you run six agents, your job is not to do the work. Your job is to be the signal.
+                              - generic [ref=e848]: The agents supply volume. You supply taste, direction, and the react-and-redirect loop. You look at what came back, you say "option two is closer but use the language from option one," "address the biggest risk," "this paragraph is too long," and they move. The rare, valuable thing in the loop is your judgment, not your typing. The more I leaned into being the human signal and stopped trying to also be a hand doing the work, the more I shipped.
+                              - generic [ref=e851]: Be the taste. Let them be the hands.
+                              - generic [ref=e854]: HACKS
+                              - list [ref=e855]:
+                                - listitem [ref=e856]:
+                                  - generic [ref=e858]: Add value to the world by directing your agents with your brain. It still has value.
+                              - heading "13. HyperFrames for Video, for All the Things" [level=2] [ref=e860]:
+                                - generic [ref=e862]: 13. HyperFrames for Video, for All the Things
+                              - generic [ref=e865]: "Video used to be the thing I outsourced or skipped. Now I make it the same way I make everything else: I talk, an agent builds, I react."
+                              - generic [ref=e867]:
+                                - link "HyperFrames" [ref=e869] [cursor=pointer]:
+                                  - /url: https://hyperframes.heygen.com/
+                                  - generic [ref=e870]: HyperFrames
+                                - generic [ref=e871]: lets me build video as HTML, so an agent can write it. The loop is identical to code, the output is just an MP4 instead of a PR. Each one is a folder with a script.md, scene by scene, kinetic typography, captions carrying every beat. The agent turns that script into the composition and renders it. No editor, no timeline.
+                              - generic [ref=e874]: "Launch reels I made this way:"
+                              - list [ref=e875]:
+                                - listitem [ref=e876]:
+                                  - generic [ref=e878]: Granola CLI demo
+                                - listitem [ref=e879]:
+                                  - generic [ref=e881]: Agent Cookie launch
+                              - generic [ref=e884]:
+                                - generic [ref=e897]:
+                                  - generic "Embedded video" [ref=e900]
+                                  - button "Play Video" [ref=e907] [cursor=pointer]:
+                                    - img [ref=e908]
+                                - generic [ref=e921]: Agent Cookie Launch Video Made in HyperFrame
+                              - generic [ref=e923]:
+                                - generic [ref=e924]: "The cost of a video dropped to a conversation, so anything that deserves one now gets one: launch reels, product demos, animated explainers, captioned clips. They don't only go on X, either: I'll drop a rendered demo straight into a PR, like"
+                                - link "this one" [ref=e926] [cursor=pointer]:
+                                  - /url: https://github.com/facebookresearch/atlas-lean/pull/2
+                                  - generic [ref=e927]: this one
+                                - generic [ref=e928]: on atlas-lean, Facebook's AI research project.
+                              - generic [ref=e931]: HACKS
+                              - list [ref=e932]:
+                                - listitem [ref=e933]:
+                                  - generic [ref=e934]:
+                                    - generic [ref=e935]: Build video in
+                                    - link "HyperFrames" [ref=e937] [cursor=pointer]:
+                                      - /url: https://hyperframes.heygen.com/
+                                      - generic [ref=e938]: HyperFrames
+                                    - generic [ref=e939]: ": write a script.md, have your agent render it to MP4."
+                                - listitem [ref=e940]:
+                                  - generic [ref=e941]:
+                                    - generic [ref=e942]: Upload GIFs to
+                                    - link "catbox" [ref=e944] [cursor=pointer]:
+                                      - /url: https://catbox.moe/
+                                      - generic [ref=e945]: catbox
+                                    - generic [ref=e946]: and they render beautifully on GitHub, in PRs, READMEs, and issues.
+                              - heading "14. Your Notes Are Your Agent's Knowledge Base" [level=2] [ref=e948]:
+                                - generic [ref=e950]: 14. Your Notes Are Your Agent's Knowledge Base
+                              - generic [ref=e953]: The strategy-folder trick from March generalized. The reason a plan gets better every time is that Claude has access to every prior plan I've written. Compounding context. So I pointed it at my whole brain.
+                              - generic [ref=e956]: "The tools I point it at:"
+                              - list [ref=e957]:
+                                - listitem [ref=e958]:
+                                  - generic [ref=e959]:
+                                    - link "Bear" [ref=e961] [cursor=pointer]:
+                                      - /url: https://bear.app/
+                                      - generic [ref=e962]: Bear
+                                    - generic [ref=e963]: ", with the Bear CLI. A decade of notes, meetings, half-baked ideas, and decisions an agent can read and write. Personal RAG without calling it that. The more I put in, the smarter every session gets."
+                                - listitem [ref=e964]:
+                                  - generic [ref=e965]:
+                                    - link "Obsidian" [ref=e967] [cursor=pointer]:
+                                      - /url: https://obsidian.md/
+                                      - generic [ref=e968]: Obsidian
+                                    - generic [ref=e969]: . I don't use it, but people love it for this and the plugin ecosystem is deep.
+                                - listitem [ref=e970]:
+                                  - generic [ref=e971]:
+                                    - link "gbrain" [ref=e973] [cursor=pointer]:
+                                      - /url: https://github.com/garrytan/gbrain
+                                      - generic [ref=e974]: gbrain
+                                    - generic [ref=e975]: . My synced brain across machines and agents.
+                                - listitem [ref=e976]:
+                                  - generic [ref=e977]:
+                                    - link "supermemory" [ref=e979] [cursor=pointer]:
+                                      - /url: https://supermemory.ai/
+                                      - generic [ref=e980]: supermemory
+                                    - generic [ref=e981]: . A memory layer for agents a lot of people swear by. Digging in now, verdict to come.
+                              - generic [ref=e984]: "The shape of the hack is the point: pick a notes tool with a CLI or an API, point your agent at it, and let your own knowledge compound."
+                              - generic [ref=e987]: HACKS
+                              - list [ref=e988]:
+                                - listitem [ref=e989]:
+                                  - generic [ref=e990]:
+                                    - generic [ref=e991]: "Point your agent at both: note-takers you write in ("
+                                    - link "Bear" [ref=e993] [cursor=pointer]:
+                                      - /url: https://bear.app/
+                                      - generic [ref=e994]: Bear
+                                    - generic [ref=e995]: ","
+                                    - link "Obsidian" [ref=e997] [cursor=pointer]:
+                                      - /url: https://obsidian.md/
+                                      - generic [ref=e998]: Obsidian
+                                    - generic [ref=e999]: ) and agent brains that remember for you (
+                                    - link "gbrain" [ref=e1001] [cursor=pointer]:
+                                      - /url: https://github.com/garrytan/gbrain
+                                      - generic [ref=e1002]: gbrain
+                                    - generic [ref=e1003]: ","
+                                    - link "supermemory" [ref=e1005] [cursor=pointer]:
+                                      - /url: https://supermemory.ai/
+                                      - generic [ref=e1006]: supermemory
+                                    - generic [ref=e1007]: ). Pick ones with a CLI or API so it can read them.
+                              - heading "15. Work From Anywhere - My Mac mini" [level=2] [ref=e1009]:
+                                - generic [ref=e1011]: 15. Work From Anywhere - My Mac mini
+                              - generic [ref=e1014]: HACKS
+                              - list [ref=e1015]:
+                                - listitem [ref=e1016]:
+                                  - generic [ref=e1017]:
+                                    - link "Mosh" [ref=e1019] [cursor=pointer]:
+                                      - /url: https://mosh.org/
+                                      - generic [ref=e1020]: Mosh
+                                    - generic [ref=e1021]: ", when you have to SSH in. It keeps the session local-feeling and responsive over bad wifi and roaming. On plain SSH, Claude Code crawls, every keystroke waiting on the round trip. The difference between usable and miserable on a remote box."
+                                - listitem [ref=e1022]:
+                                  - generic [ref=e1023]:
+                                    - link "Tmux" [ref=e1025] [cursor=pointer]:
+                                      - /url: https://github.com/tmux/tmux
+                                      - generic [ref=e1026]: Tmux
+                                    - generic [ref=e1027]: ", for airplanes. SSH into your remote machine inside a tmux session and the work runs there, not on your laptop. Wifi drops for twenty minutes over the Atlantic, you reconnect, attach, and it's exactly where you left it. I've shipped features the whole flight home from Europe."
+                                - listitem [ref=e1028]:
+                                  - generic [ref=e1029]:
+                                    - link "Hermes" [ref=e1031] [cursor=pointer]:
+                                      - /url: https://hermes-agent.nousresearch.com/
+                                      - generic [ref=e1032]: Hermes
+                                    - generic [ref=e1033]: and
+                                    - link "OpenClaw" [ref=e1035] [cursor=pointer]:
+                                      - /url: https://github.com/openclaw/openclaw
+                                      - generic [ref=e1036]: OpenClaw
+                                    - generic [ref=e1037]: ", both running, for autonomous remote work. Hermes for the self-learning ecosystem that gets better at repeated tasks, OpenClaw for the breadth of agent-built skills. I swap between both. If you bailed on OpenClaw early, wipe it and start fresh."
+                                - listitem [ref=e1038]:
+                                  - generic [ref=e1039]:
+                                    - link "Agent Cookie" [ref=e1041] [cursor=pointer]:
+                                      - /url: https://agentcookie.dev/
+                                      - generic [ref=e1042]: Agent Cookie
+                                    - generic [ref=e1043]: to keep cookies and .env's in sync between your Ma mini and your primary Mac.
+                              - 'heading "16. Proof: For Sending a Plan to a Colleague" [level=2] [ref=e1045]':
+                                - generic [ref=e1047]: "16. Proof: For Sending a Plan to a Colleague"
+                              - generic [ref=e1049]:
+                                - generic [ref=e1050]: A plan.md is perfect for me and useless to hand to someone who doesn't live in a terminal. That was the last real gap, and
+                                - link "Proof" [ref=e1052] [cursor=pointer]:
+                                  - /url: https://proofeditor.ai/
+                                  - generic [ref=e1053]: Proof
+                                - generic [ref=e1054]: ", also from Every, closed it."
+                              - generic [ref=e1057]: Opening a plan in Proof to read it like a document is nice. But where it became essential is sending a plan to a colleague. I drop a plan.md or a spec into Proof, send the link, and a non-terminal human can read it cleanly, comment inline, and those comments flow back into the loop with the agent. No more pasting markdown into Slack and watching it render into garbage. It's human-in-the-loop review for the whole plan-file workflow, and it's the first time sharing agentic work with a normal coworker hasn't felt awkward.
+                              - generic [ref=e1060]: I loaded this very article into Proof while I was writing it. That's how it got reviewed.
+                              - generic [ref=e1063]: "And I wrote this whole article in cmux with the Proof review open right alongside it:"
+                              - generic [ref=e1066]:
+                                - link "Image" [ref=e1070] [cursor=pointer]:
+                                  - /url: /mvanhorn/article/2061877533885473181/media/2061846533537161217
+                                  - generic "Image" [ref=e1074]:
+                                    - img "Image" [ref=e1076]
+                                - generic [ref=e1086]: cmux and Proof working together
+                              - generic [ref=e1089]: HACKS
+                              - list [ref=e1090]:
+                                - listitem [ref=e1091]:
+                                  - generic [ref=e1092]:
+                                    - generic [ref=e1093]: "Share a plan: drop the .md into"
+                                    - link "Proof" [ref=e1095] [cursor=pointer]:
+                                      - /url: https://proofeditor.ai/
+                                      - generic [ref=e1096]: Proof
+                                    - generic [ref=e1097]: ", send the link, pull comments back into the loop."
+                              - heading "17. Write Your Own Skills" [level=2] [ref=e1099]:
+                                - generic [ref=e1101]: 17. Write Your Own Skills
+                              - generic [ref=e1104]: "The biggest level-up isn't using agents. It's teaching them tricks that stick. Anything I do more than twice, I turn into a skill: a reusable command my agents can run forever. Automate your workflows by writing your own skills first."
+                              - generic [ref=e1107]: "You don't write them from scratch. The trick that unlocked this for me is to point your agent at a skill that already works and have it copy the shape. Literally: \"look at the Compound Engineering skill and help me make one like this for [whatever I'm trying to automate].\" It reads a great example, learns the structure, and scaffolds mine. I've built a pile of skills this way."
+                              - generic [ref=e1109]:
+                                - generic [ref=e1110]: This is also most of my open source life now. If you look at
+                                - link "my GitHub" [ref=e1112] [cursor=pointer]:
+                                  - /url: https://github.com/mvanhorn
+                                  - generic [ref=e1113]: my GitHub
+                                - generic [ref=e1114]: ", the work is skills and the tools around them. last30days started as a skill I wanted for myself and is now open source past 26K stars. Printing Press is a whole factory for generating agent-native CLIs, and it's my most-used personal tool, with over 320 merged PRs into it. I'm one of the top contributors to Compound Engineering itself. None of it was a grand plan. Each piece was a workflow I ran often enough that it was worth making the agent permanently good at it."
+                              - generic [ref=e1117]: Write the skill once. Every session after is faster. That's the compounding part of Compound Engineering.
+                              - generic [ref=e1120]: HACKS
+                              - list [ref=e1121]:
+                                - listitem [ref=e1122]:
+                                  - generic [ref=e1123]:
+                                    - generic [ref=e1124]: "Anything you do more than twice, make a skill: \"look at the"
+                                    - link "Compound Engineering" [ref=e1126] [cursor=pointer]:
+                                      - /url: https://github.com/EveryInc/compound-engineering-plugin
+                                      - generic [ref=e1127]: Compound Engineering
+                                    - generic [ref=e1128]: skill and help me make one like this for [X]."
+                              - 'heading "18. Open Source: Contribute to the Projects You Love" [level=2] [ref=e1130]':
+                                - generic [ref=e1132]: "18. Open Source: Contribute to the Projects You Love"
+                              - generic [ref=e1134]:
+                                - generic [ref=e1135]: The same loop that ships my own projects ships everyone else's. I've had hundreds of PRs merged into open source, including
+                                - link "Python" [ref=e1137] [cursor=pointer]:
+                                  - /url: https://github.com/python/cpython
+                                  - generic [ref=e1138]: Python
+                                - generic [ref=e1139]: ","
+                                - link "Go" [ref=e1141] [cursor=pointer]:
+                                  - /url: https://github.com/golang/go
+                                  - generic [ref=e1142]: Go
+                                - generic [ref=e1143]: ","
+                                - link "OpenCV" [ref=e1145] [cursor=pointer]:
+                                  - /url: https://github.com/opencv/opencv
+                                  - generic [ref=e1146]: OpenCV
+                                - generic [ref=e1147]: ","
+                                - link "Vercel's Agent Browser" [ref=e1149] [cursor=pointer]:
+                                  - /url: https://github.com/vercel-labs/agent-browser
+                                  - generic [ref=e1150]: Vercel's Agent Browser
+                                - generic [ref=e1151]: ", and"
+                                - link "OpenClaw" [ref=e1153] [cursor=pointer]:
+                                  - /url: https://github.com/openclaw/openclaw
+                                  - generic [ref=e1154]: OpenClaw
+                                - generic [ref=e1155]: . Not drive-by typo fixes, real features on tools I use every day.
+                              - generic [ref=e1158]: "Somewhere along the way I started landing near the top of the contributor lists:"
+                              - list [ref=e1159]:
+                                - listitem [ref=e1160]:
+                                  - generic [ref=e1161]:
+                                    - generic [ref=e1162]: "#3 on"
+                                    - link "Compound Engineering" [ref=e1164] [cursor=pointer]:
+                                      - /url: https://github.com/EveryInc/compound-engineering-plugin
+                                      - generic [ref=e1165]: Compound Engineering
+                                    - generic [ref=e1166]: ","
+                                    - link "Superpowers" [ref=e1168] [cursor=pointer]:
+                                      - /url: https://github.com/obra/superpowers
+                                      - generic [ref=e1169]: Superpowers
+                                    - generic [ref=e1170]: ", and"
+                                    - link "Emdash" [ref=e1172] [cursor=pointer]:
+                                      - /url: https://github.com/emdash-cms/emdash
+                                      - generic [ref=e1173]: Emdash
+                                - listitem [ref=e1174]:
+                                  - generic [ref=e1175]:
+                                    - generic [ref=e1176]: "#4 on"
+                                    - link "GStack" [ref=e1178] [cursor=pointer]:
+                                      - /url: https://github.com/garrytan/gstack
+                                      - generic [ref=e1179]: GStack
+                                    - generic [ref=e1180]: and
+                                    - link "Paperclip" [ref=e1182] [cursor=pointer]:
+                                      - /url: https://github.com/paperclipai/paperclip
+                                      - generic [ref=e1183]: Paperclip
+                                - listitem [ref=e1184]:
+                                  - generic [ref=e1185]:
+                                    - generic [ref=e1186]: "#6 on"
+                                    - link "Vercel's Agent Browser" [ref=e1188] [cursor=pointer]:
+                                      - /url: https://github.com/vercel-labs/agent-browser
+                                      - generic [ref=e1189]: Vercel's Agent Browser
+                                - listitem [ref=e1190]:
+                                  - generic [ref=e1191]:
+                                    - generic [ref=e1192]: "#2 on"
+                                    - link "Camoufox" [ref=e1194] [cursor=pointer]:
+                                      - /url: https://github.com/jo-inc/camofox-browser
+                                      - generic [ref=e1195]: Camoufox
+                              - generic [ref=e1197]:
+                                - link "@pejmanjohn" [ref=e1199] [cursor=pointer]:
+                                  - /url: https://x.com/@pejmanjohn
+                                  - generic [ref=e1200]: "@pejmanjohn"
+                                - generic [ref=e1201]: jokes that when he opens a repo, spotting my face in the contributor grid has become his personal game of "where's Waldo."
+                              - generic [ref=e1204]:
+                                - link "Image" [ref=e1208] [cursor=pointer]:
+                                  - /url: /mvanhorn/article/2061877533885473181/media/2061846904749928448
+                                  - generic "Image" [ref=e1212]:
+                                    - img "Image" [ref=e1214]
+                                - generic [ref=e1224]: Contributors for Superpowers
+                              - generic [ref=e1227]: But the merged PRs aren't the real prize. It's the people. I jump into the Discord, meet the maintainers, make actual friends. It's been incredible for hiring too, I just hired an engineer I met this way for my new company. You contribute to something you love, you meet the people who love it, and it compounds.
+                              - generic [ref=e1230]: HACKS
+                              - list [ref=e1231]:
+                                - listitem [ref=e1232]:
+                                  - generic [ref=e1234]: Pick a tool you use every day, find one real thing it's missing, and ship it with the same /ce-plan + /ce-work loop.
+                                - listitem [ref=e1235]:
+                                  - generic [ref=e1237]: Show up in the project's Discord. The PRs get you in the door; the people are why you stay.
+                                - listitem [ref=e1238]:
+                                  - generic [ref=e1240]: Add value on X
+                                - listitem [ref=e1241]:
+                                  - generic [ref=e1242]:
+                                    - generic [ref=e1243]: On X Pay $1-3/month to subscribe to people you respect. I pay $1/month to
+                                    - link "@garrytan" [ref=e1245] [cursor=pointer]:
+                                      - /url: https://x.com/@garrytan
+                                      - generic [ref=e1246]: "@garrytan"
+                                    - generic [ref=e1247]: and when I submit a PR I can send an X post to him and he gets a special notification that I’m a paying customer. I also pay for
+                                    - link "@jason" [ref=e1249] [cursor=pointer]:
+                                      - /url: https://x.com/@jason
+                                      - generic [ref=e1250]: "@jason"
+                                    - link "@teknium" [ref=e1253] [cursor=pointer]:
+                                      - /url: https://x.com/@teknium
+                                      - generic [ref=e1254]: "@teknium"
+                                    - link "@Teknium" [ref=e1257] [cursor=pointer]:
+                                      - /url: https://x.com/@Teknium
+                                      - generic [ref=e1258]: "@Teknium"
+                                    - generic [ref=e1259]: .
+                              - link "Image" [ref=e1266] [cursor=pointer]:
+                                - /url: /mvanhorn/article/2061877533885473181/media/2061846686499233793
+                                - generic "Image" [ref=e1270]:
+                                  - img "Image" [ref=e1272]
+                              - heading "19. My Current Laptop Setup" [level=2] [ref=e1274]:
+                                - generic [ref=e1276]: 19. My Current Laptop Setup
+                              - generic [ref=e1279]: "My two-year-old laptop was barely functional under everything I run on it, six Claude sessions plus Codex all day. So I upgraded to an M5 Max with 64GB of RAM. It's a beast and I love it. It also still gets wrecked by the workload: my brand new machine has lasted as little as an hour on battery."
+                              - generic [ref=e1281]:
+                                - generic [ref=e1282]: So I panic-bought power. I carry an
+                                - link "Anker battery brick" [ref=e1284] [cursor=pointer]:
+                                  - /url: https://www.amazon.com/dp/B0BYP2F3SG
+                                  - generic [ref=e1285]: Anker battery brick
+                                - generic [ref=e1286]: everywhere now, and I keep an
+                                - link "Anker charger" [ref=e1288] [cursor=pointer]:
+                                  - /url: https://www.amazon.com/dp/B0CZ7BL16W
+                                  - generic [ref=e1289]: Anker charger
+                                - generic [ref=e1290]: in the Tesla so the car tops me up on the go.
+                              - generic [ref=e1293]: HACKS
+                              - list [ref=e1294]:
+                                - listitem [ref=e1295]:
+                                  - generic [ref=e1296]:
+                                    - generic [ref=e1297]: "Never sleep: sudo pmset -a disablesleep 1. Carry an"
+                                    - link "Anker battery brick" [ref=e1299] [cursor=pointer]:
+                                      - /url: https://www.amazon.com/dp/B0BYP2F3SG
+                                      - generic [ref=e1300]: Anker battery brick
+                                    - generic [ref=e1301]: ; keep a
+                                    - link "charger" [ref=e1303] [cursor=pointer]:
+                                      - /url: https://www.amazon.com/dp/B0CZ7BL16W
+                                      - generic [ref=e1304]: charger
+                                    - generic [ref=e1305]: in the car.
+                              - 'heading "20. Printing Press: CLIs That Run Real Life" [level=2] [ref=e1307]':
+                                - generic [ref=e1309]: "20. Printing Press: CLIs That Run Real Life"
+                              - generic [ref=e1311]:
+                                - generic [ref=e1312]: Most of these hacks live in the terminal. This is the one that leaves it.
+                                - link "Printing Press" [ref=e1314] [cursor=pointer]:
+                                  - /url: https://printingpress.dev/
+                                  - generic [ref=e1315]: Printing Press
+                                - generic [ref=e1316]: is a fleet of CLIs that wrap real-world services so an agent can just do the errand. It's its own project now at
+                                - link "@ppressdev" [ref=e1318] [cursor=pointer]:
+                                  - /url: https://x.com/@ppressdev
+                                  - generic [ref=e1319]: "@ppressdev"
+                                - generic [ref=e1320]: ", past 3.7K stars, and I'm building it with"
+                                - link "@trevin" [ref=e1322] [cursor=pointer]:
+                                  - /url: https://x.com/@trevin
+                                  - generic [ref=e1323]: "@trevin"
+                                - generic [ref=e1324]: .
+                              - generic [ref=e1326]:
+                                - generic [ref=e1327]: "The piece that makes them actually work is auth, and that shipped last night:"
+                                - link "Agent Cookie" [ref=e1329] [cursor=pointer]:
+                                  - /url: https://agentcookie.dev/
+                                  - generic [ref=e1330]: Agent Cookie
+                                - generic [ref=e1331]: . It hands a CLI your real browser session so it acts as you, no passwords to paste, nothing to re-auth. It's what turns "an agent that knows about a service" into "an agent that's logged into it."
+                              - generic [ref=e1334]: "A real afternoon, soup to nuts:"
+                              - list [ref=e1335]:
+                                - listitem [ref=e1336]:
+                                  - generic [ref=e1337]:
+                                    - generic [ref=e1338]: "Tesla preheat. Kids in the car in ten minutes: \"preheat the car to 72.\" The"
+                                    - link "Tesla CLI" [ref=e1340] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/printing-press-library/tree/main/cli-skills/pp-tesla
+                                      - generic [ref=e1341]: Tesla CLI
+                                    - generic [ref=e1342]: fires, the car's warm before we walk out.
+                                - listitem [ref=e1343]:
+                                  - generic [ref=e1344]:
+                                    - link "Instacart" [ref=e1346] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/printing-press-library/tree/main/cli-skills/pp-instacart
+                                      - generic [ref=e1347]: Instacart
+                                    - generic [ref=e1348]: . "add Corona to Costco on Instacart."
+                                - listitem [ref=e1349]:
+                                  - generic [ref=e1350]:
+                                    - link "ESPN" [ref=e1352] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/printing-press-library/tree/main/cli-skills/pp-espn
+                                      - generic [ref=e1353]: ESPN
+                                    - generic [ref=e1354]: polling. A session watched a game for me and pinged me only when it got close. I didn't refresh anything, I got the one alert that mattered.
+                                - listitem [ref=e1355]:
+                                  - generic [ref=e1356]:
+                                    - link "Alaska Airlines" [ref=e1358] [cursor=pointer]:
+                                      - /url: https://github.com/mvanhorn/printing-press-library/tree/main/cli-skills/pp-alaska-airlines
+                                      - generic [ref=e1359]: Alaska Airlines
+                                    - generic [ref=e1360]: for the kids' trip. Pulled fares and shoulder dates, checked our Atmos balance, fed it into /ce-plan, got a booking strategy with the cheapest days and buy reminders. From a soccer field.
+                              - generic [ref=e1363]: Not "AI writes my code." Agentic Engineering does the errands, watches the game, warms the car, and books the trip, while I'm doing something else.
+                              - generic [ref=e1366]: HACKS
+                              - list [ref=e1367]:
+                                - listitem [ref=e1368]:
+                                  - generic [ref=e1369]:
+                                    - generic [ref=e1370]: Install a ready-made CLI from the library at
+                                    - link "printingpress.dev" [ref=e1372] [cursor=pointer]:
+                                      - /url: https://printingpress.dev/
+                                      - generic [ref=e1373]: printingpress.dev
+                                    - generic [ref=e1374]: to hand an errand straight to your agent.
+                                - listitem [ref=e1375]:
+                                  - generic [ref=e1376]:
+                                    - generic [ref=e1377]: "Auth without the pain:"
+                                    - link "Agent Cookie" [ref=e1379] [cursor=pointer]:
+                                      - /url: https://agentcookie.dev/
+                                      - generic [ref=e1380]: Agent Cookie
+                                    - generic [ref=e1381]: delivers your real browser session to a CLI so it acts as you.
+                                - listitem [ref=e1382]:
+                                  - generic [ref=e1384]: "The real hack: print your own. Take something you do all day, an API or a service you live in, and have Printing Press generate an agent-native CLI for it. The one you build for your own workflow is the one that changes how you work."
+                              - 'heading "21. The Honest Part: AI Psychosis" [level=2] [ref=e1386]':
+                                - generic [ref=e1388]: "21. The Honest Part: AI Psychosis"
+                              - generic [ref=e1391]: Agents were supposed to do all the work for us. Instead, every friend I have is working the hardest they ever have in their lives.
+                              - generic [ref=e1394]: The easy response is take a break, touch grass. But that's not what this is about. This is about addiction. Building with agents is the greatest video game ever made, and the loop is that good.
+                              - generic [ref=e1397]: I have friends I genuinely worry about. They're so lit up by being able to build anything that they don't do anything else. Then they launch, and there are no users. And that is okay. I've launched plenty of things with no users. The trap isn't the empty launch, it's vanishing into the build and losing the people around you.
+                              - generic [ref=e1400]: So be careful. Talk to your loved ones. Ask yourself if anyone actually wants the thing you're making. And if the honest answer is that it's just a tool for you, that's okay too. Some of the best things I've built were only ever for me.
+                              - generic [ref=e1403]: If you do want an audience, it's the Gary Vaynerchuk path he always preached for content. You start somewhere, posting into the ether hoping one person notices. Then three, then ten, then a hundred, and you work your way to thousands. Nobody starts at thousands. Same with anything you build.
+                              - generic [ref=e1406]: HACKS
+                              - list [ref=e1407]:
+                                - listitem [ref=e1408]:
+                                  - generic [ref=e1410]: Take breaks. Touch grass.
+                                - listitem [ref=e1411]:
+                                  - generic [ref=e1413]: Talk to your loved ones.
+                                - listitem [ref=e1414]:
+                                  - generic [ref=e1416]: Build something people want, even if "people" is just you.
+                              - heading "22. This Article Was Written This Way" [level=2] [ref=e1418]:
+                                - generic [ref=e1420]: 22. This Article Was Written This Way
+                              - generic [ref=e1423]: "This is a markdown file. Claude Code in cmux, me talking into Monologue: \"evolve the no-IDE opener,\" \"make the don't-read-the-plan section spicier,\" \"add the Tesla and Instacart story.\" It rewrites, I react, and it's in Proof for review. last30days fed the fresh material. No Zed this time, by the way. I stopped using it. No IDE. No typing code. Talk, plan, build. From a desk, a couch, a car, a soccer field."
+                              - generic [ref=e1426]: That's everything I know in June. A voice app, a plan-file plugin, a couple of config changes, a pile of tabs, a Mac Mini, two remote boxes, and a fleet of CLIs that run real life.
+                              - generic [ref=e1429]: HACKS
+                              - list [ref=e1430]:
+                                - listitem [ref=e1431]:
+                                  - generic [ref=e1433]: Copy this whole article, paste it into your agent, and tell it to set up everything it can. Good things will happen to your agentic engineering workflow.
+                            - status [ref=e1435]:
+                              - generic [ref=e1436]:
+                                - img [ref=e1437]
+                                - generic [ref=e1441]:
+                                  - generic [ref=e1442]: Want to publish your own Article?
+                                  - link "Upgrade to Premium" [ref=e1443] [cursor=pointer]:
+                                    - /url: /i/premium_sign_up
+                        - generic [ref=e1447]:
+                          - link "6:28 PM · Jun 2, 2026" [ref=e1449] [cursor=pointer]:
+                            - /url: /mvanhorn/status/2061877533885473181
+                            - time [ref=e1450]: 6:28 PM · Jun 2, 2026
+                          - generic [ref=e1451]: ·
+                          - link "172.8K Views" [ref=e1452] [cursor=pointer]:
+                            - /url: /mvanhorn/status/2061877533885473181/analytics
+                            - generic [ref=e1455]: 172.8K
+                            - generic [ref=e1456]: Views
+                        - group "58 replies, 122 reposts, 1089 likes, 3369 bookmarks, 172837 views" [ref=e1459]:
+                          - button "58 Replies. Reply" [ref=e1461] [cursor=pointer]:
+                            - generic [ref=e1462]:
+                              - img [ref=e1465]
+                              - generic [ref=e1470]: "58"
+                          - button "122 reposts. Repost" [ref=e1472] [cursor=pointer]:
+                            - generic [ref=e1473]:
+                              - img [ref=e1476]
+                              - generic [ref=e1481]: "122"
+                          - button "1089 Likes. Like" [ref=e1483] [cursor=pointer]:
+                            - generic [ref=e1484]:
+                              - img [ref=e1487]
+                              - generic [ref=e1492]: 1K
+                          - button "3369 Bookmarks. Bookmark" [ref=e1494] [cursor=pointer]:
+                            - generic [ref=e1495]:
+                              - img [ref=e1498]
+                              - generic [ref=e1503]: 3.3K
+                          - button "Share post" [ref=e1506] [cursor=pointer]:
+                            - img [ref=e1510]
+                        - button "Read 58 replies" [ref=e1513] [cursor=pointer]:
+                          - generic [ref=e1514]:
+                            - img [ref=e1515]
+                            - generic [ref=e1519]: Read 58 replies
+            - generic "Trending" [ref=e75]:
+              - generic [ref=e76]:
+                - region "Sign up" [ref=e78]:
+                  - heading "New to X?" [level=2] [ref=e80]:
+                    - generic [ref=e81]: New to X?
+                  - generic [ref=e82]: Sign up now to get your own personalized timeline!
+                  - generic [ref=e83]:
+                    - iframe [ref=e1522]:
+                      - button "Sign up with Google. Opens in new tab" [ref=f1e3] [cursor=pointer]:
+                        - generic [ref=f1e5]:
+                          - img [ref=f1e7]
+                          - generic [ref=f1e14]: Sign up with Google
+                    - button "Sign up with Apple" [ref=e89] [cursor=pointer]:
+                      - generic [ref=e90]:
+                        - img [ref=e91]
+                        - generic [ref=e95]: Sign up with Apple
+                    - link "Create account" [ref=e96] [cursor=pointer]:
+                      - /url: /i/flow/signup
+                      - generic [ref=e99]: Create account
+                  - generic [ref=e100]:
+                    - text: By signing up, you agree to the
+                    - link "Terms of Service" [ref=e101] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - text: and
+                    - link "Privacy Policy" [ref=e102] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - text: ", including"
+                    - link "Cookie Use." [ref=e103] [cursor=pointer]:
+                      - /url: https://help.x.com/rules-and-policies/twitter-cookies
+                - complementary "Relevant people" [ref=e105]:
+                  - heading "Relevant people" [level=2] [ref=e107]:
+                    - generic [ref=e108]: Relevant people
+                  - list [ref=e109]:
+                    - listitem [ref=e110] [cursor=pointer]:
+                      - generic [ref=e111]:
+                        - link [ref=e121]:
+                          - /url: /mvanhorn
+                        - generic [ref=e124]:
+                          - generic [ref=e125]:
+                            - generic [ref=e127]:
+                              - link "Matt Van Horn Verified account" [ref=e129]:
+                                - /url: /mvanhorn
+                                - generic [ref=e130]:
+                                  - generic [ref=e132]: Matt Van Horn
+                                  - img "Verified account" [ref=e135]
+                              - link "@mvanhorn" [ref=e140]:
+                                - /url: /mvanhorn
+                                - generic [ref=e142]: "@mvanhorn"
+                            - button "Follow @mvanhorn" [ref=e144]:
+                              - generic [ref=e147]: Follow
+                          - generic [ref=e148]:
+                            - text: Co-founded June ("self-driving oven" acquired by
+                            - link "@webergrills" [ref=e151]:
+                              - /url: /webergrills
+                            - text: ) & the co that became
+                            - link "@Lyft" [ref=e154]:
+                              - /url: /Lyft
+                            - text: ". Building again, more soon. OS:"
+                            - link "@slashlast30days" [ref=e157]:
+                              - /url: /slashlast30days
+                            - text: 26k★
+                            - link "@ppressdev" [ref=e160]:
+                              - /url: /ppressdev
+                            - text: 4.1k★
+                - region "Trending now" [ref=e1523]:
+                  - heading "Trending now" [level=1] [ref=e1524]
+                  - 'generic "Timeline: Trending now" [ref=e1525]':
+                    - generic [ref=e1526]:
+                      - heading "What’s happening" [level=2] [ref=e1530]:
+                        - generic [ref=e1531]: What’s happening
+                      - 'link "Love Island USA · Trending #loveislandusa Trending with Kenzie, Melanie" [ref=e1534] [cursor=pointer]':
+                        - generic [ref=e1535]:
+                          - generic [ref=e1537]: Love Island USA · Trending
+                          - generic [ref=e1539]: "#loveislandusa"
+                          - generic [ref=e1540]:
+                            - text: Trending with
+                            - link "Kenzie" [ref=e1541]:
+                              - /url: /search?q=Kenzie&src=trend_click&vertical=trends
+                            - text: ","
+                            - link "Melanie" [ref=e1542]:
+                              - /url: /search?q=Melanie&src=trend_click&vertical=trends
+                      - link "Gaming · Trending Kratos Trending with God of War, Faye" [ref=e1545] [cursor=pointer]:
+                        - generic [ref=e1546]:
+                          - generic [ref=e1548]: Gaming · Trending
+                          - generic [ref=e1549]: Kratos
+                          - generic [ref=e1550]:
+                            - text: Trending with
+                            - link "God of War" [ref=e1551]:
+                              - /url: /search?q=God%20of%20War&src=trend_click&vertical=trends
+                            - text: ","
+                            - link "Faye" [ref=e1552]:
+                              - /url: /search?q=Faye&src=trend_click&vertical=trends
+                      - link "Sports · Trending Shayne Gostisbehere" [ref=e1555] [cursor=pointer]:
+                        - generic [ref=e1556]:
+                          - generic [ref=e1558]: Sports · Trending
+                          - generic [ref=e1559]: Shayne Gostisbehere
+                      - link "Love Island USA · Trending Beatriz Trending with Sean" [ref=e1562] [cursor=pointer]:
+                        - generic [ref=e1563]:
+                          - generic [ref=e1565]: Love Island USA · Trending
+                          - generic [ref=e1566]: Beatriz
+                          - generic [ref=e1567]:
+                            - text: Trending with
+                            - link "Sean" [ref=e1568]:
+                              - /url: /search?q=Sean&src=trend_click&vertical=trends
+                      - link "Show more" [ref=e1571] [cursor=pointer]:
+                        - /url: /explore/tabs/for-you
+                        - generic [ref=e1572]: Show more
+                - navigation "Footer" [ref=e169]:
+                  - generic [ref=e170]:
+                    - link "Terms of Service" [ref=e171] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - generic [ref=e172]: "|"
+                  - generic [ref=e173]:
+                    - link "Privacy Policy" [ref=e174] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - generic [ref=e175]: "|"
+                  - generic [ref=e176]:
+                    - link "Cookie Policy" [ref=e177] [cursor=pointer]:
+                      - /url: https://support.x.com/articles/20170514
+                    - generic [ref=e178]: "|"
+                  - generic [ref=e179]:
+                    - link "Accessibility" [ref=e180] [cursor=pointer]:
+                      - /url: https://help.x.com/resources/accessibility
+                    - generic [ref=e181]: "|"
+                  - generic [ref=e182]:
+                    - link "Ads info" [ref=e183] [cursor=pointer]:
+                      - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                    - generic [ref=e184]: "|"
+                  - button "More" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e186]:
+                      - text: More
+                      - img [ref=e187]
+                  - generic [ref=e190]: © 2026 X Corp.

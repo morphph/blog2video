@@ -1,0 +1,22 @@
+{
+  "url": "https://x.com/mvanhorn/status/2061877533885473181",
+  "author": "Matt Van Horn",
+  "handle": "@mvanhorn",
+  "title": "Every Agentic Engineering Hack I Know (June 2026)",
+  "published": "2026-06-02T18:28:00Z",
+  "stats": {
+    "replies": 58,
+    "reposts": 122,
+    "likes": 1089,
+    "bookmarks": 3369,
+    "views": 172837
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {"path": "images/image_1.jpg", "position": "top/hero"},
+    {"path": "images/image_2.jpg", "position": "section 13 — HyperFrames video demo embed"},
+    {"path": "images/image_3.jpg", "position": "section 16 — cmux and Proof working together"},
+    {"path": "images/image_4.png", "position": "section 18 — Superpowers contributors grid"},
+    {"path": "images/image_5.jpg", "position": "section 20 — Printing Press / Agent Cookie real-life errands"}
+  ]
+}

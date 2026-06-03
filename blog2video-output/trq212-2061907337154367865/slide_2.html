@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1100px;
+      height: 700px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.13) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .arrow-row {
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 56px;
+    }
+    .box {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .box.old { border-left: 4px solid #6B7280; }
+    .box.new { border-left: 4px solid #8B5CF6; }
+    .box-label {
+      font-size: 22px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .box.new .box-label { color: #8B5CF6; }
+    .box-body {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .box.new .box-body { color: #F59E0B; }
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      color: #8B5CF6;
+      font-weight: 800;
+      padding: 0 6px;
+    }
+    .quote {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 28px 32px;
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      font-style: italic;
+      z-index: 1;
+      width: 100%;
+    }
+    .quote .hl { color: #F59E0B; font-style: normal; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">定义层面的迁移</div>
+    <div class="title">
+      Harness 第一次<br>
+      变成 <span class="amber">LLM 的 output</span>
+    </div>
+    <div class="arrow-row">
+      <div class="box old">
+        <div class="box-label">过去</div>
+        <div class="box-body">工程师<br>设计产物</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="box new">
+        <div class="box-label">现在</div>
+        <div class="box-body">Claude<br>自己生成</div>
+      </div>
+    </div>
+    <div class="quote">
+      "Claude can now write its own harness<br>
+      <span class="hl">on the fly</span>, custom-built for the task at hand."
+    </div>
+  </div>
+</body>
+</html>

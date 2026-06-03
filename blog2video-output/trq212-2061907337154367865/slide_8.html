@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.12) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .sub {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+      z-index: 1;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .card.focus { border-left: 4px solid #8B5CF6; }
+    .card.muted { opacity: 0.55; border-left: 4px solid #6B7280; }
+    .num {
+      display: inline-block;
+      font-size: 22px;
+      color: #8B5CF6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .pname {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-family: 'SF Mono', Menlo, monospace;
+      margin-bottom: 8px;
+    }
+    .pname .hl { color: #F59E0B; }
+    .pdesc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .pdesc .green { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">Anthropic 内部踩坑总结</div>
+    <div class="title">六块<span class="amber">乐高</span></div>
+    <div class="sub">Claude 不是从零拼 · 是从这六个 pattern 里挑</div>
+    <div class="cards">
+      <div class="card focus">
+        <div class="num">PATTERN 1 · 最常用</div>
+        <div class="pname">fan-out-and-<span class="hl">synthesize</span></div>
+        <div class="pdesc">任务拆小 → 每个 agent 一个 → 最后合成 barrier · <span class="green">干净 context 防交叉污染</span></div>
+      </div>
+      <div class="card focus">
+        <div class="num">PATTERN 2 · 直接解药</div>
+        <div class="pname">adversarial <span class="hl">verification</span></div>
+        <div class="pdesc">配一个挑刺 agent，用 rubric 反过来打 · <span class="green">生成与评估永远分离</span></div>
+      </div>
+      <div class="card muted">
+        <div class="pname">tournament · classify-and-act</div>
+        <div class="pdesc">generate-and-filter · loop-until-done</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

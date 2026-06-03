@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.1) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .insight {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 32px;
+      text-align: left;
+      width: 100%;
+      z-index: 1;
+    }
+    .insight .amber { color: #F59E0B; }
+    .three {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 28px 28px;
+      width: 100%;
+      z-index: 1;
+      text-align: left;
+    }
+    .three-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .item {
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      line-height: 1.45;
+    }
+    .item:last-child { margin-bottom: 0; }
+    .item .pn {
+      font-family: 'SF Mono', Menlo, monospace;
+      color: #F59E0B;
+      font-weight: 700;
+    }
+    .item .arrow { color: #6B7280; margin: 0 8px; }
+    .item .body { color: #B0B0CC; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">PATTERN 3 · 反直觉</div>
+    <div class="title">
+      <span class="amber">tournament</span> 锦标赛
+    </div>
+    <div class="insight">
+      "<span class="amber">比较判断 &gt; 绝对打分</span>"<br>
+      1000 条 ticket 打绝对分 → 差<br>
+      两两比较 → 好得多
+    </div>
+    <div class="three">
+      <div class="three-label">剩下三种 · 从名字就能猜</div>
+      <div class="item"><span class="pn">classify-and-act</span><span class="arrow">→</span><span class="body">分类决定路由</span></div>
+      <div class="item"><span class="pn">generate-and-filter</span><span class="arrow">→</span><span class="body">产出一堆再筛</span></div>
+      <div class="item"><span class="pn">loop-until-done</span><span class="arrow">→</span><span class="body">没固定轮数，达条件才停</span></div>
+    </div>
+  </div>
+</body>
+</html>

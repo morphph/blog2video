@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.15) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 36px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .signature {
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 32px;
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 28px;
+      width: 100%;
+      z-index: 1;
+      text-align: left;
+    }
+    .signature .old { color: #6B7280; }
+    .signature .new { color: #F59E0B; font-weight: 700; }
+    .action {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      z-index: 1;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .a-label {
+      font-size: 22px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .a-body {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .a-body .mono { font-family: 'SF Mono', Menlo, monospace; color: #F59E0B; }
+    .brand {
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      z-index: 1;
+    }
+    .brand .hl { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">定义迁移</div>
+    <div class="title">
+      Harness 第一次<br>
+      从<span class="amber">工程师手里</span>交给 Claude
+    </div>
+    <div class="signature">
+      <span class="old">过去：</span>工程师写好的脚手架 · 长期工程资产<br>
+      <span class="new">现在：</span>每个任务自己临时拼一个 · 一次性使用品
+    </div>
+    <div class="action">
+      <div class="a-label">下次直觉到"单窗口会跑偏"</div>
+      <div class="a-body">直接打 <span class="mono">ultracode</span> · 看 Claude 怎么拼</div>
+    </div>
+    <div class="brand"><span class="hl">精读一篇</span>，胜过刷一百条</div>
+  </div>
+</body>
+</html>

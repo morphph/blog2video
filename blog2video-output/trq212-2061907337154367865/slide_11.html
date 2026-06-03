@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.12) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #3B82F6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 28px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .examples {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 32px;
+    }
+    .ex {
+      background: #1A1A2E;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      font-size: 24px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .ex-tag {
+      font-size: 20px;
+      color: #3B82F6;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ex-body { font-weight: 600; }
+    .ex-body .hl { color: #F59E0B; font-weight: 700; }
+    .condition {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 12px;
+      padding: 22px 28px;
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+      width: 100%;
+      z-index: 1;
+    }
+    .condition .amber { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">定位扩张</div>
+    <div class="title">
+      <span class="amber">workflow 对非技术工作</span><br>
+      甚至更有用
+    </div>
+    <div class="examples">
+      <div class="ex">
+        <div class="ex-tag">商业计划书</div>
+        <div class="ex-body">投资人 · 客户 · 竞争对手 <span class="hl">三视角撕</span></div>
+      </div>
+      <div class="ex">
+        <div class="ex-tag">80 份简历</div>
+        <div class="ex-body">按后端岗位排名 · <span class="hl">挑前 10</span> 让你面试</div>
+      </div>
+      <div class="ex">
+        <div class="ex-tag">CLI 工具命名</div>
+        <div class="ex-body">头脑风暴 + tournament <span class="hl">选前 3</span></div>
+      </div>
+    </div>
+    <div class="condition">
+      条件：<span class="amber">可拆成独立子任务</span> + <span class="amber">能被对抗式评判</span>
+    </div>
+  </div>
+</body>
+</html>

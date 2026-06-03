@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.12) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .eyebrow {
+      font-size: 28px;
+      color: #EF4444;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      z-index: 1;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      z-index: 1;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .term {
+      font-size: 32px;
+      color: #EF4444;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .term-zh {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 600;
+      margin-left: 12px;
+    }
+    .desc {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+    .desc .hl { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="eyebrow">Anthropic 给它们起了正式名字</div>
+    <div class="title">三种系统性失败</div>
+    <div class="cards">
+      <div class="card">
+        <div class="term">agentic laziness<span class="term-zh">/ 偷懒</span></div>
+        <div class="desc">50 项任务做 20 项就<span class="hl">宣布完成</span></div>
+      </div>
+      <div class="card">
+        <div class="term">self-preferential bias<span class="term-zh">/ 自我偏袒</span></div>
+        <div class="desc">运动员同时当裁判，<span class="hl">必然偏向自己</span></div>
+      </div>
+      <div class="card">
+        <div class="term">goal drift<span class="term-zh">/ 目标漂移</span></div>
+        <div class="desc">compaction 一轮，<span class="hl">"don't do X" 边界先丢</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

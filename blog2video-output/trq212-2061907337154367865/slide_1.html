@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 700px;
+      background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.12) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 56px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 72px;
+      z-index: 1;
+    }
+    .red {
+      color: #EF4444;
+    }
+    .amber {
+      color: #F59E0B;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      z-index: 1;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 34px;
+      font-size: 30px;
+      color: #FFFFFF;
+      text-align: left;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .card .accent {
+      color: #F59E0B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="label">精读AI · Claude Code 新机制</div>
+    <div class="title">
+      你的 Claude Code<br>
+      <span class="red">越跑越懒</span>
+    </div>
+    <div class="cards">
+      <div class="card">Claude 现在能<span class="accent">自己写 harness</span></div>
+      <div class="card">触发词：<span class="accent">ultracode</span> · 每个任务一份</div>
+    </div>
+  </div>
+</body>
+</html>

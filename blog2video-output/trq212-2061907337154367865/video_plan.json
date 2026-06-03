@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "A harness for every task: dynamic workflows in Claude Code",
+    "title_zh": "Claude 现在自己写 Harness——每个任务一份",
+    "word_count": 4200,
+    "slug": "trq212-2061907337154367865"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全片围绕同一个论点（harness 从工程师写变成 Claude 自己写），是一条连贯论证，不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude 现在自己写 Harness"
+      }
+    ]
+  }
+}

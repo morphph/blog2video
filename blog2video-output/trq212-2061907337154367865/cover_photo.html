@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 800px;
+      background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.16) 0%, rgba(13, 13, 26, 0) 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 72px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      margin-bottom: 88px;
+      z-index: 1;
+    }
+    .amber {
+      color: #F59E0B;
+    }
+    .source {
+      display: inline-block;
+      padding: 18px 36px;
+      background: #1A1A30;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 100px;
+      font-size: 22px;
+      color: #6B6B80;
+      font-weight: 500;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="label">精读AI · Claude Code 新机制</div>
+    <div class="title">
+      Claude 现在<span class="amber">自己写</span><br>
+      Harness<br>
+      每个任务一份
+    </div>
+    <div class="source">Thariq · Anthropic Claude Code · @trq212</div>
+  </div>
+</body>
+</html>

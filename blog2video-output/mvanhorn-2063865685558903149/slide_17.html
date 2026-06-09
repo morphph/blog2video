@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .headline {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.22;
+      margin-bottom: 38px;
+    }
+    .headline .accent { color: #F59E0B; }
+    .points {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .point {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .point.green { border-left-color: #10B981; border-color: rgba(16, 185, 129, 0.3); }
+    .point.amber { border-left-color: #F59E0B; border-color: rgba(245, 158, 11, 0.3); }
+    .p-num {
+      font-size: 32px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1.1;
+      flex-shrink: 0;
+    }
+    .point.green .p-num { color: #10B981; }
+    .point.amber .p-num { color: #F59E0B; }
+    .p-text {
+      font-size: 22px;
+      line-height: 1.45;
+      color: #FFFFFF;
+    }
+    .p-text .em { color: #F59E0B; font-weight: 700; }
+    .p-text .gem { color: #10B981; font-weight: 700; }
+    .brand {
+      width: 100%;
+      padding-top: 24px;
+      border-top: 1px solid rgba(139, 92, 246, 0.2);
+      font-size: 22px;
+      color: #B0B0CC;
+      font-style: italic;
+      line-height: 1.45;
+    }
+    .brand .em { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">压成一句话</div>
+    <div class="headline">
+      入口便宜得像<span class="accent">玩笑</span>
+    </div>
+    <div class="points">
+      <div class="point">
+        <div class="p-num">01</div>
+        <div class="p-text">Loop 不是新词 — 是被嵌套了<span class="em">五层的旧词</span></div>
+      </div>
+      <div class="point green">
+        <div class="p-num">02</div>
+        <div class="p-text">新一层实质朴素 — <span class="gem">cron + 会做决定的脑子</span> + 让它停下来的护栏</div>
+      </div>
+      <div class="point amber">
+        <div class="p-num">03</div>
+        <div class="p-text">一行 /loop + <span class="em">认真写的 skill</span> + 三件套护栏 — 剩下交给基础设施时间</div>
+      </div>
+    </div>
+    <div class="brand">
+      AI 世界很吵，<span class="em">精读一篇，胜过刷一百条</span><br>
+      我们下期再见。
+    </div>
+  </div>
+</body>
+</html>

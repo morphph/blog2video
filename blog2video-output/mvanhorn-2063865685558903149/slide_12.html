@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.5);
+      color: #EF4444;
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .headline {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.22;
+      margin-bottom: 30px;
+    }
+    .headline .accent { color: #10B981; }
+    .danger {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 24px 26px;
+      text-align: left;
+      font-size: 24px;
+      line-height: 1.45;
+      color: #FFFFFF;
+      margin-bottom: 26px;
+    }
+    .danger .em { color: #EF4444; font-weight: 700; }
+    .real-title {
+      font-size: 24px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+      align-self: flex-start;
+      text-align: left;
+    }
+    .examples {
+      display: flex;
+      gap: 18px;
+      width: 100%;
+    }
+    .ex {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 20px;
+      text-align: left;
+    }
+    .ex-name {
+      font-size: 28px;
+      font-weight: 800;
+      color: #10B981;
+      margin-bottom: 8px;
+    }
+    .ex-who {
+      font-size: 18px;
+      color: #6B7280;
+      margin-bottom: 12px;
+      font-family: 'Courier New', monospace;
+    }
+    .ex-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .ex-desc .em { color: #FFFFFF; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">Boris 第 5 条 · 实战盯死</div>
+    <div class="badge">Tip 5 决定能不能信任</div>
+    <div class="headline">
+      <span class="accent">端到端自我验证</span><br>
+      hype 跳过 · 实战盯死
+    </div>
+    <div class="danger">
+      没办法自检的 loop = 一台<br>
+      <span class="em">高速生产"看起来自信的错误"</span>的机器
+    </div>
+    <div class="real-title">— 真在干这件事的两个东西 —</div>
+    <div class="examples">
+      <div class="ex">
+        <div class="ex-name">Gas Town</div>
+        <div class="ex-who">Steve Yegge · 2026/1</div>
+        <div class="ex-desc">20-30 个 Claude Code 实例<br>Mayor agent 协调<br><span class="em">状态存 git · 崩了能恢复</span></div>
+      </div>
+      <div class="ex">
+        <div class="ex-name">roborev</div>
+        <div class="ex-who">DanKornas</div>
+        <div class="ex-desc">每个 commit 自动 review<br>把发现回喂给 agent<br><span class="em">趁上下文还热</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(239, 68, 68, 0.06) 40%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .series-tag {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 80px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 1.25;
+      color: #FFFFFF;
+      margin-bottom: 100px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .title .red { color: #EF4444; }
+    .source-pill {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #1A1A30;
+      border-radius: 999px;
+      font-size: 22px;
+      color: #6B6B80;
+      letter-spacing: 0.5px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="glow"></div>
+    <div class="series-tag">精读AI · Agent Loop 辩论</div>
+    <div class="title">
+      <span class="amber">两百万</span>人转的<br>
+      那句话，<span class="red">没人会解释</span>
+    </div>
+    <div class="source-pill">Matt Van Horn · @mvanhorn</div>
+  </div>
+</body>
+</html>

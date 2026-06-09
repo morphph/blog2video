@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .headline {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 50px;
+    }
+    .headline .accent { color: #F59E0B; }
+    .stage {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #3B82F6;
+      border-radius: 12px;
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .stage.toy { border-left-color: #EF4444; }
+    .stage-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .stage-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: #3B82F6;
+    }
+    .stage.toy .stage-num { color: #EF4444; }
+    .year {
+      font-size: 22px;
+      color: #6B7280;
+      font-family: 'Courier New', monospace;
+    }
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+    }
+    .desc {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .desc .hot { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">五层旧词 · 1 / 5</div>
+    <div class="headline">
+      <span class="accent">五层</span>顺时间排<br>
+      你站在哪一层？
+    </div>
+    <div class="stage">
+      <div class="stage-head">
+        <div class="stage-num">L1</div>
+        <div class="year">2022</div>
+      </div>
+      <div class="title">ReAct 论文</div>
+      <div class="desc">学术 while 循环 · 一个模型一个 loop<br>人在旁边盯着</div>
+    </div>
+    <div class="stage toy">
+      <div class="stage-head">
+        <div class="stage-num">L2</div>
+        <div class="year">2023</div>
+      </div>
+      <div class="title">AutoGPT</div>
+      <div class="desc">第一次自驱循环 · <span class="hot">经常陷死循环</span><br>"agent 是玩具"两年</div>
+    </div>
+  </div>
+</body>
+</html>

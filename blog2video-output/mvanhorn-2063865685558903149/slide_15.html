@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .hero {
+      font-size: 86px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 60px;
+    }
+    .hero .pipe { color: #6B7280; }
+    .hero .water { color: #3B82F6; }
+    .hero .skill { color: #10B981; }
+    .annot {
+      font-size: 22px;
+      color: #B0B0CC;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+    }
+    .glow {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(16, 185, 129, 0.18) 0%, rgba(59, 130, 246, 0.08) 50%, transparent 75%);
+      pointer-events: none;
+    }
+    .skill-card {
+      width: 100%;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 28px 28px;
+      text-align: left;
+    }
+    .skill-tag {
+      font-size: 20px;
+      color: #10B981;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .skill-text {
+      font-size: 24px;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .skill-text .em { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">Matt 的缝合判断</div>
+    <div class="glow"></div>
+    <div class="hero">
+      Loop = <span class="pipe">水管</span><br>
+      <span class="skill">Skill</span> = 真正的<span class="water">资产</span>
+    </div>
+    <div class="skill-card">
+      <div class="skill-tag">▸ Steinberger 没那么火、更耐用的主张</div>
+      <div class="skill-text">
+        做超过一次的事 → <span class="em">变成自动化 skill</span><br>
+        做过的难事 → 事后写成 skill，<span class="em">下次免费</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

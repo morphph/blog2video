@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .compare {
+      display: flex;
+      gap: 22px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .col {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 26px 22px;
+      text-align: left;
+    }
+    .col.bad {
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+    }
+    .col.good {
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-left: 4px solid #10B981;
+    }
+    .col-title {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .col.bad .col-title { color: #EF4444; }
+    .col.good .col-title { color: #10B981; }
+    .col-text {
+      font-size: 22px;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    .col.bad .col-text { color: #B0B0CC; }
+    .col-text .strike { text-decoration: line-through; }
+    .col-text .em { font-weight: 700; }
+    .col.good .col-text .em { color: #10B981; }
+    .action {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 30px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .action-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 16px;
+    }
+    .action-list {
+      font-size: 23px;
+      line-height: 1.6;
+      color: #FFFFFF;
+    }
+    .action-list .num {
+      color: #F59E0B;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+    .action-list .em { color: #F59E0B; font-weight: 700; }
+    .closing {
+      width: 100%;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 22px 26px;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #FFFFFF;
+      text-align: left;
+    }
+    .closing .em { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">真正的答案</div>
+    <div class="compare">
+      <div class="col bad">
+        <div class="col-title">没 skill 的 loop</div>
+        <div class="col-text">while-true 套着<br>一个<span class="em">陌生人</span><br><br>每轮让一个完全没记忆的实习生从头来</div>
+      </div>
+      <div class="col good">
+        <div class="col-title">有 skill 的 loop</div>
+        <div class="col-text">调用一组被命名、<br>被测试、被打磨的 skill<br><br><span class="em">会复利的系统</span></div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="action-title">别再做 loop 里的那个人</div>
+      <div class="action-list">
+        <span class="num">·</span>给它能调的 <span class="em">skill</span><br>
+        <span class="num">·</span>给它能自检的 <span class="em">反馈</span><br>
+        <span class="num">·</span>给它能停下来的 <span class="em">上限</span>
+      </div>
+    </div>
+    <div class="closing">
+      Steinberger 和 Boris 在说同一个东西的两面<br>
+      <span class="em">一边强调外壳 · 一边强调装填物</span>
+    </div>
+  </div>
+</body>
+</html>

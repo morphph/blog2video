@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "WTF Is a Loop? Peter Steinberger vs. Boris Cherny",
+    "title_zh": "两百万人转的那句话，没人会解释",
+    "word_count": 5138,
+    "slug": "mvanhorn-2063865685558903149"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "这是一篇围绕同一论点（loop 是被嵌套了五层的旧词，真正资产是 skill）展开的连贯论证，所有 section 都在支撑同一个 thesis，不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "两百万人转的那句话，没人会解释"
+      }
+    ]
+  }
+}

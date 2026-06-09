@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .headline {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+    .headline .red { color: #EF4444; }
+    .checklist {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .check-title {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 0;
+      font-size: 24px;
+      color: #FFFFFF;
+      border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+    }
+    .check:last-child { border-bottom: none; }
+    .check .box {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #F59E0B;
+      border-radius: 6px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #F59E0B;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .check .label-text { font-weight: 600; }
+    .check .sub { color: #B0B0CC; font-size: 20px; margin-left: 6px; }
+    .compare {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 22px;
+    }
+    .side {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(107, 114, 128, 0.3);
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-align: left;
+    }
+    .side.romantic { border-left: 4px solid #8B5CF6; border-color: rgba(139, 92, 246, 0.3); }
+    .side.prod { border-left: 4px solid #10B981; border-color: rgba(16, 185, 129, 0.3); }
+    .side-tag {
+      font-size: 18px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .side-body {
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .gartner {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .gartner-num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #EF4444;
+      line-height: 1;
+    }
+    .gartner-text {
+      font-size: 22px;
+      line-height: 1.35;
+      text-align: left;
+      color: #FFFFFF;
+    }
+    .gartner-text .em { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">最恐惧失败模式 = 不会停</div>
+    <div class="headline">
+      三件套护栏 — <span class="red">让它停下来</span>
+    </div>
+    <div class="checklist">
+      <div class="check-title">▸ 所有严肃 loop 文章收敛到这三条</div>
+      <div class="check">
+        <div class="box">✓</div>
+        <div><span class="label-text">最大迭代数</span><span class="sub">max iterations</span></div>
+      </div>
+      <div class="check">
+        <div class="box">✓</div>
+        <div><span class="label-text">no-progress 检测</span><span class="sub">原地不动就停</span></div>
+      </div>
+      <div class="check">
+        <div class="box">✓</div>
+        <div><span class="label-text">token / 美元预算上限</span><span class="sub">硬停止</span></div>
+      </div>
+    </div>
+    <div class="compare">
+      <div class="side romantic">
+        <div class="side-tag">浪漫版</div>
+        <div class="side-body">几千 agent<br>一夜搭出公司</div>
+      </div>
+      <div class="side prod">
+        <div class="side-tag">生产版</div>
+        <div class="side-body">大部分时间<br>在确保它能停</div>
+      </div>
+    </div>
+    <div class="gartner">
+      <div class="gartner-num">17%</div>
+      <div class="gartner-text">Gartner: agentic AI 真正部署<br>组织只有 <span class="em">17%</span> · 喧闹与账本有缝</div>
+    </div>
+  </div>
+</body>
+</html>

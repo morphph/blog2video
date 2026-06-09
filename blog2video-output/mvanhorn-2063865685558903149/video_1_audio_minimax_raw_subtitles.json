@@ -1,0 +1,682 @@
+[
+  {
+    "text": "这周你的时间线大概率被同一句话刷屏了——\"别再 prompt agent 了，去设计 prompt agent 的 loop\"。Peter Steinberger 发的，单条 220 万阅读。",
+    "pronounce_text": "这周你的时间线大概率被同一句话刷屏了。\"别再prompt agent了，去设计prompt agent的loop\"。Peter Steinberger发的，单条两百二十万阅读。",
+    "time_begin": 0,
+    "time_end": 11707.34693877551,
+    "text_begin": 0,
+    "text_end": 96,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 88
+  },
+  {
+    "text": "底下追问\"那这玩意儿实战长什么样\"的回复，被一句话压成了表情包——\"除了他和 Boris，没人知道。\" Matt Van Horn 这周做的事就是把这句话拆开。",
+    "pronounce_text": "底下追问\"那这玩意儿实战长什么样\"的回复，被一句话压成了表情包。\"除了他和Boris，没人知道。\"Matt Van Horn这周做的事就是把这句话拆开。",
+    "time_begin": 11844,
+    "time_end": 24410.485260770976,
+    "text_begin": 96,
+    "text_end": 176,
+    "pronounce_text_begin": 88,
+    "pronounce_text_end": 164
+  },
+  {
+    "text": "今天只聊一件事——为什么两百万人转的口号，没人会解释。",
+    "pronounce_text": "今天只聊一件事。为什么两百万人转的口号，没人会解释。",
+    "time_begin": 24552,
+    "time_end": 29780.979591836734,
+    "text_begin": 176,
+    "text_end": 203,
+    "pronounce_text_begin": 164,
+    "pronounce_text_end": 190
+  },
+  {
+    "text": "这条 tweet 我在 timeline 上至少看到了三十次。每个转的人都像在传递一个新共识。但只要你点进底下的回复区，立刻就崩了。",
+    "pronounce_text": "这条tweet我在timeline上至少看到了三十次。每个转的人都像在传递一个新共识。但只要你点进底下的回复区，立刻就崩了。",
+    "time_begin": 29952,
+    "time_end": 40173.26984126984,
+    "text_begin": 203,
+    "text_end": 269,
+    "pronounce_text_begin": 190,
+    "pronounce_text_end": 252
+  },
+  {
+    "text": "Varadh Jain 问了一个最朴素的问题——\"那这个东西在实战里到底长什么样？\" 最高赞的回答只有六个字，原话是 \"nobody knows but him and boris\"。除了 Steinberger 自己和 Boris Cherny，没人能说清。",
+    "pronounce_text": "Varadh Jain问了一个最朴素的问题。\"那这个东西在实战里到底长什么样？\" 最高赞的回答只有六个字，原话是\"nobody knows but him and boris\"。除了Steinberger自己和Boris Cherny，没人能说清。",
+    "time_begin": 40320,
+    "time_end": 56172.10884353741,
+    "text_begin": 269,
+    "text_end": 399,
+    "pronounce_text_begin": 252,
+    "pronounce_text_end": 376
+  },
+  {
+    "text": "这就是这周 AI Twitter 的真实状态。讨论的体量和理解的清晰度严重脱钩。两百万人转一句话，不是因为他们懂了，是因为转这条话本身是一种身份——我在最前沿。",
+    "pronounce_text": "这就是这周AI Twitter的真实状态。讨论的体量和理解的清晰度严重脱钩。两百万人转一句话，不是因为他们懂了，是因为转这条话本身是一种身份。我在最前沿。",
+    "time_begin": 56340,
+    "time_end": 69626.30385487528,
+    "text_begin": 399,
+    "text_end": 479,
+    "pronounce_text_begin": 376,
+    "pronounce_text_end": 453
+  },
+  {
+    "text": "Boris Cherny 是 Claude Code 的作者，Anthropic 的 MTS。他和 Steinberger 是讨论里被默认\"懂的那一边\"。但他们说的 loop，和底下转发的人理解的 loop，根本不在一个层上。",
+    "pronounce_text": "Boris Cherny是Claude Code的作者，Anthropic的MTS。他和Steinberger是讨论里被默认\"懂的那一边\"。但他们说的loop，和底下转发的人理解的loop，根本不在一个层上。",
+    "time_begin": 69768,
+    "time_end": 83959.8820861678,
+    "text_begin": 479,
+    "text_end": 592,
+    "pronounce_text_begin": 453,
+    "pronounce_text_end": 557
+  },
+  {
+    "text": "要把这件事讲清，得先把 loop 这个词的家谱摊开。",
+    "pronounce_text": "要把这件事讲清，得先把loop这个词的家谱摊开。",
+    "time_begin": 84096,
+    "time_end": 88465.84126984127,
+    "text_begin": 592,
+    "text_end": 618,
+    "pronounce_text_begin": 557,
+    "pronounce_text_end": 581
+  },
+  {
+    "text": "我把这周看到的所有讨论按时间顺序排了一下，整理出五层。听完你就知道吵架的人各自站在哪一层。",
+    "pronounce_text": "我把这周看到的所有讨论按时间顺序排了一下，整理出五层。听完你就知道吵架的人各自站在哪一层。",
+    "time_begin": 88632,
+    "time_end": 96589.32426303855,
+    "text_begin": 618,
+    "text_end": 663,
+    "pronounce_text_begin": 581,
+    "pronounce_text_end": 626
+  },
+  {
+    "text": "第一层是 2022 年的 ReAct 论文。学术界的 while 循环——模型推理一下、调一个工具、读一下结果、再推理。一个模型、一个 loop，人在旁边盯着。这是 loop 这个词最早的技术含义。",
+    "pronounce_text": "第一层是两千零二十二年的ReAct论文。学术界的while循环。模型推理一下、调一个工具、读一下结果、再推理。一个模型、一个loop，人在旁边盯着。这是loop这个词最早的技术含义。",
+    "time_begin": 96732,
+    "time_end": 113048.50793650793,
+    "text_begin": 663,
+    "text_end": 762,
+    "pronounce_text_begin": 626,
+    "pronounce_text_end": 717
+  },
+  {
+    "text": "第二层是 2023 年的 AutoGPT。第一次让 agent 自驱循环——给它一个目标，它自己 prompt 自己。这个版本最有名的不是它能干什么，是它经常陷在死循环里干不动。",
+    "pronounce_text": "第二层是两千零二十三年的AutoGPT。第一次让agent自驱循环。给它一个目标，它自己prompt自己。这个版本最有名的不是它能干什么，是它经常陷在死循环里干不动。",
+    "time_begin": 113220,
+    "time_end": 127667.30158730158,
+    "text_begin": 762,
+    "text_end": 851,
+    "pronounce_text_begin": 717,
+    "pronounce_text_end": 800
+  },
+  {
+    "text": "整整两年人们说\"agent 是玩具\"，根源就在这次失败。",
+    "pronounce_text": "整整两年人们说\"agent是玩具\"，根源就在这次失败。",
+    "time_begin": 127836,
+    "time_end": 132809.56009070296,
+    "text_begin": 851,
+    "text_end": 879,
+    "pronounce_text_begin": 800,
+    "pronounce_text_end": 827
+  },
+  {
+    "text": "第三层是 2025 年 7 月 Geoffrey Huntley 那篇 ralph。他的发明朴素到让人尴尬——一行 bash 把同一个 prompt 文件反复 pipe 给 agent。",
+    "pronounce_text": "第三层是两千零二十五年七月Geoffrey Huntley那篇ralph。他的发明朴素到让人尴尬。一行bash把同一个prompt文件反复pipe给agent。",
+    "time_begin": 132948,
+    "time_end": 143505.95918367346,
+    "text_begin": 879,
+    "text_end": 972,
+    "pronounce_text_begin": 827,
+    "pronounce_text_end": 907
+  },
+  {
+    "text": "但真正的新东西是纪律——每一轮迭代都把上下文重置回固定的几个锚点文件，不让对话越长越脏。Huntley 用这个 loop 花了不到 300 美元，搭出了一整门编程语言。",
+    "pronounce_text": "但真正的新东西是纪律。每一轮迭代都把上下文重置回固定的几个锚点文件，不让对话越长越脏。Huntley用这个loop花了不到三百美元，搭出了一整门编程语言。",
+    "time_begin": 143676,
+    "time_end": 157821.44217687074,
+    "text_begin": 972,
+    "text_end": 1056,
+    "pronounce_text_begin": 907,
+    "pronounce_text_end": 984
+  },
+  {
+    "text": "第四层是 2026 年春天。Codex 和 Claude Code 几乎同时上线了 /goal 命令——把 ralph 那套自驱循环产品化，加了一个小验证模型判断\"完成没\"。",
+    "pronounce_text": "第四层是两千零二十六年春天。Codex和Claude Code几乎同时上线了，goal命令。把ralph那套自驱循环产品化，加了一个小验证模型判断\"完成没\"。",
+    "time_begin": 157968,
+    "time_end": 171173.03401360544,
+    "text_begin": 1056,
+    "text_end": 1143,
+    "pronounce_text_begin": 984,
+    "pronounce_text_end": 1063
+  },
+  {
+    "text": "第五层就是 Steinberger 和 Boris 现在说的那个 loop。它真的新，不只是改名。",
+    "pronounce_text": "第五层就是Steinberger和Boris现在说的那个loop。它真的新，不只是改名。",
+    "time_begin": 171324,
+    "time_end": 177621.09750566893,
+    "text_begin": 1143,
+    "text_end": 1192,
+    "pronounce_text_begin": 1063,
+    "pronounce_text_end": 1107
+  },
+  {
+    "text": "四件事变了。Loop 自己变成了工作单元，不再是任务。Loop 开始监督其它 loop，并发地、按调度地跑。人类启动这个动作被调度器替代了——loop 不再等你按回车，它在基础设施时间里跑。",
+    "pronounce_text": "四件事变了。Loop自己变成了工作单元，不再是任务。Loop开始监督其它loop，并发地、按调度地跑。人类启动这个动作被调度器替代了。loop不再等你按回车，它在基础设施时间里跑。",
+    "time_begin": 177768,
+    "time_end": 194212.21768707482,
+    "text_begin": 1192,
+    "text_end": 1287,
+    "pronounce_text_begin": 1107,
+    "pronounce_text_end": 1197
+  },
+  {
+    "text": "最后一件——状态变得 durable，存进 git，崩了能恢复，因为这种 loop 默认你的笔电是关着的。",
+    "pronounce_text": "最后一件。状态变得durable，存进git，崩了能恢复，因为这种loop默认你的笔电是关着的。",
+    "time_begin": 194364,
+    "time_end": 203853.84126984127,
+    "text_begin": 1287,
+    "text_end": 1340,
+    "pronounce_text_begin": 1197,
+    "pronounce_text_end": 1245
+  },
+  {
+    "text": "Ralph 假设终端开着，2026 版假设终端关着。",
+    "pronounce_text": "Ralph假设终端开着，两千零二十六版假设终端关着。",
+    "time_begin": 204012,
+    "time_end": 208347.0113378685,
+    "text_begin": 1340,
+    "text_end": 1366,
+    "pronounce_text_begin": 1245,
+    "pronounce_text_end": 1271
+  },
+  {
+    "text": "所以那条最接近正确答案的回复，是一个 ID 叫 Trash Panda 的人写的——\"这不是 ralph 或 /goal 的 loop，那已经老掉牙了。这是某种持续编排的循环，去监督别的线程和别的 agent。\"",
+    "pronounce_text": "所以那条最接近正确答案的回复，是一个ID叫Trash Panda的人写的。\"这不是ralph或，goal的loop，那已经老掉牙了。这是某种持续编排的循环，去监督别的线程和别的agent。\"",
+    "time_begin": 208512,
+    "time_end": 223342.43083900228,
+    "text_begin": 1366,
+    "text_end": 1472,
+    "pronounce_text_begin": 1271,
+    "pronounce_text_end": 1366
+  },
+  {
+    "text": "他一句话点穿了——单 agent 的 ralph 是老东西，多 agent 互相监督的编排 loop 才是新的那层。",
+    "pronounce_text": "他一句话点穿了。单agent的ralph是老东西，多agent互相监督的编排loop才是新的那层。",
+    "time_begin": 223488,
+    "time_end": 232467.0022675737,
+    "text_begin": 1472,
+    "text_end": 1530,
+    "pronounce_text_begin": 1366,
+    "pronounce_text_end": 1415
+  },
+  {
+    "text": "Boris 自己在 6 月 2 号 WorkOS 的活动上，给过 loop 一个干净的定义。他说他现在不再 prompt Claude 了，他写 loop，那些 loop 在 prompt Claude，决定要做什么。他原话是——\"我的工作是写 loop。\"",
+    "pronounce_text": "Boris自己在六月二号WorkOS的活动上，给过loop一个干净的定义。他说他现在不再prompt Claude了，他写loop，那些loop在prompt Claude，决定要做什么。他原话是。\"我的工作是写loop。\"",
+    "time_begin": 232632,
+    "time_end": 248100.97959183675,
+    "text_begin": 1530,
+    "text_end": 1659,
+    "pronounce_text_begin": 1415,
+    "pronounce_text_end": 1527
+  },
+  {
+    "text": "这句话听起来像炫技，但他给了一个让人没法反驳的收据。过去三十天，他对 Claude Code 这个项目的贡献，100% 是 Claude Code 自己写的。他本人 land 了 259 个 PR。",
+    "pronounce_text": "这句话听起来像炫技，但他给了一个让人没法反驳的收据。过去三十天，他对Claude Code这个项目的贡献，百分之一百是Claude Code自己写的。他本人land了两百五十九个PR。",
+    "time_begin": 248256,
+    "time_end": 261588.74376417234,
+    "text_begin": 1659,
+    "text_end": 1758,
+    "pronounce_text_begin": 1527,
+    "pronounce_text_end": 1619
+  },
+  {
+    "text": "他在 2025 年 11 月就删掉了 IDE，再没打开过。",
+    "pronounce_text": "他在两千零二十五年十一月就删掉了IDE，再没打开过。",
+    "time_begin": 261756,
+    "time_end": 266508.97052154195,
+    "text_begin": 1758,
+    "text_end": 1787,
+    "pronounce_text_begin": 1619,
+    "pronounce_text_end": 1645
+  },
+  {
+    "text": "他描述的状态是这样的——几百个 agent 在背后读他的 GitHub、他的 Slack、他的 Twitter，自己决定下一步要构建什么。",
+    "pronounce_text": "他描述的状态是这样的。几百个agent在背后读他的GitHub、他的Slack、他的Twitter，自己决定下一步要构建什么。",
+    "time_begin": 266652,
+    "time_end": 276060.5714285714,
+    "text_begin": 1787,
+    "text_end": 1856,
+    "pronounce_text_begin": 1645,
+    "pronounce_text_end": 1708
+  },
+  {
+    "text": "我个人的感受是，被 timeline 普遍误读的不是\"prompt engineering 死了\"这件事——是这件事的真正分量。Boris 没有说工程师没用了。",
+    "pronounce_text": "我个人的感受是，被timeline普遍误读的不是\"prompt engineering死了\"这件事。是这件事的真正分量。Boris没有说工程师没用了。",
+    "time_begin": 276228,
+    "time_end": 287679.9274376417,
+    "text_begin": 1856,
+    "text_end": 1936,
+    "pronounce_text_begin": 1708,
+    "pronounce_text_end": 1783
+  },
+  {
+    "text": "他明确说了相反的话——决定要造什么、跟客户聊、协调团队这些事还是要人做，而且好工程师比以往更重要。",
+    "pronounce_text": "他明确说了相反的话。决定要造什么、跟客户聊、协调团队这些事还是要人做，而且好工程师比以往更重要。",
+    "time_begin": 287820,
+    "time_end": 297692.97052154195,
+    "text_begin": 1936,
+    "text_end": 1985,
+    "pronounce_text_begin": 1783,
+    "pronounce_text_end": 1831
+  },
+  {
+    "text": "变化的不是工程师消失，是这份工作整体被往上抬了一格——从写代码，升到写\"写代码的那个东西\"。",
+    "pronounce_text": "变化的不是工程师消失，是这份工作整体被往上抬了一格。从写代码，升到写\"写代码的那个东西\"。",
+    "time_begin": 297892.97052154195,
+    "time_end": 307127.3922902494,
+    "text_begin": 1985,
+    "text_end": 2031,
+    "pronounce_text_begin": 1831,
+    "pronounce_text_end": 1876
+  },
+  {
+    "text": "讨论区里最让我笑出声的一句吐槽只有四个字，原话是 \"Cronjobs have funny re-branding rn\"——cron 最近改名改得真热闹。",
+    "pronounce_text": "讨论区里最让我笑出声的一句吐槽只有四个字，原话是\"Cronjobs have funny re-branding rn\"。cron最近改名改得真热闹。",
+    "time_begin": 307296,
+    "time_end": 317598.5396825397,
+    "text_begin": 2031,
+    "text_end": 2109,
+    "pronounce_text_begin": 1876,
+    "pronounce_text_end": 1951
+  },
+  {
+    "text": "这句话戳到了一个真问题。所以我想认真回它一下，不打哈哈。",
+    "pronounce_text": "这句话戳到了一个真问题。所以我想认真回它一下，不打哈哈。",
+    "time_begin": 317736,
+    "time_end": 322756,
+    "text_begin": 2109,
+    "text_end": 2137,
+    "pronounce_text_begin": 1951,
+    "pronounce_text_end": 1979
+  },
+  {
+    "text": "它说对了一半。调度那一层就是 cron。Boris 自己的 loop 跑在 cron 上。Claude Code 里的 /loop 命令底层也用 cron。",
+    "pronounce_text": "它说对了一半。调度那一层就是cron。Boris自己的loop跑在cron上。Claude Code里的，loop命令底层也用cron。",
+    "time_begin": 322920,
+    "time_end": 334162.94784580497,
+    "text_begin": 2137,
+    "text_end": 2215,
+    "pronounce_text_begin": 1979,
+    "pronounce_text_end": 2047
+  },
+  {
+    "text": "如果你对 loop 的定义就是\"按时间跑一个东西\"，那这事我们 1975 年就发明了，可以散了。",
+    "pronounce_text": "如果你对loop的定义就是\"按时间跑一个东西\"，那这事我们一千九百七十五年就发明了，可以散了。",
+    "time_begin": 334332,
+    "time_end": 342370.5941043084,
+    "text_begin": 2215,
+    "text_end": 2263,
+    "pronounce_text_begin": 2047,
+    "pronounce_text_end": 2094
+  },
+  {
+    "text": "但 cron 从来没有的，是中间那一段。Cron 跑的是固定脚本。Loop 跑的是一个模型——它看当前状态，决定下一步做什么，做完之后判断有没有效果，再决定要不要继续。",
+    "pronounce_text": "但cron从来没有的，是中间那一段。Cron跑的是固定脚本。Loop跑的是一个模型。它看当前状态，决定下一步做什么，做完之后判断有没有效果，再决定要不要继续。",
+    "time_begin": 342540,
+    "time_end": 357149.84126984124,
+    "text_begin": 2263,
+    "text_end": 2347,
+    "pronounce_text_begin": 2094,
+    "pronounce_text_end": 2173
+  },
+  {
+    "text": "决策权在模型手里，不在你预先写好的 if-else 里。",
+    "pronounce_text": "决策权在模型手里，不在你预先写好的if-else里。",
+    "time_begin": 357300,
+    "time_end": 361797.55102040817,
+    "text_begin": 2347,
+    "text_end": 2375,
+    "pronounce_text_begin": 2173,
+    "pronounce_text_end": 2199
+  },
+  {
+    "text": "把这一层抠出来再叠加——一个 loop 调度并监督其它 loop，所有 loop 共享一份持久化的状态——这就是 cron 表达不了的东西了。",
+    "pronounce_text": "把这一层抠出来再叠加。一个loop调度并监督其它loop，所有loop共享一份持久化的状态。这就是cron表达不了的东西了。",
+    "time_begin": 361944,
+    "time_end": 372885.08843537414,
+    "text_begin": 2375,
+    "text_end": 2446,
+    "pronounce_text_begin": 2199,
+    "pronounce_text_end": 2261
+  },
+  {
+    "text": "最诚实的描述不是\"loop 是新魔法\"，也不是\"loop 是 cron 重命名\"。准确的说法是——loop 等于 cron 加上一个会做决定的脑子。",
+    "pronounce_text": "最诚实的描述不是\"loop是新魔法\"，也不是\"loop是cron重命名\"。准确的说法是。loop等于cron加上一个会做决定的脑子。",
+    "time_begin": 373032,
+    "time_end": 383764.1088435374,
+    "text_begin": 2446,
+    "text_end": 2520,
+    "pronounce_text_begin": 2261,
+    "pronounce_text_end": 2327
+  },
+  {
+    "text": "所有真正有意思的工程，都在这个脑子周围搭——怎么让它别跑飞、跑偏、跑死。",
+    "pronounce_text": "所有真正有意思的工程，都在这个脑子周围搭。怎么让它别跑飞、跑偏、跑死。",
+    "time_begin": 383964.1088435374,
+    "time_end": 391155.1746031746,
+    "text_begin": 2520,
+    "text_end": 2556,
+    "pronounce_text_begin": 2327,
+    "pronounce_text_end": 2362
+  },
+  {
+    "text": "讲到这你可能在想，那我怎么开始。其实入口只有一行。",
+    "pronounce_text": "讲到这你可能在想，那我怎么开始。其实入口只有一行。",
+    "time_begin": 391320,
+    "time_end": 396165.85034013604,
+    "text_begin": 2556,
+    "text_end": 2581,
+    "pronounce_text_begin": 2362,
+    "pronounce_text_end": 2387
+  },
+  {
+    "text": "Claude Code 的 /loop 命令已经上线，Boris 自己给的起手式可以直接抄过来改名词——\"/loop babysit all my PRs.",
+    "pronounce_text": "Claude Code的，loop命令已经上线，Boris自己给的起手式可以直接抄过来改名词。\"，loop babysit all my PRs.",
+    "time_begin": 396324,
+    "time_end": 406464,
+    "text_begin": 2581,
+    "text_end": 2659,
+    "pronounce_text_begin": 2387,
+    "pronounce_text_end": 2460
+  },
+  {
+    "text": "Auto-fix build issues, and when comments come in, use a worktree agent to fix them.\" 翻译过来就是——盯住我所有的 PR，构建挂了自动修，有评论进来用 worktree agent 处理掉。",
+    "pronounce_text": "Auto-fix build issues,and when comments come in,use a worktree agent to fix them.\" 翻译过来就是。盯住我所有的PR，构建挂了自动修，有评论进来用worktree agent处理掉。",
+    "time_begin": 406620,
+    "time_end": 421148.5714285714,
+    "text_begin": 2659,
+    "text_end": 2796,
+    "pronounce_text_begin": 2460,
+    "pronounce_text_end": 2591
+  },
+  {
+    "text": "Boris 几天后又发了五条让 Opus 自驱跑几小时甚至几天的 tip。",
+    "pronounce_text": "Boris几天后又发了五条让Opus自驱跑几小时甚至几天的tip。",
+    "time_begin": 421308,
+    "time_end": 426583.4195011338,
+    "text_begin": 2796,
+    "text_end": 2833,
+    "pronounce_text_begin": 2591,
+    "pronounce_text_end": 2624
+  },
+  {
+    "text": "前四条都是工程化标配——权限开 auto 别老来问、用 dynamic workflow 编排成百上千个子 agent、用 /goal 或 /loop 推它跑到完成、把任务挪到云上跑可以关笔电。",
+    "pronounce_text": "前四条都是工程化标配。权限开auto别老来问、用dynamic workflow编排成百上千个子agent、用，goal或，loop推它跑到完成、把任务挪到云上跑可以关笔电。",
+    "time_begin": 426783.4195011338,
+    "time_end": 441904.0997732426,
+    "text_begin": 2833,
+    "text_end": 2930,
+    "pronounce_text_begin": 2624,
+    "pronounce_text_end": 2711
+  },
+  {
+    "text": "但真正决定能不能信任这个 loop 的，是第五条——Claude 必须有办法端到端验证自己的工作。",
+    "pronounce_text": "但真正决定能不能信任这个loop的，是第五条。Claude必须有办法端到端验证自己的工作。",
+    "time_begin": 442044,
+    "time_end": 449362.7755102041,
+    "text_begin": 2930,
+    "text_end": 2979,
+    "pronounce_text_begin": 2711,
+    "pronounce_text_end": 2756
+  },
+  {
+    "text": "这一条 hype 跳过去了，实战的人盯死了。一个写完代码但没办法判断自己写对没的 loop，本质就是一台高速生产\"看起来自信的错误\"的机器。",
+    "pronounce_text": "这一条hype跳过去了，实战的人盯死了。一个写完代码但没办法判断自己写对没的loop，本质就是一台高速生产\"看起来自信的错误\"的机器。",
+    "time_begin": 449532,
+    "time_end": 462400.34467120183,
+    "text_begin": 2979,
+    "text_end": 3049,
+    "pronounce_text_begin": 2756,
+    "pronounce_text_end": 2823
+  },
+  {
+    "text": "Trash Panda 提到的那种持续编排的真实样子，1 月份 Steve Yegge 已经开源出来了，叫 Gas Town——20 到 30 个 Claude Code 实例由一个 Mayor agent 协调，",
+    "pronounce_text": "Trash Panda提到的那种持续编排的真实样子，一月份Steve Yegge已经开源出来了，叫Gas Town。二十到三十个Claude Code实例由一个Mayor agent协调，",
+    "time_begin": 462564,
+    "time_end": 475002.7755102041,
+    "text_begin": 3049,
+    "text_end": 3156,
+    "pronounce_text_begin": 2823,
+    "pronounce_text_end": 2917
+  },
+  {
+    "text": "巡逻 agent 跑持续 loop，状态全存进 git，崩了能恢复。",
+    "pronounce_text": "巡逻agent跑持续loop，状态全存进git，崩了能恢复。",
+    "time_begin": 475202.7755102041,
+    "time_end": 480129.89569161,
+    "text_begin": 3156,
+    "text_end": 3190,
+    "pronounce_text_begin": 2917,
+    "pronounce_text_end": 2947
+  },
+  {
+    "text": "而所有人更焦虑的另一面，是有人在做 commit 级的验证。一个叫 DanKornas 的开发者在做一个工具叫 roborev，后台对每个 commit 自动 review，把发现回喂给 agent，趁上下文还热的时候纠正。",
+    "pronounce_text": "而所有人更焦虑的另一面，是有人在做commit级的验证。一个叫DanKornas的开发者在做一个工具叫roborev，后台对每个commit自动review，把发现回喂给agent，趁上下文还热的时候纠正。",
+    "time_begin": 480276,
+    "time_end": 496046.8390022676,
+    "text_begin": 3190,
+    "text_end": 3302,
+    "pronounce_text_begin": 2947,
+    "pronounce_text_end": 3050
+  },
+  {
+    "text": "我自己看完这一层的体会是——loop 这种范式真正的天花板，从来不在它跑得多快，在它能不能信任自己的输出。",
+    "pronounce_text": "我自己看完这一层的体会是。loop这种范式真正的天花板，从来不在它跑得多快，在它能不能信任自己的输出。",
+    "time_begin": 496188,
+    "time_end": 506060.97052154195,
+    "text_begin": 3302,
+    "text_end": 3355,
+    "pronounce_text_begin": 3050,
+    "pronounce_text_end": 3101
+  },
+  {
+    "text": "讨论里最锋利的一句反讽，来自一个完全没有名气的工程师，ID 叫 rohit_jsfreaky。",
+    "pronounce_text": "讨论里最锋利的一句反讽，来自一个完全没有名气的工程师，ID叫rohit，jsfreaky。",
+    "time_begin": 506232,
+    "time_end": 515083.2925170068,
+    "text_begin": 3355,
+    "text_end": 3402,
+    "pronounce_text_begin": 3101,
+    "pronounce_text_end": 3146
+  },
+  {
+    "text": "他说——\"我今年 ship 的每一个所谓 AI agent，都是一个 for 循环、一次 LLM 调用、加一段 try/catch 包住 JSON 解析。它唯一'agent'的地方，是月底那张 Anthropic 的账单。\"",
+    "pronounce_text": "他说。\"我今年ship的每一个所谓AI agent，都是一个for循环、一次LLM调用、加一段try，catch包住JSON解析。它唯一'agent'的地方，是月底那张Anthropic的账单。\"",
+    "time_begin": 515232,
+    "time_end": 531339.5283446712,
+    "text_begin": 3402,
+    "text_end": 3514,
+    "pronounce_text_begin": 3146,
+    "pronounce_text_end": 3244
+  },
+  {
+    "text": "这条话刺心的地方在于它不是段子。这周最具体的一张账单——Uber 给每位工程师 Claude Code 和 Cursor 各设了 1500 美元每月上限，原因是四个月就烧光了全年的 AI 预算。",
+    "pronounce_text": "这条话刺心的地方在于它不是段子。这周最具体的一张账单。Uber给每位工程师Claude Code和Cursor各设了一千五百美元每月上限，原因是四个月就烧光了全年的AI预算。",
+    "time_begin": 531504,
+    "time_end": 545394.0226757369,
+    "text_begin": 3514,
+    "text_end": 3611,
+    "pronounce_text_begin": 3244,
+    "pronounce_text_end": 3331
+  },
+  {
+    "text": "当模型几乎免费写代码的时候，钱就转移到跑 loop 的那一层。另一个 ID 叫 runes_leo 直接定性——\"AI 编程里最贵的事，已经不再是写代码，是管理 agent loop。\"",
+    "pronounce_text": "当模型几乎免费写代码的时候，钱就转移到跑loop的那一层。另一个ID叫runes，leo直接定性。\"AI编程里最贵的事，已经不再是写代码，是管理agent loop。\"",
+    "time_begin": 545544,
+    "time_end": 559480.462585034,
+    "text_begin": 3611,
+    "text_end": 3704,
+    "pronounce_text_begin": 3331,
+    "pronounce_text_end": 3415
+  },
+  {
+    "text": "而 loop 在生产里最让人恐惧的失败模式，根本不是写错——是不会停。一个叫 cv_usk 的人说——\"没有护栏，你会拿到无限循环和比预算高一个数量级的账单。\"",
+    "pronounce_text": "而loop在生产里最让人恐惧的失败模式，根本不是写错。是不会停。一个叫cv，usk的人说。\"没有护栏，你会拿到无限循环和比预算高一个数量级的账单。\"",
+    "time_begin": 559620,
+    "time_end": 573428.7528344671,
+    "text_begin": 3704,
+    "text_end": 3784,
+    "pronounce_text_begin": 3415,
+    "pronounce_text_end": 3489
+  },
+  {
+    "text": "所以这周我看到的所有严肃 loop 文章，全部收敛到同一组三件套护栏——最大迭代数、no-progress 检测、token 或者美元的预算上限。",
+    "pronounce_text": "所以这周我看到的所有严肃loop文章，全部收敛到同一组三件套护栏。最大迭代数、no-progress检测、token或者美元的预算上限。",
+    "time_begin": 573588,
+    "time_end": 584366.5487528344,
+    "text_begin": 3784,
+    "text_end": 3857,
+    "pronounce_text_begin": 3489,
+    "pronounce_text_end": 3557
+  },
+  {
+    "text": "Loop 浪漫版的故事是——你写 loop，几千个 agent 一夜之间把你的公司搭出来。生产版的故事是——你写 loop，然后你大部分时间在确保它能停下来。",
+    "pronounce_text": "Loop浪漫版的故事是。你写loop，几千个agent一夜之间把你的公司搭出来。生产版的故事是。你写loop，然后你大部分时间在确保它能停下来。",
+    "time_begin": 584532,
+    "time_end": 597307.4648526077,
+    "text_begin": 3857,
+    "text_end": 3936,
+    "pronounce_text_begin": 3557,
+    "pronounce_text_end": 3629
+  },
+  {
+    "text": "Gartner 现在把 agentic AI 放在炒作峰值，真正部署的组织只有 17%。Timeline 上的喧闹和账本上的收据之间，有一道很大的缝。",
+    "pronounce_text": "Gartner现在把agentic AI放在炒作峰值，真正部署的组织只有百分之十七。Timeline上的喧闹和账本上的收据之间，有一道很大的缝。",
+    "time_begin": 597456,
+    "time_end": 608489.9682539683,
+    "text_begin": 3936,
+    "text_end": 4011,
+    "pronounce_text_begin": 3629,
+    "pronounce_text_end": 3701
+  },
+  {
+    "text": "Matt 看完这一周之后，给了一个我觉得是整条讨论里唯一一个把 Steinberger 和 Boris 缝起来的判断。",
+    "pronounce_text": "Matt看完这一周之后，给了一个我觉得是整条讨论里唯一一个把Steinberger和Boris缝起来的判断。",
+    "time_begin": 608652,
+    "time_end": 616226.1950113379,
+    "text_begin": 4011,
+    "text_end": 4070,
+    "pronounce_text_begin": 3701,
+    "pronounce_text_end": 3755
+  },
+  {
+    "text": "Loop 是水管。真正的资产，是 loop 里调用的那个 skill。",
+    "pronounce_text": "Loop是水管。真正的资产，是loop里调用的那个skill。",
+    "time_begin": 616392,
+    "time_end": 620982.4308390022,
+    "text_begin": 4070,
+    "text_end": 4105,
+    "pronounce_text_begin": 3755,
+    "pronounce_text_end": 3786
+  },
+  {
+    "text": "Steinberger 那条 tweet 火，但他另一条没那么火、更耐用的主张是——任何你做超过一次的事，把它变成自动化的 skill；任何你做过的难事，事后写成 skill，下次就免费。",
+    "pronounce_text": "Steinberger那条tweet火，但他另一条没那么火、更耐用的主张是。任何你做超过一次的事，把它变成自动化的skill; 任何你做过的难事，事后写成skill，下次就免费。",
+    "time_begin": 621144,
+    "time_end": 637077.3786848072,
+    "text_begin": 4105,
+    "text_end": 4199,
+    "pronounce_text_begin": 3786,
+    "pronounce_text_end": 3875
+  },
+  {
+    "text": "一个 loop 里头如果没有可复用的 skill，本质上就是一个 while-true 套着一个陌生人——每轮你都让一个完全没记忆的实习生从头来一遍。一个 loop 调用一组被命名、被测试、被反复打磨过的 skill，才是会复利的系统。",
+    "pronounce_text": "一个loop里头如果没有可复用的skill，本质上就是一个while-true套着一个陌生人。每轮你都让一个完全没记忆的实习生从头来一遍。一个loop调用一组被命名、被测试、被反复打磨过的skill，才是会复利的系统。",
+    "time_begin": 637236,
+    "time_end": 653900.8072562359,
+    "text_begin": 4199,
+    "text_end": 4317,
+    "pronounce_text_begin": 3875,
+    "pronounce_text_end": 3984
+  },
+  {
+    "text": "Reddit 上 r/ChatGPTCoding 一个用户写得最准——\"很多人在 Twitter 上翻白眼，但我耳朵立起来了。\"",
+    "pronounce_text": "Reddit上r，ChatGPTCoding一个用户写得最准。\"很多人在Twitter上翻白眼，但我耳朵立起来了。\"",
+    "time_begin": 654048,
+    "time_end": 662481.3333333334,
+    "text_begin": 4317,
+    "text_end": 4381,
+    "pronounce_text_begin": 3984,
+    "pronounce_text_end": 4042
+  },
+  {
+    "text": "WTF is a loop 这个问题的真正答案，不是关于 prompt engineering 死活的热门 take。是这样的——别再做那个待在 loop 里的人。",
+    "pronounce_text": "WTF is a loop这个问题的真正答案，不是关于prompt engineering死活的热门take。是这样的。别再做那个待在loop里的人。",
+    "time_begin": 662652,
+    "time_end": 673209.9591836735,
+    "text_begin": 4381,
+    "text_end": 4463,
+    "pronounce_text_begin": 4042,
+    "pronounce_text_end": 4117
+  },
+  {
+    "text": "Loop 写一次，给它能调的 skill、给它能自检的反馈、给它能停下来的上限，让它跑在 cron 上，你去想下一步要造什么。",
+    "pronounce_text": "Loop写一次，给它能调的skill、给它能自检的反馈、给它能停下来的上限，让它跑在cron上，你去想下一步要造什么。",
+    "time_begin": 673380,
+    "time_end": 685516.9160997733,
+    "text_begin": 4463,
+    "text_end": 4526,
+    "pronounce_text_begin": 4117,
+    "pronounce_text_end": 4176
+  },
+  {
+    "text": "Steinberger 和 Boris 在说同一个东西的两面——一边强调外壳，一边强调装填物。真懂的人是已经搭过一个的人。而本月起，搭它的入口，是一个 slash 命令。",
+    "pronounce_text": "Steinberger和Boris在说同一个东西的两面。一边强调外壳，一边强调装填物。真懂的人是已经搭过一个的人。而本月起，搭它的入口，是一个slash命令。",
+    "time_begin": 685656,
+    "time_end": 699070.0136054421,
+    "text_begin": 4526,
+    "text_end": 4611,
+    "pronounce_text_begin": 4176,
+    "pronounce_text_end": 4255
+  },
+  {
+    "text": "我把这周的几条线压成一句话——loop 不是新词，是被嵌套了五层的旧词；新一层的实质朴素到讽刺，cron 加一个会做决定的脑子，配上让它停下来的护栏。",
+    "pronounce_text": "我把这周的几条线压成一句话。loop不是新词，是被嵌套了五层的旧词;新一层的实质朴素到讽刺，cron加一个会做决定的脑子，配上让它停下来的护栏。",
+    "time_begin": 699228,
+    "time_end": 713199.2925170067,
+    "text_begin": 4611,
+    "text_end": 4686,
+    "pronounce_text_begin": 4255,
+    "pronounce_text_end": 4327
+  },
+  {
+    "text": "两百万人转那句口号，是因为转它本身就是入场券——而真去搭过的人，已经在为 skill 写第二个版本了。",
+    "pronounce_text": "两百万人转那句口号，是因为转它本身就是入场券。而真去搭过的人，已经在为skill写第二个版本了。",
+    "time_begin": 713340,
+    "time_end": 722028.7528344671,
+    "text_begin": 4686,
+    "text_end": 4737,
+    "pronounce_text_begin": 4327,
+    "pronounce_text_end": 4375
+  },
+  {
+    "text": "入口便宜得像玩笑——一行 /loop，加一组你认真写过的 skill，加三件套护栏。剩下的事情交给基础设施时间。",
+    "pronounce_text": "入口便宜得像玩笑。一行，loop，加一组你认真写过的skill，加三件套护栏。剩下的事情交给基础设施时间。",
+    "time_begin": 722196,
+    "time_end": 732196.6802721089,
+    "text_begin": 4737,
+    "text_end": 4793,
+    "pronounce_text_begin": 4375,
+    "pronounce_text_end": 4428
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 732348,
+    "time_end": 737960.1088435374,
+    "text_begin": 4793,
+    "text_end": 4820,
+    "pronounce_text_begin": 4428,
+    "pronounce_text_end": 4454
+  }
+]

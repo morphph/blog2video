@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .headline {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 50px;
+    }
+    .headline .accent { color: #8B5CF6; }
+    .cards {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .person {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: left;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .role {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .principle {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 30px 28px;
+      font-size: 28px;
+      line-height: 1.45;
+      color: #FFFFFF;
+      text-align: left;
+    }
+    .principle .key { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">他们和转发者不在一层</div>
+    <div class="headline">
+      要先把 loop<br>
+      的 <span class="accent">家谱摊开</span>
+    </div>
+    <div class="cards">
+      <div class="person">
+        <div class="name">Boris Cherny</div>
+        <div class="role">Claude Code 作者<br>Anthropic MTS</div>
+      </div>
+      <div class="person">
+        <div class="name">P. Steinberger</div>
+        <div class="role">220 万阅读那条<br>tweet 的作者</div>
+      </div>
+    </div>
+    <div class="principle">
+      他们说的 loop，和底下转发者<br>
+      <span class="key">根本不在一个层上</span>
+    </div>
+  </div>
+</body>
+</html>

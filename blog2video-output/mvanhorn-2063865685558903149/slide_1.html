@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 700px;
+      background: radial-gradient(ellipse, rgba(245, 158, 11, 0.14) 0%, rgba(239, 68, 68, 0.06) 45%, transparent 75%);
+      z-index: 0;
+    }
+    .tag {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 56px;
+      z-index: 1;
+    }
+    .title {
+      font-size: 78px;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 90px;
+      z-index: 1;
+    }
+    .title .amber { color: #F59E0B; }
+    .title .red { color: #EF4444; }
+    .cards {
+      display: flex;
+      gap: 28px;
+      width: 100%;
+      z-index: 1;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .card.amber { border-left: 4px solid #F59E0B; }
+    .card.red { border-left: 4px solid #EF4444; }
+    .num {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .num.amber { color: #F59E0B; }
+    .num.red { color: #EF4444; }
+    .label {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="tag">精读AI · Agent Loop 辩论</div>
+    <div class="title">
+      <span class="amber">两百万</span>人转的<br>
+      那句话，<span class="red">没人会解释</span>
+    </div>
+    <div class="cards">
+      <div class="card amber">
+        <div class="num amber">220万</div>
+        <div class="label">单条阅读</div>
+      </div>
+      <div class="card red">
+        <div class="num red">0</div>
+        <div class="label">人能解释</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

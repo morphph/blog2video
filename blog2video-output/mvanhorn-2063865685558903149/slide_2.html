@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .headline {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 60px;
+    }
+    .headline .accent { color: #EF4444; }
+    .quote-card {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 40px 32px;
+      margin-bottom: 40px;
+    }
+    .q-question {
+      font-size: 26px;
+      color: #B0B0CC;
+      margin-bottom: 20px;
+      text-align: left;
+      line-height: 1.45;
+    }
+    .q-answer {
+      font-size: 34px;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-family: 'Courier New', monospace;
+      text-align: left;
+      line-height: 1.4;
+    }
+    .q-by {
+      font-size: 20px;
+      color: #6B7280;
+      margin-top: 18px;
+      text-align: right;
+    }
+    .summary {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 28px;
+      font-size: 26px;
+      line-height: 1.5;
+      color: #FFFFFF;
+      text-align: left;
+    }
+    .summary .hot { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">回复区的真实状态</div>
+    <div class="headline">
+      转的人都像在传共识<br>
+      <span class="accent">点进回复立刻崩</span>
+    </div>
+    <div class="quote-card">
+      <div class="q-question">Q: 这玩意儿实战长什么样？</div>
+      <div class="q-answer">"nobody knows but him and boris."</div>
+      <div class="q-by">— Matthew Berman</div>
+    </div>
+    <div class="summary">
+      讨论体量和理解清晰度<br>
+      <span class="hot">严重脱钩</span> — 转 = 身份信号
+    </div>
+  </div>
+</body>
+</html>

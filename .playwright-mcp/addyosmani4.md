@@ -1,0 +1,442 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: Don’t miss what’s happening
+          - generic [ref=e9]: People on X are the first to know.
+        - generic [ref=e12]:
+          - link "Log in" [ref=e14] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e17]: Log in
+          - link "Sign up" [ref=e19] [cursor=pointer]:
+            - /url: /i/flow/signup
+            - generic [ref=e22]: Sign up
+      - generic [ref=e23]:
+        - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+        - button "Skip to trending" [ref=e26] [cursor=pointer]
+        - banner [ref=e28]:
+          - generic [ref=e31]:
+            - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+              - link "X" [ref=e34]:
+                - /url: /
+                - img [ref=e36]
+            - generic:
+              - navigation "Primary"
+        - main [ref=e39]:
+          - generic [ref=e42]:
+            - generic "Home timeline" [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e51] [cursor=pointer]:
+                  - button "Back" [ref=e53]:
+                    - img [ref=e55]
+                  - heading "Article" [level=2] [ref=e370]
+                  - link "Focus mode" [ref=e372]:
+                    - /url: /addyosmani/article/2064127981161959567
+                    - img [ref=e374]
+                - generic:
+                  - generic:
+                    - status:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: See new posts
+              - region "Conversation" [ref=e62]:
+                - heading "Conversation" [level=1] [ref=e63]
+                - 'generic "Timeline: Conversation" [ref=e64]':
+                  - article "Addy Osmani Verified account @addyosmani 70 replies, 248 reposts, 1566 likes, 3643 bookmarks, 159311 views" [ref=e377]:
+                    - generic [ref=e71]:
+                      - generic [ref=e75]:
+                        - link [active] [ref=e87] [cursor=pointer]:
+                          - /url: /addyosmani
+                        - generic [ref=e92]:
+                          - generic [ref=e95]:
+                            - link "Addy Osmani Verified account" [ref=e98] [cursor=pointer]:
+                              - /url: /addyosmani
+                              - generic [ref=e99]:
+                                - generic [ref=e101]: Addy Osmani
+                                - img "Verified account" [ref=e104]
+                            - link "@addyosmani" [ref=e110] [cursor=pointer]:
+                              - /url: /addyosmani
+                              - generic [ref=e111]: "@addyosmani"
+                          - button "More" [ref=e117] [cursor=pointer]:
+                            - img [ref=e121]
+                      - generic [ref=e124]:
+                        - generic [ref=e378]:
+                          - link "Image" [ref=e384] [cursor=pointer]:
+                            - /url: /addyosmani/article/2064127981161959567/media/2064125629122162688
+                            - generic "Image" [ref=e388]:
+                              - img "Image" [ref=e390]
+                          - generic [ref=e391]:
+                            - generic [ref=e393]: Loop Engineering.
+                            - group "70 replies, 248 reposts, 1566 likes, 3643 bookmarks, 159311 views" [ref=e395]:
+                              - button "70 Replies. Reply" [ref=e397] [cursor=pointer]:
+                                - generic [ref=e398]:
+                                  - img [ref=e401]
+                                  - generic [ref=e406]: "70"
+                              - button "248 reposts. Repost" [ref=e408] [cursor=pointer]:
+                                - generic [ref=e409]:
+                                  - img [ref=e412]
+                                  - generic [ref=e417]: "248"
+                              - button "1566 Likes. Like" [ref=e419] [cursor=pointer]:
+                                - generic [ref=e420]:
+                                  - img [ref=e423]
+                                  - generic [ref=e428]: 1.5K
+                              - link "159311 views. View post analytics" [ref=e430] [cursor=pointer]:
+                                - /url: /addyosmani/status/2064127981161959567/analytics
+                                - generic [ref=e431]:
+                                  - img [ref=e434]
+                                  - generic [ref=e439]: 159K
+                              - button "Bookmark" [ref=e441] [cursor=pointer]:
+                                - img [ref=e445]
+                              - button "Share post" [ref=e450] [cursor=pointer]:
+                                - img [ref=e454]
+                            - generic [ref=e462]:
+                              - generic [ref=e464]:
+                                - generic [ref=e465]: Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead.
+                                - generic [ref=e467]: A loop here can be thought of a recursive goal where you define a purpose and the AI iterates until complete.
+                                - generic [ref=e468]: It's roughly five building blocks and Claude Code and Codex both have all five now.
+                              - generic [ref=e470]:
+                                - generic [ref=e471]: I believe this
+                                - generic [ref=e472]: may
+                                - generic [ref=e473]: be the future of how we work with coding agents. However, its still early, I'm skeptical and you absolutely
+                                - generic [ref=e474]: have
+                                - generic [ref=e475]: to be careful about
+                                - generic [ref=e476]: token costs
+                                - generic [ref=e477]: (usage patterns can vary wildly if you are token rich or poor). You also still need
+                                - generic [ref=e478]: some
+                                - generic [ref=e479]: "way to ensure quality doesn't drop and concerns re: slop are valid. That said, let's explore what this is all about."
+                              - generic [ref=e481]:
+                                - link "@steipete" [ref=e483] [cursor=pointer]:
+                                  - /url: https://x.com/@steipete
+                                  - generic [ref=e484]: "@steipete"
+                                - generic [ref=e485]: recently
+                                - link "said" [ref=e487] [cursor=pointer]:
+                                  - /url: https://x.com/steipete/status/2063697162748260627
+                                  - generic [ref=e488]: said
+                                - generic [ref=e489]: ": “You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.” Similarly,"
+                                - link "@bcherny" [ref=e491] [cursor=pointer]:
+                                  - /url: https://x.com/@bcherny
+                                  - generic [ref=e492]: "@bcherny"
+                                - generic [ref=e493]: ", head of Claude Code at Anthropic,"
+                                - link "said" [ref=e495] [cursor=pointer]:
+                                  - /url: https://x.com/rohanpaul_ai/status/2063289804708835412
+                                  - generic [ref=e496]: said
+                                - generic [ref=e497]: “I don't prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do. My job is to write loops”.
+                              - generic [ref=e500]: Okay, so what does any of that mean?
+                              - generic [ref=e503]: For like two years the way you got something out of a coding agent was you wrote a good prompt and shared enough context. You type a thing, you read what came back, you type the next thing. The agent is a tool and you are holding it the entire time, one turn after the other. That part is kind of over, or at least some think it's going to be.
+                              - generic [ref=e505]:
+                                - generic [ref=e506]: Now you build a small system that finds the work, hands it out, checks it, writes down what is done and then decides the next thing, and you let that system poke the agents instead of you. I wrote before about the cousin of this,
+                                - link "agent harness engineering" [ref=e508] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/agent-harness-engineering/
+                                  - generic [ref=e509]: agent harness engineering
+                                - generic [ref=e510]: ", which is making the environment one single agent runs inside and the"
+                                - link "factory model" [ref=e512] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/factory-model/
+                                  - generic [ref=e513]: factory model
+                                - generic [ref=e514]: "- the system that builds the software. Loop engineering sits one floor above the harness. The harness but it runs on a timer, it spawns little helpers, and it feeds itself."
+                              - generic [ref=e517]: The thing that surprised me is this is not really a tool thing anymore. A year ago if you wanted a loop you wrote a pile of bash and you maintained that pile forever and it was yours and only yours. Now the pieces just ship inside the products. Steinberger's list maps almost exactly onto the Codex app, and then almost the same onto Claude Code. And once you notice the shape is the same you stop arguing about which tool, you just design a loop that still works no matter which one you happen to be sitting in.
+                              - heading "The five pieces, and then notes" [level=2] [ref=e519]:
+                                - generic [ref=e521]: The five pieces, and then notes
+                              - generic [ref=e523]:
+                                - generic [ref=e524]: A
+                                - link "loop" [ref=e526] [cursor=pointer]:
+                                  - /url: https://x.com/reach_vb/status/2063713960495558940
+                                  - generic [ref=e527]: loop
+                                - generic [ref=e528]: needs five things and then one place to remember stuff. Let me list it first and then map it.
+                              - list [ref=e529]:
+                                - listitem [ref=e530]:
+                                  - generic [ref=e531]:
+                                    - generic [ref=e532]: Automations
+                                    - generic [ref=e533]: that go off on a schedule and do discovery and triage by themselves.
+                                - listitem [ref=e534]:
+                                  - generic [ref=e535]:
+                                    - generic [ref=e536]: Worktrees
+                                    - generic [ref=e537]: so two agents working in parallel dont step on each other.
+                                - listitem [ref=e538]:
+                                  - generic [ref=e539]:
+                                    - generic [ref=e540]: Skills
+                                    - generic [ref=e541]: to write down the project knowledge the agent would otherwise just guess.
+                                - listitem [ref=e542]:
+                                  - generic [ref=e543]:
+                                    - generic [ref=e544]: Plugins and connectors
+                                    - generic [ref=e545]: to plug the agent into the tools you already use.
+                                - listitem [ref=e546]:
+                                  - generic [ref=e547]:
+                                    - generic [ref=e548]: Sub-agents
+                                    - generic [ref=e549]: so one of them has the idea and a different one checks it.
+                              - generic [ref=e551]:
+                                - generic [ref=e552]: Then the sixth thing, the memory. A markdown file, or a Linear board, anything that lives outside the single conversation and holds what's done and what is next. Sounds too dumb to matter. But it's the same trick every long running agent depends on and I went into it in
+                                - link "long-running agents" [ref=e554] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/long-running-agents/
+                                  - generic [ref=e555]: long-running agents
+                                - generic [ref=e556]: ", the model forgets everything between runs so the memory has to be on disk and not in the context. The agent forgets, the repo doesnt."
+                              - generic [ref=e559]: Both products have all five now.
+                              - link "Image" [ref=e566] [cursor=pointer]:
+                                - /url: /addyosmani/article/2064127981161959567/media/2064126331147948033
+                                - generic "Image" [ref=e570]:
+                                  - img "Image" [ref=e572]
+                              - generic [ref=e575]: The names are a bit different here and there but the capability is the same thing. Let me go one by one because honestly the details are where a loop either holds together or quietly leaks everywhere.
+                              - heading "Automations, this is the heartbeat" [level=2] [ref=e577]:
+                                - generic [ref=e579]: Automations, this is the heartbeat
+                              - generic [ref=e581]:
+                                - generic [ref=e582]: Automations are what make a loop an actual loop and not just one run you did once. In the Codex app you make one in the Automations tab and you pick the project, the prompt it will run, how often, and if it runs on your local checkout or on a background worktree. The runs that find something go to a Triage inbox, and the runs that find nothing just archive themselves which is nice. OpenAI uses them internally for boring stuff like daily issue triage, summarizing CI failures, writing commit briefings, hunting bugs somebody added last week. And an automation can call a skill, so you keep the recurring thing maintainable, you fire
+                                - link "$skill-name" [ref=e584] [cursor=pointer]:
+                                  - /url: https://x.com/search?q=%24skill-name&src=cashtag_click
+                                  - generic [ref=e585]: $skill-name
+                                - generic [ref=e586]: instead of pasting a giant wall of instructions into a schedule that nobody will ever update.
+                              - generic [ref=e589]: Claude Code gets to the same place but through scheduling and hooks. You can run a prompt or a command on a interval with /loop, you can schedule a cron task, you can fire shell commands at certain points in the agent lifecycle with hooks, or you push the whole thing to GitHub Actions if you want it to keep running after you close the laptop. Same idea exactly, you define an autonomous task, you give it a cadence, and the findings come to you so you are not the one going around checking.
+                              - generic [ref=e592]: There is a second in-session primitive worth knowing, and it's the one closer to what this whole post is about. /loop re-runs on a cadence. /goal keeps going until a condition you wrote is actually true, and after every turn a separate small model checks whether you are done, so the agent that wrote the code isnt the one grading it. You give it something like "all tests in test/auth pass and lint is clean" and walk away. Codex has the same thing, also called /goal, it keeps working across turns until a verifiable stopping condition holds, with pause and resume and clear. Same primitive, both tools, wich is kind of the pattern for this whole article.
+                              - generic [ref=e595]: So this is the part that surfaces the work. The rest of the loop is what acts on it.
+                              - heading "Worktrees so parallel doesn't turn into chaos" [level=2] [ref=e597]:
+                                - generic [ref=e599]: Worktrees so parallel doesn't turn into chaos
+                              - generic [ref=e602]: The second you run more than one agent the files start colliding, that becomes the failure. Two agents writing the same file is the exact same headache as two engineers committing to the same lines and nobody talked to each other first. A git worktree fixes it, its a separate working directory on its own branch sharing the same repo history, so one agent's edits literally can not touch the other one's checkout.
+                              - generic [ref=e604]:
+                                - generic [ref=e605]: "Codex builds the worktree support right in so several threads hit the same repo at once and dont bump into each other. Claude Code gives you the same isolation with git worktree, a --worktree flag to open a session in its own checkout, and a isolation: worktree setting you stick on a subagent so each helper gets a fresh checkout that cleans itself up after. I wrote about the human side of all this in"
+                                - link "the orchestration tax" [ref=e607] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/orchestration-tax/
+                                  - generic [ref=e608]: the orchestration tax
+                                - generic [ref=e609]: ", the worktrees take away the mechanical collision but YOU are still the ceiling, your review bandwith decides how many you can actually run, not the tool."
+                              - heading "Skills, so you stop explaining your project every single time" [level=2] [ref=e611]:
+                                - generic [ref=e613]: Skills, so you stop explaining your project every single time
+                              - generic [ref=e615]:
+                                - generic [ref=e616]: A skill is how you stop re-explaining the same project context every session like a goldfish. Both tools use the same format, a folder with a SKILL.md inside holding instructions and metadata, and then optional scripts, references, assets. Codex runs a skill when you call it with $ or /skills, or by itself when your task matches the skill description, which is the reason a tight boring description beats a clever one. Claude Code does it the same way and I wrote the pattern up in
+                                - link "agent skills" [ref=e618] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/agent-skills/
+                                  - generic [ref=e619]: agent skills
+                                - generic [ref=e620]: .
+                              - generic [ref=e622]:
+                                - generic [ref=e623]: Skills are also where intent stops costing you over and over. I argued in
+                                - link "the intent debt" [ref=e625] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/intent-debt/
+                                  - generic [ref=e626]: the intent debt
+                                - generic [ref=e627]: that an agent starts every session cold and it will fill any hole in your intent with a confident guess. A skill is that intent written down on the outside, the conventions, the build steps, the “we dont do it like this because of that one incident”, written one time where the agent reads it every run. Without skills the loop re-derives your whole project from zero every cycle, with skills it kind of compounds.
+                              - generic [ref=e630]: One thing to keep straight, the skill is the authoring format and a plugin is how you ship it. When you want to share a skill across repos or bundle a few together you package them as a plugin. True in Codex, true in Claude Code.
+                              - heading "Plugins and connectors, the loop touches your real tools" [level=2] [ref=e632]:
+                                - generic [ref=e634]: Plugins and connectors, the loop touches your real tools
+                              - generic [ref=e637]: A loop that can only see the filesystem is a tiny loop. Connectors, which are built on MCP, let the agent read your issue tracker, query a database, hit a staging api, drop a message in Slack. Codex and Claude Code both speak MCP so the connector you wrote for one usually just works in the other. And plugins bundle connectors and skills together so your teammate installs your setup in one go instead of rebuilding the whole thing from memory.
+                              - generic [ref=e640]: This is the difference between an agent that says “here is the fix” and a loop that opens the PR, links the Linear ticket and pings the channel once CI is green by itself. The connectors are the reason the loop can act inside your actual environment instead of just telling you what it would do if it could.
+                              - heading "Sub-agents, keep the maker away from the checker" [level=2] [ref=e642]:
+                                - generic [ref=e644]: Sub-agents, keep the maker away from the checker
+                              - generic [ref=e647]: The most useful structural thing in a loop, by far, is splitting the one who writes from the one who checks. The model that wrote the code is way too nice grading its own homework. A second agent with different instructions and sometimes a different model catches the stuff the first one talked itself into.
+                              - generic [ref=e650]: Codex only spawns subagents when you ask, runs them at the same time and then folds the results back into one answer. You define your own agents as TOML files in .codex/agents/, each with a name, a description, instructions and optional model and reasoning effort, so your security reviewer can be a strong model on high effort while your explorer is some fast read-only thing. Claude Code does the same with subagents in .claude/agents/ and agent teams that pass work between them. The usual split in both is one agent explores, one implements, one verifies against the spec.
+                              - generic [ref=e652]:
+                                - generic [ref=e653]: I made this case twice already, once as
+                                - link "the code agent orchestra" [ref=e655] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/code-agent-orchestra/
+                                  - generic [ref=e656]: the code agent orchestra
+                                - generic [ref=e657]: and once as
+                                - link "adversarial code review" [ref=e659] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/adversarial-code-review/
+                                  - generic [ref=e660]: adversarial code review
+                                - generic [ref=e661]: . The reason it matters specifically inside a loop is the loop runs while you are not watching, so a verifier you actually trust is the only reason you can walk away. Subagents do burn more tokens since each one does its own model and tool work, so spend them where a second opinion is worth paying for. This is also basically what Claude Code's /goal does under the hood, a fresh model decides if the loop is done instead of the one that did the work, the maker and checker split applied to the stop condition itself.
+                              - heading "What one loop looks like" [level=2] [ref=e663]:
+                                - generic [ref=e665]: What one loop looks like
+                              - generic [ref=e668]: Stick it together and a single thread turns into a little control panel. Here is one shape I keep using.
+                              - generic [ref=e671]: An automation runs every morning on the repo. Its prompt calls a triage skill that reads yesterdays CI failures, the open issues, the recent commits, and writes the findings into a markdown file or a Linear board. For each finding that is worth doing the thread opens an isolated worktree and sends a sub-agent to draft the fix, and a second sub-agent reviews that draft against the project skills and the existing tests.
+                              - generic [ref=e674]: Connectors let the loop open the PR and update the ticket. Anything the loop can not handle lands in the triage inbox for me. The state file is the spine of the whole thing, it remembers what got tried, what passed, what is still open, so tomorrow morning the run picks up where today stopped.
+                              - generic [ref=e677]: And look at what you actually did there. You designed it one time. You did not prompt any of those steps. Thats Steinberger's whole point made real, and its the same loop in Codex or in Claude Code because the pieces are the same pieces.
+                              - heading "What the loop still does not do for you" [level=2] [ref=e679]:
+                                - generic [ref=e681]: What the loop still does not do for you
+                              - generic [ref=e683]:
+                                - generic [ref=e684]: The loop changes the work, it does not delete you from it.
+                                - generic [ref=e685]: And three problems actually get sharper as the loop gets better, not easier.
+                              - generic [ref=e687]:
+                                - generic [ref=e688]: Verification is still on you.
+                                - generic [ref=e689]: A loop running unattended is also a loop making mistakes unattended. The whole reason you split the verifier sub-agent from the maker is to make the loop's “its done” mean something, and even then “done” is a claim and not a proof. I keep saying the same line from
+                                - link "code review in the age of AI" [ref=e691] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/code-review-ai/
+                                  - generic [ref=e692]: code review in the age of AI
+                                - generic [ref=e693]: ", your job is to ship code you confirmed works."
+                              - generic [ref=e695]:
+                                - generic [ref=e696]: Your understanding still rots if you allow it.
+                                - generic [ref=e697]: The faster the loop ships code you did not write, the bigger the gap between what exists and what you actually get. Thats
+                                - link "comprehension debt" [ref=e699] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/comprehension-debt/
+                                  - generic [ref=e700]: comprehension debt
+                                - generic [ref=e701]: and a smooth loop just makes it grow faster unless you read what the loop made.
+                              - generic [ref=e703]:
+                                - generic [ref=e704]: And yeah, the comfortable posture is probably the risky one. When the loop runs itself its very tempting to stop having an opinion and just take whatever it gives back. I called that
+                                - link "cognitive surrender" [ref=e706] [cursor=pointer]:
+                                  - /url: https://addyosmani.com/blog/cognitive-surrender/
+                                  - generic [ref=e707]: cognitive surrender
+                                - generic [ref=e708]: . Designing the loop is the cure when you do it with judgement and the accelerant when you do it to avoid thinking, same action, opposite result.
+                              - heading "Build the loop. Stay the engineer." [level=2] [ref=e710]:
+                                - generic [ref=e712]: Build the loop. Stay the engineer.
+                              - generic [ref=e715]: I think this is a preview of how our work is going to evolve. That said, If I weren't reviewing the code myself or if I relied entirely on automated loops to fix it my product’s quality would suffer. I'd likely end up stuck in a downward spiral, continuously digging myself into a deeper hole.
+                              - generic [ref=e718]: That said, go ahead and set up your loops, but don't forget that prompting your agents directly is still effective. It's all about finding the right balance.
+                              - generic [ref=e721]: Loops can also result in different outcomes depending on you. Two people can build the exact same loop and get completely opposite results. One uses it to move faster on work they understand deeply. The other uses it to avoid understanding the work at all. The loop doesn't know the difference. You do.
+                              - generic [ref=e724]: That's what makes loop design harder than prompt engineering, not easier. Cherny's point isn’t that the work got easier. It's that the leverage point moved.
+                              - generic [ref=e727]: Build the loop. But build it like someone who intends to stay the engineer, not just the person who presses go.
+                            - status [ref=e729]:
+                              - generic [ref=e730]:
+                                - img [ref=e731]
+                                - generic [ref=e735]:
+                                  - generic [ref=e736]: Want to publish your own Article?
+                                  - link "Upgrade to Premium" [ref=e737] [cursor=pointer]:
+                                    - /url: /i/premium_sign_up
+                        - generic [ref=e131]:
+                          - link "11:30 PM · Jun 8, 2026" [ref=e133] [cursor=pointer]:
+                            - /url: /addyosmani/status/2064127981161959567
+                            - time [ref=e134]: 11:30 PM · Jun 8, 2026
+                          - generic [ref=e738]: ·
+                          - link "159.3K Views" [ref=e739] [cursor=pointer]:
+                            - /url: /addyosmani/status/2064127981161959567/analytics
+                            - generic [ref=e742]: 159.3K
+                            - generic [ref=e743]: Views
+                        - group "70 replies, 248 reposts, 1566 likes, 3643 bookmarks, 159311 views" [ref=e744]:
+                          - button "70 Replies. Reply" [ref=e139] [cursor=pointer]:
+                            - generic [ref=e140]:
+                              - img [ref=e143]
+                              - generic [ref=e148]: "70"
+                          - button "248 reposts. Repost" [ref=e150] [cursor=pointer]:
+                            - generic [ref=e151]:
+                              - img [ref=e154]
+                              - generic [ref=e159]: "248"
+                          - button "1566 Likes. Like" [ref=e161] [cursor=pointer]:
+                            - generic [ref=e162]:
+                              - img [ref=e165]
+                              - generic [ref=e170]: 1.5K
+                          - button "3643 Bookmarks. Bookmark" [ref=e172] [cursor=pointer]:
+                            - generic [ref=e173]:
+                              - img [ref=e176]
+                              - generic [ref=e181]: 3.6K
+                          - button "Share post" [ref=e184] [cursor=pointer]:
+                            - img [ref=e188]
+                        - button "Read 70 replies" [ref=e191] [cursor=pointer]:
+                          - generic [ref=e192]:
+                            - img [ref=e193]
+                            - generic [ref=e197]: Read 70 replies
+            - generic "Trending" [ref=e210]:
+              - generic [ref=e211]:
+                - region "Sign up" [ref=e213]:
+                  - heading "New to X?" [level=2] [ref=e215]:
+                    - generic [ref=e216]: New to X?
+                  - generic [ref=e217]: Sign up now to get your own personalized timeline!
+                  - generic [ref=e218]:
+                    - iframe [ref=e221]:
+                      - button "Sign up with Google. Opens in new tab" [ref=f4e3] [cursor=pointer]:
+                        - generic [ref=f4e5]:
+                          - img [ref=f4e7]
+                          - generic [ref=f4e14]: Sign up with Google
+                    - button "Sign up with Apple" [ref=e222] [cursor=pointer]:
+                      - generic [ref=e223]:
+                        - img [ref=e224]
+                        - generic [ref=e228]: Sign up with Apple
+                    - link "Create account" [ref=e229] [cursor=pointer]:
+                      - /url: /i/flow/signup
+                      - generic [ref=e232]: Create account
+                  - generic [ref=e233]:
+                    - text: By signing up, you agree to the
+                    - link "Terms of Service" [ref=e234] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - text: and
+                    - link "Privacy Policy" [ref=e235] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - text: ", including"
+                    - link "Cookie Use." [ref=e236] [cursor=pointer]:
+                      - /url: https://help.x.com/rules-and-policies/twitter-cookies
+                - complementary "Relevant people" [ref=e238]:
+                  - heading "Relevant people" [level=2] [ref=e240]:
+                    - generic [ref=e241]: Relevant people
+                  - list [ref=e242]:
+                    - listitem [ref=e243] [cursor=pointer]:
+                      - generic [ref=e244]:
+                        - link [ref=e254]:
+                          - /url: /addyosmani
+                        - generic [ref=e257]:
+                          - generic [ref=e258]:
+                            - generic [ref=e260]:
+                              - link "Addy Osmani Verified account" [ref=e262]:
+                                - /url: /addyosmani
+                                - generic [ref=e263]:
+                                  - generic [ref=e265]: Addy Osmani
+                                  - img "Verified account" [ref=e268]
+                              - link "@addyosmani" [ref=e273]:
+                                - /url: /addyosmani
+                                - generic [ref=e275]: "@addyosmani"
+                            - button "Follow @addyosmani" [ref=e277]:
+                              - generic [ref=e280]: Follow
+                          - generic [ref=e281]:
+                            - text: Director,
+                            - link "@GoogleCloud" [ref=e284]:
+                              - /url: /GoogleCloud
+                            - text: AI. Gemini
+                            - img "✨" [ref=e285]
+                            - text: "Agents. Prev: Eng. leader,"
+                            - link "@GoogleChrome" [ref=e288]:
+                              - /url: /GoogleChrome
+                            - text: • Author • Great user, developer & AI experiences •
+                            - link "@GoogleAI" [ref=e291]:
+                              - /url: /GoogleAI
+                            - link "@GoogleDeepMind" [ref=e294]:
+                              - /url: /GoogleDeepMind
+                - region "Trending now" [ref=e296]:
+                  - heading "Trending now" [level=1] [ref=e297]
+                  - 'generic "Timeline: Trending now" [ref=e298]':
+                    - generic [ref=e299]:
+                      - heading "What’s happening" [level=2] [ref=e303]:
+                        - generic [ref=e304]: What’s happening
+                      - 'link "Trending in United States #NBAFinals Trending with Game 4, Mike Brown" [ref=e307] [cursor=pointer]':
+                        - generic [ref=e308]:
+                          - generic [ref=e310]: Trending in United States
+                          - generic [ref=e312]: "#NBAFinals"
+                          - generic [ref=e313]:
+                            - text: Trending with
+                            - link "Game 4" [ref=e314]:
+                              - /url: /search?q=Game%204&src=trend_click&vertical=trends
+                            - text: ","
+                            - link "Mike Brown" [ref=e315]:
+                              - /url: /search?q=Mike%20Brown&src=trend_click&vertical=trends
+                      - link "Sports · Trending Brunson Trending with Adam Silver, Chuck" [ref=e318] [cursor=pointer]:
+                        - generic [ref=e319]:
+                          - generic [ref=e321]: Sports · Trending
+                          - generic [ref=e322]: Brunson
+                          - generic [ref=e323]:
+                            - text: Trending with
+                            - link "Adam Silver" [ref=e324]:
+                              - /url: /search?q=Adam%20Silver&src=trend_click&vertical=trends
+                            - text: ","
+                            - link "Chuck" [ref=e325]:
+                              - /url: /search?q=Chuck&src=trend_click&vertical=trends
+                      - link "Sports · Trending Keldon Johnson Trending with Mitch Johnson" [ref=e328] [cursor=pointer]:
+                        - generic [ref=e329]:
+                          - generic [ref=e331]: Sports · Trending
+                          - generic [ref=e332]: Keldon Johnson
+                          - generic [ref=e333]:
+                            - text: Trending with
+                            - link "Mitch Johnson" [ref=e334]:
+                              - /url: /search?q=Mitch%20Johnson&src=trend_click&vertical=trends
+                      - 'link "Trending in United States #TrumpCurse" [ref=e337] [cursor=pointer]':
+                        - generic [ref=e338]:
+                          - generic [ref=e340]: Trending in United States
+                          - generic [ref=e342]: "#TrumpCurse"
+                      - link "Show more" [ref=e345] [cursor=pointer]:
+                        - /url: /explore/tabs/for-you
+                        - generic [ref=e346]: Show more
+                - navigation "Footer" [ref=e348]:
+                  - generic [ref=e349]:
+                    - link "Terms of Service" [ref=e350] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - generic [ref=e351]: "|"
+                  - generic [ref=e352]:
+                    - link "Privacy Policy" [ref=e353] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - generic [ref=e354]: "|"
+                  - generic [ref=e355]:
+                    - link "Cookie Policy" [ref=e356] [cursor=pointer]:
+                      - /url: https://support.x.com/articles/20170514
+                    - generic [ref=e357]: "|"
+                  - generic [ref=e358]:
+                    - link "Accessibility" [ref=e359] [cursor=pointer]:
+                      - /url: https://help.x.com/resources/accessibility
+                    - generic [ref=e360]: "|"
+                  - generic [ref=e361]:
+                    - link "Ads info" [ref=e362] [cursor=pointer]:
+                      - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                    - generic [ref=e363]: "|"
+                  - button "More" [ref=e364] [cursor=pointer]:
+                    - generic [ref=e365]:
+                      - text: More
+                      - img [ref=e366]
+                  - generic [ref=e369]: © 2026 X Corp.

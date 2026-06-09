@@ -1,0 +1,769 @@
+{
+  "video_number": 1,
+  "title": "两百万人转的那句话，没人会解释",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "slides": [
+    {
+      "slide_number": 1,
+      "type": "image",
+      "start_time_seconds": 0,
+      "duration_seconds": 29.952,
+      "data": {}
+    },
+    {
+      "slide_number": 2,
+      "type": "image",
+      "start_time_seconds": 29.952,
+      "duration_seconds": 39.816,
+      "data": {}
+    },
+    {
+      "slide_number": 3,
+      "type": "image",
+      "start_time_seconds": 69.768,
+      "duration_seconds": 18.864000000000004,
+      "data": {}
+    },
+    {
+      "slide_number": 4,
+      "type": "image",
+      "start_time_seconds": 88.632,
+      "duration_seconds": 44.316,
+      "data": {}
+    },
+    {
+      "slide_number": 5,
+      "type": "image",
+      "start_time_seconds": 132.948,
+      "duration_seconds": 38.376000000000005,
+      "data": {}
+    },
+    {
+      "slide_number": 6,
+      "type": "image",
+      "start_time_seconds": 171.324,
+      "duration_seconds": 37.18799999999999,
+      "data": {}
+    },
+    {
+      "slide_number": 7,
+      "type": "image",
+      "start_time_seconds": 208.512,
+      "duration_seconds": 39.744,
+      "data": {}
+    },
+    {
+      "slide_number": 8,
+      "type": "image",
+      "start_time_seconds": 248.256,
+      "duration_seconds": 39.56399999999999,
+      "data": {}
+    },
+    {
+      "slide_number": 9,
+      "type": "image",
+      "start_time_seconds": 287.82,
+      "duration_seconds": 29.915999999999997,
+      "data": {}
+    },
+    {
+      "slide_number": 10,
+      "type": "image",
+      "start_time_seconds": 317.736,
+      "duration_seconds": 78.58800000000002,
+      "data": {}
+    },
+    {
+      "slide_number": 11,
+      "type": "image",
+      "start_time_seconds": 396.324,
+      "duration_seconds": 53.20799999999997,
+      "data": {}
+    },
+    {
+      "slide_number": 12,
+      "type": "image",
+      "start_time_seconds": 449.532,
+      "duration_seconds": 65.69999999999999,
+      "data": {}
+    },
+    {
+      "slide_number": 13,
+      "type": "image",
+      "start_time_seconds": 515.232,
+      "duration_seconds": 58.355999999999995,
+      "data": {}
+    },
+    {
+      "slide_number": 14,
+      "type": "image",
+      "start_time_seconds": 573.588,
+      "duration_seconds": 42.80400000000009,
+      "data": {}
+    },
+    {
+      "slide_number": 15,
+      "type": "image",
+      "start_time_seconds": 616.392,
+      "duration_seconds": 37.65599999999995,
+      "data": {}
+    },
+    {
+      "slide_number": 16,
+      "type": "image",
+      "start_time_seconds": 654.048,
+      "duration_seconds": 59.29200000000003,
+      "data": {}
+    },
+    {
+      "slide_number": 17,
+      "type": "image",
+      "start_time_seconds": 713.34,
+      "duration_seconds": 25.62010884353731,
+      "data": {}
+    },
+    {
+      "slide_number": 18,
+      "type": "cta",
+      "start_time_seconds": 738.9601088435373,
+      "duration_seconds": 5,
+      "data": {
+        "type": "cta"
+      }
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0,
+      "end": 7.805,
+      "text": "这周你的时间线大概率被同一句话刷屏了——\"别再 prompt agent 了，去设计 prompt agent 的 loop\"。"
+    },
+    {
+      "start": 7.805,
+      "end": 11.707,
+      "text": "Peter Steinberger 发的，单条 220 万阅读。"
+    },
+    {
+      "start": 11.844,
+      "end": 19.698,
+      "text": "底下追问\"那这玩意儿实战长什么样\"的回复，被一句话压成了表情包——\"除了他和 Boris，没人知道。"
+    },
+    {
+      "start": 19.698,
+      "end": 24.41,
+      "text": "\" Matt Van Horn 这周做的事就是把这句话拆开。"
+    },
+    {
+      "start": 24.552,
+      "end": 29.781,
+      "text": "今天只聊一件事——为什么两百万人转的口号，没人会解释。"
+    },
+    {
+      "start": 29.952,
+      "end": 34.753,
+      "text": "这条 tweet 我在 timeline 上至少看到了三十次。"
+    },
+    {
+      "start": 34.753,
+      "end": 37.231,
+      "text": "每个转的人都像在传递一个新共识。"
+    },
+    {
+      "start": 37.231,
+      "end": 40.173,
+      "text": "但只要你点进底下的回复区，立刻就崩了。"
+    },
+    {
+      "start": 40.32,
+      "end": 45.32,
+      "text": "Varadh Jain 问了一个最朴素的问题——\"那这个东西在实战里到底长什么样？"
+    },
+    {
+      "start": 45.32,
+      "end": 51.538,
+      "text": "\" 最高赞的回答只有六个字，原话是 \"nobody knows but him and boris\"。"
+    },
+    {
+      "start": 51.538,
+      "end": 56.172,
+      "text": "除了 Steinberger 自己和 Boris Cherny，没人能说清。"
+    },
+    {
+      "start": 56.34,
+      "end": 60.16,
+      "text": "这就是这周 AI Twitter 的真实状态。"
+    },
+    {
+      "start": 60.16,
+      "end": 62.983,
+      "text": "讨论的体量和理解的清晰度严重脱钩。"
+    },
+    {
+      "start": 62.983,
+      "end": 69.626,
+      "text": "两百万人转一句话，不是因为他们懂了，是因为转这条话本身是一种身份——我在最前沿。"
+    },
+    {
+      "start": 69.768,
+      "end": 75.671,
+      "text": "Boris Cherny 是 Claude Code 的作者，Anthropic 的 MTS。"
+    },
+    {
+      "start": 75.671,
+      "end": 79.439,
+      "text": "他和 Steinberger 是讨论里被默认\"懂的那一边\"。"
+    },
+    {
+      "start": 79.439,
+      "end": 83.96,
+      "text": "但他们说的 loop，和底下转发的人理解的 loop，根本不在一个层上。"
+    },
+    {
+      "start": 84.096,
+      "end": 88.466,
+      "text": "要把这件事讲清，得先把 loop 这个词的家谱摊开。"
+    },
+    {
+      "start": 88.632,
+      "end": 93.406,
+      "text": "我把这周看到的所有讨论按时间顺序排了一下，整理出五层。"
+    },
+    {
+      "start": 93.406,
+      "end": 96.589,
+      "text": "听完你就知道吵架的人各自站在哪一层。"
+    },
+    {
+      "start": 96.732,
+      "end": 100.358,
+      "text": "第一层是 2022 年的 ReAct 论文。"
+    },
+    {
+      "start": 100.358,
+      "end": 106.621,
+      "text": "学术界的 while 循环——模型推理一下、调一个工具、读一下结果、再推理。"
+    },
+    {
+      "start": 106.621,
+      "end": 109.917,
+      "text": "一个模型、一个 loop，人在旁边盯着。"
+    },
+    {
+      "start": 109.917,
+      "end": 113.049,
+      "text": "这是 loop 这个词最早的技术含义。"
+    },
+    {
+      "start": 113.22,
+      "end": 116.629,
+      "text": "第二层是 2023 年的 AutoGPT。"
+    },
+    {
+      "start": 116.629,
+      "end": 122.797,
+      "text": "第一次让 agent 自驱循环——给它一个目标，它自己 prompt 自己。"
+    },
+    {
+      "start": 122.797,
+      "end": 127.667,
+      "text": "这个版本最有名的不是它能干什么，是它经常陷在死循环里干不动。"
+    },
+    {
+      "start": 127.836,
+      "end": 132.81,
+      "text": "整整两年人们说\"agent 是玩具\"，根源就在这次失败。"
+    },
+    {
+      "start": 132.948,
+      "end": 137.716,
+      "text": "第三层是 2025 年 7 月 Geoffrey Huntley 那篇 ralph。"
+    },
+    {
+      "start": 137.716,
+      "end": 143.506,
+      "text": "他的发明朴素到让人尴尬——一行 bash 把同一个 prompt 文件反复 pipe 给 agent。"
+    },
+    {
+      "start": 143.676,
+      "end": 151.086,
+      "text": "但真正的新东西是纪律——每一轮迭代都把上下文重置回固定的几个锚点文件，不让对话越长越脏。"
+    },
+    {
+      "start": 151.086,
+      "end": 157.821,
+      "text": "Huntley 用这个 loop 花了不到 300 美元，搭出了一整门编程语言。"
+    },
+    {
+      "start": 157.968,
+      "end": 160.093,
+      "text": "第四层是 2026 年春天。"
+    },
+    {
+      "start": 160.093,
+      "end": 171.173,
+      "text": "Codex 和 Claude Code 几乎同时上线了 /goal 命令——把 ralph 那套自驱循环产品化，加了一个小验证模型判断\"完成没\"。"
+    },
+    {
+      "start": 171.324,
+      "end": 176.207,
+      "text": "第五层就是 Steinberger 和 Boris 现在说的那个 loop。"
+    },
+    {
+      "start": 176.207,
+      "end": 177.621,
+      "text": "它真的新，不只是改名。"
+    },
+    {
+      "start": 177.768,
+      "end": 178.807,
+      "text": "四件事变了。"
+    },
+    {
+      "start": 178.807,
+      "end": 182.442,
+      "text": "Loop 自己变成了工作单元，不再是任务。"
+    },
+    {
+      "start": 182.442,
+      "end": 187.115,
+      "text": "Loop 开始监督其它 loop，并发地、按调度地跑。"
+    },
+    {
+      "start": 187.115,
+      "end": 194.212,
+      "text": "人类启动这个动作被调度器替代了——loop 不再等你按回车，它在基础设施时间里跑。"
+    },
+    {
+      "start": 194.364,
+      "end": 203.854,
+      "text": "最后一件——状态变得 durable，存进 git，崩了能恢复，因为这种 loop 默认你的笔电是关着的。"
+    },
+    {
+      "start": 204.012,
+      "end": 208.347,
+      "text": "Ralph 假设终端开着，2026 版假设终端关着。"
+    },
+    {
+      "start": 208.512,
+      "end": 219.145,
+      "text": "所以那条最接近正确答案的回复，是一个 ID 叫 Trash Panda 的人写的——\"这不是 ralph 或 /goal 的 loop，那已经老掉牙了。"
+    },
+    {
+      "start": 219.145,
+      "end": 223.203,
+      "text": "这是某种持续编排的循环，去监督别的线程和别的 agent。"
+    },
+    {
+      "start": 223.203,
+      "end": 223.342,
+      "text": "\""
+    },
+    {
+      "start": 223.488,
+      "end": 232.467,
+      "text": "他一句话点穿了——单 agent 的 ralph 是老东西，多 agent 互相监督的编排 loop 才是新的那层。"
+    },
+    {
+      "start": 232.632,
+      "end": 238.148,
+      "text": "Boris 自己在 6 月 2 号 WorkOS 的活动上，给过 loop 一个干净的定义。"
+    },
+    {
+      "start": 238.148,
+      "end": 245.703,
+      "text": "他说他现在不再 prompt Claude 了，他写 loop，那些 loop 在 prompt Claude，决定要做什么。"
+    },
+    {
+      "start": 245.703,
+      "end": 247.981,
+      "text": "他原话是——\"我的工作是写 loop。"
+    },
+    {
+      "start": 247.981,
+      "end": 248.101,
+      "text": "\""
+    },
+    {
+      "start": 248.256,
+      "end": 251.758,
+      "text": "这句话听起来像炫技，但他给了一个让人没法反驳的收据。"
+    },
+    {
+      "start": 251.758,
+      "end": 258.895,
+      "text": "过去三十天，他对 Claude Code 这个项目的贡献，100% 是 Claude Code 自己写的。"
+    },
+    {
+      "start": 258.895,
+      "end": 261.589,
+      "text": "他本人 land 了 259 个 PR。"
+    },
+    {
+      "start": 261.756,
+      "end": 266.509,
+      "text": "他在 2025 年 11 月就删掉了 IDE，再没打开过。"
+    },
+    {
+      "start": 266.652,
+      "end": 276.061,
+      "text": "他描述的状态是这样的——几百个 agent 在背后读他的 GitHub、他的 Slack、他的 Twitter，自己决定下一步要构建什么。"
+    },
+    {
+      "start": 276.228,
+      "end": 285.39,
+      "text": "我个人的感受是，被 timeline 普遍误读的不是\"prompt engineering 死了\"这件事——是这件事的真正分量。"
+    },
+    {
+      "start": 285.39,
+      "end": 287.68,
+      "text": "Boris 没有说工程师没用了。"
+    },
+    {
+      "start": 287.82,
+      "end": 297.693,
+      "text": "他明确说了相反的话——决定要造什么、跟客户聊、协调团队这些事还是要人做，而且好工程师比以往更重要。"
+    },
+    {
+      "start": 297.893,
+      "end": 307.127,
+      "text": "变化的不是工程师消失，是这份工作整体被往上抬了一格——从写代码，升到写\"写代码的那个东西\"。"
+    },
+    {
+      "start": 307.296,
+      "end": 317.599,
+      "text": "讨论区里最让我笑出声的一句吐槽只有四个字，原话是 \"Cronjobs have funny re-branding rn\"——cron 最近改名改得真热闹。"
+    },
+    {
+      "start": 317.736,
+      "end": 319.887,
+      "text": "这句话戳到了一个真问题。"
+    },
+    {
+      "start": 319.887,
+      "end": 322.756,
+      "text": "所以我想认真回它一下，不打哈哈。"
+    },
+    {
+      "start": 322.92,
+      "end": 323.929,
+      "text": "它说对了一半。"
+    },
+    {
+      "start": 323.929,
+      "end": 325.803,
+      "text": "调度那一层就是 cron。"
+    },
+    {
+      "start": 325.803,
+      "end": 329.406,
+      "text": "Boris 自己的 loop 跑在 cron 上。"
+    },
+    {
+      "start": 329.406,
+      "end": 334.163,
+      "text": "Claude Code 里的 /loop 命令底层也用 cron。"
+    },
+    {
+      "start": 334.332,
+      "end": 342.371,
+      "text": "如果你对 loop 的定义就是\"按时间跑一个东西\"，那这事我们 1975 年就发明了，可以散了。"
+    },
+    {
+      "start": 342.54,
+      "end": 346.019,
+      "text": "但 cron 从来没有的，是中间那一段。"
+    },
+    {
+      "start": 346.019,
+      "end": 348.28,
+      "text": "Cron 跑的是固定脚本。"
+    },
+    {
+      "start": 348.28,
+      "end": 357.15,
+      "text": "Loop 跑的是一个模型——它看当前状态，决定下一步做什么，做完之后判断有没有效果，再决定要不要继续。"
+    },
+    {
+      "start": 357.3,
+      "end": 361.798,
+      "text": "决策权在模型手里，不在你预先写好的 if-else 里。"
+    },
+    {
+      "start": 361.944,
+      "end": 372.885,
+      "text": "把这一层抠出来再叠加——一个 loop 调度并监督其它 loop，所有 loop 共享一份持久化的状态——这就是 cron 表达不了的东西了。"
+    },
+    {
+      "start": 373.032,
+      "end": 378.978,
+      "text": "最诚实的描述不是\"loop 是新魔法\"，也不是\"loop 是 cron 重命名\"。"
+    },
+    {
+      "start": 378.978,
+      "end": 383.764,
+      "text": "准确的说法是——loop 等于 cron 加上一个会做决定的脑子。"
+    },
+    {
+      "start": 383.964,
+      "end": 391.155,
+      "text": "所有真正有意思的工程，都在这个脑子周围搭——怎么让它别跑飞、跑偏、跑死。"
+    },
+    {
+      "start": 391.32,
+      "end": 394.421,
+      "text": "讲到这你可能在想，那我怎么开始。"
+    },
+    {
+      "start": 394.421,
+      "end": 396.166,
+      "text": "其实入口只有一行。"
+    },
+    {
+      "start": 396.324,
+      "end": 406.464,
+      "text": "Claude Code 的 /loop 命令已经上线，Boris 自己给的起手式可以直接抄过来改名词——\"/loop babysit all my PRs."
+    },
+    {
+      "start": 406.62,
+      "end": 421.149,
+      "text": "Auto-fix build issues, and when comments come in, use a worktree agent to fix them.\" 翻译过来就是——盯住我所有的 PR，构建挂了自动修，有评论进来用 worktree agent 处理掉。"
+    },
+    {
+      "start": 421.308,
+      "end": 426.583,
+      "text": "Boris 几天后又发了五条让 Opus 自驱跑几小时甚至几天的 tip。"
+    },
+    {
+      "start": 426.783,
+      "end": 441.904,
+      "text": "前四条都是工程化标配——权限开 auto 别老来问、用 dynamic workflow 编排成百上千个子 agent、用 /goal 或 /loop 推它跑到完成、把任务挪到云上跑可以关笔电。"
+    },
+    {
+      "start": 442.044,
+      "end": 449.363,
+      "text": "但真正决定能不能信任这个 loop 的，是第五条——Claude 必须有办法端到端验证自己的工作。"
+    },
+    {
+      "start": 449.532,
+      "end": 453.576,
+      "text": "这一条 hype 跳过去了，实战的人盯死了。"
+    },
+    {
+      "start": 453.576,
+      "end": 462.4,
+      "text": "一个写完代码但没办法判断自己写对没的 loop，本质就是一台高速生产\"看起来自信的错误\"的机器。"
+    },
+    {
+      "start": 462.564,
+      "end": 475.003,
+      "text": "Trash Panda 提到的那种持续编排的真实样子，1 月份 Steve Yegge 已经开源出来了，叫 Gas Town——20 到 30 个 Claude Code 实例由一个 Mayor agent 协调，"
+    },
+    {
+      "start": 475.203,
+      "end": 480.13,
+      "text": "巡逻 agent 跑持续 loop，状态全存进 git，崩了能恢复。"
+    },
+    {
+      "start": 480.276,
+      "end": 484.5,
+      "text": "而所有人更焦虑的另一面，是有人在做 commit 级的验证。"
+    },
+    {
+      "start": 484.5,
+      "end": 496.047,
+      "text": "一个叫 DanKornas 的开发者在做一个工具叫 roborev，后台对每个 commit 自动 review，把发现回喂给 agent，趁上下文还热的时候纠正。"
+    },
+    {
+      "start": 496.188,
+      "end": 506.061,
+      "text": "我自己看完这一层的体会是——loop 这种范式真正的天花板，从来不在它跑得多快，在它能不能信任自己的输出。"
+    },
+    {
+      "start": 506.232,
+      "end": 515.083,
+      "text": "讨论里最锋利的一句反讽，来自一个完全没有名气的工程师，ID 叫 rohit_jsfreaky。"
+    },
+    {
+      "start": 515.232,
+      "end": 526.306,
+      "text": "他说——\"我今年 ship 的每一个所谓 AI agent，都是一个 for 循环、一次 LLM 调用、加一段 try/catch 包住 JSON 解析。"
+    },
+    {
+      "start": 526.306,
+      "end": 531.196,
+      "text": "它唯一'agent'的地方，是月底那张 Anthropic 的账单。"
+    },
+    {
+      "start": 531.196,
+      "end": 531.34,
+      "text": "\""
+    },
+    {
+      "start": 531.504,
+      "end": 533.795,
+      "text": "这条话刺心的地方在于它不是段子。"
+    },
+    {
+      "start": 533.795,
+      "end": 545.394,
+      "text": "这周最具体的一张账单——Uber 给每位工程师 Claude Code 和 Cursor 各设了 1500 美元每月上限，原因是四个月就烧光了全年的 AI 预算。"
+    },
+    {
+      "start": 545.544,
+      "end": 550.189,
+      "text": "当模型几乎免费写代码的时候，钱就转移到跑 loop 的那一层。"
+    },
+    {
+      "start": 550.189,
+      "end": 559.331,
+      "text": "另一个 ID 叫 runes_leo 直接定性——\"AI 编程里最贵的事，已经不再是写代码，是管理 agent loop。"
+    },
+    {
+      "start": 559.331,
+      "end": 559.48,
+      "text": "\""
+    },
+    {
+      "start": 559.62,
+      "end": 565.661,
+      "text": "而 loop 在生产里最让人恐惧的失败模式，根本不是写错——是不会停。"
+    },
+    {
+      "start": 565.661,
+      "end": 573.256,
+      "text": "一个叫 cv_usk 的人说——\"没有护栏，你会拿到无限循环和比预算高一个数量级的账单。"
+    },
+    {
+      "start": 573.256,
+      "end": 573.429,
+      "text": "\""
+    },
+    {
+      "start": 573.588,
+      "end": 584.367,
+      "text": "所以这周我看到的所有严肃 loop 文章，全部收敛到同一组三件套护栏——最大迭代数、no-progress 检测、token 或者美元的预算上限。"
+    },
+    {
+      "start": 584.532,
+      "end": 591.809,
+      "text": "Loop 浪漫版的故事是——你写 loop，几千个 agent 一夜之间把你的公司搭出来。"
+    },
+    {
+      "start": 591.809,
+      "end": 597.307,
+      "text": "生产版的故事是——你写 loop，然后你大部分时间在确保它能停下来。"
+    },
+    {
+      "start": 597.456,
+      "end": 603.929,
+      "text": "Gartner 现在把 agentic AI 放在炒作峰值，真正部署的组织只有 17%。"
+    },
+    {
+      "start": 603.929,
+      "end": 608.49,
+      "text": "Timeline 上的喧闹和账本上的收据之间，有一道很大的缝。"
+    },
+    {
+      "start": 608.652,
+      "end": 616.226,
+      "text": "Matt 看完这一周之后，给了一个我觉得是整条讨论里唯一一个把 Steinberger 和 Boris 缝起来的判断。"
+    },
+    {
+      "start": 616.392,
+      "end": 617.572,
+      "text": "Loop 是水管。"
+    },
+    {
+      "start": 617.572,
+      "end": 620.982,
+      "text": "真正的资产，是 loop 里调用的那个 skill。"
+    },
+    {
+      "start": 621.144,
+      "end": 637.077,
+      "text": "Steinberger 那条 tweet 火，但他另一条没那么火、更耐用的主张是——任何你做超过一次的事，把它变成自动化的 skill；任何你做过的难事，事后写成 skill，下次就免费。"
+    },
+    {
+      "start": 637.236,
+      "end": 647.828,
+      "text": "一个 loop 里头如果没有可复用的 skill，本质上就是一个 while-true 套着一个陌生人——每轮你都让一个完全没记忆的实习生从头来一遍。"
+    },
+    {
+      "start": 647.828,
+      "end": 653.901,
+      "text": "一个 loop 调用一组被命名、被测试、被反复打磨过的 skill，才是会复利的系统。"
+    },
+    {
+      "start": 654.048,
+      "end": 662.35,
+      "text": "Reddit 上 r/ChatGPTCoding 一个用户写得最准——\"很多人在 Twitter 上翻白眼，但我耳朵立起来了。"
+    },
+    {
+      "start": 662.35,
+      "end": 662.481,
+      "text": "\""
+    },
+    {
+      "start": 662.652,
+      "end": 670.249,
+      "text": "WTF is a loop 这个问题的真正答案，不是关于 prompt engineering 死活的热门 take。"
+    },
+    {
+      "start": 670.249,
+      "end": 673.21,
+      "text": "是这样的——别再做那个待在 loop 里的人。"
+    },
+    {
+      "start": 673.38,
+      "end": 685.517,
+      "text": "Loop 写一次，给它能调的 skill、给它能自检的反馈、给它能停下来的上限，让它跑在 cron 上，你去想下一步要造什么。"
+    },
+    {
+      "start": 685.656,
+      "end": 693.073,
+      "text": "Steinberger 和 Boris 在说同一个东西的两面——一边强调外壳，一边强调装填物。"
+    },
+    {
+      "start": 693.073,
+      "end": 695.283,
+      "text": "真懂的人是已经搭过一个的人。"
+    },
+    {
+      "start": 695.283,
+      "end": 699.07,
+      "text": "而本月起，搭它的入口，是一个 slash 命令。"
+    },
+    {
+      "start": 699.228,
+      "end": 713.199,
+      "text": "我把这周的几条线压成一句话——loop 不是新词，是被嵌套了五层的旧词；新一层的实质朴素到讽刺，cron 加一个会做决定的脑子，配上让它停下来的护栏。"
+    },
+    {
+      "start": 713.34,
+      "end": 722.029,
+      "text": "两百万人转那句口号，是因为转它本身就是入场券——而真去搭过的人，已经在为 skill 写第二个版本了。"
+    },
+    {
+      "start": 722.196,
+      "end": 729.697,
+      "text": "入口便宜得像玩笑——一行 /loop，加一组你认真写过的 skill，加三件套护栏。"
+    },
+    {
+      "start": 729.697,
+      "end": 732.197,
+      "text": "剩下的事情交给基础设施时间。"
+    },
+    {
+      "start": 732.348,
+      "end": 736.505,
+      "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+    },
+    {
+      "start": 736.505,
+      "end": 737.96,
+      "text": "我们下期再见。"
+    }
+  ]
+}

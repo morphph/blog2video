@@ -9,3 +9,8 @@ cookies/
 .DS_Store
 **/repo/
 queue/
+# blog2video-content CLI-owned task ledger + derived review/package artifacts
+**/.b2v-task.json
+**/review_packet.json
+**/review_packet.md
+**/package_manifest.json

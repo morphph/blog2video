@@ -4,6 +4,8 @@
   "description": "Blog2Video auto-publish system for Xiaohongshu & Weixin Channels",
   "scripts": {
     "build": "tsc",
+    "b2v": "node blog2video-content/cli.mjs",
+    "b2v:smoke": "bash blog2video-content/smoke.sh",
     "scheduler": "node dist/scheduler.js",
     "login:xhs": "node dist/cookie-manager.js xiaohongshu",
     "login:weixin": "node dist/cookie-manager.js weixin",

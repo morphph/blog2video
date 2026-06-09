@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+// Thin launcher so Hermes can call a stable path:
+//   bin/blog2video-content <verb> [--flags]
+import("../blog2video-content/cli.mjs");

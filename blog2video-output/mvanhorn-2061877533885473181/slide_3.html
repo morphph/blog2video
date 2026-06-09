@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 60px;
+      letter-spacing: -0.5px;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      text-align: left;
+    }
+    .icon {
+      font-size: 36px;
+      font-weight: 900;
+      color: #F59E0B;
+      background: rgba(245, 158, 11, 0.12);
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: 'SF Mono', monospace;
+    }
+    .item-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    .item-text .code {
+      color: #F59E0B;
+      font-family: 'SF Mono', 'Courier New', monospace;
+      font-weight: 700;
+    }
+    .flip {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(239, 68, 68, 0.12));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 16px;
+      padding: 32px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .flip-side {
+      flex: 1;
+      text-align: center;
+    }
+    .flip-label {
+      font-size: 18px;
+      color: #6B7280;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .flip-num {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .flip-num.code { color: #6B7280; }
+    .flip-num.plan { color: #8B5CF6; }
+    .flip-sub {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-top: 8px;
+    }
+    .arrow {
+      font-size: 48px;
+      color: #F59E0B;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">不读 Plan · 怎么知道方向对</div>
+    <div class="title">两句话替代<br>逐行审 markdown</div>
+    <div class="list">
+      <div class="item">
+        <div class="icon">?</div>
+        <div class="item-text">"等等，为什么用<span class="code">这个</span>方案？"</div>
+      </div>
+      <div class="item">
+        <div class="icon">!</div>
+        <div class="item-text"><span class="code">eli5</span> this plan</div>
+      </div>
+    </div>
+    <div class="flip">
+      <div class="flip-side">
+        <div class="flip-label">过去</div>
+        <div class="flip-num code">80%</div>
+        <div class="flip-sub">写代码</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="flip-side">
+        <div class="flip-label">现在</div>
+        <div class="flip-num plan">80%</div>
+        <div class="flip-sub">灌进 plan</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

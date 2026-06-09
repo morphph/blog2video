@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+      letter-spacing: -0.5px;
+    }
+    .title .key { color: #F59E0B; }
+    .main-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 40px 36px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 36px;
+    }
+    .quote-mark {
+      font-size: 80px;
+      color: #8B5CF6;
+      line-height: 0.5;
+      margin-bottom: 10px;
+    }
+    .quote-text {
+      font-size: 38px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .quote-author {
+      font-size: 22px;
+      color: #6B7280;
+      margin-top: 16px;
+      letter-spacing: 1px;
+    }
+    .row {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+    }
+    .small-card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .small-card.red { border-left: 4px solid #EF4444; }
+    .small-card.green { border-left: 4px solid #10B981; }
+    .small-card-head {
+      font-size: 22px;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .red .small-card-head { color: #EF4444; }
+    .green .small-card-head { color: #10B981; }
+    .small-card-body {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">第 1 招 · 反直觉</div>
+    <div class="title">Plan 是给 <span class="key">Agent</span> 的牢笼<br>不是给你的备忘录</div>
+    <div class="main-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">plan 是给 Agent 的作业<br>不是给你的</div>
+      <div class="quote-author">— Matt Van Horn</div>
+    </div>
+    <div class="row">
+      <div class="small-card red">
+        <div class="small-card-head">没 Plan 的 Agent</div>
+        <div class="small-card-body">偷工减料<br>提前收工</div>
+      </div>
+      <div class="small-card green">
+        <div class="small-card-head">有 Plan 的 Agent</div>
+        <div class="small-card-body">承诺方案<br>机械命中</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.12) 0%, rgba(13, 13, 26, 0) 65%);
+      z-index: 0;
+    }
+    .tag {
+      position: relative;
+      z-index: 1;
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+    .title {
+      position: relative;
+      z-index: 1;
+      font-size: 84px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 80px;
+      letter-spacing: -1px;
+    }
+    .amber { color: #F59E0B; }
+    .red { color: #EF4444; }
+    .cards {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 36px;
+      text-align: left;
+    }
+    .card.warn { border-left-color: #EF4444; }
+    .card-label {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .card.warn .card-label { color: #EF4444; }
+    .card-text {
+      font-size: 36px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="tag">精读AI · Agentic Engineering</div>
+    <div class="title">
+      <span class="amber">22 招</span>让你一年内<br>
+      成为<span class="red">重度 Agent</span>用户
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-label">新工种</div>
+        <div class="card-text">Agentic Engineering<br>已经变成一种新工种</div>
+      </div>
+      <div class="card warn">
+        <div class="card-label">差距不在工具数</div>
+        <div class="card-text">是同时指挥 5 个 Claude<br>一起工作</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

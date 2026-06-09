@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 26px;
+      color: #F59E0B;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 44px;
+      letter-spacing: -0.5px;
+    }
+    .title .key { color: #F59E0B; }
+    .scenes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      width: 100%;
+    }
+    .scene {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 22px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .scene.tesla { border-left: 4px solid #EF4444; }
+    .scene.insta { border-left: 4px solid #10B981; }
+    .scene.espn { border-left: 4px solid #F59E0B; }
+    .scene.alaska { border-left: 4px solid #3B82F6; }
+    .scene-app {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: 'SF Mono', monospace;
+    }
+    .tesla .scene-app { color: #EF4444; }
+    .insta .scene-app { color: #10B981; }
+    .espn .scene-app { color: #F59E0B; }
+    .alaska .scene-app { color: #3B82F6; }
+    .scene-where {
+      font-size: 18px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .scene-cmd {
+      font-size: 21px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.4;
+      background: rgba(13, 13, 26, 0.6);
+      padding: 12px 14px;
+      border-radius: 8px;
+    }
+    .scene-result {
+      font-size: 19px;
+      color: #B0B0CC;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">一个真实的下午</div>
+    <div class="title">4 个 CLI<br>接管<span class="key">非编程生活</span></div>
+    <div class="scenes">
+      <div class="scene tesla">
+        <div class="scene-app">TESLA</div>
+        <div class="scene-where">出门前</div>
+        <div class="scene-cmd">"preheat to 72"</div>
+        <div class="scene-result">车提前热到 22 度</div>
+      </div>
+      <div class="scene insta">
+        <div class="scene-app">INSTACART</div>
+        <div class="scene-where">老婆一句话</div>
+        <div class="scene-cmd">"add Corona<br>to Costco"</div>
+        <div class="scene-result">直接进购物车</div>
+      </div>
+      <div class="scene espn">
+        <div class="scene-app">ESPN</div>
+        <div class="scene-where">晚上球赛</div>
+        <div class="scene-cmd">比分接近时通知</div>
+        <div class="scene-result">没主动刷一次手机</div>
+      </div>
+      <div class="scene alaska">
+        <div class="scene-app">ALASKA</div>
+        <div class="scene-where">足球场边</div>
+        <div class="scene-cmd">拉机票 + Atmos 里程<br>→ /ce-plan 订票策略</div>
+        <div class="scene-result">从足球场边订完</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

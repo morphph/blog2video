@@ -1,0 +1,682 @@
+[
+  {
+    "text": "\"Agentic Engineering\" 这套打法，最近三个月在 X 上从一个新词变成了一种新工种——一个 Agentic Engineer 和一个普通工程师的差别，不是会用多少 AI 工具，是同时能指挥 5 个 Claude 一起工作。",
+    "pronounce_text": "\"Agentic Engineering\" 这套打法，最近三个月在X上从一个新词变成了一种新工种。一个Agentic Engineer和一个普通工程师的差别，不是会用多少AI工具，是同时能指挥五个Claude一起工作。",
+    "time_begin": 0,
+    "time_end": 16235.238095238097,
+    "text_begin": 0,
+    "text_end": 120,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 109
+  },
+  {
+    "text": "Matt Van Horn 是这条线最直接的代表，3 月版 91 万阅读，6 月升级版把整套方法论又推前一步。22 招。",
+    "pronounce_text": "Matt Van Horn是这条线最直接的代表，三月版九十一万阅读，六月升级版把整套方法论又推前一步。二十二招。",
+    "time_begin": 16379.999999999998,
+    "time_end": 25707.301587301583,
+    "text_begin": 120,
+    "text_end": 180,
+    "pronounce_text_begin": 109,
+    "pronounce_text_end": 165
+  },
+  {
+    "text": "他靠这套打法这一年 ship 了 27K star 和 4K star 两个开源项目，自己说：\"高中之后我没发过任何有人在乎的软件，是这套工作流让我重新开始 ship 东西。\"",
+    "pronounce_text": "他靠这套打法这一年ship了二十七K star和四K star两个开源项目，自己说：\"高中之后我没发过任何有人在乎的软件，是这套工作流让我重新开始ship东西。\"",
+    "time_begin": 25848,
+    "time_end": 39947.0022675737,
+    "text_begin": 180,
+    "text_end": 268,
+    "pronounce_text_begin": 165,
+    "pronounce_text_end": 246
+  },
+  {
+    "text": "今天挑最反直觉的 5 招聊透。",
+    "pronounce_text": "今天挑最反直觉的五招聊透。",
+    "time_begin": 40147.0022675737,
+    "time_end": 43158.47619047619,
+    "text_begin": 268,
+    "text_end": 283,
+    "pronounce_text_begin": 246,
+    "pronounce_text_end": 259
+  },
+  {
+    "text": "先讲第一条颠覆。它颠覆了大多数人对 plan.md 的理解。",
+    "pronounce_text": "先讲第一条颠覆。它颠覆了大多数人对plan.md的理解。",
+    "time_begin": 43308,
+    "time_end": 49221.968253968254,
+    "text_begin": 283,
+    "text_end": 313,
+    "pronounce_text_begin": 259,
+    "pronounce_text_end": 287
+  },
+  {
+    "text": "大家以为 plan 是写给自己看的——理清思路、做备忘、留个记录。但他的用法完全相反。他每个新想法落地的第一个动作，就是让 Agent 写一份 plan.md，然后他几乎从来不读这个 plan。",
+    "pronounce_text": "大家以为plan是写给自己看的。理清思路、做备忘、留个记录。但他的用法完全相反。他每个新想法落地的第一个动作，就是让Agent写一份plan.md，然后他几乎从来不读这个plan。",
+    "time_begin": 49392,
+    "time_end": 66184.51700680272,
+    "text_begin": 313,
+    "text_end": 410,
+    "pronounce_text_begin": 287,
+    "pronounce_text_end": 377
+  },
+  {
+    "text": "他的原话有点扎心——\"plan 是给 Agent 的作业，不是给你的。\"",
+    "pronounce_text": "他的原话有点扎心。\"plan是给Agent的作业，不是给你的。\"",
+    "time_begin": 66348,
+    "time_end": 71193.85034013605,
+    "text_begin": 410,
+    "text_end": 446,
+    "pronounce_text_begin": 377,
+    "pronounce_text_end": 409
+  },
+  {
+    "text": "那为什么还要强迫 plan 存在？因为他观察到：有 plan 的 Agent 交出的是成品，没 plan 的 Agent 偷工减料、提前收工。Plan 这个动作逼着 Agent 承诺一种方案、把验收标准写清楚、然后机械地命中。",
+    "pronounce_text": "那为什么还要强迫plan存在？因为他观察到：有plan的Agent交出的是成品，没plan的Agent偷工减料、提前收工。Plan这个动作逼着Agent承诺一种方案、把验收标准写清楚、然后机械地命中。",
+    "time_begin": 71352,
+    "time_end": 87761.38775510204,
+    "text_begin": 446,
+    "text_end": 559,
+    "pronounce_text_begin": 409,
+    "pronounce_text_end": 509
+  },
+  {
+    "text": "所以 plan 的真正作用是约束 Agent 的牢笼，不是给人类阅读的文档。",
+    "pronounce_text": "所以plan的真正作用是约束Agent的牢笼，不是给人类阅读的文档。",
+    "time_begin": 87912,
+    "time_end": 93349.95918367346,
+    "text_begin": 559,
+    "text_end": 597,
+    "pronounce_text_begin": 509,
+    "pronounce_text_end": 543
+  },
+  {
+    "text": "那如果他不读，怎么知道方向对？两个动作——遇到不放心的地方，直接在会话里追问一句\"等等，为什么用这个方案？\"或者一句\"eli5 this plan\"，让 Agent 用一段话把整个 plan 解释清楚。",
+    "pronounce_text": "那如果他不读，怎么知道方向对？两个动作。遇到不放心的地方，直接在会话里追问一句\"等等，为什么用这个方案？\"或者一句\"eli五this plan\"，让Agent用一段话把整个plan解释清楚。",
+    "time_begin": 93492,
+    "time_end": 110458.66666666667,
+    "text_begin": 597,
+    "text_end": 698,
+    "pronounce_text_begin": 543,
+    "pronounce_text_end": 638
+  },
+  {
+    "text": "他不会去逐行读三百行 markdown。",
+    "pronounce_text": "他不会去逐行读三百行markdown。",
+    "time_begin": 110628,
+    "time_end": 113256.34467120182,
+    "text_begin": 698,
+    "text_end": 718,
+    "pronounce_text_begin": 638,
+    "pronounce_text_end": 657
+  },
+  {
+    "text": "这一个观念翻转，把传统开发的 80 比 20 彻底倒过来了。过去是 80% 写代码、20% 想，现在是 80% 都灌到 plan 里，写代码这个动作变成机械执行。",
+    "pronounce_text": "这一个观念翻转，把传统开发的八十比二十彻底倒过来了。过去是百分之八十写代码、百分之二十想，现在是百分之八十都灌到plan里，写代码这个动作变成机械执行。",
+    "time_begin": 113400,
+    "time_end": 127243.58276643991,
+    "text_begin": 718,
+    "text_end": 799,
+    "pronounce_text_begin": 657,
+    "pronounce_text_end": 733
+  },
+  {
+    "text": "他还把这套 plan 流程用到了非编程工作上。文章里举了一个具体例子。",
+    "pronounce_text": "他还把这套plan流程用到了非编程工作上。文章里举了一个具体例子。",
+    "time_begin": 127404,
+    "time_end": 133701.09750566893,
+    "text_begin": 799,
+    "text_end": 834,
+    "pronounce_text_begin": 733,
+    "pronounce_text_end": 766
+  },
+  {
+    "text": "他跟一位前 Google Ventures 的研究合伙人见面聊一个商业难题，对方让他读自己写的一本书，免费 PDF。换成以前，他会随便翻翻就过去。",
+    "pronounce_text": "他跟一位前Google Ventures的研究合伙人见面聊一个商业难题，对方让他读自己写的一本书，免费PDF。换成以前，他会随便翻翻就过去。",
+    "time_begin": 133901.09750566893,
+    "time_end": 146467.5827664399,
+    "text_begin": 834,
+    "text_end": 907,
+    "pronounce_text_begin": 766,
+    "pronounce_text_end": 836
+  },
+  {
+    "text": "这次他把那本 PDF 加上两个小时的会议转录都丢给 Agent，对它说：",
+    "pronounce_text": "这次他把那本PDF加上两个小时的会议转录都丢给Agent，对它说：",
+    "time_begin": 146628,
+    "time_end": 151682.82993197278,
+    "text_begin": 907,
+    "text_end": 943,
+    "pronounce_text_begin": 836,
+    "pronounce_text_end": 869
+  },
+  {
+    "text": "\"帮我做一个 plan，规划你打算怎么读这本书、怎么挖这份转录、最后怎么产出一份我能用的文档。先不要写文档，写文档是后面的工作，现在只要一份'怎么写文档的 plan'。\"",
+    "pronounce_text": "\"帮我做一个plan，规划你打算怎么读这本书、怎么挖这份转录、最后怎么产出一份我能用的文档。先不要写文档，写文档是后面的工作，现在只要一份'怎么写文档的plan'。\"",
+    "time_begin": 151848,
+    "time_end": 167235.7097505669,
+    "text_begin": 943,
+    "text_end": 1028,
+    "pronounce_text_begin": 869,
+    "pronounce_text_end": 952
+  },
+  {
+    "text": "Agent 花了 45 分钟做出了一份他形容为\"史诗级\"的 plan。",
+    "pronounce_text": "Agent花了四十五分钟做出了一份他形容为\"史诗级\"的plan。",
+    "time_begin": 167400,
+    "time_end": 172199.410430839,
+    "text_begin": 1028,
+    "text_end": 1063,
+    "pronounce_text_begin": 952,
+    "pronounce_text_end": 984
+  },
+  {
+    "text": "他说这是让 LLM 不偷懒的最佳技巧——直接问交付物它会偷工减料，但你让它先 plan 出一个生产流程再执行，它每次都会跑深度版本。",
+    "pronounce_text": "他说这是让LLM不偷懒的最佳技巧。直接问交付物它会偷工减料，但你让它先plan出一个生产流程再执行，它每次都会跑深度版本。",
+    "time_begin": 172368,
+    "time_end": 184423.6462585034,
+    "text_begin": 1063,
+    "text_end": 1129,
+    "pronounce_text_begin": 984,
+    "pronounce_text_end": 1045
+  },
+  {
+    "text": "第二个反直觉点是 YOLO 模式。",
+    "pronounce_text": "第二个反直觉点是YOLO模式。",
+    "time_begin": 184572,
+    "time_end": 186944.92517006802,
+    "text_begin": 1129,
+    "text_end": 1146,
+    "pronounce_text_begin": 1045,
+    "pronounce_text_end": 1060
+  },
+  {
+    "text": "Claude Code 默认每个操作都要你点 Y 确认，单 session 这是合理的安全设计。",
+    "pronounce_text": "Claude Code默认每个操作都要你点Y确认，单session这是合理的安全设计。",
+    "time_begin": 187092,
+    "time_end": 193040.79818594104,
+    "text_begin": 1146,
+    "text_end": 1194,
+    "pronounce_text_begin": 1060,
+    "pronounce_text_end": 1103
+  },
+  {
+    "text": "但他的日常工作状态是同时开 4 到 6 个 cmux tab，每个 tab 一个独立 session——一个在写 plan，一个在 build 另一个 plan，一个在跑 last30days 做调研，还有一个在修他刚才测试时发现的 bug。",
+    "pronounce_text": "但他的日常工作状态是同时开四到六个cmux tab，每个tab一个独立session。一个在写plan，一个在build另一个plan，一个在跑last三零days做调研，还有一个在修他刚才测试时发现的bug。",
+    "time_begin": 193212,
+    "time_end": 209783.92743764172,
+    "text_begin": 1194,
+    "text_end": 1315,
+    "pronounce_text_begin": 1103,
+    "pronounce_text_end": 1208
+  },
+  {
+    "text": "6 个 session 并行的时候，你根本没办法挨个去点确认。所以他在配置文件里直接打开 bypassPermissions，永不询问。这不是任性，是这套工作流的物理前提。",
+    "pronounce_text": "六个session并行的时候，你根本没办法挨个去点确认。所以他在配置文件里直接打开bypassPermissions，永不询问。这不是任性，是这套工作流的物理前提。",
+    "time_begin": 209952,
+    "time_end": 223412.45351473923,
+    "text_begin": 1315,
+    "text_end": 1401,
+    "pronounce_text_begin": 1208,
+    "pronounce_text_end": 1290
+  },
+  {
+    "text": "但单纯打开 YOLO 还不够。失去逐一确认带来的最大问题是——你不知道哪个 session 进展到哪了。",
+    "pronounce_text": "但单纯打开YOLO还不够。失去逐一确认带来的最大问题是。你不知道哪个session进展到哪了。",
+    "time_begin": 223560,
+    "time_end": 232121.04308390024,
+    "text_begin": 1401,
+    "text_end": 1453,
+    "pronounce_text_begin": 1290,
+    "pronounce_text_end": 1337
+  },
+  {
+    "text": "所以他配了一个让我觉得整篇里最妙的补偿机制：Claude Code 有一个叫 Stop 的 hook，会在每个 session 完工的瞬间触发，他在这个 hook 上挂了一行命令——播放 Mac 系统自带的提示音 Blow.aiff。",
+    "pronounce_text": "所以他配了一个让我觉得整篇里最妙的补偿机制：Claude Code有一个叫Stop的hook，会在每个session完工的瞬间触发，他在这个hook上挂了一行命令。播放Mac系统自带的提示音Blow点ai ff。",
+    "time_begin": 232272,
+    "time_end": 249064.51700680272,
+    "text_begin": 1453,
+    "text_end": 1570,
+    "pronounce_text_begin": 1337,
+    "pronounce_text_end": 1443
+  },
+  {
+    "text": "人离开屏幕去倒咖啡，听见声音回来，就知道某一个 session 刚刚完工。原本\"逐一确认\"提供的反馈通道，被换成了一个声音通道。这才是他能在物理上并行跑 6 个 session 的真正基础。",
+    "pronounce_text": "人离开屏幕去倒咖啡，听见声音回来，就知道某一个session刚刚完工。原本\"逐一确认\"提供的反馈通道，被换成了一个声音通道。这才是他能在物理上并行跑六个session的真正基础。",
+    "time_begin": 249228,
+    "time_end": 264139.70068027213,
+    "text_begin": 1570,
+    "text_end": 1665,
+    "pronounce_text_begin": 1443,
+    "pronounce_text_end": 1532
+  },
+  {
+    "text": "他还有一个把这种\"打开 YOLO\"做到更激进的细节——他直接把终端的默认启动命令改成了 claude，而不是 zsh。开一个新 tab，直接进入 Claude Code 会话，连 cd 切目录的步骤都省了。",
+    "pronounce_text": "他还有一个把这种\"打开YOLO\"做到更激进的细节。他直接把终端的默认启动命令改成了claude，而不是zsh。开一个新tab，直接进入Claude Code会话，连cd切目录的步骤都省了。",
+    "time_begin": 264276,
+    "time_end": 279570.8299319728,
+    "text_begin": 1665,
+    "text_end": 1768,
+    "pronounce_text_begin": 1532,
+    "pronounce_text_end": 1626
+  },
+  {
+    "text": "他的原话很有意思：\"开一个新 session 的成本变成一个按键的时候，你会启动远多于之前的 session。\"",
+    "pronounce_text": "他的原话很有意思：\"开一个新session的成本变成一个按键的时候，你会启动远多于之前的session。\"",
+    "time_begin": 279720,
+    "time_end": 287630.8843537415,
+    "text_begin": 1768,
+    "text_end": 1824,
+    "pronounce_text_begin": 1626,
+    "pronounce_text_end": 1679
+  },
+  {
+    "text": "还有一个值得一提的细节——他帮一个朋友配置 Claude Code 打开 YOLO 的时候，Agent 自己主动劝朋友别开。他说：\"你得对它强硬一点。\"",
+    "pronounce_text": "还有一个值得一提的细节。他帮一个朋友配置Claude Code打开YOLO的时候，Agent自己主动劝朋友别开。他说：\"你得对它强硬一点。\"",
+    "time_begin": 287784,
+    "time_end": 298690.25850340136,
+    "text_begin": 1824,
+    "text_end": 1900,
+    "pronounce_text_begin": 1679,
+    "pronounce_text_end": 1749
+  },
+  {
+    "text": "第三条非常反直觉，是关于 Codex 的。",
+    "pronounce_text": "第三条非常反直觉，是关于Codex的。",
+    "time_begin": 298836,
+    "time_end": 302695.00226757367,
+    "text_begin": 1900,
+    "text_end": 1921,
+    "pronounce_text_begin": 1749,
+    "pronounce_text_end": 1768
+  },
+  {
+    "text": "他每天有大量代码是 Codex 在写，但他几乎从来不打开 Codex 的命令行。表面上看，Claude Code 和 Codex 都是编程 Agent，订阅两套像是浪费钱。",
+    "pronounce_text": "他每天有大量代码是Codex在写，但他几乎从来不打开Codex的命令行。表面上看，Claude Code和Codex都是编程Agent，订阅两套像是浪费钱。",
+    "time_begin": 302832,
+    "time_end": 314202.6575963719,
+    "text_begin": 1921,
+    "text_end": 2007,
+    "pronounce_text_begin": 1768,
+    "pronounce_text_end": 1846
+  },
+  {
+    "text": "他的视角不一样——他订阅了两个 200 美元的月度 plan，Claude Code Max 一个，Codex Max 一个。他说这是字面意义上的\"第二台引擎\"。",
+    "pronounce_text": "他的视角不一样。他订阅了两个两百美元的月度plan，Claude Code Max一个，Codex Max一个。他说这是字面意义上的\"第二台引擎\"。",
+    "time_begin": 314352,
+    "time_end": 325803.9274376417,
+    "text_begin": 2007,
+    "text_end": 2088,
+    "pronounce_text_begin": 1846,
+    "pronounce_text_end": 1920
+  },
+  {
+    "text": "分工是这样的：Claude 负责规划和品味判断，Codex 负责重型 build。两个引擎都拉到推理最高档 reasoning xhigh。",
+    "pronounce_text": "分工是这样的：Claude负责规划和品味判断，Codex负责重型build。两个引擎都拉到推理最高档reasoning xhigh。",
+    "time_begin": 325944,
+    "time_end": 335782.1405895692,
+    "text_begin": 2088,
+    "text_end": 2158,
+    "pronounce_text_begin": 1920,
+    "pronounce_text_end": 1986
+  },
+  {
+    "text": "Claude 的 fast mode 他特意关掉，因为在 200 美元 Max 之上还要按 token 额外收一次钱，他认为不划算。",
+    "pronounce_text": "Claude的fast mode他特意关掉，因为在两百美元Max之上还要按token额外收一次钱，他认为不划算。",
+    "time_begin": 335982.1405895692,
+    "time_end": 345309.44217687077,
+    "text_begin": 2158,
+    "text_end": 2224,
+    "pronounce_text_begin": 1986,
+    "pronounce_text_end": 2042
+  },
+  {
+    "text": "Codex 的 fast mode 一直开着。",
+    "pronounce_text": "Codex的fast mode一直开着。",
+    "time_begin": 345456,
+    "time_end": 347736.0453514739,
+    "text_begin": 2224,
+    "text_end": 2247,
+    "pronounce_text_begin": 2042,
+    "pronounce_text_end": 2062
+  },
+  {
+    "text": "那他怎么把活从 Claude 派给 Codex？",
+    "pronounce_text": "那他怎么把活从Claude派给Codex？",
+    "time_begin": 347904,
+    "time_end": 350787.7641723356,
+    "text_begin": 2247,
+    "text_end": 2271,
+    "pronounce_text_begin": 2062,
+    "pronounce_text_end": 2083
+  },
+  {
+    "text": "他给自己设计了三个路径，全部留在 Claude 这一侧——一个是 Codex 提供的 IDE 扩展，他在 Claude 会话里直接派任务给 Codex，结果出来后选择是否应用；另一个是 Compound Engineering 插件里的 --codex 参数，",
+    "pronounce_text": "他给自己设计了三个路径，全部留在Claude这一侧。一个是Codex提供的IDE扩展，他在Claude会话里直接派任务给Codex，结果出来后选择是否应用;另一个是Compound Engineering插件里的，-codex参数，",
+    "time_begin": 350928,
+    "time_end": 367755.3469387755,
+    "text_begin": 2271,
+    "text_end": 2401,
+    "pronounce_text_begin": 2083,
+    "pronounce_text_end": 2199
+  },
+  {
+    "text": "让\"执行\"这一步直接走 Codex；第三个是他自己的 Printing Press 项目，生成新 CLI 时在 prompt 末尾加一个 codex 词，build 就交给 Codex。",
+    "pronounce_text": "让\"执行\"这一步直接走Codex; 第三个是他自己的Printing Press项目，生成新CLI时在prompt末尾加一个codex词，build就交给Codex。",
+    "time_begin": 367920,
+    "time_end": 380741.90476190473,
+    "text_begin": 2401,
+    "text_end": 2494,
+    "pronounce_text_begin": 2199,
+    "pronounce_text_end": 2282
+  },
+  {
+    "text": "他从不离开 Claude 这个会话。Claude 是大脑，Codex 是肌肉，两个 200 美元的订阅就是他买的两台引擎并联运行。",
+    "pronounce_text": "他从不离开Claude这个会话。Claude是大脑，Codex是肌肉，两个两百美元的订阅就是他买的两台引擎并联运行。",
+    "time_begin": 380880,
+    "time_end": 390288.5714285714,
+    "text_begin": 2494,
+    "text_end": 2559,
+    "pronounce_text_begin": 2282,
+    "pronounce_text_end": 2340
+  },
+  {
+    "text": "他原话提到一个补充——有些朋友的搭法刚好反过来，Codex 负责 build，Claude 负责 review，看你哪一边的 taste 你更信任。",
+    "pronounce_text": "他原话提到一个补充。有些朋友的搭法刚好反过来，Codex负责build，Claude负责review，看你哪一边的taste你更信任。",
+    "time_begin": 390456,
+    "time_end": 400073.55102040817,
+    "text_begin": 2559,
+    "text_end": 2633,
+    "pronounce_text_begin": 2340,
+    "pronounce_text_end": 2407
+  },
+  {
+    "text": "讲到这里你可能还会觉得这是程序员玩具升级。但这篇长帖真正的破圈时刻，在第 20 个 hack。",
+    "pronounce_text": "讲到这里你可能还会觉得这是程序员玩具升级。但这篇长帖真正的破圈时刻，在第二十个hack。",
+    "time_begin": 400212,
+    "time_end": 408471.1836734694,
+    "text_begin": 2633,
+    "text_end": 2680,
+    "pronounce_text_begin": 2407,
+    "pronounce_text_end": 2451
+  },
+  {
+    "text": "他和合伙人做了一个项目叫 Printing Press——一组专为 Agent 设计的命令行工具，把现实世界的服务一个一个包装成 CLI。",
+    "pronounce_text": "他和合伙人做了一个项目叫Printing Press。一组专为Agent设计的命令行工具，把现实世界的服务一个一个包装成CLI。",
+    "time_begin": 408636,
+    "time_end": 418474.1405895692,
+    "text_begin": 2680,
+    "text_end": 2749,
+    "pronounce_text_begin": 2451,
+    "pronounce_text_end": 2515
+  },
+  {
+    "text": "配套一个叫 Agent Cookie 的东西，负责把你浏览器里的真实登录状态交给 CLI，让 CLI 以\"你\"这个身份去办事，不用粘贴密码、不用重新登录。",
+    "pronounce_text": "配套一个叫Agent Cookie的东西，负责把你浏览器里的真实登录状态交给CLI，让CLI以\"你\"这个身份去办事，不用粘贴密码、不用重新登录。",
+    "time_begin": 418644,
+    "time_end": 430351.3469387755,
+    "text_begin": 2749,
+    "text_end": 2826,
+    "pronounce_text_begin": 2515,
+    "pronounce_text_end": 2587
+  },
+  {
+    "text": "这一套接管了他一个真实的下午——",
+    "pronounce_text": "这一套接管了他一个真实的下午。",
+    "time_begin": 430488,
+    "time_end": 432768.0453514739,
+    "text_begin": 2826,
+    "text_end": 2842,
+    "pronounce_text_begin": 2587,
+    "pronounce_text_end": 2602
+  },
+  {
+    "text": "孩子十分钟后要上车，他对 Agent 说一句\"preheat the car to 72\"，Tesla CLI 触发，车在他们走出门之前已经热好了 22 度。",
+    "pronounce_text": "孩子十分钟后要上车，他对Agent说一句\"preheat the car to七十二\"，Tesla CLI触发，车在他们走出门之前已经热好了二十二度。",
+    "time_begin": 432936,
+    "time_end": 444608.5170068027,
+    "text_begin": 2842,
+    "text_end": 2921,
+    "pronounce_text_begin": 2602,
+    "pronounce_text_end": 2677
+  },
+  {
+    "text": "老婆说 Costco 配送要加啤酒，他一句\"add Corona to Costco on Instacart\"，Instacart CLI 直接把酒加进购物车。",
+    "pronounce_text": "老婆说Costco配送要加啤酒，他一句\"add Corona to Costco on Instacart\"，Instacart CLI直接把酒加进购物车。",
+    "time_begin": 444780,
+    "time_end": 453724.1723356009,
+    "text_begin": 2921,
+    "text_end": 3002,
+    "pronounce_text_begin": 2677,
+    "pronounce_text_end": 2755
+  },
+  {
+    "text": "晚上有场球赛，他不想自己刷比分，让一个 session 帮他盯着 ESPN，只在比分接近时给他一个通知。整场比赛他没主动刷过一次手机。",
+    "pronounce_text": "晚上有场球赛，他不想自己刷比分，让一个session帮他盯着ESPN，只在比分接近时给他一个通知。整场比赛他没主动刷过一次手机。",
+    "time_begin": 453888,
+    "time_end": 464666.54875283444,
+    "text_begin": 3002,
+    "text_end": 3069,
+    "pronounce_text_begin": 2755,
+    "pronounce_text_end": 2819
+  },
+  {
+    "text": "孩子暑假要订机票，他在足球场边看孩子踢球的时候，让 Alaska Airlines CLI 拉所有可能航班的机票、查 Atmos 里程余额、",
+    "pronounce_text": "孩子暑假要订机票，他在足球场边看孩子踢球的时候，让Alaska Airlines CLI拉所有可能航班的机票、查Atmos里程余额、",
+    "time_begin": 464832,
+    "time_end": 476504.5170068027,
+    "text_begin": 3069,
+    "text_end": 3139,
+    "pronounce_text_begin": 2819,
+    "pronounce_text_end": 2885
+  },
+  {
+    "text": "再把全部数据扔给 /ce-plan 让 Agent 出一份订票策略——最便宜的日期、最划算的换乘组合、",
+    "pronounce_text": "再把全部数据扔给，ce-plan让Agent出一份订票策略。最便宜的日期、最划算的换乘组合、",
+    "time_begin": 476704.5170068027,
+    "time_end": 484743.1111111111,
+    "text_begin": 3139,
+    "text_end": 3190,
+    "pronounce_text_begin": 2885,
+    "pronounce_text_end": 2931
+  },
+  {
+    "text": "什么时候必须下单的提醒。从足球场边订完。",
+    "pronounce_text": "什么时候必须下单的提醒。从足球场边订完。",
+    "time_begin": 484884,
+    "time_end": 488406.31292517006,
+    "text_begin": 3190,
+    "text_end": 3210,
+    "pronounce_text_begin": 2931,
+    "pronounce_text_end": 2951
+  },
+  {
+    "text": "他说这才是 Agentic Engineering 离开终端的瞬间。不是 AI 帮我写代码——是 Agent 帮我办杂事、看球、热车、订机票，全部在我做别的事情的时候同步发生。",
+    "pronounce_text": "他说这才是Agentic Engineering离开终端的瞬间。不是AI帮我写代码。是Agent帮我办杂事、看球、热车、订机票，全部在我做别的事情的时候同步发生。",
+    "time_begin": 488556,
+    "time_end": 502144.1632653061,
+    "text_begin": 3210,
+    "text_end": 3298,
+    "pronounce_text_begin": 2951,
+    "pronounce_text_end": 3032
+  },
+  {
+    "text": "这一节是整篇长帖里最有\"破圈感\"的部分。前 19 个 hack 都在终端里打转，听起来像程序员玩具升级。",
+    "pronounce_text": "这一节是整篇长帖里最有\"破圈感\"的部分。前十九个hack都在终端里打转，听起来像程序员玩具升级。",
+    "time_begin": 502308,
+    "time_end": 511031.5827664399,
+    "text_begin": 3298,
+    "text_end": 3350,
+    "pronounce_text_begin": 3032,
+    "pronounce_text_end": 3080
+  },
+  {
+    "text": "但当 Tesla 预热、Instacart 加啤酒、ESPN 比赛提醒、Alaska 机票这些事情变成一句话指令时，整套体系突然有了非编程的意义。",
+    "pronounce_text": "但当Tesla预热、Instacart加啤酒、ESPN比赛提醒、Alaska机票这些事情变成一句话指令时，整套体系突然有了非编程的意义。",
+    "time_begin": 511200,
+    "time_end": 522907.3469387755,
+    "text_begin": 3350,
+    "text_end": 3423,
+    "pronounce_text_begin": 3080,
+    "pronounce_text_end": 3148
+  },
+  {
+    "text": "最后这一段是整篇文章最让我尊敬的地方。",
+    "pronounce_text": "最后这一段是整篇文章最让我尊敬的地方。",
+    "time_begin": 523044,
+    "time_end": 525834.8843537415,
+    "text_begin": 3423,
+    "text_end": 3442,
+    "pronounce_text_begin": 3148,
+    "pronounce_text_end": 3167
+  },
+  {
+    "text": "他在第 21 节标题里直接写了一个词：\"The Honest Part: AI Psychosis\"。",
+    "pronounce_text": "他在第二十一节标题里直接写了一个词：\"The Honest Part:AI Psychosis\"。",
+    "time_begin": 525996,
+    "time_end": 532502.0770975057,
+    "text_begin": 3442,
+    "text_end": 3493,
+    "pronounce_text_begin": 3167,
+    "pronounce_text_end": 3216
+  },
+  {
+    "text": "他说：Agent 本来是替我们干活的，结果我所有朋友都在自己生命里前所未有地拼命。这不是缺乏休息的问题，是上瘾的问题。用 Agent 造东西是有史以来最好玩的电子游戏，这个反馈回路太好了。",
+    "pronounce_text": "他说：Agent本来是替我们干活的，结果我所有朋友都在自己生命里前所未有地拼命。这不是缺乏休息的问题，是上瘾的问题。用Agent造东西是有史以来最好玩的电子游戏，这个反馈回路太好了。",
+    "time_begin": 532656,
+    "time_end": 548809.9682539683,
+    "text_begin": 3493,
+    "text_end": 3587,
+    "pronounce_text_begin": 3216,
+    "pronounce_text_end": 3307
+  },
+  {
+    "text": "他认识一些他真心担心的朋友——被\"能造任何东西\"这件事点燃，然后什么别的都不做。Launch 出去没用户，但还在继续 build。陷阱不是发布失败，是你消失在了建造里、丢掉了身边的人。",
+    "pronounce_text": "他认识一些他真心担心的朋友。被\"能造任何东西\"这件事点燃，然后什么别的都不做。Launch出去没用户，但还在继续build。陷阱不是发布失败，是你消失在了建造里、丢掉了身边的人。",
+    "time_begin": 548964,
+    "time_end": 564943.8185941043,
+    "text_begin": 3587,
+    "text_end": 3679,
+    "pronounce_text_begin": 3307,
+    "pronounce_text_end": 3396
+  },
+  {
+    "text": "他建议三件事——休息，去摸摸草。跟你爱的人聊天。问一问你做的东西到底有没有人要。",
+    "pronounce_text": "他建议三件事。休息，去摸摸草。跟你爱的人聊天。问一问你做的东西到底有没有人要。",
+    "time_begin": 565092,
+    "time_end": 573351.1836734693,
+    "text_begin": 3679,
+    "text_end": 3719,
+    "pronounce_text_begin": 3396,
+    "pronounce_text_end": 3435
+  },
+  {
+    "text": "如果答案是\"只是为了你自己\"，那也可以，他说自己造过最好的东西里有几样从头到尾就只给自己用。",
+    "pronounce_text": "如果答案是\"只是为了你自己\"，那也可以，他说自己造过最好的东西里有几样从头到尾就只给自己用。",
+    "time_begin": 573551.1836734693,
+    "time_end": 583041.0249433107,
+    "text_begin": 3719,
+    "text_end": 3765,
+    "pronounce_text_begin": 3435,
+    "pronounce_text_end": 3481
+  },
+  {
+    "text": "我觉得这一节比前 20 个 hack 加起来都重要。所有那些技巧让你在一年里从\"高中之后没发布过任何有人在乎的软件\"变成\"今年发了三个开源项目、其中一个 27 千 star\"——他自己的转变就是这种节奏。",
+    "pronounce_text": "我觉得这一节比前二十个hack加起来都重要。所有那些技巧让你在一年里从\"高中之后没发布过任何有人在乎的软件\"变成\"今年发了三个开源项目、其中一个二十七千star\"。他自己的转变就是这种节奏。",
+    "time_begin": 583200,
+    "time_end": 599771.9274376418,
+    "text_begin": 3765,
+    "text_end": 3867,
+    "pronounce_text_begin": 3481,
+    "pronounce_text_end": 3576
+  },
+  {
+    "text": "但代价是你身边的人。",
+    "pronounce_text": "但代价是你身边的人。",
+    "time_begin": 599940,
+    "time_end": 602475.4648526077,
+    "text_begin": 3867,
+    "text_end": 3877,
+    "pronounce_text_begin": 3576,
+    "pronounce_text_end": 3586
+  },
+  {
+    "text": "回过头看，这 22 招里我最想留住的不是任何一招的具体配置，是这个整体形状——",
+    "pronounce_text": "回过头看，这二十二招里我最想留住的不是任何一招的具体配置，是这个整体形状。",
+    "time_begin": 602640,
+    "time_end": 609784.6258503401,
+    "text_begin": 3877,
+    "text_end": 3916,
+    "pronounce_text_begin": 3586,
+    "pronounce_text_end": 3623
+  },
+  {
+    "text": "传统开发是 80% 写代码、20% 规划。他的工作日是 6 个并行 session、人只贡献品味和方向、Claude 做计划、Codex 做 build、CLI 顺手接管开车买菜订机票。",
+    "pronounce_text": "传统开发是百分之八十写代码、百分之二十规划。他的工作日是六个并行session、人只贡献品味和方向、Claude做计划、Codex做build、CLI顺手接管开车买菜订机票。",
+    "time_begin": 609948,
+    "time_end": 624987.410430839,
+    "text_begin": 3916,
+    "text_end": 4009,
+    "pronounce_text_begin": 3623,
+    "pronounce_text_end": 3710
+  },
+  {
+    "text": "Agent 不是更强的 IDE。Agent 是你工作流和生活流之间那扇被拆掉的门。门拆掉之后你能多做很多事，但也再没有一个明确的下班时刻。",
+    "pronounce_text": "Agent不是更强的IDE。Agent是你工作流和生活流之间那扇被拆掉的门。门拆掉之后你能多做很多事，但也再没有一个明确的下班时刻。",
+    "time_begin": 625140,
+    "time_end": 636464.2176870748,
+    "text_begin": 4009,
+    "text_end": 4078,
+    "pronounce_text_begin": 3710,
+    "pronounce_text_end": 3776
+  },
+  {
+    "text": "整篇长帖最值得记住的一句话，是他对自己工作角色的重新定义——\"当你跑 6 个 Agent，你的工作不是干活，是当那个信号。",
+    "pronounce_text": "整篇长帖最值得记住的一句话，是他对自己工作角色的重新定义。\"当你跑六个Agent，你的工作不是干活，是当那个信号。",
+    "time_begin": 636624,
+    "time_end": 647054.2494331066,
+    "text_begin": 4078,
+    "text_end": 4139,
+    "pronounce_text_begin": 3776,
+    "pronounce_text_end": 3833
+  },
+  {
+    "text": "Agent 提供量，你提供品味、方向、和反馈纠偏。Agent 是手，你是大脑。\"",
+    "pronounce_text": "Agent提供量，你提供品味、方向、和反馈纠偏。Agent是手，你是大脑。\"",
+    "time_begin": 647254.2494331066,
+    "time_end": 654747.1746031746,
+    "text_begin": 4139,
+    "text_end": 4179,
+    "pronounce_text_begin": 3833,
+    "pronounce_text_end": 3871
+  },
+  {
+    "text": "如果你只能从这 22 条里挑一条今天就做的，挑第二条——做计划，但不要读计划。让 Agent 写 plan.md，你只看一行标题，让它直接开干。",
+    "pronounce_text": "如果你只能从这二十二条里挑一条今天就做的，挑第二条。做计划，但不要读计划。让Agent写plan.md，你只看一行标题，让它直接开干。",
+    "time_begin": 654912,
+    "time_end": 668291.1836734693,
+    "text_begin": 4179,
+    "text_end": 4251,
+    "pronounce_text_begin": 3871,
+    "pronounce_text_end": 3938
+  },
+  {
+    "text": "如果有疑问就在会话里追问 \"TLDR\" 或 \"eli5\"，不要去逐行读 markdown。这一个动作改变之后，你会发现自己再也不想回去做\"那个手动批准每一步的人\"。",
+    "pronounce_text": "如果有疑问就在会话里追问\"TLDR\" 或\"eli五\"，不要去逐行读markdown。这一个动作改变之后，你会发现自己再也不想回去做\"那个手动批准每一步的人\"。",
+    "time_begin": 668448,
+    "time_end": 682256.7528344671,
+    "text_begin": 4251,
+    "text_end": 4333,
+    "pronounce_text_begin": 3938,
+    "pronounce_text_end": 4017
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 682416,
+    "time_end": 688538.947845805,
+    "text_begin": 4333,
+    "text_end": 4360,
+    "pronounce_text_begin": 4017,
+    "pronounce_text_end": 4043
+  }
+]

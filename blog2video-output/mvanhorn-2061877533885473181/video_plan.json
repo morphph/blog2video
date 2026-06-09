@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Every Agentic Engineering Hack I Know (June 2026)",
+    "title_zh": "22 招让你一年内成为重度 Agent 用户",
+    "word_count": 4200,
+    "slug": "mvanhorn-2061877533885473181"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕同一个 thesis（Agentic Engineering 反转传统开发的 80/20）展开，5 个挑出的 hack 互相支撑而非独立子主题，单视频呈现更连贯。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "22 招让你一年内成为重度 Agent 用户"
+      }
+    ]
+  }
+}

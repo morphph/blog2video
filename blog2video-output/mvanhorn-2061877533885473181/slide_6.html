@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 26px;
+      color: #10B981;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 50px;
+      letter-spacing: -0.5px;
+    }
+    .title .key { color: #10B981; }
+    .formula {
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10B981;
+      border-radius: 16px;
+      padding: 36px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .formula-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 999px;
+      padding: 16px 28px;
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-family: 'SF Mono', monospace;
+    }
+    .plus, .eq {
+      font-size: 40px;
+      color: #10B981;
+      font-weight: 900;
+    }
+    .result {
+      font-size: 42px;
+      color: #10B981;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .quote-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 32px 36px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .quote-head {
+      font-size: 22px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .quote-body {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .quote-body .h {
+      color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">补回失去的反馈通道</div>
+    <div class="title">YOLO + <span class="key">Stop Hook 声音</span><br>= 并行的物理前提</div>
+    <div class="formula">
+      <div class="formula-row">
+        <div class="pill">bypassPermissions</div>
+        <div class="plus">+</div>
+        <div class="pill">Blow.aiff</div>
+      </div>
+      <div style="margin-top: 24px;" class="formula-row">
+        <div class="eq">=</div>
+        <div class="result">声音通道替代确认</div>
+      </div>
+    </div>
+    <div class="quote-card">
+      <div class="quote-head">终端默认命令</div>
+      <div class="quote-body">把 zsh 换成 <span class="h">claude</span><br>开新 session = <span class="h">一个按键</span></div>
+    </div>
+    <div class="quote-card">
+      <div class="quote-head">配 YOLO 时</div>
+      <div class="quote-body">Agent 自己劝朋友别开<br>"你得对它<span class="h">强硬一点</span>"</div>
+    </div>
+  </div>
+</body>
+</html>

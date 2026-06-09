@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 48px;
+      letter-spacing: -0.5px;
+    }
+    .title .key { color: #F59E0B; }
+    .paths {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .path {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-align: left;
+    }
+    .path-num {
+      font-size: 36px;
+      font-weight: 900;
+      color: #8B5CF6;
+      width: 60px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .path-body {
+      flex: 1;
+    }
+    .path-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+      font-family: 'SF Mono', monospace;
+    }
+    .path-desc {
+      font-size: 20px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .verdict {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(245, 158, 11, 0.12));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .verdict-text {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .verdict-text .pp { color: #8B5CF6; }
+    .verdict-text .cc { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">活怎么从 Claude 派给 Codex</div>
+    <div class="title">三条路径<br>全部留在<span class="key"> Claude 一侧</span></div>
+    <div class="paths">
+      <div class="path">
+        <div class="path-num">1</div>
+        <div class="path-body">
+          <div class="path-name">Codex IDE 扩展</div>
+          <div class="path-desc">Claude 会话里直接派任务</div>
+        </div>
+      </div>
+      <div class="path">
+        <div class="path-num">2</div>
+        <div class="path-body">
+          <div class="path-name">--codex 参数</div>
+          <div class="path-desc">Compound Engineering 把"执行"走 Codex</div>
+        </div>
+      </div>
+      <div class="path">
+        <div class="path-num">3</div>
+        <div class="path-body">
+          <div class="path-name">Printing Press</div>
+          <div class="path-desc">prompt 末尾加 codex，build 交给 Codex</div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict">
+      <div class="verdict-text"><span class="pp">Claude 是大脑</span> · <span class="cc">Codex 是肌肉</span><br>两台引擎并联运行</div>
+    </div>
+  </div>
+</body>
+</html>

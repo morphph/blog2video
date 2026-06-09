@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 28px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 60px;
+      letter-spacing: -0.5px;
+    }
+    .title .key { color: #8B5CF6; }
+    .engines {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .engine {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 16px;
+      padding: 32px 28px;
+      position: relative;
+    }
+    .engine.brain { border-left: 4px solid #8B5CF6; }
+    .engine.muscle { border-left: 4px solid #F59E0B; }
+    .engine-price {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .brain .engine-price { color: #8B5CF6; }
+    .muscle .engine-price { color: #F59E0B; }
+    .engine-name {
+      font-size: 26px;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .engine-role {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .engine-role b {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .specs {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(245, 158, 11, 0.08));
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      justify-content: space-around;
+    }
+    .spec {
+      text-align: center;
+    }
+    .spec-key {
+      font-size: 20px;
+      color: #6B7280;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .spec-val {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'SF Mono', monospace;
+    }
+    .spec-val.on { color: #10B981; }
+    .spec-val.off { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">第 3 招 · 第二台引擎</div>
+    <div class="title">Claude + Codex<br>不是替代<span class="key">是分工</span></div>
+    <div class="engines">
+      <div class="engine brain">
+        <div class="engine-price">$200</div>
+        <div class="engine-name">Claude Code Max</div>
+        <div class="engine-role"><b>大脑</b><br>规划 + 品味判断</div>
+      </div>
+      <div class="engine muscle">
+        <div class="engine-price">$200</div>
+        <div class="engine-name">Codex Max</div>
+        <div class="engine-role"><b>肌肉</b><br>重型 build</div>
+      </div>
+    </div>
+    <div class="specs">
+      <div class="spec">
+        <div class="spec-key">REASONING</div>
+        <div class="spec-val">xhigh × 2</div>
+      </div>
+      <div class="spec">
+        <div class="spec-key">CLAUDE FAST</div>
+        <div class="spec-val off">OFF</div>
+      </div>
+      <div class="spec">
+        <div class="spec-key">CODEX FAST</div>
+        <div class="spec-val on">ON</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

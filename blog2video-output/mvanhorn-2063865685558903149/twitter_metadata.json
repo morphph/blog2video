@@ -1,0 +1,21 @@
+{
+  "url": "https://x.com/mvanhorn/status/2063865685558903149",
+  "author": "Matt Van Horn",
+  "handle": "@mvanhorn",
+  "title": "WTF Is a Loop? Peter Steinberger vs. Boris Cherny",
+  "published": "2026-06-08T06:08:00Z",
+  "stats": {
+    "replies": 160,
+    "reposts": 457,
+    "likes": 3844,
+    "bookmarks": 12169,
+    "views": 1832977
+  },
+  "method_used": "playwright_mcp_accessibility_snapshot",
+  "images": [
+    {
+      "path": "images/image_1.jpg",
+      "caption": "Article cover image"
+    }
+  ]
+}

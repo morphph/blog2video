@@ -1,0 +1,15 @@
+{
+  "topic": "22 招让你一年内成为重度 Agent 用户",
+  "blog_url": "",
+  "source": "mvanhorn-2061877533885473181",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: Don’t miss what’s happening
+          - generic [ref=e9]: People on X are the first to know.
+        - generic [ref=e12]:
+          - link "Log in" [ref=e14] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e17]: Log in
+          - link "Sign up" [ref=e19] [cursor=pointer]:
+            - /url: /i/flow/signup
+            - generic [ref=e22]: Sign up
+      - generic [ref=e23]:
+        - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+        - button "Skip to trending" [ref=e26] [cursor=pointer]
+        - banner [ref=e28]:
+          - generic [ref=e31]:
+            - heading "X" [level=1] [ref=e33] [cursor=pointer]:
+              - link "X" [ref=e34]:
+                - /url: /
+                - img [ref=e36]
+            - generic:
+              - navigation "Primary"
+        - main [ref=e39]:
+          - generic [ref=e42]:
+            - generic "Home timeline" [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e51] [cursor=pointer]:
+                  - button "Back" [ref=e53]:
+                    - img [ref=e55]
+                  - heading "Article" [level=2] [ref=e213]
+                  - link "Focus mode" [ref=e215]:
+                    - /url: /mvanhorn/article/2063865685558903149
+                    - img [ref=e217]
+                - generic:
+                  - generic:
+                    - status:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: See new posts
+              - region "Conversation" [ref=e62]:
+                - heading "Conversation" [level=1] [ref=e63]
+                - 'generic "Timeline: Conversation" [ref=e64]':
+                  - article "Matt Van Horn Verified account @mvanhorn 160 replies, 457 reposts, 3844 likes, 12169 bookmarks, 1832977 views" [ref=e224]:
+                    - generic [ref=e226]:
+                      - generic [ref=e230]:
+                        - link [active] [ref=e242] [cursor=pointer]:
+                          - /url: /mvanhorn
+                        - generic [ref=e247]:
+                          - generic [ref=e250]:
+                            - link "Matt Van Horn Verified account" [ref=e253] [cursor=pointer]:
+                              - /url: /mvanhorn
+                              - generic [ref=e254]:
+                                - generic [ref=e256]: Matt Van Horn
+                                - img "Verified account" [ref=e259]
+                            - link "@mvanhorn" [ref=e265] [cursor=pointer]:
+                              - /url: /mvanhorn
+                              - generic [ref=e266]: "@mvanhorn"
+                          - button "More" [ref=e272] [cursor=pointer]:
+                            - img [ref=e276]
+                      - generic [ref=e279]:
+                        - generic [ref=e280]:
+                          - link "Image" [ref=e286] [cursor=pointer]:
+                            - /url: /mvanhorn/article/2063865685558903149/media/2063855518624673792
+                            - generic "Image" [ref=e290]:
+                              - img "Image" [ref=e292]
+                          - generic [ref=e293]:
+                            - generic [ref=e295]: WTF Is a Loop? Peter Steinberger vs. Boris Cherny
+                            - group "160 replies, 457 reposts, 3844 likes, 12169 bookmarks, 1832977 views" [ref=e297]:
+                              - button "160 Replies. Reply" [ref=e299] [cursor=pointer]:
+                                - generic [ref=e300]:
+                                  - img [ref=e303]
+                                  - generic [ref=e308]: "160"
+                              - button "457 reposts. Repost" [ref=e310] [cursor=pointer]:
+                                - generic [ref=e311]:
+                                  - img [ref=e314]
+                                  - generic [ref=e319]: "457"
+                              - button "3844 Likes. Like" [ref=e321] [cursor=pointer]:
+                                - generic [ref=e322]:
+                                  - img [ref=e325]
+                                  - generic [ref=e330]: 3.8K
+                              - link "1832977 views. View post analytics" [ref=e332] [cursor=pointer]:
+                                - /url: /mvanhorn/status/2063865685558903149/analytics
+                                - generic [ref=e333]:
+                                  - img [ref=e336]
+                                  - generic [ref=e341]: 1.8M
+                              - button "Bookmark" [ref=e343] [cursor=pointer]:
+                                - img [ref=e347]
+                              - button "Share post" [ref=e352] [cursor=pointer]:
+                                - img [ref=e356]
+                            - generic [ref=e364]:
+                              - generic [ref=e367]: The most repeated sentence in AI coding this week is six words long, and almost nobody saying it can define it. One tweet had the entire timeline in a chokehold this week, so I ran /last30days on the word everyone was fighting about. The answer is real, it has a five-year lineage, and the punchline is that the loop, not the model, is now the expensive part.
+                              - heading "The tweet that has the timeline in a chokehold" [level=1] [ref=e369]:
+                                - generic [ref=e371]: The tweet that has the timeline in a chokehold
+                              - generic [ref=e373]:
+                                - generic [ref=e374]: One tweet has had the entire AI-coding timeline obsessed this week. Peter
+                                - link "Steinberger" [ref=e376] [cursor=pointer]:
+                                  - /url: https://x.com/steipete
+                                  - generic [ref=e377]: Steinberger
+                                - generic [ref=e378]: posted it on June 7, it cleared 2.2 million views, and the replies turned into a brawl over what it actually meant.
+                              - blockquote [ref=e379]:
+                                - generic [ref=e381]: “Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.”
+                              - generic [ref=e383]:
+                                - link "@steipete" [ref=e385] [cursor=pointer]:
+                                  - /url: https://x.com/@steipete
+                                  - generic [ref=e386]: "@steipete"
+                                - generic [ref=e387]: ", June 7, 2026"
+                              - generic [ref=e390]: "That is the sentence everyone is quoting. The most telling reply came from Varadh Jain, who asked the only question that mattered: what does this look like in practice? And the answer that became the whole mood was Matthew Berman's."
+                              - blockquote [ref=e391]:
+                                - generic [ref=e393]: “nobody knows but him and boris.”
+                              - generic [ref=e395]:
+                                - link "@MatthewBerman" [ref=e397] [cursor=pointer]:
+                                  - /url: https://x.com/@MatthewBerman
+                                  - generic [ref=e398]: "@MatthewBerman"
+                                - generic [ref=e399]: ", June 7, 2026"
+                              - generic [ref=e402]: "That is the real story. Not that loops are the future, but that a six-word phrase hit two million views while the people boosting it argued in the replies about what it meant. I did not roll my eyes, because I run a loop every night that opens pull requests across roughly thirty open-source repos while I sleep. Ninety seconds of research handed back fifteen Reddit threads, twenty-one X posts, and one uncomfortable pattern: the loudest idea in AI coding is one most people repeating it cannot explain. One camp shouted that prompt engineering is dead. Another camp, the one with their hands actually on a keyboard, was more careful."
+                              - blockquote [ref=e403]:
+                                - generic [ref=e405]: “It's not ralph/goal loops, that's old hat by now. It's probably some kind of continuous orchestration loop that oversees other threads/agents.”
+                              - generic [ref=e407]:
+                                - link "@trashpandaemoji" [ref=e409] [cursor=pointer]:
+                                  - /url: https://x.com/@trashpandaemoji
+                                  - generic [ref=e410]: "@trashpandaemoji"
+                                - generic [ref=e411]: ", June 7, 2026"
+                              - generic [ref=e414]: That reply is the closest thing to a correct answer anyone posted. Hold onto it.
+                              - heading "What a loop actually is" [level=1] [ref=e416]:
+                                - generic [ref=e418]: What a loop actually is
+                              - generic [ref=e421]: Boris Cherny created Claude Code as a side project in September 2024. It now reportedly sits behind close to four percent of all public commits on GitHub. On stage at the Acquired Unplugged event hosted by WorkOS on June 2, he gave the cleanest definition of a loop you will find.
+                              - blockquote [ref=e422]:
+                                - generic [ref=e424]: “Now it's actually leveled up, I think, again, to the next wave of abstraction where I don't prompt Claude anymore. I have loops that are running. They're the ones that are prompting Claude and figuring out what to do. My job is to write loops.”
+                              - generic [ref=e426]:
+                                - generic [ref=e427]: Boris Cherny, WorkOS
+                                - link "Acquired" [ref=e429] [cursor=pointer]:
+                                  - /url: https://www.youtube.com/watch?v=RkQQ7WEor7w
+                                  - generic [ref=e430]: Acquired
+                                - generic [ref=e431]: Unplugged, June 2, 2026
+                              - generic [ref=e434]: So here is the plain version. A loop is a small program you write that prompts the coding agent for you, reads what it produced, decides whether it is done, and if not, prompts it again. You stop being the thing inside the loop typing prompts. You become the author of the loop. The model becomes a subroutine.
+                              - generic [ref=e437]: Boris tells it as three stages, and placing yourself on his ladder is the fastest way to get it. A year ago he wrote code by hand with autocomplete. Then he ran five to ten Claude sessions in parallel and prompted each one. Now he does not prompt at all. He writes the loops that prompt Claude, and a couple hundred agents read his GitHub, Slack, and Twitter and decide what to build next. He has the receipt.
+                              - blockquote [ref=e438]:
+                                - generic [ref=e440]: “In the last 30 days, 100% of my contributions to Claude Code were written by Claude Code. I landed 259 PRs.”
+                              - generic [ref=e442]:
+                                - generic [ref=e443]: Boris Cherny, via Simon Willison,
+                                - link "December" [ref=e445] [cursor=pointer]:
+                                  - /url: https://simonwillison.net/2025/Dec/27/boris-cherny/
+                                  - generic [ref=e446]: December
+                                - generic [ref=e447]: 27, 2025
+                              - generic [ref=e450]: "He deleted his IDE in November and has not opened it since. The nuance the prompt-engineering-is-dead crowd skips: he is not saying engineers are obsolete. Someone still has to decide what to build, talk to customers, and coordinate teams, and he says great engineers matter more than ever. The job did not vanish. It moved up an altitude, from writing the code to writing the thing that writes the code."
+                              - 'heading "The spectrum: from ReAct to orchestration" [level=1] [ref=e452]':
+                                - generic [ref=e454]: "The spectrum: from ReAct to orchestration"
+                              - generic [ref=e457]: The replies were a mess because loop hides at least five different things. Here is the ladder, oldest to newest, so you can stop talking past people.
+                              - generic [ref=e459]:
+                                - generic [ref=e460]: Stage one is the academic while-loop.
+                                - link "The" [ref=e462] [cursor=pointer]:
+                                  - /url: https://arxiv.org/abs/2210.03629
+                                  - generic [ref=e463]: The
+                                - generic [ref=e464]: "2022 ReAct paper formalized it: the model reasons, calls a tool, reads the result, repeats until done. One model, one loop, a human watching. Stage two is AutoGPT in 2023, which gave it a goal and let it prompt itself, and which became famous for spinning forever doing nothing. That failure seeded years of agents are a toy."
+                              - generic [ref=e466]:
+                                - generic [ref=e467]: "Stage three is the one Trash Panda called old hat: the ralph loop, published by Geoffrey"
+                                - link "Huntley" [ref=e469] [cursor=pointer]:
+                                  - /url: https://ghuntley.com/ralph/
+                                  - generic [ref=e470]: Huntley
+                                - generic [ref=e471]: "in July 2025. It is almost insultingly simple, a bash one-liner that pipes the same prompt file into the agent over and over. Its real innovation was discipline: every iteration resets the context to a fixed set of anchor files instead of letting the conversation grow. Huntley built an entire programming language with it for about 297 dollars. Stage four productized that: in spring 2026 both Codex and Claude Code shipped a /goal command that runs the ralph loop until a small validator model confirms the task is done."
+                              - generic [ref=e474]: "Stage five is what Boris and Steinberger actually mean, and it is genuinely new, not just renamed. Four things changed. The loop became the unit of work, not the task. Loops started supervising other loops, concurrently and on a schedule. Scheduling replaced the human kickoff, so the loop runs on infrastructure time instead of your attention. And durability became explicit, with git-backed state and crash recovery, because these things have to survive a restart. Ralph assumed your terminal stayed open. The 2026 version assumes it does not. So Trash Panda was right twice: the single-agent ralph loop is old hat, and the multi-agent orchestration loop on top of it is the new thing."
+                              - heading "It's just a cron job with a hat on" [level=1] [ref=e476]:
+                                - generic [ref=e478]: It's just a cron job with a hat on
+                              - generic [ref=e481]: The best skeptic line in the entire corpus was four words, posted under someone gushing that loops is where it will go.
+                              - blockquote [ref=e482]:
+                                - generic [ref=e484]: “Cronjobs have funny re-branding rn.”
+                              - blockquote [ref=e485]:
+                                - generic [ref=e487]: X reply, loops discourse, June 2026
+                              - generic [ref=e490]: This deserves a straight answer, not a dodge, because it is half right. Yes, the scheduling layer is cron. Boris literally runs his on cron. The /loop command in Claude Code uses cron under the hood. If your whole definition of a loop is a thing that runs on a timer, then yes, we invented that in 1975 and you can go home.
+                              - generic [ref=e493]: What cron never had is the part in the middle. A cron job runs a fixed script. A loop runs a model that looks at the current state, decides what to do next, does it, checks whether it worked, and decides whether to keep going. The decision is the agent's, not yours, and not a hardcoded branch. Stack those, let one loop dispatch and supervise others, give them durable shared state, and you have something cron cannot express. The honest framing is not that loops are new magic and not that loops are just cron. It is that loops are cron plus a decision-maker in the body, and the interesting engineering is everything you wrap around that decision so it does not run off a cliff.
+                              - heading "What it looks like when you actually build one" [level=1] [ref=e495]:
+                                - generic [ref=e497]: What it looks like when you actually build one
+                              - generic [ref=e500]: Enough theory. The on-ramp is one line. Claude Code shipped /loop, and Boris's own example is the canonical starter. Paste this and change the nouns.
+                              - generic [ref=e503]: /loop babysit all my PRs. Auto-fix build issues, and when comments come in, use a worktree agent to fix them.
+                              - generic [ref=e506]: And here is his fuller recipe. Days later, Boris posted five tips for running Opus autonomously for hours or days.
+                              - blockquote [ref=e507]:
+                                - generic [ref=e509]: "Five tips, in his words: use auto mode for permissions so Claude doesn't ask for approval; use dynamic workflows to have Claude orchestrate hundreds or thousands of agents to get a task done; use /goal or /loop to nudge Claude to keep going until it's done; use Claude Code in the cloud so you can close your laptop; and make sure Claude has a way to self-verify its work end to end."
+                              - generic [ref=e511]:
+                                - link "@bcherny" [ref=e513] [cursor=pointer]:
+                                  - /url: https://x.com/@bcherny
+                                  - generic [ref=e514]: "@bcherny"
+                                - generic [ref=e515]: ", June 2026"
+                              - generic [ref=e518]: "Tip five is the one the hype skips and the practitioners obsess over: a loop is only as trustworthy as its ability to check its own work."
+                              - generic [ref=e521]: That is the whole idea in miniature. You did not write the steps. You wrote the intent and the stopping behavior, and the loop prompts the agent each tick. On TikTok the framing landed cleanly for a general audience.
+                              - blockquote [ref=e522]:
+                                - generic [ref=e524]: “Loop mode is one of the clearest signs that AI coding is moving from one-off prompts to background operations.”
+                              - generic [ref=e526]:
+                                - link "@ai" [ref=e528] [cursor=pointer]:
+                                  - /url: https://x.com/@ai
+                                  - generic [ref=e529]: "@ai"
+                                - generic [ref=e530]: .native.founder on TikTok, June 2026
+                              - generic [ref=e532]:
+                                - generic [ref=e533]: The deep end is Steve
+                                - link "Yegge's" [ref=e535] [cursor=pointer]:
+                                  - /url: https://github.com/gastownhall/gastown
+                                  - generic [ref=e536]: Yegge's
+                                - generic [ref=e537]: "Gas Town, launched in January: twenty to thirty Claude Code instances coordinated by a Mayor agent, with patrol agents that run continuous loops and state stored in git so work survives a crash. That is the continuous orchestration loop that oversees other threads Trash Panda was reaching for, shipped and open source."
+                              - generic [ref=e540]: But the most practical lesson in the research is that a loop is only as good as its ability to check itself. The fastest-growing sub-theme was not orchestration, it was verification.
+                              - blockquote [ref=e541]:
+                                - generic [ref=e543]: “Your coding agent can move fast, but bad commits compound fast too.”
+                              - generic [ref=e545]:
+                                - link "@DanKornas" [ref=e547] [cursor=pointer]:
+                                  - /url: https://x.com/@DanKornas
+                                  - generic [ref=e548]: "@DanKornas"
+                                - generic [ref=e549]: ", June 2026"
+                              - generic [ref=e552]: Kornas is shipping roborev, a tool that reviews every commit in the background and feeds the findings back into the agent while the context is still fresh. An open loop that writes code with no feedback is a machine for generating confident mistakes. A loop that writes, runs, reads the result, and corrects is the thing that actually works. The loop is not the magic. The feedback inside it is.
+                              - 'heading "The plot twist: the loop is now the expensive part" [level=1] [ref=e554]':
+                                - generic [ref=e556]: "The plot twist: the loop is now the expensive part"
+                              - generic [ref=e559]: Here is where the research turned from philosophy to a finance problem. The sharpest deflation of the whole agents mythology came from a working engineer.
+                              - blockquote [ref=e560]:
+                                - generic [ref=e562]: “Every ai agent i shipped this year is a for-loop, an llm call, and a try/catch around the json parsing. The only thing agentic about it is the anthropic bill at the end of the month.”
+                              - generic [ref=e564]:
+                                - link "@rohit_jsfreaky" [ref=e566] [cursor=pointer]:
+                                  - /url: https://x.com/@rohit_jsfreaky
+                                  - generic [ref=e567]: "@rohit_jsfreaky"
+                                - generic [ref=e568]: ", June 2026"
+                              - generic [ref=e571]: "That bill is not a joke. The receipt of the month: Uber capped its engineers at 1,500 dollars per person per tool per month for Claude Code and Cursor after burning its annual AI budget in four months. Once the model writes the code for almost nothing, the cost moves to the loop running it."
+                              - blockquote [ref=e572]:
+                                - generic [ref=e574]: “The costliest thing in AI coding is no longer writing code, it's managing the agent loop.”
+                              - generic [ref=e576]:
+                                - link "@runes_leo" [ref=e578] [cursor=pointer]:
+                                  - /url: https://x.com/@runes_leo
+                                  - generic [ref=e579]: "@runes_leo"
+                                - generic [ref=e580]: ", June 2026"
+                              - generic [ref=e583]: And the failure mode everyone in production is scared of is the loop that does not stop.
+                              - blockquote [ref=e584]:
+                                - generic [ref=e586]: “Without guardrails, you get infinite loops and billing surprises orders of magnitude over budget.”
+                              - generic [ref=e588]:
+                                - link "@cv_usk" [ref=e590] [cursor=pointer]:
+                                  - /url: https://x.com/@cv_usk
+                                  - generic [ref=e591]: "@cv_usk"
+                                - generic [ref=e592]: ", June 2026"
+                              - generic [ref=e595]: "Which is why every serious 2026 write-up on loops converges on the same three hard stops: a maximum iteration count, no-progress detection, and a token or dollar budget ceiling. The romantic version of loops is that you write the loops and a thousand agents build your company overnight. The production version is that you write the loops, and most of your job is making sure they halt. Gartner puts agentic AI at the peak of inflated expectations, with only about seventeen percent of organizations actually deploying agents. The gap between the timeline and the receipts is the real state of play."
+                              - heading "It's not loops. It's skills." [level=1] [ref=e597]:
+                                - generic [ref=e599]: It's not loops. It's skills.
+                              - generic [ref=e602]: Here is my own take, and it is where I land after a week of watching this. The loop is plumbing. The asset is the skill it calls.
+                              - generic [ref=e605]: "Steinberger's other recurring point pairs with the loops one and is the more durable half: if you do something more than once, turn it into an automated skill, and if you do something hard, turn it into a skill afterward so next time is free. A loop with no reusable skills inside it is just a while-true around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds. The Reddit practitioner who is actually converting said it best."
+                              - blockquote [ref=e606]:
+                                - generic [ref=e608]: “A lot of people are rolling their eyes on Twitter, but my ears are perked up.”
+                              - generic [ref=e611]: r/ChatGPTCoding, June 2026
+                              - generic [ref=e614]: "So the answer to WTF is a loop is not a hot take about prompt engineering dying. It is this: stop being the thing in the loop. Write the loop once, give it skills worth calling and feedback so it can check itself, cap it so it halts, and let it run on cron while you go decide what to build next. Steinberger and Boris are describing the same animal from two sides. The only people who truly know are the ones who have already built one. The good news is that, as of this month, the on-ramp is a single slash command."
+                              - heading "Key Patterns from the Research" [level=1] [ref=e616]:
+                                - generic [ref=e618]: Key Patterns from the Research
+                              - generic [ref=e621]: "A loop is cron plus a decision-maker in the body: the model, not a hardcoded branch, picks the next action each tick."
+                              - generic [ref=e624]: "The lineage is real: ReAct in 2022, AutoGPT in 2023, ralph in 2025, /goal in spring 2026, orchestration loops now. Single-agent ralph is old hat; multi-agent supervision is the new layer."
+                              - generic [ref=e627]: The loop is only as good as its feedback. Continuous review and validation gates are what make a loop trustworthy.
+                              - generic [ref=e630]: The expensive resource shifted from tokens to loop management. Cap iterations, detect no-progress, set a dollar budget.
+                              - generic [ref=e633]: The reusable unit inside the loop is a skill, not a prompt. Loops that call sharp named skills compound; loops that re-derive everything just burn money.
+                              - heading "All Agents Reported Back" [level=1] [ref=e635]:
+                                - generic [ref=e637]: All Agents Reported Back
+                              - generic [ref=e640]: "Reddit: 17 voices (r/ClaudeAI, r/AI_Agents, r/ExperiencedDevs), 47 threads, 34k upvotes"
+                              - generic [ref=e643]: "X: 21 voices (steipete, bcherny, runes_leo), 56 posts, 175 reposts"
+                              - generic [ref=e646]: "YouTube: 4 voices (WorkOS, Lenny's Podcast, Y Combinator), talk transcripts"
+                              - generic [ref=e649]: "TikTok: 6 voices (ai.native.founder, nikpolale), 34 clips"
+                              - generic [ref=e651]:
+                                - generic [ref=e652]: "Instagram: 4 voices (sequenzy_com,"
+                                - link "ai.builders" [ref=e654] [cursor=pointer]:
+                                  - /url: //ai.builders
+                                  - generic [ref=e655]: ai.builders
+                                - generic [ref=e656]: ), 14 reels
+                              - generic [ref=e659]: "Hacker News: 12 voices, 54 stories, 1k comments"
+                              - generic [ref=e662]: "GitHub: 6 repos (gastownhall/gastown, NousResearch/hermes), steipete 259+ PRs"
+                              - generic [ref=e665]: "Top voices: steipete, bcherny, runes_leo, rohit_jsfreaky, MatthewBerman"
+                              - generic [ref=e668]: "Compiled from /last30days runs on 2026-06-07. Facets: designing loops that prompt coding agents, ai loops, coding loops."
+                              - generic [ref=e671]: Co-founded a self-driving oven company (acquired by Weber) and the company that became Lyft. Building again, more soon. I run loops that ship open-source PRs while I sleep, and I write them with /last30days research running in the background.
+                            - status [ref=e675]:
+                              - generic [ref=e676]:
+                                - img [ref=e677]
+                                - generic [ref=e681]:
+                                  - generic [ref=e682]: Want to publish your own Article?
+                                  - link "Upgrade to Premium" [ref=e683] [cursor=pointer]:
+                                    - /url: /i/premium_sign_up
+                        - generic [ref=e687]:
+                          - link "6:08 AM · Jun 8, 2026" [ref=e689] [cursor=pointer]:
+                            - /url: /mvanhorn/status/2063865685558903149
+                            - time [ref=e690]: 6:08 AM · Jun 8, 2026
+                          - generic [ref=e691]: ·
+                          - link "1.8M Views" [ref=e692] [cursor=pointer]:
+                            - /url: /mvanhorn/status/2063865685558903149/analytics
+                            - generic [ref=e695]: 1.8M
+                            - generic [ref=e696]: Views
+                        - group "160 replies, 457 reposts, 3844 likes, 12169 bookmarks, 1832977 views" [ref=e699]:
+                          - button "160 Replies. Reply" [ref=e701] [cursor=pointer]:
+                            - generic [ref=e702]:
+                              - img [ref=e705]
+                              - generic [ref=e710]: "160"
+                          - button "457 reposts. Repost" [ref=e712] [cursor=pointer]:
+                            - generic [ref=e713]:
+                              - img [ref=e716]
+                              - generic [ref=e721]: "457"
+                          - button "3844 Likes. Like" [ref=e723] [cursor=pointer]:
+                            - generic [ref=e724]:
+                              - img [ref=e727]
+                              - generic [ref=e732]: 3.8K
+                          - button "12169 Bookmarks. Bookmark" [ref=e734] [cursor=pointer]:
+                            - generic [ref=e735]:
+                              - img [ref=e738]
+                              - generic [ref=e743]: 12K
+                          - button "Share post" [ref=e746] [cursor=pointer]:
+                            - img [ref=e750]
+                        - button "Read 160 replies" [ref=e753] [cursor=pointer]:
+                          - generic [ref=e754]:
+                            - img [ref=e755]
+                            - generic [ref=e759]: Read 160 replies
+            - generic "Trending" [ref=e75]:
+              - generic [ref=e76]:
+                - region "Sign up" [ref=e78]:
+                  - heading "New to X?" [level=2] [ref=e80]:
+                    - generic [ref=e81]: New to X?
+                  - generic [ref=e82]: Sign up now to get your own personalized timeline!
+                  - generic [ref=e83]:
+                    - iframe [ref=e760]:
+                      - button "Sign up with Google. Opens in new tab" [ref=f3e3] [cursor=pointer]:
+                        - generic [ref=f3e5]:
+                          - img [ref=f3e7]
+                          - generic [ref=f3e14]: Sign up with Google
+                    - button "Sign up with Apple" [ref=e99] [cursor=pointer]:
+                      - generic [ref=e100]:
+                        - img [ref=e101]
+                        - generic [ref=e105]: Sign up with Apple
+                    - link "Create account" [ref=e106] [cursor=pointer]:
+                      - /url: /i/flow/signup
+                      - generic [ref=e109]: Create account
+                  - generic [ref=e110]:
+                    - text: By signing up, you agree to the
+                    - link "Terms of Service" [ref=e111] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - text: and
+                    - link "Privacy Policy" [ref=e112] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - text: ", including"
+                    - link "Cookie Use." [ref=e113] [cursor=pointer]:
+                      - /url: https://help.x.com/rules-and-policies/twitter-cookies
+                - complementary "Relevant people" [ref=e115]:
+                  - heading "Relevant people" [level=2] [ref=e117]:
+                    - generic [ref=e118]: Relevant people
+                  - list [ref=e119]:
+                    - listitem [ref=e120] [cursor=pointer]:
+                      - generic [ref=e121]:
+                        - link [ref=e131]:
+                          - /url: /mvanhorn
+                        - generic [ref=e134]:
+                          - generic [ref=e135]:
+                            - generic [ref=e137]:
+                              - link "Matt Van Horn Verified account" [ref=e139]:
+                                - /url: /mvanhorn
+                                - generic [ref=e140]:
+                                  - generic [ref=e142]: Matt Van Horn
+                                  - img "Verified account" [ref=e145]
+                              - link "@mvanhorn" [ref=e150]:
+                                - /url: /mvanhorn
+                                - generic [ref=e152]: "@mvanhorn"
+                            - button "Follow @mvanhorn" [ref=e154]:
+                              - generic [ref=e157]: Follow
+                          - generic [ref=e158]:
+                            - text: Co-founded June ("self-driving oven" acquired by
+                            - link "@webergrills" [ref=e161]:
+                              - /url: /webergrills
+                            - text: ) & the co that became
+                            - link "@Lyft" [ref=e164]:
+                              - /url: /Lyft
+                            - text: ". Building again, more soon. OS:"
+                            - link "@slashlast30days" [ref=e167]:
+                              - /url: /slashlast30days
+                            - text: 30k★
+                            - link "@ppressdev" [ref=e170]:
+                              - /url: /ppressdev
+                            - text: 4.4k★
+                - region "Trending now" [ref=e172]:
+                  - heading "Trending now" [level=1] [ref=e173]
+                  - 'generic "Timeline: Trending now" [ref=e174]':
+                    - generic [ref=e175]:
+                      - heading "What’s happening" [level=2] [ref=e763]:
+                        - generic [ref=e764]: What’s happening
+                      - 'link "Trending in United States #NBAFinals" [ref=e766] [cursor=pointer]':
+                        - generic [ref=e767]:
+                          - generic [ref=e769]: Trending in United States
+                          - generic [ref=e771]: "#NBAFinals"
+                      - link "Sports · Trending Keldon Johnson" [ref=e773] [cursor=pointer]:
+                        - generic [ref=e774]:
+                          - generic [ref=e776]: Sports · Trending
+                          - generic [ref=e777]: Keldon Johnson
+                      - link "Sports · Trending Clarkson" [ref=e779] [cursor=pointer]:
+                        - generic [ref=e780]:
+                          - generic [ref=e782]: Sports · Trending
+                          - generic [ref=e783]: Clarkson
+                      - link "Sports · Trending Knicks Trending with Chuck, Jose Alvarado" [ref=e785] [cursor=pointer]:
+                        - generic [ref=e786]:
+                          - generic [ref=e788]: Sports · Trending
+                          - generic [ref=e789]: Knicks
+                          - generic [ref=e790]:
+                            - text: Trending with
+                            - link "Chuck" [ref=e791]:
+                              - /url: /search?q=Chuck&src=trend_click&vertical=trends
+                            - text: ","
+                            - link "Jose Alvarado" [ref=e792]:
+                              - /url: /search?q=Jose%20Alvarado&src=trend_click&vertical=trends
+                      - link "Show more" [ref=e794] [cursor=pointer]:
+                        - /url: /explore/tabs/for-you
+                        - generic [ref=e795]: Show more
+                - navigation "Footer" [ref=e191]:
+                  - generic [ref=e192]:
+                    - link "Terms of Service" [ref=e193] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - generic [ref=e194]: "|"
+                  - generic [ref=e195]:
+                    - link "Privacy Policy" [ref=e196] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - generic [ref=e197]: "|"
+                  - generic [ref=e198]:
+                    - link "Cookie Policy" [ref=e199] [cursor=pointer]:
+                      - /url: https://support.x.com/articles/20170514
+                    - generic [ref=e200]: "|"
+                  - generic [ref=e201]:
+                    - link "Accessibility" [ref=e202] [cursor=pointer]:
+                      - /url: https://help.x.com/resources/accessibility
+                    - generic [ref=e203]: "|"
+                  - generic [ref=e204]:
+                    - link "Ads info" [ref=e205] [cursor=pointer]:
+                      - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                    - generic [ref=e206]: "|"
+                  - button "More" [ref=e207] [cursor=pointer]:
+                    - generic [ref=e208]:
+                      - text: More
+                      - img [ref=e209]
+                  - generic [ref=e212]: © 2026 X Corp.

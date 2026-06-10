@@ -1,0 +1,51 @@
+- generic [ref=e201]:
+  - button "Dismiss" [ref=e203] [cursor=pointer]
+  - dialog "Log in to X" [ref=e204]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - button [ref=e212] [cursor=pointer]:
+          - img [ref=e215]
+        - generic [ref=e217]:
+          - img [ref=e222]
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - paragraph [ref=e230]: See what's happening
+              - paragraph [ref=e232]: "Select an option below:"
+            - generic [ref=e234]:
+              - generic [ref=e235]:
+                - button "Continue with phone" [ref=e236] [cursor=pointer]:
+                  - generic [ref=e238]:
+                    - img [ref=e240]
+                    - paragraph [ref=e243]: Continue with phone
+                - generic [ref=e246]:
+                  - button "Continue with Google. Opens in new tab" [ref=e248] [cursor=pointer]:
+                    - generic [ref=e250]:
+                      - img [ref=e252]
+                      - generic [ref=e259]: Continue with Google
+                  - iframe
+                - button "Continue with Apple" [ref=e260] [cursor=pointer]:
+                  - generic [ref=e262]:
+                    - img [ref=e264]
+                    - paragraph [ref=e267]: Continue with Apple
+              - paragraph [ref=e271]: or
+              - generic [ref=e274]:
+                - generic: Email or username
+                - textbox "Email or username" [active] [ref=e275]
+                - textbox
+      - generic [ref=e277]:
+        - paragraph [ref=e281]: Continue
+        - paragraph [ref=e285]:
+          - text: By continuing, you agree to our
+          - link "Terms of Service" [ref=e286] [cursor=pointer]:
+            - /url: https://x.com/tos
+          - text: ","
+          - link "Privacy Policy" [ref=e287] [cursor=pointer]:
+            - /url: https://x.com/privacy
+          - text: and
+          - link "Cookie Use" [ref=e288] [cursor=pointer]:
+            - /url: https://help.x.com/rules-and-policies/twitter-cookies
+          - text: .
+    - generic [ref=e289]:
+      - generic [ref=e290]: Scan to get the app
+      - img [ref=e292]:
+        - img [ref=e803]

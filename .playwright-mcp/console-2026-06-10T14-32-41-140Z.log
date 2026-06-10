@@ -1,0 +1,7 @@
+[    1708ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[    1768ms] [ERROR] Not signed in with the identity provider. @ https://x.com/RLanceMartin/status/2064397389189071163:0
+[    2477ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://abs.twimg.com/x-web/x-web/assets/esm-CQI7BUg5.js:16
+[    6781ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[   26832ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[   51868ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[   58764ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064380553919676416&mode=login:0

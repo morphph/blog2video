@@ -1,0 +1,163 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - link "X" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e7]
+  - main [ref=e9]:
+    - generic [ref=e12]:
+      - button "Back" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+      - heading "Post" [level=2] [ref=e17]
+    - article [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - link "user avatar" [ref=e26] [cursor=pointer]:
+              - /url: https://x.com/RLanceMartin
+              - img "user avatar" [ref=e27]
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]:
+                  - link "Lance Martin" [ref=e32] [cursor=pointer]:
+                    - /url: https://x.com/RLanceMartin
+                  - button "Verified account" [ref=e36] [cursor=pointer]:
+                    - img [ref=e37]
+                - link "@RLanceMartin" [ref=e40] [cursor=pointer]:
+                  - /url: https://x.com/RLanceMartin
+              - button "More" [ref=e42] [cursor=pointer]:
+                - img [ref=e43]
+          - generic [ref=e45]:
+            - link "Article cover image Article Designing loops with Fable 5 Mythos-class models like Claude Fable 5 have changed the way many of us work at Anthropic. I want to share two tips for getting the most out of this class of models. Self-correction loops There’s been..." [ref=e46] [cursor=pointer]:
+              - /url: /i/article/2064380553919676416
+              - generic [ref=e47]:
+                - img "Article cover image" [ref=e49]
+                - img "Article" [ref=e50]:
+                  - generic [ref=e51]:
+                    - img [ref=e52]
+                    - text: Article
+              - generic [ref=e54]:
+                - generic [ref=e55]: Designing loops with Fable 5
+                - generic [ref=e56]: Mythos-class models like Claude Fable 5 have changed the way many of us work at Anthropic. I want to share two tips for getting the most out of this class of models. Self-correction loops There’s been...
+            - generic [ref=e57]:
+              - link "5:21 PM · Jun 9, 2026" [ref=e59] [cursor=pointer]:
+                - /url: /RLanceMartin/status/2064397389189071163
+              - generic [ref=e60]:
+                - text: ·
+                - link "1.3M Views" [ref=e61] [cursor=pointer]:
+                  - /url: https://x.com/RLanceMartin/status/2064397389189071163
+                  - generic [ref=e62]: 1.3M
+                  - generic [ref=e63]: Views
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - button "Reply" [ref=e68] [cursor=pointer]:
+              - img [ref=e69]
+            - button "74" [ref=e71] [cursor=pointer]:
+              - generic [ref=e75]:
+                - generic [ref=e77]: "7"
+                - generic [ref=e79]: "4"
+          - generic [ref=e81]:
+            - button "Repost" [ref=e82] [cursor=pointer]:
+              - img [ref=e83]
+            - button "541" [ref=e85] [cursor=pointer]:
+              - generic [ref=e89]:
+                - generic [ref=e91]: "5"
+                - generic [ref=e93]: "4"
+                - generic [ref=e95]: "1"
+          - generic [ref=e97]:
+            - button "Like" [ref=e98] [cursor=pointer]:
+              - img [ref=e99]
+            - button "4460" [ref=e101] [cursor=pointer]:
+              - generic [ref=e102]:
+                - generic [ref=e104]:
+                  - generic [ref=e107]: "4"
+                  - generic [ref=e108]:
+                    - generic [ref=e110]: .
+                    - generic [ref=e112]: "5"
+                - generic [ref=e115]: K
+          - generic [ref=e117]:
+            - button "Bookmark" [ref=e118] [cursor=pointer]:
+              - img [ref=e119]
+            - button "11526" [ref=e121] [cursor=pointer]:
+              - generic [ref=e122]:
+                - generic [ref=e125]:
+                  - generic [ref=e127]: "1"
+                  - generic [ref=e129]: "2"
+                - generic [ref=e132]: K
+          - button "Share" [ref=e133] [cursor=pointer]:
+            - img [ref=e134]
+        - button "Read 74 replies" [ref=e136] [cursor=pointer]:
+          - generic [ref=e137]:
+            - img [ref=e138]
+            - generic [ref=e140]: Read 74 replies
+  - complementary [ref=e141]:
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - heading "New to X?" [level=2] [ref=e145]
+        - generic [ref=e146]:
+          - paragraph [ref=e147]: Sign up now to get your own personalized timeline!
+          - generic [ref=e148]:
+            - button "Sign up with Google" [disabled] [ref=e149]:
+              - img [ref=e150]
+              - text: Sign up with Google
+            - button "Sign up with Apple" [ref=e155] [cursor=pointer]:
+              - img [ref=e156]
+              - text: Sign up with Apple
+            - link "Create account" [ref=e158] [cursor=pointer]:
+              - /url: /i/jf/onboarding/web?mode=signup
+          - paragraph [ref=e159]:
+            - text: By signing up, you agree to the
+            - link "Terms of Service" [ref=e160] [cursor=pointer]:
+              - /url: https://x.com/tos
+            - text: and
+            - link "Privacy Policy" [ref=e161] [cursor=pointer]:
+              - /url: https://x.com/privacy
+            - text: ", including"
+            - link "Cookie Use." [ref=e162] [cursor=pointer]:
+              - /url: https://support.x.com/articles/20170514
+      - generic [ref=e163]:
+        - heading "Relevant people" [level=2] [ref=e164]
+        - generic [ref=e166]:
+          - link "user avatar" [ref=e167] [cursor=pointer]:
+            - /url: https://x.com/RLanceMartin
+            - img "user avatar" [ref=e168]
+          - generic [ref=e170]:
+            - link "Lance Martin @RLanceMartin" [ref=e171] [cursor=pointer]:
+              - /url: /RLanceMartin
+              - generic [ref=e172]: Lance Martin
+              - generic [ref=e173]: "@RLanceMartin"
+            - link "Follow" [ref=e174] [cursor=pointer]:
+              - /url: /i/jf/onboarding/web?mode=login&redirect_after_login=%2FRLanceMartin
+      - navigation "Footer" [ref=e175]:
+        - generic [ref=e176]:
+          - link "Terms of Service" [ref=e177] [cursor=pointer]:
+            - /url: https://x.com/tos
+          - generic [ref=e178]: "|"
+        - generic [ref=e179]:
+          - link "Privacy Policy" [ref=e180] [cursor=pointer]:
+            - /url: https://x.com/privacy
+          - generic [ref=e181]: "|"
+        - generic [ref=e182]:
+          - link "Cookie Policy" [ref=e183] [cursor=pointer]:
+            - /url: https://support.x.com/articles/20170514
+          - generic [ref=e184]: "|"
+        - generic [ref=e185]:
+          - link "Accessibility" [ref=e186] [cursor=pointer]:
+            - /url: https://help.x.com/resources/accessibility
+          - generic [ref=e187]: "|"
+        - generic [ref=e188]:
+          - link "Ads info" [ref=e189] [cursor=pointer]:
+            - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+          - generic [ref=e190]: "|"
+        - button "More" [ref=e191] [cursor=pointer]:
+          - text: More
+          - img [ref=e192]
+        - generic [ref=e194]: © 2026 X Corp.
+  - generic [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]: Don't miss what's happening
+      - generic [ref=e200]: People on X are the first to know.
+    - generic [ref=e201]:
+      - link "Log in" [ref=e202] [cursor=pointer]:
+        - /url: /i/jf/onboarding/web?mode=login
+      - link "Sign up" [ref=e203] [cursor=pointer]:
+        - /url: /i/jf/onboarding/web?mode=signup

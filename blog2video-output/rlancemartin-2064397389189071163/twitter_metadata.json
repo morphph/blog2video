@@ -1,0 +1,20 @@
+{
+  "platform": "x",
+  "post_url": "https://x.com/RLanceMartin/status/2064397389189071163",
+  "article_url": "https://x.com/i/article/2064380553919676416",
+  "author_name": "Lance Martin",
+  "author_handle": "@RLanceMartin",
+  "author_affiliation_known": "LangChain (per task description); teaser text says 'many of us work at Anthropic' — unclear whether Lance moved or is quoting",
+  "article_title": "Designing loops with Fable 5",
+  "article_teaser": "Mythos-class models like Claude Fable 5 have changed the way many of us work at Anthropic. I want to share two tips for getting the most out of this class of models. Self-correction loops There's been...",
+  "cover_image_description": "Title 'Designing loops with Fable 5' left; right shows architecture diagram: AGENT (single screen w/ Anthropic burst icon) dispatches to WORKERS (six screens in 2 rows of 3), output flows to a 'grade' diamond, with a 'loop' arrow returning to AGENT",
+  "published_at": "5:21 PM · Jun 9, 2026",
+  "stats": {
+    "replies": 74,
+    "reposts": 541,
+    "likes": 4460,
+    "bookmarks": 11526,
+    "views": "1.3M"
+  },
+  "extraction_status": "INCOMPLETE — article body not in snapshot; X article is gated behind login; only title + 30-word teaser + cover diagram available"
+}

@@ -1,0 +1,3 @@
+[    1703ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[    6743ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[   16778ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0

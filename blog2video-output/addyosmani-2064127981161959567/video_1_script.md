@@ -1,6 +1,6 @@
 # Loop Engineering：把自己从 prompt 循环里拆出来
 
-## Hook
+[SLIDE 1: cover] (0:00 - 1:27)
 
 "Loop Engineering" 是过去两周 X 上爆火的新词，但 90% 转的人对它的理解还停在"用 Claude Code 写代码的高级技巧"。错了。Google Cloud AI 总监 Addy Osmani 这周长文里第一次把这个词讲清楚——它是 harness 上面一层的设计学科，5 块拼图收敛已经在 Codex 和 Claude Code 两个主流产品里同时发生了。
 
@@ -8,7 +8,7 @@
 
 所以你不再需要选哪个工具，你需要设计的是 loop 本身。
 
-## 全景地图：什么是 Loop
+[SLIDE 2: principle] (1:27 - 3:05)
 
 先把对象立起来。一个能自己跑下去的 loop，需要五件东西，外加一个第六——记忆。
 
@@ -16,11 +16,13 @@
 
 为什么必须有 memory？因为模型在两次 run 之间是失忆的。它每次启动都是冷的。如果你不把状态写在硬盘上，loop 永远只能跑一次。agent 会忘，repo 不会忘。
 
+[SLIDE 3: principle] (3:05 - 3:52)
+
 这就是为什么它跟你之前听过的 agent harness 不一样。harness 是一个 agent 住的那间房子——prompts、tools、sandbox、context 策略，包在模型外面那一层。loop engineering 是房子的上面一层，是给这栋房子接上水电、装上定时器、让它自己换灯泡的那一层。
 
 我们一层一层往下钻。
 
-## 第一层 Automations：心跳
+[SLIDE 4: principle] (3:52 - 6:44)
 
 Automations 是让一个 run 变成 loop 的东西。没有它，你只是手动跑了一次。
 
@@ -32,7 +34,7 @@ Claude Code 走的是另一条路，但到同一个地方。它有 `/loop`——
 
 没有 Automations 这层会怎样？loop 退化成你手动重启的一次性脚本。你又回到了那个"我得记得早上九点点一下"的状态。
 
-## 第二层 Worktrees：并行不变成混乱
+[SLIDE 5: principle] (6:44 - 8:56)
 
 只要你同时跑两个 agent，文件冲突就是迟早的事。两个 agent 改同一个文件，跟两个工程师不沟通就直接 commit 同一行，是完全一样的麻烦。
 
@@ -42,7 +44,7 @@ Codex 把 worktree 直接做进了产品，几条线程同时打同一个 repo �
 
 但有个事得说清楚：worktree 只解决了机械冲突。它没解决人的瓶颈。你的 review 带宽决定了你真正能同时跑几个 agent，不是工具决定的。worktree 让 agent 之间不打架，但你这一个人，本来就是 review 队列的天花板。
 
-## 第三层 Skills：别每次都从零解释你的项目
+[SLIDE 6: principle] (8:56 - 11:35)
 
 Skill 是让 agent 别像金鱼一样每次都问"这个项目用什么 lint 规则、build 怎么跑、为什么这里要这么写"。
 
@@ -54,7 +56,7 @@ skill 真正解决的失败模式是 intent debt——意图债。agent 每次�
 
 顺便澄清一个常见混淆：skill 是写作格式，plugin 是分发方式。你想把几个 skill 打包发给同事，就装进 plugin 里。
 
-## 第四层 Plugins 和 Connectors：让 loop 摸到你真实的工具
+[SLIDE 7: principle] (11:35 - 13:40)
 
 只能看文件系统的 loop，是个很小的 loop。它顶多帮你改改 repo，碰不到外面的世界。
 
@@ -64,7 +66,7 @@ Connectors 是基于 MCP 这个协议建的——agent 可以读你的 issue tra
 
 代价也很现实。loop 一旦能动你真实的环境，写错一个 connector，它就能往生产数据库里发奇怪的 query，往 Slack 里 ping 错人。所以你给它哪些连接、给到什么权限，是你的设计选择，不是它的。
 
-## 第五层 Sub-agents：写代码的那个，别让它给自己打分
+[SLIDE 8: principle] (13:40 - 15:27)
 
 这是整个 loop 里最有用的一刀。
 
@@ -74,11 +76,13 @@ Codex 是你要求的时候才 spawn subagent，几个并行跑完，把结果�
 
 两边最常见的分法是：一个 explore，一个 implement，一个 verify。
 
+[SLIDE 9: principle] (15:27 - 16:36)
+
 但要付的代价是 token。每个 subagent 独立跑模型、独立调工具，账单是叠加的。所以原则是：只在你真的需要第二意见的地方花这个钱。
 
 子 agent 这件事在 loop 里特别关键，因为 loop 是你不在场的时候跑的。一个你信得过的 verifier，是你敢于真的合上笔记本走人的唯一原因。其实 `/goal` 命令底下做的就是同一件事——另起一个新的模型去判它完成没完成，而不是让做事的那个模型自己说"我做完了"。Maker 和 Checker 分开，被一路应用到了停止条件这一层。
 
-## 把整台机器合上看一遍
+[SLIDE 10: image] (16:36 - 19:03)
 
 把五层加上 memory 拼起来，你脑里应该浮现出一张这样的图。
 
@@ -88,7 +92,7 @@ connector 把它接到外面——开 PR、更 ticket。loop 处理不了的事�
 
 注意一下你刚才做了什么。你把这条 loop 设计了一次。中间那些步骤，没有一步是你 prompt 出来的。triage、worktree、起草、review、开 PR——每一步都是 loop 自己走完的。这就是 Steinberger 那句话和 Cherny 那句话落地的样子——你不再是 loop 里那个不停 prompt 的人，你成了写 loop 的人。
 
-## Loop 没替你做的三件事，反而更难了
+[SLIDE 11: checklist] (19:03 - 20:54)
 
 但你不能假装 loop 跑起来你就轻松了。有三个问题，loop 越好用，反而越尖锐。
 
@@ -98,7 +102,7 @@ connector 把它接到外面——开 PR、更 ticket。loop 处理不了的事�
 
 第三是最舒服的姿势往往是最危险的。loop 自己跑着，你很容易就不再有自己的判断，给什么就收什么。这叫 cognitive surrender——认知投降。同一件事，带着判断去做就是放大器，逃避思考去做就是加速器。一样的动作，反向结果。
 
-## 一句心法：建 loop，留下你
+[SLIDE 12: summary] (20:54 - 23:28)
 
 我看下来这件事的本质不是"prompt engineering 死了"。是杠杆点搬家了。
 

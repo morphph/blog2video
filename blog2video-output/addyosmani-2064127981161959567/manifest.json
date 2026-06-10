@@ -1,0 +1,67 @@
+{
+  "video_number": 1,
+  "title": "Loop Engineering：把自己从 prompt 循环里拆出来",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    {
+      "slide_number": 1,
+      "file": "slide_1.html",
+      "estimated_duration_seconds": 87
+    },
+    {
+      "slide_number": 2,
+      "file": "slide_2.html",
+      "estimated_duration_seconds": 98
+    },
+    {
+      "slide_number": 3,
+      "file": "slide_3.html",
+      "estimated_duration_seconds": 47
+    },
+    {
+      "slide_number": 4,
+      "file": "slide_4.html",
+      "estimated_duration_seconds": 172
+    },
+    {
+      "slide_number": 5,
+      "file": "slide_5.html",
+      "estimated_duration_seconds": 132
+    },
+    {
+      "slide_number": 6,
+      "file": "slide_6.html",
+      "estimated_duration_seconds": 159
+    },
+    {
+      "slide_number": 7,
+      "file": "slide_7.html",
+      "estimated_duration_seconds": 125
+    },
+    {
+      "slide_number": 8,
+      "file": "slide_8.html",
+      "estimated_duration_seconds": 107
+    },
+    {
+      "slide_number": 9,
+      "file": "slide_9.html",
+      "estimated_duration_seconds": 69
+    },
+    {
+      "slide_number": 10,
+      "file": "slide_10.html",
+      "estimated_duration_seconds": 147
+    },
+    {
+      "slide_number": 11,
+      "file": "slide_11.html",
+      "estimated_duration_seconds": 111
+    },
+    {
+      "slide_number": 12,
+      "file": "slide_12.html",
+      "estimated_duration_seconds": 154
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.12) 0%, rgba(13, 13, 26, 0) 60%);
+      pointer-events: none;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 50px;
+      line-height: 1.25;
+      position: relative;
+      z-index: 1;
+    }
+    .title .accent { color: #F59E0B; }
+    .quote {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 36px 36px;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 32px;
+    }
+    .quote-mark {
+      font-size: 80px;
+      color: #F59E0B;
+      line-height: 1;
+      font-family: Georgia, serif;
+      margin-bottom: -20px;
+    }
+    .quote-text {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
+    .quote-text .em { color: #F59E0B; }
+    .pair {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .role {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 24px 24px;
+      text-align: center;
+    }
+    .role.maker { border-left: 4px solid #8B5CF6; }
+    .role.checker { border-left: 4px solid #10B981; }
+    .role-tag {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .maker .role-tag { color: #8B5CF6; }
+    .checker .role-tag { color: #10B981; }
+    .role-desc {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">合上笔记本走人<br>需要一个<span class="accent">你信得过的 verifier</span></div>
+    <div class="quote">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">/goal 底下做的是同一件事——<span class="em">另起一个新的模型</span>去判它完成没完成</div>
+    </div>
+    <div class="pair">
+      <div class="role maker">
+        <div class="role-tag">MAKER</div>
+        <div class="role-desc">做事的那个模型</div>
+      </div>
+      <div class="role checker">
+        <div class="role-tag">CHECKER</div>
+        <div class="role-desc">判完成没完成的那个</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

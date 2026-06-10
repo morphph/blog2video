@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      line-height: 1.25;
+    }
+    .title .accent { color: #8B5CF6; }
+    .flow {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .step {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 10px;
+      padding: 16px 20px;
+      text-align: left;
+    }
+    .step-num {
+      font-size: 28px;
+      font-weight: 900;
+      color: #8B5CF6;
+      width: 44px;
+      flex-shrink: 0;
+    }
+    .step-text {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .step-text .em { color: #B0B0CC; font-weight: 400; }
+    .summary {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .summary-tag {
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #10B981;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .summary-text {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .summary-text .em { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">把整台机器合上看一遍</div>
+    <div class="title">你<span class="accent">设计了一次</span>，<br>剩下都是它自己走</div>
+    <div class="flow">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-text">每天早上 <span class="em">Automation</span> 跑起来</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-text">调一个 <span class="em">triage skill</span>，把发现写进 markdown / Linear</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-text">值得做的，开 <span class="em">隔离 worktree</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-text">一个 sub-agent 起草 → 第二个 sub-agent 拿 skill 和测试 <span class="em">review</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-text">Connector <span class="em">开 PR、更 ticket</span>；状态文件留着脊椎</div>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="summary-tag">中间没有一步是你 prompt 出来的</div>
+      <div class="summary-text">你不再是 loop 里 prompt 的人，<span class="em">你成了写 loop 的人</span></div>
+    </div>
+  </div>
+</body>
+</html>

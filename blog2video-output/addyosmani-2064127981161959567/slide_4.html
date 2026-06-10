@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 24px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 60px;
+      line-height: 1.2;
+    }
+    .title .accent { color: #F59E0B; }
+    .cols {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .col {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 28px 28px;
+      text-align: left;
+    }
+    .col-name {
+      font-size: 28px;
+      font-weight: 900;
+      color: #8B5CF6;
+      margin-bottom: 14px;
+    }
+    .col-detail {
+      font-size: 22px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .col-detail code {
+      background: rgba(139, 92, 246, 0.18);
+      color: #C4B5FD;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 18px;
+    }
+    .compare {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+      display: flex;
+      gap: 24px;
+    }
+    .compare-block { flex: 1; }
+    .compare-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #F59E0B;
+      margin-bottom: 6px;
+    }
+    .compare-desc {
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .compare-sep {
+      width: 1px;
+      background: rgba(245, 158, 11, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">第一层 · AUTOMATIONS</div>
+    <div class="title">让一次 run 变成<br>一条<span class="accent">心跳</span></div>
+    <div class="cols">
+      <div class="col">
+        <div class="col-name">Codex</div>
+        <div class="col-detail">Automations tab：选项目、prompt、频率。<br>发现东西进 <strong style="color:#FFF">Triage</strong>，没发现自动归档</div>
+      </div>
+      <div class="col">
+        <div class="col-name">Claude Code</div>
+        <div class="col-detail"><code>/loop</code>、cron task、hooks。<br>合上笔记本就推到 <strong style="color:#FFF">GitHub Actions</strong></div>
+      </div>
+    </div>
+    <div class="compare">
+      <div class="compare-block">
+        <div class="compare-name">/loop · 定时器</div>
+        <div class="compare-desc">按间隔，到点就再跑一次</div>
+      </div>
+      <div class="compare-sep"></div>
+      <div class="compare-block">
+        <div class="compare-name">/goal · 停止条件</div>
+        <div class="compare-desc">另一个模型判完成没完成</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

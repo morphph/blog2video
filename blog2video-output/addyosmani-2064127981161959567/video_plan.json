@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Loop Engineering.",
+    "title_zh": "Loop Engineering：把自己从 prompt 循环里拆出来",
+    "word_count": 4702,
+    "slug": "addyosmani-2064127981161959567"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇围绕 Loop Engineering 一个 thesis 展开：五块拼图 + memory + 三个尖锐问题 + 心法收尾，连贯论证不宜拆分。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Loop Engineering：把自己从 prompt 循环里拆出来"
+      }
+    ]
+  }
+}

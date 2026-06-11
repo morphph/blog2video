@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Loop Engineering 最全指南：从写提示词到设计循环",
+    "title_zh": "Claude Code之父：我不再写提示词了",
+    "word_count": 8727,
+    "slug": "loop-engineering"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇叙述稿是一条强连贯论证：Hook 埋下 Maker/Checker 伏笔，五大模块逐一回放「一个循环的一天」，案例兑现伏笔，原则回指案例——任何 ## 边界切开都会让回钩失去指向，且全部章节支撑同一个 thesis（从提示者到循环设计者的角色转变），不满足「可独立理解的子主题」拆分条件。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "Claude Code之父：我不再写提示词了"
+      }
+    ]
+  }
+}

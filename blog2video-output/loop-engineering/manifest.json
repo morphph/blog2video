@@ -1,0 +1,31 @@
+{
+  "video_number": 1,
+  "title": "Claude Code之父：我不再写提示词了",
+  "cover_photo": "cover_photo.html",
+  "slides": [
+    { "slide_number": 1, "file": "slide_1.html", "type": "cover", "estimated_duration_seconds": 87 },
+    { "slide_number": 2, "file": "slide_2.html", "type": "image", "estimated_duration_seconds": 82 },
+    { "slide_number": 3, "file": "slide_3.html", "type": "image", "estimated_duration_seconds": 101 },
+    { "slide_number": 4, "file": "slide_4.html", "type": "image", "estimated_duration_seconds": 98 },
+    { "slide_number": 5, "file": "slide_5.html", "type": "principle", "estimated_duration_seconds": 64 },
+    { "slide_number": 6, "file": "slide_6.html", "type": "image", "estimated_duration_seconds": 29 },
+    { "slide_number": 7, "file": "slide_7.html", "type": "comparison_cards", "estimated_duration_seconds": 83 },
+    { "slide_number": 8, "file": "slide_8.html", "type": "comparison_cards", "estimated_duration_seconds": 52 },
+    { "slide_number": 9, "file": "slide_9.html", "type": "image", "estimated_duration_seconds": 57 },
+    { "slide_number": 10, "file": "slide_10.html", "type": "image", "estimated_duration_seconds": 36 },
+    { "slide_number": 11, "file": "slide_11.html", "type": "comparison_cards", "estimated_duration_seconds": 58 },
+    { "slide_number": 12, "file": "slide_12.html", "type": "principle", "estimated_duration_seconds": 48 },
+    { "slide_number": 13, "file": "slide_13.html", "type": "principle", "estimated_duration_seconds": 80 },
+    { "slide_number": 14, "file": "slide_14.html", "type": "comparison_cards", "estimated_duration_seconds": 102 },
+    { "slide_number": 15, "file": "slide_15.html", "type": "image", "estimated_duration_seconds": 50 },
+    { "slide_number": 16, "file": "slide_16.html", "type": "quote", "estimated_duration_seconds": 57 },
+    { "slide_number": 17, "file": "slide_17.html", "type": "checklist", "estimated_duration_seconds": 136 },
+    { "slide_number": 18, "file": "slide_18.html", "type": "image", "estimated_duration_seconds": 59 },
+    { "slide_number": 19, "file": "slide_19.html", "type": "image", "estimated_duration_seconds": 85 },
+    { "slide_number": 20, "file": "slide_20.html", "type": "image", "estimated_duration_seconds": 105 },
+    { "slide_number": 21, "file": "slide_21.html", "type": "checklist", "estimated_duration_seconds": 60 },
+    { "slide_number": 22, "file": "slide_22.html", "type": "checklist", "estimated_duration_seconds": 89 },
+    { "slide_number": 23, "file": "slide_23.html", "type": "quote", "estimated_duration_seconds": 28 },
+    { "slide_number": 24, "file": "slide_24.html", "type": "summary", "estimated_duration_seconds": 48 }
+  ]
+}

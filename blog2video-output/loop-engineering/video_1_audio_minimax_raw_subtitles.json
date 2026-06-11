@@ -1,0 +1,972 @@
+[
+  {
+    "text": "Loop Engineering 全网最全指南，来了。我连搞几个通宵，把全网关于 Loop Engineering 的一手材料全部读完，浓缩成今天这一期，一次讲透。",
+    "pronounce_text": "Loop Engineering全网最全指南，来了。我连搞几个通宵，把全网关于Loop Engineering的一手材料全部读完，浓缩成今天这一期，一次讲透。",
+    "time_begin": 0,
+    "time_end": 11417.097505668933,
+    "text_begin": 0,
+    "text_end": 82,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 79
+  },
+  {
+    "text": "先说你大概率正处在的状态。你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。不满意，再改提示词。但有一群人，已经不这么做了。",
+    "pronounce_text": "先说你大概率正处在的状态。你现在用AI写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。不满意，再改提示词。但有一群人，已经不这么做了。",
+    "time_begin": 11556,
+    "time_end": 26850.82993197279,
+    "text_begin": 82,
+    "text_end": 158,
+    "pronounce_text_begin": 79,
+    "pronounce_text_end": 153
+  },
+  {
+    "text": "Claude Code 的负责人 Boris Cherny，直接说过这么一句话：我已经不给 Claude 写提示词了。我的工作，是写循环。My job is to write loops.",
+    "pronounce_text": "Claude Code的负责人Boris Cherny，直接说过这么一句话：我已经不给Claude写提示词了。我的工作，是写循环。My job is to write loops.",
+    "time_begin": 27000,
+    "time_end": 38753.78684807256,
+    "text_begin": 158,
+    "text_end": 252,
+    "pronounce_text_begin": 153,
+    "pronounce_text_end": 243
+  },
+  {
+    "text": "这个循环系统，具体长什么样？与其给你念模块清单，不如带你看一个真实循环的一天。",
+    "pronounce_text": "这个循环系统，具体长什么样？与其给你念模块清单，不如带你看一个真实循环的一天。",
+    "time_begin": 38916,
+    "time_end": 46107.06575963719,
+    "text_begin": 252,
+    "text_end": 291,
+    "pronounce_text_begin": 243,
+    "pronounce_text_end": 282
+  },
+  {
+    "text": "每天早上，一个定时任务自动醒来，在你的仓库上运行。这是循环的心跳，叫 Automation。",
+    "pronounce_text": "每天早上，一个定时任务自动醒来，在你的仓库上运行。这是循环的心跳，叫Automation。",
+    "time_begin": 46260,
+    "time_end": 54263.7641723356,
+    "text_begin": 291,
+    "text_end": 337,
+    "pronounce_text_begin": 282,
+    "pronounce_text_end": 327
+  },
+  {
+    "text": "它做的第一件事，是调用一个 triage skill。Skill 是一份打包好的项目知识，告诉它这个项目里，问题该怎么分流。它读昨天的 CI 失败、新开的 issue、最近的提交。",
+    "pronounce_text": "它做的第一件事，是调用一个triage skill。Skill是一份打包好的项目知识，告诉它这个项目里，问题该怎么分流。它读昨天的CI失败、新开的issue、最近的提交。",
+    "time_begin": 54432,
+    "time_end": 67683.4739229025,
+    "text_begin": 337,
+    "text_end": 427,
+    "pronounce_text_begin": 327,
+    "pronounce_text_end": 412
+  },
+  {
+    "text": "发现的问题，写进一个 markdown 状态文件。这一步很关键，等会儿你就知道为什么。",
+    "pronounce_text": "发现的问题，写进一个markdown状态文件。这一步很关键，等会儿你就知道为什么。",
+    "time_begin": 67824,
+    "time_end": 74411.3469387755,
+    "text_begin": 427,
+    "text_end": 470,
+    "pronounce_text_begin": 412,
+    "pronounce_text_end": 453
+  },
+  {
+    "text": "接下来，对每个值得处理的问题，它开一个隔离的 worktree，一份独立的代码副本。为什么必须隔离？因为多个智能体同时改一份代码，互相踩脚就是灾难。",
+    "pronounce_text": "接下来，对每个值得处理的问题，它开一个隔离的worktree，一份独立的代码副本。为什么必须隔离？因为多个智能体同时改一份代码，互相踩脚就是灾难。",
+    "time_begin": 74556,
+    "time_end": 88701.44217687075,
+    "text_begin": 470,
+    "text_end": 544,
+    "pronounce_text_begin": 453,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "一旦开始并行，隔离不是优化，是底线。",
+    "pronounce_text": "一旦开始并行，隔离不是优化，是底线。",
+    "time_begin": 88901.44217687075,
+    "time_end": 93015.86394557822,
+    "text_begin": 544,
+    "text_end": 562,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 544
+  },
+  {
+    "text": "然后，一个子智能体在 worktree 里起草修复。另一个子智能体，按项目规范和现有测试，审查这份修复。注意这个细节：写的和查的，不是同一个。这是全片最重要的伏笔，马上展开。",
+    "pronounce_text": "然后，一个子智能体在worktree里起草修复。另一个子智能体，按项目规范和现有测试，审查这份修复。注意这个细节：写的和查的，不是同一个。这是全片最重要的伏笔，马上展开。",
+    "time_begin": 93168,
+    "time_end": 109832.80725623583,
+    "text_begin": 562,
+    "text_end": 649,
+    "pronounce_text_begin": 544,
+    "pronounce_text_end": 629
+  },
+  {
+    "text": "审查通过，循环通过 MCP 连接器自动开 PR、更新工单。MCP 是智能体跟真实世界对接的协议。Claude Code 和 Codex 都用它，两边概念一一对应，连接器基本互通。",
+    "pronounce_text": "审查通过，循环通过MCP连接器自动开PR、更新工单。MCP是智能体跟真实世界对接的协议。Claude Code和Codex都用它，两边概念一一对应，连接器基本互通。",
+    "time_begin": 109980,
+    "time_end": 125402.53968253967,
+    "text_begin": 649,
+    "text_end": 738,
+    "pronounce_text_begin": 629,
+    "pronounce_text_end": 711
+  },
+  {
+    "text": "它处理不了的问题呢？落进一个收件箱，等人来看。",
+    "pronounce_text": "它处理不了的问题呢？落进一个收件箱，等人来看。",
+    "time_begin": 125568,
+    "time_end": 129473.44217687075,
+    "text_begin": 738,
+    "text_end": 761,
+    "pronounce_text_begin": 711,
+    "pronounce_text_end": 734
+  },
+  {
+    "text": "一天结束，状态文件记下今天试了什么、过了什么、剩下什么。明天早上，循环从今天停下的地方继续。",
+    "pronounce_text": "一天结束，状态文件记下今天试了什么、过了什么、剩下什么。明天早上，循环从今天停下的地方继续。",
+    "time_begin": 129636,
+    "time_end": 139091.0113378685,
+    "text_begin": 761,
+    "text_end": 807,
+    "pronounce_text_begin": 734,
+    "pronounce_text_end": 780
+  },
+  {
+    "text": "这就是状态文件的意义：智能体每次运行结束都会失忆，状态文件是循环唯一的记忆。",
+    "pronounce_text": "这就是状态文件的意义：智能体每次运行结束都会失忆，状态文件是循环唯一的记忆。",
+    "time_begin": 139291.0113378685,
+    "time_end": 147422.48526077098,
+    "text_begin": 807,
+    "text_end": 845,
+    "pronounce_text_begin": 780,
+    "pronounce_text_end": 818
+  },
+  {
+    "text": "没有它，每天都从零开始。",
+    "pronounce_text": "没有它，每天都从零开始。",
+    "time_begin": 147564,
+    "time_end": 150145.90476190476,
+    "text_begin": 845,
+    "text_end": 857,
+    "pronounce_text_begin": 818,
+    "pronounce_text_end": 830
+  },
+  {
+    "text": "这一整天里，你出现了几次？一次。看收件箱那一次。这就是「我的工作是写循环」的具体含义。",
+    "pronounce_text": "这一整天里，你出现了几次？一次。看收件箱那一次。这就是「我的工作是写循环」的具体含义。",
+    "time_begin": 150300,
+    "time_end": 159882.72108843538,
+    "text_begin": 857,
+    "text_end": 900,
+    "pronounce_text_begin": 830,
+    "pronounce_text_end": 873
+  },
+  {
+    "text": "「写循环」这个姿势，不是凭空冒出来的。过去三年，用 AI 写代码的方式换了好几代，每一代都是被上一代的瓶颈逼出来的。先花一分钟，把这条路快进一遍。",
+    "pronounce_text": "「写循环」这个姿势，不是凭空冒出来的。过去三年，用AI写代码的方式换了好几代，每一代都是被上一代的瓶颈逼出来的。先花一分钟，把这条路快进一遍。",
+    "time_begin": 160020,
+    "time_end": 173573.33333333334,
+    "text_begin": 900,
+    "text_end": 973,
+    "pronounce_text_begin": 873,
+    "pronounce_text_end": 944
+  },
+  {
+    "text": "最早是 Prompt Engineering，研究怎么措辞。但模型越来越聪明，措辞的边际收益一直在递减。于是重心移到 Context Engineering：不纠结说法，转去策划模型能看到什么。",
+    "pronounce_text": "最早是Prompt Engineering，研究怎么措辞。但模型越来越聪明，措辞的边际收益一直在递减。于是重心移到Context Engineering：不纠结说法，转去策划模型能看到什么。",
+    "time_begin": 173736,
+    "time_end": 189251.4195011338,
+    "text_begin": 973,
+    "text_end": 1070,
+    "pronounce_text_begin": 944,
+    "pronounce_text_end": 1039
+  },
+  {
+    "text": "这一层到今天依然重要，但它只管单次调用的质量——写完了谁来确认写对了？依然是你。",
+    "pronounce_text": "这一层到今天依然重要，但它只管单次调用的质量。写完了谁来确认写对了？依然是你。",
+    "time_begin": 189396,
+    "time_end": 196668.33560090704,
+    "text_begin": 1070,
+    "text_end": 1110,
+    "pronounce_text_begin": 1039,
+    "pronounce_text_end": 1078
+  },
+  {
+    "text": "所以下一层是反馈循环：让智能体自己验证自己，跑测试，查日志，打开浏览器看渲染结果。我的判断是，这一层是目前大多数人回报最大的投资点。",
+    "pronounce_text": "所以下一层是反馈循环：让智能体自己验证自己，跑测试，查日志，打开浏览器看渲染结果。我的判断是，这一层是目前大多数人回报最大的投资点。",
+    "time_begin": 196812,
+    "time_end": 210191.18367346938,
+    "text_begin": 1110,
+    "text_end": 1176,
+    "pronounce_text_begin": 1078,
+    "pronounce_text_end": 1144
+  },
+  {
+    "text": "再往上是 Harness，驾驭系统，一句话定义：Agent 等于 Model 加 Harness。",
+    "pronounce_text": "再往上是Harness，驾驭系统，一句话定义：Agent等于Model加Harness。",
+    "time_begin": 210348,
+    "time_end": 216807.6371882086,
+    "text_begin": 1176,
+    "text_end": 1225,
+    "pronounce_text_begin": 1144,
+    "pronounce_text_end": 1188
+  },
+  {
+    "text": "而 Loop Engineering 是这条路的收敛点：不是把一次运行做好，而是设计一个系统，持续调度这些运行。用开车打比方，就是从手动开车，一路升级到运营整个自动驾驶车队。",
+    "pronounce_text": "而Loop Engineering是这条路的收敛点：不是把一次运行做好，而是设计一个系统，持续调度这些运行。用开车打比方，就是从手动开车，一路升级到运营整个自动驾驶车队。",
+    "time_begin": 216972,
+    "time_end": 231291.5918367347,
+    "text_begin": 1225,
+    "text_end": 1312,
+    "pronounce_text_begin": 1188,
+    "pronounce_text_end": 1273
+  },
+  {
+    "text": "Boris Cherny 把这条路压成一条时间线。2023 年，你写代码。2024 年，你提示 Claude 写代码。2025 年，你写循环，让循环提示 Claude。",
+    "pronounce_text": "Boris Cherny把这条路压成一条时间线。两千零二十三年，你写代码。二零二四年，你提示Claude写代码。二零二五年，你写循环，让循环提示Claude。",
+    "time_begin": 231444,
+    "time_end": 246146.72108843538,
+    "text_begin": 1312,
+    "text_end": 1396,
+    "pronounce_text_begin": 1273,
+    "pronounce_text_end": 1352
+  },
+  {
+    "text": "2026 年，你构建系统，运行这些循环。",
+    "pronounce_text": "两千零二十六年，你构建系统，运行这些循环。",
+    "time_begin": 246346.72108843538,
+    "time_end": 250681.73242630385,
+    "text_begin": 1396,
+    "text_end": 1416,
+    "pronounce_text_begin": 1352,
+    "pronounce_text_end": 1373
+  },
+  {
+    "text": "你刚看完的那一天，就停在这条时间线的最后一格。",
+    "pronounce_text": "你刚看完的那一天，就停在这条时间线的最后一格。",
+    "time_begin": 250848,
+    "time_end": 255310.72108843538,
+    "text_begin": 1416,
+    "text_end": 1439,
+    "pronounce_text_begin": 1373,
+    "pronounce_text_end": 1396
+  },
+  {
+    "text": "这套循环的解剖图，最早是 Addy Osmani 画出来的：五个构建模块，加一个贯穿全程的状态层。这个拆法已经成了社区共识。听起来像清单？",
+    "pronounce_text": "这套循环的解剖图，最早是Addy Osmani画出来的：五个构建模块，加一个贯穿全程的状态层。这个拆法已经成了社区共识。听起来像清单？",
+    "time_begin": 255456,
+    "time_end": 267592.91609977325,
+    "text_begin": 1439,
+    "text_end": 1508,
+    "pronounce_text_begin": 1396,
+    "pronounce_text_end": 1463
+  },
+  {
+    "text": "其实你全都见过——就在早上那一天里。我带你回去，一个一个认。",
+    "pronounce_text": "其实你全都见过。就在早上那一天里。我带你回去，一个一个认。",
+    "time_begin": 267792.91609977325,
+    "time_end": 273741.71428571426,
+    "text_begin": 1508,
+    "text_end": 1538,
+    "pronounce_text_begin": 1463,
+    "pronounce_text_end": 1492
+  },
+  {
+    "text": "还记得早上那个自动醒来的定时任务吗？那是第一个模块，Automation，自动化。它解决的失败模式最朴素：没有触发器，循环就得靠你记得去启动——那就不叫循环了。",
+    "pronounce_text": "还记得早上那个自动醒来的定时任务吗？那是第一个模块，Automation，自动化。它解决的失败模式最朴素：没有触发器，循环就得靠你记得去启动。那就不叫循环了。",
+    "time_begin": 273888,
+    "time_end": 288544.28117913834,
+    "text_begin": 1538,
+    "text_end": 1618,
+    "pronounce_text_begin": 1492,
+    "pronounce_text_end": 1571
+  },
+  {
+    "text": "Codex 那边有个 Automations 面板，配好项目、提示词和频率就行。没发现问题的运行，还会自动归档，不来烦你。",
+    "pronounce_text": "Codex那边有个Automations面板，配好项目、提示词和频率就行。没发现问题的运行，还会自动归档，不来烦你。",
+    "time_begin": 288684,
+    "time_end": 297964.86167800456,
+    "text_begin": 1618,
+    "text_end": 1679,
+    "pronounce_text_begin": 1571,
+    "pronounce_text_end": 1629
+  },
+  {
+    "text": "Claude Code 这边是另一套：/loop 让任务按节奏反复跑，Hooks 在生命周期的关键节点挂上命令。",
+    "pronounce_text": "Claude Code这边是另一套：loop让任务按节奏反复跑，Hooks在生命周期的关键节点挂上命令。",
+    "time_begin": 298164.86167800456,
+    "time_end": 306598.19501133787,
+    "text_begin": 1679,
+    "text_end": 1735,
+    "pronounce_text_begin": 1629,
+    "pronounce_text_end": 1681
+  },
+  {
+    "text": "另外有个 /goal，是我最喜欢的设计，先按下不表，案例里讲。",
+    "pronounce_text": "另外有个，goal，是我最喜欢的设计，先按下不表，案例里讲。",
+    "time_begin": 306756,
+    "time_end": 312832.50793650793,
+    "text_begin": 1735,
+    "text_end": 1766,
+    "pronounce_text_begin": 1681,
+    "pronounce_text_end": 1711
+  },
+  {
+    "text": "想让循环在你合上笔记本之后继续转？接上 GitHub Actions 这类 CI 设施就行。",
+    "pronounce_text": "想让循环在你合上笔记本之后继续转？接上GitHub Actions这类CI设施就行。",
+    "time_begin": 312984,
+    "time_end": 319106.94784580497,
+    "text_begin": 1766,
+    "text_end": 1812,
+    "pronounce_text_begin": 1711,
+    "pronounce_text_end": 1753
+  },
+  {
+    "text": "接着，循环给每个问题开了一份独立的代码副本——第二个模块，Worktree。为什么必须隔离，早上说透了，不重复。值得补的是两边的实现：Codex 是内建的，每个线程自动一份。",
+    "pronounce_text": "接着，循环给每个问题开了一份独立的代码副本。第二个模块，Worktree。为什么必须隔离，早上说透了，不重复。值得补的是两边的实现：Codex是内建的，每个线程自动一份。",
+    "time_begin": 319248,
+    "time_end": 335529.67800453515,
+    "text_begin": 1812,
+    "text_end": 1899,
+    "pronounce_text_begin": 1753,
+    "pronounce_text_end": 1838
+  },
+  {
+    "text": "Claude Code 用 git 原生能力：开会话时加 --worktree 参数；或者给子智能体配置写一句 isolation: worktree，干完活还会自动清理。",
+    "pronounce_text": "Claude Code用git原生能力：开会话时加，-worktree参数;或者给子智能体配置写一句isolation:worktree，干完活还会自动清理。",
+    "time_begin": 335700,
+    "time_end": 347883.3560090703,
+    "text_begin": 1899,
+    "text_end": 1985,
+    "pronounce_text_begin": 1838,
+    "pronounce_text_end": 1917
+  },
+  {
+    "text": "那个 triage skill 呢？Skill 是第三个模块，打包好的项目知识。一个文件夹，一个 SKILL.md 写清指令，配上脚本和参考资料。",
+    "pronounce_text": "那个triage skill呢？Skill是第三个模块，打包好的项目知识。一个文件夹，一个SKILL.md写清指令，配上脚本和参考资料。",
+    "time_begin": 348048,
+    "time_end": 359755.3469387755,
+    "text_begin": 1985,
+    "text_end": 2058,
+    "pronounce_text_begin": 1917,
+    "pronounce_text_end": 1985
+  },
+  {
+    "text": "它解决的失败模式你肯定遇过：项目里的门道，每开一次新会话，都得重新教一遍。",
+    "pronounce_text": "它解决的失败模式你肯定遇过：项目里的门道，每开一次新会话，都得重新教一遍。",
+    "time_begin": 359892,
+    "time_end": 366955.3560090703,
+    "text_begin": 2058,
+    "text_end": 2095,
+    "pronounce_text_begin": 1985,
+    "pronounce_text_end": 2022
+  },
+  {
+    "text": "两边格式完全一样，可以手动调用，也能在任务匹配描述时自动触发。这里有个反直觉的实战经验：技能描述要写得越无聊越好。精确、朴素，自动匹配才准。写得花哨，反而触发不准。",
+    "pronounce_text": "两边格式完全一样，可以手动调用，也能在任务匹配描述时自动触发。这里有个反直觉的实战经验：技能描述要写得越无聊越好。精确、朴素，自动匹配才准。写得花哨，反而触发不准。",
+    "time_begin": 367092,
+    "time_end": 384012.2267573696,
+    "text_begin": 2095,
+    "text_end": 2177,
+    "pronounce_text_begin": 2022,
+    "pronounce_text_end": 2104
+  },
+  {
+    "text": "然后是自动开 PR、更新工单那一步——第四个模块，Plugins 和 Connectors，靠 MCP 跟真实世界对接。读 issue tracker、查数据库、往 Slack 发消息，都走这条路。",
+    "pronounce_text": "然后是自动开PR、更新工单那一步。第四个模块，Plugins和Connectors，靠MCP跟真实世界对接。读issue tracker、查数据库、往Slack发消息，都走这条路。",
+    "time_begin": 384156,
+    "time_end": 398429.15192743763,
+    "text_begin": 2177,
+    "text_end": 2276,
+    "pronounce_text_begin": 2104,
+    "pronounce_text_end": 2194
+  },
+  {
+    "text": "两边协议相同、连接器互通，早上说过，不展开。",
+    "pronounce_text": "两边协议相同、连接器互通，早上说过，不展开。",
+    "time_begin": 398629.15192743763,
+    "time_end": 403904.5714285714,
+    "text_begin": 2276,
+    "text_end": 2298,
+    "pronounce_text_begin": 2194,
+    "pronounce_text_end": 2216
+  },
+  {
+    "text": "第五个模块，就是早上埋的那个伏笔：写修复的和审修复的，是两个子智能体。Sub-agents，Maker/Checker 分离。",
+    "pronounce_text": "第五个模块，就是早上埋的那个伏笔：写修复的和审修复的，是两个子智能体。Sub-agents，Maker，Checker分离。",
+    "time_begin": 404064,
+    "time_end": 415945.49659863947,
+    "text_begin": 2298,
+    "text_end": 2361,
+    "pronounce_text_begin": 2216,
+    "pronounce_text_end": 2278
+  },
+  {
+    "text": "Claude Code 这边，子智能体定义在 .claude/agents/ 目录下，还能组成 agent team，互相传活。Codex 那边对应 .codex/agents/，用 TOML 文件写。",
+    "pronounce_text": "Claude Code这边，子智能体定义在.claude，agents，目录下，还能组成agent team，互相传活。Codex那边对应.codex，agents，用TOML文件写。",
+    "time_begin": 416088,
+    "time_end": 429594.8934240363,
+    "text_begin": 2361,
+    "text_end": 2462,
+    "pronounce_text_begin": 2278,
+    "pronounce_text_end": 2370
+  },
+  {
+    "text": "至于为什么必须分开——下一节，用一个真实系统给你看证据。",
+    "pronounce_text": "至于为什么必须分开。下一节，用一个真实系统给你看证据。",
+    "time_begin": 429732,
+    "time_end": 435645.9682539682,
+    "text_begin": 2462,
+    "text_end": 2490,
+    "pronounce_text_begin": 2370,
+    "pronounce_text_end": 2397
+  },
+  {
+    "text": "最后是 State，状态层。它不算第六个模块，更像贯穿前五个的底座。早上你已经看过它救场：智能体会失忆，仓库不会。",
+    "pronounce_text": "最后是State，状态层。它不算第六个模块，更像贯穿前五个的底座。早上你已经看过它救场：智能体会失忆，仓库不会。",
+    "time_begin": 435816,
+    "time_end": 446884.79818594106,
+    "text_begin": 2490,
+    "text_end": 2547,
+    "pronounce_text_begin": 2397,
+    "pronounce_text_end": 2453
+  },
+  {
+    "text": "形式随你挑：一个进度文件，一份 AGENTS.md，甚至一个 Linear 看板，靠 MCP 读写。",
+    "pronounce_text": "形式随你挑：一个进度文件，一份AGENTS.md，甚至一个Linear看板，靠MCP读写。",
+    "time_begin": 447048,
+    "time_end": 455945.73242630385,
+    "text_begin": 2547,
+    "text_end": 2597,
+    "pronounce_text_begin": 2453,
+    "pronounce_text_end": 2498
+  },
+  {
+    "text": "五个模块加一个状态层，拼回去就是早上那一天。这个框架一点都不神秘——你只是刚刚才知道，每个零件叫什么名字。",
+    "pronounce_text": "五个模块加一个状态层，拼回去就是早上那一天。这个框架一点都不神秘。你只是刚刚才知道，每个零件叫什么名字。",
+    "time_begin": 456084,
+    "time_end": 466131.1201814059,
+    "text_begin": 2597,
+    "text_end": 2650,
+    "pronounce_text_begin": 2498,
+    "pronounce_text_end": 2550
+  },
+  {
+    "text": "第一个案例，自动 PR 工作流。流程你已经看过全程，就是早上那一天：从 triage 扫描，到自动开 PR。这里只补一个增量——那个我按下不表的 /goal。",
+    "pronounce_text": "第一个案例，自动PR工作流。流程你已经看过全程，就是早上那一天：从triage扫描，到自动开PR。这里只补一个增量。那个我按下不表的，goal。",
+    "time_begin": 466272,
+    "time_end": 479651.1836734694,
+    "text_begin": 2650,
+    "text_end": 2729,
+    "pronounce_text_begin": 2550,
+    "pronounce_text_end": 2622
+  },
+  {
+    "text": "它的用法，跟你习惯的指挥方式相反。你不说「修复这个 bug」，你说：跑到 test/auth 下所有测试通过、lint 干净为止。你定义的是终态，路径它自己找，失败了自己换思路。",
+    "pronounce_text": "它的用法，跟你习惯的指挥方式相反。你不说「修复这个bug」，你说：跑到test，auth下所有测试通过、lint干净为止。你定义的是终态，路径它自己找，失败了自己换思路。",
+    "time_begin": 479808,
+    "time_end": 496089.67800453515,
+    "text_begin": 2729,
+    "text_end": 2818,
+    "pronounce_text_begin": 2622,
+    "pronounce_text_end": 2707
+  },
+  {
+    "text": "更关键的是裁判。判断终态有没有达成的，是一个独立的小模型，不是写代码的那个智能体自己。",
+    "pronounce_text": "更关键的是裁判。判断终态有没有达成的，是一个独立的小模型，不是写代码的那个智能体自己。",
+    "time_begin": 496260,
+    "time_end": 504728.1632653061,
+    "text_begin": 2818,
+    "text_end": 2861,
+    "pronounce_text_begin": 2707,
+    "pronounce_text_end": 2750
+  },
+  {
+    "text": "你看到的是「设个目标就能走开」，它可信的原因是：裁判和选手，从来不是同一个。为什么必须这样？",
+    "pronounce_text": "你看到的是「设个目标就能走开」，它可信的原因是：裁判和选手，从来不是同一个。为什么必须这样？",
+    "time_begin": 504928.1632653061,
+    "time_end": 516089.8412698413,
+    "text_begin": 2861,
+    "text_end": 2907,
+    "pronounce_text_begin": 2750,
+    "pronounce_text_end": 2796
+  },
+  {
+    "text": "第二个案例，就是证据。",
+    "pronounce_text": "第二个案例，就是证据。",
+    "time_begin": 516240,
+    "time_end": 518520.0453514739,
+    "text_begin": 2907,
+    "text_end": 2918,
+    "pronounce_text_begin": 2796,
+    "pronounce_text_end": 2807
+  },
+  {
+    "text": "第二个案例来自 Claude 背后的团队，一个三智能体 bug 修复循环。他们用的是 GAN 的思路，生成对抗：一边拼命做，一边拼命挑刺。",
+    "pronounce_text": "第二个案例来自Claude背后的团队，一个三智能体bug修复循环。他们用的是GAN的思路，生成对抗：一边拼命做，一边拼命挑刺。",
+    "time_begin": 518688,
+    "time_end": 530824.9160997733,
+    "text_begin": 2918,
+    "text_end": 2987,
+    "pronounce_text_begin": 2807,
+    "pronounce_text_end": 2870
+  },
+  {
+    "text": "三个角色。Planner，规划者，接到一到四句话的问题描述，扩写成完整的修复方案。它被故意限制：只管做什么，不碰实现细节。反直觉吧？规划不是越细越好吗？不是。",
+    "pronounce_text": "三个角色。Planner，规划者，接到一到四句话的问题描述，扩写成完整的修复方案。它被故意限制：只管做什么，不碰实现细节。反直觉吧？规划不是越细越好吗？不是。",
+    "time_begin": 530964,
+    "time_end": 547501.0975056689,
+    "text_begin": 2987,
+    "text_end": 3066,
+    "pronounce_text_begin": 2870,
+    "pronounce_text_end": 2949
+  },
+  {
+    "text": "规划层一旦在技术细节上犯错，错误会向下游级联传播。让它少说，是结构性防御，不是偷懒。",
+    "pronounce_text": "规划层一旦在技术细节上犯错，错误会向下游级联传播。让它少说，是结构性防御，不是偷懒。",
+    "time_begin": 547668,
+    "time_end": 556356.7528344671,
+    "text_begin": 3066,
+    "text_end": 3108,
+    "pronounce_text_begin": 2949,
+    "pronounce_text_end": 2991
+  },
+  {
+    "text": "Generator，执行者，按方案逐步实现，做完给自己打分。分数趋势向好，就继续优化。方向本身错了，就果断推翻，从头来过。",
+    "pronounce_text": "Generator，执行者，按方案逐步实现，做完给自己打分。分数趋势向好，就继续优化。方向本身错了，就果断推翻，从头来过。",
+    "time_begin": 556524,
+    "time_end": 568962.775510204,
+    "text_begin": 3108,
+    "text_end": 3169,
+    "pronounce_text_begin": 2991,
+    "pronounce_text_end": 3052
+  },
+  {
+    "text": "真正的主角是 Evaluator，评审者。它通过 Playwright，像真实用户一样操作应用：点 UI，调 API，查数据库状态。任何一个维度低于阈值，整轮作废，打回重做。",
+    "pronounce_text": "真正的主角是Evaluator，评审者。它通过Playwright，像真实用户一样操作应用：点UI，调API，查数据库状态。任何一个维度低于玉值，整轮作废，打回重做。",
+    "time_begin": 569124,
+    "time_end": 584465.2698412698,
+    "text_begin": 3169,
+    "text_end": 3256,
+    "pronounce_text_begin": 3052,
+    "pronounce_text_end": 3135
+  },
+  {
+    "text": "它能抓到多具体的 bug？两个真实例子。矩形填充工具，只在拖拽的起点和终点放了图块，中间全空——fillRectangle 函数存在，但 mouseUp 的时候没被正确触发。",
+    "pronounce_text": "它能抓到多具体的bug？两个真实例子。矩形填充工具，只在拖拽的起点和终点放了图块，中间全空。fillRectangle函数存在，但mouseUp的时候没被正确触发。",
+    "time_begin": 584604,
+    "time_end": 599864,
+    "text_begin": 3256,
+    "text_end": 3343,
+    "pronounce_text_begin": 3135,
+    "pronounce_text_end": 3217
+  },
+  {
+    "text": "另一个，PUT /frames/reorder 这个路由，定义在 /{frame_id} 之后，框架把 reorder 当成整数 ID 去解析，直接返回 422。",
+    "pronounce_text": "另一个，PUT，frames，reorder这个路由，定义在，“frame，id” 之后，框架把reorder当成整数ID去解析，直接返回四百二十二。",
+    "time_begin": 600012,
+    "time_end": 611765.7868480725,
+    "text_begin": 3343,
+    "text_end": 3424,
+    "pronounce_text_begin": 3217,
+    "pronounce_text_end": 3292
+  },
+  {
+    "text": "这种级别的反馈，靠模型自我批评，永远拿不到。团队的原话是：让模型评判自己的工作，它会自信地称赞自己，哪怕质量明显平庸。",
+    "pronounce_text": "这种级别的反馈，靠模型自我批评，永远拿不到。团队的原话是：让模型评判自己的工作，它会自信地称赞自己，哪怕质量明显平庸。",
+    "time_begin": 611928,
+    "time_end": 623983.6462585034,
+    "text_begin": 3424,
+    "text_end": 3483,
+    "pronounce_text_begin": 3292,
+    "pronounce_text_end": 3351
+  },
+  {
+    "text": "代价当然有。内部数据：标准对话消耗 1 倍 token，单智能体循环约 4 倍，多智能体系统约 15 倍。",
+    "pronounce_text": "代价当然有。内部数据：标准对话消耗一倍token，单智能体循环约四倍，多智能体系统约十五倍。",
+    "time_begin": 624132,
+    "time_end": 633749.5510204082,
+    "text_begin": 3483,
+    "text_end": 3536,
+    "pronounce_text_begin": 3351,
+    "pronounce_text_end": 3397
+  },
+  {
+    "text": "但多智能体在内部评估里，比单智能体好了百分之 90.2。我的看法是，这 15 倍不是浪费。",
+    "pronounce_text": "但多智能体在内部评估里，比单智能体好了百分之九十点二。我的看法是，这十五倍不是浪费。",
+    "time_begin": 633949.5510204082,
+    "time_end": 642591.8639455782,
+    "text_begin": 3536,
+    "text_end": 3581,
+    "pronounce_text_begin": 3397,
+    "pronounce_text_end": 3439
+  },
+  {
+    "text": "你是在花钱买一个结构上才给得了的东西：一个不会给自己放水的裁判。",
+    "pronounce_text": "你是在花钱买一个结构上才给得了的东西：一个不会给自己放水的裁判。",
+    "time_begin": 642744,
+    "time_end": 648692.7981859411,
+    "text_begin": 3581,
+    "text_end": 3613,
+    "pronounce_text_begin": 3439,
+    "pronounce_text_end": 3471
+  },
+  {
+    "text": "把这两个案例拧干，剩下四条原则。",
+    "pronounce_text": "把这两个案例拧干，剩下四条原则。",
+    "time_begin": 648864,
+    "time_end": 652084.4535147392,
+    "text_begin": 3613,
+    "text_end": 3629,
+    "pronounce_text_begin": 3471,
+    "pronounce_text_end": 3487
+  },
+  {
+    "text": "第一条，自验证。智能体必须能端到端验证自己的工作：跑测试，跑 lint，跑类型检查。「我觉得改好了」不算验证，机器可检查的通过或失败，才算。",
+    "pronounce_text": "第一条，自验证。智能体必须能端到端验证自己的工作：跑测试，跑lint，跑类型检查。「我觉得改好了」不算验证，机器可检查的通过或失败，才算。",
+    "time_begin": 652248,
+    "time_end": 667589.2698412698,
+    "text_begin": 3629,
+    "text_end": 3699,
+    "pronounce_text_begin": 3487,
+    "pronounce_text_end": 3556
+  },
+  {
+    "text": "第二条，Maker/Checker 分离。这条你刚看完一整节的证据，不重复。只补一句定位：它是整个循环工程里，最重要的结构性决策。",
+    "pronounce_text": "第二条，Maker，Checker分离。这条你刚看完一整节的证据，不重复。只补一句定位：它是整个循环工程里，最重要的结构性决策。",
+    "time_begin": 667728,
+    "time_end": 680758.8843537415,
+    "text_begin": 3699,
+    "text_end": 3764,
+    "pronounce_text_begin": 3556,
+    "pronounce_text_end": 3620
+  },
+  {
+    "text": "第三条，成功标准必须可检查，而且检查的是正确性本身，不只是指标。因为智能体会作弊，还是合法作弊。为了让测试通过，它可能直接删掉失败的测试。",
+    "pronounce_text": "第三条，成功标准必须可检查，而且检查的是正确性本身，不只是指标。因为智能体会作弊，还是合法作弊。为了让测试通过，它可能直接删掉失败的测试。",
+    "time_begin": 680904,
+    "time_end": 695223.5918367347,
+    "text_begin": 3764,
+    "text_end": 3833,
+    "pronounce_text_begin": 3620,
+    "pronounce_text_end": 3689
+  },
+  {
+    "text": "为了让 lint 通过，它可能用 eslint-disable 把代码淹没。检查全绿，工作稀烂。所以圈子里现在流行一句话：设计评分标准才是真本事，模型反而是简单的部分。Rubric design is the skill now.",
+    "pronounce_text": "为了让lint通过，它可能用eslint-disable把代码淹没。检查全绿，工作稀烂。所以圈子里现在流行一句话：设计评分标准才是真本事，模型反而是简单的部分。Rubric design is the skill now.",
+    "time_begin": 695376,
+    "time_end": 712249.7868480725,
+    "text_begin": 3833,
+    "text_end": 3948,
+    "pronounce_text_begin": 3689,
+    "pronounce_text_end": 3800
+  },
+  {
+    "text": "第四条，熔断。每个循环必须有明确的停止条件。生产环境的参考参数：最多迭代 15 到 25 步，超时三百秒左右，单次成本预算 2 美元上下。",
+    "pronounce_text": "第四条，熔断。每个循环必须有明确的停止条件。生产环境的参考参数：最多迭代十五到二十五步，超时三百秒左右，单次成本预算二美元上下。",
+    "time_begin": 712404,
+    "time_end": 724924.045351474,
+    "text_begin": 3948,
+    "text_end": 4017,
+    "pronounce_text_begin": 3800,
+    "pronounce_text_end": 3864
+  },
+  {
+    "text": "再加一个实用技巧：给每次迭代取哈希指纹，连续三次一模一样，立刻停。不设熔断的循环，就是不设上限的账单。",
+    "pronounce_text": "再加一个实用技巧：给每次迭代取哈希指纹，连续三次一模一样，立刻停。不设熔断的循环，就是不设上限的账单。",
+    "time_begin": 725076,
+    "time_end": 736400.2176870748,
+    "text_begin": 4017,
+    "text_end": 4068,
+    "pronounce_text_begin": 3864,
+    "pronounce_text_end": 3915
+  },
+  {
+    "text": "原则都在了。最后讲怎么从零开始，今晚就动手。入口比你想的近，完全不用一步到位。",
+    "pronounce_text": "原则都在了。最后讲怎么从零开始，今晚就动手。入口比你想的近，完全不用一步到位。",
+    "time_begin": 736560,
+    "time_end": 744436.0544217688,
+    "text_begin": 4068,
+    "text_end": 4107,
+    "pronounce_text_begin": 3915,
+    "pronounce_text_end": 3954
+  },
+  {
+    "text": "第一步还是 /goal。比如你在修一个前端适配问题，别说「帮我修这个 bug」，写成：所有 Playwright 截图和设计稿的像素差异小于百分之一，且 npm test 全部通过。",
+    "pronounce_text": "第一步还是，goal。比如你在修一个前端适配问题，别说「帮我修这个bug」，写成：所有Playwright截图和设计稿的像素差异小于百分之一，且npm test全部通过。",
+    "time_begin": 744588,
+    "time_end": 759673.8503401361,
+    "text_begin": 4107,
+    "text_end": 4198,
+    "pronounce_text_begin": 3954,
+    "pronounce_text_end": 4039
+  },
+  {
+    "text": "设好，去喝杯咖啡。",
+    "pronounce_text": "设好，去喝杯咖啡。",
+    "time_begin": 759873.8503401361,
+    "time_end": 761863.6462585034,
+    "text_begin": 4198,
+    "text_end": 4207,
+    "pronounce_text_begin": 4039,
+    "pronounce_text_end": 4048
+  },
+  {
+    "text": "它自己改代码、跑测试、看结果、再调整。还是案例里那个原则：定义终态，让它自己找路。你身份的转变，就从这一句开始。",
+    "pronounce_text": "它自己改代码、跑测试、看结果、再调整。还是案例里那个原则：定义终态，让它自己找路。你身份的转变，就从这一句开始。",
+    "time_begin": 762012,
+    "time_end": 773812.2267573696,
+    "text_begin": 4207,
+    "text_end": 4263,
+    "pronounce_text_begin": 4048,
+    "pronounce_text_end": 4104
+  },
+  {
+    "text": "等单个 /goal 兜不住任务复杂度了，再上 Dynamic Workflows，动态工作流。它根据你的任务，动态生成一段编排脚本，调度最多上千个并行子智能体。",
+    "pronounce_text": "等单个，goal兜不住任务复杂度了，再上Dynamic Workflows，动态工作流。它根据你的任务，动态生成一段编排脚本，调度最多上千个并行子智能体。",
+    "time_begin": 773964,
+    "time_end": 787726.3129251701,
+    "text_begin": 4263,
+    "text_end": 4343,
+    "pronounce_text_begin": 4104,
+    "pronounce_text_end": 4181
+  },
+  {
+    "text": "最猛的真实案例来自 Bun 的作者：他用这套东西，把 Bun 从 Zig 移植到 Rust。75 万行代码，数百个智能体并行，百分之 99.8 的测试通过，11 天完成。",
+    "pronounce_text": "最猛的真实案例来自Bun的作者：他用这套东西，把Bun从Zig移植到Rust。七十五万行代码，数百个智能体并行，百分之九十九点八的测试通过，十一天完成。",
+    "time_begin": 787896,
+    "time_end": 801228.7437641723,
+    "text_begin": 4343,
+    "text_end": 4428,
+    "pronounce_text_begin": 4181,
+    "pronounce_text_end": 4257
+  },
+  {
+    "text": "但要提醒两句。这个功能目前处于研究预览阶段，不算成熟稳定。它的 token 消耗也显著高于普通会话，先小范围试，确认有效再铺开。",
+    "pronounce_text": "但要提醒两句。这个功能目前处于研究预览阶段，不算成熟稳定。它的token消耗也显著高于普通会话，先小范围试，确认有效再铺开。",
+    "time_begin": 801396,
+    "time_end": 813707.0657596372,
+    "text_begin": 4428,
+    "text_end": 4492,
+    "pronounce_text_begin": 4257,
+    "pronounce_text_end": 4319
+  },
+  {
+    "text": "这三个工具是互补的：/goal 管深度，Dynamic Workflows 管广度，/loop 管持续性。",
+    "pronounce_text": "这三个工具是互补的：goal管深度，Dynamic Workflows管广度，loop管持续性。",
+    "time_begin": 813852,
+    "time_end": 822575.5827664399,
+    "text_begin": 4492,
+    "text_end": 4545,
+    "pronounce_text_begin": 4319,
+    "pronounce_text_end": 4367
+  },
+  {
+    "text": "再往后的路径就清晰了。用 worktree 把并行任务隔离开。",
+    "pronounce_text": "再往后的路径就清晰了。用worktree把并行任务隔离开。",
+    "time_begin": 822744,
+    "time_end": 827798.8299319728,
+    "text_begin": 4545,
+    "text_end": 4576,
+    "pronounce_text_begin": 4367,
+    "pronounce_text_end": 4396
+  },
+  {
+    "text": "在 .claude/agents/ 里定义一个 reviewer 子智能体，把写和查的分离落地：安全审查的盯漏洞，性能审查的盯瓶颈。",
+    "pronounce_text": "在.claude，agents，里定义一个reviewer子智能体，把写和查的分离落地：安全审查的盯漏洞，性能审查的盯瓶颈。",
+    "time_begin": 827998.8299319728,
+    "time_end": 839973.2063492064,
+    "text_begin": 4576,
+    "text_end": 4642,
+    "pronounce_text_begin": 4396,
+    "pronounce_text_end": 4458
+  },
+  {
+    "text": "再建一个 PROGRESS.md，每次运行把经验和坑写进去，下次从进度继续。做到这一步，你就有了一个会过夜的循环。",
+    "pronounce_text": "再建一个PROGRESS.md，每次运行把经验和坑写进去，下次从进度继续。做到这一步，你就有了一个会过夜的循环。",
+    "time_begin": 840132,
+    "time_end": 849668.2811791383,
+    "text_begin": 4642,
+    "text_end": 4699,
+    "pronounce_text_begin": 4458,
+    "pronounce_text_end": 4514
+  },
+  {
+    "text": "成本上有一个十倍杠杆：prompt caching。前面说过多智能体烧 15 倍 token，而用好缓存，token 单价能从每百万 3 美元，降到每百万 0.3 美元。",
+    "pronounce_text": "成本上有一个十倍杠杆：prompt caching。前面说过多智能体烧十五倍token，而用好缓存，token单价能从每百万三美元，降到每百万零点三美元。",
+    "time_begin": 849816,
+    "time_end": 863276.4535147392,
+    "text_begin": 4699,
+    "text_end": 4784,
+    "pronounce_text_begin": 4514,
+    "pronounce_text_end": 4591
+  },
+  {
+    "text": "前提是 prompt 保持追加式增长，中途别换 tools 列表、别换模型——一换，缓存就碎了。给个参照系：三智能体系统生成一个完整应用，单次成本 125 到 200 美元。",
+    "pronounce_text": "前提是prompt保持追加式增长，中途别换tools列表、别换模型。一换，缓存就碎了。给个参照系：三智能体系统生成一个完整应用，单次成本一百二十五到两百美元。",
+    "time_begin": 863424,
+    "time_end": 880088.8072562359,
+    "text_begin": 4784,
+    "text_end": 4871,
+    "pronounce_text_begin": 4591,
+    "pronounce_text_end": 4670
+  },
+  {
+    "text": "日常的 bug 修复循环，应该控制在 2 美元以内。",
+    "pronounce_text": "日常的bug修复循环，应该控制在二美元以内。",
+    "time_begin": 880236,
+    "time_end": 884095.0022675737,
+    "text_begin": 4871,
+    "text_end": 4897,
+    "pronounce_text_begin": 4670,
+    "pronounce_text_end": 4692
+  },
+  {
+    "text": "最后是三个新手最容易踩的坑。第一，工具给太多、描述写太模糊。一个场景，连人类工程师都说不清该用哪个工具，智能体也不可能选对。",
+    "pronounce_text": "最后是三个新手最容易踩的坑。第一，工具给太多、描述写太模糊。一个场景，连人类工程师都说不清该用哪个工具，智能体也不可能选对。",
+    "time_begin": 884232,
+    "time_end": 897866.6031746032,
+    "text_begin": 4897,
+    "text_end": 4959,
+    "pronounce_text_begin": 4692,
+    "pronounce_text_end": 4754
+  },
+  {
+    "text": "少而精的工具集，远好过大而全的工具库。",
+    "pronounce_text": "少而精的工具集，远好过大而全的工具库。",
+    "time_begin": 898066.6031746032,
+    "time_end": 902018.485260771,
+    "text_begin": 4959,
+    "text_end": 4978,
+    "pronounce_text_begin": 4754,
+    "pronounce_text_end": 4773
+  },
+  {
+    "text": "第二，工具出错的时候，返回错误字符串，不要抛异常。传统工程里异常是规范，但在循环里，异常会杀死循环本身，错误字符串才给模型自己纠错的机会。",
+    "pronounce_text": "第二，工具出错的时候，返回错误字符串，不要抛异常。传统工程里异常是规范，但在循环里，异常会杀死循环本身，错误字符串才给模型自己纠错的机会。",
+    "time_begin": 902160,
+    "time_end": 917373.560090703,
+    "text_begin": 4978,
+    "text_end": 5047,
+    "pronounce_text_begin": 4773,
+    "pronounce_text_end": 4842
+  },
+  {
+    "text": "第三，保留失败的痕迹，不要清理现场。失败记录是模型避免重复同样尝试的唯一证据。擦掉失败，等于擦掉证据。",
+    "pronounce_text": "第三，保留失败的痕迹，不要清理现场。失败记录是模型避免重复同样尝试的唯一证据。擦掉失败，等于擦掉证据。",
+    "time_begin": 917532,
+    "time_end": 927497.8503401361,
+    "text_begin": 5047,
+    "text_end": 5098,
+    "pronounce_text_begin": 4842,
+    "pronounce_text_end": 4893
+  },
+  {
+    "text": "到这里，整台机器你都会搭了。合上之前，三个警告。我认为它们比前面所有技巧都值钱。",
+    "pronounce_text": "到这里，整台机器你都会搭了。合上之前，三个警告。我认为它们比前面所有技巧都值钱。",
+    "time_begin": 927648,
+    "time_end": 935477.6145124716,
+    "text_begin": 5098,
+    "text_end": 5138,
+    "pronounce_text_begin": 4893,
+    "pronounce_text_end": 4933
+  },
+  {
+    "text": "最直接的一条：验证永远是你的责任。智能体说 done，只是一个声明，不是一个证明。",
+    "pronounce_text": "最直接的一条：验证永远是你的责任。智能体说done，只是一个声明，不是一个证明。",
+    "time_begin": 935640,
+    "time_end": 944491.2925170067,
+    "text_begin": 5138,
+    "text_end": 5179,
+    "pronounce_text_begin": 4933,
+    "pronounce_text_end": 4973
+  },
+  {
+    "text": "循环跑完了，CI 全绿了，PR 自动开了——这些只代表你设定的检查通过了。而你的检查，可能不够好。",
+    "pronounce_text": "循环跑完了，CI全绿了，PR自动开了。这些只代表你设定的检查通过了。而你的检查，可能不够好。",
+    "time_begin": 944691.2925170067,
+    "time_end": 954482.9931972789,
+    "text_begin": 5179,
+    "text_end": 5228,
+    "pronounce_text_begin": 4973,
+    "pronounce_text_end": 5019
+  },
+  {
+    "text": "比它更隐蔽的，是理解力债务。循环交付得越快，你的代码库里「存在但你不理解」的部分就越大。这不是能优化掉的 bug，它是交付速度的直接副产品。",
+    "pronounce_text": "比它更隐蔽的，是理解力债务。循环交付得越快，你的代码库里「存在但你不理解」的部分就越大。这不是能优化掉的bug，它是交付速度的直接副产品。",
+    "time_begin": 954648,
+    "time_end": 968201.3333333334,
+    "text_begin": 5228,
+    "text_end": 5298,
+    "pronounce_text_begin": 5019,
+    "pronounce_text_end": 5088
+  },
+  {
+    "text": "你只能持续偿还：抽查，读 PR，问为什么。",
+    "pronounce_text": "你只能持续偿还：抽查，读PR，问为什么。",
+    "time_begin": 968401.3333333334,
+    "time_end": 973282.0136054421,
+    "text_begin": 5298,
+    "text_end": 5319,
+    "pronounce_text_begin": 5088,
+    "pronounce_text_end": 5108
+  },
+  {
+    "text": "而我觉得最锋利的，是认知投降这个陷阱。同样是搭循环，出发点不同，结局完全不同。出于工程判断去设计循环，是进步。为了回避思考去设计循环，是灾难的序曲。",
+    "pronounce_text": "而我觉得最锋利的，是认知投降这个陷阱。同样是搭循环，出发点不同，结局完全不同。出于工程判断去设计循环，是进步。为了回避思考去设计循环，是灾难的序曲。",
+    "time_begin": 973440,
+    "time_end": 989802.947845805,
+    "text_begin": 5319,
+    "text_end": 5393,
+    "pronounce_text_begin": 5108,
+    "pronounce_text_end": 5182
+  },
+  {
+    "text": "现在合上全貌。从提示词到循环，每一步的本质都一样：把重复性的判断交给机器，把系统性的设计留给人。",
+    "pronounce_text": "现在合上全貌。从提示词到循环，每一步的本质都一样：把重复性的判断交给机器，把系统性的设计留给人。",
+    "time_begin": 989964,
+    "time_end": 1001590.0770975057,
+    "text_begin": 5393,
+    "text_end": 5441,
+    "pronounce_text_begin": 5182,
+    "pronounce_text_end": 5230
+  },
+  {
+    "text": "循环替你写代码，替不了你当工程师。建造循环，但要以一个打算继续当工程师的人的姿态，去建造它。",
+    "pronounce_text": "循环替你写代码，替不了你当工程师。建造循环，但要以一个打算继续当工程师的人的姿态，去建造它。",
+    "time_begin": 1001736,
+    "time_end": 1010970.4217687075,
+    "text_begin": 5441,
+    "text_end": 5487,
+    "pronounce_text_begin": 5230,
+    "pronounce_text_end": 5276
+  },
+  {
+    "text": "今晚就能做的最小动作：打开 Claude Code，把你本来要一路盯着的那件事，写成一个 `/goal`，给它一个机器能检查的完成条件。你的第一个循环，就这么开始。",
+    "pronounce_text": "今晚就能做的最小动作：打开Claude Code，把你本来要一路盯着的那件事，写成一个，goal，给它一个机器能检查的完成条件。你的第一个循环，就这么开始。",
+    "time_begin": 1011132,
+    "time_end": 1024511.1836734693,
+    "text_begin": 5487,
+    "text_end": 5569,
+    "pronounce_text_begin": 5276,
+    "pronounce_text_end": 5354
+  },
+  {
+    "text": "这期内容的完整文字版指南，我放在公众号的文章里，包括所有命令、参数和成本数据，想动手搭的可以去对照着做。",
+    "pronounce_text": "这期内容的完整文字版指南，我放在公众号的文章里，包括所有命令、参数和成本数据，想动手搭的可以去对照着做。",
+    "time_begin": 1024668,
+    "time_end": 1034250.7210884354,
+    "text_begin": 5569,
+    "text_end": 5621,
+    "pronounce_text_begin": 5354,
+    "pronounce_text_end": 5406
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 1034388,
+    "time_end": 1039489.2698412698,
+    "text_begin": 5621,
+    "text_end": 5648,
+    "pronounce_text_begin": 5406,
+    "pronounce_text_end": 5432
+  }
+]

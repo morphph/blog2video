@@ -1,10 +1,10 @@
 # Claude Code 之父：我不再写提示词了
 
-这里是精读AI。我把这个月关于 Loop Engineering 最重要的几份一手材料——Addy Osmani 的同名文章、Anthropic 的工程博客、Claude Code 负责人 Boris Cherny 的原话——全部读完，整理成一份完整指南，今天一次讲透。
+Loop Engineering 全网最全指南，来了。这里是精读AI。我连搞几个通宵，把这个月关于 Loop Engineering 的一手材料——Addy Osmani 的同名文章、Anthropic 的工程博客、Claude Code 负责人 Boris Cherny 的原话——全部读完，浓缩成今天这一期，一次讲透。
 
 ## Hook
 
-你现在用 AI 写代码，大概率是这个节奏：想清楚要做什么，写一段提示词，看它输出。不满意，再改提示词。但有一群人，已经不这么做了。
+先说你大概率正处在的状态。你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。不满意，再改提示词。但有一群人，已经不这么做了。
 
 Claude Code 的负责人 Boris Cherny，给过一条时间线。2023 年，你写代码。2024 年，你提示 Claude 写代码。2025 年，你写循环，让循环去提示 Claude。2026 年，你构建系统，来运行这些循环。
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #10B981; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 16px; }
+    .sub { font-size: 28px; color: #B0B0CC; margin-bottom: 48px; }
+    .cols { width: 100%; display: flex; gap: 20px; }
+    .col {
+      flex: 1; background: #1A1A2E; border-radius: 12px;
+      padding: 34px 28px; text-align: left;
+      display: flex; flex-direction: column;
+    }
+    .col.codex { border: 1px solid rgba(59,130,246,0.4); border-top: 5px solid #3B82F6; }
+    .col.claude { border: 1px solid rgba(139,92,246,0.45); border-top: 5px solid #8B5CF6; }
+    .col .head { font-size: 32px; font-weight: 800; margin-bottom: 24px; text-align: center; }
+    .col.codex .head { color: #3B82F6; }
+    .col.claude .head { color: #8B5CF6; }
+    .item { margin-bottom: 22px; }
+    .item:last-child { margin-bottom: 0; }
+    .item .name { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .item .desc { font-size: 23px; color: #B0B0CC; line-height: 1.45; }
+    code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 24px; color: #A78BFA;
+      background: rgba(139,92,246,0.12);
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 8px; padding: 2px 10px;
+    }
+    .punch {
+      width: 100%; margin-top: 40px;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.4);
+      border-radius: 12px; padding: 26px 36px;
+      font-size: 30px; font-weight: 700; color: #10B981;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">模块 2 / 5 · WORKTREE</div>
+    <div class="title">每个问题<br>一份独立代码副本</div>
+    <div class="sub">多个智能体同时改一份代码 = 互相踩脚的灾难</div>
+    <div class="cols">
+      <div class="col codex">
+        <div class="head">Codex</div>
+        <div class="item">
+          <div class="name">内建隔离</div>
+          <div class="desc">每个线程<br>自动一份副本</div>
+        </div>
+      </div>
+      <div class="col claude">
+        <div class="head">Claude Code</div>
+        <div class="item">
+          <div class="name">git 原生能力</div>
+          <div class="desc">开会话时加<br><code>--worktree</code> 参数</div>
+        </div>
+        <div class="item">
+          <div class="name">子智能体配置</div>
+          <div class="desc">写一句<br><code>isolation: worktree</code><br>干完活自动清理</div>
+        </div>
+      </div>
+    </div>
+    <div class="punch">并行的前提是隔离 —— 早上说透了，这是底线</div>
+  </div>
+</body>
+</html>

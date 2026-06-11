@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #10B981; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 58px; font-weight: 800; margin-bottom: 44px; }
+    .title code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      color: #10B981;
+    }
+    .vs { width: 100%; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .bad {
+      width: 100%; background: rgba(239,68,68,0.07);
+      border: 1px solid rgba(239,68,68,0.4);
+      border-radius: 12px; padding: 24px 32px;
+      font-size: 30px; text-align: left; color: #B0B0CC;
+    }
+    .bad .tag { color: #EF4444; font-weight: 800; margin-right: 16px; }
+    .good {
+      width: 100%; background: rgba(16,185,129,0.07);
+      border: 1px solid rgba(16,185,129,0.45);
+      border-radius: 12px; padding: 24px 32px;
+      font-size: 30px; text-align: left; line-height: 1.5;
+    }
+    .good .tag { color: #10B981; font-weight: 800; margin-right: 16px; }
+    .good code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 26px; color: #6EE7B7;
+      background: rgba(16,185,129,0.12);
+      border: 1px solid rgba(16,185,129,0.3);
+      border-radius: 8px; padding: 2px 10px;
+    }
+    .mech {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.3);
+      border-left: 5px solid #8B5CF6;
+      border-radius: 12px; padding: 26px 32px;
+      font-size: 28px; text-align: left; line-height: 1.55; color: #B0B0CC;
+      margin-bottom: 32px;
+    }
+    .mech strong { color: #FFFFFF; }
+    .punch {
+      width: 100%;
+      background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.45);
+      border-radius: 12px; padding: 30px 36px;
+      font-size: 36px; font-weight: 800; color: #F59E0B;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">案例一 · 自动 PR 工作流</div>
+    <div class="title">按下不表的 <code>/goal</code><br>跟你习惯的指挥方式相反</div>
+    <div class="vs">
+      <div class="bad"><span class="tag">✕ 指挥路径</span>「修复这个 bug」</div>
+      <div class="good"><span class="tag">✓ 定义终态</span>跑到 <code>test/auth</code> 全部通过、lint 干净为止</div>
+    </div>
+    <div class="mech">路径它自己找，失败了自己换思路。<br>判断终态有没有达成的，是一个<strong>独立的小模型</strong>，<br>不是写代码的那个智能体自己。</div>
+    <div class="punch">裁判和选手，从来不是同一个</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .glow {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%);
+      width: 950px; height: 800px;
+      background: radial-gradient(ellipse at center, rgba(139,92,246,0.15) 0%, rgba(13,13,26,0) 70%);
+      pointer-events: none;
+    }
+    .qmark {
+      font-size: 150px; font-weight: 900; color: #8B5CF6;
+      line-height: 0.8; margin-bottom: 20px; font-family: Georgia, serif;
+    }
+    .quote {
+      font-size: 52px; font-weight: 800; line-height: 1.65;
+      margin-bottom: 56px;
+    }
+    .quote .m { color: #3B82F6; }
+    .quote .h { color: #F59E0B; }
+    .coda {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.35);
+      border-left: 6px solid #8B5CF6;
+      border-radius: 12px; padding: 38px 42px;
+      font-size: 36px; font-weight: 700; line-height: 1.6;
+    }
+    .coda .red { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="qmark">“</div>
+    <div class="quote">把<span class="m">重复性的判断</span><br>交给机器<br><br>把<span class="h">系统性的设计</span><br>留给人</div>
+    <div class="coda">循环替你写代码，<br><span class="red">替不了你当工程师</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #F59E0B; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 58px; font-weight: 800; margin-bottom: 16px; }
+    .sub { font-size: 27px; color: #B0B0CC; margin-bottom: 44px; }
+    .list { width: 100%; display: flex; flex-direction: column; gap: 20px; }
+    .item {
+      width: 100%; background: #1A1A2E;
+      border-radius: 12px; padding: 30px 34px;
+      text-align: left;
+    }
+    .item .name { font-size: 31px; font-weight: 800; margin-bottom: 12px; }
+    .item .desc { font-size: 25px; color: #B0B0CC; line-height: 1.55; }
+    .item .desc strong { color: #FFFFFF; }
+    .i1 { border: 1px solid rgba(239,68,68,0.4); border-left: 5px solid #EF4444; }
+    .i1 .name { color: #EF4444; }
+    .i2 { border: 1px solid rgba(245,158,11,0.4); border-left: 5px solid #F59E0B; }
+    .i2 .name { color: #F59E0B; }
+    .i3 { border: 1px solid rgba(139,92,246,0.45); border-left: 5px solid #8B5CF6; background: rgba(139,92,246,0.06); }
+    .i3 .name { color: #A78BFA; }
+    .tag {
+      display: inline-block; font-size: 20px; font-weight: 700;
+      border-radius: 100px; padding: 3px 14px; margin-left: 12px; vertical-align: middle;
+    }
+    .i1 .tag { background: rgba(239,68,68,0.18); color: #EF4444; }
+    .i2 .tag { background: rgba(245,158,11,0.18); color: #F59E0B; }
+    .i3 .tag { background: rgba(139,92,246,0.2); color: #A78BFA; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">合上之前 · 三个警告</div>
+    <div class="title">比前面所有技巧都值钱</div>
+    <div class="sub">整台机器你都会搭了，但先听完这三句</div>
+    <div class="list">
+      <div class="item i1">
+        <div class="name">验证永远是你的责任<span class="tag">最直接</span></div>
+        <div class="desc">智能体说 done，<strong>是声明，不是证明</strong><br>CI 全绿只代表你设的检查通过了——而你的检查，可能不够好</div>
+      </div>
+      <div class="item i2">
+        <div class="name">理解力债务<span class="tag">最隐蔽</span></div>
+        <div class="desc">交付越快，「存在但你不理解」的代码越多<br>这是速度的副产品，只能持续偿还：<strong>抽查、读 PR、问为什么</strong></div>
+      </div>
+      <div class="item i3">
+        <div class="name">认知投降<span class="tag">最锋利</span></div>
+        <div class="desc">出于<strong>工程判断</strong>去设计循环，是进步<br>为了<strong>回避思考</strong>去设计循环，是灾难的序曲</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

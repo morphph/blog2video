@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 18px; }
+    .subtitle { font-size: 28px; color: #B0B0CC; margin-bottom: 52px; }
+    .modules { width: 100%; display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
+    .mod {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 24px 32px;
+      display: flex; align-items: center; gap: 24px; text-align: left;
+    }
+    .mod .n {
+      flex-shrink: 0; width: 54px; height: 54px; border-radius: 12px;
+      font-size: 28px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .mod .en {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 30px; font-weight: 700; width: 330px; flex-shrink: 0;
+    }
+    .mod .zh { font-size: 27px; color: #B0B0CC; }
+    .m1 { border-left: 5px solid #3B82F6; } .m1 .n { background: rgba(59,130,246,0.15); color: #3B82F6; } .m1 .en { color: #3B82F6; }
+    .m2 { border-left: 5px solid #10B981; } .m2 .n { background: rgba(16,185,129,0.15); color: #10B981; } .m2 .en { color: #10B981; }
+    .m3 { border-left: 5px solid #F59E0B; } .m3 .n { background: rgba(245,158,11,0.15); color: #F59E0B; } .m3 .en { color: #F59E0B; }
+    .m4 { border-left: 5px solid #EF4444; } .m4 .n { background: rgba(239,68,68,0.15); color: #EF4444; } .m4 .en { color: #EF4444; }
+    .m5 { border-left: 5px solid #8B5CF6; } .m5 .n { background: rgba(139,92,246,0.15); color: #8B5CF6; } .m5 .en { color: #8B5CF6; }
+    .state-bar {
+      width: 100%; background: rgba(139,92,246,0.12);
+      border: 1px dashed rgba(139,92,246,0.5);
+      border-radius: 12px; padding: 22px 32px;
+      font-size: 30px; font-weight: 700; color: #A78BFA;
+    }
+    .hint { margin-top: 36px; font-size: 28px; color: #F59E0B; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">循环的解剖图 · Addy Osmani</div>
+    <div class="title">五个构建模块<br>＋一个状态层</div>
+    <div class="subtitle">这个拆法已经成了社区共识</div>
+    <div class="modules">
+      <div class="mod m1"><div class="n">1</div><div class="en">Automation</div><div class="zh">自动化触发</div></div>
+      <div class="mod m2"><div class="n">2</div><div class="en">Worktree</div><div class="zh">隔离的代码副本</div></div>
+      <div class="mod m3"><div class="n">3</div><div class="en">Skill</div><div class="zh">打包好的项目知识</div></div>
+      <div class="mod m4"><div class="n">4</div><div class="en">Connectors</div><div class="zh">MCP 对接真实世界</div></div>
+      <div class="mod m5"><div class="n">5</div><div class="en">Sub-agents</div><div class="zh">写的查的分开</div></div>
+    </div>
+    <div class="state-bar">💾 State 状态层 —— 贯穿全部五个模块的底座</div>
+    <div class="hint">听起来像清单？其实你全都见过——就在早上那一天里</div>
+  </div>
+</body>
+</html>

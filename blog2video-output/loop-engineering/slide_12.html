@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 62px; font-weight: 800; margin-bottom: 36px; }
+    .concept {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.3);
+      border-left: 6px solid #8B5CF6;
+      border-radius: 12px; padding: 36px 40px;
+      margin-bottom: 44px;
+    }
+    .concept .big { font-size: 44px; font-weight: 800; line-height: 1.4; }
+    .concept .big .p { color: #8B5CF6; }
+    .concept .note { font-size: 26px; color: #B0B0CC; margin-top: 16px; }
+    .forms { width: 100%; display: flex; gap: 18px; margin-bottom: 40px; }
+    .f {
+      flex: 1; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 26px 14px;
+    }
+    .f .ic { font-size: 44px; margin-bottom: 12px; }
+    .f .txt { font-size: 25px; font-weight: 600; line-height: 1.4; }
+    .f .txt code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 22px; color: #A78BFA;
+    }
+    .f .sub { font-size: 21px; color: #6B7280; margin-top: 6px; }
+    .punch {
+      width: 100%;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.4);
+      border-radius: 12px; padding: 26px 36px;
+      font-size: 30px; font-weight: 700; color: #10B981; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">STATE · 贯穿五个模块的底座</div>
+    <div class="title">智能体会失忆<br>仓库不会</div>
+    <div class="concept">
+      <div class="big">状态层是循环<span class="p">唯一的记忆</span></div>
+      <div class="note">不算第六个模块，更像前五个共同踩着的地基</div>
+    </div>
+    <div class="forms">
+      <div class="f"><div class="ic">📄</div><div class="txt">进度文件</div><div class="sub">markdown 即可</div></div>
+      <div class="f"><div class="ic">📋</div><div class="txt"><code>AGENTS.md</code></div><div class="sub">项目约定</div></div>
+      <div class="f"><div class="ic">📊</div><div class="txt">Linear 看板</div><div class="sub">靠 MCP 读写</div></div>
+    </div>
+    <div class="punch">五个模块＋一个状态层，拼回去就是早上那一天<br>你只是刚知道每个零件叫什么名字</div>
+  </div>
+</body>
+</html>

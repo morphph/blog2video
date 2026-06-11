@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 52px; }
+    .steps { width: 100%; display: flex; flex-direction: column; align-items: center; }
+    .step {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-left: 5px solid #8B5CF6;
+      border-radius: 12px; padding: 26px 32px;
+      display: flex; align-items: center; gap: 24px; text-align: left;
+    }
+    .step .num {
+      flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(139,92,246,0.18); color: #A78BFA;
+      font-size: 28px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step .txt { font-size: 32px; font-weight: 600; line-height: 1.4; }
+    .step .txt .sub { display: block; font-size: 24px; color: #B0B0CC; font-weight: 400; margin-top: 6px; }
+    code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 28px; color: #A78BFA;
+      background: rgba(139,92,246,0.12);
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 8px; padding: 2px 12px;
+    }
+    .arrow { font-size: 30px; color: #6B7280; margin: 8px 0; }
+    .punch {
+      width: 100%; margin-top: 36px;
+      background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.4);
+      border-radius: 12px; padding: 28px 36px;
+      font-size: 34px; font-weight: 700; color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">一个循环的一天 · 早上</div>
+    <div class="title">定时任务，自动醒来</div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="txt">循环的心跳：<code>Automation</code><span class="sub">每天早上，在你的仓库上自动运行</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="step">
+        <div class="num">2</div>
+        <div class="txt">调用 <code>triage skill</code> 分流问题<span class="sub">读 CI 失败、新 issue、最近提交</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="step">
+        <div class="num">3</div>
+        <div class="txt">发现的问题，写进状态文件<span class="sub">一个 markdown 文件 —— 这步很关键</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="step">
+        <div class="num">4</div>
+        <div class="txt">每个问题，开一个隔离 <code>worktree</code><span class="sub">一份独立的代码副本</span></div>
+      </div>
+    </div>
+    <div class="punch">一旦开始并行，隔离不是优化，是底线</div>
+  </div>
+</body>
+</html>

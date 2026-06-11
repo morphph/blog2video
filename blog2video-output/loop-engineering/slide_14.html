@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 56px; font-weight: 800; margin-bottom: 14px; }
+    .sub { font-size: 27px; color: #B0B0CC; margin-bottom: 40px; }
+    .sub .gan { color: #F59E0B; font-weight: 700; }
+    .agents { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+    .a {
+      width: 100%; background: #1A1A2E; border-radius: 12px;
+      padding: 28px 32px; text-align: left;
+      display: flex; gap: 26px; align-items: flex-start;
+    }
+    .a .who { flex-shrink: 0; width: 250px; }
+    .a .who .en {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 30px; font-weight: 800; display: block;
+    }
+    .a .who .zh { font-size: 24px; color: #B0B0CC; }
+    .a .what { font-size: 25px; line-height: 1.5; color: #B0B0CC; }
+    .a .what strong { color: #FFFFFF; }
+    .a.planner { border: 1px solid rgba(59,130,246,0.4); border-left: 5px solid #3B82F6; }
+    .a.planner .en { color: #3B82F6; }
+    .a.generator { border: 1px solid rgba(16,185,129,0.4); border-left: 5px solid #10B981; }
+    .a.generator .en { color: #10B981; }
+    .a.evaluator { border: 1px solid rgba(239,68,68,0.45); border-left: 5px solid #EF4444; background: rgba(239,68,68,0.05); }
+    .a.evaluator .en { color: #EF4444; }
+    .star {
+      display: inline-block; background: rgba(239,68,68,0.18);
+      color: #EF4444; font-size: 20px; font-weight: 700;
+      border-radius: 100px; padding: 2px 12px; margin-top: 6px;
+    }
+    .insight {
+      width: 100%; margin-top: 32px;
+      background: rgba(245,158,11,0.08);
+      border: 1px dashed rgba(245,158,11,0.5);
+      border-radius: 12px; padding: 24px 32px;
+      font-size: 27px; font-weight: 600; color: #F59E0B; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">案例二 · Claude 背后团队的真实系统</div>
+    <div class="title">三智能体 bug 修复循环</div>
+    <div class="sub">思路来自 <span class="gan">GAN 生成对抗</span>：一边拼命做，一边拼命挑刺</div>
+    <div class="agents">
+      <div class="a planner">
+        <div class="who"><span class="en">Planner</span><span class="zh">规划者</span></div>
+        <div class="what">几句话的问题 → 完整修复方案<br><strong>被故意限制：只管做什么，不碰实现细节</strong><br>规划层犯错会向下游级联，少说是结构性防御</div>
+      </div>
+      <div class="a generator">
+        <div class="who"><span class="en">Generator</span><span class="zh">执行者</span></div>
+        <div class="what">按方案逐步实现，做完<strong>给自己打分</strong><br>趋势向好就继续；方向错了，果断推翻重来</div>
+      </div>
+      <div class="a evaluator">
+        <div class="who"><span class="en">Evaluator</span><span class="zh">评审者</span><span class="star">真正的主角</span></div>
+        <div class="what">通过 Playwright <strong>像真实用户一样操作</strong>：<br>点 UI、调 API、查数据库状态<br>任何维度低于阈值 → <strong>整轮作废，打回重做</strong></div>
+      </div>
+    </div>
+    <div class="insight">反直觉：规划不是越细越好——让它少说，才安全</div>
+  </div>
+</body>
+</html>

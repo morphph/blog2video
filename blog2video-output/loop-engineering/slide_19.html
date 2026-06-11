@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 58px; font-weight: 800; margin-bottom: 14px; }
+    .sub { font-size: 27px; color: #B0B0CC; margin-bottom: 40px; line-height: 1.5; }
+    .case {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.3);
+      border-left: 5px solid #8B5CF6;
+      border-radius: 12px; padding: 30px 34px; margin-bottom: 18px;
+    }
+    .case .head { font-size: 28px; font-weight: 700; margin-bottom: 22px; }
+    .case .head .who { color: #8B5CF6; }
+    .stats { display: flex; gap: 14px; }
+    .st { flex: 1; }
+    .st .num { font-size: 50px; font-weight: 800; color: #F59E0B; }
+    .st .what { font-size: 22px; color: #B0B0CC; margin-top: 4px; }
+    .st.green .num { color: #10B981; }
+    .warns { width: 100%; display: flex; gap: 16px; margin-bottom: 28px; }
+    .w {
+      flex: 1; background: rgba(239,68,68,0.06);
+      border: 1px solid rgba(239,68,68,0.35);
+      border-radius: 12px; padding: 20px 22px;
+      font-size: 24px; color: #B0B0CC; line-height: 1.45;
+    }
+    .w strong { color: #EF4444; }
+    .trio {
+      width: 100%; background: rgba(16,185,129,0.07);
+      border: 1px solid rgba(16,185,129,0.4);
+      border-radius: 12px; padding: 26px 30px;
+      display: flex; gap: 16px; justify-content: space-around;
+    }
+    .trio .t { font-size: 26px; font-weight: 600; }
+    .trio code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 26px; color: #10B981; font-weight: 700; display: block; margin-bottom: 6px;
+    }
+    .trio .t .role { color: #B0B0CC; font-size: 23px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">第二步 · DYNAMIC WORKFLOWS</div>
+    <div class="title">单个 /goal 兜不住了<br>就上动态工作流</div>
+    <div class="sub">按任务动态生成编排脚本，调度最多上千个并行子智能体</div>
+    <div class="case">
+      <div class="head">最猛的真实案例：<span class="who">Bun 作者</span>把 Bun 从 Zig 移植到 Rust</div>
+      <div class="stats">
+        <div class="st"><div class="num">75万</div><div class="what">行代码</div></div>
+        <div class="st"><div class="num">数百</div><div class="what">智能体并行</div></div>
+        <div class="st green"><div class="num">99.8%</div><div class="what">测试通过</div></div>
+        <div class="st green"><div class="num">11天</div><div class="what">完成</div></div>
+      </div>
+    </div>
+    <div class="warns">
+      <div class="w">⚠️ <strong>研究预览阶段</strong><br>不算成熟稳定</div>
+      <div class="w">⚠️ <strong>token 消耗显著更高</strong><br>先小范围试再铺开</div>
+    </div>
+    <div class="trio">
+      <div class="t"><code>/goal</code><span class="role">管深度</span></div>
+      <div class="t"><code>Workflows</code><span class="role">管广度</span></div>
+      <div class="t"><code>/loop</code><span class="role">管持续性</span></div>
+    </div>
+  </div>
+</body>
+</html>

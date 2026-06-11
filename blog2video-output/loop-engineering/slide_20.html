@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #10B981; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 58px; font-weight: 800; margin-bottom: 40px; }
+    .steps { width: 100%; display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+    .row {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-left: 5px solid #10B981;
+      border-radius: 12px; padding: 22px 30px;
+      font-size: 27px; text-align: left; line-height: 1.5;
+    }
+    .row strong { color: #FFFFFF; }
+    .row { color: #B0B0CC; }
+    code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 24px; color: #A78BFA;
+      background: rgba(139,92,246,0.12);
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 8px; padding: 2px 10px;
+    }
+    .lever {
+      width: 100%; background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.45);
+      border-radius: 12px; padding: 28px 34px; margin-bottom: 18px;
+    }
+    .lever .head { font-size: 30px; font-weight: 800; color: #F59E0B; margin-bottom: 16px; }
+    .lever .nums {
+      font-size: 44px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; gap: 24px;
+    }
+    .lever .nums .from { color: #6B7280; text-decoration: line-through; text-decoration-thickness: 4px; }
+    .lever .nums .to { color: #10B981; }
+    .lever .nums .arr { color: #F59E0B; font-size: 36px; }
+    .lever .cond { font-size: 23px; color: #B0B0CC; margin-top: 14px; line-height: 1.5; }
+    .lever .cond strong { color: #EF4444; }
+    .refs { width: 100%; display: flex; gap: 16px; }
+    .ref {
+      flex: 1; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 22px 18px;
+    }
+    .ref .num { font-size: 42px; font-weight: 800; }
+    .ref .what { font-size: 22px; color: #B0B0CC; margin-top: 6px; }
+    .ref.big .num { color: #EF4444; }
+    .ref.small .num { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">再往后的路径 · 一个会过夜的循环</div>
+    <div class="title">把写和查的分离落地</div>
+    <div class="steps">
+      <div class="row">🌳 用 <code>worktree</code> 把并行任务<strong>隔离开</strong></div>
+      <div class="row">🔍 在 <code>.claude/agents/</code> 定义 <strong>reviewer</strong>：安全的盯漏洞，性能的盯瓶颈</div>
+      <div class="row">💾 建 <code>PROGRESS.md</code>，经验和坑写进去，下次<strong>从进度继续</strong></div>
+    </div>
+    <div class="lever">
+      <div class="head">💰 十倍成本杠杆：Prompt Caching</div>
+      <div class="nums"><span class="from">$3</span><span class="arr">→</span><span class="to">$0.3</span><span style="font-size:24px;color:#B0B0CC">/ 百万 token</span></div>
+      <div class="cond">前提：prompt 追加式增长。<strong>中途换 tools 列表、换模型 → 缓存就碎了</strong></div>
+    </div>
+    <div class="refs">
+      <div class="ref big"><div class="num">$125-200</div><div class="what">三智能体生成完整应用 / 次</div></div>
+      <div class="ref small"><div class="num">&lt; $2</div><div class="what">日常 bug 修复循环应控制在</div></div>
+    </div>
+  </div>
+</body>
+</html>

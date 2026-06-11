@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .glow {
+      position: absolute; top: 320px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 700px;
+      background: radial-gradient(ellipse at center, rgba(139,92,246,0.18) 0%, rgba(13,13,26,0) 70%);
+      pointer-events: none;
+    }
+    .series {
+      font-size: 30px; color: #8B5CF6; letter-spacing: 3px;
+      font-weight: 600; margin-bottom: 48px;
+    }
+    .title {
+      font-size: 88px; font-weight: 900; line-height: 1.25; margin-bottom: 56px;
+    }
+    .title .hl { color: #F59E0B; }
+    .quote-card {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.3);
+      border-left: 6px solid #8B5CF6;
+      border-radius: 12px; padding: 44px 40px;
+      text-align: left; margin-bottom: 36px;
+    }
+    .quote-zh {
+      font-size: 42px; font-weight: 700; line-height: 1.5; color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    .quote-zh .red { color: #EF4444; }
+    .quote-en {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 30px; color: #A78BFA; font-weight: 500;
+    }
+    .quote-src {
+      font-size: 26px; color: #B0B0CC; margin-top: 24px;
+    }
+    .quote-src strong { color: #FFFFFF; }
+    .tease {
+      width: 100%; background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.35);
+      border-radius: 12px; padding: 28px 36px;
+      font-size: 32px; font-weight: 600; color: #F59E0B;
+    }
+    .source-pill {
+      margin-top: 48px; background: #1A1A30;
+      border-radius: 100px; padding: 16px 36px;
+      font-size: 22px; color: #6B6B80;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="series">精读AI · LOOP ENGINEERING</div>
+    <div class="title">Claude Code之父：<br><span class="hl">我不再写提示词了</span></div>
+    <div class="quote-card">
+      <div class="quote-zh">「我已经不给 Claude 写提示词了。<br>我的工作，是<span class="red">写循环</span>。」</div>
+      <div class="quote-en">My job is to write loops.</div>
+      <div class="quote-src">—— <strong>Boris Cherny</strong>，Claude Code 负责人</div>
+    </div>
+    <div class="tease">这个循环系统长什么样？<br>带你看一个真实循环的一天</div>
+    <div class="source-pill">Loop Engineering · 全网一手材料精读</div>
+  </div>
+</body>
+</html>

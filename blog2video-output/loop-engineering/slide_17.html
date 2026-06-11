@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #10B981; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 48px; }
+    .list { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+    .item {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 26px 30px;
+      text-align: left; display: flex; gap: 22px; align-items: flex-start;
+    }
+    .item .n {
+      flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(16,185,129,0.15); color: #10B981;
+      font-size: 27px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .item .body { flex: 1; }
+    .item .name { font-size: 30px; font-weight: 700; margin-bottom: 8px; }
+    .item .desc { font-size: 24px; color: #B0B0CC; line-height: 1.5; }
+    .item .desc .warn { color: #EF4444; font-weight: 600; }
+    .item .desc .ok { color: #10B981; font-weight: 600; }
+    .item.i2 { border-color: rgba(245,158,11,0.45); }
+    .item.i2 .n { background: rgba(245,158,11,0.15); color: #F59E0B; }
+    .badge {
+      display: inline-block; background: rgba(245,158,11,0.18);
+      color: #F59E0B; font-size: 20px; font-weight: 700;
+      border-radius: 100px; padding: 2px 12px; margin-left: 10px;
+    }
+    .en-quote {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 22px; color: #A78BFA; display: block; margin-top: 6px;
+    }
+    code {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 22px; color: #A78BFA;
+      background: rgba(139,92,246,0.12);
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 6px; padding: 1px 8px;
+    }
+    .params {
+      display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap;
+    }
+    .params .p {
+      background: #13131F; border: 1px solid rgba(239,68,68,0.35);
+      border-radius: 8px; padding: 8px 16px;
+      font-size: 22px; color: #B0B0CC;
+    }
+    .params .p strong { color: #EF4444; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">两个案例拧干 · 四条原则</div>
+    <div class="title">循环工程四原则</div>
+    <div class="list">
+      <div class="item">
+        <div class="n">1</div>
+        <div class="body">
+          <div class="name">自验证</div>
+          <div class="desc">端到端验证自己：测试、lint、类型检查<br><span class="warn">「我觉得改好了」不算</span>，<span class="ok">机器可检查的通过/失败才算</span></div>
+        </div>
+      </div>
+      <div class="item i2">
+        <div class="n">2</div>
+        <div class="body">
+          <div class="name">Maker / Checker 分离<span class="badge">最重要的结构性决策</span></div>
+          <div class="desc">证据你刚看完一整节，不重复</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="n">3</div>
+        <div class="body">
+          <div class="name">标准可检查，查的是正确性本身</div>
+          <div class="desc">智能体会<span class="warn">合法作弊</span>：删失败的测试、用 <code>eslint-disable</code> 淹没代码——检查全绿，工作稀烂<span class="en-quote">Rubric design is the skill now.</span></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="n">4</div>
+        <div class="body">
+          <div class="name">熔断：不设熔断 = 不设上限的账单</div>
+          <div class="params">
+            <span class="p">最多 <strong>15-25</strong> 步</span>
+            <span class="p">超时 <strong>~300s</strong></span>
+            <span class="p">预算 <strong>~$2</strong>/次</span>
+          </div>
+          <div class="desc" style="margin-top:10px">迭代取哈希指纹，连续 3 次一样 → 立刻停</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

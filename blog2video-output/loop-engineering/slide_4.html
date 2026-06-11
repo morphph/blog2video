@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #8B5CF6; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 52px; line-height: 1.3; }
+    .ladder { width: 100%; display: flex; flex-direction: column; align-items: center; }
+    .rung {
+      width: 100%; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 26px 32px;
+      text-align: left; display: flex; align-items: center; gap: 24px;
+    }
+    .rung .en {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 30px; font-weight: 700; flex-shrink: 0; width: 360px;
+    }
+    .rung .zh { font-size: 26px; color: #B0B0CC; line-height: 1.4; }
+    .rung.r1 { border-left: 5px solid #6B7280; }
+    .rung.r1 .en { color: #6B7280; }
+    .rung.r2 { border-left: 5px solid #3B82F6; }
+    .rung.r2 .en { color: #3B82F6; }
+    .rung.r3 { border-left: 5px solid #10B981; background: rgba(16,185,129,0.07); border-color: rgba(16,185,129,0.4); }
+    .rung.r3 .en { color: #10B981; }
+    .rung.r4 { border-left: 5px solid #8B5CF6; }
+    .rung.r4 .en { color: #8B5CF6; }
+    .arrow { font-size: 28px; color: #6B7280; margin: 6px 0; }
+    .badge {
+      display: inline-block; background: rgba(16,185,129,0.15);
+      color: #10B981; font-size: 22px; font-weight: 700;
+      border-radius: 100px; padding: 4px 16px; margin-top: 8px;
+    }
+    .formula {
+      width: 100%; margin-top: 40px;
+      background: rgba(139,92,246,0.1);
+      border: 1px solid rgba(139,92,246,0.45);
+      border-radius: 12px; padding: 28px 36px;
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 40px; font-weight: 800; color: #A78BFA;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">三年四代 · 每代都被瓶颈逼出来</div>
+    <div class="title">「写循环」是怎么<br>一步步逼出来的</div>
+    <div class="ladder">
+      <div class="rung r1">
+        <div class="en">Prompt<br>Engineering</div>
+        <div class="zh">研究怎么措辞<br>模型变聪明，边际收益递减</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="rung r2">
+        <div class="en">Context<br>Engineering</div>
+        <div class="zh">策划模型能看到什么<br>但只管单次调用的质量</div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="rung r3">
+        <div class="en">Feedback<br>Loops</div>
+        <div class="zh">让它自己跑测试、查日志、看渲染<br><span class="badge">大多数人回报最大的投资点</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="rung r4">
+        <div class="en">Harness</div>
+        <div class="zh">驾驭系统，调度一切</div>
+      </div>
+    </div>
+    <div class="formula">Agent = Model + Harness</div>
+  </div>
+</body>
+</html>

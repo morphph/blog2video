@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #10B981; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 48px; }
+    .title code { font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace; color: #10B981; }
+    .bad {
+      width: 100%; background: rgba(239,68,68,0.07);
+      border: 1px solid rgba(239,68,68,0.4);
+      border-radius: 12px; padding: 22px 32px;
+      font-size: 28px; text-align: left; color: #B0B0CC; margin-bottom: 16px;
+    }
+    .bad .tag { color: #EF4444; font-weight: 800; margin-right: 14px; }
+    .terminal {
+      width: 100%; background: #13131F;
+      border: 1px solid rgba(16,185,129,0.4);
+      border-radius: 12px; overflow: hidden;
+      text-align: left; margin-bottom: 36px;
+    }
+    .terminal .bar {
+      background: #1A1A2E; padding: 14px 24px;
+      display: flex; gap: 10px; align-items: center;
+    }
+    .terminal .dot { width: 16px; height: 16px; border-radius: 50%; }
+    .d1 { background: #EF4444; } .d2 { background: #F59E0B; } .d3 { background: #10B981; }
+    .terminal .code {
+      padding: 30px 34px;
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 27px; line-height: 1.7; color: #B0B0CC;
+    }
+    .terminal .code .cmd { color: #10B981; font-weight: 700; }
+    .terminal .code .zh { font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', sans-serif; color: #E5E5F0; }
+    .terminal .code .kpi { color: #F59E0B; }
+    .loop-steps {
+      width: 100%; display: flex; gap: 12px; margin-bottom: 36px;
+    }
+    .s {
+      flex: 1; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 20px 8px;
+      font-size: 23px; font-weight: 600; color: #B0B0CC;
+    }
+    .arrow-cell { display: flex; align-items: center; color: #6B7280; font-size: 24px; }
+    .punch {
+      width: 100%;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.45);
+      border-radius: 12px; padding: 28px 36px;
+      font-size: 32px; font-weight: 700; color: #10B981; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">从零开始 · 今晚就动手</div>
+    <div class="title">第一步，还是 <code>/goal</code></div>
+    <div class="bad"><span class="tag">✕</span>「帮我修这个 bug」</div>
+    <div class="terminal">
+      <div class="bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+      <div class="code"><span class="cmd">/goal</span> <span class="zh">所有 Playwright 截图和设计稿</span><br><span class="zh">像素差异</span> <span class="kpi">&lt; 1%</span><span class="zh">，且</span> npm test <span class="zh">全部通过</span></div>
+    </div>
+    <div class="loop-steps">
+      <div class="s">改代码</div><div class="arrow-cell">→</div>
+      <div class="s">跑测试</div><div class="arrow-cell">→</div>
+      <div class="s">看结果</div><div class="arrow-cell">→</div>
+      <div class="s">再调整</div>
+    </div>
+    <div class="punch">☕ 设好，去喝杯咖啡<br>你身份的转变，就从这一句开始</div>
+  </div>
+</body>
+</html>

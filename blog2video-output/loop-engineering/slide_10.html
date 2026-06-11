@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label {
+      font-size: 28px; color: #EF4444; letter-spacing: 3px; font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .title { font-size: 60px; font-weight: 800; margin-bottom: 52px; line-height: 1.3; }
+    .hub {
+      width: 100%; display: flex; flex-direction: column; align-items: center;
+    }
+    .mcp-core {
+      background: rgba(139,92,246,0.15);
+      border: 2px solid #8B5CF6;
+      border-radius: 16px; padding: 28px 64px;
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      font-size: 52px; font-weight: 800; color: #A78BFA;
+      margin-bottom: 16px;
+    }
+    .mcp-sub { font-size: 26px; color: #B0B0CC; margin-bottom: 36px; }
+    .targets { width: 100%; display: flex; gap: 18px; margin-bottom: 40px; }
+    .t {
+      flex: 1; background: #1A1A2E;
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 28px 16px;
+    }
+    .t .ic { font-size: 48px; margin-bottom: 12px; }
+    .t .txt { font-size: 26px; font-weight: 600; color: #B0B0CC; }
+    .punch {
+      width: 100%;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.4);
+      border-radius: 12px; padding: 26px 36px;
+      font-size: 30px; font-weight: 700; color: #10B981; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">模块 4 / 5 · PLUGINS &amp; CONNECTORS</div>
+    <div class="title">智能体跟真实世界<br>对接的协议</div>
+    <div class="hub">
+      <div class="mcp-core">MCP</div>
+      <div class="mcp-sub">自动开 PR、更新工单，走的就是这条路</div>
+      <div class="targets">
+        <div class="t"><div class="ic">🎫</div><div class="txt">读 issue<br>tracker</div></div>
+        <div class="t"><div class="ic">🗄️</div><div class="txt">查<br>数据库</div></div>
+        <div class="t"><div class="ic">💬</div><div class="txt">往 Slack<br>发消息</div></div>
+      </div>
+      <div class="punch">Claude Code 和 Codex 协议相同<br>概念一一对应，连接器基本互通</div>
+    </div>
+  </div>
+</body>
+</html>

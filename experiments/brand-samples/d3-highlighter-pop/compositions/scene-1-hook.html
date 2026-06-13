@@ -1,0 +1,333 @@
+<template id="scene-1-hook-template">
+  <div data-composition-id="scene-1-hook" data-width="1080" data-height="1920">
+    <div class="s1-stage" id="s1-stage">
+      <!-- decorative halftone (corner dots) -->
+      <svg class="s1-halftone" id="s1-halftone" width="260" height="260" viewBox="0 0 260 260" aria-hidden="true">
+        <defs>
+          <pattern id="s1-ht" width="36" height="36" patternUnits="userSpaceOnUse">
+            <circle cx="9" cy="9" r="5.5" fill="#191919"></circle>
+          </pattern>
+        </defs>
+        <rect width="260" height="260" fill="url(#s1-ht)" opacity="0.08"></rect>
+      </svg>
+
+      <!-- orange badge (decorative sticker) -->
+      <div class="s1-badge" id="s1-badge">
+        <span class="s1-badge-line">全网</span>
+        <span class="s1-badge-line">最全</span>
+      </div>
+
+      <div class="s1-content">
+        <div class="s1-tag" id="s1-tag">精读AI · <span class="s1-tag-en">LOOP&nbsp;ENGINEERING</span></div>
+
+        <div class="s1-title-en" id="s1-title-en">
+          <span class="s1-tw">Loop</span> <span class="s1-tw">Engineering</span>
+        </div>
+
+        <div class="s1-title-zh" id="s1-title-zh">
+          <span class="s1-tc">全</span><span class="s1-tc">网</span><span class="s1-tc">最</span><span class="s1-tc">全</span><span class="s1-tc">指</span><span class="s1-tc">南</span>
+        </div>
+
+        <div class="s1-hero" id="s1-hero">
+          <svg class="s1-burst-svg" viewBox="0 0 620 300" aria-hidden="true">
+            <path class="s1-burst" d="M96,70 L48,30"></path>
+            <path class="s1-burst" d="M210,48 L196,8"></path>
+            <path class="s1-burst" d="M340,44 L352,8"></path>
+            <path class="s1-burst" d="M472,66 L518,30"></path>
+            <path class="s1-burst" d="M556,140 L604,128"></path>
+            <path class="s1-burst" d="M486,232 L530,264"></path>
+            <path class="s1-burst" d="M160,242 L118,272"></path>
+            <path class="s1-burst" d="M44,150 L8,142"></path>
+          </svg>
+          <span class="s1-hc">来</span><span class="s1-hc">了</span><span class="s1-hc">。</span>
+        </div>
+
+        <div class="s1-chips">
+          <div class="s1-chip s1-chip-1" id="s1-chip-1"><span class="s1-chip-num">01</span>连搞几个通宵</div>
+          <div class="s1-chip s1-chip-2" id="s1-chip-2"><span class="s1-chip-num">02</span>全网一手材料读完</div>
+          <div class="s1-chip s1-chip-3" id="s1-chip-3"><span class="s1-chip-num">03</span>浓缩成这一期</div>
+        </div>
+
+        <div class="s1-final" id="s1-final">
+          <span class="s1-final-wrap">
+            <span class="s1-final-bar" id="s1-final-bar"></span>
+            <span class="s1-final-text">一次讲透</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'Smiley Sans';
+        src: url('../assets/fonts/SmileySans-Oblique.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Semibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      [data-composition-id='scene-1-hook'] {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        background: #f2efe6;
+        overflow: hidden;
+        color: #191919;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-1-hook'] .s1-stage {
+        position: absolute;
+        inset: 0;
+        transform-origin: 540px 880px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-halftone {
+        position: absolute;
+        right: -34px;
+        top: 600px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-badge {
+        position: absolute;
+        top: 168px;
+        right: 66px;
+        width: 158px;
+        height: 158px;
+        border-radius: 50%;
+        background: #ff7a1a;
+        border: 3px solid #191919;
+        box-shadow: 6px 6px 0 #191919;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(10deg);
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 46px;
+        line-height: 1.05;
+      }
+      [data-composition-id='scene-1-hook'] .s1-badge-line {
+        display: block;
+      }
+      [data-composition-id='scene-1-hook'] .s1-content {
+        width: 100%;
+        height: 100%;
+        padding: 176px 72px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tag {
+        display: inline-flex;
+        align-items: baseline;
+        padding: 12px 26px;
+        background: #ffffff;
+        border: 3px solid #191919;
+        border-radius: 14px;
+        box-shadow: 6px 6px 0 #191919;
+        transform: rotate(-2deg);
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 1px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tag-en {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 26px;
+        margin-left: 6px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-en {
+        margin-top: 38px;
+        max-width: 936px;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 132px;
+        line-height: 1.04;
+        letter-spacing: -0.02em;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tw {
+        display: inline-block;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-zh {
+        margin-top: 14px;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 104px;
+        line-height: 1.1;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tc {
+        display: inline-block;
+      }
+      [data-composition-id='scene-1-hook'] .s1-hero {
+        position: relative;
+        margin-top: 24px;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 148px;
+        line-height: 1.1;
+      }
+      [data-composition-id='scene-1-hook'] .s1-hc {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+      [data-composition-id='scene-1-hook'] .s1-burst-svg {
+        position: absolute;
+        left: -75px;
+        top: -60px;
+        width: 620px;
+        height: 300px;
+        z-index: 0;
+        pointer-events: none;
+        overflow: visible;
+      }
+      [data-composition-id='scene-1-hook'] .s1-burst {
+        fill: none;
+        stroke: #ff7a1a;
+        stroke-width: 8;
+        stroke-linecap: round;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chips {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        padding: 9px 26px 9px 12px;
+        background: #ffffff;
+        border: 3px solid #191919;
+        border-radius: 16px;
+        box-shadow: 8px 8px 0 #191919;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-1 {
+        transform: rotate(-1.5deg);
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-2 {
+        transform: rotate(1deg);
+        margin-left: 38px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-3 {
+        transform: rotate(-0.8deg);
+        margin-left: 16px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-num {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+        border-radius: 50%;
+        background: #ff7a1a;
+        border: 3px solid #191919;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 22px;
+        font-variant-numeric: tabular-nums;
+        box-sizing: border-box;
+      }
+      [data-composition-id='scene-1-hook'] .s1-final {
+        margin-top: 34px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-final-wrap {
+        position: relative;
+        display: inline-block;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 96px;
+        line-height: 1.15;
+      }
+      [data-composition-id='scene-1-hook'] .s1-final-bar {
+        position: absolute;
+        top: -2px;
+        bottom: 0;
+        left: -16px;
+        right: -18px;
+        background: #ffd43a;
+        border-radius: 8px;
+        transform: skewX(-3deg) scaleX(0);
+        transform-origin: left center;
+        z-index: 0;
+      }
+      [data-composition-id='scene-1-hook'] .s1-final-text {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var SCOPE = "[data-composition-id='scene-1-hook'] ";
+        var tl = gsap.timeline({ paused: true });
+
+        // burst lines: prepare stroke-draw (deterministic, hardcoded fallback)
+        var bursts = document.querySelectorAll(SCOPE + '.s1-burst');
+        bursts.forEach(function (p) {
+          var len = 90;
+          try {
+            len = p.getTotalLength() || 90;
+          } catch (e) {}
+          gsap.set(p, { strokeDasharray: len, strokeDashoffset: len });
+        });
+
+        // ambient breathing: scale 1.00 -> 1.04 over whole scene
+        tl.to(SCOPE + '.s1-stage', { scale: 1.04, duration: 13.38, ease: 'none' }, 0);
+
+        // 0.15 halftone decoration fades in
+        tl.from(SCOPE + '.s1-halftone', { opacity: 0, duration: 0.5, ease: 'power1.out' }, 0.15);
+
+        // 0.2 series tag sticker slap
+        tl.from(SCOPE + '.s1-tag', { opacity: 0, duration: 0.12, ease: 'power1.out' }, 0.2);
+        tl.from(SCOPE + '.s1-tag', { scale: 1.15, rotation: -6, duration: 0.35, ease: 'back.out(1.4)' }, 0.2);
+
+        // 0.5-1.6 kinetic title: EN words slam, then ZH chars slam
+        tl.from(SCOPE + '.s1-tw', { y: 54, opacity: 0, scale: 1.06, duration: 0.45, ease: 'power3.out', stagger: 0.14 }, 0.5);
+        tl.from(SCOPE + '.s1-tc', { y: 40, opacity: 0, duration: 0.4, ease: 'power3.out', stagger: 0.05 }, 1.0);
+
+        // 1.8 orange badge sticker slap
+        tl.from(SCOPE + '.s1-badge', { opacity: 0, duration: 0.12, ease: 'power1.out' }, 1.8);
+        tl.from(SCOPE + '.s1-badge', { scale: 1.5, rotation: 26, duration: 0.4, ease: 'back.out(1.6)' }, 1.8);
+
+        // 3.3 HERO MOMENT #1: 来了。 char-by-char slam + orange burst frame
+        tl.from(SCOPE + '.s1-hc', { scale: 1.45, y: 12, opacity: 0, duration: 0.32, ease: 'back.out(2)', stagger: 0.11 }, 3.3);
+        tl.to(SCOPE + '.s1-burst', { strokeDashoffset: 0, duration: 0.28, ease: 'power2.out', stagger: 0.03 }, 3.78);
+
+        // 5.0 / 6.8 / 9.6 credential chips sticker-slap
+        [['.s1-chip-1', 5.0], ['.s1-chip-2', 6.8], ['.s1-chip-3', 9.6]].forEach(function (it) {
+          tl.from(SCOPE + it[0], { opacity: 0, duration: 0.15, ease: 'power1.out' }, it[1]);
+          tl.from(SCOPE + it[0], { scale: 1.12, rotation: '+=4', y: 18, duration: 0.35, ease: 'back.out(1.4)' }, it[1]);
+        });
+
+        // 11.0 一次讲透 enters, 11.35 signature highlighter sweep
+        tl.from(SCOPE + '.s1-final', { y: 34, opacity: 0, duration: 0.4, ease: 'power2.out' }, 11.0);
+        tl.to(SCOPE + '.s1-final-bar', { scaleX: 1, duration: 0.4, ease: 'power1.inOut' }, 11.35);
+
+        window.__timelines['scene-1-hook'] = tl;
+      })();
+    </script>
+  </div>
+</template>

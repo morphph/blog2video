@@ -1,0 +1,261 @@
+<template id="scene-1-hook-template">
+  <div data-composition-id="scene-1-hook" data-width="1080" data-height="1920">
+    <div class="s1-grid"></div>
+    <div class="s1-content">
+      <div class="s1-topbar">
+        <div class="s1-brand">精读AI · LOOP ENGINEERING<span class="s1-brand-cursor"></span></div>
+        <div class="s1-index">[01/03]</div>
+      </div>
+      <div class="s1-title-en">
+        <div class="s1-line1">LOOP</div>
+        <div class="s1-line2">ENGINEERING</div>
+      </div>
+      <div class="s1-title-zh">全网最全指南</div>
+      <div class="s1-arrive">
+        <span class="s1-arrive-text">来了。</span>
+        <span class="s1-cursor"></span>
+      </div>
+      <div class="s1-chips">
+        <div class="s1-chip s1-chip-1"><span class="s1-chip-idx">01</span><span class="s1-chip-txt">连搞几个通宵</span></div>
+        <div class="s1-chip s1-chip-2"><span class="s1-chip-idx">02</span><span class="s1-chip-txt">全网一手材料读完</span></div>
+        <div class="s1-chip s1-chip-3"><span class="s1-chip-idx">03</span><span class="s1-chip-txt">浓缩成这一期</span></div>
+      </div>
+      <div class="s1-punch">
+        <span class="s1-punch-wrap"><span class="s1-punch-bar"></span><span class="s1-punch-text">一次讲透</span></span>
+      </div>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Demibold.ttf') format('truetype');
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Heavy.ttf') format('truetype');
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+      }
+
+      [data-composition-id='scene-1-hook'] {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        background: #121212;
+        overflow: hidden;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-1-hook'] .s1-grid {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(237, 235, 230, 0.9) 1px,
+          rgba(237, 235, 230, 0) 1.5px
+        );
+        background-size: 56px 56px;
+        background-position: 28px 28px;
+        opacity: 0.045;
+        -webkit-mask-image: radial-gradient(
+          ellipse 75% 62% at 50% 45%,
+          #000 50%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        mask-image: radial-gradient(
+          ellipse 75% 62% at 50% 45%,
+          #000 50%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+      [data-composition-id='scene-1-hook'] .s1-content {
+        width: 100%;
+        height: 100%;
+        padding: 176px 72px 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        transform-origin: 50% 45%;
+      }
+      [data-composition-id='scene-1-hook'] .s1-topbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 25px;
+        font-weight: 500;
+        color: #8a8a85;
+        letter-spacing: 0.04em;
+      }
+      [data-composition-id='scene-1-hook'] .s1-brand-cursor {
+        display: inline-block;
+        width: 13px;
+        height: 26px;
+        background: #ccff4d;
+        margin-left: 10px;
+        vertical-align: -4px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-index {
+        color: #ccff4d;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-en {
+        margin-top: 84px;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 112px;
+        line-height: 1.06;
+        letter-spacing: -0.03em;
+        color: #edebe6;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-zh {
+        margin-top: 28px;
+        font-weight: 900;
+        font-size: 92px;
+        line-height: 1.1;
+        color: #edebe6;
+        letter-spacing: 0.01em;
+      }
+      [data-composition-id='scene-1-hook'] .s1-arrive {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+      }
+      [data-composition-id='scene-1-hook'] .s1-arrive-text {
+        font-weight: 900;
+        font-size: 108px;
+        line-height: 1.1;
+        color: #edebe6;
+      }
+      [data-composition-id='scene-1-hook'] .s1-cursor {
+        display: inline-block;
+        width: 54px;
+        height: 86px;
+        background: #ccff4d;
+        margin-left: 18px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chips {
+        margin-top: 54px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        background: #1c1c1e;
+        border: 1px solid #2a2a2c;
+        padding: 20px 30px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-idx {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+        font-size: 26px;
+        color: #ccff4d;
+        letter-spacing: 0.05em;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-txt {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.2;
+        color: #edebe6;
+      }
+      [data-composition-id='scene-1-hook'] .s1-punch {
+        margin-top: 52px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-punch-wrap {
+        position: relative;
+        display: inline-block;
+        padding: 6px 14px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-punch-bar {
+        position: absolute;
+        inset: 0;
+        background: #ccff4d;
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      [data-composition-id='scene-1-hook'] .s1-punch-text {
+        position: relative;
+        z-index: 1;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 1.15;
+        color: #edebe6;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var R = "[data-composition-id='scene-1-hook'] ";
+        var tl = gsap.timeline({ paused: true });
+
+        tl.from(R + '.s1-grid', { opacity: 0, duration: 0.5, ease: 'power1.out' }, 0.02);
+        tl.from(R + '.s1-topbar', { y: -16, opacity: 0, duration: 0.3, ease: 'power2.out' }, 0.2);
+        tl.from(R + '.s1-line1', { x: -48, opacity: 0, duration: 0.35, ease: 'expo.out' }, 0.5);
+        tl.from(R + '.s1-line2', { x: 48, opacity: 0, duration: 0.35, ease: 'power3.out' }, 0.72);
+        tl.from(R + '.s1-title-zh', { y: 24, opacity: 0, duration: 0.35, ease: 'power3.out' }, 1.1);
+
+        /* hero moment #1 — 「来了。」 block cursor lands in one beat (no bounce) */
+        tl.from(R + '.s1-arrive-text', { opacity: 0, duration: 0.18, ease: 'power1.in' }, 3.3);
+        tl.from(
+          R + '.s1-cursor',
+          { scale: 2.6, opacity: 0, duration: 0.3, ease: 'expo.out' },
+          3.32
+        );
+        tl.to(
+          R + '.s1-cursor',
+          { opacity: 0, duration: 0.38, ease: 'steps(1)', repeat: 7, yoyo: true },
+          4.1
+        );
+
+        tl.from(R + '.s1-chip-1', { x: -28, opacity: 0, duration: 0.3, ease: 'power3.out' }, 5.0);
+        tl.from(R + '.s1-chip-2', { y: 20, opacity: 0, duration: 0.3, ease: 'power2.out' }, 6.8);
+        tl.from(R + '.s1-chip-3', { x: 28, opacity: 0, duration: 0.3, ease: 'expo.out' }, 9.6);
+
+        /* signature highlight — acid block sweeps over 「一次讲透」 */
+        tl.from(R + '.s1-punch', { opacity: 0, duration: 0.15, ease: 'power1.out' }, 11.12);
+        tl.to(R + '.s1-punch-bar', { scaleX: 1, duration: 0.3, ease: 'power4.inOut' }, 11.2);
+        tl.to(
+          R + '.s1-punch-text',
+          { color: '#121212', duration: 0.12, ease: 'power1.inOut' },
+          11.34
+        );
+
+        /* ambient breathing 1.00 -> 1.04 */
+        tl.to(R + '.s1-content', { scale: 1.04, duration: 13.38, ease: 'none' }, 0);
+
+        window.__timelines['scene-1-hook'] = tl;
+      })();
+    </script>
+  </div>
+</template>

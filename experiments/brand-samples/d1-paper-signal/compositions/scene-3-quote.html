@@ -1,0 +1,365 @@
+<template id="scene-3-quote-template">
+  <div
+    data-composition-id="scene-3-quote"
+    data-start="0"
+    data-duration="11.76"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div class="bg-noise"></div>
+    <div class="s3-fade" id="s3-fade">
+      <div class="s3-qm" id="s3-qm">「</div>
+      <div class="s3-frame">
+        <div class="s3-kicker" id="s3-kicker">
+          <div class="s3-kicker-rule" id="s3-kicker-rule"></div>
+          <div class="s3-kicker-en">BORIS CHERNY</div>
+          <div class="s3-kicker-cn">Claude Code 负责人</div>
+        </div>
+        <div class="s3-quote" id="s3-quote">
+          <div class="s3-line1" id="s3-line1"><span class="w">我</span><span class="w">已经</span><span class="w">不给</span><span class="w en">Claude</span><span class="w">写</span><span class="w">提示词</span><span class="w">了。</span></div>
+          <div class="s3-line2" id="s3-line2">
+            <span class="s3-l2a" id="s3-l2a">我的工作，是</span><span class="s3-hl-wrap" id="s3-hl-wrap"><span class="s3-hl-bar" id="s3-hl-bar"></span><span class="s3-hl-text" id="s3-l2b">写循环。</span></span>
+          </div>
+          <div class="s3-en" id="s3-en">
+            <span class="s3-en-text" id="s3-en-text">My job is to write loops.</span>
+            <span class="s3-cursor" id="s3-cursor"></span>
+          </div>
+        </div>
+        <div class="s3-end" id="s3-end-row">
+          <div class="s3-stamp" id="s3-stamp">
+            <div>精读</div>
+            <div>AI</div>
+          </div>
+          <div class="s3-end-text" id="s3-end-text">
+            <div class="s3-end-cn">精读AI · 全网最全指南系列</div>
+            <div class="s3-end-en">LOOP ENGINEERING · EP.01</div>
+          </div>
+        </div>
+      </div>
+      <div class="s3-footer" id="s3-footer">
+        <span>PAPER SIGNAL · NO.01</span>
+        <span>精读AI 专栏</span>
+      </div>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Regular.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      [data-composition-id='scene-3-quote'] {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f6f2e9;
+        color: #1c1a16;
+        overflow: hidden;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-3-quote'] .bg-noise {
+        position: absolute;
+        inset: 0;
+        background: none;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-fade {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      [data-composition-id='scene-3-quote'] .s3-qm {
+        position: absolute;
+        top: 318px;
+        left: 40px;
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 210px;
+        line-height: 1;
+        color: rgba(28, 26, 22, 0.1);
+        z-index: 0;
+        pointer-events: none;
+      }
+      [data-composition-id='scene-3-quote'] .s3-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 220px 84px 0 84px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        z-index: 1;
+      }
+      [data-composition-id='scene-3-quote'] .s3-kicker-rule {
+        width: 56px;
+        height: 2px;
+        background: #1c1a16;
+        margin-bottom: 16px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-kicker-en {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 5px;
+        color: #3e5c76;
+      }
+      [data-composition-id='scene-3-quote'] .s3-kicker-cn {
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #6e6a5f;
+        margin-top: 10px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-quote {
+        margin-top: 76px;
+        will-change: transform;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line1 {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 78px;
+        line-height: 1.4;
+        color: #1c1a16;
+        max-width: 900px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line1 .w {
+        display: inline-block;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line1 .w.en {
+        margin: 0 0.14em;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line2 {
+        margin-top: 40px;
+        display: flex;
+        align-items: baseline;
+      }
+      [data-composition-id='scene-3-quote'] .s3-l2a {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 700;
+        font-size: 78px;
+        line-height: 1.2;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hl-wrap {
+        position: relative;
+        display: inline-block;
+        padding: 4px 12px 8px 12px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hl-bar {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        right: 0;
+        bottom: 4px;
+        background: #d9603b;
+        opacity: 0.45;
+        transform: scaleX(0) skewX(-2deg);
+        transform-origin: left center;
+        border-radius: 6px;
+        z-index: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hl-text {
+        position: relative;
+        z-index: 1;
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 100px;
+        line-height: 1.15;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-3-quote'] .s3-en {
+        position: relative;
+        margin-top: 52px;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.2;
+        color: #3e5c76;
+        white-space: nowrap;
+      }
+      [data-composition-id='scene-3-quote'] .s3-cursor {
+        position: absolute;
+        left: 0;
+        top: -2px;
+        width: 3px;
+        height: 52px;
+        background: #3e5c76;
+        opacity: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-end {
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-stamp {
+        width: 116px;
+        height: 116px;
+        border: 4px solid #b3382c;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 3px;
+        color: #b3382c;
+        transform: rotate(-5deg);
+        opacity: 0.92;
+        box-sizing: border-box;
+      }
+      [data-composition-id='scene-3-quote'] .s3-end-cn {
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #6e6a5f;
+      }
+      [data-composition-id='scene-3-quote'] .s3-end-en {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: #6e6a5f;
+        margin-top: 10px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-footer {
+        position: absolute;
+        left: 84px;
+        right: 84px;
+        top: 1330px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1.5px solid rgba(28, 26, 22, 0.18);
+        padding-top: 14px;
+        font-family: 'JetBrains Mono', 'MiSans', monospace;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: #6e6a5f;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      (function () {
+        // Build typewriter char spans synchronously (deterministic)
+        var enText = document.getElementById('s3-en-text');
+        var raw = enText.textContent;
+        enText.textContent = '';
+        var chars = [];
+        for (var i = 0; i < raw.length; i++) {
+          var sp = document.createElement('span');
+          sp.textContent = raw[i];
+          sp.style.opacity = '0';
+          sp.className = 's3-ch';
+          enText.appendChild(sp);
+          chars.push(sp);
+        }
+        var CHAR_W = 24; // JetBrains Mono 40px -> 0.6em advance
+        var N = raw.length; // 25
+
+        var tl = gsap.timeline({ paused: true });
+
+        // Local time = global - 28.84
+        // 29.3 attribution kicker
+        tl.from('#s3-kicker', { x: -26, opacity: 0, duration: 0.45, ease: 'power2.out' }, 0.46);
+        tl.from('#s3-kicker-rule', { scaleX: 0, transformOrigin: 'left center', duration: 0.5, ease: 'power2.inOut' }, 0.6);
+        tl.from('#s3-footer', { opacity: 0, duration: 0.6, ease: 'sine.out' }, 1.1);
+
+        // hanging quote mark drifts in with the quote
+        tl.from('#s3-qm', { opacity: 0, duration: 0.8, ease: 'sine.out' }, 1.9);
+
+        // 31.0 quote line 1: word-level stagger
+        tl.from(
+          "[data-composition-id='scene-3-quote'] .s3-line1 .w",
+          { y: 22, opacity: 0, duration: 0.4, ease: 'power2.out', stagger: 0.055 },
+          2.16
+        );
+
+        // ambient: gentle paper push on the quote block
+        tl.to('#s3-quote', { scale: 1.015, duration: 8.8, ease: 'none', transformOrigin: 'center center' }, 2.2);
+
+        // 35.9 quote line 2 — climax 「写循环」 hero moment #2
+        tl.from('#s3-l2a', { y: 26, opacity: 0, duration: 0.45, ease: 'power3.out' }, 7.06);
+        tl.from(
+          '#s3-hl-wrap',
+          { y: 30, opacity: 0, scale: 1.06, transformOrigin: 'left bottom', duration: 0.4, ease: 'power2.out' },
+          7.2
+        );
+        // de-emphasize line 1 while the climax lands (emphasis signal)
+        tl.to('#s3-line1', { opacity: 0.45, duration: 0.45, ease: 'power1.inOut' }, 7.1);
+        // heaviest marker sweep of the film
+        tl.to('#s3-hl-bar', { scaleX: 1, duration: 0.5, ease: 'power1.inOut' }, 7.45);
+
+        // 37.2 English mono line — typewriter + cursor
+        tl.set('#s3-cursor', { opacity: 1 }, 8.3);
+        tl.to(
+          "[data-composition-id='scene-3-quote'] .s3-ch",
+          { opacity: 1, duration: 0.02, ease: 'none', stagger: 0.046 },
+          8.36
+        );
+        tl.to('#s3-cursor', { x: CHAR_W * N, duration: 0.046 * N, ease: 'steps(' + N + ')' }, 8.36);
+        // cursor blink after typing completes (finite repeats)
+        tl.to('#s3-cursor', { opacity: 0, duration: 0.32, ease: 'steps(1)', repeat: 4, yoyo: true }, 9.7);
+
+        // 39.6 end chip: series seal stamp
+        tl.from(
+          '#s3-stamp',
+          { scale: 1.2, opacity: 0, duration: 0.3, ease: 'power2.out', transformOrigin: 'center center' },
+          10.76
+        );
+        tl.from('#s3-end-text', { x: -18, opacity: 0, duration: 0.4, ease: 'power2.out' }, 10.9);
+
+        // 40.1+ final ease-out (only scene allowed an exit)
+        tl.to('#s3-fade', { opacity: 0, duration: 0.5, ease: 'power1.in' }, 11.26);
+
+        window.__timelines['scene-3-quote'] = tl;
+      })();
+    </script>
+  </div>
+</template>

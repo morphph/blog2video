@@ -47,6 +47,26 @@ Chrome 逐帧捕获后 FFmpeg 合成 MP4,`<audio>` 元素直接作为时间轴�
 | preview 中子合成音频偏移 bug(#1174,render 正确) | 仅影响预览体验 | 知悉即可,以 render 为准 |
 | 长视频渲染时长/内存 | 17 分钟 ×30fps=31k+ 帧 | `--workers auto`(每 worker ~256MB);`benchmark` 找最优参数;draft CRF 出样片 |
 | 中文字体打包 | 渲染器自打包字体 | arm-b 已验证 PingFang/Noto Sans SC 正常;新品牌字体选 OFL/免费商用、本地安装 |
+| **大号 CJK 字体 OOM(实测踩到)** | 本机 8GB RAM,渲染 worker 跑 node v20 默认堆 ~2GB | 见下方「实测教训」,投产必须处理 |
+
+### 实测教训(2026-06-13 渲三支样片时踩到,投产必读)
+
+渲染 worker 不是用我装 CLI 的 node v22,而是 spawn `/usr/local/bin/node`(**v20.17.0,默认堆 ~2GB**)。
+本机只有 **8GB RAM**。三支样片里,d2/d3(MiSans/得意黑,字体文件小)一次过;**d1「纸面信号」用思源宋体,
+两个 OTF 各 23–24MB(共 47MB)被逐文件 base64 嵌入,叠加 headless Chrome 对大号宋体字形的逐帧栅格化,
+堆涨到 2.3GB 触发 `FATAL ERROR: Reached heap limit - JavaScript heap out of memory`(SIGABRT/exit 134),连崩 3 次**。
+
+修复(两手并用后 exit 0,耗时 225s):
+1. **一个字重只留一个文件**:把 700/Bold 的 `@font-face` 指向 Heavy 同一个 OTF(Heavy 本就比 Bold 重,次级标题视觉无损),
+   47MB → 24MB,Chrome 常驻字体内存减半。**禁止同一字族嵌入多个大 CJK OTF**。
+2. **加大堆**:`NODE_OPTIONS="--max-old-space-size=5120" hyperframes render --workers 1`。
+3. 并发渲染会叠加内存(两个 `--workers 2` 同跑直接 OOM)——**8GB 机器上样片串行渲、`--workers 1`**。
+
+对投产的影响(尤其选了 d1 宋体方向时):
+- 字体子集化(只保留用到的字形)能把 24MB OTF 砍到几百 KB,根治内存与体积 —— 进 Phase 2 工具链。
+- 单集 17 分钟(31k 帧)远超 40s 样片,内存/时长风险更高:优先考虑**分场景渲染 + ffmpeg concat**,
+  或在内存更大的机器/`cloud render` 上跑;`--docker` 同时锁定 node 版本(避免 worker 落回 v20 默认堆)。
+- 与风险表 #1348(>600s encode 被 kill)叠加:长视频务必分段。
 
 ---
 

@@ -1,0 +1,301 @@
+<template id="scene-1-hook-template">
+  <div
+    data-composition-id="scene-1-hook"
+    data-start="0"
+    data-duration="13.38"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div class="bg-noise"></div>
+    <div class="s1-breathe" id="s1-breathe">
+      <div class="s1-frame">
+        <div class="s1-tag" id="s1-tag">
+          <span class="s1-tag-rule" id="s1-tag-rule"></span>
+          <span class="s1-tag-text">精读AI · LOOP ENGINEERING</span>
+        </div>
+        <div class="s1-title">
+          <div class="s1-title-en" id="s1-t1">Loop</div>
+          <div class="s1-title-en" id="s1-t2">Engineering</div>
+          <div class="s1-title-cn" id="s1-t3">全网最全指南</div>
+        </div>
+        <div class="s1-stamp-row">
+          <div class="s1-stamp" id="s1-stamp">来了。</div>
+        </div>
+        <div class="s1-chips">
+          <div class="s1-chip" id="s1-chip1">
+            <span class="s1-chip-num">01</span>
+            <span class="s1-chip-text">连搞几个通宵</span>
+          </div>
+          <div class="s1-chip" id="s1-chip2">
+            <span class="s1-chip-num">02</span>
+            <span class="s1-chip-text">全网一手材料读完</span>
+          </div>
+          <div class="s1-chip" id="s1-chip3">
+            <span class="s1-chip-num">03</span>
+            <span class="s1-chip-text">浓缩成这一期</span>
+          </div>
+        </div>
+        <div class="s1-final" id="s1-final">
+          <span class="s1-hl-wrap">
+            <span class="s1-hl-bar" id="s1-hl-bar"></span>
+            <span class="s1-hl-text">一次讲透</span>
+          </span>
+        </div>
+      </div>
+      <div class="s1-footer" id="s1-footer">
+        <span>PAPER SIGNAL · NO.01</span>
+        <span>精读AI 专栏</span>
+      </div>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Regular.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      [data-composition-id='scene-1-hook'] {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f6f2e9;
+        color: #1c1a16;
+        overflow: hidden;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-1-hook'] .bg-noise {
+        position: absolute;
+        inset: 0;
+        background: none;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+      [data-composition-id='scene-1-hook'] .s1-breathe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        will-change: transform;
+      }
+      [data-composition-id='scene-1-hook'] .s1-frame {
+        width: 100%;
+        height: 100%;
+        padding: 200px 96px 0 96px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tag {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tag-rule {
+        display: block;
+        width: 56px;
+        height: 2px;
+        background: #1c1a16;
+      }
+      [data-composition-id='scene-1-hook'] .s1-tag-text {
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 27px;
+        letter-spacing: 6px;
+        color: #6e6a5f;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title {
+        margin-top: 36px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-en {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 118px;
+        line-height: 1.04;
+        letter-spacing: -0.02em;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-1-hook'] .s1-title-cn {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 102px;
+        line-height: 1.15;
+        color: #1c1a16;
+        margin-top: 14px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-stamp-row {
+        margin-top: 36px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-stamp {
+        display: inline-block;
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 1;
+        color: #b3382c;
+        border: 5px solid #b3382c;
+        border-radius: 10px;
+        padding: 16px 30px 22px 30px;
+        transform: rotate(-3deg);
+        background: rgba(179, 56, 44, 0.05);
+      }
+      [data-composition-id='scene-1-hook'] .s1-chips {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: 760px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        background: #fffdf7;
+        border: 1.5px solid rgba(28, 26, 22, 0.22);
+        border-radius: 6px;
+        padding: 22px 28px;
+        box-shadow: 0 2px 0 rgba(28, 26, 22, 0.06);
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-num {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 28px;
+        color: #3e5c76;
+        font-variant-numeric: tabular-nums;
+      }
+      [data-composition-id='scene-1-hook'] .s1-chip-text {
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-1-hook'] .s1-final {
+        margin-top: 40px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-hl-wrap {
+        position: relative;
+        display: inline-block;
+        padding: 6px 14px;
+      }
+      [data-composition-id='scene-1-hook'] .s1-hl-bar {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        background: #d9603b;
+        opacity: 0.42;
+        transform: scaleX(0) skewX(-2deg);
+        transform-origin: left center;
+        border-radius: 5px;
+        z-index: 0;
+      }
+      [data-composition-id='scene-1-hook'] .s1-hl-text {
+        position: relative;
+        z-index: 1;
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 700;
+        font-size: 66px;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-1-hook'] .s1-footer {
+        position: absolute;
+        left: 96px;
+        right: 96px;
+        top: 1330px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1.5px solid rgba(28, 26, 22, 0.18);
+        padding-top: 14px;
+        font-family: 'JetBrains Mono', 'MiSans', monospace;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: #6e6a5f;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      (function () {
+        var tl = gsap.timeline({ paused: true });
+
+        // Ambient breathing: 1.00 -> 1.04 over the whole scene
+        tl.to('#s1-breathe', { scale: 1.04, duration: 13.38, ease: 'none', transformOrigin: 'center center' }, 0);
+
+        // 0.2 series tag
+        tl.from('#s1-tag', { y: 24, opacity: 0, duration: 0.45, ease: 'power2.out' }, 0.2);
+        tl.from('#s1-tag-rule', { scaleX: 0, transformOrigin: 'left center', duration: 0.5, ease: 'power3.out' }, 0.35);
+
+        // 0.5-1.6 kinetic title
+        tl.from('#s1-t1', { y: 34, opacity: 0, duration: 0.55, ease: 'power3.out' }, 0.5);
+        tl.from('#s1-t2', { y: 34, opacity: 0, duration: 0.55, ease: 'power3.out' }, 0.74);
+        tl.from(
+          '#s1-t3',
+          { y: 30, opacity: 0, scale: 0.985, transformOrigin: 'left center', duration: 0.6, ease: 'expo.out' },
+          1.12
+        );
+
+        // footer (editorial page furniture)
+        tl.from('#s1-footer', { opacity: 0, duration: 0.6, ease: 'sine.out' }, 0.95);
+
+        // 3.3 「来了。」 hero moment #1 — stamp press (scale 1.18 -> 1, no bounce)
+        tl.from(
+          '#s1-stamp',
+          { scale: 1.18, opacity: 0, duration: 0.32, ease: 'power2.out', transformOrigin: 'center center' },
+          3.3
+        );
+
+        // 5.0 / 6.8 / 9.6 credential chips (one list build)
+        tl.from('#s1-chip1', { x: -32, opacity: 0, duration: 0.45, ease: 'power2.out' }, 5.0);
+        tl.from('#s1-chip2', { x: -32, opacity: 0, duration: 0.45, ease: 'power2.out' }, 6.8);
+        tl.from('#s1-chip3', { x: -32, opacity: 0, duration: 0.45, ease: 'power2.out' }, 9.6);
+
+        // 11.2 「一次讲透」 signature marker highlight
+        tl.from('#s1-final', { y: 18, opacity: 0, duration: 0.3, ease: 'power2.out' }, 11.15);
+        tl.to('#s1-hl-bar', { scaleX: 1, duration: 0.45, ease: 'power1.inOut' }, 11.38);
+
+        window.__timelines['scene-1-hook'] = tl;
+      })();
+    </script>
+  </div>
+</template>

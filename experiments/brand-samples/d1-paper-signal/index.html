@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 'MiSans';
+        src: url('assets/fonts/MiSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #f6f2e9;
+        font-family: 'MiSans', sans-serif;
+        color: #1c1a16;
+      }
+      .sub {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        z-index: 20;
+        pointer-events: none;
+      }
+      .sub-tick {
+        width: 60px;
+        height: 2px;
+        background: #d9603b;
+      }
+      .sub-text {
+        max-width: 936px;
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.4;
+        color: #1c1a16;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="40.6"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- Scene 1: HOOK (0 - 13.38, incl 0.6s outgoing overlap) -->
+      <div
+        id="scene-1"
+        class="clip"
+        data-composition-id="scene-1-hook"
+        data-composition-src="compositions/scene-1-hook.html"
+        data-start="0"
+        data-duration="13.38"
+        data-track-index="1"
+        style="position: absolute; inset: 0; z-index: 3"
+      ></div>
+
+      <!-- Scene 2: 现状循环 (12.78 - 29.44, 0.6s overlap both sides) -->
+      <div
+        id="scene-2"
+        class="clip"
+        data-composition-id="scene-2-cycle"
+        data-composition-src="compositions/scene-2-cycle.html"
+        data-start="12.78"
+        data-duration="16.66"
+        data-track-index="2"
+        style="position: absolute; inset: 0; z-index: 2"
+      ></div>
+
+      <!-- Scene 3: 金句 (28.84 - 40.6, final) -->
+      <div
+        id="scene-3"
+        class="clip"
+        data-composition-id="scene-3-quote"
+        data-composition-src="compositions/scene-3-quote.html"
+        data-start="28.84"
+        data-duration="11.76"
+        data-track-index="1"
+        style="position: absolute; inset: 0; z-index: 1"
+      ></div>
+
+      <!-- Subtitles: track 5, above scenes -->
+      <div id="sub-1" class="clip sub" data-start="0" data-duration="4.153" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">Loop Engineering 全网最全指南，来了。</div>
+      </div>
+      <div id="sub-2" class="clip sub" data-start="4.153" data-duration="8.46" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">我连搞几个通宵，把全网关于 Loop Engineering 的一手材料全部读完，浓缩成今天这一期，一次讲透。</div>
+      </div>
+      <div id="sub-3" class="clip sub" data-start="12.78" data-duration="2.719" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">先说你大概率正处在的状态。</div>
+      </div>
+      <div id="sub-4" class="clip sub" data-start="15.499" data-duration="8.159" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。</div>
+      </div>
+      <div id="sub-5" class="clip sub" data-start="23.658" data-duration="2.092" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">不满意，再改提示词。</div>
+      </div>
+      <div id="sub-6" class="clip sub" data-start="25.75" data-duration="2.929" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">但有一群人，已经不这么做了。</div>
+      </div>
+      <div id="sub-7" class="clip sub" data-start="28.836" data-duration="7.057" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">Claude Code 的负责人 Boris Cherny，直接说过这么一句话：我已经不给 Claude 写提示词了。</div>
+      </div>
+      <div id="sub-8" class="clip sub" data-start="35.893" data-duration="1.196" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">我的工作，是写循环。</div>
+      </div>
+      <div id="sub-9" class="clip sub" data-start="37.089" data-duration="2.99" data-track-index="5">
+        <div class="sub-tick"></div>
+        <div class="sub-text">My job is to write loops.</div>
+      </div>
+
+      <!-- Narration audio -->
+      <audio
+        id="narration"
+        data-start="0"
+        data-duration="40.25"
+        data-track-index="10"
+        src="narration.mp3"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Transition 1 (12.78): paper crossfade — scene 1 dissolves over scene 2
+      tl.to('#scene-1', { opacity: 0, duration: 0.6, ease: 'power2.inOut' }, 12.78);
+
+      // Transition 2 (28.84): paper crossfade + incoming sheet rises gently
+      tl.to('#scene-2', { opacity: 0, duration: 0.6, ease: 'power2.inOut' }, 28.84);
+      tl.from('#scene-3', { yPercent: 4, duration: 0.6, ease: 'power2.out' }, 28.84);
+
+      // Subtitle fade-ins (0.2s each, at exact start times)
+      var SUB_STARTS = [0, 4.153, 12.78, 15.499, 23.658, 25.75, 28.836, 35.893, 37.089];
+      SUB_STARTS.forEach(function (t, i) {
+        tl.from('#sub-' + (i + 1), { opacity: 0, duration: 0.2, ease: 'power1.out' }, t);
+      });
+
+      window.__timelines['main'] = tl;
+    </script>
+  </body>
+</html>

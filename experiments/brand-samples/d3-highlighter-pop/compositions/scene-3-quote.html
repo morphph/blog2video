@@ -1,0 +1,304 @@
+<template id="scene-3-quote-template">
+  <div data-composition-id="scene-3-quote" data-width="1080" data-height="1920">
+    <div class="s3-all" id="s3-all">
+      <!-- decorative giant quote bracket -->
+      <div class="s3-glyph" id="s3-glyph">「</div>
+      <!-- decorative halftone -->
+      <svg class="s3-halftone" id="s3-halftone" width="240" height="240" viewBox="0 0 240 240" aria-hidden="true">
+        <defs>
+          <pattern id="s3-ht" width="36" height="36" patternUnits="userSpaceOnUse">
+            <circle cx="9" cy="9" r="5.5" fill="#191919"></circle>
+          </pattern>
+        </defs>
+        <rect width="240" height="240" fill="url(#s3-ht)" opacity="0.07"></rect>
+      </svg>
+
+      <div class="s3-content" id="s3-content">
+        <div class="s3-kicker" id="s3-kicker">
+          <span class="s3-tape"></span>
+          <span class="s3-kicker-en">BORIS CHERNY</span>
+          <span class="s3-kicker-zh">· Claude Code 负责人</span>
+        </div>
+
+        <div class="s3-line1" id="s3-line1">
+          <span class="s3-w">我</span><span class="s3-w">已经</span><span class="s3-w">不给</span> <span class="s3-w s3-w-en">Claude</span> <span class="s3-w">写</span><span class="s3-w">提示词</span><span class="s3-w">了。</span>
+        </div>
+
+        <div class="s3-line2">
+          <div class="s3-l2" id="s3-l2a">我的工作，</div>
+          <div class="s3-l2" id="s3-l2b">
+            <span class="s3-hero-wrap">
+              <span class="s3-hero-bar" id="s3-hero-bar"></span>
+              <span class="s3-hero-text" id="s3-hero-text">是写循环。</span>
+              <svg class="s3-underline-svg" viewBox="0 0 540 36" preserveAspectRatio="none" aria-hidden="true">
+                <path class="s3-u" id="s3-u1" d="M6,10 C96,2 200,16 320,8 C410,3 480,12 534,7"></path>
+                <path class="s3-u" id="s3-u2" d="M14,28 C120,20 230,33 350,24 C440,18 492,28 528,24"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="s3-mono" id="s3-mono"><span class="s3-ch">M</span><span class="s3-ch">y</span><span class="s3-ch"> </span><span class="s3-ch">j</span><span class="s3-ch">o</span><span class="s3-ch">b</span><span class="s3-ch"> </span><span class="s3-ch">i</span><span class="s3-ch">s</span><span class="s3-ch"> </span><span class="s3-ch">t</span><span class="s3-ch">o</span><span class="s3-ch"> </span><span class="s3-ch">w</span><span class="s3-ch">r</span><span class="s3-ch">i</span><span class="s3-ch">t</span><span class="s3-ch">e</span><span class="s3-ch"> </span><span class="s3-ch">l</span><span class="s3-ch">o</span><span class="s3-ch">o</span><span class="s3-ch">p</span><span class="s3-ch">s</span><span class="s3-ch">.</span><span class="s3-cursor" id="s3-cursor"></span></div>
+
+        <div class="s3-end" id="s3-end">精读AI · <span class="s3-end-en">LOOP&nbsp;ENGINEERING</span></div>
+      </div>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'Smiley Sans';
+        src: url('../assets/fonts/SmileySans-Oblique.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Semibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      [data-composition-id='scene-3-quote'] {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        background: #f2efe6;
+        overflow: hidden;
+        color: #191919;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-3-quote'] .s3-all {
+        position: absolute;
+        inset: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-glyph {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 460px;
+        line-height: 1;
+        color: rgba(25, 25, 25, 0.06);
+        pointer-events: none;
+      }
+      [data-composition-id='scene-3-quote'] .s3-halftone {
+        position: absolute;
+        right: -28px;
+        top: 1060px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-content {
+        width: 100%;
+        height: 100%;
+        padding: 240px 72px 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        transform-origin: 540px 760px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-kicker {
+        position: relative;
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        padding: 14px 28px;
+        background: #ffffff;
+        border: 3px solid #191919;
+        border-radius: 14px;
+        box-shadow: 6px 6px 0 #191919;
+        transform: rotate(-1.5deg);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+      [data-composition-id='scene-3-quote'] .s3-tape {
+        position: absolute;
+        top: -16px;
+        left: -22px;
+        width: 110px;
+        height: 34px;
+        background: rgba(36, 71, 240, 0.32);
+        transform: rotate(-5deg);
+      }
+      [data-composition-id='scene-3-quote'] .s3-kicker-en {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line1 {
+        margin-top: 64px;
+        max-width: 936px;
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 78px;
+        line-height: 1.3;
+      }
+      [data-composition-id='scene-3-quote'] .s3-w {
+        display: inline-block;
+      }
+      [data-composition-id='scene-3-quote'] .s3-line2 {
+        margin-top: 48px;
+      }
+      [data-composition-id='scene-3-quote'] .s3-l2 {
+        font-family: 'Smiley Sans', sans-serif;
+        font-size: 104px;
+        line-height: 1.16;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hero-wrap {
+        position: relative;
+        display: inline-block;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hero-bar {
+        position: absolute;
+        top: 0;
+        bottom: -2px;
+        left: -16px;
+        right: -16px;
+        background: #ffd43a;
+        border-radius: 8px;
+        transform: skewX(-3deg) scaleX(0);
+        transform-origin: left center;
+        z-index: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-hero-text {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+      [data-composition-id='scene-3-quote'] .s3-underline-svg {
+        position: absolute;
+        left: -8px;
+        right: -8px;
+        bottom: -30px;
+        width: calc(100% + 16px);
+        height: 36px;
+        z-index: 1;
+        overflow: visible;
+      }
+      [data-composition-id='scene-3-quote'] .s3-u {
+        fill: none;
+        stroke: #2447f0;
+        stroke-width: 6;
+        stroke-linecap: round;
+      }
+      [data-composition-id='scene-3-quote'] .s3-mono {
+        margin-top: 72px;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.3;
+        white-space: pre;
+        display: flex;
+        align-items: center;
+      }
+      [data-composition-id='scene-3-quote'] .s3-ch {
+        opacity: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-cursor {
+        display: inline-block;
+        width: 18px;
+        height: 46px;
+        margin-left: 8px;
+        background: #2447f0;
+        border: 3px solid #191919;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+      [data-composition-id='scene-3-quote'] .s3-end {
+        margin-top: auto;
+        align-self: flex-end;
+        display: inline-flex;
+        align-items: baseline;
+        padding: 12px 26px;
+        background: #ffffff;
+        border: 3px solid #191919;
+        border-radius: 14px;
+        box-shadow: 6px 6px 0 #191919;
+        transform: rotate(-2deg);
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+      [data-composition-id='scene-3-quote'] .s3-end-en {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 26px;
+        margin-left: 6px;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var SCOPE = "[data-composition-id='scene-3-quote'] ";
+        var tl = gsap.timeline({ paused: true });
+
+        // prep double-underline stroke draw
+        var FALLBACK = { 's3-u1': 560, 's3-u2': 540 };
+        ['s3-u1', 's3-u2'].forEach(function (id) {
+          var p = document.getElementById(id);
+          if (!p) return;
+          var len = FALLBACK[id];
+          try {
+            len = p.getTotalLength() || FALLBACK[id];
+          } catch (e) {}
+          gsap.set(p, { strokeDasharray: len, strokeDashoffset: len });
+        });
+
+        // local time = global - 28.84
+        // ambient: very slow push on the quote block (different ambient than scene 1)
+        tl.to(SCOPE + '.s3-content', { scale: 1.025, duration: 11.26, ease: 'none' }, 0);
+
+        // decorations in
+        tl.from(SCOPE + '.s3-glyph', { opacity: 0, x: -30, duration: 0.6, ease: 'power1.out' }, 0.3);
+        tl.from(SCOPE + '.s3-halftone', { opacity: 0, duration: 0.5, ease: 'power1.out' }, 0.5);
+
+        // 29.3 source kicker sticker slap
+        tl.from(SCOPE + '.s3-kicker', { opacity: 0, duration: 0.12, ease: 'power1.out' }, 0.46);
+        tl.from(SCOPE + '.s3-kicker', { scale: 1.12, rotation: '-=4', duration: 0.35, ease: 'back.out(1.4)' }, 0.46);
+
+        // 31.0 quote line 1, word-level stagger (0.055s/word)
+        tl.from(SCOPE + '.s3-w', { y: 42, opacity: 0, duration: 0.42, ease: 'power3.out', stagger: 0.055 }, 2.16);
+
+        // 35.9 quote line 2 slam
+        tl.from(SCOPE + '.s3-l2', { y: 56, scale: 1.05, opacity: 0, duration: 0.5, ease: 'power3.out', stagger: 0.16 }, 7.06);
+
+        // HERO MOMENT #2: 写循环 — heaviest signature highlight
+        tl.to(SCOPE + '#s3-hero-bar', { scaleX: 1, duration: 0.45, ease: 'power1.inOut' }, 7.5);
+        tl.to(SCOPE + '#s3-hero-text', { scale: 1.07, duration: 0.16, ease: 'power2.in' }, 7.95);
+        tl.to(SCOPE + '#s3-hero-text', { scale: 1, duration: 0.5, ease: 'back.out(2.2)' }, 8.11);
+        tl.to(SCOPE + '#s3-u1', { strokeDashoffset: 0, duration: 0.38, ease: 'power1.inOut' }, 8.05);
+        tl.to(SCOPE + '#s3-u2', { strokeDashoffset: 0, duration: 0.32, ease: 'power1.inOut' }, 8.48);
+
+        // 37.2 typewriter mono line + cursor
+        tl.set(SCOPE + '#s3-cursor', { opacity: 1 }, 8.36);
+        tl.fromTo(SCOPE + '.s3-ch', { opacity: 0 }, { opacity: 1, duration: 0.02, ease: 'none', stagger: 0.046 }, 8.36);
+        tl.to(SCOPE + '#s3-cursor', { opacity: 0, duration: 0.3, repeat: 4, yoyo: true, ease: 'steps(1)' }, 9.7);
+
+        // 39.6 end chip sticker slap
+        tl.from(SCOPE + '.s3-end', { opacity: 0, duration: 0.12, ease: 'power1.out' }, 10.76);
+        tl.from(SCOPE + '.s3-end', { scale: 1.15, rotation: '-=5', duration: 0.35, ease: 'back.out(1.4)' }, 10.76);
+
+        // 40.1 final ease-out (only scene allowed an exit)
+        tl.to(SCOPE + '.s3-all', { opacity: 0, duration: 0.5, ease: 'power2.in' }, 11.26);
+
+        window.__timelines['scene-3-quote'] = tl;
+      })();
+    </script>
+  </div>
+</template>

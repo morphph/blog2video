@@ -1,0 +1,300 @@
+<template id="scene-2-cycle-template">
+  <div
+    data-composition-id="scene-2-cycle"
+    data-start="0"
+    data-duration="16.66"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div class="bg-noise"></div>
+    <div class="s2-frame">
+      <div class="s2-kicker">
+        <div class="s2-kicker-label" id="s2-kicker-label">STATUS QUO · 现状</div>
+        <div class="s2-kicker-title" id="s2-kicker-title">你现在的状态</div>
+        <div class="s2-kicker-rule" id="s2-kicker-rule"></div>
+      </div>
+      <div class="s2-diagram" id="s2-diagram">
+        <svg class="s2-svg" viewBox="0 0 912 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="s2-a1" data-len="90" d="M330,112 L330,196" stroke="#1C1A16" stroke-width="2.5" stroke-linecap="round" />
+          <polygon id="s2-h1" points="322,192 338,192 330,204" fill="#1C1A16" />
+          <path id="s2-a2" data-len="90" d="M330,316 L330,400" stroke="#1C1A16" stroke-width="2.5" stroke-linecap="round" />
+          <polygon id="s2-h2" points="322,396 338,396 330,408" fill="#1C1A16" />
+          <path id="s2-a3" data-len="90" d="M330,520 L330,604" stroke="#1C1A16" stroke-width="2.5" stroke-linecap="round" />
+          <polygon id="s2-h3" points="322,600 338,600 330,612" fill="#1C1A16" />
+          <path id="s2-loop" data-len="580" d="M644,664 C800,664 800,256 652,256" stroke="#D9603B" stroke-width="3.5" stroke-linecap="round" />
+          <polygon id="s2-hloop" points="668,247 668,265 648,256" fill="#D9603B" />
+        </svg>
+        <div class="s2-node" id="s2-n1" style="top: 0">
+          <span class="s2-node-num">01</span>
+          <span class="s2-node-text">想清楚要做什么</span>
+        </div>
+        <div class="s2-node" id="s2-n2" style="top: 204px">
+          <span class="s2-node-num">02</span>
+          <span class="s2-node-text">写一段提示词</span>
+        </div>
+        <div class="s2-node" id="s2-n3" style="top: 408px">
+          <span class="s2-node-num">03</span>
+          <span class="s2-node-text">看它输出</span>
+        </div>
+        <div class="s2-node" id="s2-n4" style="top: 612px">
+          <span class="s2-node-num">04</span>
+          <span class="s2-node-text">不满意，改提示词</span>
+        </div>
+      </div>
+    </div>
+    <div class="s2-veil" id="s2-veil"></div>
+    <div class="s2-declare">
+      <div class="s2-declare-rule" id="s2-d0"></div>
+      <div class="s2-declare-line" id="s2-d1">有一群人，</div>
+      <div class="s2-declare-line" id="s2-d2">已经不这么做了</div>
+    </div>
+    <div class="s2-footer" id="s2-footer">
+      <span>PAPER SIGNAL · NO.01</span>
+      <span>精读AI 专栏</span>
+    </div>
+
+    <style>
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Source Han Serif SC';
+        src: url('../assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype'),
+          url('assets/fonts/SourceHanSerifSC-Heavy.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Regular.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MiSans';
+        src: url('../assets/fonts/MiSans-Medium.ttf') format('truetype'),
+          url('assets/fonts/MiSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype'),
+          url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      [data-composition-id='scene-2-cycle'] {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f6f2e9;
+        color: #1c1a16;
+        overflow: hidden;
+        font-family: 'MiSans', sans-serif;
+      }
+      [data-composition-id='scene-2-cycle'] .bg-noise {
+        position: absolute;
+        inset: 0;
+        background: none;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 170px 84px 0 84px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        z-index: 1;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-kicker-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 4px;
+        color: #3e5c76;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-kicker-title {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 1.2;
+        color: #1c1a16;
+        margin-top: 14px;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-kicker-rule {
+        width: 120px;
+        height: 2px;
+        background: #1c1a16;
+        margin-top: 20px;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-diagram {
+        position: relative;
+        width: 100%;
+        height: 716px;
+        margin-top: 48px;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-node {
+        position: absolute;
+        left: 20px;
+        width: 620px;
+        height: 104px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 0 28px;
+        background: #fffdf7;
+        border: 1.5px solid rgba(28, 26, 22, 0.25);
+        border-radius: 8px;
+        box-shadow: 0 2px 0 rgba(28, 26, 22, 0.07);
+        box-sizing: border-box;
+        z-index: 1;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-node-num {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 26px;
+        color: #3e5c76;
+        font-variant-numeric: tabular-nums;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-node-text {
+        font-family: 'MiSans', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        color: #1c1a16;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-veil {
+        position: absolute;
+        inset: 0;
+        background: #f6f2e9;
+        opacity: 0;
+        z-index: 5;
+        pointer-events: none;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-declare {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        padding: 0 84px 160px 84px;
+        z-index: 6;
+        box-sizing: border-box;
+        pointer-events: none;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-declare-rule {
+        width: 72px;
+        height: 3px;
+        background: #b3382c;
+        margin-bottom: 18px;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-declare-line {
+        font-family: 'Source Han Serif SC', serif;
+        font-weight: 900;
+        font-size: 88px;
+        line-height: 1.22;
+        color: #b3382c;
+        text-align: center;
+      }
+      [data-composition-id='scene-2-cycle'] .s2-footer {
+        position: absolute;
+        left: 84px;
+        right: 84px;
+        top: 1330px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1.5px solid rgba(28, 26, 22, 0.18);
+        padding-top: 14px;
+        font-family: 'JetBrains Mono', 'MiSans', monospace;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: #6e6a5f;
+        z-index: 1;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      (function () {
+        // Prepare stroke-draw state for arrows (deterministic; data-len fallback)
+        ['s2-a1', 's2-a2', 's2-a3', 's2-loop'].forEach(function (id) {
+          var p = document.getElementById(id);
+          if (!p) return;
+          var len = 0;
+          try {
+            len = p.getTotalLength();
+          } catch (e) {
+            len = 0;
+          }
+          if (!len || !isFinite(len)) len = parseFloat(p.getAttribute('data-len'));
+          gsap.set(p, { strokeDasharray: len, strokeDashoffset: len });
+        });
+
+        var tl = gsap.timeline({ paused: true });
+
+        // Local time = global - 12.78
+        // 13.2 kicker
+        tl.from('#s2-kicker-label', { y: 18, opacity: 0, duration: 0.4, ease: 'power2.out' }, 0.42);
+        tl.from('#s2-kicker-title', { x: -28, opacity: 0, duration: 0.5, ease: 'power3.out' }, 0.56);
+        tl.from('#s2-kicker-rule', { scaleX: 0, transformOrigin: 'left center', duration: 0.5, ease: 'power2.inOut' }, 0.78);
+        tl.from('#s2-footer', { opacity: 0, duration: 0.6, ease: 'sine.out' }, 1.0);
+
+        // 16.2 node 1
+        tl.from('#s2-n1', { y: 22, opacity: 0, duration: 0.45, ease: 'power2.out' }, 3.42);
+        // 17.8 arrow 1 stroke-draw
+        tl.to('#s2-a1', { strokeDashoffset: 0, duration: 0.7, ease: 'power1.inOut' }, 5.02);
+        tl.from('#s2-h1', { opacity: 0, duration: 0.15, ease: 'power1.out' }, 5.6);
+        // 18.6 node 2
+        tl.from('#s2-n2', { y: 22, opacity: 0, duration: 0.45, ease: 'power2.out' }, 5.82);
+        // 20.4 arrow 2
+        tl.to('#s2-a2', { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' }, 7.62);
+        tl.from('#s2-h2', { opacity: 0, duration: 0.15, ease: 'power1.out' }, 8.1);
+        // 21.0 node 3
+        tl.from('#s2-n3', { y: 22, opacity: 0, duration: 0.45, ease: 'power2.out' }, 8.22);
+        // 23.4 arrow 3
+        tl.to('#s2-a3', { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' }, 10.6);
+        tl.from('#s2-h3', { opacity: 0, duration: 0.15, ease: 'power1.out' }, 11.08);
+        // 24.0 node 4 + loop-back arrow closes the cycle
+        tl.from('#s2-n4', { y: 22, opacity: 0, duration: 0.45, ease: 'power2.out' }, 11.22);
+        tl.to('#s2-loop', { strokeDashoffset: 0, duration: 1.0, ease: 'power2.inOut' }, 11.95);
+        tl.from('#s2-hloop', { opacity: 0, duration: 0.18, ease: 'power1.out' }, 12.85);
+
+        // 26.0 pattern interrupt: tracing-paper veil dims the whole loop (no exit animation),
+        // declaration presses on top in seal red
+        tl.to('#s2-veil', { opacity: 0.74, duration: 0.5, ease: 'power2.inOut' }, 13.22);
+        tl.from('#s2-d0', { scaleX: 0, duration: 0.4, ease: 'power2.out' }, 13.35);
+        tl.from('#s2-d1', { y: 34, opacity: 0, duration: 0.5, ease: 'power3.out' }, 13.42);
+        tl.from('#s2-d2', { y: 34, opacity: 0, duration: 0.5, ease: 'power3.out' }, 13.58);
+
+        window.__timelines['scene-2-cycle'] = tl;
+      })();
+    </script>
+  </div>
+</template>

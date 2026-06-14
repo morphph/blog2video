@@ -1,0 +1,112 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 69.048,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_3.html",
+ "topbarIndex": "[03/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.069,
+   "text": "然后，一个子智能体在 worktree 里起草修复。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.069,
+   "localDuration": 5.07,
+   "text": "另一个子智能体，按项目规范和现有测试，审查这份修复。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.139,
+   "localDuration": 3.705,
+   "text": "注意这个细节：写的和查的，不是同一个。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.044,
+   "localDuration": 3.046,
+   "text": "这是全片最重要的伏笔，马上展开。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.244,
+   "localDuration": 5.249,
+   "text": "审查通过，循环通过 MCP 连接器自动开 PR、更新工单。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.493,
+   "localDuration": 3.438,
+   "text": "MCP 是智能体跟真实世界对接的协议。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.931,
+   "localDuration": 7.421,
+   "text": "Claude Code 和 Codex 都用它，两边概念一一对应，连接器基本互通。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 33.516,
+   "localDuration": 1.996,
+   "text": "它处理不了的问题呢？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.512,
+   "localDuration": 2.594,
+   "text": "落进一个收件箱，等人来看。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 38.268,
+   "localDuration": 5.497,
+   "text": "一天结束，状态文件记下今天试了什么、过了什么、剩下什么。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 43.765,
+   "localDuration": 3.534,
+   "text": "明天早上，循环从今天停下的地方继续。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 47.299,
+   "localDuration": 7.46,
+   "text": "这就是状态文件的意义：智能体每次运行结束都会失忆，状态文件是循环唯一的记忆。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 54.9,
+   "localDuration": 2.919,
+   "text": "没有它，每天都从零开始。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 57.96,
+   "localDuration": 3.308,
+   "text": "这一整天里，你出现了几次？"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 61.268,
+   "localDuration": 0.763,
+   "text": "一次。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 62.031,
+   "localDuration": 2.036,
+   "text": "看收件箱那一次。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 64.067,
+   "localDuration": 4.834,
+   "text": "这就是「我的工作是写循环」的具体含义。"
+  }
+ ]
+}

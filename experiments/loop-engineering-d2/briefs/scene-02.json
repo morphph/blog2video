@@ -1,0 +1,76 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 48.204,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_2.html",
+ "topbarIndex": "[02/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.463,
+   "text": "每天早上，一个定时任务自动醒来，在你的仓库上运行。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.463,
+   "localDuration": 3.75,
+   "text": "这是循环的心跳，叫 Automation。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.352,
+   "localDuration": 4.564,
+   "text": "它做的第一件事，是调用一个 triage skill。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.916,
+   "localDuration": 5.916,
+   "text": "Skill 是一份打包好的项目知识，告诉它这个项目里，问题该怎么分流。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.832,
+   "localDuration": 4.734,
+   "text": "它读昨天的 CI 失败、新开的 issue、最近的提交。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.724,
+   "localDuration": 3.735,
+   "text": "发现的问题，写进一个 markdown 状态文件。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.459,
+   "localDuration": 2.69,
+   "text": "这一步很关键，等会儿你就知道为什么。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.312,
+   "localDuration": 7.541,
+   "text": "接下来，对每个值得处理的问题，它开一个隔离的 worktree，一份独立的代码副本。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 37.853,
+   "localDuration": 1.436,
+   "text": "为什么必须隔离？"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.289,
+   "localDuration": 4.309,
+   "text": "因为多个智能体同时改一份代码，互相踩脚就是灾难。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 43.798,
+   "localDuration": 4.242,
+   "text": "一旦开始并行，隔离不是优化，是底线。"
+  }
+ ]
+}

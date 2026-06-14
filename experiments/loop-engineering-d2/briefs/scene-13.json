@@ -1,0 +1,76 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "principle",
+ "dataDuration": 52.02,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_13.html",
+ "topbarIndex": "[13/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.9,
+   "text": "第一个案例，自动 PR 工作流。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.9,
+   "localDuration": 6.888,
+   "text": "流程你已经看过全程，就是早上那一天：从 triage 扫描，到自动开 PR。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.788,
+   "localDuration": 4.532,
+   "text": "这里只补一个增量——那个我按下不表的 /goal。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.472,
+   "localDuration": 3.086,
+   "text": "它的用法，跟你习惯的指挥方式相反。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.558,
+   "localDuration": 8.712,
+   "text": "你不说「修复这个 bug」，你说：跑到 test/auth 下所有测试通过、lint 干净为止。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.27,
+   "localDuration": 4.356,
+   "text": "你定义的是终态，路径它自己找，失败了自己换思路。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.78,
+   "localDuration": 1.727,
+   "text": "更关键的是裁判。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.507,
+   "localDuration": 7.554,
+   "text": "判断终态有没有达成的，是一个独立的小模型，不是写代码的那个智能体自己。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 40.261,
+   "localDuration": 7.6,
+   "text": "你看到的是「设个目标就能走开」，它可信的原因是：裁判和选手，从来不是同一个。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 47.861,
+   "localDuration": 1.599,
+   "text": "为什么必须这样？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 49.608,
+   "localDuration": 2.245,
+   "text": "第二个案例，就是证据。"
+  }
+ ]
+}

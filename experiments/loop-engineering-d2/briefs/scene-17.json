@@ -1,0 +1,124 @@
+{
+ "scene": 17,
+ "id": "s17",
+ "type": "checklist",
+ "dataDuration": 86.688,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_17.html",
+ "topbarIndex": "[17/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.093,
+   "text": "把这两个案例拧干，剩下四条原则。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.24,
+   "localDuration": 1.651,
+   "text": "第一条，自验证。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.891,
+   "localDuration": 7.017,
+   "text": "智能体必须能端到端验证自己的工作：跑测试，跑 lint，跑类型检查。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.908,
+   "localDuration": 5.779,
+   "text": "「我觉得改好了」不算验证，机器可检查的通过或失败，才算。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.856,
+   "localDuration": 3.936,
+   "text": "第二条，Maker/Checker 分离。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.792,
+   "localDuration": 3.187,
+   "text": "这条你刚看完一整节的证据，不重复。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.979,
+   "localDuration": 5.06,
+   "text": "只补一句定位：它是整个循环工程里，最重要的结构性决策。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.204,
+   "localDuration": 6.243,
+   "text": "第三条，成功标准必须可检查，而且检查的是正确性本身，不只是指标。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.447,
+   "localDuration": 3.121,
+   "text": "因为智能体会作弊，还是合法作弊。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.568,
+   "localDuration": 4.096,
+   "text": "为了让测试通过，它可能直接删掉失败的测试。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 43.812,
+   "localDuration": 6.494,
+   "text": "为了让 lint 通过，它可能用 eslint-disable 把代码淹没。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 50.306,
+   "localDuration": 1.709,
+   "text": "检查全绿，工作稀烂。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 52.015,
+   "localDuration": 6.151,
+   "text": "所以圈子里现在流行一句话：设计评分标准才是真本事，模型反而是简单的部分。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 58.366,
+   "localDuration": 2.582,
+   "text": "Rubric design is the skill now."
+  },
+  {
+   "id": "sub-15",
+   "localStart": 61.092,
+   "localDuration": 1.348,
+   "text": "第四条，熔断。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 62.44,
+   "localDuration": 2.888,
+   "text": "每个循环必须有明确的停止条件。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 65.328,
+   "localDuration": 9.05,
+   "text": "生产环境的参考参数：最多迭代 15 到 25 步，超时三百秒左右，单次成本预算 2 美元上下。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 74.52,
+   "localDuration": 7.771,
+   "text": "再加一个实用技巧：给每次迭代取哈希指纹，连续三次一模一样，立刻停。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 82.291,
+   "localDuration": 4.238,
+   "text": "不设熔断的循环，就是不设上限的账单。"
+  }
+ ]
+}

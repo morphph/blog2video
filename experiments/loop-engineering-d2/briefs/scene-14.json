@@ -1,0 +1,106 @@
+{
+ "scene": 14,
+ "id": "s14",
+ "type": "comparison_cards",
+ "dataDuration": 64.224,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_14.html",
+ "topbarIndex": "[14/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 6.328,
+   "text": "第二个案例来自 Claude 背后的团队，一个三智能体 bug 修复循环。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.328,
+   "localDuration": 5.472,
+   "text": "他们用的是 GAN 的思路，生成对抗：一边拼命做，一边拼命挑刺。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.952,
+   "localDuration": 1.014,
+   "text": "三个角色。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.966,
+   "localDuration": 7.303,
+   "text": "Planner，规划者，接到一到四句话的问题描述，扩写成完整的修复方案。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.269,
+   "localDuration": 4.058,
+   "text": "它被故意限制：只管做什么，不碰实现细节。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.327,
+   "localDuration": 1.014,
+   "text": "反直觉吧？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.341,
+   "localDuration": 2.029,
+   "text": "规划不是越细越好吗？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 27.37,
+   "localDuration": 0.608,
+   "text": "不是。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 28.116,
+   "localDuration": 4.992,
+   "text": "规划层一旦在技术细节上犯错，错误会向下游级联传播。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 33.108,
+   "localDuration": 3.395,
+   "text": "让它少说，是结构性防御，不是偷懒。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 36.648,
+   "localDuration": 5.569,
+   "text": "Generator，执行者，按方案逐步实现，做完给自己打分。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 42.217,
+   "localDuration": 2.414,
+   "text": "分数趋势向好，就继续优化。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 44.631,
+   "localDuration": 3.341,
+   "text": "方向本身错了，就果断推翻，从头来过。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 48.132,
+   "localDuration": 3.846,
+   "text": "真正的主角是 Evaluator，评审者。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 51.978,
+   "localDuration": 8.241,
+   "text": "它通过 Playwright，像真实用户一样操作应用：点 UI，调 API，查数据库状态。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 60.219,
+   "localDuration": 3.846,
+   "text": "任何一个维度低于阈值，整轮作废，打回重做。"
+  }
+ ]
+}

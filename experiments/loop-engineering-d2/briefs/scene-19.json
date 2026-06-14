@@ -1,0 +1,58 @@
+{
+ "scene": 19,
+ "id": "s19",
+ "type": "image",
+ "dataDuration": 45.108,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_19.html",
+ "topbarIndex": "[19/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 7.785,
+   "text": "等单个 /goal 兜不住任务复杂度了，再上 Dynamic Workflows，动态工作流。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.785,
+   "localDuration": 5.466,
+   "text": "它根据你的任务，动态生成一段编排脚本，调度最多上千个并行子智能体。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.392,
+   "localDuration": 7.077,
+   "text": "最猛的真实案例来自 Bun 的作者：他用这套东西，把 Bun 从 Zig 移植到 Rust。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 20.469,
+   "localDuration": 6,
+   "text": "75 万行代码，数百个智能体并行，百分之 99.8 的测试通过，11 天完成。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 26.64,
+   "localDuration": 1.277,
+   "text": "但要提醒两句。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.917,
+   "localDuration": 4.012,
+   "text": "这个功能目前处于研究预览阶段，不算成熟稳定。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.929,
+   "localDuration": 6.384,
+   "text": "它的 token 消耗也显著高于普通会话，先小范围试，确认有效再铺开。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 38.484,
+   "localDuration": 6.46,
+   "text": "这三个工具是互补的：/goal 管深度，Dynamic Workflows 管广度，/loop 管持续性。"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 35.712,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_9.html",
+ "topbarIndex": "[09/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.815,
+   "text": "那个 triage skill 呢？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.815,
+   "localDuration": 3.441,
+   "text": "Skill 是第三个模块，打包好的项目知识。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.256,
+   "localDuration": 5.161,
+   "text": "一个文件夹，一个 SKILL.md 写清指令，配上脚本和参考资料。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.556,
+   "localDuration": 6.727,
+   "text": "它解决的失败模式你肯定遇过：项目里的门道，每开一次新会话，都得重新教一遍。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.432,
+   "localDuration": 6.357,
+   "text": "两边格式完全一样，可以手动调用，也能在任务匹配描述时自动触发。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.789,
+   "localDuration": 5.332,
+   "text": "这里有个反直觉的实战经验：技能描述要写得越无聊越好。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.121,
+   "localDuration": 2.665,
+   "text": "精确、朴素，自动匹配才准。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.986,
+   "localDuration": 2.582,
+   "text": "写得花哨，反而触发不准。"
+  }
+ ]
+}

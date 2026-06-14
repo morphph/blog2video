@@ -1,0 +1,64 @@
+{
+ "scene": 18,
+ "id": "s18",
+ "type": "image",
+ "dataDuration": 36.432,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_18.html",
+ "topbarIndex": "[18/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.256,
+   "text": "原则都在了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.256,
+   "localDuration": 3.351,
+   "text": "最后讲怎么从零开始，今晚就动手。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.607,
+   "localDuration": 3.559,
+   "text": "入口比你想的近，完全不用一步到位。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.316,
+   "localDuration": 2.01,
+   "text": "第一步还是 /goal。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 10.326,
+   "localDuration": 13.229,
+   "text": "比如你在修一个前端适配问题，别说「帮我修这个 bug」，写成：所有 Playwright 截图和设计稿的像素差异小于百分之一，且 npm test 全部通过。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.555,
+   "localDuration": 1.507,
+   "text": "设好，去喝杯咖啡。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.2,
+   "localDuration": 3.755,
+   "text": "它自己改代码、跑测试、看结果、再调整。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.955,
+   "localDuration": 4.349,
+   "text": "还是案例里那个原则：定义终态，让它自己找路。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.304,
+   "localDuration": 2.965,
+   "text": "你身份的转变，就从这一句开始。"
+  }
+ ]
+}

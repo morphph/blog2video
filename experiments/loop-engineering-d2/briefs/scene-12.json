@@ -1,0 +1,46 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "principle",
+ "dataDuration": 29.484,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_12.html",
+ "topbarIndex": "[12/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.636,
+   "text": "最后是 State，状态层。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.636,
+   "localDuration": 3.766,
+   "text": "它不算第六个模块，更像贯穿前五个的底座。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.402,
+   "localDuration": 4.33,
+   "text": "早上你已经看过它救场：智能体会失忆，仓库不会。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.872,
+   "localDuration": 8.596,
+   "text": "形式随你挑：一个进度文件，一份 AGENTS.md，甚至一个 Linear 看板，靠 MCP 读写。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.62,
+   "localDuration": 4.031,
+   "text": "五个模块加一个状态层，拼回去就是早上那一天。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.651,
+   "localDuration": 5.679,
+   "text": "这个框架一点都不神秘——你只是刚刚才知道，每个零件叫什么名字。"
+  }
+ ]
+}

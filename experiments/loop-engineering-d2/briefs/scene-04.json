@@ -1,0 +1,76 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 57.132,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_4.html",
+ "topbarIndex": "[04/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.803,
+   "text": "「写循环」这个姿势，不是凭空冒出来的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.803,
+   "localDuration": 7.805,
+   "text": "过去三年，用 AI 写代码的方式换了好几代，每一代都是被上一代的瓶颈逼出来的。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.608,
+   "localDuration": 3.002,
+   "text": "先花一分钟，把这条路快进一遍。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.76,
+   "localDuration": 4.335,
+   "text": "最早是 Prompt Engineering，研究怎么措辞。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.095,
+   "localDuration": 3.18,
+   "text": "但模型越来越聪明，措辞的边际收益一直在递减。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.275,
+   "localDuration": 6.503,
+   "text": "于是重心移到 Context Engineering：不纠结说法，转去策划模型能看到什么。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.944,
+   "localDuration": 6.739,
+   "text": "这一层到今天依然重要，但它只管单次调用的质量——写完了谁来确认写对了？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.683,
+   "localDuration": 0.963,
+   "text": "依然是你。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.792,
+   "localDuration": 8.419,
+   "text": "所以下一层是反馈循环：让智能体自己验证自己，跑测试，查日志，打开浏览器看渲染结果。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 45.211,
+   "localDuration": 5.134,
+   "text": "我的判断是，这一层是目前大多数人回报最大的投资点。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 50.508,
+   "localDuration": 6.46,
+   "text": "再往上是 Harness，驾驭系统，一句话定义：Agent 等于 Model 加 Harness。"
+  }
+ ]
+}

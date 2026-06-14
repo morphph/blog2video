@@ -1,0 +1,58 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "principle",
+ "dataDuration": 37.188,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_5.html",
+ "topbarIndex": "[05/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 9.546,
+   "text": "而 Loop Engineering 是这条路的收敛点：不是把一次运行做好，而是设计一个系统，持续调度这些运行。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 9.546,
+   "localDuration": 5.284,
+   "text": "用开车打比方，就是从手动开车，一路升级到运营整个自动驾驶车队。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.976,
+   "localDuration": 3.93,
+   "text": "Boris Cherny 把这条路压成一条时间线。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.906,
+   "localDuration": 1.887,
+   "text": "2023 年，你写代码。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.793,
+   "localDuration": 3.458,
+   "text": "2024 年，你提示 Claude 写代码。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.251,
+   "localDuration": 3.93,
+   "text": "2025 年，你写循环，让循环提示 Claude。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.381,
+   "localDuration": 4.37,
+   "text": "2026 年，你构建系统，运行这些循环。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.904,
+   "localDuration": 4.114,
+   "text": "你刚看完的那一天，就停在这条时间线的最后一格。"
+  }
+ ]
+}

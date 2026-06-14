@@ -1,0 +1,64 @@
+{
+ "scene": 21,
+ "id": "s21",
+ "type": "checklist",
+ "dataDuration": 43.344,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_21.html",
+ "topbarIndex": "[21/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.85,
+   "text": "最后是三个新手最容易踩的坑。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.85,
+   "localDuration": 3.258,
+   "text": "第一，工具给太多、描述写太模糊。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.108,
+   "localDuration": 6.514,
+   "text": "一个场景，连人类工程师都说不清该用哪个工具，智能体也不可能选对。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.622,
+   "localDuration": 3.869,
+   "text": "少而精的工具集，远好过大而全的工具库。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.632,
+   "localDuration": 5.466,
+   "text": "第二，工具出错的时候，返回错误字符串，不要抛异常。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.098,
+   "localDuration": 9.62,
+   "text": "传统工程里异常是规范，但在循环里，异常会杀死循环本身，错误字符串才给模型自己纠错的机会。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.86,
+   "localDuration": 3.997,
+   "text": "第三，保留失败的痕迹，不要清理现场。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.857,
+   "localDuration": 4.663,
+   "text": "失败记录是模型避免重复同样尝试的唯一证据。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 40.52,
+   "localDuration": 2.664,
+   "text": "擦掉失败，等于擦掉证据。"
+  }
+ ]
+}

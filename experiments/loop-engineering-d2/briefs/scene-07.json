@@ -1,0 +1,64 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "comparison_cards",
+ "dataDuration": 45.396,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_7.html",
+ "topbarIndex": "[07/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.345,
+   "text": "还记得早上那个自动醒来的定时任务吗？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.345,
+   "localDuration": 4.273,
+   "text": "那是第一个模块，Automation，自动化。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.618,
+   "localDuration": 7.247,
+   "text": "它解决的失败模式最朴素：没有触发器，循环就得靠你记得去启动——那就不叫循环了。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.012,
+   "localDuration": 6.421,
+   "text": "Codex 那边有个 Automations 面板，配好项目、提示词和频率就行。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.433,
+   "localDuration": 3.371,
+   "text": "没发现问题的运行，还会自动归档，不来烦你。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.004,
+   "localDuration": 8.166,
+   "text": "Claude Code 这边是另一套：/loop 让任务按节奏反复跑，Hooks 在生命周期的关键节点挂上命令。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 33.336,
+   "localDuration": 5.484,
+   "text": "另外有个 /goal，是我最喜欢的设计，先按下不表，案例里讲。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 38.988,
+   "localDuration": 2.31,
+   "text": "想让循环在你合上笔记本之后继续转？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.298,
+   "localDuration": 3.941,
+   "text": "接上 GitHub Actions 这类 CI 设施就行。"
+  }
+ ]
+}

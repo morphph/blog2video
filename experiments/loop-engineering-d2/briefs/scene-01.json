@@ -1,0 +1,76 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 47.916,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_1.html",
+ "topbarIndex": "[01/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.153,
+   "text": "Loop Engineering 全网最全指南，来了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.153,
+   "localDuration": 8.46,
+   "text": "我连搞几个通宵，把全网关于 Loop Engineering 的一手材料全部读完，浓缩成今天这一期，一次讲透。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.78,
+   "localDuration": 2.719,
+   "text": "先说你大概率正处在的状态。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.499,
+   "localDuration": 8.159,
+   "text": "你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.658,
+   "localDuration": 2.092,
+   "text": "不满意，再改提示词。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.75,
+   "localDuration": 2.929,
+   "text": "但有一群人，已经不这么做了。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.836,
+   "localDuration": 7.057,
+   "text": "Claude Code 的负责人 Boris Cherny，直接说过这么一句话：我已经不给 Claude 写提示词了。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.893,
+   "localDuration": 1.196,
+   "text": "我的工作，是写循环。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 37.089,
+   "localDuration": 2.99,
+   "text": "My job is to write loops."
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.248,
+   "localDuration": 2.702,
+   "text": "这个循环系统，具体长什么样？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 42.95,
+   "localDuration": 4.826,
+   "text": "与其给你念模块清单，不如带你看一个真实循环的一天。"
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  @font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+  @font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+  @font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+  @font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+  @font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+  @font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+  @font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+  .sub{position:absolute;left:72px;right:72px;bottom:340px;z-index:30;display:flex;justify-content:center}
+  .sub-inner{background:rgba(18,18,18,.6);border-top:1px solid #2a2a2c;max-width:936px;padding:16px 22px;
+    font-weight:500;font-size:38px;line-height:1.4;color:#edebe6;text-align:center}
+  .sub-k{color:#ccff4d}
+
+  [data-composition-id='s01']{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+  [data-composition-id='s01'] .grid{position:absolute;inset:0;
+    background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+    background-size:56px 56px;background-position:28px 28px;opacity:.05;
+    -webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 40%,#000 50%,rgba(0,0,0,0) 100%)}
+  [data-composition-id='s01'] .topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;
+    justify-content:space-between;align-items:center;z-index:5;
+    font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+  [data-composition-id='s01'] .topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+  [data-composition-id='s01'] .topbar .idx{color:#ccff4d}
+  /* beat layers */
+  [data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+    padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+  /* beat A — hook */
+  [data-composition-id='s01'] .a-en{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:108px;line-height:1.04;letter-spacing:-.03em;color:#edebe6}
+  [data-composition-id='s01'] .a-zh{margin-top:26px;font-weight:900;font-size:90px;line-height:1.1;color:#edebe6}
+  [data-composition-id='s01'] .a-arrive{margin-top:30px;display:flex;align-items:center}
+  [data-composition-id='s01'] .a-arrive .t{font-weight:900;font-size:104px;color:#edebe6}
+  [data-composition-id='s01'] .a-arrive .cur{display:inline-block;width:52px;height:84px;background:#ccff4d;margin-left:18px}
+  [data-composition-id='s01'] .a-chips{margin-top:50px;display:flex;flex-direction:column;gap:18px}
+  [data-composition-id='s01'] .chip{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+  [data-composition-id='s01'] .chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:25px;color:#ccff4d;letter-spacing:.05em}
+  [data-composition-id='s01'] .chip .ct{font-weight:600;font-size:38px;color:#edebe6}
+  [data-composition-id='s01'] .a-punch{margin-top:46px}
+  [data-composition-id='s01'] .hl{position:relative;display:inline-block;padding:6px 14px}
+  [data-composition-id='s01'] .hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+  [data-composition-id='s01'] .hl .tx{position:relative;z-index:1;font-weight:900;font-size:76px;color:#edebe6}
+
+  /* beat B — current-state prompt loop */
+  [data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+  [data-composition-id='s01'] .b-title{margin-top:14px;font-weight:900;font-size:72px;color:#edebe6}
+  [data-composition-id='s01'] .b-steps{margin-top:48px;display:flex;flex-direction:column;gap:16px;width:100%}
+  [data-composition-id='s01'] .b-step{display:flex;align-items:center;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 28px}
+  [data-composition-id='s01'] .b-step .n{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+  [data-composition-id='s01'] .b-step .x{font-weight:600;font-size:42px;color:#edebe6}
+  [data-composition-id='s01'] .b-loopback{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85}
+  [data-composition-id='s01'] .b-loopback .arrow{color:#ccff4d}
+  [data-composition-id='s01'] .b-but{margin-top:40px;font-weight:900;font-size:64px;line-height:1.18;color:#edebe6}
+  [data-composition-id='s01'] .b-but .em{color:#ccff4d}
+
+  /* beat C — Boris quote terminal */
+  [data-composition-id='s01'] .term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+  [data-composition-id='s01'] .term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+  [data-composition-id='s01'] .term-bar .d{width:12px;height:12px;border-radius:50%}
+  [data-composition-id='s01'] .term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+  [data-composition-id='s01'] .term-body{padding:44px 40px 48px}
+  [data-composition-id='s01'] .term-l1{font-weight:600;font-size:46px;line-height:1.45;color:#8a8a85}
+  [data-composition-id='s01'] .term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+  [data-composition-id='s01'] .term-l2{margin-top:26px;font-weight:900;font-size:72px;line-height:1.3;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+  [data-composition-id='s01'] .term-en{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#5fd3e8}
+  [data-composition-id='s01'] .term-src{margin-top:34px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+  [data-composition-id='s01'] .term-src b{color:#edebe6;font-weight:700}
+
+  /* beat D — teaser */
+  [data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+  [data-composition-id='s01'] .d-q{margin-top:22px;font-weight:900;font-size:76px;line-height:1.25;color:#edebe6}
+  [data-composition-id='s01'] .d-q .em{color:#ccff4d}
+  [data-composition-id='s01'] .d-tag{margin-top:46px;display:inline-flex;align-items:center;gap:16px;
+    background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+  [data-composition-id='s01'] .d-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+  [data-composition-id='s01'] .d-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+</style>
+</head>
+<body>
+  <div id="root" data-composition-id="s01" data-start="0" data-duration="47.916" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[01/24]</div>
+    </div>
+
+    <!-- BEAT A: hook -->
+    <div class="beat" id="beatA">
+      <div class="a-en">LOOP<br>ENGINEERING</div>
+      <div class="a-zh">全网最全指南</div>
+      <div class="a-arrive"><span class="t">来了。</span><span class="cur"></span></div>
+      <div class="a-chips">
+        <div class="chip ca1"><span class="ci">01</span><span class="ct">连搞几个通宵</span></div>
+        <div class="chip ca2"><span class="ci">02</span><span class="ct">全网一手材料读完</span></div>
+        <div class="chip ca3"><span class="ci">03</span><span class="ct">浓缩成这一期</span></div>
+      </div>
+      <div class="a-punch"><span class="hl"><span class="bar"></span><span class="tx">一次讲透</span></span></div>
+    </div>
+
+    <!-- BEAT B: current-state prompt loop -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick">STATUS QUO · 你现在的节奏</div>
+      <div class="b-title">改提示词的循环</div>
+      <div class="b-steps">
+        <div class="b-step bs1"><span class="n">01</span><span class="x">想清楚要做什么</span></div>
+        <div class="b-step bs2"><span class="n">02</span><span class="x">写一段提示词</span></div>
+        <div class="b-step bs3"><span class="n">03</span><span class="x">看它输出，不满意</span></div>
+      </div>
+      <div class="b-loopback"><span class="arrow">↑</span> 回到 02，再改提示词</div>
+      <div class="b-but">但有一群人，<span class="em">已经不这么做了</span></div>
+    </div>
+
+    <!-- BEAT C: Boris quote -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="term">
+        <div class="term-bar">
+          <span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span>
+          <span class="t">boris@claude-code: ~</span>
+        </div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>我已经不给 Claude 写提示词了。</div>
+          <div class="term-l2">我的工作，是<span class="hl" style="margin-left:8px"><span class="bar"></span><span class="tx" style="font-size:72px">写循环</span></span>。</div>
+          <div class="term-en">My job is to write loops.</div>
+          <div class="term-src">— <b>Boris Cherny</b> · Claude Code 负责人</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEAT D: teaser -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led">// NEXT</div>
+      <div class="d-q">这个循环系统，<br><span class="em">具体长什么样？</span></div>
+      <div class="d-tag"><span class="dot"></span><span class="lab">带你看一个真实循环的一天</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.153" data-track-index="5"><div class="sub-inner">Loop Engineering 全网最全指南，<span class="sub-k">来了</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.153" data-duration="8.46" data-track-index="5"><div class="sub-inner">我连搞几个通宵，把全网关于 Loop Engineering 的一手材料全部读完，浓缩成今天这一期，<span class="sub-k">一次讲透</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.78" data-duration="2.719" data-track-index="5"><div class="sub-inner">先说你大概率正处在的<span class="sub-k">状态</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.499" data-duration="8.159" data-track-index="5"><div class="sub-inner">你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段<span class="sub-k">提示词</span>，看它输出。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.658" data-duration="2.092" data-track-index="5"><div class="sub-inner">不满意，再改提示词。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.75" data-duration="2.929" data-track-index="5"><div class="sub-inner">但有一群人，已经<span class="sub-k">不这么做了</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.836" data-duration="7.057" data-track-index="5"><div class="sub-inner">Claude Code 的负责人 <span class="sub-k">Boris Cherny</span>，直接说过这么一句话：我已经不给 Claude 写提示词了。</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.893" data-duration="1.196" data-track-index="5"><div class="sub-inner">我的工作，是<span class="sub-k">写循环</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.089" data-duration="2.99" data-track-index="5"><div class="sub-inner">My job is to write <span class="sub-k">loops</span>.</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.248" data-duration="2.702" data-track-index="5"><div class="sub-inner">这个循环系统，<span class="sub-k">具体长什么样</span>？</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.95" data-duration="4.826" data-track-index="5"><div class="sub-inner">与其给你念模块清单，不如带你看一个<span class="sub-k">真实循环的一天</span>。</div></div>
+  </div>
+
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~12.6) */
+    tl.from(R+'.a-en',{x:-40,opacity:0,duration:.4,ease:'expo.out'},0.5);
+    tl.from(R+'.a-zh',{y:22,opacity:0,duration:.35,ease:'power3.out'},1.0);
+    tl.from(R+'.a-arrive .t',{opacity:0,duration:.18,ease:'power1.in'},3.3);
+    tl.from(R+'.a-arrive .cur',{scale:2.4,opacity:0,duration:.3,ease:'expo.out'},3.32);
+    tl.to(R+'.a-arrive .cur',{opacity:0,duration:.4,ease:'steps(1)',repeat:5,yoyo:true},4.2);
+    tl.from(R+'.ca1',{x:-26,opacity:0,duration:.3,ease:'power3.out'},5.0);
+    tl.from(R+'.ca2',{y:18,opacity:0,duration:.3,ease:'power2.out'},6.6);
+    tl.from(R+'.ca3',{x:26,opacity:0,duration:.3,ease:'expo.out'},8.4);
+    tl.from(R+'.a-punch',{opacity:0,duration:.15,ease:'power1.out'},10.2);
+    tl.to(R+'.a-punch .bar',{scaleX:1,duration:.3,ease:'power4.inOut'},10.3);
+    tl.to(R+'.a-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},10.45);
+    tl.to(R+'#beatA',{scale:1.03,duration:12.6,ease:'none'},0);
+
+    /* A -> B swap @ 12.78 */
+    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},12.5);
+    tl.set(R+'#beatB',{opacity:1},12.78);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},13.0);
+    tl.from(R+'.b-title',{y:20,opacity:0,duration:.35,ease:'power3.out'},13.3);
+    tl.from(R+'.bs1',{x:-24,opacity:0,duration:.3,ease:'power3.out'},15.6);
+    tl.from(R+'.bs2',{x:-24,opacity:0,duration:.3,ease:'expo.out'},18.2);
+    tl.from(R+'.bs3',{x:-24,opacity:0,duration:.3,ease:'power2.out'},20.8);
+    tl.from(R+'.b-loopback',{opacity:0,duration:.3,ease:'power1.out'},23.6);
+    tl.from(R+'.b-but',{y:20,opacity:0,duration:.35,ease:'power3.out'},25.75);
+    tl.to(R+'#beatB',{scale:1.03,duration:15,ease:'none'},12.8);
+
+    /* B -> C swap @ 28.84 */
+    tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},28.4);
+    tl.set(R+'#beatC',{opacity:1},28.85);
+    tl.from(R+'.term',{y:30,opacity:0,duration:.45,ease:'expo.out'},28.95);
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},29.1);
+    tl.from(R+'.term-l1',{opacity:0,duration:.3,ease:'power2.out'},31.2);
+    tl.from(R+'.term-l2',{y:18,opacity:0,duration:.35,ease:'power3.out'},35.0);
+    /* hero — 写循环 acid sweep @ 35.9 */
+    tl.to(R+'.term-l2 .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},35.9);
+    tl.to(R+'.term-l2 .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},36.06);
+    tl.from(R+'.term-en',{opacity:0,duration:.3,ease:'power1.out'},37.1);
+    tl.from(R+'.term-src',{opacity:0,duration:.3,ease:'power1.out'},38.4);
+    tl.to(R+'#beatC',{scale:1.025,duration:11,ease:'none'},28.9);
+
+    /* C -> D swap @ 40.25 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},39.9);
+    tl.set(R+'#beatD',{opacity:1},40.25);
+    tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},40.4);
+    tl.from(R+'.d-q',{y:22,opacity:0,duration:.4,ease:'power3.out'},40.7);
+    tl.from(R+'.d-tag',{y:18,opacity:0,duration:.35,ease:'expo.out'},43.1);
+    tl.to(R+'#beatD',{scale:1.03,duration:7.6,ease:'none'},40.3);
+
+    /* subtitle fade-ins */
+    [['#sub-1',0],['#sub-2',4.153],['#sub-3',12.78],['#sub-4',15.499],['#sub-5',23.658],['#sub-6',25.75],['#sub-7',28.836],['#sub-8',35.893],['#sub-9',37.089],['#sub-10',40.248],['#sub-11',42.95]]
+      .forEach(function(s){ tl.from(s[0],{opacity:0,duration:.2,ease:'power1.out'},s[1]); });
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

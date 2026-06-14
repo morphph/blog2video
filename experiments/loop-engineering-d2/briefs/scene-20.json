@@ -1,0 +1,70 @@
+{
+ "scene": 20,
+ "id": "s20",
+ "type": "image",
+ "dataDuration": 62.136,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_20.html",
+ "topbarIndex": "[20/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.87,
+   "text": "再往后的路径就清晰了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.87,
+   "localDuration": 3.4,
+   "text": "用 worktree 把并行任务隔离开。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.27,
+   "localDuration": 11.221,
+   "text": "在 .claude/agents/ 里定义一个 reviewer 子智能体，把写和查的分离落地：安全审查的盯漏洞，性能审查的盯瓶颈。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.632,
+   "localDuration": 7.356,
+   "text": "再建一个 PROGRESS.md，每次运行把经验和坑写进去，下次从进度继续。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.988,
+   "localDuration": 3.678,
+   "text": "做到这一步，你就有了一个会过夜的循环。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.828,
+   "localDuration": 4,
+   "text": "成本上有一个十倍杠杆：prompt caching。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.828,
+   "localDuration": 9.077,
+   "text": "前面说过多智能体烧 15 倍 token，而用好缓存，token 单价能从每百万 3 美元，降到每百万 0.3 美元。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.076,
+   "localDuration": 8.957,
+   "text": "前提是 prompt 保持追加式增长，中途别换 tools 列表、别换模型——一换，缓存就碎了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 50.033,
+   "localDuration": 7.278,
+   "text": "给个参照系：三智能体系统生成一个完整应用，单次成本 125 到 200 美元。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 57.456,
+   "localDuration": 4.544,
+   "text": "日常的 bug 修复循环，应该控制在 2 美元以内。"
+  }
+ ]
+}

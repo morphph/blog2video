@@ -1,0 +1,28 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 20.304,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_10.html",
+ "topbarIndex": "[10/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 9.143,
+   "text": "然后是自动开 PR、更新工单那一步——第四个模块，Plugins 和 Connectors，靠 MCP 跟真实世界对接。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 9.143,
+   "localDuration": 5.943,
+   "text": "读 issue tracker、查数据库、往 Slack 发消息，都走这条路。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.286,
+   "localDuration": 4.881,
+   "text": "两边协议相同、连接器互通，早上说过，不展开。"
+  }
+ ]
+}

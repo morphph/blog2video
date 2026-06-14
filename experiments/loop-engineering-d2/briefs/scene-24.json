@@ -1,0 +1,40 @@
+{
+ "scene": 24,
+ "id": "s24",
+ "type": "summary",
+ "dataDuration": 30.736,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_24.html",
+ "topbarIndex": "[24/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 11.374,
+   "text": "今晚就能做的最小动作：打开 Claude Code，把你本来要一路盯着的那件事，写成一个 `/goal`，给它一个机器能检查的完成条件。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 11.374,
+   "localDuration": 2.342,
+   "text": "你的第一个循环，就这么开始。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.86,
+   "localDuration": 10.558,
+   "text": "这期内容的完整文字版指南，我放在公众号的文章里，包括所有命令、参数和成本数据，想动手搭的可以去对照着做。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 24.588,
+   "localDuration": 3.813,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 28.401,
+   "localDuration": 1.335,
+   "text": "我们下期再见。"
+  }
+ ]
+}

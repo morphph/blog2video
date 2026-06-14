@@ -1,0 +1,100 @@
+{
+ "scene": 22,
+ "id": "s22",
+ "type": "checklist",
+ "dataDuration": 61.704,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_22.html",
+ "topbarIndex": "[22/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.696,
+   "text": "到这里，整台机器你都会搭了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.696,
+   "localDuration": 1.925,
+   "text": "合上之前，三个警告。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.621,
+   "localDuration": 3.081,
+   "text": "我认为它们比前面所有技巧都值钱。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.848,
+   "localDuration": 3.352,
+   "text": "最直接的一条：验证永远是你的责任。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 11.2,
+   "localDuration": 4.733,
+   "text": "智能体说 done，只是一个声明，不是一个证明。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.133,
+   "localDuration": 7.236,
+   "text": "循环跑完了，CI 全绿了，PR 自动开了——这些只代表你设定的检查通过了。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.369,
+   "localDuration": 2.347,
+   "text": "而你的检查，可能不够好。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 25.884,
+   "localDuration": 2.88,
+   "text": "比它更隐蔽的，是理解力债务。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 28.764,
+   "localDuration": 6.172,
+   "text": "循环交付得越快，你的代码库里「存在但你不理解」的部分就越大。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 34.936,
+   "localDuration": 5.349,
+   "text": "这不是能优化掉的 bug，它是交付速度的直接副产品。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.485,
+   "localDuration": 4.672,
+   "text": "你只能持续偿还：抽查，读 PR，问为什么。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 45.324,
+   "localDuration": 4.169,
+   "text": "而我觉得最锋利的，是认知投降这个陷阱。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 49.493,
+   "localDuration": 4.387,
+   "text": "同样是搭循环，出发点不同，结局完全不同。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 53.88,
+   "localDuration": 3.511,
+   "text": "出于工程判断去设计循环，是进步。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 57.391,
+   "localDuration": 4.168,
+   "text": "为了回避思考去设计循环，是灾难的序曲。"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "scene": 16,
+ "id": "s16",
+ "type": "quote",
+ "dataDuration": 37.044,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_16.html",
+ "topbarIndex": "[16/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.495,
+   "text": "这种级别的反馈，靠模型自我批评，永远拿不到。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.495,
+   "localDuration": 7.561,
+   "text": "团队的原话是：让模型评判自己的工作，它会自信地称赞自己，哪怕质量明显平庸。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.204,
+   "localDuration": 1.128,
+   "text": "代价当然有。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.332,
+   "localDuration": 8.838,
+   "text": "内部数据：标准对话消耗 1 倍 token，单智能体循环约 4 倍，多智能体系统约 15 倍。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.37,
+   "localDuration": 5.457,
+   "text": "但多智能体在内部评估里，比单智能体好了百分之 90.2。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.827,
+   "localDuration": 3.313,
+   "text": "我的看法是，这 15 倍不是浪费。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.284,
+   "localDuration": 5.612,
+   "text": "你是在花钱买一个结构上才给得了的东西：一个不会给自己放水的裁判。"
+  }
+ ]
+}

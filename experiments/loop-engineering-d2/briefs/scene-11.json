@@ -1,0 +1,40 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "comparison_cards",
+ "dataDuration": 30.168,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_11.html",
+ "topbarIndex": "[11/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.936,
+   "text": "第五个模块，就是早上埋的那个伏笔：写修复的和审修复的，是两个子智能体。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.936,
+   "localDuration": 4.75,
+   "text": "Sub-agents，Maker/Checker 分离。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.836,
+   "localDuration": 8.448,
+   "text": "Claude Code 这边，子智能体定义在 .claude/agents/ 目录下，还能组成 agent team，互相传活。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.284,
+   "localDuration": 4.885,
+   "text": "Codex 那边对应 .codex/agents/，用 TOML 文件写。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.336,
+   "localDuration": 5.693,
+   "text": "至于为什么必须分开——下一节，用一个真实系统给你看证据。"
+  }
+ ]
+}

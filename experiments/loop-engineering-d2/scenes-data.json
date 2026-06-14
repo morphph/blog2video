@@ -1,0 +1,1376 @@
+[
+ {
+  "n": 1,
+  "type": "image",
+  "start": 0,
+  "dur": 47.916,
+  "subs": [
+   {
+    "start": 0,
+    "end": 4.153,
+    "text": "Loop Engineering 全网最全指南，来了。"
+   },
+   {
+    "start": 4.153,
+    "end": 12.613,
+    "text": "我连搞几个通宵，把全网关于 Loop Engineering 的一手材料全部读完，浓缩成今天这一期，一次讲透。"
+   },
+   {
+    "start": 12.78,
+    "end": 15.499,
+    "text": "先说你大概率正处在的状态。"
+   },
+   {
+    "start": 15.499,
+    "end": 23.658,
+    "text": "你现在用 AI 写代码，节奏是这样的：想清楚要做什么，写一段提示词，看它输出。"
+   },
+   {
+    "start": 23.658,
+    "end": 25.75,
+    "text": "不满意，再改提示词。"
+   },
+   {
+    "start": 25.75,
+    "end": 28.679,
+    "text": "但有一群人，已经不这么做了。"
+   },
+   {
+    "start": 28.836,
+    "end": 35.893,
+    "text": "Claude Code 的负责人 Boris Cherny，直接说过这么一句话：我已经不给 Claude 写提示词了。"
+   },
+   {
+    "start": 35.893,
+    "end": 37.089,
+    "text": "我的工作，是写循环。"
+   },
+   {
+    "start": 37.089,
+    "end": 40.079,
+    "text": "My job is to write loops."
+   },
+   {
+    "start": 40.248,
+    "end": 42.95,
+    "text": "这个循环系统，具体长什么样？"
+   },
+   {
+    "start": 42.95,
+    "end": 47.776,
+    "text": "与其给你念模块清单，不如带你看一个真实循环的一天。"
+   }
+  ],
+  "scriptType": "cover",
+  "srcHtml": "blog2video-output/loop-engineering/slide_1.html",
+  "clip": "clips/scene-01.mp4",
+  "file": "scenes/scene-01.html"
+ },
+ {
+  "n": 2,
+  "type": "image",
+  "start": 47.916,
+  "dur": 48.204,
+  "subs": [
+   {
+    "start": 0,
+    "end": 4.463,
+    "text": "每天早上，一个定时任务自动醒来，在你的仓库上运行。"
+   },
+   {
+    "start": 4.463,
+    "end": 8.213,
+    "text": "这是循环的心跳，叫 Automation。"
+   },
+   {
+    "start": 8.352,
+    "end": 12.916,
+    "text": "它做的第一件事，是调用一个 triage skill。"
+   },
+   {
+    "start": 12.916,
+    "end": 18.832,
+    "text": "Skill 是一份打包好的项目知识，告诉它这个项目里，问题该怎么分流。"
+   },
+   {
+    "start": 18.832,
+    "end": 23.566,
+    "text": "它读昨天的 CI 失败、新开的 issue、最近的提交。"
+   },
+   {
+    "start": 23.724,
+    "end": 27.459,
+    "text": "发现的问题，写进一个 markdown 状态文件。"
+   },
+   {
+    "start": 27.459,
+    "end": 30.149,
+    "text": "这一步很关键，等会儿你就知道为什么。"
+   },
+   {
+    "start": 30.312,
+    "end": 37.853,
+    "text": "接下来，对每个值得处理的问题，它开一个隔离的 worktree，一份独立的代码副本。"
+   },
+   {
+    "start": 37.853,
+    "end": 39.289,
+    "text": "为什么必须隔离？"
+   },
+   {
+    "start": 39.289,
+    "end": 43.598,
+    "text": "因为多个智能体同时改一份代码，互相踩脚就是灾难。"
+   },
+   {
+    "start": 43.798,
+    "end": 48.04,
+    "text": "一旦开始并行，隔离不是优化，是底线。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_2.html",
+  "clip": "clips/scene-02.mp4",
+  "file": "scenes/scene-02.html"
+ },
+ {
+  "n": 3,
+  "type": "image",
+  "start": 96.12,
+  "dur": 69.048,
+  "subs": [
+   {
+    "start": 0,
+    "end": 5.069,
+    "text": "然后，一个子智能体在 worktree 里起草修复。"
+   },
+   {
+    "start": 5.069,
+    "end": 10.139,
+    "text": "另一个子智能体，按项目规范和现有测试，审查这份修复。"
+   },
+   {
+    "start": 10.139,
+    "end": 13.844,
+    "text": "注意这个细节：写的和查的，不是同一个。"
+   },
+   {
+    "start": 14.044,
+    "end": 17.09,
+    "text": "这是全片最重要的伏笔，马上展开。"
+   },
+   {
+    "start": 17.244,
+    "end": 22.493,
+    "text": "审查通过，循环通过 MCP 连接器自动开 PR、更新工单。"
+   },
+   {
+    "start": 22.493,
+    "end": 25.931,
+    "text": "MCP 是智能体跟真实世界对接的协议。"
+   },
+   {
+    "start": 25.931,
+    "end": 33.352,
+    "text": "Claude Code 和 Codex 都用它，两边概念一一对应，连接器基本互通。"
+   },
+   {
+    "start": 33.516,
+    "end": 35.512,
+    "text": "它处理不了的问题呢？"
+   },
+   {
+    "start": 35.512,
+    "end": 38.106,
+    "text": "落进一个收件箱，等人来看。"
+   },
+   {
+    "start": 38.268,
+    "end": 43.765,
+    "text": "一天结束，状态文件记下今天试了什么、过了什么、剩下什么。"
+   },
+   {
+    "start": 43.765,
+    "end": 47.299,
+    "text": "明天早上，循环从今天停下的地方继续。"
+   },
+   {
+    "start": 47.299,
+    "end": 54.759,
+    "text": "这就是状态文件的意义：智能体每次运行结束都会失忆，状态文件是循环唯一的记忆。"
+   },
+   {
+    "start": 54.9,
+    "end": 57.819,
+    "text": "没有它，每天都从零开始。"
+   },
+   {
+    "start": 57.96,
+    "end": 61.268,
+    "text": "这一整天里，你出现了几次？"
+   },
+   {
+    "start": 61.268,
+    "end": 62.031,
+    "text": "一次。"
+   },
+   {
+    "start": 62.031,
+    "end": 64.067,
+    "text": "看收件箱那一次。"
+   },
+   {
+    "start": 64.067,
+    "end": 68.901,
+    "text": "这就是「我的工作是写循环」的具体含义。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_3.html",
+  "clip": "clips/scene-03.mp4",
+  "file": "scenes/scene-03.html"
+ },
+ {
+  "n": 4,
+  "type": "image",
+  "start": 165.168,
+  "dur": 57.132,
+  "subs": [
+   {
+    "start": 0,
+    "end": 3.803,
+    "text": "「写循环」这个姿势，不是凭空冒出来的。"
+   },
+   {
+    "start": 3.803,
+    "end": 11.608,
+    "text": "过去三年，用 AI 写代码的方式换了好几代，每一代都是被上一代的瓶颈逼出来的。"
+   },
+   {
+    "start": 11.608,
+    "end": 14.61,
+    "text": "先花一分钟，把这条路快进一遍。"
+   },
+   {
+    "start": 14.76,
+    "end": 19.095,
+    "text": "最早是 Prompt Engineering，研究怎么措辞。"
+   },
+   {
+    "start": 19.095,
+    "end": 22.275,
+    "text": "但模型越来越聪明，措辞的边际收益一直在递减。"
+   },
+   {
+    "start": 22.275,
+    "end": 28.778,
+    "text": "于是重心移到 Context Engineering：不纠结说法，转去策划模型能看到什么。"
+   },
+   {
+    "start": 28.944,
+    "end": 35.683,
+    "text": "这一层到今天依然重要，但它只管单次调用的质量——写完了谁来确认写对了？"
+   },
+   {
+    "start": 35.683,
+    "end": 36.646,
+    "text": "依然是你。"
+   },
+   {
+    "start": 36.792,
+    "end": 45.211,
+    "text": "所以下一层是反馈循环：让智能体自己验证自己，跑测试，查日志，打开浏览器看渲染结果。"
+   },
+   {
+    "start": 45.211,
+    "end": 50.345,
+    "text": "我的判断是，这一层是目前大多数人回报最大的投资点。"
+   },
+   {
+    "start": 50.508,
+    "end": 56.968,
+    "text": "再往上是 Harness，驾驭系统，一句话定义：Agent 等于 Model 加 Harness。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_4.html",
+  "clip": "clips/scene-04.mp4",
+  "file": "scenes/scene-04.html"
+ },
+ {
+  "n": 5,
+  "type": "image",
+  "start": 222.3,
+  "dur": 37.188,
+  "subs": [
+   {
+    "start": 0,
+    "end": 9.546,
+    "text": "而 Loop Engineering 是这条路的收敛点：不是把一次运行做好，而是设计一个系统，持续调度这些运行。"
+   },
+   {
+    "start": 9.546,
+    "end": 14.83,
+    "text": "用开车打比方，就是从手动开车，一路升级到运营整个自动驾驶车队。"
+   },
+   {
+    "start": 14.976,
+    "end": 18.906,
+    "text": "Boris Cherny 把这条路压成一条时间线。"
+   },
+   {
+    "start": 18.906,
+    "end": 20.793,
+    "text": "2023 年，你写代码。"
+   },
+   {
+    "start": 20.793,
+    "end": 24.251,
+    "text": "2024 年，你提示 Claude 写代码。"
+   },
+   {
+    "start": 24.251,
+    "end": 28.181,
+    "text": "2025 年，你写循环，让循环提示 Claude。"
+   },
+   {
+    "start": 28.381,
+    "end": 32.751,
+    "text": "2026 年，你构建系统，运行这些循环。"
+   },
+   {
+    "start": 32.904,
+    "end": 37.018,
+    "text": "你刚看完的那一天，就停在这条时间线的最后一格。"
+   }
+  ],
+  "scriptType": "principle",
+  "srcHtml": "blog2video-output/loop-engineering/slide_5.html",
+  "clip": "clips/scene-05.mp4",
+  "file": "scenes/scene-05.html"
+ },
+ {
+  "n": 6,
+  "type": "image",
+  "start": 259.488,
+  "dur": 21.204,
+  "subs": [
+   {
+    "start": 0,
+    "end": 10.589,
+    "text": "这套循环的解剖图，最早是 Addy Osmani 画出来的：五个构建模块，加一个贯穿全程的状态层。"
+   },
+   {
+    "start": 10.589,
+    "end": 13.399,
+    "text": "这个拆法已经成了社区共识。"
+   },
+   {
+    "start": 13.399,
+    "end": 14.912,
+    "text": "听起来像清单？"
+   },
+   {
+    "start": 15.112,
+    "end": 18.681,
+    "text": "其实你全都见过——就在早上那一天里。"
+   },
+   {
+    "start": 18.681,
+    "end": 21.06,
+    "text": "我带你回去，一个一个认。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_6.html",
+  "clip": "clips/scene-06.mp4",
+  "file": "scenes/scene-06.html"
+ },
+ {
+  "n": 7,
+  "type": "image",
+  "start": 280.692,
+  "dur": 45.396,
+  "subs": [
+   {
+    "start": 0,
+    "end": 3.345,
+    "text": "还记得早上那个自动醒来的定时任务吗？"
+   },
+   {
+    "start": 3.345,
+    "end": 7.618,
+    "text": "那是第一个模块，Automation，自动化。"
+   },
+   {
+    "start": 7.618,
+    "end": 14.865,
+    "text": "它解决的失败模式最朴素：没有触发器，循环就得靠你记得去启动——那就不叫循环了。"
+   },
+   {
+    "start": 15.012,
+    "end": 21.433,
+    "text": "Codex 那边有个 Automations 面板，配好项目、提示词和频率就行。"
+   },
+   {
+    "start": 21.433,
+    "end": 24.804,
+    "text": "没发现问题的运行，还会自动归档，不来烦你。"
+   },
+   {
+    "start": 25.004,
+    "end": 33.17,
+    "text": "Claude Code 这边是另一套：/loop 让任务按节奏反复跑，Hooks 在生命周期的关键节点挂上命令。"
+   },
+   {
+    "start": 33.336,
+    "end": 38.82,
+    "text": "另外有个 /goal，是我最喜欢的设计，先按下不表，案例里讲。"
+   },
+   {
+    "start": 38.988,
+    "end": 41.298,
+    "text": "想让循环在你合上笔记本之后继续转？"
+   },
+   {
+    "start": 41.298,
+    "end": 45.239,
+    "text": "接上 GitHub Actions 这类 CI 设施就行。"
+   }
+  ],
+  "scriptType": "comparison_cards",
+  "srcHtml": "blog2video-output/loop-engineering/slide_7.html",
+  "clip": "clips/scene-07.mp4",
+  "file": "scenes/scene-07.html"
+ },
+ {
+  "n": 8,
+  "type": "image",
+  "start": 326.088,
+  "dur": 26.856,
+  "subs": [
+   {
+    "start": 0,
+    "end": 7.035,
+    "text": "接着，循环给每个问题开了一份独立的代码副本——第二个模块，Worktree。"
+   },
+   {
+    "start": 7.035,
+    "end": 10.368,
+    "text": "为什么必须隔离，早上说透了，不重复。"
+   },
+   {
+    "start": 10.368,
+    "end": 16.108,
+    "text": "值得补的是两边的实现：Codex 是内建的，每个线程自动一份。"
+   },
+   {
+    "start": 16.272,
+    "end": 26.702,
+    "text": "Claude Code 用 git 原生能力：开会话时加 --worktree 参数；或者给子智能体配置写一句 isolation: worktree，干完活还会自动清理。"
+   }
+  ],
+  "scriptType": "comparison_cards",
+  "srcHtml": "blog2video-output/loop-engineering/slide_8.html",
+  "clip": "clips/scene-08.mp4",
+  "file": "scenes/scene-08.html"
+ },
+ {
+  "n": 9,
+  "type": "image",
+  "start": 352.944,
+  "dur": 35.712,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.815,
+    "text": "那个 triage skill 呢？"
+   },
+   {
+    "start": 2.815,
+    "end": 6.256,
+    "text": "Skill 是第三个模块，打包好的项目知识。"
+   },
+   {
+    "start": 6.256,
+    "end": 11.417,
+    "text": "一个文件夹，一个 SKILL.md 写清指令，配上脚本和参考资料。"
+   },
+   {
+    "start": 11.556,
+    "end": 18.283,
+    "text": "它解决的失败模式你肯定遇过：项目里的门道，每开一次新会话，都得重新教一遍。"
+   },
+   {
+    "start": 18.432,
+    "end": 24.789,
+    "text": "两边格式完全一样，可以手动调用，也能在任务匹配描述时自动触发。"
+   },
+   {
+    "start": 24.789,
+    "end": 30.121,
+    "text": "这里有个反直觉的实战经验：技能描述要写得越无聊越好。"
+   },
+   {
+    "start": 30.121,
+    "end": 32.786,
+    "text": "精确、朴素，自动匹配才准。"
+   },
+   {
+    "start": 32.986,
+    "end": 35.568,
+    "text": "写得花哨，反而触发不准。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_9.html",
+  "clip": "clips/scene-09.mp4",
+  "file": "scenes/scene-09.html"
+ },
+ {
+  "n": 10,
+  "type": "image",
+  "start": 388.656,
+  "dur": 20.304,
+  "subs": [
+   {
+    "start": 0,
+    "end": 9.143,
+    "text": "然后是自动开 PR、更新工单那一步——第四个模块，Plugins 和 Connectors，靠 MCP 跟真实世界对接。"
+   },
+   {
+    "start": 9.143,
+    "end": 15.086,
+    "text": "读 issue tracker、查数据库、往 Slack 发消息，都走这条路。"
+   },
+   {
+    "start": 15.286,
+    "end": 20.167,
+    "text": "两边协议相同、连接器互通，早上说过，不展开。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_10.html",
+  "clip": "clips/scene-10.mp4",
+  "file": "scenes/scene-10.html"
+ },
+ {
+  "n": 11,
+  "type": "image",
+  "start": 408.96,
+  "dur": 30.168,
+  "subs": [
+   {
+    "start": 0,
+    "end": 5.936,
+    "text": "第五个模块，就是早上埋的那个伏笔：写修复的和审修复的，是两个子智能体。"
+   },
+   {
+    "start": 5.936,
+    "end": 10.686,
+    "text": "Sub-agents，Maker/Checker 分离。"
+   },
+   {
+    "start": 10.836,
+    "end": 19.284,
+    "text": "Claude Code 这边，子智能体定义在 .claude/agents/ 目录下，还能组成 agent team，互相传活。"
+   },
+   {
+    "start": 19.284,
+    "end": 24.169,
+    "text": "Codex 那边对应 .codex/agents/，用 TOML 文件写。"
+   },
+   {
+    "start": 24.336,
+    "end": 30.029,
+    "text": "至于为什么必须分开——下一节，用一个真实系统给你看证据。"
+   }
+  ],
+  "scriptType": "comparison_cards",
+  "srcHtml": "blog2video-output/loop-engineering/slide_11.html",
+  "clip": "clips/scene-11.mp4",
+  "file": "scenes/scene-11.html"
+ },
+ {
+  "n": 12,
+  "type": "image",
+  "start": 439.128,
+  "dur": 29.484,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.636,
+    "text": "最后是 State，状态层。"
+   },
+   {
+    "start": 2.636,
+    "end": 6.402,
+    "text": "它不算第六个模块，更像贯穿前五个的底座。"
+   },
+   {
+    "start": 6.402,
+    "end": 10.732,
+    "text": "早上你已经看过它救场：智能体会失忆，仓库不会。"
+   },
+   {
+    "start": 10.872,
+    "end": 19.468,
+    "text": "形式随你挑：一个进度文件，一份 AGENTS.md，甚至一个 Linear 看板，靠 MCP 读写。"
+   },
+   {
+    "start": 19.62,
+    "end": 23.651,
+    "text": "五个模块加一个状态层，拼回去就是早上那一天。"
+   },
+   {
+    "start": 23.651,
+    "end": 29.33,
+    "text": "这个框架一点都不神秘——你只是刚刚才知道，每个零件叫什么名字。"
+   }
+  ],
+  "scriptType": "principle",
+  "srcHtml": "blog2video-output/loop-engineering/slide_12.html",
+  "clip": "clips/scene-12.mp4",
+  "file": "scenes/scene-12.html"
+ },
+ {
+  "n": 13,
+  "type": "image",
+  "start": 468.612,
+  "dur": 52.02,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.9,
+    "text": "第一个案例，自动 PR 工作流。"
+   },
+   {
+    "start": 2.9,
+    "end": 9.788,
+    "text": "流程你已经看过全程，就是早上那一天：从 triage 扫描，到自动开 PR。"
+   },
+   {
+    "start": 9.788,
+    "end": 14.32,
+    "text": "这里只补一个增量——那个我按下不表的 /goal。"
+   },
+   {
+    "start": 14.472,
+    "end": 17.558,
+    "text": "它的用法，跟你习惯的指挥方式相反。"
+   },
+   {
+    "start": 17.558,
+    "end": 26.27,
+    "text": "你不说「修复这个 bug」，你说：跑到 test/auth 下所有测试通过、lint 干净为止。"
+   },
+   {
+    "start": 26.27,
+    "end": 30.626,
+    "text": "你定义的是终态，路径它自己找，失败了自己换思路。"
+   },
+   {
+    "start": 30.78,
+    "end": 32.507,
+    "text": "更关键的是裁判。"
+   },
+   {
+    "start": 32.507,
+    "end": 40.061,
+    "text": "判断终态有没有达成的，是一个独立的小模型，不是写代码的那个智能体自己。"
+   },
+   {
+    "start": 40.261,
+    "end": 47.861,
+    "text": "你看到的是「设个目标就能走开」，它可信的原因是：裁判和选手，从来不是同一个。"
+   },
+   {
+    "start": 47.861,
+    "end": 49.46,
+    "text": "为什么必须这样？"
+   },
+   {
+    "start": 49.608,
+    "end": 51.853,
+    "text": "第二个案例，就是证据。"
+   }
+  ],
+  "scriptType": "principle",
+  "srcHtml": "blog2video-output/loop-engineering/slide_13.html",
+  "clip": "clips/scene-13.mp4",
+  "file": "scenes/scene-13.html"
+ },
+ {
+  "n": 14,
+  "type": "image",
+  "start": 520.632,
+  "dur": 64.224,
+  "subs": [
+   {
+    "start": 0,
+    "end": 6.328,
+    "text": "第二个案例来自 Claude 背后的团队，一个三智能体 bug 修复循环。"
+   },
+   {
+    "start": 6.328,
+    "end": 11.8,
+    "text": "他们用的是 GAN 的思路，生成对抗：一边拼命做，一边拼命挑刺。"
+   },
+   {
+    "start": 11.952,
+    "end": 12.966,
+    "text": "三个角色。"
+   },
+   {
+    "start": 12.966,
+    "end": 20.269,
+    "text": "Planner，规划者，接到一到四句话的问题描述，扩写成完整的修复方案。"
+   },
+   {
+    "start": 20.269,
+    "end": 24.327,
+    "text": "它被故意限制：只管做什么，不碰实现细节。"
+   },
+   {
+    "start": 24.327,
+    "end": 25.341,
+    "text": "反直觉吧？"
+   },
+   {
+    "start": 25.341,
+    "end": 27.37,
+    "text": "规划不是越细越好吗？"
+   },
+   {
+    "start": 27.37,
+    "end": 27.978,
+    "text": "不是。"
+   },
+   {
+    "start": 28.116,
+    "end": 33.108,
+    "text": "规划层一旦在技术细节上犯错，错误会向下游级联传播。"
+   },
+   {
+    "start": 33.108,
+    "end": 36.503,
+    "text": "让它少说，是结构性防御，不是偷懒。"
+   },
+   {
+    "start": 36.648,
+    "end": 42.217,
+    "text": "Generator，执行者，按方案逐步实现，做完给自己打分。"
+   },
+   {
+    "start": 42.217,
+    "end": 44.631,
+    "text": "分数趋势向好，就继续优化。"
+   },
+   {
+    "start": 44.631,
+    "end": 47.972,
+    "text": "方向本身错了，就果断推翻，从头来过。"
+   },
+   {
+    "start": 48.132,
+    "end": 51.978,
+    "text": "真正的主角是 Evaluator，评审者。"
+   },
+   {
+    "start": 51.978,
+    "end": 60.219,
+    "text": "它通过 Playwright，像真实用户一样操作应用：点 UI，调 API，查数据库状态。"
+   },
+   {
+    "start": 60.219,
+    "end": 64.065,
+    "text": "任何一个维度低于阈值，整轮作废，打回重做。"
+   }
+  ],
+  "scriptType": "comparison_cards",
+  "srcHtml": "blog2video-output/loop-engineering/slide_14.html",
+  "clip": "clips/scene-14.mp4",
+  "file": "scenes/scene-14.html"
+ },
+ {
+  "n": 15,
+  "type": "image",
+  "start": 584.856,
+  "dur": 26.928,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.145,
+    "text": "它能抓到多具体的 bug？"
+   },
+   {
+    "start": 2.145,
+    "end": 3.3,
+    "text": "两个真实例子。"
+   },
+   {
+    "start": 3.3,
+    "end": 14.354,
+    "text": "矩形填充工具，只在拖拽的起点和终点放了图块，中间全空——fillRectangle 函数存在，但 mouseUp 的时候没被正确触发。"
+   },
+   {
+    "start": 14.508,
+    "end": 26.773,
+    "text": "另一个，PUT /frames/reorder 这个路由，定义在 /{frame_id} 之后，框架把 reorder 当成整数 ID 去解析，直接返回 422。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_15.html",
+  "clip": "clips/scene-15.mp4",
+  "file": "scenes/scene-15.html"
+ },
+ {
+  "n": 16,
+  "type": "image",
+  "start": 611.784,
+  "dur": 37.044,
+  "subs": [
+   {
+    "start": 0,
+    "end": 4.495,
+    "text": "这种级别的反馈，靠模型自我批评，永远拿不到。"
+   },
+   {
+    "start": 4.495,
+    "end": 12.056,
+    "text": "团队的原话是：让模型评判自己的工作，它会自信地称赞自己，哪怕质量明显平庸。"
+   },
+   {
+    "start": 12.204,
+    "end": 13.332,
+    "text": "代价当然有。"
+   },
+   {
+    "start": 13.332,
+    "end": 22.17,
+    "text": "内部数据：标准对话消耗 1 倍 token，单智能体循环约 4 倍，多智能体系统约 15 倍。"
+   },
+   {
+    "start": 22.37,
+    "end": 27.827,
+    "text": "但多智能体在内部评估里，比单智能体好了百分之 90.2。"
+   },
+   {
+    "start": 27.827,
+    "end": 31.14,
+    "text": "我的看法是，这 15 倍不是浪费。"
+   },
+   {
+    "start": 31.284,
+    "end": 36.896,
+    "text": "你是在花钱买一个结构上才给得了的东西：一个不会给自己放水的裁判。"
+   }
+  ],
+  "scriptType": "quote",
+  "srcHtml": "blog2video-output/loop-engineering/slide_16.html",
+  "clip": "clips/scene-16.mp4",
+  "file": "scenes/scene-16.html"
+ },
+ {
+  "n": 17,
+  "type": "image",
+  "start": 648.828,
+  "dur": 86.688,
+  "subs": [
+   {
+    "start": 0,
+    "end": 3.093,
+    "text": "把这两个案例拧干，剩下四条原则。"
+   },
+   {
+    "start": 3.24,
+    "end": 4.891,
+    "text": "第一条，自验证。"
+   },
+   {
+    "start": 4.891,
+    "end": 11.908,
+    "text": "智能体必须能端到端验证自己的工作：跑测试，跑 lint，跑类型检查。"
+   },
+   {
+    "start": 11.908,
+    "end": 17.687,
+    "text": "「我觉得改好了」不算验证，机器可检查的通过或失败，才算。"
+   },
+   {
+    "start": 17.856,
+    "end": 21.792,
+    "text": "第二条，Maker/Checker 分离。"
+   },
+   {
+    "start": 21.792,
+    "end": 24.979,
+    "text": "这条你刚看完一整节的证据，不重复。"
+   },
+   {
+    "start": 24.979,
+    "end": 30.039,
+    "text": "只补一句定位：它是整个循环工程里，最重要的结构性决策。"
+   },
+   {
+    "start": 30.204,
+    "end": 36.447,
+    "text": "第三条，成功标准必须可检查，而且检查的是正确性本身，不只是指标。"
+   },
+   {
+    "start": 36.447,
+    "end": 39.568,
+    "text": "因为智能体会作弊，还是合法作弊。"
+   },
+   {
+    "start": 39.568,
+    "end": 43.664,
+    "text": "为了让测试通过，它可能直接删掉失败的测试。"
+   },
+   {
+    "start": 43.812,
+    "end": 50.306,
+    "text": "为了让 lint 通过，它可能用 eslint-disable 把代码淹没。"
+   },
+   {
+    "start": 50.306,
+    "end": 52.015,
+    "text": "检查全绿，工作稀烂。"
+   },
+   {
+    "start": 52.015,
+    "end": 58.166,
+    "text": "所以圈子里现在流行一句话：设计评分标准才是真本事，模型反而是简单的部分。"
+   },
+   {
+    "start": 58.366,
+    "end": 60.948,
+    "text": "Rubric design is the skill now."
+   },
+   {
+    "start": 61.092,
+    "end": 62.44,
+    "text": "第四条，熔断。"
+   },
+   {
+    "start": 62.44,
+    "end": 65.328,
+    "text": "每个循环必须有明确的停止条件。"
+   },
+   {
+    "start": 65.328,
+    "end": 74.378,
+    "text": "生产环境的参考参数：最多迭代 15 到 25 步，超时三百秒左右，单次成本预算 2 美元上下。"
+   },
+   {
+    "start": 74.52,
+    "end": 82.291,
+    "text": "再加一个实用技巧：给每次迭代取哈希指纹，连续三次一模一样，立刻停。"
+   },
+   {
+    "start": 82.291,
+    "end": 86.529,
+    "text": "不设熔断的循环，就是不设上限的账单。"
+   }
+  ],
+  "scriptType": "checklist",
+  "srcHtml": "blog2video-output/loop-engineering/slide_17.html",
+  "clip": "clips/scene-17.mp4",
+  "file": "scenes/scene-17.html"
+ },
+ {
+  "n": 18,
+  "type": "image",
+  "start": 735.516,
+  "dur": 36.432,
+  "subs": [
+   {
+    "start": 0,
+    "end": 1.256,
+    "text": "原则都在了。"
+   },
+   {
+    "start": 1.256,
+    "end": 4.607,
+    "text": "最后讲怎么从零开始，今晚就动手。"
+   },
+   {
+    "start": 4.607,
+    "end": 8.166,
+    "text": "入口比你想的近，完全不用一步到位。"
+   },
+   {
+    "start": 8.316,
+    "end": 10.326,
+    "text": "第一步还是 /goal。"
+   },
+   {
+    "start": 10.326,
+    "end": 23.555,
+    "text": "比如你在修一个前端适配问题，别说「帮我修这个 bug」，写成：所有 Playwright 截图和设计稿的像素差异小于百分之一，且 npm test 全部通过。"
+   },
+   {
+    "start": 23.555,
+    "end": 25.062,
+    "text": "设好，去喝杯咖啡。"
+   },
+   {
+    "start": 25.2,
+    "end": 28.955,
+    "text": "它自己改代码、跑测试、看结果、再调整。"
+   },
+   {
+    "start": 28.955,
+    "end": 33.304,
+    "text": "还是案例里那个原则：定义终态，让它自己找路。"
+   },
+   {
+    "start": 33.304,
+    "end": 36.269,
+    "text": "你身份的转变，就从这一句开始。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_18.html",
+  "clip": "clips/scene-18.mp4",
+  "file": "scenes/scene-18.html"
+ },
+ {
+  "n": 19,
+  "type": "image",
+  "start": 771.948,
+  "dur": 45.108,
+  "subs": [
+   {
+    "start": 0,
+    "end": 7.785,
+    "text": "等单个 /goal 兜不住任务复杂度了，再上 Dynamic Workflows，动态工作流。"
+   },
+   {
+    "start": 7.785,
+    "end": 13.251,
+    "text": "它根据你的任务，动态生成一段编排脚本，调度最多上千个并行子智能体。"
+   },
+   {
+    "start": 13.392,
+    "end": 20.469,
+    "text": "最猛的真实案例来自 Bun 的作者：他用这套东西，把 Bun 从 Zig 移植到 Rust。"
+   },
+   {
+    "start": 20.469,
+    "end": 26.469,
+    "text": "75 万行代码，数百个智能体并行，百分之 99.8 的测试通过，11 天完成。"
+   },
+   {
+    "start": 26.64,
+    "end": 27.917,
+    "text": "但要提醒两句。"
+   },
+   {
+    "start": 27.917,
+    "end": 31.929,
+    "text": "这个功能目前处于研究预览阶段，不算成熟稳定。"
+   },
+   {
+    "start": 31.929,
+    "end": 38.313,
+    "text": "它的 token 消耗也显著高于普通会话，先小范围试，确认有效再铺开。"
+   },
+   {
+    "start": 38.484,
+    "end": 44.944,
+    "text": "这三个工具是互补的：/goal 管深度，Dynamic Workflows 管广度，/loop 管持续性。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_19.html",
+  "clip": "clips/scene-19.mp4",
+  "file": "scenes/scene-19.html"
+ },
+ {
+  "n": 20,
+  "type": "image",
+  "start": 817.056,
+  "dur": 62.136,
+  "subs": [
+   {
+    "start": 0,
+    "end": 1.87,
+    "text": "再往后的路径就清晰了。"
+   },
+   {
+    "start": 1.87,
+    "end": 5.27,
+    "text": "用 worktree 把并行任务隔离开。"
+   },
+   {
+    "start": 5.27,
+    "end": 16.491,
+    "text": "在 .claude/agents/ 里定义一个 reviewer 子智能体，把写和查的分离落地：安全审查的盯漏洞，性能审查的盯瓶颈。"
+   },
+   {
+    "start": 16.632,
+    "end": 23.988,
+    "text": "再建一个 PROGRESS.md，每次运行把经验和坑写进去，下次从进度继续。"
+   },
+   {
+    "start": 23.988,
+    "end": 27.666,
+    "text": "做到这一步，你就有了一个会过夜的循环。"
+   },
+   {
+    "start": 27.828,
+    "end": 31.828,
+    "text": "成本上有一个十倍杠杆：prompt caching。"
+   },
+   {
+    "start": 31.828,
+    "end": 40.905,
+    "text": "前面说过多智能体烧 15 倍 token，而用好缓存，token 单价能从每百万 3 美元，降到每百万 0.3 美元。"
+   },
+   {
+    "start": 41.076,
+    "end": 50.033,
+    "text": "前提是 prompt 保持追加式增长，中途别换 tools 列表、别换模型——一换，缓存就碎了。"
+   },
+   {
+    "start": 50.033,
+    "end": 57.311,
+    "text": "给个参照系：三智能体系统生成一个完整应用，单次成本 125 到 200 美元。"
+   },
+   {
+    "start": 57.456,
+    "end": 62,
+    "text": "日常的 bug 修复循环，应该控制在 2 美元以内。"
+   }
+  ],
+  "scriptType": "image",
+  "srcHtml": "blog2video-output/loop-engineering/slide_20.html",
+  "clip": "clips/scene-20.mp4",
+  "file": "scenes/scene-20.html"
+ },
+ {
+  "n": 21,
+  "type": "image",
+  "start": 879.192,
+  "dur": 43.344,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.85,
+    "text": "最后是三个新手最容易踩的坑。"
+   },
+   {
+    "start": 2.85,
+    "end": 6.108,
+    "text": "第一，工具给太多、描述写太模糊。"
+   },
+   {
+    "start": 6.108,
+    "end": 12.622,
+    "text": "一个场景，连人类工程师都说不清该用哪个工具，智能体也不可能选对。"
+   },
+   {
+    "start": 12.622,
+    "end": 16.491,
+    "text": "少而精的工具集，远好过大而全的工具库。"
+   },
+   {
+    "start": 16.632,
+    "end": 22.098,
+    "text": "第二，工具出错的时候，返回错误字符串，不要抛异常。"
+   },
+   {
+    "start": 22.098,
+    "end": 31.718,
+    "text": "传统工程里异常是规范，但在循环里，异常会杀死循环本身，错误字符串才给模型自己纠错的机会。"
+   },
+   {
+    "start": 31.86,
+    "end": 35.857,
+    "text": "第三，保留失败的痕迹，不要清理现场。"
+   },
+   {
+    "start": 35.857,
+    "end": 40.52,
+    "text": "失败记录是模型避免重复同样尝试的唯一证据。"
+   },
+   {
+    "start": 40.52,
+    "end": 43.184,
+    "text": "擦掉失败，等于擦掉证据。"
+   }
+  ],
+  "scriptType": "checklist",
+  "srcHtml": "blog2video-output/loop-engineering/slide_21.html",
+  "clip": "clips/scene-21.mp4",
+  "file": "scenes/scene-21.html"
+ },
+ {
+  "n": 22,
+  "type": "image",
+  "start": 922.536,
+  "dur": 61.704,
+  "subs": [
+   {
+    "start": 0,
+    "end": 2.696,
+    "text": "到这里，整台机器你都会搭了。"
+   },
+   {
+    "start": 2.696,
+    "end": 4.621,
+    "text": "合上之前，三个警告。"
+   },
+   {
+    "start": 4.621,
+    "end": 7.702,
+    "text": "我认为它们比前面所有技巧都值钱。"
+   },
+   {
+    "start": 7.848,
+    "end": 11.2,
+    "text": "最直接的一条：验证永远是你的责任。"
+   },
+   {
+    "start": 11.2,
+    "end": 15.933,
+    "text": "智能体说 done，只是一个声明，不是一个证明。"
+   },
+   {
+    "start": 16.133,
+    "end": 23.369,
+    "text": "循环跑完了，CI 全绿了，PR 自动开了——这些只代表你设定的检查通过了。"
+   },
+   {
+    "start": 23.369,
+    "end": 25.716,
+    "text": "而你的检查，可能不够好。"
+   },
+   {
+    "start": 25.884,
+    "end": 28.764,
+    "text": "比它更隐蔽的，是理解力债务。"
+   },
+   {
+    "start": 28.764,
+    "end": 34.936,
+    "text": "循环交付得越快，你的代码库里「存在但你不理解」的部分就越大。"
+   },
+   {
+    "start": 34.936,
+    "end": 40.285,
+    "text": "这不是能优化掉的 bug，它是交付速度的直接副产品。"
+   },
+   {
+    "start": 40.485,
+    "end": 45.157,
+    "text": "你只能持续偿还：抽查，读 PR，问为什么。"
+   },
+   {
+    "start": 45.324,
+    "end": 49.493,
+    "text": "而我觉得最锋利的，是认知投降这个陷阱。"
+   },
+   {
+    "start": 49.493,
+    "end": 53.88,
+    "text": "同样是搭循环，出发点不同，结局完全不同。"
+   },
+   {
+    "start": 53.88,
+    "end": 57.391,
+    "text": "出于工程判断去设计循环，是进步。"
+   },
+   {
+    "start": 57.391,
+    "end": 61.559,
+    "text": "为了回避思考去设计循环，是灾难的序曲。"
+   }
+  ],
+  "scriptType": "checklist",
+  "srcHtml": "blog2video-output/loop-engineering/slide_22.html",
+  "clip": "clips/scene-22.mp4",
+  "file": "scenes/scene-22.html"
+ },
+ {
+  "n": 23,
+  "type": "image",
+  "start": 984.24,
+  "dur": 19.836,
+  "subs": [
+   {
+    "start": 0,
+    "end": 1.458,
+    "text": "现在合上全貌。"
+   },
+   {
+    "start": 1.458,
+    "end": 10.001,
+    "text": "从提示词到循环，每一步的本质都一样：把重复性的判断交给机器，把系统性的设计留给人。"
+   },
+   {
+    "start": 10.152,
+    "end": 13.676,
+    "text": "循环替你写代码，替不了你当工程师。"
+   },
+   {
+    "start": 13.676,
+    "end": 19.688,
+    "text": "建造循环，但要以一个打算继续当工程师的人的姿态，去建造它。"
+   }
+  ],
+  "scriptType": "quote",
+  "srcHtml": "blog2video-output/loop-engineering/slide_23.html",
+  "clip": "clips/scene-23.mp4",
+  "file": "scenes/scene-23.html"
+ },
+ {
+  "n": 24,
+  "type": "image",
+  "start": 1004.076,
+  "dur": 30.736,
+  "subs": [
+   {
+    "start": 0,
+    "end": 11.374,
+    "text": "今晚就能做的最小动作：打开 Claude Code，把你本来要一路盯着的那件事，写成一个 `/goal`，给它一个机器能检查的完成条件。"
+   },
+   {
+    "start": 11.374,
+    "end": 13.716,
+    "text": "你的第一个循环，就这么开始。"
+   },
+   {
+    "start": 13.86,
+    "end": 24.418,
+    "text": "这期内容的完整文字版指南，我放在公众号的文章里，包括所有命令、参数和成本数据，想动手搭的可以去对照着做。"
+   },
+   {
+    "start": 24.588,
+    "end": 28.401,
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+   },
+   {
+    "start": 28.401,
+    "end": 29.736,
+    "text": "我们下期再见。"
+   }
+  ],
+  "scriptType": "summary",
+  "srcHtml": "blog2video-output/loop-engineering/slide_24.html",
+  "clip": "clips/scene-24.mp4",
+  "file": "scenes/scene-24.html"
+ },
+ {
+  "n": 25,
+  "type": "cta",
+  "start": 1034.811709750567,
+  "dur": 5,
+  "subs": [],
+  "scriptType": "cta",
+  "srcHtml": "blog2video-output/loop-engineering/slide_25.html",
+  "clip": "clips/scene-25.mp4",
+  "file": "scenes/scene-25.html"
+ }
+]

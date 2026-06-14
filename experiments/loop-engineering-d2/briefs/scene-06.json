@@ -1,0 +1,40 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 21.204,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/loop-engineering/slide_6.html",
+ "topbarIndex": "[06/24]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 10.589,
+   "text": "这套循环的解剖图，最早是 Addy Osmani 画出来的：五个构建模块，加一个贯穿全程的状态层。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 10.589,
+   "localDuration": 2.81,
+   "text": "这个拆法已经成了社区共识。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.399,
+   "localDuration": 1.513,
+   "text": "听起来像清单？"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.112,
+   "localDuration": 3.569,
+   "text": "其实你全都见过——就在早上那一天里。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.681,
+   "localDuration": 2.379,
+   "text": "我带你回去，一个一个认。"
+  }
+ ]
+}

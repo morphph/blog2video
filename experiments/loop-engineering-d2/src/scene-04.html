@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有(演化时间线:阶段名 mono + 一句中文 + 末格徽标)—— */
+[data-composition-id='s04'] .tl-row .yr{width:auto;font-size:34px;color:#8a8a85;letter-spacing:.01em}
+[data-composition-id='s04'] .tl-row.now .yr{color:#ccff4d}
+[data-composition-id='s04'] .tl-row .wt{font-size:32px;color:#8a8a85}
+[data-composition-id='s04'] .tl-row.now .wt{color:#edebe6}
+[data-composition-id='s04'] .formula{width:100%;margin-top:24px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#edebe6;text-align:center;letter-spacing:.01em}
+[data-composition-id='s04'] .formula .eq{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="57.132" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[04/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 三年四代 · <span class="acc">每代被瓶颈逼出来</span></div>
+      <div class="h1 htop" style="margin-top:18px">「写循环」是怎么<br><span class="em">一步步逼出来</span>的</div>
+
+      <div class="tl" style="margin-top:40px">
+        <div class="tl-row e1"><div class="yr">Prompt Engineering</div><div class="wt">研究怎么措辞 · 边际收益递减</div></div>
+        <div class="tl-row e2"><div class="yr">Context Engineering</div><div class="wt">策划模型能看到什么 · 只管单次质量</div></div>
+        <div class="tl-row now e3"><div class="yr">Feedback Loops</div><div class="wt">让它自己跑测试、查日志、看渲染<span class="badge bdg">回报最大的投资点</span></div></div>
+        <div class="tl-row e4"><div class="yr">Harness</div><div class="wt">驾驭系统 · 调度一切</div></div>
+      </div>
+
+      <div class="formula fmla">Agent <span class="eq">=</span> Model <span class="eq">+</span> Harness</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.803" data-track-index="5"><div class="sub-inner">「写循环」这个姿势，不是<span class="sub-k">凭空冒出来</span>的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.803" data-duration="7.805" data-track-index="5"><div class="sub-inner">过去三年，用 AI 写代码的方式换了好几代，每一代都是被上一代的<span class="sub-k">瓶颈逼出来</span>的。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.608" data-duration="3.002" data-track-index="5"><div class="sub-inner">先花一分钟，把这条路<span class="sub-k">快进一遍</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.76" data-duration="4.335" data-track-index="5"><div class="sub-inner">最早是 <span class="sub-k">Prompt Engineering</span>，研究怎么措辞。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.095" data-duration="3.18" data-track-index="5"><div class="sub-inner">但模型越来越聪明，措辞的<span class="sub-k">边际收益</span>一直在递减。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.275" data-duration="6.503" data-track-index="5"><div class="sub-inner">于是重心移到 <span class="sub-k">Context Engineering</span>：不纠结说法，转去策划模型能看到什么。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.944" data-duration="6.739" data-track-index="5"><div class="sub-inner">这一层到今天依然重要，但它只管单次调用的质量——写完了<span class="sub-k">谁来确认写对了</span>？</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.683" data-duration="0.963" data-track-index="5"><div class="sub-inner">依然是<span class="sub-k">你</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.792" data-duration="8.419" data-track-index="5"><div class="sub-inner">所以下一层是<span class="sub-k">反馈循环</span>：让智能体自己验证自己，跑测试，查日志，打开浏览器看渲染结果。</div></div>
+    <div id="sub-10" class="clip sub" data-start="45.211" data-duration="5.134" data-track-index="5"><div class="sub-inner">我的判断是，这一层是目前大多数人<span class="sub-k">回报最大的投资点</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="50.508" data-duration="6.46" data-track-index="5"><div class="sub-inner">再往上是 Harness，驾驭系统，一句话定义：<span class="sub-k">Agent 等于 Model 加 Harness</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.htop', .8, {y:20, d:.42, ease:'expo.out'});
+    /* 四个阶段逐格点亮,绑各自口播本地时间;末格 badge 晚到(回报最大投资点) */
+    D2.enter(tl, R+'.e1', 14.9, {x:-26, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.e2', 22.4, {x:-26, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.e3', 37.0, {x:-26, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.bdg', 45.3, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.e4', 50.7, {x:-26, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.fmla', 51.6, {y:16, d:.4, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.803],['#sub-3',11.608],['#sub-4',14.76],['#sub-5',19.095],['#sub-6',22.275],['#sub-7',28.944],['#sub-8',35.683],['#sub-9',36.792],['#sub-10',45.211],['#sub-11',50.508]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 57.132, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

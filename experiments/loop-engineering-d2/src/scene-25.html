@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-25 特有(尾卡 end card)—— */
+[data-composition-id='s25'] .content{align-items:flex-start;justify-content:center}
+[data-composition-id='s25'] .endmark{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.06em;margin-bottom:30px}
+[data-composition-id='s25'] .endmark .acc{color:#ccff4d}
+[data-composition-id='s25'] .logo{display:flex;align-items:baseline;font-family:'MiSans',sans-serif;font-weight:900;font-size:184px;line-height:1;color:#edebe6;letter-spacing:-.01em}
+[data-composition-id='s25'] .logo .ai{color:#ccff4d}
+[data-composition-id='s25'] .logo .cur{width:46px;height:150px;margin-left:22px;vertical-align:0;align-self:center}
+[data-composition-id='s25'] .subline{margin-top:44px;font-family:'JetBrains Mono',monospace;font-size:44px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s25'] .subline .em{color:#edebe6}
+[data-composition-id='s25'] .subline .fin{color:#ccff4d;font-weight:700}
+[data-composition-id='s25'] .sig{margin-top:120px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s25" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[25/24]</div>
+    </div>
+
+    <div class="content">
+      <div class="endmark">// END OF TRANSMISSION <span class="acc">›</span> 全片完</div>
+      <div class="logo">精读<span class="ai">AI</span><span class="cur"></span></div>
+      <div class="subline">LOOP ENGINEERING <span class="em">·</span> <span class="fin">完</span></div>
+      <div class="endchip sig"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s25'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.endmark', .35, {y:-12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.logo', .7, {y:24, d:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.subline', 1.25, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.sig', 1.7, {y:12, d:.34, ease:'power2.out'});
+    D2.blink(tl, R+'.logo .cur', 2.0, 4);
+    D2.breath(tl, R+'.content', 5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s25'] = tl;
+  })();
+  </script>
+</body>
+</html>

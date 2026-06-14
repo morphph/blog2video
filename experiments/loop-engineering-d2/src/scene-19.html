@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-19 特有 —— */
+[data-composition-id='s19'] .content.top{padding-top:222px}
+[data-composition-id='s19'] .h1{font-size:62px}
+[data-composition-id='s19'] .lead{font-size:34px;margin-top:16px}
+[data-composition-id='s19'] .case-head{margin-top:30px;font-weight:700;font-size:36px;line-height:1.32;color:#edebe6}
+[data-composition-id='s19'] .case-head .who{color:#ccff4d;font-weight:900}
+[data-composition-id='s19'] .stat .num{font-size:54px}
+[data-composition-id='s19'] .stat .lab{font-size:22px}
+[data-composition-id='s19'] .warns{display:flex;gap:18px;width:100%;margin-top:18px}
+[data-composition-id='s19'] .warn-c{flex:1;background:#1c1c1e;border:1px solid rgba(255,107,94,.4);padding:22px 26px}
+[data-composition-id='s19'] .warn-c .wh{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;color:#ff6b5e;letter-spacing:.02em}
+[data-composition-id='s19'] .warn-c .wd{margin-top:8px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s19'] .trio{display:flex;gap:16px;width:100%;margin-top:18px}
+[data-composition-id='s19'] .trio .tc{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 18px;text-align:center}
+[data-composition-id='s19'] .trio .tc .cm{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ccff4d}
+[data-composition-id='s19'] .trio .tc .rl{margin-top:8px;font-weight:600;font-size:26px;color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s19" data-start="0" data-duration="45.108" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[19/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top"><span class="acc">第二步</span> · DYNAMIC WORKFLOWS</div>
+      <div class="h1" style="margin-top:16px">单个 <span class="em">/goal</span> 兜不住,<br>就上动态工作流</div>
+      <div class="lead"><span class="dim">按任务动态生成编排脚本,调度最多</span> 上千个并行子智能体</div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="case-head">最猛的真实案例:<span class="who">Bun 作者</span> 把 Bun 从 Zig 移植到 Rust</div>
+        <div class="stats" style="margin-top:24px">
+          <div class="stat"><div class="num" id="n1">0</div><div class="lab">行代码</div></div>
+          <div class="stat"><div class="num" id="n2">数百</div><div class="lab">智能体并行</div></div>
+          <div class="stat key"><div class="num" id="n3">0%</div><div class="lab">测试通过</div></div>
+          <div class="stat key"><div class="num" id="n4">0天</div><div class="lab">完成</div></div>
+        </div>
+      </div>
+
+      <div class="warns">
+        <div class="warn-c w1"><div class="wh">研究预览阶段</div><div class="wd">不算成熟稳定</div></div>
+        <div class="warn-c w2"><div class="wh">token 消耗显著更高</div><div class="wd">先小范围试再铺开</div></div>
+      </div>
+
+      <div class="trio">
+        <div class="tc t1"><div class="cm">/goal</div><div class="rl">管深度</div></div>
+        <div class="tc t2"><div class="cm">Workflows</div><div class="rl">管广度</div></div>
+        <div class="tc t3"><div class="cm">/loop</div><div class="rl">管持续性</div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.785" data-track-index="5"><div class="sub-inner">等单个 /goal 兜不住任务复杂度了,再上 <span class="sub-k">Dynamic Workflows</span>,动态工作流。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.785" data-duration="5.466" data-track-index="5"><div class="sub-inner">它根据你的任务,动态生成一段编排脚本,调度<span class="sub-k">最多上千个并行子智能体</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.392" data-duration="7.077" data-track-index="5"><div class="sub-inner">最猛的真实案例来自 Bun 的作者:他用这套东西,把 Bun 从 <span class="sub-k">Zig 移植到 Rust</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.469" data-duration="6" data-track-index="5"><div class="sub-inner">75 万行代码,数百个智能体并行,<span class="sub-k">百分之 99.8</span> 的测试通过,11 天完成。</div></div>
+    <div id="sub-5" class="clip sub" data-start="26.64" data-duration="1.277" data-track-index="5"><div class="sub-inner">但要<span class="sub-k">提醒两句</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.917" data-duration="4.012" data-track-index="5"><div class="sub-inner">这个功能目前处于<span class="sub-k">研究预览阶段</span>,不算成熟稳定。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.929" data-duration="6.384" data-track-index="5"><div class="sub-inner">它的 token 消耗也<span class="sub-k">显著高于普通会话</span>,先小范围试,确认有效再铺开。</div></div>
+    <div id="sub-8" class="clip sub" data-start="38.484" data-duration="6.46" data-track-index="5"><div class="sub-inner">这三个工具是<span class="sub-k">互补的</span>:/goal 管深度,Dynamic Workflows 管广度,/loop 管持续性。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s19'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 开场:kicker + 标题 + lead (sub-1 / sub-2)
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 7.9, {y:16, d:.36, ease:'power3.out'});
+    // Bun 案例面板 (sub-3 入场,sub-4 数字滚动)
+    D2.enter(tl, R+'.bracket', 13.5, {y:22, d:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.case-head', 13.9, {y:12, d:.32, ease:'power2.out'});
+    D2.stagger(tl, R+'.stats .stat', 20.5, {y:16, step:.16, d:.32, ease:'power3.out'});
+    D2.countUp(tl, R+'#n1', 20.7, 0, 75, 0.9, {suffix:'万'});
+    D2.countUp(tl, R+'#n3', 22.4, 0, 99.8, 1.1, {suffix:'%', decimals:1});
+    D2.countUp(tl, R+'#n4', 23.6, 0, 11, 0.8, {suffix:'天'});
+    // 两条警示 (sub-5/6 -> w1, sub-7 -> w2)
+    D2.enter(tl, R+'.w1', 26.7, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.w2', 31.9, {x:22, d:.34, ease:'power2.out'});
+    // 互补三件套 (sub-8) 逐格点亮
+    D2.stagger(tl, R+'.trio .tc', 38.6, {y:14, step:.18, d:.3, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.785],['#sub-3',13.392],['#sub-4',20.469],['#sub-5',26.64],['#sub-6',27.917],['#sub-7',31.929],['#sub-8',38.484]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.108, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s19'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-18 特有(image:终端化 /goal 定义)—— */
+[data-composition-id='s18'] .bad{display:flex;align-items:center;gap:18px;background:#1c1c1e;border:1px solid rgba(255,107,94,.4);padding:20px 28px;width:100%;margin-top:24px}
+[data-composition-id='s18'] .bad .x{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;color:#ff6b5e;line-height:1}
+[data-composition-id='s18'] .bad .bt{font-weight:600;font-size:38px;color:#8a8a85}
+[data-composition-id='s18'] .term-l1 .zh{color:#edebe6;font-family:'MiSans',sans-serif;font-weight:600}
+[data-composition-id='s18'] .term-l1 .kpi{color:#ccff4d;font-family:'JetBrains Mono',monospace;font-weight:700}
+[data-composition-id='s18'] .term-l1 .mn{color:#edebe6;font-family:'JetBrains Mono',monospace}
+[data-composition-id='s18'] .loop{display:flex;align-items:center;gap:14px;width:100%;margin-top:28px}
+[data-composition-id='s18'] .loop .st{flex:1;text-align:center;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 8px;font-weight:600;font-size:30px;color:#edebe6}
+[data-composition-id='s18'] .loop .ar{font-family:'JetBrains Mono',monospace;font-size:30px;color:#ccff4d}
+[data-composition-id='s18'] .punch{margin-top:30px;font-weight:700;font-size:42px;line-height:1.4;color:#edebe6}
+[data-composition-id='s18'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s18" data-start="0" data-duration="36.432" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[18/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 从零开始 · <span class="acc">今晚就动手</span></div>
+      <div class="h1" style="margin-top:18px">第一步,还是 <span class="em">/goal</span></div>
+
+      <div class="bad"><span class="x">✕</span><span class="bt">「帮我修这个 bug」</span></div>
+
+      <div class="term" style="margin-top:20px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">goal: frontend-fix</span></div>
+        <div class="term-body" style="padding:34px 36px 38px">
+          <div class="term-l1" style="font-size:38px"><span class="p">/goal</span> <span class="zh">所有 Playwright 截图和设计稿的</span></div>
+          <div class="term-l1 g2" style="font-size:38px;margin-top:14px"><span class="zh">像素差异</span> <span class="kpi">&lt; 1%</span><span class="zh">,且</span> <span class="mn">npm test</span> <span class="zh">全部通过</span></div>
+        </div>
+      </div>
+
+      <div class="loop">
+        <div class="st">改代码</div><div class="ar">→</div>
+        <div class="st">跑测试</div><div class="ar">→</div>
+        <div class="st">看结果</div><div class="ar">→</div>
+        <div class="st">再调整</div>
+      </div>
+
+      <div class="punch">定义终态,让它自己找路 —— 你身份的转变,<span class="em">就从这一句开始</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.256" data-track-index="5"><div class="sub-inner">原则都在了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.256" data-duration="3.351" data-track-index="5"><div class="sub-inner">最后讲怎么<span class="sub-k">从零开始</span>,今晚就动手。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.607" data-duration="3.559" data-track-index="5"><div class="sub-inner">入口比你想的近,完全<span class="sub-k">不用一步到位</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.316" data-duration="2.01" data-track-index="5"><div class="sub-inner">第一步还是 <span class="sub-k">/goal</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="10.326" data-duration="13.229" data-track-index="5"><div class="sub-inner">比如你在修一个前端适配问题,别说「帮我修这个 bug」,写成:所有 Playwright 截图和设计稿的<span class="sub-k">像素差异小于百分之一</span>,且 npm test 全部通过。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.555" data-duration="1.507" data-track-index="5"><div class="sub-inner">设好,去喝杯咖啡。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.2" data-duration="3.755" data-track-index="5"><div class="sub-inner">它自己<span class="sub-k">改代码、跑测试、看结果、再调整</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.955" data-duration="4.349" data-track-index="5"><div class="sub-inner">还是案例里那个原则:<span class="sub-k">定义终态,让它自己找路</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.304" data-duration="2.965" data-track-index="5"><div class="sub-inner">你身份的转变,就<span class="sub-k">从这一句开始</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s18'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.4, {y:20, d:.42, ease:'expo.out'});
+    // bad anti-pattern (sub-3 入口/别一步到位 → 引出反例)
+    D2.enter(tl, R+'.bad', 5.2, {x:-24, d:.36, ease:'power3.out'});
+    // terminal /goal 定义(sub-4 第一步还是 /goal → sub-5 写成)
+    D2.enter(tl, R+'.term', 8.3, {y:24, d:.46, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},8.5);
+    D2.enter(tl, R+'.term-l1:not(.g2)', 10.4, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l1.g2', 13.6, {y:12, d:.32, ease:'power3.out'});
+    // loop steps 逐格(sub-7 改代码/跑测试/看结果/再调整)
+    D2.stagger(tl, R+'.loop .st', 25.2, {y:14, step:.22, d:.3, ease:'power2.out'});
+    tl.from(R+'.loop .ar',{opacity:0,duration:.24,ease:'power1.out',stagger:.22},25.42);
+    // punch(sub-8 定义终态 → sub-9 从这一句开始)
+    D2.enter(tl, R+'.punch', 29.0, {y:16, d:.36, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.256],['#sub-3',4.607],['#sub-4',8.316],['#sub-5',10.326],['#sub-6',23.555],['#sub-7',25.2],['#sub-8',28.955],['#sub-9',33.304]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.432, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s18'] = tl;
+  })();
+  </script>
+</body>
+</html>

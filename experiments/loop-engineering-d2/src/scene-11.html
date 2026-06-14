@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .lead{margin-top:16px;font-weight:600;font-size:40px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s11'] .lead .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s11'] .foot{margin-top:30px}
+[data-composition-id='s11'] .foot .q{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="30.168" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[11/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 模块 <span class="acc">5 / 5</span> · SUB-AGENTS</div>
+      <div class="h1" style="margin-top:16px"><span class="em">Maker / Checker</span> 分离</div>
+      <div class="lead">写修复的、审修复的,<span class="em">是两个子智能体</span></div>
+
+      <div class="cols" style="margin-top:36px">
+        <div class="col claude">
+          <div class="ch">CLAUDE CODE</div>
+          <div class="it cl1"><div class="nm">定义在 <span class="code">.claude/agents/</span></div><div class="ds">每个子智能体一份配置</div></div>
+          <div class="it cl2"><div class="nm">Agent Team</div><div class="ds">组队互相传活,接力分工</div></div>
+        </div>
+        <div class="col codex alt">
+          <div class="ch">CODEX</div>
+          <div class="it cx1"><div class="nm">对应 <span class="code">.codex/agents/</span></div><div class="ds">同一思路,换个落点</div></div>
+          <div class="it cx2"><div class="nm"><span class="code">.toml</span> 文件</div><div class="ds">用 TOML 格式定义子智能体</div></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span><span class="q">为什么必须分开?</span>下一节,用一个真实系统给你看证据</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.936" data-track-index="5"><div class="sub-inner">第五个模块,就是早上埋的那个伏笔:写修复的和审修复的,是<span class="sub-k">两个子智能体</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.936" data-duration="4.75" data-track-index="5"><div class="sub-inner">Sub-agents,<span class="sub-k">Maker/Checker 分离</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.836" data-duration="8.448" data-track-index="5"><div class="sub-inner">Claude Code 这边,子智能体定义在 <span class="sub-k">.claude/agents/</span> 目录下,还能组成 agent team,互相传活。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.284" data-duration="4.885" data-track-index="5"><div class="sub-inner">Codex 那边对应 <span class="sub-k">.codex/agents/</span>,用 TOML 文件写。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.336" data-duration="5.693" data-track-index="5"><div class="sub-inner">至于为什么必须分开——下一节,用一个真实系统<span class="sub-k">给你看证据</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.1, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 3.6, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.col.claude', 10.8, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.cl2', 14.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.col.codex', 19.3, {x:24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.foot', 24.4, {y:14, d:.32, ease:'power1.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.936],['#sub-3',10.836],['#sub-4',19.284],['#sub-5',24.336]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.168, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

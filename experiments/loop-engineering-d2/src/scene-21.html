@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-21 特有 —— */
+[data-composition-id='s21'] .warn-t{color:#ff6b5e;font-weight:600}
+[data-composition-id='s21'] .gt{color:#ccff4d;font-weight:600}
+[data-composition-id='s21'] .pq{display:inline-flex;align-items:center;gap:14px;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#edebe6}
+[data-composition-id='s21'] .pq .lt{color:#ccff4d;font-weight:700;border:1px solid rgba(204,255,77,.4);padding:3px 14px}
+[data-composition-id='s21'] .pq .gt-mid{color:#8a8a85;font-weight:700}
+[data-composition-id='s21'] .pq .rt-c{color:#8a8a85;border:1px solid #2a2a2c;padding:3px 14px}
+[data-composition-id='s21'] .eq{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#ff6b5e;letter-spacing:.01em}
+[data-composition-id='s21'] .eq b{color:#edebe6;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s21" data-start="0" data-duration="43.344" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[21/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 避坑指南 · <span class="acc">三个最容易踩的坑</span></div>
+      <div class="h1" style="margin-top:14px">新手<span class="em">三大坑</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">工具给太多 · 描述太模糊</div>
+          <div class="rd rd1">人类工程师都说不清用哪个 → 智能体也选不对</div>
+          <div class="pq i1q"><span class="lt">少而精</span><span class="gt-mid">≫</span><span class="rt-c">大而全</span></div>
+        </div></div>
+
+        <div class="row i2 warn"><div class="n">02</div><div class="rb">
+          <div class="rt">出错返回<span class="gt">错误字符串</span> · <span class="warn-t">不抛异常</span></div>
+          <div class="rd rd2">传统工程异常是规范,但<span class="warn-t">异常会杀死循环本身</span></div>
+          <div class="eq i2eq">return <b>error string</b> → 模型自己纠错的机会</div>
+        </div></div>
+
+        <div class="row i3"><div class="n">03</div><div class="rb">
+          <div class="rt">保留失败痕迹 · 不清理现场</div>
+          <div class="rd rd3">失败记录是<span class="gt">避免重复尝试</span>的唯一证据</div>
+          <div class="eq i3eq">擦掉失败 <b>=</b> 擦掉证据</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.85" data-track-index="5"><div class="sub-inner">最后是三个新手<span class="sub-k">最容易踩的坑</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.85" data-duration="3.258" data-track-index="5"><div class="sub-inner">第一,工具给太多、<span class="sub-k">描述写太模糊</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.108" data-duration="6.514" data-track-index="5"><div class="sub-inner">一个场景,连人类工程师都说不清该用哪个工具,<span class="sub-k">智能体也不可能选对</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.622" data-duration="3.869" data-track-index="5"><div class="sub-inner"><span class="sub-k">少而精的工具集</span>,远好过大而全的工具库。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.632" data-duration="5.466" data-track-index="5"><div class="sub-inner">第二,工具出错的时候,返回<span class="sub-k">错误字符串</span>,不要抛异常。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.098" data-duration="9.62" data-track-index="5"><div class="sub-inner">传统工程里异常是规范,但在循环里,<span class="sub-k">异常会杀死循环本身</span>,错误字符串才给模型自己纠错的机会。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.86" data-duration="3.997" data-track-index="5"><div class="sub-inner">第三,保留失败的痕迹,<span class="sub-k">不要清理现场</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.857" data-duration="4.663" data-track-index="5"><div class="sub-inner">失败记录是模型<span class="sub-k">避免重复同样尝试</span>的唯一证据。</div></div>
+    <div id="sub-9" class="clip sub" data-start="40.52" data-duration="2.664" data-track-index="5"><div class="sub-inner">擦掉失败,<span class="sub-k">等于擦掉证据</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s21'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.36, ease:'expo.out'});
+    // pitfall 1
+    D2.enter(tl, R+'.i1', 2.85, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rd1', 6.1, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i1q', 12.6, {y:10, d:.3, ease:'power2.out'});
+    // pitfall 2
+    D2.enter(tl, R+'.i2', 16.6, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.rd2', 22.1, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i2eq', 26.5, {y:10, d:.3, ease:'power1.out'});
+    // pitfall 3
+    D2.enter(tl, R+'.i3', 31.86, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rd3', 35.86, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i3eq', 40.5, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.85],['#sub-3',6.108],['#sub-4',12.622],['#sub-5',16.632],['#sub-6',22.098],['#sub-7',31.86],['#sub-8',35.857],['#sub-9',40.52]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.344, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s21'] = tl;
+  })();
+  </script>
+</body>
+</html>

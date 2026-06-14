@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .pain{margin-top:16px;font-weight:600;font-size:36px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s08'] .pain .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="26.856" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[08/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 模块 <span class="acc">2 / 5</span> · WORKTREE</div>
+      <div class="h1" style="margin-top:16px">每个问题,<span class="em">一份独立副本</span></div>
+      <div class="pain">同时改一份代码 = <span class="em">互相踩脚的灾难</span></div>
+
+      <div class="cols" style="margin-top:34px">
+        <div class="col codex">
+          <div class="ch">CODEX</div>
+          <div class="it cx1"><div class="nm">内建隔离</div><div class="ds">每个线程自动一份副本</div></div>
+        </div>
+        <div class="col claude alt">
+          <div class="ch">CLAUDE CODE</div>
+          <div class="it cl1"><div class="nm">git 原生能力</div><div class="ds">开会话时加 <span class="code">--worktree</span> 参数</div></div>
+          <div class="it cl2"><div class="nm">子智能体配置</div><div class="ds">写一句 <span class="code">isolation: worktree</span>,干完活自动清理</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.035" data-track-index="5"><div class="sub-inner">接着，循环给每个问题开了一份独立的代码副本——第二个模块，<span class="sub-k">Worktree</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.035" data-duration="3.333" data-track-index="5"><div class="sub-inner">为什么必须<span class="sub-k">隔离</span>，早上说透了，不重复。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.368" data-duration="5.74" data-track-index="5"><div class="sub-inner">值得补的是两边的实现：<span class="sub-k">Codex</span> 是内建的，每个线程自动一份。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.272" data-duration="10.43" data-track-index="5"><div class="sub-inner">Claude Code 用 git 原生能力：开会话时加 <span class="sub-k">--worktree</span> 参数；或者给子智能体配置写一句 isolation: worktree，干完活还会自动清理。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.pain', 7.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.col.codex', 10.4, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.col.claude', 16.3, {x:24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.cl2', 20.8, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.035],['#sub-3',10.368],['#sub-4',16.272]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 26.856, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .pair{display:flex;gap:20px;width:100%;margin-top:26px}
+[data-composition-id='s03'] .ag{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 26px;min-width:0}
+[data-composition-id='s03'] .ag .rl{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;letter-spacing:.02em;color:#ccff4d}
+[data-composition-id='s03'] .ag.chk{border-top:3px solid #5fd3e8}
+[data-composition-id='s03'] .ag.mkr{border-top:3px solid #ccff4d}
+[data-composition-id='s03'] .ag.chk .rl{color:#5fd3e8}
+[data-composition-id='s03'] .ag .ds{margin-top:12px;font-weight:600;font-size:30px;color:#edebe6;line-height:1.32}
+[data-composition-id='s03'] .fore{position:relative;display:flex;align-items:center;gap:18px;margin-top:24px;width:100%;
+  background:rgba(204,255,77,.06);border:1px dashed rgba(204,255,77,.55);padding:22px 30px}
+[data-composition-id='s03'] .fore .fl{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;color:#ccff4d;flex-shrink:0;letter-spacing:.04em}
+[data-composition-id='s03'] .fore .ft{font-weight:700;font-size:32px;color:#edebe6;line-height:1.3}
+[data-composition-id='s03'] .fore .ft b{color:#ccff4d}
+[data-composition-id='s03'] .punch{position:relative;display:flex;align-items:baseline;gap:20px;margin-top:26px;width:100%;
+  background:#1c1c1e;border:1px solid #2a2a2c;border-left:4px solid #ccff4d;padding:24px 32px}
+[data-composition-id='s03'] .punch .pq{font-weight:700;font-size:36px;color:#edebe6;line-height:1.25}
+[data-composition-id='s03'] .punch .pa{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:52px;color:#ccff4d;line-height:1}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="69.048" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 一个循环的一天 · <span class="acc">白天到夜里</span></div>
+      <div class="h1" style="margin-top:14px">写的和查的,<span class="em">不是同一个</span></div>
+
+      <div class="pair">
+        <div class="ag mkr a-mkr">
+          <div class="rl">子智能体 A</div>
+          <div class="ds">在 <span class="code">worktree</span> 里起草修复</div>
+        </div>
+        <div class="ag chk a-chk">
+          <div class="rl">子智能体 B</div>
+          <div class="ds">按规范和测试,审查这份修复</div>
+        </div>
+      </div>
+
+      <div class="fore a-fore">
+        <div class="fl">› 伏笔</div>
+        <div class="ft">全片<b>最重要的伏笔</b>,记住这个细节</div>
+      </div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row a-r1"><div class="n">→</div><div class="rb">
+          <div class="rt">审查通过 → <span class="code">MCP</span> 自动开 PR、更新工单</div>
+          <div class="rd">MCP 是智能体跟真实世界对接的协议 · <span class="ok">Claude Code / Codex 基本互通</span></div>
+        </div></div>
+        <div class="row a-r2"><div class="n">→</div><div class="rb">
+          <div class="rt">处理不了的 → 落进<span class="code">收件箱</span>,等人来看</div>
+        </div></div>
+        <div class="row a-r3 now"><div class="n">→</div><div class="rb">
+          <div class="rt"><span class="code">状态文件</span> = 循环唯一的记忆</div>
+          <div class="rd">记下今天试了什么、过了什么、剩下什么 · <span class="ok">明天接着跑</span></div>
+        </div></div>
+      </div>
+
+      <div class="punch a-punch">
+        <div class="pq">这一天里,你出现了几次?</div>
+        <div class="pa">一次</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.069" data-track-index="5"><div class="sub-inner">然后,一个子智能体在 <span class="sub-k">worktree</span> 里起草修复。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.069" data-duration="5.07" data-track-index="5"><div class="sub-inner">另一个子智能体,按项目规范和现有测试,<span class="sub-k">审查</span>这份修复。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.139" data-duration="3.705" data-track-index="5"><div class="sub-inner">注意这个细节:写的和查的,<span class="sub-k">不是同一个</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.044" data-duration="3.046" data-track-index="5"><div class="sub-inner">这是全片<span class="sub-k">最重要的伏笔</span>,马上展开。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.244" data-duration="5.249" data-track-index="5"><div class="sub-inner">审查通过,循环通过 <span class="sub-k">MCP 连接器</span>自动开 PR、更新工单。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.493" data-duration="3.438" data-track-index="5"><div class="sub-inner">MCP 是智能体跟<span class="sub-k">真实世界对接</span>的协议。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.931" data-duration="7.421" data-track-index="5"><div class="sub-inner">Claude Code 和 Codex 都用它,两边概念一一对应,<span class="sub-k">连接器基本互通</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="33.516" data-duration="1.996" data-track-index="5"><div class="sub-inner">它处理不了的问题呢?</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.512" data-duration="2.594" data-track-index="5"><div class="sub-inner">落进一个<span class="sub-k">收件箱</span>,等人来看。</div></div>
+    <div id="sub-10" class="clip sub" data-start="38.268" data-duration="5.497" data-track-index="5"><div class="sub-inner">一天结束,<span class="sub-k">状态文件</span>记下今天试了什么、过了什么、剩下什么。</div></div>
+    <div id="sub-11" class="clip sub" data-start="43.765" data-duration="3.534" data-track-index="5"><div class="sub-inner">明天早上,循环从今天<span class="sub-k">停下的地方继续</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="47.299" data-duration="7.46" data-track-index="5"><div class="sub-inner">这就是状态文件的意义:智能体每次运行结束都会失忆,状态文件是<span class="sub-k">循环唯一的记忆</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="54.9" data-duration="2.919" data-track-index="5"><div class="sub-inner">没有它,<span class="sub-k">每天都从零开始</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="57.96" data-duration="3.308" data-track-index="5"><div class="sub-inner">这一整天里,你出现了<span class="sub-k">几次</span>?</div></div>
+    <div id="sub-15" class="clip sub" data-start="61.268" data-duration="0.763" data-track-index="5"><div class="sub-inner"><span class="sub-k">一次。</span></div></div>
+    <div id="sub-16" class="clip sub" data-start="62.031" data-duration="2.036" data-track-index="5"><div class="sub-inner">看<span class="sub-k">收件箱</span>那一次。</div></div>
+    <div id="sub-17" class="clip sub" data-start="64.067" data-duration="4.834" data-track-index="5"><div class="sub-inner">这就是「<span class="sub-k">我的工作是写循环</span>」的具体含义。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.4, ease:'expo.out'});
+    // maker / checker pair
+    D2.enter(tl, R+'.a-mkr', 1.2, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.a-chk', 5.2, {x:22, d:.34, ease:'power3.out'});
+    // foreshadow
+    D2.enter(tl, R+'.a-fore', 14.0, {y:16, d:.36, ease:'expo.out'});
+    // step rows
+    D2.enter(tl, R+'.a-r1', 17.4, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.a-r1 .rd', 22.6, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.a-r2', 35.6, {x:-22, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.a-r3', 38.4, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.a-r3 .rd', 47.4, {y:10, d:.3, ease:'power2.out'});
+    // punch
+    D2.enter(tl, R+'.a-punch', 58.0, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.a-punch .pa', 61.3, {y:14, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.069],['#sub-3',10.139],['#sub-4',14.044],['#sub-5',17.244],['#sub-6',22.493],['#sub-7',25.931],['#sub-8',33.516],['#sub-9',35.512],['#sub-10',38.268],['#sub-11',43.765],['#sub-12',47.299],['#sub-13',54.9],['#sub-14',57.96],['#sub-15',61.268],['#sub-16',62.031],['#sub-17',64.067]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 69.048, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

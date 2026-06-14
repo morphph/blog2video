@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有(尽量复用 kit) —— */
+[data-composition-id='s06'] .rows{gap:14px}
+[data-composition-id='s06'] .row{padding:20px 28px;align-items:center}
+[data-composition-id='s06'] .row .rt{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s06'] .row .rt .code{font-size:34px}
+[data-composition-id='s06'] .row .rt .zh{font-weight:500;font-size:28px;color:#8a8a85}
+[data-composition-id='s06'] .statelayer{margin-top:18px;display:flex;align-items:center;gap:20px;
+  background:rgba(95,211,232,.07);border:1px solid rgba(95,211,232,.4);padding:22px 30px;width:100%}
+[data-composition-id='s06'] .statelayer .sl-k{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#5fd3e8;letter-spacing:.03em}
+[data-composition-id='s06'] .statelayer .sl-t{font-weight:600;font-size:30px;color:#edebe6}
+[data-composition-id='s06'] .closer{margin-top:30px;font-weight:600;font-size:36px;color:#edebe6;line-height:1.4}
+[data-composition-id='s06'] .closer .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="21.204" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[06/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 循环的解剖图 · <span class="acc">Addy Osmani</span></div>
+      <div class="h1" style="margin-top:16px;font-size:64px">五个构建模块,<span class="em">一个状态层</span></div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row r1"><div class="n">01</div><div class="rb"><div class="rt"><span class="code">Automation</span><span class="zh">自动化触发</span></div></div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb"><div class="rt"><span class="code">Worktree</span><span class="zh">隔离的代码副本</span></div></div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb"><div class="rt"><span class="code">Skill</span><span class="zh">打包好的项目知识</span></div></div></div>
+        <div class="row r4"><div class="n">04</div><div class="rb"><div class="rt"><span class="code">Connectors</span><span class="zh">MCP 对接真实世界</span></div></div></div>
+        <div class="row r5"><div class="n">05</div><div class="rb"><div class="rt"><span class="code">Sub-agents</span><span class="zh">写的查的分开</span></div></div></div>
+      </div>
+
+      <div class="statelayer"><span class="sl-k">State</span><span class="sl-t">状态层 —— 贯穿全部五个模块的底座</span></div>
+
+      <div class="closer">听起来像清单?<span class="em">其实你全都见过</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="10.589" data-track-index="5"><div class="sub-inner">这套循环的解剖图,最早是 <span class="sub-k">Addy Osmani</span> 画出来的:五个构建模块,加一个贯穿全程的状态层。</div></div>
+    <div id="sub-2" class="clip sub" data-start="10.589" data-duration="2.81" data-track-index="5"><div class="sub-inner">这个拆法已经成了<span class="sub-k">社区共识</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.399" data-duration="1.513" data-track-index="5"><div class="sub-inner">听起来像<span class="sub-k">清单</span>?</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.112" data-duration="3.569" data-track-index="5"><div class="sub-inner">其实你<span class="sub-k">全都见过</span>——就在早上那一天里。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.681" data-duration="2.379" data-track-index="5"><div class="sub-inner">我带你回去,<span class="sub-k">一个一个认</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.stagger(tl, R+'.rows .row', 2.4, {x:-24, step:.5, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.statelayer', 10.7, {y:16, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.closer', 13.5, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',10.589],['#sub-3',13.399],['#sub-4',15.112],['#sub-5',18.681]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.204, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

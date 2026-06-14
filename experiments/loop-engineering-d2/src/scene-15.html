@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有(bug 战绩:编号行 + mono 病因卡;辅助色统一珊瑚)—— */
+[data-composition-id='s15'] .rt .lb{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:25px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:2px 12px;margin-right:16px;vertical-align:4px;letter-spacing:.03em}
+[data-composition-id='s15'] .cause{margin-top:16px;background:#121212;border:1px solid #2a2a2c;border-left:3px solid #ff6b5e;padding:18px 22px;font-family:'JetBrains Mono',monospace;font-size:26px;line-height:1.5;color:#8a8a85}
+[data-composition-id='s15'] .cause .fn{color:#ccff4d}
+[data-composition-id='s15'] .cause .err{color:#ff6b5e;font-weight:700}
+[data-composition-id='s15'] .cause code{font-family:'JetBrains Mono',monospace;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 9px;font-size:.94em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="26.928" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[15/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// EVALUATOR 的<span class="acc">战绩</span></div>
+      <div class="h1" style="margin-top:18px">它能抓到多具体的 <span class="em">bug</span>?</div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="lb">真实例子 1</span>矩形填充工具</div>
+          <div class="rd">起点和终点放了图块,中间全空</div>
+          <div class="cause"><span class="fn">fillRectangle()</span> 函数存在,<span class="err">但 mouseUp 没被正确触发</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="lb">真实例子 2</span>路由顺序错误</div>
+          <div class="rd">PUT <code>/frames/reorder</code> 定义在 <code>/{frame_id}</code> 之后</div>
+          <div class="cause">reorder 被当成整数 ID 解析 <span class="err">→ 422</span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.145" data-track-index="5"><div class="sub-inner">它能抓到多具体的 <span class="sub-k">bug</span>?</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.145" data-duration="1.155" data-track-index="5"><div class="sub-inner">两个<span class="sub-k">真实例子</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="3.3" data-duration="11.054" data-track-index="5"><div class="sub-inner">矩形填充工具,只在拖拽的起点和终点放了图块,中间全空——fillRectangle 函数存在,但 <span class="sub-k">mouseUp 的时候没被正确触发</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.508" data-duration="12.265" data-track-index="5"><div class="sub-inner">另一个,PUT /frames/reorder 这个路由,定义在 /{frame_id} 之后,框架把 reorder 当成整数 ID 去解析,<span class="sub-k">直接返回 422</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    /* row1 整卡 3.3s 入场;病因卡晚到 6.6s(口播讲到 fillRectangle) */
+    D2.enter(tl, R+'.r1', 3.3, {x:-24, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .cause', 6.6, {y:14, d:.32, ease:'power2.out'});
+    /* row2 整卡 14.5s 入场;病因卡晚到 20.5s(口播讲到 422) */
+    D2.enter(tl, R+'.r2', 14.5, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .cause', 20.5, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.145],['#sub-3',3.3],['#sub-4',14.508]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 26.928, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

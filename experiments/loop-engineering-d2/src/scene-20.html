@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-20 特有 —— */
+[data-composition-id='s20'] .rt .code{font-size:.86em}
+[data-composition-id='s20'] .lever{width:100%;margin-top:26px;background:#1c1c1e;border:1px solid #ccff4d;padding:26px 32px}
+[data-composition-id='s20'] .lever .lh{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s20'] .lever .lt{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:#8a8a85;letter-spacing:.02em}
+[data-composition-id='s20'] .lever .lt b{color:#ccff4d}
+[data-composition-id='s20'] .lever .nums{margin-top:18px;display:flex;align-items:center;gap:24px;font-family:'JetBrains Mono',monospace;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s20'] .lever .nums .from{font-size:48px;color:#8a8a85;text-decoration:line-through;text-decoration-thickness:4px}
+[data-composition-id='s20'] .lever .nums .arr{font-size:38px;color:#ccff4d}
+[data-composition-id='s20'] .lever .nums .to{font-size:64px;color:#ccff4d}
+[data-composition-id='s20'] .lever .nums .unit{font-family:'MiSans',sans-serif;font-weight:500;font-size:26px;color:#8a8a85}
+[data-composition-id='s20'] .lever .cond{margin-top:18px;font-weight:500;font-size:27px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s20'] .lever .cond .br{color:#ff6b5e;font-weight:700}
+[data-composition-id='s20'] .refs{display:flex;gap:18px;width:100%;margin-top:20px}
+[data-composition-id='s20'] .refs .ref{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 18px;text-align:center}
+[data-composition-id='s20'] .refs .ref .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:54px;font-variant-numeric:tabular-nums;line-height:1;color:#edebe6}
+[data-composition-id='s20'] .refs .ref .what{margin-top:12px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s20'] .refs .ref.big{border-color:rgba(255,107,94,.45)} [data-composition-id='s20'] .refs .ref.big .num{color:#ff6b5e}
+[data-composition-id='s20'] .refs .ref.small .num{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s20" data-start="0" data-duration="62.136" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[20/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 再往后的路径 · <span class="acc">一个会过夜的循环</span></div>
+      <div class="h1" style="margin-top:14px">把写和查的<span class="em">分离落地</span></div>
+
+      <div class="rows" style="margin-top:28px">
+        <div class="row s1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="code">worktree</span> 把并行任务隔离开</div>
+        </div></div>
+
+        <div class="row s2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="code">.claude/agents/</span> 定义 reviewer 子智能体</div>
+          <div class="rd s2d">安全审查盯<span class="ok">漏洞</span> · 性能审查盯<span class="ok">瓶颈</span></div>
+        </div></div>
+
+        <div class="row s3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="code">PROGRESS.md</span> 记经验和坑,<span class="ok">从进度继续</span></div>
+        </div></div>
+      </div>
+
+      <div class="lever">
+        <div class="lh"><div class="lt">十倍成本杠杆 · <b>Prompt Caching</b></div></div>
+        <div class="nums n-late"><span class="from">$3</span><span class="arr">→</span><span class="to">$0.3</span><span class="unit">/ 百万 token</span></div>
+        <div class="cond cond-late">前提:prompt 追加式增长 —— <span class="br">中途换 tools 列表、换模型,缓存就碎了</span></div>
+      </div>
+
+      <div class="refs">
+        <div class="ref big"><div class="num">$125–200</div><div class="what">三智能体生成完整应用 / 次</div></div>
+        <div class="ref small"><div class="num">&lt; $2</div><div class="what">日常 bug 修复循环</div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.87" data-track-index="5"><div class="sub-inner">再往后的路径就<span class="sub-k">清晰</span>了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.87" data-duration="3.4" data-track-index="5"><div class="sub-inner">用 <span class="sub-k">worktree</span> 把并行任务隔离开。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.27" data-duration="11.221" data-track-index="5"><div class="sub-inner">在 .claude/agents/ 里定义一个 <span class="sub-k">reviewer 子智能体</span>,把写和查的分离落地:安全审查的盯漏洞,性能审查的盯瓶颈。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.632" data-duration="7.356" data-track-index="5"><div class="sub-inner">再建一个 <span class="sub-k">PROGRESS.md</span>,每次运行把经验和坑写进去,下次从进度继续。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.988" data-duration="3.678" data-track-index="5"><div class="sub-inner">做到这一步,你就有了一个<span class="sub-k">会过夜的循环</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.828" data-duration="4" data-track-index="5"><div class="sub-inner">成本上有一个十倍杠杆:<span class="sub-k">prompt caching</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.828" data-duration="9.077" data-track-index="5"><div class="sub-inner">前面说过多智能体烧 15 倍 token,而用好缓存,token 单价能从每百万 3 美元,降到<span class="sub-k">每百万 0.3 美元</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.076" data-duration="8.957" data-track-index="5"><div class="sub-inner">前提是 prompt 保持追加式增长,中途别换 tools 列表、别换模型——一换,<span class="sub-k">缓存就碎了</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="50.033" data-duration="7.278" data-track-index="5"><div class="sub-inner">给个参照系:三智能体系统生成一个完整应用,单次成本 <span class="sub-k">125 到 200 美元</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="57.456" data-duration="4.544" data-track-index="5"><div class="sub-inner">日常的 bug 修复循环,应该控制在 <span class="sub-k">2 美元以内</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s20'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.4, ease:'expo.out'});
+    // 三步清单逐条 build,各绑口播
+    D2.enter(tl, R+'.s1', 1.9, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.s2', 5.4, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.s2d', 11.0, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s3', 16.7, {x:-22, ease:'power3.out'});
+    // 成本杠杆面板:整卡 27.9 入场,数字/条件晚到
+    D2.enter(tl, R+'.lever', 27.9, {y:16, d:.36, ease:'power3.out'});
+    D2.countUp(tl, R+'.n-late .to', 32.6, 3.0, 0.3, 1.6, {prefix:'$', decimals:1});
+    D2.enter(tl, R+'.n-late', 31.9, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.cond-late', 41.1, {y:10, d:.32, ease:'power2.out'});
+    // 参照系两栏:expensive 先(50.0),cheap 后(57.5)
+    D2.enter(tl, R+'.ref.big', 50.0, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.ref.small', 57.5, {y:14, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.87],['#sub-3',5.27],['#sub-4',16.632],['#sub-5',23.988],['#sub-6',27.828],['#sub-7',31.828],['#sub-8',41.076],['#sub-9',50.033],['#sub-10',57.456]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 62.136, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s20'] = tl;
+  })();
+  </script>
+</body>
+</html>

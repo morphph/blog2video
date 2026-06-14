@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .note{margin-top:16px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s12'] .formh{margin-top:34px}
+[data-composition-id='s12'] .forms{display:flex;gap:18px;width:100%;margin-top:16px}
+[data-composition-id='s12'] .form{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 22px;display:flex;flex-direction:column;min-width:0}
+[data-composition-id='s12'] .form .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+[data-composition-id='s12'] .form .nm code{font-family:'JetBrains Mono',monospace;font-size:30px;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 9px}
+[data-composition-id='s12'] .form .ds{margin-top:10px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s12'] .punch{margin-top:38px}
+[data-composition-id='s12'] .punch .pl{font-weight:700;font-size:38px;color:#edebe6;line-height:1.4}
+[data-composition-id='s12'] .punch .pl .em{color:#ccff4d}
+[data-composition-id='s12'] .punch .last{margin-top:14px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="29.484" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[12/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// STATE · 状态层 · <span class="acc">贯穿前五个的底座</span></div>
+      <div class="h2" style="margin-top:18px">智能体会<span class="em">失忆</span>,<br>仓库<span class="em">不会</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">状态层是循环<span class="em">唯一的记忆</span></div>
+        <div class="note">不算第六个模块,更像前五个共同踩着的地基</div>
+      </div>
+
+      <div class="kicker formh">// 形式随你挑 · <span class="acc">三种都行</span></div>
+      <div class="forms">
+        <div class="form f1"><div class="nm">进度文件</div><div class="ds">一份 markdown 即可</div></div>
+        <div class="form f2"><div class="nm"><code>AGENTS.md</code></div><div class="ds">写死项目约定</div></div>
+        <div class="form f3"><div class="nm">Linear 看板</div><div class="ds">靠 <span class="tag">MCP</span> 读写</div></div>
+      </div>
+
+      <div class="punch">
+        <div class="pl first">五个模块<span class="em">＋</span>一个状态层,拼回去就是早上那一天</div>
+        <div class="pl last">你只是刚知道,<span class="em">每个零件叫什么名字</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.636" data-track-index="5"><div class="sub-inner">最后是 <span class="sub-k">State</span>,状态层。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.636" data-duration="3.766" data-track-index="5"><div class="sub-inner">它不算第六个模块,更像贯穿前五个的<span class="sub-k">底座</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.402" data-duration="4.33" data-track-index="5"><div class="sub-inner">早上你已经看过它救场:智能体会失忆,<span class="sub-k">仓库不会</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.872" data-duration="8.596" data-track-index="5"><div class="sub-inner">形式随你挑:一个进度文件,一份 AGENTS.md,甚至一个 Linear 看板,靠 <span class="sub-k">MCP 读写</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.62" data-duration="4.031" data-track-index="5"><div class="sub-inner">五个模块加一个状态层,拼回去就是<span class="sub-k">早上那一天</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.651" data-duration="5.679" data-track-index="5"><div class="sub-inner">这个框架一点都不神秘——你只是刚刚才知道,<span class="sub-k">每个零件叫什么名字</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 2.7, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.note', 4.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.formh', 10.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.f1', 11.6, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.f2', 13.6, {x:-22, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.f3', 15.8, {x:-22, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.punch .first', 19.7, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.punch .last', 23.7, {y:14, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.636],['#sub-3',6.402],['#sub-4',10.872],['#sub-5',19.62],['#sub-6',23.651]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 29.484, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

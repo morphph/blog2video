@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有 —— */
+[data-composition-id='s14'] .lead2{margin-top:14px;font-weight:600;font-size:36px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s14'] .lead2 .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s14'] .roles{display:flex;flex-direction:column;gap:18px;width:100%;margin-top:30px}
+[data-composition-id='s14'] .role{padding:24px 30px}
+[data-composition-id='s14'] .role .rh{display:flex;align-items:baseline;gap:18px}
+[data-composition-id='s14'] .role .en{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:38px;color:#5fd3e8;letter-spacing:.02em}
+[data-composition-id='s14'] .role .zh{font-weight:700;font-size:30px;color:#edebe6}
+[data-composition-id='s14'] .role .star{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 14px}
+[data-composition-id='s14'] .role .es{margin-top:12px;font-weight:500;font-size:28px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s14'] .role .es b{color:#edebe6;font-weight:700}
+[data-composition-id='s14'] .role .es .key{color:#ccff4d;font-weight:700}
+[data-composition-id='s14'] .role .late{display:block;margin-top:8px}
+[data-composition-id='s14'] .role code{font-family:'JetBrains Mono',monospace;font-size:.9em;color:#5fd3e8;background:rgba(95,211,232,.1);border:1px solid rgba(95,211,232,.28);padding:1px 9px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="64.224" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[14/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker k-top">// 案例二 · <span class="acc">Claude 背后团队</span></div>
+      <div class="h2" style="margin-top:16px">三智能体 <span class="em">bug 修复循环</span></div>
+      <div class="lead2">思路来自 <span class="em">GAN 生成对抗</span> · 一边拼命做,一边拼命挑刺</div>
+
+      <div class="roles">
+        <div class="role bracket r-pl">
+          <div class="rh"><span class="en">Planner</span><span class="zh">规划者</span></div>
+          <div class="es">几句话的问题 <span class="key">→</span> 完整修复方案<span class="late l-pl"><b>只管做什么,不碰实现细节</b> · 少说是结构性防御</span></div>
+        </div>
+        <div class="role bracket r-gn">
+          <div class="rh"><span class="en">Generator</span><span class="zh">执行者</span></div>
+          <div class="es">按方案逐步实现,做完<b>给自己打分</b><span class="late l-gn">趋势向好就继续 · 方向错了 <span class="key">推翻重来</span></span></div>
+        </div>
+        <div class="role bracket r-ev">
+          <div class="rh"><span class="en">Evaluator</span><span class="zh">评审者</span><span class="star">真正的主角</span></div>
+          <div class="es">通过 <code>Playwright</code> 像真实用户一样操作<span class="late l-ev">点 UI · 调 API · 查数据库 · 低于阈值则<b>整轮作废</b></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.328" data-track-index="5"><div class="sub-inner">第二个案例来自 Claude 背后的团队,一个<span class="sub-k">三智能体 bug 修复循环</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.328" data-duration="5.472" data-track-index="5"><div class="sub-inner">他们用的是 <span class="sub-k">GAN 的思路</span>,生成对抗:一边拼命做,一边拼命挑刺。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.952" data-duration="1.014" data-track-index="5"><div class="sub-inner"><span class="sub-k">三个角色</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.966" data-duration="7.303" data-track-index="5"><div class="sub-inner"><span class="sub-k">Planner,规划者</span>,接到一到四句话的问题描述,扩写成完整的修复方案。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.269" data-duration="4.058" data-track-index="5"><div class="sub-inner">它被故意限制:<span class="sub-k">只管做什么,不碰实现细节</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.327" data-duration="1.014" data-track-index="5"><div class="sub-inner"><span class="sub-k">反直觉</span>吧?</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.341" data-duration="2.029" data-track-index="5"><div class="sub-inner">规划不是<span class="sub-k">越细越好</span>吗?</div></div>
+    <div id="sub-8" class="clip sub" data-start="27.37" data-duration="0.608" data-track-index="5"><div class="sub-inner"><span class="sub-k">不是</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="28.116" data-duration="4.992" data-track-index="5"><div class="sub-inner">规划层一旦在技术细节上犯错,错误会向下游<span class="sub-k">级联传播</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="33.108" data-duration="3.395" data-track-index="5"><div class="sub-inner">让它少说,是<span class="sub-k">结构性防御</span>,不是偷懒。</div></div>
+    <div id="sub-11" class="clip sub" data-start="36.648" data-duration="5.569" data-track-index="5"><div class="sub-inner"><span class="sub-k">Generator,执行者</span>,按方案逐步实现,做完给自己打分。</div></div>
+    <div id="sub-12" class="clip sub" data-start="42.217" data-duration="2.414" data-track-index="5"><div class="sub-inner">分数趋势向好,就<span class="sub-k">继续优化</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="44.631" data-duration="3.341" data-track-index="5"><div class="sub-inner">方向本身错了,就果断推翻,<span class="sub-k">从头来过</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="48.132" data-duration="3.846" data-track-index="5"><div class="sub-inner">真正的主角是 <span class="sub-k">Evaluator,评审者</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="51.978" data-duration="8.241" data-track-index="5"><div class="sub-inner">它通过 <span class="sub-k">Playwright</span>,像真实用户一样操作应用:点 UI,调 API,查数据库状态。</div></div>
+    <div id="sub-16" class="clip sub" data-start="60.219" data-duration="3.846" data-track-index="5"><div class="sub-inner">任何一个维度低于阈值,<span class="sub-k">整轮作废</span>,打回重做。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.lead2', 6.4, {y:14, d:.34, ease:'power2.out'});
+    /* 三个角色面板逐个 build,绑口播本地时间 */
+    D2.enter(tl, R+'.r-pl', 12.9, {x:-22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.l-pl', 20.3, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r-gn', 36.6, {x:-22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.l-gn', 44.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r-ev', 48.1, {x:-22, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r-ev .star', 48.5, {scale:.6, opacity:0, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.l-ev', 60.2, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.328],['#sub-3',11.952],['#sub-4',12.966],['#sub-5',20.269],['#sub-6',24.327],['#sub-7',25.341],['#sub-8',27.37],['#sub-9',28.116],['#sub-10',33.108],['#sub-11',36.648],['#sub-12',42.217],['#sub-13',44.631],['#sub-14',48.132],['#sub-15',51.978],['#sub-16',60.219]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 64.224, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

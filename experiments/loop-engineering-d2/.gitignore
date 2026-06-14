@@ -8,3 +8,6 @@ renders/
 **/assets
 **/snapshots/
 **/.hyperframes/
+render-progress.log
+render-errors.log
+concat.txt

@@ -1,0 +1,9 @@
+assets/fonts/
+*/assets
+full_audio.mp3
+clips/
+renders/
+*/snapshots/
+*/.hyperframes/
+*.mp4
+*.mp3

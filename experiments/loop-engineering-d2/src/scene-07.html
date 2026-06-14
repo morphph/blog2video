@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .pain{margin-top:14px;font-weight:600;font-size:36px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s07'] .pain .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s07'] .foot{margin-top:26px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="45.396" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[07/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 模块 <span class="acc">1 / 5</span> · AUTOMATION</div>
+      <div class="h1" style="margin-top:16px">没有触发器,<span class="em">就不叫循环</span></div>
+      <div class="pain">靠你记得去启动的循环,<span class="em">不是循环</span></div>
+
+      <div class="cols" style="margin-top:34px">
+        <div class="col codex">
+          <div class="ch">CODEX</div>
+          <div class="it cx1"><div class="nm">Automations 面板</div><div class="ds">配好项目、提示词、频率</div></div>
+          <div class="it cx2"><div class="nm">自动归档</div><div class="ds">没发现问题的运行,不来烦你</div></div>
+        </div>
+        <div class="col claude alt">
+          <div class="ch">CLAUDE CODE</div>
+          <div class="it cl1"><div class="nm"><span class="code">/loop</span></div><div class="ds">任务按节奏反复跑</div></div>
+          <div class="it cl2"><div class="nm">Hooks</div><div class="ds">生命周期关键节点挂命令</div></div>
+          <div class="it cl3"><div class="nm"><span class="code">/goal</span><span class="tag">案例里讲</span></div><div class="ds">最喜欢的设计,先按下不表</div></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span>想让循环过夜?接上 <span style="color:#edebe6">GitHub Actions</span> 这类 CI 设施</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.345" data-track-index="5"><div class="sub-inner">还记得早上那个自动醒来的<span class="sub-k">定时任务</span>吗?</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.345" data-duration="4.273" data-track-index="5"><div class="sub-inner">那是第一个模块,<span class="sub-k">Automation</span>,自动化。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.618" data-duration="7.247" data-track-index="5"><div class="sub-inner">它解决的失败模式最朴素:没有触发器,循环就得靠你记得去启动——<span class="sub-k">那就不叫循环了</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.012" data-duration="6.421" data-track-index="5"><div class="sub-inner">Codex 那边有个 <span class="sub-k">Automations 面板</span>,配好项目、提示词和频率就行。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.433" data-duration="3.371" data-track-index="5"><div class="sub-inner">没发现问题的运行,还会<span class="sub-k">自动归档</span>,不来烦你。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.004" data-duration="8.166" data-track-index="5"><div class="sub-inner">Claude Code 这边是另一套:<span class="sub-k">/loop</span> 让任务按节奏反复跑,Hooks 在关键节点挂上命令。</div></div>
+    <div id="sub-7" class="clip sub" data-start="33.336" data-duration="5.484" data-track-index="5"><div class="sub-inner">另外有个 <span class="sub-k">/goal</span>,是我最喜欢的设计,先按下不表,案例里讲。</div></div>
+    <div id="sub-8" class="clip sub" data-start="38.988" data-duration="2.31" data-track-index="5"><div class="sub-inner">想让循环在你<span class="sub-k">合上笔记本</span>之后继续转?</div></div>
+    <div id="sub-9" class="clip sub" data-start="41.298" data-duration="3.941" data-track-index="5"><div class="sub-inner">接上 <span class="sub-k">GitHub Actions</span> 这类 CI 设施就行。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.pain', 7.7, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.col.codex', 15.0, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.cx2', 21.4, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.col.claude', 25.0, {x:24, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.cl3', 33.3, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.foot', 38.9, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.345],['#sub-3',7.618],['#sub-4',15.012],['#sub-5',21.433],['#sub-6',25.004],['#sub-7',33.336],['#sub-8',38.988],['#sub-9',41.298]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.396, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

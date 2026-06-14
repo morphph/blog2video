@@ -8,7 +8,7 @@
 ## 环境(每条 shell 命令都要)
 
 ```bash
-export PATH="/usr/local/opt/node@22/bin:$PATH"   # hyperframes 0.6.9x 装在全局 node@22;默认 node v20 会 OOM
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # Apple Silicon homebrew 路径;hyperframes 0.6.9x 装在全局 node@22;默认 node v20 会 OOM。export 后 node -v 应为 v22.x
 cd /Users/yufanp/Desktop/Project/blog2video/experiments/loop-engineering-d2
 ```
 

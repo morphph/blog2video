@@ -1,9 +1,10 @@
 assets/fonts/
-*/assets
 full_audio.mp3
 clips/
 renders/
-*/snapshots/
-*/.hyperframes/
 *.mp4
 *.mp3
+# 场景 mini-project 的 symlink / 渲染中间产物(可重新生成,不入库)
+**/assets
+**/snapshots/
+**/.hyperframes/

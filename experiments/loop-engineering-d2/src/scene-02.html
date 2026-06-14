@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s02'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 13px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="48.204" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[02/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个循环的一天 · <span class="acc">早上</span></div>
+      <div class="h1" style="margin-top:18px">定时任务,<span class="em">自动醒来</span></div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">循环的心跳:<span class="code">Automation</span></div>
+          <div class="rd">每天早上,在你的仓库上自动运行</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">调用 <span class="code">triage skill</span> 分流问题</div>
+          <div class="rd">一份打包好的项目知识,告诉它问题该怎么分流</div>
+          <div class="taglist"><span class="tg">CI 失败</span><span class="tg">新 issue</span><span class="tg">最近提交</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">发现的问题,写进<span class="code">状态文件</span></div>
+          <div class="rd">一个 markdown 文件 —— <span class="ok">这步很关键</span></div>
+        </div></div>
+
+        <div class="row r4 now"><div class="n">04</div><div class="rb">
+          <div class="rt">每个问题,开一个隔离 <span class="code">worktree</span></div>
+          <div class="rd">一份独立的代码副本</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:38px">一旦并行,隔离不是优化,<span class="hl"><span class="bar"></span><span class="tx">是底线</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.463" data-track-index="5"><div class="sub-inner">每天早上,一个<span class="sub-k">定时任务</span>自动醒来,在你的仓库上运行。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.463" data-duration="3.75" data-track-index="5"><div class="sub-inner">这是循环的心跳,叫 <span class="sub-k">Automation</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.352" data-duration="4.564" data-track-index="5"><div class="sub-inner">它做的第一件事,是调用一个 <span class="sub-k">triage skill</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.916" data-duration="5.916" data-track-index="5"><div class="sub-inner">Skill 是一份<span class="sub-k">打包好的项目知识</span>,告诉它这个项目里,问题该怎么分流。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.832" data-duration="4.734" data-track-index="5"><div class="sub-inner">它读昨天的 <span class="sub-k">CI 失败</span>、新开的 issue、最近的提交。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.724" data-duration="3.735" data-track-index="5"><div class="sub-inner">发现的问题,写进一个 <span class="sub-k">markdown 状态文件</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.459" data-duration="2.69" data-track-index="5"><div class="sub-inner">这一步<span class="sub-k">很关键</span>,等会儿你就知道为什么。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.312" data-duration="7.541" data-track-index="5"><div class="sub-inner">接下来,对每个值得处理的问题,它开一个<span class="sub-k">隔离的 worktree</span>,一份独立的代码副本。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.853" data-duration="1.436" data-track-index="5"><div class="sub-inner">为什么必须<span class="sub-k">隔离</span>?</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.289" data-duration="4.309" data-track-index="5"><div class="sub-inner">因为多个智能体同时改一份代码,<span class="sub-k">互相踩脚</span>就是灾难。</div></div>
+    <div id="sub-11" class="clip sub" data-start="43.798" data-duration="4.242" data-track-index="5"><div class="sub-inner">一旦开始并行,隔离不是优化,<span class="sub-k">是底线</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 4.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 8.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 12.9, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.r2 .taglist .tg', 18.8, {y:12, step:.12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 23.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 25.4, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r4', 30.5, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 43.9, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 44.7);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.463],['#sub-3',8.352],['#sub-4',12.916],['#sub-5',18.832],['#sub-6',23.724],['#sub-7',27.459],['#sub-8',30.312],['#sub-9',37.853],['#sub-10',39.289],['#sub-11',43.798]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 48.204, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

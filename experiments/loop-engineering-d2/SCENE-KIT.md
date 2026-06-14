@@ -149,9 +149,9 @@
 ## 6. 每个场景产出后自检(子 agent 必做)
 
 ```bash
-export PATH="/usr/local/opt/node@22/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # Apple Silicon homebrew 路径(非 /usr/local)
 cd /Users/yufanp/Desktop/Project/blog2video/experiments/loop-engineering-d2
-hyperframes lint -c scenes/scene-NN.html 2>&1 | tail -3      # 0 error
+hyperframes lint scenes/scene-NN 2>&1 | tail -3      # 0 error(mini-project 目录形式)
 hyperframes snapshot -c scenes/scene-NN.html --at <场景内 3-5 个关键时刻,本地秒> 2>&1 | tail -3
 # 用 Read 逐张看快照 PNG(在 scenes/.hyperframes 或项目 snapshots/ 下):
 #   - 左上角有无无样式裸文字(=作用域选择器/接线错)

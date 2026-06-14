@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有 —— */
+[data-composition-id='s17'] .warn-t{color:#ff6b5e;font-weight:700}
+[data-composition-id='s17'] .pt{display:inline-flex;gap:10px;margin-top:10px}
+[data-composition-id='s17'] .pt .x{font-family:'JetBrains Mono',monospace;font-size:21px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:3px 12px}
+[data-composition-id='s17'] .en3{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;letter-spacing:.01em}
+[data-composition-id='s17'] .params{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s17'] .params .pc{font-family:'JetBrains Mono',monospace;font-size:23px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:5px 14px}
+[data-composition-id='s17'] .params .pc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s17'] .hash{margin-top:12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="86.688" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[17/24]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 两个案例拧干 · <span class="acc">四条原则</span></div>
+      <div class="h1" style="margin-top:14px">循环工程<span class="em">四原则</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">自验证</div>
+          <div class="rd rda">端到端跑 <span class="code">测试</span> / <span class="code">lint</span> / <span class="code">类型检查</span></div>
+          <div class="rd rdb"><span class="warn-t">「我觉得改好了」不算</span> · <span class="ok">机器可检查的通过、失败才算</span></div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">Maker / Checker 分离<span class="tag i2tag">最重要的结构性决策</span></div>
+          <div class="rd">造的和验的,必须是两个独立角色 —— 你刚看完一整节的证据</div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">标准查的是<span class="warn-t">正确性本身</span></div>
+          <div class="rd rd3">智能体会<span class="warn-t">合法作弊</span>:<span class="pt"><span class="x">删失败的测试</span><span class="x">eslint-disable 淹没</span></span></div>
+          <div class="en3">Rubric design is the skill now.</div>
+        </div></div>
+
+        <div class="row i4 warn"><div class="n">04</div><div class="rb">
+          <div class="rt">熔断:不设 = <span class="warn-t">不设上限的账单</span></div>
+          <div class="params"><span class="pc">最多 <b>15–25</b> 步</span><span class="pc">超时 <b>~300s</b></span><span class="pc">预算 <b>~$2</b>/次</span></div>
+          <div class="rd hash">迭代取哈希指纹,连续 <span class="ok">3 次一样</span> → 立刻停</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.093" data-track-index="5"><div class="sub-inner">把这两个案例拧干,剩下<span class="sub-k">四条原则</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.24" data-duration="1.651" data-track-index="5"><div class="sub-inner">第一条,<span class="sub-k">自验证</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.891" data-duration="7.017" data-track-index="5"><div class="sub-inner">智能体必须能端到端验证自己:跑测试,跑 lint,跑<span class="sub-k">类型检查</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.908" data-duration="5.779" data-track-index="5"><div class="sub-inner">「我觉得改好了」不算验证,<span class="sub-k">机器可检查的通过或失败</span>,才算。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.856" data-duration="3.936" data-track-index="5"><div class="sub-inner">第二条,<span class="sub-k">Maker / Checker 分离</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.792" data-duration="3.187" data-track-index="5"><div class="sub-inner">这条你刚看完一整节的证据,<span class="sub-k">不重复</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.979" data-duration="5.06" data-track-index="5"><div class="sub-inner">只补一句定位:它是整个循环工程里,<span class="sub-k">最重要的结构性决策</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.204" data-duration="6.243" data-track-index="5"><div class="sub-inner">第三条,成功标准必须可检查,而且检查的是<span class="sub-k">正确性本身</span>,不只是指标。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.447" data-duration="3.121" data-track-index="5"><div class="sub-inner">因为智能体会作弊,还是<span class="sub-k">合法作弊</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.568" data-duration="4.096" data-track-index="5"><div class="sub-inner">为了让测试通过,它可能直接<span class="sub-k">删掉失败的测试</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="43.812" data-duration="6.494" data-track-index="5"><div class="sub-inner">为了让 lint 通过,它可能用 <span class="sub-k">eslint-disable</span> 把代码淹没。</div></div>
+    <div id="sub-12" class="clip sub" data-start="50.306" data-duration="1.709" data-track-index="5"><div class="sub-inner">检查全绿,<span class="sub-k">工作稀烂</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="52.015" data-duration="6.151" data-track-index="5"><div class="sub-inner">所以圈子里流行一句话:<span class="sub-k">设计评分标准</span>才是真本事,模型反而是简单的部分。</div></div>
+    <div id="sub-14" class="clip sub" data-start="58.366" data-duration="2.582" data-track-index="5"><div class="sub-inner"><span class="sub-k">Rubric design is the skill now.</span></div></div>
+    <div id="sub-15" class="clip sub" data-start="61.092" data-duration="1.348" data-track-index="5"><div class="sub-inner">第四条,<span class="sub-k">熔断</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="62.44" data-duration="2.888" data-track-index="5"><div class="sub-inner">每个循环必须有明确的<span class="sub-k">停止条件</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="65.328" data-duration="9.05" data-track-index="5"><div class="sub-inner">参考参数:最多迭代 <span class="sub-k">15 到 25 步</span>,超时三百秒左右,单次预算 2 美元上下。</div></div>
+    <div id="sub-18" class="clip sub" data-start="74.52" data-duration="7.771" data-track-index="5"><div class="sub-inner">实用技巧:给每次迭代取<span class="sub-k">哈希指纹</span>,连续三次一模一样,立刻停。</div></div>
+    <div id="sub-19" class="clip sub" data-start="82.291" data-duration="4.238" data-track-index="5"><div class="sub-inner">不设熔断的循环,就是<span class="sub-k">不设上限的账单</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.36, ease:'expo.out'});
+    // item 1
+    D2.enter(tl, R+'.i1', 3.3, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rda', 4.9, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rdb', 11.9, {y:10, d:.3, ease:'power2.out'});
+    // item 2
+    D2.enter(tl, R+'.i2', 17.9, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.i2tag', 24.9, {scale:0, y:0, opacity:0, d:.3, ease:'power3.out'});
+    // item 3
+    D2.enter(tl, R+'.i3', 30.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rd3', 36.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i3 .pt', 39.8, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.en3', 58.4, {y:10, d:.3, ease:'power2.out'});
+    // item 4
+    D2.enter(tl, R+'.i4', 61.1, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.params', 65.3, {y:10, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.hash', 74.5, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.24],['#sub-3',4.891],['#sub-4',11.908],['#sub-5',17.856],['#sub-6',21.792],['#sub-7',24.979],['#sub-8',30.204],['#sub-9',36.447],['#sub-10',39.568],['#sub-11',43.812],['#sub-12',50.306],['#sub-13',52.015],['#sub-14',58.366],['#sub-15',61.092],['#sub-16',62.44],['#sub-17',65.328],['#sub-18',74.52],['#sub-19',82.291]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 86.688, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

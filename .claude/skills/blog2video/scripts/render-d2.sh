@@ -42,7 +42,7 @@ echo "=== d2 render: $SLUG · $N 场景 · node=$NODE_V ==="
 mkdir -p clips renders
 LOG=render-progress.log; : > "$LOG"
 echo "START $(date +%T)  node=$NODE_V  scenes=$N" >> "$LOG"
-for n in $(seq -w 1 "$N"); do
+for n in $(seq -f "%02g" 1 "$N"); do   # 强制 2 位补零(seq -w 只按最大值宽度补,N<10 会漏);场景目录恒为 scene-NN
   if [ -f "clips/scene-$n.mp4" ]; then echo "skip   scene-$n (exists)" >> "$LOG"; continue; fi
   [ -f "scenes/scene-$n/index.html" ] || { echo "✗ 缺 scenes/scene-$n/index.html"; exit 1; }
   t0=$(date +%s)

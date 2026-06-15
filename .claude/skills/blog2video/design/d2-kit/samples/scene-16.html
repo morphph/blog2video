@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-16 特有 —— */
+[data-composition-id='s16'] .term-l2{font-size:60px}
+[data-composition-id='s16'] .q-coral{color:#ff6b5e}
+[data-composition-id='s16'] .term-sub{margin-top:14px;font-weight:600;font-size:34px;color:#8a8a85}
+[data-composition-id='s16'] .punch{margin-top:28px;font-weight:700;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s16'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s16" data-start="0" data-duration="37.044" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[16/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 自我批评的<span class="acc">盲区</span></div>
+
+      <div class="term" style="margin-top:24px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">eval@anthropic: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>让模型评判自己的工作</div>
+          <div class="term-l2">它会<span class="q-coral">自信地称赞自己</span></div>
+          <div class="term-sub">哪怕质量明显平庸</div>
+          <div class="term-src">— <b>团队原话</b> · 自我批评永远拿不到这种反馈</div>
+        </div>
+      </div>
+
+      <div class="stats" style="margin-top:30px">
+        <div class="stat"><div class="num" id="tk1">0×</div><div class="lab">标准对话<br>token 消耗</div></div>
+        <div class="stat"><div class="num" id="tk2">0×</div><div class="lab">单智能体<br>循环</div></div>
+        <div class="stat key"><div class="num" id="tk3">0×</div><div class="lab">多智能体<br>系统</div></div>
+      </div>
+
+      <div class="win" style="margin-top:18px"><div class="num" id="wn">0%</div><div class="lab">多智能体在内部评估里,比单智能体好这么多</div></div>
+
+      <div class="punch">15 倍不是浪费 —— 你买的是一个<span class="em">不会给自己放水的裁判</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.495" data-track-index="5"><div class="sub-inner">这种级别的反馈,靠模型自我批评,<span class="sub-k">永远拿不到</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.495" data-duration="7.561" data-track-index="5"><div class="sub-inner">团队的原话是:让模型评判自己的工作,它会<span class="sub-k">自信地称赞自己</span>,哪怕质量明显平庸。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.204" data-duration="1.128" data-track-index="5"><div class="sub-inner">代价当然有。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.332" data-duration="8.838" data-track-index="5"><div class="sub-inner">内部数据:标准对话 <span class="sub-k">1 倍</span> token,单智能体循环约 4 倍,多智能体系统约 15 倍。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.37" data-duration="5.457" data-track-index="5"><div class="sub-inner">但多智能体在内部评估里,比单智能体好了 <span class="sub-k">百分之 90.2</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.827" data-duration="3.313" data-track-index="5"><div class="sub-inner">我的看法是,这 15 倍<span class="sub-k">不是浪费</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.284" data-duration="5.612" data-track-index="5"><div class="sub-inner">你是在花钱买一个结构上才给得了的东西:一个<span class="sub-k">不会给自己放水的裁判</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s16'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.term', 1.2, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},1.4);
+    D2.enter(tl, R+'.term-l1', 2.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 5.0, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.term-sub', 9.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-src', 10.6, {opacity:0, y:8, d:.3, ease:'power1.out'});
+    // stats count-up (sub-4)
+    D2.stagger(tl, R+'.stats .stat', 13.3, {y:16, step:.18, d:.32, ease:'power3.out'});
+    D2.countUp(tl, R+'#tk1', 13.7, 0, 1, 0.8, {suffix:'×'});
+    D2.countUp(tl, R+'#tk2', 16.0, 0, 4, 0.9, {suffix:'×'});
+    D2.countUp(tl, R+'#tk3', 18.4, 0, 15, 1.1, {suffix:'×'});
+    // win +90.2% (sub-5)
+    D2.enter(tl, R+'.win', 22.4, {y:16, d:.36, ease:'power3.out'});
+    D2.countUp(tl, R+'#wn', 22.8, 0, 90.2, 1.5, {prefix:'+', suffix:'%', decimals:1});
+    // punch (sub-6/7)
+    D2.enter(tl, R+'.punch', 27.9, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.495],['#sub-3',12.204],['#sub-4',13.332],['#sub-5',22.37],['#sub-6',27.827],['#sub-7',31.284]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 37.044, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s16'] = tl;
+  })();
+  </script>
+</body>
+</html>

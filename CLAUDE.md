@@ -23,6 +23,16 @@ npm run render -- <output-dir>  # Render all videos: node scripts/render-all.mjs
 npm run tts -- <script.md> <output.mp3>  # Generate TTS audio
 ```
 
+### d2 pipeline (primary visual engine — run from repo root, `export PATH="/opt/homebrew/opt/node@22/bin:$PATH"` first)
+```bash
+npm run tts -- <OUT>/video_N_script.md <OUT>/video_N_audio.mp3   # (from blog2video-remotion/) TTS → audio + subtitles + slide_map + raw_subtitles
+node .claude/skills/blog2video/scripts/build-scenes-data.mjs <OUT> N   # → scenes-data.json + briefs/ (frame-snapped timeline)
+# … d2 Scene Generator subagents write <OUT>/src/scene-NN.html (prompts/scene-generator.md) …
+node .claude/skills/blog2video/scripts/build-scene.mjs <OUT> all       # scaffold + inline kit → scenes/scene-NN/index.html
+.claude/skills/blog2video/scripts/render-d2.sh <OUT> N                 # per-scene render → concat → mux → video_N.mp4
+```
+(`<OUT>` = `blog2video-output/<slug>`. Kit + fonts + golden samples live in `.claude/skills/blog2video/design/d2-kit/`.)
+
 ### TTS prerequisite
 `blog2video-remotion/.env` must define:
 ```
@@ -61,17 +71,22 @@ MINIMAX_VOICE_ID=moss_audio_ccbe9ed6-3a37-11f1-a1e0-8a43ce7defab
 2. **Script Writer** — Generates essay-first Chinese narration for whole blog (no slide markers), outputs `narration.md`
 3. **Episode Splitter** — Reads finished narration, decides whether to split into multiple videos, outputs `video_plan.json` + `video_N_narration.md`
 4. **Slide Planner** (×N) — Segments each video's narration into downstream-compatible slide format, outputs `video_N_script.md`
-5. **Slide HTML Generator** (×N) — Generates self-contained HTML slides + manifest from script
-6. **Render** — MiniMax TTS → audio, Puppeteer screenshot → Remotion renders final MP4
+5. **Slide HTML Generator** (×N) — Generates self-contained HTML `slide_N.html` + `cover_photo.html` + manifest from script. In the d2 path these are the **content blueprint** for stage 5.7 (and the Remotion-fallback screenshot source).
+   - **5.3 TTS** (`blog2video-remotion/scripts/tts.mjs`) — MiniMax TTS → `video_N_audio.mp3` + `_subtitles.json` + `_minimax_raw_subtitles.json` + `_slide_map.json`
+   - **5.5 build-scenes-data** (`.claude/skills/blog2video/scripts/build-scenes-data.mjs`) — slide_map + raw_subtitles → frame-snapped timeline `scenes-data.json` + `briefs/scene-NN.json` (frame-snap kills the audio/video drift)
+   - **5.7 d2 Scene Generator** (×N, `prompts/scene-generator.md`) — re-skins each `slide_N.html` into a self-contained, subtitle-burned **d2「终端霓影」scene** (`src/scene-NN.html` → `build-scene.mjs` → `scenes/scene-NN/index.html`)
+6. **d2 Render** (`.claude/skills/blog2video/scripts/render-d2.sh`) — per-scene `hyperframes render` (serial, OOM-guarded) → concat silent master → mux raw audio (no loudnorm, no `-shortest`) → `video_N.mp4`. **Remotion is the fallback** (`render-image-video.mjs`: Puppeteer screenshot `slide_N.html` → Remotion render).
 
 Design principle: **write first, split later.** Narration quality is never constrained by splitting decisions. Duration is a result, not an input.
+
+**Visual engine (since 2026-06) = d2「终端霓影」**: signature acid-green `#ccff4d` every frame, MiSans + JetBrains Mono only, per-scene mini-projects rendered by [hyperframes](https://hyperframes.heygen.com). Kit lives in `.claude/skills/blog2video/design/d2-kit/`. Hard constraints (Phase-1 hard-won, do not override): **render per-scene, never the whole film** (>240s composition OOMs on 8GB); **serial** render with `NODE_OPTIONS=--max-old-space-size=5120`; **node v22.x** required (`export PATH="/opt/homebrew/opt/node@22/bin:$PATH"`).
 
 Each stage runs as an independent subagent with no shared context. Prompt specs live in `.claude/skills/blog2video/prompts/`, examples in `examples/`.
 
 ### Output structure
 All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs, audio, and MP4s.
 
-### Remotion rendering engine (`blog2video-remotion/`)
+### Remotion rendering engine (`blog2video-remotion/`) — **fallback** (primary is d2/hyperframes; tts.mjs is still used by the d2 path)
 
 - **Root.tsx** — Registers the single `BlogVideo` composition, reads config from `src/data/video_config.json`
 - **BlogVideo.tsx** — Main composition; maps slide configs to components via `SLIDE_COMPONENTS` registry, adds audio track
@@ -143,15 +158,17 @@ meta.json 里**不需要** title、description、tags — 这些由远程服务�
 
 ### 投递命令
 
-投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`*_narration.md`、`*_insight_memo.md`、`images/` 目录。
+投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`*_narration.md`、`*_insight_memo.md`、`images/` 目录；**d2 工作区**：`scenes-data.json`、`briefs/`、`src/`、`scenes/`、`clips/`、`renders/`、`assets`（symlink）、`*.log`、`concat.txt`。**只传** `video_N.mp4`（最终混音片）+ `video_N_cover_photo.png` + `video_N_script.md` + `video_N_audio.vtt` + `source_blog.md` + `meta.json`。
+
+> ⚠️ 不要用 `--exclude="*.mp4"`：会误删要交付的 `video_N.mp4`。d2 的 clip/silent 中间片靠排除 `clips/`、`renders/` 目录拿掉。
 
 使用 rclone 上传到 Google Drive（rclone remote `gdrive:` 已配置）：
 
 ```bash
-rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="*_narration.md" --exclude="*_insight_memo.md" --exclude="images/**" --exclude="*_config.json" --progress
+rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="*_narration.md" --exclude="*_insight_memo.md" --exclude="images/**" --exclude="*_config.json" --exclude="scenes-data.json" --exclude="briefs/**" --exclude="src/**" --exclude="scenes/**" --exclude="clips/**" --exclude="renders/**" --exclude="assets/**" --exclude="*.log" --exclude="concat.txt" --progress
 ```
 
-注意：slide 截图 PNG 不传，但 `*_cover_photo.png` 需要传。用 `--include` 无法精确控制时，可先手动清理再 `rclone copy`。
+注意：slide 截图 PNG 不传，但 `*_cover_photo.png` 需要传。d2 的 `scenes/scene-NN/index.html`、`src/scene-NN.html` 已被 `*.html` + `scenes/`+`src/` 排除。用 `--include` 无法精确控制时，可先手动清理再 `rclone copy`。
 
 ### 投递完成后
 
@@ -174,7 +191,7 @@ Principle: **CLAUDE.md declares WHAT exists and project-wide rules. HOW each sta
 
 When compressing context, preserve in priority order:
 1. NEVER list and Post-Render Delivery exclude rules — always re-check before delivery
-2. The 6-stage pipeline architecture (Insight Memo → Script → Splitter → Slide Planner → Slide HTML → Render)
+2. The pipeline architecture (Insight Memo → Script → Splitter → Slide Planner → Slide HTML 内容蓝本 → TTS → build-scenes-data → d2 Scene Generator ×N → render-d2 逐场景渲+concat+混音; Remotion fallback)
 3. Modified files and key changes
 4. Current task state and open TODOs
 5. Tool outputs can be discarded — keep only pass/fail status

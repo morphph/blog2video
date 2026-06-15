@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s05'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s05'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s05'] .tlh{margin-top:32px}
+[data-composition-id='s05'] .src{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="37.188" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[05/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">第一性原理</span></div>
+      <div class="h2" style="margin-top:18px"><span class="en">Loop Engineering</span><br>是这条路的<span class="em">收敛点</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">不是把<span class="dim">一次运行</span>做好,而是设计一个系统,<span class="em">持续调度</span>这些运行</div>
+        <div class="metaphor">手动开车 <span class="ar">→</span> 运营整个自动驾驶车队</div>
+      </div>
+
+      <div class="kicker tlh">// Boris Cherny 把这条路压成一条时间线</div>
+      <div class="tl" style="margin-top:16px">
+        <div class="tl-row y0"><div class="yr">2023</div><div class="wt">你写代码</div></div>
+        <div class="tl-row y1"><div class="yr">2024</div><div class="wt">你提示 Claude 写代码</div></div>
+        <div class="tl-row y2"><div class="yr">2025</div><div class="wt">你写循环,让循环提示 Claude</div></div>
+        <div class="tl-row y3 now"><div class="yr">2026</div><div class="wt">你构建系统,运行这些循环<span class="badge">你刚看完的那天</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="9.546" data-track-index="5"><div class="sub-inner">而 Loop Engineering 是这条路的<span class="sub-k">收敛点</span>:不是把一次运行做好,而是设计一个系统,持续调度这些运行。</div></div>
+    <div id="sub-2" class="clip sub" data-start="9.546" data-duration="5.284" data-track-index="5"><div class="sub-inner">用开车打比方,就是从手动开车,一路升级到<span class="sub-k">运营整个自动驾驶车队</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.976" data-duration="3.93" data-track-index="5"><div class="sub-inner"><span class="sub-k">Boris Cherny</span> 把这条路压成一条时间线。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.906" data-duration="1.887" data-track-index="5"><div class="sub-inner">2023 年,你<span class="sub-k">写代码</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.793" data-duration="3.458" data-track-index="5"><div class="sub-inner">2024 年,你<span class="sub-k">提示 Claude</span> 写代码。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.251" data-duration="3.93" data-track-index="5"><div class="sub-inner">2025 年,你<span class="sub-k">写循环</span>,让循环提示 Claude。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.381" data-duration="4.37" data-track-index="5"><div class="sub-inner">2026 年,你<span class="sub-k">构建系统</span>,运行这些循环。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.904" data-duration="4.114" data-track-index="5"><div class="sub-inner">你刚看完的那一天,就停在这条时间线的<span class="sub-k">最后一格</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 1.8, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.metaphor', 9.6, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.tlh', 15.0, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.y0', 18.9, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.y1', 20.8, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.y2', 24.3, {x:-22, ease:'power2.out'});
+    D2.enter(tl, R+'.y3', 28.4, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.y3 .badge', 33.0, {scale:.6, opacity:0, d:.3, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',9.546],['#sub-3',14.976],['#sub-4',18.906],['#sub-5',20.793],['#sub-6',24.251],['#sub-7',28.381],['#sub-8',32.904]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 37.188, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,5 +1,11 @@
 node_modules/
 dist/
+# d2 kit 字体(31MB,本地;复制 MiSans + JetBrains Mono .ttf 进 design/d2-kit/assets/fonts/)
+.claude/skills/blog2video/design/d2-kit/assets/fonts/
+# d2 逐视频渲染工作区里的 symlink / 中间产物(可重新生成,不入库)
+blog2video-output/**/assets
+blog2video-output/**/snapshots/
+blog2video-output/**/.hyperframes/
 *.png
 !blog2video-remotion/public/qr-subscribe-zh.png
 *.mp4

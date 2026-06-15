@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-24 特有 —— */
+[data-composition-id='s24'] .cmd{font-family:'JetBrains Mono',monospace;font-size:36px;color:#edebe6;line-height:1.5;margin-top:10px;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s24'] .cmd .p{color:#ccff4d;margin-right:14px}
+[data-composition-id='s24'] .cmd .ar{color:#8a8a85;margin-right:14px}
+[data-composition-id='s24'] .cmd .cm{color:#8a8a85;margin-left:16px;font-size:27px}
+[data-composition-id='s24'] .cmd .str{color:#ccff4d}
+[data-composition-id='s24'] .cmd .ok{color:#ccff4d}
+[data-composition-id='s24'] .firstloop{margin-top:30px;font-weight:900;font-size:54px;color:#edebe6}
+[data-composition-id='s24'] .cta{margin-top:26px}
+[data-composition-id='s24'] .slogan{margin-top:28px;font-weight:700;font-size:42px;color:#edebe6;line-height:1.4}
+[data-composition-id='s24'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s24'] .signoff{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s24" data-start="0" data-duration="30.736" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 收官<span class="b-cur"></span></div>
+      <div class="idx">[24/24]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 今晚就能做的<span class="acc">最小动作</span></div>
+      <div class="h1 xl" style="margin-top:16px">你的第一个<span class="em">循环</span></div>
+
+      <div class="term" style="margin-top:30px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@loop: ~</span></div>
+        <div class="term-body" style="padding:38px 40px 42px">
+          <div class="cmd c1"><span class="p">$</span>claude<span class="cm"># 打开 Claude Code</span></div>
+          <div class="cmd c2"><span class="ar">›</span><span class="str">/goal</span><span class="cm" style="margin-left:14px">把你要一路盯着的那件事,写成目标</span></div>
+          <div class="cmd c3"><span class="ar">›</span>给它一个<span class="ok">机器能检查的完成条件</span><span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+
+      <div class="firstloop">你的第一个循环,<span class="hl"><span class="bar"></span><span class="tx" style="font-size:54px">就这么开始</span></span></div>
+
+      <div class="status cta"><span class="dot"></span>完整文字版指南在<span style="color:#edebe6">公众号文章</span>里 · 命令、参数、成本对照着搭</div>
+
+      <div class="slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="11.374" data-track-index="5"><div class="sub-inner">今晚就能做的最小动作:打开 Claude Code,把你要一路盯着的那件事,写成一个 <span class="sub-k">/goal</span>,给它一个机器能检查的完成条件。</div></div>
+    <div id="sub-2" class="clip sub" data-start="11.374" data-duration="2.342" data-track-index="5"><div class="sub-inner">你的第一个循环,<span class="sub-k">就这么开始</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.86" data-duration="10.558" data-track-index="5"><div class="sub-inner">完整文字版指南我放在<span class="sub-k">公众号文章</span>里,所有命令、参数和成本数据,想动手搭可以对照着做。</div></div>
+    <div id="sub-4" class="clip sub" data-start="24.588" data-duration="3.813" data-track-index="5"><div class="sub-inner">AI 世界很吵,<span class="sub-k">精读一篇,胜过刷一百条</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="28.401" data-duration="1.335" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s24'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.term', 1.6, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},1.8);
+    D2.enter(tl, R+'.c1', 2.6, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 5.5, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c3', 8.4, {x:-16, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 9.4, 9);
+    D2.enter(tl, R+'.firstloop', 11.4, {y:16, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.firstloop .hl', 12.1);
+    D2.enter(tl, R+'.cta', 13.9, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.slogan', 24.6, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 28.4, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',11.374],['#sub-3',13.86],['#sub-4',24.588],['#sub-5',28.401]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.736, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s24'] = tl;
+  })();
+  </script>
+</body>
+</html>

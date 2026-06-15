@@ -10,8 +10,12 @@ PDF         → [Step 0: pdfminer]                → source_raw.md  → [Step 0
 YouTube     → [Step 0: yt-dlp + VTT]            → source_raw.md  → [Step 0.5: Transcript Organizer] → source_blog.md → ...
 Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → source_raw.md + images/ → [Step 0.5: Twitter Cleaner] → source_blog.md → ...
 
-... → [Insight Memo] → [Script Writer] → [Episode Splitter] → [Slide Planner] → [Slide HTML Generator] → [Render + TTS] → MP4
+... → [Insight Memo] → [Script Writer] → [Episode Splitter] → [Slide Planner] → [Slide HTML Generator (内容蓝本)]
+    → [TTS] → [build-scenes-data] → [d2 Scene Generator ×N] → [render-d2: 逐场景渲+concat+混音] → MP4
 ```
+
+> **视觉引擎(2026-06 起)= d2「终端霓影」**:每页 = 一个自包含、带时间轴+烧字幕的 d2 场景,
+> 逐场景 `hyperframes render` → concat → 混音。旧的 Remotion 截图链路(`blog2video-remotion/`)保留为 **fallback**。
 
 ## Subagent Architecture
 
@@ -25,8 +29,11 @@ Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → sourc
 | 2 | Script Writer | `source_blog.md` + `insight_memo.md` | `narration.md` |
 | 3 | Episode Splitter | `narration.md` + `insight_memo.md` + `source_blog.md` | `video_plan.json` + `video_N_narration.md` |
 | 4 | Slide Planner | `video_N_narration.md` + `video_plan.json` | `video_N_script.md` |
-| 5 | Slide HTML Generator | `video_N_script.md` | `slide_N.html` + `manifest.json` |
-| 6 | Render (非 subagent) | HTML slides + TTS 音频 | MP4 视频文件 |
+| 5 | Slide HTML Generator | `video_N_script.md` | `slide_N.html`(d2 内容蓝本 + Remotion fallback 截图源) + `cover_photo.html` + `manifest.json` |
+| 5.3 | TTS（非 subagent，`tts.mjs`） | `video_N_script.md` | `video_N_audio.mp3` + `_subtitles.json` + `_minimax_raw_subtitles.json` + `_slide_map.json` |
+| 5.5 | build-scenes-data（非 subagent，`scripts/build-scenes-data.mjs`） | slide_map + raw_subtitles + subtitles | `scenes-data.json` + `briefs/scene-NN.json`（帧吸附时间轴） |
+| 5.7 | **d2 Scene Generator ×N**（`prompts/scene-generator.md`，每场景一个 subagent） | `briefs/scene-NN.json` + `slide_N.html` + kit | `src/scene-NN.html` → `scenes/scene-NN/index.html`（自包含 d2 场景） |
+| 6 | d2 Render（非 subagent，`scripts/render-d2.sh`） | `scenes/` + `scenes-data.json` + `video_N_audio.mp3` | 逐场景 clip → concat → 混音 → `video_N.mp4`（Remotion fallback：`render-image-video.mjs`） |
 
 **关键设计：先写后拆。** Insight Memo 和 Script Writer 为整篇博客工作（不分集）。Episode Splitter 读完成品叙述稿后再决定是否拆分。这确保叙述质量不被分集决策污染。
 
@@ -42,15 +49,27 @@ Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → sourc
 │   ├── script-writer.md          ← Stage 2 prompt (输出 narration.md)
 │   ├── episode-splitter.md       ← Stage 3 prompt (分集决策 + video_plan.json)
 │   ├── slide-planner.md          ← Stage 4 prompt (narration → script with slide markers)
-│   └── slide-html-generator.md   ← Stage 5 prompt
+│   ├── slide-html-generator.md   ← Stage 5 prompt（d2 内容蓝本 + Remotion fallback）
+│   └── scene-generator.md        ← Stage 5.7 prompt（d2 单场景生成器，子 agent 作业书）
+├── scripts/
+│   ├── build-scenes-data.mjs     ← Stage 5.5：slide_map+raw_subtitles → 帧吸附时间轴 scenes-data.json + briefs/
+│   ├── build-scene.mjs           ← scaffold + 内联打包 src/scene-NN.html → scenes/scene-NN/index.html
+│   └── render-d2.sh              ← Stage 6：逐场景 hyperframes render → concat → 混音 → video_N.mp4
 ├── examples/
 │   ├── example-narration-v1.md   ← 参考叙述稿（essay-first，无 slide 标记）
 │   ├── example-script-v1.md      ← 参考口播稿（带 slide 标记）
 │   ├── example-script-v2.md
 │   └── example-script-v3.md
 └── design/
-    ├── design-system.md          ← 视觉设计规范
-    └── slide-types.md            ← Slide 类型定义
+    ├── design-system.md          ← 视觉设计规范（旧暗色版 / Remotion fallback）
+    ├── slide-types.md            ← Slide 类型定义
+    └── d2-kit/                   ← d2「终端霓影」组件库（随 skill 走）
+        ├── d2-base.css           ← d2 令牌 + 全部组件类
+        ├── d2-motion.js          ← D2 GSAP 助手 + buildSceneTimeline
+        ├── components.md         ← 组件速查 + 类型范式（给生成器看）
+        ├── DESIGN.md             ← 设计令牌权威
+        ├── assets/fonts/         ← MiSans + JetBrains Mono（gitignored，本地）
+        └── samples/scene-NN.html ← 7 类黄金范本 few-shot（01/02/05/07/16/17/24）
 
 blog2video-remotion/              ← 独立 Remotion 项目
 ├── src/
@@ -79,12 +98,24 @@ blog2video-remotion/              ← 独立 Remotion 项目
      - 在用户明确确认前，绝不进入 Stage 4 / Slide Planner
      - 用户可能要求重写 Hook、改正文论点、调整结构——按要求迭代 narration.md 直至获得确认
 4. 调用 Episode Splitter subagent → video_plan.json + video_N_narration.md
-5. 对每个视频，依次调用：
+5. 对每个视频，依次调用（**d2 path，正式投产**）：
    a. Slide Planner subagent → video_N_script.md
    b. Gate 1 (Script): 验证 [SLIDE] 标记、品牌植入
-   c. Slide HTML Generator subagent → slide_N.html + manifest.json
+   c. Slide HTML Generator subagent → slide_N.html（d2 内容蓝本）+ cover_photo.html + manifest.json
    d. Gate 2 (Manifest): 验证 slide 数量一致
-6. 渲染（render-all.mjs，内含 Gate 3 + Gate 4）
+   e. **TTS**：`npm run tts -- <OUT>/video_N_script.md <OUT>/video_N_audio.mp3`
+      → audio + _subtitles.json + _minimax_raw_subtitles.json + _slide_map.json
+   f. Gate 3 (Alignment): 字幕映射完整、时长 > 2s
+   g. **build-scenes-data**：`node .claude/skills/blog2video/scripts/build-scenes-data.mjs <OUT> N`
+      → scenes-data.json + briefs/scene-NN.json（帧吸附,修音视频漂移）
+   h. **d2 Scene Generator ×N**：对每个场景派一个 `scene-generator.md` 子 agent（可并行小批，
+      每个产出 `src/scene-NN.html` → `build-scene.mjs` → `scenes/scene-NN/index.html`，自检 lint 0 error + 快照目检）
+      · cover(场景1) / summary(末张) / cta(尾卡) 类型由 build-scenes-data 结构默认;
+        principle/comparison_cards/quote/checklist 等语义类型由编排者读 slide 内容后写进 brief.type 再派活
+6. **渲染（render-d2.sh）**：`.claude/skills/blog2video/scripts/render-d2.sh <OUT> N`
+   → 逐场景 hyperframes render（串行，OOM 防护）→ concat 静音整片 → 混入 raw 音频（不响度处理/不 -shortest）
+   → video_N.mp4 + Gate 4 (PostRender) 核验
+   · **Remotion fallback**：若 d2 不可用，走 `blog2video-remotion/scripts/render-image-video.mjs`（截图 slide_N.html）
 7. 输出所有文件路径
 ```
 
@@ -101,11 +132,19 @@ blog2video-output/
     ├── video_plan.json               ← 视频计划（分集决策）
     ├── video_1_narration.md          ← 视频1叙述稿
     ├── video_1_script.md             ← 视频1口播稿（带 Slide 标记）
-    ├── slide_1.html … slide_N.html
+    ├── slide_1.html … slide_N.html   ← d2 内容蓝本 + Remotion fallback 截图源
+    ├── cover_photo.html
     ├── video_1_manifest.json
     ├── video_1_audio.mp3
-    ├── video_1_audio_slide_map.json
-    ├── video_1.mp4
+    ├── video_1_audio_slide_map.json / _subtitles.json / _minimax_raw_subtitles.json
+    │   ── 以下是 d2 path 工作区（同一输出目录内）──
+    ├── scenes-data.json              ← 帧吸附时间轴（build-scenes-data.mjs）
+    ├── briefs/scene-NN.json          ← 每场景生成器输入
+    ├── src/scene-NN.html             ← d2 场景授权源（scene-generator 写，含 marker）
+    ├── scenes/scene-NN/index.html    ← 自包含 d2 场景（build-scene.mjs；assets symlink gitignored）
+    ├── clips/scene-NN.mp4            ← 逐场景静音 clip（*.mp4 gitignored，不投递）
+    ├── renders/<slug>-silent.mp4     ← concat 静音整片（不投递）
+    ├── video_1.mp4                   ← ★最终交付片（混音后）
     └── ...
 ```
 

@@ -1,0 +1,159 @@
+/* ============================================================================
+   d2 「终端霓影 Terminal v2」 BASE KIT  —— loop-engineering 全片统一组件库
+   真源。生成器把本文件 + d2-motion.js 内联进每个场景的 style / script 块。
+   场景自包含,逐个 standalone 渲染,因此组件类不做 sNN 作用域(单 composition 不会串扰)。
+   GSAP 选择器仍用 R = composition-id 前缀定位(R 拼成 data-composition-id 属性选择器),见 d2-motion.js。
+   字体路径相对 scene 目录:assets -> symlink 到 ../../assets。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入)---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+
+/* ---- 令牌 ---- */
+:root{
+  --bg:#121212; --panel:#1c1c1e; --ink:#edebe6; --dim:#8a8a85; --key:#2a2a2c;
+  --acid:#ccff4d; --cyan:#5fd3e8; --coral:#ff6b5e; --amber:#ffbd2e; --green:#27c93f;
+  --mono:'JetBrains Mono',monospace; --sans:'MiSans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+
+/* ---- 蓝图点阵 ---- 几乎每个场景铺底 */
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.045;
+  -webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 42%,#000 50%,rgba(0,0,0,0) 100%)}
+
+/* ---- topbar ---- 左栏目名+光标 右页码 */
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.topbar .idx{color:#ccff4d}
+
+/* ---- 内容安全区 ---- 上≥160 / 左右72 / 下≥540(留给字幕带) */
+.content{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+  box-sizing:border-box;transform-origin:50% 45%}
+.content.top{justify-content:flex-start;padding-top:236px}   /* 密集列表从上往下排 */
+.content.tight{padding-top:208px;padding-bottom:540px}        /* 极密(>4 行+说明) */
+
+/* ---- 字幕带(全片统一,track 5)---- */
+.sub{position:absolute;left:72px;right:72px;bottom:340px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(18,18,18,.6);border-top:1px solid #2a2a2c;max-width:936px;padding:16px 22px;
+  font-weight:500;font-size:38px;line-height:1.4;color:#edebe6;text-align:center}
+.sub-k{color:#ccff4d}
+
+/* ========================= 组件 ========================= */
+
+/* 章节 kicker(mono 小标签) */
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+.kicker .acc{color:#ccff4d}
+
+/* 大标题 */
+.h1{font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+.h1.xl{font-size:88px;line-height:1.08}
+.h1 .em{color:#ccff4d}
+.h2{font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+.lead{font-weight:600;font-size:40px;line-height:1.45;color:#edebe6}
+.lead .dim{color:#8a8a85} .lead .em{color:#ccff4d}
+
+/* 酸性高亮:块从左扫过,文字反色为 #121212(每屏 ≤1 处) */
+.hl{position:relative;display:inline-block;padding:4px 14px}
+.hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+.hl .tx{position:relative;z-index:1;font-weight:900;color:#edebe6}
+
+/* chip:mono 编号 + 标签 */
+.chip{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+.chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:25px;color:#ccff4d;letter-spacing:.05em}
+.chip .ct{font-weight:600;font-size:38px;color:#edebe6}
+
+/* 编号清单行(checklist / steps) */
+.rows{display:flex;flex-direction:column;gap:16px;width:100%}
+.row{display:flex;align-items:flex-start;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 30px;width:100%}
+.row .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;line-height:1.25;min-width:46px}
+.row .rb{flex:1;min-width:0}
+.row .rt{font-weight:600;font-size:40px;color:#edebe6;line-height:1.28}
+.row .rd{margin-top:8px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+.row .rd .warn{color:#ff6b5e;font-weight:600}
+.row .rd .ok{color:#ccff4d;font-weight:600}
+.row.warn{border-color:rgba(255,107,94,.4)} .row.warn .n{color:#ff6b5e}
+.row.now{border-color:#ccff4d}
+
+/* 步骤箭头(纵向流程) */
+.flowarrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;margin:2px 0 2px 14px}
+.flowarrow .a{color:#ccff4d}
+
+/* 终端窗口卡(quote / 代码 / 金句) */
+.term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+.term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+.term-bar .d{width:12px;height:12px;border-radius:50%}
+.term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+.term-body{padding:44px 40px 48px}
+.term-l1{font-weight:600;font-size:44px;line-height:1.45;color:#8a8a85}
+.term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+.term-l2{margin-top:24px;font-weight:900;font-size:64px;line-height:1.32;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+.term-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:32px;color:#5fd3e8}
+.term-src{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+.term-src b{color:#edebe6;font-weight:700}
+
+/* corner-bracket 面板(重点区 / 节点) */
+.bracket{position:relative;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 34px}
+.bracket::before,.bracket::after{content:'';position:absolute;width:26px;height:26px;pointer-events:none}
+.bracket::before{top:-1px;left:-1px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+.bracket::after{bottom:-1px;right:-1px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+
+/* 状态灯:小圆点 + mono 标签 */
+.status{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+.status .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.status.alert{color:#ff6b5e} .status.alert .dot{background:#ff6b5e}
+
+/* 块状光标 */
+.cur{display:inline-block;width:30px;height:54px;background:#ccff4d;vertical-align:-8px;margin-left:14px}
+.cur.sm{width:20px;height:38px;margin-left:10px;vertical-align:-5px}
+
+/* 双栏对比 */
+.cols{display:flex;gap:22px;width:100%}
+.col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 28px;display:flex;flex-direction:column;min-width:0}
+.col .ch{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:22px}
+.col.alt .ch{color:#5fd3e8}
+.col .it{margin-bottom:20px} .col .it:last-child{margin-bottom:0}
+.col .it .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+.col .it .ds{margin-top:6px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+.col .it code,.code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+.col.alt .it code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:10px;vertical-align:3px}
+
+/* 时间线(纵向 mono 年份) */
+.tl{display:flex;flex-direction:column;gap:14px;width:100%}
+.tl-row{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+.tl-row .yr{flex-shrink:0;width:150px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:#8a8a85;letter-spacing:-.01em}
+.tl-row .wt{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+.tl-row.now{border-color:#ccff4d;background:rgba(204,255,77,.06)} .tl-row.now .yr{color:#ccff4d}
+.tl-row.now .badge{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 12px;vertical-align:4px}
+
+/* 数据条 / count-up 统计 */
+.stats{display:flex;gap:18px;width:100%}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 16px;text-align:center}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:62px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan .num{color:#5fd3e8}
+
+/* 大数字赢面板 */
+.win{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;text-align:center}
+.win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+.win .lab{margin-top:10px;font-weight:500;font-size:28px;color:#edebe6}
+
+/* end chip(收尾标语) */
+.endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+.endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}

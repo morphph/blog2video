@@ -1,0 +1,5 @@
+[     275ms] [ERROR] Error retrieving a token. @ https://x.com/home:0
+[    1280ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/:0
+[    1335ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://accounts.google.com/gsi/client:86
+[    1340ms] [ERROR] The request has been aborted. @ https://x.com/:0
+[    1340ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87

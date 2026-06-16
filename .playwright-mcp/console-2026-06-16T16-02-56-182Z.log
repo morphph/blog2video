@@ -1,0 +1,8 @@
+[     260ms] [ERROR] Error retrieving a token. @ https://x.com/i/article/2064956632053026816:0
+[    1310ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://accounts.google.com/gsi/client:86
+[    1372ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064956632053026816&mode=login:0
+[    1372ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064956632053026816&mode=login:0
+[    1390ms] [ERROR] The request has been aborted. @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064956632053026816&mode=login:0
+[    1390ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87
+[    1391ms] [ERROR] The request has been aborted. @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064956632053026816&mode=login:0
+[    1391ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87

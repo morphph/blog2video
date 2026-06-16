@@ -1,0 +1,11 @@
+[    1212ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://accounts.google.com/gsi/client:86
+[    1222ms] [ERROR] Not signed in with the identity provider. @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    1224ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87
+[    1224ms] [ERROR] Not signed in with the identity provider. @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    1224ms] [ERROR] Not signed in with the identity provider. @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    1224ms] [ERROR] Not signed in with the identity provider. @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    1224ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87
+[    1224ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87
+[    1480ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    1649ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?mode=login:0
+[    4371ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:87

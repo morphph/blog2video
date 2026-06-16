@@ -1,0 +1,171 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - link "X" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e7]
+  - main [ref=e9]:
+    - generic [ref=e12]:
+      - button "Back" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+      - heading "Post" [level=2] [ref=e17]
+    - article [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - link "user avatar" [ref=e27] [cursor=pointer]:
+              - /url: https://x.com/BrainsAndTennis
+              - img "user avatar" [ref=e28]
+            - generic [ref=e30]:
+              - generic [ref=e31]:
+                - generic [ref=e32]:
+                  - link "Peter Wang" [ref=e33] [cursor=pointer]:
+                    - /url: https://x.com/BrainsAndTennis
+                  - generic [ref=e36]:
+                    - button "Verified account" [ref=e37] [cursor=pointer]:
+                      - img [ref=e38]
+                    - link "Shortcut" [ref=e40] [cursor=pointer]:
+                      - /url: https://twitter.com/tryshortcutai
+                      - img "Shortcut" [ref=e43]
+                - link "@BrainsAndTennis" [ref=e45] [cursor=pointer]:
+                  - /url: https://x.com/BrainsAndTennis
+              - button "More" [ref=e47] [cursor=pointer]:
+                - img [ref=e48]
+          - generic [ref=e50]:
+            - 'link "Article cover image Article Building a Good Vertical Agent How do you build an agent that actually performs in a domain — one customers pick because it''s better? The basics have been standardized over the past year: an agent is a while-loop around a model..." [ref=e51] [cursor=pointer]':
+              - /url: /i/article/2064956632053026816
+              - generic [ref=e52]:
+                - img "Article cover image" [ref=e54]
+                - img "Article" [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - text: Article
+              - generic [ref=e59]:
+                - generic [ref=e60]: Building a Good Vertical Agent
+                - generic [ref=e61]: "How do you build an agent that actually performs in a domain — one customers pick because it's better? The basics have been standardized over the past year: an agent is a while-loop around a model..."
+            - generic [ref=e62]:
+              - link "21:51 · 11 Jun 2026" [ref=e64] [cursor=pointer]:
+                - /url: /BrainsAndTennis/status/2065190286519906657
+              - generic [ref=e65]:
+                - text: ·
+                - link "397.5k Views" [ref=e66] [cursor=pointer]:
+                  - /url: https://x.com/BrainsAndTennis/status/2065190286519906657
+                  - generic [ref=e67]: 397.5k
+                  - generic [ref=e68]: Views
+        - generic [ref=e70]:
+          - generic [ref=e72]:
+            - button "Reply" [ref=e73] [cursor=pointer]:
+              - img [ref=e74]
+            - button "44" [ref=e76] [cursor=pointer]:
+              - generic [ref=e80]:
+                - generic [ref=e82]: "4"
+                - generic [ref=e84]: "4"
+          - generic [ref=e86]:
+            - button "Repost" [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+            - button "96" [ref=e90] [cursor=pointer]:
+              - generic [ref=e94]:
+                - generic [ref=e96]: "9"
+                - generic [ref=e98]: "6"
+          - generic [ref=e100]:
+            - button "Like" [ref=e101] [cursor=pointer]:
+              - img [ref=e102]
+            - button "1106" [ref=e104] [cursor=pointer]:
+              - generic [ref=e105]:
+                - generic [ref=e107]:
+                  - generic [ref=e110]: "1"
+                  - generic [ref=e111]:
+                    - generic [ref=e113]: .
+                    - generic [ref=e115]: "1"
+                - generic [ref=e118]: k
+          - generic [ref=e120]:
+            - button "Bookmark" [ref=e121] [cursor=pointer]:
+              - img [ref=e122]
+            - button "3794" [ref=e124] [cursor=pointer]:
+              - generic [ref=e125]:
+                - generic [ref=e127]:
+                  - generic [ref=e130]: "3"
+                  - generic [ref=e131]:
+                    - generic [ref=e133]: .
+                    - generic [ref=e135]: "8"
+                - generic [ref=e138]: k
+          - button "Share" [ref=e139] [cursor=pointer]:
+            - img [ref=e140]
+        - button "Read 44 replies" [ref=e142] [cursor=pointer]:
+          - generic [ref=e143]:
+            - img [ref=e144]
+            - generic [ref=e146]: Read 44 replies
+  - complementary [ref=e147]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - heading "New to X?" [level=2] [ref=e151]
+        - generic [ref=e152]:
+          - paragraph [ref=e153]: Sign up now to get your own personalized timeline!
+          - generic [ref=e154]:
+            - button "Sign up with Google" [disabled] [ref=e155]:
+              - img [ref=e156]
+              - text: Sign up with Google
+            - button "Sign up with Apple" [ref=e161] [cursor=pointer]:
+              - img [ref=e162]
+              - text: Sign up with Apple
+            - link "Create account" [ref=e164] [cursor=pointer]:
+              - /url: /i/jf/onboarding/web?mode=signup
+          - paragraph [ref=e165]:
+            - text: By signing up, you agree to the
+            - link "Terms of Service" [ref=e166] [cursor=pointer]:
+              - /url: https://x.com/tos
+            - text: and
+            - link "Privacy Policy" [ref=e167] [cursor=pointer]:
+              - /url: https://x.com/privacy
+            - text: ", including"
+            - link "Cookie Use." [ref=e168] [cursor=pointer]:
+              - /url: https://support.x.com/articles/20170514
+      - generic [ref=e169]:
+        - heading "Relevant people" [level=2] [ref=e170]
+        - generic [ref=e172]:
+          - link "user avatar" [ref=e173] [cursor=pointer]:
+            - /url: https://x.com/BrainsAndTennis
+            - img "user avatar" [ref=e174]
+          - generic [ref=e176]:
+            - link "Peter Wang @BrainsAndTennis" [ref=e177] [cursor=pointer]:
+              - /url: /BrainsAndTennis
+              - generic [ref=e178]: Peter Wang
+              - generic [ref=e179]: "@BrainsAndTennis"
+            - link "Follow" [ref=e180] [cursor=pointer]:
+              - /url: /i/jf/onboarding/web?mode=login&redirect_after_login=%2FBrainsAndTennis
+      - generic [ref=e181]:
+        - heading "Trending now" [level=2] [ref=e182]
+        - img [ref=e186]
+      - navigation "Footer" [ref=e189]:
+        - generic [ref=e190]:
+          - link "Terms of Service" [ref=e191] [cursor=pointer]:
+            - /url: https://x.com/tos
+          - generic [ref=e192]: "|"
+        - generic [ref=e193]:
+          - link "Privacy Policy" [ref=e194] [cursor=pointer]:
+            - /url: https://x.com/privacy
+          - generic [ref=e195]: "|"
+        - generic [ref=e196]:
+          - link "Cookie Policy" [ref=e197] [cursor=pointer]:
+            - /url: https://support.x.com/articles/20170514
+          - generic [ref=e198]: "|"
+        - generic [ref=e199]:
+          - link "Accessibility" [ref=e200] [cursor=pointer]:
+            - /url: https://help.x.com/resources/accessibility
+          - generic [ref=e201]: "|"
+        - generic [ref=e202]:
+          - link "Ads info" [ref=e203] [cursor=pointer]:
+            - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+          - generic [ref=e204]: "|"
+        - button "More" [ref=e205] [cursor=pointer]:
+          - text: More
+          - img [ref=e206]
+        - generic [ref=e208]: © 2026 X Corp.
+  - generic [ref=e211]:
+    - generic [ref=e212]:
+      - generic [ref=e213]: Don't miss what's happening
+      - generic [ref=e214]: People on X are the first to know.
+    - generic [ref=e215]:
+      - link "Log in" [ref=e216] [cursor=pointer]:
+        - /url: /i/jf/onboarding/web?mode=login
+      - link "Sign up" [ref=e217] [cursor=pointer]:
+        - /url: /i/jf/onboarding/web?mode=signup

@@ -1,0 +1,10 @@
+[     973ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[    3918ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[   11189ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/2/guide.json?display_location=web_sidebar&count=5:0
+[   13724ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2064956632053026816&mode=login:0
+[   14013ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[   17859ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[   26149ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[  386340ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[  396505ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0
+[  406534ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.x.com/1.1/graphql/user_flow.json:0

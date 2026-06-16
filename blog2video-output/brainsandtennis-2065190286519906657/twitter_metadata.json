@@ -1,0 +1,16 @@
+{
+  "source_url": "https://x.com/BrainsAndTennis/status/2065190286519906657",
+  "article_url": "https://x.com/i/article/2064956632053026816",
+  "content_type": "x_article",
+  "title": "Building a Good Vertical Agent",
+  "author_name": "Peter Wang",
+  "author_handle": "@BrainsAndTennis",
+  "author_bio": "Founding scientist @fundamental; co-founder and chief science officer @tryshortcutai",
+  "published": "2026-06-11T21:51:00Z",
+  "stats": { "views": "397.5k", "likes": "1106", "reposts": "96", "bookmarks": "3794", "replies": "44" },
+  "method_used": "playwright_mcp",
+  "extraction_notes": "X Article (long-form) — full body behind login wall; fetched via authenticated Playwright MCP session. Body rendered as Draft.js data-block divs; extracted in DOM order. One cover image (images/cover.jpg, 1774x710). All figures in the article are ASCII diagrams captured as fenced code blocks.",
+  "images": [
+    { "file": "images/cover.jpg", "role": "cover", "src": "https://pbs.twimg.com/media/HKkHlLQaYAACMNv?format=jpg&name=large" }
+  ]
+}

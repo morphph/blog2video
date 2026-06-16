@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>blog2video — Tech Architecture & Workflow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* =========================================================================
+   blog2video · architecture explainer
+   visual language = d2「终端霓影 Terminal v2」
+   warm near-black · single acid-green accent on every section · blueprint dots
+   built per Thariq's "Unreasonable Effectiveness of HTML": SVG diagrams,
+   annotated code, color-coded findings, gotchas, dense + readable + self-contained.
+   ========================================================================= */
+:root{
+  --bg:#121212;          /* warm near-black (NOT navy) */
+  --panel:#1C1C1E;       /* floating panel */
+  --panel-2:#171718;
+  --ink:#EDEBE6;         /* off-white primary text */
+  --ink-2:#8A8A85;       /* secondary text */
+  --ink-3:#5b5b57;       /* tertiary / faint */
+  --acid:#CCFF4D;        /* SIGNATURE — present on every section */
+  --cyan:#5FD3E8;        /* data / links  (≤ one accent per region) */
+  --coral:#FF6B5E;       /* warnings / the "other side" */
+  --line:#2A2A2C;        /* 1px keyline */
+  --line-2:#36363a;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --disp:'Bricolage Grotesque','MiSans','PingFang SC','Noto Sans SC',sans-serif;
+  --cjk:'MiSans','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--cjk);
+  font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+  /* blueprint dot grid — 2px dots, 56px pitch, ~4% opacity, fades at edges */
+  background-image:radial-gradient(rgba(204,255,77,.05) 1.1px, transparent 1.1px);
+  background-size:56px 56px;
+  background-position:-8px -8px;
+}
+/* faint top vignette so the dot grid breathes */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(120% 70% at 50% -10%, rgba(204,255,77,.05), transparent 55%),
+    linear-gradient(180deg, rgba(18,18,18,.0) 60%, rgba(18,18,18,.85) 100%);
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
+
+/* ---------- type ---------- */
+.mono{font-family:var(--mono)}
+.kicker{
+  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--acid);display:inline-flex;align-items:center;gap:.6em;
+}
+.kicker::before{content:"";width:22px;height:1px;background:var(--acid);display:inline-block}
+h2.sec{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.02em;line-height:1.02;
+  font-size:clamp(30px,4.4vw,52px);margin:14px 0 6px;
+}
+h2.sec .cjk{font-family:var(--cjk);font-weight:800}
+.lead{color:var(--ink-2);max-width:64ch;font-size:17px}
+a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(95,211,232,.3)}
+a:hover{border-color:var(--cyan)}
+
+/* ---------- nav ---------- */
+header.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(18,18,18,.72);backdrop-filter:blur(12px) saturate(1.1);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:13px 28px;display:flex;align-items:center;gap:18px}
+.brand{font-family:var(--mono);font-weight:700;font-size:14px;letter-spacing:.02em;white-space:nowrap}
+.brand .pmt{color:var(--acid)}
+.brand .cur{display:inline-block;width:8px;height:15px;background:var(--acid);margin-left:3px;transform:translateY(2px);animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.nav-links{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.nav-links a{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);
+  border:0;padding:6px 11px;border-radius:5px;text-transform:uppercase;transition:.18s
+}
+.nav-links a:hover{color:var(--bg);background:var(--acid)}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* ---------- section frame ---------- */
+section{padding:88px 0 22px;position:relative}
+section + section{border-top:1px solid transparent}
+.sec-head{margin-bottom:40px}
+
+/* corner-bracket panel */
+.panel{
+  position:relative;background:linear-gradient(180deg,var(--panel),var(--panel-2));
+  border:1px solid var(--line);border-radius:8px;padding:22px 22px 20px;
+}
+.panel.br::before,.panel.br::after{
+  content:"";position:absolute;width:13px;height:13px;border:2px solid var(--acid);
+}
+.panel.br::before{top:-1px;left:-1px;border-right:0;border-bottom:0;border-radius:8px 0 0 0}
+.panel.br::after{bottom:-1px;right:-1px;border-left:0;border-top:0;border-radius:0 0 8px 0}
+
+/* ---------- HERO ---------- */
+.hero{padding-top:64px;padding-bottom:34px}
+.statline{display:flex;gap:22px;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em;margin-bottom:26px}
+.dot{display:inline-flex;align-items:center;gap:7px}
+.dot i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.dot i.live{background:var(--acid);box-shadow:0 0 0 0 rgba(204,255,77,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(204,255,77,0)}100%{box-shadow:0 0 0 0 rgba(204,255,77,0)}}
+.dot i.c{background:var(--cyan)} .dot i.r{background:var(--coral)}
+h1{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:.98;
+  font-size:clamp(44px,8.2vw,108px);margin:6px 0 4px;
+}
+h1 .l2{display:block;color:var(--acid)}
+h1 .cjk{font-family:var(--cjk);font-weight:800;letter-spacing:-.01em}
+.sub{font-size:clamp(17px,2vw,21px);color:var(--ink-2);max-width:60ch;margin-top:22px}
+.sub b{color:var(--ink);font-weight:600}
+.io{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:30px;font-family:var(--mono);font-size:13px}
+.io .chip{border:1px solid var(--line-2);border-radius:6px;padding:9px 13px;color:var(--ink);background:var(--panel)}
+.io .chip.en{color:var(--ink-2)}
+.io .arrow{color:var(--acid);font-size:18px}
+.io .chip.out{border-color:var(--acid);color:var(--acid);box-shadow:inset 0 0 0 1px rgba(204,255,77,.15)}
+
+/* spec strip */
+.spec{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:46px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.spec .cell{padding:18px 20px;border-right:1px solid var(--line)}
+.spec .cell:last-child{border-right:0}
+.spec .n{font-family:var(--mono);font-weight:700;font-size:clamp(20px,2.6vw,27px);color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.spec .n .u{color:var(--acid);font-size:.62em}
+.spec .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-top:5px}
+@media(max-width:680px){.spec{grid-template-columns:repeat(2,1fr)}.spec .cell:nth-child(2){border-right:0}.spec .cell:nth-child(1),.spec .cell:nth-child(2){border-bottom:1px solid var(--line)}}
+
+/* ---------- ARCHITECTURE diagram ---------- */
+.arch{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.layer{position:relative;display:flex;align-items:stretch;gap:18px;padding:0}
+.layer .tag{
+  flex:0 0 132px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-2);display:flex;align-items:center;justify-content:flex-end;text-align:right;padding-right:4px;
+}
+.layer .body{flex:1;display:flex;gap:14px;flex-wrap:wrap;padding:13px 0}
+.node{
+  flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-radius:7px;
+  padding:14px 16px;position:relative;transition:.2s;
+}
+.node:hover{border-color:var(--line-2);transform:translateY(-2px)}
+.node .nt{font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+.node .nd{font-size:12.5px;color:var(--ink-2);margin-top:5px;line-height:1.5}
+.node.acc{border-color:rgba(204,255,77,.4)}
+.node.acc .nt{color:var(--acid)}
+.node.cyanacc{border-color:rgba(95,211,232,.35)} .node.cyanacc .nt{color:var(--cyan)}
+.node .tagmini{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;position:absolute;top:11px;right:13px}
+.flowarrow{display:flex;justify-content:center;padding:0;color:var(--acid)}
+.flowarrow svg{display:block}
+.layer .rail{position:absolute;left:132px;top:0;bottom:0;width:18px}
+.split-note{font-family:var(--mono);font-size:11px;color:var(--ink-2);text-align:center;padding:3px 0 9px;margin-left:150px}
+.split-note b{color:var(--acid)}
+
+/* ---------- PIPELINE timeline ---------- */
+.tl{position:relative;margin-left:6px;padding-left:0}
+.stage{position:relative;display:grid;grid-template-columns:74px 1fr;gap:22px;padding:0 0 14px}
+.stage .gut{position:relative}
+.stage .num{
+  font-family:var(--mono);font-weight:700;font-size:13px;color:var(--bg);background:var(--acid);
+  width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:2;letter-spacing:-.02em;font-variant-numeric:tabular-nums;
+}
+.stage .num.ph-audio{background:var(--cyan)}
+.stage .num.ph-gate{background:var(--coral)}
+.stage .num.ph-out{background:var(--ink);color:var(--bg)}
+.stage .num.sub{width:42px;height:30px;background:transparent;border:1px dashed var(--line-2);color:var(--acid);font-size:11px}
+.stage .spine{position:absolute;left:21px;top:0;bottom:-14px;width:2px;background:linear-gradient(var(--line-2),var(--line));z-index:1}
+.stage:last-child .spine{display:none}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px 18px;position:relative;transition:.2s
+}
+.card:hover{border-color:var(--line-2)}
+.card .ttl{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--ink);display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.card .ttl .zh{font-family:var(--cjk);font-weight:600;color:var(--ink-2);font-size:13px}
+.card .desc{font-size:13.5px;color:var(--ink-2);margin-top:7px}
+.card .io2{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px;font-family:var(--mono);font-size:11px}
+.io2 .p{padding:4px 9px;border-radius:5px;border:1px solid var(--line);color:var(--ink-2);background:var(--panel-2)}
+.io2 .p .a{color:var(--ink-3)}
+.io2 .p.out{border-color:rgba(204,255,77,.35);color:var(--acid)}
+.io2 .p.outc{border-color:rgba(95,211,232,.3);color:var(--cyan)}
+.card.acc{border-left:2px solid var(--acid)}
+.card.gate{border:1px solid rgba(255,107,94,.4);background:linear-gradient(180deg,rgba(255,107,94,.06),var(--panel))}
+.card.gate .ttl{color:var(--coral)}
+.subwrap{margin-left:0}
+.stage.is-sub .card{background:var(--panel-2)}
+.badge{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;border:1px solid var(--line-2);color:var(--ink-3)}
+.badge.fan{border-color:rgba(204,255,77,.4);color:var(--acid)}
+.badge.human{border-color:rgba(255,107,94,.4);color:var(--coral)}
+
+/* ---------- KERNEL (frame-snap) ---------- */
+.kgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start}
+@media(max-width:880px){.kgrid{grid-template-columns:1fr}}
+pre.code{
+  background:#0d0d0e;border:1px solid var(--line);border-radius:8px;padding:18px 18px;overflow-x:auto;
+  font-family:var(--mono);font-size:12.5px;line-height:1.72;color:var(--ink);
+}
+pre.code .cm{color:var(--ink-3)}
+pre.code .kw{color:var(--cyan)}
+pre.code .ac{color:var(--acid)}
+pre.code .st{color:#c9b88a}
+pre.code .fn{color:var(--ink)}
+.codecap{font-family:var(--mono);font-size:11px;color:var(--ink-2);letter-spacing:.06em;margin:0 0 9px;text-transform:uppercase}
+.codecap .f{color:var(--acid)}
+/* drift visual */
+.drift{margin-top:4px}
+.drift .row{display:grid;grid-template-columns:88px 1fr 76px;gap:12px;align-items:center;margin:14px 0}
+.drift .lbl{font-family:var(--mono);font-size:11px;color:var(--ink-2);letter-spacing:.06em;text-transform:uppercase}
+.drift .track{height:30px;border:1px solid var(--line);border-radius:5px;position:relative;overflow:hidden;background:var(--panel-2)}
+.drift .seg{position:absolute;top:3px;bottom:3px;border-radius:2px}
+.drift .val{font-family:var(--mono);font-size:13px;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.drift .bad .seg{background:repeating-linear-gradient(90deg,rgba(255,107,94,.5) 0 5px,rgba(255,107,94,.18) 5px 10px)}
+.drift .bad .val{color:var(--coral)}
+.drift .ovf{position:absolute;top:-1px;bottom:-1px;background:rgba(255,107,94,.22);border-left:2px solid var(--coral)}
+.drift .good .seg{background:linear-gradient(90deg,rgba(204,255,77,.85),rgba(204,255,77,.45))}
+.drift .good .val{color:var(--acid)}
+.kpoints{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:12px}
+.kpoints li{position:relative;padding-left:24px;font-size:14px;color:var(--ink-2)}
+.kpoints li::before{content:"›";position:absolute;left:4px;top:-1px;color:var(--acid);font-family:var(--mono);font-weight:700}
+.kpoints li b{color:var(--ink)}
+.kpoints li .m{font-family:var(--mono);color:var(--acid);font-weight:700}
+
+/* ---------- RENDER strip ---------- */
+.render-flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin-top:6px}
+.rf{flex:1;min-width:170px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px;position:relative}
+.rf + .rf{margin-left:14px}
+.rf .rk{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acid)}
+.rf .rt{font-family:var(--mono);font-weight:700;font-size:15px;margin-top:6px}
+.rf .rd{font-size:12.5px;color:var(--ink-2);margin-top:6px;line-height:1.5}
+.rf .conn{position:absolute;right:-21px;top:50%;transform:translateY(-50%);z-index:3;color:var(--acid)}
+@media(max-width:760px){.rf+.rf{margin-left:0;margin-top:30px}.rf .conn{right:auto;left:50%;top:auto;bottom:-26px;transform:translateX(-50%) rotate(90deg)}}
+.filmstrip{display:flex;gap:3px;margin-top:11px}
+.filmstrip i{flex:1;height:18px;border-radius:1px;background:var(--line-2);border:1px solid #0c0c0d}
+.filmstrip i:nth-child(odd){background:#26261f}
+
+/* ---------- scene types ---------- */
+.types{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+@media(max-width:820px){.types{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.types{grid-template-columns:1fr}}
+.type{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:13px 14px}
+.type .tn{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--acid)}
+.type .td{font-size:12px;color:var(--ink-2);margin-top:5px;line-height:1.5}
+
+/* ---------- GOTCHAS ---------- */
+.gotchas{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px}
+@media(max-width:760px){.gotchas{grid-template-columns:1fr}}
+.gotcha{background:linear-gradient(180deg,rgba(255,107,94,.05),var(--panel));border:1px solid var(--line);border-left:2px solid var(--coral);border-radius:7px;padding:15px 17px}
+.gotcha .gn{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--coral);display:flex;align-items:center;gap:8px}
+.gotcha .gn .x{font-size:13px}
+.gotcha .gd{font-size:13.5px;color:var(--ink-2);margin-top:7px}
+.gotcha .gd b{color:var(--ink)}
+.gotcha .gd .m{font-family:var(--mono);color:var(--acid);font-size:12.5px}
+
+/* ---------- filemap / footer ---------- */
+.filemap{font-family:var(--mono);font-size:12.5px;line-height:1.95;color:var(--ink-2);background:#0d0d0e;border:1px solid var(--line);border-radius:8px;padding:20px 22px;overflow-x:auto}
+.filemap .d{color:var(--acid)} .filemap .c{color:var(--ink-3)} .filemap .f{color:var(--ink)}
+footer{padding:54px 0 70px;border-top:1px solid var(--line);margin-top:80px}
+.foot-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+.foot-in .small{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);letter-spacing:.04em;line-height:1.8}
+.foot-in .small a{color:var(--ink-2);border:0}
+.foot-in .small a:hover{color:var(--acid)}
+
+/* ---------- reveal animation ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.brand .cur,.dot i.live{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <span class="brand"><span class="pmt">$</span> blog2video<span class="cur"></span></span>
+    <nav class="nav-links">
+      <a href="#overview">概览</a>
+      <a href="#arch">架构</a>
+      <a href="#pipe">流水线</a>
+      <a href="#kernel">时间轴内核</a>
+      <a href="#render">渲染</a>
+      <a href="#gotchas">踩坑</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero wrap" id="overview" style="border:0">
+  <div class="statline rv">
+    <span class="dot"><i class="live"></i> PIPELINE: LIVE</span>
+    <span class="dot"><i class="c"></i> VISUAL ENGINE: d2 终端霓影</span>
+    <span class="dot"><i class="r"></i> FALLBACK: REMOTION</span>
+    <span class="mono">v2026.06 · opus-orchestrated</span>
+  </div>
+  <h1 class="rv" style="transition-delay:.05s">
+    英文技术内容<span class="l2"><span class="cjk">→ 中文竖屏视频。</span></span>
+  </h1>
+  <p class="sub rv" style="transition-delay:.12s">
+    一条 <b>Claude Code</b> 编排的自动化流水线:把英文博客 / PDF / YouTube / X 长文,
+    读成<b>编辑级中文口播</b>,再用 <b>d2「终端霓影」</b>视觉语言逐场景渲成
+    小红书 · 视频号风格的竖屏视频 —— <b>时长是结果,不是输入</b>。
+  </p>
+  <div class="io rv" style="transition-delay:.18s">
+    <span class="chip en">Blog URL</span>
+    <span class="chip en">PDF</span>
+    <span class="chip en">YouTube</span>
+    <span class="chip en">X / Twitter</span>
+    <span class="arrow mono">»</span>
+    <span class="chip mono">/blog2video</span>
+    <span class="arrow mono">»</span>
+    <span class="chip out mono">video_N.mp4 ◍ 1080×1920</span>
+  </div>
+
+  <div class="spec rv" style="transition-delay:.24s">
+    <div class="cell"><div class="n">1080<span class="u">×</span>1920</div><div class="k">竖屏 9:16</div></div>
+    <div class="cell"><div class="n">30<span class="u">fps</span></div><div class="k">帧吸附 · 零漂移</div></div>
+    <div class="cell"><div class="n">~339<span class="u">字/分</span></div><div class="k">MiniMax speech-02-hd</div></div>
+    <div class="cell"><div class="n">#CCFF4D</div><div class="k">每帧在场的签名色</div></div>
+  </div>
+</section>
+
+<!-- ================= ARCHITECTURE ================= -->
+<section class="wrap" id="arch">
+  <div class="sec-head rv">
+    <span class="kicker">System Architecture</span>
+    <h2 class="sec">五层<span class="cjk">指挥舱</span> <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// input → orchestration → engines → render → deliver</span></h2>
+    <p class="lead">每个阶段是一个<b style="color:var(--ink)">无共享上下文</b>的子 agent;视觉与音频两条独立产线在渲染层汇合。</p>
+  </div>
+
+  <div class="arch rv" style="transition-delay:.06s">
+    <!-- L1 input -->
+    <div class="layer">
+      <div class="tag">01 · Input</div>
+      <div class="body">
+        <div class="node"><span class="tagmini">curl / fetch</span><div class="nt">Blog URL</div><div class="nd">直接抓取正文 markdown</div></div>
+        <div class="node"><span class="tagmini">pdfminer</span><div class="nt">PDF</div><div class="nd">本地 / 远程,抽文本</div></div>
+        <div class="node"><span class="tagmini">yt-dlp</span><div class="nt">YouTube</div><div class="nd">英文字幕 → 纯文本</div></div>
+        <div class="node"><span class="tagmini">Playwright</span><div class="nt">X / 长文</div><div class="nd">MCP 抓全文 + 图</div></div>
+      </div>
+    </div>
+    <div class="flowarrow" aria-hidden="true"><svg width="14" height="30" viewBox="0 0 14 30"><line x1="7" y1="0" x2="7" y2="22" stroke="currentColor" stroke-width="1.5"/><path d="M2 20 L7 28 L12 20" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+
+    <!-- L2 orchestration -->
+    <div class="layer">
+      <div class="tag">02 · Orchestrate</div>
+      <div class="body">
+        <div class="node acc" style="flex:2"><span class="tagmini">Claude Code</span><div class="nt">/blog2video · skill</div><div class="nd">编排者:读源 → 派子 agent → 跑脚本 → 投递。逻辑在 <span class="mono">.claude/skills/blog2video/</span></div></div>
+        <div class="node"><span class="tagmini">subagents</span><div class="nt">per-stage prompts</div><div class="nd">memo / script / split / plan / scene-gen,各自独立、可并行</div></div>
+      </div>
+    </div>
+    <div class="split-note mono rv">视觉 &amp; 音频在此<b> 分叉 </b>↓ &nbsp;两条独立产线,渲染层汇合</div>
+
+    <!-- L3 engines split -->
+    <div class="layer">
+      <div class="tag">03 · Engines</div>
+      <div class="body">
+        <div class="node acc"><span class="tagmini">primary</span><div class="nt">d2 / HeyGen hyperframes</div><div class="nd">HTML + GSAP 逐场景动画,自包含、烧字幕。kit 在 <span class="mono">design/d2-kit/</span></div></div>
+        <div class="node"><span class="tagmini">fallback</span><div class="nt">Remotion (React)</div><div class="nd">截图 slide_N.html → 合成,保底链路不动</div></div>
+        <div class="node cyanacc"><span class="tagmini">audio</span><div class="nt">MiniMax TTS</div><div class="nd">speech-02-hd · 自定义音色 · <b style="color:var(--cyan)">raw 不做响度处理</b></div></div>
+      </div>
+    </div>
+    <div class="flowarrow" aria-hidden="true"><svg width="14" height="30" viewBox="0 0 14 30"><line x1="7" y1="0" x2="7" y2="22" stroke="currentColor" stroke-width="1.5"/><path d="M2 20 L7 28 L12 20" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+
+    <!-- L4 render -->
+    <div class="layer">
+      <div class="tag">04 · Render</div>
+      <div class="body">
+        <div class="node acc"><span class="tagmini">render-d2.sh</span><div class="nt">逐场景渲 → concat → 混音</div><div class="nd">串行 · OOM 防护(node22 + 5120MB 堆)· 不 -shortest 保 CTA 尾卡</div></div>
+        <div class="node"><span class="tagmini">artifact</span><div class="nt">video_N.mp4</div><div class="nd">+ 封面 png + script + vtt 字幕</div></div>
+      </div>
+    </div>
+    <div class="flowarrow" aria-hidden="true"><svg width="14" height="30" viewBox="0 0 14 30"><line x1="7" y1="0" x2="7" y2="22" stroke="currentColor" stroke-width="1.5"/><path d="M2 20 L7 28 L12 20" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+
+    <!-- L5 deliver -->
+    <div class="layer">
+      <div class="tag">05 · Deliver</div>
+      <div class="body">
+        <div class="node"><span class="tagmini">rclone</span><div class="nt">→ Google Drive</div><div class="nd">只传 6 个交付件,中间产物全排除</div></div>
+        <div class="node cyanacc"><span class="tagmini">Claudiny</span><div class="nt">自动生成标题/描述/标签</div><div class="nd">适配小红书 + 视频号,排期发布</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PIPELINE ================= -->
+<section class="wrap" id="pipe">
+  <div class="sec-head rv">
+    <span class="kicker">The Workflow</span>
+    <h2 class="sec">写在先,拆在后 <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// write first, split later</span></h2>
+    <p class="lead">叙述稿先为整篇博客写好,<b style="color:var(--ink)">分集决策读完成品再做</b> —— 质量不被切分污染。Hook 必须人工过审才进入生产。</p>
+  </div>
+
+  <div class="tl rv" style="transition-delay:.05s">
+    <!-- 0 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">0</div></div>
+      <div class="card"><div class="ttl">Fetch Source <span class="zh">抓取 + 预处理</span></div>
+        <div class="desc">按输入类型清洗成统一 <span class="mono">source_blog.md</span>;图片入库并补描述。</div>
+        <div class="io2"><span class="p out">source_blog.md</span><span class="p outc">images/</span></div>
+      </div></div>
+    <!-- 1 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">1</div></div>
+      <div class="card acc"><div class="ttl">Insight Memo Writer <span class="zh">编辑备忘</span></div>
+        <div class="desc">通读全文,抽编辑判断、证据、非显而易见的洞察。</div>
+        <div class="io2"><span class="p"><span class="a">in</span> source_blog.md</span><span class="p out">insight_memo.md</span></div>
+      </div></div>
+    <!-- 2 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">2</div></div>
+      <div class="card acc"><div class="ttl">Script Writer <span class="zh">口播稿</span></div>
+        <div class="desc">essay-first 中文叙述,第一人称主播视角,整篇一次成稿(不带 slide 标记)。</div>
+        <div class="io2"><span class="p"><span class="a">in</span> memo + blog</span><span class="p out">narration.md</span></div>
+      </div></div>
+    <!-- 3 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">3</div></div>
+      <div class="card"><div class="ttl">Episode Splitter <span class="zh">分集</span></div>
+        <div class="desc">读完成稿后决定是否拆多支;时长是结果。</div>
+        <div class="io2"><span class="p out">video_plan.json</span><span class="p out">video_N_narration.md</span></div>
+      </div></div>
+    <!-- 3.5 gate -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num ph-gate">3.5</div></div>
+      <div class="card gate"><div class="ttl">Hook Review <span class="badge human">human gate</span></div>
+        <div class="desc">把 Hook 段展示给用户,<b style="color:var(--ink)">明确通过前绝不进入生产</b>。改 Hook = 全部重做,故前置。</div>
+      </div></div>
+    <!-- 4 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">4</div></div>
+      <div class="card"><div class="ttl">Slide Planner <span class="zh">分页</span></div>
+        <div class="desc">把叙述切成下游兼容的 slide 段(带 <span class="mono">[SLIDE]</span> 标记)。</div>
+        <div class="io2"><span class="p out">video_N_script.md</span></div>
+      </div></div>
+    <!-- 5 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num">5</div></div>
+      <div class="card acc"><div class="ttl">Slide HTML Generator <span class="zh">内容蓝本</span></div>
+        <div class="desc">产 <span class="mono">slide_N.html</span> 作 d2 场景的<b style="color:var(--ink)">内容真源</b>(标题/卡片/数字/术语),同时是 Remotion fallback 的截图源。</div>
+        <div class="io2"><span class="p out">slide_N.html</span><span class="p out">cover_photo.html</span><span class="p out">manifest.json</span></div>
+      </div></div>
+    <!-- 5.3 -->
+    <div class="stage is-sub"><div class="gut"><div class="spine"></div><div class="num ph-audio sub">5.3</div></div>
+      <div class="card"><div class="ttl" style="color:var(--cyan)">TTS · tts.mjs <span class="zh">配音 + 对齐锚</span></div>
+        <div class="desc">MiniMax 合成音频,并产出字符↔时间的对齐锚点。</div>
+        <div class="io2"><span class="p outc">audio.mp3</span><span class="p outc">_subtitles.json</span><span class="p outc">_minimax_raw_subtitles.json</span><span class="p outc">_slide_map.json</span></div>
+      </div></div>
+    <!-- 5.5 -->
+    <div class="stage is-sub"><div class="gut"><div class="spine"></div><div class="num sub">5.5</div></div>
+      <div class="card acc"><div class="ttl">build-scenes-data.mjs <span class="zh">帧吸附时间轴</span></div>
+        <div class="desc">slide_map + raw_subtitles → 每场景 start/dur,<b style="color:var(--ink)">边界吸附到帧</b>修音视频漂移,细字幕重定基。</div>
+        <div class="io2"><span class="p out">scenes-data.json</span><span class="p out">briefs/scene-NN.json</span></div>
+      </div></div>
+    <!-- 5.7 -->
+    <div class="stage is-sub"><div class="gut"><div class="spine"></div><div class="num sub">5.7</div></div>
+      <div class="card acc"><div class="ttl">d2 Scene Generator <span class="badge fan">× N fan-out</span></div>
+        <div class="desc">每页一个子 agent:读 brief + slide,用 d2 视觉重排成自包含、烧字幕、绑口播的场景 → <span class="mono">build-scene.mjs</span> 内联打包。自检 lint 0 error + 快照目检。</div>
+        <div class="io2"><span class="p">src/scene-NN.html</span><span class="p out">scenes/scene-NN/index.html</span></div>
+      </div></div>
+    <!-- 6 -->
+    <div class="stage"><div class="gut"><div class="spine"></div><div class="num ph-out">6</div></div>
+      <div class="card acc"><div class="ttl">render-d2.sh <span class="zh">逐场景渲 + 混音</span></div>
+        <div class="desc">串行 hyperframes 渲每个静音 clip → concat 静音整片 → 混入 raw 音频。</div>
+        <div class="io2"><span class="p out">video_N.mp4</span></div>
+      </div></div>
+    <!-- 7 -->
+    <div class="stage"><div class="gut"><div class="num ph-out">7</div></div>
+      <div class="card"><div class="ttl">Deliver <span class="zh">投递</span></div>
+        <div class="desc">rclone → Google Drive → Claudiny 自动生成标题/描述/标签,排期发布。</div>
+        <div class="io2"><span class="p">video_N.mp4</span><span class="p">cover.png</span><span class="p">script.md</span><span class="p">audio.vtt</span><span class="p">source_blog.md</span><span class="p">meta.json</span></div>
+      </div></div>
+  </div>
+</section>
+
+<!-- ================= KERNEL: frame-snap ================= -->
+<section class="wrap" id="kernel">
+  <div class="sec-head rv">
+    <span class="kicker">Inside the Kernel</span>
+    <h2 class="sec">帧吸附:杀掉 0.5 秒漂移 <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// the one snippet worth reading</span></h2>
+    <p class="lead">逐场景渲染时,每个 clip 被渲成 <span class="mono" style="color:var(--ink)">ceil(dur×30)</span> 帧 —— 每段多 0~1 帧,累加到片尾比口播慢约半秒。修法:把边界吸到帧,让每段 dur 都是 1/30 的整数倍。</p>
+  </div>
+
+  <div class="kgrid rv" style="transition-delay:.05s">
+    <div>
+      <div class="codecap">// <span class="f">build-scenes-data.mjs</span> · 帧吸附边界</div>
+<pre class="code"><span class="cm">// 连续边界 = 各场景 start + contentEnd + (contentEnd + CTA)</span>
+<span class="kw">const</span> boundsSec   = [...slides.map(s => s.start), contentEnd, contentEnd + <span class="ac">5</span>];
+<span class="kw">const</span> boundsFrame = boundsSec.map(t => <span class="fn">Math.round</span>(t * <span class="ac">30</span>)); <span class="cm">// ← 吸到帧</span>
+
+<span class="kw">const</span> <span class="fn">startSnap</span> = i =&gt; boundsFrame[i] / <span class="ac">30</span>;
+<span class="kw">const</span> <span class="fn">durSnap</span>   = i =&gt; (boundsFrame[i+<span class="ac">1</span>] - boundsFrame[i]) / <span class="ac">30</span>;
+<span class="cm">// 每段 dur 都是 1/30 整数倍 → ceil(dur*30) 不再膨胀 → 零累积漂移</span></pre>
+      <ul class="kpoints">
+        <li>字幕<b>按未吸附 slide 边界归位</b>(= slide 成员关系),<b>按吸附 start 重定基</b> —— 与音频对齐到 ≤ 半帧。</li>
+        <li>算法复刻自老 <span class="mono" style="color:var(--ink-2)">render-image-video.mjs</span> 的对齐逻辑,只多加一步取整。</li>
+      </ul>
+    </div>
+
+    <div class="panel br">
+      <div class="codecap">// 实测 · loop-engineering 17min 整片</div>
+      <div class="drift">
+        <div class="row bad">
+          <div class="lbl">Phase 1</div>
+          <div class="track"><div class="seg" style="left:0;right:0"></div><div class="ovf" style="right:0;width:10%"></div></div>
+          <div class="val">+0.455s</div>
+        </div>
+        <div class="row good">
+          <div class="lbl">帧吸附后</div>
+          <div class="track"><div class="seg" style="left:0;right:.6%"></div></div>
+          <div class="val">−0.012s</div>
+        </div>
+      </div>
+      <div style="font-family:var(--mono);font-size:11.5px;color:var(--ink-2);margin-top:14px;line-height:1.85;border-top:1px solid var(--line);padding-top:13px">
+        实测帧数 <span style="color:var(--ink)">31208</span> = <span style="color:var(--coral)">ceil 预测</span>(机制坐实)<br>
+        吸附后 <span style="color:var(--acid)">31194 帧</span> = 1039.800s · ≤ 半帧,<b style="color:var(--ink)">不累积</b><br>
+        校验:字幕分配 <span style="color:var(--acid)">215/215</span> 条与手搓版逐条一致
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RENDER ================= -->
+<section class="wrap" id="render">
+  <div class="sec-head rv">
+    <span class="kicker">Render &amp; Compose</span>
+    <h2 class="sec">逐场景,绝不渲整片 <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// per-scene, never the whole film</span></h2>
+    <p class="lead">&gt;240s 的合成会让 8GB 机器 OOM。每段渲成静音 clip,无损 concat,最后一次性混音 —— 视频是主轨,音频放完转静音,保留 CTA 尾卡。</p>
+  </div>
+
+  <div class="render-flow rv" style="transition-delay:.05s">
+    <div class="rf">
+      <div class="rk">step 1 · 串行</div>
+      <div class="rt">hyperframes render</div>
+      <div class="rd">逐场景渲静音 clip,跳过已渲(断点续渲)。<span class="mono">NODE_OPTIONS=--max-old-space-size=5120</span></div>
+      <div class="filmstrip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="conn" aria-hidden="true"><svg width="22" height="14" viewBox="0 0 22 14"><line x1="0" y1="7" x2="16" y2="7" stroke="currentColor" stroke-width="1.5"/><path d="M14 2 L20 7 L14 12" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+    </div>
+    <div class="rf">
+      <div class="rk">step 2 · 无损</div>
+      <div class="rt">concat</div>
+      <div class="rd">按序拼成静音整片(<span class="mono">-c copy</span>),帧对帧无损。637+1447 帧实测精确相加。</div>
+      <div class="filmstrip" aria-hidden="true"><i style="background:#26261f"></i><i style="background:#26261f"></i><i style="background:#26261f"></i><i style="background:#26261f"></i><i style="background:#26261f"></i><i style="background:#26261f"></i></div>
+      <div class="conn" aria-hidden="true"><svg width="22" height="14" viewBox="0 0 22 14"><line x1="0" y1="7" x2="16" y2="7" stroke="currentColor" stroke-width="1.5"/><path d="M14 2 L20 7 L14 12" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+    </div>
+    <div class="rf">
+      <div class="rk">step 3 · 一次</div>
+      <div class="rt">mux audio</div>
+      <div class="rd"><b style="color:var(--ink)">raw 音频,零响度处理</b>。不 <span class="mono">-shortest</span> → 保留 CTA 静音尾卡。</div>
+      <div style="font-family:var(--mono);font-size:11px;color:var(--acid);margin-top:13px;letter-spacing:.04em">→ video_N.mp4 · h264 + aac</div>
+    </div>
+  </div>
+
+  <!-- scene types -->
+  <div style="margin-top:46px" class="rv">
+    <div class="codecap" style="margin-bottom:16px">// d2 场景类型 · <span class="f">每页一个,签名酸性绿每帧在场</span></div>
+    <div class="types">
+      <div class="type"><div class="tn">cover</div><div class="td">多 beat 封面,Hook 原句</div></div>
+      <div class="type"><div class="tn">image</div><div class="td">kicker + 标题 + 编号步骤清单</div></div>
+      <div class="type"><div class="tn">principle</div><div class="td">第一性原理 + 时间线逐格点亮</div></div>
+      <div class="type"><div class="tn">comparison_cards</div><div class="td">双栏对比(acid / cyan)逐栏 build</div></div>
+      <div class="type"><div class="tn">checklist</div><div class="td">编号清单,密集则画布只放关键词</div></div>
+      <div class="type"><div class="tn">quote</div><div class="td">终端卡金句 + count-up 数据</div></div>
+      <div class="type"><div class="tn">summary</div><div class="td">收官 + <span class="mono">$ /goal</span> 命令 CTA</div></div>
+      <div class="type"><div class="tn">cta</div><div class="td">5s 静音尾卡,纯 logo,无字幕</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOTCHAS ================= -->
+<section class="wrap" id="gotchas">
+  <div class="sec-head rv">
+    <span class="kicker">Gotchas · 铁律</span>
+    <h2 class="sec">踩坑换来的不可推翻决策 <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// hard-won, do not override</span></h2>
+    <p class="lead">这些不是偏好,是 Phase 1 用 OOM、漂移、豆腐块换来的约束。改它们之前先看这一节。</p>
+  </div>
+
+  <div class="gotchas rv" style="transition-delay:.05s">
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不渲整片</div><div class="gd">&gt;240s 合成在 <b>8GB</b> 必 OOM。逐场景静音 clip → concat → 一次混音。<b>串行</b>渲,并发叠内存。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不动音频响度</div><div class="gd">MiniMax 输出<b>直接用</b>。绝不 loudnorm / boost / 后处理 —— <span class="m">CLAUDE.md NEVER 条款</span>。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不忘帧吸附</div><div class="gd">场景边界必须 <span class="m">round(t×30)</span>,否则逐 clip 的 ceil 取整累加成片尾 ~0.5s 漂移。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不用错 node</div><div class="gd">必须 <span class="m">node v22.x</span> + <span class="m">5120MB</span> 堆。否则渲染 / 快照 OOM。Apple Silicon 走 brew node@22。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不丢签名色</div><div class="gd">酸性绿 <span class="m">#CCFF4D</span> <b>每一帧</b>在场;除它之外任意一帧<b>最多再一种</b>辅助色。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不放 emoji</div><div class="gd">无 emoji 字体 → 渲成豆腐块。源里的 emoji 一律删或换 mono 符号 <span class="m">→ › ●</span>。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不先拆后写</div><div class="gd"><b>写在先,拆在后</b>。叙述质量不被分集决策污染;时长是结果,不是输入。</div></div>
+    <div class="gotcha"><div class="gn"><span class="x">✕</span> 不漏投递排除</div><div class="gd">只传 6 个交付件;<b>不能用</b> <span class="m">--exclude=*.mp4</span>(会误删 video_N.mp4),靠排除 <span class="m">clips/ renders/</span> 目录。</div></div>
+  </div>
+</section>
+
+<!-- ================= FILE MAP ================= -->
+<section class="wrap">
+  <div class="sec-head rv">
+    <span class="kicker">Where it lives</span>
+    <h2 class="sec">文件地图 <span style="color:var(--ink-3);font-weight:400;font-size:.5em" class="mono">// .claude/skills/blog2video/</span></h2>
+  </div>
+  <div class="filemap rv" style="transition-delay:.05s">
+<span class="d">.claude/skills/blog2video/</span>
+├─ <span class="f">SKILL.md</span>                       <span class="c"># 编排者 playbook · 调度逻辑</span>
+├─ prompts/
+│  ├─ insight-memo-writer.md · script-writer.md · episode-splitter.md · slide-planner.md
+│  ├─ <span class="f">slide-html-generator.md</span>        <span class="c"># stage-5 内容蓝本 (+ Remotion fallback)</span>
+│  └─ <span class="f">scene-generator.md</span>             <span class="c"># stage-5.7 d2 单场景子 agent 作业书</span>
+├─ scripts/
+│  ├─ <span class="f">build-scenes-data.mjs</span>          <span class="c"># 5.5 · 帧吸附时间轴 → scenes-data.json + briefs/</span>
+│  ├─ <span class="f">build-scene.mjs</span>                <span class="c"># scaffold + 内联打包 → scenes/scene-NN/index.html</span>
+│  └─ <span class="f">render-d2.sh</span>                   <span class="c"># 6 · 逐场景渲 → concat → 混音 → video_N.mp4</span>
+└─ design/d2-kit/                   <span class="c"># d2「终端霓影」组件库(随 skill 走)</span>
+   ├─ d2-base.css · d2-motion.js · components.md · <span class="f">DESIGN.md</span>
+   ├─ samples/scene-NN.html         <span class="c"># 7 类黄金范本 few-shot</span>
+   └─ assets/fonts/                 <span class="c"># MiSans + JetBrains Mono(gitignored)</span>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot-in">
+    <div>
+      <div class="brand" style="font-size:15px"><span class="pmt">$</span> blog2video<span class="cur"></span></div>
+      <div class="small" style="margin-top:10px">英文技术内容 → 中文竖屏视频 · 小红书 / 视频号<br>视觉:d2「终端霓影」· 渲染:HeyGen hyperframes · 配音:MiniMax</div>
+    </div>
+    <div class="small" style="text-align:right">
+      架构说明页 · 用 HTML 讲清楚一条流水线<br>
+      灵感:Thariq <a href="https://x.com/trq212/status/2052809885763747935">《The Unreasonable Effectiveness of HTML》</a><br>
+      <span style="color:var(--ink-3)">single self-contained html · open locally · share the link</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* staggered scroll-reveal — one orchestrated load, then on-scroll for the rest */
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  /* hero reveals immediately on load */
+  window.addEventListener('load', function(){
+    document.querySelectorAll('.hero .rv').forEach(function(el){ el.classList.add('in'); });
+  });
+})();
+</script>
+</body>
+</html>

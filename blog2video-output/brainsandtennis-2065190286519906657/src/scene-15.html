@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .row .rt{display:flex;align-items:center;gap:18px}
+[data-composition-id='s15'] .lv{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 16px;letter-spacing:.04em}
+[data-composition-id='s15'] .row .rd2{margin-top:8px;font-weight:500;font-size:27px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s15'] .row .rd2 .ok{color:#ccff4d;font-weight:600}
+[data-composition-id='s15'] .close{margin-top:26px;display:flex;justify-content:center;width:100%}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="86.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[15/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 表格只是例子 · <span class="acc">能迁移到任何领域</span></div>
+      <div class="h1" style="margin-top:14px">你的活儿,回答<span class="em">三个问题</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row q1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="lv">L1</span>什么包进去?</div>
+          <div class="rd">频率曲线最陡的<span class="code">家常操作</span></div>
+          <div class="rd2 r1late">token 极致 · 速度极快 · <span class="ok">会汇报后果</span> —— 砸不成比例的功夫</div>
+        </div></div>
+
+        <div class="row q2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="lv">L2</span>什么推上去?</div>
+          <div class="rd">重要但<span class="code">偶尔才用</span>的能力</div>
+          <div class="rd2 r2late">curated · 英文 · 带坑提醒的规范,<span class="ok">一步取到</span> —— 编码正确路子,不只签名</div>
+        </div></div>
+
+        <div class="row q3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="lv">L3</span>逃生舱是什么?</div>
+          <div class="rd">原始完整素材 + 一份教 Agent 去挖它的 <span class="code">skill</span></div>
+          <div class="rd2 r3late">不需好用 · <span class="ok">能到达 · 够完整 · 有限步数内可被找到</span></div>
+        </div></div>
+      </div>
+
+      <div class="close"><div class="status alert end"><span class="dot"></span>三处放对 → 常用快 · 偶发够 · 罕见卡不死</div></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="1.896" data-track-index="5"><div class="sub-inner">表格只是他的<span class="sub-k">例子</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.903" data-duration="2.95" data-track-index="5"><div class="sub-inner">这套结构,能<span class="sub-k">迁移到任何领域</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.011" data-duration="12.741" data-track-index="5"><div class="sub-inner">那些系统提示词、那些整理好的规范里的压缩,本质上是在编码你的用户、以及他们要做的任务的分布——而在你自己的领域里,这个<span class="sub-k">分布,你比任何人都懂</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.899" data-duration="3.046" data-track-index="5"><div class="sub-inner">所以你的活儿,就是回答<span class="sub-k">三个问题</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.103" data-duration="2.292" data-track-index="5"><div class="sub-inner">第一,什么东西包进 <span class="sub-k">L1</span>?</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.395" data-duration="3.173" data-track-index="5"><div class="sub-inner">是频率曲线最陡那一段、<span class="sub-k">最家常的操作</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.568" data-duration="5.289" data-track-index="5"><div class="sub-inner">把它们做到 token 效率极致、速度极快,还要会<span class="sub-k">汇报后果</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.857" data-duration="5.818" data-track-index="5"><div class="sub-inner">在这儿砸不成比例的功夫,因为 Agent <span class="sub-k">每个任务都在付这个代价</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.843" data-duration="2.677" data-track-index="5"><div class="sub-inner">第二,什么东西推到 <span class="sub-k">L2</span>?</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.52" data-duration="2.884" data-track-index="5"><div class="sub-inner">是那些重要但<span class="sub-k">偶尔才用</span>的能力。</div></div>
+    <div id="sub-11" class="clip sub" data-start="43.404" data-duration="6.797" data-track-index="5"><div class="sub-inner">把它们写成整理好的、英文的、带着各种坑的提醒的规范,<span class="sub-k">一步就能取到</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="50.401" data-duration="4.718" data-track-index="5"><div class="sub-inner">编码进去的是那条正确路子和各种约束,而<span class="sub-k">不只是函数签名</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="55.267" data-duration="2.853" data-track-index="5"><div class="sub-inner">第三,你的逃生舱 <span class="sub-k">L3</span> 是什么?</div></div>
+    <div id="sub-14" class="clip sub" data-start="58.12" data-duration="6.777" data-track-index="5"><div class="sub-inner">是那份原始的、完整的底层素材,再加一份教 Agent <span class="sub-k">去挖它的 skill</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="64.897" data-duration="5.885" data-track-index="5"><div class="sub-inner">它不需要好用,它只需要能到达、足够完整、并且能在<span class="sub-k">有限步数内被找到</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="70.927" data-duration="15.423" data-track-index="5"><div class="sub-inner">这三个位置放对了,你就造出了一个在常用场景上飞快、在偶发场景上够用、在罕见场景上也永远卡不死的 Agent——同时还把上下文保持得足够小,让模型<span class="sub-k">一直保持锋利</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 17.9, {y:18, d:.36, ease:'expo.out'});
+    // Q1
+    D2.enter(tl, R+'.q1', 21.1, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.q1 .rd', 23.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1late', 26.6, {y:10, d:.3, ease:'power1.out'});
+    // Q2
+    D2.enter(tl, R+'.q2', 37.8, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.q2 .rd', 40.5, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2late', 43.4, {y:10, d:.3, ease:'power1.out'});
+    // Q3
+    D2.enter(tl, R+'.q3', 55.3, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.q3 .rd', 58.1, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3late', 64.9, {y:10, d:.3, ease:'power2.out'});
+    // closing takeaway (late)
+    D2.enter(tl, R+'.close', 70.9, {y:14, d:.4, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',1.903],['#sub-3',5.011],['#sub-4',17.899],['#sub-5',21.103],['#sub-6',23.395],['#sub-7',26.568],['#sub-8',31.857],['#sub-9',37.843],['#sub-10',40.52],['#sub-11',43.404],['#sub-12',50.401],['#sub-13',55.267],['#sub-14',58.12],['#sub-15',64.897],['#sub-16',70.927]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 86.5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

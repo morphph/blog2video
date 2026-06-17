@@ -1,1 +1,38 @@
 === d2 render: brainsandtennis-2065190286519906657 · 18 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 20.433  data= 20.433  Δ=+0.000
+  scene-02  clip= 26.700  data= 26.700  Δ=+0.000
+  scene-03  clip= 48.833  data= 48.833  Δ=+0.000
+  scene-04  clip= 12.200  data= 12.200  Δ=+0.000
+  scene-05  clip= 57.400  data= 57.367  Δ=+0.033
+  scene-06  clip= 48.300  data= 48.300  Δ=+0.000
+  scene-07  clip= 84.333  data= 84.333  Δ=+0.000
+  scene-08  clip= 93.933  data= 93.933  Δ=+0.000
+  scene-09  clip=140.233  data=140.233  Δ=+0.000
+  scene-10  clip=111.800  data=111.767  Δ=+0.033
+  scene-11  clip=112.300  data=112.300  Δ=+0.000
+  scene-12  clip= 63.133  data= 63.133  Δ=+0.000
+  scene-13  clip=138.533  data=138.533  Δ=+0.000
+  scene-14  clip= 77.500  data= 77.467  Δ=+0.033
+  scene-15  clip= 86.500  data= 86.500  Δ=+0.000
+  scene-16  clip= 87.100  data= 87.067  Δ=+0.033
+  scene-17  clip= 59.100  data= 59.100  Δ=+0.000
+  scene-18  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 1273.333s
+=== concat → silent master ===
+[out#0/mp4 @ 0x6000001743c0] video:64799KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.234349%
+frame=38200 fps=0.0 q=-1.0 Lsize=   64951KiB time=00:21:13.33 bitrate= 417.9kbits/s speed=7.35e+03x elapsed=0:00:00.17    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=38200 fps=2013 q=-1.0 Lsize=   86613KiB time=00:21:07.34 bitrate= 559.9kbits/s speed=66.8x elapsed=0:00:18.97    
+[aac @ 0x14c710cc0] Qavg: 65514.785
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=1273.333333
+audio_dur=1267.344000
+-rw-r--r--@ 1 yufanp  staff  88691446 17 Jun 10:14 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1.mp4

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有(summary 收官)—— */
+[data-composition-id='s17'] .triad{display:flex;gap:18px;width:100%;margin-top:34px}
+[data-composition-id='s17'] .lc{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 18px;text-align:center}
+[data-composition-id='s17'] .lc .lk{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:40px;color:#ccff4d;line-height:1;letter-spacing:.02em}
+[data-composition-id='s17'] .lc .lt{margin-top:14px;font-weight:600;font-size:30px;color:#edebe6;line-height:1.3}
+[data-composition-id='s17'] .lc .ld{margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s17'] .lc.mid .lk{color:#5fd3e8}
+[data-composition-id='s17'] .cmd{font-family:'JetBrains Mono',monospace;font-size:36px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s17'] .cmd .p{color:#ccff4d;margin-right:14px}
+[data-composition-id='s17'] .cmd .q{color:#ccff4d}
+[data-composition-id='s17'] .cmd .cm{color:#8a8a85;font-size:27px;margin-left:14px}
+[data-composition-id='s17'] .slogan{margin-top:30px;font-weight:700;font-size:42px;color:#edebe6;line-height:1.4}
+[data-composition-id='s17'] .signoff{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="59.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 收官<span class="b-cur"></span></div>
+      <div class="idx">[17/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 回过头看这<span class="acc">一整套</span></div>
+      <div class="h1 xl" style="margin-top:18px">Agent 的上限,<br>不在它能<span class="em">调多少工具</span></div>
+      <div class="lead s-key" style="margin-top:24px">而在你有没有把<span class="em">任务分布</span>,像 <span class="em">CPU 缓存</span>一样分层压进 <span class="dim">context</span></div>
+
+      <div class="triad">
+        <div class="lc hot"><span class="lk">L1</span><div class="lt">热的常驻</div><div class="ld">always-on</div></div>
+        <div class="lc mid"><span class="lk">L2</span><div class="lt">温的按需</div><div class="ld">on-demand</div></div>
+        <div class="lc cold"><span class="lk">L3</span><div class="lt">冷的逃生舱</div><div class="ld">grep-able</div></div>
+      </div>
+
+      <div class="cmd s-cmd" style="margin-top:34px"><span class="p">$</span>别急着加工具,先回答:<span class="q">L1 / L2 / L3</span>各放什么<span class="cur sm cblink"></span></div>
+
+      <div class="slogan s-slogan">AI 世界很吵,<span class="hl"><span class="bar"></span><span class="tx" style="font-size:42px">精读一篇,胜过刷一百条</span></span></div>
+      <div class="endchip signoff s-signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.83" data-track-index="5"><div class="sub-inner">回过头看这一整套，你会发现它真正颠覆的不是"工具数量"这个<span class="sub-k">表面问题</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.988" data-duration="4.753" data-track-index="5"><div class="sub-inner">别人忙着给 Agent 加到三十个工具，真正赢的那个<span class="sub-k">只给了一个</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.884" data-duration="13.762" data-track-index="5"><div class="sub-inner">但他赢，不是因为工具少,而是因为他想清楚了一件事：Agent 的上限,不在它能调多少工具,而在你有没有把任务分布,像 CPU 缓存一样,<span class="sub-k">分层压进它的上下文里</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="26.816" data-duration="6.553" data-track-index="5"><div class="sub-inner">热的常驻在 L1，温的在 L2 按需取，冷的留一条能 <span class="sub-k">grep 到的逃生舱</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="33.512" data-duration="5.263" data-track-index="5"><div class="sub-inner">一个好的 Agent，就是它所处理任务分布的<span class="sub-k">一次忠实压缩</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="38.775" data-duration="2.903" data-track-index="5"><div class="sub-inner">这句话，到这里，<span class="sub-k">应该不再抽象了</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="41.828" data-duration="10.43" data-track-index="5"><div class="sub-inner">如果你也在造自己的 Agent，别急着往里加工具，先去回答那三个问题——你的 <span class="sub-k">L1、L2、L3，各放什么</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="52.412" data-duration="4.217" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="56.629" data-duration="1.476" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:22, d:.46, ease:'expo.out'});
+    D2.enter(tl, R+'.s-key', 13.2, {y:18, d:.42, ease:'power3.out'});
+    D2.stagger(tl, R+'.lc', 26.9, {y:20, d:.34, step:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.s-cmd', 42.0, {x:-16, d:.36, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 43.0, 12);
+    D2.enter(tl, R+'.s-slogan', 52.5, {y:16, d:.4, ease:'power3.out'});
+    D2.sweep(tl, R, '.s-slogan .hl', 53.2);
+    D2.enter(tl, R+'.s-signoff', 56.7, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.988],['#sub-3',12.884],['#sub-4',26.816],['#sub-5',33.512],['#sub-6',38.775],['#sub-7',41.828],['#sub-8',52.412],['#sub-9',56.629]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 59.1, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

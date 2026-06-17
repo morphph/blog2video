@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-18(cta 尾卡)特有 —— */
+[data-composition-id='s18'] .endcard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+[data-composition-id='s18'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:188px;line-height:1;color:#edebe6;letter-spacing:.01em;display:flex;align-items:flex-end;justify-content:center}
+[data-composition-id='s18'] .logo .ai{color:#ccff4d}
+[data-composition-id='s18'] .logo .cur{width:46px;height:128px;margin-left:22px;vertical-align:baseline;align-self:flex-end;margin-bottom:14px}
+[data-composition-id='s18'] .sublabel{margin-top:54px;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:42px;color:#8a8a85;letter-spacing:.12em}
+[data-composition-id='s18'] .sublabel .done{color:#edebe6;font-weight:700}
+[data-composition-id='s18'] .rule{margin-top:46px;width:120px;height:3px;background:#ccff4d;transform-origin:center}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s18" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="content">
+      <div class="endcard">
+        <div class="logo">精读<span class="ai">AI</span><span class="cur"></span></div>
+        <div class="sublabel">构建好 Agent&nbsp;·&nbsp;<span class="done">完</span></div>
+        <div class="rule"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s18'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.6,ease:'power1.out'},.02);
+    D2.enter(tl, R+'.logo', .35, {y:24, d:.55, ease:'expo.out'});
+    D2.enter(tl, R+'.sublabel', 1.15, {y:14, d:.4, ease:'power3.out'});
+    tl.fromTo(R+'.rule', {scaleX:0}, {scaleX:1, duration:.4, ease:'power3.out'}, 1.55);
+    D2.blink(tl, R+'.logo .cur', 1.4, 4);
+    D2.breath(tl, R+'.content', 5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s18'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,6 +1,10 @@
 # /blog2video-continue — Continue pipeline from narration to final video
 
-从已有的 `narration.md` 开始，执行剩余 pipeline 步骤：分集 → slide plan → slide HTML → 渲染 → 投递。
+从已有的 `narration.md` 开始，执行剩余 pipeline 步骤：分集 → slide plan → slide HTML（d2 内容蓝本 + d2 封面）→ TTS → d2 场景 → 渲染 → 投递。
+
+> **视觉引擎 = d2「终端霓影」（主链路）。Remotion 截图链路为 fallback。** 渲染段执行细节 defer 到
+> `.claude/skills/blog2video/SKILL.md` §「Orchestrator 调度逻辑」(d2 path) 与 `prompts/scene-generator.md`。
+> 每条 shell 命令前缀 `export PATH="/opt/homebrew/opt/node@22/bin:$PATH"`（node 必须 v22.x）。
 
 ## 使用方式
 ```
@@ -108,17 +112,32 @@
 读取 `.claude/skills/blog2video/prompts/slide-html-generator.md` 获取完整 prompt。
 
 subagent 输出：
-- `<output-dir>/slide_N.html` — 每张 slide 的自包含 HTML
+- `<output-dir>/slide_N.html` — 每张 slide 的自包含 HTML（d2 内容蓝本 + Remotion fallback 截图源）
+- `<output-dir>/cover_photo.html` — **d2 终端霓影风封面**（下游 shoot-cover.mjs 截成 `video_N_cover_photo.png`）
 - `<output-dir>/manifest.json` — slide 清单和时间信息
 
 **Gate 2 (Manifest)**: 验证 slide 数量一致、HTML 文件存在。
 
-### Step 4: 渲染视频
+### Step 4: TTS → d2 场景 → 渲染 + 封面（d2 path，主链路）
+
+对每个视频 N（细节见 SKILL.md d2 path / `prompts/scene-generator.md` / `scripts/render-d2.sh`）：
 
 ```bash
-cd blog2video-remotion && npm install 2>/dev/null
-node scripts/render-all.mjs ../<output-dir>/
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # node 必须 v22.x
+OUT=<output-dir>
+
+# TTS → 音频 + 字幕 + slide_map + raw_subtitles（音频 raw，不响度处理）
+( cd blog2video-remotion && npm run tts -- "../$OUT/video_${N}_script.md" "../$OUT/video_${N}_audio.mp3" )
+# 帧吸附时间轴 → scenes-data.json + briefs/
+node .claude/skills/blog2video/scripts/build-scenes-data.mjs "$OUT" "$N"
+# d2 Scene Generator ×N（每场景一个 scene-generator.md 子 agent，自检 lint 0 error + 快照目检）
+#   → src/scene-NN.html，再 build-scene.mjs all → scenes/scene-NN/index.html
+node .claude/skills/blog2video/scripts/build-scene.mjs "$OUT" all
+# 渲染（逐场景串行 + OOM 防护）→ concat → 混音 → video_N.mp4；末尾自动截 d2 封面 → video_N_cover_photo.png
+.claude/skills/blog2video/scripts/render-d2.sh "$OUT" "$N"
 ```
+
+> **Remotion fallback（仅 d2 不可用时）**：`node blog2video-remotion/scripts/render-image-video.mjs ../<output-dir>/`。默认不走。
 
 ### Step 5: 输出汇总
 
@@ -128,9 +147,10 @@ node scripts/render-all.mjs ../<output-dir>/
 ├── video_plan.json          ← 视频计划
 ├── video_1_narration.md     ← 视频1叙述稿
 ├── video_1_script.md        ← 视频1口播稿（带 Slide 标记）
-├── slide_1.html … slide_N.html
+├── slide_1.html … slide_N.html / cover_photo.html
 ├── video_1_audio.mp3
-├── video_1.mp4
+├── video_1.mp4              ← ★最终交付片
+├── video_1_cover_photo.png  ← ★交付封面
 └── ...
 ```
 

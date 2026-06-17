@@ -178,51 +178,108 @@ font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', san
 - 不要添加 bottom_caption 或任何底部金句——TTS 字幕会占用这个区域，两层文字会互相干扰
 - 金句/记忆锚点如果需要视觉强调，放在 slide 主体内容区域中，用卡片或高亮色块的形式呈现
 
-## 封面图（Cover Photo）
+## 封面图（Cover Photo）—— d2「终端霓影」风格（2026-06 起）
 
-除了各 Slide 外，你还必须生成一张 `cover_photo.html`，用于视频封面缩略图和片头帧。
+除了各 Slide 外，你还必须生成一张 `cover_photo.html`（视频封面缩略图 / 片头帧）。
 
-### 封面图布局
+> ⚠️ **封面用 d2「终端霓影」视觉语言**，与正片统一——**不是**上面 slide 蓝本那套暗紫科技风。
+> 它是一张 **静态** HTML（无动画/无 GSAP/无字幕带），下游由 `scripts/shoot-cover.mjs`
+> 用 puppeteer 截成交付封面 `video_N_cover_photo.png`（1080×1920，投递的唯一 PNG）。
+> working 参考：`blog2video-output/brainsandtennis-2065190286519906657/cover_d2.html`。
 
+### 终端霓影封面铁律
+
+- 背景 `#121212`，正文色 `#edebe6`，**只用 MiSans + JetBrains Mono**（字体走 `assets/fonts/` symlink，模板里已写好 `@font-face`）。
+- **签名色酸性绿 `#ccff4d` 每一帧都在场**（kicker 的 `//`、标题 `.em` 高亮、来源点、光标其一即可）。
+- 除签名绿外，**任意一帧最多再出现一种辅助色**：电青 `#5fd3e8`（数据/次要 chip）。**禁紫色、禁红橙、禁多色渐变、禁 >8px 圆角、禁阴影。**
+- 大标题 MiSans Heavy（weight 900），标签/编号/命令/来源用 JetBrains Mono。
+- 蓝图点阵 `.grid` 铺底；暗底禁全屏线性渐变（用 radial mask）。
+- **禁 emoji**（无 emoji 字体会渲成豆腐块）。
+
+### 参数化模板（复制后填空——所有 `<...>` 都要替换成本视频的实际值）
+
+```html
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<style>
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.05;
+  -webkit-mask-image:radial-gradient(ellipse 80% 62% at 50% 44%,#000 50%,rgba(0,0,0,0) 100%)}
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.cover{position:absolute;inset:0;padding:300px 72px 280px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:32px;color:#8a8a85;letter-spacing:.06em;margin-bottom:34px}
+.kicker .acc{color:#ccff4d}
+.h1{font-weight:900;font-size:96px;line-height:1.14;color:#edebe6;letter-spacing:-.01em}
+.h1 .em{color:#ccff4d}
+.stats{display:flex;gap:22px;width:100%;margin-top:64px}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 26px}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:96px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:16px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.32}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan{border-color:rgba(95,211,232,.45)} .stat.cyan .num{color:#5fd3e8}
+.srcrow{margin-top:64px;display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 30px}
+.srcrow .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+.srcrow .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.02em}
+.srcrow .lab .dim{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · {SERIES_UPPER}<span class="b-cur"></span></div>
+      <div class="handle">{SOURCE_HANDLE_OR_EMPTY}</div>
+    </div>
+    <div class="cover">
+      <div class="kicker"><span class="acc">//</span> {KICKER_EN}</div>
+      <div class="h1">{TITLE_LINE_1}<br>{TITLE_LINE_2 含 <span class="em">高亮关键词</span>}</div>
+      <!-- 可选 hook 数据 chips：有干净数字才放，没有就整块删掉（见降级规则） -->
+      <div class="stats">
+        <div class="stat key"><div class="num">{NUM_1}</div><div class="lab">{LAB_1}</div></div>
+        <div class="stat cyan"><div class="num">{NUM_2}</div><div class="lab">{LAB_2}</div></div>
+      </div>
+      <div class="srcrow">
+        <span class="dot"></span>
+        <span class="lab"><span class="dim">src ·</span> {SOURCE_TITLE_EN}</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 ```
-┌──────────────────────────┐
-│                          │
-│    精读AI · [topic]       │  ← 系列标签: 28px, #8B5CF6, letter-spacing 2px
-│                          │
-│    为什么你不需要          │  ← 主标题: 90-96px, weight 900
-│    多Agent架构？          │     居中, 2-3行, ≤15字/行
-│                          │     关键词用 #EF4444 或 #F59E0B 高亮
-│  ┌──────────────────────┐│
-│  │Anthropic《Blog Title》││  ← 来源标签: 圆角胶囊, #1A1A2E 背景, #B0B0CC 文字
-│  └──────────────────────┘│
-│                          │
-└──────────────────────────┘
-```
 
-### 封面图规格
+### 参数来源 + 内容规则
 
-- 尺寸：1080×1920，背景 `#0D0D1A`（与 slide 一致）
-- 布局：`padding: 100px 72px 400px 72px`、`justify-content: center; align-items: center`，底部大 padding 使内容视觉重心偏上
-- **系列标签**：`精读AI · [topic]`，30px，`#8B5CF6`，letter-spacing 3px，从口播稿/video plan 提取 topic
-- **主标题**：从 `video_plan.json` 的 `title_zh` 或口播稿 Hook 提炼，90-96px，weight 900，line-height 1.2
-- **来源标签**：英文博客原标题，圆角胶囊样式（`#1A1A30` 背景 + 22px、`#6B6B80` 文字，字体比系列标签更小更淡）
-
-### 主标题内容规则
-
-- 必须是疑问句 **或** 包含引号括起来的反直觉短语
-- 每行 ≤15 字，最多 3 行
-- 用红色（`#EF4444`）或橙色（`#F59E0B`）高亮最有冲击力的词/短语
-- 承诺具体价值，不要笼统概括
+- **`{SERIES_UPPER}`（topbar 系列名）**：`精读AI · <系列名大写>`。系列名取 `video_plan.json` 的 `blog_metadata.title_zh` 主题词 / topic，转成简短大写（如「构建好 AGENT」「LOOP ENGINEERING」）。
+- **`{SOURCE_HANDLE_OR_EMPTY}`（topbar 右）**：可选。有作者 handle/短域名就放（如 `@BrainsAndTennis`、`anthropic.com`）；**没有干净来源就留空**（`<div class="handle"></div>`），不要硬编。
+- **`{KICKER_EN}`**：mono 小标签，1 句全大写英文角度词（如 `THE REAL QUESTION`、`FIRST PRINCIPLES`）。可选，没有合适的就删掉整个 `.kicker`。
+- **主标题 `{TITLE_LINE_*}`**：从 `video_plan.json` 的 `title_zh`（或口播稿 Hook 第一句）提炼。
+  - 必须是 **疑问句** 或 含 **反直觉/具体短语**；保留 Hook 的具体冲击力（"克隆 claude.ai""翻车"这类），不要泛化成"AI 又翻车了"。
+  - 每行 ≤15 字，最多 3 行；用 `<span class="em">` 把最有冲击力的词/短语高亮成 **酸性绿**（不是红/橙）。
+- **`{SOURCE_TITLE_EN}`（来源胶囊）**：英文博客 / 推文原标题（`blog_metadata.title`），照抄不翻译。
+- **hook 数据 chips（`.stats`）—— 可选，必须优雅降级**：
+  - 仅当口播稿里有 **干净、可信、具冲击力的数字**（如 `1` 个工具、`3/4` 家基金、`49%→74%`）才放 1–2 个 chip：第一个用 `.stat.key`（酸性绿），第二个用 `.stat.cyan`（电青，**这是允许的那一种辅助色**）。
+  - **没有干净数字就把整个 `<div class="stats">…</div>` 删掉**——绝不硬塞凑数或编造。只放 1 个就只留 `.stat.key`。
+  - chip 的 `.num` 短（≤4 字符），`.lab` 两行说明（≤14 字/行）。
 
 ### 封面图输出
 
-- 文件名：`cover_photo.html`，放在与 slide 文件同目录
-- 添加到 manifest.json 中，格式：
-  ```json
-  {
-    "cover_photo": "cover_photo.html"
-  }
-  ```
+- 文件名：`cover_photo.html`，放在与 slide 文件同目录（多集时命名 `video_N_cover.html`，`shoot-cover.mjs` 会优先用它）。
+- 添加到 manifest.json：`{ "cover_photo": "cover_photo.html" }`
+- **不要自己截图**——下游 `render-d2.sh`（或独立跑 `node .claude/skills/blog2video/scripts/shoot-cover.mjs <OUT> N`）会把它截成 `video_N_cover_photo.png`。
 
 ## 执行步骤
 

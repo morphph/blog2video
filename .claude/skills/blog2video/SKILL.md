@@ -29,7 +29,7 @@ Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → sourc
 | 2 | Script Writer | `source_blog.md` + `insight_memo.md` | `narration.md` |
 | 3 | Episode Splitter | `narration.md` + `insight_memo.md` + `source_blog.md` | `video_plan.json` + `video_N_narration.md` |
 | 4 | Slide Planner | `video_N_narration.md` + `video_plan.json` | `video_N_script.md` |
-| 5 | Slide HTML Generator | `video_N_script.md` | `slide_N.html`(d2 内容蓝本 + Remotion fallback 截图源) + `cover_photo.html` + `manifest.json` |
+| 5 | Slide HTML Generator | `video_N_script.md` | `slide_N.html`(d2 内容蓝本 + Remotion fallback 截图源) + `cover_photo.html`(**d2 终端霓影风**) + `manifest.json` |
 | 5.3 | TTS（非 subagent，`tts.mjs`） | `video_N_script.md` | `video_N_audio.mp3` + `_subtitles.json` + `_minimax_raw_subtitles.json` + `_slide_map.json` |
 | 5.5 | build-scenes-data（非 subagent，`scripts/build-scenes-data.mjs`） | slide_map + raw_subtitles + subtitles | `scenes-data.json` + `briefs/scene-NN.json`（帧吸附时间轴） |
 | 5.7 | **d2 Scene Generator ×N**（`prompts/scene-generator.md`，每场景一个 subagent） | `briefs/scene-NN.json` + `slide_N.html` + kit | `src/scene-NN.html` → `scenes/scene-NN/index.html`（自包含 d2 场景） |
@@ -54,7 +54,8 @@ Twitter/X   → [Step 0: Playwright MCP 前置检查 → 抓取全文] → sourc
 ├── scripts/
 │   ├── build-scenes-data.mjs     ← Stage 5.5：slide_map+raw_subtitles → 帧吸附时间轴 scenes-data.json + briefs/
 │   ├── build-scene.mjs           ← scaffold + 内联打包 src/scene-NN.html → scenes/scene-NN/index.html
-│   └── render-d2.sh              ← Stage 6：逐场景 hyperframes render → concat → 混音 → video_N.mp4
+│   ├── render-d2.sh              ← Stage 6：逐场景 hyperframes render → concat → 混音 → video_N.mp4(末尾自动截封面)
+│   └── shoot-cover.mjs           ← Stage 6.5：puppeteer 截 cover_photo.html → video_N_cover_photo.png(兜底 assets symlink)
 ├── examples/
 │   ├── example-narration-v1.md   ← 参考叙述稿（essay-first，无 slide 标记）
 │   ├── example-script-v1.md      ← 参考口播稿（带 slide 标记）
@@ -115,6 +116,9 @@ blog2video-remotion/              ← 独立 Remotion 项目
 6. **渲染（render-d2.sh）**：`.claude/skills/blog2video/scripts/render-d2.sh <OUT> N`
    → 逐场景 hyperframes render（串行，OOM 防护）→ concat 静音整片 → 混入 raw 音频（不响度处理/不 -shortest）
    → video_N.mp4 + Gate 4 (PostRender) 核验
+   · **封面（脚本末尾自动）**：render-d2.sh 收尾会调 `shoot-cover.mjs` 把 stage-5 的 d2 `cover_photo.html`
+     截成交付封面 `video_N_cover_photo.png`（1080×1920，非致命；assets symlink 由它兜底）。
+     单独补截：`node .claude/skills/blog2video/scripts/shoot-cover.mjs <OUT> N`
    · **Remotion fallback**：若 d2 不可用，走 `blog2video-remotion/scripts/render-image-video.mjs`（截图 slide_N.html）
 7. 输出所有文件路径
 ```
@@ -145,6 +149,7 @@ blog2video-output/
     ├── clips/scene-NN.mp4            ← 逐场景静音 clip（*.mp4 gitignored，不投递）
     ├── renders/<slug>-silent.mp4     ← concat 静音整片（不投递）
     ├── video_1.mp4                   ← ★最终交付片（混音后）
+    ├── video_1_cover_photo.png       ← ★交付封面（shoot-cover.mjs 截 cover_photo.html;投递的唯一 PNG）
     └── ...
 ```
 

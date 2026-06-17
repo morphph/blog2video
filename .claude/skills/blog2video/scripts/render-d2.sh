@@ -22,6 +22,8 @@
 #     前置/缺件检查用显式 `|| exit 1`。
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # node 必须 v22.x,否则渲染 OOM
 
+SCRIPT_DIR="${0:A:h}"               # 本脚本绝对目录(在 cd 进 OUT 之前抓,供调用 sibling 脚本 shoot-cover.mjs)
+
 OUT="${1:?usage: render-d2.sh <output-dir> [video-number]}"
 VN="${2:-1}"
 OUT="$(cd "$OUT" && pwd)"          # 转绝对路径
@@ -87,3 +89,8 @@ ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,widt
 echo "audio_dur=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$AUDIO")"
 ls -la "video_${VN}.mp4"
 echo "✓ 交付片: $OUT/video_${VN}.mp4"
+
+# 6) 截 d2 终端霓影封面(cover_photo.html → video_N_cover_photo.png)。非致命:封面只是缩略图,失败不该废掉整片。
+#    shoot-cover.mjs 自己兜底 assets symlink(字体路径靠它),所以即使 build-scene 没跑过也能截。
+echo "=== cover screenshot → video_${VN}_cover_photo.png ==="
+node "$SCRIPT_DIR/shoot-cover.mjs" "$OUT" "$VN" || echo "⚠ 封面截图失败(非致命);可单独补: node $SCRIPT_DIR/shoot-cover.mjs $OUT $VN"

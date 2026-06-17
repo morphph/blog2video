@@ -1,6 +1,10 @@
-# /blog2video-slides — Re-generate slide data
+# /blog2video-slides — Re-generate slide data（Remotion fallback 专用）
 
-Re-generate Remotion slide data JSON from an existing narration script.
+Re-generate Remotion slide data JSON（`video_N_config.json`）from an existing narration script.
+
+> ⚠️ **此命令属于 Remotion fallback 链路。** 主链路 d2「终端霓影」不用 `video_N_config.json`——
+> d2 的等价「重生成 slide 数据」是 `build-scenes-data.mjs`（帧吸附时间轴 + briefs/）+ `prompts/scene-generator.md`（逐场景重排）。
+> 只有在走 Remotion fallback 渲染时才需要本命令。d2 重渲见 `/blog2video-render`（主链路块）与 SKILL.md d2 path。
 
 ## 使用方式
 ```

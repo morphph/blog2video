@@ -1,75 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1080">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      width: 1080px;
-      height: 1920px;
-      background: #0D0D1A;
-      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
-      color: #FFFFFF;
-      overflow: hidden;
-    }
-    .slide {
-      width: 100%;
-      height: 100%;
-      padding: 100px 72px 400px 72px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-    .glow {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 900px;
-      height: 700px;
-      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(13, 13, 26, 0) 70%);
-      pointer-events: none;
-    }
-    .series-label {
-      font-size: 30px;
-      color: #8B5CF6;
-      letter-spacing: 3px;
-      font-weight: 700;
-      margin-bottom: 64px;
-      position: relative;
-    }
-    .title {
-      font-size: 94px;
-      font-weight: 900;
-      line-height: 1.22;
-      position: relative;
-      margin-bottom: 80px;
-    }
-    .hl-red { color: #EF4444; }
-    .hl-amber { color: #F59E0B; }
-    .source-pill {
-      background: #1A1A30;
-      border-radius: 999px;
-      padding: 18px 40px;
-      font-size: 22px;
-      color: #6B6B80;
-      position: relative;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<style>
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.05;
+  -webkit-mask-image:radial-gradient(ellipse 80% 62% at 50% 44%,#000 50%,rgba(0,0,0,0) 100%)}
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.cover{position:absolute;inset:0;padding:300px 72px 280px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:32px;color:#8a8a85;letter-spacing:.06em;margin-bottom:34px}
+.kicker .acc{color:#ccff4d}
+.h1{font-weight:900;font-size:96px;line-height:1.14;color:#edebe6;letter-spacing:-.01em}
+.h1 .em{color:#ccff4d}
+.stats{display:flex;gap:22px;width:100%;margin-top:64px}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 26px}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:96px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:16px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.32}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan{border-color:rgba(95,211,232,.45)} .stat.cyan .num{color:#5fd3e8}
+.srcrow{margin-top:64px;display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 30px}
+.srcrow .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+.srcrow .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.02em}
+.srcrow .lab .dim{color:#8a8a85}
+</style>
 </head>
 <body>
-  <div class="slide">
-    <div class="glow"></div>
-    <div class="series-label">精读AI · 构建好 Agent</div>
-    <div class="title">
-      谁都能写 Agent，<br>
-      好的<span class="hl-amber">为什么这么少</span>？
+  <div class="stage">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="handle">@BrainsAndTennis</div>
     </div>
-    <div class="source-pill">Building a Good Vertical Agent</div>
+    <div class="cover">
+      <div class="kicker"><span class="acc">//</span> THE REAL QUESTION</div>
+      <div class="h1">谁都能写 Agent，<br>好的<span class="em">为什么这么少</span>？</div>
+      <div class="stats">
+        <div class="stat key"><div class="num">1</div><div class="lab">它只给模型 1 个工具<br>—— 别人塞了 30 个</div></div>
+        <div class="stat cyan"><div class="num">3<span style="font-size:.62em">/4</span></div><div class="lab">全球最大的对冲基金<br>三家在用它</div></div>
+      </div>
+      <div class="srcrow">
+        <span class="dot"></span>
+        <span class="lab"><span class="dim">src ·</span> Building a Good Vertical Agent</span>
+      </div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 100px 72px 400px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(13, 13, 26, 0) 70%);
+      pointer-events: none;
+    }
+    .series-label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 64px;
+      position: relative;
+    }
+    .title {
+      font-size: 94px;
+      font-weight: 900;
+      line-height: 1.22;
+      position: relative;
+      margin-bottom: 80px;
+    }
+    .hl-red { color: #EF4444; }
+    .hl-amber { color: #F59E0B; }
+    .source-pill {
+      background: #1A1A30;
+      border-radius: 999px;
+      padding: 18px 40px;
+      font-size: 22px;
+      color: #6B6B80;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="series-label">精读AI · 构建好 Agent</div>
+    <div class="title">
+      谁都能写 Agent，<br>
+      好的<span class="hl-amber">为什么这么少</span>？
+    </div>
+    <div class="source-pill">Building a Good Vertical Agent</div>
+  </div>
+</body>
+</html>

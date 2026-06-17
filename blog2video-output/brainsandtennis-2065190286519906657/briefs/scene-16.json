@@ -1,0 +1,100 @@
+{
+ "scene": 16,
+ "id": "s16",
+ "type": "principle",
+ "dataDuration": 87.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_16.html",
+ "topbarIndex": "[16/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.015,
+   "localDuration": 3.987,
+   "text": "最后一个观察，我觉得是全篇最值得记住的判断。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.155,
+   "localDuration": 5.566,
+   "text": "什么东西算 L1，并不是固定的，它会随着模型变强而漂移。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.879,
+   "localDuration": 6.52,
+   "text": "早年那些弱模型，需要小小的、单一用途的工具，每件事都得给它掰开揉碎。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.399,
+   "localDuration": 8.821,
+   "text": "今天的模型，能一口吞下一份更大的 L2 规范,能直接在更多的 L3 原始细节上推理而不噎住。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.359,
+   "localDuration": 7.017,
+   "text": "所以随着模型变强，昨天的 L3 会变成明天的 L2，昨天的 L2 会塌进 L1。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 32.376,
+   "localDuration": 4.737,
+   "text": "Agent 的责任范围向外扩张，整个层级，往下滑一级。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 37.275,
+   "localDuration": 7.83,
+   "text": "但你可能会觉得——模型越强、上下文窗口越大，这套分层的脚手架不就该被淘汰了吗？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 45.267,
+   "localDuration": 0.975,
+   "text": "恰恰相反。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 46.242,
+   "localDuration": 2.34,
+   "text": "分层本身，永远不会消失。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 48.582,
+   "localDuration": 7.8,
+   "text": "因为相对于\"你能往里塞的一切\",上下文永远是稀缺的;而噪声，永远在扣你的准确率。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 56.535,
+   "localDuration": 8.898,
+   "text": "没有哪个模型大到，能让\"在对的时间、把对的东西、放到它面前\"这件事，不再重要。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 65.571,
+   "localDuration": 4.615,
+   "text": "更大的上下文窗口，总在诱惑人们往里贴更多东西。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 70.186,
+   "localDuration": 9.832,
+   "text": "但更好的本能，是 CPU 几十年前就想明白的那一个：摘要放缓存,细节按需取,原始素材留作最后一招。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 80.187,
+   "localDuration": 4.484,
+   "text": "把你 Agent 的上下文，造得像一套内存分层。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 84.671,
+   "localDuration": 2.243,
+   "text": "准确率，自然就跟上来了。"
+  }
+ ]
+}

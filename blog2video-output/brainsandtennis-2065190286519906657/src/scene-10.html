@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .col.rev{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s10'] .col.rev .ch{color:#ff6b5e}
+[data-composition-id='s10'] .col .it code{font-family:'JetBrains Mono',monospace;font-size:.9em}
+[data-composition-id='s10'] .col.rev .it code{color:#ff6b5e;background:rgba(255,107,94,.1);border:1px solid rgba(255,107,94,.28);padding:1px 9px}
+[data-composition-id='s10'] .grouped{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:4px 13px}
+[data-composition-id='s10'] .grouped b{font-weight:700}
+[data-composition-id='s10'] .fix{width:100%;margin-top:24px;background:#1c1c1e;border:1px solid rgba(255,107,94,.5);padding:26px 32px;font-family:'JetBrains Mono',monospace}
+[data-composition-id='s10'] .fix .ref{font-size:42px;font-weight:700;color:#ff6b5e;letter-spacing:.02em}
+[data-composition-id='s10'] .fix .at{font-size:34px;color:#8a8a85;margin:0 18px}
+[data-composition-id='s10'] .fix .mf{display:inline-block;background:#ff6b5e;color:#121212;font-size:24px;font-weight:700;padding:4px 14px;vertical-align:6px}
+[data-composition-id='s10'] .takeaway{width:100%;margin-top:26px;font-weight:600;font-size:38px;line-height:1.42;color:#edebe6}
+[data-composition-id='s10'] .takeaway .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="111.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[10/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// L1 · <span class="acc">写比看起来难</span></div>
+      <div class="h1" style="margin-top:16px">写完,递回一份<br><span class="em">压缩 + 分诊</span>的 diff</div>
+
+      <div class="cols" style="margin-top:40px">
+        <div class="col c-clean">
+          <div class="ch">没问题的改动</div>
+          <div class="it"><div class="nm">分组采样</div><div class="ds">不是一股脑全倒,按行归区间 + 计数</div></div>
+          <div class="grouped g-late"><b>200</b> 写入 → 寥寥几行,仍知总数</div>
+        </div>
+        <div class="col rev c-rev">
+          <div class="ch">需要复查</div>
+          <div class="it"><div class="nm">可疑全拎出</div><div class="ds">无效公式 · 没标注的 <code>硬编码</code> · 离谱百分比</div></div>
+        </div>
+      </div>
+
+      <div class="fix f-late">
+        <span class="ref">#REF!</span><span class="at">行 57</span><span class="mf">必须修复</span>
+      </div>
+
+      <div class="takeaway t-late">反馈循环给的不是「你改了什么」,而是<span class="em">「你大概率搞错的那一处」</span>—— 每次编辑内建一个纠错员。</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.697" data-track-index="5"><div class="sub-inner">读完,<span class="sub-k">再说写</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.696" data-duration="1.698" data-track-index="5"><div class="sub-inner">写比看起来<span class="sub-k">难</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="3.563" data-duration="8.546" data-track-index="5"><div class="sub-inner">因为一次执行代码,可能改掉<span class="sub-k">上百个单元格</span>,而 Agent 得知道自己到底改了什么,又不能把整张表重读一遍。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.109" data-duration="6.575" data-track-index="5"><div class="sub-inner">所以代码跑完之后,他们会递回来一份<span class="sub-k">结构化的 diff</span>,列出每一个被改动的单元格。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.827" data-duration="4.544" data-track-index="5"><div class="sub-inner">但关键不止于此——他们还把这份 diff 做了<span class="sub-k">压缩和分诊</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.507" data-duration="1.317" data-track-index="5"><div class="sub-inner">怎么<span class="sub-k">压缩</span>的?</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.824" data-duration="3.733" data-track-index="5"><div class="sub-inner"><span class="sub-k">分组、采样</span>,而不是一股脑全倒出来。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.557" data-duration="6.367" data-track-index="5"><div class="sub-inner">两百次写入,被归成寥寥几行,但 Agent 还是<span class="sub-k">知道总数</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.063" data-duration="1.434" data-track-index="5"><div class="sub-inner">更妙的是<span class="sub-k">分诊</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="36.497" data-duration="4.097" data-track-index="5"><div class="sub-inner">干净的写入,归在<span class="sub-k">"没问题的改动"</span>那一栏。</div></div>
+    <div id="sub-11" class="clip sub" data-start="40.751" data-duration="8.596" data-track-index="5"><div class="sub-inner">而任何看起来可疑的东西——一个无效公式、一个没标注的<span class="sub-k">硬编码数字</span>、一个藏在公式里的硬编码、</div></div>
+    <div id="sub-12" class="clip sub" data-start="49.547" data-duration="9.71" data-track-index="5"><div class="sub-inner">一个离谱到不真实的百分比——都会被单独拎进<span class="sub-k">"需要复查"</span>那一栏,最严重的,直接标上"必须修复"。</div></div>
+    <div id="sub-13" class="clip sub" data-start="59.399" data-duration="0.935" data-track-index="5"><div class="sub-inner"><span class="sub-k">举个例子</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="60.334" data-duration="5.613" data-track-index="5"><div class="sub-inner">两百个单元格改下来,第57行冒出来一个 <span class="sub-k">#REF!</span> 的报错。</div></div>
+    <div id="sub-15" class="clip sub" data-start="65.947" data-duration="5.426" data-track-index="5"><div class="sub-inner">这要是淹在一整片<span class="sub-k">绿色的正常 diff</span> 里,太容易被漏掉了。</div></div>
+    <div id="sub-16" class="clip sub" data-start="71.573" data-duration="5.949" data-track-index="5"><div class="sub-inner">但在这套机制下,它被<span class="sub-k">顶到最上面</span>,贴着一个"必须修复"的标签。</div></div>
+    <div id="sub-17" class="clip sub" data-start="77.687" data-duration="8.306" data-track-index="5"><div class="sub-inner">所以这个反馈循环,给的不是"你改了什么",而是<span class="sub-k">"你大概率搞错的是哪一处"</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="85.993" data-duration="5.538" data-track-index="5"><div class="sub-inner">这相当于给 Agent 自己的每一次编辑,内建了一个<span class="sub-k">纠错员</span>。</div></div>
+    <div id="sub-19" class="clip sub" data-start="91.691" data-duration="13.553" data-track-index="5"><div class="sub-inner">L1 一句话总结:处在频率曲线最陡那一段的操作,都被做成了<span class="sub-k">特征工程过的、token 压到极致</span>的、还会主动汇报后果的包装层,而且永久住在提示词里。</div></div>
+    <div id="sub-20" class="clip sub" data-start="105.407" data-duration="6.204" data-track-index="5"><div class="sub-inner">它们造起来很贵,但你还是得造——因为 Agent 每一个任务都在<span class="sub-k">为它付代价</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 标题 — act 开场
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.6, {y:20, d:.42, ease:'expo.out'});
+    // act ① 压缩 / 分组采样 —— 左「干净」栏 + 采样事实逐条
+    D2.enter(tl, R+'.c-clean', 24.8, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.g-late', 28.6, {y:12, d:.32, ease:'power2.out'});
+    // act ② 分诊 —— 右「需要复查」栏(珊瑚)晚到
+    D2.enter(tl, R+'.c-rev', 40.8, {x:24, d:.4, ease:'power3.out'});
+    // late punch — #REF! 行57 必须修复(藏到 71.6s 揭示)
+    D2.enter(tl, R+'.f-late', 71.6, {y:16, d:.38, ease:'power3.out'});
+    D2.blink(tl, R+'.fix .mf', 72.2, 3);
+    // late punch — 纠错员 takeaway
+    D2.enter(tl, R+'.t-late', 85.9, {y:14, d:.36, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.696],['#sub-3',3.563],['#sub-4',12.109],['#sub-5',18.827],['#sub-6',23.507],['#sub-7',24.824],['#sub-8',28.557],['#sub-9',35.063],['#sub-10',36.497],['#sub-11',40.751],['#sub-12',49.547],['#sub-13',59.399],['#sub-14',60.334],['#sub-15',65.947],['#sub-16',71.573],['#sub-17',77.687],['#sub-18',85.993],['#sub-19',91.691],['#sub-20',105.407]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 111.767, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .term-l2{font-size:66px;line-height:1.34}
+[data-composition-id='s04'] .q-coral{color:#ff6b5e}
+[data-composition-id='s04'] .term-q{margin-top:14px;font-weight:600;font-size:34px;color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="12.2" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[04/17]</div>
+    </div>
+
+    <div class="content">
+      <div class="term">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">thesis@agent: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>他把答案浓缩成一句话</div>
+          <div class="term-l2">一个好的 Agent，是它所处理任务分布的<br>一次<span class="q-coral">忠实压缩</span>。</div>
+          <div class="term-src">— <b>全片论点</b> · 接下来全是它逼你造的具体东西<span class="cur sm"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.009" data-duration="6.761" data-track-index="5"><div class="sub-inner">他把答案浓缩成一句话：一个好的 Agent，是它所处理任务分布的一次<span class="sub-k">忠实压缩</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.921" data-duration="5.148" data-track-index="5"><div class="sub-inner">这句话听起来抽象，但接下来全是它逼着你去造的<span class="sub-k">具体东西</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 终端卡整体入场(含子元素淡入)
+    D2.enter(tl, R+'.term', .5, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},.7);
+    D2.enter(tl, R+'.term-l1', 1.0, {y:12, d:.3, ease:'power2.out'});
+    // 金句大字晚到(随口播浓缩成一句话之后揭示)
+    D2.enter(tl, R+'.term-l2', 2.6, {y:18, d:.42, ease:'power3.out'});
+    // 出处行更晚到(第二句口播)
+    D2.enter(tl, R+'.term-src', 7.0, {opacity:0, y:8, d:.3, ease:'power1.out'});
+    D2.blink(tl, R+'.cur.sm', 7.6, 4);
+    D2.subs(tl, [['#sub-1',0.009],['#sub-2',6.921]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 12.2, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

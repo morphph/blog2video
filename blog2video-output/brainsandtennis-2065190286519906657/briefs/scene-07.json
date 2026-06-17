@@ -1,0 +1,94 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "principle",
+ "dataDuration": 84.333,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_7.html",
+ "topbarIndex": "[07/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 3.174,
+   "text": "这个问题，其实 CPU 早就遇到过。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.319,
+   "localDuration": 5.566,
+   "text": "一个程序可能要碰到好几个 G 的数据，但紧挨着处理器的那块存储非常小。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.085,
+   "localDuration": 13.507,
+   "text": "所以计算机把内存分了层：一小块、瞬间就能拿到的缓存，叫 L1；下面是更大但更慢的 L2、L3；再往下才是主内存和硬盘。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 22.759,
+   "localDuration": 1.46,
+   "text": "这套为什么管用？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.219,
+   "localDuration": 8.761,
+   "text": "因为访问也是长尾的——把最热的那批数据放在最快那一层，只有碰上罕见的东西，才下沉去慢的那几层捞。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.127,
+   "localDuration": 7.743,
+   "text": "而当你要的东西不在快的那一层、得花代价去慢层取，这就叫一次\"缓存未命中\"。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 40.87,
+   "localDuration": 4.185,
+   "text": "这恰恰是你在常用路径上拼命想避免的成本。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 45.223,
+   "localDuration": 3.179,
+   "text": "Agent 应该长成一模一样的结构。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 48.402,
+   "localDuration": 3.884,
+   "text": "把你的上下文，造成 L1、L2、L3 三层。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 52.423,
+   "localDuration": 6.286,
+   "text": "而每一项优化，几乎都是在做同一笔交易：信息压缩，换发现速度。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 58.709,
+   "localDuration": 9.009,
+   "text": "放进 L1，它瞬间可用，但代价是每个任务无论用不用，都得为它付出提示词的 token。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 67.867,
+   "localDuration": 7.11,
+   "text": "推到 L3，平时一分钱不花，可真要用的时候，得花好几次工具调用才能找到它。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 75.139,
+   "localDuration": 7.044,
+   "text": "你的活儿，就是把每一项能力，放到那个能让全分布上总成本最低的层。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 82.183,
+   "localDuration": 1.981,
+   "text": "这就是全部的手艺。"
+  }
+ ]
+}

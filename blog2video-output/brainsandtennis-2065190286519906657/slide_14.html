@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 44px;
+    }
+    .hl { color: #F59E0B; }
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+    .pcard {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 26px 28px;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      text-align: left;
+    }
+    .pcard .lv { font-family:'JetBrains Mono',monospace; font-size: 40px; font-weight:800; min-width: 70px; }
+    .pcard .amt { font-size: 50px; font-weight:800; min-width: 230px; line-height:1; }
+    .pcard .amt small { font-size: 24px; color:#6B7280; display:block; font-weight:500; margin-top:6px;}
+    .pcard .d { font-size: 25px; color:#B0B0CC; line-height:1.4; }
+    .l1 { border:1px solid rgba(16,185,129,0.3); border-left:4px solid #10B981; }
+    .l1 .lv, .l1 .amt { color:#10B981; }
+    .l2 { border:1px solid rgba(59,130,246,0.3); border-left:4px solid #3B82F6; }
+    .l2 .lv, .l2 .amt { color:#3B82F6; }
+    .l3 { border:1px solid rgba(139,92,246,0.3); border-left:4px solid #8B5CF6; }
+    .l3 .lv, .l3 .amt { color:#8B5CF6; }
+    .mirror {
+      width: 100%;
+      background: #14141f;
+      border: 1px solid rgba(245,158,11,0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align:left;
+      font-size: 27px;
+      line-height: 1.5;
+      color:#B0B0CC;
+    }
+    .mirror b { color:#F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">token 花在哪 = 提示词的形状</div>
+    <div class="title">整个预算，镜像那条<span class="hl">频率曲线</span></div>
+    <div class="cards">
+      <div class="pcard l1">
+        <div class="lv">L1</div>
+        <div class="amt">几百行<small>每次调用常驻</small></div>
+        <div class="d">核心读写、execute_code 约定、关键类型、安全准则</div>
+      </div>
+      <div class="pcard l2">
+        <div class="lv">L2</div>
+        <div class="amt">~50 行<small>白名单 + 指针</small></div>
+        <div class="d">不是规范本身，是"祝福过"的方法白名单 + 何时去取</div>
+      </div>
+      <div class="pcard l3">
+        <div class="lv">L3</div>
+        <div class="amt">~5 行<small>名字 + 描述</small></div>
+        <div class="d">那份 skill 的名字描述；70k 行原始参考躺磁盘，永不碰提示词</div>
+      </div>
+    </div>
+    <div class="mirror">
+      绝大部分提示词花在 <b>80% 常用场景</b>，一点点给 <b>15% 立路标</b>，几乎不花在长尾——正是缓存分层一开始就预言的分配。
+    </div>
+  </div>
+</body>
+</html>

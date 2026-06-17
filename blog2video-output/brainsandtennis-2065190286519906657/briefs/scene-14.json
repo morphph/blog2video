@@ -1,0 +1,70 @@
+{
+ "scene": 14,
+ "id": "s14",
+ "type": "comparison_cards",
+ "dataDuration": 77.467,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_14.html",
+ "topbarIndex": "[14/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 6.425,
+   "text": "值得看一眼 token 到底花在哪了，因为这套分层会直接体现在系统提示词的形状上。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.589,
+   "localDuration": 14.958,
+   "text": "提示词的主体是 L1，量级大概是几百行——核心读写操作、execute_code 的约定、关键的几个类型、还有几乎每个任务都会用到的那一小撮方法，外加执行和安全准则。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 21.709,
+   "localDuration": 5.101,
+   "text": "这部分每次调用都常驻，所以也是他们拼了命要压紧的地方。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 26.965,
+   "localDuration": 3.318,
+   "text": "L2 是叠在上面薄薄一层，大概五十行。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 30.283,
+   "localDuration": 10.827,
+   "text": "注意，这五十行不是规范本身,而是一份\"祝福过\"的方法白名单,加上几个指针——告诉 Agent 那些文档存在、什么时候该去取。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 41.257,
+   "localDuration": 3.905,
+   "text": "规范的实际内容，在被调出来之前，根本不进提示词。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 45.325,
+   "localDuration": 8.028,
+   "text": "L3 基本就五行——那份 skill 文档的名字和描述，外加散落别处的一些参考指引。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 53.353,
+   "localDuration": 5.351,
+   "text": "而那份七万行的原始参考，整个躺在磁盘上,永远不碰提示词。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 58.861,
+   "localDuration": 13.46,
+   "text": "所以你看，整个预算，正好镜像了那条频率曲线：绝大部分提示词花在百分之80的常用场景上,一点点用来给那百分之15立路标,几乎没有花在长尾上。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 72.469,
+   "localDuration": 4.846,
+   "text": "这恰恰就是缓存分层那套框架，一开始就预言的分配方式。"
+  }
+ ]
+}

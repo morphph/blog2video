@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.32;
+      margin-bottom: 18px;
+    }
+    .hl-red { color: #EF4444; }
+    .hl { color: #F59E0B; }
+    .punch {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239,68,68,0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 26px 28px;
+      text-align: left;
+      margin-bottom: 24px;
+      font-size: 29px;
+      line-height: 1.5;
+      color:#B0B0CC;
+    }
+    .punch b { color:#FFFFFF; }
+    .punch .n30 { color:#EF4444; font-weight:800; }
+    .punch .n1 { color:#10B981; font-weight:800; }
+    .layers {
+      width: 100%;
+      display: flex;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .layers .l {
+      flex: 1;
+      border-radius: 12px;
+      padding: 20px 14px;
+      font-size: 25px;
+      line-height:1.35;
+      text-align:center;
+    }
+    .layers .l .t { font-family:'JetBrains Mono',monospace; font-size:32px; font-weight:800; display:block; margin-bottom:8px; }
+    .lh { background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.3); color:#B0B0CC;}
+    .lh .t { color:#10B981; }
+    .lw { background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); color:#B0B0CC;}
+    .lw .t { color:#3B82F6; }
+    .lc { background:rgba(139,92,246,0.12); border:1px solid rgba(139,92,246,0.3); color:#B0B0CC;}
+    .lc .t { color:#8B5CF6; }
+    .cta {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(245,158,11,0.12));
+      border: 1px solid rgba(245,158,11,0.4);
+      border-radius: 12px;
+      padding: 28px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .cta b { color:#F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">回过头看这一整套</div>
+    <div class="title">Agent 的上限，<br>不在能调多少工具</div>
+    <div class="punch">
+      别人忙着加到 <span class="n30">30 个工具</span>，真正赢的那个<span class="n1">只给一个</span>。他赢不是因为工具少，而是想清楚：<b>有没有把任务分布，像 CPU 缓存一样分层压进上下文。</b>
+    </div>
+    <div class="layers">
+      <div class="l lh"><span class="t">L1</span>热的常驻</div>
+      <div class="l lw"><span class="t">L2</span>温的按需取</div>
+      <div class="l lc"><span class="t">L3</span>冷的能 grep</div>
+    </div>
+    <div class="cta">
+      别急着加工具，先回答那三个问题：<br><b>你的 L1、L2、L3，各放什么。</b><br>精读一篇，胜过刷一百条。
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1352 @@
+[
+  {
+    "text": "谁都能写个 Agent，一个下午的事。但能让全球前四大对冲基金里，三家掏钱用的，只有一个。差距不在模型多聪明、工具多花哨，在有没有人肯在几个关键处，做足枯燥的功夫。",
+    "pronounce_text": "谁都能写个Agent，一个下午的事。但能让全球前四大对冲基金里，三家掏钱用的，只有一个。差距不在模型多聪明、工具多花哨，在有没有人肯在几个关键处，做足枯燥的功夫。",
+    "time_begin": 0,
+    "time_end": 16235.238095238097,
+    "text_begin": 0,
+    "text_end": 82,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 81
+  },
+  {
+    "text": "它的作者把这套功夫拆开讲清楚了，今天我们精读。",
+    "pronounce_text": "它的作者把这套功夫拆开讲清楚了，今天我们精读。",
+    "time_begin": 16379.999999999998,
+    "time_end": 20285.442176870747,
+    "text_begin": 82,
+    "text_end": 105,
+    "pronounce_text_begin": 81,
+    "pronounce_text_end": 104
+  },
+  {
+    "text": "先说说为什么这篇值得读。",
+    "pronounce_text": "先说说为什么这篇值得读。",
+    "time_begin": 20447.999999999996,
+    "time_end": 22344.91609977324,
+    "text_begin": 105,
+    "text_end": 117,
+    "pronounce_text_begin": 104,
+    "pronounce_text_end": 116
+  },
+  {
+    "text": "现在网上讲\"怎么搭一个 Agent\"的内容，已经多到泛滥了。一个 while 循环套着模型，模型不停调工具，直到任务做完，给它一个文件系统，给它一个命令行，剩下的它自己折腾。",
+    "pronounce_text": "现在网上讲\"怎么搭一个Agent\"的内容，已经多到泛滥了。一个while循环套着模型，模型不停调工具，直到任务做完，给它一个文件系统，给它一个命令行，剩下的它自己折腾。",
+    "time_begin": 22499.999999999996,
+    "time_end": 37075.01133786848,
+    "text_begin": 117,
+    "text_end": 204,
+    "pronounce_text_begin": 116,
+    "pronounce_text_end": 200
+  },
+  {
+    "text": "这套东西一个下午就能写出来，大部分人也都写过了。",
+    "pronounce_text": "这套东西一个下午就能写出来，大部分人也都写过了。",
+    "time_begin": 37224,
+    "time_end": 40746.31292517007,
+    "text_begin": 204,
+    "text_end": 228,
+    "pronounce_text_begin": 200,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "但你发现没有，几乎没有人在讲\"怎么搭一个**好**的 Agent\"。",
+    "pronounce_text": "但你发现没有，几乎没有人在讲\"怎么搭一个，好，的Agent\"。",
+    "time_begin": 40896,
+    "time_end": 46972.50793650794,
+    "text_begin": 228,
+    "text_end": 262,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 255
+  },
+  {
+    "text": "差距就在这里。我前面说的那个四倍分歧不是笑话。当市面上最流行的几个产品，在\"该配多少工具\"这种最基础的问题上都能差出四倍，这本身就是一个信号——这个领域根本没有公认的原则。",
+    "pronounce_text": "差距就在这里。我前面说的那个四倍分歧不是笑话。当市面上最流行的几个产品，在\"该配多少工具\"这种最基础的问题上都能差出四倍，这本身就是一个信号。这个领域根本没有公认的原则。",
+    "time_begin": 47124,
+    "time_end": 62592.97959183673,
+    "text_begin": 262,
+    "text_end": 348,
+    "pronounce_text_begin": 255,
+    "pronounce_text_end": 340
+  },
+  {
+    "text": "大家都是各凭手感。",
+    "pronounce_text": "大家都是各凭手感。",
+    "time_begin": 62748,
+    "time_end": 64435.93650793651,
+    "text_begin": 348,
+    "text_end": 357,
+    "pronounce_text_begin": 340,
+    "pronounce_text_end": 349
+  },
+  {
+    "text": "写这篇文章的人,花了将近一年打磨 Shortcut 这个表格 Agent。它被广泛认为是市面上最准的表格 Agent，部署在全球四大多策略对冲基金里的三家。",
+    "pronounce_text": "写这篇文章的人,花了将近一年打磨Shortcut这个表格Agent。它被广泛认为是市面上最准的表格Agent，部署在全球四大多策略对冲基金里的三家。",
+    "time_begin": 64584,
+    "time_end": 77533.61451247166,
+    "text_begin": 357,
+    "text_end": 435,
+    "pronounce_text_begin": 349,
+    "pronounce_text_end": 423
+  },
+  {
+    "text": "在那种地方，算错一个数字代价非常高，没人会给你的成绩放水。",
+    "pronounce_text": "在那种地方，算错一个数字代价非常高，没人会给你的成绩放水。",
+    "time_begin": 77733.61451247166,
+    "time_end": 83426.9931972789,
+    "text_begin": 435,
+    "text_end": 464,
+    "pronounce_text_begin": 423,
+    "pronounce_text_end": 452
+  },
+  {
+    "text": "他们没有微软或者 Anthropic 那种铺天盖地的渠道，靠的就是一件事——这个 Agent 出错更少。所以\"怎么让 Agent 更准\"，是他每天都在琢磨的问题。",
+    "pronounce_text": "他们没有微软或者Anthropic那种铺天盖地的渠道，靠的就是一件事。这个Agent出错更少。所以\"怎么让Agent更准\"，是他每天都在琢磨的问题。",
+    "time_begin": 83592,
+    "time_end": 95821.79591836735,
+    "text_begin": 464,
+    "text_end": 545,
+    "pronounce_text_begin": 452,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "他把答案浓缩成一句话：一个好的 Agent，是它所处理任务分布的一次忠实压缩。",
+    "pronounce_text": "他把答案浓缩成一句话：一个好的Agent，是它所处理任务分布的一次忠实压缩。",
+    "time_begin": 95976,
+    "time_end": 102737.49659863945,
+    "text_begin": 545,
+    "text_end": 584,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 564
+  },
+  {
+    "text": "这句话听起来抽象，但接下来全是它逼着你去造的具体东西。",
+    "pronounce_text": "这句话听起来抽象，但接下来全是它逼着你去造的具体东西。",
+    "time_begin": 102888,
+    "time_end": 108035.7097505669,
+    "text_begin": 584,
+    "text_end": 611,
+    "pronounce_text_begin": 564,
+    "pronounce_text_end": 591
+  },
+  {
+    "text": "我们一步步来拆。",
+    "pronounce_text": "我们一步步来拆。",
+    "time_begin": 108180,
+    "time_end": 109647.3469387755,
+    "text_begin": 611,
+    "text_end": 619,
+    "pronounce_text_begin": 591,
+    "pronounce_text_end": 599
+  },
+  {
+    "text": "假设你既没有训练那个模型，也不拥有它运行的环境。那留给你设计的，其实只剩三样东西：系统提示词、工具、还有各种素材，比如 skill、整理好的文档、参考资料。",
+    "pronounce_text": "假设你既没有训练那个模型，也不拥有它运行的环境。那留给你设计的，其实只剩三样东西：系统提示词、工具、还有各种素材，比如skill、整理好的文档、参考资料。",
+    "time_begin": 109800,
+    "time_end": 125222.53968253967,
+    "text_begin": 619,
+    "text_end": 697,
+    "pronounce_text_begin": 599,
+    "pronounce_text_end": 676
+  },
+  {
+    "text": "而这三样本质上是同一样东西——Agent 的上下文。",
+    "pronounce_text": "而这三样本质上是同一样东西。Agent的上下文。",
+    "time_begin": 125388,
+    "time_end": 130106.14058956916,
+    "text_begin": 697,
+    "text_end": 723,
+    "pronounce_text_begin": 676,
+    "pronounce_text_end": 700
+  },
+  {
+    "text": "于是游戏规则就变得很清楚了。模型固定不变的前提下，准确率就是上下文质量的函数。上下文塞太满，信号会被噪声埋掉；上下文缺东西，模型只能靠猜。这两头都在扣你的准确率。",
+    "pronounce_text": "于是游戏规则就变得很清楚了。模型固定不变的前提下，准确率就是上下文质量的函数。上下文塞太满，信号会被噪声埋掉;上下文缺东西，模型只能靠猜。这两头都在扣你的准确率。",
+    "time_begin": 130248,
+    "time_end": 146146.54875283447,
+    "text_begin": 723,
+    "text_end": 804,
+    "pronounce_text_begin": 700,
+    "pronounce_text_end": 781
+  },
+  {
+    "text": "而准确率，恰恰就是你卖的东西。这里有个反直觉的点——它跟价值不是线性关系。一个能做到百分之99的任务，价值是只能做到百分之95的那个的十倍。差的就是那四个百分点，但它值十倍。",
+    "pronounce_text": "而准确率，恰恰就是你卖的东西。这里有个反直觉的点。它跟价值不是线性关系。一个能做到百分之九十九的任务，价值是只能做到百分之九十五的那个的十倍。差的就是那四个百分点，但它值十倍。",
+    "time_begin": 146304,
+    "time_end": 162666.947845805,
+    "text_begin": 804,
+    "text_end": 891,
+    "pronounce_text_begin": 781,
+    "pronounce_text_end": 869
+  },
+  {
+    "text": "所以你不能不在那点脏活上较真。",
+    "pronounce_text": "所以你不能不在那点脏活上较真。",
+    "time_begin": 162828,
+    "time_end": 165363.46485260772,
+    "text_begin": 891,
+    "text_end": 906,
+    "pronounce_text_begin": 869,
+    "pronounce_text_end": 884
+  },
+  {
+    "text": "但麻烦在于，用户拿来的问题，从来不是均匀分布的。",
+    "pronounce_text": "但麻烦在于，用户拿来的问题，从来不是均匀分布的。",
+    "time_begin": 165528,
+    "time_end": 170582.82993197278,
+    "text_begin": 906,
+    "text_end": 930,
+    "pronounce_text_begin": 884,
+    "pronounce_text_end": 908
+  },
+  {
+    "text": "他们给你的是一条长尾。每次打开你的 Agent，绝大多数时间在做的，是那几样最家常的操作，这是又高又胖的头部。然后是一些重要但偶尔才用一次的能力。",
+    "pronounce_text": "他们给你的是一条长尾。每次打开你的Agent，绝大多数时间在做的，是那几样最家常的操作，这是又高又胖的头部。然后是一些重要但偶尔才用一次的能力。",
+    "time_begin": 170748,
+    "time_end": 185450.72108843538,
+    "text_begin": 930,
+    "text_end": 1003,
+    "pronounce_text_begin": 908,
+    "pronounce_text_end": 980
+  },
+  {
+    "text": "最后是长长的尾巴——每一件都很罕见，但这种事多得是，而且每一件都还得能做对。",
+    "pronounce_text": "最后是长长的尾巴。每一件都很罕见，但这种事多得是，而且每一件都还得能做对。",
+    "time_begin": 185616,
+    "time_end": 193016.04535147393,
+    "text_begin": 1003,
+    "text_end": 1041,
+    "pronounce_text_begin": 980,
+    "pronounce_text_end": 1017
+  },
+  {
+    "text": "Agent 必须把这整条尾巴全接住。可它又不能一次性把所有东西全塞进上下文里——那就是前面说的，上下文塞太满，信号被埋掉。",
+    "pronounce_text": "Agent必须把这整条尾巴全接住。可它又不能一次性把所有东西全塞进上下文里。那就是前面说的，上下文塞太满，信号被埋掉。",
+    "time_begin": 193176,
+    "time_end": 203780.39909297053,
+    "text_begin": 1041,
+    "text_end": 1102,
+    "pronounce_text_begin": 1017,
+    "pronounce_text_end": 1076
+  },
+  {
+    "text": "所以真正的目标比\"什么都备着\"要更锋利一点：在整条任务分布上平均下来，让每个任务花掉的上下文最少。",
+    "pronounce_text": "所以真正的目标比\"什么都备着\"要更锋利一点：在整条任务分布上平均下来，让每个任务花掉的上下文最少。",
+    "time_begin": 203940,
+    "time_end": 213685.26077097506,
+    "text_begin": 1102,
+    "text_end": 1151,
+    "pronounce_text_begin": 1076,
+    "pronounce_text_end": 1125
+  },
+  {
+    "text": "这个问题，其实 CPU 早就遇到过。",
+    "pronounce_text": "这个问题，其实CPU早就遇到过。",
+    "time_begin": 213840,
+    "time_end": 217014.0136054422,
+    "text_begin": 1151,
+    "text_end": 1169,
+    "pronounce_text_begin": 1125,
+    "pronounce_text_end": 1141
+  },
+  {
+    "text": "一个程序可能要碰到好几个 G 的数据，但紧挨着处理器的那块存储非常小。",
+    "pronounce_text": "一个程序可能要碰到好几个G的数据，但紧挨着处理器的那块存储非常小。",
+    "time_begin": 217152,
+    "time_end": 222717.66893424036,
+    "text_begin": 1169,
+    "text_end": 1204,
+    "pronounce_text_begin": 1141,
+    "pronounce_text_end": 1174
+  },
+  {
+    "text": "所以计算机把内存分了层：一小块、瞬间就能拿到的缓存，叫 L1；下面是更大但更慢的 L2、L3；再往下才是主内存和硬盘。",
+    "pronounce_text": "所以计算机把内存分了层：一小块、瞬间就能拿到的缓存，叫L一;下面是更大但更慢的L二、L三;再往下才是主内存和硬盘。",
+    "time_begin": 222917.66893424036,
+    "time_end": 236424.56235827663,
+    "text_begin": 1204,
+    "text_end": 1263,
+    "pronounce_text_begin": 1174,
+    "pronounce_text_end": 1231
+  },
+  {
+    "text": "这套为什么管用？因为访问也是长尾的——把最热的那批数据放在最快那一层，只有碰上罕见的东西，才下沉去慢的那几层捞。",
+    "pronounce_text": "这套为什么管用？因为访问也是长尾的。把最热的那批数据放在最快那一层，只有碰上罕见的东西，才下沉去慢的那几层捞。",
+    "time_begin": 236592,
+    "time_end": 246813.26984126985,
+    "text_begin": 1263,
+    "text_end": 1319,
+    "pronounce_text_begin": 1231,
+    "pronounce_text_end": 1286
+  },
+  {
+    "text": "而当你要的东西不在快的那一层、得花代价去慢层取，这就叫一次\"缓存未命中\"。这恰恰是你在常用路径上拼命想避免的成本。",
+    "pronounce_text": "而当你要的东西不在快的那一层、得花代价去慢层取，这就叫一次\"缓存未命中\"。这恰恰是你在常用路径上拼命想避免的成本。",
+    "time_begin": 246960,
+    "time_end": 258887.9365079365,
+    "text_begin": 1319,
+    "text_end": 1376,
+    "pronounce_text_begin": 1286,
+    "pronounce_text_end": 1343
+  },
+  {
+    "text": "Agent 应该长成一模一样的结构。把你的上下文，造成 L1、L2、L3 三层。",
+    "pronounce_text": "Agent应该长成一模一样的结构。把你的上下文，造成L一、L二、L三三层。",
+    "time_begin": 259056,
+    "time_end": 266119.3560090703,
+    "text_begin": 1376,
+    "text_end": 1416,
+    "pronounce_text_begin": 1343,
+    "pronounce_text_end": 1380
+  },
+  {
+    "text": "而每一项优化，几乎都是在做同一笔交易：信息压缩，换发现速度。放进 L1，它瞬间可用，但代价是每个任务无论用不用，都得为它付出提示词的 token。",
+    "pronounce_text": "而每一项优化，几乎都是在做同一笔交易：信息压缩，换发现速度。放进L一，它瞬间可用，但代价是每个任务无论用不用，都得为它付出提示词的token。",
+    "time_begin": 266256,
+    "time_end": 281550.8299319728,
+    "text_begin": 1416,
+    "text_end": 1489,
+    "pronounce_text_begin": 1380,
+    "pronounce_text_end": 1451
+  },
+  {
+    "text": "推到 L3，平时一分钱不花，可真要用的时候，得花好几次工具调用才能找到它。",
+    "pronounce_text": "推到L三，平时一分钱不花，可真要用的时候，得花好几次工具调用才能找到它。",
+    "time_begin": 281700,
+    "time_end": 288809.79591836734,
+    "text_begin": 1489,
+    "text_end": 1526,
+    "pronounce_text_begin": 1451,
+    "pronounce_text_end": 1487
+  },
+  {
+    "text": "你的活儿，就是把每一项能力，放到那个能让全分布上总成本最低的层。这就是全部的手艺。",
+    "pronounce_text": "你的活儿，就是把每一项能力，放到那个能让全分布上总成本最低的层。这就是全部的手艺。",
+    "time_begin": 288972,
+    "time_end": 297997.44217687077,
+    "text_begin": 1526,
+    "text_end": 1567,
+    "pronounce_text_begin": 1487,
+    "pronounce_text_end": 1528
+  },
+  {
+    "text": "在讲三层之前，得先说清楚这套东西踩在什么地基上。",
+    "pronounce_text": "在讲三层之前，得先说清楚这套东西踩在什么地基上。",
+    "time_begin": 298152,
+    "time_end": 302997.85034013604,
+    "text_begin": 1567,
+    "text_end": 1591,
+    "pronounce_text_begin": 1528,
+    "pronounce_text_end": 1552
+  },
+  {
+    "text": "所有这些表格操作——每一次读、每一次写、每一次查文档——背后都是同一个工具在执行代码。模型写代码，代码调用他们的函数，函数去碰那张表。",
+    "pronounce_text": "所有这些表格操作。每一次读、每一次写、每一次查文档。背后都是同一个工具在执行代码。模型写代码，代码调用他们的函数，函数去碰那张表。",
+    "time_begin": 303156,
+    "time_end": 317173.73242630385,
+    "text_begin": 1591,
+    "text_end": 1658,
+    "pronounce_text_begin": 1552,
+    "pronounce_text_end": 1617
+  },
+  {
+    "text": "没有什么读取工具、写入工具、画图工具。",
+    "pronounce_text": "没有什么读取工具、写入工具、画图工具。",
+    "time_begin": 317373.73242630385,
+    "time_end": 322091.873015873,
+    "text_begin": 1658,
+    "text_end": 1677,
+    "pronounce_text_begin": 1617,
+    "pronounce_text_end": 1636
+  },
+  {
+    "text": "从头到尾，就一个工具，API 全活在代码里。",
+    "pronounce_text": "从头到尾，就一个工具，API全活在代码里。",
+    "time_begin": 322236,
+    "time_end": 326826.43083900225,
+    "text_begin": 1677,
+    "text_end": 1699,
+    "pronounce_text_begin": 1636,
+    "pronounce_text_end": 1657
+  },
+  {
+    "text": "为什么这么干？",
+    "pronounce_text": "为什么这么干？",
+    "time_begin": 326988,
+    "time_end": 328118.6575963719,
+    "text_begin": 1699,
+    "text_end": 1706,
+    "pronounce_text_begin": 1657,
+    "pronounce_text_end": 1664
+  },
+  {
+    "text": "因为他们自己的实验一次次显示：工具加得越多，模型反而越蠢。",
+    "pronounce_text": "因为他们自己的实验一次次显示：工具加得越多，模型反而越蠢。",
+    "time_begin": 328284,
+    "time_end": 333640.6893424036,
+    "text_begin": 1706,
+    "text_end": 1735,
+    "pronounce_text_begin": 1664,
+    "pronounce_text_end": 1693
+  },
+  {
+    "text": "这违反直觉。我们的常识是能力越多越强。",
+    "pronounce_text": "这违反直觉。我们的常识是能力越多越强。",
+    "time_begin": 333792,
+    "time_end": 337825.15192743763,
+    "text_begin": 1735,
+    "text_end": 1754,
+    "pronounce_text_begin": 1693,
+    "pronounce_text_end": 1712
+  },
+  {
+    "text": "但你想想，每加一个工具，就是往提示词里多塞一份 schema，多一块能让模型犯迷糊的表面，多一种选错的可能——尤其当几个工具的职责还互相重叠的时候。",
+    "pronounce_text": "但你想想，每加一个工具，就是往提示词里多塞一份schema，多一块能让模型犯迷糊的表面，多一种选错的可能。尤其当几个工具的职责还互相重叠的时候。",
+    "time_begin": 338025.15192743763,
+    "time_end": 351996.44444444444,
+    "text_begin": 1754,
+    "text_end": 1828,
+    "pronounce_text_begin": 1712,
+    "pronounce_text_end": 1784
+  },
+  {
+    "text": "一个 execute_code 工具，把这一堆乱七八糟全收成了一个决策——写代码就完事。而且模型还能用一门编程语言的完整表达力去组合能力，而不是去拼接一堆僵硬的工具调用。",
+    "pronounce_text": "一个execute，code工具，把这一堆乱七八糟全收成了一个决策。写代码就完事。而且模型还能用一门编程语言的完整表达力去组合能力，而不是去拼接一堆僵硬的工具调用。",
+    "time_begin": 352152,
+    "time_end": 366343.8820861678,
+    "text_begin": 1828,
+    "text_end": 1913,
+    "pronounce_text_begin": 1784,
+    "pronounce_text_end": 1866
+  },
+  {
+    "text": "注意，这不是\"工具越少越好\"的口号。他真正在做的，是把\"该选哪个工具\"这个决策本身，当成噪声源给删掉。",
+    "pronounce_text": "注意，这不是\"工具越少越好\"的口号。他真正在做的，是把\"该选哪个工具\"这个决策本身，当成噪声源给删掉。",
+    "time_begin": 366480,
+    "time_end": 377722.94784580497,
+    "text_begin": 1913,
+    "text_end": 1964,
+    "pronounce_text_begin": 1866,
+    "pronounce_text_end": 1917
+  },
+  {
+    "text": "这件事对那三层很关键：因为模型永远在写代码，所谓 L1、L2、L3，无非就是它知道自己能调哪些函数、以及它为了找到这些函数费了多大劲。",
+    "pronounce_text": "这件事对那三层很关键：因为模型永远在写代码，所谓L一、L二、L三，无非就是它知道自己能调哪些函数、以及它为了找到这些函数费了多大劲。",
+    "time_begin": 377892,
+    "time_end": 391956.1723356009,
+    "text_begin": 1964,
+    "text_end": 2031,
+    "pronounce_text_begin": 1917,
+    "pronounce_text_end": 1983
+  },
+  {
+    "text": "第一层，L1，是那百分之80的家常活——读单元格，写单元格。",
+    "pronounce_text": "第一层，L一，是那百分之八十的家常活。读单元格，写单元格。",
+    "time_begin": 392112,
+    "time_end": 399175.3560090703,
+    "text_begin": 2031,
+    "text_end": 2061,
+    "pronounce_text_begin": 1983,
+    "pronounce_text_end": 2012
+  },
+  {
+    "text": "如果连读写单元格都做不到极致，后面全是空谈。所以他们在这一层砸了荒谬的、不成比例的功夫。我们就看一次读取，背后到底发生了什么。",
+    "pronounce_text": "如果连读写单元格都做不到极致，后面全是空谈。所以他们在这一层砸了荒谬的、不成比例的功夫。我们就看一次读取，背后到底发生了什么。",
+    "time_begin": 399312,
+    "time_end": 411959.7551020408,
+    "text_begin": 2061,
+    "text_end": 2124,
+    "pronounce_text_begin": 2012,
+    "pronounce_text_end": 2075
+  },
+  {
+    "text": "先说读。你可能以为，读一段两百行的表格，不就是把数据搬出来吗？不是的——读取本身，就是一次压缩。",
+    "pronounce_text": "先说读。你可能以为，读一段两百行的表格，不就是把数据搬出来吗？不是的。读取本身，就是一次压缩。",
+    "time_begin": 412128,
+    "time_end": 422476.97959183675,
+    "text_begin": 2124,
+    "text_end": 2172,
+    "pronounce_text_begin": 2075,
+    "pronounce_text_end": 2122
+  },
+  {
+    "text": "它做了三件事。",
+    "pronounce_text": "它做了三件事。",
+    "time_begin": 422640,
+    "time_end": 424026.0770975057,
+    "text_begin": 2172,
+    "text_end": 2179,
+    "pronounce_text_begin": 2122,
+    "pronounce_text_end": 2129
+  },
+  {
+    "text": "第一件，公式别名。一列五百行的公式，A2 乘 B2、A3 乘 B3，这么排下去，是五百个几乎一模一样的公式。",
+    "pronounce_text": "第一件，公式别名。一列五百行的公式，A二乘B二、A三乘B三，这么排下去，是五百个几乎一模一样的公式。",
+    "time_begin": 424188,
+    "time_end": 434711.1292517007,
+    "text_begin": 2179,
+    "text_end": 2233,
+    "pronounce_text_begin": 2129,
+    "pronounce_text_end": 2179
+  },
+  {
+    "text": "他们把每个公式归一化成一种相对写法，于是这五百个全长成同一个样子，然后数一数，凡是出现超过十次的模式，就折叠成一个短别名，比如就叫 F1。",
+    "pronounce_text": "他们把每个公式归一化成一种相对写法，于是这五百个全长成同一个样子，然后数一数，凡是出现超过十次的模式，就折叠成一个短别名，比如就叫F一。",
+    "time_begin": 434880,
+    "time_end": 448642.31292517006,
+    "text_begin": 2233,
+    "text_end": 2302,
+    "pronounce_text_begin": 2179,
+    "pronounce_text_end": 2247
+  },
+  {
+    "text": "模型看到的，是重复的 F1 加上一行图例，而不是五百个公式。token 省掉一大截，信息零损失。",
+    "pronounce_text": "模型看到的，是重复的F一加上一行图例，而不是五百个公式。token省掉一大截，信息零损失。",
+    "time_begin": 448812,
+    "time_end": 459114.5396825397,
+    "text_begin": 2302,
+    "text_end": 2350,
+    "pronounce_text_begin": 2247,
+    "pronounce_text_end": 2292
+  },
+  {
+    "text": "第二件，免费的行列上下文。当模型读一片光秃秃的数字，它怎么知道这些数字是什么意思？",
+    "pronounce_text": "第二件，免费的行列上下文。当模型读一片光秃秃的数字，它怎么知道这些数字是什么意思？",
+    "time_begin": 459252,
+    "time_end": 467464.7437641723,
+    "text_begin": 2350,
+    "text_end": 2391,
+    "pronounce_text_begin": 2292,
+    "pronounce_text_end": 2333
+  },
+  {
+    "text": "他们会自动向左扫出行标、向上扫出表头——表头还是靠投票选的，看附近哪一行的文字单元格最多。",
+    "pronounce_text": "他们会自动向左扫出行标、向上扫出表头。表头还是靠投票选的，看附近哪一行的文字单元格最多。",
+    "time_begin": 467664.7437641723,
+    "time_end": 476516.0362811791,
+    "text_begin": 2391,
+    "text_end": 2436,
+    "pronounce_text_begin": 2333,
+    "pronounce_text_end": 2377
+  },
+  {
+    "text": "于是模型白白拿到了\"地区、销量、单价、营收\"这种上下文，再也不用去猜一堆数字到底代表什么。",
+    "pronounce_text": "于是模型白白拿到了\"地区、销量、单价、营收\"这种上下文，再也不用去猜一堆数字到底代表什么。",
+    "time_begin": 476676,
+    "time_end": 486084.5714285714,
+    "text_begin": 2436,
+    "text_end": 2481,
+    "pronounce_text_begin": 2377,
+    "pronounce_text_end": 2422
+  },
+  {
+    "text": "第三件，样式压缩。格式本身也是信息——一个加粗的红色单元格在告诉你点什么。但要是把每个单元格的完整样式都列出来，数值就全被淹了。",
+    "pronounce_text": "第三件，样式压缩。格式本身也是信息。一个加粗的红色单元格在告诉你点什么。但要是把每个单元格的完整样式都列出来，数值就全被淹了。",
+    "time_begin": 486252,
+    "time_end": 498388.91609977325,
+    "text_begin": 2481,
+    "text_end": 2545,
+    "pronounce_text_begin": 2422,
+    "pronounce_text_end": 2485
+  },
+  {
+    "text": "所以他们按相同样式把单元格分组，每组折叠成一块连通区域，一组只打一行。",
+    "pronounce_text": "所以他们按相同样式把单元格分组，每组折叠成一块连通区域，一组只打一行。",
+    "time_begin": 498528,
+    "time_end": 505544.91609977325,
+    "text_begin": 2545,
+    "text_end": 2580,
+    "pronounce_text_begin": 2485,
+    "pronounce_text_end": 2520
+  },
+  {
+    "text": "最后的效果是这样的：六百个公式，变成一行图例；四百个带样式的单元格，变成两行。而那个模型压根没主动要的表头，就乖乖躺在底下。",
+    "pronounce_text": "最后的效果是这样的：六百个公式，变成一行图例;四百个带样式的单元格，变成两行。而那个模型压根没主动要的表头，就乖乖躺在底下。",
+    "time_begin": 505692,
+    "time_end": 519628.462585034,
+    "text_begin": 2580,
+    "text_end": 2642,
+    "pronounce_text_begin": 2520,
+    "pronounce_text_end": 2582
+  },
+  {
+    "text": "整张表，无损地，塞进了原始 dump 几分之一的 token 里。",
+    "pronounce_text": "整张表，无损地，塞进了原始dump几分之一的token里。",
+    "time_begin": 519828.462585034,
+    "time_end": 524627.873015873,
+    "text_begin": 2642,
+    "text_end": 2675,
+    "pronounce_text_begin": 2582,
+    "pronounce_text_end": 2611
+  },
+  {
+    "text": "每一个，都是那笔\"压缩换发现\"的交易，在最常用的场景上被赢得干干净净。",
+    "pronounce_text": "每一个，都是那笔\"压缩换发现\"的交易，在最常用的场景上被赢得干干净净。",
+    "time_begin": 524772,
+    "time_end": 532172.045351474,
+    "text_begin": 2675,
+    "text_end": 2710,
+    "pronounce_text_begin": 2611,
+    "pronounce_text_end": 2646
+  },
+  {
+    "text": "读完，再说写。写比看起来难。",
+    "pronounce_text": "读完，再说写。写比看起来难。",
+    "time_begin": 532332,
+    "time_end": 535726.6031746032,
+    "text_begin": 2710,
+    "text_end": 2724,
+    "pronounce_text_begin": 2646,
+    "pronounce_text_end": 2660
+  },
+  {
+    "text": "因为一次执行代码，可能改掉上百个单元格，而 Agent 得知道自己到底改了什么，又不能把整张表重读一遍。所以代码跑完之后，他们会递回来一份结构化的 diff，列出每一个被改动的单元格。",
+    "pronounce_text": "因为一次执行代码，可能改掉上百个单元格，而Agent得知道自己到底改了什么，又不能把整张表重读一遍。所以代码跑完之后，他们会递回来一份结构化的diff，列出每一个被改动的单元格。",
+    "time_begin": 535896,
+    "time_end": 551016.6802721089,
+    "text_begin": 2724,
+    "text_end": 2816,
+    "pronounce_text_begin": 2660,
+    "pronounce_text_end": 2749
+  },
+  {
+    "text": "但关键不止于此——他们还把这份 diff 做了压缩和分诊。",
+    "pronounce_text": "但关键不止于此。他们还把这份diff做了压缩和分诊。",
+    "time_begin": 551160,
+    "time_end": 555703.9909297052,
+    "text_begin": 2816,
+    "text_end": 2845,
+    "pronounce_text_begin": 2749,
+    "pronounce_text_end": 2775
+  },
+  {
+    "text": "怎么压缩的？分组、采样，而不是一股脑全倒出来。两百次写入，被归成寥寥几行，但 Agent 还是知道总数。",
+    "pronounce_text": "怎么压缩的？分组、采样，而不是一股脑全倒出来。两百次写入，被归成寥寥几行，但Agent还是知道总数。",
+    "time_begin": 555840,
+    "time_end": 567257.0975056689,
+    "text_begin": 2845,
+    "text_end": 2897,
+    "pronounce_text_begin": 2775,
+    "pronounce_text_end": 2825
+  },
+  {
+    "text": "更妙的是分诊。干净的写入，归在\"没问题的改动\"那一栏。",
+    "pronounce_text": "更妙的是分诊。干净的写入，归在\"没问题的改动\"那一栏。",
+    "time_begin": 567396,
+    "time_end": 572926.8390022676,
+    "text_begin": 2897,
+    "text_end": 2924,
+    "pronounce_text_begin": 2825,
+    "pronounce_text_end": 2852
+  },
+  {
+    "text": "而任何看起来可疑的东西——一个无效公式、一个没标注的硬编码数字、一个藏在公式里的硬编码、",
+    "pronounce_text": "而任何看起来可疑的东西。一个无效公式、一个没标注的硬编码数字、一个藏在公式里的硬编码、",
+    "time_begin": 573084,
+    "time_end": 581679.873015873,
+    "text_begin": 2924,
+    "text_end": 2968,
+    "pronounce_text_begin": 2852,
+    "pronounce_text_end": 2895
+  },
+  {
+    "text": "一个离谱到不真实的百分比——都会被单独拎进\"需要复查\"那一栏，最严重的，直接标上\"必须修复\"。",
+    "pronounce_text": "一个离谱到不真实的百分比。都会被单独拎进\"需要复查\"那一栏，最严重的，直接标上\"必须修复\"。",
+    "time_begin": 581879.873015873,
+    "time_end": 591590.3038548753,
+    "text_begin": 2968,
+    "text_end": 3015,
+    "pronounce_text_begin": 2895,
+    "pronounce_text_end": 2941
+  },
+  {
+    "text": "举个例子。两百个单元格改下来，第57行冒出来一个 #REF! 的报错。这要是淹在一整片绿色的正常 diff 里，太容易被漏掉了。",
+    "pronounce_text": "举个例子。两百个单元格改下来，第五十七行冒出来一个，REF! 的报错。这要是淹在一整片绿色的正常diff里，太容易被漏掉了。",
+    "time_begin": 591732,
+    "time_end": 603706.3764172336,
+    "text_begin": 3015,
+    "text_end": 3079,
+    "pronounce_text_begin": 2941,
+    "pronounce_text_end": 3003
+  },
+  {
+    "text": "但在这套机制下，它被顶到最上面，贴着一个\"必须修复\"的标签。",
+    "pronounce_text": "但在这套机制下，它被顶到最上面，贴着一个\"必须修复\"的标签。",
+    "time_begin": 603906.3764172336,
+    "time_end": 609855.1746031746,
+    "text_begin": 3079,
+    "text_end": 3109,
+    "pronounce_text_begin": 3003,
+    "pronounce_text_end": 3033
+  },
+  {
+    "text": "所以这个反馈循环，给的不是\"你改了什么\"，而是\"你改了什么、以及你大概率搞错的是哪一处\"。这相当于给 Agent 自己的每一次编辑，内建了一个纠错员。",
+    "pronounce_text": "所以这个反馈循环，给的不是\"你改了什么\"，而是\"你改了什么、以及你大概率搞错的是哪一处\"。这相当于给Agent自己的每一次编辑，内建了一个纠错员。",
+    "time_begin": 610020,
+    "time_end": 623863.5827664399,
+    "text_begin": 3109,
+    "text_end": 3184,
+    "pronounce_text_begin": 3033,
+    "pronounce_text_end": 3106
+  },
+  {
+    "text": "L1 一句话总结：处在频率曲线最陡那一段的操作，都被做成了特征工程过的、token 压到极致的、还会主动汇报后果的包装层，而且永久住在提示词里。",
+    "pronounce_text": "L一一句话总结：处在频率曲线最陡那一段的操作，都被做成了特征工程过的、token压到极致的、还会主动汇报后果的包装层，而且永久住在提示词里。",
+    "time_begin": 624024,
+    "time_end": 637577.3333333334,
+    "text_begin": 3184,
+    "text_end": 3256,
+    "pronounce_text_begin": 3106,
+    "pronounce_text_end": 3176
+  },
+  {
+    "text": "它们造起来很贵，但你还是得造——因为 Agent 每一个任务都在为它付代价。",
+    "pronounce_text": "它们造起来很贵，但你还是得造。因为Agent每一个任务都在为它付代价。",
+    "time_begin": 637740,
+    "time_end": 643944.2176870748,
+    "text_begin": 3256,
+    "text_end": 3294,
+    "pronounce_text_begin": 3176,
+    "pronounce_text_end": 3211
+  },
+  {
+    "text": "但你不可能把所有东西都塞进 L1。",
+    "pronounce_text": "但你不可能把所有东西都塞进L一。",
+    "time_begin": 644112,
+    "time_end": 646566.1950113379,
+    "text_begin": 3294,
+    "text_end": 3311,
+    "pronounce_text_begin": 3211,
+    "pronounce_text_end": 3227
+  },
+  {
+    "text": "像条件格式、数据透视表、图表、数据校验、复制移动这些操作，每一样都重要，每次会话里都会冒出来那么几次，但每一样又都有足够多的细节，",
+    "pronounce_text": "像条件格式、数据透视表、图表、数据校验、复制移动这些操作，每一样都重要，每次会话里都会冒出来那么几次，但每一样又都有足够多的细节，",
+    "time_begin": 646704,
+    "time_end": 662602.5487528344,
+    "text_begin": 3311,
+    "text_end": 3376,
+    "pronounce_text_begin": 3227,
+    "pronounce_text_end": 3292
+  },
+  {
+    "text": "要是全写进系统提示词，就会拖累所有用不到它的任务。",
+    "pronounce_text": "要是全写进系统提示词，就会拖累所有用不到它的任务。",
+    "time_begin": 662802.5487528344,
+    "time_end": 667172.3900226757,
+    "text_begin": 3376,
+    "text_end": 3401,
+    "pronounce_text_begin": 3292,
+    "pronounce_text_end": 3317
+  },
+  {
+    "text": "这就是典型的第二层，L2。",
+    "pronounce_text": "这就是典型的第二层，L二。",
+    "time_begin": 667332,
+    "time_end": 669913.9047619047,
+    "text_begin": 3401,
+    "text_end": 3414,
+    "pronounce_text_begin": 3317,
+    "pronounce_text_end": 3330
+  },
+  {
+    "text": "他们的做法，是把这些能力写成一份份整理好的英文规范，按需才取，就跟 skill 文档一模一样。模型在自己写的代码里调一句，就能把对应的文档拉进来。",
+    "pronounce_text": "他们的做法，是把这些能力写成一份份整理好的英文规范，按需才取，就跟skill文档一模一样。模型在自己写的代码里调一句，就能把对应的文档拉进来。",
+    "time_begin": 670068,
+    "time_end": 683482.0136054421,
+    "text_begin": 3414,
+    "text_end": 3487,
+    "pronounce_text_begin": 3330,
+    "pronounce_text_end": 3401
+  },
+  {
+    "text": "但注意，这些不是把函数签名堆在一起的类型说明。它们是手写的散文，每份几百行，讲的是把一件事做对的那条正确路子，包括那些原始 API 永远不会告诉你的知识。",
+    "pronounce_text": "但注意，这些不是把函数签名堆在一起的类型说明。它们是手写的散文，每份几百行，讲的是把一件事做对的那条正确路子，包括那些原始API永远不会告诉你的知识。",
+    "time_begin": 683640,
+    "time_end": 698505.260770975,
+    "text_begin": 3487,
+    "text_end": 3564,
+    "pronounce_text_begin": 3401,
+    "pronounce_text_end": 3476
+  },
+  {
+    "text": "拿数据透视表那份规范来说。它不只是列方法，它是按正确的顺序，把整套配方教给你。",
+    "pronounce_text": "拿数据透视表那份规范来说。它不只是列方法，它是按正确的顺序，把整套配方教给你。",
+    "time_begin": 698652,
+    "time_end": 705796.6258503401,
+    "text_begin": 3564,
+    "text_end": 3603,
+    "pronounce_text_begin": 3476,
+    "pronounce_text_end": 3515
+  },
+  {
+    "text": "它会告诉你一些你本来只能靠反复栽跟头才学得到的事：比如你必须用一对挂起和恢复布局的命令，把这一批改动包住，否则每改一次，整张表就重建一次；再比如，",
+    "pronounce_text": "它会告诉你一些你本来只能靠反复栽跟头才学得到的事：比如你必须用一对挂起和恢复布局的命令，把这一批改动包住，否则每改一次，整张表就重建一次;再比如，",
+    "time_begin": 705960,
+    "time_end": 721127.1201814059,
+    "text_begin": 3603,
+    "text_end": 3676,
+    "pronounce_text_begin": 3515,
+    "pronounce_text_end": 3588
+  },
+  {
+    "text": "聚合方式得传一个裸整数进去——比如8代表求和——因为运行时根本就没有那个友好的枚举值给你用。",
+    "pronounce_text": "聚合方式得传一个裸整数进去。比如八代表求和。因为运行时根本就没有那个友好的枚举值给你用。",
+    "time_begin": 721296,
+    "time_end": 728440.6258503401,
+    "text_begin": 3676,
+    "text_end": 3722,
+    "pronounce_text_begin": 3588,
+    "pronounce_text_end": 3632
+  },
+  {
+    "text": "这些都不是什么古怪的坑，这就是把透视表做对，本来该有的样子，只不过被一个已经替你踩过坑的人，提前写下来了一次。",
+    "pronounce_text": "这些都不是什么古怪的坑，这就是把透视表做对，本来该有的样子，只不过被一个已经替你踩过坑的人，提前写下来了一次。",
+    "time_begin": 728604,
+    "time_end": 738442.1405895691,
+    "text_begin": 3722,
+    "text_end": 3777,
+    "pronounce_text_begin": 3632,
+    "pronounce_text_end": 3687
+  },
+  {
+    "text": "而它最妙的性质是：在任务真正需要它之前，它一个 token 都不花。一个从不碰透视表的任务，永远不必为透视表的文档买单。",
+    "pronounce_text": "而它最妙的性质是：在任务真正需要它之前，它一个token都不花。一个从不碰透视表的任务，永远不必为透视表的文档买单。",
+    "time_begin": 738612,
+    "time_end": 748659.1201814059,
+    "text_begin": 3777,
+    "text_end": 3837,
+    "pronounce_text_begin": 3687,
+    "pronounce_text_end": 3745
+  },
+  {
+    "text": "调一句话，就是它全部的发现成本——一次缓存未命中，很快就被服务掉了。",
+    "pronounce_text": "调一句话，就是它全部的发现成本。一次缓存未命中，很快就被服务掉了。",
+    "time_begin": 748859.1201814059,
+    "time_end": 756259.1655328798,
+    "text_begin": 3837,
+    "text_end": 3871,
+    "pronounce_text_begin": 3745,
+    "pronounce_text_end": 3778
+  },
+  {
+    "text": "L2 不只用在文档上。同样这套思路，他们原封不动地搬到了那些\"延迟加载的工具\"上——网页搜索、网页抓取、生成网站这些。",
+    "pronounce_text": "L二不只用在文档上。同样这套思路，他们原封不动地搬到了那些\"延迟加载的工具\"上。网页搜索、网页抓取、生成网站这些。",
+    "time_begin": 756396,
+    "time_end": 768405.2063492064,
+    "text_begin": 3871,
+    "text_end": 3930,
+    "pronounce_text_begin": 3778,
+    "pronounce_text_end": 3835
+  },
+  {
+    "text": "它们的 schema 不会一直待在提示词里。取而代之的，是一道元工具组成的墙。模型得先用一个查询命令，把某个工具的 schema 取出来，这个工具才会被标记成\"已加载\"。",
+    "pronounce_text": "它们的schema不会一直待在提示词里。取而代之的，是一道元工具组成的墙。模型得先用一个查询命令，把某个工具的schema取出来，这个工具才会被标记成\"已加载\"。",
+    "time_begin": 768564,
+    "time_end": 782070.8934240363,
+    "text_begin": 3930,
+    "text_end": 4015,
+    "pronounce_text_begin": 3835,
+    "pronounce_text_end": 3916
+  },
+  {
+    "text": "而如果你没先取就想直接调用，系统会直接拒绝你。",
+    "pronounce_text": "而如果你没先取就想直接调用，系统会直接拒绝你。",
+    "time_begin": 782208,
+    "time_end": 786496.5714285715,
+    "text_begin": 4015,
+    "text_end": 4038,
+    "pronounce_text_begin": 3916,
+    "pronounce_text_end": 3939
+  },
+  {
+    "text": "已经取过的那批工具，本质上就是一个会话级别的缓存。模型加载一次 schema，从此它就常驻了。",
+    "pronounce_text": "已经取过的那批工具，本质上就是一个会话级别的缓存。模型加载一次schema，从此它就常驻了。",
+    "time_begin": 786636,
+    "time_end": 794848.7437641723,
+    "text_begin": 4038,
+    "text_end": 4085,
+    "pronounce_text_begin": 3939,
+    "pronounce_text_end": 3985
+  },
+  {
+    "text": "同样是\"压缩换发现\"那笔交易，同样的解法：把提示词保持得很小，真要用某个能力时，才付一次\"未命中\"的代价。",
+    "pronounce_text": "同样是\"压缩换发现\"那笔交易，同样的解法：把提示词保持得很小，真要用某个能力时，才付一次\"未命中\"的代价。",
+    "time_begin": 794988,
+    "time_end": 806439.9274376418,
+    "text_begin": 4085,
+    "text_end": 4138,
+    "pronounce_text_begin": 3985,
+    "pronounce_text_end": 4038
+  },
+  {
+    "text": "这里作者点了一句很值得记的话——这跟 Claude 上的\"延迟工具加载\"是同一个思路，但他们没有被绑死在某一家厂商的工具加载功能上，照样能拿到这个行为。",
+    "pronounce_text": "这里作者点了一句很值得记的话。这跟Claude上的\"延迟工具加载\"是同一个思路，但他们没有被绑死在某一家厂商的工具加载功能上，照样能拿到这个行为。",
+    "time_begin": 806580,
+    "time_end": 819401.9047619047,
+    "text_begin": 4138,
+    "text_end": 4214,
+    "pronounce_text_begin": 4038,
+    "pronounce_text_end": 4111
+  },
+  {
+    "text": "然后，就是那条长尾了。",
+    "pronounce_text": "然后，就是那条长尾了。",
+    "time_begin": 819540,
+    "time_end": 821994.1950113379,
+    "text_begin": 4214,
+    "text_end": 4225,
+    "pronounce_text_begin": 4111,
+    "pronounce_text_end": 4122
+  },
+  {
+    "text": "那种你从没包装过、也没写过规范的、孤零零的冷僻需求。它没法被预料到——这是长尾的定义决定的。但 Agent 还是得有路能走到那儿，否则它就一头撞墙，任务失败。",
+    "pronounce_text": "那种你从没包装过、也没写过规范的、孤零零的冷僻需求。它没法被预料到。这是长尾的定义决定的。但Agent还是得有路能走到那儿，否则它就一头撞墙，任务失败。",
+    "time_begin": 822132,
+    "time_end": 836451.5918367347,
+    "text_begin": 4225,
+    "text_end": 4304,
+    "pronounce_text_begin": 4122,
+    "pronounce_text_end": 4198
+  },
+  {
+    "text": "比如\"给每一行加一个小折线图，概括它的趋势\";比如\"把图表的次坐标轴设成对数刻度，只给第三组数据重新上色\";",
+    "pronounce_text": "比如\"给每一行加一个小折线图，概括它的趋势\";比如\"把图表的次坐标轴设成对数刻度，只给第三组数据重新上色\";",
+    "time_begin": 836604,
+    "time_end": 847719.2380952381,
+    "text_begin": 4304,
+    "text_end": 4358,
+    "pronounce_text_begin": 4198,
+    "pronounce_text_end": 4252
+  },
+  {
+    "text": "比如\"从这个单元格插一个超链接到那个命名区域,再把这几个图形组合起来\"。这些都是真实存在、但极少被碰到的 API 角落。",
+    "pronounce_text": "比如\"从这个单元格插一个超链接到那个命名区域,再把这几个图形组合起来\"。这些都是真实存在、但极少被碰到的API角落。",
+    "time_begin": 847872,
+    "time_end": 859881.2063492064,
+    "text_begin": 4358,
+    "text_end": 4418,
+    "pronounce_text_begin": 4252,
+    "pronounce_text_end": 4310
+  },
+  {
+    "text": "所以第三层 L3，就是那份完整的原始 API——整个 Office.js，或者整个 SpreadJS，全部倒到磁盘上。这是一份机器生成的参考文档，足足七万行长。它包含了一切。",
+    "pronounce_text": "所以第三层L三，就是那份完整的原始API。整个Office.js，或者整个SpreadJS，全部倒到磁盘上。这是一份机器生成的参考文档，足足七万行长。它包含了一切。",
+    "time_begin": 860040,
+    "time_end": 875892.1088435374,
+    "text_begin": 4418,
+    "text_end": 4505,
+    "pronounce_text_begin": 4310,
+    "pronounce_text_end": 4392
+  },
+  {
+    "text": "但它也彻底没法当上下文用——你绝不可能把它整个贴进提示词。",
+    "pronounce_text": "但它也彻底没法当上下文用。你绝不可能把它整个贴进提示词。",
+    "time_begin": 876060,
+    "time_end": 881497.9591836735,
+    "text_begin": 4505,
+    "text_end": 4534,
+    "pronounce_text_begin": 4392,
+    "pronounce_text_end": 4420
+  },
+  {
+    "text": "那怎么办？",
+    "pronounce_text": "那怎么办？",
+    "time_begin": 881640,
+    "time_end": 882642.947845805,
+    "text_begin": 4534,
+    "text_end": 4539,
+    "pronounce_text_begin": 4420,
+    "pronounce_text_end": 4425
+  },
+  {
+    "text": "诀窍是：你给它配一份 skill，一张简短的地图，教它怎么用 bash 的 grep 去挖这本大全。",
+    "pronounce_text": "诀窍是：你给它配一份skill，一张简短的地图，教它怎么用bash的grep去挖这本大全。",
+    "time_begin": 882792,
+    "time_end": 890192.045351474,
+    "text_begin": 4539,
+    "text_end": 4589,
+    "pronounce_text_begin": 4425,
+    "pronounce_text_end": 4470
+  },
+  {
+    "text": "这份 skill 大概一百行。它说清楚：这本大全是什么结构、每条方法和每个类型长什么样、针对每一类问题该用哪条 grep 命令去捞。",
+    "pronounce_text": "这份skill大概一百行。它说清楚：这本大全是什么结构、每条方法和每个类型长什么样、针对每一类问题该用哪条grep命令去捞。",
+    "time_begin": 890352,
+    "time_end": 902663.0657596372,
+    "text_begin": 4589,
+    "text_end": 4655,
+    "pronounce_text_begin": 4470,
+    "pronounce_text_end": 4532
+  },
+  {
+    "text": "有了它，Agent 就从\"几万行我根本读不了\"，变成了\"三到六次 grep，精准捞出我要的那个签名\"。",
+    "pronounce_text": "有了它，Agent就从\"几万行我根本读不了\"，变成了\"三到六次grep，精准捞出我要的那个签名\"。",
+    "time_begin": 902808,
+    "time_end": 912773.8503401361,
+    "text_begin": 4655,
+    "text_end": 4706,
+    "pronounce_text_begin": 4532,
+    "pronounce_text_end": 4581
+  },
+  {
+    "text": "这就是 L3 的访问成本——真实存在，但有上限，而且只有那些罕见到要往这么深处探的任务，才需要付。",
+    "pronounce_text": "这就是L三的访问成本。真实存在，但有上限，而且只有那些罕见到要往这么深处探的任务，才需要付。",
+    "time_begin": 912924,
+    "time_end": 922158.4217687075,
+    "text_begin": 4706,
+    "text_end": 4755,
+    "pronounce_text_begin": 4581,
+    "pronounce_text_end": 4627
+  },
+  {
+    "text": "系统提示词里还把这条逃生通道写得明明白白，让模型知道这条路存在、也知道什么时候该走它。原话大意是：永远不要猜，把文档完整读一遍;如果包装好的 API 做不到，就用原始 API，别将就。",
+    "pronounce_text": "系统提示词里还把这条逃生通道写得明明白白，让模型知道这条路存在、也知道什么时候该走它。原话大意是：永远不要猜，把文档完整读一遍;如果包装好的API做不到，就用原始API，别将就。",
+    "time_begin": 922320,
+    "time_end": 938764.2176870748,
+    "text_begin": 4755,
+    "text_end": 4847,
+    "pronounce_text_begin": 4627,
+    "pronounce_text_end": 4716
+  },
+  {
+    "text": "这最后一句，才是 L3 全部的意义所在。Agent 永远不该被卡死。",
+    "pronounce_text": "这最后一句，才是L三全部的意义所在。Agent永远不该被卡死。",
+    "time_begin": 938916,
+    "time_end": 944783.5283446712,
+    "text_begin": 4847,
+    "text_end": 4881,
+    "pronounce_text_begin": 4716,
+    "pronounce_text_end": 4747
+  },
+  {
+    "text": "它可以在 L1 没命中，掉到 L2;就算整理好的规范也没写，它还能下沉到那本原始大全里去,最后用一个还算理智的调用次数，把答案捞出来。",
+    "pronounce_text": "它可以在L一没命中，掉到L二;就算整理好的规范也没写，它还能下沉到那本原始大全里去,最后用一个还算理智的调用次数，把答案捞出来。",
+    "time_begin": 944928,
+    "time_end": 957924.0544217688,
+    "text_begin": 4881,
+    "text_end": 4948,
+    "pronounce_text_begin": 4747,
+    "pronounce_text_end": 4811
+  },
+  {
+    "text": "值得看一眼 token 到底花在哪了，因为这套分层会直接体现在系统提示词的形状上。",
+    "pronounce_text": "值得看一眼token到底花在哪了，因为这套分层会直接体现在系统提示词的形状上。",
+    "time_begin": 958068,
+    "time_end": 964492.8072562359,
+    "text_begin": 4948,
+    "text_end": 4989,
+    "pronounce_text_begin": 4811,
+    "pronounce_text_end": 4850
+  },
+  {
+    "text": "提示词的主体是 L1，量级大概是几百行——核心读写操作、execute_code 的约定、关键的几个类型、还有几乎每个任务都会用到的那一小撮方法，外加执行和安全准则。",
+    "pronounce_text": "提示词的主体是L一，量级大概是几百行。核心读写操作、execute，code的约定、关键的几个类型、还有几乎每个任务都会用到的那一小撮方法，外加执行和安全准则。",
+    "time_begin": 964656,
+    "time_end": 979614.1405895691,
+    "text_begin": 4989,
+    "text_end": 5072,
+    "pronounce_text_begin": 4850,
+    "pronounce_text_end": 4930
+  },
+  {
+    "text": "这部分每次调用都常驻，所以也是他们拼了命要压紧的地方。",
+    "pronounce_text": "这部分每次调用都常驻，所以也是他们拼了命要压紧的地方。",
+    "time_begin": 979776,
+    "time_end": 984877.2698412698,
+    "text_begin": 5072,
+    "text_end": 5099,
+    "pronounce_text_begin": 4930,
+    "pronounce_text_end": 4957
+  },
+  {
+    "text": "L2 是叠在上面薄薄一层，大概五十行。注意，这五十行不是规范本身,而是一份\"祝福过\"的方法白名单,加上几个指针——告诉 Agent 那些文档存在、什么时候该去取。",
+    "pronounce_text": "L二是叠在上面薄薄一层，大概五十行。注意，这五十行不是规范本身,而是一份\"祝福过\"的方法白名单,加上几个指针。告诉Agent那些文档存在、什么时候该去取。",
+    "time_begin": 985032,
+    "time_end": 999177.4421768708,
+    "text_begin": 5099,
+    "text_end": 5180,
+    "pronounce_text_begin": 4957,
+    "pronounce_text_end": 5034
+  },
+  {
+    "text": "规范的实际内容，在被调出来之前，根本不进提示词。",
+    "pronounce_text": "规范的实际内容，在被调出来之前，根本不进提示词。",
+    "time_begin": 999324,
+    "time_end": 1003229.4421768708,
+    "text_begin": 5180,
+    "text_end": 5204,
+    "pronounce_text_begin": 5034,
+    "pronounce_text_end": 5058
+  },
+  {
+    "text": "L3 基本就五行——那份 skill 文档的名字和描述，外加散落别处的一些参考指引。而那份七万行的原始参考，整个躺在磁盘上,永远不碰提示词。",
+    "pronounce_text": "L三基本就五行。那份skill文档的名字和描述，外加散落别处的一些参考指引。而那份七万行的原始参考，整个躺在磁盘上,永远不碰提示词。",
+    "time_begin": 1003392,
+    "time_end": 1016771.1836734693,
+    "text_begin": 5204,
+    "text_end": 5274,
+    "pronounce_text_begin": 5058,
+    "pronounce_text_end": 5124
+  },
+  {
+    "text": "所以你看，整个预算，正好镜像了那条频率曲线：绝大部分提示词花在百分之80的常用场景上,一点点用来给那百分之15立路标,几乎没有花在长尾上。",
+    "pronounce_text": "所以你看，整个预算，正好镜像了那条频率曲线：绝大部分提示词花在百分之八十的常用场景上,一点点用来给那百分之十五立路标,几乎没有花在长尾上。",
+    "time_begin": 1016928,
+    "time_end": 1030388.4535147392,
+    "text_begin": 5274,
+    "text_end": 5343,
+    "pronounce_text_begin": 5124,
+    "pronounce_text_end": 5193
+  },
+  {
+    "text": "这恰恰就是缓存分层那套框架，一开始就预言的分配方式。",
+    "pronounce_text": "这恰恰就是缓存分层那套框架，一开始就预言的分配方式。",
+    "time_begin": 1030536,
+    "time_end": 1035381.8503401361,
+    "text_begin": 5343,
+    "text_end": 5369,
+    "pronounce_text_begin": 5193,
+    "pronounce_text_end": 5219
+  },
+  {
+    "text": "表格只是他的例子。这套结构，能迁移到任何领域。",
+    "pronounce_text": "表格只是他的例子。这套结构，能迁移到任何领域。",
+    "time_begin": 1035540,
+    "time_end": 1040385.8503401361,
+    "text_begin": 5369,
+    "text_end": 5392,
+    "pronounce_text_begin": 5219,
+    "pronounce_text_end": 5242
+  },
+  {
+    "text": "那些系统提示词、那些整理好的规范里的压缩，本质上是在编码你的用户、以及他们要做的任务的分布——而在你自己的领域里,这个分布,你比任何人都懂。",
+    "pronounce_text": "那些系统提示词、那些整理好的规范里的压缩，本质上是在编码你的用户、以及他们要做的任务的分布。而在你自己的领域里,这个分布,你比任何人都懂。",
+    "time_begin": 1040544,
+    "time_end": 1053284.634920635,
+    "text_begin": 5392,
+    "text_end": 5462,
+    "pronounce_text_begin": 5242,
+    "pronounce_text_end": 5311
+  },
+  {
+    "text": "所以你的活儿，就是回答三个问题。",
+    "pronounce_text": "所以你的活儿，就是回答三个问题。",
+    "time_begin": 1053432,
+    "time_end": 1056478.3038548753,
+    "text_begin": 5462,
+    "text_end": 5478,
+    "pronounce_text_begin": 5311,
+    "pronounce_text_end": 5327
+  },
+  {
+    "text": "第一，什么东西包进 L1？是频率曲线最陡那一段、最家常的操作。把它们做到 token 效率极致、速度极快，还要会汇报后果。在这儿砸不成比例的功夫，因为 Agent 每个任务都在付这个代价。",
+    "pronounce_text": "第一，什么东西包进L一？是频率曲线最陡那一段、最家常的操作。把它们做到token效率极致、速度极快，还要会汇报后果。在这儿砸不成比例的功夫，因为Agent每个任务都在付这个代价。",
+    "time_begin": 1056636,
+    "time_end": 1073207.9274376417,
+    "text_begin": 5478,
+    "text_end": 5572,
+    "pronounce_text_begin": 5327,
+    "pronounce_text_end": 5416
+  },
+  {
+    "text": "第二，什么东西推到 L2？是那些重要但偶尔才用的能力。把它们写成整理好的、英文的、带着各种坑的提醒的规范，一步就能取到。",
+    "pronounce_text": "第二，什么东西推到L二？是那些重要但偶尔才用的能力。把它们写成整理好的、英文的、带着各种坑的提醒的规范，一步就能取到。",
+    "time_begin": 1073376,
+    "time_end": 1085733.5056689342,
+    "text_begin": 5572,
+    "text_end": 5632,
+    "pronounce_text_begin": 5416,
+    "pronounce_text_end": 5475
+  },
+  {
+    "text": "编码进去的是那条正确路子和各种约束，而不只是函数签名。",
+    "pronounce_text": "编码进去的是那条正确路子和各种约束，而不只是函数签名。",
+    "time_begin": 1085933.5056689342,
+    "time_end": 1090651.6462585034,
+    "text_begin": 5632,
+    "text_end": 5659,
+    "pronounce_text_begin": 5475,
+    "pronounce_text_end": 5502
+  },
+  {
+    "text": "第三，你的逃生舱 L3 是什么？是那份原始的、完整的底层素材，再加一份教 Agent 去挖它的 skill。它不需要好用,它只需要能到达、足够完整、并且能在有限步数内被找到。",
+    "pronounce_text": "第三，你的逃生舱L三是什么？是那份原始的、完整的底层素材，再加一份教Agent去挖它的skill。它不需要好用,它只需要能到达、足够完整、并且能在有限步数内被找到。",
+    "time_begin": 1090800,
+    "time_end": 1106315.4195011337,
+    "text_begin": 5659,
+    "text_end": 5746,
+    "pronounce_text_begin": 5502,
+    "pronounce_text_end": 5584
+  },
+  {
+    "text": "这三个位置放对了，你就造出了一个在常用场景上飞快、在偶发场景上够用、在罕见场景上也永远卡不死的 Agent——同时还把上下文保持得足够小，让模型一直保持锋利。",
+    "pronounce_text": "这三个位置放对了，你就造出了一个在常用场景上飞快、在偶发场景上够用、在罕见场景上也永远卡不死的Agent。同时还把上下文保持得足够小，让模型一直保持锋利。",
+    "time_begin": 1106460,
+    "time_end": 1121882.5396825396,
+    "text_begin": 5746,
+    "text_end": 5825,
+    "pronounce_text_begin": 5584,
+    "pronounce_text_end": 5661
+  },
+  {
+    "text": "最后一个观察，我觉得是全篇最值得记住的判断。",
+    "pronounce_text": "最后一个观察，我觉得是全篇最值得记住的判断。",
+    "time_begin": 1122048,
+    "time_end": 1126034.7120181406,
+    "text_begin": 5825,
+    "text_end": 5847,
+    "pronounce_text_begin": 5661,
+    "pronounce_text_end": 5683
+  },
+  {
+    "text": "什么东西算 L1，并不是固定的，它会随着模型变强而漂移。",
+    "pronounce_text": "什么东西算L一，并不是固定的，它会随着模型变强而漂移。",
+    "time_begin": 1126188,
+    "time_end": 1131753.6689342405,
+    "text_begin": 5847,
+    "text_end": 5875,
+    "pronounce_text_begin": 5683,
+    "pronounce_text_end": 5710
+  },
+  {
+    "text": "早年那些弱模型，需要小小的、单一用途的工具，每件事都得给它掰开揉碎。今天的模型，能一口吞下一份更大的 L2 规范,能直接在更多的 L3 原始细节上推理而不噎住。",
+    "pronounce_text": "早年那些弱模型，需要小小的、单一用途的工具，每件事都得给它掰开揉碎。今天的模型，能一口吞下一份更大的L二规范,能直接在更多的L三原始细节上推理而不噎住。",
+    "time_begin": 1131912,
+    "time_end": 1147253.2698412698,
+    "text_begin": 5875,
+    "text_end": 5955,
+    "pronounce_text_begin": 5710,
+    "pronounce_text_end": 5786
+  },
+  {
+    "text": "所以随着模型变强，昨天的 L3 会变成明天的 L2，昨天的 L2 会塌进 L1。Agent 的责任范围向外扩张，整个层级，往下滑一级。",
+    "pronounce_text": "所以随着模型变强，昨天的L三会变成明天的L二，昨天的L二会塌进L一。Agent的责任范围向外扩张，整个层级，往下滑一级。",
+    "time_begin": 1147392,
+    "time_end": 1159145.7868480727,
+    "text_begin": 5955,
+    "text_end": 6022,
+    "pronounce_text_begin": 5786,
+    "pronounce_text_end": 5846
+  },
+  {
+    "text": "但你可能会觉得——模型越强、上下文窗口越大，这套分层的脚手架不就该被淘汰了吗？",
+    "pronounce_text": "但你可能会觉得。模型越强、上下文窗口越大，这套分层的脚手架不就该被淘汰了吗？",
+    "time_begin": 1159308,
+    "time_end": 1167137.6145124717,
+    "text_begin": 6022,
+    "text_end": 6061,
+    "pronounce_text_begin": 5846,
+    "pronounce_text_end": 5884
+  },
+  {
+    "text": "恰恰相反。分层本身，永远不会消失。因为相对于\"你能往里塞的一切\",上下文永远是稀缺的;而噪声，永远在扣你的准确率。",
+    "pronounce_text": "恰恰相反。分层本身，永远不会消失。因为相对于\"你能往里塞的一切\",上下文永远是稀缺的;而噪声，永远在扣你的准确率。",
+    "time_begin": 1167300,
+    "time_end": 1178415.238095238,
+    "text_begin": 6061,
+    "text_end": 6118,
+    "pronounce_text_begin": 5884,
+    "pronounce_text_end": 5941
+  },
+  {
+    "text": "没有哪个模型大到，能让\"在对的时间、把对的东西、放到它面前\"这件事，不再重要。",
+    "pronounce_text": "没有哪个模型大到，能让\"在对的时间、把对的东西、放到它面前\"这件事，不再重要。",
+    "time_begin": 1178568,
+    "time_end": 1187465.732426304,
+    "text_begin": 6118,
+    "text_end": 6157,
+    "pronounce_text_begin": 5941,
+    "pronounce_text_end": 5980
+  },
+  {
+    "text": "更大的上下文窗口，总在诱惑人们往里贴更多东西。但更好的本能，是 CPU 几十年前就想明白的那一个：摘要放缓存,细节按需取,原始素材留作最后一招。",
+    "pronounce_text": "更大的上下文窗口，总在诱惑人们往里贴更多东西。但更好的本能，是CPU几十年前就想明白的那一个：摘要放缓存,细节按需取,原始素材留作最后一招。",
+    "time_begin": 1187604,
+    "time_end": 1202051.3015873015,
+    "text_begin": 6157,
+    "text_end": 6229,
+    "pronounce_text_begin": 5980,
+    "pronounce_text_end": 6050
+  },
+  {
+    "text": "把你 Agent 的上下文，造得像一套内存分层。准确率，自然就跟上来了。",
+    "pronounce_text": "把你Agent的上下文，造得像一套内存分层。准确率，自然就跟上来了。",
+    "time_begin": 1202220,
+    "time_end": 1208946.6666666667,
+    "text_begin": 6229,
+    "text_end": 6265,
+    "pronounce_text_begin": 6050,
+    "pronounce_text_end": 6084
+  },
+  {
+    "text": "回过头看这一整套，你会发现它真正颠覆的不是\"工具数量\"这个表面问题。",
+    "pronounce_text": "回过头看这一整套，你会发现它真正颠覆的不是\"工具数量\"这个表面问题。",
+    "time_begin": 1209096,
+    "time_end": 1216925.6145124717,
+    "text_begin": 6265,
+    "text_end": 6299,
+    "pronounce_text_begin": 6084,
+    "pronounce_text_end": 6118
+  },
+  {
+    "text": "别人忙着给 Agent 加到三十个工具，真正赢的那个只给了一个。",
+    "pronounce_text": "别人忙着给Agent加到三十个工具，真正赢的那个只给了一个。",
+    "time_begin": 1217088,
+    "time_end": 1221840.970521542,
+    "text_begin": 6299,
+    "text_end": 6331,
+    "pronounce_text_begin": 6118,
+    "pronounce_text_end": 6148
+  },
+  {
+    "text": "但他赢，不是因为工具少,而是因为他想清楚了一件事：Agent 的上限,不在它能调多少工具,而在你有没有把任务分布,像 CPU 缓存一样,分层压进它的上下文里。",
+    "pronounce_text": "但他赢，不是因为工具少,而是因为他想清楚了一件事：Agent的上限,不在它能调多少工具,而在你有没有把任务分布,像CPU缓存一样,分层压进它的上下文里。",
+    "time_begin": 1221984,
+    "time_end": 1235746.3129251702,
+    "text_begin": 6331,
+    "text_end": 6410,
+    "pronounce_text_begin": 6148,
+    "pronounce_text_end": 6224
+  },
+  {
+    "text": "热的常驻在 L1，温的在 L2 按需取，冷的留一条能 grep 到的逃生舱。",
+    "pronounce_text": "热的常驻在L一，温的在L二按需取，冷的留一条能grep到的逃生舱。",
+    "time_begin": 1235916,
+    "time_end": 1242468.5170068028,
+    "text_begin": 6410,
+    "text_end": 6448,
+    "pronounce_text_begin": 6224,
+    "pronounce_text_end": 6257
+  },
+  {
+    "text": "一个好的 Agent，就是它所处理任务分布的一次忠实压缩。这句话，到这里，应该不再抽象了。",
+    "pronounce_text": "一个好的Agent，就是它所处理任务分布的一次忠实压缩。这句话，到这里，应该不再抽象了。",
+    "time_begin": 1242612,
+    "time_end": 1250778.3038548753,
+    "text_begin": 6448,
+    "text_end": 6493,
+    "pronounce_text_begin": 6257,
+    "pronounce_text_end": 6301
+  },
+  {
+    "text": "如果你也在造自己的 Agent，别急着往里加工具，先去回答那三个问题——你的 L1、L2、L3，各放什么。",
+    "pronounce_text": "如果你也在造自己的Agent，别急着往里加工具，先去回答那三个问题。你的L一、L二、L三，各放什么。",
+    "time_begin": 1250928,
+    "time_end": 1261358.2494331065,
+    "text_begin": 6493,
+    "text_end": 6546,
+    "pronounce_text_begin": 6301,
+    "pronounce_text_end": 6351
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 1261512,
+    "time_end": 1267205.3786848073,
+    "text_begin": 6546,
+    "text_end": 6573,
+    "pronounce_text_begin": 6351,
+    "pronounce_text_end": 6377
+  }
+]

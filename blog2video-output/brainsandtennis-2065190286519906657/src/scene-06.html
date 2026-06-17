@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有(长尾三档:头部酸亮 → 尾部渐弱)—— */
+[data-composition-id='s06'] .row .freq{font-family:'JetBrains Mono',monospace;font-size:23px;font-weight:500;letter-spacing:.03em;color:#8a8a85;margin-top:6px}
+[data-composition-id='s06'] .row.t1{border-color:#ccff4d;background:rgba(204,255,77,.06)} [data-composition-id='s06'] .row.t1 .n{color:#ccff4d}
+[data-composition-id='s06'] .row.t2{border-color:#2a2a2c} [data-composition-id='s06'] .row.t2 .n{color:#8a8a85}
+[data-composition-id='s06'] .row.t3{border-color:#2a2a2c;opacity:.92} [data-composition-id='s06'] .row.t3 .n{color:#8a8a85}
+[data-composition-id='s06'] .row .tw{font-family:'JetBrains Mono',monospace;font-size:21px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:14px;vertical-align:4px}
+[data-composition-id='s06'] .goal{margin-top:34px}
+[data-composition-id='s06'] .goal .bracket{padding:30px 34px}
+[data-composition-id='s06'] .goal .gt{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;letter-spacing:.05em;margin-bottom:14px}
+[data-composition-id='s06'] .goal .gt .acc{color:#ccff4d}
+[data-composition-id='s06'] .goal .gb{font-weight:900;font-size:44px;line-height:1.34;color:#edebe6}
+[data-composition-id='s06'] .goal .gb .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="48.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[06/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 用户的问题 · <span class="acc">不是均匀分布</span></div>
+      <div class="h1" style="margin-top:18px">他们给你的,是一条<span class="em">长尾</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row t1"><div class="n">01</div><div class="rb">
+          <div class="rt">最家常的操作 <span class="code">bread-and-butter</span></div>
+          <div class="freq">又高又胖的头部 · 每次会话的大头</div>
+        </div></div>
+
+        <div class="row t2"><div class="n">02</div><div class="rb">
+          <div class="rt">重要但少见 <span class="code">crucial-but-occasional</span></div>
+          <div class="freq">一次会话里偶尔才用一次</div>
+        </div></div>
+
+        <div class="row t3"><div class="n">03</div><div class="rb">
+          <div class="rt">罕见长尾 <span class="code">long tail</span><span class="tw">数量很多</span></div>
+          <div class="freq">每件各自稀有,但每件都还得做对</div>
+        </div></div>
+      </div>
+
+      <div class="goal">
+        <div class="bracket">
+          <div class="gt">// 真正的目标 · 比「<span class="acc">什么都备着</span>」更锋利</div>
+          <div class="gb">在整条任务分布上<span class="em">平均下来</span>,让每个任务花掉的上下文<span class="em">最少</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.055" data-track-index="5"><div class="sub-inner">但麻烦在于，用户拿来的问题，从来不是<span class="sub-k">均匀分布</span>的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.215" data-duration="2.215" data-track-index="5"><div class="sub-inner">他们给你的是一条<span class="sub-k">长尾</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.43" data-duration="8.862" data-track-index="5"><div class="sub-inner">每次打开你的 Agent，绝大多数时间在做的，是那几样最家常的操作，这是<span class="sub-k">又高又胖的头部</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.292" data-duration="3.626" data-track-index="5"><div class="sub-inner">然后是一些<span class="sub-k">重要但偶尔</span>才用一次的能力。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.083" data-duration="7.4" data-track-index="5"><div class="sub-inner">最后是长长的尾巴——每一件都很罕见，但这种事多得是，而且<span class="sub-k">每一件都还得能做对</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.643" data-duration="3.129" data-track-index="5"><div class="sub-inner">Agent 必须把这<span class="sub-k">整条尾巴全接住</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.772" data-duration="7.475" data-track-index="5"><div class="sub-inner">可它又不能一次性把所有东西全塞进上下文里——那就是前面说的，上下文塞太满，<span class="sub-k">信号被埋掉</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="38.407" data-duration="9.745" data-track-index="5"><div class="sub-inner">所以真正的目标比"什么都备着"要更锋利一点：在整条任务分布上平均下来，让每个任务花掉的<span class="sub-k">上下文最少</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 5.2, {y:20, d:.4, ease:'expo.out'});
+    /* 三档逐条 build,跟字幕一拍一拍出来 */
+    D2.enter(tl, R+'.row.t1', 7.6, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.row.t2', 16.4, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.row.t3', 20.2, {x:-24, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.row.t3 .tw', 23.0, {y:10, d:.3, ease:'power2.out'});
+    /* 目标晚到:38.4s 才揭 */
+    D2.enter(tl, R+'.goal', 38.5, {y:18, d:.42, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.215],['#sub-3',7.43],['#sub-4',16.292],['#sub-5',20.083],['#sub-6',27.643],['#sub-7',30.772],['#sub-8',38.407]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 48.3, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

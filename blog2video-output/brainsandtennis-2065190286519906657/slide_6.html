@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 56px;
+    }
+    .hl { color: #F59E0B; }
+    .longtail {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 52px;
+    }
+    .bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .bar .fill {
+      height: 64px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding-left: 22px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #0D0D1A;
+    }
+    .bar .head { width: 78%; background: #10B981; }
+    .bar .mid { width: 45%; background: #3B82F6; color:#FFFFFF; }
+    .bar .tail { width: 22%; background: #8B5CF6; color:#FFFFFF; }
+    .bar .cap { font-size: 24px; color: #B0B0CC; text-align:left; }
+    .goal {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 32px 28px;
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .goal b { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">用户的问题不是均匀分布的</div>
+    <div class="title">他们给你的，<br>是一条<span class="hl">长尾</span></div>
+    <div class="longtail">
+      <div class="bar"><div class="fill head">高频家常操作</div><div class="cap">又高又胖的头部</div></div>
+      <div class="bar"><div class="fill mid">偶尔才用一次</div><div class="cap">重要但少见</div></div>
+      <div class="bar"><div class="fill tail">罕见冷僻</div><div class="cap">长尾——每件都得做对</div></div>
+    </div>
+    <div class="goal">
+      整条尾巴必须全接住，又不能一次全塞进上下文。<br>
+      真正目标：<b>在整条任务分布上平均下来，每个任务花掉的上下文最少。</b>
+    </div>
+  </div>
+</body>
+</html>

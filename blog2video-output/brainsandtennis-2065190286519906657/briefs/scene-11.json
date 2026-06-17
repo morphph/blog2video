@@ -1,0 +1,106 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "principle",
+ "dataDuration": 112.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_11.html",
+ "topbarIndex": "[11/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 2.454,
+   "text": "但你不可能把所有东西都塞进 L1。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.604,
+   "localDuration": 15.899,
+   "text": "像条件格式、数据透视表、图表、数据校验、复制移动这些操作，每一样都重要，每次会话里都会冒出来那么几次，但每一样又都有足够多的细节，"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 18.703,
+   "localDuration": 4.369,
+   "text": "要是全写进系统提示词，就会拖累所有用不到它的任务。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 23.232,
+   "localDuration": 2.582,
+   "text": "这就是典型的第二层，L2。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.968,
+   "localDuration": 8.636,
+   "text": "他们的做法，是把这些能力写成一份份整理好的英文规范，按需才取，就跟 skill 文档一模一样。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 34.604,
+   "localDuration": 4.778,
+   "text": "模型在自己写的代码里调一句，就能把对应的文档拉进来。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 39.54,
+   "localDuration": 4.44,
+   "text": "但注意，这些不是把函数签名堆在一起的类型说明。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 43.98,
+   "localDuration": 10.425,
+   "text": "它们是手写的散文，每份几百行，讲的是把一件事做对的那条正确路子，包括那些原始 API 永远不会告诉你的知识。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 54.552,
+   "localDuration": 2.382,
+   "text": "拿数据透视表那份规范来说。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 56.934,
+   "localDuration": 4.763,
+   "text": "它不只是列方法，它是按正确的顺序，把整套配方教给你。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 61.86,
+   "localDuration": 15.167,
+   "text": "它会告诉你一些你本来只能靠反复栽跟头才学得到的事：比如你必须用一对挂起和恢复布局的命令，把这一批改动包住，否则每改一次，整张表就重建一次；再比如，"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 77.196,
+   "localDuration": 7.145,
+   "text": "聚合方式得传一个裸整数进去——比如8代表求和——因为运行时根本就没有那个友好的枚举值给你用。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 84.504,
+   "localDuration": 9.838,
+   "text": "这些都不是什么古怪的坑，这就是把透视表做对，本来该有的样子，只不过被一个已经替你踩过坑的人，提前写下来了一次。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 94.512,
+   "localDuration": 5.693,
+   "text": "而它最妙的性质是：在任务真正需要它之前，它一个 token 都不花。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 100.205,
+   "localDuration": 4.354,
+   "text": "一个从不碰透视表的任务，永远不必为透视表的文档买单。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 104.759,
+   "localDuration": 7.4,
+   "text": "调一句话，就是它全部的发现成本——一次缓存未命中，很快就被服务掉了。"
+  }
+ ]
+}

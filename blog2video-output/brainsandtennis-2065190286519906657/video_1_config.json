@@ -1,0 +1,23 @@
+{
+  "video_number": 1,
+  "title_zh": "谁都能写 Agent，好的为什么这么少？",
+  "slides": [
+    { "slide_number": 1,  "type": "cover" },
+    { "slide_number": 2,  "type": "image" },
+    { "slide_number": 3,  "type": "principle" },
+    { "slide_number": 4,  "type": "quote" },
+    { "slide_number": 5,  "type": "principle" },
+    { "slide_number": 6,  "type": "image" },
+    { "slide_number": 7,  "type": "principle" },
+    { "slide_number": 8,  "type": "principle" },
+    { "slide_number": 9,  "type": "image" },
+    { "slide_number": 10, "type": "image" },
+    { "slide_number": 11, "type": "principle" },
+    { "slide_number": 12, "type": "image" },
+    { "slide_number": 13, "type": "principle" },
+    { "slide_number": 14, "type": "comparison_cards" },
+    { "slide_number": 15, "type": "checklist" },
+    { "slide_number": 16, "type": "principle" },
+    { "slide_number": 17, "type": "summary" }
+  ]
+}

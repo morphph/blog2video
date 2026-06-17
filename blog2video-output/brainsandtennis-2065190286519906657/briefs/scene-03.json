@@ -1,0 +1,64 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "principle",
+ "dataDuration": 48.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_3.html",
+ "topbarIndex": "[03/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.259,
+   "text": "差距就在这里。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.25,
+   "localDuration": 2.878,
+   "text": "我前面说的那个四倍分歧不是笑话。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.128,
+   "localDuration": 11.332,
+   "text": "当市面上最流行的几个产品，在\"该配多少工具\"这种最基础的问题上都能差出四倍，这本身就是一个信号——这个领域根本没有公认的原则。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.615,
+   "localDuration": 1.688,
+   "text": "大家都是各凭手感。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.451,
+   "localDuration": 6.143,
+   "text": "写这篇文章的人,花了将近一年打磨 Shortcut 这个表格 Agent。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.594,
+   "localDuration": 6.807,
+   "text": "它被广泛认为是市面上最准的表格 Agent，部署在全球四大多策略对冲基金里的三家。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.601,
+   "localDuration": 5.693,
+   "text": "在那种地方，算错一个数字代价非常高，没人会给你的成绩放水。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 36.459,
+   "localDuration": 7.851,
+   "text": "他们没有微软或者 Anthropic 那种铺天盖地的渠道，靠的就是一件事——这个 Agent 出错更少。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 44.31,
+   "localDuration": 4.379,
+   "text": "所以\"怎么让 Agent 更准\"，是他每天都在琢磨的问题。"
+  }
+ ]
+}

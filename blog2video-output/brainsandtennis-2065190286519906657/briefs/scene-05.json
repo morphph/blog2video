@@ -1,0 +1,88 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "principle",
+ "dataDuration": 57.367,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_5.html",
+ "topbarIndex": "[05/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 1.467,
+   "text": "我们一步步来拆。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.633,
+   "localDuration": 4.745,
+   "text": "假设你既没有训练那个模型，也不拥有它运行的环境。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.378,
+   "localDuration": 10.678,
+   "text": "那留给你设计的，其实只剩三样东西：系统提示词、工具、还有各种素材，比如 skill、整理好的文档、参考资料。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.221,
+   "localDuration": 4.718,
+   "text": "而这三样本质上是同一样东西——Agent 的上下文。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.081,
+   "localDuration": 2.748,
+   "text": "于是游戏规则就变得很清楚了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.829,
+   "localDuration": 4.907,
+   "text": "模型固定不变的前提下，准确率就是上下文质量的函数。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.736,
+   "localDuration": 5.888,
+   "text": "上下文塞太满，信号会被噪声埋掉；上下文缺东西，模型只能靠猜。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.624,
+   "localDuration": 2.356,
+   "text": "这两头都在扣你的准确率。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.137,
+   "localDuration": 2.821,
+   "text": "而准确率，恰恰就是你卖的东西。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.958,
+   "localDuration": 4.138,
+   "text": "这里有个反直觉的点——它跟价值不是线性关系。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 45.096,
+   "localDuration": 6.207,
+   "text": "一个能做到百分之99的任务，价值是只能做到百分之95的那个的十倍。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 51.303,
+   "localDuration": 3.197,
+   "text": "差的就是那四个百分点，但它值十倍。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 54.661,
+   "localDuration": 2.535,
+   "text": "所以你不能不在那点脏活上较真。"
+  }
+ ]
+}

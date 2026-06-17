@@ -1,0 +1,160 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 140.233,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_9.html",
+ "topbarIndex": "[09/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 7.063,
+   "text": "第一层，L1，是那百分之80的家常活——读单元格，写单元格。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.212,
+   "localDuration": 4.417,
+   "text": "如果连读写单元格都做不到极致，后面全是空谈。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.629,
+   "localDuration": 4.416,
+   "text": "所以他们在这一层砸了荒谬的、不成比例的功夫。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.045,
+   "localDuration": 3.815,
+   "text": "我们就看一次读取，背后到底发生了什么。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.028,
+   "localDuration": 0.862,
+   "text": "先说读。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 20.89,
+   "localDuration": 5.822,
+   "text": "你可能以为，读一段两百行的表格，不就是把数据搬出来吗？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.712,
+   "localDuration": 3.665,
+   "text": "不是的——读取本身，就是一次压缩。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.54,
+   "localDuration": 1.386,
+   "text": "它做了三件事。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.088,
+   "localDuration": 1.754,
+   "text": "第一件，公式别名。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 33.842,
+   "localDuration": 8.769,
+   "text": "一列五百行的公式，A2 乘 B2、A3 乘 B3，这么排下去，是五百个几乎一模一样的公式。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 42.78,
+   "localDuration": 13.762,
+   "text": "他们把每个公式归一化成一种相对写法，于是这五百个全长成同一个样子，然后数一数，凡是出现超过十次的模式，就折叠成一个短别名，比如就叫 F1。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 56.712,
+   "localDuration": 6.439,
+   "text": "模型看到的，是重复的 F1 加上一行图例，而不是五百个公式。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 63.151,
+   "localDuration": 3.864,
+   "text": "token 省掉一大截，信息零损失。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 67.152,
+   "localDuration": 2.604,
+   "text": "第二件，免费的行列上下文。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 69.756,
+   "localDuration": 5.609,
+   "text": "当模型读一片光秃秃的数字，它怎么知道这些数字是什么意思？"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 75.565,
+   "localDuration": 8.851,
+   "text": "他们会自动向左扫出行标、向上扫出表头——表头还是靠投票选的，看附近哪一行的文字单元格最多。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 84.576,
+   "localDuration": 9.409,
+   "text": "于是模型白白拿到了\"地区、销量、单价、营收\"这种上下文，再也不用去猜一堆数字到底代表什么。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 94.152,
+   "localDuration": 1.707,
+   "text": "第三件，样式压缩。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 95.859,
+   "localDuration": 5.31,
+   "text": "格式本身也是信息——一个加粗的红色单元格在告诉你点什么。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 101.169,
+   "localDuration": 5.12,
+   "text": "但要是把每个单元格的完整样式都列出来，数值就全被淹了。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 106.428,
+   "localDuration": 7.017,
+   "text": "所以他们按相同样式把单元格分组，每组折叠成一块连通区域，一组只打一行。"
+  },
+  {
+   "id": "sub-22",
+   "localStart": 113.592,
+   "localDuration": 8.766,
+   "text": "最后的效果是这样的：六百个公式，变成一行图例；四百个带样式的单元格，变成两行。"
+  },
+  {
+   "id": "sub-23",
+   "localStart": 122.358,
+   "localDuration": 5.17,
+   "text": "而那个模型压根没主动要的表头，就乖乖躺在底下。"
+  },
+  {
+   "id": "sub-24",
+   "localStart": 127.728,
+   "localDuration": 4.8,
+   "text": "整张表，无损地，塞进了原始 dump 几分之一的 token 里。"
+  },
+  {
+   "id": "sub-25",
+   "localStart": 132.672,
+   "localDuration": 7.4,
+   "text": "每一个，都是那笔\"压缩换发现\"的交易，在最常用的场景上被赢得干干净净。"
+  }
+ ]
+}

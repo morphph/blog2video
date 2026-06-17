@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 24px;
+    }
+    .hl-green { color: #10B981; }
+    .code-big {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 56px;
+      font-weight: 800;
+      color: #10B981;
+      margin-bottom: 48px;
+    }
+    .reason {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239,68,68,0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 30px 28px;
+      font-size: 32px;
+      line-height: 1.5;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .reason b { color: #EF4444; }
+    .insight {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245,158,11,0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 30px 28px;
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .insight b { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">地基：从头到尾，就一个工具</div>
+    <div class="title">没有读取/写入/画图工具</div>
+    <div class="code-big">execute_code</div>
+    <div class="reason">
+      他们的实验一次次显示：<b>工具加得越多，模型反而越蠢。</b><br>
+      每加一个工具 = 多一份 schema、多一块犯迷糊的表面、多一种选错的可能。
+    </div>
+    <div class="insight">
+      不是"工具越少越好"的口号 —— 真正在做的，是把<b>"该选哪个工具"这个决策本身，当成噪声源删掉。</b>模型用一门编程语言的完整表达力去组合能力。
+    </div>
+  </div>
+</body>
+</html>

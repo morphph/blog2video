@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s05'] .three{display:flex;gap:18px;width:100%;margin-top:30px}
+[data-composition-id='s05'] .three .item{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 20px}
+[data-composition-id='s05'] .three .item .ih{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:27px;color:#ccff4d;letter-spacing:.02em}
+[data-composition-id='s05'] .three .item .id{margin-top:12px;font-weight:600;font-size:28px;color:#edebe6;line-height:1.35}
+[data-composition-id='s05'] .three .item .id .sm{display:block;margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85}
+[data-composition-id='s05'] .merge{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s05'] .merge .ar{color:#ccff4d;margin:0 12px}
+[data-composition-id='s05'] .merge .en{font-size:30px}
+[data-composition-id='s05'] .fail{margin-top:24px;display:flex;flex-direction:column;gap:14px;width:100%}
+[data-composition-id='s05'] .fail .fl{display:flex;align-items:baseline;gap:18px;font-weight:600;font-size:32px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s05'] .fail .fl .ft{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#edebe6;min-width:118px}
+[data-composition-id='s05'] .fail .fl .fk{color:#ff6b5e;font-weight:700}
+[data-composition-id='s05'] .vrow{margin-top:30px;display:flex;align-items:center;gap:26px;width:100%}
+[data-composition-id='s05'] .vrow .nums{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:78px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1;white-space:nowrap}
+[data-composition-id='s05'] .vrow .nums .vs{font-size:34px;color:#8a8a85;margin:0 8px}
+[data-composition-id='s05'] .vrow .vtx{font-weight:600;font-size:34px;color:#edebe6;line-height:1.38}
+[data-composition-id='s05'] .vrow .vtx .x10{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="57.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[05/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">你能设计的，只剩上下文</span></div>
+
+      <div class="three" style="margin-top:30px">
+        <div class="item t-a"><div class="ih">system prompt</div><div class="id">系统提示词</div></div>
+        <div class="item t-b"><div class="ih">tools</div><div class="id">工具<span class="sm">execute_code</span></div></div>
+        <div class="item t-c"><div class="ih">materials</div><div class="id">素材<span class="sm">skill / 文档 / 参考</span></div></div>
+      </div>
+      <div class="merge">这三样本质上是同一件事 <span class="ar">→</span> <span class="en">Agent 的上下文</span></div>
+
+      <div class="bracket" style="margin-top:34px">
+        <div class="lead">模型固定 <span class="dim">→</span> <span class="em">准确率 = f(上下文质量)</span></div>
+        <div class="fail">
+          <div class="fl"><span class="ft">塞太满</span>信号被<span class="fk">噪声</span>埋掉</div>
+          <div class="fl"><span class="ft">缺东西</span>模型只能<span class="fk">靠猜</span></div>
+        </div>
+      </div>
+
+      <div class="vrow">
+        <div class="nums" id="v99">99%<span class="vs">vs</span>95%</div>
+        <div class="vtx">差 4 个百分点，<br>价值却差 <span class="x10" id="vx">10</span> 倍 —— 非线性</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="1.467" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">一步步</span>来拆。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.633" data-duration="4.745" data-track-index="5"><div class="sub-inner">假设你既<span class="sub-k">没有</span>训练那个模型，也不拥有它运行的环境。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.378" data-duration="10.678" data-track-index="5"><div class="sub-inner">那留给你设计的，其实只剩<span class="sub-k">三样东西</span>：系统提示词、工具、还有各种素材，比如 skill、整理好的文档、参考资料。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.221" data-duration="4.718" data-track-index="5"><div class="sub-inner">而这三样本质上是同一样东西——<span class="sub-k">Agent 的上下文</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.081" data-duration="2.748" data-track-index="5"><div class="sub-inner">于是游戏规则就变得很<span class="sub-k">清楚</span>了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.829" data-duration="4.907" data-track-index="5"><div class="sub-inner">模型固定不变的前提下，准确率就是<span class="sub-k">上下文质量的函数</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.736" data-duration="5.888" data-track-index="5"><div class="sub-inner">上下文塞太满，信号会被<span class="sub-k">噪声</span>埋掉；上下文缺东西，模型只能靠猜。</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.624" data-duration="2.356" data-track-index="5"><div class="sub-inner">这两头都在<span class="sub-k">扣你的准确率</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="38.137" data-duration="2.821" data-track-index="5"><div class="sub-inner">而准确率，恰恰就是你<span class="sub-k">卖的东西</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.958" data-duration="4.138" data-track-index="5"><div class="sub-inner">这里有个反直觉的点——它跟价值<span class="sub-k">不是线性关系</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="45.096" data-duration="6.207" data-track-index="5"><div class="sub-inner">一个能做到百分之99的任务，价值是只能做到百分之95的那个的<span class="sub-k">十倍</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="51.303" data-duration="3.197" data-track-index="5"><div class="sub-inner">差的就是那四个百分点，但它<span class="sub-k">值十倍</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="54.661" data-duration="2.535" data-track-index="5"><div class="sub-inner">所以你不能不在那点<span class="sub-k">脏活</span>上较真。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .5, {y:-12, ease:'power2.out'});
+    /* 三样东西 —— 逐张 build,绑 sub-3(6.378) */
+    D2.enter(tl, R+'.t-a', 7.0, {y:18, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.t-b', 9.4, {y:18, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.t-c', 12.2, {y:18, d:.34, ease:'power2.out'});
+    /* 三样→同一件事(Agent 的上下文),绑 sub-4(17.221) */
+    D2.enter(tl, R+'.merge', 17.4, {y:14, d:.36, ease:'expo.out'});
+    /* 准确率函数原则,绑 sub-6(24.829) */
+    D2.enter(tl, R+'.bracket', 24.7, {y:20, d:.4, ease:'power3.out'});
+    /* bloat/missing 两行 —— 晚到子元素,绑 sub-7(29.736) */
+    D2.stagger(tl, R+'.fail .fl', 29.8, {x:-20, d:.32, step:.4, ease:'power3.out'});
+    /* 10x 大数据 —— 后段次级揭示,绑 sub-11(45.096) */
+    D2.enter(tl, R+'.vrow', 41.2, {y:18, d:.38, ease:'power3.out'});
+    D2.countUp(tl, R+'#vx', 45.3, 1, 10, 1.3, {suffix:''});
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',1.633],['#sub-3',6.378],['#sub-4',17.221],['#sub-5',22.081],['#sub-6',24.829],['#sub-7',29.736],['#sub-8',35.624],['#sub-9',38.137],['#sub-10',40.958],['#sub-11',45.096],['#sub-12',51.303],['#sub-13',54.661]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 57.367, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

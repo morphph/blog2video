@@ -1,0 +1,15 @@
+
+> blog2video-remotion@1.0.0 tts
+> node scripts/tts.mjs /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_script.md /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio.mp3
+
+Reading script: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_script.md
+Extracted 6759 characters for TTS (17 slides mapped)
+Calling MiniMax TTS API...
+Audio saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio.mp3 (19.3 MB)
+Fetching subtitle file from URL...
+Found 135 raw subtitle segments
+Raw subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio_minimax_raw_subtitles.json (135 segments)
+Slide map saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio_slide_map.json (17 slides)
+Sentence subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio_subtitles.json (213 sentences)
+VTT saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/video_1_audio.vtt
+Audio duration: 1267.2s

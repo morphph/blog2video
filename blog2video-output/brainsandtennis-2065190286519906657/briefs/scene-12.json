@@ -1,0 +1,70 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 63.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_12.html",
+ "topbarIndex": "[12/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.239,
+   "text": "L2 不只用在文档上。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.235,
+   "localDuration": 9.77,
+   "text": "同样这套思路，他们原封不动地搬到了那些\"延迟加载的工具\"上——网页搜索、网页抓取、生成网站这些。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.164,
+   "localDuration": 3.496,
+   "text": "它们的 schema 不会一直待在提示词里。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.66,
+   "localDuration": 2.701,
+   "text": "取而代之的，是一道元工具组成的墙。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.361,
+   "localDuration": 7.31,
+   "text": "模型得先用一个查询命令，把某个工具的 schema 取出来，这个工具才会被标记成\"已加载\"。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.808,
+   "localDuration": 4.289,
+   "text": "而如果你没先取就想直接调用，系统会直接拒绝你。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.236,
+   "localDuration": 4.368,
+   "text": "已经取过的那批工具，本质上就是一个会话级别的缓存。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.604,
+   "localDuration": 3.845,
+   "text": "模型加载一次 schema，从此它就常驻了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.588,
+   "localDuration": 11.452,
+   "text": "同样是\"压缩换发现\"那笔交易，同样的解法：把提示词保持得很小，真要用某个能力时，才付一次\"未命中\"的代价。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 50.18,
+   "localDuration": 12.822,
+   "text": "这里作者点了一句很值得记的话——这跟 Claude 上的\"延迟工具加载\"是同一个思路，但他们没有被绑死在某一家厂商的工具加载功能上，照样能拿到这个行为。"
+  }
+ ]
+}

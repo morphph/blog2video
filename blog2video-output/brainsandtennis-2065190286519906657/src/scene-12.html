@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .toollist{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+[data-composition-id='s12'] .toollist .tg{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;border:1px solid #2a2a2c;padding:6px 16px}
+[data-composition-id='s12'] .cache{margin-top:34px;width:100%;display:flex;align-items:center;gap:18px;background:rgba(204,255,77,.06);border:1px solid #ccff4d;padding:22px 30px}
+[data-composition-id='s12'] .cache .lab{font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:700;color:#ccff4d;letter-spacing:.03em}
+[data-composition-id='s12'] .cache .ds{font-weight:500;font-size:28px;color:#8a8a85;line-height:1.4}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="63.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[12/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// L2 · 同一招 → <span class="acc">deferred tools</span></div>
+      <div class="h1" style="margin-top:18px">一道<span class="em">元工具的墙</span></div>
+      <div class="toollist"><span class="tg">web_search</span><span class="tg">web_crawl</span><span class="tg">create_website</span></div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">先用 <span class="code">get_tool_info</span> 取出 schema</div>
+          <div class="rd">这个工具才被标记成「已取」</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">之后才能 <span class="code">execute_tool</span> 调用</div>
+          <div class="rd">schema 不常驻提示词</div>
+        </div></div>
+
+        <div class="row r3 warn"><div class="n">!!</div><div class="rb">
+          <div class="rt">没先取就直接调用</div>
+          <div class="rd"><span class="warn">系统直接拒绝</span></div>
+        </div></div>
+      </div>
+
+      <div class="cache">
+        <div>
+          <div class="lab">会话级缓存</div>
+          <div class="ds">加载一次,从此常驻 —— 同 Claude deferred tools,但不绑死某一家厂商</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.239" data-track-index="5"><div class="sub-inner">L2 不只用在<span class="sub-k">文档</span>上。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.235" data-duration="9.77" data-track-index="5"><div class="sub-inner">同样这套思路,他们原封不动地搬到了那些"延迟加载的工具"上——<span class="sub-k">网页搜索、网页抓取、生成网站</span>这些。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.164" data-duration="3.496" data-track-index="5"><div class="sub-inner">它们的 schema 不会一直待在<span class="sub-k">提示词</span>里。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.66" data-duration="2.701" data-track-index="5"><div class="sub-inner">取而代之的,是一道<span class="sub-k">元工具组成的墙</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.361" data-duration="7.31" data-track-index="5"><div class="sub-inner">模型得先用一个查询命令,把某个工具的 schema 取出来,这个工具才会被标记成<span class="sub-k">"已加载"</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.808" data-duration="4.289" data-track-index="5"><div class="sub-inner">而如果你没先取就想直接调用,系统会直接<span class="sub-k">拒绝</span>你。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.236" data-duration="4.368" data-track-index="5"><div class="sub-inner">已经取过的那批工具,本质上就是一个<span class="sub-k">会话级别的缓存</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.604" data-duration="3.845" data-track-index="5"><div class="sub-inner">模型加载一次 schema,从此它就<span class="sub-k">常驻</span>了。</div></div>
+    <div id="sub-9" class="clip sub" data-start="38.588" data-duration="11.452" data-track-index="5"><div class="sub-inner">同样是"压缩换发现"那笔交易,同样的解法:把提示词保持得很小,真要用某个能力时,才付一次<span class="sub-k">"未命中"</span>的代价。</div></div>
+    <div id="sub-10" class="clip sub" data-start="50.18" data-duration="12.822" data-track-index="5"><div class="sub-inner">这里作者点了一句很值得记的话——这跟 Claude 上的"延迟工具加载"是同一个思路,但他们没有被<span class="sub-k">绑死在某一家厂商</span>的工具加载功能上,照样能拿到这个行为。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.stagger(tl, R+'.toollist .tg', 3.4, {y:12, step:.18, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 18.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 22.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 25.9, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.cache', 30.4, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.cache .ds', 50.4, {y:12, d:.36, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.235],['#sub-3',12.164],['#sub-4',15.66],['#sub-5',18.361],['#sub-6',25.808],['#sub-7',30.236],['#sub-8',34.604],['#sub-9',38.588],['#sub-10',50.18]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 63.133, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

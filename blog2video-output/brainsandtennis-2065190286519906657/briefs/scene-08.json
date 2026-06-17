@@ -1,0 +1,100 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "principle",
+ "dataDuration": 93.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_8.html",
+ "topbarIndex": "[08/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.846,
+   "text": "在讲三层之前，得先说清楚这套东西踩在什么地基上。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.989,
+   "localDuration": 8.996,
+   "text": "所有这些表格操作——每一次读、每一次写、每一次查文档——背后都是同一个工具在执行代码。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.985,
+   "localDuration": 5.022,
+   "text": "模型写代码，代码调用他们的函数，函数去碰那张表。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.207,
+   "localDuration": 4.718,
+   "text": "没有什么读取工具、写入工具、画图工具。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.069,
+   "localDuration": 4.59,
+   "text": "从头到尾，就一个工具，API 全活在代码里。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.821,
+   "localDuration": 1.131,
+   "text": "为什么这么干？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.117,
+   "localDuration": 5.357,
+   "text": "因为他们自己的实验一次次显示：工具加得越多，模型反而越蠢。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.625,
+   "localDuration": 1.274,
+   "text": "这违反直觉。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.899,
+   "localDuration": 2.759,
+   "text": "我们的常识是能力越多越强。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.858,
+   "localDuration": 13.971,
+   "text": "但你想想，每加一个工具，就是往提示词里多塞一份 schema，多一块能让模型犯迷糊的表面，多一种选错的可能——尤其当几个工具的职责还互相重叠的时候。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 53.985,
+   "localDuration": 7.346,
+   "text": "一个 execute_code 工具，把这一堆乱七八糟全收成了一个决策——写代码就完事。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 61.331,
+   "localDuration": 6.846,
+   "text": "而且模型还能用一门编程语言的完整表达力去组合能力，而不是去拼接一堆僵硬的工具调用。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 68.313,
+   "localDuration": 3.968,
+   "text": "注意，这不是\"工具越少越好\"的口号。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 72.281,
+   "localDuration": 7.275,
+   "text": "他真正在做的，是把\"该选哪个工具\"这个决策本身，当成噪声源给删掉。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 79.725,
+   "localDuration": 14.064,
+   "text": "这件事对那三层很关键：因为模型永远在写代码，所谓 L1、L2、L3，无非就是它知道自己能调哪些函数、以及它为了找到这些函数费了多大劲。"
+  }
+ ]
+}

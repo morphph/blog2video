@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, rgba(13, 13, 26, 0) 70%);
+      pointer-events: none;
+    }
+    .title {
+      font-size: 84px;
+      font-weight: 900;
+      line-height: 1.25;
+      position: relative;
+      margin-bottom: 72px;
+    }
+    .hl { color: #F59E0B; }
+    .cards {
+      display: flex;
+      gap: 28px;
+      width: 100%;
+      position: relative;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 36px 24px;
+      text-align: left;
+    }
+    .card .big {
+      font-size: 64px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .card .desc {
+      font-size: 30px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="title">
+      谁都能写个 Agent，<br>
+      <span class="hl">一个下午的事</span>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="big">前四大</div>
+        <div class="desc">全球前四大对冲基金，<br>三家在用</div>
+      </div>
+      <div class="card">
+        <div class="big">1 个工具</div>
+        <div class="desc">差距不在模型多聪明，<br>而在枯燥的功夫</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 48.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_6.html",
+ "topbarIndex": "[06/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.055,
+   "text": "但麻烦在于，用户拿来的问题，从来不是均匀分布的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.215,
+   "localDuration": 2.215,
+   "text": "他们给你的是一条长尾。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.43,
+   "localDuration": 8.862,
+   "text": "每次打开你的 Agent，绝大多数时间在做的，是那几样最家常的操作，这是又高又胖的头部。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.292,
+   "localDuration": 3.626,
+   "text": "然后是一些重要但偶尔才用一次的能力。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.083,
+   "localDuration": 7.4,
+   "text": "最后是长长的尾巴——每一件都很罕见，但这种事多得是，而且每一件都还得能做对。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.643,
+   "localDuration": 3.129,
+   "text": "Agent 必须把这整条尾巴全接住。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.772,
+   "localDuration": 7.475,
+   "text": "可它又不能一次性把所有东西全塞进上下文里——那就是前面说的，上下文塞太满，信号被埋掉。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 38.407,
+   "localDuration": 9.745,
+   "text": "所以真正的目标比\"什么都备着\"要更锋利一点：在整条任务分布上平均下来，让每个任务花掉的上下文最少。"
+  }
+ ]
+}

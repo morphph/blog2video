@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .gaprow{display:flex;align-items:stretch;gap:18px;width:100%;margin-top:8px}
+[data-composition-id='s03'] .num-card{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 18px;text-align:center;min-width:0}
+[data-composition-id='s03'] .num-card .nn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:64px;line-height:1;color:#edebe6;font-variant-numeric:tabular-nums}
+[data-composition-id='s03'] .num-card .nl{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s03'] .gapx{flex:0 0 150px;background:rgba(255,107,94,.07);border:1px solid #ff6b5e;padding:26px 8px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+[data-composition-id='s03'] .gapx .gx{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:64px;line-height:1;color:#ff6b5e;font-variant-numeric:tabular-nums}
+[data-composition-id='s03'] .gapx .gl{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:22px;color:#ff6b5e}
+[data-composition-id='s03'] .pr-lead{margin-top:8px;font-weight:600;font-size:36px;line-height:1.4;color:#edebe6}
+[data-composition-id='s03'] .pr-lead .em{color:#ccff4d}
+[data-composition-id='s03'] .pr-lead .dim{color:#8a8a85;font-weight:500;font-size:30px}
+[data-composition-id='s03'] .auth{margin-top:30px}
+[data-composition-id='s03'] .auth .ah{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.04em;margin-bottom:14px}
+[data-composition-id='s03'] .auth .ah .acc{color:#ccff4d}
+[data-composition-id='s03'] .auth .arow{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s03'] .auth .anm{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:48px;color:#ccff4d}
+[data-composition-id='s03'] .auth .ad{font-weight:600;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s03'] .auth .ameta{margin-top:14px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s03'] .auth .ameta b{color:#edebe6;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="48.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[03/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// NO AGREED PRINCIPLE · <span class="acc">没有公认原则</span></div>
+      <div class="h2" style="margin-top:18px">最基础的问题<br>都能差出 <span class="em">四倍</span></div>
+
+      <div class="gaprow">
+        <div class="num-card nc1"><div class="nn">~30</div><div class="nl">Codex / Claude Code</div></div>
+        <div class="num-card nc2"><div class="nn">7</div><div class="nl">Pi</div></div>
+        <div class="gapx gx-card"><div class="gx">4×</div><div class="gl">分歧</div></div>
+      </div>
+
+      <div class="bracket" style="margin-top:28px">
+        <div class="pr-lead">差出四倍 = <span class="em">没有公认的原则</span></div>
+        <div class="pr-lead" style="margin-top:10px"><span class="dim">该配多少工具，大家都是各凭手感</span></div>
+      </div>
+
+      <div class="auth">
+        <div class="ah">// 那谁说了算 · <span class="acc">看谁更准</span></div>
+        <div class="arow">
+          <span class="anm">Shortcut</span><span class="ad">打磨近一年的表格 Agent</span>
+        </div>
+        <div class="ameta">公认最准，部署在<b>全球四大对冲基金里的三家</b></div>
+        <div class="ameta auth-late">算错一个数字代价极高，没渠道 — 靠的就是<b>出错更少</b></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.259" data-track-index="5"><div class="sub-inner"><span class="sub-k">差距</span>就在这里。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.25" data-duration="2.878" data-track-index="5"><div class="sub-inner">我前面说的那个<span class="sub-k">四倍分歧</span>不是笑话。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.128" data-duration="11.332" data-track-index="5"><div class="sub-inner">当市面上最流行的几个产品，在“该配多少工具”这种最基础的问题上都能差出四倍，这本身就是一个信号——这个领域<span class="sub-k">根本没有公认的原则</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.615" data-duration="1.688" data-track-index="5"><div class="sub-inner">大家都是<span class="sub-k">各凭手感</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.451" data-duration="6.143" data-track-index="5"><div class="sub-inner">写这篇文章的人,花了将近一年打磨 <span class="sub-k">Shortcut</span> 这个表格 Agent。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.594" data-duration="6.807" data-track-index="5"><div class="sub-inner">它被广泛认为是市面上<span class="sub-k">最准</span>的表格 Agent，部署在全球四大多策略对冲基金里的三家。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.601" data-duration="5.693" data-track-index="5"><div class="sub-inner">在那种地方，算错一个数字代价非常高，没人会给你的成绩<span class="sub-k">放水</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="36.459" data-duration="7.851" data-track-index="5"><div class="sub-inner">他们没有微软或者 Anthropic 那种铺天盖地的渠道，靠的就是一件事——这个 Agent <span class="sub-k">出错更少</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="44.31" data-duration="4.379" data-track-index="5"><div class="sub-inner">所以“怎么让 Agent 更准”，是他每天都在琢磨的<span class="sub-k">问题</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* beat 1: 分歧数据 + 原则 (sub-1..4, 0-17s) */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.nc1', 2.0, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.nc2', 2.5, {x:-22, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.gx-card', 3.1, {scale:.7, opacity:0, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 4.4, {y:20, d:.42, ease:'power3.out'});
+    /* beat 2: Shortcut 权威 (sub-5..9, 17-49s) — 晚到,藏到点 */
+    D2.enter(tl, R+'.auth .ah', 17.5, {y:-10, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.auth .arow', 18.4, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.auth .ameta:not(.auth-late)', 23.8, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.auth-late', 36.6, {y:14, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.25],['#sub-3',4.128],['#sub-4',15.615],['#sub-5',17.451],['#sub-6',23.594],['#sub-7',30.601],['#sub-8',36.459],['#sub-9',44.31]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 48.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

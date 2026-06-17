@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #8B5CF6;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+    .hl { color: #F59E0B; }
+    .layers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 44px;
+    }
+    .layer {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 26px 28px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-align: left;
+    }
+    .layer .tag { font-size: 44px; font-weight: 800; font-family:'JetBrains Mono',monospace; min-width: 90px; }
+    .layer .desc { font-size: 28px; color: #B0B0CC; line-height: 1.4; }
+    .l1 { border: 1px solid rgba(16,185,129,0.3); border-left: 4px solid #10B981; }
+    .l1 .tag { color: #10B981; }
+    .l2 { border: 1px solid rgba(59,130,246,0.3); border-left: 4px solid #3B82F6; }
+    .l2 .tag { color: #3B82F6; }
+    .l3 { border: 1px solid rgba(139,92,246,0.3); border-left: 4px solid #8B5CF6; }
+    .l3 .tag { color: #8B5CF6; }
+    .trade {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245,158,11,0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 30px 28px;
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .trade b { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">这问题 CPU 早遇过 —— 内存分层</div>
+    <div class="title">把上下文，造成<br><span class="hl">L1 / L2 / L3</span> 三层</div>
+    <div class="layers">
+      <div class="layer l1"><div class="tag">L1</div><div class="desc">最快最小的缓存，瞬间可拿到（最热的数据）</div></div>
+      <div class="layer l2"><div class="tag">L2</div><div class="desc">更大但更慢</div></div>
+      <div class="layer l3"><div class="tag">L3</div><div class="desc">再往下，主内存与硬盘（cache miss 才下沉）</div></div>
+    </div>
+    <div class="trade">
+      每项优化都是同一笔交易：<b>信息压缩，换发现速度。</b><br>
+      把每项能力，放到能让全分布总成本最低的那一层。
+    </div>
+  </div>
+</body>
+</html>

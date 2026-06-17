@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s11'] .b-lead{font-weight:600;font-size:38px;line-height:1.4;color:#edebe6}
+[data-composition-id='s11'] .b-lead .dim{color:#8a8a85}
+[data-composition-id='s11'] .caps{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+[data-composition-id='s11'] .cap{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;border:1px solid #2a2a2c;padding:5px 14px}
+[data-composition-id='s11'] .callk{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#5fd3e8}
+[data-composition-id='s11'] .callk .p{color:#ccff4d;margin-right:12px}
+[data-composition-id='s11'] .callk .cmt{color:#8a8a85;margin-left:14px}
+[data-composition-id='s11'] .gotcha{margin-top:24px;display:flex;flex-direction:column;gap:14px}
+[data-composition-id='s11'] .grow{display:flex;align-items:flex-start;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 28px}
+[data-composition-id='s11'] .grow .gn{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;color:#ccff4d;min-width:34px;line-height:1.3}
+[data-composition-id='s11'] .grow .gt{flex:1;min-width:0;font-weight:500;font-size:30px;line-height:1.38;color:#edebe6}
+[data-composition-id='s11'] .grow .gt code{font-family:'JetBrains Mono',monospace;font-size:.9em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 9px}
+[data-composition-id='s11'] .grow .gt .dim{color:#8a8a85}
+[data-composition-id='s11'] .zero{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="112.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[11/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// LAYER 2 · <span class="acc">重要但偶尔才用</span></div>
+      <div class="h2" style="margin-top:18px">整理好的英文文档<br><span class="em">按需才取</span></div>
+
+      <div class="bracket" style="margin-top:28px">
+        <div class="b-lead">不能什么都塞进 <span class="en">L1</span> — 每样都<span class="dim">表面积大</span>,只偶尔用</div>
+        <div class="caps">
+          <span class="cap">条件格式</span>
+          <span class="cap">数据透视表</span>
+          <span class="cap">图表</span>
+          <span class="cap">数据校验</span>
+          <span class="cap">复制移动</span>
+        </div>
+      </div>
+
+      <div class="callk">$ <span class="p"></span>getPivotTableInfo()<span class="cmt"># 一句调用拉进文档</span></div>
+
+      <div class="gotcha">
+        <div class="grow gr1"><div class="gn">›</div><div class="gt">批量改动用 <code>suspendLayout</code> / <code>resumeLayout</code> 包住 <span class="dim">— 否则每改一次整张表重建</span></div></div>
+        <div class="grow gr2"><div class="gn">›</div><div class="gt">聚合方式传裸整数 <code>8 = sum</code> <span class="dim">— 友好枚举运行时不存在</span></div></div>
+      </div>
+
+      <div class="status zero">
+        <span class="dot"></span>零 token 直到任务需要它 — 一句调用 = 一次 cache miss
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="2.454" data-track-index="5"><div class="sub-inner">但你不可能把所有东西都塞进 <span class="sub-k">L1</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.604" data-duration="15.899" data-track-index="5"><div class="sub-inner">像条件格式、数据透视表、图表、数据校验、复制移动这些操作，每一样都重要，每次会话里都会冒出来那么几次，但每一样又都有<span class="sub-k">足够多的细节</span>，</div></div>
+    <div id="sub-3" class="clip sub" data-start="18.703" data-duration="4.369" data-track-index="5"><div class="sub-inner">要是全写进系统提示词，就会拖累所有<span class="sub-k">用不到它的任务</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="23.232" data-duration="2.582" data-track-index="5"><div class="sub-inner">这就是典型的第二层，<span class="sub-k">L2</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.968" data-duration="8.636" data-track-index="5"><div class="sub-inner">他们的做法，是把这些能力写成一份份整理好的<span class="sub-k">英文规范</span>，按需才取，就跟 skill 文档一模一样。</div></div>
+    <div id="sub-6" class="clip sub" data-start="34.604" data-duration="4.778" data-track-index="5"><div class="sub-inner">模型在自己写的代码里<span class="sub-k">调一句</span>，就能把对应的文档拉进来。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.54" data-duration="4.44" data-track-index="5"><div class="sub-inner">但注意，这些不是把函数签名堆在一起的<span class="sub-k">类型说明</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="43.98" data-duration="10.425" data-track-index="5"><div class="sub-inner">它们是手写的<span class="sub-k">散文</span>，每份几百行，讲的是把一件事做对的那条正确路子，包括那些原始 API 永远不会告诉你的知识。</div></div>
+    <div id="sub-9" class="clip sub" data-start="54.552" data-duration="2.382" data-track-index="5"><div class="sub-inner">拿<span class="sub-k">数据透视表</span>那份规范来说。</div></div>
+    <div id="sub-10" class="clip sub" data-start="56.934" data-duration="4.763" data-track-index="5"><div class="sub-inner">它不只是列方法，它是按正确的顺序，把<span class="sub-k">整套配方</span>教给你。</div></div>
+    <div id="sub-11" class="clip sub" data-start="61.86" data-duration="15.167" data-track-index="5"><div class="sub-inner">它会告诉你一些你本来只能靠反复栽跟头才学得到的事：比如你必须用一对<span class="sub-k">挂起和恢复布局</span>的命令，把这一批改动包住，否则每改一次，整张表就重建一次；再比如，</div></div>
+    <div id="sub-12" class="clip sub" data-start="77.196" data-duration="7.145" data-track-index="5"><div class="sub-inner">聚合方式得传一个<span class="sub-k">裸整数</span>进去——比如8代表求和——因为运行时根本就没有那个友好的枚举值给你用。</div></div>
+    <div id="sub-13" class="clip sub" data-start="84.504" data-duration="9.838" data-track-index="5"><div class="sub-inner">这些都不是什么古怪的坑，这就是把透视表<span class="sub-k">做对</span>，本来该有的样子，只不过被一个已经替你踩过坑的人，提前写下来了一次。</div></div>
+    <div id="sub-14" class="clip sub" data-start="94.512" data-duration="5.693" data-track-index="5"><div class="sub-inner">而它最妙的性质是：在任务真正需要它之前，它<span class="sub-k">一个 token 都不花</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="100.205" data-duration="4.354" data-track-index="5"><div class="sub-inner">一个从不碰透视表的任务，<span class="sub-k">永远不必</span>为透视表的文档买单。</div></div>
+    <div id="sub-16" class="clip sub" data-start="104.759" data-duration="7.4" data-track-index="5"><div class="sub-inner">调一句话，就是它全部的发现成本——一次<span class="sub-k">缓存未命中</span>，很快就被服务掉了。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* L2 是什么 / 为什么 —— 开场 */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 2.8, {y:20, d:.42, ease:'power3.out'});
+    /* 五个能力 cap 逐个 build,对齐 sub-2 列举 */
+    D2.stagger(tl, R+'.cap', 5.2, {y:12, d:.28, step:.5, ease:'power2.out'});
+    /* getXInfo 调用 —— 中段,对齐 sub-6「调一句拉进来」 */
+    D2.enter(tl, R+'.callk', 35.0, {y:16, d:.36, ease:'power3.out'});
+    /* 透视表两条坑 —— 次级揭示,对齐 sub-11 / sub-12 */
+    D2.enter(tl, R+'.gr1', 62.5, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.gr2', 77.6, {x:-22, d:.36, ease:'power2.out'});
+    /* 零 token 原则 —— 收尾,对齐 sub-14 */
+    D2.enter(tl, R+'.zero', 94.8, {y:14, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',2.604],['#sub-3',18.703],['#sub-4',23.232],['#sub-5',25.968],['#sub-6',34.604],['#sub-7',39.54],['#sub-8',43.98],['#sub-9',54.552],['#sub-10',56.934],['#sub-11',61.86],['#sub-12',77.196],['#sub-13',84.504],['#sub-14',94.512],['#sub-15',100.205],['#sub-16',104.759]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 112.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

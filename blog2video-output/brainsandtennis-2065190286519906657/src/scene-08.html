@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .one{margin-top:26px}
+[data-composition-id='s08'] .one .term-body{padding:34px 40px 38px}
+[data-composition-id='s08'] .one .exec{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:60px;color:#ccff4d;line-height:1.1;letter-spacing:-.01em}
+[data-composition-id='s08'] .one .exec .pp{color:#ccff4d}
+[data-composition-id='s08'] .one .chain{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;line-height:1.5}
+[data-composition-id='s08'] .one .chain .ar{color:#ccff4d;margin:0 12px}
+[data-composition-id='s08'] .one .chain b{color:#edebe6;font-weight:700}
+[data-composition-id='s08'] .gone{margin-top:24px;display:flex;flex-wrap:wrap;gap:16px;width:100%}
+[data-composition-id='s08'] .gone .gx{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;border:1px solid #2a2a2c;padding:8px 18px;text-decoration:line-through;text-decoration-color:#ff6b5e;text-decoration-thickness:2px}
+[data-composition-id='s08'] .why{margin-top:30px}
+[data-composition-id='s08'] .why .lead{font-size:38px}
+[data-composition-id='s08'] .why .cost{margin-top:20px;display:flex;flex-direction:column;gap:12px;width:100%}
+[data-composition-id='s08'] .why .cost .cl{display:flex;align-items:baseline;gap:18px;font-weight:600;font-size:30px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s08'] .why .cost .cl .cn{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ff6b5e;min-width:34px}
+[data-composition-id='s08'] .why .cost .cl b{color:#edebe6;font-weight:700}
+[data-composition-id='s08'] .close{margin-top:30px;font-weight:600;font-size:34px;color:#edebe6;line-height:1.42}
+[data-composition-id='s08'] .close .ex{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s08'] .close .l{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="93.933" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[08/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">地基:就一个工具</span></div>
+
+      <div class="term one">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">tools — 30 → 1</span></div>
+        <div class="term-body">
+          <div class="exec"><span class="pp">$</span> execute_code</div>
+          <div class="chain">模型写代码 <span class="ar">→</span> 代码调<b>函数</b> <span class="ar">→</span> 函数碰<b>那张表</b></div>
+        </div>
+      </div>
+
+      <div class="gone">
+        <span class="gx g1">read_range</span>
+        <span class="gx g2">write_range</span>
+        <span class="gx g3">make_chart</span>
+      </div>
+
+      <div class="bracket why" style="margin-top:30px">
+        <div class="lead">工具越多 <span class="dim">→</span> 模型反而<span class="em">越蠢</span></div>
+        <div class="cost">
+          <div class="cl c1"><span class="cn">+1</span>多一份 <b>schema</b> 占提示词</div>
+          <div class="cl c2"><span class="cn">+1</span>多一块<b>犯迷糊</b>的表面</div>
+          <div class="cl c3"><span class="cn">+1</span>多一种<b>选错</b>的可能 · 职责还重叠</div>
+        </div>
+      </div>
+
+      <div class="close">把"该选哪个工具"这个决策<span class="ex">删掉</span> —— 三层 <span class="l">L1·L2·L3</span> 都从写代码可达</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.846" data-track-index="5"><div class="sub-inner">在讲三层之前，得先说清楚这套东西踩在什么<span class="sub-k">地基</span>上。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.989" data-duration="8.996" data-track-index="5"><div class="sub-inner">所有这些表格操作——每一次读、每一次写、每一次查文档——背后都是<span class="sub-k">同一个工具</span>在执行代码。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.985" data-duration="5.022" data-track-index="5"><div class="sub-inner">模型写代码，代码调用他们的函数，函数去<span class="sub-k">碰那张表</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.207" data-duration="4.718" data-track-index="5"><div class="sub-inner">没有什么<span class="sub-k">读取工具、写入工具、画图工具</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.069" data-duration="4.59" data-track-index="5"><div class="sub-inner">从头到尾，就一个工具，<span class="sub-k">API 全活在代码里</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.821" data-duration="1.131" data-track-index="5"><div class="sub-inner">为什么这么干？</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.117" data-duration="5.357" data-track-index="5"><div class="sub-inner">因为他们自己的实验一次次显示：工具加得越多，模型反而<span class="sub-k">越蠢</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.625" data-duration="1.274" data-track-index="5"><div class="sub-inner">这违反直觉。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.899" data-duration="2.759" data-track-index="5"><div class="sub-inner">我们的常识是<span class="sub-k">能力越多越强</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.858" data-duration="13.971" data-track-index="5"><div class="sub-inner">但你想想，每加一个工具，就是往提示词里多塞一份 schema，多一块能让模型犯迷糊的表面，多一种<span class="sub-k">选错的可能</span>——尤其当几个工具的职责还互相重叠的时候。</div></div>
+    <div id="sub-11" class="clip sub" data-start="53.985" data-duration="7.346" data-track-index="5"><div class="sub-inner">一个 execute_code 工具，把这一堆乱七八糟全收成了<span class="sub-k">一个决策</span>——写代码就完事。</div></div>
+    <div id="sub-12" class="clip sub" data-start="61.331" data-duration="6.846" data-track-index="5"><div class="sub-inner">而且模型还能用一门编程语言的<span class="sub-k">完整表达力</span>去组合能力，而不是去拼接一堆僵硬的工具调用。</div></div>
+    <div id="sub-13" class="clip sub" data-start="68.313" data-duration="3.968" data-track-index="5"><div class="sub-inner">注意，这不是"<span class="sub-k">工具越少越好</span>"的口号。</div></div>
+    <div id="sub-14" class="clip sub" data-start="72.281" data-duration="7.275" data-track-index="5"><div class="sub-inner">他真正在做的，是把"该选哪个工具"这个决策本身，当成<span class="sub-k">噪声源</span>给删掉。</div></div>
+    <div id="sub-15" class="clip sub" data-start="79.725" data-duration="14.064" data-track-index="5"><div class="sub-inner">这件事对那三层很关键：因为模型永远在写代码，所谓 L1、L2、L3，无非就是它知道自己能调哪些函数、以及它为了找到这些函数<span class="sub-k">费了多大劲</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* 地基 kicker，绑 sub-1(0) */
+    D2.enter(tl, R+'.k-top', .5, {y:-12, ease:'power2.out'});
+    /* 就一个工具 execute_code 终端卡，绑 sub-2(4.989) */
+    D2.enter(tl, R+'.one', 5.4, {y:20, d:.42, ease:'expo.out'});
+    /* 链条 模型写代码→代码调函数→碰表，晚到子元素，绑 sub-3(13.985) */
+    D2.enter(tl, R+'.one .chain', 14.0, {y:14, d:.36, ease:'power3.out'});
+    /* 没有 read/write/chart 三个被划掉的工具，逐条 build，绑 sub-4(19.207) */
+    D2.enter(tl, R+'.g1', 19.4, {x:-18, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.g2', 20.4, {x:-18, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.g3', 21.4, {x:-18, d:.3, ease:'power2.out'});
+    /* 为什么(工具越多越蠢)原则面板，绑 sub-7(30.117) */
+    D2.enter(tl, R+'.why', 30.2, {y:20, d:.42, ease:'power3.out'});
+    /* 三条代价 —— 晚到子元素,逐条,绑 sub-10(39.858) */
+    D2.enter(tl, R+'.c1', 41.0, {x:-20, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.c2', 44.5, {x:-20, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.c3', 48.0, {x:-20, d:.32, ease:'power2.out'});
+    /* 收束:删掉决策 + 三层都从代码可达,绑 sub-14(72.281)/sub-15(79.725) */
+    D2.enter(tl, R+'.close', 72.6, {y:16, d:.4, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.989],['#sub-3',13.985],['#sub-4',19.207],['#sub-5',24.069],['#sub-6',28.821],['#sub-7',30.117],['#sub-8',35.625],['#sub-9',36.899],['#sub-10',39.858],['#sub-11',53.985],['#sub-12',61.331],['#sub-13',68.313],['#sub-14',72.281],['#sub-15',79.725]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 93.933, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

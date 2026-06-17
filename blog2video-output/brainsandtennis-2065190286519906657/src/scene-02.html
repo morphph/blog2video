@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s02'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 13px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="26.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[02/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 为什么这篇值得读</div>
+      <div class="h1" style="margin-top:18px">谁都在讲怎么搭 Agent,<br>没人讲怎么搭<span class="em">好</span>的</div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">一个 <span class="code">while</span> 循环套着模型</div>
+          <div class="rd">模型不停调工具,直到任务做完</div>
+          <div class="taglist"><span class="tg">文件系统</span><span class="tg">命令行</span><span class="tg">剩下自己折腾</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">一个下午就能写出来</div>
+          <div class="rd">大部分人也都写过了 —— 这类内容已经泛滥</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:38px">几乎没人在讲,怎么搭一个<span class="hl"><span class="bar"></span><span class="tx">好</span></span>的 Agent</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="1.897" data-track-index="5"><div class="sub-inner">先说说为什么<span class="sub-k">这篇值得读</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.067" data-duration="5.026" data-track-index="5"><div class="sub-inner">现在网上讲"怎么搭一个 Agent"的内容,已经多到<span class="sub-k">泛滥</span>了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.093" data-duration="9.549" data-track-index="5"><div class="sub-inner">一个 <span class="sub-k">while</span> 循环套着模型,模型不停调工具,直到任务做完,给它一个文件系统,给它一个命令行,剩下的它自己折腾。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.791" data-duration="3.522" data-track-index="5"><div class="sub-inner">这套东西<span class="sub-k">一个下午</span>就能写出来,大部分人也都写过了。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.463" data-duration="6.077" data-track-index="5"><div class="sub-inner">但你发现没有,几乎没有人在讲"怎么搭一个<span class="sub-k">好</span>的 Agent"。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 7.1, {x:-24, ease:'power3.out'});
+    D2.stagger(tl, R+'.r1 .taglist .tg', 11.0, {y:12, step:.14, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 16.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.punch', 20.6, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 21.4);
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',2.067],['#sub-3',7.093],['#sub-4',16.791],['#sub-5',20.463]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 26.7, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

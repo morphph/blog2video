@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有 —— */
+[data-composition-id='s13'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s13'] .reqs{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+[data-composition-id='s13'] .req{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;line-height:1.35;display:flex;gap:14px;align-items:flex-start}
+[data-composition-id='s13'] .req .ar{color:#ccff4d;flex-shrink:0}
+[data-composition-id='s13'] .colwrap{margin-top:26px}
+[data-composition-id='s13'] .col .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:54px;line-height:1;letter-spacing:-.01em}
+[data-composition-id='s13'] .col .big{color:#ccff4d} [data-composition-id='s13'] .col.alt .big{color:#5fd3e8}
+[data-composition-id='s13'] .col .cap{margin-top:12px;font-weight:600;font-size:28px;color:#edebe6;line-height:1.32}
+[data-composition-id='s13'] .col .note{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s13'] .grep{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+[data-composition-id='s13'] .grep .gc{font-family:'JetBrains Mono',monospace;font-size:21px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:3px 12px}
+[data-composition-id='s13'] .esc{margin-top:24px}
+[data-composition-id='s13'] .esc .term-l1{font-size:34px}
+[data-composition-id='s13'] .esc .quote{margin-top:8px;font-weight:700;font-size:34px;line-height:1.4;color:#edebe6}
+[data-composition-id='s13'] .esc .quote .em{color:#ccff4d}
+[data-composition-id='s13'] .esc .punch{margin-top:18px;font-weight:900;font-size:40px;line-height:1.3;color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="138.533" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[13/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker k-top">// L3 · <span class="acc">那条孤零零的长尾</span></div>
+      <div class="h2" style="margin-top:14px">按定义<span class="em">无法预判</span>,<br>但 Agent 还得<span class="em">能够到</span></div>
+
+      <div class="reqs">
+        <div class="req r-a"><span class="ar">›</span>给每行加一个小折线图概括趋势</div>
+        <div class="req r-b"><span class="ar">›</span>次坐标轴设对数刻度,只给第三组数据改色</div>
+        <div class="req r-c"><span class="ar">›</span>插超链接到命名区域,再把这些图形编组</div>
+      </div>
+
+      <div class="cols colwrap">
+        <div class="col c-tome">
+          <div class="ch">L3 · 原始大全</div>
+          <div class="big">70k 行</div>
+          <div class="cap">整个 <span class="en">Office.js</span> / <span class="en">SpreadJS</span> 倒到磁盘</div>
+          <div class="note tome-note">机器生成、啥都有,但<span style="color:#edebe6">没法当 prompt</span></div>
+        </div>
+        <div class="col alt c-skill">
+          <div class="ch">SKILL · 一张地图</div>
+          <div class="big">~100 行</div>
+          <div class="cap">教它用 <code>grep</code> 去挖那本大全</div>
+          <div class="grep">
+            <span class="gc">找方法</span><span class="gc">列命名空间</span><span class="gc">解析类型</span><span class="gc">枚举 enum</span>
+          </div>
+          <div class="note skill-note"><span style="color:#5fd3e8">3-6 次 grep</span> 精准捞出要的签名</div>
+        </div>
+      </div>
+
+      <div class="term esc">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">system-prompt · escape hatch</span></div>
+        <div class="term-body" style="padding:26px 32px 30px">
+          <div class="term-l1"><span class="p">$</span>NEVER guess — read the docs in FULL</div>
+          <div class="quote esc-q">包不住,就用<span class="em">原始 API</span>,别将就 <span class="en" style="font-size:.8em;color:#8a8a85">don't compromise</span></div>
+          <div class="punch esc-p">Agent 永远不该被卡死</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="2.454" data-track-index="5"><div class="sub-inner">然后，就是那条<span class="sub-k">长尾</span>了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.599" data-duration="4.713" data-track-index="5"><div class="sub-inner">那种你从没包装过、也没写过规范的、<span class="sub-k">孤零零的冷僻需求</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.312" data-duration="3.625" data-track-index="5"><div class="sub-inner">它没法被预料到——这是<span class="sub-k">长尾的定义</span>决定的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.937" data-duration="5.982" data-track-index="5"><div class="sub-inner">但 Agent 还是得有路能走到那儿，否则它就<span class="sub-k">一头撞墙，任务失败</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.071" data-duration="11.115" data-track-index="5"><div class="sub-inner">比如"给每一行加一个小折线图，概括它的趋势";比如"把图表的次坐标轴设成<span class="sub-k">对数刻度</span>，只给第三组数据重新上色";</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.339" data-duration="7.206" data-track-index="5"><div class="sub-inner">比如"从这个单元格插一个超链接到那个命名区域,再把这几个<span class="sub-k">图形组合</span>起来"。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.545" data-duration="4.803" data-track-index="5"><div class="sub-inner">这些都是真实存在、但极少被碰到的 <span class="sub-k">API 角落</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="40.507" data-duration="10.75" data-track-index="5"><div class="sub-inner">所以第三层 L3，就是那份完整的原始 API——整个 <span class="sub-k">Office.js</span>，或者整个 SpreadJS，全部倒到磁盘上。</div></div>
+    <div id="sub-9" class="clip sub" data-start="51.257" data-duration="3.827" data-track-index="5"><div class="sub-inner">这是一份机器生成的参考文档，足足<span class="sub-k">七万行长</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="55.084" data-duration="1.275" data-track-index="5"><div class="sub-inner">它包含了<span class="sub-k">一切</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="56.527" data-duration="5.438" data-track-index="5"><div class="sub-inner">但它也彻底没法当上下文用——你绝不可能把它<span class="sub-k">整个贴进提示词</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="62.107" data-duration="1.003" data-track-index="5"><div class="sub-inner">那<span class="sub-k">怎么办</span>？</div></div>
+    <div id="sub-13" class="clip sub" data-start="63.259" data-duration="7.4" data-track-index="5"><div class="sub-inner">诀窍是：你给它配一份 <span class="sub-k">skill</span>，一张简短的地图，教它怎么用 bash 的 grep 去挖这本大全。</div></div>
+    <div id="sub-14" class="clip sub" data-start="70.819" data-duration="2.798" data-track-index="5"><div class="sub-inner">这份 skill 大概<span class="sub-k">一百行</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="73.617" data-duration="9.513" data-track-index="5"><div class="sub-inner">它说清楚：这本大全是什么结构、每条方法和每个类型长什么样、针对每一类问题该用<span class="sub-k">哪条 grep 命令</span>去捞。</div></div>
+    <div id="sub-16" class="clip sub" data-start="83.275" data-duration="9.966" data-track-index="5"><div class="sub-inner">有了它，Agent 就从"几万行我根本读不了"，变成了"<span class="sub-k">三到六次 grep</span>，精准捞出我要的那个签名"。</div></div>
+    <div id="sub-17" class="clip sub" data-start="93.391" data-duration="9.234" data-track-index="5"><div class="sub-inner">这就是 L3 的访问成本——真实存在，但有上限，而且只有那些<span class="sub-k">罕见到要往这么深处探</span>的任务，才需要付。</div></div>
+    <div id="sub-18" class="clip sub" data-start="102.787" data-duration="7.686" data-track-index="5"><div class="sub-inner">系统提示词里还把这条<span class="sub-k">逃生通道</span>写得明明白白，让模型知道这条路存在、也知道什么时候该走它。</div></div>
+    <div id="sub-19" class="clip sub" data-start="110.473" data-duration="8.758" data-track-index="5"><div class="sub-inner">原话大意是：永远不要猜，把文档完整读一遍;如果包装好的 API 做不到，就用<span class="sub-k">原始 API，别将就</span>。</div></div>
+    <div id="sub-20" class="clip sub" data-start="119.383" data-duration="3.451" data-track-index="5"><div class="sub-inner">这最后一句，才是 <span class="sub-k">L3 全部的意义</span>所在。</div></div>
+    <div id="sub-21" class="clip sub" data-start="122.834" data-duration="2.417" data-track-index="5"><div class="sub-inner">Agent <span class="sub-k">永远不该被卡死</span>。</div></div>
+    <div id="sub-22" class="clip sub" data-start="125.395" data-duration="12.996" data-track-index="5"><div class="sub-inner">它可以在 L1 没命中，掉到 L2;就算整理好的规范也没写，它还能下沉到那本原始大全里去,最后用一个还算理智的<span class="sub-k">调用次数</span>，把答案捞出来。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // —— Act ① 长尾 / 无法预判 ——
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.0, {y:20, d:.42, ease:'expo.out'});
+    // 三个冷门请求示意,绑 sub-5 / sub-6 节奏
+    D2.enter(tl, R+'.r-a', 17.2, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.r-b', 21.0, {x:-22, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r-c', 28.5, {x:-22, d:.32, ease:'power3.out'});
+    // —— Act ② 70k 行原始大全 —— 绑 sub-8/9/11
+    D2.enter(tl, R+'.c-tome', 41.0, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.c-tome .big', 51.3, {scale:.7, opacity:0, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.tome-note', 56.7, {y:10, d:.3, ease:'power2.out'});
+    // —— Act ③ ~100 行 skill + grep 配方 —— 绑 sub-13/14/15/16
+    D2.enter(tl, R+'.c-skill', 63.4, {y:18, d:.4, ease:'power2.out'});
+    D2.enter(tl, R+'.c-skill .big', 70.8, {scale:.7, opacity:0, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.grep .gc', 73.8, {y:10, d:.28, step:.18, ease:'power2.out'});
+    D2.enter(tl, R+'.skill-note', 83.4, {y:10, d:.32, ease:'power3.out'});
+    // —— Act ④ 逃生舱 principle —— 绑 sub-18/19/21
+    D2.enter(tl, R+'.esc', 103.0, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.esc-q', 110.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.esc-p', 122.9, {scale:.85, opacity:0, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',2.599],['#sub-3',7.312],['#sub-4',10.937],['#sub-5',17.071],['#sub-6',28.339],['#sub-7',35.545],['#sub-8',40.507],['#sub-9',51.257],['#sub-10',55.084],['#sub-11',56.527],['#sub-12',62.107],['#sub-13',63.259],['#sub-14',70.819],['#sub-15',73.617],['#sub-16',83.275],['#sub-17',93.391],['#sub-18',102.787],['#sub-19',110.473],['#sub-20',119.383],['#sub-21',122.834],['#sub-22',125.395]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 138.533, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

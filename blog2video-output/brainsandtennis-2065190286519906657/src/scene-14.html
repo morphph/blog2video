@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有(三层预算阶梯,镜像频率曲线)—— */
+[data-composition-id='s14'] .tier{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;border-left:4px solid #2a2a2c;padding:26px 32px;width:100%}
+[data-composition-id='s14'] .tier .lv{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:38px;width:64px;color:#8a8a85;line-height:1}
+[data-composition-id='s14'] .tier .amt{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:62px;width:236px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1.04}
+[data-composition-id='s14'] .tier .amt small{display:block;margin-top:8px;font-family:'MiSans',sans-serif;font-weight:500;font-size:23px;color:#8a8a85}
+[data-composition-id='s14'] .tier .ds{flex:1;min-width:0;font-weight:500;font-size:27px;line-height:1.42;color:#8a8a85}
+[data-composition-id='s14'] .tier .ds code,[data-composition-id='s14'] .tier .ds .code{font-family:'JetBrains Mono',monospace;font-size:.9em;padding:1px 9px}
+[data-composition-id='s14'] .tier.t1{border-left-color:#ccff4d}
+[data-composition-id='s14'] .tier.t1 .lv,[data-composition-id='s14'] .tier.t1 .amt{color:#ccff4d}
+[data-composition-id='s14'] .tier.t2{border-left-color:#5fd3e8}
+[data-composition-id='s14'] .tier.t2 .lv,[data-composition-id='s14'] .tier.t2 .amt{color:#5fd3e8}
+[data-composition-id='s14'] .tier.t2 .ds code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+[data-composition-id='s14'] .tier.t3 .lv{color:#8a8a85}
+[data-composition-id='s14'] .tier.t3 .amt{color:#edebe6}
+[data-composition-id='s14'] .ladder{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:30px}
+[data-composition-id='s14'] .mirror{margin-top:26px;width:100%;background:#1c1c1e;border:1px solid #2a2a2c;border-left:4px solid #ccff4d;padding:24px 30px;font-weight:600;font-size:30px;line-height:1.46;color:#8a8a85}
+[data-composition-id='s14'] .mirror .em{color:#ccff4d;font-weight:800}
+[data-composition-id='s14'] .mirror .mono{font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="77.467" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[14/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// token 花在哪 <span class="acc">= 提示词的形状</span></div>
+      <div class="h1" style="margin-top:18px">整个预算,镜像<span class="em">那条频率曲线</span></div>
+
+      <div class="ladder">
+        <div class="tier t1">
+          <div class="lv">L1</div>
+          <div class="amt">几百行<small>每次调用常驻</small></div>
+          <div class="ds">核心读写 · <span class="code">execute_code</span> 契约 · 关键类型 + 每个任务都用的少数方法 · 执行与安全准则 —— 抠得最紧</div>
+        </div>
+        <div class="tier t2">
+          <div class="lv">L2</div>
+          <div class="amt">~50 行<small>白名单 + 指针</small></div>
+          <div class="ds">不是规范本身,是"祝福过"的方法白名单 + 指针:告诉 agent <span class="code">getXInfo(...)</span> 规范存在、何时取。正文不进 prompt,直到一次 <span class="code">console.log</span> 拉进来</div>
+        </div>
+        <div class="tier t3">
+          <div class="lv">L3</div>
+          <div class="amt">5 行<small>名字 + 描述</small></div>
+          <div class="ds"><span class="code">skill.md</span> 的名字 + 描述 + 散落引用。<span style="color:#edebe6">70k 行原始参考整份在硬盘,从不碰 prompt</span></div>
+        </div>
+      </div>
+
+      <div class="mirror">预算镜像频率曲线:大头花在 <span class="em">80% 常用</span>,一点点给 <span class="mono em">15%</span> 立路标,<span class="em">长尾几乎不花</span> —— 缓存分层一开始就预言的分配</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="6.425" data-track-index="5"><div class="sub-inner">值得看一眼 token 到底花在哪了，因为这套分层会直接体现在<span class="sub-k">系统提示词的形状</span>上。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.589" data-duration="14.958" data-track-index="5"><div class="sub-inner">提示词的主体是 <span class="sub-k">L1</span>，量级大概是几百行——核心读写操作、execute_code 的约定、关键的几个类型、还有几乎每个任务都会用到的那一小撮方法，外加执行和安全准则。</div></div>
+    <div id="sub-3" class="clip sub" data-start="21.709" data-duration="5.101" data-track-index="5"><div class="sub-inner">这部分每次调用都常驻，所以也是他们<span class="sub-k">拼了命要压紧</span>的地方。</div></div>
+    <div id="sub-4" class="clip sub" data-start="26.965" data-duration="3.318" data-track-index="5"><div class="sub-inner">L2 是叠在上面薄薄一层，大概<span class="sub-k">五十行</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.283" data-duration="10.827" data-track-index="5"><div class="sub-inner">注意，这五十行不是规范本身,而是一份"祝福过"的<span class="sub-k">方法白名单</span>,加上几个指针——告诉 Agent 那些文档存在、什么时候该去取。</div></div>
+    <div id="sub-6" class="clip sub" data-start="41.257" data-duration="3.905" data-track-index="5"><div class="sub-inner">规范的实际内容，在被调出来之前，<span class="sub-k">根本不进提示词</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="45.325" data-duration="8.028" data-track-index="5"><div class="sub-inner">L3 基本就<span class="sub-k">五行</span>——那份 skill 文档的名字和描述，外加散落别处的一些参考指引。</div></div>
+    <div id="sub-8" class="clip sub" data-start="53.353" data-duration="5.351" data-track-index="5"><div class="sub-inner">而那份七万行的原始参考，整个躺在磁盘上,<span class="sub-k">永远不碰提示词</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="58.861" data-duration="13.46" data-track-index="5"><div class="sub-inner">所以你看，整个预算，正好镜像了那条频率曲线：绝大部分提示词花在<span class="sub-k">百分之80的常用场景</span>上,一点点用来给那百分之15立路标,几乎没有花在长尾上。</div></div>
+    <div id="sub-10" class="clip sub" data-start="72.469" data-duration="4.846" data-track-index="5"><div class="sub-inner">这恰恰就是<span class="sub-k">缓存分层</span>那套框架，一开始就预言的分配方式。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.2, {y:20, d:.42, ease:'expo.out'});
+    /* L1 卡随 sub-2 进;描述本来就在卡里一起淡入 */
+    D2.enter(tl, R+'.tier.t1', 6.9, {x:-22, d:.42, ease:'power3.out'});
+    /* L2 卡随 sub-4/5 进;getXInfo+console.log 指针行整卡一起淡入 */
+    D2.enter(tl, R+'.tier.t2', 27.2, {x:-22, d:.42, ease:'power2.out'});
+    /* L3 卡随 sub-7 进;70k 硬盘那句一起淡入 */
+    D2.enter(tl, R+'.tier.t3', 45.5, {x:-22, d:.4, ease:'power4.out'});
+    /* 镜像频率曲线 status 晚到,绑 sub-9 */
+    D2.enter(tl, R+'.mirror', 59.0, {y:16, d:.42, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',6.589],['#sub-3',21.709],['#sub-4',26.965],['#sub-5',30.283],['#sub-6',41.257],['#sub-7',45.325],['#sub-8',53.353],['#sub-9',58.861],['#sub-10',72.469]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 77.467, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

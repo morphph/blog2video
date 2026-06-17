@@ -1,0 +1,142 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "principle",
+ "dataDuration": 138.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_13.html",
+ "topbarIndex": "[13/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 2.454,
+   "text": "然后，就是那条长尾了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.599,
+   "localDuration": 4.713,
+   "text": "那种你从没包装过、也没写过规范的、孤零零的冷僻需求。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.312,
+   "localDuration": 3.625,
+   "text": "它没法被预料到——这是长尾的定义决定的。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.937,
+   "localDuration": 5.982,
+   "text": "但 Agent 还是得有路能走到那儿，否则它就一头撞墙，任务失败。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.071,
+   "localDuration": 11.115,
+   "text": "比如\"给每一行加一个小折线图，概括它的趋势\";比如\"把图表的次坐标轴设成对数刻度，只给第三组数据重新上色\";"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.339,
+   "localDuration": 7.206,
+   "text": "比如\"从这个单元格插一个超链接到那个命名区域,再把这几个图形组合起来\"。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 35.545,
+   "localDuration": 4.803,
+   "text": "这些都是真实存在、但极少被碰到的 API 角落。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 40.507,
+   "localDuration": 10.75,
+   "text": "所以第三层 L3，就是那份完整的原始 API——整个 Office.js，或者整个 SpreadJS，全部倒到磁盘上。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 51.257,
+   "localDuration": 3.827,
+   "text": "这是一份机器生成的参考文档，足足七万行长。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 55.084,
+   "localDuration": 1.275,
+   "text": "它包含了一切。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 56.527,
+   "localDuration": 5.438,
+   "text": "但它也彻底没法当上下文用——你绝不可能把它整个贴进提示词。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 62.107,
+   "localDuration": 1.003,
+   "text": "那怎么办？"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 63.259,
+   "localDuration": 7.4,
+   "text": "诀窍是：你给它配一份 skill，一张简短的地图，教它怎么用 bash 的 grep 去挖这本大全。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 70.819,
+   "localDuration": 2.798,
+   "text": "这份 skill 大概一百行。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 73.617,
+   "localDuration": 9.513,
+   "text": "它说清楚：这本大全是什么结构、每条方法和每个类型长什么样、针对每一类问题该用哪条 grep 命令去捞。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 83.275,
+   "localDuration": 9.966,
+   "text": "有了它，Agent 就从\"几万行我根本读不了\"，变成了\"三到六次 grep，精准捞出我要的那个签名\"。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 93.391,
+   "localDuration": 9.234,
+   "text": "这就是 L3 的访问成本——真实存在，但有上限，而且只有那些罕见到要往这么深处探的任务，才需要付。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 102.787,
+   "localDuration": 7.686,
+   "text": "系统提示词里还把这条逃生通道写得明明白白，让模型知道这条路存在、也知道什么时候该走它。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 110.473,
+   "localDuration": 8.758,
+   "text": "原话大意是：永远不要猜，把文档完整读一遍;如果包装好的 API 做不到，就用原始 API，别将就。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 119.383,
+   "localDuration": 3.451,
+   "text": "这最后一句，才是 L3 全部的意义所在。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 122.834,
+   "localDuration": 2.417,
+   "text": "Agent 永远不该被卡死。"
+  },
+  {
+   "id": "sub-22",
+   "localStart": 125.395,
+   "localDuration": 12.996,
+   "text": "它可以在 L1 没命中，掉到 L2;就算整理好的规范也没写，它还能下沉到那本原始大全里去,最后用一个还算理智的调用次数，把答案捞出来。"
+  }
+ ]
+}

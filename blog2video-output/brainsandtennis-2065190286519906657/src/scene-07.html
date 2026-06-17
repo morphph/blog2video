@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有(L1/L2/L3 三层缓存 + 压缩↔发现速度 权衡)—— */
+[data-composition-id='s07'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s07'] .tiers{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:34px}
+[data-composition-id='s07'] .tier{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+[data-composition-id='s07'] .tier .lv{flex-shrink:0;width:108px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#8a8a85;letter-spacing:-.01em}
+[data-composition-id='s07'] .tier .tb{flex:1;min-width:0}
+[data-composition-id='s07'] .tier .tn{font-weight:700;font-size:36px;color:#edebe6;line-height:1.26}
+[data-composition-id='s07'] .tier .cost{margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s07'] .tier .cost .cy{color:#5fd3e8}
+[data-composition-id='s07'] .tier .badge{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 12px;vertical-align:5px}
+[data-composition-id='s07'] .tier.l1{border-color:#ccff4d;background:rgba(204,255,77,.06)} [data-composition-id='s07'] .tier.l1 .lv{color:#ccff4d}
+[data-composition-id='s07'] .tier.l3{opacity:.94}
+[data-composition-id='s07'] .miss{margin-top:18px;display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s07'] .miss .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s07'] .miss .mk{color:#5fd3e8}
+[data-composition-id='s07'] .trade{margin-top:30px}
+[data-composition-id='s07'] .trade .gt{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;letter-spacing:.05em;margin-bottom:14px}
+[data-composition-id='s07'] .trade .gt .acc{color:#ccff4d}
+[data-composition-id='s07'] .trade .gb{font-weight:900;font-size:46px;line-height:1.3;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap;gap:0 6px}
+[data-composition-id='s07'] .trade .gb .em{color:#ccff4d}
+[data-composition-id='s07'] .trade .gb .ar{color:#5fd3e8;margin:0 14px;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="84.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[07/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 这问题 CPU 早遇过 · <span class="acc">内存分层</span></div>
+      <div class="h2" style="margin-top:18px">把上下文,造成 <span class="en">L1 / L2 / L3</span> 三层</div>
+
+      <div class="tiers">
+        <div class="tier l1"><div class="lv">L1</div><div class="tb">
+          <div class="tn">最快最小的缓存,瞬间可拿到<span class="badge">最热的数据</span></div>
+          <div class="cost c1"><span class="cy">即时可用</span> · 但每个任务都得为它付提示词 token</div>
+        </div></div>
+
+        <div class="tier l2"><div class="lv">L2</div><div class="tb">
+          <div class="tn">更大但更慢的下一层</div>
+        </div></div>
+
+        <div class="tier l3"><div class="lv">L3</div><div class="tb">
+          <div class="tn">再往下,主内存与硬盘(罕见长尾)</div>
+          <div class="cost c3">平时<span class="cy">零成本</span> · 真要用时得花几次工具调用才找到</div>
+        </div></div>
+      </div>
+
+      <div class="miss"><span class="dot"></span><span class="mk">cache miss</span> · 要的不在快层、得下沉去慢层取</div>
+
+      <div class="trade">
+        <div class="bracket">
+          <div class="gt">// 每项优化 · <span class="acc">几乎都是同一笔交易</span></div>
+          <div class="gb"><span class="em">信息压缩</span><span class="ar">→</span><span class="em">发现速度</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="3.174" data-track-index="5"><div class="sub-inner">这个问题，其实 <span class="sub-k">CPU 早就遇到过</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.319" data-duration="5.566" data-track-index="5"><div class="sub-inner">一个程序可能要碰到好几个 G 的数据，但<span class="sub-k">紧挨着处理器的那块存储非常小</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.085" data-duration="13.507" data-track-index="5"><div class="sub-inner">所以计算机把内存分了层：一小块、瞬间就能拿到的缓存，叫 <span class="sub-k">L1</span>；下面是更大但更慢的 L2、L3；再往下才是主内存和硬盘。</div></div>
+    <div id="sub-4" class="clip sub" data-start="22.759" data-duration="1.46" data-track-index="5"><div class="sub-inner">这套<span class="sub-k">为什么管用</span>？</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.219" data-duration="8.761" data-track-index="5"><div class="sub-inner">因为访问也是长尾的——把最热的那批数据放在最快那一层，只有碰上罕见的东西，才<span class="sub-k">下沉去慢的那几层捞</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.127" data-duration="7.743" data-track-index="5"><div class="sub-inner">而当你要的东西不在快的那一层、得花代价去慢层取，这就叫一次<span class="sub-k">"缓存未命中"</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="40.87" data-duration="4.185" data-track-index="5"><div class="sub-inner">这恰恰是你在常用路径上<span class="sub-k">拼命想避免的成本</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="45.223" data-duration="3.179" data-track-index="5"><div class="sub-inner">Agent 应该长成<span class="sub-k">一模一样的结构</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="48.402" data-duration="3.884" data-track-index="5"><div class="sub-inner">把你的上下文，造成 <span class="sub-k">L1、L2、L3 三层</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="52.423" data-duration="6.286" data-track-index="5"><div class="sub-inner">而每一项优化，几乎都是在做同一笔交易：<span class="sub-k">信息压缩，换发现速度</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="58.709" data-duration="9.009" data-track-index="5"><div class="sub-inner">放进 L1，它瞬间可用，但代价是每个任务无论用不用，都得<span class="sub-k">为它付出提示词的 token</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="67.867" data-duration="7.11" data-track-index="5"><div class="sub-inner">推到 L3，平时一分钱不花，可真要用的时候，得<span class="sub-k">花好几次工具调用才能找到它</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="75.139" data-duration="7.044" data-track-index="5"><div class="sub-inner">你的活儿，就是把每一项能力，放到那个<span class="sub-k">能让全分布上总成本最低的层</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="82.183" data-duration="1.981" data-track-index="5"><div class="sub-inner">这就是<span class="sub-k">全部的手艺</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* 开场:CPU 的难题 */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .9, {y:20, d:.4, ease:'expo.out'});
+    /* sub-3:把内存分了层 —— 三档逐格点亮 */
+    D2.enter(tl, R+'.tier.l1', 9.4, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.tier.l2', 13.4, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.tier.l3', 16.6, {x:-24, d:.34, ease:'power2.out'});
+    /* sub-5:为什么管用 —— L1 上"最热的数据" badge 晚到 */
+    D2.enter(tl, R+'.tier.l1 .badge', 25.0, {scale:.6, opacity:0, d:.3, ease:'expo.out'});
+    /* sub-6:cache miss 珊瑚状态行 */
+    D2.enter(tl, R+'.miss', 33.4, {y:12, d:.34, ease:'power3.out'});
+    /* sub-10:权衡原则面板晚揭(信息压缩↔发现速度) */
+    D2.enter(tl, R+'.trade', 52.5, {y:18, d:.42, ease:'power2.out'});
+    /* sub-11:L1 的代价行 */
+    D2.enter(tl, R+'.tier.l1 .c1', 59.0, {y:10, d:.32, ease:'power2.out'});
+    /* sub-12:L3 的代价行 */
+    D2.enter(tl, R+'.tier.l3 .c3', 68.2, {y:10, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',3.319],['#sub-3',9.085],['#sub-4',22.759],['#sub-5',24.219],['#sub-6',33.127],['#sub-7',40.87],['#sub-8',45.223],['#sub-9',48.402],['#sub-10',52.423],['#sub-11',58.709],['#sub-12',67.867],['#sub-13',75.139],['#sub-14',82.183]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 84.333, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

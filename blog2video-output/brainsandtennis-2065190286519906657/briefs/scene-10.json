@@ -1,0 +1,130 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 111.767,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/brainsandtennis-2065190286519906657/slide_10.html",
+ "topbarIndex": "[10/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.697,
+   "text": "读完，再说写。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.696,
+   "localDuration": 1.698,
+   "text": "写比看起来难。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 3.563,
+   "localDuration": 8.546,
+   "text": "因为一次执行代码，可能改掉上百个单元格，而 Agent 得知道自己到底改了什么，又不能把整张表重读一遍。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.109,
+   "localDuration": 6.575,
+   "text": "所以代码跑完之后，他们会递回来一份结构化的 diff，列出每一个被改动的单元格。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.827,
+   "localDuration": 4.544,
+   "text": "但关键不止于此——他们还把这份 diff 做了压缩和分诊。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.507,
+   "localDuration": 1.317,
+   "text": "怎么压缩的？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.824,
+   "localDuration": 3.733,
+   "text": "分组、采样，而不是一股脑全倒出来。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.557,
+   "localDuration": 6.367,
+   "text": "两百次写入，被归成寥寥几行，但 Agent 还是知道总数。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.063,
+   "localDuration": 1.434,
+   "text": "更妙的是分诊。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 36.497,
+   "localDuration": 4.097,
+   "text": "干净的写入，归在\"没问题的改动\"那一栏。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.751,
+   "localDuration": 8.596,
+   "text": "而任何看起来可疑的东西——一个无效公式、一个没标注的硬编码数字、一个藏在公式里的硬编码、"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 49.547,
+   "localDuration": 9.71,
+   "text": "一个离谱到不真实的百分比——都会被单独拎进\"需要复查\"那一栏，最严重的，直接标上\"必须修复\"。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 59.399,
+   "localDuration": 0.935,
+   "text": "举个例子。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 60.334,
+   "localDuration": 5.613,
+   "text": "两百个单元格改下来，第57行冒出来一个 #REF! 的报错。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 65.947,
+   "localDuration": 5.426,
+   "text": "这要是淹在一整片绿色的正常 diff 里，太容易被漏掉了。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 71.573,
+   "localDuration": 5.949,
+   "text": "但在这套机制下，它被顶到最上面，贴着一个\"必须修复\"的标签。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 77.687,
+   "localDuration": 8.306,
+   "text": "所以这个反馈循环，给的不是\"你改了什么\"，而是\"你改了什么、以及你大概率搞错的是哪一处\"。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 85.993,
+   "localDuration": 5.538,
+   "text": "这相当于给 Agent 自己的每一次编辑，内建了一个纠错员。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 91.691,
+   "localDuration": 13.553,
+   "text": "L1 一句话总结：处在频率曲线最陡那一段的操作，都被做成了特征工程过的、token 压到极致的、还会主动汇报后果的包装层，而且永久住在提示词里。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 105.407,
+   "localDuration": 6.204,
+   "text": "它们造起来很贵，但你还是得造——因为 Agent 每一个任务都在为它付代价。"
+  }
+ ]
+}

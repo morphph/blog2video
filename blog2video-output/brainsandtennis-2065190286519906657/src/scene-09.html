@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .formula{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;line-height:1.5}
+[data-composition-id='s09'] .formula .arr{color:#ccff4d;margin:0 10px}
+[data-composition-id='s09'] .formula b{color:#edebe6;font-weight:500}
+[data-composition-id='s09'] .alias{display:inline-flex;align-items:center;gap:12px;margin-top:12px}
+[data-composition-id='s09'] .alias .lg{font-family:'JetBrains Mono',monospace;font-size:22px;color:#8a8a85}
+[data-composition-id='s09'] .ctx{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s09'] .ctx .cc{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 14px}
+[data-composition-id='s09'] .res{display:flex;gap:18px;width:100%;margin-top:26px}
+[data-composition-id='s09'] .rcell{flex:1;background:rgba(95,211,232,.06);border:1px solid #5fd3e8;padding:24px 26px;text-align:center}
+[data-composition-id='s09'] .rcell .rn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:64px;color:#5fd3e8;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s09'] .rcell .rl{margin-top:10px;font-weight:500;font-size:26px;color:#edebe6;line-height:1.3}
+[data-composition-id='s09'] .rcell .rl b{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="140.233" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[09/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// L1 · 那 <span class="acc">80%</span> 的家常活</div>
+      <div class="h1" style="margin-top:14px">读单元格,就是一次<span class="em">压缩</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row a1"><div class="n">01</div><div class="rb">
+          <div class="rt">公式别名</div>
+          <div class="formula a1f">一列 500 行 <b>=A2*B2、=A3*B3</b> <span class="arr">→</span> 归一成相对写法</div>
+          <div class="alias a1a"><span class="code">F1</span><span class="lg">出现 &gt;10 次的模式 → 折叠成短别名 + 一行图例</span></div>
+        </div></div>
+
+        <div class="row a2"><div class="n">02</div><div class="rb">
+          <div class="rt">免费的行列上下文</div>
+          <div class="formula">向左扫行标 · 向上扫表头<span class="arr">·</span>表头靠投票(文字单元格最多那行)</div>
+          <div class="ctx a2c"><span class="cc">地区</span><span class="cc">销量</span><span class="cc">单价</span><span class="cc">营收</span></div>
+        </div></div>
+
+        <div class="row a3"><div class="n">03</div><div class="rb">
+          <div class="rt">样式压缩</div>
+          <div class="formula">按相同样式分组 <span class="arr">→</span> 折叠成连通区域,一组只打一行</div>
+        </div></div>
+      </div>
+
+      <div class="res a4">
+        <div class="rcell"><div class="rn" id="rn-formula">0</div><div class="rl">个公式 <b>→ 一行图例</b></div></div>
+        <div class="rcell"><div class="rn" id="rn-cells">0</div><div class="rl">个带样式单元格 <b>→ 两行</b></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="7.063" data-track-index="5"><div class="sub-inner">第一层，L1，是那百分之80的家常活——读单元格，<span class="sub-k">写单元格</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.212" data-duration="4.417" data-track-index="5"><div class="sub-inner">如果连读写单元格都做不到<span class="sub-k">极致</span>，后面全是空谈。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.629" data-duration="4.416" data-track-index="5"><div class="sub-inner">所以他们在这一层砸了荒谬的、<span class="sub-k">不成比例的功夫</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.045" data-duration="3.815" data-track-index="5"><div class="sub-inner">我们就看一次读取，<span class="sub-k">背后到底发生了什么</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.028" data-duration="0.862" data-track-index="5"><div class="sub-inner">先说<span class="sub-k">读</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.89" data-duration="5.822" data-track-index="5"><div class="sub-inner">你可能以为，读一段两百行的表格，不就是把<span class="sub-k">数据搬出来</span>吗？</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.712" data-duration="3.665" data-track-index="5"><div class="sub-inner">不是的——读取本身，就是一次<span class="sub-k">压缩</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.54" data-duration="1.386" data-track-index="5"><div class="sub-inner">它做了<span class="sub-k">三件事</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.088" data-duration="1.754" data-track-index="5"><div class="sub-inner">第一件，<span class="sub-k">公式别名</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="33.842" data-duration="8.769" data-track-index="5"><div class="sub-inner">一列五百行的公式，A2 乘 B2、A3 乘 B3，这么排下去，是<span class="sub-k">五百个几乎一模一样的公式</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.78" data-duration="13.762" data-track-index="5"><div class="sub-inner">他们把每个公式归一化成一种相对写法，于是这五百个全长成同一个样子，然后数一数，凡是出现超过十次的模式，就折叠成一个短别名，<span class="sub-k">比如就叫 F1</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="56.712" data-duration="6.439" data-track-index="5"><div class="sub-inner">模型看到的，是重复的 F1 加上<span class="sub-k">一行图例</span>，而不是五百个公式。</div></div>
+    <div id="sub-13" class="clip sub" data-start="63.151" data-duration="3.864" data-track-index="5"><div class="sub-inner">token 省掉一大截，<span class="sub-k">信息零损失</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="67.152" data-duration="2.604" data-track-index="5"><div class="sub-inner">第二件，<span class="sub-k">免费的行列上下文</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="69.756" data-duration="5.609" data-track-index="5"><div class="sub-inner">当模型读一片光秃秃的数字，它怎么知道这些数字是<span class="sub-k">什么意思</span>？</div></div>
+    <div id="sub-16" class="clip sub" data-start="75.565" data-duration="8.851" data-track-index="5"><div class="sub-inner">他们会自动向左扫出行标、向上扫出表头——表头还是<span class="sub-k">靠投票选的</span>，看附近哪一行的文字单元格最多。</div></div>
+    <div id="sub-17" class="clip sub" data-start="84.576" data-duration="9.409" data-track-index="5"><div class="sub-inner">于是模型白白拿到了"<span class="sub-k">地区、销量、单价、营收</span>"这种上下文，再也不用去猜一堆数字到底代表什么。</div></div>
+    <div id="sub-18" class="clip sub" data-start="94.152" data-duration="1.707" data-track-index="5"><div class="sub-inner">第三件，<span class="sub-k">样式压缩</span>。</div></div>
+    <div id="sub-19" class="clip sub" data-start="95.859" data-duration="5.31" data-track-index="5"><div class="sub-inner">格式本身也是信息——一个加粗的<span class="sub-k">红色单元格</span>在告诉你点什么。</div></div>
+    <div id="sub-20" class="clip sub" data-start="101.169" data-duration="5.12" data-track-index="5"><div class="sub-inner">但要是把每个单元格的完整样式都列出来，<span class="sub-k">数值就全被淹了</span>。</div></div>
+    <div id="sub-21" class="clip sub" data-start="106.428" data-duration="7.017" data-track-index="5"><div class="sub-inner">所以他们按相同样式把单元格分组，每组折叠成一块连通区域，<span class="sub-k">一组只打一行</span>。</div></div>
+    <div id="sub-22" class="clip sub" data-start="113.592" data-duration="8.766" data-track-index="5"><div class="sub-inner">最后的效果是这样的：六百个公式，变成一行图例；四百个带样式的单元格，<span class="sub-k">变成两行</span>。</div></div>
+    <div id="sub-23" class="clip sub" data-start="122.358" data-duration="5.17" data-track-index="5"><div class="sub-inner">而那个模型压根没主动要的表头，就<span class="sub-k">乖乖躺在底下</span>。</div></div>
+    <div id="sub-24" class="clip sub" data-start="127.728" data-duration="4.8" data-track-index="5"><div class="sub-inner">整张表，无损地，塞进了原始 dump <span class="sub-k">几分之一的 token</span> 里。</div></div>
+    <div id="sub-25" class="clip sub" data-start="132.672" data-duration="7.4" data-track-index="5"><div class="sub-inner">每一个，都是那笔"压缩换发现"的交易，在最常用的场景上被<span class="sub-k">赢得干干净净</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 26.9, {y:18, d:.4, ease:'expo.out'});   // "读取本身就是压缩" 揭示 (sub-7)
+    // act 1 — 公式别名 (sub-9 ~32s)
+    D2.enter(tl, R+'.a1', 32.0, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.a1f', 42.8, {y:10, d:.32, ease:'power2.out'});  // R1C1 归一化细节 (sub-11)
+    D2.enter(tl, R+'.a1a', 56.7, {y:10, d:.3, ease:'power2.out'});   // F1 + 图例 (sub-12)
+    // act 2 — 行列上下文 (sub-14 ~67s)
+    D2.enter(tl, R+'.a2', 67.1, {x:-22, ease:'expo.out'});
+    D2.stagger(tl, R+'.a2c .cc', 84.6, {y:12, step:.13, d:.28, ease:'power2.out'});  // 表头标签 (sub-17)
+    // act 3 — 样式压缩 (sub-18 ~94s)
+    D2.enter(tl, R+'.a3', 94.1, {x:-22, ease:'power3.out'});
+    // 末段结果数字 (sub-22 ~113.6s)
+    D2.enter(tl, R+'.a4', 113.6, {y:16, d:.4, ease:'power3.out'});
+    D2.countUp(tl, R+'#rn-formula', 114.1, 0, 600, 1.6, {});
+    D2.countUp(tl, R+'#rn-cells', 115.2, 0, 400, 1.6, {});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',7.212],['#sub-3',11.629],['#sub-4',16.045],['#sub-5',20.028],['#sub-6',20.89],['#sub-7',26.712],['#sub-8',30.54],['#sub-9',32.088],['#sub-10',33.842],['#sub-11',42.78],['#sub-12',56.712],['#sub-13',63.151],['#sub-14',67.152],['#sub-15',69.756],['#sub-16',75.565],['#sub-17',84.576],['#sub-18',94.152],['#sub-19',95.859],['#sub-20',101.169],['#sub-21',106.428],['#sub-22',113.592],['#sub-23',122.358],['#sub-24',127.728],['#sub-25',132.672]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 140.233, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

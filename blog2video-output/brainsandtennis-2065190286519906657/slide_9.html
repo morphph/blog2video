@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .label {
+      font-size: 30px;
+      color: #10B981;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .hl-green { color: #10B981; }
+    .sub { font-size: 30px; color: #6B7280; margin-bottom: 44px; }
+    .items {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    .item {
+      background: #1A1A2E;
+      border: 1px solid rgba(16,185,129,0.25);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .item .h { font-size: 30px; font-weight: 800; color: #10B981; margin-bottom: 8px; }
+    .item .d { font-size: 27px; color: #B0B0CC; line-height: 1.4; }
+    .item .d code { font-family:'JetBrains Mono',monospace; color:#FFFFFF; }
+    .result {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(245,158,11,0.3);
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 26px 28px;
+      text-align: left;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+    .result b { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">L1 · 那 80% 的家常活</div>
+    <div class="title">读单元格本身，<br>就是一次<span class="hl-green">压缩</span></div>
+    <div class="sub">读一次，背后做了三件事</div>
+    <div class="items">
+      <div class="item">
+        <div class="h">① 公式别名</div>
+        <div class="d">600 个相似公式 → R1C1 归一化后折叠成短别名 <code>F1</code> + 一行图例，信息零损失</div>
+      </div>
+      <div class="item">
+        <div class="h">② 免费的行列上下文</div>
+        <div class="d">自动扫出行标 + 表头（投票选），模型白拿"地区/销量/单价/营收"</div>
+      </div>
+      <div class="item">
+        <div class="h">③ 样式压缩</div>
+        <div class="d">按相同样式分组，折叠成连通区域，一组只打一行</div>
+      </div>
+    </div>
+    <div class="result">
+      <b>600 个公式 → 一行图例；400 个带样式单元格 → 两行。</b><br>
+      整张表无损塞进原始 dump 几分之一的 token。
+    </div>
+  </div>
+</body>
+</html>

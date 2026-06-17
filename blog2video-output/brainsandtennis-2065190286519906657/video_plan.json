@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Building a Good Vertical Agent",
+    "title_zh": "谁都能写 Agent，好的为什么这么少？",
+    "word_count": 3412,
+    "slug": "brainsandtennis-2065190286519906657"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇是一个连贯论证（好 Agent = 任务分布的忠实压缩 → L1/L2/L3 缓存分层 → 预算拆分 → 配方 → 分层下滑），各部分互相支撑同一 thesis，无可独立理解的子主题；用户确认保留单条完整版。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "谁都能写 Agent，好的为什么这么少？"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有(收官·summary)—— */
+[data-composition-id='s10'] .h1.xl{font-size:80px;line-height:1.1}
+[data-composition-id='s10'] .opik{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.45;letter-spacing:.02em}
+[data-composition-id='s10'] .opik b{color:#5fd3e8;font-weight:500}
+[data-composition-id='s10'] .rows{margin-top:22px}
+[data-composition-id='s10'] .row .rt{font-size:36px}
+[data-composition-id='s10'] .cmd{font-family:'JetBrains Mono',monospace;font-size:40px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .cmd .p{color:#ccff4d;margin-right:16px}
+[data-composition-id='s10'] .cmd2{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .cmd2 .ar{color:#8a8a85;margin-right:14px}
+[data-composition-id='s10'] .cmd2 .ok{color:#ccff4d}
+[data-composition-id='s10'] .slogan{margin-top:28px;font-weight:700;font-size:44px;color:#edebe6;line-height:1.4}
+[data-composition-id='s10'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s10'] .signoff{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="89.467" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[10/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 收官 ·<span class="acc">越用越硬的飞轮</span></div>
+      <div class="h1 xl" style="margin-top:16px">把调试变成<span class="em">自我修复</span>的飞轮</div>
+
+      <div class="opik">失败不再是负担,而是<b>让系统变强的燃料</b> · Opik 只是一个实现样本</div>
+
+      <div class="rows">
+        <div class="row r1"><span class="n">01</span><div class="rb"><div class="rt">失败 <span class="code">trace</span> 自动沉淀成回归测试</div></div></div>
+        <div class="row r2"><span class="n">02</span><div class="rb"><div class="rt">质量断言用大白话写,不比浮点数</div></div></div>
+        <div class="row r3"><span class="n">03</span><div class="rb"><div class="rt">测整张 <span class="code">Agent 图</span> 的反应,而非单次 prompt</div></div></div>
+      </div>
+
+      <div class="term ask" style="margin-top:28px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@agent: ~</span></div>
+        <div class="term-body" style="padding:34px 40px 38px">
+          <div class="cmd"><span class="p">$</span>我们上了可观测性</div>
+          <div class="cmd2 q1"><span class="ar">›</span>那看见之后呢?谁来修?</div>
+          <div class="cmd2 q2"><span class="ar">›</span>修完怎么<span class="ok">保证它记住</span><span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+
+      <div class="slogan">监控让你看见,是 2023 的终点;<span class="em">能自己跑完虚线右边那段,才真正值钱</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="5.566" data-track-index="5"><div class="sub-inner">回过头看,这套思路的精髓,其实跟 <span class="sub-k">trace</span> 本身没多大关系。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.74" data-duration="10.273" data-track-index="5"><div class="sub-inner">它真正做的,是把「调试」这件事,从一次性的手工消耗,变成一个能<span class="sub-k">自我修复、还越用越硬的飞轮</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.013" data-duration="5.022" data-track-index="5"><div class="sub-inner">失败不再是负担,失败变成了让系统<span class="sub-k">变强的燃料</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.184" data-duration="4.161" data-track-index="5"><div class="sub-inner"><span class="sub-k">Opik</span> 是把这套回路自动化的一个具体实现样本。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.504" data-duration="12.137" data-track-index="5"><div class="sub-inner">但你哪怕一行它的代码都不用,这套范式也值得刻进脑子里:失败 trace 要自动沉淀成<span class="sub-k">回归测试</span>;质量断言要用大白话写,而不是比浮点数;</div></div>
+    <div id="sub-6" class="clip sub" data-start="37.841" data-duration="5.31" data-track-index="5"><div class="sub-inner">要测的是整张 <span class="sub-k">Agent 图</span>被改动后的反应,而不是单次 prompt 的输出。</div></div>
+    <div id="sub-7" class="clip sub" data-start="43.288" data-duration="11.939" data-track-index="5"><div class="sub-inner">你的可观测性工具能告诉你 Agent 出了什么事,但「为什么坏、怎么修、保证不再坏」这三件最耗命的活,至今还压在你<span class="sub-k">一个人肩上</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="55.227" data-duration="4.169" data-track-index="5"><div class="sub-inner">真正的瓶颈,从来都在 <span class="sub-k">trace 落屏之后</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="59.56" data-duration="6.373" data-track-index="5"><div class="sub-inner">所以下次再有人跟你说「我们上了可观测性」,你可以反问一句:<span class="sub-k">那看见之后呢?</span></div></div>
+    <div id="sub-10" class="clip sub" data-start="65.933" data-duration="2.478" data-track-index="5"><div class="sub-inner">谁来修,修完怎么<span class="sub-k">保证它记住</span>?</div></div>
+    <div id="sub-11" class="clip sub" data-start="68.56" data-duration="4.715" data-track-index="5"><div class="sub-inner">监控让你看见问题,是 <span class="sub-k">2023 年</span>那个还算合理的终点。</div></div>
+    <div id="sub-12" class="clip sub" data-start="73.275" data-duration="4.192" data-track-index="5"><div class="sub-inner">可一旦 Agent 真正进了生产,<span class="sub-k">活才刚刚开始</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="77.467" data-duration="5.064" data-track-index="5"><div class="sub-inner">能把虚线右边那段自己跑完的系统,才是接下来<span class="sub-k">真正值钱的东西</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="82.672" data-duration="4.286" data-track-index="5"><div class="sub-inner">AI 世界很吵,<span class="sub-k">精读一篇,胜过刷一百条</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="86.958" data-duration="1.5" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* 升华句:kicker + 大字 + 燃料 lead(sub-1/2/3) */
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:22, d:.46, ease:'expo.out'});
+    D2.enter(tl, R+'.opik', 16.2, {y:16, d:.4, ease:'power3.out'});
+
+    /* 三范式逐条揭示(sub-5 边播边出,21–43s 区间避免长时无新元素) */
+    D2.enter(tl, R+'.r1', 26.0, {x:-18, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 31.5, {x:-18, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r3', 37.9, {x:-18, d:.34, ease:'power2.out'});
+
+    /* Closing 反问终端卡(sub-9/10) */
+    D2.enter(tl, R+'.ask', 59.6, {y:24, d:.46, ease:'expo.out'});
+    tl.from(R+'.ask .term-bar',{opacity:0,duration:.3,ease:'power1.out'},59.8);
+    D2.enter(tl, R+'.q1', 62.0, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.q2', 65.9, {x:-16, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 67.0, 14);
+
+    /* 2023→生产 价值升华(sub-11/12/13) */
+    D2.enter(tl, R+'.slogan', 73.3, {y:16, d:.42, ease:'power3.out'});
+
+    /* 品牌 outro(sub-14/15) */
+    D2.enter(tl, R+'.signoff', 82.7, {y:12, d:.34, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',5.74],['#sub-3',16.013],['#sub-4',21.184],['#sub-5',25.504],['#sub-6',37.841],['#sub-7',43.288],['#sub-8',55.227],['#sub-9',59.56],['#sub-10',65.933],['#sub-11',68.56],['#sub-12',73.275],['#sub-13',77.467],['#sub-14',82.672],['#sub-15',86.958]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 89.467, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

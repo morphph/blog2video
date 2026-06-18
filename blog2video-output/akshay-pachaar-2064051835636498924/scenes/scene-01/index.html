@@ -415,7 +415,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
     tl.to(R+'#beatA',{scale:1.03,duration:10.1,ease:'none'},0);
 
     /* A -> B swap @ 10.16 */
-    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},9.85);
+    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},9.7);
+    tl.set(R+'#beatA',{opacity:0},10.16);   /* hard kill: 非线性 seek 落点稳定 */
     tl.set(R+'#beatB',{opacity:1},10.16);
     tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},10.4);
     tl.from(R+'.b-title',{y:22,opacity:0,duration:.4,ease:'power3.out'},11.0);
@@ -427,6 +428,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 
     /* B -> C swap @ 28.19 */
     tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},27.75);
+    tl.set(R+'#beatB',{opacity:0},28.19);   /* hard kill: 非线性 seek 落点稳定 */
     tl.set(R+'#beatC',{opacity:1},28.19);
     tl.from(R+'.c-doubt',{opacity:0,duration:.3,ease:'power1.out'},28.4);
     tl.from(R+'.term',{y:30,opacity:0,duration:.45,ease:'expo.out'},31.2);
@@ -439,6 +441,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 
     /* C -> D swap @ 45.97 */
     tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},45.6);
+    tl.set(R+'#beatC',{opacity:0},45.97);   /* hard kill: 非线性 seek 落点稳定 */
     tl.set(R+'#beatD',{opacity:1},45.97);
     tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},47.6);
     tl.from(R+'.d-q',{y:24,opacity:0,duration:.4,ease:'power3.out'},48.0);

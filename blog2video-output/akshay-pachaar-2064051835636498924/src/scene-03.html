@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .lead{margin-top:18px}
+[data-composition-id='s03'] .splitwrap{display:flex;align-items:stretch;gap:0;width:100%;margin-top:34px}
+[data-composition-id='s03'] .splitwrap .col{flex:1}
+[data-composition-id='s03'] .dash{flex-shrink:0;width:0;align-self:stretch;margin:0 26px;border-left:3px dashed #2a2a2c;position:relative}
+[data-composition-id='s03'] .dash .lab{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#8a8a85;background:#121212;
+  padding:8px 6px;writing-mode:vertical-rl;letter-spacing:.18em;white-space:nowrap}
+[data-composition-id='s03'] .col .it.lite{margin-bottom:14px}
+[data-composition-id='s03'] .col .it .auto{font-family:'JetBrains Mono',monospace;font-size:21px;color:#8a8a85;letter-spacing:.04em;margin-top:4px}
+[data-composition-id='s03'] .status.foot{margin-top:32px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="42.433" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[03/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 调试流程 · <span class="acc">虚线两边</span></div>
+      <div class="h1" style="margin-top:16px">在那条<span class="em">虚线两边</span></div>
+
+      <div class="splitwrap">
+        <div class="col left">
+          <div class="ch">虚线左边 · 自动</div>
+          <div class="it lite la1"><div class="nm">trace</div></div>
+          <div class="it lite la2"><div class="nm">span 树</div></div>
+          <div class="it lite la3"><div class="nm">延迟</div></div>
+          <div class="it lite la4"><div class="nm">token 成本</div><div class="auto">监控平台一键给你</div></div>
+        </div>
+        <div class="dash"><span class="lab">DASHED LINE</span></div>
+        <div class="col right alt">
+          <div class="ch">虚线右边 · 靠你</div>
+          <div class="it lite ra1"><div class="nm">为什么坏</div></div>
+          <div class="it lite ra2"><div class="nm">怎么修</div></div>
+          <div class="it lite ra3"><div class="nm">保证不复发</div><div class="auto">全靠你自己的时间</div></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span>真正的瓶颈,在虚线右边</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.255" data-track-index="5"><div class="sub-inner">这里有一个很值得停下来想的<span class="sub-k">画面</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.248" data-duration="4.273" data-track-index="5"><div class="sub-inner">把整个调试流程画成一张图,中间拉一条<span class="sub-k">虚线</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.661" data-duration="9.321" data-track-index="5"><div class="sub-inner">虚线左边,全是<span class="sub-k">自动跑完的</span>:trace、span 树、延迟、token 成本,监控平台一键给你。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.982" data-duration="1.19" data-track-index="5"><div class="sub-inner">虚线<span class="sub-k">右边</span>呢?</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.172" data-duration="4.958" data-track-index="5"><div class="sub-inner">为什么坏、怎么修、保证不复发——全靠<span class="sub-k">你自己的时间</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.285" data-duration="4.799" data-track-index="5"><div class="sub-inner">而生产环境里的调试,真正住的地方,恰恰是<span class="sub-k">虚线右边</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.253" data-duration="3.551" data-track-index="5"><div class="sub-inner">所以真正的瓶颈,从来不是<span class="sub-k">可观测性本身</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.804" data-duration="4.673" data-track-index="5"><div class="sub-inner">是 trace 落到你屏幕之后,必须发生的<span class="sub-k">那一切</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.477" data-duration="5.794" data-track-index="5"><div class="sub-inner">监控只是把问题端到你面前,它没解决问题,它只是让你<span class="sub-k">看见了问题</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.dash', 3.4, {y:0, d:.4, ease:'power2.inOut'});
+    // 左栏 7.7s 整栏入,自动来源标在同一句里
+    D2.enter(tl, R+'.col.left .ch', 7.7, {x:-22, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.col.left .it', 8.3, {y:14, d:.3, step:.5, ease:'power2.out'});
+    // 右栏:标题 16.9s（"右边呢？"），条目 18.2s（"为什么坏、怎么修…"）
+    D2.enter(tl, R+'.col.right .ch', 16.9, {x:22, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.col.right .it', 18.2, {y:14, d:.32, step:.6, ease:'power3.out'});
+    // 底部点题 28.2s
+    D2.enter(tl, R+'.status.foot', 28.2, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.248],['#sub-3',7.661],['#sub-4',16.982],['#sub-5',18.172],['#sub-6',23.285],['#sub-7',28.253],['#sub-8',31.804],['#sub-9',36.477]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.433, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

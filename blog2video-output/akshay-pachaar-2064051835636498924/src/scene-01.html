@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat;沿用黄金范本结构,只用 kit 令牌色)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — hook: self-improving agent */
+[data-composition-id='s01'] .a-en{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;line-height:1.06;letter-spacing:-.03em;color:#edebe6}
+[data-composition-id='s01'] .a-zh{margin-top:30px;font-weight:900;font-size:88px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .a-zh .em{color:#ccff4d}
+[data-composition-id='s01'] .a-arrive{margin-top:34px;display:flex;align-items:center}
+[data-composition-id='s01'] .a-arrive .t{font-weight:600;font-size:42px;color:#8a8a85}
+[data-composition-id='s01'] .a-arrive .cur{display:inline-block;width:30px;height:54px;background:#ccff4d;margin-left:16px;vertical-align:-8px}
+
+/* beat B — production-failure scenario terminal */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .b-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .b-title{margin-top:16px;font-weight:900;font-size:64px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .b-steps{margin-top:46px;display:flex;flex-direction:column;gap:16px;width:100%}
+[data-composition-id='s01'] .b-step{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 28px}
+[data-composition-id='s01'] .b-step .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;min-width:42px}
+[data-composition-id='s01'] .b-step .x{font-weight:600;font-size:40px;color:#8a8a85}
+[data-composition-id='s01'] .b-step.kill .n{color:#ccff4d}
+[data-composition-id='s01'] .b-step.kill .x{color:#edebe6}
+[data-composition-id='s01'] .b-step.kill{border-color:#ccff4d}
+[data-composition-id='s01'] .b-but{margin-top:42px;font-weight:900;font-size:60px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .b-but .em{color:#ccff4d}
+
+/* beat C — thesis / source authority terminal */
+[data-composition-id='s01'] .c-doubt{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .term-l2 .hl{margin-left:8px}
+[data-composition-id='s01'] .term-l2 .hl .tx{font-size:64px}
+
+/* beat D — teaser */
+[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .d-q{margin-top:22px;font-weight:900;font-size:68px;line-height:1.24;color:#edebe6}
+[data-composition-id='s01'] .d-q .em{color:#ccff4d}
+[data-composition-id='s01'] .d-tag{margin-top:46px;display:inline-flex;align-items:center;gap:16px;
+  background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+[data-composition-id='s01'] .d-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s01'] .d-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="59.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[01/10]</div>
+    </div>
+
+    <!-- BEAT A: hook — self-improving agent (0 - ~10.1) -->
+    <div class="beat" id="beatA">
+      <div class="a-en">self-improving<br>agent</div>
+      <div class="a-zh">你的 AI Agent，<br>应该<span class="em">自己修自己</span></div>
+      <div class="a-arrive"><span class="t">一个被严重低估的概念</span><span class="cur"></span></div>
+    </div>
+
+    <!-- BEAT B: production-failure scenario (10.16 - ~28.2) -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick">SCENARIO · <span class="acc">生产环境出故障</span></div>
+      <div class="b-title">这一次，你什么都没做——</div>
+      <div class="b-steps">
+        <div class="b-step bs1"><span class="n">✗</span><span class="x">没有熬夜翻日志</span></div>
+        <div class="b-step bs2"><span class="n">✗</span><span class="x">没有手写补丁</span></div>
+        <div class="b-step bs3 kill"><span class="n">›</span><span class="x">它自己把自己修好了</span></div>
+      </div>
+      <div class="b-but">修完之后，它<span class="em">更难被打破</span></div>
+    </div>
+
+    <!-- BEAT C: thesis + source authority (28.19 - ~45.97) -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-doubt">// 听起来像 PPT 吹牛？</div>
+      <div class="term" style="margin-top:24px">
+        <div class="term-bar">
+          <span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span>
+          <span class="t">akshay@opik: ~ thesis</span>
+        </div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>一个真正成熟的 AI Agent，</div>
+          <div class="term-l2">本来就该<span class="hl"><span class="bar"></span><span class="tx">会自己修自己</span></span></div>
+          <div class="term-src">— <b>Akshay Pachaar</b> · 背靠 Comet ML &amp; 开源项目 Opik</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEAT D: teaser (45.97 - end) -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led">// 不聊监控，只拆最关键的一件事</div>
+      <div class="d-q">从「每次出错都要你救」，<br>到<span class="em">每次出错都更强</span></div>
+      <div class="d-tag"><span class="dot"></span><span class="lab">这一步，到底怎么成立？</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, 一字不差) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="9.107" data-track-index="5"><div class="sub-inner">今天聊一个正在被严重低估的概念——self-improving agent，会自我进化、能<span class="sub-k">自己修自己</span>的 AI Agent。</div></div>
+    <div id="sub-2" class="clip sub" data-start="9.252" data-duration="0.908" data-track-index="5"><div class="sub-inner">什么意思？</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.16" data-duration="13.795" data-track-index="5"><div class="sub-inner">想象一下：你的 Agent 在生产环境里出了故障，可这一次，你没有熬夜翻日志，没有手写补丁，也没有改完一处又提心吊胆别的地方会崩——<span class="sub-k">它自己把自己修好了</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="24.12" data-duration="3.905" data-track-index="5"><div class="sub-inner">修完之后，它还比出问题之前<span class="sub-k">更难被打破</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="28.188" data-duration="2.837" data-track-index="5"><div class="sub-inner">听起来是不是有点像 PPT 上的<span class="sub-k">吹牛</span>？</div></div>
+    <div id="sub-6" class="clip sub" data-start="31.225" data-duration="14.61" data-track-index="5"><div class="sub-inner">可这恰恰是 Akshay Pachaar 一篇深度文的核心判断，背后站着 Comet ML 和开源项目 Opik 的实战主张：一个真正成熟的 AI Agent，本来就应该<span class="sub-k">会自己修自己</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="45.972" data-duration="1.622" data-track-index="5"><div class="sub-inner">那它到底<span class="sub-k">怎么成立</span>？</div></div>
+    <div id="sub-8" class="clip sub" data-start="47.594" data-duration="11.537" data-track-index="5"><div class="sub-inner">我们不聊怎么搭监控，只拆一件最关键的事——怎么让你的 Agent，从「每次出错都要你来救」，变成「每次出错都让它<span class="sub-k">自己变得更强</span>」。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~10.1) — hook */
+    tl.from(R+'.a-en',{x:-40,opacity:0,duration:.45,ease:'expo.out'},0.5);
+    tl.from(R+'.a-zh',{y:24,opacity:0,duration:.4,ease:'power3.out'},2.0);
+    tl.from(R+'.a-arrive .t',{opacity:0,duration:.3,ease:'power1.out'},4.6);
+    tl.from(R+'.a-arrive .cur',{scale:2.2,opacity:0,duration:.3,ease:'expo.out'},4.7);
+    D2.blink(tl, R+'.a-arrive .cur', 5.4, 5);
+    tl.to(R+'#beatA',{scale:1.03,duration:10.1,ease:'none'},0);
+
+    /* A -> B swap @ 10.16 */
+    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},9.7);
+    tl.set(R+'#beatA',{opacity:0},10.16);   /* hard kill: 非线性 seek 落点稳定 */
+    tl.set(R+'#beatB',{opacity:1},10.16);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},10.4);
+    tl.from(R+'.b-title',{y:22,opacity:0,duration:.4,ease:'power3.out'},11.0);
+    tl.from(R+'.bs1',{x:-26,opacity:0,duration:.3,ease:'power3.out'},13.4);
+    tl.from(R+'.bs2',{x:-26,opacity:0,duration:.3,ease:'power2.out'},15.4);
+    tl.from(R+'.bs3',{x:-26,opacity:0,duration:.35,ease:'expo.out'},18.6);
+    tl.from(R+'.b-but',{y:22,opacity:0,duration:.4,ease:'power3.out'},24.12);
+    tl.to(R+'#beatB',{scale:1.03,duration:18,ease:'none'},10.2);
+
+    /* B -> C swap @ 28.19 */
+    tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},27.75);
+    tl.set(R+'#beatB',{opacity:0},28.19);   /* hard kill: 非线性 seek 落点稳定 */
+    tl.set(R+'#beatC',{opacity:1},28.19);
+    tl.from(R+'.c-doubt',{opacity:0,duration:.3,ease:'power1.out'},28.4);
+    tl.from(R+'.term',{y:30,opacity:0,duration:.45,ease:'expo.out'},31.2);
+    tl.from(R+'.term-l1',{opacity:0,duration:.3,ease:'power2.out'},32.4);
+    tl.from(R+'.term-l2',{y:18,opacity:0,duration:.35,ease:'power3.out'},36.0);
+    /* hero — 会自己修自己 acid sweep @ 38.4 */
+    D2.sweep(tl, R, '.term-l2 .hl', 38.4);
+    tl.from(R+'.term-src',{opacity:0,duration:.3,ease:'power1.out'},42.0);
+    tl.to(R+'#beatC',{scale:1.025,duration:17.6,ease:'none'},28.2);
+
+    /* C -> D swap @ 45.97 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},45.6);
+    tl.set(R+'#beatC',{opacity:0},45.97);   /* hard kill: 非线性 seek 落点稳定 */
+    tl.set(R+'#beatD',{opacity:1},45.97);
+    tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},47.6);
+    tl.from(R+'.d-q',{y:24,opacity:0,duration:.4,ease:'power3.out'},48.0);
+    tl.from(R+'.d-tag',{y:18,opacity:0,duration:.35,ease:'expo.out'},53.5);
+    tl.to(R+'#beatD',{scale:1.03,duration:13.3,ease:'none'},45.9);
+
+    /* subtitles (local time fade-in) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',9.252],['#sub-3',10.16],['#sub-4',24.12],['#sub-5',28.188],['#sub-6',31.225],['#sub-7',45.972],['#sub-8',47.594]].map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

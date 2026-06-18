@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .gives{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+[data-composition-id='s02'] .gives .g{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:6px 16px;letter-spacing:.01em}
+[data-composition-id='s02'] .warn-t{color:#ff6b5e;font-weight:700}
+[data-composition-id='s02'] .row.warn .n{color:#ff6b5e}
+[data-composition-id='s02'] .manual{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#ff6b5e;letter-spacing:.02em}
+[data-composition-id='s02'] .manual .dim{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="52.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[02/10]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 今天的现实 · <span class="acc">一条干净的 trace</span></div>
+      <div class="h1" style="margin-top:14px">监控全告诉你了<br><span class="em">却答不上</span>三件事</div>
+
+      <div class="gives">
+        <span class="g g1">每次模型调用</span>
+        <span class="g g2">触发的工具</span>
+        <span class="g g3">每步延迟</span>
+        <span class="g g4">烧掉的 token</span>
+      </div>
+
+      <div class="rows" style="margin-top:26px">
+        <div class="row warn r1"><div class="n">01</div><div class="rb">
+          <div class="rt">它<span class="warn-t">为什么</span>坏了?</div>
+        </div></div>
+        <div class="row warn r2"><div class="n">02</div><div class="rb">
+          <div class="rt">哪一处改动能<span class="warn-t">修好</span>它?</div>
+        </div></div>
+        <div class="row warn r3"><div class="n">03</div><div class="rb">
+          <div class="rt">怎么保证<span class="warn-t">下周不再坏</span>?</div>
+        </div></div>
+      </div>
+
+      <div class="manual"><span class="dim">于是全靠手工:</span>翻 span → 拼假设 → 写补丁 → 祈祷</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.542" data-track-index="5"><div class="sub-inner">先回到<span class="sub-k">今天的现实</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.534" data-duration="7.37" data-track-index="5"><div class="sub-inner">你的 Agent 在生产环境里挂了,你打开监控,一条干干净净的 <span class="sub-k">trace</span> 摆在面前。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.904" data-duration="7.37" data-track-index="5"><div class="sub-inner">每一次模型调用、每一个触发的工具、每一步花了多久、烧了多少 <span class="sub-k">token</span>,全都清清楚楚。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.444" data-duration="3.833" data-track-index="5"><div class="sub-inner">但你真正想知道的<span class="sub-k">三件事</span>,它一个都没回答。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.277" data-duration="1.341" data-track-index="5"><div class="sub-inner">它<span class="sub-k">为什么</span>坏了?</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.618" data-duration="1.917" data-track-index="5"><div class="sub-inner">哪一处改动能<span class="sub-k">修好</span>它?</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.535" data-duration="4.024" data-track-index="5"><div class="sub-inner">还有最关键的——怎么保证<span class="sub-k">下周不会再坏一次</span>?</div></div>
+    <div id="sub-8" class="clip sub" data-start="27.712" data-duration="1.168" data-track-index="5"><div class="sub-inner">这些它都<span class="sub-k">不管</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="28.88" data-duration="11.015" data-track-index="5"><div class="sub-inner">于是你开始干那件最熟悉的活:一个 span 一个 span 往下翻,慢慢拼出一个假设,<span class="sub-k">手写一个补丁</span>,然后祈祷别把原本好好的地方改坏。</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.06" data-duration="2.319" data-track-index="5"><div class="sub-inner">补丁打完,你<span class="sub-k">松一口气</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.379" data-duration="5.271" data-track-index="5"><div class="sub-inner">可过几周,一个新模型上线,带来一整批<span class="sub-k">新的失败模式</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="47.65" data-duration="4.849" data-track-index="5"><div class="sub-inner">于是你把刚才那套手工流程,从头到尾,<span class="sub-k">再跑一遍</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:18, d:.4, ease:'expo.out'});
+    // 监控真给的(签名绿编号标签)逐条 build,贴口播 sub-3
+    D2.enter(tl, R+'.g1', 8.9, {y:12, d:.28, ease:'power3.out'});
+    D2.enter(tl, R+'.g2', 10.6, {y:12, d:.28, ease:'power3.out'});
+    D2.enter(tl, R+'.g3', 12.3, {y:12, d:.28, ease:'power3.out'});
+    D2.enter(tl, R+'.g4', 14.0, {y:12, d:.28, ease:'power3.out'});
+    // 它答不上的三件事(珊瑚=手工痛点)逐条
+    D2.enter(tl, R+'.r1', 20.3, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 21.6, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.r3', 23.5, {x:-22, d:.32, ease:'power3.out'});
+    // 手工流程(span→拼假设→补丁→祈祷)
+    D2.enter(tl, R+'.manual', 30.0, {y:14, d:.36, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.534],['#sub-3',8.904],['#sub-4',16.444],['#sub-5',20.277],['#sub-6',21.618],['#sub-7',23.535],['#sub-8',27.712],['#sub-9',28.88],['#sub-10',40.06],['#sub-11',42.379],['#sub-12',47.65]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 52.667, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

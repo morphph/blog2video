@@ -1,1 +1,34 @@
 === d2 render: akshay-pachaar-2064051835636498924 · 11 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 59.300  data= 59.300  Δ=+0.000
+  scene-02  clip= 52.700  data= 52.667  Δ=+0.033
+  scene-03  clip= 42.433  data= 42.433  Δ=+0.000
+  scene-04  clip= 42.700  data= 42.700  Δ=+0.000
+  scene-05  clip= 40.500  data= 40.500  Δ=+0.000
+  scene-06  clip= 45.633  data= 45.633  Δ=+0.000
+  scene-07  clip= 59.133  data= 59.133  Δ=+0.000
+  scene-08  clip= 68.033  data= 68.033  Δ=+0.000
+  scene-09  clip= 62.300  data= 62.300  Δ=+0.000
+  scene-10  clip= 89.500  data= 89.467  Δ=+0.033
+  scene-11  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 567.233s
+=== concat → silent master ===
+[out#0/mp4 @ 0x600000eec240] video:35911KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.190035%
+frame=17017 fps=0.0 q=-1.0 Lsize=   35979KiB time=00:09:27.23 bitrate= 519.6kbits/s speed=6.21e+03x elapsed=0:00:00.09    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=17017 fps=2025 q=-1.0 Lsize=   45593KiB time=00:09:21.31 bitrate= 665.4kbits/s speed=66.8x elapsed=0:00:08.40    
+[aac @ 0x13f010980] Qavg: 65513.613
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=567.233333
+audio_dur=561.312000
+-rw-r--r--@ 1 yufanp  staff  46687663 18 Jun 10:36 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/video_1_cover_photo.png
+  源: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/cover_photo.html

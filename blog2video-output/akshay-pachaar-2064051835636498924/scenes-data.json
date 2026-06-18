@@ -54,7 +54,7 @@
  {
   "n": 2,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "checklist",
   "start": 59.3,
   "dur": 52.667,
   "subs": [
@@ -126,7 +126,7 @@
  {
   "n": 3,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "comparison_cards",
   "start": 111.967,
   "dur": 42.433,
   "subs": [
@@ -183,7 +183,7 @@
  {
   "n": 4,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "principle",
   "start": 154.4,
   "dur": 42.7,
   "subs": [
@@ -307,7 +307,7 @@
  {
   "n": 6,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "quote",
   "start": 237.6,
   "dur": 45.633,
   "subs": [
@@ -369,7 +369,7 @@
  {
   "n": 7,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "comparison_cards",
   "start": 283.233,
   "dur": 59.133,
   "subs": [
@@ -436,7 +436,7 @@
  {
   "n": 8,
   "type": "image",
-  "scriptType": "image",
+  "scriptType": "principle",
   "start": 342.367,
   "dur": 68.033,
   "subs": [

@@ -1,7 +1,7 @@
 {
  "scene": 3,
  "id": "s03",
- "type": "image",
+ "type": "comparison_cards",
  "dataDuration": 42.433,
  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_3.html",
  "topbarIndex": "[03/10]",

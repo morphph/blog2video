@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .badge { font-size: 28px; font-weight: 800; letter-spacing: 2px; color: #10B981; margin-bottom: 24px; }
+    .title { font-size: 56px; font-weight: 800; line-height: 1.25; }
+    .title .em { color: #8B5CF6; }
+    .compare { width: 100%; margin-top: 48px; display: flex; flex-direction: column; gap: 18px; }
+    .row { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-radius: 12px; padding: 26px 26px; text-align: left; }
+    .row.old { border-left: 4px solid #6B7280; }
+    .row.new { border-left: 4px solid #8B5CF6; }
+    .row .lab { font-size: 26px; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; }
+    .row.old .lab { color: #6B7280; }
+    .row.new .lab { color: #8B5CF6; }
+    .row .t { font-size: 33px; line-height: 1.4; }
+    .row .t .mono { font-family: 'SF Mono','JetBrains Mono',monospace; color: #10B981; }
+    .row .t .q { color: #F59E0B; }
+    .note { width: 100%; margin-top: 32px; background: rgba(239,68,68,0.08); border: 1px dashed rgba(239,68,68,0.4);
+      border-radius: 12px; padding: 24px 24px; text-align: left; }
+    .note .t { font-size: 28px; color: #B0B0CC; line-height: 1.45; }
+    .note .t .hl { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="badge">转折 02</div>
+    <div class="title">怎么判断一个回答<br><span class="em">行不行</span></div>
+    <div class="compare">
+      <div class="row old">
+        <div class="lab">研究员那一套</div>
+        <div class="t">标数据集 · 定数值指标 · <span class="q">比浮点数</span></div>
+      </div>
+      <div class="row new">
+        <div class="lab">工程师的方式</div>
+        <div class="t">用大白话写成断言<br>→ 底层转成 <span class="mono">LLM-as-a-judge</span></div>
+      </div>
+    </div>
+    <div class="note">
+      <div class="t"><span class="hl">诚实的代价：</span>让模型判模型有可靠性边界——裁判也会看走眼，也要花成本</div>
+    </div>
+  </div>
+</body>
+</html>

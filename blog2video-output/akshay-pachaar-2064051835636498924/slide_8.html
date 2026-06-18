@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .badge { font-size: 28px; font-weight: 800; letter-spacing: 2px; color: #10B981; margin-bottom: 24px; }
+    .title { font-size: 58px; font-weight: 800; line-height: 1.25; }
+    .title .em { color: #3B82F6; }
+    .compare { width: 100%; margin-top: 48px; display: flex; flex-direction: column; gap: 18px; }
+    .row { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-radius: 12px; padding: 28px 26px; text-align: left; }
+    .row.wrong { border-left: 4px solid #EF4444; }
+    .row.right { border-left: 4px solid #10B981; }
+    .row .lab { font-size: 27px; font-weight: 700; margin-bottom: 12px; }
+    .row.wrong .lab { color: #EF4444; }
+    .row.right .lab { color: #10B981; }
+    .row .t { font-size: 33px; line-height: 1.42; }
+    .row .t .mono { font-family: 'SF Mono','JetBrains Mono',monospace; color: #FFFFFF; }
+    .row .t .hl { color: #3B82F6; font-weight: 700; }
+    .punch { width: 100%; margin-top: 36px; }
+    .punch .t { font-size: 40px; font-weight: 800; color: #F59E0B; line-height: 1.35; }
+    .bonus { font-size: 28px; color: #B0B0CC; margin-top: 22px; line-height: 1.45; }
+    .bonus .g { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="badge">转折 03</div>
+    <div class="title">你到底<span class="em">在测什么</span>？</div>
+    <div class="compare">
+      <div class="row wrong">
+        <div class="lab">prompt playground · 错问题</div>
+        <div class="t">改一句系统提示 → 重跑<span class="mono">单次模型调用</span></div>
+      </div>
+      <div class="row right">
+        <div class="lab">生产环境 · 对问题</div>
+        <div class="t">改这一处，<span class="hl">整张 Agent 图</span>会怎么反应？</div>
+      </div>
+    </div>
+    <div class="punch"><div class="t">端到端跑完整 Agent，<br>盯整张 span 树的连锁反应</div></div>
+    <div class="bonus">附带好处：<span class="g">PM / 领域专家 / QA 都能进沙箱</span>调配置，不碰一行 git</div>
+  </div>
+</body>
+</html>

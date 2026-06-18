@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 56px; font-weight: 800; line-height: 1.25; }
+    .title .em { color: #10B981; }
+    .sub { font-size: 30px; color: #B0B0CC; margin-top: 18px; }
+    .list { width: 100%; margin-top: 44px; display: flex; flex-direction: column; gap: 16px; }
+    .row { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-left: 4px solid #10B981;
+      border-radius: 12px; padding: 24px 24px; text-align: left; display: flex; gap: 18px; align-items: flex-start; }
+    .row .n { color: #10B981; font-size: 32px; font-weight: 800; flex-shrink: 0; }
+    .row .t { font-size: 31px; line-height: 1.4; }
+    .row .t .mono { font-family: 'SF Mono','JetBrains Mono',monospace; color: #FFFFFF; }
+    .row .t .hl { color: #F59E0B; font-weight: 700; }
+    .cta { width: 100%; margin-top: 40px; background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4);
+      border-left: 4px solid #F59E0B; border-radius: 12px; padding: 28px 26px; text-align: left; }
+    .cta .t { font-size: 36px; font-weight: 700; line-height: 1.42; }
+    .cta .t .hl { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">把调试变成<br><span class="em">越用越硬的飞轮</span></div>
+    <div class="sub">失败不再是负担，是让系统变强的燃料</div>
+    <div class="list">
+      <div class="row"><span class="n">1</span><span class="t">失败 trace 自动沉淀成 <span class="mono">回归测试</span></span></div>
+      <div class="row"><span class="n">2</span><span class="t">质量断言用<span class="hl">大白话</span>写，而不是比浮点数</span></div>
+      <div class="row"><span class="n">3</span><span class="t">测整张 Agent 图的反应，而非单次 prompt</span></div>
+    </div>
+    <div class="cta">
+      <div class="t">下次有人说「我们上了可观测性」——<br><span class="hl">那看见之后呢？谁来修？修完怎么记住？</span></div>
+    </div>
+  </div>
+</body>
+</html>

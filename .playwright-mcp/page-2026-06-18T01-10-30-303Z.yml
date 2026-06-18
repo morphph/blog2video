@@ -1,0 +1,523 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e21]:
+        - generic [ref=e22]: To view keyboard shortcuts, press question mark
+        - link "View keyboard shortcuts" [ref=e23] [cursor=pointer]:
+          - /url: /i/keyboard_shortcuts
+      - generic:
+        - generic:
+          - button "Grok" [ref=e3] [cursor=pointer]:
+            - img [ref=e4]
+          - button "Chat" [ref=e7] [cursor=pointer]:
+            - img [ref=e8]
+      - generic [ref=e11]:
+        - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+        - button "Skip to trending" [ref=e26] [cursor=pointer]
+        - banner [ref=e12]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - heading "X" [level=1] [ref=e32] [cursor=pointer]:
+                - link "X" [ref=e33]:
+                  - /url: /home
+                  - img [ref=e35]
+              - navigation "Primary" [ref=e39]:
+                - link "Home" [ref=e40] [cursor=pointer]:
+                  - /url: /home
+                  - img [ref=e43]
+                - link "Search and explore" [ref=e46] [cursor=pointer]:
+                  - /url: /explore
+                  - img [ref=e49]
+                - link "Notifications (20 unread notifications)" [ref=e52] [cursor=pointer]:
+                  - /url: /notifications
+                  - generic [ref=e54]:
+                    - img [ref=e55]
+                    - generic "20+ unread items" [ref=e58]:
+                      - generic [ref=e59]: 20+
+                - link "Follow" [ref=e60] [cursor=pointer]:
+                  - /url: /i/connect_people
+                  - img [ref=e63]
+                - link "Direct Messages" [ref=e66] [cursor=pointer]:
+                  - /url: /i/chat
+                  - img [ref=e69]
+                - link "Grok" [ref=e72] [cursor=pointer]:
+                  - /url: /i/grok
+                  - generic [ref=e74]:
+                    - img [ref=e75]
+                    - generic "undefined unread items" [ref=e78]
+                - link "Premium" [ref=e79] [cursor=pointer]:
+                  - /url: /i/premium
+                  - img [ref=e82]
+                - link "Articles" [ref=e85] [cursor=pointer]:
+                  - /url: /compose/articles
+                  - img [ref=e88]
+                - link "Profile" [ref=e93] [cursor=pointer]:
+                  - /url: /morph_thecat
+                  - img [ref=e96]
+                - button "More menu items" [ref=e99] [cursor=pointer]:
+                  - img [ref=e102]
+              - link "Post" [ref=e106] [cursor=pointer]:
+                - /url: /compose/post
+                - img [ref=e108]
+            - button "Account menu" [ref=e114] [cursor=pointer]:
+              - generic [ref=e122]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic "vfan":
+                        - img "vfan"
+        - main [ref=e13]:
+          - generic [ref=e126]:
+            - generic "Home timeline" [ref=e128]:
+              - generic [ref=e129]:
+                - generic [ref=e135] [cursor=pointer]:
+                  - button "Back" [ref=e137]:
+                    - img [ref=e139]
+                  - heading "Article" [level=2] [ref=e144]
+                  - link "Focus mode" [ref=e147]:
+                    - /url: /akshay_pachaar/article/2064051835636498924
+                    - img [ref=e149]
+                - generic:
+                  - generic:
+                    - status:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: See new posts
+              - region "Conversation" [ref=e152]:
+                - heading "Conversation" [level=1] [ref=e153]
+                - 'generic "Timeline: Conversation" [ref=e154]':
+                  - generic [ref=e158]:
+                    - article "Akshay 🚀 Verified account @akshay_pachaar 32 replies, 169 reposts, 1220 likes, 2930 bookmarks, 812087 views" [ref=e159]:
+                      - generic [ref=e161]:
+                        - generic [ref=e165]:
+                          - link [active] [ref=e177] [cursor=pointer]:
+                            - /url: /akshay_pachaar
+                          - generic [ref=e182]:
+                            - generic [ref=e185]:
+                              - link "Akshay 🚀 Verified account" [ref=e188] [cursor=pointer]:
+                                - /url: /akshay_pachaar
+                                - generic [ref=e189]:
+                                  - generic [ref=e191]:
+                                    - text: Akshay
+                                    - img "🚀" [ref=e192]
+                                  - img "Verified account" [ref=e195]
+                              - link "@akshay_pachaar" [ref=e201] [cursor=pointer]:
+                                - /url: /akshay_pachaar
+                                - generic [ref=e202]: "@akshay_pachaar"
+                            - generic [ref=e204]:
+                              - button "Subscribe to @akshay_pachaar" [ref=e206] [cursor=pointer]:
+                                - generic [ref=e209]: Subscribe
+                              - button "Summarize" [ref=e211] [cursor=pointer]:
+                                - img [ref=e216]
+                              - button "More" [ref=e222] [cursor=pointer]:
+                                - img [ref=e226]
+                        - generic [ref=e229]:
+                          - generic [ref=e230]:
+                            - link "Image" [ref=e236] [cursor=pointer]:
+                              - /url: /akshay_pachaar/article/2064051835636498924/media/2064051001066483712
+                              - generic "Image" [ref=e240]:
+                                - img "Image" [ref=e242]
+                            - generic [ref=e243]:
+                              - generic [ref=e245]: Your Agent Harness Should Repair Itself
+                              - group "32 replies, 169 reposts, 1220 likes, 2930 bookmarks, 812087 views" [ref=e247]:
+                                - button "32 Replies. Reply" [ref=e249] [cursor=pointer]:
+                                  - generic [ref=e250]:
+                                    - img [ref=e253]
+                                    - generic [ref=e258]: "32"
+                                - button "169 reposts. Repost" [ref=e260] [cursor=pointer]:
+                                  - generic [ref=e261]:
+                                    - img [ref=e264]
+                                    - generic [ref=e269]: "169"
+                                - button "1220 Likes. Like" [ref=e271] [cursor=pointer]:
+                                  - generic [ref=e272]:
+                                    - img [ref=e275]
+                                    - generic [ref=e280]: 1.2K
+                                - link "812087 views. View post analytics" [ref=e282] [cursor=pointer]:
+                                  - /url: /akshay_pachaar/status/2064051835636498924/analytics
+                                  - generic [ref=e283]:
+                                    - img [ref=e286]
+                                    - generic [ref=e291]: 812K
+                                - button "Bookmarked" [ref=e293] [cursor=pointer]:
+                                  - img [ref=e297]
+                                - button "Share post" [ref=e302] [cursor=pointer]:
+                                  - img [ref=e306]
+                              - generic [ref=e314]:
+                                - generic [ref=e317]: When an AI agent fails in production, your observability tool shows you exactly what it did and almost nothing about how to fix it.
+                                - generic [ref=e320]: You get a clean trace of the run, every model call and tool that fired, how long each step took, and what it cost in tokens.
+                                - generic [ref=e323]: What you don't get is why it broke, the change that would fix it, or any promise the same thing won't happen again next week.
+                                - generic [ref=e326]: So you scroll through the trace span by span, form a theory about what went wrong, write a patch by hand, and hope it doesn't break something that was working before.
+                                - generic [ref=e329]: Then a new model ships with a fresh batch of failure modes, and you run that whole manual loop from the top.
+                                - generic [ref=e332]: The real bottleneck isn't your observability. It's everything that has to happen after the trace lands on your screen.
+                                - generic [ref=e335]:
+                                  - link "Image" [ref=e339] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063965206817144833
+                                    - generic "Image" [ref=e343]:
+                                      - img "Image" [ref=e345]
+                                  - generic [ref=e355]: Everything to the left of the dotted line runs automatically. Everything to the right runs on your time, which is where production debugging actually lives.
+                                - generic [ref=e358]: Cursor recently shared how much engineering goes into the harness around their agent, the layer of prompts, tools, and checks wrapped around the raw model. A better harness on the same model gives far better results, and that work never really ends.
+                                - generic [ref=e361]: This is where every observability platform leaves you. It answers what happened, then hands back why it happened, what to change, and how to keep it from breaking again.
+                                - generic [ref=e364]: That gap is the loop most teams are stuck in today. Here's why it keeps reopening, and what it finally takes to close it.
+                                - heading "Why Current Observability Breaks at Scale" [level=1] [ref=e366]:
+                                  - generic [ref=e368]: Why Current Observability Breaks at Scale
+                                - generic [ref=e371]: Most agent observability platforms deliver a trace and stop.
+                                - generic [ref=e374]: "You get a span tree, latency numbers, token costs, and a dashboard. What you don't get: why it failed, what to fix, or any guarantee it won't break again."
+                                - list [ref=e375]:
+                                  - listitem [ref=e376]:
+                                    - generic [ref=e378]: "\"What happened\" → the platform handles this"
+                                  - listitem [ref=e379]:
+                                    - generic [ref=e381]: "\"Why it happened\" → manual"
+                                  - listitem [ref=e382]:
+                                    - generic [ref=e384]: "\"Here's the fix\" → manual"
+                                  - listitem [ref=e385]:
+                                    - generic [ref=e387]: "\"This won't break again\" → manual"
+                                - generic [ref=e390]: That was a reasonable product in 2023. It's the wrong abstraction for teams running agents in production today.
+                                - generic [ref=e393]: The problem compounds itself. Every model upgrade introduces new failure modes. Every new tool adds new edge cases. The harness gets more complex faster than any team can manually track and repair.
+                                - generic [ref=e396]: Here's the stack that does it.
+                                - generic [ref=e399]:
+                                  - link "Image" [ref=e403] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063965533700296704
+                                    - generic "Image" [ref=e407]:
+                                      - img "Image" [ref=e409]
+                                  - generic [ref=e419]: Most platforms end at the dashboard and hand the rest to you. The right side is the loop Opik runs on its own.
+                                - 'heading "Opik: AI Observability & Evals For the Agentic Era" [level=1] [ref=e423]':
+                                  - 'link "Opik: AI Observability & Evals For the Agentic Era" [ref=e426] [cursor=pointer]':
+                                    - /url: https://github.com/comet-ml/opik
+                                    - generic [ref=e427]: "Opik: AI Observability & Evals For the Agentic Era"
+                                - generic [ref=e429]:
+                                  - generic [ref=e430]: Opik is an
+                                  - link "open-source" [ref=e432] [cursor=pointer]:
+                                    - /url: https://github.com/comet-ml/opik
+                                    - generic [ref=e433]: open-source
+                                  - generic [ref=e434]: logging, debugging, and optimization platform for AI agents and LLM applications. Opik is built around the premise that this loop should be automated, not staffed.
+                                - link "Image" [ref=e441] [cursor=pointer]:
+                                  - /url: /akshay_pachaar/article/2064051835636498924/media/2063966280261287936
+                                  - generic "Image" [ref=e445]:
+                                    - img "Image" [ref=e447]
+                                - heading "The Four-Layer Stack" [level=1] [ref=e449]:
+                                  - generic [ref=e451]: The Four-Layer Stack
+                                - generic [ref=e454]: Opik's architecture is one connected workflow.
+                                - generic [ref=e457]: Trace → Ollie diagnoses → Ollie proposes a fix → fix is applied and verified → Test Suite locks the failure as a regression test → back to Trace
+                                - generic [ref=e460]:
+                                  - link "Image" [ref=e464] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063966492958613504
+                                    - generic "Image" [ref=e468]:
+                                      - img "Image" [ref=e470]
+                                  - generic [ref=e480]: The four layers are not separate features. They feed each other in a single loop that closes on its own.
+                                - generic [ref=e483]: Here's each layer.
+                                - 'heading "Layer 1: Tracing" [level=2] [ref=e485]':
+                                  - generic [ref=e487]: "Layer 1: Tracing"
+                                - generic [ref=e490]: Every LLM call, tool invocation, and retrieval step is instrumented automatically with a single decorator.
+                                - generic [ref=e493]:
+                                  - generic [ref=e494]:
+                                    - generic [ref=e495]: python
+                                    - button "Copy to clipboard" [ref=e497] [cursor=pointer]:
+                                      - img [ref=e499]
+                                  - code [ref=e503]:
+                                    - text: import opik
+                                    - text: "@opik.track"
+                                    - text: "def my_agent(query: str): # your agent logic here ..."
+                                - generic [ref=e506]: Works with LangGraph, CrewAI, and 50+ frameworks out of the box. Every trace records which agent configuration was active for full reproducibility when you need to rerun a failing input later.
+                                - generic [ref=e509]:
+                                  - link "Image" [ref=e513] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063968107769864192
+                                    - generic "Image" [ref=e517]:
+                                      - img "Image" [ref=e519]
+                                  - generic [ref=e529]: The four layers are not separate features. They feed each other in a single loop that closes on its own.
+                                - 'heading "Layer 2: Ollie" [level=2] [ref=e531]':
+                                  - generic [ref=e533]: "Layer 2: Ollie"
+                                - generic [ref=e536]: Every other observability platform stops at "here's your trace." Opik goes from trace to fixed code, powered by Ollie.
+                                - generic [ref=e539]: Ollie is a coding agent built into Opik. One agent, full context.
+                                - generic [ref=e542]:
+                                  - link "Image" [ref=e546] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063968770901839872
+                                    - generic "Image" [ref=e550]:
+                                      - img "Image" [ref=e552]
+                                  - generic [ref=e562]: Ollie working through a fix in the side panel, reading and editing files only after you approve each step.
+                                - generic [ref=e565]: Without any code access, Ollie reads span trees, identifies failure modes, and explains the causal chain across every LLM call. Ask it, "why did the final answer ignore the retrieved context?" It walks the full span tree and surfaces the root cause.
+                                - generic [ref=e568]: "Run opik connect from your project root, and Ollie upgrades to full code-fix mode:"
+                                - list [ref=e569]:
+                                  - listitem [ref=e570]:
+                                    - generic [ref=e572]: Reads your source files
+                                  - listitem [ref=e573]:
+                                    - generic [ref=e575]: Identifies the exact lines responsible
+                                  - listitem [ref=e576]:
+                                    - generic [ref=e578]: Proposes a diff; nothing changes without your explicit approval
+                                - generic [ref=e581]: Once you approve, Ollie reruns your agent against the exact inputs from the original failing trace, streams the new trace for side-by-side comparison, and locks the original failure as a regression case in your test suite.
+                                - generic [ref=e584]: Bad trace → root cause → diff → approve → rerun → regression locked
+                                - generic [ref=e587]:
+                                  - link "Image" [ref=e591] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063969154621964289
+                                    - generic "Image" [ref=e595]:
+                                      - img "Image" [ref=e597]
+                                  - generic [ref=e607]: The full path from a bad trace to a locked regression test, with your approval as the one manual step.
+                                - 'heading "Layer 3: Test Suites" [level=2] [ref=e609]':
+                                  - generic [ref=e611]: "Layer 3: Test Suites"
+                                - generic [ref=e614]: "Most eval workflows: build a labeled dataset, define a numerical metric, compare floats. That model works for researchers. It doesn't match how engineers think about quality."
+                                - generic [ref=e617]: Opik replaces it with plain-English assertions.
+                                - generic [ref=e620]:
+                                  - generic [ref=e621]:
+                                    - generic [ref=e622]: python
+                                    - button "Copy to clipboard" [ref=e624] [cursor=pointer]:
+                                      - img [ref=e626]
+                                  - code [ref=e630]: suite = opik.TestSuite("crm-agent-v2") suite.add_assertion("The response must include specific deal details, not just a count") suite.add_assertion("The response must never reveal unauthorized information") suite.run_tests()
+                                - generic [ref=e633]: Opik converts those into LLM-as-a-judge checks under the hood. Clean pass/fail per test case.
+                                - generic [ref=e636]:
+                                  - link "Image" [ref=e640] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063969762296946688
+                                    - generic "Image" [ref=e644]:
+                                      - img "Image" [ref=e646]
+                                  - generic [ref=e656]: A regression suite built from real failures, with each assertion written as a plain-English check.
+                                - generic [ref=e659]: "The part that changes the workflow: every failing trace you debug automatically becomes a new test case. The suite grows from real production failures, not synthetic scenarios someone wrote in advance."
+                                - generic [ref=e662]: Every cycle, the harness gets harder to break.
+                                - generic [ref=e665]: But even with a growing test suite, you still need a safe place to test changes before they ship. That's what Layer 4 is for.
+                                - 'heading "Layer 4: Agent sandbox" [level=2] [ref=e667]':
+                                  - generic [ref=e669]: "Layer 4: Agent sandbox"
+                                - generic [ref=e672]: Most playgrounds are prompt playgrounds. You change a system prompt and rerun one LLM call. That answers the wrong question.
+                                - generic [ref=e675]: The production question is, what happens to the entire agent graph when I change this.
+                                - generic [ref=e678]: Opik's Agent Sandbox runs the fully instrumented agent end-to-end inside the UI. Change a prompt, swap a model, add a tool, and watch how the whole system responds across the full spanning tree. Every sandbox run produces a complete Opik trace.
+                                - generic [ref=e681]: Non-developer stakeholders, PMs, domain experts, and QA can safely test configurations without touching git.
+                                - heading "The Flywheel in Practice" [level=1] [ref=e683]:
+                                  - generic [ref=e685]: The Flywheel in Practice
+                                - generic [ref=e688]: The layers aren't independent features. They're one loop.
+                                - generic [ref=e690]:
+                                  - generic [ref=e691]: Instrument with
+                                  - link "@opik" [ref=e693] [cursor=pointer]:
+                                    - /url: https://x.com/@opik
+                                    - generic [ref=e694]: "@opik"
+                                  - generic [ref=e695]: .track. Declare an opik.Config. Something fails in production. Ollie reads the trace, reads your source, and proposes a fix. You approve. Ollie reruns the agent in the Sandbox against the original failing input. Fixes passes. Save it as a new Blueprint. The environment pointer promotes to staging. Original failure locked as a regression test.
+                                - generic [ref=e698]:
+                                  - link "Image" [ref=e702] [cursor=pointer]:
+                                    - /url: /akshay_pachaar/article/2064051835636498924/media/2063972378074554368
+                                    - generic "Image" [ref=e706]:
+                                      - img "Image" [ref=e708]
+                                  - generic [ref=e718]: The same loop drawn end to end, from instrumenting your agent to the next failure entering at the top.
+                                - generic [ref=e721]: The next failure enters the same loop.
+                                - generic [ref=e724]: Every cycle, the harness gets harder to break.
+                                - heading "Closing the Loop" [level=1] [ref=e726]:
+                                  - generic [ref=e728]: Closing the Loop
+                                - generic [ref=e731]: Observability that ends at the trace made sense when agents were simple. Once they hit production, the real work is everything after the trace, and that is the part Opik runs for you instead of leaving it on your plate.
+                                - generic [ref=e734]: The whole stack ships in the open, Tracing, Ollie, Test Suites, the Agent Sandbox, a 6-algorithm Agent Optimizer, and 50+ framework integrations, with the project past 19.3K stars on GitHub.
+                                - generic [ref=e737]: "It self-hosts in three commands:"
+                                - generic [ref=e740]:
+                                  - generic [ref=e741]:
+                                    - generic [ref=e742]: bash
+                                    - button "Copy to clipboard" [ref=e744] [cursor=pointer]:
+                                      - img [ref=e746]
+                                  - code [ref=e750]:
+                                    - text: git clone https://github.com/comet-ml/opik
+                                    - text: cd opik ./opik.sh
+                                - generic [ref=e753]: The manual loop Cursor describes is the one Opik closes on its own, from a bad trace all the way to a locked regression test.
+                                - generic [ref=e755]:
+                                  - generic [ref=e756]: It is worth a look if you are running agents in production.
+                                  - link "Check out Comet ML and Opik →" [ref=e758] [cursor=pointer]:
+                                    - /url: https://github.com/comet-ml/opik
+                                    - generic [ref=e759]: Check out Comet ML and Opik →
+                                - generic [ref=e762]:
+                                  - generic [ref=e763]: ( don't forget to star
+                                  - generic [ref=e766]: 🌟
+                                  - generic [ref=e767]: )
+                                - generic [ref=e770]: What's the current state of observability in your agent stack, and where does the debugging loop break for your team right now?
+                                - separator [ref=e772]
+                                - generic [ref=e775]: If you are building an open-source tool that AI engineers would love, reach out. We only cover tools that pass our own test, so we'll try yours first and write about it only if it holds up.
+                                - generic [ref=e778]: Thanks to Comet ML for sponsoring today's issue.
+                          - generic [ref=e782]:
+                            - link "2:28 AM · Jun 9, 2026" [ref=e784] [cursor=pointer]:
+                              - /url: /akshay_pachaar/status/2064051835636498924
+                              - time [ref=e785]: 2:28 AM · Jun 9, 2026
+                            - generic [ref=e786]: ·
+                            - link "812K Views" [ref=e787] [cursor=pointer]:
+                              - /url: /akshay_pachaar/status/2064051835636498924/analytics
+                              - generic [ref=e790]: 812K
+                              - generic [ref=e791]: Views
+                          - generic [ref=e792]:
+                            - group "32 replies, 169 reposts, 1220 likes, 2930 bookmarks, 812087 views" [ref=e794]:
+                              - button "32 Replies. Reply" [ref=e796] [cursor=pointer]:
+                                - generic [ref=e797]:
+                                  - img [ref=e800]
+                                  - generic [ref=e805]: "32"
+                              - button "169 reposts. Repost" [ref=e807] [cursor=pointer]:
+                                - generic [ref=e808]:
+                                  - img [ref=e811]
+                                  - generic [ref=e816]: "169"
+                              - button "1220 Likes. Like" [ref=e818] [cursor=pointer]:
+                                - generic [ref=e819]:
+                                  - img [ref=e822]
+                                  - generic [ref=e827]: 1.2K
+                              - button "2930 Bookmarks. Bookmarked" [ref=e829] [cursor=pointer]:
+                                - generic [ref=e830]:
+                                  - img [ref=e833]
+                                  - generic [ref=e838]: 2.9K
+                              - button "Share post" [ref=e841] [cursor=pointer]:
+                                - img [ref=e845]
+                            - generic [ref=e848]:
+                              - button "Relevant" [ref=e851]:
+                                - text: Relevant
+                                - img [ref=e852]
+                              - link "View quotes" [ref=e856] [cursor=pointer]:
+                                - /url: /akshay_pachaar/status/2064051835636498924/quotes
+                                - text: View quotes
+                                - img [ref=e857]
+                    - generic [ref=e867]:
+                      - link "vfan" [ref=e876] [cursor=pointer]:
+                        - /url: /morph_thecat
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic "vfan":
+                                - img "vfan"
+                      - generic [ref=e884]:
+                        - generic [ref=e897]:
+                          - generic [ref=e899]: Post your reply
+                          - textbox "Post text" [ref=e901]
+                        - button "Reply" [disabled] [ref=e906]:
+                          - generic [ref=e909]: Reply
+            - generic "Trending" [ref=e915]:
+              - generic [ref=e916]:
+                - search "Search" [ref=e921]:
+                  - generic [ref=e926]:
+                    - img [ref=e928]
+                    - combobox "Search query" [ref=e933]
+                - complementary "Relevant people" [ref=e936]:
+                  - heading "Relevant people" [level=2] [ref=e938]:
+                    - generic [ref=e939]: Relevant people
+                  - list [ref=e940]:
+                    - listitem [ref=e941] [cursor=pointer]:
+                      - generic [ref=e942]:
+                        - link [ref=e952]:
+                          - /url: /akshay_pachaar
+                        - generic [ref=e955]:
+                          - generic [ref=e956]:
+                            - generic [ref=e958]:
+                              - link "Akshay 🚀 Verified account" [ref=e960]:
+                                - /url: /akshay_pachaar
+                                - generic [ref=e961]:
+                                  - generic [ref=e963]:
+                                    - text: Akshay
+                                    - img "🚀" [ref=e964]
+                                  - img "Verified account" [ref=e967]
+                              - link "@akshay_pachaar" [ref=e972]:
+                                - /url: /akshay_pachaar
+                                - generic [ref=e974]: "@akshay_pachaar"
+                            - button "Follow @akshay_pachaar" [ref=e976]:
+                              - generic [ref=e979]: Follow
+                          - generic [ref=e980]:
+                            - text: Simplifying LLMs, AI Agents, RAG, and Machine Learning for you! • Co-founder
+                            - link "@dailydoseofds_" [ref=e983]:
+                              - /url: /dailydoseofds_
+                            - text: • BITS Pilani • 3 Patents • ex-AI Engineer @ LightningAI
+                - region "Trending now" [ref=e985]:
+                  - heading "Trending now" [level=1] [ref=e986]
+                  - 'generic "Timeline: Trending now" [ref=e987]':
+                    - generic [ref=e988]:
+                      - generic [ref=e992]:
+                        - button "Soccer" [ref=e993] [cursor=pointer]:
+                          - paragraph [ref=e995]: Soccer
+                        - generic [ref=e996]:
+                          - button "🇺🇿 Uzbekistan 🇨🇴 Colombia Today 10:00 AM" [ref=e998] [cursor=pointer]:
+                            - generic [ref=e999]:
+                              - generic [ref=e1000]:
+                                - generic [ref=e1004]:
+                                  - paragraph [ref=e1007]: 🇺🇿
+                                  - paragraph [ref=e1009]: Uzbekistan
+                                - generic [ref=e1013]:
+                                  - paragraph [ref=e1016]: 🇨🇴
+                                  - paragraph [ref=e1018]: Colombia
+                              - generic [ref=e1020]:
+                                - paragraph [ref=e1023]: Today
+                                - generic [ref=e1025]: 10:00 AM
+                          - button "🇬🇭 Ghana 1 🇵🇦 Panama 0 FT Today" [ref=e1028] [cursor=pointer]:
+                            - generic [ref=e1029]:
+                              - generic [ref=e1030]:
+                                - generic [ref=e1031]:
+                                  - generic [ref=e1034]:
+                                    - paragraph [ref=e1037]: 🇬🇭
+                                    - paragraph [ref=e1039]: Ghana
+                                  - generic [ref=e1040]:
+                                    - paragraph [ref=e1042]: "1"
+                                    - img [ref=e1045]
+                                - generic [ref=e1047]:
+                                  - generic [ref=e1050]:
+                                    - paragraph [ref=e1053]: 🇵🇦
+                                    - paragraph [ref=e1055]: Panama
+                                  - paragraph [ref=e1058]: "0"
+                              - generic [ref=e1061]:
+                                - paragraph [ref=e1063]: FT
+                                - paragraph [ref=e1065]: Today
+                          - button "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England 4 🇭🇷 Croatia 2 FT Today" [ref=e1068] [cursor=pointer]:
+                            - generic [ref=e1069]:
+                              - generic [ref=e1070]:
+                                - generic [ref=e1071]:
+                                  - generic [ref=e1074]:
+                                    - paragraph [ref=e1077]: 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+                                    - paragraph [ref=e1079]: England
+                                  - generic [ref=e1080]:
+                                    - paragraph [ref=e1082]: "4"
+                                    - img [ref=e1085]
+                                - generic [ref=e1087]:
+                                  - generic [ref=e1090]:
+                                    - paragraph [ref=e1093]: 🇭🇷
+                                    - paragraph [ref=e1095]: Croatia
+                                  - paragraph [ref=e1098]: "2"
+                              - generic [ref=e1101]:
+                                - paragraph [ref=e1103]: FT
+                                - paragraph [ref=e1105]: Today
+                        - button "Show more" [ref=e1106] [cursor=pointer]:
+                          - generic [ref=e1107]:
+                            - paragraph [ref=e1109]: Show more
+                            - img [ref=e1111]
+                      - heading "What’s happening" [level=2] [ref=e1116]:
+                        - generic [ref=e1117]: What’s happening
+                      - 'link "Trending in Singapore #บวงสรวงซีรีส์วาดฝันวันวิวาห์ More" [ref=e1120] [cursor=pointer]':
+                        - generic [ref=e1121]:
+                          - generic [ref=e1123]: Trending in Singapore
+                          - generic [ref=e1125]: "#บวงสรวงซีรีส์วาดฝันวันวิวาห์"
+                          - button "More" [ref=e1128]:
+                            - img [ref=e1132]
+                      - 'link "Business & finance · Trending #stocks More" [ref=e1137] [cursor=pointer]':
+                        - generic [ref=e1138]:
+                          - generic [ref=e1140]: Business & finance · Trending
+                          - generic [ref=e1142]: "#stocks"
+                          - button "More" [ref=e1145]:
+                            - img [ref=e1149]
+                      - link "Technology · Trending Noam More" [ref=e1154] [cursor=pointer]:
+                        - generic [ref=e1155]:
+                          - generic [ref=e1157]: Technology · Trending
+                          - generic [ref=e1158]: Noam
+                          - button "More" [ref=e1161]:
+                            - img [ref=e1165]
+                      - link "Technology · Trending Gemini More" [ref=e1170] [cursor=pointer]:
+                        - generic [ref=e1171]:
+                          - generic [ref=e1173]: Technology · Trending
+                          - generic [ref=e1174]: Gemini
+                          - button "More" [ref=e1177]:
+                            - img [ref=e1181]
+                      - link "Show more" [ref=e1186] [cursor=pointer]:
+                        - /url: /explore/tabs/for-you
+                        - generic [ref=e1187]: Show more
+                - navigation "Footer" [ref=e1189]:
+                  - generic [ref=e1190]:
+                    - link "Terms of Service" [ref=e1191] [cursor=pointer]:
+                      - /url: https://x.com/tos
+                    - generic [ref=e1192]: "|"
+                  - generic [ref=e1193]:
+                    - link "Privacy Policy" [ref=e1194] [cursor=pointer]:
+                      - /url: https://x.com/privacy
+                    - generic [ref=e1195]: "|"
+                  - generic [ref=e1196]:
+                    - link "Cookie Policy" [ref=e1197] [cursor=pointer]:
+                      - /url: https://support.x.com/articles/20170514
+                    - generic [ref=e1198]: "|"
+                  - generic [ref=e1199]:
+                    - link "Accessibility" [ref=e1200] [cursor=pointer]:
+                      - /url: https://help.x.com/resources/accessibility
+                    - generic [ref=e1201]: "|"
+                  - generic [ref=e1202]:
+                    - link "Ads info" [ref=e1203] [cursor=pointer]:
+                      - /url: https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                    - generic [ref=e1204]: "|"
+                  - button "More" [ref=e1205] [cursor=pointer]:
+                    - generic [ref=e1206]:
+                      - text: More
+                      - img [ref=e1207]
+                  - generic [ref=e1210]: © 2026 X Corp.

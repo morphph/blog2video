@@ -164,20 +164,24 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
 .endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
-/* —— scene-10 特有(收官·summary)—— */
+/* —— scene-10 特有(收官·summary;多 beat 收官,沿用 scene-01 beat 结构)—— */
+[data-composition-id='s10'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:236px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;
+  box-sizing:border-box;transform-origin:50% 42%}
 [data-composition-id='s10'] .h1.xl{font-size:80px;line-height:1.1}
-[data-composition-id='s10'] .opik{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.45;letter-spacing:.02em}
+[data-composition-id='s10'] .opik{margin-top:34px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;line-height:1.5;letter-spacing:.02em}
 [data-composition-id='s10'] .opik b{color:#5fd3e8;font-weight:500}
-[data-composition-id='s10'] .rows{margin-top:22px}
-[data-composition-id='s10'] .row .rt{font-size:36px}
-[data-composition-id='s10'] .cmd{font-family:'JetBrains Mono',monospace;font-size:40px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .b-rows{margin-top:30px}
+[data-composition-id='s10'] .b-rows .rt{font-size:38px}
+[data-composition-id='s10'] .b-status{margin-top:30px}
+[data-composition-id='s10'] .cmd{font-family:'JetBrains Mono',monospace;font-size:42px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
 [data-composition-id='s10'] .cmd .p{color:#ccff4d;margin-right:16px}
-[data-composition-id='s10'] .cmd2{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .cmd2{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:36px;color:#8a8a85;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
 [data-composition-id='s10'] .cmd2 .ar{color:#8a8a85;margin-right:14px}
 [data-composition-id='s10'] .cmd2 .ok{color:#ccff4d}
-[data-composition-id='s10'] .slogan{margin-top:28px;font-weight:700;font-size:44px;color:#edebe6;line-height:1.4}
+[data-composition-id='s10'] .slogan{margin-top:34px;font-weight:700;font-size:46px;color:#edebe6;line-height:1.4}
 [data-composition-id='s10'] .slogan .em{color:#ccff4d;font-weight:900}
-[data-composition-id='s10'] .signoff{margin-top:24px}
+[data-composition-id='s10'] .signoff{margin-top:28px}
 </style>
 </head>
 <body>
@@ -188,29 +192,38 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
       <div class="idx">[10/10]</div>
     </div>
 
-    <div class="content top">
-      <div class="kicker">// 收官 ·<span class="acc">越用越硬的飞轮</span></div>
-      <div class="h1 xl" style="margin-top:16px">把调试变成<span class="em">自我修复</span>的飞轮</div>
+    <!-- beat A — 升华:把调试变成自我修复的飞轮(sub-1..4) -->
+    <div class="beat" id="beatA">
+      <div class="kicker a-kick">// 收官 ·<span class="acc">越用越硬的飞轮</span></div>
+      <div class="h1 xl a-h1" style="margin-top:18px">把调试变成<span class="em">自我修复</span>的飞轮</div>
+      <div class="opik a-opik">失败不再是负担,而是<span style="color:#ccff4d">让系统变强的燃料</span></div>
+      <div class="opik a-src" style="margin-top:18px"><b>Opik</b> 只是把这套回路自动化的一个实现样本</div>
+    </div>
 
-      <div class="opik">失败不再是负担,而是<b>让系统变强的燃料</b> · Opik 只是一个实现样本</div>
-
-      <div class="rows">
-        <div class="row r1"><span class="n">01</span><div class="rb"><div class="rt">失败 <span class="code">trace</span> 自动沉淀成回归测试</div></div></div>
-        <div class="row r2"><span class="n">02</span><div class="rb"><div class="rt">质量断言用大白话写,不比浮点数</div></div></div>
-        <div class="row r3"><span class="n">03</span><div class="rb"><div class="rt">测整张 <span class="code">Agent 图</span> 的反应,而非单次 prompt</div></div></div>
+    <!-- beat B — 可迁移三范式 + 真正瓶颈(sub-5..8) -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick">// 哪怕一行代码不用,<span class="acc">范式也值得刻进脑子</span></div>
+      <div class="rows b-rows">
+        <div class="row b1"><span class="n">01</span><div class="rb"><div class="rt">失败 <span class="code">trace</span> 自动沉淀成回归测试</div></div></div>
+        <div class="row b2"><span class="n">02</span><div class="rb"><div class="rt">质量断言用大白话写,不比浮点数</div></div></div>
+        <div class="row b3"><span class="n">03</span><div class="rb"><div class="rt">测整张 <span class="code">Agent 图</span> 的反应,而非单次 prompt</div></div></div>
       </div>
+      <div class="status alert b-status"><span class="dot"></span>真正的瓶颈,从来都在 trace 落屏之后</div>
+    </div>
 
-      <div class="term ask" style="margin-top:28px">
+    <!-- beat C — 反问 + 价值升华 + 品牌 outro(sub-9..15) -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick">// 那看见之后呢?<span class="acc">这三件活还压在你肩上</span></div>
+      <div class="term c-term" style="margin-top:26px">
         <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@agent: ~</span></div>
-        <div class="term-body" style="padding:34px 40px 38px">
+        <div class="term-body" style="padding:36px 40px 40px">
           <div class="cmd"><span class="p">$</span>我们上了可观测性</div>
-          <div class="cmd2 q1"><span class="ar">›</span>那看见之后呢?谁来修?</div>
-          <div class="cmd2 q2"><span class="ar">›</span>修完怎么<span class="ok">保证它记住</span><span class="cur sm cblink"></span></div>
+          <div class="cmd2 c-q1"><span class="ar">›</span>那看见之后呢?谁来修?</div>
+          <div class="cmd2 c-q2"><span class="ar">›</span>修完怎么<span class="ok">保证它记住</span><span class="cur sm cblink"></span></div>
         </div>
       </div>
-
-      <div class="slogan">监控让你看见,是 2023 的终点;<span class="em">能自己跑完虚线右边那段,才真正值钱</span></div>
-      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+      <div class="slogan c-slogan">监控让你看见,是 2023 的终点;<span class="em">能自己跑完虚线右边那段,才真正值钱</span></div>
+      <div class="endchip signoff c-sign"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
     </div>
 
     <div id="sub-1" class="clip sub" data-start="0.016" data-duration="5.556" data-track-index="5"><div class="sub-inner">回过头看,这套思路的精髓,其实跟 <span class="sub-k">trace</span> 本身没多大关系。</div></div>
@@ -368,31 +381,41 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
     tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
     tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
 
-    /* 升华句:kicker + 大字 + 燃料 lead(sub-1/2/3) */
-    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
-    D2.enter(tl, R+'.h1', 1.0, {y:22, d:.46, ease:'expo.out'});
-    D2.enter(tl, R+'.opik', 16.2, {y:16, d:.4, ease:'power3.out'});
+    /* ===== beat A — 升华(sub-1..4, 0–24.5s) ===== */
+    tl.from(R+'.a-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},.5);
+    tl.from(R+'.a-h1',{y:24,opacity:0,duration:.48,ease:'expo.out'},1.0);
+    tl.from(R+'.a-opik',{y:16,opacity:0,duration:.4,ease:'power3.out'},16.2);
+    tl.from(R+'.a-src',{y:14,opacity:0,duration:.36,ease:'power2.out'},21.3);
+    tl.to(R+'#beatA',{scale:1.03,duration:24,ease:'none'},.5);
+    /* A → B */
+    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},24.7);
+    tl.set(R+'#beatA',{opacity:0},25.16);
+    tl.set(R+'#beatB',{opacity:1},25.16);
 
-    /* 三范式逐条揭示(sub-5 边播边出,21–43s 区间避免长时无新元素) */
-    D2.enter(tl, R+'.r1', 26.0, {x:-18, d:.34, ease:'power2.out'});
-    D2.enter(tl, R+'.r2', 31.5, {x:-18, d:.34, ease:'power3.out'});
-    D2.enter(tl, R+'.r3', 37.9, {x:-18, d:.34, ease:'power2.out'});
+    /* ===== beat B — 三范式 + 瓶颈(sub-5..8, 25.2–57s) ===== */
+    tl.from(R+'.b-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},25.5);
+    tl.from(R+'.b1',{x:-18,opacity:0,duration:.34,ease:'power3.out'},27.2);
+    tl.from(R+'.b2',{x:-18,opacity:0,duration:.34,ease:'power2.out'},31.5);
+    tl.from(R+'.b3',{x:-18,opacity:0,duration:.34,ease:'expo.out'},37.9);
+    tl.from(R+'.b-status',{y:14,opacity:0,duration:.36,ease:'power2.out'},55.3);
+    tl.to(R+'#beatB',{scale:1.03,duration:31.8,ease:'none'},25.3);
+    /* B → C */
+    tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},57.4);
+    tl.set(R+'#beatB',{opacity:0},57.86);
+    tl.set(R+'#beatC',{opacity:1},57.86);
 
-    /* Closing 反问终端卡(sub-9/10) */
-    D2.enter(tl, R+'.ask', 59.6, {y:24, d:.46, ease:'expo.out'});
-    tl.from(R+'.ask .term-bar',{opacity:0,duration:.3,ease:'power1.out'},59.8);
-    D2.enter(tl, R+'.q1', 62.0, {x:-16, d:.3, ease:'power2.out'});
-    D2.enter(tl, R+'.q2', 65.9, {x:-16, d:.3, ease:'power2.out'});
+    /* ===== beat C — 反问 + 价值 + 品牌 outro(sub-9..15, 57.9–89.5s) ===== */
+    tl.from(R+'.c-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},58.2);
+    tl.from(R+'.c-term',{y:24,opacity:0,duration:.46,ease:'expo.out'},59.6);
+    tl.from(R+'.c-term .term-bar',{opacity:0,duration:.3,ease:'power1.out'},59.8);
+    tl.from(R+'.c-q1',{x:-16,opacity:0,duration:.3,ease:'power2.out'},62.0);
+    tl.from(R+'.c-q2',{x:-16,opacity:0,duration:.3,ease:'power2.out'},65.9);
     D2.blink(tl, R+'.cblink', 67.0, 14);
-
-    /* 2023→生产 价值升华(sub-11/12/13) */
-    D2.enter(tl, R+'.slogan', 73.3, {y:16, d:.42, ease:'power3.out'});
-
-    /* 品牌 outro(sub-14/15) */
-    D2.enter(tl, R+'.signoff', 82.7, {y:12, d:.34, ease:'power2.out'});
+    tl.from(R+'.c-slogan',{y:16,opacity:0,duration:.42,ease:'power3.out'},73.3);
+    tl.from(R+'.c-sign',{y:12,opacity:0,duration:.34,ease:'power2.out'},82.7);
+    tl.to(R+'#beatC',{scale:1.025,duration:31.2,ease:'none'},57.9);
 
     D2.subs(tl, [['#sub-1',0.016],['#sub-2',5.74],['#sub-3',16.013],['#sub-4',21.184],['#sub-5',25.504],['#sub-6',37.841],['#sub-7',43.288],['#sub-8',55.227],['#sub-9',59.56],['#sub-10',65.933],['#sub-11',68.56],['#sub-12',73.275],['#sub-13',77.467],['#sub-14',82.672],['#sub-15',86.958]].map(function(s){return [R+s[0],s[1]];}));
-    D2.breath(tl, R+'.content', 89.467, 'out');
     window.__timelines = window.__timelines || {};
     window.__timelines['s10'] = tl;
   })();

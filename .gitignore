@@ -1,7 +1,7 @@
 node_modules/
 dist/
-# d2 kit 字体(31MB,本地;复制 MiSans + JetBrains Mono .ttf 进 design/d2-kit/assets/fonts/)
-.claude/skills/blog2video/design/d2-kit/assets/fonts/
+# d2 kit 字体(MiSans + JetBrains Mono .ttf,~31MB):已入库,任何 clone/云环境开箱即有,无需手动补
+# (MiSans 可商用 + JetBrains Mono OFL 开源)
 # d2 逐视频渲染工作区里的 symlink / 中间产物(可重新生成,不入库)
 blog2video-output/**/assets
 blog2video-output/**/snapshots/

@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Your Agent Harness Should Repair Itself",
+    "title_zh": "你的 AI Agent，应该自己修自己",
+    "word_count": 1850,
+    "slug": "akshay-pachaar-2064051835636498924"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全片是一条连贯论证（自我修复 Agent → trace 之后才是瓶颈 → 三个转折 → 飞轮闭合），三个转折必须建立在「虚线右边」框架之上、且只有合在一起飞轮才闭合，拆开会断掉论证链条。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "你的 AI Agent，应该自己修自己"
+      }
+    ]
+  }
+}

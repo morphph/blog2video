@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .col .it .ds.q{color:#edebe6;font-weight:600;font-size:28px}
+[data-composition-id='s07'] .col .it .ds.q::before{content:'「';color:#ccff4d}
+[data-composition-id='s07'] .col .it .ds.q::after{content:'」';color:#ccff4d}
+[data-composition-id='s07'] .foot{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="59.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[07/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 转折 02 · <span class="acc">怎么判断回答行不行</span></div>
+      <div class="h1" style="margin-top:16px">用大白话写断言,<span class="em">而不是比浮点数</span></div>
+
+      <div class="cols" style="margin-top:38px">
+        <div class="col eng">
+          <div class="ch">工程师的方式</div>
+          <div class="it en1"><div class="nm">写成大白话断言</div><div class="ds q">回答必须含具体成交细节,不能只给数字</div></div>
+          <div class="it en2"><div class="nm">底层转成裁判</div><div class="ds"><span class="code">LLM-as-a-judge</span> → 干净 pass/fail</div></div>
+        </div>
+        <div class="col res alt">
+          <div class="ch">研究员那套</div>
+          <div class="it rs1"><div class="nm">标数据集 · 定数值指标</div><div class="ds">把质量压成一个分数</div></div>
+          <div class="it rs2"><div class="nm">比浮点数</div><div class="ds">做研究有效,却不是工程判断</div></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span>诚实代价:让模型判模型有<span style="color:#edebe6">可靠性边界</span>——裁判会看走眼,也要成本</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="4.161" data-track-index="5"><div class="sub-inner">第二个转折,关于怎么判断一个回答<span class="sub-k">到底行不行</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.335" data-duration="6.791" data-track-index="5"><div class="sub-inner">传统做法是研究员那一套:标一个数据集,定一个数值指标,然后<span class="sub-k">比浮点数</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.126" data-duration="1.997" data-track-index="5"><div class="sub-inner">这套对做研究<span class="sub-k">很有效</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.123" data-duration="3.395" data-track-index="5"><div class="sub-inner">可它压根不是工程师<span class="sub-k">判断质量的方式</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.683" data-duration="8.88" data-track-index="5"><div class="sub-inner">工程师脑子里想的不是分数,是一句很朴素的话:这个回答必须包含<span class="sub-k">具体的成交细节</span>,不能只给个数字。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.563" data-duration="3.861" data-track-index="5"><div class="sub-inner">或者:这个回答绝对不能<span class="sub-k">泄露未授权的信息</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.571" data-duration="2.566" data-track-index="5"><div class="sub-inner">那就直接用大白话把它<span class="sub-k">写成断言</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.137" data-duration="8.723" data-track-index="5"><div class="sub-inner">底层再把每一条转成 <span class="sub-k">LLM-as-a-judge</span>,也就是让一个模型去当裁判,给出干净的通过或者不通过。</div></div>
+    <div id="sub-9" class="clip sub" data-start="41.019" data-duration="2.28" data-track-index="5"><div class="sub-inner">这里要诚实说一句<span class="sub-k">代价</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="43.299" data-duration="7.047" data-track-index="5"><div class="sub-inner">让模型去判模型,本身是有<span class="sub-k">可靠性边界</span>的——裁判也会看走眼,也要花成本。</div></div>
+    <div id="sub-11" class="clip sub" data-start="50.546" data-duration="8.434" data-track-index="5"><div class="sub-inner">但它换来的,是让质量标准回到工程师<span class="sub-k">真正思考的那个层面</span>,而不是逼你把判断硬塞进一个浮点数里。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:20, d:.42, ease:'expo.out'});
+    // 研究员那套(旧,cyan)先出 —— 4.3s 起讲传统做法
+    D2.enter(tl, R+'.col.res', 4.4, {x:24, d:.42, ease:'power3.out'});
+    // 工程师方式(新,签名绿)—— 16.7s 起讲工程师怎么想
+    D2.enter(tl, R+'.col.eng', 16.7, {x:-24, d:.42, ease:'expo.out'});
+    // 晚到子元素:底层转裁判 —— 32.1s
+    D2.enter(tl, R+'.en2', 32.1, {y:14, d:.34, ease:'power2.out'});
+    // 诚实代价 status —— 41s
+    D2.enter(tl, R+'.foot', 41.0, {y:14, d:.34, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',4.335],['#sub-3',11.126],['#sub-4',13.123],['#sub-5',16.683],['#sub-6',25.563],['#sub-7',29.571],['#sub-8',32.137],['#sub-9',41.019],['#sub-10',43.299],['#sub-11',50.546]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 59.133, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

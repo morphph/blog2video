@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .rows{gap:13px}
+[data-composition-id='s09'] .row{padding:20px 28px}
+[data-composition-id='s09'] .row .rt{font-size:37px}
+[data-composition-id='s09'] .row .rd{margin-top:6px;font-size:26px}
+[data-composition-id='s09'] .row.gate{border-color:rgba(255,107,94,.5)}
+[data-composition-id='s09'] .row.gate .n{color:#ff6b5e}
+[data-composition-id='s09'] .row.gate .gk{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .row.gate .rd .gw{color:#ff6b5e;font-weight:600}
+[data-composition-id='s09'] .flowarrow{margin:6px 0 0 18px;font-size:28px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="62.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[09/10]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 三件事串起来 · <span class="acc">循环闭合</span></div>
+      <div class="h1" style="margin-top:16px;font-size:64px">回路<span class="em">闭合</span>的样子</div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">一行<span class="code">装饰器</span>埋点,声明配置</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">生产环境出故障</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">编程 Agent <span class="code">Ollie</span> 读 trace + 源码,定位根因</div>
+          <div class="rd r3d">走遍整张 <span class="code">span</span> 树 → 给你一份 <span class="code">diff</span></div>
+        </div></div>
+
+        <div class="row r4 gate"><div class="n">04</div><div class="rb">
+          <div class="rt"><span class="gk">你批准</span> —— 唯一的手动步骤</div>
+          <div class="rd r4d">没批准不改代码、不动 <span class="code">git</span>;<span class="gw">人 = 吞吐瓶颈</span></div>
+        </div></div>
+
+        <div class="row r5"><div class="n">05</div><div class="rb">
+          <div class="rt">用原始输入重跑,新旧 <span class="code">trace</span> 并排对比</div>
+        </div></div>
+
+        <div class="row r6"><div class="n">06</div><div class="rb">
+          <div class="rt">通过 → 修复存下,失败锁成<span class="code">回归测试</span></div>
+        </div></div>
+      </div>
+
+      <div class="flowarrow"><span class="a">↑</span> 下一个失败,进入同一个循环</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.093" data-track-index="5"><div class="sub-inner">把这三件事串起来,<span class="sub-k">循环就闭合了</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.24" data-duration="4.462" data-track-index="5"><div class="sub-inner">一行<span class="sub-k">装饰器</span>把 Agent 埋上点,声明一下配置。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.702" data-duration="1.487" data-track-index="5"><div class="sub-inner"><span class="sub-k">生产环境</span>出故障。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.389" data-duration="11.37" data-track-index="5"><div class="sub-inner">一个内置的编程 Agent——在 Opik 里它叫 <span class="sub-k">Ollie</span>——读 trace、读你的源码,走遍整张 span 树,定位根因,给你一份 diff。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.916" data-duration="4.489" data-track-index="5"><div class="sub-inner">注意,整条路径里只有一个<span class="sub-k">手动步骤</span>:你批准。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.405" data-duration="5.558" data-track-index="5"><div class="sub-inner">没有你的显式批准,它<span class="sub-k">不改任何代码</span>,不动你的 git。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.163" data-duration="8.433" data-track-index="5"><div class="sub-inner">这一步既是安全闸,也意味着这个回路并非全自动——规模化的时候,<span class="sub-k">人就是那个吞吐瓶颈</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="39.744" data-duration="3.174" data-track-index="5"><div class="sub-inner">这是个<span class="sub-k">真实的取舍</span>,不是缺点也不是噱头。</div></div>
+    <div id="sub-9" class="clip sub" data-start="43.056" data-duration="10.486" data-track-index="5"><div class="sub-inner">你一批准,它就用原始失败 trace 里一模一样的输入,把 Agent 重跑一遍,把新 trace 流式推给你做<span class="sub-k">并排对比</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="53.542" data-duration="5.157" data-track-index="5"><div class="sub-inner">通过了,这个修复就存下来,原始那个失败,被锁成一条<span class="sub-k">回归测试</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="58.86" data-duration="3.313" data-track-index="5"><div class="sub-inner">然后,下一个失败,进入<span class="sub-k">同一个循环</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 3.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 7.7, {x:-24, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 9.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3 .r3d', 13.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r4', 21.0, {x:-24, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.r4 .r4d', 31.3, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r5', 43.2, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r6', 53.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.flowarrow', 59.0, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.24],['#sub-3',7.702],['#sub-4',9.389],['#sub-5',20.916],['#sub-6',25.405],['#sub-7',31.163],['#sub-8',39.744],['#sub-9',43.056],['#sub-10',53.542],['#sub-11',58.86]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 62.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

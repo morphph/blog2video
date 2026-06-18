@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .term-l2{font-size:60px}
+[data-composition-id='s06'] .term-l2 .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s06'] .shift{display:flex;align-items:center;gap:22px;width:100%}
+[data-composition-id='s06'] .shift .cell{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 28px;min-width:0}
+[data-composition-id='s06'] .shift .cell .kt{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em;margin-bottom:12px}
+[data-composition-id='s06'] .shift .cell .vt{font-weight:700;font-size:36px;line-height:1.3;color:#8a8a85}
+[data-composition-id='s06'] .shift .cell.new{border-color:rgba(95,211,232,.4)}
+[data-composition-id='s06'] .shift .cell.new .kt{color:#5fd3e8}
+[data-composition-id='s06'] .shift .cell.new .vt{color:#edebe6}
+[data-composition-id='s06'] .shift .arr{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:42px;color:#ccff4d;font-weight:700}
+[data-composition-id='s06'] .punch{margin-top:26px;font-weight:700;font-size:38px;line-height:1.42;color:#edebe6}
+[data-composition-id='s06'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="45.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[06/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 转折 01 · <span class="acc">失败 → 测试</span></div>
+
+      <div class="shift" style="margin-top:26px">
+        <div class="cell"><div class="kt">普通测试集</div><div class="vt">凭想象写的<br>合成场景</div></div>
+        <div class="arr">→</div>
+        <div class="cell new"><div class="kt">这套机制</div><div class="vt">从真实生产<br>失败里长出来</div></div>
+      </div>
+
+      <div class="term" style="margin-top:30px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">harness@loop: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>每修复一个真实事故</div>
+          <div class="term-l2">这套 harness 就<span class="em">更难被打破一次</span></div>
+          <div class="term-src">— <b>每转一圈</b> · 不再是漏一个补一个的消防队</div>
+        </div>
+      </div>
+
+      <div class="punch">过去丢掉的经验,现在全被<span class="em">锁进了测试里</span>,永远帮你守着</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.042" data-track-index="5"><div class="sub-inner">第一个关键转折,听起来像个小功能,实际改变的是整套工作流的<span class="sub-k">数学</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.192" data-duration="4.974" data-track-index="5"><div class="sub-inner">把每一个你调试过的失败 trace,<span class="sub-k">自动变成一条新的测试用例</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.304" data-duration="2.151" data-track-index="5"><div class="sub-inner">你品一下这件事的<span class="sub-k">份量</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.455" data-duration="5.278" data-track-index="5"><div class="sub-inner">普通的测试集,是有人提前坐下来,凭想象写一堆<span class="sub-k">合成场景</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.733" data-duration="4.888" data-track-index="5"><div class="sub-inner">而这套机制里,测试集是从<span class="sub-k">真实的生产失败</span>里长出来的。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.621" data-duration="4.301" data-track-index="5"><div class="sub-inner">每修复一个真实事故,测试套件就<span class="sub-k">自动多硬一分</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.08" data-duration="6.332" data-track-index="5"><div class="sub-inner">于是出现了一句很关键的话:每转一圈,这套 harness 就<span class="sub-k">更难被打破一次</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.56" data-duration="2.735" data-track-index="5"><div class="sub-inner">它不再是漏一个补一个的<span class="sub-k">消防队</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.295" data-duration="2.736" data-track-index="5"><div class="sub-inner">它在变成一个<span class="sub-k">越用越结实</span>的东西。</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.031" data-duration="5.47" data-track-index="5"><div class="sub-inner">你过去丢掉的那些经验,现在全都被锁进了测试里,<span class="sub-k">永远帮你守着</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    // shift transformation (sub-2 失败→测试 / sub-4 合成场景 / sub-5 真实失败)
+    D2.enter(tl, R+'.shift .cell:not(.new)', 6.4, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.shift .arr', 13.6, {opacity:0, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.shift .cell.new', 18.9, {y:16, d:.4, ease:'expo.out'});
+    // golden quote terminal (sub-6/7)
+    D2.enter(tl, R+'.term', 23.8, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},24.0);
+    D2.enter(tl, R+'.term-l1', 24.4, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 28.2, {y:16, d:.4, ease:'power4.out'});
+    D2.enter(tl, R+'.term-src', 34.7, {opacity:0, y:8, d:.34, ease:'power1.out'});
+    // closing punch (sub-10)
+    D2.enter(tl, R+'.punch', 40.1, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.192],['#sub-3',11.304],['#sub-4',13.455],['#sub-5',18.733],['#sub-6',23.621],['#sub-7',28.08],['#sub-8',34.56],['#sub-9',37.295],['#sub-10',40.031]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .punch{margin-top:42px;font-weight:900;font-size:56px;line-height:1.24;color:#edebe6}
+[data-composition-id='s05'] .punch .dim{color:#8a8a85;font-weight:600;font-size:48px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="40.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[05/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 归零循环 · <span class="acc">经验为何留不住</span></div>
+      <div class="h1" style="margin-top:18px">每修一次,<span class="em">又从零开始</span></div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">熬夜修好一个 <span class="code">bug</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">知识藏在脑子 + 一次性补丁里</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">修完,它就丢了</div>
+        </div></div>
+
+        <div class="row r4 warn"><div class="n">04</div><div class="rb">
+          <div class="rt">下个模型一来 → 一切归零</div>
+        </div></div>
+
+        <div class="row r5"><div class="n">05</div><div class="rb">
+          <div class="rt">又从看 <span class="code">trace</span> 开始</div>
+        </div></div>
+      </div>
+
+      <div class="punch"><span class="dim">不是 bug 太多,是</span><span class="hl"><span class="bar"></span><span class="tx">经验留不住</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.612" data-track-index="5"><div class="sub-inner">更扎心的是,这个循环之所以一次次重开,是因为它从来没被<span class="sub-k">记住</span>过。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.76" data-duration="6.658" data-track-index="5"><div class="sub-inner">你这次熬夜修好的那个 bug,知识就藏在你脑子里、藏在那个<span class="sub-k">一次性的补丁</span>里。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.418" data-duration="1.439" data-track-index="5"><div class="sub-inner">修完,它就<span class="sub-k">丢了</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.857" data-duration="4.678" data-track-index="5"><div class="sub-inner">下个模型一来,一切<span class="sub-k">归零</span>,你又从看 trace 开始。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.684" data-duration="2.964" data-track-index="5"><div class="sub-inner">每一次调试,都是<span class="sub-k">一次性消耗品</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.648" data-duration="4.15" data-track-index="5"><div class="sub-inner">你付出的时间,没有沉淀成任何能<span class="sub-k">复用的资产</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.798" data-duration="6.521" data-track-index="5"><div class="sub-inner">这才是循环反复重开的真正原因——不是 bug 太多,是<span class="sub-k">经验留不住</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.472" data-duration="2.02" data-track-index="5"><div class="sub-inner">那要怎么让它<span class="sub-k">停下来</span>?</div></div>
+    <div id="sub-9" class="clip sub" data-start="34.492" data-duration="5.856" data-track-index="5"><div class="sub-inner">答案是,得想办法把这个手工循环,变成一个能<span class="sub-k">自己闭合的回路</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 6.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 9.3, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 12.5, {y:16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r4', 14.0, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r5', 16.4, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 25.9, {y:18, d:.4, ease:'expo.out'});
+    D2.sweep(tl, R, '.punch .hl', 27.6);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.76],['#sub-3',12.418],['#sub-4',13.857],['#sub-5',18.684],['#sub-6',21.648],['#sub-7',25.798],['#sub-8',32.472],['#sub-9',34.492]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 40.5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

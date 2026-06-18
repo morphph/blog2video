@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s04'] .term-name{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#ccff4d;letter-spacing:.01em}
+[data-composition-id='s04'] .term-def{margin-top:14px;font-weight:600;font-size:36px;line-height:1.4;color:#edebe6}
+[data-composition-id='s04'] .term-def .dim{color:#8a8a85}
+[data-composition-id='s04'] .term-def .parts{font-family:'JetBrains Mono',monospace;color:#ccff4d}
+[data-composition-id='s04'] .swap{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .swap .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s04'] .crux{margin-top:34px}
+[data-composition-id='s04'] .tl-row .wt .arx{color:#8a8a85;margin:0 12px}
+[data-composition-id='s04'] .tl-row.now .badge{background:#ff6b5e;color:#121212}
+[data-composition-id='s04'] .tl-row.now{border-color:#ff6b5e;background:rgba(255,107,94,.06)}
+[data-composition-id='s04'] .tl-row.now .yr{color:#ff6b5e}
+[data-composition-id='s04'] .tl-row.now .wt .hot{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="42.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 自我修复 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[04/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// WHY IT MATTERS · <span class="acc">为什么重要</span></div>
+      <div class="h2" style="margin-top:18px">决定 Agent 好坏的,是<br><span class="en">harness</span> 那层脚手架,<span class="em">不是模型</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="term-name">harness</div>
+        <div class="term-def">包在<span class="dim">裸模型</span>外面那一层 ——<br><span class="parts">prompt · 工具 · 各种检查</span></div>
+        <div class="swap">同一个模型 <span class="ar">+</span> 更好的 harness <span class="ar">→</span> 结果好得多</div>
+      </div>
+
+      <div class="kicker crux">// THE CRUX · <span class="acc">症结:这活儿永远干不完</span></div>
+      <div class="tl" style="margin-top:16px">
+        <div class="tl-row c0"><div class="yr">升级</div><div class="wt">每升级一次模型<span class="arx">→</span>多一批新失败模式</div></div>
+        <div class="tl-row c1"><div class="yr">加工具</div><div class="wt">每加一个工具<span class="arx">→</span>多一批新边界情况</div></div>
+        <div class="tl-row c2 now"><div class="yr">复杂度</div><div class="wt">harness 变复杂的速度<span class="arx">›</span><span class="hot">快过人手工追踪</span><span class="badge">追不上</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.004" data-duration="1.949" data-track-index="5"><div class="sub-inner">为什么这件事这么<span class="sub-k">重要</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.953" data-duration="4.429" data-track-index="5"><div class="sub-inner">因为决定 Agent 好坏的,越来越<span class="sub-k">不是模型本身</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.52" data-duration="6.055" data-track-index="5"><div class="sub-inner"><span class="sub-k">Cursor</span> 公开聊过,他们在 Agent 外面那层 harness 上投入了多少工程。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.575" data-duration="5.642" data-track-index="5"><div class="sub-inner">所谓 <span class="sub-k">harness</span>,就是包在裸模型外面的那一层——prompt、工具、各种检查。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.217" data-duration="3.853" data-track-index="5"><div class="sub-inner">同一个模型,换上一套更好的 harness,<span class="sub-k">结果好得多</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.216" data-duration="2.373" data-track-index="5"><div class="sub-inner">而这活儿,<span class="sub-k">永远干不完</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.736" data-duration="1.155" data-track-index="5"><div class="sub-inner">这就是<span class="sub-k">症结</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="25.891" data-duration="3.274" data-track-index="5"><div class="sub-inner">每升级一次模型,多一批<span class="sub-k">新失败模式</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="29.165" data-duration="3.274" data-track-index="5"><div class="sub-inner">每加一个工具,多一批<span class="sub-k">新的边界情况</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="32.439" data-duration="7.511" data-track-index="5"><div class="sub-inner">harness 越长越复杂,复杂的速度,比任何团队手工追踪和修复的速度都要<span class="sub-k">快</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="40.108" data-duration="2.454" data-track-index="5"><div class="sub-inner">你一个人,<span class="sub-k">追不上它</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.95, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 6.6, {y:22, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket .swap', 18.2, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.crux', 24.6, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c0', 25.9, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.c1', 29.2, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.c2', 32.4, {x:-22, d:.38, ease:'power2.out'});
+    tl.from(R+'.c2 .badge', {opacity:0, y:8, duration:.32, ease:'expo.out'}, 40.1);
+    D2.subs(tl, [['#sub-1',0.004],['#sub-2',1.953],['#sub-3',6.52],['#sub-4',12.575],['#sub-5',18.217],['#sub-6',22.216],['#sub-7',24.736],['#sub-8',25.891],['#sub-9',29.165],['#sub-10',32.439],['#sub-11',40.108]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.7, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

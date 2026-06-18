@@ -20,7 +20,7 @@
 #   · 帧吸附已在 build-scenes-data.mjs 做掉,逐 clip ceil 取整不累加 → 整片与口播零漂移。
 # 注: 不用 `set -e` —— 渲染循环要"渲完全部、失败记 log、再统一校验",首段失败不该中断后续。
 #     前置/缺件检查用显式 `|| exit 1`。
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # node 必须 v22.x,否则渲染 OOM
+export PATH="$HOME/.npm-global/bin:/opt/homebrew/opt/node@22/bin:$PATH"   # hyperframes CLI(~/.npm-global/bin,mac+linux 通用)+ node v22.x(mac homebrew;linux 上该路径不存在但无害,node22 已在 /usr/bin)
 
 SCRIPT_DIR="${0:A:h}"               # 本脚本绝对目录(在 cd 进 OUT 之前抓,供调用 sibling 脚本 shoot-cover.mjs)
 

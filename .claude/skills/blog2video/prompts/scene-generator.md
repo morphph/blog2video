@@ -12,7 +12,7 @@
 ## 0. 环境(每条 shell 命令前缀)
 
 ```bash
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"   # Apple Silicon;node -v 必须是 v22.x,否则渲染/快照 OOM
+export PATH="$HOME/.npm-global/bin:/opt/homebrew/opt/node@22/bin:$PATH"   # hyperframes CLI 在 ~/.npm-global/bin(mac+linux 通用);node v22.x:mac 走 homebrew 路径,linux 上 node22 已在 /usr/bin(homebrew 路径不存在但无害)。node -v 必须 v22.x,否则渲染/快照 OOM
 cd /Users/yufanp/Desktop/Project/blog2video
 ```
 

@@ -1,0 +1,64 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 42.433,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_3.html",
+ "topbarIndex": "[03/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.255,
+   "text": "这里有一个很值得停下来想的画面。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.248,
+   "localDuration": 4.273,
+   "text": "把整个调试流程画成一张图，中间拉一条虚线。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.661,
+   "localDuration": 9.321,
+   "text": "虚线左边，全是自动跑完的：trace、span 树、延迟、token 成本，监控平台一键给你。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.982,
+   "localDuration": 1.19,
+   "text": "虚线右边呢？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.172,
+   "localDuration": 4.958,
+   "text": "为什么坏、怎么修、保证不复发——全靠你自己的时间。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.285,
+   "localDuration": 4.799,
+   "text": "而生产环境里的调试，真正住的地方，恰恰是虚线右边。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.253,
+   "localDuration": 3.551,
+   "text": "所以真正的瓶颈，从来不是可观测性本身。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.804,
+   "localDuration": 4.673,
+   "text": "是 trace 落到你屏幕之后，必须发生的那一切。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.477,
+   "localDuration": 5.794,
+   "text": "监控只是把问题端到你面前，它没解决问题，它只是让你看见了问题。"
+  }
+ ]
+}

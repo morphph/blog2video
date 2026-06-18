@@ -1,0 +1,100 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "summary",
+ "dataDuration": 89.467,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_10.html",
+ "topbarIndex": "[10/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 5.566,
+   "text": "回过头看，这套思路的精髓，其实跟 trace 本身没多大关系。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.74,
+   "localDuration": 10.273,
+   "text": "它真正做的，是把「调试」这件事，从一次性的手工消耗，变成一个能自我修复、还越用越硬的飞轮。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 16.013,
+   "localDuration": 5.022,
+   "text": "失败不再是负担，失败变成了让系统变强的燃料。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.184,
+   "localDuration": 4.161,
+   "text": "Opik 是把这套回路自动化的一个具体实现样本。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.504,
+   "localDuration": 12.137,
+   "text": "但你哪怕一行它的代码都不用，这套范式也值得刻进脑子里：失败 trace 要自动沉淀成回归测试；质量断言要用大白话写，而不是比浮点数；"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 37.841,
+   "localDuration": 5.31,
+   "text": "要测的是整张 Agent 图被改动后的反应，而不是单次 prompt 的输出。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 43.288,
+   "localDuration": 11.939,
+   "text": "你的可观测性工具能告诉你 Agent 出了什么事，但「为什么坏、怎么修、保证不再坏」这三件最耗命的活，至今还压在你一个人肩上。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 55.227,
+   "localDuration": 4.169,
+   "text": "真正的瓶颈，从来都在 trace 落屏之后。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 59.56,
+   "localDuration": 6.373,
+   "text": "所以下次再有人跟你说「我们上了可观测性」，你可以反问一句：那看见之后呢？"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 65.933,
+   "localDuration": 2.478,
+   "text": "谁来修，修完怎么保证它记住？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 68.56,
+   "localDuration": 4.715,
+   "text": "监控让你看见问题，是 2023 年那个还算合理的终点。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 73.275,
+   "localDuration": 4.192,
+   "text": "可一旦 Agent 真正进了生产，活才刚刚开始。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 77.467,
+   "localDuration": 5.064,
+   "text": "能把虚线右边那段自己跑完的系统，才是接下来真正值钱的东西。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 82.672,
+   "localDuration": 4.286,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 86.958,
+   "localDuration": 1.5,
+   "text": "我们下期再见。"
+  }
+ ]
+}

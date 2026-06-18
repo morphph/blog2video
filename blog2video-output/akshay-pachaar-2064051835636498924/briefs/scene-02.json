@@ -1,0 +1,82 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 52.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_2.html",
+ "topbarIndex": "[02/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.542,
+   "text": "先回到今天的现实。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.534,
+   "localDuration": 7.37,
+   "text": "你的 Agent 在生产环境里挂了，你打开监控，一条干干净净的 trace 摆在面前。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.904,
+   "localDuration": 7.37,
+   "text": "每一次模型调用、每一个触发的工具、每一步花了多久、烧了多少 token，全都清清楚楚。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.444,
+   "localDuration": 3.833,
+   "text": "但你真正想知道的三件事，它一个都没回答。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.277,
+   "localDuration": 1.341,
+   "text": "它为什么坏了？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.618,
+   "localDuration": 1.917,
+   "text": "哪一处改动能修好它？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.535,
+   "localDuration": 4.024,
+   "text": "还有最关键的——怎么保证下周不会再坏一次？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 27.712,
+   "localDuration": 1.168,
+   "text": "这些它都不管。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 28.88,
+   "localDuration": 11.015,
+   "text": "于是你开始干那件最熟悉的活：一个 span 一个 span 往下翻，慢慢拼出一个假设，手写一个补丁，然后祈祷别把原本好好的地方改坏。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.06,
+   "localDuration": 2.319,
+   "text": "补丁打完，你松一口气。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 42.379,
+   "localDuration": 5.271,
+   "text": "可过几周，一个新模型上线，带来一整批新的失败模式。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 47.65,
+   "localDuration": 4.849,
+   "text": "于是你把刚才那套手工流程，从头到尾，再跑一遍。"
+  }
+ ]
+}

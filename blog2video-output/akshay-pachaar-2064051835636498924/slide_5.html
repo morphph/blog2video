@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 60px; font-weight: 800; line-height: 1.25; }
+    .title .em { color: #EF4444; }
+    .cycle { width: 100%; margin-top: 56px; display: flex; flex-direction: column; gap: 16px; align-items: center; }
+    .step { width: 100%; background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-radius: 12px;
+      padding: 26px 24px; font-size: 34px; line-height: 1.4; }
+    .step .hl { color: #B0B0CC; }
+    .arrow { font-size: 34px; color: #6B7280; }
+    .reset { border-left: 4px solid #EF4444; }
+    .reset .big { font-size: 38px; font-weight: 800; color: #EF4444; }
+    .punch { width: 100%; margin-top: 48px; background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4);
+      border-left: 4px solid #F59E0B; border-radius: 12px; padding: 28px 26px; }
+    .punch .t { font-size: 38px; font-weight: 700; line-height: 1.4; }
+    .punch .t .hl { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">循环一次次重开，<br>是因为它<span class="em">从没被记住</span></div>
+    <div class="cycle">
+      <div class="step">熬夜修好一个 bug</div>
+      <div class="arrow">↓</div>
+      <div class="step">知识藏在你脑子 + 一次性补丁里</div>
+      <div class="arrow">↓</div>
+      <div class="step reset"><span class="big">下个模型一来 → 一切归零</span></div>
+    </div>
+    <div class="punch"><div class="t">不是 bug 太多，<br>是<span class="hl">经验留不住</span></div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 59.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_1.html",
+ "topbarIndex": "[01/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 9.107,
+   "text": "今天聊一个正在被严重低估的概念——self-improving agent，会自我进化、能自己修自己的 AI Agent。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 9.252,
+   "localDuration": 0.908,
+   "text": "什么意思？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.16,
+   "localDuration": 13.795,
+   "text": "想象一下：你的 Agent 在生产环境里出了故障，可这一次，你没有熬夜翻日志，没有手写补丁，也没有改完一处又提心吊胆别的地方会崩——它自己把自己修好了。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 24.12,
+   "localDuration": 3.905,
+   "text": "修完之后，它还比出问题之前更难被打破。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 28.188,
+   "localDuration": 2.837,
+   "text": "听起来是不是有点像 PPT 上的吹牛？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 31.225,
+   "localDuration": 14.61,
+   "text": "可这恰恰是 Akshay Pachaar 一篇深度文的核心判断，背后站着 Comet ML 和开源项目 Opik 的实战主张：一个真正成熟的 AI Agent，本来就应该会自己修自己。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 45.972,
+   "localDuration": 1.622,
+   "text": "那它到底怎么成立？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 47.594,
+   "localDuration": 11.537,
+   "text": "我们不聊怎么搭监控，只拆一件最关键的事——怎么让你的 Agent，从「每次出错都要你来救」，变成「每次出错都让它自己变得更强」。"
+  }
+ ]
+}

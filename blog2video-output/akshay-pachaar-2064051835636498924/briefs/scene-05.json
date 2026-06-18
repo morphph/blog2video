@@ -1,0 +1,64 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 40.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_5.html",
+ "topbarIndex": "[05/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.612,
+   "text": "更扎心的是，这个循环之所以一次次重开，是因为它从来没被记住过。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.76,
+   "localDuration": 6.658,
+   "text": "你这次熬夜修好的那个 bug，知识就藏在你脑子里、藏在那个一次性的补丁里。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.418,
+   "localDuration": 1.439,
+   "text": "修完，它就丢了。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.857,
+   "localDuration": 4.678,
+   "text": "下个模型一来，一切归零，你又从看 trace 开始。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.684,
+   "localDuration": 2.964,
+   "text": "每一次调试，都是一次性消耗品。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.648,
+   "localDuration": 4.15,
+   "text": "你付出的时间，没有沉淀成任何能复用的资产。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.798,
+   "localDuration": 6.521,
+   "text": "这才是循环反复重开的真正原因——不是 bug 太多，是经验留不住。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.472,
+   "localDuration": 2.02,
+   "text": "那要怎么让它停下来？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 34.492,
+   "localDuration": 5.856,
+   "text": "答案是，得想办法把这个手工循环，变成一个能自己闭合的回路。"
+  }
+ ]
+}

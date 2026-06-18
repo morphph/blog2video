@@ -1,0 +1,76 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 62.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_9.html",
+ "topbarIndex": "[09/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.093,
+   "text": "把这三件事串起来，循环就闭合了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.24,
+   "localDuration": 4.462,
+   "text": "一行装饰器把 Agent 埋上点，声明一下配置。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.702,
+   "localDuration": 1.487,
+   "text": "生产环境出故障。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.389,
+   "localDuration": 11.37,
+   "text": "一个内置的编程 Agent——在 Opik 里它叫 Ollie——读 trace、读你的源码，走遍整张 span 树，定位根因，给你一份 diff。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.916,
+   "localDuration": 4.489,
+   "text": "注意，整条路径里只有一个手动步骤：你批准。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.405,
+   "localDuration": 5.558,
+   "text": "没有你的显式批准，它不改任何代码，不动你的 git。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.163,
+   "localDuration": 8.433,
+   "text": "这一步既是安全闸，也意味着这个回路并非全自动——规模化的时候，人就是那个吞吐瓶颈。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 39.744,
+   "localDuration": 3.174,
+   "text": "这是个真实的取舍，不是缺点也不是噱头。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 43.056,
+   "localDuration": 10.486,
+   "text": "你一批准，它就用原始失败 trace 里一模一样的输入，把 Agent 重跑一遍，把新 trace 流式推给你做并排对比。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 53.542,
+   "localDuration": 5.157,
+   "text": "通过了，这个修复就存下来，原始那个失败，被锁成一条回归测试。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 58.86,
+   "localDuration": 3.313,
+   "text": "然后,下一个失败,进入同一个循环。"
+  }
+ ]
+}

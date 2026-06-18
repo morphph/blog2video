@@ -1,0 +1,76 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 42.7,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_4.html",
+ "topbarIndex": "[04/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.004,
+   "localDuration": 1.949,
+   "text": "为什么这件事这么重要？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.953,
+   "localDuration": 4.429,
+   "text": "因为决定 Agent 好坏的，越来越不是模型本身。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.52,
+   "localDuration": 6.055,
+   "text": "Cursor 公开聊过，他们在 Agent 外面那层 harness 上投入了多少工程。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.575,
+   "localDuration": 5.642,
+   "text": "所谓 harness，就是包在裸模型外面的那一层——prompt、工具、各种检查。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.217,
+   "localDuration": 3.853,
+   "text": "同一个模型，换上一套更好的 harness，结果好得多。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.216,
+   "localDuration": 2.373,
+   "text": "而这活儿，永远干不完。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.736,
+   "localDuration": 1.155,
+   "text": "这就是症结。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 25.891,
+   "localDuration": 3.274,
+   "text": "每升级一次模型，多一批新失败模式。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 29.165,
+   "localDuration": 3.274,
+   "text": "每加一个工具，多一批新的边界情况。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 32.439,
+   "localDuration": 7.511,
+   "text": "harness 越长越复杂，复杂的速度，比任何团队手工追踪和修复的速度都要快。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.108,
+   "localDuration": 2.454,
+   "text": "你一个人，追不上它。"
+  }
+ ]
+}

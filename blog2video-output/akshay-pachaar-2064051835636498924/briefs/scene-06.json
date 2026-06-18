@@ -1,0 +1,70 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 45.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_6.html",
+ "topbarIndex": "[06/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 6.042,
+   "text": "第一个关键转折，听起来像个小功能，实际改变的是整套工作流的数学。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.192,
+   "localDuration": 4.974,
+   "text": "把每一个你调试过的失败 trace，自动变成一条新的测试用例。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.304,
+   "localDuration": 2.151,
+   "text": "你品一下这件事的份量。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.455,
+   "localDuration": 5.278,
+   "text": "普通的测试集，是有人提前坐下来，凭想象写一堆合成场景。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.733,
+   "localDuration": 4.888,
+   "text": "而这套机制里，测试集是从真实的生产失败里长出来的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.621,
+   "localDuration": 4.301,
+   "text": "每修复一个真实事故，测试套件就自动多硬一分。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.08,
+   "localDuration": 6.332,
+   "text": "于是出现了一句很关键的话：每转一圈，这套 harness 就更难被打破一次。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.56,
+   "localDuration": 2.735,
+   "text": "它不再是漏一个补一个的消防队。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 37.295,
+   "localDuration": 2.736,
+   "text": "它在变成一个越用越结实的东西。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.031,
+   "localDuration": 5.47,
+   "text": "你过去丢掉的那些经验，现在全都被锁进了测试里，永远帮你守着。"
+  }
+ ]
+}

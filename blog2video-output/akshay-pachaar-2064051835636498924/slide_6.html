@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .badge { font-size: 28px; font-weight: 800; letter-spacing: 2px; color: #10B981; margin-bottom: 24px; }
+    .title { font-size: 58px; font-weight: 800; line-height: 1.25; }
+    .title .em { color: #10B981; }
+    .flow { width: 100%; margin-top: 52px; display: flex; align-items: center; justify-content: center; gap: 18px; }
+    .node { flex: 1; background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-radius: 12px; padding: 28px 18px; }
+    .node.bad { border-left: 4px solid #EF4444; }
+    .node.good { border-left: 4px solid #10B981; }
+    .node .t { font-size: 32px; font-weight: 700; line-height: 1.35; }
+    .node.bad .t { color: #EF4444; }
+    .node.good .t { color: #10B981; }
+    .to { font-size: 40px; color: #F59E0B; font-weight: 800; flex-shrink: 0; }
+    .punch { width: 100%; margin-top: 48px; background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4);
+      border-left: 4px solid #F59E0B; border-radius: 12px; padding: 30px 26px; }
+    .punch .t { font-size: 40px; font-weight: 800; line-height: 1.4; color: #F59E0B; }
+    .sub { font-size: 30px; color: #B0B0CC; margin-top: 24px; line-height: 1.45; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="badge">转折 01</div>
+    <div class="title">把每个失败 trace，<br><span class="em">自动变成测试用例</span></div>
+    <div class="flow">
+      <div class="node bad"><div class="t">真实生产<br>失败 trace</div></div>
+      <div class="to">→</div>
+      <div class="node good"><div class="t">一条新的<br>regression test</div></div>
+    </div>
+    <div class="punch"><div class="t">每转一圈，<br>harness 就更难被打破一次</div></div>
+    <div class="sub">不再是漏一个补一个的消防队<br>过去丢掉的经验，全锁进了测试里</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 68.033,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_8.html",
+ "topbarIndex": "[08/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.441,
+   "text": "第三个转折，关于你到底在测什么。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.593,
+   "localDuration": 6.026,
+   "text": "大多数所谓的 playground，本质是 prompt playground。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.619,
+   "localDuration": 4.068,
+   "text": "你改一句系统提示词，重跑一次模型调用，看输出变了没有。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.853,
+   "localDuration": 1.945,
+   "text": "可这回答的是个错问题。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.798,
+   "localDuration": 6.012,
+   "text": "生产环境真正要问的是：我改了这一处，整张 Agent 图会怎么反应？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.953,
+   "localDuration": 1.018,
+   "text": "差别巨大。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.971,
+   "localDuration": 8.344,
+   "text": "一个 Agent 不是一次模型调用，它是一整张图——多个步骤、多个工具、彼此牵连。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.515,
+   "localDuration": 9.409,
+   "text": "你只重跑单次 prompt，看到的是局部；你要看的，是改动顺着整张图传下去之后，整个系统的反应。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.069,
+   "localDuration": 9.541,
+   "text": "所以正确的做法，是把完整埋好点的 Agent，端到端跑一遍，盯着改动在整张 span 树上引起的连锁反应。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 50.61,
+   "localDuration": 4.14,
+   "text": "这才叫测试一个 Agent，而不是测试一句话。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 54.893,
+   "localDuration": 12.996,
+   "text": "而且还有个附带好处：这种沙箱里的测试足够安全，产品经理、领域专家、做 QA 的人都能进去调配置、试方案，完全不用碰一行 git。"
+  }
+ ]
+}

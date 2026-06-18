@@ -1,0 +1,76 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 59.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/akshay-pachaar-2064051835636498924/slide_7.html",
+ "topbarIndex": "[07/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.015,
+   "localDuration": 4.161,
+   "text": "第二个转折，关于怎么判断一个回答到底行不行。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.335,
+   "localDuration": 6.791,
+   "text": "传统做法是研究员那一套：标一个数据集，定一个数值指标，然后比浮点数。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.126,
+   "localDuration": 1.997,
+   "text": "这套对做研究很有效。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.123,
+   "localDuration": 3.395,
+   "text": "可它压根不是工程师判断质量的方式。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.683,
+   "localDuration": 8.88,
+   "text": "工程师脑子里想的不是分数，是一句很朴素的话：这个回答必须包含具体的成交细节，不能只给个数字。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.563,
+   "localDuration": 3.861,
+   "text": "或者：这个回答绝对不能泄露未授权的信息。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.571,
+   "localDuration": 2.566,
+   "text": "那就直接用大白话把它写成断言。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.137,
+   "localDuration": 8.723,
+   "text": "底层再把每一条转成 LLM-as-a-judge，也就是让一个模型去当裁判，给出干净的通过或者不通过。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.019,
+   "localDuration": 2.28,
+   "text": "这里要诚实说一句代价。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 43.299,
+   "localDuration": 7.047,
+   "text": "让模型去判模型，本身是有可靠性边界的——裁判也会看走眼，也要花成本。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 50.546,
+   "localDuration": 8.434,
+   "text": "但它换来的，是让质量标准回到工程师真正思考的那个层面，而不是逼你把判断硬塞进一个浮点数里。"
+  }
+ ]
+}

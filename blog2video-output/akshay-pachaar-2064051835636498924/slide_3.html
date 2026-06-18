@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 58px; font-weight: 800; line-height: 1.25; margin-bottom: 50px; }
+    .split { width: 100%; display: flex; align-items: stretch; gap: 0; }
+    .col { flex: 1; background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2); border-radius: 12px; padding: 30px 24px; text-align: left; }
+    .col.left { border-left: 4px solid #3B82F6; }
+    .col.right { border-left: 4px solid #EF4444; }
+    .col .h { font-size: 30px; font-weight: 800; letter-spacing: 1px; margin-bottom: 20px; }
+    .col.left .h { color: #3B82F6; }
+    .col.right .h { color: #EF4444; }
+    .col .item { font-size: 30px; color: #FFFFFF; line-height: 1.5; margin-bottom: 12px; }
+    .dline { width: 5px; align-self: stretch; margin: 0 16px; background: repeating-linear-gradient(#6B7280, #6B7280 14px, transparent 14px, transparent 28px); }
+    .punch { width: 100%; margin-top: 48px; background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4); border-left: 4px solid #F59E0B;
+      border-radius: 12px; padding: 28px 26px; text-align: left; }
+    .punch .t { font-size: 36px; font-weight: 700; line-height: 1.4; }
+    .punch .t .hl { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">在那条虚线两边</div>
+    <div class="split">
+      <div class="col left">
+        <div class="h">虚线左边 · 自动</div>
+        <div class="item">trace</div>
+        <div class="item">span 树</div>
+        <div class="item">延迟</div>
+        <div class="item">token 成本</div>
+      </div>
+      <div class="dline"></div>
+      <div class="col right">
+        <div class="h">虚线右边 · 靠你</div>
+        <div class="item">为什么坏</div>
+        <div class="item">怎么修</div>
+        <div class="item">保证不复发</div>
+      </div>
+    </div>
+    <div class="punch">
+      <div class="t">真正的瓶颈，从来不是可观测性——<br>是 trace <span class="hl">落屏之后</span>的那一切</div>
+    </div>
+  </div>
+</body>
+</html>

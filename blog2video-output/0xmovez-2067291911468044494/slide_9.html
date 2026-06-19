@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .kicker { font-size: 28px; color: #3B82F6; font-weight: 700; letter-spacing: 2px; margin-bottom: 18px; }
+    h1 { font-size: 58px; font-weight: 800; line-height: 1.25; margin-bottom: 24px; }
+    h1 .hl { color: #3B82F6; }
+    .sub { font-size: 34px; color: #B0B0CC; margin-bottom: 40px; line-height: 1.4; }
+    .feed { display: flex; gap: 18px; width: 100%; margin-bottom: 32px; }
+    .doc { flex: 1; background: #1A1A2E; border: 1px solid rgba(59,130,246,0.3); border-radius: 12px; padding: 28px 18px; }
+    .doc .ic { font-size: 32px; font-weight: 800; color: #3B82F6; font-family: 'SF Mono', ui-monospace, monospace; }
+    .doc .lab { font-size: 28px; color: #FFFFFF; margin-top: 14px; line-height: 1.3; }
+    .res { background: #1A1A2E; border: 1px solid rgba(16,185,129,0.3); border-left: 4px solid #10B981; border-radius: 12px; padding: 30px 34px; width: 100%; text-align: left; }
+    .res .d { font-size: 38px; font-weight: 700; line-height: 1.35; }
+    .res .d .g { color: #10B981; font-weight: 800; }
+    .res .d .dim { color: #B0B0CC; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">DOCUMENT-TO-SKILL · 抓领域本身</div>
+    <h1>喂自己的文档<br>当 <span class="hl">Swarm 知识</span></h1>
+    <div class="sub">把你最好的作品传进去，Kimi 存下它的结构与文风指纹</div>
+    <div class="feed">
+      <div class="doc"><div class="ic">PDF</div><div class="lab">谈成的方案</div></div>
+      <div class="doc"><div class="ic">DOC</div><div class="lab">打磨过的报告</div></div>
+      <div class="doc"><div class="ic">DECK</div><div class="lab">漂亮的幻灯片</div></div>
+    </div>
+    <div class="res">
+      <div class="d">300 个并行 Agent 有了 <span class="g">能扎根的上下文</span>，<span class="dim">不再靠通用训练数据瞎猜——报告开始读起来像你的活儿。</span></div>
+    </div>
+  </div>
+</body>
+</html>

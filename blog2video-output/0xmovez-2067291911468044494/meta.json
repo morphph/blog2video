@@ -1,0 +1,15 @@
+{
+  "topic": "Kimi K2.6 Agent Swarm:会自我改进的 300-Agent 循环",
+  "blog_url": "https://x.com/0xMovez/status/2067291911468044494",
+  "source": "0xmovez-2067291911468044494",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

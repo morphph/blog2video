@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat) —— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — counterintuitive hook */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .a-zh{margin-top:24px;font-weight:900;font-size:84px;line-height:1.14;color:#edebe6}
+[data-composition-id='s01'] .a-chips{margin-top:46px;display:flex;flex-direction:column;gap:18px;width:100%}
+[data-composition-id='s01'] .a-num{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;font-variant-numeric:tabular-nums}
+[data-composition-id='s01'] .a-punch{margin-top:46px}
+[data-composition-id='s01'] .a-punch .hl .tx{font-size:72px}
+
+/* beat B — Kimi K2.6 reveal terminal */
+[data-composition-id='s01'] .term-l2 .tx{font-size:64px}
+
+/* beat C — read it all */
+[data-composition-id='s01'] .c-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .c-q{margin-top:22px;font-weight:900;font-size:80px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .c-q .em{color:#ccff4d}
+
+/* beat D — teaser */
+[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .d-q{margin-top:22px;font-weight:900;font-size:76px;line-height:1.24;color:#edebe6}
+[data-composition-id='s01'] .d-q .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="27.067" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[01/13]</div>
+    </div>
+
+    <!-- BEAT A: counterintuitive hook (0 - ~10) -->
+    <div class="beat" id="beatA">
+      <div class="a-kick">// 一个反常识的事实</div>
+      <div class="a-zh">一个免费的开源模型，<br>一句话拉起 <span class="a-num">300</span> 个 Agent</div>
+      <div class="a-chips">
+        <div class="chip ca1"><span class="ci">SWARM</span><span class="ct">300 个 Agent 同时干活</span></div>
+        <div class="chip ca2"><span class="ci">SCORE</span><span class="ct">真实研究任务得分更高</span></div>
+        <div class="chip ca3"><span class="ci">PRICE</span><span class="ct">比贵五倍的模型还强</span></div>
+      </div>
+      <div class="a-punch"><span class="hl"><span class="bar"></span><span class="tx">而它免费</span></span></div>
+    </div>
+
+    <!-- BEAT B: Kimi K2.6 reveal -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="term">
+        <div class="term-bar">
+          <span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span>
+          <span class="t">kimi@k2.6: ~/swarm</span>
+        </div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>这套模式，有个名字。</div>
+          <div class="term-l2">Kimi K2.6 的 <span class="hl" style="margin-left:8px"><span class="bar"></span><span class="tx">Agent Swarm</span></span></div>
+          <div class="term-en">one prompt → 300 parallel agents</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEAT C: read it all -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-led">// 我从头读到尾</div>
+      <div class="c-q">越读越觉得，<br>大多数人<span class="em">根本没碰到核心</span></div>
+    </div>
+
+    <!-- BEAT D: teaser -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led">// 今天不教你点按钮</div>
+      <div class="d-q">只讲清一件事：<br>为什么跑得越多，<span class="em">就越值钱</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="10.001" data-track-index="5"><div class="sub-inner">一个免费的开源模型，一句话就能拉起 300 个 Agent 同时干活，在真实研究任务上的得分，比你付五倍价钱的模型<span class="sub-k">还高</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="10.152" data-duration="4.328" data-track-index="5"><div class="sub-inner">这是 Kimi K2.6 的 <span class="sub-k">Agent Swarm</span> 模式。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.48" data-duration="4.616" data-track-index="5"><div class="sub-inner">我把这篇拆解从头读到尾，越读越觉得，大多数人<span class="sub-k">根本没碰到它的核心</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.26" data-duration="2.356" data-track-index="5"><div class="sub-inner">今天我<span class="sub-k">不教你怎么点按钮</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.616" data-duration="5.299" data-track-index="5"><div class="sub-inner">我只想讲清一件事：为什么这套东西，<span class="sub-k">跑得越多、就越值钱</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~10) */
+    D2.enter(tl, R+'.a-kick', 0.5, {x:-30, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.a-zh', 1.0, {y:22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.ca1', 3.2, {x:-26, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.ca2', 4.8, {x:-26, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.ca3', 6.4, {x:-26, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.a-punch', 8.6, {opacity:0, d:.15, ease:'power1.out'});
+    D2.sweep(tl, R, '.a-punch .hl', 8.8);
+    tl.to(R+'#beatA',{scale:1.03,duration:10.0,ease:'none'},0);
+
+    /* A -> B swap @ 10.152 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},9.9);
+    tl.set(R+'#beatB',{opacity:1},10.18);
+    D2.enter(tl, R+'.term', 10.3, {y:30, d:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.term-bar', 10.45, {opacity:0, y:0, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.term-l1', 10.7, {opacity:0, y:0, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 11.4, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.term-l2 .hl', 11.7);
+    D2.enter(tl, R+'.term-en', 12.6, {opacity:0, y:0, d:.3, ease:'power1.out'});
+    tl.to(R+'#beatB',{scale:1.025,duration:4.3,ease:'none'},10.2);
+
+    /* B -> C swap @ 14.48 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},14.2);
+    tl.set(R+'#beatC',{opacity:1},14.5);
+    D2.enter(tl, R+'.c-led', 14.65, {opacity:0, y:0, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.c-q', 15.0, {y:24, d:.45, ease:'power3.out'});
+    tl.to(R+'#beatC',{scale:1.03,duration:4.6,ease:'none'},14.5);
+
+    /* C -> D swap @ 19.26 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},18.95);
+    tl.set(R+'#beatD',{opacity:1},19.3);
+    D2.enter(tl, R+'.d-led', 19.45, {opacity:0, y:0, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.d-q', 21.6, {y:24, d:.45, ease:'expo.out'});
+    tl.to(R+'#beatD',{scale:1.03,duration:7.7,ease:'none'},19.3);
+
+    /* subtitles */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',10.152],['#sub-3',14.48],['#sub-4',19.26],['#sub-5',21.616]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

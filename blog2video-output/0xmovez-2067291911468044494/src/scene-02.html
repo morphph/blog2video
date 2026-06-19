@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d}
+[data-composition-id='s02'] .splith{margin-top:34px}
+[data-composition-id='s02'] .pcap{margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s02'] .pcap .acc{color:#ccff4d}
+[data-composition-id='s02'] .stat .num{font-size:72px}
+[data-composition-id='s02'] .stat .pre{font-size:30px;font-weight:600;color:#8a8a85;margin-bottom:10px;font-family:'JetBrains Mono',monospace}
+[data-composition-id='s02'] .databar{margin-top:24px;display:flex;gap:18px;width:100%}
+[data-composition-id='s02'] .dcell{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 22px;text-align:center}
+[data-composition-id='s02'] .dcell .dn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:64px;color:#5fd3e8;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s02'] .dcell .dl{margin-top:12px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s02'] .ptags{margin-top:24px;display:flex;flex-wrap:wrap;gap:14px}
+[data-composition-id='s02'] .ptag{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#edebe6;background:#1c1c1e;border:1px solid #2a2a2c;padding:12px 22px}
+[data-composition-id='s02'] .ptag .pk{color:#ccff4d;margin-right:10px}
+[data-composition-id='s02'] .bracket.soul{margin-top:30px}
+[data-composition-id='s02'] .bracket.soul .ql{font-weight:900;font-size:48px;line-height:1.32;color:#edebe6}
+[data-composition-id='s02'] .bracket.soul .ql .em{color:#ccff4d}
+[data-composition-id='s02'] .bracket.soul .soulcap{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;display:inline-flex;align-items:center;gap:14px}
+[data-composition-id='s02'] .bracket.soul .soulcap .dot{width:13px;height:13px;border-radius:50%;background:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="53.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[02/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">大多数人只用了一成</span></div>
+      <div class="h2 splith">你打开的<span class="em">聊天框</span>,<br>只摸到了一成能力</div>
+
+      <div class="stats splith2" style="margin-top:30px">
+        <div class="stat s-ten"><div class="pre">CHATBOX</div><div class="num">10%</div><div class="lab">输入 · 回答 · 关掉</div></div>
+        <div class="stat key s-ninety"><div class="pre">HIDDEN MODE</div><div class="num">90%</div><div class="lab">你从没点开的那个模式</div></div>
+      </div>
+
+      <div class="databar">
+        <div class="dcell d-300"><div class="dn">300</div><div class="dl">并行子 Agent</div></div>
+        <div class="dcell d-4000"><div class="dn">4000</div><div class="dl">步协同动作</div></div>
+      </div>
+
+      <div class="bracket soul">
+        <div class="pcap">// THE SOUL OF THE LOOP · <span class="acc">每跑一遍都留下点东西</span></div>
+        <div class="ptags">
+          <div class="ptag t-skill"><span class="pk">›</span>可复用的 Skill</div>
+          <div class="ptag t-spec"><span class="pk">›</span>更锋利的需求说明</div>
+          <div class="ptag t-cons"><span class="pk">›</span>挡住重犯的约束</div>
+        </div>
+        <div class="ql" style="margin-top:24px">昨天跑你任务的那群 Agent,<br><span class="em">应该比今天跑它的更聪明</span></div>
+        <div class="soulcap"><span class="dot"></span>这就是整套循环的灵魂</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="1.897" data-track-index="5"><div class="sub-inner">先说一个有点<span class="sub-k">扎心</span>的事实。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.057" data-duration="6.215" data-track-index="5"><div class="sub-inner">大多数人打开 Kimi,输入一个问题,拿到一段回答,<span class="sub-k">关掉页面</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.272" data-duration="1.404" data-track-index="5"><div class="sub-inner">这就是<span class="sub-k">聊天框</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.676" data-duration="1.403" data-track-index="5"><div class="sub-inner">它能用,<span class="sub-k">没错</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="11.079" data-duration="3.208" data-track-index="5"><div class="sub-inner">但这只是这个产品大概<span class="sub-k">一成</span>的能力。</div></div>
+    <div id="sub-6" class="clip sub" data-start="14.441" data-duration="4.442" data-track-index="5"><div class="sub-inner">剩下那<span class="sub-k">九成</span>,藏在一个你可能从没点开过的模式里。</div></div>
+    <div id="sub-7" class="clip sub" data-start="18.883" data-duration="9.657" data-track-index="5"><div class="sub-inner">在那个模式下,你写一句话,它能拉起最多 <span class="sub-k">300 个并行的子 Agent</span>,跨越 4000 步协同动作。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.697" data-duration="2.176" data-track-index="5"><div class="sub-inner">更关键的不是它<span class="sub-k">跑得快</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="30.873" data-duration="4.551" data-track-index="5"><div class="sub-inner">而是只要你用对了,它每跑一遍,都会<span class="sub-k">留下点东西</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="35.573" data-duration="9.327" data-track-index="5"><div class="sub-inner">可能是一个可以复用的 Skill,一份更锋利的需求说明,或者一条<span class="sub-k">约束</span>,专门用来挡住下次再犯今天这个错。</div></div>
+    <div id="sub-11" class="clip sub" data-start="45.041" data-duration="6.325" data-track-index="5"><div class="sub-inner">换句话说,昨天跑你任务的那群 Agent,<span class="sub-k">应该比今天跑它的更聪明</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="51.366" data-duration="2.108" data-track-index="5"><div class="sub-inner">这就是整套循环的<span class="sub-k">灵魂</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* 开场:扎心事实 + 标题 */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.splith', .9, {y:20, d:.42, ease:'expo.out'});
+
+    /* 一成 / 九成 拆分:10% 先(sub-2 聊天框),90% 后(sub-6 剩下九成) */
+    D2.enter(tl, R+'.s-ten', 2.4, {y:18, d:.36, ease:'power3.out'});
+    D2.countUp(tl, R+'.s-ten .num', 2.5, 0, 10, 1.0, {suffix:'%'});
+    D2.enter(tl, R+'.s-ninety', 14.6, {y:18, d:.36, ease:'power2.out'});
+    D2.countUp(tl, R+'.s-ninety .num', 14.8, 10, 90, 1.4, {suffix:'%'});
+
+    /* 数据条:300 / 4000(sub-7) */
+    D2.enter(tl, R+'.d-300', 19.4, {x:-20, d:.34, ease:'power3.out'});
+    D2.countUp(tl, R+'.d-300 .dn', 19.6, 0, 300, 1.3, {});
+    D2.enter(tl, R+'.d-4000', 22.4, {x:-20, d:.34, ease:'power2.out'});
+    D2.countUp(tl, R+'.d-4000 .dn', 22.6, 0, 4000, 1.5, {});
+
+    /* 灵魂面板:每跑一遍留下点东西(sub-9) */
+    D2.enter(tl, R+'.bracket.soul', 31.0, {y:20, d:.42, ease:'power3.out'});
+    /* 三个产物标签晚到(sub-10) */
+    D2.stagger(tl, R+'.ptag', 35.8, {y:14, d:.3, step:.55, ease:'power2.out'});
+    /* 签名金句晚到(sub-11) */
+    D2.enter(tl, R+'.ql', 45.4, {y:16, d:.4, ease:'expo.out'});
+    /* 灵魂落款(sub-12) */
+    D2.enter(tl, R+'.soulcap', 51.5, {y:10, d:.3, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',2.057],['#sub-3',8.272],['#sub-4',9.676],['#sub-5',11.079],['#sub-6',14.441],['#sub-7',18.883],['#sub-8',28.697],['#sub-9',30.873],['#sub-10',35.573],['#sub-11',45.041],['#sub-12',51.366]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 53.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

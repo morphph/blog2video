@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin-top:30px}
+[data-composition-id='s03'] .sf{display:flex;align-items:baseline;gap:14px;font-family:'JetBrains Mono',monospace}
+[data-composition-id='s03'] .sf .k{font-weight:700;font-size:27px;color:#ccff4d;letter-spacing:.02em;min-width:30px}
+[data-composition-id='s03'] .sf .v{font-weight:500;font-size:27px;color:#8a8a85}
+[data-composition-id='s03'] .kimi{display:flex;align-items:center;gap:16px;margin-top:30px;
+  font-family:'JetBrains Mono',monospace;font-size:30px;color:#5fd3e8;
+  border-left:2px solid rgba(95,211,232,.5);padding-left:20px;line-height:1.4}
+[data-composition-id='s03'] .kimi b{color:#5fd3e8;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="65.867" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第一步 · 写一份 <span class="acc">spec</span></div>
+      <div class="h1 k-h1" style="margin-top:18px">把它当<span class="em">承包商</span>,<br>不是许愿池里的神灯</div>
+
+      <div class="cols" style="margin-top:44px">
+        <div class="col c-bad"><div class="ch">一句话</div>
+          <div class="it"><div class="nm">「帮我研究一下市场」</div>
+          <div class="ds">= 把所有决定权交给 Swarm,它八成会决定错</div></div>
+        </div>
+        <div class="col alt c-good"><div class="ch">一份 spec</div>
+          <div class="it"><div class="nm">需求说明</div>
+          <div class="ds">收集什么 · 什么算数 · 来源 · 格式 · 遇矛盾怎么办</div></div>
+        </div>
+      </div>
+
+      <div class="term c-term" style="margin-top:32px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">spec.md</span></div>
+        <div class="term-body" style="padding:30px 34px 32px">
+          <div class="spec-grid">
+            <div class="sf sf1"><span class="k">PROJECT</span><span class="v">项目</span></div>
+            <div class="sf sf1"><span class="k">GOAL</span><span class="v">目标</span></div>
+            <div class="sf sf2"><span class="k">SCOPE</span><span class="v">收集什么</span></div>
+            <div class="sf sf2"><span class="k">RULES</span><span class="v">什么算数</span></div>
+            <div class="sf sf3"><span class="k">SOURCES</span><span class="v">允许来源</span></div>
+            <div class="sf sf3"><span class="k">OUTPUT</span><span class="v">产出格式</span></div>
+            <div class="sf sf4"><span class="k">ON&nbsp;CONFLICT</span><span class="v">遇矛盾怎么办</span></div>
+            <div class="sf sf4"><span class="k">STOP</span><span class="v">停止条件</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kimi k-kimi">拆成 300 个 Agent → <b>Kimi 自己决定</b> · 你只描述目标,它自己搭组织架构图</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="9.2" data-track-index="5"><div class="sub-inner">大多数人一听到「300 个 Agent」,本能就是甩一句话过去——「帮我研究一下健身 App 市场」——然后期待<span class="sub-k">奇迹</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="9.372" data-duration="3.279" data-track-index="5"><div class="sub-inner">这是<span class="sub-k">烧钱最快、产出最垃圾</span>的方式。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.651" data-duration="6.559" data-track-index="5"><div class="sub-inner">一句话,等于把所有<span class="sub-k">决定权</span>都交给了 Swarm,而它八成会决定错。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.38" data-duration="5.914" data-track-index="5"><div class="sub-inner">正确的做法,是把这群 Agent 当成<span class="sub-k">承包商</span>,不是许愿池里的神灯。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.464" data-duration="10.005" data-track-index="5"><div class="sub-inner">你得写清楚:要收集什么、什么样的结果才算数、允许用哪些<span class="sub-k">来源</span>、产出长什么格式、遇到矛盾怎么办。</div></div>
+    <div id="sub-6" class="clip sub" data-start="35.469" data-duration="4.349" data-track-index="5"><div class="sub-inner">这份东西,我们叫它 <span class="sub-k">spec</span>,需求说明。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.972" data-duration="6.251" data-track-index="5"><div class="sub-inner">这里有个最容易被忽略的点:怎么把任务拆成 300 个 Agent,是 <span class="sub-k">Kimi 自己决定</span>的。</div></div>
+    <div id="sub-8" class="clip sub" data-start="46.38" data-duration="5.089" data-track-index="5"><div class="sub-inner">你不用像在别的框架里那样,<span class="sub-k">手动搭 Agent、连线、定结构</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="51.469" data-duration="4.749" data-track-index="5"><div class="sub-inner">你只描述目标,这群 Agent 自己去搭那张<span class="sub-k">组织架构图</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="56.388" data-duration="4.145" data-track-index="5"><div class="sub-inner">这份 spec 是整套循环里<span class="sub-k">杠杆最大</span>的一件东西。</div></div>
+    <div id="sub-11" class="clip sub" data-start="60.533" data-duration="5.182" data-track-index="5"><div class="sub-inner">因为到后面那一步,它会变成你那个可复用 <span class="sub-k">Skill 的种子</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.k-h1', 19.4, {y:20, d:.42, ease:'expo.out'});
+
+    /* 对比双栏:一句话(坏) 早出,spec(好) 在 sub-4/5 出 */
+    D2.enter(tl, R+'.c-bad', 9.4, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.c-good', 25.5, {x:24, d:.4, ease:'power3.out'});
+
+    /* 终端卡整张 35.5 入(口播"叫它 spec"),字段 8 行逐条 build,持续到 sub-6/7 */
+    D2.enter(tl, R+'.c-term', 35.5, {y:22, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.c-term .sf', 36.0, {y:12, step:.18, d:.26, ease:'power2.out'});
+
+    /* cyan Kimi 洞察行 晚到 —— sub-7 出现 */
+    D2.enter(tl, R+'.k-kimi', 40.2, {y:14, d:.38, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',9.372],['#sub-3',12.651],['#sub-4',19.38],['#sub-5',25.464],['#sub-6',35.469],['#sub-7',39.972],['#sub-8',46.38],['#sub-9',51.469],['#sub-10',56.388],['#sub-11',60.533]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 65.867, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

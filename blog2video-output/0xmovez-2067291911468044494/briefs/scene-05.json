@@ -1,0 +1,118 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "comparison_cards",
+ "dataDuration": 73.8,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_5.html",
+ "topbarIndex": "[05/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 0.902,
+   "text": "现在开跑。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 0.894,
+   "localDuration": 4.329,
+   "text": "最多 300 个子 Agent 分波次并行点火。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.223,
+   "localDuration": 3.969,
+   "text": "第一波先处理那些完全独立、谁也不靠的子任务。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.352,
+   "localDuration": 8.689,
+   "text": "结果一落地，协调器立刻拉起下一波，去做那些依赖前面结果的任务，一直到整张依赖图跑完。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.208,
+   "localDuration": 6.808,
+   "text": "这里藏着真正的结构性技巧：每个子 Agent 都在自己独立的、有边界的上下文窗口里工作。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.156,
+   "localDuration": 1.339,
+   "text": "为什么这很重要？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.495,
+   "localDuration": 4.018,
+   "text": "因为一个 Agent 单独干长任务，会越干越蠢。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.664,
+   "localDuration": 0.991,
+   "text": "不是它笨。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 31.655,
+   "localDuration": 5.745,
+   "text": "是它的上下文窗口会被自己填满，填到溢出，然后开始有损压缩。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 37.4,
+   "localDuration": 3.567,
+   "text": "从那一刻起，它后面每一步推理都更差。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 41.104,
+   "localDuration": 7.453,
+   "text": "而 Swarm 给每个子任务都配了独立的、划好范围的上下文，最后只把结构化的结果回传给协调器。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 48.557,
+   "localDuration": 3.964,
+   "text": "所以那些会逼疯单个 Agent 的任务，它扛得住。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 52.66,
+   "localDuration": 1.511,
+   "text": "为什么敢这么浪费？"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 54.171,
+   "localDuration": 1.175,
+   "text": "因为它够便宜。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 55.346,
+   "localDuration": 6.548,
+   "text": "输入每百万 token 零点九五美元，输出四美元，重复内容命中缓存只要一毛六。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 62.056,
+   "localDuration": 1.898,
+   "text": "便宜带来的不是省钱。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 63.954,
+   "localDuration": 3.227,
+   "text": "便宜真正改变的，是你愿意尝试什么。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 67.181,
+   "localDuration": 6.455,
+   "text": "你能负担得起把第一次结果直接扔掉、重跑一遍——这本身就是一种新能力。"
+  }
+ ]
+}

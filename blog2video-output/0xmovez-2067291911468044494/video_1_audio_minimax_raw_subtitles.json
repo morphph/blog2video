@@ -1,0 +1,812 @@
+[
+  {
+    "text": "一个免费的开源模型，一句话就能拉起 300 个 Agent 同时干活，在真实研究任务上的得分，比你付五倍价钱的模型还高。",
+    "pronounce_text": "一个免费的开源模型，一句话就能拉起三百个Agent同时干活，在真实研究任务上的得分，比你付五倍价钱的模型还高。",
+    "time_begin": 0,
+    "time_end": 10000.680272108842,
+    "text_begin": 0,
+    "text_end": 60,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 55
+  },
+  {
+    "text": "这是 Kimi K2.6 的 Agent Swarm 模式。我把这篇拆解从头读到尾，越读越觉得，大多数人根本没碰到它的核心。",
+    "pronounce_text": "这是Kimi K二点六的Agent Swarm模式。我把这篇拆解从头读到尾，越读越觉得，大多数人根本没碰到它的核心。",
+    "time_begin": 10152,
+    "time_end": 19096.172335600906,
+    "text_begin": 60,
+    "text_end": 122,
+    "pronounce_text_begin": 55,
+    "pronounce_text_end": 113
+  },
+  {
+    "text": "今天我不教你怎么点按钮。我只想讲清一件事：为什么这套东西，跑得越多、就越值钱。",
+    "pronounce_text": "今天我不教你怎么点按钮。我只想讲清一件事：为什么这套东西，跑得越多、就越值钱。",
+    "time_begin": 19260,
+    "time_end": 26915.46485260771,
+    "text_begin": 122,
+    "text_end": 161,
+    "pronounce_text_begin": 113,
+    "pronounce_text_end": 152
+  },
+  {
+    "text": "先说一个有点扎心的事实。",
+    "pronounce_text": "先说一个有点扎心的事实。",
+    "time_begin": 27072,
+    "time_end": 28968.916099773243,
+    "text_begin": 161,
+    "text_end": 173,
+    "pronounce_text_begin": 152,
+    "pronounce_text_end": 164
+  },
+  {
+    "text": "大多数人打开 Kimi，输入一个问题，拿到一段回答，关掉页面。这就是聊天框。它能用，没错。但这只是这个产品大概一成的能力。",
+    "pronounce_text": "大多数人打开Kimi，输入一个问题，拿到一段回答，关掉页面。这就是聊天框。它能用，没错。但这只是这个产品大概一成的能力。",
+    "time_begin": 29124,
+    "time_end": 41353.795918367345,
+    "text_begin": 173,
+    "text_end": 234,
+    "pronounce_text_begin": 164,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "剩下那九成，藏在一个你可能从没点开过的模式里。在那个模式下，你写一句话，它能拉起最多 300 个并行的子 Agent，跨越 4000 步协同动作。",
+    "pronounce_text": "剩下那九成，藏在一个你可能从没点开过的模式里。在那个模式下，你写一句话，它能拉起最多三百个并行的子Agent，跨越四千步协同动作。",
+    "time_begin": 41508,
+    "time_end": 55607.0022675737,
+    "text_begin": 234,
+    "text_end": 307,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 289
+  },
+  {
+    "text": "更关键的不是它跑得快。而是只要你用对了，它每跑一遍，都会留下点东西。",
+    "pronounce_text": "更关键的不是它跑得快。而是只要你用对了，它每跑一遍，都会留下点东西。",
+    "time_begin": 55764,
+    "time_end": 62490.666666666664,
+    "text_begin": 307,
+    "text_end": 341,
+    "pronounce_text_begin": 289,
+    "pronounce_text_end": 323
+  },
+  {
+    "text": "可能是一个可以复用的 Skill，一份更锋利的需求说明，或者一条约束，专门用来挡住下次再犯今天这个错。",
+    "pronounce_text": "可能是一个可以复用的Skill，一份更锋利的需求说明，或者一条约束，专门用来挡住下次再犯今天这个错。",
+    "time_begin": 62640,
+    "time_end": 71967.30158730158,
+    "text_begin": 341,
+    "text_end": 392,
+    "pronounce_text_begin": 323,
+    "pronounce_text_end": 373
+  },
+  {
+    "text": "换句话说，昨天跑你任务的那群 Agent，应该比今天跑它的更聪明。这就是整套循环的灵魂。",
+    "pronounce_text": "换句话说，昨天跑你任务的那群Agent，应该比今天跑它的更聪明。这就是整套循环的灵魂。",
+    "time_begin": 72108,
+    "time_end": 80541.33333333333,
+    "text_begin": 392,
+    "text_end": 436,
+    "pronounce_text_begin": 373,
+    "pronounce_text_end": 416
+  },
+  {
+    "text": "大多数人一听到「300 个 Agent」，本能就是甩一句话过去——「帮我研究一下健身 App 市场」——然后期待奇迹。",
+    "pronounce_text": "大多数人一听到「三百个Agent」，本能就是甩一句话过去。「帮我研究一下健身App市场」。然后期待奇迹。",
+    "time_begin": 80712,
+    "time_end": 89911.59183673469,
+    "text_begin": 436,
+    "text_end": 495,
+    "pronounce_text_begin": 416,
+    "pronounce_text_end": 468
+  },
+  {
+    "text": "这是烧钱最快、产出最垃圾的方式。一句话，等于把所有决定权都交给了 Swarm，而它八成会决定错。",
+    "pronounce_text": "这是烧钱最快、产出最垃圾的方式。一句话，等于把所有决定权都交给了Swarm，而它八成会决定错。",
+    "time_begin": 90072,
+    "time_end": 99910.14058956916,
+    "text_begin": 495,
+    "text_end": 543,
+    "pronounce_text_begin": 468,
+    "pronounce_text_end": 515
+  },
+  {
+    "text": "正确的做法，是把这群 Agent 当成承包商，不是许愿池里的神灯。",
+    "pronounce_text": "正确的做法，是把这群Agent当成承包商，不是许愿池里的神灯。",
+    "time_begin": 100080,
+    "time_end": 105993.96825396825,
+    "text_begin": 543,
+    "text_end": 576,
+    "pronounce_text_begin": 515,
+    "pronounce_text_end": 546
+  },
+  {
+    "text": "你得写清楚：要收集什么、什么样的结果才算数、允许用哪些来源、产出长什么格式、遇到矛盾怎么办。这份东西，我们叫它 spec，需求说明。",
+    "pronounce_text": "你得写清楚：要收集什么、什么样的结果才算数、允许用哪些来源、产出长什么格式、遇到矛盾怎么办。这份东西，我们叫它spec，需求说明。",
+    "time_begin": 106164,
+    "time_end": 120518.42176870749,
+    "text_begin": 576,
+    "text_end": 642,
+    "pronounce_text_begin": 546,
+    "pronounce_text_end": 611
+  },
+  {
+    "text": "这里有个最容易被忽略的点：怎么把任务拆成 300 个 Agent，是 Kimi 自己决定的。",
+    "pronounce_text": "这里有个最容易被忽略的点：怎么把任务拆成三百个Agent，是Kimi自己决定的。",
+    "time_begin": 120672,
+    "time_end": 126922.65759637188,
+    "text_begin": 642,
+    "text_end": 688,
+    "pronounce_text_begin": 611,
+    "pronounce_text_end": 651
+  },
+  {
+    "text": "你不用像在别的框架里那样，手动搭 Agent、连线、定结构。你只描述目标，这群 Agent 自己去搭那张组织架构图。",
+    "pronounce_text": "你不用像在别的框架里那样，手动搭Agent、连线、定结构。你只描述目标，这群Agent自己去搭那张组织架构图。",
+    "time_begin": 127080,
+    "time_end": 136918.14058956917,
+    "text_begin": 688,
+    "text_end": 746,
+    "pronounce_text_begin": 651,
+    "pronounce_text_end": 706
+  },
+  {
+    "text": "这份 spec 是整套循环里杠杆最大的一件东西。因为到后面那一步，它会变成你那个可复用 Skill 的种子。",
+    "pronounce_text": "这份spec是整套循环里杠杆最大的一件东西。因为到后面那一步，它会变成你那个可复用Skill的种子。",
+    "time_begin": 137088,
+    "time_end": 146415.3015873016,
+    "text_begin": 746,
+    "text_end": 800,
+    "pronounce_text_begin": 706,
+    "pronounce_text_end": 756
+  },
+  {
+    "text": "这是新手最爱跳过的一步，也是跳过代价最高的一步。",
+    "pronounce_text": "这是新手最爱跳过的一步，也是跳过代价最高的一步。",
+    "time_begin": 146556,
+    "time_end": 150925.84126984127,
+    "text_begin": 800,
+    "text_end": 824,
+    "pronounce_text_begin": 756,
+    "pronounce_text_end": 780
+  },
+  {
+    "text": "你提交 spec 之后，Kimi 不会马上开跑。它会先把执行计划摆给你看：要派多少个子 Agent、每个负责什么、谁依赖谁、整套要花多少步预算。",
+    "pronounce_text": "你提交spec之后，Kimi不会马上开跑。它会先把执行计划摆给你看：要派多少个子Agent、每个负责什么、谁依赖谁、整套要花多少步预算。",
+    "time_begin": 151092,
+    "time_end": 163867.46485260772,
+    "text_begin": 824,
+    "text_end": 896,
+    "pronounce_text_begin": 780,
+    "pronounce_text_end": 848
+  },
+  {
+    "text": "读它。一个拆错了的两百 Agent 的 Swarm，烧的是真金白银和真实的几个小时。而检查这张计划，不花你一分钱。",
+    "pronounce_text": "读它。一个拆错了的两百Agent的Swarm，烧的是真金白银和真实的几个小时。而检查这张计划，不花你一分钱。",
+    "time_begin": 164016,
+    "time_end": 174492.68934240364,
+    "text_begin": 896,
+    "text_end": 953,
+    "pronounce_text_begin": 848,
+    "pronounce_text_end": 902
+  },
+  {
+    "text": "你就盯三件事：它理解任务范围了吗？Agent 的数量配得上任务的大小吗？产出计划跟你真正要的东西对得上吗？",
+    "pronounce_text": "你就盯三件事：它理解任务范围了吗？Agent的数量配得上任务的大小吗？产出计划跟你真正要的东西对得上吗？",
+    "time_begin": 174636,
+    "time_end": 184636.68027210885,
+    "text_begin": 953,
+    "text_end": 1006,
+    "pronounce_text_begin": 902,
+    "pronounce_text_end": 954
+  },
+  {
+    "text": "这里有个细节值得记住。那 4000 步，是整个 Swarm 的总协调预算，不是每个 Agent 都能跑 4000 步。",
+    "pronounce_text": "这里有个细节值得记住。那四千步，是整个Swarm的总协调预算，不是每个Agent都能跑四千步。",
+    "time_begin": 184788,
+    "time_end": 193430.31292517006,
+    "text_begin": 1006,
+    "text_end": 1065,
+    "pronounce_text_begin": 954,
+    "pronounce_text_end": 1001
+  },
+  {
+    "text": "300 个 Agent 一起上，平均每个才约 13 步。短、专、窄的小任务。这个数字反过来告诉你，你的任务到底适不适合这个形态。",
+    "pronounce_text": "三百个Agent一起上，平均每个才约十三步。短、专、窄的小任务。这个数字反过来告诉你，你的任务到底适不适合这个形态。",
+    "time_begin": 193572,
+    "time_end": 204942.6575963719,
+    "text_begin": 1065,
+    "text_end": 1129,
+    "pronounce_text_begin": 1001,
+    "pronounce_text_end": 1059
+  },
+  {
+    "text": "现在开跑。最多 300 个子 Agent 分波次并行点火。第一波先处理那些完全独立、谁也不靠的子任务。",
+    "pronounce_text": "现在开跑。最多三百个子Agent分波次并行点火。第一波先处理那些完全独立、谁也不靠的子任务。",
+    "time_begin": 205092,
+    "time_end": 214291.5918367347,
+    "text_begin": 1129,
+    "text_end": 1180,
+    "pronounce_text_begin": 1059,
+    "pronounce_text_end": 1105
+  },
+  {
+    "text": "结果一落地，协调器立刻拉起下一波，去做那些依赖前面结果的任务，一直到整张依赖图跑完。",
+    "pronounce_text": "结果一落地，协调器立刻拉起下一波，去做那些依赖前面结果的任务，一直到整张依赖图跑完。",
+    "time_begin": 214452,
+    "time_end": 223140.75283446713,
+    "text_begin": 1180,
+    "text_end": 1222,
+    "pronounce_text_begin": 1105,
+    "pronounce_text_end": 1147
+  },
+  {
+    "text": "这里藏着真正的结构性技巧：每个子 Agent 都在自己独立的、有边界的上下文窗口里工作。",
+    "pronounce_text": "这里藏着真正的结构性技巧：每个子Agent都在自己独立的、有边界的上下文窗口里工作。",
+    "time_begin": 223308,
+    "time_end": 230115.9365079365,
+    "text_begin": 1222,
+    "text_end": 1266,
+    "pronounce_text_begin": 1147,
+    "pronounce_text_end": 1189
+  },
+  {
+    "text": "为什么这很重要？因为一个 Agent 单独干长任务，会越干越蠢。",
+    "pronounce_text": "为什么这很重要？因为一个Agent单独干长任务，会越干越蠢。",
+    "time_begin": 230256,
+    "time_end": 235612.68934240364,
+    "text_begin": 1266,
+    "text_end": 1298,
+    "pronounce_text_begin": 1189,
+    "pronounce_text_end": 1219
+  },
+  {
+    "text": "不是它笨。是它的上下文窗口会被自己填满，填到溢出，然后开始有损压缩。从那一刻起，它后面每一步推理都更差。",
+    "pronounce_text": "不是它笨。是它的上下文窗口会被自己填满，填到溢出，然后开始有损压缩。从那一刻起，它后面每一步推理都更差。",
+    "time_begin": 235764,
+    "time_end": 246066.53968253967,
+    "text_begin": 1298,
+    "text_end": 1350,
+    "pronounce_text_begin": 1219,
+    "pronounce_text_end": 1271
+  },
+  {
+    "text": "而 Swarm 给每个子任务都配了独立的、划好范围的上下文，最后只把结构化的结果回传给协调器。所以那些会逼疯单个 Agent 的任务，它扛得住。",
+    "pronounce_text": "而Swarm给每个子任务都配了独立的、划好范围的上下文，最后只把结构化的结果回传给协调器。所以那些会逼疯单个Agent的任务，它扛得住。",
+    "time_begin": 246204,
+    "time_end": 257621.09750566893,
+    "text_begin": 1350,
+    "text_end": 1422,
+    "pronounce_text_begin": 1271,
+    "pronounce_text_end": 1339
+  },
+  {
+    "text": "为什么敢这么浪费？因为它够便宜。输入每百万 token 零点九五美元，输出四美元，重复内容命中缓存只要一毛六。",
+    "pronounce_text": "为什么敢这么浪费？因为它够便宜。输入每百万token零点九五美元，输出四美元，重复内容命中缓存只要一毛六。",
+    "time_begin": 257760,
+    "time_end": 266994.42176870746,
+    "text_begin": 1422,
+    "text_end": 1477,
+    "pronounce_text_begin": 1339,
+    "pronounce_text_end": 1392
+  },
+  {
+    "text": "便宜带来的不是省钱。便宜真正改变的，是你愿意尝试什么。你能负担得起把第一次结果直接扔掉、重跑一遍——这本身就是一种新能力。",
+    "pronounce_text": "便宜带来的不是省钱。便宜真正改变的，是你愿意尝试什么。你能负担得起把第一次结果直接扔掉、重跑一遍。这本身就是一种新能力。",
+    "time_begin": 267156,
+    "time_end": 278735.63718820864,
+    "text_begin": 1477,
+    "text_end": 1538,
+    "pronounce_text_begin": 1392,
+    "pronounce_text_end": 1452
+  },
+  {
+    "text": "Swarm 的产出，不是窗口里的一段文字。它是能直接塞进你工作流的结构化交付物。这一点,是很多介绍里都漏掉的。",
+    "pronounce_text": "Swarm的产出，不是窗口里的一段文字。它是能直接塞进你工作流的结构化交付物。这一点,是很多介绍里都漏掉的。",
+    "time_begin": 278892,
+    "time_end": 288555.9909297052,
+    "text_begin": 1538,
+    "text_end": 1593,
+    "pronounce_text_begin": 1452,
+    "pronounce_text_end": 1506
+  },
+  {
+    "text": "一次启动，落地的可能是 PDF、表格、数据集、幻灯片，还有能跑的代码。因为这些格式，Kimi 是原生就能吐出来的。",
+    "pronounce_text": "一次启动，落地的可能是PDF、表格、数据集、幻灯片，还有能跑的代码。因为这些格式，Kimi是原生就能吐出来的。",
+    "time_begin": 288720,
+    "time_end": 300044.21768707485,
+    "text_begin": 1593,
+    "text_end": 1650,
+    "pronounce_text_begin": 1506,
+    "pronounce_text_end": 1561
+  },
+  {
+    "text": "所以写 spec 的时候，永远把产出放在最前面。",
+    "pronounce_text": "所以写spec的时候，永远把产出放在最前面。",
+    "time_begin": 300204,
+    "time_end": 304063.00226757367,
+    "text_begin": 1650,
+    "text_end": 1674,
+    "pronounce_text_begin": 1561,
+    "pronounce_text_end": 1583
+  },
+  {
+    "text": "你说「一份全面的报告」，等于给了 Agent 提前收工的许可。你说「一份 40 页的 PDF，加一个两万行的 CSV，再加 14 张能直接导出的图表」，才是给了它一个明确的质量靶子。",
+    "pronounce_text": "你说「一份全面的报告」，等于给了Agent提前收工的许可。你说「一份四十页的PDF，加一个两万行的CSV，再加十四张能直接导出的图表」，才是给了它一个明确的质量靶子。",
+    "time_begin": 304200,
+    "time_end": 319924.39909297053,
+    "text_begin": 1674,
+    "text_end": 1765,
+    "pronounce_text_begin": 1583,
+    "pronounce_text_end": 1666
+  },
+  {
+    "text": "差别就在产出这一层的具体程度。",
+    "pronounce_text": "差别就在产出这一层的具体程度。",
+    "time_begin": 320076,
+    "time_end": 322785.61451247166,
+    "text_begin": 1765,
+    "text_end": 1780,
+    "pronounce_text_begin": 1666,
+    "pronounce_text_end": 1681
+  },
+  {
+    "text": "我给你看一个贯穿全程的真实例子，是一个量化金融的研究任务，审计股票因子的衰减。",
+    "pronounce_text": "我给你看一个贯穿全程的真实例子，是一个量化金融的研究任务，审计股票因子的衰减。",
+    "time_begin": 322956,
+    "time_end": 329810.37641723355,
+    "text_begin": 1780,
+    "text_end": 1819,
+    "pronounce_text_begin": 1681,
+    "pronounce_text_end": 1720
+  },
+  {
+    "text": "它的产出确认长这样：一个 Excel 文件，一张表，40 行 7 列，外加一段 200 词的简报夹在封面页里。",
+    "pronounce_text": "它的产出确认长这样：一个Excel文件，一张表，四十行七列，外加一段两百词的简报夹在封面页里。",
+    "time_begin": 330010.37641723355,
+    "time_end": 340997.90476190473,
+    "text_begin": 1819,
+    "text_end": 1874,
+    "pronounce_text_begin": 1720,
+    "pronounce_text_end": 1767
+  },
+  {
+    "text": "这不是聊天框里的一段话。这是你拿来就能用的东西。",
+    "pronounce_text": "这不是聊天框里的一段话。这是你拿来就能用的东西。",
+    "time_begin": 341136,
+    "time_end": 345378.1315192744,
+    "text_begin": 1874,
+    "text_end": 1898,
+    "pronounce_text_begin": 1767,
+    "pronounce_text_end": 1791
+  },
+  {
+    "text": "现在到了整套循环里,唯一不属于 Kimi 的那一拍。",
+    "pronounce_text": "现在到了整套循环里,唯一不属于Kimi的那一拍。",
+    "time_begin": 345528,
+    "time_end": 349816.5714285714,
+    "text_begin": 1898,
+    "text_end": 1924,
+    "pronounce_text_begin": 1791,
+    "pronounce_text_end": 1815
+  },
+  {
+    "text": "Swarm 有个已知的毛病：除非你明确要求它去核查，它会产出一堆听起来很自信、但引用严重不足的论断。而且独立的子 Agent 之间，有时候会自相矛盾。",
+    "pronounce_text": "Swarm有个已知的毛病：除非你明确要求它去核查，它会产出一堆听起来很自信、但引用严重不足的论断。而且独立的子Agent之间，有时候会自相矛盾。",
+    "time_begin": 349956,
+    "time_end": 362986.8843537415,
+    "text_begin": 1924,
+    "text_end": 1999,
+    "pronounce_text_begin": 1815,
+    "pronounce_text_end": 1887
+  },
+  {
+    "text": "「看起来做完了」和「它是对的」，是两个星球的事。",
+    "pronounce_text": "「看起来做完了」和「它是对的」，是两个星球的事。",
+    "time_begin": 363132,
+    "time_end": 367803.70068027213,
+    "text_begin": 1999,
+    "text_end": 2023,
+    "pronounce_text_begin": 1887,
+    "pronounce_text_end": 1911
+  },
+  {
+    "text": "这里就该 Opus 4.8 上场了。它的角色不是再生成什么更漂亮的东西——它的唯一职责，是证伪，不是夸奖。",
+    "pronounce_text": "这里就该Opus四点八上场了。它的角色不是再生成什么更漂亮的东西。它的唯一职责，是证伪，不是夸奖。",
+    "time_begin": 367956,
+    "time_end": 376551.873015873,
+    "text_begin": 2023,
+    "text_end": 2076,
+    "pronounce_text_begin": 1911,
+    "pronounce_text_end": 1960
+  },
+  {
+    "text": "Anthropic 说，它放过自己代码里缺陷的概率，比上一代低了大约四倍。它也是第一个在「不加批判地报告有问题的结果」这件事上拿到零分的 Claude。这个零分,是好事。",
+    "pronounce_text": "Anthropic说，它放过自己代码里缺陷的概率，比上一代低了大约四倍。它也是第一个在「不加批判地报告有问题的结果」这件事上拿到零分的Claude。这个零分,是好事。",
+    "time_begin": 376704,
+    "time_end": 390164.45351473923,
+    "text_begin": 2076,
+    "text_end": 2161,
+    "pronounce_text_begin": 1960,
+    "pronounce_text_end": 2043
+  },
+  {
+    "text": "你花高价 token，不是用来生成的。你是用它，去抓那个会在下一步被永久存进 Skill 的隐藏缺陷。",
+    "pronounce_text": "你花高价token，不是用来生成的。你是用它，去抓那个会在下一步被永久存进Skill的隐藏缺陷。",
+    "time_begin": 390312,
+    "time_end": 399929.55102040817,
+    "text_begin": 2161,
+    "text_end": 2212,
+    "pronounce_text_begin": 2043,
+    "pronounce_text_end": 2091
+  },
+  {
+    "text": "为什么非得是另一个模型来把关？因为没有任何一个模型能全面碾压。",
+    "pronounce_text": "为什么非得是另一个模型来把关？因为没有任何一个模型能全面碾压。",
+    "time_begin": 400068,
+    "time_end": 405296.97959183675,
+    "text_begin": 2212,
+    "text_end": 2243,
+    "pronounce_text_begin": 2091,
+    "pronounce_text_end": 2122
+  },
+  {
+    "text": "就拿一项 Agent 能力的核查基准来说，四个模型各有胜负，谁也没赢者通吃。便宜的并行量，只有在有个可信的东西在检查它的时候，才是超能力。",
+    "pronounce_text": "就拿一项Agent能力的核查基准来说，四个模型各有胜负，谁也没赢者通吃。便宜的并行量，只有在有个可信的东西在检查它的时候，才是超能力。",
+    "time_begin": 405468,
+    "time_end": 419021.3333333333,
+    "text_begin": 2243,
+    "text_end": 2312,
+    "pronounce_text_begin": 2122,
+    "pronounce_text_end": 2189
+  },
+  {
+    "text": "这一拍，才是让这套循环真正「自我改进」的关键。",
+    "pronounce_text": "这一拍，才是让这套循环真正「自我改进」的关键。",
+    "time_begin": 419184,
+    "time_end": 424029.85034013604,
+    "text_begin": 2312,
+    "text_end": 2335,
+    "pronounce_text_begin": 2189,
+    "pronounce_text_end": 2212
+  },
+  {
+    "text": "一次你以后还会重复的运行结束后，告诉 Kimi：把这整套流程存成一个可复用的 Skill。输入格式、有效的 Agent 步骤、产出格式，全都包进去。",
+    "pronounce_text": "一次你以后还会重复的运行结束后，告诉Kimi：把这整套流程存成一个可复用的Skill。输入格式、有效的Agent步骤、产出格式，全都包进去。",
+    "time_begin": 424188,
+    "time_end": 437996.7528344671,
+    "text_begin": 2335,
+    "text_end": 2409,
+    "pronounce_text_begin": 2212,
+    "pronounce_text_end": 2282
+  },
+  {
+    "text": "然后,神奇的事情发生了。第一次跑，花你 20 分钟。这之后每一次跑，只要 30 秒。",
+    "pronounce_text": "然后,神奇的事情发生了。第一次跑，花你二十分钟。这之后每一次跑，只要三十秒。",
+    "time_begin": 438156,
+    "time_end": 447436.86167800456,
+    "text_begin": 2409,
+    "text_end": 2451,
+    "pronounce_text_begin": 2282,
+    "pronounce_text_end": 2320
+  },
+  {
+    "text": "但我要在这里把一个误会讲清楚。这才是「自我学习」的诚实版本。",
+    "pronounce_text": "但我要在这里把一个误会讲清楚。这才是「自我学习」的诚实版本。",
+    "time_begin": 447588,
+    "time_end": 453374.25850340136,
+    "text_begin": 2451,
+    "text_end": 2481,
+    "pronounce_text_begin": 2320,
+    "pronounce_text_end": 2350
+  },
+  {
+    "text": "模型并没有在你两次运行之间偷偷重训自己的权重。变聪明的，是模型周围那套系统。",
+    "pronounce_text": "模型并没有在你两次运行之间偷偷重训自己的权重。变聪明的，是模型周围那套系统。",
+    "time_begin": 453528,
+    "time_end": 460637.79591836734,
+    "text_begin": 2481,
+    "text_end": 2519,
+    "pronounce_text_begin": 2350,
+    "pronounce_text_end": 2388
+  },
+  {
+    "text": "你的 Skill 库在每个项目之后都更厚一点。以后每一群 Swarm，都会自动套用这些已经攒下的 Skill。",
+    "pronounce_text": "你的Skill库在每个项目之后都更厚一点。以后每一群Swarm，都会自动套用这些已经攒下的Skill。",
+    "time_begin": 460800,
+    "time_end": 468931.4739229025,
+    "text_begin": 2519,
+    "text_end": 2574,
+    "pronounce_text_begin": 2388,
+    "pronounce_text_end": 2439
+  },
+  {
+    "text": "竞争对手一个礼拜抄不走这个库。因为它是从你几个月的真实运行里,一点点长出来的。",
+    "pronounce_text": "竞争对手一个礼拜抄不走这个库。因为它是从你几个月的真实运行里,一点点长出来的。",
+    "time_begin": 469080,
+    "time_end": 475806.6666666667,
+    "text_begin": 2574,
+    "text_end": 2613,
+    "pronounce_text_begin": 2439,
+    "pronounce_text_end": 2478
+  },
+  {
+    "text": "Skill 抓的是流程。还有一招,抓的是领域本身。",
+    "pronounce_text": "Skill抓的是流程。还有一招,抓的是领域本身。",
+    "time_begin": 475956,
+    "time_end": 480627.70068027213,
+    "text_begin": 2613,
+    "text_end": 2638,
+    "pronounce_text_begin": 2478,
+    "pronounce_text_end": 2502
+  },
+  {
+    "text": "把你最好的作品传进去——一份谈成了的方案、一份打磨过的报告、一套漂亮的幻灯片——Kimi 会把它的结构和文风指纹,也存成一个 Skill,以后每次 Swarm 自动套用。",
+    "pronounce_text": "把你最好的作品传进去。一份谈成了的方案、一份打磨过的报告、一套漂亮的幻灯片。Kimi会把它的结构和文风指纹,也存成一个Skill,以后每次Swarm自动套用。",
+    "time_begin": 480780,
+    "time_end": 495355.01133786846,
+    "text_begin": 2638,
+    "text_end": 2723,
+    "pronounce_text_begin": 2502,
+    "pronounce_text_end": 2581
+  },
+  {
+    "text": "复利就长在这里。你喂进去的每一份 PDF、每一段记录、每一张表格，都会变成那 300 个并行 Agent 可以扎根的上下文,而不是退回去靠通用的训练数据瞎猜。",
+    "pronounce_text": "复利就长在这里。你喂进去的每一份PDF、每一段记录、每一张表格，都会变成那三百个并行Agent可以扎根的上下文,而不是退回去靠通用的训练数据瞎猜。",
+    "time_begin": 495504,
+    "time_end": 509695.8820861678,
+    "text_begin": 2723,
+    "text_end": 2802,
+    "pronounce_text_begin": 2581,
+    "pronounce_text_end": 2654
+  },
+  {
+    "text": "你喂得越多，之后每一次跑得就越准。报告会慢慢不再有那股「通用 AI 味」，开始读起来像你的活儿。",
+    "pronounce_text": "你喂得越多，之后每一次跑得就越准。报告会慢慢不再有那股「通用AI味」，开始读起来像你的活儿。",
+    "time_begin": 509832,
+    "time_end": 518903.8820861678,
+    "text_begin": 2802,
+    "text_end": 2850,
+    "pronounce_text_begin": 2654,
+    "pronounce_text_end": 2700
+  },
+  {
+    "text": "第五步抓住了一个错误。第八步，是确保这群 Agent 再也不犯这个错。",
+    "pronounce_text": "第五步抓住了一个错误。第八步，是确保这群Agent再也不犯这个错。",
+    "time_begin": 519048,
+    "time_end": 524869.0884353742,
+    "text_begin": 2850,
+    "text_end": 2885,
+    "pronounce_text_begin": 2700,
+    "pronounce_text_end": 2733
+  },
+  {
+    "text": "把那个诚实模型给出的修改清单拿过来，别只是把这一次的产出补好。要把这个教训，烤进一个项目级的约束文件里，让 Kimi 每次开工自动读它。",
+    "pronounce_text": "把那个诚实模型给出的修改清单拿过来，别只是把这一次的产出补好。要把这个教训，烤进一个项目级的约束文件里，让Kimi每次开工自动读它。",
+    "time_begin": 525024,
+    "time_end": 537718.1950113379,
+    "text_begin": 2885,
+    "text_end": 2953,
+    "pronounce_text_begin": 2733,
+    "pronounce_text_end": 2799
+  },
+  {
+    "text": "这就是循环在从自己的失败里学习。第一次被抓到的偏差，到第二次就成了一条硬规则。",
+    "pronounce_text": "这就是循环在从自己的失败里学习。第一次被抓到的偏差，到第二次就成了一条硬规则。",
+    "time_begin": 537876,
+    "time_end": 545322.485260771,
+    "text_begin": 2953,
+    "text_end": 2992,
+    "pronounce_text_begin": 2799,
+    "pronounce_text_end": 2838
+  },
+  {
+    "text": "跑过几个项目之后，你这份约束文件，会变成一份能自己执行自己的活文档。而那个核查的关卡，每跑一次要抓的东西，就越来越少。",
+    "pronounce_text": "跑过几个项目之后，你这份约束文件，会变成一份能自己执行自己的活文档。而那个核查的关卡，每跑一次要抓的东西，就越来越少。",
+    "time_begin": 545472,
+    "time_end": 556505.9682539683,
+    "text_begin": 2992,
+    "text_end": 3051,
+    "pronounce_text_begin": 2838,
+    "pronounce_text_end": 2897
+  },
+  {
+    "text": "我知道你可能会想：把关的越来越闲，不是浪费吗？正好相反。它越闲，说明错误正在被提前消灭，系统在自己加固自己。护城河,恰恰就长在这个过程里。",
+    "pronounce_text": "我知道你可能会想：把关的越来越闲，不是浪费吗？正好相反。它越闲，说明错误正在被提前消灭，系统在自己加固自己。护城河,恰恰就长在这个过程里。",
+    "time_begin": 556668,
+    "time_end": 570558.0226757369,
+    "text_begin": 3051,
+    "text_end": 3120,
+    "pronounce_text_begin": 2897,
+    "pronounce_text_end": 2966
+  },
+  {
+    "text": "现在,回报来了。",
+    "pronounce_text": "现在,回报来了。",
+    "time_begin": 570708,
+    "time_end": 572523.6462585034,
+    "text_begin": 3120,
+    "text_end": 3128,
+    "pronounce_text_begin": 2966,
+    "pronounce_text_end": 2974
+  },
+  {
+    "text": "第二次跑，不是从零开始。它从你在前面几步攒下的 Skill、领域知识、还有那份约束文件开始。同一套流程,新的文件,只要一点点设置。",
+    "pronounce_text": "第二次跑，不是从零开始。它从你在前面几步攒下的Skill、领域知识、还有那份约束文件开始。同一套流程,新的文件,只要一点点设置。",
+    "time_begin": 572688,
+    "time_end": 585080.335600907,
+    "text_begin": 3128,
+    "text_end": 3193,
+    "pronounce_text_begin": 2974,
+    "pronounce_text_end": 3038
+  },
+  {
+    "text": "这就是「复利」从一个口号，变成发票上一个实数的时刻。",
+    "pronounce_text": "这就是「复利」从一个口号，变成发票上一个实数的时刻。",
+    "time_begin": 585252,
+    "time_end": 590399.7097505669,
+    "text_begin": 3193,
+    "text_end": 3219,
+    "pronounce_text_begin": 3038,
+    "pronounce_text_end": 3064
+  },
+  {
+    "text": "第一次做竞品监控，要写完整的 spec，还要过一遍核查。到第四次，它就是一句 30 秒的提示词，对着存好的 Skill 跑一下。而且产出更锋利，因为它继承了前面每一次的修正。",
+    "pronounce_text": "第一次做竞品监控，要写完整的spec，还要过一遍核查。到第四次，它就是一句三十秒的提示词，对着存好的Skill跑一下。而且产出更锋利，因为它继承了前面每一次的修正。",
+    "time_begin": 590544,
+    "time_end": 606477.3786848072,
+    "text_begin": 3219,
+    "text_end": 3306,
+    "pronounce_text_begin": 3064,
+    "pronounce_text_end": 3146
+  },
+  {
+    "text": "第一次 20 分钟，第五十次 30 秒。这个落差，就是你为什么要去搭一个循环、而不是写一句提示词的全部理由。",
+    "pronounce_text": "第一次二十分钟，第五十次三十秒。这个落差，就是你为什么要去搭一个循环、而不是写一句提示词的全部理由。",
+    "time_begin": 606636,
+    "time_end": 616636.6802721089,
+    "text_begin": 3306,
+    "text_end": 3360,
+    "pronounce_text_begin": 3146,
+    "pronounce_text_end": 3196
+  },
+  {
+    "text": "最后一招：一旦这个循环稳定了、有 Skill 撑着了，你就不用再手动去启动它了。",
+    "pronounce_text": "最后一招：一旦这个循环稳定了、有Skill撑着了，你就不用再手动去启动它了。",
+    "time_begin": 616788,
+    "time_end": 623340.5170068027,
+    "text_begin": 3360,
+    "text_end": 3400,
+    "pronounce_text_begin": 3196,
+    "pronounce_text_end": 3234
+  },
+  {
+    "text": "给 Kimi 一个触发条件——一个时间表、一个新文件落盘、或者一个竞品的定价页面——让它主动把整套循环跑完，只把交付物和异常浮出来给你看。",
+    "pronounce_text": "给Kimi一个触发条件。一个时间表、一个新文件落盘、或者一个竞品的定价页面。让它主动把整套循环跑完，只把交付物和异常浮出来给你看。",
+    "time_begin": 623484,
+    "time_end": 635795.0657596372,
+    "text_begin": 3400,
+    "text_end": 3469,
+    "pronounce_text_begin": 3234,
+    "pronounce_text_end": 3299
+  },
+  {
+    "text": "竞品监控就是最干净的例子。第一次你手动搭、手动核。等它变成一个后台 Agent，它会每周并行检查每一个竞品，然后在零边际时间成本下，往你收件箱里丢一份简报。",
+    "pronounce_text": "竞品监控就是最干净的例子。第一次你手动搭、手动核。等它变成一个后台Agent，它会每周并行检查每一个竞品，然后在零边际时间成本下，往你收件箱里丢一份简报。",
+    "time_begin": 635940,
+    "time_end": 650515.0113378685,
+    "text_begin": 3469,
+    "text_end": 3547,
+    "pronounce_text_begin": 3299,
+    "pronounce_text_end": 3376
+  },
+  {
+    "text": "循环里唯一剩下的人类，是你设的那个问题，和你对答案做的那个决定。",
+    "pronounce_text": "循环里唯一剩下的人类，是你设的那个问题，和你对答案做的那个决定。",
+    "time_begin": 650664,
+    "time_end": 656786.947845805,
+    "text_begin": 3547,
+    "text_end": 3579,
+    "pronounce_text_begin": 3376,
+    "pronounce_text_end": 3408
+  },
+  {
+    "text": "往后退一步看全局。",
+    "pronounce_text": "往后退一步看全局。",
+    "time_begin": 656928,
+    "time_end": 658871.3560090703,
+    "text_begin": 3579,
+    "text_end": 3588,
+    "pronounce_text_begin": 3408,
+    "pronounce_text_end": 3417
+  },
+  {
+    "text": "当那些封闭的实验室还在一次次发布「更聪明一点的聊天机器人」时，一个开源模型,已经在并行跑 300 个 Agent了——而且你每喂它一次,它就在系统层面更聪明一点。",
+    "pronounce_text": "当那些封闭的实验室还在一次次发布「更聪明一点的聊天机器人」时，一个开源模型,已经在并行跑三百个Agent了。而且你每喂它一次,它就在系统层面更聪明一点。",
+    "time_begin": 659016,
+    "time_end": 672987.2925170067,
+    "text_begin": 3588,
+    "text_end": 3669,
+    "pronounce_text_begin": 3417,
+    "pronounce_text_end": 3493
+  },
+  {
+    "text": "这个指纹，我们其实已经见过一次。一个开源的发布，重新定义了封闭前沿以为自己拥有的东西，然后整个领域一夜之间重新校准。那次叫 DeepSeek。",
+    "pronounce_text": "这个指纹，我们其实已经见过一次。一个开源的发布，重新定义了封闭前沿以为自己拥有的东西，然后整个领域一夜之间重新校准。那次叫DeepSeek。",
+    "time_begin": 673128,
+    "time_end": 685822.1950113379,
+    "text_begin": 3669,
+    "text_end": 3740,
+    "pronounce_text_begin": 3493,
+    "pronounce_text_end": 3563
+  },
+  {
+    "text": "一个长在开源权重上的、会自我学习的 Swarm，是同一个形状。",
+    "pronounce_text": "一个长在开源权重上的、会自我学习的Swarm，是同一个形状。",
+    "time_begin": 685980,
+    "time_end": 691464.3990929705,
+    "text_begin": 3740,
+    "text_end": 3771,
+    "pronounce_text_begin": 3563,
+    "pronounce_text_end": 3593
+  },
+  {
+    "text": "那些还在争论「哪个模型赢了」的人，是在回答一个已经不再重要的问题。",
+    "pronounce_text": "那些还在争论「哪个模型赢了」的人，是在回答一个已经不再重要的问题。",
+    "time_begin": 691632,
+    "time_end": 698219.3469387755,
+    "text_begin": 3771,
+    "text_end": 3804,
+    "pronounce_text_begin": 3593,
+    "pronounce_text_end": 3626
+  },
+  {
+    "text": "现在真正的问题，不是哪个模型最聪明。而是你能同时跑多少个、谁在检查它们的活、以及你的这套配置，今天有没有比昨天更锋利。",
+    "pronounce_text": "现在真正的问题，不是哪个模型最聪明。而是你能同时跑多少个、谁在检查它们的活、以及你的这套配置，今天有没有比昨天更锋利。",
+    "time_begin": 698364,
+    "time_end": 710210.6666666666,
+    "text_begin": 3804,
+    "text_end": 3863,
+    "pronounce_text_begin": 3626,
+    "pronounce_text_end": 3685
+  },
+  {
+    "text": "所以,如果你今天只带走一句话,我希望是这句：真正的杠杆,从来不在哪个模型更聪明,而在你能不能让一次运行留下点东西,让明天那群 Agent 比今天的更聪明。",
+    "pronounce_text": "所以,如果你今天只带走一句话,我希望是这句：真正的杠杆,从来不在哪个模型更聪明,而在你能不能让一次运行留下点东西,让明天那群Agent比今天的更聪明。",
+    "time_begin": 710352,
+    "time_end": 723557.0340136054,
+    "text_begin": 3863,
+    "text_end": 3940,
+    "pronounce_text_begin": 3685,
+    "pronounce_text_end": 3760
+  },
+  {
+    "text": "模型没变。是你在它周围搭的那套系统,在一点点变厚。",
+    "pronounce_text": "模型没变。是你在它周围搭的那套系统,在一点点变厚。",
+    "time_begin": 723708,
+    "time_end": 729064.6893424037,
+    "text_begin": 3940,
+    "text_end": 3965,
+    "pronounce_text_begin": 3760,
+    "pronounce_text_end": 3785
+  },
+  {
+    "text": "大多数人读完这篇,还会继续把 Kimi 当聊天框用。少数人,会在这周就把这个循环搭起来。搭起来,核查它,蒸馏它,然后看着它每跑一次,都更便宜、更锋利一点。",
+    "pronounce_text": "大多数人读完这篇,还会继续把Kimi当聊天框用。少数人,会在这周就把这个循环搭起来。搭起来,核查它,蒸刘它,然后看着它每跑一次,都更便宜、更锋利一点。",
+    "time_begin": 729216,
+    "time_end": 744476,
+    "text_begin": 3965,
+    "text_end": 4042,
+    "pronounce_text_begin": 3785,
+    "pronounce_text_end": 3860
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 744624,
+    "time_end": 749725.2698412698,
+    "text_begin": 4042,
+    "text_end": 4069,
+    "pronounce_text_begin": 3860,
+    "pronounce_text_end": 3886
+  }
+]

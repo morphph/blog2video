@@ -1,0 +1,112 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "summary",
+ "dataDuration": 93.8,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_13.html",
+ "topbarIndex": "[13/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.943,
+   "text": "往后退一步看全局。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.083,
+   "localDuration": 13.971,
+   "text": "当那些封闭的实验室还在一次次发布「更聪明一点的聊天机器人」时，一个开源模型,已经在并行跑 300 个 Agent了——而且你每喂它一次,它就在系统层面更聪明一点。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 16.195,
+   "localDuration": 2.861,
+   "text": "这个指纹，我们其实已经见过一次。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.056,
+   "localDuration": 7.509,
+   "text": "一个开源的发布，重新定义了封闭前沿以为自己拥有的东西，然后整个领域一夜之间重新校准。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 26.565,
+   "localDuration": 2.324,
+   "text": "那次叫 DeepSeek。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.047,
+   "localDuration": 5.484,
+   "text": "一个长在开源权重上的、会自我学习的 Swarm，是同一个形状。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.699,
+   "localDuration": 6.587,
+   "text": "那些还在争论「哪个模型赢了」的人，是在回答一个已经不再重要的问题。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.431,
+   "localDuration": 3.614,
+   "text": "现在真正的问题，不是哪个模型最聪明。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 45.045,
+   "localDuration": 8.233,
+   "text": "而是你能同时跑多少个、谁在检查它们的活、以及你的这套配置，今天有没有比昨天更锋利。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 53.419,
+   "localDuration": 13.205,
+   "text": "所以,如果你今天只带走一句话,我希望是这句：真正的杠杆,从来不在哪个模型更聪明,而在你能不能让一次运行留下点东西,让明天那群 Agent 比今天的更聪明。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 66.775,
+   "localDuration": 1.071,
+   "text": "模型没变。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 67.846,
+   "localDuration": 4.286,
+   "text": "是你在它周围搭的那套系统,在一点点变厚。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 72.283,
+   "localDuration": 5.153,
+   "text": "大多数人读完这篇,还会继续把 Kimi 当聊天框用。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 77.436,
+   "localDuration": 3.567,
+   "text": "少数人,会在这周就把这个循环搭起来。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 81.003,
+   "localDuration": 6.54,
+   "text": "搭起来,核查它,蒸馏它,然后看着它每跑一次,都更便宜、更锋利一点。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 87.691,
+   "localDuration": 3.779,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 91.47,
+   "localDuration": 1.322,
+   "text": "我们下期再见。"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "checklist",
+ "dataDuration": 58.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_4.html",
+ "topbarIndex": "[04/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.37,
+   "text": "这是新手最爱跳过的一步，也是跳过代价最高的一步。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.525,
+   "localDuration": 4.258,
+   "text": "你提交 spec 之后，Kimi 不会马上开跑。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.783,
+   "localDuration": 8.517,
+   "text": "它会先把执行计划摆给你看：要派多少个子 Agent、每个负责什么、谁依赖谁、整套要花多少步预算。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.449,
+   "localDuration": 0.551,
+   "text": "读它。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18,
+   "localDuration": 7.169,
+   "text": "一个拆错了的两百 Agent 的 Swarm，烧的是真金白银和真实的几个小时。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.169,
+   "localDuration": 2.757,
+   "text": "而检查这张计划，不花你一分钱。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.069,
+   "localDuration": 3.208,
+   "text": "你就盯三件事：它理解任务范围了吗？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.277,
+   "localDuration": 3.585,
+   "text": "Agent 的数量配得上任务的大小吗？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 34.862,
+   "localDuration": 3.208,
+   "text": "产出计划跟你真正要的东西对得上吗？"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 38.221,
+   "localDuration": 1.611,
+   "text": "这里有个细节值得记住。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 39.832,
+   "localDuration": 7.031,
+   "text": "那 4000 步，是整个 Swarm 的总协调预算，不是每个 Agent 都能跑 4000 步。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 47.005,
+   "localDuration": 4.975,
+   "text": "300 个 Agent 一起上，平均每个才约 13 步。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 51.98,
+   "localDuration": 1.776,
+   "text": "短、专、窄的小任务。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 53.756,
+   "localDuration": 4.62,
+   "text": "这个数字反过来告诉你，你的任务到底适不适合这个形态。"
+  }
+ ]
+}

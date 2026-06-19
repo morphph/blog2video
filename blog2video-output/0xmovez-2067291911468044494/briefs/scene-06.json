@@ -1,0 +1,88 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 66.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_6.html",
+ "topbarIndex": "[06/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.69,
+   "text": "Swarm 的产出，不是窗口里的一段文字。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.682,
+   "localDuration": 3.338,
+   "text": "它是能直接塞进你工作流的结构化交付物。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.02,
+   "localDuration": 2.636,
+   "text": "这一点,是很多介绍里都漏掉的。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.82,
+   "localDuration": 6.953,
+   "text": "一次启动，落地的可能是 PDF、表格、数据集、幻灯片，还有能跑的代码。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.773,
+   "localDuration": 4.371,
+   "text": "因为这些格式，Kimi 是原生就能吐出来的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.304,
+   "localDuration": 3.859,
+   "text": "所以写 spec 的时候，永远把产出放在最前面。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.3,
+   "localDuration": 5.357,
+   "text": "你说「一份全面的报告」，等于给了 Agent 提前收工的许可。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.657,
+   "localDuration": 10.367,
+   "text": "你说「一份 40 页的 PDF，加一个两万行的 CSV，再加 14 张能直接导出的图表」，才是给了它一个明确的质量靶子。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.176,
+   "localDuration": 2.71,
+   "text": "差别就在产出这一层的具体程度。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 44.056,
+   "localDuration": 6.854,
+   "text": "我给你看一个贯穿全程的真实例子，是一个量化金融的研究任务，审计股票因子的衰减。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 51.11,
+   "localDuration": 10.988,
+   "text": "它的产出确认长这样：一个 Excel 文件，一张表，40 行 7 列，外加一段 200 词的简报夹在封面页里。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 62.236,
+   "localDuration": 2.121,
+   "text": "这不是聊天框里的一段话。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 64.357,
+   "localDuration": 2.121,
+   "text": "这是你拿来就能用的东西。"
+  }
+ ]
+}

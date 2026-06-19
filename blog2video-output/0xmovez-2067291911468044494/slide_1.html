@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .glow { position: absolute; top: 240px; left: 50%; transform: translateX(-50%);
+      width: 760px; height: 480px; background: radial-gradient(ellipse at center, rgba(139,92,246,0.28), transparent 70%); filter: blur(20px); }
+    .kicker { font-size: 30px; color: #8B5CF6; font-weight: 700; letter-spacing: 4px; margin-bottom: 32px; z-index: 1; }
+    h1 { font-size: 76px; font-weight: 800; line-height: 1.22; z-index: 1; }
+    h1 .hl { color: #F59E0B; }
+    .sub { font-size: 36px; color: #B0B0CC; margin-top: 36px; line-height: 1.5; z-index: 1; }
+    .cards { display: flex; flex-direction: column; gap: 22px; width: 100%; margin-top: 64px; z-index: 1; }
+    .card { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.25); border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 28px 32px; text-align: left; }
+    .card .q { font-size: 38px; font-weight: 700; line-height: 1.4; }
+    .card .q .num { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="kicker">KIMI K2.6 · AGENT SWARM</div>
+    <h1>一句话拉起 <span class="hl">300 个 Agent</span><br>得分比贵五倍的模型还高</h1>
+    <div class="sub">一个免费的开源模型，在真实研究任务上</div>
+    <div class="cards">
+      <div class="card"><div class="q">大多数人，只用了它 <span class="num">一成</span> 的能力</div></div>
+      <div class="card"><div class="q">为什么这套东西，<span class="num">跑得越多越值钱</span>？</div></div>
+    </div>
+  </div>
+</body>
+</html>

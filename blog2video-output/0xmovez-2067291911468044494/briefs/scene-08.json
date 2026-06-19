@@ -1,0 +1,94 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "principle",
+ "dataDuration": 56.767,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_8.html",
+ "topbarIndex": "[08/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.846,
+   "text": "这一拍，才是让这套循环真正「自我改进」的关键。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.988,
+   "localDuration": 8.397,
+   "text": "一次你以后还会重复的运行结束后，告诉 Kimi：把这整套流程存成一个可复用的 Skill。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.385,
+   "localDuration": 5.412,
+   "text": "输入格式、有效的 Agent 步骤、产出格式，全都包进去。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.956,
+   "localDuration": 2.652,
+   "text": "然后,神奇的事情发生了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.608,
+   "localDuration": 3.093,
+   "text": "第一次跑，花你 20 分钟。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.701,
+   "localDuration": 3.536,
+   "text": "这之后每一次跑，只要 30 秒。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.388,
+   "localDuration": 2.893,
+   "text": "但我要在这里把一个误会讲清楚。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.281,
+   "localDuration": 2.893,
+   "text": "这才是「自我学习」的诚实版本。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 34.328,
+   "localDuration": 4.303,
+   "text": "模型并没有在你两次运行之间偷偷重训自己的权重。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 38.631,
+   "localDuration": 2.807,
+   "text": "变聪明的，是模型周围那套系统。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 41.6,
+   "localDuration": 3.4,
+   "text": "你的 Skill 库在每个项目之后都更厚一点。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 45,
+   "localDuration": 4.731,
+   "text": "以后每一群 Swarm，都会自动套用这些已经攒下的 Skill。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 49.88,
+   "localDuration": 2.587,
+   "text": "竞争对手一个礼拜抄不走这个库。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 52.467,
+   "localDuration": 4.14,
+   "text": "因为它是从你几个月的真实运行里,一点点长出来的。"
+  }
+ ]
+}

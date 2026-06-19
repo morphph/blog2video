@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    h1 { font-size: 60px; font-weight: 800; line-height: 1.25; margin-bottom: 44px; }
+    h1 .hl { color: #8B5CF6; }
+    .trick { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.3); border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 30px 34px; width: 100%; text-align: left; margin-bottom: 28px; }
+    .trick .t { font-size: 30px; color: #8B5CF6; font-weight: 700; margin-bottom: 14px; }
+    .trick .d { font-size: 34px; line-height: 1.4; }
+    .trick .d .r { color: #EF4444; font-weight: 700; }
+    .trick .d .g { color: #10B981; font-weight: 700; }
+    .price { display: flex; gap: 18px; width: 100%; }
+    .p { flex: 1; background: #1A1A2E; border: 1px solid rgba(16,185,129,0.3); border-radius: 12px; padding: 28px 16px; }
+    .p .num { font-size: 56px; font-weight: 800; color: #10B981; line-height: 1; }
+    .p .lab { font-size: 26px; color: #B0B0CC; margin-top: 14px; line-height: 1.3; }
+    .p.cache .num { color: #F59E0B; }
+    .p.cache { border-color: rgba(245,158,11,0.3); }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>让它 <span class="hl">浪费</span>——<br>这才是重点</h1>
+    <div class="trick">
+      <div class="t">独立上下文窗口</div>
+      <div class="d">单个 Agent 干长任务，<span class="r">窗口填满→溢出→有损压缩</span>，越干越蠢。Swarm 给每个子任务<span class="g">独立的有边界上下文</span>，只回传结构化结果。</div>
+    </div>
+    <div class="price">
+      <div class="p"><div class="num">$0.95</div><div class="lab">每百万 token<br>输入</div></div>
+      <div class="p"><div class="num">$4</div><div class="lab">每百万 token<br>输出</div></div>
+      <div class="p cache"><div class="num">$0.16</div><div class="lab">命中缓存<br>每百万</div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "quote",
+ "dataDuration": 73.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_7.html",
+ "topbarIndex": "[07/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.289,
+   "text": "现在到了整套循环里,唯一不属于 Kimi 的那一拍。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.423,
+   "localDuration": 8.687,
+   "text": "Swarm 有个已知的毛病：除非你明确要求它去核查，它会产出一堆听起来很自信、但引用严重不足的论断。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.11,
+   "localDuration": 4.344,
+   "text": "而且独立的子 Agent 之间，有时候会自相矛盾。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.599,
+   "localDuration": 4.672,
+   "text": "「看起来做完了」和「它是对的」，是两个星球的事。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.423,
+   "localDuration": 2.919,
+   "text": "这里就该 Opus 4.8 上场了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.342,
+   "localDuration": 5.677,
+   "text": "它的角色不是再生成什么更漂亮的东西——它的唯一职责，是证伪，不是夸奖。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.171,
+   "localDuration": 5.859,
+   "text": "Anthropic 说，它放过自己代码里缺陷的概率，比上一代低了大约四倍。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 37.03,
+   "localDuration": 6.176,
+   "text": "它也是第一个在「不加批判地报告有问题的结果」这件事上拿到零分的 Claude。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 43.206,
+   "localDuration": 1.425,
+   "text": "这个零分,是好事。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 44.779,
+   "localDuration": 3.583,
+   "text": "你花高价 token，不是用来生成的。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 48.362,
+   "localDuration": 6.035,
+   "text": "你是用它，去抓那个会在下一步被永久存进 Skill 的隐藏缺陷。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 54.535,
+   "localDuration": 2.53,
+   "text": "为什么非得是另一个模型来把关？"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 57.065,
+   "localDuration": 2.699,
+   "text": "因为没有任何一个模型能全面碾压。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 59.935,
+   "localDuration": 7.464,
+   "text": "就拿一项 Agent 能力的核查基准来说，四个模型各有胜负，谁也没赢者通吃。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 67.399,
+   "localDuration": 6.089,
+   "text": "便宜的并行量，只有在有个可信的东西在检查它的时候，才是超能力。"
+  }
+ ]
+}

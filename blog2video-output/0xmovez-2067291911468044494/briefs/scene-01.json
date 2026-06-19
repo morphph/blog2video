@@ -1,0 +1,40 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 27.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_1.html",
+ "topbarIndex": "[01/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 10.001,
+   "text": "一个免费的开源模型，一句话就能拉起 300 个 Agent 同时干活，在真实研究任务上的得分，比你付五倍价钱的模型还高。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 10.152,
+   "localDuration": 4.328,
+   "text": "这是 Kimi K2.6 的 Agent Swarm 模式。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.48,
+   "localDuration": 4.616,
+   "text": "我把这篇拆解从头读到尾，越读越觉得，大多数人根本没碰到它的核心。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.26,
+   "localDuration": 2.356,
+   "text": "今天我不教你怎么点按钮。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.616,
+   "localDuration": 5.299,
+   "text": "我只想讲清一件事：为什么这套东西，跑得越多、就越值钱。"
+  }
+ ]
+}

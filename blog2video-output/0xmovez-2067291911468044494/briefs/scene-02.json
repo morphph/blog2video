@@ -1,0 +1,82 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "principle",
+ "dataDuration": 53.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_2.html",
+ "topbarIndex": "[02/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 1.897,
+   "text": "先说一个有点扎心的事实。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.057,
+   "localDuration": 6.215,
+   "text": "大多数人打开 Kimi，输入一个问题，拿到一段回答，关掉页面。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.272,
+   "localDuration": 1.404,
+   "text": "这就是聊天框。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.676,
+   "localDuration": 1.403,
+   "text": "它能用，没错。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 11.079,
+   "localDuration": 3.208,
+   "text": "但这只是这个产品大概一成的能力。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 14.441,
+   "localDuration": 4.442,
+   "text": "剩下那九成，藏在一个你可能从没点开过的模式里。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 18.883,
+   "localDuration": 9.657,
+   "text": "在那个模式下，你写一句话，它能拉起最多 300 个并行的子 Agent，跨越 4000 步协同动作。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.697,
+   "localDuration": 2.176,
+   "text": "更关键的不是它跑得快。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 30.873,
+   "localDuration": 4.551,
+   "text": "而是只要你用对了，它每跑一遍，都会留下点东西。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 35.573,
+   "localDuration": 9.327,
+   "text": "可能是一个可以复用的 Skill，一份更锋利的需求说明，或者一条约束，专门用来挡住下次再犯今天这个错。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 45.041,
+   "localDuration": 6.325,
+   "text": "换句话说，昨天跑你任务的那群 Agent，应该比今天跑它的更聪明。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 51.366,
+   "localDuration": 2.108,
+   "text": "这就是整套循环的灵魂。"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 46.1,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_11.html",
+ "topbarIndex": "[11/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 1.816,
+   "text": "现在,回报来了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.988,
+   "localDuration": 2.288,
+   "text": "第二次跑，不是从零开始。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.276,
+   "localDuration": 6.482,
+   "text": "它从你在前面几步攒下的 Skill、领域知识、还有那份约束文件开始。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.758,
+   "localDuration": 3.622,
+   "text": "同一套流程,新的文件,只要一点点设置。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.552,
+   "localDuration": 5.148,
+   "text": "这就是「复利」从一个口号，变成发票上一个实数的时刻。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 19.844,
+   "localDuration": 5.128,
+   "text": "第一次做竞品监控，要写完整的 spec，还要过一遍核查。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.972,
+   "localDuration": 6.593,
+   "text": "到第四次，它就是一句 30 秒的提示词，对着存好的 Skill 跑一下。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.565,
+   "localDuration": 4.212,
+   "text": "而且产出更锋利，因为它继承了前面每一次的修正。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.936,
+   "localDuration": 3.704,
+   "text": "第一次 20 分钟，第五十次 30 秒。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.64,
+   "localDuration": 6.297,
+   "text": "这个落差，就是你为什么要去搭一个循环、而不是写一句提示词的全部理由。"
+  }
+ ]
+}

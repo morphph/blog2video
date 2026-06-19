@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    h1 { font-size: 60px; font-weight: 800; line-height: 1.25; margin-bottom: 48px; }
+    h1 .hl { color: #8B5CF6; }
+    .vs { display: flex; gap: 22px; width: 100%; margin-bottom: 44px; }
+    .col { flex: 1; border-radius: 12px; padding: 30px 26px; text-align: left; }
+    .col.bad { background: #1A1A2E; border: 1px solid rgba(239,68,68,0.3); border-left: 4px solid #EF4444; }
+    .col.good { background: #1A1A2E; border: 1px solid rgba(16,185,129,0.3); border-left: 4px solid #10B981; }
+    .col .t { font-size: 28px; font-weight: 700; letter-spacing: 1px; margin-bottom: 16px; }
+    .col.bad .t { color: #EF4444; }
+    .col.good .t { color: #10B981; }
+    .col .d { font-size: 32px; line-height: 1.45; color: #FFFFFF; }
+    .col .d .dim { color: #B0B0CC; }
+    .spec { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.3); border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 28px 32px; width: 100%; text-align: left; }
+    .spec .l { font-size: 30px; color: #B0B0CC; line-height: 1.45; }
+    .spec .l b { color: #FFFFFF; }
+    .spec .l .key { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>把它当 <span class="hl">承包商</span>，<br>不是许愿池里的神灯</h1>
+    <div class="vs">
+      <div class="col bad"><div class="t">一句话</div><div class="d">「帮我研究一下市场」<br><span class="dim">= 把所有决定权交给它</span></div></div>
+      <div class="col good"><div class="t">一份 spec</div><div class="d">收集什么 · 什么算数<br><span class="dim">来源 · 格式 · 遇矛盾怎么办</span></div></div>
+    </div>
+    <div class="spec">
+      <div class="l">拆成 300 个 Agent，是 <b>Kimi 自己决定</b>的——你只描述目标，它自己搭组织架构图。这份 <span class="key">spec</span> 杠杆最大，后面会变成可复用 Skill 的种子。</div>
+    </div>
+  </div>
+</body>
+</html>

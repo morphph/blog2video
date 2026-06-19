@@ -1,0 +1,46 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 40.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_12.html",
+ "topbarIndex": "[12/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 6.553,
+   "text": "最后一招：一旦这个循环稳定了、有 Skill 撑着了，你就不用再手动去启动它了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.684,
+   "localDuration": 12.311,
+   "text": "给 Kimi 一个触发条件——一个时间表、一个新文件落盘、或者一个竞品的定价页面——让它主动把整套循环跑完，只把交付物和异常浮出来给你看。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 19.14,
+   "localDuration": 2.429,
+   "text": "竞品监控就是最干净的例子。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.569,
+   "localDuration": 2.242,
+   "text": "第一次你手动搭、手动核。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.811,
+   "localDuration": 9.904,
+   "text": "等它变成一个后台 Agent，它会每周并行检查每一个竞品，然后在零边际时间成本下，往你收件箱里丢一份简报。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.864,
+   "localDuration": 6.123,
+   "text": "循环里唯一剩下的人类，是你设的那个问题，和你对答案做的那个决定。"
+  }
+ ]
+}

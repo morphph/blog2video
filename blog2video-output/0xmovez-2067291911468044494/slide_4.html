@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .kicker { font-size: 28px; color: #F59E0B; font-weight: 700; letter-spacing: 3px; margin-bottom: 20px; }
+    h1 { font-size: 58px; font-weight: 800; line-height: 1.25; margin-bottom: 48px; }
+    h1 .hl { color: #3B82F6; }
+    .list { display: flex; flex-direction: column; gap: 20px; width: 100%; margin-bottom: 44px; }
+    .item { display: flex; align-items: center; gap: 22px; background: #1A1A2E; border: 1px solid rgba(59,130,246,0.3); border-left: 4px solid #3B82F6; border-radius: 12px; padding: 26px 28px; text-align: left; }
+    .item .n { font-size: 44px; font-weight: 800; color: #3B82F6; min-width: 54px; }
+    .item .q { font-size: 34px; font-weight: 600; line-height: 1.35; }
+    .note { background: #1A1A2E; border: 1px solid rgba(245,158,11,0.3); border-left: 4px solid #F59E0B; border-radius: 12px; padding: 28px 32px; width: 100%; text-align: left; }
+    .note .big { font-size: 38px; font-weight: 800; line-height: 1.3; }
+    .note .big .y { color: #F59E0B; }
+    .note .meta { font-size: 30px; color: #B0B0CC; margin-top: 14px; }
+    .note .meta b { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">读它，再开跑</div>
+    <h1>先读 <span class="hl">拆解计划</span>，<br>盯住三件事</h1>
+    <div class="list">
+      <div class="item"><div class="n">1</div><div class="q">它理解任务范围了吗？</div></div>
+      <div class="item"><div class="n">2</div><div class="q">Agent 数量配得上任务大小吗？</div></div>
+      <div class="item"><div class="n">3</div><div class="q">产出计划对得上你要的吗？</div></div>
+    </div>
+    <div class="note">
+      <div class="big">那 <span class="y">4000 步</span>，是整个 Swarm 的总预算</div>
+      <div class="meta">不是每个 Agent 跑 4000 步 · 300 个一起上，平均每个才约 <b>13 步</b></div>
+    </div>
+  </div>
+</body>
+</html>

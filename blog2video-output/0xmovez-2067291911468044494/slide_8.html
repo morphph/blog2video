@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif; color: #FFFFFF; overflow: hidden; }
+    .slide { width: 100%; height: 100%; padding: 200px 72px 420px 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    h1 { font-size: 60px; font-weight: 800; line-height: 1.25; margin-bottom: 44px; }
+    h1 .hl { color: #10B981; }
+    .arrow { display: flex; align-items: center; justify-content: center; gap: 28px; width: 100%; margin-bottom: 44px; }
+    .t { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.3); border-radius: 12px; padding: 30px 28px; flex: 1; }
+    .t .num { font-size: 70px; font-weight: 800; line-height: 1; }
+    .t.a .num { color: #6B7280; }
+    .t.b .num { color: #10B981; }
+    .t .lab { font-size: 28px; color: #B0B0CC; margin-top: 14px; }
+    .gt { font-size: 56px; color: #F59E0B; font-weight: 800; }
+    .honest { background: #1A1A2E; border: 1px solid rgba(16,185,129,0.3); border-left: 4px solid #10B981; border-radius: 12px; padding: 30px 34px; width: 100%; text-align: left; }
+    .honest .t2 { font-size: 30px; color: #10B981; font-weight: 700; margin-bottom: 14px; }
+    .honest .d { font-size: 34px; line-height: 1.42; }
+    .honest .d b { color: #FFFFFF; font-weight: 800; }
+    .honest .d .dim { color: #B0B0CC; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>存成一个 <span class="hl">Skill</span></h1>
+    <div class="arrow">
+      <div class="t a"><div class="num">20 分钟</div><div class="lab">第一次跑</div></div>
+      <div class="gt">→</div>
+      <div class="t b"><div class="num">30 秒</div><div class="lab">之后每一次</div></div>
+    </div>
+    <div class="honest">
+      <div class="t2">「自我学习」的诚实版本</div>
+      <div class="d">模型 <b>没有偷偷重训权重</b>。变聪明的是模型周围那套系统——<span class="dim">你的 Skill 库每个项目后都厚一点，竞争对手一礼拜抄不走。</span></div>
+    </div>
+  </div>
+</body>
+</html>

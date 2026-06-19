@@ -1,0 +1,52 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 43.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_9.html",
+ "topbarIndex": "[09/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.242,
+   "text": "Skill 抓的是流程。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.231,
+   "localDuration": 2.43,
+   "text": "还有一招,抓的是领域本身。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.813,
+   "localDuration": 14.575,
+   "text": "把你最好的作品传进去——一份谈成了的方案、一份打磨过的报告、一套漂亮的幻灯片——Kimi 会把它的结构和文风指纹,也存成一个 Skill,以后每次 Swarm 自动套用。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.537,
+   "localDuration": 1.437,
+   "text": "复利就长在这里。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.974,
+   "localDuration": 12.755,
+   "text": "你喂进去的每一份 PDF、每一段记录、每一张表格，都会变成那 300 个并行 Agent 可以扎根的上下文,而不是退回去靠通用的训练数据瞎猜。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.865,
+   "localDuration": 3.213,
+   "text": "你喂得越多，之后每一次跑得就越准。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 37.078,
+   "localDuration": 5.859,
+   "text": "报告会慢慢不再有那股「通用 AI 味」，开始读起来像你的活儿。"
+  }
+ ]
+}

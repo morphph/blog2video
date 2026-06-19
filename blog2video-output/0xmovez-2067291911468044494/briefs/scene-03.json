@@ -1,0 +1,76 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 65.867,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/0xmovez-2067291911468044494/slide_3.html",
+ "topbarIndex": "[03/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 9.2,
+   "text": "大多数人一听到「300 个 Agent」，本能就是甩一句话过去——「帮我研究一下健身 App 市场」——然后期待奇迹。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 9.372,
+   "localDuration": 3.279,
+   "text": "这是烧钱最快、产出最垃圾的方式。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.651,
+   "localDuration": 6.559,
+   "text": "一句话，等于把所有决定权都交给了 Swarm，而它八成会决定错。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.38,
+   "localDuration": 5.914,
+   "text": "正确的做法，是把这群 Agent 当成承包商，不是许愿池里的神灯。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.464,
+   "localDuration": 10.005,
+   "text": "你得写清楚：要收集什么、什么样的结果才算数、允许用哪些来源、产出长什么格式、遇到矛盾怎么办。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 35.469,
+   "localDuration": 4.349,
+   "text": "这份东西，我们叫它 spec，需求说明。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 39.972,
+   "localDuration": 6.251,
+   "text": "这里有个最容易被忽略的点：怎么把任务拆成 300 个 Agent，是 Kimi 自己决定的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 46.38,
+   "localDuration": 5.089,
+   "text": "你不用像在别的框架里那样，手动搭 Agent、连线、定结构。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 51.469,
+   "localDuration": 4.749,
+   "text": "你只描述目标，这群 Agent 自己去搭那张组织架构图。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 56.388,
+   "localDuration": 4.145,
+   "text": "这份 spec 是整套循环里杠杆最大的一件东西。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 60.533,
+   "localDuration": 5.182,
+   "text": "因为到后面那一步，它会变成你那个可复用 Skill 的种子。"
+  }
+ ]
+}

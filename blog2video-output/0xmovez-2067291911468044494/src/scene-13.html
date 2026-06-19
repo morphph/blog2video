@@ -78,7 +78,7 @@
           </div>
         </div>
 
-        <div class="thick lev-thick">模型没变。<span class="dim">是你在它周围搭的那套系统,在一点点变厚。</span></div>
+        <div class="thick lev-thick">模型没变。<span class="dim lev-thick2">是你在它周围搭的那套系统,在一点点变厚。</span></div>
 
         <div class="slogan lev-slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
         <div class="endchip signoff lev-signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
@@ -146,8 +146,9 @@
     D2.enter(tl, R+'.lev-l2', 58.2, {y:16, d:.42, ease:'power3.out'});  /* 留下点东西:句子高潮处 */
     D2.blink(tl, R+'.cblink', 59.4, 11);
 
-    /* sub-11/12 (66–68s):模型没变,系统变厚 */
+    /* sub-11/12 (66–68s):模型没变 → 系统变厚(两拍,次级揭示填长 hold) */
     D2.enter(tl, R+'.lev-thick', 66.8, {y:16, d:.38, ease:'power3.out'});
+    tl.from(R+'.lev-thick2',{opacity:0,duration:.4,ease:'power2.out'},67.9);
 
     /* sub-16 (87.7s):标语 + 落款(sub-13/14/15 维持 thick + breath) */
     D2.enter(tl, R+'.lev-slogan', 87.7, {y:16, d:.42, ease:'expo.out'});

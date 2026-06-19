@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有(cta 尾卡:居中 end card)—— */
+[data-composition-id='s14'] .content{align-items:center;justify-content:center;text-align:center;padding:380px 72px 380px}
+[data-composition-id='s14'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:168px;line-height:1;color:#edebe6;letter-spacing:.01em;display:inline-flex;align-items:flex-end;justify-content:center}
+[data-composition-id='s14'] .logo .cur{vertical-align:0;margin-left:18px;width:34px;height:118px}
+[data-composition-id='s14'] .subline{margin-top:44px;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:40px;letter-spacing:.12em;color:#8a8a85}
+[data-composition-id='s14'] .subline .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s14'] .handle{margin-top:70px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[14/13]</div>
+    </div>
+
+    <div class="content">
+      <div class="logo">精读AI<span class="cur ccur"></span></div>
+      <div class="subline">LOOP ENGINEERING <span class="em">· 完</span></div>
+      <div class="endchip handle"><span class="dot"></span><span class="lab">// AI 世界很吵,精读一篇 · @0xMovez</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.logo', .35, {y:22, d:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.subline', .9, {y:14, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.handle', 1.25, {y:12, d:.36, ease:'power2.out'});
+    D2.blink(tl, R+'.ccur', 1.5, 5);
+    D2.breath(tl, R+'.content', 5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

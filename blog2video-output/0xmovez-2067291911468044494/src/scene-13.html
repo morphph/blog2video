@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有(收官长场景:DeepSeek 指纹回拉 + 收束金句) —— */
+[data-composition-id='s13'] .content{gap:0}
+[data-composition-id='s13'] .m1{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+[data-composition-id='s13'] .m2{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+
+/* 第一幕:300 Agent 数据条(并行跑) */
+[data-composition-id='s13'] .swarm{margin-top:26px;display:flex;align-items:baseline;gap:20px;font-family:'JetBrains Mono',monospace}
+[data-composition-id='s13'] .swarm .big{font-weight:700;font-size:96px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s13'] .swarm .lab{font-weight:500;font-size:34px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s13'] .swarm .lab b{color:#edebe6;font-weight:700}
+
+/* 第一幕:DeepSeek 指纹卡(终端) */
+[data-composition-id='s13'] .fp{margin-top:30px}
+[data-composition-id='s13'] .fp-line{font-weight:600;font-size:40px;line-height:1.42;color:#edebe6}
+[data-composition-id='s13'] .fp-line .dim{color:#8a8a85}
+[data-composition-id='s13'] .ds{margin-top:26px;display:flex;align-items:center;gap:18px}
+[data-composition-id='s13'] .ds .arrow{font-family:'JetBrains Mono',monospace;font-size:40px;color:#8a8a85}
+[data-composition-id='s13'] .ds .name{font-weight:900;font-size:72px;color:#ccff4d;letter-spacing:.01em}
+
+/* 第一幕:reframe 问题切换 */
+[data-composition-id='s13'] .reframe{margin-top:30px;font-weight:600;font-size:42px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s13'] .reframe .em{color:#edebe6;font-weight:700}
+
+/* 第二幕:收束金句 term 大字 */
+[data-composition-id='s13'] .lev .term-l2{font-size:54px;line-height:1.34}
+[data-composition-id='s13'] .lev .term-l2 .em{color:#ccff4d}
+[data-composition-id='s13'] .thick{margin-top:26px;font-weight:700;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s13'] .thick .dim{color:#8a8a85;font-weight:500}
+[data-composition-id='s13'] .slogan{margin-top:28px;font-weight:900;font-size:46px;color:#edebe6;line-height:1.4}
+[data-composition-id='s13'] .slogan .em{color:#ccff4d}
+[data-composition-id='s13'] .signoff{margin-top:22px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="93.8" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 收官<span class="b-cur"></span></div>
+      <div class="idx">[13/13]</div>
+    </div>
+
+    <div class="content top">
+      <!-- ===== 第一幕:DeepSeek 指纹回拉 ===== -->
+      <div class="m1">
+        <div class="kicker">// 往后退一步<span class="acc">看全局</span></div>
+        <div class="h1 xl m1-h1" style="margin-top:18px">这个指纹,<br>我们<span class="em">见过一次</span></div>
+
+        <div class="swarm">
+          <span class="big" id="swarm-n">300</span>
+          <span class="lab">个 <b>Agent</b> 并行跑<br>每喂一次,系统层面更聪明一点</span>
+        </div>
+
+        <div class="bracket fp">
+          <div class="fp-line"><span class="dim">一个开源发布,</span>重新定义了封闭前沿<br>以为自己拥有的东西 —— 整个领域一夜重新校准</div>
+          <div class="ds"><span class="arrow">›</span><span class="name fp-name">DeepSeek</span></div>
+        </div>
+
+        <div class="reframe">还在争论「哪个模型赢了」,是在回答一个<br><span class="em">已经不再重要</span>的问题</div>
+      </div>
+
+      <!-- ===== 第二幕:收束金句 + 标语(初始隐藏,53s 后揭示) ===== -->
+      <div class="m2" style="display:none">
+        <div class="kicker m2-kick">// 如果只带走<span class="acc">一句话</span></div>
+
+        <div class="term lev" style="margin-top:22px">
+          <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">leverage: ~</span></div>
+          <div class="term-body" style="padding:38px 40px 42px">
+            <div class="term-l1"><span class="p">$</span>真正的杠杆,从来不在哪个模型更聪明</div>
+            <div class="term-l2 lev-l2">而在让一次运行<span class="em">留下点东西</span>,让明天那群 Agent 比今天的更聪明<span class="cur sm cblink"></span></div>
+          </div>
+        </div>
+
+        <div class="thick lev-thick">模型没变。<span class="dim">是你在它周围搭的那套系统,在一点点变厚。</span></div>
+
+        <div class="slogan lev-slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+        <div class="endchip signoff lev-signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+      </div>
+    </div>
+
+    <!-- ===== 字幕(brief.subtitles 逐条,本地时间) ===== -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.943" data-track-index="5"><div class="sub-inner">往后退一步看<span class="sub-k">全局</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.083" data-duration="13.971" data-track-index="5"><div class="sub-inner">当那些封闭的实验室还在一次次发布「更聪明一点的聊天机器人」时，一个开源模型,已经在并行跑 <span class="sub-k">300 个 Agent</span>了——而且你每喂它一次,它就在系统层面更聪明一点。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.195" data-duration="2.861" data-track-index="5"><div class="sub-inner">这个<span class="sub-k">指纹</span>，我们其实已经见过一次。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.056" data-duration="7.509" data-track-index="5"><div class="sub-inner">一个开源的发布，<span class="sub-k">重新定义了封闭前沿</span>以为自己拥有的东西，然后整个领域一夜之间重新校准。</div></div>
+    <div id="sub-5" class="clip sub" data-start="26.565" data-duration="2.324" data-track-index="5"><div class="sub-inner">那次叫 <span class="sub-k">DeepSeek</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="29.047" data-duration="5.484" data-track-index="5"><div class="sub-inner">一个长在开源权重上的、会自我学习的 <span class="sub-k">Swarm</span>，是同一个形状。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.699" data-duration="6.587" data-track-index="5"><div class="sub-inner">那些还在争论「哪个模型赢了」的人，是在回答一个<span class="sub-k">已经不再重要</span>的问题。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.431" data-duration="3.614" data-track-index="5"><div class="sub-inner">现在真正的问题，不是<span class="sub-k">哪个模型最聪明</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="45.045" data-duration="8.233" data-track-index="5"><div class="sub-inner">而是你能同时跑多少个、谁在检查它们的活、以及你的这套配置，今天有没有<span class="sub-k">比昨天更锋利</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="53.419" data-duration="13.205" data-track-index="5"><div class="sub-inner">所以,如果你今天只带走一句话,我希望是这句：真正的杠杆,从来不在哪个模型更聪明,而在你能不能让一次运行<span class="sub-k">留下点东西</span>,让明天那群 Agent 比今天的更聪明。</div></div>
+    <div id="sub-11" class="clip sub" data-start="66.775" data-duration="1.071" data-track-index="5"><div class="sub-inner"><span class="sub-k">模型没变</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="67.846" data-duration="4.286" data-track-index="5"><div class="sub-inner">是你在它周围搭的那套系统,在<span class="sub-k">一点点变厚</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="72.283" data-duration="5.153" data-track-index="5"><div class="sub-inner">大多数人读完这篇,还会继续把 Kimi 当<span class="sub-k">聊天框</span>用。</div></div>
+    <div id="sub-14" class="clip sub" data-start="77.436" data-duration="3.567" data-track-index="5"><div class="sub-inner">少数人,会在这周就把<span class="sub-k">这个循环</span>搭起来。</div></div>
+    <div id="sub-15" class="clip sub" data-start="81.003" data-duration="6.54" data-track-index="5"><div class="sub-inner">搭起来,核查它,蒸馏它,然后看着它每跑一次,都<span class="sub-k">更便宜、更锋利</span>一点。</div></div>
+    <div id="sub-16" class="clip sub" data-start="87.691" data-duration="3.779" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="91.47" data-duration="1.322" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* ===== 第一幕:DeepSeek 指纹回拉(0–53s) ===== */
+    D2.enter(tl, R+'.m1 .kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.m1-h1', .7, {y:20, d:.44, ease:'expo.out'});
+
+    /* sub-2 (2.08s):300 Agent swarm 数据条 + count-up */
+    D2.enter(tl, R+'.swarm', 2.6, {y:18, d:.4, ease:'power3.out'});
+    D2.countUp(tl, R+'#swarm-n', 3.0, 0, 300, 1.6, {});
+
+    /* sub-3/4 (16–19s):指纹卡入场,DeepSeek 名字晚到(sub-5, 26.5s) */
+    D2.enter(tl, R+'.fp', 16.4, {y:20, d:.45, ease:'expo.out'});
+    tl.from(R+'.fp .fp-line',{opacity:0,duration:.4,ease:'power2.out'},16.7);
+    D2.enter(tl, R+'.fp-name', 26.6, {x:-18, d:.4, ease:'power3.out'});  /* 次级揭示:DeepSeek 在 sub-5 才点亮 */
+
+    /* sub-7/8/9 (34–45s):reframe 问题切换 */
+    D2.enter(tl, R+'.reframe', 34.9, {y:16, d:.4, ease:'power3.out'});
+
+    /* ===== 第二幕:53s 切到收束金句(m1 不退,m2 揭示叠在其上;但 m1 内容已排满,改用 set 切换可见性) ===== */
+    /* 53s:把第一幕淡出、第二幕淡入(章节切换,允许首屏退场以腾出版面) */
+    tl.to(R+'.m1',{opacity:0,y:-24,duration:.5,ease:'power2.in'},52.6);
+    tl.set(R+'.m1',{display:'none'},53.1);
+    tl.set(R+'.m2',{display:'flex'},53.1);
+    tl.from(R+'.m2',{opacity:0,y:20,duration:.5,ease:'power3.out'},53.2);
+
+    /* sub-10 (53.4s):金句 term */
+    D2.enter(tl, R+'.m2-kick', 53.4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.lev', 54.2, {y:22, d:.46, ease:'expo.out'});
+    tl.from(R+'.lev .term-bar',{opacity:0,duration:.3,ease:'power1.out'},54.4);
+    tl.from(R+'.lev .term-l1',{opacity:0,x:-16,duration:.34,ease:'power2.out'},54.9);
+    D2.enter(tl, R+'.lev-l2', 58.2, {y:16, d:.42, ease:'power3.out'});  /* 留下点东西:句子高潮处 */
+    D2.blink(tl, R+'.cblink', 59.4, 11);
+
+    /* sub-11/12 (66–68s):模型没变,系统变厚 */
+    D2.enter(tl, R+'.lev-thick', 66.8, {y:16, d:.38, ease:'power3.out'});
+
+    /* sub-16 (87.7s):标语 + 落款(sub-13/14/15 维持 thick + breath) */
+    D2.enter(tl, R+'.lev-slogan', 87.7, {y:16, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.lev-signoff', 91.5, {y:12, d:.32, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.083],['#sub-3',16.195],['#sub-4',19.056],['#sub-5',26.565],['#sub-6',29.047],['#sub-7',34.699],['#sub-8',41.431],['#sub-9',45.045],['#sub-10',53.419],['#sub-11',66.775],['#sub-12',67.846],['#sub-13',72.283],['#sub-14',77.436],['#sub-15',81.003],['#sub-16',87.691],['#sub-17',91.47]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 93.8, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

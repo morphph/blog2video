@@ -40,6 +40,29 @@ node .claude/skills/blog2video/scripts/build-scene.mjs "$OUT" all
 
 封面单独补截：`node .claude/skills/blog2video/scripts/shoot-cover.mjs "$OUT" "$N"`
 
+## 云端 / VPS：长时渲染（detached + 断点续渲）
+
+> 云端机（如 VPS `loreai`，~7.6GB RAM + 4GB swap，2 vCPU）上一支 ~9 分钟片渲染要 **~50–90 分钟**（低内存模式 ~5–8× 实时）。**不要在前台单条命令里跑** —— Claude Code 的 Bash 工具单次上限 10 分钟，云端 headless 会话本身也可能有寿命，会半路超时。
+
+必须 **detached 后台跑**，让渲染脱离会话存活；`render-d2.sh` **可断点续渲**（已渲的 clip 自动 skip），断了原样再跑即从断点继续，不会白渲：
+
+```bash
+cd ~/blog2video
+OUT=blog2video-output/<slug>; N=1
+setsid bash .claude/skills/blog2video/scripts/render-d2.sh "$OUT" "$N" \
+  > "$OUT/render.log" 2>&1 < /dev/null &
+echo "rendering PID=$! → tail -f $OUT/render.log"
+# 看进度：tail -f $OUT/render.log   ·   产物就绪判据：ls -la $OUT/video_${N}.mp4
+# 中途断了（会话掉/连接断）：原样再跑上面那条 → 自动跳过已渲场景、从断点续
+```
+（tmux / pm2 亦可，重点是脱离 SSH/会话。）
+
+注意事项（云端硬约束，见 SKILL.md + `project_vps_d2_cloud_render` memory）：
+- **OOM 防护**：保证有 swap（`loreai` 已配 4GB）；开渲前 `free -h` 看可用内存，别同时跑其他吃内存的活。
+- **超时**：逐场景渲每段 <90s，避开 hyperframes 的 >600s encode-kill；整片 ~1 小时靠 detached + 续渲扛过会话寿命。
+- **磁盘**：一支片中间产物 ~130MB；投递后清 `clips/ renders/ scenes/ src/` 等中间产物，避免囤积。
+- 跑**整条 /blog2video**（含 scene 生成子 agent）时，子 agent 批量保持 2–3 个并发，避免并发 hyperframes 快照内存叠加。
+
 ## Fallback：Remotion 渲染（仅 d2 不可用时）
 
 前置：`<output-dir>/video_N_config.json` 存在（Remotion slide 数据，由 `/blog2video-slides` 生成）。

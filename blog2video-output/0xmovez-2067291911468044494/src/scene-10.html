@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .step{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.04em;margin-bottom:14px}
+[data-composition-id='s10'] .step .acc{color:#ccff4d}
+[data-composition-id='s10'] .fileline{margin-top:26px;display:flex;align-items:center;gap:16px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85}
+[data-composition-id='s10'] .fileline .auto{font-size:24px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:2px 12px}
+[data-composition-id='s10'] .tlh{margin-top:32px}
+[data-composition-id='s10'] .pcore{margin-top:30px}
+[data-composition-id='s10'] .pcore .lead .moat{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="51.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[10/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="step k-top">// STEP 08 · <span class="acc">把反馈烤成永久规则</span></div>
+      <div class="h2 hd" style="margin-top:16px">第五步<span class="dim" style="color:#8a8a85">抓住错误</span>,第八步<span class="em">让它再也不犯</span></div>
+
+      <div class="fileline">
+        <span>修改清单</span>
+        <span style="color:#ccff4d">→</span>
+        <span class="code">CONSTRAINTS.md</span>
+        <span class="auto">每次开工自动读</span>
+      </div>
+
+      <div class="step tlh">// 循环从自己的失败里学习</div>
+      <div class="tl" style="margin-top:14px">
+        <div class="tl-row r0"><div class="yr">RUN 1</div><div class="wt">第一次被抓到的<span class="code">偏差</span></div></div>
+        <div class="tl-row r1"><div class="yr">RUN 2</div><div class="wt">蒸馏成一条<span class="code">硬规则</span></div></div>
+        <div class="tl-row r2 now"><div class="yr">RUN N</div><div class="wt">能自己执行自己的活文档<span class="badge">要抓的越来越少</span></div></div>
+      </div>
+
+      <div class="bracket pcore">
+        <div class="lead">把关越来越闲 <span class="em">≠</span> 浪费 —— 错误正被<span class="dim">提前消灭</span>,系统自己加固自己。<span class="moat">护城河,恰恰长在这里。</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="1.829" data-track-index="5"><div class="sub-inner">第五步抓住了一个<span class="sub-k">错误</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.844" data-duration="3.992" data-track-index="5"><div class="sub-inner">第八步，是确保这群 Agent <span class="sub-k">再也不犯</span>这个错。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.991" data-duration="5.787" data-track-index="5"><div class="sub-inner">把那个诚实模型给出的<span class="sub-k">修改清单</span>拿过来，别只是把这一次的产出补好。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.778" data-duration="6.907" data-track-index="5"><div class="sub-inner">要把这个教训，烤进一个<span class="sub-k">项目级的约束文件</span>里，让 Kimi 每次开工自动读它。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.843" data-duration="3.055" data-track-index="5"><div class="sub-inner">这就是循环在从自己的<span class="sub-k">失败</span>里学习。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.898" data-duration="4.391" data-track-index="5"><div class="sub-inner">第一次被抓到的偏差，到第二次就成了一条<span class="sub-k">硬规则</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.439" data-duration="6.359" data-track-index="5"><div class="sub-inner">跑过几个项目之后，你这份约束文件，会变成一份能自己执行自己的<span class="sub-k">活文档</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.798" data-duration="4.675" data-track-index="5"><div class="sub-inner">而那个核查的关卡，每跑一次要抓的东西，就<span class="sub-k">越来越少</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.635" data-duration="4.63" data-track-index="5"><div class="sub-inner">我知道你可能会想：把关的越来越闲，<span class="sub-k">不是浪费吗？</span></div></div>
+    <div id="sub-10" class="clip sub" data-start="42.265" data-duration="1.007" data-track-index="5"><div class="sub-inner"><span class="sub-k">正好相反。</span></div></div>
+    <div id="sub-11" class="clip sub" data-start="43.272" data-duration="5.233" data-track-index="5"><div class="sub-inner">它越闲，说明错误正在被<span class="sub-k">提前消灭</span>，系统在自己加固自己。</div></div>
+    <div id="sub-12" class="clip sub" data-start="48.505" data-duration="3.02" data-track-index="5"><div class="sub-inner"><span class="sub-k">护城河</span>,恰恰就长在这个过程里。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.hd', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.fileline', 6.2, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.fileline .auto', 12.0, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.tlh', 18.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 21.9, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 24.3, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r2', 27.0, {x:-22, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .badge', 33.0, {y:8, opacity:0, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.pcore', 37.8, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.pcore .moat', 48.6, {y:10, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',1.844],['#sub-3',5.991],['#sub-4',11.778],['#sub-5',18.843],['#sub-6',21.898],['#sub-7',26.439],['#sub-8',32.798],['#sub-9',37.635],['#sub-10',42.265],['#sub-11',43.272],['#sub-12',48.505]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 51.667, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

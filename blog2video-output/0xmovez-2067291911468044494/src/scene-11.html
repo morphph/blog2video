@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .collapse{display:flex;align-items:stretch;gap:22px;width:100%;margin-top:40px}
+[data-composition-id='s11'] .rb{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 30px 32px;display:flex;flex-direction:column}
+[data-composition-id='s11'] .rb.first{border-left:4px solid #2a2a2c}
+[data-composition-id='s11'] .rb.fast{border-color:rgba(95,211,232,.5);border-left:4px solid #5fd3e8}
+[data-composition-id='s11'] .rb .lbl{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;letter-spacing:.05em;color:#8a8a85}
+[data-composition-id='s11'] .rb.fast .lbl{color:#5fd3e8}
+[data-composition-id='s11'] .rb .big{margin-top:14px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:78px;line-height:1;font-variant-numeric:tabular-nums;color:#edebe6}
+[data-composition-id='s11'] .rb.fast .big{color:#5fd3e8}
+[data-composition-id='s11'] .rb .sub{margin-top:14px;font-weight:500;font-size:26px;line-height:1.4;color:#8a8a85;position:static;left:auto;right:auto;bottom:auto;z-index:auto;display:block;justify-content:flex-start}
+[data-composition-id='s11'] .arr{align-self:center;font-family:'JetBrains Mono',monospace;font-size:54px;font-weight:700;color:#ccff4d;flex-shrink:0}
+[data-composition-id='s11'] .seed{margin-top:30px;font-weight:600;font-size:36px;line-height:1.45;color:#edebe6}
+[data-composition-id='s11'] .seed .dim{color:#8a8a85;font-weight:500}
+[data-composition-id='s11'] .punch{margin-top:34px;font-weight:700;font-size:40px;line-height:1.42;color:#edebe6}
+[data-composition-id='s11'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="46.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[11/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// REPLAY · <span class="acc">复利落到发票上</span></div>
+      <div class="h1" style="margin-top:18px">复跑成本 <span class="em">塌缩</span></div>
+
+      <div class="collapse">
+        <div class="rb first">
+          <div class="lbl">RUN #1</div>
+          <div class="big" id="n1">20 分钟</div>
+          <div class="sub">写完整 spec · 过一遍核查</div>
+        </div>
+        <div class="arr">→</div>
+        <div class="rb fast">
+          <div class="lbl">RUN #50</div>
+          <div class="big" id="n50">30 秒</div>
+          <div class="sub">一句提示词 · 对着 Skill 跑</div>
+        </div>
+      </div>
+
+      <div class="seed">第二次<span class="dim">不是从零开始</span>——从攒下的 <span class="code">Skill</span>、领域知识、<span class="code">CONSTRAINTS.md</span> 起步。</div>
+
+      <div class="punch">产出还<span class="em">更锋利</span>,它继承了前面每一次的修正。</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="1.816" data-track-index="5"><div class="sub-inner">现在,<span class="sub-k">回报</span>来了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.988" data-duration="2.288" data-track-index="5"><div class="sub-inner">第二次跑,<span class="sub-k">不是从零开始</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.276" data-duration="6.482" data-track-index="5"><div class="sub-inner">它从你在前面几步攒下的 <span class="sub-k">Skill</span>、领域知识、还有那份约束文件开始。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.758" data-duration="3.622" data-track-index="5"><div class="sub-inner">同一套流程,新的文件,只要<span class="sub-k">一点点设置</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.552" data-duration="5.148" data-track-index="5"><div class="sub-inner">这就是「复利」从一个口号,变成发票上<span class="sub-k">一个实数</span>的时刻。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.844" data-duration="5.128" data-track-index="5"><div class="sub-inner">第一次做竞品监控,要写完整的 <span class="sub-k">spec</span>,还要过一遍核查。</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.972" data-duration="6.593" data-track-index="5"><div class="sub-inner">到第四次,它就是一句 <span class="sub-k">30 秒</span>的提示词,对着存好的 Skill 跑一下。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.565" data-duration="4.212" data-track-index="5"><div class="sub-inner">而且产出更锋利,因为它继承了前面<span class="sub-k">每一次的修正</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.936" data-duration="3.704" data-track-index="5"><div class="sub-inner">第一次 20 分钟,第五十次 <span class="sub-k">30 秒</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.64" data-duration="6.297" data-track-index="5"><div class="sub-inner">这个落差,就是你为什么要去<span class="sub-k">搭一个循环</span>、而不是写一句提示词的全部理由。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    // RUN #1 卡 (sub-2/3 攒下的资产)
+    D2.enter(tl, R+'.rb.first', 2.0, {x:-22, d:.4, ease:'power3.out'});
+    // RUN #50 卡 + 箭头 (sub-9 落差揭示时再点亮 cyan;箭头先到位)
+    D2.enter(tl, R+'.arr', 4.6, {opacity:0, y:0, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.rb.fast', 36.3, {x:22, d:.42, ease:'expo.out'});
+    // seed:从攒下的资产起步 (sub-3)
+    D2.enter(tl, R+'.seed', 5.2, {y:16, d:.4, ease:'power3.out'});
+    // punch:产出更锋利 (sub-8)
+    D2.enter(tl, R+'.punch', 31.8, {y:14, d:.36, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',1.988],['#sub-3',4.276],['#sub-4',10.758],['#sub-5',14.552],['#sub-6',19.844],['#sub-7',24.972],['#sub-8',31.565],['#sub-9',35.936],['#sub-10',39.64]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 46.1, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

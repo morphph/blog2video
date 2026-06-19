@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .taglist{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s12'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:24px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:5px 14px}
+[data-composition-id='s12'] .pill{display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:6px 16px;letter-spacing:.03em}
+[data-composition-id='s12'] .close{margin-top:34px;font-weight:600;font-size:38px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s12'] .close .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="40.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[12/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第十步 · 升级成后台 <span class="acc">AGENT</span></div>
+      <div class="h1 hd" style="margin-top:18px">不用再 <span class="em">手动启动</span> 它</div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">给它一个<span class="code">触发条件</span></div>
+          <div class="taglist"><span class="tg">一个时间表</span><span class="tg">新文件落盘</span><span class="tg">竞品定价页</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">让它主动跑完<span class="code">整套循环</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">只浮出<span class="code">交付物</span> + <span class="code">异常</span></div>
+        </div></div>
+      </div>
+
+      <div class="ex" style="margin-top:32px;display:flex;align-items:center;gap:18px">
+        <span class="pill">竞品监控</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:26px;color:#ccff4d">每周 · 零边际成本</span>
+      </div>
+
+      <div class="close">循环里唯一剩下的人类,是你设的那个<span class="em">问题</span>,和你做的那个<span class="em">决定</span>。</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.553" data-track-index="5"><div class="sub-inner">最后一招:一旦这个循环稳定了、有 Skill 撑着了,你就不用再<span class="sub-k">手动去启动</span>它了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.684" data-duration="12.311" data-track-index="5"><div class="sub-inner">给 Kimi 一个<span class="sub-k">触发条件</span>——一个时间表、一个新文件落盘、或者一个竞品的定价页面——让它主动把整套循环跑完,只把交付物和异常浮出来给你看。</div></div>
+    <div id="sub-3" class="clip sub" data-start="19.14" data-duration="2.429" data-track-index="5"><div class="sub-inner"><span class="sub-k">竞品监控</span>就是最干净的例子。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.569" data-duration="2.242" data-track-index="5"><div class="sub-inner">第一次你<span class="sub-k">手动搭、手动核</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.811" data-duration="9.904" data-track-index="5"><div class="sub-inner">等它变成一个后台 Agent,它会每周并行检查每一个竞品,然后在<span class="sub-k">零边际时间成本</span>下,往你收件箱里丢一份简报。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.864" data-duration="6.123" data-track-index="5"><div class="sub-inner">循环里唯一剩下的人类,是你设的那个<span class="sub-k">问题</span>,和你对答案做的那个决定。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.hd', .8, {y:20, d:.42, ease:'expo.out'});
+    /* 02→03 行先建结构(触发条件标签晚到),01 行在 sub-2 触发条件那句出现 */
+    D2.enter(tl, R+'.r1', 6.9, {x:-24, ease:'power3.out'});
+    D2.stagger(tl, R+'.r1 .taglist .tg', 8.6, {y:12, step:.16, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 13.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 16.2, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.ex', 23.9, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.close', 34.0, {y:18, d:.4, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.684],['#sub-3',19.14],['#sub-4',21.569],['#sub-5',23.811],['#sub-6',33.864]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 40.133, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Stanford STORM Method: How to Make Claude Research Like a PhD in Minutes",
+    "title_zh": "斯坦福 STORM：4 个提示词压缩 40 小时",
+    "word_count": 2555,
+    "slug": "heynavtoor-2067194761446920264"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇围绕同一个 thesis 展开——单 prompt 拿到的是多数派叙事，知识住在 5 个对抗视角的冲突里；4 步法环环相扣，拆开任何一步都会塌缩论证。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "4 个 prompt 把 Claude 变 PhD"
+      }
+    ]
+  }
+}

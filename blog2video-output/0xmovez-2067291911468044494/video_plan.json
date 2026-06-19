@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8",
+    "title_zh": "300 个 Agent 跑一遍，下一遍它就更聪明了？",
+    "word_count": 3908,
+    "slug": "0xmovez-2067291911468044494"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全片是一条连贯论证——10 步都在支撑同一个 thesis（让一次运行沉淀成 skill，使下次更聪明的复利循环），拆开会割裂论证，长度（~12 分钟）也在单片合理区间内。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "300 个 Agent 跑一遍，下一遍它就更聪明了？"
+      }
+    ]
+  }
+}

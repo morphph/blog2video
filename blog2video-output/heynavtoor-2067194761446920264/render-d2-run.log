@@ -1,0 +1,34 @@
+=== d2 render: heynavtoor-2067194761446920264 · 11 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 23.833  data= 23.833  Δ=+0.000
+  scene-02  clip= 60.800  data= 60.767  Δ=+0.033
+  scene-03  clip= 65.100  data= 65.100  Δ=+0.000
+  scene-04  clip= 52.000  data= 52.000  Δ=+0.000
+  scene-05  clip= 64.200  data= 64.167  Δ=+0.033
+  scene-06  clip= 61.900  data= 61.900  Δ=+0.000
+  scene-07  clip= 82.833  data= 82.833  Δ=+0.000
+  scene-08  clip= 83.100  data= 83.100  Δ=+0.000
+  scene-09  clip= 63.000  data= 62.967  Δ=+0.033
+  scene-10  clip= 38.200  data= 38.200  Δ=+0.000
+  scene-11  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 599.967s
+=== concat → silent master ===
+[out#0/mp4 @ 0x64ca215b87c0] video:37274kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.193448%
+size=   37346kB time=00:09:59.93 bitrate= 510.0kbits/s speed=2.83e+03x    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+size=   47625kB time=00:09:59.93 bitrate= 650.3kbits/s speed=49.9x    
+[aac @ 0x5fdf6723fe80] Qavg: 65504.637
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=599.966667
+audio_dur=594.036000
+-rw-rw-r-- 1 ubuntu ubuntu 48767785 Jun 19 10:13 video_1.mp4
+✓ 交付片: /home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/video_1_cover_photo.png
+  源: /home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/cover_photo.html

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .doctags{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s09'] .doctags .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 13px;letter-spacing:.02em}
+[data-composition-id='s09'] .compound{margin-top:34px;width:100%}
+[data-composition-id='s09'] .compound .ct{font-weight:700;font-size:40px;color:#edebe6;line-height:1.3}
+[data-composition-id='s09'] .compound .ct .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s09'] .compound .cd{margin-top:12px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s09'] .compound .cd .feed{color:#5fd3e8;font-weight:600}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="43.067" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[09/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第七步 · <span class="acc">Document-to-Skill</span></div>
+      <div class="h1 k-h1" style="margin-top:18px">把你的好文档,<span class="em">喂进去当知识</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">把你最好的作品传进去</div>
+          <div class="doctags"><span class="tg">谈成的方案</span><span class="tg">打磨过的报告</span><span class="tg">漂亮的幻灯片</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">Kimi 抓它的结构与文风指纹,存成一个 <span class="code">Skill</span></div>
+          <div class="rd">Skill 抓的是流程,这一招抓的是领域本身</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">以后每次 <span class="code">Swarm</span> 自动套用</div>
+        </div></div>
+      </div>
+
+      <div class="bracket compound c-comp" style="margin-top:34px">
+        <div class="ct">每份 <span class="em">PDF</span>、每段记录、每张表格</div>
+        <div class="cd"><span class="feed">300 个并行 Agent</span> 可扎根的上下文 —— 不再靠通用训练数据瞎猜</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.231" data-track-index="5"><div class="sub-inner">Skill 抓的是<span class="sub-k">流程</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.231" data-duration="2.43" data-track-index="5"><div class="sub-inner">还有一招,抓的是<span class="sub-k">领域本身</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.813" data-duration="14.575" data-track-index="5"><div class="sub-inner">把你最好的作品传进去——一份谈成了的方案、一份打磨过的报告、一套漂亮的幻灯片——Kimi 会把它的结构和文风指纹,也存成一个 <span class="sub-k">Skill</span>,以后每次 Swarm 自动套用。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.537" data-duration="1.437" data-track-index="5"><div class="sub-inner"><span class="sub-k">复利</span>就长在这里。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.974" data-duration="12.755" data-track-index="5"><div class="sub-inner">你喂进去的每一份 PDF、每一段记录、每一张表格，都会变成那 <span class="sub-k">300 个并行 Agent</span> 可以扎根的上下文,而不是退回去靠通用的训练数据瞎猜。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.865" data-duration="3.213" data-track-index="5"><div class="sub-inner">你喂得越多，之后每一次跑得就<span class="sub-k">越准</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="37.078" data-duration="5.859" data-track-index="5"><div class="sub-inner">报告会慢慢不再有那股「通用 AI 味」，开始读起来像<span class="sub-k">你的活儿</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* kicker (Skill 抓流程) 早出 sub-1;h1 (领域本身) 在 sub-2 出 */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.k-h1', 2.4, {y:20, d:.42, ease:'expo.out'});
+
+    /* 三步流程逐条 build,贯穿 sub-3 那段 14.5s 长字幕 */
+    D2.enter(tl, R+'.r1', 5.0, {x:-24, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.r1 .doctags .tg', 6.4, {y:12, step:.14, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 9.6, {x:-24, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 11.4, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 16.0, {x:-24, d:.4, ease:'power3.out'});
+
+    /* 复利面板:sub-4「复利就长在这里」整卡入,内部 cd 数据行 sub-5 晚到 */
+    D2.enter(tl, R+'.c-comp', 19.6, {y:22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.c-comp .cd', 21.0, {y:14, d:.38, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.231],['#sub-3',4.813],['#sub-4',19.537],['#sub-5',20.974],['#sub-6',33.865],['#sub-7',37.078]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.067, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

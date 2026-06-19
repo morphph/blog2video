@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .h2{margin-top:18px}
+[data-composition-id='s08'] .packs{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+[data-composition-id='s08'] .pk{font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:8px 18px;letter-spacing:.02em}
+[data-composition-id='s08'] .tlh{margin-top:34px}
+[data-composition-id='s08'] .tl-row .wt b{font-family:'JetBrains Mono',monospace;font-weight:700;color:#edebe6}
+[data-composition-id='s08'] .tl-row.now .wt b{color:#5fd3e8}
+[data-composition-id='s08'] .pr{margin-top:30px}
+[data-composition-id='s08'] .pr .pl{font-weight:600;font-size:36px;line-height:1.4;color:#edebe6}
+[data-composition-id='s08'] .pr .pl .strike{color:#8a8a85}
+[data-composition-id='s08'] .pr .pl2{margin-top:14px;font-weight:600;font-size:36px;line-height:1.4;color:#edebe6}
+[data-composition-id='s08'] .pr .pl2 .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s08'] .pr .det{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.5}
+[data-composition-id='s08'] .pr .det .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s08'] .moat{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="56.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[08/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// STEP 06 · <span class="acc">自我改进的关键</span></div>
+      <div class="h2">把整套流程<br>存成一个 <span class="code">Skill</span></div>
+
+      <div class="packs">
+        <div class="pk pk1">输入格式</div>
+        <div class="pk pk2">有效的 Agent 步骤</div>
+        <div class="pk pk3">产出格式</div>
+      </div>
+
+      <div class="kicker tlh">// 然后,神奇的事情发生了</div>
+      <div class="tl" style="margin-top:16px">
+        <div class="tl-row t-first"><div class="yr">第一次</div><div class="wt">跑完要 <b>20 分钟</b></div></div>
+        <div class="tl-row t-after now"><div class="yr">之后</div><div class="wt">每一次只要 <b>30 秒</b><span class="badge">30s</span></div></div>
+      </div>
+
+      <div class="bracket pr">
+        <div class="pl">模型<span class="strike">并没有</span>在两次运行之间偷偷重训权重</div>
+        <div class="pl2">变聪明的,是模型周围那套<span class="em">系统</span></div>
+        <div class="det">Skill 库每个项目后更厚 <span class="ar">→</span> 之后每群 Swarm 自动套用</div>
+      </div>
+
+      <div class="status moat"><span class="dot"></span>对手一礼拜抄不走 —— 它从你几个月真实运行里长出来</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.846" data-track-index="5"><div class="sub-inner">这一拍，才是让这套循环真正「<span class="sub-k">自我改进</span>」的关键。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.988" data-duration="8.397" data-track-index="5"><div class="sub-inner">一次你以后还会重复的运行结束后，告诉 Kimi：把这整套流程存成一个可复用的 <span class="sub-k">Skill</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.385" data-duration="5.412" data-track-index="5"><div class="sub-inner">输入格式、有效的 <span class="sub-k">Agent 步骤</span>、产出格式，全都包进去。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.956" data-duration="2.652" data-track-index="5"><div class="sub-inner">然后,<span class="sub-k">神奇的事情</span>发生了。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.608" data-duration="3.093" data-track-index="5"><div class="sub-inner">第一次跑，花你 <span class="sub-k">20 分钟</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.701" data-duration="3.536" data-track-index="5"><div class="sub-inner">这之后每一次跑，只要 <span class="sub-k">30 秒</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.388" data-duration="2.893" data-track-index="5"><div class="sub-inner">但我要在这里把一个<span class="sub-k">误会</span>讲清楚。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.281" data-duration="2.893" data-track-index="5"><div class="sub-inner">这才是「自我学习」的<span class="sub-k">诚实版本</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="34.328" data-duration="4.303" data-track-index="5"><div class="sub-inner">模型并没有在你两次运行之间<span class="sub-k">偷偷重训</span>自己的权重。</div></div>
+    <div id="sub-10" class="clip sub" data-start="38.631" data-duration="2.807" data-track-index="5"><div class="sub-inner">变聪明的，是模型周围那套<span class="sub-k">系统</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="41.6" data-duration="3.4" data-track-index="5"><div class="sub-inner">你的 <span class="sub-k">Skill 库</span>在每个项目之后都更厚一点。</div></div>
+    <div id="sub-12" class="clip sub" data-start="45" data-duration="4.731" data-track-index="5"><div class="sub-inner">以后每一群 <span class="sub-k">Swarm</span>，都会自动套用这些已经攒下的 Skill。</div></div>
+    <div id="sub-13" class="clip sub" data-start="49.88" data-duration="2.587" data-track-index="5"><div class="sub-inner">竞争对手一个礼拜<span class="sub-k">抄不走</span>这个库。</div></div>
+    <div id="sub-14" class="clip sub" data-start="52.467" data-duration="4.14" data-track-index="5"><div class="sub-inner">因为它是从你几个月的<span class="sub-k">真实运行</span>里,一点点长出来的。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.4, ease:'expo.out'});
+    /* sub-3: 输入格式 / Agent 步骤 / 产出格式 逐条 */
+    D2.enter(tl, R+'.pk1', 13.5, {y:14, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.pk2', 14.5, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.pk3', 15.6, {y:14, d:.3, ease:'power3.out'});
+    /* sub-4: timeline header */
+    D2.enter(tl, R+'.tlh', 19.0, {y:-10, d:.3, ease:'power2.out'});
+    /* sub-5/6: 第一次 20分钟 → 之后 30秒(末格 now + cyan badge) */
+    D2.enter(tl, R+'.t-first', 21.6, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.t-after', 24.8, {x:-22, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.t-after .badge', 26.2, {y:-8, opacity:0, d:.3, ease:'power2.out'});
+    /* sub-8/9: 诚实版本 → 没有偷偷重训 */
+    D2.enter(tl, R+'.pr', 31.4, {y:20, d:.42, ease:'power3.out'});
+    /* sub-10: 变聪明的是系统(整卡 31.4 已入,这行 38.6 才到) */
+    D2.enter(tl, R+'.pr .pl2', 38.7, {y:12, d:.32, ease:'power2.out'});
+    /* sub-11/12: Skill 库更厚 → Swarm 自动套用 */
+    D2.enter(tl, R+'.pr .det', 41.8, {y:12, d:.34, ease:'power3.out'});
+    /* sub-13/14: 护城河 */
+    D2.enter(tl, R+'.moat', 50.0, {y:14, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.988],['#sub-3',13.385],['#sub-4',18.956],['#sub-5',21.608],['#sub-6',24.701],['#sub-7',28.388],['#sub-8',31.281],['#sub-9',34.328],['#sub-10',38.631],['#sub-11',41.6],['#sub-12',45],['#sub-13',49.88],['#sub-14',52.467]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 56.767, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

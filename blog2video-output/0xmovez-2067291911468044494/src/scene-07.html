@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .term-l2{font-size:58px}
+[data-composition-id='s07'] .q-coral{color:#ff6b5e}
+[data-composition-id='s07'] .term-sub{margin-top:16px;font-weight:600;font-size:32px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s07'] .punch{margin-top:26px;font-weight:700;font-size:38px;line-height:1.42;color:#edebe6}
+[data-composition-id='s07'] .punch .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s07'] .role{width:100%}
+[data-composition-id='s07'] .role .status{font-size:32px}
+[data-composition-id='s07'] .role .em-acid{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="73.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[07/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// VERIFY GATE · 唯一不属于 <span class="acc">Kimi</span> 的一拍</div>
+
+      <div class="term" style="margin-top:24px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">verify@opus-4.8: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>swarm 自信,但引用严重不足</div>
+          <div class="term-l2"><span class="q-coral">「看起来做完了」</span>和<span class="q-coral">「它是对的」</span></div>
+          <div class="term-sub">— 是两个星球的事 · 子 Agent 之间还会自相矛盾</div>
+        </div>
+      </div>
+
+      <div class="role" style="margin-top:30px">
+        <div class="status"><span class="dot"></span>OPUS 4.8 · 唯一职责 = <span class="em-acid">证伪,不是夸奖</span></div>
+      </div>
+
+      <div class="stats" style="margin-top:26px">
+        <div class="stat cyan"><div class="num" id="st1">0×</div><div class="lab">放过自己代码缺陷<br>概率比上代低约</div></div>
+        <div class="stat cyan"><div class="num" id="st2">0 分</div><div class="lab">首个在「不加批判<br>报告问题结果」拿到</div></div>
+      </div>
+
+      <div class="punch">你花高价 token 不是用来生成 —— 是抓那个会被<span class="em">永久存进 Skill</span> 的隐藏缺陷;没有任何模型赢者通吃。</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.289" data-track-index="5"><div class="sub-inner">现在到了整套循环里,唯一<span class="sub-k">不属于 Kimi</span> 的那一拍。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.423" data-duration="8.687" data-track-index="5"><div class="sub-inner">Swarm 有个已知的毛病：除非你明确要求它去核查，它会产出一堆听起来很自信、但<span class="sub-k">引用严重不足</span>的论断。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.11" data-duration="4.344" data-track-index="5"><div class="sub-inner">而且独立的子 Agent 之间，有时候会<span class="sub-k">自相矛盾</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.599" data-duration="4.672" data-track-index="5"><div class="sub-inner">「看起来做完了」和「它是对的」，是<span class="sub-k">两个星球</span>的事。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.423" data-duration="2.919" data-track-index="5"><div class="sub-inner">这里就该 <span class="sub-k">Opus 4.8</span> 上场了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.342" data-duration="5.677" data-track-index="5"><div class="sub-inner">它的角色不是再生成什么更漂亮的东西——它的唯一职责，是<span class="sub-k">证伪，不是夸奖</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.171" data-duration="5.859" data-track-index="5"><div class="sub-inner">Anthropic 说，它放过自己代码里缺陷的概率，比上一代低了<span class="sub-k">大约四倍</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="37.03" data-duration="6.176" data-track-index="5"><div class="sub-inner">它也是第一个在「不加批判地报告有问题的结果」这件事上拿到<span class="sub-k">零分</span>的 Claude。</div></div>
+    <div id="sub-9" class="clip sub" data-start="43.206" data-duration="1.425" data-track-index="5"><div class="sub-inner">这个零分,是<span class="sub-k">好事</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="44.779" data-duration="3.583" data-track-index="5"><div class="sub-inner">你花高价 token，<span class="sub-k">不是用来生成</span>的。</div></div>
+    <div id="sub-11" class="clip sub" data-start="48.362" data-duration="6.035" data-track-index="5"><div class="sub-inner">你是用它，去抓那个会在下一步被<span class="sub-k">永久存进 Skill</span> 的隐藏缺陷。</div></div>
+    <div id="sub-12" class="clip sub" data-start="54.535" data-duration="2.53" data-track-index="5"><div class="sub-inner">为什么非得是<span class="sub-k">另一个模型</span>来把关？</div></div>
+    <div id="sub-13" class="clip sub" data-start="57.065" data-duration="2.699" data-track-index="5"><div class="sub-inner">因为没有任何一个模型能<span class="sub-k">全面碾压</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="59.935" data-duration="7.464" data-track-index="5"><div class="sub-inner">就拿一项 Agent 能力的核查基准来说，四个模型各有胜负，<span class="sub-k">谁也没赢者通吃</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="67.399" data-duration="6.089" data-track-index="5"><div class="sub-inner">便宜的并行量，只有在有个可信的东西在检查它的时候，才是<span class="sub-k">超能力</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // beat 1: kicker + term card (sub-1..sub-4) —— 辅助色 coral
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.term', 1.4, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},1.6);
+    D2.enter(tl, R+'.term-l1', 4.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 17.7, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.term-sub', 13.3, {opacity:0, y:8, d:.32, ease:'power1.out'});
+    // beat 2: role status (sub-5/6) —— 酸性绿 only
+    D2.enter(tl, R+'.role', 22.5, {y:16, d:.38, ease:'power3.out'});
+    // beat 3: stats count-up (sub-7/8/9) —— 辅助色 cyan
+    // 切到 cyan 前,把 beat-1 的 coral 强调收成中性,保证任一帧只剩一种辅助色
+    tl.to(R+'.q-coral', {color:'#edebe6', duration:.4, ease:'power1.inOut'}, 30.6);
+    D2.enter(tl, R+'.stats .stat:first-child', 31.3, {y:16, d:.34, ease:'power3.out'});
+    D2.countUp(tl, R+'#st1', 31.7, 0, 4, 1.1, {suffix:'×'});
+    D2.enter(tl, R+'.stats .stat:last-child', 37.2, {y:16, d:.34, ease:'power3.out'});
+    // beat 4: punch closing (sub-10..sub-15) —— 酸性绿 only
+    D2.enter(tl, R+'.punch', 44.9, {y:14, d:.36, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.423],['#sub-3',13.11],['#sub-4',17.599],['#sub-5',22.423],['#sub-6',25.342],['#sub-7',31.171],['#sub-8',37.03],['#sub-9',43.206],['#sub-10',44.779],['#sub-11',48.362],['#sub-12',54.535],['#sub-13',57.065],['#sub-14',59.935],['#sub-15',67.399]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 73.667, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

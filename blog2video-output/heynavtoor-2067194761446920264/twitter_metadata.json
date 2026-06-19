@@ -1,0 +1,19 @@
+{
+  "url": "https://x.com/heynavtoor/status/2067194761446920264",
+  "article_url": "https://x.com/heynavtoor/article/2067194761446920264",
+  "author": "Nav Toor",
+  "handle": "@heynavtoor",
+  "title": "The Stanford STORM Method: How to Make Claude Research Like a PhD in Minutes",
+  "published_at": "2026-06-17",
+  "type": "long_article",
+  "stats": {
+    "replies": 64,
+    "reposts": 544,
+    "likes": 3519,
+    "bookmarks": 12102,
+    "views": 1683358
+  },
+  "method_used": "playwright_mcp_snapshot_authenticated",
+  "image_count": 6,
+  "note": "X collapsed anonymous access to /i/article/* in June 2026; this fetch used injected auth_token+ct0 cookies in the Playwright MCP profile."
+}

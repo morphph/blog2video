@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .fmt{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+[data-composition-id='s06'] .fmt .tg{font-family:'JetBrains Mono',monospace;font-size:24px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:5px 14px}
+[data-composition-id='s06'] .fhdr{display:flex;align-items:center;gap:14px}
+[data-composition-id='s06'] .fhdr .fn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#5fd3e8;letter-spacing:-.01em}
+[data-composition-id='s06'] .fspec{display:flex;gap:14px;margin-top:24px}
+[data-composition-id='s06'] .fspec .cell{flex:1;background:#121212;border:1px solid #2a2a2c;padding:20px 22px;text-align:center}
+[data-composition-id='s06'] .fspec .cell .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:48px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s06'] .fspec .cell .cap{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s06'] .fcols{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;line-height:1.5;border-left:2px solid rgba(95,211,232,.4);padding-left:20px}
+[data-composition-id='s06'] .fcols b{color:#5fd3e8;font-weight:500}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="66.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[06/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第四步 · 要<span class="acc">真实文件</span>,不要一段对话</div>
+      <div class="h1 k-h1" style="margin-top:18px">把<span class="em">产出</span>写在 spec 最前面</div>
+
+      <div class="rows k-rows" style="margin-top:40px">
+        <div class="row r-out"><div class="n">→</div><div class="rb">
+          <div class="rt">产出是结构化交付物,不是窗口里一段文字</div>
+          <div class="fmt"><span class="tg">PDF</span><span class="tg">表格</span><span class="tg">数据集</span><span class="tg">幻灯片</span><span class="tg">能跑的代码</span></div>
+        </div></div>
+
+        <div class="row r-vag warn"><div class="n">✗</div><div class="rb">
+          <div class="rt">「一份全面的报告」</div>
+          <div class="rd"><span class="warn">= 给 Agent 提前收工的许可</span></div>
+        </div></div>
+
+        <div class="row r-tgt now"><div class="n">✓</div><div class="rb">
+          <div class="rt">「40 页 PDF + 两万行 CSV + 14 张可导出图表」</div>
+          <div class="rd"><span class="ok">= 一个明确的质量靶子</span></div>
+        </div></div>
+      </div>
+
+      <div class="term k-term" style="margin-top:30px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">factor_decay_audit · 量化因子衰减审计</span></div>
+        <div class="term-body" style="padding:30px 34px 34px">
+          <div class="fhdr"><span class="fn">factor_decay_audit_q2_2026.xlsx</span></div>
+          <div class="fspec">
+            <div class="cell fc1"><div class="big">1</div><div class="cap">文件 · 一张表</div></div>
+            <div class="cell fc2"><div class="big">40 × 7</div><div class="cap">40 行 7 列</div></div>
+            <div class="cell fc3"><div class="big">200</div><div class="cap">词简报 · 封面页</div></div>
+          </div>
+          <div class="fcols k-cols"><b>name</b> / source paper / in-sample Sharpe / OOS Sharpe / <b>decay%</b> / t-stat / capacity note</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.69" data-track-index="5"><div class="sub-inner">Swarm 的产出,不是窗口里的<span class="sub-k">一段文字</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.682" data-duration="3.338" data-track-index="5"><div class="sub-inner">它是能直接塞进你工作流的<span class="sub-k">结构化交付物</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.02" data-duration="2.636" data-track-index="5"><div class="sub-inner">这一点,是很多介绍里都<span class="sub-k">漏掉的</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.82" data-duration="6.953" data-track-index="5"><div class="sub-inner">一次启动,落地的可能是 PDF、表格、数据集、幻灯片,还有<span class="sub-k">能跑的代码</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.773" data-duration="4.371" data-track-index="5"><div class="sub-inner">因为这些格式,<span class="sub-k">Kimi 是原生就能吐出来的</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.304" data-duration="3.859" data-track-index="5"><div class="sub-inner">所以写 spec 的时候,永远把<span class="sub-k">产出放在最前面</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.3" data-duration="5.357" data-track-index="5"><div class="sub-inner">你说「一份全面的报告」,等于给了 Agent <span class="sub-k">提前收工的许可</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.657" data-duration="10.367" data-track-index="5"><div class="sub-inner">你说「一份 40 页的 PDF,加一个两万行的 CSV,再加 14 张能直接导出的图表」,才是给了它一个<span class="sub-k">明确的质量靶子</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="41.176" data-duration="2.71" data-track-index="5"><div class="sub-inner">差别就在产出这一层的<span class="sub-k">具体程度</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="44.056" data-duration="6.854" data-track-index="5"><div class="sub-inner">我给你看一个贯穿全程的真实例子,是一个量化金融的研究任务,<span class="sub-k">审计股票因子的衰减</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="51.11" data-duration="10.988" data-track-index="5"><div class="sub-inner">它的产出确认长这样:一个 Excel 文件,一张表,40 行 7 列,外加一段 <span class="sub-k">200 词的简报</span>夹在封面页里。</div></div>
+    <div id="sub-12" class="clip sub" data-start="62.236" data-duration="2.121" data-track-index="5"><div class="sub-inner">这不是聊天框里的<span class="sub-k">一段话</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="64.357" data-duration="2.121" data-track-index="5"><div class="sub-inner">这是你<span class="sub-k">拿来就能用</span>的东西。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* kicker + 标题 早出(开场契约:真实文件 vs 一段对话) */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.k-h1', 21.4, {y:20, d:.42, ease:'expo.out'});
+
+    /* 第一行(产出=结构化交付物)早出,格式标签晚到 sub-4 */
+    D2.enter(tl, R+'.r-out', 1.6, {x:-24, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.r-out .fmt .tg', 9.9, {y:12, step:.12, d:.26, ease:'power2.out'});
+
+    /* 模糊 spec(收工许可)= sub-7 ; 精确靶子 = sub-8 */
+    D2.enter(tl, R+'.r-vag', 25.5, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r-tgt', 30.8, {x:24, d:.4, ease:'power3.out'});
+
+    /* 真实文件卡:整卡 sub-10 出(真实例子),数据格 sub-11 逐格,列名最末晚到 */
+    D2.enter(tl, R+'.k-term', 44.2, {y:22, d:.42, ease:'power3.out'});
+    D2.stagger(tl, R+'.k-term .fspec .cell', 51.2, {y:14, step:.22, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.k-cols', 58.5, {y:12, d:.36, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.682],['#sub-3',7.02],['#sub-4',9.82],['#sub-5',16.773],['#sub-6',21.304],['#sub-7',25.3],['#sub-8',30.657],['#sub-9',41.176],['#sub-10',44.056],['#sub-11',51.11],['#sub-12',62.236],['#sub-13',64.357]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 66.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

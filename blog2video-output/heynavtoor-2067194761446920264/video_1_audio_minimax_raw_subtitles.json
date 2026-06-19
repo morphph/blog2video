@@ -1,0 +1,692 @@
+[
+  {
+    "text": "怎么让你的 Claude 做研究做得像博士生？不是换个大模型，也不是装什么插件。",
+    "pronounce_text": "怎么让你的Claude做研究做得像博士生？不是换个大模型，也不是装什么插件。",
+    "time_begin": 0,
+    "time_end": 6076.507936507937,
+    "text_begin": 0,
+    "text_end": 40,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 38
+  },
+  {
+    "text": "斯坦福官方两年前就把方法证明完了——一篇 NAACL 论文、一套开源代码、一个免费在线 demo，多视角写出来的文章比当时最强对照组组织度高出百分之二十五。",
+    "pronounce_text": "斯坦福官方两年前就把方法证明完了。一篇NAACL论文、一套开源代码、一个免费在线demo，多视角写出来的文章比当时最强对照组组织度高出百分之二十五。",
+    "time_begin": 6228,
+    "time_end": 18968.63492063492,
+    "text_begin": 40,
+    "text_end": 118,
+    "pronounce_text_begin": 38,
+    "pronounce_text_end": 112
+  },
+  {
+    "text": "整套方法可以压成四个 prompt，今天我们就拆这四步。",
+    "pronounce_text": "整套方法可以压成四个prompt，今天我们就拆这四步。",
+    "time_begin": 19168.63492063492,
+    "time_end": 23666.185941043084,
+    "text_begin": 118,
+    "text_end": 146,
+    "pronounce_text_begin": 112,
+    "pronounce_text_end": 139
+  },
+  {
+    "text": "先承认一件让人不舒服的事。大多数人用 Claude，本质上就是把它当搜索框。问一句，拿一个答案，关掉标签页。",
+    "pronounce_text": "先承认一件让人不舒服的事。大多数人用Claude，本质上就是把它当搜索框。问一句，拿一个答案，关掉标签页。",
+    "time_begin": 23832,
+    "time_end": 34436.399092970525,
+    "text_begin": 146,
+    "text_end": 200,
+    "pronounce_text_begin": 139,
+    "pronounce_text_end": 192
+  },
+  {
+    "text": "这不是 Claude 不行。是你的提问方式，决定了它只能回这个层级。",
+    "pronounce_text": "这不是Claude不行。是你的提问方式，决定了它只能回这个层级。",
+    "time_begin": 34596,
+    "time_end": 40417.08843537415,
+    "text_begin": 200,
+    "text_end": 234,
+    "pronounce_text_begin": 192,
+    "pronounce_text_end": 224
+  },
+  {
+    "text": "当你问\"告诉我关于 X 的情况\"，模型给你的，永远是多数派观点。是这个领域里被说得最多、引用率最高、最不会得罪人的那个框架。也就是表面。",
+    "pronounce_text": "当你问\"告诉我关于X的情况\"，模型给你的，永远是多数派观点。是这个领域里被说得最多、引用率最高、最不会得罪人的那个框架。也就是表面。",
+    "time_begin": 40572,
+    "time_end": 53219.755102040814,
+    "text_begin": 234,
+    "text_end": 302,
+    "pronounce_text_begin": 224,
+    "pronounce_text_end": 290
+  },
+  {
+    "text": "但你想要的，从来不是表面。一个每天在地里干活的实践者看到的 X，和一个研究了十年的学者看到的 X，是两件不同的东西。",
+    "pronounce_text": "但你想要的，从来不是表面。一个每天在地里干活的实践者看到的X，和一个研究了十年的学者看到的X，是两件不同的东西。",
+    "time_begin": 53388,
+    "time_end": 63945.95918367347,
+    "text_begin": 302,
+    "text_end": 360,
+    "pronounce_text_begin": 290,
+    "pronounce_text_end": 346
+  },
+  {
+    "text": "再加上一个怀疑这套主流叙事根本就是错的人、一个跟着钱走的经济学家、一个见过类似剧本的历史学家——你会发现，同一个话题，被五个人看，能炸开五个完全不同的截面。",
+    "pronounce_text": "再加上一个怀疑这套主流叙事根本就是错的人、一个跟着钱走的经济学家、一个见过类似剧本的历史学家。你会发现，同一个话题，被五个人看，能炸开五个完全不同的截面。",
+    "time_begin": 64116,
+    "time_end": 79631.41950113379,
+    "text_begin": 360,
+    "text_end": 438,
+    "pronounce_text_begin": 346,
+    "pronounce_text_end": 423
+  },
+  {
+    "text": "所有真正值钱的洞察，都活在这五个截面对撞出来的缝里。",
+    "pronounce_text": "所有真正值钱的洞察，都活在这五个截面对撞出来的缝里。",
+    "time_begin": 79776,
+    "time_end": 84447.70068027212,
+    "text_begin": 438,
+    "text_end": 464,
+    "pronounce_text_begin": 423,
+    "pronounce_text_end": 449
+  },
+  {
+    "text": "这套方法论有个名字，叫 STORM。Stanford 的 OVAL 实验室在 2024 年 NAACL 会议上正式发表。全称很长——通过检索和多视角提问做主题大纲合成。",
+    "pronounce_text": "这套方法论有个名字，叫STORM。Stanford的OVAL实验室在两千零二十四年NAACL会议上正式发表。全称很长。通过检索和多视角提问做主题大纲合成。",
+    "time_begin": 84600,
+    "time_end": 98699.0022675737,
+    "text_begin": 464,
+    "text_end": 548,
+    "pronounce_text_begin": 449,
+    "pronounce_text_end": 526
+  },
+  {
+    "text": "但你不用记全称。记住一件事就够了。",
+    "pronounce_text": "但你不用记全称。记住一件事就够了。",
+    "time_begin": 98856,
+    "time_end": 102297.04308390022,
+    "text_begin": 548,
+    "text_end": 565,
+    "pronounce_text_begin": 526,
+    "pronounce_text_end": 543
+  },
+  {
+    "text": "STORM 论文里给出了一个被同行评审过的硬数字。用多视角方法生成的文章，比当时最强的对照方法，组织度高百分之二十五，覆盖广度高百分之十。",
+    "pronounce_text": "STORM论文里给出了一个被同行评审过的硬数字。用多视角方法生成的文章，比当时最强的对照方法，组织度高百分之二十五，覆盖广度高百分之十。",
+    "time_begin": 102456,
+    "time_end": 114592.91609977324,
+    "text_begin": 565,
+    "text_end": 634,
+    "pronounce_text_begin": 543,
+    "pronounce_text_end": 611
+  },
+  {
+    "text": "这两个数字非常关键。它不是营销话术，是学术评测。它在说——多视角提问不是\"听起来高级一点\"，是在统计意义上，真的能把那些单 prompt 永远抓不到的盲点捞回来。",
+    "pronounce_text": "这两个数字非常关键。它不是营销话术，是学术评测。它在说。多视角提问不是\"听起来高级一点\"，是在统计意义上，真的能把那些单prompt永远抓不到的盲点捞回来。",
+    "time_begin": 114732,
+    "time_end": 130839.5283446712,
+    "text_begin": 634,
+    "text_end": 715,
+    "pronounce_text_begin": 611,
+    "pronounce_text_end": 689
+  },
+  {
+    "text": "而 STORM 的真正突破，不是它的代码，也不是它的 demo 网站。是它把博士生做研究的那套思考方法，拆成了四个可以复制粘贴的步骤。",
+    "pronounce_text": "而STORM的真正突破，不是它的代码，也不是它的demo网站。是它把博士生做研究的那套思考方法，拆成了四个可以复制粘贴的步骤。",
+    "time_begin": 131004,
+    "time_end": 142885.49659863947,
+    "text_begin": 715,
+    "text_end": 782,
+    "pronounce_text_begin": 689,
+    "pronounce_text_end": 752
+  },
+  {
+    "text": "代码你不用装，demo 你不用打开。这套思维方式本身，才是你能搬走的东西。",
+    "pronounce_text": "代码你不用装，demo你不用打开。这套思维方式本身，才是你能搬走的东西。",
+    "time_begin": 143028,
+    "time_end": 149534.07709750568,
+    "text_begin": 782,
+    "text_end": 819,
+    "pronounce_text_begin": 752,
+    "pronounce_text_end": 788
+  },
+  {
+    "text": "第一个 prompt 做一件事——让 Claude 同时扮演五个人。",
+    "pronounce_text": "第一个prompt做一件事。让Claude同时扮演五个人。",
+    "time_begin": 149688,
+    "time_end": 154533.85034013606,
+    "text_begin": 819,
+    "text_end": 853,
+    "pronounce_text_begin": 788,
+    "pronounce_text_end": 817
+  },
+  {
+    "text": "实践者、学者、怀疑论者、经济学家、历史学家。",
+    "pronounce_text": "实践者、学者、怀疑论者、经济学家、历史学家。",
+    "time_begin": 154692,
+    "time_end": 160129.95918367346,
+    "text_begin": 853,
+    "text_end": 875,
+    "pronounce_text_begin": 817,
+    "pronounce_text_end": 839
+  },
+  {
+    "text": "这个 cast 是固定的，每一个都被分配了一个其他四个看不到的角度。实践者告诉你学者忽略的现实细节。学者告诉你同行评审证据真正怎么说。怀疑论者攻击主流，问那些支持者刻意回避的反证。",
+    "pronounce_text": "这个cast是固定的，每一个都被分配了一个其他四个看不到的角度。实践者告诉你学者忽略的现实细节。学者告诉你同行评审证据真正怎么说。怀疑论者攻击主流，问那些支持者刻意回避的反证。",
+    "time_begin": 160272,
+    "time_end": 175694.53968253967,
+    "text_begin": 875,
+    "text_end": 965,
+    "pronounce_text_begin": 839,
+    "pronounce_text_end": 927
+  },
+  {
+    "text": "经济学家追问谁从这个叙事里赚到了钱。历史学家把当下的事件，拉回到曾经发生过的相似剧本里去对照。",
+    "pronounce_text": "经济学家追问谁从这个叙事里赚到了钱。历史学家把当下的事件，拉回到曾经发生过的相似剧本里去对照。",
+    "time_begin": 175860,
+    "time_end": 184676.46258503402,
+    "text_begin": 965,
+    "text_end": 1012,
+    "pronounce_text_begin": 927,
+    "pronounce_text_end": 974
+  },
+  {
+    "text": "你让模型一次产出这五个人的核心立场、最强证据、还有\"只有这个视角才会告诉你的那句话\"。",
+    "pronounce_text": "你让模型一次产出这五个人的核心立场、最强证据、还有\"只有这个视角才会告诉你的那句话\"。",
+    "time_begin": 184824,
+    "time_end": 192955.47392290249,
+    "text_begin": 1012,
+    "text_end": 1055,
+    "pronounce_text_begin": 974,
+    "pronounce_text_end": 1017
+  },
+  {
+    "text": "六十秒。你得到的是单 prompt 一辈子都给不出的截面差。",
+    "pronounce_text": "六十秒。你得到的是单prompt一辈子都给不出的截面差。",
+    "time_begin": 193104,
+    "time_end": 197903.410430839,
+    "text_begin": 1055,
+    "text_end": 1085,
+    "pronounce_text_begin": 1017,
+    "pronounce_text_end": 1045
+  },
+  {
+    "text": "这是这套方法的入口。但它只是入口，不是答案。",
+    "pronounce_text": "这是这套方法的入口。但它只是入口，不是答案。",
+    "time_begin": 198072,
+    "time_end": 201547.87301587302,
+    "text_begin": 1085,
+    "text_end": 1107,
+    "pronounce_text_begin": 1045,
+    "pronounce_text_end": 1067
+  },
+  {
+    "text": "如果你只走到第一步，把五个人格的输出拿到手就收工，你做的事和把五个搜索结果拼到一起没区别。",
+    "pronounce_text": "如果你只走到第一步，把五个人格的输出拿到手就收工，你做的事和把五个搜索结果拼到一起没区别。",
+    "time_begin": 201708,
+    "time_end": 209584.0544217687,
+    "text_begin": 1107,
+    "text_end": 1152,
+    "pronounce_text_begin": 1067,
+    "pronounce_text_end": 1112
+  },
+  {
+    "text": "真正的分水岭是第二步。让 Claude 把这五个声音里互相打架的地方画出来。",
+    "pronounce_text": "真正的分水岭是第二步。让Claude把这五个声音里互相打架的地方画出来。",
+    "time_begin": 209736,
+    "time_end": 215649.96825396825,
+    "text_begin": 1152,
+    "text_end": 1190,
+    "pronounce_text_begin": 1112,
+    "pronounce_text_end": 1148
+  },
+  {
+    "text": "哪两个视角直接矛盾？具体冲突在哪句话上？哪个视角的证据最强，哪个最弱，为什么？如果只能回答一个问题来解开最大的那个矛盾，那个问题是什么？",
+    "pronounce_text": "哪两个视角直接矛盾？具体冲突在哪句话上？哪个视角的证据最强，哪个最弱，为什么？如果只能回答一个问题来解开最大的那个矛盾，那个问题是什么？",
+    "time_begin": 215820,
+    "time_end": 229710.02267573695,
+    "text_begin": 1190,
+    "text_end": 1258,
+    "pronounce_text_begin": 1148,
+    "pronounce_text_end": 1216
+  },
+  {
+    "text": "所有五个视角都同意的是什么——这部分大概率为真，因为连对立面都在确认。最后，五个视角里都没人提到的是什么——这是整个领域的盲点，往往是你最值钱的发现。",
+    "pronounce_text": "所有五个视角都同意的是什么。这部分大概率为真，因为连对立面都在确认。最后，五个视角里都没人提到的是什么。这是整个领域的盲点，往往是你最值钱的发现。",
+    "time_begin": 229860,
+    "time_end": 244597.55102040817,
+    "text_begin": 1258,
+    "text_end": 1333,
+    "pronounce_text_begin": 1216,
+    "pronounce_text_end": 1289
+  },
+  {
+    "text": "原文有一句话我特别想直接念给你听：如果所有人都同意，它大概率是真的；如果所有人都没碰，你刚找到了整个领域的缺口。",
+    "pronounce_text": "原文有一句话我特别想直接念给你听：如果所有人都同意，它大概率是真的;如果所有人都没碰，你刚找到了整个领域的缺口。",
+    "time_begin": 244764,
+    "time_end": 255751.5283446712,
+    "text_begin": 1333,
+    "text_end": 1389,
+    "pronounce_text_begin": 1289,
+    "pronounce_text_end": 1345
+  },
+  {
+    "text": "大多数人跳过这一步。这是表面理解和真正专业之间的那条线。",
+    "pronounce_text": "大多数人跳过这一步。这是表面理解和真正专业之间的那条线。",
+    "time_begin": 255888,
+    "time_end": 260861.56009070296,
+    "text_begin": 1389,
+    "text_end": 1417,
+    "pronounce_text_begin": 1345,
+    "pronounce_text_end": 1373
+  },
+  {
+    "text": "跨过去，你就拿到了五分钟前还没人帮你做过的对撞分析。",
+    "pronounce_text": "跨过去，你就拿到了五分钟前还没人帮你做过的对撞分析。",
+    "time_begin": 261000,
+    "time_end": 265718.1405895692,
+    "text_begin": 1417,
+    "text_end": 1443,
+    "pronounce_text_begin": 1373,
+    "pronounce_text_end": 1399
+  },
+  {
+    "text": "到这里你手上有两份原料——五个截面，和它们之间的冲突地图。第三个 prompt 把这两份原料烧成一份给 CEO 看的简报。",
+    "pronounce_text": "到这里你手上有两份原料。五个截面，和它们之间的冲突地图。第三个prompt把这两份原料烧成一份给CEO看的简报。",
+    "time_begin": 265860,
+    "time_end": 277056.50793650793,
+    "text_begin": 1443,
+    "text_end": 1504,
+    "pronounce_text_begin": 1399,
+    "pronounce_text_end": 1455
+  },
+  {
+    "text": "它要求 Claude 一次给你五样东西。",
+    "pronounce_text": "它要求Claude一次给你五样东西。",
+    "time_begin": 277200,
+    "time_end": 279480.0453514739,
+    "text_begin": 1504,
+    "text_end": 1524,
+    "pronounce_text_begin": 1455,
+    "pronounce_text_end": 1473
+  },
+  {
+    "text": "一段六十秒能讲清的高层摘要，但要带 nuance，不是新闻头条那种平面化。然后是五条最重要的发现，按可靠度排序，每一条都要标注哪些视角支持、哪些视角挑战。",
+    "pronounce_text": "一段六十秒能讲清的高层摘要，但要带nuance，不是新闻头条那种平面化。然后是五条最重要的发现，按可靠度排序，每一条都要标注哪些视角支持、哪些视角挑战。",
+    "time_begin": 279648,
+    "time_end": 294606.1405895692,
+    "text_begin": 1524,
+    "text_end": 1601,
+    "pronounce_text_begin": 1473,
+    "pronounce_text_end": 1549
+  },
+  {
+    "text": "再然后是一条隐藏连接——只有把五个视角并排放在一起才会浮现的那条非显然的关联。再然后是一条针对你具体角色的可执行建议，要求够具体。",
+    "pronounce_text": "再然后是一条隐藏连接。只有把五个视角并排放在一起才会浮现的那条非显然的关联。再然后是一条针对你具体角色的可执行建议，要求够具体。",
+    "time_begin": 294768,
+    "time_end": 307125.50566893426,
+    "text_begin": 1601,
+    "text_end": 1666,
+    "pronounce_text_begin": 1549,
+    "pronounce_text_end": 1613
+  },
+  {
+    "text": "最后是一个前沿问题，如果有一天它被回答了，会改变所有人对这个话题的理解。",
+    "pronounce_text": "最后是一个前沿问题，如果有一天它被回答了，会改变所有人对这个话题的理解。",
+    "time_begin": 307296,
+    "time_end": 313720.8072562358,
+    "text_begin": 1666,
+    "text_end": 1702,
+    "pronounce_text_begin": 1613,
+    "pronounce_text_end": 1649
+  },
+  {
+    "text": "注意这份简报里每一项的设计。它不是把素材堆给你，它在强迫综合发生。",
+    "pronounce_text": "注意这份简报里每一项的设计。它不是把素材堆给你，它在强迫综合发生。",
+    "time_begin": 313884,
+    "time_end": 321284.0453514739,
+    "text_begin": 1702,
+    "text_end": 1735,
+    "pronounce_text_begin": 1649,
+    "pronounce_text_end": 1682
+  },
+  {
+    "text": "一个博士生手工做出这份东西，要四十八小时。你刚才花了九十秒。",
+    "pronounce_text": "一个博士生手工做出这份东西，要四十八小时。你刚才花了九十秒。",
+    "time_begin": 321444,
+    "time_end": 327613.387755102,
+    "text_begin": 1735,
+    "text_end": 1765,
+    "pronounce_text_begin": 1682,
+    "pronounce_text_end": 1712
+  },
+  {
+    "text": "讲到这里，如果故事就停在这——四个步骤里只剩第四步还没讲——你可能会想，最后一步无非是\"让 AI 自我反思一下\"，老套路。",
+    "pronounce_text": "讲到这里，如果故事就停在这。四个步骤里只剩第四步还没讲。你可能会想，最后一步无非是\"让AI自我反思一下\"，老套路。",
+    "time_begin": 327780,
+    "time_end": 339197.09750566893,
+    "text_begin": 1765,
+    "text_end": 1826,
+    "pronounce_text_begin": 1712,
+    "pronounce_text_end": 1769
+  },
+  {
+    "text": "但这个 prompt 真正的设计含义，比\"反思\"狠得多。",
+    "pronounce_text": "但这个prompt真正的设计含义，比\"反思\"狠得多。",
+    "time_begin": 339336,
+    "time_end": 343624.5714285714,
+    "text_begin": 1826,
+    "text_end": 1854,
+    "pronounce_text_begin": 1769,
+    "pronounce_text_end": 1795
+  },
+  {
+    "text": "Stanford 团队在自己的论文里，亲自标注了 STORM 的两个已知失败模式。一个叫信源偏倚——模型在采样视角的时候，会不自觉地多采它训练分布里更熟悉的那一类声源。",
+    "pronounce_text": "Stanford团队在自己的论文里，亲自标注了STORM的两个已知失败模式。一个叫信源偏倚。模型在采样视角的时候，会不自觉地多采它训练分布里更熟悉的那一类声源。",
+    "time_begin": 343764,
+    "time_end": 357700.462585034,
+    "text_begin": 1854,
+    "text_end": 1938,
+    "pronounce_text_begin": 1795,
+    "pronounce_text_end": 1875
+  },
+  {
+    "text": "一个叫事实张冠李戴——模型会把 A 视角里的事实，误装到 B 视角的论证里。",
+    "pronounce_text": "一个叫事实张冠李戴。模型会把A视角里的事实，误装到B视角的论证里。",
+    "time_begin": 357840,
+    "time_end": 364856.91609977325,
+    "text_begin": 1938,
+    "text_end": 1976,
+    "pronounce_text_begin": 1875,
+    "pronounce_text_end": 1908
+  },
+  {
+    "text": "这两个 bug 不是猜的，是 Stanford 自己在 limitations 章节写明的。",
+    "pronounce_text": "这两个bug不是猜的，是Stanford自己在limitations章节写明的。",
+    "time_begin": 365004,
+    "time_end": 370488.39909297053,
+    "text_begin": 1976,
+    "text_end": 2022,
+    "pronounce_text_begin": 1908,
+    "pronounce_text_end": 1948
+  },
+  {
+    "text": "第四个 prompt 就是精确对着这两个失败模式打的补丁。",
+    "pronounce_text": "第四个prompt就是精确对着这两个失败模式打的补丁。",
+    "time_begin": 370656,
+    "time_end": 376268.1088435374,
+    "text_begin": 2022,
+    "text_end": 2051,
+    "pronounce_text_begin": 1948,
+    "pronounce_text_end": 1975
+  },
+  {
+    "text": "它强制 Claude 给五条核心发现打可靠度分、找出自己最不自信的那一条、做偏倚检查指出哪个视角在综合里被过度代表、追问有没有一个第六视角被漏掉、",
+    "pronounce_text": "它强制Claude给五条核心发现打可靠度分、找出自己最不自信的那一条、做偏倚检查指出哪个视角在综合里被过度代表、追问有没有一个第六视角被漏掉、",
+    "time_begin": 376416,
+    "time_end": 389621.03401360544,
+    "text_begin": 2051,
+    "text_end": 2124,
+    "pronounce_text_begin": 1975,
+    "pronounce_text_end": 2046
+  },
+  {
+    "text": "最后给整份简报打一个 Stanford 教授会打的分。",
+    "pronounce_text": "最后给整份简报打一个Stanford教授会打的分。",
+    "time_begin": 389821.03401360544,
+    "time_end": 393935.4557823129,
+    "text_begin": 2124,
+    "text_end": 2151,
+    "pronounce_text_begin": 2046,
+    "pronounce_text_end": 2071
+  },
+  {
+    "text": "这是把别人论文里 limitations 章节的措辞，直接翻译成 prompt 设计的工程化案例。",
+    "pronounce_text": "这是把别人论文里limitations章节的措辞，直接翻译成prompt设计的工程化案例。",
+    "time_begin": 394092,
+    "time_end": 400818.6666666667,
+    "text_begin": 2151,
+    "text_end": 2200,
+    "pronounce_text_begin": 2071,
+    "pronounce_text_end": 2116
+  },
+  {
+    "text": "它不是锦上添花。它是这套方法之所以能在你的桌面上 work，而不是变成又一个被高估的 ChatGPT trick 的根本原因。",
+    "pronounce_text": "它不是锦上添花。它是这套方法之所以能在你的桌面上work，而不是变成又一个被高估的ChatGPT trick的根本原因。",
+    "time_begin": 400968,
+    "time_end": 410457.84126984124,
+    "text_begin": 2200,
+    "text_end": 2263,
+    "pronounce_text_begin": 2116,
+    "pronounce_text_end": 2176
+  },
+  {
+    "text": "讲到这里我得停下来说一句不那么爽的话。",
+    "pronounce_text": "讲到这里我得停下来说一句不那么爽的话。",
+    "time_begin": 410616,
+    "time_end": 414057.04308390024,
+    "text_begin": 2263,
+    "text_end": 2282,
+    "pronounce_text_begin": 2176,
+    "pronounce_text_end": 2195
+  },
+  {
+    "text": "这套方法不是万能的。",
+    "pronounce_text": "这套方法不是万能的。",
+    "time_begin": 414216,
+    "time_end": 416031.6462585034,
+    "text_begin": 2282,
+    "text_end": 2292,
+    "pronounce_text_begin": 2195,
+    "pronounce_text_end": 2205
+  },
+  {
+    "text": "实践者、学者、怀疑论者、经济学家、历史学家——这个固定 cast 本身就是一种偏倚。监管者的声音在哪？终端用户的声音在哪？",
+    "pronounce_text": "实践者、学者、怀疑论者、经济学家、历史学家。这个固定cast本身就是一种偏倚。监管者的声音在哪？终端用户的声音在哪？",
+    "time_begin": 416196,
+    "time_end": 429064.34467120183,
+    "text_begin": 2292,
+    "text_end": 2353,
+    "pronounce_text_begin": 2205,
+    "pronounce_text_end": 2263
+  },
+  {
+    "text": "被这个议题影响、但完全没机会发声的弱势群体在哪？",
+    "pronounce_text": "被这个议题影响、但完全没机会发声的弱势群体在哪？",
+    "time_begin": 429264.34467120183,
+    "time_end": 433552.91609977325,
+    "text_begin": 2353,
+    "text_end": 2377,
+    "pronounce_text_begin": 2263,
+    "pronounce_text_end": 2287
+  },
+  {
+    "text": "这就是为什么第四个 prompt 里有那一道题——是否还有一个第六视角被漏掉了，足以改变结论？作者自己心里清楚这个 cast 不全。",
+    "pronounce_text": "这就是为什么第四个prompt里有那一道题。是否还有一个第六视角被漏掉了，足以改变结论？作者自己心里清楚这个cast不全。",
+    "time_begin": 433692,
+    "time_end": 443402.43083900225,
+    "text_begin": 2377,
+    "text_end": 2443,
+    "pronounce_text_begin": 2287,
+    "pronounce_text_end": 2348
+  },
+  {
+    "text": "还有一个边界要承认。这套四步流程，只在有争议、有多方利益相关者的话题上回报最高。商业决策、面试调研、投资判断、谈判准备、演讲设计——这些场景才配得上跑完整套。",
+    "pronounce_text": "还有一个边界要承认。这套四步流程，只在有争议、有多方利益相关者的话题上回报最高。商业决策、面试调研、投资判断、谈判准备、演讲设计。这些场景才配得上跑完整套。",
+    "time_begin": 443556,
+    "time_end": 459071.4195011338,
+    "text_begin": 2443,
+    "text_end": 2522,
+    "pronounce_text_begin": 2348,
+    "pronounce_text_end": 2426
+  },
+  {
+    "text": "你查一个 API 函数签名也跑五视角加矛盾图加同行评审，那是杀鸡用牛刀。",
+    "pronounce_text": "你查一个API函数签名也跑五视角加矛盾图加同行评审，那是杀鸡用牛刀。",
+    "time_begin": 459216,
+    "time_end": 467510.0136054422,
+    "text_begin": 2522,
+    "text_end": 2558,
+    "pronounce_text_begin": 2426,
+    "pronounce_text_end": 2460
+  },
+  {
+    "text": "最后一个隐藏依赖。整套方法的天花板，由第一步的输出质量定死。",
+    "pronounce_text": "最后一个隐藏依赖。整套方法的天花板，由第一步的输出质量定死。",
+    "time_begin": 467676,
+    "time_end": 474054.36734693876,
+    "text_begin": 2558,
+    "text_end": 2588,
+    "pronounce_text_begin": 2460,
+    "pronounce_text_end": 2490
+  },
+  {
+    "text": "如果 Claude 在第一步把五个人格写成了五个换皮的多数派——比如怀疑论者写得也很主流——那后面三步就找不到真矛盾，整套流程会塌缩回单 prompt 的均值回归。",
+    "pronounce_text": "如果Claude在第一步把五个人格写成了五个换皮的多数派。比如怀疑论者写得也很主流。那后面三步就找不到真矛盾，整套流程会塌缩回单prompt的均值回归。",
+    "time_begin": 474192,
+    "time_end": 486712.0453514739,
+    "text_begin": 2588,
+    "text_end": 2670,
+    "pronounce_text_begin": 2490,
+    "pronounce_text_end": 2566
+  },
+  {
+    "text": "你需要在第一步的输出上，肉眼盯一下——这五个声音真的不一样吗？还是其实长得很像？",
+    "pronounce_text": "你需要在第一步的输出上，肉眼盯一下。这五个声音真的不一样吗？还是其实长得很像？",
+    "time_begin": 486864,
+    "time_end": 493544.2267573696,
+    "text_begin": 2670,
+    "text_end": 2710,
+    "pronounce_text_begin": 2566,
+    "pronounce_text_end": 2605
+  },
+  {
+    "text": "把整篇文章拉远了看，你会发现它真正在讲的不是一个 prompt 模板。",
+    "pronounce_text": "把整篇文章拉远了看，你会发现它真正在讲的不是一个prompt模板。",
+    "time_begin": 493704,
+    "time_end": 499141.9591836735,
+    "text_begin": 2710,
+    "text_end": 2745,
+    "pronounce_text_begin": 2605,
+    "pronounce_text_end": 2638
+  },
+  {
+    "text": "它在讲一件认知套利的事。",
+    "pronounce_text": "它在讲一件认知套利的事。",
+    "time_begin": 499284,
+    "time_end": 501436.33560090704,
+    "text_begin": 2745,
+    "text_end": 2757,
+    "pronounce_text_begin": 2638,
+    "pronounce_text_end": 2650
+  },
+  {
+    "text": "Stanford 的论文在 2024 年就发表了，同行评审做完了，代码丢在 GitHub 上挂 MIT 协议，免费 demo 现在就在网上开着。这套东西的所有可得性条件，全部齐备。",
+    "pronounce_text": "Stanford的论文在两千零二十四年就发表了，同行评审做完了，代码丢在GitHub上挂MIT协议，免费demo现在就在网上开着。这套东西的所有可得性条件，全部齐备。",
+    "time_begin": 501588,
+    "time_end": 516882.8299319728,
+    "text_begin": 2757,
+    "text_end": 2847,
+    "pronounce_text_begin": 2650,
+    "pronounce_text_end": 2733
+  },
+  {
+    "text": "但几乎没人用。",
+    "pronounce_text": "但几乎没人用。",
+    "time_begin": 517032,
+    "time_end": 518336.8072562358,
+    "text_begin": 2847,
+    "text_end": 2854,
+    "pronounce_text_begin": 2733,
+    "pronounce_text_end": 2740
+  },
+  {
+    "text": "可得性齐全 + 扩散为零，这个组合本身就是一条信号。它告诉你扩散的瓶颈从来不是技术，是认知摩擦力——绝大多数人，连\"我可以用五个视角同时看同一件事\"这种思考方式都没习惯。",
+    "pronounce_text": "可得性齐全加扩散为零，这个组合本身就是一条信号。它告诉你扩散的瓶颈从来不是技术，是认知摩擦力。绝大多数人，连\"我可以用五个视角同时看同一件事\"这种思考方式都没习惯。",
+    "time_begin": 518508,
+    "time_end": 534661.9682539683,
+    "text_begin": 2854,
+    "text_end": 2939,
+    "pronounce_text_begin": 2740,
+    "pronounce_text_end": 2822
+  },
+  {
+    "text": "而正是这个摩擦力，给了今天看到这条视频的你一个十八个月的窗口。",
+    "pronounce_text": "而正是这个摩擦力，给了今天看到这条视频的你一个十八个月的窗口。",
+    "time_begin": 534816,
+    "time_end": 540683.5283446712,
+    "text_begin": 2939,
+    "text_end": 2970,
+    "pronounce_text_begin": 2822,
+    "pronounce_text_end": 2853
+  },
+  {
+    "text": "十八个月之后，这类工作流会被烧进每一个 AI 工具里，变成默认。那时候这条边消失。",
+    "pronounce_text": "十八个月之后，这类工作流会被烧进每一个AI工具里，变成默认。那时候这条边消失。",
+    "time_begin": 540828,
+    "time_end": 547972.6258503401,
+    "text_begin": 2970,
+    "text_end": 3011,
+    "pronounce_text_begin": 2853,
+    "pronounce_text_end": 2892
+  },
+  {
+    "text": "而单 prompt 永远只能给你多数派的答案，所有值得做的研究，结论都藏在少数派的反对意见里。",
+    "pronounce_text": "而单prompt永远只能给你多数派的答案，所有值得做的研究，结论都藏在少数派的反对意见里。",
+    "time_begin": 548136,
+    "time_end": 556522.8934240363,
+    "text_begin": 3011,
+    "text_end": 3058,
+    "pronounce_text_begin": 2892,
+    "pronounce_text_end": 2937
+  },
+  {
+    "text": "如果你今天只能记住一件事，请记住——你不需要五分钟，先用一分钟。",
+    "pronounce_text": "如果你今天只能记住一件事，请记住。你不需要五分钟，先用一分钟。",
+    "time_begin": 556668,
+    "time_end": 563429.4965986394,
+    "text_begin": 3058,
+    "text_end": 3090,
+    "pronounce_text_begin": 2937,
+    "pronounce_text_end": 2968
+  },
+  {
+    "text": "挑一个你正在卡壳的话题。不是学一个新词，是你这周真的要做决定、要写、要 pitch 的那一件事。打开 Claude，只跑第一个 prompt。让五个人格各说两句。",
+    "pronounce_text": "挑一个你正在卡壳的话题。不是学一个新词，是你这周真的要做决定、要写、要pitch的那一件事。打开Claude，只跑第一个prompt。让五个人格各说两句。",
+    "time_begin": 563580,
+    "time_end": 576738.5941043084,
+    "text_begin": 3090,
+    "text_end": 3171,
+    "pronounce_text_begin": 2968,
+    "pronounce_text_end": 3045
+  },
+  {
+    "text": "光是这一步，你就会感觉到，平时你拿到的，确实只是其中一个声音。",
+    "pronounce_text": "光是这一步，你就会感觉到，平时你拿到的，确实只是其中一个声音。",
+    "time_begin": 576900,
+    "time_end": 582895.2380952381,
+    "text_begin": 3171,
+    "text_end": 3202,
+    "pronounce_text_begin": 3045,
+    "pronounce_text_end": 3076
+  },
+  {
+    "text": "剩下三步，跑完整再花四分钟。然后再来对照你之前对这件事的判断。",
+    "pronounce_text": "剩下三步，跑完整再花四分钟。然后再来对照你之前对这件事的判断。",
+    "time_begin": 583056,
+    "time_end": 588877.0884353742,
+    "text_begin": 3202,
+    "text_end": 3233,
+    "pronounce_text_begin": 3076,
+    "pronounce_text_end": 3107
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 589032,
+    "time_end": 593877.8503401361,
+    "text_begin": 3233,
+    "text_end": 3260,
+    "pronounce_text_begin": 3107,
+    "pronounce_text_end": 3133
+  }
+]

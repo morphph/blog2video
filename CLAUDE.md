@@ -158,17 +158,19 @@ meta.json 里**不需要** title、description、tags — 这些由远程服务�
 
 ### 投递命令
 
-投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`*_narration.md`、`*_insight_memo.md`、`images/` 目录；**d2 工作区**：`scenes-data.json`、`briefs/`、`src/`、`scenes/`、`clips/`、`renders/`、`assets`（symlink）、`*.log`、`concat.txt`。**只传** `video_N.mp4`（最终混音片）+ `video_N_cover_photo.png` + `video_N_script.md` + `video_N_audio.vtt` + `source_blog.md` + `meta.json`。
+投递前先清理构建中间产物，**不需要传输的文件**：`*.mp3`、`*.html`、`*.png`（slide 截图，cover_photo.png 除外）、`*_manifest.json` **以及 `manifest.json`（单集无前缀，`*_manifest.json` 通配符抓不到，必须单独排除）**、`.DS_Store`、`*_minimax_raw_subtitles.json`、`*_audio_subtitles.json`、`*_slide_map.json`、`video_plan.json`、`twitter_metadata.json`、`source_raw.md`、`*_narration.md`、`*_insight_memo.md`、`images/` 目录；**d2 工作区**：`scenes-data.json`、`briefs/`、`src/`、`scenes/`、`clips/`、`renders/`、`assets`（symlink）、`*.log`、`concat.txt`。**只传** `video_N.mp4`（最终混音片）+ `video_N_cover_photo.png` + `video_N_script.md` + `video_N_audio.vtt` + `source_blog.md` + `meta.json`。
 
 > ⚠️ 不要用 `--exclude="*.mp4"`：会误删要交付的 `video_N.mp4`。d2 的 clip/silent 中间片靠排除 `clips/`、`renders/` 目录拿掉。
 
 使用 rclone 上传到 Google Drive（rclone remote `gdrive:` 已配置）：
 
 ```bash
-rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="*_narration.md" --exclude="*_insight_memo.md" --exclude="images/**" --exclude="*_config.json" --exclude="scenes-data.json" --exclude="briefs/**" --exclude="src/**" --exclude="scenes/**" --exclude="clips/**" --exclude="renders/**" --exclude="assets/**" --exclude="*.log" --exclude="concat.txt" --progress
+rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --exclude="*.mp3" --exclude="*.html" --exclude="*_manifest.json" --exclude="manifest.json" --exclude="*_minimax_raw_subtitles.json" --exclude="*_audio_subtitles.json" --exclude="*_slide_map.json" --exclude="video_plan.json" --exclude="twitter_metadata.json" --exclude="source_raw.md" --exclude="*_narration.md" --exclude="*_insight_memo.md" --exclude="images/**" --exclude="*_config.json" --exclude="scenes-data.json" --exclude="briefs/**" --exclude="src/**" --exclude="scenes/**" --exclude="clips/**" --exclude="renders/**" --exclude="assets/**" --exclude="*.log" --exclude="concat.txt" --exclude=".DS_Store" --exclude="**/.DS_Store" --progress
 ```
 
 注意：slide 截图 PNG 不传，但 `*_cover_photo.png` 需要传。d2 的 `scenes/scene-NN/index.html`、`src/scene-NN.html` 已被 `*.html` + `scenes/`+`src/` 排除。用 `--include` 无法精确控制时，可先手动清理再 `rclone copy`。
+
+> ✅ **最稳妥**：用 `--files-from` 显式只传 6 个交付文件，彻底绕开排除清单的遗漏（如 `manifest.json`、`.DS_Store`）。先 `printf '%s\n' video_N.mp4 video_N_cover_photo.png video_N_script.md video_N_audio.vtt source_blog.md meta.json > /tmp/deliver.txt`，再 `rclone copy ./blog2video-output/<slug>/ gdrive:blog2video/<slug>/ --files-from /tmp/deliver.txt --progress`。传完用 `rclone ls` 核对远端只有这 6 个文件。
 
 ### 投递完成后
 

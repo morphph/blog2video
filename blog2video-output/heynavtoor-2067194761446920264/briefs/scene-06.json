@@ -1,0 +1,82 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 61.9,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_6.html",
+ "topbarIndex": "[06/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.323,
+   "text": "到这里你手上有两份原料——五个截面，和它们之间的冲突地图。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.316,
+   "localDuration": 5.874,
+   "text": "第三个 prompt 把这两份原料烧成一份给 CEO 看的简报。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.333,
+   "localDuration": 2.28,
+   "text": "它要求 Claude 一次给你五样东西。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.781,
+   "localDuration": 7.188,
+   "text": "一段六十秒能讲清的高层摘要，但要带 nuance，不是新闻头条那种平面化。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.969,
+   "localDuration": 7.77,
+   "text": "然后是五条最重要的发现，按可靠度排序，每一条都要标注哪些视角支持、哪些视角挑战。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.901,
+   "localDuration": 7.415,
+   "text": "再然后是一条隐藏连接——只有把五个视角并排放在一起才会浮现的那条非显然的关联。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 36.316,
+   "localDuration": 4.943,
+   "text": "再然后是一条针对你具体角色的可执行建议，要求够具体。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.429,
+   "localDuration": 6.425,
+   "text": "最后是一个前沿问题，如果有一天它被回答了，会改变所有人对这个话题的理解。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 48.017,
+   "localDuration": 3.139,
+   "text": "注意这份简报里每一项的设计。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 51.156,
+   "localDuration": 4.261,
+   "text": "它不是把素材堆给你，它在强迫综合发生。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 55.577,
+   "localDuration": 4.319,
+   "text": "一个博士生手工做出这份东西，要四十八小时。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 59.896,
+   "localDuration": 1.85,
+   "text": "你刚才花了九十秒。"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "summary",
+ "dataDuration": 38.2,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_10.html",
+ "topbarIndex": "[10/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 6.761,
+   "text": "如果你今天只能记住一件事，请记住——你不需要五分钟，先用一分钟。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.913,
+   "localDuration": 1.949,
+   "text": "挑一个你正在卡壳的话题。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.862,
+   "localDuration": 5.849,
+   "text": "不是学一个新词，是你这周真的要做决定、要写、要 pitch 的那一件事。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.711,
+   "localDuration": 3.736,
+   "text": "打开 Claude，只跑第一个 prompt。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.447,
+   "localDuration": 1.625,
+   "text": "让五个人格各说两句。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 20.233,
+   "localDuration": 5.995,
+   "text": "光是这一步，你就会感觉到，平时你拿到的，确实只是其中一个声音。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.389,
+   "localDuration": 2.629,
+   "text": "剩下三步，跑完整再花四分钟。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.018,
+   "localDuration": 3.192,
+   "text": "然后再来对照你之前对这件事的判断。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.365,
+   "localDuration": 3.59,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 35.955,
+   "localDuration": 1.256,
+   "text": "我们下期再见。"
+  }
+ ]
+}

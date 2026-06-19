@@ -1,0 +1,34 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 23.833,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_1.html",
+ "topbarIndex": "[01/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.494,
+   "text": "怎么让你的 Claude 做研究做得像博士生？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.494,
+   "localDuration": 2.583,
+   "text": "不是换个大模型，也不是装什么插件。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.228,
+   "localDuration": 12.741,
+   "text": "斯坦福官方两年前就把方法证明完了——一篇 NAACL 论文、一套开源代码、一个免费在线 demo，多视角写出来的文章比当时最强对照组组织度高出百分之二十五。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.169,
+   "localDuration": 4.497,
+   "text": "整套方法可以压成四个 prompt，今天我们就拆这四步。"
+  }
+ ]
+}

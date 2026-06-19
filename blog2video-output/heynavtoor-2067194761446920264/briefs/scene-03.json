@@ -1,0 +1,94 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 65.1,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_3.html",
+ "topbarIndex": "[03/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.021,
+   "text": "这套方法论有个名字，叫 STORM。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.021,
+   "localDuration": 7.05,
+   "text": "Stanford 的 OVAL 实验室在 2024 年 NAACL 会议上正式发表。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.071,
+   "localDuration": 4.028,
+   "text": "全称很长——通过检索和多视角提问做主题大纲合成。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.256,
+   "localDuration": 1.619,
+   "text": "但你不用记全称。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.875,
+   "localDuration": 1.822,
+   "text": "记住一件事就够了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.856,
+   "localDuration": 4.397,
+   "text": "STORM 论文里给出了一个被同行评审过的硬数字。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.253,
+   "localDuration": 7.74,
+   "text": "用多视角方法生成的文章，比当时最强的对照方法，组织度高百分之二十五，覆盖广度高百分之十。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.132,
+   "localDuration": 1.989,
+   "text": "这两个数字非常关键。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.121,
+   "localDuration": 2.784,
+   "text": "它不是营销话术，是学术评测。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 34.905,
+   "localDuration": 11.335,
+   "text": "它在说——多视角提问不是\"听起来高级一点\"，是在统计意义上，真的能把那些单 prompt 永远抓不到的盲点捞回来。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 46.404,
+   "localDuration": 6.207,
+   "text": "而 STORM 的真正突破，不是它的代码，也不是它的 demo 网站。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 52.611,
+   "localDuration": 5.674,
+   "text": "是它把博士生做研究的那套思考方法，拆成了四个可以复制粘贴的步骤。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 58.428,
+   "localDuration": 3.165,
+   "text": "代码你不用装，demo 你不用打开。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 61.593,
+   "localDuration": 3.341,
+   "text": "这套思维方式本身，才是你能搬走的东西。"
+  }
+ ]
+}

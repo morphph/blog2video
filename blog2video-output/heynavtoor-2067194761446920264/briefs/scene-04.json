@@ -1,0 +1,88 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 52,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_4.html",
+ "topbarIndex": "[04/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.846,
+   "text": "第一个 prompt 做一件事——让 Claude 同时扮演五个人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.992,
+   "localDuration": 5.438,
+   "text": "实践者、学者、怀疑论者、经济学家、历史学家。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.572,
+   "localDuration": 5.826,
+   "text": "这个 cast 是固定的，每一个都被分配了一个其他四个看不到的角度。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.398,
+   "localDuration": 2.742,
+   "text": "实践者告诉你学者忽略的现实细节。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.14,
+   "localDuration": 2.913,
+   "text": "学者告诉你同行评审证据真正怎么说。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.053,
+   "localDuration": 3.942,
+   "text": "怀疑论者攻击主流，问那些支持者刻意回避的反证。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.16,
+   "localDuration": 3.377,
+   "text": "经济学家追问谁从这个叙事里赚到了钱。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.537,
+   "localDuration": 5.439,
+   "text": "历史学家把当下的事件，拉回到曾经发生过的相似剧本里去对照。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.124,
+   "localDuration": 8.131,
+   "text": "你让模型一次产出这五个人的核心立场、最强证据、还有\"只有这个视角才会告诉你的那句话\"。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 43.404,
+   "localDuration": 0.64,
+   "text": "六十秒。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 44.044,
+   "localDuration": 4.159,
+   "text": "你得到的是单 prompt 一辈子都给不出的截面差。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 48.372,
+   "localDuration": 1.58,
+   "text": "这是这套方法的入口。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 49.952,
+   "localDuration": 1.896,
+   "text": "但它只是入口，不是答案。"
+  }
+ ]
+}

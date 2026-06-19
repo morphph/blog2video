@@ -1,0 +1,88 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 64.167,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_5.html",
+ "topbarIndex": "[05/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 7.876,
+   "text": "如果你只走到第一步，把五个人格的输出拿到手就收工，你做的事和把五个搜索结果拼到一起没区别。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.036,
+   "localDuration": 1.712,
+   "text": "真正的分水岭是第二步。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.748,
+   "localDuration": 4.202,
+   "text": "让 Claude 把这五个声音里互相打架的地方画出来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.12,
+   "localDuration": 2.043,
+   "text": "哪两个视角直接矛盾？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.163,
+   "localDuration": 2.042,
+   "text": "具体冲突在哪句话上？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 18.205,
+   "localDuration": 3.881,
+   "text": "哪个视角的证据最强，哪个最弱，为什么？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.086,
+   "localDuration": 5.924,
+   "text": "如果只能回答一个问题来解开最大的那个矛盾，那个问题是什么？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.16,
+   "localDuration": 6.878,
+   "text": "所有五个视角都同意的是什么——这部分大概率为真，因为连对立面都在确认。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.038,
+   "localDuration": 7.86,
+   "text": "最后，五个视角里都没人提到的是什么——这是整个领域的盲点，往往是你最值钱的发现。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 43.064,
+   "localDuration": 10.988,
+   "text": "原文有一句话我特别想直接念给你听：如果所有人都同意，它大概率是真的；如果所有人都没碰，你刚找到了整个领域的缺口。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 54.188,
+   "localDuration": 1.776,
+   "text": "大多数人跳过这一步。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 55.964,
+   "localDuration": 3.198,
+   "text": "这是表面理解和真正专业之间的那条线。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 59.3,
+   "localDuration": 4.718,
+   "text": "跨过去，你就拿到了五分钟前还没人帮你做过的对撞分析。"
+  }
+ ]
+}

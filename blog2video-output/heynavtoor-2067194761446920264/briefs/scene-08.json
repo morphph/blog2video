@@ -1,0 +1,112 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 83.1,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_8.html",
+ "topbarIndex": "[08/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 3.441,
+   "text": "讲到这里我得停下来说一句不那么爽的话。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.616,
+   "localDuration": 1.816,
+   "text": "这套方法不是万能的。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.596,
+   "localDuration": 8.86,
+   "text": "实践者、学者、怀疑论者、经济学家、历史学家——这个固定 cast 本身就是一种偏倚。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.456,
+   "localDuration": 1.899,
+   "text": "监管者的声音在哪？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.355,
+   "localDuration": 2.109,
+   "text": "终端用户的声音在哪？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 18.664,
+   "localDuration": 4.289,
+   "text": "被这个议题影响、但完全没机会发声的弱势群体在哪？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.092,
+   "localDuration": 6.915,
+   "text": "这就是为什么第四个 prompt 里有那一道题——是否还有一个第六视角被漏掉了，足以改变结论？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.007,
+   "localDuration": 2.795,
+   "text": "作者自己心里清楚这个 cast 不全。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.956,
+   "localDuration": 1.964,
+   "text": "还有一个边界要承认。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 34.92,
+   "localDuration": 5.892,
+   "text": "这套四步流程，只在有争议、有多方利益相关者的话题上回报最高。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.812,
+   "localDuration": 7.659,
+   "text": "商业决策、面试调研、投资判断、谈判准备、演讲设计——这些场景才配得上跑完整套。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 48.616,
+   "localDuration": 8.294,
+   "text": "你查一个 API 函数签名也跑五视角加矛盾图加同行评审，那是杀鸡用牛刀。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 57.076,
+   "localDuration": 1.914,
+   "text": "最后一个隐藏依赖。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 58.99,
+   "localDuration": 4.464,
+   "text": "整套方法的天花板，由第一步的输出质量定死。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 63.592,
+   "localDuration": 12.52,
+   "text": "如果 Claude 在第一步把五个人格写成了五个换皮的多数派——比如怀疑论者写得也很主流——那后面三步就找不到真矛盾，整套流程会塌缩回单 prompt 的均值回归。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 76.264,
+   "localDuration": 5.177,
+   "text": "你需要在第一步的输出上，肉眼盯一下——这五个声音真的不一样吗？"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 81.441,
+   "localDuration": 1.503,
+   "text": "还是其实长得很像？"
+  }
+ ]
+}

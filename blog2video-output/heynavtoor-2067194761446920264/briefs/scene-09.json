@@ -1,0 +1,76 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 62.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_9.html",
+ "topbarIndex": "[09/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.004,
+   "localDuration": 5.438,
+   "text": "把整篇文章拉远了看，你会发现它真正在讲的不是一个 prompt 模板。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.584,
+   "localDuration": 2.152,
+   "text": "它在讲一件认知套利的事。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.888,
+   "localDuration": 12.236,
+   "text": "Stanford 的论文在 2024 年就发表了，同行评审做完了，代码丢在 GitHub 上挂 MIT 协议，免费 demo 现在就在网上开着。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 20.124,
+   "localDuration": 3.059,
+   "text": "这套东西的所有可得性条件，全部齐备。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.332,
+   "localDuration": 1.305,
+   "text": "但几乎没人用。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.808,
+   "localDuration": 4.941,
+   "text": "可得性齐全 + 扩散为零，这个组合本身就是一条信号。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.749,
+   "localDuration": 11.213,
+   "text": "它告诉你扩散的瓶颈从来不是技术，是认知摩擦力——绝大多数人，连\"我可以用五个视角同时看同一件事\"这种思考方式都没习惯。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.116,
+   "localDuration": 5.868,
+   "text": "而正是这个摩擦力，给了今天看到这条视频的你一个十八个月的窗口。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 47.128,
+   "localDuration": 5.576,
+   "text": "十八个月之后，这类工作流会被烧进每一个 AI 工具里，变成默认。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 52.704,
+   "localDuration": 1.569,
+   "text": "那时候这条边消失。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 54.436,
+   "localDuration": 8.387,
+   "text": "而单 prompt 永远只能给你多数派的答案，所有值得做的研究，结论都藏在少数派的反对意见里。"
+  }
+ ]
+}

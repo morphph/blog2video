@@ -1,0 +1,82 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 60.767,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/heynavtoor-2067194761446920264/slide_2.html",
+ "topbarIndex": "[02/10]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.553,
+   "text": "先承认一件让人不舒服的事。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.552,
+   "localDuration": 4.909,
+   "text": "大多数人用 Claude，本质上就是把它当搜索框。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.461,
+   "localDuration": 3.142,
+   "text": "问一句，拿一个答案，关掉标签页。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.763,
+   "localDuration": 2.397,
+   "text": "这不是 Claude 不行。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 13.16,
+   "localDuration": 3.424,
+   "text": "是你的提问方式，决定了它只能回这个层级。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.739,
+   "localDuration": 5.952,
+   "text": "当你问\"告诉我关于 X 的情况\"，模型给你的，永远是多数派观点。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.691,
+   "localDuration": 5.58,
+   "text": "是这个领域里被说得最多、引用率最高、最不会得罪人的那个框架。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.271,
+   "localDuration": 1.116,
+   "text": "也就是表面。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 29.555,
+   "localDuration": 2.366,
+   "text": "但你想要的，从来不是表面。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 31.921,
+   "localDuration": 8.192,
+   "text": "一个每天在地里干活的实践者看到的 X，和一个研究了十年的学者看到的 X，是两件不同的东西。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.283,
+   "localDuration": 15.515,
+   "text": "再加上一个怀疑这套主流叙事根本就是错的人、一个跟着钱走的经济学家、一个见过类似剧本的历史学家——你会发现，同一个话题，被五个人看，能炸开五个完全不同的截面。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 55.943,
+   "localDuration": 4.672,
+   "text": "所有真正值钱的洞察，都活在这五个截面对撞出来的缝里。"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .miss{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s08'] .miss .mx{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:3px 12px}
+[data-composition-id='s08'] .ask{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;letter-spacing:.01em}
+[data-composition-id='s08'] .ask .q{color:#ccff4d}
+[data-composition-id='s08'] .scopes{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s08'] .scopes .sc{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s08'] .antiex{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#ff6b5e}
+[data-composition-id='s08'] .collapse{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85}
+[data-composition-id='s08'] .collapse b{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="83.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · STANFORD STORM<span class="b-cur"></span></div>
+      <div class="idx">[08/10]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// HONEST TRADEOFFS · <span class="acc">三个边界</span></div>
+      <div class="h1" style="margin-top:14px">这套方法<span class="em">不是万能的</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="code">CAST</span> 偏倚:固定 5 人本身就是一种偏倚</div>
+          <div class="rd r1d">实践者 / 学者 / 怀疑论者 / 经济学家 / 历史学家</div>
+          <div class="miss"><span class="mx">监管者?</span><span class="mx">终端用户?</span><span class="mx">弱势群体?</span></div>
+          <div class="ask">// Prompt 4 兜底:<span class="q">是否还有第六视角被漏掉?</span></div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">适用边界:回报最高 = <span class="code">争议 + 多方利益</span></div>
+          <div class="scopes"><span class="sc">商业决策</span><span class="sc">面试调研</span><span class="sc">投资判断</span><span class="sc">谈判准备</span><span class="sc">演讲设计</span></div>
+          <div class="antiex">// 查 API 函数签名 → 杀鸡用牛刀</div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">隐藏依赖:天花板 = <span class="warn-t">Prompt 1 的输出质量</span></div>
+          <div class="rd r3d">5 个人格写成 <span class="warn-t">5 个换皮多数派</span> → 后三步找不到真矛盾</div>
+          <div class="collapse">// 整套塌缩 → <b>单 prompt 均值回归</b></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="3.441" data-track-index="5"><div class="sub-inner">讲到这里我得停下来说一句<span class="sub-k">不那么爽的话</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.616" data-duration="1.816" data-track-index="5"><div class="sub-inner">这套方法<span class="sub-k">不是万能的</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.596" data-duration="8.86" data-track-index="5"><div class="sub-inner">实践者、学者、怀疑论者、经济学家、历史学家——这个<span class="sub-k">固定 cast</span> 本身就是一种偏倚。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.456" data-duration="1.899" data-track-index="5"><div class="sub-inner"><span class="sub-k">监管者</span>的声音在哪？</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.355" data-duration="2.109" data-track-index="5"><div class="sub-inner"><span class="sub-k">终端用户</span>的声音在哪？</div></div>
+    <div id="sub-6" class="clip sub" data-start="18.664" data-duration="4.289" data-track-index="5"><div class="sub-inner">被这个议题影响、但完全没机会发声的<span class="sub-k">弱势群体</span>在哪？</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.092" data-duration="6.915" data-track-index="5"><div class="sub-inner">这就是为什么第四个 prompt 里有那一道题——是否还有一个<span class="sub-k">第六视角</span>被漏掉了，足以改变结论？</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.007" data-duration="2.795" data-track-index="5"><div class="sub-inner">作者自己心里清楚这个 <span class="sub-k">cast 不全</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.956" data-duration="1.964" data-track-index="5"><div class="sub-inner">还有一个<span class="sub-k">边界</span>要承认。</div></div>
+    <div id="sub-10" class="clip sub" data-start="34.92" data-duration="5.892" data-track-index="5"><div class="sub-inner">这套四步流程，只在<span class="sub-k">有争议、有多方利益相关者</span>的话题上回报最高。</div></div>
+    <div id="sub-11" class="clip sub" data-start="40.812" data-duration="7.659" data-track-index="5"><div class="sub-inner">商业决策、面试调研、投资判断、谈判准备、演讲设计——这些场景才<span class="sub-k">配得上跑完整套</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="48.616" data-duration="8.294" data-track-index="5"><div class="sub-inner">你查一个 API 函数签名也跑五视角加矛盾图加同行评审，那是<span class="sub-k">杀鸡用牛刀</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="57.076" data-duration="1.914" data-track-index="5"><div class="sub-inner">最后一个<span class="sub-k">隐藏依赖</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="58.99" data-duration="4.464" data-track-index="5"><div class="sub-inner">整套方法的天花板，由<span class="sub-k">第一步的输出质量</span>定死。</div></div>
+    <div id="sub-15" class="clip sub" data-start="63.592" data-duration="12.52" data-track-index="5"><div class="sub-inner">如果 Claude 在第一步把五个人格写成了五个换皮的多数派——比如怀疑论者写得也很主流——那后面三步就找不到真矛盾，整套流程会<span class="sub-k">塌缩回单 prompt 的均值回归</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="76.264" data-duration="5.177" data-track-index="5"><div class="sub-inner">你需要在第一步的输出上，<span class="sub-k">肉眼盯一下</span>——这五个声音真的不一样吗？</div></div>
+    <div id="sub-17" class="clip sub" data-start="81.441" data-duration="1.503" data-track-index="5"><div class="sub-inner">还是其实<span class="sub-k">长得很像</span>？</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.7, {y:18, d:.4, ease:'expo.out'});
+    // LIMIT 01 —— cast 偏倚
+    D2.enter(tl, R+'.i1', 5.7, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r1d', 7.2, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.i1 .miss .mx', 14.5, {y:10, step:1.95, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.ask', 23.2, {y:10, d:.32, ease:'power2.out'});
+    // LIMIT 02 —— 适用边界
+    D2.enter(tl, R+'.i2', 33.1, {x:-22, ease:'expo.out'});
+    D2.stagger(tl, R+'.i2 .scopes .sc', 41.0, {y:10, step:.36, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.antiex', 48.8, {y:10, d:.32, ease:'power2.out'});
+    // LIMIT 03 —— 隐藏依赖
+    D2.enter(tl, R+'.i3', 57.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r3d', 63.7, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.collapse', 76.3, {y:10, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',3.616],['#sub-3',5.596],['#sub-4',14.456],['#sub-5',16.355],['#sub-6',18.664],['#sub-7',23.092],['#sub-8',30.007],['#sub-9',32.956],['#sub-10',34.92],['#sub-11',40.812],['#sub-12',48.616],['#sub-13',57.076],['#sub-14',58.99],['#sub-15',63.592],['#sub-16',76.264],['#sub-17',81.441]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 83.1, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

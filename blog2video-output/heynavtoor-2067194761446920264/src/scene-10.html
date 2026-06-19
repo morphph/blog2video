@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有(收官·summary;多 beat 收官,沿用 akshay scene-10 beat 结构)—— */
+[data-composition-id='s10'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:236px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;
+  box-sizing:border-box;transform-origin:50% 42%}
+[data-composition-id='s10'] .h1.xl{font-size:80px;line-height:1.1}
+
+/* beat A —— 今天只记一件事:先用一分钟 */
+[data-composition-id='s10'] .a-min{margin-top:30px;display:flex;align-items:baseline;gap:24px;flex-wrap:wrap}
+[data-composition-id='s10'] .a-min .strike{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:60px;color:#8a8a85;text-decoration:line-through;text-decoration-color:#ff6b5e;text-decoration-thickness:4px;letter-spacing:-.01em}
+[data-composition-id='s10'] .a-min .ar{font-family:'JetBrains Mono',monospace;font-size:44px;color:#8a8a85}
+[data-composition-id='s10'] .a-min .one{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:72px;color:#ccff4d;letter-spacing:-.01em}
+[data-composition-id='s10'] .a-pick{margin-top:36px}
+[data-composition-id='s10'] .a-pick .rt{font-size:38px}
+[data-composition-id='s10'] .a-pick .rd{font-size:26px}
+[data-composition-id='s10'] .a-pick .rd .em{color:#ccff4d;font-weight:600}
+
+/* beat B —— 终端动作卡:claude / prompt 1 / 5 人格 / 剩下三步 */
+[data-composition-id='s10'] .b-kick{margin-bottom:0}
+[data-composition-id='s10'] .b-term{margin-top:22px}
+[data-composition-id='s10'] .b-term .term-body{padding:36px 40px 40px}
+[data-composition-id='s10'] .cmd{font-family:'JetBrains Mono',monospace;font-size:38px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .cmd .p{color:#ccff4d;margin-right:16px}
+[data-composition-id='s10'] .cmd .cm{color:#8a8a85;margin-left:14px;font-size:28px}
+[data-composition-id='s10'] .cmd2{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s10'] .cmd2 .ar{color:#8a8a85;margin-right:14px}
+[data-composition-id='s10'] .cmd2 .ok{color:#ccff4d}
+[data-composition-id='s10'] .cmd2 .em{color:#edebe6}
+[data-composition-id='s10'] .b-after{margin-top:24px;display:flex;gap:18px;width:100%}
+[data-composition-id='s10'] .b-after .stat{flex:1;padding:22px 16px}
+[data-composition-id='s10'] .b-after .stat .num{font-size:54px}
+[data-composition-id='s10'] .b-after .stat .lab{font-size:22px;margin-top:8px}
+
+/* beat C —— 价值升华 + 品牌 outro */
+[data-composition-id='s10'] .c-slogan{margin-top:30px;font-weight:700;font-size:50px;color:#edebe6;line-height:1.35}
+[data-composition-id='s10'] .c-slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s10'] .c-signoff{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="38.2" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[10/10]</div>
+    </div>
+
+    <!-- beat A — 今天只记一件事:先用一分钟(sub-1..3, 0–14.7s) -->
+    <div class="beat" id="beatA">
+      <div class="kicker a-kick">// 今天只记<span class="acc">一件事</span></div>
+      <div class="a-min">
+        <span class="strike">5 min</span>
+        <span class="ar">→</span>
+        <span class="one">1 min</span>
+      </div>
+      <div class="h1 xl a-h1" style="margin-top:18px">不用五分钟,<br>先用<span class="em">一分钟</span></div>
+      <div class="rows a-pick">
+        <div class="row a-row"><span class="n">→</span><div class="rb"><div class="rt">挑一个你正在 <span class="code">卡壳</span> 的话题</div><div class="rd">不是学新词 —— 这周你<span class="em">真的要做决定 / 要写 / 要 pitch</span> 的那一件事</div></div></div>
+      </div>
+    </div>
+
+    <!-- beat B — 一分钟动作:打开 Claude,只跑 Prompt 1(sub-4..8, 14.7–32.2s) -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick">// 这一分钟,只<span class="acc">跑一步</span></div>
+      <div class="term b-term">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@storm: ~</span></div>
+        <div class="term-body">
+          <div class="cmd b-c1"><span class="p">$</span>claude<span class="cm"># 打开 Claude</span></div>
+          <div class="cmd2 b-c2"><span class="ar">›</span>只跑 <span class="ok">Prompt 1</span></div>
+          <div class="cmd2 b-c3"><span class="ar">›</span>让 <span class="ok">5 个人格</span> 各说两句<span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+      <div class="stats b-after">
+        <div class="stat b-st1"><div class="num">1<span style="font-size:32px;color:#8a8a85;margin-left:4px">min</span></div><div class="lab">第一步,先听见<br>五个声音</div></div>
+        <div class="stat key b-st2"><div class="num">+4<span style="font-size:32px;margin-left:4px">min</span></div><div class="lab">剩下三步,<br>跑完整再花</div></div>
+        <div class="stat b-st3" style="border-color:rgba(95,211,232,.4)"><div class="num" style="color:#5fd3e8">对照</div><div class="lab">回头看你之前<br>对这件事的判断</div></div>
+      </div>
+    </div>
+
+    <!-- beat C — slogan + 品牌 outro(sub-9..10, 32.2–38.2s) -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick">// 收官 ·<span class="acc">我们下期再见</span></div>
+      <div class="c-slogan">AI 世界很吵,<br><span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip c-signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="6.761" data-track-index="5"><div class="sub-inner">如果你今天只能记住一件事,请记住——你不需要五分钟,<span class="sub-k">先用一分钟</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.913" data-duration="1.949" data-track-index="5"><div class="sub-inner">挑一个你正在<span class="sub-k">卡壳</span>的话题。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.862" data-duration="5.849" data-track-index="5"><div class="sub-inner">不是学一个新词,是你这周真的要<span class="sub-k">做决定、要写、要 pitch</span> 的那一件事。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.711" data-duration="3.736" data-track-index="5"><div class="sub-inner">打开 Claude,只跑<span class="sub-k">第一个 prompt</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.447" data-duration="1.625" data-track-index="5"><div class="sub-inner">让<span class="sub-k">五个人格</span>各说两句。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.233" data-duration="5.995" data-track-index="5"><div class="sub-inner">光是这一步,你就会感觉到,平时你拿到的,<span class="sub-k">确实只是其中一个声音</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.389" data-duration="2.629" data-track-index="5"><div class="sub-inner">剩下三步,跑完整<span class="sub-k">再花四分钟</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.018" data-duration="3.192" data-track-index="5"><div class="sub-inner">然后再来对照你之前对这件事的<span class="sub-k">判断</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.365" data-duration="3.59" data-track-index="5"><div class="sub-inner">AI 世界很吵,<span class="sub-k">精读一篇,胜过刷一百条</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="35.955" data-duration="1.256" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* ===== beat A — 今天只记一件事(sub-1..3, 0–14.7s) ===== */
+    tl.from(R+'.a-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},.4);
+    tl.from(R+'.a-min .strike',{x:-14,opacity:0,duration:.34,ease:'power2.out'},1.1);
+    tl.from(R+'.a-min .ar',{opacity:0,duration:.28,ease:'power1.out'},1.6);
+    tl.from(R+'.a-min .one',{x:14,opacity:0,duration:.36,ease:'power3.out'},2.0);
+    tl.from(R+'.a-h1',{y:22,opacity:0,duration:.46,ease:'expo.out'},3.0);
+    tl.from(R+'.a-pick',{y:18,opacity:0,duration:.4,ease:'power3.out'},7.0);
+    tl.from(R+'.a-pick .rd',{opacity:0,duration:.36,ease:'power2.out'},9.0);
+    tl.to(R+'#beatA',{scale:1.025,duration:14.2,ease:'none'},.5);
+    /* A → B */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},14.3);
+    tl.set(R+'#beatA',{opacity:0},14.71);
+    tl.set(R+'#beatB',{opacity:1},14.71);
+
+    /* ===== beat B — 终端动作卡(sub-4..8, 14.7–32.2s) ===== */
+    tl.from(R+'.b-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},15.0);
+    tl.from(R+'.b-term',{y:24,opacity:0,duration:.46,ease:'expo.out'},15.6);
+    tl.from(R+'.b-term .term-bar',{opacity:0,duration:.3,ease:'power1.out'},15.8);
+    tl.from(R+'.b-c1',{x:-16,opacity:0,duration:.32,ease:'power2.out'},16.4);
+    tl.from(R+'.b-c2',{x:-16,opacity:0,duration:.32,ease:'power3.out'},17.6);
+    tl.from(R+'.b-c3',{x:-16,opacity:0,duration:.32,ease:'power2.out'},18.7);
+    D2.blink(tl, R+'.cblink', 19.6, 12);
+    tl.from(R+'.b-st1',{y:18,opacity:0,duration:.36,ease:'power3.out'},20.4);
+    tl.from(R+'.b-st2',{y:18,opacity:0,duration:.36,ease:'power3.out'},26.5);
+    tl.from(R+'.b-st3',{y:18,opacity:0,duration:.36,ease:'power3.out'},29.2);
+    tl.to(R+'#beatB',{scale:1.025,duration:17.4,ease:'none'},14.8);
+    /* B → C */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},31.9);
+    tl.set(R+'#beatB',{opacity:0},32.36);
+    tl.set(R+'#beatC',{opacity:1},32.36);
+
+    /* ===== beat C — slogan + outro(sub-9..10, 32.2–38.2s) ===== */
+    tl.from(R+'.c-kick',{y:-12,opacity:0,duration:.32,ease:'power2.out'},32.6);
+    tl.from(R+'.c-slogan',{y:16,opacity:0,duration:.42,ease:'power3.out'},33.1);
+    tl.from(R+'.c-signoff',{y:12,opacity:0,duration:.34,ease:'power2.out'},35.9);
+    tl.to(R+'#beatC',{scale:1.02,duration:5.6,ease:'none'},32.4);
+
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',6.913],['#sub-3',8.862],['#sub-4',14.711],['#sub-5',18.447],['#sub-6',20.233],['#sub-7',26.389],['#sub-8',29.018],['#sub-9',32.365],['#sub-10',35.955]].map(function(s){return [R+s[0],s[1]];}));
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

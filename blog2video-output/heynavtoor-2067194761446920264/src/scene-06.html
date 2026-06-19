@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .rows{gap:14px}
+[data-composition-id='s06'] .row{padding:20px 26px}
+[data-composition-id='s06'] .row .rt{font-size:36px}
+[data-composition-id='s06'] .row .rd{font-size:25px;margin-top:6px}
+[data-composition-id='s06'] .lead.small{font-size:34px;margin-top:14px}
+[data-composition-id='s06'] .lead.small .dim{color:#8a8a85}
+[data-composition-id='s06'] .punch{margin-top:30px;font-size:42px;font-weight:900;line-height:1.3;color:#edebe6}
+[data-composition-id='s06'] .punch .hl{padding:4px 14px}
+[data-composition-id='s06'] .timecmp{display:flex;gap:18px;width:100%;margin-top:24px}
+[data-composition-id='s06'] .timecmp .stat{padding:22px 14px}
+[data-composition-id='s06'] .timecmp .stat .num{font-size:56px}
+[data-composition-id='s06'] .timecmp .stat .lab{margin-top:8px;font-size:22px}
+[data-composition-id='s06'] .timecmp .stat.coral{border-color:rgba(255,107,94,.45)}
+[data-composition-id='s06'] .timecmp .stat.coral .num{color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="61.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · STORM 四提示词<span class="b-cur"></span></div>
+      <div class="idx">[06/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// PROMPT 3 · <span class="acc">CEO BRIEFING</span></div>
+      <div class="h1" style="margin-top:16px">两份原料,<span class="em">烧成简报</span></div>
+
+      <div class="lead small dim" style="margin-top:14px">一次给你<span style="color:#ccff4d;font-weight:700">五样东西</span></div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">60 秒能讲清的<span class="code">高层摘要</span></div>
+          <div class="rd">要带 nuance,不是新闻头条那种平面化</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">5 条<span class="code">最重要发现</span>,按可靠度排序</div>
+          <div class="rd">每条标注 —— 哪些视角支持,哪些视角挑战</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">一条<span class="code">隐藏连接</span></div>
+          <div class="rd">五个视角并排放,才会浮现的非显然关联</div>
+        </div></div>
+
+        <div class="row r4"><div class="n">04</div><div class="rb">
+          <div class="rt">针对你角色的<span class="code">可执行建议</span></div>
+          <div class="rd">要求够具体</div>
+        </div></div>
+
+        <div class="row r5"><div class="n">05</div><div class="rb">
+          <div class="rt">一个<span class="code">前沿问题</span></div>
+          <div class="rd">被回答后,会改变所有人对话题的理解</div>
+        </div></div>
+      </div>
+
+      <div class="punch">不是堆素材,<span class="hl"><span class="bar"></span><span class="tx">是强迫综合</span></span></div>
+
+      <div class="timecmp">
+        <div class="stat coral"><div class="num">48h</div><div class="lab">PhD 学生手工</div></div>
+        <div class="stat key"><div class="num">90s</div><div class="lab">你刚才花掉</div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.323" data-track-index="5"><div class="sub-inner">到这里你手上有两份原料——<span class="sub-k">五个截面</span>,和它们之间的冲突地图。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.316" data-duration="5.874" data-track-index="5"><div class="sub-inner">第三个 prompt 把这两份原料烧成一份给 <span class="sub-k">CEO 看的简报</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.333" data-duration="2.28" data-track-index="5"><div class="sub-inner">它要求 Claude 一次给你<span class="sub-k">五样东西</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.781" data-duration="7.188" data-track-index="5"><div class="sub-inner">一段六十秒能讲清的<span class="sub-k">高层摘要</span>,但要带 nuance,不是新闻头条那种平面化。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.969" data-duration="7.77" data-track-index="5"><div class="sub-inner">然后是五条最重要的发现,<span class="sub-k">按可靠度排序</span>,每一条都要标注哪些视角支持、哪些视角挑战。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.901" data-duration="7.415" data-track-index="5"><div class="sub-inner">再然后是一条<span class="sub-k">隐藏连接</span>——只有把五个视角并排放在一起才会浮现的那条非显然的关联。</div></div>
+    <div id="sub-7" class="clip sub" data-start="36.316" data-duration="4.943" data-track-index="5"><div class="sub-inner">再然后是一条针对你具体角色的<span class="sub-k">可执行建议</span>,要求够具体。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.429" data-duration="6.425" data-track-index="5"><div class="sub-inner">最后是一个<span class="sub-k">前沿问题</span>,如果有一天它被回答了,会改变所有人对这个话题的理解。</div></div>
+    <div id="sub-9" class="clip sub" data-start="48.017" data-duration="3.139" data-track-index="5"><div class="sub-inner">注意这份简报里<span class="sub-k">每一项</span>的设计。</div></div>
+    <div id="sub-10" class="clip sub" data-start="51.156" data-duration="4.261" data-track-index="5"><div class="sub-inner">它不是把素材堆给你,它在<span class="sub-k">强迫综合</span>发生。</div></div>
+    <div id="sub-11" class="clip sub" data-start="55.577" data-duration="4.319" data-track-index="5"><div class="sub-inner">一个博士生手工做出这份东西,要<span class="sub-k">四十八小时</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="59.896" data-duration="1.85" data-track-index="5"><div class="sub-inner">你刚才花了<span class="sub-k">九十秒</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead.small', 11.4, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 14.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 21.2, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3', 29.1, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r4', 36.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r5', 41.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.punch', 51.3, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 52.0);
+    D2.enter(tl, R+'.timecmp .stat.coral', 55.7, {y:18, d:.35, ease:'power3.out'});
+    D2.enter(tl, R+'.timecmp .stat.key', 60.0, {y:18, d:.35, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.316],['#sub-3',11.333],['#sub-4',13.781],['#sub-5',20.969],['#sub-6',28.901],['#sub-7',36.316],['#sub-8',41.429],['#sub-9',48.017],['#sub-10',51.156],['#sub-11',55.577],['#sub-12',59.896]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 61.9, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

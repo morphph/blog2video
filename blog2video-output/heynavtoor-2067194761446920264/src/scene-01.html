@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat 叠放 + 极少量 tuning,均加 [data-composition-id='s01'] 前缀)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* BEAT A — hook question */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .a-q1{margin-top:26px;font-weight:900;font-size:88px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .a-q2{margin-top:8px;font-weight:900;font-size:88px;line-height:1.12;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s01'] .a-q2 .em{color:#ccff4d;margin:0 8px}
+[data-composition-id='s01'] .a-q2 .qm{margin-left:6px}
+[data-composition-id='s01'] .a-q2 .cur{display:inline-block;width:36px;height:72px;background:#ccff4d;margin-left:18px;vertical-align:-10px}
+
+/* BEAT B — ruled-out */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-title{margin-top:18px;font-weight:900;font-size:72px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .b-chips{margin-top:46px;display:flex;flex-direction:column;gap:18px;width:100%}
+[data-composition-id='s01'] .b-chip{display:flex;align-items:center;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px;position:relative}
+[data-composition-id='s01'] .b-chip .x{font-family:'JetBrains Mono',monospace;font-size:34px;color:#ff6b5e;font-weight:700;letter-spacing:.04em}
+[data-composition-id='s01'] .b-chip .ct{font-weight:600;font-size:40px;color:#edebe6}
+[data-composition-id='s01'] .b-chip .strike{text-decoration:line-through;text-decoration-color:#ff6b5e;text-decoration-thickness:3px;color:#8a8a85}
+
+/* BEAT C — Stanford research card + stats */
+[data-composition-id='s01'] .c-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .c-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .c-title{margin-top:18px;font-weight:900;font-size:64px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .c-title .em{color:#ccff4d}
+[data-composition-id='s01'] .c-card{margin-top:34px;background:#1c1c1e;border:1px solid #2a2a2c;width:100%;padding:30px 34px;position:relative}
+[data-composition-id='s01'] .c-card::before{content:'';position:absolute;top:-1px;left:-1px;width:26px;height:26px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+[data-composition-id='s01'] .c-card::after{content:'';position:absolute;bottom:-1px;right:-1px;width:26px;height:26px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+[data-composition-id='s01'] .c-card .lab{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;letter-spacing:.06em;font-weight:700}
+[data-composition-id='s01'] .c-card .src{margin-top:12px;font-weight:700;font-size:40px;color:#edebe6;line-height:1.3}
+[data-composition-id='s01'] .c-card .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+[data-composition-id='s01'] .c-card .meta .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:500;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:4px 14px;margin:0;vertical-align:0}
+[data-composition-id='s01'] .c-win{margin-top:26px;width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+[data-composition-id='s01'] .c-win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:124px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s01'] .c-win .lab{flex:1;font-weight:600;font-size:30px;color:#edebe6;line-height:1.4;text-align:right}
+[data-composition-id='s01'] .c-win .lab .dim{display:block;color:#8a8a85;font-weight:500;font-size:24px;margin-top:6px;font-family:'JetBrains Mono',monospace;letter-spacing:.04em}
+
+/* BEAT D — teaser */
+[data-composition-id='s01'] .d-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .d-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .d-q{margin-top:22px;font-weight:900;font-size:80px;line-height:1.2;color:#edebe6}
+[data-composition-id='s01'] .d-q .em{color:#ccff4d}
+[data-composition-id='s01'] .d-tag{margin-top:46px;display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 30px}
+[data-composition-id='s01'] .d-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s01'] .d-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="23.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[01/10]</div>
+    </div>
+
+    <!-- container we breathe -->
+    <div class="content">
+      <!-- BEAT A: hook question (0 → ~3.5) -->
+      <div class="beat" id="beatA">
+        <div class="a-kick">// THE REAL QUESTION</div>
+        <div class="a-q1">让 Claude 做研究</div>
+        <div class="a-q2"><span>做得像</span><span class="em">博士生</span><span class="qm">？</span><span class="cur"></span></div>
+      </div>
+
+      <!-- BEAT B: ruled out (3.5 → ~6.2) -->
+      <div class="beat" id="beatB" style="opacity:0">
+        <div class="b-kick">// NOT THIS</div>
+        <div class="b-title">不是换模型，<br>也不是装插件。</div>
+        <div class="b-chips">
+          <div class="b-chip bc1"><span class="x">✗</span><span class="ct"><span class="strike">换个更大的模型</span></span></div>
+          <div class="b-chip bc2"><span class="x">✗</span><span class="ct"><span class="strike">装什么神奇插件</span></span></div>
+        </div>
+      </div>
+
+      <!-- BEAT C: Stanford research evidence (6.2 → ~19) -->
+      <div class="beat" id="beatC" style="opacity:0">
+        <div class="c-kick">// EVIDENCE · <span class="acc">PUBLISHED 2024</span></div>
+        <div class="c-title">斯坦福两年前<br>就把方法<span class="em">证明完了</span>。</div>
+        <div class="c-card">
+          <div class="lab">SOURCE</div>
+          <div class="src">NAACL 2024 论文 + 开源代码 + 在线 demo</div>
+          <div class="meta">
+            <span class="tag">paper</span>
+            <span class="tag">open-source</span>
+            <span class="tag">free demo</span>
+          </div>
+        </div>
+        <div class="c-win">
+          <div class="num" id="c-num">+0%</div>
+          <div class="lab">多视角写作 vs 最强对照组<span class="dim">ORGANIZATION SCORE</span></div>
+        </div>
+      </div>
+
+      <!-- BEAT D: teaser (19 → 23.833) -->
+      <div class="beat" id="beatD" style="opacity:0">
+        <div class="d-kick">// NEXT</div>
+        <div class="d-q">整套方法可以压成<br><span class="em">四个 prompt</span>。</div>
+        <div class="d-tag"><span class="dot"></span><span class="lab">今天就拆这四步</span></div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time, brief 原值;build 脚本会削 10ms 防浮点重叠) -->
+    <div id="sub-1" class="clip sub" data-start="0"      data-duration="3.494"  data-track-index="5"><div class="sub-inner">怎么让你的 Claude 做研究做得像<span class="sub-k">博士生</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.494"  data-duration="2.583"  data-track-index="5"><div class="sub-inner">不是换个大模型，也不是<span class="sub-k">装什么插件</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.228"  data-duration="12.741" data-track-index="5"><div class="sub-inner">斯坦福官方两年前就把方法证明完了——一篇 NAACL 论文、一套开源代码、一个免费在线 demo，多视角写出来的文章比当时最强对照组组织度高出<span class="sub-k">百分之二十五</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.169" data-duration="4.497"  data-track-index="5"><div class="sub-inner">整套方法可以压成<span class="sub-k">四个 prompt</span>，今天我们就拆这四步。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    /* grid + topbar */
+    tl.from(R+'.grid',   {opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar', {y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* === BEAT A · hook (0 - 3.494) === */
+    tl.from(R+'.a-kick', {y:-12,opacity:0,duration:.3,ease:'power2.out'},0.35);
+    tl.from(R+'.a-q1',   {y:22,opacity:0,duration:.42,ease:'power3.out'},0.7);
+    tl.from(R+'.a-q2 > span:not(.cur):not(.em)',
+                         {y:18,opacity:0,duration:.32,ease:'power3.out',stagger:.06},1.4);
+    tl.from(R+'.a-q2 .em',{y:18,opacity:0,duration:.36,ease:'expo.out'},1.85);
+    tl.from(R+'.a-q2 .cur',{scale:2.4,opacity:0,duration:.3,ease:'expo.out'},2.2);
+    tl.to(  R+'.a-q2 .cur',{opacity:0,duration:.36,ease:'steps(1)',repeat:3,yoyo:true},2.55);
+
+    /* A -> B swap @ 3.494 */
+    tl.to( R+'#beatA',{opacity:0,duration:.36,ease:'power2.inOut'},3.20);
+    tl.set(R+'#beatA',{opacity:0},3.56);
+    tl.set(R+'#beatB',{opacity:1},3.55);
+
+    /* === BEAT B · ruled out (3.494 - 6.228) === */
+    tl.from(R+'.b-kick', {y:-12,opacity:0,duration:.3,ease:'power2.out'},3.65);
+    tl.from(R+'.b-title',{y:20,opacity:0,duration:.36,ease:'power3.out'},3.85);
+    tl.from(R+'.bc1',    {x:-24,opacity:0,duration:.3,ease:'power3.out'},4.55);
+    tl.from(R+'.bc2',    {x:-24,opacity:0,duration:.3,ease:'expo.out'},5.20);
+
+    /* B -> C swap @ 6.228 */
+    tl.to( R+'#beatB',{opacity:0,duration:.36,ease:'power2.inOut'},5.95);
+    tl.set(R+'#beatB',{opacity:0},6.31);
+    tl.set(R+'#beatC',{opacity:1},6.30);
+
+    /* === BEAT C · Stanford evidence (6.228 - 18.969) === */
+    tl.from(R+'.c-kick', {y:-12,opacity:0,duration:.3,ease:'power2.out'},6.45);
+    tl.from(R+'.c-title',{y:22,opacity:0,duration:.42,ease:'power3.out'},6.75);
+    tl.from(R+'.c-card', {y:24,opacity:0,duration:.45,ease:'expo.out'},9.50);
+    tl.from(R+'.c-card .meta .tag',
+                         {y:14,opacity:0,duration:.3,ease:'power3.out',stagger:.18},11.30);
+    tl.from(R+'.c-win',  {y:24,opacity:0,duration:.45,ease:'power3.out'},14.20);
+    D2.countUp(tl, R+'#c-num', 14.55, 0, 25, 2.4, {prefix:'+', suffix:'%'});
+
+    /* C -> D swap @ 19.169 */
+    tl.to( R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},18.75);
+    tl.set(R+'#beatC',{opacity:0},19.17);
+    tl.set(R+'#beatD',{opacity:1},19.20);
+
+    /* === BEAT D · teaser (19.169 - 23.833) === */
+    tl.from(R+'.d-kick',{opacity:0,duration:.3,ease:'power1.out'},19.35);
+    tl.from(R+'.d-q',   {y:24,opacity:0,duration:.42,ease:'power3.out'},19.65);
+    tl.from(R+'.d-q .em',{color:'#edebe6',duration:.32,ease:'power1.inOut'},20.85);
+    tl.from(R+'.d-tag', {y:18,opacity:0,duration:.36,ease:'expo.out'},21.55);
+
+    /* subtitle fade-ins */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.494],['#sub-3',6.228],['#sub-4',19.169]]
+      .map(function(s){return [R+s[0], s[1]];}));
+
+    /* breath — scene 01 是奇数 → 'in' */
+    D2.breath(tl, R+'.content', 23.833, 'in');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

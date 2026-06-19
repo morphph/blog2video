@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .askcard{width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 28px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s02'] .askcard .lab{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#8a8a85;letter-spacing:.06em;flex-shrink:0}
+[data-composition-id='s02'] .askcard .q{font-weight:700;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s02'] .askcard .q .dim{color:#8a8a85}
+[data-composition-id='s02'] .arrow{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;text-align:center;width:100%;margin:2px 0}
+[data-composition-id='s02'] .getcard{width:100%;background:#1c1c1e;border:1px solid rgba(204,255,77,.4);padding:20px 28px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s02'] .getcard .lab{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#ccff4d;letter-spacing:.06em;flex-shrink:0}
+[data-composition-id='s02'] .getcard .q{font-weight:700;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s02'] .getcard .q .em{color:#ccff4d}
+[data-composition-id='s02'] .getcard .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:22px;color:#8a8a85;border:1px solid #2a2a2c;padding:2px 12px;margin-left:8px}
+[data-composition-id='s02'] .lensgrid{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:22px}
+[data-composition-id='s02'] .lens{display:flex;align-items:center;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:14px 24px}
+[data-composition-id='s02'] .lens .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:#ccff4d;min-width:38px}
+[data-composition-id='s02'] .lens .who{font-weight:700;font-size:30px;color:#edebe6;line-height:1.2}
+[data-composition-id='s02'] .lens .ds{font-family:'JetBrains Mono',monospace;font-size:20px;color:#5fd3e8;letter-spacing:.02em;margin-left:auto;flex-shrink:0}
+[data-composition-id='s02'] .punch{margin-top:18px;font-weight:900;font-size:42px;color:#edebe6;line-height:1.28}
+[data-composition-id='s02'] .punch .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="60.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[02/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// <span class="acc">不舒服的真相</span></div>
+      <div class="h1 k-top" style="margin-top:18px">大多数人,把 Claude <span class="em">当搜索框</span></div>
+
+      <div class="askcard" style="margin-top:36px">
+        <div class="lab">YOU ASK</div>
+        <div class="q">"告诉我关于 <span class="dim">X</span> 的情况"</div>
+      </div>
+      <div class="arrow">▼</div>
+      <div class="getcard">
+        <div class="lab">YOU GET</div>
+        <div class="q">永远是 <span class="em">多数派观点</span><span class="tag gt-late">= 表面</span></div>
+      </div>
+
+      <div class="lensgrid">
+        <div class="lens l1"><div class="n">01</div><div class="who">实践者</div><div class="ds">在地里干活</div></div>
+        <div class="lens l2"><div class="n">02</div><div class="who">学者</div><div class="ds">研究了十年</div></div>
+        <div class="lens l3"><div class="n">03</div><div class="who">怀疑者</div><div class="ds">主流叙事根本就错</div></div>
+        <div class="lens l4"><div class="n">04</div><div class="who">经济学家</div><div class="ds">跟着钱走</div></div>
+        <div class="lens l5"><div class="n">05</div><div class="who">历史学家</div><div class="ds">见过类似的剧本</div></div>
+      </div>
+
+      <div class="punch p-late">真正值钱的洞察,活在<span class="em">五个截面对撞的缝里</span></div>
+    </div>
+
+    <!-- 字幕:brief.subtitles 逐条 -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.553" data-track-index="5"><div class="sub-inner">先承认一件让人<span class="sub-k">不舒服</span>的事。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.552" data-duration="4.909" data-track-index="5"><div class="sub-inner">大多数人用 Claude,本质上就是把它当<span class="sub-k">搜索框</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.461" data-duration="3.142" data-track-index="5"><div class="sub-inner">问一句,拿一个答案,<span class="sub-k">关掉标签页</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.763" data-duration="2.397" data-track-index="5"><div class="sub-inner">这不是 <span class="sub-k">Claude 不行</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="13.16" data-duration="3.424" data-track-index="5"><div class="sub-inner">是你的<span class="sub-k">提问方式</span>,决定了它只能回这个层级。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.739" data-duration="5.952" data-track-index="5"><div class="sub-inner">当你问"告诉我关于 X 的情况",模型给你的,永远是<span class="sub-k">多数派观点</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.691" data-duration="5.58" data-track-index="5"><div class="sub-inner">是这个领域里被说得最多、引用率最高、<span class="sub-k">最不会得罪人</span>的那个框架。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.271" data-duration="1.116" data-track-index="5"><div class="sub-inner">也就是<span class="sub-k">表面</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="29.555" data-duration="2.366" data-track-index="5"><div class="sub-inner">但你想要的,<span class="sub-k">从来不是表面</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="31.921" data-duration="8.192" data-track-index="5"><div class="sub-inner">一个每天在地里干活的<span class="sub-k">实践者</span>看到的 X,和一个研究了十年的学者看到的 X,是两件不同的东西。</div></div>
+    <div id="sub-11" class="clip sub" data-start="40.283" data-duration="15.515" data-track-index="5"><div class="sub-inner">再加上怀疑这套主流叙事的人、跟着钱走的经济学家、见过类似剧本的历史学家——同一个话题,被<span class="sub-k">五个人</span>看,能炸开五个完全不同的截面。</div></div>
+    <div id="sub-12" class="clip sub" data-start="55.943" data-duration="4.672" data-track-index="5"><div class="sub-inner">所有真正值钱的洞察,都活在这五个截面<span class="sub-k">对撞出来的缝</span>里。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* Beat A: kicker + 标题 + ask/get 卡 */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.k-top', 2.7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.askcard', 16.9, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.arrow', 22.7, {y:-8, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.getcard', 22.9, {y:18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.getcard .tag.gt-late', 28.4, {y:8, d:.3, ease:'power2.out'});
+
+    /* Beat B: 五镜头逐条 + punch */
+    D2.stagger(tl, R+'.lensgrid .lens', 32.1, {x:-22, step:1.55, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.punch.p-late', 56.1, {y:18, d:.4, ease:'expo.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.552],['#sub-3',7.461],['#sub-4',10.763],['#sub-5',13.16],['#sub-6',16.739],['#sub-7',22.691],['#sub-8',28.271],['#sub-9',29.555],['#sub-10',31.921],['#sub-11',40.283],['#sub-12',55.943]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 60.767, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

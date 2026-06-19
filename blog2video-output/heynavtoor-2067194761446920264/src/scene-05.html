@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .row .rd .gray{color:#8a8a85}
+[data-composition-id='s05'] .row.q5{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s05'] .row.q5 .n{color:#ff6b5e}
+[data-composition-id='s05'] .row.q5 .rd .warn{color:#ff6b5e;font-weight:600}
+[data-composition-id='s05'] .quote-card{width:100%;margin-top:26px;background:#1c1c1e;padding:24px 30px}
+[data-composition-id='s05'] .quote-card .qk{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s05'] .quote-card .qt{margin-top:12px;font-weight:600;font-size:32px;line-height:1.42;color:#edebe6}
+[data-composition-id='s05'] .quote-card .qt .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s05'] .quote-card .qt .nv{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="64.167" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[05/10]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// PROMPT 2 · <span class="acc">Contradiction Map</span></div>
+      <div class="h1" style="margin-top:14px">让 Claude 画出<br>5 个声音 <span class="em">互相打架</span> 的地方</div>
+
+      <div class="rows" style="margin-top:28px">
+        <div class="row q1"><div class="n">Q1</div><div class="rb">
+          <div class="rt">哪两个视角 <span class="code">直接矛盾</span></div>
+          <div class="rd q1d">冲突在哪句话上</div>
+        </div></div>
+
+        <div class="row q2"><div class="n">Q2</div><div class="rb">
+          <div class="rt">证据 <span class="code">最强</span> / <span class="code">最弱</span> 的视角是谁</div>
+        </div></div>
+
+        <div class="row q3"><div class="n">Q3</div><div class="rb">
+          <div class="rt">解开最大矛盾,只问 <span class="code">一个问题</span></div>
+        </div></div>
+
+        <div class="row q4"><div class="n">Q4</div><div class="rb">
+          <div class="rt">5 个视角都<span class="code">同意</span>什么 <span class="gray">→ 大概率为真</span></div>
+        </div></div>
+
+        <div class="row q5"><div class="n">Q5</div><div class="rb">
+          <div class="rt">5 个视角都<span class="code" style="color:#ff6b5e;background:rgba(255,107,94,.1);border-color:rgba(255,107,94,.35)">没碰</span>什么</div>
+          <div class="rd"><span class="warn">→ 整个领域的盲点</span></div>
+        </div></div>
+      </div>
+
+      <div class="quote-card">
+        <div class="qk">// 原文 · 直接引用</div>
+        <div class="qt">所有人都<span class="em">同意</span> → 大概率为真;<br>所有人都<span class="nv">没碰</span> → 整个领域的缺口。</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="7.876" data-track-index="5"><div class="sub-inner">如果你只走到第一步,把五个人格的输出拿到手就收工,你做的事和把<span class="sub-k">五个搜索结果拼到一起</span>没区别。</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.036" data-duration="1.712" data-track-index="5"><div class="sub-inner">真正的<span class="sub-k">分水岭</span>是第二步。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.748" data-duration="4.202" data-track-index="5"><div class="sub-inner">让 Claude 把这五个声音里<span class="sub-k">互相打架</span>的地方画出来。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.12" data-duration="2.043" data-track-index="5"><div class="sub-inner">哪两个视角<span class="sub-k">直接矛盾</span>?</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.163" data-duration="2.042" data-track-index="5"><div class="sub-inner">具体冲突在<span class="sub-k">哪句话</span>上?</div></div>
+    <div id="sub-6" class="clip sub" data-start="18.205" data-duration="3.881" data-track-index="5"><div class="sub-inner">哪个视角的证据<span class="sub-k">最强</span>,哪个最弱,为什么?</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.086" data-duration="5.924" data-track-index="5"><div class="sub-inner">如果只能回答<span class="sub-k">一个问题</span>来解开最大的那个矛盾,那个问题是什么?</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.16" data-duration="6.878" data-track-index="5"><div class="sub-inner">所有五个视角都<span class="sub-k">同意</span>的是什么——这部分大概率为真,因为连对立面都在确认。</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.038" data-duration="7.86" data-track-index="5"><div class="sub-inner">最后,五个视角里都没人提到的是什么——这是整个领域的<span class="sub-k">盲点</span>,往往是你最值钱的发现。</div></div>
+    <div id="sub-10" class="clip sub" data-start="43.064" data-duration="10.988" data-track-index="5"><div class="sub-inner">原文有一句话我特别想直接念给你听:如果所有人都<span class="sub-k">同意</span>,它大概率是真的;如果所有人都没碰,你刚找到了整个领域的缺口。</div></div>
+    <div id="sub-11" class="clip sub" data-start="54.188" data-duration="1.776" data-track-index="5"><div class="sub-inner">大多数人<span class="sub-k">跳过</span>这一步。</div></div>
+    <div id="sub-12" class="clip sub" data-start="55.964" data-duration="3.198" data-track-index="5"><div class="sub-inner">这是表面理解和<span class="sub-k">真正专业</span>之间的那条线。</div></div>
+    <div id="sub-13" class="clip sub" data-start="59.3" data-duration="4.718" data-track-index="5"><div class="sub-inner">跨过去,你就拿到了五分钟前还没人帮你做过的<span class="sub-k">对撞分析</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 9.8, {y:20, d:.42, ease:'expo.out'});
+    // Q1 整行 14.1 出,子说明 16.2 出
+    D2.enter(tl, R+'.q1', 14.1, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.q1d', 16.2, {y:10, d:.3, ease:'power2.out'});
+    // Q2
+    D2.enter(tl, R+'.q2', 18.2, {x:-22, ease:'expo.out'});
+    // Q3
+    D2.enter(tl, R+'.q3', 22.1, {x:-22, ease:'power3.out'});
+    // Q4
+    D2.enter(tl, R+'.q4', 28.2, {x:-22, ease:'power2.out'});
+    // Q5(coral 警示色)
+    D2.enter(tl, R+'.q5', 35.0, {x:-22, ease:'power3.out'});
+    // 原文 quote 卡片
+    D2.enter(tl, R+'.quote-card', 43.1, {y:18, d:.42, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',8.036],['#sub-3',9.748],['#sub-4',14.12],['#sub-5',16.163],['#sub-6',18.205],['#sub-7',22.086],['#sub-8',28.16],['#sub-9',35.038],['#sub-10',43.064],['#sub-11',54.188],['#sub-12',55.964],['#sub-13',59.3]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 64.167, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

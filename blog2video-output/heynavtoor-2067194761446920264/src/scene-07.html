@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .bugs{display:flex;gap:22px;width:100%;margin-top:28px}
+[data-composition-id='s07'] .bugs .col{padding:24px 24px}
+[data-composition-id='s07'] .bugs .col .ch{font-size:26px;margin-bottom:14px}
+[data-composition-id='s07'] .bugs .col .nm{font-size:30px;line-height:1.25}
+[data-composition-id='s07'] .bugs .col .ds{margin-top:8px;font-size:24px;line-height:1.4}
+[data-composition-id='s07'] .lim{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s07'] .lim .acc{color:#ccff4d}
+[data-composition-id='s07'] .arrow{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#ccff4d;letter-spacing:.06em;text-align:center;width:100%}
+[data-composition-id='s07'] .patches{margin-top:16px;display:flex;flex-direction:column;gap:10px;width:100%}
+[data-composition-id='s07'] .patches .row{padding:16px 24px}
+[data-composition-id='s07'] .patches .row .n{font-size:26px;min-width:40px}
+[data-composition-id='s07'] .patches .row .rt{font-size:30px;line-height:1.25}
+[data-composition-id='s07'] .patches .row .rd{margin-top:4px;font-size:22px;line-height:1.35}
+[data-composition-id='s07'] .punch{margin-top:22px;font-weight:900;font-size:38px;color:#edebe6;line-height:1.3}
+[data-composition-id='s07'] .punch .hl{padding:2px 12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="82.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[07/10]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// PROMPT 4 · <span class="acc">PEER REVIEW</span></div>
+      <div class="h1" style="margin-top:14px">Stanford 自己写的<br><span class="em">两个 bug</span></div>
+
+      <div class="bugs">
+        <div class="col b1">
+          <div class="ch">BUG 01</div>
+          <div class="it"><div class="nm">Source Bias</div><div class="ds">信源偏倚 · 多采它训练分布里熟悉的声源</div></div>
+        </div>
+        <div class="col alt b2">
+          <div class="ch">BUG 02</div>
+          <div class="it"><div class="nm">Fact Misassoc.</div><div class="ds">把 A 视角的事实,装到 B 视角的论证</div></div>
+        </div>
+      </div>
+
+      <div class="lim">// STORM paper · <span class="acc">limitations</span> 章节,白纸黑字</div>
+
+      <div class="arrow">↓ 精确打补丁</div>
+
+      <div class="patches">
+        <div class="row p1"><div class="n">01</div><div class="rb">
+          <div class="rt">给 <span class="code">5 条核心发现</span> 打可靠度分</div>
+        </div></div>
+        <div class="row p2"><div class="n">02</div><div class="rb">
+          <div class="rt">找出自己<span class="code">最不自信</span>的那一条</div>
+        </div></div>
+        <div class="row p3"><div class="n">03</div><div class="rb">
+          <div class="rt">偏倚检查 · 哪个视角被<span class="code">过度代表</span></div>
+        </div></div>
+        <div class="row p4"><div class="n">04</div><div class="rb">
+          <div class="rt">追问 <span class="code">第六视角</span> 有没有被漏掉</div>
+        </div></div>
+        <div class="row p5"><div class="n">05</div><div class="rb">
+          <div class="rt">给整份简报打 <span class="code">Stanford 教授</span> 会打的分</div>
+        </div></div>
+      </div>
+
+      <div class="punch">不是锦上添花 · <span class="hl"><span class="bar"></span><span class="tx">是它能 work 的根本原因</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="11.417" data-track-index="5"><div class="sub-inner">讲到这里,如果故事就停在这——四个步骤里只剩第四步还没讲——你可能会想,最后一步无非是"让 AI <span class="sub-k">自我反思</span>一下",老套路。</div></div>
+    <div id="sub-2" class="clip sub" data-start="11.569" data-duration="4.289" data-track-index="5"><div class="sub-inner">但这个 prompt 真正的设计含义,比"反思"<span class="sub-k">狠得多</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="15.997" data-duration="6.802" data-track-index="5"><div class="sub-inner">Stanford 团队在自己的论文里,亲自标注了 STORM 的<span class="sub-k">两个已知失败模式</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="22.799" data-duration="7.134" data-track-index="5"><div class="sub-inner">一个叫<span class="sub-k">信源偏倚</span>——模型在采样视角的时候,会不自觉地多采它训练分布里更熟悉的那一类声源。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.073" data-duration="7.017" data-track-index="5"><div class="sub-inner">一个叫<span class="sub-k">事实张冠李戴</span>——模型会把 A 视角里的事实,误装到 B 视角的论证里。</div></div>
+    <div id="sub-6" class="clip sub" data-start="37.237" data-duration="5.484" data-track-index="5"><div class="sub-inner">这两个 bug 不是猜的,是 Stanford 自己在 <span class="sub-k">limitations 章节</span>写明的。</div></div>
+    <div id="sub-7" class="clip sub" data-start="42.889" data-duration="5.612" data-track-index="5"><div class="sub-inner">第四个 prompt 就是精确对着这两个失败模式<span class="sub-k">打的补丁</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="48.649" data-duration="13.205" data-track-index="5"><div class="sub-inner">它强制 Claude 给五条核心发现<span class="sub-k">打可靠度分</span>、找出自己最不自信的那一条、做偏倚检查指出哪个视角在综合里被过度代表、追问有没有一个第六视角被漏掉、</div></div>
+    <div id="sub-9" class="clip sub" data-start="62.054" data-duration="4.114" data-track-index="5"><div class="sub-inner">最后给整份简报打一个 <span class="sub-k">Stanford 教授</span>会打的分。</div></div>
+    <div id="sub-10" class="clip sub" data-start="66.325" data-duration="6.727" data-track-index="5"><div class="sub-inner">这是把别人论文里 limitations 章节的措辞,直接<span class="sub-k">翻译成 prompt 设计</span>的工程化案例。</div></div>
+    <div id="sub-11" class="clip sub" data-start="73.201" data-duration="1.205" data-track-index="5"><div class="sub-inner">它<span class="sub-k">不是锦上添花</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="74.406" data-duration="8.285" data-track-index="5"><div class="sub-inner">它是这套方法之所以能在你的桌面上 work,而不是变成又一个被高估的 <span class="sub-k">ChatGPT trick</span> 的根本原因。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    // bug cols
+    D2.enter(tl, R+'.b1', 16.0, {x:-22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.b1 .it', 22.8, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.b2', 17.0, {x:22, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.b2 .it', 30.1, {y:14, d:.32, ease:'power2.out'});
+    // limitations caption
+    D2.enter(tl, R+'.lim', 37.2, {y:12, d:.32, ease:'power2.out'});
+    // arrow
+    D2.enter(tl, R+'.arrow', 42.9, {y:14, d:.32, ease:'power2.out'});
+    // patches (5 rows, paced to long sub-8 reading)
+    D2.enter(tl, R+'.p1', 48.7, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.p2', 51.7, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.p3', 55.0, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.p4', 58.5, {x:-22, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.p5', 62.1, {x:-22, d:.32, ease:'power3.out'});
+    // punch + sweep
+    D2.enter(tl, R+'.punch', 73.3, {y:16, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 74.5);
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',11.569],['#sub-3',15.997],['#sub-4',22.799],['#sub-5',30.073],['#sub-6',37.237],['#sub-7',42.889],['#sub-8',48.649],['#sub-9',62.054],['#sub-10',66.325],['#sub-11',73.201],['#sub-12',74.406]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 82.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

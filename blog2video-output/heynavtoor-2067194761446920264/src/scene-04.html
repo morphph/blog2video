@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .rows{gap:14px}
+[data-composition-id='s04'] .row{padding:20px 28px}
+[data-composition-id='s04'] .row .rt{font-size:38px}
+[data-composition-id='s04'] .row .rd{margin-top:6px;font-size:26px}
+[data-composition-id='s04'] .punch{font-family:'MiSans',sans-serif;font-weight:900;font-size:48px;line-height:1.25;color:#edebe6;margin-top:30px}
+[data-composition-id='s04'] .punch .em{color:#ccff4d}
+[data-composition-id='s04'] .endline{margin-top:20px;display:flex;align-items:center;gap:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s04'] .endline .dot{width:12px;height:12px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s04'] .endline .ek{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="52" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[04/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// PROMPT 1 · <span class="acc">Multi-Perspective Scan</span></div>
+      <div class="h1" style="margin-top:14px">同时扮演 <span class="em">5 个人</span></div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">实践者</div>
+          <div class="rd late1">学者忽略的<span class="ok">现实细节</span></div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">学者</div>
+          <div class="rd late2"><span class="ok">同行评审证据</span>真正怎么说</div>
+        </div></div>
+
+        <div class="row i3"><div class="n">03</div><div class="rb">
+          <div class="rt">怀疑论者</div>
+          <div class="rd late3">支持者刻意回避的<span class="ok">反证</span></div>
+        </div></div>
+
+        <div class="row i4"><div class="n">04</div><div class="rb">
+          <div class="rt">经济学家</div>
+          <div class="rd late4">谁从叙事里<span class="ok">赚到了钱</span></div>
+        </div></div>
+
+        <div class="row i5"><div class="n">05</div><div class="rb">
+          <div class="rt">历史学家</div>
+          <div class="rd late5">曾经发生过的<span class="ok">相似剧本</span></div>
+        </div></div>
+      </div>
+
+      <div class="punch">60 秒,一份<span class="hl"><span class="bar"></span><span class="tx">截面差</span></span></div>
+      <div class="endline late-end"><span class="dot"></span>入口 / <span class="ek">不是答案</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.846" data-track-index="5"><div class="sub-inner">第一个 prompt 做一件事——让 Claude 同时扮演<span class="sub-k">五个人</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.992" data-duration="5.438" data-track-index="5"><div class="sub-inner">实践者、学者、怀疑论者、<span class="sub-k">经济学家</span>、历史学家。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.572" data-duration="5.826" data-track-index="5"><div class="sub-inner">这个 cast 是固定的,每一个都被分配了一个<span class="sub-k">其他四个看不到的角度</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.398" data-duration="2.742" data-track-index="5"><div class="sub-inner">实践者告诉你学者忽略的<span class="sub-k">现实细节</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.14" data-duration="2.913" data-track-index="5"><div class="sub-inner">学者告诉你<span class="sub-k">同行评审证据</span>真正怎么说。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.053" data-duration="3.942" data-track-index="5"><div class="sub-inner">怀疑论者攻击主流,问那些支持者刻意回避的<span class="sub-k">反证</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.16" data-duration="3.377" data-track-index="5"><div class="sub-inner">经济学家追问<span class="sub-k">谁从这个叙事里赚到了钱</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.537" data-duration="5.439" data-track-index="5"><div class="sub-inner">历史学家把当下的事件,拉回到曾经发生过的<span class="sub-k">相似剧本</span>里去对照。</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.124" data-duration="8.131" data-track-index="5"><div class="sub-inner">你让模型一次产出这五个人的核心立场、最强证据、还有<span class="sub-k">"只有这个视角才会告诉你的那句话"</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="43.404" data-duration="0.64" data-track-index="5"><div class="sub-inner"><span class="sub-k">六十秒。</span></div></div>
+    <div id="sub-11" class="clip sub" data-start="44.044" data-duration="4.159" data-track-index="5"><div class="sub-inner">你得到的是单 prompt 一辈子都给不出的<span class="sub-k">截面差</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="48.372" data-duration="1.58" data-track-index="5"><div class="sub-inner">这是这套方法的<span class="sub-k">入口</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="49.952" data-duration="1.896" data-track-index="5"><div class="sub-inner">但它只是入口,<span class="sub-k">不是答案</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    /* sub-2 (4.992):五个角色名一起列出(只名字,不角度) */
+    D2.stagger(tl, R+'.rows .row', 5.1, {x:-22, step:.22, d:.32, ease:'power3.out'});
+    /* sub-4..sub-8:每条 .rd 角度逐条揭示,并把当前条标 .now(border 变酸性) */
+    D2.enter(tl, R+'.late1', 16.5, {y:10, d:.3, ease:'power2.out'});
+    tl.to(R+'.i1', {borderColor:'#ccff4d', duration:.2, ease:'power1.out'}, 16.5);
+    D2.enter(tl, R+'.late2', 19.25, {y:10, d:.3, ease:'power2.out'});
+    tl.to(R+'.i1', {borderColor:'#2a2a2c', duration:.2, ease:'power1.out'}, 19.25);
+    tl.to(R+'.i2', {borderColor:'#ccff4d', duration:.2, ease:'power1.out'}, 19.25);
+    D2.enter(tl, R+'.late3', 22.15, {y:10, d:.3, ease:'power2.out'});
+    tl.to(R+'.i2', {borderColor:'#2a2a2c', duration:.2, ease:'power1.out'}, 22.15);
+    tl.to(R+'.i3', {borderColor:'#ccff4d', duration:.2, ease:'power1.out'}, 22.15);
+    D2.enter(tl, R+'.late4', 26.25, {y:10, d:.3, ease:'power2.out'});
+    tl.to(R+'.i3', {borderColor:'#2a2a2c', duration:.2, ease:'power1.out'}, 26.25);
+    tl.to(R+'.i4', {borderColor:'#ccff4d', duration:.2, ease:'power1.out'}, 26.25);
+    D2.enter(tl, R+'.late5', 29.65, {y:10, d:.3, ease:'power2.out'});
+    tl.to(R+'.i4', {borderColor:'#2a2a2c', duration:.2, ease:'power1.out'}, 29.65);
+    tl.to(R+'.i5', {borderColor:'#ccff4d', duration:.2, ease:'power1.out'}, 29.65);
+    /* sub-9 (35.124):五人共同输出 —— punch 行还没出现,先把所有 row 的高亮收回成中性 */
+    tl.to(R+'.i5', {borderColor:'#2a2a2c', duration:.3, ease:'power1.out'}, 35.2);
+    /* sub-10 (43.404) "60秒":punch 行入场 */
+    D2.enter(tl, R+'.punch', 43.5, {y:18, d:.35, ease:'power3.out'});
+    /* sub-11 (44.044) "截面差":sweep */
+    D2.sweep(tl, R, '.punch .hl', 44.3);
+    /* sub-12/13 (48.372 / 49.952) "入口/不是答案" */
+    D2.enter(tl, R+'.endline', 48.5, {y:10, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.992],['#sub-3',10.572],['#sub-4',16.398],['#sub-5',19.14],['#sub-6',22.053],['#sub-7',26.16],['#sub-8',29.537],['#sub-9',35.124],['#sub-10',43.404],['#sub-11',44.044],['#sub-12',48.372],['#sub-13',49.952]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 52, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

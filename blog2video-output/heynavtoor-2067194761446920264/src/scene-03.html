@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .fullname{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.5;letter-spacing:.01em}
+[data-composition-id='s03'] .fullname .em{color:#5fd3e8}
+[data-composition-id='s03'] .badge-row{display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap}
+[data-composition-id='s03'] .badge-row .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:5px 14px;letter-spacing:.04em}
+[data-composition-id='s03'] .stats.s3{margin-top:42px}
+[data-composition-id='s03'] .stats.s3 .lab{font-size:26px;color:#edebe6;font-weight:500;line-height:1.35}
+[data-composition-id='s03'] .stats.s3 .lab .dim{color:#8a8a85;font-weight:500}
+[data-composition-id='s03'] .punch{margin-top:36px;font-weight:700;font-size:38px;line-height:1.45;color:#edebe6}
+[data-composition-id='s03'] .punch .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s03'] .four-steps{margin-top:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 28px}
+[data-composition-id='s03'] .four-steps .fs-t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.05em;margin-bottom:14px}
+[data-composition-id='s03'] .four-steps .fs-b{font-weight:700;font-size:34px;color:#edebe6;line-height:1.35}
+[data-composition-id='s03'] .four-steps .fs-b .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="65.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/10]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// THE <span class="acc">METHOD</span></div>
+      <div class="h1" style="margin-top:18px">这套方法叫 <span class="em">STORM</span></div>
+
+      <div class="badge-row">
+        <span class="tg">STANFORD · OVAL LAB</span>
+        <span class="tg">NAACL 2024</span>
+      </div>
+
+      <div class="fullname">
+        <span class="full-line1">Synthesis of Topic Outlines through Retrieval</span><br>
+        <span class="full-line2">and <span class="em">Multi-perspective</span> Question Asking</span>
+      </div>
+
+      <div class="stats s3">
+        <div class="stat key"><div class="num" id="n1">0%</div><div class="lab">组织度<br><span class="dim">vs 当时最强对照</span></div></div>
+        <div class="stat cyan"><div class="num" id="n2">0%</div><div class="lab">覆盖广度<br><span class="dim">vs 当时最强对照</span></div></div>
+      </div>
+
+      <div class="punch">不是营销话术,<span class="em">是同行评审过的硬数字</span></div>
+
+      <div class="four-steps">
+        <div class="fs-t">// 真正的突破</div>
+        <div class="fs-b">把博士生做研究的思考方法,<span class="em">拆成四步可复制粘贴</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.021" data-track-index="5"><div class="sub-inner">这套方法论有个名字,叫 <span class="sub-k">STORM</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.021" data-duration="7.05" data-track-index="5"><div class="sub-inner"><span class="sub-k">Stanford 的 OVAL 实验室</span>在 2024 年 NAACL 会议上正式发表。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.071" data-duration="4.028" data-track-index="5"><div class="sub-inner">全称很长——通过检索和<span class="sub-k">多视角提问</span>做主题大纲合成。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.256" data-duration="1.619" data-track-index="5"><div class="sub-inner">但你不用记全称。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.875" data-duration="1.822" data-track-index="5"><div class="sub-inner">记住<span class="sub-k">一件事</span>就够了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.856" data-duration="4.397" data-track-index="5"><div class="sub-inner">STORM 论文里给出了一个被<span class="sub-k">同行评审过的硬数字</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.253" data-duration="7.74" data-track-index="5"><div class="sub-inner">用多视角方法生成的文章,比当时最强的对照方法,组织度高<span class="sub-k">百分之二十五</span>,覆盖广度高百分之十。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.132" data-duration="1.989" data-track-index="5"><div class="sub-inner">这两个数字<span class="sub-k">非常关键</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.121" data-duration="2.784" data-track-index="5"><div class="sub-inner">它不是营销话术,是<span class="sub-k">学术评测</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="34.905" data-duration="11.335" data-track-index="5"><div class="sub-inner">它在说——多视角提问不是"听起来高级一点",是在统计意义上,真的能把那些<span class="sub-k">单 prompt 永远抓不到的盲点</span>捞回来。</div></div>
+    <div id="sub-11" class="clip sub" data-start="46.404" data-duration="6.207" data-track-index="5"><div class="sub-inner">而 STORM 的真正突破,<span class="sub-k">不是</span>它的代码,也不是它的 demo 网站。</div></div>
+    <div id="sub-12" class="clip sub" data-start="52.611" data-duration="5.674" data-track-index="5"><div class="sub-inner">是它把博士生做研究的那套思考方法,拆成了<span class="sub-k">四个可以复制粘贴的步骤</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="58.428" data-duration="3.165" data-track-index="5"><div class="sub-inner">代码你不用装,demo 你不用打开。</div></div>
+    <div id="sub-14" class="clip sub" data-start="61.593" data-duration="3.341" data-track-index="5"><div class="sub-inner">这套<span class="sub-k">思维方式</span>本身,才是你能搬走的东西。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // beat 1: kicker + 标题 STORM (sub-1, 0-3s)
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+
+    // beat 2: STANFORD/NAACL 徽章 (sub-2, 3-10s)
+    D2.stagger(tl, R+'.badge-row .tg', 3.2, {y:14, step:.18, d:.32, ease:'power3.out'});
+
+    // beat 3: 全称揭示 (sub-3, 10-14s) —— 两行先后
+    D2.enter(tl, R+'.fullname .full-line1', 10.3, {y:12, d:.35, ease:'power2.out'});
+    D2.enter(tl, R+'.fullname .full-line2', 10.9, {y:12, d:.35, ease:'power2.out'});
+
+    // beat 4: "硬数字" 预告 (sub-6, 17.9s) —— stats 容器先上
+    D2.stagger(tl, R+'.stats.s3 .stat', 18.1, {y:16, step:.18, d:.34, ease:'power3.out'});
+
+    // beat 5: count-up 落停在 sub-7 "百分之二十五" 念出时
+    D2.countUp(tl, R+'#n1', 23.4, 0, 25, 1.4, {prefix:'+', suffix:'%'});
+    D2.countUp(tl, R+'#n2', 27.6, 0, 10, 1.2, {prefix:'+', suffix:'%'});
+
+    // beat 6: punch "不是营销话术" (sub-9, 32.1s)
+    D2.enter(tl, R+'.punch', 32.3, {y:14, d:.36, ease:'power3.out'});
+
+    // beat 7: 四步 callout (sub-12, 52.6s)
+    D2.enter(tl, R+'.four-steps', 52.8, {y:18, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.four-steps .fs-b', 53.4, {y:10, d:.32, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.021],['#sub-3',10.071],['#sub-4',14.256],['#sub-5',15.875],['#sub-6',17.856],['#sub-7',22.253],['#sub-8',30.132],['#sub-9',32.121],['#sub-10',34.905],['#sub-11',46.404],['#sub-12',52.611],['#sub-13',58.428],['#sub-14',61.593]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 65.1, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

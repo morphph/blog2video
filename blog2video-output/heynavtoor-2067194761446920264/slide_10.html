@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#10B981;letter-spacing:0.08em;margin-bottom:20px;font-weight:600}
+.title{font-size:72px;font-weight:900;line-height:1.15;color:#FFFFFF;margin-bottom:48px;letter-spacing:-0.01em}
+.title .em{color:#10B981}
+.steps{display:flex;flex-direction:column;gap:16px;width:100%;margin-bottom:36px}
+.step{background:#1A1A2E;border:1px solid rgba(16,185,129,0.3);border-left:4px solid #10B981;border-radius:10px;padding:24px 28px;display:flex;align-items:center;text-align:left;gap:24px}
+.step.now{border-left-color:#F59E0B;border-color:rgba(245,158,11,0.4);background:#1F1B14}
+.num{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:800;color:#10B981;flex-shrink:0;min-width:60px}
+.step.now .num{color:#F59E0B}
+.txt{font-size:30px;color:#FFFFFF;font-weight:700;line-height:1.35}
+.txt .gray{color:#B0B0CC;font-weight:500;display:block;font-size:24px;margin-top:6px}
+.outro{background:#1A1A2E;border:1px solid rgba(139,92,246,0.4);border-radius:12px;padding:28px 32px;width:100%;text-align:center}
+.outro .txt{font-size:32px;color:#FFFFFF;font-weight:700;line-height:1.4}
+.outro .em{color:#8B5CF6}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// 今天只记一件事</div>
+<div class="title">不用五分钟，<br>先用 <span class="em">一分钟</span></div>
+<div class="steps">
+<div class="step now"><div class="num">→</div><div class="txt">挑一个你正在 <span style="color:#F59E0B">卡壳</span> 的话题<span class="gray">这周真的要做决定 / 要写 / 要 pitch 的那件事</span></div></div>
+<div class="step"><div class="num">01</div><div class="txt">打开 Claude，<span style="color:#10B981">只跑 Prompt 1</span><span class="gray">让 5 个人格各说两句</span></div></div>
+<div class="step"><div class="num">02</div><div class="txt">对照你之前的判断<span class="gray">感受"原来我拿到的只是其中一个声音"</span></div></div>
+</div>
+<div class="outro"><div class="txt">AI 世界很吵<br>精读一篇 <span class="em">胜过刷一百条</span></div></div>
+</div>
+</body>
+</html>

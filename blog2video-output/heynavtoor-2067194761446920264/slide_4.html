@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:20px;font-weight:600}
+.title{font-size:62px;font-weight:900;line-height:1.18;color:#FFFFFF;margin-bottom:44px}
+.title .em{color:#F59E0B}
+.cast{display:flex;flex-direction:column;gap:14px;width:100%}
+.row{background:#1A1A2E;border:1px solid rgba(139,92,246,0.25);border-left:4px solid #8B5CF6;border-radius:10px;padding:20px 26px;display:flex;align-items:center;text-align:left;gap:20px}
+.row.r2{border-left-color:#3B82F6}
+.row.r3{border-left-color:#EF4444}
+.row.r4{border-left-color:#F59E0B}
+.row.r5{border-left-color:#10B981}
+.role{font-size:32px;font-weight:800;color:#FFFFFF;min-width:200px;flex-shrink:0}
+.row .arrow{font-family:'JetBrains Mono',monospace;font-size:24px;color:#6B7280;flex-shrink:0}
+.angle{font-size:26px;color:#B0B0CC;font-weight:500;line-height:1.35}
+.angle .hl{color:#FFFFFF;font-weight:700}
+.footer{margin-top:36px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#10B981;font-weight:700;letter-spacing:0.06em;background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);padding:18px 32px;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// PROMPT 1 — Multi-Perspective Scan</div>
+<div class="title">让 Claude 同时<br>扮演 <span class="em">5 个人</span></div>
+<div class="cast">
+<div class="row"><div class="role">实践者</div><div class="arrow">→</div><div class="angle">学者忽略的 <span class="hl">现实细节</span></div></div>
+<div class="row r2"><div class="role">学者</div><div class="arrow">→</div><div class="angle"><span class="hl">同行评审证据</span>真正怎么说</div></div>
+<div class="row r3"><div class="role">怀疑论者</div><div class="arrow">→</div><div class="angle">支持者刻意回避的 <span class="hl">反证</span></div></div>
+<div class="row r4"><div class="role">经济学家</div><div class="arrow">→</div><div class="angle">谁从叙事里 <span class="hl">赚到了钱</span></div></div>
+<div class="row r5"><div class="role">历史学家</div><div class="arrow">→</div><div class="angle">曾经发生过的 <span class="hl">相似剧本</span></div></div>
+</div>
+<div class="footer">60 秒 · 5 个截面</div>
+</div>
+</body>
+</html>

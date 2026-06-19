@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:280px;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse at center,rgba(139,92,246,0.18) 0%,rgba(13,13,26,0) 70%);pointer-events:none}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:32px;font-weight:600}
+.title{font-size:96px;font-weight:900;line-height:1.15;letter-spacing:-0.01em;color:#FFFFFF;margin-bottom:24px}
+.title .em{color:#F59E0B}
+.subtitle{font-size:38px;color:#B0B0CC;line-height:1.45;font-weight:500;margin-top:8px;margin-bottom:64px}
+.cards{display:flex;flex-direction:column;gap:20px;width:100%}
+.card{background:#1A1A2E;border:1px solid rgba(139,92,246,0.2);border-left:4px solid #8B5CF6;border-radius:12px;padding:28px 32px;text-align:left}
+.card .lab{font-size:24px;color:#8B5CF6;font-weight:700;letter-spacing:0.05em;margin-bottom:8px;font-family:'JetBrains Mono',monospace}
+.card .txt{font-size:34px;color:#FFFFFF;font-weight:600;line-height:1.35}
+.card.warn{border-left-color:#EF4444}.card.warn .lab{color:#EF4444}
+.card.hl{border-left-color:#F59E0B}.card.hl .lab{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="glow"></div>
+<div class="kicker">// THE REAL QUESTION</div>
+<div class="title">让 Claude 做研究<br>做得像 <span class="em">PhD</span>？</div>
+<div class="subtitle">不换大模型，不装插件</div>
+<div class="cards">
+<div class="card"><div class="lab">SOURCE</div><div class="txt">Stanford NAACL 2024 论文</div></div>
+<div class="card hl"><div class="lab">RESULT</div><div class="txt">多视角文章 组织度 +25%</div></div>
+<div class="card warn"><div class="lab">THE TRICK</div><div class="txt">压成 4 个 prompt 而已</div></div>
+</div>
+</div>
+</body>
+</html>

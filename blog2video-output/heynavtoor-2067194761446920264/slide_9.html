@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:24px;font-weight:600}
+.subtitle{font-size:34px;color:#B0B0CC;line-height:1.4;font-weight:500;margin-bottom:40px}
+.quote-wrap{background:#1A1A2E;border:1px solid rgba(245,158,11,0.4);border-left:4px solid #F59E0B;border-radius:14px;padding:48px 44px;width:100%;text-align:left;position:relative;margin-bottom:40px}
+.qmark{position:absolute;top:18px;right:30px;font-family:'JetBrains Mono',monospace;font-size:100px;color:rgba(245,158,11,0.25);font-weight:900;line-height:1}
+.q{font-size:46px;color:#FFFFFF;font-weight:800;line-height:1.32;letter-spacing:-0.005em}
+.q .em{color:#F59E0B}
+.q .gray{color:#B0B0CC;font-weight:600}
+.window{display:flex;gap:20px;width:100%}
+.box{flex:1;background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);border-left:4px solid #10B981;border-radius:10px;padding:28px 24px;text-align:center}
+.box.warn{border-left-color:#EF4444;border-color:rgba(239,68,68,0.3)}
+.box .num{font-family:'JetBrains Mono',monospace;font-size:80px;font-weight:800;color:#10B981;line-height:1}
+.box.warn .num{color:#EF4444;font-size:40px;font-weight:800;letter-spacing:0.02em;line-height:1.1;margin-top:18px}
+.box .lab{margin-top:14px;font-size:24px;color:#B0B0CC;font-weight:500;line-height:1.35}
+.box.warn .lab{margin-top:0}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// 这其实是认知套利</div>
+<div class="subtitle">可得性齐全，扩散为零 — 那就是信号</div>
+<div class="quote-wrap">
+<div class="qmark">"</div>
+<div class="q">扩散的瓶颈<br>从来 <span class="gray">不是技术</span>，<br>是 <span class="em">认知摩擦力</span>。</div>
+</div>
+<div class="window">
+<div class="box"><div class="num">18m</div><div class="lab">你的窗口期<br>现在就在跑</div></div>
+<div class="box warn"><div class="num">边消失</div><div class="lab">被烤进每一个<br>AI 工具默认</div></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:20px;font-weight:600}
+.title{font-size:60px;font-weight:900;line-height:1.18;color:#FFFFFF;margin-bottom:36px}
+.title .em{color:#F59E0B}
+.checklist{display:flex;flex-direction:column;gap:14px;width:100%}
+.item{background:#1A1A2E;border:1px solid rgba(59,130,246,0.25);border-left:4px solid #3B82F6;border-radius:10px;padding:20px 26px;display:flex;align-items:flex-start;text-align:left;gap:20px}
+.item.hl{border-left-color:#F59E0B;background:#1F1B14}
+.num{font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:800;color:#3B82F6;flex-shrink:0;width:50px}
+.item.hl .num{color:#F59E0B}
+.q{font-size:28px;color:#FFFFFF;font-weight:600;line-height:1.4}
+.q .gray{color:#B0B0CC;font-weight:500}
+.q .acc{color:#F59E0B;font-weight:700}
+.q .neg{color:#EF4444;font-weight:700}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// PROMPT 2 — Contradiction Map</div>
+<div class="title">让 Claude 画出<br>5 个声音 <span class="em">互相打架</span>的地方</div>
+<div class="checklist">
+<div class="item"><div class="num">Q1</div><div class="q">哪两个视角 <span class="gray">直接矛盾</span>？冲突在哪句话？</div></div>
+<div class="item"><div class="num">Q2</div><div class="q">哪个证据 <span class="gray">最强</span>，哪个 <span class="gray">最弱</span>？</div></div>
+<div class="item"><div class="num">Q3</div><div class="q">解开最大矛盾，要问 <span class="gray">哪一个问题</span>？</div></div>
+<div class="item"><div class="num">Q4</div><div class="q">5 个视角都 <span class="acc">同意</span>什么？<span class="gray">→ 大概率为真</span></div></div>
+<div class="item hl"><div class="num">Q5</div><div class="q">5 个视角都 <span class="neg">没提</span>什么？<span class="gray">→ 整个领域的盲点</span></div></div>
+</div>
+</div>
+</body>
+</html>

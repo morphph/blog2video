@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:20px;font-weight:600}
+.title{font-size:60px;font-weight:900;line-height:1.18;color:#FFFFFF;margin-bottom:36px}
+.title .em{color:#10B981}
+.list{display:flex;flex-direction:column;gap:14px;width:100%;margin-bottom:36px}
+.item{background:#1A1A2E;border:1px solid rgba(16,185,129,0.25);border-left:4px solid #10B981;border-radius:10px;padding:20px 26px;display:flex;align-items:center;text-align:left;gap:20px}
+.tag{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:800;color:#10B981;flex-shrink:0;min-width:70px;letter-spacing:0.04em}
+.txt{font-size:28px;color:#FFFFFF;font-weight:600;line-height:1.4}
+.txt .gray{color:#B0B0CC;font-weight:500}
+.compare{display:flex;gap:20px;width:100%}
+.box{flex:1;background:#1A1A2E;border:1px solid rgba(239,68,68,0.3);border-left:4px solid #EF4444;border-radius:10px;padding:24px;text-align:center}
+.box.good{border-left-color:#10B981;border-color:rgba(16,185,129,0.4)}
+.box .num{font-family:'JetBrains Mono',monospace;font-size:64px;font-weight:800;color:#EF4444;line-height:1}
+.box.good .num{color:#10B981}
+.box .lab{margin-top:10px;font-size:24px;color:#B0B0CC;font-weight:500;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// PROMPT 3 — CEO Briefing</div>
+<div class="title">两份原料 <span class="em">烧成简报</span></div>
+<div class="list">
+<div class="item"><div class="tag">[1]</div><div class="txt">60 秒能讲清的 <span class="gray">高层摘要</span>（带 nuance）</div></div>
+<div class="item"><div class="tag">[2]</div><div class="txt">5 条最重要发现 · <span class="gray">按可靠度排序</span></div></div>
+<div class="item"><div class="tag">[3]</div><div class="txt"><span class="gray">隐藏连接</span> · 并排才浮现的非显然关联</div></div>
+<div class="item"><div class="tag">[4]</div><div class="txt">针对你角色的 <span class="gray">可执行建议</span></div></div>
+<div class="item"><div class="tag">[5]</div><div class="txt">前沿问题 · <span class="gray">改变所有人理解的那道题</span></div></div>
+</div>
+<div class="compare">
+<div class="box"><div class="num">48h</div><div class="lab">PhD 学生手工<br>做出这份东西</div></div>
+<div class="box good"><div class="num">90s</div><div class="lab">你刚才<br>花掉的时间</div></div>
+</div>
+</div>
+</body>
+</html>

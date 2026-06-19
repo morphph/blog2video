@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8B5CF6;letter-spacing:0.08em;margin-bottom:20px;font-weight:600}
+.title{font-size:60px;font-weight:900;line-height:1.18;color:#FFFFFF;margin-bottom:28px}
+.title .em{color:#EF4444}
+.subtitle{font-size:26px;color:#B0B0CC;line-height:1.4;margin-bottom:36px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.04em}
+.bugs{display:flex;gap:20px;width:100%;margin-bottom:32px}
+.bug{flex:1;background:#1A1A2E;border:1px solid rgba(239,68,68,0.35);border-left:4px solid #EF4444;border-radius:10px;padding:24px;text-align:left}
+.bug .tag{font-family:'JetBrains Mono',monospace;font-size:22px;color:#EF4444;font-weight:700;letter-spacing:0.04em;margin-bottom:10px}
+.bug .name{font-size:30px;color:#FFFFFF;font-weight:800;margin-bottom:8px;line-height:1.25}
+.bug .desc{font-size:22px;color:#B0B0CC;font-weight:500;line-height:1.4}
+.arrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#F59E0B;font-weight:700;margin-bottom:24px;letter-spacing:0.1em}
+.patch{background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);border-left:4px solid #10B981;border-radius:12px;padding:28px 32px;width:100%;text-align:left}
+.patch .lab{font-family:'JetBrains Mono',monospace;font-size:22px;color:#10B981;font-weight:700;letter-spacing:0.05em;margin-bottom:14px}
+.patch .txt{font-size:32px;color:#FFFFFF;font-weight:700;line-height:1.35}
+.patch .em{color:#10B981}
+</style>
+</head>
+<body>
+<div class="slide">
+<div class="kicker">// PROMPT 4 — Peer Review</div>
+<div class="title">Stanford 自己写的 <span class="em">两个 bug</span></div>
+<div class="subtitle">limitations 章节 · 白纸黑字</div>
+<div class="bugs">
+<div class="bug"><div class="tag">BUG 01</div><div class="name">Source Bias</div><div class="desc">信源偏倚：模型多采它熟悉的声源</div></div>
+<div class="bug"><div class="tag">BUG 02</div><div class="name">Fact<br>Misassociation</div><div class="desc">把 A 视角的事实，装到 B 视角的论证</div></div>
+</div>
+<div class="arrow">▼ 精确打补丁</div>
+<div class="patch">
+<div class="lab">PROMPT 4 强制 CLAUDE 做</div>
+<div class="txt">5 条发现打 <span class="em">可靠度分</span><br>找出最不自信那条<br>追问 <span class="em">第 6 视角</span> 是否被漏掉</div>
+</div>
+</div>
+</body>
+</html>

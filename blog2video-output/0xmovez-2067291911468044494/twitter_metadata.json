@@ -1,0 +1,24 @@
+{
+  "url": "https://x.com/0xMovez/status/2067291911468044494",
+  "author_name": "Movez",
+  "author_handle": "@0xMovez",
+  "title": "The Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8",
+  "type": "longform_article",
+  "quoted_tweet": {
+    "author_name": "Kimi.ai",
+    "author_handle": "@Kimi_Moonshot",
+    "date": "Apr 23",
+    "text": "Meet Kimi K2.6 Agent Swarm. Highlights: Swarms, elevated - 300 parallel sub-agents x 4,000 steps per run (up from 100 / 1,500 in K2.5). Outputs are real files, not chat - one run delivers 100+ files, 100,000-word literature reviews, or 20,000-row datasets."
+  },
+  "images": [
+    "https://pbs.twimg.com/media/HLBVTInWgAA_TJD?format=png&name=900x900",
+    "https://pbs.twimg.com/media/HLBZ6vMXQAAnxGn?format=jpg&name=medium",
+    "https://pbs.twimg.com/media/HLBaeKUXQAA8Unq?format=jpg&name=medium",
+    "https://pbs.twimg.com/media/HLBbt6lXEAACrdS?format=jpg&name=medium",
+    "https://pbs.twimg.com/media/HLBd8FaXcAEUw-d?format=jpg&name=medium",
+    "https://pbs.twimg.com/media/HLBeUjMWoAEiOlN?format=jpg&name=medium",
+    "https://pbs.twimg.com/media/HLBfQWBXAAAUaT5?format=png&name=medium",
+    "https://pbs.twimg.com/media/HLBfpfkW8AA6FL9?format=png&name=900x900",
+    "https://pbs.twimg.com/media/HLBgJnNXMAAdPNf?format=png&name=900x900"
+  ]
+}

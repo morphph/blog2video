@@ -1,0 +1,952 @@
+[
+  {
+    "text": "Anthropic 官方刚发布 Claude Code 最全指令调教指南。",
+    "pronounce_text": "Anthropic官方刚发布Claude Code最全指令调教指南。",
+    "time_begin": 0,
+    "time_end": 4079.591836734694,
+    "text_begin": 0,
+    "text_end": 37,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 34
+  },
+  {
+    "text": "Subagent、Skill、Hooks、CLAUDE.md……7 种官方钦定的最佳实践，每一个的加载时机、压缩行为、强制力完全不同。",
+    "pronounce_text": "Subagent、Skill、Hooks、CLAUDE.md……七种官方钦定的最佳实践，每一个的加载时机、压缩行为、强制力完全不同。",
+    "time_begin": 4279.591836734694,
+    "time_end": 18552.743764172334,
+    "text_begin": 37,
+    "text_end": 104,
+    "pronounce_text_begin": 34,
+    "pronounce_text_end": 100
+  },
+  {
+    "text": "我读完这篇官博，最有冲击的不是它列出了 7 种机制。是它把\"指令\"和\"护栏\"这两件事，彻底分开讲了。",
+    "pronounce_text": "我读完这篇官博，最有冲击的不是它列出了七种机制。是它把\"指令\"和\"护栏\"这两件事，彻底分开讲了。",
+    "time_begin": 18720,
+    "time_end": 28767.120181405895,
+    "text_begin": 104,
+    "text_end": 154,
+    "pronounce_text_begin": 100,
+    "pronounce_text_end": 148
+  },
+  {
+    "text": "绝大多数人用 Claude Code 都是一样的习惯。想到什么规矩，就往 CLAUDE.md 里塞一句。想让它跑测试，塞一句。想让它别动数据库迁移，塞一句。想让它部署前先 lint，再塞一句。",
+    "pronounce_text": "绝大多数人用Claude Code都是一样的习惯。想到什么规矩，就往CLAUDE.md里塞一句。想让它跑测试，塞一句。想让它别动数据库迁移，塞一句。想让它部署前先lint，再塞一句。",
+    "time_begin": 28908,
+    "time_end": 44887.81859410431,
+    "text_begin": 154,
+    "text_end": 250,
+    "pronounce_text_begin": 148,
+    "pronounce_text_end": 239
+  },
+  {
+    "text": "塞着塞着，文件就上千行了。",
+    "pronounce_text": "塞着塞着，文件就上千行了。",
+    "time_begin": 45036,
+    "time_end": 47664.34467120181,
+    "text_begin": 250,
+    "text_end": 263,
+    "pronounce_text_begin": 239,
+    "pronounce_text_end": 252
+  },
+  {
+    "text": "但官方说，这套做法有两个反直觉的代价。第一个代价，每多写一行，你团队里每个工程师，每一次开 session，都要为这一行付 token。",
+    "pronounce_text": "但官方说，这套做法有两个反直觉的代价。第一个代价，每多写一行，你团队里每个工程师，每一次开session，都要为这一行付token。",
+    "time_begin": 47808,
+    "time_end": 60072.62585034013,
+    "text_begin": 263,
+    "text_end": 331,
+    "pronounce_text_begin": 252,
+    "pronounce_text_end": 318
+  },
+  {
+    "text": "哪怕这行规矩跟他这次任务八竿子打不着，它也加载进上下文。",
+    "pronounce_text": "哪怕这行规矩跟他这次任务八竿子打不着，它也加载进上下文。",
+    "time_begin": 60272.62585034013,
+    "time_end": 64897.88662131519,
+    "text_begin": 331,
+    "text_end": 359,
+    "pronounce_text_begin": 318,
+    "pronounce_text_end": 346
+  },
+  {
+    "text": "第二个代价更狠——文件越长，真正重要的那几条指令，遵循率反而越低。Claude 的注意力被稀释了。",
+    "pronounce_text": "第二个代价更狠。文件越长，真正重要的那几条指令，遵循率反而越低。Claude的注意力被稀释了。",
+    "time_begin": 65052,
+    "time_end": 73868.46258503401,
+    "text_begin": 359,
+    "text_end": 408,
+    "pronounce_text_begin": 346,
+    "pronounce_text_end": 393
+  },
+  {
+    "text": "更扎心的是第三件事。你以为你写在 CLAUDE.md 里的\"永远不要执行危险命令\"是护栏。其实不是。",
+    "pronounce_text": "更扎心的是第三件事。你以为你写在CLAUDE.md里的\"永远不要执行危险命令\"是护栏。其实不是。",
+    "time_begin": 74016,
+    "time_end": 83343.30158730158,
+    "text_begin": 408,
+    "text_end": 458,
+    "pronounce_text_begin": 393,
+    "pronounce_text_end": 441
+  },
+  {
+    "text": "官方原话是：长对话里、压力情境里、或者读到一个被污染的文件，模型就可能跳过这条规矩。",
+    "pronounce_text": "官方原话是：长对话里、压力情境里、或者读到一个被污染的文件，模型就可能跳过这条规矩。",
+    "time_begin": 83543.30158730158,
+    "time_end": 92011.4648526077,
+    "text_begin": 458,
+    "text_end": 500,
+    "pronounce_text_begin": 441,
+    "pronounce_text_end": 483
+  },
+  {
+    "text": "**写在 prompt 里的规则是建议。要做护栏，必须是 deterministic 的——也就是必须由代码强制执行，而不是由模型自觉遵守。**",
+    "pronounce_text": "写在prompt里的规则是建议。要做护栏，必须是deterministic的。也就是必须由代码强制执行，而不是由模型自觉遵守。",
+    "time_begin": 92160,
+    "time_end": 102717.95918367346,
+    "text_begin": 500,
+    "text_end": 572,
+    "pronounce_text_begin": 483,
+    "pronounce_text_end": 546
+  },
+  {
+    "text": "所以这期的主轴只有一句话：**同一句话，住进 CLAUDE.md 是 token 黑洞，住进 hook 才是不可破的护栏。** 接下来这 7 个口子，就是教你怎么选住址。",
+    "pronounce_text": "所以这期的主轴只有一句话：同一句话，住进CLAUDE.md是token黑洞，住进hook才是不可破的护栏。接下来这七个口子，就是教你怎么选住址。",
+    "time_begin": 102888,
+    "time_end": 116859.2925170068,
+    "text_begin": 572,
+    "text_end": 657,
+    "pronounce_text_begin": 546,
+    "pronounce_text_end": 618
+  },
+  {
+    "text": "先说大家最熟的 CLAUDE.md。它是项目根目录下的一个 markdown 文件，开 session 的时候自动加载，整个 session 全程常驻。压缩对话之后还会重新读一遍——它不会丢。",
+    "pronounce_text": "先说大家最熟的CLAUDE.md。它是项目根目录下的一个markdown文件，开session的时候自动加载，整个session全程常驻。压缩对话之后还会重新读一遍。它不会丢。",
+    "time_begin": 117000,
+    "time_end": 130286.30385487528,
+    "text_begin": 657,
+    "text_end": 753,
+    "pronounce_text_begin": 618,
+    "pronounce_text_end": 706
+  },
+  {
+    "text": "正因为它不会丢，它就特别贵。每一行都全程占着上下文。所以官方给了一条非常硬的建议：**CLAUDE.md 保持在 200 行以内，给它指定一个 owner，每次改动都要像改代码一样 review。**",
+    "pronounce_text": "正因为它不会丢，它就特别贵。每一行都全程占着上下文。所以官方给了一条非常硬的建议：CLAUDE.md保持在两百行以内，给它指定一个owner，每次改动都要像改代码一样review。",
+    "time_begin": 130428,
+    "time_end": 143807.18367346938,
+    "text_begin": 753,
+    "text_end": 853,
+    "pronounce_text_begin": 706,
+    "pronounce_text_end": 796
+  },
+  {
+    "text": "200 行是什么概念？基本就是装项目骨架——构建命令、目录结构、monorepo 怎么划分、团队的代码风格规范。这种\"全程都要知道\"的事实，才配住进 CLAUDE.md。",
+    "pronounce_text": "两百行是什么概念？基本就是装项目骨架。构建命令、目录结构、monorepo怎么划分、团队的代码风格规范。这种\"全程都要知道\"的事实，才配住进CLAUDE.md。",
+    "time_begin": 143964,
+    "time_end": 159351.7097505669,
+    "text_begin": 853,
+    "text_end": 938,
+    "pronounce_text_begin": 796,
+    "pronounce_text_end": 876
+  },
+  {
+    "text": "那不该住这里的是什么？官方给了三个非常清晰的信号。第一，**写了 30 行的部署流程**——那是 procedure，该搬去 skill。",
+    "pronounce_text": "那不该住这里的是什么？官方给了三个非常清晰的信号。第一，写了三十行的部署流程。那是procedure，该搬去skill。",
+    "time_begin": 159516,
+    "time_end": 169563.1201814059,
+    "text_begin": 938,
+    "text_end": 1007,
+    "pronounce_text_begin": 876,
+    "pronounce_text_end": 936
+  },
+  {
+    "text": "第二，**写了\"每次 X 之后都要 Y\"**——那是确定性自动化，该搬去 hook。第三，**写了\"永远不要做 X\"**——那不是护栏，是 wishful thinking。",
+    "pronounce_text": "第二，写了\"每次X之后都要Y\"。那是确定性自动化，该搬去hook。第三，写了\"永远不要做X\"。那不是护栏，是wishful thinking。",
+    "time_begin": 169704,
+    "time_end": 184058.42176870749,
+    "text_begin": 1007,
+    "text_end": 1094,
+    "pronounce_text_begin": 936,
+    "pronounce_text_end": 1007
+  },
+  {
+    "text": "官方还提了一个特别实用的设计。CLAUDE.md 可以分两种。根目录那个是常驻型，全程加载。但子目录里也可以放，比如 `app/api/CLAUDE.md`。",
+    "pronounce_text": "官方还提了一个特别实用的设计。CLAUDE.md可以分两种。根目录那个是常驻型，全程加载。但子目录里也可以放，比如，app，api，CLAUDE.md。",
+    "time_begin": 184212,
+    "time_end": 201259.9365079365,
+    "text_begin": 1094,
+    "text_end": 1173,
+    "pronounce_text_begin": 1007,
+    "pronounce_text_end": 1083
+  },
+  {
+    "text": "这种是按需型——只有当 Claude 真的去读 `app/api` 下面的文件时，它才加载。不读那个目录，它就一直休眠。",
+    "pronounce_text": "这种是按需型。只有当Claude真的去读，app，api，下面的文件时，它才加载。不读那个目录，它就一直休眠。",
+    "time_begin": 201420,
+    "time_end": 210654.42176870749,
+    "text_begin": 1173,
+    "text_end": 1233,
+    "pronounce_text_begin": 1083,
+    "pronounce_text_end": 1138
+  },
+  {
+    "text": "在 monorepo 里，这招特别关键。每个团队管自己的子目录，自己的规矩只在动到自己代码时才进上下文。前端工程师不用为后端的规矩付 token。",
+    "pronounce_text": "在monorepo里，这招特别关键。每个团队管自己的子目录，自己的规矩只在动到自己代码时才进上下文。前端工程师不用为后端的规矩付token。",
+    "time_begin": 210816,
+    "time_end": 222697.49659863947,
+    "text_begin": 1233,
+    "text_end": 1306,
+    "pronounce_text_begin": 1138,
+    "pronounce_text_end": 1208
+  },
+  {
+    "text": "第二种叫 rules，住在 `.claude/rules/` 文件夹里。它们是带 frontmatter 的 markdown 文件，专门用来表达\"在某种情况下必须遵守的约束\"。",
+    "pronounce_text": "第二种叫rules，住在，.claude，rules，文件夹里。它们是带frontmatter的markdown文件，专门用来表达\"在某种情况下必须遵守的约束\"。",
+    "time_begin": 222840,
+    "time_end": 234640.22675736962,
+    "text_begin": 1306,
+    "text_end": 1395,
+    "pronounce_text_begin": 1208,
+    "pronounce_text_end": 1289
+  },
+  {
+    "text": "rules 有两种用法。没加 paths 的，叫 unscoped rule。它的行为跟 CLAUDE.md 几乎一样——session 开始就加载，压缩后重新注入。",
+    "pronounce_text": "rules有两种用法。没加paths的，叫unscoped rule。它的行为跟CLAUDE.md几乎一样。session开始就加载，压缩后重新注入。",
+    "time_begin": 234792,
+    "time_end": 245779.5283446712,
+    "text_begin": 1395,
+    "text_end": 1478,
+    "pronounce_text_begin": 1289,
+    "pronounce_text_end": 1364
+  },
+  {
+    "text": "官方说得很直白：**没有 paths 的 rule，跟把内容写在 CLAUDE.md 里在机制上完全等价。** 一样常驻，一样烧 token。",
+    "pronounce_text": "官方说得很直白：没有paths的rule，跟把内容写在CLAUDE.md里在机制上完全等价。一样常驻，一样烧token。",
+    "time_begin": 245916,
+    "time_end": 257112.50793650793,
+    "text_begin": 1478,
+    "text_end": 1549,
+    "pronounce_text_begin": 1364,
+    "pronounce_text_end": 1424
+  },
+  {
+    "text": "真正值钱的是带 paths 的 path-scoped rule。frontmatter 里写一行 `paths: [\"src/api/**\"]`，这条规矩就只在 Claude 读到 `src/api` 下的文件时才进上下文。",
+    "pronounce_text": "真正值钱的是带paths的path-scoped rule。frontmatter里写一行，paths:“\"src，api，\"”，这条规矩就只在Claude读到，src，api，下的文件时才进上下文。",
+    "time_begin": 257256,
+    "time_end": 271064.7528344671,
+    "text_begin": 1549,
+    "text_end": 1662,
+    "pronounce_text_begin": 1424,
+    "pronounce_text_end": 1524
+  },
+  {
+    "text": "举个例子。你想强制所有 API handler 在处理之前必须用 Zod 校验输入。这条规矩写在 CLAUDE.md 里，每次写文档、改前端、跑测试，它都加载一遍。",
+    "pronounce_text": "举个例子。你想强制所有API handler在处理之前必须用Zod校验输入。这条规矩写在CLAUDE.md里，每次写文档、改前端、跑测试，它都加载一遍。",
+    "time_begin": 271224,
+    "time_end": 285578.42176870746,
+    "text_begin": 1662,
+    "text_end": 1744,
+    "pronounce_text_begin": 1524,
+    "pronounce_text_end": 1600
+  },
+  {
+    "text": "但你给它套上 `paths: [\"src/api/**\", \"**/*.handler.ts\"]`，它就只在真的写 API 的时候才出现。其它 session 里它根本不存在。",
+    "pronounce_text": "但你给它套上，paths:“\"src，api，\",\"，.handler.ts\"”，它就只在真的写API的时候才出现。其它session里它根本不存在。",
+    "time_begin": 285732,
+    "time_end": 296336.39909297053,
+    "text_begin": 1744,
+    "text_end": 1832,
+    "pronounce_text_begin": 1600,
+    "pronounce_text_end": 1675
+  },
+  {
+    "text": "判断要不要用 path-scoped rule，有一条干脆的标准——**这条约束是不是跟某些特定路径绑定的？**\"迁移文件只能 append，不能改\" 这种就是。",
+    "pronounce_text": "判断要不要用path-scoped rule，有一条干脆的标准。这条约束是不是跟某些特定路径绑定的？\"迁移文件只能append，不能改\" 这种就是。",
+    "time_begin": 296496,
+    "time_end": 307913.09750566893,
+    "text_begin": 1832,
+    "text_end": 1913,
+    "pronounce_text_begin": 1675,
+    "pronounce_text_end": 1749
+  },
+  {
+    "text": "它只跟 migrations 目录有关，跟其它代码一点关系都没有。这种约束写进 paths，比塞进 CLAUDE.md 干净一百倍。",
+    "pronounce_text": "它只跟migrations目录有关，跟其它代码一点关系都没有。这种约束写进paths，比塞进CLAUDE.md干净一百倍。",
+    "time_begin": 308052,
+    "time_end": 316438.8934240363,
+    "text_begin": 1913,
+    "text_end": 1979,
+    "pronounce_text_begin": 1749,
+    "pronounce_text_end": 1810
+  },
+  {
+    "text": "第三种是 skills，住在 `.claude/skills/` 文件夹里。每个 skill 是一个目录，里面有一个 `SKILL.md`，包含 name、description 和 body。",
+    "pronounce_text": "第三种是skills，住在，.claude，skills，文件夹里。每个skill是一个目录，里面有一个，SKILL.md，包含name、description和body。",
+    "time_begin": 316584,
+    "time_end": 330265.04308390024,
+    "text_begin": 1979,
+    "text_end": 2076,
+    "pronounce_text_begin": 1810,
+    "pronounce_text_end": 1896
+  },
+  {
+    "text": "skill 最妙的地方是它的加载方式。session 一开始，**只有 name 和 description 进上下文**。",
+    "pronounce_text": "skill最妙的地方是它的加载方式。session一开始，只有name和description进上下文。",
+    "time_begin": 330408,
+    "time_end": 337935.7551020408,
+    "text_begin": 2076,
+    "text_end": 2138,
+    "pronounce_text_begin": 1896,
+    "pronounce_text_end": 1948
+  },
+  {
+    "text": "body 那一大堆细节，要等到 Claude 真的调用这个 skill 才加载——可以通过 slash command 比如 `/code-review`，也可以让 Claude 根据任务自动匹配。",
+    "pronounce_text": "body那一大堆细节，要等到Claude真的调用这个skill才加载。可以通过slash command比如，code-review，也可以让Claude根据任务自动匹配。",
+    "time_begin": 338076,
+    "time_end": 349620.8072562358,
+    "text_begin": 2138,
+    "text_end": 2237,
+    "pronounce_text_begin": 1948,
+    "pronounce_text_end": 2034
+  },
+  {
+    "text": "这个机制专门治一种病：CLAUDE.md 里塞了一段 30 行的部署流程。",
+    "pronounce_text": "这个机制专门治一种病：CLAUDE.md里塞了一段三十行的部署流程。",
+    "time_begin": 349776,
+    "time_end": 355469.3786848073,
+    "text_begin": 2237,
+    "text_end": 2274,
+    "pronounce_text_begin": 2034,
+    "pronounce_text_end": 2068
+  },
+  {
+    "text": "那段流程是 procedure，是\"做这件事的时候需要按步骤走\"的知识。它不是你每次开 session 都需要的——你绝大多数时间在写代码，不在部署。但它住在 CLAUDE.md 里，就意味着每个 session 都全额付费。",
+    "pronounce_text": "那段流程是procedure，是\"做这件事的时候需要按步骤走\"的知识。它不是你每次开session都需要的。你绝大多数时间在写代码，不在部署。但它住在CLAUDE.md里，就意味着每个session都全额付费。",
+    "time_begin": 355608,
+    "time_end": 372145.09750566893,
+    "text_begin": 2274,
+    "text_end": 2387,
+    "pronounce_text_begin": 2068,
+    "pronounce_text_end": 2173
+  },
+  {
+    "text": "搬进 skill 之后，name 和 description 这两行常驻，告诉 Claude \"我这里有套部署流程，如果你要用就调我\"。真要部署了，完整流程才加载进来。同一段内容，token 成本从 high 降到 low。",
+    "pronounce_text": "搬进skill之后，name和description这两行常驻，告诉Claude\"我这里有套部署流程，如果你要用就调我\"。真要部署了，完整流程才加载进来。同一段内容，token成本从high降到low。",
+    "time_begin": 372312,
+    "time_end": 389011.63718820864,
+    "text_begin": 2387,
+    "text_end": 2499,
+    "pronounce_text_begin": 2173,
+    "pronounce_text_end": 2274
+  },
+  {
+    "text": "部署流程、发布 checklist、code review 流程，这些都是 skill 的典型场景。一句话总结：**程序性的东西放 skill，事实性的东西放 CLAUDE.md。**",
+    "pronounce_text": "部署流程、发布checklist、code review流程，这些都是skill的典型场景。一句话总结：程序性的东西放skill，事实性的东西放CLAUDE.md。",
+    "time_begin": 389160,
+    "time_end": 401552.33560090704,
+    "text_begin": 2499,
+    "text_end": 2591,
+    "pronounce_text_begin": 2274,
+    "pronounce_text_end": 2356
+  },
+  {
+    "text": "第四种是 subagents，住在 `.claude/agents/` 文件夹里。",
+    "pronounce_text": "第四种是subagents，住在，.claude，agents，文件夹里。",
+    "time_begin": 401724,
+    "time_end": 407463.8185941043,
+    "text_begin": 2591,
+    "text_end": 2632,
+    "pronounce_text_begin": 2356,
+    "pronounce_text_end": 2393
+  },
+  {
+    "text": "每个 subagent 是一个带 YAML frontmatter 的 markdown 文件——frontmatter 写 name、description、还可以指定它用什么模型、能调用哪些工具。",
+    "pronounce_text": "每个subagent是一个带YAML frontmatter的markdown文件。frontmatter写name、description、还可以指定它用什么模型、能调用哪些工具。",
+    "time_begin": 407663.8185941043,
+    "time_end": 419638.19501133787,
+    "text_begin": 2632,
+    "text_end": 2732,
+    "pronounce_text_begin": 2393,
+    "pronounce_text_end": 2484
+  },
+  {
+    "text": "body 就是这个 subagent 自己的 system prompt。",
+    "pronounce_text": "body就是这个subagent自己的system prompt。",
+    "time_begin": 419796,
+    "time_end": 423446.022675737,
+    "text_begin": 2732,
+    "text_end": 2769,
+    "pronounce_text_begin": 2484,
+    "pronounce_text_end": 2517
+  },
+  {
+    "text": "subagent 跟 skill 有点像，name、description、工具列表 session 开始就加载。但有一个根本区别——**subagent 的 body 永远不会进父对话的上下文。",
+    "pronounce_text": "subagent跟skill有点像，name、description、工具列表session开始就加载。但有一个根本区别。subagent的body永远不会进父对话的上下文。",
+    "time_begin": 423612,
+    "time_end": 435539.9365079365,
+    "text_begin": 2769,
+    "text_end": 2867,
+    "pronounce_text_begin": 2517,
+    "pronounce_text_end": 2604
+  },
+  {
+    "text": "** Claude 调用 subagent 的时候，它在一个全新的、独立的 context window 里跑。所有中间过程、所有工具调用、所有思考，都关在那个独立窗口里。",
+    "pronounce_text": "Claude调用subagent的时候，它在一个全新的、独立的context window里跑。所有中间过程、所有工具调用、所有思考，都关在那个独立窗口里。",
+    "time_begin": 435708,
+    "time_end": 448065.50566893426,
+    "text_begin": 2867,
+    "text_end": 2953,
+    "pronounce_text_begin": 2604,
+    "pronounce_text_end": 2682
+  },
+  {
+    "text": "回到主会话的，只有 subagent 的最终一条消息，加一些 metadata。",
+    "pronounce_text": "回到主会话的，只有subagent的最终一条消息，加一些metadata。",
+    "time_begin": 448265.50566893426,
+    "time_end": 453540.92517006805,
+    "text_begin": 2953,
+    "text_end": 2993,
+    "pronounce_text_begin": 2682,
+    "pronounce_text_end": 2719
+  },
+  {
+    "text": "理解了这一点，就理解了 subagent 为什么省 token。它不是因为\"代码更短\"，是因为它的中间结果根本没进主上下文。",
+    "pronounce_text": "理解了这一点，就理解了subagent为什么省token。它不是因为\"代码更短\"，是因为它的中间结果根本没进主上下文。",
+    "time_begin": 453708,
+    "time_end": 463882.8299319728,
+    "text_begin": 2993,
+    "text_end": 3055,
+    "pronounce_text_begin": 2719,
+    "pronounce_text_end": 2778
+  },
+  {
+    "text": "这让一种之前不可能的 scale 成为可能。subagent 可以嵌套 5 层深，配合 dynamic workflows，**可以编排几十到几百个后台 agent 同时跑**。",
+    "pronounce_text": "这让一种之前不可能的scale成为可能。subagent可以嵌套五层深，配合dynamic workflows，可以编排几十到几百个后台agent同时跑。",
+    "time_begin": 464040,
+    "time_end": 474690.8390022676,
+    "text_begin": 3055,
+    "text_end": 3144,
+    "pronounce_text_begin": 2778,
+    "pronounce_text_end": 2855
+  },
+  {
+    "text": "如果这些 agent 的中间结果全部塞进主会话，单条 session 早就爆窗了。但靠 subagent 把它们隔离掉，主会话只看到最终汇总。",
+    "pronounce_text": "如果这些agent的中间结果全部塞进主会话，单条session早就爆窗了。但靠subagent把它们隔离掉，主会话只看到最终汇总。",
+    "time_begin": 474840,
+    "time_end": 485235.4195011338,
+    "text_begin": 3144,
+    "text_end": 3215,
+    "pronounce_text_begin": 2855,
+    "pronounce_text_end": 2920
+  },
+  {
+    "text": "什么场景该用 subagent？官方给的几个例子很典型——深度搜索、日志分析、依赖审计。这些任务的特点是：中间会产生大量你后续不会再回头看的过程信息。",
+    "pronounce_text": "什么场景该用subagent？官方给的几个例子很典型。深度搜索、日志分析、依赖审计。这些任务的特点是：中间会产生大量你后续不会再回头看的过程信息。",
+    "time_begin": 485388,
+    "time_end": 499579.8820861678,
+    "text_begin": 3215,
+    "text_end": 3290,
+    "pronounce_text_begin": 2920,
+    "pronounce_text_end": 2993
+  },
+  {
+    "text": "让它跑在 subagent 里，主上下文干干净净。",
+    "pronounce_text": "让它跑在subagent里，主上下文干干净净。",
+    "time_begin": 499779.8820861678,
+    "time_end": 503302.19501133787,
+    "text_begin": 3290,
+    "text_end": 3315,
+    "pronounce_text_begin": 2993,
+    "pronounce_text_end": 3016
+  },
+  {
+    "text": "什么时候不用 subagent，反而用 skill？当你**希望流程在主线程里展开**，每一步你都能看见、能引导。这时候 skill 才合适。",
+    "pronounce_text": "什么时候不用subagent，反而用skill？当你，希望流程在主线程里展开，每一步你都能看见、能引导。这时候skill才合适。",
+    "time_begin": 503460,
+    "time_end": 514702.94784580497,
+    "text_begin": 3315,
+    "text_end": 3386,
+    "pronounce_text_begin": 3016,
+    "pronounce_text_end": 3080
+  },
+  {
+    "text": "第五种是 hooks，这是整篇博客我认为最重要的一节。",
+    "pronounce_text": "第五种是hooks，这是整篇博客我认为最重要的一节。",
+    "time_begin": 514872,
+    "time_end": 518951.5918367347,
+    "text_begin": 3386,
+    "text_end": 3413,
+    "pronounce_text_begin": 3080,
+    "pronounce_text_end": 3106
+  },
+  {
+    "text": "hook 是你用代码定义的、在 Claude 生命周期某个事件触发时自动执行的东西。它可以是一个命令、一个 HTTP 请求、一段 LLM prompt。",
+    "pronounce_text": "hook是你用代码定义的、在Claude生命周期某个事件触发时自动执行的东西。它可以是一个命令、一个HTTP请求、一段LLM prompt。",
+    "time_begin": 519120,
+    "time_end": 531988.3446712018,
+    "text_begin": 3413,
+    "text_end": 3489,
+    "pronounce_text_begin": 3106,
+    "pronounce_text_end": 3176
+  },
+  {
+    "text": "注册位置在 `settings.json` 里，或者管理员部署的 policy settings，或者 skill / agent 的 frontmatter。",
+    "pronounce_text": "注册位置在，settings.json，里，或者管理员部署的policy settings，或者skill，agent的frontmatter。",
+    "time_begin": 532152,
+    "time_end": 542454.5396825396,
+    "text_begin": 3489,
+    "text_end": 3569,
+    "pronounce_text_begin": 3176,
+    "pronounce_text_end": 3248
+  },
+  {
+    "text": "hook 有五种类型——command、HTTP、mcp_tool、prompt、agent。前三种是纯 deterministic 的，规则一旦写好，就机械式执行，不依赖模型的判断。",
+    "pronounce_text": "hook有五种类型。command、HTTP、mcp，tool、prompt、agent。前三种是纯deterministic的，规则一旦写好，就机械式执行，不依赖模型的判断。",
+    "time_begin": 542592,
+    "time_end": 557375.9909297052,
+    "text_begin": 3569,
+    "text_end": 3661,
+    "pronounce_text_begin": 3248,
+    "pronounce_text_end": 3336
+  },
+  {
+    "text": "后两种用 Claude 的判断来决定输出。",
+    "pronounce_text": "后两种用Claude的判断来决定输出。",
+    "time_begin": 557575.9909297052,
+    "time_end": 560541.0249433107,
+    "text_begin": 3661,
+    "text_end": 3682,
+    "pronounce_text_begin": 3336,
+    "pronounce_text_end": 3355
+  },
+  {
+    "text": "为什么 hook 是这篇博客的 thesis？因为它是**唯一能做到 deterministic 护栏的机制**。",
+    "pronounce_text": "为什么hook是这篇博客的thesis？因为它是，唯一能做到deterministic护栏的机制。",
+    "time_begin": 560700,
+    "time_end": 567972.335600907,
+    "text_begin": 3682,
+    "text_end": 3739,
+    "pronounce_text_begin": 3355,
+    "pronounce_text_end": 3404
+  },
+  {
+    "text": "记得前面说过\"永远不要执行危险命令\"写在 CLAUDE.md 里不可靠吗？真正可靠的做法是：注册一个 `PreToolUse` hook。每次 Claude 要调用工具之前，这个 hook 先 inspect 这次调用的内容。",
+    "pronounce_text": "记得前面说过\"永远不要执行危险命令\"写在CLAUDE.md里不可靠吗？真正可靠的做法是：注册一个，PreToolUse，hook。每次Claude要调用工具之前，这个hook先inspect这次调用的内容。",
+    "time_begin": 568116,
+    "time_end": 584653.0975056689,
+    "text_begin": 3739,
+    "text_end": 3852,
+    "pronounce_text_begin": 3404,
+    "pronounce_text_end": 3507
+  },
+  {
+    "text": "如果命令危险，hook **exit code 2**，调用直接被拒，根本到不了执行那一步。",
+    "pronounce_text": "如果命令危险，hook，exit code二，调用直接被拒，根本到不了执行那一步。",
+    "time_begin": 584820,
+    "time_end": 592312.925170068,
+    "text_begin": 3852,
+    "text_end": 3898,
+    "pronounce_text_begin": 3507,
+    "pronounce_text_end": 3548
+  },
+  {
+    "text": "官方说了一句话特别精确：**\"模型选择跑 formatter，和 formatter 自动跑，是两回事。\"** 写在 CLAUDE.md 里的 \"每次编辑后跑 prettier\"，是前者——模型可能跑，也可能忘了跑。",
+    "pronounce_text": "官方说了一句话特别精确：\"模型选择跑formatter，和formatter自动跑，是两回事。\"写在CLAUDE.md里的\"每次编辑后跑prettier\"，是前者。模型可能跑，也可能忘了跑。",
+    "time_begin": 592452,
+    "time_end": 608814.947845805,
+    "text_begin": 3898,
+    "text_end": 4006,
+    "pronounce_text_begin": 3548,
+    "pronounce_text_end": 3643
+  },
+  {
+    "text": "注册成 PostToolUse hook，就是后者——edit 一发生，formatter 一定跑，不依赖模型记不记得。",
+    "pronounce_text": "注册成PostToolUse hook，就是后者。edit一发生，formatter一定跑，不依赖模型记不记得。",
+    "time_begin": 608976,
+    "time_end": 617920.172335601,
+    "text_begin": 4006,
+    "text_end": 4066,
+    "pronounce_text_begin": 3643,
+    "pronounce_text_end": 3699
+  },
+  {
+    "text": "hook 还有一个特别值得注意的特性——**它的上下文成本几乎为零**。因为 hook 是 harness 直接执行的代码，不是塞进 Claude 上下文的指令。配置住在主上下文之外，运行结果默认也不回主上下文。",
+    "pronounce_text": "hook还有一个特别值得注意的特性。它的上下文成本几乎为零。因为hook是harness直接执行的代码，不是塞进Claude上下文的指令。配置住在主上下文之外，运行结果默认也不回主上下文。",
+    "time_begin": 618084,
+    "time_end": 633552.9795918367,
+    "text_begin": 4066,
+    "text_end": 4172,
+    "pronounce_text_begin": 3699,
+    "pronounce_text_end": 3793
+  },
+  {
+    "text": "这就引出一个 trap。如果你写了一个 PreCompact hook，把聊天历史备份到一个文件，Claude **不知道你存到了哪个文件里**——除非这个 hook 显式 return。",
+    "pronounce_text": "这就引出一个trap。如果你写了一个PreCompact hook，把聊天历史备份到一个文件，Claude，不知道你存到了哪个文件里。除非这个hook显式return。",
+    "time_begin": 633708,
+    "time_end": 644614.2585034014,
+    "text_begin": 4172,
+    "text_end": 4266,
+    "pronounce_text_begin": 3793,
+    "pronounce_text_end": 3877
+  },
+  {
+    "text": "少数会回主上下文的，是 blocking hook 的标准错误——这是为了让 Claude 知道为什么这次调用被拒了。",
+    "pronounce_text": "少数会回主上下文的，是blocking hook的标准错误。这是为了让Claude知道为什么这次调用被拒了。",
+    "time_begin": 644760,
+    "time_end": 652160.045351474,
+    "text_begin": 4266,
+    "text_end": 4325,
+    "pronounce_text_begin": 3877,
+    "pronounce_text_end": 3931
+  },
+  {
+    "text": "最后还有一个组织级的杀器，叫 **managed settings**。这是管理员部署的设置，用户的本地配置无法覆盖。",
+    "pronounce_text": "最后还有一个组织级的杀器，叫，managed settings。这是管理员部署的设置，用户的本地配置无法覆盖。",
+    "time_begin": 652320,
+    "time_end": 661473.1519274376,
+    "text_begin": 4325,
+    "text_end": 4384,
+    "pronounce_text_begin": 3931,
+    "pronounce_text_end": 3986
+  },
+  {
+    "text": "如果你想在整个公司范围内强制一条\"任何 Agent 都不能 push 到 main 分支\"——只有 managed settings + hook 这个组合能做到。CLAUDE.md 做不到，rule 做不到，skill 也做不到。",
+    "pronounce_text": "如果你想在整个公司范围内强制一条\"任何Agent都不能push到main分支\"。只有managed settings加hook这个组合能做到。CLAUDE.md做不到，rule做不到，skill也做不到。",
+    "time_begin": 661644,
+    "time_end": 676381.5510204082,
+    "text_begin": 4384,
+    "text_end": 4500,
+    "pronounce_text_begin": 3986,
+    "pronounce_text_end": 4088
+  },
+  {
+    "text": "剩下两种机制，是直接动到 system prompt 那一层。",
+    "pronounce_text": "剩下两种机制，是直接动到system prompt那一层。",
+    "time_begin": 676548,
+    "time_end": 680755.3015873015,
+    "text_begin": 4500,
+    "text_end": 4531,
+    "pronounce_text_begin": 4088,
+    "pronounce_text_end": 4117
+  },
+  {
+    "text": "第六种是 output styles，住在 `.claude/output-styles/` 文件夹。它的内容会被注入到 system prompt 里，**永远不会被压缩掉**，每个 session 都加载。",
+    "pronounce_text": "第六种是output styles，住在，.claude，output-styles，文件夹。它的内容会被注入到system prompt里，永远不会被压缩掉，每个session都加载。",
+    "time_begin": 680904,
+    "time_end": 693679.4648526077,
+    "text_begin": 4531,
+    "text_end": 4636,
+    "pronounce_text_begin": 4117,
+    "pronounce_text_end": 4210
+  },
+  {
+    "text": "因为它住在 system prompt 里，它的指令遵循权重，比前面所有方法都高。",
+    "pronounce_text": "因为它住在system prompt里，它的指令遵循权重，比前面所有方法都高。",
+    "time_begin": 693828,
+    "time_end": 699869.6780045351,
+    "text_begin": 4636,
+    "text_end": 4677,
+    "pronounce_text_begin": 4210,
+    "pronounce_text_end": 4249
+  },
+  {
+    "text": "但它有个非常重的代价。**自定义 output style 会替换掉默认的 system prompt。",
+    "pronounce_text": "但它有个非常重的代价。自定义output style会替换掉默认的system prompt。",
+    "time_begin": 700020,
+    "time_end": 706351.9274376418,
+    "text_begin": 4677,
+    "text_end": 4729,
+    "pronounce_text_begin": 4249,
+    "pronounce_text_end": 4296
+  },
+  {
+    "text": "** Claude Code 默认的 system prompt 里写了很多关键内容——你在帮人做软件工程、变更的范围怎么界定、什么时候加注释什么时候不加、安全顾虑怎么处理、宣告完成前要不要先跑测试。",
+    "pronounce_text": "Claude Code默认的system prompt里写了很多关键内容。你在帮人做软件工程、变更的范围怎么界定、什么时候加注释什么时候不加、安全顾虑怎么处理、宣告完成前要不要先跑测试。",
+    "time_begin": 706500,
+    "time_end": 721330.4308390022,
+    "text_begin": 4729,
+    "text_end": 4829,
+    "pronounce_text_begin": 4296,
+    "pronounce_text_end": 4389
+  },
+  {
+    "text": "你写了一个自定义 output style，这些默认人设全部丢掉。Claude Code 一下子从\"软件工程师助手\"退化成\"通用助手\"。写代码的那套纪律全没了。",
+    "pronounce_text": "你写了一个自定义output style，这些默认人设全部丢掉。Claude Code一下子从\"软件工程师助手\"退化成\"通用助手\"。写代码的那套纪律全没了。",
+    "time_begin": 721476,
+    "time_end": 736178.7210884354,
+    "text_begin": 4829,
+    "text_end": 4909,
+    "pronounce_text_begin": 4389,
+    "pronounce_text_end": 4467
+  },
+  {
+    "text": "除非你在 frontmatter 里加一行 `keep-coding-instructions: true`，把默认指令保留下来——但即便如此，自定义 output style 也是高代价的操作。",
+    "pronounce_text": "除非你在frontmatter里加一行，keep-coding-instructions:true，把默认指令保留下来。但即便如此，自定义output style也是高代价的操作。",
+    "time_begin": 736344,
+    "time_end": 747331.5283446712,
+    "text_begin": 4909,
+    "text_end": 5007,
+    "pronounce_text_begin": 4467,
+    "pronounce_text_end": 4557
+  },
+  {
+    "text": "官方建议特别清醒：在写自定义之前，**先看看内置的三种 output style 够不够用**。它们覆盖了三种最常见的工作模式——autonomy、teaching、collaborative。能用内置的就别自定义。",
+    "pronounce_text": "官方建议特别清醒：在写自定义之前，先看看内置的三种output style够不够用。它们覆盖了三种最常见的工作模式。autonomy、teaching、collaborative。能用内置的就别自定义。",
+    "time_begin": 747468,
+    "time_end": 762762.8299319728,
+    "text_begin": 5007,
+    "text_end": 5115,
+    "pronounce_text_begin": 4557,
+    "pronounce_text_end": 4658
+  },
+  {
+    "text": "第七种是 append system prompt，通过 CLI flag 在调用时追加一段内容到 system prompt 后面。它跟 output styles 的区别是：output styles 是替换，append 是叠加。",
+    "pronounce_text": "第七种是append system prompt，通过CLI flag在调用时追加一段内容到system prompt后面。它跟output styles的区别是：output styles是替换，append是叠加。",
+    "time_begin": 762912,
+    "time_end": 777695.9909297052,
+    "text_begin": 5115,
+    "text_end": 5233,
+    "pronounce_text_begin": 4658,
+    "pronounce_text_end": 4767
+  },
+  {
+    "text": "所以它不会破坏默认人设，只是在后面加东西。",
+    "pronounce_text": "所以它不会破坏默认人设，只是在后面加东西。",
+    "time_begin": 777895.9909297052,
+    "time_end": 781754.9931972789,
+    "text_begin": 5233,
+    "text_end": 5254,
+    "pronounce_text_begin": 4767,
+    "pronounce_text_end": 4788
+  },
+  {
+    "text": "但 append system prompt 有一个特别反直觉的限制——**边际递减。** 官方原话是：你给的指令越多，Claude 遵循得越不严格，尤其是指令之间有矛盾的时候。",
+    "pronounce_text": "但append system prompt有一个特别反直觉的限制。边际递减。官方原话是：你给的指令越多，Claude遵循得越不严格，尤其是指令之间有矛盾的时候。",
+    "time_begin": 781920,
+    "time_end": 794614.1950113379,
+    "text_begin": 5254,
+    "text_end": 5343,
+    "pronounce_text_begin": 4788,
+    "pronounce_text_end": 4868
+  },
+  {
+    "text": "这话翻译过来就是：append 不是越多越好。到某个阈值，你加的指令开始互相打架，Claude 干脆都不严格执行。",
+    "pronounce_text": "这话翻译过来就是：append不是越多越好。到某个玉值，你加的指令开始互相打架，Claude干脆都不严格执行。",
+    "time_begin": 794772,
+    "time_end": 803751.0022675737,
+    "text_begin": 5343,
+    "text_end": 5400,
+    "pronounce_text_begin": 4868,
+    "pronounce_text_end": 4923
+  },
+  {
+    "text": "讲到这里，7 个注入口都过了一遍。我们把它们摆在一起看。",
+    "pronounce_text": "讲到这里，七个注入口都过了一遍。我们把它们摆在一起看。",
+    "time_begin": 803916,
+    "time_end": 809144.9795918367,
+    "text_begin": 5400,
+    "text_end": 5428,
+    "pronounce_text_begin": 4923,
+    "pronounce_text_end": 4950
+  },
+  {
+    "text": "按上下文成本分。**高成本的**是 CLAUDE.md 根目录文件、unscoped rule、output styles。它们全程常驻。",
+    "pronounce_text": "按上下文成本分。高成本的，是CLAUDE.md根目录文件、unscoped rule、output styles。它们全程常驻。",
+    "time_begin": 809316,
+    "time_end": 820942.0770975057,
+    "text_begin": 5428,
+    "text_end": 5497,
+    "pronounce_text_begin": 4950,
+    "pronounce_text_end": 5014
+  },
+  {
+    "text": "**低成本的**是子目录 CLAUDE.md、path-scoped rule、skill、subagent、hook。",
+    "pronounce_text": "低成本的，是子目录 CLAUDE. md、path-scoped rule、skill、subagent、hook。",
+    "time_begin": 821142.0770975057,
+    "time_end": 829958.5396825396,
+    "text_begin": 5497,
+    "text_end": 5557,
+    "pronounce_text_begin": 5014,
+    "pronounce_text_end": 5072
+  },
+  {
+    "text": "它们要么按需加载，要么压根不进主上下文。**中等成本**的是 append system prompt——会被缓存，但首次请求要付。",
+    "pronounce_text": "它们要么按需加载，要么压根不进主上下文。中等成本，的是append system prompt。会被缓存，但首次请求要付。",
+    "time_begin": 830124,
+    "time_end": 841494.6575963718,
+    "text_begin": 5557,
+    "text_end": 5623,
+    "pronounce_text_begin": 5072,
+    "pronounce_text_end": 5133
+  },
+  {
+    "text": "按压缩行为分。**永不丢失的**是 CLAUDE.md、rule、output styles。",
+    "pronounce_text": "按压缩行为分。永不丢失的，是CLAUDE.md、rule、output styles。",
+    "time_begin": 841644,
+    "time_end": 851609.8503401361,
+    "text_begin": 5623,
+    "text_end": 5670,
+    "pronounce_text_begin": 5133,
+    "pronounce_text_end": 5176
+  },
+  {
+    "text": "**会被挤出的**是 skill——多个 skill 共享一个 budget，最早调用的最先掉。**完全绕过压缩的**是 hook。",
+    "pronounce_text": "会被挤出的，是skill。多个skill共享一个budget，最早调用的最先掉。完全绕过压缩的，是hook。",
+    "time_begin": 851809.8503401361,
+    "time_end": 861555.1111111111,
+    "text_begin": 5670,
+    "text_end": 5736,
+    "pronounce_text_begin": 5176,
+    "pronounce_text_end": 5230
+  },
+  {
+    "text": "**只对单次调用生效的**是 append system prompt。",
+    "pronounce_text": "只对单次调用生效的，是append system prompt。",
+    "time_begin": 861696,
+    "time_end": 865647.8820861678,
+    "text_begin": 5736,
+    "text_end": 5772,
+    "pronounce_text_begin": 5230,
+    "pronounce_text_end": 5262
+  },
+  {
+    "text": "按强制力分。**只有 hook 是真护栏**——其它六种都是建议。模型在长对话、压力情境、prompt injection 下都可能跳过指令。",
+    "pronounce_text": "按强制力分。只有hook是真护栏。其它六种都是建议。模型在长对话、压力情境、prompt injection下都可能跳过指令。",
+    "time_begin": 865800,
+    "time_end": 876787.5283446712,
+    "text_begin": 5772,
+    "text_end": 5843,
+    "pronounce_text_begin": 5262,
+    "pronounce_text_end": 5325
+  },
+  {
+    "text": "所以那条 thesis 现在可以摊开看了。同一句\"部署前必须跑测试\"，住进 CLAUDE.md，每个 session 都付 token，遵循率随对话变长还会衰减。",
+    "pronounce_text": "所以那条thesis现在可以摊开看了。同一句\"部署前必须跑测试\"，住进CLAUDE.md，每个session都付token，遵循率随对话变长还会衰减。",
+    "time_begin": 876924,
+    "time_end": 889827.1746031746,
+    "text_begin": 5843,
+    "text_end": 5924,
+    "pronounce_text_begin": 5325,
+    "pronounce_text_end": 5400
+  },
+  {
+    "text": "住进 path-scoped rule，只在动到部署相关文件时才付钱。",
+    "pronounce_text": "住进path-scoped rule，只在动到部署相关文件时才付钱。",
+    "time_begin": 890027.1746031746,
+    "time_end": 894873.0249433107,
+    "text_begin": 5924,
+    "text_end": 5959,
+    "pronounce_text_begin": 5400,
+    "pronounce_text_end": 5434
+  },
+  {
+    "text": "住进 skill，连描述行常驻，body 调用时才加载。**注册成 PostToolUse hook，它从指令升级成了代码——Claude 想不跑都不行。**",
+    "pronounce_text": "住进skill，连描述行常驻，body调用时才加载。注册成PostToolUse hook，它从指令升级成了代码。Claude想不跑都不行。",
+    "time_begin": 895032,
+    "time_end": 906147.2380952381,
+    "text_begin": 5959,
+    "text_end": 6038,
+    "pronounce_text_begin": 5434,
+    "pronounce_text_end": 5504
+  },
+  {
+    "text": "我读完整篇博客最强的体会是：**你以为你在调教 Claude，其实你在选指令住哪。**",
+    "pronounce_text": "我读完整篇博客最强的体会是：你以为你在调教Claude，其实你在选指令住哪。",
+    "time_begin": 906300,
+    "time_end": 913665.2154195012,
+    "text_begin": 6038,
+    "text_end": 6081,
+    "pronounce_text_begin": 5504,
+    "pronounce_text_end": 5542
+  },
+  {
+    "text": "同一句话，住进 CLAUDE.md 是 token 黑洞，住进 hook 是不可破的护栏。措辞写得多严厉、字号放多大、加多少个感叹号，都改变不了它的强制力——强制力由它住在哪个槽决定。",
+    "pronounce_text": "同一句话，住进CLAUDE.md是token黑洞，住进hook是不可破的护栏。措辞写得多严厉、字号放多大、加多少个感叹号，都改变不了它的强制力。强制力由它住在哪个槽决定。",
+    "time_begin": 913824,
+    "time_end": 930523.6371882086,
+    "text_begin": 6081,
+    "text_end": 6173,
+    "pronounce_text_begin": 5542,
+    "pronounce_text_end": 5627
+  },
+  {
+    "text": "这也是为什么\"7 种机制\"看起来像个产品功能列表，但本质上是一套 context engineering 的设计语言。",
+    "pronounce_text": "这也是为什么\"七种机制\"看起来像个产品功能列表，但本质上是一套context engineering的设计语言。",
+    "time_begin": 930672,
+    "time_end": 938582.8843537415,
+    "text_begin": 6173,
+    "text_end": 6232,
+    "pronounce_text_begin": 5627,
+    "pronounce_text_end": 5683
+  },
+  {
+    "text": "每个槽都在回答三个问题——这条指令什么时候进上下文、压缩之后会不会还在、模型敢不敢不听。",
+    "pronounce_text": "每个槽都在回答三个问题。这条指令什么时候进上下文、压缩之后会不会还在、模型敢不敢不听。",
+    "time_begin": 938782.8843537415,
+    "time_end": 947936.0362811792,
+    "text_begin": 6232,
+    "text_end": 6276,
+    "pronounce_text_begin": 5683,
+    "pronounce_text_end": 5726
+  },
+  {
+    "text": "如果你今天只能记一句话，就记这个：**事实进 CLAUDE.md，路径约束进 rule，过程进 skill，隔离的副任务进 subagent，确定性的自动化进 hook，",
+    "pronounce_text": "如果你今天只能记一句话，就记这个：事实进CLAUDE.md，路径约束进rule，过程进skill，隔离的副任务进subagent，确定性的自动化进hook，",
+    "time_begin": 948096,
+    "time_end": 963216.6802721089,
+    "text_begin": 6276,
+    "text_end": 6361,
+    "pronounce_text_begin": 5726,
+    "pronounce_text_end": 5804
+  },
+  {
+    "text": "角色重塑进 output style，临时调整进 append。**",
+    "pronounce_text": "角色重塑进output style，临时调整进append。",
+    "time_begin": 963416.6802721089,
+    "time_end": 968088.380952381,
+    "text_begin": 6361,
+    "text_end": 6395,
+    "pronounce_text_begin": 5804,
+    "pronounce_text_end": 5834
+  },
+  {
+    "text": "写错地方的代价，不会立刻显形，但会在每个 session、每个工程师、每条对话里慢慢累积。",
+    "pronounce_text": "写错地方的代价，不会立刻显形，但会在每个session、每个工程师、每条对话里慢慢累积。",
+    "time_begin": 968256,
+    "time_end": 976422.3038548753,
+    "text_begin": 6395,
+    "text_end": 6440,
+    "pronounce_text_begin": 5834,
+    "pronounce_text_end": 5878
+  },
+  {
+    "text": "如果你正在维护一个 Claude Code 项目，今天看完这期可以做一件事——打开你的 CLAUDE.md，数一下行数。超过 200 行的部分，挑出来看哪些是 procedure、哪些是 \"永远不要做 X\"、哪些是路径相关的约束。",
+    "pronounce_text": "如果你正在维护一个Claude Code项目，今天看完这期可以做一件事。打开你的CLAUDE.md，数一下行数。超过两百行的部分，挑出来看哪些是procedure、哪些是\"永远不要做X\"、哪些是路径相关的约束。",
+    "time_begin": 976572,
+    "time_end": 993399.3469387755,
+    "text_begin": 6440,
+    "text_end": 6555,
+    "pronounce_text_begin": 5878,
+    "pronounce_text_end": 5983
+  },
+  {
+    "text": "把它们搬到该住的地方。光这一步，团队里每个 session 都会变得更便宜、更准确。",
+    "pronounce_text": "把它们搬到该住的地方。光这一步，团队里每个session都会变得更便宜、更准确。",
+    "time_begin": 993564,
+    "time_end": 1000023.6371882086,
+    "text_begin": 6555,
+    "text_end": 6597,
+    "pronounce_text_begin": 5983,
+    "pronounce_text_end": 6023
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 1000188,
+    "time_end": 1005672.3990929705,
+    "text_begin": 6597,
+    "text_end": 6624,
+    "pronounce_text_begin": 6023,
+    "pronounce_text_end": 6049
+  }
+]

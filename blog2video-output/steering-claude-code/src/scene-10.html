@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s10'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:4px 13px}
+[data-composition-id='s10'] .row.warn .rd .ko{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="41" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[10/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第七种 · <span class="acc">APPEND SYSTEM PROMPT</span></div>
+      <div class="h1" style="margin-top:18px">不替换默认人设，<span class="em">只在后面叠加</span></div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">通过 CLI flag 在调用时追加</div>
+          <div class="rd">把这段内容贴到 <span class="code">system prompt</span> 后面</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">和 <span class="code">output styles</span> 的区别</div>
+          <div class="rd">output styles 是<span class="ok">替换</span>，append 是<span class="ok">叠加</span> —— 默认人设不破</div>
+        </div></div>
+
+        <div class="row r3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">反直觉的限制：<span class="code" style="color:#ff6b5e;background:rgba(255,107,94,.1);border-color:rgba(255,107,94,.28)">边际递减</span></div>
+          <div class="rd">官方原话：指令越多，Claude 遵循得<span class="ko">越不严格</span> —— 尤其是<span class="ko">指令互相矛盾</span>时</div>
+          <div class="taglist"><span class="tg">append 不是越多越好</span><span class="tg">到阈值开始打架</span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="8.394" data-track-index="5"><div class="sub-inner">第七种是 append system prompt，通过 CLI flag 在调用时追加一段内容到 <span class="sub-k">system prompt</span> 后面。</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.406" data-duration="6.39" data-track-index="5"><div class="sub-inner">它跟 output styles 的区别是：output styles 是<span class="sub-k">替换</span>，append 是叠加。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.996" data-duration="3.859" data-track-index="5"><div class="sub-inner">所以它<span class="sub-k">不会破坏默认人设</span>，只是在后面加东西。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.02" data-duration="6.133" data-track-index="5"><div class="sub-inner">但 append system prompt 有一个特别反直觉的限制——**<span class="sub-k">边际递减</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.153" data-duration="6.561" data-track-index="5"><div class="sub-inner">** 官方原话是：你给的指令越多，Claude <span class="sub-k">遵循得越不严格</span>，尤其是指令之间有矛盾的时候。</div></div>
+    <div id="sub-6" class="clip sub" data-start="31.872" data-duration="3.623" data-track-index="5"><div class="sub-inner">这话翻译过来就是：append <span class="sub-k">不是越多越好</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.495" data-duration="5.356" data-track-index="5"><div class="sub-inner">到某个阈值，你加的指令开始<span class="sub-k">互相打架</span>，Claude 干脆都不严格执行。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 2.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 8.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 19.2, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 25.3, {y:12, d:.36, ease:'power2.out'});
+    D2.stagger(tl, R+'.r3 .taglist .tg', 31.9, {y:12, step:.18, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',8.406],['#sub-3',14.996],['#sub-4',19.02],['#sub-5',25.153],['#sub-6',31.872],['#sub-7',35.495]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 41, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

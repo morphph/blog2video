@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .winsm{display:inline-flex;align-items:baseline;gap:14px;margin-top:14px;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:10px 22px}
+[data-composition-id='s08'] .winsm .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s08'] .winsm .lab{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;letter-spacing:.02em}
+[data-composition-id='s08'] .rd2a{margin-top:10px}
+[data-composition-id='s08'] .rd2b{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;border:1px solid rgba(204,255,77,.4);padding:6px 14px;display:inline-block}
+[data-composition-id='s08'] .rd2b b{color:#ccff4d;font-weight:700}
+[data-composition-id='s08'] .rd3b{margin-top:10px}
+[data-composition-id='s08'] .anti{margin-top:18px;display:flex;align-items:center;gap:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.02em}
+[data-composition-id='s08'] .anti .x{color:#ff6b5e;font-weight:700;margin-right:6px}
+[data-composition-id='s08'] .anti b{color:#edebe6;font-weight:600}
+[data-composition-id='s08'] .warn-t{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="58.433" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[08/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// HOOKS · <span class="acc">性能 + 杀器</span></div>
+      <div class="h1" style="margin-top:14px">上下文成本<span class="em">几乎为零</span></div>
+
+      <div class="rows" style="margin-top:28px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">harness 直接执行,<span class="code">不进 Claude 上下文</span></div>
+          <div class="winsm i1win"><div class="num">≈ 0</div><div class="lab">token / 次</div></div>
+          <div class="rd rd1late" style="margin-top:12px">配置住在<span class="ok">主上下文之外</span>,运行结果默认也不回主上下文</div>
+        </div></div>
+
+        <div class="row i2 warn"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="warn-t">TRAP</span> · PreCompact 备份了聊天历史</div>
+          <div class="rd rd2a">Claude <span class="warn-t">不知道</span>你存到了哪个文件 —— 除非 hook 显式 <span class="code">return</span></div>
+          <div class="rd2b i2note">EXCEPTION · blocking hook 的 <b>stderr</b> 才会回主上下文</div>
+        </div></div>
+
+        <div class="row i3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="code">Managed Settings</span> + Hook · 组织级杀器</div>
+          <div class="rd rd3a" style="margin-top:10px">管理员部署的设置,用户本地配置<span class="ok">无法覆盖</span></div>
+          <div class="rd3b">公司范围强制「Agent 不能 <span class="hl i3hl"><span class="bar"></span><span class="tx">push 到 main</span></span>」 —— 唯一组合</div>
+          <div class="anti i3anti"><span><span class="x">×</span><b>CLAUDE.md</b></span><span><span class="x">×</span><b>rule</b></span><span><span class="x">×</span><b>skill</b></span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.247" data-track-index="5"><div class="sub-inner">hook 还有一个特别值得注意的特性——它的<span class="sub-k">上下文成本几乎为零</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.238" data-duration="6.567" data-track-index="5"><div class="sub-inner">因为 hook 是 <span class="sub-k">harness 直接执行</span>的代码，不是塞进 Claude 上下文的指令。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.805" data-duration="3.648" data-track-index="5"><div class="sub-inner">配置住在<span class="sub-k">主上下文之外</span>，运行结果默认也不回主上下文。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.608" data-duration="1.392" data-track-index="5"><div class="sub-inner">这就引出一个 <span class="sub-k">trap</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17" data-duration="9.514" data-track-index="5"><div class="sub-inner">如果你写了一个 PreCompact hook，把聊天历史备份到一个文件，Claude <span class="sub-k">不知道你存到了哪个文件里</span>——除非这个 hook 显式 return。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.66" data-duration="7.4" data-track-index="5"><div class="sub-inner">少数会回主上下文的，是 blocking hook 的<span class="sub-k">标准错误</span>——这是为了让 Claude 知道为什么这次调用被拒了。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.22" data-duration="5.585" data-track-index="5"><div class="sub-inner">最后还有一个组织级的杀器，叫 <span class="sub-k">managed settings</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="39.805" data-duration="3.568" data-track-index="5"><div class="sub-inner">这是管理员部署的设置，用户的本地配置<span class="sub-k">无法覆盖</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="43.544" data-duration="10.418" data-track-index="5"><div class="sub-inner">如果你想在整个公司范围内强制一条"任何 Agent 都不能 push 到 main 分支"——只有 <span class="sub-k">managed settings + hook</span> 这个组合能做到。</div></div>
+    <div id="sub-10" class="clip sub" data-start="53.962" data-duration="4.32" data-track-index="5"><div class="sub-inner">CLAUDE.md 做不到，rule 做不到，<span class="sub-k">skill 也做不到</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    // item 1: harness exec → ~0 token → late detail
+    D2.enter(tl, R+'.i1', 5.4, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i1win', 7.0, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.rd1late', 11.9, {y:10, d:.3, ease:'power2.out'});
+    // item 2: TRAP (warn) → detail → cyan exception late
+    D2.enter(tl, R+'.i2', 15.7, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.rd2a', 17.2, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i2note', 26.8, {y:10, d:.32, ease:'power2.out'});
+    // item 3: Managed Settings → desc → hl sweep → anti
+    D2.enter(tl, R+'.i3', 34.4, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rd3a', 39.9, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rd3b', 43.7, {y:10, d:.32, ease:'power2.out'});
+    D2.sweep(tl, R, '.i3hl', 47.2);
+    D2.enter(tl, R+'.i3anti', 54.1, {y:10, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.238],['#sub-3',11.805],['#sub-4',15.608],['#sub-5',17],['#sub-6',26.66],['#sub-7',34.22],['#sub-8',39.805],['#sub-9',43.544],['#sub-10',53.962]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 58.433, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

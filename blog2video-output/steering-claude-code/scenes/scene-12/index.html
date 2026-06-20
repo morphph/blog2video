@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   d2 「终端霓影 Terminal v2」 BASE KIT  —— loop-engineering 全片统一组件库
+   真源。生成器把本文件 + d2-motion.js 内联进每个场景的 style / script 块。
+   场景自包含,逐个 standalone 渲染,因此组件类不做 sNN 作用域(单 composition 不会串扰)。
+   GSAP 选择器仍用 R = composition-id 前缀定位(R 拼成 data-composition-id 属性选择器),见 d2-motion.js。
+   字体路径相对 scene 目录:assets -> symlink 到 ../../assets。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入)---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+
+/* ---- 令牌 ---- */
+:root{
+  --bg:#121212; --panel:#1c1c1e; --ink:#edebe6; --dim:#8a8a85; --key:#2a2a2c;
+  --acid:#ccff4d; --cyan:#5fd3e8; --coral:#ff6b5e; --amber:#ffbd2e; --green:#27c93f;
+  --mono:'JetBrains Mono',monospace; --sans:'MiSans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+
+/* ---- 蓝图点阵 ---- 几乎每个场景铺底 */
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.045;
+  -webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 42%,#000 50%,rgba(0,0,0,0) 100%)}
+
+/* ---- topbar ---- 左栏目名+光标 右页码 */
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.topbar .idx{color:#ccff4d}
+
+/* ---- 内容安全区 ---- 上≥160 / 左右72 / 下≥540(留给字幕带) */
+.content{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+  box-sizing:border-box;transform-origin:50% 45%}
+.content.top{justify-content:flex-start;padding-top:236px}   /* 密集列表从上往下排 */
+.content.tight{padding-top:208px;padding-bottom:540px}        /* 极密(>4 行+说明) */
+
+/* ---- 字幕带(全片统一,track 5)---- */
+.sub{position:absolute;left:72px;right:72px;bottom:340px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(18,18,18,.6);border-top:1px solid #2a2a2c;max-width:936px;padding:16px 22px;
+  font-weight:500;font-size:38px;line-height:1.4;color:#edebe6;text-align:center}
+.sub-k{color:#ccff4d}
+
+/* ========================= 组件 ========================= */
+
+/* 章节 kicker(mono 小标签) */
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+.kicker .acc{color:#ccff4d}
+
+/* 大标题 */
+.h1{font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+.h1.xl{font-size:88px;line-height:1.08}
+.h1 .em{color:#ccff4d}
+.h2{font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+.lead{font-weight:600;font-size:40px;line-height:1.45;color:#edebe6}
+.lead .dim{color:#8a8a85} .lead .em{color:#ccff4d}
+
+/* 酸性高亮:块从左扫过,文字反色为 #121212(每屏 ≤1 处) */
+.hl{position:relative;display:inline-block;padding:4px 14px}
+.hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+.hl .tx{position:relative;z-index:1;font-weight:900;color:#edebe6}
+
+/* chip:mono 编号 + 标签 */
+.chip{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+.chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:25px;color:#ccff4d;letter-spacing:.05em}
+.chip .ct{font-weight:600;font-size:38px;color:#edebe6}
+
+/* 编号清单行(checklist / steps) */
+.rows{display:flex;flex-direction:column;gap:16px;width:100%}
+.row{display:flex;align-items:flex-start;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 30px;width:100%}
+.row .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;line-height:1.25;min-width:46px}
+.row .rb{flex:1;min-width:0}
+.row .rt{font-weight:600;font-size:40px;color:#edebe6;line-height:1.28}
+.row .rd{margin-top:8px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+.row .rd .warn{color:#ff6b5e;font-weight:600}
+.row .rd .ok{color:#ccff4d;font-weight:600}
+.row.warn{border-color:rgba(255,107,94,.4)} .row.warn .n{color:#ff6b5e}
+.row.now{border-color:#ccff4d}
+
+/* 步骤箭头(纵向流程) */
+.flowarrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;margin:2px 0 2px 14px}
+.flowarrow .a{color:#ccff4d}
+
+/* 终端窗口卡(quote / 代码 / 金句) */
+.term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+.term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+.term-bar .d{width:12px;height:12px;border-radius:50%}
+.term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+.term-body{padding:44px 40px 48px}
+.term-l1{font-weight:600;font-size:44px;line-height:1.45;color:#8a8a85}
+.term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+.term-l2{margin-top:24px;font-weight:900;font-size:64px;line-height:1.32;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+.term-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:32px;color:#5fd3e8}
+.term-src{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+.term-src b{color:#edebe6;font-weight:700}
+
+/* corner-bracket 面板(重点区 / 节点) */
+.bracket{position:relative;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 34px}
+.bracket::before,.bracket::after{content:'';position:absolute;width:26px;height:26px;pointer-events:none}
+.bracket::before{top:-1px;left:-1px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+.bracket::after{bottom:-1px;right:-1px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+
+/* 状态灯:小圆点 + mono 标签 */
+.status{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+.status .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.status.alert{color:#ff6b5e} .status.alert .dot{background:#ff6b5e}
+
+/* 块状光标 */
+.cur{display:inline-block;width:30px;height:54px;background:#ccff4d;vertical-align:-8px;margin-left:14px}
+.cur.sm{width:20px;height:38px;margin-left:10px;vertical-align:-5px}
+
+/* 双栏对比 */
+.cols{display:flex;gap:22px;width:100%}
+.col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 28px;display:flex;flex-direction:column;min-width:0}
+.col .ch{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:22px}
+.col.alt .ch{color:#5fd3e8}
+.col .it{margin-bottom:20px} .col .it:last-child{margin-bottom:0}
+.col .it .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+.col .it .ds{margin-top:6px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+.col .it code,.code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+.col.alt .it code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:10px;vertical-align:3px}
+
+/* 时间线(纵向 mono 年份) */
+.tl{display:flex;flex-direction:column;gap:14px;width:100%}
+.tl-row{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+.tl-row .yr{flex-shrink:0;width:150px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:#8a8a85;letter-spacing:-.01em}
+.tl-row .wt{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+.tl-row.now{border-color:#ccff4d;background:rgba(204,255,77,.06)} .tl-row.now .yr{color:#ccff4d}
+.tl-row.now .badge{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 12px;vertical-align:4px}
+
+/* 数据条 / count-up 统计 */
+.stats{display:flex;gap:18px;width:100%}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 16px;text-align:center}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:62px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan .num{color:#5fd3e8}
+
+/* 大数字赢面板 */
+.win{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;text-align:center}
+.win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+.win .lab{margin-top:10px;font-weight:500;font-size:28px;color:#edebe6}
+
+/* end chip(收尾标语) */
+.endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+.endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .map{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:22px}
+[data-composition-id='s12'] .mrow{display:flex;align-items:center;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:14px 26px}
+[data-composition-id='s12'] .mrow .mn{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:#ccff4d;min-width:38px;letter-spacing:.04em}
+[data-composition-id='s12'] .mrow .mw{flex:1;font-weight:600;font-size:30px;color:#edebe6;line-height:1.25}
+[data-composition-id='s12'] .mrow .mar{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;margin:0 4px}
+[data-composition-id='s12'] .mrow .mt{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ccff4d;min-width:208px;text-align:right;letter-spacing:.02em}
+[data-composition-id='s12'] .cmd{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s12'] .cmd .p{color:#ccff4d;margin-right:14px}
+[data-composition-id='s12'] .cmd .ar{color:#8a8a85;margin-right:12px}
+[data-composition-id='s12'] .cmd .cm{color:#8a8a85;margin-left:14px;font-size:24px}
+[data-composition-id='s12'] .cmd .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s12'] .cmd .ok{color:#ccff4d;font-weight:700}
+[data-composition-id='s12'] .cta{margin-top:22px}
+[data-composition-id='s12'] .slogan{margin-top:22px;font-weight:700;font-size:36px;color:#edebe6;line-height:1.4}
+[data-composition-id='s12'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s12'] .signoff{margin-top:18px}
+[data-composition-id='s12'] .h1.s12{font-size:54px;line-height:1.14}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="100.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 收官<span class="b-cur"></span></div>
+      <div class="idx">[12/12]</div>
+    </div>
+
+    <div class="content tight" style="justify-content:flex-start">
+      <div class="kicker">// 收官 · <span class="acc">你在选指令住哪</span></div>
+      <div class="h1 s12" style="margin-top:14px">你以为你在调教 Claude<br>其实你在选指令<span class="em">住哪</span></div>
+
+      <div class="map">
+        <div class="mrow m1"><div class="mn">01</div><div class="mw">事实</div><div class="mar">→</div><div class="mt">CLAUDE.md</div></div>
+        <div class="mrow m2"><div class="mn">02</div><div class="mw">路径约束</div><div class="mar">→</div><div class="mt">Rule</div></div>
+        <div class="mrow m3"><div class="mn">03</div><div class="mw">过程 / procedure</div><div class="mar">→</div><div class="mt">Skill</div></div>
+        <div class="mrow m4"><div class="mn">04</div><div class="mw">隔离的副任务</div><div class="mar">→</div><div class="mt">Subagent</div></div>
+        <div class="mrow m5"><div class="mn">05</div><div class="mw">确定性自动化</div><div class="mar">→</div><div class="mt">Hook</div></div>
+        <div class="mrow m6"><div class="mn">06</div><div class="mw">角色重塑</div><div class="mar">→</div><div class="mt">Output Style</div></div>
+        <div class="mrow m7"><div class="mn">07</div><div class="mw">临时调整</div><div class="mar">→</div><div class="mt">Append</div></div>
+      </div>
+
+      <div class="term cta">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@steering: ~</span></div>
+        <div class="term-body" style="padding:24px 32px 26px">
+          <div class="cmd c1"><span class="p">$</span>wc -l CLAUDE.md<span class="cm"># 数一下行数</span></div>
+          <div class="cmd c2"><span class="ar">›</span>超过 <span class="em">200 行</span>的部分,挑出来搬家<span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+
+      <div class="slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.013" data-track-index="5"><div class="sub-inner">我读完整篇博客最强的体会是:**你以为你在调教 Claude,其实你在<span class="sub-k">选指令住哪</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.023" data-duration="0.332" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.524" data-duration="8.158" data-track-index="5"><div class="sub-inner">同一句话,住进 CLAUDE.md 是 token 黑洞,住进 hook 是<span class="sub-k">不可破的护栏</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.692" data-duration="8.522" data-track-index="5"><div class="sub-inner">措辞写得多严厉、字号放多大、加多少个感叹号,都改变不了它的强制力——<span class="sub-k">强制力由它住在哪个槽决定</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.372" data-duration="7.901" data-track-index="5"><div class="sub-inner">这也是为什么"7 种机制"看起来像个产品功能列表,但本质上是一套 <span class="sub-k">context engineering 的设计语言</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="32.483" data-duration="9.143" data-track-index="5"><div class="sub-inner">每个槽都在回答三个问题——这条指令什么时候进上下文、压缩之后会不会还在、<span class="sub-k">模型敢不敢不听</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="41.796" data-duration="15.111" data-track-index="5"><div class="sub-inner">如果你今天只能记一句话,就记这个:**事实进 CLAUDE.md,路径约束进 rule,过程进 skill,隔离的副任务进 subagent,<span class="sub-k">确定性的自动化进 hook</span>,</div></div>
+    <div id="sub-8" class="clip sub" data-start="57.117" data-duration="4.387" data-track-index="5"><div class="sub-inner">角色重塑进 <span class="sub-k">output style</span>,临时调整进 append。</div></div>
+    <div id="sub-9" class="clip sub" data-start="61.514" data-duration="0.264" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-10" class="clip sub" data-start="61.956" data-duration="8.156" data-track-index="5"><div class="sub-inner">写错地方的代价,不会立刻显形,但会在每个 session、每个工程师、<span class="sub-k">每条对话里慢慢累积</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="70.272" data-duration="8.769" data-track-index="5"><div class="sub-inner">如果你正在维护一个 Claude Code 项目,今天看完这期可以做一件事——打开你的 CLAUDE.md,<span class="sub-k">数一下行数</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="79.051" data-duration="8.038" data-track-index="5"><div class="sub-inner">超过 200 行的部分,挑出来看哪些是 procedure、哪些是 <span class="sub-k">"永远不要做 X"</span>、哪些是路径相关的约束。</div></div>
+    <div id="sub-13" class="clip sub" data-start="87.264" data-duration="1.682" data-track-index="5"><div class="sub-inner">把它们<span class="sub-k">搬到该住的地方</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="88.956" data-duration="4.758" data-track-index="5"><div class="sub-inner">光这一步,团队里每个 session 都会变得<span class="sub-k">更便宜、更准确</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="93.888" data-duration="4.053" data-track-index="5"><div class="sub-inner">AI 世界很吵,<span class="sub-k">精读一篇,胜过刷一百条</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="97.951" data-duration="1.411" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /* ============================================================================
+   d2-motion.js —— GSAP 动效助手(全片统一性格:工程式利落)
+   内联进每个场景的 script 块(GSAP 3.14 先于本段加载)。
+   全局命名空间 window.D2。所有动画只动 transform / opacity / color / backgroundColor。
+   禁:弹性/回弹 ease、repeat:-1、Date.now/Math.random。timeline 同步构建。
+
+   两种用法:
+   1) 低阶助手:在自写 timeline 里调 D2.enter(tl,sel,at,opts) 等(精修范本用,控制最细)。
+   2) 高阶约定:D2.buildSceneTimeline(R, spec) 一把声明式建好(生成器默认用)。
+   ============================================================================ */
+(function(){
+  var ACID='#ccff4d', BG='#121212';
+
+  var D2 = {
+    /* 标准入场:y 抬升 16–20px + fade,0.25–0.35s。opts:{y,x,d,ease,from(=true)} */
+    enter:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.32, ease:opts.ease||'power3.out' };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 一组元素逐条 build(stagger);永不整屏一次性上 */
+    stagger:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.3, ease:opts.ease||'power3.out', stagger:opts.step||0.14 };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 酸性高亮:.hl 块从左扫过(scaleX 0→1)+ 文字反色为 #121212。sel 指向 .hl 容器 */
+    sweep:function(tl, R, sel, at){
+      tl.to(R+sel+' .bar', { scaleX:1, duration:0.32, ease:'power4.inOut' }, at);
+      tl.to(R+sel+' .tx',  { color:BG, duration:0.12, ease:'power1.inOut' }, at+0.16);
+      return tl;
+    },
+
+    /* 下方 2px 亮线 draw(关键词强调的轻量版)。sel 指向一个 .underline 元素(transform-origin:left) */
+    underline:function(tl, sel, at){
+      tl.fromTo(sel, { scaleX:0 }, { scaleX:1, duration:0.28, ease:'power3.out' }, at);
+      return tl;
+    },
+
+    /* 块状光标有限次闪烁 */
+    blink:function(tl, sel, at, times){
+      tl.to(sel, { opacity:0, duration:0.42, ease:'steps(1)', repeat:(times||5), yoyo:true }, at);
+      return tl;
+    },
+
+    /* 打字机:对已拆成 char span 的集合做极短 stagger 显形(~28ms/字符)。
+       用法:把文字拆成 <span class='ch'>x</span>,传 sel='.line .ch' */
+    type:function(tl, sel, at, perChar){
+      tl.from(sel, { opacity:0, duration:0.01, ease:'none', stagger:(perChar||0.028) }, at);
+      return tl;
+    },
+
+    /* 数字 count-up:1–3s ease-out 落停。el 是真实 DOM 选择器(单个),整数或保留 decimals 位 */
+    countUp:function(tl, el, at, from, to, dur, opts){
+      opts = opts || {};
+      var node = (typeof el==='string') ? document.querySelector(el) : el;
+      if(!node) return tl;
+      var prefix = opts.prefix||'', suffix = opts.suffix||'', dec = opts.decimals||0;
+      var proxy = { v: from };
+      tl.to(proxy, {
+        v: to, duration: dur||1.4, ease: opts.ease||'power2.out',
+        onUpdate: function(){ node.textContent = prefix + proxy.v.toFixed(dec) + suffix; }
+      }, at);
+      return tl;
+    },
+
+    /* 字幕淡入:list = [[id, localStart], ...](0.2s) */
+    subs:function(tl, list){
+      list.forEach(function(s){ tl.from(s[0], { opacity:0, duration:0.2, ease:'power1.out' }, s[1]); });
+      return tl;
+    },
+
+    /* 环境呼吸:整段 content scale。dir:'in'(1→1.035 推近)/'out'(1.035→1 拉远)。dur=场景全长 */
+    breath:function(tl, sel, dur, dir){
+      if(dir==='out') tl.fromTo(sel, { scale:1.035 }, { scale:1.0, duration:dur, ease:'none' }, 0);
+      else            tl.fromTo(sel, { scale:1.0 }, { scale:1.035, duration:dur, ease:'none' }, 0);
+      return tl;
+    },
+
+    /* 揭示一个初始 opacity:0 的层(多 beat 场景切换用) */
+    reveal:function(tl, sel, at){ tl.set(sel, { opacity:1 }, at); return tl; },
+
+    /* ---- 高阶约定:声明式建整条 timeline ----
+       spec = {
+         duration: 场景全长(=brief.dataDuration),
+         breath: 'in' | 'out',                     // content 呼吸方向(奇数 in/偶数 out)
+         grid: true,                                // 是否 fade 入点阵 + topbar
+         enters: [ {sel, at, x?, y?, d?, ease?} ],  // 单元素入场
+         staggers:[ {sel, at, step?, x?, y?, d?, ease?} ],
+         sweeps:  [ {sel, at} ],                    // .hl 酸性扫过(sel 含 R 之后的 .xxx)
+         counts:  [ {el, at, from, to, dur?, prefix?, suffix?, decimals?} ],
+         blinks:  [ {sel, at, times?} ],
+         subs:    [ [id, localStart], ... ],
+         custom:  function(tl, R){...}              // 兜底自定义
+       }
+       约定:所有 sel 都是「R 之后的子选择器」(如 '.h1'),helper 自动拼 R 前缀。
+       content 选择器固定 '.content'。 */
+    buildSceneTimeline:function(R, spec){
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused:true });
+      if(spec.grid !== false){
+        tl.from(R+'.grid',   { opacity:0, duration:0.5, ease:'power1.out' }, 0.02);
+        tl.from(R+'.topbar', { y:-16, opacity:0, duration:0.3, ease:'power2.out' }, 0.2);
+      }
+      (spec.enters||[]).forEach(function(e){ D2.enter(tl, R+e.sel, e.at, e); });
+      (spec.staggers||[]).forEach(function(s){ D2.stagger(tl, R+s.sel, s.at, s); });
+      (spec.sweeps||[]).forEach(function(s){ D2.sweep(tl, R, s.sel, s.at); });
+      (spec.counts||[]).forEach(function(c){ D2.countUp(tl, R+c.el, c.at, c.from, c.to, c.dur, c); });
+      (spec.blinks||[]).forEach(function(b){ D2.blink(tl, R+b.sel, b.at, b.times); });
+      if(spec.custom) spec.custom(tl, R);
+      if(spec.subs) D2.subs(tl, spec.subs.map(function(s){ return [R+s[0], s[1]]; }));
+      D2.breath(tl, R+'.content', spec.duration, spec.breath||'in');
+      return tl;
+    },
+
+    /* 注册到全局,供 hyperframes 驱动 */
+    register:function(id, tl){ window.__timelines = window.__timelines || {}; window.__timelines[id] = tl; }
+  };
+
+  window.D2 = D2;
+})();
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // hook
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:22, d:.46, ease:'expo.out'});
+
+    // map: 7 rows staggered to the central recap (sub-7 starts 41.796s, sub-8 ends ~61.5)
+    // earlier rows (CLAUDE.md, hook) preview at sub-3 anchor (7.5s) to illustrate contrast.
+    D2.enter(tl, R+'.m1', 8.2, {x:-20, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.m5', 11.4, {x:-20, d:.32, ease:'expo.out'});
+    // rest of mapping reveal aligned with the "recall list" subtitle
+    D2.enter(tl, R+'.m2', 42.6, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m3', 46.0, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m4', 49.4, {x:-20, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.m6', 57.4, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m7', 59.4, {x:-20, d:.3, ease:'power3.out'});
+
+    // CTA terminal aligns with sub-11 (70.272s)
+    D2.enter(tl, R+'.cta', 70.4, {y:18, d:.4, ease:'expo.out'});
+    tl.from(R+'.cta .term-bar',{opacity:0,duration:.28,ease:'power1.out'},70.6);
+    D2.enter(tl, R+'.c1', 71.0, {x:-14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 79.2, {x:-14, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 87.4, 10);
+
+    // slogan + signoff
+    D2.enter(tl, R+'.slogan', 93.9, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 97.95, {y:12, d:.3, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.023],['#sub-3',7.524],['#sub-4',15.692],['#sub-5',24.372],['#sub-6',32.483],['#sub-7',41.796],['#sub-8',57.117],['#sub-9',61.514],['#sub-10',61.956],['#sub-11',70.272],['#sub-12',79.051],['#sub-13',87.264],['#sub-14',88.956],['#sub-15',93.888],['#sub-16',97.951]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 100.367, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

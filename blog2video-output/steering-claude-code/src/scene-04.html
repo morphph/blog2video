@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s04'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:22px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 12px}
+[data-composition-id='s04'] .row.acid{border-color:#ccff4d;background:rgba(204,255,77,.06)}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="93.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[04/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// <span class="acc">.claude/rules/</span> · markdown + frontmatter</div>
+      <div class="h1" style="margin-top:18px">Rules 的真正价值 <span class="em">= path-scoped</span></div>
+
+      <div class="rows" style="margin-top:38px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">没 paths · <span class="code">unscoped rule</span></div>
+          <div class="rd">机制上 <span class="ok">≡ CLAUDE.md</span> —— 一样常驻,一样烧 token</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">带 paths · <span class="code">path-scoped rule</span></div>
+          <div class="rd">只在 Claude 读到对应目录文件时,才进上下文</div>
+          <div class="taglist"><span class="tg">paths: ["src/api/**"]</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">例子:API handler 必须用 <span class="code">Zod</span> 校验</div>
+          <div class="rd r3d">塞进 CLAUDE.md —— 写文档、改前端、跑测试都加载一遍</div>
+          <div class="taglist r3tg"><span class="tg">paths: ["src/api/**", "**/*.handler.ts"]</span></div>
+        </div></div>
+
+        <div class="row r4 acid"><div class="n">04</div><div class="rb">
+          <div class="rt">判断标准:<span class="em" style="color:#ccff4d">跟特定路径绑定吗?</span></div>
+          <div class="rd">"<span class="code">migrations</span> 只能 append,不能改" —— 写进 paths,比塞 CLAUDE.md 干净一百倍</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="4.773" data-track-index="5"><div class="sub-inner">第二种叫 rules,住在 <span class="sub-k">`.claude/rules/`</span> 文件夹里。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.78" data-duration="7.027" data-track-index="5"><div class="sub-inner">它们是带 frontmatter 的 markdown 文件,专门用来表达"在某种情况下<span class="sub-k">必须遵守的约束</span>"。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.959" data-duration="1.589" data-track-index="5"><div class="sub-inner">rules 有<span class="sub-k">两种用法</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.548" data-duration="3.574" data-track-index="5"><div class="sub-inner">没加 paths 的,叫 <span class="sub-k">unscoped rule</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.122" data-duration="5.825" data-track-index="5"><div class="sub-inner">它的行为跟 <span class="sub-k">CLAUDE.md</span> 几乎一样——session 开始就加载,压缩后重新注入。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.083" data-duration="8.358" data-track-index="5"><div class="sub-inner">官方说得很直白:没有 paths 的 rule,跟把内容写在 CLAUDE.md 里在机制上<span class="sub-k">完全等价</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.441" data-duration="2.839" data-track-index="5"><div class="sub-inner">一样常驻,<span class="sub-k">一样烧 token</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.423" data-duration="4.033" data-track-index="5"><div class="sub-inner">真正值钱的是带 paths 的 <span class="sub-k">path-scoped rule</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="38.456" data-duration="9.776" data-track-index="5"><div class="sub-inner">frontmatter 里写一行 <span class="sub-k">`paths: ["src/api/**"]`</span>,这条规矩就只在 Claude 读到 `src/api` 下的文件时才进上下文。</div></div>
+    <div id="sub-10" class="clip sub" data-start="48.391" data-duration="0.875" data-track-index="5"><div class="sub-inner"><span class="sub-k">举个例子</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="49.266" data-duration="6.477" data-track-index="5"><div class="sub-inner">你想强制所有 API handler 在处理之前必须用 <span class="sub-k">Zod 校验</span>输入。</div></div>
+    <div id="sub-12" class="clip sub" data-start="55.743" data-duration="7.002" data-track-index="5"><div class="sub-inner">这条规矩写在 CLAUDE.md 里,每次写文档、改前端、跑测试,它都<span class="sub-k">加载一遍</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="62.899" data-duration="8.315" data-track-index="5"><div class="sub-inner">但你给它套上 <span class="sub-k">`paths: ["src/api/**", "**/*.handler.ts"]`</span>,它就只在真的写 API 的时候才出现。</div></div>
+    <div id="sub-14" class="clip sub" data-start="71.214" data-duration="2.289" data-track-index="5"><div class="sub-inner">其它 session 里它<span class="sub-k">根本不存在</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="73.663" data-duration="7.611" data-track-index="5"><div class="sub-inner">判断要不要用 path-scoped rule,有一条干脆的标准——这条约束是不是跟<span class="sub-k">特定路径绑定</span>的?</div></div>
+    <div id="sub-16" class="clip sub" data-start="81.274" data-duration="3.806" data-track-index="5"><div class="sub-inner">"迁移文件只能 <span class="sub-k">append</span>,不能改" 这种就是。</div></div>
+    <div id="sub-17" class="clip sub" data-start="85.219" data-duration="4.193" data-track-index="5"><div class="sub-inner">它只跟 <span class="sub-k">migrations 目录</span>有关,跟其它代码一点关系都没有。</div></div>
+    <div id="sub-18" class="clip sub" data-start="89.412" data-duration="4.194" data-track-index="5"><div class="sub-inner">这种约束写进 paths,比塞进 CLAUDE.md <span class="sub-k">干净一百倍</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:20, d:.42, ease:'expo.out'});
+    /* 01 unscoped: sub-4 (13.548) 开始 */
+    D2.enter(tl, R+'.r1', 13.6, {x:-24, ease:'power3.out'});
+    /* 02 path-scoped: sub-8 (34.423) 揭示卡;sub-9 (38.456) 揭示 paths 标签 */
+    D2.enter(tl, R+'.r2', 34.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .taglist', 39.0, {y:14, d:.32, ease:'power2.out'});
+    /* 03 Zod 例子: sub-10 (48.391) 卡入;sub-12 (55.743) rd;sub-13 (62.899) paths 标签 */
+    D2.enter(tl, R+'.r3', 48.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .r3d', 55.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3 .r3tg', 63.4, {y:14, d:.32, ease:'power2.out'});
+    /* 04 判断标准: sub-15 (73.663) 卡入;sub-16 (81.274) rd 例子 */
+    D2.enter(tl, R+'.r4', 73.8, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.r4 .rd', 81.4, {y:12, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',4.78],['#sub-3',11.959],['#sub-4',13.548],['#sub-5',17.122],['#sub-6',23.083],['#sub-7',31.441],['#sub-8',34.423],['#sub-9',38.456],['#sub-10',48.391],['#sub-11',49.266],['#sub-12',55.743],['#sub-13',62.899],['#sub-14',71.214],['#sub-15',73.663],['#sub-16',81.274],['#sub-17',85.219],['#sub-18',89.412]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 93.767, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

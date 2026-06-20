@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有(cta 尾卡)—— */
+[data-composition-id='s13'] .endcard{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+[data-composition-id='s13'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:168px;line-height:1;color:#edebe6;letter-spacing:-.01em;display:flex;align-items:center;justify-content:center}
+[data-composition-id='s13'] .logo .cur{width:42px;height:120px;vertical-align:-12px;margin-left:24px}
+[data-composition-id='s13'] .subt{margin-top:54px;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:42px;letter-spacing:.06em;color:#8a8a85}
+[data-composition-id='s13'] .subt .end{color:#ccff4d;font-weight:700}
+[data-composition-id='s13'] .tag{margin-top:108px;font-family:'MiSans',sans-serif;font-weight:600;font-size:48px;letter-spacing:.04em;color:#edebe6}
+[data-composition-id='s13'] .tag .hl{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="content">
+      <div class="endcard">
+        <div class="logo">精读AI<span class="cur cblink"></span></div>
+        <div class="subt">Claude Code · 7 种武器 <span class="end">· 完</span></div>
+        <div class="tag">精读一篇 <span class="hl">胜过</span> 刷一百条</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    D2.enter(tl, R+'.logo', .3, {y:24, d:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.subt', 1.0, {y:14, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.tag',  1.7, {y:14, d:.42, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 1.6, 4);
+    D2.breath(tl, R+'.content', 5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

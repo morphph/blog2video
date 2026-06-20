@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   d2 「终端霓影 Terminal v2」 BASE KIT  —— loop-engineering 全片统一组件库
+   真源。生成器把本文件 + d2-motion.js 内联进每个场景的 style / script 块。
+   场景自包含,逐个 standalone 渲染,因此组件类不做 sNN 作用域(单 composition 不会串扰)。
+   GSAP 选择器仍用 R = composition-id 前缀定位(R 拼成 data-composition-id 属性选择器),见 d2-motion.js。
+   字体路径相对 scene 目录:assets -> symlink 到 ../../assets。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入)---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+
+/* ---- 令牌 ---- */
+:root{
+  --bg:#121212; --panel:#1c1c1e; --ink:#edebe6; --dim:#8a8a85; --key:#2a2a2c;
+  --acid:#ccff4d; --cyan:#5fd3e8; --coral:#ff6b5e; --amber:#ffbd2e; --green:#27c93f;
+  --mono:'JetBrains Mono',monospace; --sans:'MiSans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+
+/* ---- 蓝图点阵 ---- 几乎每个场景铺底 */
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.045;
+  -webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 42%,#000 50%,rgba(0,0,0,0) 100%)}
+
+/* ---- topbar ---- 左栏目名+光标 右页码 */
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.topbar .idx{color:#ccff4d}
+
+/* ---- 内容安全区 ---- 上≥160 / 左右72 / 下≥540(留给字幕带) */
+.content{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+  box-sizing:border-box;transform-origin:50% 45%}
+.content.top{justify-content:flex-start;padding-top:236px}   /* 密集列表从上往下排 */
+.content.tight{padding-top:208px;padding-bottom:540px}        /* 极密(>4 行+说明) */
+
+/* ---- 字幕带(全片统一,track 5)---- */
+.sub{position:absolute;left:72px;right:72px;bottom:340px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(18,18,18,.6);border-top:1px solid #2a2a2c;max-width:936px;padding:16px 22px;
+  font-weight:500;font-size:38px;line-height:1.4;color:#edebe6;text-align:center}
+.sub-k{color:#ccff4d}
+
+/* ========================= 组件 ========================= */
+
+/* 章节 kicker(mono 小标签) */
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+.kicker .acc{color:#ccff4d}
+
+/* 大标题 */
+.h1{font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+.h1.xl{font-size:88px;line-height:1.08}
+.h1 .em{color:#ccff4d}
+.h2{font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+.lead{font-weight:600;font-size:40px;line-height:1.45;color:#edebe6}
+.lead .dim{color:#8a8a85} .lead .em{color:#ccff4d}
+
+/* 酸性高亮:块从左扫过,文字反色为 #121212(每屏 ≤1 处) */
+.hl{position:relative;display:inline-block;padding:4px 14px}
+.hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+.hl .tx{position:relative;z-index:1;font-weight:900;color:#edebe6}
+
+/* chip:mono 编号 + 标签 */
+.chip{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+.chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:25px;color:#ccff4d;letter-spacing:.05em}
+.chip .ct{font-weight:600;font-size:38px;color:#edebe6}
+
+/* 编号清单行(checklist / steps) */
+.rows{display:flex;flex-direction:column;gap:16px;width:100%}
+.row{display:flex;align-items:flex-start;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 30px;width:100%}
+.row .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;line-height:1.25;min-width:46px}
+.row .rb{flex:1;min-width:0}
+.row .rt{font-weight:600;font-size:40px;color:#edebe6;line-height:1.28}
+.row .rd{margin-top:8px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+.row .rd .warn{color:#ff6b5e;font-weight:600}
+.row .rd .ok{color:#ccff4d;font-weight:600}
+.row.warn{border-color:rgba(255,107,94,.4)} .row.warn .n{color:#ff6b5e}
+.row.now{border-color:#ccff4d}
+
+/* 步骤箭头(纵向流程) */
+.flowarrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;margin:2px 0 2px 14px}
+.flowarrow .a{color:#ccff4d}
+
+/* 终端窗口卡(quote / 代码 / 金句) */
+.term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+.term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+.term-bar .d{width:12px;height:12px;border-radius:50%}
+.term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+.term-body{padding:44px 40px 48px}
+.term-l1{font-weight:600;font-size:44px;line-height:1.45;color:#8a8a85}
+.term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+.term-l2{margin-top:24px;font-weight:900;font-size:64px;line-height:1.32;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+.term-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:32px;color:#5fd3e8}
+.term-src{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+.term-src b{color:#edebe6;font-weight:700}
+
+/* corner-bracket 面板(重点区 / 节点) */
+.bracket{position:relative;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 34px}
+.bracket::before,.bracket::after{content:'';position:absolute;width:26px;height:26px;pointer-events:none}
+.bracket::before{top:-1px;left:-1px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+.bracket::after{bottom:-1px;right:-1px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+
+/* 状态灯:小圆点 + mono 标签 */
+.status{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+.status .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.status.alert{color:#ff6b5e} .status.alert .dot{background:#ff6b5e}
+
+/* 块状光标 */
+.cur{display:inline-block;width:30px;height:54px;background:#ccff4d;vertical-align:-8px;margin-left:14px}
+.cur.sm{width:20px;height:38px;margin-left:10px;vertical-align:-5px}
+
+/* 双栏对比 */
+.cols{display:flex;gap:22px;width:100%}
+.col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 28px;display:flex;flex-direction:column;min-width:0}
+.col .ch{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:22px}
+.col.alt .ch{color:#5fd3e8}
+.col .it{margin-bottom:20px} .col .it:last-child{margin-bottom:0}
+.col .it .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+.col .it .ds{margin-top:6px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+.col .it code,.code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+.col.alt .it code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:10px;vertical-align:3px}
+
+/* 时间线(纵向 mono 年份) */
+.tl{display:flex;flex-direction:column;gap:14px;width:100%}
+.tl-row{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+.tl-row .yr{flex-shrink:0;width:150px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:#8a8a85;letter-spacing:-.01em}
+.tl-row .wt{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+.tl-row.now{border-color:#ccff4d;background:rgba(204,255,77,.06)} .tl-row.now .yr{color:#ccff4d}
+.tl-row.now .badge{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 12px;vertical-align:4px}
+
+/* 数据条 / count-up 统计 */
+.stats{display:flex;gap:18px;width:100%}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 16px;text-align:center}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:62px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan .num{color:#5fd3e8}
+
+/* 大数字赢面板 */
+.win{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;text-align:center}
+.win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+.win .lab{margin-top:10px;font-weight:500;font-size:28px;color:#edebe6}
+
+/* end chip(收尾标语) */
+.endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+.endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .meta{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s03'] .meta .mt{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s03'] .rule{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s03'] .rule .rc{font-family:'JetBrains Mono',monospace;font-size:22px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s03'] .rule .rc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .sigs{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+[data-composition-id='s03'] .sigs .sg{display:flex;align-items:baseline;gap:14px;font-size:25px;line-height:1.32;color:#edebe6}
+[data-composition-id='s03'] .sigs .sg .sn{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ff6b5e;min-width:30px}
+[data-composition-id='s03'] .sigs .sg .arr{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 6px}
+[data-composition-id='s03'] .sigs .sg .dest{font-family:'JetBrains Mono',monospace;color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .sigs .sg.wish .dest{color:#ff6b5e}
+[data-composition-id='s03'] .paths{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+[data-composition-id='s03'] .paths .pr{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;display:flex;align-items:baseline;gap:14px}
+[data-composition-id='s03'] .paths .pr .p{color:#ccff4d}
+[data-composition-id='s03'] .paths .pr .d{color:#8a8a85;font-family:'MiSans',sans-serif;font-size:23px}
+[data-composition-id='s03'] .paths .pr .alt{color:#5fd3e8}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="105.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 第一站 · <span class="acc">CLAUDE.md</span></div>
+      <div class="h1" style="margin-top:14px">常驻型记忆,<span class="em">每一行都贵</span></div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">项目根 <span class="code">CLAUDE.md</span>:开 session 自动加载</div>
+          <div class="rd r1d">全程常驻 · <span class="ok">压缩对话后会重新读一遍</span> —— 它不会丢</div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">官方铁律:<span class="code">≤ 200 行</span>,装项目骨架</div>
+          <div class="rule r2rule">
+            <span class="rc">指定 <b>owner</b></span><span class="rc">改动像 <b>改代码</b> 一样 review</span>
+          </div>
+          <div class="meta r2meta">
+            <span class="mt">构建命令</span><span class="mt">目录结构</span><span class="mt">monorepo 划分</span><span class="mt">代码风格</span>
+          </div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">三个<span class="warn-t">该搬走</span>的信号</div>
+          <div class="sigs r3sigs">
+            <div class="sg s1"><span class="sn">1.</span><span>30 行的部署流程<span class="arr">→</span><span class="dest">skill</span></span></div>
+            <div class="sg s2"><span class="sn">2.</span><span>"每次 X 之后都要 Y"<span class="arr">→</span><span class="dest">hook</span></span></div>
+            <div class="sg s3 wish"><span class="sn">3.</span><span>"永远不要做 X"<span class="arr">→</span><span class="dest">wishful thinking</span></span></div>
+          </div>
+        </div></div>
+
+        <div class="row i4"><div class="n">04</div><div class="rb">
+          <div class="rt">CLAUDE.md 可以分<span class="code">两种</span></div>
+          <div class="paths r4paths">
+            <div class="pr p1"><span class="p">/</span><span>CLAUDE.md</span><span class="d">常驻型 · 全程加载</span></div>
+            <div class="pr p2"><span class="p alt">app/api/</span><span class="alt">CLAUDE.md</span><span class="d">按需型 · 进目录才唤醒</span></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.481" data-track-index="5"><div class="sub-inner">先说大家最熟的 <span class="sub-k">CLAUDE.md</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.491" data-duration="8.017" data-track-index="5"><div class="sub-inner">它是项目根目录下的一个 markdown 文件,开 session 的时候<span class="sub-k">自动加载</span>,整个 session 全程常驻。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.518" data-duration="2.758" data-track-index="5"><div class="sub-inner">压缩对话之后还会<span class="sub-k">重新读一遍</span>——它不会丢。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.428" data-duration="1.863" data-track-index="5"><div class="sub-inner">正因为它不会丢,它就<span class="sub-k">特别贵</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.301" data-duration="1.596" data-track-index="5"><div class="sub-inner">每一行都<span class="sub-k">全程占着上下文</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.907" data-duration="9.623" data-track-index="5"><div class="sub-inner">所以官方给了一条非常硬的建议:**CLAUDE.md 保持在 <span class="sub-k">200 行以内</span>,给它指定一个 owner,每次改动都要像改代码一样 review。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.54" data-duration="0.257" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-8" class="clip sub" data-start="26.964" data-duration="1.981" data-track-index="5"><div class="sub-inner"><span class="sub-k">200 行</span>是什么概念?</div></div>
+    <div id="sub-9" class="clip sub" data-start="28.955" data-duration="8.137" data-track-index="5"><div class="sub-inner">基本就是装<span class="sub-k">项目骨架</span>——构建命令、目录结构、monorepo 怎么划分、团队的代码风格规范。</div></div>
+    <div id="sub-10" class="clip sub" data-start="37.102" data-duration="5.240" data-track-index="5"><div class="sub-inner">这种"<span class="sub-k">全程都要知道</span>"的事实,才配住进 CLAUDE.md。</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.516" data-duration="1.592" data-track-index="5"><div class="sub-inner">那<span class="sub-k">不该住这里</span>的是什么?</div></div>
+    <div id="sub-12" class="clip sub" data-start="44.118" data-duration="2.028" data-track-index="5"><div class="sub-inner">官方给了<span class="sub-k">三个</span>非常清晰的信号。</div></div>
+    <div id="sub-13" class="clip sub" data-start="46.156" data-duration="6.397" data-track-index="5"><div class="sub-inner">第一,**写了 30 行的部署流程**——那是 procedure,该搬去 <span class="sub-k">skill</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="52.704" data-duration="6.920" data-track-index="5"><div class="sub-inner">第二,**写了"每次 X 之后都要 Y"**——那是确定性自动化,该搬去 <span class="sub-k">hook</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="59.634" data-duration="7.414" data-track-index="5"><div class="sub-inner">第三,**写了"永远不要做 X"**——那不是护栏,是 <span class="sub-k">wishful thinking</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="67.212" data-duration="3.227" data-track-index="5"><div class="sub-inner">官方还提了一个特别<span class="sub-k">实用的设计</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="70.449" data-duration="3.443" data-track-index="5"><div class="sub-inner">CLAUDE.md 可以<span class="sub-k">分两种</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="73.902" data-duration="3.227" data-track-index="5"><div class="sub-inner">根目录那个是<span class="sub-k">常驻型</span>,全程加载。</div></div>
+    <div id="sub-19" class="clip sub" data-start="77.139" data-duration="7.111" data-track-index="5"><div class="sub-inner">但子目录里也可以放,比如 <span class="sub-k">`app/api/CLAUDE.md`</span>。</div></div>
+    <div id="sub-20" class="clip sub" data-start="84.42" data-duration="7.070" data-track-index="5"><div class="sub-inner">这种是<span class="sub-k">按需型</span>——只有当 Claude 真的去读 `app/api` 下面的文件时,它才加载。</div></div>
+    <div id="sub-21" class="clip sub" data-start="91.5" data-duration="2.144" data-track-index="5"><div class="sub-inner">不读那个目录,它就<span class="sub-k">一直休眠</span>。</div></div>
+    <div id="sub-22" class="clip sub" data-start="93.816" data-duration="3.245" data-track-index="5"><div class="sub-inner">在 <span class="sub-k">monorepo</span> 里,这招特别关键。</div></div>
+    <div id="sub-23" class="clip sub" data-start="97.071" data-duration="5.199" data-track-index="5"><div class="sub-inner">每个团队管自己的子目录,自己的规矩<span class="sub-k">只在动到自己代码时</span>才进上下文。</div></div>
+    <div id="sub-24" class="clip sub" data-start="102.28" data-duration="3.407" data-track-index="5"><div class="sub-inner">前端工程师不用为后端的规矩<span class="sub-k">付 token</span>。</div></div>
+  </div>
+
+  <script>
+  /* ============================================================================
+   d2-motion.js —— GSAP 动效助手(全片统一性格:工程式利落)
+   内联进每个场景的 script 块(GSAP 3.14 先于本段加载)。
+   全局命名空间 window.D2。所有动画只动 transform / opacity / color / backgroundColor。
+   禁:弹性/回弹 ease、repeat:-1、Date.now/Math.random。timeline 同步构建。
+
+   两种用法:
+   1) 低阶助手:在自写 timeline 里调 D2.enter(tl,sel,at,opts) 等(精修范本用,控制最细)。
+   2) 高阶约定:D2.buildSceneTimeline(R, spec) 一把声明式建好(生成器默认用)。
+   ============================================================================ */
+(function(){
+  var ACID='#ccff4d', BG='#121212';
+
+  var D2 = {
+    /* 标准入场:y 抬升 16–20px + fade,0.25–0.35s。opts:{y,x,d,ease,from(=true)} */
+    enter:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.32, ease:opts.ease||'power3.out' };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 一组元素逐条 build(stagger);永不整屏一次性上 */
+    stagger:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.3, ease:opts.ease||'power3.out', stagger:opts.step||0.14 };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 酸性高亮:.hl 块从左扫过(scaleX 0→1)+ 文字反色为 #121212。sel 指向 .hl 容器 */
+    sweep:function(tl, R, sel, at){
+      tl.to(R+sel+' .bar', { scaleX:1, duration:0.32, ease:'power4.inOut' }, at);
+      tl.to(R+sel+' .tx',  { color:BG, duration:0.12, ease:'power1.inOut' }, at+0.16);
+      return tl;
+    },
+
+    /* 下方 2px 亮线 draw(关键词强调的轻量版)。sel 指向一个 .underline 元素(transform-origin:left) */
+    underline:function(tl, sel, at){
+      tl.fromTo(sel, { scaleX:0 }, { scaleX:1, duration:0.28, ease:'power3.out' }, at);
+      return tl;
+    },
+
+    /* 块状光标有限次闪烁 */
+    blink:function(tl, sel, at, times){
+      tl.to(sel, { opacity:0, duration:0.42, ease:'steps(1)', repeat:(times||5), yoyo:true }, at);
+      return tl;
+    },
+
+    /* 打字机:对已拆成 char span 的集合做极短 stagger 显形(~28ms/字符)。
+       用法:把文字拆成 <span class='ch'>x</span>,传 sel='.line .ch' */
+    type:function(tl, sel, at, perChar){
+      tl.from(sel, { opacity:0, duration:0.01, ease:'none', stagger:(perChar||0.028) }, at);
+      return tl;
+    },
+
+    /* 数字 count-up:1–3s ease-out 落停。el 是真实 DOM 选择器(单个),整数或保留 decimals 位 */
+    countUp:function(tl, el, at, from, to, dur, opts){
+      opts = opts || {};
+      var node = (typeof el==='string') ? document.querySelector(el) : el;
+      if(!node) return tl;
+      var prefix = opts.prefix||'', suffix = opts.suffix||'', dec = opts.decimals||0;
+      var proxy = { v: from };
+      tl.to(proxy, {
+        v: to, duration: dur||1.4, ease: opts.ease||'power2.out',
+        onUpdate: function(){ node.textContent = prefix + proxy.v.toFixed(dec) + suffix; }
+      }, at);
+      return tl;
+    },
+
+    /* 字幕淡入:list = [[id, localStart], ...](0.2s) */
+    subs:function(tl, list){
+      list.forEach(function(s){ tl.from(s[0], { opacity:0, duration:0.2, ease:'power1.out' }, s[1]); });
+      return tl;
+    },
+
+    /* 环境呼吸:整段 content scale。dir:'in'(1→1.035 推近)/'out'(1.035→1 拉远)。dur=场景全长 */
+    breath:function(tl, sel, dur, dir){
+      if(dir==='out') tl.fromTo(sel, { scale:1.035 }, { scale:1.0, duration:dur, ease:'none' }, 0);
+      else            tl.fromTo(sel, { scale:1.0 }, { scale:1.035, duration:dur, ease:'none' }, 0);
+      return tl;
+    },
+
+    /* 揭示一个初始 opacity:0 的层(多 beat 场景切换用) */
+    reveal:function(tl, sel, at){ tl.set(sel, { opacity:1 }, at); return tl; },
+
+    /* ---- 高阶约定:声明式建整条 timeline ----
+       spec = {
+         duration: 场景全长(=brief.dataDuration),
+         breath: 'in' | 'out',                     // content 呼吸方向(奇数 in/偶数 out)
+         grid: true,                                // 是否 fade 入点阵 + topbar
+         enters: [ {sel, at, x?, y?, d?, ease?} ],  // 单元素入场
+         staggers:[ {sel, at, step?, x?, y?, d?, ease?} ],
+         sweeps:  [ {sel, at} ],                    // .hl 酸性扫过(sel 含 R 之后的 .xxx)
+         counts:  [ {el, at, from, to, dur?, prefix?, suffix?, decimals?} ],
+         blinks:  [ {sel, at, times?} ],
+         subs:    [ [id, localStart], ... ],
+         custom:  function(tl, R){...}              // 兜底自定义
+       }
+       约定:所有 sel 都是「R 之后的子选择器」(如 '.h1'),helper 自动拼 R 前缀。
+       content 选择器固定 '.content'。 */
+    buildSceneTimeline:function(R, spec){
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused:true });
+      if(spec.grid !== false){
+        tl.from(R+'.grid',   { opacity:0, duration:0.5, ease:'power1.out' }, 0.02);
+        tl.from(R+'.topbar', { y:-16, opacity:0, duration:0.3, ease:'power2.out' }, 0.2);
+      }
+      (spec.enters||[]).forEach(function(e){ D2.enter(tl, R+e.sel, e.at, e); });
+      (spec.staggers||[]).forEach(function(s){ D2.stagger(tl, R+s.sel, s.at, s); });
+      (spec.sweeps||[]).forEach(function(s){ D2.sweep(tl, R, s.sel, s.at); });
+      (spec.counts||[]).forEach(function(c){ D2.countUp(tl, R+c.el, c.at, c.from, c.to, c.dur, c); });
+      (spec.blinks||[]).forEach(function(b){ D2.blink(tl, R+b.sel, b.at, b.times); });
+      if(spec.custom) spec.custom(tl, R);
+      if(spec.subs) D2.subs(tl, spec.subs.map(function(s){ return [R+s[0], s[1]]; }));
+      D2.breath(tl, R+'.content', spec.duration, spec.breath||'in');
+      return tl;
+    },
+
+    /* 注册到全局,供 hyperframes 驱动 */
+    register:function(id, tl){ window.__timelines = window.__timelines || {}; window.__timelines[id] = tl; }
+  };
+
+  window.D2 = D2;
+})();
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.36, ease:'expo.out'});
+    // item 1 — CLAUDE.md auto-loads
+    D2.enter(tl, R+'.i1', 2.6, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r1d', 10.6, {y:10, d:.3, ease:'power2.out'});
+    // item 2 — 200-line rule + skeleton tags
+    D2.enter(tl, R+'.i2', 17.0, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r2rule', 22.0, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.r2meta .mt', 29.1, {y:10, step:.18, d:.28, ease:'power2.out'});
+    // item 3 — three signals, each tag arrives with its subtitle
+    D2.enter(tl, R+'.i3', 42.6, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.s1', 46.3, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s2', 52.8, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s3', 59.7, {y:10, d:.3, ease:'power2.out'});
+    // item 4 — two flavors
+    D2.enter(tl, R+'.i4', 67.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.p1', 73.9, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.p2', 77.2, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.491],['#sub-3',10.518],['#sub-4',13.428],['#sub-5',15.301],['#sub-6',16.907],['#sub-7',26.54],['#sub-8',26.964],['#sub-9',28.955],['#sub-10',37.102],['#sub-11',42.516],['#sub-12',44.118],['#sub-13',46.156],['#sub-14',52.704],['#sub-15',59.634],['#sub-16',67.212],['#sub-17',70.449],['#sub-18',73.902],['#sub-19',77.139],['#sub-20',84.42],['#sub-21',91.5],['#sub-22',93.816],['#sub-23',97.071],['#sub-24',102.28]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 105.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

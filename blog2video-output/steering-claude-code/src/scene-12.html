@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .map{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:22px}
+[data-composition-id='s12'] .mrow{display:flex;align-items:center;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:14px 26px}
+[data-composition-id='s12'] .mrow .mn{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:#ccff4d;min-width:38px;letter-spacing:.04em}
+[data-composition-id='s12'] .mrow .mw{flex:1;font-weight:600;font-size:30px;color:#edebe6;line-height:1.25}
+[data-composition-id='s12'] .mrow .mar{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;margin:0 4px}
+[data-composition-id='s12'] .mrow .mt{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ccff4d;min-width:208px;text-align:right;letter-spacing:.02em}
+[data-composition-id='s12'] .cmd{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s12'] .cmd .p{color:#ccff4d;margin-right:14px}
+[data-composition-id='s12'] .cmd .ar{color:#8a8a85;margin-right:12px}
+[data-composition-id='s12'] .cmd .cm{color:#8a8a85;margin-left:14px;font-size:24px}
+[data-composition-id='s12'] .cmd .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s12'] .cmd .ok{color:#ccff4d;font-weight:700}
+[data-composition-id='s12'] .cta{margin-top:22px}
+[data-composition-id='s12'] .slogan{margin-top:22px;font-weight:700;font-size:36px;color:#edebe6;line-height:1.4}
+[data-composition-id='s12'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s12'] .signoff{margin-top:18px}
+[data-composition-id='s12'] .h1.s12{font-size:54px;line-height:1.14}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="100.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 收官<span class="b-cur"></span></div>
+      <div class="idx">[12/12]</div>
+    </div>
+
+    <div class="content tight" style="justify-content:flex-start">
+      <div class="kicker">// 收官 · <span class="acc">你在选指令住哪</span></div>
+      <div class="h1 s12" style="margin-top:14px">你以为你在调教 Claude<br>其实你在选指令<span class="em">住哪</span></div>
+
+      <div class="map">
+        <div class="mrow m1"><div class="mn">01</div><div class="mw">事实</div><div class="mar">→</div><div class="mt">CLAUDE.md</div></div>
+        <div class="mrow m2"><div class="mn">02</div><div class="mw">路径约束</div><div class="mar">→</div><div class="mt">Rule</div></div>
+        <div class="mrow m3"><div class="mn">03</div><div class="mw">过程 / procedure</div><div class="mar">→</div><div class="mt">Skill</div></div>
+        <div class="mrow m4"><div class="mn">04</div><div class="mw">隔离的副任务</div><div class="mar">→</div><div class="mt">Subagent</div></div>
+        <div class="mrow m5"><div class="mn">05</div><div class="mw">确定性自动化</div><div class="mar">→</div><div class="mt">Hook</div></div>
+        <div class="mrow m6"><div class="mn">06</div><div class="mw">角色重塑</div><div class="mar">→</div><div class="mt">Output Style</div></div>
+        <div class="mrow m7"><div class="mn">07</div><div class="mw">临时调整</div><div class="mar">→</div><div class="mt">Append</div></div>
+      </div>
+
+      <div class="term cta">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@steering: ~</span></div>
+        <div class="term-body" style="padding:24px 32px 26px">
+          <div class="cmd c1"><span class="p">$</span>wc -l CLAUDE.md<span class="cm"># 数一下行数</span></div>
+          <div class="cmd c2"><span class="ar">›</span>超过 <span class="em">200 行</span>的部分,挑出来搬家<span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+
+      <div class="slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.023" data-track-index="5"><div class="sub-inner">我读完整篇博客最强的体会是:**你以为你在调教 Claude,其实你在<span class="sub-k">选指令住哪</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.023" data-duration="0.342" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.524" data-duration="8.168" data-track-index="5"><div class="sub-inner">同一句话,住进 CLAUDE.md 是 token 黑洞,住进 hook 是<span class="sub-k">不可破的护栏</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.692" data-duration="8.532" data-track-index="5"><div class="sub-inner">措辞写得多严厉、字号放多大、加多少个感叹号,都改变不了它的强制力——<span class="sub-k">强制力由它住在哪个槽决定</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.372" data-duration="7.911" data-track-index="5"><div class="sub-inner">这也是为什么"7 种机制"看起来像个产品功能列表,但本质上是一套 <span class="sub-k">context engineering 的设计语言</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="32.483" data-duration="9.153" data-track-index="5"><div class="sub-inner">每个槽都在回答三个问题——这条指令什么时候进上下文、压缩之后会不会还在、<span class="sub-k">模型敢不敢不听</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="41.796" data-duration="15.121" data-track-index="5"><div class="sub-inner">如果你今天只能记一句话,就记这个:**事实进 CLAUDE.md,路径约束进 rule,过程进 skill,隔离的副任务进 subagent,<span class="sub-k">确定性的自动化进 hook</span>,</div></div>
+    <div id="sub-8" class="clip sub" data-start="57.117" data-duration="4.397" data-track-index="5"><div class="sub-inner">角色重塑进 <span class="sub-k">output style</span>,临时调整进 append。</div></div>
+    <div id="sub-9" class="clip sub" data-start="61.514" data-duration="0.274" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-10" class="clip sub" data-start="61.956" data-duration="8.166" data-track-index="5"><div class="sub-inner">写错地方的代价,不会立刻显形,但会在每个 session、每个工程师、<span class="sub-k">每条对话里慢慢累积</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="70.272" data-duration="8.779" data-track-index="5"><div class="sub-inner">如果你正在维护一个 Claude Code 项目,今天看完这期可以做一件事——打开你的 CLAUDE.md,<span class="sub-k">数一下行数</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="79.051" data-duration="8.048" data-track-index="5"><div class="sub-inner">超过 200 行的部分,挑出来看哪些是 procedure、哪些是 <span class="sub-k">"永远不要做 X"</span>、哪些是路径相关的约束。</div></div>
+    <div id="sub-13" class="clip sub" data-start="87.264" data-duration="1.692" data-track-index="5"><div class="sub-inner">把它们<span class="sub-k">搬到该住的地方</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="88.956" data-duration="4.768" data-track-index="5"><div class="sub-inner">光这一步,团队里每个 session 都会变得<span class="sub-k">更便宜、更准确</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="93.888" data-duration="4.063" data-track-index="5"><div class="sub-inner">AI 世界很吵,<span class="sub-k">精读一篇,胜过刷一百条</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="97.951" data-duration="1.421" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // hook
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:22, d:.46, ease:'expo.out'});
+
+    // map: 7 rows staggered to the central recap (sub-7 starts 41.796s, sub-8 ends ~61.5)
+    // earlier rows (CLAUDE.md, hook) preview at sub-3 anchor (7.5s) to illustrate contrast.
+    D2.enter(tl, R+'.m1', 8.2, {x:-20, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.m5', 11.4, {x:-20, d:.32, ease:'expo.out'});
+    // rest of mapping reveal aligned with the "recall list" subtitle
+    D2.enter(tl, R+'.m2', 42.6, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m3', 46.0, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m4', 49.4, {x:-20, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.m6', 57.4, {x:-20, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.m7', 59.4, {x:-20, d:.3, ease:'power3.out'});
+
+    // CTA terminal aligns with sub-11 (70.272s)
+    D2.enter(tl, R+'.cta', 70.4, {y:18, d:.4, ease:'expo.out'});
+    tl.from(R+'.cta .term-bar',{opacity:0,duration:.28,ease:'power1.out'},70.6);
+    D2.enter(tl, R+'.c1', 71.0, {x:-14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 79.2, {x:-14, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 87.4, 10);
+
+    // slogan + signoff
+    D2.enter(tl, R+'.slogan', 93.9, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 97.95, {y:12, d:.3, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.023],['#sub-3',7.524],['#sub-4',15.692],['#sub-5',24.372],['#sub-6',32.483],['#sub-7',41.796],['#sub-8',57.117],['#sub-9',61.514],['#sub-10',61.956],['#sub-11',70.272],['#sub-12',79.051],['#sub-13',87.264],['#sub-14',88.956],['#sub-15',93.888],['#sub-16',97.951]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 100.367, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

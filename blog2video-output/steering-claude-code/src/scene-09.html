@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .path{margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85}
+[data-composition-id='s09'] .path b{color:#ccff4d;font-weight:500}
+[data-composition-id='s09'] .tags1{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s09'] .tags1 .tg{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s09'] .losts{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s09'] .losts .x{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:3px 12px;text-decoration:line-through;text-decoration-color:rgba(255,107,94,.7)}
+[data-composition-id='s09'] .degrade{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s09'] .degrade b{color:#edebe6;font-weight:700}
+[data-composition-id='s09'] .degrade .ar{color:#ff6b5e;margin:0 12px}
+[data-composition-id='s09'] .escape{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:6px 14px;display:inline-block}
+[data-composition-id='s09'] .escape .k{color:#ccff4d;font-weight:700}
+[data-composition-id='s09'] .escape .v{color:#ccff4d;font-weight:700}
+[data-composition-id='s09'] .advice{margin-top:26px}
+[data-composition-id='s09'] .advice .ah{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s09'] .advice .ah .acc{color:#ccff4d}
+[data-composition-id='s09'] .builtin{display:flex;gap:14px;margin-top:14px}
+[data-composition-id='s09'] .builtin .bc{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:14px 18px;text-align:center}
+[data-composition-id='s09'] .builtin .bc .bn{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:#ccff4d;letter-spacing:.02em}
+[data-composition-id='s09'] .endrow{margin-top:18px;display:flex;justify-content:flex-start}
+[data-composition-id='s09'] .warn-em{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="86.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[09/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 机制 6/6 · <span class="acc">system prompt 注入</span></div>
+      <div class="h1" style="margin-top:12px"><span class="em">output styles</span>,代价最重</div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">注入 <span class="code">system prompt</span></div>
+          <div class="path">.claude/<b>output-styles/</b></div>
+          <div class="tags1"><span class="tg">永不被压缩</span><span class="tg">每个 session 加载</span><span class="tg">遵循权重最高</span></div>
+        </div></div>
+
+        <div class="row i2 warn"><div class="n">02</div><div class="rb">
+          <div class="rt">代价:<span class="warn-em">替换掉默认 system prompt</span></div>
+          <div class="rd r2d">Claude Code 默认人设里的关键内容,全丢</div>
+          <div class="losts"><span class="x">软件工程</span><span class="x">变更 scope</span><span class="x">注释纪律</span><span class="x">安全顾虑</span><span class="x">先跑测试</span></div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">人设退化</div>
+          <div class="degrade"><b>软件工程师助手</b><span class="ar">→</span><b>通用助手</b></div>
+        </div></div>
+
+        <div class="row i4"><div class="n">04</div><div class="rb">
+          <div class="rt">唯一逃生口</div>
+          <div class="escape"><span class="k">keep-coding-instructions:</span> <span class="v">true</span></div>
+          <div class="rd r4d">仍是高代价操作</div>
+        </div></div>
+      </div>
+
+      <div class="advice">
+        <div class="ah">// 官方建议 · <span class="acc">先看内置三种</span></div>
+        <div class="builtin">
+          <div class="bc b1"><div class="bn">autonomy</div></div>
+          <div class="bc b2"><div class="bn">teaching</div></div>
+          <div class="bc b3"><div class="bn">collaborative</div></div>
+        </div>
+        <div class="endrow"><div class="endchip"><span class="dot"></span><span class="lab">能用内置的,就别自定义</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="4.207" data-track-index="5"><div class="sub-inner">剩下两种机制,是直接动到 <span class="sub-k">system prompt</span> 那一层。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.371" data-duration="6.205" data-track-index="5"><div class="sub-inner">第六种是 <span class="sub-k">output styles</span>,住在 `.claude/output-styles/` 文件夹。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.576" data-duration="6.57" data-track-index="5"><div class="sub-inner">它的内容会被注入到 system prompt 里,<span class="sub-k">永远不会被压缩掉</span>,每个 session 都加载。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.295" data-duration="6.042" data-track-index="5"><div class="sub-inner">因为它住在 system prompt 里,它的<span class="sub-k">指令遵循权重</span>,比前面所有方法都高。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.487" data-duration="1.339" data-track-index="5"><div class="sub-inner">但它有个<span class="sub-k">非常重的代价</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.826" data-duration="4.993" data-track-index="5"><div class="sub-inner">自定义 output style 会<span class="sub-k">替换掉默认的 system prompt</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.967" data-duration="14.83" data-track-index="5"><div class="sub-inner">Claude Code 默认的 system prompt 里写了很多关键内容——你在帮人做<span class="sub-k">软件工程</span>、变更的范围怎么界定、什么时候加注释什么时候不加、安全顾虑怎么处理、宣告完成前要不要先跑测试。</div></div>
+    <div id="sub-8" class="clip sub" data-start="44.943" data-duration="6.065" data-track-index="5"><div class="sub-inner">你写了一个自定义 output style,这些<span class="sub-k">默认人设全部丢掉</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="51.008" data-duration="6.432" data-track-index="5"><div class="sub-inner">Claude Code 一下子从"软件工程师助手"退化成<span class="sub-k">"通用助手"</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="57.44" data-duration="2.206" data-track-index="5"><div class="sub-inner">写代码的那套<span class="sub-k">纪律</span>全没了。</div></div>
+    <div id="sub-11" class="clip sub" data-start="59.811" data-duration="10.988" data-track-index="5"><div class="sub-inner">除非你在 frontmatter 里加一行 <span class="sub-k">keep-coding-instructions: true</span>,把默认指令保留下来——但即便如此,自定义 output style 也是高代价的操作。</div></div>
+    <div id="sub-12" class="clip sub" data-start="70.935" data-duration="6.798" data-track-index="5"><div class="sub-inner">官方建议特别清醒:在写自定义之前,<span class="sub-k">先看看内置的三种 output style 够不够用</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="77.733" data-duration="6.939" data-track-index="5"><div class="sub-inner">它们覆盖了三种最常见的工作模式——<span class="sub-k">autonomy、teaching、collaborative</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="84.672" data-duration="1.558" data-track-index="5"><div class="sub-inner"><span class="sub-k">能用内置的就别自定义</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    // item 1: 住址 + 三个特性 tag
+    D2.enter(tl, R+'.i1', 4.5, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i1 .path', 5.4, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.i1 .tags1 .tg', 10.9, {y:10, step:.18, d:.3, ease:'power2.out'});
+    // item 2: 替换默认 system prompt + 五个 lost tag
+    D2.enter(tl, R+'.i2', 24.9, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i2 .r2d', 30.1, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.i2 .losts .x', 33.2, {y:10, step:.18, d:.28, ease:'power2.out'});
+    // item 3: 人设退化
+    D2.enter(tl, R+'.i3', 51.1, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.i3 .degrade', 57.5, {y:10, d:.3, ease:'power2.out'});
+    // item 4: 逃生口
+    D2.enter(tl, R+'.i4', 59.9, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i4 .escape', 61.4, {y:10, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.i4 .r4d', 67.5, {y:10, d:.3, ease:'power2.out'});
+    // advice: 官方建议 → 三个 builtin → 收尾标语
+    D2.enter(tl, R+'.advice .ah', 71.0, {y:-10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.advice .builtin .bc', 78.0, {y:12, step:.28, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.advice .endchip', 84.7, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',4.371],['#sub-3',10.576],['#sub-4',17.295],['#sub-5',23.487],['#sub-6',24.826],['#sub-7',29.967],['#sub-8',44.943],['#sub-9',51.008],['#sub-10',57.44],['#sub-11',59.811],['#sub-12',70.935],['#sub-13',77.733],['#sub-14',84.672]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 86.367, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .dims{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:24px}
+[data-composition-id='s11'] .dim{background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 24px}
+[data-composition-id='s11'] .dim .dh{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em;margin-bottom:12px}
+[data-composition-id='s11'] .dim .dh .ac{color:#ccff4d}
+[data-composition-id='s11'] .tiers{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start}
+[data-composition-id='s11'] .tier{flex:1 1 0;min-width:0;background:#121212;border:1px solid #2a2a2c;padding:12px 14px}
+[data-composition-id='s11'] .tier .lab{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;letter-spacing:.04em;color:#8a8a85;margin-bottom:6px}
+[data-composition-id='s11'] .tier .it{font-weight:600;font-size:24px;color:#edebe6;line-height:1.32}
+[data-composition-id='s11'] .tier.hi{border-color:rgba(255,107,94,.45)}
+[data-composition-id='s11'] .tier.hi .lab{color:#ff6b5e}
+[data-composition-id='s11'] .tier.md .lab{color:#8a8a85}
+[data-composition-id='s11'] .tier.md{border-color:#2a2a2c}
+[data-composition-id='s11'] .tier.lo{border-color:rgba(204,255,77,.45)}
+[data-composition-id='s11'] .tier.lo .lab{color:#ccff4d}
+[data-composition-id='s11'] .tier .note{margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:18px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s11'] .punch{margin-top:18px;font-weight:900;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s11'] .punch .em{color:#ccff4d}
+[data-composition-id='s11'] .punch .warn{color:#ff6b5e}
+[data-composition-id='s11'] .thesis{margin-top:22px}
+[data-composition-id='s11'] .thesis .term-l1{font-size:28px}
+[data-composition-id='s11'] .thesis .term-body{padding:24px 28px 26px}
+[data-composition-id='s11'] .thesis .term-l2{font-size:36px;margin-top:12px;display:block}
+[data-composition-id='s11'] .places{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+[data-composition-id='s11'] .place{display:flex;align-items:baseline;gap:16px;font-size:22px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s11'] .place .h{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;min-width:260px}
+[data-composition-id='s11'] .place .b{flex:1;color:#edebe6;font-family:'MiSans',sans-serif;font-weight:500;font-size:22px}
+[data-composition-id='s11'] .place .b .dim{color:#8a8a85}
+[data-composition-id='s11'] .place.hook .h{color:#ccff4d;font-weight:700}
+[data-composition-id='s11'] .place.hook .b{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="102.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[11/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 7 槽 · <span class="acc">3 维度</span>对照</div>
+      <div class="h1" style="margin-top:14px;font-size:60px">把它们<span class="em">摆在一起</span>看</div>
+
+      <div class="dims">
+        <!-- D1: 上下文成本 -->
+        <div class="dim d1">
+          <div class="dh">// 维度 1 · <span class="ac">上下文成本</span></div>
+          <div class="tiers">
+            <div class="tier hi t-hi">
+              <div class="lab">高</div>
+              <div class="it">CLAUDE.md 根目录<br>Unscoped Rule<br>Output Styles</div>
+              <div class="note">全程常驻</div>
+            </div>
+            <div class="tier md t-md">
+              <div class="lab">中</div>
+              <div class="it">Append<br>System Prompt</div>
+              <div class="note">首次付,后续缓存</div>
+            </div>
+            <div class="tier lo t-lo">
+              <div class="lab">低</div>
+              <div class="it">子目录 CLAUDE.md<br>Path-scoped Rule<br>Skill / Subagent / Hook</div>
+              <div class="note">按需 · 或不进主上下文</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D2: 压缩行为 -->
+        <div class="dim d2">
+          <div class="dh">// 维度 2 · <span class="ac">压缩行为</span></div>
+          <div class="tiers">
+            <div class="tier hi t2a">
+              <div class="lab">永不丢</div>
+              <div class="it">CLAUDE.md · Rule · Output Styles</div>
+            </div>
+            <div class="tier md t2b">
+              <div class="lab">会挤出</div>
+              <div class="it">Skill</div>
+              <div class="note">共享 budget · oldest 先 drop</div>
+            </div>
+            <div class="tier lo t2c">
+              <div class="lab">绕过</div>
+              <div class="it">Hook</div>
+            </div>
+            <div class="tier md t2d">
+              <div class="lab">仅单次</div>
+              <div class="it">Append System Prompt</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D3: 强制力 -->
+        <div class="dim d3">
+          <div class="dh">// 维度 3 · <span class="ac">强制力</span></div>
+          <div class="punch">只有 <span class="em">Hook</span> 是真护栏 —— 其它六种都是<span class="warn">建议</span></div>
+        </div>
+      </div>
+
+      <!-- 收束:把 thesis 摊开,同一句 "部署前必须跑测试" 住进四个口 -->
+      <div class="term thesis">
+        <div class="term-bar">
+          <div class="d" style="background:#ff6b5e"></div>
+          <div class="d" style="background:#ffbd2e"></div>
+          <div class="d" style="background:#27c93f"></div>
+          <div class="t">thesis.md — "部署前必须跑测试"</div>
+        </div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>同一句话 · 住进四个口</div>
+          <div class="places">
+            <div class="place p1"><div class="h">CLAUDE.md</div><div class="b">每个 session 都付 token <span class="dim">· 遵循率随对话变长衰减</span></div></div>
+            <div class="place p2"><div class="h">path-scoped</div><div class="b">只在动到部署相关文件时<span class="dim"> 才付钱</span></div></div>
+            <div class="place p3"><div class="h">skill</div><div class="b">仅描述行常驻 <span class="dim">· body 调用时才加载</span></div></div>
+            <div class="place hook p4"><div class="h">PostToolUse hook</div><div class="b">从指令升级成代码 · Claude 想不跑都不行</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="3.175" data-track-index="5"><div class="sub-inner">讲到这里，<span class="sub-k">7 个注入口</span>都过了一遍。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.191" data-duration="2.054" data-track-index="5"><div class="sub-inner">我们把它们<span class="sub-k">摆在一起</span>看。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.416" data-duration="1.348" data-track-index="5"><div class="sub-inner">按<span class="sub-k">上下文成本</span>分。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.764" data-duration="9.099" data-track-index="5"><div class="sub-inner"><span class="sub-k">高成本的</span>是 CLAUDE.md 根目录文件、unscoped rule、output styles。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.863" data-duration="1.179" data-track-index="5"><div class="sub-inner">它们<span class="sub-k">全程常驻</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.242" data-duration="8.817" data-track-index="5"><div class="sub-inner"><span class="sub-k">低成本的</span>是子目录 CLAUDE.md、path-scoped rule、skill、subagent、hook。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.224" data-duration="3.446" data-track-index="5"><div class="sub-inner">它们要么按需加载，要么压根<span class="sub-k">不进主上下文</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.67" data-duration="7.925" data-track-index="5"><div class="sub-inner"><span class="sub-k">中等成本</span>的是 append system prompt——会被缓存，但首次请求要付。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.744" data-duration="1.484" data-track-index="5"><div class="sub-inner">按<span class="sub-k">压缩行为</span>分。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.228" data-duration="8.482" data-track-index="5"><div class="sub-inner"><span class="sub-k">永不丢失的</span>是 CLAUDE.md、rule、output styles。</div></div>
+    <div id="sub-11" class="clip sub" data-start="47.91" data-duration="7.087" data-track-index="5"><div class="sub-inner"><span class="sub-k">会被挤出的</span>是 skill——多个 skill 共享一个 budget，最早调用的最先掉。</div></div>
+    <div id="sub-12" class="clip sub" data-start="54.997" data-duration="2.658" data-track-index="5"><div class="sub-inner"><span class="sub-k">完全绕过压缩的</span>是 hook。</div></div>
+    <div id="sub-13" class="clip sub" data-start="57.796" data-duration="3.952" data-track-index="5"><div class="sub-inner"><span class="sub-k">只对单次调用生效的</span>是 append system prompt。</div></div>
+    <div id="sub-14" class="clip sub" data-start="61.9" data-duration="0.929" data-track-index="5"><div class="sub-inner">按<span class="sub-k">强制力</span>分。</div></div>
+    <div id="sub-15" class="clip sub" data-start="62.829" data-duration="4.178" data-track-index="5"><div class="sub-inner"><span class="sub-k">只有 hook 是真护栏</span>——其它六种都是建议。</div></div>
+    <div id="sub-16" class="clip sub" data-start="67.007" data-duration="5.881" data-track-index="5"><div class="sub-inner">模型在长对话、压力情境、<span class="sub-k">prompt injection</span> 下都可能跳过指令。</div></div>
+    <div id="sub-17" class="clip sub" data-start="73.024" data-duration="3.345" data-track-index="5"><div class="sub-inner">所以那条 <span class="sub-k">thesis</span> 现在可以摊开看了。</div></div>
+    <div id="sub-18" class="clip sub" data-start="76.369" data-duration="9.558" data-track-index="5"><div class="sub-inner">同一句"部署前必须跑测试"，住进 <span class="sub-k">CLAUDE.md</span>，每个 session 都付 token，遵循率随对话变长还会衰减。</div></div>
+    <div id="sub-19" class="clip sub" data-start="86.127" data-duration="4.846" data-track-index="5"><div class="sub-inner">住进 <span class="sub-k">path-scoped rule</span>，只在动到部署相关文件时才付钱。</div></div>
+    <div id="sub-20" class="clip sub" data-start="91.132" data-duration="3.94" data-track-index="5"><div class="sub-inner">住进 <span class="sub-k">skill</span>，连描述行常驻，body 调用时才加载。</div></div>
+    <div id="sub-21" class="clip sub" data-start="95.072" data-duration="6.894" data-track-index="5"><div class="sub-inner">**<span class="sub-k">注册成 PostToolUse hook</span>，它从指令升级成了代码——Claude 想不跑都不行。</div></div>
+    <div id="sub-22" class="clip sub" data-start="101.966" data-duration="0.281" data-track-index="5"><div class="sub-inner">**</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+
+    // D1 · 上下文成本(5.4s 起)
+    D2.enter(tl, R+'.d1', 5.4, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d1 .t-hi', 6.8, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d1 .t-lo', 17.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d1 .t-md', 29.7, {y:14, d:.32, ease:'power2.out'});
+
+    // D2 · 压缩行为(37.7s 起)
+    D2.enter(tl, R+'.d2', 37.7, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d2 .t2a', 39.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2b', 47.9, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2c', 55.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2d', 57.8, {y:14, d:.32, ease:'power2.out'});
+
+    // D3 · 强制力(61.9s 起)
+    D2.enter(tl, R+'.d3', 61.9, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d3 .punch', 62.8, {y:14, d:.34, ease:'expo.out'});
+
+    // thesis 终端卡(73s 起)
+    D2.enter(tl, R+'.thesis', 73.0, {y:22, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.thesis .p1', 76.4, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p2', 86.1, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p3', 91.1, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p4', 95.1, {x:-18, d:.36, ease:'expo.out'});
+
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',3.191],['#sub-3',5.416],['#sub-4',6.764],['#sub-5',15.863],['#sub-6',17.242],['#sub-7',26.224],['#sub-8',29.67],['#sub-9',37.744],['#sub-10',39.228],['#sub-11',47.91],['#sub-12',54.997],['#sub-13',57.796],['#sub-14',61.9],['#sub-15',62.829],['#sub-16',67.007],['#sub-17',73.024],['#sub-18',76.369],['#sub-19',86.127],['#sub-20',91.132],['#sub-21',95.072],['#sub-22',101.966]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 102.4, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

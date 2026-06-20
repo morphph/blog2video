@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .meta{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s03'] .meta .mt{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s03'] .rule{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s03'] .rule .rc{font-family:'JetBrains Mono',monospace;font-size:22px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:3px 12px}
+[data-composition-id='s03'] .rule .rc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .sigs{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+[data-composition-id='s03'] .sigs .sg{display:flex;align-items:baseline;gap:14px;font-size:25px;line-height:1.32;color:#edebe6}
+[data-composition-id='s03'] .sigs .sg .sn{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ff6b5e;min-width:30px}
+[data-composition-id='s03'] .sigs .sg .arr{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 6px}
+[data-composition-id='s03'] .sigs .sg .dest{font-family:'JetBrains Mono',monospace;color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .sigs .sg.wish .dest{color:#ff6b5e}
+[data-composition-id='s03'] .paths{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+[data-composition-id='s03'] .paths .pr{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;display:flex;align-items:baseline;gap:14px}
+[data-composition-id='s03'] .paths .pr .p{color:#ccff4d}
+[data-composition-id='s03'] .paths .pr .d{color:#8a8a85;font-family:'MiSans',sans-serif;font-size:23px}
+[data-composition-id='s03'] .paths .pr .alt{color:#5fd3e8}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="105.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 第一站 · <span class="acc">CLAUDE.md</span></div>
+      <div class="h1" style="margin-top:14px">常驻型记忆,<span class="em">每一行都贵</span></div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">项目根 <span class="code">CLAUDE.md</span>:开 session 自动加载</div>
+          <div class="rd r1d">全程常驻 · <span class="ok">压缩对话后会重新读一遍</span> —— 它不会丢</div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">官方铁律:<span class="code">≤ 200 行</span>,装项目骨架</div>
+          <div class="rule r2rule">
+            <span class="rc">指定 <b>owner</b></span><span class="rc">改动像 <b>改代码</b> 一样 review</span>
+          </div>
+          <div class="meta r2meta">
+            <span class="mt">构建命令</span><span class="mt">目录结构</span><span class="mt">monorepo 划分</span><span class="mt">代码风格</span>
+          </div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">三个<span class="warn-t">该搬走</span>的信号</div>
+          <div class="sigs r3sigs">
+            <div class="sg s1"><span class="sn">1.</span><span>30 行的部署流程<span class="arr">→</span><span class="dest">skill</span></span></div>
+            <div class="sg s2"><span class="sn">2.</span><span>"每次 X 之后都要 Y"<span class="arr">→</span><span class="dest">hook</span></span></div>
+            <div class="sg s3 wish"><span class="sn">3.</span><span>"永远不要做 X"<span class="arr">→</span><span class="dest">wishful thinking</span></span></div>
+          </div>
+        </div></div>
+
+        <div class="row i4"><div class="n">04</div><div class="rb">
+          <div class="rt">CLAUDE.md 可以分<span class="code">两种</span></div>
+          <div class="paths r4paths">
+            <div class="pr p1"><span class="p">/</span><span>CLAUDE.md</span><span class="d">常驻型 · 全程加载</span></div>
+            <div class="pr p2"><span class="p alt">app/api/</span><span class="alt">CLAUDE.md</span><span class="d">按需型 · 进目录才唤醒</span></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.491" data-track-index="5"><div class="sub-inner">先说大家最熟的 <span class="sub-k">CLAUDE.md</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.491" data-duration="8.027" data-track-index="5"><div class="sub-inner">它是项目根目录下的一个 markdown 文件,开 session 的时候<span class="sub-k">自动加载</span>,整个 session 全程常驻。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.518" data-duration="2.768" data-track-index="5"><div class="sub-inner">压缩对话之后还会<span class="sub-k">重新读一遍</span>——它不会丢。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.428" data-duration="1.873" data-track-index="5"><div class="sub-inner">正因为它不会丢,它就<span class="sub-k">特别贵</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.301" data-duration="1.606" data-track-index="5"><div class="sub-inner">每一行都<span class="sub-k">全程占着上下文</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.907" data-duration="9.633" data-track-index="5"><div class="sub-inner">所以官方给了一条非常硬的建议:**CLAUDE.md 保持在 <span class="sub-k">200 行以内</span>,给它指定一个 owner,每次改动都要像改代码一样 review。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.54" data-duration="0.267" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-8" class="clip sub" data-start="26.964" data-duration="1.991" data-track-index="5"><div class="sub-inner"><span class="sub-k">200 行</span>是什么概念?</div></div>
+    <div id="sub-9" class="clip sub" data-start="28.955" data-duration="8.147" data-track-index="5"><div class="sub-inner">基本就是装<span class="sub-k">项目骨架</span>——构建命令、目录结构、monorepo 怎么划分、团队的代码风格规范。</div></div>
+    <div id="sub-10" class="clip sub" data-start="37.102" data-duration="5.25" data-track-index="5"><div class="sub-inner">这种"<span class="sub-k">全程都要知道</span>"的事实,才配住进 CLAUDE.md。</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.516" data-duration="1.602" data-track-index="5"><div class="sub-inner">那<span class="sub-k">不该住这里</span>的是什么?</div></div>
+    <div id="sub-12" class="clip sub" data-start="44.118" data-duration="2.038" data-track-index="5"><div class="sub-inner">官方给了<span class="sub-k">三个</span>非常清晰的信号。</div></div>
+    <div id="sub-13" class="clip sub" data-start="46.156" data-duration="6.407" data-track-index="5"><div class="sub-inner">第一,**写了 30 行的部署流程**——那是 procedure,该搬去 <span class="sub-k">skill</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="52.704" data-duration="6.93" data-track-index="5"><div class="sub-inner">第二,**写了"每次 X 之后都要 Y"**——那是确定性自动化,该搬去 <span class="sub-k">hook</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="59.634" data-duration="7.424" data-track-index="5"><div class="sub-inner">第三,**写了"永远不要做 X"**——那不是护栏,是 <span class="sub-k">wishful thinking</span>。</div></div>
+    <div id="sub-16" class="clip sub" data-start="67.212" data-duration="3.237" data-track-index="5"><div class="sub-inner">官方还提了一个特别<span class="sub-k">实用的设计</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="70.449" data-duration="3.453" data-track-index="5"><div class="sub-inner">CLAUDE.md 可以<span class="sub-k">分两种</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="73.902" data-duration="3.237" data-track-index="5"><div class="sub-inner">根目录那个是<span class="sub-k">常驻型</span>,全程加载。</div></div>
+    <div id="sub-19" class="clip sub" data-start="77.139" data-duration="7.121" data-track-index="5"><div class="sub-inner">但子目录里也可以放,比如 <span class="sub-k">`app/api/CLAUDE.md`</span>。</div></div>
+    <div id="sub-20" class="clip sub" data-start="84.42" data-duration="7.08" data-track-index="5"><div class="sub-inner">这种是<span class="sub-k">按需型</span>——只有当 Claude 真的去读 `app/api` 下面的文件时,它才加载。</div></div>
+    <div id="sub-21" class="clip sub" data-start="91.5" data-duration="2.154" data-track-index="5"><div class="sub-inner">不读那个目录,它就<span class="sub-k">一直休眠</span>。</div></div>
+    <div id="sub-22" class="clip sub" data-start="93.816" data-duration="3.255" data-track-index="5"><div class="sub-inner">在 <span class="sub-k">monorepo</span> 里,这招特别关键。</div></div>
+    <div id="sub-23" class="clip sub" data-start="97.071" data-duration="5.209" data-track-index="5"><div class="sub-inner">每个团队管自己的子目录,自己的规矩<span class="sub-k">只在动到自己代码时</span>才进上下文。</div></div>
+    <div id="sub-24" class="clip sub" data-start="102.28" data-duration="3.417" data-track-index="5"><div class="sub-inner">前端工程师不用为后端的规矩<span class="sub-k">付 token</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:18, d:.36, ease:'expo.out'});
+    // item 1 — CLAUDE.md auto-loads
+    D2.enter(tl, R+'.i1', 2.6, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r1d', 10.6, {y:10, d:.3, ease:'power2.out'});
+    // item 2 — 200-line rule + skeleton tags
+    D2.enter(tl, R+'.i2', 17.0, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r2rule', 22.0, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.r2meta .mt', 29.1, {y:10, step:.18, d:.28, ease:'power2.out'});
+    // item 3 — three signals, each tag arrives with its subtitle
+    D2.enter(tl, R+'.i3', 42.6, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.s1', 46.3, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s2', 52.8, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s3', 59.7, {y:10, d:.3, ease:'power2.out'});
+    // item 4 — two flavors
+    D2.enter(tl, R+'.i4', 67.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.p1', 73.9, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.p2', 77.2, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.491],['#sub-3',10.518],['#sub-4',13.428],['#sub-5',15.301],['#sub-6',16.907],['#sub-7',26.54],['#sub-8',26.964],['#sub-9',28.955],['#sub-10',37.102],['#sub-11',42.516],['#sub-12',44.118],['#sub-13',46.156],['#sub-14',52.704],['#sub-15',59.634],['#sub-16',67.212],['#sub-17',70.449],['#sub-18',73.902],['#sub-19',77.139],['#sub-20',84.42],['#sub-21',91.5],['#sub-22',93.816],['#sub-23',97.071],['#sub-24',102.28]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 105.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .lead-habit{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.55}
+[data-composition-id='s02'] .lead-habit .pl{color:#ccff4d}
+[data-composition-id='s02'] .lead-habit .dim{color:#8a8a85}
+[data-composition-id='s02'] .rows .rt .code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+[data-composition-id='s02'] .rows .rd .code{font-family:'JetBrains Mono',monospace;font-size:.94em;color:#5fd3e8;background:rgba(95,211,232,.08);border:1px solid rgba(95,211,232,.25);padding:1px 8px}
+[data-composition-id='s02'] .rows .rd .warn{color:#ff6b5e;font-weight:600}
+[data-composition-id='s02'] .thesis{margin-top:34px;width:100%}
+[data-composition-id='s02'] .thesis .term-l1{font-size:38px}
+[data-composition-id='s02'] .thesis .term-l2{font-size:50px;line-height:1.32}
+[data-composition-id='s02'] .thesis .term-l2 .em{color:#ccff4d}
+[data-composition-id='s02'] .thesis .term-src{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="98.267" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[02/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 习惯 vs 代价 · <span class="acc">三笔账</span></div>
+      <div class="h1" style="margin-top:18px">往 <span class="em">CLAUDE.md</span> 里塞一句</div>
+
+      <div class="lead-habit">
+        <span class="pl">$</span> echo "跑测试" &gt;&gt; CLAUDE.md<br>
+        <span class="pl">$</span> echo "别动迁移" &gt;&gt; CLAUDE.md<br>
+        <span class="pl">$</span> echo "部署前 lint" &gt;&gt; CLAUDE.md<br>
+        <span class="dim"># 塞着塞着,文件上千行</span>
+      </div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">每行都收<span class="code">token</span>费</div>
+          <div class="rd">每个工程师 · 每次 session,无关任务也加载进上下文</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">文件越长,<span class="code">遵循率</span>越低</div>
+          <div class="rd">注意力被稀释,真正重要的几条反而被忽略</div>
+        </div></div>
+
+        <div class="row r3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">你以为是护栏,<span class="code">其实不是</span></div>
+          <div class="rd">长对话、压力情境、被污染的文件 — 模型可能<span class="warn">跳过这条</span></div>
+        </div></div>
+      </div>
+
+      <div class="term thesis">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">claude-md vs hook</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>同一句话</div>
+          <div class="term-l2">住进 <span class="em">CLAUDE.md</span> 是 token 黑洞,<br>住进 <span class="em">hook</span> 才是<span class="hl"><span class="bar"></span><span class="tx">不可破的护栏</span></span></div>
+          <div class="term-src">// rules in prompt = suggestions · hooks = <b>deterministic</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1"  class="clip sub" data-start="0"      data-duration="5.211" data-track-index="5"><div class="sub-inner">我读完这篇官博,最有冲击的不是它列出了 <span class="sub-k">7 种机制</span>。</div></div>
+    <div id="sub-2"  class="clip sub" data-start="5.212"  data-duration="4.822" data-track-index="5"><div class="sub-inner">是它把"指令"和"护栏"这两件事,<span class="sub-k">彻底分开</span>讲了。</div></div>
+    <div id="sub-3"  class="clip sub" data-start="10.175" data-duration="4.494" data-track-index="5"><div class="sub-inner">绝大多数人用 Claude Code 都是一样的<span class="sub-k">习惯</span>。</div></div>
+    <div id="sub-4"  class="clip sub" data-start="14.669" data-duration="4.162" data-track-index="5"><div class="sub-inner">想到什么规矩,就往 <span class="sub-k">CLAUDE.md</span> 里塞一句。</div></div>
+    <div id="sub-5"  class="clip sub" data-start="18.831" data-duration="1.831" data-track-index="5"><div class="sub-inner">想让它<span class="sub-k">跑测试</span>,塞一句。</div></div>
+    <div id="sub-6"  class="clip sub" data-start="20.662" data-duration="2.497" data-track-index="5"><div class="sub-inner">想让它别动<span class="sub-k">数据库迁移</span>,塞一句。</div></div>
+    <div id="sub-7"  class="clip sub" data-start="23.159" data-duration="2.996" data-track-index="5"><div class="sub-inner">想让它部署前先 <span class="sub-k">lint</span>,再塞一句。</div></div>
+    <div id="sub-8"  class="clip sub" data-start="26.303" data-duration="2.628" data-track-index="5"><div class="sub-inner">塞着塞着,文件就<span class="sub-k">上千行</span>了。</div></div>
+    <div id="sub-9"  class="clip sub" data-start="29.075" data-duration="3.427" data-track-index="5"><div class="sub-inner">但官方说,这套做法有<span class="sub-k">两个反直觉的代价</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="32.502" data-duration="8.838" data-track-index="5"><div class="sub-inner">第一个代价,每多写一行,你团队里每个工程师,每一次开 session,都要为这一行付 <span class="sub-k">token</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="41.54"  data-duration="4.625" data-track-index="5"><div class="sub-inner">哪怕这行规矩跟他这次任务<span class="sub-k">八竿子打不着</span>,它也加载进上下文。</div></div>
+    <div id="sub-12" class="clip sub" data-start="46.319" data-duration="5.938" data-track-index="5"><div class="sub-inner">第二个代价更狠——文件越长,真正重要的那几条指令,<span class="sub-k">遵循率反而越低</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="52.257" data-duration="2.878" data-track-index="5"><div class="sub-inner">Claude 的注意力<span class="sub-k">被稀释</span>了。</div></div>
+    <div id="sub-14" class="clip sub" data-start="55.283" data-duration="1.865" data-track-index="5"><div class="sub-inner">更扎心的是<span class="sub-k">第三件事</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="57.148" data-duration="6.53"  data-track-index="5"><div class="sub-inner">你以为你写在 CLAUDE.md 里的"<span class="sub-k">永远不要执行危险命令</span>"是护栏。</div></div>
+    <div id="sub-16" class="clip sub" data-start="63.678" data-duration="0.932" data-track-index="5"><div class="sub-inner"><span class="sub-k">其实不是</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="64.81"  data-duration="8.468" data-track-index="5"><div class="sub-inner">官方原话是:长对话里、压力情境里、或者读到一个被污染的文件,模型就可能<span class="sub-k">跳过这条规矩</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="73.427" data-duration="2.933" data-track-index="5"><div class="sub-inner">**写在 prompt 里的规则是<span class="sub-k">建议</span>。</div></div>
+    <div id="sub-19" class="clip sub" data-start="76.36"  data-duration="7.332" data-track-index="5"><div class="sub-inner">要做护栏,必须是 <span class="sub-k">deterministic</span> 的——也就是必须由代码强制执行,而不是由模型自觉遵守。</div></div>
+    <div id="sub-20" class="clip sub" data-start="83.692" data-duration="0.293" data-track-index="5"><div class="sub-inner">**</div></div>
+    <div id="sub-21" class="clip sub" data-start="84.155" data-duration="10.026" data-track-index="5"><div class="sub-inner">所以这期的主轴只有一句话:**同一句话,住进 CLAUDE.md 是 <span class="sub-k">token 黑洞</span>,住进 hook 才是不可破的护栏。</div></div>
+    <div id="sub-22" class="clip sub" data-start="94.181" data-duration="3.945" data-track-index="5"><div class="sub-inner">** 接下来这 7 个口子,就是教你怎么<span class="sub-k">选住址</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* Beat 1 (0–10s): 主题 —— 指令 vs 护栏 分开讲 */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1',    .8, {y:20, d:.4, ease:'expo.out'});
+
+    /* Beat 2 (10–29s): 习惯 —— 塞一句 / 塞一句 / 上千行 */
+    D2.enter(tl, R+'.lead-habit', 14.5, {y:14, d:.35, ease:'power3.out'});
+
+    /* Beat 3 (29–55s): 两笔代价(token + 注意力稀释) */
+    D2.enter(tl, R+'.r1', 32.6, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 46.4, {x:-24, d:.42, ease:'expo.out'});
+
+    /* Beat 4 (55–84s): 第三件事 —— 你以为是护栏,其实不是 */
+    D2.enter(tl, R+'.r3', 55.4, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 57.3, {y:12, d:.32, ease:'power2.out'});
+
+    /* Beat 5 (84–98s): 主轴金句 —— 同一句话,住进哪里 */
+    D2.enter(tl, R+'.thesis', 84.3, {y:22, d:.5, ease:'expo.out'});
+    D2.sweep(tl, R, '.thesis .hl', 88.4);
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.212],['#sub-3',10.175],['#sub-4',14.669],['#sub-5',18.831],['#sub-6',20.662],['#sub-7',23.159],['#sub-8',26.303],['#sub-9',29.075],['#sub-10',32.502],['#sub-11',41.54],['#sub-12',46.319],['#sub-13',52.257],['#sub-14',55.283],['#sub-15',57.148],['#sub-16',63.678],['#sub-17',64.81],['#sub-18',73.427],['#sub-19',76.36],['#sub-20',83.692],['#sub-21',84.155],['#sub-22',94.181]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 98.267, 'out');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

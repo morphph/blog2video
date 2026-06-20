@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+
+/* —— scene-01 cover Hook 特有 —— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — Anthropic 官方 / Claude Code / 指令调教指南 */
+[data-composition-id='s01'] .a-kick{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.06em}
+[data-composition-id='s01'] .a-kick .acid{color:#ccff4d}
+[data-composition-id='s01'] .a-kick .dot{width:12px;height:12px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s01'] .a-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;line-height:1.04;letter-spacing:-.03em;color:#edebe6}
+[data-composition-id='s01'] .a-zh{margin-top:30px;font-weight:900;font-size:88px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-arrive{margin-top:36px;display:flex;align-items:center}
+[data-composition-id='s01'] .a-arrive .t{font-weight:900;font-size:104px;color:#edebe6}
+[data-composition-id='s01'] .a-arrive .cur{display:inline-block;width:52px;height:84px;background:#ccff4d;margin-left:18px}
+
+/* beat B — 7 种官方钦定 + 4 名词 chips + 三个维度 */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .b-title{margin-top:18px;font-weight:900;font-size:78px;line-height:1.1;color:#edebe6;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s01'] .b-title .hl{position:relative;display:inline-block;padding:4px 16px;margin-right:14px}
+[data-composition-id='s01'] .b-title .hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s01'] .b-title .hl .tx{position:relative;z-index:1;font-weight:900;font-size:96px;color:#edebe6}
+[data-composition-id='s01'] .b-chips{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%}
+[data-composition-id='s01'] .b-chip{display:flex;align-items:center;gap:20px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 26px}
+[data-composition-id='s01'] .b-chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:24px;color:#ccff4d;letter-spacing:.05em;min-width:36px}
+[data-composition-id='s01'] .b-chip .ct{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;color:#edebe6;letter-spacing:-.005em}
+[data-composition-id='s01'] .b-dim{margin-top:38px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .b-dims{margin-top:14px;display:flex;flex-direction:column;gap:10px}
+[data-composition-id='s01'] .b-dim-row{display:flex;align-items:center;gap:18px;font-weight:600;font-size:38px;color:#edebe6;line-height:1.25}
+[data-composition-id='s01'] .b-dim-row .arrow{font-family:'JetBrains Mono',monospace;color:#ccff4d;font-size:32px}
+[data-composition-id='s01'] .b-dim-row .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s01'] .b-punch{margin-top:34px;font-weight:900;font-size:54px;line-height:1.2;color:#edebe6}
+[data-composition-id='s01'] .b-punch .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="18.733" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · STEERING CLAUDE CODE<span class="b-cur"></span></div>
+      <div class="idx">[01/12]</div>
+    </div>
+
+    <!-- BEAT A: Anthropic 官方刚发布 -->
+    <div class="beat" id="beatA">
+      <div class="a-kick"><span class="dot"></span><span class="acid">ANTHROPIC</span>&nbsp;OFFICIAL · 刚刚发布</div>
+      <div class="a-en">CLAUDE CODE</div>
+      <div class="a-zh">最全指令调教指南</div>
+      <div class="a-arrive"><span class="t">来了。</span><span class="cur"></span></div>
+    </div>
+
+    <!-- BEAT B: 7 种钦定 + 4 名词 + 三个维度 -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick">// OFFICIAL CANON · <span class="acc">7 种最佳实践</span></div>
+      <div class="b-title"><span class="hl"><span class="bar"></span><span class="tx">7 种</span></span><span>官方钦定。</span></div>
+      <div class="b-chips">
+        <div class="b-chip bc1"><span class="ci">01</span><span class="ct">Subagent</span></div>
+        <div class="b-chip bc2"><span class="ci">02</span><span class="ct">Skill</span></div>
+        <div class="b-chip bc3"><span class="ci">03</span><span class="ct">Hooks</span></div>
+        <div class="b-chip bc4"><span class="ci">04</span><span class="ct">CLAUDE.md</span></div>
+      </div>
+      <div class="b-dim">// 三个维度 · 完全不同</div>
+      <div class="b-dims">
+        <div class="b-dim-row bd1"><span class="arrow">›</span><span>加载时机</span></div>
+        <div class="b-dim-row bd2"><span class="arrow">›</span><span>压缩行为</span></div>
+        <div class="b-dim-row bd3"><span class="arrow">›</span><span class="em">强制力</span></div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time, brief 一字不差) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.08" data-track-index="5"><div class="sub-inner"><span class="sub-k">Anthropic 官方</span>刚发布 Claude Code 最全指令调教指南。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.28" data-duration="14.273" data-track-index="5"><div class="sub-inner">Subagent、Skill、Hooks、CLAUDE.md……7 种官方钦定的最佳实践，每一个的加载时机、压缩行为、强制力<span class="sub-k">完全不同</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    /* 底层 */
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - 4.08) —— Anthropic 官方刚发布 */
+    tl.from(R+'.a-kick',{y:-12,opacity:0,duration:.32,ease:'power3.out'},0.35);
+    tl.from(R+'.a-en',{x:-36,opacity:0,duration:.42,ease:'expo.out'},0.85);
+    tl.from(R+'.a-zh',{y:22,opacity:0,duration:.36,ease:'power3.out'},1.55);
+    tl.from(R+'.a-arrive .t',{opacity:0,duration:.2,ease:'power1.in'},2.55);
+    tl.from(R+'.a-arrive .cur',{scale:2.4,opacity:0,duration:.3,ease:'expo.out'},2.6);
+    tl.to(R+'.a-arrive .cur',{opacity:0,duration:.4,ease:'steps(1)',repeat:3,yoyo:true},3.2);
+
+    /* A -> B swap @ 4.28 */
+    tl.to(R+'#beatA',{opacity:0,duration:.36,ease:'power2.inOut'},4.0);
+    tl.set(R+'#beatB',{opacity:1},4.28);
+
+    /* BEAT B (4.28 - 18.55) —— 7 种钦定 + chips + 三维度 */
+    tl.from(R+'.b-kick',{y:-12,opacity:0,duration:.3,ease:'power2.out'},4.45);
+    tl.from(R+'.b-title > span:nth-child(2)',{y:22,opacity:0,duration:.36,ease:'power3.out'},4.85);
+    /* "7 种" 酸性扫过 —— 这屏的金句强调 */
+    tl.from(R+'.b-title .hl',{opacity:0,duration:.18,ease:'power1.out'},5.2);
+    tl.to(R+'.b-title .hl .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},5.35);
+    tl.to(R+'.b-title .hl .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},5.5);
+
+    /* 4 名词 chips 逐条 build —— 配合口播念到名词列表 */
+    tl.from(R+'.bc1',{x:-22,opacity:0,duration:.28,ease:'power3.out'},6.4);
+    tl.from(R+'.bc2',{y:18,opacity:0,duration:.28,ease:'expo.out'},7.1);
+    tl.from(R+'.bc3',{x:22,opacity:0,duration:.28,ease:'power2.out'},7.8);
+    tl.from(R+'.bc4',{y:18,opacity:0,duration:.3,ease:'power3.out'},8.5);
+
+    /* 三个维度逐条揭示 —— 对应"加载时机、压缩行为、强制力完全不同" */
+    tl.from(R+'.b-dim',{opacity:0,duration:.3,ease:'power1.out'},10.8);
+    tl.from(R+'.bd1',{x:-18,opacity:0,duration:.3,ease:'power3.out'},12.0);
+    tl.from(R+'.bd2',{x:-18,opacity:0,duration:.3,ease:'expo.out'},13.6);
+    tl.from(R+'.bd3',{x:-18,opacity:0,duration:.3,ease:'power2.out'},15.2);
+
+    /* beatA / beatB 各自呼吸推近(本场景没有 .content,beat 当 content 用) */
+    tl.fromTo(R+'#beatA',{scale:1.0},{scale:1.03,duration:4.28,ease:'none'},0);
+    tl.fromTo(R+'#beatB',{scale:1.0},{scale:1.035,duration:14.45,ease:'none'},4.28);
+
+    /* 字幕 */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.28]].map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

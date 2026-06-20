@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .yamltags{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s06'] .yamltags .yt{font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.38);padding:3px 12px}
+[data-composition-id='s06'] .meta-line{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.01em}
+[data-composition-id='s06'] .meta-line b{color:#ccff4d;font-weight:700}
+[data-composition-id='s06'] .warn-t{color:#ff6b5e;font-weight:700}
+[data-composition-id='s06'] .scalestats{display:flex;gap:12px;margin-top:12px}
+[data-composition-id='s06'] .scalestats .sc{flex:1;font-family:'JetBrains Mono',monospace;font-size:23px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:6px 14px;text-align:center}
+[data-composition-id='s06'] .scalestats .sc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s06'] .usechips{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
+[data-composition-id='s06'] .usechips .uc{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:6px 16px}
+[data-composition-id='s06'] .skillnote{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.02em}
+[data-composition-id='s06'] .skillnote b{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="113.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[06/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 第四种基本单位 · <span class="acc">subagents</span></div>
+      <div class="h1" style="margin-top:14px">跑在<span class="em">独立 context window</span></div>
+
+      <div class="rows" style="margin-top:28px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">住在 <span class="code">.claude/agents/</span></div>
+          <div class="rd">带 YAML frontmatter 的 markdown 文件</div>
+          <div class="yamltags i1tags"><span class="yt">name</span><span class="yt">description</span><span class="yt">model</span><span class="yt">tools</span></div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">body = subagent 自己的 <span class="code">system prompt</span></div>
+          <div class="rd i2rd">和 skill 像:name / description / 工具列表 session 开始就加载</div>
+        </div></div>
+
+        <div class="row i3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">但 body <span class="warn-t">永不进父对话上下文</span></div>
+          <div class="rd i3rd">调用时开一个全新的 context window,中间过程全关在里面</div>
+          <div class="meta-line i3meta">→ 主会话只收到「<b>最终一条消息 + metadata</b>」</div>
+        </div></div>
+
+        <div class="row i4"><div class="n">04</div><div class="rb">
+          <div class="rt">省 token 是因为<span class="em" style="color:#ccff4d">中间结果根本没进主上下文</span></div>
+          <div class="scalestats i4scale"><span class="sc">嵌套 <b>5 层</b>深</span><span class="sc">编排 <b>几十~几百</b>后台 agent</span></div>
+        </div></div>
+      </div>
+
+      <div class="usechips i5uc">
+        <span class="uc">深度搜索</span><span class="uc">日志分析</span><span class="uc">依赖审计</span>
+      </div>
+      <div class="skillnote i5note">// 想每一步都能看见、能引导 → 用 <b>skill</b></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.74" data-track-index="5"><div class="sub-inner">第四种是 subagents,住在 <span class="sub-k">.claude/agents/</span> 文件夹里。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.931" data-duration="11.974" data-track-index="5"><div class="sub-inner">每个 subagent 是一个带 YAML frontmatter 的 markdown 文件——frontmatter 写 <span class="sub-k">name、description、还可以指定它用什么模型、能调用哪些工具</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="18.063" data-duration="3.65" data-track-index="5"><div class="sub-inner">body 就是这个 subagent 自己的 <span class="sub-k">system prompt</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.879" data-duration="6.938" data-track-index="5"><div class="sub-inner">subagent 跟 skill 有点像,name、description、工具列表 <span class="sub-k">session 开始就加载</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="28.817" data-duration="4.99" data-track-index="5"><div class="sub-inner">但有一个根本区别——<span class="sub-k">subagent 的 body 永远不会进父对话的上下文</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.975" data-duration="8.047" data-track-index="5"><div class="sub-inner">Claude 调用 subagent 的时候,它在一个<span class="sub-k">全新的、独立的 context window</span> 里跑。</div></div>
+    <div id="sub-7" class="clip sub" data-start="42.022" data-duration="4.311" data-track-index="5"><div class="sub-inner">所有中间过程、所有工具调用、所有思考,都<span class="sub-k">关在那个独立窗口</span>里。</div></div>
+    <div id="sub-8" class="clip sub" data-start="46.533" data-duration="5.275" data-track-index="5"><div class="sub-inner">回到主会话的,只有 subagent 的<span class="sub-k">最终一条消息</span>,加一些 metadata。</div></div>
+    <div id="sub-9" class="clip sub" data-start="51.975" data-duration="5.252" data-track-index="5"><div class="sub-inner">理解了这一点,就理解了 subagent 为什么<span class="sub-k">省 token</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="57.227" data-duration="4.923" data-track-index="5"><div class="sub-inner">它不是因为"代码更短",是因为它的<span class="sub-k">中间结果根本没进主上下文</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="62.307" data-duration="2.633" data-track-index="5"><div class="sub-inner">这让一种之前不可能的 <span class="sub-k">scale</span> 成为可能。</div></div>
+    <div id="sub-12" class="clip sub" data-start="64.94" data-duration="8.018" data-track-index="5"><div class="sub-inner">subagent 可以<span class="sub-k">嵌套 5 层深</span>,配合 dynamic workflows,可以编排几十到几百个后台 agent 同时跑。</div></div>
+    <div id="sub-13" class="clip sub" data-start="73.107" data-duration="6.003" data-track-index="5"><div class="sub-inner">如果这些 agent 的中间结果全部塞进主会话,单条 session <span class="sub-k">早就爆窗了</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="79.11" data-duration="4.392" data-track-index="5"><div class="sub-inner">但靠 subagent 把它们隔离掉,主会话<span class="sub-k">只看到最终汇总</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="83.655" data-duration="3.028" data-track-index="5"><div class="sub-inner">什么场景该用 <span class="sub-k">subagent</span>?</div></div>
+    <div id="sub-16" class="clip sub" data-start="86.683" data-duration="5.298" data-track-index="5"><div class="sub-inner">官方给的几个例子很典型——<span class="sub-k">深度搜索、日志分析、依赖审计</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="91.981" data-duration="5.866" data-track-index="5"><div class="sub-inner">这些任务的特点是:中间会产生<span class="sub-k">大量你后续不会再回头看的过程信息</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="98.047" data-duration="3.522" data-track-index="5"><div class="sub-inner">让它跑在 subagent 里,<span class="sub-k">主上下文干干净净</span>。</div></div>
+    <div id="sub-19" class="clip sub" data-start="101.727" data-duration="4.117" data-track-index="5"><div class="sub-inner">什么时候不用 subagent,反而用 <span class="sub-k">skill</span>?</div></div>
+    <div id="sub-20" class="clip sub" data-start="105.844" data-duration="4.909" data-track-index="5"><div class="sub-inner">当你希望流程<span class="sub-k">在主线程里展开</span>,每一步你都能看见、能引导。</div></div>
+    <div id="sub-21" class="clip sub" data-start="110.753" data-duration="2.217" data-track-index="5"><div class="sub-inner">这时候 <span class="sub-k">skill</span> 才合适。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    // item 1: .claude/agents/ + YAML frontmatter
+    D2.enter(tl, R+'.i1', 1.2, {x:-22, ease:'power3.out'});
+    D2.stagger(tl, R+'.i1tags .yt', 6.2, {y:12, step:.12, d:.28, ease:'power2.out'});
+    // item 2: body = system prompt + skill similarity
+    D2.enter(tl, R+'.i2', 18.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.i2rd', 22.1, {y:10, d:.32, ease:'power2.out'});
+    // item 3: never enters parent context — warn row
+    D2.enter(tl, R+'.i3', 29.1, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i3rd', 34.2, {y:10, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.i3meta', 46.8, {y:10, d:.32, ease:'power2.out'});
+    // item 4: why it saves tokens + scale numbers
+    D2.enter(tl, R+'.i4', 57.5, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.i4scale', 65.2, {y:10, d:.32, ease:'power2.out'});
+    // use cases + skill note
+    D2.stagger(tl, R+'.i5uc .uc', 86.9, {y:12, step:.18, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i5note', 105.9, {y:10, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.931],['#sub-3',18.063],['#sub-4',21.879],['#sub-5',28.817],['#sub-6',33.975],['#sub-7',42.022],['#sub-8',46.533],['#sub-9',51.975],['#sub-10',57.227],['#sub-11',62.307],['#sub-12',64.94],['#sub-13',73.107],['#sub-14',79.11],['#sub-15',83.655],['#sub-16',86.683],['#sub-17',91.981],['#sub-18',98.047],['#sub-19',101.727],['#sub-20',105.844],['#sub-21',110.753]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 113.133, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

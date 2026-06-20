@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   d2 「终端霓影 Terminal v2」 BASE KIT  —— loop-engineering 全片统一组件库
+   真源。生成器把本文件 + d2-motion.js 内联进每个场景的 style / script 块。
+   场景自包含,逐个 standalone 渲染,因此组件类不做 sNN 作用域(单 composition 不会串扰)。
+   GSAP 选择器仍用 R = composition-id 前缀定位(R 拼成 data-composition-id 属性选择器),见 d2-motion.js。
+   字体路径相对 scene 目录:assets -> symlink 到 ../../assets。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入)---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+
+/* ---- 令牌 ---- */
+:root{
+  --bg:#121212; --panel:#1c1c1e; --ink:#edebe6; --dim:#8a8a85; --key:#2a2a2c;
+  --acid:#ccff4d; --cyan:#5fd3e8; --coral:#ff6b5e; --amber:#ffbd2e; --green:#27c93f;
+  --mono:'JetBrains Mono',monospace; --sans:'MiSans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+
+/* ---- 蓝图点阵 ---- 几乎每个场景铺底 */
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.045;
+  -webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 42%,#000 50%,rgba(0,0,0,0) 100%)}
+
+/* ---- topbar ---- 左栏目名+光标 右页码 */
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.topbar .idx{color:#ccff4d}
+
+/* ---- 内容安全区 ---- 上≥160 / 左右72 / 下≥540(留给字幕带) */
+.content{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+  box-sizing:border-box;transform-origin:50% 45%}
+.content.top{justify-content:flex-start;padding-top:236px}   /* 密集列表从上往下排 */
+.content.tight{padding-top:208px;padding-bottom:540px}        /* 极密(>4 行+说明) */
+
+/* ---- 字幕带(全片统一,track 5)---- */
+.sub{position:absolute;left:72px;right:72px;bottom:340px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(18,18,18,.6);border-top:1px solid #2a2a2c;max-width:936px;padding:16px 22px;
+  font-weight:500;font-size:38px;line-height:1.4;color:#edebe6;text-align:center}
+.sub-k{color:#ccff4d}
+
+/* ========================= 组件 ========================= */
+
+/* 章节 kicker(mono 小标签) */
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+.kicker .acc{color:#ccff4d}
+
+/* 大标题 */
+.h1{font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+.h1.xl{font-size:88px;line-height:1.08}
+.h1 .em{color:#ccff4d}
+.h2{font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+.lead{font-weight:600;font-size:40px;line-height:1.45;color:#edebe6}
+.lead .dim{color:#8a8a85} .lead .em{color:#ccff4d}
+
+/* 酸性高亮:块从左扫过,文字反色为 #121212(每屏 ≤1 处) */
+.hl{position:relative;display:inline-block;padding:4px 14px}
+.hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+.hl .tx{position:relative;z-index:1;font-weight:900;color:#edebe6}
+
+/* chip:mono 编号 + 标签 */
+.chip{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+.chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:25px;color:#ccff4d;letter-spacing:.05em}
+.chip .ct{font-weight:600;font-size:38px;color:#edebe6}
+
+/* 编号清单行(checklist / steps) */
+.rows{display:flex;flex-direction:column;gap:16px;width:100%}
+.row{display:flex;align-items:flex-start;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 30px;width:100%}
+.row .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;line-height:1.25;min-width:46px}
+.row .rb{flex:1;min-width:0}
+.row .rt{font-weight:600;font-size:40px;color:#edebe6;line-height:1.28}
+.row .rd{margin-top:8px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+.row .rd .warn{color:#ff6b5e;font-weight:600}
+.row .rd .ok{color:#ccff4d;font-weight:600}
+.row.warn{border-color:rgba(255,107,94,.4)} .row.warn .n{color:#ff6b5e}
+.row.now{border-color:#ccff4d}
+
+/* 步骤箭头(纵向流程) */
+.flowarrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;margin:2px 0 2px 14px}
+.flowarrow .a{color:#ccff4d}
+
+/* 终端窗口卡(quote / 代码 / 金句) */
+.term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+.term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+.term-bar .d{width:12px;height:12px;border-radius:50%}
+.term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+.term-body{padding:44px 40px 48px}
+.term-l1{font-weight:600;font-size:44px;line-height:1.45;color:#8a8a85}
+.term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+.term-l2{margin-top:24px;font-weight:900;font-size:64px;line-height:1.32;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+.term-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:32px;color:#5fd3e8}
+.term-src{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+.term-src b{color:#edebe6;font-weight:700}
+
+/* corner-bracket 面板(重点区 / 节点) */
+.bracket{position:relative;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 34px}
+.bracket::before,.bracket::after{content:'';position:absolute;width:26px;height:26px;pointer-events:none}
+.bracket::before{top:-1px;left:-1px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+.bracket::after{bottom:-1px;right:-1px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+
+/* 状态灯:小圆点 + mono 标签 */
+.status{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+.status .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.status.alert{color:#ff6b5e} .status.alert .dot{background:#ff6b5e}
+
+/* 块状光标 */
+.cur{display:inline-block;width:30px;height:54px;background:#ccff4d;vertical-align:-8px;margin-left:14px}
+.cur.sm{width:20px;height:38px;margin-left:10px;vertical-align:-5px}
+
+/* 双栏对比 */
+.cols{display:flex;gap:22px;width:100%}
+.col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 28px;display:flex;flex-direction:column;min-width:0}
+.col .ch{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:22px}
+.col.alt .ch{color:#5fd3e8}
+.col .it{margin-bottom:20px} .col .it:last-child{margin-bottom:0}
+.col .it .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+.col .it .ds{margin-top:6px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+.col .it code,.code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+.col.alt .it code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:10px;vertical-align:3px}
+
+/* 时间线(纵向 mono 年份) */
+.tl{display:flex;flex-direction:column;gap:14px;width:100%}
+.tl-row{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+.tl-row .yr{flex-shrink:0;width:150px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:#8a8a85;letter-spacing:-.01em}
+.tl-row .wt{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+.tl-row.now{border-color:#ccff4d;background:rgba(204,255,77,.06)} .tl-row.now .yr{color:#ccff4d}
+.tl-row.now .badge{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#121212;background:#ccff4d;padding:3px 12px;vertical-align:4px}
+
+/* 数据条 / count-up 统计 */
+.stats{display:flex;gap:18px;width:100%}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 16px;text-align:center}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:62px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan .num{color:#5fd3e8}
+
+/* 大数字赢面板 */
+.win{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;text-align:center}
+.win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+.win .lab{margin-top:10px;font-weight:500;font-size:28px;color:#edebe6}
+
+/* end chip(收尾标语) */
+.endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+.endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .dims{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:24px}
+[data-composition-id='s11'] .dim{background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 24px}
+[data-composition-id='s11'] .dim .dh{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em;margin-bottom:12px}
+[data-composition-id='s11'] .dim .dh .ac{color:#ccff4d}
+[data-composition-id='s11'] .tiers{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start}
+[data-composition-id='s11'] .tier{flex:1 1 0;min-width:0;background:#121212;border:1px solid #2a2a2c;padding:12px 14px}
+[data-composition-id='s11'] .tier .lab{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;letter-spacing:.04em;color:#8a8a85;margin-bottom:6px}
+[data-composition-id='s11'] .tier .it{font-weight:600;font-size:24px;color:#edebe6;line-height:1.32}
+[data-composition-id='s11'] .tier.hi{border-color:rgba(255,107,94,.45)}
+[data-composition-id='s11'] .tier.hi .lab{color:#ff6b5e}
+[data-composition-id='s11'] .tier.md .lab{color:#8a8a85}
+[data-composition-id='s11'] .tier.md{border-color:#2a2a2c}
+[data-composition-id='s11'] .tier.lo{border-color:rgba(204,255,77,.45)}
+[data-composition-id='s11'] .tier.lo .lab{color:#ccff4d}
+[data-composition-id='s11'] .tier .note{margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:18px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s11'] .punch{margin-top:18px;font-weight:900;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s11'] .punch .em{color:#ccff4d}
+[data-composition-id='s11'] .punch .warn{color:#ff6b5e}
+[data-composition-id='s11'] .thesis{margin-top:22px}
+[data-composition-id='s11'] .thesis .term-l1{font-size:28px}
+[data-composition-id='s11'] .thesis .term-body{padding:24px 28px 26px}
+[data-composition-id='s11'] .thesis .term-l2{font-size:36px;margin-top:12px;display:block}
+[data-composition-id='s11'] .places{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+[data-composition-id='s11'] .place{display:flex;align-items:baseline;gap:16px;font-size:22px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s11'] .place .h{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;min-width:260px}
+[data-composition-id='s11'] .place .b{flex:1;color:#edebe6;font-family:'MiSans',sans-serif;font-weight:500;font-size:22px}
+[data-composition-id='s11'] .place .b .dim{color:#8a8a85}
+[data-composition-id='s11'] .place.hook .h{color:#ccff4d;font-weight:700}
+[data-composition-id='s11'] .place.hook .b{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="102.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[11/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 7 槽 · <span class="acc">3 维度</span>对照</div>
+      <div class="h1" style="margin-top:14px;font-size:60px">把它们<span class="em">摆在一起</span>看</div>
+
+      <div class="dims">
+        <!-- D1: 上下文成本 -->
+        <div class="dim d1">
+          <div class="dh">// 维度 1 · <span class="ac">上下文成本</span></div>
+          <div class="tiers">
+            <div class="tier hi t-hi">
+              <div class="lab">高</div>
+              <div class="it">CLAUDE.md 根目录<br>Unscoped Rule<br>Output Styles</div>
+              <div class="note">全程常驻</div>
+            </div>
+            <div class="tier md t-md">
+              <div class="lab">中</div>
+              <div class="it">Append<br>System Prompt</div>
+              <div class="note">首次付,后续缓存</div>
+            </div>
+            <div class="tier lo t-lo">
+              <div class="lab">低</div>
+              <div class="it">子目录 CLAUDE.md<br>Path-scoped Rule<br>Skill / Subagent / Hook</div>
+              <div class="note">按需 · 或不进主上下文</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D2: 压缩行为 -->
+        <div class="dim d2">
+          <div class="dh">// 维度 2 · <span class="ac">压缩行为</span></div>
+          <div class="tiers">
+            <div class="tier hi t2a">
+              <div class="lab">永不丢</div>
+              <div class="it">CLAUDE.md · Rule · Output Styles</div>
+            </div>
+            <div class="tier md t2b">
+              <div class="lab">会挤出</div>
+              <div class="it">Skill</div>
+              <div class="note">共享 budget · oldest 先 drop</div>
+            </div>
+            <div class="tier lo t2c">
+              <div class="lab">绕过</div>
+              <div class="it">Hook</div>
+            </div>
+            <div class="tier md t2d">
+              <div class="lab">仅单次</div>
+              <div class="it">Append System Prompt</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D3: 强制力 -->
+        <div class="dim d3">
+          <div class="dh">// 维度 3 · <span class="ac">强制力</span></div>
+          <div class="punch">只有 <span class="em">Hook</span> 是真护栏 —— 其它六种都是<span class="warn">建议</span></div>
+        </div>
+      </div>
+
+      <!-- 收束:把 thesis 摊开,同一句 "部署前必须跑测试" 住进四个口 -->
+      <div class="term thesis">
+        <div class="term-bar">
+          <div class="d" style="background:#ff6b5e"></div>
+          <div class="d" style="background:#ffbd2e"></div>
+          <div class="d" style="background:#27c93f"></div>
+          <div class="t">thesis.md — "部署前必须跑测试"</div>
+        </div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>同一句话 · 住进四个口</div>
+          <div class="places">
+            <div class="place p1"><div class="h">CLAUDE.md</div><div class="b">每个 session 都付 token <span class="dim">· 遵循率随对话变长衰减</span></div></div>
+            <div class="place p2"><div class="h">path-scoped</div><div class="b">只在动到部署相关文件时<span class="dim"> 才付钱</span></div></div>
+            <div class="place p3"><div class="h">skill</div><div class="b">仅描述行常驻 <span class="dim">· body 调用时才加载</span></div></div>
+            <div class="place hook p4"><div class="h">PostToolUse hook</div><div class="b">从指令升级成代码 · Claude 想不跑都不行</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="3.165" data-track-index="5"><div class="sub-inner">讲到这里，<span class="sub-k">7 个注入口</span>都过了一遍。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.191" data-duration="2.044" data-track-index="5"><div class="sub-inner">我们把它们<span class="sub-k">摆在一起</span>看。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.416" data-duration="1.338" data-track-index="5"><div class="sub-inner">按<span class="sub-k">上下文成本</span>分。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.764" data-duration="9.089" data-track-index="5"><div class="sub-inner"><span class="sub-k">高成本的</span>是 CLAUDE.md 根目录文件、unscoped rule、output styles。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.863" data-duration="1.169" data-track-index="5"><div class="sub-inner">它们<span class="sub-k">全程常驻</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.242" data-duration="8.807" data-track-index="5"><div class="sub-inner"><span class="sub-k">低成本的</span>是子目录 CLAUDE.md、path-scoped rule、skill、subagent、hook。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.224" data-duration="3.436" data-track-index="5"><div class="sub-inner">它们要么按需加载，要么压根<span class="sub-k">不进主上下文</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.67" data-duration="7.915" data-track-index="5"><div class="sub-inner"><span class="sub-k">中等成本</span>的是 append system prompt——会被缓存，但首次请求要付。</div></div>
+    <div id="sub-9" class="clip sub" data-start="37.744" data-duration="1.474" data-track-index="5"><div class="sub-inner">按<span class="sub-k">压缩行为</span>分。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.228" data-duration="8.472" data-track-index="5"><div class="sub-inner"><span class="sub-k">永不丢失的</span>是 CLAUDE.md、rule、output styles。</div></div>
+    <div id="sub-11" class="clip sub" data-start="47.91" data-duration="7.077" data-track-index="5"><div class="sub-inner"><span class="sub-k">会被挤出的</span>是 skill——多个 skill 共享一个 budget，最早调用的最先掉。</div></div>
+    <div id="sub-12" class="clip sub" data-start="54.997" data-duration="2.648" data-track-index="5"><div class="sub-inner"><span class="sub-k">完全绕过压缩的</span>是 hook。</div></div>
+    <div id="sub-13" class="clip sub" data-start="57.796" data-duration="3.942" data-track-index="5"><div class="sub-inner"><span class="sub-k">只对单次调用生效的</span>是 append system prompt。</div></div>
+    <div id="sub-14" class="clip sub" data-start="61.9" data-duration="0.919" data-track-index="5"><div class="sub-inner">按<span class="sub-k">强制力</span>分。</div></div>
+    <div id="sub-15" class="clip sub" data-start="62.829" data-duration="4.168" data-track-index="5"><div class="sub-inner"><span class="sub-k">只有 hook 是真护栏</span>——其它六种都是建议。</div></div>
+    <div id="sub-16" class="clip sub" data-start="67.007" data-duration="5.871" data-track-index="5"><div class="sub-inner">模型在长对话、压力情境、<span class="sub-k">prompt injection</span> 下都可能跳过指令。</div></div>
+    <div id="sub-17" class="clip sub" data-start="73.024" data-duration="3.335" data-track-index="5"><div class="sub-inner">所以那条 <span class="sub-k">thesis</span> 现在可以摊开看了。</div></div>
+    <div id="sub-18" class="clip sub" data-start="76.369" data-duration="9.548" data-track-index="5"><div class="sub-inner">同一句"部署前必须跑测试"，住进 <span class="sub-k">CLAUDE.md</span>，每个 session 都付 token，遵循率随对话变长还会衰减。</div></div>
+    <div id="sub-19" class="clip sub" data-start="86.127" data-duration="4.836" data-track-index="5"><div class="sub-inner">住进 <span class="sub-k">path-scoped rule</span>，只在动到部署相关文件时才付钱。</div></div>
+    <div id="sub-20" class="clip sub" data-start="91.132" data-duration="3.930" data-track-index="5"><div class="sub-inner">住进 <span class="sub-k">skill</span>，连描述行常驻，body 调用时才加载。</div></div>
+    <div id="sub-21" class="clip sub" data-start="95.072" data-duration="6.884" data-track-index="5"><div class="sub-inner">**<span class="sub-k">注册成 PostToolUse hook</span>，它从指令升级成了代码——Claude 想不跑都不行。</div></div>
+    <div id="sub-22" class="clip sub" data-start="101.966" data-duration="0.271" data-track-index="5"><div class="sub-inner">**</div></div>
+  </div>
+
+  <script>
+  /* ============================================================================
+   d2-motion.js —— GSAP 动效助手(全片统一性格:工程式利落)
+   内联进每个场景的 script 块(GSAP 3.14 先于本段加载)。
+   全局命名空间 window.D2。所有动画只动 transform / opacity / color / backgroundColor。
+   禁:弹性/回弹 ease、repeat:-1、Date.now/Math.random。timeline 同步构建。
+
+   两种用法:
+   1) 低阶助手:在自写 timeline 里调 D2.enter(tl,sel,at,opts) 等(精修范本用,控制最细)。
+   2) 高阶约定:D2.buildSceneTimeline(R, spec) 一把声明式建好(生成器默认用)。
+   ============================================================================ */
+(function(){
+  var ACID='#ccff4d', BG='#121212';
+
+  var D2 = {
+    /* 标准入场:y 抬升 16–20px + fade,0.25–0.35s。opts:{y,x,d,ease,from(=true)} */
+    enter:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.32, ease:opts.ease||'power3.out' };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 一组元素逐条 build(stagger);永不整屏一次性上 */
+    stagger:function(tl, sel, at, opts){
+      opts = opts || {};
+      var v = { opacity:0, duration:opts.d||0.3, ease:opts.ease||'power3.out', stagger:opts.step||0.14 };
+      v.y = (opts.y!=null) ? opts.y : 18;
+      if(opts.x!=null) v.x = opts.x;
+      tl.from(sel, v, at);
+      return tl;
+    },
+
+    /* 酸性高亮:.hl 块从左扫过(scaleX 0→1)+ 文字反色为 #121212。sel 指向 .hl 容器 */
+    sweep:function(tl, R, sel, at){
+      tl.to(R+sel+' .bar', { scaleX:1, duration:0.32, ease:'power4.inOut' }, at);
+      tl.to(R+sel+' .tx',  { color:BG, duration:0.12, ease:'power1.inOut' }, at+0.16);
+      return tl;
+    },
+
+    /* 下方 2px 亮线 draw(关键词强调的轻量版)。sel 指向一个 .underline 元素(transform-origin:left) */
+    underline:function(tl, sel, at){
+      tl.fromTo(sel, { scaleX:0 }, { scaleX:1, duration:0.28, ease:'power3.out' }, at);
+      return tl;
+    },
+
+    /* 块状光标有限次闪烁 */
+    blink:function(tl, sel, at, times){
+      tl.to(sel, { opacity:0, duration:0.42, ease:'steps(1)', repeat:(times||5), yoyo:true }, at);
+      return tl;
+    },
+
+    /* 打字机:对已拆成 char span 的集合做极短 stagger 显形(~28ms/字符)。
+       用法:把文字拆成 <span class='ch'>x</span>,传 sel='.line .ch' */
+    type:function(tl, sel, at, perChar){
+      tl.from(sel, { opacity:0, duration:0.01, ease:'none', stagger:(perChar||0.028) }, at);
+      return tl;
+    },
+
+    /* 数字 count-up:1–3s ease-out 落停。el 是真实 DOM 选择器(单个),整数或保留 decimals 位 */
+    countUp:function(tl, el, at, from, to, dur, opts){
+      opts = opts || {};
+      var node = (typeof el==='string') ? document.querySelector(el) : el;
+      if(!node) return tl;
+      var prefix = opts.prefix||'', suffix = opts.suffix||'', dec = opts.decimals||0;
+      var proxy = { v: from };
+      tl.to(proxy, {
+        v: to, duration: dur||1.4, ease: opts.ease||'power2.out',
+        onUpdate: function(){ node.textContent = prefix + proxy.v.toFixed(dec) + suffix; }
+      }, at);
+      return tl;
+    },
+
+    /* 字幕淡入:list = [[id, localStart], ...](0.2s) */
+    subs:function(tl, list){
+      list.forEach(function(s){ tl.from(s[0], { opacity:0, duration:0.2, ease:'power1.out' }, s[1]); });
+      return tl;
+    },
+
+    /* 环境呼吸:整段 content scale。dir:'in'(1→1.035 推近)/'out'(1.035→1 拉远)。dur=场景全长 */
+    breath:function(tl, sel, dur, dir){
+      if(dir==='out') tl.fromTo(sel, { scale:1.035 }, { scale:1.0, duration:dur, ease:'none' }, 0);
+      else            tl.fromTo(sel, { scale:1.0 }, { scale:1.035, duration:dur, ease:'none' }, 0);
+      return tl;
+    },
+
+    /* 揭示一个初始 opacity:0 的层(多 beat 场景切换用) */
+    reveal:function(tl, sel, at){ tl.set(sel, { opacity:1 }, at); return tl; },
+
+    /* ---- 高阶约定:声明式建整条 timeline ----
+       spec = {
+         duration: 场景全长(=brief.dataDuration),
+         breath: 'in' | 'out',                     // content 呼吸方向(奇数 in/偶数 out)
+         grid: true,                                // 是否 fade 入点阵 + topbar
+         enters: [ {sel, at, x?, y?, d?, ease?} ],  // 单元素入场
+         staggers:[ {sel, at, step?, x?, y?, d?, ease?} ],
+         sweeps:  [ {sel, at} ],                    // .hl 酸性扫过(sel 含 R 之后的 .xxx)
+         counts:  [ {el, at, from, to, dur?, prefix?, suffix?, decimals?} ],
+         blinks:  [ {sel, at, times?} ],
+         subs:    [ [id, localStart], ... ],
+         custom:  function(tl, R){...}              // 兜底自定义
+       }
+       约定:所有 sel 都是「R 之后的子选择器」(如 '.h1'),helper 自动拼 R 前缀。
+       content 选择器固定 '.content'。 */
+    buildSceneTimeline:function(R, spec){
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused:true });
+      if(spec.grid !== false){
+        tl.from(R+'.grid',   { opacity:0, duration:0.5, ease:'power1.out' }, 0.02);
+        tl.from(R+'.topbar', { y:-16, opacity:0, duration:0.3, ease:'power2.out' }, 0.2);
+      }
+      (spec.enters||[]).forEach(function(e){ D2.enter(tl, R+e.sel, e.at, e); });
+      (spec.staggers||[]).forEach(function(s){ D2.stagger(tl, R+s.sel, s.at, s); });
+      (spec.sweeps||[]).forEach(function(s){ D2.sweep(tl, R, s.sel, s.at); });
+      (spec.counts||[]).forEach(function(c){ D2.countUp(tl, R+c.el, c.at, c.from, c.to, c.dur, c); });
+      (spec.blinks||[]).forEach(function(b){ D2.blink(tl, R+b.sel, b.at, b.times); });
+      if(spec.custom) spec.custom(tl, R);
+      if(spec.subs) D2.subs(tl, spec.subs.map(function(s){ return [R+s[0], s[1]]; }));
+      D2.breath(tl, R+'.content', spec.duration, spec.breath||'in');
+      return tl;
+    },
+
+    /* 注册到全局,供 hyperframes 驱动 */
+    register:function(id, tl){ window.__timelines = window.__timelines || {}; window.__timelines[id] = tl; }
+  };
+
+  window.D2 = D2;
+})();
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+
+    // D1 · 上下文成本(5.4s 起)
+    D2.enter(tl, R+'.d1', 5.4, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d1 .t-hi', 6.8, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d1 .t-lo', 17.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d1 .t-md', 29.7, {y:14, d:.32, ease:'power2.out'});
+
+    // D2 · 压缩行为(37.7s 起)
+    D2.enter(tl, R+'.d2', 37.7, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d2 .t2a', 39.2, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2b', 47.9, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2c', 55.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.d2 .t2d', 57.8, {y:14, d:.32, ease:'power2.out'});
+
+    // D3 · 强制力(61.9s 起)
+    D2.enter(tl, R+'.d3', 61.9, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.d3 .punch', 62.8, {y:14, d:.34, ease:'expo.out'});
+
+    // thesis 终端卡(73s 起)
+    D2.enter(tl, R+'.thesis', 73.0, {y:22, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.thesis .p1', 76.4, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p2', 86.1, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p3', 91.1, {x:-18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.thesis .p4', 95.1, {x:-18, d:.36, ease:'expo.out'});
+
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',3.191],['#sub-3',5.416],['#sub-4',6.764],['#sub-5',15.863],['#sub-6',17.242],['#sub-7',26.224],['#sub-8',29.67],['#sub-9',37.744],['#sub-10',39.228],['#sub-11',47.91],['#sub-12',54.997],['#sub-13',57.796],['#sub-14',61.9],['#sub-15',62.829],['#sub-16',67.007],['#sub-17',73.024],['#sub-18',76.369],['#sub-19',86.127],['#sub-20',91.132],['#sub-21',95.072],['#sub-22',101.966]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 102.4, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

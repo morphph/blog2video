@@ -1,0 +1,118 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 93.767,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_4.html",
+ "topbarIndex": "[04/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 4.773,
+   "text": "第二种叫 rules，住在 `.claude/rules/` 文件夹里。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.78,
+   "localDuration": 7.027,
+   "text": "它们是带 frontmatter 的 markdown 文件，专门用来表达\"在某种情况下必须遵守的约束\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.959,
+   "localDuration": 1.589,
+   "text": "rules 有两种用法。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.548,
+   "localDuration": 3.574,
+   "text": "没加 paths 的，叫 unscoped rule。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.122,
+   "localDuration": 5.825,
+   "text": "它的行为跟 CLAUDE.md 几乎一样——session 开始就加载，压缩后重新注入。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.083,
+   "localDuration": 8.358,
+   "text": "官方说得很直白：**没有 paths 的 rule，跟把内容写在 CLAUDE.md 里在机制上完全等价。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.441,
+   "localDuration": 2.839,
+   "text": "** 一样常驻，一样烧 token。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.423,
+   "localDuration": 4.033,
+   "text": "真正值钱的是带 paths 的 path-scoped rule。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.456,
+   "localDuration": 9.776,
+   "text": "frontmatter 里写一行 `paths: [\"src/api/**\"]`，这条规矩就只在 Claude 读到 `src/api` 下的文件时才进上下文。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 48.391,
+   "localDuration": 0.875,
+   "text": "举个例子。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 49.266,
+   "localDuration": 6.477,
+   "text": "你想强制所有 API handler 在处理之前必须用 Zod 校验输入。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 55.743,
+   "localDuration": 7.002,
+   "text": "这条规矩写在 CLAUDE.md 里，每次写文档、改前端、跑测试，它都加载一遍。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 62.899,
+   "localDuration": 8.315,
+   "text": "但你给它套上 `paths: [\"src/api/**\", \"**/*.handler.ts\"]`，它就只在真的写 API 的时候才出现。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 71.214,
+   "localDuration": 2.289,
+   "text": "其它 session 里它根本不存在。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 73.663,
+   "localDuration": 7.611,
+   "text": "判断要不要用 path-scoped rule，有一条干脆的标准——**这条约束是不是跟某些特定路径绑定的？"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 81.274,
+   "localDuration": 3.806,
+   "text": "**\"迁移文件只能 append，不能改\" 这种就是。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 85.219,
+   "localDuration": 4.193,
+   "text": "它只跟 migrations 目录有关，跟其它代码一点关系都没有。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 89.412,
+   "localDuration": 4.194,
+   "text": "这种约束写进 paths，比塞进 CLAUDE.md 干净一百倍。"
+  }
+ ]
+}

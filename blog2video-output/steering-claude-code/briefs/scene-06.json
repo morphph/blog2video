@@ -1,0 +1,136 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 113.133,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_6.html",
+ "topbarIndex": "[06/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.74,
+   "text": "第四种是 subagents，住在 `.claude/agents/` 文件夹里。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.931,
+   "localDuration": 11.974,
+   "text": "每个 subagent 是一个带 YAML frontmatter 的 markdown 文件——frontmatter 写 name、description、还可以指定它用什么模型、能调用哪些工具。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 18.063,
+   "localDuration": 3.65,
+   "text": "body 就是这个 subagent 自己的 system prompt。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.879,
+   "localDuration": 6.938,
+   "text": "subagent 跟 skill 有点像，name、description、工具列表 session 开始就加载。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 28.817,
+   "localDuration": 4.99,
+   "text": "但有一个根本区别——**subagent 的 body 永远不会进父对话的上下文。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.975,
+   "localDuration": 8.047,
+   "text": "** Claude 调用 subagent 的时候，它在一个全新的、独立的 context window 里跑。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 42.022,
+   "localDuration": 4.311,
+   "text": "所有中间过程、所有工具调用、所有思考，都关在那个独立窗口里。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 46.533,
+   "localDuration": 5.275,
+   "text": "回到主会话的，只有 subagent 的最终一条消息，加一些 metadata。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 51.975,
+   "localDuration": 5.252,
+   "text": "理解了这一点，就理解了 subagent 为什么省 token。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 57.227,
+   "localDuration": 4.923,
+   "text": "它不是因为\"代码更短\"，是因为它的中间结果根本没进主上下文。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 62.307,
+   "localDuration": 2.633,
+   "text": "这让一种之前不可能的 scale 成为可能。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 64.94,
+   "localDuration": 8.018,
+   "text": "subagent 可以嵌套 5 层深，配合 dynamic workflows，**可以编排几十到几百个后台 agent 同时跑**。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 73.107,
+   "localDuration": 6.003,
+   "text": "如果这些 agent 的中间结果全部塞进主会话，单条 session 早就爆窗了。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 79.11,
+   "localDuration": 4.392,
+   "text": "但靠 subagent 把它们隔离掉，主会话只看到最终汇总。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 83.655,
+   "localDuration": 3.028,
+   "text": "什么场景该用 subagent？"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 86.683,
+   "localDuration": 5.298,
+   "text": "官方给的几个例子很典型——深度搜索、日志分析、依赖审计。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 91.981,
+   "localDuration": 5.866,
+   "text": "这些任务的特点是：中间会产生大量你后续不会再回头看的过程信息。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 98.047,
+   "localDuration": 3.522,
+   "text": "让它跑在 subagent 里，主上下文干干净净。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 101.727,
+   "localDuration": 4.117,
+   "text": "什么时候不用 subagent，反而用 skill？"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 105.844,
+   "localDuration": 4.909,
+   "text": "当你**希望流程在主线程里展开**，每一步你都能看见、能引导。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 110.753,
+   "localDuration": 2.217,
+   "text": "这时候 skill 才合适。"
+  }
+ ]
+}

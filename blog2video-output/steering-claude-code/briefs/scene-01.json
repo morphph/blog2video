@@ -1,0 +1,22 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 18.733,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_1.html",
+ "topbarIndex": "[01/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.08,
+   "text": "Anthropic 官方刚发布 Claude Code 最全指令调教指南。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.28,
+   "localDuration": 14.273,
+   "text": "Subagent、Skill、Hooks、CLAUDE.md……7 种官方钦定的最佳实践，每一个的加载时机、压缩行为、强制力完全不同。"
+  }
+ ]
+}

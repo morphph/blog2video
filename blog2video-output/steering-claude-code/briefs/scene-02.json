@@ -1,0 +1,142 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 98.267,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_2.html",
+ "topbarIndex": "[02/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.225,
+   "text": "我读完这篇官博，最有冲击的不是它列出了 7 种机制。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.212,
+   "localDuration": 4.822,
+   "text": "是它把\"指令\"和\"护栏\"这两件事，彻底分开讲了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.175,
+   "localDuration": 4.494,
+   "text": "绝大多数人用 Claude Code 都是一样的习惯。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.669,
+   "localDuration": 4.162,
+   "text": "想到什么规矩，就往 CLAUDE.md 里塞一句。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.831,
+   "localDuration": 1.831,
+   "text": "想让它跑测试，塞一句。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 20.662,
+   "localDuration": 2.497,
+   "text": "想让它别动数据库迁移，塞一句。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.159,
+   "localDuration": 2.996,
+   "text": "想让它部署前先 lint，再塞一句。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 26.303,
+   "localDuration": 2.628,
+   "text": "塞着塞着，文件就上千行了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 29.075,
+   "localDuration": 3.427,
+   "text": "但官方说，这套做法有两个反直觉的代价。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 32.502,
+   "localDuration": 8.838,
+   "text": "第一个代价，每多写一行，你团队里每个工程师，每一次开 session，都要为这一行付 token。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 41.54,
+   "localDuration": 4.625,
+   "text": "哪怕这行规矩跟他这次任务八竿子打不着，它也加载进上下文。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 46.319,
+   "localDuration": 5.938,
+   "text": "第二个代价更狠——文件越长，真正重要的那几条指令，遵循率反而越低。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 52.257,
+   "localDuration": 2.878,
+   "text": "Claude 的注意力被稀释了。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 55.283,
+   "localDuration": 1.865,
+   "text": "更扎心的是第三件事。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 57.148,
+   "localDuration": 6.53,
+   "text": "你以为你写在 CLAUDE.md 里的\"永远不要执行危险命令\"是护栏。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 63.678,
+   "localDuration": 0.932,
+   "text": "其实不是。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 64.81,
+   "localDuration": 8.468,
+   "text": "官方原话是：长对话里、压力情境里、或者读到一个被污染的文件，模型就可能跳过这条规矩。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 73.427,
+   "localDuration": 2.933,
+   "text": "**写在 prompt 里的规则是建议。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 76.36,
+   "localDuration": 7.332,
+   "text": "要做护栏，必须是 deterministic 的——也就是必须由代码强制执行，而不是由模型自觉遵守。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 83.692,
+   "localDuration": 0.293,
+   "text": "**"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 84.155,
+   "localDuration": 10.026,
+   "text": "所以这期的主轴只有一句话：**同一句话，住进 CLAUDE.md 是 token 黑洞，住进 hook 才是不可破的护栏。"
+  },
+  {
+   "id": "sub-22",
+   "localStart": 94.181,
+   "localDuration": 3.945,
+   "text": "** 接下来这 7 个口子，就是教你怎么选住址。"
+  }
+ ]
+}

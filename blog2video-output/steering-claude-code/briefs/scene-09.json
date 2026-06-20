@@ -1,0 +1,94 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 86.367,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_9.html",
+ "topbarIndex": "[09/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.015,
+   "localDuration": 4.207,
+   "text": "剩下两种机制，是直接动到 system prompt 那一层。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.371,
+   "localDuration": 6.205,
+   "text": "第六种是 output styles，住在 `.claude/output-styles/` 文件夹。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.576,
+   "localDuration": 6.57,
+   "text": "它的内容会被注入到 system prompt 里，**永远不会被压缩掉**，每个 session 都加载。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.295,
+   "localDuration": 6.042,
+   "text": "因为它住在 system prompt 里，它的指令遵循权重，比前面所有方法都高。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.487,
+   "localDuration": 1.339,
+   "text": "但它有个非常重的代价。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.826,
+   "localDuration": 4.993,
+   "text": "**自定义 output style 会替换掉默认的 system prompt。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.967,
+   "localDuration": 14.83,
+   "text": "** Claude Code 默认的 system prompt 里写了很多关键内容——你在帮人做软件工程、变更的范围怎么界定、什么时候加注释什么时候不加、安全顾虑怎么处理、宣告完成前要不要先跑测试。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 44.943,
+   "localDuration": 6.065,
+   "text": "你写了一个自定义 output style，这些默认人设全部丢掉。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 51.008,
+   "localDuration": 6.432,
+   "text": "Claude Code 一下子从\"软件工程师助手\"退化成\"通用助手\"。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 57.44,
+   "localDuration": 2.206,
+   "text": "写代码的那套纪律全没了。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 59.811,
+   "localDuration": 10.988,
+   "text": "除非你在 frontmatter 里加一行 `keep-coding-instructions: true`，把默认指令保留下来——但即便如此，自定义 output style 也是高代价的操作。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 70.935,
+   "localDuration": 6.798,
+   "text": "官方建议特别清醒：在写自定义之前，**先看看内置的三种 output style 够不够用**。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 77.733,
+   "localDuration": 6.939,
+   "text": "它们覆盖了三种最常见的工作模式——autonomy、teaching、collaborative。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 84.672,
+   "localDuration": 1.558,
+   "text": "能用内置的就别自定义。"
+  }
+ ]
+}

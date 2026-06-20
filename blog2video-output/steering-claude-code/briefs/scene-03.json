@@ -1,0 +1,154 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 105.833,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_3.html",
+ "topbarIndex": "[03/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.491,
+   "text": "先说大家最熟的 CLAUDE.md。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.491,
+   "localDuration": 8.027,
+   "text": "它是项目根目录下的一个 markdown 文件，开 session 的时候自动加载，整个 session 全程常驻。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.518,
+   "localDuration": 2.768,
+   "text": "压缩对话之后还会重新读一遍——它不会丢。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.428,
+   "localDuration": 1.873,
+   "text": "正因为它不会丢，它就特别贵。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.301,
+   "localDuration": 1.606,
+   "text": "每一行都全程占着上下文。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.907,
+   "localDuration": 9.633,
+   "text": "所以官方给了一条非常硬的建议：**CLAUDE.md 保持在 200 行以内，给它指定一个 owner，每次改动都要像改代码一样 review。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.54,
+   "localDuration": 0.267,
+   "text": "**"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 26.964,
+   "localDuration": 1.991,
+   "text": "200 行是什么概念？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 28.955,
+   "localDuration": 8.147,
+   "text": "基本就是装项目骨架——构建命令、目录结构、monorepo 怎么划分、团队的代码风格规范。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 37.102,
+   "localDuration": 5.25,
+   "text": "这种\"全程都要知道\"的事实，才配住进 CLAUDE.md。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 42.516,
+   "localDuration": 1.602,
+   "text": "那不该住这里的是什么？"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 44.118,
+   "localDuration": 2.038,
+   "text": "官方给了三个非常清晰的信号。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 46.156,
+   "localDuration": 6.407,
+   "text": "第一，**写了 30 行的部署流程**——那是 procedure，该搬去 skill。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 52.704,
+   "localDuration": 6.93,
+   "text": "第二，**写了\"每次 X 之后都要 Y\"**——那是确定性自动化，该搬去 hook。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 59.634,
+   "localDuration": 7.424,
+   "text": "第三，**写了\"永远不要做 X\"**——那不是护栏，是 wishful thinking。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 67.212,
+   "localDuration": 3.237,
+   "text": "官方还提了一个特别实用的设计。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 70.449,
+   "localDuration": 3.453,
+   "text": "CLAUDE.md 可以分两种。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 73.902,
+   "localDuration": 3.237,
+   "text": "根目录那个是常驻型，全程加载。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 77.139,
+   "localDuration": 7.121,
+   "text": "但子目录里也可以放，比如 `app/api/CLAUDE.md`。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 84.42,
+   "localDuration": 7.08,
+   "text": "这种是按需型——只有当 Claude 真的去读 `app/api` 下面的文件时，它才加载。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 91.5,
+   "localDuration": 2.154,
+   "text": "不读那个目录，它就一直休眠。"
+  },
+  {
+   "id": "sub-22",
+   "localStart": 93.816,
+   "localDuration": 3.255,
+   "text": "在 monorepo 里，这招特别关键。"
+  },
+  {
+   "id": "sub-23",
+   "localStart": 97.071,
+   "localDuration": 5.209,
+   "text": "每个团队管自己的子目录，自己的规矩只在动到自己代码时才进上下文。"
+  },
+  {
+   "id": "sub-24",
+   "localStart": 102.28,
+   "localDuration": 3.417,
+   "text": "前端工程师不用为后端的规矩付 token。"
+  }
+ ]
+}

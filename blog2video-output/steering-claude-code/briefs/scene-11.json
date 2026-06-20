@@ -1,0 +1,142 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 102.4,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_11.html",
+ "topbarIndex": "[11/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 3.175,
+   "text": "讲到这里，7 个注入口都过了一遍。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.191,
+   "localDuration": 2.054,
+   "text": "我们把它们摆在一起看。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.416,
+   "localDuration": 1.348,
+   "text": "按上下文成本分。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.764,
+   "localDuration": 9.099,
+   "text": "**高成本的**是 CLAUDE.md 根目录文件、unscoped rule、output styles。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.863,
+   "localDuration": 1.179,
+   "text": "它们全程常驻。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.242,
+   "localDuration": 8.817,
+   "text": "**低成本的**是子目录 CLAUDE.md、path-scoped rule、skill、subagent、hook。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.224,
+   "localDuration": 3.446,
+   "text": "它们要么按需加载，要么压根不进主上下文。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.67,
+   "localDuration": 7.925,
+   "text": "**中等成本**的是 append system prompt——会被缓存，但首次请求要付。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 37.744,
+   "localDuration": 1.484,
+   "text": "按压缩行为分。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.228,
+   "localDuration": 8.482,
+   "text": "**永不丢失的**是 CLAUDE.md、rule、output styles。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 47.91,
+   "localDuration": 7.087,
+   "text": "**会被挤出的**是 skill——多个 skill 共享一个 budget，最早调用的最先掉。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 54.997,
+   "localDuration": 2.658,
+   "text": "**完全绕过压缩的**是 hook。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 57.796,
+   "localDuration": 3.952,
+   "text": "**只对单次调用生效的**是 append system prompt。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 61.9,
+   "localDuration": 0.929,
+   "text": "按强制力分。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 62.829,
+   "localDuration": 4.178,
+   "text": "**只有 hook 是真护栏**——其它六种都是建议。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 67.007,
+   "localDuration": 5.881,
+   "text": "模型在长对话、压力情境、prompt injection 下都可能跳过指令。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 73.024,
+   "localDuration": 3.345,
+   "text": "所以那条 thesis 现在可以摊开看了。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 76.369,
+   "localDuration": 9.558,
+   "text": "同一句\"部署前必须跑测试\"，住进 CLAUDE.md，每个 session 都付 token，遵循率随对话变长还会衰减。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 86.127,
+   "localDuration": 4.846,
+   "text": "住进 path-scoped rule，只在动到部署相关文件时才付钱。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 91.132,
+   "localDuration": 3.94,
+   "text": "住进 skill，连描述行常驻，body 调用时才加载。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 95.072,
+   "localDuration": 6.894,
+   "text": "**注册成 PostToolUse hook，它从指令升级成了代码——Claude 想不跑都不行。"
+  },
+  {
+   "id": "sub-22",
+   "localStart": 101.966,
+   "localDuration": 0.281,
+   "text": "**"
+  }
+ ]
+}

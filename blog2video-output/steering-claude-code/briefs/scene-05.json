@@ -1,0 +1,100 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 85.133,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_5.html",
+ "topbarIndex": "[05/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.36,
+   "text": "第三种是 skills，住在 `.claude/skills/` 文件夹里。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.344,
+   "localDuration": 8.321,
+   "text": "每个 skill 是一个目录，里面有一个 `SKILL.md`，包含 name、description 和 body。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.808,
+   "localDuration": 2.307,
+   "text": "skill 最妙的地方是它的加载方式。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.115,
+   "localDuration": 5.221,
+   "text": "session 一开始，**只有 name 和 description 进上下文**。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.476,
+   "localDuration": 11.545,
+   "text": "body 那一大堆细节，要等到 Claude 真的调用这个 skill 才加载——可以通过 slash command 比如 `/code-review`，也可以让 Claude 根据任务自动匹配。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.176,
+   "localDuration": 5.693,
+   "text": "这个机制专门治一种病：CLAUDE.md 里塞了一段 30 行的部署流程。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 39.008,
+   "localDuration": 5.268,
+   "text": "那段流程是 procedure，是\"做这件事的时候需要按步骤走\"的知识。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 44.276,
+   "localDuration": 5.708,
+   "text": "它不是你每次开 session 都需要的——你绝大多数时间在写代码，不在部署。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 49.984,
+   "localDuration": 5.561,
+   "text": "但它住在 CLAUDE.md 里，就意味着每个 session 都全额付费。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 55.712,
+   "localDuration": 10.139,
+   "text": "搬进 skill 之后，name 和 description 这两行常驻，告诉 Claude \"我这里有套部署流程，如果你要用就调我\"。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 65.851,
+   "localDuration": 2.386,
+   "text": "真要部署了，完整流程才加载进来。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 68.237,
+   "localDuration": 4.175,
+   "text": "同一段内容，token 成本从 high 降到 low。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 72.56,
+   "localDuration": 6.735,
+   "text": "部署流程、发布 checklist、code review 流程，这些都是 skill 的典型场景。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 79.295,
+   "localDuration": 5.388,
+   "text": "一句话总结：**程序性的东西放 skill，事实性的东西放 CLAUDE.md。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 84.683,
+   "localDuration": 0.269,
+   "text": "**"
+  }
+ ]
+}

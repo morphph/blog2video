@@ -1,0 +1,106 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 103.233,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_7.html",
+ "topbarIndex": "[07/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 4.08,
+   "text": "第五种是 hooks，这是整篇博客我认为最重要的一节。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.253,
+   "localDuration": 7.111,
+   "text": "hook 是你用代码定义的、在 Claude 生命周期某个事件触发时自动执行的东西。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.364,
+   "localDuration": 5.757,
+   "text": "它可以是一个命令、一个 HTTP 请求、一段 LLM prompt。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.285,
+   "localDuration": 10.303,
+   "text": "注册位置在 `settings.json` 里，或者管理员部署的 policy settings，或者 skill / agent 的 frontmatter。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 27.725,
+   "localDuration": 7.553,
+   "text": "hook 有五种类型——command、HTTP、mcp_tool、prompt、agent。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 35.278,
+   "localDuration": 7.231,
+   "text": "前三种是纯 deterministic 的，规则一旦写好，就机械式执行，不依赖模型的判断。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 42.709,
+   "localDuration": 2.965,
+   "text": "后两种用 Claude 的判断来决定输出。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 45.833,
+   "localDuration": 2.934,
+   "text": "为什么 hook 是这篇博客的 thesis？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 48.767,
+   "localDuration": 4.338,
+   "text": "因为它是**唯一能做到 deterministic 护栏的机制**。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 53.249,
+   "localDuration": 5.415,
+   "text": "记得前面说过\"永远不要执行危险命令\"写在 CLAUDE.md 里不可靠吗？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 58.664,
+   "localDuration": 4.683,
+   "text": "真正可靠的做法是：注册一个 `PreToolUse` hook。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 63.347,
+   "localDuration": 6.439,
+   "text": "每次 Claude 要调用工具之前，这个 hook 先 inspect 这次调用的内容。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 69.953,
+   "localDuration": 7.493,
+   "text": "如果命令危险，hook **exit code 2**，调用直接被拒，根本到不了执行那一步。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 77.585,
+   "localDuration": 7.878,
+   "text": "官方说了一句话特别精确：**\"模型选择跑 formatter，和 formatter 自动跑，是两回事。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 85.463,
+   "localDuration": 8.485,
+   "text": "\"** 写在 CLAUDE.md 里的 \"每次编辑后跑 prettier\"，是前者——模型可能跑，也可能忘了跑。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 94.109,
+   "localDuration": 8.944,
+   "text": "注册成 PostToolUse hook，就是后者——edit 一发生，formatter 一定跑，不依赖模型记不记得。"
+  }
+ ]
+}

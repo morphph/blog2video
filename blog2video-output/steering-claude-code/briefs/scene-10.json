@@ -1,0 +1,52 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 41,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_10.html",
+ "topbarIndex": "[10/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 8.394,
+   "text": "第七种是 append system prompt，通过 CLI flag 在调用时追加一段内容到 system prompt 后面。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.406,
+   "localDuration": 6.39,
+   "text": "它跟 output styles 的区别是：output styles 是替换，append 是叠加。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.996,
+   "localDuration": 3.859,
+   "text": "所以它不会破坏默认人设，只是在后面加东西。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.02,
+   "localDuration": 6.133,
+   "text": "但 append system prompt 有一个特别反直觉的限制——**边际递减。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.153,
+   "localDuration": 6.561,
+   "text": "** 官方原话是：你给的指令越多，Claude 遵循得越不严格，尤其是指令之间有矛盾的时候。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 31.872,
+   "localDuration": 3.623,
+   "text": "这话翻译过来就是：append 不是越多越好。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 35.495,
+   "localDuration": 5.356,
+   "text": "到某个阈值，你加的指令开始互相打架，Claude 干脆都不严格执行。"
+  }
+ ]
+}

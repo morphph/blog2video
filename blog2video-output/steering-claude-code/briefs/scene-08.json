@@ -1,0 +1,70 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 58.433,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_8.html",
+ "topbarIndex": "[08/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.254,
+   "text": "hook 还有一个特别值得注意的特性——**它的上下文成本几乎为零**。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.238,
+   "localDuration": 6.567,
+   "text": "因为 hook 是 harness 直接执行的代码，不是塞进 Claude 上下文的指令。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.805,
+   "localDuration": 3.648,
+   "text": "配置住在主上下文之外，运行结果默认也不回主上下文。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.608,
+   "localDuration": 1.392,
+   "text": "这就引出一个 trap。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17,
+   "localDuration": 9.514,
+   "text": "如果你写了一个 PreCompact hook，把聊天历史备份到一个文件，Claude **不知道你存到了哪个文件里**——除非这个 hook 显式 return。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.66,
+   "localDuration": 7.4,
+   "text": "少数会回主上下文的，是 blocking hook 的标准错误——这是为了让 Claude 知道为什么这次调用被拒了。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.22,
+   "localDuration": 5.585,
+   "text": "最后还有一个组织级的杀器，叫 **managed settings**。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 39.805,
+   "localDuration": 3.568,
+   "text": "这是管理员部署的设置，用户的本地配置无法覆盖。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 43.544,
+   "localDuration": 10.418,
+   "text": "如果你想在整个公司范围内强制一条\"任何 Agent 都不能 push 到 main 分支\"——只有 managed settings + hook 这个组合能做到。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 53.962,
+   "localDuration": 4.32,
+   "text": "CLAUDE.md 做不到，rule 做不到，skill 也做不到。"
+  }
+ ]
+}

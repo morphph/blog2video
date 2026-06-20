@@ -1,0 +1,106 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "summary",
+ "dataDuration": 100.367,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/steering-claude-code/slide_12.html",
+ "topbarIndex": "[12/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 7.023,
+   "text": "我读完整篇博客最强的体会是：**你以为你在调教 Claude，其实你在选指令住哪。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.023,
+   "localDuration": 0.342,
+   "text": "**"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.524,
+   "localDuration": 8.168,
+   "text": "同一句话，住进 CLAUDE.md 是 token 黑洞，住进 hook 是不可破的护栏。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.692,
+   "localDuration": 8.532,
+   "text": "措辞写得多严厉、字号放多大、加多少个感叹号，都改变不了它的强制力——强制力由它住在哪个槽决定。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.372,
+   "localDuration": 7.911,
+   "text": "这也是为什么\"7 种机制\"看起来像个产品功能列表，但本质上是一套 context engineering 的设计语言。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 32.483,
+   "localDuration": 9.153,
+   "text": "每个槽都在回答三个问题——这条指令什么时候进上下文、压缩之后会不会还在、模型敢不敢不听。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 41.796,
+   "localDuration": 15.121,
+   "text": "如果你今天只能记一句话，就记这个：**事实进 CLAUDE.md，路径约束进 rule，过程进 skill，隔离的副任务进 subagent，确定性的自动化进 hook，"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 57.117,
+   "localDuration": 4.397,
+   "text": "角色重塑进 output style，临时调整进 append。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 61.514,
+   "localDuration": 0.274,
+   "text": "**"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 61.956,
+   "localDuration": 8.166,
+   "text": "写错地方的代价，不会立刻显形，但会在每个 session、每个工程师、每条对话里慢慢累积。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 70.272,
+   "localDuration": 8.779,
+   "text": "如果你正在维护一个 Claude Code 项目，今天看完这期可以做一件事——打开你的 CLAUDE.md，数一下行数。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 79.051,
+   "localDuration": 8.048,
+   "text": "超过 200 行的部分，挑出来看哪些是 procedure、哪些是 \"永远不要做 X\"、哪些是路径相关的约束。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 87.264,
+   "localDuration": 1.692,
+   "text": "把它们搬到该住的地方。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 88.956,
+   "localDuration": 4.768,
+   "text": "光这一步，团队里每个 session 都会变得更便宜、更准确。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 93.888,
+   "localDuration": 4.063,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 97.951,
+   "localDuration": 1.421,
+   "text": "我们下期再见。"
+  }
+ ]
+}

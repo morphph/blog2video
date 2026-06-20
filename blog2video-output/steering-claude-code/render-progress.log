@@ -1,0 +1,15 @@
+START 09:57:50  node=v22.22.0  scenes=13
+render scene-01 rc=0  clip_dur=18.733333  took=208s  10:01:18
+render scene-02 rc=0  clip_dur=98.300000  took=697s  10:12:55
+render scene-03 rc=0  clip_dur=105.833333  took=765s  10:25:40
+render scene-04 rc=0  clip_dur=93.800000  took=693s  10:37:13
+render scene-05 rc=0  clip_dur=85.133333  took=641s  10:47:54
+render scene-06 rc=0  clip_dur=113.133333  took=825s  11:01:39
+render scene-07 rc=0  clip_dur=103.233333  took=775s  11:14:34
+render scene-08 rc=0  clip_dur=58.433333  took=465s  11:22:19
+render scene-09 rc=0  clip_dur=86.400000  took=648s  11:33:07
+render scene-10 rc=0  clip_dur=41.000000  took=353s  11:39:00
+render scene-11 rc=0  clip_dur=102.400000  took=753s  11:51:33
+render scene-12 rc=0  clip_dur=100.400000  took=727s  12:03:40
+render scene-13 rc=0  clip_dur=5.000000  took=111s  12:05:31
+DONE   12:05:31

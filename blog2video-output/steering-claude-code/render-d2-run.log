@@ -1,0 +1,36 @@
+=== d2 render: steering-claude-code · 13 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 18.733  data= 18.733  Δ=+0.000
+  scene-02  clip= 98.300  data= 98.267  Δ=+0.033
+  scene-03  clip=105.833  data=105.833  Δ=+0.000
+  scene-04  clip= 93.800  data= 93.767  Δ=+0.033
+  scene-05  clip= 85.133  data= 85.133  Δ=+0.000
+  scene-06  clip=113.133  data=113.133  Δ=+0.000
+  scene-07  clip=103.233  data=103.233  Δ=+0.000
+  scene-08  clip= 58.433  data= 58.433  Δ=+0.000
+  scene-09  clip= 86.400  data= 86.367  Δ=+0.033
+  scene-10  clip= 41.000  data= 41.000  Δ=+0.000
+  scene-11  clip=102.400  data=102.400  Δ=+0.000
+  scene-12  clip=100.400  data=100.367  Δ=+0.033
+  scene-13  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 1011.800s
+=== concat → silent master ===
+[out#0/mp4 @ 0x58fe39486640] video:59568kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.203038%
+size=   59689kB time=00:16:51.76 bitrate= 483.3kbits/s speed=2.83e+03x    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+size=   76956kB time=00:16:51.76 bitrate= 623.1kbits/s speed=49.6x    
+[aac @ 0x61c076345840] Qavg: 65505.781
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=1011.800000
+audio_dur=1005.840000
+-rw-rw-r-- 1 ubuntu ubuntu 78802824 Jun 20 12:05 video_1.mp4
+✓ 交付片: /home/ubuntu/blog2video/blog2video-output/steering-claude-code/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /home/ubuntu/blog2video/blog2video-output/steering-claude-code/video_1_cover_photo.png
+  源: /home/ubuntu/blog2video/blog2video-output/steering-claude-code/cover_photo.html

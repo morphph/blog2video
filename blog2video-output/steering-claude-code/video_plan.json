@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more",
+    "title_zh": "调教 Claude Code 的 7 种武器，你用错了几个？",
+    "word_count": 7028,
+    "slug": "steering-claude-code"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "7 种机制是平行对照结构，Hook 承诺一次讲完 7 个口子、第 9 段「一张图」横向比较、Synthesis 用同一句 thesis 串起全部 7 个落点——硬切两集会断掉对照表，让任一集都看不到完整的「指令 vs 护栏」判断。长度（16 分钟）不是拆分理由。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "调教 Claude Code 的 7 种武器，你用错了几个？"
+      }
+    ]
+  }
+}

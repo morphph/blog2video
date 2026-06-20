@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .badge {
+      font-size: 24px;
+      font-weight: 700;
+      color: #10B981;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 16px;
+    }
+    .title .hl { color: #10B981; }
+    .subtitle {
+      font-size: 30px;
+      color: #B0B0CC;
+      margin-bottom: 48px;
+    }
+    .compare {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .row {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 22px 28px;
+      text-align: left;
+    }
+    .row.bad { border-left: 4px solid #EF4444; }
+    .row.good { border-left: 4px solid #10B981; }
+    .row .tag {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .row.bad .tag { color: #EF4444; }
+    .row.good .tag { color: #10B981; }
+    .row .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .row .text .code {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      background: rgba(139, 92, 246, 0.15);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 25px;
+      color: #C7B9F5;
+    }
+    .quote {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-radius: 12px;
+      padding: 28px 32px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.45;
+      color: #FFFFFF;
+      text-align: left;
+    }
+    .quote .hl { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="badge">// THE ONLY DETERMINISTIC GUARDRAIL</div>
+    <div class="title"><span class="hl">Hooks</span> = 唯一的真护栏</div>
+    <div class="subtitle">由 harness 执行的代码，不是模型自觉</div>
+    <div class="compare">
+      <div class="row bad">
+        <div class="tag">// CLAUDE.md 写法</div>
+        <div class="text">"永远不要执行危险命令"<br>模型可能跳过</div>
+      </div>
+      <div class="row good">
+        <div class="tag">// HOOK 写法</div>
+        <div class="text"><span class="code">PreToolUse</span> hook · <span class="code">exit 2</span><br>调用直接被拒，到不了执行</div>
+      </div>
+    </div>
+    <div class="quote">
+      模型选择跑 formatter，<br>
+      和 formatter <span class="hl">自动跑</span>，是两回事
+    </div>
+  </div>
+</body>
+</html>

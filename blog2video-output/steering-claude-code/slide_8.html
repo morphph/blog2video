@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 48px;
+    }
+    .title .hl { color: #10B981; }
+    .top-stat {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-left: 4px solid #10B981;
+      border-radius: 12px;
+      padding: 32px 28px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .top-stat .big {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 76px;
+      font-weight: 800;
+      color: #10B981;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .top-stat .desc {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .trap {
+      width: 100%;
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .trap .tag {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 22px;
+      font-weight: 700;
+      color: #EF4444;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+    .trap .text {
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .killer {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: left;
+    }
+    .killer .tag {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 22px;
+      font-weight: 700;
+      color: #F59E0B;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+    .killer .text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+    .killer .text .hl { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">Hook 的<br><span class="hl">上下文成本几乎为零</span></div>
+    <div class="top-stat">
+      <div class="big">~ 0 token</div>
+      <div class="desc">harness 直接执行<br>不塞进 Claude 上下文</div>
+    </div>
+    <div class="trap">
+      <div class="tag">// TRAP</div>
+      <div class="text">PreCompact 备份了聊天历史<br>Claude 不知道存到哪个文件<br>除非 hook 显式 return</div>
+    </div>
+    <div class="killer">
+      <div class="tag">// ORG-LEVEL KILLER</div>
+      <div class="text">
+        <span class="hl">Managed Settings</span> + Hook<br>
+        唯一能强制"任何 Agent 不能 push 到 main"
+      </div>
+    </div>
+  </div>
+</body>
+</html>

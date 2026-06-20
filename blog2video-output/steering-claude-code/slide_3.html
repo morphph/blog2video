@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .title .hl { color: #8B5CF6; }
+    .subtitle {
+      font-size: 30px;
+      color: #B0B0CC;
+      margin-bottom: 56px;
+    }
+    .rule-card {
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-left: 4px solid #8B5CF6;
+      border-radius: 12px;
+      padding: 40px 36px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 48px;
+    }
+    .rule-card .big {
+      font-size: 96px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .rule-card .desc {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.45;
+    }
+    .signals {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .signal-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #EF4444;
+      text-align: left;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .signal {
+      background: #1A1A2E;
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-left: 4px solid #EF4444;
+      border-radius: 12px;
+      padding: 22px 26px;
+      text-align: left;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .signal .num {
+      font-size: 40px;
+      font-weight: 800;
+      color: #EF4444;
+      min-width: 48px;
+    }
+    .signal .text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.35;
+    }
+    .signal .text .dim { color: #B0B0CC; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title"><span class="hl">CLAUDE.md</span> 的 200 行铁律</div>
+    <div class="subtitle">全程常驻 · 压缩后重读 · 每行都贵</div>
+    <div class="rule-card">
+      <div class="big">≤ 200 行</div>
+      <div class="desc">指定 owner · 改动像改代码一样 review<br>装项目骨架，不装规矩</div>
+    </div>
+    <div class="signal-title">三个"该搬走"的信号</div>
+    <div class="signals">
+      <div class="signal">
+        <div class="num">1</div>
+        <div class="text">写了 30 行的部署流程 <span class="dim">→ 搬去 skill</span></div>
+      </div>
+      <div class="signal">
+        <div class="num">2</div>
+        <div class="text">"每次 X 之后都要 Y" <span class="dim">→ 搬去 hook</span></div>
+      </div>
+      <div class="signal">
+        <div class="num">3</div>
+        <div class="text">"永远不要做 X" <span class="dim">→ 那是 wishful thinking</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

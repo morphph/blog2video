@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 64px;
+    }
+    .vs {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      align-items: stretch;
+      margin-bottom: 48px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 36px 28px;
+      text-align: left;
+    }
+    .card.left { border-left: 4px solid #EF4444; }
+    .card.right { border-left: 4px solid #10B981; }
+    .card .label {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 18px;
+    }
+    .card.left .label { color: #EF4444; }
+    .card.right .label { color: #10B981; }
+    .card .big {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+    .card .desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+    .quote {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 12px;
+      padding: 32px 36px;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.45;
+      color: #FFFFFF;
+      max-width: 920px;
+    }
+    .quote .hl { color: #8B5CF6; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">
+      最有冲击的不是 7 种机制<br>
+      是它把<span style="color:#F59E0B;">指令 vs 护栏</span>分开讲
+    </div>
+    <div class="vs">
+      <div class="card left">
+        <div class="label">指令</div>
+        <div class="big">写在 prompt 里</div>
+        <div class="desc">长对话、压力情境、<br>污染文件就可能跳过</div>
+      </div>
+      <div class="card right">
+        <div class="label">护栏</div>
+        <div class="big">必须 deterministic</div>
+        <div class="desc">由代码强制执行<br>不依赖模型自觉</div>
+      </div>
+    </div>
+    <div class="quote">
+      同一句话，住进 <span class="hl">CLAUDE.md</span> 是 token 黑洞<br>
+      住进 <span class="hl">hook</span> 才是不可破的护栏
+    </div>
+  </div>
+</body>
+</html>

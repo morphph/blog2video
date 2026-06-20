@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .title .hl { color: #8B5CF6; }
+    .subtitle {
+      font-size: 26px;
+      color: #B0B0CC;
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      margin-bottom: 44px;
+    }
+    .vs {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .card {
+      flex: 1;
+      background: #1A1A2E;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 12px;
+      padding: 26px 24px;
+      text-align: left;
+    }
+    .card.a { border-left: 4px solid #EF4444; }
+    .card.b { border-left: 4px solid #10B981; }
+    .card .tag {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+    .card.a .tag { color: #EF4444; }
+    .card.b .tag { color: #10B981; }
+    .card .big {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .card .desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.4;
+    }
+    .warn {
+      width: 100%;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-align: left;
+    }
+    .warn .tag {
+      font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 22px;
+      font-weight: 700;
+      color: #EF4444;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+    .warn .big {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .warn .big .hl { color: #EF4444; }
+    .warn .desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title"><span class="hl">Append System Prompt</span><br>不破默认人设，但会反噬</div>
+    <div class="subtitle">通过 CLI flag · 叠加 ≠ 替换</div>
+    <div class="vs">
+      <div class="card a">
+        <div class="tag">// OUTPUT STYLES</div>
+        <div class="big">替换</div>
+        <div class="desc">默认人设丢掉</div>
+      </div>
+      <div class="card b">
+        <div class="tag">// APPEND</div>
+        <div class="big">叠加</div>
+        <div class="desc">在后面加东西<br>不破坏默认</div>
+      </div>
+    </div>
+    <div class="warn">
+      <div class="tag">// COUNTER-INTUITIVE</div>
+      <div class="big">指令越多<br>遵循得<span class="hl">越不严格</span></div>
+      <div class="desc">官方原话：diminishing returns<br>到阈值就开始互相打架</div>
+    </div>
+  </div>
+</body>
+</html>

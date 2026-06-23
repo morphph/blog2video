@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .term-cmd{font-family:'JetBrains Mono',monospace;font-size:40px;line-height:1.4;color:#edebe6;display:flex;align-items:baseline;flex-wrap:wrap;gap:0}
+[data-composition-id='s08'] .term-cmd .p{color:#ccff4d;margin-right:18px}
+[data-composition-id='s08'] .term-cmd .ar{color:#5fd3e8}
+[data-composition-id='s08'] .term-note{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.02em}
+[data-composition-id='s08'] .term-note .cy{color:#5fd3e8}
+[data-composition-id='s08'] .runline{margin-top:34px;display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#edebe6;letter-spacing:.03em}
+[data-composition-id='s08'] .runline .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s08'] .runline .t{color:#5fd3e8}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="45.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[08/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 接入实时数据 · <span class="acc">活的另一半</span></div>
+      <div class="h1" style="margin-top:18px">不只静态笔记,<span class="em">放上自动驾驶</span></div>
+
+      <div class="term" style="margin-top:42px">
+        <div class="term-bar">
+          <span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span>
+          <span class="t">claude · MCP</span>
+        </div>
+        <div class="term-body" style="padding:34px 40px 36px">
+          <div class="term-cmd"><span class="p">$</span>claude mcp add <span class="ar">calendar · gmail</span></div>
+          <div class="term-note">一行命令接进 <span class="cy">日历、邮件</span> —— MCP = Claude 跟应用对话的标准方式</div>
+        </div>
+      </div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">读今天的安排,记进<span class="code">任务项目</span></div>
+          <div class="rd">把每个会上答应的事写进去,没有明确下一步的标出来</div>
+        </div></div>
+
+        <div class="row r2 now"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="code">Claude Desktop</span> 定时任务,放上自动驾驶</div>
+          <div class="runline"><span class="dot"></span>每天 <span class="t">07:00</span> · 归档 · 标过期 · 写隔夜摘要</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="2.617" data-track-index="5"><div class="sub-inner">光有静态笔记,只是<span class="sub-k">半个大脑</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.624" data-duration="5.422" data-track-index="5"><div class="sub-inner">真正的另一半,是那些<span class="sub-k">实时在变</span>的东西——你的日历、你的邮件。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.215" data-duration="2.923" data-track-index="5"><div class="sub-inner">这些都能用<span class="sub-k">一行 MCP 命令</span>接进来。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.138" data-duration="4.222" data-track-index="5"><div class="sub-inner">MCP 是 Claude 跟其他应用<span class="sub-k">对话的标准方式</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.56" data-duration="10.43" data-track-index="5"><div class="sub-inner">接上日历之后,你可以让它读今天的安排,把你在每个会上答应的事,记进任务项目里,再把没有明确<span class="sub-k">下一步</span>的事标出来。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.143" data-duration="3.706" data-track-index="5"><div class="sub-inner">等技能都跑通了,最后一步是把它放上<span class="sub-k">自动驾驶</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.849" data-duration="11.287" data-track-index="5"><div class="sub-inner">在 Claude Desktop 里设一个定时任务,比如每天早上七点:自动归档新进来的东西、标记过期的笔记、给你写<span class="sub-k">三行隔夜的变更摘要</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.299" data-duration="3.824" data-track-index="5"><div class="sub-inner">你睡一觉醒来,大脑已经<span class="sub-k">自己把自己整理好了</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    // 终端卡:命令行 8.2s 入场(对齐「一行 MCP 命令」),note 11.1s 晚到(对齐「标准方式」)
+    D2.enter(tl, R+'.term', 8.2, {y:22, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.term-note', 11.2, {y:12, d:.32, ease:'power2.out'});
+    // row1 15.7s（接上日历之后），row2 29.9s（自动驾驶/定时任务）
+    D2.enter(tl, R+'.r1', 15.7, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 29.9, {x:-24, d:.36, ease:'expo.out'});
+    // 次级揭示:07:00 自动驾驶行 33s 晚到（对齐「每天早上七点」）
+    D2.enter(tl, R+'.r2 .runline', 33.2, {y:12, d:.32, ease:'power1.out'});
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',2.624],['#sub-3',8.215],['#sub-4',11.138],['#sub-5',15.56],['#sub-6',26.143],['#sub-7',29.849],['#sub-8',41.299]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.3, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .h2{margin-top:18px}
+[data-composition-id='s06'] .myth{position:relative;margin-top:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 32px;font-family:'JetBrains Mono',monospace;font-size:34px;line-height:1.35;color:#8a8a85;overflow:hidden}
+[data-composition-id='s06'] .myth .p{color:#ff6b5e;margin-right:14px}
+[data-composition-id='s06'] .myth .belief{color:#edebe6;font-weight:500}
+[data-composition-id='s06'] .myth .strike{position:absolute;left:32px;top:50%;height:3px;background:#ff6b5e;transform:scaleX(0);transform-origin:left center;width:560px}
+[data-composition-id='s06'] .myth-tag{position:absolute;right:28px;top:24px;font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#121212;background:#ff6b5e;padding:3px 12px;letter-spacing:.04em}
+[data-composition-id='s06'] .bracket{margin-top:30px}
+[data-composition-id='s06'] .bracket .lead .no{color:#8a8a85;text-decoration:line-through;text-decoration-color:#8a8a85}
+[data-composition-id='s06'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s06'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s06'] .metaphor .one{color:#ccff4d;font-weight:700}
+[data-composition-id='s06'] .splith{margin-top:32px}
+[data-composition-id='s06'] .tl{margin-top:16px}
+[data-composition-id='s06'] .tl-row .yr{width:200px;font-size:34px}
+[data-composition-id='s06'] .tl-row .role{font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;letter-spacing:.04em;margin-top:6px}
+[data-composition-id='s06'] .tl-row.now .role{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="45.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[06/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// COUNTERINTUITIVE · <span class="acc">最反直觉的一条</span></div>
+      <div class="h2">上下文越多越聪明？<br><span class="em">恰恰相反</span></div>
+
+      <div class="myth">
+        <span class="myth-tag">MYTH</span>
+        <span class="p">$</span><span class="belief">context.add(全部资料)</span> → 越多越聪明
+        <span class="strike"></span>
+      </div>
+
+      <div class="bracket">
+        <div class="lead">别在那个装着<span class="no">全部人生</span>的巨型库里干活</div>
+        <div class="metaphor">只打开当下这<span class="one">一个项目</span> <span class="ar">→</span> 让 Claude 只看见这一件事</div>
+      </div>
+
+      <div class="kicker splith">// 上下文越窄,聚焦越准 —— 各司其职</div>
+      <div class="tl">
+        <div class="tl-row r0"><div class="yr">大库</div><div><div class="wt">负责规划全局</div><div class="role">PLAN · 看见整张图</div></div></div>
+        <div class="tl-row r1 now"><div class="yr">单项目</div><div><div class="wt">真正出活交付<span class="badge">看得越少 干得越好</span></div><div class="role">SHIP · 只看这一件事</div></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="3.905" data-track-index="5"><div class="sub-inner">接下来是整套方法里，我觉得<span class="sub-k">最反直觉的一条</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.08" data-duration="5.716" data-track-index="5"><div class="sub-inner">我们都被一种说法洗过脑：喂给 AI 的上下文越多，它就<span class="sub-k">越聪明</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.796" data-duration="3.503" data-track-index="5"><div class="sub-inner">所以人本能地想把所有资料<span class="sub-k">一股脑塞给它</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.299" data-duration="2.581" data-track-index="5"><div class="sub-inner">但这套方法主张的，<span class="sub-k">恰恰相反</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.032" data-duration="3.832" data-track-index="5"><div class="sub-inner">你不该在那个装着你全部人生的<span class="sub-k">巨型库</span>里干活。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.864" data-duration="5.658" data-track-index="5"><div class="sub-inner">你应该只打开当下这一个项目，让 Claude <span class="sub-k">只看见这一件事</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.68" data-duration="0.848" data-track-index="5"><div class="sub-inner">为什么？</div></div>
+    <div id="sub-8" class="clip sub" data-start="26.528" data-duration="2.756" data-track-index="5"><div class="sub-inner">因为上下文越窄，<span class="sub-k">聚焦越准</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="29.284" data-duration="8.055" data-track-index="5"><div class="sub-inner">那个大库负责的是规划全局，而真正出活、真正交付的，是一个被<span class="sub-k">单独打开的小项目</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="37.339" data-duration="5.087" data-track-index="5"><div class="sub-inner">作者那句话说得很狠：大库做计划，<span class="sub-k">单个项目才出货</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="42.564" data-duration="2.919" data-track-index="5"><div class="sub-inner"><span class="sub-k">看得越少</span>，反而干得越好。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.4, ease:'expo.out'});
+    // 迷思卡:洗脑说法登场(sub-2),emphasis 子标签(sub-3)
+    D2.enter(tl, R+'.myth', 4.2, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.myth-tag', 9.9, {scale:.6, opacity:0, d:.3, ease:'expo.out'});
+    // 反转一拍:珊瑚划掉迷思(sub-4 "恰恰相反")
+    tl.fromTo(R+'.myth .strike', {scaleX:0}, {scaleX:1, duration:.34, ease:'power4.inOut'}, 13.4);
+    tl.to(R+'.myth .belief', {color:'#8a8a85', duration:.2, ease:'power1.inOut'}, 13.55);
+    // 反转后的核心原则(sub-5 否定半句 / sub-6 比喻)
+    D2.enter(tl, R+'.bracket', 16.1, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.metaphor', 20.0, {y:14, d:.32, ease:'power2.out'});
+    // 各司其职 split(sub-8 聚焦越准 → sub-9 分工)
+    D2.enter(tl, R+'.splith', 26.6, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 29.4, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 32.6, {x:-22, d:.4, ease:'power2.out'});
+    // 末格 badge "看得越少 干得越好"(sub-11 落点)
+    D2.enter(tl, R+'.r1 .badge', 42.7, {scale:.6, opacity:0, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',4.08],['#sub-3',9.796],['#sub-4',13.299],['#sub-5',16.032],['#sub-6',19.864],['#sub-7',25.68],['#sub-8',26.528],['#sub-9',29.284],['#sub-10',37.339],['#sub-11',42.564]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

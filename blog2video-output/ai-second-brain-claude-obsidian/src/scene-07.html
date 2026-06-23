@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .defn{margin-top:30px}
+[data-composition-id='s07'] .defn .dk{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s07'] .defn .dv{margin-top:12px;font-weight:900;font-size:50px;line-height:1.2;color:#edebe6}
+[data-composition-id='s07'] .defn .dv .em{color:#ccff4d}
+[data-composition-id='s07'] .row .cmd{display:inline-block;margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:5px 16px;letter-spacing:.02em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="33.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[07/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// SKILL · <span class="acc">做了不止一次</span></div>
+      <div class="h1" style="margin-top:18px">就该<span class="em">存成</span>一个 Skill</div>
+
+      <div class="bracket defn">
+        <div class="dk">SKILL =</div>
+        <div class="dv">一段被保存的<span class="em">工作流</span></div>
+      </div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">告诉它你<span class="code">怎么做</span> + 一个例子</div>
+          <div class="rd">存成项目里的一个技能文件</div>
+        </div></div>
+
+        <div class="row r2 now"><div class="n">02</div><div class="rb">
+          <div class="rt">下一次,一声令下就按你习惯执行</div>
+          <span class="cmd">$ 跑那个技能</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="10.558" data-track-index="5"><div class="sub-inner">当你发现某件事做了<span class="sub-k">不止一次</span>——写客户邮件、准备一期视频、给银行流水分类——它就该被存下来,变成一个 Skill。</div></div>
+    <div id="sub-2" class="clip sub" data-start="10.719" data-duration="7.396" data-track-index="5"><div class="sub-inner">Skill 就是一段<span class="sub-k">被保存下来的工作流</span>,你一声令下,Claude 就照你的方式跑一遍。</div></div>
+    <div id="sub-3" class="clip sub" data-start="18.115" data-duration="6.192" data-track-index="5"><div class="sub-inner">你把你怎么做这件事、连同一个例子,告诉它,让它存成项目里的一个<span class="sub-k">技能文件</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="24.471" data-duration="5.536" data-track-index="5"><div class="sub-inner">下一次,你只要说"跑那个技能",它瞬间就<span class="sub-k">按你的习惯执行</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.007" data-duration="3.362" data-track-index="5"><div class="sub-inner">你做事的方法,从此<span class="sub-k">不用再重复一遍</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 开场标题(sub-1):识别"做了不止一次"
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+    // 核心定义 bracket(sub-2):Skill = 被保存的工作流
+    D2.enter(tl, R+'.defn', 10.9, {y:22, d:.42, ease:'power3.out'});
+    // 步骤 01(sub-3):告诉它怎么做 + 例子 → 存成技能文件
+    D2.enter(tl, R+'.r1', 18.3, {x:-24, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 20.6, {y:12, d:.3, ease:'power2.out'});
+    // 步骤 02(sub-4):一声令下复用;命令标签晚到(cyan)
+    D2.enter(tl, R+'.r2', 24.6, {x:-24, d:.4, ease:'power4.out'});
+    D2.enter(tl, R+'.r2 .cmd', 27.0, {scale:.7, opacity:0, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',10.719],['#sub-3',18.115],['#sub-4',24.471],['#sub-5',30.007]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 33.5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

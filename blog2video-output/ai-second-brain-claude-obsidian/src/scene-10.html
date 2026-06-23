@@ -99,6 +99,13 @@
     D2.enter(tl, R+'.r2 .r2d', 34.9, {y:12, d:.32, ease:'power2.out'});
     // 收束句(sub-10):这笔账自己算 —— 珊瑚状态灯
     D2.enter(tl, R+'.punch', 42.1, {y:14, d:.34, ease:'power3.out'});
+    // 辅助色纪律:bonus 入场前把上半屏所有珊瑚降为中性灰,确保任一帧只有一种辅助色(电青)
+    tl.to([R+'.r1 .price', R+'.r1 .warn', R+'.r2 .warn', R+'.punch'].join(','),
+          {color:'#8a8a85', duration:.5, ease:'power1.inOut'}, 44.6);
+    tl.to(R+'.r1 .price', {borderColor:'#2a2a2c', duration:.5, ease:'power1.inOut'}, 44.6);
+    tl.to(R+'.punch .dot', {backgroundColor:'#8a8a85', duration:.5, ease:'power1.inOut'}, 44.6);
+    tl.to([R+'.r1.warn', R+'.r2.warn'].join(','), {borderColor:'#2a2a2c', duration:.5, ease:'power1.inOut'}, 44.6);
+    tl.to([R+'.r1 .n', R+'.r2 .n'].join(','), {color:'#8a8a85', duration:.5, ease:'power1.inOut'}, 44.6);
     // 转场分隔 + BONUS 开源块(sub-11):从代价切到 bonus,辅助色由珊瑚转电青
     D2.enter(tl, R+'.divider', 45.1, {y:10, d:.36, ease:'power1.out'});
     D2.enter(tl, R+'.bonus', 46.0, {y:22, d:.44, ease:'power3.out'});

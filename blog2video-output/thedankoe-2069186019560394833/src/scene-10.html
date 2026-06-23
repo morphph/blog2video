@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .reduce{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em;display:flex;align-items:center;gap:16px}
+[data-composition-id='s10'] .reduce .five{color:#edebe6;font-weight:500}
+[data-composition-id='s10'] .reduce .ar{color:#ccff4d;font-weight:700;font-size:34px}
+[data-composition-id='s10'] .reduce .two{color:#ccff4d;font-weight:700}
+[data-composition-id='s10'] .twobr{display:flex;gap:22px;width:100%;margin-top:32px}
+[data-composition-id='s10'] .twobr .bracket{flex:1;text-align:left}
+[data-composition-id='s10'] .twobr .lbl{font-family:'JetBrains Mono',monospace;font-size:27px;color:#ccff4d;letter-spacing:.05em}
+[data-composition-id='s10'] .twobr .cn{margin-top:18px;font-weight:900;font-size:54px;line-height:1.18;color:#edebe6}
+[data-composition-id='s10'] .twobr .alt .lbl{color:#5fd3e8}
+[data-composition-id='s10'] .twobr .alt .cn .ac{color:#5fd3e8}
+[data-composition-id='s10'] .twobr .cn .ac{color:#ccff4d}
+[data-composition-id='s10'] .keep{margin-top:38px;font-weight:600;font-size:40px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s10'] .keep .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="30.033" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[10/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">归约</span></div>
+      <div class="h2" style="margin-top:18px">五个要素，<br>最后压缩成<span class="em">两种能力</span></div>
+
+      <div class="reduce"><span class="five">5 要素</span><span class="ar">→</span><span class="two">2 能力</span></div>
+
+      <div class="twobr">
+        <div class="bracket b-exec">
+          <div class="lbl">// execution</div>
+          <div class="cn">能把事<br><span class="ac">搞定</span></div>
+        </div>
+        <div class="bracket alt b-judge">
+          <div class="lbl">// judgment</div>
+          <div class="cn">知道该<br><span class="ac">做什么</span></div>
+        </div>
+      </div>
+
+      <div class="keep">记住这<span class="em">两句</span>，<br>比记五个名词有用得多</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.569" data-track-index="5"><div class="sub-inner">现在所有人都痴迷于"<span class="sub-k">高能动性</span>"这个词。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.704" data-duration="1.733" data-track-index="5"><div class="sub-inner">我懂，它确实<span class="sub-k">重要</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.437" data-duration="6.352" data-track-index="5"><div class="sub-inner">但你发现没有，那帮科技圈的哥们<span class="sub-k">互相抄</span>，一个个都在喊"要高能动性"。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.948" data-duration="3.522" data-track-index="5"><div class="sub-inner">恰恰是这件事，暴露了他们其实很<span class="sub-k">低能动性</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.62" data-duration="5.612" data-track-index="5"><div class="sub-inner">更重要的是，这五个要素，最后其实压缩成<span class="sub-k">两种能力</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.38" data-duration="5.055" data-track-index="5"><div class="sub-inner">一种是"<span class="sub-k">能把事搞定</span>"，另一种是"知道该做什么"。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.6" data-duration="3.267" data-track-index="5"><div class="sub-inner">把这两句记住，<span class="sub-k">比记住五个名词有用得多</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 5.6, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.reduce', 16.6, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.b-exec', 21.4, {x:-22, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.b-judge', 23.4, {x:22, d:.38, ease:'power2.out'});
+    D2.enter(tl, R+'.keep', 26.6, {y:16, d:.36, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.704],['#sub-3',5.437],['#sub-4',11.948],['#sub-5',15.62],['#sub-6',21.38],['#sub-7',26.6]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.033, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

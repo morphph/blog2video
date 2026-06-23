@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .row .rd .strike{color:#8a8a85;text-decoration:line-through;text-decoration-color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="32.533" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[02/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 拆开那句吓人的话 · <span class="acc">反 AI</span></div>
+      <div class="h1" style="margin-top:18px">骂 AI，<span class="em">是拦不住的</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">把<span class="code">反 AI</span> 当成新身份</div>
+          <div class="rd">天天发帖骂它，很爽</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">但现实：行为没变</div>
+          <div class="rd"><span class="strike">技能没扩展</span>，对新世界没适应一分一毫</div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">骂它，拦不住工作被替代</div>
+          <div class="rd">更拦不住<span class="ok">成功需要的技能</span>在悄悄改变</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="2.118" data-track-index="5"><div class="sub-inner">我们先把那句<span class="sub-k">吓人的话</span>拆开。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.271" data-duration="4.799" data-track-index="5"><div class="sub-inner">社交媒体上总有人喊，所有工作<span class="sub-k">五秒钟内</span>就要消失了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.239" data-duration="6.425" data-track-index="5"><div class="sub-inner">听多了，你可能会把"反 AI"当成一种<span class="sub-k">新身份</span>，天天发帖骂它。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.827" data-duration="6.634" data-track-index="5"><div class="sub-inner">骂得很爽，但你的行为没变，<span class="sub-k">技能没扩展</span>，对这个新世界也没适应一分一毫。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.631" data-duration="4.08" data-track-index="5"><div class="sub-inner">可问题是，AI 太大了，<span class="sub-k">骂它是拦不住的</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.879" data-duration="7.528" data-track-index="5"><div class="sub-inner">骂 AI，拦不住工作被替代，更拦不住"成为一个成功的人"需要的<span class="sub-k">技能在悄悄改变</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.3, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 7.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 13.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 16.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 24.9, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 28.0, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',2.271],['#sub-3',7.239],['#sub-4',13.827],['#sub-5',20.631],['#sub-6',24.879]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 32.533, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

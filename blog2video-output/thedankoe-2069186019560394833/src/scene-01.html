@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat,手搓 beat 层)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — 焦虑 hook */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-zh{margin-top:26px;font-weight:900;font-size:100px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-zh .em{color:#ccff4d}
+[data-composition-id='s01'] .a-ask{margin-top:24px;display:flex;align-items:center}
+[data-composition-id='s01'] .a-ask .t{font-weight:900;font-size:96px;color:#edebe6}
+[data-composition-id='s01'] .a-ask .cur{display:inline-block;width:48px;height:80px;background:#ccff4d;margin-left:18px}
+[data-composition-id='s01'] .a-tag{margin-top:54px;display:inline-flex;align-items:center;gap:16px;
+  background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 28px}
+[data-composition-id='s01'] .a-tag .dot{width:14px;height:14px;border-radius:50%;background:#ff6b5e}
+[data-composition-id='s01'] .a-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+
+/* beat B — 公开信 proof */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-title{margin-top:18px;font-weight:900;font-size:76px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .b-win{margin-top:48px;width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:34px 38px;text-align:center}
+[data-composition-id='s01'] .b-win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:118px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s01'] .b-win .lab{margin-top:14px;font-weight:500;font-size:32px;color:#edebe6}
+[data-composition-id='s01'] .b-chip{margin-top:30px;display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 30px}
+[data-composition-id='s01'] .b-chip .ci{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:26px;color:#5fd3e8;letter-spacing:.04em}
+[data-composition-id='s01'] .b-chip .ct{font-weight:600;font-size:40px;color:#edebe6}
+
+/* beat C — 反转(hero sweep) */
+[data-composition-id='s01'] .c-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .c-q{margin-top:30px;font-weight:900;font-size:84px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .c-hl{position:relative;display:inline-block;padding:6px 16px;margin-top:6px}
+[data-composition-id='s01'] .c-hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s01'] .c-hl .tx{position:relative;z-index:1;font-weight:900;font-size:84px;color:#edebe6}
+[data-composition-id='s01'] .c-real{margin-top:46px;width:100%;background:#1c1c1e;border:1px solid #2a2a2c;border-left:3px solid #ff6b5e;padding:30px 34px}
+[data-composition-id='s01'] .c-real .rl{font-family:'JetBrains Mono',monospace;font-size:27px;color:#ff6b5e;letter-spacing:.04em}
+[data-composition-id='s01'] .c-real .rt{margin-top:14px;font-weight:700;font-size:50px;line-height:1.32;color:#edebe6}
+
+/* beat D — teaser */
+[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .d-q{margin-top:26px;font-weight:900;font-size:80px;line-height:1.26;color:#edebe6}
+[data-composition-id='s01'] .d-q .em{color:#ccff4d}
+[data-composition-id='s01'] .d-tag{margin-top:50px;display:inline-flex;align-items:center;gap:16px;
+  background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+[data-composition-id='s01'] .d-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s01'] .d-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="28.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[01/27]</div>
+    </div>
+
+    <!-- BEAT A: 焦虑 hook -->
+    <div class="beat" id="beatA">
+      <div class="a-kick">// 这件事，你大概想了很久</div>
+      <div class="a-zh">AI 会不会<br><span class="em">让你失业</span>？</div>
+      <div class="a-ask"><span class="t">已经焦虑很久</span><span class="cur"></span></div>
+      <div class="a-tag"><span class="dot"></span><span class="lab">STATUS · 很多人睡不着的问题</span></div>
+    </div>
+
+    <!-- BEAT B: 公开信 proof -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick">// 但最近，有一封公开信</div>
+      <div class="b-title">写给打工人，<br>几小时就刷屏了</div>
+      <div class="b-win">
+        <div class="num">≈ 200<span style="font-size:62px;margin-left:8px">万</span></div>
+        <div class="lab">将近两百万阅读量</div>
+      </div>
+      <div class="b-chip"><span class="ci">AUTHOR</span><span class="ct">Dan Koe</span></div>
+    </div>
+
+    <!-- BEAT C: 反转 hero -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-led">// 他一上来就把矛头掉了个头</div>
+      <div class="c-q">真正威胁你的</div>
+      <div class="c-hl"><span class="bar"></span><span class="tx">从来不是 AI</span></div>
+      <div class="c-real">
+        <div class="rl">THE REAL THREAT</div>
+        <div class="rt">你把整个生存，<br>押在了别人身上</div>
+      </div>
+    </div>
+
+    <!-- BEAT D: teaser -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led">// 今天只聊一件事</div>
+      <div class="d-q">怎么变成那个<br><span class="em">不再需要被人养着</span><br>的人</div>
+      <div class="d-tag"><span class="dot"></span><span class="lab">不聊怎么对抗 AI</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.335" data-track-index="5"><div class="sub-inner">AI 会不会让你失业，这件事你大概已经<span class="sub-k">焦虑很久</span>了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.5" data-duration="5.854" data-track-index="5"><div class="sub-inner">但最近有一封写给打工人的公开信，发出去几个小时就冲到<span class="sub-k">将近两百万的阅读量</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.354" data-duration="6.666" data-track-index="5"><div class="sub-inner">这封信的作者 <span class="sub-k">Dan Koe</span> 一上来就把矛头掉了个头，真正威胁你的从来不是 AI。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.172" data-duration="4.625" data-track-index="5"><div class="sub-inner">是你把自己的整个生存，<span class="sub-k">押在了除你自己以外的所有人身上</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.96" data-duration="6.727" data-track-index="5"><div class="sub-inner">今天不聊怎么对抗 AI，只聊一件事——怎么让自己变成那个<span class="sub-k">不再需要被人养着的人</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~4.3) 焦虑 hook */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.5);
+    tl.from(R+'.a-zh',{y:22,opacity:0,duration:.4,ease:'expo.out'},0.95);
+    tl.from(R+'.a-ask .t',{x:-22,opacity:0,duration:.32,ease:'power3.out'},2.0);
+    tl.from(R+'.a-ask .cur',{scaleX:0,opacity:0,duration:.26,ease:'power4.out'},2.3);
+    tl.to(R+'.a-ask .cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:4,yoyo:true},2.7);
+    tl.from(R+'.a-tag',{y:18,opacity:0,duration:.32,ease:'power2.out'},3.1);
+    tl.to(R+'#beatA',{scale:1.03,duration:4.3,ease:'none'},0);
+
+    /* A -> B swap @ 4.5 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},4.15);
+    tl.set(R+'#beatA',{opacity:0},4.55);
+    tl.set(R+'#beatB',{opacity:1},4.5);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},4.7);
+    tl.from(R+'.b-title',{y:22,opacity:0,duration:.4,ease:'power3.out'},5.0);
+    tl.from(R+'.b-win',{y:26,opacity:0,duration:.42,ease:'expo.out'},6.4);
+    tl.from(R+'.b-chip',{x:-24,opacity:0,duration:.34,ease:'power3.out'},8.9);
+    tl.to(R+'#beatB',{scale:1.03,duration:5.85,ease:'none'},4.5);
+
+    /* count-up 阅读量 0 -> 200 */
+    tl.add(function(){
+      var node=document.querySelector(R+'.b-win .num');
+      if(node){var p={v:0};gsap.to(p,{v:200,duration:1.2,ease:'power2.out',onUpdate:function(){
+        node.innerHTML='≈ '+Math.round(p.v)+'<span style="font-size:62px;margin-left:8px">万</span>';}});}
+    },6.55);
+
+    /* B -> C swap @ 10.354 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},10.0);
+    tl.set(R+'#beatB',{opacity:0},10.354);
+    tl.set(R+'#beatC',{opacity:1},10.354);
+    tl.from(R+'.c-led',{y:-14,opacity:0,duration:.3,ease:'power1.out'},10.55);
+    tl.from(R+'.c-q',{y:22,opacity:0,duration:.4,ease:'power3.out'},10.9);
+    /* hero — 「从来不是 AI」酸性扫过 @ ~13.2 */
+    tl.from(R+'.c-hl',{opacity:0,duration:.2,ease:'power1.out'},12.9);
+    tl.to(R+'.c-hl .bar',{scaleX:1,duration:.34,ease:'power4.inOut'},13.1);
+    tl.to(R+'.c-hl .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},13.28);
+    /* 真正威胁 — 押在别人身上,绑 sub-4 @ 17.17 */
+    tl.from(R+'.c-real',{y:24,opacity:0,duration:.42,ease:'expo.out'},17.2);
+    tl.to(R+'#beatC',{scale:1.025,duration:7.0,ease:'none'},10.354);
+
+    /* C -> D swap @ 21.96 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},21.6);
+    tl.set(R+'#beatC',{opacity:0},21.96);
+    tl.set(R+'#beatD',{opacity:1},21.96);
+    tl.from(R+'.d-led',{y:-14,opacity:0,duration:.3,ease:'power1.out'},22.15);
+    tl.from(R+'.d-q',{y:24,opacity:0,duration:.42,ease:'power3.out'},22.5);
+    tl.from(R+'.d-tag',{y:18,opacity:0,duration:.34,ease:'expo.out'},25.4);
+    tl.to(R+'#beatD',{scale:1.03,duration:6.8,ease:'none'},21.96);
+
+    /* subtitle fade-ins (local time) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.5],['#sub-3',10.354],['#sub-4',17.172],['#sub-5',21.96]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

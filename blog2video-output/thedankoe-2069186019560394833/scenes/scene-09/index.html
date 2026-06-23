@@ -164,63 +164,55 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
 .endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
-/* —— scene-05 特有 —— */
-[data-composition-id='s05'] .stat .num{font-size:72px}
-[data-composition-id='s05'] .stat .lab{margin-top:14px;font-size:26px}
-[data-composition-id='s05'] .years{margin-top:22px;align-self:center;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;letter-spacing:.03em}
-[data-composition-id='s05'] .years .big{font-weight:700;font-size:58px;color:#ccff4d;vertical-align:-6px;margin:0 8px}
-[data-composition-id='s05'] .edge{margin-top:34px}
-[data-composition-id='s05'] .edge .lead{font-weight:700;font-size:42px;line-height:1.4}
-[data-composition-id='s05'] .gauge{display:flex;gap:14px;margin-top:18px}
-[data-composition-id='s05'] .gauge .g{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 22px}
-[data-composition-id='s05'] .gauge .g .gh{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85}
-[data-composition-id='s05'] .gauge .g .gt{margin-top:6px;font-weight:600;font-size:30px;color:#edebe6;line-height:1.3}
-[data-composition-id='s05'] .gauge .g.mid{border-color:#ccff4d}
-[data-composition-id='s05'] .gauge .g.mid .gh{color:#ccff4d}
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .rt .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin-right:14px}
+[data-composition-id='s09'] .rt .zh{font-weight:600;color:#edebe6}
 </style>
 </head>
 <body>
-  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="42.7" data-width="1080" data-height="1920">
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="39.533" data-width="1080" data-height="1920">
     <div class="grid"></div>
     <div class="topbar">
       <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
-      <div class="idx">[05/27]</div>
+      <div class="idx">[09/27]</div>
     </div>
 
-    <div class="content top">
-      <div class="kicker k-top">// 下面这个账 · <span class="acc">人生被切成三段</span></div>
+    <div class="content tight">
+      <div class="kicker">// 第二根支柱 · <span class="acc">站得住,靠这 5 个</span></div>
+      <div class="h1" style="margin-top:14px">成功的<span class="em">五要素</span></div>
 
-      <div class="stats" style="margin-top:26px">
-        <div class="stat s1 key"><div class="num">1/3</div><div class="lab">做你没得选的工作</div></div>
-        <div class="stat s2 key"><div class="num">1/3</div><div class="lab">累到做不了有意义的事</div></div>
-        <div class="stat s3"><div class="num">1/3</div><div class="lab">在睡觉</div></div>
-      </div>
-      <div class="years">这样过 <span class="big">40+</span> 年</div>
-
-      <div class="edge">
-        <div class="lead el1">真正的享受，来自活在<span class="em">能力的边缘</span></div>
-        <div class="gauge">
-          <div class="g g1"><div class="gh">太难</div><div class="gt">你焦虑</div></div>
-          <div class="g mid g2"><div class="gh">略高于当前</div><div class="gt">= 心流</div></div>
-          <div class="g g3"><div class="gh">太简单</div><div class="gt">你无聊</div></div>
-        </div>
-        <div class="kicker gx" style="margin-top:22px">// 一级角色做一百级任务 → 被秒杀 → 恨这游戏</div>
-        <div class="lead lo" style="margin-top:16px">搭出让<span class="em">心流</span>更易发生的生活结构，快乐就会变充裕</div>
+      <div class="rows" style="margin-top:30px">
+        <div class="row a1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="en">Agency</span><span class="zh">能动性</span></div>
+          <div class="rd">不等任何人许可,看到机会就动手</div>
+        </div></div>
+        <div class="row a2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="en">Taste</span><span class="zh">品味</span></div>
+          <div class="rd">知道什么东西值得拿出来给世界看</div>
+        </div></div>
+        <div class="row a3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="en">Persuasion</span><span class="zh">说服力</span></div>
+          <div class="rd">让别人在乎你做的事 · <span class="ok">不是操纵</span></div>
+        </div></div>
+        <div class="row a4"><div class="n">04</div><div class="rb">
+          <div class="rt"><span class="en">Persistence</span><span class="zh">坚持</span></div>
+          <div class="rd">犯错不等于死亡,而且犯错是必需的</div>
+        </div></div>
+        <div class="row a5 now"><div class="n">05</div><div class="rb">
+          <div class="rt"><span class="en">Iteration</span><span class="zh">迭代</span></div>
+          <div class="rd">据反馈纠错,不行就学、就转,直到成功</div>
+        </div></div>
       </div>
     </div>
 
-    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="3.385" data-track-index="5"><div class="sub-inner">人生的三分之一，在做你<span class="sub-k">没得选的工作</span>。</div></div>
-    <div id="sub-2" class="clip sub" data-start="3.569" data-duration="3.814" data-track-index="5"><div class="sub-inner">另外三分之一，累到没力气去做任何<span class="sub-k">有意义的事</span>。</div></div>
-    <div id="sub-3" class="clip sub" data-start="7.565" data-duration="2.142" data-track-index="5"><div class="sub-inner">最后三分之一，在<span class="sub-k">睡觉</span>。</div></div>
-    <div id="sub-4" class="clip sub" data-start="9.869" data-duration="1.330" data-track-index="5"><div class="sub-inner">这样过<span class="sub-k">四十多年</span>。</div></div>
-    <div id="sub-5" class="clip sub" data-start="11.345" data-duration="1.667" data-track-index="5"><div class="sub-inner">为什么会<span class="sub-k">坐不住</span>？</div></div>
-    <div id="sub-6" class="clip sub" data-start="13.022" data-duration="3.972" data-track-index="5"><div class="sub-inner">因为真正的享受，来自活在你<span class="sub-k">能力的边缘</span>。</div></div>
-    <div id="sub-7" class="clip sub" data-start="17.141" data-duration="3.721" data-track-index="5"><div class="sub-inner">快乐来自挑战一个<span class="sub-k">略高于你当前水平</span>的目标。</div></div>
-    <div id="sub-8" class="clip sub" data-start="21.029" data-duration="5.219" data-track-index="5"><div class="sub-inner">不能太难，难到你焦虑；也不能太简单，简单到你<span class="sub-k">无聊</span>。</div></div>
-    <div id="sub-9" class="clip sub" data-start="26.429" data-duration="2.270" data-track-index="5"><div class="sub-inner">电子游戏就是<span class="sub-k">吃透了这一点</span>。</div></div>
-    <div id="sub-10" class="clip sub" data-start="28.877" data-duration="5.300" data-track-index="5"><div class="sub-inner">一个一级的角色去做一百级的任务，会被秒杀，然后你会<span class="sub-k">恨这个游戏</span>。</div></div>
-    <div id="sub-11" class="clip sub" data-start="34.349" data-duration="2.416" data-track-index="5"><div class="sub-inner">这是进入<span class="sub-k">心流</span>最大的驱动力。</div></div>
-    <div id="sub-12" class="clip sub" data-start="36.775" data-duration="5.777" data-track-index="5"><div class="sub-inner">如果你能搭出一种让心流更容易发生的生活结构，<span class="sub-k">快乐会变得很充裕</span>。</div></div>
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="5.010" data-track-index="5"><div class="sub-inner">接下来谈第二根支柱:到底什么能让一个人<span class="sub-k">在未来站得住</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.185" data-duration="3.249" data-track-index="5"><div class="sub-inner">很多人会说,那不就是<span class="sub-k">成功的几大要素</span>吗。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.444" data-duration="1.020" data-track-index="5"><div class="sub-inner">确实有<span class="sub-k">五个</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.613" data-duration="7.483" data-track-index="5"><div class="sub-inner">第一个是能动性,英文叫 agency,就是不等任何人许可,<span class="sub-k">看到机会就动手去做</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.245" data-duration="4.070" data-track-index="5"><div class="sub-inner">第二个是品味,<span class="sub-k">知道什么东西值得拿出来给世界看</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.493" data-duration="6.322" data-track-index="5"><div class="sub-inner">第三个是说服力,让别人在乎你做的事——注意,<span class="sub-k">这和操纵不是一回事</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.973" data-duration="5.393" data-track-index="5"><div class="sub-inner">第四个是坚持,明白犯错不等于死亡,而且<span class="sub-k">犯错是必需的</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="33.517" data-duration="5.858" data-track-index="5"><div class="sub-inner">第五个是迭代,根据反馈不断纠错,不行就学、就转,<span class="sub-k">直到成功</span>。</div></div>
   </div>
 
   <script>
@@ -356,25 +348,21 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
   </script>
   <script>
   (function(){
-    var R="[data-composition-id='s05'] ";
+    var R="[data-composition-id='s09'] ";
     var tl=gsap.timeline({paused:true});
     tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
     tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
-    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
-    D2.enter(tl, R+'.s1', 0.6, {y:18, d:.36, ease:'power3.out'});
-    D2.enter(tl, R+'.s2', 3.6, {y:18, d:.36, ease:'expo.out'});
-    D2.enter(tl, R+'.s3', 7.6, {y:18, d:.36, ease:'power2.out'});
-    D2.enter(tl, R+'.years', 9.9, {y:14, d:.34, ease:'power3.out'});
-    D2.enter(tl, R+'.edge .el1', 13.0, {y:18, d:.4, ease:'expo.out'});
-    D2.enter(tl, R+'.gauge .g1', 21.0, {x:-18, d:.32, ease:'power3.out'});
-    D2.enter(tl, R+'.gauge .g3', 21.4, {x:18, d:.32, ease:'power2.out'});
-    D2.enter(tl, R+'.gauge .g2', 23.0, {y:14, d:.34, ease:'power3.out'});
-    D2.enter(tl, R+'.gx', 28.9, {y:-10, d:.3, ease:'power2.out'});
-    D2.enter(tl, R+'.lo', 36.8, {y:18, d:.4, ease:'expo.out'});
-    D2.subs(tl, [['#sub-1',0.005],['#sub-2',3.569],['#sub-3',7.565],['#sub-4',9.869],['#sub-5',11.345],['#sub-6',13.022],['#sub-7',17.141],['#sub-8',21.029],['#sub-9',26.429],['#sub-10',28.877],['#sub-11',34.349],['#sub-12',36.775]].map(function(s){return [R+s[0],s[1]];}));
-    D2.breath(tl, R+'.content', 42.7, 'in');
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.a1', 9.7, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.a2', 17.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.a3', 21.6, {x:-22, ease:'power2.out'});
+    D2.enter(tl, R+'.a4', 28.0, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.a5', 33.6, {x:-22, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',5.185],['#sub-3',8.444],['#sub-4',9.613],['#sub-5',17.245],['#sub-6',21.493],['#sub-7',27.973],['#sub-8',33.517]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.533, 'in');
     window.__timelines = window.__timelines || {};
-    window.__timelines['s05'] = tl;
+    window.__timelines['s09'] = tl;
   })();
   </script>
 </body>

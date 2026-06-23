@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .rt .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin-right:14px}
+[data-composition-id='s09'] .rt .zh{font-weight:600;color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="39.533" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[09/27]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 第二根支柱 · <span class="acc">站得住,靠这 5 个</span></div>
+      <div class="h1" style="margin-top:14px">成功的<span class="em">五要素</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row a1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="en">Agency</span><span class="zh">能动性</span></div>
+          <div class="rd">不等任何人许可,看到机会就动手</div>
+        </div></div>
+        <div class="row a2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="en">Taste</span><span class="zh">品味</span></div>
+          <div class="rd">知道什么东西值得拿出来给世界看</div>
+        </div></div>
+        <div class="row a3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="en">Persuasion</span><span class="zh">说服力</span></div>
+          <div class="rd">让别人在乎你做的事 · <span class="ok">不是操纵</span></div>
+        </div></div>
+        <div class="row a4"><div class="n">04</div><div class="rb">
+          <div class="rt"><span class="en">Persistence</span><span class="zh">坚持</span></div>
+          <div class="rd">犯错不等于死亡,而且犯错是必需的</div>
+        </div></div>
+        <div class="row a5 now"><div class="n">05</div><div class="rb">
+          <div class="rt"><span class="en">Iteration</span><span class="zh">迭代</span></div>
+          <div class="rd">据反馈纠错,不行就学、就转,直到成功</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="5.02" data-track-index="5"><div class="sub-inner">接下来谈第二根支柱:到底什么能让一个人<span class="sub-k">在未来站得住</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.185" data-duration="3.259" data-track-index="5"><div class="sub-inner">很多人会说,那不就是<span class="sub-k">成功的几大要素</span>吗。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.444" data-duration="1.03" data-track-index="5"><div class="sub-inner">确实有<span class="sub-k">五个</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.613" data-duration="7.493" data-track-index="5"><div class="sub-inner">第一个是能动性,英文叫 agency,就是不等任何人许可,<span class="sub-k">看到机会就动手去做</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.245" data-duration="4.08" data-track-index="5"><div class="sub-inner">第二个是品味,<span class="sub-k">知道什么东西值得拿出来给世界看</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.493" data-duration="6.332" data-track-index="5"><div class="sub-inner">第三个是说服力,让别人在乎你做的事——注意,<span class="sub-k">这和操纵不是一回事</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.973" data-duration="5.403" data-track-index="5"><div class="sub-inner">第四个是坚持,明白犯错不等于死亡,而且<span class="sub-k">犯错是必需的</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="33.517" data-duration="5.868" data-track-index="5"><div class="sub-inner">第五个是迭代,根据反馈不断纠错,不行就学、就转,<span class="sub-k">直到成功</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.a1', 9.7, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.a2', 17.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.a3', 21.6, {x:-22, ease:'power2.out'});
+    D2.enter(tl, R+'.a4', 28.0, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.a5', 33.6, {x:-22, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',5.185],['#sub-3',8.444],['#sub-4',9.613],['#sub-5',17.245],['#sub-6',21.493],['#sub-7',27.973],['#sub-8',33.517]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.533, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

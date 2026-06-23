@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .core{display:flex;gap:26px;align-items:stretch;margin-top:18px}
+[data-composition-id='s07'] .core .half{flex:1;min-width:0}
+[data-composition-id='s07'] .core .lbl{font-family:'JetBrains Mono',monospace;font-size:25px;letter-spacing:.03em;margin-bottom:10px}
+[data-composition-id='s07'] .core .a .lbl{color:#ccff4d}
+[data-composition-id='s07'] .core .b .lbl{color:#ff6b5e}
+[data-composition-id='s07'] .core .tx{font-weight:700;font-size:36px;line-height:1.3;color:#edebe6}
+[data-composition-id='s07'] .core .vs{align-self:center;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85}
+[data-composition-id='s07'] .cascade{margin-top:22px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="36.467" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[07/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 只做一件事的代价</div>
+      <div class="h2" style="margin-top:16px">你对整个系统,<span class="em">是瞎的</span></div>
+
+      <div class="bracket" style="margin-top:24px">
+        <div class="core">
+          <div class="half a"><div class="lbl">你懂</div><div class="tx">那个让你拿工资的技能</div></div>
+          <div class="vs">≠</div>
+          <div class="half b"><div class="lbl">你没想过搞懂</div><div class="tx">那个付你工资的系统</div></div>
+        </div>
+      </div>
+
+      <div class="rows cascade">
+        <div class="row c1"><div class="n">01</div><div class="rb">
+          <div class="rt">不会搭自己的东西</div>
+          <div class="rd">只会在别人的东西里,填一个角色</div>
+        </div></div>
+        <div class="row c2"><div class="n">02</div><div class="rb">
+          <div class="rt">思考能力被压垮</div>
+          <div class="rd">哪怕你在自己那门手艺上算「聪明」</div>
+        </div></div>
+        <div class="row c3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">陷进慢性压力循环</div>
+          <div class="rd">赚着还行的工资,却<span class="warn">没有安全感</span> · 视野越来越窄</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.824" data-track-index="5"><div class="sub-inner">可正因为你只做这一件事,你对整个系统是<span class="sub-k">瞎的</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.98" data-duration="6.68" data-track-index="5"><div class="sub-inner">你懂得那一个让你拿工资的技能,却从没想过去搞懂<span class="sub-k">那个付你工资的系统</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.82" data-duration="5.995" data-track-index="5"><div class="sub-inner">你不会搭自己的东西,你只会在<span class="sub-k">别人的东西里,填一个角色</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.976" data-duration="7.063" data-track-index="5"><div class="sub-inner">不知不觉,你的<span class="sub-k">思考能力被压垮了</span>,哪怕你在自己那门手艺上算"聪明"。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.176" data-duration="5.74" data-track-index="5"><div class="sub-inner">你赚着还行的工资,却没有安全感,于是陷进一个<span class="sub-k">慢性的压力循环</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.08" data-duration="6.204" data-track-index="5"><div class="sub-inner">而压力会让人的<span class="sub-k">视野变窄</span>,让你更难去想象一种"自己搭东西"的生活。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 4.0, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.c1', 10.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.c2', 17.0, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.c3', 24.2, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.c3 .rd', 30.1, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.98],['#sub-3',10.82],['#sub-4',16.976],['#sub-5',24.176],['#sub-6',30.08]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.467, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

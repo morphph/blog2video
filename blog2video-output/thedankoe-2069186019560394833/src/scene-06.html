@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .pyr{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;margin-top:34px}
+[data-composition-id='s06'] .pyr .lvl{background:#1c1c1e;border:1px solid #2a2a2c;text-align:center;font-family:'JetBrains Mono',monospace;font-weight:700;color:#edebe6}
+[data-composition-id='s06'] .pyr .top{padding:18px 60px;font-size:38px;color:#ccff4d;border-color:#ccff4d}
+[data-composition-id='s06'] .pyr .bot{padding:20px 0;width:100%;font-size:34px;color:#8a8a85}
+[data-composition-id='s06'] .pyr .bot .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="52.433" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[06/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 无聊的循环 · <span class="acc">注意力开始飘</span></div>
+      <div class="h1" style="margin-top:18px">学完之后,<span class="em">就没了</span></div>
+
+      <div class="rows" style="margin-top:38px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">几个月后,该会的都会了</div>
+          <div class="rd">打卡 <span class="code">→</span> 做事 <span class="code">→</span> 下班,开始无聊</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">注意力飘向「我还能干点别的」</div>
+          <div class="rd r2d">可那个「别的」往往不是目标 —— <span class="ok">而是掏出手机,刷到大脑发霉</span></div>
+        </div></div>
+      </div>
+
+      <div class="kicker pyh" style="margin-top:30px">// 背后藏着一套更古老的结构</div>
+      <div class="pyr">
+        <div class="lvl top">1 个老板</div>
+        <div class="lvl bot">一堆员工,生存全<span class="em">押在老板身上</span></div>
+      </div>
+
+      <div class="lead ind" style="margin-top:26px;font-size:34px">我们大多被<span class="em">工业时代标准</span>养大:成为专才,死磕一个领域,找份高薪工作</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="2.199" data-track-index="5"><div class="sub-inner">但工作很难给你这个。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.341" data-duration="3.555" data-track-index="5"><div class="sub-inner">干了几个月,<span class="sub-k">该会的你都会了</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.896" data-duration="3.555" data-track-index="5"><div class="sub-inner">打卡、做事、下班,<span class="sub-k">开始无聊</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.613" data-duration="5.357" data-track-index="5"><div class="sub-inner">你的注意力不再沉浸在任务里,而是飘向那句<span class="sub-k">"我还能干点别的什么"</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.121" data-duration="8.294" data-track-index="5"><div class="sub-inner">可对大多数人来说,那个"别的"不是什么有意义的目标,而是掏出手机,<span class="sub-k">刷到大脑发霉</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.581" data-duration="4.033" data-track-index="5"><div class="sub-inner">有意思的是,这背后还藏着一套<span class="sub-k">更古老的结构</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.757" data-duration="2.058" data-track-index="5"><div class="sub-inner">社会本质上是个<span class="sub-k">金字塔</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.815" data-duration="5.052" data-track-index="5"><div class="sub-inner">底下的人永远比顶上的多,而且<span class="sub-k">数学上不可能人人都在顶上</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="35.029" data-duration="5.31" data-track-index="5"><div class="sub-inner">一个老板,一堆员工,员工的生存<span class="sub-k">全押在老板身上</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="40.501" data-duration="3.569" data-track-index="5"><div class="sub-inner">我们大多数人,是被<span class="sub-k">工业时代的标准</span>养大的。</div></div>
+    <div id="sub-11" class="clip sub" data-start="44.209" data-duration="8.039" data-track-index="5"><div class="sub-inner">成为专才,死磕一个领域,找份高薪工作,好让爸妈的朋友觉得他家孩子<span class="sub-k">有出息</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 2.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 9.7, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2d', 15.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.pyh', 23.7, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.pyr .top', 27.8, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.pyr .bot', 35.1, {y:16, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.ind', 40.6, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',2.341],['#sub-3',5.896],['#sub-4',9.613],['#sub-5',15.121],['#sub-6',23.581],['#sub-7',27.757],['#sub-8',29.815],['#sub-9',35.029],['#sub-10',40.501],['#sub-11',44.209]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 52.433, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

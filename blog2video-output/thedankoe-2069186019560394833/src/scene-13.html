@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有 —— */
+[data-composition-id='s13'] .shift{margin-top:34px;text-align:left}
+[data-composition-id='s13'] .shift .lbl{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s13'] .shift .body{margin-top:18px;font-weight:700;font-size:42px;line-height:1.4;color:#edebe6}
+[data-composition-id='s13'] .shift .from{color:#8a8a85;text-decoration:line-through;text-decoration-color:#ff6b5e}
+[data-composition-id='s13'] .shift .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 12px}
+[data-composition-id='s13'] .shift .to{color:#ccff4d}
+[data-composition-id='s13'] .harder{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#ff6b5e;letter-spacing:.03em}
+[data-composition-id='s13'] .skills{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+[data-composition-id='s13'] .skills .sk{font-family:'JetBrains Mono',monospace;font-size:28px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:6px 18px}
+[data-composition-id='s13'] .only{margin-top:34px;font-weight:700;font-size:44px;line-height:1.38;color:#8a8a85}
+[data-composition-id='s13'] .only .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="38.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[13/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 反常识 · <span class="acc">门槛降低 ≠ 好消息</span></div>
+      <div class="h1" style="margin-top:18px">创业门槛降低，<br><span class="em">对你不是好消息</span></div>
+
+      <div class="bracket shift">
+        <div class="lbl">// 竞争挪位</div>
+        <div class="body"><span class="from">"你能不能造"</span><span class="ar">→</span><span class="to">"有没有品味、能不能让人在乎"</span></div>
+        <div class="harder s-harder">// 这一关 · 更难 · 学不来</div>
+      </div>
+
+      <div class="skills">
+        <span class="sk sk1">能动性</span>
+        <span class="sk sk2">品味</span>
+        <span class="sk sk3">说服力</span>
+      </div>
+
+      <div class="only s-only">练它们的<span class="em">唯一办法，<br>是开始做你自己的东西</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.297" data-track-index="5"><div class="sub-inner">所以你要听懂这个反常识的点：创业门槛降低，<span class="sub-k">对你不是好消息</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.429" data-duration="3.522" data-track-index="5"><div class="sub-inner">当人人都能造出来，造出来这件事就<span class="sub-k">不再稀缺</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.101" data-duration="6.506" data-track-index="5"><div class="sub-inner">竞争一下子从"你能不能造"，挪到了"<span class="sub-k">你有没有品味、能不能让人在乎</span>"。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.761" data-duration="4.718" data-track-index="5"><div class="sub-inner">而这一关，更难，也<span class="sub-k">更没法靠看几个视频学会</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.621" data-duration="8.213" data-track-index="5"><div class="sub-inner">能动性、品味、说服力这些，都不是那种刷几个教程就能上手的"<span class="sub-k">高价值技能</span>"。</div></div>
+    <div id="sub-6" class="clip sub" data-start="29.973" data-duration="4.753" data-track-index="5"><div class="sub-inner">关于高能动性的理论和金句，<span class="sub-k">不会让你变得更高能动性一分一毫</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.869" data-duration="3.731" data-track-index="5"><div class="sub-inner">练它们的唯一办法，是<span class="sub-k">开始做你自己的东西</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.shift', 10.1, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.s-harder', 16.8, {y:12, d:.32, ease:'power2.out'});
+    D2.stagger(tl, R+'.skills .sk', 21.6, {y:14, step:.16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s-only', 34.869, {y:16, d:.4, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.429],['#sub-3',10.101],['#sub-4',16.761],['#sub-5',21.621],['#sub-6',29.973],['#sub-7',34.869]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.767, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

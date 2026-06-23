@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有 —— */
+[data-composition-id='s17'] .row{padding:20px 28px}
+[data-composition-id='s17'] .row .rt{font-size:38px}
+[data-composition-id='s17'] .allrow{margin-top:18px;display:inline-flex;align-items:center;gap:16px}
+[data-composition-id='s17'] .allrow .ax{font-family:'JetBrains Mono',monospace;font-size:30px;color:#ccff4d}
+[data-composition-id='s17'] .allrow .at{font-weight:900;font-size:52px;color:#ccff4d;letter-spacing:.04em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="21.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[17/27]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 方法很直接 · <span class="acc">一夜翻开关</span></div>
+      <div class="h1" style="margin-top:14px">把开关<span class="em">全部翻过来</span></div>
+
+      <div class="rows" style="margin-top:28px">
+        <div class="row i1"><div class="n">01</div><div class="rb"><div class="rt">换个时间定<span class="code">闹钟</span></div></div></div>
+        <div class="row i2"><div class="n">02</div><div class="rb"><div class="rt">提前想好醒来<span class="code">要做什么</span></div></div></div>
+        <div class="row i3"><div class="n">03</div><div class="rb"><div class="rt">吃<span class="code">不一样的</span>东西</div></div></div>
+        <div class="row i4"><div class="n">04</div><div class="rb"><div class="rt">和<span class="code">不一样的人</span>说话</div></div></div>
+        <div class="row i5"><div class="n">05</div><div class="rb"><div class="rt">看<span class="code">不一样的</span>内容</div></div></div>
+      </div>
+
+      <div class="allrow"><span class="ax">›</span><span class="at">全部</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.463" data-track-index="5"><div class="sub-inner">所以方法很直接:一夜之间,把<span class="sub-k">开关全部翻过来</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.601" data-duration="4.207" data-track-index="5"><div class="sub-inner">明天醒来,至少这一天,<span class="sub-k">什么都跟以前不一样</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.957" data-duration="2.103" data-track-index="5"><div class="sub-inner">换个时间定<span class="sub-k">闹钟</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.06" data-duration="2.893" data-track-index="5"><div class="sub-inner">提前想好醒来<span class="sub-k">要做什么</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="13.953" data-duration="2.103" data-track-index="5"><div class="sub-inner">吃<span class="sub-k">不一样的</span>东西。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.056" data-duration="2.366" data-track-index="5"><div class="sub-inner">和<span class="sub-k">不一样的人</span>说话。</div></div>
+    <div id="sub-7" class="clip sub" data-start="18.422" data-duration="2.104" data-track-index="5"><div class="sub-inner">看<span class="sub-k">不一样的</span>内容。</div></div>
+    <div id="sub-8" class="clip sub" data-start="20.526" data-duration="0.789" data-track-index="5"><div class="sub-inner"><span class="sub-k">全部</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:18, d:.4, ease:'expo.out'});
+    // 五条逐条 build,绑各自字幕本地时间(sub-3..sub-7)
+    D2.enter(tl, R+'.i1', 8.95, {x:-22, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.i2', 11.05, {x:-22, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.i3', 13.95, {x:-22, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.i4', 16.05, {x:-22, d:.3, ease:'power4.out'});
+    D2.enter(tl, R+'.i5', 18.42, {x:-22, d:.3, ease:'power2.out'});
+    // 全部(sub-8)
+    D2.enter(tl, R+'.allrow', 20.5, {y:14, d:.32, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.601],['#sub-3',8.957],['#sub-4',11.06],['#sub-5',13.953],['#sub-6',16.056],['#sub-7',18.422],['#sub-8',20.526]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

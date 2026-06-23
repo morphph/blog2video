@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .stat .num{font-size:72px}
+[data-composition-id='s05'] .stat .lab{margin-top:14px;font-size:26px}
+[data-composition-id='s05'] .years{margin-top:22px;align-self:center;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s05'] .years .big{font-weight:700;font-size:58px;color:#ccff4d;vertical-align:-6px;margin:0 8px}
+[data-composition-id='s05'] .edge{margin-top:34px}
+[data-composition-id='s05'] .edge .lead{font-weight:700;font-size:42px;line-height:1.4}
+[data-composition-id='s05'] .gauge{display:flex;gap:14px;margin-top:18px}
+[data-composition-id='s05'] .gauge .g{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 22px}
+[data-composition-id='s05'] .gauge .g .gh{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85}
+[data-composition-id='s05'] .gauge .g .gt{margin-top:6px;font-weight:600;font-size:30px;color:#edebe6;line-height:1.3}
+[data-composition-id='s05'] .gauge .g.mid{border-color:#ccff4d}
+[data-composition-id='s05'] .gauge .g.mid .gh{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="42.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[05/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 下面这个账 · <span class="acc">人生被切成三段</span></div>
+
+      <div class="stats" style="margin-top:26px">
+        <div class="stat s1 key"><div class="num">1/3</div><div class="lab">做你没得选的工作</div></div>
+        <div class="stat s2 key"><div class="num">1/3</div><div class="lab">累到做不了有意义的事</div></div>
+        <div class="stat s3"><div class="num">1/3</div><div class="lab">在睡觉</div></div>
+      </div>
+      <div class="years">这样过 <span class="big">40+</span> 年</div>
+
+      <div class="edge">
+        <div class="lead el1">真正的享受，来自活在<span class="em">能力的边缘</span></div>
+        <div class="gauge">
+          <div class="g g1"><div class="gh">太难</div><div class="gt">你焦虑</div></div>
+          <div class="g mid g2"><div class="gh">略高于当前</div><div class="gt">= 心流</div></div>
+          <div class="g g3"><div class="gh">太简单</div><div class="gt">你无聊</div></div>
+        </div>
+        <div class="kicker gx" style="margin-top:22px">// 一级角色做一百级任务 → 被秒杀 → 恨这游戏</div>
+        <div class="lead lo" style="margin-top:16px">搭出让<span class="em">心流</span>更易发生的生活结构，快乐就会变充裕</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="3.395" data-track-index="5"><div class="sub-inner">人生的三分之一，在做你<span class="sub-k">没得选的工作</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.569" data-duration="3.824" data-track-index="5"><div class="sub-inner">另外三分之一，累到没力气去做任何<span class="sub-k">有意义的事</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.565" data-duration="2.152" data-track-index="5"><div class="sub-inner">最后三分之一，在<span class="sub-k">睡觉</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.869" data-duration="1.34" data-track-index="5"><div class="sub-inner">这样过<span class="sub-k">四十多年</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="11.345" data-duration="1.677" data-track-index="5"><div class="sub-inner">为什么会<span class="sub-k">坐不住</span>？</div></div>
+    <div id="sub-6" class="clip sub" data-start="13.022" data-duration="3.982" data-track-index="5"><div class="sub-inner">因为真正的享受，来自活在你<span class="sub-k">能力的边缘</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="17.141" data-duration="3.731" data-track-index="5"><div class="sub-inner">快乐来自挑战一个<span class="sub-k">略高于你当前水平</span>的目标。</div></div>
+    <div id="sub-8" class="clip sub" data-start="21.029" data-duration="5.229" data-track-index="5"><div class="sub-inner">不能太难，难到你焦虑；也不能太简单，简单到你<span class="sub-k">无聊</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="26.429" data-duration="2.28" data-track-index="5"><div class="sub-inner">电子游戏就是<span class="sub-k">吃透了这一点</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="28.877" data-duration="5.31" data-track-index="5"><div class="sub-inner">一个一级的角色去做一百级的任务，会被秒杀，然后你会<span class="sub-k">恨这个游戏</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="34.349" data-duration="2.426" data-track-index="5"><div class="sub-inner">这是进入<span class="sub-k">心流</span>最大的驱动力。</div></div>
+    <div id="sub-12" class="clip sub" data-start="36.775" data-duration="5.787" data-track-index="5"><div class="sub-inner">如果你能搭出一种让心流更容易发生的生活结构，<span class="sub-k">快乐会变得很充裕</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.s1', 0.6, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.s2', 3.6, {y:18, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.s3', 7.6, {y:18, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.years', 9.9, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.edge .el1', 13.0, {y:18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.gauge .g1', 21.0, {x:-18, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.gauge .g3', 21.4, {x:18, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.gauge .g2', 23.0, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.gx', 28.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.lo', 36.8, {y:18, d:.4, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',3.569],['#sub-3',7.565],['#sub-4',9.869],['#sub-5',11.345],['#sub-6',13.022],['#sub-7',17.141],['#sub-8',21.029],['#sub-9',26.429],['#sub-10',28.877],['#sub-11',34.349],['#sub-12',36.775]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.7, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

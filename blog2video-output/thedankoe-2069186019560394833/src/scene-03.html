@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .who{display:flex;gap:18px;margin-top:24px}
+[data-composition-id='s03'] .who .w{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;border-left:2px solid #ff6b5e;padding:22px 26px;font-weight:700;font-size:40px;color:#edebe6}
+[data-composition-id='s03'] .ff{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s03'] .ff .ar{color:#ccff4d;margin:0 12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="29.867" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[03/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 那真正的威胁是什么 · <span class="acc">第一性原理</span></div>
+      <div class="h2" style="margin-top:18px">你对所有人的<br><span class="em">生存依赖</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">除了你自己，<span class="em">所有人</span>都有自己的生存要顾</div>
+        <div class="who">
+          <div class="w w1">你的雇主</div>
+          <div class="w w2">你的政府</div>
+        </div>
+        <div class="ff">一受威胁 <span class="ar">→</span> 人性掉进更低层级 <span class="ar">→</span> 先保自己</div>
+      </div>
+
+      <div class="kicker tlh" style="margin-top:32px">// 盲目相信他们一定兜底 → 注定非常失望</div>
+      <div class="lead lo" style="margin-top:14px">AI 只是按下了这个一直存在的<span class="em">"依赖"快进键</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="1.816" data-track-index="5"><div class="sub-inner">那真正的<span class="sub-k">威胁</span>是什么？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.993" data-duration="2.523" data-track-index="5"><div class="sub-inner">是你对所有人的<span class="sub-k">生存依赖</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.516" data-duration="2.102" data-track-index="5"><div class="sub-inner">除了你自己，<span class="sub-k">所有人</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.781" data-duration="3.859" data-track-index="5"><div class="sub-inner">你的雇主、你的政府，他们都有自己的<span class="sub-k">生存</span>要顾。</div></div>
+    <div id="sub-5" class="clip sub" data-start="10.777" data-duration="6.123" data-track-index="5"><div class="sub-inner">一旦某个东西威胁到他们，人性会让他们立刻掉进更低层级的思维，<span class="sub-k">先保自己</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.041" data-duration="2.771" data-track-index="5"><div class="sub-inner">你可以说他们"应该"管你的<span class="sub-k">死活</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="19.812" data-duration="4.675" data-track-index="5"><div class="sub-inner">但如果你盲目相信他们一定会兜底，你注定会<span class="sub-k">非常非常失望</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="24.637" data-duration="5.055" data-track-index="5"><div class="sub-inner">而 AI，只是按下了这个一直存在的<span class="sub-k">"依赖"快进键</span>而已。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.9, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 4.5, {y:20, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.who .w', 6.8, {y:14, step:.18, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.ff', 10.8, {y:12, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.tlh', 19.8, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.lo', 24.7, {y:18, d:.38, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',1.993],['#sub-3',4.516],['#sub-4',6.781],['#sub-5',10.777],['#sub-6',17.041],['#sub-7',19.812],['#sub-8',24.637]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 29.867, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .chart{display:flex;gap:22px;width:100%;margin-top:40px}
+[data-composition-id='s12'] .col2{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 28px;display:flex;flex-direction:column;align-items:flex-start}
+[data-composition-id='s12'] .col2 .cap{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s12'] .col2 .big{margin-top:14px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;line-height:1;font-variant-numeric:tabular-nums;color:#edebe6}
+[data-composition-id='s12'] .col2 .desc{margin-top:18px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s12'] .col2.win .big{color:#5fd3e8}
+[data-composition-id='s12'] .col2.hit .big{color:#ccff4d}
+[data-composition-id='s12'] .concl2{margin-top:38px;font-weight:700;font-size:44px;line-height:1.4;color:#edebe6}
+[data-composition-id='s12'] .concl2 .em{color:#ccff4d}
+[data-composition-id='s12'] .concl2 .dim{color:#8a8a85;font-weight:600;font-size:36px;display:block;margin-bottom:12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="18.067" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[12/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 游戏圈大佬 · <span class="acc">Strauss Zelnick</span></div>
+      <div class="h1" style="margin-top:18px">一年上千款手游，<br><span class="em">几款爆款？</span></div>
+
+      <div class="chart">
+        <div class="col2 win c-launch">
+          <div class="cap">// 一年上市</div>
+          <div class="big">上千款</div>
+          <div class="desc">手游</div>
+        </div>
+        <div class="col2 hit c-hit">
+          <div class="cap">// 真正爆款</div>
+          <div class="big">0–5</div>
+          <div class="desc">款</div>
+        </div>
+      </div>
+
+      <div class="concl2 c-concl"><span class="dim">技术早是白菜价，谁都能做</span>做得出来，<span class="em">根本不等于做得成</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="4.672" data-track-index="5"><div class="sub-inner">游戏圈有个大佬叫 <span class="sub-k">Strauss Zelnick</span>，他说过一段话，更直白。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.84" data-duration="3.038" data-track-index="5"><div class="sub-inner">你知道一年上市多少款<span class="sub-k">手游</span>吗？</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.878" data-duration="0.867" data-track-index="5"><div class="sub-inner"><span class="sub-k">上千款</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.908" data-duration="1.794" data-track-index="5"><div class="sub-inner">那一年出几款<span class="sub-k">爆款</span>？</div></div>
+    <div id="sub-5" class="clip sub" data-start="10.702" data-duration="0.997" data-track-index="5"><div class="sub-inner"><span class="sub-k">零到五款</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="11.86" data-duration="3.125" data-track-index="5"><div class="sub-inner">技术早就是<span class="sub-k">白菜价</span>了，谁都能做。</div></div>
+    <div id="sub-7" class="clip sub" data-start="14.985" data-duration="2.917" data-track-index="5"><div class="sub-inner">做得出来，<span class="sub-k">根本不等于做得成</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.4, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.c-launch', 7.9, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.c-hit', 10.7, {x:22, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.c-concl', 14.985, {y:16, d:.38, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',4.84],['#sub-3',7.878],['#sub-4',8.908],['#sub-5',10.702],['#sub-6',11.86],['#sub-7',14.985]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 18.067, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

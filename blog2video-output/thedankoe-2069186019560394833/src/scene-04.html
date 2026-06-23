@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .def{margin-top:30px;font-weight:700;font-size:42px;line-height:1.42;color:#edebe6}
+[data-composition-id='s04'] .def .dim{color:#8a8a85}
+[data-composition-id='s04'] .note{margin-top:26px;background:#1c1c1e;border:1px solid #2a2a2c;border-left:2px solid #ccff4d;padding:26px 30px}
+[data-composition-id='s04'] .note .nt{font-weight:700;font-size:34px;color:#ccff4d;line-height:1.3}
+[data-composition-id='s04'] .note .nd{margin-top:10px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .step{display:flex;gap:14px;margin-top:14px}
+[data-composition-id='s04'] .step .sp{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;border:1px solid #2a2a2c;padding:6px 16px}
+[data-composition-id='s04'] .step .sp .a{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="36.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[04/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 第一根支柱 · <span class="acc">FIRST PILLAR</span></div>
+      <div class="h1" style="margin-top:18px"><span class="em">工资奴役</span></div>
+
+      <div class="bracket b-main" style="margin-top:30px">
+        <div class="def">做着自己<span class="dim">没得选的、毫无意义的</span>苦活<br>为别人做，只为了活下去</div>
+      </div>
+
+      <div class="note">
+        <div class="nt">不是在骂工作本身</div>
+        <div class="nd">工作是很好的踏脚石</div>
+        <div class="step">
+          <span class="sp">练手</span>
+          <span class="sp">攒经验</span>
+          <span class="sp">积累技能</span>
+        </div>
+      </div>
+
+      <div class="lead lo" style="margin-top:30px">这段话，是说给<span class="em">一想到下面那个账就坐不住</span>的人听的</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.569" data-track-index="5"><div class="sub-inner">那我们就从第一根支柱说起：<span class="sub-k">工资奴役</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.699" data-duration="1.527" data-track-index="5"><div class="sub-inner">工资奴役是<span class="sub-k">什么</span>？</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.226" data-duration="5.919" data-track-index="5"><div class="sub-inner">是你做着自己没得选的、<span class="sub-k">毫无意义的苦活</span>，为别人做，只为了活下去。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.295" data-duration="3.313" data-track-index="5"><div class="sub-inner">我先说清楚，这<span class="sub-k">不是在骂工作本身</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.751" data-duration="6.378" data-track-index="5"><div class="sub-inner">工作是很好的<span class="sub-k">踏脚石</span>，能让你练手、攒经验、积累技能。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.267" data-duration="6.332" data-track-index="5"><div class="sub-inner">但总有人一听到说工作不好，就跳出来：你个傻子，我可是真的<span class="sub-k">很享受我的工作</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.747" data-duration="1.035" data-track-index="5"><div class="sub-inner">那<span class="sub-k">挺好的</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.782" data-duration="2.278" data-track-index="5"><div class="sub-inner">这段话<span class="sub-k">不是说给你听的</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="31.203" data-duration="5.275" data-track-index="5"><div class="sub-inner">它是说给另一种人听的——那种一想到下面这个账，就<span class="sub-k">坐不住</span>的人。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.b-main', 5.2, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.note', 11.3, {y:18, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.note .nd', 14.8, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.note .step .sp', 16.8, {y:12, step:.16, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.lo', 31.2, {y:18, d:.4, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.699],['#sub-3',5.226],['#sub-4',11.295],['#sub-5',14.751],['#sub-6',21.267],['#sub-7',27.747],['#sub-8',28.782],['#sub-9',31.203]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

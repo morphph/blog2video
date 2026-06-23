@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .term-l2{font-size:60px}
+[data-composition-id='s08'] .q-coral{color:#ff6b5e}
+[data-composition-id='s08'] .verdict{margin-top:24px;font-weight:600;font-size:34px;line-height:1.45;color:#8a8a85}
+[data-composition-id='s08'] .verdict .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s08'] .pivot{margin-top:30px;font-weight:700;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s08'] .pivot .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="38.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[08/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 别看感受 · <span class="acc">看一条硬标准</span></div>
+
+      <div class="term" style="margin-top:24px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">slave-check: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>没办法停止上班</div>
+          <div class="term-l2">一停,就是<span class="q-coral">灾难</span></div>
+          <div class="verdict">又没有创造其他出路的技能 —— 那按定义,你就是个<span class="em">奴隶</span>,不管感受怎么说。</div>
+        </div>
+      </div>
+
+      <div class="status alert atk" style="margin-top:28px"><span class="dot"></span>绑成一体的人 · 会把这句话当成一次真正的攻击</div>
+
+      <div class="pivot">越想跟我吵,越证明了这一点。</div>
+      <div class="pivot ans" style="margin-top:18px">对抗「大替代」的办法 —— 开始<span class="em">押注一件属于你自己的东西</span>。</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.56" data-track-index="5"><div class="sub-inner">最关键的一句<span class="sub-k">来了</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.713" data-duration="4.37" data-track-index="5"><div class="sub-inner">判断你是不是奴隶,别看感受,<span class="sub-k">看一条硬标准</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.249" data-duration="10.86" data-track-index="5"><div class="sub-inner">如果你没办法停止上班,一停就是灾难,而你又没有创造其他出路的技能——那按定义,你就是个<span class="sub-k">奴隶</span>,不管你的感受怎么说。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.265" data-duration="7.528" data-track-index="5"><div class="sub-inner">更扎心的是,如果你已经把自己和这份工作绑成了一体,你会把这句话当成<span class="sub-k">一次真正的攻击</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.933" data-duration="1.62" data-track-index="5"><div class="sub-inner">你会想<span class="sub-k">跟我吵</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.553" data-duration="0.926" data-track-index="5"><div class="sub-inner">没关系。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.479" data-duration="3.24" data-track-index="5"><div class="sub-inner">但你越想吵,<span class="sub-k">越证明了这一点</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.873" data-duration="3.114" data-track-index="5"><div class="sub-inner">那么,对抗"大替代"的<span class="sub-k">办法是什么</span>?</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.987" data-duration="4.762" data-track-index="5"><div class="sub-inner">其实就藏在这里——你得开始<span class="sub-k">押注一件属于你自己的东西</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.term', 1.8, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},2.0);
+    D2.enter(tl, R+'.term-l1', 6.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 9.5, {y:16, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.verdict', 13.2, {y:10, d:.32, ease:'power1.out'});
+    D2.enter(tl, R+'.atk', 17.3, {y:12, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.pivot', 27.5, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.ans', 33.9, {y:14, d:.36, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.713],['#sub-3',6.249],['#sub-4',17.265],['#sub-5',24.933],['#sub-6',26.553],['#sub-7',27.479],['#sub-8',30.873],['#sub-9',33.987]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.9, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

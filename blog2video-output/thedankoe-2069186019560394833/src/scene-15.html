@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .swlist{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s15'] .swlist .sw{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:5px 14px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="40.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[15/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 不是钱的故事 · <span class="acc">是身份的转变</span></div>
+      <div class="h1" style="margin-top:18px">先骗自己相信<br><span class="em">"这件事是可能的"</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">把自己扔进一个<span class="code">逼你成长的环境</span></div>
+          <div class="rd">改变人生最快的方式 —— 把自己从现在的环境里<span class="ok">连根拔起</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">物理环境 · 数字环境,<span class="code">一夜之间全换掉</span></div>
+          <div class="swlist">
+            <span class="sw">你去的地方</span><span class="sw">你关注的账号</span><span class="sw">你消费的信息</span>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.071" data-track-index="5"><div class="sub-inner">听起来是有点<span class="sub-k">戏剧化</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.232" data-duration="6.251" data-track-index="5"><div class="sub-inner">但你要明白,光是"三百美元"这个数字,<span class="sub-k">说明不了全部</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.64" data-duration="5.868" data-track-index="5"><div class="sub-inner">它背后是一次<span class="sub-k">身份的转变</span>,是我先骗自己相信"这件事是可能的"。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.652" data-duration="1.76" data-track-index="5"><div class="sub-inner">那怎么完成这个<span class="sub-k">转变</span>?</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.412" data-duration="2.993" data-track-index="5"><div class="sub-inner">这里有<span class="sub-k">两步</span>,我觉得任何人都能上手。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.548" data-duration="3.859" data-track-index="5"><div class="sub-inner">第一步,把自己狠狠扔进一个<span class="sub-k">逼你成长的环境</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.544" data-duration="4.881" data-track-index="5"><div class="sub-inner">改变人生最快的方式,是把自己从现在的环境里<span class="sub-k">连根拔起</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="28.584" data-duration="4.033" data-track-index="5"><div class="sub-inner">物理环境,数字环境,<span class="sub-k">一夜之间,全换掉</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.76" data-duration="4.881" data-track-index="5"><div class="sub-inner">你去的地方,你关注的账号,你消费的信息,<span class="sub-k">全部换</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="37.8" data-duration="2.408" data-track-index="5"><div class="sub-inner">这很难,但它是<span class="sub-k">真的有用</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    // 身份的转变标题(sub-3)
+    D2.enter(tl, R+'.h1', 8.7, {y:20, d:.42, ease:'expo.out'});
+    // 第一步(sub-6/sub-7)
+    D2.enter(tl, R+'.r1', 19.6, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 23.6, {y:12, d:.32, ease:'power2.out'});
+    // 第二步(sub-8/sub-9)
+    D2.enter(tl, R+'.r2', 28.6, {x:-24, d:.4, ease:'power4.out'});
+    D2.stagger(tl, R+'.r2 .swlist .sw', 32.8, {y:12, step:.16, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.232],['#sub-3',8.64],['#sub-4',14.652],['#sub-5',16.412],['#sub-6',19.548],['#sub-7',23.544],['#sub-8',28.584],['#sub-9',32.76],['#sub-10',37.8]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 40.367, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

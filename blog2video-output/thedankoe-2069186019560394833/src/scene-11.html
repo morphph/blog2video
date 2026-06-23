@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .chart{display:flex;gap:22px;width:100%;margin-top:40px}
+[data-composition-id='s11'] .col2{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 28px;display:flex;flex-direction:column;align-items:flex-start}
+[data-composition-id='s11'] .col2 .cap{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s11'] .col2 .big{margin-top:14px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:120px;line-height:1;font-variant-numeric:tabular-nums;color:#ccff4d;display:flex;align-items:baseline;gap:10px}
+[data-composition-id='s11'] .col2 .big .tr{font-size:48px;font-weight:700}
+[data-composition-id='s11'] .col2 .desc{margin-top:18px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s11'] .col2.down .big{color:#5fd3e8}
+[data-composition-id='s11'] .baseline{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s11'] .baseline .b100{color:#edebe6;font-weight:700}
+[data-composition-id='s11'] .concl2{margin-top:36px;font-weight:700;font-size:42px;line-height:1.4;color:#edebe6}
+[data-composition-id='s11'] .concl2 .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="39.967" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[11/27]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 《金融时报》图表 · <span class="acc">资产创造 ≠ 爆款</span></div>
+      <div class="h1" style="margin-top:18px">App 发布潮，<br><span class="em">却毫无起色</span></div>
+
+      <div class="baseline">以 2024 年均值 = <span class="b100">100</span></div>
+
+      <div class="chart">
+        <div class="col2 up c-up">
+          <div class="cap">// 发布量</div>
+          <div class="big"><span id="num-up">100</span><span class="tr">↑</span></div>
+          <div class="desc">App 发布量<br>一路飙升</div>
+        </div>
+        <div class="col2 down c-down">
+          <div class="cap">// 真实使用 · 评价</div>
+          <div class="big"><span id="num-down">100</span><span class="tr">↓</span></div>
+          <div class="desc">被人用、被评价<br>一路跌破</div>
+        </div>
+      </div>
+
+      <div class="concl2 c-concl">"做得出来"和"被人用"，<br>已经<span class="em">彻底脱钩</span>了</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.071" data-track-index="5"><div class="sub-inner">那 AI 在这里扮演什么<span class="sub-k">角色</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.219" data-duration="3.139" data-track-index="5"><div class="sub-inner">AI 现在非常擅长一件事：<span class="sub-k">资产创造</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.495" data-duration="3.441" data-track-index="5"><div class="sub-inner">可是，造得出来，<span class="sub-k">不等于能做成爆款</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.095" data-duration="3.952" data-track-index="5"><div class="sub-inner">造得出来只是做成爆款的<span class="sub-k">必要条件</span>，远远不够。</div></div>
+    <div id="sub-5" class="clip sub" data-start="13.199" data-duration="3.093" data-track-index="5"><div class="sub-inner">这里有一张《<span class="sub-k">金融时报</span>》的图，特别能说明问题。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.439" data-duration="6.46" data-track-index="5"><div class="sub-inner">它的标题是：Agentic AI 催生了一波 App 发布潮，但这些 App <span class="sub-k">毫无起色</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.063" data-duration="3.011" data-track-index="5"><div class="sub-inner">以 2024 年的平均水平当作<span class="sub-k">一百</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="26.231" data-duration="2.965" data-track-index="5"><div class="sub-inner">App 的发布量，一路飙到了<span class="sub-k">一百八以上</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="29.363" data-duration="5.183" data-track-index="5"><div class="sub-inner">而 App 真正被人用、被人评价的数据，却一路<span class="sub-k">跌破了八十</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="34.691" data-duration="5.148" data-track-index="5"><div class="sub-inner">你看，"做得出来"和"被人用"，已经<span class="sub-k">彻底脱钩</span>了。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 5.5, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.baseline', 23.1, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c-up', 26.2, {x:-22, d:.36, ease:'power3.out'});
+    D2.countUp(tl, R+'#num-up', 26.6, 100, 180, 1.4, {prefix:'', suffix:'+'});
+    D2.enter(tl, R+'.c-down', 29.4, {x:22, d:.36, ease:'power2.out'});
+    D2.countUp(tl, R+'#num-down', 29.8, 100, 80, 1.5, {prefix:'<'});
+    D2.enter(tl, R+'.c-concl', 34.7, {y:16, d:.36, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.219],['#sub-3',5.495],['#sub-4',9.095],['#sub-5',13.199],['#sub-6',16.439],['#sub-7',23.063],['#sub-8',26.231],['#sub-9',29.363],['#sub-10',34.691]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.967, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

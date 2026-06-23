@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-22 特有 —— */
+[data-composition-id='s22'] .term-l2{font-size:84px}
+[data-composition-id='s22'] .q-coral{color:#ff6b5e}
+[data-composition-id='s22'] .term-en{font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85}
+[data-composition-id='s22'] .punch{margin-top:34px;font-weight:700;font-size:42px;line-height:1.45;color:#edebe6}
+[data-composition-id='s22'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s22" data-start="0" data-duration="22.933" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 逃离工资奴役<span class="b-cur"></span></div>
+      <div class="idx">[22/27]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 插一句<span class="acc">提醒</span></div>
+
+      <div class="term" style="margin-top:28px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">creator@brand: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>不是「交给 AI 一夜涨粉十万」</div>
+          <div class="term-l2">点赞<span class="q-coral">不是</span>现金</div>
+          <div class="term-en">// likes ain't cash</div>
+          <div class="term-src">— <b>JK Molina</b></div>
+        </div>
+      </div>
+
+      <div class="punch">真正的内容,是用<span class="em">叙事和权威建立信任</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.011" data-duration="1.56" data-track-index="5"><div class="sub-inner">这里要插一句<span class="sub-k">提醒</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.739" data-duration="6.042" data-track-index="5"><div class="sub-inner">我说的内容,绝不是那种"我把社媒交给 AI,<span class="sub-k">一夜涨粉十万</span>"的玩意儿。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.931" data-duration="5.995" data-track-index="5"><div class="sub-inner">那东西基本一文不值,除非你真的在用叙事和权威,建立起<span class="sub-k">信任和忠诚</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.087" data-duration="2.501" data-track-index="5"><div class="sub-inner">有句话说得好:<span class="sub-k">点赞不是现金</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.751" data-duration="6.042" data-track-index="5"><div class="sub-inner">真正聪明的内容创作,远不止是发点<span class="sub-k">情绪垃圾</span>去换点赞和关注。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s22'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.term', 1.8, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},2.0);
+    D2.enter(tl, R+'.term-l1', 2.4, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.term-l2', 14.1, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.term-en', 15.2, {opacity:0, y:8, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.term-src', 15.7, {opacity:0, y:8, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.punch', 16.8, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.011],['#sub-2',1.739],['#sub-3',7.931],['#sub-4',14.087],['#sub-5',16.751]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 22.933, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s22'] = tl;
+  })();
+  </script>
+</body>
+</html>

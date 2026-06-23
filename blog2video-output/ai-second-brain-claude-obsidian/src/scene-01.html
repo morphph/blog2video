@@ -92,12 +92,12 @@
         <div class="c-col bad cb-bad">
           <div class="ch">越用越蠢</div>
           <div class="verdict">每次都像<br>第一次见</div>
-          <div class="note">记忆被丢掉</div>
+          <div class="note nt-bad">记忆被丢掉</div>
         </div>
         <div class="c-col good cb-good">
           <div class="ch">越用越懂他</div>
           <div class="verdict">连他都快忘的事<br>它都记得</div>
-          <div class="note">记忆被攒下来</div>
+          <div class="note nt-good">记忆被攒下来</div>
         </div>
       </div>
       <div class="c-punch">差别不在谁更聪明，在记忆是<span class="hl"><span class="bar"></span><span class="tx">攒下来</span></span></div>
@@ -162,6 +162,9 @@
     tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},23.1);
     tl.from(R+'.cb-bad',{x:-26,opacity:0,duration:.4,ease:'power3.out'},24.4);
     tl.from(R+'.cb-good',{x:26,opacity:0,duration:.4,ease:'expo.out'},27.6);
+    /* note 行作为晚到子元素,填补 28-37 长 hold */
+    tl.from(R+'.nt-bad',{y:14,opacity:0,duration:.32,ease:'power2.out'},30.4);
+    tl.from(R+'.nt-good',{y:14,opacity:0,duration:.32,ease:'power3.out'},32.2);
     tl.from(R+'.c-punch',{y:20,opacity:0,duration:.4,ease:'power3.out'},37.4);
     /* hero — 攒下来 acid sweep @ 39.9 */
     tl.to(R+'.c-punch .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},39.9);

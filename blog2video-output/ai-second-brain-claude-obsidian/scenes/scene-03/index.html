@@ -164,120 +164,64 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
 .endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
-/* —— scene-01 特有(cover,多 beat 封面)—— */
-[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
-  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
-
-/* beat A — hook 痛点循环 */
-[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
-[data-composition-id='s01'] .a-kick .acc{color:#ff6b5e}
-[data-composition-id='s01'] .a-h1{margin-top:20px;font-weight:900;font-size:84px;line-height:1.12;color:#edebe6}
-[data-composition-id='s01'] .a-h1 .em{color:#ff6b5e}
-[data-composition-id='s01'] .a-steps{margin-top:44px;display:flex;flex-direction:column;gap:16px;width:100%}
-[data-composition-id='s01'] .a-step{display:flex;align-items:center;gap:22px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 28px}
-[data-composition-id='s01'] .a-step .n{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;min-width:34px}
-[data-composition-id='s01'] .a-step .x{font-weight:600;font-size:40px;color:#edebe6}
-[data-composition-id='s01'] .a-loop{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85}
-[data-composition-id='s01'] .a-loop .arrow{color:#ff6b5e}
-
-/* beat B — 转折 */
-[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
-[data-composition-id='s01'] .b-kick .acc{color:#ccff4d}
-[data-composition-id='s01'] .b-en{margin-top:22px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;line-height:1.04;letter-spacing:-.03em;color:#edebe6}
-[data-composition-id='s01'] .b-name{margin-top:24px;font-weight:600;font-size:42px;color:#8a8a85}
-[data-composition-id='s01'] .b-name b{color:#edebe6;font-weight:700}
-[data-composition-id='s01'] .b-punch{margin-top:50px}
-[data-composition-id='s01'] .hl{position:relative;display:inline-block;padding:6px 14px}
-[data-composition-id='s01'] .hl .bar{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
-[data-composition-id='s01'] .hl .tx{position:relative;z-index:1;font-weight:900;font-size:72px;color:#edebe6}
-
-/* beat C — 对比 */
-[data-composition-id='s01'] .c-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
-[data-composition-id='s01'] .c-kick .acc{color:#ccff4d}
-[data-composition-id='s01'] .c-cols{margin-top:40px;display:flex;gap:22px;width:100%}
-[data-composition-id='s01'] .c-col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 30px;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
-[data-composition-id='s01'] .c-col .ch{font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:24px}
-[data-composition-id='s01'] .c-col.bad{border-color:rgba(255,107,94,.4)}
-[data-composition-id='s01'] .c-col.bad .ch{color:#ff6b5e}
-[data-composition-id='s01'] .c-col .verdict{font-weight:900;font-size:54px;line-height:1.18;color:#edebe6}
-[data-composition-id='s01'] .c-col .note{margin-top:16px;font-weight:500;font-size:28px;line-height:1.4;color:#8a8a85}
-[data-composition-id='s01'] .c-punch{margin-top:46px;font-weight:900;font-size:56px;line-height:1.3;color:#edebe6}
-[data-composition-id='s01'] .c-punch .hl{padding:4px 12px}
-[data-composition-id='s01'] .c-punch .hl .tx{font-size:56px}
-
-/* beat D — teaser */
-[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
-[data-composition-id='s01'] .d-q{margin-top:22px;font-weight:900;font-size:84px;line-height:1.2;color:#edebe6}
-[data-composition-id='s01'] .d-q .em{color:#ccff4d}
-[data-composition-id='s01'] .d-tag{margin-top:46px;display:inline-flex;align-items:center;gap:16px;
-  background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
-[data-composition-id='s01'] .d-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
-[data-composition-id='s01'] .d-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .h2{margin-top:18px}
+[data-composition-id='s03'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s03'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s03'] .metaphor .own{color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .colh{margin-top:34px}
+[data-composition-id='s03'] .cols{margin-top:16px}
+[data-composition-id='s03'] .col .ds .gone{color:#5fd3e8}
+[data-composition-id='s03'] .col .ds .keep{color:#ccff4d}
+[data-composition-id='s03'] .read{margin-top:30px}
+[data-composition-id='s03'] .read .lead{font-size:36px}
+[data-composition-id='s03'] .read .machine{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s03'] .read .machine .em{color:#ccff4d;font-weight:700}
 </style>
 </head>
 <body>
-  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="45.733" data-width="1080" data-height="1920">
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="39.8" data-width="1080" data-height="1920">
     <div class="grid"></div>
     <div class="topbar">
       <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
-      <div class="idx">[01/11]</div>
+      <div class="idx">[03/11]</div>
     </div>
 
-    <!-- BEAT A: hook 痛点循环 (0 - 15.4) -->
-    <div class="beat" id="beatA">
-      <div class="a-kick">STATUS QUO · <span class="acc">每次打开 Claude</span></div>
-      <div class="a-h1">总是<span class="em">从头解释</span><br>一遍自己</div>
-      <div class="a-steps">
-        <div class="a-step as1"><span class="n">01</span><span class="x">我是谁、在做什么项目</span></div>
-        <div class="a-step as2"><span class="n">02</span><span class="x">聊得正起劲，关掉窗口</span></div>
-        <div class="a-step as3"><span class="n">03</span><span class="x">它就把你忘得干干净净</span></div>
+    <div class="content top">
+      <div class="kicker k-top">// CORE JUDGMENT · <span class="acc">核心判断</span></div>
+      <div class="h2">本质上只是<br>一堆<span class="em">文本文件</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">记忆<span class="em">不被锁死</span>在任何 AI 产品里</div>
+        <div class="metaphor">你拥有的是<span class="own">大脑本身</span> <span class="ar">→</span> 不是工具</div>
       </div>
-      <div class="a-loop"><span class="arrow">↺</span> 下一次，又从零开始</div>
-    </div>
 
-    <!-- BEAT B: 转折 (15.552 - 22.79) -->
-    <div class="beat" id="beatB" style="opacity:0">
-      <div class="b-kick">2026 · 四月 · <span class="acc">一个新模式</span></div>
-      <div class="b-en">LLM Wiki</div>
-      <div class="b-name">提出者 · <b>Andrej Karpathy</b></div>
-      <div class="b-punch"><span class="hl"><span class="bar"></span><span class="tx">彻底翻了过来</span></span></div>
-    </div>
-
-    <!-- BEAT C: 对比 (22.932 - 42.908) -->
-    <div class="beat" id="beatC" style="opacity:0">
-      <div class="c-kick">同样 <span class="acc">$20 / 月</span> · 两种结局</div>
-      <div class="c-cols">
-        <div class="c-col bad cb-bad">
-          <div class="ch">越用越蠢</div>
-          <div class="verdict">每次都像<br>第一次见</div>
-          <div class="note">记忆被丢掉</div>
+      <div class="kicker colh">// 同一份记忆,两种命运</div>
+      <div class="cols">
+        <div class="col c-left">
+          <div class="ch">纯文本文件</div>
+          <div class="it"><div class="nm">在你电脑上</div><div class="ds"><span class="keep">永远归你</span></div></div>
         </div>
-        <div class="c-col good cb-good">
-          <div class="ch">越用越懂他</div>
-          <div class="verdict">连他都快忘的事<br>它都记得</div>
-          <div class="note">记忆被攒下来</div>
+        <div class="col alt c-right">
+          <div class="ch">聊天记录</div>
+          <div class="it"><div class="nm">存在别人云端</div><div class="ds"><span class="gone">随产品消失</span></div></div>
         </div>
       </div>
-      <div class="c-punch">差别不在谁更聪明，在记忆是<span class="hl"><span class="bar"></span><span class="tx">攒下来</span></span></div>
+
+      <div class="bracket read">
+        <div class="lead">AI 模型,只是个可随时替换的「<span class="em">读取头</span>」</div>
+        <div class="machine">同样的订阅 <span class="em">·</span> 一台完全不同的机器</div>
+      </div>
     </div>
 
-    <!-- BEAT D: teaser (42.908 - 45.566) -->
-    <div class="beat" id="beatD" style="opacity:0">
-      <div class="d-led">// 今天</div>
-      <div class="d-q">就把这套东西<br><span class="em">读透</span></div>
-      <div class="d-tag"><span class="dot"></span><span class="lab">从零搭一个 AI 第二大脑</span></div>
-    </div>
-
-    <!-- SUBTITLES (local time) -->
-    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.183" data-track-index="5"><div class="sub-inner">每次打开 Claude，你是不是都得从头<span class="sub-k">解释一遍自己</span>？</div></div>
-    <div id="sub-2" class="clip sub" data-start="5.193" data-duration="4.030" data-track-index="5"><div class="sub-inner">我是谁、在做什么项目、希望它<span class="sub-k">怎么跟我说话</span>。</div></div>
-    <div id="sub-3" class="clip sub" data-start="9.233" data-duration="4.221" data-track-index="5"><div class="sub-inner">聊得正起劲，关掉窗口，它就把你<span class="sub-k">忘得干干净净</span>。</div></div>
-    <div id="sub-4" class="clip sub" data-start="13.464" data-duration="1.914" data-track-index="5"><div class="sub-inner">下一次，又<span class="sub-k">从零开始</span>。</div></div>
-    <div id="sub-5" class="clip sub" data-start="15.552" data-duration="7.228" data-track-index="5"><div class="sub-inner">但今年四月，Andrej Karpathy 提出了一个叫 <span class="sub-k">LLM Wiki</span> 的模式，把这件事彻底翻了过来。</div></div>
-    <div id="sub-6" class="clip sub" data-start="22.932" data-duration="12.046" data-track-index="5"><div class="sub-inner">一套同样二十美元的订阅，有人的 Claude 越用越蠢，每次都像第一次见；有人的 Claude 却<span class="sub-k">越用越懂他</span>，连他自己都快忘了的事，它都记得。</div></div>
-    <div id="sub-7" class="clip sub" data-start="35.136" data-duration="2.853" data-track-index="5"><div class="sub-inner">差别不在谁的 AI <span class="sub-k">更聪明</span>。</div></div>
-    <div id="sub-8" class="clip sub" data-start="37.999" data-duration="4.899" data-track-index="5"><div class="sub-inner">差别在于，记忆到底是被丢掉了，还是被你<span class="sub-k">攒了下来</span>。</div></div>
-    <div id="sub-9" class="clip sub" data-start="42.908" data-duration="2.648" data-track-index="5"><div class="sub-inner">今天我们就把这套东西<span class="sub-k">读透</span>。</div></div>
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.338" data-track-index="5"><div class="sub-inner">这里有个判断，我读完最大的感受就<span class="sub-k">在这</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.479" data-duration="3.053" data-track-index="5"><div class="sub-inner">整套东西，本质上只是一堆<span class="sub-k">文本文件</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.542" data-duration="6.296" data-track-index="5"><div class="sub-inner">这句话听着平淡，但它意味着：你的记忆<span class="sub-k">不被锁死</span>在任何一个 AI 产品里。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.848" data-duration="3.954" data-track-index="5"><div class="sub-inner">明年出了更强的模型，你把它指过去，<span class="sub-k">照样能用</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.979" data-duration="3.301" data-track-index="5"><div class="sub-inner">因为你拥有的是<span class="sub-k">大脑本身</span>，不是工具。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.29" data-duration="8.560" data-track-index="5"><div class="sub-inner">聊天记录是存在别人云端的、会随产品消失的东西；而纯文本文件，是你电脑上、<span class="sub-k">永远归你</span>的东西。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.06" data-duration="5.301" data-track-index="5"><div class="sub-inner">AI 模型在这套结构里，不过是个可以随时替换的<span class="sub-k">"读取头"</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.511" data-duration="5.138" data-track-index="5"><div class="sub-inner">这就是为什么作者说，同样的订阅，却是一台<span class="sub-k">完全不同的机器</span>。</div></div>
   </div>
 
   <script>
@@ -413,61 +357,23 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
   </script>
   <script>
   (function(){
-    window.__timelines = window.__timelines || {};
-    var R="[data-composition-id='s01'] ";
+    var R="[data-composition-id='s03'] ";
     var tl=gsap.timeline({paused:true});
-
-    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
-    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
-
-    /* BEAT A (0 - ~15.4) */
-    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.4);
-    tl.from(R+'.a-h1',{y:24,opacity:0,duration:.4,ease:'expo.out'},0.9);
-    tl.from(R+'.as1',{x:-24,opacity:0,duration:.32,ease:'power3.out'},5.2);
-    tl.from(R+'.as2',{x:-24,opacity:0,duration:.32,ease:'power2.out'},9.3);
-    tl.from(R+'.as3',{x:-24,opacity:0,duration:.32,ease:'expo.out'},11.4);
-    tl.from(R+'.a-loop',{opacity:0,duration:.3,ease:'power1.out'},13.5);
-    tl.to(R+'#beatA',{scale:1.03,duration:15.4,ease:'none'},0);
-
-    /* A -> B swap @ 15.552 */
-    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},15.1);
-    tl.set(R+'#beatA',{opacity:0},15.55);
-    tl.set(R+'#beatB',{opacity:1},15.55);
-    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},15.7);
-    tl.from(R+'.b-en',{x:-40,opacity:0,duration:.45,ease:'expo.out'},16.1);
-    tl.from(R+'.b-name',{y:18,opacity:0,duration:.32,ease:'power3.out'},18.4);
-    tl.from(R+'.b-punch',{opacity:0,duration:.15,ease:'power1.out'},20.4);
-    tl.to(R+'.b-punch .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},20.5);
-    tl.to(R+'.b-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},20.66);
-    tl.to(R+'#beatB',{scale:1.03,duration:7.3,ease:'none'},15.55);
-
-    /* B -> C swap @ 22.932 */
-    tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},22.5);
-    tl.set(R+'#beatB',{opacity:0},22.93);
-    tl.set(R+'#beatC',{opacity:1},22.93);
-    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},23.1);
-    tl.from(R+'.cb-bad',{x:-26,opacity:0,duration:.4,ease:'power3.out'},24.4);
-    tl.from(R+'.cb-good',{x:26,opacity:0,duration:.4,ease:'expo.out'},27.6);
-    tl.from(R+'.c-punch',{y:20,opacity:0,duration:.4,ease:'power3.out'},37.4);
-    /* hero — 攒下来 acid sweep @ 39.9 */
-    tl.to(R+'.c-punch .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},39.9);
-    tl.to(R+'.c-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},40.06);
-    tl.to(R+'#beatC',{scale:1.025,duration:19.9,ease:'none'},22.93);
-
-    /* C -> D swap @ 42.908 */
-    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},42.5);
-    tl.set(R+'#beatC',{opacity:0},42.91);
-    tl.set(R+'#beatD',{opacity:1},42.91);
-    tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},43.0);
-    tl.from(R+'.d-q',{y:22,opacity:0,duration:.4,ease:'power3.out'},43.25);
-    tl.from(R+'.d-tag',{y:18,opacity:0,duration:.35,ease:'expo.out'},44.5);
-    tl.to(R+'#beatD',{scale:1.03,duration:2.8,ease:'none'},42.91);
-
-    /* subtitle fade-ins */
-    [['#sub-1',0],['#sub-2',5.193],['#sub-3',9.233],['#sub-4',13.464],['#sub-5',15.552],['#sub-6',22.932],['#sub-7',35.136],['#sub-8',37.999],['#sub-9',42.908]]
-      .forEach(function(s){ tl.from(R+s[0],{opacity:0,duration:.2,ease:'power1.out'},s[1]); });
-
-    window.__timelines['s01']=tl;
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 3.5, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket:not(.read)', 6.6, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.metaphor', 17.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.colh', 20.3, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c-left', 20.6, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.c-right', 23.4, {x:22, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket.read', 29.05, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.read .machine', 34.5, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.479],['#sub-3',6.542],['#sub-4',12.848],['#sub-5',16.979],['#sub-6',20.29],['#sub-7',29.06],['#sub-8',34.511]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.8, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
   })();
   </script>
 </body>

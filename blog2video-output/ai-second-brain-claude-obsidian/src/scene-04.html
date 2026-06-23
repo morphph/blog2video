@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .poles{display:flex;gap:22px;margin-top:6px}
+[data-composition-id='s04'] .pole{flex:1;min-width:0}
+[data-composition-id='s04'] .pole .pk{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s04'] .pole .pv{margin-top:8px;font-weight:900;font-size:48px;line-height:1.15}
+[data-composition-id='s04'] .pole.decay .pv{color:#ff6b5e}
+[data-composition-id='s04'] .pole.grow .pv{color:#ccff4d}
+[data-composition-id='s04'] .pole .ar{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-top:6px}
+[data-composition-id='s04'] .pole.decay .ar b{color:#ff6b5e;font-weight:700}
+[data-composition-id='s04'] .pole.grow .ar b{color:#ccff4d;font-weight:700}
+[data-composition-id='s04'] .tlh{margin-top:30px}
+[data-composition-id='s04'] .tl-row .lk{display:inline-block;margin-left:14px;font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;color:#ccff4d;letter-spacing:.02em;vertical-align:2px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="42.8" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[04/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// TRAJECTORY · <span class="acc">价值轨迹</span></div>
+      <div class="h2" style="margin-top:18px">同样跟 AI 对话<br>一个在<span class="em">长</span>,一个在烂</div>
+
+      <div class="bracket" style="margin-top:28px">
+        <div class="poles">
+          <div class="pole decay">
+            <div class="pk">CHAT HISTORY</div>
+            <div class="pv">会烂掉</div>
+            <div class="ar">关掉即丢 · 价值衰减 <b>→ 归零</b></div>
+          </div>
+          <div class="pole grow">
+            <div class="pk">THIS SYSTEM</div>
+            <div class="pv">在生长</div>
+            <div class="ar">每用一天 <b>锋利一点</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kicker tlh">// 图谱不是在堆积,是在生长</div>
+      <div class="tl" style="margin-top:16px">
+        <div class="tl-row r0"><div class="yr">今天</div><div class="wt">录进一条想法<span class="lk x0">链接到上月的项目</span></div></div>
+        <div class="tl-row r1"><div class="yr">明天</div><div class="wt">再来一条<span class="lk x1">+3 条线</span></div></div>
+        <div class="tl-row r2 now"><div class="yr">越用</div><div class="wt">结构化沉淀,不被当垃圾扔<span class="badge">越用越聪明</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="2.427" data-track-index="5"><div class="sub-inner">普通的聊天历史,是会<span class="sub-k">烂掉</span>的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.43" data-duration="6.935" data-track-index="5"><div class="sub-inner">你跟 Claude 聊过的每一段,关掉就再也找不回来,价值随时间衰减,<span class="sub-k">最后归零</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.507" data-duration="4.538" data-track-index="5"><div class="sub-inner">但这套系统反过来,它每用一天,就<span class="sub-k">变锋利一点</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.045" data-duration="8.046" data-track-index="5"><div class="sub-inner">今天你录进去一条想法,它链接到上个月的某个项目;明天又来一条,<span class="sub-k">又多连出三条线</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.091" data-duration="3.094" data-track-index="5"><div class="sub-inner">你的图谱不是在堆积,<span class="sub-k">是在生长</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.347" data-duration="4.706" data-track-index="5"><div class="sub-inner">你看,同样是跟 AI 对话,<span class="sub-k">一个在烂,一个在长</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.053" data-duration="8.627" data-track-index="5"><div class="sub-inner">区别不在 AI 多强大,而在于:你说过的话,是被当成垃圾扔了,还是被<span class="sub-k">结构化地沉淀</span>了下来。</div></div>
+    <div id="sub-8" class="clip sub" data-start="38.88" data-duration="3.777" data-track-index="5"><div class="sub-inner">这个差别,才是<span class="sub-k">越用越聪明</span>的真正来源。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 1.6, {y:20, d:.4, ease:'power3.out'});
+    // bracket 两极分时揭示:衰减极先到(sub-1/2),生长极反转(sub-3)
+    D2.enter(tl, R+'.pole.decay', 2.0, {x:-18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.pole.grow', 9.6, {x:18, d:.4, ease:'expo.out'});
+    // 时间线逐格点亮(生长节奏:cumulative,链接逐条多出来)
+    D2.enter(tl, R+'.tlh', 14.0, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 14.2, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r0 .x0', 16.0, {scale:.7, opacity:0, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 18.0, {x:-22, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .x1', 19.6, {scale:.7, opacity:0, d:.3, ease:'power4.out'});
+    D2.enter(tl, R+'.r2', 22.2, {x:-22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r2 .badge', 30.2, {scale:.6, opacity:0, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',2.43],['#sub-3',9.507],['#sub-4',14.045],['#sub-5',22.091],['#sub-6',25.347],['#sub-7',30.053],['#sub-8',38.88]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.8, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

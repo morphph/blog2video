@@ -145,6 +145,7 @@
 
     /* A -> B swap @ 15.552 */
     tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},15.1);
+    tl.set(R+'#beatA',{opacity:0},15.55);
     tl.set(R+'#beatB',{opacity:1},15.55);
     tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},15.7);
     tl.from(R+'.b-en',{x:-40,opacity:0,duration:.45,ease:'expo.out'},16.1);
@@ -156,6 +157,7 @@
 
     /* B -> C swap @ 22.932 */
     tl.to(R+'#beatB',{opacity:0,duration:.45,ease:'power2.inOut'},22.5);
+    tl.set(R+'#beatB',{opacity:0},22.93);
     tl.set(R+'#beatC',{opacity:1},22.93);
     tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},23.1);
     tl.from(R+'.cb-bad',{x:-26,opacity:0,duration:.4,ease:'power3.out'},24.4);
@@ -168,6 +170,7 @@
 
     /* C -> D swap @ 42.908 */
     tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},42.5);
+    tl.set(R+'#beatC',{opacity:0},42.91);
     tl.set(R+'#beatD',{opacity:1},42.91);
     tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},43.0);
     tl.from(R+'.d-q',{y:22,opacity:0,duration:.4,ease:'power3.out'},43.25);

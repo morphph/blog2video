@@ -1,0 +1,80 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e3]:
+        - generic [ref=e4]: To view keyboard shortcuts, press question mark
+        - link "View keyboard shortcuts" [ref=e5] [cursor=pointer]:
+          - /url: /i/keyboard_shortcuts
+      - generic:
+        - generic:
+          - button "Grok" [ref=e6] [cursor=pointer]:
+            - img [ref=e7]
+          - button "Chat" [ref=e10] [cursor=pointer]:
+            - img [ref=e11]
+      - generic [ref=e14]:
+        - button "Skip to home timeline" [ref=e15] [cursor=pointer]
+        - button "Skip to trending" [ref=e17] [cursor=pointer]
+        - banner [ref=e19]:
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - heading "X" [level=1] [ref=e24] [cursor=pointer]:
+                - link "X" [ref=e25]:
+                  - /url: /home
+                  - img [ref=e27]
+              - navigation "Primary" [ref=e31]:
+                - link "Home" [ref=e32] [cursor=pointer]:
+                  - /url: /home
+                  - img [ref=e35]
+                - link "Search and explore" [ref=e38] [cursor=pointer]:
+                  - /url: /explore
+                  - img [ref=e41]
+                - link "Notifications (21 unread notifications)" [ref=e44] [cursor=pointer]:
+                  - /url: /notifications
+                  - generic [ref=e46]:
+                    - img [ref=e47]
+                    - generic "20+ unread items" [ref=e50]:
+                      - generic [ref=e51]: 20+
+                - link "Follow" [ref=e52] [cursor=pointer]:
+                  - /url: /i/connect_people
+                  - img [ref=e55]
+                - link "Direct Messages" [ref=e58] [cursor=pointer]:
+                  - /url: /i/chat
+                  - img [ref=e61]
+                - link "Grok" [ref=e64] [cursor=pointer]:
+                  - /url: /i/grok
+                  - img [ref=e67]
+                - link "Premium" [ref=e70] [cursor=pointer]:
+                  - /url: /i/premium
+                  - img [ref=e73]
+                - link "Bookmarks" [ref=e76] [cursor=pointer]:
+                  - /url: /i/bookmarks
+                  - img [ref=e79]
+                - link "Creator Studio" [ref=e82] [cursor=pointer]:
+                  - /url: /i/jf/creators/studio
+                  - img [ref=e85]
+                - link "Articles" [ref=e89] [cursor=pointer]:
+                  - /url: /compose/articles
+                  - img [ref=e92]
+                - link "Profile" [ref=e97] [cursor=pointer]:
+                  - /url: /morph_thecat
+                  - img [ref=e100]
+                - button "More menu items" [ref=e103] [cursor=pointer]:
+                  - img [ref=e106]
+              - link "Post" [ref=e110] [cursor=pointer]:
+                - /url: /compose/post
+                - img [ref=e112]
+            - button "Account menu" [ref=e118] [cursor=pointer]
+        - main [ref=e129]:
+          - generic "Home timeline" [ref=e134]:
+            - generic [ref=e135]:
+              - button "Back" [ref=e143] [cursor=pointer]:
+                - img [ref=e145]
+              - generic:
+                - generic:
+                  - status:
+                    - button:
+                      - generic:
+                        - img
+                        - generic: See new posts
+            - progressbar "Loading timeline" [ref=e151]:
+              - img [ref=e153]

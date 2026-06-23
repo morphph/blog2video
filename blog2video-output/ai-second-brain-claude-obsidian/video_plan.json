@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How to Build an AI Second Brain With Claude and Obsidian That Gets Smarter Every Day",
+    "title_zh": "同样订阅费，为什么有人的 Claude 越用越懂你?",
+    "word_count": 1861,
+    "slug": "ai-second-brain-claude-obsidian"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇是一个连贯论证——把 Claude+Obsidian 第二大脑讲透，10 个步骤共同支撑同一个 thesis，没有可独立成片的子主题，不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "同样订阅费，为什么有人的 Claude 越用越懂你?"
+      }
+    ]
+  }
+}

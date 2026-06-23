@@ -1,0 +1,58 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "principle",
+ "dataDuration": 42.8,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_4.html",
+ "topbarIndex": "[04/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.003,
+   "localDuration": 2.427,
+   "text": "普通的聊天历史，是会烂掉的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.43,
+   "localDuration": 6.935,
+   "text": "你跟 Claude 聊过的每一段，关掉就再也找不回来，价值随时间衰减，最后归零。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.507,
+   "localDuration": 4.538,
+   "text": "但这套系统反过来，它每用一天，就变锋利一点。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.045,
+   "localDuration": 8.046,
+   "text": "今天你录进去一条想法，它链接到上个月的某个项目；明天又来一条，又多连出三条线。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.091,
+   "localDuration": 3.094,
+   "text": "你的图谱不是在堆积，是在生长。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.347,
+   "localDuration": 4.706,
+   "text": "你看，同样是跟 AI 对话，一个在烂，一个在长。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.053,
+   "localDuration": 8.627,
+   "text": "区别不在 AI 多强大，而在于：你说过的话，是被当成垃圾扔了，还是被结构化地沉淀了下来。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 38.88,
+   "localDuration": 3.777,
+   "text": "这个差别，才是越用越聪明的真正来源。"
+  }
+ ]
+}

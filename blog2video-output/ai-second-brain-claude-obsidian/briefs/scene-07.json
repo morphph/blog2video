@@ -1,0 +1,40 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 33.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_7.html",
+ "topbarIndex": "[07/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 10.558,
+   "text": "当你发现某件事做了不止一次——写客户邮件、准备一期视频、给银行流水分类——它就该被存下来，变成一个 Skill。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 10.719,
+   "localDuration": 7.396,
+   "text": "Skill 就是一段被保存下来的工作流，你一声令下，Claude 就照你的方式跑一遍。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 18.115,
+   "localDuration": 6.192,
+   "text": "你把你怎么做这件事、连同一个例子，告诉它，让它存成项目里的一个技能文件。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 24.471,
+   "localDuration": 5.536,
+   "text": "下一次，你只要说\"跑那个技能\"，它瞬间就按你的习惯执行。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 30.007,
+   "localDuration": 3.362,
+   "text": "你做事的方法，从此不用再重复一遍。"
+  }
+ ]
+}

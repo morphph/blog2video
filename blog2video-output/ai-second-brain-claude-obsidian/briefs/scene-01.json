@@ -1,0 +1,64 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 45.733,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_1.html",
+ "topbarIndex": "[01/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.193,
+   "text": "每次打开 Claude，你是不是都得从头解释一遍自己？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.193,
+   "localDuration": 4.04,
+   "text": "我是谁、在做什么项目、希望它怎么跟我说话。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.233,
+   "localDuration": 4.231,
+   "text": "聊得正起劲，关掉窗口，它就把你忘得干干净净。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.464,
+   "localDuration": 1.924,
+   "text": "下一次，又从零开始。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.552,
+   "localDuration": 7.238,
+   "text": "但今年四月，Andrej Karpathy 提出了一个叫 LLM Wiki 的模式，把这件事彻底翻了过来。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.932,
+   "localDuration": 12.056,
+   "text": "一套同样二十美元的订阅，有人的 Claude 越用越蠢，每次都像第一次见；有人的 Claude 却越用越懂他，连他自己都快忘了的事，它都记得。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 35.136,
+   "localDuration": 2.863,
+   "text": "差别不在谁的 AI 更聪明。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 37.999,
+   "localDuration": 4.909,
+   "text": "差别在于，记忆到底是被丢掉了，还是被你攒了下来。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 42.908,
+   "localDuration": 2.658,
+   "text": "今天我们就把这套东西读透。"
+  }
+ ]
+}

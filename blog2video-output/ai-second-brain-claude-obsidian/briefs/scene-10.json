@@ -1,0 +1,88 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 67.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_10.html",
+ "topbarIndex": "[10/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.488,
+   "text": "我不想只讲爽点。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.488,
+   "localDuration": 2.417,
+   "text": "这套系统是有门槛和代价的。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.068,
+   "localDuration": 2.557,
+   "text": "它强依赖本地运行加付费订阅。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.625,
+   "localDuration": 5.661,
+   "text": "你得开 Claude Pro，一个月二十美元，免费档跑不起来。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 12.286,
+   "localDuration": 6.392,
+   "text": "Obsidian 必须全程开着，那个连接只在软件运行时有效，一关就断。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 18.828,
+   "localDuration": 7.655,
+   "text": "而且纯本地文件，意味着没有现成的云同步和多设备协作，可靠性得靠你自己维护。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.64,
+   "localDuration": 2.889,
+   "text": "纯文本这套路子，也不是万能的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.529,
+   "localDuration": 5.392,
+   "text": "它擅长的是文字和想法，不擅长二进制文件、不擅长海量数据。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 34.921,
+   "localDuration": 6.933,
+   "text": "再加上前面说的自动驾驶风险，你是在把一部分控制权，交给一个不完美的系统。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 42.012,
+   "localDuration": 2.884,
+   "text": "这笔账，你得自己算清楚再上手。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 45.036,
+   "localDuration": 4.529,
+   "text": "如果你不想从零接线，开源社区已经把整套东西打包好了。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 49.565,
+   "localDuration": 11.497,
+   "text": "GitHub 上有几个现成的仓库，有的自带不同角色预设，有的带四十三条现成命令，还能跨 Claude、Codex、Gemini 用。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 61.2,
+   "localDuration": 6.297,
+   "text": "它们也都只是文本文件和脚本，克隆一个，再改成你自己的私人版本就行。"
+  }
+ ]
+}

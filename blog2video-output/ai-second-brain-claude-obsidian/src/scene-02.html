@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s02'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 13px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="38.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[02/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 你在搭什么 · <span class="acc">两个工具</span></div>
+      <div class="h1" style="margin-top:18px">分工里,<span class="em">藏着关键</span></div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="code">Obsidian</span> = 存储</div>
+          <div class="rd">免费笔记软件,纯文本全存在你自己的电脑上</div>
+          <div class="taglist"><span class="tg">纯文本</span><span class="tg">本地文件</span><span class="tg">想法地图</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="code">Claude</span> = 坐在上面的大脑</div>
+          <div class="rd">读完整个库,归位、连接,跨所有内容回答你</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.082" data-track-index="5"><div class="sub-inner">先说清楚你到底在<span class="sub-k">搭什么</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.069" data-duration="6.768" data-track-index="5"><div class="sub-inner">表面上看,是两个工具配合干活:一个叫 <span class="sub-k">Obsidian</span>,一个叫 Claude。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.837" data-duration="2.776" data-track-index="5"><div class="sub-inner">但它们的分工,藏着整件事的<span class="sub-k">关键</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.759" data-duration="2.315" data-track-index="5"><div class="sub-inner">Obsidian 是<span class="sub-k">存储</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.074" data-duration="5.876" data-track-index="5"><div class="sub-inner">它是个免费的笔记软件,所有内容都以<span class="sub-k">纯文本文件</span>,存在你自己的电脑上。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.95" data-duration="7.835" data-track-index="5"><div class="sub-inner">笔记之间可以互相链接,时间久了,这些链接会织成一张<span class="sub-k">图</span>,一张你所有想法如何彼此连接的地图。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.923" data-duration="2.737" data-track-index="5"><div class="sub-inner">Claude 是坐在上面的<span class="sub-k">大脑</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.66" data-duration="7.867" data-track-index="5"><div class="sub-inner">它读完你整个库,把新信息归到该去的地方,跟已有的东西<span class="sub-k">连起来</span>,然后能跨着所有内容回答你的问题。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.2, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 11.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 14.2, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.r1 .taglist .tg', 20.1, {y:12, step:.14, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 28.0, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 30.8, {y:12, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.069],['#sub-3',8.837],['#sub-4',11.759],['#sub-5',14.074],['#sub-6',19.95],['#sub-7',27.923],['#sub-8',30.66]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.7, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

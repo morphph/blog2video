@@ -1,0 +1,58 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 45.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_8.html",
+ "topbarIndex": "[08/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 2.617,
+   "text": "光有静态笔记，只是半个大脑。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.624,
+   "localDuration": 5.422,
+   "text": "真正的另一半，是那些实时在变的东西——你的日历、你的邮件。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.215,
+   "localDuration": 2.923,
+   "text": "这些都能用一行 MCP 命令接进来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.138,
+   "localDuration": 4.222,
+   "text": "MCP 是 Claude 跟其他应用对话的标准方式。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.56,
+   "localDuration": 10.43,
+   "text": "接上日历之后，你可以让它读今天的安排，把你在每个会上答应的事，记进任务项目里，再把没有明确下一步的事标出来。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.143,
+   "localDuration": 3.706,
+   "text": "等技能都跑通了，最后一步是把它放上自动驾驶。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.849,
+   "localDuration": 11.287,
+   "text": "在 Claude Desktop 里设一个定时任务，比如每天早上七点：自动归档新进来的东西、标记过期的笔记、给你写三行隔夜的变更摘要。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.299,
+   "localDuration": 3.824,
+   "text": "你睡一觉醒来，大脑已经自己把自己整理好了。"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 54.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_5.html",
+ "topbarIndex": "[05/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 4.602,
+   "text": "现在 Claude 能读你的库了，但它对你一无所知。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.609,
+   "localDuration": 2.125,
+   "text": "一个空的大脑，毫无用处。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.883,
+   "localDuration": 5.277,
+   "text": "直觉会告诉你：那我自己最了解我，我来把背景一条条敲进去。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.16,
+   "localDuration": 3.957,
+   "text": "但这恰恰是最枯燥、也最容易半途而废的做法。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.279,
+   "localDuration": 4.412,
+   "text": "正确的做法反过来——让 Claude 来面试你。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 20.691,
+   "localDuration": 9.559,
+   "text": "你给它一句话，让它一次只问一个问题：你是谁、今年的目标、希望它怎么跟你说话、你的长处和短板、手头的项目。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.45,
+   "localDuration": 3.604,
+   "text": "问一个，你答一个，答完它再问下一个。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.207,
+   "localDuration": 5.838,
+   "text": "把这当成你在给一个新搭档做交接，答得越真实，这具大脑就越懂你。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 40.045,
+   "localDuration": 7.156,
+   "text": "全部问完，它会把答案写进一个叫 CLAUDE.md 的文件，放在库的根目录。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 47.201,
+   "localDuration": 3.578,
+   "text": "之后每次开会话，它都自动加载这份资料。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 50.947,
+   "localDuration": 2.965,
+   "text": "你，再也不用重新解释自己。"
+  }
+ ]
+}

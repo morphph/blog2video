@@ -1,0 +1,58 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 38.7,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_2.html",
+ "topbarIndex": "[02/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.082,
+   "text": "先说清楚你到底在搭什么。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.069,
+   "localDuration": 6.768,
+   "text": "表面上看，是两个工具配合干活：一个叫 Obsidian，一个叫 Claude。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.837,
+   "localDuration": 2.776,
+   "text": "但它们的分工，藏着整件事的关键。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.759,
+   "localDuration": 2.315,
+   "text": "Obsidian 是存储。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.074,
+   "localDuration": 5.876,
+   "text": "它是个免费的笔记软件，所有内容都以纯文本文件，存在你自己的电脑上。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 19.95,
+   "localDuration": 7.835,
+   "text": "笔记之间可以互相链接，时间久了，这些链接会织成一张图，一张你所有想法如何彼此连接的地图。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.923,
+   "localDuration": 2.737,
+   "text": "Claude 是坐在上面的大脑。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.66,
+   "localDuration": 7.867,
+   "text": "它读完你整个库，把新信息归到该去的地方，跟已有的东西连起来，然后能跨着所有内容回答你的问题。"
+  }
+ ]
+}

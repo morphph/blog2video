@@ -1,0 +1,82 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "summary",
+ "dataDuration": 75.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-second-brain-claude-obsidian/slide_11.html",
+ "topbarIndex": "[11/11]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 2.025,
+   "text": "把这一切收拢成一句话。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.207,
+   "localDuration": 10.14,
+   "text": "在这之前，你一关窗口，Claude 就把你忘了，每次会话都从冷启动开始，所有上下文压在你一个人身上，你还记不住。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.503,
+   "localDuration": 4.027,
+   "text": "在这之后，它有了你整个生活和工作的记忆。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.53,
+   "localDuration": 7.45,
+   "text": "一个装着一切的库，一个能精确接着上次干的模型，一张趁你睡觉时自己生长的图。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.98,
+   "localDuration": 4.631,
+   "text": "全是纯文本，全归你，跑在你指过去的任何模型上。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.775,
+   "localDuration": 9.177,
+   "text": "所以你不是在配置一个 Claude，你是在造一具属于自己的记忆体——AI 会换代，但大脑归你，越喂越聪明。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 37.952,
+   "localDuration": 4.156,
+   "text": "绝大多数人会把这十步从头读到尾，然后什么也不建。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 42.275,
+   "localDuration": 10.604,
+   "text": "但真正今天就动手的那个人，一个月后打开自己的图谱，会愣住——因为它记得一些，连他自己都忘了自己曾经知道的事。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 53.039,
+   "localDuration": 6.071,
+   "text": "如果今天只带走一件事，那就是：别再把记忆留在那个会忘事的聊天框里。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 59.11,
+   "localDuration": 10.118,
+   "text": "哪怕只花一个晚上，把 CLAUDE.md 这第一块砖搭起来，让它先面试你一次，你就已经站在了几乎所有人的前面。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 69.383,
+   "localDuration": 4.123,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 73.506,
+   "localDuration": 1.443,
+   "text": "我们下期再见。"
+  }
+ ]
+}

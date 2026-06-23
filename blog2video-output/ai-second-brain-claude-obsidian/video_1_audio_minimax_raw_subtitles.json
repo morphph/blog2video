@@ -1,0 +1,532 @@
+[
+  {
+    "text": "每次打开 Claude，你是不是都得从头解释一遍自己？我是谁、在做什么项目、希望它怎么跟我说话。聊得正起劲，关掉窗口，它就把你忘得干干净净。下一次，又从零开始。",
+    "pronounce_text": "每次打开Claude，你是不是都得从头解释一遍自己？我是谁、在做什么项目、希望它怎么跟我说话。聊得正起劲，关掉窗口，它就把你忘得干干净净。下一次，又从零开始。",
+    "time_begin": 0,
+    "time_end": 15387.709750566893,
+    "text_begin": 0,
+    "text_end": 80,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 79
+  },
+  {
+    "text": "但今年四月，Andrej Karpathy 提出了一个叫 LLM Wiki 的模式，把这件事彻底翻了过来。",
+    "pronounce_text": "但今年四月，Andrej Karpathy提出了一个叫LLM Wiki的模式，把这件事彻底翻了过来。",
+    "time_begin": 15552,
+    "time_end": 22789.505668934242,
+    "text_begin": 80,
+    "text_end": 133,
+    "pronounce_text_begin": 79,
+    "pronounce_text_end": 129
+  },
+  {
+    "text": "一套同样二十美元的订阅，有人的 Claude 越用越蠢，每次都像第一次见；有人的 Claude 却越用越懂他，连他自己都快忘了的事，它都记得。",
+    "pronounce_text": "一套同样二十美元的订阅，有人的Claude越用越蠢，每次都像第一次见;有人的Claude却越用越懂他，连他自己都快忘了的事，它都记得。",
+    "time_begin": 22932,
+    "time_end": 34987.6462585034,
+    "text_begin": 133,
+    "text_end": 204,
+    "pronounce_text_begin": 129,
+    "pronounce_text_end": 196
+  },
+  {
+    "text": "差别不在谁的 AI 更聪明。差别在于，记忆到底是被丢掉了，还是被你攒了下来。今天我们就把这套东西读透。",
+    "pronounce_text": "差别不在谁的AI更聪明。差别在于，记忆到底是被丢掉了，还是被你攒了下来。今天我们就把这套东西读透。",
+    "time_begin": 35136,
+    "time_end": 45566.249433106575,
+    "text_begin": 204,
+    "text_end": 255,
+    "pronounce_text_begin": 196,
+    "pronounce_text_end": 245
+  },
+  {
+    "text": "先说清楚你到底在搭什么。表面上看，是两个工具配合干活：一个叫 Obsidian，一个叫 Claude。但它们的分工，藏着整件事的关键。",
+    "pronounce_text": "先说清楚你到底在搭什么。表面上看，是两个工具配合干活：一个叫Obsidian，一个叫Claude。但它们的分工，藏着整件事的关键。",
+    "time_begin": 45720,
+    "time_end": 57346.077097505666,
+    "text_begin": 255,
+    "text_end": 322,
+    "pronounce_text_begin": 245,
+    "pronounce_text_end": 310
+  },
+  {
+    "text": "Obsidian 是存储。它是个免费的笔记软件，所有内容都以纯文本文件，存在你自己的电脑上。笔记之间可以互相链接，时间久了，这些链接会织成一张图，一张你所有想法如何彼此连接的地图。",
+    "pronounce_text": "Obsidian是存储。它是个免费的笔记软件，所有内容都以纯文本文件，存在你自己的电脑上。笔记之间可以互相链接，时间久了，这些链接会织成一张图，一张你所有想法如何彼此连接的地图。",
+    "time_begin": 57492,
+    "time_end": 73518.25850340136,
+    "text_begin": 322,
+    "text_end": 412,
+    "pronounce_text_begin": 310,
+    "pronounce_text_end": 399
+  },
+  {
+    "text": "Claude 是坐在上面的大脑。它读完你整个库，把新信息归到该去的地方，跟已有的东西连起来，然后能跨着所有内容回答你的问题。",
+    "pronounce_text": "Claude是坐在上面的大脑。它读完你整个库，把新信息归到该去的地方，跟已有的东西连起来，然后能跨着所有内容回答你的问题。",
+    "time_begin": 73656,
+    "time_end": 84260.39909297052,
+    "text_begin": 412,
+    "text_end": 474,
+    "pronounce_text_begin": 399,
+    "pronounce_text_end": 460
+  },
+  {
+    "text": "这里有个判断，我读完最大的感受就在这。",
+    "pronounce_text": "这里有个判断，我读完最大的感受就在这。",
+    "time_begin": 84420,
+    "time_end": 87768.16326530612,
+    "text_begin": 474,
+    "text_end": 493,
+    "pronounce_text_begin": 460,
+    "pronounce_text_end": 479
+  },
+  {
+    "text": "整套东西，本质上只是一堆文本文件。这句话听着平淡，但它意味着：你的记忆不被锁死在任何一个 AI 产品里。明年出了更强的模型，你把它指过去，照样能用。",
+    "pronounce_text": "整套东西，本质上只是一堆文本文件。这句话听着平淡，但它意味着：你的记忆不被锁死在任何一个AI产品里。明年出了更强的模型，你把它指过去，照样能用。",
+    "time_begin": 87912,
+    "time_end": 101244.74376417234,
+    "text_begin": 493,
+    "text_end": 567,
+    "pronounce_text_begin": 479,
+    "pronounce_text_end": 551
+  },
+  {
+    "text": "因为你拥有的是大脑本身，不是工具。聊天记录是存在别人云端的、会随产品消失的东西；而纯文本文件，是你电脑上、永远归你的东西。",
+    "pronounce_text": "因为你拥有的是大脑本身，不是工具。聊天记录是存在别人云端的、会随产品消失的东西;而纯文本文件，是你电脑上、永远归你的东西。",
+    "time_begin": 101412,
+    "time_end": 113293.49659863945,
+    "text_begin": 567,
+    "text_end": 628,
+    "pronounce_text_begin": 551,
+    "pronounce_text_end": 612
+  },
+  {
+    "text": "AI 模型在这套结构里，不过是个可以随时替换的\"读取头\"。",
+    "pronounce_text": "AI模型在这套结构里，不过是个可以随时替换的\"读取头\"。",
+    "time_begin": 113493.49659863945,
+    "time_end": 118803.74603174604,
+    "text_begin": 628,
+    "text_end": 657,
+    "pronounce_text_begin": 612,
+    "pronounce_text_end": 640
+  },
+  {
+    "text": "这就是为什么作者说，同样的订阅，却是一台完全不同的机器。",
+    "pronounce_text": "这就是为什么作者说，同样的订阅，却是一台完全不同的机器。",
+    "time_begin": 118944,
+    "time_end": 124091.7097505669,
+    "text_begin": 657,
+    "text_end": 685,
+    "pronounce_text_begin": 640,
+    "pronounce_text_end": 668
+  },
+  {
+    "text": "普通的聊天历史，是会烂掉的。你跟 Claude 聊过的每一段，关掉就再也找不回来，价值随时间衰减，最后归零。",
+    "pronounce_text": "普通的聊天历史，是会烂掉的。你跟Claude聊过的每一段，关掉就再也找不回来，价值随时间衰减，最后归零。",
+    "time_begin": 124236,
+    "time_end": 133598.13151927438,
+    "text_begin": 685,
+    "text_end": 739,
+    "pronounce_text_begin": 668,
+    "pronounce_text_end": 720
+  },
+  {
+    "text": "但这套系统反过来，它每用一天，就变锋利一点。今天你录进去一条想法，它链接到上个月的某个项目；明天又来一条，又多连出三条线。你的图谱不是在堆积，是在生长。",
+    "pronounce_text": "但这套系统反过来，它每用一天，就变锋利一点。今天你录进去一条想法，它链接到上个月的某个项目;明天又来一条，又多连出三条线。你的图谱不是在堆积，是在生长。",
+    "time_begin": 133740,
+    "time_end": 149417.95918367346,
+    "text_begin": 739,
+    "text_end": 815,
+    "pronounce_text_begin": 720,
+    "pronounce_text_end": 796
+  },
+  {
+    "text": "你看，同样是跟 AI 对话，一个在烂，一个在长。区别不在 AI 多强大，而在于：你说过的话，是被当成垃圾扔了，还是被结构化地沉淀了下来。",
+    "pronounce_text": "你看，同样是跟AI对话，一个在烂，一个在长。区别不在AI多强大，而在于：你说过的话，是被当成垃圾扔了，还是被结构化地沉淀了下来。",
+    "time_begin": 149580,
+    "time_end": 162912.74376417234,
+    "text_begin": 815,
+    "text_end": 883,
+    "pronounce_text_begin": 796,
+    "pronounce_text_end": 860
+  },
+  {
+    "text": "这个差别，才是越用越聪明的真正来源。",
+    "pronounce_text": "这个差别，才是越用越聪明的真正来源。",
+    "time_begin": 163112.74376417234,
+    "time_end": 166890.47619047618,
+    "text_begin": 883,
+    "text_end": 901,
+    "pronounce_text_begin": 860,
+    "pronounce_text_end": 878
+  },
+  {
+    "text": "现在 Claude 能读你的库了，但它对你一无所知。一个空的大脑，毫无用处。",
+    "pronounce_text": "现在Claude能读你的库了，但它对你一无所知。一个空的大脑，毫无用处。",
+    "time_begin": 167040,
+    "time_end": 173766.66666666666,
+    "text_begin": 901,
+    "text_end": 939,
+    "pronounce_text_begin": 878,
+    "pronounce_text_end": 914
+  },
+  {
+    "text": "直觉会告诉你：那我自己最了解我，我来把背景一条条敲进去。但这恰恰是最枯燥、也最容易半途而废的做法。",
+    "pronounce_text": "直觉会告诉你：那我自己最了解我，我来把背景一条条敲进去。但这恰恰是最枯燥、也最容易半途而废的做法。",
+    "time_begin": 173916,
+    "time_end": 183150.42176870749,
+    "text_begin": 939,
+    "text_end": 988,
+    "pronounce_text_begin": 914,
+    "pronounce_text_end": 963
+  },
+  {
+    "text": "正确的做法反过来——让 Claude 来面试你。你给它一句话，让它一次只问一个问题：你是谁、今年的目标、希望它怎么跟你说话、你的长处和短板、手头的项目。",
+    "pronounce_text": "正确的做法反过来。让Claude来面试你。你给它一句话，让它一次只问一个问题：你是谁、今年的目标、希望它怎么跟你说话、你的长处和短板、手头的项目。",
+    "time_begin": 183312,
+    "time_end": 197283.2925170068,
+    "text_begin": 988,
+    "text_end": 1064,
+    "pronounce_text_begin": 963,
+    "pronounce_text_end": 1036
+  },
+  {
+    "text": "问一个，你答一个，答完它再问下一个。",
+    "pronounce_text": "问一个，你答一个，答完它再问下一个。",
+    "time_begin": 197483.2925170068,
+    "time_end": 201086.87528344672,
+    "text_begin": 1064,
+    "text_end": 1082,
+    "pronounce_text_begin": 1036,
+    "pronounce_text_end": 1054
+  },
+  {
+    "text": "把这当成你在给一个新搭档做交接，答得越真实，这具大脑就越懂你。全部问完，它会把答案写进一个叫 CLAUDE.md 的文件，放在库的根目录。之后每次开会话，它都自动加载这份资料。",
+    "pronounce_text": "把这当成你在给一个新搭档做交接，答得越真实，这具大脑就越懂你。全部问完，它会把答案写进一个叫CLAUDE.md的文件，放在库的根目录。之后每次开会话，它都自动加载这份资料。",
+    "time_begin": 201240,
+    "time_end": 217811.92743764172,
+    "text_begin": 1082,
+    "text_end": 1170,
+    "pronounce_text_begin": 1054,
+    "pronounce_text_end": 1140
+  },
+  {
+    "text": "你，再也不用重新解释自己。",
+    "pronounce_text": "你，再也不用重新解释自己。",
+    "time_begin": 217980,
+    "time_end": 220945.03401360544,
+    "text_begin": 1170,
+    "text_end": 1183,
+    "pronounce_text_begin": 1140,
+    "pronounce_text_end": 1153
+  },
+  {
+    "text": "接下来是整套方法里，我觉得最反直觉的一条。",
+    "pronounce_text": "接下来是整套方法里，我觉得最反直觉的一条。",
+    "time_begin": 221112,
+    "time_end": 225017.44217687074,
+    "text_begin": 1183,
+    "text_end": 1204,
+    "pronounce_text_begin": 1153,
+    "pronounce_text_end": 1174
+  },
+  {
+    "text": "我们都被一种说法洗过脑：喂给 AI 的上下文越多，它就越聪明。所以人本能地想把所有资料一股脑塞给它。但这套方法主张的，恰恰相反。",
+    "pronounce_text": "我们都被一种说法洗过脑：喂给AI的上下文越多，它就越聪明。所以人本能地想把所有资料一股脑塞给它。但这套方法主张的，恰恰相反。",
+    "time_begin": 225180,
+    "time_end": 236980.22675736962,
+    "text_begin": 1204,
+    "text_end": 1268,
+    "pronounce_text_begin": 1174,
+    "pronounce_text_end": 1236
+  },
+  {
+    "text": "你不该在那个装着你全部人生的巨型库里干活。你应该只打开当下这一个项目，让 Claude 只看见这一件事。",
+    "pronounce_text": "你不该在那个装着你全部人生的巨型库里干活。你应该只打开当下这一个项目，让Claude只看见这一件事。",
+    "time_begin": 237132,
+    "time_end": 246621.84126984127,
+    "text_begin": 1268,
+    "text_end": 1320,
+    "pronounce_text_begin": 1236,
+    "pronounce_text_end": 1286
+  },
+  {
+    "text": "为什么？因为上下文越窄，聚焦越准。那个大库负责的是规划全局，而真正出活、真正交付的，是一个被单独打开的小项目。作者那句话说得很狠：大库做计划，单个项目才出货。",
+    "pronounce_text": "为什么？因为上下文越窄，聚焦越准。那个大库负责的是规划全局，而真正出活、真正交付的，是一个被单独打开的小项目。作者那句话说得很狠：大库做计划，单个项目才出货。",
+    "time_begin": 246780,
+    "time_end": 263526.0770975057,
+    "text_begin": 1320,
+    "text_end": 1399,
+    "pronounce_text_begin": 1286,
+    "pronounce_text_end": 1365
+  },
+  {
+    "text": "看得越少，反而干得越好。",
+    "pronounce_text": "看得越少，反而干得越好。",
+    "time_begin": 263664,
+    "time_end": 266582.5941043084,
+    "text_begin": 1399,
+    "text_end": 1411,
+    "pronounce_text_begin": 1365,
+    "pronounce_text_end": 1377
+  },
+  {
+    "text": "当你发现某件事做了不止一次——写客户邮件、准备一期视频、给银行流水分类——它就该被存下来，变成一个 Skill。",
+    "pronounce_text": "当你发现某件事做了不止一次。写客户邮件、准备一期视频、给银行流水分类。它就该被存下来，变成一个Skill。",
+    "time_begin": 266724,
+    "time_end": 277281.9591836735,
+    "text_begin": 1411,
+    "text_end": 1467,
+    "pronounce_text_begin": 1377,
+    "pronounce_text_end": 1430
+  },
+  {
+    "text": "Skill 就是一段被保存下来的工作流，你一声令下，Claude 就照你的方式跑一遍。你把你怎么做这件事、连同一个例子，告诉它，让它存成项目里的一个技能文件。",
+    "pronounce_text": "Skill就是一段被保存下来的工作流，你一声令下，Claude就照你的方式跑一遍。你把你怎么做这件事、连同一个例子，告诉它，让它存成项目里的一个技能文件。",
+    "time_begin": 277452,
+    "time_end": 291040.1632653061,
+    "text_begin": 1467,
+    "text_end": 1546,
+    "pronounce_text_begin": 1430,
+    "pronounce_text_end": 1507
+  },
+  {
+    "text": "下一次，你只要说\"跑那个技能\"，它瞬间就按你的习惯执行。你做事的方法，从此不用再重复一遍。",
+    "pronounce_text": "下一次，你只要说\"跑那个技能\"，它瞬间就按你的习惯执行。你做事的方法，从此不用再重复一遍。",
+    "time_begin": 291204,
+    "time_end": 300101.73242630385,
+    "text_begin": 1546,
+    "text_end": 1591,
+    "pronounce_text_begin": 1507,
+    "pronounce_text_end": 1552
+  },
+  {
+    "text": "光有静态笔记，只是半个大脑。真正的另一半，是那些实时在变的东西——你的日历、你的邮件。",
+    "pronounce_text": "光有静态笔记，只是半个大脑。真正的另一半，是那些实时在变的东西。你的日历、你的邮件。",
+    "time_begin": 300240,
+    "time_end": 308278.5941043084,
+    "text_begin": 1591,
+    "text_end": 1634,
+    "pronounce_text_begin": 1552,
+    "pronounce_text_end": 1594
+  },
+  {
+    "text": "这些都能用一行 MCP 命令接进来。MCP 是 Claude 跟其他应用对话的标准方式。",
+    "pronounce_text": "这些都能用一行MCP命令接进来。MCP是Claude跟其他应用对话的标准方式。",
+    "time_begin": 308448,
+    "time_end": 315592.6258503401,
+    "text_begin": 1634,
+    "text_end": 1678,
+    "pronounce_text_begin": 1594,
+    "pronounce_text_end": 1633
+  },
+  {
+    "text": "接上日历之后，你可以让它读今天的安排，把你在每个会上答应的事，记进任务项目里，再把没有明确下一步的事标出来。",
+    "pronounce_text": "接上日历之后，你可以让它读今天的安排，把你在每个会上答应的事，记进任务项目里，再把没有明确下一步的事标出来。",
+    "time_begin": 315792.6258503401,
+    "time_end": 326222.8752834467,
+    "text_begin": 1678,
+    "text_end": 1732,
+    "pronounce_text_begin": 1633,
+    "pronounce_text_end": 1687
+  },
+  {
+    "text": "等技能都跑通了，最后一步是把它放上自动驾驶。在 Claude Desktop 里设一个定时任务，比如每天早上七点：自动归档新进来的东西、标记过期的笔记、给你写三行隔夜的变更摘要。",
+    "pronounce_text": "等技能都跑通了，最后一步是把它放上自动驾驶。在Claude Desktop里设一个定时任务，比如每天早上七点：自动归档新进来的东西、标记过期的笔记、给你写三行隔夜的变更摘要。",
+    "time_begin": 326376,
+    "time_end": 341368.97052154195,
+    "text_begin": 1732,
+    "text_end": 1821,
+    "pronounce_text_begin": 1687,
+    "pronounce_text_end": 1774
+  },
+  {
+    "text": "你睡一觉醒来，大脑已经自己把自己整理好了。",
+    "pronounce_text": "你睡一觉醒来，大脑已经自己把自己整理好了。",
+    "time_begin": 341532,
+    "time_end": 345356.1723356009,
+    "text_begin": 1821,
+    "text_end": 1842,
+    "pronounce_text_begin": 1774,
+    "pronounce_text_end": 1795
+  },
+  {
+    "text": "但自动驾驶有代价。你把写权限，交给了一个会犯错的 Agent——它能自动归档、移动、标记你的笔记。",
+    "pronounce_text": "但自动驾驶有代价。你把写权限，交给了一个会犯错的Agent。它能自动归档、移动、标记你的笔记。",
+    "time_begin": 345528,
+    "time_end": 354379.2925170068,
+    "text_begin": 1842,
+    "text_end": 1891,
+    "pronounce_text_begin": 1795,
+    "pronounce_text_end": 1842
+  },
+  {
+    "text": "这里有一条作者反复强调、也是全片最该记住的铁律：是钥匙，不是嘴皮子。",
+    "pronounce_text": "这里有一条作者反复强调、也是全片最该记住的铁律：是钥匙，不是嘴皮子。",
+    "time_begin": 354528,
+    "time_end": 361161.78684807254,
+    "text_begin": 1891,
+    "text_end": 1925,
+    "pronounce_text_begin": 1842,
+    "pronounce_text_end": 1876
+  },
+  {
+    "text": "什么意思？你对一个 Agent 说\"别删这个文件\"，那只是个许愿，不是安全设置。只要它技术上能删、能发邮件，你就得假设：总有一天它真的会这么做。",
+    "pronounce_text": "什么意思？你对一个Agent说\"别删这个文件\"，那只是个许愿，不是安全设置。只要它技术上能删、能发邮件，你就得假设：总有一天它真的会这么做。",
+    "time_begin": 361332,
+    "time_end": 374200.34467120183,
+    "text_begin": 1925,
+    "text_end": 1997,
+    "pronounce_text_begin": 1876,
+    "pronounce_text_end": 1946
+  },
+  {
+    "text": "真正的安全，不靠你的措辞，靠权限本身——能给只读，就别给写权限；能限定范围的钥匙，就别用一句话去约束它。安全建在权限层，不建在嘴皮子上。",
+    "pronounce_text": "真正的安全，不靠你的措辞，靠权限本身。能给只读，就别给写权限;能限定范围的钥匙，就别用一句话去约束它。安全建在权限层，不建在嘴皮子上。",
+    "time_begin": 374364,
+    "time_end": 388637.15192743763,
+    "text_begin": 1997,
+    "text_end": 2065,
+    "pronounce_text_begin": 1946,
+    "pronounce_text_end": 2013
+  },
+  {
+    "text": "我不想只讲爽点。这套系统是有门槛和代价的。",
+    "pronounce_text": "我不想只讲爽点。这套系统是有门槛和代价的。",
+    "time_begin": 388800,
+    "time_end": 392705.44217687077,
+    "text_begin": 2065,
+    "text_end": 2086,
+    "pronounce_text_begin": 2013,
+    "pronounce_text_end": 2034
+  },
+  {
+    "text": "它强依赖本地运行加付费订阅。你得开 Claude Pro，一个月二十美元，免费档跑不起来。Obsidian 必须全程开着，那个连接只在软件运行时有效，一关就断。",
+    "pronounce_text": "它强依赖本地运行加付费订阅。你得开Claude Pro，一个月二十美元，免费档跑不起来。Obsidian必须全程开着，那个连接只在软件运行时有效，一关就断。",
+    "time_begin": 392868,
+    "time_end": 407477.84126984124,
+    "text_begin": 2086,
+    "text_end": 2166,
+    "pronounce_text_begin": 2034,
+    "pronounce_text_end": 2112
+  },
+  {
+    "text": "而且纯本地文件，意味着没有现成的云同步和多设备协作，可靠性得靠你自己维护。",
+    "pronounce_text": "而且纯本地文件，意味着没有现成的云同步和多设备协作，可靠性得靠你自己维护。",
+    "time_begin": 407628,
+    "time_end": 415283.4648526077,
+    "text_begin": 2166,
+    "text_end": 2203,
+    "pronounce_text_begin": 2112,
+    "pronounce_text_end": 2149
+  },
+  {
+    "text": "纯文本这套路子，也不是万能的。它擅长的是文字和想法，不擅长二进制文件、不擅长海量数据。再加上前面说的自动驾驶风险，你是在把一部分控制权，交给一个不完美的系统。",
+    "pronounce_text": "纯文本这套路子，也不是万能的。它擅长的是文字和想法，不擅长二进制文件、不擅长海量数据。再加上前面说的自动驾驶风险，你是在把一部分控制权，交给一个不完美的系统。",
+    "time_begin": 415440,
+    "time_end": 430653.56009070296,
+    "text_begin": 2203,
+    "text_end": 2282,
+    "pronounce_text_begin": 2149,
+    "pronounce_text_end": 2228
+  },
+  {
+    "text": "这笔账，你得自己算清楚再上手。",
+    "pronounce_text": "这笔账，你得自己算清楚再上手。",
+    "time_begin": 430812,
+    "time_end": 433695.7641723356,
+    "text_begin": 2282,
+    "text_end": 2297,
+    "pronounce_text_begin": 2228,
+    "pronounce_text_end": 2243
+  },
+  {
+    "text": "如果你不想从零接线，开源社区已经把整套东西打包好了。GitHub 上有几个现成的仓库，有的自带不同角色预设，有的带四十三条现成命令，还能跨 Claude、Codex、Gemini 用。",
+    "pronounce_text": "如果你不想从零接线，开源社区已经把整套东西打包好了。GitHub上有几个现成的仓库，有的自带不同角色预设，有的带四十三条现成命令，还能跨Claude、Codex、Gemini用。",
+    "time_begin": 433836,
+    "time_end": 449862.25850340136,
+    "text_begin": 2297,
+    "text_end": 2389,
+    "pronounce_text_begin": 2243,
+    "pronounce_text_end": 2332
+  },
+  {
+    "text": "它们也都只是文本文件和脚本，克隆一个，再改成你自己的私人版本就行。",
+    "pronounce_text": "它们也都只是文本文件和脚本，克隆一个，再改成你自己的私人版本就行。",
+    "time_begin": 450000,
+    "time_end": 456297.09750566893,
+    "text_begin": 2389,
+    "text_end": 2422,
+    "pronounce_text_begin": 2332,
+    "pronounce_text_end": 2365
+  },
+  {
+    "text": "把这一切收拢成一句话。",
+    "pronounce_text": "把这一切收拢成一句话。",
+    "time_begin": 456444,
+    "time_end": 458468.6258503401,
+    "text_begin": 2422,
+    "text_end": 2433,
+    "pronounce_text_begin": 2365,
+    "pronounce_text_end": 2376
+  },
+  {
+    "text": "在这之前，你一关窗口，Claude 就把你忘了，每次会话都从冷启动开始，所有上下文压在你一个人身上，你还记不住。",
+    "pronounce_text": "在这之前，你一关窗口，Claude就把你忘了，每次会话都从冷启动开始，所有上下文压在你一个人身上，你还记不住。",
+    "time_begin": 458640,
+    "time_end": 468780,
+    "text_begin": 2433,
+    "text_end": 2489,
+    "pronounce_text_begin": 2376,
+    "pronounce_text_end": 2431
+  },
+  {
+    "text": "在这之后，它有了你整个生活和工作的记忆。一个装着一切的库，一个能精确接着上次干的模型，一张趁你睡觉时自己生长的图。全是纯文本，全归你，跑在你指过去的任何模型上。",
+    "pronounce_text": "在这之后，它有了你整个生活和工作的记忆。一个装着一切的库，一个能精确接着上次干的模型，一张趁你睡觉时自己生长的图。全是纯文本，全归你，跑在你指过去的任何模型上。",
+    "time_begin": 468936,
+    "time_end": 485043.5283446712,
+    "text_begin": 2489,
+    "text_end": 2569,
+    "pronounce_text_begin": 2431,
+    "pronounce_text_end": 2511
+  },
+  {
+    "text": "所以你不是在配置一个 Claude，你是在造一具属于自己的记忆体——AI 会换代，但大脑归你，越喂越聪明。绝大多数人会把这十步从头读到尾，然后什么也不建。",
+    "pronounce_text": "所以你不是在配置一个Claude，你是在造一具属于自己的记忆体。AI会换代，但大脑归你，越喂越聪明。绝大多数人会把这十步从头读到尾，然后什么也不建。",
+    "time_begin": 485208,
+    "time_end": 498540.7437641723,
+    "text_begin": 2569,
+    "text_end": 2646,
+    "pronounce_text_begin": 2511,
+    "pronounce_text_end": 2585
+  },
+  {
+    "text": "但真正今天就动手的那个人，一个月后打开自己的图谱，会愣住——因为它记得一些，连他自己都忘了自己曾经知道的事。",
+    "pronounce_text": "但真正今天就动手的那个人，一个月后打开自己的图谱，会愣住。因为它记得一些，连他自己都忘了自己曾经知道的事。",
+    "time_begin": 498708,
+    "time_end": 509312.39909297053,
+    "text_begin": 2646,
+    "text_end": 2700,
+    "pronounce_text_begin": 2585,
+    "pronounce_text_end": 2638
+  },
+  {
+    "text": "如果今天只带走一件事，那就是：别再把记忆留在那个会忘事的聊天框里。哪怕只花一个晚上，把 CLAUDE.md 这第一块砖搭起来，让它先面试你一次，你就已经站在了几乎所有人的前面。",
+    "pronounce_text": "如果今天只带走一件事，那就是：别再把记忆留在那个会忘事的聊天框里。哪怕只花一个晚上，把CLAUDE.md这第一块砖搭起来，让它先面试你一次，你就已经站在了几乎所有人的前面。",
+    "time_begin": 509472,
+    "time_end": 525660.7981859411,
+    "text_begin": 2700,
+    "text_end": 2788,
+    "pronounce_text_begin": 2638,
+    "pronounce_text_end": 2724
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 525816,
+    "time_end": 531381.6689342404,
+    "text_begin": 2788,
+    "text_end": 2815,
+    "pronounce_text_begin": 2724,
+    "pronounce_text_end": 2750
+  }
+]

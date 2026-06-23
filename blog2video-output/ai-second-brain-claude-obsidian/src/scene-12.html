@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(cta,5s 静音尾卡,无字幕)—— */
+[data-composition-id='s12'] .end{position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  box-sizing:border-box;transform-origin:50% 45%}
+[data-composition-id='s12'] .end-glow{position:absolute;left:50%;top:46%;width:1000px;height:1000px;
+  transform:translate(-50%,-50%);pointer-events:none;
+  background:radial-gradient(circle,rgba(204,255,77,.09) 0%,rgba(204,255,77,0) 60%)}
+[data-composition-id='s12'] .logo{position:relative;z-index:2;display:flex;align-items:flex-end;
+  font-family:'MiSans',sans-serif;font-weight:900;font-size:148px;line-height:1;
+  letter-spacing:-.01em;color:#edebe6}
+[data-composition-id='s12'] .logo .cur{width:46px;height:118px;margin-left:22px;vertical-align:bottom}
+[data-composition-id='s12'] .rule{position:relative;z-index:2;margin-top:48px;width:300px;height:1px;
+  background:#2a2a2c;transform-origin:center}
+[data-composition-id='s12'] .sub2{position:relative;z-index:2;margin-top:46px;
+  font-family:'JetBrains Mono',monospace;font-weight:500;font-size:40px;
+  letter-spacing:.14em;color:#8a8a85}
+[data-composition-id='s12'] .sub2 .em{color:#ccff4d}
+[data-composition-id='s12'] .sign{position:relative;z-index:2;margin-top:64px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="end">
+      <div class="end-glow"></div>
+      <div class="logo">精读AI<span class="cur cblink"></span></div>
+      <div class="rule"></div>
+      <div class="sub2">第二大脑<span class="em"> · </span>完</div>
+      <div class="endchip sign"><span class="dot"></span><span class="lab">我们下期再见</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.end-glow',{opacity:0,duration:.6,ease:'power1.out'},.1);
+    D2.enter(tl, R+'.logo', .3, {y:24, d:.5, ease:'expo.out'});
+    D2.underline(tl, R+'.rule', 1.0);
+    D2.enter(tl, R+'.sub2', 1.3, {y:14, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.sign', 1.9, {y:12, d:.34, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 1.0, 4);
+    D2.breath(tl, R+'.end', 5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

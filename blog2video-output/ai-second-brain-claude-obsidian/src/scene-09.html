@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有(keys, not prompts:终端授权意象)—— */
+[data-composition-id='s09'] .cost{margin-top:24px;background:#1c1c1e;border:1px solid rgba(255,107,94,.4);padding:24px 30px;display:flex;align-items:center;gap:22px}
+[data-composition-id='s09'] .cost .cd{flex-shrink:0;width:14px;height:14px;border-radius:50%;background:#ff6b5e}
+[data-composition-id='s09'] .cost .ct{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+[data-composition-id='s09'] .cost .ct .em{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .h2{margin-top:30px}
+[data-composition-id='s09'] .h2 .red{color:#ff6b5e}
+[data-composition-id='s09'] .term{margin-top:30px}
+[data-composition-id='s09'] .term-bar .t{color:#8a8a85}
+[data-composition-id='s09'] .term-body{padding:34px 36px 38px}
+[data-composition-id='s09'] .gline{font-family:'JetBrains Mono',monospace;font-size:34px;line-height:1.4;display:flex;align-items:baseline;gap:0}
+[data-composition-id='s09'] .gline + .gline{margin-top:22px}
+[data-composition-id='s09'] .gline .p{color:#8a8a85;margin-right:14px}
+[data-composition-id='s09'] .gline .call{color:#edebe6}
+[data-composition-id='s09'] .gline .ret{margin-left:auto;font-size:24px;font-weight:700;letter-spacing:.04em;padding:3px 12px}
+[data-composition-id='s09'] .gline.wish .call{color:#8a8a85}
+[data-composition-id='s09'] .gline.wish .ret{color:#121212;background:#ff6b5e}
+[data-composition-id='s09'] .gline.able .call{color:#ff6b5e}
+[data-composition-id='s09'] .gline.able .ret{color:#ff6b5e;border:1px solid rgba(255,107,94,.5);background:rgba(255,107,94,.08)}
+[data-composition-id='s09'] .bracket{margin-top:30px}
+[data-composition-id='s09'] .bracket .lead .no{color:#8a8a85;text-decoration:line-through;text-decoration-color:#8a8a85}
+[data-composition-id='s09'] .bracket .lead .yes{color:#ccff4d;font-weight:700}
+[data-composition-id='s09'] .grant{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s09'] .grant .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s09'] .grant .scope{color:#ccff4d;font-weight:700}
+[data-composition-id='s09'] .layh{margin-top:32px}
+[data-composition-id='s09'] .tl{margin-top:16px}
+[data-composition-id='s09'] .tl-row .yr{width:160px;font-size:34px}
+[data-composition-id='s09'] .tl-row .sig{font-family:'JetBrains Mono',monospace;font-size:23px;letter-spacing:.04em;margin-top:6px}
+[data-composition-id='s09'] .tl-row.fail .yr{color:#ff6b5e}
+[data-composition-id='s09'] .tl-row.fail .sig{color:#ff6b5e}
+[data-composition-id='s09'] .tl-row.now .sig{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="43.267" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[09/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// HARD RULE · <span class="acc">全片最该记住的铁律</span></div>
+      <div class="cost"><span class="cd"></span><span class="ct">自动驾驶有代价:你把<span class="em">写权限</span>交给了一个会犯错的 Agent</span></div>
+      <div class="h2">是<span class="em">钥匙</span><br>不是<span class="red">嘴皮子</span></div>
+
+      <div class="term">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">~/second-brain · agent.access</span></div>
+        <div class="term-body">
+          <div class="gline wish"><span class="p">$</span><span class="call">say("别删这个文件")</span><span class="ret">许愿 · NO-OP</span></div>
+          <div class="gline able"><span class="p">$</span><span class="call">can_delete == true</span><span class="ret">总有一天会执行</span></div>
+        </div>
+      </div>
+
+      <div class="bracket">
+        <div class="lead">能给<span class="yes">只读</span>,就<span class="no">别给写权限</span></div>
+        <div class="grant">用一把限定范围的钥匙 <span class="ar">→</span> 别用<span class="scope">一句话</span>去约束它</div>
+      </div>
+
+      <div class="kicker layh">// 安全建在权限层,不建在嘴皮子上</div>
+      <div class="tl">
+        <div class="tl-row r0 fail"><div class="yr">措辞</div><div><div class="wt">说说而已,挡不住</div><div class="sig">PROMPT · 只是个许愿</div></div></div>
+        <div class="tl-row r1 now"><div class="yr">权限</div><div><div class="wt">技术上做不到,才真安全<span class="badge">建在权限层</span></div><div class="sig">KEYS · 真正的安全设置</div></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.626" data-track-index="5"><div class="sub-inner">但自动驾驶有<span class="sub-k">代价</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.621" data-duration="7.225" data-track-index="5"><div class="sub-inner">你把写权限，交给了一个会犯错的 Agent——它能自动归档、移动、标记你的<span class="sub-k">笔记</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.995" data-duration="6.634" data-track-index="5"><div class="sub-inner">这里有一条作者反复强调、也是全片最该记住的铁律：是<span class="sub-k">钥匙，不是嘴皮子</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.799" data-duration="0.894" data-track-index="5"><div class="sub-inner"><span class="sub-k">什么意思</span>？</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.693" data-duration="6.255" data-track-index="5"><div class="sub-inner">你对一个 Agent 说"别删这个文件"，那只是个<span class="sub-k">许愿</span>，不是安全设置。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.948" data-duration="5.719" data-track-index="5"><div class="sub-inner">只要它技术上能删、能发邮件，你就得假设：<span class="sub-k">总有一天它真的会这么做</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.831" data-duration="10.915" data-track-index="5"><div class="sub-inner">真正的安全，不靠你的措辞，靠权限本身——能给只读，就别给写权限；能限定范围的钥匙，就<span class="sub-k">别用一句话去约束它</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="39.746" data-duration="3.358" data-track-index="5"><div class="sub-inner">安全建在<span class="sub-k">权限层</span>，不建在嘴皮子上。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 开场:代价警示(sub-1/2 写权限交给会犯错的 Agent),再升为铁律标题(sub-3 钥匙不是嘴皮子)
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.cost', 1.7, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.h2', 9.0, {y:20, d:.42, ease:'expo.out'});
+    // 终端授权卡:许愿行(sub-5 "别删这个文件…只是许愿"),able 行(sub-6 技术上能删→总会执行)
+    D2.enter(tl, R+'.term', 16.7, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.gline.able', 22.95, {x:-16, d:.36, ease:'power4.out'});
+    // 核心原则 bracket(sub-7 只读 vs 写 / 钥匙 vs 一句话)
+    D2.enter(tl, R+'.bracket', 29.0, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.grant', 33.4, {y:14, d:.34, ease:'power2.out'});
+    // 权限层 split(sub-8 安全建在权限层):措辞失效 → 权限生效
+    D2.enter(tl, R+'.layh', 36.2, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 36.5, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 39.8, {x:-22, d:.4, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .badge', 41.6, {scale:.6, opacity:0, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.621],['#sub-3',8.995],['#sub-4',15.799],['#sub-5',16.693],['#sub-6',22.948],['#sub-7',28.831],['#sub-8',39.746]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.267, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

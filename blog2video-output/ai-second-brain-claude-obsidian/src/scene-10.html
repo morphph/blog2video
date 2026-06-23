@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .ledger{display:flex;flex-direction:column;gap:16px;width:100%;margin-top:40px}
+[data-composition-id='s10'] .price{display:inline-flex;align-items:baseline;gap:8px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:3px 14px;margin-left:8px;vertical-align:3px}
+[data-composition-id='s10'] .divider{display:flex;align-items:center;gap:20px;width:100%;margin-top:36px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s10'] .divider .ln{flex:1;height:1px;background:#2a2a2c}
+[data-composition-id='s10'] .divider .lab{color:#ccff4d}
+[data-composition-id='s10'] .repo{font-family:'JetBrains Mono',monospace;font-size:34px;line-height:1.55;color:#5fd3e8}
+[data-composition-id='s10'] .repo .p{color:#ccff4d;margin-right:16px}
+[data-composition-id='s10'] .repolist{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+[data-composition-id='s10'] .repolist .rr{font-family:'JetBrains Mono',monospace;font-size:30px;color:#5fd3e8;line-height:1.4}
+[data-composition-id='s10'] .repolist .rr::before{content:'›';color:#8a8a85;margin-right:14px}
+[data-composition-id='s10'] .botags{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+[data-composition-id='s10'] .botags .bt{font-family:'JetBrains Mono',monospace;font-size:24px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:4px 14px;letter-spacing:.02em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="67.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[10/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 代价清单 · <span class="acc">别只讲爽点</span></div>
+      <div class="h1" style="margin-top:18px">这套系统,<span class="em">有门槛和代价</span></div>
+
+      <div class="ledger">
+        <div class="row warn r1"><div class="n">!</div><div class="rb">
+          <div class="rt">硬成本:本地运行 + 付费订阅<span class="price">$20/月</span></div>
+          <div class="rd"><span class="warn">Obsidian 必须全程开着</span> · 一关连接就断 · 没现成云同步</div>
+        </div></div>
+
+        <div class="row warn r2"><div class="n">!</div><div class="rb">
+          <div class="rt">局限:纯文本擅长想法,<span class="warn">不擅长二进制和海量数据</span></div>
+          <div class="rd r2d">加上自动驾驶风险 —— 你把一部分控制权,交给了不完美的系统</div>
+        </div></div>
+      </div>
+
+      <div class="status alert punch" style="margin-top:30px"><span class="dot"></span>这笔账,得自己算清楚再上手</div>
+
+      <div class="divider"><span class="ln"></span><span class="lab">// BONUS · 不想从零接线</span><span class="ln"></span></div>
+
+      <div class="bracket bonus" style="margin-top:24px;padding:30px 36px">
+        <div class="repo"><span class="p">$</span>git clone &lt;second-brain&gt;</div>
+        <div class="repolist">
+          <div class="rr rr1">claude-obsidian · 不同角色预设</div>
+          <div class="rr rr2">obsidian-second-brain · 43 条现成命令</div>
+          <div class="rr rr3">second-brain-starter · 跨 Claude·Codex·Gemini</div>
+        </div>
+        <div class="botags">
+          <span class="bt bt1">只是文本 + 脚本</span>
+          <span class="bt bt2">克隆即改成你的私人版</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.488" data-track-index="5"><div class="sub-inner">我不想只讲<span class="sub-k">爽点</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.488" data-duration="2.417" data-track-index="5"><div class="sub-inner">这套系统是有<span class="sub-k">门槛和代价</span>的。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.068" data-duration="2.557" data-track-index="5"><div class="sub-inner">它强依赖<span class="sub-k">本地运行加付费订阅</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.625" data-duration="5.661" data-track-index="5"><div class="sub-inner">你得开 Claude Pro,一个月<span class="sub-k">二十美元</span>,免费档跑不起来。</div></div>
+    <div id="sub-5" class="clip sub" data-start="12.286" data-duration="6.392" data-track-index="5"><div class="sub-inner">Obsidian 必须<span class="sub-k">全程开着</span>,那个连接只在软件运行时有效,一关就断。</div></div>
+    <div id="sub-6" class="clip sub" data-start="18.828" data-duration="7.655" data-track-index="5"><div class="sub-inner">而且纯本地文件,意味着<span class="sub-k">没有现成的云同步和多设备协作</span>,可靠性得靠你自己维护。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.64" data-duration="2.889" data-track-index="5"><div class="sub-inner">纯文本这套路子,也<span class="sub-k">不是万能的</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.529" data-duration="5.392" data-track-index="5"><div class="sub-inner">它擅长的是文字和想法,<span class="sub-k">不擅长二进制文件、不擅长海量数据</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="34.921" data-duration="6.933" data-track-index="5"><div class="sub-inner">再加上前面说的自动驾驶风险,你是在把一部分<span class="sub-k">控制权</span>,交给一个不完美的系统。</div></div>
+    <div id="sub-10" class="clip sub" data-start="42.012" data-duration="2.884" data-track-index="5"><div class="sub-inner">这笔账,你得<span class="sub-k">自己算清楚</span>再上手。</div></div>
+    <div id="sub-11" class="clip sub" data-start="45.036" data-duration="4.529" data-track-index="5"><div class="sub-inner">如果你不想从零接线,开源社区已经<span class="sub-k">把整套东西打包好了</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="49.565" data-duration="11.497" data-track-index="5"><div class="sub-inner">GitHub 上有几个现成的仓库,有的自带不同角色预设,有的带<span class="sub-k">四十三条现成命令</span>,还能跨 Claude、Codex、Gemini 用。</div></div>
+    <div id="sub-13" class="clip sub" data-start="61.2" data-duration="6.297" data-track-index="5"><div class="sub-inner">它们也都只是文本文件和脚本,克隆一个,再改成你自己的<span class="sub-k">私人版本</span>就行。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // 开场标题(sub-1/2):别只讲爽点 / 有门槛和代价
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.6, {y:20, d:.42, ease:'expo.out'});
+    // 代价 1 — 硬成本(珊瑚警告条):卡 4.0s 入(sub-3 本地运行+付费),价签 6.6s 晚到(sub-4 二十美元),Obsidian 说明 12.3s 晚到(sub-5)
+    D2.enter(tl, R+'.r1', 4.1, {x:-24, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .price', 6.7, {scale:.7, opacity:0, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.r1 .rd', 12.4, {y:12, d:.32, ease:'power2.out'});
+    // 代价 2 — 局限(珊瑚警告条):卡 26.7s 入(sub-7 纯文本不是万能),二进制说明已在卡内,控制权行 34.9s 晚到(sub-9)
+    D2.enter(tl, R+'.r2', 26.7, {x:-24, d:.4, ease:'power4.out'});
+    D2.enter(tl, R+'.r2 .r2d', 34.9, {y:12, d:.32, ease:'power2.out'});
+    // 收束句(sub-10):这笔账自己算 —— 珊瑚状态灯
+    D2.enter(tl, R+'.punch', 42.1, {y:14, d:.34, ease:'power3.out'});
+    // 转场分隔 + BONUS 开源块(sub-11):从代价切到 bonus,辅助色由珊瑚转电青
+    D2.enter(tl, R+'.divider', 45.1, {y:10, d:.36, ease:'power1.out'});
+    D2.enter(tl, R+'.bonus', 46.0, {y:22, d:.44, ease:'power3.out'});
+    // 三个仓库逐条 build(sub-12 期间,11.5s 长句):预设 → 43 命令 → 跨工具
+    D2.enter(tl, R+'.rr1', 50.0, {x:-18, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rr2', 53.6, {x:-18, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rr3', 57.0, {x:-18, d:.3, ease:'power2.out'});
+    // 底部电青标签(sub-13):只是文本+脚本 / 克隆改私人版,61.3s 晚到
+    D2.stagger(tl, R+'.botags .bt', 61.3, {y:12, step:.18, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.488],['#sub-3',4.068],['#sub-4',6.625],['#sub-5',12.286],['#sub-6',18.828],['#sub-7',26.64],['#sub-8',29.529],['#sub-9',34.921],['#sub-10',42.012],['#sub-11',45.036],['#sub-12',49.565],['#sub-13',61.2]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 67.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

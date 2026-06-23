@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .step { font-size: 30px; color: #6B7280; letter-spacing: 2px; margin-bottom: 14px; }
+    .title { font-size: 66px; font-weight: 800; line-height: 1.2; margin-bottom: 18px; }
+    .title .key { color: #10B981; }
+    .setup { font-size: 32px; color: #B0B0CC; margin-bottom: 40px; }
+    .list { width: 100%; display: flex; flex-direction: column; gap: 18px; }
+    .item { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2);
+      border-left: 4px solid #10B981; border-radius: 12px; padding: 24px 28px;
+      display: flex; align-items: baseline; gap: 22px; text-align: left; }
+    .item .q { font-size: 40px; font-weight: 800; color: #10B981; min-width: 52px; }
+    .item .t { font-size: 35px; font-weight: 600; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="step">第一步 · 挖出你的原材料</div>
+    <div class="title">问自己 <span class="key">3 个问题</span></div>
+    <div class="setup">关掉标签页 · 开空白文档 · 定 15 分钟 · 用笔写</div>
+    <div class="list">
+      <div class="item"><span class="q">Q1</span><span class="t">什么东西你懂得多到不可能是偶然，却没人付过你钱？</span></div>
+      <div class="item"><span class="q">Q2</span><span class="t">什么问题你早解决了，还以为别人都会？</span></div>
+      <div class="item"><span class="q">Q3</span><span class="t">你小时候因为什么被骂，其实是一种很早的品味？</span></div>
+    </div>
+  </div>
+</body>
+</html>

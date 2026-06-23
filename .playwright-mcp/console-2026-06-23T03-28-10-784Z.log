@@ -5,3 +5,4 @@
 [  470696ms] [WARNING] Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
 Element with focus: <a.css-175oi2r r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21>
 Ancestor with aria-hidden: <a.css-175oi2r r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21> @ https://x.com/undefinedKi/status/2068306794116501544:0
+[ 2705582ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api.x.com/1.1/live_pipeline/update_subscriptions:0

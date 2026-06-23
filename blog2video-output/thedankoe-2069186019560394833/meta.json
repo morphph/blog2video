@@ -1,0 +1,15 @@
+{
+  "topic": "在 AI 大替代时代逃离工资奴役、把自己变成不可雇佣的人",
+  "blog_url": "https://x.com/thedankoe/status/2069186019560394833",
+  "source": "thedankoe-2069186019560394833",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

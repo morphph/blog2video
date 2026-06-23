@@ -1,1 +1,68 @@
 === d2 render: thedankoe-2069186019560394833 · 28 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 28.833  data= 28.833  Δ=+0.000
+  scene-02  clip= 32.533  data= 32.533  Δ=+0.000
+  scene-03  clip= 29.900  data= 29.867  Δ=+0.033
+  scene-04  clip= 36.633  data= 36.633  Δ=+0.000
+  scene-05  clip= 42.700  data= 42.700  Δ=+0.000
+  scene-06  clip= 52.433  data= 52.433  Δ=+0.000
+  scene-07  clip= 36.500  data= 36.467  Δ=+0.033
+  scene-08  clip= 38.900  data= 38.900  Δ=+0.000
+  scene-09  clip= 39.533  data= 39.533  Δ=+0.000
+  scene-10  clip= 30.033  data= 30.033  Δ=+0.000
+  scene-11  clip= 40.000  data= 39.967  Δ=+0.033
+  scene-12  clip= 18.100  data= 18.067  Δ=+0.033
+  scene-13  clip= 38.800  data= 38.767  Δ=+0.033
+  scene-14  clip= 46.500  data= 46.467  Δ=+0.033
+  scene-15  clip= 40.400  data= 40.367  Δ=+0.033
+  scene-16  clip= 41.900  data= 41.900  Δ=+0.000
+  scene-17  clip= 21.500  data= 21.500  Δ=+0.000
+  scene-18  clip= 55.533  data= 55.533  Δ=+0.000
+  scene-19  clip= 28.400  data= 28.367  Δ=+0.033
+  scene-20  clip= 58.633  data= 58.633  Δ=+0.000
+  scene-21  clip= 50.833  data= 50.833  Δ=+0.000
+  scene-22  clip= 22.933  data= 22.933  Δ=+0.000
+  scene-23  clip= 53.400  data= 53.400  Δ=+0.000
+  scene-24  clip= 57.800  data= 57.800  Δ=+0.000
+  scene-25  clip= 45.600  data= 45.567  Δ=+0.033
+  scene-26  clip= 67.300  data= 67.300  Δ=+0.000
+  scene-27  clip= 67.500  data= 67.500  Δ=+0.000
+  scene-28  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 1128.133s
+=== concat → silent master ===
+[out#0/mp4 @ 0xc4b004900] video:70580KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.191090%
+frame=33844 fps=0.0 q=-1.0 Lsize=   70715KiB time=00:18:48.13 bitrate= 513.5kbits/s speed=6.3e+03x elapsed=0:00:00.17    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=33844 fps=1994 q=-1.0 Lsize=   89579KiB time=00:18:41.97 bitrate= 654.1kbits/s speed=66.1x elapsed=0:00:16.97    
+[aac @ 0x7ef061880] Qavg: 65515.855
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=1128.133333
+audio_dur=1121.976000
+-rw-r--r--@ 1 yufanp  staff  91728994 23 Jun 17:11 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+node:internal/modules/cjs/loader:1386
+  throw err;
+  ^
+
+Error: Cannot find module '/shoot-cover.mjs'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Module._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.22.0
+⚠ 封面截图失败(非致命);可单独补: node /shoot-cover.mjs /Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833 1

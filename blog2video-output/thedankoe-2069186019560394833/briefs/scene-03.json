@@ -1,0 +1,58 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "principle",
+ "dataDuration": 29.867,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_3.html",
+ "topbarIndex": "[03/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 1.816,
+   "text": "那真正的威胁是什么？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.993,
+   "localDuration": 2.523,
+   "text": "是你对所有人的生存依赖。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.516,
+   "localDuration": 2.102,
+   "text": "除了你自己，所有人。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.781,
+   "localDuration": 3.859,
+   "text": "你的雇主、你的政府，他们都有自己的生存要顾。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 10.777,
+   "localDuration": 6.123,
+   "text": "一旦某个东西威胁到他们，人性会让他们立刻掉进更低层级的思维，先保自己。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.041,
+   "localDuration": 2.771,
+   "text": "你可以说他们\"应该\"管你的死活。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 19.812,
+   "localDuration": 4.675,
+   "text": "但如果你盲目相信他们一定会兜底，你注定会非常非常失望。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 24.637,
+   "localDuration": 5.055,
+   "text": "而 AI，只是按下了这个一直存在的\"依赖\"快进键而已。"
+  }
+ ]
+}

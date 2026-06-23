@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .step { font-size: 30px; color: #6B7280; letter-spacing: 2px; margin-bottom: 16px; }
+    .quote { font-size: 46px; font-weight: 800; line-height: 1.35; margin-bottom: 14px; }
+    .quote .key { color: #8B5CF6; }
+    .attr { font-size: 30px; color: #6B7280; margin-bottom: 44px; }
+    .two { display: flex; gap: 24px; width: 100%; margin-bottom: 30px; }
+    .card { flex: 1; background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px; padding: 40px 28px; }
+    .card.code { border-left: 4px solid #3B82F6; }
+    .card.media { border-left: 4px solid #10B981; }
+    .card .en { font-size: 52px; font-weight: 800; }
+    .card.code .en { color: #3B82F6; }
+    .card.media .en { color: #10B981; }
+    .card .zh { font-size: 30px; color: #B0B0CC; margin-top: 14px; }
+    .note { background: #1A1A2E; border-left: 4px solid #F59E0B; border-radius: 12px;
+      padding: 28px; width: 100%; text-align: left; font-size: 36px; line-height: 1.45; color: #B0B0CC; }
+    .note .key { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="step">第三步 · 两种技能至少学一种</div>
+    <div class="quote">代码和媒体<br>是<span class="key">无需许可的杠杆</span></div>
+    <div class="attr">— 硅谷投资人 Naval</div>
+    <div class="two">
+      <div class="card code"><div class="en">Code</div><div class="zh">代码</div></div>
+      <div class="card media"><div class="en">Media</div><div class="zh">媒体 / 内容</div></div>
+    </div>
+    <div class="note">你睡觉的时候，它们还在<span class="key">替你工作</span><br>有了 AI，你几乎能造出任何东西</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "principle",
+ "dataDuration": 36.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_4.html",
+ "topbarIndex": "[04/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.569,
+   "text": "那我们就从第一根支柱说起：工资奴役。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.699,
+   "localDuration": 1.527,
+   "text": "工资奴役是什么？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.226,
+   "localDuration": 5.919,
+   "text": "是你做着自己没得选的、毫无意义的苦活，为别人做，只为了活下去。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.295,
+   "localDuration": 3.313,
+   "text": "我先说清楚，这不是在骂工作本身。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.751,
+   "localDuration": 6.378,
+   "text": "工作是很好的踏脚石，能让你练手、攒经验、积累技能。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.267,
+   "localDuration": 6.332,
+   "text": "但总有人一听到说工作不好，就跳出来：你个傻子，我可是真的很享受我的工作。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.747,
+   "localDuration": 1.035,
+   "text": "那挺好的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.782,
+   "localDuration": 2.278,
+   "text": "这段话不是说给你听的。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 31.203,
+   "localDuration": 5.275,
+   "text": "它是说给另一种人听的——那种一想到下面这个账，就坐不住的人。"
+  }
+ ]
+}

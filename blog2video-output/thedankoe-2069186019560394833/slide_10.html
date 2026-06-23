@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 60px; font-weight: 800; line-height: 1.25; margin-bottom: 52px; }
+    .title .key { color: #8B5CF6; }
+    .compress { font-size: 30px; color: #6B7280; margin-bottom: 24px; letter-spacing: 1px; }
+    .two { display: flex; gap: 24px; width: 100%; }
+    .cap { flex: 1; background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px; padding: 40px 28px; text-align: center; }
+    .cap.a { border-left: 4px solid #10B981; }
+    .cap.b { border-left: 4px solid #3B82F6; }
+    .cap .t { font-size: 44px; font-weight: 800; line-height: 1.3; }
+    .cap.a .t { color: #10B981; }
+    .cap.b .t { color: #3B82F6; }
+    .cap .s { font-size: 30px; color: #B0B0CC; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">五个要素，最后压缩成<br><span class="key">两种能力</span></div>
+    <div class="compress">记住这两句，比记五个名词有用得多</div>
+    <div class="two">
+      <div class="cap a"><div class="t">能把事<br>搞定</div><div class="s">execution</div></div>
+      <div class="cap b"><div class="t">知道该<br>做什么</div><div class="s">judgment</div></div>
+    </div>
+  </div>
+</body>
+</html>

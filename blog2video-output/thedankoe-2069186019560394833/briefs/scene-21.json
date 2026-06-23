@@ -1,0 +1,106 @@
+{
+ "scene": 21,
+ "id": "s21",
+ "type": "comparison_cards",
+ "dataDuration": 50.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_21.html",
+ "topbarIndex": "[21/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 4.974,
+   "text": "但在代码和媒体之间，我认为，媒体比代码更重要。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.124,
+   "localDuration": 2.152,
+   "text": "媒体，说的就是内容。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.276,
+   "localDuration": 5.596,
+   "text": "发一次就能被成千上万人看到的帖子、视频、播客或文字。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.044,
+   "localDuration": 1.131,
+   "text": "为什么是媒体？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.34,
+   "localDuration": 2.025,
+   "text": "因为内容的价值是主观的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.536,
+   "localDuration": 4.594,
+   "text": "每一个读者，读你的每一句话，解读都不一样。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 21.13,
+   "localDuration": 3.282,
+   "text": "换句话说，没有唯一正确的写法。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 24.564,
+   "localDuration": 2.837,
+   "text": "而代码的价值，相对是客观的。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 27.552,
+   "localDuration": 3.569,
+   "text": "你怎么写不重要，只要它能跑出你要的结果就行。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 31.26,
+   "localDuration": 3.085,
+   "text": "所以代码很容易被商品化，谁都能复制。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 34.345,
+   "localDuration": 2.399,
+   "text": "这也正是前面那张图的答案——"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 36.912,
+   "localDuration": 3.687,
+   "text": "App 越来越多，下载和使用却在下降。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 40.599,
+   "localDuration": 0.776,
+   "text": "为什么？"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 41.52,
+   "localDuration": 2.212,
+   "text": "因为它们没有分发能力。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 43.732,
+   "localDuration": 2.413,
+   "text": "它们不懂媒体，不懂内容。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 46.308,
+   "localDuration": 4.37,
+   "text": "它们没法让人用起来，更没法让人在乎到愿意付钱。"
+  }
+ ]
+}

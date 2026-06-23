@@ -1,0 +1,58 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "checklist",
+ "dataDuration": 39.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_9.html",
+ "topbarIndex": "[09/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 5.02,
+   "text": "接下来谈第二根支柱：到底什么能让一个人在未来站得住。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.185,
+   "localDuration": 3.259,
+   "text": "很多人会说，那不就是成功的几大要素吗。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.444,
+   "localDuration": 1.03,
+   "text": "确实有五个。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.613,
+   "localDuration": 7.493,
+   "text": "第一个是能动性,英文叫 agency,就是不等任何人许可,看到机会就动手去做。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.245,
+   "localDuration": 4.08,
+   "text": "第二个是品味,知道什么东西值得拿出来给世界看。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.493,
+   "localDuration": 6.332,
+   "text": "第三个是说服力,让别人在乎你做的事——注意,这和操纵不是一回事。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.973,
+   "localDuration": 5.403,
+   "text": "第四个是坚持,明白犯错不等于死亡,而且犯错是必需的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 33.517,
+   "localDuration": 5.868,
+   "text": "第五个是迭代,根据反馈不断纠错,不行就学、就转,直到成功。"
+  }
+ ]
+}

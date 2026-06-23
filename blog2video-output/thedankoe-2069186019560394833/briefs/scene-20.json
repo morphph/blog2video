@@ -1,0 +1,82 @@
+{
+ "scene": 20,
+ "id": "s20",
+ "type": "comparison_cards",
+ "dataDuration": 58.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_20.html",
+ "topbarIndex": "[20/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 3.348,
+   "text": "那说回今天，这件事到底怎么落地？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.493,
+   "localDuration": 3.905,
+   "text": "第三步，在两种技能里，至少学会一种。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.561,
+   "localDuration": 5.101,
+   "text": "硅谷投资人 Naval 有句话：代码和媒体，是无需许可的杠杆。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.817,
+   "localDuration": 2.537,
+   "text": "它们是新富阶层背后的杠杆。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.354,
+   "localDuration": 3.122,
+   "text": "你睡觉的时候，它们还在替你工作。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 18.613,
+   "localDuration": 7.748,
+   "text": "作为一个新手，作为一个普通人，你根本没意识到自己手上有多大的杠杆，尤其是有了 AI 之后。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.533,
+   "localDuration": 7.783,
+   "text": "我说的不是那种最低层的 AI 用法，不是随手问问 ChatGPT，也不是对着 AI 骂它偷图。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.453,
+   "localDuration": 4.37,
+   "text": "我说的是这个层级：你意识到自己几乎能造出任何东西。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.989,
+   "localDuration": 3.267,
+   "text": "因为 AI 把你直接放进了试错的水流里。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 42.409,
+   "localDuration": 3.493,
+   "text": "头几次做出来的，多半不是你想要的。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 45.902,
+   "localDuration": 7.193,
+   "text": "但只要你有能动性、肯迭代、肯坚持、慢慢攒出品味，你几乎能造出任何东西。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 53.245,
+   "localDuration": 5.229,
+   "text": "而如果你还能说服别人，那你造的东西，就能在你睡觉的时候替你赚钱。"
+  }
+ ]
+}

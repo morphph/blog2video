@@ -1,0 +1,40 @@
+{
+ "scene": 22,
+ "id": "s22",
+ "type": "quote",
+ "dataDuration": 22.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_22.html",
+ "topbarIndex": "[22/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 1.56,
+   "text": "这里要插一句提醒。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.739,
+   "localDuration": 6.042,
+   "text": "我说的内容，绝不是那种\"我把社媒交给 AI，一夜涨粉十万\"的玩意儿。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.931,
+   "localDuration": 5.995,
+   "text": "那东西基本一文不值，除非你真的在用叙事和权威，建立起信任和忠诚。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.087,
+   "localDuration": 2.501,
+   "text": "有句话说得好：点赞不是现金。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.751,
+   "localDuration": 6.042,
+   "text": "真正聪明的内容创作，远不止是发点情绪垃圾去换点赞和关注。"
+  }
+ ]
+}

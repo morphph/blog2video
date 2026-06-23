@@ -1,0 +1,58 @@
+{
+ "scene": 17,
+ "id": "s17",
+ "type": "checklist",
+ "dataDuration": 21.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_17.html",
+ "topbarIndex": "[17/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.463,
+   "text": "所以方法很直接：一夜之间，把开关全部翻过来。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.601,
+   "localDuration": 4.207,
+   "text": "明天醒来，至少这一天，什么都跟以前不一样。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.957,
+   "localDuration": 2.103,
+   "text": "换个时间定闹钟。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.06,
+   "localDuration": 2.893,
+   "text": "提前想好醒来要做什么。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 13.953,
+   "localDuration": 2.103,
+   "text": "吃不一样的东西。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.056,
+   "localDuration": 2.366,
+   "text": "和不一样的人说话。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 18.422,
+   "localDuration": 2.104,
+   "text": "看不一样的内容。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 20.526,
+   "localDuration": 0.789,
+   "text": "全部。"
+  }
+ ]
+}

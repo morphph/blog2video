@@ -1,0 +1,52 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "principle",
+ "dataDuration": 30.033,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_10.html",
+ "topbarIndex": "[10/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.569,
+   "text": "现在所有人都痴迷于\"高能动性\"这个词。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.704,
+   "localDuration": 1.733,
+   "text": "我懂，它确实重要。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.437,
+   "localDuration": 6.352,
+   "text": "但你发现没有，那帮科技圈的哥们互相抄，一个个都在喊\"要高能动性\"。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.948,
+   "localDuration": 3.522,
+   "text": "恰恰是这件事，暴露了他们其实很低能动性。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.62,
+   "localDuration": 5.612,
+   "text": "更重要的是，这五个要素，最后其实压缩成两种能力。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.38,
+   "localDuration": 5.055,
+   "text": "一种是\"能把事搞定\"，另一种是\"知道该做什么\"。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 26.6,
+   "localDuration": 3.267,
+   "text": "把这两句记住，比记住五个名词有用得多。"
+  }
+ ]
+}

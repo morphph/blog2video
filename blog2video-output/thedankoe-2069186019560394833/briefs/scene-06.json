@@ -1,0 +1,76 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 52.433,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_6.html",
+ "topbarIndex": "[06/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 2.199,
+   "text": "但工作很难给你这个。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.341,
+   "localDuration": 3.555,
+   "text": "干了几个月，该会的你都会了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.896,
+   "localDuration": 3.555,
+   "text": "打卡、做事、下班，开始无聊。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.613,
+   "localDuration": 5.357,
+   "text": "你的注意力不再沉浸在任务里，而是飘向那句\"我还能干点别的什么\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.121,
+   "localDuration": 8.294,
+   "text": "可对大多数人来说，那个\"别的\"不是什么有意义的目标，而是掏出手机，刷到大脑发霉。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.581,
+   "localDuration": 4.033,
+   "text": "有意思的是，这背后还藏着一套更古老的结构。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.757,
+   "localDuration": 2.058,
+   "text": "社会本质上是个金字塔。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.815,
+   "localDuration": 5.052,
+   "text": "底下的人永远比顶上的多，而且数学上不可能人人都在顶上。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.029,
+   "localDuration": 5.31,
+   "text": "一个老板，一堆员工，员工的生存全押在老板身上。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.501,
+   "localDuration": 3.569,
+   "text": "我们大多数人，是被工业时代的标准养大的。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 44.209,
+   "localDuration": 8.039,
+   "text": "成为专才，死磕一个领域，找份高薪工作，好让爸妈的朋友觉得他家孩子有出息。"
+  }
+ ]
+}

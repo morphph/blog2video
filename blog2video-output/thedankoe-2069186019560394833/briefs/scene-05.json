@@ -1,0 +1,82 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 42.7,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_5.html",
+ "topbarIndex": "[05/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 3.395,
+   "text": "人生的三分之一，在做你没得选的工作。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.569,
+   "localDuration": 3.824,
+   "text": "另外三分之一，累到没力气去做任何有意义的事。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.565,
+   "localDuration": 2.152,
+   "text": "最后三分之一，在睡觉。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.869,
+   "localDuration": 1.34,
+   "text": "这样过四十多年。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 11.345,
+   "localDuration": 1.677,
+   "text": "为什么会坐不住？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 13.022,
+   "localDuration": 3.982,
+   "text": "因为真正的享受，来自活在你能力的边缘。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 17.141,
+   "localDuration": 3.731,
+   "text": "快乐来自挑战一个略高于你当前水平的目标。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 21.029,
+   "localDuration": 5.229,
+   "text": "不能太难，难到你焦虑；也不能太简单，简单到你无聊。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 26.429,
+   "localDuration": 2.28,
+   "text": "电子游戏就是吃透了这一点。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 28.877,
+   "localDuration": 5.31,
+   "text": "一个一级的角色去做一百级的任务，会被秒杀，然后你会恨这个游戏。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 34.349,
+   "localDuration": 2.426,
+   "text": "这是进入心流最大的驱动力。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 36.775,
+   "localDuration": 5.787,
+   "text": "如果你能搭出一种让心流更容易发生的生活结构，快乐会变得很充裕。"
+  }
+ ]
+}

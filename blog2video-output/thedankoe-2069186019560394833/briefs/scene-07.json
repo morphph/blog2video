@@ -1,0 +1,46 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "principle",
+ "dataDuration": 36.467,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_7.html",
+ "topbarIndex": "[07/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.824,
+   "text": "可正因为你只做这一件事，你对整个系统是瞎的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.98,
+   "localDuration": 6.68,
+   "text": "你懂得那一个让你拿工资的技能，却从没想过去搞懂那个付你工资的系统。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.82,
+   "localDuration": 5.995,
+   "text": "你不会搭自己的东西，你只会在别人的东西里，填一个角色。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.976,
+   "localDuration": 7.063,
+   "text": "不知不觉，你的思考能力被压垮了，哪怕你在自己那门手艺上算\"聪明\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.176,
+   "localDuration": 5.74,
+   "text": "你赚着还行的工资，却没有安全感，于是陷进一个慢性的压力循环。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.08,
+   "localDuration": 6.204,
+   "text": "而压力会让人的视野变窄，让你更难去想象一种\"自己搭东西\"的生活。"
+  }
+ ]
+}

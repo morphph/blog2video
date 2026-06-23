@@ -1,0 +1,40 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 28.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_1.html",
+ "topbarIndex": "[01/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.335,
+   "text": "AI 会不会让你失业，这件事你大概已经焦虑很久了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.5,
+   "localDuration": 5.854,
+   "text": "但最近有一封写给打工人的公开信，发出去几个小时就冲到将近两百万的阅读量。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.354,
+   "localDuration": 6.666,
+   "text": "这封信的作者 Dan Koe 一上来就把矛头掉了个头，真正威胁你的从来不是 AI。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.172,
+   "localDuration": 4.625,
+   "text": "是你把自己的整个生存，押在了除你自己以外的所有人身上。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.96,
+   "localDuration": 6.727,
+   "text": "今天不聊怎么对抗 AI，只聊一件事——怎么让自己变成那个不再需要被人养着的人。"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "quote",
+ "dataDuration": 38.9,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_8.html",
+ "topbarIndex": "[08/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.56,
+   "text": "最关键的一句来了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.713,
+   "localDuration": 4.37,
+   "text": "判断你是不是奴隶，别看感受，看一条硬标准。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.249,
+   "localDuration": 10.86,
+   "text": "如果你没办法停止上班，一停就是灾难，而你又没有创造其他出路的技能——那按定义，你就是个奴隶，不管你的感受怎么说。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.265,
+   "localDuration": 7.528,
+   "text": "更扎心的是，如果你已经把自己和这份工作绑成了一体，你会把这句话当成一次真正的攻击。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.933,
+   "localDuration": 1.62,
+   "text": "你会想跟我吵。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.553,
+   "localDuration": 0.926,
+   "text": "没关系。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.479,
+   "localDuration": 3.24,
+   "text": "但你越想吵，越证明了这一点。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.873,
+   "localDuration": 3.114,
+   "text": "那么，对抗\"大替代\"的办法是什么？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.987,
+   "localDuration": 4.762,
+   "text": "其实就藏在这里——你得开始押注一件属于你自己的东西。"
+  }
+ ]
+}

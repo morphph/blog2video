@@ -1,0 +1,40 @@
+{
+ "scene": 19,
+ "id": "s19",
+ "type": "image",
+ "dataDuration": 28.367,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_19.html",
+ "topbarIndex": "[19/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.37,
+   "text": "因为一个有智能的系统，标志就是它会根据反馈纠偏。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.536,
+   "localDuration": 4.625,
+   "text": "它心里有一座灯塔，被风吹偏航向时，它不会放弃。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.324,
+   "localDuration": 10.395,
+   "text": "船往灯塔开，被吹偏了，就往左修一点、往右修一点，来回折返，但眼睛始终盯着灯塔，最终靠岸。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.872,
+   "localDuration": 2.791,
+   "text": "这就是大多数成功者唯一的共同特质。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.824,
+   "localDuration": 5.403,
+   "text": "对他们来说，失败不是个负面的词，而是好生活里一个必需的常量。"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 32.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_2.html",
+ "topbarIndex": "[02/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.003,
+   "localDuration": 2.118,
+   "text": "我们先把那句吓人的话拆开。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.271,
+   "localDuration": 4.799,
+   "text": "社交媒体上总有人喊，所有工作五秒钟内就要消失了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.239,
+   "localDuration": 6.425,
+   "text": "听多了，你可能会把\"反 AI\"当成一种新身份，天天发帖骂它。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.827,
+   "localDuration": 6.634,
+   "text": "骂得很爽，但你的行为没变，技能没扩展，对这个新世界也没适应一分一毫。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.631,
+   "localDuration": 4.08,
+   "text": "可问题是，AI 太大了，骂它是拦不住的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.879,
+   "localDuration": 7.528,
+   "text": "骂 AI，拦不住工作被替代，更拦不住\"成为一个成功的人\"需要的技能在悄悄改变。"
+  }
+ ]
+}

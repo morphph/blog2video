@@ -5,3 +5,11 @@
 Reading script: ../blog2video-output/thedankoe-2069186019560394833/video_1_script.md
 Extracted 6061 characters for TTS (27 slides mapped)
 Calling MiniMax TTS API...
+Audio saved: ../blog2video-output/thedankoe-2069186019560394833/video_1_audio.mp3 (17.1 MB)
+Fetching subtitle file from URL...
+Found 211 raw subtitle segments
+Raw subtitles saved: ../blog2video-output/thedankoe-2069186019560394833/video_1_audio_minimax_raw_subtitles.json (211 segments)
+Slide map saved: ../blog2video-output/thedankoe-2069186019560394833/video_1_audio_slide_map.json (27 slides)
+Sentence subtitles saved: ../blog2video-output/thedankoe-2069186019560394833/video_1_audio_subtitles.json (261 sentences)
+VTT saved: ../blog2video-output/thedankoe-2069186019560394833/video_1_audio.vtt
+Audio duration: 1121.8s

@@ -1,0 +1,52 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 18.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/thedankoe-2069186019560394833/slide_12.html",
+ "topbarIndex": "[12/27]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 4.672,
+   "text": "游戏圈有个大佬叫 Strauss Zelnick，他说过一段话，更直白。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.84,
+   "localDuration": 3.038,
+   "text": "你知道一年上市多少款手游吗？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.878,
+   "localDuration": 0.867,
+   "text": "上千款。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.908,
+   "localDuration": 1.794,
+   "text": "那一年出几款爆款？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 10.702,
+   "localDuration": 0.997,
+   "text": "零到五款。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 11.86,
+   "localDuration": 3.125,
+   "text": "技术早就是白菜价了，谁都能做。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 14.985,
+   "localDuration": 2.917,
+   "text": "做得出来，根本不等于做得成。"
+  }
+ ]
+}

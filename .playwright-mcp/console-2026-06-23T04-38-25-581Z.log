@@ -5,3 +5,5 @@
 Element with focus: <a.css-175oi2r r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21>
 Ancestor with aria-hidden: <a.css-175oi2r r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21> @ https://x.com/addyosmani/status/2068394292796871019:0
 [    2064ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://ads-twitter.com/ads.js?_=1782189507610:0
+[ 2703188ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api.x.com/1.1/live_pipeline/update_subscriptions:0
+[ 5404758ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api.x.com/1.1/live_pipeline/update_subscriptions:0

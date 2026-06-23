@@ -166,11 +166,12 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
 /* —— scene-06 特有 —— */
 [data-composition-id='s06'] .h2{margin-top:18px}
-[data-composition-id='s06'] .myth{position:relative;margin-top:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 32px;font-family:'JetBrains Mono',monospace;font-size:34px;line-height:1.35;color:#8a8a85;overflow:hidden}
+[data-composition-id='s06'] .myth{position:relative;margin-top:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 32px;padding-right:140px;font-family:'JetBrains Mono',monospace;font-size:32px;line-height:1.35;color:#8a8a85;overflow:hidden}
+[data-composition-id='s06'] .myth .line{position:relative;display:inline-block}
 [data-composition-id='s06'] .myth .p{color:#ff6b5e;margin-right:14px}
 [data-composition-id='s06'] .myth .belief{color:#edebe6;font-weight:500}
-[data-composition-id='s06'] .myth .strike{position:absolute;left:32px;top:50%;height:3px;background:#ff6b5e;transform:scaleX(0);transform-origin:left center;width:560px}
-[data-composition-id='s06'] .myth-tag{position:absolute;right:28px;top:24px;font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#121212;background:#ff6b5e;padding:3px 12px;letter-spacing:.04em}
+[data-composition-id='s06'] .myth .strike{position:absolute;left:0;right:0;top:50%;height:3px;background:#ff6b5e;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s06'] .myth-tag{position:absolute;right:28px;top:50%;transform:translateY(-50%);font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#121212;background:#ff6b5e;padding:3px 12px;letter-spacing:.04em}
 [data-composition-id='s06'] .bracket{margin-top:30px}
 [data-composition-id='s06'] .bracket .lead .no{color:#8a8a85;text-decoration:line-through;text-decoration-color:#8a8a85}
 [data-composition-id='s06'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
@@ -197,8 +198,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 
       <div class="myth">
         <span class="myth-tag">MYTH</span>
-        <span class="p">$</span><span class="belief">context.add(全部资料)</span> → 越多越聪明
-        <span class="strike"></span>
+        <span class="line"><span class="p">$</span><span class="belief">context.add(全部资料)</span> → 越多越聪明<span class="strike"></span></span>
       </div>
 
       <div class="bracket">

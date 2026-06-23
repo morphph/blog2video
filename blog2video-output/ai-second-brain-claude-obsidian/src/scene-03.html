@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .h2{margin-top:18px}
+[data-composition-id='s03'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s03'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s03'] .metaphor .own{color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .colh{margin-top:34px}
+[data-composition-id='s03'] .cols{margin-top:16px}
+[data-composition-id='s03'] .col .ds .gone{color:#5fd3e8}
+[data-composition-id='s03'] .col .ds .keep{color:#ccff4d}
+[data-composition-id='s03'] .read{margin-top:30px}
+[data-composition-id='s03'] .read .lead{font-size:36px}
+[data-composition-id='s03'] .read .machine{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s03'] .read .machine .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="39.8" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 第二大脑<span class="b-cur"></span></div>
+      <div class="idx">[03/11]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// CORE JUDGMENT · <span class="acc">核心判断</span></div>
+      <div class="h2">本质上只是<br>一堆<span class="em">文本文件</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">记忆<span class="em">不被锁死</span>在任何 AI 产品里</div>
+        <div class="metaphor">你拥有的是<span class="own">大脑本身</span> <span class="ar">→</span> 不是工具</div>
+      </div>
+
+      <div class="kicker colh">// 同一份记忆,两种命运</div>
+      <div class="cols">
+        <div class="col c-left">
+          <div class="ch">纯文本文件</div>
+          <div class="it"><div class="nm">在你电脑上</div><div class="ds"><span class="keep">永远归你</span></div></div>
+        </div>
+        <div class="col alt c-right">
+          <div class="ch">聊天记录</div>
+          <div class="it"><div class="nm">存在别人云端</div><div class="ds"><span class="gone">随产品消失</span></div></div>
+        </div>
+      </div>
+
+      <div class="bracket read">
+        <div class="lead">AI 模型,只是个可随时替换的「<span class="em">读取头</span>」</div>
+        <div class="machine">同样的订阅 <span class="em">·</span> 一台完全不同的机器</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.348" data-track-index="5"><div class="sub-inner">这里有个判断，我读完最大的感受就<span class="sub-k">在这</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.479" data-duration="3.063" data-track-index="5"><div class="sub-inner">整套东西，本质上只是一堆<span class="sub-k">文本文件</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.542" data-duration="6.306" data-track-index="5"><div class="sub-inner">这句话听着平淡，但它意味着：你的记忆<span class="sub-k">不被锁死</span>在任何一个 AI 产品里。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.848" data-duration="3.964" data-track-index="5"><div class="sub-inner">明年出了更强的模型，你把它指过去，<span class="sub-k">照样能用</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.979" data-duration="3.311" data-track-index="5"><div class="sub-inner">因为你拥有的是<span class="sub-k">大脑本身</span>，不是工具。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.29" data-duration="8.57" data-track-index="5"><div class="sub-inner">聊天记录是存在别人云端的、会随产品消失的东西；而纯文本文件，是你电脑上、<span class="sub-k">永远归你</span>的东西。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.06" data-duration="5.311" data-track-index="5"><div class="sub-inner">AI 模型在这套结构里，不过是个可以随时替换的<span class="sub-k">"读取头"</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.511" data-duration="5.148" data-track-index="5"><div class="sub-inner">这就是为什么作者说，同样的订阅，却是一台<span class="sub-k">完全不同的机器</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 3.5, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket:not(.read)', 6.6, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.metaphor', 17.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.colh', 20.3, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c-left', 20.6, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.c-right', 23.4, {x:22, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket.read', 29.05, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.read .machine', 34.5, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.479],['#sub-3',6.542],['#sub-4',12.848],['#sub-5',16.979],['#sub-6',20.29],['#sub-7',29.06],['#sub-8',34.511]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.8, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

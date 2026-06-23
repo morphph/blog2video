@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 70px; font-weight: 800; line-height: 1.2; margin-bottom: 52px; }
+    .title .key { color: #8B5CF6; }
+    .pyramid { width: 100%; margin-bottom: 40px; }
+    .pyr-row { display: flex; justify-content: center; margin: 8px 0; }
+    .pyr-top { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.4);
+      border-radius: 12px; padding: 18px 40px; font-size: 36px; font-weight: 700; color: #F59E0B; }
+    .pyr-bot { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px; padding: 18px 80px; font-size: 36px; font-weight: 700; color: #B0B0CC; }
+    .desc { background: #1A1A2E; border-left: 4px solid #8B5CF6; border-radius: 12px;
+      padding: 32px; width: 100%; text-align: left; font-size: 38px; line-height: 1.45; }
+    .desc .key { color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">社会本质是个<br><span class="key">金字塔</span></div>
+    <div class="pyramid">
+      <div class="pyr-row"><div class="pyr-top">1 个老板</div></div>
+      <div class="pyr-row"><div class="pyr-bot">一堆员工，生存全押在老板身上</div></div>
+    </div>
+    <div class="desc">我们大多被<span class="key">工业时代标准</span>养大：<br>成为专才，死磕一个领域，找份高薪工作</div>
+  </div>
+</body>
+</html>

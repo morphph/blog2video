@@ -1,0 +1,7 @@
+
+> blog2video-remotion@1.0.0 tts
+> node scripts/tts.mjs ../blog2video-output/thedankoe-2069186019560394833/video_1_script.md ../blog2video-output/thedankoe-2069186019560394833/video_1_audio.mp3
+
+Reading script: ../blog2video-output/thedankoe-2069186019560394833/video_1_script.md
+Extracted 6061 characters for TTS (27 slides mapped)
+Calling MiniMax TTS API...

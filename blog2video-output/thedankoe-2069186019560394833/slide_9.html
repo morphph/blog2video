@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .pillar { font-size: 30px; color: #6B7280; letter-spacing: 2px; margin-bottom: 16px; }
+    .title { font-size: 64px; font-weight: 800; line-height: 1.2; margin-bottom: 44px; }
+    .title .key { color: #8B5CF6; }
+    .list { width: 100%; display: flex; flex-direction: column; gap: 18px; }
+    .item { background: #1A1A2E; border: 1px solid rgba(139,92,246,0.2);
+      border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 22px 26px;
+      display: flex; align-items: baseline; gap: 22px; text-align: left; }
+    .item .n { font-size: 44px; font-weight: 800; color: #8B5CF6; min-width: 48px; }
+    .item .en { font-size: 38px; font-weight: 800; color: #FFFFFF; }
+    .item .zh { font-size: 32px; color: #B0B0CC; margin-left: auto; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="pillar">第二根支柱 · 成功的五大要素</div>
+    <div class="title">站得住，靠这 <span class="key">5 个</span></div>
+    <div class="list">
+      <div class="item"><span class="n">1</span><span class="en">Agency</span><span class="zh">能动性 · 看到机会就动手</span></div>
+      <div class="item"><span class="n">2</span><span class="en">Taste</span><span class="zh">品味 · 什么值得拿出来</span></div>
+      <div class="item"><span class="n">3</span><span class="en">Persuasion</span><span class="zh">说服力 · 让别人在乎</span></div>
+      <div class="item"><span class="n">4</span><span class="en">Persistence</span><span class="zh">坚持 · 犯错是必需的</span></div>
+      <div class="item"><span class="n">5</span><span class="en">Iteration</span><span class="zh">迭代 · 据反馈纠错</span></div>
+    </div>
+  </div>
+</body>
+</html>

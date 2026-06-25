@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .verdict{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#ff6b5e;border:1px solid rgba(255,107,94,.35);padding:3px 14px;margin-bottom:12px;letter-spacing:.04em}
+[data-composition-id='s04'] .verdict.ok{color:#ccff4d;border-color:rgba(204,255,77,.35)}
+[data-composition-id='s04'] .insight-row{display:flex;align-items:center;gap:18px;margin-top:26px;background:rgba(204,255,77,.06);border:1px solid #ccff4d;padding:24px 28px;width:100%}
+[data-composition-id='s04'] .insight-row .i-dot{width:12px;height:12px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+[data-composition-id='s04'] .insight-row .i-tx{font-weight:600;font-size:34px;color:#edebe6;line-height:1.4}
+[data-composition-id='s04'] .insight-row .i-tx .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="57.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI产品<span class="b-cur"></span></div>
+      <div class="idx">[04/7]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 03诫 · <span class="acc">形式即说明书</span></div>
+      <div class="h1" style="margin-top:16px">"能做任何事"<br>= <span class="em">不知道能做什么</span></div>
+
+      <!-- Fairies block -->
+      <div class="rows" style="margin-top:36px">
+        <div class="row r-fairies-head">
+          <div class="n">01</div>
+          <div class="rb">
+            <div class="verdict">FAIL · Fairies</div>
+            <div class="rt">空白聊天框 · <span class="code">通用 Agent</span></div>
+            <div class="rd">团队说不清解决什么问题 → 解释工作甩给用户</div>
+          </div>
+        </div>
+
+        <!-- Shortcut block -->
+        <div class="row r-shortcut-head" style="border-color:rgba(204,255,77,.3)">
+          <div class="n" style="color:#ccff4d">02</div>
+          <div class="rb">
+            <div class="verdict ok">FOUND IT · Shortcut</div>
+            <div class="rt">电子表格 <span class="code">+</span> Agent 面板</div>
+            <div class="rd">用户一眼看懂 · 零解释 · 直接开始</div>
+          </div>
+        </div>
+
+        <div class="row r-shortcut-detail">
+          <div class="n" style="color:#5fd3e8">›</div>
+          <div class="rb">
+            <div class="rt" style="font-size:34px">用户 #1 在乎什么?<span class="tag" style="color:#5fd3e8;border-color:rgba(95,211,232,.4)">准确性</span><span class="tag" style="color:#5fd3e8;border-color:rgba(95,211,232,.4)">公式正确性</span></div>
+            <div class="rd">清晰的形式让团队把精力放到真正重要的事</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing insight -->
+      <div class="insight-row r-insight">
+        <div class="i-dot"></div>
+        <div class="i-tx">清晰的形式<span class="em">没有结束工作</span><br>它让<span class="em">真正的工作</span>得以开始</div>
+      </div>
+    </div>
+
+    <!-- Subtitles -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.101" data-track-index="5"><div class="sub-inner">Fairies 和 Shortcut 的对比，我觉得是这篇文章里最具体的一个<span class="sub-k">教训</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.247" data-duration="6.454" data-track-index="5"><div class="sub-inner">Fairies 是一个<span class="sub-k">空白聊天框</span>，定位是"通用 Agent，能做任何事"。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.701" data-duration="5.234" data-track-index="5"><div class="sub-inner">问题在于，"能做任何事"在用户眼里等于<span class="sub-k">"不知道它能做什么"</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.935" data-duration="4.884" data-track-index="5"><div class="sub-inner">团队自己都说不清它<span class="sub-k">解决什么问题</span>，用户更没办法自己想明白。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.987" data-duration="5.821" data-track-index="5"><div class="sub-inner">使用方式的<span class="sub-k">解释工作</span>，被全部甩给了用户，而用户没有义务替你想这个。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.963" data-duration="6.297" data-track-index="5"><div class="sub-inner">Shortcut 第一天的界面是：一张<span class="sub-k">电子表格</span>，旁边一个 Agent 面板。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.407" data-duration="0.821" data-track-index="5"><div class="sub-inner">就这样。</div></div>
+    <div id="sub-8" class="clip sub" data-start="35.228" data-duration="3.286" data-track-index="5"><div class="sub-inner">用户一眼看懂，<span class="sub-k">零解释</span>，直接开始。</div></div>
+    <div id="sub-9" class="clip sub" data-start="38.514" data-duration="2.875" data-track-index="5"><div class="sub-inner">这个<span class="sub-k">形式本身</span>就是产品说明书。</div></div>
+    <div id="sub-10" class="clip sub" data-start="41.535" data-duration="8.08" data-track-index="5"><div class="sub-inner">因为用户一秒就看懂了，团队才能把精力放到<span class="sub-k">真正重要的事</span>上：他们到底在乎 Excel 里的什么？</div></div>
+    <div id="sub-11" class="clip sub" data-start="49.615" data-duration="3.337" data-track-index="5"><div class="sub-inner">答案是<span class="sub-k">准确性和公式正确性</span>，排在第一位。</div></div>
+    <div id="sub-12" class="clip sub" data-start="53.091" data-duration="4.463" data-track-index="5"><div class="sub-inner">清晰的形式<span class="sub-k">没有结束工作</span>，它让真正的工作得以开始。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+
+    /* grid + topbar */
+    tl.from(R+'.grid',   {opacity:0, duration:.5, ease:'power1.out'}, .02);
+    tl.from(R+'.topbar', {y:-16, opacity:0, duration:.3, ease:'power2.out'}, .2);
+
+    /* kicker + h1: scene opens at sub-1 time=0 */
+    D2.enter(tl, R+'.kicker',  .4,  {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1',      .7,  {y:20, d:.4, ease:'expo.out'});
+
+    /* Fairies block — sub-2 at 5.247 */
+    D2.enter(tl, R+'.r-fairies-head', 5.1, {x:-24, ease:'power3.out'});
+
+    /* Shortcut block — sub-6 at 27.963 */
+    D2.enter(tl, R+'.r-shortcut-head',  27.8, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r-shortcut-detail', 35.0, {y:16, d:.32, ease:'power3.out'});
+
+    /* Insight row — sub-11 at 49.615 */
+    D2.enter(tl, R+'.r-insight', 49.5, {y:20, d:.38, ease:'power3.out'});
+
+    /* subtitles */
+    D2.subs(tl, [
+      ['#sub-1',  0],
+      ['#sub-2',  5.247],
+      ['#sub-3',  11.701],
+      ['#sub-4',  16.935],
+      ['#sub-5',  21.987],
+      ['#sub-6',  27.963],
+      ['#sub-7',  34.407],
+      ['#sub-8',  35.228],
+      ['#sub-9',  38.514],
+      ['#sub-10', 41.535],
+      ['#sub-11', 49.615],
+      ['#sub-12', 53.091]
+    ].map(function(s){ return [R+s[0], s[1]]; }));
+
+    /* breath: even scene → 'out' */
+    D2.breath(tl, R+'.content', 57.7, 'out');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+    D2.register('s04', tl);
+  })();
+  </script>
+</body>
+</html>

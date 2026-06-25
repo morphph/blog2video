@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .row-old { border-color: rgba(138,138,133,.35); }
+[data-composition-id='s05'] .row-old .n { color: #8a8a85; }
+[data-composition-id='s05'] .row-new { border-color: #ccff4d; }
+[data-composition-id='s05'] .yc-num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 36px; color: #5fd3e8; background: rgba(95,211,232,.1); border: 1px solid rgba(95,211,232,.35); padding: 2px 14px; display: inline-block; vertical-align: 2px; }
+[data-composition-id='s05'] .yc-label { color: #5fd3e8; font-family: 'JetBrains Mono', monospace; }
+[data-composition-id='s05'] .insight-row { opacity: 0; }
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="61.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI产品<span class="b-cur"></span></div>
+      <div class="idx">[05/7]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 陷阱四 · <span class="acc">AI 升级了拖延</span></div>
+      <div class="h1" style="margin-top:18px">Coding Agent<br>是<span class="em">幻觉推销员</span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row row-old r1">
+          <div class="n">旧</div>
+          <div class="rb">
+            <div class="rt">搭百万用户架构再找用户</div>
+            <div class="rd">代价大，不容易沉迷</div>
+          </div>
+        </div>
+
+
+        <div class="flowarrow" style="margin-left:30px"><span class="a">↓</span> AI 升级</div>
+
+        <div class="row row-new r2">
+          <div class="n">新</div>
+          <div class="rb">
+            <div class="rt">第一天就能搭<span class="em" style="font-size:36px">「正确的最终架构」</span></div>
+            <div class="rd">感觉跳过探索 — 实际什么都没探索</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rows r3-wrap" style="margin-top:28px">
+        <div class="row r3">
+          <div class="n yc-label">YC</div>
+          <div class="rb">
+            <div class="rt">连续 72 天，每天 <span class="yc-num">37000行</span></div>
+            <div class="rd">开发者检查：全是臃肿和低级错误</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bracket insight-row" style="margin-top:28px;width:100%">
+        <div class="lead" style="font-size:36px;line-height:1.45">
+          行数从来不度量价值<br>
+          现在连<span class="em">努力程度都不度量了</span>
+        </div>
+        <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85">
+          正确的系统 = 随着找到用户的过程生长出来
+        </div>
+      </div>
+    </div>
+
+    <!-- subtitles -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.625" data-track-index="5"><div class="sub-inner">文章里有一个观察，我认为是这十条里最值得单独<span class="sub-k">拎出来</span>的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.787" data-duration="5.834" data-track-index="5"><div class="sub-inner">以前，"搭<span class="sub-k">百万用户架构</span>再找用户"是工程师的经典拖延。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.621" data-duration="3.366" data-track-index="5"><div class="sub-inner">现在，<span class="sub-k">AI</span> 让这个拖延升级了。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.147" data-duration="8.213" data-track-index="5"><div class="sub-inner">Coding Agent 让你在第一天就能搭出<span class="sub-k">「正确的最终架构」</span>，感觉像是跳过了探索阶段，直接到达了终点。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.499" data-duration="9.49" data-track-index="5"><div class="sub-inner">但这是最新版本的幻觉，而且 AI 是它的<span class="sub-k">推销员</span>——它卖给你一个幻想：你可以在开始就全知全能，永远不需要发现任何事情。</div></div>
+    <div id="sub-6" class="clip sub" data-start="32.147" data-duration="7.443" data-track-index="5"><div class="sub-inner">YC 有个负责人炫耀说，自己的项目每天生成 <span class="sub-k">37000 行</span> AI 代码，连续 72 天。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.59" data-duration="4.23" data-track-index="5"><div class="sub-inner">后来有开发者看了那些代码，发现全是<span class="sub-k">臃肿和低级错误</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="43.991" data-duration="1.9" data-track-index="5"><div class="sub-inner">行数从来<span class="sub-k">不度量价值</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="45.891" data-duration="2.47" data-track-index="5"><div class="sub-inner">现在连<span class="sub-k">努力程度都不度量了</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="48.527" data-duration="4.33" data-track-index="5"><div class="sub-inner">正确的系统是随着产品<span class="sub-k">找到用户</span>的过程生长出来的。</div></div>
+    <div id="sub-11" class="clip sub" data-start="52.857" data-duration="8.283" data-track-index="5"><div class="sub-inner">它不是由某个人在开始就设计好的<span class="sub-k">蓝图</span>——那个人以为自己已经看见了全貌，其实他什么都没看见。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+
+    // grid + topbar
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // kicker + h1 — bind to sub-1/sub-2 onset (~0-5s)
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+
+    // row-old (旧版拖延) — at sub-2 (~4.787s)
+    D2.enter(tl, R+'.r1', 4.9, {x:-22, ease:'power3.out'});
+
+    // flowarrow — shortly after row-old
+    D2.enter(tl, R+'.flowarrow', 10.5, {y:12, d:.28, ease:'power2.out'});
+
+    // row-new (AI升级版) — at sub-3/sub-4 (~10.6-14s)
+    D2.enter(tl, R+'.r2', 14.2, {x:-22, d:.35, ease:'expo.out'});
+
+    // YC data row — at sub-6 (~32s), but show the card container early
+    D2.enter(tl, R+'.r3-wrap', 32.2, {y:18, d:.35, ease:'power3.out'});
+
+    // insight row (bracket) — at sub-8 (~44s)
+    tl.set(R+'.insight-row', {opacity:1}, 44.0);
+    D2.enter(tl, R+'.insight-row', 44.0, {y:16, d:.38, ease:'power3.out'});
+
+    // subtitles
+    D2.subs(tl, [
+      ['#sub-1',0],
+      ['#sub-2',4.787],
+      ['#sub-3',10.621],
+      ['#sub-4',14.147],
+      ['#sub-5',22.499],
+      ['#sub-6',32.147],
+      ['#sub-7',39.59],
+      ['#sub-8',43.991],
+      ['#sub-9',45.891],
+      ['#sub-10',48.527],
+      ['#sub-11',52.857]
+    ].map(function(s){return [R+s[0],s[1]];}));
+
+    // breath: odd scene → 'in'
+    D2.breath(tl, R+'.content', 61.3, 'in');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

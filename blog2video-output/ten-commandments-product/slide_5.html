@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .main-title {
+      font-size: 66px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 48px;
+    }
+    .main-title .accent { color: #EF4444; }
+    .upgrade-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 36px 32px 36px 36px;
+      border-left: 4px solid #EF4444;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .upgrade-label {
+      font-size: 22px;
+      color: #EF4444;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .upgrade-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .upgrade-text .dim { color: #B0B0CC; }
+    .upgrade-text .key { color: #EF4444; font-weight: 700; }
+    .counter-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 36px 32px 36px 36px;
+      border-left: 4px solid #F59E0B;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .counter-label {
+      font-size: 22px;
+      color: #F59E0B;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .counter-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .counter-text .num {
+      font-size: 56px;
+      font-weight: 800;
+      color: #F59E0B;
+      line-height: 1;
+    }
+    .counter-text .dim { color: #B0B0CC; }
+    .conclusion-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px 32px 36px;
+      border-left: 4px solid #8B5CF6;
+      width: 100%;
+    }
+    .conclusion-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .conclusion-text .key { color: #8B5CF6; font-weight: 700; }
+    .conclusion-text .green { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 陷阱四：AI 升级了拖延</div>
+    <div class="main-title">Coding Agent 是<br><span class="accent">最新版幻觉推销员</span></div>
+
+    <div class="upgrade-card">
+      <div class="upgrade-label">旧版拖延</div>
+      <div class="upgrade-text">
+        搭百万用户架构再找用户<br>
+        <span class="dim">→ 代价大，不容易沉迷</span>
+      </div>
+    </div>
+
+    <div class="upgrade-card">
+      <div class="upgrade-label">AI 升级版</div>
+      <div class="upgrade-text">
+        Coding Agent 让你第一天就能搭<br>
+        <span class="key">「正确的最终架构」</span><br>
+        感觉像跳过了探索，直达终点<br>
+        <span class="dim">实际上什么都没探索到</span>
+      </div>
+    </div>
+
+    <div class="counter-card">
+      <div class="counter-label">真实案例</div>
+      <div class="counter-text">
+        YC 负责人炫耀连续 <span class="num">72</span> 天<br>每天生成 <span class="num">37000</span> 行 AI 代码<br>
+        <span class="dim">→ 开发者看了：全是臃肿和低级错误</span>
+      </div>
+    </div>
+
+    <div class="conclusion-card">
+      <div class="conclusion-text">
+        行数从来不度量价值<br>
+        现在连<span class="key">努力程度都不度量了</span><br>
+        正确的系统是<span class="green">随着找到用户的过程生长出来的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

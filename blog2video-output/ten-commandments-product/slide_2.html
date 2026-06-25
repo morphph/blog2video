@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #EF4444;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .principle-title {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 48px;
+    }
+    .principle-title .highlight {
+      color: #EF4444;
+    }
+    .myth-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 36px 32px;
+      border-left: 4px solid #EF4444;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .myth-label {
+      font-size: 22px;
+      color: #EF4444;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .myth-text {
+      font-size: 32px;
+      color: #FFFFFF;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .myth-text em {
+      font-style: normal;
+      color: #B0B0CC;
+    }
+    .divider {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #EF4444 0%, transparent 100%);
+      margin-bottom: 28px;
+    }
+    .real-story {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 36px 32px;
+      border-left: 4px solid #3B82F6;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .real-label {
+      font-size: 22px;
+      color: #3B82F6;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .real-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+    .real-text strong {
+      color: #10B981;
+    }
+    .conclusion {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px;
+      border-left: 4px solid #8B5CF6;
+      width: 100%;
+    }
+    .conclusion-text {
+      font-size: 32px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .conclusion-text .key {
+      color: #8B5CF6;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 陷阱一</div>
+    <div class="principle-title">技术突破 ≠ 产品<br><span class="highlight">中间那步才是全部</span></div>
+
+    <div class="myth-card">
+      <div class="myth-label">神话</div>
+      <div class="myth-text">
+        模型能力跳得太快 → 研究成果就是产品<br>
+        <em>就像 ChatGPT 把研究直接变成了现象</em>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="real-story">
+      <div class="real-label">真相</div>
+      <div class="real-text">
+        ChatGPT 底层模型早就存在了<br>
+        让它成功的是最普通的<strong>聊天框</strong><br>
+        就算这样，Sam Altman 说早期留存<strong>"惨不忍睹"</strong>
+      </div>
+    </div>
+
+    <div class="real-story">
+      <div class="real-label">他们的教训</div>
+      <div class="real-text">
+        Minecraft Agent 登上 HN，多 Agent 协作造 300+ 物品<br>
+        但始终没搞清楚：<strong>哪个真实玩家，什么真实问题？</strong>
+      </div>
+    </div>
+
+    <div class="conclusion">
+      <div class="conclusion-text">
+        关注不是需求<br>
+        技术壮举不是产品<br>
+        <span class="key">那步翻译工作，才是全部的工作</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

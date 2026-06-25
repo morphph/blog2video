@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #10B981;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .main-title {
+      font-size: 66px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 44px;
+    }
+    .main-title .accent { color: #10B981; }
+    .enemy-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px 32px 36px;
+      border-left: 4px solid #EF4444;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .enemy-label {
+      font-size: 22px;
+      color: #EF4444;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .escape-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .escape-item {
+      font-size: 28px;
+      color: #B0B0CC;
+      line-height: 1.4;
+      padding-left: 20px;
+      position: relative;
+    }
+    .escape-item::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #EF4444;
+    }
+    .core-quote {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 36px 32px 36px 36px;
+      border-left: 4px solid #10B981;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .quote-label {
+      font-size: 22px;
+      color: #10B981;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .quote-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+    .quote-text .auto { color: #B0B0CC; }
+    .quote-text .hard { color: #10B981; font-weight: 700; }
+    .action-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px 32px 36px;
+      border-left: 4px solid #8B5CF6;
+      width: 100%;
+    }
+    .action-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+    .action-text .signal { color: #8B5CF6; font-weight: 700; }
+    .action-text .cta { color: #10B981; font-weight: 700; }
+    .closing {
+      margin-top: 36px;
+      font-size: 28px;
+      color: #B0B0CC;
+      font-weight: 500;
+    }
+    .closing strong { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 总结</div>
+    <div class="main-title">共同的敌人：<br><span class="accent">感觉在前进的逃避</span></div>
+
+    <div class="enemy-card">
+      <div class="enemy-label">这些动作看起来像进展，其实在逃避</div>
+      <div class="escape-list">
+        <div class="escape-item">读日志，而不是看用户</div>
+        <div class="escape-item">用自己的品味认证市场</div>
+        <div class="escape-item">让 AI 搭好架构再找客户</div>
+        <div class="escape-item">用代码行数衡量进展</div>
+      </div>
+    </div>
+
+    <div class="core-quote">
+      <div class="quote-label">文章核心</div>
+      <div class="quote-text">
+        AI <span class="auto">自动化了那部分从来都不是真正难点的工作</span><br>
+        真正难的那部分——<span class="hard">判断你是为谁做的、他们需要什么、他们会不会回来付钱</span><br>
+        这些，还是你的
+      </div>
+    </div>
+
+    <div class="action-card">
+      <div class="action-text">
+        当你想"再搭好架构就找用户"<br>
+        那个念头本身就是<span class="signal">信号</span><br><br>
+        <span class="cta">去找一个真实的人<br>坐在他旁边，看他怎么用</span>
+      </div>
+    </div>
+
+    <div class="closing">
+      AI 世界很吵，<strong>精读一篇，胜过刷一百条</strong>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #F59E0B;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .main-title {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+      line-height: 1.5;
+    }
+    .subtitle strong { color: #EF4444; }
+    .product-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 28px 28px 36px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-left: 4px solid #8B5CF6;
+    }
+    .product-card.orange { border-left-color: #F59E0B; }
+    .product-card.blue { border-left-color: #3B82F6; }
+    .product-name {
+      font-size: 22px;
+      color: #B0B0CC;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .product-name .num {
+      display: inline-block;
+      font-size: 56px;
+      font-weight: 800;
+      color: #8B5CF6;
+      line-height: 1;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+    .product-card.orange .product-name .num { color: #F59E0B; }
+    .product-card.blue .product-name .num { color: #3B82F6; }
+    .label-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .tag {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 6px;
+      background: rgba(139,92,246,0.15);
+      color: #8B5CF6;
+      flex-shrink: 0;
+    }
+    .product-card.orange .tag { background: rgba(245,158,11,0.15); color: #F59E0B; }
+    .product-card.blue .tag { background: rgba(59,130,246,0.15); color: #3B82F6; }
+    .label-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .mistake-text {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+    .mistake-text .bad { color: #EF4444; }
+    .mistake-text .good { color: #10B981; }
+    .bottom-insight {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 32px;
+      border-left: 4px solid #EF4444;
+      width: 100%;
+      margin-top: 4px;
+    }
+    .insight-text {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .insight-text .key { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 陷阱二：同一个错，犯了三次</div>
+    <div class="main-title">用户标签 ≠ 知道用户</div>
+    <div class="subtitle">三个产品，<strong>三次把模糊标签当答案</strong></div>
+
+    <div class="product-card">
+      <div class="product-name"><span class="num">01</span> Minecraft Agent</div>
+      <div class="label-row">
+        <span class="tag">说是</span>
+        <span class="label-text">Minecraft 玩家</span>
+      </div>
+      <div class="mistake-text">
+        实际上：<span class="bad">建造型 / PvP 对战型 / 社交型</span><br>
+        <span class="good">→ 三种人，三个不同的产品</span>
+      </div>
+    </div>
+
+    <div class="product-card orange">
+      <div class="product-name"><span class="num">02</span> Fairies 桌面 Agent</div>
+      <div class="label-row">
+        <span class="tag">说是</span>
+        <span class="label-text">白领工作者</span>
+      </div>
+      <div class="mistake-text">
+        实际上：<span class="bad">他们"希望"白领是用户</span><br>
+        <span class="good">→ 白领根本不这么看自己</span>
+      </div>
+    </div>
+
+    <div class="product-card blue">
+      <div class="product-name"><span class="num">03</span> Shortcut Excel AI</div>
+      <div class="label-row">
+        <span class="tag">说是</span>
+        <span class="label-text">所有 Excel 用户</span>
+      </div>
+      <div class="mistake-text">
+        最终找到的：<span class="good">金融领域 · 高标准 · 高质量工作者</span>
+      </div>
+    </div>
+
+    <div class="bottom-insight">
+      <div class="insight-text">
+        日志告诉你用户<strong>做了什么</strong><br>
+        你真正饿着的是<span class="key">「为什么」</span><br>
+        只有坐在他们旁边，看他们怎么用
+      </div>
+    </div>
+  </div>
+</body>
+</html>

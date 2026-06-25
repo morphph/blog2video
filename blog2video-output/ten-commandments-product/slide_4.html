@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #3B82F6;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .main-title {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .main-title .vs {
+      color: #3B82F6;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #B0B0CC;
+      margin-bottom: 44px;
+    }
+    .vs-container {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .vs-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 28px;
+      border-left: 4px solid #EF4444;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .vs-card.good { border-left-color: #10B981; }
+    .vs-header {
+      font-size: 22px;
+      font-weight: 600;
+      color: #EF4444;
+      letter-spacing: 0.06em;
+    }
+    .vs-card.good .vs-header { color: #10B981; }
+    .vs-product {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .vs-desc {
+      font-size: 26px;
+      color: #B0B0CC;
+      line-height: 1.5;
+    }
+    .vs-problem {
+      font-size: 24px;
+      color: #EF4444;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .vs-card.good .vs-problem { color: #10B981; }
+    .vs-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding-top: 80px;
+    }
+    .vs-badge {
+      font-size: 40px;
+      font-weight: 800;
+      color: #3B82F6;
+    }
+    .insight-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px 32px 36px;
+      border-left: 4px solid #8B5CF6;
+      width: 100%;
+    }
+    .insight-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .insight-text .key { color: #8B5CF6; font-weight: 700; }
+    .insight-text .accent { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 陷阱三：形式即说明书</div>
+    <div class="main-title">Fairies <span class="vs">vs</span> Shortcut</div>
+    <div class="subtitle">同样是 AI 产品，差距在哪里</div>
+
+    <div class="vs-container">
+      <div class="vs-card">
+        <div class="vs-header">❌ 失败</div>
+        <div class="vs-product">Fairies</div>
+        <div class="vs-desc">空白聊天框<br>定位：通用 Agent<br>能做任何事</div>
+        <div class="vs-problem">
+          "能做任何事"<br>= 用户不知道<br>它能做什么<br><br>
+          解释工作全甩给用户
+        </div>
+      </div>
+
+      <div class="vs-divider">
+        <div class="vs-badge">VS</div>
+      </div>
+
+      <div class="vs-card good">
+        <div class="vs-header">✓ 找到感觉</div>
+        <div class="vs-product">Shortcut</div>
+        <div class="vs-desc">电子表格<br>+ 旁边一个<br>Agent 面板</div>
+        <div class="vs-problem">
+          用户一秒看懂<br>零解释<br>直接开始<br><br>
+          形式本身<br>= 产品说明书
+        </div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-text">
+        清晰的形式<span class="key">没有结束工作</span><br>
+        它让团队发现了真正重要的问题：<br>
+        用户最在乎<span class="accent">准确性和公式正确性</span><br>
+        <br>
+        清晰，才是真正工作的起点
+      </div>
+    </div>
+  </div>
+</body>
+</html>

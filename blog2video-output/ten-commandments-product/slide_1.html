@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      position: relative;
+    }
+    .eyebrow {
+      font-size: 26px;
+      color: #8B5CF6;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 76px;
+      font-weight: 800;
+      line-height: 1.12;
+      color: #FFFFFF;
+      margin-bottom: 48px;
+    }
+    .title .accent {
+      color: #EF4444;
+    }
+    .hook-desc {
+      font-size: 34px;
+      color: #B0B0CC;
+      line-height: 1.6;
+      margin-bottom: 64px;
+    }
+    .hook-desc strong {
+      color: #FFFFFF;
+    }
+    .cards-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 28px 28px 36px;
+      border-left: 4px solid #8B5CF6;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .card.red { border-left-color: #EF4444; }
+    .card.green { border-left-color: #10B981; }
+    .card-icon {
+      font-size: 40px;
+      flex-shrink: 0;
+      width: 56px;
+      text-align: center;
+    }
+    .card-body {}
+    .card-label {
+      font-size: 22px;
+      color: #B0B0CC;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .card-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .bottom-tag {
+      margin-top: 52px;
+      font-size: 26px;
+      color: #8B5CF6;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">产品十诫 · Episode 1</div>
+    <div class="title">AI 让造产品更容易<br><span class="accent">也让你更容易骗自己</span></div>
+    <div class="hook-desc">
+      代码写得<strong>飞快</strong>，每天几千行<br>架构也很漂亮<br>但就是<strong>找不到用户</strong>
+    </div>
+    <div class="cards-row">
+      <div class="card">
+        <div class="card-icon">⚔️</div>
+        <div class="card-body">
+          <div class="card-label">三个产品</div>
+          <div class="card-text">Minecraft AI 队友 · 桌面 Agent · Excel AI</div>
+        </div>
+      </div>
+      <div class="card red">
+        <div class="card-icon">💥</div>
+        <div class="card-body">
+          <div class="card-label">结果</div>
+          <div class="card-text">前两个失败，第三个才勉强找到感觉</div>
+        </div>
+      </div>
+      <div class="card green">
+        <div class="card-icon">📋</div>
+        <div class="card-body">
+          <div class="card-label">提炼成</div>
+          <div class="card-text">十条诫命——不是成功秘诀，是失败教训</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-tag">作者：Feitong Yang · 创始工程师</div>
+  </div>
+</body>
+</html>

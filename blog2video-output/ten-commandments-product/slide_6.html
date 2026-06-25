@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px;
+      background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: flex-start;
+      position: relative;
+    }
+    .section-label {
+      font-size: 24px;
+      color: #F59E0B;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .main-title {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.18;
+      color: #FFFFFF;
+      margin-bottom: 44px;
+    }
+    .main-title .red { color: #EF4444; }
+    .main-title .green { color: #10B981; }
+    .row-label {
+      font-size: 24px;
+      color: #B0B0CC;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+    }
+    .crash-cards {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .crash-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 22px;
+      border-left: 4px solid #EF4444;
+    }
+    .crash-name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .crash-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .crash-result {
+      font-size: 24px;
+      color: #EF4444;
+      font-weight: 700;
+    }
+    .win-cards {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .win-card {
+      flex: 1;
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 28px 22px;
+      border-left: 4px solid #10B981;
+    }
+    .win-name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .win-desc {
+      font-size: 24px;
+      color: #B0B0CC;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .win-result {
+      font-size: 24px;
+      color: #10B981;
+      font-weight: 700;
+    }
+    .lesson-card {
+      background: #1A1A2E;
+      border-radius: 12px;
+      padding: 32px 32px 32px 36px;
+      border-left: 4px solid #8B5CF6;
+      width: 100%;
+    }
+    .lesson-text {
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.55;
+    }
+    .lesson-text .spark { color: #F59E0B; font-weight: 700; }
+    .lesson-text .fuel { color: #10B981; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="section-label">// 诫命十：注意力 vs 留存</div>
+    <div class="main-title">注意力是<span class="red">火花</span><br>产品质量是<span class="green">燃料</span></div>
+
+    <div class="row-label">💥 大声量 · 快速崩盘</div>
+    <div class="crash-cards">
+      <div class="crash-card">
+        <div class="crash-name">Humane AI Pin</div>
+        <div class="crash-desc">发布时数百万次观看<br>预购售罄</div>
+        <div class="crash-result">→ 几个月内崩盘</div>
+      </div>
+      <div class="crash-card">
+        <div class="crash-name">Rabbit R1</div>
+        <div class="crash-desc">媒体："这是未来"<br>声量近年最大</div>
+        <div class="crash-result">→ 火花打在空油箱</div>
+      </div>
+    </div>
+
+    <div class="row-label">✓ 无营销 · 口碑爆炸</div>
+    <div class="win-cards">
+      <div class="win-card">
+        <div class="win-name">Cursor</div>
+        <div class="win-desc">几乎没有营销<br>纯靠口碑</div>
+        <div class="win-result">→ 爆炸式增长</div>
+      </div>
+      <div class="win-card">
+        <div class="win-name">Claude Code</div>
+        <div class="win-desc">作为模型更新附属<br>悄悄上线</div>
+        <div class="win-result">→ 无发布会，照样赢</div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-text">
+        发布热度让人<span class="spark">看到了你</span><br>
+        产品质量决定他们<span class="fuel">会不会留下</span><br>
+        那次冲击，从来不是真正的赢
+      </div>
+    </div>
+  </div>
+</body>
+</html>

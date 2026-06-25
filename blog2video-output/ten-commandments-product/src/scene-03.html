@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .prod-label{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:23px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px;margin-right:12px;vertical-align:2px}
+[data-composition-id='s03'] .prod-arrow{font-family:'JetBrains Mono',monospace;font-size:26px;color:#5fd3e8;margin-top:6px;display:block}
+[data-composition-id='s03'] .insight-block{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;margin-top:26px;opacity:0}
+[data-composition-id='s03'] .insight-label{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em;margin-bottom:14px}
+[data-composition-id='s03'] .insight-text{font-weight:600;font-size:36px;line-height:1.5;color:#edebe6}
+[data-composition-id='s03'] .insight-text .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="78.967" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI产品<span class="b-cur"></span></div>
+      <div class="idx">[03/7]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 陷阱二 · <span class="acc">同一个错，犯了三次</span></div>
+      <div class="h1 main-h1" style="margin-top:18px">用户标签 <span class="em">≠</span> 知道用户</div>
+
+      <div class="rows" style="margin-top:36px">
+
+        <div class="row r1">
+          <div class="n">01</div>
+          <div class="rb">
+            <div class="rt">Minecraft Agent</div>
+            <div class="rd">
+              <span class="warn">说是</span>「Minecraft 玩家」<br>
+              <span class="r1-sub r1-sub-late" style="opacity:0"><span class="ok">实为</span>：建造 / PvP / 社交 — 三个不同的产品</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row r2">
+          <div class="n">02</div>
+          <div class="rb">
+            <div class="rt">Fairies 桌面 Agent</div>
+            <div class="rd">
+              <span class="warn">说是</span>「白领工作者」<br>
+              <span class="r2-sub r2-sub-late" style="opacity:0"><span class="ok">实为</span>：他们希望白领是用户，白领不这么看自己</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row r3">
+          <div class="n">03</div>
+          <div class="rb">
+            <div class="rt">Shortcut Excel AI</div>
+            <div class="rd">
+              <span class="warn">说是</span>「所有 Excel 用户」<br>
+              <span class="r3-sub r3-sub-late" style="opacity:0"><span class="ok">实为</span>：金融领域 · 高标准 · 高质量工作者</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="insight-block">
+        <div class="insight-label">$ insight</div>
+        <div class="insight-text">日志告诉你用户<span class="em">做了什么</span><br>你真正饿着的是<span class="em">「为什么」</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.009" data-duration="5.531" data-track-index="5"><div class="sub-inner">说到「用户是谁」，他们在三个产品里犯了同一个错，<span class="sub-k">犯了三次</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.697" data-duration="7.075" data-track-index="5"><div class="sub-inner">做 <span class="sub-k">Minecraft Agent</span> 的时候，他们说用户是 Minecraft 玩家。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.772" data-duration="7.581" data-track-index="5"><div class="sub-inner">后来仔细一看：有人玩这个游戏是为了建造，有人是为了 PvP 对战，有人就是想跟<span class="sub-k">朋友在一起</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.553" data-duration="2.536" data-track-index="5"><div class="sub-inner">三种人要的是<span class="sub-k">三个不同的产品</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.229" data-duration="6.471" data-track-index="5"><div class="sub-inner">做通用桌面 Agent <span class="sub-k">Fairies</span> 的时候，他们说用户是「白领工作者」。</div></div>
+    <div id="sub-6" class="clip sub" data-start="29.7" data-duration="5.109" data-track-index="5"><div class="sub-inner">更诚实的说法是：他们<span class="sub-k">希望</span>白领是用户，但白领根本不这么看自己。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.965" data-duration="6.886" data-track-index="5"><div class="sub-inner">做 Excel Agent <span class="sub-k">Shortcut</span> 的时候，他们说「所有 Excel 用户」。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.851" data-duration="5.634" data-track-index="5"><div class="sub-inner">后来才慢慢找到那个真正有价值的子集：<span class="sub-k">金融领域</span>里，做高标准高质量工作的人。</div></div>
+    <div id="sub-9" class="clip sub" data-start="47.637" data-duration="5.02" data-track-index="5"><div class="sub-inner">每次都是同一个移动：把<span class="sub-k">模糊的标签</span>当作「知道了用户」。</div></div>
+    <div id="sub-10" class="clip sub" data-start="52.821" data-duration="7.574" data-track-index="5"><div class="sub-inner">文章里有一句话我觉得说到位了：日志告诉你用户做了什么，但你真正饿着的是<span class="sub-k">「为什么」</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="60.561" data-duration="11.626" data-track-index="5"><div class="sub-inner">早期最危险的逃避，恰恰是那些最「科学」的东西——<span class="sub-k">数据分析、漏斗报告</span>——因为它们看起来像进展，但都是在重建用户行为的脑补版本。</div></div>
+    <div id="sub-12" class="clip sub" data-start="72.387" data-duration="6.425" data-track-index="5"><div class="sub-inner">真正的办法只有一个：去<span class="sub-k">坐在他们旁边</span>，看他们在自己的环境里怎么用。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+
+    // grid + topbar
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // kicker + h1 intro (~sub-1 at 0.009)
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.main-h1', .7, {y:22, d:.4, ease:'expo.out'});
+
+    // row 1: Minecraft Agent (~sub-2 at 5.697)
+    D2.enter(tl, R+'.r1', 5.8, {x:-24, ease:'power3.out'});
+    // r1 detail reveal: "三种人" (~sub-3 at 12.772)
+    tl.to(R+'.r1-sub-late', {opacity:1, duration:.28, ease:'power2.out'}, 12.9);
+
+    // row 2: Fairies (~sub-5 at 23.229)
+    D2.enter(tl, R+'.r2', 23.3, {x:-24, ease:'expo.out'});
+    // r2 detail (~sub-6 at 29.7)
+    tl.to(R+'.r2-sub-late', {opacity:1, duration:.28, ease:'power2.out'}, 29.8);
+
+    // row 3: Shortcut (~sub-7 at 34.965)
+    D2.enter(tl, R+'.r3', 35.1, {x:-24, ease:'power3.out'});
+    // r3 detail (~sub-8 at 41.851)
+    tl.to(R+'.r3-sub-late', {opacity:1, duration:.28, ease:'power2.out'}, 42.0);
+
+    // insight block reveal (~sub-10 at 52.821)
+    tl.to(R+'.insight-block', {opacity:1, y:0, duration:.45, ease:'power3.out'}, 52.9);
+
+    // subtitles
+    D2.subs(tl, [
+      ['#sub-1',  0.009],
+      ['#sub-2',  5.697],
+      ['#sub-3', 12.772],
+      ['#sub-4', 20.553],
+      ['#sub-5', 23.229],
+      ['#sub-6', 29.7],
+      ['#sub-7', 34.965],
+      ['#sub-8', 41.851],
+      ['#sub-9', 47.637],
+      ['#sub-10',52.821],
+      ['#sub-11',60.561],
+      ['#sub-12',72.387]
+    ].map(function(s){return [R+s[0],s[1]];}));
+
+    // breath: odd scene = 'in'
+    D2.breath(tl, R+'.content', 78.967, 'in');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+    D2.register('s03', tl);
+  })();
+  </script>
+</body>
+</html>

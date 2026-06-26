@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(image:能力 03 工作流自动化 = 随需待命的运营团队)—— */
+[data-composition-id='s12'] .bracket{width:100%}
+[data-composition-id='s12'] .pain{margin-top:24px}
+[data-composition-id='s12'] .gain{margin-top:18px}
+[data-composition-id='s12'] .chorelist{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+[data-composition-id='s12'] .chorelist .ch{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#8a8a85;border:1px solid #2a2a2c;background:#1c1c1e;padding:8px 18px}
+[data-composition-id='s12'] .taxline{margin-top:22px;font-weight:700;font-size:36px;color:#ff6b5e;line-height:1.35}
+[data-composition-id='s12'] .taxverdict{margin-top:16px}
+[data-composition-id='s12'] .autorows{display:flex;flex-direction:column;gap:14px;margin-top:18px;width:100%}
+[data-composition-id='s12'] .arow{display:flex;align-items:center;flex-wrap:wrap;gap:14px;font-weight:600;font-size:34px;color:#edebe6;line-height:1.3}
+[data-composition-id='s12'] .arow .trig{color:#8a8a85;font-weight:600}
+[data-composition-id='s12'] .arow .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;font-size:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="48.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[12/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 能力 <span class="acc">03</span> · 工作流自动化</div>
+      <div class="h1" style="margin-top:18px">一支随需待命的<br><span class="em">自动化运营团队</span></div>
+
+      <div class="bracket pain">
+        <div class="kicker plabel">// 绕不过去的<span class="acc">杂活</span> · 每天有人做</div>
+        <div class="chorelist">
+          <span class="ch c1">排日程</span><span class="ch c2">更新 CRM</span><span class="ch c3">拉周报</span>
+          <span class="ch c4">维护文档</span><span class="ch c5">发内容</span><span class="ch c6">追合规</span>
+        </div>
+        <div class="taxline">精益团队里，默认全压在创始人一个人身上</div>
+        <div class="status alert taxverdict"><div class="dot"></div>一笔很沉的税 · 吃掉高阶决策的时间</div>
+      </div>
+
+      <div class="bracket gain">
+        <div class="kicker glabel">// 自动化<span class="acc">抵税</span>:触发 → 自动动作</div>
+        <div class="autorows">
+          <div class="arow a1"><span class="trig">deal 一推进</span><span class="ar">→</span><span class="code">CRM</span>自己更新</div>
+          <div class="arow a2"><span class="trig">到点</span><span class="ar">→</span><span class="code">周报</span>自己编译</div>
+          <div class="arow a3"><span class="trig">产品一改</span><span class="ar">→</span><span class="code">文档</span>自动同步</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.568" data-track-index="5"><div class="sub-inner">第三个，是<span class="sub-k">工作流自动化</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.555" data-duration="4.495" data-track-index="5"><div class="sub-inner">一句话定位：一支随需待命的<span class="sub-k">自动化运营团队</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.187" data-duration="7.145" data-track-index="5"><div class="sub-inner">就算你能像顾问一样做研究、像工程团队一样写代码，仍然有一大类活，<span class="sub-k">绕不过去</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.532" data-duration="11.115" data-track-index="5"><div class="sub-inner">排日程、更新 CRM、拉周报、维护文档、发内容、追合规要求——这些连接公司各个系统的<span class="sub-k">杂活</span>，每天都要有人做。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.799" data-duration="4.954" data-track-index="5"><div class="sub-inner">在一个精益团队里，这些活默认全压在<span class="sub-k">创始人一个人身上</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.753" data-duration="5.906" data-track-index="5"><div class="sub-inner">它是一笔<span class="sub-k">很沉的税</span>，吃掉的，正是本该用来做高阶决策的时间和精力。</div></div>
+    <div id="sub-7" class="clip sub" data-start="36.815" data-duration="11.324" data-track-index="5"><div class="sub-inner">工作流自动化，就是来<span class="sub-k">抵这笔税</span>的：deal 一推进，CRM 自己更新；周报到点自己编译；产品一改，文档自动同步跟上。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.pain', 7.2, {y:18, d:.42, ease:'power4.out'});
+    D2.stagger(tl, R+'.chorelist .ch', 14.5, {y:14, step:.1, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.taxline', 25.8, {x:-16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.taxverdict', 30.8, {x:-14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.gain', 36.8, {y:18, d:.42, ease:'power4.out'});
+    D2.stagger(tl, R+'.autorows .arow', 37.3, {x:-20, step:.55, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.555],['#sub-3',7.187],['#sub-4',14.532],['#sub-5',25.799],['#sub-6',30.753],['#sub-7',36.815]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 48.3, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

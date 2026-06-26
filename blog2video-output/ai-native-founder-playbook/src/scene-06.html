@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有(刻意做小 · AI 底座 · 产品验证→早期收入→盈利)—— */
+[data-composition-id='s06'] .crew{display:flex;gap:14px;flex-wrap:wrap}
+[data-composition-id='s06'] .crew .tag{margin-left:0;vertical-align:0;font-size:27px;padding:7px 18px}
+[data-composition-id='s06'] .ba-t{font-weight:900;font-size:46px;color:#edebe6;line-height:1.2}
+[data-composition-id='s06'] .ba-d{margin-top:10px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s06'] .cy{color:#5fd3e8}
+[data-composition-id='s06'] .reach-lead{font-weight:600}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="21.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[06/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 早期创业公司 · <span class="acc">新形态</span></div>
+      <div class="h1" style="margin-top:18px">早期公司，<span class="em">刻意做小</span></div>
+
+      <div class="crew" style="margin-top:30px">
+        <span class="tag c1">创始人一个人</span>
+        <span class="tag c2">+ 很少几个伙伴</span>
+      </div>
+
+      <div class="bracket b-ai" style="margin-top:34px">
+        <div class="ba-t"><span class="cy">AI 底座</span></div>
+        <div class="ba-d">技术 + 组织，都架在上面</div>
+      </div>
+
+      <div class="lead reach-lead" style="margin-top:34px">扩张团队前，<span class="em">就摸到</span></div>
+
+      <div class="rows" style="margin-top:18px">
+        <div class="row pr1"><div class="n">01</div><div class="rb"><div class="rt">产品验证</div></div></div>
+        <div class="row pr2"><div class="n">02</div><div class="rb"><div class="rt">早期收入</div></div></div>
+        <div class="row pr3 now"><div class="n">03</div><div class="rb"><div class="rt">甚至 盈利</div></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.509" data-track-index="5"><div class="sub-inner">所以早期创业公司的样子，<span class="sub-k">彻底变了</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.508" data-duration="7.223" data-track-index="5"><div class="sub-inner">它们是"<span class="sub-k">刻意做小</span>"的——经常就是创始人一个人，或者加上很少的几个伙伴。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.871" data-duration="10.558" data-track-index="5"><div class="sub-inner">靠把技术和组织，都架在 <span class="sub-k">AI 这个底座</span>上，它们能在扩张团队之前，就摸到产品验证、早期收入，甚至盈利。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.c1', 3.7, {x:-20, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.c2', 6.9, {x:-20, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.b-ai', 11.1, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.reach-lead', 13.2, {y:14, d:.34, ease:'power2.out'});
+    D2.stagger(tl, R+'.rows .row', 14.8, {x:-22, step:1.7, d:.36, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.508],['#sub-3',10.871]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.6, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

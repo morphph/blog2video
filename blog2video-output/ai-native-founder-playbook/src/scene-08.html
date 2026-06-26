@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有(principle:表面 vs 真正 反转)—— */
+[data-composition-id='s08'] .neg{color:#ff6b5e}
+[data-composition-id='s08'] .surf{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:29px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s08'] .surf .slab{display:inline-block;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:1px 12px;margin-right:14px;font-size:23px;letter-spacing:.06em}
+[data-composition-id='s08'] .surf .ar{color:#8a8a85;margin:0 8px}
+[data-composition-id='s08'] .flowarrow{margin:14px 0 14px 4px;font-size:28px}
+[data-composition-id='s08'] .bracket{width:100%}
+[data-composition-id='s08'] .cline{margin-top:14px;font-weight:500;font-size:34px;color:#edebe6;line-height:1.4}
+[data-composition-id='s08'] .cline .em{color:#ccff4d;font-weight:600}
+[data-composition-id='s08'] .lateflag{margin-top:20px}
+[data-composition-id='s08'] .tlh{margin-top:34px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="38.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[08/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// THE REAL SHIFT · <span class="acc">最革命性的那一下</span></div>
+      <div class="h2" style="margin-top:18px">最被解放的，<br>不是 <span class="neg">工程师</span></div>
+
+      <div class="surf"><span class="slab">表面</span>AI 帮你写代码 <span class="ar">→</span> 受益者 = 工程师</div>
+      <div class="flowarrow"><span class="a">↓</span> 但真正被解放的</div>
+      <div class="bracket payoff">
+        <div class="lead">有<span class="em">领域专长</span>、却不懂工程的<span class="em">非技术创始人</span></div>
+      </div>
+
+      <div class="kicker tlh">// 人才池扩大到工程师以外</div>
+      <div class="bracket conseq" style="margin-top:16px">
+        <div class="lead">一批<span class="em">背景完全不同</span>的人进场</div>
+        <div class="cline">带着各自真实的人生经历，去解<span class="em">真实的问题</span></div>
+        <div class="status alert lateflag"><div class="dot"></div>这些问题，传统创始人管道从未优先</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.011" data-duration="3.952" data-track-index="5"><div class="sub-inner">但这套变化里，<span class="sub-k">最革命性的那一下</span>，不在技术人身上。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.115" data-duration="5.769" data-track-index="5"><div class="sub-inner">表面上你会觉得，AI 帮你写代码，最大的受益者当然是<span class="sub-k">工程师</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.884" data-duration="7.691" data-track-index="5"><div class="sub-inner">可真正被解放的，是另一拨人——那些有深厚领域专长、却完全不懂工程的<span class="sub-k">非技术创始人</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.723" data-duration="1.972" data-track-index="5"><div class="sub-inner">为什么这件事<span class="sub-k">最重要</span>？</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.695" data-duration="7.1" data-track-index="5"><div class="sub-inner">因为当创业的人才池，扩大到工程师以外，你会看到一批<span class="sub-k">背景完全不同的人</span>进场。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.939" data-duration="11.545" data-track-index="5"><div class="sub-inner">他们带着各自真实的人生经历，去解决一些<span class="sub-k">真实的问题</span>——而这些问题，传统的科技创始人管道，过去从来没优先过，甚至根本没注意到。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.surf', 4.115, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.flowarrow', 9.884, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.payoff', 10.25, {y:18, d:.4, ease:'power4.out'});
+    D2.enter(tl, R+'.tlh', 17.723, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.conseq', 19.695, {y:18, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.cline', 26.939, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.lateflag', 33.6, {x:-14, d:.3, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.011],['#sub-2',4.115],['#sub-3',9.884],['#sub-4',17.723],['#sub-5',19.695],['#sub-6',26.939]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

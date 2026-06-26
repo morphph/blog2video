@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .hero{display:flex;align-items:center;gap:36px;margin-top:6px}
+[data-composition-id='s03'] .bignum{display:flex;align-items:baseline;font-family:'JetBrains Mono',monospace;font-weight:700;line-height:.86;color:#ccff4d;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+[data-composition-id='s03'] .bignum .bn-v{font-size:210px}
+[data-composition-id='s03'] .bignum .u{font-family:'MiSans',sans-serif;font-weight:900;font-size:62px;color:#edebe6;margin-left:6px}
+[data-composition-id='s03'] .herowords{display:flex;flex-direction:column;gap:10px}
+[data-composition-id='s03'] .herowords .hw1{font-family:'MiSans',sans-serif;font-weight:900;font-size:74px;line-height:1.04;color:#edebe6}
+[data-composition-id='s03'] .herowords .hw2{font-family:'JetBrains Mono',monospace;font-size:28px;letter-spacing:.12em;color:#8a8a85}
+[data-composition-id='s03'] .ctag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:2px 12px;margin-right:6px;vertical-align:3px;white-space:nowrap}
+[data-composition-id='s03'] .em-acid{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="20.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[03/16]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 一个<span class="acc">反复出现</span>的画面</div>
+
+      <div class="hero">
+        <div class="bignum"><span class="bn-v" id="bn">0</span><span class="u">人</span></div>
+        <div class="herowords">
+          <div class="hw1">精益独角兽</div>
+          <div class="hw2">LEAN UNICORN</div>
+        </div>
+      </div>
+
+      <div class="rows" style="margin-top:54px">
+        <div class="row era-old">
+          <div class="n">旧</div>
+          <div class="rb">
+            <div class="rt">草根逆袭的<span class="code">传奇</span></div>
+            <div class="rd"><span class="ctag">$1B</span>估值 · 听上去像奇迹</div>
+          </div>
+        </div>
+
+        <div class="row now era-new">
+          <div class="n">新</div>
+          <div class="rb">
+            <div class="rt">一种<span class="em-acid">刻意为之</span>的打法</div>
+            <div class="rd">从传奇 → 可被复制的方法</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.332" data-track-index="5"><div class="sub-inner">它带来一个很直观的画面：那个被反复提起的“<span class="sub-k">精益的十人独角兽</span>”。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.475" data-duration="9.143" data-track-index="5"><div class="sub-inner">以前我们把它当成<span class="sub-k">草根逆袭的传奇</span>——十个人，撑起一家估值十亿美元级别的公司，听上去像奇迹。</div></div>
+    <div id="sub-3" class="clip sub" data-start="15.618" data-duration="4.364" data-track-index="5"><div class="sub-inner">现在，它从传奇，变成了一种<span class="sub-k">刻意为之的打法</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.bignum', .6, {y:24, d:.5, ease:'expo.out'});
+    D2.countUp(tl, R+'#bn', .74, 0, 10, 1.0, {});
+    D2.enter(tl, R+'.herowords', 1.0, {x:18, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.era-old', 6.6, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.era-old .ctag', 9.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.era-new', 15.7, {x:-24, d:.44, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.475],['#sub-3',15.618]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 20.133, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

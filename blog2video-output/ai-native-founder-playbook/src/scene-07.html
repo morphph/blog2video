@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有(image:角色转变 + Agent 能力)—— */
+[data-composition-id='s07'] .shift{display:flex;align-items:stretch;gap:20px;width:100%;margin-top:40px}
+[data-composition-id='s07'] .sb{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 26px;display:flex;flex-direction:column;min-width:0}
+[data-composition-id='s07'] .sb-h{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;letter-spacing:.06em;color:#8a8a85}
+[data-composition-id='s07'] .sb-t{margin-top:14px;font-weight:900;font-size:44px;line-height:1.2;color:#8a8a85}
+[data-composition-id='s07'] .sb-d{margin-top:12px;font-weight:500;font-size:26px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s07'] .sb.new{border-color:#ccff4d}
+[data-composition-id='s07'] .sb.new .sb-h{color:#ccff4d}
+[data-composition-id='s07'] .sb.new .sb-t{color:#ccff4d}
+[data-composition-id='s07'] .sb.new .sb-d{color:#edebe6}
+[data-composition-id='s07'] .sb-arrow{align-self:center;flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:52px;font-weight:700;color:#ccff4d}
+[data-composition-id='s07'] .agentcard{margin-top:34px;width:100%}
+[data-composition-id='s07'] .ac-h{font-family:'JetBrains Mono',monospace;font-size:33px;font-weight:500;line-height:1.3;color:#edebe6}
+[data-composition-id='s07'] .ac-h .q{color:#ccff4d}
+[data-composition-id='s07'] .ac-caps{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+[data-composition-id='s07'] .ac-caps .cap{font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:500;color:#5fd3e8;border:1px solid rgba(95,211,232,.38);padding:8px 18px}
+[data-composition-id='s07'] .punch{margin-top:36px;width:100%}
+[data-composition-id='s07'] .punch .p1{font-weight:900;font-size:46px;line-height:1.25;color:#edebe6}
+[data-composition-id='s07'] .punch .p1 .em{color:#ccff4d}
+[data-composition-id='s07'] .punch .p2{margin-top:16px;font-weight:900;font-size:46px;line-height:1.3;color:#edebe6}
+[data-composition-id='s07'] .punch .p2 .dimx{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="45.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[07/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 创始人每天在做什么</div>
+      <div class="h1" style="margin-top:20px">一个<span class="em">最关键的转变</span></div>
+
+      <div class="shift">
+        <div class="sb old">
+          <div class="sb-h">以前</div>
+          <div class="sb-t">亲自下场做事</div>
+          <div class="sb-d">写代码 · 管人 · 运营杂活</div>
+        </div>
+        <div class="sb-arrow">→</div>
+        <div class="sb new">
+          <div class="sb-h">现在</div>
+          <div class="sb-t">指挥一群 Agent</div>
+          <div class="sb-d">AI · 工具 · 小团队</div>
+        </div>
+      </div>
+
+      <div class="agentcard bracket">
+        <div class="ac-h"><span class="q">Agent</span> = 一批专门的 AI 助手</div>
+        <div class="ac-caps">
+          <span class="cap">读文件</span>
+          <span class="cap">跑命令</span>
+          <span class="cap">执行代码</span>
+          <span class="cap">浏览网页</span>
+        </div>
+      </div>
+
+      <div class="punch">
+        <div class="p1">注意力，整个<span class="em">往上挪一层</span></div>
+        <div class="p2">不想<span class="dimx">怎么做</span>，只想<span class="hl"><span class="bar"></span><span class="tx">做什么</span></span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.043" data-track-index="5"><div class="sub-inner">那创始人每天到底在<span class="sub-k">做什么</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.042" data-duration="2.199" data-track-index="5"><div class="sub-inner">这里发生了一个<span class="sub-k">最关键的转变</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.391" data-duration="7.83" data-track-index="5"><div class="sub-inner">以前，创始人大部分时间泡在“<span class="sub-k">执行</span>”里：写代码、管人、处理每天那些琐碎的运营杂活。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.383" data-duration="6.761" data-track-index="5"><div class="sub-inner">现在，这个角色，从“亲自下场做事的人”，变成了“<span class="sub-k">指挥一群 Agent</span> 的人”。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.295" data-duration="1.746" data-track-index="5"><div class="sub-inner"><span class="sub-k">Agent</span> 是什么？</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.041" data-duration="3.492" data-track-index="5"><div class="sub-inner">你可以把它理解成一批专门的 <span class="sub-k">AI 助手</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.533" data-duration="5.239" data-track-index="5"><div class="sub-inner">它们能读文件、能跑命令、能执行代码，甚至能自己上网<span class="sub-k">浏览网页</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.915" data-duration="3.693" data-track-index="5"><div class="sub-inner">创始人的注意力，于是整个<span class="sub-k">往上挪了一层</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.608" data-duration="11.857" data-track-index="5"><div class="sub-inner">不再盯着具体怎么写、怎么做，而是去想“<span class="sub-k">做什么想法</span>”，再去指挥背后那套系统——AI、工具、以及那个很小的团队——把想法落地。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.1, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.sb.old', 4.6, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.sb-arrow', 12.5, {y:0, x:-12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.sb.new', 12.8, {x:24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.agentcard', 19.4, {y:18, d:.4, ease:'power3.out'});
+    D2.stagger(tl, R+'.ac-caps .cap', 24.7, {y:14, step:.12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch .p1', 30.0, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.punch .p2', 33.8, {y:18, d:.36, ease:'expo.out'});
+    D2.sweep(tl, R, '.hl', 38.4);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.042],['#sub-3',4.391],['#sub-4',12.383],['#sub-5',19.295],['#sub-6',21.041],['#sub-7',24.533],['#sub-8',29.915],['#sub-9',33.608]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.6, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

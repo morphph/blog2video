@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有(image:能力02 Agentic coding · 过去门槛 vs 现在大白话指挥)—— */
+[data-composition-id='s11'] .role{margin-top:16px}
+[data-composition-id='s11'] .role .em{color:#ccff4d}
+[data-composition-id='s11'] .surf{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:29px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s11'] .surf .slab{display:inline-block;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:1px 12px;margin-right:16px;font-size:23px;letter-spacing:.06em}
+[data-composition-id='s11'] .surf .sep{color:#8a8a85;margin:0 8px}
+[data-composition-id='s11'] .flowarrow{margin:16px 0 14px 4px;font-size:29px}
+[data-composition-id='s11'] .rows{margin-top:14px;gap:13px}
+[data-composition-id='s11'] .row{padding:16px 28px}
+[data-composition-id='s11'] .row .rt{font-size:37px}
+[data-composition-id='s11'] .st-team{margin-top:24px}
+[data-composition-id='s11'] .punch{margin-top:24px;font-size:48px}
+[data-composition-id='s11'] .punch .q{color:#8a8a85;font-weight:600}
+[data-composition-id='s11'] .st-role{margin-top:22px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="53.233" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[11/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 能力 02 · <span class="acc">Agentic coding</span></div>
+      <div class="h2 role">永远在线、<span class="em">从不被卡住</span>的工程师</div>
+
+      <div class="surf"><span class="slab">过去</span>技术合伙人<span class="sep">·</span>外包团队<span class="sep">·</span>烧钱招起一支工程团队</div>
+      <div class="flowarrow"><span class="a">↓</span> 现在 · 一句大白话，指挥 AI</div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb"><div class="rt">生成代码</div></div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb"><div class="rt">跑测试</div></div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb"><div class="rt">排查问题</div></div></div>
+        <div class="row r4"><div class="n">04</div><div class="rb"><div class="rt">打磨出 <span class="code">生产级代码库</span></div></div></div>
+      </div>
+
+      <div class="status st-team"><div class="dot"></div>速度 × 规模 ≈ 一整支工程团队</div>
+
+      <div class="h2 punch">从<span class="q">「想法」</span>到<span class="q">「产品」</span>，<span class="hl"><span class="bar"></span><span class="tx">被压缩</span></span></div>
+
+      <div class="status st-role"><div class="dot"></div>创始人只管：做什么 · 为什么做</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="3.615" data-track-index="5"><div class="sub-inner">第二个，是 <span class="sub-k">Agentic coding</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.627" data-duration="3.959" data-track-index="5"><div class="sub-inner">我把它叫做：那个永远在线、<span class="sub-k">从不被卡住</span>的工程师。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.752" data-duration="13.681" data-track-index="5"><div class="sub-inner">过去要写软件，你要么得有一个技术合伙人，要么外包给开发团队，要么得有足够厚的<span class="sub-k">现金跑道</span>，先招起一支工程团队，才能写出第一段能上线的代码。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.576" data-duration="15.724" data-track-index="5"><div class="sub-inner">现在，你只要用<span class="sub-k">大白话</span>，把想做的东西描述清楚，就能指挥 AI 去生成代码、跑测试、排查问题，再把一整套生产级的代码库打磨出来，速度和规模，</div></div>
+    <div id="sub-5" class="clip sub" data-start="37.5" data-duration="1.99" data-track-index="5"><div class="sub-inner">顶得上<span class="sub-k">一整支工程团队</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="39.648" data-duration="6.407" data-track-index="5"><div class="sub-inner">于是"我有一个想法"到"我有一个产品"之间的距离，<span class="sub-k">被大大压缩了</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="46.055" data-duration="7.007" data-track-index="5"><div class="sub-inner">创始人要操心的，又回到"<span class="sub-k">做什么、为什么做</span>"，而真正的搭建，交给 AI。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.role', 3.7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.surf', 7.85, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.flowarrow', 21.6, {x:-16, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.rows .row', 22.2, {x:-24, step:2.8, d:.32, ease:'power4.out'});
+    D2.enter(tl, R+'.st-team', 37.5, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 39.7, {y:18, d:.36, ease:'expo.out'});
+    D2.sweep(tl, R, '.punch .hl', 40.5);
+    D2.enter(tl, R+'.st-role', 46.1, {x:-14, d:.3, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',3.627],['#sub-3',7.752],['#sub-4',21.576],['#sub-5',37.5],['#sub-6',39.648],['#sub-7',46.055]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 53.233, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

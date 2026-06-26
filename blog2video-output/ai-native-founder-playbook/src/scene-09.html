@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有(信号反转:旧观念 coral / 新现实 acid)—— */
+[data-composition-id='s09'] .h2{margin-top:18px}
+[data-composition-id='s09'] .bk{margin-top:32px}
+[data-composition-id='s09'] .tl{margin-top:28px}
+[data-composition-id='s09'] .tl-row .yr{width:220px;font-size:30px;letter-spacing:.02em;line-height:1.2}
+[data-composition-id='s09'] .tl-row.old{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s09'] .tl-row.old .yr{color:#ff6b5e}
+[data-composition-id='s09'] .tl-row .wt .eq{color:#8a8a85;margin:0 8px;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="23.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[09/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// <span class="acc">被反转</span>的旧观念</div>
+      <div class="h2">人多，不再等于<span class="em">厉害</span></div>
+
+      <div class="bracket bk">
+        <div class="lead">同一个「信号」，被<span class="em">反过来读</span>了</div>
+      </div>
+
+      <div class="tl">
+        <div class="tl-row old"><div class="yr">传统创业</div><div class="wt">人头<span class="eq">=</span>信号 · 越大越成熟</div></div>
+        <div class="tl-row now"><div class="yr">AI-native</div><div class="wt"><span class="em">小</span>，是刻意设计<span class="badge">反转</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="5.786" data-track-index="5"><div class="sub-inner">那 AI 具体是怎么帮一个<span class="sub-k">精益团队</span>，撑起一家大公司体量的？</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.945" data-duration="2.525" data-track-index="5"><div class="sub-inner">先说一个<span class="sub-k">被反转</span>的旧观念。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.47" data-duration="8.207" data-track-index="5"><div class="sub-inner">传统创业里，人头是被当成"<span class="sub-k">信号</span>"的——团队越大，越显得公司有势能、产品够成熟。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.877" data-duration="6.297" data-track-index="5"><div class="sub-inner">AI-native 的创业，把这个信号反过来了：小，才是<span class="sub-k">刻意设计</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bk', 6.0, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.tl-row.old', 8.7, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.tl-row.now', 17.0, {x:-22, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.tl-row.now .badge', 19.5, {y:10, d:.3, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',5.945],['#sub-3',8.47],['#sub-4',16.877]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 23.333, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

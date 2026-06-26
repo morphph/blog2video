@@ -2,7 +2,7 @@
 
 ## Hook
 
-Anthropic 官方刚发布了一篇文章，配着新产品 Claude Tag 一起公开了他们内部跑多 Agent 团队的四条经验。Roster、north star、Doer-Verifier、信任曲线——四个看起来像组织管理学的词，却是他们让自家 Agent 独立修完一大批 bug 的真实地基。最反直觉的一句话在这里：对 Agent 而言，没写下来就等于不存在。
+Anthropic 发新产品 Claude Tag 那天放了一句话：他们正在把工作的未来分享给整个世界。配套博客里给了 4 条经验——Roster、north star、Doer-Verifier、信任曲线。听起来全是组织管理学的词，却是他们让自家 Agent 独立修完一大批 bug 的真实地基。
 
 ## 从单人模式到多人在线
 

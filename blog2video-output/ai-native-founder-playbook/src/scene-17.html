@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有(cta 静音尾卡)—— */
+[data-composition-id='s17'] .content{align-items:center}
+[data-composition-id='s17'] .endwrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+[data-composition-id='s17'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:150px;line-height:1;color:#edebe6;display:flex;align-items:center;justify-content:center;letter-spacing:.01em}
+[data-composition-id='s17'] .logo .ac{color:#ccff4d}
+[data-composition-id='s17'] .logo .cur{width:40px;height:118px;margin-left:22px;vertical-align:0}
+[data-composition-id='s17'] .subline{margin-top:46px;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:40px;color:#8a8a85;letter-spacing:.1em}
+[data-composition-id='s17'] .subline .en{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="5.0" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="content">
+      <div class="endwrap">
+        <div class="logo">精读<span class="ac">AI</span><span class="cur lc"></span></div>
+        <div class="subline">AI 原生创业手册 · <span class="en">完</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.6,ease:'power1.out'},.02);
+    D2.enter(tl, R+'.logo', .35, {y:26, d:.55, ease:'expo.out'});
+    D2.enter(tl, R+'.subline', 1.0, {y:16, d:.42, ease:'power3.out'});
+    D2.blink(tl, R+'.lc', 1.55, 7);
+    D2.breath(tl, R+'.content', 5.0, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

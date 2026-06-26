@@ -1,0 +1,64 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 45.6,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_7.html",
+ "topbarIndex": "[07/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.043,
+   "text": "那创始人每天到底在做什么？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.042,
+   "localDuration": 2.199,
+   "text": "这里发生了一个最关键的转变。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.391,
+   "localDuration": 7.83,
+   "text": "以前，创始人大部分时间泡在\"执行\"里：写代码、管人、处理每天那些琐碎的运营杂活。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.383,
+   "localDuration": 6.761,
+   "text": "现在，这个角色，从\"亲自下场做事的人\"，变成了\"指挥一群 Agent 的人\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.295,
+   "localDuration": 1.746,
+   "text": "Agent 是什么？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.041,
+   "localDuration": 3.492,
+   "text": "你可以把它理解成一批专门的 AI 助手。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.533,
+   "localDuration": 5.239,
+   "text": "它们能读文件、能跑命令、能执行代码，甚至能自己上网浏览网页。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.915,
+   "localDuration": 3.693,
+   "text": "创始人的注意力，于是整个往上挪了一层。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.608,
+   "localDuration": 11.857,
+   "text": "不再盯着具体怎么写、怎么做，而是去想\"做什么想法\"，再去指挥背后那套系统——AI、工具、以及那个很小的团队——把想法落地。"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.shift{display:flex;align-items:center;justify-content:center;gap:20px;width:100%;flex-wrap:wrap}
+.box{background:#1A1A2E;border:1px solid rgba(139,92,246,0.22);border-radius:12px;padding:26px 22px;font-size:36px;font-weight:800;line-height:1.3}
+.box.old{color:#6B7280;border-left:4px solid #6B7280}
+.box.new{color:#8B5CF6;border-left:4px solid #8B5CF6}
+.to{font-size:46px;font-weight:800;color:#F59E0B}
+.agent{width:100%;margin-top:48px;background:#1A1A2E;border:1px solid rgba(59,130,246,0.32);border-radius:14px;padding:30px 30px;text-align:left}
+.agent .h{font-size:30px;font-weight:800;color:#3B82F6;margin-bottom:18px}
+.agent .caps{display:flex;flex-wrap:wrap;gap:12px}
+.agent .cap{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.3);border-radius:999px;padding:14px 22px;font-size:28px;font-weight:700;color:#FFFFFF}
+.up{margin-top:42px;font-size:40px;font-weight:800;line-height:1.4}
+.up .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">最关键的转变</div>
+  <div class="shift">
+    <div class="box old">亲自<br>下场做事</div>
+    <div class="to">→</div>
+    <div class="box new">指挥一群<br>Agent</div>
+  </div>
+  <div class="agent">
+    <div class="h">Agent = 一批专门的 AI 助手</div>
+    <div class="caps">
+      <span class="cap">读文件</span>
+      <span class="cap">跑命令</span>
+      <span class="cap">执行代码</span>
+      <span class="cap">浏览网页</span>
+    </div>
+  </div>
+  <div class="up">注意力整个<span class="em">往上挪一层</span>：<br>不想怎么做，只想做什么</div>
+</div>
+</body>
+</html>

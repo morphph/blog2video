@@ -1,0 +1,76 @@
+{
+ "scene": 16,
+ "id": "s16",
+ "type": "summary",
+ "dataDuration": 71.1,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_16.html",
+ "topbarIndex": "[16/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 3.139,
+   "text": "把这两章合起来看，其实就是一句话的事。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.277,
+   "localDuration": 9.248,
+   "text": "过去，创始人拼的是\"你能亲手做什么\"；现在，拼的是\"你能指挥多少 Agent 替你做\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.525,
+   "localDuration": 3.783,
+   "text": "杠杆，第一次和团队人头，彻底脱了钩。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.453,
+   "localDuration": 2.17,
+   "text": "身份变了，门槛也变了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.623,
+   "localDuration": 14.797,
+   "text": "最让我觉得这件事会真正改变世界的，不是技术人变快了，而是那些一直被\"我不会写代码\"挡在门外、却握着真实领域经验的人，终于能把自己的点子，亲手做出来了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.589,
+   "localDuration": 13.286,
+   "text": "那四个具体的阶段——从想法，到最小可用产品，到上线，再到规模化——每一步在 AI-native 的打法下到底是什么样子，该用哪些工具、"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 47.075,
+   "localDuration": 5.311,
+   "text": "怎么把时间压下来，是这个系列后面几集，要一个一个走的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 52.525,
+   "localDuration": 7.261,
+   "text": "这一集，我们先把最底层的两块地基铺好：玩法被掀翻，身份被改写。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 59.786,
+   "localDuration": 5.387,
+   "text": "下次，我们从第一个阶段——想法——开始往下走。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 65.341,
+   "localDuration": 3.521,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 68.862,
+   "localDuration": 1.232,
+   "text": "我们下期再见。"
+  }
+ ]
+}

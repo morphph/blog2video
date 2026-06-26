@@ -1,0 +1,22 @@
+{
+  "scene": 15,
+  "id": "s15",
+  "type": "quote",
+  "dataDuration": 14.767,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_15.html",
+  "topbarIndex": "[15/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.008,
+      "localDuration": 11.534,
+      "text": "把这些放到一起，你会得到一个很反直觉的结论：一家真正用好 AI 的公司，运转起来的体量，会远远超过它的人头所暗示的规模。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 11.542,
+      "localDuration": 3.076,
+      "text": "杠杆，第一次和团队人数，脱了钩。"
+    }
+  ]
+}

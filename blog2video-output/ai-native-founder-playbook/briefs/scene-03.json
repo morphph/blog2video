@@ -1,0 +1,28 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 20.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_3.html",
+ "topbarIndex": "[03/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 6.332,
+   "text": "它带来一个很直观的画面：那个被反复提起的\"精益的十人独角兽\"。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.475,
+   "localDuration": 9.143,
+   "text": "以前我们把它当成草根逆袭的传奇——十个人，撑起一家估值十亿美元级别的公司，听上去像奇迹。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.618,
+   "localDuration": 4.364,
+   "text": "现在，它从传奇，变成了一种刻意为之的打法。"
+  }
+ ]
+}

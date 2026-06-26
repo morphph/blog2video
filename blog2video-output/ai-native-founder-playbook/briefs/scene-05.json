@@ -1,0 +1,70 @@
+{
+  "scene": 5,
+  "id": "s05",
+  "type": "principle",
+  "dataDuration": 49.067,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_5.html",
+  "topbarIndex": "[05/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.386,
+      "text": "第二件事，更有意思。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.383,
+      "localDuration": 3.818,
+      "text": "它动的，是\"创始人\"这个词本身。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 6.369,
+      "localDuration": 4.473,
+      "text": "过去定义一个创始人，靠的是\"你能做什么\"。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 10.842,
+      "localDuration": 5.75,
+      "text": "技术创始人写代码，非技术创始人跑业务、谈合作、签单子。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 16.592,
+      "localDuration": 3.621,
+      "text": "两种人之间，隔着一堵清清楚楚的墙。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 20.373,
+      "localDuration": 2.28,
+      "text": "现在这堵墙，塌了。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 22.821,
+      "localDuration": 6.372,
+      "text": "\"能动手做东西的人\"，和\"有值得做的点子的人\"，过去是两拨人。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 29.193,
+      "localDuration": 3.083,
+      "text": "AI 把中间那堵墙，给溶掉了。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 32.433,
+      "localDuration": 5.89,
+      "text": "一个完全没有工程背景的人，现在能做出跑在真实用户面前的软件。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 38.323,
+      "localDuration": 10.601,
+      "text": "反过来，一个很懂技术、却不太懂生意的人，也能轻松产出一份市场策略、一个财务模型、一套打磨得很漂亮的融资材料。"
+    }
+  ]
+}

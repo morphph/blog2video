@@ -1,0 +1,52 @@
+{
+  "scene": 4,
+  "id": "s04",
+  "type": "principle",
+  "dataDuration": 45.6,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_4.html",
+  "topbarIndex": "[04/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.919,
+      "text": "更狠的，是它顺手删掉的那条线。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.045,
+      "localDuration": 13.588,
+      "text": "传统的创业增长，是一条所有人都默认的路径：先验证想法，再融资，再招人，再开发，再融下一轮，再做大，再招更多人，然后不停循环。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 16.797,
+      "localDuration": 6.123,
+      "text": "每往前进一个阶段，就意味着更大的团队、一套新的技能、以及新一轮的钱。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 23.061,
+      "localDuration": 4.277,
+      "text": "而 AI 真正抹掉的，不是写代码的那点时间。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 27.338,
+      "localDuration": 6.026,
+      "text": "它抹掉的，是\"每往前一步都要先变大、先拿钱\"的这条隐形依赖链。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 33.501,
+      "localDuration": 3.434,
+      "text": "这是我读这两章时，第一个停下来的地方。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 36.935,
+      "localDuration": 8.494,
+      "text": "大多数人看到的是\"AI 写代码快\"，可很少有人注意到，它顺手把整条融资和扩张的节奏，给删掉了。"
+    }
+  ]
+}

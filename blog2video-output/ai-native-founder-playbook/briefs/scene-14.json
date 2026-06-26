@@ -1,0 +1,28 @@
+{
+  "scene": 14,
+  "id": "s14",
+  "type": "principle",
+  "dataDuration": 18.733,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_14.html",
+  "topbarIndex": "[14/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.962,
+      "text": "另外，有一个容易被忽略的代价。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.947,
+      "localDuration": 8.885,
+      "text": "\"刻意做小\"听上去很美，可它有个隐含的前提：那些杂活不会消失，它们默认全压在你一个人头上。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 12.032,
+      "localDuration": 6.552,
+      "text": "自动化能帮你抵税，但前提是——你要先有本事，把它配置起来。"
+    }
+  ]
+}

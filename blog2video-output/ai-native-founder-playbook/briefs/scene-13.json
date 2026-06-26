@@ -1,0 +1,58 @@
+{
+  "scene": 13,
+  "id": "s13",
+  "type": "principle",
+  "dataDuration": 50.233,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_13.html",
+  "topbarIndex": "[13/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 5.395,
+      "text": "听到这里，你可能已经开始脑补\"一个人撑起一家独角兽\"的画面了。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 5.394,
+      "localDuration": 4.524,
+      "text": "但我必须把另一面讲清楚——这套东西，绝不是自动驾驶。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.079,
+      "localDuration": 3.746,
+      "text": "工具堆得再多，它也不会自己变成杠杆。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 13.825,
+      "localDuration": 8.948,
+      "text": "指挥这些 AI 的创始人，必须清楚地知道：怎么用，以及更关键的——什么时候，用哪一个。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 22.931,
+      "localDuration": 7.365,
+      "text": "如果让我给这整套能力，提炼一句话，那就是：时机和编排，就是一切。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 30.455,
+      "localDuration": 2.971,
+      "text": "瓶颈，于是悄悄换了地方。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 33.426,
+      "localDuration": 10.153,
+      "text": "过去卡你的是\"会不会做\"，现在卡你的，是\"会不会指挥、该在什么时候用上哪个工具\"。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 43.779,
+      "localDuration": 6.297,
+      "text": "Orchestration——也就是编排——本身，成了一种全新的核心技能。"
+    }
+  ]
+}

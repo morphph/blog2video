@@ -1,0 +1,52 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 53.233,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_11.html",
+ "topbarIndex": "[11/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 3.615,
+   "text": "第二个，是 Agentic coding。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.627,
+   "localDuration": 3.959,
+   "text": "我把它叫做：那个永远在线、从不被卡住的工程师。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.752,
+   "localDuration": 13.681,
+   "text": "过去要写软件，你要么得有一个技术合伙人，要么外包给开发团队，要么得有足够厚的现金跑道，先招起一支工程团队，才能写出第一段能上线的代码。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.576,
+   "localDuration": 15.724,
+   "text": "现在，你只要用大白话，把想做的东西描述清楚，就能指挥 AI 去生成代码、跑测试、排查问题，再把一整套生产级的代码库打磨出来，速度和规模，"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 37.5,
+   "localDuration": 1.99,
+   "text": "顶得上一整支工程团队。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 39.648,
+   "localDuration": 6.407,
+   "text": "于是\"我有一个想法\"到\"我有一个产品\"之间的距离，被大大压缩了。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 46.055,
+   "localDuration": 7.007,
+   "text": "创始人要操心的，又回到\"做什么、为什么做\"，而真正的搭建，交给 AI。"
+  }
+ ]
+}

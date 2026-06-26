@@ -1,0 +1,70 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 57.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_10.html",
+ "topbarIndex": "[10/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.099,
+   "text": "具体落到三个地方：研究、写代码、以及跑运营。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.099,
+   "localDuration": 1.304,
+   "text": "我一个一个说。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.544,
+   "localDuration": 2.604,
+   "text": "第一个，是对话智能和研究。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.148,
+   "localDuration": 5.609,
+   "text": "你可以把它想成：每个领域，都给你配了一个随叫随到的专家。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 13.896,
+   "localDuration": 7.324,
+   "text": "想想一个创始人头一年必须懂、但进来时几乎都不懂的事：工资发放该怎么设置？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.22,
+   "localDuration": 2.441,
+   "text": "产品开发的节奏该怎么排？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.661,
+   "localDuration": 2.848,
+   "text": "一份紧凑的投资备忘该怎么写？"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 26.676,
+   "localDuration": 4.991,
+   "text": "过去这些问题，答案都是同一句话——\"去找个懂的人\"。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 31.667,
+   "localDuration": 10.559,
+   "text": "对一个自掏腰包、或者仍在种子轮之前的创始人来说，这要么烧掉本该用来做产品的时间，要么烧掉一笔早期的钱去请顾问。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 42.372,
+   "localDuration": 14.784,
+   "text": "现在，AI 直接就是那个随叫随到的专家：帮你做竞品分析、市场规模测算、财务建模，帮你起草投资备忘和产品需求文档，甚至当你的战略陪练，专门唱反调、帮你做事前复盘。"
+  }
+ ]
+}

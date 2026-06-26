@@ -1,0 +1,46 @@
+{
+  "scene": 8,
+  "id": "s08",
+  "type": "principle",
+  "dataDuration": 38.633,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_8.html",
+  "topbarIndex": "[08/16]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.011,
+      "localDuration": 3.952,
+      "text": "但这套变化里，最革命性的那一下，不在技术人身上。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 4.115,
+      "localDuration": 5.769,
+      "text": "表面上你会觉得，AI 帮你写代码，最大的受益者当然是工程师。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 9.884,
+      "localDuration": 7.691,
+      "text": "可真正被解放的，是另一拨人——那些有深厚领域专长、却完全不懂工程的非技术创始人。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 17.723,
+      "localDuration": 1.972,
+      "text": "为什么这件事最重要？"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.695,
+      "localDuration": 7.1,
+      "text": "因为当创业的人才池，扩大到工程师以外，你会看到一批背景完全不同的人进场。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 26.939,
+      "localDuration": 11.545,
+      "text": "他们带着各自真实的人生经历，去解决一些真实的问题——而这些问题，传统的科技创始人管道，过去从来没优先过，甚至根本没注意到。"
+    }
+  ]
+}

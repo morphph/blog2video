@@ -1,0 +1,52 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 38.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_2.html",
+ "topbarIndex": "[02/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 1.461,
+   "text": "先说第一件事。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.472,
+   "localDuration": 3.338,
+   "text": "创业这件事，本身被换了一套规则。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.979,
+   "localDuration": 12.903,
+   "text": "到了 2026 年，AI 能写生产级的代码，能做市场调研，能把竞争格局梳理清楚，能起草给投资人看的材料，也能把一堆运营流程自动跑起来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.047,
+   "localDuration": 9.329,
+   "text": "过去就算是有经验的技术创始人，要把这些工具、平台、系统拼到一起，都要爬一段陡峭的学习曲线。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 27.376,
+   "localDuration": 3.11,
+   "text": "AI 把这段曲线，直接抹平了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.647,
+   "localDuration": 1.249,
+   "text": "结果是什么？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.896,
+   "localDuration": 6.453,
+   "text": "谁有资格开一家公司、做出一个产品，这件事的门槛，被彻底拉平了。"
+  }
+ ]
+}

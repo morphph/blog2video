@@ -1,0 +1,28 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 21.6,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_6.html",
+ "topbarIndex": "[06/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.509,
+   "text": "所以早期创业公司的样子，彻底变了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.508,
+   "localDuration": 7.223,
+   "text": "它们是\"刻意做小\"的——经常就是创始人一个人，或者加上很少的几个伙伴。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.871,
+   "localDuration": 10.558,
+   "text": "靠把技术和组织，都架在 AI 这个底座上，它们能在扩张团队之前，就摸到产品验证、早期收入，甚至盈利。"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:340px;left:50%;transform:translateX(-50%);width:760px;height:760px;background:radial-gradient(circle,rgba(139,92,246,0.22) 0%,rgba(139,92,246,0) 70%);pointer-events:none}
+.eyebrow{position:relative;display:inline-flex;align-items:center;gap:14px;font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;border:1px solid rgba(139,92,246,0.4);border-radius:999px;padding:14px 30px;margin-bottom:48px}
+.eyebrow .dot{width:14px;height:14px;border-radius:50%;background:#8B5CF6}
+.title{position:relative;font-size:92px;font-weight:800;line-height:1.18;letter-spacing:-.01em}
+.title .hl{color:#F59E0B}
+.sub{position:relative;font-size:34px;color:#B0B0CC;margin-top:30px;line-height:1.5}
+.cards{position:relative;display:flex;flex-direction:column;gap:24px;width:100%;margin-top:64px}
+.card{background:#1A1A2E;border:1px solid rgba(139,92,246,0.25);border-radius:12px;padding:30px 32px;text-align:left;font-size:40px;font-weight:700;line-height:1.35}
+.card.c1{border-left:4px solid #8B5CF6}
+.card.c2{border-left:4px solid #F59E0B}
+.ep{position:relative;margin-top:56px;font-size:30px;font-weight:700;letter-spacing:.06em;color:#6B7280}
+.ep b{color:#10B981}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="eyebrow"><span class="dot"></span>Anthropic 官方手册 · AI 原生创业</div>
+  <div class="title">2026 的创始人，<br>不写代码，<span class="hl">只指挥 Agent</span></div>
+  <div class="sub">出自 Claude 背后那家公司——哪怕你只有一个人</div>
+  <div class="cards">
+    <div class="card c1">创业的整套玩法，正在被掀翻</div>
+    <div class="card c2">「创始人」这个身份，正在被改写</div>
+  </div>
+  <div class="ep">精读系列 · 第 <b>1</b> 集 / 共 <b>5</b> 集</div>
+</div>
+</body>
+</html>

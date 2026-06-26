@@ -1,0 +1,34 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 29.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook/slide_1.html",
+ "topbarIndex": "[01/16]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 9.49,
+   "text": "Anthropic 刚刚发布了一份官方手册：在 2026 年，怎么用 AI 从零打造一家创业公司——哪怕你只有一个人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 9.648,
+   "localDuration": 6.889,
+   "text": "这是目前关于\"AI 原生创业\"最权威的一份 playbook，出自 Claude 背后的那家公司。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 16.704,
+   "localDuration": 3.399,
+   "text": "我把它拆成了一个系列，从头讲到尾。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 20.103,
+   "localDuration": 9.597,
+   "text": "这是第一集，先聊两件最底层的事：创业的整套玩法，正在被掀翻；\"创始人\"这个身份本身，正在被改写。"
+  }
+ ]
+}

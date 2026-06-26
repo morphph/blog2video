@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Founder's Playbook: Building an AI-Native Startup (Chapters 1-2)",
+    "title_zh": "2026 的创始人，不写代码只指挥 Agent？",
+    "word_count": 1217,
+    "slug": "ai-native-founder-playbook"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "EP1 是系列开篇，覆盖原书 Ch1+Ch2，是一条连贯论证（玩法被掀翻 + 创始人身份被改写），默认不拆。后续 Idea/MVP/Launch/Scale 各自成集。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "2026 的创始人，不写代码只指挥 Agent？"
+      }
+    ]
+  }
+}

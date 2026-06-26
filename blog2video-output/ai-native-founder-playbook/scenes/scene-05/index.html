@@ -164,59 +164,66 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
 .endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
-/* —— scene-12 特有(image:能力 03 工作流自动化 = 随需待命的运营团队)—— */
-[data-composition-id='s12'] .bracket{width:100%}
-[data-composition-id='s12'] .pain{margin-top:24px}
-[data-composition-id='s12'] .gain{margin-top:18px}
-[data-composition-id='s12'] .chorelist{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-[data-composition-id='s12'] .chorelist .ch{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#8a8a85;border:1px solid #2a2a2c;background:#1c1c1e;padding:8px 18px}
-[data-composition-id='s12'] .taxline{margin-top:22px;font-weight:700;font-size:36px;color:#ff6b5e;line-height:1.35}
-[data-composition-id='s12'] .taxverdict{margin-top:16px}
-[data-composition-id='s12'] .autorows{display:flex;flex-direction:column;gap:14px;margin-top:18px;width:100%}
-[data-composition-id='s12'] .arow{display:flex;align-items:center;flex-wrap:wrap;gap:14px;font-weight:600;font-size:34px;color:#edebe6;line-height:1.3}
-[data-composition-id='s12'] .arow .trig{color:#8a8a85;font-weight:600}
-[data-composition-id='s12'] .arow .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;font-size:30px}
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .h1{margin-top:18px}
+[data-composition-id='s05'] .cap{margin-top:30px}
+[data-composition-id='s05'] .camps{margin-top:18px;align-items:stretch}
+[data-composition-id='s05'] .wallx{flex:0 0 56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+[data-composition-id='s05'] .wallx .wbar{width:4px;flex:1;min-height:120px;background:#2a2a2c}
+[data-composition-id='s05'] .wallx .wl{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85}
+[data-composition-id='s05'] .cross{margin-top:20px;padding-top:16px;border-top:1px solid #2a2a2c;font-family:'JetBrains Mono',monospace;font-size:23px;line-height:1.45;color:#ccff4d}
+[data-composition-id='s05'] .col.alt .cross{color:#5fd3e8}
+[data-composition-id='s05'] .climax{margin-top:26px}
+[data-composition-id='s05'] .climax .lead .em{color:#ccff4d}
+[data-composition-id='s05'] .merge{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.42}
+[data-composition-id='s05'] .merge .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s05'] .merge .em{color:#ccff4d}
 </style>
 </head>
 <body>
-  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="48.3" data-width="1080" data-height="1920">
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="49.067" data-width="1080" data-height="1920">
     <div class="grid"></div>
     <div class="topbar">
       <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
-      <div class="idx">[12/16]</div>
+      <div class="idx">[05/16]</div>
     </div>
 
     <div class="content top">
-      <div class="kicker k-top">// 能力 <span class="acc">03</span> · 工作流自动化</div>
-      <div class="h1" style="margin-top:18px">一支随需待命的<br><span class="em">自动化运营团队</span></div>
+      <div class="kicker k-top">// THE SECOND SHIFT · <span class="acc">创始人</span></div>
+      <div class="h1">「创始人」的定义，<br>被<span class="em">改写</span>了</div>
 
-      <div class="bracket pain">
-        <div class="kicker plabel">// 绕不过去的<span class="acc">杂活</span> · 每天有人做</div>
-        <div class="chorelist">
-          <span class="ch c1">排日程</span><span class="ch c2">更新 CRM</span><span class="ch c3">拉周报</span>
-          <span class="ch c4">维护文档</span><span class="ch c5">发内容</span><span class="ch c6">追合规</span>
+      <div class="kicker cap">// 过去 · 靠「<span class="acc">你能做什么</span>」定义你</div>
+
+      <div class="cols camps">
+        <div class="col camp-l">
+          <div class="ch">能动手做的人</div>
+          <div class="it"><div class="nm">技术创始人</div><div class="ds">写代码 · 做产品</div></div>
+          <div class="cross cross-l">→ 也能产出 市场策略 · 财务模型 · 融资材料</div>
         </div>
-        <div class="taxline">精益团队里，默认全压在创始人一个人身上</div>
-        <div class="status alert taxverdict"><div class="dot"></div>一笔很沉的税 · 吃掉高阶决策的时间</div>
+        <div class="wallx"><div class="wbar"></div><div class="wl">墙</div></div>
+        <div class="col alt camp-r">
+          <div class="ch">有好点子的人</div>
+          <div class="it"><div class="nm">非技术创始人</div><div class="ds">跑业务 · 签单子</div></div>
+          <div class="cross cross-r">→ 也能做出 跑在用户面前的软件</div>
+        </div>
       </div>
 
-      <div class="bracket gain">
-        <div class="kicker glabel">// 自动化<span class="acc">抵税</span>:触发 → 自动动作</div>
-        <div class="autorows">
-          <div class="arow a1"><span class="trig">deal 一推进</span><span class="ar">→</span><span class="code">CRM</span>自己更新</div>
-          <div class="arow a2"><span class="trig">到点</span><span class="ar">→</span><span class="code">周报</span>自己编译</div>
-          <div class="arow a3"><span class="trig">产品一改</span><span class="ar">→</span><span class="code">文档</span>自动同步</div>
-        </div>
+      <div class="bracket climax">
+        <div class="lead">现在，这堵墙<span class="em">塌了</span></div>
+        <div class="merge">能做东西的人 · 有点子的人 <span class="ar">→</span> <span class="em">可以是同一个人</span></div>
       </div>
     </div>
 
-    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.545" data-track-index="5"><div class="sub-inner">第三个，是<span class="sub-k">工作流自动化</span>。</div></div>
-    <div id="sub-2" class="clip sub" data-start="2.555" data-duration="4.485" data-track-index="5"><div class="sub-inner">一句话定位：一支随需待命的<span class="sub-k">自动化运营团队</span>。</div></div>
-    <div id="sub-3" class="clip sub" data-start="7.187" data-duration="7.135" data-track-index="5"><div class="sub-inner">就算你能像顾问一样做研究、像工程团队一样写代码，仍然有一大类活，<span class="sub-k">绕不过去</span>。</div></div>
-    <div id="sub-4" class="clip sub" data-start="14.532" data-duration="11.105" data-track-index="5"><div class="sub-inner">排日程、更新 CRM、拉周报、维护文档、发内容、追合规要求——这些连接公司各个系统的<span class="sub-k">杂活</span>，每天都要有人做。</div></div>
-    <div id="sub-5" class="clip sub" data-start="25.799" data-duration="4.944" data-track-index="5"><div class="sub-inner">在一个精益团队里，这些活默认全压在<span class="sub-k">创始人一个人身上</span>。</div></div>
-    <div id="sub-6" class="clip sub" data-start="30.753" data-duration="5.896" data-track-index="5"><div class="sub-inner">它是一笔<span class="sub-k">很沉的税</span>，吃掉的，正是本该用来做高阶决策的时间和精力。</div></div>
-    <div id="sub-7" class="clip sub" data-start="36.815" data-duration="11.314" data-track-index="5"><div class="sub-inner">工作流自动化，就是来<span class="sub-k">抵这笔税</span>的：deal 一推进，CRM 自己更新；周报到点自己编译；产品一改，文档自动同步跟上。</div></div>
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.376" data-track-index="5"><div class="sub-inner">第二件事，<span class="sub-k">更有意思</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.383" data-duration="3.808" data-track-index="5"><div class="sub-inner">它动的，是"<span class="sub-k">创始人</span>"这个词本身。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.369" data-duration="4.463" data-track-index="5"><div class="sub-inner">过去定义一个创始人，靠的是"<span class="sub-k">你能做什么</span>"。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.842" data-duration="5.740" data-track-index="5"><div class="sub-inner">技术创始人<span class="sub-k">写代码</span>，非技术创始人跑业务、谈合作、签单子。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.592" data-duration="3.611" data-track-index="5"><div class="sub-inner">两种人之间，隔着一堵清清楚楚的<span class="sub-k">墙</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.373" data-duration="2.270" data-track-index="5"><div class="sub-inner">现在这堵墙，<span class="sub-k">塌了</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.821" data-duration="6.362" data-track-index="5"><div class="sub-inner">"能动手做东西的人"，和"有值得做的点子的人"，过去是<span class="sub-k">两拨人</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.193" data-duration="3.073" data-track-index="5"><div class="sub-inner">AI 把中间那堵墙，给<span class="sub-k">溶掉了</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.433" data-duration="5.880" data-track-index="5"><div class="sub-inner">一个完全没有工程背景的人，现在能做出跑在真实用户面前的<span class="sub-k">软件</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="38.323" data-duration="10.591" data-track-index="5"><div class="sub-inner">反过来，一个很懂技术、却不太懂生意的人，也能轻松产出一份<span class="sub-k">市场策略</span>、一个财务模型、一套打磨得很漂亮的融资材料。</div></div>
   </div>
 
   <script>
@@ -352,22 +359,25 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
   </script>
   <script>
   (function(){
-    var R="[data-composition-id='s12'] ";
+    var R="[data-composition-id='s05'] ";
     var tl=gsap.timeline({paused:true});
     tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
     tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
     D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
-    D2.enter(tl, R+'.h1', 2.0, {y:20, d:.4, ease:'expo.out'});
-    D2.enter(tl, R+'.pain', 7.2, {y:18, d:.42, ease:'power4.out'});
-    D2.stagger(tl, R+'.chorelist .ch', 14.5, {y:14, step:.1, d:.28, ease:'power2.out'});
-    D2.enter(tl, R+'.taxline', 25.8, {x:-16, d:.34, ease:'power3.out'});
-    D2.enter(tl, R+'.taxverdict', 30.8, {x:-14, d:.32, ease:'power2.out'});
-    D2.enter(tl, R+'.gain', 36.8, {y:18, d:.42, ease:'power4.out'});
-    D2.stagger(tl, R+'.autorows .arow', 37.3, {x:-20, step:.55, d:.32, ease:'expo.out'});
-    D2.subs(tl, [['#sub-1',0],['#sub-2',2.555],['#sub-3',7.187],['#sub-4',14.532],['#sub-5',25.799],['#sub-6',30.753],['#sub-7',36.815]].map(function(s){return [R+s[0],s[1]];}));
-    D2.breath(tl, R+'.content', 48.3, 'out');
+    D2.enter(tl, R+'.h1', 2.4, {y:20, d:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.cap', 6.4, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.camp-l', 10.9, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.camp-r', 13.2, {x:24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.wallx', 16.7, {y:14, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.climax', 20.5, {y:18, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.merge', 23.0, {y:12, d:.34, ease:'power2.out'});
+    tl.to(R+'.wallx', {opacity:.16, duration:.7, ease:'power2.inOut'}, 29.3);
+    D2.enter(tl, R+'.cross-r', 32.5, {y:12, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.cross-l', 38.4, {y:12, d:.34, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.383],['#sub-3',6.369],['#sub-4',10.842],['#sub-5',16.592],['#sub-6',20.373],['#sub-7',22.821],['#sub-8',29.193],['#sub-9',32.433],['#sub-10',38.323]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 49.067, 'in');
     window.__timelines = window.__timelines || {};
-    window.__timelines['s12'] = tl;
+    window.__timelines['s05'] = tl;
   })();
   </script>
 </body>

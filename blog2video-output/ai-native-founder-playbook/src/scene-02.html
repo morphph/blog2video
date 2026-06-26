@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .rlabel{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s02'] .rlabel .acc{color:#ccff4d}
+[data-composition-id='s02'] .row .rt{font-size:38px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="38.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[02/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// <span class="acc">第一件事</span></div>
+      <div class="h1" style="margin-top:16px">创业，被<span class="em">换了一套规则</span></div>
+
+      <div class="rlabel rl1" style="margin-top:30px">2026 · <span class="acc">AI 已能独立完成</span></div>
+      <div class="rows" style="margin-top:16px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">写<span class="code">生产级代码</span></div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">做<span class="code">市场调研</span>、理清竞争格局</div>
+        </div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">起草<span class="code">投资人材料</span></div>
+        </div></div>
+        <div class="row r4"><div class="n">04</div><div class="rb">
+          <div class="rt">跑通<span class="code">运营流程</span>自动化</div>
+        </div></div>
+      </div>
+
+      <div class="h2 p1" style="margin-top:34px">过去，要爬一道<span class="code">陡峭曲线</span></div>
+      <div class="rlabel l2" style="margin-top:14px">工具 · 平台 · 系统，全靠手搭</div>
+      <div class="h2 fin" style="margin-top:20px">曲线被抹平，门槛<span class="hl"><span class="bar"></span><span class="tx">彻底拉平</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.011" data-duration="1.461" data-track-index="5"><div class="sub-inner">先说<span class="sub-k">第一件事</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.472" data-duration="3.338" data-track-index="5"><div class="sub-inner">创业这件事，本身被<span class="sub-k">换了一套规则</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.979" data-duration="12.903" data-track-index="5"><div class="sub-inner">到了 <span class="sub-k">2026 年</span>，AI 能写生产级的代码，能做市场调研，能把竞争格局梳理清楚，能起草给投资人看的材料，也能把一堆运营流程自动跑起来。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.047" data-duration="9.329" data-track-index="5"><div class="sub-inner">过去就算是有经验的技术创始人，要把这些工具、平台、系统拼到一起，都要爬一段<span class="sub-k">陡峭的学习曲线</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="27.376" data-duration="3.11" data-track-index="5"><div class="sub-inner">AI 把这段曲线，<span class="sub-k">直接抹平了</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.647" data-duration="1.249" data-track-index="5"><div class="sub-inner">结果是什么？</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.896" data-duration="6.453" data-track-index="5"><div class="sub-inner">谁有资格开一家公司、做出一个产品，这件事的门槛，<span class="sub-k">被彻底拉平了</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .45, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.6, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.rl1', 5.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 5.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 8.1, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 10.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r4', 13.3, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.p1', 18.2, {y:18, d:.35, ease:'power3.out'});
+    D2.enter(tl, R+'.l2', 23.0, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.fin', 27.5, {y:18, d:.35, ease:'expo.out'});
+    D2.sweep(tl, R, '.fin .hl', 32.6);
+    D2.subs(tl, [['#sub-1',0.011],['#sub-2',1.472],['#sub-3',4.979],['#sub-4',18.047],['#sub-5',27.376],['#sub-6',30.647],['#sub-7',31.896]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

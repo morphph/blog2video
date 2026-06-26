@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 cover 特有(能用 kit 类就别新写)—— */
+[data-composition-id='s01'] .beat{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — hook */
+[data-composition-id='s01'] .a-title{margin-top:20px}
+[data-composition-id='s01'] .a-hero{margin-top:38px;display:flex;align-items:center;flex-wrap:wrap;
+  font-weight:900;font-size:74px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-hero .hl .tx{font-size:74px}
+[data-composition-id='s01'] .a-cur{display:inline-block;width:30px;height:60px;background:#ccff4d;margin-left:18px;vertical-align:-8px}
+
+/* beat B — authority */
+[data-composition-id='s01'] .b-title{margin-top:20px}
+[data-composition-id='s01'] .b-en{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:32px;color:#5fd3e8;letter-spacing:.02em}
+[data-composition-id='s01'] .b-status{margin-top:36px}
+[data-composition-id='s01'] .b-chip{margin-top:30px}
+
+/* beat C — two themes */
+[data-composition-id='s01'] .c-rows{margin-top:46px}
+[data-composition-id='s01'] .row .rt .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="29.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[01/16]</div>
+    </div>
+
+    <!-- BEAT A: hook — Anthropic 官方手册 / 2026 一个人造公司 -->
+    <div class="beat" id="beatA">
+      <div class="kicker a-kick"><span class="acc">ANTHROPIC</span> · 官方手册</div>
+      <div class="h1 xl a-title">2026 用 AI <span class="em">从零</span><br>造一家公司</div>
+      <div class="a-hero">哪怕你，<span class="hl"><span class="bar"></span><span class="tx">只有一个人</span></span><span class="a-cur"></span></div>
+    </div>
+
+    <!-- BEAT B: authority — 最权威 playbook / 出自 Claude 背后那家公司 / 系列 -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick"><span class="acc">THE PLAYBOOK</span></div>
+      <div class="h1 b-title">最权威的一份<br>官方 <span class="code">playbook</span></div>
+      <div class="b-en">// the AI-native founder playbook</div>
+      <div class="status b-status"><span class="dot"></span>出自 Claude 背后那家公司</div>
+      <div class="chip b-chip"><span class="ci">精读系列</span><span class="ct">从头讲到尾</span></div>
+    </div>
+
+    <!-- BEAT C: two foundational themes -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick"><span class="acc">EP.01</span> · 两件最底层的事</div>
+      <div class="rows c-rows">
+        <div class="row c-row1"><span class="n">01</span><div class="rb"><div class="rt">创业的整套玩法，<span class="em">正在被掀翻</span></div></div></div>
+        <div class="row c-row2"><span class="n">02</span><div class="rb"><div class="rt">「创始人」这个身份，<span class="em">正在被改写</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time, track 5, verbatim from brief) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="9.49" data-track-index="5"><div class="sub-inner">Anthropic 刚刚发布了一份官方手册：在 2026 年，怎么用 AI 从零打造一家创业公司——哪怕你只有<span class="sub-k">一个人</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="9.648" data-duration="6.889" data-track-index="5"><div class="sub-inner">这是目前关于"AI 原生创业"<span class="sub-k">最权威</span>的一份 playbook，出自 Claude 背后的那家公司。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.704" data-duration="3.399" data-track-index="5"><div class="sub-inner">我把它拆成了一个系列，<span class="sub-k">从头讲到尾</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.103" data-duration="9.597" data-track-index="5"><div class="sub-inner">这是第一集，先聊<span class="sub-k">两件最底层的事</span>：创业的整套玩法，正在被掀翻；"创始人"这个身份本身，正在被改写。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* BEAT A (0 – ~9.5) */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},.6);
+    tl.from(R+'.a-title',{y:24,opacity:0,duration:.42,ease:'expo.out'},1.4);
+    tl.from(R+'.a-hero',{y:20,opacity:0,duration:.36,ease:'power3.out'},6.4);
+    tl.to(R+'.a-hero .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},6.9);
+    tl.to(R+'.a-hero .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},7.06);
+    tl.from(R+'.a-cur',{opacity:0,duration:.2,ease:'power1.out'},7.3);
+    tl.to(R+'.a-cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:5,yoyo:true},7.7);
+    tl.to(R+'#beatA',{scale:1.03,duration:9.5,ease:'none'},0);
+
+    /* A -> B swap @ ~9.6 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},9.2);
+    tl.set(R+'#beatA',{opacity:0},9.6);
+    tl.set(R+'#beatB',{opacity:1},9.6);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},9.75);
+    tl.from(R+'.b-title',{y:24,opacity:0,duration:.4,ease:'power3.out'},10.05);
+    tl.from(R+'.b-en',{opacity:0,duration:.3,ease:'power1.out'},10.9);
+    tl.from(R+'.b-status',{x:-20,opacity:0,duration:.34,ease:'expo.out'},13.0);
+    tl.from(R+'.b-chip',{y:18,opacity:0,duration:.34,ease:'power3.out'},16.7);
+    tl.to(R+'#beatB',{scale:1.03,duration:10.3,ease:'none'},9.6);
+
+    /* B -> C swap @ ~20.1 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},19.7);
+    tl.set(R+'#beatB',{opacity:0},20.1);
+    tl.set(R+'#beatC',{opacity:1},20.1);
+    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},20.3);
+    tl.from(R+'.c-row1',{x:-24,opacity:0,duration:.34,ease:'power3.out'},22.6);
+    tl.from(R+'.c-row2',{x:-24,opacity:0,duration:.34,ease:'expo.out'},26.0);
+    tl.to(R+'#beatC',{scale:1.03,duration:9.7,ease:'none'},20.1);
+
+    /* subtitle fade-ins (local time) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',9.648],['#sub-3',16.704],['#sub-4',20.103]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

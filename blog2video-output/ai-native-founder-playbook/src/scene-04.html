@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有(principle:传统增长剧本 arc + 隐形依赖链 bracket)—— */
+[data-composition-id='s04'] .h2{margin-top:16px}
+[data-composition-id='s04'] .arc{position:relative;margin-top:28px;width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 30px}
+[data-composition-id='s04'] .arc .ah{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em;margin-bottom:20px}
+[data-composition-id='s04'] .arc .flow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 12px}
+[data-composition-id='s04'] .arc .stg{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:28px;color:#edebe6;background:#2a2a2c;border:1px solid #3a3a3c;padding:10px 18px;letter-spacing:.02em}
+[data-composition-id='s04'] .arc .ar{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;color:#ccff4d}
+[data-composition-id='s04'] .arc .loop{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+[data-composition-id='s04'] .arc .loop .lar{color:#ccff4d;font-weight:700;margin-right:10px}
+[data-composition-id='s04'] .arc .cost{margin-top:16px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:26px;color:#ff6b5e}
+[data-composition-id='s04'] .arc .cost .eq{color:#8a8a85;margin:0 8px}
+[data-composition-id='s04'] .bracket{margin-top:26px;width:100%}
+[data-composition-id='s04'] .bracket .bl{font-family:'JetBrains Mono',monospace;font-size:29px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s04'] .bracket .bl .bar-ar{color:#ccff4d;font-weight:700;margin-left:10px}
+[data-composition-id='s04'] .bracket .bchain{margin-top:18px;font-weight:800;font-size:46px;line-height:1.34;color:#edebe6}
+[data-composition-id='s04'] .bracket .bem{color:#ff6b5e}
+[data-composition-id='s04'] .bracket .ul{position:relative;color:#edebe6}
+[data-composition-id='s04'] .bracket .ul-bar{position:absolute;left:0;right:0;bottom:-7px;height:3px;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s04'] .closer{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="45.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[04/16]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 它顺手删掉的<span class="acc">那条线</span></div>
+      <div class="h2">AI 删掉的,<br>不是<span class="em">写代码的时间</span></div>
+
+      <div class="arc">
+        <div class="ah">// 所有人都默认的增长剧本</div>
+        <div class="flow">
+          <span class="stg">验证想法</span><span class="ar">→</span>
+          <span class="stg">融资</span><span class="ar">→</span>
+          <span class="stg">招人</span><span class="ar">→</span>
+          <span class="stg">开发</span><span class="ar">→</span>
+          <span class="stg">再融资</span><span class="ar">→</span>
+          <span class="stg">做大</span><span class="ar">→</span>
+          <span class="stg">招更多人</span>
+        </div>
+        <div class="loop"><span class="lar">→</span>然后回到起点,不停循环</div>
+        <div class="cost">每往前一步<span class="eq">=</span>更大团队<span class="eq">+</span>新技能<span class="eq">+</span>新一轮的钱</div>
+      </div>
+
+      <div class="bracket">
+        <div class="bl">它真正抹掉的<span class="bar-ar">→</span></div>
+        <div class="bchain">「每往前一步都要先<span class="bem">变大</span>、先<span class="bem">拿钱</span>」<br>这条<span class="ul">隐形依赖链<span class="ul-bar"></span></span></div>
+      </div>
+
+      <div class="status closer"><span class="dot"></span>整条融资与扩张的节奏,被顺手删掉</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.919" data-track-index="5"><div class="sub-inner">更狠的，是它顺手删掉的<span class="sub-k">那条线</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.045" data-duration="13.588" data-track-index="5"><div class="sub-inner">传统的创业增长，是一条所有人都默认的路径：先验证想法，再融资，再招人，再开发，再融下一轮，再做大，再招更多人，然后<span class="sub-k">不停循环</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.797" data-duration="6.123" data-track-index="5"><div class="sub-inner">每往前进一个阶段，就意味着更大的团队、一套新的技能、以及<span class="sub-k">新一轮的钱</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="23.061" data-duration="4.277" data-track-index="5"><div class="sub-inner">而 AI 真正抹掉的，不是<span class="sub-k">写代码的那点时间</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="27.338" data-duration="6.026" data-track-index="5"><div class="sub-inner">它抹掉的，是"每往前一步都要先变大、先拿钱"的这条<span class="sub-k">隐形依赖链</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.501" data-duration="3.434" data-track-index="5"><div class="sub-inner">这是我读这两章时，<span class="sub-k">第一个停下来</span>的地方。</div></div>
+    <div id="sub-7" class="clip sub" data-start="36.935" data-duration="8.494" data-track-index="5"><div class="sub-inner">大多数人看到的是"AI 写代码快"，可很少有人注意到，它顺手把整条融资和扩张的节奏，<span class="sub-k">给删掉了</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.arc', 3.0, {y:22, d:.42, ease:'power3.out'});
+    D2.stagger(tl, R+'.arc .flow > *', 3.5, {y:14, d:.3, step:.72, ease:'power2.out'});
+    D2.enter(tl, R+'.arc .loop', 13.8, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.arc .cost', 17.0, {x:-16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket', 24.0, {y:22, d:.44, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket .bchain', 27.6, {y:16, d:.4, ease:'power3.out'});
+    D2.underline(tl, R+'.bracket .ul-bar', 28.8);
+    D2.enter(tl, R+'.closer', 37.0, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.045],['#sub-3',16.797],['#sub-4',23.061],['#sub-5',27.338],['#sub-6',33.501],['#sub-7',36.935]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 45.6, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

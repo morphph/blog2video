@@ -1,0 +1,632 @@
+[
+  {
+    "text": "Anthropic 刚刚发布了一份官方手册：在 2026 年，怎么用 AI 从零打造一家创业公司——哪怕你只有一个人。",
+    "pronounce_text": "Anthropic刚刚发布了一份官方手册：在两千零二十六年，怎么用AI从零打造一家创业公司。哪怕你只有一个人。",
+    "time_begin": 0,
+    "time_end": 9489.841269841269,
+    "text_begin": 0,
+    "text_end": 59,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 55
+  },
+  {
+    "text": "这是目前关于\"AI 原生创业\"最权威的一份 playbook，出自 Claude 背后的那家公司。",
+    "pronounce_text": "这是目前关于\"AI原生创业\"最权威的一份playbook，出自Claude背后的那家公司。",
+    "time_begin": 9648,
+    "time_end": 16537.20634920635,
+    "text_begin": 59,
+    "text_end": 108,
+    "pronounce_text_begin": 55,
+    "pronounce_text_end": 100
+  },
+  {
+    "text": "我把它拆成了一个系列，从头讲到尾。这是第一集，先聊两件最底层的事：创业的整套玩法，正在被掀翻；\"创始人\"这个身份本身，正在被改写。",
+    "pronounce_text": "我把它拆成了一个系列，从头讲到尾。这是第一集，先聊两件最底层的事：创业的整套玩法，正在被掀翻;\"创始人\"这个身份本身，正在被改写。",
+    "time_begin": 16704,
+    "time_end": 29700.054421768706,
+    "text_begin": 108,
+    "text_end": 173,
+    "pronounce_text_begin": 100,
+    "pronounce_text_end": 165
+  },
+  {
+    "text": "先说第一件事。创业这件事，本身被换了一套规则。",
+    "pronounce_text": "先说第一件事。创业这件事，本身被换了一套规则。",
+    "time_begin": 29844,
+    "time_end": 34643.410430839,
+    "text_begin": 173,
+    "text_end": 196,
+    "pronounce_text_begin": 165,
+    "pronounce_text_end": 188
+  },
+  {
+    "text": "到了 2026 年，AI 能写生产级的代码，能做市场调研，能把竞争格局梳理清楚，能起草给投资人看的材料，也能把一堆运营流程自动跑起来。",
+    "pronounce_text": "到了两千零二十六年，AI能写生产级的代码，能做市场调研，能把竞争格局梳理清楚，能起草给投资人看的材料，也能把一堆运营流程自动跑起来。",
+    "time_begin": 34812,
+    "time_end": 47715.1746031746,
+    "text_begin": 196,
+    "text_end": 263,
+    "pronounce_text_begin": 188,
+    "pronounce_text_end": 254
+  },
+  {
+    "text": "过去就算是有经验的技术创始人，要把这些工具、平台、系统拼到一起，都要爬一段陡峭的学习曲线。AI 把这段曲线，直接抹平了。",
+    "pronounce_text": "过去就算是有经验的技术创始人，要把这些工具、平台、系统拼到一起，都要爬一段陡峭的学习曲线。AI把这段曲线，直接抹平了。",
+    "time_begin": 47880,
+    "time_end": 60318.77551020408,
+    "text_begin": 263,
+    "text_end": 323,
+    "pronounce_text_begin": 254,
+    "pronounce_text_end": 313
+  },
+  {
+    "text": "结果是什么？谁有资格开一家公司、做出一个产品，这件事的门槛，被彻底拉平了。",
+    "pronounce_text": "结果是什么？谁有资格开一家公司、做出一个产品，这件事的门槛，被彻底拉平了。",
+    "time_begin": 60480,
+    "time_end": 68181.90476190476,
+    "text_begin": 323,
+    "text_end": 360,
+    "pronounce_text_begin": 313,
+    "pronounce_text_end": 350
+  },
+  {
+    "text": "它带来一个很直观的画面：那个被反复提起的\"精益的十人独角兽\"。",
+    "pronounce_text": "它带来一个很直观的画面：那个被反复提起的\"精益的十人独角兽\"。",
+    "time_begin": 68328,
+    "time_end": 74659.92743764172,
+    "text_begin": 360,
+    "text_end": 391,
+    "pronounce_text_begin": 350,
+    "pronounce_text_end": 381
+  },
+  {
+    "text": "以前我们把它当成草根逆袭的传奇——十个人，撑起一家估值十亿美元级别的公司，听上去像奇迹。现在，它从传奇，变成了一种刻意为之的打法。",
+    "pronounce_text": "以前我们把它当成草根逆袭的传奇。十个人，撑起一家估值十亿美元级别的公司，听上去像奇迹。现在，它从传奇，变成了一种刻意为之的打法。",
+    "time_begin": 74808,
+    "time_end": 88314.89342403629,
+    "text_begin": 391,
+    "text_end": 456,
+    "pronounce_text_begin": 381,
+    "pronounce_text_end": 445
+  },
+  {
+    "text": "更狠的，是它顺手删掉的那条线。",
+    "pronounce_text": "更狠的，是它顺手删掉的那条线。",
+    "time_begin": 88452,
+    "time_end": 91370.59410430839,
+    "text_begin": 456,
+    "text_end": 471,
+    "pronounce_text_begin": 445,
+    "pronounce_text_end": 460
+  },
+  {
+    "text": "传统的创业增长，是一条所有人都默认的路径：先验证想法，再融资，再招人，再开发，再融下一轮，再做大，再招更多人，然后不停循环。",
+    "pronounce_text": "传统的创业增长，是一条所有人都默认的路径：先验证想法，再融资，再招人，再开发，再融下一轮，再做大，再招更多人，然后不停循环。",
+    "time_begin": 91512,
+    "time_end": 105100.16326530612,
+    "text_begin": 471,
+    "text_end": 533,
+    "pronounce_text_begin": 460,
+    "pronounce_text_end": 522
+  },
+  {
+    "text": "每往前进一个阶段，就意味着更大的团队、一套新的技能、以及新一轮的钱。",
+    "pronounce_text": "每往前进一个阶段，就意味着更大的团队、一套新的技能、以及新一轮的钱。",
+    "time_begin": 105264,
+    "time_end": 111386.94784580499,
+    "text_begin": 533,
+    "text_end": 567,
+    "pronounce_text_begin": 522,
+    "pronounce_text_end": 556
+  },
+  {
+    "text": "而 AI 真正抹掉的，不是写代码的那点时间。它抹掉的，是\"每往前一步都要先变大、先拿钱\"的这条隐形依赖链。",
+    "pronounce_text": "而AI真正抹掉的，不是写代码的那点时间。它抹掉的，是\"每往前一步都要先变大、先拿钱\"的这条隐形依赖链。",
+    "time_begin": 111528,
+    "time_end": 121830.53968253967,
+    "text_begin": 567,
+    "text_end": 620,
+    "pronounce_text_begin": 556,
+    "pronounce_text_end": 607
+  },
+  {
+    "text": "这是我读这两章时，第一个停下来的地方。大多数人看到的是\"AI 写代码快\"，可很少有人注意到，它顺手把整条融资和扩张的节奏，给删掉了。",
+    "pronounce_text": "这是我读这两章时，第一个停下来的地方。大多数人看到的是\"AI写代码快\"，可很少有人注意到，它顺手把整条融资和扩张的节奏，给删掉了。",
+    "time_begin": 121968,
+    "time_end": 133895.9365079365,
+    "text_begin": 620,
+    "text_end": 686,
+    "pronounce_text_begin": 607,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "第二件事，更有意思。它动的，是\"创始人\"这个词本身。",
+    "pronounce_text": "第二件事，更有意思。它动的，是\"创始人\"这个词本身。",
+    "time_begin": 134064,
+    "time_end": 140268.21768707482,
+    "text_begin": 686,
+    "text_end": 712,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 698
+  },
+  {
+    "text": "过去定义一个创始人，靠的是\"你能做什么\"。技术创始人写代码，非技术创始人跑业务、谈合作、签单子。两种人之间，隔着一堵清清楚楚的墙。",
+    "pronounce_text": "过去定义一个创始人，靠的是\"你能做什么\"。技术创始人写代码，非技术创始人跑业务、谈合作、签单子。两种人之间，隔着一堵清清楚楚的墙。",
+    "time_begin": 140436,
+    "time_end": 154279.5827664399,
+    "text_begin": 712,
+    "text_end": 777,
+    "pronounce_text_begin": 698,
+    "pronounce_text_end": 763
+  },
+  {
+    "text": "现在这堵墙，塌了。",
+    "pronounce_text": "现在这堵墙，塌了。",
+    "time_begin": 154440,
+    "time_end": 156720.04535147393,
+    "text_begin": 777,
+    "text_end": 786,
+    "pronounce_text_begin": 763,
+    "pronounce_text_end": 772
+  },
+  {
+    "text": "\"能动手做东西的人\"，和\"有值得做的点子的人\"，过去是两拨人。AI 把中间那堵墙，给溶掉了。",
+    "pronounce_text": "\"能动手做东西的人\"，和\"有值得做的点子的人\"，过去是两拨人。AI把中间那堵墙，给溶掉了。",
+    "time_begin": 156888,
+    "time_end": 166343.0113378685,
+    "text_begin": 786,
+    "text_end": 832,
+    "pronounce_text_begin": 772,
+    "pronounce_text_end": 817
+  },
+  {
+    "text": "一个完全没有工程背景的人，现在能做出跑在真实用户面前的软件。反过来，一个很懂技术、却不太懂生意的人，也能轻松产出一份市场策略、一个财务模型、一套打磨得很漂亮的融资材料。",
+    "pronounce_text": "一个完全没有工程背景的人，现在能做出跑在真实用户面前的软件。反过来，一个很懂技术、却不太懂生意的人，也能轻松产出一份市场策略、一个财务模型、一套打磨得很漂亮的融资材料。",
+    "time_begin": 166500,
+    "time_end": 182990.6575963719,
+    "text_begin": 832,
+    "text_end": 916,
+    "pronounce_text_begin": 817,
+    "pronounce_text_end": 901
+  },
+  {
+    "text": "所以早期创业公司的样子，彻底变了。它们是\"刻意做小\"的——经常就是创始人一个人，或者加上很少的几个伙伴。",
+    "pronounce_text": "所以早期创业公司的样子，彻底变了。它们是\"刻意做小\"的。经常就是创始人一个人，或者加上很少的几个伙伴。",
+    "time_begin": 183132,
+    "time_end": 193864.10884353743,
+    "text_begin": 916,
+    "text_end": 968,
+    "pronounce_text_begin": 901,
+    "pronounce_text_end": 952
+  },
+  {
+    "text": "靠把技术和组织，都架在 AI 这个底座上，它们能在扩张团队之前，就摸到产品验证、早期收入，甚至盈利。",
+    "pronounce_text": "靠把技术和组织，都架在AI这个底座上，它们能在扩张团队之前，就摸到产品验证、早期收入，甚至盈利。",
+    "time_begin": 194004,
+    "time_end": 204561.95918367346,
+    "text_begin": 968,
+    "text_end": 1018,
+    "pronounce_text_begin": 952,
+    "pronounce_text_end": 1000
+  },
+  {
+    "text": "那创始人每天到底在做什么？这里发生了一个最关键的转变。",
+    "pronounce_text": "那创始人每天到底在做什么？这里发生了一个最关键的转变。",
+    "time_begin": 204732,
+    "time_end": 208974.13151927438,
+    "text_begin": 1018,
+    "text_end": 1045,
+    "pronounce_text_begin": 1000,
+    "pronounce_text_end": 1027
+  },
+  {
+    "text": "以前，创始人大部分时间泡在\"执行\"里：写代码、管人、处理每天那些琐碎的运营杂活。",
+    "pronounce_text": "以前，创始人大部分时间泡在\"执行\"里：写代码、管人、处理每天那些琐碎的运营杂活。",
+    "time_begin": 209124,
+    "time_end": 216953.61451247166,
+    "text_begin": 1045,
+    "text_end": 1085,
+    "pronounce_text_begin": 1027,
+    "pronounce_text_end": 1067
+  },
+  {
+    "text": "现在，这个角色，从\"亲自下场做事的人\"，变成了\"指挥一群 Agent 的人\"。",
+    "pronounce_text": "现在，这个角色，从\"亲自下场做事的人\"，变成了\"指挥一群Agent的人\"。",
+    "time_begin": 217116,
+    "time_end": 223877.49659863947,
+    "text_begin": 1085,
+    "text_end": 1124,
+    "pronounce_text_begin": 1067,
+    "pronounce_text_end": 1104
+  },
+  {
+    "text": "Agent 是什么？你可以把它理解成一批专门的 AI 助手。它们能读文件、能跑命令、能执行代码，甚至能自己上网浏览网页。",
+    "pronounce_text": "Agent是什么？你可以把它理解成一批专门的AI助手。它们能读文件、能跑命令、能执行代码，甚至能自己上网浏览网页。",
+    "time_begin": 224028,
+    "time_end": 234504.68934240364,
+    "text_begin": 1124,
+    "text_end": 1184,
+    "pronounce_text_begin": 1104,
+    "pronounce_text_end": 1161
+  },
+  {
+    "text": "创始人的注意力，于是整个往上挪了一层。不再盯着具体怎么写、怎么做，而是去想\"做什么想法\"，再去指挥背后那套系统——AI、工具、以及那个很小的团队——把想法落地。",
+    "pronounce_text": "创始人的注意力，于是整个往上挪了一层。不再盯着具体怎么写、怎么做，而是去想\"做什么想法\"，再去指挥背后那套系统。AI、工具、以及那个很小的团队。把想法落地。",
+    "time_begin": 234648,
+    "time_end": 250198.24943310657,
+    "text_begin": 1184,
+    "text_end": 1264,
+    "pronounce_text_begin": 1161,
+    "pronounce_text_end": 1239
+  },
+  {
+    "text": "但这套变化里，最革命性的那一下，不在技术人身上。",
+    "pronounce_text": "但这套变化里，最革命性的那一下，不在技术人身上。",
+    "time_begin": 250344,
+    "time_end": 254295.8820861678,
+    "text_begin": 1264,
+    "text_end": 1288,
+    "pronounce_text_begin": 1239,
+    "pronounce_text_end": 1263
+  },
+  {
+    "text": "表面上你会觉得，AI 帮你写代码，最大的受益者当然是工程师。可真正被解放的，是另一拨人——那些有深厚领域专长、却完全不懂工程的非技术创始人。",
+    "pronounce_text": "表面上你会觉得，AI帮你写代码，最大的受益者当然是工程师。可真正被解放的，是另一拨人。那些有深厚领域专长、却完全不懂工程的非技术创始人。",
+    "time_begin": 254448,
+    "time_end": 267908.45351473923,
+    "text_begin": 1288,
+    "text_end": 1358,
+    "pronounce_text_begin": 1263,
+    "pronounce_text_end": 1331
+  },
+  {
+    "text": "为什么这件事最重要？因为当创业的人才池，扩大到工程师以外，你会看到一批背景完全不同的人进场。",
+    "pronounce_text": "为什么这件事最重要？因为当创业的人才池，扩大到工程师以外，你会看到一批背景完全不同的人进场。",
+    "time_begin": 268056,
+    "time_end": 277127.8820861678,
+    "text_begin": 1358,
+    "text_end": 1404,
+    "pronounce_text_begin": 1331,
+    "pronounce_text_end": 1377
+  },
+  {
+    "text": "他们带着各自真实的人生经历，去解决一些真实的问题——而这些问题，传统的科技创始人管道，过去从来没优先过，甚至根本没注意到。",
+    "pronounce_text": "他们带着各自真实的人生经历，去解决一些真实的问题。而这些问题，传统的科技创始人管道，过去从来没优先过，甚至根本没注意到。",
+    "time_begin": 277272,
+    "time_end": 288816.8072562358,
+    "text_begin": 1404,
+    "text_end": 1465,
+    "pronounce_text_begin": 1377,
+    "pronounce_text_end": 1437
+  },
+  {
+    "text": "那 AI 具体是怎么帮一个精益团队，撑起一家大公司体量的？",
+    "pronounce_text": "那AI具体是怎么帮一个精益团队，撑起一家大公司体量的？",
+    "time_begin": 288972,
+    "time_end": 294758.25850340136,
+    "text_begin": 1465,
+    "text_end": 1494,
+    "pronounce_text_begin": 1437,
+    "pronounce_text_end": 1464
+  },
+  {
+    "text": "先说一个被反转的旧观念。传统创业里，人头是被当成\"信号\"的——团队越大，越显得公司有势能、产品够成熟。",
+    "pronounce_text": "先说一个被反转的旧观念。传统创业里，人头是被当成\"信号\"的。团队越大，越显得公司有势能、产品够成熟。",
+    "time_begin": 294912,
+    "time_end": 305644.1088435374,
+    "text_begin": 1494,
+    "text_end": 1545,
+    "pronounce_text_begin": 1464,
+    "pronounce_text_end": 1514
+  },
+  {
+    "text": "AI-native 的创业，把这个信号反过来了：小，才是刻意设计。",
+    "pronounce_text": "AI-native的创业，把这个信号反过来了：小，才是刻意设计。",
+    "time_begin": 305844.1088435374,
+    "time_end": 312141.20634920633,
+    "text_begin": 1545,
+    "text_end": 1578,
+    "pronounce_text_begin": 1514,
+    "pronounce_text_end": 1546
+  },
+  {
+    "text": "具体落到三个地方：研究、写代码、以及跑运营。我一个一个说。",
+    "pronounce_text": "具体落到三个地方：研究、写代码、以及跑运营。我一个一个说。",
+    "time_begin": 312300,
+    "time_end": 317703.1292517007,
+    "text_begin": 1578,
+    "text_end": 1607,
+    "pronounce_text_begin": 1546,
+    "pronounce_text_end": 1575
+  },
+  {
+    "text": "第一个，是对话智能和研究。你可以把它想成：每个领域，都给你配了一个随叫随到的专家。",
+    "pronounce_text": "第一个，是对话智能和研究。你可以把它想成：每个领域，都给你配了一个随叫随到的专家。",
+    "time_begin": 317844,
+    "time_end": 326056.7437641723,
+    "text_begin": 1607,
+    "text_end": 1648,
+    "pronounce_text_begin": 1575,
+    "pronounce_text_end": 1616
+  },
+  {
+    "text": "想想一个创始人头一年必须懂、但进来时几乎都不懂的事：工资发放该怎么设置？产品开发的节奏该怎么排？一份紧凑的投资备忘该怎么写？",
+    "pronounce_text": "想想一个创始人头一年必须懂、但进来时几乎都不懂的事：工资发放该怎么设置？产品开发的节奏该怎么排？一份紧凑的投资备忘该怎么写？",
+    "time_begin": 326196,
+    "time_end": 338808.92517006805,
+    "text_begin": 1648,
+    "text_end": 1710,
+    "pronounce_text_begin": 1616,
+    "pronounce_text_end": 1678
+  },
+  {
+    "text": "过去这些问题，答案都是同一句话——\"去找个懂的人\"。对一个自掏腰包、或者仍在种子轮之前的创始人来说，这要么烧掉本该用来做产品的时间，要么烧掉一笔早期的钱去请顾问。",
+    "pronounce_text": "过去这些问题，答案都是同一句话。\"去找个懂的人\"。对一个自掏腰包、或者仍在种子轮之前的创始人来说，这要么烧掉本该用来做产品的时间，要么烧掉一笔早期的钱去请顾问。",
+    "time_begin": 338976,
+    "time_end": 354526.24943310657,
+    "text_begin": 1710,
+    "text_end": 1791,
+    "pronounce_text_begin": 1678,
+    "pronounce_text_end": 1758
+  },
+  {
+    "text": "现在，AI 直接就是那个随叫随到的专家：帮你做竞品分析、市场规模测算、财务建模，帮你起草投资备忘和产品需求文档，甚至当你的战略陪练，专门唱反调、帮你做事前复盘。",
+    "pronounce_text": "现在，AI直接就是那个随叫随到的专家：帮你做竞品分析、市场规模测算、财务建模，帮你起草投资备忘和产品需求文档，甚至当你的战略陪练，专门唱反调、帮你做事前复盘。",
+    "time_begin": 354672,
+    "time_end": 369455.9909297052,
+    "text_begin": 1791,
+    "text_end": 1871,
+    "pronounce_text_begin": 1758,
+    "pronounce_text_end": 1837
+  },
+  {
+    "text": "第二个，是 Agentic coding。我把它叫做：那个永远在线、从不被卡住的工程师。",
+    "pronounce_text": "第二个，是Agentic coding。我把它叫做：那个永远在线、从不被卡住的工程师。",
+    "time_begin": 369612,
+    "time_end": 377186.19501133787,
+    "text_begin": 1871,
+    "text_end": 1915,
+    "pronounce_text_begin": 1837,
+    "pronounce_text_end": 1880
+  },
+  {
+    "text": "过去要写软件，你要么得有一个技术合伙人，要么外包给开发团队，要么得有足够厚的现金跑道，先招起一支工程团队，才能写出第一段能上线的代码。",
+    "pronounce_text": "过去要写软件，你要么得有一个技术合伙人，要么外包给开发团队，要么得有足够厚的现金跑道，先招起一支工程团队，才能写出第一段能上线的代码。",
+    "time_begin": 377352,
+    "time_end": 391033.04308390024,
+    "text_begin": 1915,
+    "text_end": 1982,
+    "pronounce_text_begin": 1880,
+    "pronounce_text_end": 1947
+  },
+  {
+    "text": "现在，你只要用大白话，把想做的东西描述清楚，就能指挥 AI 去生成代码、跑测试、排查问题，再把一整套生产级的代码库打磨出来，速度和规模，",
+    "pronounce_text": "现在，你只要用大白话，把想做的东西描述清楚，就能指挥AI去生成代码、跑测试、排查问题，再把一整套生产级的代码库打磨出来，速度和规模，",
+    "time_begin": 391176,
+    "time_end": 406900.39909297053,
+    "text_begin": 1982,
+    "text_end": 2050,
+    "pronounce_text_begin": 1947,
+    "pronounce_text_end": 2013
+  },
+  {
+    "text": "顶得上一整支工程团队。",
+    "pronounce_text": "顶得上一整支工程团队。",
+    "time_begin": 407100.39909297053,
+    "time_end": 409090.19501133787,
+    "text_begin": 2050,
+    "text_end": 2061,
+    "pronounce_text_begin": 2013,
+    "pronounce_text_end": 2024
+  },
+  {
+    "text": "于是\"我有一个想法\"到\"我有一个产品\"之间的距离，被大大压缩了。创始人要操心的，又回到\"做什么、为什么做\"，而真正的搭建，交给 AI。",
+    "pronounce_text": "于是\"我有一个想法\"到\"我有一个产品\"之间的距离，被大大压缩了。创始人要操心的，又回到\"做什么、为什么做\"，而真正的搭建，交给AI。",
+    "time_begin": 409248,
+    "time_end": 422662.0136054422,
+    "text_begin": 2061,
+    "text_end": 2128,
+    "pronounce_text_begin": 2024,
+    "pronounce_text_end": 2090
+  },
+  {
+    "text": "第三个，是工作流自动化。一句话定位：一支随需待命的自动化运营团队。",
+    "pronounce_text": "第三个，是工作流自动化。一句话定位：一支随需待命的自动化运营团队。",
+    "time_begin": 422820,
+    "time_end": 429883.3560090703,
+    "text_begin": 2128,
+    "text_end": 2161,
+    "pronounce_text_begin": 2090,
+    "pronounce_text_end": 2123
+  },
+  {
+    "text": "就算你能像顾问一样做研究、像工程团队一样写代码，仍然有一大类活，绕不过去。",
+    "pronounce_text": "就算你能像顾问一样做研究、像工程团队一样写代码，仍然有一大类活，绕不过去。",
+    "time_begin": 430020,
+    "time_end": 437164.6258503401,
+    "text_begin": 2161,
+    "text_end": 2198,
+    "pronounce_text_begin": 2123,
+    "pronounce_text_end": 2160
+  },
+  {
+    "text": "排日程、更新 CRM、拉周报、维护文档、发内容、追合规要求——这些连接公司各个系统的杂活，每天都要有人做。",
+    "pronounce_text": "排日程、更新CRM、拉周报、维护文档、发内容、追合规要求。这些连接公司各个系统的杂活，每天都要有人做。",
+    "time_begin": 437364.6258503401,
+    "time_end": 448479.8639455782,
+    "text_begin": 2198,
+    "text_end": 2251,
+    "pronounce_text_begin": 2160,
+    "pronounce_text_end": 2211
+  },
+  {
+    "text": "在一个精益团队里，这些活默认全压在创始人一个人身上。它是一笔很沉的税，吃掉的，正是本该用来做高阶决策的时间和精力。",
+    "pronounce_text": "在一个精益团队里，这些活默认全压在创始人一个人身上。它是一笔很沉的税，吃掉的，正是本该用来做高阶决策的时间和精力。",
+    "time_begin": 448632,
+    "time_end": 459491.8185941043,
+    "text_begin": 2251,
+    "text_end": 2308,
+    "pronounce_text_begin": 2211,
+    "pronounce_text_end": 2268
+  },
+  {
+    "text": "工作流自动化，就是来抵这笔税的：deal 一推进，CRM 自己更新；周报到点自己编译；产品一改，文档自动同步跟上。",
+    "pronounce_text": "工作流自动化，就是来抵这笔税的：deal一推进，CRM自己更新;周报到点自己编译;产品一改，文档自动同步跟上。",
+    "time_begin": 459648,
+    "time_end": 470972.21768707485,
+    "text_begin": 2308,
+    "text_end": 2365,
+    "pronounce_text_begin": 2268,
+    "pronounce_text_end": 2323
+  },
+  {
+    "text": "听到这里，你可能已经开始脑补\"一个人撑起一家独角兽\"的画面了。但我必须把另一面讲清楚——这套东西，绝不是自动驾驶。",
+    "pronounce_text": "听到这里，你可能已经开始脑补\"一个人撑起一家独角兽\"的画面了。但我必须把另一面讲清楚。这套东西，绝不是自动驾驶。",
+    "time_begin": 471132,
+    "time_end": 481051.410430839,
+    "text_begin": 2365,
+    "text_end": 2422,
+    "pronounce_text_begin": 2323,
+    "pronounce_text_end": 2379
+  },
+  {
+    "text": "工具堆得再多，它也不会自己变成杠杆。指挥这些 AI 的创始人，必须清楚地知道：怎么用，以及更关键的——什么时候，用哪一个。",
+    "pronounce_text": "工具堆得再多，它也不会自己变成杠杆。指挥这些AI的创始人，必须清楚地知道：怎么用，以及更关键的。什么时候，用哪一个。",
+    "time_begin": 481212,
+    "time_end": 493906.19501133787,
+    "text_begin": 2422,
+    "text_end": 2483,
+    "pronounce_text_begin": 2379,
+    "pronounce_text_end": 2437
+  },
+  {
+    "text": "如果让我给这整套能力，提炼一句话，那就是：时机和编排，就是一切。",
+    "pronounce_text": "如果让我给这整套能力，提炼一句话，那就是：时机和编排，就是一切。",
+    "time_begin": 494064,
+    "time_end": 501429.2154195011,
+    "text_begin": 2483,
+    "text_end": 2515,
+    "pronounce_text_begin": 2437,
+    "pronounce_text_end": 2469
+  },
+  {
+    "text": "瓶颈，于是悄悄换了地方。过去卡你的是\"会不会做\"，现在卡你的，是\"会不会指挥、该在什么时候用上哪个工具\"。",
+    "pronounce_text": "瓶颈，于是悄悄换了地方。过去卡你的是\"会不会做\"，现在卡你的，是\"会不会指挥、该在什么时候用上哪个工具\"。",
+    "time_begin": 501588,
+    "time_end": 514711.7641723356,
+    "text_begin": 2515,
+    "text_end": 2568,
+    "pronounce_text_begin": 2469,
+    "pronounce_text_end": 2522
+  },
+  {
+    "text": "Orchestration——也就是编排——本身，成了一种全新的核心技能。",
+    "pronounce_text": "Orchestration。也就是编排。本身，成了一种全新的核心技能。",
+    "time_begin": 514911.7641723356,
+    "time_end": 521208.86167800456,
+    "text_begin": 2568,
+    "text_end": 2605,
+    "pronounce_text_begin": 2522,
+    "pronounce_text_end": 2557
+  },
+  {
+    "text": "另外，有一个容易被忽略的代价。\"刻意做小\"听上去很美，可它有个隐含的前提：那些杂活不会消失，它们默认全压在你一个人头上。",
+    "pronounce_text": "另外，有一个容易被忽略的代价。\"刻意做小\"听上去很美，可它有个隐含的前提：那些杂活不会消失，它们默认全压在你一个人头上。",
+    "time_begin": 521352,
+    "time_end": 533198.6666666666,
+    "text_begin": 2605,
+    "text_end": 2665,
+    "pronounce_text_begin": 2557,
+    "pronounce_text_end": 2617
+  },
+  {
+    "text": "自动化能帮你抵税，但前提是——你要先有本事，把它配置起来。",
+    "pronounce_text": "自动化能帮你抵税，但前提是。你要先有本事，把它配置起来。",
+    "time_begin": 533398.6666666666,
+    "time_end": 539951.1836734693,
+    "text_begin": 2665,
+    "text_end": 2694,
+    "pronounce_text_begin": 2617,
+    "pronounce_text_end": 2645
+  },
+  {
+    "text": "把这些放到一起，你会得到一个很反直觉的结论：一家真正用好 AI 的公司，运转起来的体量，会远远超过它的人头所暗示的规模。杠杆，第一次和团队人数，脱了钩。",
+    "pronounce_text": "把这些放到一起，你会得到一个很反直觉的结论：一家真正用好AI的公司，运转起来的体量，会远远超过它的人头所暗示的规模。杠杆，第一次和团队人数，脱了钩。",
+    "time_begin": 540108,
+    "time_end": 554717.8412698413,
+    "text_begin": 2694,
+    "text_end": 2770,
+    "pronounce_text_begin": 2645,
+    "pronounce_text_end": 2719
+  },
+  {
+    "text": "把这两章合起来看，其实就是一句话的事。",
+    "pronounce_text": "把这两章合起来看，其实就是一句话的事。",
+    "time_begin": 554868,
+    "time_end": 558007.1836734693,
+    "text_begin": 2770,
+    "text_end": 2789,
+    "pronounce_text_begin": 2719,
+    "pronounce_text_end": 2738
+  },
+  {
+    "text": "过去，创始人拼的是\"你能亲手做什么\"；现在，拼的是\"你能指挥多少 Agent 替你做\"。杠杆，第一次和团队人头，彻底脱了钩。",
+    "pronounce_text": "过去，创始人拼的是\"你能亲手做什么\";现在，拼的是\"你能指挥多少Agent替你做\"。杠杆，第一次和团队人头，彻底脱了钩。",
+    "time_begin": 558144,
+    "time_end": 571174.8843537415,
+    "text_begin": 2789,
+    "text_end": 2851,
+    "pronounce_text_begin": 2738,
+    "pronounce_text_end": 2798
+  },
+  {
+    "text": "身份变了，门槛也变了。最让我觉得这件事会真正改变世界的，不是技术人变快了，而是那些一直被\"我不会写代码\"挡在门外、却握着真实领域经验的人，终于能把自己的点子，亲手做出来了。",
+    "pronounce_text": "身份变了，门槛也变了。最让我觉得这件事会真正改变世界的，不是技术人变快了，而是那些一直被\"我不会写代码\"挡在门外、却握着真实领域经验的人，终于能把自己的点子，亲手做出来了。",
+    "time_begin": 571320,
+    "time_end": 588286.6666666666,
+    "text_begin": 2851,
+    "text_end": 2937,
+    "pronounce_text_begin": 2798,
+    "pronounce_text_end": 2884
+  },
+  {
+    "text": "那四个具体的阶段——从想法，到最小可用产品，到上线，再到规模化——每一步在 AI-native 的打法下到底是什么样子，该用哪些工具、",
+    "pronounce_text": "那四个具体的阶段。从想法，到最小可用产品，到上线，再到规模化。每一步在AI-native的打法下到底是什么样子，该用哪些工具、",
+    "time_begin": 588456,
+    "time_end": 601742.3038548753,
+    "text_begin": 2937,
+    "text_end": 3004,
+    "pronounce_text_begin": 2884,
+    "pronounce_text_end": 2947
+  },
+  {
+    "text": "怎么把时间压下来，是这个系列后面几集，要一个一个走的。",
+    "pronounce_text": "怎么把时间压下来，是这个系列后面几集，要一个一个走的。",
+    "time_begin": 601942.3038548753,
+    "time_end": 607252.5532879819,
+    "text_begin": 3004,
+    "text_end": 3031,
+    "pronounce_text_begin": 2947,
+    "pronounce_text_end": 2974
+  },
+  {
+    "text": "这一集，我们先把最底层的两块地基铺好：玩法被掀翻，身份被改写。下次，我们从第一个阶段——想法——开始往下走。",
+    "pronounce_text": "这一集，我们先把最底层的两块地基铺好：玩法被掀翻，身份被改写。下次，我们从第一个阶段。想法。开始往下走。",
+    "time_begin": 607392,
+    "time_end": 620039.7551020408,
+    "text_begin": 3031,
+    "text_end": 3085,
+    "pronounce_text_begin": 2974,
+    "pronounce_text_end": 3026
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 620208,
+    "time_end": 624960.9705215419,
+    "text_begin": 3085,
+    "text_end": 3112,
+    "pronounce_text_begin": 3026,
+    "pronounce_text_end": 3052
+  }
+]

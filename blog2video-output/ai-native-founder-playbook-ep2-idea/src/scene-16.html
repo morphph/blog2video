@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-16 特有 —— */
+[data-composition-id='s16'] .em{color:#ccff4d}
+[data-composition-id='s16'] .cc{color:#5fd3e8;font-family:'JetBrains Mono',monospace;font-weight:700}
+[data-composition-id='s16'] .h1 .cc{font-size:.85em}
+[data-composition-id='s16'] .lead .lt{display:inline-block}
+[data-composition-id='s16'] .taglist{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+[data-composition-id='s16'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#ccff4d;border:1px solid rgba(204,255,77,.35);padding:4px 13px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s16" data-start="0" data-duration="30.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[16/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 这一程的 · <span class="acc">收尾动作</span></div>
+      <div class="h1" style="margin-top:16px"><span class="cc">Claude Code</span> <span class="em">真正登场</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">前置功课,全部就绪</div>
+          <div class="taglist"><span class="tg">问题真</span><span class="tg">知道谁有</span><span class="tg">方案有据</span></div>
+        </div></div>
+      </div>
+
+      <div class="lead" style="margin-top:30px">现在,可以动手了<span class="lt"> —— 但<span class="em">不是做产品</span></span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">定义「一个核心交互」</div>
+          <div class="rd">方案最依赖的那一个</div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">让 <span class="cc">Claude Code</span> <span class="em">只做这一个</span></div>
+          <div class="rd">先把这一个交互做出来</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.313" data-track-index="5"><div class="sub-inner">那这一整程，到底以什么动作<span class="sub-k">收尾</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.447" data-duration="4.002" data-track-index="5"><div class="sub-inner">这才是 Claude Code <span class="sub-k">真正登场</span>的时刻。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.449" data-duration="7.17" data-track-index="5"><div class="sub-inner">前面所有的<span class="sub-k">功课都做完了</span>：问题是真的，你知道谁有这个问题，你也有了一个被证据支持的方案。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.619" data-duration="2.335" data-track-index="5"><div class="sub-inner">现在，你终于<span class="sub-k">可以做点东西</span>了。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.091" data-duration="3.738" data-track-index="5"><div class="sub-inner">但注意，你要做的，<span class="sub-k">不是一个真正的产品</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.829" data-duration="5.116" data-track-index="5"><div class="sub-inner">你要先定义出，你这套方案最依赖的那"<span class="sub-k">一个核心交互</span>"。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.945" data-duration="4.525" data-track-index="5"><div class="sub-inner">然后，让 Claude Code，<span class="sub-k">只做这一个</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s16'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.45, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 7.5, {x:-24, ease:'power3.out'});
+    D2.stagger(tl, R+'.r1 .taglist .tg', 8.0, {y:12, step:.12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.lead', 14.7, {y:16, d:.35, ease:'power3.out'});
+    D2.enter(tl, R+'.lead .lt', 17.1, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 20.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 26.0, {x:-24, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.447],['#sub-3',7.449],['#sub-4',14.619],['#sub-5',17.091],['#sub-6',20.829],['#sub-7',25.945]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s16'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有(image · hero 大数字 5 + 决策二分)—— */
+[data-composition-id='s17'] .hero{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
+[data-composition-id='s17'] .big{font-family:'MiSans',sans-serif;font-weight:900;font-size:320px;line-height:.9;color:#ccff4d;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+[data-composition-id='s17'] .big .u{font-size:96px;font-weight:900;margin-left:10px;letter-spacing:0}
+[data-composition-id='s17'] .cap{margin-top:10px;font-family:'MiSans',sans-serif;font-weight:600;font-size:42px;line-height:1.3;color:#edebe6}
+[data-composition-id='s17'] .cap .ke{color:#ccff4d;font-weight:900}
+
+[data-composition-id='s17'] .cmp{width:100%;margin-top:56px;display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap}
+[data-composition-id='s17'] .cmp-a{font-family:'MiSans',sans-serif;font-weight:900;font-size:40px;color:#ccff4d}
+[data-composition-id='s17'] .cmp-op{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#ccff4d}
+[data-composition-id='s17'] .cmp-b{font-family:'MiSans',sans-serif;font-weight:600;font-size:40px;color:#8a8a85}
+
+[data-composition-id='s17'] .shift{width:100%;margin-top:34px;display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap}
+[data-composition-id='s17'] .sh-a{font-family:'MiSans',sans-serif;font-weight:600;font-size:38px;color:#8a8a85}
+[data-composition-id='s17'] .sh-ar{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:#ccff4d}
+[data-composition-id='s17'] .sh-b{font-family:'MiSans',sans-serif;font-weight:700;font-size:38px;color:#edebe6}
+[data-composition-id='s17'] .sh-b .ke{color:#ccff4d}
+
+[data-composition-id='s17'] .decide{width:100%;margin-top:50px;text-align:center}
+[data-composition-id='s17'] .d-lead{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s17'] .d-pair{margin-top:18px;display:flex;justify-content:center;align-items:center;gap:26px}
+[data-composition-id='s17'] .go{font-family:'MiSans',sans-serif;font-weight:900;font-size:58px;color:#ccff4d}
+[data-composition-id='s17'] .vs{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:34px;color:#8a8a85}
+[data-composition-id='s17'] .stop{font-family:'MiSans',sans-serif;font-weight:900;font-size:58px;color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="31" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[17/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 放到<span class="acc">真人</span>面前</div>
+
+      <div class="hero" style="margin-top:24px">
+        <div class="big"><span id="bn">0</span><span class="u">人</span></div>
+        <div class="cap">符合画像的人，<span class="ke">真上手去用</span></div>
+      </div>
+
+      <div class="cmp">
+        <span class="cmp-a">真人上手的反馈</span>
+        <span class="cmp-op">&gt;</span>
+        <span class="cmp-b">十几场纯聊天访谈</span>
+      </div>
+
+      <div class="shift">
+        <span class="sh-a">验证「问题真不真」</span>
+        <span class="sh-ar">&rarr;</span>
+        <span class="sh-b">让用户碰<span class="ke">你的方案</span></span>
+      </div>
+
+      <div class="decide">
+        <div class="d-lead">这 5 次对话替你决定</div>
+        <div class="d-pair">
+          <span class="go">继续做</span>
+          <span class="vs">vs</span>
+          <span class="stop">推倒重来</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.427" data-track-index="5"><div class="sub-inner"><span class="sub-k">做出来</span>之后呢？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.42" data-duration="6.321" data-track-index="5"><div class="sub-inner">把它，放到<span class="sub-k">五个</span>符合你目标画像的人面前，让他们真的上手去用一下。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.913" data-duration="7.35" data-track-index="5"><div class="sub-inner">真人摸到一个<span class="sub-k">能动的东西</span>时给你的反馈，比你做十几场纯聊天的访谈，告诉你的还要多。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.263" data-duration="8.293" data-track-index="5"><div class="sub-inner">在那之前，你验证的是"问题是不是真的"；现在，你是在让真实的用户，去碰你提出的<span class="sub-k">那个方案</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.717" data-duration="7.11" data-track-index="5"><div class="sub-inner">而这五次对话的结果，会替你做一个决定：是<span class="sub-k">继续做下去</span>，还是推倒重来。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // beat1 — 做出来之后呢？
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    // beat2 — 5 人 hero(count-up 0→5)
+    D2.enter(tl, R+'.hero', 1.5, {y:24, d:.45, ease:'expo.out'});
+    D2.countUp(tl, R+'#bn', 2.0, 0, 5, 1.0);
+    // beat3 — 真人上手 > 纯聊天访谈
+    D2.enter(tl, R+'.cmp', 8.1, {y:18, d:.34, ease:'power3.out'});
+    // beat4 — 之前验证问题 → 现在碰方案(中途补"现在"半句揭示)
+    D2.enter(tl, R+'.sh-a', 15.5, {y:16, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.sh-ar', 19.8, {y:0, x:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.sh-b', 20.0, {y:16, d:.34, ease:'power3.out'});
+    // beat5 — 决策二分:继续做(acid) vs 推倒重来(coral)
+    D2.enter(tl, R+'.d-lead', 23.9, {y:14, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.go', 26.8, {y:16, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.vs', 27.2, {y:0, d:.26, ease:'power2.out'});
+    D2.enter(tl, R+'.stop', 27.7, {y:16, d:.32, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.42],['#sub-3',7.913],['#sub-4',15.263],['#sub-5',23.717]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 31, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

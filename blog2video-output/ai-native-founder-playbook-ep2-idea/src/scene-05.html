@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .neq{color:#ccff4d;font-size:1.12em;font-weight:900;margin:0 12px}
+[data-composition-id='s05'] .myth{position:relative;display:inline-block}
+[data-composition-id='s05'] .strike{position:absolute;left:-4px;right:-4px;top:54%;height:6px;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s05'] .rf-head{font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s05'] .rf-head .acc{color:#ccff4d}
+[data-composition-id='s05'] .rf{display:flex;flex-direction:column;gap:30px;margin-top:26px}
+[data-composition-id='s05'] .rf-row{display:flex;align-items:center;gap:30px}
+[data-composition-id='s05'] .rf-from{font-weight:900;font-size:58px;color:#edebe6;min-width:188px;line-height:1}
+[data-composition-id='s05'] .rf-ar{font-family:'JetBrains Mono',monospace;font-size:46px;font-weight:700;color:#ccff4d;line-height:1}
+[data-composition-id='s05'] .rf-to{font-weight:900;font-size:72px;line-height:1}
+[data-composition-id='s05'] .r1 .rf-to{color:#5fd3e8}
+[data-composition-id='s05'] .r2 .rf-to{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="21.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[05/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// THE TRAP · <span class="acc">一个陷阱</span></div>
+      <div class="h2" style="margin-top:18px">能跑的原型<span class="neq">≠</span><br><span class="myth">在解决真问题<span class="strike"></span></span></div>
+
+      <div class="bracket" style="margin-top:44px">
+        <div class="rf-head">// <span class="acc">重新定义</span>原型</div>
+        <div class="rf">
+          <div class="rf-row r1"><span class="rf-from">原型</span><span class="rf-ar">→</span><span class="rf-to">道具</span></div>
+          <div class="rf-row r2"><span class="rf-from">对话</span><span class="rf-ar">→</span><span class="rf-to">证据</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.011" data-duration="1.296" data-track-index="5"><div class="sub-inner">这是个<span class="sub-k">陷阱</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.307" data-duration="6.696" data-track-index="5"><div class="sub-inner">一个能跑起来的原型，太容易被误当成"我在解决真问题"的<span class="sub-k">铁证</span>了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.003" data-duration="1.08" data-track-index="5"><div class="sub-inner">但它<span class="sub-k">不是</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.227" data-duration="1.847" data-track-index="5"><div class="sub-inner">那原型到底<span class="sub-k">是什么</span>？</div></div>
+    <div id="sub-5" class="clip sub" data-start="11.074" data-duration="5.129" data-track-index="5"><div class="sub-inner">它只是一个<span class="sub-k">道具</span>，一个用来跟潜在用户压测对话的道具。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.203" data-duration="5.335" data-track-index="5"><div class="sub-inner">真正的证据，从来不是那个原型，而是那一场场<span class="sub-k">对话</span>本身。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.3, {y:20, d:.42, ease:'expo.out'});
+    D2.underline(tl, R+'.strike', 8.0);
+    D2.enter(tl, R+'.bracket', 9.3, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 11.0, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 16.2, {x:-22, d:.42, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.011],['#sub-2',1.307],['#sub-3',8.003],['#sub-4',9.227],['#sub-5',11.074],['#sub-6',16.203]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.667, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

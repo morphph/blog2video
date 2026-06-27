@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有 —— */
+[data-composition-id='s13'] .col.obs .ch{color:#8a8a85}
+[data-composition-id='s13'] .col.obs .it .nm{color:#a8a8a2;font-size:32px;font-weight:700}
+[data-composition-id='s13'] .gt{font-family:'JetBrains Mono',monospace;font-size:22px;color:#8a8a85;letter-spacing:.05em;margin-bottom:8px}
+[data-composition-id='s13'] .col .it{margin-bottom:24px}
+[data-composition-id='s13'] .h1 .mut{color:#8a8a85}
+[data-composition-id='s13'] .foot{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="55.933" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[13/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 假设 · <span class="acc">TESTABLE</span></div>
+      <div class="h1" style="margin-top:16px"><span class="mut">观察</span> vs 可测试假设</div>
+
+      <div class="cols" style="margin-top:30px">
+        <div class="col obs">
+          <div class="ch">观察</div>
+          <div class="it obs1"><div class="gt">报销</div><div class="nm">大家做报销都很痛苦</div><div class="ds">只是观察 · 没法验证</div></div>
+          <div class="it obs2"><div class="gt">合同</div><div class="nm">合同审查太花时间</div><div class="ds">太笼统 · 不可测试</div></div>
+        </div>
+        <div class="col hyp alt">
+          <div class="ch">可测试假设</div>
+          <div class="it hyp1"><div class="gt">报销</div><div class="nm">财务经理每周 <code>四个多小时</code></div><div class="ds hyp1d">核对报销单 · 谁·多频繁·为什么痛 全说得出</div></div>
+          <div class="it hyp2"><div class="gt">合同</div><div class="nm">法务每审一轮 <code>三天以上</code></div><div class="ds">改意见散在邮件，没统一管理文档</div></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span>说不清「谁·多频繁·多严重·怎么办」→ 还没资格被验证</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.055" data-track-index="5"><div class="sub-inner">"大家做报销都很痛苦"——这只是一句观察，它<span class="sub-k">没法验证</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.207" data-duration="10.537" data-track-index="5"><div class="sub-inner">换成这样："中型公司的财务经理，每周要花<span class="sub-k">四个多小时</span>去核对报销单，因为他们现在用的工具，跟记账软件根本对不上。</div></div>
+    <div id="sub-3" class="clip sub" data-start="15.744" data-duration="0.195" data-track-index="5"><div class="sub-inner">"</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.139" data-duration="3.385" data-track-index="5"><div class="sub-inner">——这就是一个<span class="sub-k">能测试的假设</span>了。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.524" data-duration="4.062" data-track-index="5"><div class="sub-inner">谁、多频繁、为什么痛，<span class="sub-k">全都说得出来</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.747" data-duration="2.249" data-track-index="5"><div class="sub-inner">再来一组，<span class="sub-k">法务版</span>的。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.996" data-duration="4.048" data-track-index="5"><div class="sub-inner">"合同审查太花时间了"——<span class="sub-k">不可测试</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="30.191" data-duration="12.438" data-track-index="5"><div class="sub-inner">换成："中型公司的内部法务团队，每审一轮合同要花<span class="sub-k">三天以上</span>，因为所有的修改意见，都散在一堆邮件里，而不是在一份统一管理的文档里。</div></div>
+    <div id="sub-9" class="clip sub" data-start="42.629" data-duration="2.172" data-track-index="5"><div class="sub-inner">"——这就<span class="sub-k">很可测试</span>了。</div></div>
+    <div id="sub-10" class="clip sub" data-start="44.951" data-duration="1.632" data-track-index="5"><div class="sub-inner">你看出<span class="sub-k">区别</span>了吗？</div></div>
+    <div id="sub-11" class="clip sub" data-start="46.583" data-duration="9.181" data-track-index="5"><div class="sub-inner">一个说不清"谁有、多频繁、严重到什么程度、现在拿它怎么办"的问题，根本<span class="sub-k">还没资格被拿去验证</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.col.obs', 1.6, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.col.hyp', 5.3, {x:24, d:.44, ease:'expo.out'});
+    D2.enter(tl, R+'.hyp1d', 19.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.obs2', 26.0, {y:14, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.hyp2', 30.3, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.status', 46.6, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.207],['#sub-3',15.744],['#sub-4',16.139],['#sub-5',19.524],['#sub-6',23.747],['#sub-7',25.996],['#sub-8',30.191],['#sub-9',42.629],['#sub-10',44.951],['#sub-11',46.583]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 55.933, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

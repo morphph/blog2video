@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有(image:两个连带的点 + 行内 code 标签)—— */
+[data-composition-id='s07'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s07'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:4px 14px}
+[data-composition-id='s07'] .status{margin-top:30px}
+[data-composition-id='s07'] .punch{margin-top:42px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="34.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[07/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// <span class="acc">连带的坑</span></div>
+      <div class="h1" style="margin-top:16px">毫不费力，<span class="em">反而危险</span></div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">过早扩张</div>
+          <div class="rd">还没验证<span class="ok">值不值得走</span>，就提前铺开</div>
+          <div class="taglist"><span class="tg">规模远超业务需要</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">AI 完全中立</div>
+          <div class="rd">一个<span class="warn">根本错误的前提</span>，照样满怀热情</div>
+          <div class="taglist"><span class="tg">生成</span><span class="tg">测试</span><span class="tg">调试</span><span class="tg">重构</span></div>
+        </div></div>
+      </div>
+
+      <div class="status"><span class="dot"></span>对好点子和坏前提，一视同仁</div>
+
+      <div class="h2 punch">判断力，<span class="hl"><span class="bar"></span><span class="tx">始终在你这边</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="3.004" data-track-index="5"><div class="sub-inner">还有一个连带的坑，叫<span class="sub-k">过早扩张</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.017" data-duration="11.014" data-track-index="5"><div class="sub-inner">当做东西变得<span class="sub-k">毫不费力</span>，你很容易在还没验证"这条路值不值得走"之前，就把执行的规模，一路铺到远超业务需要的地方。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.197" data-duration="3.721" data-track-index="5"><div class="sub-inner">而 AI 在这件事上，是<span class="sub-k">完全中立</span>的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.918" data-duration="12.816" data-track-index="5"><div class="sub-inner">一个<span class="sub-k">根本错误的前提</span>，它照样会满怀热情地帮你生成、测试、调试、重构出一整套代码——那股劲头，跟它对待一个绝妙点子时，一模一样。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.901" data-duration="3.696" data-track-index="5"><div class="sub-inner"><span class="sub-k">判断力</span>，从头到尾都在你这边，不在它那边。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    /* row 01 过早扩张 —— rt 随 sub-1,rd/tag 填 sub-2 长句 */
+    D2.enter(tl, R+'.r1', 1.6, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 3.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .taglist', 9.4, {y:12, d:.3, ease:'power2.out'});
+    /* row 02 AI 完全中立 —— rt 随 sub-3,coral 前提随 sub-4,标签随动词列举 */
+    D2.enter(tl, R+'.r2', 14.4, {x:-24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 18.0, {y:12, d:.32, ease:'power2.out'});
+    D2.stagger(tl, R+'.r2 .taglist .tg', 19.6, {y:12, step:.13, d:.28, ease:'power2.out'});
+    /* sub-4 长尾「一模一样」次级揭示 */
+    D2.enter(tl, R+'.status', 25.4, {y:14, d:.34, ease:'power3.out'});
+    /* 落点金句 */
+    D2.enter(tl, R+'.punch', 31.0, {y:18, d:.4, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 31.7);
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',3.017],['#sub-3',14.197],['#sub-4',17.918],['#sub-5',30.901]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 34.767, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

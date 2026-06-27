@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .ar{font-family:'JetBrains Mono',monospace;color:#8a8a85;font-weight:700;margin:0 10px}
+[data-composition-id='s09'] .fx{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .mid{width:100%;margin-top:34px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+[data-composition-id='s09'] .mnote{font-weight:500;font-size:30px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s09'] .mnote .dng{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .land{width:100%;margin-top:34px}
+[data-composition-id='s09'] .lpunch{margin-top:16px;font-weight:600;font-size:42px;line-height:1.4;color:#edebe6}
+[data-composition-id='s09'] .lpunch .dng{color:#ff6b5e;font-weight:800}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="43.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[09/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 机制 · <span class="acc">AI 太听话</span></div>
+      <div class="h1" style="margin-top:18px">你让它什么，<span class="em">它就给你什么</span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">让它<span class="code">验证</span>想法<span class="ar">→</span><span class="fx">给你支持的证据</span></div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">让它算市场<span class="ar">→</span><span class="fx">好看的 <span class="code">TAM</span></span></div>
+        </div></div>
+      </div>
+
+      <div class="mid">
+        <div class="status alert m-a"><span class="dot"></span>AI 跟着你的指令走</div>
+        <div class="mnote m-b">越严谨的论证，越可能是<span class="dng">自我说服</span></div>
+      </div>
+
+      <div class="land">
+        <div class="h2 lhead">错误来自<span class="hl"><span class="bar"></span><span class="tx">服从性</span></span>，不是出错率</div>
+        <div class="lpunch">越用越自信，越自信<span class="dng">越危险</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.009" data-duration="4.67" data-track-index="5"><div class="sub-inner">你让 AI 去验证你的创业想法，它就能帮你找到<span class="sub-k">支持的证据</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.679" data-duration="8.535" data-track-index="5"><div class="sub-inner">你让它去测算你的市场有多大，它就能给你算出一个让你的市场规模、你的 <span class="sub-k">TAM</span>，看起来特别值得投资的漂亮数字。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.365" data-duration="1.885" data-track-index="5"><div class="sub-inner">你发现<span class="sub-k">问题</span>在哪了吗？</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.25" data-duration="2.45" data-track-index="5"><div class="sub-inner">AI 是<span class="sub-k">跟着你的指令走</span>的。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.865" data-duration="16.874" data-track-index="5"><div class="sub-inner">这意味着，一个不肯问自己难题的创始人，能比以往任何时候都更快地，为一个<span class="sub-k">坏点子</span>，搭出一套研究详实、看起来做足了尽调的论证——而且全程，他都觉得自己特别严谨、特别客观。</div></div>
+    <div id="sub-6" class="clip sub" data-start="34.893" data-duration="4.895" data-track-index="5"><div class="sub-inner">错误不是来自 AI 的出错率，是来自它的<span class="sub-k">服从性</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.788" data-duration="3.875" data-track-index="5"><div class="sub-inner">所以你越用越自信，越自信，其实<span class="sub-k">越危险</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 1.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 4.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.m-a', 15.3, {y:14, ease:'power2.out'});
+    D2.enter(tl, R+'.m-b', 24.0, {y:12, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.lhead', 35.1, {y:18, d:.4, ease:'expo.out'});
+    D2.sweep(tl, R, '.lhead .hl', 35.9);
+    D2.enter(tl, R+'.lpunch', 40.0, {y:18, d:.35, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.009],['#sub-2',4.679],['#sub-3',13.365],['#sub-4',15.25],['#sub-5',17.865],['#sub-6',34.893],['#sub-7',39.788]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

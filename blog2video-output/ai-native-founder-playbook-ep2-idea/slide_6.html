@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:420px;left:50%;transform:translateX(-50%);width:720px;height:720px;background:radial-gradient(circle,rgba(245,158,11,0.14) 0%,rgba(245,158,11,0) 70%);pointer-events:none}
+.mark{position:relative;font-size:240px;font-weight:800;line-height:0.7;color:rgba(245,158,11,0.35);height:160px}
+.quote{position:relative;font-size:64px;font-weight:800;line-height:1.4;margin-top:20px}
+.quote .strike{color:#6B7280;text-decoration:line-through;text-decoration-color:rgba(107,114,128,0.6)}
+.quote .em{color:#EF4444}
+.tag{position:relative;margin-top:52px;display:inline-flex;gap:18px}
+.tag .chip{font-size:32px;font-weight:700;border-radius:999px;padding:16px 34px}
+.tag .col1{color:#6B7280;border:1px solid rgba(107,114,128,0.5)}
+.tag .col2{color:#EF4444;border:1px solid rgba(239,68,68,0.5)}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="mark">“</div>
+  <div class="quote">「我做出来了」<br>不该记进<span class="strike">进度栏</span><br>该记进<span class="em">风险栏</span></div>
+  <div class="tag">
+    <span class="chip col1">进度 ✕</span>
+    <span class="chip col2">风险 ✓</span>
+  </div>
+</div>
+</body>
+</html>

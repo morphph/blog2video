@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:24px}
+.title{font-size:64px;font-weight:800;line-height:1.25}
+.title .bad{color:#EF4444}
+.pair{display:flex;align-items:stretch;gap:20px;width:100%;margin-top:60px}
+.side{flex:1;background:#1A1A2E;border:1px solid rgba(139,92,246,0.22);border-radius:14px;padding:38px 28px;text-align:left}
+.side.proto{border-left:6px solid #6B7280}
+.side.talk{border-left:6px solid #10B981}
+.side .lab{font-size:28px;font-weight:700;letter-spacing:.06em;margin-bottom:16px}
+.side.proto .lab{color:#6B7280}
+.side.talk .lab{color:#10B981}
+.side .who{font-size:46px;font-weight:800;margin-bottom:12px}
+.side .role{font-size:32px;color:#B0B0CC;line-height:1.4}
+.side.talk .who{color:#10B981}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">一个危险的误解</div>
+  <div class="title">能跑的原型<br>≠ <span class="bad">在解决真问题</span></div>
+  <div class="pair">
+    <div class="side proto">
+      <div class="lab">原型</div>
+      <div class="who">只是道具</div>
+      <div class="role">用来跟用户<br>压测对话</div>
+    </div>
+    <div class="side talk">
+      <div class="lab">对话</div>
+      <div class="who">才是证据</div>
+      <div class="role">真正的验证<br>来自一场场对话</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

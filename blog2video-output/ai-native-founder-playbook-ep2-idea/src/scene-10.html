@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .ctool{font-family:'JetBrains Mono',monospace;font-weight:700;color:#5fd3e8}
+[data-composition-id='s10'] .brlead{margin:0}
+[data-composition-id='s10'] .flip{margin-top:20px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;line-height:1.35;color:#8a8a85}
+[data-composition-id='s10'] .flip .ar{color:#ccff4d;margin:0 16px}
+[data-composition-id='s10'] .flip .em{color:#ccff4d}
+[data-composition-id='s10'] .punch{margin-top:36px;font-weight:600;font-size:46px;line-height:1.34;color:#edebe6}
+[data-composition-id='s10'] .punch .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="16.933" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[10/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// ANTIDOTE · <span class="acc">解药</span></div>
+      <div class="h2" style="margin-top:18px">同一个工具，<br><span class="em">方向反过来用</span></div>
+
+      <div class="bracket" style="margin-top:34px">
+        <div class="lead brlead">让 <span class="ctool">Claude</span> 替你找<span class="em">反例</span></div>
+        <div class="flip">吹捧假设 <span class="ar">→</span> <span class="em">反驳假设</span></div>
+      </div>
+
+      <div class="punch">它<span class="em">压测</span>想法，跟它<span class="em">吹捧</span>想法，<span class="hl"><span class="bar"></span><span class="tx">一样强</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.345" data-track-index="5"><div class="sub-inner">那<span class="sub-k">解药</span>是什么？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.345" data-duration="3.489" data-track-index="5"><div class="sub-inner">解药，就是同一个工具，<span class="sub-k">方向反过来用</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.992" data-duration="6.973" data-track-index="5"><div class="sub-inner">你完全可以让 Claude，去主动论证你是错的，去帮你找那些<span class="sub-k">反驳你假设</span>的证据。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.965" data-duration="4.827" data-track-index="5"><div class="sub-inner">它压测一个想法的本事，跟它吹捧一个想法的本事，<span class="sub-k">一样强</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 5.0, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.flip', 8.4, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 11.95, {y:18, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.hl', 13.2);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.345],['#sub-3',4.992],['#sub-4',11.965]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 16.933, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .head{margin-top:22px;font-size:64px;line-height:1.16}
+[data-composition-id='s08'] .head .cl{color:#ff6b5e}
+[data-composition-id='s08'] .pin{margin-top:36px}
+[data-composition-id='s08'] .pl2{margin-top:16px}
+[data-composition-id='s08'] .metaphor{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s08'] .metaphor .ar{color:#ccff4d;margin:0 12px}
+[data-composition-id='s08'] .metaphor .clm{color:#ff6b5e;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="22.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[08/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// 反直觉 · <span class="acc">想法阶段的真陷阱</span></div>
+
+      <div class="h1 head">
+        <span class="fl">危险的不是 AI <span class="cl">出错</span>,</span><br>
+        <span class="rl">是它<span class="em">太听话了</span></span>
+      </div>
+
+      <div class="bracket pin">
+        <div class="lead pl1"><span class="em">确认偏误</span> — 创业者的职业病</div>
+        <div class="lead pl2">我们天生就对自己的点子<span class="dim">有感情</span></div>
+        <div class="metaphor pl3">这个老毛病 <span class="ar">→</span> 第一次配上了一个 <span class="clm">研究引擎</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.985" data-track-index="5"><div class="sub-inner">大多数人对 AI 的担心，停在"它会不会<span class="sub-k">出错</span>、会不会瞎编"。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.972" data-duration="5.386" data-track-index="5"><div class="sub-inner">但在想法阶段，真正要命的方向，恰恰相反——它<span class="sub-k">太听话了</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.507" data-duration="3.303" data-track-index="5"><div class="sub-inner"><span class="sub-k">确认偏误</span>，本来就是创业者的职业病。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.81" data-duration="2.914" data-track-index="5"><div class="sub-inner">我们天生就对自己的点子<span class="sub-k">有感情</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.724" data-duration="4.469" data-track-index="5"><div class="sub-inner">可现在，这个老毛病，第一次配上了一个<span class="sub-k">研究引擎</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.head .fl', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.head .rl', 6.0, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.pin', 11.5, {y:22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.pin .pl2', 14.85, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.pin .pl3', 17.75, {y:14, d:.34, ease:'power1.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.972],['#sub-3',11.507],['#sub-4',14.81],['#sub-5',17.724]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 22.333, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

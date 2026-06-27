@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有(DATA-HERO:42% bignum + 过去/现在 反转)—— */
+[data-composition-id='s04'] .bignum{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:210px;line-height:.9;color:#ccff4d;font-variant-numeric:tabular-nums;letter-spacing:-.02em;display:inline-flex;align-items:baseline;margin-top:16px}
+[data-composition-id='s04'] .bignum .pct{font-size:108px;font-weight:700;margin-left:8px}
+[data-composition-id='s04'] .cap{margin-top:8px;font-weight:900;font-size:50px;line-height:1.24;color:#edebe6}
+[data-composition-id='s04'] .cap .em{color:#ccff4d}
+[data-composition-id='s04'] .note{margin-top:30px}
+[data-composition-id='s04'] .note .nl{font-weight:600;font-size:34px;line-height:1.4;color:#edebe6}
+[data-composition-id='s04'] .note .nl + .nl{margin-top:14px}
+[data-composition-id='s04'] .note .nl1{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s04'] .note .nl2 .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 4px}
+[data-composition-id='s04'] .note .nl3{color:#ff6b5e;font-weight:700}
+[data-composition-id='s04'] .turnk{margin-top:32px}
+[data-composition-id='s04'] .cols{margin-top:18px}
+[data-composition-id='s04'] .col .ch .sub2{color:#8a8a85;font-weight:500}
+[data-composition-id='s04'] .col.alt .ch{color:#ff6b5e}
+[data-composition-id='s04'] .col .it .nm{line-height:1.28}
+[data-composition-id='s04'] .col .it .nm .em{color:#ccff4d}
+[data-composition-id='s04'] .col.alt .it .nm .em{color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="66.933" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[04/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// THE FLIP · <span class="acc">全片最重要的翻转</span></div>
+
+      <div class="bignum"><span id="bn">0</span><span class="pct">%</span></div>
+      <div class="cap">死于「<span class="em">做了没人想要的东西</span>」</div>
+
+      <div class="note bracket">
+        <div class="nl nl1">// 这还是 AI 不会自己写代码时的数据</div>
+        <div class="nl nl2">想法 <span class="ar">→</span> 产品，距离被压成 <span class="hl"><span class="bar"></span><span class="tx">0</span></span></div>
+        <div class="nl nl3">所以失败率，只会更高</div>
+      </div>
+
+      <div class="kicker turnk">// 它到底有多<span class="acc">反直觉</span></div>
+      <div class="cols">
+        <div class="col c-past">
+          <div class="ch">过去<span class="sub2"> · 做东西</span></div>
+          <div class="it pit1"><div class="nm"><span class="em">难</span>、<span class="em">贵</span>，动辄好几个月</div></div>
+          <div class="it pit2"><div class="nm">「做出来」本身 <span class="em">= 信息量</span></div></div>
+        </div>
+        <div class="col alt c-now">
+          <div class="ch">现在<span class="sub2"> · 做东西</span></div>
+          <div class="it nit1"><div class="nm">几乎<span class="em">免费</span>、几乎<span class="em">瞬间</span></div></div>
+          <div class="it nit2"><div class="nm">把「原型存在」<span class="em">当成「已验证」</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.884" data-track-index="5"><div class="sub-inner">这就引出了全片最重要的一个<span class="sub-k">翻转</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.008" data-duration="1.299" data-track-index="5"><div class="sub-inner">先给你一个<span class="sub-k">数字</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.307" data-duration="12.336" data-track-index="5"><div class="sub-inner">早在 agentic coding——也就是 AI 自己写代码——普及之前，就有<span class="sub-k">百分之四十二</span>的创业公司，是死于同一个原因：他们做出了一个没人想要的东西。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.796" data-duration="3.912" data-track-index="5"><div class="sub-inner">注意，这是 AI <span class="sub-k">还不会自己写代码</span>时的数据。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.708" data-duration="10.136" data-track-index="5"><div class="sub-inner">而现在，从"我有一个想法"，到"我有一个产品"，这中间的距离，被 Claude Code 这类工具，<span class="sub-k">几乎压成了零</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.844" data-duration="2.489" data-track-index="5"><div class="sub-inner">所以这个失败率，<span class="sub-k">只会往上走</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="33.5" data-duration="2.716" data-track-index="5"><div class="sub-inner">你品一下这件事有多<span class="sub-k">反直觉</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="36.216" data-duration="7.729" data-track-index="5"><div class="sub-inner">过去，做东西是要花真金白银和真实时间的，搭一个最基础的原型，<span class="sub-k">动辄好几个月</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="43.945" data-duration="6.475" data-track-index="5"><div class="sub-inner">正因为它难、它贵，"你居然把它做出来了"，本身就<span class="sub-k">携带了信息量</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="50.564" data-duration="4.607" data-track-index="5"><div class="sub-inner">可现在，做出来这件事，<span class="sub-k">几乎免费、几乎瞬间</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="55.171" data-duration="11.628" data-track-index="5"><div class="sub-inner">于是一个很危险的念头冒出来了：有想法，马上做原型，然后——把"原型存在"这件事，直接当成"<span class="sub-k">想法被验证了</span>"。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    // beat 1 — 抛出问题 + 数字 (sub-1 / sub-2 / sub-3)
+    D2.enter(tl, R+'.k-top', .4, {y:-12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.bignum', 3.0, {y:22, d:.45, ease:'expo.out'});
+    D2.countUp(tl, R+'#bn', 9.4, 0, 42, 1.6, {ease:'power2.out'});
+    D2.enter(tl, R+'.cap', 14.8, {y:16, d:.38, ease:'power3.out'});
+
+    // beat 2 — AI 之前的数据 / 距离压成零 / 只会更高 (sub-4 / sub-5 / sub-6)
+    D2.enter(tl, R+'.note', 16.9, {y:18, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.note .nl2', 21.0, {y:12, d:.34, ease:'power2.out'});
+    D2.sweep(tl, R, '.nl2 .hl', 26.5);
+    D2.enter(tl, R+'.note .nl3', 31.0, {y:12, d:.32, ease:'power1.out'});
+
+    // beat 3 — 反直觉:过去 vs 现在 (sub-7 → sub-11)
+    D2.enter(tl, R+'.turnk', 33.5, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c-past', 36.2, {x:-22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.c-past .pit2', 44.0, {y:12, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.c-now', 50.5, {x:22, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.c-now .nit2', 55.5, {y:12, d:.34, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.008],['#sub-3',4.307],['#sub-4',16.796],['#sub-5',20.708],['#sub-6',30.844],['#sub-7',33.5],['#sub-8',36.216],['#sub-9',43.945],['#sub-10',50.564],['#sub-11',55.171]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 66.933, 'out');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

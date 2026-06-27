@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-19 cta 特有 —— */
+[data-composition-id='s19'] .endwrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;text-align:center}
+[data-composition-id='s19'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:168px;line-height:1;color:#edebe6;letter-spacing:-.01em}
+[data-composition-id='s19'] .logo .ac{color:#ccff4d}
+[data-composition-id='s19'] .logo .cur{display:inline-block;width:26px;height:140px;background:#ccff4d;margin-left:18px;vertical-align:-18px}
+[data-composition-id='s19'] .subline{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:42px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s19'] .subline .en{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s19" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="content">
+      <div class="endwrap">
+        <div class="logo">精读<span class="ac">AI</span><span class="cur lc"></span></div>
+        <div class="subline">AI 原生创业手册 · 想法阶段 · <span class="en">完</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s19'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.6,ease:'power1.out'},.02);
+    D2.enter(tl, R+'.logo', .35, {y:26, d:.55, ease:'expo.out'});
+    D2.enter(tl, R+'.subline', 1.0, {y:16, d:.42, ease:'power3.out'});
+    D2.blink(tl, R+'.lc', 1.55, 7);
+    D2.breath(tl, R+'.content', 5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s19'] = tl;
+  })();
+  </script>
+</body>
+</html>

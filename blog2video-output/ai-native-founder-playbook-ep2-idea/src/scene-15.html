@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .h2 .em{color:#ccff4d}
+[data-composition-id='s15'] .cy{color:#5fd3e8;font-weight:600}
+[data-composition-id='s15'] .m{font-family:'JetBrains Mono',monospace}
+[data-composition-id='s15'] .ar{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 6px}
+[data-composition-id='s15'] .costb{font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s15'] .bl2{font-weight:600;font-size:34px;color:#edebe6;line-height:1.45}
+[data-composition-id='s15'] .bl3tag{font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s15'] .ropehead{margin-top:28px}
+[data-composition-id='s15'] .rope{display:flex;align-items:center;gap:18px;width:100%;margin-top:22px}
+[data-composition-id='s15'] .rope .end{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 18px;text-align:center;font-weight:700;font-size:36px;color:#5fd3e8;line-height:1.2}
+[data-composition-id='s15'] .rope .beam{flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;width:190px}
+[data-composition-id='s15'] .rope .node{width:18px;height:18px;border-radius:50%;background:#ccff4d;margin-bottom:12px}
+[data-composition-id='s15'] .rope .balance{font-weight:700;font-size:34px;color:#ccff4d;letter-spacing:.02em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="62.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[15/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// THE TRADEOFF · <span class="acc">诚实的另一面</span></div>
+      <div class="h2" style="margin-top:18px">这套纪律，<span class="em">有代价</span></div>
+      <div class="lead costa" style="margin-top:18px">它<span class="em">慢</span>，而且<span class="em">反人性</span></div>
+      <div class="costb">验证阶段磨来磨去 · 像没有尽头</div>
+      <div class="lead grind" style="margin-top:14px">越想 <span class="em">赶紧动手</span>，越要 <span class="em">忍住</span></div>
+
+      <div class="bracket" style="margin-top:26px">
+        <div class="lead bl1">但这不是叫你 <span class="em">无限验证</span></div>
+        <div class="bl2" style="margin-top:14px">等「<span class="m">100%</span> 确定性」= 另一种「<span class="cy">失败模式</span>」</div>
+        <div class="lead bl3" style="margin-top:18px">你能拿到的<span class="ar">→</span><span class="em">足够支撑你动手</span> 的信号</div>
+        <div class="bl3tag" style="margin-top:10px">是想清楚的决定，而非一次盲目的信仰</div>
+      </div>
+
+      <div class="lead ropehead">真相<span class="ar">→</span>你是在 <span class="em">走钢丝</span></div>
+      <div class="rope">
+        <div class="end e1">动得太快</div>
+        <div class="beam">
+          <div class="node"></div>
+          <div class="balance">平衡点</div>
+        </div>
+        <div class="end e2">等得太久</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="3.454" data-track-index="5"><div class="sub-inner">讲到这儿，我得诚实地把<span class="sub-k">另一面</span>交代清楚。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.462" data-duration="3.818" data-track-index="5"><div class="sub-inner">这套纪律，是有<span class="sub-k">代价</span>的——它慢，而且反人性。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.424" data-duration="5.519" data-track-index="5"><div class="sub-inner">把一个想法在验证阶段磨来磨去，那种感觉，真的像<span class="sub-k">没有尽头</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.943" data-duration="4.928" data-track-index="5"><div class="sub-inner">你是个创始人，浑身上下就一个念头：我想<span class="sub-k">赶紧动手做</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.871" data-duration="3.745" data-track-index="5"><div class="sub-inner">让你在最想动手的那一刻<span class="sub-k">忍住</span>，太难受了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.752" data-duration="3.814" data-track-index="5"><div class="sub-inner">但你别误会，这不是叫你<span class="sub-k">无限期地验证</span>下去。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.566" data-duration="5.339" data-track-index="5"><div class="sub-inner">因为"等一个百分之百的确定性"，本身就是另一种<span class="sub-k">失败模式</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.076" data-duration="2.405" data-track-index="5"><div class="sub-inner">你永远<span class="sub-k">等不到确定性</span>的。</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.481" data-duration="14.213" data-track-index="5"><div class="sub-inner">在这个阶段，你能拿到的，只是"<span class="sub-k">足够支撑你动手</span>"的信号——足够让"投入去做产品"这个决定，是一个想清楚的决定，而不是一次盲目的信仰。</div></div>
+    <div id="sub-10" class="clip sub" data-start="47.852" data-duration="3.745" data-track-index="5"><div class="sub-inner">所以这件事的真相是：你是在<span class="sub-k">走钢丝</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="51.597" data-duration="4.406" data-track-index="5"><div class="sub-inner">一边是"<span class="sub-k">动得太快</span>"，一边是"等得太久"。</div></div>
+    <div id="sub-12" class="clip sub" data-start="56.003" data-duration="6.169" data-track-index="5"><div class="sub-inner">纪律，不是停在原地不动，是在这两者之间，找到那个<span class="sub-k">平衡点</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* ACT 1 — 代价(慢/反人性/想动手却忍住) */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.costa', 3.6, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.costb', 8.6, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.grind', 14.0, {y:16, d:.34, ease:'power3.out'});
+    /* ACT 2 — 但「等确定性」也是失败模式;你能拿到的是「足够支撑你动手」 */
+    D2.enter(tl, R+'.bracket', 21.6, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.bl2', 25.6, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.bl3', 33.5, {y:16, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.bl3tag', 40.5, {y:12, d:.32, ease:'power2.out'});
+    /* ACT 3 — 走钢丝:两端 + 中点平衡 */
+    D2.enter(tl, R+'.ropehead', 47.9, {y:18, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.e1', 51.6, {x:-26, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.e2', 51.7, {x:26, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.node', 51.8, {y:-12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.balance', 56.0, {y:10, d:.34, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',3.462],['#sub-3',7.424],['#sub-4',12.943],['#sub-5',17.871],['#sub-6',21.752],['#sub-7',25.566],['#sub-8',31.076],['#sub-9',33.481],['#sub-10',47.852],['#sub-11',51.597],['#sub-12',56.003]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 62.333, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

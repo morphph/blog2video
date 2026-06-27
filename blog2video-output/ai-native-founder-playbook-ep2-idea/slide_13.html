@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.title{font-size:64px;font-weight:800;line-height:1.2}
+.title .bad{color:#6B7280}
+.title .good{color:#10B981}
+.groups{display:flex;flex-direction:column;gap:26px;width:100%;margin-top:48px}
+.group{background:#1A1A2E;border:1px solid rgba(139,92,246,0.22);border-radius:14px;padding:28px 30px;text-align:left}
+.gtag{display:inline-block;font-size:26px;font-weight:800;letter-spacing:.06em;color:#8B5CF6;border:1px solid rgba(139,92,246,0.45);border-radius:999px;padding:8px 24px;margin-bottom:20px}
+.line{display:flex;gap:16px;align-items:flex-start}
+.line+.line{margin-top:18px;padding-top:18px;border-top:1px solid rgba(139,92,246,0.15)}
+.tag{flex-shrink:0;font-size:26px;font-weight:800;width:140px;padding-top:4px}
+.bad .tag{color:#6B7280}
+.good .tag{color:#10B981}
+.line.bad .txt{font-size:34px;font-weight:700;color:#9CA3AF;line-height:1.35}
+.line.good .txt{font-size:32px;font-weight:700;color:#FFFFFF;line-height:1.4}
+.line.good .txt .em{color:#10B981;font-weight:800}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title"><span class="bad">观察</span> vs <span class="good">可测试的假设</span></div>
+  <div class="groups">
+    <div class="group">
+      <div class="gtag">报销</div>
+      <div class="line bad"><span class="tag">✗ 观察</span><span class="txt">「大家做报销都很痛苦」</span></div>
+      <div class="line good"><span class="tag">✓ 可测试</span><span class="txt">财务经理每周花 <span class="em">4+ 小时</span>核对报销单，因为工具跟记账软件对不上</span></div>
+    </div>
+    <div class="group">
+      <div class="gtag">合同</div>
+      <div class="line bad"><span class="tag">✗ 观察</span><span class="txt">「合同审查太花时间」</span></div>
+      <div class="line good"><span class="tag">✓ 可测试</span><span class="txt">内部法务每审一轮合同 <span class="em">超 3 天</span>，因为修改意见散在邮件里，没有统一文档</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

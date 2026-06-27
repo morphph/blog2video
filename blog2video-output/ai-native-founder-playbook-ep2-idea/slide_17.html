@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:340px;left:50%;transform:translateX(-50%);width:760px;height:760px;background:radial-gradient(circle,rgba(16,185,129,0.16) 0%,rgba(16,185,129,0) 70%);pointer-events:none}
+.kick{position:relative;font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:6px}
+.bignum{position:relative;font-size:320px;font-weight:800;line-height:0.92;color:#10B981;letter-spacing:-.04em}
+.bignum .u{font-size:110px;font-weight:800;color:#10B981}
+.cap{position:relative;font-size:46px;font-weight:800;margin-top:8px;line-height:1.3}
+.cap .hl{color:#10B981}
+.note{position:relative;width:100%;margin-top:46px;background:#1A1A2E;border:1px solid rgba(245,158,11,0.3);border-left:6px solid #F59E0B;border-radius:14px;padding:30px 32px;text-align:left}
+.note .b{font-size:34px;font-weight:700;line-height:1.4;color:#B0B0CC}
+.note .b .em{color:#F59E0B;font-weight:800}
+.decide{position:relative;margin-top:30px;font-size:38px;font-weight:800;line-height:1.4}
+.decide .go{color:#10B981}
+.decide .stop{color:#EF4444}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="kick">放到真人面前</div>
+  <div class="bignum">5<span class="u">人</span></div>
+  <div class="cap">符合画像的人，<span class="hl">真上手去用</span></div>
+  <div class="note"><div class="b">真人摸到能动的东西的反馈<br><span class="em">胜过十几场纯聊天访谈</span></div></div>
+  <div class="decide">这 5 次对话替你决定：<br><span class="go">继续做</span> 还是 <span class="stop">推倒重来</span></div>
+</div>
+</body>
+</html>

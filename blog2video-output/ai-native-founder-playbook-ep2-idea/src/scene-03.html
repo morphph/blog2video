@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .h2 .em{color:#ccff4d}
+[data-composition-id='s03'] .en{margin-top:14px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;letter-spacing:.04em;color:#5fd3e8}
+[data-composition-id='s03'] .bracket{margin-top:30px}
+[data-composition-id='s03'] .bsub{margin-top:18px;font-weight:600;font-size:34px;line-height:1.4;color:#edebe6}
+[data-composition-id='s03'] .bsub .em{color:#ccff4d}
+[data-composition-id='s03'] .bsub .ev{display:block;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+[data-composition-id='s03'] .tlh{margin-top:30px}
+[data-composition-id='s03'] .tl{margin-top:16px}
+[data-composition-id='s03'] .tl-row .wt .k{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="36.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[03/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// EXIT CRITERIA · <span class="acc">这一程的出口</span></div>
+      <div class="h2" style="margin-top:14px">问题与<span class="em">方案匹配</span></div>
+      <div class="en">problem-solution fit</div>
+
+      <div class="bracket">
+        <div class="lead">动手之前，先握住<span class="em">实打实的证据</span></div>
+        <div class="bsub">为<span class="em">真实的人</span>，解决一个<span class="em">真实的问题</span><span class="ev">// 证据来自一次次的真人对话</span></div>
+      </div>
+
+      <div class="kicker tlh">// THE STAKES · 这里<span class="acc">决定成败</span></div>
+      <div class="tl">
+        <div class="tl-row r1"><div class="yr">01</div><div class="wt">整段创业里，<span class="k">最关键</span>的一程</div></div>
+        <div class="tl-row r2"><div class="yr">02</div><div class="wt"><span class="k">致命错误</span>，恰恰都在这儿</div></div>
+        <div class="tl-row r3 now"><div class="yr">!!</div><div class="wt">你跑得，<span class="k">快过你的理解</span><span class="badge">最致命的错</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.646" data-track-index="5"><div class="sub-inner">那它什么时候算<span class="sub-k">结束</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.634" data-duration="6.915" data-track-index="5"><div class="sub-inner">有一个很清楚的出口，叫“<span class="sub-k">问题与方案匹配</span>”，problem-solution fit。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.7" data-duration="12.137" data-track-index="5"><div class="sub-inner">意思是：在你动手做那个解决方案之前，你已经握着<span class="sub-k">实打实的证据</span>——主要来自跟真人的一次次对话——证明你在为真实的人，解决一个真实的问题。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.976" data-duration="3.416" data-track-index="5"><div class="sub-inner">这一程，是整段创业里<span class="sub-k">最关键</span>的。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.392" data-duration="4.1" data-track-index="5"><div class="sub-inner">因为<span class="sub-k">最致命的错误</span>，恰恰都发生在这里。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.492" data-duration="7.744" data-track-index="5"><div class="sub-inner">而几乎所有的错，归根到底都是同一件事：<span class="sub-k">你跑得，比你真正理解的，要快</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.7, {y:20, d:.42, ease:'expo.out'});
+    tl.from(R+'.h2 .em', {color:'#edebe6', duration:.5, ease:'power1.inOut'}, 1.95);
+    D2.enter(tl, R+'.en', 3.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.bracket', 8.7, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.bsub', 14.5, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.tlh', 20.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 21.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 24.4, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 28.5, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .badge', 31.5, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.634],['#sub-3',8.7],['#sub-4',20.976],['#sub-5',24.392],['#sub-6',28.492]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.4, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

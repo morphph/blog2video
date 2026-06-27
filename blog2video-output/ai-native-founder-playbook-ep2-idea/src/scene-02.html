@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .gloss{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#5fd3e8;letter-spacing:.02em}
+[data-composition-id='s02'] .tl{margin-top:22px}
+[data-composition-id='s02'] .bracket{margin-top:26px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="35.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[02/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// THE GOAL · <span class="acc">想法阶段</span></div>
+      <div class="h2" style="margin-top:14px">不是「动手做」，是<span class="em">研究式的验证</span></div>
+
+      <div class="bracket">
+        <div class="lead">投入任何资源之前，先<span class="em">攒够证据</span>：真问题存在，且你的方案真能解决它</div>
+        <div class="gloss">research-mode validation, not building</div>
+      </div>
+
+      <div class="tl">
+        <div class="tl-row r0"><div class="yr">01</div><div class="wt">调研</div></div>
+        <div class="tl-row r1"><div class="yr">02</div><div class="wt">客户访谈</div></div>
+        <div class="tl-row r2"><div class="yr">03</div><div class="wt">看清竞争格局</div></div>
+        <div class="tl-row r3"><div class="yr">04</div><div class="wt">诚实面对反对你的证据</div></div>
+        <div class="tl-row rn now"><div class="yr">&rarr;</div><div class="wt">写下第一行生产代码<span class="badge">全在此之前</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.846" data-track-index="5"><div class="sub-inner">先说清楚，这个阶段的目标，根本不是"<span class="sub-k">动手做</span>"。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.989" data-duration="2.45" data-track-index="5"><div class="sub-inner">它的目标，是<span class="sub-k">研究式的验证</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.439" data-duration="10.929" data-track-index="5"><div class="sub-inner">说白了，就是在你投入任何资源去做之前，先攒够<span class="sub-k">扎实的证据</span>，证明一个真实的问题确实存在，而且你想的那套方案，真能解决它。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.525" data-duration="10.963" data-track-index="5"><div class="sub-inner">所以这个阶段的活，是调研、是客户访谈、是把竞争格局看清楚，以及最难的一件——<span class="sub-k">诚实地面对</span>那些反对你的证据。</div></div>
+    <div id="sub-5" class="clip sub" data-start="29.488" data-duration="5.481" data-track-index="5"><div class="sub-inner">这一切，都发生在你让 AI 写下<span class="sub-k">第一行生产代码</span>之前。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    tl.from(R+'.h2 .em', {color:'#edebe6', duration:.45, ease:'power1.inOut'}, 4.989);
+    D2.enter(tl, R+'.bracket', 7.5, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.gloss', 13.0, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 18.7, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 20.7, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r2', 22.8, {x:-22, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 25.6, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.rn', 29.5, {x:-22, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.rn .badge', 31.4, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.989],['#sub-3',7.439],['#sub-4',18.525],['#sub-5',29.488]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 35.133, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

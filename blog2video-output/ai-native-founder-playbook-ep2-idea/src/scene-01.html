@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+
+/* —— scene-01 特有(cover 多 beat;能用 kit 类就复用,新写均加 s01 前缀)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — 标题钩子 */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .a-title{margin-top:30px;font-weight:900;font-size:78px;line-height:1.2;color:#edebe6;letter-spacing:-.01em}
+[data-composition-id='s01'] .a-title .hl{padding:4px 12px}
+[data-composition-id='s01'] .a-title .hl .tx{font-size:78px}
+[data-composition-id='s01'] .a-ep{margin-top:56px;display:inline-flex;align-items:center;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 32px}
+[data-composition-id='s01'] .a-ep .ci{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;letter-spacing:.06em}
+[data-composition-id='s01'] .a-ep .ct{font-weight:600;font-size:34px;color:#edebe6}
+
+/* beat B — 本集框定 Idea Stage */
+[data-composition-id='s01'] .b-kick{letter-spacing:.06em}
+[data-composition-id='s01'] .b-en{margin-top:26px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;line-height:1.0;letter-spacing:-.03em;color:#5fd3e8}
+[data-composition-id='s01'] .b-zh{margin-top:24px;display:flex;align-items:center;font-weight:900;font-size:90px;line-height:1.1;color:#edebe6}
+
+/* beat C — 反人性的铁律 punch */
+[data-composition-id='s01'] .c-kick{letter-spacing:.05em}
+[data-composition-id='s01'] .c-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .c-line{margin-top:32px;font-weight:900;font-size:62px;line-height:1.2;color:#edebe6}
+[data-composition-id='s01'] .c-punch{margin-top:18px;font-weight:900;font-size:96px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .c-punch .hl{padding:6px 16px}
+[data-composition-id='s01'] .c-punch .hl .tx{font-size:96px}
+[data-composition-id='s01'] .c-tag{margin-top:52px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="32.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[01/18]</div>
+    </div>
+
+    <!-- BEAT A: 标题钩子 -->
+    <div class="beat" id="beatA">
+      <div class="a-kick"><span class="acc">// 2026</span> AI 原生创业 · 官方答案</div>
+      <div class="a-title">AI 让做产品几乎免费，<br>为什么<span class="hl"><span class="bar"></span><span class="tx">反而更危险</span></span>？</div>
+      <div class="a-ep"><span class="ci">EP.02 / 05</span><span class="ct">Anthropic 官方手册</span></div>
+    </div>
+
+    <!-- BEAT B: 本集框定 Idea Stage -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick">STAGE <span class="acc">01</span> / 05 · 创业第一步</div>
+      <div class="b-en">IDEA STAGE</div>
+      <div class="b-zh">想法阶段<span class="cur"></span></div>
+    </div>
+
+    <!-- BEAT C: 反人性的铁律 -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick"><span class="acc">// RULE 01</span> 最反人性的一件事</div>
+      <div class="c-line">在证据出现之前，</div>
+      <div class="c-punch"><span class="hl"><span class="bar"></span><span class="tx">忍住不动手</span></span></div>
+      <div class="status c-tag"><span class="dot"></span>EP.02 / 05 · 想法阶段</div>
+    </div>
+
+    <!-- SUBTITLES (local time, 一字不差) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="12.694" data-track-index="5"><div class="sub-inner">AI 时代到底怎么创业，Anthropic 这次亲自给了官方答案：一份刚刚发布的手册，教你在 2026 年，一个人也能用 AI 从零做出一家<span class="sub-k">公司</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="12.852" data-duration="6.761" data-track-index="5"><div class="sub-inner">今天，我们接着上一集，讲创业的第一步——Idea Stage，<span class="sub-k">想法阶段</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="19.764" data-duration="12.741" data-track-index="5"><div class="sub-inner">想法阶段听起来最轻松——可它偏偏是整段创业里最容易把自己玩死的一程，因为它考验的，是一件最反人性的事：在证据出现之前，<span class="sub-k">忍住不动手</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - 12.3) sub-1 */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.6);
+    tl.from(R+'.a-title',{y:26,opacity:0,duration:.46,ease:'expo.out'},1.5);
+    tl.from(R+'.a-ep',{y:18,opacity:0,duration:.36,ease:'power3.out'},5.2);
+    /* hero — 反而更危险 酸性扫过 @ 7.6 */
+    tl.to(R+'.a-title .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},7.6);
+    tl.to(R+'.a-title .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},7.76);
+    tl.fromTo(R+'#beatA',{scale:1.0},{scale:1.035,duration:12.3,ease:'none'},0);
+
+    /* A -> B swap @ 12.85 */
+    tl.to(R+'#beatA',{opacity:0,duration:.45,ease:'power2.inOut'},12.3);
+    tl.set(R+'#beatB',{opacity:1},12.85);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},13.0);
+    tl.from(R+'.b-en',{x:-32,opacity:0,duration:.42,ease:'expo.out'},13.4);
+    tl.from(R+'.b-zh',{y:22,opacity:0,duration:.35,ease:'power3.out'},14.3);
+    tl.to(R+'.b-zh .cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:5,yoyo:true},15.3);
+    tl.fromTo(R+'#beatB',{scale:1.0},{scale:1.035,duration:6.6,ease:'none'},12.85);
+
+    /* B -> C swap @ 19.78 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},19.3);
+    tl.set(R+'#beatC',{opacity:1},19.78);
+    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},20.0);
+    tl.from(R+'.c-line',{y:22,opacity:0,duration:.4,ease:'power3.out'},21.9);
+    tl.from(R+'.c-punch',{y:26,opacity:0,duration:.42,ease:'expo.out'},24.2);
+    /* hero — 忍住不动手 酸性扫过 @ 27.1 */
+    tl.to(R+'.c-punch .bar',{scaleX:1,duration:.34,ease:'power4.inOut'},27.1);
+    tl.to(R+'.c-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},27.28);
+    tl.from(R+'.c-tag',{y:18,opacity:0,duration:.35,ease:'power3.out'},29.3);
+    tl.fromTo(R+'#beatC',{scale:1.0},{scale:1.035,duration:12.8,ease:'none'},19.78);
+
+    /* subtitle fade-ins (local time) */
+    [['#sub-1',0],['#sub-2',12.852],['#sub-3',19.764]]
+      .forEach(function(s){ tl.from(R+s[0],{opacity:0,duration:.2,ease:'power1.out'},s[1]); });
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

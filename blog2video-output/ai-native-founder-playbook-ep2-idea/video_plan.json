@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Founder's Playbook: Building an AI-Native Startup (Chapter 3 — Idea Stage)",
+    "title_zh": "AI 让做产品几乎免费，为什么反而更危险？",
+    "word_count": 1500,
+    "slug": "ai-native-founder-playbook-ep2-idea"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "EP2 覆盖原书 Ch3 Idea Stage，是一条连贯的认知/纪律论证（在证据出现前忍住不做 → 做出来≠验证 → 确认偏误配研究引擎 → 可证伪门槛 → 五次对话收尾），默认不拆。系列分集已定，本集单条成片。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI 让做产品几乎免费，为什么反而更危险？"
+      }
+    ]
+  }
+}

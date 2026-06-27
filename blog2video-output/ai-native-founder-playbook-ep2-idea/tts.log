@@ -1,0 +1,15 @@
+
+> blog2video-remotion@1.0.0 tts
+> node scripts/tts.mjs /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_script.md /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio.mp3
+
+Reading script: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_script.md
+Extracted 3294 characters for TTS (18 slides mapped)
+Calling MiniMax TTS API...
+Audio saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio.mp3 (9.7 MB)
+Fetching subtitle file from URL...
+Found 61 raw subtitle segments
+Raw subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio_minimax_raw_subtitles.json (61 segments)
+Slide map saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio_slide_map.json (18 slides)
+Sentence subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio_subtitles.json (114 sentences)
+VTT saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/video_1_audio.vtt
+Audio duration: 636.8s

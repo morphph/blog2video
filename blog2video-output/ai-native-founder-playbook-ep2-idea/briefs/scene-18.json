@@ -1,0 +1,64 @@
+{
+ "scene": 18,
+ "id": "s18",
+ "type": "summary",
+ "dataDuration": 51.167,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_18.html",
+ "topbarIndex": "[18/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.373,
+   "text": "把这一整程收拢成一句话。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.509,
+   "localDuration": 3.619,
+   "text": "AI 让\"做出来\"几乎变成了免费。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.128,
+   "localDuration": 5.534,
+   "text": "可正因为这样，\"做出来\"第一次，不再等于\"我对了\"。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.833,
+   "localDuration": 9.793,
+   "text": "想法阶段真正稀缺的能力，从来不是\"你能不能做\"，而是\"在证据出现之前，你能不能忍住不做\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.626,
+   "localDuration": 4.352,
+   "text": "原型只是压测对话的道具，对话，才是证据。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.125,
+   "localDuration": 6.761,
+   "text": "走到想法阶段的尽头，你手里攥着的，不再是一个赌注，而是一摞证据。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 33.037,
+   "localDuration": 11.8,
+   "text": "下一集，我们就接着往下走——把这个验证过的想法，变成第一个真正要动手做的东西，MVP 阶段，最小可用产品阶段。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 44.989,
+   "localDuration": 3.839,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 48.828,
+   "localDuration": 1.344,
+   "text": "我们下期再见。"
+  }
+ ]
+}

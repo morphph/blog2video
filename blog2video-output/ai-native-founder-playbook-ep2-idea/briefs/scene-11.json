@@ -1,0 +1,52 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 42.2,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_11.html",
+ "topbarIndex": "[11/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 1.445,
+   "text": "举个最具体的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.456,
+   "localDuration": 9.287,
+   "text": "创业者有个通病，叫竞品忽视——太投入自己的愿景，就会系统性地低估别人在同一个赛道里的动作。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.883,
+   "localDuration": 8.085,
+   "text": "那你就反过来用：让 Claude 拿出最有说服力的论证，告诉你为什么某个竞品会成功，而你会失败。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.127,
+   "localDuration": 4.589,
+   "text": "这套打法有个名字，叫结构化的\"魔鬼代言人\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.716,
+   "localDuration": 5.841,
+   "text": "而它能成立的前提，永远是那句话：系统里的判断力，是你的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.757,
+   "localDuration": 6.889,
+   "text": "同一个 AI，既能帮你压测，也能帮你自欺，方向完全由你给的提示决定。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 36.803,
+   "localDuration": 5.229,
+   "text": "它不会替你守住客观，守住的责任，始终在你这边。"
+  }
+ ]
+}

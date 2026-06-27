@@ -1,0 +1,46 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "principle",
+ "dataDuration": 21.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_5.html",
+ "topbarIndex": "[05/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 1.296,
+   "text": "这是个陷阱。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.307,
+   "localDuration": 6.696,
+   "text": "一个能跑起来的原型，太容易被误当成\"我在解决真问题\"的铁证了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.003,
+   "localDuration": 1.08,
+   "text": "但它不是。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.227,
+   "localDuration": 1.847,
+   "text": "那原型到底是什么？"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 11.074,
+   "localDuration": 5.129,
+   "text": "它只是一个道具，一个用来跟潜在用户压测对话的道具。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.203,
+   "localDuration": 5.335,
+   "text": "真正的证据，从来不是那个原型，而是那一场场对话本身。"
+  }
+ ]
+}

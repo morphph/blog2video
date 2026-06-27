@@ -1,0 +1,16 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "quote",
+ "dataDuration": 9.867,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_6.html",
+ "topbarIndex": "[06/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 9.71,
+   "text": "所以我想把一句话钉在这儿：在这个时代，\"我做出来了\"不该被记进你的进度栏，它该被记进风险栏。"
+  }
+ ]
+}

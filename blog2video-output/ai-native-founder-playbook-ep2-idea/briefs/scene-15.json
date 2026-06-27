@@ -1,0 +1,82 @@
+{
+ "scene": 15,
+ "id": "s15",
+ "type": "principle",
+ "dataDuration": 62.333,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_15.html",
+ "topbarIndex": "[15/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 3.454,
+   "text": "讲到这儿，我得诚实地把另一面交代清楚。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.462,
+   "localDuration": 3.818,
+   "text": "这套纪律，是有代价的——它慢，而且反人性。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.424,
+   "localDuration": 5.519,
+   "text": "把一个想法在验证阶段磨来磨去，那种感觉，真的像没有尽头。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.943,
+   "localDuration": 4.928,
+   "text": "你是个创始人，浑身上下就一个念头：我想赶紧动手做。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.871,
+   "localDuration": 3.745,
+   "text": "让你在最想动手的那一刻忍住，太难受了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.752,
+   "localDuration": 3.814,
+   "text": "但你别误会，这不是叫你无限期地验证下去。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.566,
+   "localDuration": 5.339,
+   "text": "因为\"等一个百分之百的确定性\"，本身就是另一种失败模式。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.076,
+   "localDuration": 2.405,
+   "text": "你永远等不到确定性的。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.481,
+   "localDuration": 14.213,
+   "text": "在这个阶段，你能拿到的，只是\"足够支撑你动手\"的信号——足够让\"投入去做产品\"这个决定，是一个想清楚的决定，而不是一次盲目的信仰。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 47.852,
+   "localDuration": 3.745,
+   "text": "所以这件事的真相是：你是在走钢丝。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 51.597,
+   "localDuration": 4.406,
+   "text": "一边是\"动得太快\"，一边是\"等得太久\"。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 56.003,
+   "localDuration": 6.169,
+   "text": "纪律，不是停在原地不动，是在这两者之间，找到那个平衡点。"
+  }
+ ]
+}

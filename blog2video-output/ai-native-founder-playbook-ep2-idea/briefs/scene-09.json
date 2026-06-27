@@ -1,0 +1,52 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 43.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_9.html",
+ "topbarIndex": "[09/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.009,
+   "localDuration": 4.67,
+   "text": "你让 AI 去验证你的创业想法，它就能帮你找到支持的证据。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.679,
+   "localDuration": 8.535,
+   "text": "你让它去测算你的市场有多大，它就能给你算出一个让你的市场规模、你的 TAM，看起来特别值得投资的漂亮数字。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.365,
+   "localDuration": 1.885,
+   "text": "你发现问题在哪了吗？"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.25,
+   "localDuration": 2.45,
+   "text": "AI 是跟着你的指令走的。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.865,
+   "localDuration": 16.874,
+   "text": "这意味着，一个不肯问自己难题的创始人，能比以往任何时候都更快地，为一个坏点子，搭出一套研究详实、看起来做足了尽调的论证——而且全程，他都觉得自己特别严谨、特别客观。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 34.893,
+   "localDuration": 4.895,
+   "text": "错误不是来自 AI 的出错率，是来自它的服从性。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 39.788,
+   "localDuration": 3.875,
+   "text": "所以你越用越自信，越自信，其实越危险。"
+  }
+ ]
+}

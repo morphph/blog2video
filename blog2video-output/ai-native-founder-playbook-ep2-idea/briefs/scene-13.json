@@ -1,0 +1,76 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "comparison_cards",
+ "dataDuration": 55.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_13.html",
+ "topbarIndex": "[13/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.055,
+   "text": "\"大家做报销都很痛苦\"——这只是一句观察，它没法验证。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.207,
+   "localDuration": 10.537,
+   "text": "换成这样：\"中型公司的财务经理，每周要花四个多小时去核对报销单，因为他们现在用的工具，跟记账软件根本对不上。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.744,
+   "localDuration": 0.195,
+   "text": "\""
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.139,
+   "localDuration": 3.385,
+   "text": "——这就是一个能测试的假设了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.524,
+   "localDuration": 4.062,
+   "text": "谁、多频繁、为什么痛，全都说得出来。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 23.747,
+   "localDuration": 2.249,
+   "text": "再来一组，法务版的。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.996,
+   "localDuration": 4.048,
+   "text": "\"合同审查太花时间了\"——不可测试。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 30.191,
+   "localDuration": 12.438,
+   "text": "换成：\"中型公司的内部法务团队，每审一轮合同要花三天以上，因为所有的修改意见，都散在一堆邮件里，而不是在一份统一管理的文档里。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 42.629,
+   "localDuration": 2.172,
+   "text": "\"——这就很可测试了。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 44.951,
+   "localDuration": 1.632,
+   "text": "你看出区别了吗？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 46.583,
+   "localDuration": 9.181,
+   "text": "一个说不清\"谁有、多频繁、严重到什么程度、现在拿它怎么办\"的问题，根本还没资格被拿去验证。"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 34.767,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_7.html",
+ "topbarIndex": "[07/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 3.004,
+   "text": "还有一个连带的坑，叫过早扩张。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.017,
+   "localDuration": 11.014,
+   "text": "当做东西变得毫不费力，你很容易在还没验证\"这条路值不值得走\"之前，就把执行的规模，一路铺到远超业务需要的地方。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.197,
+   "localDuration": 3.721,
+   "text": "而 AI 在这件事上，是完全中立的。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.918,
+   "localDuration": 12.816,
+   "text": "一个根本错误的前提，它照样会满怀热情地帮你生成、测试、调试、重构出一整套代码——那股劲头，跟它对待一个绝妙点子时，一模一样。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 30.901,
+   "localDuration": 3.696,
+   "text": "判断力，从头到尾都在你这边，不在它那边。"
+  }
+ ]
+}

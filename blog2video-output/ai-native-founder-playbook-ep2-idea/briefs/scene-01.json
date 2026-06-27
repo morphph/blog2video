@@ -1,0 +1,28 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 32.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_1.html",
+ "topbarIndex": "[01/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 12.694,
+   "text": "AI 时代到底怎么创业，Anthropic 这次亲自给了官方答案：一份刚刚发布的手册，教你在 2026 年，一个人也能用 AI 从零做出一家公司。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 12.852,
+   "localDuration": 6.761,
+   "text": "今天，我们接着上一集，讲创业的第一步——Idea Stage，想法阶段。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 19.764,
+   "localDuration": 12.741,
+   "text": "想法阶段听起来最轻松——可它偏偏是整段创业里最容易把自己玩死的一程，因为它考验的，是一件最反人性的事：在证据出现之前，忍住不动手。"
+  }
+ ]
+}

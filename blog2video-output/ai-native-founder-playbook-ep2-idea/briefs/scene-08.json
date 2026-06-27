@@ -1,0 +1,40 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "principle",
+ "dataDuration": 22.333,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_8.html",
+ "topbarIndex": "[08/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.985,
+   "text": "大多数人对 AI 的担心，停在\"它会不会出错、会不会瞎编\"。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.972,
+   "localDuration": 5.386,
+   "text": "但在想法阶段，真正要命的方向，恰恰相反——它太听话了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.507,
+   "localDuration": 3.303,
+   "text": "确认偏误，本来就是创业者的职业病。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.81,
+   "localDuration": 2.914,
+   "text": "我们天生就对自己的点子有感情。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.724,
+   "localDuration": 4.469,
+   "text": "可现在，这个老毛病，第一次配上了一个研究引擎。"
+  }
+ ]
+}

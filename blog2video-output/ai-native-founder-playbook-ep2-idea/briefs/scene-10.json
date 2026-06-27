@@ -1,0 +1,34 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "principle",
+ "dataDuration": 16.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_10.html",
+ "topbarIndex": "[10/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.357,
+   "text": "那解药是什么？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.345,
+   "localDuration": 3.489,
+   "text": "解药，就是同一个工具，方向反过来用。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.992,
+   "localDuration": 6.973,
+   "text": "你完全可以让 Claude，去主动论证你是错的，去帮你找那些反驳你假设的证据。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.965,
+   "localDuration": 4.827,
+   "text": "它压测一个想法的本事，跟它吹捧一个想法的本事，一样强。"
+  }
+ ]
+}

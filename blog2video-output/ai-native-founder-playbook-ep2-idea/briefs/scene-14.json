@@ -1,0 +1,52 @@
+{
+ "scene": 14,
+ "id": "s14",
+ "type": "principle",
+ "dataDuration": 32.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_14.html",
+ "topbarIndex": "[14/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.718,
+   "text": "到了真正约客户聊的时候，这里还藏着一个新手最常犯的错。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.857,
+   "localDuration": 5.476,
+   "text": "新手会问一个指向未来的泛问题——\"你会用一个这样的东西吗？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.333,
+   "localDuration": 2.644,
+   "text": "\"这种问题，得到的全是噪声。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.977,
+   "localDuration": 3.587,
+   "text": "因为人对未来的自己，几乎总是过度乐观。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.701,
+   "localDuration": 8.335,
+   "text": "老手会反过来，去问那个具体的过去——\"跟我讲讲，你上一次碰到这个问题，是怎么处理的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.036,
+   "localDuration": 2.183,
+   "text": "\"过去的行为不会撒谎。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 27.219,
+   "localDuration": 5.16,
+   "text": "你要的，是他真正做过什么，而不是他以为自己会做什么。"
+  }
+ ]
+}

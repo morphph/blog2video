@@ -1,0 +1,40 @@
+{
+ "scene": 17,
+ "id": "s17",
+ "type": "image",
+ "dataDuration": 31,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_17.html",
+ "topbarIndex": "[17/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.427,
+   "text": "做出来之后呢？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.42,
+   "localDuration": 6.321,
+   "text": "把它，放到五个符合你目标画像的人面前，让他们真的上手去用一下。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.913,
+   "localDuration": 7.35,
+   "text": "真人摸到一个能动的东西时给你的反馈，比你做十几场纯聊天的访谈，告诉你的还要多。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.263,
+   "localDuration": 8.293,
+   "text": "在那之前，你验证的是\"问题是不是真的\"；现在，你是在让真实的用户，去碰你提出的那个方案。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.717,
+   "localDuration": 7.11,
+   "text": "而这五次对话的结果，会替你做一个决定：是继续做下去，还是推倒重来。"
+  }
+ ]
+}

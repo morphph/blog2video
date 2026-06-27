@@ -1,0 +1,28 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "principle",
+ "dataDuration": 11.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_12.html",
+ "topbarIndex": "[12/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.003,
+   "localDuration": 2.297,
+   "text": "道理讲完了，怎么落地？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.3,
+   "localDuration": 6.473,
+   "text": "第一道门槛，特别朴素，但卡住一大片人——你的问题，得能被证伪。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.931,
+   "localDuration": 2.408,
+   "text": "我给你两组对比，你立刻就懂了。"
+  }
+ ]
+}

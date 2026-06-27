@@ -1,0 +1,76 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 66.933,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_4.html",
+ "topbarIndex": "[04/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.884,
+   "text": "这就引出了全片最重要的一个翻转。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.008,
+   "localDuration": 1.299,
+   "text": "先给你一个数字。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.307,
+   "localDuration": 12.336,
+   "text": "早在 agentic coding——也就是 AI 自己写代码——普及之前，就有百分之四十二的创业公司，是死于同一个原因：他们做出了一个没人想要的东西。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.796,
+   "localDuration": 3.912,
+   "text": "注意，这是 AI 还不会自己写代码时的数据。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.708,
+   "localDuration": 10.136,
+   "text": "而现在，从\"我有一个想法\"，到\"我有一个产品\"，这中间的距离，被 Claude Code 这类工具，几乎压成了零。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.844,
+   "localDuration": 2.489,
+   "text": "所以这个失败率，只会往上走。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 33.5,
+   "localDuration": 2.716,
+   "text": "你品一下这件事有多反直觉。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 36.216,
+   "localDuration": 7.729,
+   "text": "过去，做东西是要花真金白银和真实时间的，搭一个最基础的原型，动辄好几个月。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 43.945,
+   "localDuration": 6.475,
+   "text": "正因为它难、它贵，\"你居然把它做出来了\"，本身就携带了信息量。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 50.564,
+   "localDuration": 4.607,
+   "text": "可现在，做出来这件事，几乎免费、几乎瞬间。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 55.171,
+   "localDuration": 11.628,
+   "text": "于是一个很危险的念头冒出来了：有想法，马上做原型，然后——把\"原型存在\"这件事，直接当成\"想法被验证了\"。"
+  }
+ ]
+}

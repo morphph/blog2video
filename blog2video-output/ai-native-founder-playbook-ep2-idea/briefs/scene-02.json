@@ -1,0 +1,40 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "principle",
+ "dataDuration": 35.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep2-idea/slide_2.html",
+ "topbarIndex": "[02/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.846,
+   "text": "先说清楚，这个阶段的目标，根本不是\"动手做\"。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.989,
+   "localDuration": 2.45,
+   "text": "它的目标，是研究式的验证。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.439,
+   "localDuration": 10.929,
+   "text": "说白了，就是在你投入任何资源去做之前，先攒够扎实的证据，证明一个真实的问题确实存在，而且你想的那套方案，真能解决它。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.525,
+   "localDuration": 10.963,
+   "text": "所以这个阶段的活，是调研、是客户访谈、是把竞争格局看清楚，以及最难的一件——诚实地面对那些反对你的证据。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 29.488,
+   "localDuration": 5.481,
+   "text": "这一切，都发生在你让 AI 写下第一行生产代码之前。"
+  }
+ ]
+}

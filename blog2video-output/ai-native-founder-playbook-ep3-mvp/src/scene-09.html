@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .h1a,[data-composition-id='s09'] .h1b{display:block}
+[data-composition-id='s09'] .b-set{margin-top:40px;width:100%}
+[data-composition-id='s09'] .set-l{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:#ccff4d;letter-spacing:.05em;margin-bottom:18px}
+[data-composition-id='s09'] .set-body{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-weight:700;font-size:36px;color:#edebe6;line-height:1.3}
+[data-composition-id='s09'] .set-sep{color:#8a8a85;font-weight:500}
+[data-composition-id='s09'] .set-tags{display:inline-flex;gap:10px;margin-left:6px}
+[data-composition-id='s09'] .t-day{margin-left:0;vertical-align:0;font-size:26px;font-weight:700;padding:5px 16px}
+[data-composition-id='s09'] .k-fake{margin-top:34px}
+[data-composition-id='s09'] .k-fake .warnk{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .rows.fake{margin-top:16px}
+[data-composition-id='s09'] .row .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;font-weight:700;margin:0 14px}
+[data-composition-id='s09'] .row .neg{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .s-dev{margin-top:28px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="46.233" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[09/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 解药 · <span class="acc">把顺序倒过来</span></div>
+      <div class="h1" style="margin-top:18px"><span class="h1a">第一个用户出现前，</span><span class="h1b">就把<span class="em">测量框架</span>建好</span></div>
+
+      <div class="bracket b-set">
+        <div class="set-l">提前定死</div>
+        <div class="set-body">
+          <span class="set-i">留存基准线</span>
+          <span class="set-sep">·</span>
+          <span class="set-i">激活标准</span>
+          <span class="set-sep">·</span>
+          <span class="set-i">目标</span>
+          <span class="set-tags">
+            <span class="tag t-day">第 7 天</span>
+            <span class="tag t-day">第 30 天</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="kicker k-fake">// <span class="warnk">假阳性</span> · 长什么样</div>
+      <div class="rows fake">
+        <div class="row warn r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="pos">注册了</span><span class="ar">→</span><span class="neg">没激活</span></div>
+        </div></div>
+        <div class="row warn r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="pos">有收入</span><span class="ar">→</span><span class="neg">没留存</span></div>
+        </div></div>
+        <div class="row warn r3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="pos">有热情</span><span class="ar">→</span><span class="neg">不复用</span></div>
+        </div></div>
+      </div>
+
+      <div class="status alert s-dev"><span class="dot"></span>让 Claude 当怀疑论者 · 挑刺</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.221" data-track-index="5"><div class="sub-inner">而最容易上当的，恰恰是那些上线之后，<span class="sub-k">才开始量数据</span>的人。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.221" data-duration="6.009" data-track-index="5"><div class="sub-inner">因为发布之后才挑指标，你会下意识地，专挑那些<span class="sub-k">让自己好看的</span>来看。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.399" data-duration="5.969" data-track-index="5"><div class="sub-inner">解药，是把顺序倒过来：在第一个用户出现之前，就把<span class="sub-k">测量框架</span>建好。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.368" data-duration="7.317" data-track-index="5"><div class="sub-inner">留存的基准线、激活的标准、上线后第七天和第三十天要达到的目标，<span class="sub-k">全部提前定死</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.827" data-duration="12.358" data-track-index="5"><div class="sub-inner">还要提前想清楚，对你这个产品来说，"<span class="sub-k">假阳性</span>"长什么样：注册了但没激活、有收入但没留存、有热情但不复用。</div></div>
+    <div id="sub-6" class="clip sub" data-start="37.355" data-duration="8.724" data-track-index="5"><div class="sub-inner">数据一来，你就让 Claude 站到对立面去，挑你这组数据的刺——一个<span class="sub-k">怀疑论者</span>，会怎么喷这些数字。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1a', 1.6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.h1b', 8.0, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.b-set', 12.8, {y:18, d:.42, ease:'power3.out'});
+    D2.stagger(tl, R+'.b-set .t-day', 19.2, {y:10, step:.14, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.k-fake', 24.9, {y:-10, ease:'power2.out'});
+    D2.stagger(tl, R+'.rows.fake .row', 27.5, {x:-24, step:2.6, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.s-dev', 38.2, {y:16, d:.34, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.221],['#sub-3',11.399],['#sub-4',17.368],['#sub-5',24.827],['#sub-6',37.355]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 46.233, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

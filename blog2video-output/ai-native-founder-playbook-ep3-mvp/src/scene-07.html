@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .h1{font-size:64px}
+[data-composition-id='s07'] .rows{margin-top:30px;gap:14px}
+[data-composition-id='s07'] .row .rt{font-size:37px}
+[data-composition-id='s07'] .note{margin-top:24px;font-weight:600;font-size:33px;color:#8a8a85;line-height:1.42}
+[data-composition-id='s07'] .note .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s07'] .note .late .lem{color:#ccff4d;font-weight:900}
+[data-composition-id='s07'] .guard{margin-top:28px;width:100%}
+[data-composition-id='s07'] .guard .glabel{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:#ccff4d;letter-spacing:.04em;margin-bottom:16px}
+[data-composition-id='s07'] .guard .gcur{margin-left:6px;vertical-align:-3px}
+[data-composition-id='s07'] .guard .gbody{font-weight:700;font-size:37px;color:#edebe6;line-height:1.4}
+[data-composition-id='s07'] .guard .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 4px}
+[data-composition-id='s07'] .guard .gsub{margin-top:16px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.42}
+[data-composition-id='s07'] .gcode{font-family:'JetBrains Mono',monospace;font-size:.94em;font-weight:700;color:#5fd3e8;background:rgba(95,211,232,.1);border:1px solid rgba(95,211,232,.28);padding:2px 12px;white-space:nowrap}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="68.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[07/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 坑 <span class="acc">1 / 4</span> · 为什么会复利滚大</div>
+      <div class="h1" style="margin-top:16px">每开一个新 session，<br>都从零<span class="em">重新推导</span></div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">规格 / 架构约束，没写在 AI <span class="code">读得到的地方</span></div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">每次推导，都<span class="em" style="color:#ccff4d;font-weight:900">悄悄飘移</span>一点点</div>
+        </div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">得到一个<span class="em" style="color:#ccff4d;font-weight:900">没有连贯心智模型</span>的代码库</div>
+        </div></div>
+      </div>
+
+      <div class="note">单块零件都没问题，<span class="em">却从没被设计成能拼到一起</span><span class="late">　·　很晚才暴露，<span class="lem">一上量就塌</span></span></div>
+
+      <div class="guard bracket">
+        <div class="glabel">护栏 ①<span class="cur sm gcur"></span></div>
+        <div class="gbody">写第一行生产代码前，先用 Claude 把架构定下来<span class="gclaude"><span class="ar">→</span>存成 <span class="gcode">CLAUDE.md</span></span></div>
+        <div class="gsub">项目级、持久的「记忆」· <span class="gcode">Agent SDK</span> 在目录里跑时自动读</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="0.739" data-track-index="5"><div class="sub-inner"><span class="sub-k">为什么</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="0.735" data-duration="10.903" data-track-index="5"><div class="sub-inner">如果你没把规格和架构约束，写在 AI 读得到的地方，那它每开一个新 session，都要<span class="sub-k">从零重新推导</span>那些最底层的决定。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.638" data-duration="3.142" data-track-index="5"><div class="sub-inner">而每一次推导，都会<span class="sub-k">悄悄飘移</span>一点点。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.936" data-duration="4.633" data-track-index="5"><div class="sub-inner">最后你得到的，是一个<span class="sub-k">没有连贯心智模型</span>的代码库。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.569" data-duration="5.036" data-track-index="5"><div class="sub-inner">注意，坏的不是哪一块零件——每一块<span class="sub-k">单独看都没问题</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.605" data-duration="7.251" data-track-index="5"><div class="sub-inner">坏的是，这些零件从一开始，就没有一张统一的图纸，<span class="sub-k">从没被设计成能拼到一起</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="32" data-duration="2.718" data-track-index="5"><div class="sub-inner">更阴的是，它会<span class="sub-k">很晚才暴露</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="34.718" data-duration="4.601" data-track-index="5"><div class="sub-inner">平时一切都能跑，等真实用户<span class="sub-k">一上量</span>，它就塌了。</div></div>
+    <div id="sub-9" class="clip sub" data-start="39.488" data-duration="1.553" data-track-index="5"><div class="sub-inner">那<span class="sub-k">护栏</span>怎么装回去？</div></div>
+    <div id="sub-10" class="clip sub" data-start="41.041" data-duration="12.256" data-track-index="5"><div class="sub-inner">在 Claude Code 写下第一行生产代码之前，先用 Claude <span class="sub-k">把架构定下来</span>——要遵循哪些模式、要避开哪些依赖、有意识地接受哪些取舍。</div></div>
+    <div id="sub-11" class="clip sub" data-start="53.497" data-duration="4.242" data-track-index="5"><div class="sub-inner">然后把这份东西，存成一个文件，叫 <span class="sub-k">CLAUDE.md</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="57.884" data-duration="7.657" data-track-index="5"><div class="sub-inner">它是你项目级的、持久的"记忆"，<span class="sub-k">Agent SDK</span> 在这个目录里跑的时候，会自动去读它。</div></div>
+    <div id="sub-13" class="clip sub" data-start="65.541" data-duration="2.611" data-track-index="5"><div class="sub-inner">这就是你亲手写回的<span class="sub-k">第一条护栏</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    // mechanism chain — one beat per decay step
+    D2.enter(tl, R+'.r1', 3.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 11.7, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 15.0, {x:-22, ease:'power3.out'});
+    // amplification note + late "很晚才暴露" reveal
+    D2.enter(tl, R+'.note', 19.7, {y:12, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.note .late', 32.0, {y:10, d:.3, ease:'power2.out'});
+    // 护栏① — mid-hold secondary reveal across the back half
+    D2.enter(tl, R+'.guard', 39.6, {y:18, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.gbody', 41.0, {y:12, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.gclaude', 53.5, {y:10, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.gsub', 58.0, {y:10, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.gcur', 65.5, 4);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',0.735],['#sub-3',11.638],['#sub-4',14.936],['#sub-5',19.569],['#sub-6',24.605],['#sub-7',32],['#sub-8',34.718],['#sub-9',39.488],['#sub-10',41.041],['#sub-11',53.497],['#sub-12',57.884],['#sub-13',65.541]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 68.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

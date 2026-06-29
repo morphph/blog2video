@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有(checklist:四个坑=同一根因 → 四道护栏=一个动作)—— */
+[data-composition-id='s13'] .h1 .em{position:relative}
+[data-composition-id='s13'] .uline{position:absolute;left:0;right:0;bottom:-8px;height:3px;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s13'] .hk{margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:28px;letter-spacing:.02em}
+[data-composition-id='s13'] .hk .hkt{color:#ccff4d}
+[data-composition-id='s13'] .hk .hkx{color:#8a8a85}
+[data-composition-id='s13'] .la-tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:22px;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 12px;margin-left:14px;vertical-align:5px}
+[data-composition-id='s13'] .row .rt{display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s13'] .row .disc{font-weight:700;font-size:40px;color:#edebe6;line-height:1.28}
+[data-composition-id='s13'] .row .ar{font-family:'JetBrains Mono',monospace;font-size:32px;color:#ccff4d;margin:0 14px}
+[data-composition-id='s13'] .row .art{font-weight:700;font-size:40px;color:#5fd3e8;line-height:1.28}
+[data-composition-id='s13'] .row .art.mono{font-family:'JetBrains Mono',monospace;font-size:.94em;background:rgba(95,211,232,.1);border:1px solid rgba(95,211,232,.28);padding:2px 14px}
+[data-composition-id='s13'] .closing{margin-top:30px;font-weight:900;font-size:50px;color:#edebe6;line-height:1.3;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s13'] .closing .hl{margin-left:6px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="64.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[13/18]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker k-top">// 四个坑 · <span class="acc">同一个根因</span></div>
+      <div class="h1" style="margin-top:14px">一个『免费存在』的<span class="em">强制函数<span class="uline"></span></span><br>被 AI 删掉了</div>
+      <div class="hk"><span class="hkt">forcing_function</span> <span class="hkx">— deleted by AI</span></div>
+
+      <div class="lead la" style="margin-top:24px">工程 × 时间的成本，曾是<span class="em">免费的护栏</span><span class="la-tag">分文不取</span></div>
+      <div class="lead lb" style="margin-top:12px">瓶颈一没，四道护栏<span class="em">一起归零</span>。</div>
+
+      <div class="kicker rh" style="margin-top:26px">// 解药 · 同一个形状:<span class="acc">写成一份文档</span></div>
+      <div class="rows" style="margin-top:18px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="disc">架构</span><span class="ar">→</span><span class="art mono">CLAUDE.md</span></div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="disc">范围</span><span class="ar">→</span><span class="art mono">scope 文档</span></div>
+        </div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="disc">标准</span><span class="ar">→</span><span class="art">上线前的测量框架</span></div>
+        </div></div>
+        <div class="row r4"><div class="n">04</div><div class="rb">
+          <div class="rt"><span class="disc">安全审查</span><span class="ar">→</span><span class="art">任何用户碰到它之前</span></div>
+        </div></div>
+      </div>
+
+      <div class="closing">四件事,其实是<span class="hl"><span class="bar"></span><span class="tx">一个动作</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.452" data-track-index="5"><div class="sub-inner">讲完这四个,我要把它们<span class="sub-k">拢到一起</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.451" data-duration="10.357" data-track-index="5"><div class="sub-inner">因为它们看起来是四件不相干的事——架构乱、数据骗人、功能失控、不懂安全——可它们,是<span class="sub-k">同一个根因</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.967" data-duration="6.854" data-track-index="5"><div class="sub-inner">那个根因是:一个过去"免费存在"的<span class="sub-k">强制函数</span>,被 AI 删掉了。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.987" data-duration="9.949" data-track-index="5"><div class="sub-inner">工程的成本、时间的成本,过去会自动逼着你<span class="sub-k">做正确的事</span>——先想架构、先定范围、先量后发、先审安全。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.936" data-duration="4.022" data-track-index="5"><div class="sub-inner">这些纪律,你过去<span class="sub-k">一分钱不花</span>,就拥有了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="35.099" data-duration="3.854" data-track-index="5"><div class="sub-inner">现在瓶颈没了,这四道护栏,也<span class="sub-k">一起消失</span>了。</div></div>
+    <div id="sub-7" class="clip sub" data-start="38.953" data-duration="7.517" data-track-index="5"><div class="sub-inner">所以解药,才会长成同一个形状:把过去白送的护栏,在开工之前,<span class="sub-k">亲手写成一份文档</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="46.619" data-duration="3.751" data-track-index="5"><div class="sub-inner">架构,写进 <span class="sub-k">CLAUDE.md</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="50.37" data-duration="3.517" data-track-index="5"><div class="sub-inner">范围,写进 <span class="sub-k">scope 文档</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="53.887" data-duration="3.283" data-track-index="5"><div class="sub-inner">标准,写进上线前的<span class="sub-k">测量框架</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="57.17" data-duration="3.985" data-track-index="5"><div class="sub-inner">安全审查,放在<span class="sub-k">任何用户碰到它之前</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="61.155" data-duration="2.814" data-track-index="5"><div class="sub-inner">四件事,其实是<span class="sub-k">一个动作</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:18, d:.4, ease:'expo.out'});
+    D2.underline(tl, R+'.uline', 10.0);
+    D2.enter(tl, R+'.hk', 14.0, {y:10, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.la', 21.0, {y:14, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.la-tag', 31.0, {y:8, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.lb', 35.0, {y:14, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.rh', 39.0, {y:-10, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 46.6, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 50.4, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 53.9, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r4', 57.2, {x:-22, d:.34, ease:'power4.out'});
+    D2.enter(tl, R+'.closing', 61.2, {y:18, d:.4, ease:'power3.out'});
+    D2.sweep(tl, R, '.hl', 62.0);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.451],['#sub-3',13.967],['#sub-4',20.987],['#sub-5',30.936],['#sub-6',35.099],['#sub-7',38.953],['#sub-8',46.619],['#sub-9',50.37],['#sub-10',53.887],['#sub-11',57.17],['#sub-12',61.155]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 64.1, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

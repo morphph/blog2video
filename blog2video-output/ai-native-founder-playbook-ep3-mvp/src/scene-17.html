@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有 —— */
+[data-composition-id='s17'] .en{font-family:'JetBrains Mono',monospace;font-weight:700}
+[data-composition-id='s17'] .neq{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 18px}
+[data-composition-id='s17'] .strike{color:#8a8a85;text-decoration:line-through;text-decoration-color:rgba(138,138,133,.55)}
+[data-composition-id='s17'] .bk-pre{font-weight:600;font-size:36px;color:#8a8a85}
+[data-composition-id='s17'] .bk-hero{margin-top:14px;font-weight:900;font-size:64px;line-height:1.2}
+[data-composition-id='s17'] .metaphor{margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s17'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="16.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[17/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// PIVOT · <span class="acc">转向 / 推倒重来</span></div>
+      <div class="h1" style="margin-top:24px"><span class="en">pivot</span><span class="neq">≠</span><span class="strike">认输</span></div>
+
+      <div class="bracket" style="margin-top:40px;width:100%">
+        <div class="bk-pre">它是一次</div>
+        <div class="bk-hero"><span class="hl"><span class="bar"></span><span class="tx">及时止损的胜利</span></span></div>
+        <div class="metaphor">烧掉一切之前 <span class="ar">→</span> 发现该换条路</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.004" data-duration="5.571" data-track-index="5"><div class="sub-inner">所以 pivot——转向、推倒重来——它<span class="sub-k">不是认输</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.575" data-duration="2.674" data-track-index="5"><div class="sub-inner">它是一次<span class="sub-k">及时止损的胜利</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.249" data-duration="8.246" data-track-index="5"><div class="sub-inner">能在烧掉一切之前，发现自己该换条路，这件事本身，就是这套打法，<span class="sub-k">在替你工作</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 5.6, {y:20, d:.4, ease:'power3.out'});
+    D2.sweep(tl, R, '.hl', 6.2);
+    D2.enter(tl, R+'.metaphor', 8.3, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.004],['#sub-2',5.575],['#sub-3',8.249]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 16.633, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

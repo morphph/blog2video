@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-16 特有 —— */
+[data-composition-id='s16'] .setup{font-weight:600;font-size:42px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s16'] .setup .em{color:#edebe6;font-weight:700}
+[data-composition-id='s16'] .neg{margin-top:30px;font-weight:600;font-size:46px;line-height:1.3;color:#edebe6}
+[data-composition-id='s16'] .neg .strike{color:#8a8a85;text-decoration:line-through;text-decoration-color:#8a8a85;text-decoration-thickness:3px}
+[data-composition-id='s16'] .hero{font-size:78px;line-height:1.12;margin-top:16px}
+[data-composition-id='s16'] .hero .hl{padding:6px 16px}
+[data-composition-id='s16'] .bx{width:100%;margin-top:44px}
+[data-composition-id='s16'] .bxk{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em;margin-bottom:16px}
+[data-composition-id='s16'] .bxt{font-weight:600;font-size:40px;line-height:1.42;color:#edebe6}
+[data-composition-id='s16'] .bxt .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s16" data-start="0" data-duration="27.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[16/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 最后 · <span class="acc">一种情况</span></div>
+
+      <div class="setup" style="margin-top:24px">功课全做了，还是怎么都<span class="em">摸不到 PMF</span></div>
+
+      <div class="neg">结果没印证方向 —— 这不是 <span class="strike">失败</span></div>
+      <div class="h1 hero"><span class="hl"><span class="bar"></span><span class="tx">系统在正常工作</span></span></div>
+
+      <div class="status st" style="margin-top:26px"><span class="dot"></span>BY DESIGN</div>
+
+      <div class="bracket bx">
+        <div class="bxk">// MVP 阶段的设计意图</div>
+        <div class="bxt">在你<span class="code">过度投入错误答案</span>之前，把信息<span class="em">提前暴露</span>给你</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="1.746" data-track-index="5"><div class="sub-inner">最后说<span class="sub-k">一种情况</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.754" data-duration="6.548" data-track-index="5"><div class="sub-inner">万一你把这些功课全做了，却还是怎么都摸不到 <span class="sub-k">PMF</span>，怎么办？</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.468" data-duration="8.689" data-track-index="5"><div class="sub-inner">我想把一句话讲清楚：你的结果，没能印证你最初的方向——这不是失败，这是系统，<span class="sub-k">在正常工作</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.324" data-duration="9.919" data-track-index="5"><div class="sub-inner">MVP 这个阶段，被设计出来，恰恰就是为了在你"过度投入到一个错误答案"之前，把这个信息，<span class="sub-k">提前暴露给你</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s16'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.setup', 2.0, {y:18, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.neg', 8.6, {x:-20, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.hero', 9.8, {y:20, d:.44, ease:'expo.out'});
+    D2.sweep(tl, R, '.hero .hl', 13.5);
+    D2.enter(tl, R+'.st', 15.0, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.bx', 17.5, {y:18, d:.42, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',1.754],['#sub-3',8.468],['#sub-4',17.324]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 27.4, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s16'] = tl;
+  })();
+  </script>
+</body>
+</html>

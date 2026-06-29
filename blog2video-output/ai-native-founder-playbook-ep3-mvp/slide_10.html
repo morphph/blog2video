@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.title{font-size:60px;font-weight:800;line-height:1.24}
+.title .hl{color:#F59E0B}
+.lead{font-size:32px;color:#B0B0CC;margin-top:20px;line-height:1.4}
+.lead .em{color:#F59E0B;font-weight:700}
+.guard{width:100%;margin-top:40px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);border-left:6px solid #10B981;border-radius:14px;padding:30px 30px;text-align:left}
+.guard .l{font-size:30px;font-weight:800;color:#10B981;margin-bottom:18px}
+.guard .l .code{font-family:'SF Mono',ui-monospace,Menlo,monospace;font-size:30px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.4);border-radius:8px;padding:2px 12px}
+.guard .row{display:flex;gap:16px;align-items:baseline;font-size:34px;font-weight:700;line-height:1.4}
+.guard .row+.row{margin-top:14px}
+.guard .row .q{flex-shrink:0;color:#10B981;font-weight:800;width:42px}
+.move{width:100%;margin-top:28px;background:#1A1A2E;border:1px solid rgba(245,158,11,0.35);border-left:6px solid #F59E0B;border-radius:14px;padding:28px 30px;text-align:left}
+.move .l{font-size:26px;font-weight:800;color:#F59E0B;margin-bottom:14px}
+.move .b{font-size:34px;font-weight:700;line-height:1.4}
+.move .b .from{color:#6B7280}
+.move .b .to{color:#F59E0B;font-weight:800}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">第三个坑：零摩擦的范围蔓延</div>
+  <div class="title">每次加功能，单独看<br>都<span class="hl">站得住脚</span></div>
+  <div class="lead">用 AI 加一个功能，<span class="em">就一下午的事</span></div>
+  <div class="guard">
+    <div class="l">护栏 · 开工前写一份 <span class="code">scope 文档</span></div>
+    <div class="row"><span class="q">①</span><span>这个产品<b>做什么</b></span></div>
+    <div class="row"><span class="q">②</span><span><b>刻意不做</b>什么</span></div>
+    <div class="row"><span class="q">③</span><span>什么真实用户证据，<b>才配加一个功能</b></span></div>
+  </div>
+  <div class="move">
+    <div class="l">决策点挪了位置</div>
+    <div class="b"><span class="from">从「这个该不该做」</span><br>→ <span class="to">「有没有用户说，没它就拿不到价值」</span></div>
+  </div>
+</div>
+</body>
+</html>

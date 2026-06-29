@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.title{font-size:58px;font-weight:800;line-height:1.26}
+.title .hl{color:#EF4444}
+.rows{display:flex;flex-direction:column;gap:20px;width:100%;margin-top:50px}
+.row{background:#1A1A2E;border-radius:14px;padding:30px 30px;text-align:left}
+.row .l{font-size:30px;font-weight:800;margin-bottom:12px}
+.row .b{font-size:38px;font-weight:700;line-height:1.35}
+.row.ok{border:1px solid rgba(16,185,129,0.32);border-left:6px solid #10B981}
+.row.ok .l{color:#10B981}
+.row.bad{border:1px solid rgba(239,68,68,0.4);border-left:6px solid #EF4444}
+.row.bad .l{color:#EF4444}
+.row.bad .b .em{color:#EF4444;font-weight:800}
+.punch{margin-top:42px;font-size:40px;font-weight:800;line-height:1.4}
+.punch .em{color:#EF4444}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">第四个坑，最致命：没有反馈回路</div>
+  <div class="title">「能跑」的代码，<br>不是「<span class="hl">天生安全</span>」的代码</div>
+  <div class="rows">
+    <div class="row ok">
+      <div class="l">功能对不对</div>
+      <div class="b">要么能用、要么不能用，当场就知道</div>
+    </div>
+    <div class="row bad">
+      <div class="l">安全漏洞</div>
+      <div class="b">在被人利用之前，<span class="em">完全隐形</span></div>
+    </div>
+  </div>
+  <div class="punch">没有任何信号，提醒你<span class="em">这儿出问题了</span></div>
+</div>
+</body>
+</html>

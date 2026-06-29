@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.title{font-size:60px;font-weight:800;line-height:1.24}
+.title .hl{color:#10B981}
+.frame{width:100%;margin-top:42px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.35);border-left:6px solid #10B981;border-radius:14px;padding:30px 30px;text-align:left}
+.frame .l{font-size:28px;font-weight:800;letter-spacing:.04em;color:#10B981;margin-bottom:18px}
+.frame .items{display:flex;flex-wrap:wrap;gap:14px}
+.frame .chip{font-size:32px;font-weight:700;color:#FFFFFF;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.4);border-radius:999px;padding:12px 26px}
+.frame .chip .em{color:#10B981;font-weight:800}
+.fake{width:100%;margin-top:26px;background:#1A1A2E;border:1px solid rgba(239,68,68,0.35);border-left:6px solid #EF4444;border-radius:14px;padding:30px 30px;text-align:left}
+.fake .l{font-size:28px;font-weight:800;letter-spacing:.04em;color:#EF4444;margin-bottom:18px}
+.fake .items{display:flex;flex-direction:column;gap:14px}
+.fake .line{font-size:34px;font-weight:700;color:#B0B0CC;line-height:1.3}
+.fake .line .em{color:#EF4444;font-weight:800}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">解药：把顺序倒过来</div>
+  <div class="title">第一个用户出现前，<br>就把<span class="hl">测量框架</span>建好</div>
+  <div class="frame">
+    <div class="l">提前定死</div>
+    <div class="items">
+      <span class="chip">留存基准线</span>
+      <span class="chip">激活标准</span>
+      <span class="chip"><span class="em">第 7 天 / 第 30 天</span>目标</span>
+    </div>
+  </div>
+  <div class="fake">
+    <div class="l">提前想清「假阳性」长什么样</div>
+    <div class="items">
+      <div class="line">注册了，<span class="em">但没激活</span></div>
+      <div class="line">有收入，<span class="em">但没留存</span></div>
+      <div class="line">有热情，<span class="em">但不复用</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

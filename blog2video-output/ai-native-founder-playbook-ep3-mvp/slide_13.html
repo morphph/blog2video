@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:20px}
+.title{font-size:56px;font-weight:800;line-height:1.24}
+.title .hl{color:#EF4444}
+.root{width:100%;margin-top:28px;font-size:32px;font-weight:700;color:#B0B0CC;line-height:1.4}
+.root .em{color:#EF4444;font-weight:800}
+.list{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:36px}
+.row{display:flex;align-items:center;gap:18px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.3);border-left:4px solid #10B981;border-radius:12px;padding:22px 26px;text-align:left}
+.row .from{flex-shrink:0;font-size:32px;font-weight:800;color:#FFFFFF;width:150px}
+.row .arrow{color:#10B981;font-size:30px;font-weight:800}
+.row .to{font-size:32px;font-weight:700;color:#10B981;line-height:1.3}
+.row .to .code{font-family:'SF Mono',ui-monospace,Menlo,monospace;font-weight:800}
+.foot{width:100%;margin-top:34px;background:#1A1A2E;border:1px solid rgba(245,158,11,0.4);border-left:6px solid #F59E0B;border-radius:14px;padding:28px 30px;text-align:left;font-size:42px;font-weight:800;line-height:1.35}
+.foot .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">四个坑 = 同一个根因</div>
+  <div class="title">一个「免费存在」的<br><span class="hl">强制函数</span>，被 AI 删了</div>
+  <div class="root">架构乱 · 数据骗人 · 功能失控 · 不懂安全——<span class="em">同一个根</span></div>
+  <div class="list">
+    <div class="row"><span class="from">架构</span><span class="arrow">→</span><span class="to">写进 <span class="code">CLAUDE.md</span></span></div>
+    <div class="row"><span class="from">范围</span><span class="arrow">→</span><span class="to">写进 <span class="code">scope 文档</span></span></div>
+    <div class="row"><span class="from">标准</span><span class="arrow">→</span><span class="to">写进上线前的测量框架</span></div>
+    <div class="row"><span class="from">安全审查</span><span class="arrow">→</span><span class="to">放在任何用户碰到它之前</span></div>
+  </div>
+  <div class="foot">四件事，其实是<span class="em">一个动作</span></div>
+</div>
+</body>
+</html>

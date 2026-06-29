@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.title{font-size:60px;font-weight:800;line-height:1.24}
+.title .hl{color:#EF4444}
+.en{font-size:32px;font-weight:700;letter-spacing:.04em;color:#6B7280;margin-top:12px}
+.cards{display:flex;gap:22px;width:100%;margin-top:50px}
+.col{flex:1;background:#1A1A2E;border-radius:14px;padding:34px 26px;text-align:left}
+.col .l{font-size:32px;font-weight:800;margin-bottom:18px}
+.col .b{font-size:34px;font-weight:700;line-height:1.4}
+.col.normal{border:1px solid rgba(59,130,246,0.3);border-top:5px solid #3B82F6}
+.col.normal .l{color:#3B82F6}
+.col.normal .b{color:#B0B0CC}
+.col.ai{border:1px solid rgba(239,68,68,0.4);border-top:5px solid #EF4444}
+.col.ai .l{color:#EF4444}
+.col.ai .b .em{color:#EF4444;font-weight:800}
+.punch{margin-top:42px;font-size:38px;font-weight:800;line-height:1.4;color:#B0B0CC}
+.punch .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">第一个坑：agentic 技术债</div>
+  <div class="title">AI 自己写代码，<br>攒下的<span class="hl">债</span></div>
+  <div class="en">agentic technical debt</div>
+  <div class="cards">
+    <div class="col normal">
+      <div class="l">普通技术债</div>
+      <div class="b">慢慢累积<br>可以专门腾一段时间还掉</div>
+    </div>
+    <div class="col ai">
+      <div class="l">AI 技术债</div>
+      <div class="b"><span class="em">复利式</span>滚大<br>越拖越大，还不动</div>
+    </div>
+  </div>
+  <div class="punch">看似四件事，其实是<span class="em">同一件事</span></div>
+</div>
+</body>
+</html>

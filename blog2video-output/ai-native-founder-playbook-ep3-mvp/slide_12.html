@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:20px}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;width:100%;margin-bottom:36px}
+.step{background:#1A1A2E;border:1px solid rgba(239,68,68,0.32);border-radius:10px;padding:16px 24px;font-size:30px;font-weight:700;color:#EF4444}
+.plus{color:#6B7280;font-size:28px;font-weight:800}
+.bottom{width:100%;background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);border-left:6px solid #10B981;border-radius:14px;padding:34px 32px;text-align:left}
+.bottom .l{font-size:28px;font-weight:800;letter-spacing:.04em;color:#10B981;margin-bottom:14px}
+.bottom .b{font-size:48px;font-weight:800;line-height:1.32}
+.bottom .b .em{color:#10B981}
+.bottom .s{font-size:28px;color:#B0B0CC;margin-top:14px;line-height:1.4}
+.warn{width:100%;margin-top:28px;background:#1A1A2E;border:1px solid rgba(239,68,68,0.4);border-left:6px solid #EF4444;border-radius:14px;padding:30px 32px;text-align:left}
+.warn .b{font-size:36px;font-weight:700;line-height:1.4}
+.warn .b .em{color:#EF4444;font-weight:800}
+.warn .chip{display:inline-block;margin-top:14px;font-size:30px;font-weight:800;color:#EF4444;border:1px solid rgba(239,68,68,0.5);border-radius:999px;padding:10px 24px}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">上线给真实用户的 MVP 意味着</div>
+  <div class="flow">
+    <span class="step">真实数据</span><span class="plus">+</span>
+    <span class="step">真实暴露</span><span class="plus">+</span>
+    <span class="step">真实后果</span>
+  </div>
+  <div class="bottom">
+    <div class="l">底线就一句话</div>
+    <div class="b">任何用户碰到它之前，<br>先做一遍<span class="em">安全审查</span></div>
+    <div class="s">这是把产品放到世界上，最低限度的、负责任的门槛</div>
+  </div>
+  <div class="warn">
+    <div class="b">Claude 只是有用的<span class="em">初筛</span>，替代不了专业安全工具、更替代不了真人审查</div>
+    <span class="chip">当成「扫一遍 = 搞定」→ 上数据泄露新闻</span>
+  </div>
+</div>
+</body>
+</html>

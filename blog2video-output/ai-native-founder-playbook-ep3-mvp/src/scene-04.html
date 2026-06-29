@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .h2 .em{color:#ccff4d}
+[data-composition-id='s04'] .ttl{margin-top:16px}
+[data-composition-id='s04'] .metaphor{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s04'] .dlabel{margin-top:30px}
+[data-composition-id='s04'] .disc{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:20px}
+[data-composition-id='s04'] .dchip{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:#edebe6;background:#1c1c1e;border:1px solid #2a2a2c;padding:14px 28px}
+[data-composition-id='s04'] .darr{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d}
+[data-composition-id='s04'] .note{margin-top:18px;font-weight:600;font-size:30px;color:#8a8a85}
+[data-composition-id='s04'] .note .acc{color:#ccff4d;font-family:'JetBrains Mono',monospace;font-weight:700}
+[data-composition-id='s04'] .punch{margin-top:30px;font-size:48px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="39.467" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[04/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 最大的危险 · <span class="acc">护栏在消失</span></div>
+      <div class="h2 ttl">AI 删光<span class="em">天然瓶颈</span>，<br>速度从此<span class="em">白送</span></div>
+
+      <div class="bracket" style="margin-top:24px">
+        <div class="lead bl">但那些瓶颈，其实是<span class="em">免费的护栏</span></div>
+        <div class="metaphor mp">又贵又慢 <span class="ar">=</span> 免费替你踩的刹车</div>
+      </div>
+
+      <div class="kicker dlabel">// 又贵又慢，逼你先做对四件事</div>
+      <div class="disc">
+        <span class="dchip d1">架构</span><span class="darr ar1">›</span>
+        <span class="dchip d2">范围</span><span class="darr ar2">›</span>
+        <span class="dchip d3">测量</span><span class="darr ar3">›</span>
+        <span class="dchip d4">安全</span>
+      </div>
+      <div class="note nt"><span class="acc">免费</span> 替你装好的四道纪律</div>
+
+      <div class="h2 punch">瓶颈没了，<span class="hl"><span class="bar"></span><span class="tx">纪律也跟着没了</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.859" data-track-index="5"><div class="sub-inner">讲清楚了目标，再说这一程<span class="sub-k">最大的危险</span>在哪。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.981" data-duration="6.149" data-track-index="5"><div class="sub-inner">AI 几乎把每一个曾经卡住"代码能不能上线"的<span class="sub-k">天然瓶颈</span>，都删掉了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.13" data-duration="2.795" data-track-index="5"><div class="sub-inner">所以速度，是<span class="sub-k">白送</span>的，是必然的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.089" data-duration="9.873" data-track-index="5"><div class="sub-inner">但你想过没有——过去那些瓶颈，工程要花的钱、要花的时间、那种逼你慢下来的笨重，它们其实是<span class="sub-k">免费的护栏</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.133" data-duration="8.743" data-track-index="5"><div class="sub-inner">正因为做东西<span class="sub-k">又贵又慢</span>，你被迫先想清楚架构、先定好范围、先量后发、先审一遍安全。</div></div>
+    <div id="sub-6" class="clip sub" data-start="31.876" data-duration="3.138" data-track-index="5"><div class="sub-inner">这些纪律，是瓶颈<span class="sub-k">白送给你的</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.157" data-duration="4.161" data-track-index="5"><div class="sub-inner">现在瓶颈没了，这些白送的纪律，<span class="sub-k">也跟着一起没了</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.ttl', 4.2, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 13.2, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.mp', 16.8, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.dlabel', 23.2, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.d1', 24.2, {x:-18, ease:'power3.out'});
+    D2.enter(tl, R+'.ar1', 24.7, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.d2', 25.6, {x:-18, ease:'expo.out'});
+    D2.enter(tl, R+'.ar2', 26.1, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.d3', 27.0, {x:-18, ease:'power2.out'});
+    D2.enter(tl, R+'.ar3', 27.5, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.d4', 28.4, {x:-18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.nt', 31.9, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 35.3, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 36.1);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.981],['#sub-3',10.13],['#sub-4',13.089],['#sub-5',23.133],['#sub-6',31.876],['#sub-7',35.157]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 39.467, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

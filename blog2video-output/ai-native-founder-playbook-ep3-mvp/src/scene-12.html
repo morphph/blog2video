@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .h2 .em{color:#ccff4d}
+[data-composition-id='s12'] .bracket .ln{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s12'] .bracket .big{margin-top:14px;font-weight:900;font-size:50px;line-height:1.22;color:#edebe6}
+[data-composition-id='s12'] .bracket .big .em{color:#ccff4d}
+[data-composition-id='s12'] .bracket .sub2{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s12'] .bracket .sub2 .em{color:#ccff4d}
+[data-composition-id='s12'] .punch{width:100%;background:#1c1c1e;border:1px solid #2a2a2c;border-left:4px solid #ff6b5e;padding:26px 32px}
+[data-composition-id='s12'] .punch .pl{font-weight:900;font-size:42px;line-height:1.3;color:#edebe6}
+[data-composition-id='s12'] .punch .pl .wk{color:#ff6b5e}
+[data-composition-id='s12'] .punch .pd{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s12'] .punch .chip2{display:inline-block;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:#ff6b5e;border:1px solid rgba(255,107,94,.5);padding:8px 18px;letter-spacing:.02em}
+[data-composition-id='s12'] .punch .chip2 .ar{margin:0 8px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="37.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[12/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 护栏 04 · 上线给<span class="acc">真实用户</span></div>
+      <div class="h2" style="margin-top:18px">意味着三个<span class="em">「真」</span></div>
+
+      <div class="rows" style="margin-top:22px">
+        <div class="row t1"><span class="n">01</span><div class="rb"><div class="rt">真实的数据</div></div></div>
+        <div class="row t2"><span class="n">02</span><div class="rb"><div class="rt">真实的暴露</div></div></div>
+        <div class="row t3"><span class="n">03</span><div class="rb"><div class="rt">真实的后果</div></div></div>
+      </div>
+
+      <div class="bracket" style="margin-top:24px">
+        <div class="ln">底线就一句话</div>
+        <div class="big">用户碰到前，先做一遍<span class="em">安全审查</span></div>
+        <div class="sub2 late">// 最低限度 · <span class="em">负责任的门槛</span></div>
+      </div>
+
+      <div class="punch" style="margin-top:20px">
+        <div class="pl">Claude 只是<span class="wk">初筛</span>，不是<span class="wk">搞定</span></div>
+        <div class="pd late2">替代不了安全工具 · 替代不了真人审查</div>
+        <span class="chip2 late3">「扫完 = 搞定」<span class="ar">→</span>数据泄露新闻</span>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.957" data-track-index="5"><div class="sub-inner">而一个上线给真实用户用的 MVP，意味着真实的数据、真实的暴露、出事之后<span class="sub-k">真实的后果</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.1" data-duration="6.42" data-track-index="5"><div class="sub-inner">所以底线就一句话：在任何一个用户碰到你产品之前，先做一遍<span class="sub-k">安全审查</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.52" data-duration="5.253" data-track-index="5"><div class="sub-inner">这是你把一个产品放到世界上，最低限度的、<span class="sub-k">负责任的门槛</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.944" data-duration="3.496" data-track-index="5"><div class="sub-inner">Claude 可以帮你做一遍很有用的<span class="sub-k">初筛</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.44" data-duration="1.832" data-track-index="5"><div class="sub-inner">但记住，它只是<span class="sub-k">第一遍</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.272" data-duration="4.162" data-track-index="5"><div class="sub-inner">它替代不了专业的安全工具，更替代不了一个<span class="sub-k">真人审查</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.592" data-duration="7.574" data-track-index="5"><div class="sub-inner">那些把它当成"扫一遍就等于搞定了"的创始人，最后就是那些上了<span class="sub-k">数据泄露新闻</span>的人。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.t1', 3.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.t2', 4.6, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.t3', 6.0, {x:-22, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.bracket', 8.1, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket .sub2', 14.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 19.9, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.punch .pd', 25.3, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.punch .chip2', 29.6, {y:12, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',8.1],['#sub-3',14.52],['#sub-4',19.944],['#sub-5',23.44],['#sub-6',25.272],['#sub-7',29.592]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 37.333, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

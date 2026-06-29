@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .bkw{font-family:'MiSans',sans-serif;font-weight:900;font-size:50px;line-height:1.25;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s11'] .bkw .neq{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:46px;color:#ccff4d;margin:0 20px}
+[data-composition-id='s11'] .rt{display:flex;align-items:center}
+[data-composition-id='s11'] .status.alert{margin-top:0}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="29.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[11/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// PITFALL 04 · 第四个坑,<span class="acc">最致命</span></div>
+      <div class="h2" style="margin-top:18px">它没有<span class="em">反馈回路</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="bkw">「能跑」<span class="neq">≠</span>「天生安全」</div>
+      </div>
+
+      <div class="kicker tlh" style="margin-top:34px">// 这区别,<span class="acc">要命</span></div>
+      <div class="rows" style="margin-top:18px">
+        <div class="row r1">
+          <div class="n">●</div>
+          <div class="rb">
+            <div class="rt">功能对不对</div>
+            <div class="rd"><span class="ok">有反馈</span> · 当场就知道</div>
+          </div>
+        </div>
+        <div class="row warn r2">
+          <div class="n">●</div>
+          <div class="rb">
+            <div class="rt">安全漏洞</div>
+            <div class="rd r2d"><span class="warn">无反馈</span> · 被利用前隐形</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="status alert s-end" style="margin-top:28px"><span class="dot"></span>没有信号 · 直到被利用</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="4.033" data-track-index="5"><div class="sub-inner">第四个坑，最致命，因为它<span class="sub-k">没有反馈回路</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.184" data-duration="6.122" data-track-index="5"><div class="sub-inner">AI 写出来的代码，是"能跑"的代码，不是"<span class="sub-k">天生安全</span>"的代码。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.306" data-duration="2.567" data-track-index="5"><div class="sub-inner">这两件事的区别，是<span class="sub-k">要命</span>的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.04" data-duration="6.003" data-track-index="5"><div class="sub-inner">功能对不对，很好判断——要么能用，要么不能用，你<span class="sub-k">当场就知道</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.043" data-duration="1.401" data-track-index="5"><div class="sub-inner">可<span class="sub-k">安全漏洞</span>呢？</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.444" data-duration="3.202" data-track-index="5"><div class="sub-inner">它在被人利用之前，是<span class="sub-k">完全隐形</span>的。</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.646" data-duration="5.803" data-track-index="5"><div class="sub-inner">没有任何信号，会提醒一个第一次创业的人：你这儿，<span class="sub-k">出问题了</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 4.6, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.tlh', 10.5, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 13.2, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 19.2, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r2d', 20.6, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s-end', 23.8, {y:12, d:.32, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',4.184],['#sub-3',10.306],['#sub-4',13.04],['#sub-5',19.043],['#sub-6',20.444],['#sub-7',23.646]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 29.6, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

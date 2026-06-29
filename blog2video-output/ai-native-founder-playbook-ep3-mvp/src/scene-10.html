@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .h2{margin-top:18px}
+[data-composition-id='s10'] .b-core{margin-top:28px}
+[data-composition-id='s10'] .b-core .lead{font-size:38px}
+[data-composition-id='s10'] .bnote{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s10'] .bnote .warnk{color:#ff6b5e;font-weight:700}
+[data-composition-id='s10'] .bmeta{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s10'] .bmeta .ar{color:#ccff4d;margin:0 8px;font-weight:700}
+[data-composition-id='s10'] .s-drift{margin-top:26px}
+[data-composition-id='s10'] .k-guard{margin-top:30px}
+[data-composition-id='s10'] .scope-line{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#edebe6;line-height:1.4}
+[data-composition-id='s10'] .scope-line .dim{color:#8a8a85}
+[data-composition-id='s10'] .scope-line .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s10'] .shift{margin-top:16px}
+[data-composition-id='s10'] .shift .yr{font-family:'MiSans',sans-serif;width:64px;min-width:64px;font-size:34px;font-weight:900}
+[data-composition-id='s10'] .shift .wt b{color:#ccff4d;font-weight:900}
+[data-composition-id='s10'] .shift .sh-old .wt b{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="66.533" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[10/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 第三个坑 · <span class="acc">零摩擦的范围蔓延</span></div>
+      <div class="h2">毫不费力、几乎免费，<br>就<span class="em">永远想再加一个</span></div>
+
+      <div class="bracket b-core">
+        <div class="lead">每一次加功能，<span class="dim">单独看</span>，都<span class="em">站得住脚</span></div>
+        <div class="bnote">这正是范围失控、<span class="warnk">最危险</span>的地方</div>
+        <div class="bmeta">用 AI 加一个功能 <span class="ar">→</span> 就一下午 · <span class="dim">"工程时间很贵"的刹车没了</span></div>
+      </div>
+
+      <div class="status alert s-drift"><span class="dot"></span>产品蔓延出原本边界 · 势头被稀释</div>
+
+      <div class="kicker k-guard">// 护栏③ · 开工前写一份 <span class="acc">scope 文档</span></div>
+      <div class="scope-line">做什么 · <span class="dim">刻意不做什么</span> · <span class="em">什么用户证据才配加</span></div>
+
+      <div class="tl shift">
+        <div class="tl-row sh-old"><div class="yr">从</div><div class="wt">「这个功能<b>该不该做</b>」</div></div>
+        <div class="tl-row now sh-new"><div class="yr">到</div><div class="wt">有用户说「<b>没它拿不到价值</b>」<span class="badge">决策点挪位</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="3.219" data-track-index="5"><div class="sub-inner">第三个坑，叫<span class="sub-k">零摩擦的范围蔓延</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.232" data-duration="6.654" data-track-index="5"><div class="sub-inner">当做东西毫不费力、几乎免费，你永远有"<span class="sub-k">再加一个小功能</span>"的冲动。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.057" data-duration="5.898" data-track-index="5"><div class="sub-inner">这个坑最危险的地方在于：每一次加功能，单独看，<span class="sub-k">都站得住脚</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.955" data-duration="4.881" data-track-index="5"><div class="sub-inner">这个边缘情况<span class="sub-k">当然该处理</span>，用户当然会想要那个流程。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.001" data-duration="2.443" data-track-index="5"><div class="sub-inner">它们当下根本不像<span class="sub-k">范围失控</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.444" data-duration="3.758" data-track-index="5"><div class="sub-inner">因为用 AI 加一个功能，就<span class="sub-k">一下午</span>的事。</div></div>
+    <div id="sub-7" class="clip sub" data-start="27.202" data-duration="4.322" data-track-index="5"><div class="sub-inner">过去那个"<span class="sub-k">工程时间很贵</span>"的刹车，现在不存在了。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.693" data-duration="7.4" data-track-index="5"><div class="sub-inner">可你的产品，就这么一点点，<span class="sub-k">蔓延出了它原本的边界</span>，方向和势头，都被稀释掉了。</div></div>
+    <div id="sub-9" class="clip sub" data-start="39.253" data-duration="15.55" data-track-index="5"><div class="sub-inner">护栏还是同一个形状：动手之前，先写一份 <span class="sub-k">scope 文档</span>，也就是范围文档——这个产品做什么、刻意不做什么、以及什么样的真实用户证据，才配让你加一个新功能。</div></div>
+    <div id="sub-10" class="clip sub" data-start="54.949" data-duration="11.452" data-track-index="5"><div class="sub-inner">这一下，就把<span class="sub-k">决策点挪了位置</span>：从"这个该不该做"，变成"是不是有一批用户，明确说了没有它，就拿不到价值"。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 3.4, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.b-core', 10.3, {y:18, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.bnote', 16.0, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.bmeta', 23.4, {y:12, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.s-drift', 31.8, {x:-20, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.k-guard', 39.4, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.scope-line', 46.0, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.sh-old', 55.0, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.sh-new', 58.2, {x:-22, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.sh-new .badge', 60.6, {scale:.6, opacity:0, d:.3, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',3.232],['#sub-3',10.057],['#sub-4',15.955],['#sub-5',21.001],['#sub-6',23.444],['#sub-7',27.202],['#sub-8',31.693],['#sub-9',39.253],['#sub-10',54.949]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 66.533, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,1 +1,42 @@
 === d2 render: ai-native-founder-playbook-ep3-mvp · 19 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 36.033  data= 36.033  Δ=+0.000
+  scene-02  clip= 31.733  data= 31.733  Δ=+0.000
+  scene-03  clip= 19.800  data= 19.800  Δ=+0.000
+  scene-04  clip= 39.500  data= 39.467  Δ=+0.033
+  scene-05  clip= 14.900  data= 14.867  Δ=+0.033
+  scene-06  clip= 19.600  data= 19.600  Δ=+0.000
+  scene-07  clip= 68.300  data= 68.300  Δ=+0.000
+  scene-08  clip= 37.333  data= 37.333  Δ=+0.000
+  scene-09  clip= 46.233  data= 46.233  Δ=+0.000
+  scene-10  clip= 66.533  data= 66.533  Δ=+0.000
+  scene-11  clip= 29.600  data= 29.600  Δ=+0.000
+  scene-12  clip= 37.333  data= 37.333  Δ=+0.000
+  scene-13  clip= 64.100  data= 64.100  Δ=+0.000
+  scene-14  clip= 21.800  data= 21.767  Δ=+0.033
+  scene-15  clip= 50.600  data= 50.600  Δ=+0.000
+  scene-16  clip= 27.400  data= 27.400  Δ=+0.000
+  scene-17  clip= 16.633  data= 16.633  Δ=+0.000
+  scene-18  clip= 60.000  data= 59.967  Δ=+0.033
+  scene-19  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 692.433s
+=== concat → silent master ===
+[out#0/mp4 @ 0x78cc303c0] video:45952KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.180958%
+frame=20773 fps=0.0 q=-1.0 Lsize=   46035KiB time=00:11:32.43 bitrate= 544.6kbits/s speed=5.6e+03x elapsed=0:00:00.12    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=20773 fps=1970 q=-1.0 Lsize=   57699KiB time=00:11:26.44 bitrate= 688.6kbits/s speed=65.1x elapsed=0:00:10.54    
+[aac @ 0x7d3041500] Qavg: 65514.641
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=692.433333
+audio_dur=686.448000
+-rw-r--r--@ 1 yufanp  staff  59084098 29 Jun 23:18 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/video_1_cover_photo.png
+  源: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/cover_photo.html

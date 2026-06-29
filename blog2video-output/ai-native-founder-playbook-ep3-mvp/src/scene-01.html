@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+
+/* —— scene-01 cover 特有(beat 多页切换 + 大字封面)—— */
+[data-composition-id='s01'] .grid{opacity:.05}
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — Anthropic 官方手册 hook */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:29px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .a-kick .ac{color:#ccff4d}
+[data-composition-id='s01'] .a-en{margin-top:30px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;line-height:1.04;letter-spacing:-.03em;color:#edebe6}
+[data-composition-id='s01'] .a-zh{margin-top:26px;font-weight:900;font-size:84px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-arrive{margin-top:44px;display:flex;align-items:center}
+[data-composition-id='s01'] .a-arrive .t{font-weight:900;font-size:66px;color:#edebe6}
+[data-composition-id='s01'] .a-arrive .cur{display:inline-block;width:46px;height:74px;background:#ccff4d;margin-left:18px}
+
+/* beat B — MVP 阶段 */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .b-kick .ac{color:#ccff4d}
+[data-composition-id='s01'] .b-title{margin-top:22px;font-weight:900;font-size:108px;line-height:1.06;color:#edebe6}
+[data-composition-id='s01'] .b-title .em{color:#ccff4d}
+[data-composition-id='s01'] .b-en{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:36px;letter-spacing:.04em;color:#5fd3e8}
+[data-composition-id='s01'] .b-lead{margin-top:18px;font-weight:600;font-size:48px;color:#8a8a85}
+
+/* beat C — 上一集 → 这一集 */
+[data-composition-id='s01'] .c-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em;margin-bottom:40px}
+[data-composition-id='s01'] .c-kick .ac{color:#ccff4d}
+[data-composition-id='s01'] .cr1 .n{color:#8a8a85}
+
+/* beat D — 刹车全拆 headline + 瓶颈卡 */
+[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s01'] .d-led .ac{color:#ccff4d}
+[data-composition-id='s01'] .d-q{margin-top:24px;font-weight:900;font-size:64px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .d-q .hl{padding:4px 12px}
+[data-composition-id='s01'] .d-q .hl .tx{font-size:64px;font-weight:900}
+[data-composition-id='s01'] .d-cards{margin-top:44px;display:flex;flex-direction:column;gap:18px;width:100%}
+[data-composition-id='s01'] .dcard{background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 30px;font-weight:600;font-size:37px;line-height:1.32;color:#edebe6}
+[data-composition-id='s01'] .dcard .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="36.033" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[01/18]</div>
+    </div>
+
+    <!-- BEAT A: Anthropic 官方手册 hook -->
+    <div class="beat" id="beatA">
+      <div class="a-kick"><span class="ac">//</span> EP.03 / 05 · ANTHROPIC OFFICIAL PLAYBOOK</div>
+      <div class="a-en">FOUNDER'S<br>PLAYBOOK</div>
+      <div class="a-zh">AI 原生创业手册</div>
+      <div class="a-arrive"><span class="t">一个人也能创业</span><span class="cur"></span></div>
+    </div>
+
+    <!-- BEAT B: MVP 阶段 -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick"><span class="ac">//</span> 本集 · STAGE 03</div>
+      <div class="b-title"><span class="em">MVP</span> 阶段</div>
+      <div class="b-en">MINIMUM VIABLE PRODUCT</div>
+      <div class="b-lead">最小可用产品</div>
+    </div>
+
+    <!-- BEAT C: 上一集 → 这一集 -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-kick"><span class="ac">//</span> 从上一集，到这一集</div>
+      <div class="rows">
+        <div class="row cr1"><span class="n">02</span><div class="rb"><div class="rt">忍住不动手</div><div class="rd">在证据出现之前</div></div></div>
+        <div class="row now cr2"><span class="n">03</span><div class="rb"><div class="rt">该先做什么、怎么做</div><div class="rd">这一集，换个问题</div></div></div>
+      </div>
+    </div>
+
+    <!-- BEAT D: 刹车全拆 headline + 瓶颈卡 -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led"><span class="ac">//</span> 最大的坑</div>
+      <div class="d-q">AI 把创业的刹车全拆了，<br>你得<span class="hl"><span class="bar"></span><span class="tx">自己装回去</span></span></div>
+      <div class="d-cards">
+        <div class="dcard dc1">删掉「成本」「时间」两个天然瓶颈</div>
+        <div class="dcard dc2">过去，那正是<span class="em">免费替你踩的刹车</span></div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim per brief) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="10.604" data-track-index="5"><div class="sub-inner">Anthropic 刚刚发布了一份官方手册：在 2026 年，怎么用 AI 从零打造一家创业公司——哪怕你，<span class="sub-k">只有一个人</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="10.764" data-duration="5.949" data-track-index="5"><div class="sub-inner">今天，我们接着上一集，讲 <span class="sub-k">MVP 阶段</span>，最小可用产品阶段。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.884" data-duration="4.484" data-track-index="5"><div class="sub-inner">上一集的主线，是在证据出现之前，<span class="sub-k">忍住不动手</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.368" data-duration="4.077" data-track-index="5"><div class="sub-inner">这一集要换个问题——<span class="sub-k">该先做什么、怎么做</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="25.645" data-duration="10.221" data-track-index="5"><div class="sub-inner">而最大的坑是：AI 把做东西的成本和时间这两个天然瓶颈删掉了，可那两个瓶颈，过去正是<span class="sub-k">免费替你踩的刹车</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~10.6) */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.55);
+    tl.from(R+'.a-en',{x:-40,opacity:0,duration:.42,ease:'expo.out'},0.9);
+    tl.from(R+'.a-zh',{y:22,opacity:0,duration:.35,ease:'power3.out'},2.0);
+    tl.from(R+'.a-arrive .t',{opacity:0,duration:.2,ease:'power1.in'},6.6);
+    tl.from(R+'.a-arrive .cur',{scale:2.2,opacity:0,duration:.3,ease:'expo.out'},6.62);
+    tl.to(R+'.a-arrive .cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:5,yoyo:true},7.5);
+    tl.to(R+'#beatA',{scale:1.03,duration:10.6,ease:'none'},0);
+
+    /* A -> B swap @ ~10.66 */
+    tl.to(R+'#beatA',{opacity:0,duration:.42,ease:'power2.inOut'},10.4);
+    tl.set(R+'#beatA',{opacity:0},10.82);   /* hard kill */
+    tl.set(R+'#beatB',{opacity:1},10.66);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},10.9);
+    tl.from(R+'.b-title',{y:24,opacity:0,duration:.4,ease:'expo.out'},11.2);
+    tl.from(R+'.b-en',{opacity:0,duration:.3,ease:'power1.out'},12.6);
+    tl.from(R+'.b-lead',{y:16,opacity:0,duration:.32,ease:'power3.out'},13.4);
+    tl.to(R+'#beatB',{scale:1.03,duration:6,ease:'none'},10.66);
+
+    /* B -> C swap @ ~16.76 */
+    tl.to(R+'#beatB',{opacity:0,duration:.42,ease:'power2.inOut'},16.5);
+    tl.set(R+'#beatB',{opacity:0},16.92);   /* hard kill */
+    tl.set(R+'#beatC',{opacity:1},16.76);
+    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},16.95);
+    tl.from(R+'.cr1',{x:-26,opacity:0,duration:.34,ease:'power3.out'},17.2);
+    tl.from(R+'.cr2',{x:-26,opacity:0,duration:.34,ease:'expo.out'},21.5);
+    tl.to(R+'#beatC',{scale:1.03,duration:8.7,ease:'none'},16.76);
+
+    /* C -> D swap @ ~25.5 */
+    tl.to(R+'#beatC',{opacity:0,duration:.42,ease:'power2.inOut'},25.25);
+    tl.set(R+'#beatC',{opacity:0},25.67);   /* hard kill */
+    tl.set(R+'#beatD',{opacity:1},25.5);
+    tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},25.7);
+    tl.from(R+'.d-q',{y:24,opacity:0,duration:.42,ease:'power3.out'},25.95);
+    /* hero — 自己装回去 acid sweep @ 27.8 */
+    tl.to(R+'.d-q .hl .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},27.8);
+    tl.to(R+'.d-q .hl .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},27.96);
+    tl.from(R+'.dc1',{y:18,opacity:0,duration:.34,ease:'power3.out'},29.6);
+    tl.from(R+'.dc2',{y:18,opacity:0,duration:.34,ease:'expo.out'},32.6);
+    tl.to(R+'#beatD',{scale:1.03,duration:10.5,ease:'none'},25.5);
+
+    /* subtitle fade-ins (local time) */
+    [['#sub-1',0],['#sub-2',10.764],['#sub-3',16.884],['#sub-4',21.368],['#sub-5',25.645]]
+      .forEach(function(s){ tl.from(R+s[0],{opacity:0,duration:.2,ease:'power1.out'},s[1]); });
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

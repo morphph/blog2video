@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s02'] .metaphor .ar{color:#ccff4d;margin:0 12px}
+[data-composition-id='s02'] .metaphor .em{color:#ccff4d}
+[data-composition-id='s02'] .wt .em{color:#ccff4d}
+[data-composition-id='s02'] .wt .dim{color:#8a8a85}
+[data-composition-id='s02'] .sig{margin-top:24px;display:flex;align-items:center;flex-wrap:wrap;gap:14px}
+[data-composition-id='s02'] .sig .sl{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em;margin-right:4px}
+[data-composition-id='s02'] .sig .tag{margin-left:0;vertical-align:0;font-size:24px;padding:5px 16px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="31.733" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[02/18]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// COMMON MISTAKE · <span class="acc">最常见的误解</span></div>
+      <div class="h2" style="margin-top:18px"><span class="t1">MVP 不是「埋头施工」</span><br><span class="t2">它仍然在<span class="em">收证据</span></span></div>
+
+      <div class="bracket" style="margin-top:28px">
+        <div class="lead">仍是收证据,只是把<span class="dim">证据的对象</span>,从「问题」<span class="em">换成「解法」</span></div>
+        <div class="metaphor">「问题」的证据 <span class="ar">→</span> <span class="em">「解法」的证据</span></div>
+      </div>
+
+      <div class="tl" style="margin-top:30px">
+        <div class="tl-row r0"><div class="yr">EP2</div><div class="wt">收「问题」的证据 · <span class="dim">是真的吗</span></div></div>
+        <div class="tl-row r1 now"><div class="yr">EP3</div><div class="wt">收<span class="em">「解法」</span>的证据<span class="badge">你在这</span></div></div>
+      </div>
+
+      <div class="sig">
+        <span class="sl">// 解法的证据 =</span>
+        <span class="tag">用它</span>
+        <span class="tag">回来用</span>
+        <span class="tag">付钱</span>
+        <span class="tag">推荐</span>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="2.029" data-track-index="5"><div class="sub-inner">先纠正一个最常见的<span class="sub-k">误解</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.032" data-duration="4.396" data-track-index="5"><div class="sub-inner">很多人把 MVP 阶段，当成一个"<span class="sub-k">埋头施工</span>"的阶段。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.591" data-duration="1.076" data-track-index="5"><div class="sub-inner">但它不是。</div></div>
+    <div id="sub-4" class="clip sub" data-start="7.667" data-duration="1.935" data-track-index="5"><div class="sub-inner">它仍然是在<span class="sub-k">收证据</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="9.759" data-duration="7.446" data-track-index="5"><div class="sub-inner">只不过，上一集你收的，是关于"<span class="sub-k">问题</span>"的证据——这个问题，是真的吗。</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.355" data-duration="14.227" data-track-index="5"><div class="sub-inner">这一集你要收的，是关于"<span class="sub-k">解法</span>"的证据——你做出来的这个东西，有没有一群真实的人，愿意用它、愿意回来再用、愿意付钱，甚至愿意推荐给别人。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.t1', 2.2, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.t2', 7.0, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket', 8.8, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.metaphor', 10.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r0', 11.6, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 17.4, {x:-22, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.badge', 18.7, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.sl', 21.8, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.sig .tag', 22.1, {y:14, step:.2, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',2.032],['#sub-3',6.591],['#sub-4',7.667],['#sub-5',9.759],['#sub-6',17.355]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 31.733, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:380px;left:50%;transform:translateX(-50%);width:740px;height:740px;background:radial-gradient(circle,rgba(16,185,129,0.14) 0%,rgba(16,185,129,0) 70%);pointer-events:none}
+.kick{position:relative;font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:24px}
+.title{position:relative;font-size:62px;font-weight:800;line-height:1.24}
+.title .hl{color:#10B981}
+.list{position:relative;display:flex;flex-direction:column;gap:18px;width:100%;margin-top:50px}
+.row{display:flex;align-items:center;gap:24px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.3);border-left:4px solid #10B981;border-radius:12px;padding:26px 30px;text-align:left}
+.row .lab{flex-shrink:0;font-size:38px;font-weight:800;color:#10B981;width:120px}
+.row .t{font-size:36px;font-weight:700;line-height:1.35;color:#FFFFFF}
+.punch{position:relative;margin-top:46px;font-size:42px;font-weight:800;line-height:1.4}
+.punch .strike{color:#6B7280;text-decoration:line-through;text-decoration-color:rgba(107,114,128,0.6)}
+.punch .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="kick">这一程什么时候算结束？</div>
+  <div class="title">不是「感觉做完了」，<br>是拿到三个<span class="hl">真实信号</span></div>
+  <div class="list">
+    <div class="row"><span class="lab">留存</span><span class="t">有人一次次回来用</span></div>
+    <div class="row"><span class="lab">收入</span><span class="t">有人愿意掏钱</span></div>
+    <div class="row"><span class="lab">推荐</span><span class="t">有人主动安利给别人</span></div>
+  </div>
+  <div class="punch">产品做得<span class="strike">多完整</span>，<span class="em">根本不算数</span></div>
+</div>
+</body>
+</html>

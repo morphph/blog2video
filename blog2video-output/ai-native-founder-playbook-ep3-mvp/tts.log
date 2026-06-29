@@ -1,0 +1,7 @@
+
+> blog2video-remotion@1.0.0 tts
+> node scripts/tts.mjs /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/video_1_script.md /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/video_1_audio.mp3
+
+Reading script: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/video_1_script.md
+Extracted 3541 characters for TTS (18 slides mapped)
+Calling MiniMax TTS API...

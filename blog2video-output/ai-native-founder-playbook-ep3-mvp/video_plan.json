@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Founder's Playbook: Building an AI-Native Startup (Chapter 4 — MVP Stage)",
+    "title_zh": "AI 把创业的刹车全拆了，你得自己装回去",
+    "word_count": 2877,
+    "slug": "ai-native-founder-playbook-ep3-mvp"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "EP3 覆盖原书 Ch4 MVP Stage，是一条连贯的认知/纪律论证（MVP 仍是收证据 → AI 删掉的瓶颈本是免费护栏 → 四个失败模式同一根因 → 亲手把护栏写回文档 → PMF 试金石 → pivot 是系统正常工作），默认不拆。系列分集已定，本集单条成片。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI 把创业的刹车全拆了，你得自己装回去"
+      }
+    ]
+  }
+}

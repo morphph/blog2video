@@ -1,0 +1,34 @@
+{
+  "scene": 6,
+  "id": "s06",
+  "type": "comparison_cards",
+  "dataDuration": 19.6,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_6.html",
+  "topbarIndex": "[06/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.012,
+      "localDuration": 4.544,
+      "text": "接下来这四个坑，看起来是四件事，其实是同一件事。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 4.692,
+      "localDuration": 5.531,
+      "text": "第一个坑，叫 agentic 技术债，AI 自己写代码攒下的债。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.38,
+      "localDuration": 5.234,
+      "text": "普通的技术债，是慢慢累积的，你可以专门腾出一段时间把它还掉。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 15.614,
+      "localDuration": 3.838,
+      "text": "但 AI 技术债不一样——它是复利式滚大的。"
+    }
+  ]
+}

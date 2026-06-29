@@ -1,0 +1,70 @@
+{
+ "scene": 18,
+ "id": "s18",
+ "type": "summary",
+ "dataDuration": 59.967,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_18.html",
+ "topbarIndex": "[18/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.003,
+   "localDuration": 2.756,
+   "text": "把这一整程，收拢成一句话。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.919,
+   "localDuration": 4.811,
+   "text": "AI 删掉的那些瓶颈，过去正是免费替你踩的刹车。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.73,
+   "localDuration": 6.815,
+   "text": "现在刹车没了，速度变得免费，于是判断力，成了创业里唯一还稀缺的东西。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.691,
+   "localDuration": 6.634,
+   "text": "那些白送的纪律，现在得靠你在动手之前，一条一条，亲手写回到文档里。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.495,
+   "localDuration": 11.324,
+   "text": "而贯穿这一整集的，其实就是三个\"不等于\"：能跑，不等于安全；火爆，不等于 PMF；做得出，不等于该做。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 32.979,
+   "localDuration": 10.395,
+   "text": "走到 MVP 阶段的尽头，你手里攥着的，不再是一个能跑的原型，而是一摞证据——有人回来用、有人付钱、有人推荐。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 43.527,
+   "localDuration": 5.996,
+   "text": "下一集，我们就接着往下走，进入发布阶段，Launch Stage。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 49.523,
+   "localDuration": 4.179,
+   "text": "把一个被验证过的产品，正式推到更大的世界面前。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 53.859,
+   "localDuration": 3.779,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 57.638,
+   "localDuration": 1.322,
+   "text": "我们下期再见。"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+  "scene": 10,
+  "id": "s10",
+  "type": "principle",
+  "dataDuration": 66.533,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_10.html",
+  "topbarIndex": "[10/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.013,
+      "localDuration": 3.219,
+      "text": "第三个坑，叫零摩擦的范围蔓延。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.232,
+      "localDuration": 6.654,
+      "text": "当做东西毫不费力、几乎免费，你永远有\"再加一个小功能\"的冲动。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.057,
+      "localDuration": 5.898,
+      "text": "这个坑最危险的地方在于：每一次加功能，单独看，都站得住脚。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 15.955,
+      "localDuration": 4.881,
+      "text": "这个边缘情况当然该处理，用户当然会想要那个流程。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 21.001,
+      "localDuration": 2.443,
+      "text": "它们当下根本不像范围失控。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 23.444,
+      "localDuration": 3.758,
+      "text": "因为用 AI 加一个功能，就一下午的事。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 27.202,
+      "localDuration": 4.322,
+      "text": "过去那个\"工程时间很贵\"的刹车，现在不存在了。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 31.693,
+      "localDuration": 7.4,
+      "text": "可你的产品，就这么一点点，蔓延出了它原本的边界，方向和势头，都被稀释掉了。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 39.253,
+      "localDuration": 15.55,
+      "text": "护栏还是同一个形状：动手之前，先写一份 scope 文档，也就是范围文档——这个产品做什么、刻意不做什么、以及什么样的真实用户证据，才配让你加一个新功能。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 54.949,
+      "localDuration": 11.452,
+      "text": "这一下，就把决策点挪了位置：从\"这个该不该做\"，变成\"是不是有一批用户，明确说了没有它，就拿不到价值\"。"
+    }
+  ]
+}

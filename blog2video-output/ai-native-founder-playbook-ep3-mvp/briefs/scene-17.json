@@ -1,0 +1,28 @@
+{
+  "scene": 17,
+  "id": "s17",
+  "type": "principle",
+  "dataDuration": 16.633,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_17.html",
+  "topbarIndex": "[17/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.004,
+      "localDuration": 5.571,
+      "text": "所以 pivot——转向、推倒重来——它不是认输。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 5.575,
+      "localDuration": 2.674,
+      "text": "它是一次及时止损的胜利。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 8.249,
+      "localDuration": 8.246,
+      "text": "能在烧掉一切之前，发现自己该换条路，这件事本身，就是这套打法，在替你工作。"
+    }
+  ]
+}

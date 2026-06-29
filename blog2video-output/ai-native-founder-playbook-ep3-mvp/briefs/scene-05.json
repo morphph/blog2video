@@ -1,0 +1,22 @@
+{
+  "scene": 5,
+  "id": "s05",
+  "type": "quote",
+  "dataDuration": 14.867,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_5.html",
+  "topbarIndex": "[05/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.011,
+      "localDuration": 6.56,
+      "text": "所以这一程的真相是：速度从此免费，唯一还稀缺的，是判断力。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 6.571,
+      "localDuration": 8.143,
+      "text": "那些过去免费得到的护栏，现在你得在动手之前，一条一条，亲手写回到文档里。"
+    }
+  ]
+}

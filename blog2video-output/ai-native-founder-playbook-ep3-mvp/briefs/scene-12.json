@@ -1,0 +1,52 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 37.333,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_12.html",
+ "topbarIndex": "[12/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 7.957,
+   "text": "而一个上线给真实用户用的 MVP，意味着真实的数据、真实的暴露、出事之后真实的后果。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.1,
+   "localDuration": 6.42,
+   "text": "所以底线就一句话：在任何一个用户碰到你产品之前，先做一遍安全审查。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.52,
+   "localDuration": 5.253,
+   "text": "这是你把一个产品放到世界上，最低限度的、负责任的门槛。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.944,
+   "localDuration": 3.496,
+   "text": "Claude 可以帮你做一遍很有用的初筛。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.44,
+   "localDuration": 1.832,
+   "text": "但记住，它只是第一遍。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.272,
+   "localDuration": 4.162,
+   "text": "它替代不了专业的安全工具，更替代不了一个真人审查。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.592,
+   "localDuration": 7.574,
+   "text": "那些把它当成\"扫一遍就等于搞定了\"的创始人，最后就是那些上了数据泄露新闻的人。"
+  }
+ ]
+}

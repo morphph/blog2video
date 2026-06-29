@@ -1,0 +1,82 @@
+{
+  "scene": 13,
+  "id": "s13",
+  "type": "checklist",
+  "dataDuration": 64.1,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_13.html",
+  "topbarIndex": "[13/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 3.452,
+      "text": "讲完这四个，我要把它们拢到一起。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.451,
+      "localDuration": 10.357,
+      "text": "因为它们看起来是四件不相干的事——架构乱、数据骗人、功能失控、不懂安全——可它们，是同一个根因。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 13.967,
+      "localDuration": 6.854,
+      "text": "那个根因是：一个过去\"免费存在\"的强制函数，被 AI 删掉了。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 20.987,
+      "localDuration": 9.949,
+      "text": "工程的成本、时间的成本，过去会自动逼着你做正确的事——先想架构、先定范围、先量后发、先审安全。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 30.936,
+      "localDuration": 4.022,
+      "text": "这些纪律，你过去一分钱不花，就拥有了。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 35.099,
+      "localDuration": 3.854,
+      "text": "现在瓶颈没了，这四道护栏，也一起消失了。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 38.953,
+      "localDuration": 7.517,
+      "text": "所以解药，才会长成同一个形状：把过去白送的护栏，在开工之前，亲手写成一份文档。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 46.619,
+      "localDuration": 3.751,
+      "text": "架构，写进 CLAUDE.md。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 50.37,
+      "localDuration": 3.517,
+      "text": "范围，写进 scope 文档。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 53.887,
+      "localDuration": 3.283,
+      "text": "标准，写进上线前的测量框架。"
+    },
+    {
+      "id": "sub-11",
+      "localStart": 57.17,
+      "localDuration": 3.985,
+      "text": "安全审查，放在任何用户碰到它之前。"
+    },
+    {
+      "id": "sub-12",
+      "localStart": 61.155,
+      "localDuration": 2.814,
+      "text": "四件事，其实是一个动作。"
+    }
+  ]
+}

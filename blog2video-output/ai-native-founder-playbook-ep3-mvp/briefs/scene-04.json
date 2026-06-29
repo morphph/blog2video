@@ -1,0 +1,52 @@
+{
+  "scene": 4,
+  "id": "s04",
+  "type": "principle",
+  "dataDuration": 39.467,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_4.html",
+  "topbarIndex": "[04/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 3.859,
+      "text": "讲清楚了目标，再说这一程最大的危险在哪。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.981,
+      "localDuration": 6.149,
+      "text": "AI 几乎把每一个曾经卡住\"代码能不能上线\"的天然瓶颈，都删掉了。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.13,
+      "localDuration": 2.795,
+      "text": "所以速度，是白送的，是必然的。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 13.089,
+      "localDuration": 9.873,
+      "text": "但你想过没有——过去那些瓶颈，工程要花的钱、要花的时间、那种逼你慢下来的笨重，它们其实是免费的护栏。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 23.133,
+      "localDuration": 8.743,
+      "text": "正因为做东西又贵又慢，你被迫先想清楚架构、先定好范围、先量后发、先审一遍安全。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 31.876,
+      "localDuration": 3.138,
+      "text": "这些纪律，是瓶颈白送给你的。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 35.157,
+      "localDuration": 4.161,
+      "text": "现在瓶颈没了，这些白送的纪律，也跟着一起没了。"
+    }
+  ]
+}

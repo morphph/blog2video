@@ -1,0 +1,52 @@
+{
+  "scene": 11,
+  "id": "s11",
+  "type": "principle",
+  "dataDuration": 29.6,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_11.html",
+  "topbarIndex": "[11/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.008,
+      "localDuration": 4.033,
+      "text": "第四个坑，最致命，因为它没有反馈回路。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 4.184,
+      "localDuration": 6.122,
+      "text": "AI 写出来的代码，是\"能跑\"的代码，不是\"天生安全\"的代码。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.306,
+      "localDuration": 2.567,
+      "text": "这两件事的区别，是要命的。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 13.04,
+      "localDuration": 6.003,
+      "text": "功能对不对，很好判断——要么能用，要么不能用，你当场就知道。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.043,
+      "localDuration": 1.401,
+      "text": "可安全漏洞呢？"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 20.444,
+      "localDuration": 3.202,
+      "text": "它在被人利用之前，是完全隐形的。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 23.646,
+      "localDuration": 5.803,
+      "text": "没有任何信号，会提醒一个第一次创业的人：你这儿，出问题了。"
+    }
+  ]
+}

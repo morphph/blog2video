@@ -1,0 +1,40 @@
+{
+  "scene": 14,
+  "id": "s14",
+  "type": "principle",
+  "dataDuration": 21.767,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_14.html",
+  "topbarIndex": "[14/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.015,
+      "localDuration": 2.712,
+      "text": "护栏装好了，产品也在迭代了。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.727,
+      "localDuration": 3.875,
+      "text": "那你怎么判断，自己真的拿到 PMF 了？"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 6.747,
+      "localDuration": 7.072,
+      "text": "先说一个让人安心、又让人清醒的事实：没有任何单独的一个数据点，能确认 PMF。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 13.819,
+      "localDuration": 5.622,
+      "text": "它是一个要跨好几个迭代周期、反复成立的模式，你才能真的下结论。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.599,
+      "localDuration": 1.99,
+      "text": "但有两个挺好用的试金石。"
+    }
+  ]
+}

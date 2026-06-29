@@ -1,0 +1,40 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 36.033,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_1.html",
+ "topbarIndex": "[01/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 10.604,
+   "text": "Anthropic 刚刚发布了一份官方手册：在 2026 年，怎么用 AI 从零打造一家创业公司——哪怕你，只有一个人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 10.764,
+   "localDuration": 5.949,
+   "text": "今天，我们接着上一集，讲 MVP 阶段，最小可用产品阶段。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 16.884,
+   "localDuration": 4.484,
+   "text": "上一集的主线，是在证据出现之前，忍住不动手。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.368,
+   "localDuration": 4.077,
+   "text": "这一集要换个问题——该先做什么、怎么做。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 25.645,
+   "localDuration": 10.221,
+   "text": "而最大的坑是：AI 把做东西的成本和时间这两个天然瓶颈删掉了，可那两个瓶颈，过去正是免费替你踩的刹车。"
+  }
+ ]
+}

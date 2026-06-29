@@ -1,0 +1,88 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 68.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_7.html",
+ "topbarIndex": "[07/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 0.739,
+   "text": "为什么？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 0.735,
+   "localDuration": 10.903,
+   "text": "如果你没把规格和架构约束，写在 AI 读得到的地方，那它每开一个新 session，都要从零重新推导那些最底层的决定。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.638,
+   "localDuration": 3.142,
+   "text": "而每一次推导，都会悄悄飘移一点点。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.936,
+   "localDuration": 4.633,
+   "text": "最后你得到的，是一个没有连贯心智模型的代码库。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.569,
+   "localDuration": 5.036,
+   "text": "注意，坏的不是哪一块零件——每一块单独看都没问题。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.605,
+   "localDuration": 7.251,
+   "text": "坏的是，这些零件从一开始，就没有一张统一的图纸，从没被设计成能拼到一起。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 32,
+   "localDuration": 2.718,
+   "text": "更阴的是，它会很晚才暴露。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.718,
+   "localDuration": 4.601,
+   "text": "平时一切都能跑，等真实用户一上量，它就塌了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 39.488,
+   "localDuration": 1.553,
+   "text": "那护栏怎么装回去？"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 41.041,
+   "localDuration": 12.256,
+   "text": "在 Claude Code 写下第一行生产代码之前，先用 Claude 把架构定下来——要遵循哪些模式、要避开哪些依赖、有意识地接受哪些取舍。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 53.497,
+   "localDuration": 4.242,
+   "text": "然后把这份东西，存成一个文件，叫 CLAUDE.md。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 57.884,
+   "localDuration": 7.657,
+   "text": "它是你项目级的、持久的\"记忆\"，Agent SDK 在这个目录里跑的时候，会自动去读它。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 65.541,
+   "localDuration": 2.611,
+   "text": "这就是你亲手写回的第一条护栏。"
+  }
+ ]
+}

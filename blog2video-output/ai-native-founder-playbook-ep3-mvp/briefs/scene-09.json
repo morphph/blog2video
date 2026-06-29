@@ -1,0 +1,46 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 46.233,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_9.html",
+ "topbarIndex": "[09/18]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.234,
+   "text": "而最容易上当的，恰恰是那些上线之后，才开始量数据的人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.221,
+   "localDuration": 6.009,
+   "text": "因为发布之后才挑指标，你会下意识地，专挑那些让自己好看的来看。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.399,
+   "localDuration": 5.969,
+   "text": "解药，是把顺序倒过来：在第一个用户出现之前，就把测量框架建好。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.368,
+   "localDuration": 7.317,
+   "text": "留存的基准线、激活的标准、上线后第七天和第三十天要达到的目标，全部提前定死。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.827,
+   "localDuration": 12.358,
+   "text": "还要提前想清楚，对你这个产品来说，\"假阳性\"长什么样：注册了但没激活、有收入但没留存、有热情但不复用。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 37.355,
+   "localDuration": 8.724,
+   "text": "数据一来，你就让 Claude 站到对立面去，挑你这组数据的刺——一个怀疑论者，会怎么喷这些数字。"
+  }
+ ]
+}

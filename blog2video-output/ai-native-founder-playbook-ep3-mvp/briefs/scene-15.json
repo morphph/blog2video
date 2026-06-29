@@ -1,0 +1,52 @@
+{
+  "scene": 15,
+  "id": "s15",
+  "type": "comparison_cards",
+  "dataDuration": 50.6,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep3-mvp/slide_15.html",
+  "topbarIndex": "[15/18]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 3.356,
+      "text": "第一个，叫 Sean Ellis 测试。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.348,
+      "localDuration": 6.376,
+      "text": "你去问那些活跃用户一个问题：\"如果以后再也不能用这个产品了，你会是什么感觉？"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 9.724,
+      "localDuration": 6.712,
+      "text": "\"如果超过百分之四十的人，回答\"会非常失望\"，这就是一个有意义的 PMF 信号。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 16.588,
+      "localDuration": 4.393,
+      "text": "第二个，叫 effort test，努力测试。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 20.981,
+      "localDuration": 12.225,
+      "text": "在 PMF 之前，留存是靠你不停地干预，硬撑着的——频繁地去联系、给激励、私下一个个跟进，靠创始人那股英雄式的劲头，把用户留住。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 33.364,
+      "localDuration": 4.416,
+      "text": "而到了 PMF 之后，产品自己，开始做这件事了。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 37.98,
+      "localDuration": 12.485,
+      "text": "当你感觉到，势头从\"你推着用户走\"，变成了\"用户在拉着产品走\"——这个用力方向的反转，是最清楚的信号之一：有真东西，发生了。"
+    }
+  ]
+}

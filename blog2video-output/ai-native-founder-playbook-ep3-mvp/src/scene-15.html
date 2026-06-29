@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .h1{font-size:60px}
+[data-composition-id='s15'] .h1 .em{color:#ccff4d}
+[data-composition-id='s15'] .cols{margin-top:34px;align-items:stretch}
+[data-composition-id='s15'] .col{padding:30px 26px}
+[data-composition-id='s15'] .col .it .ds{line-height:1.42}
+[data-composition-id='s15'] .col .it .ds .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s15'] .col .it .nm .em{color:#ccff4d;font-weight:900}
+/* 左栏 >40% 大数字 */
+[data-composition-id='s15'] .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;line-height:1;letter-spacing:-.02em;margin:22px 0 20px;font-variant-numeric:tabular-nums;display:flex;align-items:baseline}
+[data-composition-id='s15'] .big .gt{font-size:52px;margin-right:4px}
+/* 右栏 推→拉 反转 */
+[data-composition-id='s15'] .flip{margin-top:20px;display:flex;align-items:center;gap:16px;font-family:'MiSans',sans-serif;font-weight:900;font-size:46px;color:#edebe6;line-height:1.1}
+[data-composition-id='s15'] .flip .ar{font-family:'JetBrains Mono',monospace;color:#5fd3e8;font-size:42px}
+[data-composition-id='s15'] .flip .to{color:#5fd3e8}
+[data-composition-id='s15'] .foot{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="50.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[15/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 怎么判断有没有 <span class="acc">PMF</span></div>
+      <div class="h1" style="margin-top:16px">两个 <span class="em">PMF 试金石</span></div>
+
+      <div class="cols">
+        <div class="col cL">
+          <div class="ch">SEAN ELLIS TEST</div>
+          <div class="it qIt"><div class="nm">问活跃用户</div><div class="ds">「再也不能用，你会怎样？」</div></div>
+          <div class="big"><span class="gt">&gt;</span><span id="pmf40">40%</span></div>
+          <div class="it rIt"><div class="nm">回答「<span class="em">会非常失望</span>」</div><div class="ds">= 有意义的 PMF 信号</div></div>
+        </div>
+        <div class="col alt cR">
+          <div class="ch">EFFORT TEST · 努力测试</div>
+          <div class="it preIt"><div class="nm">PMF 前 · 你硬撑</div><div class="ds preDs">频繁联系 · 给激励 · 私下跟进 · 英雄式劲头</div></div>
+          <div class="it postIt"><div class="nm">PMF 后</div><div class="ds">产品自己开始做这件事</div></div>
+          <div class="flip">你推 <span class="ar">→</span> <span class="to">用户拉</span></div>
+        </div>
+      </div>
+
+      <div class="status foot"><span class="dot"></span>用力方向反转 = 最清楚的信号之一</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.356" data-track-index="5"><div class="sub-inner">第一个，叫 <span class="sub-k">Sean Ellis 测试</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.348" data-duration="6.376" data-track-index="5"><div class="sub-inner">你去问那些活跃用户一个问题："如果以后再也不能用这个产品了，你会是<span class="sub-k">什么感觉</span>？</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.724" data-duration="6.712" data-track-index="5"><div class="sub-inner">"如果<span class="sub-k">超过百分之四十</span>的人，回答"会非常失望"，这就是一个有意义的 PMF 信号。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.588" data-duration="4.393" data-track-index="5"><div class="sub-inner">第二个，叫 <span class="sub-k">effort test</span>，努力测试。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.981" data-duration="12.225" data-track-index="5"><div class="sub-inner">在 PMF 之前，留存是靠你不停地干预，硬撑着的——频繁地去联系、给激励、私下一个个跟进，靠创始人那股<span class="sub-k">英雄式的劲头</span>，把用户留住。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.364" data-duration="4.416" data-track-index="5"><div class="sub-inner">而到了 PMF 之后，<span class="sub-k">产品自己</span>，开始做这件事了。</div></div>
+    <div id="sub-7" class="clip sub" data-start="37.98" data-duration="12.485" data-track-index="5"><div class="sub-inner">当你感觉到，势头从"你推着用户走"，变成了"<span class="sub-k">用户在拉着产品走</span>"——这个用力方向的反转，是最清楚的信号之一：有真东西，发生了。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .6, {y:20, d:.42, ease:'expo.out'});
+    // 左栏:Sean Ellis 测试 —— 逐拍 build
+    D2.enter(tl, R+'.col.cL', .9, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.qIt', 3.4, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.big', 9.724, {y:16, d:.4, ease:'expo.out'});
+    D2.countUp(tl, R+'#pmf40', 9.724, 0, 40, 1.4, {suffix:'%'});
+    D2.enter(tl, R+'.rIt', 12.9, {y:14, d:.32, ease:'power2.out'});
+    // 右栏:effort test —— 反转
+    D2.enter(tl, R+'.col.cR', 16.588, {x:24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.preIt', 21.0, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.preDs', 26.0, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.postIt', 33.364, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.flip', 37.98, {y:16, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.foot', 44.0, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.348],['#sub-3',9.724],['#sub-4',16.588],['#sub-5',20.981],['#sub-6',33.364],['#sub-7',37.98]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 50.6, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

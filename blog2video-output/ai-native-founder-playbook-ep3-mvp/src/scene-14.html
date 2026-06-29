@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有 —— */
+[data-composition-id='s14'] .lead.q{margin-top:18px;font-weight:600;font-size:42px;line-height:1.4}
+[data-composition-id='s14'] .bracket .lead{font-size:42px}
+[data-composition-id='s14'] .endchip .ar{color:#ccff4d;margin:0 6px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="21.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[14/18]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// PRODUCT-MARKET FIT · <span class="acc">真的到了吗</span></div>
+      <div class="lead q">那,怎么判断自己<span class="em">真的拿到 PMF</span> 了?</div>
+
+      <div class="h2" style="margin-top:34px">没有任何<span class="em">单一数据点</span>,<br>能确认 PMF</div>
+
+      <div class="bracket" style="margin-top:36px">
+        <div class="lead">不是单点,而是跨周期<span class="em">反复成立的模式</span></div>
+      </div>
+
+      <div class="endchip" style="margin-top:36px">
+        <span class="dot"></span>
+        <span class="lab">但有两个试金石 <span class="ar">→</span> 下一幕揭晓</span>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="2.712" data-track-index="5"><div class="sub-inner">护栏装好了，产品也在<span class="sub-k">迭代</span>了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.727" data-duration="3.875" data-track-index="5"><div class="sub-inner">那你怎么判断，自己真的拿到 <span class="sub-k">PMF</span> 了？</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.747" data-duration="7.072" data-track-index="5"><div class="sub-inner">先说一个让人安心、又让人清醒的事实：<span class="sub-k">没有任何单独的一个数据点</span>，能确认 PMF。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.819" data-duration="5.622" data-track-index="5"><div class="sub-inner">它是一个要跨好几个迭代周期、<span class="sub-k">反复成立的模式</span>，你才能真的下结论。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.599" data-duration="1.99" data-track-index="5"><div class="sub-inner">但有<span class="sub-k">两个挺好用的试金石</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.lead.q', 2.9, {y:16, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.h2', 6.9, {y:20, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket', 13.95, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.endchip', 19.65, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',2.727],['#sub-3',6.747],['#sub-4',13.819],['#sub-5',19.599]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.767, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .h2{margin-top:16px}
+[data-composition-id='s06'] .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#edebe6}
+[data-composition-id='s06'] .trio{display:flex;gap:20px;width:100%;margin-top:30px}
+[data-composition-id='s06'] .acard{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 20px;text-align:center}
+[data-composition-id='s06'] .acard .ak{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:#ccff4d;letter-spacing:.02em}
+[data-composition-id='s06'] .acard .as{margin-top:10px;font-weight:500;font-size:25px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s06'] .concl{margin-top:24px}
+[data-composition-id='s06'] .bracket.core{margin-top:30px;padding:34px 36px}
+[data-composition-id='s06'] .lead-sm{font-weight:600;font-size:34px;color:#8a8a85;margin-bottom:14px}
+[data-composition-id='s06'] .core-l{font-weight:900;font-size:52px;line-height:1.24;color:#edebe6}
+[data-composition-id='s06'] .core-l .em{color:#ccff4d}
+[data-composition-id='s06'] .core-l .ctx{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;color:#ccff4d;margin-left:12px;vertical-align:5px}
+[data-composition-id='s06'] .subs3{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px}
+[data-composition-id='s06'] .st{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:8px 18px}
+[data-composition-id='s06'] .medc{margin-top:26px;display:flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 28px;width:100%}
+[data-composition-id='s06'] .medc .mp{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;color:#ccff4d;letter-spacing:.03em}
+[data-composition-id='s06'] .medc .mt{font-weight:600;font-size:34px;color:#edebe6}
+[data-composition-id='s06'] .medc code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="34.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[06/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// CO-THINKER · <span class="acc">思考搭档</span></div>
+      <div class="h2"><span class="en">Claude</span> 怎么帮你<span class="em">挖未知</span>？</div>
+
+      <div class="trio">
+        <div class="acard a1"><div class="ak">搜得快</div><div class="as">代码库 + 互联网</div></div>
+        <div class="acard a2"><div class="ak">知识广</div><div class="as">知识面比你广</div></div>
+        <div class="acard a3"><div class="ak">迭代快</div><div class="as">撞南墙后回头</div></div>
+      </div>
+
+      <div class="status concl"><span class="dot"></span>挖未知 &nbsp;→&nbsp; 快过你闷头想</div>
+
+      <div class="bracket core">
+        <div class="lead-sm">关键动作只有一个</div>
+        <div class="core-l"><span class="em">交出你的起点</span><span class="ctx">(context)</span></div>
+        <div class="subs3">
+          <span class="st s-a">想到哪一步</span>
+          <span class="st s-b">对代码有多少底</span>
+          <span class="st s-c">当思考搭档</span>
+        </div>
+      </div>
+
+      <div class="medc"><span class="mp">MEDIUM ›</span><span class="mt">一个 <code>HTML</code> 页面</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="2.771" data-track-index="5"><div class="sub-inner">那 Claude 怎么<span class="sub-k">帮你</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.787" data-duration="7.52" data-track-index="5"><div class="sub-inner">它搜代码库、搜互联网都<span class="sub-k">快得离谱</span>，平均知识面比你广，撞了南墙以后迭代也比你快。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.307" data-duration="4.156" data-track-index="5"><div class="sub-inner">所以它帮你<span class="sub-k">挖未知</span>的速度，远超你自己闷头想。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.632" data-duration="3.415" data-track-index="5"><div class="sub-inner">关键动作只有一个：把你的<span class="sub-k">起点</span>交给它。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.047" data-duration="9.105" data-track-index="5"><div class="sub-inner">告诉它你现在想到哪一步、你对这个问题和这套代码有多少底、让它像一个真正的<span class="sub-k">思考搭档</span>那样跟你一起想。</div></div>
+    <div id="sub-6" class="clip sub" data-start="27.304" data-duration="7.446" data-track-index="5"><div class="sub-inner">而承载这一切最顺手的媒介，往往就是一个 <span class="sub-k">HTML 页面</span>——把想法直接摆出来给你看。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.acard', 2.9, {y:18, d:.34, step:.5, ease:'power3.out'});
+    D2.enter(tl, R+'.concl', 10.4, {x:-16, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.core', 14.7, {y:20, d:.42, ease:'power3.out'});
+    D2.stagger(tl, R+'.subs3 .st', 18.1, {y:14, d:.3, step:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.medc', 27.4, {y:16, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',2.787],['#sub-3',10.307],['#sub-4',14.632],['#sub-5',18.047],['#sub-6',27.304]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 34.9, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

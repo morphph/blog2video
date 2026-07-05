@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .h2 .em{color:#ccff4d}
+[data-composition-id='s04'] .myth{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;line-height:1.42}
+[data-composition-id='s04'] .myth .x{color:#ff6b5e;font-weight:700;margin-right:14px}
+[data-composition-id='s04'] .myth s{color:#5f5f5c}
+[data-composition-id='s04'] .prep{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .prep .ar{color:#ccff4d;margin:0 12px}
+[data-composition-id='s04'] .skill{margin-top:30px;font-weight:600;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s04'] .skill .lm{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+[data-composition-id='s04'] .skill .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s04'] .partner{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+[data-composition-id='s04'] .partner .pl{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .partner .pl .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="28.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[04/14]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// COUNTERINTUITIVE · <span class="acc">反直觉</span></div>
+      <div class="h2" style="margin-top:18px">顶尖高手,主动<span class="em">为未知留余地</span></div>
+
+      <div class="myth"><span class="x">×</span>误会:赢在"什么都懂、<s>几乎没有未知</s>"</div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead">真相:他们同样<span class="em">默认自己有未知</span>,并主动为它<span class="em">留出余地</span></div>
+        <div class="prep">把未知减到最少 <span class="ar">·</span> 又替它做好准备</div>
+      </div>
+
+      <div class="skill"><span class="lm">↳</span>这件事本身,才是 agentic coding 的<span class="em">核心技能</span></div>
+
+      <div class="partner">
+        <div class="pl p-train">好消息 — 这是一项<span class="em">能练</span>的技能</div>
+        <div class="pl p-claude">最好的搭档,恰恰就是 <span class="em">Claude</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.711" data-track-index="5"><div class="sub-inner">这里有个<span class="sub-k">反直觉</span>的点。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.708" data-duration="6.502" data-track-index="5"><div class="sub-inner">你看那些顶尖高手写 prompt，会以为他们赢在"什么都懂、几乎<span class="sub-k">没有未知</span>"。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.349" data-duration="5.134" data-track-index="5"><div class="sub-inner">但真相是，他们同样默认自己有未知，并且主动为未知<span class="sub-k">留出余地</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.483" data-duration="8.675" data-track-index="5"><div class="sub-inner">把未知减到最少、又替它做好准备——这件事本身，才是 agentic coding 真正的<span class="sub-k">核心技能</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.317" data-duration="2.445" data-track-index="5"><div class="sub-inner">好消息是，这是一项<span class="sub-k">能练</span>的技能。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.762" data-duration="3.423" data-track-index="5"><div class="sub-inner">而练它最好的搭档，恰恰就是 <span class="sub-k">Claude</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.myth', 2.4, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.bracket', 8.5, {y:22, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.prep', 13.7, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.skill', 16.6, {y:16, d:.36, ease:'power4.out'});
+    D2.enter(tl, R+'.p-train', 22.4, {x:-18, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.p-claude', 24.9, {x:-18, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.708],['#sub-3',8.349],['#sub-4',13.483],['#sub-5',22.317],['#sub-6',24.762]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 28.333, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

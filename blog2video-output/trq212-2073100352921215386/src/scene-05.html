@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .h1{margin-top:18px}
+[data-composition-id='s05'] .cols{margin-top:34px}
+[data-composition-id='s05'] .dir{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:500;color:#8a8a85;letter-spacing:.06em;margin-bottom:10px}
+[data-composition-id='s05'] .mid{margin-top:28px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+[data-composition-id='s05'] .mid .status b{color:#ccff4d;font-weight:900}
+[data-composition-id='s05'] .mid-sub{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em;padding-left:28px}
+[data-composition-id='s05'] .concl{margin-top:26px;width:100%}
+[data-composition-id='s05'] .concl .c1{font-weight:600;font-size:34px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s05'] .concl .c1 s{color:#5a5a56}
+[data-composition-id='s05'] .concl .c2{margin-top:14px;font-weight:900;font-size:48px;color:#edebe6;line-height:1.3}
+[data-composition-id='s05'] .concl .c2 .em{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="40.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[05/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// PROMPTING · <span class="acc">下指令的两难</span></div>
+      <div class="h1">给 Claude 下指令,是个<span class="em">平衡</span></div>
+
+      <div class="cols">
+        <div class="col spec">
+          <div class="dir">OVER-SPECIFIED</div>
+          <div class="ch">太具体</div>
+          <div class="it"><div class="nm">死死照做</div><div class="ds l-ds">该转向,它也不转</div></div>
+        </div>
+        <div class="col vague alt">
+          <div class="dir">UNDER-SPECIFIED</div>
+          <div class="ch">太模糊</div>
+          <div class="it"><div class="nm">退回通用</div><div class="ds r-ds">未必适合你这活</div></div>
+        </div>
+      </div>
+
+      <div class="mid">
+        <div class="status"><span class="dot"></span>这是一个<b>对称</b>的陷阱</div>
+        <div class="mid-sub">两个相反方向,同一个坑</div>
+      </div>
+
+      <div class="concl bracket">
+        <div class="c1">病根不在 <s>"具体还是模糊"</s> 这根刻度上</div>
+        <div class="c2">而在于 —— 替<span class="em">未知</span>留出空间</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.22" data-track-index="5"><div class="sub-inner">给 Claude 下指令，是个很微妙的<span class="sub-k">平衡</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.38" data-duration="6.991" data-track-index="5"><div class="sub-inner">你要是<span class="sub-k">太具体</span>，它会死死照着你的话做，哪怕这时候该转向、该变通，它也不转。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.371" data-duration="8.35" data-track-index="5"><div class="sub-inner">你要是<span class="sub-k">太模糊</span>，它就退回到行业里的通用最佳实践，而那套东西，很可能根本不适合你这个活儿。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.86" data-duration="2.37" data-track-index="5"><div class="sub-inner">注意，这是一个<span class="sub-k">对称的陷阱</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.23" data-duration="4.74" data-track-index="5"><div class="sub-inner">大多数人只怕自己"<span class="sub-k">说得不够细</span>"，本能地往死里写详细。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.132" data-duration="6.184" data-track-index="5"><div class="sub-inner">可过度具体和过度模糊，是两个<span class="sub-k">相反方向</span>、同样能把你带沟里的坑。</div></div>
+    <div id="sub-7" class="clip sub" data-start="32.316" data-duration="7.834" data-track-index="5"><div class="sub-inner">真正的病根不在"具体还是模糊"这根刻度上，而在于——你有没有<span class="sub-k">替未知留出空间</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.col.spec', 3.4, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.l-ds', 6.6, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.col.vague', 10.4, {x:24, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r-ds', 15.0, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.mid', 18.9, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.mid-sub', 26.13, {y:12, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.concl', 32.3, {y:18, d:.44, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.38],['#sub-3',10.371],['#sub-4',18.86],['#sub-5',21.23],['#sub-6',26.132],['#sub-7',32.316]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 40.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

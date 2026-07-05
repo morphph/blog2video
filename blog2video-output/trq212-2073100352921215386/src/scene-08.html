@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .en{margin-top:12px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#ccff4d;letter-spacing:.04em}
+[data-composition-id='s08'] .b1{margin-top:34px}
+[data-composition-id='s08'] .b2{margin-top:16px}
+[data-composition-id='s08'] .ins{margin-top:44px}
+[data-composition-id='s08'] .pr{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s08'] .uk{color:#5fd3e8;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="20.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[08/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 招式 02 · <span class="acc">动手之前</span></div>
+      <div class="h1" style="margin-top:18px">让它<span class="em">反过来面试你</span></div>
+      <div class="en">interview me</div>
+
+      <div class="bracket b1">
+        <div class="lead">一次<span class="em">只问一个</span>问题</div>
+        <div class="pr">优先问 <span class="code">会改变整个架构</span> 的那种</div>
+      </div>
+
+      <div class="kicker ins">// 最容易被低估的</div>
+      <div class="bracket b2">
+        <div class="lead">最贵的未知 = <span class="uk">未知的已知</span><span class="tag late">隐性标准</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.783" data-track-index="5"><div class="sub-inner">一句话就够——它会顺着你的答案，把你自己都没意识到的<span class="sub-k">模糊地带</span>，一个个抠出来。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.911" data-duration="7.624" data-track-index="5"><div class="sub-inner">这里藏着一个最容易被低估的点：最贵的未知，往往是第三种，那个"<span class="sub-k">未知的已知</span>"。</div></div>
+    <div id="sub-3" class="clip sub" data-start="15.535" data-duration="4.815" data-track-index="5"><div class="sub-inner">就是你心里其实有杆秤、只是从没写下来的<span class="sub-k">隐性标准</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.en', 1.05, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.b1', 1.5, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.b1 .pr', 3.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.ins', 7.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.b2', 8.35, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.late', 15.6, {y:10, d:.3, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.911],['#sub-3',15.535]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 20.5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

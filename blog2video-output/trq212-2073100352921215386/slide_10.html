@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label { font-size: 30px; color: #8B5CF6; letter-spacing: 3px; font-weight: 700; margin-bottom: 24px; }
+    .file {
+      font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; color: #3B82F6;
+      background: #12121F; border: 1px solid rgba(59,130,246,.35); border-radius: 10px;
+      padding: 18px 30px; margin-bottom: 40px;
+    }
+    .flow { width: 100%; display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+    .row { display: flex; align-items: center; gap: 20px; background: #1A1A2E; border: 1px solid rgba(139,92,246,.2); border-radius: 12px; padding: 24px 26px; text-align: left; }
+    .row .n { font-family: 'JetBrains Mono', monospace; font-size: 30px; font-weight: 800; color: #8B5CF6; min-width: 48px; }
+    .row .t { font-size: 30px; color: #FFFFFF; line-height: 1.4; }
+    .row .t b { color: #F59E0B; font-weight: 700; }
+    .row .t code { font-family: 'JetBrains Mono', monospace; color: #10B981; }
+    .payoff {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(16,185,129,.3);
+      border-left: 4px solid #10B981; border-radius: 12px; padding: 30px 28px; text-align: left;
+      font-size: 30px; color: #FFFFFF; line-height: 1.5;
+    }
+    .payoff b { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">DURING THE WORK</div>
+    <div class="file">implementation-notes</div>
+    <div class="flow">
+      <div class="row"><div class="n">01</div><div class="t">撞上<b>边界情况</b>、被迫偏离原计划</div></div>
+      <div class="row"><div class="n">02</div><div class="t">选那个<b>最保守</b>的方案</div></div>
+      <div class="row"><div class="n">03</div><div class="t">记到 <code>Deviations</code> 栏，接着往前走</div></div>
+    </div>
+    <div class="payoff">下一轮再来，你手里就有一份<b>"它当时为什么这么决定"</b>的账本。</div>
+  </div>
+</body>
+</html>

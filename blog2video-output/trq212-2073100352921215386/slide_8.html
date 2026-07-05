@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .glow {
+      position: absolute; top: 32%; left: 50%; transform: translate(-50%, -50%);
+      width: 880px; height: 540px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.14) 0%, rgba(13, 13, 26, 0) 70%);
+      pointer-events: none;
+    }
+    .step { font-family: 'JetBrains Mono', monospace; font-size: 28px; color: #8B5CF6; font-weight: 700; letter-spacing: 2px; margin-bottom: 20px; position: relative; }
+    .title { font-size: 74px; font-weight: 900; line-height: 1.22; margin-bottom: 30px; position: relative; }
+    .title .hl { color: #F59E0B; }
+    .card {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 36px 30px; text-align: left;
+      margin-bottom: 26px; position: relative;
+    }
+    .card .rule { font-size: 34px; font-weight: 800; color: #FFFFFF; line-height: 1.4; }
+    .card .rule b { color: #8B5CF6; }
+    .payoff {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(16,185,129,.3);
+      border-left: 4px solid #10B981; border-radius: 12px; padding: 30px 28px; text-align: left;
+      font-size: 30px; color: #FFFFFF; line-height: 1.5; position: relative;
+    }
+    .payoff b { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="step">招式 02</div>
+    <div class="title">让它<span class="hl">反过来面试你</span></div>
+    <div class="card">
+      <div class="rule">一次<b>只问一个</b>问题，<br>优先问"我的回答会<b>改变整个架构</b>"的那种</div>
+    </div>
+    <div class="payoff">一句话就够——它会顺着你的答案，把你<b>自己都没意识到的模糊地带</b>一个个抠出来。</div>
+  </div>
+</body>
+</html>

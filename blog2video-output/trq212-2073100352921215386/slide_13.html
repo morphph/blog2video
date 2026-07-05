@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label { font-size: 30px; color: #8B5CF6; letter-spacing: 3px; font-weight: 700; margin-bottom: 22px; }
+    .title { font-size: 60px; font-weight: 900; line-height: 1.24; margin-bottom: 34px; }
+    .title .hl { color: #F59E0B; }
+    .turn {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(239,68,68,.25);
+      border-left: 4px solid #EF4444; border-radius: 12px; padding: 28px 28px; text-align: left;
+      font-size: 30px; color: #FFFFFF; line-height: 1.5; margin-bottom: 20px;
+    }
+    .turn b { color: #EF4444; font-weight: 700; }
+    .pivot {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(16,185,129,.3);
+      border-left: 4px solid #10B981; border-radius: 12px; padding: 30px 28px; text-align: left;
+      font-size: 32px; color: #FFFFFF; line-height: 1.5; margin-bottom: 28px;
+    }
+    .pivot b { color: #10B981; font-weight: 800; }
+    .insight { width: 100%; font-size: 33px; font-weight: 800; color: #F59E0B; line-height: 1.42; text-align: left; }
+    .insight span { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">THE HARDEST PART</div>
+    <div class="title">最后一下最见功夫：<span class="hl">调色</span></div>
+    <div class="turn">画面发闷，他知道是调色问题，可他<b>根本不懂调色</b>。想让 Claude 出几个版本让他挑——</div>
+    <div class="pivot">挑着挑着才反应过来：我连"好调色是什么样"都不知道，<b>拿什么挑？</b>于是掉头，让 Claude <b>先教他调色</b>，补上未知再选。</div>
+    <div class="insight">全程没一次"甩锅给 AI"——<br><span>判断力是被拉满的，不是被省掉的。</span></div>
+  </div>
+</body>
+</html>

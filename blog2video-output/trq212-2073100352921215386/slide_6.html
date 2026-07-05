@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label { font-size: 30px; color: #8B5CF6; letter-spacing: 3px; font-weight: 700; margin-bottom: 32px; }
+    .title { font-size: 74px; font-weight: 900; line-height: 1.22; margin-bottom: 44px; }
+    .title .hl { color: #F59E0B; }
+    .why { display: flex; gap: 20px; width: 100%; margin-bottom: 40px; }
+    .chip { flex: 1; background: #1A1A2E; border: 1px solid rgba(59,130,246,.25); border-radius: 12px; padding: 26px 16px; }
+    .chip .t { font-size: 30px; font-weight: 800; color: #3B82F6; margin-bottom: 8px; }
+    .chip .s { font-size: 24px; color: #B0B0CC; line-height: 1.35; }
+    .action {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(16,185,129,.3);
+      border-left: 4px solid #10B981; border-radius: 12px; padding: 32px 28px; text-align: left;
+      font-size: 31px; color: #FFFFFF; line-height: 1.5; margin-bottom: 26px;
+    }
+    .action b { color: #10B981; font-weight: 800; }
+    .medium { font-size: 28px; color: #6B7280; line-height: 1.45; }
+    .medium code { font-family: 'JetBrains Mono', monospace; color: #8B5CF6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">CO-THINKER</div>
+    <div class="title">把<span class="hl">起点</span>交给它</div>
+    <div class="why">
+      <div class="chip"><div class="t">搜得快</div><div class="s">代码库 + 互联网<br>快得离谱</div></div>
+      <div class="chip"><div class="t">知识广</div><div class="s">平均知识面<br>比你广</div></div>
+      <div class="chip"><div class="t">迭代快</div><div class="s">撞南墙后<br>回头更快</div></div>
+    </div>
+    <div class="action">告诉它你<b>想到哪一步</b>、你对问题和代码<b>有多少底</b>——让它像真正的思考搭档一样跟你一起想。</div>
+    <div class="medium">最顺手的媒介，往往就是一个 <code>HTML</code> 页面</div>
+  </div>
+</body>
+</html>

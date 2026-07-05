@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .step { font-family: 'JetBrains Mono', monospace; font-size: 28px; color: #8B5CF6; font-weight: 700; letter-spacing: 2px; margin-bottom: 20px; }
+    .title { font-size: 74px; font-weight: 900; line-height: 1.2; margin-bottom: 20px; }
+    .title .hl { color: #F59E0B; }
+    .when { font-size: 29px; color: #B0B0CC; line-height: 1.45; margin-bottom: 36px; }
+    .cmds { display: flex; gap: 18px; margin-bottom: 40px; }
+    .cmd { background: #1A1A2E; border: 1px solid rgba(245,158,11,.4); border-radius: 10px; padding: 20px 30px;
+      font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 700; color: #F59E0B; }
+    .prompt {
+      width: 100%; background: #12121F; border: 1px solid rgba(139, 92, 246, 0.25);
+      border-left: 4px solid #8B5CF6; border-radius: 12px; padding: 30px 30px; text-align: left;
+    }
+    .prompt .tag { font-family: 'JetBrains Mono', monospace; font-size: 22px; color: #6B7280; margin-bottom: 14px; }
+    .prompt .body { font-size: 29px; color: #FFFFFF; line-height: 1.55; }
+    .prompt .body b { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="step">招式 01</div>
+    <div class="title">盲区扫描</div>
+    <div class="when">陌生代码里加功能、做不在行的事时<br>你满身"未知的未知"——连该问什么都不知道</div>
+    <div class="cmds">
+      <div class="cmd">blindspot pass</div>
+      <div class="cmd">unknown unknowns</div>
+    </div>
+    <div class="prompt">
+      <div class="tag">// example prompt</div>
+      <div class="body">"我要加一个新的 <b>auth provider</b>，可我对这个代码库的 auth 模块一无所知。帮我做一次<b>盲区扫描</b>，把我相关的<b>未知的未知</b>找出来，好让我更好地给你下指令。"</div>
+    </div>
+  </div>
+</body>
+</html>

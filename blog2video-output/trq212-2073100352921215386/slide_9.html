@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label { font-size: 30px; color: #8B5CF6; letter-spacing: 3px; font-weight: 700; margin-bottom: 28px; }
+    .title { font-size: 62px; font-weight: 900; line-height: 1.25; margin-bottom: 22px; }
+    .hero {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(245,158,11,.35);
+      border-left: 4px solid #F59E0B; border-radius: 12px; padding: 34px 30px; text-align: left; margin-bottom: 30px;
+    }
+    .hero .big { font-size: 54px; font-weight: 900; color: #F59E0B; margin-bottom: 14px; }
+    .hero .d { font-size: 30px; color: #FFFFFF; line-height: 1.5; }
+    .hero .d b { color: #F59E0B; }
+    .why {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(239,68,68,.25);
+      border-left: 4px solid #EF4444; border-radius: 12px; padding: 28px 28px; text-align: left;
+      font-size: 29px; color: #B0B0CC; line-height: 1.5; margin-bottom: 24px;
+    }
+    .why b { color: #EF4444; font-weight: 700; }
+    .act { width: 100%; font-size: 32px; font-weight: 800; color: #10B981; line-height: 1.4; text-align: left; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">MOST EXPENSIVE UNKNOWN</div>
+    <div class="title">最贵的未知</div>
+    <div class="hero">
+      <div class="big">未知的已知</div>
+      <div class="d">你心里其实有杆秤、<br>只是<b>从没写下来</b>的隐性标准</div>
+    </div>
+    <div class="why">真正烧钱的，是这些"看到才认得"的标准拖到<b>写代码阶段</b>才浮现。spec 一点点变动，实现天差地别，agent 又很难干净退回。</div>
+    <div class="act">→ 趁做原型、改起来还便宜，先把它逼出水面</div>
+  </div>
+</body>
+</html>

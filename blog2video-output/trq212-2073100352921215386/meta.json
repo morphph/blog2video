@@ -1,0 +1,15 @@
+{
+  "topic": "AI 编程的新瓶颈：找出你的未知",
+  "blog_url": "https://x.com/trq212/article/2073100352921215386",
+  "source": "trq212-2073100352921215386",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e3]:
+        - generic [ref=e4]: To view keyboard shortcuts, press question mark
+        - link "View keyboard shortcuts" [ref=e5] [cursor=pointer]:
+          - /url: /i/keyboard_shortcuts
+      - generic:
+        - generic:
+          - button "Grok" [ref=e6] [cursor=pointer]:
+            - img [ref=e7]
+          - button "Chat" [ref=e10] [cursor=pointer]:
+            - img [ref=e11]
+      - generic [ref=e14]:
+        - banner [ref=e15]:
+          - generic [ref=e17]:
+            - button "Exit" [ref=e19] [cursor=pointer]:
+              - img [ref=e21]
+            - button "Bookmark" [ref=e25] [cursor=pointer]:
+              - img [ref=e27]
+        - main [ref=e30]:
+          - generic [ref=e35]:
+            - link [ref=e41] [cursor=pointer]:
+              - /url: /trq212/article/2073100352921215386/media/2073090676129230848
+            - generic [ref=e45]:
+              - generic [ref=e47]: "A Field Guide to Fable: Finding Your Unknowns"
+              - generic [ref=e50]:
+                - link [ref=e60] [cursor=pointer]:
+                  - /url: /trq212
+                - generic [ref=e64]:
+                  - link "Thariq Verified account" [ref=e66] [cursor=pointer]:
+                    - /url: /trq212
+                    - generic [ref=e67]:
+                      - generic [ref=e69]: Thariq
+                      - img "Verified account" [ref=e72]
+                  - generic [ref=e75]:
+                    - link "@trq212" [ref=e77] [cursor=pointer]:
+                      - /url: /trq212
+                      - generic [ref=e79]: "@trq212"
+                    - generic [ref=e80]:
+                      - generic [ref=e81]: ·
+                      - generic "Jul 4" [ref=e83]:
+                        - time [ref=e84]: Jul 4
+              - group "204 replies, 1190 reposts, 7193 likes, 16210 bookmarks, 2179653 views" [ref=e86]:
+                - button "204 Replies. Reply" [ref=e88] [cursor=pointer]:
+                  - generic [ref=e89]:
+                    - img [ref=e92]
+                    - generic [ref=e97]: "204"
+                - button "1190 reposts. Repost" [ref=e99] [cursor=pointer]:
+                  - generic [ref=e100]:
+                    - img [ref=e103]
+                    - generic [ref=e108]: 1.1K
+                - button "7193 Likes. Like" [ref=e110] [cursor=pointer]:
+                  - generic [ref=e111]:
+                    - img [ref=e114]
+                    - generic [ref=e119]: 7.1K
+                - link "2179653 views. View post analytics" [ref=e121] [cursor=pointer]:
+                  - /url: /trq212/status/2073100352921215386/analytics
+                  - generic [ref=e122]:
+                    - img [ref=e125]
+                    - generic [ref=e130]: 2.1M
+                - button "Bookmarked" [ref=e132] [cursor=pointer]:
+                  - img [ref=e136]
+                - button "Share post" [ref=e141] [cursor=pointer]:
+                  - img [ref=e145]
+              - generic [ref=e153]:
+                - generic [ref=e156]: "Working with Claude Fable 5 keeps re-teaching me an old lesson: the map is not the territory."
+                - generic [ref=e159]: The map, a representation of the work to be done, is my prompts and skills and context, it’s what I give Claude. The territory is where the work needs to happen, the codebase, the real world, its actual constraints.
+                - link [ref=e166] [cursor=pointer]:
+                  - /url: /trq212/article/2073100352921215386/media/2073090486085279744
+                - generic [ref=e171]:
+                  - generic [ref=e172]: The difference between the map and the territory is what I call
+                  - generic [ref=e173]: unknowns
+                  - generic [ref=e174]: . When Claude runs into an unknown, it needs to make a decision based on its best guess of what I want. The more work being done, the more unknowns Claude might run into
+                - generic [ref=e177]: Fable is the first model where I find the quality of the work is bottlenecked by my ability to clarify its unknowns.
+                - generic [ref=e180]: Importantly, just planning ahead isn’t always enough. You can find unknowns deep in implementation, or your unknowns may point you to the fact that you should actually be solving the problem in a different way altogether.
+                - generic [ref=e183]: I’ve found that working with Fable is an iterative process of discovering my unknowns before, during, and after implementation.
+                - generic [ref=e185]:
+                  - generic [ref=e186]: I've made some
+                  - link "example artifacts for finding unknowns here," [ref=e188] [cursor=pointer]:
+                    - /url: https://thariqs.github.io/html-effectiveness/unknowns/
+                    - generic [ref=e189]: example artifacts for finding unknowns here
+                    - generic [ref=e190]: ","
+                  - generic [ref=e191]: but be sure to come back to build the intuition for when to use them.
+                - heading "Knowing your unknowns" [level=2] [ref=e193]:
+                  - generic [ref=e195]: Knowing your unknowns
+                - generic [ref=e198]: "What are your unknowns? When I come to Claude with a problem I tend to break it down in 4 ways:"
+                - list [ref=e199]:
+                  - listitem [ref=e200]:
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: "Known Knowns:"
+                      - generic [ref=e203]: This is essentially what is in my prompt. What do I tell the agent that I want?
+                  - listitem [ref=e204]:
+                    - generic [ref=e205]:
+                      - generic [ref=e206]: "Known Unknowns:"
+                      - generic [ref=e207]: What haven't I figured out yet, but I’m aware that I haven’t?
+                  - listitem [ref=e208]:
+                    - generic [ref=e209]:
+                      - generic [ref=e210]: "Unknown Knowns:"
+                      - generic [ref=e211]: What's so obvious I’d never write it down, but would recognize it if I saw it?
+                  - listitem [ref=e212]:
+                    - generic [ref=e213]:
+                      - generic [ref=e214]: "Unknown Unknowns:"
+                      - generic [ref=e215]: What haven't I considered at all? What knowledge am I not aware of? Do I know how good something can be?
+                - link [ref=e222] [cursor=pointer]:
+                  - /url: /trq212/article/2073100352921215386/media/2073092888020611072
+                - generic [ref=e227]:
+                  - generic [ref=e228]: The best agentic coders are good have relatively few unknowns. Watching someone like
+                  - link "Boris" [ref=e230] [cursor=pointer]:
+                    - /url: https://www.google.com/url?q=https://www.linkedin.com/in/bcherny&sa=D&source=editors&ust=1783101769343560&usg=AOvVaw0NSN4RLOEaJ_k7bIWfat2t
+                    - generic [ref=e231]: Boris
+                  - generic [ref=e232]: or
+                  - link "Jarred" [ref=e234] [cursor=pointer]:
+                    - /url: https://www.google.com/url?q=https://www.linkedin.com/in/jarred-sumner-a8772425&sa=D&source=editors&ust=1783101769343738&usg=AOvVaw1jFeuVIbBffAC5464Tk_TD
+                    - generic [ref=e235]: Jarred
+                  - generic [ref=e236]: prompt, it is obvious to me that they know what they want in-detail. They are deeply in-sync with both the codebase and the model behaviors.
+                - generic [ref=e238]:
+                  - generic [ref=e239]: But they also assume unknowns. In many ways, reducing and planning for your unknowns is the
+                  - generic [ref=e240]: skill
+                  - generic [ref=e241]: of agentic coding. But luckily, this is a skill you can improve at, by working with Claude.
+                - heading "Help Claude help you" [level=2] [ref=e243]:
+                  - generic [ref=e245]: Help Claude help you
+                - link [ref=e252] [cursor=pointer]:
+                  - /url: /trq212/article/2073100352921215386/media/2073091723493011456
+                - generic [ref=e258]: Instructing Claude is a delicate balance. If you are too specific, Claude will follow your instructions even when a pivot may be more appropriate. If you are too vague, Claude will often make choices and assumptions based on industry best practices that may not be a fit for your task.
+                - generic [ref=e261]: When you don’t account for your unknowns you fail both ways. You don't know when the path will be filled with obstacles and you don’t know when the path will be clear, but you still want Claude to veer.
+                - generic [ref=e264]: Claude can help you discover your unknowns faster. It can search through your codebase and the internet extremely quickly and it knows much more about the average topic than you. It can also iterate from failure faster.
+                - generic [ref=e267]: The most important part of this process is to give Claude context about your starting point. For example, tell it where you are in your thought process; disclose your experience with the problem and codebase; and let it work with you like a thought partner.
+                - generic [ref=e269]:
+                  - generic [ref=e270]: I've previously written about using
+                  - link "HTML with Claude" [ref=e272] [cursor=pointer]:
+                    - /url: https://x.com/trq212/status/2052809885763747935
+                    - generic [ref=e273]: HTML with Claude
+                  - generic [ref=e274]: ", in almost all of these cases, a HTML artifact is the best way to visualize and represent it."
+                - generic [ref=e277]: In this article I detail some of the patterns I use to uncover these unknowns. I don't use every technique each time, but it's a useful collection of techniques to have.
+                - link [ref=e284] [cursor=pointer]:
+                  - /url: /trq212/article/2073100352921215386/media/2073093289591611394
+                - heading "Pre-implementation" [level=1] [ref=e289]:
+                  - generic [ref=e291]: Pre-implementation
+                - heading "Blind Spot Pass" [level=2] [ref=e293]:
+                  - generic [ref=e295]: Blind Spot Pass
+                - generic [ref=e297]:
+                  - generic [ref=e298]: When starting work, one of the most useful things you can do is understand your blindspots. For example, if you’re writing a feature in a new part of the codebase or using Claude to help you with unfamiliar work like iterating on a design, you’re likely to have a lot of
+                  - generic [ref=e299]: unknown unknowns
+                  - generic [ref=e300]: .
+                - generic [ref=e303]: You may not know what questions to ask, what good looks like, what historical work has been done or what potholes to avoid.
+                - generic [ref=e306]: To do this, you can ask Claude to help you find your unknown unknowns and explain them to you. I like to use the literal words “blindspot pass” and “unknown unknowns”. Giving it context on who you are and what you know is usually important for
+                - generic [ref=e309]: "Example Prompts:"
+                - list [ref=e310]:
+                  - listitem [ref=e311]:
+                    - generic [ref=e313]: “I'm working on adding a new auth provider but I know nothing about the auth modules in this codebase. Can you do a blindspot pass to help me figure out my relevant unknown unknowns and help me prompt you better.”
+                  - listitem [ref=e314]:
+                    - generic [ref=e316]: “I don’t know what color grading is but I need to grade this video. Can you teach me to understand my unknown unknowns about color grading, so that I can prompt better?”
+                - heading "Brainstorms and prototypes" [level=2] [ref=e318]:
+                  - generic [ref=e320]: Brainstorms and prototypes
+                - generic [ref=e322]:
+                  - generic [ref=e323]: When I’m working in an area with a lot of
+                  - generic [ref=e324]: unknown knowns
+                  - generic [ref=e325]: ", involving criteria I only know to define when I see it, I like to ask Claude to brainstorm and prototype with me."
+                - generic [ref=e328]: It’s extremely valuable to identify and verbalize unknown knowns early during prototyping, because finding them out during implementation can be (relatively) expensive. Small changes in a feature or spec can cause drastically different implementations in code and it can be more difficult for your agent to revert previous changes.
+                - generic [ref=e331]: For example, you may just want to see how a button added to a frame looks without having to wire up a backend route or maintaining additional state in the frontend.
+                - generic [ref=e334]: Visual design is something that for me is difficult to articulate, but I know what I want when I see it. In these cases, I’ll ask for several design approaches to an artifact.
+                - generic [ref=e337]: I also start almost every coding session with an exploration or brainstorming phase. This helps me start with intent to define the project’s scope. Claude often finds high-value approaches I would have missed and sometimes misses the forest through the trees. Brainstorming prevents me from setting too narrow or too wide a scope.
+                - generic [ref=e340]: "Example prompts:"
+                - list [ref=e341]:
+                  - listitem [ref=e342]:
+                    - generic [ref=e344]: "\"I want a dashboard for this data but I have no visual taste and don't know what's possible. Make me an HTML page with 4 wildly different design directions so I can react to them.”"
+                  - listitem [ref=e345]:
+                    - generic [ref=e347]: “Before wiring anything up, make a single HTML file mocking the new editor toolbar with fake data. I want to react to the layout before you touch the treal app."
+                  - listitem [ref=e348]:
+                    - generic [ref=e350]: "\"Here's my rough problem: users churn after onboarding. Search the codebase and brainstorm 10 places we could intervene, from cheapest to most ambitious. I'll tell you which ones resonate.\""
+                - heading "Interviews" [level=2] [ref=e352]:
+                  - generic [ref=e354]: Interviews
+                - generic [ref=e357]: Once I’ve done sufficient brainstorming, I likely still have unknowns.
+                - generic [ref=e360]: In this case, I ask Claude to interview me about any unknowns or ambiguities. When asking Claude to interview you, try and give it context about your problem to guide its questions. Here are some examples.
+                - generic [ref=e363]: "Example prompts:"
+                - list [ref=e364]:
+                  - listitem [ref=e365]:
+                    - generic [ref=e367]: "\"Interview me one question at a time about anything ambiguous, prioritize questions where my answer would change the architecture.\""
+                - heading "References" [level=2] [ref=e369]:
+                  - generic [ref=e371]: References
+                - generic [ref=e374]: Sometimes you can’t describe what you want in detail. For example, you might not have the language or it might be so complicated that it would take you quite a while.
+                - generic [ref=e376]:
+                  - generic [ref=e377]: In this case, the best answer is a reference. While you can include diagrams, documentation or pictures, the absolute best reference is
+                  - generic [ref=e378]: source code
+                  - generic [ref=e379]: .
+                - generic [ref=e382]: If you have a library that implements something in a certain way or a design component you really like, just point Fable at the folder and tell it what to look for, even if it’s in a different language.
+                - generic [ref=e385]: This is also the way Claude Design works. You don't have to hand it a file (although you can do that too). You can point it at a module on a website you like, and it reads the underlying code, not just the screenshot. This provides much richer detail around the markup, structure, and how the component is actually built.
+                - generic [ref=e388]: "Example prompts:"
+                - list [ref=e389]:
+                  - listitem [ref=e390]:
+                    - generic [ref=e392]: This Rust crate in vendor/rate-limiter implements the exact backoff behavior I want. Read it and reimplement the same semantics in our TypeScript API client.
+                - heading "Implementation Plans" [level=2] [ref=e394]:
+                  - generic [ref=e396]: Implementation Plans
+                - generic [ref=e399]: When I think I’m ready to implement, I tend to ask Claude to put together an implementation plan for me to review that focuses on the parts that might be most likely to change, for example to review data models, type interfaces or UX flows. This allows Claude to surface things I might actually need to alter.
+                - generic [ref=e402]: "Example Prompts:"
+                - list [ref=e403]:
+                  - listitem [ref=e404]:
+                    - generic [ref=e406]: "Write an implementation plan in HTML, but lead with the decisions I'm most likely to tweak with: data model changes, new type interfaces, and anything user-facing. Bury the mechanical refactoring at the bottom, I trust you on that part.\""
+                - generic [ref=e407]:
+                  - heading "During implementation" [level=2] [ref=e408]:
+                    - generic [ref=e410]: During implementation
+                  - heading "Implementation notes" [level=2] [ref=e411]:
+                    - generic [ref=e413]: Implementation notes
+                - generic [ref=e416]: Once I am satisfied with my plan, I make a new session and pass any artifacts to the prompt. For example, I might pass in a spec file and a prototype and ask an agent to implement it.
+                - generic [ref=e419]: But the truth is that no matter how much planning you do, there are always unknown unknowns lurking. The agent may find during its work that it needs to take a different tack due to an edge case it found in the code.
+                - generic [ref=e421]:
+                  - generic [ref=e422]: I ask Claude Code to keep a temporary ‘
+                  - link "implementation-notes.md" [ref=e424] [cursor=pointer]:
+                    - /url: https://www.google.com/url?q=http://implementation-notes.md&sa=D&source=editors&ust=1783101769359369&usg=AOvVaw1Iqvg51JpzkrkRtHHIjyOL
+                    - generic [ref=e425]: implementation-notes.md
+                  - generic [ref=e426]: ’ (or .html) file where it keeps track of decisions it makes so we can learn from our next attempt.
+                - generic [ref=e429]: "Example prompts:"
+                - list [ref=e430]:
+                  - listitem [ref=e431]:
+                    - generic [ref=e432]:
+                      - generic [ref=e433]: "\"Keep an"
+                      - link "implementation-notes.md" [ref=e435] [cursor=pointer]:
+                        - /url: https://www.google.com/url?q=http://implementation-notes.md&sa=D&source=editors&ust=1783101769359896&usg=AOvVaw1wFqbnqbAuO_GYnGk8_1bh
+                        - generic [ref=e436]: implementation-notes.md
+                      - generic [ref=e437]: file. If you hit an edge case that forces you to deviate from the plan, pick the conservative option, log it under 'Deviations', and keep going."
+                - heading "Post implementation" [level=1] [ref=e439]:
+                  - generic [ref=e441]: Post implementation
+                - heading "Pitches and explainers" [level=2] [ref=e443]:
+                  - generic [ref=e445]: Pitches and explainers
+                - link [ref=e452] [cursor=pointer]:
+                  - /url: /trq212/article/2073100352921215386/media/2073094521118920704
+                - generic [ref=e458]: "One of the most important parts of shipping something is getting buy-in and approvals. Building pitch and explainer artifacts in the final document helps:"
+                - list [ref=e459]:
+                  - listitem [ref=e460]:
+                    - generic [ref=e462]: Accelerate understanding when reviewers start with the same unknowns you did
+                  - listitem [ref=e463]:
+                    - generic [ref=e465]: Accelerate approvals when experts want to see you accounted for the unknowns and common failure points they would have anticipated
+                - generic [ref=e468]: "Example prompts:"
+                - list [ref=e469]:
+                  - listitem [ref=e470]:
+                    - generic [ref=e472]: "\"Package the prototype, the spec, and the implementation notes into a single doc I can drop in Slack to get buy-in. Lead with the demo GIF.\""
+                - heading "Quizzes" [level=2] [ref=e474]:
+                  - generic [ref=e476]: Quizzes
+                - generic [ref=e479]: After a long working session, Claude might have accomplished a lot more than I realized. Reading the code diffs can only give me a light understanding of what happened, since much of the behavior will depend on existing code paths.
+                - generic [ref=e482]: Asking Claude to quiz me about the change after giving me a bunch of context helps me understand what happens. I only merge after I pass the quiz perfectly.
+                - generic [ref=e485]: "Example prompts:"
+                - list [ref=e486]:
+                  - listitem [ref=e487]:
+                    - generic [ref=e489]: “I want to make sure I understand everything that's happened in this change. Give me a HTML report on the changes for me to read and understand with context, intuition, what was done, etc. and a quiz at the bottom on the changes that I must pass.”
+                - 'heading "How this comes together: launching Fable" [level=2] [ref=e491]':
+                  - generic [ref=e493]: "How this comes together: launching Fable"
+                - generic [ref=e495]:
+                  - generic [ref=e496]: The
+                  - link "launch video for Fable" [ref=e498] [cursor=pointer]:
+                    - /url: https://www.google.com/url?q=https://x.com/ClaudeDevs/status/2064399512664526853&sa=D&source=editors&ust=1783101769363678&usg=AOvVaw1MyZd5YMjjShztWHzo8N9u
+                    - generic [ref=e499]: launch video for Fable
+                  - generic [ref=e500]: was edited entirely by Claude Code. This was a new domain for me and I’m by no means an expert.
+                - generic [ref=e503]: So I started with what I did know. I knew that Claude could use code to edit videos and transcribe them, but I wasn’t sure if it was accurate enough. I then asked Claude to explain to me how transcription like Whisper worked, and whether I would be able to accurately cut out things like ums or large pauses using ffmpeg.
+                - generic [ref=e506]: I wanted Claude to create a UI that was timed with the words I was saying, but wasn’t sure if it would be able to so I asked Claude to create a prototype video using Remotion and a transcription to see if it would work.
+                - generic [ref=e509]: Finally, the video itself looked a bit muted, which I knew was the result of color grading but I didn’t really know what color grading was. My first pass attempt was to try and get Claude to do a few variations to pick, but I realized that I didn’t know what “good” looked like when it came to color grading. So instead, I asked Claude to teach me about color grading to discover my unknowns.
+                - generic [ref=e511]:
+                  - generic [ref=e512]: You can watch a more
+                  - generic [ref=e513]: in-depth explanation on that
+                  - link "here" [ref=e515] [cursor=pointer]:
+                    - /url: https://x.com/trq212/status/2064826394589442448/video/1
+                    - generic [ref=e516]: here
+                  - generic [ref=e517]: .
+                - heading "Matching the Map and Territory" [level=2] [ref=e519]:
+                  - generic [ref=e521]: Matching the Map and Territory
+                - generic [ref=e524]: The better models get, the more you can achieve with the right approach. When a long-horizon task comes back wrong, it's likely you need to spend more time defining your unknowns or creating an implementation plan that allows for Claude to improvise through them.
+                - generic [ref=e527]: Every explainer, brainstorm, interview, prototype, and reference is a cheap way to find out what you didn't know before it gets expensive to fix.
+                - generic [ref=e530]: So start your next project by asking Claude to help you find your unknowns.
+              - separator [ref=e531]
+              - listitem [ref=e532] [cursor=pointer]:
+                - generic [ref=e533]:
+                  - link [ref=e543]:
+                    - /url: /trq212
+                  - generic [ref=e546]:
+                    - generic [ref=e547]:
+                      - generic [ref=e549]:
+                        - link "Thariq Verified account" [ref=e551]:
+                          - /url: /trq212
+                          - generic [ref=e552]:
+                            - generic [ref=e554]: Thariq
+                            - img "Verified account" [ref=e557]
+                        - link "@trq212" [ref=e562]:
+                          - /url: /trq212
+                          - generic [ref=e564]: "@trq212"
+                      - button "Following @trq212" [ref=e566]:
+                        - generic [ref=e569]: Following
+                    - generic [ref=e570]:
+                      - text: Claude Code
+                      - link "@anthropicai" [ref=e573]:
+                        - /url: /anthropicai
+                      - text: . prev YC W20,
+                      - link "@southpkcommons" [ref=e576]:
+                        - /url: /southpkcommons
+                      - text: ","
+                      - link "@medialab" [ref=e579]:
+                        - /url: /medialab

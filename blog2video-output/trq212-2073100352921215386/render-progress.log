@@ -4,3 +4,4 @@ render scene-02 rc=0  clip_dur=72.100000  took=148s  22:44:22
 render scene-03 rc=0  clip_dur=41.200000  took=108s  22:46:10
 render scene-04 rc=0  clip_dur=28.333333  took=94s  22:47:44
 render scene-05 rc=0  clip_dur=40.300000  took=107s  22:49:31
+render scene-06 rc=0  clip_dur=34.900000  took=101s  22:51:12

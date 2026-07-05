@@ -1,4 +1,10 @@
 #!/usr/bin/env node
 // Thin launcher so Hermes can call a stable path:
 //   bin/blog2video-content <verb> [--flags]
-import("../blog2video-content/cli.mjs");
+// `narration` is the black-box generative verb (spawns headless claude); it
+// lives outside cli.mjs, whose contract forbids implicit LLM work.
+if (process.argv[2] === "narration") {
+  import("../blog2video-content/narration.mjs");
+} else {
+  import("../blog2video-content/cli.mjs");
+}

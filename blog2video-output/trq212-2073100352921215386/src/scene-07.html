@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .r2rd{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+[data-composition-id='s07'] .exrow{margin-top:12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="67.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[07/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 动手之前 · <span class="acc">两招</span></div>
+      <div class="h1" style="margin-top:16px"><span class="em">第一招</span> 盲区扫描</div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">你满身<span class="code">unknown unknowns</span></div>
+          <div class="rd">陌生代码里加功能、做不在行的事 —— 连该问什么都不知道</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">直接对 Claude 说这两个词</div>
+          <div class="rd r2rd"><span class="code">blindspot pass</span><span class="code">unknown unknowns</span></div>
+          <div class="exrow"><span class="tag">// example prompt →</span></div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">交清「我是谁 · 我懂多少」</div>
+          <div class="rd">它就对着你的盲区,照一遍光</div>
+        </div></div>
+      </div>
+
+      <div class="h2 m2h" style="margin-top:28px"><span class="em">第二招</span> 让它反过来面试你</div>
+      <div class="lead m2b" style="font-size:32px;margin-top:12px"><span class="dim">脑暴之后,手上仍有没理清的地方</span></div>
+      <div class="status m2s" style="margin-top:14px"><span class="dot"></span>一次一个问题 · 优先问会改架构的</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.29" data-track-index="5"><div class="sub-inner">真正的技法，是从<span class="sub-k">动手之前</span>就开始的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.29" data-duration="2.322" data-track-index="5"><div class="sub-inner">这里我挑最有用的<span class="sub-k">两招</span>讲。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.76" data-duration="1.746" data-track-index="5"><div class="sub-inner">第一招，<span class="sub-k">盲区扫描</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="7.506" data-duration="15.128" data-track-index="5"><div class="sub-inner">当你要在一块完全陌生的代码里加功能，或者做一件你根本不在行的事，你身上全是"<span class="sub-k">未知的未知</span>"——你连该问什么问题都不知道，不知道什么算好，不知道前人踩过哪些坑。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.788" data-duration="8.166" data-track-index="5"><div class="sub-inner">这时候，你就直接对 Claude 说这两个词：<span class="sub-k">blindspot pass</span>，加上 unknown unknowns。</div></div>
+    <div id="sub-6" class="clip sub" data-start="31.104" data-duration="13.681" data-track-index="5"><div class="sub-inner">比如："我要加一个新的 auth provider，可我对这个代码库的 auth 模块一无所知，你帮我做一次<span class="sub-k">盲区扫描</span>，把我相关的未知的未知找出来，好让我能更好地给你下指令。</div></div>
+    <div id="sub-7" class="clip sub" data-start="44.928" data-duration="7.063" data-track-index="5"><div class="sub-inner">你把"我是谁、我懂多少"这个背景交清楚，它就能对着你的<span class="sub-k">盲区</span>照一遍光。</div></div>
+    <div id="sub-8" class="clip sub" data-start="52.128" data-duration="2.436" data-track-index="5"><div class="sub-inner">第二招，让它<span class="sub-k">反过来面试你</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="54.564" data-duration="3.934" data-track-index="5"><div class="sub-inner">头脑风暴做完，你手上通常仍有<span class="sub-k">没理清</span>的地方。</div></div>
+    <div id="sub-10" class="clip sub" data-start="58.498" data-duration="9.18" data-track-index="5"><div class="sub-inner">那就让 Claude 来采访你：<span class="sub-k">一次只问一个问题</span>，而且优先问那些"我的回答会改变整个架构"的问题。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 5.8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 7.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 22.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .r2rd', 23.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .exrow', 31.4, {y:10, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.r3', 44.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.m2h', 52.2, {y:18, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.m2b', 54.7, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.m2s', 58.6, {y:12, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.29],['#sub-3',5.76],['#sub-4',7.506],['#sub-5',22.788],['#sub-6',31.104],['#sub-7',44.928],['#sub-8',52.128],['#sub-9',54.564],['#sub-10',58.498]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 67.833, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

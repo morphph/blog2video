@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .why-lead{margin-top:28px}
+[data-composition-id='s11'] .core-l{font-family:'MiSans',sans-serif;font-weight:900;font-size:54px;line-height:1.22;color:#edebe6}
+[data-composition-id='s11'] .core-l .em{color:#ccff4d}
+[data-composition-id='s11'] .why-late{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s11'] .why-late .ac{color:#8a8a85;margin:0 8px}
+[data-composition-id='s11'] .endnote .arw{color:#ccff4d;margin-left:6px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="46.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[11/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// BEFORE YOU MERGE · <span class="acc">合并之前</span></div>
+      <div class="h2" style="margin-top:18px">考过测验,才准 <span class="em">merge</span></div>
+
+      <div class="lead why-lead">光扫一眼 diff,只看得到<span class="dim">个大概</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row"><div class="n">01</div><div class="rb"><div class="rt">让它先给足上下文</div></div></div>
+        <div class="row"><div class="n">02</div><div class="rb"><div class="rt">就这次改动,出一份小测验考你</div></div></div>
+      </div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="core-l">只有 <span class="em">考满分</span>,才 merge</div>
+        <div class="why-late">不是自虐 <span class="ac">·</span> 是逼你把改动真正吃进脑子</div>
+      </div>
+
+      <div class="status endnote" style="margin-top:26px"><span class="dot"></span>一个真实的例子 <span class="arw">→</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="5.318" data-track-index="5"><div class="sub-inner">一次长会话下来，Claude 做成的事，往往比你以为的<span class="sub-k">多得多</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.331" data-duration="7.376" data-track-index="5"><div class="sub-inner">光扫一眼代码 diff，你只能<span class="sub-k">看个大概</span>，因为很多行为都依赖那些你没细看的既有代码路径。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.865" data-duration="7.87" data-track-index="5"><div class="sub-inner">我的做法是：让它先给我足够的上下文，再就这次改动，出一份<span class="sub-k">小测验</span>来考我。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.735" data-duration="3.373" data-track-index="5"><div class="sub-inner">我只有<span class="sub-k">考满分</span>，才 merge。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.277" data-duration="2.061" data-track-index="5"><div class="sub-inner">你可能觉得这有点<span class="sub-k">自虐</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.338" data-duration="6.372" data-track-index="5"><div class="sub-inner">但它其实是在逼你，把这次改动真正<span class="sub-k">吃进脑子里</span>，而不是稀里糊涂点下合并。</div></div>
+    <div id="sub-7" class="clip sub" data-start="32.881" data-duration="3.517" data-track-index="5"><div class="sub-inner">说了这么多，看一个把它整个跑通的<span class="sub-k">例子</span>最实在。</div></div>
+    <div id="sub-8" class="clip sub" data-start="36.398" data-duration="5.435" data-track-index="5"><div class="sub-inner">Fable 的发布视频，整段是用 <span class="sub-k">Claude Code</span> 剪出来的。</div></div>
+    <div id="sub-9" class="clip sub" data-start="41.833" data-duration="4.636" data-track-index="5"><div class="sub-inner">而剪它的那个人，此前对视频剪辑完全是<span class="sub-k">外行</span>，谈不上任何专业。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.why-lead', 5.3, {y:16, d:.34, ease:'power3.out'});
+    D2.stagger(tl, R+'.row', 13.0, {x:-22, d:.34, step:1.2, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket', 20.7, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket .why-late', 24.3, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.endnote', 32.9, {y:14, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',5.331],['#sub-3',12.865],['#sub-4',20.735],['#sub-5',24.277],['#sub-6',26.338],['#sub-7',32.881],['#sub-8',36.398],['#sub-9',41.833]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 46.633, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

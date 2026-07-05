@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(cyan 工具标签,照 image 范本 s2)—— */
+[data-composition-id='s12'] .taglist{display:flex;gap:10px;margin-top:12px}
+[data-composition-id='s12'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:22px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:3px 13px}
+[data-composition-id='s12'] .status{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="43.467" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[12/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 实战案例 · <span class="acc">FABLE 发布视频</span></div>
+      <div class="h1" style="margin-top:18px">外行剪片,<span class="em">从已知出发</span></div>
+      <div class="lead" style="margin-top:24px">不确定的地方,<span class="em">一个个问清楚</span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">从已知的一点点出发</div>
+          <div class="rd">能剪、能转录 —— 但准不准?</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">让它讲明白 <span class="code">Whisper</span> 转录</div>
+          <div class="rd">能否精确切掉「呃」「嗯」和长停顿</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">要字幕跟说话节奏严丝合缝</div>
+          <div class="late">
+            <div class="rd">拿一份转录做原型 —— 先验证走不走得通</div>
+            <div class="taglist"><span class="tg">Remotion</span></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="status"><span class="dot"></span>从已知 · 问出未知</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.716" data-track-index="5"><div class="sub-inner">他是怎么<span class="sub-k">开始</span>的？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.716" data-duration="3.004" data-track-index="5"><div class="sub-inner">从他已经知道的那<span class="sub-k">一点点</span>出发。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.72" data-duration="6.651" data-track-index="5"><div class="sub-inner">他知道 Claude 能用代码剪视频、能转录，但<span class="sub-k">不确定准不准</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.52" data-duration="9.966" data-track-index="5"><div class="sub-inner">于是他先让 Claude 给他讲明白：<span class="sub-k">Whisper</span> 这类转录到底怎么工作，自己能不能靠它，精确地把那些"呃""嗯"和长停顿切掉。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.636" data-duration="6.717" data-track-index="5"><div class="sub-inner">他还想要画面上的字幕，跟自己说话的<span class="sub-k">节奏严丝合缝</span>地对上，又拿不准做不做得到。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.353" data-duration="6.534" data-track-index="5"><div class="sub-inner">那就让 Claude 先拿一份转录做一个<span class="sub-k">原型</span>出来，验证这条路走不走得通。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.028" data-duration="2.014" data-track-index="5"><div class="sub-inner">最后那一下<span class="sub-k">最见功夫</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="37.042" data-duration="6.245" data-track-index="5"><div class="sub-inner">视频画面看着有点发闷，他知道这是<span class="sub-k">调色</span>的问题，可他根本不懂调色。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 2.0, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 4.8, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 11.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 15.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 21.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .late', 28.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.status', 35.1, {y:14, d:.35, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.716],['#sub-3',4.72],['#sub-4',11.52],['#sub-5',21.636],['#sub-6',28.353],['#sub-7',35.028],['#sub-8',37.042]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.467, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

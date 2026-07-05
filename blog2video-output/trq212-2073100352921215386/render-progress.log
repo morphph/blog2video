@@ -2,3 +2,4 @@ START 22:41:54  node=v22.22.0  scenes=15
 skip   scene-01 (exists)
 render scene-02 rc=0  clip_dur=72.100000  took=148s  22:44:22
 render scene-03 rc=0  clip_dur=41.200000  took=108s  22:46:10
+render scene-04 rc=0  clip_dur=28.333333  took=94s  22:47:44

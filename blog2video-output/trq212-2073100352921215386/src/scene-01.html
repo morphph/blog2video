@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat 手搓;新样式一律加 s01 前缀)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — hook：谁 + 用什么 + 反直觉结论 */
+[data-composition-id='s01'] .a-who{margin-top:38px}
+[data-composition-id='s01'] .a-name{font-weight:900;font-size:66px;line-height:1.05;color:#edebe6}
+[data-composition-id='s01'] .a-role{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s01'] .a-tool{margin-top:40px}
+[data-composition-id='s01'] .a-punch{margin-top:48px;font-weight:900;font-size:62px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .a-punch .hl{margin-top:6px}
+[data-composition-id='s01'] .a-punch .hl .tx{font-size:62px}
+
+/* beat B — pivot：不是模型 / 是你 + 卡在你这一环 */
+[data-composition-id='s01'] .b-cols{margin-top:44px}
+[data-composition-id='s01'] .col-mut .ch{color:#8a8a85}
+[data-composition-id='s01'] .b-punch{margin-top:40px;font-weight:900;font-size:52px;line-height:1.3;color:#edebe6}
+[data-composition-id='s01'] .b-punch .em{color:#ccff4d}
+
+/* beat C — teaser：不聊花哨 prompt，聊把瓶颈搬回你身上 */
+[data-composition-id='s01'] .c-not{margin-top:40px;font-weight:600;font-size:40px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s01'] .c-but{margin-top:24px;font-weight:900;font-size:72px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .c-but .em{color:#ccff4d}
+[data-composition-id='s01'] .c-cur{background:#ccff4d}
+[data-composition-id='s01'] .c-tag{margin-top:46px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="28.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[01/14]</div>
+    </div>
+
+    <!-- BEAT A: hook -->
+    <div class="beat" id="beatA">
+      <div class="kicker a-kick">// 一个反直觉的结论</div>
+      <div class="a-who">
+        <div class="a-name">Thariq</div>
+        <div class="a-role">Anthropic · Claude Code 工程师</div>
+      </div>
+      <div class="chip a-tool"><span class="ci">MODEL</span><span class="ct">Claude Fable 5</span></div>
+      <div class="a-punch">作品好坏，头一回<br><span class="hl"><span class="bar"></span><span class="tx">不取决于模型</span></span></div>
+    </div>
+
+    <!-- BEAT B: pivot -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick">// 那，取决于什么</div>
+      <div class="cols b-cols">
+        <div class="col col-mut b-colA">
+          <div class="ch">不是模型</div>
+          <div class="it"><div class="nm">决定成品的</div><div class="ds">第一次，不再是它</div></div>
+        </div>
+        <div class="col b-colB">
+          <div class="ch">是 你</div>
+          <div class="it"><div class="nm">能不能说清</div><div class="ds">「不知道的那部分」</div></div>
+        </div>
+      </div>
+      <div class="b-punch">模型越强，你反而越容易<span class="em">卡在自己这一环</span></div>
+    </div>
+
+    <!-- BEAT C: teaser -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick">// 今天聊什么</div>
+      <div class="c-not">不聊怎么把 prompt 写得更花哨</div>
+      <div class="c-but">把瓶颈，从模型<br><span class="em">搬回你身上</span><span class="cur sm c-cur"></span></div>
+      <div class="endchip c-tag"><span class="dot"></span><span class="lab">这条缝，到底该怎么补？</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="12.183" data-track-index="5"><div class="sub-inner">Anthropic 做 Claude Code 的工程师 Thariq，最近拿 Claude Fable 5 做了不少东西，得出一个反直觉的结论——作品好不好，头一回<span class="sub-k">不再取决于模型</span>，</div></div>
+    <div id="sub-2" class="clip sub" data-start="12.383" data-duration="4.927" data-track-index="5"><div class="sub-inner">而取决于你能不能把自己"<span class="sub-k">不知道的那部分</span>"说清楚。</div></div>
+    <div id="sub-3" class="clip sub" data-start="17.46" data-duration="3.3" data-track-index="5"><div class="sub-inner">模型越强，你反而越容易<span class="sub-k">卡在自己这一环</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="20.76" data-duration="7.989" data-track-index="5"><div class="sub-inner">今天不聊怎么把 prompt 写得更花哨，只聊这条<span class="sub-k">把瓶颈从模型搬回你身上</span>的缝，到底该怎么补。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 – ~12.4) — sub-1 */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.5);
+    tl.from(R+'.a-who',{x:-26,opacity:0,duration:.4,ease:'expo.out'},2.3);
+    tl.from(R+'.a-tool',{y:18,opacity:0,duration:.32,ease:'power3.out'},5.6);
+    tl.from(R+'.a-punch',{y:20,opacity:0,duration:.4,ease:'power3.out'},8.6);
+    tl.to(R+'.a-punch .hl .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},10.7);
+    tl.to(R+'.a-punch .hl .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},10.86);
+    tl.to(R+'#beatA',{scale:1.03,duration:12.4,ease:'none'},0);
+
+    /* A -> B swap @ 12.383 (sub-2 boundary) */
+    tl.to(R+'#beatA',{opacity:0,duration:.3,ease:'power2.inOut'},12.0);
+    tl.set(R+'#beatA',{opacity:0},12.383);   /* hard kill for non-linear seek */
+    tl.set(R+'#beatB',{opacity:1},12.4);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},12.7);
+    tl.from(R+'.b-colA',{x:-24,opacity:0,duration:.34,ease:'power3.out'},13.5);
+    tl.from(R+'.b-colB',{x:24,opacity:0,duration:.34,ease:'expo.out'},15.1);
+    tl.from(R+'.b-punch',{y:20,opacity:0,duration:.35,ease:'power3.out'},17.6);
+    tl.to(R+'#beatB',{scale:1.03,duration:8.3,ease:'none'},12.4);
+
+    /* B -> C swap @ 20.76 (sub-4 boundary) */
+    tl.to(R+'#beatB',{opacity:0,duration:.3,ease:'power2.inOut'},20.4);
+    tl.set(R+'#beatC',{opacity:1},20.72);
+    tl.set(R+'#beatB',{opacity:0},20.76);   /* hard kill for non-linear seek */
+    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},21.0);
+    tl.from(R+'.c-not',{y:14,opacity:0,duration:.32,ease:'power2.out'},21.6);
+    tl.from(R+'.c-but',{y:22,opacity:0,duration:.42,ease:'expo.out'},23.8);
+    tl.to(R+'.c-cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:5,yoyo:true},24.4);
+    tl.from(R+'.c-tag',{y:18,opacity:0,duration:.35,ease:'power3.out'},26.7);
+    tl.to(R+'#beatC',{scale:1.03,duration:8.15,ease:'none'},20.75);
+
+    /* subtitle fade-ins (local time) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',12.383],['#sub-3',17.46],['#sub-4',20.76]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .h2{margin-top:16px}
+[data-composition-id='s02'] .cols{margin-top:30px}
+[data-composition-id='s02'] .metaphor{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s02'] .metaphor .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s02'] .metaphor .k{color:#ccff4d;font-weight:500}
+[data-composition-id='s02'] .ins{margin-top:24px;border-left:3px solid #ccff4d;padding-left:24px}
+[data-composition-id='s02'] .tlh{margin-top:28px}
+[data-composition-id='s02'] .tl{margin-top:14px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="72.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[02/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// FIRST PRINCIPLE · <span class="acc">第一性原理</span></div>
+      <div class="h2">地图，<span class="em">不是</span>地形</div>
+
+      <div class="cols">
+        <div class="col c-map">
+          <div class="ch">地图 · MAP</div>
+          <div class="it">
+            <div class="nm">prompt · skill · context</div>
+            <div class="ds">你脑子里"该怎么做"的一份表示</div>
+          </div>
+        </div>
+        <div class="col alt c-terr">
+          <div class="ch">地形 · TERRITORY</div>
+          <div class="it">
+            <div class="nm">代码库 · 真实世界</div>
+            <div class="ds">那些实打实的约束</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bracket" style="margin-top:24px">
+        <div class="lead">中间那条<span class="em">缝</span>，就是你的<span class="em">"未知"</span></div>
+        <div class="metaphor m1">撞上未知 <span class="ar">→</span> Claude 没法问，<span class="k">只能猜着走</span></div>
+        <div class="metaphor m2">活儿越大 <span class="ar">→</span> 未知<span class="k">越多</span></div>
+      </div>
+
+      <div class="lead ins">决定质量的：不是模型上限，是把未知<span class="em">讲明白</span></div>
+
+      <div class="kicker tlh">// 挖未知 · 一个反复的过程</div>
+      <div class="tl">
+        <div class="tl-row p0"><div class="yr">动手前</div><div class="wt">提前规划也堵不住</div></div>
+        <div class="tl-row p1"><div class="yr">动手中</div><div class="wt">深埋的未知才冒头<span class="tag mtag">甚至换解法</span></div></div>
+        <div class="tl-row now p2"><div class="yr">动手后</div><div class="wt">回头再挖一遍<span class="badge">反复</span></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="6.727" data-track-index="5"><div class="sub-inner">先说一个特别老、但一到 AI 面前又变得格外灵验的道理：<span class="sub-k">地图，不是地形</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.884" data-duration="11.324" data-track-index="5"><div class="sub-inner">你给 Claude 的东西——你的 prompt、你的 skill、你喂进去的上下文——那是<span class="sub-k">一张地图</span>，是你脑子里"这活儿该怎么做"的一份表示。</div></div>
+    <div id="sub-3" class="clip sub" data-start="18.408" data-duration="7.493" data-track-index="5"><div class="sub-inner">而真正做事的地方，是代码库、是真实世界、是那些实打实的约束，那才是<span class="sub-k">地形</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="26.072" data-duration="4.44" data-track-index="5"><div class="sub-inner">地图和地形之间的那条缝，就是你的"<span class="sub-k">未知</span>"。</div></div>
+    <div id="sub-5" class="clip sub" data-start="30.512" data-duration="8.458" data-track-index="5"><div class="sub-inner">Claude 一旦撞上一个未知，它没法问你，只能按"<span class="sub-k">我猜他大概想要这个</span>"往下走。</div></div>
+    <div id="sub-6" class="clip sub" data-start="38.97" data-duration="3.384" data-track-index="5"><div class="sub-inner">活儿越大，它会撞上的<span class="sub-k">未知就越多</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="42.524" data-duration="10.094" data-track-index="5"><div class="sub-inner">到了 Fable 这一代，我第一次清楚地感到：决定成品质量的，不是模型的能力上限，而是我能不能<span class="sub-k">把这些未知讲明白</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="52.784" data-duration="2.629" data-track-index="5"><div class="sub-inner">而且光靠<span class="sub-k">提前规划救不了你</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="55.413" data-duration="4.044" data-track-index="5"><div class="sub-inner">有些未知埋得很深，要到<span class="sub-k">实现中途才冒出来</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="59.457" data-duration="4.651" data-track-index="5"><div class="sub-inner">有时它甚至会告诉你——这问题压根该<span class="sub-k">换一种解法</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="64.268" data-duration="2.29" data-track-index="5"><div class="sub-inner">所以这<span class="sub-k">不是一锤子买卖</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="66.558" data-duration="5.412" data-track-index="5"><div class="sub-inner">它是一个在动手前、动手中、动手后，<span class="sub-k">反复挖未知</span>的过程。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.c-map', 7.0, {y:22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.c-terr', 18.5, {y:22, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.bracket', 26.2, {y:20, d:.4, ease:'power2.out'});
+    D2.enter(tl, R+'.m1', 30.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.m2', 39.1, {y:12, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.ins', 42.7, {x:-18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.tlh', 52.9, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.p0', 53.1, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.p1', 55.5, {x:-22, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.p1 .mtag', 59.6, {y:0, x:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.p2', 64.4, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.p2 .badge', 66.7, {y:0, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',6.884],['#sub-3',18.408],['#sub-4',26.072],['#sub-5',30.512],['#sub-6',38.97],['#sub-7',42.524],['#sub-8',52.784],['#sub-9',55.413],['#sub-10',59.457],['#sub-11',64.268],['#sub-12',66.558]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 72.1, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

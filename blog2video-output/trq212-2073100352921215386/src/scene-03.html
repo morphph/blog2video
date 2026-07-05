@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有(2×2 未知方格)—— */
+[data-composition-id='s03'] .qen{font-family:'JetBrains Mono',monospace;font-size:22px;color:#8a8a85;letter-spacing:.02em;margin-bottom:8px}
+[data-composition-id='s03'] .col .it{margin-bottom:28px}
+[data-composition-id='s03'] .col .it .nm{font-size:38px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="41.167" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[03/14]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// 拆成一个 <span class="acc">2 × 2</span> 方格</div>
+      <div class="h1" style="margin-top:16px">「未知」<span class="em">的四种样子</span></div>
+
+      <div class="cols" style="margin-top:36px">
+        <div class="col known">
+          <div class="ch">KNOWN //</div>
+          <div class="it q1">
+            <div class="qen">known / known</div>
+            <div class="nm">已知的已知</div>
+            <div class="ds">写进 prompt 的东西</div>
+          </div>
+          <div class="it q2">
+            <div class="qen">known / unknown</div>
+            <div class="nm">已知的未知</div>
+            <div class="ds">知道自己还没想清</div>
+          </div>
+        </div>
+        <div class="col unknown alt">
+          <div class="ch">UNKNOWN //</div>
+          <div class="it q3">
+            <div class="qen">unknown / known</div>
+            <div class="nm">未知的已知<span class="tag">最微妙</span></div>
+            <div class="ds">看见才认得，从不写下</div>
+          </div>
+          <div class="it q4">
+            <div class="qen">unknown / unknown</div>
+            <div class="nm">未知的未知</div>
+            <div class="ds">没想到路上会有的坑</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="2.481" data-track-index="5"><div class="sub-inner">那“<span class="sub-k">未知</span>”到底是什么样子？</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.497" data-duration="3.816" data-track-index="5"><div class="sub-inner">把它拆成一个<span class="sub-k">二乘二的方格</span>，一下就清楚了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.46" data-duration="1.641" data-track-index="5"><div class="sub-inner">第一种，<span class="sub-k">已知的已知</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.101" data-duration="6.398" data-track-index="5"><div class="sub-inner">就是你 <span class="sub-k">prompt</span> 里明明白白写下来的东西——你告诉 agent 你要什么。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.668" data-duration="2.179" data-track-index="5"><div class="sub-inner">第二种，<span class="sub-k">已知的未知</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.847" data-duration="5.012" data-track-index="5"><div class="sub-inner">你还<span class="sub-k">没想清楚</span>，但你清楚自己没想清楚的那些问题。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.012" data-duration="2.249" data-track-index="5"><div class="sub-inner">第三种，<span class="sub-k">未知的已知</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="24.261" data-duration="8.994" data-track-index="5"><div class="sub-inner">这种<span class="sub-k">最微妙</span>——显然到你根本不会写下来，可一旦看见，你立刻认得出“对，就是这个”。</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.424" data-duration="1.942" data-track-index="5"><div class="sub-inner">第四种，<span class="sub-k">未知的未知</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="35.366" data-duration="5.632" data-track-index="5"><div class="sub-inner">你压根没考虑过的东西，你甚至不知道这条路上埋着这么<span class="sub-k">一个坑</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.5, {y:20, d:.42, ease:'expo.out'});
+    /* 左栏(已知的):栏壳+表头 6.0 入场,两格各自晚到绑口播 */
+    D2.enter(tl, R+'.col.known', 6.0, {x:-24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.q1', 6.46, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.q2', 14.668, {y:14, d:.34, ease:'expo.out'});
+    /* 右栏(未知的):栏壳+表头 21.6 入场,两格各自晚到 */
+    D2.enter(tl, R+'.col.unknown', 21.6, {x:24, d:.42, ease:'power3.out'});
+    D2.enter(tl, R+'.q3', 22.012, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.q4', 33.424, {y:14, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',2.497],['#sub-3',6.46],['#sub-4',8.101],['#sub-5',14.668],['#sub-6',16.847],['#sub-7',22.012],['#sub-8',24.261],['#sub-9',33.424],['#sub-10',35.366]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 41.167, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

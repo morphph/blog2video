@@ -5,6 +5,8 @@
 // lives outside cli.mjs, whose contract forbids implicit LLM work.
 if (process.argv[2] === "narration") {
   import("../blog2video-content/narration.mjs");
+} else if (process.argv[2] === "render-d2") {
+  import("../blog2video-content/render-d2.mjs");
 } else {
   import("../blog2video-content/cli.mjs");
 }

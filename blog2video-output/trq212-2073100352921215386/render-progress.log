@@ -11,3 +11,4 @@ render scene-09 rc=0  clip_dur=32.133333  took=97s  22:56:38
 render scene-10 rc=0  clip_dur=26.400000  took=90s  22:58:08
 render scene-11 rc=0  clip_dur=46.633333  took=115s  23:00:03
 render scene-12 rc=0  clip_dur=43.500000  took=114s  23:01:57
+render scene-13 rc=0  clip_dur=38.633333  took=105s  23:03:42

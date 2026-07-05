@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "A Field Guide to Fable: Finding Your Unknowns",
+    "title_zh": "模型太强，反而卡在你这一环？",
+    "word_count": 1650,
+    "slug": "trq212-2073100352921215386"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "整篇是一条环环相扣的论证（地图不是地形→未知的2×2→对称陷阱→动手前中后技法→Fable发布视频压轴案例→综合），案例是全篇payoff，拆开会把铺垫和收束割裂，不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "模型太强，反而卡在你这一环？"
+      }
+    ]
+  }
+}

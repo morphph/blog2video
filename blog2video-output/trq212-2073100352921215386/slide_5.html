@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .label { font-size: 30px; color: #8B5CF6; letter-spacing: 3px; font-weight: 700; margin-bottom: 30px; }
+    .title { font-size: 72px; font-weight: 900; line-height: 1.2; margin-bottom: 48px; }
+    .duo { display: flex; gap: 24px; width: 100%; align-items: stretch; margin-bottom: 42px; }
+    .trap { flex: 1; background: #1A1A2E; border: 1px solid rgba(239,68,68,.25); border-left: 4px solid #EF4444; border-radius: 12px; padding: 34px 24px; text-align: left; }
+    .trap .arw { font-size: 40px; font-weight: 800; color: #EF4444; margin-bottom: 12px; }
+    .trap .h { font-size: 38px; font-weight: 800; color: #FFFFFF; margin-bottom: 14px; }
+    .trap .d { font-size: 27px; color: #B0B0CC; line-height: 1.42; }
+    .root {
+      width: 100%; background: #1A1A2E; border: 1px solid rgba(245,158,11,.3);
+      border-left: 4px solid #F59E0B; border-radius: 12px; padding: 32px 28px; text-align: left;
+      font-size: 31px; color: #FFFFFF; line-height: 1.5;
+    }
+    .root b { color: #F59E0B; font-weight: 800; }
+    .root s { color: #6B7280; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">SYMMETRIC TRAP</div>
+    <div class="title">对称的陷阱</div>
+    <div class="duo">
+      <div class="trap">
+        <div class="arw">太具体 &#8593;</div>
+        <div class="h">死死照做</div>
+        <div class="d">该转向、该变通<br>它也不转</div>
+      </div>
+      <div class="trap">
+        <div class="arw">太模糊 &#8595;</div>
+        <div class="h">退回通用</div>
+        <div class="d">套上行业最佳实践<br>根本不适合你这活</div>
+      </div>
+    </div>
+    <div class="root">病根不在"<s>具体还是模糊</s>"这根刻度上——<br>而在于你有没有<b>替未知留出空间</b>。</div>
+  </div>
+</body>
+</html>

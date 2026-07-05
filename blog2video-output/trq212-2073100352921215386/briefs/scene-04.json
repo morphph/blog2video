@@ -1,0 +1,46 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "principle",
+ "dataDuration": 28.333,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_4.html",
+ "topbarIndex": "[04/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.711,
+   "text": "这里有个反直觉的点。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.708,
+   "localDuration": 6.502,
+   "text": "你看那些顶尖高手写 prompt，会以为他们赢在\"什么都懂、几乎没有未知\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.349,
+   "localDuration": 5.134,
+   "text": "但真相是，他们同样默认自己有未知，并且主动为未知留出余地。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.483,
+   "localDuration": 8.675,
+   "text": "把未知减到最少、又替它做好准备——这件事本身，才是 agentic coding 真正的核心技能。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.317,
+   "localDuration": 2.445,
+   "text": "好消息是，这是一项能练的技能。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 24.762,
+   "localDuration": 3.423,
+   "text": "而练它最好的搭档，恰恰就是 Claude。"
+  }
+ ]
+}

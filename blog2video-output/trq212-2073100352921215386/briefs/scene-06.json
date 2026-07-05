@@ -1,0 +1,46 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "principle",
+ "dataDuration": 34.9,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_6.html",
+ "topbarIndex": "[06/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 2.771,
+   "text": "那 Claude 怎么帮你？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.787,
+   "localDuration": 7.52,
+   "text": "它搜代码库、搜互联网都快得离谱，平均知识面比你广，撞了南墙以后迭代也比你快。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.307,
+   "localDuration": 4.156,
+   "text": "所以它帮你挖未知的速度，远超你自己闷头想。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.632,
+   "localDuration": 3.415,
+   "text": "关键动作只有一个：把你的起点交给它。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.047,
+   "localDuration": 9.105,
+   "text": "告诉它你现在想到哪一步、你对这个问题和这套代码有多少底、让它像一个真正的思考搭档那样跟你一起想。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.304,
+   "localDuration": 7.446,
+   "text": "而承载这一切最顺手的媒介，往往就是一个 HTML 页面——把想法直接摆出来给你看。"
+  }
+ ]
+}

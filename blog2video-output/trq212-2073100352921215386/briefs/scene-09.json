@@ -1,0 +1,46 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "principle",
+ "dataDuration": 32.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_9.html",
+ "topbarIndex": "[09/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 3.985,
+   "text": "你以为最可怕的是那些完全没想到的坑。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.996,
+   "localDuration": 7.084,
+   "text": "但真正烧钱的，是这些\"看到才认得\"的标准，拖到写代码阶段才浮现。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.243,
+   "localDuration": 7.578,
+   "text": "因为 spec 一点点变动，就能让代码实现天差地别，而 agent 很难把之前的改动干净地退回去。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.821,
+   "localDuration": 4.176,
+   "text": "所以要趁做原型、改起来还便宜的时候，把它们先逼出水面。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.159,
+   "localDuration": 3.189,
+   "text": "计划做得再足，未知的未知照样潜伏。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.348,
+   "localDuration": 5.627,
+   "text": "agent 做着做着，可能撞到代码里一个边界情况，被迫改道。"
+  }
+ ]
+}

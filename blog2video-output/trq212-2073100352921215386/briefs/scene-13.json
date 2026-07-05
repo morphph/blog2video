@@ -1,0 +1,52 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "image",
+ "dataDuration": 38.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_13.html",
+ "topbarIndex": "[13/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.281,
+   "text": "他一开始想让 Claude 出几个版本让他挑。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.266,
+   "localDuration": 4.85,
+   "text": "挑着挑着他才反应过来：我连\"好的调色是什么样\"都不知道，我拿什么挑？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.265,
+   "localDuration": 6.761,
+   "text": "于是他掉头，改成让 Claude 先教他调色——先把这个未知补上，再谈选择。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.177,
+   "localDuration": 6.136,
+   "text": "你注意到没有，这整个过程里，他没有一次是\"把活儿甩给 AI\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.313,
+   "localDuration": 3.761,
+   "text": "恰恰相反，他一路在主动补齐自己的未知。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.074,
+   "localDuration": 3.563,
+   "text": "人的判断力是被拉满的，不是被省掉的。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.785,
+   "localDuration": 9.71,
+   "text": "把这些串起来，会看到一件反常识的事：模型越强，认知负担不是被卸下，而是被推回到你身上。"
+  }
+ ]
+}

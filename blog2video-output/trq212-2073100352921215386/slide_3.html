@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; position: relative;
+    }
+    .title { font-size: 68px; font-weight: 900; line-height: 1.2; margin-bottom: 14px; }
+    .sub { font-size: 30px; color: #6B7280; margin-bottom: 48px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 100%; }
+    .q { background: #1A1A2E; border-radius: 12px; padding: 30px 26px; text-align: left; }
+    .q.kk { border: 1px solid rgba(16,185,129,.25); border-left: 4px solid #10B981; }
+    .q.ku { border: 1px solid rgba(59,130,246,.25); border-left: 4px solid #3B82F6; }
+    .q.uk { border: 1px solid rgba(245,158,11,.3); border-left: 4px solid #F59E0B; }
+    .q.uu { border: 1px solid rgba(239,68,68,.3); border-left: 4px solid #EF4444; }
+    .q .en { font-family: 'JetBrains Mono', monospace; font-size: 22px; letter-spacing: 1px; margin-bottom: 8px; }
+    .q.kk .en { color: #10B981; } .q.ku .en { color: #3B82F6; }
+    .q.uk .en { color: #F59E0B; } .q.uu .en { color: #EF4444; }
+    .q .zh { font-size: 34px; font-weight: 800; color: #FFFFFF; margin-bottom: 12px; }
+    .q .d { font-size: 26px; color: #B0B0CC; line-height: 1.4; }
+    .q .tag { display:inline-block; font-size: 22px; color:#F59E0B; margin-top:10px; font-weight:700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">"未知"的四种样子</div>
+    <div class="sub">一个二乘二方格，一下就清楚</div>
+    <div class="grid2">
+      <div class="q kk">
+        <div class="en">known / known</div>
+        <div class="zh">已知的已知</div>
+        <div class="d">prompt 里明明白白<br>写下来的东西</div>
+      </div>
+      <div class="q ku">
+        <div class="en">known / unknown</div>
+        <div class="zh">已知的未知</div>
+        <div class="d">还没想清，<br>但清楚自己没想清</div>
+      </div>
+      <div class="q uk">
+        <div class="en">unknown / known</div>
+        <div class="zh">未知的已知</div>
+        <div class="d">显然到不会写下来，<br>看见就认得</div>
+        <div class="tag">最微妙</div>
+      </div>
+      <div class="q uu">
+        <div class="en">unknown / unknown</div>
+        <div class="zh">未知的未知</div>
+        <div class="d">压根没考虑过，<br>不知道埋着这个坑</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

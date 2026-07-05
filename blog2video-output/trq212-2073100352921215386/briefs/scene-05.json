@@ -1,0 +1,52 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "comparison_cards",
+ "dataDuration": 40.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_5.html",
+ "topbarIndex": "[05/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.22,
+   "text": "给 Claude 下指令，是个很微妙的平衡。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.38,
+   "localDuration": 6.991,
+   "text": "你要是太具体，它会死死照着你的话做，哪怕这时候该转向、该变通，它也不转。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.371,
+   "localDuration": 8.35,
+   "text": "你要是太模糊，它就退回到行业里的通用最佳实践，而那套东西，很可能根本不适合你这个活儿。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.86,
+   "localDuration": 2.37,
+   "text": "注意，这是一个对称的陷阱。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.23,
+   "localDuration": 4.74,
+   "text": "大多数人只怕自己\"说得不够细\"，本能地往死里写详细。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.132,
+   "localDuration": 6.184,
+   "text": "可过度具体和过度模糊，是两个相反方向、同样能把你带沟里的坑。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 32.316,
+   "localDuration": 7.834,
+   "text": "真正的病根不在\"具体还是模糊\"这根刻度上，而在于——你有没有替未知留出空间。"
+  }
+ ]
+}

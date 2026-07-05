@@ -1,0 +1,592 @@
+[
+  {
+    "text": "Anthropic 做 Claude Code 的工程师 Thariq，最近拿 Claude Fable 5 做了不少东西，得出一个反直觉的结论——作品好不好，头一回不再取决于模型，",
+    "pronounce_text": "Anthropic做Claude Code的工程师Thariq，最近拿Claude Fable五做了不少东西，得出一个反直觉的结论。作品好不好，头一回不再取决于模型，",
+    "time_begin": 0,
+    "time_end": 12183.356009070294,
+    "text_begin": 0,
+    "text_end": 91,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 83
+  },
+  {
+    "text": "而取决于你能不能把自己\"不知道的那部分\"说清楚。",
+    "pronounce_text": "而取决于你能不能把自己\"不知道的那部分\"说清楚。",
+    "time_begin": 12383.356009070294,
+    "time_end": 17310.47619047619,
+    "text_begin": 91,
+    "text_end": 115,
+    "pronounce_text_begin": 83,
+    "pronounce_text_end": 107
+  },
+  {
+    "text": "模型越强，你反而越容易卡在自己这一环。今天不聊怎么把 prompt 写得更花哨，只聊这条把瓶颈从模型搬回你身上的缝，到底该怎么补。",
+    "pronounce_text": "模型越强，你反而越容易卡在自己这一环。今天不聊怎么把prompt写得更花哨，只聊这条把瓶颈从模型搬回你身上的缝，到底该怎么补。",
+    "time_begin": 17460,
+    "time_end": 28749.38775510204,
+    "text_begin": 115,
+    "text_end": 180,
+    "pronounce_text_begin": 107,
+    "pronounce_text_end": 170
+  },
+  {
+    "text": "先说一个特别老、但一到 AI 面前又变得格外灵验的道理：地图，不是地形。",
+    "pronounce_text": "先说一个特别老、但一到AI面前又变得格外灵验的道理：地图，不是地形。",
+    "time_begin": 28908,
+    "time_end": 35634.666666666664,
+    "text_begin": 180,
+    "text_end": 216,
+    "pronounce_text_begin": 170,
+    "pronounce_text_end": 204
+  },
+  {
+    "text": "你给 Claude 的东西——你的 prompt、你的 skill、你喂进去的上下文——那是一张地图，是你脑子里\"这活儿该怎么做\"的一份表示。",
+    "pronounce_text": "你给Claude的东西。你的prompt、你的skill、你喂进去的上下文。那是一张地图，是你脑子里\"这活儿该怎么做\"的一份表示。",
+    "time_begin": 35784,
+    "time_end": 47108.21768707483,
+    "text_begin": 216,
+    "text_end": 287,
+    "pronounce_text_begin": 204,
+    "pronounce_text_end": 269
+  },
+  {
+    "text": "而真正做事的地方，是代码库、是真实世界、是那些实打实的约束，那才是地形。",
+    "pronounce_text": "而真正做事的地方，是代码库、是真实世界、是那些实打实的约束，那才是地形。",
+    "time_begin": 47308.21768707483,
+    "time_end": 54801.142857142855,
+    "text_begin": 287,
+    "text_end": 323,
+    "pronounce_text_begin": 269,
+    "pronounce_text_end": 305
+  },
+  {
+    "text": "地图和地形之间的那条缝，就是你的\"未知\"。Claude 一旦撞上一个未知，它没法问你，只能按\"我猜他大概想要这个\"往下走。活儿越大，它会撞上的未知就越多。",
+    "pronounce_text": "地图和地形之间的那条缝，就是你的\"未知\"。Claude一旦撞上一个未知，它没法问你，只能按\"我猜他大概想要这个\"往下走。活儿越大，它会撞上的未知就越多。",
+    "time_begin": 54972,
+    "time_end": 71253.67800453515,
+    "text_begin": 323,
+    "text_end": 400,
+    "pronounce_text_begin": 305,
+    "pronounce_text_end": 381
+  },
+  {
+    "text": "到了 Fable 这一代，我第一次清楚地感到：决定成品质量的，不是模型的能力上限，而是我能不能把这些未知讲明白。",
+    "pronounce_text": "到了Fable这一代，我第一次清楚地感到：决定成品质量的，不是模型的能力上限，而是我能不能把这些未知讲明白。",
+    "time_begin": 71424,
+    "time_end": 81517.56009070294,
+    "text_begin": 400,
+    "text_end": 456,
+    "pronounce_text_begin": 381,
+    "pronounce_text_end": 435
+  },
+  {
+    "text": "而且光靠提前规划救不了你。有些未知埋得很深，要到实现中途才冒出来。有时它甚至会告诉你——这问题压根该换一种解法。",
+    "pronounce_text": "而且光靠提前规划救不了你。有些未知埋得很深，要到实现中途才冒出来。有时它甚至会告诉你。这问题压根该换一种解法。",
+    "time_begin": 81684,
+    "time_end": 93008.21768707482,
+    "text_begin": 456,
+    "text_end": 512,
+    "pronounce_text_begin": 435,
+    "pronounce_text_end": 490
+  },
+  {
+    "text": "所以这不是一锤子买卖。它是一个在动手前、动手中、动手后，反复挖未知的过程。",
+    "pronounce_text": "所以这不是一锤子买卖。它是一个在动手前、动手中、动手后，反复挖未知的过程。",
+    "time_begin": 93168,
+    "time_end": 100869.90476190476,
+    "text_begin": 512,
+    "text_end": 549,
+    "pronounce_text_begin": 490,
+    "pronounce_text_end": 527
+  },
+  {
+    "text": "那\"未知\"到底是什么样子？把它拆成一个二乘二的方格，一下就清楚了。",
+    "pronounce_text": "那\"未知\"到底是什么样子？把它拆成一个二乘二的方格，一下就清楚了。",
+    "time_begin": 101016,
+    "time_end": 107313.09750566893,
+    "text_begin": 549,
+    "text_end": 582,
+    "pronounce_text_begin": 527,
+    "pronounce_text_end": 560
+  },
+  {
+    "text": "第一种，已知的已知。就是你 prompt 里明明白白写下来的东西——你告诉 agent 你要什么。",
+    "pronounce_text": "第一种，已知的已知。就是你prompt里明明白白写下来的东西。你告诉agent你要什么。",
+    "time_begin": 107460,
+    "time_end": 115498.59410430839,
+    "text_begin": 582,
+    "text_end": 631,
+    "pronounce_text_begin": 560,
+    "pronounce_text_end": 604
+  },
+  {
+    "text": "第二种，已知的未知。你还没想清楚，但你清楚自己没想清楚的那些问题。",
+    "pronounce_text": "第二种，已知的未知。你还没想清楚，但你清楚自己没想清楚的那些问题。",
+    "time_begin": 115668,
+    "time_end": 122859.06575963719,
+    "text_begin": 631,
+    "text_end": 664,
+    "pronounce_text_begin": 604,
+    "pronounce_text_end": 637
+  },
+  {
+    "text": "第三种，未知的已知。这种最微妙——显然到你根本不会写下来，可一旦看见，你立刻认得出\"对，就是这个\"。",
+    "pronounce_text": "第三种，未知的已知。这种最微妙。显然到你根本不会写下来，可一旦看见，你立刻认得出\"对，就是这个\"。",
+    "time_begin": 123012,
+    "time_end": 134254.947845805,
+    "text_begin": 664,
+    "text_end": 714,
+    "pronounce_text_begin": 637,
+    "pronounce_text_end": 686
+  },
+  {
+    "text": "第四种，未知的未知。你压根没考虑过的东西，你甚至不知道这条路上埋着这么一个坑。",
+    "pronounce_text": "第四种，未知的未知。你压根没考虑过的东西，你甚至不知道这条路上埋着这么一个坑。",
+    "time_begin": 134424,
+    "time_end": 141998.19501133787,
+    "text_begin": 714,
+    "text_end": 753,
+    "pronounce_text_begin": 686,
+    "pronounce_text_end": 725
+  },
+  {
+    "text": "这里有个反直觉的点。你看那些顶尖高手写 prompt，会以为他们赢在\"什么都懂、几乎没有未知\"。",
+    "pronounce_text": "这里有个反直觉的点。你看那些顶尖高手写prompt，会以为他们赢在\"什么都懂、几乎没有未知\"。",
+    "time_begin": 142164,
+    "time_end": 150376.74376417234,
+    "text_begin": 753,
+    "text_end": 801,
+    "pronounce_text_begin": 725,
+    "pronounce_text_end": 772
+  },
+  {
+    "text": "但真相是，他们同样默认自己有未知，并且主动为未知留出余地。把未知减到最少、又替它做好准备——这件事本身，才是 agentic coding 真正的核心技能。",
+    "pronounce_text": "但真相是，他们同样默认自己有未知，并且主动为未知留出余地。把未知减到最少、又替它做好准备。这件事本身，才是agentic coding真正的核心技能。",
+    "time_begin": 150516,
+    "time_end": 164324.75283446713,
+    "text_begin": 801,
+    "text_end": 879,
+    "pronounce_text_begin": 772,
+    "pronounce_text_end": 847
+  },
+  {
+    "text": "好消息是，这是一项能练的技能。而练它最好的搭档，恰恰就是 Claude。",
+    "pronounce_text": "好消息是，这是一项能练的技能。而练它最好的搭档，恰恰就是Claude。",
+    "time_begin": 164484,
+    "time_end": 170351.5283446712,
+    "text_begin": 879,
+    "text_end": 915,
+    "pronounce_text_begin": 847,
+    "pronounce_text_end": 882
+  },
+  {
+    "text": "给 Claude 下指令，是个很微妙的平衡。",
+    "pronounce_text": "给Claude下指令，是个很微妙的平衡。",
+    "time_begin": 170496,
+    "time_end": 173716.45351473923,
+    "text_begin": 915,
+    "text_end": 937,
+    "pronounce_text_begin": 882,
+    "pronounce_text_end": 902
+  },
+  {
+    "text": "你要是太具体，它会死死照着你的话做，哪怕这时候该转向、该变通，它也不转。你要是太模糊，它就退回到行业里的通用最佳实践，而那套东西，很可能根本不适合你这个活儿。",
+    "pronounce_text": "你要是太具体，它会死死照着你的话做，哪怕这时候该转向、该变通，它也不转。你要是太模糊，它就退回到行业里的通用最佳实践，而那套东西，很可能根本不适合你这个活儿。",
+    "time_begin": 173880,
+    "time_end": 189221.26984126985,
+    "text_begin": 937,
+    "text_end": 1016,
+    "pronounce_text_begin": 902,
+    "pronounce_text_end": 981
+  },
+  {
+    "text": "注意，这是一个对称的陷阱。大多数人只怕自己\"说得不够细\"，本能地往死里写详细。",
+    "pronounce_text": "注意，这是一个对称的陷阱。大多数人只怕自己\"说得不够细\"，本能地往死里写详细。",
+    "time_begin": 189360,
+    "time_end": 196469.79591836734,
+    "text_begin": 1016,
+    "text_end": 1055,
+    "pronounce_text_begin": 981,
+    "pronounce_text_end": 1020
+  },
+  {
+    "text": "可过度具体和过度模糊，是两个相反方向、同样能把你带沟里的坑。真正的病根不在\"具体还是模糊\"这根刻度上，而在于——你有没有替未知留出空间。",
+    "pronounce_text": "可过度具体和过度模糊，是两个相反方向、同样能把你带沟里的坑。真正的病根不在\"具体还是模糊\"这根刻度上，而在于。你有没有替未知留出空间。",
+    "time_begin": 196632,
+    "time_end": 210649.73242630385,
+    "text_begin": 1055,
+    "text_end": 1123,
+    "pronounce_text_begin": 1020,
+    "pronounce_text_end": 1087
+  },
+  {
+    "text": "那 Claude 怎么帮你？它搜代码库、搜互联网都快得离谱，平均知识面比你广，撞了南墙以后迭代也比你快。所以它帮你挖未知的速度，远超你自己闷头想。",
+    "pronounce_text": "那Claude怎么帮你？它搜代码库、搜互联网都快得离谱，平均知识面比你广，撞了南墙以后迭代也比你快。所以它帮你挖未知的速度，远超你自己闷头想。",
+    "time_begin": 210816,
+    "time_end": 225263.3015873016,
+    "text_begin": 1123,
+    "text_end": 1196,
+    "pronounce_text_begin": 1087,
+    "pronounce_text_end": 1158
+  },
+  {
+    "text": "关键动作只有一个：把你的起点交给它。告诉它你现在想到哪一步、你对这个问题和这套代码有多少底、让它像一个真正的思考搭档那样跟你一起想。",
+    "pronounce_text": "关键动作只有一个：把你的起点交给它。告诉它你现在想到哪一步、你对这个问题和这套代码有多少底、让它像一个真正的思考搭档那样跟你一起想。",
+    "time_begin": 225432,
+    "time_end": 237952.04535147393,
+    "text_begin": 1196,
+    "text_end": 1262,
+    "pronounce_text_begin": 1158,
+    "pronounce_text_end": 1224
+  },
+  {
+    "text": "而承载这一切最顺手的媒介，往往就是一个 HTML 页面——把想法直接摆出来给你看。",
+    "pronounce_text": "而承载这一切最顺手的媒介，往往就是一个HTML页面。把想法直接摆出来给你看。",
+    "time_begin": 238104,
+    "time_end": 245550.48526077098,
+    "text_begin": 1262,
+    "text_end": 1303,
+    "pronounce_text_begin": 1224,
+    "pronounce_text_end": 1262
+  },
+  {
+    "text": "真正的技法，是从动手之前就开始的。这里我挑最有用的两招讲。",
+    "pronounce_text": "真正的技法，是从动手之前就开始的。这里我挑最有用的两招讲。",
+    "time_begin": 245700,
+    "time_end": 251312.10884353743,
+    "text_begin": 1303,
+    "text_end": 1332,
+    "pronounce_text_begin": 1262,
+    "pronounce_text_end": 1291
+  },
+  {
+    "text": "第一招，盲区扫描。当你要在一块完全陌生的代码里加功能，或者做一件你根本不在行的事，你身上全是\"未知的未知\"——你连该问什么问题都不知道，不知道什么算好，不知道前人踩过哪些坑。",
+    "pronounce_text": "第一招，盲区扫描。当你要在一块完全陌生的代码里加功能，或者做一件你根本不在行的事，你身上全是\"未知的未知\"。你连该问什么问题都不知道，不知道什么算好，不知道前人踩过哪些坑。",
+    "time_begin": 251460,
+    "time_end": 268333.78684807254,
+    "text_begin": 1332,
+    "text_end": 1419,
+    "pronounce_text_begin": 1291,
+    "pronounce_text_end": 1377
+  },
+  {
+    "text": "这时候，你就直接对 Claude 说这两个词：blindspot pass，加上 unknown unknowns。",
+    "pronounce_text": "这时候，你就直接对Claude说这两个词：blindspot pass，加上unknown unknowns。",
+    "time_begin": 268488,
+    "time_end": 276654.30385487527,
+    "text_begin": 1419,
+    "text_end": 1477,
+    "pronounce_text_begin": 1377,
+    "pronounce_text_end": 1432
+  },
+  {
+    "text": "比如：\"我要加一个新的 auth provider，可我对这个代码库的 auth 模块一无所知，你帮我做一次盲区扫描，把我相关的未知的未知找出来，好让我能更好地给你下指令。",
+    "pronounce_text": "比如：\"我要加一个新的auth provider，可我对这个代码库的auth模块一无所知，你帮我做一次盲区扫描，把我相关的未知的未知找出来，好让我能更好地给你下指令。",
+    "time_begin": 276804,
+    "time_end": 290485.04308390024,
+    "text_begin": 1477,
+    "text_end": 1563,
+    "pronounce_text_begin": 1432,
+    "pronounce_text_end": 1515
+  },
+  {
+    "text": "你把\"我是谁、我懂多少\"这个背景交清楚，它就能对着你的盲区照一遍光。",
+    "pronounce_text": "你把\"我是谁、我懂多少\"这个背景交清楚，它就能对着你的盲区照一遍光。",
+    "time_begin": 290628,
+    "time_end": 297691.3560090703,
+    "text_begin": 1563,
+    "text_end": 1597,
+    "pronounce_text_begin": 1515,
+    "pronounce_text_end": 1549
+  },
+  {
+    "text": "第二招，让它反过来面试你。头脑风暴做完，你手上通常仍有没理清的地方。那就让 Claude 来采访你：一次只问一个问题，而且优先问那些\"我的回答会改变整个架构\"的问题。",
+    "pronounce_text": "第二招，让它反过来面试你。头脑风暴做完，你手上通常仍有没理清的地方。那就让Claude来采访你：一次只问一个问题，而且优先问那些\"我的回答会改变整个架构\"的问题。",
+    "time_begin": 297828,
+    "time_end": 313378.24943310657,
+    "text_begin": 1597,
+    "text_end": 1680,
+    "pronounce_text_begin": 1549,
+    "pronounce_text_end": 1630
+  },
+  {
+    "text": "一句话就够——它会顺着你的答案，把你自己都没意识到的模糊地带，一个个抠出来。",
+    "pronounce_text": "一句话就够。它会顺着你的答案，把你自己都没意识到的模糊地带，一个个抠出来。",
+    "time_begin": 313524,
+    "time_end": 321307.1746031746,
+    "text_begin": 1680,
+    "text_end": 1718,
+    "pronounce_text_begin": 1630,
+    "pronounce_text_end": 1667
+  },
+  {
+    "text": "这里藏着一个最容易被低估的点：最贵的未知，往往是第三种，那个\"未知的已知\"。就是你心里其实有杆秤、只是从没写下来的隐性标准。",
+    "pronounce_text": "这里藏着一个最容易被低估的点：最贵的未知，往往是第三种，那个\"未知的已知\"。就是你心里其实有杆秤、只是从没写下来的隐性标准。",
+    "time_begin": 321444,
+    "time_end": 333882.7755102041,
+    "text_begin": 1718,
+    "text_end": 1780,
+    "pronounce_text_begin": 1667,
+    "pronounce_text_end": 1729
+  },
+  {
+    "text": "你以为最可怕的是那些完全没想到的坑。但真正烧钱的，是这些\"看到才认得\"的标准，拖到写代码阶段才浮现。",
+    "pronounce_text": "你以为最可怕的是那些完全没想到的坑。但真正烧钱的，是这些\"看到才认得\"的标准，拖到写代码阶段才浮现。",
+    "time_begin": 334044,
+    "time_end": 345112.79818594106,
+    "text_begin": 1780,
+    "text_end": 1830,
+    "pronounce_text_begin": 1729,
+    "pronounce_text_end": 1779
+  },
+  {
+    "text": "因为 spec 一点点变动，就能让代码实现天差地别，而 agent 很难把之前的改动干净地退回去。所以要趁做原型、改起来还便宜的时候，把它们先逼出水面。",
+    "pronounce_text": "因为spec一点点变动，就能让代码实现天差地别，而agent很难把之前的改动干净地退回去。所以要趁做原型、改起来还便宜的时候，把它们先逼出水面。",
+    "time_begin": 345276,
+    "time_end": 357029.78684807254,
+    "text_begin": 1830,
+    "text_end": 1906,
+    "pronounce_text_begin": 1779,
+    "pronounce_text_end": 1851
+  },
+  {
+    "text": "计划做得再足，未知的未知照样潜伏。agent 做着做着，可能撞到代码里一个边界情况，被迫改道。",
+    "pronounce_text": "计划做得再足，未知的未知照样潜伏。agent做着做着，可能撞到代码里一个边界情况，被迫改道。",
+    "time_begin": 357192,
+    "time_end": 366008.462585034,
+    "text_begin": 1906,
+    "text_end": 1953,
+    "pronounce_text_begin": 1851,
+    "pronounce_text_end": 1897
+  },
+  {
+    "text": "所以我会让 Claude Code 一边做，一边记一个临时的 implementation-notes 文件。",
+    "pronounce_text": "所以我会让Claude Code一边做，一边记一个临时的implementation-notes文件。",
+    "time_begin": 366156,
+    "time_end": 371942.25850340136,
+    "text_begin": 1953,
+    "text_end": 2008,
+    "pronounce_text_begin": 1897,
+    "pronounce_text_end": 1948
+  },
+  {
+    "text": "规矩很简单：一旦撞上边界、被迫偏离原计划，就选那个最保守的方案，把这次偏离记到\"Deviations\"那一栏底下，然后接着往前走。",
+    "pronounce_text": "规矩很简单：一旦撞上边界、被迫偏离原计划，就选那个最保守的方案，把这次偏离记到\"Deviations\"那一栏底下，然后接着往前走。",
+    "time_begin": 372096,
+    "time_end": 383547.9274376417,
+    "text_begin": 2008,
+    "text_end": 2073,
+    "pronounce_text_begin": 1948,
+    "pronounce_text_end": 2013
+  },
+  {
+    "text": "这样等下一轮再来，你手里就有一份\"它当时到底为什么这么决定\"的账本。",
+    "pronounce_text": "这样等下一轮再来，你手里就有一份\"它当时到底为什么这么决定\"的账本。",
+    "time_begin": 383688,
+    "time_end": 390112.8072562358,
+    "text_begin": 2073,
+    "text_end": 2107,
+    "pronounce_text_begin": 2013,
+    "pronounce_text_end": 2047
+  },
+  {
+    "text": "活儿做完，别急着合并。",
+    "pronounce_text": "活儿做完，别急着合并。",
+    "time_begin": 390276,
+    "time_end": 392428.33560090704,
+    "text_begin": 2107,
+    "text_end": 2118,
+    "pronounce_text_begin": 2047,
+    "pronounce_text_end": 2058
+  },
+  {
+    "text": "一次长会话下来，Claude 做成的事，往往比你以为的多得多。光扫一眼代码 diff，你只能看个大概，因为很多行为都依赖那些你没细看的既有代码路径。",
+    "pronounce_text": "一次长会话下来，Claude做成的事，往往比你以为的多得多。光扫一眼代码diff，你只能看个大概，因为很多行为都依赖那些你没细看的既有代码路径。",
+    "time_begin": 392580,
+    "time_end": 405274.19501133787,
+    "text_begin": 2118,
+    "text_end": 2192,
+    "pronounce_text_begin": 2058,
+    "pronounce_text_end": 2130
+  },
+  {
+    "text": "我的做法是：让它先给我足够的上下文，再就这次改动，出一份小测验来考我。我只有考满分，才 merge。",
+    "pronounce_text": "我的做法是：让它先给我足够的上下文，再就这次改动，出一份小测验来考我。我只有考满分，才merge。",
+    "time_begin": 405432,
+    "time_end": 416674.94784580497,
+    "text_begin": 2192,
+    "text_end": 2242,
+    "pronounce_text_begin": 2130,
+    "pronounce_text_end": 2179
+  },
+  {
+    "text": "你可能觉得这有点自虐。但它其实是在逼你，把这次改动真正吃进脑子里，而不是稀里糊涂点下合并。",
+    "pronounce_text": "你可能觉得这有点自虐。但它其实是在逼你，把这次改动真正吃进脑子里，而不是稀里糊涂点下合并。",
+    "time_begin": 416844,
+    "time_end": 425277.3333333333,
+    "text_begin": 2242,
+    "text_end": 2287,
+    "pronounce_text_begin": 2179,
+    "pronounce_text_end": 2224
+  },
+  {
+    "text": "说了这么多，看一个把它整个跑通的例子最实在。Fable 的发布视频，整段是用 Claude Code 剪出来的。而剪它的那个人，此前对视频剪辑完全是外行，谈不上任何专业。",
+    "pronounce_text": "说了这么多，看一个把它整个跑通的例子最实在。Fable的发布视频，整段是用Claude Code剪出来的。而剪它的那个人，此前对视频剪辑完全是外行，谈不上任何专业。",
+    "time_begin": 425448,
+    "time_end": 439036.1632653061,
+    "text_begin": 2287,
+    "text_end": 2372,
+    "pronounce_text_begin": 2224,
+    "pronounce_text_end": 2306
+  },
+  {
+    "text": "他是怎么开始的？从他已经知道的那一点点出发。他知道 Claude 能用代码剪视频、能转录，但不确定准不准。",
+    "pronounce_text": "他是怎么开始的？从他已经知道的那一点点出发。他知道Claude能用代码剪视频、能转录，但不确定准不准。",
+    "time_begin": 439200,
+    "time_end": 450570.6575963719,
+    "text_begin": 2372,
+    "text_end": 2425,
+    "pronounce_text_begin": 2306,
+    "pronounce_text_end": 2357
+  },
+  {
+    "text": "于是他先让 Claude 给他讲明白：Whisper 这类转录到底怎么工作，自己能不能靠它，精确地把那些\"呃\"\"嗯\"和长停顿切掉。",
+    "pronounce_text": "于是他先让Claude给他讲明白：Whisper这类转录到底怎么工作，自己能不能靠它，精确地把那些\"呃\"\"嗯\"和长停顿切掉。",
+    "time_begin": 450720,
+    "time_end": 460685.85034013604,
+    "text_begin": 2425,
+    "text_end": 2490,
+    "pronounce_text_begin": 2357,
+    "pronounce_text_end": 2419
+  },
+  {
+    "text": "他还想要画面上的字幕，跟自己说话的节奏严丝合缝地对上，又拿不准做不做得到。那就让 Claude 先拿一份转录做一个原型出来，验证这条路走不走得通。",
+    "pronounce_text": "他还想要画面上的字幕，跟自己说话的节奏严丝合缝地对上，又拿不准做不做得到。那就让Claude先拿一份转录做一个原型出来，验证这条路走不走得通。",
+    "time_begin": 460836,
+    "time_end": 474087.4739229025,
+    "text_begin": 2490,
+    "text_end": 2563,
+    "pronounce_text_begin": 2419,
+    "pronounce_text_end": 2490
+  },
+  {
+    "text": "最后那一下最见功夫。视频画面看着有点发闷，他知道这是调色的问题，可他根本不懂调色。",
+    "pronounce_text": "最后那一下最见功夫。视频画面看着有点发闷，他知道这是调色的问题，可他根本不懂调色。",
+    "time_begin": 474228,
+    "time_end": 482487.1836734694,
+    "text_begin": 2563,
+    "text_end": 2604,
+    "pronounce_text_begin": 2490,
+    "pronounce_text_end": 2531
+  },
+  {
+    "text": "他一开始想让 Claude 出几个版本让他挑。挑着挑着他才反应过来：我连\"好的调色是什么样\"都不知道，我拿什么挑？",
+    "pronounce_text": "他一开始想让Claude出几个版本让他挑。挑着挑着他才反应过来：我连\"好的调色是什么样\"都不知道，我拿什么挑？",
+    "time_begin": 482652,
+    "time_end": 490783.4739229025,
+    "text_begin": 2604,
+    "text_end": 2661,
+    "pronounce_text_begin": 2531,
+    "pronounce_text_end": 2586
+  },
+  {
+    "text": "于是他掉头，改成让 Claude 先教他调色——先把这个未知补上，再谈选择。",
+    "pronounce_text": "于是他掉头，改成让Claude先教他调色。先把这个未知补上，再谈选择。",
+    "time_begin": 490932,
+    "time_end": 497693.49659863947,
+    "text_begin": 2661,
+    "text_end": 2699,
+    "pronounce_text_begin": 2586,
+    "pronounce_text_end": 2621
+  },
+  {
+    "text": "你注意到没有，这整个过程里，他没有一次是\"把活儿甩给 AI\"。恰恰相反，他一路在主动补齐自己的未知。人的判断力是被拉满的，不是被省掉的。",
+    "pronounce_text": "你注意到没有，这整个过程里，他没有一次是\"把活儿甩给AI\"。恰恰相反，他一路在主动补齐自己的未知。人的判断力是被拉满的，不是被省掉的。",
+    "time_begin": 497844,
+    "time_end": 511304.45351473923,
+    "text_begin": 2699,
+    "text_end": 2767,
+    "pronounce_text_begin": 2621,
+    "pronounce_text_end": 2688
+  },
+  {
+    "text": "把这些串起来，会看到一件反常识的事：模型越强，认知负担不是被卸下，而是被推回到你身上。",
+    "pronounce_text": "把这些串起来，会看到一件反常识的事：模型越强，认知负担不是被卸下，而是被推回到你身上。",
+    "time_begin": 511452,
+    "time_end": 521162.43083900225,
+    "text_begin": 2767,
+    "text_end": 2810,
+    "pronounce_text_begin": 2688,
+    "pronounce_text_end": 2731
+  },
+  {
+    "text": "它不是\"一句话出活\"的捷径。模型越强，你反而要花更多时间去定义未知、写实现计划、做盲区扫描、考过测验才敢合并。",
+    "pronounce_text": "它不是\"一句话出活\"的捷径。模型越强，你反而要花更多时间去定义未知、写实现计划、做盲区扫描、考过测验才敢合并。",
+    "time_begin": 521316,
+    "time_end": 533069.7868480725,
+    "text_begin": 2810,
+    "text_end": 2865,
+    "pronounce_text_begin": 2731,
+    "pronounce_text_end": 2786
+  },
+  {
+    "text": "以前的问题是\"模型会不会做\"，现在的问题是\"你有没有说清你不知道自己不知道的那部分\"——最贵的 bug，藏在你从来没写下来的那句话里。",
+    "pronounce_text": "以前的问题是\"模型会不会做\"，现在的问题是\"你有没有说清你不知道自己不知道的那部分\"。最贵的bug，藏在你从来没写下来的那句话里。",
+    "time_begin": 533232,
+    "time_end": 544985.7868480725,
+    "text_begin": 2865,
+    "text_end": 2932,
+    "pronounce_text_begin": 2786,
+    "pronounce_text_end": 2851
+  },
+  {
+    "text": "而每一次讲解、每一次头脑风暴、每一次面试、每一个原型、每一份参考，本质上都是同一件事：趁改动还便宜的时候，把你原本不知道的东西先挖出来。",
+    "pronounce_text": "而每一次讲解、每一次头脑风暴、每一次面试、每一个原型、每一份参考，本质上都是同一件事：趁改动还便宜的时候，把你原本不知道的东西先挖出来。",
+    "time_begin": 545148,
+    "time_end": 559374.7120181406,
+    "text_begin": 2932,
+    "text_end": 3000,
+    "pronounce_text_begin": 2851,
+    "pronounce_text_end": 2919
+  },
+  {
+    "text": "你这一次学到的，会变成你下一次的地图。",
+    "pronounce_text": "你这一次学到的，会变成你下一次的地图。",
+    "time_begin": 559574.7120181406,
+    "time_end": 563224.7346938775,
+    "text_begin": 3000,
+    "text_end": 3019,
+    "pronounce_text_begin": 2919,
+    "pronounce_text_end": 2938
+  },
+  {
+    "text": "还要说一句公道话：这些技法是一个工具箱，不是一张一步步照抄的清单。不用每次都全套上，什么时候用哪一招，靠的是你自己的判断。照单全收，反而是误用。",
+    "pronounce_text": "还要说一句公道话：这些技法是一个工具箱，不是一张一步步照抄的清单。不用每次都全套上，什么时候用哪一招，靠的是你自己的判断。照单全收，反而是误用。",
+    "time_begin": 563364,
+    "time_end": 578577.560090703,
+    "text_begin": 3019,
+    "text_end": 3091,
+    "pronounce_text_begin": 2938,
+    "pronounce_text_end": 3010
+  },
+  {
+    "text": "所以，下一个项目开始的时候，别急着写那份看起来天衣无缝的 prompt。先问 Claude 一句：帮我找找，我这次有哪些未知。",
+    "pronounce_text": "所以，下一个项目开始的时候，别急着写那份看起来天衣无缝的prompt。先问Claude一句：帮我找找，我这次有哪些未知。",
+    "time_begin": 578736,
+    "time_end": 589723.5283446712,
+    "text_begin": 3091,
+    "text_end": 3154,
+    "pronounce_text_begin": 3010,
+    "pronounce_text_end": 3070
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 589860,
+    "time_end": 594833.560090703,
+    "text_begin": 3154,
+    "text_end": 3181,
+    "pronounce_text_begin": 3070,
+    "pronounce_text_end": 3096
+  }
+]

@@ -1,0 +1,28 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "principle",
+ "dataDuration": 20.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_8.html",
+ "topbarIndex": "[08/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 7.783,
+   "text": "一句话就够——它会顺着你的答案，把你自己都没意识到的模糊地带，一个个抠出来。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.911,
+   "localDuration": 7.624,
+   "text": "这里藏着一个最容易被低估的点：最贵的未知，往往是第三种，那个\"未知的已知\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.535,
+   "localDuration": 4.815,
+   "text": "就是你心里其实有杆秤、只是从没写下来的隐性标准。"
+  }
+ ]
+}

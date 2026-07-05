@@ -1,0 +1,70 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 67.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_7.html",
+ "topbarIndex": "[07/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.29,
+   "text": "真正的技法，是从动手之前就开始的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.29,
+   "localDuration": 2.322,
+   "text": "这里我挑最有用的两招讲。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.76,
+   "localDuration": 1.746,
+   "text": "第一招，盲区扫描。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.506,
+   "localDuration": 15.128,
+   "text": "当你要在一块完全陌生的代码里加功能，或者做一件你根本不在行的事，你身上全是\"未知的未知\"——你连该问什么问题都不知道，不知道什么算好，不知道前人踩过哪些坑。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.788,
+   "localDuration": 8.166,
+   "text": "这时候，你就直接对 Claude 说这两个词：blindspot pass，加上 unknown unknowns。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 31.104,
+   "localDuration": 13.681,
+   "text": "比如：\"我要加一个新的 auth provider，可我对这个代码库的 auth 模块一无所知，你帮我做一次盲区扫描，把我相关的未知的未知找出来，好让我能更好地给你下指令。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 44.928,
+   "localDuration": 7.063,
+   "text": "你把\"我是谁、我懂多少\"这个背景交清楚，它就能对着你的盲区照一遍光。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 52.128,
+   "localDuration": 2.436,
+   "text": "第二招，让它反过来面试你。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 54.564,
+   "localDuration": 3.934,
+   "text": "头脑风暴做完，你手上通常仍有没理清的地方。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 58.498,
+   "localDuration": 9.18,
+   "text": "那就让 Claude 来采访你：一次只问一个问题，而且优先问那些\"我的回答会改变整个架构\"的问题。"
+  }
+ ]
+}

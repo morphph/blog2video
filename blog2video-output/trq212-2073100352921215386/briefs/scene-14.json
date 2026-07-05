@@ -1,0 +1,82 @@
+{
+ "scene": 14,
+ "id": "s14",
+ "type": "summary",
+ "dataDuration": 74.533,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_14.html",
+ "topbarIndex": "[14/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 2.992,
+   "text": "它不是\"一句话出活\"的捷径。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.008,
+   "localDuration": 8.762,
+   "text": "模型越强，你反而要花更多时间去定义未知、写实现计划、做盲区扫描、考过测验才敢合并。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.932,
+   "localDuration": 11.754,
+   "text": "以前的问题是\"模型会不会做\"，现在的问题是\"你有没有说清你不知道自己不知道的那部分\"——最贵的 bug，藏在你从来没写下来的那句话里。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 23.848,
+   "localDuration": 14.227,
+   "text": "而每一次讲解、每一次头脑风暴、每一次面试、每一个原型、每一份参考，本质上都是同一件事：趁改动还便宜的时候，把你原本不知道的东西先挖出来。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 38.275,
+   "localDuration": 3.65,
+   "text": "你这一次学到的，会变成你下一次的地图。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 42.064,
+   "localDuration": 6.973,
+   "text": "还要说一句公道话：这些技法是一个工具箱，不是一张一步步照抄的清单。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 49.037,
+   "localDuration": 5.916,
+   "text": "不用每次都全套上，什么时候用哪一招，靠的是你自己的判断。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 54.953,
+   "localDuration": 2.325,
+   "text": "照单全收，反而是误用。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 57.436,
+   "localDuration": 6.279,
+   "text": "所以，下一个项目开始的时候，别急着写那份看起来天衣无缝的 prompt。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 63.715,
+   "localDuration": 4.709,
+   "text": "先问 Claude 一句：帮我找找，我这次有哪些未知。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 68.56,
+   "localDuration": 3.684,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 72.244,
+   "localDuration": 1.29,
+   "text": "我们下期再见。"
+  }
+ ]
+}

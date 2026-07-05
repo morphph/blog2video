@@ -1,0 +1,70 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "comparison_cards",
+ "dataDuration": 41.167,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_3.html",
+ "topbarIndex": "[03/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 2.481,
+   "text": "那\"未知\"到底是什么样子？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.497,
+   "localDuration": 3.816,
+   "text": "把它拆成一个二乘二的方格，一下就清楚了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.46,
+   "localDuration": 1.641,
+   "text": "第一种，已知的已知。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.101,
+   "localDuration": 6.398,
+   "text": "就是你 prompt 里明明白白写下来的东西——你告诉 agent 你要什么。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.668,
+   "localDuration": 2.179,
+   "text": "第二种，已知的未知。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.847,
+   "localDuration": 5.012,
+   "text": "你还没想清楚，但你清楚自己没想清楚的那些问题。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.012,
+   "localDuration": 2.249,
+   "text": "第三种，未知的已知。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 24.261,
+   "localDuration": 8.994,
+   "text": "这种最微妙——显然到你根本不会写下来，可一旦看见，你立刻认得出\"对，就是这个\"。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.424,
+   "localDuration": 1.942,
+   "text": "第四种，未知的未知。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 35.366,
+   "localDuration": 5.632,
+   "text": "你压根没考虑过的东西，你甚至不知道这条路上埋着这么一个坑。"
+  }
+ ]
+}

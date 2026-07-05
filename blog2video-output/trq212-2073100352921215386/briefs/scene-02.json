@@ -1,0 +1,82 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "principle",
+ "dataDuration": 72.1,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/trq212-2073100352921215386/slide_2.html",
+ "topbarIndex": "[02/14]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 6.727,
+   "text": "先说一个特别老、但一到 AI 面前又变得格外灵验的道理：地图，不是地形。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.884,
+   "localDuration": 11.324,
+   "text": "你给 Claude 的东西——你的 prompt、你的 skill、你喂进去的上下文——那是一张地图，是你脑子里\"这活儿该怎么做\"的一份表示。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 18.408,
+   "localDuration": 7.493,
+   "text": "而真正做事的地方，是代码库、是真实世界、是那些实打实的约束，那才是地形。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 26.072,
+   "localDuration": 4.44,
+   "text": "地图和地形之间的那条缝，就是你的\"未知\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 30.512,
+   "localDuration": 8.458,
+   "text": "Claude 一旦撞上一个未知，它没法问你，只能按\"我猜他大概想要这个\"往下走。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 38.97,
+   "localDuration": 3.384,
+   "text": "活儿越大，它会撞上的未知就越多。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 42.524,
+   "localDuration": 10.094,
+   "text": "到了 Fable 这一代，我第一次清楚地感到：决定成品质量的，不是模型的能力上限，而是我能不能把这些未知讲明白。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 52.784,
+   "localDuration": 2.629,
+   "text": "而且光靠提前规划救不了你。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 55.413,
+   "localDuration": 4.044,
+   "text": "有些未知埋得很深，要到实现中途才冒出来。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 59.457,
+   "localDuration": 4.651,
+   "text": "有时它甚至会告诉你——这问题压根该换一种解法。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 64.268,
+   "localDuration": 2.29,
+   "text": "所以这不是一锤子买卖。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 66.558,
+   "localDuration": 5.412,
+   "text": "它是一个在动手前、动手中、动手后，反复挖未知的过程。"
+  }
+ ]
+}

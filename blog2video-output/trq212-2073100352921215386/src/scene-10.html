@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .lead{margin-top:16px}
+[data-composition-id='s10'] .rows{margin-top:44px}
+[data-composition-id='s10'] .punch{margin-top:40px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="26.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 找出未知<span class="b-cur"></span></div>
+      <div class="idx">[10/14]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 动手之中 · <span class="acc">DURING THE WORK</span></div>
+      <div class="h1" style="margin-top:18px">让它一边做,<span class="em">一边记</span></div>
+      <div class="lead">一份临时的 <span class="code">implementation-notes</span> 文件</div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">撞上边界,被迫偏离原计划</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">就选那个最保守的方案</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">偏离写进 <span class="code">Deviations</span> 栏,接着往前走</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">下一轮,<span class="hl"><span class="bar"></span><span class="tx">一份决策账本</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.786" data-track-index="5"><div class="sub-inner">所以我会让 Claude Code 一边做,一边记一个临时的 <span class="sub-k">implementation-notes</span> 文件。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.929" data-duration="11.452" data-track-index="5"><div class="sub-inner">规矩很简单:一旦撞上边界、被迫偏离原计划,就选那个<span class="sub-k">最保守</span>的方案,把这次偏离记到"Deviations"那一栏底下,然后接着往前走。</div></div>
+    <div id="sub-3" class="clip sub" data-start="17.521" data-duration="6.425" data-track-index="5"><div class="sub-inner">这样等下一轮再来,你手里就有一份"它当时到底为什么这么决定"的<span class="sub-k">账本</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="24.109" data-duration="2.152" data-track-index="5"><div class="sub-inner">活儿做完,<span class="sub-k">别急着合并</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 2.6, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 6.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 8.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 10.8, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 17.7, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 18.5);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.929],['#sub-3',17.521],['#sub-4',24.109]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 26.4, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

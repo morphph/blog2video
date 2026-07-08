@@ -38,8 +38,12 @@ import {
 const REPO_ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 
 const VERB = "narration";
-const MIN_CHARS = 800;    // golden narration (ten-commandments) is 2573 chars
-const MAX_CHARS = 10000;  // runaway guard
+// Per-mode contracts (P3 S6). d2 = legacy vertical line, byte-for-byte unchanged.
+// wb = whiteboard tutor line: long-form script from staged jingdu.md, no insight memo.
+const MODES = {
+  d2: { command: "/blog2video-script", min: 800, max: 10000 },   // golden narration (ten-commandments) is 2573 chars
+  wb: { command: "/blog2video-script-wb", min: 1500, max: 25000 }, // ~220 zh chars/min; real length governed by prompt
+};
 const DEFAULT_TIMEOUT_S = 900;   // golden run: 429s
 const DEFAULT_MAX_TURNS = 30;    // golden run: 17 turns; revisions read more context
 const ALLOWED_TOOLS = "Read,Write,Task,Glob,Grep";
@@ -60,11 +64,11 @@ function claudeArgv(prompt, maxTurns) {
   ]);
 }
 
-function spawnAgent(outputDir, maxTurns, timeoutS, warnings) {
+function spawnAgent(command, outputDir, maxTurns, timeoutS, warnings) {
   const env = { ...process.env };
   // claude is not on PATH in VPS cron/script contexts — extend defensively.
   env.PATH = `${env.PATH || ""}:${process.env.HOME}/.npm-global/bin:${process.env.HOME}/.local/bin`;
-  const argv = claudeArgv(`/blog2video-script ${outputDir}`, maxTurns);
+  const argv = claudeArgv(`${command} ${outputDir}`, maxTurns);
   const meta = { timed_out: false, exit_code: null, num_turns: null, duration_ms: null, result_tail: null };
   const proc = spawnSync(argv[0], argv.slice(1), {
     cwd: REPO_ROOT,
@@ -105,8 +109,14 @@ function main() {
   if (!rawDir || rawDir === true) {
     return emit(envelope({ ok: false, verb: VERB, errors: ["usage", "--output-dir <dir> is required"] }), 2);
   }
+  const modeName = opts.mode === undefined || opts.mode === true ? "d2" : String(opts.mode);
+  const mode = MODES[modeName];
+  if (!mode) {
+    return emit(envelope({ ok: false, verb: VERB, errors: ["usage", `--mode must be one of: ${Object.keys(MODES).join("|")}`] }), 2);
+  }
   const outputDir = path.resolve(String(rawDir));
   const sourcePath = path.join(outputDir, "source_blog.md");
+  const jingduPath = path.join(outputDir, "jingdu.md");
   const narrationPath = path.join(outputDir, "narration.md");
   const memoPath = path.join(outputDir, "insight_memo.md");
 
@@ -121,7 +131,16 @@ function main() {
     return emit(envelope({
       ok: false, verb: VERB,
       errors: ["source_missing", `expected staged source at ${sourcePath}`],
-      data: { output_dir: outputDir },
+      data: { output_dir: outputDir, mode: modeName },
+    }), 1);
+  }
+  // wb line: jingdu.md is the structural spine — refuse to spawn without it
+  // (falling back to free-form rewriting of the source would defeat the close-reading gate).
+  if (modeName === "wb" && !fs.existsSync(jingduPath)) {
+    return emit(envelope({
+      ok: false, verb: VERB,
+      errors: ["jingdu_missing", `wb mode expects staged close reading at ${jingduPath}`],
+      data: { output_dir: outputDir, mode: modeName },
     }), 1);
   }
 
@@ -133,12 +152,12 @@ function main() {
     warnings.push("dry-run: agent not spawned, nothing written");
     return emit(envelope({
       ok: true, verb: VERB, warnings,
-      data: { output_dir: outputDir, would_spawn: true, revision: hadNarration },
+      data: { output_dir: outputDir, mode: modeName, would_spawn: true, revision: hadNarration },
     }), 0);
   }
 
   const startMs = Date.now() - 1000; // 1s guard for fs timestamp rounding
-  const meta = spawnAgent(outputDir, maxTurns, timeoutS, warnings);
+  const meta = spawnAgent(mode.command, outputDir, maxTurns, timeoutS, warnings);
 
   // Disk is the only witness we accept.
   if (!fs.existsSync(narrationPath)) {
@@ -160,15 +179,16 @@ function main() {
 
   const narration = fs.readFileSync(narrationPath, "utf-8");
   const chars = countChars(narration);
-  if (chars < MIN_CHARS || chars > MAX_CHARS) {
+  if (chars < mode.min || chars > mode.max) {
     return emit(envelope({
       ok: false, verb: VERB, warnings,
-      errors: ["narration_out_of_range", `${chars} chars outside [${MIN_CHARS}, ${MAX_CHARS}]; file kept for inspection`],
-      data: { output_dir: outputDir, chars, agent: meta },
+      errors: ["narration_out_of_range", `${chars} chars outside [${mode.min}, ${mode.max}] (mode=${modeName}); file kept for inspection`],
+      data: { output_dir: outputDir, mode: modeName, chars, agent: meta },
     }), 1);
   }
 
-  if (!fs.existsSync(memoPath)) warnings.push("insight_memo.md not present after run");
+  // insight memo belongs to the d2 line only; the wb line has no such stage.
+  if (modeName === "d2" && !fs.existsSync(memoPath)) warnings.push("insight_memo.md not present after run");
 
   const task = loadTask(outputDir);
   return emit(envelope({
@@ -176,13 +196,16 @@ function main() {
     verb: VERB,
     task_id: task?.task_id ?? null,
     content_hash: shortHash(contentHash(narration)),
-    artifacts: [
-      artifact("narration.md", narrationPath, "narration"),
-      artifact("insight_memo.md", memoPath, "insight_memo"),
-    ],
+    artifacts: modeName === "wb"
+      ? [artifact("narration.md", narrationPath, "narration")]
+      : [
+          artifact("narration.md", narrationPath, "narration"),
+          artifact("insight_memo.md", memoPath, "insight_memo"),
+        ],
     warnings,
     data: {
       output_dir: outputDir,
+      mode: modeName,
       chars,
       est_minutes: Math.round((chars / CHARS_PER_MIN) * 10) / 10,
       revision: hadNarration,

@@ -21,10 +21,14 @@ import path from "node:path";
 const mode = process.env.FAKE_MODE || "success";
 const dir = process.env.FAKE_OUTPUT_DIR;
 fs.writeFileSync(path.join(dir, "spawned.marker"), "yes");
+fs.writeFileSync(path.join(dir, "argv.json"), JSON.stringify(process.argv));
 const narration = "# 假标题\\n\\n## Hook\\n\\n" + "这是一段用于测试的中文叙述稿内容。".repeat(60);
 if (mode === "success" || mode === "revision") {
   fs.writeFileSync(path.join(dir, "insight_memo.md"), "# memo\\n\\nok");
   fs.writeFileSync(path.join(dir, "narration.md"), narration + (mode === "revision" ? "\\n\\n修订版。" : ""));
+} else if (mode === "wb_success") {
+  // wb line: long-form tutor script, deliberately NO insight_memo.md
+  fs.writeFileSync(path.join(dir, "narration.md"), "# 假标题\\n\\n## Hook\\n\\n" + "这是一段用于测试的白板线长稿内容。".repeat(200));
 } else if (mode === "too_short") {
   fs.writeFileSync(path.join(dir, "narration.md"), "太短了。");
 } else if (mode === "no_write") {
@@ -43,9 +47,12 @@ function setup() {
   return outDir;
 }
 
-function runVerb(outDir, { mode = "success", extra = [], withSource = true } = {}) {
+function runVerb(outDir, { mode = "success", extra = [], withSource = true, withJingdu = false } = {}) {
   if (withSource && !fs.existsSync(path.join(outDir, "source_blog.md"))) {
     fs.writeFileSync(path.join(outDir, "source_blog.md"), "# Source\n\nbody ".repeat(50));
+  }
+  if (withJingdu && !fs.existsSync(path.join(outDir, "jingdu.md"))) {
+    fs.writeFileSync(path.join(outDir, "jingdu.md"), "# 精读\n\n**一句话主旨**：测试。\n\n## 精读\n\n" + "内容 ".repeat(20));
   }
   let stdout, status = 0;
   try {
@@ -66,6 +73,7 @@ function runVerb(outDir, { mode = "success", extra = [], withSource = true } = {
 }
 
 const spawned = (outDir) => fs.existsSync(path.join(outDir, "spawned.marker"));
+const spawnedPrompt = (outDir) => JSON.parse(fs.readFileSync(path.join(outDir, "argv.json"), "utf-8")).join(" ");
 
 const tests = {
   success_envelope_and_hash() {
@@ -158,6 +166,63 @@ const tests = {
     }
     assert.equal(status, 2);
     assert.equal(JSON.parse(stdout).errors[0], "usage");
+  },
+
+  // ─── P3 S6: wb mode matrix ────────────────────────────────────────────────
+
+  d2_default_prompt_and_mode() {
+    const out = setup();
+    const { env, status } = runVerb(out);
+    assert.equal(status, 0);
+    assert.equal(env.data.mode, "d2");
+    assert.ok(spawnedPrompt(out).includes("/blog2video-script "), "default mode must spawn the legacy d2 command");
+    assert.ok(!spawnedPrompt(out).includes("/blog2video-script-wb"), "default mode must NOT spawn the wb command");
+  },
+
+  wb_happy_long_form_no_memo_warning() {
+    const out = setup();
+    const { env, status } = runVerb(out, { mode: "wb_success", withJingdu: true, extra: ["--mode", "wb"] });
+    assert.equal(status, 0);
+    assert.equal(env.ok, true);
+    assert.equal(env.data.mode, "wb");
+    assert.ok(env.data.chars >= 1500 && env.data.chars <= 25000, `wb chars ${env.data.chars}`);
+    assert.ok(spawnedPrompt(out).includes("/blog2video-script-wb"), "wb mode must spawn the tutor command");
+    assert.ok(!env.warnings.some((w) => w.includes("insight_memo")), "wb must not warn about insight_memo");
+    assert.ok(!env.artifacts.some((a) => a.name === "insight_memo.md"), "wb envelope must not list insight_memo artifact");
+  },
+
+  wb_jingdu_missing_refuses_to_spawn() {
+    const out = setup();
+    const { env, status } = runVerb(out, { mode: "wb_success", extra: ["--mode", "wb"] });
+    assert.equal(status, 1);
+    assert.equal(env.errors[0], "jingdu_missing");
+    assert.ok(!spawned(out), "must not spawn without jingdu.md in wb mode");
+  },
+
+  wb_range_rejects_d2_sized_script() {
+    // the same ~1000-char script that PASSES d2 (see success_envelope_and_hash)
+    // must FAIL wb — proves per-mode ranges are live.
+    const out = setup();
+    const { env, status } = runVerb(out, { mode: "success", withJingdu: true, extra: ["--mode", "wb"] });
+    assert.equal(status, 1);
+    assert.equal(env.errors[0], "narration_out_of_range");
+    assert.ok(env.errors[1].includes("mode=wb"));
+  },
+
+  wb_dry_run_reports_mode() {
+    const out = setup();
+    const { env, status } = runVerb(out, { withJingdu: true, extra: ["--mode", "wb", "--dry-run"] });
+    assert.equal(status, 0);
+    assert.equal(env.data.mode, "wb");
+    assert.ok(!spawned(out));
+  },
+
+  invalid_mode_is_usage() {
+    const out = setup();
+    const { env, status } = runVerb(out, { extra: ["--mode", "vhs"] });
+    assert.equal(status, 2);
+    assert.equal(env.errors[0], "usage");
+    assert.ok(!spawned(out));
   },
 };
 

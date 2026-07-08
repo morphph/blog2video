@@ -1,0 +1,144 @@
+{
+  "contract_version": "layer-export.v1",
+  "source": "founder-mode-diagram.excalidraw",
+  "canvas": {
+    "bbox": [
+      30,
+      -40,
+      1250,
+      1090
+    ],
+    "padding": 80,
+    "viewBox": "0 0 1270 1110",
+    "width": "1270",
+    "height": "1110"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "缘起：传统智慧是错的",
+      "bbox": [
+        110,
+        40,
+        940,
+        176
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        940,
+        176
+      ],
+      "elementCount": 4,
+      "file": "layers/step-01.svg"
+    },
+    {
+      "step": 2,
+      "label": "诊断：那是「经理模式」",
+      "bbox": [
+        380,
+        216,
+        540,
+        142
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        940,
+        318
+      ],
+      "elementCount": 3,
+      "file": "layers/step-02.svg"
+    },
+    {
+      "step": 3,
+      "label": "两种模式分岔",
+      "bbox": [
+        150,
+        358,
+        1050,
+        570
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        1090,
+        888
+      ],
+      "elementCount": 5,
+      "file": "layers/step-03.svg"
+    },
+    {
+      "step": 4,
+      "label": "manager mode：黑箱 → 翻车",
+      "bbox": [
+        110,
+        448,
+        370,
+        402
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        1090,
+        888
+      ],
+      "elementCount": 12,
+      "file": "layers/step-04.svg"
+    },
+    {
+      "step": 5,
+      "label": "founder mode：打破封装",
+      "bbox": [
+        720,
+        448,
+        400,
+        298
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        1090,
+        888
+      ],
+      "elementCount": 9,
+      "file": "layers/step-05.svg"
+    },
+    {
+      "step": 6,
+      "label": "更复杂 but 更好用",
+      "bbox": [
+        715,
+        716,
+        415,
+        114
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        1090,
+        888
+      ],
+      "elementCount": 3,
+      "file": "layers/step-06.svg"
+    },
+    {
+      "step": 7,
+      "label": "像 Jobs，而非 Sculley",
+      "bbox": [
+        330,
+        830,
+        640,
+        140
+      ],
+      "cumulativeBbox": [
+        110,
+        40,
+        1090,
+        930
+      ],
+      "elementCount": 4,
+      "file": "layers/step-07.svg"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   wb 「白板讲解 Whiteboard Tutor」 BASE KIT —— 精读/tutor 线全片统一
+   真源。生成器把本文件 + wb-motion.js 内联进每个场景的 style / script 块。
+   场景自包含、逐个 standalone 渲染;GSAP 选择器用 R = data-composition-id 前缀。
+   字体路径相对 scene 目录:assets -> symlink 到 kit assets(内部再 symlink d2-kit 字体)。
+
+   舞台 1920×1080 横屏。视觉真相在层 SVG 里(白板图);HTML 只负责:
+   舞台/视口/镜头容器、层叠放、字幕带、角标。手写文字一律在图内,HTML 不配手写字体。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入;仅字幕+角标) ---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#ffffff;font-family:'MiSans',sans-serif}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1920px;height:1080px;background:#ffffff;overflow:hidden}
+
+/* ---- 视口 + 镜头容器 ----
+   .canvas 尺寸 = steps.json canvas 宽高 × data-ss(默认 2,supersample 防放大糊),
+   由场景 inline style 写死;transform 只由 WB.camera/WB.home 驱动,origin 恒 0 0。 */
+.viewport{position:absolute;inset:0;overflow:hidden;transform-origin:50% 50%}  /* 呼吸目标(WB.breath);镜头目标是 .canvas */
+.canvas{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}
+
+/* ---- 层(S2 分层导出的 step-NN.svg,叠加式,z 序 = 文档顺序) ----
+   初始全隐;WB.revealLayer 揭示。必须 <img>(层内嵌各自字体子集,内联会互踩)。 */
+.layer{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0}
+.layer.on{opacity:1}   /* 场景起始已显层:标 class,配合 WB.preset */
+
+/* ---- 字幕带(track 5,与 d2 同契约) ---- */
+.sub{position:absolute;left:120px;right:120px;bottom:64px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(20,20,20,.72);border-radius:10px;max-width:1440px;padding:14px 28px;
+  font-weight:500;font-size:42px;line-height:1.45;color:#ffffff;text-align:center}
+.sub-k{color:#ffd43b}
+
+/* ---- 角标(系列标识,常驻可选) ---- */
+.brandtag{position:absolute;top:36px;left:48px;z-index:20;
+  font-family:'JetBrains Mono',monospace;font-size:24px;color:#b0b0ab;letter-spacing:.06em}
+.brandtag .acc{color:#e8590c}
+</style>
+</head>
+<body>
+<!-- 黄金样例 2「深讲 + recap」:承接进度(preset 已显层)→ 左右两侧深挖 → pop 强调 → home 拉全景收结论 -->
+<div id="root" data-composition-id="wb02" data-start="0" data-duration="26" data-width="1920" data-height="1080">
+  <div class="stage">
+    <div class="viewport">
+      <div class="canvas" data-ss="2" style="width:2540px;height:2220px">
+        <img class="layer" id="ly1" src="layers/step-01.svg">
+        <img class="layer" id="ly2" src="layers/step-02.svg">
+        <img class="layer" id="ly3" src="layers/step-03.svg">
+        <img class="layer" id="ly4" src="layers/step-04.svg">
+        <img class="layer" id="ly5" src="layers/step-05.svg">
+        <img class="layer" id="ly6" src="layers/step-06.svg">
+        <img class="layer" id="ly7" src="layers/step-07.svg">
+      </div>
+    </div>
+    <div class="brandtag">精读<span class="acc">AI_</span></div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.4" data-track-index="5"><div class="sub-inner">先看左边这条路——<span class="sub-k">经理模式</span>在实际运行里长什么样。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.4" data-duration="6.2" data-track-index="5"><div class="sub-inner">你把组织当黑箱，只通过直接下属指挥公司，结果<span class="sub-k">专业骗子</span>混进来，把你忽悠得团团转。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.6" data-duration="6" data-track-index="5"><div class="sub-inner">创始人模式反着来：Chesky 学乔布斯，直接开 <span class="sub-k">skip-level</span>，一竿子插到底。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.6" data-duration="4" data-track-index="5"><div class="sub-inner">代价是更复杂，但它<span class="sub-k">真的更好用</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.6" data-duration="3.4" data-track-index="5"><div class="sub-inner">把整张图拉远，你会发现结论就一句话——</div></div>
+    <div id="sub-6" class="clip sub" data-start="22" data-duration="4" data-track-index="5"><div class="sub-inner">像 <span class="sub-k">Steve Jobs</span> 那样当创始人，别像 John Sculley 那样当经理。</div></div>
+  </div>
+</div>
+<script>
+/* ============================================================================
+   wb-motion.js —— GSAP 镜头/揭示助手(白板讲解线,全片统一性格:镜头从容、揭示克制)
+   内联进每个场景的 script 块(GSAP 3.14 先于本段加载)。全局命名空间 window.WB。
+   只动 transform / opacity / clip-path。禁:弹性 ease、repeat:-1、Date.now/Math.random。
+   timeline 同步构建(hyperframes 逐帧 seek,一切必须是时间的纯函数)。
+
+   坐标约定:一切 bbox = steps.json 的 [x,y,w,h](viewBox 单位)。
+   .canvas 按 SS 倍 viewBox 尺寸布局(supersample 防 <img> 放大糊),SS 从
+   canvas 元素 data-ss 读(默认 2)——场景作者只用原始 bbox 思考,不碰 SS。
+   ============================================================================ */
+(function(){
+  var STAGE_W = 1920, STAGE_H = 1080;
+
+  function canvasEl(R){ return document.querySelector(R + '.canvas'); }
+  function ssOf(R){ var el = canvasEl(R); return el ? (parseFloat(el.getAttribute('data-ss')) || 2) : 2; }
+
+  var WB = {
+    /* 纯计算:把 bbox([x,y,w,h],viewBox 单位)取景到舞台中央。
+       opts:{pad(=80 屏幕px), maxScale(=1,css scale 上限——1 即"永不上采样"),
+             safeBottom(=200 屏幕px,给字幕带留的底部安全区;取景在 1920×(1080-safeBottom) 内居中,
+                        目标内容永不被字幕遮挡。整片无字幕的场景可显式传 0)}
+       返回 {scale,x,y}(直接喂给 gsap 的 transform)。 */
+    fit: function(R, bbox, opts){
+      opts = opts || {};
+      var ss = ssOf(R);
+      var pad = (opts.pad != null) ? opts.pad : 80;
+      var safeH = STAGE_H - ((opts.safeBottom != null) ? opts.safeBottom : 200);
+      var bx = bbox[0]*ss, by = bbox[1]*ss, bw = bbox[2]*ss, bh = bbox[3]*ss;
+      var s = Math.min((STAGE_W - 2*pad)/bw, (safeH - 2*pad)/bh);
+      s = Math.min(s, (opts.maxScale != null) ? opts.maxScale : 1);
+      return { scale: s,
+               x: (STAGE_W - bw*s)/2 - bx*s,
+               y: (safeH - bh*s)/2 - by*s };
+    },
+
+    /* 镜头移动:平移/缩放 .canvas 到 bbox。1.2–1.8s power2.inOut,像人推画布。
+       opts:{d(=1.4), ease(='power2.inOut'), pad, maxScale} */
+    camera: function(tl, R, bbox, at, opts){
+      opts = opts || {};
+      var v = WB.fit(R, bbox, opts);
+      tl.to(R+'.canvas', { scale:v.scale, x:v.x, y:v.y,
+        duration:(opts.d != null) ? opts.d : 1.4, ease:opts.ease || 'power2.inOut' }, at);
+      return tl;
+    },
+
+    /* 镜头定位(无动画,仅场景开头定起点用) */
+    setCamera: function(tl, R, bbox, at, opts){
+      var v = WB.fit(R, bbox, opts);
+      tl.set(R+'.canvas', { scale:v.scale, x:v.x, y:v.y }, at || 0);
+      return tl;
+    },
+
+    /* 缩回全景(recap 段)。bbox 取 steps.json canvas.bbox;不传则量整个 .canvas。 */
+    home: function(tl, R, at, opts){
+      opts = opts || {};
+      var bbox = opts.bbox;
+      if(!bbox){
+        var el = canvasEl(R), ss = ssOf(R);
+        bbox = [0, 0, el.offsetWidth/ss, el.offsetHeight/ss];
+      }
+      return WB.camera(tl, R, bbox, at, Object.assign({ d:(opts.d != null) ? opts.d : 1.8 }, opts));
+    },
+
+    /* 揭示一层。mode:
+       'draw'(默认) clip-path 左→右擦出 0.8s,像正在画;
+       'pop'  0.35s 轻弹入(结论/强调块);
+       'fade' 0.5s 淡入(底图/氛围层)。
+       opts:{d, mode} */
+    revealLayer: function(tl, sel, at, opts){
+      opts = opts || {};
+      var mode = opts.mode || 'draw';
+      if(mode === 'draw'){
+        tl.set(sel, { opacity:1, clipPath:'inset(0% 100% 0% 0%)' }, at);
+        tl.to(sel, { clipPath:'inset(0% 0% 0% 0%)', duration:opts.d || 0.8, ease:'power2.inOut' }, at);
+      } else if(mode === 'pop'){
+        tl.fromTo(sel, { opacity:0, scale:0.965 },
+          { opacity:1, scale:1, duration:opts.d || 0.35, ease:'power3.out' }, at);
+      } else {
+        tl.fromTo(sel, { opacity:0 }, { opacity:1, duration:opts.d || 0.5, ease:'power1.out' }, at);
+      }
+      return tl;
+    },
+
+    /* 场景起始已显层(承接上一场景的进度):t=0 直接置显。sels = 选择器数组。 */
+    preset: function(tl, sels, at){
+      sels.forEach(function(sel){ tl.set(sel, { opacity:1 }, at || 0); });
+      return tl;
+    },
+
+    /* 长驻镜头微呼吸(防死帧):≤1.02 的极缓漂移,dur = 停留时长。
+       作用在 .viewport(镜头动 .canvas、呼吸动 .viewport,互不冲突)。
+       dir:'in'(1→1.015)/'out'(1.015→1)。 */
+    breath: function(tl, R, at, dur, dir){
+      if(dir === 'out') tl.fromTo(R+'.viewport', { scale:1.015 }, { scale:1, duration:dur, ease:'none' }, at);
+      else              tl.fromTo(R+'.viewport', { scale:1 }, { scale:1.015, duration:dur, ease:'none' }, at);
+      return tl;
+    },
+
+    /* 字幕淡入:list = [[id, localStart], ...](0.2s,与 d2 同约定) */
+    subs: function(tl, list){
+      list.forEach(function(s){ tl.from(s[0], { opacity:0, duration:0.2, ease:'power1.out' }, s[1]); });
+      return tl;
+    },
+
+    /* ---- 高阶约定:声明式建整条 timeline ----
+       spec = {
+         duration: 场景全长(=data-duration,尾帧对齐用),
+         start:   bbox | null,                    // 开场镜头定位(setCamera)
+         preset:  ['#ly1', ...],                  // 起始已显层
+         reveals: [ {sel, at, mode?, d?} ],
+         shots:   [ {bbox, at, d?, ease?, pad?} | {home:true, at, d?} ],
+         subs:    [ [id, localStart], ... ],
+         custom:  function(tl, R){...}
+       }
+       sel/id 均为完整选择器(R 已知时也可只写 '#lyN',层 id 全片唯一)。 */
+    buildSceneTimeline: function(R, spec){
+      var tl = gsap.timeline({ paused:true });
+      if(spec.start) WB.setCamera(tl, R, spec.start, 0, spec);
+      if(spec.preset) WB.preset(tl, spec.preset, 0);
+      (spec.reveals||[]).forEach(function(r){ WB.revealLayer(tl, r.sel, r.at, r); });
+      (spec.shots||[]).forEach(function(s){
+        if(s.home) WB.home(tl, R, s.at, s);
+        else WB.camera(tl, R, s.bbox, s.at, s);
+      });
+      if(spec.custom) spec.custom(tl, R);
+      if(spec.subs) WB.subs(tl, spec.subs);
+      /* 尾帧对齐:确保 timeline 总长 = 场景声明时长(hyperframes 按 data-duration 渲) */
+      if(spec.duration) tl.set({}, {}, spec.duration);
+      return tl;
+    },
+
+    /* 注册到全局,供 hyperframes 驱动 */
+    register: function(id, tl){ window.__timelines = window.__timelines || {}; window.__timelines[id] = tl; }
+  };
+
+  window.WB = WB;
+})();
+
+/* ---- scene timeline(bbox 逐字来自 assets/golden/founder-mode/steps.json)---- */
+(function(){
+  var R = "[data-composition-id='wb02'] ";
+  var tl = WB.buildSceneTimeline(R, {
+    duration: 26,
+    start: [150, 358, 1050, 570],                                  /* 承接:镜头停在分岔区 */
+    preset: ['#ly1', '#ly2', '#ly3'],                              /* 上一场景已画的层 */
+    reveals: [
+      { sel:'#ly4', at:2.4,  mode:'draw', d:1.2 },                 /* manager mode:黑箱→翻车(12 元素,擦长一点) */
+      { sel:'#ly5', at:10.3, mode:'draw', d:1.1 },                 /* founder mode:打破封装 */
+      { sel:'#ly6', at:15.9, mode:'pop' },                         /* 结论块:更复杂 but 更好用 */
+      { sel:'#ly7', at:20.8, mode:'pop' }                          /* punchline:像 Jobs,而非 Sculley */
+    ],
+    shots: [
+      { bbox:[110, 448, 370, 402], at:0.8,  d:1.5, pad:110 },      /* step4 左侧深挖 */
+      { bbox:[720, 448, 400, 298], at:8.6,  d:1.6, pad:110 },      /* step5 右侧深挖 */
+      { bbox:[715, 448, 415, 382], at:14.6, d:1.2, pad:100 },      /* step5+6 合景 */
+      { home:true, bbox:[30, -40, 1250, 1090], at:18.6, d:2.0, pad:60 }  /* recap:canvas.bbox 全景 */
+    ],
+    subs: [ ['#sub-1',0], ['#sub-2',2.4], ['#sub-3',8.6], ['#sub-4',14.6], ['#sub-5',18.6], ['#sub-6',22.0] ],
+    custom: function(t, r){ WB.breath(t, r, 21.4, 4.6, 'in'); }
+  });
+  WB.register('wb02', tl);
+})();
+</script>
+</body>
+</html>

@@ -15,7 +15,7 @@
 ### Step 1: 读取输入
 1. `<output-dir>/jingdu.md` —— 结构脊柱（必须存在；缺了就报错停止，别退回原文自由发挥）
 2. `<output-dir>/source_blog.md` —— 引语/数据的事实真相
-3. `<output-dir>/task.json` 的 `feedback_log` 末条 —— 作者修订意见（若有，最高优先级）
+3. `<output-dir>/.b2v-task.json` 的 `feedback_log` 末条 —— 作者修订意见（若有，最高优先级）
 4. `<output-dir>/narration.md` —— 上一版（若有，保留好的部分）
 5. `<output-dir>/diagrams/steps.json` —— 白板图揭示顺序（若有，用于对齐叙述节奏）
 
@@ -59,6 +59,6 @@
 
 ### Step 3: 汇报（不继续后续步骤）
 
-打印：字数、预计时长（÷220 字/分）、段落数、hook 前两句。
+打印：字数、预计时长（÷320 字/分，minimax speech-02-hd 实测语速）、段落数、hook 前两句。
 headless 场景下写完文件即完成；交互场景下等作者意见，有意见回 Step 2 修订。
 **绝不自动进入分镜/TTS/渲染。**

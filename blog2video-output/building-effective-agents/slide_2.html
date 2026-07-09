@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #8B5CF6; font-weight: 700; margin-bottom: 20px; }
+    .title { font-size: 68px; font-weight: 800; line-height: 1.2; margin-bottom: 60px; }
+    .title .code { font-family: 'JetBrains Mono', monospace; color: #8B5CF6; }
+    .cards { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+    .card {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 12px; padding: 34px 32px; text-align: left;
+    }
+    .card.wf { border-left: 6px solid #3B82F6; }
+    .card.ag { border-left: 6px solid #8B5CF6; }
+    .label {
+      font-size: 34px; font-weight: 800; margin-bottom: 14px;
+      display: flex; align-items: baseline; gap: 16px;
+    }
+    .card.wf .label { color: #3B82F6; }
+    .card.ag .label { color: #8B5CF6; }
+    .label .en { font-family: 'JetBrains Mono', monospace; font-size: 30px; }
+    .desc { font-size: 36px; color: #FFFFFF; line-height: 1.42; }
+    .desc .dim { color: #B0B0CC; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">先切分：agentic 系统分两种</div>
+    <div class="title">Workflow 还是 Agent？<br>差别在<span class="code">谁来找路</span></div>
+    <div class="cards">
+      <div class="card wf">
+        <div class="label">工作流 <span class="en">Workflow</span></div>
+        <div class="desc">路是你<b>提前铺好</b>写死在代码里，<span class="dim">模型只是在上面跑</span></div>
+      </div>
+      <div class="card ag">
+        <div class="label">智能体 <span class="en">Agent</span></div>
+        <div class="desc">模型<b>自己找路</b> —— 自己决定用什么工具、走几步</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

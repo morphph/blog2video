@@ -1,0 +1,82 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 45.1,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_11.html",
+ "topbarIndex": "[11/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.114,
+   "text": "文章里有个具体的 bug 场景，比任何比喻都锋利。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.283,
+   "localDuration": 7.126,
+   "text": "他们发现，当 Agent 离开了根目录，再用相对路径去指文件，模型就开始出错。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.409,
+   "localDuration": 1.644,
+   "text": "你猜他们怎么修的？"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.053,
+   "localDuration": 3.289,
+   "text": "没去改 prompt，没去骂模型笨。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.342,
+   "localDuration": 1.645,
+   "text": "他们改了工具本身。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.987,
+   "localDuration": 2.74,
+   "text": "把工具改成强制要求用绝对路径。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 20.879,
+   "localDuration": 4.161,
+   "text": "改完之后，模型零失误，完美地用对了。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 25.199,
+   "localDuration": 1.605,
+   "text": "你品品这个细节。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 26.804,
+   "localDuration": 7.023,
+   "text": "解决出错，有时候根本不是让模型更聪明，而是把接口设计成让模型更难犯错。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 33.827,
+   "localDuration": 3.01,
+   "text": "这就是文章说的，给工具做防呆。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 36.837,
+   "localDuration": 4.214,
+   "text": "把工具描述写得像给初级程序员的一份好文档。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 41.219,
+   "localDuration": 3.731,
+   "text": "把自己代入模型的处境，想想它用起来到底顺不顺手。"
+  }
+ ]
+}

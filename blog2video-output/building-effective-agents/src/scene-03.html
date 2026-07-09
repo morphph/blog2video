@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .cost{color:#ff6b5e;font-weight:700}
+[data-composition-id='s03'] .lead{margin-top:26px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="36.967" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[03/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 全文最克制,也<span class="acc">最值钱</span>的一句</div>
+      <div class="h1" style="margin-top:20px">先找<span class="em">最简单的方案</span>,<br>只在真正需要时才加复杂度</div>
+
+      <div class="lead">很多场景,你根本<span class="em">不需要 Agent</span></div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">Agent = 拿<span class="cost">延迟和成本</span>,换任务表现</div>
+          <div class="rd">这笔交易,不是每次都划算</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">一次调用 + <span class="code">检索</span> + 几个<span class="code">示例</span>,就够了</div>
+          <div class="rd">没必要一上来,就搭自主系统</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:40px">跟"越搭越复杂"的教程,<span class="hl"><span class="bar"></span><span class="tx">正好反过来</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="4.192" data-track-index="5"><div class="sub-inner">这篇文章最克制、也<span class="sub-k">最值钱</span>的一句判断是这个。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.199" data-duration="6.587" data-track-index="5"><div class="sub-inner">用大模型做东西，先找<span class="sub-k">最简单的方案</span>，只有在真正需要的时候才加复杂度。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.951" data-duration="0.903" data-track-index="5"><div class="sub-inner">什么意思？</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.854" data-duration="3.07" data-track-index="5"><div class="sub-inner">很多场景你根本<span class="sub-k">不需要 Agent</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.924" data-duration="5.056" data-track-index="5"><div class="sub-inner">Agent 这东西，是拿<span class="sub-k">延迟和成本</span>，去换更好的任务表现。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.98" data-duration="2.168" data-track-index="5"><div class="sub-inner">这笔交易<span class="sub-k">不是每次都划算</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.291" data-duration="6.981" data-track-index="5"><div class="sub-inner">对很多应用来说，把一次大模型调用优化好，配上检索、配上几个示例，<span class="sub-k">就足够了</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.272" data-duration="2.831" data-track-index="5"><div class="sub-inner">你没必要一上来就搭个<span class="sub-k">自主系统</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.103" data-duration="4.717" data-track-index="5"><div class="sub-inner">这跟市面上教你搭越来越复杂系统的调子，<span class="sub-k">正好反过来</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 4.3, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 11.854, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 14.924, {x:-24, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 19.98, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 22.291, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 29.272, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 32.103, {y:18, d:.35, ease:'power4.out'});
+    D2.sweep(tl, R, '.punch .hl', 32.5);
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',4.199],['#sub-3',10.951],['#sub-4',11.854],['#sub-5',14.924],['#sub-6',19.98],['#sub-7',22.291],['#sub-8',29.272],['#sub-9',32.103]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.967, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

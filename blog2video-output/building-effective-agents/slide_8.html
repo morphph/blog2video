@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #8B5CF6; font-weight: 700; margin-bottom: 24px; }
+    .title { font-size: 62px; font-weight: 800; margin-bottom: 52px; line-height: 1.24; }
+    .title .hl { color: #F59E0B; }
+    .loop-card {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.45);
+      border-radius: 12px; padding: 42px 36px; width: 100%; margin-bottom: 40px; text-align: left;
+    }
+    .loop-card .def { font-size: 40px; font-weight: 700; line-height: 1.42; }
+    .loop-card .def b { color: #8B5CF6; }
+    .steps {
+      display: flex; align-items: center; justify-content: center;
+      gap: 14px; margin-top: 30px; flex-wrap: wrap;
+    }
+    .step {
+      font-family: 'JetBrains Mono', monospace; font-size: 28px; color: #FFFFFF;
+      background: #0D0D1A; border: 1px solid rgba(139,92,246,0.3); border-radius: 10px; padding: 14px 20px;
+    }
+    .step .arr { color: #6B7280; }
+    .key {
+      background: #1A1A2E; border: 1px solid rgba(16,185,129,0.5);
+      border-left: 6px solid #10B981; border-radius: 12px;
+      padding: 34px 30px; width: 100%; text-align: left; font-size: 36px; line-height: 1.44;
+    }
+    .key .hl { color: #10B981; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">Agent 听起来很玄，其实</div>
+    <div class="title">实现往往<span class="hl">简单得出人意料</span></div>
+    <div class="loop-card">
+      <div class="def">一个<b>大模型</b>，拿着一组<b>工具</b>，根据环境反馈，在一个<b>循环</b>里转</div>
+      <div class="steps">
+        <div class="step">拿指令</div>
+        <div class="step"><span class="arr">→</span></div>
+        <div class="step">自己规划</div>
+        <div class="step"><span class="arr">→</span></div>
+        <div class="step">自己执行</div>
+      </div>
+    </div>
+    <div class="key">最关键：每走一步都从环境拿<span class="hl">真实反馈</span>，靠它判断进展</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 38.7,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_10.html",
+ "topbarIndex": "[10/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.253,
+   "text": "如果这期你只记住一件事，记住这个。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.252,
+   "localDuration": 4.019,
+   "text": "文章最后抛出了一个大多数人都忽略的胜负手。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.415,
+   "localDuration": 5.701,
+   "text": "所有人的精力都砸在打磨 prompt 上，把工具当成写死的 API，懒得管。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.116,
+   "localDuration": 7.202,
+   "text": "但 Anthropic 说，工具的定义，值得你投入和整体 prompt 一样多的心思，甚至更多。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.483,
+   "localDuration": 8.689,
+   "text": "他们造那个解决真实 GitHub issue 的 SWE-bench Agent 时，花在打磨工具上的时间，超过了打磨主 prompt。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.339,
+   "localDuration": 2.253,
+   "text": "而且有个特别反直觉的点。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 31.592,
+   "localDuration": 6.947,
+   "text": "该选什么工具格式，不取决于对程序员来说规不规整，而取决于模型写起来累不累。"
+  }
+ ]
+}

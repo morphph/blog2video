@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #8B5CF6; font-weight: 700; margin-bottom: 28px; }
+    .title { font-size: 62px; font-weight: 800; margin-bottom: 50px; line-height: 1.22; }
+    .title .en { font-family: 'JetBrains Mono', monospace; color: #8B5CF6; font-size: 48px; }
+    .card {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.35);
+      border-left: 6px solid #8B5CF6; border-radius: 12px;
+      padding: 36px 32px; width: 100%; text-align: left; font-size: 36px; line-height: 1.46;
+    }
+    .card b { color: #8B5CF6; }
+    .card .diff { color: #F59E0B; font-weight: 700; }
+    .crossline {
+      margin-top: 48px; width: 100%;
+      background: #1A1A2E; border: 1px solid rgba(16,185,129,0.5);
+      border-radius: 12px; padding: 34px; text-align: center;
+    }
+    .crossline .txt { font-size: 40px; font-weight: 800; color: #10B981; }
+    .crossline .arrow { color: #6B7280; margin: 0 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">阶梯再往上一级</div>
+    <div class="title">编排器-工人<br><span class="en">Orchestrator-Workers</span></div>
+    <div class="card">
+      一个<b>中心模型</b>自己拆任务、分派给工人、再汇总结果。<br><br>和并行处理的最大区别：子任务不是预先定好的，是编排器<span class="diff">临场决定</span>的。
+    </div>
+    <div class="crossline">
+      <div class="txt">再往上，那条线终于越过去<span class="arrow">→</span>就是 Agent</div>
+    </div>
+  </div>
+</body>
+</html>

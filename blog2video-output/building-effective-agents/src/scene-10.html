@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .rt .lead-lb{font-family:'JetBrains Mono',monospace;font-size:.86em;color:#8a8a85;margin-right:12px}
+[data-composition-id='s10'] .row.now .rt .lead-lb{color:#ccff4d}
+[data-composition-id='s10'] .cyt{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:2px 12px;margin-left:6px;vertical-align:2px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="38.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[10/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 只记住一件事 · <span class="acc">全文的胜负手</span></div>
+      <div class="h1" style="margin-top:20px">工具的定义,值得<br><span class="em">和 prompt 一样多的心思</span></div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="lead-lb">现状</span>精力全砸在打磨 <span class="code">prompt</span></div>
+          <div class="rd">工具被当成写死的 API,懒得管</div>
+        </div></div>
+
+        <div class="row r2 now"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="lead-lb">Anthropic</span>工具定义 <span class="code">值得同样多的投入</span></div>
+          <div class="rd">SWE-bench Agent:打磨工具的时间 <span class="cyt">&gt; 主 prompt</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="lead-lb">反直觉</span>该选哪种工具格式</div>
+          <div class="rd">不看对程序员规不规整,看<span class="ok">模型写着累不累</span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.253" data-track-index="5"><div class="sub-inner">如果这期你只记住一件事，记住这个。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.252" data-duration="4.019" data-track-index="5"><div class="sub-inner">文章最后抛出了一个大多数人都忽略的<span class="sub-k">胜负手</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.415" data-duration="5.701" data-track-index="5"><div class="sub-inner">所有人的精力都砸在<span class="sub-k">打磨 prompt</span> 上，把工具当成写死的 API，懒得管。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.116" data-duration="7.202" data-track-index="5"><div class="sub-inner">但 Anthropic 说，工具的定义，值得你投入和整体 prompt <span class="sub-k">一样多的心思</span>，甚至更多。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.483" data-duration="8.689" data-track-index="5"><div class="sub-inner">他们造那个解决真实 GitHub issue 的 SWE-bench Agent 时，花在打磨工具上的时间，<span class="sub-k">超过了打磨主 prompt</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="29.339" data-duration="2.253" data-track-index="5"><div class="sub-inner">而且有个特别<span class="sub-k">反直觉</span>的点。</div></div>
+    <div id="sub-7" class="clip sub" data-start="31.592" data-duration="6.947" data-track-index="5"><div class="sub-inner">该选什么工具格式，不取决于对程序员来说规不规整，而取决于<span class="sub-k">模型写起来累不累</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.4, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 7.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 13.2, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 20.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 29.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 31.7, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.252],['#sub-3',7.415],['#sub-4',13.116],['#sub-5',20.483],['#sub-6',29.339],['#sub-7',31.592]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.7, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

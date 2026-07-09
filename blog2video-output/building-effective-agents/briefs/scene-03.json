@@ -1,0 +1,64 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 36.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_3.html",
+ "topbarIndex": "[03/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 4.192,
+   "text": "这篇文章最克制、也最值钱的一句判断是这个。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.199,
+   "localDuration": 6.587,
+   "text": "用大模型做东西，先找最简单的方案，只有在真正需要的时候才加复杂度。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.951,
+   "localDuration": 0.903,
+   "text": "什么意思？"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.854,
+   "localDuration": 3.07,
+   "text": "很多场景你根本不需要 Agent。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.924,
+   "localDuration": 5.056,
+   "text": "Agent 这东西，是拿延迟和成本，去换更好的任务表现。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 19.98,
+   "localDuration": 2.168,
+   "text": "这笔交易不是每次都划算。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.291,
+   "localDuration": 6.981,
+   "text": "对很多应用来说，把一次大模型调用优化好，配上检索、配上几个示例，就足够了。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 29.272,
+   "localDuration": 2.831,
+   "text": "你没必要一上来就搭个自主系统。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.103,
+   "localDuration": 4.717,
+   "text": "这跟市面上教你搭越来越复杂系统的调子，正好反过来。"
+  }
+ ]
+}

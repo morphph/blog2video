@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .title { font-size: 74px; font-weight: 800; margin-bottom: 48px; }
+    .title .hl { color: #8B5CF6; }
+    .cols { display: flex; gap: 26px; width: 100%; margin-bottom: 40px; }
+    .col {
+      flex: 1; background: #1A1A2E; border-radius: 12px; padding: 34px 28px;
+      text-align: left;
+    }
+    .col.good { border: 1px solid rgba(16,185,129,0.35); border-top: 5px solid #10B981; }
+    .col.bad { border: 1px solid rgba(239,68,68,0.35); border-top: 5px solid #EF4444; }
+    .col .h { font-size: 34px; font-weight: 800; margin-bottom: 20px; }
+    .col.good .h { color: #10B981; }
+    .col.bad .h { color: #EF4444; }
+    .col .t { font-size: 32px; color: #FFFFFF; line-height: 1.44; }
+    .frameworks {
+      font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #B0B0CC;
+      margin-bottom: 44px; letter-spacing: 0.5px;
+    }
+    .frameworks .item { color: #FFFFFF; }
+    .advice {
+      background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4);
+      border-left: 6px solid #F59E0B; border-radius: 12px;
+      padding: 32px 30px; width: 100%; text-align: left;
+      font-size: 38px; font-weight: 700; line-height: 1.4;
+    }
+    .advice .hl { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">框架，<span class="hl">要不要用？</span></div>
+    <div class="frameworks">
+      <span class="item">Agent SDK</span> · <span class="item">AWS Strands</span> · <span class="item">Rivet</span> · <span class="item">Vellum</span>
+    </div>
+    <div class="cols">
+      <div class="col good">
+        <div class="h">好处</div>
+        <div class="t">把调用、解析工具、串联调用的脏活累活包起来，快速起步</div>
+      </div>
+      <div class="col bad">
+        <div class="h">代价</div>
+        <div class="t">多一层抽象，挡住真正发给模型的 prompt，出问题难 debug</div>
+      </div>
+    </div>
+    <div class="advice">建议：先直接调 <span class="hl">LLM 的 API</span>，很多模式几行代码就能实现</div>
+  </div>
+</body>
+</html>

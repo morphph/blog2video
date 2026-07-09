@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #8B5CF6; font-weight: 700; margin-bottom: 30px; }
+    .title { font-size: 56px; font-weight: 800; margin-bottom: 44px; line-height: 1.28; }
+    .flow { display: flex; flex-direction: column; gap: 22px; width: 100%; margin-bottom: 40px; }
+    .row {
+      background: #1A1A2E; border-radius: 12px; padding: 30px 30px;
+      text-align: left; font-size: 34px; line-height: 1.4;
+    }
+    .row.bug { border: 1px solid rgba(239,68,68,0.4); border-left: 6px solid #EF4444; }
+    .row.fix { border: 1px solid rgba(16,185,129,0.45); border-left: 6px solid #10B981; }
+    .row .tag { font-weight: 800; margin-right: 12px; }
+    .row.bug .tag { color: #EF4444; }
+    .row.fix .tag { color: #10B981; }
+    .mono { font-family: 'JetBrains Mono', monospace; color: #F59E0B; }
+    .zero { color: #10B981; font-weight: 800; }
+    .lesson {
+      background: #1A1A2E; border: 1px solid rgba(245,158,11,0.45);
+      border-left: 6px solid #F59E0B; border-radius: 12px;
+      padding: 32px 30px; width: 100%; text-align: left; font-size: 35px; line-height: 1.44;
+    }
+    .lesson b { color: #F59E0B; }
+    .lesson .py { font-family: 'JetBrains Mono', monospace; color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">一个具体的 bug 场景</div>
+    <div class="title">离开根目录后，<br>相对路径就开始出错</div>
+    <div class="flow">
+      <div class="row bug"><span class="tag">问题</span>Agent 用<span class="mono">相对路径</span>指文件，模型开始出错</div>
+      <div class="row fix"><span class="tag">修法</span>没改 prompt，改了工具本身：强制用<span class="mono">绝对路径</span> → <span class="zero">零失误</span></div>
+    </div>
+    <div class="lesson">有时不是让模型更聪明，而是把接口设计成<b>让模型更难犯错</b> —— 给工具做防呆 <span class="py">(poka-yoke)</span></div>
+  </div>
+</body>
+</html>

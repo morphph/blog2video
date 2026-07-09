@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #8B5CF6; font-weight: 700; margin-bottom: 24px; }
+    .title { font-size: 66px; font-weight: 800; margin-bottom: 56px; line-height: 1.2; }
+    .title .hl { color: #8B5CF6; }
+    .center {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.45);
+      border-radius: 12px; padding: 40px; width: 100%; margin-bottom: 40px;
+    }
+    .center .name { font-size: 42px; font-weight: 800; color: #8B5CF6; margin-bottom: 30px; }
+    .three { display: flex; gap: 22px; }
+    .chip {
+      flex: 1; background: #0D0D1A; border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 12px; padding: 26px 12px; font-size: 36px; font-weight: 700; color: #FFFFFF;
+    }
+    .mcp {
+      background: #1A1A2E; border: 1px solid rgba(59,130,246,0.4);
+      border-left: 6px solid #3B82F6; border-radius: 12px;
+      padding: 32px 30px; width: 100%; text-align: left; font-size: 36px; line-height: 1.42;
+    }
+    .mcp .en { font-family: 'JetBrains Mono', monospace; color: #3B82F6; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">最底层的那块积木</div>
+    <div class="title">增强版大模型<br><span class="hl">从最简单起，逐级加复杂</span></div>
+    <div class="center">
+      <div class="name">给模型配上三样东西</div>
+      <div class="three">
+        <div class="chip">检索</div>
+        <div class="chip">工具</div>
+        <div class="chip">记忆</div>
+      </div>
+    </div>
+    <div class="mcp">用 <span class="en">MCP</span>（模型上下文协议），接入不断长大的第三方工具生态</div>
+  </div>
+</body>
+</html>

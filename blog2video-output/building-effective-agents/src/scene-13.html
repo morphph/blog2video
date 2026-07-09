@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有(cta 尾卡)—— */
+[data-composition-id='s13'] .content{align-items:center;justify-content:center;text-align:center}
+[data-composition-id='s13'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:150px;line-height:1;color:#edebe6;display:flex;align-items:center;justify-content:center;letter-spacing:-.01em}
+[data-composition-id='s13'] .logo .cur{width:38px;height:118px;margin-left:22px;vertical-align:0}
+[data-composition-id='s13'] .subline{margin-top:56px;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:46px;letter-spacing:.06em;color:#8a8a85}
+[data-composition-id='s13'] .subline .em{color:#ccff4d}
+[data-composition-id='s13'] .signoff{margin-top:70px}
+[data-composition-id='s13'] .rule{width:120px;height:2px;background:#2a2a2c;margin:64px auto 0}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[13/12]</div>
+    </div>
+
+    <div class="content">
+      <div class="logo">精读AI<span class="cur cblink"></span></div>
+      <div class="rule"></div>
+      <div class="subline">构建好 AGENT · <span class="em">完</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">我们下期再见</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.logo', .4, {y:22, d:.5, ease:'expo.out'});
+    D2.underline(tl, R+'.rule', 1.0);
+    D2.enter(tl, R+'.subline', 1.3, {y:14, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 2.0, {y:12, d:.32, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 1.0, 4);
+    D2.breath(tl, R+'.content', 5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

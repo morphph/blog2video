@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .frameworks{font-family:'JetBrains Mono',monospace;font-size:32px;color:#edebe6;margin-top:32px;letter-spacing:.02em;line-height:1.45}
+[data-composition-id='s04'] .frameworks .fw{display:inline-block}
+[data-composition-id='s04'] .frameworks .fw:not(:last-child)::after{content:'·';color:#8a8a85;margin:0 14px}
+[data-composition-id='s04'] .rows{margin-top:40px}
+[data-composition-id='s04'] .row .rd.late{margin-top:8px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="55.8" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[04/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 底层判断 · <span class="acc">要不要用框架</span></div>
+      <div class="h1" style="margin-top:18px">框架，<span class="em">要不要用？</span></div>
+
+      <div class="frameworks">
+        <span class="fw">Agent SDK</span><span class="fw">AWS Strands</span><span class="fw">Rivet</span><span class="fw">Vellum</span>
+      </div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">好处 · 底层脏活<span class="code">打包</span></div>
+          <div class="rd rd-main">调模型 / 解析工具 / 串联调用 → 快速起步</div>
+        </div></div>
+
+        <div class="row r2 warn"><div class="n">02</div><div class="rb">
+          <div class="rt">代价 · 多一层抽象</div>
+          <div class="rd rd-main">挡住真实 prompt 与响应 → <span class="warn">难 debug</span></div>
+          <div class="rd late rd-late"><span class="warn">还诱惑你</span>：更简单就够时，忍不住加复杂度</div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">建议 · 先直接调 <span class="code">LLM API</span></div>
+          <div class="rd rd-main">很多模式，几行代码就实现</div>
+          <div class="rd late rd-late2">真要用框架 → 搞懂<span class="ok">引擎盖下</span>在干什么</div>
+          <div class="rd late rd-late3"><span class="warn">错误假设</span>，是出错最常见的来源</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="3.457" data-track-index="5"><div class="sub-inner">顺着这个思路，文章问了<span class="sub-k">下一个问题</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.469" data-duration="1.424" data-track-index="5"><div class="sub-inner"><span class="sub-k">框架</span>要不要用？</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.052" data-duration="1.08" data-track-index="5"><div class="sub-inner">市面上框架<span class="sub-k">不少</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.132" data-duration="7.288" data-track-index="5"><div class="sub-inner">Anthropic 自己的 <span class="sub-k">Agent SDK</span>，AWS 的 Strands，还有 Rivet、Vellum。</div></div>
+    <div id="sub-5" class="clip sub" data-start="13.42" data-duration="1.215" data-track-index="5"><div class="sub-inner">它们的<span class="sub-k">好处</span>很明确。</div></div>
+    <div id="sub-6" class="clip sub" data-start="14.835" data-duration="7.4" data-track-index="5"><div class="sub-inner">帮你把调用模型、定义解析工具、串联调用这些底层脏活累活包起来，让你<span class="sub-k">快速起步</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.404" data-duration="1.439" data-track-index="5"><div class="sub-inner">但<span class="sub-k">代价</span>也很实在。</div></div>
+    <div id="sub-8" class="clip sub" data-start="23.843" data-duration="7.012" data-track-index="5"><div class="sub-inner">框架会多出<span class="sub-k">一层抽象</span>，把底层真正发给模型的 prompt 和模型的响应给挡住了。</div></div>
+    <div id="sub-9" class="clip sub" data-start="30.855" data-duration="2.518" data-track-index="5"><div class="sub-inner">出了问题你很难 <span class="sub-k">debug</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="33.373" data-duration="5.394" data-track-index="5"><div class="sub-inner">而且它会诱惑你，在其实更简单就够用的时候，忍不住去<span class="sub-k">加复杂度</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="38.928" data-duration="1.925" data-track-index="5"><div class="sub-inner">文章给的<span class="sub-k">建议</span>很直接。</div></div>
+    <div id="sub-12" class="clip sub" data-start="40.853" data-duration="5.389" data-track-index="5"><div class="sub-inner">先直接调 <span class="sub-k">LLM 的 API</span>，很多模式几行代码就实现了。</div></div>
+    <div id="sub-13" class="clip sub" data-start="46.242" data-duration="3.85" data-track-index="5"><div class="sub-inner">真要用框架，也一定要<span class="sub-k">搞懂底层</span>在干什么。</div></div>
+    <div id="sub-14" class="clip sub" data-start="50.092" data-duration="5.582" data-track-index="5"><div class="sub-inner">对引擎盖下面发生的事情做<span class="sub-k">错误假设</span>，是客户出错最常见的来源。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.5, {y:20, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.frameworks .fw', 5.3, {y:12, step:.5, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 13.5, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd-main', 14.8, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 22.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd-main', 23.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .rd-late', 33.4, {y:10, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.r3', 39.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd-main', 40.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3 .rd-late2', 46.3, {y:10, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.r3 .rd-late3', 50.1, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',3.469],['#sub-3',5.052],['#sub-4',6.132],['#sub-5',13.42],['#sub-6',14.835],['#sub-7',22.404],['#sub-8',23.843],['#sub-9',30.855],['#sub-10',33.373],['#sub-11',38.928],['#sub-12',40.853],['#sub-13',46.242],['#sub-14',50.092]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 55.8, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

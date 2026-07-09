@@ -1,0 +1,532 @@
+[
+  {
+    "text": "你以为跑通生产的 Agent，背后一定是套精密复杂的框架。恰恰相反。Anthropic 陪着几十个团队做了一年 Agent，得出一个反直觉的结论。",
+    "pronounce_text": "你以为跑通生产的Agent，背后一定是套精密复杂的框架。恰恰相反。Anthropic陪着几十个团队做了一年Agent，得出一个反直觉的结论。",
+    "time_begin": 0,
+    "time_end": 11451.927437641723,
+    "text_begin": 0,
+    "text_end": 73,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 70
+  },
+  {
+    "text": "最成功的那批实现，全都没用复杂框架。它们靠的是简单、可组合的小模式。",
+    "pronounce_text": "最成功的那批实现，全都没用复杂框架。它们靠的是简单、可组合的小模式。",
+    "time_begin": 11651.927437641723,
+    "time_end": 18332.15419501134,
+    "text_begin": 73,
+    "text_end": 107,
+    "pronounce_text_begin": 70,
+    "pronounce_text_end": 104
+  },
+  {
+    "text": "这篇官方工程博客，就是把这个结论掰开揉碎讲给你听。",
+    "pronounce_text": "这篇官方工程博客，就是把这个结论掰开揉碎讲给你听。",
+    "time_begin": 18504,
+    "time_end": 23349.850340136054,
+    "text_begin": 107,
+    "text_end": 132,
+    "pronounce_text_begin": 104,
+    "pronounce_text_end": 129
+  },
+  {
+    "text": "很多人把 Agent 挂在嘴边，其实脑子里是一锅粥。这篇文章上来先做了一个特别重要的切分。",
+    "pronounce_text": "很多人把Agent挂在嘴边，其实脑子里是一锅粥。这篇文章上来先做了一个特别重要的切分。",
+    "time_begin": 23508,
+    "time_end": 30188.226757369615,
+    "text_begin": 132,
+    "text_end": 177,
+    "pronounce_text_begin": 129,
+    "pronounce_text_end": 172
+  },
+  {
+    "text": "它把所有能自己动手的系统统称为 agentic 系统。但里面分两种。一种叫 Workflow，工作流。就是大模型和工具，按照你事先写死在代码里的路径一步步走。另一种才叫 Agent。",
+    "pronounce_text": "它把所有能自己动手的系统统称为agentic系统。但里面分两种。一种叫Workflow，工作流。就是大模型和工具，按照你事先写死在代码里的路径一步步走。另一种才叫Agent。",
+    "time_begin": 30348,
+    "time_end": 45608,
+    "text_begin": 177,
+    "text_end": 268,
+    "pronounce_text_begin": 172,
+    "pronounce_text_end": 259
+  },
+  {
+    "text": "模型自己决定下一步用什么工具、怎么完成任务、走几步。",
+    "pronounce_text": "模型自己决定下一步用什么工具、怎么完成任务、走几步。",
+    "time_begin": 45756,
+    "time_end": 50903.70975056689,
+    "text_begin": 268,
+    "text_end": 294,
+    "pronounce_text_begin": 259,
+    "pronounce_text_end": 285
+  },
+  {
+    "text": "差别在哪？Workflow 的路是你铺好的，模型只是在上面跑。Agent 是模型自己找路。记住这个区分，后面全靠它。",
+    "pronounce_text": "差别在哪？Workflow的路是你铺好的，模型只是在上面跑。Agent是模型自己找路。记住这个区分，后面全靠它。",
+    "time_begin": 51048,
+    "time_end": 61571.12925170068,
+    "text_begin": 294,
+    "text_end": 352,
+    "pronounce_text_begin": 285,
+    "pronounce_text_end": 341
+  },
+  {
+    "text": "这篇文章最克制、也最值钱的一句判断是这个。用大模型做东西，先找最简单的方案，只有在真正需要的时候才加复杂度。",
+    "pronounce_text": "这篇文章最克制、也最值钱的一句判断是这个。用大模型做东西，先找最简单的方案，只有在真正需要的时候才加复杂度。",
+    "time_begin": 61740,
+    "time_end": 72518.54875283447,
+    "text_begin": 352,
+    "text_end": 406,
+    "pronounce_text_begin": 341,
+    "pronounce_text_end": 395
+  },
+  {
+    "text": "什么意思？很多场景你根本不需要 Agent。Agent 这东西，是拿延迟和成本，去换更好的任务表现。这笔交易不是每次都划算。",
+    "pronounce_text": "什么意思？很多场景你根本不需要Agent。Agent这东西，是拿延迟和成本，去换更好的任务表现。这笔交易不是每次都划算。",
+    "time_begin": 72684,
+    "time_end": 83880.50793650793,
+    "text_begin": 406,
+    "text_end": 468,
+    "pronounce_text_begin": 395,
+    "pronounce_text_end": 455
+  },
+  {
+    "text": "对很多应用来说，把一次大模型调用优化好，配上检索、配上几个示例，就足够了。你没必要一上来就搭个自主系统。这跟市面上教你搭越来越复杂系统的调子，正好反过来。",
+    "pronounce_text": "对很多应用来说，把一次大模型调用优化好，配上检索、配上几个示例，就足够了。你没必要一上来就搭个自主系统。这跟市面上教你搭越来越复杂系统的调子，正好反过来。",
+    "time_begin": 84024,
+    "time_end": 98552.57142857142,
+    "text_begin": 468,
+    "text_end": 545,
+    "pronounce_text_begin": 455,
+    "pronounce_text_end": 532
+  },
+  {
+    "text": "顺着这个思路，文章问了下一个问题。框架要不要用？",
+    "pronounce_text": "顺着这个思路，文章问了下一个问题。框架要不要用？",
+    "time_begin": 98712,
+    "time_end": 103592.68027210885,
+    "text_begin": 545,
+    "text_end": 569,
+    "pronounce_text_begin": 532,
+    "pronounce_text_end": 556
+  },
+  {
+    "text": "市面上框架不少。Anthropic 自己的 Agent SDK，AWS 的 Strands，还有 Rivet、Vellum。它们的好处很明确。",
+    "pronounce_text": "市面上框架不少。Anthropic自己的Agent SDK，AWS的Strands，还有Rivet、Vellum。它们的好处很明确。",
+    "time_begin": 103752,
+    "time_end": 113334.72108843537,
+    "text_begin": 569,
+    "text_end": 640,
+    "pronounce_text_begin": 556,
+    "pronounce_text_end": 622
+  },
+  {
+    "text": "帮你把调用模型、定义解析工具、串联调用这些底层脏活累活包起来，让你快速起步。",
+    "pronounce_text": "帮你把调用模型、定义解析工具、串联调用这些底层脏活累活包起来，让你快速起步。",
+    "time_begin": 113534.72108843537,
+    "time_end": 120934.76643990929,
+    "text_begin": 640,
+    "text_end": 678,
+    "pronounce_text_begin": 622,
+    "pronounce_text_end": 660
+  },
+  {
+    "text": "但代价也很实在。框架会多出一层抽象，把底层真正发给模型的 prompt 和模型的响应给挡住了。出了问题你很难 debug。而且它会诱惑你，在其实更简单就够用的时候，忍不住去加复杂度。",
+    "pronounce_text": "但代价也很实在。框架会多出一层抽象，把底层真正发给模型的prompt和模型的响应给挡住了。出了问题你很难debug。而且它会诱惑你，在其实更简单就够用的时候，忍不住去加复杂度。",
+    "time_begin": 121104,
+    "time_end": 137466.947845805,
+    "text_begin": 678,
+    "text_end": 769,
+    "pronounce_text_begin": 660,
+    "pronounce_text_end": 748
+  },
+  {
+    "text": "文章给的建议很直接。先直接调 LLM 的 API，很多模式几行代码就实现了。真要用框架，也一定要搞懂它底层在干什么。对引擎盖下面发生的事情做错误假设，是客户出错最常见的来源。",
+    "pronounce_text": "文章给的建议很直接。先直接调LLM的API，很多模式几行代码就实现了。真要用框架，也一定要搞懂它底层在干什么。对引擎盖下面发生的事情做错误假设，是客户出错最常见的来源。",
+    "time_begin": 137628,
+    "time_end": 154374.07709750568,
+    "text_begin": 769,
+    "text_end": 856,
+    "pronounce_text_begin": 748,
+    "pronounce_text_end": 832
+  },
+  {
+    "text": "讲清楚该不该用，文章开始搭台阶。从最简单的积木，一级一级加复杂度。",
+    "pronounce_text": "讲清楚该不该用，文章开始搭台阶。从最简单的积木，一级一级加复杂度。",
+    "time_begin": 154512,
+    "time_end": 161319.9365079365,
+    "text_begin": 856,
+    "text_end": 889,
+    "pronounce_text_begin": 832,
+    "pronounce_text_end": 865
+  },
+  {
+    "text": "最底层那块积木，叫增强版大模型。就是给模型配上三样东西：检索、工具、记忆。",
+    "pronounce_text": "最底层那块积木，叫增强版大模型。就是给模型配上三样东西：检索、工具、记忆。",
+    "time_begin": 161460,
+    "time_end": 170230.02267573695,
+    "text_begin": 889,
+    "text_end": 926,
+    "pronounce_text_begin": 865,
+    "pronounce_text_end": 902
+  },
+  {
+    "text": "模型可以自己生成搜索查询、自己挑合适的工具、自己决定哪些信息该记住。怎么接这些外部能力？",
+    "pronounce_text": "模型可以自己生成搜索查询、自己挑合适的工具、自己决定哪些信息该记住。怎么接这些外部能力？",
+    "time_begin": 170430.02267573695,
+    "time_end": 178596.32653061225,
+    "text_begin": 926,
+    "text_end": 970,
+    "pronounce_text_begin": 902,
+    "pronounce_text_end": 946
+  },
+  {
+    "text": "一个办法就是 MCP，模型上下文协议，让模型接入一个不断长大的第三方工具生态。",
+    "pronounce_text": "一个办法就是MCP，模型上下文协议，让模型接入一个不断长大的第三方工具生态。",
+    "time_begin": 178740,
+    "time_end": 185977.50566893423,
+    "text_begin": 970,
+    "text_end": 1009,
+    "pronounce_text_begin": 946,
+    "pronounce_text_end": 984
+  },
+  {
+    "text": "往上一级，是 Workflow。文章列了好几种，我们不挨个念，那样就成教科书目录了。挑两个你就懂这个复杂度阶梯了。",
+    "pronounce_text": "往上一级，是Workflow。文章列了好几种，我们不挨个念，那样就成教科书目录了。挑两个你就懂这个复杂度阶梯了。",
+    "time_begin": 186120,
+    "time_end": 196643.12925170068,
+    "text_begin": 1009,
+    "text_end": 1066,
+    "pronounce_text_begin": 984,
+    "pronounce_text_end": 1040
+  },
+  {
+    "text": "最简单的一种叫提示链。把一个任务拆成固定的几步，每一步的输出喂给下一步。中间还能加个检查关卡。比如先生成营销文案，再翻译成另一种语言。适合那种能干净拆成固定子任务的活。",
+    "pronounce_text": "最简单的一种叫提示链。把一个任务拆成固定的几步，每一步的输出喂给下一步。中间还能加个检查关卡。比如先生成营销文案，再翻译成另一种语言。适合那种能干净拆成固定子任务的活。",
+    "time_begin": 196812,
+    "time_end": 212745.37868480725,
+    "text_begin": 1066,
+    "text_end": 1150,
+    "pronounce_text_begin": 1040,
+    "pronounce_text_end": 1124
+  },
+  {
+    "text": "再看一种更聪明的，叫路由。先给输入分个类，再送到专门的处理流程去。举个特别实在的例子。简单的问题，就交给便宜快速的 Claude Haiku 4.5。",
+    "pronounce_text": "再看一种更聪明的，叫路由。先给输入分个类，再送到专门的处理流程去。举个特别实在的例子。简单的问题，就交给便宜快速的Claude Haiku四点五。",
+    "time_begin": 212904,
+    "time_end": 226492.16326530612,
+    "text_begin": 1150,
+    "text_end": 1225,
+    "pronounce_text_begin": 1124,
+    "pronounce_text_end": 1197
+  },
+  {
+    "text": "难的问题，才送给更强的 Claude Sonnet 4.5。",
+    "pronounce_text": "难的问题，才送给更强的Claude Sonnet四点五。",
+    "time_begin": 226692.16326530612,
+    "time_end": 230853.02494331065,
+    "text_begin": 1225,
+    "text_end": 1255,
+    "pronounce_text_begin": 1197,
+    "pronounce_text_end": 1225
+  },
+  {
+    "text": "这样成本和性能就平衡了。",
+    "pronounce_text": "这样成本和性能就平衡了。",
+    "time_begin": 231012,
+    "time_end": 232955.3560090703,
+    "text_begin": 1255,
+    "text_end": 1267,
+    "pronounce_text_begin": 1225,
+    "pronounce_text_end": 1237
+  },
+  {
+    "text": "注意，这些还都是 Workflow。路径都是你写死的。",
+    "pronounce_text": "注意，这些还都是Workflow。路径都是你写死的。",
+    "time_begin": 233100,
+    "time_end": 237214.42176870749,
+    "text_begin": 1267,
+    "text_end": 1294,
+    "pronounce_text_begin": 1237,
+    "pronounce_text_end": 1263
+  },
+  {
+    "text": "阶梯往上，有一种叫编排器-工人。一个中心模型，自己把任务拆开，分派给下面的工人，再把结果汇总。",
+    "pronounce_text": "阶梯往上，有一种叫编排器，工人。一个中心模型，自己把任务拆开，分派给下面的工人，再把结果汇总。",
+    "time_begin": 237384,
+    "time_end": 246618.42176870749,
+    "text_begin": 1294,
+    "text_end": 1341,
+    "pronounce_text_begin": 1263,
+    "pronounce_text_end": 1310
+  },
+  {
+    "text": "它跟前面并行处理最大的区别是，子任务不是你预先定好的，是这个编排器临场决定的。",
+    "pronounce_text": "它跟前面并行处理最大的区别是，子任务不是你预先定好的，是这个编排器临场决定的。",
+    "time_begin": 246818.42176870749,
+    "time_end": 255251.75510204083,
+    "text_begin": 1341,
+    "text_end": 1380,
+    "pronounce_text_begin": 1310,
+    "pronounce_text_end": 1349
+  },
+  {
+    "text": "写代码就是这样，要改几个文件、改成什么样，完全看任务本身。",
+    "pronounce_text": "写代码就是这样，要改几个文件、改成什么样，完全看任务本身。",
+    "time_begin": 255420,
+    "time_end": 261241.08843537414,
+    "text_begin": 1380,
+    "text_end": 1409,
+    "pronounce_text_begin": 1349,
+    "pronounce_text_end": 1378
+  },
+  {
+    "text": "再往上，那条线终于越过去了。就是 Agent。",
+    "pronounce_text": "再往上，那条线终于越过去了。就是Agent。",
+    "time_begin": 261396,
+    "time_end": 265475.5918367347,
+    "text_begin": 1409,
+    "text_end": 1432,
+    "pronounce_text_begin": 1378,
+    "pronounce_text_end": 1400
+  },
+  {
+    "text": "Agent 听起来很玄。文章却说了句大实话。Agent 能干很复杂的活，但它的实现往往简单得出人意料。",
+    "pronounce_text": "Agent听起来很玄。文章却说了句大实话。Agent能干很复杂的活，但它的实现往往简单得出人意料。",
+    "time_begin": 265644,
+    "time_end": 273984.45351473923,
+    "text_begin": 1432,
+    "text_end": 1483,
+    "pronounce_text_begin": 1400,
+    "pronounce_text_end": 1449
+  },
+  {
+    "text": "说穿了，它就是一个大模型，拿着一组工具，根据环境给的反馈，在一个循环里转。",
+    "pronounce_text": "说穿了，它就是一个大模型，拿着一组工具，根据环境给的反馈，在一个循环里转。",
+    "time_begin": 274140,
+    "time_end": 281923.1746031746,
+    "text_begin": 1483,
+    "text_end": 1520,
+    "pronounce_text_begin": 1449,
+    "pronounce_text_end": 1486
+  },
+  {
+    "text": "它怎么工作？先从人这里拿到一个指令，或者跟人聊清楚要干什么。任务明确了，它就自己规划、自己执行。执行过程里最关键的一点，是每走一步都要从环境里拿到真实反馈。",
+    "pronounce_text": "它怎么工作？先从人这里拿到一个指令，或者跟人聊清楚要干什么。任务明确了，它就自己规划、自己执行。执行过程里最关键的一点，是每走一步都要从环境里拿到真实反馈。",
+    "time_begin": 282060,
+    "time_end": 297610.24943310657,
+    "text_begin": 1520,
+    "text_end": 1598,
+    "pronounce_text_begin": 1486,
+    "pronounce_text_end": 1564
+  },
+  {
+    "text": "工具返回了什么、代码跑出了什么结果。靠这些真实反馈来判断自己进展如何。卡住了或者到了检查点，它可以停下来问人。",
+    "pronounce_text": "工具返回了什么、代码跑出了什么结果。靠这些真实反馈来判断自己进展如何。卡住了或者到了检查点，它可以停下来问人。",
+    "time_begin": 297756,
+    "time_end": 308104.97959183675,
+    "text_begin": 1598,
+    "text_end": 1653,
+    "pronounce_text_begin": 1564,
+    "pronounce_text_end": 1619
+  },
+  {
+    "text": "这里必须泼盆冷水。文章自己也说了，这份自主性是有代价的。",
+    "pronounce_text": "这里必须泼盆冷水。文章自己也说了，这份自主性是有代价的。",
+    "time_begin": 308268,
+    "time_end": 313624.6893424036,
+    "text_begin": 1653,
+    "text_end": 1681,
+    "pronounce_text_begin": 1619,
+    "pronounce_text_end": 1647
+  },
+  {
+    "text": "Agent 自己做主，意味着更高的成本，还有误差累积。一步错，可能步步错，错误会滚雪球。",
+    "pronounce_text": "Agent自己做主，意味着更高的成本，还有误差累积。一步错，可能步步错，错误会滚雪球。",
+    "time_begin": 313776,
+    "time_end": 322755.00226757367,
+    "text_begin": 1681,
+    "text_end": 1725,
+    "pronounce_text_begin": 1647,
+    "pronounce_text_end": 1690
+  },
+  {
+    "text": "所以文章反复强调，一定要在沙盒里大量测试，加护栏，还要设停止条件，比如最多循环多少次。",
+    "pronounce_text": "所以文章反复强调，一定要在沙盒里大量测试，加护栏，还要设停止条件，比如最多循环多少次。",
+    "time_begin": 322955.00226757367,
+    "time_end": 332108.15419501136,
+    "text_begin": 1725,
+    "text_end": 1768,
+    "pronounce_text_begin": 1690,
+    "pronounce_text_end": 1733
+  },
+  {
+    "text": "不加这些，它就失控了。",
+    "pronounce_text": "不加这些，它就失控了。",
+    "time_begin": 332280,
+    "time_end": 334687.7551020408,
+    "text_begin": 1768,
+    "text_end": 1779,
+    "pronounce_text_begin": 1733,
+    "pronounce_text_end": 1744
+  },
+  {
+    "text": "Agent 适合的是那种开放式问题。你预测不了要走几步，也没法把路径写死。这时候才轮到它上场。",
+    "pronounce_text": "Agent适合的是那种开放式问题。你预测不了要走几步，也没法把路径写死。这时候才轮到它上场。",
+    "time_begin": 334836,
+    "time_end": 343176.45351473923,
+    "text_begin": 1779,
+    "text_end": 1826,
+    "pronounce_text_begin": 1744,
+    "pronounce_text_end": 1790
+  },
+  {
+    "text": "如果这期你只记住一件事，记住这个。文章最后抛出了一个大多数人都忽略的胜负手。",
+    "pronounce_text": "如果这期你只记住一件事，记住这个。文章最后抛出了一个大多数人都忽略的胜负手。",
+    "time_begin": 343332,
+    "time_end": 350604.33560090704,
+    "text_begin": 1826,
+    "text_end": 1864,
+    "pronounce_text_begin": 1790,
+    "pronounce_text_end": 1828
+  },
+  {
+    "text": "所有人的精力都砸在打磨 prompt 上，把工具当成写死的 API，懒得管。但 Anthropic 说，工具的定义，值得你投入和整体 prompt 一样多的心思，甚至更多。",
+    "pronounce_text": "所有人的精力都砸在打磨prompt上，把工具当成写死的API，懒得管。但Anthropic说，工具的定义，值得你投入和整体prompt一样多的心思，甚至更多。",
+    "time_begin": 350748,
+    "time_end": 363651.1746031746,
+    "text_begin": 1864,
+    "text_end": 1950,
+    "pronounce_text_begin": 1828,
+    "pronounce_text_end": 1907
+  },
+  {
+    "text": "他们造那个解决真实 GitHub issue 的 SWE-bench Agent 时，花在打磨工具上的时间，超过了打磨主 prompt。",
+    "pronounce_text": "他们造那个解决真实GitHub issue的SWE-bench Agent时，花在打磨工具上的时间，超过了打磨主prompt。",
+    "time_begin": 363816,
+    "time_end": 372504.7528344671,
+    "text_begin": 1950,
+    "text_end": 2018,
+    "pronounce_text_begin": 1907,
+    "pronounce_text_end": 1970
+  },
+  {
+    "text": "而且有个特别反直觉的点。该选什么工具格式，不取决于对程序员来说规不规整，而取决于模型写起来累不累。",
+    "pronounce_text": "而且有个特别反直觉的点。该选什么工具格式，不取决于对程序员来说规不规整，而取决于模型写起来累不累。",
+    "time_begin": 372672,
+    "time_end": 381871.5918367347,
+    "text_begin": 2018,
+    "text_end": 2067,
+    "pronounce_text_begin": 1970,
+    "pronounce_text_end": 2019
+  },
+  {
+    "text": "文章里有个具体的 bug 场景，比任何比喻都锋利。",
+    "pronounce_text": "文章里有个具体的bug场景，比任何比喻都锋利。",
+    "time_begin": 382032,
+    "time_end": 386146.42176870746,
+    "text_begin": 2067,
+    "text_end": 2092,
+    "pronounce_text_begin": 2019,
+    "pronounce_text_end": 2042
+  },
+  {
+    "text": "他们发现，当 Agent 离开了根目录，再用相对路径去指文件，模型就开始出错。你猜他们怎么修的？没去改 prompt，没去骂模型笨。他们改了工具本身。把工具改成强制要求用绝对路径。",
+    "pronounce_text": "他们发现，当Agent离开了根目录，再用相对路径去指文件，模型就开始出错。你猜他们怎么修的？没去改prompt，没去骂模型笨。他们改了工具本身。把工具改成强制要求用绝对路径。",
+    "time_begin": 386316,
+    "time_end": 402760.21768707485,
+    "text_begin": 2092,
+    "text_end": 2182,
+    "pronounce_text_begin": 2042,
+    "pronounce_text_end": 2129
+  },
+  {
+    "text": "改完之后，模型零失误，完美地用对了。",
+    "pronounce_text": "改完之后，模型零失误，完美地用对了。",
+    "time_begin": 402912,
+    "time_end": 407072.86167800456,
+    "text_begin": 2182,
+    "text_end": 2200,
+    "pronounce_text_begin": 2129,
+    "pronounce_text_end": 2147
+  },
+  {
+    "text": "你品品这个细节。解决出错，有时候根本不是让模型更聪明，而是把接口设计成让模型更难犯错。这就是文章说的，给工具做防呆。把工具描述写得像给初级程序员的一份好文档。",
+    "pronounce_text": "你品品这个细节。解决出错，有时候根本不是让模型更聪明，而是把接口设计成让模型更难犯错。这就是文章说的，给工具做防呆。把工具描述写得像给初级程序员的一份好文档。",
+    "time_begin": 407232,
+    "time_end": 423084.1088435374,
+    "text_begin": 2200,
+    "text_end": 2279,
+    "pronounce_text_begin": 2147,
+    "pronounce_text_end": 2226
+  },
+  {
+    "text": "把自己代入模型的处境，想想它用起来到底顺不顺手。",
+    "pronounce_text": "把自己代入模型的处境，想想它用起来到底顺不顺手。",
+    "time_begin": 423252,
+    "time_end": 426983.2925170068,
+    "text_begin": 2279,
+    "text_end": 2303,
+    "pronounce_text_begin": 2226,
+    "pronounce_text_end": 2250
+  },
+  {
+    "text": "绕了一圈，文章把三条核心原则拍在桌上。第一，让你的 Agent 设计保持简单。第二，把模型的规划步骤明明白白亮出来，别藏。",
+    "pronounce_text": "绕了一圈，文章把三条核心原则拍在桌上。第一，让你的Agent设计保持简单。第二，把模型的规划步骤明明白白亮出来，别藏。",
+    "time_begin": 427140,
+    "time_end": 439961.90476190473,
+    "text_begin": 2303,
+    "text_end": 2364,
+    "pronounce_text_begin": 2250,
+    "pronounce_text_end": 2309
+  },
+  {
+    "text": "第三，认认真真打磨那个 Agent 和计算机之间的接口。",
+    "pronounce_text": "第三，认认真真打磨那个Agent和计算机之间的接口。",
+    "time_begin": 440161.90476190473,
+    "time_end": 444624.6258503401,
+    "text_begin": 2364,
+    "text_end": 2392,
+    "pronounce_text_begin": 2309,
+    "pronounce_text_end": 2335
+  },
+  {
+    "text": "这三条背后是同一个判断。别急着造更聪明的系统，先造对的系统。最强的 Agent，往往把最多的时间，花在怎么让模型少犯错上，而不是花在怎么让模型更聪明上。",
+    "pronounce_text": "这三条背后是同一个判断。别急着造更聪明的系统，先造对的系统。最强的Agent，往往把最多的时间，花在怎么让模型少犯错上，而不是花在怎么让模型更聪明上。",
+    "time_begin": 444780,
+    "time_end": 460423.1292517007,
+    "text_begin": 2392,
+    "text_end": 2468,
+    "pronounce_text_begin": 2335,
+    "pronounce_text_end": 2410
+  },
+  {
+    "text": "所以如果你正准备做 Agent，这篇文章给你的可执行建议其实特别朴素。先从最简单的 prompt 起步。用评估去优化它。只有当简单方案真的不够用了，才一步步加上多步的自主系统。",
+    "pronounce_text": "所以如果你正准备做Agent，这篇文章给你的可执行建议其实特别朴素。先从最简单的prompt起步。用评估去优化它。只有当简单方案真的不够用了，才一步步加上多步的自主系统。",
+    "time_begin": 460584,
+    "time_end": 476308.39909297053,
+    "text_begin": 2468,
+    "text_end": 2556,
+    "pronounce_text_begin": 2410,
+    "pronounce_text_end": 2495
+  },
+  {
+    "text": "框架能帮你快速起步，但真到了生产环境，别舍不得把那些抽象层砍掉。",
+    "pronounce_text": "框架能帮你快速起步，但真到了生产环境，别舍不得把那些抽象层砍掉。",
+    "time_begin": 476460,
+    "time_end": 482118.54875283444,
+    "text_begin": 2556,
+    "text_end": 2588,
+    "pronounce_text_begin": 2495,
+    "pronounce_text_end": 2527
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 482256,
+    "time_end": 487740.39909297053,
+    "text_begin": 2588,
+    "text_end": 2615,
+    "pronounce_text_begin": 2527,
+    "pronounce_text_end": 2553
+  }
+]

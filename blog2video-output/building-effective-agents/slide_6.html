@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .title { font-size: 66px; font-weight: 800; margin-bottom: 50px; line-height: 1.2; }
+    .cards { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+    .card { background: #1A1A2E; border-radius: 12px; padding: 36px 32px; text-align: left; }
+    .card.chain { border: 1px solid rgba(59,130,246,0.35); border-left: 6px solid #3B82F6; }
+    .card.route { border: 1px solid rgba(139,92,246,0.35); border-left: 6px solid #8B5CF6; }
+    .head { font-size: 40px; font-weight: 800; margin-bottom: 16px; }
+    .head .en { font-family: 'JetBrains Mono', monospace; font-size: 32px; }
+    .card.chain .head { color: #3B82F6; }
+    .card.route .head { color: #8B5CF6; }
+    .body { font-size: 34px; color: #FFFFFF; line-height: 1.44; }
+    .body .mono { font-family: 'JetBrains Mono', monospace; color: #F59E0B; }
+    .note {
+      margin-top: 40px; font-size: 32px; color: #B0B0CC; font-weight: 700;
+    }
+    .note .warn { color: #F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">两种基础 Workflow</div>
+    <div class="cards">
+      <div class="card chain">
+        <div class="head">提示链 <span class="en">Prompt Chaining</span></div>
+        <div class="body">拆成固定几步，上一步输出喂给下一步 —— 先生成营销文案，再翻译</div>
+      </div>
+      <div class="card route">
+        <div class="head">路由 <span class="en">Routing</span></div>
+        <div class="body">先分类，再送专门流程：简单问题给 <span class="mono">Haiku 4.5</span>，难题给 <span class="mono">Sonnet 4.5</span></div>
+      </div>
+    </div>
+    <div class="note">注意：这些还都是 <span class="warn">Workflow</span> —— 路径都是你写死的</div>
+  </div>
+</body>
+</html>

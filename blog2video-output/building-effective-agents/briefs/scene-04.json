@@ -1,0 +1,94 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 55.8,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_4.html",
+ "topbarIndex": "[04/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 3.457,
+   "text": "顺着这个思路，文章问了下一个问题。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.469,
+   "localDuration": 1.424,
+   "text": "框架要不要用？"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.052,
+   "localDuration": 1.08,
+   "text": "市面上框架不少。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.132,
+   "localDuration": 7.288,
+   "text": "Anthropic 自己的 Agent SDK，AWS 的 Strands，还有 Rivet、Vellum。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 13.42,
+   "localDuration": 1.215,
+   "text": "它们的好处很明确。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 14.835,
+   "localDuration": 7.4,
+   "text": "帮你把调用模型、定义解析工具、串联调用这些底层脏活累活包起来，让你快速起步。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.404,
+   "localDuration": 1.439,
+   "text": "但代价也很实在。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 23.843,
+   "localDuration": 7.012,
+   "text": "框架会多出一层抽象，把底层真正发给模型的 prompt 和模型的响应给挡住了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 30.855,
+   "localDuration": 2.518,
+   "text": "出了问题你很难 debug。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 33.373,
+   "localDuration": 5.394,
+   "text": "而且它会诱惑你，在其实更简单就够用的时候，忍不住去加复杂度。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 38.928,
+   "localDuration": 1.925,
+   "text": "文章给的建议很直接。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 40.853,
+   "localDuration": 5.389,
+   "text": "先直接调 LLM 的 API，很多模式几行代码就实现了。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 46.242,
+   "localDuration": 3.85,
+   "text": "真要用框架，也一定要搞懂它底层在干什么。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 50.092,
+   "localDuration": 5.582,
+   "text": "对引擎盖下面发生的事情做错误假设，是客户出错最常见的来源。"
+  }
+ ]
+}

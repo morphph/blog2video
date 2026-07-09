@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .dlead{font-weight:600;font-size:38px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s08'] .deftags{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+[data-composition-id='s08'] .deftags .tg{font-family:'JetBrains Mono',monospace;font-size:27px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:6px 16px}
+[data-composition-id='s08'] .k2{margin-top:40px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="42.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[08/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 拆穿 AGENT · <span class="acc">其实很朴素</span></div>
+      <div class="h1" style="margin-top:18px">实现往往,<span class="em">简单得出人意料</span></div>
+
+      <div class="bracket b-def" style="margin-top:40px">
+        <div class="dlead">说穿了,不过是 —</div>
+        <div class="deftags">
+          <span class="tg">大模型</span><span class="tg">一组工具</span><span class="tg">环境反馈</span><span class="tg">一个循环</span>
+        </div>
+      </div>
+
+      <div class="kicker k2">// 它怎么<span class="acc">工作</span></div>
+
+      <div class="rows" style="margin-top:20px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">从人这里拿到<span class="code">指令</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">自己规划 · 自己执行</div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">每步从环境拿<span class="code">真实反馈</span></div>
+          <div class="rd late">工具返回了什么 · 代码跑出什么结果</div>
+        </div></div>
+
+        <div class="row r4"><div class="n">04</div><div class="rb">
+          <div class="rt">卡住 / 检查点 → 停下问人</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.011" data-duration="1.962" data-track-index="5"><div class="sub-inner">Agent 听起来<span class="sub-k">很玄</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.973" data-duration="1.636" data-track-index="5"><div class="sub-inner">文章却说了句<span class="sub-k">大实话</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="3.609" data-duration="4.742" data-track-index="5"><div class="sub-inner">Agent 能干很复杂的活，但它的实现往往<span class="sub-k">简单得出人意料</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.507" data-duration="7.783" data-track-index="5"><div class="sub-inner">说穿了，它就是一个大模型，拿着一组工具，根据环境给的反馈，在一个<span class="sub-k">循环</span>里转。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.427" data-duration="1.196" data-track-index="5"><div class="sub-inner">它<span class="sub-k">怎么工作</span>？</div></div>
+    <div id="sub-6" class="clip sub" data-start="17.623" data-duration="4.785" data-track-index="5"><div class="sub-inner">先从人这里拿到一个<span class="sub-k">指令</span>，或者跟人聊清楚要干什么。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.408" data-duration="3.588" data-track-index="5"><div class="sub-inner">任务明确了，它就<span class="sub-k">自己规划、自己执行</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="25.996" data-duration="5.981" data-track-index="5"><div class="sub-inner">执行过程里最关键的一点，是每走一步都要从环境里拿到<span class="sub-k">真实反馈</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="32.123" data-duration="3.387" data-track-index="5"><div class="sub-inner"><span class="sub-k">工具返回了什么</span>、代码跑出了什么结果。</div></div>
+    <div id="sub-10" class="clip sub" data-start="35.51" data-duration="3.199" data-track-index="5"><div class="sub-inner">靠这些真实反馈来判断自己<span class="sub-k">进展</span>如何。</div></div>
+    <div id="sub-11" class="clip sub" data-start="38.709" data-duration="3.763" data-track-index="5"><div class="sub-inner">卡住了或者到了检查点，它可以<span class="sub-k">停下来问人</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.b-def', 8.5, {y:20, d:.38, ease:'power3.out'});
+    D2.stagger(tl, R+'.deftags .tg', 9.4, {y:14, step:.12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.k2', 16.4, {y:-10, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 17.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 22.4, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 26.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .late', 32.1, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r4', 38.7, {x:-24, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.011],['#sub-2',1.973],['#sub-3',3.609],['#sub-4',8.507],['#sub-5',16.427],['#sub-6',17.623],['#sub-7',22.408],['#sub-8',25.996],['#sub-9',32.123],['#sub-10',35.51],['#sub-11',38.709]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

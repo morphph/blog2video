@@ -1,0 +1,94 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "summary",
+ "dataDuration": 61.6,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_12.html",
+ "topbarIndex": "[12/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 3.994,
+   "text": "绕了一圈，文章把三条核心原则拍在桌上。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.001,
+   "localDuration": 4.204,
+   "text": "第一，让你的 Agent 设计保持简单。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.205,
+   "localDuration": 4.624,
+   "text": "第二，把模型的规划步骤明明白白亮出来，别藏。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.029,
+   "localDuration": 4.463,
+   "text": "第三，认认真真打磨那个 Agent 和计算机之间的接口。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.647,
+   "localDuration": 2.47,
+   "text": "这三条背后是同一个判断。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 20.117,
+   "localDuration": 3.705,
+   "text": "别急着造更聪明的系统，先造对的系统。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.822,
+   "localDuration": 9.468,
+   "text": "最强的 Agent，往往把最多的时间，花在怎么让模型少犯错上，而不是花在怎么让模型更聪明上。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 33.451,
+   "localDuration": 6.254,
+   "text": "所以如果你正准备做 Agent，这篇文章给你的可执行建议其实特别朴素。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 39.705,
+   "localDuration": 3.038,
+   "text": "先从最简单的 prompt 起步。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 42.743,
+   "localDuration": 1.429,
+   "text": "用评估去优化它。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 44.172,
+   "localDuration": 5.003,
+   "text": "只有当简单方案真的不够用了，才一步步加上多步的自主系统。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 49.327,
+   "localDuration": 5.659,
+   "text": "框架能帮你快速起步，但真到了生产环境，别舍不得把那些抽象层砍掉。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 55.123,
+   "localDuration": 4.063,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 59.186,
+   "localDuration": 1.421,
+   "text": "我们下期再见。"
+  }
+ ]
+}

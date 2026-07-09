@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s05'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:24px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 14px}
+[data-composition-id='s05'] .row .auto{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="42.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[05/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 该不该用 · <span class="acc">先搭台阶</span></div>
+      <div class="h1" style="margin-top:18px">从最简单的积木起<br><span class="em">一级一级，加复杂度</span></div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row rL0 now"><div class="n">L0</div><div class="rb">
+          <div class="rt">最底层那块积木 —— <span class="code">增强版大模型</span></div>
+          <div class="rd cfg">给模型配上三样东西</div>
+          <div class="taglist"><span class="tg">检索</span><span class="tg">工具</span><span class="tg">记忆</span></div>
+          <div class="auto">都自己决定:查什么 · 用什么 · 记什么</div>
+        </div></div>
+
+        <div class="row rMCP"><div class="n">+</div><div class="rb">
+          <div class="rt">怎么接这些外部能力?</div>
+          <div class="rd ans">用 <span class="code">MCP</span> 模型上下文协议,接入不断长大的第三方工具生态</div>
+        </div></div>
+
+        <div class="row rL1"><div class="n">L1</div><div class="rb">
+          <div class="rt">往上一级 —— <span class="code">Workflow</span></div>
+          <div class="rd ans">文章列了好几种,不挨个念,挑两个就懂</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:38px">两个例子,看懂这道<span class="hl"><span class="bar"></span><span class="tx">复杂度阶梯</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="3.301" data-track-index="5"><div class="sub-inner">讲清楚该不该用,文章开始<span class="sub-k">搭台阶</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.313" data-duration="3.507" data-track-index="5"><div class="sub-inner">从<span class="sub-k">最简单的积木</span>,一级一级加复杂度。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.96" data-duration="3.792" data-track-index="5"><div class="sub-inner">最底层那块积木,叫<span class="sub-k">增强版大模型</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.752" data-duration="4.978" data-track-index="5"><div class="sub-inner">就是给模型配上三样东西:<span class="sub-k">检索、工具、记忆</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.93" data-duration="6.31" data-track-index="5"><div class="sub-inner">模型可以自己生成搜索查询、自己挑合适的工具、<span class="sub-k">自己决定</span>哪些信息该记住。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.24" data-duration="1.856" data-track-index="5"><div class="sub-inner">怎么接这些<span class="sub-k">外部能力</span>?</div></div>
+    <div id="sub-7" class="clip sub" data-start="24.24" data-duration="7.238" data-track-index="5"><div class="sub-inner">一个办法就是 <span class="sub-k">MCP</span>,模型上下文协议,让模型接入一个不断长大的第三方工具生态。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.62" data-duration="2.954" data-track-index="5"><div class="sub-inner">往上一级,是 <span class="sub-k">Workflow</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="34.574" data-duration="4.8" data-track-index="5"><div class="sub-inner">文章列了好几种,我们<span class="sub-k">不挨个念</span>,那样就成教科书目录了。</div></div>
+    <div id="sub-10" class="clip sub" data-start="39.374" data-duration="2.769" data-track-index="5"><div class="sub-inner">挑两个你就懂这个<span class="sub-k">复杂度阶梯</span>了。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.rL0', 7.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.rL0 .cfg', 10.9, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.rL0 .taglist .tg', 11.1, {y:12, step:.12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.rL0 .auto', 16.0, {y:12, d:.3, ease:'power1.out'});
+    D2.enter(tl, R+'.rMCP', 22.3, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.rMCP .ans', 24.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rL1', 31.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.rL1 .ans', 34.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 39.4, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 40.2);
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',3.313],['#sub-3',6.96],['#sub-4',10.752],['#sub-5',15.93],['#sub-6',22.24],['#sub-7',24.24],['#sub-8',31.62],['#sub-9',34.574],['#sub-10',39.374]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 42.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

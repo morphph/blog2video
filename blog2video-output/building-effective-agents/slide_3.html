@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+    }
+    .kicker { font-size: 32px; color: #F59E0B; font-weight: 700; margin-bottom: 30px; letter-spacing: 1px; }
+    .main-card {
+      background: #1A1A2E; border: 1px solid rgba(245,158,11,0.4);
+      border-left: 6px solid #F59E0B; border-radius: 12px;
+      padding: 48px 40px; margin-bottom: 56px; width: 100%; text-align: left;
+    }
+    .main-card .q { font-size: 52px; font-weight: 800; line-height: 1.34; }
+    .main-card .q .hl { color: #F59E0B; }
+    .points { display: flex; flex-direction: column; gap: 26px; width: 100%; }
+    .point {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px; padding: 30px 30px; text-align: left;
+      font-size: 36px; line-height: 1.42; color: #FFFFFF;
+    }
+    .point b { color: #8B5CF6; }
+    .point .cost { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">全文最克制、也最值钱的一句</div>
+    <div class="main-card">
+      <div class="q">先找<span class="hl">最简单的方案</span>，<br>只在真正需要时才加复杂度</div>
+    </div>
+    <div class="points">
+      <div class="point">Agent = 拿<span class="cost">延迟和成本</span>，换更好的任务表现 —— 这笔交易不是每次都划算</div>
+      <div class="point">很多应用，<b>一次调用 + 检索 + 几个示例</b>就足够，没必要一上来就搭自主系统</div>
+    </div>
+  </div>
+</body>
+</html>

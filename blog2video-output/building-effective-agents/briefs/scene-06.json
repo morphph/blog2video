@@ -1,0 +1,88 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 40.6,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_6.html",
+ "topbarIndex": "[06/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 2.087,
+   "text": "最简单的一种叫提示链。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.099,
+   "localDuration": 4.742,
+   "text": "把一个任务拆成固定的几步，每一步的输出喂给下一步。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.841,
+   "localDuration": 2.086,
+   "text": "中间还能加个检查关卡。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.927,
+   "localDuration": 3.794,
+   "text": "比如先生成营销文案，再翻译成另一种语言。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 12.721,
+   "localDuration": 3.224,
+   "text": "适合那种能干净拆成固定子任务的活。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.104,
+   "localDuration": 2.355,
+   "text": "再看一种更聪明的，叫路由。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 18.459,
+   "localDuration": 3.624,
+   "text": "先给输入分个类，再送到专门的处理流程去。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 22.083,
+   "localDuration": 1.812,
+   "text": "举个特别实在的例子。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 23.895,
+   "localDuration": 5.797,
+   "text": "简单的问题，就交给便宜快速的 Claude Haiku 4.5。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 29.892,
+   "localDuration": 4.161,
+   "text": "难的问题，才送给更强的 Claude Sonnet 4.5。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 34.212,
+   "localDuration": 1.943,
+   "text": "这样成本和性能就平衡了。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 36.3,
+   "localDuration": 2.743,
+   "text": "注意，这些还都是 Workflow。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 39.043,
+   "localDuration": 1.371,
+   "text": "路径都是你写死的。"
+  }
+ ]
+}

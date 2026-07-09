@@ -1,0 +1,70 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 42.3,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_5.html",
+ "topbarIndex": "[05/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 3.301,
+   "text": "讲清楚该不该用，文章开始搭台阶。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.313,
+   "localDuration": 3.507,
+   "text": "从最简单的积木，一级一级加复杂度。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.96,
+   "localDuration": 3.792,
+   "text": "最底层那块积木，叫增强版大模型。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.752,
+   "localDuration": 4.978,
+   "text": "就是给模型配上三样东西：检索、工具、记忆。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.93,
+   "localDuration": 6.31,
+   "text": "模型可以自己生成搜索查询、自己挑合适的工具、自己决定哪些信息该记住。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.24,
+   "localDuration": 1.856,
+   "text": "怎么接这些外部能力？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 24.24,
+   "localDuration": 7.238,
+   "text": "一个办法就是 MCP，模型上下文协议，让模型接入一个不断长大的第三方工具生态。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.62,
+   "localDuration": 2.954,
+   "text": "往上一级，是 Workflow。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 34.574,
+   "localDuration": 4.8,
+   "text": "文章列了好几种，我们不挨个念，那样就成教科书目录了。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 39.374,
+   "localDuration": 2.769,
+   "text": "挑两个你就懂这个复杂度阶梯了。"
+  }
+ ]
+}

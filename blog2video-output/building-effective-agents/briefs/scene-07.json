@@ -1,0 +1,46 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 28.233,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_7.html",
+ "topbarIndex": "[07/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.144,
+   "text": "阶梯往上，有一种叫编排器-工人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.128,
+   "localDuration": 6.09,
+   "text": "一个中心模型，自己把任务拆开，分派给下面的工人，再把结果汇总。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.418,
+   "localDuration": 8.434,
+   "text": "它跟前面并行处理最大的区别是，子任务不是你预先定好的，是这个编排器临场决定的。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.02,
+   "localDuration": 5.821,
+   "text": "写代码就是这样，要改几个文件、改成什么样，完全看任务本身。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.996,
+   "localDuration": 2.483,
+   "text": "再往上，那条线终于越过去了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.479,
+   "localDuration": 1.597,
+   "text": "就是 Agent。"
+  }
+ ]
+}

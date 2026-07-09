@@ -1,0 +1,76 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 42.633,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_8.html",
+ "topbarIndex": "[08/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.011,
+   "localDuration": 1.962,
+   "text": "Agent 听起来很玄。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.973,
+   "localDuration": 1.636,
+   "text": "文章却说了句大实话。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 3.609,
+   "localDuration": 4.742,
+   "text": "Agent 能干很复杂的活，但它的实现往往简单得出人意料。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.507,
+   "localDuration": 7.783,
+   "text": "说穿了，它就是一个大模型，拿着一组工具，根据环境给的反馈，在一个循环里转。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.427,
+   "localDuration": 1.196,
+   "text": "它怎么工作？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.623,
+   "localDuration": 4.785,
+   "text": "先从人这里拿到一个指令，或者跟人聊清楚要干什么。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.408,
+   "localDuration": 3.588,
+   "text": "任务明确了，它就自己规划、自己执行。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 25.996,
+   "localDuration": 5.981,
+   "text": "执行过程里最关键的一点，是每走一步都要从环境里拿到真实反馈。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 32.123,
+   "localDuration": 3.387,
+   "text": "工具返回了什么、代码跑出了什么结果。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 35.51,
+   "localDuration": 3.199,
+   "text": "靠这些真实反馈来判断自己进展如何。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 38.709,
+   "localDuration": 3.763,
+   "text": "卡住了或者到了检查点，它可以停下来问人。"
+  }
+ ]
+}

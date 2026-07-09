@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; position: relative;
+    }
+    .halo {
+      position: absolute; top: 340px; left: 50%; transform: translateX(-50%);
+      width: 760px; height: 760px;
+      background: radial-gradient(circle, rgba(139,92,246,0.22) 0%, rgba(139,92,246,0) 68%);
+      pointer-events: none;
+    }
+    .kicker {
+      font-size: 30px; color: #8B5CF6; font-weight: 700; letter-spacing: 2px;
+      margin-bottom: 40px; position: relative; z-index: 1;
+    }
+    .title {
+      font-size: 92px; font-weight: 800; line-height: 1.18;
+      position: relative; z-index: 1;
+    }
+    .title .hl { color: #F59E0B; }
+    .subtitle {
+      font-size: 40px; color: #B0B0CC; margin-top: 44px; line-height: 1.5;
+      position: relative; z-index: 1;
+    }
+    .cards { display: flex; flex-direction: column; gap: 28px; width: 100%; margin-top: 72px; position: relative; z-index: 1; }
+    .card {
+      background: #1A1A2E; border: 1px solid rgba(139,92,246,0.35);
+      border-left: 4px solid #EF4444; border-radius: 12px; padding: 32px 30px;
+      text-align: left;
+    }
+    .card .q { font-size: 40px; font-weight: 700; color: #FFFFFF; line-height: 1.4; }
+    .card.answer { border-left-color: #10B981; }
+    .card.answer .q { color: #10B981; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="halo"></div>
+    <div class="kicker">ANTHROPIC 官方工程博客</div>
+    <div class="title">最成功的 Agent<br>都<span class="hl">没用框架</span></div>
+    <div class="subtitle">陪几十个团队做了一年 Agent<br>得出一个反直觉的结论</div>
+    <div class="cards">
+      <div class="card"><div class="q">跑通生产的 Agent，背后一定是精密复杂的框架？</div></div>
+      <div class="card answer"><div class="q">恰恰相反 —— 靠的是简单、可组合的小模式</div></div>
+    </div>
+  </div>
+</body>
+</html>

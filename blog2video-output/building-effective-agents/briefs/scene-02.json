@@ -1,0 +1,82 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 38.233,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/building-effective-agents/slide_2.html",
+ "topbarIndex": "[02/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 3.86,
+   "text": "很多人把 Agent 挂在嘴边，其实脑子里是一锅粥。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.868,
+   "localDuration": 2.82,
+   "text": "这篇文章上来先做了一个特别重要的切分。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.848,
+   "localDuration": 4.528,
+   "text": "它把所有能自己动手的系统统称为 agentic 系统。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.376,
+   "localDuration": 1.174,
+   "text": "但里面分两种。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 12.55,
+   "localDuration": 2.85,
+   "text": "一种叫 Workflow，工作流。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 15.4,
+   "localDuration": 4.696,
+   "text": "就是大模型和工具，按照你事先写死在代码里的路径一步步走。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 20.096,
+   "localDuration": 2.012,
+   "text": "另一种才叫 Agent。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 22.256,
+   "localDuration": 5.148,
+   "text": "模型自己决定下一步用什么工具、怎么完成任务、走几步。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 27.548,
+   "localDuration": 0.907,
+   "text": "差别在哪？"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 28.455,
+   "localDuration": 4.717,
+   "text": "Workflow 的路是你铺好的，模型只是在上面跑。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 33.172,
+   "localDuration": 2.54,
+   "text": "Agent 是模型自己找路。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 35.712,
+   "localDuration": 2.359,
+   "text": "记住这个区分，后面全靠它。"
+  }
+ ]
+}

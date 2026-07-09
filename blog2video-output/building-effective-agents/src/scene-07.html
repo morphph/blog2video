@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .subttl{font-family:'JetBrains Mono',monospace;font-size:34px;color:#5fd3e8;margin-top:14px;letter-spacing:.02em}
+[data-composition-id='s07'] .punch{margin-top:40px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="28.233" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[07/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 阶梯再往上一级 · <span class="acc">编排</span></div>
+      <div class="h1" style="margin-top:18px">编排器-<span class="em">工人</span></div>
+      <div class="subttl">Orchestrator-Workers</div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">中心模型 <span class="code">自拆任务</span></div>
+          <div class="rd">分派给工人,再把结果汇总</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">和并行的区别:子任务 <span class="code">临场决定</span></div>
+          <div class="rd">不是你预先定好的</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">例子 · <span class="code">写代码</span></div>
+          <div class="rd">改几个文件、改成什么样,完全看任务本身</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">那条线终于越过去,<span class="hl"><span class="bar"></span><span class="tx">就是 Agent</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.144" data-track-index="5"><div class="sub-inner">阶梯往上,有一种叫<span class="sub-k">编排器-工人</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.128" data-duration="6.09" data-track-index="5"><div class="sub-inner">一个<span class="sub-k">中心模型</span>,自己把任务拆开,分派给下面的工人,再把结果汇总。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.418" data-duration="8.434" data-track-index="5"><div class="sub-inner">它跟前面并行处理最大的区别是,子任务不是你预先定好的,是这个编排器<span class="sub-k">临场决定</span>的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.02" data-duration="5.821" data-track-index="5"><div class="sub-inner">写代码就是这样,要改几个文件、改成什么样,<span class="sub-k">完全看任务本身</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.996" data-duration="2.483" data-track-index="5"><div class="sub-inner">再往上,那条线<span class="sub-k">终于越过去了</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.479" data-duration="1.597" data-track-index="5"><div class="sub-inner">就是 <span class="sub-k">Agent</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.subttl', 1.1, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 3.2, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 9.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 13.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 18.1, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 24.1, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 26.5);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.128],['#sub-3',9.418],['#sub-4',18.02],['#sub-5',23.996],['#sub-6',26.479]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 28.233, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

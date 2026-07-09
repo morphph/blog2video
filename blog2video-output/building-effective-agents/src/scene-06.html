@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .taglist{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+[data-composition-id='s06'] .taglist .tag{margin-left:0;vertical-align:0}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="40.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[06/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 两种基础 <span class="acc">WORKFLOW</span></div>
+      <div class="h1" style="margin-top:18px">路径写死的<span class="em">编排</span></div>
+
+      <div class="rows" style="margin-top:46px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">提示链 <span class="code">Prompt Chaining</span></div>
+          <div class="rd r1d">拆成固定几步,上一步输出喂给下一步</div>
+          <div class="taglist"><span class="tag tg-gate">中途加检查关卡</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">路由 <span class="code">Routing</span></div>
+          <div class="rd r2d">先分类,再送到专门的处理流程</div>
+          <div class="taglist"><span class="tag tg-h">简单 › Haiku 4.5</span><span class="tag tg-s">难题 › Sonnet 4.5</span></div>
+        </div></div>
+
+        <div class="row warn r3"><div class="n">!</div><div class="rb">
+          <div class="rt">注意:这些还都是 Workflow</div>
+          <div class="rd r3d"><span class="warn">路径都是你写死的</span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="2.087" data-track-index="5"><div class="sub-inner">最简单的一种叫<span class="sub-k">提示链</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.099" data-duration="4.742" data-track-index="5"><div class="sub-inner">把一个任务拆成<span class="sub-k">固定的几步</span>,每一步的输出喂给下一步。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.841" data-duration="2.086" data-track-index="5"><div class="sub-inner">中间还能加个<span class="sub-k">检查关卡</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.927" data-duration="3.794" data-track-index="5"><div class="sub-inner">比如先生成<span class="sub-k">营销文案</span>,再翻译成另一种语言。</div></div>
+    <div id="sub-5" class="clip sub" data-start="12.721" data-duration="3.224" data-track-index="5"><div class="sub-inner">适合那种能干净拆成<span class="sub-k">固定子任务</span>的活。</div></div>
+    <div id="sub-6" class="clip sub" data-start="16.104" data-duration="2.355" data-track-index="5"><div class="sub-inner">再看一种更聪明的,叫<span class="sub-k">路由</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="18.459" data-duration="3.624" data-track-index="5"><div class="sub-inner">先给输入<span class="sub-k">分个类</span>,再送到专门的处理流程去。</div></div>
+    <div id="sub-8" class="clip sub" data-start="22.083" data-duration="1.812" data-track-index="5"><div class="sub-inner">举个特别实在的例子。</div></div>
+    <div id="sub-9" class="clip sub" data-start="23.895" data-duration="5.797" data-track-index="5"><div class="sub-inner">简单的问题,就交给便宜快速的 <span class="sub-k">Claude Haiku 4.5</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="29.892" data-duration="4.161" data-track-index="5"><div class="sub-inner">难的问题,才送给更强的 <span class="sub-k">Claude Sonnet 4.5</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="34.212" data-duration="1.943" data-track-index="5"><div class="sub-inner">这样<span class="sub-k">成本和性能</span>就平衡了。</div></div>
+    <div id="sub-12" class="clip sub" data-start="36.3" data-duration="2.743" data-track-index="5"><div class="sub-inner">注意,这些还都是 <span class="sub-k">Workflow</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="39.043" data-duration="1.371" data-track-index="5"><div class="sub-inner">路径都是你<span class="sub-k">写死的</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', .95, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1d', 2.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.tg-gate', 6.9, {y:12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 16.2, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2d', 18.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.tg-h', 24.0, {y:12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tg-s', 30.0, {y:12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 36.4, {x:-24, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r3d', 39.1, {y:10, d:.28, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',2.099],['#sub-3',6.841],['#sub-4',8.927],['#sub-5',12.721],['#sub-6',16.104],['#sub-7',18.459],['#sub-8',22.083],['#sub-9',23.895],['#sub-10',29.892],['#sub-11',34.212],['#sub-12',36.3],['#sub-13',39.043]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 40.6, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

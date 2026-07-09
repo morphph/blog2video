@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(收官 summary)—— */
+[data-composition-id='s12'] .rows{gap:10px}
+[data-composition-id='s12'] .row{padding:15px 28px}
+[data-composition-id='s12'] .row .rt{font-size:37px}
+[data-composition-id='s12'] .row .rt .k{color:#ccff4d}
+[data-composition-id='s12'] .jlate2{color:#8a8a85}
+[data-composition-id='s12'] .jlate2 .em{color:#ccff4d}
+[data-composition-id='s12'] .cmd{font-family:'JetBrains Mono',monospace;font-size:34px;color:#edebe6;line-height:1.5;display:flex;align-items:baseline;flex-wrap:wrap;margin-top:8px}
+[data-composition-id='s12'] .cmd.c0{margin-top:0}
+[data-composition-id='s12'] .cmd .p{color:#ccff4d;margin-right:14px}
+[data-composition-id='s12'] .cmd .ar{color:#8a8a85;margin-right:14px}
+[data-composition-id='s12'] .cmd .cm{color:#8a8a85;margin-left:16px;font-size:26px}
+[data-composition-id='s12'] .cmd .ok{color:#ccff4d;margin-left:10px}
+[data-composition-id='s12'] .term-body{padding:26px 36px 30px}
+[data-composition-id='s12'] .slogan{font-weight:700;font-size:44px;color:#edebe6;line-height:1.4}
+[data-composition-id='s12'] .slogan .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="61.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[12/12]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 收官 · <span class="acc">三条核心原则</span></div>
+      <div class="h1 xl" style="margin-top:14px">绕一圈，<span class="em">就三件事</span></div>
+
+      <div class="rows" style="margin-top:24px">
+        <div class="row r1"><div class="n">1</div><div class="rb"><div class="rt">让设计<span class="k">保持简单</span></div></div></div>
+        <div class="row r2"><div class="n">2</div><div class="rb"><div class="rt">把规划步骤<span class="k">亮出来</span></div></div></div>
+        <div class="row r3"><div class="n">3</div><div class="rb"><div class="rt">打磨 Agent 与计算机的<span class="k">接口</span></div></div></div>
+      </div>
+
+      <div class="lead jlead" style="margin-top:22px">先造<span class="em">对的系统</span>，不是更聪明的</div>
+      <div class="lead jlate2" style="margin-top:10px">把最多时间花在<span class="em">让模型少犯错</span>上</div>
+
+      <div class="term" style="margin-top:22px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">you@agent: build --minimal</span></div>
+        <div class="term-body">
+          <div class="cmd c0"><span class="cm"># 准备做 Agent？建议其实特别朴素</span></div>
+          <div class="cmd c1"><span class="p">$</span>start --simple<span class="cm"># 从最简单的 prompt 起步</span></div>
+          <div class="cmd c2"><span class="ar">›</span>eval<span class="cm"># 用评估去优化它</span></div>
+          <div class="cmd c3"><span class="ar">›</span>不够用了，<span class="ok">才加多步自主系统</span><span class="cur sm cblink"></span></div>
+        </div>
+      </div>
+
+      <div class="slogan" style="margin-top:18px">AI 世界很吵，<span class="em">精读一篇，胜过刷一百条</span></div>
+      <div class="endchip signoff" style="margin-top:16px"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <!-- 字幕:brief.subtitles 逐条,本地时间,一字不差 -->
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="3.994" data-track-index="5"><div class="sub-inner">绕了一圈，文章把<span class="sub-k">三条核心原则</span>拍在桌上。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.001" data-duration="4.204" data-track-index="5"><div class="sub-inner">第一，让你的 Agent 设计<span class="sub-k">保持简单</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.205" data-duration="4.624" data-track-index="5"><div class="sub-inner">第二，把模型的规划步骤<span class="sub-k">明明白白亮出来</span>，别藏。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.029" data-duration="4.463" data-track-index="5"><div class="sub-inner">第三，认认真真打磨那个 Agent 和计算机之间的<span class="sub-k">接口</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.647" data-duration="2.47" data-track-index="5"><div class="sub-inner">这三条背后是<span class="sub-k">同一个判断</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="20.117" data-duration="3.705" data-track-index="5"><div class="sub-inner">别急着造更聪明的系统，先造<span class="sub-k">对的系统</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="23.822" data-duration="9.468" data-track-index="5"><div class="sub-inner">最强的 Agent，往往把最多的时间，花在怎么让模型<span class="sub-k">少犯错</span>上，而不是花在怎么让模型更聪明上。</div></div>
+    <div id="sub-8" class="clip sub" data-start="33.451" data-duration="6.254" data-track-index="5"><div class="sub-inner">所以如果你正准备做 Agent，这篇文章给你的<span class="sub-k">可执行建议</span>其实特别朴素。</div></div>
+    <div id="sub-9" class="clip sub" data-start="39.705" data-duration="3.038" data-track-index="5"><div class="sub-inner">先从<span class="sub-k">最简单的 prompt</span> 起步。</div></div>
+    <div id="sub-10" class="clip sub" data-start="42.743" data-duration="1.429" data-track-index="5"><div class="sub-inner">用<span class="sub-k">评估</span>去优化它。</div></div>
+    <div id="sub-11" class="clip sub" data-start="44.172" data-duration="5.003" data-track-index="5"><div class="sub-inner">只有当简单方案真的不够用了，才一步步加上<span class="sub-k">多步的自主系统</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="49.327" data-duration="5.659" data-track-index="5"><div class="sub-inner">框架能帮你快速起步，但真到了生产环境，别舍不得把那些<span class="sub-k">抽象层</span>砍掉。</div></div>
+    <div id="sub-13" class="clip sub" data-start="55.123" data-duration="4.063" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="59.186" data-duration="1.421" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* beat A —— 三条核心原则 recap */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 4.1, {x:-16, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 8.3, {x:-16, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.r3', 13.1, {x:-16, d:.34, ease:'expo.out'});
+
+    /* beat B —— 同一个判断:先造对的系统 + 少犯错(sub-7 长 hold 的次级揭示) */
+    D2.enter(tl, R+'.jlead', 17.9, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.jlate2', 24.0, {y:10, d:.36, ease:'power2.out'});
+
+    /* beat C —— 可执行建议:最简 prompt → eval → 加多步系统 */
+    D2.enter(tl, R+'.term', 34.0, {y:24, d:.45, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},34.2);
+    D2.enter(tl, R+'.c1', 39.7, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 42.8, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c3', 44.3, {x:-16, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 45.4, 9);
+
+    /* beat D —— 收尾标语 + 下期再见 */
+    D2.enter(tl, R+'.slogan', 55.2, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 59.2, {y:12, d:.32, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0.007],['#sub-2',4.001],['#sub-3',8.205],['#sub-4',13.029],['#sub-5',17.647],['#sub-6',20.117],['#sub-7',23.822],['#sub-8',33.451],['#sub-9',39.705],['#sub-10',42.743],['#sub-11',44.172],['#sub-12',49.327],['#sub-13',55.123],['#sub-14',59.186]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 61.6, 'out');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

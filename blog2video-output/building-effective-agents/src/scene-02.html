@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有:Agent 行用电青标记「另一种」—— */
+[data-composition-id='s02'] .row.alt .n{color:#5fd3e8}
+[data-composition-id='s02'] .row.alt .code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+[data-composition-id='s02'] .rd b{color:#edebe6;font-weight:700}
+[data-composition-id='s02'] .punch{margin-top:44px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="38.233" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[02/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个关键切分 · <span class="acc">agentic</span></div>
+      <div class="h1" style="margin-top:18px">别把 <span class="em">Workflow</span> 当 Agent</div>
+
+      <div class="lead" style="margin-top:28px"><span class="em">agentic</span> = 所有能自己动手的系统</div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">工作流 <span class="code">Workflow</span></div>
+          <div class="rd">路你<b>提前写死</b>在代码里,模型只在上面跑</div>
+        </div></div>
+
+        <div class="row r2 alt"><div class="n">02</div><div class="rb">
+          <div class="rt">智能体 <span class="code">Agent</span></div>
+          <div class="rd">模型<b>自己找路</b> —— 选工具、定步数、几步收工</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">记住这一句:<span class="hl"><span class="bar"></span><span class="tx">谁来找路</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="3.86" data-track-index="5"><div class="sub-inner">很多人把 Agent 挂在嘴边，其实脑子里是<span class="sub-k">一锅粥</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.868" data-duration="2.82" data-track-index="5"><div class="sub-inner">这篇文章上来先做了一个特别重要的<span class="sub-k">切分</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.848" data-duration="4.528" data-track-index="5"><div class="sub-inner">它把所有能自己动手的系统统称为 <span class="sub-k">agentic 系统</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.376" data-duration="1.174" data-track-index="5"><div class="sub-inner">但里面分<span class="sub-k">两种</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="12.55" data-duration="2.85" data-track-index="5"><div class="sub-inner">一种叫 <span class="sub-k">Workflow</span>，工作流。</div></div>
+    <div id="sub-6" class="clip sub" data-start="15.4" data-duration="4.696" data-track-index="5"><div class="sub-inner">就是大模型和工具，按照你事先<span class="sub-k">写死在代码里</span>的路径一步步走。</div></div>
+    <div id="sub-7" class="clip sub" data-start="20.096" data-duration="2.012" data-track-index="5"><div class="sub-inner">另一种才叫 <span class="sub-k">Agent</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="22.256" data-duration="5.148" data-track-index="5"><div class="sub-inner">模型<span class="sub-k">自己决定</span>下一步用什么工具、怎么完成任务、走几步。</div></div>
+    <div id="sub-9" class="clip sub" data-start="27.548" data-duration="0.907" data-track-index="5"><div class="sub-inner"><span class="sub-k">差别</span>在哪？</div></div>
+    <div id="sub-10" class="clip sub" data-start="28.455" data-duration="4.717" data-track-index="5"><div class="sub-inner">Workflow 的路是<span class="sub-k">你铺好的</span>，模型只是在上面跑。</div></div>
+    <div id="sub-11" class="clip sub" data-start="33.172" data-duration="2.54" data-track-index="5"><div class="sub-inner">Agent 是模型<span class="sub-k">自己找路</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="35.712" data-duration="2.359" data-track-index="5"><div class="sub-inner"><span class="sub-k">记住</span>这个区分，后面全靠它。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 6.85, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 12.55, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 15.4, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 20.1, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 22.26, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 27.6, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 35.75);
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',3.868],['#sub-3',6.848],['#sub-4',11.376],['#sub-5',12.55],['#sub-6',15.4],['#sub-7',20.096],['#sub-8',22.256],['#sub-9',27.548],['#sub-10',28.455],['#sub-11',33.172],['#sub-12',35.712]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 38.233, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat)—— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* BEAT A — 前提/直觉 */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-kick .acc{color:#ccff4d}
+[data-composition-id='s01'] .a-h{margin-top:34px;font-weight:600;font-size:52px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s01'] .a-big{margin-top:20px;font-weight:900;font-size:94px;line-height:1.14;color:#edebe6}
+[data-composition-id='s01'] .a-big .em{color:#ccff4d}
+
+/* BEAT B — 恰恰相反 + 可信度 */
+[data-composition-id='s01'] .b-big{font-weight:900;font-size:112px;line-height:1.06;color:#edebe6}
+[data-composition-id='s01'] .b-big .tx{font-size:112px}
+[data-composition-id='s01'] .b-chips{margin-top:60px;display:flex;flex-direction:column;gap:18px}
+
+/* BEAT C — 结论重锤 */
+[data-composition-id='s01'] .c-h{font-weight:600;font-size:52px;color:#8a8a85;line-height:1.3}
+[data-composition-id='s01'] .c-big{margin-top:24px;font-weight:900;font-size:104px;line-height:1.1;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s01'] .c-big .tx{font-size:104px}
+[data-composition-id='s01'] .c-sub{margin-top:46px;font-weight:600;font-size:52px;line-height:1.35;color:#edebe6}
+[data-composition-id='s01'] .c-sub .em{color:#ccff4d}
+
+/* BEAT D — 预告 */
+[data-composition-id='s01'] .d-led{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .d-q{margin-top:26px;font-weight:900;font-size:92px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .d-q .em{color:#ccff4d}
+[data-composition-id='s01'] .d-tag{margin-top:52px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="23.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · 构建好 AGENT<span class="b-cur"></span></div>
+      <div class="idx">[01/12]</div>
+    </div>
+
+    <!-- BEAT A: 前提 -->
+    <div class="beat" id="beatA">
+      <div class="a-kick">ANTHROPIC · <span class="acc">官方工程博客</span></div>
+      <div class="a-h">你以为——</div>
+      <div class="a-big">生产级 Agent<br>背后一定是<span class="em">复杂框架</span>？</div>
+    </div>
+
+    <!-- BEAT B: 恰恰相反 + 可信度 -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-big"><span class="hl"><span class="bar"></span><span class="tx">恰恰相反</span></span>。</div>
+      <div class="b-chips">
+        <div class="chip bc1"><span class="ci">01</span><span class="ct">陪几十个团队做 Agent</span></div>
+        <div class="chip bc2"><span class="ci">02</span><span class="ct">做了整整一年</span></div>
+        <div class="chip bc3"><span class="ci">03</span><span class="ct">得出一个反直觉结论</span></div>
+      </div>
+    </div>
+
+    <!-- BEAT C: 结论重锤 -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-h">最成功的那批实现</div>
+      <div class="c-big">全都<span class="hl" style="margin-left:6px"><span class="bar"></span><span class="tx">没用框架</span></span></div>
+      <div class="c-sub">靠的是 <span class="em">简单 · 可组合</span> 的小模式</div>
+    </div>
+
+    <!-- BEAT D: 预告 -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="d-led">// 这一期</div>
+      <div class="d-q">掰开揉碎<br><span class="em">讲给你听</span><span class="cur sm d-cur"></span></div>
+      <div class="d-tag"><span class="endchip"><span class="dot"></span><span class="lab">ANTHROPIC 官方工程博客 · 逐段精读</span></span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.549" data-track-index="5"><div class="sub-inner">你以为跑通生产的 Agent，背后一定是套<span class="sub-k">精密复杂的框架</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.549" data-duration="0.785" data-track-index="5"><div class="sub-inner"><span class="sub-k">恰恰相反</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.334" data-duration="6.118" data-track-index="5"><div class="sub-inner">Anthropic 陪着几十个团队做了一年 Agent，得出一个<span class="sub-k">反直觉</span>的结论。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.652" data-duration="3.537" data-track-index="5"><div class="sub-inner">最成功的那批实现，全都<span class="sub-k">没用复杂框架</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.189" data-duration="3.143" data-track-index="5"><div class="sub-inner">它们靠的是<span class="sub-k">简单、可组合</span>的小模式。</div></div>
+    <div id="sub-6" class="clip sub" data-start="18.504" data-duration="4.846" data-track-index="5"><div class="sub-inner">这篇官方工程博客，就是把这个结论<span class="sub-k">掰开揉碎</span>讲给你听。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 - ~4.4) */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.3);
+    tl.from(R+'.a-h',{y:18,opacity:0,duration:.32,ease:'power3.out'},0.95);
+    tl.from(R+'.a-big',{y:22,opacity:0,duration:.42,ease:'expo.out'},1.45);
+    tl.to(R+'#beatA',{scale:1.03,duration:4.6,ease:'none'},0);
+
+    /* A -> B @ ~4.4 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},4.3);
+    tl.set(R+'#beatB',{opacity:1},4.6);
+    tl.from(R+'.b-big',{y:22,opacity:0,duration:.42,ease:'expo.out'},4.6);
+    /* hero — 恰恰相反 酸性扫过 */
+    tl.to(R+'.b-big .bar',{scaleX:1,duration:.3,ease:'power4.inOut'},4.9);
+    tl.to(R+'.b-big .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},5.06);
+    tl.from(R+'.bc1',{x:-24,opacity:0,duration:.3,ease:'power3.out'},5.7);
+    tl.from(R+'.bc2',{x:-24,opacity:0,duration:.3,ease:'power2.out'},7.5);
+    tl.from(R+'.bc3',{x:-24,opacity:0,duration:.3,ease:'expo.out'},9.4);
+    tl.to(R+'#beatB',{scale:1.03,duration:7,ease:'none'},4.6);
+
+    /* B -> C @ ~11.4 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},11.3);
+    tl.set(R+'#beatC',{opacity:1},11.6);
+    tl.from(R+'.c-h',{y:-14,opacity:0,duration:.3,ease:'power2.out'},11.7);
+    tl.from(R+'.c-big',{y:22,opacity:0,duration:.42,ease:'expo.out'},12.05);
+    /* hero — 没用框架 酸性扫过 */
+    tl.to(R+'.c-big .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},12.45);
+    tl.to(R+'.c-big .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},12.61);
+    /* 晚到子行 —— 靠的是简单可组合 */
+    tl.from(R+'.c-sub',{y:18,opacity:0,duration:.35,ease:'power3.out'},15.2);
+    tl.to(R+'#beatC',{scale:1.03,duration:6.8,ease:'none'},11.6);
+
+    /* C -> D @ ~18.4 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},18.3);
+    tl.set(R+'#beatD',{opacity:1},18.55);
+    tl.from(R+'.d-led',{opacity:0,duration:.3,ease:'power1.out'},18.7);
+    tl.from(R+'.d-q',{y:22,opacity:0,duration:.4,ease:'power3.out'},19.05);
+    tl.from(R+'.d-tag',{y:18,opacity:0,duration:.35,ease:'expo.out'},20.4);
+    tl.to(R+'.d-cur',{opacity:0,duration:.42,ease:'steps(1)',repeat:6,yoyo:true},21.0);
+    tl.to(R+'#beatD',{scale:1.03,duration:4.95,ease:'none'},18.55);
+
+    /* subtitle fade-ins (local time) */
+    [['#sub-1',0],['#sub-2',4.549],['#sub-3',5.334],['#sub-4',11.652],['#sub-5',15.189],['#sub-6',18.504]]
+      .forEach(function(s){ tl.from(R+s[0],{opacity:0,duration:.2,ease:'power1.out'},s[1]); });
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

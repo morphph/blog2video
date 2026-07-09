@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%; padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; position: relative;
+    }
+    .halo {
+      position: absolute; top: 300px; left: 50%; transform: translateX(-50%);
+      width: 720px; height: 620px;
+      background: radial-gradient(circle, rgba(245,158,11,0.16) 0%, rgba(245,158,11,0) 70%);
+      pointer-events: none;
+    }
+    .kicker { font-size: 32px; color: #F59E0B; font-weight: 800; margin-bottom: 28px; letter-spacing: 1px; position: relative; z-index: 1; }
+    .quote {
+      font-size: 58px; font-weight: 800; line-height: 1.34; margin-bottom: 50px;
+      position: relative; z-index: 1;
+    }
+    .quote .hl { color: #F59E0B; }
+    .contrast {
+      background: #1A1A2E; border: 1px solid rgba(107,114,128,0.4);
+      border-radius: 12px; padding: 30px 30px; width: 100%; margin-bottom: 30px;
+      text-align: left; font-size: 34px; color: #B0B0CC; line-height: 1.44;
+      position: relative; z-index: 1;
+    }
+    .evidence {
+      background: #1A1A2E; border: 1px solid rgba(245,158,11,0.45);
+      border-left: 6px solid #F59E0B; border-radius: 12px;
+      padding: 32px 30px; width: 100%; text-align: left; font-size: 36px; line-height: 1.44;
+      position: relative; z-index: 1;
+    }
+    .evidence .mono { font-family: 'JetBrains Mono', monospace; color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="halo"></div>
+    <div class="kicker">如果这期只记住一件事</div>
+    <div class="quote">工具的定义，值得投入<br><span class="hl">和 prompt 一样多的心思</span><br>甚至更多</div>
+    <div class="contrast">所有人的精力都砸在打磨 prompt 上，把工具当成写死的 API，懒得管</div>
+    <div class="evidence">造 <span class="mono">SWE-bench</span> Agent 时，花在打磨工具上的时间，<b>超过了主 prompt</b></div>
+  </div>
+</body>
+</html>

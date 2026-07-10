@@ -1,0 +1,28 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 21.833,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_8.html",
+ "topbarIndex": "[08/15]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 0.819,
+   "text": "怎么办？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 0.816,
+   "localDuration": 12.897,
+   "text": "把你亲手在管的每件事，从最小的杂务到最重的决策，做一次彻底的盘点：哪些可以系统化，哪些可以交出去，哪些真正配得上创始人的时间。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.857,
+   "localDuration": 7.83,
+   "text": "记住，目标不是把你从公司里移走，是把你的注意力赎回来，留给只有创始人能做的决定。"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "scene": 7,
+  "id": "s07",
+  "type": "quote",
+  "dataDuration": 7.567,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_7.html",
+  "topbarIndex": "[07/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.004,
+      "localDuration": 3.4,
+      "text": "用户流失有报警，系统被攻破有报警。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.404,
+      "localDuration": 4,
+      "text": "可\"决定没被做\"这件事，没有任何报警器。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "scene": 3,
+  "id": "s03",
+  "type": "checklist",
+  "dataDuration": 46.067,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_3.html",
+  "topbarIndex": "[03/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.003,
+      "localDuration": 1.617,
+      "text": "什么时候算过关？"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 1.62,
+      "localDuration": 1.011,
+      "text": "三条标准。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 2.831,
+      "localDuration": 14.61,
+      "text": "第一，增长可复制：你不只是留住用户，而是能通过明确的渠道，可预测地获取新用户——获客成本 CAC、用户终身价值 LTV、回本周期，这三个数字，"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 17.641,
+      "localDuration": 2.373,
+      "text": "你说得出来，也守得住。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 20.163,
+      "localDuration": 8.468,
+      "text": "第二，产品扛得住生产负载：可靠性要在真实的生产条件下成立，而不只是在你测试过的条件下成立。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 28.831,
+      "localDuration": 9.362,
+      "text": "第三，运营不再卡在你身上：用户支持、问题分诊、排期、报表，这些事不再需要你亲手处理。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 38.343,
+      "localDuration": 4.977,
+      "text": "你发现没有，三条标准里，只有一条是关于产品的。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 43.32,
+      "localDuration": 2.597,
+      "text": "另外两条，考的都是公司。"
+    }
+  ]
+}

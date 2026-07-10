@@ -1,0 +1,46 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 41.767,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_9.html",
+ "topbarIndex": "[09/15]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 2.535,
+   "text": "第三张账单，是安全。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.716,
+   "localDuration": 9.137,
+   "text": "MVP 期一切从简是合理的：一小撮测试用户，生产环境里没有敏感数据，漏洞只是理论风险。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.853,
+   "localDuration": 6.587,
+   "text": "可产品一进生产，有真实用户依赖你，理论风险就变成实打实的暴露。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.592,
+   "localDuration": 11.707,
+   "text": "合规也有明确的触发条件：一旦你开始处理客户数据、处理支付，或者卖进受监管的行业，那些对原型不适用的要求，全部立刻适用。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 30.436,
+   "localDuration": 6.648,
+   "text": "所以要在规模到来之前，主动做一次系统性的安全与合规审查，而不是等出了事再补。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 37.084,
+   "localDuration": 4.549,
+   "text": "审出来的每一个问题，都是必须修复的项，不是参考建议。"
+  }
+ ]
+}

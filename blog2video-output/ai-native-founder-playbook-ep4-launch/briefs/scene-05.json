@@ -1,0 +1,46 @@
+{
+  "scene": 5,
+  "id": "s05",
+  "type": "principle",
+  "dataDuration": 36.9,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_5.html",
+  "topbarIndex": "[05/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 3.865,
+      "text": "MVP 阶段用债换速度，当时是笔合理的交易。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.85,
+      "localDuration": 3.513,
+      "text": "代码跑起来了，产品验证过了，目的达到了。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 7.363,
+      "localDuration": 3.865,
+      "text": "但进了 Launch 阶段，这笔债开始计息。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 11.397,
+      "localDuration": 8.04,
+      "text": "生产流量、新功能、越来越复杂的系统，会把当年抄的每条近路，一条条暴露出来。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.437,
+      "localDuration": 2.39,
+      "text": "拖得越久，修起来越贵。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 21.981,
+      "localDuration": 14.738,
+      "text": "清偿的路子是三步：先做一次系统性的架构审计，找出结构上的弱点；然后靶向重构最糟糕的几处；最后把测试覆盖大幅补上，让下一轮功能开发，不再把同样的问题重新带回来。"
+    }
+  ]
+}

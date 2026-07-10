@@ -1,0 +1,40 @@
+{
+  "scene": 4,
+  "id": "s04",
+  "type": "principle",
+  "dataDuration": 31.567,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_4.html",
+  "topbarIndex": "[04/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.016,
+      "localDuration": 6.512,
+      "text": "找到 PMF——产品和市场对上了——是创业前半程最难的事。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 6.528,
+      "localDuration": 4.267,
+      "text": "但从这一刻起，你的问题变成了：守住它。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.96,
+      "localDuration": 7.51,
+      "text": "有真实用户、真实势头的公司，照样会散架——只要产品周围的那个组织，跟不上产品。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 18.47,
+      "localDuration": 7.704,
+      "text": "这个阶段有四个典型的失败模式，它们有一个共同点，特别扎心：没有一个来自竞争对手。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 26.332,
+      "localDuration": 5.055,
+      "text": "每一个，都是你上一阶段\"正确决策\"到期的账单。"
+    }
+  ]
+}

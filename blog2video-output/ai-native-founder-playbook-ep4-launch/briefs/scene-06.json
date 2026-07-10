@@ -1,0 +1,70 @@
+{
+  "scene": 6,
+  "id": "s06",
+  "type": "principle",
+  "dataDuration": 65.033,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_6.html",
+  "topbarIndex": "[06/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 6.727,
+      "text": "第二张账单，是全片的核心——这次到期的，不是代码，是你。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 6.861,
+      "localDuration": 9.234,
+      "text": "MVP 阶段，你在每个环节里亲力亲为，那是资产：你需要完整的态势感知，需要最紧的反馈回路。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 16.295,
+      "localDuration": 8.469,
+      "text": "可到了 Launch 阶段，支持量上来了，产品决策堆起来了，运营越来越复杂——同一个本能，变成了约束。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 24.933,
+      "localDuration": 7.478,
+      "text": "从\"做事的人\"，变成\"设计系统的人\"，是整个创业周期里最难的换挡之一。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 32.411,
+      "localDuration": 4.914,
+      "text": "更麻烦的是，它没有明确的时刻，没有铃声提醒你。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 37.497,
+      "localDuration": 8.34,
+      "text": "所以最常见的失败方式不是搞砸，而是整段错过——你继续埋头做事，公司在你周围，悄悄熄火。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 45.993,
+      "localDuration": 5.319,
+      "text": "这个失败是静默的，因为它的信号，全是\"不发生的事\"。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 51.312,
+      "localDuration": 4.909,
+      "text": "本该一小时就拍板的决定，现在要等你一周才排得上。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 56.221,
+      "localDuration": 4.092,
+      "text": "支持请求越堆越多，因为答案只在你脑子里。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 60.465,
+      "localDuration": 4.416,
+      "text": "有些运营任务，只在你恰好想起来的那天，才会发生。"
+    }
+  ]
+}

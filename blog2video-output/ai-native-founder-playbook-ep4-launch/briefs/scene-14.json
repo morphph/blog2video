@@ -1,0 +1,58 @@
+{
+  "scene": 14,
+  "id": "s14",
+  "type": "comparison_cards",
+  "dataDuration": 41.267,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_14.html",
+  "topbarIndex": "[14/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.535,
+      "text": "不过有两句丑话，我得说在前面。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.7,
+      "localDuration": 4.007,
+      "text": "第一句：AI 扫描，替代不了合格的合规审查。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 6.707,
+      "localDuration": 4.554,
+      "text": "它能帮你把独立安全评估准备好，但代替不了评估本身。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 11.461,
+      "localDuration": 8.515,
+      "text": "而且合规不是一次通关的项目，它要建进开发周期，文档要持续维护——这是一笔长期成本，要认。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 20.124,
+      "localDuration": 2.952,
+      "text": "第二句：搭系统，不等于退休。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 23.076,
+      "localDuration": 5.061,
+      "text": "三分类里永远留着一桶，叫\"真正需要创始人判断\"。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 28.137,
+      "localDuration": 8.013,
+      "text": "工具能接走执行，接不走那个最难的心理换挡——承认自己就是瓶颈，然后主动放手。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 36.288,
+      "localDuration": 4.799,
+      "text": "盘点自己、决定放掉什么，这件事本身，没人能替你做。"
+    }
+  ]
+}

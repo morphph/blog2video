@@ -1,0 +1,40 @@
+{
+  "scene": 2,
+  "id": "s02",
+  "type": "principle",
+  "dataDuration": 25.633,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_2.html",
+  "topbarIndex": "[02/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.004,
+      "localDuration": 1.635,
+      "text": "先把目标说清楚。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 1.639,
+      "localDuration": 8.586,
+      "text": "MVP 阶段证明的，是你的产品配存在；Launch 阶段要证明的，是你的生意配长大。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.372,
+      "localDuration": 2.982,
+      "text": "一字之差，考的东西完全变了。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 13.354,
+      "localDuration": 6.602,
+      "text": "这一程的任务，是把早期的势头，变成一台可以重复运转的增长引擎。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.956,
+      "localDuration": 5.537,
+      "text": "而且不止是产品——你得在产品周围，真正建起一家公司。"
+    }
+  ]
+}

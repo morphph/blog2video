@@ -1,0 +1,572 @@
+[
+  {
+    "text": "Anthropic 刚刚发布了一份官方创业手册：2026 年，怎么用 AI，把一个人的想法，做成一家真正的公司——整套打法，从头写到了尾。",
+    "pronounce_text": "Anthropic刚刚发布了一份官方创业手册：两千零二十六年，怎么用AI，把一个人的想法，做成一家真正的公司。整套打法，从头写到了尾。",
+    "time_begin": 0,
+    "time_end": 13553.333333333334,
+    "text_begin": 0,
+    "text_end": 69,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 67
+  },
+  {
+    "text": "今天，我们接着上一集，讲 Launch 阶段，发布阶段。",
+    "pronounce_text": "今天，我们接着上一集，讲Launch阶段，发布阶段。",
+    "time_begin": 13716,
+    "time_end": 18596.680272108842,
+    "text_begin": 69,
+    "text_end": 97,
+    "pronounce_text_begin": 67,
+    "pronounce_text_end": 93
+  },
+  {
+    "text": "上一集的结尾，你手里已经攥着一摞证据——有人回来用，有人付钱，有人推荐。这一集要回答的，就是怎么把这个被验证过的产品，正式推向更大的世界。",
+    "pronounce_text": "上一集的结尾，你手里已经攥着一摞证据。有人回来用，有人付钱，有人推荐。这一集要回答的，就是怎么把这个被验证过的产品，正式推向更大的世界。",
+    "time_begin": 18756,
+    "time_end": 33714.14058956916,
+    "text_begin": 97,
+    "text_end": 166,
+    "pronounce_text_begin": 93,
+    "pronounce_text_end": 161
+  },
+  {
+    "text": "而这一程真正的对手，不是市场，是你自己。",
+    "pronounce_text": "而这一程真正的对手，不是市场，是你自己。",
+    "time_begin": 33914.14058956916,
+    "time_end": 38156.272108843536,
+    "text_begin": 166,
+    "text_end": 186,
+    "pronounce_text_begin": 161,
+    "pronounce_text_end": 181
+  },
+  {
+    "text": "先把目标说清楚。MVP 阶段证明的，是你的产品配存在；Launch 阶段要证明的，是你的生意配长大。",
+    "pronounce_text": "先把目标说清楚。MVP阶段证明的，是你的产品配存在;Launch阶段要证明的，是你的生意配长大。",
+    "time_begin": 38304,
+    "time_end": 48525.26984126984,
+    "text_begin": 186,
+    "text_end": 236,
+    "pronounce_text_begin": 181,
+    "pronounce_text_end": 229
+  },
+  {
+    "text": "一字之差，考的东西完全变了。这一程的任务，是把早期的势头，变成一台可以重复运转的增长引擎。而且不止是产品——你得在产品周围，真正建起一家公司。",
+    "pronounce_text": "一字之差，考的东西完全变了。这一程的任务，是把早期的势头，变成一台可以重复运转的增长引擎。而且不止是产品。你得在产品周围，真正建起一家公司。",
+    "time_begin": 48672,
+    "time_end": 63792.680272108846,
+    "text_begin": 236,
+    "text_end": 307,
+    "pronounce_text_begin": 229,
+    "pronounce_text_end": 299
+  },
+  {
+    "text": "什么时候算过关？三条标准。",
+    "pronounce_text": "什么时候算过关？三条标准。",
+    "time_begin": 63936,
+    "time_end": 66564.34467120182,
+    "text_begin": 307,
+    "text_end": 320,
+    "pronounce_text_begin": 299,
+    "pronounce_text_end": 312
+  },
+  {
+    "text": "第一，增长可复制：你不只是留住用户，而是能通过明确的渠道，可预测地获取新用户——获客成本 CAC、用户终身价值 LTV、回本周期，这三个数字，",
+    "pronounce_text": "第一，增长可复制：你不只是留住用户，而是能通过明确的渠道，可预测地获取新用户。获客成本CAC、用户终身价值LTV、回本周期，这三个数字，",
+    "time_begin": 66764.34467120182,
+    "time_end": 81374.18594104308,
+    "text_begin": 320,
+    "text_end": 391,
+    "pronounce_text_begin": 312,
+    "pronounce_text_end": 380
+  },
+  {
+    "text": "你说得出来，也守得住。",
+    "pronounce_text": "你说得出来，也守得住。",
+    "time_begin": 81574.18594104308,
+    "time_end": 83947.11111111111,
+    "text_begin": 391,
+    "text_end": 402,
+    "pronounce_text_begin": 380,
+    "pronounce_text_end": 391
+  },
+  {
+    "text": "第二，产品扛得住生产负载：可靠性要在真实的生产条件下成立，而不只是在你测试过的条件下成立。",
+    "pronounce_text": "第二，产品扛得住生产负载：可靠性要在真实的生产条件下成立，而不只是在你测试过的条件下成立。",
+    "time_begin": 84096,
+    "time_end": 92564.16326530612,
+    "text_begin": 402,
+    "text_end": 447,
+    "pronounce_text_begin": 391,
+    "pronounce_text_end": 436
+  },
+  {
+    "text": "第三，运营不再卡在你身上：用户支持、问题分诊、排期、报表，这些事不再需要你亲手处理。",
+    "pronounce_text": "第三，运营不再卡在你身上：用户支持、问题分诊、排期、报表，这些事不再需要你亲手处理。",
+    "time_begin": 92764.16326530612,
+    "time_end": 102126.2947845805,
+    "text_begin": 447,
+    "text_end": 489,
+    "pronounce_text_begin": 436,
+    "pronounce_text_end": 478
+  },
+  {
+    "text": "你发现没有，三条标准里，只有一条是关于产品的。另外两条，考的都是公司。",
+    "pronounce_text": "你发现没有，三条标准里，只有一条是关于产品的。另外两条，考的都是公司。",
+    "time_begin": 102276,
+    "time_end": 109850.19501133787,
+    "text_begin": 489,
+    "text_end": 524,
+    "pronounce_text_begin": 478,
+    "pronounce_text_end": 513
+  },
+  {
+    "text": "找到 PMF——产品和市场对上了——是创业前半程最难的事。但从这一刻起，你的问题变成了：守住它。",
+    "pronounce_text": "找到PMF。产品和市场对上了。是创业前半程最难的事。但从这一刻起，你的问题变成了：守住它。",
+    "time_begin": 110016,
+    "time_end": 120794.54875283447,
+    "text_begin": 524,
+    "text_end": 572,
+    "pronounce_text_begin": 513,
+    "pronounce_text_end": 558
+  },
+  {
+    "text": "有真实用户、真实势头的公司，照样会散架——只要产品周围的那个组织，跟不上产品。这个阶段有四个典型的失败模式，它们有一个共同点，特别扎心：没有一个来自竞争对手。",
+    "pronounce_text": "有真实用户、真实势头的公司，照样会散架。只要产品周围的那个组织，跟不上产品。这个阶段有四个典型的失败模式，它们有一个共同点，特别扎心：没有一个来自竞争对手。",
+    "time_begin": 120960,
+    "time_end": 136173.56009070296,
+    "text_begin": 572,
+    "text_end": 651,
+    "pronounce_text_begin": 558,
+    "pronounce_text_end": 636
+  },
+  {
+    "text": "每一个，都是你上一阶段\"正确决策\"到期的账单。",
+    "pronounce_text": "每一个，都是你上一阶段\"正确决策\"到期的账单。",
+    "time_begin": 136332,
+    "time_end": 141386.82993197278,
+    "text_begin": 651,
+    "text_end": 674,
+    "pronounce_text_begin": 636,
+    "pronounce_text_end": 659
+  },
+  {
+    "text": "MVP 阶段用债换速度，当时是笔合理的交易。代码跑起来了，产品验证过了，目的达到了。但进了 Launch 阶段，这笔债开始计息。",
+    "pronounce_text": "MVP阶段用债换速度，当时是笔合理的交易。代码跑起来了，产品验证过了，目的达到了。但进了Launch阶段，这笔债开始计息。",
+    "time_begin": 141552,
+    "time_end": 152794.947845805,
+    "text_begin": 674,
+    "text_end": 738,
+    "pronounce_text_begin": 659,
+    "pronounce_text_end": 720
+  },
+  {
+    "text": "生产流量、新功能、越来越复杂的系统，会把当年抄的每条近路，一条条暴露出来。拖得越久，修起来越贵。",
+    "pronounce_text": "生产流量、新功能、越来越复杂的系统，会把当年抄的每条近路，一条条暴露出来。拖得越久，修起来越贵。",
+    "time_begin": 152964,
+    "time_end": 163394.24943310657,
+    "text_begin": 738,
+    "text_end": 786,
+    "pronounce_text_begin": 720,
+    "pronounce_text_end": 768
+  },
+  {
+    "text": "清偿的路子是三步：先做一次系统性的架构审计，找出结构上的弱点；然后靶向重构最糟糕的几处；最后把测试覆盖大幅补上，让下一轮功能开发，不再把同样的问题重新带回来。",
+    "pronounce_text": "清偿的路子是三步：先做一次系统性的架构审计，找出结构上的弱点;然后靶向重构最糟糕的几处;最后把测试覆盖大幅补上，让下一轮功能开发，不再把同样的问题重新带回来。",
+    "time_begin": 163548,
+    "time_end": 178285.55102040817,
+    "text_begin": 786,
+    "text_end": 865,
+    "pronounce_text_begin": 768,
+    "pronounce_text_end": 847
+  },
+  {
+    "text": "第二张账单，是全片的核心——这次到期的，不是代码，是你。",
+    "pronounce_text": "第二张账单，是全片的核心。这次到期的，不是代码，是你。",
+    "time_begin": 178452,
+    "time_end": 185178.66666666666,
+    "text_begin": 865,
+    "text_end": 893,
+    "pronounce_text_begin": 847,
+    "pronounce_text_end": 874
+  },
+  {
+    "text": "MVP 阶段，你在每个环节里亲力亲为，那是资产：你需要完整的态势感知，需要最紧的反馈回路。",
+    "pronounce_text": "MVP阶段，你在每个环节里亲力亲为，那是资产：你需要完整的态势感知，需要最紧的反馈回路。",
+    "time_begin": 185328,
+    "time_end": 194562.42176870749,
+    "text_begin": 893,
+    "text_end": 938,
+    "pronounce_text_begin": 874,
+    "pronounce_text_end": 918
+  },
+  {
+    "text": "可到了 Launch 阶段，支持量上来了，产品决策堆起来了，运营越来越复杂——同一个本能，变成了约束。",
+    "pronounce_text": "可到了Launch阶段，支持量上来了，产品决策堆起来了，运营越来越复杂。同一个本能，变成了约束。",
+    "time_begin": 194762.42176870749,
+    "time_end": 203230.5850340136,
+    "text_begin": 938,
+    "text_end": 989,
+    "pronounce_text_begin": 918,
+    "pronounce_text_end": 966
+  },
+  {
+    "text": "从\"做事的人\"，变成\"设计系统的人\"，是整个创业周期里最难的换挡之一。更麻烦的是，它没有明确的时刻，没有铃声提醒你。",
+    "pronounce_text": "从\"做事的人\"，变成\"设计系统的人\"，是整个创业周期里最难的换挡之一。更麻烦的是，它没有明确的时刻，没有铃声提醒你。",
+    "time_begin": 203400,
+    "time_end": 215792.33560090704,
+    "text_begin": 989,
+    "text_end": 1047,
+    "pronounce_text_begin": 966,
+    "pronounce_text_end": 1024
+  },
+  {
+    "text": "所以最常见的失败方式不是搞砸，而是整段错过——你继续埋头做事，公司在你周围，悄悄熄火。",
+    "pronounce_text": "所以最常见的失败方式不是搞砸，而是整段错过。你继续埋头做事，公司在你周围，悄悄熄火。",
+    "time_begin": 215964,
+    "time_end": 224304.45351473923,
+    "text_begin": 1047,
+    "text_end": 1090,
+    "pronounce_text_begin": 1024,
+    "pronounce_text_end": 1066
+  },
+  {
+    "text": "这个失败是静默的，因为它的信号，全是\"不发生的事\"。本该一小时就拍板的决定，现在要等你一周才排得上。支持请求越堆越多，因为答案只在你脑子里。",
+    "pronounce_text": "这个失败是静默的，因为它的信号，全是\"不发生的事\"。本该一小时就拍板的决定，现在要等你一周才排得上。支持请求越堆越多，因为答案只在你脑子里。",
+    "time_begin": 224460,
+    "time_end": 238779.5918367347,
+    "text_begin": 1090,
+    "text_end": 1160,
+    "pronounce_text_begin": 1066,
+    "pronounce_text_end": 1136
+  },
+  {
+    "text": "有些运营任务，只在你恰好想起来的那天，才会发生。",
+    "pronounce_text": "有些运营任务，只在你恰好想起来的那天，才会发生。",
+    "time_begin": 238932,
+    "time_end": 243348.2811791383,
+    "text_begin": 1160,
+    "text_end": 1184,
+    "pronounce_text_begin": 1136,
+    "pronounce_text_end": 1160
+  },
+  {
+    "text": "用户流失有报警，系统被攻破有报警。可\"决定没被做\"这件事，没有任何报警器。",
+    "pronounce_text": "用户流失有报警，系统被攻破有报警。可\"决定没被做\"这件事，没有任何报警器。",
+    "time_begin": 243504,
+    "time_end": 250904.04535147393,
+    "text_begin": 1184,
+    "text_end": 1221,
+    "pronounce_text_begin": 1160,
+    "pronounce_text_end": 1197
+  },
+  {
+    "text": "怎么办？把你亲手在管的每件事，从最小的杂务到最重的决策，做一次彻底的盘点：哪些可以系统化，哪些可以交出去，哪些真正配得上创始人的时间。",
+    "pronounce_text": "怎么办？把你亲手在管的每件事，从最小的杂务到最重的决策，做一次彻底的盘点：哪些可以系统化，哪些可以交出去，哪些真正配得上创始人的时间。",
+    "time_begin": 251064,
+    "time_end": 264779.873015873,
+    "text_begin": 1221,
+    "text_end": 1288,
+    "pronounce_text_begin": 1197,
+    "pronounce_text_end": 1264
+  },
+  {
+    "text": "记住，目标不是把你从公司里移走，是把你的注意力赎回来，留给只有创始人能做的决定。",
+    "pronounce_text": "记住，目标不是把你从公司里移走，是把你的注意力赎回来，留给只有创始人能做的决定。",
+    "time_begin": 264924,
+    "time_end": 272753.61451247166,
+    "text_begin": 1288,
+    "text_end": 1328,
+    "pronounce_text_begin": 1264,
+    "pronounce_text_end": 1304
+  },
+  {
+    "text": "第三张账单，是安全。",
+    "pronounce_text": "第三张账单，是安全。",
+    "time_begin": 272916,
+    "time_end": 275451.4648526077,
+    "text_begin": 1328,
+    "text_end": 1338,
+    "pronounce_text_begin": 1304,
+    "pronounce_text_end": 1314
+  },
+  {
+    "text": "MVP 期一切从简是合理的：一小撮测试用户，生产环境里没有敏感数据，漏洞只是理论风险。可产品一进生产，有真实用户依赖你，理论风险就变成实打实的暴露。",
+    "pronounce_text": "MVP期一切从简是合理的：一小撮测试用户，生产环境里没有敏感数据，漏洞只是理论风险。可产品一进生产，有真实用户依赖你，理论风险就变成实打实的暴露。",
+    "time_begin": 275616,
+    "time_end": 291340.39909297053,
+    "text_begin": 1338,
+    "text_end": 1412,
+    "pronounce_text_begin": 1314,
+    "pronounce_text_end": 1387
+  },
+  {
+    "text": "合规也有明确的触发条件：一旦你开始处理客户数据、处理支付，或者卖进受监管的行业，那些对原型不适用的要求，全部立刻适用。",
+    "pronounce_text": "合规也有明确的触发条件：一旦你开始处理客户数据、处理支付，或者卖进受监管的行业，那些对原型不适用的要求，全部立刻适用。",
+    "time_begin": 291492,
+    "time_end": 303199.3469387755,
+    "text_begin": 1412,
+    "text_end": 1471,
+    "pronounce_text_begin": 1387,
+    "pronounce_text_end": 1446
+  },
+  {
+    "text": "所以要在规模到来之前，主动做一次系统性的安全与合规审查，而不是等出了事再补。审出来的每一个问题，都是必须修复的项，不是参考建议。",
+    "pronounce_text": "所以要在规模到来之前，主动做一次系统性的安全与合规审查，而不是等出了事再补。审出来的每一个问题，都是必须修复的项，不是参考建议。",
+    "time_begin": 303336,
+    "time_end": 314532.50793650793,
+    "text_begin": 1471,
+    "text_end": 1535,
+    "pronounce_text_begin": 1446,
+    "pronounce_text_end": 1510
+  },
+  {
+    "text": "第四张账单，最反直觉，因为它长得像机会。",
+    "pronounce_text": "第四张账单，最反直觉，因为它长得像机会。",
+    "time_begin": 314676,
+    "time_end": 319347.70068027213,
+    "text_begin": 1535,
+    "text_end": 1555,
+    "pronounce_text_begin": 1510,
+    "pronounce_text_end": 1530
+  },
+  {
+    "text": "新市场、新的融资机会，看起来全是增长。但它们，也可能是 PMF 的死地。",
+    "pronounce_text": "新市场、新的融资机会，看起来全是增长。但它们，也可能是PMF的死地。",
+    "time_begin": 319500,
+    "time_end": 327027.7551020408,
+    "text_begin": 1555,
+    "text_end": 1591,
+    "pronounce_text_begin": 1530,
+    "pronounce_text_end": 1564
+  },
+  {
+    "text": "你的早期势头是真的，但它也是特定的——它只属于你最早的那批用户。过早扩进一个差别很大的新市场，新的用户行为、新的合规要求、新的支付方式、新的期待，会一起涌进来。",
+    "pronounce_text": "你的早期势头是真的，但它也是特定的。它只属于你最早的那批用户。过早扩进一个差别很大的新市场，新的用户行为、新的合规要求、新的支付方式、新的期待，会一起涌进来。",
+    "time_begin": 327168,
+    "time_end": 342845.9591836735,
+    "text_begin": 1591,
+    "text_end": 1671,
+    "pronounce_text_begin": 1564,
+    "pronounce_text_end": 1643
+  },
+  {
+    "text": "变量一多，你就失去了解读自己数据的能力：看着数字在动，却说不清为什么。",
+    "pronounce_text": "变量一多，你就失去了解读自己数据的能力：看着数字在动，却说不清为什么。",
+    "time_begin": 343008,
+    "time_end": 350326.7755102041,
+    "text_begin": 1671,
+    "text_end": 1706,
+    "pronounce_text_begin": 1643,
+    "pronounce_text_end": 1678
+  },
+  {
+    "text": "与此同时，你最早赢下的那批用户，正在被冷落。所以杀死你的不是分心，是失明。这也不是说扩张有罪——它是时机和准备的问题。先守住你已经赢的，再去赢新的。",
+    "pronounce_text": "与此同时，你最早赢下的那批用户，正在被冷落。所以杀死你的不是分心，是失明。这也不是说扩张有罪。它是时机和准备的问题。先守住你已经赢的，再去赢新的。",
+    "time_begin": 350496,
+    "time_end": 365883.70975056686,
+    "text_begin": 1706,
+    "text_end": 1780,
+    "pronounce_text_begin": 1678,
+    "pronounce_text_end": 1751
+  },
+  {
+    "text": "账单看完了，接下来说说，这些账怎么清。这一集里，AI 的用法出现了一个质变。",
+    "pronounce_text": "账单看完了，接下来说说，这些账怎么清。这一集里，AI的用法出现了一个质变。",
+    "time_begin": 366048,
+    "time_end": 373749.90476190473,
+    "text_begin": 1780,
+    "text_end": 1818,
+    "pronounce_text_begin": 1751,
+    "pronounce_text_end": 1788
+  },
+  {
+    "text": "前三集里，Claude Code、Claude Cowork 和 Claude 各管一段：一个建产品，一个跑运营，一个做研究，像三个独立的省力装置。",
+    "pronounce_text": "前三集里，Claude Code、Claude Cowork和Claude各管一段：一个建产品，一个跑运营，一个做研究，像三个独立的省力装置。",
+    "time_begin": 373896,
+    "time_end": 384755.8185941043,
+    "text_begin": 1818,
+    "text_end": 1892,
+    "pronounce_text_begin": 1788,
+    "pronounce_text_end": 1859
+  },
+  {
+    "text": "到了 Launch 阶段，它们第一次拧成一个飞轮——每个工具的产出，都是另外两个的输入，效果会复利叠加。",
+    "pronounce_text": "到了Launch阶段，它们第一次拧成一个飞轮。每个工具的产出，都是另外两个的输入，效果会复利叠加。",
+    "time_begin": 384912,
+    "time_end": 393763.2925170068,
+    "text_begin": 1892,
+    "text_end": 1944,
+    "pronounce_text_begin": 1859,
+    "pronounce_text_end": 1908
+  },
+  {
+    "text": "举最重要的例子，注意力审计。用 Claude Cowork 把你的运营负载盘一遍：每个重复任务，每个落到你桌上的决定，每个只因为你记得才发生的流程。",
+    "pronounce_text": "举最重要的例子，注意力审计。用Claude Cowork把你的运营负载盘一遍：每个重复任务，每个落到你桌上的决定，每个只因为你记得才发生的流程。",
+    "time_begin": 393912,
+    "time_end": 407291.1836734694,
+    "text_begin": 1944,
+    "text_end": 2018,
+    "pronounce_text_begin": 1908,
+    "pronounce_text_end": 1980
+  },
+  {
+    "text": "然后分成三类：能完全自动化的；需要人、但不必是你的；真正需要创始人判断的。前两类，让它把触发条件和决策规则设计好，直接接管。",
+    "pronounce_text": "然后分成三类：能完全自动化的;需要人、但不必是你的;真正需要创始人判断的。前两类，让它把触发条件和决策规则设计好，直接接管。",
+    "time_begin": 407448,
+    "time_end": 420351.1746031746,
+    "text_begin": 2018,
+    "text_end": 2080,
+    "pronounce_text_begin": 1980,
+    "pronounce_text_end": 2042
+  },
+  {
+    "text": "技术债这边，是同一个打法。Claude Code 做全量架构审计，把发现喂给 Claude 排期：哪些下个版本前必须修，哪些可以等一等，哪些是现阶段可以接受的存量债。",
+    "pronounce_text": "技术债这边，是同一个打法。Claude Code做全量架构审计，把发现喂给Claude排期：哪些下个版本前必须修，哪些可以等一等，哪些是现阶段可以接受的存量债。",
+    "time_begin": 420516,
+    "time_end": 435729.56009070296,
+    "text_begin": 2080,
+    "text_end": 2163,
+    "pronounce_text_begin": 2042,
+    "pronounce_text_end": 2122
+  },
+  {
+    "text": "顺手把 MVP 期只活在你脑子里的那些架构决策，落盘进 CLAUDE.md，让以后每次开工，都从共同的理解出发。",
+    "pronounce_text": "顺手把MVP期只活在你脑子里的那些架构决策，落盘进CLAUDE.md，让以后每次开工，都从共同的理解出发。",
+    "time_begin": 435888,
+    "time_end": 445633.26077097503,
+    "text_begin": 2163,
+    "text_end": 2219,
+    "pronounce_text_begin": 2122,
+    "pronounce_text_end": 2175
+  },
+  {
+    "text": "安全也一样：Claude Code 做面向 SOC 2、GDPR 这类合规框架的代码级扫描，再让 Claude 排出修复顺序，设计企业客户签单前一定会查的访问控制和审计日志。",
+    "pronounce_text": "安全也一样：Claude Code做面向SOC二、GDPR这类合规框架的代码级扫描，再让Claude排出修复顺序，设计企业客户签单前一定会查的访问控制和审计日志。",
+    "time_begin": 445788,
+    "time_end": 461431.1292517007,
+    "text_begin": 2219,
+    "text_end": 2306,
+    "pronounce_text_begin": 2175,
+    "pronounce_text_end": 2256
+  },
+  {
+    "text": "还记得第一集立的那个 flag 吗，精益的十人独角兽？它的机制，到这一集才真正兑现。小团队能运转得像一家大得多的公司，不是省钱技巧，是被这个飞轮，在结构上撑起来的。",
+    "pronounce_text": "还记得第一集立的那个flag吗，精益的十人独角兽？它的机制，到这一集才真正兑现。小团队能运转得像一家大得多的公司，不是省钱技巧，是被这个飞轮，在结构上撑起来的。",
+    "time_begin": 461592,
+    "time_end": 476852,
+    "text_begin": 2306,
+    "text_end": 2388,
+    "pronounce_text_begin": 2256,
+    "pronounce_text_end": 2336
+  },
+  {
+    "text": "不过有两句丑话，我得说在前面。",
+    "pronounce_text": "不过有两句丑话，我得说在前面。",
+    "time_begin": 477000,
+    "time_end": 479535.4648526077,
+    "text_begin": 2388,
+    "text_end": 2403,
+    "pronounce_text_begin": 2336,
+    "pronounce_text_end": 2351
+  },
+  {
+    "text": "第一句：AI 扫描，替代不了合格的合规审查。它能帮你把独立安全评估准备好，但代替不了评估本身。",
+    "pronounce_text": "第一句：AI扫描，替代不了合格的合规审查。它能帮你把独立安全评估准备好，但代替不了评估本身。",
+    "time_begin": 479700,
+    "time_end": 488261.04308390024,
+    "text_begin": 2403,
+    "text_end": 2450,
+    "pronounce_text_begin": 2351,
+    "pronounce_text_end": 2397
+  },
+  {
+    "text": "而且合规不是一次通关的项目，它要建进开发周期，文档要持续维护——这是一笔长期成本，要认。",
+    "pronounce_text": "而且合规不是一次通关的项目，它要建进开发周期，文档要持续维护。这是一笔长期成本，要认。",
+    "time_begin": 488461.04308390024,
+    "time_end": 496975.64625850343,
+    "text_begin": 2450,
+    "text_end": 2494,
+    "pronounce_text_begin": 2397,
+    "pronounce_text_end": 2440
+  },
+  {
+    "text": "第二句：搭系统，不等于退休。三分类里永远留着一桶，叫\"真正需要创始人判断\"。工具能接走执行，接不走那个最难的心理换挡——承认自己就是瓶颈，然后主动放手。",
+    "pronounce_text": "第二句：搭系统，不等于退休。三分类里永远留着一桶，叫\"真正需要创始人判断\"。工具能接走执行，接不走那个最难的心理换挡。承认自己就是瓶颈，然后主动放手。",
+    "time_begin": 497124,
+    "time_end": 513150.25850340136,
+    "text_begin": 2494,
+    "text_end": 2570,
+    "pronounce_text_begin": 2440,
+    "pronounce_text_end": 2515
+  },
+  {
+    "text": "盘点自己、决定放掉什么，这件事本身，没人能替你做。",
+    "pronounce_text": "盘点自己、决定放掉什么，这件事本身，没人能替你做。",
+    "time_begin": 513288,
+    "time_end": 518087.410430839,
+    "text_begin": 2570,
+    "text_end": 2595,
+    "pronounce_text_begin": 2515,
+    "pronounce_text_end": 2540
+  },
+  {
+    "text": "把这一整程，收拢成一句话：找到 PMF，是产品问题；守住 PMF，是组织问题。",
+    "pronounce_text": "把这一整程，收拢成一句话：找到PMF，是产品问题;守住PMF，是组织问题。",
+    "time_begin": 518256,
+    "time_end": 526851.873015873,
+    "text_begin": 2595,
+    "text_end": 2634,
+    "pronounce_text_begin": 2540,
+    "pronounce_text_end": 2577
+  },
+  {
+    "text": "让你赢下前三关的那套本能——事事亲手、事事在场——正是第四关的头号失败模式。而这次换挡，没有铃声。",
+    "pronounce_text": "让你赢下前三关的那套本能。事事亲手、事事在场。正是第四关的头号失败模式。而这次换挡，没有铃声。",
+    "time_begin": 527004,
+    "time_end": 537178.8299319728,
+    "text_begin": 2634,
+    "text_end": 2683,
+    "pronounce_text_begin": 2577,
+    "pronounce_text_end": 2624
+  },
+  {
+    "text": "你要么主动从做事的人，变成设计系统的人；要么，看着公司在你周围熄火。",
+    "pronounce_text": "你要么主动从做事的人，变成设计系统的人;要么，看着公司在你周围熄火。",
+    "time_begin": 537378.8299319728,
+    "time_end": 544395.746031746,
+    "text_begin": 2683,
+    "text_end": 2717,
+    "pronounce_text_begin": 2624,
+    "pronounce_text_end": 2658
+  },
+  {
+    "text": "走到 Launch 阶段的尽头，你手里的，已经不只是一个产品，而是一台能自己运转的公司。",
+    "pronounce_text": "走到Launch阶段的尽头，你手里的，已经不只是一个产品，而是一台能自己运转的公司。",
+    "time_begin": 544536,
+    "time_end": 551471.6462585034,
+    "text_begin": 2717,
+    "text_end": 2761,
+    "pronounce_text_begin": 2658,
+    "pronounce_text_end": 2700
+  },
+  {
+    "text": "下一集，是这个系列的最后一集——Scale Stage，规模化阶段。从几千个用户，走到上百万个用户；从一个赌注，变成一门真正的生意。",
+    "pronounce_text": "下一集，是这个系列的最后一集。Scale Stage，规模化阶段。从几千个用户，走到上百万个用户;从一个赌注，变成一门真正的生意。",
+    "time_begin": 551628,
+    "time_end": 563985.5056689342,
+    "text_begin": 2761,
+    "text_end": 2827,
+    "pronounce_text_begin": 2700,
+    "pronounce_text_end": 2765
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 564156,
+    "time_end": 569303.7097505669,
+    "text_begin": 2827,
+    "text_end": 2854,
+    "pronounce_text_begin": 2765,
+    "pronounce_text_end": 2791
+  }
+]

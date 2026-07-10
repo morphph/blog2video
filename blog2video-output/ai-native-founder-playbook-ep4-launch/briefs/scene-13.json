@@ -1,0 +1,52 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "image",
+ "dataDuration": 56.5,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_13.html",
+ "topbarIndex": "[13/15]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 2.383,
+   "text": "技术债这边，是同一个打法。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.399,
+   "localDuration": 12.831,
+   "text": "Claude Code 做全量架构审计，把发现喂给 Claude 排期：哪些下个版本前必须修，哪些可以等一等，哪些是现阶段可以接受的存量债。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.388,
+   "localDuration": 9.745,
+   "text": "顺手把 MVP 期只活在你脑子里的那些架构决策，落盘进 CLAUDE.md，让以后每次开工，都从共同的理解出发。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 25.288,
+   "localDuration": 15.643,
+   "text": "安全也一样：Claude Code 做面向 SOC 2、GDPR 这类合规框架的代码级扫描，再让 Claude 排出修复顺序，设计企业客户签单前一定会查的访问控制和审计日志。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 41.092,
+   "localDuration": 5.025,
+   "text": "还记得第一集立的那个 flag 吗，精益的十人独角兽？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 46.117,
+   "localDuration": 2.791,
+   "text": "它的机制，到这一集才真正兑现。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 48.908,
+   "localDuration": 7.444,
+   "text": "小团队能运转得像一家大得多的公司，不是省钱技巧，是被这个飞轮，在结构上撑起来的。"
+  }
+ ]
+}

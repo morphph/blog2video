@@ -5,3 +5,11 @@
 Reading script: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_script.md
 Extracted 2932 characters for TTS (15 slides mapped)
 Calling MiniMax TTS API...
+Audio saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_audio.mp3 (8.7 MB)
+Fetching subtitle file from URL...
+Found 57 raw subtitle segments
+Raw subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_audio_minimax_raw_subtitles.json (57 segments)
+Slide map saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_audio_slide_map.json (15 slides)
+Sentence subtitles saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_audio_subtitles.json (92 sentences)
+VTT saved: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_audio.vtt
+Audio duration: 569.3s

@@ -1,0 +1,70 @@
+{
+  "scene": 10,
+  "id": "s10",
+  "type": "principle",
+  "dataDuration": 51.367,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_10.html",
+  "topbarIndex": "[10/15]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.009,
+      "localDuration": 4.672,
+      "text": "第四张账单，最反直觉，因为它长得像机会。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 4.833,
+      "localDuration": 3.973,
+      "text": "新市场、新的融资机会，看起来全是增长。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 8.806,
+      "localDuration": 3.555,
+      "text": "但它们，也可能是 PMF 的死地。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 12.501,
+      "localDuration": 6.271,
+      "text": "你的早期势头是真的，但它也是特定的——它只属于你最早的那批用户。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 18.772,
+      "localDuration": 9.407,
+      "text": "过早扩进一个差别很大的新市场，新的用户行为、新的合规要求、新的支付方式、新的期待，会一起涌进来。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 28.341,
+      "localDuration": 7.319,
+      "text": "变量一多，你就失去了解读自己数据的能力：看着数字在动，却说不清为什么。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 35.829,
+      "localDuration": 4.575,
+      "text": "与此同时，你最早赢下的那批用户，正在被冷落。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 40.404,
+      "localDuration": 3.119,
+      "text": "所以杀死你的不是分心，是失明。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 43.523,
+      "localDuration": 4.575,
+      "text": "这也不是说扩张有罪——它是时机和准备的问题。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 48.098,
+      "localDuration": 3.119,
+      "text": "先守住你已经赢的，再去赢新的。"
+    }
+  ]
+}

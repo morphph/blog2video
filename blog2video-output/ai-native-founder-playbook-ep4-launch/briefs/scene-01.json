@@ -1,0 +1,40 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 38.3,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/slide_1.html",
+ "topbarIndex": "[01/15]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 13.553,
+   "text": "Anthropic 刚刚发布了一份官方创业手册：2026 年，怎么用 AI，把一个人的想法，做成一家真正的公司——整套打法，从头写到了尾。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 13.716,
+   "localDuration": 4.881,
+   "text": "今天，我们接着上一集，讲 Launch 阶段，发布阶段。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 18.756,
+   "localDuration": 7.804,
+   "text": "上一集的结尾，你手里已经攥着一摞证据——有人回来用，有人付钱，有人推荐。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 26.56,
+   "localDuration": 7.154,
+   "text": "这一集要回答的，就是怎么把这个被验证过的产品，正式推向更大的世界。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 33.914,
+   "localDuration": 4.242,
+   "text": "而这一程真正的对手，不是市场，是你自己。"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:420px;left:50%;transform:translateX(-50%);width:720px;height:720px;background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,rgba(16,185,129,0) 70%);pointer-events:none}
+.kick{position:relative;font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:22px}
+.title{position:relative;font-size:60px;font-weight:800;line-height:1.26}
+.title .hl{color:#10B981}
+.tools{position:relative;display:flex;gap:20px;width:100%;margin-top:46px}
+.tool{flex:1;background:#1A1A2E;border:1px solid rgba(139,92,246,0.3);border-top:5px solid #8B5CF6;border-radius:14px;padding:28px 20px}
+.tool .n{font-size:32px;font-weight:800;color:#8B5CF6;line-height:1.25}
+.tool .r{margin-top:12px;font-size:28px;font-weight:700;color:#B0B0CC}
+.was{position:relative;margin-top:26px;font-size:30px;font-weight:700;color:#6B7280;line-height:1.4}
+.was .strike{text-decoration:line-through;text-decoration-color:rgba(107,114,128,0.6)}
+.now{position:relative;width:100%;margin-top:30px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.35);border-left:6px solid #10B981;border-radius:14px;padding:30px 32px;text-align:left}
+.now .l{font-size:28px;font-weight:800;letter-spacing:.04em;color:#10B981;margin-bottom:14px}
+.now .b{font-size:38px;font-weight:800;line-height:1.4}
+.now .b .em{color:#10B981}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="kick">账单看完了 · 怎么清？</div>
+  <div class="title">AI 用法的质变：<br>三个工具拧成<span class="hl">一个飞轮</span></div>
+  <div class="tools">
+    <div class="tool"><div class="n">Claude Code</div><div class="r">建产品</div></div>
+    <div class="tool"><div class="n">Claude Cowork</div><div class="r">跑运营</div></div>
+    <div class="tool"><div class="n">Claude</div><div class="r">做研究</div></div>
+  </div>
+  <div class="was">前三集：<span class="strike">三个独立的省力装置，各管一段</span></div>
+  <div class="now">
+    <div class="l">Launch 阶段 · 第一次拧在一起</div>
+    <div class="b">每个工具的产出，都是另外两个的输入——效果<span class="em">复利叠加</span></div>
+  </div>
+</div>
+</body>
+</html>

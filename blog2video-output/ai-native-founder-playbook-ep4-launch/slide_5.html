@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#EF4444;margin-bottom:22px}
+.title{font-size:62px;font-weight:800;line-height:1.24}
+.title .hl{color:#EF4444}
+.concept{width:100%;margin-top:44px;background:#1A1A2E;border:1px solid rgba(239,68,68,0.35);border-left:6px solid #EF4444;border-radius:14px;padding:30px 32px;text-align:left}
+.concept .b{font-size:36px;font-weight:700;line-height:1.42;color:#B0B0CC}
+.concept .b .em{color:#EF4444;font-weight:800}
+.lab{margin-top:40px;font-size:28px;font-weight:800;letter-spacing:.06em;color:#10B981}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;width:100%;margin-top:20px}
+.step{background:#1A1A2E;border:1px solid rgba(16,185,129,0.4);border-radius:10px;padding:22px 26px;font-size:32px;font-weight:800;color:#10B981}
+.step .d{display:block;font-size:26px;font-weight:700;color:#B0B0CC;margin-top:8px}
+.arrow{color:#6B7280;font-size:30px;font-weight:800}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">账单 ① · 技术债</div>
+  <div class="title">MVP 用债换速度，<br>Launch 开始<span class="hl">计息</span></div>
+  <div class="concept">
+    <div class="b">生产流量 · 新功能 · 越来越复杂的系统，把当年抄的每条近路<span class="em">一条条暴露</span>——拖得越久，修起来越贵</div>
+  </div>
+  <div class="lab">清偿三步</div>
+  <div class="flow">
+    <span class="step">架构审计<span class="d">找出结构弱点</span></span><span class="arrow">→</span>
+    <span class="step">靶向重构<span class="d">最糟的几处</span></span><span class="arrow">→</span>
+    <span class="step">补测试覆盖<span class="d">别把问题带回来</span></span>
+  </div>
+</div>
+</body>
+</html>

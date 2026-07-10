@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Founder's Playbook: Building an AI-Native Startup (Chapter 5 — Launch Stage)",
+    "title_zh": "AI 帮你找到 PMF，守不住它的是你自己？",
+    "word_count": 2261,
+    "slug": "ai-native-founder-playbook-ep4-launch"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "EP4 覆盖原书 Ch5 Launch Stage，是一条连贯论证（MVP 证明产品配存在 → Launch 证明生意配长大 → 三条退出标准只有一条关于产品 → 四个失败模式全是上一阶段正确决策到期的账单 → 换挡没有铃声 → 三件套拧成飞轮兑现十人独角兽），默认不拆。系列分集已定，本集单条成片。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI 帮你找到 PMF，守不住它的是你自己？"
+      }
+    ]
+  }
+}

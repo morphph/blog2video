@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .tl-row .yr{width:200px}
+[data-composition-id='s02'] .wt b{font-weight:900}
+[data-composition-id='s02'] .m2 .wt b{color:#ccff4d}
+[data-composition-id='s02'] .eh{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s02'] .task{margin-top:18px;font-weight:600;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s02'] .task .ar{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 12px}
+[data-composition-id='s02'] .task .em2{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="25.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[02/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// GOAL CHECK · <span class="acc">先把目标说清楚</span></div>
+
+      <div class="tl" style="margin-top:36px">
+        <div class="tl-row m1"><div class="yr">MVP</div><div class="wt">已经证明 · 产品<b>配存在</b></div></div>
+        <div class="tl-row m2 now"><div class="yr">LAUNCH</div><div class="wt">要证明 · 生意<b>配长大</b><span class="badge">本集考题</span></div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:44px">一字之差，考的东西<span class="hl"><span class="bar"></span><span class="tx">完全变了</span></span></div>
+
+      <div class="bracket engine" style="margin-top:40px">
+        <div class="eh">// 这一程的任务</div>
+        <div class="task t1">早期势头 <span class="ar">→</span> 可重复运转的<span class="em2">增长引擎</span></div>
+        <div class="task t2">产品周围 <span class="ar">→</span> 建起<span class="em2">一家公司</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.004" data-duration="1.635" data-track-index="5"><div class="sub-inner">先把<span class="sub-k">目标</span>说清楚。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.639" data-duration="8.586" data-track-index="5"><div class="sub-inner">MVP 阶段证明的，是你的产品配存在；Launch 阶段要证明的，是你的生意<span class="sub-k">配长大</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.372" data-duration="2.982" data-track-index="5"><div class="sub-inner"><span class="sub-k">一字之差</span>，考的东西完全变了。</div></div>
+    <div id="sub-4" class="clip sub" data-start="13.354" data-duration="6.602" data-track-index="5"><div class="sub-inner">这一程的任务，是把早期的势头，变成一台可以重复运转的<span class="sub-k">增长引擎</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.956" data-duration="5.537" data-track-index="5"><div class="sub-inner">而且不止是产品——你得在产品周围，真正建起<span class="sub-k">一家公司</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.m1', 1.9, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.m2', 5.9, {x:-22, d:.36, ease:'expo.out'});
+    tl.from(R+'.m2 .badge',{scale:.6,opacity:0,duration:.3,ease:'expo.out'},6.6);
+    D2.enter(tl, R+'.punch', 10.5, {y:20, d:.4, ease:'expo.out'});
+    D2.sweep(tl, R, '.hl', 10.95);
+    D2.enter(tl, R+'.engine', 13.6, {y:20, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.t2', 20.1, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.004],['#sub-2',1.639],['#sub-3',10.372],['#sub-4',13.354],['#sub-5',19.956]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 25.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

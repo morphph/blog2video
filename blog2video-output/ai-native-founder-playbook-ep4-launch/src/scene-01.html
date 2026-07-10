@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有 —— */
+[data-composition-id='s01'] .beat{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box;transform-origin:50% 45%}
+
+/* beat A — playbook */
+[data-composition-id='s01'] .a-en{margin-top:30px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;line-height:1.08;letter-spacing:-.02em;color:#edebe6}
+[data-composition-id='s01'] .a-zh{margin-top:28px;display:flex;align-items:center}
+[data-composition-id='s01'] .a-zh .t{font-weight:900;font-size:92px;color:#edebe6}
+[data-composition-id='s01'] .a-cur{display:inline-block;width:46px;height:76px;background:#ccff4d;margin-left:20px}
+[data-composition-id='s01'] .a-path{margin-top:48px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px;font-weight:600;font-size:40px;color:#edebe6}
+[data-composition-id='s01'] .a-path .ar{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 8px}
+[data-composition-id='s01'] .a-status{margin-top:40px}
+
+/* beat B — launch stage */
+[data-composition-id='s01'] .b-launch{margin-top:36px;width:100%;padding:46px 46px 50px}
+[data-composition-id='s01'] .b-en{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:104px;letter-spacing:-.02em;color:#edebe6;display:flex;align-items:center}
+[data-composition-id='s01'] .b-badge{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:#121212;background:#ccff4d;padding:6px 16px;margin-left:28px}
+[data-composition-id='s01'] .b-zh{margin-top:22px;font-weight:900;font-size:60px;color:#edebe6}
+
+/* beat C — evidence */
+[data-composition-id='s01'] .c-title{margin-top:16px}
+[data-composition-id='s01'] .c-chips{margin-top:48px;display:flex;flex-direction:column;gap:18px}
+
+/* beat D — question */
+[data-composition-id='s01'] .d-lead{margin-top:30px;font-weight:600;font-size:44px;line-height:1.4;color:#edebe6}
+[data-composition-id='s01'] .d-lead .ar{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 8px}
+[data-composition-id='s01'] .d-more{display:inline-block}
+[data-composition-id='s01'] .d-title{margin-top:46px;font-weight:900;font-size:82px;line-height:1.2;color:#edebe6}
+[data-composition-id='s01'] .d-title .you{color:#ff6b5e}
+[data-composition-id='s01'] .d-end{margin-top:50px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="38.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[01/15]</div>
+    </div>
+
+    <!-- BEAT A: Anthropic 官方创业手册 (0 – 13.6) -->
+    <div class="beat" id="beatA">
+      <div class="kicker a-kick"><span class="acc">EP.04</span> / 05 · ANTHROPIC OFFICIAL PLAYBOOK</div>
+      <div class="a-en">AI-NATIVE<br>FOUNDER PLAYBOOK</div>
+      <div class="a-zh"><span class="t">官方创业手册</span><span class="a-cur"></span></div>
+      <div class="a-path">一个人的想法<span class="ar">→</span>一家真正的公司</div>
+      <div class="status a-status"><span class="dot"></span>整套打法 · 从头写到尾</div>
+    </div>
+
+    <!-- BEAT B: Launch 阶段 (13.75 – 18.6) -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="kicker b-kick">// 接着上一集</div>
+      <div class="bracket b-launch">
+        <div class="b-en">LAUNCH<span class="b-badge">EP.04</span></div>
+        <div class="b-zh">发布阶段</div>
+      </div>
+    </div>
+
+    <!-- BEAT C: 证据一摞 (18.76 – 26.5) -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="kicker c-kick">// 上一集的结尾</div>
+      <div class="h1 c-title">手里攥着<span class="em">一摞证据</span></div>
+      <div class="c-chips">
+        <div class="chip ev1"><span class="ci">01</span><span class="ct">有人回来用</span></div>
+        <div class="chip ev2"><span class="ci">02</span><span class="ct">有人付钱</span></div>
+        <div class="chip ev3"><span class="ci">03</span><span class="ct">有人推荐</span></div>
+      </div>
+    </div>
+
+    <!-- BEAT D: 本集问题 (26.56 – 38.3) -->
+    <div class="beat" id="beatD" style="opacity:0">
+      <div class="kicker d-kick">// 这一集要回答的</div>
+      <div class="d-lead">被验证过的产品<span class="d-more"><span class="ar">→</span>更大的世界</span></div>
+      <div class="d-title">AI 帮你找到 PMF，<br>守不住它的是<span class="you">你自己</span>？</div>
+      <div class="endchip d-end"><span class="dot"></span><span class="lab">精读系列 · 第 4 集 / 共 5 集</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, 一字不差) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="13.553" data-track-index="5"><div class="sub-inner">Anthropic 刚刚发布了一份<span class="sub-k">官方创业手册</span>：2026 年，怎么用 AI，把一个人的想法，做成一家真正的公司——整套打法，从头写到了尾。</div></div>
+    <div id="sub-2" class="clip sub" data-start="13.716" data-duration="4.881" data-track-index="5"><div class="sub-inner">今天，我们接着上一集，讲 <span class="sub-k">Launch 阶段</span>，发布阶段。</div></div>
+    <div id="sub-3" class="clip sub" data-start="18.756" data-duration="7.804" data-track-index="5"><div class="sub-inner">上一集的结尾，你手里已经攥着<span class="sub-k">一摞证据</span>——有人回来用，有人付钱，有人推荐。</div></div>
+    <div id="sub-4" class="clip sub" data-start="26.56" data-duration="7.154" data-track-index="5"><div class="sub-inner">这一集要回答的，就是怎么把这个被验证过的产品，正式推向<span class="sub-k">更大的世界</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="33.914" data-duration="4.242" data-track-index="5"><div class="sub-inner">而这一程真正的对手，不是市场，是<span class="sub-k">你自己</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* BEAT A: 官方创业手册 (sub-1: 0 – 13.55) */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.5);
+    tl.from(R+'.a-en',{x:-40,opacity:0,duration:.4,ease:'expo.out'},1.1);
+    tl.from(R+'.a-zh .t',{y:22,opacity:0,duration:.35,ease:'power3.out'},2.6);
+    tl.from(R+'.a-cur',{opacity:0,duration:.18,ease:'power1.in'},2.78);
+    D2.blink(tl, R+'.a-cur', 3.6, 5);
+    tl.from(R+'.a-path',{x:-26,opacity:0,duration:.32,ease:'power3.out'},6.3);
+    tl.from(R+'.a-status',{y:14,opacity:0,duration:.3,ease:'power2.out'},10.9);
+    tl.to(R+'#beatA',{scale:1.028,duration:13.6,ease:'none'},0);
+
+    /* A -> B swap */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},13.35);
+    tl.set(R+'#beatB',{opacity:1},13.75);
+
+    /* BEAT B: Launch 阶段 (sub-2: 13.72 – 18.6) */
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},13.95);
+    tl.from(R+'.b-launch',{y:24,opacity:0,duration:.4,ease:'expo.out'},15.9);
+    tl.from(R+'.b-zh',{y:16,opacity:0,duration:.3,ease:'power3.out'},17.25);
+    tl.to(R+'#beatB',{scale:1.02,duration:4.95,ease:'none'},13.75);
+
+    /* B -> C swap */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},18.35);
+    tl.set(R+'#beatC',{opacity:1},18.76);
+
+    /* BEAT C: 证据一摞 (sub-3: 18.76 – 26.56) */
+    tl.from(R+'.c-kick',{opacity:0,duration:.3,ease:'power1.out'},18.95);
+    tl.from(R+'.c-title',{y:20,opacity:0,duration:.35,ease:'power3.out'},19.9);
+    tl.from(R+'.ev1',{x:-24,opacity:0,duration:.3,ease:'power3.out'},22.7);
+    tl.from(R+'.ev2',{y:18,opacity:0,duration:.3,ease:'power2.out'},24.0);
+    tl.from(R+'.ev3',{x:24,opacity:0,duration:.3,ease:'expo.out'},25.2);
+    tl.to(R+'#beatC',{scale:1.025,duration:7.7,ease:'none'},18.8);
+
+    /* C -> D swap */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},26.12);
+    tl.set(R+'#beatD',{opacity:1},26.56);
+
+    /* BEAT D: 本集问题 (sub-4/5: 26.56 – 38.3) */
+    tl.from(R+'.d-kick',{opacity:0,duration:.3,ease:'power1.out'},26.9);
+    tl.from(R+'.d-lead',{y:18,opacity:0,duration:.32,ease:'power3.out'},29.2);
+    tl.from(R+'.d-more',{x:14,opacity:0,duration:.3,ease:'power2.out'},31.9);
+    tl.from(R+'.d-title',{y:26,opacity:0,duration:.45,ease:'power4.out'},33.95);
+    tl.from(R+'.d-end',{y:16,opacity:0,duration:.35,ease:'expo.out'},36.5);
+    tl.to(R+'#beatD',{scale:1.03,duration:11.7,ease:'none'},26.6);
+
+    /* subtitles */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',13.716],['#sub-3',18.756],['#sub-4',26.56],['#sub-5',33.914]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

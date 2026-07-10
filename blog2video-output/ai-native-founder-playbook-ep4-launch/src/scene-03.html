@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .mets{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s03'] .mets .mc{font-family:'JetBrains Mono',monospace;font-size:23px;color:#edebe6;border:1px solid rgba(204,255,77,.4);padding:5px 14px}
+[data-composition-id='s03'] .mets .mc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s03'] .rdb{margin-top:10px}
+[data-composition-id='s03'] .punch{margin-top:30px;width:100%}
+[data-composition-id='s03'] .p1{font-weight:900;font-size:44px;line-height:1.35;color:#edebe6}
+[data-composition-id='s03'] .p1 .pn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:52px;color:#ccff4d}
+[data-composition-id='s03'] .p2{margin-top:10px;font-weight:900;font-size:44px;line-height:1.35;color:#edebe6}
+[data-composition-id='s03'] .p2 .pn2{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:52px;color:#ff6b5e}
+[data-composition-id='s03'] .p2 .pw{color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="46.067" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[03/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 什么时候算<span class="acc">过关</span></div>
+      <div class="h1" style="margin-top:14px">Launch 阶段的<span class="em">三条标准</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row i1"><div class="n">01</div><div class="rb">
+          <div class="rt">增长可复制</div>
+          <div class="rd rda">不只留存 —— <span class="ok">明确渠道</span> · 可预测获客</div>
+          <div class="mets"><span class="mc"><b>CAC</b> 获客成本</span><span class="mc"><b>LTV</b> 终身价值</span><span class="mc"><b>回本周期</b></span></div>
+          <div class="rd rdb">说得出来 · <span class="ok">守得住</span></div>
+        </div></div>
+
+        <div class="row i2"><div class="n">02</div><div class="rb">
+          <div class="rt">产品扛得住生产负载</div>
+          <div class="rd rd2">可靠性在<span class="ok">真实生产条件</span>下成立 —— 不只在<span class="warn">你测过的条件</span>下</div>
+        </div></div>
+
+        <div class="row i3"><div class="n">03</div><div class="rb">
+          <div class="rt">运营不再卡在你身上</div>
+          <div class="rd rd3">支持 · 分诊 · 排期 · 报表 —— <span class="ok">不再需要你亲手</span></div>
+        </div></div>
+      </div>
+
+      <div class="punch bracket">
+        <div class="p1">三条里，只有 <span class="pn">1</span> 条关于产品</div>
+        <div class="p2">另外 <span class="pn2">2</span> 条，考的都是<span class="pw">公司</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="1.617" data-track-index="5"><div class="sub-inner">什么时候算<span class="sub-k">过关</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.62" data-duration="1.011" data-track-index="5"><div class="sub-inner"><span class="sub-k">三条标准</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="2.831" data-duration="14.61" data-track-index="5"><div class="sub-inner">第一，<span class="sub-k">增长可复制</span>：你不只是留住用户，而是能通过明确的渠道，可预测地获取新用户——获客成本 CAC、用户终身价值 LTV、回本周期，这三个数字，</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.641" data-duration="2.373" data-track-index="5"><div class="sub-inner">你说得出来，也<span class="sub-k">守得住</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.163" data-duration="8.468" data-track-index="5"><div class="sub-inner">第二，产品扛得住生产负载：可靠性要在<span class="sub-k">真实的生产条件</span>下成立，而不只是在你测试过的条件下成立。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.831" data-duration="9.362" data-track-index="5"><div class="sub-inner">第三，运营<span class="sub-k">不再卡在你身上</span>：用户支持、问题分诊、排期、报表，这些事不再需要你亲手处理。</div></div>
+    <div id="sub-7" class="clip sub" data-start="38.343" data-duration="4.977" data-track-index="5"><div class="sub-inner">你发现没有，三条标准里，<span class="sub-k">只有一条</span>是关于产品的。</div></div>
+    <div id="sub-8" class="clip sub" data-start="43.32" data-duration="2.597" data-track-index="5"><div class="sub-inner">另外两条，考的都是<span class="sub-k">公司</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .15, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.68, {y:18, d:.36, ease:'expo.out'});
+    // 01 增长可复制
+    D2.enter(tl, R+'.i1', 2.95, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rda', 5.2, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.mets .mc', 10.5, {y:8, d:.3, step:1.7, ease:'power3.out'});
+    D2.enter(tl, R+'.rdb', 17.7, {y:10, d:.3, ease:'power2.out'});
+    // 02 产品扛得住生产负载
+    D2.enter(tl, R+'.i2', 20.25, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.rd2', 23.6, {y:10, d:.3, ease:'power2.out'});
+    // 03 运营不再卡在你身上
+    D2.enter(tl, R+'.i3', 28.9, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.rd3', 31.9, {y:10, d:.3, ease:'power2.out'});
+    // 点睛:只有一条关于产品
+    D2.enter(tl, R+'.punch', 38.42, {y:16, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.p2', 43.4, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',1.62],['#sub-3',2.831],['#sub-4',17.641],['#sub-5',20.163],['#sub-6',28.831],['#sub-7',38.343],['#sub-8',43.32]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 46.067, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

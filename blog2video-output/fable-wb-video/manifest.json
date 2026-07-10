@@ -1,0 +1,66 @@
+[
+ {
+  "scene": 1,
+  "dir": "scene-01",
+  "comp": "wb01",
+  "t0": 0.0,
+  "duration": 161.748,
+  "sentences": 22
+ },
+ {
+  "scene": 2,
+  "dir": "scene-02",
+  "comp": "wb02",
+  "t0": 161.748,
+  "duration": 123.408,
+  "sentences": 22
+ },
+ {
+  "scene": 3,
+  "dir": "scene-03",
+  "comp": "wb03",
+  "t0": 285.156,
+  "duration": 119.772,
+  "sentences": 13
+ },
+ {
+  "scene": 4,
+  "dir": "scene-04",
+  "comp": "wb04",
+  "t0": 404.928,
+  "duration": 198.18,
+  "sentences": 28
+ },
+ {
+  "scene": 5,
+  "dir": "scene-05",
+  "comp": "wb05",
+  "t0": 603.108,
+  "duration": 72.54,
+  "sentences": 9
+ },
+ {
+  "scene": 6,
+  "dir": "scene-06",
+  "comp": "wb06",
+  "t0": 675.648,
+  "duration": 87.408,
+  "sentences": 13
+ },
+ {
+  "scene": 7,
+  "dir": "scene-07",
+  "comp": "wb07",
+  "t0": 763.056,
+  "duration": 75.816,
+  "sentences": 10
+ },
+ {
+  "scene": 8,
+  "dir": "scene-08",
+  "comp": "wb08",
+  "t0": 838.872,
+  "duration": 116.412,
+  "sentences": 13
+ }
+]

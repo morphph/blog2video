@@ -1,0 +1,32 @@
+SKIP scene 01 (already 161.766667 s)
+RENDER scene 02 (target 123.408s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-02.mp4
+   9.3 MB · 2m 3.4s video · rendered in 3m 34.7s
+scene 02: 123.433333s vs 123.408s -> OK
+RENDER scene 03 (target 119.772s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-03.mp4
+   11.2 MB · 1m 59.8s video · rendered in 1m 37.8s
+scene 03: 119.8s vs 119.772s -> OK
+RENDER scene 04 (target 198.18s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-04.mp4
+   12.2 MB · 3m 18.2s video · rendered in 5m 18.7s
+scene 04: 198.2s vs 198.18s -> OK
+RENDER scene 05 (target 72.54s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-05.mp4
+   6.3 MB · 1m 12.5s video · rendered in 1m 19.1s
+scene 05: 72.566667s vs 72.54s -> OK
+RENDER scene 06 (target 87.408s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-06.mp4
+   7.1 MB · 1m 27.4s video · rendered in 1m 29.6s
+scene 06: 87.433333s vs 87.408s -> OK
+RENDER scene 07 (target 75.816s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-07.mp4
+   15.8 MB · 1m 15.8s video · rendered in 1m 29.5s
+scene 07: 75.833333s vs 75.816s -> OK
+RENDER scene 08 (target 116.412s)
+◇  /Users/yufanp/Desktop/Project/blog2video/blog2video-output/fable-wb-video/scene-08.mp4
+   11.8 MB · 1m 56.4s video · rendered in 1m 32.2s
+scene 08: 116.433333s vs 116.412s -> OK
+concat done: 955.466667s
+955.467000
+✅ fable-finding-your-unknowns-wb.mp4

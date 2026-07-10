@@ -1,0 +1,144 @@
+{
+  "contract_version": "layer-export.v1",
+  "source": "fable-finding-your-unknowns-diagram.excalidraw",
+  "canvas": {
+    "bbox": [
+      20,
+      -40,
+      1600,
+      1130
+    ],
+    "padding": 80,
+    "viewBox": "0 0 1620 1150",
+    "width": "1620",
+    "height": "1150"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "地图 ≠ 疆域：未知 = 两者之差",
+      "bbox": [
+        120,
+        40,
+        1410,
+        230
+      ],
+      "cumulativeBbox": [
+        120,
+        40,
+        1410,
+        230
+      ],
+      "elementCount": 11,
+      "file": "layers/step-01.svg"
+    },
+    {
+      "step": 2,
+      "label": "四象限拆解你的未知",
+      "bbox": [
+        120,
+        322,
+        610,
+        264
+      ],
+      "cumulativeBbox": [
+        120,
+        40,
+        1410,
+        546
+      ],
+      "elementCount": 9,
+      "file": "layers/step-02.svg"
+    },
+    {
+      "step": 3,
+      "label": "太具体/太模糊都会输",
+      "bbox": [
+        820,
+        322,
+        710,
+        242
+      ],
+      "cumulativeBbox": [
+        120,
+        40,
+        1410,
+        546
+      ],
+      "elementCount": 9,
+      "file": "layers/step-03.svg"
+    },
+    {
+      "step": 4,
+      "label": "实现前：5 个便宜探测",
+      "bbox": [
+        100,
+        630,
+        1440,
+        380
+      ],
+      "cumulativeBbox": [
+        100,
+        40,
+        1440,
+        970
+      ],
+      "elementCount": 12,
+      "file": "layers/step-04.svg"
+    },
+    {
+      "step": 5,
+      "label": "实现中：implementation-notes",
+      "bbox": [
+        686,
+        656,
+        454,
+        154
+      ],
+      "cumulativeBbox": [
+        100,
+        40,
+        1440,
+        970
+      ],
+      "elementCount": 4,
+      "file": "layers/step-05.svg"
+    },
+    {
+      "step": 6,
+      "label": "实现后：pitch + quiz",
+      "bbox": [
+        1146,
+        656,
+        394,
+        200
+      ],
+      "cumulativeBbox": [
+        100,
+        40,
+        1440,
+        970
+      ],
+      "elementCount": 6,
+      "file": "layers/step-06.svg"
+    },
+    {
+      "step": 7,
+      "label": "cheap now < expensive later",
+      "bbox": [
+        780,
+        812,
+        760,
+        198
+      ],
+      "cumulativeBbox": [
+        100,
+        40,
+        1440,
+        970
+      ],
+      "elementCount": 4,
+      "file": "layers/step-07.svg"
+    }
+  ]
+}

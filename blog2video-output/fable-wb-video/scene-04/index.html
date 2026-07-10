@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   wb 「白板讲解 Whiteboard Tutor」 BASE KIT —— 精读/tutor 线全片统一
+   真源。生成器把本文件 + wb-motion.js 内联进每个场景的 style / script 块。
+   场景自包含、逐个 standalone 渲染;GSAP 选择器用 R = data-composition-id 前缀。
+   字体路径相对 scene 目录:assets -> symlink 到 kit assets(内部再 symlink d2-kit 字体)。
+
+   舞台 1920×1080 横屏。视觉真相在层 SVG 里(白板图);HTML 只负责:
+   舞台/视口/镜头容器、层叠放、字幕带、角标。手写文字一律在图内,HTML 不配手写字体。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入;仅字幕+角标) ---- */
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#ffffff;font-family:'MiSans',sans-serif}
+
+/* ---- 舞台根 ---- */
+.stage{position:relative;width:1920px;height:1080px;background:#ffffff;overflow:hidden}
+
+/* ---- 视口 + 镜头容器 ----
+   .canvas 尺寸 = steps.json canvas 宽高 × data-ss(默认 2,supersample 防放大糊),
+   由场景 inline style 写死;transform 只由 WB.camera/WB.home 驱动,origin 恒 0 0。 */
+.viewport{position:absolute;inset:0;overflow:hidden;transform-origin:50% 50%}  /* 呼吸目标(WB.breath);镜头目标是 .canvas */
+.canvas{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}
+
+/* ---- 层(S2 分层导出的 step-NN.svg,叠加式,z 序 = 文档顺序) ----
+   初始全隐;WB.revealLayer 揭示。必须 <img>(层内嵌各自字体子集,内联会互踩)。 */
+.layer{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0}
+.layer.on{opacity:1}   /* 场景起始已显层:标 class,配合 WB.preset */
+
+/* ---- 字幕带(track 5,与 d2 同契约) ---- */
+.sub{position:absolute;left:120px;right:120px;bottom:64px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(20,20,20,.72);border-radius:10px;max-width:1440px;padding:14px 28px;
+  font-weight:500;font-size:42px;line-height:1.45;color:#ffffff;text-align:center}
+.sub-k{color:#ffd43b}
+
+/* ---- 角标(系列标识,常驻可选) ---- */
+.brandtag{position:absolute;top:36px;left:48px;z-index:20;
+  font-family:'JetBrains Mono',monospace;font-size:24px;color:#b0b0ab;letter-spacing:.06em}
+.brandtag .acc{color:#e8590c}
+
+.sub-inner.long{font-size:36px;line-height:1.45}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="wb04" data-start="0" data-duration="198.18" data-width="1920" data-height="1080">
+  <div class="stage">
+    <div class="viewport">
+      <div class="canvas" data-ss="2" style="width:3240px;height:2300px">
+        <img class="layer" id="ly1" src="layers/step-01.svg">
+        <img class="layer" id="ly2" src="layers/step-02.svg">
+        <img class="layer" id="ly3" src="layers/step-03.svg">
+        <img class="layer" id="ly4" src="layers/step-04.svg">
+        <img class="layer" id="ly5" src="layers/step-05.svg">
+        <img class="layer" id="ly6" src="layers/step-06.svg">
+        <img class="layer" id="ly7" src="layers/step-07.svg">
+      </div>
+    </div>
+    <div class="brandtag">精读<span class="acc">AI_</span></div>
+
+    <div id="sub-1" class="clip sub" data-start="0.000" data-duration="3.192" data-track-index="5"><div class="sub-inner">先看时间轴最左边，实现之前，五招。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.192" data-duration="6.948" data-track-index="5"><div class="sub-inner">每一招你都要留意它冲着哪一格未知去——这是心法，别听成一堆零散 tips。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.296" data-duration="7.721" data-track-index="5"><div class="sub-inner">第一招，盲点扫描，Blind Spot Pass，冲着最难缠的那一格、未知的未知。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.017" data-duration="1.130" data-track-index="5"><div class="sub-inner">什么时候用？</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.296" data-duration="13.251" data-track-index="5"><div class="sub-inner long">你要在 codebase 一个从没碰过的新区域写功能，或者干一件完全不熟的活，身上一定挂着一堆未知的未知——不知道该问什么、不知道「好」长什么样、不知道有哪些坑。</div></div>
+    <div id="sub-6" class="clip sub" data-start="32.688" data-duration="7.200" data-track-index="5"><div class="sub-inner">做法很简单：让 Claude 帮你做一次盲点扫描，把这些未知找出来、讲给你听。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.888" data-duration="8.861" data-track-index="5"><div class="sub-inner">这里有个反复出现的要点：一定要给它「<span class="sub-k">你是谁、你懂什么</span>」的 context，它才知道你的盲点在哪。</div></div>
+    <div id="sub-8" class="clip sub" data-start="48.888" data-duration="6.432" data-track-index="5"><div class="sub-inner">第二招，头脑风暴和原型，冲着第三格那种「<span class="sub-k">看到才知道</span>」的标准。</div></div>
+    <div id="sub-9" class="clip sub" data-start="55.320" data-duration="7.075" data-track-index="5"><div class="sub-inner">作者的判断很硬：越早在原型阶段就把这些标准识别、说出来，就越值钱。</div></div>
+    <div id="sub-10" class="clip sub" data-start="62.532" data-duration="10.558" data-track-index="5"><div class="sub-inner">因为拖到实现阶段才发现，代价贵得多——spec 上一个小改动，可能导致代码里天差地别的实现，让 agent 回退也更难。</div></div>
+    <div id="sub-11" class="clip sub" data-start="73.260" data-duration="12.056" data-track-index="5"><div class="sub-inner long">所以你只是想看「<span class="sub-k">一个按钮加进这个框长啥样</span>」，就别先去接后端路由、在前端多维护一份 state，拿 HTML 假数据 mock 出来看一眼就够。</div></div>
+    <div id="sub-12" class="clip sub" data-start="85.464" data-duration="8.433" data-track-index="5"><div class="sub-inner">作者说他几乎每个 session 都以探索和头脑风暴开场，带着意图去圈定 scope，防止把范围定得太窄或太宽。</div></div>
+    <div id="sub-13" class="clip sub" data-start="94.068" data-duration="3.066" data-track-index="5"><div class="sub-inner">第三招，访谈，Interviews。</div></div>
+    <div id="sub-14" class="clip sub" data-start="97.134" data-duration="9.709" data-track-index="5"><div class="sub-inner">做完头脑风暴你多半还有未知，这时候反过来，让 Claude 来访谈你——就任何还含糊的地方，一个问题一个问题地问。</div></div>
+    <div id="sub-15" class="clip sub" data-start="106.992" data-duration="6.126" data-track-index="5"><div class="sub-inner">这招精妙的地方在一个要求：优先问那些「<span class="sub-k">我的回答会改变架构</span>」的问题。</div></div>
+    <div id="sub-16" class="clip sub" data-start="113.118" data-duration="5.198" data-track-index="5"><div class="sub-inner">你听这个——是把有限的问答，花在最贵、最难反悔的决策上。</div></div>
+    <div id="sub-17" class="clip sub" data-start="118.476" data-duration="3.370" data-track-index="5"><div class="sub-inner">第四招，参照物，References。</div></div>
+    <div id="sub-18" class="clip sub" data-start="121.846" data-duration="6.387" data-track-index="5"><div class="sub-inner">有时你就是描述不出你要什么，要么没有对应的词，要么复杂到说清楚得花半天。</div></div>
+    <div id="sub-19" class="clip sub" data-start="128.233" data-duration="3.193" data-track-index="5"><div class="sub-inner">这时候最好的答案，是给它一个参照物。</div></div>
+    <div id="sub-20" class="clip sub" data-start="131.580" data-duration="7.493" data-track-index="5"><div class="sub-inner">作者甩出一句特别反直觉、又特别可操作的判断：绝对最好的参照物，是源代码。</div></div>
+    <div id="sub-21" class="clip sub" data-start="139.212" data-duration="12.694" data-track-index="5"><div class="sub-inner long">你想想，有个库已经用某种方式实现了你想要的行为，那你别费劲描述了，直接把 Fable 指向那个文件夹，告诉它去找什么，哪怕那是另一种编程语言。</div></div>
+    <div id="sub-22" class="clip sub" data-start="152.064" data-duration="15.090" data-track-index="5"><div class="sub-inner long">Claude Design 就是这么工作的：你把它指向某个网站上一个你喜欢的模块，它读的是底层代码、不只是截图，所以拿到的是关于结构、组件到底怎么搭出来的丰富细节。</div></div>
+    <div id="sub-23" class="clip sub" data-start="167.154" data-duration="1.656" data-track-index="5"><div class="sub-inner">跨语言，照样能抄。</div></div>
+    <div id="sub-24" class="clip sub" data-start="168.948" data-duration="4.130" data-track-index="5"><div class="sub-inner">第五招，实现计划，Implementation Plans。</div></div>
+    <div id="sub-25" class="clip sub" data-start="173.078" data-duration="5.232" data-track-index="5"><div class="sub-inner">差不多可以动手了，作者倾向让 Claude 先出一份计划给他 review。</div></div>
+    <div id="sub-26" class="clip sub" data-start="178.510" data-duration="8.771" data-track-index="5"><div class="sub-inner">诀窍是：让计划把最可能变的部分放最前面——数据模型、type interface、面向用户的 UX flow。</div></div>
+    <div id="sub-27" class="clip sub" data-start="187.281" data-duration="0.638" data-track-index="5"><div class="sub-inner">为什么？</div></div>
+    <div id="sub-28" class="clip sub" data-start="188.064" data-duration="9.966" data-track-index="5"><div class="sub-inner long">因为这样能逼 Claude 把「<span class="sub-k">你其实可能需要改</span>」的东西主动浮出来；那些机械性、你根本不会去动的 refactor，埋到最底下就行。</div></div>
+  </div>
+</div>
+<script>
+/* ============================================================================
+   wb-motion.js —— GSAP 镜头/揭示助手(白板讲解线,全片统一性格:镜头从容、揭示克制)
+   内联进每个场景的 script 块(GSAP 3.14 先于本段加载)。全局命名空间 window.WB。
+   只动 transform / opacity / clip-path。禁:弹性 ease、repeat:-1、Date.now/Math.random。
+   timeline 同步构建(hyperframes 逐帧 seek,一切必须是时间的纯函数)。
+
+   坐标约定:一切 bbox = steps.json 的 [x,y,w,h](viewBox 单位)。
+   .canvas 按 SS 倍 viewBox 尺寸布局(supersample 防 <img> 放大糊),SS 从
+   canvas 元素 data-ss 读(默认 2)——场景作者只用原始 bbox 思考,不碰 SS。
+   ============================================================================ */
+(function(){
+  var STAGE_W = 1920, STAGE_H = 1080;
+
+  function canvasEl(R){ return document.querySelector(R + '.canvas'); }
+  function ssOf(R){ var el = canvasEl(R); return el ? (parseFloat(el.getAttribute('data-ss')) || 2) : 2; }
+
+  var WB = {
+    /* 纯计算:把 bbox([x,y,w,h],viewBox 单位)取景到舞台中央。
+       opts:{pad(=80 屏幕px), maxScale(=1,css scale 上限——1 即"永不上采样"),
+             safeBottom(=200 屏幕px,给字幕带留的底部安全区;取景在 1920×(1080-safeBottom) 内居中,
+                        目标内容永不被字幕遮挡。整片无字幕的场景可显式传 0)}
+       返回 {scale,x,y}(直接喂给 gsap 的 transform)。 */
+    fit: function(R, bbox, opts){
+      opts = opts || {};
+      var ss = ssOf(R);
+      var pad = (opts.pad != null) ? opts.pad : 80;
+      var safeH = STAGE_H - ((opts.safeBottom != null) ? opts.safeBottom : 200);
+      var bx = bbox[0]*ss, by = bbox[1]*ss, bw = bbox[2]*ss, bh = bbox[3]*ss;
+      var s = Math.min((STAGE_W - 2*pad)/bw, (safeH - 2*pad)/bh);
+      s = Math.min(s, (opts.maxScale != null) ? opts.maxScale : 1);
+      return { scale: s,
+               x: (STAGE_W - bw*s)/2 - bx*s,
+               y: (safeH - bh*s)/2 - by*s };
+    },
+
+    /* 镜头移动:平移/缩放 .canvas 到 bbox。1.2–1.8s power2.inOut,像人推画布。
+       opts:{d(=1.4), ease(='power2.inOut'), pad, maxScale} */
+    camera: function(tl, R, bbox, at, opts){
+      opts = opts || {};
+      var v = WB.fit(R, bbox, opts);
+      tl.to(R+'.canvas', { scale:v.scale, x:v.x, y:v.y,
+        duration:(opts.d != null) ? opts.d : 1.4, ease:opts.ease || 'power2.inOut' }, at);
+      return tl;
+    },
+
+    /* 镜头定位(无动画,仅场景开头定起点用) */
+    setCamera: function(tl, R, bbox, at, opts){
+      var v = WB.fit(R, bbox, opts);
+      tl.set(R+'.canvas', { scale:v.scale, x:v.x, y:v.y }, at || 0);
+      return tl;
+    },
+
+    /* 缩回全景(recap 段)。bbox 取 steps.json canvas.bbox;不传则量整个 .canvas。 */
+    home: function(tl, R, at, opts){
+      opts = opts || {};
+      var bbox = opts.bbox;
+      if(!bbox){
+        var el = canvasEl(R), ss = ssOf(R);
+        bbox = [0, 0, el.offsetWidth/ss, el.offsetHeight/ss];
+      }
+      return WB.camera(tl, R, bbox, at, Object.assign({ d:(opts.d != null) ? opts.d : 1.8 }, opts));
+    },
+
+    /* 揭示一层。mode:
+       'draw'(默认) clip-path 左→右擦出 0.8s,像正在画;
+       'pop'  0.35s 轻弹入(结论/强调块);
+       'fade' 0.5s 淡入(底图/氛围层)。
+       opts:{d, mode} */
+    revealLayer: function(tl, sel, at, opts){
+      opts = opts || {};
+      var mode = opts.mode || 'draw';
+      if(mode === 'draw'){
+        tl.set(sel, { opacity:1, clipPath:'inset(0% 100% 0% 0%)' }, at);
+        tl.to(sel, { clipPath:'inset(0% 0% 0% 0%)', duration:opts.d || 0.8, ease:'power2.inOut' }, at);
+      } else if(mode === 'pop'){
+        tl.fromTo(sel, { opacity:0, scale:0.965 },
+          { opacity:1, scale:1, duration:opts.d || 0.35, ease:'power3.out' }, at);
+      } else {
+        tl.fromTo(sel, { opacity:0 }, { opacity:1, duration:opts.d || 0.5, ease:'power1.out' }, at);
+      }
+      return tl;
+    },
+
+    /* 场景起始已显层(承接上一场景的进度):t=0 直接置显。sels = 选择器数组。 */
+    preset: function(tl, sels, at){
+      sels.forEach(function(sel){ tl.set(sel, { opacity:1 }, at || 0); });
+      return tl;
+    },
+
+    /* 长驻镜头微呼吸(防死帧):≤1.02 的极缓漂移,dur = 停留时长。
+       作用在 .viewport(镜头动 .canvas、呼吸动 .viewport,互不冲突)。
+       dir:'in'(1→1.015)/'out'(1.015→1)。 */
+    breath: function(tl, R, at, dur, dir){
+      if(dir === 'out') tl.fromTo(R+'.viewport', { scale:1.015 }, { scale:1, duration:dur, ease:'none' }, at);
+      else              tl.fromTo(R+'.viewport', { scale:1 }, { scale:1.015, duration:dur, ease:'none' }, at);
+      return tl;
+    },
+
+    /* 字幕淡入:list = [[id, localStart], ...](0.2s,与 d2 同约定) */
+    subs: function(tl, list){
+      list.forEach(function(s){ tl.from(s[0], { opacity:0, duration:0.2, ease:'power1.out' }, s[1]); });
+      return tl;
+    },
+
+    /* ---- 高阶约定:声明式建整条 timeline ----
+       spec = {
+         duration: 场景全长(=data-duration,尾帧对齐用),
+         start:   bbox | null,                    // 开场镜头定位(setCamera)
+         preset:  ['#ly1', ...],                  // 起始已显层
+         reveals: [ {sel, at, mode?, d?} ],
+         shots:   [ {bbox, at, d?, ease?, pad?} | {home:true, at, d?} ],
+         subs:    [ [id, localStart], ... ],
+         custom:  function(tl, R){...}
+       }
+       sel/id 均为完整选择器(R 已知时也可只写 '#lyN',层 id 全片唯一)。 */
+    buildSceneTimeline: function(R, spec){
+      var tl = gsap.timeline({ paused:true });
+      if(spec.start) WB.setCamera(tl, R, spec.start, 0, spec);
+      if(spec.preset) WB.preset(tl, spec.preset, 0);
+      (spec.reveals||[]).forEach(function(r){ WB.revealLayer(tl, r.sel, r.at, r); });
+      (spec.shots||[]).forEach(function(s){
+        if(s.home) WB.home(tl, R, s.at, s);
+        else WB.camera(tl, R, s.bbox, s.at, s);
+      });
+      if(spec.custom) spec.custom(tl, R);
+      if(spec.subs) WB.subs(tl, spec.subs);
+      /* 尾帧对齐:确保 timeline 总长 = 场景声明时长(hyperframes 按 data-duration 渲) */
+      if(spec.duration) tl.set({}, {}, spec.duration);
+      return tl;
+    },
+
+    /* 注册到全局,供 hyperframes 驱动 */
+    register: function(id, tl){ window.__timelines = window.__timelines || {}; window.__timelines[id] = tl; }
+  };
+
+  window.WB = WB;
+})();
+
+(function(){
+  var R = "[data-composition-id='wb04'] ";
+  var tl = WB.buildSceneTimeline(R, {
+    duration: 198.18,
+    start: [810, 372, 710, 242],
+    preset: ["#ly1", "#ly2", "#ly3"],
+    reveals: [
+      { sel:'#ly4', at:0.30, mode:'draw', d:1.3 }
+    ],
+    shots: [
+      { bbox:[90, 680, 1440, 380], at:0.50, d:1.8, pad:90 },
+      { bbox:[110, 740, 560, 140], at:10.30, d:1.5, pad:130 },
+      { bbox:[110, 868, 560, 140], at:94.07, d:1.5, pad:130 },
+      { bbox:[110, 996, 560, 80], at:168.95, d:1.3, pad:150 }
+    ],
+    subs: [ ['#sub-1',0.000], ['#sub-2',3.192], ['#sub-3',10.296], ['#sub-4',18.017], ['#sub-5',19.296], ['#sub-6',32.688], ['#sub-7',39.888], ['#sub-8',48.888], ['#sub-9',55.320], ['#sub-10',62.532], ['#sub-11',73.260], ['#sub-12',85.464], ['#sub-13',94.068], ['#sub-14',97.134], ['#sub-15',106.992], ['#sub-16',113.118], ['#sub-17',118.476], ['#sub-18',121.846], ['#sub-19',128.233], ['#sub-20',131.580], ['#sub-21',139.212], ['#sub-22',152.064], ['#sub-23',167.154], ['#sub-24',168.948], ['#sub-25',173.078], ['#sub-26',178.510], ['#sub-27',187.281], ['#sub-28',188.064] ],
+    custom: function(t, r){ WB.breath(t, r, 194.2, 3.8, 'in'); }
+  });
+  WB.register('wb04', tl);
+})();
+</script>
+</body>
+</html>

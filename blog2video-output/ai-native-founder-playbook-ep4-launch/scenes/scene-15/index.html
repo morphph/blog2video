@@ -164,58 +164,71 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
 .endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
 .endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
 .endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
-/* —— scene-13 特有 —— */
-[data-composition-id='s13'] .okc{color:#ccff4d;font-weight:700}
-[data-composition-id='s13'] .taglist{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-[data-composition-id='s13'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:4px 13px}
-[data-composition-id='s13'] .st-end{margin-top:24px}
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .rows{margin-top:20px}
+[data-composition-id='s15'] .row .rt .em{color:#ccff4d}
+[data-composition-id='s15'] .shiftbox{margin-top:24px;width:100%}
+[data-composition-id='s15'] .sh-l1{font-weight:500;font-size:31px;line-height:1.42;color:#8a8a85}
+[data-composition-id='s15'] .sh-l1 b{color:#edebe6;font-weight:700}
+[data-composition-id='s15'] .sh-l2{margin-top:16px;font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+[data-composition-id='s15'] .sh-l2 .hl .tx{font-size:56px}
+[data-composition-id='s15'] .sh-l3{margin-top:18px;font-weight:700;font-size:40px;line-height:1.3;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s15'] .sh-l3 .ar{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 18px}
+[data-composition-id='s15'] .runline{margin-top:22px}
+[data-composition-id='s15'] .next{margin-top:24px;width:100%;background:#1c1c1e;border:1px solid rgba(95,211,232,.45);padding:26px 30px}
+[data-composition-id='s15'] .next .nx-lab{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;color:#5fd3e8;letter-spacing:.06em}
+[data-composition-id='s15'] .next .nx-t{margin-top:14px;font-weight:900;font-size:46px;line-height:1.2;color:#edebe6;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s15'] .next .nx-t .en{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#5fd3e8;margin-left:18px}
+[data-composition-id='s15'] .next .nx-d{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+[data-composition-id='s15'] .next .nx-d .cy{color:#5fd3e8}
+[data-composition-id='s15'] .slogan{margin-top:26px;font-weight:700;font-size:40px;line-height:1.4;color:#edebe6}
+[data-composition-id='s15'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s15'] .signoff{margin-top:22px}
 </style>
 </head>
 <body>
-  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="56.5" data-width="1080" data-height="1920">
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="52.033" data-width="1080" data-height="1920">
     <div class="grid"></div>
     <div class="topbar">
       <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
-      <div class="idx">[13/15]</div>
+      <div class="idx">[15/15]</div>
     </div>
 
-    <div class="content tight">
-      <div class="kicker">// 技术债 + 安全 · <span class="acc">同一个打法</span></div>
-      <div class="h1" style="margin-top:16px;font-size:64px">Code 审计，Claude 排期<br>决策<span class="em">落盘</span></div>
+    <div class="content top">
+      <div class="kicker">// EP4 · LAUNCH<span class="acc"> 全集收束</span></div>
 
-      <div class="rows" style="margin-top:36px">
-        <div class="row r1"><div class="n">01</div><div class="rb">
-          <div class="rt"><span class="code">Claude Code</span> 全量架构审计</div>
-          <div class="rd">发现喂给 Claude 排期</div>
-        </div></div>
-
-        <div class="row r2"><div class="n">02</div><div class="rb">
-          <div class="rt"><span class="c1">必须修</span><span class="c2"> · 可以等</span><span class="c3"> · <span class="okc">可接受的存量债</span></span></div>
-        </div></div>
-
-        <div class="row r3"><div class="n">03</div><div class="rb">
-          <div class="rt">脑子里的架构决策，写进 <span class="code">CLAUDE.md</span></div>
-          <div class="rd">每次开工，从共同的理解出发</div>
-        </div></div>
-
-        <div class="row r4"><div class="n">04</div><div class="rb">
-          <div class="rt">安全同理：代码级扫描 → 排修复顺序</div>
-          <div class="taglist"><span class="tg">SOC 2</span><span class="tg">GDPR</span></div>
-          <div class="rd">签单前必查：<span class="ok">访问控制 + 审计日志</span></div>
-        </div></div>
+      <div class="rows">
+        <div class="row r1"><span class="n">01</span><div class="rb"><div class="rt">找到 PMF —— <span class="em">产品问题</span></div></div></div>
+        <div class="row r2"><span class="n">02</span><div class="rb"><div class="rt">守住 PMF —— <span class="em">组织问题</span></div></div></div>
       </div>
 
-      <div class="h2 punch" style="margin-top:32px">十人独角兽的机制，<span class="hl"><span class="bar"></span><span class="tx">才真正兑现</span></span></div>
-      <div class="status st-end"><span class="dot"></span>FLYWHEEL RUNNING</div>
+      <div class="bracket shiftbox">
+        <div class="sh-l1">赢下前三关的本能 · 事事亲手 · 事事在场 = 第四关的<b>头号失败模式</b></div>
+        <div class="sh-l2">这次换挡,<span class="hl"><span class="bar"></span><span class="tx">没有铃声</span></span></div>
+        <div class="sh-l3">做事的人<span class="ar">→</span>设计系统的人<span class="cur sm cblink"></span></div>
+      </div>
+
+      <div class="status runline"><span class="dot"></span>一台能自己运转的公司</div>
+
+      <div class="next">
+        <div class="nx-lab">NEXT_EP · [5/5] · 系列完结篇</div>
+        <div class="nx-t">规模化阶段<span class="en">SCALE STAGE</span></div>
+        <div class="nx-d">几千 <span class="cy">→</span> 上百万用户 · 一个赌注 <span class="cy">→</span> 一门生意</div>
+      </div>
+
+      <div class="slogan">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
     </div>
 
-    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="2.373" data-track-index="5"><div class="sub-inner">技术债这边，是<span class="sub-k">同一个打法</span>。</div></div>
-    <div id="sub-2" class="clip sub" data-start="2.399" data-duration="12.821" data-track-index="5"><div class="sub-inner">Claude Code 做<span class="sub-k">全量架构审计</span>，把发现喂给 Claude 排期：哪些下个版本前必须修，哪些可以等一等，哪些是现阶段可以接受的存量债。</div></div>
-    <div id="sub-3" class="clip sub" data-start="15.388" data-duration="9.735" data-track-index="5"><div class="sub-inner">顺手把 MVP 期只活在你脑子里的那些架构决策，<span class="sub-k">落盘进 CLAUDE.md</span>，让以后每次开工，都从共同的理解出发。</div></div>
-    <div id="sub-4" class="clip sub" data-start="25.288" data-duration="15.633" data-track-index="5"><div class="sub-inner">安全也一样：Claude Code 做面向 SOC 2、GDPR 这类合规框架的<span class="sub-k">代码级扫描</span>，再让 Claude 排出修复顺序，设计企业客户签单前一定会查的访问控制和审计日志。</div></div>
-    <div id="sub-5" class="clip sub" data-start="41.092" data-duration="5.015" data-track-index="5"><div class="sub-inner">还记得第一集立的那个 flag 吗，<span class="sub-k">精益的十人独角兽</span>？</div></div>
-    <div id="sub-6" class="clip sub" data-start="46.117" data-duration="2.781" data-track-index="5"><div class="sub-inner">它的机制，到这一集<span class="sub-k">才真正兑现</span>。</div></div>
-    <div id="sub-7" class="clip sub" data-start="48.908" data-duration="7.434" data-track-index="5"><div class="sub-inner">小团队能运转得像一家大得多的公司，不是省钱技巧，是被这个<span class="sub-k">飞轮</span>，在结构上撑起来的。</div></div>
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="8.586" data-track-index="5"><div class="sub-inner">把这一整程，收拢成一句话：找到 PMF，是产品问题；守住 PMF，是<span class="sub-k">组织问题</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.737" data-duration="7.881" data-track-index="5"><div class="sub-inner">让你赢下前三关的那套本能——事事亲手、事事在场——正是第四关的<span class="sub-k">头号失败模式</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.628" data-duration="2.274" data-track-index="5"><div class="sub-inner">而这次换挡，<span class="sub-k">没有铃声</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.112" data-duration="7.007" data-track-index="5"><div class="sub-inner">你要么主动从做事的人，变成<span class="sub-k">设计系统的人</span>；要么，看着公司在你周围熄火。</div></div>
+    <div id="sub-5" class="clip sub" data-start="26.269" data-duration="6.926" data-track-index="5"><div class="sub-inner">走到 Launch 阶段的尽头，你手里的，已经不只是一个产品，而是一台<span class="sub-k">能自己运转的公司</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.361" data-duration="6.356" data-track-index="5"><div class="sub-inner">下一集，是这个系列的最后一集——Scale Stage，<span class="sub-k">规模化阶段</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="39.727" data-duration="5.982" data-track-index="5"><div class="sub-inner">从几千个用户，走到上百万个用户；从一个赌注，变成<span class="sub-k">一门真正的生意</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="45.889" data-duration="3.803" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="49.702" data-duration="1.325" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
   </div>
 
   <script>
@@ -351,35 +364,27 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-fam
   </script>
   <script>
   (function(){
-    var R="[data-composition-id='s13'] ";
+    var R="[data-composition-id='s15'] ";
     var tl=gsap.timeline({paused:true});
     tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
     tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
-    // sub-1: 同一个打法
     D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
-    D2.enter(tl, R+'.h1', .72, {y:20, d:.4, ease:'expo.out'});
-    // sub-2: 审计 → 排期三档逐词点亮
-    D2.enter(tl, R+'.r1', 2.6, {x:-24, ease:'power3.out'});
-    D2.enter(tl, R+'.r1 .rd', 5.6, {y:12, d:.3, ease:'power2.out'});
-    D2.enter(tl, R+'.r2', 8.15, {x:-24, ease:'expo.out'});
-    D2.enter(tl, R+'.c2', 10.9, {y:10, d:.28, ease:'power2.out'});
-    D2.enter(tl, R+'.c3', 12.7, {y:10, d:.28, ease:'power2.out'});
-    // sub-3: 落盘 CLAUDE.md
-    D2.enter(tl, R+'.r3', 15.6, {x:-24, ease:'power3.out'});
-    D2.enter(tl, R+'.r3 .rd', 21.3, {y:12, d:.3, ease:'power2.out'});
-    // sub-4: 安全同理,SOC 2 / GDPR 电青标签晚到
-    D2.enter(tl, R+'.r4', 25.6, {x:-24, ease:'expo.out'});
-    D2.stagger(tl, R+'.r4 .taglist .tg', 28.9, {y:10, step:.14, d:.28, ease:'power2.out'});
-    D2.enter(tl, R+'.r4 .rd', 36.6, {y:12, d:.3, ease:'power2.out'});
-    // sub-5/6: 十人独角兽点睛 + 酸性扫过
-    D2.enter(tl, R+'.punch', 41.4, {y:18, d:.35, ease:'power3.out'});
-    D2.sweep(tl, R, '.punch .hl', 46.35);
-    // sub-7: 飞轮状态灯
-    D2.enter(tl, R+'.st-end', 49.3, {y:14, d:.32, ease:'power2.out'});
-    D2.subs(tl, [['#sub-1',0.016],['#sub-2',2.399],['#sub-3',15.388],['#sub-4',25.288],['#sub-5',41.092],['#sub-6',46.117],['#sub-7',48.908]].map(function(s){return [R+s[0],s[1]];}));
-    D2.breath(tl, R+'.content', 56.5, 'in');
+    D2.enter(tl, R+'.r1', 1.6, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 4.8, {x:-16, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.shiftbox', 8.9, {y:24, d:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.sh-l2', 16.7, {y:16, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.sh-l2 .hl', 17.3);
+    D2.enter(tl, R+'.sh-l3', 19.2, {x:-16, d:.32, ease:'power2.out'});
+    D2.blink(tl, R+'.cblink', 20.2, 7);
+    D2.enter(tl, R+'.runline', 26.4, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.next', 33.5, {y:24, d:.45, ease:'expo.out'});
+    D2.enter(tl, R+'.next .nx-d', 39.8, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.slogan', 46.0, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 49.8, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',8.737],['#sub-3',16.628],['#sub-4',19.112],['#sub-5',26.269],['#sub-6',33.361],['#sub-7',39.727],['#sub-8',45.889],['#sub-9',49.702]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 52.033, 'in');
     window.__timelines = window.__timelines || {};
-    window.__timelines['s13'] = tl;
+    window.__timelines['s15'] = tl;
   })();
   </script>
 </body>

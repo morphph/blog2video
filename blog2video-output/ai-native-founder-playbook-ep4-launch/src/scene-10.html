@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .b-l1{font-weight:600;font-size:36px;line-height:1.4;color:#edebe6}
+[data-composition-id='s10'] .b-l1 b{color:#ccff4d;font-weight:700}
+[data-composition-id='s10'] .b-l2{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:29px;color:#8a8a85}
+[data-composition-id='s10'] .b-l2 .pmf{color:#ff6b5e;font-weight:700}
+[data-composition-id='s10'] .b-l3{margin-top:14px;font-weight:600;font-size:32px;line-height:1.4;color:#edebe6}
+[data-composition-id='s10'] .b-l3 .own{color:#ccff4d}
+[data-composition-id='s10'] .chain-k{margin-top:26px}
+[data-composition-id='s10'] .chain{margin-top:14px;gap:12px}
+[data-composition-id='s10'] .chain .row{padding:20px 28px}
+[data-composition-id='s10'] .punch{margin-top:22px;font-weight:900;font-size:46px;line-height:1.35;color:#edebe6}
+[data-composition-id='s10'] .punch .strike{color:#8a8a85;text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:rgba(138,138,133,.75)}
+[data-composition-id='s10'] .fin-note{margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s10'] .endchip{margin-top:12px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="51.367" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[10/15]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker k-top">// BILL_04 · <span class="acc">最反直觉的一张</span></div>
+      <div class="h2" style="margin-top:16px">长得像<span class="em">机会</span>的账单：<br>过早扩张</div>
+
+      <div class="bracket" style="margin-top:24px">
+        <div class="b-l1">新市场 · 新融资，看起来全是<b>增长</b></div>
+        <div class="b-l2">→ 也可能是 <span class="pmf">PMF 的死地</span></div>
+        <div class="b-l3">早期势头是真的——但它只属于<span class="own">最早那批用户</span></div>
+      </div>
+
+      <div class="kicker chain-k">// 过早扩张后，三步走向失明</div>
+      <div class="rows chain">
+        <div class="row c1"><div class="n">01</div><div class="rb"><div class="rt">新变量一起涌进来</div><div class="rd">新行为 · 新合规 · 新支付 · 新期待</div></div></div>
+        <div class="row warn c2"><div class="n">02</div><div class="rb"><div class="rt">读不懂自己的数据了</div></div></div>
+        <div class="row warn c3"><div class="n">03</div><div class="rb"><div class="rt">最早赢下的用户被冷落</div></div></div>
+      </div>
+
+      <div class="punch">杀死你的不是<span class="strike">分心</span>，是<span class="hl"><span class="bar"></span><span class="tx">失明</span></span></div>
+
+      <div class="fin-note">扩张无罪 · 是时机和准备的问题</div>
+      <div class="endchip"><div class="dot"></div><div class="lab">先守住已经赢的，再去赢新的</div></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.009" data-duration="4.672" data-track-index="5"><div class="sub-inner">第四张账单，最反直觉，因为它长得像<span class="sub-k">机会</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.833" data-duration="3.973" data-track-index="5"><div class="sub-inner">新市场、新的融资机会，看起来全是<span class="sub-k">增长</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.806" data-duration="3.555" data-track-index="5"><div class="sub-inner">但它们，也可能是 <span class="sub-k">PMF 的死地</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.501" data-duration="6.271" data-track-index="5"><div class="sub-inner">你的早期势头是真的，但它也是特定的——它只属于你<span class="sub-k">最早的那批用户</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.772" data-duration="9.407" data-track-index="5"><div class="sub-inner">过早扩进一个差别很大的新市场，新的用户行为、新的合规要求、新的支付方式、新的期待，会<span class="sub-k">一起涌进来</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.341" data-duration="7.319" data-track-index="5"><div class="sub-inner">变量一多，你就失去了<span class="sub-k">解读自己数据的能力</span>：看着数字在动，却说不清为什么。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.829" data-duration="4.575" data-track-index="5"><div class="sub-inner">与此同时，你最早赢下的那批用户，正在被<span class="sub-k">冷落</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="40.404" data-duration="3.119" data-track-index="5"><div class="sub-inner">所以杀死你的不是分心，是<span class="sub-k">失明</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="43.523" data-duration="4.575" data-track-index="5"><div class="sub-inner">这也不是说扩张有罪——它是<span class="sub-k">时机和准备</span>的问题。</div></div>
+    <div id="sub-10" class="clip sub" data-start="48.098" data-duration="3.119" data-track-index="5"><div class="sub-inner"><span class="sub-k">先守住你已经赢的</span>，再去赢新的。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 4.9, {y:20, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.b-l2', 8.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.b-l3', 12.6, {y:14, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.chain-k', 18.8, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c1', 19.3, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.c1 .rd', 21.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 28.5, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.c3', 35.9, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 40.5, {y:16, d:.34, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 41.3);
+    D2.enter(tl, R+'.fin-note', 43.7, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.endchip', 48.2, {y:14, d:.32, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.009],['#sub-2',4.833],['#sub-3',8.806],['#sub-4',12.501],['#sub-5',18.772],['#sub-6',28.341],['#sub-7',35.829],['#sub-8',40.404],['#sub-9',43.523],['#sub-10',48.098]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 51.367, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

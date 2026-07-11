@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .h1{margin-top:18px}
+[data-composition-id='s11'] .h1 .fw{color:#edebe6}
+[data-composition-id='s11'] .tools{display:flex;align-items:stretch;gap:12px;width:100%;margin-top:34px}
+[data-composition-id='s11'] .tool{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 18px;min-width:0}
+[data-composition-id='s11'] .tool .ti{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:21px;color:#ccff4d;letter-spacing:.05em}
+[data-composition-id='s11'] .tool .tn{margin-top:12px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:27px;color:#edebe6;letter-spacing:-.01em;white-space:nowrap}
+[data-composition-id='s11'] .tool .tr{margin-top:8px;font-weight:600;font-size:34px;color:#edebe6}
+[data-composition-id='s11'] .link{align-self:center;flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:#5fd3e8}
+[data-composition-id='s11'] .loopback{width:100%;margin-top:12px;height:46px;border-left:2px solid rgba(95,211,232,.5);border-right:2px solid rgba(95,211,232,.5);border-bottom:2px solid rgba(95,211,232,.5);display:flex;justify-content:center;align-items:flex-end}
+[data-composition-id='s11'] .loopback .ll{font-family:'JetBrains Mono',monospace;font-size:23px;color:#5fd3e8;background:#121212;padding:0 18px;transform:translateY(50%)}
+[data-composition-id='s11'] .was{margin-top:28px;font-weight:600;font-size:30px;color:#8a8a85}
+[data-composition-id='s11'] .was .strike{position:relative;display:inline-block}
+[data-composition-id='s11'] .was .strike .wl{position:absolute;left:0;right:0;top:54%;height:3px;background:#8a8a85;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s11'] .nowp{margin-top:28px;width:100%}
+[data-composition-id='s11'] .now-l{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;color:#ccff4d;letter-spacing:.04em}
+[data-composition-id='s11'] .now-b{margin-top:16px;font-weight:600;font-size:42px;line-height:1.35;color:#edebe6}
+[data-composition-id='s11'] .now-b .em{color:#ccff4d}
+[data-composition-id='s11'] .now-c{margin-top:18px;display:flex;align-items:center}
+[data-composition-id='s11'] .now-c .tx{font-size:44px}
+[data-composition-id='s11'] .now-c .tg{font-size:24px;margin-left:16px;vertical-align:0;align-self:center}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="27.867" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[11/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 账单看完了 · <span class="acc">怎么清？</span></div>
+      <div class="h1">AI 用法的<span class="em">质变</span>：<br>三个工具拧成一个<span class="fw">飞轮</span></div>
+
+      <div class="tools">
+        <div class="tool t1"><div class="ti">01</div><div class="tn">Claude Code</div><div class="tr">建产品</div></div>
+        <div class="link lk1">→</div>
+        <div class="tool t2"><div class="ti">02</div><div class="tn">Claude Cowork</div><div class="tr">跑运营</div></div>
+        <div class="link lk2">→</div>
+        <div class="tool t3"><div class="ti">03</div><div class="tn">Claude</div><div class="tr">做研究</div></div>
+      </div>
+      <div class="loopback"><span class="ll">产出 → 输入 · 循环回流</span></div>
+
+      <div class="was">前三集：<span class="strike">三个独立的省力装置，各管一段<span class="wl"></span></span></div>
+
+      <div class="bracket nowp">
+        <div class="now-l">LAUNCH · 第一次拧成飞轮</div>
+        <div class="now-b">每个工具的<span class="em">产出</span> = 另外两个的<span class="em">输入</span></div>
+        <div class="now-c"><span class="hl"><span class="bar"></span><span class="tx">复利叠加</span></span><span class="tag tg">1+1+1 &gt; 3</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.015" data-duration="3.851" data-track-index="5"><div class="sub-inner">账单看完了，接下来说说，这些账<span class="sub-k">怎么清</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.866" data-duration="3.851" data-track-index="5"><div class="sub-inner">这一集里，AI 的用法出现了一个<span class="sub-k">质变</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.863" data-duration="10.86" data-track-index="5"><div class="sub-inner">前三集里，Claude Code、Claude Cowork 和 Claude <span class="sub-k">各管一段</span>：一个建产品，一个跑运营，一个做研究，像三个独立的省力装置。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.879" data-duration="8.851" data-track-index="5"><div class="sub-inner">到了 Launch 阶段，它们第一次拧成一个<span class="sub-k">飞轮</span>——每个工具的产出，都是另外两个的输入，效果会复利叠加。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 4.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.t1', 8.8, {x:-22, y:0, ease:'power3.out'});
+    D2.enter(tl, R+'.t2', 9.9, {x:-22, y:0, ease:'expo.out'});
+    D2.enter(tl, R+'.t3', 11.0, {x:-22, y:0, ease:'power2.out'});
+    D2.enter(tl, R+'.was', 15.3, {y:14, d:.3, ease:'power2.out'});
+    /* —— 质变时刻(sub-4)—— */
+    tl.to(R+'.wl',{scaleX:1,duration:.3,ease:'power4.inOut'},18.95);
+    tl.to(R+'.was .strike',{color:'#5c5c58',duration:.3,ease:'power1.inOut'},18.95);
+    tl.to(R+'.h1 .fw',{color:'#ccff4d',duration:.25,ease:'power1.inOut'},19.15);
+    D2.enter(tl, R+'.nowp', 19.1, {y:20, d:.38, ease:'power3.out'});
+    D2.stagger(tl, R+'.link', 19.8, {x:-10, y:0, d:.26, ease:'power2.out', step:.18});
+    D2.enter(tl, R+'.loopback', 20.4, {y:-10, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.now-b', 21.6, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.now-c', 25.3, {y:12, d:.3, ease:'power3.out'});
+    D2.sweep(tl, R, '.hl', 25.55);
+    D2.enter(tl, R+'.tg', 26.3, {y:8, d:.28, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.015],['#sub-2',3.866],['#sub-3',7.863],['#sub-4',18.879]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 27.867, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

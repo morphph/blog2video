@@ -1,2 +1,40 @@
 === d2 render: ai-native-founder-playbook-ep4-launch · 16 场景 · node=v22.22.0 ===
 === d2 render: ai-native-founder-playbook-ep4-launch · 16 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 38.300  data= 38.300  Δ=+0.000
+  scene-02  clip= 25.633  data= 25.633  Δ=+0.000
+  scene-03  clip= 46.100  data= 46.067  Δ=+0.033
+  scene-04  clip= 31.600  data= 31.567  Δ=+0.033
+  scene-05  clip= 36.900  data= 36.900  Δ=+0.000
+  scene-06  clip= 65.033  data= 65.033  Δ=+0.000
+  scene-07  clip=  7.600  data=  7.567  Δ=+0.033
+  scene-08  clip= 21.833  data= 21.833  Δ=+0.000
+  scene-09  clip= 41.800  data= 41.767  Δ=+0.033
+  scene-10  clip= 51.400  data= 51.367  Δ=+0.033
+  scene-11  clip= 27.900  data= 27.867  Δ=+0.033
+  scene-12  clip= 26.600  data= 26.600  Δ=+0.000
+  scene-13  clip= 56.500  data= 56.500  Δ=+0.000
+  scene-14  clip= 41.300  data= 41.267  Δ=+0.033
+  scene-15  clip= 52.033  data= 52.033  Δ=+0.000
+  scene-16  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 575.533s
+=== concat → silent master ===
+[out#0/mp4 @ 0x7bac283c0] video:40394KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.171530%
+frame=17266 fps=0.0 q=-1.0 Lsize=   40463KiB time=00:09:35.53 bitrate= 575.9kbits/s speed=5.54e+03x elapsed=0:00:00.10    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=17266 fps=2012 q=-1.0 Lsize=   50157KiB time=00:09:29.44 bitrate= 721.6kbits/s speed=66.4x elapsed=0:00:08.58    
+[aac @ 0xb6d041500] Qavg: 65516.523
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=575.533333
+audio_dur=569.448000
+-rw-r--r--@ 1 yufanp  staff  51361081 11 Jul 11:52 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/video_1_cover_photo.png
+  源: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep4-launch/cover_photo.html

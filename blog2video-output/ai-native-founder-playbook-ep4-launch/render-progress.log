@@ -3,3 +3,16 @@ skip   scene-01 (exists)
 skip   scene-02 (exists)
 skip   scene-03 (exists)
 skip   scene-04 (exists)
+render scene-05 rc=0  clip_dur=36.900000  took=103s  11:33:29
+render scene-06 rc=0  clip_dur=65.033333  took=137s  11:35:46
+render scene-07 rc=0  clip_dur=7.600000  took=66s  11:36:52
+render scene-08 rc=0  clip_dur=21.833333  took=84s  11:38:16
+render scene-09 rc=0  clip_dur=41.800000  took=108s  11:40:04
+render scene-10 rc=0  clip_dur=51.400000  took=121s  11:42:05
+render scene-11 rc=0  clip_dur=27.900000  took=93s  11:43:38
+render scene-12 rc=0  clip_dur=26.600000  took=90s  11:45:08
+render scene-13 rc=0  clip_dur=56.500000  took=126s  11:47:14
+render scene-14 rc=0  clip_dur=41.300000  took=106s  11:49:00
+render scene-15 rc=0  clip_dur=52.033333  took=122s  11:51:02
+render scene-16 rc=0  clip_dur=5.000000  took=65s  11:52:07
+DONE   11:52:07

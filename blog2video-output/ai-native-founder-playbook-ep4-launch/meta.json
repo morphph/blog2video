@@ -1,0 +1,15 @@
+{
+  "topic": "AI 原生创业手册（Anthropic 官方 Founder's Playbook）",
+  "blog_url": "The Founder's Playbook: Building an AI-Native Startup — Anthropic (2026)",
+  "source": "ai-native-founder-playbook-ep4-launch",
+  "flow_source": "manual-curate",
+  "videos": [
+    {
+      "video_number": 1,
+      "file": "video_1.mp4",
+      "cover": "video_1_cover_photo.png",
+      "script": "video_1_script.md",
+      "subtitle": "video_1_audio.vtt"
+    }
+  ]
+}

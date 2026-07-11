@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .toolline{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.01em}
+[data-composition-id='s12'] .toolline .p{color:#ccff4d;font-weight:700;margin-right:8px}
+[data-composition-id='s12'] .toolline .cw{color:#5fd3e8;font-weight:700}
+[data-composition-id='s12'] .inv{margin-top:20px;display:flex;flex-direction:column;gap:12px}
+[data-composition-id='s12'] .iv{font-weight:500;font-size:31px;line-height:1.4;color:#edebe6}
+[data-composition-id='s12'] .iv .m{font-family:'JetBrains Mono',monospace;color:#5fd3e8;margin-right:16px}
+[data-composition-id='s12'] .iv .cy{color:#5fd3e8;font-weight:600}
+[data-composition-id='s12'] .k2{margin-top:32px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s12'] .k2 .acc2{color:#ccff4d}
+[data-composition-id='s12'] .rt .fm{color:#ccff4d}
+[data-composition-id='s12'] .foot{margin-top:26px;width:100%;font-weight:600;font-size:31px;line-height:1.5;color:#edebe6}
+[data-composition-id='s12'] .foot .f-em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="26.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[12/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 最重要的例子 · <span class="acc">ATTENTION AUDIT</span></div>
+      <div class="h1" style="margin-top:14px">注意力<span class="em">审计</span></div>
+
+      <div class="toolline"><span class="p">$</span><span class="cw">Claude Cowork</span> — 盘点全部运营负载</div>
+      <div class="inv">
+        <div class="iv"><span class="m">›</span>每个重复任务</div>
+        <div class="iv"><span class="m">›</span>每个落到你桌上的决定</div>
+        <div class="iv"><span class="m">›</span>每个<span class="cy">只因你记得</span>才发生的流程</div>
+      </div>
+
+      <div class="k2">// 分成<span class="acc2">三类</span></div>
+      <div class="rows" style="margin-top:14px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">能完全自动化的<span class="tag tk1">系统接管</span></div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">需要人，但不必是你<span class="tag tk2">系统接管</span></div>
+        </div></div>
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">真正需要<span class="fm">创始人判断</span>的</div>
+        </div></div>
+      </div>
+
+      <div class="foot bracket">设计好<span class="code">触发条件</span> + <span class="code">决策规则</span>，前两类 <span class="f-em">直接接管</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="2.531" data-track-index="5"><div class="sub-inner">举最重要的例子，<span class="sub-k">注意力审计</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.543" data-duration="10.848" data-track-index="5"><div class="sub-inner">用 <span class="sub-k">Claude Cowork</span> 把你的运营负载盘一遍：每个重复任务，每个落到你桌上的决定，每个只因为你记得才发生的流程。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.548" data-duration="7.7" data-track-index="5"><div class="sub-inner">然后分成<span class="sub-k">三类</span>：能完全自动化的；需要人、但不必是你的；真正需要创始人判断的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.248" data-duration="5.203" data-track-index="5"><div class="sub-inner">前两类，让它把触发条件和决策规则设计好，<span class="sub-k">直接接管</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .62, {y:18, d:.36, ease:'expo.out'});
+    // sub-2: Claude Cowork 盘点 + 三条负载逐条
+    D2.enter(tl, R+'.toolline', 2.6, {x:-22, ease:'power3.out'});
+    D2.stagger(tl, R+'.iv', 6.0, {y:12, d:.3, ease:'power2.out', step:2.2});
+    // sub-3: 三分类逐条 build
+    D2.enter(tl, R+'.k2', 13.6, {y:-10, ease:'power2.out'});
+    D2.stagger(tl, R+'.row', 15.0, {x:-22, d:.32, ease:'power3.out', step:1.9});
+    // sub-4: 前两类打上「系统接管」+ 落点
+    D2.enter(tl, R+'.tk1', 21.45, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tk2', 21.8, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.foot', 22.8, {y:16, d:.34, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',2.543],['#sub-3',13.548],['#sub-4',21.248]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 26.6, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .crl{color:#ff6b5e;font-weight:700}
+[data-composition-id='s04'] .m2{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s04'] .m2 .ar{color:#ccff4d;margin:0 10px}
+[data-composition-id='s04'] .m2 .lag{color:#ff6b5e;font-weight:700}
+[data-composition-id='s04'] .bh{margin-top:34px}
+[data-composition-id='s04'] .bills{display:flex;gap:16px;width:100%;margin-top:18px}
+[data-composition-id='s04'] .bill{flex:1;position:relative;background:#1c1c1e;border:1px solid rgba(255,107,94,.38);padding:22px 12px 20px;text-align:center}
+[data-composition-id='s04'] .bill .bt{font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#8a8a85;letter-spacing:.08em}
+[data-composition-id='s04'] .bill .bn{margin-top:10px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:48px;color:#ff6b5e;line-height:1}
+[data-composition-id='s04'] .bill .due{position:absolute;top:-13px;right:-7px;font-family:'JetBrains Mono',monospace;font-size:19px;font-weight:700;color:#121212;background:#ff6b5e;padding:2px 10px;letter-spacing:.05em}
+[data-composition-id='s04'] .nofoe{margin-top:26px}
+[data-composition-id='s04'] .punch{margin-top:30px;font-weight:900;font-size:44px;line-height:1.35;color:#edebe6}
+[data-composition-id='s04'] .punch .ar{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 8px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="31.567" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[04/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 找到 PMF · <span class="acc">前半程最难的事</span></div>
+      <div class="h1" style="margin-top:14px">从这一刻起，<br>问题变成：<span class="em">守住它</span></div>
+
+      <div class="bracket" style="margin-top:30px">
+        <div class="lead"><span class="dim">真实用户 · 真实势头</span> —— <span class="crl">照样会散架</span></div>
+        <div class="m2">产品在跑<span class="ar">→</span>组织<span class="lag">跟不上</span></div>
+      </div>
+
+      <div class="kicker bh">// 4 FAILURE MODES · <span class="acc">四张账单</span></div>
+      <div class="bills">
+        <div class="bill"><div class="bt">BILL</div><div class="bn">01</div><div class="due">DUE</div></div>
+        <div class="bill"><div class="bt">BILL</div><div class="bn">02</div><div class="due">DUE</div></div>
+        <div class="bill"><div class="bt">BILL</div><div class="bn">03</div><div class="due">DUE</div></div>
+        <div class="bill"><div class="bt">BILL</div><div class="bn">04</div><div class="due">DUE</div></div>
+      </div>
+      <div class="status alert nofoe"><div class="dot"></div>来自竞争对手 × 0</div>
+
+      <div class="punch">上一阶段的「正确决策」<span class="ar">→</span><span class="crl">到期账单</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="6.512" data-track-index="5"><div class="sub-inner">找到 <span class="sub-k">PMF</span>——产品和市场对上了——是创业前半程最难的事。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.528" data-duration="4.267" data-track-index="5"><div class="sub-inner">但从这一刻起，你的问题变成了：<span class="sub-k">守住它</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.96" data-duration="7.51" data-track-index="5"><div class="sub-inner">有真实用户、真实势头的公司，<span class="sub-k">照样会散架</span>——只要产品周围的那个组织，跟不上产品。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.47" data-duration="7.704" data-track-index="5"><div class="sub-inner">这个阶段有四个典型的失败模式，它们有一个共同点，特别扎心：<span class="sub-k">没有一个来自竞争对手</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="26.332" data-duration="5.055" data-track-index="5"><div class="sub-inner">每一个，都是你上一阶段"正确决策"<span class="sub-k">到期的账单</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 6.7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.bracket', 11.15, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.m2', 15.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.bh', 18.7, {y:-10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.bill', 19.3, {y:16, d:.32, step:.5, ease:'power3.out'});
+    D2.enter(tl, R+'.nofoe', 23.8, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 26.5, {y:16, d:.38, ease:'expo.out'});
+    tl.from(R+'.due', {scale:.62, opacity:0, duration:.28, ease:'power4.out', stagger:.12}, 29.5);
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',6.528],['#sub-3',10.96],['#sub-4',18.47],['#sub-5',26.332]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 31.567, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

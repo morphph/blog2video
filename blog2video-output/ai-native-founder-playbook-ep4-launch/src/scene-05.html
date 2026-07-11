@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有 —— */
+[data-composition-id='s05'] .co{color:#ff6b5e}
+[data-composition-id='s05'] .trade{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85}
+[data-composition-id='s05'] .trade .sep{color:#ccff4d;margin:0 10px}
+[data-composition-id='s05'] .bx{margin-top:24px;width:100%;padding:26px 30px}
+[data-composition-id='s05'] .bx-h{display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:#ff6b5e;letter-spacing:.04em}
+[data-composition-id='s05'] .bx-h .dt{width:12px;height:12px;border-radius:50%;background:#ff6b5e}
+[data-composition-id='s05'] .bx-tags{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+[data-composition-id='s05'] .xt{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;border:1px solid #2a2a2c;background:#121212;padding:6px 16px}
+[data-composition-id='s05'] .bx-line{margin-top:16px;font-weight:600;font-size:32px;color:#edebe6;line-height:1.4}
+[data-composition-id='s05'] .bx-line .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 8px}
+[data-composition-id='s05'] .bx-warn{margin-top:12px;font-weight:700;font-size:34px;color:#ff6b5e}
+[data-composition-id='s05'] .k-pay{margin-top:26px}
+[data-composition-id='s05'] .steps{margin-top:14px}
+[data-composition-id='s05'] .steps .row{padding:20px 28px}
+[data-composition-id='s05'] .steps .rt{font-size:38px}
+[data-composition-id='s05'] .steps .rd{font-size:26px;margin-top:6px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="36.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[05/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 第一张账单 · <span class="acc">技术债</span></div>
+      <div class="h2" style="margin-top:14px">MVP 用债换速度，<br>Launch 开始<span class="co">计息</span></div>
+
+      <div class="trade">代码跑通<span class="sep">›</span>产品验证<span class="sep">›</span>目的达到</div>
+
+      <div class="bracket bx">
+        <div class="bx-h"><span class="dt"></span>INTEREST ACCRUING · 开始计息</div>
+        <div class="bx-tags"><span class="xt x1">生产流量</span><span class="xt x2">新功能</span><span class="xt x3">系统越来越复杂</span></div>
+        <div class="bx-line">当年抄的每条近路<span class="ar">→</span>一条条暴露</div>
+        <div class="bx-warn">拖得越久 = 修得越贵</div>
+      </div>
+
+      <div class="kicker k-pay">// 清偿的路子 · <span class="acc">三步</span></div>
+      <div class="rows steps">
+        <div class="row s1"><div class="n">01</div><div class="rb">
+          <div class="rt">架构审计</div>
+          <div class="rd">系统性排查 · 找出结构性弱点</div>
+        </div></div>
+        <div class="row s2"><div class="n">02</div><div class="rb">
+          <div class="rt">靶向重构</div>
+          <div class="rd">只修最糟糕的几处</div>
+        </div></div>
+        <div class="row s3"><div class="n">03</div><div class="rb">
+          <div class="rt">补测试覆盖</div>
+          <div class="rd rd3">下一轮功能开发 · 别把老问题带回来</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.865" data-track-index="5"><div class="sub-inner">MVP 阶段<span class="sub-k">用债换速度</span>，当时是笔合理的交易。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.85" data-duration="3.513" data-track-index="5"><div class="sub-inner">代码跑起来了，<span class="sub-k">产品验证</span>过了，目的达到了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.363" data-duration="3.865" data-track-index="5"><div class="sub-inner">但进了 Launch 阶段，这笔债<span class="sub-k">开始计息</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.397" data-duration="8.04" data-track-index="5"><div class="sub-inner">生产流量、新功能、越来越复杂的系统，会把当年抄的每条近路，<span class="sub-k">一条条暴露</span>出来。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.437" data-duration="2.39" data-track-index="5"><div class="sub-inner">拖得越久，<span class="sub-k">修起来越贵</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.981" data-duration="14.738" data-track-index="5"><div class="sub-inner">清偿的路子是<span class="sub-k">三步</span>：先做一次系统性的架构审计，找出结构上的弱点；然后靶向重构最糟糕的几处；最后把测试覆盖大幅补上，让下一轮功能开发，不再把同样的问题重新带回来。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .15, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', .55, {y:20, d:.4, ease:'expo.out'});
+    // sub-2:代码跑通 › 产品验证 › 目的达到
+    D2.enter(tl, R+'.trade', 3.95, {y:12, d:.3, ease:'power2.out'});
+    // sub-3:债开始计息
+    D2.enter(tl, R+'.bx', 7.5, {y:20, d:.38, ease:'power3.out'});
+    // sub-4:三个暴露源逐个上,近路一条条暴露
+    D2.stagger(tl, R+'.bx-tags .xt', 11.5, {y:10, d:.3, step:1.4, ease:'power3.out'});
+    D2.enter(tl, R+'.bx-line', 15.6, {y:10, d:.3, ease:'power2.out'});
+    // sub-5:拖得越久修得越贵(晚到子元素,自己的 from 藏到点)
+    D2.enter(tl, R+'.bx-warn', 19.5, {x:-16, d:.32, ease:'power3.out'});
+    // sub-6:清偿三步逐条 build
+    D2.enter(tl, R+'.k-pay', 22.1, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.s1', 25.1, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.s2', 28.5, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.s3', 31.2, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.rd3', 33.6, {y:8, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.85],['#sub-3',7.363],['#sub-4',11.397],['#sub-5',19.437],['#sub-6',21.981]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 36.9, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

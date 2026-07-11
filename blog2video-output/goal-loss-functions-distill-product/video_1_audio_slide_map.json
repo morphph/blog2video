@@ -1,0 +1,67 @@
+[
+  {
+    "slideNumber": 1,
+    "charStart": 0,
+    "charEnd": 218
+  },
+  {
+    "slideNumber": 2,
+    "charStart": 218,
+    "charEnd": 619
+  },
+  {
+    "slideNumber": 3,
+    "charStart": 619,
+    "charEnd": 959
+  },
+  {
+    "slideNumber": 4,
+    "charStart": 959,
+    "charEnd": 1253
+  },
+  {
+    "slideNumber": 5,
+    "charStart": 1253,
+    "charEnd": 1549
+  },
+  {
+    "slideNumber": 6,
+    "charStart": 1549,
+    "charEnd": 1748
+  },
+  {
+    "slideNumber": 7,
+    "charStart": 1748,
+    "charEnd": 2245
+  },
+  {
+    "slideNumber": 8,
+    "charStart": 2245,
+    "charEnd": 2499
+  },
+  {
+    "slideNumber": 9,
+    "charStart": 2499,
+    "charEnd": 2897
+  },
+  {
+    "slideNumber": 10,
+    "charStart": 2897,
+    "charEnd": 3221
+  },
+  {
+    "slideNumber": 11,
+    "charStart": 3221,
+    "charEnd": 3487
+  },
+  {
+    "slideNumber": 12,
+    "charStart": 3487,
+    "charEnd": 3792
+  },
+  {
+    "slideNumber": 13,
+    "charStart": 3792,
+    "charEnd": 4217
+  }
+]

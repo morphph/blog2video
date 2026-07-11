@@ -1,0 +1,82 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 58.3,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_3.html",
+ "topbarIndex": "[03/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.476,
+   "text": "来看他挂机的时候，那一个 prompt 干了什么。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.632,
+   "localDuration": 1.612,
+   "text": "大约三十个小时。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.244,
+   "localDuration": 1.611,
+   "text": "六千三百行代码。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.855,
+   "localDuration": 2.015,
+   "text": "爬了九万两千个网页。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 8.87,
+   "localDuration": 3.021,
+   "text": "花了四十美元的 API 费用。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 12.056,
+   "localDuration": 5.274,
+   "text": "它做的事情是：把另一个产品的核心循环，整个克隆出来。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 17.33,
+   "localDuration": 2.637,
+   "text": "架构是从零开始反向工程的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 20.12,
+   "localDuration": 9.745,
+   "text": "而且关键在最后一句：在同样的查询上，他们做出来的版本，输出比那个参考产品好了大约五十倍。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 30.02,
+   "localDuration": 6.515,
+   "text": "秘密只有一个词，叫 loss function development，损失函数开发。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 36.535,
+   "localDuration": 6.818,
+   "text": "你给 Agent 的，不再是一份\"照着造\"的 spec，而是一个\"往这个方向优化\"的目标。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 43.52,
+   "localDuration": 10.523,
+   "text": "有个叫 Peter Steinberger 的人说得更绝：你不该再给编程 Agent 写 prompt 了，你该设计的是那个给 Agent 写 prompt 的循环。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 54.212,
+   "localDuration": 3.952,
+   "text": "换句话说，spec 从终点，变成了起点。"
+  }
+ ]
+}

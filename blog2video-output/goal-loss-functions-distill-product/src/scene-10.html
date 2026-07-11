@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .skill{display:flex;align-items:center;gap:16px;margin-top:26px;background:#1c1c1e;border:1px solid #2a2a2c;padding:16px 24px}
+[data-composition-id='s10'] .skill .sk-tag{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:3px 12px;letter-spacing:.08em}
+[data-composition-id='s10'] .skill .sk-txt{font-weight:600;font-size:30px;color:#edebe6;line-height:1.35}
+[data-composition-id='s10'] .skill .sk-os{color:#8a8a85}
+[data-composition-id='s10'] .rows{margin-top:34px}
+[data-composition-id='s10'] .punch{margin-top:36px}
+[data-composition-id='s10'] .row .rt{display:flex;align-items:center;flex-wrap:wrap;gap:6px 4px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="64.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[10/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个彩蛋 · <span class="acc">全程梯度下降</span></div>
+      <div class="h1" style="margin-top:18px">写目标,也是 <span class="em">Agent</span> 的活儿</div>
+
+      <div class="skill">
+        <span class="sk-tag">SKILL</span>
+        <span class="sk-txt">生成整套目标 · <span class="sk-os">已开源</span> · <span class="code sk-cmd">/lfd-design</span></span>
+      </div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">内循环:写代码 → 跑测试 → 修<span class="tag t1a">短周期</span></div>
+          <div class="rd r1d">一个目标 <span class="code">让测试过</span> · <span class="ok">编程 Agent 早已自动化</span></div>
+        </div></div>
+
+        <div class="row r2 now"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="code">/goal</span> 驱动整个系统 → 结果指标<span class="tag t2a">长周期</span></div>
+          <div class="rd r2d">产品团队的几个月上线-测量-迭代,压进 <span class="ok">一次跑批</span></div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">两个循环都自动化了,剩下 <span class="hl"><span class="bar"></span><span class="tx">定义损失函数</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="1.514" data-track-index="5"><div class="sub-inner">还有个<span class="sub-k">细节</span>挺好玩。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.645" data-duration="4.115" data-track-index="5"><div class="sub-inner">一开始，这些目标是 Elvis <span class="sub-k">自己一条一条写</span>的。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.76" data-duration="4.609" data-track-index="5"><div class="sub-inner">后来他发现，写目标这件事，本身也是 <span class="sub-k">Agent 的活儿</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.537" data-duration="4.012" data-track-index="5"><div class="sub-inner">于是他写了一个 <span class="sub-k">skill</span>，专门用来生成这些目标。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.549" data-duration="0.962" data-track-index="5"><div class="sub-inner">已经<span class="sub-k">开源</span>了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="15.511" data-duration="5.456" data-track-index="5"><div class="sub-inner">一句 <span class="sub-k">/lfd-design</span>，就能生成那套 harness 和目标。</div></div>
+    <div id="sub-7" class="clip sub" data-start="21.121" data-duration="2.369" data-track-index="5"><div class="sub-inner">一路都是<span class="sub-k">梯度下降</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="23.49" data-duration="7.368" data-track-index="5"><div class="sub-inner">里面那个循环，是 Agent 在跑：<span class="sub-k">写代码，跑测试，修</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="30.858" data-duration="5.001" data-track-index="5"><div class="sub-inner">短周期，快反馈，一个目标——<span class="sub-k">让测试过</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="36.059" data-duration="3.394" data-track-index="5"><div class="sub-inner">这个循环，<span class="sub-k">编程 Agent</span> 早就自动化了。</div></div>
+    <div id="sub-11" class="clip sub" data-start="39.625" data-duration="8.838" data-track-index="5"><div class="sub-inner">外面那个循环，才是 <span class="sub-k">/goal</span> 干的：驱动整个系统，跨越很多轮，朝着一个结果指标去。</div></div>
+    <div id="sub-12" class="clip sub" data-start="48.463" data-duration="1.894" data-track-index="5"><div class="sub-inner">长周期，<span class="sub-k">稀疏反馈</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="50.557" data-duration="6.762" data-track-index="5"><div class="sub-inner">这本来是产品团队的循环——几个月的上线、测量、迭代，被压进了<span class="sub-k">一次跑批</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="57.481" data-duration="2.341" data-track-index="5"><div class="sub-inner">现在<span class="sub-k">两个循环</span>都自动化了。</div></div>
+    <div id="sub-15" class="clip sub" data-start="59.822" data-duration="4.293" data-track-index="5"><div class="sub-inner">剩下留给你的，只有一件事：<span class="sub-k">定义那个损失函数</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.7, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.skill', 10.5, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.skill .sk-os', 14.5, {y:0, x:8, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.skill .sk-cmd', 15.5, {y:10, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 23.5, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .t1a', 30.9, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .r1d', 36.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 39.6, {x:-24, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .t2a', 48.4, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .r2d', 50.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 57.5, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 59.9);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',1.645],['#sub-3',5.76],['#sub-4',10.537],['#sub-5',14.549],['#sub-6',15.511],['#sub-7',21.121],['#sub-8',23.49],['#sub-9',30.858],['#sub-10',36.059],['#sub-11',39.625],['#sub-12',48.463],['#sub-13',50.557],['#sub-14',57.481],['#sub-15',59.822]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 64.3, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

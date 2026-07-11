@@ -1,0 +1,64 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "summary",
+ "dataDuration": 58.667,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_12.html",
+ "topbarIndex": "[12/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.524,
+   "text": "现在你把坚持的内部结构摊开看，它一点都不像固执，复杂得多。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.512,
+   "localDuration": 8.192,
+   "text": "这五种品质组合出一个“看起来像\"固执的现象——因为它们都让你不放弃——但机制完全不同。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.848,
+   "localDuration": 8.724,
+   "text": "它不是单纯抵抗改变，而是被精力和韧性推着奔向目标，路径由想象力去发现、由判断力去打磨。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 22.74,
+   "localDuration": 12.056,
+   "text": "在决策树的低处，任何一点，只要期望值跌得够低，你都会让步、都会改；但精力和韧性会一直把你推向高处那个你亲手选定的东西。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 34.944,
+   "localDuration": 7.682,
+   "text": "所以，“对的那种固执\"比“错的那种\"稀有得多、结果也好得多，一点都不奇怪。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 42.626,
+   "localDuration": 3.944,
+   "text": "固执谁都会——小孩、醉汉、傻瓜最擅长。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 46.77,
+   "localDuration": 6.042,
+   "text": "可很少有人能同时凑齐这五种品质；一旦凑齐，那结果，是魔法般的。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 52.98,
+   "localDuration": 3.461,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 56.441,
+   "localDuration": 1.211,
+   "text": "我们下期再见。"
+  }
+ ]
+}

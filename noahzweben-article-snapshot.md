@@ -1,0 +1,824 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Home page" [ref=e6] [cursor=pointer]:
+            - /url: https://claude.com
+            - img [ref=e8]
+          - navigation [ref=e11]:
+            - generic [ref=e12]:
+              - list [ref=e13]:
+                - listitem [ref=e14]:
+                  - button "Meet Claude" [ref=e16] [cursor=pointer]:
+                    - generic [ref=e17]: Meet Claude
+                    - img [ref=e20]
+                - listitem [ref=e22]:
+                  - button "Platform" [ref=e24] [cursor=pointer]:
+                    - generic [ref=e25]: Platform
+                    - img [ref=e28]
+                - listitem [ref=e30]:
+                  - button "Solutions" [ref=e32] [cursor=pointer]:
+                    - generic [ref=e33]: Solutions
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Pricing" [ref=e40] [cursor=pointer]:
+                    - generic [ref=e41]: Pricing
+                    - img [ref=e44]
+                - listitem [ref=e46]:
+                  - button "Resources" [ref=e48] [cursor=pointer]:
+                    - generic [ref=e49]: Resources
+                    - img [ref=e52]
+                - listitem [ref=e54]:
+                  - link "Login" [ref=e55] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e56]: Login
+              - list [ref=e57]:
+                - listitem [ref=e58]:
+                  - generic [ref=e59]:
+                    - generic [ref=e60]: Contact sales
+                    - link "Contact sales" [ref=e62] [cursor=pointer]:
+                      - /url: /contact-sales
+                      - generic [ref=e63]: Contact sales
+                - listitem [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic [ref=e66]: Try Claude
+                    - link "Try Claude" [ref=e68] [cursor=pointer]:
+                      - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da
+                      - generic [ref=e69]: Try Claude
+      - generic [ref=e71]:
+        - navigation [ref=e72]:
+          - list [ref=e73]:
+            - listitem [ref=e74]:
+              - link "Blog" [ref=e76] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e77]: Blog
+              - generic [ref=e78]: /
+            - listitem [ref=e79]:
+              - generic [ref=e81]: Building effective human-agent teams
+        - button "Explore here" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: Explore here
+          - img [ref=e87]
+    - main [ref=e90]:
+      - generic [ref=e617]:
+        - generic [ref=e621]:
+          - heading "Building effective human-agent teams" [level=1] [ref=e622]:
+            - generic [ref=e623]: Building
+            - generic [ref=e624]: effective
+            - generic [ref=e625]: human-agent
+            - generic [ref=e626]: teams
+          - paragraph [ref=e629]:
+            - emphasis [ref=e630]: The way we work with AI is evolving from a single-player to a multiplayer experience, where humans and agents work together as a team to achieve shared goals. We share examples of this new way of working in action.
+        - list [ref=e632]:
+          - listitem [ref=e633]:
+            - img [ref=e636]
+            - generic [ref=e638]:
+              - generic [ref=e639]: Category
+              - list [ref=e641]:
+                - listitem [ref=e642]:
+                  - link "Enterprise AI" [ref=e643] [cursor=pointer]:
+                    - /url: https://claude.com/blog/category/enterprise-ai
+          - listitem [ref=e644]:
+            - img [ref=e647]
+            - generic [ref=e649]:
+              - generic [ref=e650]: Product
+              - list [ref=e652]:
+                - listitem [ref=e653]:
+                  - generic [ref=e654]: Claude Tag
+          - listitem [ref=e655]:
+            - img [ref=e658]
+            - generic [ref=e660]:
+              - generic [ref=e661]: Date
+              - generic [ref=e662]: June 24, 2026
+          - listitem [ref=e663]:
+            - img [ref=e666]
+            - generic [ref=e668]:
+              - generic [ref=e669]: Reading time
+              - generic [ref=e670]:
+                - generic [ref=e671]: "5"
+                - generic [ref=e672]: min
+          - listitem [ref=e673]:
+            - img [ref=e676]
+            - generic [ref=e678]:
+              - generic [ref=e679]: Share
+              - link "Copy link" [ref=e680] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e690]:
+        - paragraph [ref=e691]: "Working with AI used to mean one person interfacing with a single chat window. Over time, AI has become increasingly capable at handling complex, long-running work, like coding, research, and financial analysis. With this, we’ve seen many new ways to use AI—from the terminal and IDE to spreadsheets and decks—but the work has still very much been a “single-player” experience: one human worked with one agent to accomplish individual tasks."
+        - paragraph [ref=e692]:
+          - text: This is changing with the release of tools like
+          - link "Claude Tag" [ref=e693] [cursor=pointer]:
+            - /url: https://www.anthropic.com/news/introducing-claude-tag
+          - text: . Now, humans and agents can work together in the same workspace, collaborating in service of goals shared by a team. Work now looks a lot more like a
+          - emphasis [ref=e694]: multiplayer game
+          - text: ", with teams of humans setting the strategy, and Claude executing the work."
+        - paragraph [ref=e695]: This involves some new ways of working. At Anthropic, we’ve been testing the technology required to make human-agent teams successful for the last several months. In this article, we explain what multiplayer agents are, and the lessons we’ve learned for building with them.
+        - figure [ref=e696]
+        - heading "What are multiplayer agents?" [level=2] [ref=e698]:
+          - strong [ref=e699]: What are multiplayer agents?
+        - paragraph [ref=e700]:
+          - text: “Multiplayer agents” is how we refer here to AI models that work with many different humans at the same time. Much like regular agents, they have their own
+          - link "memory" [ref=e701] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/memory
+          - text: and
+          - link "skills" [ref=e702] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+          - text: . But in other respects they're quite different. They have their own
+          - link "credentials" [ref=e703] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/managed-agents
+          - text: and they live in places where work happens. At Anthropic, that's inside team collaboration tools like Slack.
+        - paragraph [ref=e704]: "Here’s an example of a human-agent team analyzing a dataset together in Slack:"
+        - figure [ref=e705]
+        - paragraph [ref=e706]: "For agents to productively participate in a team channel, they need specific capabilities:"
+        - list [ref=e707]:
+          - listitem [ref=e708]:
+            - link "Persistent memory," [ref=e709] [cursor=pointer]:
+              - /url: https://platform.claude.com/docs/en/managed-agents/memory
+              - strong [ref=e710]: Persistent memory,
+            - text: so they can remember goals and tune their execution towards them
+          - listitem [ref=e711]:
+            - link "Credentials not tied to humans" [ref=e712] [cursor=pointer]:
+              - /url: https://www.anthropic.com/engineering/managed-agents
+              - strong [ref=e713]: Credentials not tied to humans
+            - strong [ref=e714]: ","
+            - text: so they can operate within safe, predictable guardrails
+          - listitem [ref=e715]:
+            - link "Ongoing broad access to information" [ref=e716] [cursor=pointer]:
+              - /url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+              - strong [ref=e717]: Ongoing broad access to information
+            - strong [ref=e718]: ","
+            - text: so they can learn how the organization works and take action to execute tasks in service of the team’s goals
+        - paragraph [ref=e719]:
+          - text: These capabilities amount to the technical foundation required for an agent to participate productively across a team of many humans. However, making human-agent teams
+          - emphasis [ref=e720]: successful
+          - text: "requires more than this: teams need specific ways of working and shared norms, too."
+        - 'heading "Lesson 1: Work in public and give agents broad context" [level=2] [ref=e721]':
+          - strong [ref=e722]: "Lesson 1: Work in public and give agents broad context"
+        - paragraph [ref=e723]: "Teams at Anthropic share information proactively and openly. This is especially true when agents are on the team, because agents build their understanding entirely from the text a team makes searchable: Slack, code, docs, and meeting notes. Private messages, hallway conversations, and restricted documents can’t provide agents with context. For an agent, if it’s not written down and accessible, it doesn’t exist."
+        - paragraph [ref=e724]:
+          - text: "Instead of deciding what information should be available to agents one doc or Slack channel at a time, we use clearly defined security boundaries that apply to entire Slack workspaces, as well as to meeting transcripts and doc libraries. Within the security boundary, context flows to every teammate—whether human or AI. Not only does this increase what agents and humans get access to, it also reduces confusion about what can be shared and with whom. Humans and agents alike find it difficult to navigate the soft boundaries of per-item sharing:"
+          - emphasis [ref=e725]: should this channel be public or private? Can I share this doc with that person? Is this agent allowed to see that thread?
+          - text: A small number of clear, workspace-level boundaries removes decision fatigue from day-to-day work.
+        - paragraph [ref=e726]: A high degree of transparency has a reward. For instance, agents that can read decisions from team meetings won't suggest tasks or projects that were deprioritized. Agents with access to product specs beyond their own team can recommend patterns that have succeeded for others. And because agents can read enormous volumes of text far faster than humans do, they routinely surface relevant work that humans would otherwise have missed. We lean on our agents heavily to stay informed and coordinated in a busy, fast-moving industry.
+        - paragraph [ref=e727]: "At Anthropic, working in public looks like:"
+        - list [ref=e728]:
+          - listitem [ref=e729]: Choosing a handful of security boundaries at the company and creating workspaces and document sharing settings that match each security boundary
+          - listitem [ref=e730]: Defaulting new communication channels to public within the organization, and ensuring decisions land in channels, docs, and meeting notes every time
+          - listitem [ref=e731]: Writing artifacts and meeting notes so that agents can find them, since agents are now a primary consumer of team documentation
+          - listitem [ref=e732]: Making sure AI has access to the right tools and information needed to get their job done
+        - paragraph [ref=e733]: Defaulting information to be internally public can require cultural shifts. However, the difference between human-agent teams with context and those without is too stark to ignore.
+        - paragraph [ref=e734]:
+          - text: Of course, some interactions are sensitive and will need to be private between a single human and AI. For those, with Claude Tag you can send @Claude a direct message, or you can use the existing
+          - link "Claude.ai" [ref=e735] [cursor=pointer]:
+            - /url: http://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da
+          - text: and Claude Cowork applications. These tools give Claude access to private information via your personal MCP connectors, with the knowledge that your conversation and what you share with the agent will remain private.
+        - 'heading "Lesson 2: Every human and agent get a defined role with the right tools for the job" [level=2] [ref=e736]':
+          - strong [ref=e737]: "Lesson 2: Every human and agent get a defined role with the right tools for the job"
+        - paragraph [ref=e738]:
+          - text: Human-agent teams share one roster, one set of artifacts, and one working space. Agents have their own
+          - link "credentials" [ref=e739] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/how-we-contain-claude
+          - text: ","
+          - link "skills" [ref=e740] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+          - text: ", and tool access. Different agents also hold different roles: for instance, while one might own the data analysis for a project, another will hold and enforce the design standard, and a third will run research synthesis."
+        - paragraph [ref=e741]: When a project kicks off, humans chat with the agents to figure out which roles to assign, and how the humans and agents will work together.
+        - figure [ref=e742]
+        - paragraph [ref=e743]: "Once the jobs for humans and agents are clear, an agent might spin up other agents to make sure that specific tasks are handled by the agents with the right memory and appropriate access. Importantly, they need access to all the tools required to accomplish the job: one that handles data analysis might need access to BigQuery, and one that performs QA might need access to the Playwright MCP."
+        - paragraph [ref=e744]: "Clearly defined roles and responsibilities set human-agent teams up for success. Humans often work in the same threads the agents do, but they hold the roles only humans can hold. This ensures everything works together and human judgment is applied to the most important decisions. Without clear roles, people end up running fleets of personal AIs on the side, duplicating work and fracturing the team's context. Metrics tracking is a common case: a multiplayer agent can do the job once and let everyone see the same numbers."
+        - paragraph [ref=e745]: "At Anthropic, having clearly defined roles on human-agent teams looks like:"
+        - list [ref=e746]:
+          - listitem [ref=e747]: "An agreed-upon task set: the team's humans and its agents agree on who does what"
+          - listitem [ref=e748]: Humans and agents working in the same shared threads, so anyone can pick up where anyone left off
+          - listitem [ref=e749]: Humans and agents that have access to the right tools to accomplish their respective jobs
+          - listitem [ref=e750]: Descriptions of agents’ roles and scopes
+        - figure "Claude agents share the day-to-day maintenance of a codebase, triaging feedback, planning, writing code, reviewing changes, and reporting status. Each owns a clear task and works on its own schedule; people set the goals and review output." [ref=e751]:
+          - emphasis [ref=e753]: Claude agents share the day-to-day maintenance of a codebase, triaging feedback, planning, writing code, reviewing changes, and reporting status. Each owns a clear task and works on its own schedule; people set the goals and review output.
+        - paragraph [ref=e754]: "An engineering team at Anthropic started creating rosters to help codify human and agent roles because it made driving their work much easier and more concrete. Some things that clicked for them early on:"
+        - list [ref=e755]:
+          - listitem [ref=e756]: Specific roles also help humans easily track where responsibility for a task lies, whether that’s in individual tasks or an entire team’s set of responsibilities
+          - listitem [ref=e757]:
+            - text: Writing
+            - link "skill files" [ref=e758] [cursor=pointer]:
+              - /url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+            - text: to define specific agents’ roles helps to make specialization easy, and allows people across the company to quickly stand up other agents of the same type
+          - listitem [ref=e759]: The team adds new agents to focus on new areas when projects get more complex. For example, they added a release manager agent to deal with new software releases.
+        - paragraph [ref=e760]: These methods let humans' mental model of a human-agent team scale as the number of agents grows.
+        - 'heading "Lesson 3: Set a north star to make agents more proactive" [level=2] [ref=e761]':
+          - strong [ref=e762]: "Lesson 3: Set a north star to make agents more proactive"
+        - paragraph [ref=e763]: "Although some agents at Anthropic simply complete assigned tasks, the most important ones proactively suggest new projects and workstreams. This often happens when a team that has already given its agents rich context and clear roles adds another guide: a north star."
+        - paragraph [ref=e764]: North stars are ambitious, wide-reaching goals that help teams decide which tasks and workstreams are the right ones. At Anthropic, humans always set the north star, grounding it in the mission and goals of the business.
+        - paragraph [ref=e765]: Once a north star is clearly articulated in writing, humans share it with the agents on their team. Then, importantly, humans choose which agents should proactively suggest new workstreams to help achieve this long-term goal. (It’s unlikely that every agent on the team will have the prerequisite skills and trust to proactively suggest work successfully.)
+        - paragraph [ref=e766]: For example, an internal tools team with a north star to “make product onboarding more helpful” saw an agent proactively recommended copy revisions to the onboarding flow error messages. These changes measurably increased onboarding success the following week.
+        - paragraph [ref=e767]: "At Anthropic, setting a north star looks like:"
+        - list [ref=e768]:
+          - listitem [ref=e769]: Having humans discuss, debate, and document an ambitious north star goal for their human-agent team—one that’s rooted in the company’s mission and business goals
+          - listitem [ref=e770]: Sharing the north star with agents on the team and explicitly naming which agents can proactively recommend new workstreams
+          - listitem [ref=e771]: Keeping high-fidelity human time protected on the calendar, with meetings now focused on the most important work
+        - paragraph [ref=e772]: A clear north star gives agents a consistent direction to work toward and meaningful opportunities to proactively support a team’s work.
+        - 'heading "Lesson 4: Build trust over time" [level=2] [ref=e773]':
+          - strong [ref=e774]: "Lesson 4: Build trust over time"
+        - paragraph [ref=e775]: Teams at Anthropic grant agents autonomy in proportion to demonstrated reliability, then expand it deliberately. Engineers have successfully dispatched agents on their team to handle 500 bug fixes independently, but things certainly didn’t start off that way.
+        - paragraph [ref=e776]: When a new human colleague joins the team, it takes time to assess their capabilities and develop strong working routines. It usually takes multiple feedback cycles to externalize all the tacit information about how tasks are best completed. The same is true for agents. Users have to experiment with giving agents many different tasks so they can learn what the agent is capable of, how to clearly describe the goal, what skill files it needs, and what prompts work best to elicit a desired behavior. It’s also important to retest tasks as models change and improve. Prompts may need re-wording and guardrails that used to be helpful may constrain a smarter model from pursuing more creative solutions.
+        - paragraph [ref=e777]:
+          - text: Notably, we’ve found that the best long-running agents have many different ways to verify their work before a human looks at it. Code has tests, of course, but most other work can be verified as well. For example, technical docs can have rubrics and style guides applied to them. When humans set the bar and ensure all work assigned to an agent can be vetted, quality stays high and doesn’t drift from the original intention. Separately, as with humans, it often helps to give one agent the job of doing the task and another agent the job of checking the first agent’s work. This is often called the
+          - link "“Doer-Verifier” agent harness" [ref=e778] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/harness-design-long-running-apps
+          - text: .
+        - paragraph [ref=e779]: "At Anthropic, building trust with agents over time looks like:"
+        - list [ref=e780]:
+          - listitem [ref=e781]: Reviewing agent work manually in the beginning to vet quality, provide feedback, and design task verification checklists
+          - listitem [ref=e782]: Telling the agent to use a “verifier” agent to check its work as part of the task
+          - listitem [ref=e783]: Building reflection into the cycle and asking agents to review their own misses so work improves over time
+          - listitem [ref=e784]: Tracking which kinds of tasks each agent has earned autonomy on and expanding scope per task type after repeated successes
+        - paragraph [ref=e785]: One engineering leader at Anthropic took on a new team with a big backlog. To get a handle on it, he invited a few humans and a few agents to help him sort through the backlog and prioritize what was most important. One set of agents on the team read through all of the items in the backlog, figured out if anyone was working on the items, and assigned a complexity score to anything that was unowned. The other set read from the list, filtered to the medium and low complexity items, and created code changes. At the beginning, humans reviewed every decision made by an agent and marked any that required human input. Then the humans taught the agents to surface those decisions to humans directly, ensuring that decisions with hard tradeoffs always had a human in the loop.
+        - figure [ref=e786]
+        - paragraph [ref=e787]: Every week, the leader and his team asked the agents to compile a weekly report that included “lessons & missteps” so the agents would keep track of mistakes and avoid making them again in the future. Over time, the leader was able to give more and more complex code changes to his agents and spend less time guiding the agents’ day to day tasks.
+        - paragraph [ref=e788]: "And once the agents were more independent, the leader coached them to treat human attention as the scarce resource it is: to batch questions to be answered in a single pass, repeat key context to get a human up to speed quickly, and limit how many things each human sees at once."
+        - paragraph [ref=e789]: Helping agents communicate well ensures that they remain helpful and effective. Some people have agents in their team with the sole role of deciding how to batch and elevate only the most important communication for human team members. Others set guardrails around how much work agents should do per day, so that humans are able to meaningfully engage with the work. Such guardrails ensure that humans maintain skills that are important to them, and that the number of items requiring human review stays sustainable.
+        - heading "Questions to ask" [level=2] [ref=e790]:
+          - strong [ref=e791]: Questions to ask
+        - paragraph [ref=e792]: "As you’re laying the foundation for your human-agent teams, consider the following questions:"
+        - list [ref=e793]:
+          - listitem [ref=e794]: Is all the information and access that agents and humans need both public and broadly searchable?
+          - listitem [ref=e795]: Can you write down your team's roster (humans and agents), and say what each member owns?
+          - listitem [ref=e796]: Does every human and agent on the team have access to the right tools to perform their job?
+          - listitem [ref=e797]: Do you have rubrics or tests for humans and agents to verify key work products?
+          - listitem [ref=e798]: Does your team have a clear north star that everyone can reference?
+        - heading "Moving forward" [level=2] [ref=e799]:
+          - strong [ref=e800]: Moving forward
+        - paragraph [ref=e801]: None of these patterns are new—at least not for humans. A strong north star, clear roles, strong documentation, a shared bar for quality, and room to learn from mistakes are the healthy team habits we’ve known for decades. Agents just make it even more important not to skip them.
+        - paragraph [ref=e802]: The teams getting the most from their agents are the ones who are most intentional about applying these fundamentals.
+        - paragraph [ref=e803]:
+          - strong [ref=e804]: Acknowledgements
+        - paragraph [ref=e805]: This article was written by Kristen Swanson, a member of the Education team at Anthropic. She’d like to thank Matt Bell, Erik Olesund, Hasnain Lakhani, Shale Craig, Nolan Caudill, Mike Schiraldi, Aleks Todorova, and Molly Vorwerck for their contributions to this piece.
+        - paragraph [ref=e806]:
+          - emphasis [ref=e807]: Start building multiplayer agents using
+          - link "agent teams" [ref=e808] [cursor=pointer]:
+            - /url: https://code.claude.com/docs/en/agent-teams
+            - emphasis [ref=e809]: agent teams
+          - emphasis [ref=e810]: in Claude Code or by using
+          - link "Claude Tag" [ref=e811] [cursor=pointer]:
+            - /url: https://support.claude.com/en/articles/15594475-what-is-claude-tag
+            - emphasis [ref=e812]: Claude Tag
+          - emphasis [ref=e813]: .
+      - generic [ref=e818]:
+        - generic [ref=e819]:
+          - heading "Related posts" [level=2] [ref=e822]
+          - paragraph [ref=e825]: Explore more product news and best practices for teams building with Claude.
+        - list [ref=e828]:
+          - listitem [ref=e829]:
+            - generic [ref=e830]:
+              - generic [ref=e835]:
+                - generic [ref=e836]:
+                  - generic [ref=e837]: Jun 22, 2026
+                  - heading "The full Claude Desktop experience on AWS, Google Cloud, and Microsoft Foundry" [level=3] [ref=e838]
+                - list [ref=e840]:
+                  - listitem [ref=e841]:
+                    - generic [ref=e842]:
+                      - img [ref=e845]
+                      - generic [ref=e847]: Enterprise AI
+              - link "The full Claude Desktop experience on AWS, Google Cloud, and Microsoft Foundry" [ref=e849] [cursor=pointer]:
+                - /url: /blog/the-full-claude-desktop-experience-on-aws-google-cloud-and-microsoft-foundry
+                - generic [ref=e850]: The full Claude Desktop experience on AWS, Google Cloud, and Microsoft Foundry
+          - listitem [ref=e851]:
+            - generic [ref=e852]:
+              - generic [ref=e857]:
+                - generic [ref=e858]:
+                  - generic [ref=e859]: Mar 13, 2026
+                  - heading "1M context is now generally available for Opus 4.6 and Sonnet 4.6" [level=3] [ref=e860]
+                - list [ref=e862]:
+                  - listitem [ref=e863]:
+                    - generic [ref=e864]:
+                      - img [ref=e867]
+                      - generic [ref=e869]: Product announcements
+              - link "1M context is now generally available for Opus 4.6 and Sonnet 4.6" [ref=e871] [cursor=pointer]:
+                - /url: /blog/1m-context-ga
+                - generic [ref=e872]: 1M context is now generally available for Opus 4.6 and Sonnet 4.6
+          - listitem [ref=e873]:
+            - generic [ref=e874]:
+              - generic [ref=e879]:
+                - generic [ref=e880]:
+                  - generic [ref=e881]: Feb 5, 2026
+                  - heading "Advancing finance with Claude Opus 4.6" [level=3] [ref=e882]
+                - list [ref=e884]:
+                  - listitem [ref=e885]:
+                    - generic [ref=e886]:
+                      - img [ref=e889]
+                      - generic [ref=e891]: Enterprise AI
+              - link "Advancing finance with Claude Opus 4.6" [ref=e893] [cursor=pointer]:
+                - /url: /blog/opus-4-6-finance
+                - generic [ref=e894]: Advancing finance with Claude Opus 4.6
+          - listitem [ref=e895]:
+            - generic [ref=e896]:
+              - generic [ref=e901]:
+                - generic [ref=e902]:
+                  - generic [ref=e903]: Jul 24, 2025
+                  - heading "How Anthropic teams use Claude Code" [level=3] [ref=e904]
+                - list [ref=e906]:
+                  - listitem [ref=e907]:
+                    - generic [ref=e908]:
+                      - img [ref=e911]
+                      - generic [ref=e913]: Enterprise AI
+              - link "How Anthropic teams use Claude Code" [ref=e915] [cursor=pointer]:
+                - /url: /blog/how-anthropic-teams-use-claude-code
+                - generic [ref=e916]: How Anthropic teams use Claude Code
+      - generic [ref=e923]:
+        - generic [ref=e925]:
+          - heading "Transform how your organization operates with Claude" [level=2] [ref=e927]
+          - generic [ref=e929]:
+            - generic [ref=e930]:
+              - generic [ref=e931]: See pricing
+              - link "See pricing" [ref=e933] [cursor=pointer]:
+                - /url: https://claude.com/pricing#api
+                - generic [ref=e934]: See pricing
+            - generic [ref=e935]:
+              - generic [ref=e936]: Contact sales
+              - link "Contact sales" [ref=e938] [cursor=pointer]:
+                - /url: https://claude.com/contact-sales
+                - generic [ref=e939]: Contact sales
+        - generic [ref=e945]:
+          - img [ref=e949]
+          - paragraph [ref=e957]: Get the developer newsletter
+          - paragraph [ref=e959]: Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.
+          - form "Claude developer newsletter subscription" [ref=e961]:
+            - generic [ref=e962]:
+              - textbox "email" [ref=e963]:
+                - /placeholder: Enter your email
+              - generic [ref=e964] [cursor=pointer]:
+                - img [ref=e967]
+                - button "Subscribe" [ref=e970]:
+                  - generic [ref=e971]: Subscribe
+            - paragraph [ref=e973]: Please provide your email address if you'd like to receive our monthly developer newsletter. You can unsubscribe at any time.
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - img [ref=e100]
+              - link "Homepage" [ref=e104] [cursor=pointer]:
+                - /url: https://claude.com
+                - generic [ref=e105]: Homepage
+            - generic [ref=e107]:
+              - form "Footer Prompt" [ref=e110]:
+                - generic [ref=e111]:
+                  - textbox "How can I help you today?" [ref=e112]
+                  - generic [ref=e113]:
+                    - img [ref=e116]
+                    - button "Next" [ref=e119] [cursor=pointer]:
+                      - generic [ref=e120]: Next
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - img [ref=e125]
+                  - generic [ref=e127]: Write
+                  - button "Button Text" [ref=e129] [cursor=pointer]:
+                    - generic [ref=e130]: Button Text
+                - generic [ref=e131]:
+                  - img [ref=e134]
+                  - generic [ref=e136]: Learn
+                  - button "Button Text" [ref=e138] [cursor=pointer]:
+                    - generic [ref=e139]: Button Text
+                - generic [ref=e140]:
+                  - img [ref=e143]
+                  - generic [ref=e145]: Code
+                  - button "Button Text" [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148]: Button Text
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - link "Anthropic" [ref=e164] [cursor=pointer]:
+                - /url: https://www.anthropic.com/
+                - generic [ref=e165]: Anthropic
+            - generic [ref=e166]: © 2026 Anthropic PBC
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: Products
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - generic [ref=e174]: Claude
+                  - link "Claude" [ref=e176] [cursor=pointer]:
+                    - /url: /product/overview
+                    - generic [ref=e177]: Claude
+                - listitem [ref=e178]:
+                  - generic [ref=e179]: Claude Code
+                  - link "Claude Code" [ref=e181] [cursor=pointer]:
+                    - /url: /product/claude-code
+                    - generic [ref=e182]: Claude Code
+                - listitem [ref=e183]:
+                  - generic [ref=e184]: Claude Code for Enterprise
+                  - link "Claude Code for Enterprise" [ref=e186] [cursor=pointer]:
+                    - /url: /product/claude-code/enterprise
+                    - generic [ref=e187]: Claude Code for Enterprise
+                - listitem [ref=e188]:
+                  - generic [ref=e189]: Claude Cowork
+                  - link "Claude Cowork" [ref=e191] [cursor=pointer]:
+                    - /url: /product/cowork
+                    - generic [ref=e192]: Claude Cowork
+                - listitem [ref=e193]:
+                  - generic [ref=e194]: "@Claude"
+                  - link "@Claude" [ref=e196] [cursor=pointer]:
+                    - /url: /product/tag
+                    - generic [ref=e197]: "@Claude"
+                - listitem [ref=e198]:
+                  - generic [ref=e199]: Claude Design
+                  - link "Claude Design" [ref=e201] [cursor=pointer]:
+                    - /url: /product/design
+                    - generic [ref=e202]: Claude Design
+                - listitem [ref=e203]:
+                  - generic [ref=e204]: Claude Security
+                  - link "Claude Security" [ref=e206] [cursor=pointer]:
+                    - /url: /product/claude-security
+                    - generic [ref=e207]: Claude Security
+                - listitem [ref=e208]:
+                  - generic [ref=e209]: Download app
+                  - link "Download app" [ref=e211] [cursor=pointer]:
+                    - /url: /download
+                    - generic [ref=e212]: Download app
+                - listitem [ref=e213]:
+                  - generic [ref=e214]: Pricing
+                  - link "Pricing" [ref=e216] [cursor=pointer]:
+                    - /url: /pricing
+                    - generic [ref=e217]: Pricing
+                - listitem [ref=e218]:
+                  - generic [ref=e219]: Log in
+                  - link "Log in" [ref=e221] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e222]: Log in
+            - generic [ref=e223]:
+              - generic [ref=e224]: Features
+              - list [ref=e225]:
+                - listitem [ref=e226]:
+                  - generic [ref=e227]: Claude for Chrome
+                  - link "Claude for Chrome" [ref=e229] [cursor=pointer]:
+                    - /url: /claude-for-chrome
+                    - generic [ref=e230]: Claude for Chrome
+                - listitem [ref=e231]:
+                  - generic [ref=e232]: Claude for Microsoft 365
+                  - link "Claude for Microsoft 365" [ref=e234] [cursor=pointer]:
+                    - /url: /claude-for-microsoft-365
+                    - generic [ref=e235]: Claude for Microsoft 365
+                - listitem [ref=e236]:
+                  - generic [ref=e237]: Skills
+                  - link "Skills" [ref=e239] [cursor=pointer]:
+                    - /url: /skills
+                    - generic [ref=e240]: Skills
+            - generic [ref=e241]:
+              - generic [ref=e242]: Models
+              - list [ref=e243]:
+                - listitem [ref=e244]:
+                  - generic [ref=e245]: Mythos
+                  - link "Mythos" [ref=e247] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/mythos
+                    - generic [ref=e248]: Mythos
+                - listitem [ref=e249]:
+                  - generic [ref=e250]: Fable
+                  - link "Fable" [ref=e252] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/fable
+                    - generic [ref=e253]: Fable
+                - listitem [ref=e254]:
+                  - generic [ref=e255]: Opus
+                  - link "Opus" [ref=e257] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/opus
+                    - generic [ref=e258]: Opus
+                - listitem [ref=e259]:
+                  - generic [ref=e260]: Sonnet
+                  - link "Sonnet" [ref=e262] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/sonnet
+                    - generic [ref=e263]: Sonnet
+                - listitem [ref=e264]:
+                  - generic [ref=e265]: Haiku
+                  - link "Haiku" [ref=e267] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/haiku
+                    - generic [ref=e268]: Haiku
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: Solutions
+              - list [ref=e272]:
+                - listitem [ref=e273]:
+                  - generic [ref=e274]: AI agents
+                  - link "AI agents" [ref=e276] [cursor=pointer]:
+                    - /url: /solutions/agents
+                    - generic [ref=e277]: AI agents
+                - listitem [ref=e278]:
+                  - generic [ref=e279]: Code modernization
+                  - link "Code modernization" [ref=e281] [cursor=pointer]:
+                    - /url: /solutions/code-modernization
+                    - generic [ref=e282]: Code modernization
+                - listitem [ref=e283]:
+                  - generic [ref=e284]: Coding
+                  - link "Coding" [ref=e286] [cursor=pointer]:
+                    - /url: /solutions/coding
+                    - generic [ref=e287]: Coding
+                - listitem [ref=e288]:
+                  - generic [ref=e289]: Customer support
+                  - link "Customer support" [ref=e291] [cursor=pointer]:
+                    - /url: /solutions/customer-support
+                    - generic [ref=e292]: Customer support
+                - listitem [ref=e293]:
+                  - generic [ref=e294]: Education
+                  - link "Education" [ref=e296] [cursor=pointer]:
+                    - /url: /solutions/education
+                    - generic [ref=e297]: Education
+                - listitem [ref=e298]:
+                  - generic [ref=e299]: Enterprise
+                  - link "Enterprise" [ref=e301] [cursor=pointer]:
+                    - /url: /solutions/enterprise
+                    - generic [ref=e302]: Enterprise
+                - listitem [ref=e303]:
+                  - generic [ref=e304]: Financial services
+                  - link "Financial services" [ref=e306] [cursor=pointer]:
+                    - /url: /solutions/financial-services
+                    - generic [ref=e307]: Financial services
+                - listitem [ref=e308]:
+                  - generic [ref=e309]: Government
+                  - link "Government" [ref=e311] [cursor=pointer]:
+                    - /url: /solutions/government
+                    - generic [ref=e312]: Government
+                - listitem [ref=e313]:
+                  - generic [ref=e314]: Healthcare
+                  - link "Healthcare" [ref=e316] [cursor=pointer]:
+                    - /url: /solutions/healthcare
+                    - generic [ref=e317]: Healthcare
+                - listitem [ref=e318]:
+                  - generic [ref=e319]: Legal
+                  - link "Legal" [ref=e321] [cursor=pointer]:
+                    - /url: /solutions/legal
+                    - generic [ref=e322]: Legal
+                - listitem [ref=e323]:
+                  - generic [ref=e324]: Life sciences
+                  - link "Life sciences" [ref=e326] [cursor=pointer]:
+                    - /url: /solutions/life-sciences
+                    - generic [ref=e327]: Life sciences
+                - listitem [ref=e328]:
+                  - generic [ref=e329]: Nonprofits
+                  - link "Nonprofits" [ref=e331] [cursor=pointer]:
+                    - /url: /solutions/nonprofits
+                    - generic [ref=e332]: Nonprofits
+                - listitem [ref=e333]:
+                  - generic [ref=e334]: Security
+                  - link "Security" [ref=e336] [cursor=pointer]:
+                    - /url: /solutions/security
+                    - generic [ref=e337]: Security
+                - listitem [ref=e338]:
+                  - generic [ref=e339]: Small business
+                  - link "Small business" [ref=e341] [cursor=pointer]:
+                    - /url: /solutions/small-business
+                    - generic [ref=e342]: Small business
+                - listitem [ref=e343]:
+                  - generic [ref=e344]: Startups
+                  - link "Startups" [ref=e346] [cursor=pointer]:
+                    - /url: /programs/startups
+                    - generic [ref=e347]: Startups
+            - generic [ref=e348]:
+              - generic [ref=e349]: Claude Platform
+              - list [ref=e350]:
+                - listitem [ref=e351]:
+                  - generic [ref=e352]: Overview
+                  - link "Overview" [ref=e354] [cursor=pointer]:
+                    - /url: /platform/api
+                    - generic [ref=e355]: Overview
+                - listitem [ref=e356]:
+                  - generic [ref=e357]: Developer docs
+                  - link "Developer docs" [ref=e359] [cursor=pointer]:
+                    - /url: https://platform.claude.com/docs
+                    - generic [ref=e360]: Developer docs
+                - listitem [ref=e361]:
+                  - generic [ref=e362]: Pricing
+                  - link "Pricing" [ref=e364] [cursor=pointer]:
+                    - /url: https://claude.com/pricing#api
+                    - generic [ref=e365]: Pricing
+                - listitem [ref=e366]:
+                  - generic [ref=e367]: Ecosystem
+                  - link "Ecosystem" [ref=e369] [cursor=pointer]:
+                    - /url: /ecosystem
+                    - generic [ref=e370]: Ecosystem
+                - listitem [ref=e371]:
+                  - generic [ref=e372]: Marketplace
+                  - link "Marketplace" [ref=e374] [cursor=pointer]:
+                    - /url: /platform/marketplace
+                    - generic [ref=e375]: Marketplace
+                - listitem [ref=e376]:
+                  - generic [ref=e377]: Claude on AWS
+                  - link "Claude on AWS" [ref=e379] [cursor=pointer]:
+                    - /url: /partners/claude-on-aws
+                    - generic [ref=e380]: Claude on AWS
+                - listitem [ref=e381]:
+                  - generic [ref=e382]: Google Cloud
+                  - link "Google Cloud" [ref=e384] [cursor=pointer]:
+                    - /url: /partners/google-cloud
+                    - generic [ref=e385]: Google Cloud
+                - listitem [ref=e386]:
+                  - generic [ref=e387]: Microsoft Foundry
+                  - link "Microsoft Foundry" [ref=e389] [cursor=pointer]:
+                    - /url: /partners/microsoft-foundry
+                    - generic [ref=e390]: Microsoft Foundry
+                - listitem [ref=e391]:
+                  - generic [ref=e392]: Regional compliance
+                  - link "Regional compliance" [ref=e394] [cursor=pointer]:
+                    - /url: /regional-compliance
+                    - generic [ref=e395]: Regional compliance
+                - listitem [ref=e396]:
+                  - generic [ref=e397]: Console login
+                  - link "Console login" [ref=e399] [cursor=pointer]:
+                    - /url: https://platform.claude.com/
+                    - generic [ref=e400]: Console login
+          - generic [ref=e401]:
+            - generic [ref=e402]:
+              - generic [ref=e403]: Resources
+              - list [ref=e404]:
+                - listitem [ref=e405]:
+                  - generic [ref=e406]: Blog
+                  - link "Blog" [ref=e408] [cursor=pointer]:
+                    - /url: /blog
+                    - generic [ref=e409]: Blog
+                - listitem [ref=e410]:
+                  - generic [ref=e411]: Claude partner network
+                  - link "Claude partner network" [ref=e413] [cursor=pointer]:
+                    - /url: /partners
+                    - generic [ref=e414]: Claude partner network
+                - listitem [ref=e415]:
+                  - generic [ref=e416]: Community
+                  - link "Community" [ref=e418] [cursor=pointer]:
+                    - /url: /community
+                    - generic [ref=e419]: Community
+                - listitem [ref=e420]:
+                  - generic [ref=e421]: Connectors
+                  - link "Connectors" [ref=e423] [cursor=pointer]:
+                    - /url: /connectors
+                    - generic [ref=e424]: Connectors
+                - listitem [ref=e425]:
+                  - generic [ref=e426]: Courses
+                  - link "Courses" [ref=e428] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/learn
+                    - generic [ref=e429]: Courses
+                - listitem [ref=e430]:
+                  - generic [ref=e431]: Customer stories
+                  - link "Customer stories" [ref=e433] [cursor=pointer]:
+                    - /url: /customers
+                    - generic [ref=e434]: Customer stories
+                - listitem [ref=e435]:
+                  - generic [ref=e436]: Engineering at Anthropic
+                  - link "Engineering at Anthropic" [ref=e438] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/engineering
+                    - generic [ref=e439]: Engineering at Anthropic
+                - listitem [ref=e440]:
+                  - generic [ref=e441]: Events
+                  - link "Events" [ref=e443] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/events
+                    - generic [ref=e444]: Events
+                - listitem [ref=e445]:
+                  - generic [ref=e446]: Plugins
+                  - link "Plugins" [ref=e448] [cursor=pointer]:
+                    - /url: /plugins
+                    - generic [ref=e449]: Plugins
+                - listitem [ref=e450]:
+                  - generic [ref=e451]: Powered by Claude
+                  - link "Powered by Claude" [ref=e453] [cursor=pointer]:
+                    - /url: /partners/powered-by-claude
+                    - generic [ref=e454]: Powered by Claude
+                - listitem [ref=e455]:
+                  - generic [ref=e456]: Service partners
+                  - link "Service partners" [ref=e458] [cursor=pointer]:
+                    - /url: /partners/services
+                    - generic [ref=e459]: Service partners
+                - listitem [ref=e460]:
+                  - generic [ref=e461]: Tutorials
+                  - link "Tutorials" [ref=e463] [cursor=pointer]:
+                    - /url: /resources/tutorials
+                    - generic [ref=e464]: Tutorials
+                - listitem [ref=e465]:
+                  - generic [ref=e466]: Use cases
+                  - link "Use cases" [ref=e468] [cursor=pointer]:
+                    - /url: /resources/use-cases
+                    - generic [ref=e469]: Use cases
+            - generic [ref=e470]:
+              - generic [ref=e471]: Company
+              - list [ref=e472]:
+                - listitem [ref=e473]:
+                  - generic [ref=e474]: Anthropic
+                  - link "Anthropic" [ref=e476] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/
+                    - generic [ref=e477]: Anthropic
+                - listitem [ref=e478]:
+                  - generic [ref=e479]: Careers
+                  - link "Careers" [ref=e481] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/careers
+                    - generic [ref=e482]: Careers
+                - listitem [ref=e483]:
+                  - generic [ref=e484]: Policy
+                  - link "Policy" [ref=e486] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy
+                    - generic [ref=e487]: Policy
+                - listitem [ref=e488]:
+                  - generic [ref=e489]: Economic Futures
+                  - link "Economic Futures" [ref=e491] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/economic-futures
+                    - generic [ref=e492]: Economic Futures
+                - listitem [ref=e493]:
+                  - generic [ref=e494]: Research
+                  - link "Research" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/research
+                    - generic [ref=e497]: Research
+                - listitem [ref=e498]:
+                  - generic [ref=e499]: News
+                  - link "News" [ref=e501] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news
+                    - generic [ref=e502]: News
+                - listitem [ref=e503]:
+                  - generic [ref=e504]: Policy on the AI Exponential
+                  - link "Policy on the AI Exponential" [ref=e506] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy-on-the-ai-exponential
+                    - generic [ref=e507]: Policy on the AI Exponential
+                - listitem [ref=e508]:
+                  - generic [ref=e509]: Responsible Scaling Policy
+                  - link "Responsible Scaling Policy" [ref=e511] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
+                    - generic [ref=e512]: Responsible Scaling Policy
+                - listitem [ref=e513]:
+                  - generic [ref=e514]: Security and compliance
+                  - link "Security and compliance" [ref=e516] [cursor=pointer]:
+                    - /url: https://trust.anthropic.com/
+                    - generic [ref=e517]: Security and compliance
+                - listitem [ref=e518]:
+                  - generic [ref=e519]: Transparency
+                  - link "Transparency" [ref=e521] [cursor=pointer]:
+                    - /url: https://anthropic.com/transparency
+                    - generic [ref=e522]: Transparency
+          - generic [ref=e523]:
+            - generic [ref=e524]:
+              - generic [ref=e525]: Help and security
+              - list [ref=e526]:
+                - listitem [ref=e527]:
+                  - generic [ref=e528]: Availability
+                  - link "Availability" [ref=e530] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/supported-countries
+                    - generic [ref=e531]: Availability
+                - listitem [ref=e532]:
+                  - generic [ref=e533]: Status
+                  - link "Status" [ref=e535] [cursor=pointer]:
+                    - /url: https://status.anthropic.com/
+                    - generic [ref=e536]: Status
+                - listitem [ref=e537]:
+                  - generic [ref=e538]: Support center
+                  - link "Support center" [ref=e540] [cursor=pointer]:
+                    - /url: https://support.claude.com/en/
+                    - generic [ref=e541]: Support center
+            - generic [ref=e542]:
+              - generic [ref=e543]: Terms and policies
+              - list [ref=e544]:
+                - listitem [ref=e545]:
+                  - button [ref=e546] [cursor=pointer]:
+                    - generic [ref=e547]: Privacy choices
+                - listitem [ref=e548]:
+                  - generic [ref=e549]: Privacy policy
+                  - link "Privacy policy" [ref=e551] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/privacy
+                    - generic [ref=e552]: Privacy policy
+                - listitem [ref=e553]:
+                  - generic [ref=e554]: Responsible disclosure policy
+                  - link "Responsible disclosure policy" [ref=e556] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/responsible-disclosure-policy
+                    - generic [ref=e557]: Responsible disclosure policy
+                - listitem [ref=e558]:
+                  - generic [ref=e559]: "Terms of service: Commercial"
+                  - 'link "Terms of service: Commercial" [ref=e561] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/commercial-terms
+                    - generic [ref=e562]: "Terms of service: Commercial"
+                - listitem [ref=e563]:
+                  - generic [ref=e564]: "Terms of service: Consumer"
+                  - 'link "Terms of service: Consumer" [ref=e566] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/consumer-terms
+                    - generic [ref=e567]: "Terms of service: Consumer"
+                - listitem [ref=e568]:
+                  - generic [ref=e569]: Usage policy
+                  - link "Usage policy" [ref=e571] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/aup
+                    - generic [ref=e572]: Usage policy
+      - generic [ref=e573]:
+        - generic [ref=e574]:
+          - generic [ref=e575]:
+            - link "x.com" [ref=e577] [cursor=pointer]:
+              - /url: https://x.com/claudeai
+              - generic [ref=e578]: x.com
+            - img [ref=e579]
+          - generic [ref=e582]:
+            - link "LinkedIn" [ref=e584] [cursor=pointer]:
+              - /url: https://www.linkedin.com/showcase/claude/
+              - generic [ref=e585]: LinkedIn
+            - img [ref=e586]
+          - generic [ref=e588]:
+            - link "YouTube" [ref=e590] [cursor=pointer]:
+              - /url: https://www.youtube.com/@anthropic-ai
+              - generic [ref=e591]: YouTube
+            - img [ref=e592]
+          - generic [ref=e595]:
+            - link "Instagram" [ref=e597] [cursor=pointer]:
+              - /url: https://www.instagram.com/claudeai
+              - generic [ref=e598]: Instagram
+            - img [ref=e599]
+        - button "English (US)" [ref=e605] [cursor=pointer]:
+          - img [ref=e608]
+          - generic [ref=e610]: English (US)
+          - img [ref=e611]
+  - tooltip

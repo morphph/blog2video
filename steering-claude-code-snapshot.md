@@ -1,0 +1,989 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Home page" [ref=e6] [cursor=pointer]:
+            - /url: https://claude.com
+            - img [ref=e8]
+          - navigation [ref=e11]:
+            - generic [ref=e12]:
+              - list [ref=e13]:
+                - listitem [ref=e14]:
+                  - button "Meet Claude" [ref=e16] [cursor=pointer]:
+                    - generic [ref=e17]: Meet Claude
+                    - img [ref=e20]
+                - listitem [ref=e22]:
+                  - button "Platform" [ref=e24] [cursor=pointer]:
+                    - generic [ref=e25]: Platform
+                    - img [ref=e28]
+                - listitem [ref=e30]:
+                  - button "Solutions" [ref=e32] [cursor=pointer]:
+                    - generic [ref=e33]: Solutions
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Pricing" [ref=e40] [cursor=pointer]:
+                    - generic [ref=e41]: Pricing
+                    - img [ref=e44]
+                - listitem [ref=e46]:
+                  - button "Resources" [ref=e48] [cursor=pointer]:
+                    - generic [ref=e49]: Resources
+                    - img [ref=e52]
+                - listitem [ref=e54]:
+                  - link "Login" [ref=e55] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e56]: Login
+              - list [ref=e57]:
+                - listitem [ref=e58]:
+                  - generic [ref=e59]:
+                    - generic [ref=e60]: Contact sales
+                    - link "Contact sales" [ref=e62] [cursor=pointer]:
+                      - /url: /contact-sales
+                      - generic [ref=e63]: Contact sales
+                - listitem [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic [ref=e66]: Try Claude
+                    - link "Try Claude" [ref=e68] [cursor=pointer]:
+                      - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da
+                      - generic [ref=e69]: Try Claude
+      - generic [ref=e71]:
+        - navigation [ref=e72]:
+          - list [ref=e73]:
+            - listitem [ref=e74]:
+              - link "Blog" [ref=e76] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e77]: Blog
+              - generic [ref=e78]: /
+            - listitem [ref=e79]:
+              - generic [ref=e81]: "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more"
+        - button "Explore here" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: Explore here
+          - img [ref=e87]
+    - main [ref=e89]:
+      - generic [ref=e93]:
+        - 'heading "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more" [level=1] [ref=e98]':
+          - generic [ref=e99]: Steering
+          - generic [ref=e100]: Claude
+          - generic [ref=e101]: "Code:"
+          - generic [ref=e102]: CLAUDE.md
+          - generic [ref=e103]: files,
+          - generic [ref=e104]: skills,
+          - generic [ref=e105]: hooks,
+          - generic [ref=e106]: rules,
+          - generic [ref=e107]: subagents
+          - generic [ref=e108]: and
+          - generic [ref=e109]: more
+        - list [ref=e111]:
+          - listitem [ref=e112]:
+            - img [ref=e115]
+            - generic [ref=e117]:
+              - generic [ref=e118]: Category
+              - list [ref=e120]:
+                - listitem [ref=e121]:
+                  - link "Claude Code" [ref=e122] [cursor=pointer]:
+                    - /url: https://claude.com/blog/category/claude-code
+          - listitem [ref=e123]:
+            - img [ref=e126]
+            - generic [ref=e128]:
+              - generic [ref=e129]: Product
+              - list [ref=e131]:
+                - listitem [ref=e132]:
+                  - generic [ref=e133]: Claude Code
+          - listitem [ref=e134]:
+            - img [ref=e137]
+            - generic [ref=e139]:
+              - generic [ref=e140]: Date
+              - generic [ref=e141]: June 18, 2026
+          - listitem [ref=e142]:
+            - img [ref=e145]
+            - generic [ref=e147]:
+              - generic [ref=e148]: Reading time
+              - generic [ref=e149]:
+                - generic [ref=e150]: "5"
+                - generic [ref=e151]: min
+          - listitem [ref=e152]:
+            - img [ref=e155]
+            - generic [ref=e157]:
+              - generic [ref=e158]: Share
+              - link "Copy link" [ref=e159] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e166]:
+        - generic [ref=e169]:
+          - paragraph [ref=e170]: Claude is built to work the way you work, and in Claude Code you can customize it.
+          - paragraph [ref=e171]:
+            - text: "There are seven methods for instructing Claude's behavior: CLAUDE.md files, rules,"
+            - link "skills" [ref=e172] [cursor=pointer]:
+              - /url: https://code.claude.com/docs/en/skills
+              - strong [ref=e173]: skills
+            - text: ","
+            - link "subagents" [ref=e174] [cursor=pointer]:
+              - /url: https://code.claude.com/docs/en/sub-agents
+              - strong [ref=e175]: subagents
+            - text: ","
+            - link "hooks" [ref=e176] [cursor=pointer]:
+              - /url: https://code.claude.com/docs/en/hooks-guide
+              - strong [ref=e177]: hooks
+            - text: ", output styles, and appending the system prompt."
+          - paragraph [ref=e178]: "Each method controls:"
+          - list [ref=e179]:
+            - listitem [ref=e180]: When an instruction loads into context;
+            - listitem [ref=e181]: Whether it persists through long sessions (compaction behavior); and
+            - listitem [ref=e182]: How much authority it carries.
+          - paragraph [ref=e183]: The table below provides a quick summary of key differences across each method while the post provides additional detail and decision framework for determining where each of your Claude instructions belongs.
+          - figure [ref=e185]:
+            - region "Claude Code customization methods comparison" [ref=e186]:
+              - table [ref=e187]:
+                - rowgroup [ref=e188]:
+                  - row "Method When it's loaded Compaction behavior Context cost When to use" [ref=e189]:
+                    - columnheader "Method" [ref=e190]
+                    - columnheader "When it's loaded" [ref=e191]
+                    - columnheader "Compaction behavior" [ref=e192]
+                    - columnheader "Context cost" [ref=e193]
+                    - columnheader "When to use" [ref=e194]
+                - rowgroup [ref=e195]:
+                  - row "CLAUDE.md (root) Session start; stays in context for the entire session Memoized. Read once and cached for the session; cache cleared and re-read after compaction High. Every line costs tokens whether relevant or not Build commands, directory layout, monorepo structure, coding conventions, team norms" [ref=e196]:
+                    - cell "CLAUDE.md (root)" [ref=e197]
+                    - cell "Session start; stays in context for the entire session" [ref=e198]
+                    - cell "Memoized. Read once and cached for the session; cache cleared and re-read after compaction" [ref=e199]
+                    - cell "High. Every line costs tokens whether relevant or not" [ref=e200]
+                    - cell "Build commands, directory layout, monorepo structure, coding conventions, team norms" [ref=e201]
+                  - row "CLAUDE.md (subdirectory) On-demand, when Claude reads a file under that subdirectory Lost until that subdirectory is touched again Low. Only consumes context when the relevant subdirectory is being worked on Conventions specific to a subdirectory" [ref=e202]:
+                    - cell "CLAUDE.md (subdirectory)" [ref=e203]
+                    - cell "On-demand, when Claude reads a file under that subdirectory" [ref=e204]
+                    - cell "Lost until that subdirectory is touched again" [ref=e205]
+                    - cell "Low. Only consumes context when the relevant subdirectory is being worked on" [ref=e206]
+                    - cell "Conventions specific to a subdirectory" [ref=e207]
+                  - row "Rules Session start (user-level rules) or only when matching files are touched (path-scoped) Re-injected on compaction Medium. Always-on unless path-scoped Specific constraints or conventions (e.g., all API handlers must validate input with Zod)" [ref=e208]:
+                    - cell "Rules" [ref=e209]
+                    - cell "Session start (user-level rules) or only when matching files are touched (path-scoped)" [ref=e210]
+                    - cell "Re-injected on compaction" [ref=e211]
+                    - cell "Medium. Always-on unless path-scoped" [ref=e212]
+                    - cell "Specific constraints or conventions (e.g., all API handlers must validate input with Zod)" [ref=e213]
+                  - row "Skills Name and description at session start; full body loads when the skill is invoked Invoked skills re-injected up to a shared budget; oldest dropped first Low. Full body loads only when invoked; subject to a shared token budget across invoked skills Procedural workflows (deploy or release checklists)" [ref=e214]:
+                    - cell "Skills" [ref=e215]
+                    - cell "Name and description at session start; full body loads when the skill is invoked" [ref=e216]
+                    - cell "Invoked skills re-injected up to a shared budget; oldest dropped first" [ref=e217]
+                    - cell "Low. Full body loads only when invoked; subject to a shared token budget across invoked skills" [ref=e218]
+                    - cell "Procedural workflows (deploy or release checklists)" [ref=e219]
+                  - row "Subagents Name, description, and tool list at session start; body loads only when called via the Agent tool Only the final message (summary plus metadata) returns to the main session Low. Zero cost in main context until called; runs in its own isolated context window Running work in parallel or side tasks that should run in isolation and return only a summary (deep search, log analysis, dependency audit)" [ref=e220]:
+                    - cell "Subagents" [ref=e221]
+                    - cell "Name, description, and tool list at session start; body loads only when called via the Agent tool" [ref=e222]
+                    - cell "Only the final message (summary plus metadata) returns to the main session" [ref=e223]
+                    - cell "Low. Zero cost in main context until called; runs in its own isolated context window" [ref=e224]
+                    - cell "Running work in parallel or side tasks that should run in isolation and return only a summary (deep search, log analysis, dependency audit)" [ref=e225]
+                  - 'row "Hooks Fire on lifecycle events Bypass compaction entirely Low. Configuration lives outside main context; some output may return (e.g., blocking errors) Deterministic automation: run linters, post to Slack on completion, block commands, back up chat history on PreCompact" [ref=e226]':
+                    - cell "Hooks" [ref=e227]
+                    - cell "Fire on lifecycle events" [ref=e228]
+                    - cell "Bypass compaction entirely" [ref=e229]
+                    - cell "Low. Configuration lives outside main context; some output may return (e.g., blocking errors)" [ref=e230]
+                    - 'cell "Deterministic automation: run linters, post to Slack on completion, block commands, back up chat history on PreCompact" [ref=e231]'
+                  - row "Output styles Session start; injected into the system prompt Never compacted High. Occupies context window, but overwrites default system prompt Significant role changes (code assistant to general assistant)" [ref=e232]:
+                    - cell "Output styles" [ref=e233]
+                    - cell "Session start; injected into the system prompt" [ref=e234]
+                    - cell "Never compacted" [ref=e235]
+                    - cell "High. Occupies context window, but overwrites default system prompt" [ref=e236]
+                    - cell "Significant role changes (code assistant to general assistant)" [ref=e237]
+                  - row "Appending the system prompt Session start; passed as a CLI flag Never compacted; applies only to that invocation Moderate. Cached after first request in a session Tone, response length, formatting preferences" [ref=e238]:
+                    - cell "Appending the system prompt" [ref=e239]
+                    - cell "Session start; passed as a CLI flag" [ref=e240]
+                    - cell "Never compacted; applies only to that invocation" [ref=e241]
+                    - cell "Moderate. Cached after first request in a session" [ref=e242]
+                    - cell "Tone, response length, formatting preferences" [ref=e243]
+          - heading "The seven methods for delivering instructions" [level=2] [ref=e244]
+          - heading "CLAUDE.md files" [level=3] [ref=e245]
+          - paragraph [ref=e246]: CLAUDE.md is a markdown file at the root of your project. It loads into context at session start and stays there for the entire session.
+          - paragraph [ref=e247]: Build commands, directory layout, monorepo structure, coding conventions, and team norms all fit naturally here.
+          - paragraph [ref=e248]: "There are two types, and they load differently:"
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - strong [ref=e251]: Always loaded
+              - text: ": The first type is a root CLAUDE.md file, either in a shared repository and/or saved locally for your personal preferences specific to a project. All these files load at session start, and won’t get lost or degraded across long sessions. When Claude Code compacts the conversation, it re-reads these files."
+            - listitem [ref=e252]:
+              - strong [ref=e253]: "On-demand:"
+              - text: CLAUDE.md files in subdirectories below the folder where you initialized the session. For example,
+              - code [ref=e254]: app/api/CLAUDE.md
+              - text: loads when Claude reads a file under
+              - code [ref=e255]: app/api
+              - text: ", not at session start. It shares the compaction behavior of path-scoped rules: gone until that subdirectory is touched again."
+          - figure "All subdirectory CLAUDE.md files below the cwd load when Claude reads a file within that directory." [ref=e256]:
+            - generic [ref=e257]: All subdirectory CLAUDE.md files below the cwd load when Claude reads a file within that directory.
+          - paragraph [ref=e258]: "In a shared repository, CLAUDE.md grows the way any unowned config file does: every team appends its own instructions and nothing gets deleted. The cost compounds at scale."
+          - paragraph [ref=e259]: Every line loads into every session for every engineer working in the repo, whether it's relevant to their task or not. This consumes tokens and dilutes adherence to the instructions that actually matter. As the file grows, push team-specific conventions into path-scoped rules and procedures into skills, where they load only when relevant.
+          - paragraph [ref=e260]:
+            - strong [ref=e261]: "Tip:"
+            - text: Keep CLAUDE.md under 200 lines, give it an owner, and review changes to it like code. Think of this file as giving Claude an overview of your codebase, or as an index pointing to other files where Claude can find more information as needed.
+          - paragraph [ref=e262]: In monorepos, give each team's directory its own subdirectory CLAUDE.md so teams only load their own conventions, and developers can use the claudeMdExcludes setting to skip files from teams whose code they never touch.
+          - paragraph [ref=e263]: For standards that must apply to every repository in the organization — security policies, compliance requirements — a centrally managed CLAUDE.md can be deployed to developer machines via MDM or config management, and it can't be excluded by individual settings.
+          - paragraph [ref=e264]:
+            - text: More on setting up CLAUDE.md in our blog post,
+            - 'link "CLAUDE.md files: Customizing Claude Code for your codebase" [ref=e265] [cursor=pointer]':
+              - /url: https://claude.com/blog/using-claude-md-files
+            - text: .
+        - generic [ref=e267]:
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - button "Get Claude Code" [ref=e274] [cursor=pointer]:
+                - generic [ref=e275]: Get Claude Code
+                - img [ref=e278]
+              - button "curl -fsSL https://claude.ai/install.sh | bash Copy command to clipboard" [ref=e281] [cursor=pointer]:
+                - generic [ref=e282]: curl -fsSL https://claude.ai/install.sh | bash
+                - generic [ref=e283]:
+                  - generic [ref=e284]: Copy command to clipboard
+                  - img [ref=e286]
+            - generic [ref=e288]:
+              - text: Or read the
+              - link "documentation" [ref=e289] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/overview
+          - generic [ref=e291]:
+            - heading "Rules" [level=3] [ref=e292]
+            - paragraph [ref=e293]:
+              - link "Rules" [ref=e294] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/
+                - strong [ref=e295]: Rules
+              - text: are markdown files in
+              - code [ref=e296]: .claude/rules/
+              - text: that give Claude specific constraints or conventions.
+            - paragraph [ref=e297]: Unscoped rules behave like CLAUDE.md in that they are always loaded at session start and get re-injected on compaction. This can waste tokens by loading context even when it's not relevant for the task at hand.
+            - paragraph [ref=e298]:
+              - text: Path-scoped rules allow you to load rule instructions only when they are relevant by adding a
+              - code [ref=e299]: paths
+              - text: field that controls when they load.
+            - paragraph [ref=e300]:
+              - text: "For example: a rule scoped to"
+              - code [ref=e301]: src/api/**
+              - text: stays out of context during a docs-only session. It would only be loaded whenever Claude reads files within that
+              - code [ref=e302]: src/api/
+              - text: directory.
+            - paragraph [ref=e303]: "Here’s what that looks like:"
+            - code [ref=e305]:
+              - generic [ref=e306]: "---"
+              - generic [ref=e307]: "paths:"
+              - generic [ref=e308]: "- \"src/api/**\""
+              - generic [ref=e309]: "- \"**/*.handler.ts\""
+              - generic [ref=e310]: "---"
+              - generic [ref=e311]: All API handlers must validate input with Zod before processing.
+            - paragraph [ref=e312]:
+              - strong [ref=e313]: Tip
+              - text: ": A file-specific constraint, like \"migrations are append-only,\" fits best as a"
+              - strong [ref=e314]: rule
+              - text: "placed in your paths: frontmatter. Reach for a path scoped rule over a nested CLAUDE.md file when the instruction regards a cross-cutting concern or file that appears in multiple (but not all) corners of the codebase."
+            - heading "Skills" [level=3] [ref=e315]
+            - paragraph [ref=e316]:
+              - link "Skills" [ref=e317] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/skills
+                - strong [ref=e318]: Skills
+              - text: live in
+              - code [ref=e319]: .claude/skills/
+              - text: as folders of instructions, scripts, and resources that Claude loads dynamically. Each skill has a
+              - code [ref=e320]: SKILL.md
+              - text: file with a name, description, and body.
+            - paragraph [ref=e321]: Only the name and description load at session start; the full body loads when Claude invokes the skill, either through a slash command (/code-review) or by auto-matching the task.
+            - figure "Skills are triggered via your system prompt." [ref=e322]:
+              - generic [ref=e323]: Skills are triggered via your system prompt.
+            - paragraph [ref=e324]:
+              - text: For example,
+              - code [ref=e325]: /code-review
+              - text: is a built-in skill that reviews your current diff and reports its findings without editing files. The skill defines the playbook so Claude follows the same structured approach every time you invoke it.
+            - paragraph [ref=e326]: On compaction, Claude Code re-injects invoked skills up to a total budget across all invoked skills. If you’ve invoked many skills during a session, the oldest ones drop first.
+            - paragraph [ref=e327]:
+              - strong [ref=e328]: "Tip:"
+              - text: Instructions that are procedural, like deploy workflows, release checklists, or review processes, belong in a skill rather than in CLAUDE.md.
+            - paragraph [ref=e329]:
+              - text: Claude Code ships with skills, but you can also write your own custom skills. Our
+              - link "complete guide to building skills for Claude" [ref=e330] [cursor=pointer]:
+                - /url: https://claude.com/blog/complete-guide-to-building-skills-for-claude
+              - text: shows you how.
+            - heading "Subagents" [level=3] [ref=e331]
+            - paragraph [ref=e332]:
+              - link "Subagents" [ref=e333] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/sub-agents
+                - strong [ref=e334]: Subagents
+              - text: are markdown files in
+              - code [ref=e335]: .claude/agents/
+              - text: that define isolated assistants for specific side tasks. Each file uses YAML frontmatter (name, description, plus optional fields for model and tool access) followed by a body that becomes that subagent's system prompt.
+            - paragraph [ref=e336]: Subagents are similar to skills in that the name, description, and tool list load at session start, but the larger context within the body of the agent doesn’t auto-invoke. Claude calls them via the Agent tool, passing in a prompt string.
+            - figure "Claude Code’s context window holds everything Claude knows about your session. The interactive timeline here walks through what loads and when." [ref=e337]:
+              - generic [ref=e338]:
+                - text: Claude Code’s context window holds everything Claude knows about your session. The
+                - link "interactive timeline here" [ref=e339] [cursor=pointer]:
+                  - /url: https://code.claude.com/docs/en/context-window
+                - text: walks through what loads and when.
+            - paragraph [ref=e340]: Not only does the larger instructional context within the body of the subagent not auto-invoke, it never enters the parent conversation at all.
+            - paragraph [ref=e341]: The subagent then runs in its own fresh context window, and the only thing that returns to your main session is the subagent’s final message (often the aggregated result of many subtasks) plus metadata.
+            - paragraph [ref=e342]:
+              - text: "This pattern scales: subagents can nest up to five levels deep, and"
+              - link "dynamic workflows" [ref=e343] [cursor=pointer]:
+                - /url: https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code
+              - text: orchestrate tens to hundreds of background agents without requiring you to specify each detail of the subagent architecture. The orchestration plan and intermediate results live in script variables rather than in Claude’s context window, which enables scale without losing instructional fidelity.
+            - paragraph [ref=e344]:
+              - strong [ref=e345]: "Tip:"
+              - text: That isolation is one of the main reasons to reach for a subagent instead of a skill. Use a subagent when a side task like deep search, a log analysis pass, or a dependency audit would clutter your main conversation with intermediate results you won't reference again. Use a skill when you want the procedure to play out inside the main thread so you can see and steer each step.
+            - heading "Hooks" [level=3] [ref=e346]
+            - paragraph [ref=e347]:
+              - link "Hooks" [ref=e348] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/hooks-guide
+                - strong [ref=e349]: Hooks
+              - text: are user-defined commands, HTTP endpoints, or LLM prompts that provide more deterministic control over Claude’s behavior by firing on
+              - link "specific events in Claude’s lifecycle" [ref=e350] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/hooks#hook-lifecycle
+              - text: like file edits, tool calls, or session start.
+            - figure "A map of events in a Claude Code session when a hook can fire." [ref=e351]:
+              - generic [ref=e352]: A map of events in a Claude Code session when a hook can fire.
+            - paragraph [ref=e353]:
+              - text: You register hooks in
+              - code [ref=e354]: settings.json
+              - text: ", managed policy settings, or skill/agent frontmatter."
+            - paragraph [ref=e355]: "There are several types of hooks: command, HTTP, mcp_tool, prompt, and agent. All hooks are deterministically triggered. The first three execute deterministically while the latter two, prompt and agent, use Claude’s judgment rather than a set of rules to determine the output."
+            - paragraph [ref=e356]: Hooks have low context costs because the configuration or instruction lives outside the main context window. The harness runs the handler (command, http, mcp_tool) or makes model calls with separate windows (prompt, agent) depending on the hook type.
+            - paragraph [ref=e357]: Some hooks may have the output saved to the main context window. For example, a blocking hook's standard error is saved within context so Claude knows why the call was denied.
+            - paragraph [ref=e358]:
+              - text: But most hooks won’t have the output saved to the main window unless the configuration explicitly returns it. If you backed up your chat history into another file for later reference before compaction using the
+              - code [ref=e359]: PreCompact
+              - text: event, Claude wouldn’t know which file had the chat history saved.
+            - paragraph [ref=e360]:
+              - text: This makes these hook types fundamentally different from CLAUDE.md, rules, and skills. You can learn more in our post
+              - strong [ref=e361]
+              - link "how to configure hooks" [ref=e362] [cursor=pointer]:
+                - /url: https://claude.com/blog/how-to-configure-hooks
+                - strong [ref=e363]: how to configure hooks
+              - text: .
+            - paragraph [ref=e364]:
+              - strong [ref=e365]: "Tip:"
+              - text: "Use hooks for anything that should happen deterministically: running linters after edits, posting to Slack on completion, or blocking specific commands before they execute. A"
+              - code [ref=e366]: PreToolUse
+              - text: hook can inspect any tool call and exit code 2 to deny it.
+            - paragraph [ref=e367]: They have low context cost because they are code that the harness runs rather than instructions to Claude that get loaded into context.
+            - heading "Output styles" [level=3] [ref=e368]
+            - paragraph [ref=e369]:
+              - link "Output styles" [ref=e370] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/output-styles
+                - strong [ref=e371]: Output styles
+              - text: are files in
+              - code [ref=e372]: .claude/output-styles/
+              - text: that inject instructions into the system prompt. They never get compacted, load at the start of every session, and are cached after the first request within a session, meaning they have a moderate context cost.
+            - paragraph [ref=e373]: Because they sit in the system prompt, output styles carry the highest instruction-following weight of any method that we've covered so far and should be used judiciously.
+            - paragraph [ref=e374]:
+              - strong [ref=e375]: Changes to the output style will replace the default output style
+              - text: "(unless you set keep-coding-instructions: true in the style's frontmatter)."
+            - paragraph [ref=e376]: "In Claude Code, this would remove instructions that tell Claude it is helping users with software engineering tasks and contains other critical default instructions such as:"
+            - list [ref=e377]:
+              - listitem [ref=e378]: How to scope changes;
+              - listitem [ref=e379]: When to add or omit code comments;
+              - listitem [ref=e380]: What to do about security concerns; and
+              - listitem [ref=e381]: Verification habits like running tests before declaring work complete.
+            - paragraph [ref=e382]: By default, a custom output style drops all of this and Claude Code becomes more of a general assistant than a software engineer assistant.
+            - paragraph [ref=e383]:
+              - strong [ref=e384]: Tip
+              - text: ": Before writing a custom output style, check the built-in styles."
+              - strong [ref=e385]: Proactive
+              - text: ","
+              - strong [ref=e386]: Explanatory
+              - text: ", and"
+              - strong [ref=e387]: Learning
+              - text: cover the most common needs (autonomy, teaching mode, collaborative coding) without you having to maintain a style file.
+            - heading "Appending the system prompt" [level=3] [ref=e388]
+            - paragraph [ref=e389]:
+              - text: An alternative to modifying output styles is the
+              - code [ref=e390]: append-system-prompt
+              - text: flag. Whereas modifying output style files can have large, unintended changes to Claude’s behavior, the append flag is only additive to the original system prompt. It doesn’t modify Claude’s role; it just adds instructions to its default role.
+            - paragraph [ref=e391]: It is also passed at invocation time, and only applies to that invocation, rather than persisted as a file across sessions.
+            - paragraph [ref=e392]: Appending the system prompt can have a higher context cost compared to other methods of passing instructions. It increases input tokens, though prompt caching reduces this cost after the first request in a session. Instructing Claude to use a more verbose or longer style also increases output tokens.
+            - paragraph [ref=e393]:
+              - strong [ref=e394]: "Tip:"
+              - text: Appending the system prompt is best for adding specific coding standards, output formatting, or domain-specific knowledge. Keep in mind that appending the system prompt has diminishing returns for adherence. Generally, the more instructions you provide using this method, the less strictly Claude will follow them, particularly if any contradict.
+            - heading "Quick tips for Claude Code customization" [level=2] [ref=e395]
+            - paragraph [ref=e396]: "If you find yourself doing one of the following, you may want to consider an alternative location for your instructions:"
+            - paragraph [ref=e397]:
+              - strong [ref=e398]: "\"Every time X, always do Y\" in CLAUDE.md."
+              - text: If the behavior should happen reliably, like running prettier after every edit or posting to Slack on completion, use a hook in
+              - code [ref=e399]: settings.json
+              - text: instead. The model choosing to run a formatter is different from the formatter running automatically.
+            - paragraph [ref=e400]:
+              - strong [ref=e401]: “Never do this” in CLAUDE.md
+              - text: . When there's something that absolutely must not happen, an instruction is the wrong tool. Claude will follow the instruction most of the time, but when under pressure, in a long session or an ambiguous situation, or due to a prompt injection in a file accessed as part of the task, the model can fail to follow a prompted rule. A real guardrail needs to be deterministic, and the enforcement methods are
+              - link "hooks" [ref=e402] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/hooks
+              - text: and
+              - link "permissions" [ref=e403] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/permissions
+              - text: . A
+              - code [ref=e404]: PreToolUse
+              - text: hook can inspect a call and exit with code 2 to block it.
+              - link "Managed settings" [ref=e405] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/settings#managed-settings
+                - strong [ref=e406]: Managed settings
+              - strong [ref=e407]
+              - text: "go further: they are admin-deployed, cannot be overridden by a user's local config, and are the only way to enforce a deterministic, organization-wide guardrail."
+            - paragraph [ref=e408]:
+              - strong [ref=e409]: A 30-line procedure in CLAUDE.md.
+              - text: "Procedures belong in skills. CLAUDE.md is for facts Claude should hold all the time: build commands, monorepo layout, team conventions. A deployment runbook or a security review checklist should live in"
+              - code [ref=e410]: .claude/skills/
+              - text: ", where the body loads only when invoked."
+            - paragraph [ref=e411]:
+              - strong [ref=e412]: An API-specific rule without paths.
+              - text: If a rule only applies to
+              - code [ref=e413]: src/api/**
+              - text: ", scoping it with"
+              - code [ref=e414]: "paths:"
+              - text: "keeps it out of context during unrelated work. An unscoped rule is mechanically identical to putting the content in CLAUDE.md: always loaded, always costing tokens."
+            - paragraph [ref=e415]:
+              - strong [ref=e416]: Writing personal preferences to a project-level CLAUDE.md file.
+              - text: All file-based methods have a user-level counterpart loaded for every Claude Code session regardless of which repo you’re in. Use local files for personal preferences (always use semantic commit messages). Keep project-level files for preferences that are team-wide but specific to a given codebase.
+            - heading "Getting started" [level=2] [ref=e417]
+            - paragraph [ref=e418]:
+              - text: You can find more tips and patterns for getting the most out of Claude Code, from configuring your environment to scaling across parallel sessions, in our
+              - link "best practices for Claude Code" [ref=e419] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md
+              - text: documentation.
+            - paragraph [ref=e420]:
+              - text: Once you have a few of these working, you can bundle many of them (skills, subagents, hooks, output styles) as a
+              - link "plugin" [ref=e421] [cursor=pointer]:
+                - /url: https://code.claude.com/docs/en/plugins
+              - text: to share a coherent setup across teammates or projects.
+      - generic [ref=e426]:
+        - generic [ref=e427]:
+          - heading "Related posts" [level=2] [ref=e430]
+          - paragraph [ref=e433]: Explore more product news and best practices for teams building with Claude.
+        - list [ref=e436]:
+          - listitem [ref=e437]:
+            - generic [ref=e438]:
+              - generic [ref=e443]:
+                - generic [ref=e444]:
+                  - generic [ref=e445]: Jun 17, 2026
+                  - heading "Meet the winners of our Claude Opus 4.8 Build Day hackathon" [level=3] [ref=e446]
+                - list [ref=e448]:
+                  - listitem [ref=e449]:
+                    - generic [ref=e451]: Claude Code
+              - link "Meet the winners of our Claude Opus 4.8 Build Day hackathon" [ref=e453] [cursor=pointer]:
+                - /url: /blog/meet-the-winners-of-our-claude-opus-4-8-build-day-hackathon
+                - generic [ref=e454]: Meet the winners of our Claude Opus 4.8 Build Day hackathon
+          - listitem [ref=e455]:
+            - generic [ref=e456]:
+              - generic [ref=e461]:
+                - generic [ref=e462]:
+                  - generic [ref=e463]: Jun 15, 2026
+                  - heading "Meet the winners of the Built with Opus 4.7 Claude Code hackathon" [level=3] [ref=e464]
+                - list [ref=e466]:
+                  - listitem [ref=e467]:
+                    - generic [ref=e469]: Claude Code
+              - link "Meet the winners of the Built with Opus 4.7 Claude Code hackathon" [ref=e471] [cursor=pointer]:
+                - /url: /blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon
+                - generic [ref=e472]: Meet the winners of the Built with Opus 4.7 Claude Code hackathon
+          - listitem [ref=e473]:
+            - generic [ref=e474]:
+              - generic [ref=e475]:
+                - generic [ref=e476]:
+                  - generic [ref=e477]: Oct 8, 2025
+                  - 'heading "Beyond permission prompts: making Claude Code more secure and autonomous" [level=3] [ref=e478]'
+                - list [ref=e480]:
+                  - listitem [ref=e481]:
+                    - generic [ref=e483]: Claude Code
+              - 'link "Beyond permission prompts: making Claude Code more secure and autonomous" [ref=e485] [cursor=pointer]':
+                - /url: /blog/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous
+                - generic [ref=e486]: "Beyond permission prompts: making Claude Code more secure and autonomous"
+          - listitem [ref=e487]:
+            - generic [ref=e488]:
+              - generic [ref=e493]:
+                - generic [ref=e494]:
+                  - generic [ref=e495]: Jun 5, 2026
+                  - heading "How one Anthropic seller rebuilt his team's workflows with Claude Code" [level=3] [ref=e496]
+                - list [ref=e498]:
+                  - listitem [ref=e499]:
+                    - generic [ref=e501]: Claude Code
+              - link "How one Anthropic seller rebuilt his team's workflows with Claude Code" [ref=e503] [cursor=pointer]:
+                - /url: /blog/how-anthropic-uses-claude-gtm-engineering
+                - generic [ref=e504]: How one Anthropic seller rebuilt his team's workflows with Claude Code
+      - generic [ref=e511]:
+        - generic [ref=e513]:
+          - heading "Transform how your organization operates with Claude" [level=2] [ref=e515]
+          - generic [ref=e517]:
+            - generic [ref=e518]:
+              - generic [ref=e519]: See pricing
+              - link "See pricing" [ref=e521] [cursor=pointer]:
+                - /url: https://claude.com/pricing#api
+                - generic [ref=e522]: See pricing
+            - generic [ref=e523]:
+              - generic [ref=e524]: Contact sales
+              - link "Contact sales" [ref=e526] [cursor=pointer]:
+                - /url: https://claude.com/contact-sales
+                - generic [ref=e527]: Contact sales
+        - generic [ref=e533]:
+          - img [ref=e537]
+          - paragraph [ref=e545]: Get the developer newsletter
+          - paragraph [ref=e547]: Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.
+          - form "Claude developer newsletter subscription" [ref=e549]:
+            - generic [ref=e550]:
+              - textbox "email" [ref=e551]:
+                - /placeholder: Enter your email
+              - generic [ref=e552] [cursor=pointer]:
+                - img [ref=e555]
+                - button "Subscribe" [ref=e558]:
+                  - generic [ref=e559]: Subscribe
+            - paragraph [ref=e561]: Please provide your email address if you'd like to receive our monthly developer newsletter. You can unsubscribe at any time.
+    - generic [ref=e566]:
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - generic [ref=e569]:
+            - generic [ref=e570]:
+              - img [ref=e572]
+              - link "Homepage" [ref=e576] [cursor=pointer]:
+                - /url: https://claude.com
+                - generic [ref=e577]: Homepage
+            - generic [ref=e579]:
+              - form "Footer Prompt" [ref=e582]:
+                - generic [ref=e583]:
+                  - textbox "How can I help you today?" [ref=e584]
+                  - generic [ref=e585]:
+                    - img [ref=e588]
+                    - button "Next" [ref=e591] [cursor=pointer]:
+                      - generic [ref=e592]: Next
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - img [ref=e597]
+                  - generic [ref=e599]: Write
+                  - button "Button Text" [ref=e601] [cursor=pointer]:
+                    - generic [ref=e602]: Button Text
+                - generic [ref=e603]:
+                  - img [ref=e606]
+                  - generic [ref=e608]: Learn
+                  - button "Button Text" [ref=e610] [cursor=pointer]:
+                    - generic [ref=e611]: Button Text
+                - generic [ref=e612]:
+                  - img [ref=e615]
+                  - generic [ref=e617]: Code
+                  - button "Button Text" [ref=e619] [cursor=pointer]:
+                    - generic [ref=e620]: Button Text
+          - generic [ref=e621]:
+            - generic [ref=e622]:
+              - img [ref=e623]
+              - link "Anthropic" [ref=e636] [cursor=pointer]:
+                - /url: https://www.anthropic.com/
+                - generic [ref=e637]: Anthropic
+            - generic [ref=e638]: © 2026 Anthropic PBC
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - generic [ref=e642]:
+              - generic [ref=e643]: Products
+              - list [ref=e644]:
+                - listitem [ref=e645]:
+                  - generic [ref=e646]: Claude
+                  - link "Claude" [ref=e648] [cursor=pointer]:
+                    - /url: /product/overview
+                    - generic [ref=e649]: Claude
+                - listitem [ref=e650]:
+                  - generic [ref=e651]: Claude Code
+                  - link "Claude Code" [ref=e653] [cursor=pointer]:
+                    - /url: /product/claude-code
+                    - generic [ref=e654]: Claude Code
+                - listitem [ref=e655]:
+                  - generic [ref=e656]: Claude Code for Enterprise
+                  - link "Claude Code for Enterprise" [ref=e658] [cursor=pointer]:
+                    - /url: /product/claude-code/enterprise
+                    - generic [ref=e659]: Claude Code for Enterprise
+                - listitem [ref=e660]:
+                  - generic [ref=e661]: Claude Cowork
+                  - link "Claude Cowork" [ref=e663] [cursor=pointer]:
+                    - /url: /product/cowork
+                    - generic [ref=e664]: Claude Cowork
+                - listitem [ref=e665]:
+                  - generic [ref=e666]: Claude Design
+                  - link "Claude Design" [ref=e668] [cursor=pointer]:
+                    - /url: /product/design
+                    - generic [ref=e669]: Claude Design
+                - listitem [ref=e670]:
+                  - generic [ref=e671]: Claude Security
+                  - link "Claude Security" [ref=e673] [cursor=pointer]:
+                    - /url: /product/claude-security
+                    - generic [ref=e674]: Claude Security
+                - listitem [ref=e675]:
+                  - generic [ref=e676]: Download app
+                  - link "Download app" [ref=e678] [cursor=pointer]:
+                    - /url: /download
+                    - generic [ref=e679]: Download app
+                - listitem [ref=e680]:
+                  - generic [ref=e681]: Pricing
+                  - link "Pricing" [ref=e683] [cursor=pointer]:
+                    - /url: /pricing
+                    - generic [ref=e684]: Pricing
+                - listitem [ref=e685]:
+                  - generic [ref=e686]: Log in
+                  - link "Log in" [ref=e688] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e689]: Log in
+            - generic [ref=e690]:
+              - generic [ref=e691]: Features
+              - list [ref=e692]:
+                - listitem [ref=e693]:
+                  - generic [ref=e694]: Claude for Chrome
+                  - link "Claude for Chrome" [ref=e696] [cursor=pointer]:
+                    - /url: /claude-for-chrome
+                    - generic [ref=e697]: Claude for Chrome
+                - listitem [ref=e698]:
+                  - generic [ref=e699]: Claude for Slack
+                  - link "Claude for Slack" [ref=e701] [cursor=pointer]:
+                    - /url: /claude-for-slack
+                    - generic [ref=e702]: Claude for Slack
+                - listitem [ref=e703]:
+                  - generic [ref=e704]: Claude for Microsoft 365
+                  - link "Claude for Microsoft 365" [ref=e706] [cursor=pointer]:
+                    - /url: /claude-for-microsoft-365
+                    - generic [ref=e707]: Claude for Microsoft 365
+                - listitem [ref=e708]:
+                  - generic [ref=e709]: Skills
+                  - link "Skills" [ref=e711] [cursor=pointer]:
+                    - /url: /skills
+                    - generic [ref=e712]: Skills
+            - generic [ref=e713]:
+              - generic [ref=e714]: Models
+              - list [ref=e715]:
+                - listitem [ref=e716]:
+                  - generic [ref=e717]: Mythos
+                  - link "Mythos" [ref=e719] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/mythos
+                    - generic [ref=e720]: Mythos
+                - listitem [ref=e721]:
+                  - generic [ref=e722]: Fable
+                  - link "Fable" [ref=e724] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/fable
+                    - generic [ref=e725]: Fable
+                - listitem [ref=e726]:
+                  - generic [ref=e727]: Opus
+                  - link "Opus" [ref=e729] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/opus
+                    - generic [ref=e730]: Opus
+                - listitem [ref=e731]:
+                  - generic [ref=e732]: Sonnet
+                  - link "Sonnet" [ref=e734] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/sonnet
+                    - generic [ref=e735]: Sonnet
+                - listitem [ref=e736]:
+                  - generic [ref=e737]: Haiku
+                  - link "Haiku" [ref=e739] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/haiku
+                    - generic [ref=e740]: Haiku
+          - generic [ref=e741]:
+            - generic [ref=e742]:
+              - generic [ref=e743]: Solutions
+              - list [ref=e744]:
+                - listitem [ref=e745]:
+                  - generic [ref=e746]: AI agents
+                  - link "AI agents" [ref=e748] [cursor=pointer]:
+                    - /url: /solutions/agents
+                    - generic [ref=e749]: AI agents
+                - listitem [ref=e750]:
+                  - generic [ref=e751]: Code modernization
+                  - link "Code modernization" [ref=e753] [cursor=pointer]:
+                    - /url: /solutions/code-modernization
+                    - generic [ref=e754]: Code modernization
+                - listitem [ref=e755]:
+                  - generic [ref=e756]: Coding
+                  - link "Coding" [ref=e758] [cursor=pointer]:
+                    - /url: /solutions/coding
+                    - generic [ref=e759]: Coding
+                - listitem [ref=e760]:
+                  - generic [ref=e761]: Customer support
+                  - link "Customer support" [ref=e763] [cursor=pointer]:
+                    - /url: /solutions/customer-support
+                    - generic [ref=e764]: Customer support
+                - listitem [ref=e765]:
+                  - generic [ref=e766]: Education
+                  - link "Education" [ref=e768] [cursor=pointer]:
+                    - /url: /solutions/education
+                    - generic [ref=e769]: Education
+                - listitem [ref=e770]:
+                  - generic [ref=e771]: Enterprise
+                  - link "Enterprise" [ref=e773] [cursor=pointer]:
+                    - /url: /solutions/enterprise
+                    - generic [ref=e774]: Enterprise
+                - listitem [ref=e775]:
+                  - generic [ref=e776]: Financial services
+                  - link "Financial services" [ref=e778] [cursor=pointer]:
+                    - /url: /solutions/financial-services
+                    - generic [ref=e779]: Financial services
+                - listitem [ref=e780]:
+                  - generic [ref=e781]: Government
+                  - link "Government" [ref=e783] [cursor=pointer]:
+                    - /url: /solutions/government
+                    - generic [ref=e784]: Government
+                - listitem [ref=e785]:
+                  - generic [ref=e786]: Healthcare
+                  - link "Healthcare" [ref=e788] [cursor=pointer]:
+                    - /url: /solutions/healthcare
+                    - generic [ref=e789]: Healthcare
+                - listitem [ref=e790]:
+                  - generic [ref=e791]: Legal
+                  - link "Legal" [ref=e793] [cursor=pointer]:
+                    - /url: /solutions/legal
+                    - generic [ref=e794]: Legal
+                - listitem [ref=e795]:
+                  - generic [ref=e796]: Life sciences
+                  - link "Life sciences" [ref=e798] [cursor=pointer]:
+                    - /url: /solutions/life-sciences
+                    - generic [ref=e799]: Life sciences
+                - listitem [ref=e800]:
+                  - generic [ref=e801]: Nonprofits
+                  - link "Nonprofits" [ref=e803] [cursor=pointer]:
+                    - /url: /solutions/nonprofits
+                    - generic [ref=e804]: Nonprofits
+                - listitem [ref=e805]:
+                  - generic [ref=e806]: Security
+                  - link "Security" [ref=e808] [cursor=pointer]:
+                    - /url: /solutions/security
+                    - generic [ref=e809]: Security
+                - listitem [ref=e810]:
+                  - generic [ref=e811]: Small business
+                  - link "Small business" [ref=e813] [cursor=pointer]:
+                    - /url: /solutions/small-business
+                    - generic [ref=e814]: Small business
+                - listitem [ref=e815]:
+                  - generic [ref=e816]: Startups
+                  - link "Startups" [ref=e818] [cursor=pointer]:
+                    - /url: /programs/startups
+                    - generic [ref=e819]: Startups
+            - generic [ref=e820]:
+              - generic [ref=e821]: Claude Platform
+              - list [ref=e822]:
+                - listitem [ref=e823]:
+                  - generic [ref=e824]: Overview
+                  - link "Overview" [ref=e826] [cursor=pointer]:
+                    - /url: /platform/api
+                    - generic [ref=e827]: Overview
+                - listitem [ref=e828]:
+                  - generic [ref=e829]: Developer docs
+                  - link "Developer docs" [ref=e831] [cursor=pointer]:
+                    - /url: https://platform.claude.com/docs
+                    - generic [ref=e832]: Developer docs
+                - listitem [ref=e833]:
+                  - generic [ref=e834]: Pricing
+                  - link "Pricing" [ref=e836] [cursor=pointer]:
+                    - /url: https://claude.com/pricing#api
+                    - generic [ref=e837]: Pricing
+                - listitem [ref=e838]:
+                  - generic [ref=e839]: Marketplace
+                  - link "Marketplace" [ref=e841] [cursor=pointer]:
+                    - /url: /platform/marketplace
+                    - generic [ref=e842]: Marketplace
+                - listitem [ref=e843]:
+                  - generic [ref=e844]: Claude on AWS
+                  - link "Claude on AWS" [ref=e846] [cursor=pointer]:
+                    - /url: /partners/claude-on-aws
+                    - generic [ref=e847]: Claude on AWS
+                - listitem [ref=e848]:
+                  - generic [ref=e849]: Google Cloud
+                  - link "Google Cloud" [ref=e851] [cursor=pointer]:
+                    - /url: /partners/google-cloud
+                    - generic [ref=e852]: Google Cloud
+                - listitem [ref=e853]:
+                  - generic [ref=e854]: Microsoft Foundry
+                  - link "Microsoft Foundry" [ref=e856] [cursor=pointer]:
+                    - /url: /partners/microsoft-foundry
+                    - generic [ref=e857]: Microsoft Foundry
+                - listitem [ref=e858]:
+                  - generic [ref=e859]: Regional compliance
+                  - link "Regional compliance" [ref=e861] [cursor=pointer]:
+                    - /url: /regional-compliance
+                    - generic [ref=e862]: Regional compliance
+                - listitem [ref=e863]:
+                  - generic [ref=e864]: Console login
+                  - link "Console login" [ref=e866] [cursor=pointer]:
+                    - /url: https://platform.claude.com/
+                    - generic [ref=e867]: Console login
+          - generic [ref=e868]:
+            - generic [ref=e869]:
+              - generic [ref=e870]: Resources
+              - list [ref=e871]:
+                - listitem [ref=e872]:
+                  - generic [ref=e873]: Blog
+                  - link "Blog" [ref=e875] [cursor=pointer]:
+                    - /url: /blog
+                    - generic [ref=e876]: Blog
+                - listitem [ref=e877]:
+                  - generic [ref=e878]: Claude partner network
+                  - link "Claude partner network" [ref=e880] [cursor=pointer]:
+                    - /url: /partners
+                    - generic [ref=e881]: Claude partner network
+                - listitem [ref=e882]:
+                  - generic [ref=e883]: Community
+                  - link "Community" [ref=e885] [cursor=pointer]:
+                    - /url: /community
+                    - generic [ref=e886]: Community
+                - listitem [ref=e887]:
+                  - generic [ref=e888]: Connectors
+                  - link "Connectors" [ref=e890] [cursor=pointer]:
+                    - /url: /connectors
+                    - generic [ref=e891]: Connectors
+                - listitem [ref=e892]:
+                  - generic [ref=e893]: Courses
+                  - link "Courses" [ref=e895] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/learn
+                    - generic [ref=e896]: Courses
+                - listitem [ref=e897]:
+                  - generic [ref=e898]: Customer stories
+                  - link "Customer stories" [ref=e900] [cursor=pointer]:
+                    - /url: /customers
+                    - generic [ref=e901]: Customer stories
+                - listitem [ref=e902]:
+                  - generic [ref=e903]: Engineering at Anthropic
+                  - link "Engineering at Anthropic" [ref=e905] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/engineering
+                    - generic [ref=e906]: Engineering at Anthropic
+                - listitem [ref=e907]:
+                  - generic [ref=e908]: Events
+                  - link "Events" [ref=e910] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/events
+                    - generic [ref=e911]: Events
+                - listitem [ref=e912]:
+                  - generic [ref=e913]: Plugins
+                  - link "Plugins" [ref=e915] [cursor=pointer]:
+                    - /url: /plugins
+                    - generic [ref=e916]: Plugins
+                - listitem [ref=e917]:
+                  - generic [ref=e918]: Powered by Claude
+                  - link "Powered by Claude" [ref=e920] [cursor=pointer]:
+                    - /url: /partners/powered-by-claude
+                    - generic [ref=e921]: Powered by Claude
+                - listitem [ref=e922]:
+                  - generic [ref=e923]: Service partners
+                  - link "Service partners" [ref=e925] [cursor=pointer]:
+                    - /url: /partners/services
+                    - generic [ref=e926]: Service partners
+                - listitem [ref=e927]:
+                  - generic [ref=e928]: Tutorials
+                  - link "Tutorials" [ref=e930] [cursor=pointer]:
+                    - /url: /resources/tutorials
+                    - generic [ref=e931]: Tutorials
+                - listitem [ref=e932]:
+                  - generic [ref=e933]: Use cases
+                  - link "Use cases" [ref=e935] [cursor=pointer]:
+                    - /url: /resources/use-cases
+                    - generic [ref=e936]: Use cases
+            - generic [ref=e937]:
+              - generic [ref=e938]: Company
+              - list [ref=e939]:
+                - listitem [ref=e940]:
+                  - generic [ref=e941]: Anthropic
+                  - link "Anthropic" [ref=e943] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/
+                    - generic [ref=e944]: Anthropic
+                - listitem [ref=e945]:
+                  - generic [ref=e946]: Careers
+                  - link "Careers" [ref=e948] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/careers
+                    - generic [ref=e949]: Careers
+                - listitem [ref=e950]:
+                  - generic [ref=e951]: Policy
+                  - link "Policy" [ref=e953] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy
+                    - generic [ref=e954]: Policy
+                - listitem [ref=e955]:
+                  - generic [ref=e956]: Economic Futures
+                  - link "Economic Futures" [ref=e958] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/economic-futures
+                    - generic [ref=e959]: Economic Futures
+                - listitem [ref=e960]:
+                  - generic [ref=e961]: Research
+                  - link "Research" [ref=e963] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/research
+                    - generic [ref=e964]: Research
+                - listitem [ref=e965]:
+                  - generic [ref=e966]: News
+                  - link "News" [ref=e968] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news
+                    - generic [ref=e969]: News
+                - listitem [ref=e970]:
+                  - generic [ref=e971]: Policy on the AI Exponential
+                  - link "Policy on the AI Exponential" [ref=e973] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy-on-the-ai-exponential
+                    - generic [ref=e974]: Policy on the AI Exponential
+                - listitem [ref=e975]:
+                  - generic [ref=e976]: Responsible Scaling Policy
+                  - link "Responsible Scaling Policy" [ref=e978] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
+                    - generic [ref=e979]: Responsible Scaling Policy
+                - listitem [ref=e980]:
+                  - generic [ref=e981]: Security and compliance
+                  - link "Security and compliance" [ref=e983] [cursor=pointer]:
+                    - /url: https://trust.anthropic.com/
+                    - generic [ref=e984]: Security and compliance
+                - listitem [ref=e985]:
+                  - generic [ref=e986]: Transparency
+                  - link "Transparency" [ref=e988] [cursor=pointer]:
+                    - /url: https://anthropic.com/transparency
+                    - generic [ref=e989]: Transparency
+          - generic [ref=e990]:
+            - generic [ref=e991]:
+              - generic [ref=e992]: Help and security
+              - list [ref=e993]:
+                - listitem [ref=e994]:
+                  - generic [ref=e995]: Availability
+                  - link "Availability" [ref=e997] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/supported-countries
+                    - generic [ref=e998]: Availability
+                - listitem [ref=e999]:
+                  - generic [ref=e1000]: Status
+                  - link "Status" [ref=e1002] [cursor=pointer]:
+                    - /url: https://status.anthropic.com/
+                    - generic [ref=e1003]: Status
+                - listitem [ref=e1004]:
+                  - generic [ref=e1005]: Support center
+                  - link "Support center" [ref=e1007] [cursor=pointer]:
+                    - /url: https://support.claude.com/en/
+                    - generic [ref=e1008]: Support center
+            - generic [ref=e1009]:
+              - generic [ref=e1010]: Terms and policies
+              - list [ref=e1011]:
+                - listitem [ref=e1012]:
+                  - button [ref=e1013] [cursor=pointer]:
+                    - generic [ref=e1014]: Privacy choices
+                - listitem [ref=e1015]:
+                  - generic [ref=e1016]: Privacy policy
+                  - link "Privacy policy" [ref=e1018] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/privacy
+                    - generic [ref=e1019]: Privacy policy
+                - listitem [ref=e1020]:
+                  - generic [ref=e1021]: Responsible disclosure policy
+                  - link "Responsible disclosure policy" [ref=e1023] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/responsible-disclosure-policy
+                    - generic [ref=e1024]: Responsible disclosure policy
+                - listitem [ref=e1025]:
+                  - generic [ref=e1026]: "Terms of service: Commercial"
+                  - 'link "Terms of service: Commercial" [ref=e1028] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/commercial-terms
+                    - generic [ref=e1029]: "Terms of service: Commercial"
+                - listitem [ref=e1030]:
+                  - generic [ref=e1031]: "Terms of service: Consumer"
+                  - 'link "Terms of service: Consumer" [ref=e1033] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/consumer-terms
+                    - generic [ref=e1034]: "Terms of service: Consumer"
+                - listitem [ref=e1035]:
+                  - generic [ref=e1036]: Usage policy
+                  - link "Usage policy" [ref=e1038] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/aup
+                    - generic [ref=e1039]: Usage policy
+      - generic [ref=e1040]:
+        - generic [ref=e1041]:
+          - generic [ref=e1042]:
+            - link "x.com" [ref=e1044] [cursor=pointer]:
+              - /url: https://x.com/claudeai
+              - generic [ref=e1045]: x.com
+            - img [ref=e1046]
+          - generic [ref=e1049]:
+            - link "LinkedIn" [ref=e1051] [cursor=pointer]:
+              - /url: https://www.linkedin.com/showcase/claude/
+              - generic [ref=e1052]: LinkedIn
+            - img [ref=e1053]
+          - generic [ref=e1055]:
+            - link "YouTube" [ref=e1057] [cursor=pointer]:
+              - /url: https://www.youtube.com/@anthropic-ai
+              - generic [ref=e1058]: YouTube
+            - img [ref=e1059]
+          - generic [ref=e1062]:
+            - link "Instagram" [ref=e1064] [cursor=pointer]:
+              - /url: https://www.instagram.com/claudeai
+              - generic [ref=e1065]: Instagram
+            - img [ref=e1066]
+        - button "English (US)" [ref=e1072] [cursor=pointer]:
+          - img [ref=e1075]
+          - generic [ref=e1077]: English (US)
+          - img [ref=e1078]
+  - tooltip

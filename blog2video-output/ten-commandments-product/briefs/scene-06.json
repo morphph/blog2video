@@ -1,0 +1,82 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 50.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_6.html",
+ "topbarIndex": "[06/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 1.641,
+   "text": "第十条讲的是这个："
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.807,
+   "localDuration": 6.864,
+   "text": "Humane AI Pin 和 Rabbit R1，发布时声量是近年来最大的。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.671,
+   "localDuration": 3.52,
+   "text": "数百万次观看，预购售罄，媒体说这是未来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.191,
+   "localDuration": 2.112,
+   "text": "然后在几个月内双双崩盘。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.303,
+   "localDuration": 2.288,
+   "text": "火花打在了空油箱上，秒灭。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.747,
+   "localDuration": 4.275,
+   "text": "另一边，Cursor 几乎没有营销，靠口碑爆炸式增长。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 21.022,
+   "localDuration": 6.968,
+   "text": "Claude Code 是作为一个模型更新的附属预览悄悄上线的，没有发布会，没有倒计时。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 28.159,
+   "localDuration": 3.596,
+   "text": "他们自己的 Shortcut 也经历了这两面。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 31.755,
+   "localDuration": 5.94,
+   "text": "发布视频有一个真实的病毒时刻，DAU 瞬间拉升——然后几乎以同样的速度跌落。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 37.843,
+   "localDuration": 2.118,
+   "text": "那次冲击从来不是真正的赢。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 40.111,
+   "localDuration": 5.854,
+   "text": "最终留住用户、让数字在视频被遗忘之后继续爬升的，是产品质量。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 45.965,
+   "localDuration": 4.878,
+   "text": "发布热度让人看到了你，产品质量决定他们会不会留下。"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(image:推论 + cal.com 案例)—— */
+[data-composition-id='s12'] .l-b{font-size:34px;color:#8a8a85;font-weight:500;margin-top:12px}
+[data-composition-id='s12'] .l-b em{color:#ccff4d;font-style:normal;font-weight:700}
+[data-composition-id='s12'] .row .rt .warn{color:#ff6b5e;font-weight:900}
+[data-composition-id='s12'] .row .rd.d2{margin-top:8px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="58" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[12/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个推论 · <span class="acc">MOAT</span></div>
+
+      <div class="lead l-a" style="margin-top:22px">信息一对称，执行成本<em>塌缩到 ≈ 0</em></div>
+      <div class="lead l-b">输出公开 —— 一个周末，<em>$40</em> 就能蒸馏回来</div>
+
+      <div class="h1" style="margin-top:30px">新的护城河，是<span class="hl"><span class="bar"></span><span class="tx">信息不对称</span></span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">cal.com —— 生产代码转<span class="code">闭源</span></div>
+          <div class="rd">把"开源"当作全部身份的公司</div>
+          <div class="taglist" style="margin-top:12px"><span class="tag">$5M ARR · 2026.04</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">源码，不能放在 <span class="code">Agent</span> 能读到的地方</div>
+          <div class="rd d1"><span class="code">/goal</span> 读源码，枚举攻击面，直到打进去</div>
+          <div class="rd d2">AI 安全威胁时代 —— 太危险，又太好执行</div>
+        </div></div>
+
+        <div class="row r3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">开放，已经变成一种<span class="warn">负债</span></div>
+          <div class="rd">一家把开源刻进骨子里的公司的断定</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="2.152" data-track-index="5"><div class="sub-inner">于是有意思的<span class="sub-k">推论</span>来了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.309" data-duration="4.381" data-track-index="5"><div class="sub-inner">只要存在信息对称，执行的成本就会<span class="sub-k">塌缩到接近零</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.69" data-duration="8.952" data-track-index="5"><div class="sub-inner">输出是公开的，所有人都看得见"好"长什么样，那任何人都能在一个周末，花四十美元，把它<span class="sub-k">蒸馏</span>回来。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.809" data-duration="3.441" data-track-index="5"><div class="sub-inner">所以新的护城河，是<span class="sub-k">信息不对称</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.409" data-duration="1.825" data-track-index="5"><div class="sub-inner">有个<span class="sub-k">标志性</span>的例子。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.234" data-duration="10.95" data-track-index="5"><div class="sub-inner">那个把"开源"当作全部身份的公司，cal.com，五百万美元年收入，在二零二六年四月，把生产代码转成了<span class="sub-k">闭源</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="32.333" data-duration="7.314" data-track-index="5"><div class="sub-inner">理由很直接：在一个 AI 驱动的安全威胁时代，你不能把源码放在一个 <span class="sub-k">Agent 能读到的地方</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="39.647" data-duration="7.47" data-track-index="5"><div class="sub-inner">你想想——<span class="sub-k">/goal，读 cal.com 的源码，把它的攻击面挨个枚举</span>，直到找到一个能打进去的。</div></div>
+    <div id="sub-9" class="clip sub" data-start="47.273" data-duration="3.174" data-track-index="5"><div class="sub-inner">这种攻击太危险，又太<span class="sub-k">容易执行</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="50.585" data-duration="7.272" data-track-index="5"><div class="sub-inner">一家把开源刻进骨子里的公司，在二零二六年决定：开放，已经变成了一种<span class="sub-k">负债</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.l-a', 2.3, {y:18, d:.4, ease:'power2.out'});
+    D2.enter(tl, R+'.l-b', 6.7, {y:12, d:.32, ease:'power1.out'});
+
+    D2.enter(tl, R+'.h1', 15.8, {y:20, d:.42, ease:'expo.out'});
+    D2.sweep(tl, R, '.h1 .hl', 16.1);
+
+    D2.enter(tl, R+'.r1', 19.4, {x:-24, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 23.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .taglist .tag', 27.0, {y:10, d:.28, ease:'power1.out'});
+
+    D2.enter(tl, R+'.r2', 32.3, {x:-24, d:.34, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .d1', 39.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .d2', 47.3, {y:12, d:.3, ease:'power3.out'});
+
+    D2.enter(tl, R+'.r3', 50.6, {x:-24, d:.34, ease:'power3.out'});
+
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',2.309],['#sub-3',6.69],['#sub-4',15.809],['#sub-5',19.409],['#sub-6',21.234],['#sub-7',32.333],['#sub-8',39.647],['#sub-9',47.273],['#sub-10',50.585]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 58, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

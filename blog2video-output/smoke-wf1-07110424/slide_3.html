@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      position: relative;
+    }
+    .kicker { font-size: 32px; color: #6B7280; letter-spacing: 3px; margin-bottom: 28px; }
+    .title { font-size: 92px; font-weight: 800; line-height: 1.14; }
+    .title .em { color: #8B5CF6; }
+    .cards { display: flex; gap: 28px; margin-top: 68px; width: 100%; }
+    .card { flex: 1; background: #1A1A2E; border-radius: 12px; padding: 40px 28px; text-align: left; }
+    .card.bad { border: 1px solid rgba(239,68,68,0.25); border-left: 4px solid #EF4444; }
+    .card.good { border: 1px solid rgba(16,185,129,0.25); border-left: 4px solid #10B981; }
+    .card .h { font-size: 40px; font-weight: 800; margin-bottom: 18px; }
+    .card.bad .h { color: #EF4444; }
+    .card.good .h { color: #10B981; }
+    .card .d { font-size: 34px; color: #FFFFFF; line-height: 1.42; }
+    .note { font-size: 38px; color: #B0B0CC; margin-top: 56px; line-height: 1.5; }
+    .note .em { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="kicker">真的不一样 —— 差别在于</div>
+    <div class="title">不在对错，<br>在于<span class="em">听不听</span></div>
+    <div class="cards">
+      <div class="card bad"><div class="h">固执的人</div><div class="d">被指出问题，眼神呆滞，像背教条</div></div>
+      <div class="card good"><div class="h">Collison 兄弟</div><div class="d">以近乎捕食者的强度在听</div></div>
+    </div>
+    <div class="note">反直觉：<span class="em">你反对他的那一刻，他反而最投入</span></div>
+  </div>
+</body>
+</html>

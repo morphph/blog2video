@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/* ============================================================================
+   wb 「白板讲解 Whiteboard Tutor」 BASE KIT —— 精读/tutor 线全片统一
+   真源。生成器把本文件 + wb-motion.js 内联进每个场景的 style / script 块。
+   场景自包含、逐个 standalone 渲染;GSAP 选择器用 R = data-composition-id 前缀。
+   字体路径相对 scene 目录:assets -> symlink 到 kit assets(内部再 symlink d2-kit 字体)。
+
+   舞台 1920×1080 横屏。视觉真相在层 SVG 里(白板图);HTML 只负责:
+   舞台/视口/镜头容器、层叠放、字幕带、角标。手写文字一律在图内,HTML 不配手写字体。
+   ============================================================================ */
+
+/* ---- 字体(每场景嵌入;仅字幕+角标) ---- */
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#ffffff;font-family:'MiSans',sans-serif}
+
+#stage{width:1920px;height:1080px}
+.stage{position:relative;width:1920px;height:1080px;background:#ffffff;overflow:hidden}
+
+/* ---- 视口 + 镜头容器 ----
+   .canvas 尺寸 = steps.json canvas 宽高 × data-ss(默认 2,supersample 防放大糊),
+   由场景 inline style 写死;transform 只由 WB.camera/WB.home 驱动,origin 恒 0 0。 */
+.viewport{position:absolute;inset:0;overflow:hidden;transform-origin:50% 50%}  /* 呼吸目标(WB.breath);镜头目标是 .canvas */
+.canvas{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}
+
+/* ---- 层(S2 分层导出的 step-NN.svg,叠加式,z 序 = 文档顺序) ----
+   初始全隐;WB.revealLayer 揭示。必须 <img>(层内嵌各自字体子集,内联会互踩)。 */
+.layer{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0}
+.layer.on{opacity:1}   /* 场景起始已显层:标 class,配合 WB.preset */
+
+/* ---- 字幕带(track 5,与 d2 同契约) ---- */
+.sub{position:absolute;left:120px;right:120px;bottom:64px;z-index:30;display:flex;justify-content:center}
+.sub-inner{background:rgba(20,20,20,.72);border-radius:10px;max-width:1440px;padding:14px 28px;
+  font-weight:500;font-size:42px;line-height:1.45;color:#ffffff;text-align:center}
+.sub-k{color:#ffd43b}
+
+/* ---- 角标(系列标识,常驻可选) ---- */
+.brandtag{position:absolute;top:36px;left:48px;z-index:20;
+  font-family:'JetBrains Mono',monospace;font-size:24px;color:#b0b0ab;letter-spacing:.06em}
+.brandtag .acc{color:#e8590c}
+</style>
+</head>
+<body>
+<div id="stage" class="stage" data-composition-id="s01" data-duration="10" data-width="1920" data-height="1080" style="position:relative;width:1920px;height:1080px;overflow:hidden;background:#ffffff">
+  <div class="viewport">
+    <div class="canvas" data-ss="2" style="width:2540px;height:2220px">
+      <img class="layer" id="ly1" src="layers/step-01.svg">
+      <img class="layer" id="ly2" src="layers/step-02.svg">
+      <img class="layer" id="ly3" src="layers/step-03.svg">
+      <img class="layer" id="ly4" src="layers/step-04.svg">
+      <img class="layer" id="ly5" src="layers/step-05.svg">
+      <img class="layer" id="ly6" src="layers/step-06.svg">
+      <img class="layer" id="ly7" src="layers/step-07.svg">
+    </div>
+  </div>
+  <div class="sub"><div class="sub-inner">白板线 VPS 渲染冒烟：<span class="sub-k">镜头</span>与逐层揭示测试</div></div>
+</div>
+<script src="wb-motion.js"></script>
+<script>
+(function(){
+  var R = "[data-composition-id='s01'] ";
+  var tl = WB.buildSceneTimeline(R, {
+    duration: 10,
+    start: [0, 0, 1270, 1110],
+    reveals: [
+      {sel: R+'#ly1', at: 0.4, mode: 'draw'},
+      {sel: R+'#ly2', at: 2.2, mode: 'draw'},
+      {sel: R+'#ly3', at: 4.6, mode: 'draw'},
+      {sel: R+'#ly4', at: 6.4, mode: 'pop'}
+    ],
+    shots: [
+      {bbox: [90, 90, 940, 176], at: 1.6},
+      {bbox: [60, 300, 1150, 560], at: 4.2},
+      {home: true, at: 7.6, bbox: [0, 0, 1270, 1110]}
+    ]
+  });
+  WB.register('s01', tl);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+[
+  {
+    "text": "你身边一定有那种死不放弃的人。有的你佩服，觉得他有决心；有的你头疼，觉得他就是轴。可如果我问你，坚持和固执到底差在哪，你多半答不上来。",
+    "pronounce_text": "你身边一定有那种死不放弃的人。有的你佩服，觉得他有决心;有的你头疼，觉得他就是轴。可如果我问你，坚持和固执到底差在哪，你多半答不上来。",
+    "time_begin": 0,
+    "time_end": 12740.63492063492,
+    "text_begin": 0,
+    "text_end": 67,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 67
+  },
+  {
+    "text": "这是 Paul Graham 的一篇随笔，他一上来就承认，这个区别自己也想了很久。",
+    "pronounce_text": "这是Paul Graham的一篇随笔，他一上来就承认，这个区别自己也想了很久。",
+    "time_begin": 12888,
+    "time_end": 18453.668934240362,
+    "text_begin": 67,
+    "text_end": 108,
+    "pronounce_text_begin": 67,
+    "pronounce_text_end": 106
+  },
+  {
+    "text": "我们通常这么说：成功的人有 persistence，也就是持久的坚持，新想法一开始行不通，他不气馁，一直试，最后找到能走通的路。",
+    "pronounce_text": "我们通常这么说：成功的人有persistence，也就是持久的坚持，新想法一开始行不通，他不气馁，一直试，最后找到能走通的路。",
+    "time_begin": 18612,
+    "time_end": 30539.93650793651,
+    "text_begin": 108,
+    "text_end": 172,
+    "pronounce_text_begin": 106,
+    "pronounce_text_end": 169
+  },
+  {
+    "text": "而纯粹的固执呢，是失败的配方——那种人烦得很，一头撞墙，毫无进展。",
+    "pronounce_text": "而纯粹的固执呢，是失败的配方。那种人烦得很，一头撞墙，毫无进展。",
+    "time_begin": 30739.93650793651,
+    "time_end": 37675.58276643991,
+    "text_begin": 172,
+    "text_end": 205,
+    "pronounce_text_begin": 169,
+    "pronounce_text_end": 201
+  },
+  {
+    "text": "但等一下。这两种人，行为真的不一样吗，还是他们做着同一件事，只是我们按结果对错，事后给贴了不同的标签？",
+    "pronounce_text": "但等一下。这两种人，行为真的不一样吗，还是他们做着同一件事，只是我们按结果对错，事后给贴了不同的标签？",
+    "time_begin": 37836,
+    "time_end": 47929.560090702944,
+    "text_begin": 205,
+    "text_end": 256,
+    "pronounce_text_begin": 201,
+    "pronounce_text_end": 252
+  },
+  {
+    "text": "这问题很要命。如果只是贴标签，那这个区分就一文不值。你叫一个人“要坚持、别固执\",等于在叫他“要对、别错\"——可谁不想对呢，这是废话。",
+    "pronounce_text": "这问题很要命。如果只是贴标签，那这个区分就一文不值。你叫一个人“要坚持、别固执\",等于在叫他“要对、别错\"。可谁不想对呢，这是废话。",
+    "time_begin": 48096,
+    "time_end": 61684.163265306124,
+    "text_begin": 256,
+    "text_end": 323,
+    "pronounce_text_begin": 252,
+    "pronounce_text_end": 318
+  },
+  {
+    "text": "只有当坚持和固执是两种真正不同的行为方式时,把它们拆开才有意义。",
+    "pronounce_text": "只有当坚持和固执是两种真正不同的行为方式时,把它们拆开才有意义。",
+    "time_begin": 61848,
+    "time_end": 67970.94784580499,
+    "text_begin": 323,
+    "text_end": 355,
+    "pronounce_text_begin": 318,
+    "pronounce_text_end": 350
+  },
+  {
+    "text": "作者跟很多有决心的人聊过，他的结论是：真的不一样。而且差别不在对错，在于听不听。",
+    "pronounce_text": "作者跟很多有决心的人聊过，他的结论是：真的不一样。而且差别不在对错，在于听不听。",
+    "time_begin": 68112,
+    "time_end": 77056.1723356009,
+    "text_begin": 355,
+    "text_end": 395,
+    "pronounce_text_begin": 350,
+    "pronounce_text_end": 390
+  },
+  {
+    "text": "固执的人烦，不只因为他错，而是他不听。你给他指出问题，他眼神就呆滞了，回答起来像个意识形态者在背教条。有决心的人恰恰相反。",
+    "pronounce_text": "固执的人烦，不只因为他错，而是他不听。你给他指出问题，他眼神就呆滞了，回答起来像个意识形态者在背教条。有决心的人恰恰相反。",
+    "time_begin": 77220,
+    "time_end": 89832.92517006803,
+    "text_begin": 395,
+    "text_end": 456,
+    "pronounce_text_begin": 390,
+    "pronounce_text_end": 451
+  },
+  {
+    "text": "他举了 Collison 兄弟，就是 Stripe 的两位创始人，说这是他见过最有决心的人。你给他们指出问题，他们不但听，而且以一种近乎捕食者的强度在听。船底有洞吗？",
+    "pronounce_text": "他举了Collison兄弟，就是Stripe的两位创始人，说这是他见过最有决心的人。你给他们指出问题，他们不但听，而且以一种近乎捕食者的强度在听。船底有洞吗？",
+    "time_begin": 90000,
+    "time_end": 104273.15192743763,
+    "text_begin": 456,
+    "text_end": 539,
+    "pronounce_text_begin": 451,
+    "pronounce_text_end": 530
+  },
+  {
+    "text": "大概没有，但万一有，他们非知道不可。",
+    "pronounce_text": "大概没有，但万一有，他们非知道不可。",
+    "time_begin": 104473.15192743763,
+    "time_end": 108041.90476190476,
+    "text_begin": 539,
+    "text_end": 557,
+    "pronounce_text_begin": 530,
+    "pronounce_text_end": 548
+  },
+  {
+    "text": "这是个特别反直觉的观察：真正有决心的人，在你反对他的那一刻，反而最投入。固执的人，正是在这一刻关上了耳朵。",
+    "pronounce_text": "这是个特别反直觉的观察：真正有决心的人，在你反对他的那一刻，反而最投入。固执的人，正是在这一刻关上了耳朵。",
+    "time_begin": 108180,
+    "time_end": 118830.83900226757,
+    "text_begin": 557,
+    "text_end": 610,
+    "pronounce_text_begin": 548,
+    "pronounce_text_end": 601
+  },
+  {
+    "text": "那为什么这两种人看起来那么像？因为他们都很难被拦住。但“难被拦住\"的原因完全不同。",
+    "pronounce_text": "那为什么这两种人看起来那么像？因为他们都很难被拦住。但“难被拦住\"的原因完全不同。",
+    "time_begin": 118980,
+    "time_end": 126298.77551020408,
+    "text_begin": 610,
+    "text_end": 651,
+    "pronounce_text_begin": 601,
+    "pronounce_text_end": 642
+  },
+  {
+    "text": "作者给了一个特别漂亮的比喻，我很喜欢：坚持的人，像一艘引擎关不小的船，动力太足，停不下来；固执的人，像一艘舵转不动的船，方向改不了，只能直直地往前顶。",
+    "pronounce_text": "作者给了一个特别漂亮的比喻，我很喜欢：坚持的人，像一艘引擎关不小的船，动力太足，停不下来;固执的人，像一艘舵转不动的船，方向改不了，只能直直地往前顶。",
+    "time_begin": 126468,
+    "time_end": 141333.26077097506,
+    "text_begin": 651,
+    "text_end": 726,
+    "pronounce_text_begin": 642,
+    "pronounce_text_end": 717
+  },
+  {
+    "text": "你看，一个是停不下来，一个是拐不了弯，表面都是“往前冲\",里子是两回事。",
+    "pronounce_text": "你看，一个是停不下来，一个是拐不了弯，表面都是“往前冲\",里子是两回事。",
+    "time_begin": 141480,
+    "time_end": 149774.0136054422,
+    "text_begin": 726,
+    "text_end": 762,
+    "pronounce_text_begin": 717,
+    "pronounce_text_end": 753
+  },
+  {
+    "text": "有意思的是，在最简单的情况下，你根本分不出这两种人。因为当一个问题只有一条路可走，唯一的选择就是放弃还是不放弃，两种人都会说“不放弃\"。",
+    "pronounce_text": "有意思的是，在最简单的情况下，你根本分不出这两种人。因为当一个问题只有一条路可走，唯一的选择就是放弃还是不放弃，两种人都会说“不放弃\"。",
+    "time_begin": 149940,
+    "time_end": 162970.8843537415,
+    "text_begin": 762,
+    "text_end": 830,
+    "pronounce_text_begin": 753,
+    "pronounce_text_end": 821
+  },
+  {
+    "text": "这也是为什么流行文化总把它们混为一谈——它默认问题都很简单。",
+    "pronounce_text": "这也是为什么流行文化总把它们混为一谈。它默认问题都很简单。",
+    "time_begin": 163116,
+    "time_end": 167961.85034013606,
+    "text_begin": 830,
+    "text_end": 860,
+    "pronounce_text_begin": 821,
+    "pronounce_text_end": 850
+  },
+  {
+    "text": "可问题一复杂，差别就现形了。",
+    "pronounce_text": "可问题一复杂，差别就现形了。",
+    "time_begin": 168120,
+    "time_end": 171003.7641723356,
+    "text_begin": 860,
+    "text_end": 874,
+    "pronounce_text_begin": 850,
+    "pronounce_text_end": 864
+  },
+  {
+    "text": "把决策想象成一棵树，坚持的人对树高处那些大方向执着得多，对低处那些小枝节，说改就改；而固执的人，是把“别放弃\"三个字，",
+    "pronounce_text": "把决策想象成一棵树，坚持的人对树高处那些大方向执着得多，对低处那些小枝节，说改就改;而固执的人，是把“别放弃\"三个字，",
+    "time_begin": 171144,
+    "time_end": 183965.90476190476,
+    "text_begin": 874,
+    "text_end": 933,
+    "pronounce_text_begin": 864,
+    "pronounce_text_end": 923
+  },
+  {
+    "text": "无差别地喷洒到整棵树上，连最细的末梢都死抓不放。",
+    "pronounce_text": "无差别地喷洒到整棵树上，连最细的末梢都死抓不放。",
+    "time_begin": 184165.90476190476,
+    "time_end": 189011.75510204083,
+    "text_begin": 933,
+    "text_end": 957,
+    "pronounce_text_begin": 923,
+    "pronounce_text_end": 947
+  },
+  {
+    "text": "这就是整篇文章我认为最锋利的一刀：坚持的人执着于目标，固执的人执着于自己关于怎么达成目标的那个想法。",
+    "pronounce_text": "这就是整篇文章我认为最锋利的一刀：坚持的人执着于目标，固执的人执着于自己关于怎么达成目标的那个想法。",
+    "time_begin": 189180,
+    "time_end": 198542.13151927438,
+    "text_begin": 957,
+    "text_end": 1007,
+    "pronounce_text_begin": 947,
+    "pronounce_text_end": 997
+  },
+  {
+    "text": "更糟的是，固执的人往往执着于最早那一批想法——恰恰是最没被真实工作打磨过的想法。所以他不只是执着于细节，他还格外容易执着于错误的细节。",
+    "pronounce_text": "更糟的是，固执的人往往执着于最早那一批想法。恰恰是最没被真实工作打磨过的想法。所以他不只是执着于细节，他还格外容易执着于错误的细节。",
+    "time_begin": 198684,
+    "time_end": 211761.32426303855,
+    "text_begin": 1007,
+    "text_end": 1074,
+    "pronounce_text_begin": 997,
+    "pronounce_text_end": 1063
+  },
+  {
+    "text": "同样是死不放手，一个抓的是终点，一个抓的是自己都还没验证过的第一版路线图。",
+    "pronounce_text": "同样是死不放手，一个抓的是终点，一个抓的是自己都还没验证过的第一版路线图。",
+    "time_begin": 211932,
+    "time_end": 218519.3469387755,
+    "text_begin": 1074,
+    "text_end": 1111,
+    "pronounce_text_begin": 1063,
+    "pronounce_text_end": 1100
+  },
+  {
+    "text": "那固执的人为什么会这样？作者一开始有个理论：他们是被压垮了。",
+    "pronounce_text": "那固执的人为什么会这样？作者一开始有个理论：他们是被压垮了。",
+    "time_begin": 218664,
+    "time_end": 224148.39909297053,
+    "text_begin": 1111,
+    "text_end": 1141,
+    "pronounce_text_begin": 1100,
+    "pronounce_text_end": 1130
+  },
+  {
+    "text": "能力不够，接了个难题，一上手就力不从心，于是像甲板上遇到大浪的人一样，随手抓住最近的一根把手——某个想法——死死不放。",
+    "pronounce_text": "能力不够，接了个难题，一上手就力不从心，于是像甲板上遇到大浪的人一样，随手抓住最近的一根ㄅㄚˇㄕㄡˇ。某个想法。死死不放。",
+    "time_begin": 224348.39909297053,
+    "time_end": 236485.31519274376,
+    "text_begin": 1141,
+    "text_end": 1200,
+    "pronounce_text_begin": 1130,
+    "pronounce_text_end": 1191
+  },
+  {
+    "text": "但他自己把这个理论推翻了，这段我特别欣赏。如果固执只是“力不从心\"的结果，那你把更难的问题丢给一个坚持的人，他就该变固执才对。可事实相反。",
+    "pronounce_text": "但他自己把这个理论推翻了，这段我特别欣赏。如果固执只是“力不从心\"的结果，那你把更难的问题丢给一个坚持的人，他就该变固执才对。可事实相反。",
+    "time_begin": 236628,
+    "time_end": 249066.77551020408,
+    "text_begin": 1200,
+    "text_end": 1269,
+    "pronounce_text_begin": 1191,
+    "pronounce_text_end": 1260
+  },
+  {
+    "text": "你把一个极难的问题交给 Collison 兄弟，他们不会变固执，反而更开放，因为他们知道，这种难题必须对一切保持开放。反过来，让固执的人去做简单问题，他也不会因此变得开放。",
+    "pronounce_text": "你把一个极难的问题交给Collison兄弟，他们不会变固执，反而更开放，因为他们知道，这种难题必须对一切保持开放。反过来，让固执的人去做简单问题，他也不会因此变得开放。",
+    "time_begin": 249228,
+    "time_end": 264696.97959183675,
+    "text_begin": 1269,
+    "text_end": 1355,
+    "pronounce_text_begin": 1260,
+    "pronounce_text_end": 1344
+  },
+  {
+    "text": "既然处境改变不了它，那它就不是处境造成的，它来自内在，是一种人格特质。",
+    "pronounce_text": "既然处境改变不了它，那它就不是处境造成的，它来自内在，是一种人格特质。",
+    "time_begin": 264852,
+    "time_end": 271868.91609977325,
+    "text_begin": 1355,
+    "text_end": 1390,
+    "pronounce_text_begin": 1344,
+    "pronounce_text_end": 1379
+  },
+  {
+    "text": "但这里有个反转，别急着把固执一脚踢开。固执对简单问题是真的有效——这是条重要线索。",
+    "pronounce_text": "但这里有个反转，别急着把固执一脚踢开。固执对简单问题是真的有效。这是条重要线索。",
+    "time_begin": 272016,
+    "time_end": 279973.3242630385,
+    "text_begin": 1390,
+    "text_end": 1431,
+    "pronounce_text_begin": 1379,
+    "pronounce_text_end": 1419
+  },
+  {
+    "text": "坚持和固执，其实不是对立的两极。作者打了第二个比方：它们的关系，更像有氧呼吸，和我们从远古祖先那里继承来的无氧呼吸。",
+    "pronounce_text": "坚持和固执，其实不是对立的两极。作者打了第二个比方：它们的关系，更像有氧呼吸，和我们从远古祖先那里继承来的无氧呼吸。",
+    "time_begin": 280116,
+    "time_end": 292125.20634920633,
+    "text_begin": 1431,
+    "text_end": 1489,
+    "pronounce_text_begin": 1419,
+    "pronounce_text_end": 1477
+  },
+  {
+    "text": "无氧更原始，但有它的用处——你突然从危险面前跳开，靠的就是它。",
+    "pronounce_text": "无氧更原始，但有它的用处。你突然从危险面前跳开，靠的就是它。",
+    "time_begin": 292325.20634920633,
+    "time_end": 298657.13378684805,
+    "text_begin": 1489,
+    "text_end": 1520,
+    "pronounce_text_begin": 1477,
+    "pronounce_text_end": 1507
+  },
+  {
+    "text": "所以最优的固执量，不是零。面对挫折，第一反应是那句不假思索的“我不放弃\",这其实是好的，它能防止你 panic。",
+    "pronounce_text": "所以最优的固执量，不是零。面对挫折，第一反应是那句不假思索的“我不放弃\",这其实是好的，它能防止你panic。",
+    "time_begin": 298800,
+    "time_end": 309532.1088435374,
+    "text_begin": 1520,
+    "text_end": 1576,
+    "pronounce_text_begin": 1507,
+    "pronounce_text_end": 1562
+  },
+  {
+    "text": "代价是，不假思索只能带你走这么远。越靠近固执那一端，你越解不了真正的难题。",
+    "pronounce_text": "代价是，不假思索只能带你走这么远。越靠近固执那一端，你越解不了真正的难题。",
+    "time_begin": 309672,
+    "time_end": 316944.33560090704,
+    "text_begin": 1576,
+    "text_end": 1613,
+    "pronounce_text_begin": 1562,
+    "pronounce_text_end": 1599
+  },
+  {
+    "text": "这就是它的适用边界：单一路径的简单问题，固执管用，连很轴的人都能用;可一旦问题复杂、需要外部检验，它就退化成一种“诱导性的愚蠢\"——反面证据越堆越高，你却越蹬越紧。",
+    "pronounce_text": "这就是它的适用边界：单一路径的简单问题，固执管用，连很轴的人都能用;可一旦问题复杂、需要外部检验，它就退化成一种“诱导性的愚蠢\"。反面证据越堆越高，你却越蹬越紧。",
+    "time_begin": 317088,
+    "time_end": 332940.1088435374,
+    "text_begin": 1613,
+    "text_end": 1695,
+    "pronounce_text_begin": 1599,
+    "pronounce_text_end": 1680
+  },
+  {
+    "text": "固执很简单，简单到动物都有。但坚持，有一套相当复杂的内部结构。作者把它拆成了五种品质，我觉得这是全文最值钱的部分。",
+    "pronounce_text": "固执很简单，简单到动物都有。但坚持，有一套相当复杂的内部结构。作者把它拆成了五种品质，我觉得这是全文最值钱的部分。",
+    "time_begin": 333108,
+    "time_end": 345035.9365079365,
+    "text_begin": 1695,
+    "text_end": 1752,
+    "pronounce_text_begin": 1680,
+    "pronounce_text_end": 1737
+  },
+  {
+    "text": "第一是 energy，精力。坚持的人是持续进取，不是单纯抵抗，他一直在试新东西。而这就逼出了第二样：imagination，想象力——你要不断地试，就得不断想出可以试的东西。",
+    "pronounce_text": "第一是energy，精力。坚持的人是持续进取，不是单纯抵抗，他一直在试新东西。而这就逼出了第二样：imagination，想象力。你要不断地试，就得不断想出可以试的东西。",
+    "time_begin": 345204,
+    "time_end": 361230.25850340136,
+    "text_begin": 1752,
+    "text_end": 1839,
+    "pronounce_text_begin": 1737,
+    "pronounce_text_end": 1822
+  },
+  {
+    "text": "精力和想象力是绝配，互相喂养：精力为点子创造需求，逼你想更多；想象力又给精力一个去处。",
+    "pronounce_text": "精力和想象力是绝配，互相喂养：精力为点子创造需求，逼你想更多;想象力又给精力一个去处。",
+    "time_begin": 361368,
+    "time_end": 370521.15192743763,
+    "text_begin": 1839,
+    "text_end": 1882,
+    "pronounce_text_begin": 1822,
+    "pronounce_text_end": 1865
+  },
+  {
+    "text": "但光有这两样，还只是罕见，还解不了难题。还需要三样。",
+    "pronounce_text": "但光有这两样，还只是罕见，还解不了难题。还需要三样。",
+    "time_begin": 370692,
+    "time_end": 375967.4195011338,
+    "text_begin": 1882,
+    "text_end": 1908,
+    "pronounce_text_begin": 1865,
+    "pronounce_text_end": 1891
+  },
+  {
+    "text": "第一是 resilience，韧性——挫折不能击垮你的士气。问题够大，挫折必然发生，扛不住，你就只能做小事。",
+    "pronounce_text": "第一是resilience，韧性。挫折不能击垮你的士气。问题够大，挫折必然发生，扛不住，你就只能做小事。",
+    "time_begin": 376128,
+    "time_end": 386268,
+    "text_begin": 1908,
+    "text_end": 1962,
+    "pronounce_text_begin": 1891,
+    "pronounce_text_end": 1943
+  },
+  {
+    "text": "但注意，韧性不等于固执：韧性是挫折改变不了你的士气，固执是挫折改变不了你的想法，这是两码事。",
+    "pronounce_text": "但注意，韧性不等于固执：韧性是挫折改变不了你的士气，固执是挫折改变不了你的想法，这是两码事。",
+    "time_begin": 386424,
+    "time_end": 396691.70975056686,
+    "text_begin": 1962,
+    "text_end": 2008,
+    "pronounce_text_begin": 1943,
+    "pronounce_text_end": 1989
+  },
+  {
+    "text": "第二是 good judgement，好的判断力，因为坚持常常要求你改变想法，而换不换，靠的正是判断。",
+    "pronounce_text": "第二是good judgement，好的判断力，因为坚持常常要求你改变想法，而换不换，靠的正是判断。",
+    "time_begin": 396891.70975056686,
+    "time_end": 405615.2925170068,
+    "text_begin": 2008,
+    "text_end": 2059,
+    "pronounce_text_begin": 1989,
+    "pronounce_text_end": 2039
+  },
+  {
+    "text": "坚持的人其实相当理性,盯着期望值做事——是这份理性、而不是鲁莽，让他们敢去做那些看起来不太可能成的事。",
+    "pronounce_text": "坚持的人其实相当理性,盯着期望值做事。是这份理性、而不是鲁莽，让他们敢去做那些看起来不太可能成的事。",
+    "time_begin": 405756,
+    "time_end": 417463.3469387755,
+    "text_begin": 2059,
+    "text_end": 2110,
+    "pronounce_text_begin": 2039,
+    "pronounce_text_end": 2089
+  },
+  {
+    "text": "不过判断力有一处例外，我觉得特别妙。在决策树的最顶端，当两个问题的期望值差不多时，选哪个就归结为个人偏好了。",
+    "pronounce_text": "不过判断力有一处例外，我觉得特别妙。在决策树的最顶端，当两个问题的期望值差不多时，选哪个就归结为个人偏好了。",
+    "time_begin": 417600,
+    "time_end": 428633.9682539683,
+    "text_begin": 2110,
+    "text_end": 2164,
+    "pronounce_text_begin": 2089,
+    "pronounce_text_end": 2143
+  },
+  {
+    "text": "坚持的人甚至会故意把项目塞进一个很宽的期望值带里，好让自己真正想做的那个仍然合格。",
+    "pronounce_text": "坚持的人甚至会故意把项目塞进一个很宽的期望值带里，好让自己真正想做的那个仍然合格。",
+    "time_begin": 428796,
+    "time_end": 436706.8843537415,
+    "text_begin": 2164,
+    "text_end": 2205,
+    "pronounce_text_begin": 2143,
+    "pronounce_text_end": 2184
+  },
+  {
+    "text": "这听起来像作弊，其实不是。一来，我们为自己热爱的问题会工作得更努力；二来，我们对问题的偏好并不是随机的——你爱上一个别人不爱的问题，往往是因为你不自觉地嗅到了，",
+    "pronounce_text": "这听起来像作弊，其实不是。一来，我们为自己热爱的问题会工作得更努力;二来，我们对问题的偏好并不是随机的。你爱上一个别人不爱的问题，往往是因为你不自觉地嗅到了，",
+    "time_begin": 436860,
+    "time_end": 451899.410430839,
+    "text_begin": 2205,
+    "text_end": 2285,
+    "pronounce_text_begin": 2184,
+    "pronounce_text_end": 2263
+  },
+  {
+    "text": "它比别人以为的更重要。",
+    "pronounce_text": "它比别人以为的更重要。",
+    "time_begin": 452099.410430839,
+    "time_end": 453996.32653061225,
+    "text_begin": 2285,
+    "text_end": 2296,
+    "pronounce_text_begin": 2263,
+    "pronounce_text_end": 2274
+  },
+  {
+    "text": "第三样是 focus on a goal，锚定一个目标。小时候我们只想“做点伟大的事\",理论上这该是最强的动力，因为它包含一切；可实践里它没用，恰恰因为包含太多，它没告诉你此刻该干什么。",
+    "pronounce_text": "第三样是focus on a goal，锚定一个目标。小时候我们只想“做点伟大的事\",理论上这该是最强的动力，因为它包含一切;可实践里它没用，恰恰因为包含太多，它没告诉你此刻该干什么。",
+    "time_begin": 454140,
+    "time_end": 469562.5396825397,
+    "text_begin": 2296,
+    "text_end": 2389,
+    "pronounce_text_begin": 2274,
+    "pronounce_text_end": 2366
+  },
+  {
+    "text": "所以前面那四样品质，必须导向一个相当具体的目标。别太具体，否则你会错过旁边的伟大发现;也别太宽泛，否则它推不动你。",
+    "pronounce_text": "所以前面那四样品质，必须导向一个相当具体的目标。别太具体，否则你会错过旁边的伟大发现;也别太宽泛，否则它推不动你。",
+    "time_begin": 469728,
+    "time_end": 479821.56009070296,
+    "text_begin": 2389,
+    "text_end": 2446,
+    "pronounce_text_begin": 2366,
+    "pronounce_text_end": 2423
+  },
+  {
+    "text": "现在你把坚持的内部结构摊开看，它一点都不像固执，复杂得多。这五种品质组合出一个“看起来像\"固执的现象——因为它们都让你不放弃——但机制完全不同。",
+    "pronounce_text": "现在你把坚持的内部结构摊开看，它一点都不像固执，复杂得多。这五种品质组合出一个“看起来像\"固执的现象。因为它们都让你不放弃。但机制完全不同。",
+    "time_begin": 479988,
+    "time_end": 493703.873015873,
+    "text_begin": 2446,
+    "text_end": 2518,
+    "pronounce_text_begin": 2423,
+    "pronounce_text_end": 2493
+  },
+  {
+    "text": "它不是单纯抵抗改变，而是被精力和韧性推着奔向目标，路径由想象力去发现、由判断力去打磨。",
+    "pronounce_text": "它不是单纯抵抗改变，而是被精力和韧性推着奔向目标，路径由想象力去发现、由判断力去打磨。",
+    "time_begin": 493848,
+    "time_end": 502571.5827664399,
+    "text_begin": 2518,
+    "text_end": 2561,
+    "pronounce_text_begin": 2493,
+    "pronounce_text_end": 2536
+  },
+  {
+    "text": "在决策树的低处，任何一点，只要期望值跌得够低，你都会让步、都会改；但精力和韧性会一直把你推向高处那个你亲手选定的东西。",
+    "pronounce_text": "在决策树的低处，任何一点，只要期望值跌得够低，你都会让步、都会改;但精力和韧性会一直把你推向高处那个你亲手选定的东西。",
+    "time_begin": 502740,
+    "time_end": 514795.6462585034,
+    "text_begin": 2561,
+    "text_end": 2620,
+    "pronounce_text_begin": 2536,
+    "pronounce_text_end": 2595
+  },
+  {
+    "text": "所以，“对的那种固执\"比“错的那种\"稀有得多、结果也好得多，一点都不奇怪。固执谁都会——小孩、醉汉、傻瓜最擅长。",
+    "pronounce_text": "所以，“对的那种固执\"比“错的那种\"稀有得多、结果也好得多，一点都不奇怪。固执谁都会。小孩、醉汉、傻瓜最擅长。",
+    "time_begin": 514944,
+    "time_end": 526570.0770975057,
+    "text_begin": 2620,
+    "text_end": 2676,
+    "pronounce_text_begin": 2595,
+    "pronounce_text_end": 2650
+  },
+  {
+    "text": "可很少有人能同时凑齐这五种品质；一旦凑齐，那结果，是魔法般的。",
+    "pronounce_text": "可很少有人能同时凑齐这五种品质;一旦凑齐，那结果，是魔法般的。",
+    "time_begin": 526770.0770975057,
+    "time_end": 532811.7551020408,
+    "text_begin": 2676,
+    "text_end": 2707,
+    "pronounce_text_begin": 2650,
+    "pronounce_text_end": 2681
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 532980,
+    "time_end": 537651.7006802721,
+    "text_begin": 2707,
+    "text_end": 2734,
+    "pronounce_text_begin": 2681,
+    "pronounce_text_end": 2707
+  }
+]

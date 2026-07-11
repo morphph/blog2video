@@ -1,0 +1,52 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 46.9,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_10.html",
+ "topbarIndex": "[10/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.058,
+   "text": "但光有这两样，还只是罕见，还解不了难题。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.05,
+   "localDuration": 1.217,
+   "text": "还需要三样。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.428,
+   "localDuration": 5.633,
+   "text": "第一是 resilience，韧性——挫折不能击垮你的士气。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.061,
+   "localDuration": 4.507,
+   "text": "问题够大，挫折必然发生，扛不住，你就只能做小事。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.724,
+   "localDuration": 10.268,
+   "text": "但注意，韧性不等于固执：韧性是挫折改变不了你的士气，固执是挫折改变不了你的想法，这是两码事。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.192,
+   "localDuration": 8.723,
+   "text": "第二是 good judgement，好的判断力，因为坚持常常要求你改变想法，而换不换，靠的正是判断。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 35.056,
+   "localDuration": 11.707,
+   "text": "坚持的人其实相当理性,盯着期望值做事——是这份理性、而不是鲁莽，让他们敢去做那些看起来不太可能成的事。"
+  }
+ ]
+}

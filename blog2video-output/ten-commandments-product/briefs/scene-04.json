@@ -1,0 +1,82 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 57.7,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_4.html",
+ "topbarIndex": "[04/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.101,
+   "text": "Fairies 和 Shortcut 的对比，我觉得是这篇文章里最具体的一个教训。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.247,
+   "localDuration": 6.454,
+   "text": "Fairies 是一个空白聊天框，定位是\"通用 Agent，能做任何事\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.701,
+   "localDuration": 5.234,
+   "text": "问题在于，\"能做任何事\"在用户眼里等于\"不知道它能做什么\"。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.935,
+   "localDuration": 4.884,
+   "text": "团队自己都说不清它解决什么问题，用户更没办法自己想明白。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.987,
+   "localDuration": 5.821,
+   "text": "使用方式的解释工作，被全部甩给了用户，而用户没有义务替你想这个。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 27.963,
+   "localDuration": 6.297,
+   "text": "Shortcut 第一天的界面是：一张电子表格，旁边一个 Agent 面板。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.407,
+   "localDuration": 0.821,
+   "text": "就这样。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.228,
+   "localDuration": 3.286,
+   "text": "用户一眼看懂，零解释，直接开始。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.514,
+   "localDuration": 2.875,
+   "text": "这个形式本身就是产品说明书。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 41.535,
+   "localDuration": 8.08,
+   "text": "因为用户一秒就看懂了，团队才能把精力放到真正重要的事上：他们到底在乎 Excel 里的什么？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 49.615,
+   "localDuration": 3.337,
+   "text": "答案是准确性和公式正确性，排在第一位。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 53.091,
+   "localDuration": 4.463,
+   "text": "清晰的形式没有结束工作，它让真正的工作得以开始。"
+  }
+ ]
+}

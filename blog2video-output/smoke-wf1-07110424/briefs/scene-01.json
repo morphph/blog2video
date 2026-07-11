@@ -1,0 +1,46 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 37.833,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_1.html",
+ "topbarIndex": "[01/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.852,
+   "text": "你身边一定有那种死不放弃的人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.852,
+   "localDuration": 4.945,
+   "text": "有的你佩服，觉得他有决心；有的你头疼，觉得他就是轴。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.797,
+   "localDuration": 4.944,
+   "text": "可如果我问你，坚持和固执到底差在哪，你多半答不上来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.888,
+   "localDuration": 5.566,
+   "text": "这是 Paul Graham 的一篇随笔，他一上来就承认，这个区别自己也想了很久。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.612,
+   "localDuration": 11.928,
+   "text": "我们通常这么说：成功的人有 persistence，也就是持久的坚持，新想法一开始行不通，他不气馁，一直试，最后找到能走通的路。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.74,
+   "localDuration": 6.936,
+   "text": "而纯粹的固执呢，是失败的配方——那种人烦得很，一头撞墙，毫无进展。"
+  }
+ ]
+}

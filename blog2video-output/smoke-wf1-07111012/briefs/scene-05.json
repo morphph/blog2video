@@ -1,0 +1,100 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 72.4,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_5.html",
+ "topbarIndex": "[05/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 4.335,
+   "text": "这里我要讲一个 Steve Jobs 的故事,因为它太说明问题了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.508,
+   "localDuration": 5.634,
+   "text": "Jobs 青少年时期跑去学书法,就是中世纪手稿上那种漂亮字体。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.142,
+   "localDuration": 5.634,
+   "text": "当时没有任何人,包括他自己,觉得这玩意儿对未来的职业有半点用。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.776,
+   "localDuration": 1.635,
+   "text": "他纯粹就是感兴趣。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.576,
+   "localDuration": 10.849,
+   "text": "结果很多年后,Macintosh 电脑诞生,恰好卡在一个时间点上——计算机的性能刚刚强大到,能做出印刷书籍那种质量的字体。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.425,
+   "localDuration": 3.734,
+   "text": "而在这件事上,Apple 碾压了所有对手。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 32.159,
+   "localDuration": 0.712,
+   "text": "为什么?"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 33.02,
+   "localDuration": 4.846,
+   "text": "因为 Steve 是整个行业里,极少数真正懂平面设计的人。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.024,
+   "localDuration": 2.39,
+   "text": "你看,项目根本不必严肃。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.414,
+   "localDuration": 3.785,
+   "text": "它可以随便多无聊,只要你为它兴奋就行。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 44.199,
+   "localDuration": 4.383,
+   "text": "大概 90% 的程序员,都是从做游戏开始的。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 48.752,
+   "localDuration": 8.561,
+   "text": "而且你不用只做一个,学各种各样的东西是好事——Jobs 除了书法还学电子学,那个后来更值钱。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 57.464,
+   "localDuration": 4.62,
+   "text": "擅长技术这件事,和练小提琴、练足球没区别,全靠练。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 62.084,
+   "localDuration": 6.283,
+   "text": "假设你 22 岁创业,从现在开始写程序,到那时候你至少练了 7 年。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 68.367,
+   "localDuration": 3.881,
+   "text": "任何东西练 7 年,你都能做得相当不错了。"
+  }
+ ]
+}

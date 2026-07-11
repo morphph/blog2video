@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1920px; background:#0D0D1A; font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif; color:#FFFFFF; overflow:hidden; }
+.slide { width:100%; height:100%; padding:200px 72px 420px 72px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+.head { font-size:32px; color:#8B5CF6; font-weight:700; margin-bottom:40px; letter-spacing:1px; }
+.cmp { display:flex; flex-direction:column; gap:26px; width:100%; margin-bottom:40px; }
+.col { background:#1A1A2E; border-radius:12px; padding:32px 30px; text-align:left; }
+.col.inner { border:1px solid rgba(16,185,129,0.4); border-left:4px solid #10B981; }
+.col.outer { border:1px solid rgba(139,92,246,0.4); border-left:4px solid #8B5CF6; }
+.col .t { font-size:34px; font-weight:800; margin-bottom:10px; }
+.col.inner .t { color:#10B981; }
+.col.outer .t { color:#8B5CF6; }
+.col .d { font-size:30px; color:#B0B0CC; line-height:1.45; }
+.col .d em { color:#FFFFFF; font-style:normal; font-weight:700; }
+.foot { width:100%; background:#1A1A2E; border:1px solid rgba(245,158,11,0.5); border-radius:12px; padding:30px; font-size:36px; font-weight:800; color:#F59E0B; line-height:1.4; }
+</style></head><body><div class="slide">
+<div class="head">// 两个循环，都自动化了</div>
+<div class="cmp">
+<div class="col inner"><div class="t">内循环：写码-跑测试-修</div><div class="d">短周期，快反馈，一个目标——<em>让测试过</em>。编程 Agent 早就自动化了</div></div>
+<div class="col outer"><div class="t">外循环：/goal 驱动整个系统</div><div class="d">长周期，稀疏反馈。几个月的<em>上线-测量-迭代</em>，压进一次跑批</div></div>
+</div>
+<div class="foot">剩下留给你的，只有一件事：<br>定义那个损失函数</div>
+</div></body></html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有(principle:问题 → LFD 快进 → 根本区别对比 → 决定裁决)—— */
+[data-composition-id='s07'] .htitle{margin-top:16px}
+[data-composition-id='s07'] .prob{margin-top:24px;font-size:38px;color:#8a8a85}
+[data-composition-id='s07'] .prob .em{color:#ccff4d}
+[data-composition-id='s07'] .pl2{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s07'] .princ{margin-top:24px}
+[data-composition-id='s07'] .princ .lead{font-size:38px}
+[data-composition-id='s07'] .metaphor{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s07'] .ar{color:#ccff4d;margin:0 8px}
+[data-composition-id='s07'] .klh{margin-top:26px}
+[data-composition-id='s07'] .close{margin-top:24px;font-size:37px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="85.7" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[07/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// LOSS FUNCTION DEVELOPMENT · <span class="acc">特别在哪</span></div>
+      <div class="h2 htitle">几小时就能上线,<br>坑却全埋在<span class="em">长尾</span>里</div>
+
+      <div class="lead prob">长尾 = spec 从没想到的<span class="em">边缘情况</span>,只在生产里一条条冒出来
+        <div class="pl2">Zoe 盯错误日志 <span class="ar">→</span> 派 Codex 自动修 <span class="ar">→</span> 开 PR,仍拖几个月</div>
+      </div>
+
+      <div class="bracket princ">
+        <div class="lead">LFD:把这条长尾<span class="em">快进</span> —— 上线前先做一次<span class="em">浸泡测试</span></div>
+        <div class="metaphor">一季度一季度等 bug 滴 <span class="ar">→</span> 几百个边缘情况一次砸下</div>
+      </div>
+
+      <div class="kicker klh">// 一个根本的区别</div>
+      <div class="cols">
+        <div class="col c-a"><div class="ch">测试套件</div><div class="it"><div class="nm">有限的</div><div class="ds">跑绿那一刻就结束了</div></div></div>
+        <div class="col alt c-b"><div class="ch">评测集</div><div class="it"><div class="nm">1000 条卡在 95%</div><div class="ds">永远够不到底的目标</div></div></div>
+      </div>
+
+      <div class="lead close">几百个<span class="dim">看不见的决定</span> · 没有你写的目标,它永远挑<span class="em">最省事的那个</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.009" data-duration="4.289" data-track-index="5"><div class="sub-inner">现在我们能说清 loss function development 到底<span class="sub-k">特别在哪</span>了。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.437" data-duration="4.556" data-track-index="5"><div class="sub-inner">大多数人用 Agent 造产品，几小时<span class="sub-k">从零到上线</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.993" data-duration="1.094" data-track-index="5"><div class="sub-inner">但坑在<span class="sub-k">长尾</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.087" data-duration="6.197" data-track-index="5"><div class="sub-inner">那些 spec 从没想到的<span class="sub-k">边缘情况</span>，只会在生产环境里一条一条冒出来。</div></div>
+    <div id="sub-5" class="clip sub" data-start="16.484" data-duration="5.147" data-track-index="5"><div class="sub-inner">你在日志里没抓到的，就由用户来报——这是发现 bug <span class="sub-k">最贵的方式</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.789" data-duration="9.052" data-track-index="5"><div class="sub-inner">Elvis 自己有个 Agent 叫 <span class="sub-k">Zoe</span>，每天盯着错误日志，看到新错误就派 Codex 去修，自动开 PR。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.841" data-duration="2.748" data-track-index="5"><div class="sub-inner">可就算这样，长尾还是要<span class="sub-k">拖上几个月</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="33.741" data-duration="3.093" data-track-index="5"><div class="sub-inner">LFD 干的事，是把这条长尾<span class="sub-k">快进</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.981" data-duration="10.044" data-track-index="5"><div class="sub-inner">如果你能提前拿到真实的期望输出，也就是"好"到底长什么样，而且是成规模的，那你就能在上线之前先做一次<span class="sub-k">浸泡测试</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="47.025" data-duration="4.566" data-track-index="5"><div class="sub-inner"><span class="sub-k">几百个边缘情况</span>，在一次优化里一起砸向 Agent。</div></div>
+    <div id="sub-11" class="clip sub" data-start="51.741" data-duration="4.242" data-track-index="5"><div class="sub-inner">而不是<span class="sub-k">一个季度一个季度</span>地，等 bug 报告慢慢滴下来。</div></div>
+    <div id="sub-12" class="clip sub" data-start="56.133" data-duration="1.905" data-track-index="5"><div class="sub-inner">这里有个<span class="sub-k">根本的区别</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="58.038" data-duration="3.619" data-track-index="5"><div class="sub-inner">测试套件是有限的，<span class="sub-k">跑绿那一刻就结束了</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="61.657" data-duration="8.192" data-track-index="5"><div class="sub-inner">而一个一千条的评测集，卡在百分之九十五，是一个你只能不断往下降、却<span class="sub-k">永远够不到底</span>的目标。</div></div>
+    <div id="sub-15" class="clip sub" data-start="69.993" data-duration="1.414" data-track-index="5"><div class="sub-inner">为什么这很<span class="sub-k">重要</span>？</div></div>
+    <div id="sub-16" class="clip sub" data-start="71.407" data-duration="4.417" data-track-index="5"><div class="sub-inner">因为 Agent 会做出几百个你永远<span class="sub-k">看不见的决定</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="75.824" data-duration="2.828" data-track-index="5"><div class="sub-inner">每一个决定，都要有个东西来<span class="sub-k">裁决</span>。</div></div>
+    <div id="sub-18" class="clip sub" data-start="78.652" data-duration="6.891" data-track-index="5"><div class="sub-inner">如果目标不是你写的，Agent 就自己挑一个——而它挑的，永远是<span class="sub-k">最省事的那个</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.htitle', 4.437, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.prob', 10.087, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.pl2', 21.789, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.princ', 33.741, {y:20, d:.4, ease:'power4.out'});
+    D2.enter(tl, R+'.princ .metaphor', 47.025, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.klh', 56.133, {y:-10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.col', 58.038, {y:20, d:.4, ease:'expo.out', step:3.619});
+    D2.enter(tl, R+'.close', 71.407, {y:18, d:.4, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.009],['#sub-2',4.437],['#sub-3',8.993],['#sub-4',10.087],['#sub-5',16.484],['#sub-6',21.789],['#sub-7',30.841],['#sub-8',33.741],['#sub-9',36.981],['#sub-10',47.025],['#sub-11',51.741],['#sub-12',56.133],['#sub-13',58.038],['#sub-14',61.657],['#sub-15',69.993],['#sub-16',71.407],['#sub-17',75.824],['#sub-18',78.652]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 85.7, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

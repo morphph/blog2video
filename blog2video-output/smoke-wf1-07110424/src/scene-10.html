@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-10 特有 —— */
+[data-composition-id='s10'] .row .rt .code{margin-right:12px}
+[data-composition-id='s10'] .diffbox{width:100%;background:#1c1c1e;border:1px solid rgba(255,107,94,.4);border-left:3px solid #ff6b5e;padding:26px 32px}
+[data-composition-id='s10'] .diffbox .dh{font-weight:900;font-size:46px;line-height:1.2;color:#edebe6;letter-spacing:.02em}
+[data-composition-id='s10'] .diffbox .dh .ok{color:#ccff4d}
+[data-composition-id='s10'] .diffbox .dh .bad{color:#ff6b5e}
+[data-composition-id='s10'] .diffbox .dd{margin-top:12px;font-weight:500;font-size:30px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s10'] .diffbox .dd b{color:#edebe6;font-weight:700}
+[data-composition-id='s10'] .close{font-weight:600;font-size:34px;line-height:1.42;color:#8a8a85}
+[data-composition-id='s10'] .close .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s10" data-start="0" data-duration="46.9" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[10/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">光有精力想象力还不够 · <span class="acc">再加两样</span></div>
+      <div class="h1" style="margin-top:18px">韧性 <span class="em">+ 判断力</span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="code">Resilience</span>韧性</div>
+          <div class="rd">挫折改变不了你的士气</div>
+        </div></div>
+
+        <div class="diffbox">
+          <div class="dh"><span class="ok">韧性</span> ≠ <span class="bad">固执</span></div>
+          <div class="dd">韧性是<b>士气</b>不被改变,固执是<b>想法</b>不被改变</div>
+        </div>
+
+        <div class="row r2"><div class="n">04</div><div class="rb">
+          <div class="rt"><span class="code">Good Judgement</span>判断力</div>
+          <div class="rd">盯着期望值,理性而非鲁莽</div>
+        </div></div>
+      </div>
+
+      <div class="close" style="margin-top:22px">正是这份<span class="em">理性</span>,让他们敢做看似不可能的事</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="4.058" data-track-index="5"><div class="sub-inner">但光有这两样，还只是罕见，还<span class="sub-k">解不了难题</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.05" data-duration="1.217" data-track-index="5"><div class="sub-inner">还需要<span class="sub-k">三样</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.428" data-duration="5.633" data-track-index="5"><div class="sub-inner">第一是 resilience，<span class="sub-k">韧性</span>——挫折不能击垮你的士气。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.061" data-duration="4.507" data-track-index="5"><div class="sub-inner">问题够大，<span class="sub-k">挫折必然发生</span>，扛不住，你就只能做小事。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.724" data-duration="10.268" data-track-index="5"><div class="sub-inner">但注意，<span class="sub-k">韧性不等于固执</span>：韧性是挫折改变不了你的士气，固执是挫折改变不了你的想法，这是两码事。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.192" data-duration="8.723" data-track-index="5"><div class="sub-inner">第二是 good judgement，好的<span class="sub-k">判断力</span>，因为坚持常常要求你改变想法，而换不换，靠的正是判断。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.056" data-duration="11.707" data-track-index="5"><div class="sub-inner">坚持的人其实相当理性,盯着<span class="sub-k">期望值</span>做事——是这份理性、而不是鲁莽，让他们敢去做那些看起来不太可能成的事。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s10'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.2, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 5.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.diffbox', 15.9, {y:16, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 26.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2 .rd', 35.3, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.close', 41.5, {y:14, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',4.05],['#sub-3',5.428],['#sub-4',11.061],['#sub-5',15.724],['#sub-6',26.192],['#sub-7',35.056]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 46.9, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s10'] = tl;
+  })();
+  </script>
+</body>
+</html>

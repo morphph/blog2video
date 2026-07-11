@@ -1,0 +1,10 @@
+START 06:27:31  node=v22.22.0  scenes=8
+skip   scene-01 (exists)
+render scene-02 rc=0  clip_dur=66.633333  took=475s  06:35:26
+render scene-03 rc=0  clip_dur=79.000000  took=542s  06:44:28
+render scene-04 rc=0  clip_dur=57.700000  took=413s  06:51:22
+render scene-05 rc=0  clip_dur=61.300000  took=431s  06:58:34
+render scene-06 rc=0  clip_dur=51.000000  took=372s  07:04:46
+render scene-07 rc=0  clip_dur=71.100000  took=480s  07:12:46
+render scene-08 rc=0  clip_dur=5.000000  took=101s  07:14:27
+DONE   07:14:27

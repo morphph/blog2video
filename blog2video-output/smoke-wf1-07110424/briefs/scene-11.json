@@ -1,0 +1,70 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 62.4,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_11.html",
+ "topbarIndex": "[11/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.678,
+   "text": "不过判断力有一处例外，我觉得特别妙。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.678,
+   "localDuration": 7.356,
+   "text": "在决策树的最顶端，当两个问题的期望值差不多时，选哪个就归结为个人偏好了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.196,
+   "localDuration": 7.911,
+   "text": "坚持的人甚至会故意把项目塞进一个很宽的期望值带里，好让自己真正想做的那个仍然合格。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 19.26,
+   "localDuration": 2.444,
+   "text": "这听起来像作弊，其实不是。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.704,
+   "localDuration": 12.595,
+   "text": "一来，我们为自己热爱的问题会工作得更努力；二来，我们对问题的偏好并不是随机的——你爱上一个别人不爱的问题，往往是因为你不自觉地嗅到了，"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 34.499,
+   "localDuration": 1.897,
+   "text": "它比别人以为的更重要。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 36.54,
+   "localDuration": 4.643,
+   "text": "第三样是 focus on a goal，锚定一个目标。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.183,
+   "localDuration": 10.78,
+   "text": "小时候我们只想“做点伟大的事\",理论上这该是最强的动力，因为它包含一切；可实践里它没用，恰恰因为包含太多，它没告诉你此刻该干什么。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 52.128,
+   "localDuration": 4.25,
+   "text": "所以前面那四样品质，必须导向一个相当具体的目标。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 56.378,
+   "localDuration": 5.844,
+   "text": "别太具体，否则你会错过旁边的伟大发现;也别太宽泛，否则它推不动你。"
+  }
+ ]
+}

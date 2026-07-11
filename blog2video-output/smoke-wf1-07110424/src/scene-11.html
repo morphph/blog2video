@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有(仅一条分节线,复用 kit 类)—— */
+[data-composition-id='s11'] .k-mid{margin-top:44px;padding-top:28px;border-top:1px solid #2a2a2c;width:100%}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="62.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[11/12]</div>
+    </div>
+
+    <div class="content top">
+      <!-- Beat A:判断力的一处例外 -->
+      <div class="kicker k-top">// 判断力 · <span class="acc">一处例外</span></div>
+      <div class="h1" style="margin-top:18px">期望值相近,选<span class="em">个人偏好</span></div>
+      <div class="lead l-band" style="margin-top:24px">坚持者故意<span class="em">撑宽期望值带</span></div>
+
+      <div class="kicker rowhead" style="margin-top:34px">// 听着像作弊,其实不是 —— 两个理由</div>
+      <div class="rows" style="margin-top:18px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">热爱的问题,工作更努力</div>
+        </div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">偏好不随机,你<span class="ok">嗅到它更重要</span></div>
+        </div></div>
+      </div>
+
+      <!-- Beat B:第五样品质 · 锚定目标 -->
+      <div class="kicker k-mid">// FOCUS ON A GOAL · <span class="acc">锚定一个目标</span></div>
+      <div class="lead l-goal" style="margin-top:18px">『做点伟大的事』<span class="dim">太大,没说此刻做什么</span></div>
+      <div class="h2 goalpunch" style="margin-top:20px">必须导向一个<span class="em">具体目标</span></div>
+
+      <div class="cols" style="margin-top:24px">
+        <div class="col c-a"><div class="ch">太具体</div><div class="it"><div class="nm">错过旁边的伟大发现</div></div></div>
+        <div class="col alt c-b"><div class="ch">太宽泛</div><div class="it"><div class="nm">推不动你</div></div></div>
+      </div>
+    </div>
+
+    <!-- 字幕:brief.subtitles 逐条,本地时间,一字不差 -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.678" data-track-index="5"><div class="sub-inner">不过判断力有一处<span class="sub-k">例外</span>，我觉得特别妙。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.678" data-duration="7.356" data-track-index="5"><div class="sub-inner">在决策树的最顶端，当两个问题的期望值差不多时，选哪个就归结为<span class="sub-k">个人偏好</span>了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.196" data-duration="7.911" data-track-index="5"><div class="sub-inner">坚持的人甚至会故意把项目塞进一个很宽的<span class="sub-k">期望值带</span>里，好让自己真正想做的那个仍然合格。</div></div>
+    <div id="sub-4" class="clip sub" data-start="19.26" data-duration="2.444" data-track-index="5"><div class="sub-inner">这听起来像<span class="sub-k">作弊</span>，其实不是。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.704" data-duration="12.595" data-track-index="5"><div class="sub-inner">一来，我们为自己热爱的问题会工作得更努力；二来，我们对问题的偏好并不是随机的——你爱上一个别人不爱的问题，往往是因为你不自觉地<span class="sub-k">嗅到了</span>，</div></div>
+    <div id="sub-6" class="clip sub" data-start="34.499" data-duration="1.897" data-track-index="5"><div class="sub-inner">它比别人以为的<span class="sub-k">更重要</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="36.54" data-duration="4.643" data-track-index="5"><div class="sub-inner">第三样是 <span class="sub-k">focus on a goal</span>，锚定一个目标。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.183" data-duration="10.78" data-track-index="5"><div class="sub-inner">小时候我们只想“做点伟大的事",理论上这该是最强的动力，因为它包含一切；可实践里它没用，恰恰因为包含太多，它没告诉你<span class="sub-k">此刻该干什么</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="52.128" data-duration="4.25" data-track-index="5"><div class="sub-inner">所以前面那四样品质，必须导向一个相当<span class="sub-k">具体的目标</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="56.378" data-duration="5.844" data-track-index="5"><div class="sub-inner">别<span class="sub-k">太具体</span>，否则你会错过旁边的伟大发现;也别太宽泛，否则它推不动你。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* Beat A */
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 4.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.l-band', 11.5, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.rowhead', 19.5, {y:-10, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 21.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 28.0, {x:-24, ease:'expo.out'});
+
+    /* Beat B */
+    D2.enter(tl, R+'.k-mid', 36.8, {y:-10, ease:'power2.out'});
+    D2.enter(tl, R+'.l-goal', 41.5, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.goalpunch', 52.4, {y:18, d:.35, ease:'power3.out'});
+    D2.stagger(tl, R+'.cols .col', 56.6, {x:-20, step:.32, d:.3, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.678],['#sub-3',11.196],['#sub-4',19.26],['#sub-5',21.704],['#sub-6',34.499],['#sub-7',36.54],['#sub-8',41.183],['#sub-9',52.128],['#sub-10',56.378]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 62.4, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

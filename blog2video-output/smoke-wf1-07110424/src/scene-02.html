@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有(仅 lead 间距 + tautology 行等号色）—— */
+[data-composition-id='s02'] .lead{margin-top:20px}
+[data-composition-id='s02'] .row .rt .eq{color:#8a8a85;font-family:'JetBrains Mono',monospace;margin:0 8px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="30.267" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[02/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 但等一下 · <span class="acc">重新发问</span></div>
+      <div class="h1" style="margin-top:18px">同一件事,<span class="em">只是结果不同</span>?</div>
+      <div class="lead">还是,只是我们<span class="em">事后贴的标签</span>?</div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row warn r1"><div class="n">01</div><div class="rb">
+          <div class="rt">如果只是<span class="code">标签</span></div>
+          <div class="rd">这个区分就 <span class="warn">一文不值</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">“要坚持、别固执”<span class="eq">=</span>“要对、别错”</div>
+          <div class="rd late">谁不想对呢 —— <span class="warn">这是废话</span></div>
+        </div></div>
+
+        <div class="row now r3"><div class="n">03</div><div class="rb">
+          <div class="rt">只有当它们是<span class="code">两种真正不同的行为</span></div>
+          <div class="rd">拆开,才有意义</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="0.99" data-track-index="5"><div class="sub-inner">但等一下。</div></div>
+    <div id="sub-2" class="clip sub" data-start="0.993" data-duration="9.104" data-track-index="5"><div class="sub-inner">这两种人，行为真的不一样吗，还是他们做着同一件事，只是我们按结果对错，事后给贴了不同的<span class="sub-k">标签</span>？</div></div>
+    <div id="sub-3" class="clip sub" data-start="10.263" data-duration="1.42" data-track-index="5"><div class="sub-inner">这问题<span class="sub-k">很要命</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.683" data-duration="3.853" data-track-index="5"><div class="sub-inner">如果只是贴标签，那这个区分就<span class="sub-k">一文不值</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.536" data-duration="8.315" data-track-index="5"><div class="sub-inner">你叫一个人“要坚持、别固执",等于在叫他“要对、别错"——可谁不想对呢，这是<span class="sub-k">废话</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="24.015" data-duration="6.123" data-track-index="5"><div class="sub-inner">只有当坚持和固执是<span class="sub-k">两种真正不同</span>的行为方式时,把它们拆开才有意义。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.0, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 5.5, {y:14, d:.36, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 11.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 15.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .late', 21.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 24.1, {x:-24, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',0.993],['#sub-3',10.263],['#sub-4',11.683],['#sub-5',15.536],['#sub-6',24.015]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.267, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .l-top{font-size:34px;margin-top:18px}
+[data-composition-id='s08'] .br-late{font-size:34px;color:#8a8a85;margin-top:12px}
+[data-composition-id='s08'] .stat-line{margin-top:30px}
+[data-composition-id='s08'] .stat-line .s-late{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="61.1" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[08/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个反转 · <span class="acc">这是条重要线索</span></div>
+      <div class="h1" style="margin-top:16px">别急着,把固执<span class="em">一脚踢开</span></div>
+      <div class="lead l-top">坚持 ≠ 固执 —— 不是<span class="em">对立的两极</span></div>
+
+      <div class="bracket br" style="margin-top:32px">
+        <div class="lead">第二个比方:像<span class="em">无氧呼吸</span></div>
+        <div class="lead br-late">更原始,却让你在危险前一跃跳开,防 panic</div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:32px">最优的固执量,<span class="hl"><span class="bar"></span><span class="tx">不是零</span></span></div>
+
+      <div class="status stat-line"><span class="dot"></span>「我不放弃」先防住 panic<span class="s-late"> · 但只能带你走这么远</span></div>
+
+      <div class="rows" style="margin-top:30px">
+        <div class="row r-ok"><div class="n">01</div><div class="rb">
+          <div class="rt">简单 · 单一路径</div>
+          <div class="rd">固执管用,<span class="ok">连很轴的人都能用</span></div>
+        </div></div>
+        <div class="row warn r-no"><div class="n">02</div><div class="rb">
+          <div class="rt">复杂 · 需外部检验</div>
+          <div class="rd">退化成 <span class="warn">诱导性的愚蠢</span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="3.688" data-track-index="5"><div class="sub-inner">但这里有个<span class="sub-k">反转</span>，别急着把固执一脚踢开。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.704" data-duration="4.269" data-track-index="5"><div class="sub-inner">固执对<span class="sub-k">简单问题</span>是真的有效——这是条重要线索。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.116" data-duration="3.313" data-track-index="5"><div class="sub-inner">坚持和固执，其实不是<span class="sub-k">对立的两极</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="11.429" data-duration="8.696" data-track-index="5"><div class="sub-inner">作者打了第二个比方：它们的关系，更像有氧呼吸，和我们从远古祖先那里继承来的<span class="sub-k">无氧呼吸</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.325" data-duration="6.332" data-track-index="5"><div class="sub-inner">无氧<span class="sub-k">更原始</span>，但有它的用处——你突然从危险面前跳开，靠的就是它。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.8" data-duration="2.491" data-track-index="5"><div class="sub-inner">所以最优的固执量，<span class="sub-k">不是零</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.291" data-duration="8.241" data-track-index="5"><div class="sub-inner">面对挫折，第一反应是那句不假思索的“我不放弃",这其实是好的，它能防止你 <span class="sub-k">panic</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="37.672" data-duration="3.341" data-track-index="5"><div class="sub-inner">代价是，不假思索只能带你走<span class="sub-k">这么远</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="41.013" data-duration="3.931" data-track-index="5"><div class="sub-inner">越靠近固执那一端，你越解不了<span class="sub-k">真正的难题</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="45.088" data-duration="15.852" data-track-index="5"><div class="sub-inner">这就是它的适用边界：单一路径的简单问题，固执管用，连很轴的人都能用;可一旦问题复杂、需要外部检验，它就退化成一种“<span class="sub-k">诱导性的愚蠢</span>"——反面证据越堆越高，你却越蹬越紧。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.l-top', 8.1, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.br', 11.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.br-late', 20.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 26.5, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 27.0);
+    D2.enter(tl, R+'.stat-line', 29.3, {x:-20, ease:'power2.out'});
+    D2.enter(tl, R+'.s-late', 37.6, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r-ok', 45.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r-no', 54.0, {x:-24, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',3.704],['#sub-3',8.116],['#sub-4',11.429],['#sub-5',20.325],['#sub-6',26.8],['#sub-7',29.291],['#sub-8',37.672],['#sub-9',41.013],['#sub-10',45.088]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 61.1, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

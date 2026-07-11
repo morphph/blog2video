@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有(coral 反面强调,唯一辅助色)—— */
+[data-composition-id='s06'] .bad{color:#ff6b5e;font-weight:700}
+[data-composition-id='s06'] .row.warn .rt{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="29.5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[06/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 全文<span class="acc">最锋利的一刀</span></div>
+      <div class="h1" style="margin-top:20px">坚持抓<span class="em">目标</span>,固执抓<span class="bad">想法</span></div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1 now"><div class="n">01</div><div class="rb">
+          <div class="rt">坚持的人 · 执着于<span class="code">目标</span></div>
+          <div class="rd">抓的是终点,路线随时可以换</div>
+        </div></div>
+
+        <div class="row r2 warn"><div class="n">02</div><div class="rb">
+          <div class="rt">固执的人 · 执着于自己那版<span class="bad">想法</span></div>
+          <div class="rd">「怎么达成」的那个念头,被他攥死不放</div>
+          <div class="rd late">而且往往是<span class="bad">最早、最没被打磨过</span>的第一版</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:38px">不只执着细节,更爱执着<span class="bad">错的细节</span></div>
+
+      <div class="status" style="margin-top:30px"><span class="dot"></span>一个抓终点,一个抓没验证过的第一版路线图</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="9.362" data-track-index="5"><div class="sub-inner">这就是整篇文章我认为<span class="sub-k">最锋利的一刀</span>：坚持的人执着于目标，固执的人执着于自己关于怎么达成目标的那个想法。</div></div>
+    <div id="sub-2" class="clip sub" data-start="9.517" data-duration="7.807" data-track-index="5"><div class="sub-inner">更糟的是，固执的人往往执着于最早那一批想法——恰恰是<span class="sub-k">最没被真实工作打磨过</span>的想法。</div></div>
+    <div id="sub-3" class="clip sub" data-start="17.324" data-duration="5.27" data-track-index="5"><div class="sub-inner">所以他不只是执着于细节，他还格外容易执着于<span class="sub-k">错误的细节</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="22.765" data-duration="6.587" data-track-index="5"><div class="sub-inner">同样是死不放手，一个抓的是终点，一个抓的是自己都还没验证过的<span class="sub-k">第一版路线图</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 3.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 6.8, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .late', 10.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 17.6, {y:18, d:.35, ease:'power3.out'});
+    D2.enter(tl, R+'.status', 23.1, {y:14, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',9.517],['#sub-3',17.324],['#sub-4',22.765]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 29.5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

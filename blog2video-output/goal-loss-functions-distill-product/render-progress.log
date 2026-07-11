@@ -1,0 +1,5 @@
+START 02:47:25  node=v22.22.0  scenes=14
+render scene-01 rc=0  clip_dur=38.900000  took=662s  02:58:27
+render scene-02 rc=0  clip_dur=64.133333  took=994s  03:15:01
+render scene-03 rc=0  clip_dur=58.300000  took=939s  03:30:40
+render scene-04 rc=0  clip_dur=54.300000  took=848s  03:44:48

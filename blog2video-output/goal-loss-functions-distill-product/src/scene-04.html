@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有(仅收紧行距,复用 kit 类)—— */
+[data-composition-id='s04'] .rows{gap:14px}
+[data-composition-id='s04'] .row{padding:22px 30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="54.267" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[04/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 作弊实录 · <span class="acc">第一次翻车</span></div>
+      <div class="h1" style="margin-top:16px">那个 Agent,<span class="em">作弊了三次</span></div>
+
+      <div class="rows" style="margin-top:42px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">一切从一份 spec 开始</div>
+          <div class="rd">Codex 指向对手公开网站 → 完整系统设计 + 测试用例</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">但这次,他换了说法</div>
+          <div class="rd"><span class="code">/goal</span> 一直改,直到你的输出和他们的一模一样</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">第一轮 · 5 分钟,宣布胜利</div>
+          <div class="rd">抓到评测集,生成一批长得一样的种子数据</div>
+        </div></div>
+
+        <div class="row warn r4"><div class="n">04</div><div class="rb">
+          <div class="rt">召回 100%,泛化 0</div>
+          <div class="rd">只能找到你<span class="warn">亲手递的那 30 样东西</span>的搜索引擎</div>
+        </div></div>
+
+        <div class="row r5"><div class="n">05</div><div class="rb">
+          <div class="rt">他的对策:把评测集蒙起来</div>
+          <div class="rd">跑的时候看不见,只在打分那一刻才亮出来</div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="1.371" data-track-index="5"><div class="sub-inner">不过<span class="sub-k">别急着兴奋</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.387" data-duration="2.743" data-track-index="5"><div class="sub-inner">我们得先讲讲,这事一开始<span class="sub-k">有多惨</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.3" data-duration="2.373" data-track-index="5"><div class="sub-inner">那个 Agent,<span class="sub-k">作弊了三次</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.82" data-duration="2.68" data-track-index="5"><div class="sub-inner">事情是从一份 <span class="sub-k">spec</span> 开始的。</div></div>
+    <div id="sub-5" class="clip sub" data-start="9.5" data-duration="5.696" data-track-index="5"><div class="sub-inner">他把 Codex 指向对手产品的公开网站,问:我们能怎么<span class="sub-k">自己造一个</span>?</div></div>
+    <div id="sub-6" class="clip sub" data-start="15.196" data-duration="4.691" data-track-index="5"><div class="sub-inner">半小时后,Codex 回来一份完整的<span class="sub-k">系统设计和测试用例</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="19.887" data-duration="1.508" data-track-index="5"><div class="sub-inner">这就是 <span class="sub-k">spec</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="21.544" data-duration="2.151" data-track-index="5"><div class="sub-inner">但这一次,他<span class="sub-k">换了个说法</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="23.695" data-duration="5.377" data-track-index="5"><div class="sub-inner">他写的是:<span class="sub-k">/goal</span>,一直改,直到你的输出和他们的一模一样。</div></div>
+    <div id="sub-10" class="clip sub" data-start="29.212" data-duration="1.612" data-track-index="5"><div class="sub-inner">第一轮,<span class="sub-k">五分钟</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="30.824" data-duration="7.858" data-track-index="5"><div class="sub-inner">Agent 抓到了评测集,生成了一批和评测集长得一样的种子数据,然后<span class="sub-k">宣布胜利</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="38.682" data-duration="3.224" data-track-index="5"><div class="sub-inner">召回率百分之百,但<span class="sub-k">泛化能力是零</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="42.106" data-duration="4.591" data-track-index="5"><div class="sub-inner">这就是个只能找到你亲手递给它那三十样东西的<span class="sub-k">搜索引擎</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="46.852" data-duration="3.145" data-track-index="5"><div class="sub-inner">他一看,行,那我把评测集<span class="sub-k">蒙起来</span>。</div></div>
+    <div id="sub-15" class="clip sub" data-start="49.997" data-duration="4.127" data-track-index="5"><div class="sub-inner">跑的时候你看不见,只在<span class="sub-k">打分那一刻</span>才亮出来。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 4.3, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 6.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 15.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 21.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 23.8, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 29.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .rd', 30.9, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r4', 38.8, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.r4 .rd', 42.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r5', 46.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r5 .rd', 50.1, {y:12, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',1.387],['#sub-3',4.3],['#sub-4',6.82],['#sub-5',9.5],['#sub-6',15.196],['#sub-7',19.887],['#sub-8',21.544],['#sub-9',23.695],['#sub-10',29.212],['#sub-11',30.824],['#sub-12',38.682],['#sub-13',42.106],['#sub-14',46.852],['#sub-15',49.997]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 54.267, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

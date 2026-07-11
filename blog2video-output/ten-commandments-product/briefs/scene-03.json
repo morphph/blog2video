@@ -1,0 +1,82 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 78.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_3.html",
+ "topbarIndex": "[03/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.009,
+   "localDuration": 5.531,
+   "text": "说到\"用户是谁\"，他们在三个产品里犯了同一个错，犯了三次。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.697,
+   "localDuration": 7.075,
+   "text": "做 Minecraft Agent 的时候，他们说用户是 Minecraft 玩家。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.772,
+   "localDuration": 7.581,
+   "text": "后来仔细一看：有人玩这个游戏是为了建造，有人是为了 PvP 对战，有人就是想跟朋友在一起。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 20.553,
+   "localDuration": 2.536,
+   "text": "三种人要的是三个不同的产品。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.229,
+   "localDuration": 6.471,
+   "text": "做通用桌面 Agent Fairies 的时候，他们说用户是\"白领工作者\"。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.7,
+   "localDuration": 5.109,
+   "text": "更诚实的说法是：他们希望白领是用户，但白领根本不这么看自己。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.965,
+   "localDuration": 6.886,
+   "text": "做 Excel Agent Shortcut 的时候，他们说\"所有 Excel 用户\"。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.851,
+   "localDuration": 5.634,
+   "text": "后来才慢慢找到那个真正有价值的子集：金融领域里，做高标准高质量工作的人。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 47.637,
+   "localDuration": 5.02,
+   "text": "每次都是同一个移动：把模糊的标签当作\"知道了用户\"。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 52.821,
+   "localDuration": 7.574,
+   "text": "文章里有一句话我觉得说到位了：日志告诉你用户做了什么，但你真正饿着的是\"为什么\"。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 60.561,
+   "localDuration": 11.626,
+   "text": "早期最危险的逃避，恰恰是那些最\"科学\"的东西——数据分析、漏斗报告——因为它们看起来像进展，但都是在重建用户行为的脑补版本。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 72.387,
+   "localDuration": 6.425,
+   "text": "真正的办法只有一个：去坐在他们旁边，看他们在自己的环境里怎么用。"
+  }
+ ]
+}

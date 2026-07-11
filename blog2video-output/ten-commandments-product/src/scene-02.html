@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .trap-label{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:23px;font-weight:700;color:#121212;background:#ff6b5e;padding:3px 14px;letter-spacing:.05em;margin-bottom:18px}
+[data-composition-id='s02'] .tagrow{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+[data-composition-id='s02'] .tagrow .tg{font-family:'JetBrains Mono',monospace;font-size:22px;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:3px 12px}
+[data-composition-id='s02'] .row .accent{color:#ff6b5e;font-weight:700}
+[data-composition-id='s02'] .punch-line{margin-top:32px;padding:22px 30px;background:rgba(204,255,77,.06);border:1px solid #ccff4d;width:100%}
+[data-composition-id='s02'] .punch-line .pl{font-weight:600;font-size:36px;color:#edebe6;line-height:1.5}
+[data-composition-id='s02'] .punch-line .pl .em{color:#ccff4d;font-weight:700}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="66.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI产品<span class="b-cur"></span></div>
+      <div class="idx">[02/7]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 陷阱一 · <span class="acc">最普遍的误解</span></div>
+      <div class="h1" style="margin-top:18px">技术突破 <span class="em">≠</span> 产品</div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">神话：模型能力 → <span class="code">研究就是产品</span></div>
+          <div class="rd">ChatGPT 把研究成果直接变成了现象</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">真相：模型早就存在了</div>
+          <div class="rd">让它成功的是最普通的<span class="ok">聊天框</span></div>
+          <div class="tagrow r2-tags">
+            <span class="tg">底层模型</span><span class="tg">发布前已存在</span><span class="tg">留存"惨不忍睹"</span>
+          </div>
+        </div></div>
+
+        <div class="row r3 warn"><div class="n">03</div><div class="rb">
+          <div class="rt">Minecraft Agent 教训</div>
+          <div class="rd">多 Agent 协作造 <span class="accent">300+</span> 物品 · 登上 HN</div>
+          <div class="rd r3-q" style="margin-top:6px">始终没搞清楚：<span class="warn">哪个玩家，什么问题？</span></div>
+        </div></div>
+      </div>
+
+      <div class="punch-line">
+        <div class="pl">关注不是需求，技术壮举不是产品</div>
+        <div class="pl" style="margin-top:8px"><span class="em">中间那步翻译</span>，才是全部的工作</div>
+      </div>
+    </div>
+
+    <!-- 字幕 -->
+    <div id="sub-1" class="clip sub" data-start="0.007" data-duration="2.152" data-track-index="5"><div class="sub-inner">先从最普遍的一个<span class="sub-k">陷阱</span>说起。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.311" data-duration="2.881" data-track-index="5"><div class="sub-inner">过去几年，<span class="sub-k">模型能力</span>跳得太快了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.192" data-duration="10.37" data-track-index="5"><div class="sub-inner">很多工程师和研究员开始有一种感觉：技术突破本身就证明了价值，就像 <span class="sub-k">ChatGPT</span> 把研究成果直接变成了产品。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.703" data-duration="1.467" data-track-index="5"><div class="sub-inner">但那是一个<span class="sub-k">神话</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.323" data-duration="4.633" data-track-index="5"><div class="sub-inner">ChatGPT 底层的模型，在<span class="sub-k">产品发布之前</span>就存在很久了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.956" data-duration="3.971" data-track-index="5"><div class="sub-inner">真正让它成为现象级产品的，是那个最普通的<span class="sub-k">聊天框</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="25.927" data-duration="5.46" data-track-index="5"><div class="sub-inner">而且就算这样，Sam Altman 自己说，早期留存<span class="sub-k">"惨不忍睹"</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="31.543" data-duration="1.641" data-track-index="5"><div class="sub-inner">他们也犯过<span class="sub-k">同样的错</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="33.343" data-duration="9.97" data-track-index="5"><div class="sub-inner">Minecraft Agent 项目里，他们做到了一件很酷的事：多个 Agent 协作，能一起造出三百多种物品，还能建<span class="sub-k">钻石镐</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="43.313" data-duration="4.431" data-track-index="5"><div class="sub-inner">登上了 X 和 Hacker News，获得了<span class="sub-k">很多关注</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="47.887" data-duration="5.949" data-track-index="5"><div class="sub-inner">但他们始终没搞清楚一件事：这个能力，解决了哪个<span class="sub-k">真实玩家</span>的什么真实问题？</div></div>
+    <div id="sub-12" class="clip sub" data-start="54.007" data-duration="1.541" data-track-index="5"><div class="sub-inner">关注不是<span class="sub-k">需求</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="55.548" data-duration="1.981" data-track-index="5"><div class="sub-inner">技术壮举不是<span class="sub-k">产品</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="57.679" data-duration="8.816" data-track-index="5"><div class="sub-inner">中间那步翻译工作——搞清楚是谁的问题、他们怎么用——才是<span class="sub-k">全部的工作</span>，不是注脚。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    /* r1: myth card — enters around sub-3 (5.2s) */
+    D2.enter(tl, R+'.r1', 5.0, {x:-24, ease:'power3.out'});
+    /* r2: reality card — enters around sub-5 (17.3s) */
+    D2.enter(tl, R+'.r2', 17.2, {x:-24, ease:'expo.out'});
+    /* r2 tags appear with sub-6 (21.9s) */
+    D2.enter(tl, R+'.r2-tags', 22.0, {y:12, d:.3, ease:'power2.out'});
+    /* r3: Minecraft lesson — enters around sub-9 (33.3s) */
+    D2.enter(tl, R+'.r3', 33.2, {x:-24, ease:'power3.out'});
+    /* r3 question line — enters around sub-11 (47.9s) */
+    D2.enter(tl, R+'.r3-q', 47.8, {y:12, d:.28, ease:'power2.out'});
+    /* punch-line — enters at sub-12 (54.0s) */
+    D2.enter(tl, R+'.punch-line', 53.9, {y:18, d:.35, ease:'power3.out'});
+    D2.subs(tl, [
+      ['#sub-1',0.007],['#sub-2',2.311],['#sub-3',5.192],['#sub-4',15.703],
+      ['#sub-5',17.323],['#sub-6',21.956],['#sub-7',25.927],['#sub-8',31.543],
+      ['#sub-9',33.343],['#sub-10',43.313],['#sub-11',47.887],['#sub-12',54.007],
+      ['#sub-13',55.548],['#sub-14',57.679]
+    ].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 66.633, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+    D2.register('s02', tl);
+  })();
+  </script>
+</body>
+</html>

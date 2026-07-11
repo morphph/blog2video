@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat,手搓 beat 层;能用 kit 类就复用)—— */
+[data-composition-id='s01'] .beat{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box;transform-origin:50% 45%}
+
+/* beat A — 别人的想象 */
+[data-composition-id='s01'] .a-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-en{margin-top:22px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:100px;line-height:1.02;letter-spacing:-.03em;color:#edebe6}
+[data-composition-id='s01'] .a-zh{margin-top:20px;font-weight:900;font-size:84px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-chips{margin-top:42px;display:flex;flex-direction:column;gap:16px}
+[data-composition-id='s01'] .a-punch{margin-top:42px}
+[data-composition-id='s01'] .a-punch .tx{font-size:70px}
+
+/* beat B — 反转:Elvis + 99% 用错 */
+[data-composition-id='s01'] .b-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-h{margin-top:16px;font-weight:900;font-size:72px;line-height:1.14;color:#edebe6}
+[data-composition-id='s01'] .b-meta{margin-top:30px;display:flex;align-items:baseline;gap:20px;font-weight:600;font-size:42px;color:#8a8a85}
+[data-composition-id='s01'] .b-meta .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:64px;color:#5fd3e8;font-variant-numeric:tabular-nums;line-height:1}
+[data-composition-id='s01'] .b-punch{margin-top:48px;font-weight:900;font-size:66px;line-height:1.28;color:#edebe6}
+[data-composition-id='s01'] .b-punch .tx{font-size:66px}
+
+/* beat C — 更狠的事 */
+[data-composition-id='s01'] .c-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .c-h{margin-top:16px;font-weight:900;font-size:66px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .c-lead{margin-top:26px;font-weight:600;font-size:40px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s01'] .c-lead .em{color:#edebe6;font-weight:900}
+[data-composition-id='s01'] .c-stats{margin-top:40px}
+[data-composition-id='s01'] .c-win{margin-top:22px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="38.867" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[01/13]</div>
+    </div>
+
+    <!-- BEAT A: 所有人的想象 -->
+    <div class="beat" id="beatA">
+      <div class="a-kick">// 你听过的那套说法</div>
+      <div class="a-en">FIRE &amp;<br>FORGET</div>
+      <div class="a-zh">丢给 AI，挂机走人</div>
+      <div class="a-chips">
+        <div class="chip ca1"><span class="ci">01</span><span class="ct">把任务甩给 Agent</span></div>
+        <div class="chip ca2"><span class="ci">02</span><span class="ct">关机睡觉，人走开</span></div>
+        <div class="chip ca3"><span class="ci">03</span><span class="ct">回来就是能跑的代码</span></div>
+      </div>
+      <div class="a-punch"><span class="hl"><span class="bar"></span><span class="tx">所有人的想象</span></span></div>
+    </div>
+
+    <!-- BEAT B: 反转 -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kick">PLOT TWIST · 但是</div>
+      <div class="b-h">一位资深工程师<br>Elvis 发了篇文章</div>
+      <div class="b-meta"><span id="c56" class="big">0万</span><span>次阅读 · 全网刷屏</span></div>
+      <div class="b-punch">他第一句话:<br>99% 的人 <span class="hl"><span class="bar"></span><span class="tx">都用错了</span></span> <code>/goal</code></div>
+    </div>
+
+    <!-- BEAT C: 更狠的事 -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-kick">// 今天这一期</div>
+      <div class="c-h">不聊「AI 帮你写代码」<br>这种老故事</div>
+      <div class="c-lead">聊一件更狠的事 ——<br><span class="em">反向拆解对手的整个产品</span></div>
+      <div class="c-stats stats">
+        <div class="stat"><div class="num">1</div><div class="lab">个 prompt</div></div>
+        <div class="stat cyan"><div class="num">30</div><div class="lab">小时不停跑</div></div>
+      </div>
+      <div class="c-win win"><div class="num"><span id="c50">0</span>×</div><div class="lab">做到对方的 50 倍</div></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="8.923" data-track-index="5"><div class="sub-inner">你大概听过这样的说法：把一个任务丢给 AI Agent，挂机走人，第二天回来就是<span class="sub-k">能跑的代码</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.923" data-duration="4.073" data-track-index="5"><div class="sub-inner">这两年，这几乎是所有人对自动化编程的<span class="sub-k">想象</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.14" data-duration="5.47" data-track-index="5"><div class="sub-inner">但一个叫 Elvis 的资深工程师，最近发了一篇<span class="sub-k">五十六万阅读</span>的文章。</div></div>
+    <div id="sub-4" class="clip sub" data-start="18.61" data-duration="5.309" data-track-index="5"><div class="sub-inner">他上来第一句就是：百分之九十九的人，<span class="sub-k">都用错了</span> /goal 和循环。</div></div>
+    <div id="sub-5" class="clip sub" data-start="24.084" data-duration="4.536" data-track-index="5"><div class="sub-inner">今天这一期，我们不聊"AI 帮你写代码"这种<span class="sub-k">老故事</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.62" data-duration="10.12" data-track-index="5"><div class="sub-inner">我们聊一件更狠的事：他怎么用一个 prompt，跑了三十个小时，把别人的整个产品，反向拆解，然后做到了对方的<span class="sub-k">五十倍</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 → ~12.9) */
+    tl.from(R+'.a-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.5);
+    tl.from(R+'.a-en',{x:-42,opacity:0,duration:.42,ease:'expo.out'},1.0);
+    tl.from(R+'.a-zh',{y:22,opacity:0,duration:.35,ease:'power3.out'},2.6);
+    tl.from(R+'.ca1',{x:-26,opacity:0,duration:.3,ease:'power3.out'},4.3);
+    tl.from(R+'.ca2',{y:18,opacity:0,duration:.3,ease:'power2.out'},5.6);
+    tl.from(R+'.ca3',{x:26,opacity:0,duration:.3,ease:'expo.out'},6.9);
+    tl.from(R+'.a-punch',{opacity:0,duration:.2,ease:'power1.out'},9.1);
+    tl.to(R+'.a-punch .bar',{scaleX:1,duration:.3,ease:'power4.inOut'},9.4);
+    tl.to(R+'.a-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},9.56);
+    tl.to(R+'#beatA',{scale:1.03,duration:12.9,ease:'none'},0);
+
+    /* A → B swap @ ~12.95 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},12.55);
+    tl.set(R+'#beatB',{opacity:1},12.95);
+    tl.from(R+'.b-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},13.2);
+    tl.from(R+'.b-h',{y:20,opacity:0,duration:.4,ease:'power3.out'},13.5);
+    tl.from(R+'.b-meta',{y:18,opacity:0,duration:.35,ease:'expo.out'},15.7);
+    D2.countUp(tl, R+'#c56', 15.9, 0, 56, 1.3, {suffix:'万'});
+    tl.from(R+'.b-punch',{y:20,opacity:0,duration:.35,ease:'power3.out'},18.7);
+    tl.to(R+'.b-punch .bar',{scaleX:1,duration:.3,ease:'power4.inOut'},20.4);
+    tl.to(R+'.b-punch .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},20.56);
+    tl.to(R+'#beatB',{scale:1.03,duration:10.9,ease:'none'},12.95);
+
+    /* B → C swap @ ~24.0 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},23.6);
+    tl.set(R+'#beatC',{opacity:1},24.0);
+    tl.from(R+'.c-kick',{y:-14,opacity:0,duration:.3,ease:'power2.out'},24.3);
+    tl.from(R+'.c-h',{y:22,opacity:0,duration:.4,ease:'power3.out'},24.7);
+    tl.from(R+'.c-lead',{y:18,opacity:0,duration:.35,ease:'power2.out'},28.8);
+    tl.from(R+'.c-stats .stat:nth-child(1)',{x:-24,opacity:0,duration:.32,ease:'power3.out'},30.5);
+    tl.from(R+'.c-stats .stat:nth-child(2)',{x:24,opacity:0,duration:.32,ease:'expo.out'},32.4);
+    tl.from(R+'.c-win',{y:22,opacity:0,duration:.4,ease:'power3.out'},35.6);
+    D2.countUp(tl, R+'#c50', 35.8, 0, 50, 1.4, {});
+    tl.to(R+'#beatC',{scale:1.03,duration:14.8,ease:'none'},24.0);
+
+    /* SUBTITLES (0.2s fade, local time) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',8.923],['#sub-3',13.14],['#sub-4',18.61],['#sub-5',24.084],['#sub-6',28.62]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

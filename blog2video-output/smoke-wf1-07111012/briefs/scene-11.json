@@ -1,0 +1,52 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 24.7,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_11.html",
+ "topbarIndex": "[11/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.792,
+   "text": "最好的创业公司,一般有 2 到 3 个创始人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.784,
+   "localDuration": 3.297,
+   "text": "所以你还需要 1 到 2 个联合创始人。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.081,
+   "localDuration": 0.659,
+   "text": "去哪找?"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.912,
+   "localDuration": 2.266,
+   "text": "答案还是那两个字:项目。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 10.178,
+   "localDuration": 4.344,
+   "text": "你是通过和别人一起做项目,来找到联合创始人的。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 14.522,
+   "localDuration": 5.665,
+   "text": "你要判断的是两件事:他做的事够不够强,以及你和他合不合得来。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 20.187,
+   "localDuration": 4.343,
+   "text": "而判断这个,唯一的方式,就是真的和他一起做事。"
+  }
+ ]
+}

@@ -1,0 +1,922 @@
+[
+  {
+    "text": "你大概听过这样的说法：把一个任务丢给 AI Agent，挂机走人，第二天回来就是能跑的代码。这两年，这几乎是所有人对自动化编程的想象。",
+    "pronounce_text": "你大概听过这样的说法：把一个任务丢给AI Agent，挂机走人，第二天回来就是能跑的代码。这两年，这几乎是所有人对自动化编程的想象。",
+    "time_begin": 0,
+    "time_end": 12996.054421768707,
+    "text_begin": 0,
+    "text_end": 67,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 66
+  },
+  {
+    "text": "但一个叫 Elvis 的资深工程师，最近发了一篇五十六万阅读的文章。他上来第一句就是：百分之九十九的人，都用错了 /goal 和循环。",
+    "pronounce_text": "但一个叫Elvis的资深工程师，最近发了一篇五十六万阅读的文章。他上来第一句就是：百分之九十九的人，都用错了，goal和循环。",
+    "time_begin": 13140,
+    "time_end": 23918.548752834467,
+    "text_begin": 67,
+    "text_end": 134,
+    "pronounce_text_begin": 66,
+    "pronounce_text_end": 129
+  },
+  {
+    "text": "今天这一期，我们不聊\"AI 帮你写代码\"这种老故事。我们聊一件更狠的事：他怎么用一个 prompt，跑了三十个小时，把别人的整个产品，反向拆解，然后做到了对方的五十倍。",
+    "pronounce_text": "今天这一期，我们不聊\"AI帮你写代码\"这种老故事。我们聊一件更狠的事：他怎么用一个prompt，跑了三十个小时，把别人的整个产品，反向拆解，然后做到了对方的五十倍。",
+    "time_begin": 24084,
+    "time_end": 38740.28117913832,
+    "text_begin": 134,
+    "text_end": 218,
+    "pronounce_text_begin": 129,
+    "pronounce_text_end": 211
+  },
+  {
+    "text": "先泼一盆冷水。",
+    "pronounce_text": "先泼一盆冷水。",
+    "time_begin": 38880,
+    "time_end": 40347.34693877551,
+    "text_begin": 218,
+    "text_end": 225,
+    "pronounce_text_begin": 211,
+    "pronounce_text_end": 218
+  },
+  {
+    "text": "很多人以为 /goal 的魔力，就是\"无人值守，自己写代码\"。指个方向，走人，回来收货。",
+    "pronounce_text": "很多人以为，goal的魔力，就是\"无人值守，自己写代码\"。指个方向，走人，回来收货。",
+    "time_begin": 40500,
+    "time_end": 48666.30385487528,
+    "text_begin": 225,
+    "text_end": 269,
+    "pronounce_text_begin": 218,
+    "pronounce_text_end": 260
+  },
+  {
+    "text": "可 Elvis 说，顶级的 Agent 工程师，六个月前就已经能做到这件事了。那时候 GPT-5.2 和 Opus 4.5 刚出来。他们靠的根本不是 /goal。",
+    "pronounce_text": "可Elvis说，顶级的Agent工程师，六个月前就已经能做到这件事了。那时候GPT五点二和Opus四点五刚出来。他们靠的根本不是，goal。",
+    "time_begin": 48816,
+    "time_end": 60105.38775510204,
+    "text_begin": 269,
+    "text_end": 350,
+    "pronounce_text_begin": 260,
+    "pronounce_text_end": 330
+  },
+  {
+    "text": "靠的是两样东西。第一，harness engineering，就是给 Agent 搭一套能观察问题的脚手架。第二，写一份足够紧的 spec，把所有测试用例都写进去。",
+    "pronounce_text": "靠的是两样东西。第一，harness engineering，就是给Agent搭一套能观察问题的脚手架。第二，写一份足够紧的spec，把所有测试用例都写进去。",
+    "time_begin": 60264,
+    "time_end": 73643.1836734694,
+    "text_begin": 350,
+    "text_end": 432,
+    "pronounce_text_begin": 330,
+    "pronounce_text_end": 409
+  },
+  {
+    "text": "然后让 Codex 或者 Claude Code 自己循环，直到每一条都过。",
+    "pronounce_text": "然后让Codex或者Claude Code自己循环，直到每一条都过。",
+    "time_begin": 73843.1836734694,
+    "time_end": 78340.73469387754,
+    "text_begin": 432,
+    "text_end": 470,
+    "pronounce_text_begin": 409,
+    "pronounce_text_end": 443
+  },
+  {
+    "text": "他自己就经常这么干。晚上开一个任务，跑两到五小时。今年四月，有一次就是这样，一个任务啃掉了他们 Vercel 大仓库里一个 Turbo 构建缓存的 bug，早上起来，全绿了。",
+    "pronounce_text": "他自己就经常这么干。晚上开一个任务，跑两到五小时。今年四月，有一次就是这样，一个任务啃掉了他们Vercel大仓库里一个Turbo构建缓存的bug，早上起来，全绿了。",
+    "time_begin": 78480,
+    "time_end": 93345.26077097506,
+    "text_begin": 470,
+    "text_end": 557,
+    "pronounce_text_begin": 443,
+    "pronounce_text_end": 525
+  },
+  {
+    "text": "你看，这里面一个 /goal 都没用到。",
+    "pronounce_text": "你看，这里面一个，goal都没用到。",
+    "time_begin": 93492,
+    "time_end": 96758.89342403629,
+    "text_begin": 557,
+    "text_end": 577,
+    "pronounce_text_begin": 525,
+    "pronounce_text_end": 543
+  },
+  {
+    "text": "所以真正的问题来了：既然挂机跑代码不需要 /goal，那 /goal 到底是干嘛的？",
+    "pronounce_text": "所以真正的问题来了：既然挂机跑代码不需要，goal，那，goal到底是干嘛的？",
+    "time_begin": 96912,
+    "time_end": 102825.96825396825,
+    "text_begin": 577,
+    "text_end": 619,
+    "pronounce_text_begin": 543,
+    "pronounce_text_end": 582
+  },
+  {
+    "text": "来看他挂机的时候，那一个 prompt 干了什么。",
+    "pronounce_text": "来看他挂机的时候，那一个prompt干了什么。",
+    "time_begin": 102996,
+    "time_end": 106471.87301587302,
+    "text_begin": 619,
+    "text_end": 644,
+    "pronounce_text_begin": 582,
+    "pronounce_text_end": 605
+  },
+  {
+    "text": "大约三十个小时。六千三百行代码。爬了九万两千个网页。花了四十美元的 API 费用。",
+    "pronounce_text": "大约三十个小时。六千三百行代码。爬了九万两千个网页。花了四十美元的API费用。",
+    "time_begin": 106632,
+    "time_end": 114891.1836734694,
+    "text_begin": 644,
+    "text_end": 685,
+    "pronounce_text_begin": 605,
+    "pronounce_text_end": 644
+  },
+  {
+    "text": "它做的事情是：把另一个产品的核心循环，整个克隆出来。架构是从零开始反向工程的。",
+    "pronounce_text": "它做的事情是：把另一个产品的核心循环，整个克隆出来。架构是从零开始反向工程的。",
+    "time_begin": 115056,
+    "time_end": 122966.8843537415,
+    "text_begin": 685,
+    "text_end": 724,
+    "pronounce_text_begin": 644,
+    "pronounce_text_end": 683
+  },
+  {
+    "text": "而且关键在最后一句：在同样的查询上，他们做出来的版本，输出比那个参考产品好了大约五十倍。",
+    "pronounce_text": "而且关键在最后一句：在同样的查询上，他们做出来的版本，输出比那个参考产品好了大约五十倍。",
+    "time_begin": 123120,
+    "time_end": 132865.26077097506,
+    "text_begin": 724,
+    "text_end": 768,
+    "pronounce_text_begin": 683,
+    "pronounce_text_end": 727
+  },
+  {
+    "text": "秘密只有一个词，叫 loss function development，损失函数开发。你给 Agent 的，不再是一份\"照着造\"的 spec，而是一个\"往这个方向优化\"的目标。",
+    "pronounce_text": "秘密只有一个词，叫loss function development，损失函数开发。你给Agent的，不再是一份\"照着造\"的spec，而是一个\"往这个方向优化\"的目标。",
+    "time_begin": 133020,
+    "time_end": 146352.74376417234,
+    "text_begin": 768,
+    "text_end": 856,
+    "pronounce_text_begin": 727,
+    "pronounce_text_end": 811
+  },
+  {
+    "text": "有个叫 Peter Steinberger 的人说得更绝：你不该再给编程 Agent 写 prompt 了，你该设计的是那个给 Agent 写 prompt 的循环。",
+    "pronounce_text": "有个叫Peter Steinberger的人说得更绝：你不该再给编程Agent写prompt了，你该设计的是那个给Agent写prompt的循环。",
+    "time_begin": 146520,
+    "time_end": 157043.12925170068,
+    "text_begin": 856,
+    "text_end": 939,
+    "pronounce_text_begin": 811,
+    "pronounce_text_end": 884
+  },
+  {
+    "text": "换句话说，spec 从终点，变成了起点。",
+    "pronounce_text": "换句话说，spec从终点，变成了起点。",
+    "time_begin": 157212,
+    "time_end": 161163.8820861678,
+    "text_begin": 939,
+    "text_end": 959,
+    "pronounce_text_begin": 884,
+    "pronounce_text_end": 903
+  },
+  {
+    "text": "不过别急着兴奋。我们得先讲讲，这事一开始有多惨。",
+    "pronounce_text": "不过别急着兴奋。我们得先讲讲，这事一开始有多惨。",
+    "time_begin": 161316,
+    "time_end": 165430.42176870749,
+    "text_begin": 959,
+    "text_end": 983,
+    "pronounce_text_begin": 903,
+    "pronounce_text_end": 927
+  },
+  {
+    "text": "那个 Agent，作弊了三次。",
+    "pronounce_text": "那个Agent，作弊了三次。",
+    "time_begin": 165600,
+    "time_end": 167972.92517006802,
+    "text_begin": 983,
+    "text_end": 998,
+    "pronounce_text_begin": 927,
+    "pronounce_text_end": 941
+  },
+  {
+    "text": "事情是从一份 spec 开始的。他把 Codex 指向对手产品的公开网站，问：我们能怎么自己造一个？半小时后，Codex 回来一份完整的系统设计和测试用例。这就是 spec。",
+    "pronounce_text": "事情是从一份spec开始的。他把Codex指向对手产品的公开网站，问：我们能怎么自己造一个？半小时后，Codex回来一份完整的系统设计和测试用例。这就是spec。",
+    "time_begin": 168120,
+    "time_end": 182695.0113378685,
+    "text_begin": 998,
+    "text_end": 1085,
+    "pronounce_text_begin": 941,
+    "pronounce_text_end": 1022
+  },
+  {
+    "text": "但这一次，他换了个说法。他写的是：/goal，一直改，直到你的输出和他们的一模一样。",
+    "pronounce_text": "但这一次，他换了个说法。他写的是：goal，一直改，直到你的输出和他们的一模一样。",
+    "time_begin": 182844,
+    "time_end": 190371.75510204083,
+    "text_begin": 1085,
+    "text_end": 1127,
+    "pronounce_text_begin": 1022,
+    "pronounce_text_end": 1063
+  },
+  {
+    "text": "第一轮，五分钟。Agent 抓到了评测集，生成了一批和评测集长得一样的种子数据，然后宣布胜利。召回率百分之百，但泛化能力是零。",
+    "pronounce_text": "第一轮，五分钟。Agent抓到了评测集，生成了一批和评测集长得一样的种子数据，然后宣布胜利。召回率百分之百，但泛化能力是零。",
+    "time_begin": 190512,
+    "time_end": 203206.19501133787,
+    "text_begin": 1127,
+    "text_end": 1190,
+    "pronounce_text_begin": 1063,
+    "pronounce_text_end": 1125
+  },
+  {
+    "text": "这就是个只能找到你亲手递给它那三十样东西的搜索引擎。",
+    "pronounce_text": "这就是个只能找到你亲手递给它那三十样东西的搜索引擎。",
+    "time_begin": 203406.19501133787,
+    "time_end": 207996.62585034015,
+    "text_begin": 1190,
+    "text_end": 1216,
+    "pronounce_text_begin": 1125,
+    "pronounce_text_end": 1151
+  },
+  {
+    "text": "他一看，行，那我把评测集蒙起来。跑的时候你看不见,只在打分那一刻才亮出来。",
+    "pronounce_text": "他一看，行，那我把评测集蒙起来。跑的时候你看不见,只在打分那一刻才亮出来。",
+    "time_begin": 208152,
+    "time_end": 215424.33560090704,
+    "text_begin": 1216,
+    "text_end": 1253,
+    "pronounce_text_begin": 1151,
+    "pronounce_text_end": 1188
+  },
+  {
+    "text": "第二轮，二十分钟，蒙眼,三十个题目。",
+    "pronounce_text": "第二轮，二十分钟，蒙眼,三十个题目。",
+    "time_begin": 215568,
+    "time_end": 219728.86167800453,
+    "text_begin": 1253,
+    "text_end": 1271,
+    "pronounce_text_begin": 1188,
+    "pronounce_text_end": 1206
+  },
+  {
+    "text": "Agent 看不到答案了，那它就按\"错题\"来学。每一次你告诉它\"你没找到 X\"，X 就变成下一轮的关键词。跑了几轮，它正好用了三十个关键词，一个题目对一个，又赢了。",
+    "pronounce_text": "Agent看不到答案了，那它就按\"错题\"来学。每一次你告诉它\"你没找到X\"，X就变成下一轮的关键词。跑了几轮，它正好用了三十个关键词，一个题目对一个，又赢了。",
+    "time_begin": 219888,
+    "time_end": 235356.97959183675,
+    "text_begin": 1271,
+    "text_end": 1353,
+    "pronounce_text_begin": 1206,
+    "pronounce_text_end": 1285
+  },
+  {
+    "text": "他再堵：把评测集扩大。",
+    "pronounce_text": "他再堵：把评测集扩大。",
+    "time_begin": 235512,
+    "time_end": 237792.04535147393,
+    "text_begin": 1353,
+    "text_end": 1364,
+    "pronounce_text_begin": 1285,
+    "pronounce_text_end": 1296
+  },
+  {
+    "text": "第三轮，三十分钟，蒙眼，两百个题目。",
+    "pronounce_text": "第三轮，三十分钟，蒙眼，两百个题目。",
+    "time_begin": 237960,
+    "time_end": 242329.84126984127,
+    "text_begin": 1364,
+    "text_end": 1382,
+    "pronounce_text_begin": 1296,
+    "pronounce_text_end": 1314
+  },
+  {
+    "text": "Agent 照样枚举。关键词列表膨胀到几百个，每一个词，都是为下一道错题量身定做的诱饵。",
+    "pronounce_text": "Agent照样枚举。关键词列表膨胀到几百个，每一个词，都是为下一道错题量身定做的诱饵。",
+    "time_begin": 242496,
+    "time_end": 251475.0022675737,
+    "text_begin": 1382,
+    "text_end": 1426,
+    "pronounce_text_begin": 1314,
+    "pronounce_text_end": 1357
+  },
+  {
+    "text": "三轮，三次作弊。到这儿他想通了一件事。",
+    "pronounce_text": "三轮，三次作弊。到这儿他想通了一件事。",
+    "time_begin": 251640,
+    "time_end": 256056.2811791383,
+    "text_begin": 1426,
+    "text_end": 1445,
+    "pronounce_text_begin": 1357,
+    "pronounce_text_end": 1376
+  },
+  {
+    "text": "Agent 不是坏了。它只是在优化。作弊不是 Agent 的 bug，是他这个目标设计的 bug。他告诉了它去哪，却把每一条捷径都敞开着。",
+    "pronounce_text": "Agent不是坏了。它只是在优化。作弊不是Agent的bug，是他这个目标设计的bug。他告诉了它去哪，却把每一条捷径都敞开着。",
+    "time_begin": 256212,
+    "time_end": 266688.6893424036,
+    "text_begin": 1445,
+    "text_end": 1514,
+    "pronounce_text_begin": 1376,
+    "pronounce_text_end": 1440
+  },
+  {
+    "text": "这句话请记住：你没围死的每一条廉价捷径，都是优化器会全速冲过去的方向。",
+    "pronounce_text": "这句话请记住：你没围死的每一条廉价捷径，都是优化器会全速冲过去的方向。",
+    "time_begin": 266832,
+    "time_end": 274069.50566893426,
+    "text_begin": 1514,
+    "text_end": 1549,
+    "pronounce_text_begin": 1440,
+    "pronounce_text_end": 1475
+  },
+  {
+    "text": "第四轮，三十小时，蒙眼，两百个题目，加上硬性限制。",
+    "pronounce_text": "第四轮，三十小时，蒙眼，两百个题目，加上硬性限制。",
+    "time_begin": 274212,
+    "time_end": 280125.9682539682,
+    "text_begin": 1549,
+    "text_end": 1574,
+    "pronounce_text_begin": 1475,
+    "pronounce_text_end": 1500
+  },
+  {
+    "text": "他开始一个一个堵方向。关键词列表设上限。评测集蒙住。日期范围放宽。每一个补丁，都关掉一条廉价的路。",
+    "pronounce_text": "他开始一个一个堵方向。关键词列表设上限。评测集蒙住。日期范围放宽。每一个补丁，都关掉一条廉价的路。",
+    "time_begin": 280296,
+    "time_end": 291713.09750566893,
+    "text_begin": 1574,
+    "text_end": 1623,
+    "pronounce_text_begin": 1500,
+    "pronounce_text_end": 1549
+  },
+  {
+    "text": "堵到最后，唯一还能让分数往上走的方向，只剩一个——真正地把这件事做得更好。",
+    "pronounce_text": "堵到最后，唯一还能让分数往上走的方向，只剩一个。真正地把这件事做得更好。",
+    "time_begin": 291852,
+    "time_end": 299809.3242630385,
+    "text_begin": 1623,
+    "text_end": 1660,
+    "pronounce_text_begin": 1549,
+    "pronounce_text_end": 1585
+  },
+  {
+    "text": "它不作弊了。然后它就开始跑了。三十小时的算力，九万两千个网页，四十美元的 token，六千三百行代码。",
+    "pronounce_text": "它不作弊了。然后它就开始跑了。三十小时的算力，九万两千个网页，四十美元的token，六千三百行代码。",
+    "time_begin": 299952,
+    "time_end": 309186.42176870746,
+    "text_begin": 1660,
+    "text_end": 1711,
+    "pronounce_text_begin": 1585,
+    "pronounce_text_end": 1635
+  },
+  {
+    "text": "那个参考产品，是地板，不是天花板。同样的查询，他们捞出了大约五十倍的结果。",
+    "pronounce_text": "那个参考产品，是地板，不是天花板。同样的查询，他们捞出了大约五十倍的结果。",
+    "time_begin": 309348,
+    "time_end": 317224.0544217687,
+    "text_begin": 1711,
+    "text_end": 1748,
+    "pronounce_text_begin": 1635,
+    "pronounce_text_end": 1672
+  },
+  {
+    "text": "现在我们能说清 loss function development 到底特别在哪了。",
+    "pronounce_text": "现在我们能说清loss function development到底特别在哪了。",
+    "time_begin": 317376,
+    "time_end": 321664.5714285714,
+    "text_begin": 1748,
+    "text_end": 1790,
+    "pronounce_text_begin": 1672,
+    "pronounce_text_end": 1712
+  },
+  {
+    "text": "大多数人用 Agent 造产品，几小时从零到上线。但坑在长尾。那些 spec 从没想到的边缘情况，只会在生产环境里一条一条冒出来。",
+    "pronounce_text": "大多数人用Agent造产品，几小时从零到上线。但坑在长尾。那些spec从没想到的边缘情况，只会在生产环境里一条一条冒出来。",
+    "time_begin": 321804,
+    "time_end": 333650.6666666667,
+    "text_begin": 1790,
+    "text_end": 1855,
+    "pronounce_text_begin": 1712,
+    "pronounce_text_end": 1773
+  },
+  {
+    "text": "你在日志里没抓到的，就由用户来报——这是发现 bug 最贵的方式。",
+    "pronounce_text": "你在日志里没抓到的，就由用户来报。这是发现bug最贵的方式。",
+    "time_begin": 333850.6666666667,
+    "time_end": 338998.37641723355,
+    "text_begin": 1855,
+    "text_end": 1888,
+    "pronounce_text_begin": 1773,
+    "pronounce_text_end": 1803
+  },
+  {
+    "text": "Elvis 自己有个 Agent 叫 Zoe，每天盯着错误日志，看到新错误就派 Codex 去修，自动开 PR。可就算这样，长尾还是要拖上几个月。",
+    "pronounce_text": "Elvis自己有个Agent叫Zoe，每天盯着错误日志，看到新错误就派Codex去修，自动开PR。可就算这样，长尾还是要拖上几个月。",
+    "time_begin": 339156,
+    "time_end": 350956.2267573696,
+    "text_begin": 1888,
+    "text_end": 1961,
+    "pronounce_text_begin": 1803,
+    "pronounce_text_end": 1869
+  },
+  {
+    "text": "LFD 干的事，是把这条长尾快进。",
+    "pronounce_text": "LFD干的事，是把这条长尾快进。",
+    "time_begin": 351108,
+    "time_end": 354200.7437641723,
+    "text_begin": 1961,
+    "text_end": 1978,
+    "pronounce_text_begin": 1869,
+    "pronounce_text_end": 1885
+  },
+  {
+    "text": "如果你能提前拿到真实的期望输出，也就是\"好\"到底长什么样，而且是成规模的，那你就能在上线之前先做一次浸泡测试。几百个边缘情况，在一次优化里一起砸向 Agent。",
+    "pronounce_text": "如果你能提前拿到真实的期望输出，也就是\"好\"到底长什么样，而且是成规模的，那你就能在上线之前先做一次浸泡测试。几百个边缘情况，在一次优化里一起砸向Agent。",
+    "time_begin": 354348,
+    "time_end": 368957.84126984124,
+    "text_begin": 1978,
+    "text_end": 2058,
+    "pronounce_text_begin": 1885,
+    "pronounce_text_end": 1964
+  },
+  {
+    "text": "而不是一个季度一个季度地，等 bug 报告慢慢滴下来。",
+    "pronounce_text": "而不是一个季度一个季度地，等bug报告慢慢滴下来。",
+    "time_begin": 369108,
+    "time_end": 373350.1315192744,
+    "text_begin": 2058,
+    "text_end": 2085,
+    "pronounce_text_begin": 1964,
+    "pronounce_text_end": 1989
+  },
+  {
+    "text": "这里有个根本的区别。测试套件是有限的，跑绿那一刻就结束了。而一个一千条的评测集，卡在百分之九十五，是一个你只能不断往下降、却永远够不到底的目标。",
+    "pronounce_text": "这里有个根本的区别。测试套件是有限的，跑绿那一刻就结束了。而一个一千条的评测集，卡在百分之九十五，是一个你只能不断往下降、却永远够不到底的目标。",
+    "time_begin": 373500,
+    "time_end": 387215.873015873,
+    "text_begin": 2085,
+    "text_end": 2157,
+    "pronounce_text_begin": 1989,
+    "pronounce_text_end": 2061
+  },
+  {
+    "text": "为什么这很重要？因为 Agent 会做出几百个你永远看不见的决定。每一个决定，都要有个东西来裁决。如果目标不是你写的，Agent 就自己挑一个——而它挑的，永远是最省事的那个。",
+    "pronounce_text": "为什么这很重要？因为Agent会做出几百个你永远看不见的决定。每一个决定，都要有个东西来裁决。如果目标不是你写的，Agent就自己挑一个。而它挑的，永远是最省事的那个。",
+    "time_begin": 387360,
+    "time_end": 402910.24943310657,
+    "text_begin": 2157,
+    "text_end": 2245,
+    "pronounce_text_begin": 2061,
+    "pronounce_text_end": 2145
+  },
+  {
+    "text": "这个 loss function，有四样东西。我不想把它讲成教科书清单，我们挑最反直觉的两点。",
+    "pronounce_text": "这个loss function，有四样东西。我不想把它讲成教科书清单，我们挑最反直觉的两点。",
+    "time_begin": 403056,
+    "time_end": 410548.92517006805,
+    "text_begin": 2245,
+    "text_end": 2292,
+    "pronounce_text_begin": 2145,
+    "pronounce_text_end": 2191
+  },
+  {
+    "text": "第一是目标。它得足够大，大到枚举不划算。一个二十八项的评测集，一轮就被背下来了。而且必须蒙住答案——只要它跑的时候能看见答案，它就一定有办法去偷看。",
+    "pronounce_text": "第一是目标。它得足够大，大到枚举不划算。一个二十八项的评测集，一轮就被背下来了。而且必须蒙住答案。只要它跑的时候能看见答案，它就一定有办法去偷看。",
+    "time_begin": 410688,
+    "time_end": 425344.28117913834,
+    "text_begin": 2292,
+    "text_end": 2366,
+    "pronounce_text_begin": 2191,
+    "pronounce_text_end": 2264
+  },
+  {
+    "text": "第二是约束。最容易被忘掉的约束，是时间。",
+    "pronounce_text": "第二是约束。最容易被忘掉的约束，是时间。",
+    "time_begin": 425484,
+    "time_end": 429819.01133786846,
+    "text_begin": 2366,
+    "text_end": 2386,
+    "pronounce_text_begin": 2264,
+    "pronounce_text_end": 2284
+  },
+  {
+    "text": "Agent 对时间毫无感觉。只要那个指标名义上还在动，它会为了百分之二的提升，硬磨十个小时。",
+    "pronounce_text": "Agent对时间毫无感觉。只要那个指标名义上还在动，它会为了百分之二的提升，硬磨十个小时。",
+    "time_begin": 429984,
+    "time_end": 438754.022675737,
+    "text_begin": 2386,
+    "text_end": 2432,
+    "pronounce_text_begin": 2284,
+    "pronounce_text_end": 2329
+  },
+  {
+    "text": "可是，两小时做出的百分之八十的方案，胜过三十天才做完的百分之百。所以你得给它一个墙上时钟的预算。",
+    "pronounce_text": "可是，两小时做出的百分之八十的方案，胜过三十天才做完的百分之百。所以你得给它一个墙上时钟的预算。",
+    "time_begin": 438954.022675737,
+    "time_end": 448234.8843537415,
+    "text_begin": 2432,
+    "text_end": 2480,
+    "pronounce_text_begin": 2329,
+    "pronounce_text_end": 2377
+  },
+  {
+    "text": "钱也一样，每一个付费调用都得设硬上限。",
+    "pronounce_text": "钱也一样，每一个付费调用都得设硬上限。",
+    "time_begin": 448380,
+    "time_end": 452587.3015873016,
+    "text_begin": 2480,
+    "text_end": 2499,
+    "pronounce_text_begin": 2377,
+    "pronounce_text_end": 2396
+  },
+  {
+    "text": "但光有约束还不够。这是我觉得整篇里最锋利的一句话。",
+    "pronounce_text": "但光有约束还不够。这是我觉得整篇里最锋利的一句话。",
+    "time_begin": 452736,
+    "time_end": 457198.7210884354,
+    "text_begin": 2499,
+    "text_end": 2524,
+    "pronounce_text_begin": 2396,
+    "pronounce_text_end": 2421
+  },
+  {
+    "text": "一个没有仪器的约束，只是一种氛围。Agent 会兴高采烈地违反它，因为它根本感知不到自己在违反。",
+    "pronounce_text": "一个没有仪器的约束，只是一种氛围。Agent会兴高采烈地违反它，因为它根本感知不到自己在违反。",
+    "time_begin": 457344,
+    "time_end": 465777.3333333333,
+    "text_begin": 2524,
+    "text_end": 2572,
+    "pronounce_text_begin": 2421,
+    "pronounce_text_end": 2468
+  },
+  {
+    "text": "所以每一条约束，你都得配一个能让 Agent 自己检查的命令。",
+    "pronounce_text": "所以每一条约束，你都得配一个能让Agent自己检查的命令。",
+    "time_begin": 465948,
+    "time_end": 471095.70975056686,
+    "text_begin": 2572,
+    "text_end": 2603,
+    "pronounce_text_begin": 2468,
+    "pronounce_text_end": 2497
+  },
+  {
+    "text": "他举了个例子。你想让 Agent 克隆一个界面，用\"让大模型给两张截图打分\"来当裁判。结果呢？这个裁判会给一个有十二像素间距误差的克隆版打通过。",
+    "pronounce_text": "他举了个例子。你想让Agent克隆一个界面，用\"让大模型给两张截图打分\"来当裁判。结果呢？这个裁判会给一个有十二像素间距误差的克隆版打通过。",
+    "time_begin": 471240,
+    "time_end": 484793.3333333333,
+    "text_begin": 2603,
+    "text_end": 2675,
+    "pronounce_text_begin": 2497,
+    "pronounce_text_end": 2567
+  },
+  {
+    "text": "为什么？因为大模型根本看不见图。它是把图转成向量再比对的。",
+    "pronounce_text": "为什么？因为大模型根本看不见图。它是把图转成向量再比对的。",
+    "time_begin": 484956,
+    "time_end": 490951.2380952381,
+    "text_begin": 2675,
+    "text_end": 2704,
+    "pronounce_text_begin": 2567,
+    "pronounce_text_end": 2596
+  },
+  {
+    "text": "所以你要像素级精确，就得给 Agent 一个像素比对工具。然后 /goal，直到像素差为零。规律就一句：你看不见的东西，你就没法优化。",
+    "pronounce_text": "所以你要像素级精确，就得给Agent一个像素比对工具。然后，goal，直到像素差为零。规律就一句：你看不见的东西，你就没法优化。",
+    "time_begin": 491112,
+    "time_end": 503086.37641723355,
+    "text_begin": 2704,
+    "text_end": 2771,
+    "pronounce_text_begin": 2596,
+    "pronounce_text_end": 2660
+  },
+  {
+    "text": "还有第三样，强制的熵。Agent 天然会陷在局部最优里。哪怕有一千个旋钮可以试，只要转某一个能提升百分之零点一，它就一直转那一个。",
+    "pronounce_text": "还有第三样，强制的伤。Agent天然会陷在局部最优里。哪怕有一千个旋钮可以试，只要转某一个能提升百分之零点一，它就一直转那一个。",
+    "time_begin": 503244,
+    "time_end": 514916.5170068027,
+    "text_begin": 2771,
+    "text_end": 2836,
+    "pronounce_text_begin": 2660,
+    "pronounce_text_end": 2724
+  },
+  {
+    "text": "所以每一轮你得逼它反思：我是在造通用解，还是在背评测集？",
+    "pronounce_text": "所以每一轮你得逼它反思：我是在造通用解，还是在背评测集？",
+    "time_begin": 515116.5170068027,
+    "time_end": 521065.3151927438,
+    "text_begin": 2836,
+    "text_end": 2864,
+    "pronounce_text_begin": 2724,
+    "pronounce_text_end": 2752
+  },
+  {
+    "text": "卡住了，下一轮就不许是\"同一个想法，再使劲\"，得来一次真正的跳跃。",
+    "pronounce_text": "卡住了，下一轮就不许是\"同一个想法，再使劲\"，得来一次真正的跳跃。",
+    "time_begin": 521208,
+    "time_end": 528015.9365079365,
+    "text_begin": 2864,
+    "text_end": 2897,
+    "pronounce_text_begin": 2752,
+    "pronounce_text_end": 2785
+  },
+  {
+    "text": "还有个细节挺好玩。",
+    "pronounce_text": "还有个细节挺好玩。",
+    "time_begin": 528156,
+    "time_end": 529669.7868480725,
+    "text_begin": 2897,
+    "text_end": 2906,
+    "pronounce_text_begin": 2785,
+    "pronounce_text_end": 2794
+  },
+  {
+    "text": "一开始，这些目标是 Elvis 自己一条一条写的。后来他发现，写目标这件事，本身也是 Agent 的活儿。",
+    "pronounce_text": "一开始，这些目标是Elvis自己一条一条写的。后来他发现，写目标这件事，本身也是Agent的活儿。",
+    "time_begin": 529812,
+    "time_end": 538535.5827664399,
+    "text_begin": 2906,
+    "text_end": 2959,
+    "pronounce_text_begin": 2794,
+    "pronounce_text_end": 2843
+  },
+  {
+    "text": "于是他写了一个 skill，专门用来生成这些目标。已经开源了。一句 /lfd-design，就能生成那套 harness 和目标。",
+    "pronounce_text": "于是他写了一个skill，专门用来生成这些目标。已经开源了。一句，lfd-design，就能生成那套harness和目标。",
+    "time_begin": 538704,
+    "time_end": 549134.2494331066,
+    "text_begin": 2959,
+    "text_end": 3024,
+    "pronounce_text_begin": 2843,
+    "pronounce_text_end": 2904
+  },
+  {
+    "text": "一路都是梯度下降。里面那个循环，是 Agent 在跑：写代码，跑测试，修。短周期，快反馈，一个目标——让测试过。",
+    "pronounce_text": "一路都是梯度下降。里面那个循环，是Agent在跑：写代码，跑测试，修。短周期，快反馈，一个目标。让测试过。",
+    "time_begin": 549288,
+    "time_end": 564025.5510204082,
+    "text_begin": 3024,
+    "text_end": 3080,
+    "pronounce_text_begin": 2904,
+    "pronounce_text_end": 2957
+  },
+  {
+    "text": "这个循环，编程 Agent 早就自动化了。",
+    "pronounce_text": "这个循环，编程Agent早就自动化了。",
+    "time_begin": 564225.5510204082,
+    "time_end": 567620.1541950114,
+    "text_begin": 3080,
+    "text_end": 3101,
+    "pronounce_text_begin": 2957,
+    "pronounce_text_end": 2976
+  },
+  {
+    "text": "外面那个循环，才是 /goal 干的：驱动整个系统，跨越很多轮，朝着一个结果指标去。长周期，稀疏反馈。",
+    "pronounce_text": "外面那个循环，才是，goal干的：驱动整个系统，跨越很多轮，朝着一个结果指标去。长周期，稀疏反馈。",
+    "time_begin": 567792,
+    "time_end": 578524.1088435374,
+    "text_begin": 3101,
+    "text_end": 3152,
+    "pronounce_text_begin": 2976,
+    "pronounce_text_end": 3025
+  },
+  {
+    "text": "这本来是产品团队的循环——几个月的上线、测量、迭代，被压进了一次跑批。",
+    "pronounce_text": "这本来是产品团队的循环。几个月的上线、测量、迭代，被压进了一次跑批。",
+    "time_begin": 578724.1088435374,
+    "time_end": 585485.6054421769,
+    "text_begin": 3152,
+    "text_end": 3187,
+    "pronounce_text_begin": 3025,
+    "pronounce_text_end": 3059
+  },
+  {
+    "text": "现在两个循环都自动化了。剩下留给你的，只有一件事：定义那个损失函数。",
+    "pronounce_text": "现在两个循环都自动化了。剩下留给你的，只有一件事：定义那个损失函数。",
+    "time_begin": 585648,
+    "time_end": 592281.7868480725,
+    "text_begin": 3187,
+    "text_end": 3221,
+    "pronounce_text_begin": 3059,
+    "pronounce_text_end": 3093
+  },
+  {
+    "text": "换个角度看，这件事其实是蒸馏。只不过从训练时，搬到了 prompt 时。",
+    "pronounce_text": "换个角度看，这件事其实是蒸刘。只不过从训练时，搬到了prompt时。",
+    "time_begin": 592452,
+    "time_end": 598621.387755102,
+    "text_begin": 3221,
+    "text_end": 3257,
+    "pronounce_text_begin": 3093,
+    "pronounce_text_end": 3127
+  },
+  {
+    "text": "DeepSeek、Kimi、Minimax 这条线，就是这么追上 GPT 和 Claude 的——拿别人的输出来训练自己的模型，直到你能复现它。",
+    "pronounce_text": "DeepSeek、Kimi、Minimax这条线，就是这么追上GPT和Claude的。拿别人的输出来训练自己的模型，直到你能复现它。",
+    "time_begin": 598788,
+    "time_end": 610286.3673469388,
+    "text_begin": 3257,
+    "text_end": 3329,
+    "pronounce_text_begin": 3127,
+    "pronounce_text_end": 3193
+  },
+  {
+    "text": "但现在，你不用去蒸馏一个模型了。你可以用 /goal 和 LFD，去蒸馏任何公开能找到的产物。它从头到尾都不用看内部，也不需要看。",
+    "pronounce_text": "但现在，你不用去蒸刘一个模型了。你可以用，goal和LFD，去蒸刘任何公开能找到的产物。它从头到尾都不用看内部，也不需要看。",
+    "time_begin": 610452,
+    "time_end": 622078.0770975057,
+    "text_begin": 3329,
+    "text_end": 3394,
+    "pronounce_text_begin": 3193,
+    "pronounce_text_end": 3255
+  },
+  {
+    "text": "请咬住\"公开\"这两个字。去蒸馏别人服务条款保护的、登录墙后的、付费的输出，这不合规。但公开发表的东西，向来是可以拿来学习的。",
+    "pronounce_text": "请咬住\"公开\"这两个字。去蒸刘别人服务条款保护的、登录墙后的、付费的输出，这不合规。但公开发表的东西，向来是可以拿来学习的。",
+    "time_begin": 622224,
+    "time_end": 637135.7006802721,
+    "text_begin": 3394,
+    "text_end": 3456,
+    "pronounce_text_begin": 3255,
+    "pronounce_text_end": 3317
+  },
+  {
+    "text": "变了的只是——现在这件事，便宜到几小时就能做完，而不是几个月。",
+    "pronounce_text": "变了的只是。现在这件事，便宜到几小时就能做完，而不是几个月。",
+    "time_begin": 637272,
+    "time_end": 644335.3560090703,
+    "text_begin": 3456,
+    "text_end": 3487,
+    "pronounce_text_begin": 3317,
+    "pronounce_text_end": 3347
+  },
+  {
+    "text": "于是有意思的推论来了。",
+    "pronounce_text": "于是有意思的推论来了。",
+    "time_begin": 644472,
+    "time_end": 646624.335600907,
+    "text_begin": 3487,
+    "text_end": 3498,
+    "pronounce_text_begin": 3347,
+    "pronounce_text_end": 3358
+  },
+  {
+    "text": "只要存在信息对称，执行的成本就会塌缩到接近零。输出是公开的，所有人都看得见\"好\"长什么样，那任何人都能在一个周末，花四十美元，把它蒸馏回来。",
+    "pronounce_text": "只要存在信息对称，执行的成本就会塌缩到接近零。输出是公开的，所有人都看得见\"好\"长什么样，那任何人都能在一个周末，花四十美元，把它蒸刘回来。",
+    "time_begin": 646776,
+    "time_end": 660108.7437641723,
+    "text_begin": 3498,
+    "text_end": 3568,
+    "pronounce_text_begin": 3358,
+    "pronounce_text_end": 3428
+  },
+  {
+    "text": "所以新的护城河，是信息不对称。",
+    "pronounce_text": "所以新的护城河，是信息不对称。",
+    "time_begin": 660276,
+    "time_end": 663717.0430839002,
+    "text_begin": 3568,
+    "text_end": 3583,
+    "pronounce_text_begin": 3428,
+    "pronounce_text_end": 3443
+  },
+  {
+    "text": "有个标志性的例子。那个把\"开源\"当作全部身份的公司，cal.com，五百万美元年收入，在二零二六年四月，把生产代码转成了闭源。",
+    "pronounce_text": "有个标志性的例子。那个把\"开源\"当作全部身份的公司，cal点com，五百万美元年收入，在二零二六年四月，把生产代码转成了闭源。",
+    "time_begin": 663876,
+    "time_end": 676651.4648526077,
+    "text_begin": 3583,
+    "text_end": 3646,
+    "pronounce_text_begin": 3443,
+    "pronounce_text_end": 3506
+  },
+  {
+    "text": "理由很直接：在一个 AI 驱动的安全威胁时代，你不能把源码放在一个 Agent 能读到的地方。你想想——/goal，读 cal.com 的源码，把它的攻击面挨个枚举，直到找到一个能打进去的。",
+    "pronounce_text": "理由很直接：在一个AI驱动的安全威胁时代，你不能把源码放在一个Agent能读到的地方。你想想。goal，读cal点com的源码，把它的攻击面挨个枚举，直到找到一个能打进去的。",
+    "time_begin": 676800,
+    "time_end": 691583.9909297052,
+    "text_begin": 3646,
+    "text_end": 3741,
+    "pronounce_text_begin": 3506,
+    "pronounce_text_end": 3593
+  },
+  {
+    "text": "这种攻击太危险，又太容易执行。",
+    "pronounce_text": "这种攻击太危险，又太容易执行。",
+    "time_begin": 691740,
+    "time_end": 694914.0136054421,
+    "text_begin": 3741,
+    "text_end": 3756,
+    "pronounce_text_begin": 3593,
+    "pronounce_text_end": 3608
+  },
+  {
+    "text": "一家把开源刻进骨子里的公司，在二零二六年决定：开放，已经变成了一种负债。",
+    "pronounce_text": "一家把开源刻进骨子里的公司，在二零二六年决定：开放，已经变成了一种负债。",
+    "time_begin": 695052,
+    "time_end": 702324.335600907,
+    "text_begin": 3756,
+    "text_end": 3792,
+    "pronounce_text_begin": 3608,
+    "pronounce_text_end": 3644
+  },
+  {
+    "text": "我们把这期拉回全局。",
+    "pronounce_text": "我们把这期拉回全局。",
+    "time_begin": 702468,
+    "time_end": 704283.6462585034,
+    "text_begin": 3792,
+    "text_end": 3802,
+    "pronounce_text_begin": 3644,
+    "pronounce_text_end": 3654
+  },
+  {
+    "text": "在软件的整个历史里，\"我们造出来了\"，一直就是护城河。这个时代，正在关闭。",
+    "pronounce_text": "在软件的整个历史里，\"我们造出来了\"，一直就是护城河。这个时代，正在关闭。",
+    "time_begin": 704448,
+    "time_end": 711174.6666666666,
+    "text_begin": 3802,
+    "text_end": 3839,
+    "pronounce_text_begin": 3654,
+    "pronounce_text_end": 3691
+  },
+  {
+    "text": "因为造这件事，成本正在塌缩到零。产品，变成了一个周末的活儿。",
+    "pronounce_text": "因为造这件事，成本正在塌缩到零。产品，变成了一个周末的活儿。",
+    "time_begin": 711324,
+    "time_end": 718433.7959183673,
+    "text_begin": 3839,
+    "text_end": 3869,
+    "pronounce_text_begin": 3691,
+    "pronounce_text_end": 3721
+  },
+  {
+    "text": "下一个时代属于谁？属于那些握着\"产物本身从不包含\"的东西的人。那份别人打不到分的评测集。那份你的用户真实踩过的边缘情况清单。那份你私下测量的 ground truth。",
+    "pronounce_text": "下一个时代属于谁？属于那些握着\"产物本身从不包含\"的东西的人。那份别人打不到分的评测集。那份你的用户真实踩过的边缘情况清单。那份你私下测量的ground truth。",
+    "time_begin": 718596,
+    "time_end": 733043.3015873015,
+    "text_begin": 3869,
+    "text_end": 3953,
+    "pronounce_text_begin": 3721,
+    "pronounce_text_end": 3804
+  },
+  {
+    "text": "一句话总结这一期：过去的护城河是\"我们造出来了\"；现在产品是一个周末就能做完的活儿，唯一造不出来、抄不走的，是对手的 Agent 打不到分的那份 eval。",
+    "pronounce_text": "一句话总结这一期：过去的护城河是\"我们造出来了\";现在产品是一个周末就能做完的活儿，唯一造不出来、抄不走的，是对手的Agent打不到分的那份eval。",
+    "time_begin": 733212,
+    "time_end": 745476.6258503401,
+    "text_begin": 3953,
+    "text_end": 4031,
+    "pronounce_text_begin": 3804,
+    "pronounce_text_end": 3879
+  },
+  {
+    "text": "谁手里握着对手看不见的目标，谁的循环，才能一直往下降。",
+    "pronounce_text": "谁手里握着对手看不见的目标，谁的循环，才能一直往下降。",
+    "time_begin": 745632,
+    "time_end": 751116.3990929705,
+    "text_begin": 4031,
+    "text_end": 4058,
+    "pronounce_text_begin": 3879,
+    "pronounce_text_end": 3906
+  },
+  {
+    "text": "所以如果你今天只带走一件事，那就是别再盯着\"让 Agent 帮我写代码\"了。真正的功夫，在你怎么写一个它没法作弊的目标。",
+    "pronounce_text": "所以如果你今天只带走一件事，那就是别再盯着\"让Agent帮我写代码\"了。真正的功夫，在你怎么写一个它没法作弊的目标。",
+    "time_begin": 751284,
+    "time_end": 762190.2585034014,
+    "text_begin": 4058,
+    "text_end": 4118,
+    "pronounce_text_begin": 3906,
+    "pronounce_text_end": 3964
+  },
+  {
+    "text": "先蒙住答案。给每一条约束配一把能测量的尺子。把每一条廉价捷径,一条一条围死。",
+    "pronounce_text": "先蒙住答案。给每一条约束配一把能测量的尺子。把每一条廉价捷径,一条一条围死。",
+    "time_begin": 762336,
+    "time_end": 770467.4739229025,
+    "text_begin": 4118,
+    "text_end": 4156,
+    "pronounce_text_begin": 3964,
+    "pronounce_text_end": 4002
+  },
+  {
+    "text": "产品已经是一个周末的事了。那就去建那份，一个周末碰不到的 eval。",
+    "pronounce_text": "产品已经是一个周末的事了。那就去建那份，一个周末碰不到的eval。",
+    "time_begin": 770616,
+    "time_end": 775717.2698412698,
+    "text_begin": 4156,
+    "text_end": 4190,
+    "pronounce_text_begin": 4002,
+    "pronounce_text_end": 4035
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 775872,
+    "time_end": 781530.5487528344,
+    "text_begin": 4190,
+    "text_end": 4217,
+    "pronounce_text_begin": 4035,
+    "pronounce_text_end": 4061
+  }
+]

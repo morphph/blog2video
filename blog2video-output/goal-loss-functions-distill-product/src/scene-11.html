@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .rw{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s11'] .rw .n{color:#ff6b5e}
+[data-composition-id='s11'] .punch{margin-top:36px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="52" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[11/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 换个角度看 · <span class="acc">这其实是蒸馏</span></div>
+      <div class="h1" style="margin-top:16px">其实,这就是<span class="em">蒸馏</span></div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">只不过从「训练时」搬到了 <span class="code">prompt 时</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">DeepSeek · Kimi · Minimax 追上 <span class="code">GPT / Claude</span></div>
+          <div class="rd r2d">拿别人的输出训练自己,直到<span class="ok">能复现</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">现在不用再蒸馏一个「模型」了</div>
+          <div class="rd r3d1"><span class="code">/goal</span> + <span class="code">LFD</span> 蒸馏任何公开能找到的产物</div>
+          <div class="rd r3d2">全程不用看内部,也不需要看</div>
+        </div></div>
+
+        <div class="row rw"><div class="n">!!</div><div class="rb">
+          <div class="rt">死死咬住「<span class="code">公开</span>」两个字</div>
+          <div class="rd wd1">服务条款保护 · 登录墙后 · 付费输出 = <span class="warn">不合规</span></div>
+          <div class="rd wd2">但「公开发表」的,<span class="ok">一向可以拿来学习</span></div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">变的只是成本:<span class="hl"><span class="bar"></span><span class="tx">几小时,不是几个月</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.571" data-track-index="5"><div class="sub-inner">换个角度看，这件事其实是<span class="sub-k">蒸馏</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.556" data-duration="3.598" data-track-index="5"><div class="sub-inner">只不过从训练时，搬到了 <span class="sub-k">prompt 时</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.321" data-duration="11.498" data-track-index="5"><div class="sub-inner">DeepSeek、Kimi、Minimax 这条线，就是这么追上 GPT 和 Claude——拿别人的输出来<span class="sub-k">训练自己的模型</span>，直到你能复现它。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.985" data-duration="2.862" data-track-index="5"><div class="sub-inner">但现在，你不用去<span class="sub-k">蒸馏一个模型</span>了。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.847" data-duration="5.545" data-track-index="5"><div class="sub-inner">你可以用 /goal 和 LFD，去蒸馏任何<span class="sub-k">公开能找到的产物</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="26.392" data-duration="3.219" data-track-index="5"><div class="sub-inner">它从头到尾都<span class="sub-k">不用看内部</span>，也不需要看。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.757" data-duration="2.886" data-track-index="5"><div class="sub-inner">请咬住"<span class="sub-k">公开</span>"这两个字。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.643" data-duration="7.215" data-track-index="5"><div class="sub-inner">去蒸馏别人服务条款保护的、登录墙后的、付费的输出，<span class="sub-k">这不合规</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="39.858" data-duration="4.811" data-track-index="5"><div class="sub-inner">但公开发表的东西，向来是<span class="sub-k">可以拿来学习</span>的。</div></div>
+    <div id="sub-10" class="clip sub" data-start="44.805" data-duration="7.063" data-track-index="5"><div class="sub-inner">变了的只是——现在这件事，便宜到<span class="sub-k">几小时就能做完</span>，而不是几个月。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 2.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 6.4, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .r2d', 11.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 18.0, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r3 .r3d1', 20.9, {y:12, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.r3 .r3d2', 26.4, {y:12, d:.28, ease:'power1.out'});
+    D2.enter(tl, R+'.rw', 29.8, {x:-24, ease:'power4.out'});
+    D2.enter(tl, R+'.rw .wd1', 32.7, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.rw .wd2', 39.9, {y:12, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 44.9, {y:18, d:.35, ease:'expo.out'});
+    D2.sweep(tl, R, '.punch .hl', 45.8);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.556],['#sub-3',6.321],['#sub-4',17.985],['#sub-5',20.847],['#sub-6',26.392],['#sub-7',29.757],['#sub-8',32.643],['#sub-9',39.858],['#sub-10',44.805]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 52, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

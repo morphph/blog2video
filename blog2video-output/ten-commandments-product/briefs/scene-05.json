@@ -1,0 +1,76 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 61.3,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_5.html",
+ "topbarIndex": "[05/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.625,
+   "text": "文章里有一个观察，我认为是这十条里最值得单独拎出来的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.787,
+   "localDuration": 5.834,
+   "text": "以前，\"搭百万用户架构再找用户\"是工程师的经典拖延。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.621,
+   "localDuration": 3.366,
+   "text": "现在，AI 让这个拖延升级了。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.147,
+   "localDuration": 8.213,
+   "text": "Coding Agent 让你在第一天就能搭出\"正确的最终架构\"，感觉像是跳过了探索阶段，直接到达了终点。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.499,
+   "localDuration": 9.49,
+   "text": "但这是最新版本的幻觉，而且 AI 是它的推销员——它卖给你一个幻想：你可以在开始就全知全能，永远不需要发现任何事情。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 32.147,
+   "localDuration": 7.443,
+   "text": "YC 有个负责人炫耀说，自己的项目每天生成 37000 行 AI 代码，连续 72 天。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 39.59,
+   "localDuration": 4.23,
+   "text": "后来有开发者看了那些代码，发现全是臃肿和低级错误。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 43.991,
+   "localDuration": 1.9,
+   "text": "行数从来不度量价值。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 45.891,
+   "localDuration": 2.47,
+   "text": "现在连努力程度都不度量了。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 48.527,
+   "localDuration": 4.33,
+   "text": "正确的系统是随着产品找到用户的过程生长出来的。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 52.857,
+   "localDuration": 8.283,
+   "text": "它不是由某个人在开始就设计好的蓝图——那个人以为自己已经看见了全貌，其实他什么都没看见。"
+  }
+ ]
+}

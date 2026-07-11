@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      position: relative;
+    }
+    .title { font-size: 76px; font-weight: 800; line-height: 1.16; margin-bottom: 20px; }
+    .title .em { color: #3B82F6; }
+    .sub { font-size: 36px; color: #B0B0CC; margin-bottom: 60px; }
+    .cards { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+    .card { background: #1A1A2E; border-radius: 12px; padding: 44px 40px; text-align: left; }
+    .card.good { border: 1px solid rgba(16,185,129,0.25); border-left: 4px solid #10B981; }
+    .card.bad { border: 1px solid rgba(239,68,68,0.25); border-left: 4px solid #EF4444; }
+    .card .h { font-size: 44px; font-weight: 800; margin-bottom: 14px; }
+    .card.good .h { color: #10B981; }
+    .card.bad .h { color: #EF4444; }
+    .card .d { font-size: 40px; color: #FFFFFF; line-height: 1.42; }
+    .card .d .k { color: #F59E0B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">两艘<span class="em">不同的船</span></div>
+    <div class="sub">都很难被拦住，原因却完全不同</div>
+    <div class="cards">
+      <div class="card good"><div class="h">坚持 · 引擎关不小的船</div><div class="d">动力太足，<span class="k">停不下来</span></div></div>
+      <div class="card bad"><div class="h">固执 · 舵转不动的船</div><div class="d">方向改不了，<span class="k">拐不了弯</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

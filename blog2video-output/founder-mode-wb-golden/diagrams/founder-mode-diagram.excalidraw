@@ -1,0 +1,391 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "t_title", "x": 110, "y": 40, "width": 520, "height": 40,
+      "text": "Founder Mode", "originalText": "Founder Mode",
+      "fontSize": 30, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e8590c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 100001, "version": 1, "versionNonce": 100002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25,
+      "customData": { "step": 1, "stepLabel": "缘起：传统智慧是错的" }
+    },
+    {
+      "type": "text", "id": "t_sub", "x": 110, "y": 90, "width": 940, "height": 24,
+      "text": "运营公司的两种方式 —— 同一句建议，两个截然不同的下场", "originalText": "运营公司的两种方式 —— 同一句建议，两个截然不同的下场",
+      "fontSize": 16, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#495057", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 100003, "version": 1, "versionNonce": 100004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25, "customData": { "step": 1 }
+    },
+    {
+      "type": "rectangle", "id": "origin_box", "x": 430, "y": 150, "width": 440, "height": 66,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffffff", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 100005, "version": 1, "versionNonce": 100006, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "origin_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 1 }
+    },
+    {
+      "type": "text", "id": "origin_text", "x": 445, "y": 165, "width": 410, "height": 36,
+      "text": "Chesky @ YC · 传统智慧是错的\n→ 那套建议损害了创始人", "originalText": "Chesky @ YC · 传统智慧是错的\n→ 那套建议损害了创始人",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 100007, "version": 1, "versionNonce": 100008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "origin_box", "lineHeight": 1.25
+    },
+
+    {
+      "type": "arrow", "id": "a_origin_diag", "x": 650, "y": 216, "width": 0, "height": 58,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 200001, "version": 1, "versionNonce": 200002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 58]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 2 }
+    },
+    {
+      "type": "rectangle", "id": "diag_box", "x": 380, "y": 274, "width": 540, "height": 84,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffffff", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 200003, "version": 1, "versionNonce": 200004, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "diag_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 2, "stepLabel": "诊断：那是「经理模式」" }
+    },
+    {
+      "type": "text", "id": "diag_text", "x": 395, "y": 288, "width": 510, "height": 56,
+      "text": "诊断：那套建议 = 「怎么管一家你没创立的公司」\n有些事创始人能做而经理做不了；不做感觉不对——因为确实不对", "originalText": "诊断：那套建议 = 「怎么管一家你没创立的公司」\n有些事创始人能做而经理做不了；不做感觉不对——因为确实不对",
+      "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 200005, "version": 1, "versionNonce": 200006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "diag_box", "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "divider", "x": 685, "y": 392, "width": 0, "height": 536,
+      "strokeColor": "#adb5bd", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 300001, "version": 1, "versionNonce": 300002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 536]], "customData": { "step": 3 }
+    },
+    {
+      "type": "text", "id": "mgr_header", "x": 150, "y": 402, "width": 420, "height": 26,
+      "text": "MANAGER MODE · 经理模式", "originalText": "MANAGER MODE · 经理模式",
+      "fontSize": 20, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e8590c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 300003, "version": 1, "versionNonce": 300004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25,
+      "customData": { "step": 3, "stepLabel": "两种模式分岔" }
+    },
+    {
+      "type": "text", "id": "fdr_header", "x": 760, "y": 402, "width": 440, "height": 26,
+      "text": "FOUNDER MODE · 创始人模式", "originalText": "FOUNDER MODE · 创始人模式",
+      "fontSize": 20, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e8590c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 300005, "version": 1, "versionNonce": 300006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25, "customData": { "step": 3 }
+    },
+    {
+      "type": "arrow", "id": "fork_left", "x": 470, "y": 358, "width": 150, "height": 40,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 300007, "version": 1, "versionNonce": 300008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [-150, 40]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 3 }
+    },
+    {
+      "type": "arrow", "id": "fork_right", "x": 830, "y": 358, "width": 70, "height": 40,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 300009, "version": 1, "versionNonce": 300010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [70, 40]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 3 }
+    },
+
+    {
+      "type": "rectangle", "id": "blackbox", "x": 120, "y": 448, "width": 360, "height": 62,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#343a40", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400001, "version": 1, "versionNonce": 400002, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "blackbox_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 4, "stepLabel": "manager mode：黑箱 → 翻车" }
+    },
+    {
+      "type": "text", "id": "blackbox_text", "x": 135, "y": 461, "width": 330, "height": 36,
+      "text": "org 子树当黑箱 (modular)\n只通过直接下属指挥", "originalText": "org 子树当黑箱 (modular)\n只通过直接下属指挥",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400003, "version": 1, "versionNonce": 400004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "blackbox", "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "advice_node", "x": 190, "y": 548, "width": 220, "height": 86,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffc9c9", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400005, "version": 1, "versionNonce": 400006, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "advice_text", "type": "text" }],
+      "link": null, "locked": false, "customData": { "step": 4 }
+    },
+    {
+      "type": "text", "id": "advice_text", "x": 210, "y": 573, "width": 180, "height": 36,
+      "text": "「雇好人\n给空间」", "originalText": "「雇好人\n给空间」",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400007, "version": 1, "versionNonce": 400008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "advice_node", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "fail1", "x": 110, "y": 682, "width": 340, "height": 58,
+      "strokeColor": "#b91c1c", "backgroundColor": "#fecaca", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400009, "version": 1, "versionNonce": 400010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "fail1_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 4 }
+    },
+    {
+      "type": "text", "id": "fail1_text", "x": 125, "y": 695, "width": 310, "height": 36,
+      "text": "✗ 实践中：雇「专业骗子」\n把公司开进沟里", "originalText": "✗ 实践中：雇「专业骗子」\n把公司开进沟里",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400011, "version": 1, "versionNonce": 400012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "fail1", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "fail2", "x": 110, "y": 762, "width": 340, "height": 58,
+      "strokeColor": "#b91c1c", "backgroundColor": "#fecaca", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400013, "version": 1, "versionNonce": 400014, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "fail2_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 4 }
+    },
+    {
+      "type": "text", "id": "fail2_text", "x": 125, "y": 775, "width": 310, "height": 36,
+      "text": "✗ 双向 gaslighting\n(VC + C-level 撒谎者)", "originalText": "✗ 双向 gaslighting\n(VC + C-level 撒谎者)",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400015, "version": 1, "versionNonce": 400016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "fail2", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_bb_advice", "x": 300, "y": 510, "width": 0, "height": 38,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400017, "version": 1, "versionNonce": 400018, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 38]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 4 }
+    },
+    {
+      "type": "arrow", "id": "a_advice_fail1", "x": 300, "y": 634, "width": 0, "height": 48,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400019, "version": 1, "versionNonce": 400020, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 48]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 4 }
+    },
+    {
+      "type": "arrow", "id": "a_fail1_fail2", "x": 280, "y": 740, "width": 0, "height": 22,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400021, "version": 1, "versionNonce": 400022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 22]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 4 }
+    },
+    {
+      "type": "text", "id": "mgr_cap", "x": 110, "y": 830, "width": 360, "height": 20,
+      "text": "「hire good people」理想版 vs 实践版的对撞", "originalText": "「hire good people」理想版 vs 实践版的对撞",
+      "fontSize": 12, "fontFamily": 1, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#495057", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 400023, "version": 1, "versionNonce": 400024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25, "customData": { "step": 4 }
+    },
+
+    {
+      "type": "rectangle", "id": "break_box", "x": 720, "y": 448, "width": 400, "height": 52,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffffff", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500001, "version": 1, "versionNonce": 500002, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "break_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 5, "stepLabel": "founder mode：打破封装" }
+    },
+    {
+      "type": "text", "id": "break_text", "x": 735, "y": 462, "width": 370, "height": 24,
+      "text": "打破「CEO 只通过直接下属」", "originalText": "打破「CEO 只通过直接下属」",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500003, "version": 1, "versionNonce": 500004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "break_box", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "skip_box", "x": 740, "y": 532, "width": 360, "height": 48,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffffff", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500005, "version": 1, "versionNonce": 500006, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "skip_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 5 }
+    },
+    {
+      "type": "text", "id": "skip_text", "x": 755, "y": 544, "width": 330, "height": 24,
+      "text": "skip-level 会议成常态", "originalText": "skip-level 会议成常态",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500007, "version": 1, "versionNonce": 500008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "skip_box", "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "jobs_node", "x": 780, "y": 616, "width": 300, "height": 100,
+      "strokeColor": "#1e1e1e", "backgroundColor": "#ffc9c9", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500009, "version": 1, "versionNonce": 500010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "jobs_text", "type": "text" }],
+      "link": null, "locked": false, "customData": { "step": 5 }
+    },
+    {
+      "type": "text", "id": "jobs_text", "x": 800, "y": 638, "width": 260, "height": 54,
+      "text": "Steve Jobs\n100 人务虚会\n(非架构图前 100 人)", "originalText": "Steve Jobs\n100 人务虚会\n(非架构图前 100 人)",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500011, "version": 1, "versionNonce": 500012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "jobs_node", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_break_skip", "x": 920, "y": 500, "width": 0, "height": 32,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500013, "version": 1, "versionNonce": 500014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 32]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 5 }
+    },
+    {
+      "type": "arrow", "id": "a_skip_jobs", "x": 920, "y": 580, "width": 10, "height": 36,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500015, "version": 1, "versionNonce": 500016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [10, 36]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 5 }
+    },
+    {
+      "type": "text", "id": "fdr_cap", "x": 740, "y": 726, "width": 360, "height": 20,
+      "text": "让一家大公司感觉像 startup", "originalText": "让一家大公司感觉像 startup",
+      "fontSize": 12, "fontFamily": 1, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#495057", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 500017, "version": 1, "versionNonce": 500018, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25, "customData": { "step": 5 }
+    },
+
+    {
+      "type": "rectangle", "id": "tradeoff_box", "x": 715, "y": 764, "width": 415, "height": 66,
+      "strokeColor": "#047857", "backgroundColor": "#b2f2bb", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 600001, "version": 1, "versionNonce": 600002, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "tradeoff_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 6, "stepLabel": "更复杂 but 更好用" }
+    },
+    {
+      "type": "text", "id": "tradeoff_text", "x": 730, "y": 777, "width": 385, "height": 40,
+      "text": "仍需授权 · 自治边界随信任移动\n更复杂 BUT 更好用 ✓", "originalText": "仍需授权 · 自治边界随信任移动\n更复杂 BUT 更好用 ✓",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 600003, "version": 1, "versionNonce": 600004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "tradeoff_box", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_jobs_tradeoff", "x": 925, "y": 716, "width": 5, "height": 48,
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 600005, "version": 1, "versionNonce": 600006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [-5, 48]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 6 }
+    },
+
+    {
+      "type": "rectangle", "id": "verdict_box", "x": 340, "y": 880, "width": 620, "height": 58,
+      "strokeColor": "#047857", "backgroundColor": "#b2f2bb", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 700001, "version": 1, "versionNonce": 700002, "isDeleted": false,
+      "groupIds": [], "boundElements": [{ "id": "verdict_text", "type": "text" }],
+      "link": null, "locked": false, "roundness": { "type": 3 },
+      "customData": { "step": 7, "stepLabel": "像 Jobs，而非 Sculley" }
+    },
+    {
+      "type": "text", "id": "verdict_text", "x": 355, "y": 897, "width": 590, "height": 24,
+      "text": "→ 像 Steve Jobs，而非 John Sculley", "originalText": "→ 像 Steve Jobs，而非 John Sculley",
+      "fontSize": 18, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#1e1e1e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 700003, "version": 1, "versionNonce": 700004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": "verdict_box", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_tradeoff_verdict", "x": 900, "y": 830, "width": 200, "height": 50,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 700005, "version": 1, "versionNonce": 700006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [-200, 50]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "customData": { "step": 7 }
+    },
+    {
+      "type": "text", "id": "verdict_cap", "x": 330, "y": 948, "width": 640, "height": 22,
+      "text": "founder mode 更复杂却更有效 —— 而我们对它几乎一无所知", "originalText": "founder mode 更复杂却更有效 —— 而我们对它几乎一无所知",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#495057", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 1, "opacity": 100, "angle": 0,
+      "seed": 700007, "version": 1, "versionNonce": 700008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25, "customData": { "step": 7 }
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

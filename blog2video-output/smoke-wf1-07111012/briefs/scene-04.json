@@ -1,0 +1,100 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 87.7,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_4.html",
+ "topbarIndex": "[04/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 8.468,
+   "text": "怎么才能擅长一种技术?又该选哪种技术?这两个问题,答案是同一个:做你自己的项目。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.652,
+   "localDuration": 7.157,
+   "text": "别去猜基因编辑、大模型、火箭,哪个未来最值钱——没人能预测,真的没人。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 15.809,
+   "localDuration": 5.112,
+   "text": "你就做你最感兴趣的那个,因为兴趣会让你多努力太多。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 20.921,
+   "localDuration": 3.885,
+   "text": "如果实在不知道该擅长什么,那就学编程。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.96,
+   "localDuration": 5.438,
+   "text": "过去 30 年,编程一直是创业公司最主流的来源,未来 10 年也不会变。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.54,
+   "localDuration": 3.918,
+   "text": "这里有个反常识的点:上计算机课是不够的。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.458,
+   "localDuration": 4.309,
+   "text": "你完全可能课上成绩很好,却从没真正学会编程。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 38.767,
+   "localDuration": 4.897,
+   "text": "甚至有人从顶尖大学拿了计算机学位,依然不会写代码。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 43.824,
+   "localDuration": 10.001,
+   "text": "所以科技公司招人,不管你哪所名校毕业、成绩多漂亮,都要你现场做一次 coding test——因为成绩根本证明不了什么。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 53.976,
+   "localDuration": 2.748,
+   "text": "真想学会,必须做自己的项目。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 56.724,
+   "localDuration": 8.832,
+   "text": "你写一个游戏,想实现某个功能却不会,这时候你被逼着去搞懂它,那个速度,比在课堂上学快得多。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 65.712,
+   "localDuration": 2.488,
+   "text": "而且技术不一定是编程。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 68.2,
+   "localDuration": 9.049,
+   "text": "凡是能用\"制造\"或\"搭建\"来描述的东西,几乎都算——焊接、做衣服、剪视频,都是。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 77.249,
+   "localDuration": 5.43,
+   "text": "关键的分界线只有一条:你是在生产,还是只在消费?"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 82.848,
+   "localDuration": 4.718,
+   "text": "你是在写游戏,还是只在玩游戏?这就是全部区别。"
+  }
+ ]
+}

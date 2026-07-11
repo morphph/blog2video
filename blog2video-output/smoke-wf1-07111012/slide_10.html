@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width:1080px; height:1920px; background:#0D0D1A; font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif; color:#FFFFFF; overflow:hidden; }
+    .slide { width:100%; height:100%; padding:200px 72px 420px 72px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+    .head { font-size:46px; font-weight:800; line-height:1.34; margin-bottom:48px; }
+    .head .em { color:#8B5CF6; }
+    .card { width:100%; background:#1A1A2E; border-radius:12px; padding:34px 30px; text-align:left; margin-bottom:24px; }
+    .card.wrong { border:1px solid rgba(239,68,68,0.4); border-left:4px solid #EF4444; }
+    .card.right { border:1px solid rgba(16,185,129,0.4); border-left:4px solid #10B981; }
+    .card .tag { font-size:26px; font-weight:700; margin-bottom:14px; letter-spacing:1px; }
+    .card.wrong .tag { color:#EF4444; }
+    .card.right .tag { color:#10B981; }
+    .card .x { font-size:33px; color:#FFFFFF; line-height:1.42; }
+    .card .x b { color:#10B981; }
+    .foot { width:100%; background:#1A1A2E; border:1px solid rgba(245,158,11,0.4); border-left:4px solid #F59E0B; border-radius:12px; padding:30px; text-align:left; font-size:36px; font-weight:700; line-height:1.4; }
+    .foot .em { color:#F59E0B; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="head">最好的公司,长自<br><span class="em">没打算创业的项目</span></div>
+    <div class="card wrong"><div class="tag">最大的错误</div><div class="x">为某个神秘的"其他人"群体造东西</div></div>
+    <div class="card right"><div class="tag">正确姿势</div><div class="x">为你自己和朋友造——他们会真的想用,<b>一旦关掉会难过</b></div></div>
+    <div class="foot">到处都是 <span class="em">卡住的门</span></div>
+  </div>
+</body>
+</html>

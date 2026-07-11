@@ -1,0 +1,70 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 61.1,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_8.html",
+ "topbarIndex": "[08/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 3.688,
+   "text": "但这里有个反转，别急着把固执一脚踢开。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.704,
+   "localDuration": 4.269,
+   "text": "固执对简单问题是真的有效——这是条重要线索。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.116,
+   "localDuration": 3.313,
+   "text": "坚持和固执，其实不是对立的两极。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 11.429,
+   "localDuration": 8.696,
+   "text": "作者打了第二个比方：它们的关系，更像有氧呼吸，和我们从远古祖先那里继承来的无氧呼吸。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.325,
+   "localDuration": 6.332,
+   "text": "无氧更原始，但有它的用处——你突然从危险面前跳开，靠的就是它。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.8,
+   "localDuration": 2.491,
+   "text": "所以最优的固执量，不是零。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.291,
+   "localDuration": 8.241,
+   "text": "面对挫折，第一反应是那句不假思索的“我不放弃\",这其实是好的，它能防止你 panic。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 37.672,
+   "localDuration": 3.341,
+   "text": "代价是，不假思索只能带你走这么远。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.013,
+   "localDuration": 3.931,
+   "text": "越靠近固执那一端，你越解不了真正的难题。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 45.088,
+   "localDuration": 15.852,
+   "text": "这就是它的适用边界：单一路径的简单问题，固执管用，连很轴的人都能用;可一旦问题复杂、需要外部检验，它就退化成一种“诱导性的愚蠢\"——反面证据越堆越高，你却越蹬越紧。"
+  }
+ ]
+}

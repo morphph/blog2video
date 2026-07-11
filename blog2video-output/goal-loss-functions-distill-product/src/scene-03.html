@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-03 特有 —— */
+[data-composition-id='s03'] .h1{font-size:60px}
+[data-composition-id='s03'] .lead{margin-top:26px;font-size:36px}
+[data-composition-id='s03'] .stats{margin-top:34px}
+[data-composition-id='s03'] .win{margin-top:26px;padding:22px 30px}
+[data-composition-id='s03'] .win .num{font-size:70px}
+[data-composition-id='s03'] .secret{margin-top:30px}
+[data-composition-id='s03'] .br-k{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s03'] .br-code{margin-top:14px;font-weight:900;font-size:44px;color:#edebe6;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+[data-composition-id='s03'] .br-code .code{font-size:38px;color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+[data-composition-id='s03'] .br-code .zh{font-size:32px;color:#8a8a85;font-weight:600}
+[data-composition-id='s03'] .br-shift{margin-top:18px;font-weight:600;font-size:32px;color:#edebe6;line-height:1.35}
+[data-composition-id='s03'] .br-shift .a{color:#8a8a85}
+[data-composition-id='s03'] .br-src{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s03'] .br-src b{color:#edebe6;font-weight:700}
+[data-composition-id='s03'] .punch{margin-top:26px;font-weight:900;font-size:46px;color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s03" data-start="0" data-duration="58.3" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[03/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// LOOP 现场 · <span class="acc">无人值守</span></div>
+      <div class="h1" style="margin-top:16px">一个 prompt，<span class="em">挂机干了什么</span></div>
+
+      <div class="stats">
+        <div class="stat key s1"><div class="num">30h</div><div class="lab">连续运行</div></div>
+        <div class="stat s2"><div class="num">6300</div><div class="lab">生成代码(行)</div></div>
+        <div class="stat s3"><div class="num">92k</div><div class="lab">爬取网页</div></div>
+        <div class="stat s4"><div class="num">$40</div><div class="lab">API 费用</div></div>
+      </div>
+
+      <div class="lead">克隆另一个产品的核心循环，架构<span class="em">从零反向工程</span></div>
+
+      <div class="win"><div class="num" id="win-n">0×</div><div class="lab">同样的查询，输出质量 vs 参考产品</div></div>
+
+      <div class="secret bracket">
+        <div class="br-k">// 秘密只有一个词</div>
+        <div class="br-code"><span class="code">loss function development</span><span class="zh">损失函数开发</span></div>
+        <div class="br-shift">不再是「照着造」的 spec，<span class="a">而是</span>「往这个方向优化」的目标</div>
+        <div class="br-src">别再给 Agent 写 prompt —— 去设计那个给它写 prompt 的循环。<b>— Peter Steinberger</b></div>
+      </div>
+
+      <div class="punch">spec 从终点，<span class="hl"><span class="bar"></span><span class="tx">变成起点</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.476" data-track-index="5"><div class="sub-inner">来看他<span class="sub-k">挂机</span>的时候，那一个 prompt 干了什么。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.632" data-duration="1.612" data-track-index="5"><div class="sub-inner">大约<span class="sub-k">三十个小时</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.244" data-duration="1.611" data-track-index="5"><div class="sub-inner"><span class="sub-k">六千三百行</span>代码。</div></div>
+    <div id="sub-4" class="clip sub" data-start="6.855" data-duration="2.015" data-track-index="5"><div class="sub-inner">爬了<span class="sub-k">九万两千</span>个网页。</div></div>
+    <div id="sub-5" class="clip sub" data-start="8.87" data-duration="3.021" data-track-index="5"><div class="sub-inner">花了<span class="sub-k">四十美元</span>的 API 费用。</div></div>
+    <div id="sub-6" class="clip sub" data-start="12.056" data-duration="5.274" data-track-index="5"><div class="sub-inner">它做的事情是：把另一个产品的<span class="sub-k">核心循环</span>，整个克隆出来。</div></div>
+    <div id="sub-7" class="clip sub" data-start="17.33" data-duration="2.637" data-track-index="5"><div class="sub-inner">架构是从零开始<span class="sub-k">反向工程</span>的。</div></div>
+    <div id="sub-8" class="clip sub" data-start="20.12" data-duration="9.745" data-track-index="5"><div class="sub-inner">而且关键在最后一句：在同样的查询上，他们做出来的版本，输出比那个参考产品好了大约<span class="sub-k">五十倍</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="30.02" data-duration="6.515" data-track-index="5"><div class="sub-inner">秘密只有一个词，叫 <span class="sub-k">loss function development</span>，损失函数开发。</div></div>
+    <div id="sub-10" class="clip sub" data-start="36.535" data-duration="6.818" data-track-index="5"><div class="sub-inner">你给 Agent 的，不再是一份"照着造"的 spec，而是一个"往这个方向优化"的<span class="sub-k">目标</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="43.52" data-duration="10.523" data-track-index="5"><div class="sub-inner">有个叫 Peter Steinberger 的人说得更绝：你不该再给编程 Agent 写 prompt 了，你该设计的是那个给 Agent 写 prompt 的<span class="sub-k">循环</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="54.212" data-duration="3.952" data-track-index="5"><div class="sub-inner">换句话说，spec 从终点，变成了<span class="sub-k">起点</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s03'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    D2.enter(tl, R+'.kicker', .5, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.4, ease:'expo.out'});
+
+    /* act 1 —— 挂机指标,逐条绑口播 */
+    D2.enter(tl, R+'.s1', 3.6, {x:-20, ease:'power3.out'});
+    D2.enter(tl, R+'.s2', 5.2, {y:16, ease:'power2.out'});
+    D2.enter(tl, R+'.s3', 6.9, {y:16, ease:'power3.out'});
+    D2.enter(tl, R+'.s4', 8.9, {x:20, d:.36, ease:'expo.out'});
+
+    /* 克隆 / 反向工程(填 8-20s 空档) */
+    D2.enter(tl, R+'.lead', 12.0, {y:18, ease:'power2.out'});
+
+    /* 50× 结果 + count-up */
+    D2.enter(tl, R+'.win', 19.6, {y:20, d:.4, ease:'expo.out'});
+    D2.countUp(tl, R+'#win-n', 20.1, 0, 50, 1.6, {suffix:'×'});
+
+    /* act 2 —— 秘密:loss function(整卡+首行 30s),晚到子元素各自延迟 */
+    D2.enter(tl, R+'.secret', 30.0, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.secret .br-shift', 36.5, {y:14, ease:'power2.out'});
+    D2.enter(tl, R+'.secret .br-src', 43.5, {y:12, d:.34, ease:'power1.out'});
+
+    /* 收束金句 + 酸性扫过 */
+    D2.enter(tl, R+'.punch', 54.0, {y:18, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 54.4);
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.632],['#sub-3',5.244],['#sub-4',6.855],['#sub-5',8.87],['#sub-6',12.056],['#sub-7',17.33],['#sub-8',20.12],['#sub-9',30.02],['#sub-10',36.535],['#sub-11',43.52],['#sub-12',54.212]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 58.3, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s03'] = tl;
+  })();
+  </script>
+</body>
+</html>

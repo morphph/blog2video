@@ -1,0 +1,750 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - generic:
+        - heading "To view keyboard shortcuts, press question mark View keyboard shortcuts" [level=2] [ref=e3]:
+          - generic [ref=e4]: To view keyboard shortcuts, press question mark
+          - link "View keyboard shortcuts" [ref=e5] [cursor=pointer]:
+            - /url: /i/keyboard_shortcuts
+        - generic:
+          - generic:
+            - button "Grok" [ref=e6] [cursor=pointer]:
+              - img [ref=e7]
+            - button "Chat" [ref=e10] [cursor=pointer]:
+              - img [ref=e11]
+        - generic [ref=e14]:
+          - button "Skip to home timeline" [ref=e24] [cursor=pointer]
+          - button "Skip to trending" [ref=e26] [cursor=pointer]
+          - banner [ref=e15]:
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - heading "X" [level=1] [ref=e32] [cursor=pointer]:
+                  - link "X" [ref=e33]:
+                    - /url: /home
+                    - img [ref=e35]
+                - navigation "Primary" [ref=e39]:
+                  - link "Home" [ref=e40] [cursor=pointer]:
+                    - /url: /home
+                    - generic [ref=e41]:
+                      - img [ref=e43]
+                      - generic [ref=e46]: Home
+                  - link "Search and explore" [ref=e47] [cursor=pointer]:
+                    - /url: /explore
+                    - generic [ref=e48]:
+                      - img [ref=e50]
+                      - generic [ref=e53]: Explore
+                  - link "Notifications (21 unread notifications)" [ref=e54] [cursor=pointer]:
+                    - /url: /notifications
+                    - generic [ref=e55]:
+                      - generic [ref=e56]:
+                        - img [ref=e57]
+                        - generic "20+ unread items" [ref=e60]:
+                          - generic [ref=e61]: 20+
+                      - generic [ref=e62]: Notifications
+                  - link "Follow" [ref=e63] [cursor=pointer]:
+                    - /url: /i/connect_people
+                    - generic [ref=e64]:
+                      - img [ref=e66]
+                      - generic [ref=e69]: Follow
+                  - link "Direct Messages" [ref=e70] [cursor=pointer]:
+                    - /url: /i/chat
+                    - generic [ref=e71]:
+                      - img [ref=e73]
+                      - generic [ref=e76]: Chat
+                  - link "Grok" [ref=e77] [cursor=pointer]:
+                    - /url: /i/grok
+                    - generic [ref=e78]:
+                      - img [ref=e80]
+                      - generic [ref=e83]: Grok
+                  - link "Premium" [ref=e84] [cursor=pointer]:
+                    - /url: /i/premium
+                    - generic [ref=e85]:
+                      - img [ref=e87]
+                      - generic [ref=e90]: Premium
+                  - link "Articles" [ref=e91] [cursor=pointer]:
+                    - /url: /compose/articles
+                    - generic [ref=e92]:
+                      - img [ref=e94]
+                      - generic [ref=e99]: Articles
+                  - link "Profile" [ref=e100] [cursor=pointer]:
+                    - /url: /morph_thecat
+                    - generic [ref=e101]:
+                      - img [ref=e103]
+                      - generic [ref=e106]: Profile
+                  - button "More menu items" [ref=e107] [cursor=pointer]:
+                    - generic [ref=e108]:
+                      - img [ref=e110]
+                      - generic [ref=e113]: More
+                - link "Post" [ref=e115] [cursor=pointer]:
+                  - /url: /compose/post
+                  - generic [ref=e121]: Post
+              - button "Account menu" [ref=e124] [cursor=pointer]:
+                - generic [ref=e132]:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic "vfan":
+                          - img "vfan"
+                - generic [ref=e136]:
+                  - generic [ref=e138]:
+                    - generic [ref=e140]: vfan
+                    - img "Verified account" [ref=e143]
+                  - generic [ref=e149]: "@morph_thecat"
+                - img [ref=e151]
+          - main [ref=e16]:
+            - generic [ref=e155]:
+              - generic "Home timeline" [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e164] [cursor=pointer]:
+                    - button "Back" [ref=e166]:
+                      - img [ref=e168]
+                    - heading "Post" [level=2] [ref=e173]
+                  - generic:
+                    - generic:
+                      - status:
+                        - button:
+                          - generic:
+                            - img
+                            - generic: See new posts
+                - region "Conversation" [ref=e175]:
+                  - heading "Conversation" [level=1] [ref=e176]
+                  - 'generic "Timeline: Conversation" [ref=e177]':
+                    - generic [ref=e178]:
+                      - generic [ref=e181]:
+                        - article "Noah Zweben Verified account @noahzweben With the launch of Claude Tag, we're sharing the future of work with the world. Working with agents means working in some new forward-looking ways. We're excited to share some best practices below claude.com Lessons from Anthropic on building effective human-agent teams | Claude From claude.com 5 replies, 7 reposts, 74 likes, 75 bookmarks, 5342 views" [ref=e182]:
+                          - generic [ref=e184]:
+                            - generic [ref=e188]:
+                              - link [active] [ref=e200] [cursor=pointer]:
+                                - /url: /noahzweben
+                              - generic [ref=e205]:
+                                - generic [ref=e208]:
+                                  - link "Noah Zweben Verified account" [ref=e211] [cursor=pointer]:
+                                    - /url: /noahzweben
+                                    - generic [ref=e212]:
+                                      - generic [ref=e214]: Noah Zweben
+                                      - img "Verified account" [ref=e217]
+                                  - link "@noahzweben" [ref=e223] [cursor=pointer]:
+                                    - /url: /noahzweben
+                                    - generic [ref=e224]: "@noahzweben"
+                                - generic [ref=e226]:
+                                  - button "Grok actions" [ref=e228] [cursor=pointer]:
+                                    - img [ref=e233]
+                                  - button "More" [ref=e239] [cursor=pointer]:
+                                    - img [ref=e243]
+                            - generic [ref=e246]:
+                              - generic [ref=e248]: With the launch of Claude Tag, we're sharing the future of work with the world. Working with agents means working in some new forward-looking ways. We're excited to share some best practices below
+                              - generic "claude.com Lessons from Anthropic on building effective human-agent teams | Claude" [ref=e249]:
+                                - generic "claude.com Lessons from Anthropic on building effective human-agent teams | Claude" [ref=e250]:
+                                  - link "claude.com Lessons from Anthropic on building effective human-agent teams | Claude" [ref=e252] [cursor=pointer]:
+                                    - /url: https://t.co/cpNeQgvwZl
+                                    - generic [ref=e258]:
+                                      - generic:
+                                        - generic: Lessons from Anthropic on building effective human-agent teams | Claude
+                                - link "From claude.com" [ref=e261] [cursor=pointer]:
+                                  - /url: https://t.co/cpNeQgvwZl
+                              - generic [ref=e265]:
+                                - link "10:18 PM · Jun 25, 2026" [ref=e267] [cursor=pointer]:
+                                  - /url: /noahzweben/status/2070270332674658814
+                                  - time [ref=e268]: 10:18 PM · Jun 25, 2026
+                                - generic [ref=e269]: ·
+                                - link "5,342 Views" [ref=e270] [cursor=pointer]:
+                                  - /url: /noahzweben/status/2070270332674658814/analytics
+                                  - generic [ref=e273]: 5,342
+                                  - generic [ref=e274]: Views
+                              - generic [ref=e275]:
+                                - group "5 replies, 7 reposts, 74 likes, 75 bookmarks, 5342 views" [ref=e277]:
+                                  - button "5 Replies. Reply" [ref=e279] [cursor=pointer]:
+                                    - generic [ref=e280]:
+                                      - img [ref=e283]
+                                      - generic [ref=e288]: "5"
+                                  - button "7 reposts. Repost" [ref=e290] [cursor=pointer]:
+                                    - generic [ref=e291]:
+                                      - img [ref=e294]
+                                      - generic [ref=e299]: "7"
+                                  - button "74 Likes. Like" [ref=e301] [cursor=pointer]:
+                                    - generic [ref=e302]:
+                                      - img [ref=e305]
+                                      - generic [ref=e310]: "74"
+                                  - button "75 Bookmarks. Bookmark" [ref=e312] [cursor=pointer]:
+                                    - generic [ref=e313]:
+                                      - img [ref=e316]
+                                      - generic [ref=e321]: "75"
+                                  - button "Share post" [ref=e324] [cursor=pointer]:
+                                    - img [ref=e328]
+                                - generic [ref=e331]:
+                                  - button "Relevant" [ref=e334]:
+                                    - text: Relevant
+                                    - img [ref=e335]
+                                  - link "View quotes" [ref=e339] [cursor=pointer]:
+                                    - /url: /noahzweben/status/2070270332674658814/quotes
+                                    - text: View quotes
+                                    - img [ref=e340]
+                        - generic [ref=e350]:
+                          - link "vfan" [ref=e359] [cursor=pointer]:
+                            - /url: /morph_thecat
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic "vfan":
+                                    - img "vfan"
+                          - generic [ref=e367]:
+                            - generic [ref=e380]:
+                              - generic [ref=e382]: Post your reply
+                              - textbox "Post text" [ref=e384]
+                            - button "Reply" [disabled] [ref=e389]:
+                              - generic [ref=e392]: Reply
+                      - article "Lucas Gould Verified account @lucascgould 1 hour ago I must be missing something but there doesn’t seem to be parity yet in the tools Claude tag can have compared to native connectors? Happy to buy a seat for Claude tag in hex, Microsoft, docusign, qbo, etc but need it to be able to connect to it 1 reply, 246 views" [ref=e397] [cursor=pointer]:
+                        - generic [ref=e403]:
+                          - link [ref=e415]:
+                            - /url: /lucascgould
+                          - generic [ref=e419]:
+                            - generic [ref=e421]:
+                              - generic [ref=e424]:
+                                - link "Lucas Gould Verified account" [ref=e427]:
+                                  - /url: /lucascgould
+                                  - generic [ref=e428]:
+                                    - generic [ref=e430]: Lucas Gould
+                                    - img "Verified account" [ref=e433]
+                                - generic [ref=e437]:
+                                  - link "@lucascgould" [ref=e439]:
+                                    - /url: /lucascgould
+                                    - generic [ref=e440]: "@lucascgould"
+                                  - generic [ref=e441]: ·
+                                  - link "1 hour ago" [ref=e443]:
+                                    - /url: /lucascgould/status/2070286636588359839
+                                    - time [ref=e444]: 1h
+                              - generic [ref=e446]:
+                                - button "Grok actions" [ref=e448]:
+                                  - img [ref=e453]
+                                - button "More" [ref=e459]:
+                                  - img [ref=e463]
+                            - generic [ref=e467]: I must be missing something but there doesn’t seem to be parity yet in the tools Claude tag can have compared to native connectors? Happy to buy a seat for Claude tag in hex, Microsoft, docusign, qbo, etc but need it to be able to connect to it
+                            - group "1 reply, 246 views" [ref=e470]:
+                              - button "1 Reply. Reply" [ref=e472]:
+                                - generic [ref=e473]:
+                                  - img [ref=e476]
+                                  - generic [ref=e481]: "1"
+                              - button "0 reposts. Repost" [ref=e483]:
+                                - img [ref=e487]
+                              - button "0 Likes. Like" [ref=e494]:
+                                - img [ref=e498]
+                              - link "246 views. View post analytics" [ref=e505]:
+                                - /url: /lucascgould/status/2070286636588359839/analytics
+                                - generic [ref=e506]:
+                                  - img [ref=e509]
+                                  - generic [ref=e514]: "246"
+                              - button "Bookmark" [ref=e516]:
+                                - img [ref=e520]
+                              - button "Share post" [ref=e525]:
+                                - img [ref=e529]
+                      - article "Noah Zweben Verified account @noahzweben 1 hour ago You can connect all of those things via API. We have customers connecting all these things today. We connect anything with an API and support a bunch of different auth methods (bearer, server/server OAuth, OAuth JWT, body param auth etc etc) 1 reply, 1 like, 101 views" [ref=e535] [cursor=pointer]:
+                        - generic [ref=e543]:
+                          - link [ref=e555]:
+                            - /url: /noahzweben
+                          - generic [ref=e559]:
+                            - generic [ref=e561]:
+                              - generic [ref=e564]:
+                                - link "Noah Zweben Verified account" [ref=e567]:
+                                  - /url: /noahzweben
+                                  - generic [ref=e568]:
+                                    - generic [ref=e570]: Noah Zweben
+                                    - img "Verified account" [ref=e573]
+                                - generic [ref=e577]:
+                                  - link "@noahzweben" [ref=e579]:
+                                    - /url: /noahzweben
+                                    - generic [ref=e580]: "@noahzweben"
+                                  - generic [ref=e581]: ·
+                                  - link "1 hour ago" [ref=e583]:
+                                    - /url: /noahzweben/status/2070291757183697086
+                                    - time [ref=e584]: 1h
+                              - generic [ref=e586]:
+                                - button "Grok actions" [ref=e588]:
+                                  - img [ref=e593]
+                                - button "More" [ref=e599]:
+                                  - img [ref=e603]
+                            - generic [ref=e607]: You can connect all of those things via API. We have customers connecting all these things today. We connect anything with an API and support a bunch of different auth methods (bearer, server/server OAuth, OAuth JWT, body param auth etc etc)
+                            - group "1 reply, 1 like, 101 views" [ref=e610]:
+                              - button "1 Reply. Reply" [ref=e612]:
+                                - generic [ref=e613]:
+                                  - img [ref=e616]
+                                  - generic [ref=e621]: "1"
+                              - button "0 reposts. Repost" [ref=e623]:
+                                - img [ref=e627]
+                              - button "1 Like. Like" [ref=e634]:
+                                - generic [ref=e635]:
+                                  - img [ref=e638]
+                                  - generic [ref=e643]: "1"
+                              - link "101 views. View post analytics" [ref=e645]:
+                                - /url: /noahzweben/status/2070291757183697086/analytics
+                                - generic [ref=e646]:
+                                  - img [ref=e649]
+                                  - generic [ref=e654]: "101"
+                              - button "Bookmark" [ref=e656]:
+                                - img [ref=e660]
+                              - button "Share post" [ref=e665]:
+                                - img [ref=e669]
+                      - button "Show replies" [ref=e676] [cursor=pointer]:
+                        - generic [ref=e684]: Show replies
+                      - article "Koji Verified account @littleironwaltz 1 hour ago When is Claude Tag coming to individual users?" [ref=e688] [cursor=pointer]:
+                        - generic [ref=e694]:
+                          - link [ref=e706]:
+                            - /url: /littleironwaltz
+                          - generic [ref=e709]:
+                            - generic [ref=e711]:
+                              - generic [ref=e714]:
+                                - link "Koji Verified account" [ref=e717]:
+                                  - /url: /littleironwaltz
+                                  - generic [ref=e718]:
+                                    - generic [ref=e720]: Koji
+                                    - img "Verified account" [ref=e723]
+                                - generic [ref=e727]:
+                                  - link "@littleironwaltz" [ref=e729]:
+                                    - /url: /littleironwaltz
+                                    - generic [ref=e730]: "@littleironwaltz"
+                                  - generic [ref=e731]: ·
+                                  - link "1 hour ago" [ref=e733]:
+                                    - /url: /littleironwaltz/status/2070289816898736205
+                                    - time [ref=e734]: 1h
+                              - generic [ref=e736]:
+                                - button "Grok actions" [ref=e738]:
+                                  - img [ref=e743]
+                                - button "More" [ref=e749]:
+                                  - img [ref=e753]
+                            - generic [ref=e757]: When is Claude Tag coming to individual users?
+                            - group "47 views" [ref=e760]:
+                              - button "0 Replies. Reply" [ref=e762]:
+                                - img [ref=e766]
+                              - button "0 reposts. Repost" [ref=e773]:
+                                - img [ref=e777]
+                              - button "0 Likes. Like" [ref=e784]:
+                                - img [ref=e788]
+                              - link "47 views. View post analytics" [ref=e795]:
+                                - /url: /littleironwaltz/status/2070289816898736205/analytics
+                                - generic [ref=e796]:
+                                  - img [ref=e799]
+                                  - generic [ref=e804]: "47"
+                              - button "Bookmark" [ref=e806]:
+                                - img [ref=e810]
+                              - button "Share post" [ref=e815]:
+                                - img [ref=e819]
+                      - article "Payton Halas Verified account @PaytonHalas 58 minutes ago Forcing Claude tag to run on API costs makes everyone have to constantly think about whether tagging Claude is worth the api costs. If you want this to be adopted by knowledge workers, the costs need to be predictable 2 replies, 1 like, 46 views" [ref=e825] [cursor=pointer]:
+                        - generic [ref=e831]:
+                          - link [ref=e843]:
+                            - /url: /PaytonHalas
+                          - generic [ref=e846]:
+                            - generic [ref=e848]:
+                              - generic [ref=e851]:
+                                - link "Payton Halas Verified account" [ref=e854]:
+                                  - /url: /PaytonHalas
+                                  - generic [ref=e855]:
+                                    - generic [ref=e857]: Payton Halas
+                                    - img "Verified account" [ref=e860]
+                                - generic [ref=e864]:
+                                  - link "@PaytonHalas" [ref=e866]:
+                                    - /url: /PaytonHalas
+                                    - generic [ref=e867]: "@PaytonHalas"
+                                  - generic [ref=e868]: ·
+                                  - link "58 minutes ago" [ref=e870]:
+                                    - /url: /PaytonHalas/status/2070294493715116128
+                                    - time [ref=e871]: 58m
+                              - generic [ref=e873]:
+                                - button "Grok actions" [ref=e875]:
+                                  - img [ref=e880]
+                                - button "More" [ref=e886]:
+                                  - img [ref=e890]
+                            - generic [ref=e894]: Forcing Claude tag to run on API costs makes everyone have to constantly think about whether tagging Claude is worth the api costs. If you want this to be adopted by knowledge workers, the costs need to be predictable
+                            - group "2 replies, 1 like, 46 views" [ref=e897]:
+                              - button "2 Replies. Reply" [ref=e899]:
+                                - generic [ref=e900]:
+                                  - img [ref=e903]
+                                  - generic [ref=e908]: "2"
+                              - button "0 reposts. Repost" [ref=e910]:
+                                - img [ref=e914]
+                              - button "1 Like. Like" [ref=e921]:
+                                - generic [ref=e922]:
+                                  - img [ref=e925]
+                                  - generic [ref=e930]: "1"
+                              - link "46 views. View post analytics" [ref=e932]:
+                                - /url: /PaytonHalas/status/2070294493715116128/analytics
+                                - generic [ref=e933]:
+                                  - img [ref=e936]
+                                  - generic [ref=e941]: "46"
+                              - button "Bookmark" [ref=e943]:
+                                - img [ref=e947]
+                              - button "Share post" [ref=e952]:
+                                - img [ref=e956]
+                      - article "Mario Hernández Verified account @mariohernandez 1 hour ago Please free Claude Tag from slack! We want to use it on telegram or discord" [ref=e962] [cursor=pointer]:
+                        - generic [ref=e968]:
+                          - link [ref=e980]:
+                            - /url: /mariohernandez
+                          - generic [ref=e983]:
+                            - generic [ref=e985]:
+                              - generic [ref=e988]:
+                                - link "Mario Hernández Verified account" [ref=e991]:
+                                  - /url: /mariohernandez
+                                  - generic [ref=e992]:
+                                    - generic [ref=e994]: Mario Hernández
+                                    - img "Verified account" [ref=e997]
+                                - generic [ref=e1001]:
+                                  - link "@mariohernandez" [ref=e1003]:
+                                    - /url: /mariohernandez
+                                    - generic [ref=e1004]: "@mariohernandez"
+                                  - generic [ref=e1005]: ·
+                                  - link "1 hour ago" [ref=e1007]:
+                                    - /url: /mariohernandez/status/2070281250464555292
+                                    - time [ref=e1008]: 1h
+                              - generic [ref=e1010]:
+                                - button "Grok actions" [ref=e1012]:
+                                  - img [ref=e1017]
+                                - button "More" [ref=e1023]:
+                                  - img [ref=e1027]
+                            - generic [ref=e1031]: Please free Claude Tag from slack! We want to use it on telegram or discord
+                            - group "69 views" [ref=e1034]:
+                              - button "0 Replies. Reply" [ref=e1036]:
+                                - img [ref=e1040]
+                              - button "0 reposts. Repost" [ref=e1047]:
+                                - img [ref=e1051]
+                              - button "0 Likes. Like" [ref=e1058]:
+                                - img [ref=e1062]
+                              - link "69 views. View post analytics" [ref=e1069]:
+                                - /url: /mariohernandez/status/2070281250464555292/analytics
+                                - generic [ref=e1070]:
+                                  - img [ref=e1073]
+                                  - generic [ref=e1078]: "69"
+                              - button "Bookmark" [ref=e1080]:
+                                - img [ref=e1084]
+                              - button "Share post" [ref=e1089]:
+                                - img [ref=e1093]
+                      - generic [ref=e1099]:
+                        - heading "Discover more" [level=2] [ref=e1100]:
+                          - generic [ref=e1101]: Discover more
+                        - generic [ref=e1102]: Sourced from across X
+                      - article "ClaudeDevs Verified account @ClaudeDevs 4 hours ago Claude Tag is the next evolution of agents. It's a proactive, multiplayer agent with memory and identity, built on top of Claude Code. Learn more about how Claude Tag works and best practices for using it in this deep dive. Embedded video Play Video 98 replies, 98 reposts, 1094 likes, 700 bookmarks, 149786 views" [ref=e1106] [cursor=pointer]:
+                        - generic [ref=e1112]:
+                          - link [ref=e1124]:
+                            - /url: /ClaudeDevs
+                          - generic [ref=e1127]:
+                            - generic [ref=e1129]:
+                              - generic [ref=e1132]:
+                                - link "ClaudeDevs Verified account" [ref=e1135]:
+                                  - /url: /ClaudeDevs
+                                  - generic [ref=e1136]:
+                                    - generic [ref=e1138]: ClaudeDevs
+                                    - generic [ref=e1140]:
+                                      - img "Verified account" [ref=e1141]
+                                      - link [ref=e1144]
+                                - generic [ref=e1152]:
+                                  - link "@ClaudeDevs" [ref=e1154]:
+                                    - /url: /ClaudeDevs
+                                    - generic [ref=e1155]: "@ClaudeDevs"
+                                  - generic [ref=e1156]: ·
+                                  - link "4 hours ago" [ref=e1158]:
+                                    - /url: /ClaudeDevs/status/2070235730295865661
+                                    - time [ref=e1159]: 4h
+                              - generic [ref=e1161]:
+                                - button "Grok actions" [ref=e1163]:
+                                  - img [ref=e1168]
+                                - button "More" [ref=e1174]:
+                                  - img [ref=e1178]
+                            - generic [ref=e1182]: Claude Tag is the next evolution of agents. It's a proactive, multiplayer agent with memory and identity, built on top of Claude Code. Learn more about how Claude Tag works and best practices for using it in this deep dive.
+                            - generic [ref=e1199]:
+                              - generic "Embedded video" [ref=e1202]
+                              - button "Play Video" [ref=e1209]:
+                                - img [ref=e1210]
+                            - group "98 replies, 98 reposts, 1094 likes, 700 bookmarks, 149786 views" [ref=e1216]:
+                              - button "98 Replies. Reply" [ref=e1218]:
+                                - generic [ref=e1219]:
+                                  - img [ref=e1222]
+                                  - generic [ref=e1227]: "98"
+                              - button "98 reposts. Repost" [ref=e1229]:
+                                - generic [ref=e1230]:
+                                  - img [ref=e1233]
+                                  - generic [ref=e1238]: "98"
+                              - button "1094 Likes. Like" [ref=e1240]:
+                                - generic [ref=e1241]:
+                                  - img [ref=e1244]
+                                  - generic [ref=e1249]: 1K
+                              - link "149786 views. View post analytics" [ref=e1251]:
+                                - /url: /ClaudeDevs/status/2070235730295865661/analytics
+                                - generic [ref=e1252]:
+                                  - img [ref=e1255]
+                                  - generic [ref=e1260]: 149K
+                              - button "Bookmark" [ref=e1262]:
+                                - img [ref=e1266]
+                              - button "Share post" [ref=e1271]:
+                                - img [ref=e1275]
+                      - article "Anthropic Verified account @AnthropicAI 8 hours ago We're joining @raiseus_ai as a founding partner. RAISE US is a nonprofit coalition working to strengthen the American workforce through employer-led action, AI-enabled training, and policy innovation to support the transition to transformative AI. Quote RAISE US Verified account @raiseus_ai 9 hours ago Today, we're launching RAISE US. America has a technology strategy for AI. It doesn't have a people strategy yet. We're here to build one. RAISE US is co-chaired by @GinaRaimondo and Eric Holcomb. We're working with governors, employers, and educators to help workers train, 202 replies, 198 reposts, 2287 likes, 449 bookmarks, 418461 views" [ref=e1281] [cursor=pointer]:
+                        - generic [ref=e1287]:
+                          - link "Square profile picture" [ref=e1299]:
+                            - /url: /AnthropicAI
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic "Square profile picture":
+                                    - img "Square profile picture"
+                          - generic [ref=e1302]:
+                            - generic [ref=e1304]:
+                              - generic [ref=e1307]:
+                                - link "Anthropic Verified account" [ref=e1310]:
+                                  - /url: /AnthropicAI
+                                  - generic [ref=e1311]:
+                                    - generic [ref=e1313]: Anthropic
+                                    - img "Verified account" [ref=e1316]
+                                - generic [ref=e1323]:
+                                  - link "@AnthropicAI" [ref=e1325]:
+                                    - /url: /AnthropicAI
+                                    - generic [ref=e1326]: "@AnthropicAI"
+                                  - generic [ref=e1327]: ·
+                                  - link "8 hours ago" [ref=e1329]:
+                                    - /url: /AnthropicAI/status/2070183531612172697
+                                    - time [ref=e1330]: 8h
+                              - generic [ref=e1332]:
+                                - button "Grok actions" [ref=e1334]:
+                                  - img [ref=e1339]
+                                - button "More" [ref=e1345]:
+                                  - img [ref=e1349]
+                            - generic [ref=e1353]:
+                              - text: We're joining
+                              - link "@raiseus_ai" [ref=e1356]:
+                                - /url: /raiseus_ai
+                              - text: as a founding partner. RAISE US is a nonprofit coalition working to strengthen the American workforce through employer-led action, AI-enabled training, and policy innovation to support the transition to transformative AI.
+                            - generic "Quote RAISE US Verified account @raiseus_ai 9 hours ago Today, we're launching RAISE US. America has a technology strategy for AI. It doesn't have a people strategy yet. We're here to build one. RAISE US is co-chaired by @GinaRaimondo and Eric Holcomb. We're working with governors, employers, and educators to help workers train," [ref=e1357]:
+                              - generic [ref=e1358]:
+                                - generic [ref=e1359]: Quote
+                                - link "RAISE US Verified account @raiseus_ai 9 hours ago Today, we're launching RAISE US. America has a technology strategy for AI. It doesn't have a people strategy yet. We're here to build one. RAISE US is co-chaired by @GinaRaimondo and Eric Holcomb. We're working with governors, employers, and educators to help workers train," [ref=e1360]:
+                                  - generic [ref=e1361]:
+                                    - generic [ref=e1379]:
+                                      - generic [ref=e1383]:
+                                        - generic [ref=e1385]: RAISE US
+                                        - img "Verified account" [ref=e1388]
+                                      - generic [ref=e1392]:
+                                        - generic [ref=e1395]: "@raiseus_ai"
+                                        - generic [ref=e1396]: ·
+                                        - generic "9 hours ago" [ref=e1399]:
+                                          - time [ref=e1400]: 9h
+                                    - generic [ref=e1402]:
+                                      - text: Today, we're launching RAISE US. America has a technology strategy for AI. It doesn't have a people strategy yet. We're here to build one. RAISE US is co-chaired by
+                                      - generic [ref=e1403]: "@GinaRaimondo"
+                                      - text: and Eric Holcomb. We're working with governors, employers, and educators to help workers train,
+                            - group "202 replies, 198 reposts, 2287 likes, 449 bookmarks, 418461 views" [ref=e1406]:
+                              - button "202 Replies. Reply" [ref=e1408]:
+                                - generic [ref=e1409]:
+                                  - img [ref=e1412]
+                                  - generic [ref=e1417]: "202"
+                              - button "198 reposts. Repost" [ref=e1419]:
+                                - generic [ref=e1420]:
+                                  - img [ref=e1423]
+                                  - generic [ref=e1428]: "198"
+                              - button "2287 Likes. Like" [ref=e1430]:
+                                - generic [ref=e1431]:
+                                  - img [ref=e1434]
+                                  - generic [ref=e1439]: 2.2K
+                              - link "418461 views. View post analytics" [ref=e1441]:
+                                - /url: /AnthropicAI/status/2070183531612172697/analytics
+                                - generic [ref=e1442]:
+                                  - img [ref=e1445]
+                                  - generic [ref=e1450]: 418K
+                              - button "Bookmark" [ref=e1452]:
+                                - img [ref=e1456]
+                              - button "Share post" [ref=e1461]:
+                                - img [ref=e1465]
+                      - article "Logan Kilpatrick Verified account @OfficialLoganK 8 hours ago Gemma 4... intelligence for everyone on device! Embedded video Play Video 104 replies, 163 reposts, 2673 likes, 638 bookmarks, 193901 views" [ref=e1471] [cursor=pointer]:
+                        - generic [ref=e1477]:
+                          - link [ref=e1489]:
+                            - /url: /OfficialLoganK
+                          - generic [ref=e1492]:
+                            - generic [ref=e1494]:
+                              - generic [ref=e1497]:
+                                - link "Logan Kilpatrick Verified account" [ref=e1500]:
+                                  - /url: /OfficialLoganK
+                                  - generic [ref=e1501]:
+                                    - generic [ref=e1503]: Logan Kilpatrick
+                                    - generic [ref=e1505]:
+                                      - img "Verified account" [ref=e1506]
+                                      - link [ref=e1509]
+                                - generic [ref=e1517]:
+                                  - link "@OfficialLoganK" [ref=e1519]:
+                                    - /url: /OfficialLoganK
+                                    - generic [ref=e1520]: "@OfficialLoganK"
+                                  - generic [ref=e1521]: ·
+                                  - link "8 hours ago" [ref=e1523]:
+                                    - /url: /OfficialLoganK/status/2070181261772210449
+                                    - time [ref=e1524]: 8h
+                              - generic [ref=e1526]:
+                                - button "Grok actions" [ref=e1528]:
+                                  - img [ref=e1533]
+                                - button "More" [ref=e1539]:
+                                  - img [ref=e1543]
+                            - generic [ref=e1547]: Gemma 4... intelligence for everyone on device!
+                            - generic [ref=e1564]:
+                              - generic "Embedded video" [ref=e1567]
+                              - button "Play Video" [ref=e1574]:
+                                - img [ref=e1575]
+                            - group "104 replies, 163 reposts, 2673 likes, 638 bookmarks, 193901 views" [ref=e1581]:
+                              - button "104 Replies. Reply" [ref=e1583]:
+                                - generic [ref=e1584]:
+                                  - img [ref=e1587]
+                                  - generic [ref=e1592]: "104"
+                              - button "163 reposts. Repost" [ref=e1594]:
+                                - generic [ref=e1595]:
+                                  - img [ref=e1598]
+                                  - generic [ref=e1603]: "163"
+                              - button "2673 Likes. Like" [ref=e1605]:
+                                - generic [ref=e1606]:
+                                  - img [ref=e1609]
+                                  - generic [ref=e1614]: 2.6K
+                              - link "193901 views. View post analytics" [ref=e1616]:
+                                - /url: /OfficialLoganK/status/2070181261772210449/analytics
+                                - generic [ref=e1617]:
+                                  - img [ref=e1620]
+                                  - generic [ref=e1625]: 193K
+                              - button "Bookmark" [ref=e1627]:
+                                - img [ref=e1631]
+                              - button "Share post" [ref=e1636]:
+                                - img [ref=e1640]
+              - generic "Trending" [ref=e1647]:
+                - generic [ref=e1648]:
+                  - search "Search" [ref=e1653]:
+                    - generic [ref=e1658]:
+                      - img [ref=e1660]
+                      - combobox "Search query" [ref=e1665]
+                  - complementary "Relevant people" [ref=e1668]:
+                    - heading "Relevant people" [level=2] [ref=e1670]:
+                      - generic [ref=e1671]: Relevant people
+                    - list [ref=e1672]:
+                      - listitem [ref=e1673] [cursor=pointer]:
+                        - generic [ref=e1674]:
+                          - link [ref=e1684]:
+                            - /url: /noahzweben
+                          - generic [ref=e1687]:
+                            - generic [ref=e1688]:
+                              - generic [ref=e1690]:
+                                - link "Noah Zweben Verified account" [ref=e1692]:
+                                  - /url: /noahzweben
+                                  - generic [ref=e1693]:
+                                    - generic [ref=e1695]: Noah Zweben
+                                    - img "Verified account" [ref=e1698]
+                                - link "@noahzweben" [ref=e1703]:
+                                  - /url: /noahzweben
+                                  - generic [ref=e1705]: "@noahzweben"
+                              - button "Following @noahzweben" [ref=e1707]:
+                                - generic [ref=e1710]: Following
+                            - generic [ref=e1711]:
+                              - text: Claude Code PM
+                              - link "@anthropicai" [ref=e1714]:
+                                - /url: /anthropicai
+                  - region "Trending now" [ref=e1716]:
+                    - heading "Trending now" [level=1] [ref=e1717]
+                    - 'generic "Timeline: Trending now" [ref=e1718]':
+                      - generic [ref=e1719]:
+                        - generic [ref=e1723]:
+                          - button "Football" [ref=e1724] [cursor=pointer]:
+                            - paragraph [ref=e1726]: Football
+                          - generic [ref=e1727]:
+                            - button "🇹🇳 TUN 1 ⁦90+2'⁩ (+5') 3 🇳🇱 NED" [ref=e1729] [cursor=pointer]:
+                              - generic [ref=e1732]:
+                                - link "🇹🇳 TUN" [ref=e1733]:
+                                  - /url: https://x.com/FTF_OFFICIELLE
+                                  - generic [ref=e1734]:
+                                    - paragraph [ref=e1738]: 🇹🇳
+                                    - paragraph [ref=e1741]: TUN
+                                - paragraph [ref=e1743]: "1"
+                                - generic [ref=e1745]:
+                                  - paragraph [ref=e1749]: ⁦90+2'⁩
+                                  - paragraph [ref=e1754]: (+5')
+                                - paragraph [ref=e1756]: "3"
+                                - link "🇳🇱 NED" [ref=e1757]:
+                                  - /url: https://x.com/OnsOranje
+                                  - generic [ref=e1758]:
+                                    - paragraph [ref=e1762]: 🇳🇱
+                                    - paragraph [ref=e1765]: NED
+                            - button "🇵🇾 Paraguay 🇦🇺 Australia Today 2:00 AM" [ref=e1768] [cursor=pointer]:
+                              - generic [ref=e1769]:
+                                - generic [ref=e1770]:
+                                  - generic [ref=e1774]:
+                                    - paragraph [ref=e1777]: 🇵🇾
+                                    - paragraph [ref=e1779]: Paraguay
+                                  - generic [ref=e1783]:
+                                    - paragraph [ref=e1786]: 🇦🇺
+                                    - paragraph [ref=e1788]: Australia
+                                - generic [ref=e1790]:
+                                  - paragraph [ref=e1793]: Today
+                                  - generic [ref=e1795]: 2:00 AM
+                            - button "🇹🇷 Türkiye 🇺🇸 USA Today 2:00 AM" [ref=e1798] [cursor=pointer]:
+                              - generic [ref=e1799]:
+                                - generic [ref=e1800]:
+                                  - generic [ref=e1804]:
+                                    - paragraph [ref=e1807]: 🇹🇷
+                                    - paragraph [ref=e1809]: Türkiye
+                                  - generic [ref=e1813]:
+                                    - paragraph [ref=e1816]: 🇺🇸
+                                    - paragraph [ref=e1818]: USA
+                                - generic [ref=e1820]:
+                                  - paragraph [ref=e1823]: Today
+                                  - generic [ref=e1825]: 2:00 AM
+                          - button "Show more" [ref=e1826] [cursor=pointer]:
+                            - generic [ref=e1827]:
+                              - paragraph [ref=e1829]: Show more
+                              - img [ref=e1831]
+                        - heading "What’s happening" [level=2] [ref=e1836]:
+                          - generic [ref=e1837]: What’s happening
+                        - link "Let There Be Goals! Every score means more. Promoted by FanDuel Sportsbook More" [ref=e1840] [cursor=pointer]:
+                          - generic [ref=e1841]:
+                            - generic [ref=e1842]: Let There Be Goals!
+                            - generic [ref=e1843]: Every score means more.
+                            - generic [ref=e1845]:
+                              - img [ref=e1846]
+                              - generic [ref=e1849]: Promoted by FanDuel Sportsbook
+                            - button "More" [ref=e1852]:
+                              - img [ref=e1856]
+                        - link "Technology · Trending Adobe More" [ref=e1861] [cursor=pointer]:
+                          - generic [ref=e1862]:
+                            - generic [ref=e1864]: Technology · Trending
+                            - generic [ref=e1865]: Adobe
+                            - button "More" [ref=e1868]:
+                              - img [ref=e1872]
+                        - link "Business & finance · Trending Blockchain More" [ref=e1877] [cursor=pointer]:
+                          - generic [ref=e1878]:
+                            - generic [ref=e1880]: Business & finance · Trending
+                            - generic [ref=e1881]: Blockchain
+                            - button "More" [ref=e1884]:
+                              - img [ref=e1888]
+                        - link "Politics · Trending Tehran More" [ref=e1893] [cursor=pointer]:
+                          - generic [ref=e1894]:
+                            - generic [ref=e1896]: Politics · Trending
+                            - generic [ref=e1897]: Tehran
+                            - button "More" [ref=e1900]:
+                              - img [ref=e1904]
+                        - link "Show more" [ref=e1909] [cursor=pointer]:
+                          - /url: /explore/tabs/for-you
+                          - generic [ref=e1910]: Show more
+                  - navigation "Footer" [ref=e1912]:
+                    - generic [ref=e1913]:
+                      - link "Terms" [ref=e1914] [cursor=pointer]:
+                        - /url: https://x.com/tos
+                      - generic [ref=e1915]: ·
+                    - generic [ref=e1916]:
+                      - link "Privacy" [ref=e1917] [cursor=pointer]:
+                        - /url: https://x.com/privacy
+                      - generic [ref=e1918]: ·
+                    - generic [ref=e1919]:
+                      - link "Cookies" [ref=e1920] [cursor=pointer]:
+                        - /url: https://support.x.com/articles/20170514
+                      - generic [ref=e1921]: ·
+                    - generic [ref=e1922]:
+                      - link "Accessibility" [ref=e1923] [cursor=pointer]:
+                        - /url: https://help.x.com/resources/accessibility
+                      - generic [ref=e1924]: ·
+                    - generic [ref=e1925]:
+                      - link "Ads Info" [ref=e1926] [cursor=pointer]:
+                        - /url: https://business.x.com/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo
+                      - generic [ref=e1927]: ·
+                    - button "More" [ref=e1928] [cursor=pointer]:
+                      - generic [ref=e1929]:
+                        - text: More
+                        - img [ref=e1930]
+                    - generic [ref=e1933]: © 2026 X Corp.
+  - generic:
+    - img
+  - generic:
+    - img

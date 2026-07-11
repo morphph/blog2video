@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width:1080px; height:1920px; background:#0D0D1A; font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif; color:#FFFFFF; overflow:hidden; }
+    .slide { width:100%; height:100%; padding:200px 72px 420px 72px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+    .glow { position:absolute; top:280px; left:50%; transform:translateX(-50%); width:820px; height:820px; background:radial-gradient(circle, rgba(139,92,246,0.28) 0%, rgba(139,92,246,0) 70%); pointer-events:none; }
+    .kicker { font-size:30px; color:#8B5CF6; font-weight:700; letter-spacing:2px; margin-bottom:40px; position:relative; }
+    .title { font-size:92px; font-weight:800; line-height:1.18; position:relative; }
+    .title .em { color:#F59E0B; }
+    .cards { display:flex; gap:24px; margin-top:72px; width:100%; position:relative; }
+    .card { flex:1; background:#1A1A2E; border:1px solid rgba(139,92,246,0.35); border-left:4px solid #8B5CF6; border-radius:12px; padding:36px 24px; text-align:left; }
+    .card.g { border-left-color:#10B981; }
+    .card .num { font-size:66px; font-weight:800; color:#8B5CF6; line-height:1; }
+    .card.g .num { color:#10B981; font-size:56px; }
+    .card .lab { margin-top:16px; font-size:28px; color:#B0B0CC; line-height:1.35; }
+    .src { margin-top:64px; font-size:28px; color:#6B7280; position:relative; }
+    .src b { color:#B0B0CC; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="kicker">HOW TO START GOOGLE</div>
+    <div class="title">一晚上写完的项目<br>凭什么后来值<span class="em">一万亿</span>?</div>
+    <div class="cards">
+      <div class="card"><div class="num">4000+</div><div class="lab">Y Combinator<br>资助的创业公司</div></div>
+      <div class="card g"><div class="num">好点子<br>不稀缺</div><div class="lab">Paul Graham<br>的反直觉判断</div></div>
+    </div>
+    <div class="src">src · <b>How to Start Google</b> — Paul Graham</div>
+  </div>
+</body>
+</html>

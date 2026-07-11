@@ -1,0 +1,100 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 66.033,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_7.html",
+ "topbarIndex": "[07/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 1.34,
+   "text": "来看个真实的门。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.477,
+   "localDuration": 6.868,
+   "text": "20 世纪的美国大学,会印发一种纸质名录,把所有学生的名字、联系方式印在一起。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.345,
+   "localDuration": 6.163,
+   "text": "因为每个名字旁边配了张照片,大家管它叫 \"facebook\",人脸簿。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 14.653,
+   "localDuration": 4.171,
+   "text": "2002 年,Mark Zuckerberg 进了哈佛。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 18.824,
+   "localDuration": 3.574,
+   "text": "当时学校还没把这个 facebook 搬到网上。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.398,
+   "localDuration": 3.426,
+   "text": "每个宿舍楼有自己的在线名录,但全校范围的没有。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.824,
+   "localDuration": 5.064,
+   "text": "校方开了一次又一次的会讨论这事,照那个进度,可能再过十年都解决不了。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.033,
+   "localDuration": 3.824,
+   "text": "而大多数学生呢,压根没意识到这里有什么不对。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 35.029,
+   "localDuration": 2.314,
+   "text": "但 Mark 是个程序员。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 37.343,
+   "localDuration": 9.788,
+   "text": "他看着这情况就想:这也太蠢了,我一晚上就能写个程序修好它——让大家自己上传照片,把数据合并成一个全校的新网站。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 47.269,
+   "localDuration": 1.043,
+   "text": "他真做了。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 48.312,
+   "localDuration": 3.756,
+   "text": "几乎是一夜之间,几千个用户涌了进来。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 52.237,
+   "localDuration": 5.528,
+   "text": "但你注意,那个时候的 Facebook,还不是一家创业公司。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 57.765,
+   "localDuration": 1.658,
+   "text": "它只是个……项目。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 59.423,
+   "localDuration": 6.449,
+   "text": "所以你看,做项目不只是学技术的最好方式,它同时还是创业点子的最好来源。"
+  }
+ ]
+}

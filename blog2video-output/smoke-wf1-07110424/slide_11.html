@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      position: relative;
+    }
+    .item { width: 100%; background: #1A1A2E; border-radius: 12px; padding: 42px 40px; text-align: left; display: flex; align-items: center; gap: 30px; border: 1px solid rgba(139,92,246,0.2); border-left: 4px solid #10B981; margin-bottom: 40px; }
+    .item .n { font-size: 60px; font-weight: 800; color: #10B981; min-width: 90px; }
+    .item .body .en { font-size: 44px; font-weight: 800; color: #FFFFFF; }
+    .item .body .cn { font-size: 34px; color: #B0B0CC; margin-top: 6px; line-height: 1.36; }
+    .card { width: 100%; background: #1A1A2E; border-radius: 12px; padding: 40px 40px; text-align: left; border: 1px solid rgba(139,92,246,0.2); border-left: 4px solid #F59E0B; margin-bottom: 28px; }
+    .card .h { font-size: 34px; font-weight: 800; color: #F59E0B; margin-bottom: 14px; }
+    .card .d { font-size: 38px; line-height: 1.42; }
+    .scale { width: 100%; display: flex; gap: 24px; }
+    .scale .s { flex: 1; background: #1A1A2E; border-radius: 12px; padding: 28px 24px; text-align: center; border: 1px solid rgba(239,68,68,0.25); }
+    .scale .s .t { font-size: 30px; color: #EF4444; font-weight: 700; margin-bottom: 8px; }
+    .scale .s .d { font-size: 30px; color: #B0B0CC; line-height: 1.36; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="item"><div class="n">05</div><div class="body"><div class="en">Focus on a Goal</div><div class="cn">锚定一个目标 —— 前四样必须导向它</div></div></div>
+    <div class="card"><div class="h">判断力的妙处</div><div class="d">期望值相近时，选哪个归结为<b style="color:#F59E0B">个人偏好</b>——你爱的问题，往往真的更重要</div></div>
+    <div class="scale">
+      <div class="s"><div class="t">太具体</div><div class="d">错过旁边的伟大发现</div></div>
+      <div class="s"><div class="t">太宽泛</div><div class="d">推不动你</div></div>
+    </div>
+  </div>
+</body>
+</html>

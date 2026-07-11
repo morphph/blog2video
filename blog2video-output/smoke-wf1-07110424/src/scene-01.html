@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有(cover 多 beat)—— */
+[data-composition-id='s01'] .beat{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — hook */
+[data-composition-id='s01'] .a-tag{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.06em}
+[data-composition-id='s01'] .a-zh{margin-top:24px;font-weight:900;font-size:112px;line-height:1.08;color:#edebe6;display:flex;align-items:center}
+[data-composition-id='s01'] .a-chips{margin-top:54px;display:flex;flex-direction:column;gap:18px}
+[data-composition-id='s01'] .chip.bad{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s01'] .chip.bad .ci{color:#ff6b5e}
+
+/* beat B — the question */
+[data-composition-id='s01'] .b-q{font-weight:900;font-size:88px;line-height:1.16;color:#edebe6}
+[data-composition-id='s01'] .b-q .hl .tx{font-size:88px}
+[data-composition-id='s01'] .b-src{margin-top:50px;max-width:840px}
+[data-composition-id='s01'] .b-src .bs-k{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-src .bs-t{margin-top:16px;font-weight:600;font-size:44px;line-height:1.35;color:#edebe6}
+[data-composition-id='s01'] .b-src .bs-t .em{color:#ccff4d}
+
+/* beat C — persistence vs obstinacy */
+[data-composition-id='s01'] .c-kick{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.06em;margin-bottom:36px}
+[data-composition-id='s01'] .col.bad{border-color:rgba(255,107,94,.4)}
+[data-composition-id='s01'] .col.bad .ch{color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="37.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[01/12]</div>
+    </div>
+
+    <!-- BEAT A: hook -->
+    <div class="beat" id="beatA">
+      <div class="a-tag">// EVERYONE KNOWS ONE</div>
+      <div class="a-zh">死不放弃的人<span class="cur"></span></div>
+      <div class="a-chips">
+        <div class="chip chipA"><span class="ci">+</span><span class="ct">你佩服：觉得他有决心</span></div>
+        <div class="chip bad chipB"><span class="ci">!</span><span class="ct">你头疼：觉得他就是轴</span></div>
+      </div>
+    </div>
+
+    <!-- BEAT B: the question -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-q">坚持 和 固执，<br>到底<span class="hl"><span class="bar"></span><span class="tx">差在哪？</span></span></div>
+      <div class="b-src bracket">
+        <div class="bs-k">PAUL GRAHAM · ESSAY</div>
+        <div class="bs-t">连他自己，也<span class="em">想了很久</span></div>
+      </div>
+    </div>
+
+    <!-- BEAT C: persistence vs obstinacy -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-kick">// HOW WE USUALLY PUT IT</div>
+      <div class="cols">
+        <div class="col cL">
+          <div class="ch">PERSISTENCE</div>
+          <div class="it"><div class="nm">持久的坚持</div><div class="ds">行不通也不气馁，一直试</div></div>
+          <div class="it it2"><div class="nm">找到走得通的路</div></div>
+        </div>
+        <div class="col bad cR">
+          <div class="ch">OBSTINACY</div>
+          <div class="it"><div class="nm">纯粹的固执</div><div class="ds">失败的配方，烦得很</div></div>
+          <div class="it it2"><div class="nm">一头撞墙，毫无进展</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.852" data-track-index="5"><div class="sub-inner">你身边一定有那种<span class="sub-k">死不放弃</span>的人。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.852" data-duration="4.945" data-track-index="5"><div class="sub-inner">有的你佩服，觉得他有决心；有的你头疼，觉得他<span class="sub-k">就是轴</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.797" data-duration="4.944" data-track-index="5"><div class="sub-inner">可如果我问你，坚持和固执到底<span class="sub-k">差在哪</span>，你多半答不上来。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.888" data-duration="5.566" data-track-index="5"><div class="sub-inner">这是 <span class="sub-k">Paul Graham</span> 的一篇随笔，他一上来就承认，这个区别自己也想了很久。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.612" data-duration="11.928" data-track-index="5"><div class="sub-inner">我们通常这么说：成功的人有 <span class="sub-k">persistence</span>，也就是持久的坚持，新想法一开始行不通，他不气馁，一直试，最后找到能走通的路。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.74" data-duration="6.936" data-track-index="5"><div class="sub-inner">而纯粹的固执呢，是<span class="sub-k">失败的配方</span>——那种人烦得很，一头撞墙，毫无进展。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 – ~7.6) */
+    D2.enter(tl, R+'.a-tag', 0.4, {y:-12,ease:'power2.out'});
+    D2.enter(tl, R+'.a-zh', 0.6, {x:-32,d:.42,ease:'expo.out'});
+    D2.blink(tl, R+'.a-zh .cur', 1.6, 4);
+    D2.enter(tl, R+'.chipA', 2.95, {x:-24,ease:'power3.out'});
+    D2.enter(tl, R+'.chipB', 4.2, {x:-24,ease:'power2.out'});
+    tl.to(R+'#beatA',{scale:1.02,duration:7.6,ease:'none'},0);
+
+    /* A -> B swap @ 7.7 */
+    tl.to(R+'#beatA',{opacity:0,duration:.42,ease:'power2.inOut'},7.4);
+    tl.set(R+'#beatB',{opacity:1},7.72);
+    D2.enter(tl, R+'.b-q', 7.95, {y:24,d:.42,ease:'power3.out'});
+    D2.sweep(tl, R, '.hl', 10.2);
+    D2.enter(tl, R+'.b-src', 13.0, {y:20,d:.4,ease:'expo.out'});
+    tl.to(R+'#beatB',{scale:1.02,duration:10.9,ease:'none'},7.72);
+
+    /* B -> C swap @ 18.6 */
+    tl.to(R+'#beatB',{opacity:0,duration:.42,ease:'power2.inOut'},18.2);
+    tl.set(R+'#beatC',{opacity:1},18.6);
+    D2.enter(tl, R+'.c-kick', 18.75, {y:-12,ease:'power2.out'});
+    D2.enter(tl, R+'.cL', 19.15, {y:26,d:.42,ease:'power3.out'});
+    D2.enter(tl, R+'.cL .it2', 25.2, {y:16,ease:'power2.out'});
+    D2.enter(tl, R+'.cR', 30.95, {y:26,d:.42,ease:'expo.out'});
+    D2.enter(tl, R+'.cR .it2', 33.4, {y:16,ease:'power2.out'});
+    tl.to(R+'#beatC',{scale:1.02,duration:19.2,ease:'none'},18.6);
+
+    /* subtitles (local time, 0.2s fade) */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.852],['#sub-3',7.797],['#sub-4',12.888],['#sub-5',18.612],['#sub-6',30.74]]
+      .map(function(s){return [R+s[0],s[1]];}));
+
+    window.__timelines['s01']=tl;
+  })();
+  </script>
+</body>
+</html>

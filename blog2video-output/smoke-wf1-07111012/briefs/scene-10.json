@@ -1,0 +1,70 @@
+{
+ "scene": 10,
+ "id": "s10",
+ "type": "image",
+ "dataDuration": 61.167,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_10.html",
+ "topbarIndex": "[10/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.395,
+   "text": "所以最好的创业公司,恰恰长自那些没打算成为创业公司的项目。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.39,
+   "localDuration": 5.209,
+   "text": "你不是在努力创业,你只是在跟随自己对\"什么有趣\"的直觉。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.759,
+   "localDuration": 12.183,
+   "text": "这一点对年轻人极其关键:如果你年轻、又擅长技术,那么你潜意识里对\"什么有趣\"的直觉,比你脑子里刻意想的\"什么是好公司\",要准得多。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 23.107,
+   "localDuration": 5.227,
+   "text": "所以年轻创始人该做什么?为你自己、为你的朋友造东西用。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 28.334,
+   "localDuration": 5.807,
+   "text": "年轻创始人犯的最大错误,是为某个神秘的\"其他人\"群体造东西。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 34.303,
+   "localDuration": 12.265,
+   "text": "如果你能造出一个你和朋友真正想用的东西——不是出于讲义气才用,而是你一旦把它关掉,他们会真的难过——那你几乎肯定,握住了一个好点子的种子。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 46.723,
+   "localDuration": 4.282,
+   "text": "它可能看起来不像创业,可能你都想不清楚怎么赚钱。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 51.005,
+   "localDuration": 2.319,
+   "text": "但相信我,赚钱有的是办法。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 53.324,
+   "localDuration": 6.066,
+   "text": "你在点子里真正需要的、也是全部需要的,就是你朋友真心想要的那个东西。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 59.39,
+   "localDuration": 1.606,
+   "text": "到处都是卡住的门。"
+  }
+ ]
+}

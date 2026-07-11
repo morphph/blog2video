@@ -1,0 +1,94 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 66.633,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_2.html",
+ "topbarIndex": "[02/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 2.152,
+   "text": "先从最普遍的一个陷阱说起。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.311,
+   "localDuration": 2.881,
+   "text": "过去几年，模型能力跳得太快了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.192,
+   "localDuration": 10.37,
+   "text": "很多工程师和研究员开始有一种感觉：技术突破本身就证明了价值，就像 ChatGPT 把研究成果直接变成了产品。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.703,
+   "localDuration": 1.467,
+   "text": "但那是一个神话。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 17.323,
+   "localDuration": 4.633,
+   "text": "ChatGPT 底层的模型，在产品发布之前就存在很久了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.956,
+   "localDuration": 3.971,
+   "text": "真正让它成为现象级产品的，是那个最普通的聊天框。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 25.927,
+   "localDuration": 5.46,
+   "text": "而且就算这样，Sam Altman 自己说，早期留存\"惨不忍睹\"。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 31.543,
+   "localDuration": 1.641,
+   "text": "他们也犯过同样的错。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 33.343,
+   "localDuration": 9.97,
+   "text": "Minecraft Agent 项目里，他们做到了一件很酷的事：多个 Agent 协作，能一起造出三百多种物品，还能建钻石镐。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 43.313,
+   "localDuration": 4.431,
+   "text": "登上了 X 和 Hacker News，获得了很多关注。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 47.887,
+   "localDuration": 5.949,
+   "text": "但他们始终没搞清楚一件事：这个能力，解决了哪个真实玩家的什么真实问题？"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 54.007,
+   "localDuration": 1.541,
+   "text": "关注不是需求。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 55.548,
+   "localDuration": 1.981,
+   "text": "技术壮举不是产品。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 57.679,
+   "localDuration": 8.816,
+   "text": "中间那步翻译工作——搞清楚是谁的问题、他们怎么用——才是全部的工作，不是注脚。"
+  }
+ ]
+}

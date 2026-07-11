@@ -1,0 +1,64 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "image",
+ "dataDuration": 44.2,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_2.html",
+ "topbarIndex": "[02/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 1.927,
+   "text": "先纠正一个误会。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.932,
+   "localDuration": 4.336,
+   "text": "很多人以为创业是为了少干活、图轻松。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.268,
+   "localDuration": 2.89,
+   "text": "完全相反,创业只会更累。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.329,
+   "localDuration": 6.516,
+   "text": "那图什么?说得直白点:创业逃避的不是工作本身,是被老板指挥的那种烦。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.845,
+   "localDuration": 5.749,
+   "text": "做别人交代的项目,和做你自己的项目,兴奋程度完全不是一回事。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.749,
+   "localDuration": 7.655,
+   "text": "而且顺带一提,几乎所有富豪榜上的人,都是靠创办自己的公司致富的,不是靠打工。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.561,
+   "localDuration": 2.715,
+   "text": "不过要说明,创业是一整条光谱。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.276,
+   "localDuration": 4.345,
+   "text": "一端是开一家理发店,另一端是创办 Google。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.621,
+   "localDuration": 7.422,
+   "text": "今天我们只聊 Google 这一端——年轻的时候,它有个名字,叫 startup。"
+  }
+ ]
+}

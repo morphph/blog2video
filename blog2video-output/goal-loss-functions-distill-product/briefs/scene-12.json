@@ -1,0 +1,70 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 58,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_12.html",
+ "topbarIndex": "[12/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 2.152,
+   "text": "于是有意思的推论来了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.309,
+   "localDuration": 4.381,
+   "text": "只要存在信息对称，执行的成本就会塌缩到接近零。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.69,
+   "localDuration": 8.952,
+   "text": "输出是公开的，所有人都看得见\"好\"长什么样，那任何人都能在一个周末，花四十美元，把它蒸馏回来。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.809,
+   "localDuration": 3.441,
+   "text": "所以新的护城河，是信息不对称。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.409,
+   "localDuration": 1.825,
+   "text": "有个标志性的例子。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.234,
+   "localDuration": 10.95,
+   "text": "那个把\"开源\"当作全部身份的公司，cal.com，五百万美元年收入，在二零二六年四月，把生产代码转成了闭源。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 32.333,
+   "localDuration": 7.314,
+   "text": "理由很直接：在一个 AI 驱动的安全威胁时代，你不能把源码放在一个 Agent 能读到的地方。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 39.647,
+   "localDuration": 7.47,
+   "text": "你想想——/goal，读 cal.com 的源码，把它的攻击面挨个枚举，直到找到一个能打进去的。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 47.273,
+   "localDuration": 3.174,
+   "text": "这种攻击太危险，又太容易执行。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 50.585,
+   "localDuration": 7.272,
+   "text": "一家把开源刻进骨子里的公司，在二零二六年决定：开放，已经变成了一种负债。"
+  }
+ ]
+}

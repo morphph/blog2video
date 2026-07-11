@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有(cta 尾卡:大 logo + 副标 + 酸性光标)—— */
+[data-composition-id='s13'] .content{align-items:center;text-align:center}
+[data-composition-id='s13'] .logo{font-family:'MiSans',sans-serif;font-weight:900;font-size:156px;line-height:1;color:#edebe6;letter-spacing:.01em}
+[data-composition-id='s13'] .logo .ai{color:#ccff4d}
+[data-composition-id='s13'] .subtitle{margin-top:44px;font-family:'JetBrains Mono',monospace;font-size:34px;color:#8a8a85;letter-spacing:.08em;display:flex;align-items:center;justify-content:center;flex-wrap:wrap}
+[data-composition-id='s13'] .subtitle .done{color:#edebe6;margin-left:2px}
+[data-composition-id='s13'] .signoff{margin-top:56px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+
+    <div class="content">
+      <div class="logo">精读<span class="ai">AI</span></div>
+      <div class="subtitle">THE RIGHT KIND OF STUBBORN&nbsp;·&nbsp;<span class="done">完</span><span class="cur sm"></span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读一篇 · 我们下期再见</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    D2.enter(tl, R+'.logo', .35, {y:26, d:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.subtitle', 1.05, {y:14, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 1.7, {y:12, d:.34, ease:'power2.out'});
+    D2.blink(tl, R+'.cur', 2.1, 3);
+    D2.breath(tl, R+'.content', 5, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

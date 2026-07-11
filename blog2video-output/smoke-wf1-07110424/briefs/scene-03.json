@@ -1,0 +1,76 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 50.867,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_3.html",
+ "topbarIndex": "[03/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 5.59,
+   "text": "作者跟很多有决心的人聊过，他的结论是：真的不一样。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.602,
+   "localDuration": 3.354,
+   "text": "而且差别不在对错，在于听不听。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 9.12,
+   "localDuration": 3.929,
+   "text": "固执的人烦，不只因为他错，而是他不听。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.049,
+   "localDuration": 6.616,
+   "text": "你给他指出问题，他眼神就呆滞了，回答起来像个意识形态者在背教条。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 19.665,
+   "localDuration": 2.068,
+   "text": "有决心的人恰恰相反。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.9,
+   "localDuration": 7.91,
+   "text": "他举了 Collison 兄弟，就是 Stripe 的两位创始人，说这是他见过最有决心的人。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.81,
+   "localDuration": 5.331,
+   "text": "你给他们指出问题，他们不但听，而且以一种近乎捕食者的强度在听。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 35.141,
+   "localDuration": 1.032,
+   "text": "船底有洞吗？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.373,
+   "localDuration": 3.569,
+   "text": "大概没有，但万一有，他们非知道不可。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 40.08,
+   "localDuration": 7.235,
+   "text": "这是个特别反直觉的观察：真正有决心的人，在你反对他的那一刻，反而最投入。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 47.315,
+   "localDuration": 3.416,
+   "text": "固执的人，正是在这一刻关上了耳朵。"
+  }
+ ]
+}

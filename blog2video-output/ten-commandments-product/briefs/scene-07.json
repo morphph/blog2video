@@ -1,0 +1,94 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "summary",
+ "dataDuration": 71.067,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_7.html",
+ "topbarIndex": "[07/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 7.748,
+   "text": "这十条诫命背后只有一个共同的敌人：所有让你感觉在前进、但实际上在回避第一手现实的东西。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.936,
+   "localDuration": 2.158,
+   "text": "读日志而不是看用户。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.094,
+   "localDuration": 2.374,
+   "text": "用自己的品味认证市场。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.468,
+   "localDuration": 3.021,
+   "text": "让 AI 搭好架构再找客户。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.489,
+   "localDuration": 2.157,
+   "text": "用代码行数衡量进展。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.8,
+   "localDuration": 5.832,
+   "text": "这些动作以前就存在，只是当时代价够大，你不太容易沉迷其中。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 23.632,
+   "localDuration": 10.659,
+   "text": "现在 AI 把建造成本降到了接近零，所有这些逃避手段都披上了\"效率\"和\"生产力\"的外衣，变得几乎无法识别。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 34.432,
+   "localDuration": 4.033,
+   "text": "文章结尾有一句话，我觉得是这篇文章的核心："
+  },
+  {
+   "id": "sub-9",
+   "localStart": 38.608,
+   "localDuration": 4.128,
+   "text": "AI 自动化了那部分从来都不是真正难点的工作。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 42.736,
+   "localDuration": 7.719,
+   "text": "真正难的那部分——判断你是为谁做的、他们需要什么、他们会不会回来付钱——这些还是你的。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 50.596,
+   "localDuration": 10.047,
+   "text": "所以下次当你发现自己在想\"再搭好这个架构就去找用户\"，或者\"再加这个功能就发布\"——那个念头本身就是信号。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 60.784,
+   "localDuration": 3.824,
+   "text": "去找一个真实的人，坐在他旁边，看他怎么用。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 64.78,
+   "localDuration": 3.908,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 68.688,
+   "localDuration": 1.367,
+   "text": "我们下期再见。"
+  }
+ ]
+}

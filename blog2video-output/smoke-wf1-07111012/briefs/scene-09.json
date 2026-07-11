@@ -1,0 +1,46 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 25.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_9.html",
+ "topbarIndex": "[09/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.005,
+   "localDuration": 3.093,
+   "text": "这里藏着整篇文章最反直觉的一句判断。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.245,
+   "localDuration": 4.574,
+   "text": "事后看,把重要的网页排前面,显然是个好主意。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.819,
+   "localDuration": 2.704,
+   "text": "但在当时,它一点都不明显。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.523,
+   "localDuration": 3.326,
+   "text": "而且我要强调——它永远不会明显。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.009,
+   "localDuration": 8.018,
+   "text": "你想,如果创办 Apple、Google、Facebook 在当时是明摆着的好生意,那早就被别人抢着做了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 22.027,
+   "localDuration": 3.782,
+   "text": "正因为它们看起来不像好生意,才轮得到这几个年轻人。"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 37.433,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/ten-commandments-product/slide_1.html",
+ "topbarIndex": "[01/7]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 8.689,
+   "text": "你有没有见过那种创业团队——代码写得飞快，每天几千行，架构也很漂亮，但就是找不到用户？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.856,
+   "localDuration": 5.716,
+   "text": "这篇文章的作者 Feitong Yang，是一家 AI Agent 创业公司的创始工程师。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.572,
+   "localDuration": 8.638,
+   "text": "他们做过三个产品：Minecraft 里的 AI 队友、通用桌面 Agent、还有一个叫 Shortcut 的 Excel 协作 AI。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 23.364,
+   "localDuration": 4.242,
+   "text": "他亲眼看着前两个失败，第三个才勉强找到感觉。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 27.756,
+   "localDuration": 3.327,
+   "text": "他把这三次经历提炼成十条诫命。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 31.083,
+   "localDuration": 2.883,
+   "text": "不是成功秘诀，是失败教训。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 33.966,
+   "localDuration": 3.326,
+   "text": "我把里面最重要的几条拆给你看。"
+  }
+ ]
+}

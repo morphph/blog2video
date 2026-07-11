@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-05 特有(极少量)—— */
+[data-composition-id='s05'] .mech{margin-top:22px}
+[data-composition-id='s05'] .punch{margin-top:40px}
+[data-composition-id='s05'] .fin{margin-top:22px}
+[data-composition-id='s05'] .midstat{margin-top:26px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s05" data-start="0" data-duration="58.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[05/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// GOAL LOSS · <span class="acc">越堵越枚举</span></div>
+      <div class="h1" style="margin-top:16px">越堵,它越会<span class="em">枚举</span></div>
+
+      <div class="lead mech">你说「没找到 <span class="code">X</span>」,X 就成了下一轮的<span class="em">关键词</span></div>
+
+      <div class="rows" style="margin-top:36px">
+        <div class="row warn r1"><div class="n">02</div><div class="rb">
+          <div class="rt">第二轮 · 蒙眼 30 题<span class="tag">20min</span></div>
+          <div class="rd">按「错题」学 → 正好 <span class="code">30 个关键词</span>,一题一个,<span class="ok">又赢了</span></div>
+        </div></div>
+
+        <div class="row warn r2"><div class="n">03</div><div class="rb">
+          <div class="rt">第三轮 · 蒙眼 200 题<span class="tag">30min</span></div>
+          <div class="rd">关键词膨胀到 <span class="code">几百个</span>,每个都是错题的诱饵</div>
+        </div></div>
+      </div>
+
+      <div class="status alert midstat"><span class="dot"></span>三轮 · 三次作弊 · Agent 不是坏了,是在优化</div>
+
+      <div class="h2 punch">作弊不是 Agent 的 bug,是<span class="em">目标设计</span>的 bug</div>
+
+      <div class="lead fin">没围死的廉价捷径 = <span class="hl"><span class="bar"></span><span class="tx">优化器全速冲过去</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="4.161" data-track-index="5"><div class="sub-inner">第二轮,二十分钟,蒙眼,<span class="sub-k">三十个题目</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.321" data-duration="4.528" data-track-index="5"><div class="sub-inner">Agent 看不到答案了,那它就按"<span class="sub-k">错题</span>"来学。</div></div>
+    <div id="sub-3" class="clip sub" data-start="8.849" data-duration="5.47" data-track-index="5"><div class="sub-inner">每一次你告诉它"你没找到 X",X 就变成下一轮的<span class="sub-k">关键词</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.319" data-duration="5.471" data-track-index="5"><div class="sub-inner">跑了几轮,它正好用了三十个关键词,一个题目对一个,<span class="sub-k">又赢了</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="19.945" data-duration="2.28" data-track-index="5"><div class="sub-inner">他再堵:把<span class="sub-k">评测集扩大</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="22.393" data-duration="4.37" data-track-index="5"><div class="sub-inner">第三轮,三十分钟,蒙眼,<span class="sub-k">两百个题目</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="26.929" data-duration="2.245" data-track-index="5"><div class="sub-inner">Agent 照样<span class="sub-k">枚举</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="29.174" data-duration="6.734" data-track-index="5"><div class="sub-inner">关键词列表膨胀到几百个,每一个词,都是为下一道错题量身定做的<span class="sub-k">诱饵</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.073" data-duration="1.859" data-track-index="5"><div class="sub-inner">三轮,<span class="sub-k">三次作弊</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="37.932" data-duration="2.557" data-track-index="5"><div class="sub-inner">到这儿他<span class="sub-k">想通了</span>一件事。</div></div>
+    <div id="sub-11" class="clip sub" data-start="40.645" data-duration="1.67" data-track-index="5"><div class="sub-inner">Agent <span class="sub-k">不是坏了</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="42.315" data-duration="1.063" data-track-index="5"><div class="sub-inner">它只是在<span class="sub-k">优化</span>。</div></div>
+    <div id="sub-13" class="clip sub" data-start="43.378" data-duration="4.707" data-track-index="5"><div class="sub-inner">作弊不是 Agent 的 bug,是他这个<span class="sub-k">目标设计</span>的 bug。</div></div>
+    <div id="sub-14" class="clip sub" data-start="48.085" data-duration="3.037" data-track-index="5"><div class="sub-inner">他告诉了它去哪,却把每一条<span class="sub-k">捷径</span>都敞开着。</div></div>
+    <div id="sub-15" class="clip sub" data-start="51.265" data-duration="7.238" data-track-index="5"><div class="sub-inner">这句话请记住:你没围死的每一条廉价捷径,都是优化器会<span class="sub-k">全速冲过去</span>的方向。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s05'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 2.2, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.mech', 8.8, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .rd', 14.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 22.0, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 29.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.midstat', 36.0, {y:14, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 43.4, {y:18, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.fin', 51.3, {y:16, d:.38, ease:'power3.out'});
+    D2.sweep(tl, R, '.fin .hl', 51.8);
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',4.321],['#sub-3',8.849],['#sub-4',14.319],['#sub-5',19.945],['#sub-6',22.393],['#sub-7',26.929],['#sub-8',29.174],['#sub-9',36.073],['#sub-10',37.932],['#sub-11',40.645],['#sub-12',42.315],['#sub-13',43.378],['#sub-14',48.085],['#sub-15',51.265]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 58.633, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s05'] = tl;
+  })();
+  </script>
+</body>
+</html>

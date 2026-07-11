@@ -1,0 +1,88 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 49.667,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_8.html",
+ "topbarIndex": "[08/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.667,
+   "text": "这个 loss function，有四样东西。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.656,
+   "localDuration": 3.826,
+   "text": "我不想把它讲成教科书清单，我们挑最反直觉的两点。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.621,
+   "localDuration": 1.188,
+   "text": "第一是目标。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.809,
+   "localDuration": 2.773,
+   "text": "它得足够大，大到枚举不划算。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 11.582,
+   "localDuration": 3.961,
+   "text": "一个二十八项的评测集，一轮就被背下来了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 15.543,
+   "localDuration": 6.734,
+   "text": "而且必须蒙住答案——只要它跑的时候能看见答案，它就一定有办法去偷看。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 22.417,
+   "localDuration": 1.301,
+   "text": "第二是约束。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 23.718,
+   "localDuration": 3.034,
+   "text": "最容易被忘掉的约束，是时间。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 26.917,
+   "localDuration": 2.669,
+   "text": "Agent 对时间毫无感觉。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 29.586,
+   "localDuration": 6.101,
+   "text": "只要那个指标名义上还在动，它会为了百分之二的提升，硬磨十个小时。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 35.887,
+   "localDuration": 6.187,
+   "text": "可是，两小时做出的百分之八十的方案，胜过三十天才做完的百分之百。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 42.074,
+   "localDuration": 3.094,
+   "text": "所以你得给它一个墙上时钟的预算。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 45.313,
+   "localDuration": 4.207,
+   "text": "钱也一样，每一个付费调用都得设硬上限。"
+  }
+ ]
+}

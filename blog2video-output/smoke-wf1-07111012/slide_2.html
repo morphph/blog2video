@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width:1080px; height:1920px; background:#0D0D1A; font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif; color:#FFFFFF; overflow:hidden; }
+    .slide { width:100%; height:100%; padding:200px 72px 420px 72px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+    .head { font-size:52px; font-weight:800; line-height:1.3; margin-bottom:56px; }
+    .head .em { color:#EF4444; }
+    .row { display:flex; gap:24px; width:100%; align-items:stretch; }
+    .card { flex:1; background:#1A1A2E; border-radius:12px; padding:36px 28px; text-align:left; }
+    .card.wrong { border:1px solid rgba(239,68,68,0.4); border-left:4px solid #EF4444; }
+    .card.right { border:1px solid rgba(16,185,129,0.4); border-left:4px solid #10B981; }
+    .card .tag { font-size:28px; font-weight:700; margin-bottom:16px; }
+    .card.wrong .tag { color:#EF4444; }
+    .card.right .tag { color:#10B981; }
+    .card .txt { font-size:32px; color:#FFFFFF; line-height:1.4; }
+    .spectrum { margin-top:56px; width:100%; background:#1A1A2E; border:1px solid rgba(139,92,246,0.25); border-radius:12px; padding:32px 28px; }
+    .spectrum .lab { font-size:26px; color:#6B7280; margin-bottom:20px; }
+    .spectrum .ends { display:flex; justify-content:space-between; align-items:center; font-size:34px; font-weight:700; }
+    .spectrum .l { color:#B0B0CC; }
+    .spectrum .r { color:#8B5CF6; }
+    .spectrum .arrow { flex:1; height:2px; background:linear-gradient(90deg,#6B7280,#8B5CF6); margin:0 24px; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="head">创业不是为了<span class="em">轻松</span></div>
+    <div class="row">
+      <div class="card wrong"><div class="tag">误会</div><div class="txt">创业 = 少干活、图轻松</div></div>
+      <div class="card right"><div class="tag">真相</div><div class="txt">只会更累,逃的是被<b>老板指挥</b></div></div>
+    </div>
+    <div class="spectrum">
+      <div class="lab">创业是一整条光谱</div>
+      <div class="ends"><span class="l">理发店</span><span class="arrow"></span><span class="r">Google · startup</span></div>
+    </div>
+  </div>
+</body>
+</html>

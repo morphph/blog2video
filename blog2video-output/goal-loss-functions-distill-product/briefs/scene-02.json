@@ -1,0 +1,100 @@
+{
+ "scene": 2,
+ "id": "s02",
+ "type": "principle",
+ "dataDuration": 64.133,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_2.html",
+ "topbarIndex": "[02/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 1.467,
+   "text": "先泼一盆冷水。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.633,
+   "localDuration": 5.754,
+   "text": "很多人以为 /goal 的魔力，就是\"无人值守，自己写代码\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 7.387,
+   "localDuration": 2.412,
+   "text": "指个方向，走人，回来收货。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 9.949,
+   "localDuration": 5.436,
+   "text": "可 Elvis 说，顶级的 Agent 工程师，六个月前就已经能做到这件事了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.385,
+   "localDuration": 3.763,
+   "text": "那时候 GPT-5.2 和 Opus 4.5 刚出来。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 19.148,
+   "localDuration": 2.09,
+   "text": "他们靠的根本不是 /goal。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 21.397,
+   "localDuration": 1.305,
+   "text": "靠的是两样东西。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 22.702,
+   "localDuration": 7.506,
+   "text": "第一，harness engineering，就是给 Agent 搭一套能观察问题的脚手架。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 30.208,
+   "localDuration": 4.568,
+   "text": "第二，写一份足够紧的 spec，把所有测试用例都写进去。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 34.976,
+   "localDuration": 4.498,
+   "text": "然后让 Codex 或者 Claude Code 自己循环，直到每一条都过。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 39.613,
+   "localDuration": 1.709,
+   "text": "他自己就经常这么干。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 41.322,
+   "localDuration": 2.563,
+   "text": "晚上开一个任务，跑两到五小时。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 43.885,
+   "localDuration": 10.593,
+   "text": "今年四月，有一次就是这样，一个任务啃掉了他们 Vercel 大仓库里一个 Turbo 构建缓存的 bug，早上起来，全绿了。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 54.625,
+   "localDuration": 3.267,
+   "text": "你看，这里面一个 /goal 都没用到。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 58.045,
+   "localDuration": 5.914,
+   "text": "所以真正的问题来了：既然挂机跑代码不需要 /goal，那 /goal 到底是干嘛的？"
+  }
+ ]
+}

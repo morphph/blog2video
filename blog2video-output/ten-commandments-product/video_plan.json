@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Ten Commandments for Building Product",
+    "title_zh": "AI 让造产品更容易，也让你更容易骗自己",
+    "word_count": 1500,
+    "slug": "ten-commandments-product"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "叙述稿围绕同一个 thesis 展开——AI 降低了构建成本，却让自我欺骗更容易——所有小节都在支撑这一核心论点，无可独立理解的子主题",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "AI 让造产品更容易，也让你更容易骗自己"
+      }
+    ]
+  }
+}

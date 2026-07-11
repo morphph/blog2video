@@ -1,0 +1,64 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "image",
+ "dataDuration": 53.333,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_7.html",
+ "topbarIndex": "[07/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.194,
+   "text": "那固执的人为什么会这样？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.191,
+   "localDuration": 3.29,
+   "text": "作者一开始有个理论：他们是被压垮了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.681,
+   "localDuration": 12.137,
+   "text": "能力不够，接了个难题，一上手就力不从心，于是像甲板上遇到大浪的人一样，随手抓住最近的一根把手——某个想法——死死不放。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.961,
+   "localDuration": 3.786,
+   "text": "但他自己把这个理论推翻了，这段我特别欣赏。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.747,
+   "localDuration": 7.571,
+   "text": "如果固执只是“力不从心\"的结果，那你把更难的问题丢给一个坚持的人，他就该变固执才对。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.318,
+   "localDuration": 1.082,
+   "text": "可事实相反。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.561,
+   "localDuration": 10.612,
+   "text": "你把一个极难的问题交给 Collison 兄弟，他们不会变固执，反而更开放，因为他们知道，这种难题必须对一切保持开放。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 41.173,
+   "localDuration": 4.857,
+   "text": "反过来，让固执的人去做简单问题，他也不会因此变得开放。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 46.185,
+   "localDuration": 7.017,
+   "text": "既然处境改变不了它，那它就不是处境造成的，它来自内在，是一种人格特质。"
+  }
+ ]
+}

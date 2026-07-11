@@ -1,0 +1,82 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 43.167,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_6.html",
+ "topbarIndex": "[06/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.012,
+   "localDuration": 5.914,
+   "text": "第四轮，三十小时，蒙眼，两百个题目，加上硬性限制。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 6.096,
+   "localDuration": 2.563,
+   "text": "他开始一个一个堵方向。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.659,
+   "localDuration": 2.097,
+   "text": "关键词列表设上限。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.756,
+   "localDuration": 1.398,
+   "text": "评测集蒙住。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 12.154,
+   "localDuration": 1.631,
+   "text": "日期范围放宽。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 13.785,
+   "localDuration": 3.728,
+   "text": "每一个补丁，都关掉一条廉价的路。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 17.652,
+   "localDuration": 7.957,
+   "text": "堵到最后，唯一还能让分数往上走的方向，只剩一个——真正地把这件事做得更好。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 25.752,
+   "localDuration": 1.086,
+   "text": "它不作弊了。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 26.838,
+   "localDuration": 1.63,
+   "text": "然后它就开始跑了。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 28.468,
+   "localDuration": 6.518,
+   "text": "三十小时的算力，九万两千个网页，四十美元的 token，六千三百行代码。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 35.148,
+   "localDuration": 3.619,
+   "text": "那个参考产品，是地板，不是天花板。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 38.767,
+   "localDuration": 4.257,
+   "text": "同样的查询，他们捞出了大约五十倍的结果。"
+  }
+ ]
+}

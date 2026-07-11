@@ -1,0 +1,118 @@
+{
+ "scene": 7,
+ "id": "s07",
+ "type": "principle",
+ "dataDuration": 85.7,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_7.html",
+ "topbarIndex": "[07/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.009,
+   "localDuration": 4.289,
+   "text": "现在我们能说清 loss function development 到底特别在哪了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.437,
+   "localDuration": 4.556,
+   "text": "大多数人用 Agent 造产品，几小时从零到上线。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 8.993,
+   "localDuration": 1.094,
+   "text": "但坑在长尾。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 10.087,
+   "localDuration": 6.197,
+   "text": "那些 spec 从没想到的边缘情况，只会在生产环境里一条一条冒出来。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 16.484,
+   "localDuration": 5.147,
+   "text": "你在日志里没抓到的，就由用户来报——这是发现 bug 最贵的方式。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.789,
+   "localDuration": 9.052,
+   "text": "Elvis 自己有个 Agent 叫 Zoe，每天盯着错误日志，看到新错误就派 Codex 去修，自动开 PR。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.841,
+   "localDuration": 2.748,
+   "text": "可就算这样，长尾还是要拖上几个月。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 33.741,
+   "localDuration": 3.093,
+   "text": "LFD 干的事，是把这条长尾快进。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.981,
+   "localDuration": 10.044,
+   "text": "如果你能提前拿到真实的期望输出，也就是\"好\"到底长什么样，而且是成规模的，那你就能在上线之前先做一次浸泡测试。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 47.025,
+   "localDuration": 4.566,
+   "text": "几百个边缘情况，在一次优化里一起砸向 Agent。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 51.741,
+   "localDuration": 4.242,
+   "text": "而不是一个季度一个季度地，等 bug 报告慢慢滴下来。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 56.133,
+   "localDuration": 1.905,
+   "text": "这里有个根本的区别。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 58.038,
+   "localDuration": 3.619,
+   "text": "测试套件是有限的，跑绿那一刻就结束了。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 61.657,
+   "localDuration": 8.192,
+   "text": "而一个一千条的评测集，卡在百分之九十五，是一个你只能不断往下降、却永远够不到底的目标。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 69.993,
+   "localDuration": 1.414,
+   "text": "为什么这很重要？"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 71.407,
+   "localDuration": 4.417,
+   "text": "因为 Agent 会做出几百个你永远看不见的决定。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 75.824,
+   "localDuration": 2.828,
+   "text": "每一个决定，都要有个东西来裁决。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 78.652,
+   "localDuration": 6.891,
+   "text": "如果目标不是你写的，Agent 就自己挑一个——而它挑的，永远是最省事的那个。"
+  }
+ ]
+}

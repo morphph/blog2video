@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有(光谱条)—— */
+[data-composition-id='s02'] .spec{width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:28px 32px}
+[data-composition-id='s02'] .spec-lab{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em;margin-bottom:22px}
+[data-composition-id='s02'] .spec-ends{display:flex;align-items:center;justify-content:space-between;gap:22px}
+[data-composition-id='s02'] .spec-ends .lo{flex-shrink:0;font-weight:700;font-size:36px;color:#8a8a85}
+[data-composition-id='s02'] .spec-ends .ar{flex:1;height:2px;background:#2a2a2c;position:relative;min-width:70px}
+[data-composition-id='s02'] .spec-ends .ar::after{content:'';position:absolute;right:0;top:-6px;border-left:14px solid #8a8a85;border-top:7px solid transparent;border-bottom:7px solid transparent}
+[data-composition-id='s02'] .spec-ends .hi{flex-shrink:0;font-weight:900;font-size:40px;color:#edebe6;white-space:nowrap}
+[data-composition-id='s02'] .spec-ends .hi .tok{color:#ccff4d;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="44.2" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · HOW TO START GOOGLE<span class="b-cur"></span></div>
+      <div class="idx">[02/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 先纠正一个<span class="acc">误会</span></div>
+      <div class="h1" style="margin-top:16px">创业不是为了 <span class="em">轻松</span></div>
+
+      <div class="rows" style="margin-top:38px">
+        <div class="row r1 warn"><div class="n">01</div><div class="rb">
+          <div class="rt">误会:创业 = 少干活、图轻松</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">真相:只会更累</div>
+          <div class="rd">逃的不是工作本身,是被<span class="ok">老板指挥</span>那种烦</div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt">做自己的项目 ≠ 做别人交代的</div>
+          <div class="rd">兴奋程度,完全不是一回事</div>
+        </div></div>
+
+        <div class="row r4"><div class="n">04</div><div class="rb">
+          <div class="rt">富豪榜:几乎都靠<span class="code">创办公司</span>致富</div>
+          <div class="rd">不是靠打工</div>
+        </div></div>
+      </div>
+
+      <div class="spec" style="margin-top:32px">
+        <div class="spec-lab">创业是一整条光谱</div>
+        <div class="spec-ends">
+          <span class="lo">理发店</span>
+          <span class="ar"></span>
+          <span class="hi">Google · <span class="tok">startup</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="1.927" data-track-index="5"><div class="sub-inner">先纠正一个<span class="sub-k">误会</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.932" data-duration="4.336" data-track-index="5"><div class="sub-inner">很多人以为创业是为了<span class="sub-k">少干活、图轻松</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.268" data-duration="2.89" data-track-index="5"><div class="sub-inner">完全相反,创业<span class="sub-k">只会更累</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="9.329" data-duration="6.516" data-track-index="5"><div class="sub-inner">那图什么?说得直白点:创业逃避的不是工作本身,是<span class="sub-k">被老板指挥</span>的那种烦。</div></div>
+    <div id="sub-5" class="clip sub" data-start="15.845" data-duration="5.749" data-track-index="5"><div class="sub-inner">做别人交代的项目,和做<span class="sub-k">你自己的项目</span>,兴奋程度完全不是一回事。</div></div>
+    <div id="sub-6" class="clip sub" data-start="21.749" data-duration="7.655" data-track-index="5"><div class="sub-inner">而且顺带一提,几乎所有富豪榜上的人,都是靠<span class="sub-k">创办自己的公司</span>致富的,不是靠打工。</div></div>
+    <div id="sub-7" class="clip sub" data-start="29.561" data-duration="2.715" data-track-index="5"><div class="sub-inner">不过要说明,创业是<span class="sub-k">一整条光谱</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="32.276" data-duration="4.345" data-track-index="5"><div class="sub-inner">一端是开一家理发店,另一端是<span class="sub-k">创办 Google</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="36.621" data-duration="7.422" data-track-index="5"><div class="sub-inner">今天我们只聊 Google 这一端——年轻的时候,它有个名字,叫 <span class="sub-k">startup</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 1.95, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 6.3, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 9.4, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r3', 15.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r4', 21.8, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.spec', 29.6, {y:18, d:.35, ease:'power3.out'});
+    D2.enter(tl, R+'.spec-ends .hi', 32.3, {x:22, d:.35, ease:'power2.out'});
+    D2.enter(tl, R+'.spec-ends .hi .tok', 36.6, {y:10, d:.4, ease:'expo.out'});
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',1.932],['#sub-3',6.268],['#sub-4',9.329],['#sub-5',15.845],['#sub-6',21.749],['#sub-7',29.561],['#sub-8',32.276],['#sub-9',36.621]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 44.2, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

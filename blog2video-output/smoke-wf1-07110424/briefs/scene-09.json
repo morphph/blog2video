@@ -1,0 +1,52 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 37.6,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_9.html",
+ "topbarIndex": "[09/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.008,
+   "localDuration": 2.93,
+   "text": "固执很简单，简单到动物都有。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.938,
+   "localDuration": 3.557,
+   "text": "但坚持，有一套相当复杂的内部结构。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.495,
+   "localDuration": 5.441,
+   "text": "作者把它拆成了五种品质，我觉得这是全文最值钱的部分。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 12.104,
+   "localDuration": 2.579,
+   "text": "第一是 energy，精力。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 14.683,
+   "localDuration": 4.789,
+   "text": "坚持的人是持续进取，不是单纯抵抗，他一直在试新东西。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 19.472,
+   "localDuration": 8.658,
+   "text": "而这就逼出了第二样：imagination，想象力——你要不断地试，就得不断想出可以试的东西。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 28.268,
+   "localDuration": 9.153,
+   "text": "精力和想象力是绝配，互相喂养：精力为点子创造需求，逼你想更多；想象力又给精力一个去处。"
+  }
+ ]
+}

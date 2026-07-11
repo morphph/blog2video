@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .taglist{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s08'] .taglist .tag{margin-left:0;vertical-align:0}
+[data-composition-id='s08'] .rlab{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.04em;margin-bottom:8px}
+[data-composition-id='s08'] .rlab .acc{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="49.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[08/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// LOSS FUNCTION · 四样东西,挑<span class="acc">最反直觉两点</span></div>
+      <div class="h1" style="margin-top:18px">挑最<span class="em">反直觉</span>的两点</div>
+
+      <div class="rows" style="margin-top:44px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rlab">// <span class="acc">目标</span> GOAL</div>
+          <div class="rt">大到<span class="code">枚举不划算</span></div>
+          <div class="taglist"><span class="tag t1a">28 项评测集 · 一轮背完</span></div>
+          <div class="rd">必须蒙住答案 —— 只要跑时看得见,它<span class="warn">一定偷看</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rlab">// <span class="acc">约束</span> CONSTRAINT</div>
+          <div class="rt">最容易忘的约束是<span class="code">时间</span></div>
+          <div class="rd">Agent 对时间毫无感觉 —— 为 2% 提升<span class="warn">硬磨 10 小时</span></div>
+          <div class="taglist"><span class="tag t2a">墙上时钟预算</span><span class="tag t2b">付费调用设硬上限</span></div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:40px">2 小时的 80%,<span class="hl"><span class="bar"></span><span class="tx">胜过 30 天的 100%</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.667" data-track-index="5"><div class="sub-inner">这个 loss function,有<span class="sub-k">四样东西</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.656" data-duration="3.826" data-track-index="5"><div class="sub-inner">我不想把它讲成教科书清单,我们挑<span class="sub-k">最反直觉的两点</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.621" data-duration="1.188" data-track-index="5"><div class="sub-inner">第一是<span class="sub-k">目标</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="8.809" data-duration="2.773" data-track-index="5"><div class="sub-inner">它得足够大,大到<span class="sub-k">枚举不划算</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="11.582" data-duration="3.961" data-track-index="5"><div class="sub-inner">一个二十八项的评测集,一轮就被<span class="sub-k">背下来</span>了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="15.543" data-duration="6.734" data-track-index="5"><div class="sub-inner">而且必须蒙住答案——只要它跑的时候能看见答案,它就一定有办法去<span class="sub-k">偷看</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="22.417" data-duration="1.301" data-track-index="5"><div class="sub-inner">第二是<span class="sub-k">约束</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="23.718" data-duration="3.034" data-track-index="5"><div class="sub-inner">最容易被忘掉的约束,是<span class="sub-k">时间</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="26.917" data-duration="2.669" data-track-index="5"><div class="sub-inner">Agent 对时间<span class="sub-k">毫无感觉</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="29.586" data-duration="6.101" data-track-index="5"><div class="sub-inner">只要那个指标名义上还在动,它会为了百分之二的提升,<span class="sub-k">硬磨十个小时</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="35.887" data-duration="6.187" data-track-index="5"><div class="sub-inner">可是,两小时做出的百分之八十的方案,<span class="sub-k">胜过</span>三十天才做完的百分之百。</div></div>
+    <div id="sub-12" class="clip sub" data-start="42.074" data-duration="3.094" data-track-index="5"><div class="sub-inner">所以你得给它一个<span class="sub-k">墙上时钟</span>的预算。</div></div>
+    <div id="sub-13" class="clip sub" data-start="45.313" data-duration="4.207" data-track-index="5"><div class="sub-inner">钱也一样,每一个付费调用都得设<span class="sub-k">硬上限</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 3.8, {y:20, d:.4, ease:'expo.out'});
+    /* row 01 —— 目标 */
+    D2.enter(tl, R+'.r1', 7.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .taglist .t1a', 11.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1 .rd', 15.6, {y:12, d:.3, ease:'power2.out'});
+    /* row 02 —— 约束 */
+    D2.enter(tl, R+'.r2', 22.4, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 27.0, {y:12, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.r2 .taglist .t2a', 42.1, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .taglist .t2b', 45.4, {y:12, d:.3, ease:'power2.out'});
+    /* 反直觉金句 */
+    D2.enter(tl, R+'.punch', 35.9, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 36.7);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.656],['#sub-3',7.621],['#sub-4',8.809],['#sub-5',11.582],['#sub-6',15.543],['#sub-7',22.417],['#sub-8',23.718],['#sub-9',26.917],['#sub-10',29.586],['#sub-11',35.887],['#sub-12',42.074],['#sub-13',45.313]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 49.667, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

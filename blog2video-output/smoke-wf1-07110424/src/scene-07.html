@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有(theory 面板 + 间距,均加 s07 作用域)—— */
+[data-composition-id='s07'] .thry{margin-top:32px;width:100%}
+[data-composition-id='s07'] .thry .lab{font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s07'] .thry .lab .x{color:#ccff4d}
+[data-composition-id='s07'] .thry .tx{margin-top:14px;font-weight:600;font-size:37px;line-height:1.36;color:#edebe6}
+[data-composition-id='s07'] .thry .tx .em{color:#ccff4d}
+[data-composition-id='s07'] .thry .tx .dim{color:#8a8a85}
+[data-composition-id='s07'] .refute{margin-top:22px}
+[data-composition-id='s07'] .tests{margin-top:26px}
+[data-composition-id='s07'] .punch{margin-top:32px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="53.333" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[07/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 一个理论 · <span class="acc">被推翻</span></div>
+      <div class="h1" style="margin-top:18px">它不是<span class="em">被压垮</span>,<br>而是天生如此</div>
+
+      <div class="bracket thry">
+        <div class="lab">起初的理论 · <span class="x">被压垮</span></div>
+        <div class="tx">接了力所不及的难题,力不从心,<span class="em">随手抓住一个想法死死不放</span></div>
+      </div>
+
+      <div class="refute"><span class="status alert"><span class="dot"></span>但作者自己把它推翻了</span></div>
+
+      <div class="rows tests">
+        <div class="row r1"><div class="n">A</div><div class="rb">
+          <div class="rt">给坚持的人<span class="code">更难的题</span></div>
+          <div class="rd">不会变固执 —— 反而<span class="ok">更开放</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">B</div><div class="rb">
+          <div class="rt">给固执的人<span class="code">简单的题</span></div>
+          <div class="rd">也不会因此<span class="warn">变开放</span></div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch">处境改变不了它 → <span class="hl"><span class="bar"></span><span class="tx">是人格特质</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.194" data-track-index="5"><div class="sub-inner">那<span class="sub-k">固执</span>的人为什么会这样？</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.191" data-duration="3.29" data-track-index="5"><div class="sub-inner">作者一开始有个理论：他们是<span class="sub-k">被压垮</span>了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.681" data-duration="12.137" data-track-index="5"><div class="sub-inner">能力不够，接了个难题，一上手就力不从心，于是像甲板上遇到大浪的人一样，随手抓住最近的一根把手——某个想法——<span class="sub-k">死死不放</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="17.961" data-duration="3.786" data-track-index="5"><div class="sub-inner">但他自己把这个理论<span class="sub-k">推翻</span>了，这段我特别欣赏。</div></div>
+    <div id="sub-5" class="clip sub" data-start="21.747" data-duration="7.571" data-track-index="5"><div class="sub-inner">如果固执只是“力不从心"的结果，那你把更难的问题丢给一个坚持的人，他就该<span class="sub-k">变固执</span>才对。</div></div>
+    <div id="sub-6" class="clip sub" data-start="29.318" data-duration="1.082" data-track-index="5"><div class="sub-inner">可事实<span class="sub-k">相反</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.561" data-duration="10.612" data-track-index="5"><div class="sub-inner">你把一个极难的问题交给 Collison 兄弟，他们不会变固执，反而<span class="sub-k">更开放</span>，因为他们知道，这种难题必须对一切保持开放。</div></div>
+    <div id="sub-8" class="clip sub" data-start="41.173" data-duration="4.857" data-track-index="5"><div class="sub-inner">反过来，让固执的人去做简单问题，他也不会因此<span class="sub-k">变得开放</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="46.185" data-duration="7.017" data-track-index="5"><div class="sub-inner">既然处境改变不了它，那它就不是处境造成的，它来自内在，是一种<span class="sub-k">人格特质</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.thry', 2.6, {y:18, ease:'power3.out'});
+    D2.enter(tl, R+'.thry .tx', 5.7, {y:12, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.refute', 18.0, {y:12, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 21.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 30.5, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 41.2, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.punch', 46.2, {y:18, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 46.7);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.191],['#sub-3',5.681],['#sub-4',17.961],['#sub-5',21.747],['#sub-6',29.318],['#sub-7',30.561],['#sub-8',41.173],['#sub-9',46.185]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 53.333, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

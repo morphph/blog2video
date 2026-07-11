@@ -1,0 +1,502 @@
+[
+  {
+    "text": "你有没有见过那种创业团队——代码写得飞快，每天几千行，架构也很漂亮，但就是找不到用户？",
+    "pronounce_text": "你有没有见过那种创业团队。代码写得飞快，每天几千行，架构也很漂亮，但就是找不到用户？",
+    "time_begin": 0,
+    "time_end": 8688.75283446712,
+    "text_begin": 0,
+    "text_end": 43,
+    "pronounce_text_begin": 0,
+    "pronounce_text_end": 42
+  },
+  {
+    "text": "这篇文章的作者 Feitong Yang，是一家 AI Agent 创业公司的创始工程师。他们做过三个产品：Minecraft 里的 AI 队友、通用桌面 Agent、还有一个叫 Shortcut 的 Excel 协作 AI。",
+    "pronounce_text": "这篇文章的作者Feitong Yang，是一家AI Agent创业公司的创始工程师。他们做过三个产品：Minecraft里的AI队友、通用桌面Agent、还有一个叫Shortcut的Excel协作AI。",
+    "time_begin": 8856,
+    "time_end": 23210.421768707485,
+    "text_begin": 43,
+    "text_end": 156,
+    "pronounce_text_begin": 42,
+    "pronounce_text_end": 143
+  },
+  {
+    "text": "他亲眼看着前两个失败，第三个才勉强找到感觉。",
+    "pronounce_text": "他亲眼看着前两个失败，第三个才勉强找到感觉。",
+    "time_begin": 23364,
+    "time_end": 27606.13151927438,
+    "text_begin": 156,
+    "text_end": 178,
+    "pronounce_text_begin": 143,
+    "pronounce_text_end": 165
+  },
+  {
+    "text": "他把这三次经历提炼成十条诫命。不是成功秘诀，是失败教训。我把里面最重要的几条拆给你看。",
+    "pronounce_text": "他把这三次经历提炼成十条诫命。不是成功秘诀，是失败教训。我把里面最重要的几条拆给你看。",
+    "time_begin": 27756,
+    "time_end": 37292.28117913832,
+    "text_begin": 178,
+    "text_end": 221,
+    "pronounce_text_begin": 165,
+    "pronounce_text_end": 208
+  },
+  {
+    "text": "先从最普遍的一个陷阱说起。",
+    "pronounce_text": "先从最普遍的一个陷阱说起。",
+    "time_begin": 37440,
+    "time_end": 39592.33560090703,
+    "text_begin": 221,
+    "text_end": 234,
+    "pronounce_text_begin": 208,
+    "pronounce_text_end": 221
+  },
+  {
+    "text": "过去几年，模型能力跳得太快了。很多工程师和研究员开始有一种感觉：技术突破本身就证明了价值，就像 ChatGPT 把研究成果直接变成了产品。",
+    "pronounce_text": "过去几年，模型能力跳得太快了。很多工程师和研究员开始有一种感觉：技术突破本身就证明了价值，就像ChatGPT把研究成果直接变成了产品。",
+    "time_begin": 39744,
+    "time_end": 52995.47392290249,
+    "text_begin": 234,
+    "text_end": 303,
+    "pronounce_text_begin": 221,
+    "pronounce_text_end": 288
+  },
+  {
+    "text": "但那是一个神话。",
+    "pronounce_text": "但那是一个神话。",
+    "time_begin": 53136,
+    "time_end": 54603.34693877551,
+    "text_begin": 303,
+    "text_end": 311,
+    "pronounce_text_begin": 288,
+    "pronounce_text_end": 296
+  },
+  {
+    "text": "ChatGPT 底层的模型，在产品发布之前就存在很久了。真正让它成为现象级产品的，是那个最普通的聊天框。而且就算这样，Sam Altman 自己说，早期留存\"惨不忍睹\"。",
+    "pronounce_text": "ChatGPT底层的模型，在产品发布之前就存在很久了。真正让它成为现象级产品的，是那个最普通的聊天框。而且就算这样，Sam Altman自己说，早期留存\"惨不忍睹\"。",
+    "time_begin": 54756,
+    "time_end": 68820.1723356009,
+    "text_begin": 311,
+    "text_end": 396,
+    "pronounce_text_begin": 296,
+    "pronounce_text_end": 379
+  },
+  {
+    "text": "他们也犯过同样的错。",
+    "pronounce_text": "他们也犯过同样的错。",
+    "time_begin": 68976,
+    "time_end": 70617.49659863945,
+    "text_begin": 396,
+    "text_end": 406,
+    "pronounce_text_begin": 379,
+    "pronounce_text_end": 389
+  },
+  {
+    "text": "Minecraft Agent 项目里，他们做到了一件很酷的事：多个 Agent 协作，能一起造出三百多种物品，还能建钻石镐。登上了 X 和 Hacker News，获得了很多关注。",
+    "pronounce_text": "Minecraft Agent项目里，他们做到了一件很酷的事：多个Agent协作，能一起造出三百多种物品，还能建钻石镐。登上了X和Hacker News，获得了很多关注。",
+    "time_begin": 70776,
+    "time_end": 85176.86167800453,
+    "text_begin": 406,
+    "text_end": 497,
+    "pronounce_text_begin": 389,
+    "pronounce_text_end": 474
+  },
+  {
+    "text": "但他们始终没搞清楚一件事：这个能力，解决了哪个真实玩家的什么真实问题？",
+    "pronounce_text": "但他们始终没搞清楚一件事：这个能力，解决了哪个真实玩家的什么真实问题？",
+    "time_begin": 85320,
+    "time_end": 91268.79818594104,
+    "text_begin": 497,
+    "text_end": 532,
+    "pronounce_text_begin": 474,
+    "pronounce_text_end": 509
+  },
+  {
+    "text": "关注不是需求。技术壮举不是产品。",
+    "pronounce_text": "关注不是需求。技术壮举不是产品。",
+    "time_begin": 91440,
+    "time_end": 94962.31292517007,
+    "text_begin": 532,
+    "text_end": 548,
+    "pronounce_text_begin": 509,
+    "pronounce_text_end": 525
+  },
+  {
+    "text": "中间那步翻译工作——搞清楚是谁的问题、他们怎么用——才是全部的工作，不是注脚。",
+    "pronounce_text": "中间那步翻译工作。搞清楚是谁的问题、他们怎么用。才是全部的工作，不是注脚。",
+    "time_begin": 95112,
+    "time_end": 103928.46258503401,
+    "text_begin": 548,
+    "text_end": 587,
+    "pronounce_text_begin": 525,
+    "pronounce_text_end": 562
+  },
+  {
+    "text": "说到\"用户是谁\"，他们在三个产品里犯了同一个错，犯了三次。",
+    "pronounce_text": "说到\"用户是谁\"，他们在三个产品里犯了同一个错，犯了三次。",
+    "time_begin": 104076,
+    "time_end": 109606.83900226757,
+    "text_begin": 587,
+    "text_end": 616,
+    "pronounce_text_begin": 562,
+    "pronounce_text_end": 591
+  },
+  {
+    "text": "做 Minecraft Agent 的时候，他们说用户是 Minecraft 玩家。后来仔细一看：有人玩这个游戏是为了建造，有人是为了 PvP 对战，有人就是想跟朋友在一起。",
+    "pronounce_text": "做Minecraft Agent的时候，他们说用户是Minecraft玩家。后来仔细一看：有人玩这个游戏是为了建造，有人是为了PvP对战，有人就是想跟朋友在一起。",
+    "time_begin": 109764,
+    "time_end": 124420.28117913831,
+    "text_begin": 616,
+    "text_end": 703,
+    "pronounce_text_begin": 591,
+    "pronounce_text_end": 672
+  },
+  {
+    "text": "三种人要的是三个不同的产品。",
+    "pronounce_text": "三种人要的是三个不同的产品。",
+    "time_begin": 124620.28117913831,
+    "time_end": 127155.74603174604,
+    "text_begin": 703,
+    "text_end": 717,
+    "pronounce_text_begin": 672,
+    "pronounce_text_end": 686
+  },
+  {
+    "text": "做通用桌面 Agent Fairies 的时候，他们说用户是\"白领工作者\"。更诚实的说法是：他们希望白领是用户，但白领根本不这么看自己。",
+    "pronounce_text": "做通用桌面Agent Fairies的时候，他们说用户是\"白领工作者\"。更诚实的说法是：他们希望白领是用户，但白领根本不这么看自己。",
+    "time_begin": 127296,
+    "time_end": 138875.6371882086,
+    "text_begin": 717,
+    "text_end": 785,
+    "pronounce_text_begin": 686,
+    "pronounce_text_end": 752
+  },
+  {
+    "text": "做 Excel Agent Shortcut 的时候，他们说\"所有 Excel 用户\"。后来才慢慢找到那个真正有价值的子集：金融领域里，做高标准高质量工作的人。",
+    "pronounce_text": "做Excel Agent Shortcut的时候，他们说\"所有Excel用户\"。后来才慢慢找到那个真正有价值的子集：金融领域里，做高标准高质量工作的人。",
+    "time_begin": 139032,
+    "time_end": 151552.04535147393,
+    "text_begin": 785,
+    "text_end": 865,
+    "pronounce_text_begin": 752,
+    "pronounce_text_end": 828
+  },
+  {
+    "text": "每次都是同一个移动：把模糊的标签当作\"知道了用户\"。",
+    "pronounce_text": "每次都是同一个移动：把模糊的标签当作\"知道了用户\"。",
+    "time_begin": 151704,
+    "time_end": 156724,
+    "text_begin": 865,
+    "text_end": 891,
+    "pronounce_text_begin": 828,
+    "pronounce_text_end": 854
+  },
+  {
+    "text": "文章里有一句话我觉得说到位了：日志告诉你用户做了什么，但你真正饿着的是\"为什么\"。",
+    "pronounce_text": "文章里有一句话我觉得说到位了：日志告诉你用户做了什么，但你真正饿着的是\"为什么\"。",
+    "time_begin": 156888,
+    "time_end": 164462.19501133787,
+    "text_begin": 891,
+    "text_end": 932,
+    "pronounce_text_begin": 854,
+    "pronounce_text_end": 895
+  },
+  {
+    "text": "早期最危险的逃避，恰恰是那些最\"科学\"的东西——数据分析、漏斗报告——因为它们看起来像进展，但都是在重建用户行为的脑补版本。",
+    "pronounce_text": "早期最危险的逃避，恰恰是那些最\"科学\"的东西。数据分析、漏斗报告。因为它们看起来像进展，但都是在重建用户行为的脑补版本。",
+    "time_begin": 164628,
+    "time_end": 176254.07709750568,
+    "text_begin": 932,
+    "text_end": 994,
+    "pronounce_text_begin": 895,
+    "pronounce_text_end": 955
+  },
+  {
+    "text": "真正的办法只有一个：去坐在他们旁边，看他们在自己的环境里怎么用。",
+    "pronounce_text": "真正的办法只有一个：去坐在他们旁边，看他们在自己的环境里怎么用。",
+    "time_begin": 176454.07709750568,
+    "time_end": 182878.8843537415,
+    "text_begin": 994,
+    "text_end": 1026,
+    "pronounce_text_begin": 955,
+    "pronounce_text_end": 987
+  },
+  {
+    "text": "Fairies 和 Shortcut 的对比，我觉得是这篇文章里最具体的一个教训。",
+    "pronounce_text": "Fairies和Shortcut的对比，我觉得是这篇文章里最具体的一个教训。",
+    "time_begin": 183024,
+    "time_end": 188125.26984126985,
+    "text_begin": 1026,
+    "text_end": 1067,
+    "pronounce_text_begin": 987,
+    "pronounce_text_end": 1025
+  },
+  {
+    "text": "Fairies 是一个空白聊天框，定位是\"通用 Agent，能做任何事\"。问题在于，\"能做任何事\"在用户眼里等于\"不知道它能做什么\"。团队自己都说不清它解决什么问题，用户更没办法自己想明白。",
+    "pronounce_text": "Fairies是一个空白聊天框，定位是\"通用Agent，能做任何事\"。问题在于，\"能做任何事\"在用户眼里等于\"不知道它能做什么\"。团队自己都说不清它解决什么问题，用户更没办法自己想明白。",
+    "time_begin": 188280,
+    "time_end": 204851.92743764172,
+    "text_begin": 1067,
+    "text_end": 1162,
+    "pronounce_text_begin": 1025,
+    "pronounce_text_end": 1118
+  },
+  {
+    "text": "使用方式的解释工作，被全部甩给了用户，而用户没有义务替你想这个。",
+    "pronounce_text": "使用方式的解释工作，被全部甩给了用户，而用户没有义务替你想这个。",
+    "time_begin": 205020,
+    "time_end": 210841.08843537414,
+    "text_begin": 1162,
+    "text_end": 1194,
+    "pronounce_text_begin": 1118,
+    "pronounce_text_end": 1150
+  },
+  {
+    "text": "Shortcut 第一天的界面是：一张电子表格，旁边一个 Agent 面板。",
+    "pronounce_text": "Shortcut第一天的界面是：一张电子表格，旁边一个Agent面板。",
+    "time_begin": 210996,
+    "time_end": 217293.09750566893,
+    "text_begin": 1194,
+    "text_end": 1232,
+    "pronounce_text_begin": 1150,
+    "pronounce_text_end": 1185
+  },
+  {
+    "text": "就这样。用户一眼看懂，零解释，直接开始。这个形式本身就是产品说明书。",
+    "pronounce_text": "就这样。用户一眼看懂，零解释，直接开始。这个形式本身就是产品说明书。",
+    "time_begin": 217440,
+    "time_end": 224422.08616780044,
+    "text_begin": 1232,
+    "text_end": 1266,
+    "pronounce_text_begin": 1185,
+    "pronounce_text_end": 1219
+  },
+  {
+    "text": "因为用户一秒就看懂了，团队才能把精力放到真正重要的事上：他们到底在乎 Excel 里的什么？答案是准确性和公式正确性，排在第一位。",
+    "pronounce_text": "因为用户一秒就看懂了，团队才能把精力放到真正重要的事上：他们到底在乎Excel里的什么？答案是准确性和公式正确性，排在第一位。",
+    "time_begin": 224568,
+    "time_end": 235985.09750566893,
+    "text_begin": 1266,
+    "text_end": 1331,
+    "pronounce_text_begin": 1219,
+    "pronounce_text_end": 1282
+  },
+  {
+    "text": "清晰的形式没有结束工作，它让真正的工作得以开始。",
+    "pronounce_text": "清晰的形式没有结束工作，它让真正的工作得以开始。",
+    "time_begin": 236124,
+    "time_end": 240586.72108843538,
+    "text_begin": 1331,
+    "text_end": 1355,
+    "pronounce_text_begin": 1282,
+    "pronounce_text_end": 1306
+  },
+  {
+    "text": "文章里有一个观察，我认为是这十条里最值得单独拎出来的。",
+    "pronounce_text": "文章里有一个观察，我认为是这十条里最值得单独拎出来的。",
+    "time_begin": 240732,
+    "time_end": 245357.26077097506,
+    "text_begin": 1355,
+    "text_end": 1382,
+    "pronounce_text_begin": 1306,
+    "pronounce_text_end": 1333
+  },
+  {
+    "text": "以前，\"搭百万用户架构再找用户\"是工程师的经典拖延。现在，AI 让这个拖延升级了。",
+    "pronounce_text": "以前，\"搭百万用户架构再找用户\"是工程师的经典拖延。现在，AI让这个拖延升级了。",
+    "time_begin": 245520,
+    "time_end": 254719.5918367347,
+    "text_begin": 1382,
+    "text_end": 1423,
+    "pronounce_text_begin": 1333,
+    "pronounce_text_end": 1373
+  },
+  {
+    "text": "Coding Agent 让你在第一天就能搭出\"正确的最终架构\"，感觉像是跳过了探索阶段，直接到达了终点。",
+    "pronounce_text": "Coding Agent让你在第一天就能搭出\"正确的最终架构\"，感觉像是跳过了探索阶段，直接到达了终点。",
+    "time_begin": 254880,
+    "time_end": 263092.7437641723,
+    "text_begin": 1423,
+    "text_end": 1476,
+    "pronounce_text_begin": 1373,
+    "pronounce_text_end": 1425
+  },
+  {
+    "text": "但这是最新版本的幻觉，而且 AI 是它的推销员——它卖给你一个幻想：你可以在开始就全知全能，永远不需要发现任何事情。",
+    "pronounce_text": "但这是最新版本的幻觉，而且AI是它的推销员。它卖给你一个幻想：你可以在开始就全知全能，永远不需要发现任何事情。",
+    "time_begin": 263232,
+    "time_end": 272721.84126984124,
+    "text_begin": 1476,
+    "text_end": 1534,
+    "pronounce_text_begin": 1425,
+    "pronounce_text_end": 1480
+  },
+  {
+    "text": "YC 有个负责人炫耀说，自己的项目每天生成 37000 行 AI 代码，连续 72 天。后来有开发者看了那些代码，发现全是臃肿和低级错误。",
+    "pronounce_text": "YC有个负责人炫耀说，自己的项目每天生成三七零零零行AI代码，连续七二天。后来有开发者看了那些代码，发现全是臃肿和低级错误。",
+    "time_begin": 272880,
+    "time_end": 284552.5170068027,
+    "text_begin": 1534,
+    "text_end": 1603,
+    "pronounce_text_begin": 1480,
+    "pronounce_text_end": 1542
+  },
+  {
+    "text": "行数从来不度量价值。现在连努力程度都不度量了。",
+    "pronounce_text": "行数从来不度量价值。现在连努力程度都不度量了。",
+    "time_begin": 284724,
+    "time_end": 289093.84126984124,
+    "text_begin": 1603,
+    "text_end": 1626,
+    "pronounce_text_begin": 1542,
+    "pronounce_text_end": 1565
+  },
+  {
+    "text": "正确的系统是随着产品找到用户的过程生长出来的。它不是由某个人在开始就设计好的蓝图——那个人以为自己已经看见了全貌，其实他什么都没看见。",
+    "pronounce_text": "正确的系统是随着产品找到用户的过程生长出来的。它不是由某个人在开始就设计好的蓝图。那个人以为自己已经看见了全貌，其实他什么都没看见。",
+    "time_begin": 289260,
+    "time_end": 301872.92517006805,
+    "text_begin": 1626,
+    "text_end": 1693,
+    "pronounce_text_begin": 1565,
+    "pronounce_text_end": 1631
+  },
+  {
+    "text": "第十条讲的是这个：",
+    "pronounce_text": "第十条讲的是这个：",
+    "time_begin": 302040,
+    "time_end": 303681.49659863947,
+    "text_begin": 1693,
+    "text_end": 1702,
+    "pronounce_text_begin": 1631,
+    "pronounce_text_end": 1640
+  },
+  {
+    "text": "Humane AI Pin 和 Rabbit R1，发布时声量是近年来最大的。数百万次观看，预购售罄，媒体说这是未来。然后在几个月内双双崩盘。火花打在了空油箱上，秒灭。",
+    "pronounce_text": "Humane AI Pin和Rabbit R一，发布时声量是近年来最大的。数百万次观看，预购售庆，媒体说这是未来。然后在几个月内双双崩盘。火花打在了空油箱上，秒灭。",
+    "time_begin": 303840,
+    "time_end": 318623.9909297052,
+    "text_begin": 1702,
+    "text_end": 1786,
+    "pronounce_text_begin": 1640,
+    "pronounce_text_end": 1722
+  },
+  {
+    "text": "另一边，Cursor 几乎没有营销，靠口碑爆炸式增长。Claude Code 是作为一个模型更新的附属预览悄悄上线的，没有发布会，没有倒计时。",
+    "pronounce_text": "另一边，Cursor几乎没有营销，靠口碑爆炸式增长。Claude Code是作为一个模型更新的附属预览悄悄上线的，没有发布会，没有倒计时。",
+    "time_begin": 318780,
+    "time_end": 330022.94784580497,
+    "text_begin": 1786,
+    "text_end": 1857,
+    "pronounce_text_begin": 1722,
+    "pronounce_text_end": 1791
+  },
+  {
+    "text": "他们自己的 Shortcut 也经历了这两面。发布视频有一个真实的病毒时刻，DAU 瞬间拉升——然后几乎以同样的速度跌落。",
+    "pronounce_text": "他们自己的Shortcut也经历了这两面。发布视频有一个真实的病毒时刻，DAU瞬间拉升。然后几乎以同样的速度跌落。",
+    "time_begin": 330192,
+    "time_end": 339728.28117913834,
+    "text_begin": 1857,
+    "text_end": 1918,
+    "pronounce_text_begin": 1791,
+    "pronounce_text_end": 1848
+  },
+  {
+    "text": "那次冲击从来不是真正的赢。",
+    "pronounce_text": "那次冲击从来不是真正的赢。",
+    "time_begin": 339876,
+    "time_end": 341993.50566893426,
+    "text_begin": 1918,
+    "text_end": 1931,
+    "pronounce_text_begin": 1848,
+    "pronounce_text_end": 1861
+  },
+  {
+    "text": "最终留住用户、让数字在视频被遗忘之后继续爬升的，是产品质量。发布热度让人看到了你，产品质量决定他们会不会留下。",
+    "pronounce_text": "最终留住用户、让数字在视频被遗忘之后继续爬升的，是产品质量。发布热度让人看到了你，产品质量决定他们会不会留下。",
+    "time_begin": 342144,
+    "time_end": 352876.1088435374,
+    "text_begin": 1931,
+    "text_end": 1986,
+    "pronounce_text_begin": 1861,
+    "pronounce_text_end": 1916
+  },
+  {
+    "text": "这十条诫命背后只有一个共同的敌人：所有让你感觉在前进、但实际上在回避第一手现实的东西。",
+    "pronounce_text": "这十条诫命背后只有一个共同的敌人：所有让你感觉在前进、但实际上在回避第一手现实的东西。",
+    "time_begin": 353016,
+    "time_end": 360764.34467120183,
+    "text_begin": 1986,
+    "text_end": 2029,
+    "pronounce_text_begin": 1916,
+    "pronounce_text_end": 1959
+  },
+  {
+    "text": "读日志而不是看用户。用自己的品味认证市场。让 AI 搭好架构再找客户。用代码行数衡量进展。",
+    "pronounce_text": "读日志而不是看用户。用自己的品味认证市场。让AI搭好架构再找客户。用代码行数衡量进展。",
+    "time_begin": 360936,
+    "time_end": 370646.43083900225,
+    "text_begin": 2029,
+    "text_end": 2074,
+    "pronounce_text_begin": 1959,
+    "pronounce_text_end": 2002
+  },
+  {
+    "text": "这些动作以前就存在，只是当时代价够大，你不太容易沉迷其中。现在 AI 把建造成本降到了接近零，所有这些逃避手段都披上了\"效率\"和\"生产力\"的外衣，变得几乎无法识别。",
+    "pronounce_text": "这些动作以前就存在，只是当时代价够大，你不太容易沉迷其中。现在AI把建造成本降到了接近零，所有这些逃避手段都披上了\"效率\"和\"生产力\"的外衣，变得几乎无法识别。",
+    "time_begin": 370800,
+    "time_end": 387290.6575963719,
+    "text_begin": 2074,
+    "text_end": 2156,
+    "pronounce_text_begin": 2002,
+    "pronounce_text_end": 2082
+  },
+  {
+    "text": "文章结尾有一句话，我觉得是这篇文章的核心：",
+    "pronounce_text": "文章结尾有一句话，我觉得是这篇文章的核心：",
+    "time_begin": 387432,
+    "time_end": 391465.15192743763,
+    "text_begin": 2156,
+    "text_end": 2177,
+    "pronounce_text_begin": 2082,
+    "pronounce_text_end": 2103
+  },
+  {
+    "text": "AI 自动化了那部分从来都不是真正难点的工作。真正难的那部分——判断你是为谁做的、他们需要什么、他们会不会回来付钱——这些还是你的。",
+    "pronounce_text": "AI自动化了那部分从来都不是真正难点的工作。真正难的那部分。判断你是为谁做的、他们需要什么、他们会不会回来付钱。这些还是你的。",
+    "time_begin": 391608,
+    "time_end": 403454.6666666667,
+    "text_begin": 2177,
+    "text_end": 2243,
+    "pronounce_text_begin": 2103,
+    "pronounce_text_end": 2166
+  },
+  {
+    "text": "所以下次当你发现自己在想\"再搭好这个架构就去找用户\"，或者\"再加这个功能就发布\"——那个念头本身就是信号。",
+    "pronounce_text": "所以下次当你发现自己在想\"再搭好这个架构就去找用户\"，或者\"再加这个功能就发布\"。那个念头本身就是信号。",
+    "time_begin": 403596,
+    "time_end": 413643.1201814059,
+    "text_begin": 2243,
+    "text_end": 2296,
+    "pronounce_text_begin": 2166,
+    "pronounce_text_end": 2218
+  },
+  {
+    "text": "去找一个真实的人，坐在他旁边，看他怎么用。",
+    "pronounce_text": "去找一个真实的人，坐在他旁边，看他怎么用。",
+    "time_begin": 413784,
+    "time_end": 417608.1723356009,
+    "text_begin": 2296,
+    "text_end": 2317,
+    "pronounce_text_begin": 2218,
+    "pronounce_text_end": 2239
+  },
+  {
+    "text": "AI 世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "pronounce_text": "AI世界很吵，精读一篇，胜过刷一百条。我们下期再见。",
+    "time_begin": 417780,
+    "time_end": 423055.4195011338,
+    "text_begin": 2317,
+    "text_end": 2344,
+    "pronounce_text_begin": 2239,
+    "pronounce_text_end": 2265
+  }
+]

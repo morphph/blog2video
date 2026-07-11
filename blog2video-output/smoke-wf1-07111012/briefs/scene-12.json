@@ -1,0 +1,88 @@
+{
+ "scene": 12,
+ "id": "s12",
+ "type": "image",
+ "dataDuration": 78.133,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_12.html",
+ "topbarIndex": "[12/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.689,
+   "text": "接下来是一句你可能不爱听的话:功课,还是得考好。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.677,
+   "localDuration": 8.597,
+   "text": "哪怕是那种纯靠背诵、或者胡扯文学的课,你也得考好——因为你需要好成绩,才能进一所好大学。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.416,
+   "localDuration": 2.84,
+   "text": "想创业,就尽量进最好的大学。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.256,
+   "localDuration": 5.071,
+   "text": "为什么?因为那里有最好的联合创始人,和最好的员工。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.527,
+   "localDuration": 7.554,
+   "text": "Larry 和 Sergey 创办 Google 时,一上来就把在斯坦福认识的最聪明的那批人,全招了进来。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 29.081,
+   "localDuration": 1.425,
+   "text": "这是实实在在的优势。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.66,
+   "localDuration": 6.143,
+   "text": "而且证据非常清楚:一个地方出的成功创业公司越多,它基本就越难进。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 36.803,
+   "localDuration": 4.416,
+   "text": "MIT、剑桥,你要进去,得挺聪明、还得有决心。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 41.219,
+   "localDuration": 4.991,
+   "text": "所以你一旦进去了,身边全是一样聪明、一样有决心的人。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 46.356,
+   "localDuration": 8.039,
+   "text": "而名校真正的价值,不在于它多有名,也不在于教学质量,纯粹就在于——\"进去有多难\"。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 54.564,
+   "localDuration": 2.615,
+   "text": "当然,联合创始人不一定非得是大学同学。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 57.179,
+   "localDuration": 7.432,
+   "text": "Twitch 的创始人们 7 岁就认识了;Stripe 的 Collison 兄弟,弟弟一出生哥哥就认识他。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 64.752,
+   "localDuration": 13.251,
+   "text": "但对大多数人来说,大学仍然是联合创始人的主要来源,也因此是点子的主要来源——因为最好的点子,就长自你和那些未来会成为联合创始人的人,一起做的项目里。"
+  }
+ ]
+}

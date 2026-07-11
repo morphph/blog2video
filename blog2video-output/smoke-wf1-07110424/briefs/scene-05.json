@@ -1,0 +1,46 @@
+{
+ "scene": 5,
+ "id": "s05",
+ "type": "image",
+ "dataDuration": 39.233,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_5.html",
+ "topbarIndex": "[05/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.007,
+   "localDuration": 4.982,
+   "text": "有意思的是，在最简单的情况下，你根本分不出这两种人。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.989,
+   "localDuration": 8.049,
+   "text": "因为当一个问题只有一条路可走，唯一的选择就是放弃还是不放弃，两种人都会说“不放弃\"。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.183,
+   "localDuration": 4.846,
+   "text": "这也是为什么流行文化总把它们混为一谈——它默认问题都很简单。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.187,
+   "localDuration": 2.884,
+   "text": "可问题一复杂，差别就现形了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 21.211,
+   "localDuration": 12.822,
+   "text": "把决策想象成一棵树，坚持的人对树高处那些大方向执着得多，对低处那些小枝节，说改就改；而固执的人，是把“别放弃\"三个字，"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 34.233,
+   "localDuration": 4.846,
+   "text": "无差别地喷洒到整棵树上，连最细的末梢都死抓不放。"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有(principle:仪器 + 强制的熵)—— */
+[data-composition-id='s09'] .tlh{margin-top:26px}
+[data-composition-id='s09'] .bad{color:#ff6b5e;font-weight:700}
+[data-composition-id='s09'] .law{margin-top:26px;font-weight:700;font-size:38px;color:#edebe6;line-height:1.3}
+[data-composition-id='s09'] .law .em{color:#ccff4d}
+[data-composition-id='s09'] .ent{margin-top:26px}
+[data-composition-id='s09'] .ent-t{font-weight:900;font-size:44px;color:#ccff4d;line-height:1.25}
+[data-composition-id='s09'] .ent-mid{margin-top:14px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s09'] .ent-jump{margin-top:16px;font-weight:600;font-size:34px;color:#edebe6;line-height:1.35}
+[data-composition-id='s09'] .ent-jump .em{color:#ccff4d}
+[data-composition-id='s09'] .wt .code{margin:0 4px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="75.433" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · LOOP ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[09/13]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// 光有约束还不够 · <span class="acc">约束需要仪器</span></div>
+      <div class="h2" style="margin-top:18px">没有仪器的约束,<br>只是一种<span class="em">氛围</span></div>
+
+      <div class="kicker tlh">// 他举了个例子:让 Agent 克隆一个界面</div>
+      <div class="tl" style="margin-top:16px">
+        <div class="tl-row y0"><div class="yr">裁判</div><div class="wt">让大模型给两张截图打分</div></div>
+        <div class="tl-row y1"><div class="yr">判过</div><div class="wt"><span class="bad">12px 误差</span>的克隆也判通过</div></div>
+        <div class="tl-row y2"><div class="yr">真相</div><div class="wt">大模型看不见图 · 转成向量再比对</div></div>
+        <div class="tl-row y3 now"><div class="yr">修法</div><div class="wt">给它像素比对工具 · <span class="code">/goal</span> 到像素差 = 0<span class="badge">像素级</span></div></div>
+      </div>
+
+      <div class="law"><span class="em">你看不见的东西</span>,你就没法优化</div>
+
+      <div class="bracket ent">
+        <div class="ent-t">第三样:强制的熵</div>
+        <div class="ent-mid">Agent 天然陷在局部最优 · 只转能提升 0.1% 的那一个旋钮</div>
+        <div class="ent-jump">每轮逼它反思:造通用解,还是背评测集? 卡住就来一次<span class="em">真正的跳跃</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.003" data-duration="1.607" data-track-index="5"><div class="sub-inner">但<span class="sub-k">光有约束</span>还不够。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.61" data-duration="2.856" data-track-index="5"><div class="sub-inner">这是我觉得整篇里<span class="sub-k">最锋利</span>的一句话。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.611" data-duration="2.987" data-track-index="5"><div class="sub-inner">一个没有仪器的约束，<span class="sub-k">只是一种氛围</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="7.598" data-duration="5.446" data-track-index="5"><div class="sub-inner">Agent 会兴高采烈地违反它，因为它根本<span class="sub-k">感知不到</span>自己在违反。</div></div>
+    <div id="sub-5" class="clip sub" data-start="13.215" data-duration="5.148" data-track-index="5"><div class="sub-inner">所以每一条约束，你都得配一个能让 Agent <span class="sub-k">自己检查的命令</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="18.507" data-duration="1.318" data-track-index="5"><div class="sub-inner">他举了个<span class="sub-k">例子</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="19.825" data-duration="6.776" data-track-index="5"><div class="sub-inner">你想让 Agent 克隆一个界面，用"让大模型给两张截图打分"来<span class="sub-k">当裁判</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="26.601" data-duration="0.753" data-track-index="5"><div class="sub-inner"><span class="sub-k">结果</span>呢？</div></div>
+    <div id="sub-9" class="clip sub" data-start="27.354" data-duration="4.706" data-track-index="5"><div class="sub-inner">这个裁判会给一个有<span class="sub-k">十二像素间距误差</span>的克隆版打通过。</div></div>
+    <div id="sub-10" class="clip sub" data-start="32.223" data-duration="0.827" data-track-index="5"><div class="sub-inner">为什么？</div></div>
+    <div id="sub-11" class="clip sub" data-start="33.05" data-duration="2.481" data-track-index="5"><div class="sub-inner">因为大模型根本<span class="sub-k">看不见图</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="35.531" data-duration="2.687" data-track-index="5"><div class="sub-inner">它是把图<span class="sub-k">转成向量</span>再比对的。</div></div>
+    <div id="sub-13" class="clip sub" data-start="38.379" data-duration="5.183" data-track-index="5"><div class="sub-inner">所以你要像素级精确，就得给 Agent 一个<span class="sub-k">像素比对工具</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="43.562" data-duration="3.038" data-track-index="5"><div class="sub-inner">然后 <span class="sub-k">/goal</span>，直到像素差为零。</div></div>
+    <div id="sub-15" class="clip sub" data-start="46.6" data-duration="3.753" data-track-index="5"><div class="sub-inner">规律就一句：<span class="sub-k">你看不见的东西</span>，你就没法优化。</div></div>
+    <div id="sub-16" class="clip sub" data-start="50.511" data-duration="1.975" data-track-index="5"><div class="sub-inner">还有第三样，<span class="sub-k">强制的熵</span>。</div></div>
+    <div id="sub-17" class="clip sub" data-start="52.486" data-duration="3.053" data-track-index="5"><div class="sub-inner">Agent 天然会陷在<span class="sub-k">局部最优</span>里。</div></div>
+    <div id="sub-18" class="clip sub" data-start="55.539" data-duration="6.645" data-track-index="5"><div class="sub-inner">哪怕有一千个旋钮可以试，只要转某一个能提升百分之零点一，它就<span class="sub-k">一直转那一个</span>。</div></div>
+    <div id="sub-19" class="clip sub" data-start="62.384" data-duration="5.948" data-track-index="5"><div class="sub-inner">所以每一轮你得逼它反思：我是在造通用解，还是在<span class="sub-k">背评测集</span>？</div></div>
+    <div id="sub-20" class="clip sub" data-start="68.475" data-duration="6.808" data-track-index="5"><div class="sub-inner">卡住了，下一轮就不许是"同一个想法，再使劲"，得来一次<span class="sub-k">真正的跳跃</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h2', 1.7, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.tlh', 18.6, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.y0', 19.9, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.y1', 27.4, {x:-22, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.y2', 33.1, {x:-22, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.y3', 38.5, {x:-22, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.y3 .badge', 43.6, {y:8, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.law', 46.7, {y:16, d:.36, ease:'power4.out'});
+    D2.enter(tl, R+'.ent', 50.6, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.ent-mid', 55.6, {y:12, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.ent-jump', 62.4, {y:12, d:.34, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.003],['#sub-2',1.61],['#sub-3',4.611],['#sub-4',7.598],['#sub-5',13.215],['#sub-6',18.507],['#sub-7',19.825],['#sub-8',26.601],['#sub-9',27.354],['#sub-10',32.223],['#sub-11',33.05],['#sub-12',35.531],['#sub-13',38.379],['#sub-14',43.562],['#sub-15',46.6],['#sub-16',50.511],['#sub-17',52.486],['#sub-18',55.539],['#sub-19',62.384],['#sub-20',68.475]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 75.433, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

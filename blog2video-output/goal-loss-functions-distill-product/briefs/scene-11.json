@@ -1,0 +1,70 @@
+{
+ "scene": 11,
+ "id": "s11",
+ "type": "image",
+ "dataDuration": 52,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_11.html",
+ "topbarIndex": "[11/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.571,
+   "text": "换个角度看，这件事其实是蒸馏。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.556,
+   "localDuration": 3.598,
+   "text": "只不过从训练时，搬到了 prompt 时。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.321,
+   "localDuration": 11.498,
+   "text": "DeepSeek、Kimi、Minimax 这条线，就是这么追上 GPT 和 Claude 的——拿别人的输出来训练自己的模型，直到你能复现它。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 17.985,
+   "localDuration": 2.862,
+   "text": "但现在，你不用去蒸馏一个模型了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.847,
+   "localDuration": 5.545,
+   "text": "你可以用 /goal 和 LFD，去蒸馏任何公开能找到的产物。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 26.392,
+   "localDuration": 3.219,
+   "text": "它从头到尾都不用看内部，也不需要看。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 29.757,
+   "localDuration": 2.886,
+   "text": "请咬住\"公开\"这两个字。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.643,
+   "localDuration": 7.215,
+   "text": "去蒸馏别人服务条款保护的、登录墙后的、付费的输出，这不合规。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 39.858,
+   "localDuration": 4.811,
+   "text": "但公开发表的东西，向来是可以拿来学习的。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 44.805,
+   "localDuration": 7.063,
+   "text": "变了的只是——现在这件事，便宜到几小时就能做完，而不是几个月。"
+  }
+ ]
+}

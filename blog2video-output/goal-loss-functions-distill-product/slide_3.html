@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1920px; background:#0D0D1A; font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif; color:#FFFFFF; overflow:hidden; }
+.slide { width:100%; height:100%; padding:200px 72px 420px 72px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+.head { font-size:38px; color:#8B5CF6; font-weight:700; margin-bottom:44px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; width:100%; }
+.cell { background:#1A1A2E; border:1px solid rgba(139,92,246,0.3); border-radius:12px; padding:36px 24px; }
+.cell .num { font-size:76px; font-weight:800; color:#F59E0B; line-height:1; }
+.cell .lab { font-size:30px; color:#B0B0CC; margin-top:14px; }
+.result { margin-top:34px; width:100%; background:#1A1A2E; border:1px solid rgba(16,185,129,0.5); border-left:4px solid #10B981; border-radius:12px; padding:36px 30px; text-align:left; }
+.result .k { font-size:32px; color:#B0B0CC; margin-bottom:10px; }
+.result .v { font-size:58px; font-weight:800; color:#10B981; line-height:1.2; }
+.result .v span { color:#FFFFFF; }
+</style></head><body><div class="slide">
+<div class="head">// 一个 prompt，挂机干了什么</div>
+<div class="grid">
+<div class="cell"><div class="num">30 小时</div><div class="lab">连续运行</div></div>
+<div class="cell"><div class="num">6300 行</div><div class="lab">生成代码</div></div>
+<div class="cell"><div class="num">92k</div><div class="lab">爬取网页</div></div>
+<div class="cell"><div class="num">$40</div><div class="lab">API 费用</div></div>
+</div>
+<div class="result"><div class="k">同样的查询，输出质量</div><div class="v">好了大约 <span>50 倍</span></div></div>
+</div></body></html>

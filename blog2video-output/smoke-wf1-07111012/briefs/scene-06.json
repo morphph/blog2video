@@ -1,0 +1,94 @@
+{
+ "scene": 6,
+ "id": "s06",
+ "type": "image",
+ "dataDuration": 66.567,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_6.html",
+ "topbarIndex": "[06/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.004,
+   "localDuration": 3.525,
+   "text": "好,假设你 22 岁,技术已经很强了。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.529,
+   "localDuration": 2.041,
+   "text": "怎么得到一个创业点子?"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 5.728,
+   "localDuration": 7.709,
+   "text": "看起来,这才是最难的部分吧?但真相是——一旦你擅长技术,点子会变得非常容易。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 13.437,
+   "localDuration": 2.434,
+   "text": "因为你看世界的方式变了。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 15.871,
+   "localDuration": 5.883,
+   "text": "你会开始看到那些\"缺失的东西\"周围,浮现出一圈虚线的轮廓。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 21.892,
+   "localDuration": 8.213,
+   "text": "技术本身还缺什么,哪些糟糕的东西可以被它修好——每一个,都是一家潜在的创业公司。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 30.244,
+   "localDuration": 2.047,
+   "text": "这里有个特别妙的比方。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 32.291,
+   "localDuration": 4.466,
+   "text": "有家店,门上挂了块牌子,警告顾客\"这门很难关\"。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 36.757,
+   "localDuration": 1.675,
+   "text": "这牌子挂了好几年。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 38.432,
+   "localDuration": 7.072,
+   "text": "店里的人觉得,门粘住了是一种神秘的自然现象,他们无能为力,只能挂个牌提醒你。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 45.652,
+   "localDuration": 6.077,
+   "text": "可任何一个木匠走过去看一眼,都会想:你为什么不把卡住的那部分刨掉呢?"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 51.88,
+   "localDuration": 1.194,
+   "text": "这就是关键。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 53.074,
+   "localDuration": 8.956,
+   "text": "一旦你擅长编程,世界上所有缺失的软件,对你来说,就像那扇卡住的门对木匠一样刺眼、一样明显。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 62.03,
+   "localDuration": 4.379,
+   "text": "找不到好点子,从来不是运气问题,是能力问题。"
+  }
+ ]
+}

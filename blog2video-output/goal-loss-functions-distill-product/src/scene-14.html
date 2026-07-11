@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有(cta:纯静音尾卡,大 logo + 系列名 · 完 + 酸性光标)—— */
+[data-composition-id='s14'] .glow{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 60% 34% at 50% 44%,rgba(204,255,77,.12),rgba(204,255,77,0) 70%)}
+[data-composition-id='s14'] .end{align-items:center;text-align:center}
+[data-composition-id='s14'] .logo{display:flex;align-items:center;justify-content:center;
+  font-family:'MiSans',sans-serif;font-weight:900;font-size:184px;line-height:1;color:#edebe6;letter-spacing:.01em}
+[data-composition-id='s14'] .logo .acid{color:#ccff4d}
+[data-composition-id='s14'] .logo .cur{width:36px;height:120px;margin-left:22px;vertical-align:-16px}
+[data-composition-id='s14'] .subline{margin-top:42px;font-family:'JetBrains Mono',monospace;
+  font-size:44px;font-weight:500;color:#8a8a85;letter-spacing:.14em}
+[data-composition-id='s14'] .subline .done{color:#edebe6;font-weight:700}
+[data-composition-id='s14'] .signoff{margin-top:56px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="5" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="glow"></div>
+
+    <div class="content end">
+      <div class="logo">精读<span class="acid">AI</span><span class="cur blink"></span></div>
+      <div class="subline">LOOP ENGINEERING<span style="color:#ccff4d;margin:0 10px">·</span><span class="done">完</span></div>
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">我们下期再见</span></div>
+    </div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.glow',{opacity:0,duration:.6,ease:'power1.out'},.1);
+    D2.enter(tl, R+'.logo', .5, {y:26, d:.5, ease:'expo.out'});
+    D2.enter(tl, R+'.subline', 1.4, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 2.6, {y:14, d:.32, ease:'power2.out'});
+    D2.blink(tl, R+'.blink', 2.2, 5);
+    D2.breath(tl, R+'.content', 5, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

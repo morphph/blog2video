@@ -1,0 +1,46 @@
+{
+ "scene": 3,
+ "id": "s03",
+ "type": "image",
+ "dataDuration": 45.433,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_3.html",
+ "topbarIndex": "[03/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 4.697,
+   "text": "而\"教你创办 Google\",真实的意思不是保证你做出万亿公司。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.71,
+   "localDuration": 7.486,
+   "text": "是把你带到那个起点——你创办的公司,拥有和当年 Google 一模一样的、成为 Google 的机会。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 12.361,
+   "localDuration": 10.221,
+   "text": "你想想,Larry Page 和 Sergey Brin 刚做 Google 的时候,如果有人跑去告诉他们\"这家公司以后会值超过一万亿美元\",他们脑袋会当场爆炸。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 22.729,
+   "localDuration": 9.025,
+   "text": "创业那一刻,你唯一知道的只是\"这件事看起来值得做\",你根本不知道它会变成十亿公司,还是明年就倒闭。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 31.909,
+   "localDuration": 10.831,
+   "text": "那么,从今天走到那个起点,你需要三样东西:第一,擅长某种技术;第二,一个想做的点子;第三,联合创始人。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 42.74,
+   "localDuration": 2.548,
+   "text": "这三样,我们一个一个说。"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      position: relative;
+    }
+    .title { font-size: 84px; font-weight: 800; line-height: 1.14; margin-bottom: 18px; }
+    .title .em { color: #8B5CF6; }
+    .sub { font-size: 36px; color: #B0B0CC; margin-bottom: 60px; }
+    /* 决策树示意 */
+    .tree { width: 100%; display: flex; flex-direction: column; gap: 26px; }
+    .row { background: #1A1A2E; border-radius: 12px; padding: 34px 36px; text-align: left; display: flex; align-items: center; gap: 26px; }
+    .row.top { border: 1px solid rgba(16,185,129,0.3); border-left: 4px solid #10B981; }
+    .row.low { border: 1px solid rgba(59,130,246,0.3); border-left: 4px solid #3B82F6; }
+    .lvl { font-size: 30px; font-weight: 800; color: #6B7280; min-width: 150px; }
+    .txt { font-size: 38px; line-height: 1.38; }
+    .txt .g { color: #10B981; font-weight: 700; }
+    .txt .b { color: #3B82F6; font-weight: 700; }
+    .verdict { font-size: 40px; color: #FFFFFF; margin-top: 56px; line-height: 1.5; }
+    .verdict .em { color: #EF4444; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title">把决策<br>想象成<span class="em">一棵树</span></div>
+    <div class="sub">问题一复杂，差别就现形</div>
+    <div class="tree">
+      <div class="row top"><div class="lvl">高处 · 大方向</div><div class="txt">坚持的人 <span class="g">执着得多</span></div></div>
+      <div class="row low"><div class="lvl">低处 · 小枝节</div><div class="txt">坚持的人 <span class="b">说改就改</span></div></div>
+    </div>
+    <div class="verdict">而固执的人：把“别放弃"<span class="em">无差别喷满整棵树</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "How to Start Google",
+    "title_zh": "一晚上写完的项目，凭什么后来值一万亿？",
+    "word_count": 1800,
+    "slug": "smoke-wf1-07111012"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇是一条连贯的因果论证（擅长技术→做项目→点子和联合创始人自己冒出来，收束于顺序颠倒），三样东西彼此依赖、无法独立成片，故不拆。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "一晚上写完的项目，凭什么值一万亿？"
+      }
+    ]
+  }
+}

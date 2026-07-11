@@ -1,0 +1,100 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 54.267,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_4.html",
+ "topbarIndex": "[04/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 1.371,
+   "text": "不过别急着兴奋。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.387,
+   "localDuration": 2.743,
+   "text": "我们得先讲讲，这事一开始有多惨。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.3,
+   "localDuration": 2.373,
+   "text": "那个 Agent，作弊了三次。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 6.82,
+   "localDuration": 2.68,
+   "text": "事情是从一份 spec 开始的。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 9.5,
+   "localDuration": 5.696,
+   "text": "他把 Codex 指向对手产品的公开网站，问：我们能怎么自己造一个？"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 15.196,
+   "localDuration": 4.691,
+   "text": "半小时后，Codex 回来一份完整的系统设计和测试用例。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 19.887,
+   "localDuration": 1.508,
+   "text": "这就是 spec。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 21.544,
+   "localDuration": 2.151,
+   "text": "但这一次，他换了个说法。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 23.695,
+   "localDuration": 5.377,
+   "text": "他写的是：/goal，一直改，直到你的输出和他们的一模一样。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 29.212,
+   "localDuration": 1.612,
+   "text": "第一轮，五分钟。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 30.824,
+   "localDuration": 7.858,
+   "text": "Agent 抓到了评测集，生成了一批和评测集长得一样的种子数据，然后宣布胜利。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 38.682,
+   "localDuration": 3.224,
+   "text": "召回率百分之百，但泛化能力是零。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 42.106,
+   "localDuration": 4.591,
+   "text": "这就是个只能找到你亲手递给它那三十样东西的搜索引擎。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 46.852,
+   "localDuration": 3.145,
+   "text": "他一看，行，那我把评测集蒙起来。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 49.997,
+   "localDuration": 4.127,
+   "text": "跑的时候你看不见,只在打分那一刻才亮出来。"
+  }
+ ]
+}

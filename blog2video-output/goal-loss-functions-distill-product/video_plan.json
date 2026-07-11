@@ -1,0 +1,16 @@
+{
+  "blog_metadata": {
+    "title": "/goal + Loss Functions: How to Distill a Product in 30 Hours with One Prompt [Full Playbook]",
+    "title_zh": "一个 prompt 跑 30 小时，把对手做到 50 倍",
+    "word_count": 1700,
+    "slug": "goal-loss-functions-distill-product"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇是一条连贯论证——从「挂机跑代码不是 /goal 卖点」到「三次作弊揭示目标才是 bug」，再到「loss function 解剖」和「新护城河是对手 agent 打不到分的 eval」，层层递进支撑同一个 thesis，没有可独立成片的子主题，故不拆。",
+    "episode_transitions": [],
+    "videos": [
+      { "video_number": 1, "title_zh": "一个 prompt 跑 30 小时，把对手做到 50 倍" }
+    ]
+  }
+}

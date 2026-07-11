@@ -1,0 +1,130 @@
+{
+ "scene": 8,
+ "id": "s08",
+ "type": "image",
+ "dataDuration": 82.067,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_8.html",
+ "topbarIndex": "[08/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 1.417,
+   "text": "不只 Facebook。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.409,
+   "localDuration": 2.953,
+   "text": "Apple 和 Google,一开始也都只是项目。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.528,
+   "localDuration": 2.52,
+   "text": "Apple 压根没打算做成一家公司。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.048,
+   "localDuration": 3.919,
+   "text": "Steve Wozniak 只是想给自己造一台电脑而已。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 10.967,
+   "localDuration": 6.72,
+   "text": "是 Steve Jobs 后来说了句\"嘿,我们能不能把这台电脑的图纸卖给别人\",它才变成了生意。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 17.848,
+   "localDuration": 3.998,
+   "text": "注意,一开始连电脑都不卖,只卖图纸。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 21.846,
+   "localDuration": 5.109,
+   "text": "你现在回头看,这公司当时显得多寒酸、多不起眼。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 27.1,
+   "localDuration": 1.488,
+   "text": "Google 也一样。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 28.588,
+   "localDuration": 5.273,
+   "text": "Larry 和 Sergey 最初根本不想创业,他们只是想把搜索做得更好一点。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 34.012,
+   "localDuration": 4.119,
+   "text": "在 Google 之前,大多数搜索引擎不按重要性排序。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 38.131,
+   "localDuration": 6.56,
+   "text": "你搜 rugby,橄榄球,它就把每一个包含 rugby 这个词的网页,一股脑全甩给你。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 44.691,
+   "localDuration": 1.679,
+   "text": "你可能觉得这怎么能用?"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 46.54,
+   "localDuration": 8.433,
+   "text": "但在 1997 年,网络还很小,含 rugby 的网页可能就 20、30 个,所以这么干居然勉强还行。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 55.144,
+   "localDuration": 2.787,
+   "text": "问题是,网络在指数级地膨胀。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 57.931,
+   "localDuration": 3.783,
+   "text": "这种笨办法,也就跟着指数级地越来越糟。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 61.714,
+   "localDuration": 6.172,
+   "text": "大多数用户的感受就是:我得翻好多好多页,才能找到我真正想要的。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 67.886,
+   "localDuration": 1.194,
+   "text": "门,卡住了。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 69.22,
+   "localDuration": 4.513,
+   "text": "而 Larry 和 Sergey,和 Mark 一样,是程序员。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 73.733,
+   "localDuration": 1.693,
+   "text": "他们看着就想:这太蠢了。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 75.426,
+   "localDuration": 6.488,
+   "text": "有些 rugby 页面本来就比另一些重要,我们把哪些重要搞清楚,把它们排在前面显示不就好了。"
+  }
+ ]
+}

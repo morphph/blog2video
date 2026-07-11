@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有(仅微调,复用 kit 类)—— */
+[data-composition-id='s04'] .lead{margin-top:22px}
+[data-composition-id='s04'] .rows{margin-top:52px}
+[data-composition-id='s04'] .row .rt .ship{font-family:'JetBrains Mono',monospace;font-size:.82em;color:#8a8a85;margin-left:10px;letter-spacing:.02em}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="30.967" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[04/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 坚持 vs 固执 · <span class="acc">为什么像</span></div>
+      <div class="h1" style="margin-top:18px">两艘<span class="em">不同的船</span></div>
+      <div class="lead">都很难被拦住,<span class="dim">原因却</span><span class="em">完全不同</span></div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">坚持<span class="ship">· 引擎关不小的船</span></div>
+          <div class="rd">动力太足,<span class="ok">停不下来</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">固执<span class="ship">· 舵转不动的船</span></div>
+          <div class="rd">方向改不了,<span class="warn">拐不了弯</span></div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:40px">表面都是往前冲,里子是<span class="hl"><span class="bar"></span><span class="tx">两回事</span></span></div>
+    </div>
+
+    <!-- 字幕:brief.subtitles 逐条,本地时间,一字不差 -->
+    <div id="sub-1" class="clip sub" data-start="0.013" data-duration="2.678" data-track-index="5"><div class="sub-inner">那为什么这两种人看起来<span class="sub-k">那么像</span>?</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.691" data-duration="1.963" data-track-index="5"><div class="sub-inner">因为他们都很<span class="sub-k">难被拦住</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="4.654" data-duration="2.678" data-track-index="5"><div class="sub-inner">但“难被拦住"的原因<span class="sub-k">完全不同</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="7.501" data-duration="14.865" data-track-index="5"><div class="sub-inner">作者给了一个特别<span class="sub-k">漂亮的比喻</span>,我很喜欢:坚持的人,像一艘引擎关不小的船,动力太足,停不下来;固执的人,像一艘舵转不动的船,方向改不了,只能直直地往前顶。</div></div>
+    <div id="sub-5" class="clip sub" data-start="22.513" data-duration="8.294" data-track-index="5"><div class="sub-inner">你看,一个是停不下来,一个是拐不了弯,表面都是“往前冲",里子是<span class="sub-k">两回事</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.lead', 2.8, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 8.0, {x:-24, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 14.6, {x:-24, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.punch', 22.7, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 23.5);
+    D2.subs(tl, [['#sub-1',0.013],['#sub-2',2.691],['#sub-3',4.654],['#sub-4',7.501],['#sub-5',22.513]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 30.967, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

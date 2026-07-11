@@ -1,0 +1,852 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Home page" [ref=e6] [cursor=pointer]:
+            - /url: https://claude.com
+            - img [ref=e8]
+          - navigation [ref=e11]:
+            - generic [ref=e12]:
+              - list [ref=e13]:
+                - listitem [ref=e14]:
+                  - button "Meet Claude" [ref=e16] [cursor=pointer]:
+                    - generic [ref=e17]: Meet Claude
+                    - img [ref=e20]
+                - listitem [ref=e22]:
+                  - button "Platform" [ref=e24] [cursor=pointer]:
+                    - generic [ref=e25]: Platform
+                    - img [ref=e28]
+                - listitem [ref=e30]:
+                  - button "Solutions" [ref=e32] [cursor=pointer]:
+                    - generic [ref=e33]: Solutions
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Pricing" [ref=e40] [cursor=pointer]:
+                    - generic [ref=e41]: Pricing
+                    - img [ref=e44]
+                - listitem [ref=e46]:
+                  - button "Resources" [ref=e48] [cursor=pointer]:
+                    - generic [ref=e49]: Resources
+                    - img [ref=e52]
+                - listitem [ref=e54]:
+                  - link "Login" [ref=e55] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e56]: Login
+              - list [ref=e57]:
+                - listitem [ref=e58]:
+                  - generic [ref=e59]:
+                    - generic [ref=e60]: Contact sales
+                    - link "Contact sales" [ref=e62] [cursor=pointer]:
+                      - /url: /contact-sales
+                      - generic [ref=e63]: Contact sales
+                - listitem [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic [ref=e66]: Try Claude
+                    - link "Try Claude" [ref=e68] [cursor=pointer]:
+                      - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da
+                      - generic [ref=e69]: Try Claude
+      - generic [ref=e71]:
+        - navigation [ref=e72]:
+          - list [ref=e73]:
+            - listitem [ref=e74]:
+              - link "Blog" [ref=e76] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e77]: Blog
+              - generic [ref=e78]: /
+            - listitem [ref=e79]:
+              - generic [ref=e81]: "The evolution of agentic surfaces: building with Claude Managed Agents"
+        - button "Explore here" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: Explore here
+          - img [ref=e87]
+    - main [ref=e90]:
+      - generic [ref=e622]:
+        - generic [ref=e626]:
+          - 'heading "The evolution of agentic surfaces: building with Claude Managed Agents" [level=1] [ref=e627]':
+            - generic [ref=e628]: The
+            - generic [ref=e629]: evolution
+            - generic [ref=e630]: of
+            - generic [ref=e631]: agentic
+            - generic [ref=e632]: "surfaces:"
+            - generic [ref=e633]: building
+            - generic [ref=e634]: with
+            - generic [ref=e635]: Claude
+            - generic [ref=e636]: Managed
+            - generic [ref=e637]: Agents
+          - paragraph [ref=e640]: As model intelligence and agentic harnesses evolve, Claude Managed Agents allows teams to build and deploy agents in production environments reliably at scale. Here’s why and how teams are using it.
+        - list [ref=e642]:
+          - listitem [ref=e643]:
+            - img [ref=e646]
+            - generic [ref=e648]:
+              - generic [ref=e649]: Category
+              - list [ref=e651]:
+                - listitem [ref=e652]:
+                  - link "Agents" [ref=e653] [cursor=pointer]:
+                    - /url: https://claude.com/blog/category/agents
+          - listitem [ref=e654]:
+            - img [ref=e657]
+            - generic [ref=e659]:
+              - generic [ref=e660]: Product
+              - list [ref=e662]:
+                - listitem [ref=e663]:
+                  - generic [ref=e664]: Claude Platform
+          - listitem [ref=e665]:
+            - img [ref=e668]
+            - generic [ref=e670]:
+              - generic [ref=e671]: Date
+              - generic [ref=e672]: June 10, 2026
+          - listitem [ref=e673]:
+            - img [ref=e676]
+            - generic [ref=e678]:
+              - generic [ref=e679]: Reading time
+              - generic [ref=e680]:
+                - generic [ref=e681]: "5"
+                - generic [ref=e682]: min
+          - listitem [ref=e683]:
+            - img [ref=e686]
+            - generic [ref=e688]:
+              - generic [ref=e689]: Share
+              - link "Copy link" [ref=e690] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e700]:
+        - paragraph [ref=e701]: "Getting an agent into production takes more than a good prompt. The agent needs somewhere to run the code it writes, credentials to reach your data, observable sessions, and infrastructure that scales with usage. On the Applied AI team, we work at the intersection of product, research, and the customers building on Claude—and we see the same pattern repeatedly: infrastructure is what separates a prototype from a production agent. All too often, teams burn development cycles on security, state management, permissioning, and harness tuning."
+        - paragraph [ref=e702]:
+          - link "Claude Managed Agents" [ref=e703] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/overview
+          - text: ", our suite of composable APIs for building and deploying production-grade agents, pairs an agent harness tuned for performance with production infrastructure, allowing teams to go from prototype to launch in days rather than months. In this post, we'll cover the evolution of Anthropic’s agentic building blocks, why we built Claude Managed Agents, and how teams are using it in production today."
+        - heading "Evolving the agent architecture" [level=2] [ref=e704]:
+          - strong [ref=e705]: Evolving the agent architecture
+        - paragraph [ref=e706]: "When we opened up Claude to developers in 2023, the API was deliberately simple: tokens in, tokens out. You sent a prompt, Claude returned a completion, and you built the harness and underlying infrastructure."
+        - paragraph [ref=e707]: "The API grew steadily richer over the years, but the contract underneath never changed: one request, one model turn, and your application decides what happens next. For a long time, that was enough. Summarizing a document, classifying a support ticket, rewriting a block of text—the kind of work that fits comfortably in a single turn."
+        - paragraph [ref=e708]:
+          - text: Over time, however, the tasks people wanted to hand off stopped fitting. They wanted Claude to carry a task all the way through, look something up, act on it, see what changed, and decide what to do next. And they wanted it to operate
+          - emphasis [ref=e709]: in
+          - text: the systems their work already ran on, like a codebase, internal wiki, or ticketing system.
+        - paragraph [ref=e710]: "With the API, turning Claude into an agent meant building your own loop: ask the model what to do, run the tool, feed the result back, and repeat. You were responsible for building and deploying the agent scaffolding, which may need tuning as models evolve. For agents that require full customization, this approach makes sense. For agentic workloads that are more predictable and less complex, optimizing harnesses as models and products evolved became tedious."
+        - figure [ref=e711]
+        - paragraph [ref=e712]:
+          - link "Claude Code" [ref=e713] [cursor=pointer]:
+            - /url: https://code.claude.com/docs/en/overview
+          - text: ", the agentic coding tool we launched in 2025 that lets Claude interact directly with your codebase, contained our own version of that harness: the loop, tool execution, subagents, context management, and rich capabilities that made it an effective agent. Developers naturally wanted similar harness machinery for their own agents across various domains."
+        - paragraph [ref=e714]:
+          - text: To enable teams to build agents on top of the Claude Code harness, we released
+          - link "Claude Agent SDK" [ref=e715] [cursor=pointer]:
+            - /url: https://code.claude.com/docs/en/agent-sdk/overview
+          - text: ". Claude Agent SDK gives developers tools to build their own agents on the same machinery that runs Claude Code instead of maintaining a homegrown loop. For a lot of teams, this is when agents became practical: the harness arrived already tuned for Claude with infrastructure primitives and it kept improving as Claude Code did."
+        - paragraph [ref=e716]: "Even with a harness, though, deploying agents in production environments can be challenging for several reasons:"
+        - list [ref=e717]:
+          - listitem [ref=e718]:
+            - strong [ref=e719]: Hosting and scaling.
+            - text: Where does the agent run, how long can a process stay alive for a multi-hour task, and what scales it when usage grows?
+          - listitem [ref=e720]:
+            - strong [ref=e721]: Session management.
+            - text: Where does an agent's history and progress live? Can a run survive an interruption and resume unencumbered? Can you go back and inspect what happened in previous sessions?
+          - listitem [ref=e722]:
+            - strong [ref=e723]: Filesystem management.
+            - text: "Doing real work means producing artifacts: editing code, writing files, building outputs. Where does the agent get a workspace to act on, and what happens to that workspace between runs?"
+          - listitem [ref=e724]:
+            - strong [ref=e725]: Execution isolation.
+            - text: The code Claude writes has to execute somewhere. What's the blast radius if it's wrong, and what boundary would you actually trust in production?
+          - listitem [ref=e726]:
+            - strong [ref=e727]: Credentials.
+            - text: The agent needs access to your systems. How does it get that access without exposing proprietary information to the code it generates?
+          - listitem [ref=e728]:
+            - strong [ref=e729]: Observability.
+            - text: When an agent works autonomously for an hour and does something surprising, can you reconstruct every step it took?
+        - paragraph [ref=e730]: With the Agent SDK, many elements of the aforementioned production infrastructure are provided through Claude Code’s machinery. The agent gets a real filesystem to work in, session state is persisted locally or on external storage, and observability is exportable through OpenTelemetry into whatever monitoring stack you already run.
+        - figure [ref=e731]
+        - paragraph [ref=e732]: However, as teams increasingly built agents that moved out of local development into production, they needed a way to deploy them at scale and with managed infrastructure. And as models and their surrounding harnesses become more advanced–running longer, executing more code, touching more systems, and taking more actions– scaling, security, and sandboxing became more challenging.
+        - paragraph [ref=e733]:
+          - text: "Several of these hurdles stem from a common architectural choice: agent harnesses often run"
+          - emphasis [ref=e734]: inside the same container
+          - text: as the filesystem it works on. A container has to spin up (paying a startup cost) before Claude can think, the agent along with code execution lives right next to your credentials, and when the container dies, the run dies with it.
+        - paragraph [ref=e735]:
+          - text: Managed Agents solves these problems by
+          - link "decoupling the brain from the hands" [ref=e736] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/managed-agents
+          - text: . The harness that calls Claude runs separately from the sandbox where code executes, and the session–an append-only log of every model call, tool call, and result–connects the two. Claude can start reasoning before any container exists, the sandbox stays far away from your credentials, and a whole run can be reconstructed from its session at any point.
+        - figure [ref=e737]
+        - heading "When and why to use Claude Managed Agents" [level=2] [ref=e738]:
+          - strong [ref=e739]: When and why to use Claude Managed Agents
+        - paragraph [ref=e740]: "When building with Managed Agents, users define the task, the tools, and the guardrails, and Anthropic runs the agent on our infrastructure and handles the agentic loop underneath: how to give an agent an execution environment to call tools, how to recover when something fails, multi-agent orchestration, and more."
+        - paragraph [ref=e741]:
+          - text: When the harness doesn’t evolve alongside model intelligence,
+          - link "the agent breaks down" [ref=e742] [cursor=pointer]:
+            - /url: https://www.anthropic.com/engineering/harness-design-long-running-apps
+          - text: . On Claude Sonnet 4.5, an agent would rush to finish as it neared the end of its context, cutting work short rather than using the room it had left—a pattern called "context anxiety." Our fix was to add context resets to the harness, baking in an assumption that Claude needed help staying coherent near the limit. That assumption didn't survive the next model. On Claude Opus 4.5, the behavior was gone, and the resets we'd added were just overhead.
+        - paragraph [ref=e743]:
+          - text: "For most organizations, maintaining a harness is overhead that doesn't differentiate their product. Harnesses have to be tuned for certain model behaviors; primitives like compaction, tool execution, and caching works differently on Claude than other models. With Claude Managed Agents, the harness evolves alongside the model, allowing teams to focus on what will differentiate their agents:"
+          - strong [ref=e744]: context management and domain expertise.
+        - paragraph [ref=e745]:
+          - text: "To enable developers to configure the context and tools necessary to build effective agents, Managed Agents is built around three primary resources: agents, environments, and sessions. An"
+          - emphasis [ref=e746]: agent
+          - text: "is a configuration: a model, a prompt, a set of tools, and the guardrails around them. An"
+          - emphasis [ref=e747]: environment
+          - text: "is the execution context the agent runs in: the sandbox container, its networking rules, and the packages pre-installed in it, hosted on our cloud or on infrastructure you control. Each run is a"
+          - emphasis [ref=e748]: session
+          - text: ", which pairs an agent with an environment and gets its own isolated sandbox instance. Sessions persist their full event history, sandbox state, and outputs server-side, so long-running work can pause, resume cleanly, and be traced step by step after the fact. With Managed Agents, you can define an agent and an environment once, then run many sessions against the same configuration as your workload grows."
+        - figure [ref=e749]
+        - heading "Building for production and scale on Managed Agents" [level=2] [ref=e750]:
+          - strong [ref=e751]: Building for production and scale on Managed Agents
+        - paragraph [ref=e752]: Within Applied AI, we see agents go from prototype to production both inside Anthropic and across our customers’ systems, across coding, finance, support, legal, and a dozen other domains. This gives us a clear view of what separates a demo from a production-ready agent and where teams often get stuck.
+        - paragraph [ref=e753]: "Below, we share the most common reasons to build on a managed service like Claude Managed Agents:"
+        - paragraph [ref=e754]:
+          - strong [ref=e755]: 1. Credentials are kept out of the sandbox.
+          - text: When everything runs in one container, the code Claude generates sits right next to your credentials, so prompt injections could lead the model to leak a token by convincing the model to read its own environment. We can protect against this by setting up robust guardrails within the same container, but decoupling the architecture enables a much more secure approach by keeping credentials out of the sandbox entirely. Tokens for tools like MCPs, CLIs, and GitHub repos live in a separate vault, and a proxy fetches them and decrypts them only on demand. Managed Agents provides
+          - link "Vaults" [ref=e756] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/vaults
+          - text: that handle credentials out-of-the-box, so you don’t need to run your own secret store, transmit tokens on every call, or lose track of which end user an agent acted on behalf of. Vault credentials are protected with envelope encryption before storage, and retrieval requires a signed request token for verification.
+        - figure [ref=e757]
+        - paragraph [ref=e758]:
+          - strong [ref=e759]: 2. Lower latency from eliminated sandbox overhead.
+          - text: Latency is a metric that is top-of-mind for many enterprise teams, since users acutely feel when they’re waiting for Claude to respond. Without the Managed Agents architecture, a container has to be spun up for every session, even the ones where the agent only needs to think and never runs a tool. That setup time is wasted, and the user feels it as a delay before the first response. With Managed Agents, Claude begins reasoning immediately while the environment spins up in parallel, and sessions that never run a tool skip the container entirely. This means the user sees the first token without waiting on container startup, and the environment is ready by the time the agent needs to run something. In our testing, that cut the time-to-first-token by roughly 60% in the median case (p50) and by over 90% in the slowest cases (p95).
+        - paragraph [ref=e760]:
+          - strong [ref=e761]: 3. Reliable, persistent sessions that enable session management, observability, and memory.
+          - text: Instead of request/response, Managed Agents thinks in terms of
+          - emphasis [ref=e762]: events.
+          - text: "A session is an ongoing stream of events: every model call, tool call, and result, are appended to a log that lives outside the process running the agent. With this architecture, you get real-time updates as events stream in while the agent works, and you can resume any session later with no database or save-points to manage. History is preserved between interactions unless you delete the session, and when a session goes idle its container is checkpointed so you can pick up cleanly from where it paused. And because the whole run is already a record of events, observability and memory come with it: the Claude Developer Console offers a native visual timeline view of your agent sessions, and a debugging experience that allows you to examine any transcript in-depth. Managed Agents also comes with features like Memory and Dreaming that also use this session durability."
+          - link "Dreaming" [ref=e763] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/dreams
+          - text: is a scheduled process that reviews your agent sessions and memory stores, extracts patterns, and curates memories so your agents improve over time. Dreaming refines memory between sessions so that it can improve from recurring mistakes and user preferences by reading from the persistent session logs.
+        - paragraph [ref=e764]:
+          - strong [ref=e765]: 4. Flexibility in Anthropic-managed or self-hosted cloud containers.
+          - text: By default, with Managed Agents, you can delegate both orchestration and tool execution to Anthropic-managed cloud containers. This makes hosting and scaling simple and easy, delivering a faster path to production. Because the brain is decoupled from the hands in Managed Agents, the hands can live anywhere, including inside your Virtual Private Cloud (VPC). Thus, we also offer
+          - link "self-hosted sandboxes" [ref=e766] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes
+          - text: for teams that want control over tool execution, so the agent’s code, filesystem, and network egress never leave their environment. We also provide
+          - link "MCP tunnels" [ref=e767] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview
+          - text: ", which let you connect Claude to Model Context Protocol (MCP) servers that run inside your private network. So self-hosted sandboxes control"
+          - emphasis [ref=e768]: where the agent’s code executes
+          - text: ", and MCP tunnels control"
+          - emphasis [ref=e769]: how Anthropic reaches MCP servers in your network
+          - text: ", giving you the ability to control exactly what stays inside your boundary."
+        - figure "The built-in observability console for Claude Managed Agents records every event, so you can scrub the timeline, open any step, and read its raw payload." [ref=e770]:
+          - emphasis [ref=e772]: The built-in observability console for Claude Managed Agents records every event, so you can scrub the timeline, open any step, and read its raw payload.
+        - paragraph [ref=e773]:
+          - text: Beyond these features, additional capabilities include outcomes that let an agent grade its own work against a rubric, multiagent orchestration, permission policies, and webhooks. Learn more
+          - link "here" [ref=e774] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/overview
+          - text: .
+        - heading "How customers are building on Managed Agents today" [level=3] [ref=e775]:
+          - strong [ref=e776]: How customers are building on Managed Agents today
+        - paragraph [ref=e777]: "Across industries, customers are already shipping agents in production with Claude Managed Agents. Here are a few examples:"
+        - list [ref=e778]:
+          - listitem [ref=e779]:
+            - link "Notion" [ref=e780] [cursor=pointer]:
+              - /url: https://claude.com/customers/notion
+            - text: "runs its Custom Agents on Managed Agents: teams assign work to Claude straight from a task board, Claude picks up the docs, meeting notes, and connected data around each task, and the finished code, decks, and sites land back in the workspace for review. Dozens of tasks run in parallel, and their team has described an early prototype turning roughly twelve hours of work into twenty minutes."
+          - listitem [ref=e781]:
+            - link "Rakuten" [ref=e782] [cursor=pointer]:
+              - /url: https://claude.com/customers/rakuten
+            - text: used Managed Agents to ship specialist agents across product, sales, marketing, and finance, each live within about a week.
+            - link [ref=e783] [cursor=pointer]:
+              - /url: https://claude.com/customers/sentry
+          - listitem [ref=e784]:
+            - link "Sentry" [ref=e785] [cursor=pointer]:
+              - /url: https://claude.com/customers/sentry
+            - text: paired its Seer debugging agent with a Claude agent that writes the patch and opens the PR, built in weeks instead of months by a single engineer.
+            - link [ref=e786] [cursor=pointer]:
+              - /url: https://claude.com/blog/claude-managed-agents
+          - listitem [ref=e787]:
+            - link "Asana" [ref=e788] [cursor=pointer]:
+              - /url: https://claude.com/blog/claude-managed-agents
+            - text: built AI Teammates that pick up tasks inside projects, and
+            - link "Atlassian" [ref=e789] [cursor=pointer]:
+              - /url: https://claude.com/blog/claude-managed-agents
+            - text: put developer agents into Jira workflows.
+        - heading "Getting started with Claude Managed Agents" [level=2] [ref=e790]:
+          - strong [ref=e791]: Getting started with Claude Managed Agents
+        - paragraph [ref=e792]:
+          - text: We built Managed Agents to make it as easy as possible to spin up agents through Claude Code and the Claude Developer Console at
+          - link "platform.claude.com" [ref=e793] [cursor=pointer]:
+            - /url: http://platform.claude.com
+          - text: . The Console’s quickstart, for example, lets you start from an agent template or describe an agent in plain language, then turn it into a production-ready agent you can secure and deploy in minutes.
+        - 'figure "The agent quickstart at platform.claude.com: start from a template or describe what you want to build." [ref=e794]':
+          - emphasis [ref=e796]: "The agent quickstart at platform.claude.com: start from a template or describe what you want to build."
+        - 'figure "A few steps later: the agent is created, the environment is configured, and a session is live. The console streams the run as it happens." [ref=e797]':
+          - emphasis [ref=e799]: "A few steps later: the agent is created, the environment is configured, and a session is live. The console streams the run as it happens."
+        - paragraph [ref=e800]:
+          - text: In Claude Code, the
+          - link "/claude-api skill" [ref=e801] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/claude-api-skill
+          - text: is provided by default and provides Claude with detailed, up-to-date reference material for building applications on Claude Managed Agents. We highly recommend that you utilize it for the best practices on setting up your Managed Agents application. Get started by running /claude-api managed-agents-onboard for an interview-driven walkthrough for setting up a new Managed Agent from scratch.
+        - figure
+        - heading "The future of building managed agents" [level=2] [ref=e802]:
+          - strong [ref=e803]: The future of building managed agents
+        - paragraph [ref=e804]: "As teams share what they’re building with Managed Agents, we see that the time they used to spend on production infrastructure now goes to what differentiates their agents: managing context and tailoring the experience to users. Now, when a new model comes out, you update your agent to use it, rerun your evals, and ship the improvement without touching the architecture underneath."
+        - paragraph [ref=e805]: We’re excited to see what you build.
+        - paragraph [ref=e806]:
+          - link "Get started" [ref=e807] [cursor=pointer]:
+            - /url: https://platform.claude.com/docs/en/managed-agents/overview
+            - strong [ref=e808]:
+              - emphasis [ref=e809]: Get started
+          - strong [ref=e810]:
+            - emphasis [ref=e811]: with Claude Managed Agents.
+        - paragraph [ref=e812]:
+          - emphasis [ref=e813]: This article was written by Gagan Bhat and Isabella He, Members of Technical Staff on Anthropic’s Applied AI team. They'd like to thank Hema Thanki, Jess Yan, and Molly Vorwerck for their contributions.
+      - generic [ref=e818]:
+        - generic [ref=e819]:
+          - heading "Related posts" [level=2] [ref=e822]
+          - paragraph [ref=e825]: Explore more product news and best practices for teams building with Claude.
+        - list [ref=e828]:
+          - listitem [ref=e829]:
+            - generic [ref=e830]:
+              - generic [ref=e835]:
+                - generic [ref=e836]:
+                  - generic [ref=e837]: Mar 5, 2026
+                  - 'heading "Skills explained: How Skills compares to prompts, Projects, MCP, and subagents" [level=3] [ref=e838]'
+                - list [ref=e840]:
+                  - listitem [ref=e841]:
+                    - generic [ref=e842]:
+                      - img [ref=e845]
+                      - generic [ref=e847]: Agents
+              - 'link "Skills explained: How Skills compares to prompts, Projects, MCP, and subagents" [ref=e849] [cursor=pointer]':
+                - /url: /blog/skills-explained
+                - generic [ref=e850]: "Skills explained: How Skills compares to prompts, Projects, MCP, and subagents"
+          - listitem [ref=e851]:
+            - generic [ref=e852]:
+              - generic [ref=e853]:
+                - generic [ref=e854]:
+                  - generic [ref=e855]: Oct 31, 2025
+                  - heading "What is Model Context Protocol? Connect AI to your world" [level=3] [ref=e856]
+                - list [ref=e858]:
+                  - listitem [ref=e859]:
+                    - generic [ref=e860]:
+                      - img [ref=e863]
+                      - generic [ref=e865]: Agents
+              - link "What is Model Context Protocol? Connect AI to your world" [ref=e867] [cursor=pointer]:
+                - /url: /blog/what-is-model-context-protocol
+                - generic [ref=e868]: What is Model Context Protocol? Connect AI to your world
+          - listitem [ref=e869]:
+            - generic [ref=e870]:
+              - generic [ref=e875]:
+                - generic [ref=e876]:
+                  - generic [ref=e877]: Oct 30, 2025
+                  - heading "Building AI agents for financial services" [level=3] [ref=e878]
+                - list [ref=e880]:
+                  - listitem [ref=e881]:
+                    - generic [ref=e882]:
+                      - img [ref=e885]
+                      - generic [ref=e887]: Agents
+              - link "Building AI agents for financial services" [ref=e889] [cursor=pointer]:
+                - /url: /blog/building-ai-agents-in-financial-services
+                - generic [ref=e890]: Building AI agents for financial services
+          - listitem [ref=e891]:
+            - generic [ref=e892]:
+              - generic [ref=e897]:
+                - generic [ref=e898]:
+                  - generic [ref=e899]: Oct 30, 2025
+                  - heading "Building AI agents for healthcare and life sciences" [level=3] [ref=e900]
+                - list [ref=e902]:
+                  - listitem [ref=e903]:
+                    - generic [ref=e904]:
+                      - img [ref=e907]
+                      - generic [ref=e909]: Agents
+              - link "Building AI agents for healthcare and life sciences" [ref=e911] [cursor=pointer]:
+                - /url: /blog/building-ai-agents-in-healthcare-and-life-sciences
+                - generic [ref=e912]: Building AI agents for healthcare and life sciences
+      - generic [ref=e919]:
+        - generic [ref=e921]:
+          - heading "Transform how your organization operates with Claude" [level=2] [ref=e923]
+          - generic [ref=e925]:
+            - generic [ref=e926]:
+              - generic [ref=e927]: See pricing
+              - link "See pricing" [ref=e929] [cursor=pointer]:
+                - /url: https://claude.com/pricing#api
+                - generic [ref=e930]: See pricing
+            - generic [ref=e931]:
+              - generic [ref=e932]: Contact sales
+              - link "Contact sales" [ref=e934] [cursor=pointer]:
+                - /url: https://claude.com/contact-sales
+                - generic [ref=e935]: Contact sales
+        - generic [ref=e941]:
+          - img [ref=e945]
+          - paragraph [ref=e953]: Get the developer newsletter
+          - paragraph [ref=e955]: Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.
+          - form "Claude developer newsletter subscription" [ref=e957]:
+            - generic [ref=e958]:
+              - textbox "email" [ref=e959]:
+                - /placeholder: Enter your email
+              - generic [ref=e960] [cursor=pointer]:
+                - img [ref=e963]
+                - button "Subscribe" [ref=e966]:
+                  - generic [ref=e967]: Subscribe
+            - paragraph [ref=e969]: Please provide your email address if you'd like to receive our monthly developer newsletter. You can unsubscribe at any time.
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - img [ref=e100]
+              - link "Homepage" [ref=e104] [cursor=pointer]:
+                - /url: https://claude.com
+                - generic [ref=e105]: Homepage
+            - generic [ref=e107]:
+              - form "Footer Prompt" [ref=e110]:
+                - generic [ref=e111]:
+                  - textbox "How can I help you today?" [ref=e112]
+                  - generic [ref=e113]:
+                    - img [ref=e116]
+                    - button "Next" [ref=e119] [cursor=pointer]:
+                      - generic [ref=e120]: Next
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - img [ref=e125]
+                  - generic [ref=e127]: Write
+                  - button "Button Text" [ref=e129] [cursor=pointer]:
+                    - generic [ref=e130]: Button Text
+                - generic [ref=e131]:
+                  - img [ref=e134]
+                  - generic [ref=e136]: Learn
+                  - button "Button Text" [ref=e138] [cursor=pointer]:
+                    - generic [ref=e139]: Button Text
+                - generic [ref=e140]:
+                  - img [ref=e143]
+                  - generic [ref=e145]: Code
+                  - button "Button Text" [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148]: Button Text
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - link "Anthropic" [ref=e164] [cursor=pointer]:
+                - /url: https://www.anthropic.com/
+                - generic [ref=e165]: Anthropic
+            - generic [ref=e166]: © 2026 Anthropic PBC
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: Products
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - generic [ref=e174]: Claude
+                  - link "Claude" [ref=e176] [cursor=pointer]:
+                    - /url: /product/overview
+                    - generic [ref=e177]: Claude
+                - listitem [ref=e178]:
+                  - generic [ref=e179]: Claude Code
+                  - link "Claude Code" [ref=e181] [cursor=pointer]:
+                    - /url: /product/claude-code
+                    - generic [ref=e182]: Claude Code
+                - listitem [ref=e183]:
+                  - generic [ref=e184]: Claude Code for Enterprise
+                  - link "Claude Code for Enterprise" [ref=e186] [cursor=pointer]:
+                    - /url: /product/claude-code/enterprise
+                    - generic [ref=e187]: Claude Code for Enterprise
+                - listitem [ref=e188]:
+                  - generic [ref=e189]: Claude Cowork
+                  - link "Claude Cowork" [ref=e191] [cursor=pointer]:
+                    - /url: /product/cowork
+                    - generic [ref=e192]: Claude Cowork
+                - listitem [ref=e193]:
+                  - generic [ref=e194]: "@Claude"
+                  - link "@Claude" [ref=e196] [cursor=pointer]:
+                    - /url: /product/tag
+                    - generic [ref=e197]: "@Claude"
+                - listitem [ref=e198]:
+                  - generic [ref=e199]: Claude Design
+                  - link "Claude Design" [ref=e201] [cursor=pointer]:
+                    - /url: /product/design
+                    - generic [ref=e202]: Claude Design
+                - listitem [ref=e203]:
+                  - generic [ref=e204]: Claude Science
+                  - link "Claude Science" [ref=e206] [cursor=pointer]:
+                    - /url: /product/claude-science
+                    - generic [ref=e207]: Claude Science
+                - listitem [ref=e208]:
+                  - generic [ref=e209]: Claude Security
+                  - link "Claude Security" [ref=e211] [cursor=pointer]:
+                    - /url: /product/claude-security
+                    - generic [ref=e212]: Claude Security
+                - listitem [ref=e213]:
+                  - generic [ref=e214]: Download app
+                  - link "Download app" [ref=e216] [cursor=pointer]:
+                    - /url: /download
+                    - generic [ref=e217]: Download app
+                - listitem [ref=e218]:
+                  - generic [ref=e219]: Pricing
+                  - link "Pricing" [ref=e221] [cursor=pointer]:
+                    - /url: /pricing
+                    - generic [ref=e222]: Pricing
+                - listitem [ref=e223]:
+                  - generic [ref=e224]: Log in
+                  - link "Log in" [ref=e226] [cursor=pointer]:
+                    - /url: https://claude.ai/redirect/claudedotcom.v1.a9ce817b-2e38-4600-a195-451c238a71da/login
+                    - generic [ref=e227]: Log in
+            - generic [ref=e228]:
+              - generic [ref=e229]: Features
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - generic [ref=e232]: Claude for Chrome
+                  - link "Claude for Chrome" [ref=e234] [cursor=pointer]:
+                    - /url: /claude-for-chrome
+                    - generic [ref=e235]: Claude for Chrome
+                - listitem [ref=e236]:
+                  - generic [ref=e237]: Claude for Microsoft 365
+                  - link "Claude for Microsoft 365" [ref=e239] [cursor=pointer]:
+                    - /url: /claude-for-microsoft-365
+                    - generic [ref=e240]: Claude for Microsoft 365
+                - listitem [ref=e241]:
+                  - generic [ref=e242]: Skills
+                  - link "Skills" [ref=e244] [cursor=pointer]:
+                    - /url: /skills
+                    - generic [ref=e245]: Skills
+            - generic [ref=e246]:
+              - generic [ref=e247]: Models
+              - list [ref=e248]:
+                - listitem [ref=e249]:
+                  - generic [ref=e250]: Mythos
+                  - link "Mythos" [ref=e252] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/mythos
+                    - generic [ref=e253]: Mythos
+                - listitem [ref=e254]:
+                  - generic [ref=e255]: Fable
+                  - link "Fable" [ref=e257] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/fable
+                    - generic [ref=e258]: Fable
+                - listitem [ref=e259]:
+                  - generic [ref=e260]: Opus
+                  - link "Opus" [ref=e262] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/opus
+                    - generic [ref=e263]: Opus
+                - listitem [ref=e264]:
+                  - generic [ref=e265]: Sonnet
+                  - link "Sonnet" [ref=e267] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/sonnet
+                    - generic [ref=e268]: Sonnet
+                - listitem [ref=e269]:
+                  - generic [ref=e270]: Haiku
+                  - link "Haiku" [ref=e272] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/claude/haiku
+                    - generic [ref=e273]: Haiku
+          - generic [ref=e274]:
+            - generic [ref=e275]:
+              - generic [ref=e276]: Solutions
+              - list [ref=e277]:
+                - listitem [ref=e278]:
+                  - generic [ref=e279]: AI agents
+                  - link "AI agents" [ref=e281] [cursor=pointer]:
+                    - /url: /solutions/agents
+                    - generic [ref=e282]: AI agents
+                - listitem [ref=e283]:
+                  - generic [ref=e284]: Code modernization
+                  - link "Code modernization" [ref=e286] [cursor=pointer]:
+                    - /url: /solutions/code-modernization
+                    - generic [ref=e287]: Code modernization
+                - listitem [ref=e288]:
+                  - generic [ref=e289]: Coding
+                  - link "Coding" [ref=e291] [cursor=pointer]:
+                    - /url: /solutions/coding
+                    - generic [ref=e292]: Coding
+                - listitem [ref=e293]:
+                  - generic [ref=e294]: Customer support
+                  - link "Customer support" [ref=e296] [cursor=pointer]:
+                    - /url: /solutions/customer-support
+                    - generic [ref=e297]: Customer support
+                - listitem [ref=e298]:
+                  - generic [ref=e299]: Education
+                  - link "Education" [ref=e301] [cursor=pointer]:
+                    - /url: /solutions/education
+                    - generic [ref=e302]: Education
+                - listitem [ref=e303]:
+                  - generic [ref=e304]: Enterprise
+                  - link "Enterprise" [ref=e306] [cursor=pointer]:
+                    - /url: /solutions/enterprise
+                    - generic [ref=e307]: Enterprise
+                - listitem [ref=e308]:
+                  - generic [ref=e309]: Financial services
+                  - link "Financial services" [ref=e311] [cursor=pointer]:
+                    - /url: /solutions/financial-services
+                    - generic [ref=e312]: Financial services
+                - listitem [ref=e313]:
+                  - generic [ref=e314]: Government
+                  - link "Government" [ref=e316] [cursor=pointer]:
+                    - /url: /solutions/government
+                    - generic [ref=e317]: Government
+                - listitem [ref=e318]:
+                  - generic [ref=e319]: Healthcare
+                  - link "Healthcare" [ref=e321] [cursor=pointer]:
+                    - /url: /solutions/healthcare
+                    - generic [ref=e322]: Healthcare
+                - listitem [ref=e323]:
+                  - generic [ref=e324]: Legal
+                  - link "Legal" [ref=e326] [cursor=pointer]:
+                    - /url: /solutions/legal
+                    - generic [ref=e327]: Legal
+                - listitem [ref=e328]:
+                  - generic [ref=e329]: Life sciences
+                  - link "Life sciences" [ref=e331] [cursor=pointer]:
+                    - /url: /solutions/life-sciences
+                    - generic [ref=e332]: Life sciences
+                - listitem [ref=e333]:
+                  - generic [ref=e334]: Nonprofits
+                  - link "Nonprofits" [ref=e336] [cursor=pointer]:
+                    - /url: /solutions/nonprofits
+                    - generic [ref=e337]: Nonprofits
+                - listitem [ref=e338]:
+                  - generic [ref=e339]: Security
+                  - link "Security" [ref=e341] [cursor=pointer]:
+                    - /url: /solutions/security
+                    - generic [ref=e342]: Security
+                - listitem [ref=e343]:
+                  - generic [ref=e344]: Small business
+                  - link "Small business" [ref=e346] [cursor=pointer]:
+                    - /url: /solutions/small-business
+                    - generic [ref=e347]: Small business
+                - listitem [ref=e348]:
+                  - generic [ref=e349]: Startups
+                  - link "Startups" [ref=e351] [cursor=pointer]:
+                    - /url: /programs/startups
+                    - generic [ref=e352]: Startups
+            - generic [ref=e353]:
+              - generic [ref=e354]: Claude Platform
+              - list [ref=e355]:
+                - listitem [ref=e356]:
+                  - generic [ref=e357]: Overview
+                  - link "Overview" [ref=e359] [cursor=pointer]:
+                    - /url: /platform/api
+                    - generic [ref=e360]: Overview
+                - listitem [ref=e361]:
+                  - generic [ref=e362]: Developer docs
+                  - link "Developer docs" [ref=e364] [cursor=pointer]:
+                    - /url: https://platform.claude.com/docs
+                    - generic [ref=e365]: Developer docs
+                - listitem [ref=e366]:
+                  - generic [ref=e367]: Pricing
+                  - link "Pricing" [ref=e369] [cursor=pointer]:
+                    - /url: https://claude.com/pricing#api
+                    - generic [ref=e370]: Pricing
+                - listitem [ref=e371]:
+                  - generic [ref=e372]: Ecosystem
+                  - link "Ecosystem" [ref=e374] [cursor=pointer]:
+                    - /url: /ecosystem
+                    - generic [ref=e375]: Ecosystem
+                - listitem [ref=e376]:
+                  - generic [ref=e377]: Marketplace
+                  - link "Marketplace" [ref=e379] [cursor=pointer]:
+                    - /url: /platform/marketplace
+                    - generic [ref=e380]: Marketplace
+                - listitem [ref=e381]:
+                  - generic [ref=e382]: Claude on AWS
+                  - link "Claude on AWS" [ref=e384] [cursor=pointer]:
+                    - /url: /partners/claude-on-aws
+                    - generic [ref=e385]: Claude on AWS
+                - listitem [ref=e386]:
+                  - generic [ref=e387]: Google Cloud
+                  - link "Google Cloud" [ref=e389] [cursor=pointer]:
+                    - /url: /partners/google-cloud
+                    - generic [ref=e390]: Google Cloud
+                - listitem [ref=e391]:
+                  - generic [ref=e392]: Microsoft Foundry
+                  - link "Microsoft Foundry" [ref=e394] [cursor=pointer]:
+                    - /url: /partners/microsoft-foundry
+                    - generic [ref=e395]: Microsoft Foundry
+                - listitem [ref=e396]:
+                  - generic [ref=e397]: Regional compliance
+                  - link "Regional compliance" [ref=e399] [cursor=pointer]:
+                    - /url: /regional-compliance
+                    - generic [ref=e400]: Regional compliance
+                - listitem [ref=e401]:
+                  - generic [ref=e402]: Console login
+                  - link "Console login" [ref=e404] [cursor=pointer]:
+                    - /url: https://platform.claude.com/
+                    - generic [ref=e405]: Console login
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - generic [ref=e408]: Resources
+              - list [ref=e409]:
+                - listitem [ref=e410]:
+                  - generic [ref=e411]: Blog
+                  - link "Blog" [ref=e413] [cursor=pointer]:
+                    - /url: /blog
+                    - generic [ref=e414]: Blog
+                - listitem [ref=e415]:
+                  - generic [ref=e416]: Claude partner network
+                  - link "Claude partner network" [ref=e418] [cursor=pointer]:
+                    - /url: /partners
+                    - generic [ref=e419]: Claude partner network
+                - listitem [ref=e420]:
+                  - generic [ref=e421]: Community
+                  - link "Community" [ref=e423] [cursor=pointer]:
+                    - /url: /community
+                    - generic [ref=e424]: Community
+                - listitem [ref=e425]:
+                  - generic [ref=e426]: Connectors
+                  - link "Connectors" [ref=e428] [cursor=pointer]:
+                    - /url: /connectors
+                    - generic [ref=e429]: Connectors
+                - listitem [ref=e430]:
+                  - generic [ref=e431]: Courses
+                  - link "Courses" [ref=e433] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/learn
+                    - generic [ref=e434]: Courses
+                - listitem [ref=e435]:
+                  - generic [ref=e436]: Customer stories
+                  - link "Customer stories" [ref=e438] [cursor=pointer]:
+                    - /url: /customers
+                    - generic [ref=e439]: Customer stories
+                - listitem [ref=e440]:
+                  - generic [ref=e441]: Engineering at Anthropic
+                  - link "Engineering at Anthropic" [ref=e443] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/engineering
+                    - generic [ref=e444]: Engineering at Anthropic
+                - listitem [ref=e445]:
+                  - generic [ref=e446]: Events
+                  - link "Events" [ref=e448] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/events
+                    - generic [ref=e449]: Events
+                - listitem [ref=e450]:
+                  - generic [ref=e451]: Plugins
+                  - link "Plugins" [ref=e453] [cursor=pointer]:
+                    - /url: /plugins
+                    - generic [ref=e454]: Plugins
+                - listitem [ref=e455]:
+                  - generic [ref=e456]: Powered by Claude
+                  - link "Powered by Claude" [ref=e458] [cursor=pointer]:
+                    - /url: /partners/powered-by-claude
+                    - generic [ref=e459]: Powered by Claude
+                - listitem [ref=e460]:
+                  - generic [ref=e461]: Service partners
+                  - link "Service partners" [ref=e463] [cursor=pointer]:
+                    - /url: /partners/services
+                    - generic [ref=e464]: Service partners
+                - listitem [ref=e465]:
+                  - generic [ref=e466]: Tutorials
+                  - link "Tutorials" [ref=e468] [cursor=pointer]:
+                    - /url: /resources/tutorials
+                    - generic [ref=e469]: Tutorials
+                - listitem [ref=e470]:
+                  - generic [ref=e471]: Use cases
+                  - link "Use cases" [ref=e473] [cursor=pointer]:
+                    - /url: /resources/use-cases
+                    - generic [ref=e474]: Use cases
+            - generic [ref=e475]:
+              - generic [ref=e476]: Company
+              - list [ref=e477]:
+                - listitem [ref=e478]:
+                  - generic [ref=e479]: Anthropic
+                  - link "Anthropic" [ref=e481] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/
+                    - generic [ref=e482]: Anthropic
+                - listitem [ref=e483]:
+                  - generic [ref=e484]: Careers
+                  - link "Careers" [ref=e486] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/careers
+                    - generic [ref=e487]: Careers
+                - listitem [ref=e488]:
+                  - generic [ref=e489]: Policy
+                  - link "Policy" [ref=e491] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy
+                    - generic [ref=e492]: Policy
+                - listitem [ref=e493]:
+                  - generic [ref=e494]: Economic Futures
+                  - link "Economic Futures" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/economic-futures
+                    - generic [ref=e497]: Economic Futures
+                - listitem [ref=e498]:
+                  - generic [ref=e499]: Research
+                  - link "Research" [ref=e501] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/research
+                    - generic [ref=e502]: Research
+                - listitem [ref=e503]:
+                  - generic [ref=e504]: News
+                  - link "News" [ref=e506] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news
+                    - generic [ref=e507]: News
+                - listitem [ref=e508]:
+                  - generic [ref=e509]: Policy on the AI Exponential
+                  - link "Policy on the AI Exponential" [ref=e511] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/policy-on-the-ai-exponential
+                    - generic [ref=e512]: Policy on the AI Exponential
+                - listitem [ref=e513]:
+                  - generic [ref=e514]: Responsible Scaling Policy
+                  - link "Responsible Scaling Policy" [ref=e516] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
+                    - generic [ref=e517]: Responsible Scaling Policy
+                - listitem [ref=e518]:
+                  - generic [ref=e519]: Security and compliance
+                  - link "Security and compliance" [ref=e521] [cursor=pointer]:
+                    - /url: https://trust.anthropic.com/
+                    - generic [ref=e522]: Security and compliance
+                - listitem [ref=e523]:
+                  - generic [ref=e524]: Transparency
+                  - link "Transparency" [ref=e526] [cursor=pointer]:
+                    - /url: https://anthropic.com/transparency
+                    - generic [ref=e527]: Transparency
+          - generic [ref=e528]:
+            - generic [ref=e529]:
+              - generic [ref=e530]: Help and security
+              - list [ref=e531]:
+                - listitem [ref=e532]:
+                  - generic [ref=e533]: Availability
+                  - link "Availability" [ref=e535] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/supported-countries
+                    - generic [ref=e536]: Availability
+                - listitem [ref=e537]:
+                  - generic [ref=e538]: Status
+                  - link "Status" [ref=e540] [cursor=pointer]:
+                    - /url: https://status.anthropic.com/
+                    - generic [ref=e541]: Status
+                - listitem [ref=e542]:
+                  - generic [ref=e543]: Support center
+                  - link "Support center" [ref=e545] [cursor=pointer]:
+                    - /url: https://support.claude.com/en/
+                    - generic [ref=e546]: Support center
+            - generic [ref=e547]:
+              - generic [ref=e548]: Terms and policies
+              - list [ref=e549]:
+                - listitem [ref=e550]:
+                  - button [ref=e551] [cursor=pointer]:
+                    - generic [ref=e552]: Privacy choices
+                - listitem [ref=e553]:
+                  - generic [ref=e554]: Privacy policy
+                  - link "Privacy policy" [ref=e556] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/privacy
+                    - generic [ref=e557]: Privacy policy
+                - listitem [ref=e558]:
+                  - generic [ref=e559]: Responsible disclosure policy
+                  - link "Responsible disclosure policy" [ref=e561] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/responsible-disclosure-policy
+                    - generic [ref=e562]: Responsible disclosure policy
+                - listitem [ref=e563]:
+                  - generic [ref=e564]: "Terms of service: Commercial"
+                  - 'link "Terms of service: Commercial" [ref=e566] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/commercial-terms
+                    - generic [ref=e567]: "Terms of service: Commercial"
+                - listitem [ref=e568]:
+                  - generic [ref=e569]: "Terms of service: Consumer"
+                  - 'link "Terms of service: Consumer" [ref=e571] [cursor=pointer]':
+                    - /url: https://www.anthropic.com/legal/consumer-terms
+                    - generic [ref=e572]: "Terms of service: Consumer"
+                - listitem [ref=e573]:
+                  - generic [ref=e574]: Usage policy
+                  - link "Usage policy" [ref=e576] [cursor=pointer]:
+                    - /url: https://www.anthropic.com/legal/aup
+                    - generic [ref=e577]: Usage policy
+      - generic [ref=e578]:
+        - generic [ref=e579]:
+          - generic [ref=e580]:
+            - link "x.com" [ref=e582] [cursor=pointer]:
+              - /url: https://x.com/claudeai
+              - generic [ref=e583]: x.com
+            - img [ref=e584]
+          - generic [ref=e587]:
+            - link "LinkedIn" [ref=e589] [cursor=pointer]:
+              - /url: https://www.linkedin.com/showcase/claude/
+              - generic [ref=e590]: LinkedIn
+            - img [ref=e591]
+          - generic [ref=e593]:
+            - link "YouTube" [ref=e595] [cursor=pointer]:
+              - /url: https://www.youtube.com/@anthropic-ai
+              - generic [ref=e596]: YouTube
+            - img [ref=e597]
+          - generic [ref=e600]:
+            - link "Instagram" [ref=e602] [cursor=pointer]:
+              - /url: https://www.instagram.com/claudeai
+              - generic [ref=e603]: Instagram
+            - img [ref=e604]
+        - button "English (US)" [ref=e610] [cursor=pointer]:
+          - img [ref=e613]
+          - generic [ref=e615]: English (US)
+          - img [ref=e616]
+  - tooltip

@@ -1,0 +1,46 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 38.867,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_1.html",
+ "topbarIndex": "[01/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 8.923,
+   "text": "你大概听过这样的说法：把一个任务丢给 AI Agent，挂机走人，第二天回来就是能跑的代码。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 8.923,
+   "localDuration": 4.073,
+   "text": "这两年，这几乎是所有人对自动化编程的想象。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.14,
+   "localDuration": 5.47,
+   "text": "但一个叫 Elvis 的资深工程师，最近发了一篇五十六万阅读的文章。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 18.61,
+   "localDuration": 5.309,
+   "text": "他上来第一句就是：百分之九十九的人，都用错了 /goal 和循环。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.084,
+   "localDuration": 4.536,
+   "text": "今天这一期，我们不聊\"AI 帮你写代码\"这种老故事。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 28.62,
+   "localDuration": 10.12,
+   "text": "我们聊一件更狠的事：他怎么用一个 prompt，跑了三十个小时，把别人的整个产品，反向拆解，然后做到了对方的五十倍。"
+  }
+ ]
+}

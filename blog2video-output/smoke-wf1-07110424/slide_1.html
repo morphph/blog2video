@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1920px; background: #0D0D1A;
+      font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #FFFFFF; overflow: hidden;
+    }
+    .slide {
+      width: 100%; height: 100%;
+      padding: 200px 72px 420px 72px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      position: relative;
+    }
+    .glow {
+      position: absolute; top: 240px; left: 50%; transform: translateX(-50%);
+      width: 760px; height: 760px;
+      background: radial-gradient(circle, rgba(139,92,246,0.22) 0%, rgba(13,13,26,0) 68%);
+      pointer-events: none;
+    }
+    .kicker {
+      font-size: 30px; color: #8B5CF6; font-weight: 700; letter-spacing: 4px;
+      margin-bottom: 40px; position: relative;
+    }
+    .title { font-size: 108px; font-weight: 800; line-height: 1.12; position: relative; }
+    .title .em { color: #F59E0B; }
+    .sub { font-size: 40px; color: #B0B0CC; margin-top: 44px; line-height: 1.5; position: relative; }
+    .cards { display: flex; gap: 28px; margin-top: 72px; width: 100%; position: relative; }
+    .card {
+      flex: 1; background: #1A1A2E; border-radius: 12px; padding: 36px 24px;
+      border: 1px solid rgba(139,92,246,0.2);
+    }
+    .card.good { border-left: 4px solid #10B981; }
+    .card.bad { border-left: 4px solid #EF4444; }
+    .card .tag { font-size: 32px; font-weight: 800; margin-bottom: 14px; }
+    .card.good .tag { color: #10B981; }
+    .card.bad .tag { color: #EF4444; }
+    .card .desc { font-size: 34px; color: #FFFFFF; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow"></div>
+    <div class="kicker">PAUL GRAHAM · 随笔精读</div>
+    <div class="title">坚持和固执<br><span class="em">到底差在哪？</span></div>
+    <div class="sub">身边总有死不放弃的人——<br>你多半说不清这道界线</div>
+    <div class="cards">
+      <div class="card good"><div class="tag">有的你佩服</div><div class="desc">觉得他有决心</div></div>
+      <div class="card bad"><div class="tag">有的你头疼</div><div class="desc">觉得他就是轴</div></div>
+    </div>
+  </div>
+</body>
+</html>

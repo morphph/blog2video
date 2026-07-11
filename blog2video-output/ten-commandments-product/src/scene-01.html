@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有 —— */
+[data-composition-id='s01'] .beat{position:absolute;left:0;right:0;top:0;bottom:0;
+  padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — hook */
+[data-composition-id='s01'] .a-kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .a-kicker .acc{color:#ccff4d}
+[data-composition-id='s01'] .a-title{margin-top:18px;font-weight:900;font-size:78px;line-height:1.1;color:#edebe6}
+[data-composition-id='s01'] .a-title .em{color:#ccff4d}
+[data-composition-id='s01'] .a-lead{margin-top:32px;font-weight:600;font-size:40px;line-height:1.48;color:#8a8a85}
+[data-composition-id='s01'] .a-lead strong{color:#edebe6}
+[data-composition-id='s01'] .a-chips{margin-top:52px;display:flex;flex-direction:column;gap:18px}
+
+/* beat B — three products / results */
+[data-composition-id='s01'] .b-kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .b-kicker .acc{color:#ccff4d}
+[data-composition-id='s01'] .b-title{margin-top:18px;font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .b-steps{margin-top:48px;display:flex;flex-direction:column;gap:16px;width:100%}
+[data-composition-id='s01'] .b-but{margin-top:44px;font-weight:900;font-size:66px;line-height:1.18;color:#edebe6}
+[data-composition-id='s01'] .b-but .em{color:#ccff4d}
+
+/* beat C — ten commandments reveal */
+[data-composition-id='s01'] .c-kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s01'] .c-kicker .acc{color:#ccff4d}
+[data-composition-id='s01'] .c-title{margin-top:16px;font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+[data-composition-id='s01'] .c-hl-wrap{margin-top:44px}
+[data-composition-id='s01'] .c-tag{margin-top:44px;display:inline-flex;align-items:center;gap:16px;
+  background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+[data-composition-id='s01'] .c-tag .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s01'] .c-tag .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+[data-composition-id='s01'] .c-sub{margin-top:24px;font-weight:600;font-size:38px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s01'] .c-sub .em{color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="37.433" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI产品<span class="b-cur"></span></div>
+      <div class="idx">[01/7]</div>
+    </div>
+
+    <!-- BEAT A: hook (0 - ~8.7) -->
+    <div class="beat" id="beatA">
+      <div class="a-kicker">PRODUCT COMMANDMENTS · <span class="acc">产品十诫</span></div>
+      <div class="a-title">AI 让造产品更容易<br><span class="em">也让你更容易骗自己</span></div>
+      <div class="a-lead">代码写得<strong>飞快</strong>，每天几千行<br>架构也很漂亮<br>但就是<strong>找不到用户</strong></div>
+      <div class="a-chips">
+        <div class="chip ca1"><span class="ci">CODE</span><span class="ct">写得再快，找不到用户没用</span></div>
+      </div>
+    </div>
+
+    <!-- BEAT B: three products (8.7 - ~27.7) -->
+    <div class="beat" id="beatB" style="opacity:0">
+      <div class="b-kicker">CASE STUDY · <span class="acc">Feitong Yang</span></div>
+      <div class="b-title">三个产品，三次经历</div>
+      <div class="b-steps">
+        <div class="row bs1">
+          <span class="n">01</span>
+          <div class="rb">
+            <div class="rt">Minecraft AI 队友</div>
+            <div class="rd">首个产品——探索 AI 游戏协作</div>
+          </div>
+        </div>
+        <div class="row bs2">
+          <span class="n">02</span>
+          <div class="rb">
+            <div class="rt">通用桌面 Agent</div>
+            <div class="rd">第二个产品——更泛化的自动化</div>
+          </div>
+        </div>
+        <div class="row bs3 now">
+          <span class="n">03</span>
+          <div class="rb">
+            <div class="rt">Shortcut · Excel 协作 AI</div>
+            <div class="rd">第三个——才勉强找到感觉</div>
+          </div>
+        </div>
+      </div>
+      <div class="b-but">前两个<span class="em">失败了</span></div>
+    </div>
+
+    <!-- BEAT C: ten commandments (27.7 - end) -->
+    <div class="beat" id="beatC" style="opacity:0">
+      <div class="c-kicker">DISTILLED · <span class="acc">三次经历提炼</span></div>
+      <div class="c-title">十条诫命</div>
+      <div class="c-hl-wrap">
+        <span class="hl"><span class="bar"></span><span class="tx" style="font-size:76px;font-weight:900">失败教训</span></span>
+      </div>
+      <div class="c-sub">不是成功秘诀，是<span class="em">用血换来的教训</span></div>
+      <div class="c-tag"><span class="dot"></span><span class="lab">最重要的几条，拆给你看</span></div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="8.689" data-track-index="5"><div class="sub-inner">你有没有见过那种创业团队——代码写得飞快，每天几千行，架构也很漂亮，但就是<span class="sub-k">找不到用户</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="8.856" data-duration="5.716" data-track-index="5"><div class="sub-inner">这篇文章的作者 <span class="sub-k">Feitong Yang</span>，是一家 AI Agent 创业公司的创始工程师。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.572" data-duration="8.638" data-track-index="5"><div class="sub-inner">他们做过三个产品：Minecraft 里的 AI 队友、通用桌面 Agent、还有一个叫 <span class="sub-k">Shortcut</span> 的 Excel 协作 AI。</div></div>
+    <div id="sub-4" class="clip sub" data-start="23.364" data-duration="4.242" data-track-index="5"><div class="sub-inner">他亲眼看着前两个<span class="sub-k">失败</span>，第三个才勉强找到感觉。</div></div>
+    <div id="sub-5" class="clip sub" data-start="27.756" data-duration="3.327" data-track-index="5"><div class="sub-inner">他把这三次经历提炼成<span class="sub-k">十条诫命</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="31.083" data-duration="2.883" data-track-index="5"><div class="sub-inner">不是成功秘诀，是<span class="sub-k">失败教训</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="33.966" data-duration="3.326" data-track-index="5"><div class="sub-inner">我把里面最重要的几条<span class="sub-k">拆给你看</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    window.__timelines = window.__timelines || {};
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    /* grid + topbar */
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},0.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},0.2);
+
+    /* BEAT A (0 ~ 8.7) */
+    tl.from(R+'.a-kicker',{y:-14,opacity:0,duration:.3,ease:'power2.out'},0.4);
+    tl.from(R+'.a-title',{y:22,opacity:0,duration:.38,ease:'power3.out'},0.7);
+    tl.from(R+'.a-lead',{y:18,opacity:0,duration:.35,ease:'expo.out'},1.8);
+    tl.from(R+'.ca1',{x:-26,opacity:0,duration:.32,ease:'power3.out'},3.5);
+    tl.to(R+'#beatA',{scale:1.03,duration:8.7,ease:'none'},0);
+
+    /* A -> B swap ~8.7 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},8.3);
+    tl.set(R+'#beatB',{opacity:1},8.7);
+
+    /* BEAT B (8.7 ~ 27.5) */
+    tl.from(R+'.b-kicker',{y:-14,opacity:0,duration:.3,ease:'power2.out'},8.9);
+    tl.from(R+'.b-title',{y:20,opacity:0,duration:.35,ease:'power3.out'},9.2);
+    tl.from(R+'.bs1',{x:-24,opacity:0,duration:.3,ease:'power3.out'},10.5);
+    tl.from(R+'.bs2',{x:-24,opacity:0,duration:.3,ease:'expo.out'},14.7);
+    tl.from(R+'.bs3',{x:-24,opacity:0,duration:.3,ease:'power2.out'},17.5);
+    tl.from(R+'.b-but',{y:20,opacity:0,duration:.35,ease:'power3.out'},23.5);
+    tl.to(R+'#beatB',{scale:1.025,duration:19,ease:'none'},8.7);
+
+    /* B -> C swap ~27.7 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},27.3);
+    tl.set(R+'#beatC',{opacity:1},27.75);
+
+    /* BEAT C (27.7 ~ end) */
+    tl.from(R+'.c-kicker',{y:-14,opacity:0,duration:.3,ease:'power2.out'},27.9);
+    tl.from(R+'.c-title',{y:20,opacity:0,duration:.38,ease:'power3.out'},28.2);
+    tl.from(R+'.c-hl-wrap',{opacity:0,duration:.15,ease:'power1.out'},28.8);
+    tl.to(R+'.c-hl-wrap .bar',{scaleX:1,duration:.32,ease:'power4.inOut'},28.9);
+    tl.to(R+'.c-hl-wrap .tx',{color:'#121212',duration:.12,ease:'power1.inOut'},29.06);
+    tl.from(R+'.c-sub',{y:16,opacity:0,duration:.32,ease:'power3.out'},31.2);
+    tl.from(R+'.c-tag',{y:18,opacity:0,duration:.35,ease:'expo.out'},33.1);
+    tl.to(R+'#beatC',{scale:1.03,duration:9.7,ease:'none'},27.75);
+
+    /* subtitles */
+    D2.subs(tl,[
+      ['#sub-1',0],['#sub-2',8.856],['#sub-3',14.572],
+      ['#sub-4',23.364],['#sub-5',27.756],['#sub-6',31.083],['#sub-7',33.966]
+    ].map(function(s){return [R+s[0],s[1]];}));
+
+    /* breath: odd scene = 'in' — applied to content; beats have their own scale already */
+    D2.breath(tl, R+'#beatA', 37.433, 'in');
+
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

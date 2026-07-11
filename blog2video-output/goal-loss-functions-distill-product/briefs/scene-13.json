@@ -1,0 +1,136 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "summary",
+ "dataDuration": 80.067,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_13.html",
+ "topbarIndex": "[13/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.001,
+   "localDuration": 1.816,
+   "text": "我们把这期拉回全局。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.981,
+   "localDuration": 4.909,
+   "text": "在软件的整个历史里，\"我们造出来了\"，一直就是护城河。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.89,
+   "localDuration": 1.818,
+   "text": "这个时代，正在关闭。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 8.857,
+   "localDuration": 3.792,
+   "text": "因为造这件事，成本正在塌缩到零。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 12.649,
+   "localDuration": 3.318,
+   "text": "产品，变成了一个周末的活儿。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 16.129,
+   "localDuration": 1.548,
+   "text": "下一个时代属于谁？"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 17.677,
+   "localDuration": 3.784,
+   "text": "属于那些握着\"产物本身从不包含\"的东西的人。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 21.461,
+   "localDuration": 2.236,
+   "text": "那份别人打不到分的评测集。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 23.697,
+   "localDuration": 3.095,
+   "text": "那份你的用户真实踩过的边缘情况清单。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 26.792,
+   "localDuration": 3.784,
+   "text": "那份你私下测量的 ground truth。"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 30.745,
+   "localDuration": 12.265,
+   "text": "一句话总结这一期：过去的护城河是\"我们造出来了\"；现在产品是一个周末就能做完的活儿，唯一造不出来、抄不走的，是对手的 Agent 打不到分的那份 eval。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 43.165,
+   "localDuration": 5.484,
+   "text": "谁手里握着对手看不见的目标，谁的循环，才能一直往下降。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 48.817,
+   "localDuration": 6.907,
+   "text": "所以如果你今天只带走一件事，那就是别再盯着\"让 Agent 帮我写代码\"了。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 55.724,
+   "localDuration": 3.999,
+   "text": "真正的功夫，在你怎么写一个它没法作弊的目标。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 59.869,
+   "localDuration": 1.284,
+   "text": "先蒙住答案。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 61.153,
+   "localDuration": 3.424,
+   "text": "给每一条约束配一把能测量的尺子。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 64.577,
+   "localDuration": 3.423,
+   "text": "把每一条廉价捷径,一条一条围死。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 68.149,
+   "localDuration": 1.95,
+   "text": "产品已经是一个周末的事了。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 70.099,
+   "localDuration": 3.151,
+   "text": "那就去建那份，一个周末碰不到的 eval。"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 73.405,
+   "localDuration": 4.192,
+   "text": "AI 世界很吵，精读一篇，胜过刷一百条。"
+  },
+  {
+   "id": "sub-21",
+   "localStart": 77.597,
+   "localDuration": 1.467,
+   "text": "我们下期再见。"
+  }
+ ]
+}

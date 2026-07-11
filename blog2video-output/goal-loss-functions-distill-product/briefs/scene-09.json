@@ -1,0 +1,130 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "principle",
+ "dataDuration": 75.433,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/goal-loss-functions-distill-product/slide_9.html",
+ "topbarIndex": "[09/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.003,
+   "localDuration": 1.607,
+   "text": "但光有约束还不够。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.61,
+   "localDuration": 2.856,
+   "text": "这是我觉得整篇里最锋利的一句话。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.611,
+   "localDuration": 2.987,
+   "text": "一个没有仪器的约束，只是一种氛围。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.598,
+   "localDuration": 5.446,
+   "text": "Agent 会兴高采烈地违反它，因为它根本感知不到自己在违反。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 13.215,
+   "localDuration": 5.148,
+   "text": "所以每一条约束，你都得配一个能让 Agent 自己检查的命令。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 18.507,
+   "localDuration": 1.318,
+   "text": "他举了个例子。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 19.825,
+   "localDuration": 6.776,
+   "text": "你想让 Agent 克隆一个界面，用\"让大模型给两张截图打分\"来当裁判。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 26.601,
+   "localDuration": 0.753,
+   "text": "结果呢？"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 27.354,
+   "localDuration": 4.706,
+   "text": "这个裁判会给一个有十二像素间距误差的克隆版打通过。"
+  },
+  {
+   "id": "sub-10",
+   "localStart": 32.223,
+   "localDuration": 0.827,
+   "text": "为什么？"
+  },
+  {
+   "id": "sub-11",
+   "localStart": 33.05,
+   "localDuration": 2.481,
+   "text": "因为大模型根本看不见图。"
+  },
+  {
+   "id": "sub-12",
+   "localStart": 35.531,
+   "localDuration": 2.687,
+   "text": "它是把图转成向量再比对的。"
+  },
+  {
+   "id": "sub-13",
+   "localStart": 38.379,
+   "localDuration": 5.183,
+   "text": "所以你要像素级精确，就得给 Agent 一个像素比对工具。"
+  },
+  {
+   "id": "sub-14",
+   "localStart": 43.562,
+   "localDuration": 3.038,
+   "text": "然后 /goal，直到像素差为零。"
+  },
+  {
+   "id": "sub-15",
+   "localStart": 46.6,
+   "localDuration": 3.753,
+   "text": "规律就一句：你看不见的东西，你就没法优化。"
+  },
+  {
+   "id": "sub-16",
+   "localStart": 50.511,
+   "localDuration": 1.975,
+   "text": "还有第三样，强制的熵。"
+  },
+  {
+   "id": "sub-17",
+   "localStart": 52.486,
+   "localDuration": 3.053,
+   "text": "Agent 天然会陷在局部最优里。"
+  },
+  {
+   "id": "sub-18",
+   "localStart": 55.539,
+   "localDuration": 6.645,
+   "text": "哪怕有一千个旋钮可以试，只要转某一个能提升百分之零点一，它就一直转那一个。"
+  },
+  {
+   "id": "sub-19",
+   "localStart": 62.384,
+   "localDuration": 5.948,
+   "text": "所以每一轮你得逼它反思：我是在造通用解，还是在背评测集？"
+  },
+  {
+   "id": "sub-20",
+   "localStart": 68.475,
+   "localDuration": 6.808,
+   "text": "卡住了，下一轮就不许是\"同一个想法，再使劲\"，得来一次真正的跳跃。"
+  }
+ ]
+}

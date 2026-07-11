@@ -1,0 +1,46 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 39.667,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07111012/slide_1.html",
+ "topbarIndex": "[01/13]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 4.387,
+   "text": "你现在最想要的,可能是一个能改变世界的好点子。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 4.387,
+   "localDuration": 5.532,
+   "text": "但我今天要告诉你一件反过来的事:好点子根本不是稀缺的东西。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 10.08,
+   "localDuration": 5.766,
+   "text": "这话是 Paul Graham 说的,硅谷创业工厂 Y Combinator 的创始人。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.846,
+   "localDuration": 8.124,
+   "text": "19 年里,他和妻子 Jessica 资助了超过 4000 家创业公司,从中长出过 Airbnb、Stripe 这样的巨头。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 24.12,
+   "localDuration": 7.519,
+   "text": "他专门给一群 14、15 岁的中学生做了场演讲,主题是\"怎么创办一家 Google\"。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 31.639,
+   "localDuration": 7.869,
+   "text": "今天我不跟你聊怎么找点子——恰恰相反,我要告诉你,为什么\"找点子\"这件事本身,是个假问题。"
+  }
+ ]
+}

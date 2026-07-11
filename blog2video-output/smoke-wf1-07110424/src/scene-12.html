@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有(收官:五品质总览 + 对/错固执对比 + 签名收尾)—— */
+[data-composition-id='s12'] .h1 .ne{font-family:'JetBrains Mono',monospace;font-weight:700;color:#ccff4d;margin:0 12px}
+[data-composition-id='s12'] .qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;width:100%}
+[data-composition-id='s12'] .q{background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 10px 22px;display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+[data-composition-id='s12'] .q .qi{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:25px;color:#ccff4d;letter-spacing:.03em}
+[data-composition-id='s12'] .q .qn{font-weight:600;font-size:31px;color:#edebe6;line-height:1.1}
+[data-composition-id='s12'] .q .qe{font-family:'JetBrains Mono',monospace;font-size:18px;color:#8a8a85;letter-spacing:.01em}
+[data-composition-id='s12'] .mech{display:flex;flex-direction:column;gap:11px;width:100%}
+[data-composition-id='s12'] .mech .ml{font-weight:500;font-size:29px;color:#8a8a85;line-height:1.38}
+[data-composition-id='s12'] .mech .ml .mk{color:#ccff4d;font-weight:600}
+[data-composition-id='s12'] .punch{font-weight:700;font-size:44px;color:#edebe6;line-height:1.3;display:flex;align-items:baseline;flex-wrap:wrap}
+[data-composition-id='s12'] .slogan{font-weight:700;font-size:42px;color:#edebe6;line-height:1.4}
+[data-composition-id='s12'] .slogan .em{color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="58.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[12/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 收官 · <span class="acc">摊开来看</span></div>
+      <div class="h1" style="margin-top:18px">坚持<span class="ne">≠</span>固执</div>
+
+      <div class="qgrid" style="margin-top:30px">
+        <div class="q"><span class="qi">01</span><span class="qn">精力</span><span class="qe">energy</span></div>
+        <div class="q"><span class="qi">02</span><span class="qn">想象力</span><span class="qe">imagination</span></div>
+        <div class="q"><span class="qi">03</span><span class="qn">韧性</span><span class="qe">resilience</span></div>
+        <div class="q"><span class="qi">04</span><span class="qn">判断力</span><span class="qe">judgment</span></div>
+        <div class="q q5"><span class="qi">05</span><span class="qn">目标</span><span class="qe">focus</span></div>
+      </div>
+
+      <div class="mech" style="margin-top:24px">
+        <div class="ml m1"><span class="mk">精力 · 韧性</span> —— 推你奔向那个目标</div>
+        <div class="ml m2"><span class="mk">想象力</span>去发现路径 · <span class="mk">判断力</span>去打磨</div>
+        <div class="ml m3">低处期望值跌够低就让步 · 高处那个你选的,一直推</div>
+      </div>
+
+      <div class="cols" style="margin-top:26px">
+        <div class="col cL">
+          <div class="ch">对的固执</div>
+          <div class="it"><div class="nm">稀有得多</div><div class="ds">结果也好得多</div></div>
+        </div>
+        <div class="col alt cR">
+          <div class="ch">固执</div>
+          <div class="it"><div class="nm">谁都会</div><div class="ds">小孩 · 醉汉 · 傻瓜最擅长</div></div>
+        </div>
+      </div>
+
+      <div class="punch" style="margin-top:26px">一旦凑齐五样,<span class="hl"><span class="bar"></span><span class="tx">结果是魔法般的</span></span></div>
+
+      <div class="slogan" style="margin-top:26px">AI 世界很吵,<span class="em">精读一篇,胜过刷一百条</span></div>
+      <div class="endchip" style="margin-top:22px"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <!-- 字幕:brief.subtitles 逐条,本地时间,一字不差 -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.524" data-track-index="5"><div class="sub-inner">现在你把坚持的内部结构摊开看，它一点都不像固执，<span class="sub-k">复杂得多</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.512" data-duration="8.192" data-track-index="5"><div class="sub-inner">这五种品质组合出一个“看起来像"固执的现象——因为它们都让你不放弃——但<span class="sub-k">机制完全不同</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.848" data-duration="8.724" data-track-index="5"><div class="sub-inner">它不是单纯抵抗改变，而是被<span class="sub-k">精力和韧性</span>推着奔向目标，路径由想象力去发现、由判断力去打磨。</div></div>
+    <div id="sub-4" class="clip sub" data-start="22.74" data-duration="12.056" data-track-index="5"><div class="sub-inner">在决策树的低处，任何一点，只要期望值跌得够低，你都会让步、都会改；但精力和韧性会一直把你推向高处那个<span class="sub-k">你亲手选定的东西</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="34.944" data-duration="7.682" data-track-index="5"><div class="sub-inner">所以，“对的那种固执"比“错的那种"<span class="sub-k">稀有得多</span>、结果也好得多，一点都不奇怪。</div></div>
+    <div id="sub-6" class="clip sub" data-start="42.626" data-duration="3.944" data-track-index="5"><div class="sub-inner">固执谁都会——<span class="sub-k">小孩、醉汉、傻瓜</span>最擅长。</div></div>
+    <div id="sub-7" class="clip sub" data-start="46.77" data-duration="6.042" data-track-index="5"><div class="sub-inner">可很少有人能同时凑齐这五种品质；一旦凑齐，那结果，是<span class="sub-k">魔法般的</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="52.98" data-duration="3.461" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="56.441" data-duration="1.211" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* sub-1 (0-5.5):立论 —— 摊开看,坚持不是固执 */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+
+    /* sub-2 (5.5-13.7):五种品质逐格 build */
+    D2.stagger(tl, R+'.q', 5.9, {y:18, d:.34, step:1.15, ease:'power3.out'});
+
+    /* sub-3 (13.8-22.5):机制两句(想象力/判断力 分两拍) */
+    D2.enter(tl, R+'.m1', 14.2, {y:14, d:.34, ease:'power2.out'});
+    D2.enter(tl, R+'.m2', 18.8, {y:14, d:.34, ease:'power2.out'});
+
+    /* sub-4 (22.7-34.8):决策树低处让步 / 高处那个你亲手选的点亮 */
+    D2.enter(tl, R+'.m3', 23.2, {y:14, d:.34, ease:'power3.out'});
+    tl.to(R+'.q5', {borderColor:'#ccff4d', duration:.4, ease:'power2.out'}, 28.5);
+    tl.to(R+'.q5 .qn', {color:'#ccff4d', duration:.4, ease:'power2.out'}, 28.5);
+
+    /* sub-5/6 (34.9-46.6):对/错固执对比逐栏 */
+    D2.enter(tl, R+'.cL', 35.3, {y:20, d:.42, ease:'expo.out'});
+    D2.enter(tl, R+'.cR', 43.0, {y:20, d:.42, ease:'expo.out'});
+
+    /* sub-7 (46.8-52.8):凑齐 = 魔法般的(酸性扫过收束) */
+    D2.enter(tl, R+'.punch', 47.1, {y:16, d:.38, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 47.8);
+
+    /* sub-8/9 (53-58.7):签名收尾 */
+    D2.enter(tl, R+'.slogan', 53.2, {y:16, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.endchip', 56.7, {y:12, d:.32, ease:'power2.out'});
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.512],['#sub-3',13.848],['#sub-4',22.74],['#sub-5',34.944],['#sub-6',42.626],['#sub-7',46.77],['#sub-8',52.98],['#sub-9',56.441]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 58.667, 'out');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

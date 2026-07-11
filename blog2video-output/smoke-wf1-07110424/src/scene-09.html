@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有(英文术语点电青,单一辅助色)—— */
+[data-composition-id='s09'] .rt .en{font-family:'JetBrains Mono',monospace;font-weight:700;color:#5fd3e8}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="37.6" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · THE RIGHT KIND OF STUBBORN<span class="b-cur"></span></div>
+      <div class="idx">[09/12]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">坚持的内部结构 · <span class="acc">5 种品质</span></div>
+      <div class="h1" style="margin-top:18px">坚持,<span class="em">拆得开的复杂结构</span></div>
+
+      <div class="status s-mid" style="margin-top:24px"><span class="dot"></span>5 种品质 · 先看前 2 种</div>
+
+      <div class="rows" style="margin-top:40px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt"><span class="en">Energy</span> · 精力</div>
+          <div class="rd">持续进取 —— 不是单纯抵抗,他一直在试新东西</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="en">Imagination</span> · 想象力</div>
+          <div class="rd">要不断地试,就得不断想出可以试的东西</div>
+        </div></div>
+      </div>
+
+      <div class="h2 punch" style="margin-top:36px">精力 × 想象力,<span class="hl"><span class="bar"></span><span class="tx">互相喂养</span></span></div>
+      <div class="lead dim note-lead" style="margin-top:16px;font-size:34px">精力造需求,想象力给它一个出口</div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.008" data-duration="2.93" data-track-index="5"><div class="sub-inner"><span class="sub-k">固执</span>很简单，简单到动物都有。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.938" data-duration="3.557" data-track-index="5"><div class="sub-inner">但坚持，有一套相当<span class="sub-k">复杂的内部结构</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.495" data-duration="5.441" data-track-index="5"><div class="sub-inner">作者把它拆成了<span class="sub-k">五种品质</span>，我觉得这是全文最值钱的部分。</div></div>
+    <div id="sub-4" class="clip sub" data-start="12.104" data-duration="2.579" data-track-index="5"><div class="sub-inner">第一是 <span class="sub-k">energy</span>，精力。</div></div>
+    <div id="sub-5" class="clip sub" data-start="14.683" data-duration="4.789" data-track-index="5"><div class="sub-inner">坚持的人是<span class="sub-k">持续进取</span>，不是单纯抵抗，他一直在试新东西。</div></div>
+    <div id="sub-6" class="clip sub" data-start="19.472" data-duration="8.658" data-track-index="5"><div class="sub-inner">而这就逼出了第二样：<span class="sub-k">imagination</span>，想象力——你要不断地试，就得不断想出可以试的东西。</div></div>
+    <div id="sub-7" class="clip sub" data-start="28.268" data-duration="9.153" data-track-index="5"><div class="sub-inner">精力和想象力是绝配，<span class="sub-k">互相喂养</span>：精力为点子创造需求，逼你想更多；想象力又给精力一个去处。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.9, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.s-mid', 6.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 12.1, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 14.8, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 19.6, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd', 22.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 28.3, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 29.2);
+    D2.enter(tl, R+'.note-lead', 32.0, {y:12, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.008],['#sub-2',2.938],['#sub-3',6.495],['#sub-4',12.104],['#sub-5',14.683],['#sub-6',19.472],['#sub-7',28.268]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 37.6, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

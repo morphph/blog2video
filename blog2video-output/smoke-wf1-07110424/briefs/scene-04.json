@@ -1,0 +1,40 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 30.967,
+ "srcSlideHtml": "/home/ubuntu/blog2video/blog2video-output/smoke-wf1-07110424/slide_4.html",
+ "topbarIndex": "[04/12]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.013,
+   "localDuration": 2.678,
+   "text": "那为什么这两种人看起来那么像？"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.691,
+   "localDuration": 1.963,
+   "text": "因为他们都很难被拦住。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 4.654,
+   "localDuration": 2.678,
+   "text": "但“难被拦住\"的原因完全不同。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 7.501,
+   "localDuration": 14.865,
+   "text": "作者给了一个特别漂亮的比喻，我很喜欢：坚持的人，像一艘引擎关不小的船，动力太足，停不下来；固执的人，像一艘舵转不动的船，方向改不了，只能直直地往前顶。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 22.513,
+   "localDuration": 8.294,
+   "text": "你看，一个是停不下来，一个是拐不了弯，表面都是“往前冲\",里子是两回事。"
+  }
+ ]
+}

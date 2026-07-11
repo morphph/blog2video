@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .scope{margin-top:24px;font-weight:600;font-size:38px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s08'] .scope b{color:#edebe6;font-weight:700}
+[data-composition-id='s08'] .scope .arr{font-family:'JetBrains Mono',monospace;color:#ccff4d;font-weight:700;margin:0 14px}
+[data-composition-id='s08'] .punch{margin-top:34px;width:100%}
+[data-composition-id='s08'] .p1{font-weight:900;font-size:42px;line-height:1.4;color:#edebe6}
+[data-composition-id='s08'] .p1 .lbl{font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;margin-right:14px}
+[data-composition-id='s08'] .p1 .pw{color:#ff6b5e;text-decoration:line-through;text-decoration-color:rgba(255,107,94,.55);text-decoration-thickness:3px}
+[data-composition-id='s08'] .p2{margin-top:12px;font-weight:900;font-size:50px;line-height:1.35;color:#edebe6}
+[data-composition-id='s08'] .p3{margin-top:12px;font-weight:500;font-size:28px;line-height:1.45;color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="21.833" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[08/15]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 怎么办 · <span class="acc">彻底盘点</span></div>
+      <div class="h1" style="margin-top:16px">把亲手在管的每件事，<br>做一次<span class="em">彻底盘点</span></div>
+      <div class="scope">从<b>最小的杂务</b><span class="arr">→</span>到<b>最重的决策</b></div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row c1"><div class="n">01</div><div class="rb">
+          <div class="rt">可以<span class="code">系统化</span>的</div>
+        </div></div>
+        <div class="row c2"><div class="n">02</div><div class="rb">
+          <div class="rt">可以<span class="code">交出去</span>的</div>
+        </div></div>
+        <div class="row c3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">真正配得上<span class="code">创始人时间</span>的</div>
+        </div></div>
+      </div>
+
+      <div class="punch bracket">
+        <div class="p1"><span class="lbl">目标</span>不是<span class="pw">把你从公司移走</span></div>
+        <div class="p2">是把注意力<span class="hl"><span class="bar"></span><span class="tx">赎回来</span></span></div>
+        <div class="p3">留给只有创始人能做的决定</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="0.819" data-track-index="5"><div class="sub-inner"><span class="sub-k">怎么办</span>？</div></div>
+    <div id="sub-2" class="clip sub" data-start="0.816" data-duration="12.897" data-track-index="5"><div class="sub-inner">把你亲手在管的每件事，从最小的杂务到最重的决策，做一次<span class="sub-k">彻底的盘点</span>：哪些可以系统化，哪些可以交出去，哪些真正配得上创始人的时间。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.857" data-duration="7.83" data-track-index="5"><div class="sub-inner">记住，目标不是把你从公司里移走，是把你的注意力<span class="sub-k">赎回来</span>，留给只有创始人能做的决定。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .1, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .95, {y:20, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.scope', 3.1, {y:12, d:.32, ease:'power2.out'});
+    // 三分类,逐条绑口播
+    D2.enter(tl, R+'.c1', 7.6,  {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.c2', 9.35, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.c3', 10.95,{x:-22, ease:'power2.out'});
+    // 点睛:注意力赎回来
+    D2.enter(tl, R+'.punch', 14.0, {y:16, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.p2', 17.45, {y:12, d:.32, ease:'power3.out'});
+    D2.sweep(tl, R, '.p2 .hl', 18.3);
+    D2.enter(tl, R+'.p3', 19.75, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',0.816],['#sub-3',13.857]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 21.833, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

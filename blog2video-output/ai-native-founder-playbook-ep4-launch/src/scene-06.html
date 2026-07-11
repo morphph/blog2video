@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .t6{margin-top:14px}
+[data-composition-id='s06'] .cols6{margin-top:26px}
+[data-composition-id='s06'] .cols6 .col{padding:26px}
+[data-composition-id='s06'] .cols6 .ch{margin-bottom:16px}
+[data-composition-id='s06'] .col .st{font-weight:700;font-size:36px;color:#edebe6;line-height:1.3}
+[data-composition-id='s06'] .col .vd{margin-top:10px;font-weight:800;font-size:38px;color:#ccff4d;line-height:1.25}
+[data-composition-id='s06'] .col .cls{margin-top:16px}
+[data-composition-id='s06'] .col .cl{font-weight:500;font-size:24px;color:#8a8a85;line-height:1.5}
+[data-composition-id='s06'] .col .cl + .cl{margin-top:10px}
+[data-composition-id='s06'] .col .cl .bu{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin-right:10px}
+[data-composition-id='s06'] .col.launch .ch{color:#ff6b5e}
+[data-composition-id='s06'] .col.launch .vd{color:#ff6b5e}
+[data-composition-id='s06'] .col.launch .cl .bu{color:#ff6b5e}
+[data-composition-id='s06'] .shift{margin-top:22px;width:100%;padding:22px 30px}
+[data-composition-id='s06'] .sh-l1{font-weight:800;font-size:40px;color:#edebe6;line-height:1.3}
+[data-composition-id='s06'] .sh-l1 .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 12px}
+[data-composition-id='s06'] .sh-l2{margin-top:10px;font-weight:600;font-size:30px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s06'] .sh-hard,[data-composition-id='s06'] .sh-bell{display:inline-block}
+[data-composition-id='s06'] .sh-bell{color:#ff6b5e;font-weight:700}
+[data-composition-id='s06'] .stall{margin-top:16px}
+[data-composition-id='s06'] .k-sig{margin-top:22px}
+[data-composition-id='s06'] .rows6{margin-top:12px;gap:12px}
+[data-composition-id='s06'] .rows6 .row{padding:18px 28px}
+[data-composition-id='s06'] .rows6 .rt{font-size:36px}
+[data-composition-id='s06'] .rt .dm{color:#8a8a85}
+[data-composition-id='s06'] .wk{display:inline-block;color:#ff6b5e;font-weight:800;font-size:38px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="65.033" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[06/15]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker k-top">// 第二张账单 · <span class="acc">全片核心</span></div>
+      <div class="h2 t6">这次到期的不是代码，<br>是<span class="hl"><span class="bar"></span><span class="tx">你</span></span></div>
+
+      <div class="cols cols6">
+        <div class="col c-mvp">
+          <div class="ch">MVP 阶段</div>
+          <div class="st">事事亲力亲为</div>
+          <div class="vd v-mvp">= 资产</div>
+          <div class="cls">
+            <div class="cl"><span class="bu">›</span>完整的态势感知</div>
+            <div class="cl"><span class="bu">›</span>最紧的反馈回路</div>
+          </div>
+        </div>
+        <div class="col launch c-now">
+          <div class="ch">LAUNCH 阶段</div>
+          <div class="st">同一个本能</div>
+          <div class="vd v-now">= 约束</div>
+          <div class="cls">
+            <div class="cl"><span class="bu">›</span>支持量上来了</div>
+            <div class="cl"><span class="bu">›</span>产品决策堆起来</div>
+            <div class="cl"><span class="bu">›</span>运营越来越复杂</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bracket shift">
+        <div class="sh-l1">「做事的人」<span class="ar">→</span>「设计系统的人」</div>
+        <div class="sh-l2"><span class="sh-hard">最难的换挡之一</span> <span class="sh-bell">· 没有铃声提醒你</span></div>
+      </div>
+
+      <div class="status alert stall"><span class="dot"></span>整段错过 · 公司在你周围悄悄熄火</div>
+
+      <div class="kicker k-sig">// 静默失败 · <span class="acc">信号全是「不发生的事」</span></div>
+      <div class="rows rows6">
+        <div class="row warn g1"><div class="n">01</div><div class="rb"><div class="rt">一小时能拍板的决定 <span class="wk">→ 等你一周</span></div></div></div>
+        <div class="row g2"><div class="n">02</div><div class="rb"><div class="rt">支持越堆越多 <span class="dm">· 答案只在你脑子里</span></div></div></div>
+        <div class="row g3"><div class="n">03</div><div class="rb"><div class="rt">运营任务 <span class="dm">· 只在你想起的那天发生</span></div></div></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="6.727" data-track-index="5"><div class="sub-inner">第二张账单，是全片的核心——这次到期的，不是代码，<span class="sub-k">是你</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="6.861" data-duration="9.234" data-track-index="5"><div class="sub-inner">MVP 阶段，你在每个环节里亲力亲为，那是<span class="sub-k">资产</span>：你需要完整的态势感知，需要最紧的反馈回路。</div></div>
+    <div id="sub-3" class="clip sub" data-start="16.295" data-duration="8.469" data-track-index="5"><div class="sub-inner">可到了 Launch 阶段，支持量上来了，产品决策堆起来了，运营越来越复杂——同一个本能，变成了<span class="sub-k">约束</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="24.933" data-duration="7.478" data-track-index="5"><div class="sub-inner">从"做事的人"，变成"<span class="sub-k">设计系统的人</span>"，是整个创业周期里最难的换挡之一。</div></div>
+    <div id="sub-5" class="clip sub" data-start="32.411" data-duration="4.914" data-track-index="5"><div class="sub-inner">更麻烦的是，它没有明确的时刻，<span class="sub-k">没有铃声</span>提醒你。</div></div>
+    <div id="sub-6" class="clip sub" data-start="37.497" data-duration="8.34" data-track-index="5"><div class="sub-inner">所以最常见的失败方式不是搞砸，而是<span class="sub-k">整段错过</span>——你继续埋头做事，公司在你周围，悄悄熄火。</div></div>
+    <div id="sub-7" class="clip sub" data-start="45.993" data-duration="5.319" data-track-index="5"><div class="sub-inner">这个失败是静默的，因为它的信号，全是"<span class="sub-k">不发生的事</span>"。</div></div>
+    <div id="sub-8" class="clip sub" data-start="51.312" data-duration="4.909" data-track-index="5"><div class="sub-inner">本该一小时就拍板的决定，现在要<span class="sub-k">等你一周</span>才排得上。</div></div>
+    <div id="sub-9" class="clip sub" data-start="56.221" data-duration="4.092" data-track-index="5"><div class="sub-inner">支持请求越堆越多，因为答案<span class="sub-k">只在你脑子里</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="60.465" data-duration="4.416" data-track-index="5"><div class="sub-inner">有些运营任务，只在你<span class="sub-k">恰好想起来的那天</span>，才会发生。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    // beat 1 · sub-1:第二张账单——到期的是你(hero:酸性块扫过「你」)
+    D2.enter(tl, R+'.k-top', .15, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.t6', .7, {y:20, d:.4, ease:'expo.out'});
+    D2.sweep(tl, R, '.hl', 5.5);
+    // beat 2 · sub-2:MVP 亲力亲为 = 资产
+    D2.enter(tl, R+'.c-mvp', 7.0, {x:-22, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.v-mvp', 9.4, {y:10, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.c-mvp .cl', 11.6, {y:10, d:.3, step:2.3, ease:'power3.out'});
+    // beat 3 · sub-3:Launch 压力逐条上,同一个本能 = 约束
+    D2.enter(tl, R+'.c-now', 16.5, {x:22, d:.38, ease:'expo.out'});
+    D2.stagger(tl, R+'.c-now .cl', 18.0, {y:10, d:.3, step:1.6, ease:'power3.out'});
+    D2.enter(tl, R+'.v-now', 22.6, {y:10, d:.32, ease:'power2.out'});
+    // beat 4 · sub-4/5:最难的换挡,没有铃声
+    D2.enter(tl, R+'.shift', 25.2, {y:20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.sh-hard', 29.6, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.sh-bell', 32.6, {x:-14, d:.32, ease:'power3.out'});
+    // beat 5 · sub-6:整段错过,公司悄悄熄火(珊瑚状态灯 + 有限次闪)
+    D2.enter(tl, R+'.stall', 40.4, {y:12, d:.32, ease:'power2.out'});
+    D2.blink(tl, R+'.stall .dot', 43.8, 4);
+    // beat 6 · sub-7~10:三个静默信号逐条
+    D2.enter(tl, R+'.k-sig', 46.2, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.g1', 51.5, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.g1 .wk', 53.6, {x:-10, d:.3, ease:'expo.out'});
+    D2.enter(tl, R+'.g2', 56.4, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.g3', 60.7, {x:-22, d:.36, ease:'power3.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',6.861],['#sub-3',16.295],['#sub-4',24.933],['#sub-5',32.411],['#sub-6',37.497],['#sub-7',45.993],['#sub-8',51.312],['#sub-9',56.221],['#sub-10',60.465]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 65.033, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

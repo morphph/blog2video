@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-07 特有 —— */
+[data-composition-id='s07'] .als{display:flex;flex-direction:column;gap:14px;margin-top:28px;width:100%}
+[data-composition-id='s07'] .al{display:flex;align-items:center;gap:20px;background:#121212;border:1px solid #2a2a2c;padding:20px 26px}
+[data-composition-id='s07'] .al .adot{width:14px;height:14px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+[data-composition-id='s07'] .al .anm{flex:1;font-weight:600;font-size:38px;color:#edebe6;line-height:1.3}
+[data-composition-id='s07'] .al .ast{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:4px 16px}
+[data-composition-id='s07'] .hr{margin-top:30px;height:1px;width:100%;background:#2a2a2c;transform-origin:left center}
+[data-composition-id='s07'] .miss{margin-top:32px}
+[data-composition-id='s07'] .miss-nm{font-weight:900;font-size:56px;line-height:1.25;color:#edebe6}
+[data-composition-id='s07'] .miss-st{margin-top:14px;font-weight:900;font-size:68px;line-height:1.2;color:#ff6b5e}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s07" data-start="0" data-duration="7.567" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[07/15]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// LAUNCH · <span class="acc">静默失败</span></div>
+
+      <div class="term" style="margin-top:26px">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">alerts@launch: ~</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>alerts --list</div>
+          <div class="als">
+            <div class="al a1"><span class="adot"></span><span class="anm">用户流失</span><span class="ast">有报警</span></div>
+            <div class="al a2"><span class="adot"></span><span class="anm">系统被攻破</span><span class="ast">有报警</span></div>
+          </div>
+          <div class="hr"></div>
+          <div class="miss">
+            <div class="miss-nm">「决定没被做」</div>
+            <div class="miss-st">没有任何报警器<span class="cur mc"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.004" data-duration="3.4" data-track-index="5"><div class="sub-inner">用户流失有报警，系统被攻破<span class="sub-k">有报警</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.404" data-duration="4" data-track-index="5"><div class="sub-inner">可"决定没被做"这件事，<span class="sub-k">没有任何报警器</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s07'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .15, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.term', .45, {y:24, d:.42, ease:'expo.out'});
+    tl.from(R+'.term-bar',{opacity:0,duration:.3,ease:'power1.out'},.62);
+    D2.enter(tl, R+'.term-l1', .85, {y:12, d:.28, ease:'power2.out'});
+    // sub-1:用户流失有报警(~1.0)/ 系统被攻破有报警(~2.1)
+    D2.enter(tl, R+'.a1', 1.0, {x:-20, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.a2', 2.05, {x:-20, d:.32, ease:'expo.out'});
+    // sub-2:可「决定没被做」(3.404)→ 没有任何报警器(~5.1,珊瑚对立面)
+    D2.underline(tl, R+'.hr', 3.3);
+    D2.enter(tl, R+'.miss-nm', 3.6, {y:16, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.miss-st', 5.1, {y:18, d:.4, ease:'expo.out'});
+    D2.blink(tl, R+'.mc', 5.9, 3);
+    D2.subs(tl, [['#sub-1',0.004],['#sub-2',3.404]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 7.567, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s07'] = tl;
+  })();
+  </script>
+</body>
+</html>

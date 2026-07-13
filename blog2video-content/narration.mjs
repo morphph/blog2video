@@ -66,6 +66,9 @@ function claudeArgv(prompt, maxTurns) {
 
 function spawnAgent(command, outputDir, maxTurns, timeoutS, warnings) {
   const env = { ...process.env };
+  // 剥离会话的 telegram 通道身份——headless claude 的 telegram 插件会抢走
+  // bot poller、瘫痪回话通道（07-05/07-13 事故根因，content-ops 同款守卫）。
+  delete env.TELEGRAM_STATE_DIR;
   // claude is not on PATH in VPS cron/script contexts — extend defensively.
   env.PATH = `${env.PATH || ""}:${process.env.HOME}/.npm-global/bin:${process.env.HOME}/.local/bin`;
   const argv = claudeArgv(`${command} ${outputDir}`, maxTurns);

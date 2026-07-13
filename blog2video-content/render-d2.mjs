@@ -45,7 +45,7 @@ const ALLOWED_TOOLS = "Read,Write,Task,Glob,Grep"; // NO Bash — shell runs all
 const TIMEOUT_A_S = 1800;
 const TIMEOUT_B_S = 2700;
 const TIMEOUT_STEP_S = 900;
-const DEFAULT_TIMEOUT_RENDER_S = 3600;
+const DEFAULT_TIMEOUT_RENDER_S = 10800; // 14 场景长文实测 ~500s/scene,3600 不够(2026-07-11 冒烟断点)
 const MAX_TURNS_A = 40;
 const MAX_TURNS_B = 80;
 
@@ -56,6 +56,9 @@ function runExternal(name, argv, { cwd = REPO_ROOT, timeoutS = TIMEOUT_STEP_S } 
   const cmd = fake ? process.execPath : name;
   const args = fake ? [fake, name, ...argv] : argv;
   const env = { ...process.env };
+  // 剥离会话的 telegram 通道身份——headless claude 的 telegram 插件会抢走
+  // bot poller、瘫痪回话通道（07-05/07-13 事故根因，content-ops 同款守卫）。
+  delete env.TELEGRAM_STATE_DIR;
   env.PATH = `${env.PATH || ""}:${process.env.HOME}/.npm-global/bin:${process.env.HOME}/.local/bin`;
   const proc = spawnSync(cmd, args, {
     cwd, env, encoding: "utf-8", timeout: timeoutS * 1000, maxBuffer: 64 * 1024 * 1024,

@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The Founder's Playbook: Building an AI-Native Startup (Chapters 6-8 — Scale Stage + Same Job, New Rules)",
+    "title_zh": "巨头今天抄走你的产品，用户凭什么留下？",
+    "word_count": 2699,
+    "slug": "ai-native-founder-playbook-ep5-scale"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "EP5 收官集覆盖原书 Ch6 Scale Stage + Ch7 Same job, new rules(Ch8 Resources 仅化用例证),是一条连贯论证（前四关问怎么活下来 → 这一关第一次问怎么变得难以替代 → 护城河两种力：难被复制的数据复利 + 难被离开的工作流嵌入 → 交出运营层的心理关 → 通关=公司离了你也能转、从赌注变成生意 → 四阶段回望 + 全书点题句收束全系列），默认不拆。系列分集已定，本集单条成片。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "巨头今天抄走你的产品，用户凭什么留下？"
+      }
+    ]
+  }
+}

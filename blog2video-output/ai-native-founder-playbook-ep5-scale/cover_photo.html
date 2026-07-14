@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<style>
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',sans-serif;color:#edebe6}
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+.grid{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);
+  background-size:56px 56px;background-position:28px 28px;opacity:.05;
+  -webkit-mask-image:radial-gradient(ellipse 80% 62% at 50% 44%,#000 50%,rgba(0,0,0,0) 100%)}
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.cover{position:absolute;inset:0;padding:300px 72px 280px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:32px;color:#8a8a85;letter-spacing:.06em;margin-bottom:34px}
+.kicker .acc{color:#ccff4d}
+.h1{font-weight:900;font-size:80px;line-height:1.18;color:#edebe6;letter-spacing:-.02em}
+.h1 .em{color:#ccff4d}
+.stats{display:flex;gap:22px;width:100%;margin-top:64px}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:34px 26px}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:96px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:16px;font-weight:500;font-size:30px;color:#8a8a85;line-height:1.32}
+.stat.key{border-color:#ccff4d} .stat.key .num{color:#ccff4d}
+.stat.cyan{border-color:rgba(95,211,232,.45)} .stat.cyan .num{color:#5fd3e8}
+.srcrow{margin-top:64px;display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:20px 30px}
+.srcrow .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+.srcrow .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.02em}
+.srcrow .lab .dim{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="handle">anthropic.com</div>
+    </div>
+    <div class="cover">
+      <div class="kicker"><span class="acc">//</span> EP.05 / 05 · ANTHROPIC OFFICIAL PLAYBOOK</div>
+      <div class="h1">巨头今天抄走你的产品<br>用户<span class="em">凭什么留下</span>？</div>
+      <div class="stats">
+        <div class="stat key">
+          <div class="num">2</div>
+          <div class="lab">种护城河的力<br>难被复制 · 难被离开</div>
+        </div>
+        <div class="stat cyan">
+          <div class="num">3</div>
+          <div class="lab">种通关形态<br>盈利 · IPO · 被收购</div>
+        </div>
+      </div>
+      <div class="srcrow">
+        <span class="dot"></span>
+        <span class="lab"><span class="dim">src ·</span> The Founder's Playbook: Building an AI-Native Startup</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

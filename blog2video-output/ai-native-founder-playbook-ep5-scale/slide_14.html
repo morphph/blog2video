@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#10B981;margin-bottom:20px}
+.title{font-size:58px;font-weight:800;line-height:1.26}
+.title .hl{color:#10B981}
+.wheel{width:100%;margin-top:38px;background:#1A1A2E;border:1px solid rgba(16,185,129,0.35);border-left:6px solid #10B981;border-radius:14px;padding:28px 30px;text-align:left}
+.wheel .l{font-size:27px;font-weight:800;letter-spacing:.04em;color:#10B981;margin-bottom:16px}
+.wheel .f{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:31px;font-weight:800;line-height:1.4}
+.wheel .f .arr{color:#10B981}
+.wheel .note{margin-top:16px;font-size:28px;font-weight:700;color:#B0B0CC;line-height:1.42}
+.wheel .note .em{color:#10B981;font-weight:800}
+.story{width:100%;margin-top:26px;background:#1A1A2E;border:1px solid rgba(139,92,246,0.35);border-left:4px solid #8B5CF6;border-radius:12px;padding:24px 28px;text-align:left;font-size:29px;font-weight:700;color:#B0B0CC;line-height:1.45}
+.story .em{color:#8B5CF6;font-weight:800}
+.data{display:flex;gap:20px;width:100%;margin-top:28px}
+.stat{flex:1;background:#1A1A2E;border:1px solid rgba(245,158,11,0.4);border-radius:12px;padding:26px 22px;text-align:center}
+.stat .num{font-size:60px;font-weight:800;color:#F59E0B;line-height:1.1}
+.stat .lab{margin-top:12px;font-size:26px;font-weight:700;color:#B0B0CC;line-height:1.35}
+.src{margin-top:20px;font-size:27px;font-weight:700;color:#6B7280}
+.src .em{color:#B0B0CC}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">力① 难被复制 · 原料二</div>
+  <div class="title">用户数据的<span class="hl">飞轮</span>，<br>竞对花钱也买不到</div>
+  <div class="wheel">
+    <div class="l">飞轮怎么转</div>
+    <div class="f"><span>行为信号</span><span class="arr">→</span><span>产品改进</span><span class="arr">→</span><span>更多使用</span><span class="arr">→</span><span>更多信号</span></div>
+    <div class="note">几千个用户打磨出的行为指纹，<span class="em">锁死在时间里</span></div>
+  </div>
+  <div class="story">值得做的练习：让 Claude 起草<span class="em">一页护城河叙事</span>——为什么资源充足的对手，两年之内也复制不了。这一页纸，就是面对巨头拷问的答案</div>
+  <div class="data">
+    <div class="stat"><div class="num">22,000</div><div class="lab">手术病例 / 年<br>临床数据抽取</div></div>
+    <div class="stat"><div class="num">-66%</div><div class="lab">数据抽取时间</div></div>
+  </div>
+  <div class="src">真实样本 · <span class="em">Carta Healthcare</span> × Claude</div>
+</div>
+</body>
+</html>

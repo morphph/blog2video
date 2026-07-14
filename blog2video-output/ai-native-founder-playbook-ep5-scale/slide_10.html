@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#10B981;margin-bottom:22px}
+.title{font-size:60px;font-weight:800;line-height:1.26}
+.title .hl{color:#10B981}
+.list{display:flex;flex-direction:column;gap:18px;width:100%;margin-top:44px}
+.row{background:#1A1A2E;border-radius:12px;padding:26px 30px;text-align:left}
+.row .h{display:flex;align-items:center;gap:16px;margin-bottom:10px}
+.row .tag{flex-shrink:0;font-size:27px;font-weight:800;border-radius:999px;padding:8px 22px}
+.row .t{font-size:33px;font-weight:800}
+.row .d{font-size:29px;font-weight:700;color:#B0B0CC;line-height:1.42}
+.row.a{border:1px solid rgba(139,92,246,0.35);border-left:4px solid #8B5CF6}
+.row.a .tag{color:#8B5CF6;border:1px solid rgba(139,92,246,0.5)}
+.row.b{border:1px solid rgba(59,130,246,0.35);border-left:4px solid #3B82F6}
+.row.b .tag{color:#3B82F6;border:1px solid rgba(59,130,246,0.5)}
+.row.c{border:1px solid rgba(16,185,129,0.35);border-left:4px solid #10B981}
+.row.c .tag{color:#10B981;border:1px solid rgba(16,185,129,0.5)}
+.foot{width:100%;margin-top:36px;background:#1A1A2E;border:1px solid rgba(245,158,11,0.4);border-left:6px solid #F59E0B;border-radius:14px;padding:28px 30px;text-align:left;font-size:36px;font-weight:800;line-height:1.42}
+.foot .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">好消息</div>
+  <div class="title">用<span class="hl">建产品的方式</span>，<br>把这套东西建出来</div>
+  <div class="list">
+    <div class="row a">
+      <div class="h"><span class="tag">Claude</span><span class="t">文档层</span></div>
+      <div class="d">起草和维护产品文档、支持手册</div>
+    </div>
+    <div class="row b">
+      <div class="h"><span class="tag">Claude Code</span><span class="t">代码层</span></div>
+      <div class="d">按企业标准加固；日志 · 监控 · 事故响应，让 SLA 真正可执行</div>
+    </div>
+    <div class="row c">
+      <div class="h"><span class="tag">Claude Cowork</span><span class="t">运营层</span></div>
+      <div class="d">工单路由 · 续约追踪 · 报表节奏</div>
+    </div>
+  </div>
+  <div class="foot">三层合起来：一个小团队，<br>有了<span class="em">一家大组织的支持姿态</span></div>
+</div>
+</body>
+</html>

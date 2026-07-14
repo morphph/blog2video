@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.kick{font-size:30px;font-weight:700;letter-spacing:.08em;color:#EF4444;margin-bottom:22px}
+.title{font-size:60px;font-weight:800;line-height:1.26}
+.title .hl{color:#EF4444}
+.steps{display:flex;flex-direction:column;gap:16px;width:100%;margin-top:40px}
+.step{display:flex;align-items:center;gap:20px;background:#1A1A2E;border:1px solid rgba(139,92,246,0.35);border-left:4px solid #8B5CF6;border-radius:12px;padding:24px 30px;text-align:left}
+.step .n{flex-shrink:0;font-size:28px;font-weight:800;color:#8B5CF6}
+.step .t{font-size:36px;font-weight:800;line-height:1.32}
+.step.hard{border:1px solid rgba(239,68,68,0.4);border-left:4px solid #EF4444}
+.step.hard .n{color:#EF4444}
+.step.hard .t .em{color:#EF4444}
+.doors{display:flex;gap:20px;width:100%;margin-top:34px}
+.door{flex:1;background:#1A1A2E;border:1px solid rgba(239,68,68,0.35);border-top:6px solid #EF4444;border-radius:12px;padding:26px 24px;text-align:left}
+.door .h{font-size:32px;font-weight:800;color:#EF4444;margin-bottom:12px}
+.door .d{font-size:27px;font-weight:700;color:#B0B0CC;line-height:1.42}
+.punch{margin-top:34px;font-size:36px;font-weight:800;line-height:1.4;color:#B0B0CC}
+.punch .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="kick">最难的一关 · 不是技术关，是心理关</div>
+  <div class="title">把运营层，<br><span class="hl">真的交出去</span></div>
+  <div class="steps">
+    <div class="step"><span class="n">第一步</span><span class="t">把系统养到完全可信</span></div>
+    <div class="step hard"><span class="n">第二步</span><span class="t"><span class="em">真的信它</span>——绝大多数创始人卡在这里</span></div>
+  </div>
+  <div class="doors">
+    <div class="door">
+      <div class="h">交得太多、太快</div>
+      <div class="d">关键决策，在缺少你独有背景信息时被做出</div>
+    </div>
+    <div class="door">
+      <div class="h">抓得太久</div>
+      <div class="d">你自己，就是瓶颈</div>
+    </div>
+  </div>
+  <div class="punch">这道门很窄——<span class="em">没有安全的默认选项</span></div>
+</div>
+</body>
+</html>

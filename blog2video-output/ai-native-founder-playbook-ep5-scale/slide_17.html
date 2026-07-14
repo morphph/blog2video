@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#0D0D1A;font-family:-apple-system,'PingFang SC','Noto Sans SC','Helvetica Neue',sans-serif;color:#FFFFFF;overflow:hidden}
+.slide{width:100%;height:100%;padding:200px 72px 420px 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.glow{position:absolute;top:380px;left:50%;transform:translateX(-50%);width:720px;height:720px;background:radial-gradient(circle,rgba(245,158,11,0.12) 0%,rgba(245,158,11,0) 70%);pointer-events:none}
+.kick{position:relative;font-size:30px;font-weight:700;letter-spacing:.08em;color:#8B5CF6;margin-bottom:26px}
+.list{position:relative;display:flex;flex-direction:column;gap:14px;width:100%}
+.row{display:flex;align-items:center;gap:18px;background:#1A1A2E;border-radius:12px;padding:22px 26px;text-align:left}
+.row .tag{flex-shrink:0;font-size:26px;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:8px 20px;width:130px;text-align:center}
+.row .t{font-size:29px;font-weight:800;line-height:1.35}
+.row.i1{border:1px solid rgba(139,92,246,0.35);border-left:4px solid #8B5CF6}
+.row.i1 .tag{color:#8B5CF6;border:1px solid rgba(139,92,246,0.5)}
+.row.i1 .t .em{color:#8B5CF6}
+.row.i2{border:1px solid rgba(59,130,246,0.35);border-left:4px solid #3B82F6}
+.row.i2 .tag{color:#3B82F6;border:1px solid rgba(59,130,246,0.5)}
+.row.i2 .t .em{color:#3B82F6}
+.row.i3{border:1px solid rgba(16,185,129,0.35);border-left:4px solid #10B981}
+.row.i3 .tag{color:#10B981;border:1px solid rgba(16,185,129,0.5)}
+.row.i3 .t .em{color:#10B981}
+.row.i4{border:1px solid rgba(245,158,11,0.35);border-left:4px solid #F59E0B}
+.row.i4 .tag{color:#F59E0B;border:1px solid rgba(245,158,11,0.5)}
+.row.i4 .t .em{color:#F59E0B}
+.punch{position:relative;width:100%;margin-top:32px;background:#1A1A2E;border:1px solid rgba(245,158,11,0.45);border-left:6px solid #F59E0B;border-radius:14px;padding:30px 30px;text-align:left;font-size:38px;font-weight:800;line-height:1.42}
+.punch .dim{color:#B0B0CC}
+.punch .em{color:#F59E0B}
+.thanks{position:relative;margin-top:32px;font-size:30px;font-weight:700;color:#B0B0CC;line-height:1.5}
+.thanks .em{color:#10B981;font-weight:800}
+.brand{position:relative;margin-top:24px;font-size:32px;font-weight:800;color:#B0B0CC;letter-spacing:.02em}
+.brand .em{color:#F59E0B}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="kick">五集收拢 · 四阶段回望</div>
+  <div class="list">
+    <div class="row i1"><span class="tag">Idea</span><span class="t">不见<span class="em">证据</span>不动工</span></div>
+    <div class="row i2"><span class="tag">MVP</span><span class="t">速度免费之后，<span class="em">判断力</span>是唯一稀缺</span></div>
+    <div class="row i3"><span class="tag">Launch</span><span class="t">找到 PMF 是产品问题，守住它是<span class="em">组织问题</span></span></div>
+    <div class="row i4"><span class="tag">Scale</span><span class="t">公司离了你也能转，赌注变成<span class="em">一门生意</span></span></div>
+  </div>
+  <div class="punch"><span class="dim">当造东西不再稀缺——</span><br>瓶颈不再是你<span class="em">能造什么</span>，<br>而是你<span class="em">选择造什么</span></div>
+  <div class="thanks">五集，从一个想法到一门生意的整条路<br><span class="em">谢谢你，一路听到这里</span></div>
+  <div class="brand">AI 世界很吵，<span class="em">精读一篇</span>，胜过刷一百条</div>
+</div>
+</body>
+</html>

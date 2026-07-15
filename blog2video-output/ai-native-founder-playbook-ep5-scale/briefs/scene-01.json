@@ -1,0 +1,46 @@
+{
+ "scene": 1,
+ "id": "s01",
+ "type": "cover",
+ "dataDuration": 34.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_1.html",
+ "topbarIndex": "[01/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 7.748,
+   "text": "Anthropic 的官方创业手册，把用 AI 白手起家这条路，从第一天，一直写到了终局。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.92,
+   "localDuration": 5.609,
+   "text": "今天，我们接着上一集，讲 Scale 阶段，规模化阶段。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 13.529,
+   "localDuration": 2.604,
+   "text": "这也是这个系列的最后一集。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.272,
+   "localDuration": 4.698,
+   "text": "上一集的结尾，你手里已经有一台能自己运转的公司。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 20.97,
+   "localDuration": 4.502,
+   "text": "这最后一关，要从几千个用户，走到上百万个用户。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 25.632,
+   "localDuration": 8.898,
+   "text": "它要回答的，也是整套打法的最后一个问题：一家公司，怎么从一个赌注，变成一门真正的生意。"
+  }
+ ]
+}

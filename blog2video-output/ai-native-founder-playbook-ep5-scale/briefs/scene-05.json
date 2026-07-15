@@ -1,0 +1,52 @@
+{
+  "scene": 5,
+  "id": "s05",
+  "type": "principle",
+  "dataDuration": 44.833,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_5.html",
+  "topbarIndex": "[05/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.003,
+      "localDuration": 2.082,
+      "text": "那\"难以替代\"从哪来？"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.085,
+      "localDuration": 8.139,
+      "text": "这里有全集最反直觉的一个判断：护城河，不是 Scale 阶段的新工程，它是回溯出来的。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 10.371,
+      "localDuration": 2.323,
+      "text": "你以为要从今天开始砌墙。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 12.694,
+      "localDuration": 13.355,
+      "text": "其实砌墙的材料，前四关已经替你攒下了：你灌进产品里的领域专长，你和用户依赖的那些工具、平台之间的集成深度，以及只属于你的系统数据和工作流。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 26.211,
+      "localDuration": 8.246,
+      "text": "一直在一个方向上、一套基础设施上持续构建的人，此刻手里，第一次有了真正难以复制的东西。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 34.457,
+      "localDuration": 6.329,
+      "text": "前四集里每一次忍住、每一份文档、每一个系统，都是在给这一刻攒本金。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 40.935,
+      "localDuration": 3.731,
+      "text": "Scale 做的事，只是第一次把它们记成资产。"
+    }
+  ]
+}

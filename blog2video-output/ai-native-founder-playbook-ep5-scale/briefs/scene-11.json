@@ -1,0 +1,70 @@
+{
+  "scene": 11,
+  "id": "s11",
+  "type": "checklist",
+  "dataDuration": 64.767,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_11.html",
+  "topbarIndex": "[11/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 5.02,
+      "text": "增长这边，也有一堵墙在等你：有机增长的天花板。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 5.183,
+      "localDuration": 7.748,
+      "text": "靠创始人亲自卖、靠口碑、靠一次好时机的发布，能带你走很远，但走不到上百万用户。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 13.131,
+      "localDuration": 11.975,
+      "text": "撞墙的信号有三个：用户曲线变平；获客成本上升；以及最扎心的一个——销售管道，只在你亲自介入的时候才动。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 25.271,
+      "localDuration": 3.719,
+      "text": "这时候，你需要一个真正的 GTM 引擎。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 28.99,
+      "localDuration": 10.412,
+      "text": "GTM，go-to-market，就是把产品系统性推向市场的整套动作：市场怎么分层，故事怎么讲，卖给谁，怎么卖。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 39.402,
+      "localDuration": 2.789,
+      "text": "绝大多数创始人从来没建过这些。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 42.335,
+      "localDuration": 5.949,
+      "text": "但它不需要很大——建产品的那套 AI 基础设施，可以直接把它启动起来。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 48.455,
+      "localDuration": 1.815,
+      "text": "有个细节我特别喜欢。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 50.27,
+      "localDuration": 7.442,
+      "text": "到了这个阶段，一段演示视频加一份销售材料，已经不够用了，企业买家要亲手做技术评估。"
+    },
+    {
+      "id": "sub-10",
+      "localStart": 57.712,
+      "localDuration": 6.897,
+      "text": "所以要建一个真正能跑的 demo 环境——你在开董事会的时候，它在替你签单。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+ "scene": 15,
+ "id": "s15",
+ "type": "image",
+ "dataDuration": 53.867,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_15.html",
+ "topbarIndex": "[15/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.016,
+   "localDuration": 7.319,
+   "text": "第二种力，方向完全相反：不是挡对手进来，是抬高用户离开的成本。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 7.504,
+   "localDuration": 3.948,
+   "text": "用户在你的产品上跑得越久，它就嵌得越深。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.452,
+   "localDuration": 5.331,
+   "text": "他们在上面搭了自动化，训练了团队，接上了自己的数据源。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 16.783,
+   "localDuration": 6.91,
+   "text": "他们打磨的提示词、固化的流程、标准化的输出，全是围绕着你的产品成形的。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 23.848,
+   "localDuration": 6.251,
+   "text": "到这一步，换掉你，就不再是一个产品决策，而是一场全公司的运营工程。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 30.256,
+   "localDuration": 4.114,
+   "text": "建设动作也和第一种力完全不同：铺集成的表面积。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 34.54,
+   "localDuration": 16.967,
+   "text": "用 Claude Code 快速接上用户依赖的数据管道和工具；再往深一步，建好 API、webhook 这些接口，配上 SDK 开发工具包，让客户不只是使用你的产品，而是在你的产品之上，构建他们自己的东西。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 51.676,
+   "localDuration": 2.025,
+   "text": "这是最深的一种绑定。"
+  }
+ ]
+}

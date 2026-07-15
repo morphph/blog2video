@@ -1,0 +1,58 @@
+{
+  "scene": 16,
+  "id": "s16",
+  "type": "comparison_cards",
+  "dataDuration": 41.033,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_16.html",
+  "topbarIndex": "[16/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.005,
+      "localDuration": 2.245,
+      "text": "照例，代价也要说清楚。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.417,
+      "localDuration": 7.298,
+      "text": "第一，交接的窄门是真实的，机构知识的编码是持续的苦工，不是一次性动作。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 9.715,
+      "localDuration": 6.464,
+      "text": "就算你天生擅长授权，什么该交、什么该留，也从来不是显而易见的。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 16.349,
+      "localDuration": 2.449,
+      "text": "第二，外部审视躲不掉。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 18.798,
+      "localDuration": 9.797,
+      "text": "走到这一关，你的角色会从造东西的人，变成一个面向公众的高管：给分析师做简报，跑上市路演。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 28.595,
+      "localDuration": 4.454,
+      "text": "这些活，几乎没有一样是建造者天生喜欢的。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 33.197,
+      "localDuration": 3.741,
+      "text": "但三种通关形态，全都要求它们过关。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 36.938,
+      "localDuration": 3.961,
+      "text": "精益的结构可以保住，这笔税，省不掉。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "scene": 3,
+  "id": "s03",
+  "type": "quote",
+  "dataDuration": 11.1,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_3.html",
+  "topbarIndex": "[03/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.005,
+      "localDuration": 10.941,
+      "text": "这一关，藏着全片最硬的一个拷问：如果一个资金雄厚的巨头，今天原封不动抄走你的产品，你的用户，会留下吗？"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "scene": 6,
+  "id": "s06",
+  "type": "checklist",
+  "dataDuration": 43.167,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_6.html",
+  "topbarIndex": "[06/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.406,
+      "text": "再说这一关什么时候算通关。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.395,
+      "localDuration": 5.551,
+      "text": "前几关的出口都是里程碑：拿到证据，拿到 PMF，增长可复制。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 7.946,
+      "localDuration": 6.107,
+      "text": "这一关的出口，是一个门槛事件：公司离了你的日常运营，也能持续运转。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 14.209,
+      "localDuration": 11.673,
+      "text": "落到现实里，是三种形态之一：不再需要外部资本的持续盈利；具备公开上市的条件，也就是 IPO-ready；或者被收购。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 26.053,
+      "localDuration": 10.732,
+      "text": "三种形态，要求是同一套：增长系统化、经得起审计，护城河扛得住审视，组织运营成熟。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 36.925,
+      "localDuration": 6.077,
+      "text": "当这些都成立，恭喜你——你的创业，从一个赌注，变成了一门生意。"
+    }
+  ]
+}

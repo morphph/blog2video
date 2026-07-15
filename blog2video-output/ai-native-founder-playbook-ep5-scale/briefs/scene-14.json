@@ -1,0 +1,64 @@
+{
+ "scene": 14,
+ "id": "s14",
+ "type": "image",
+ "dataDuration": 57.067,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_14.html",
+ "topbarIndex": "[14/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 2.333,
+   "text": "第二种原料，是用户数据。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 2.32,
+   "localDuration": 11.859,
+   "text": "用户每天在你产品里接受什么、拒绝什么，这些行为信号回流成产品改进，改进带来更多使用，使用又产生更多信号——飞轮就转起来了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 14.315,
+   "localDuration": 6.936,
+   "text": "几千个用户在你产品里打磨出来的行为指纹，锁死在时间里，竞争对手花钱也买不到。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.407,
+   "localDuration": 12.996,
+   "text": "有个练习值得做：让 Claude 基于你的数据，起草一页护城河叙事——你的飞轮怎么转、转了多久，以及为什么一个资源充足的对手今天从零开始，"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 34.603,
+   "localDuration": 1.935,
+   "text": "两年之内也复制不了。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 36.538,
+   "localDuration": 3.677,
+   "text": "这一页纸，就是你面对巨头拷问时的答案。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 40.379,
+   "localDuration": 1.67,
+   "text": "真实的样本已经有了。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 42.049,
+   "localDuration": 11.025,
+   "text": "Carta Healthcare 用 Claude 驱动临床数据抽取平台，一年处理两万两千例手术病例，数据抽取时间省了百分之六十六。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 53.074,
+   "localDuration": 3.842,
+   "text": "这种深度，不是从天上掉下来的，是一路攒出来的。"
+  }
+ ]
+}

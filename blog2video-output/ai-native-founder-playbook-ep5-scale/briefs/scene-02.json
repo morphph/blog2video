@@ -1,0 +1,28 @@
+{
+  "scene": 2,
+  "id": "s02",
+  "type": "principle",
+  "dataDuration": 14,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_2.html",
+  "topbarIndex": "[02/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0.001,
+      "localDuration": 4.488,
+      "text": "前四关，问的其实是同一件事：怎么活下来。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 4.489,
+      "localDuration": 4.712,
+      "text": "想法是真的吗，产品配存在吗，生意配长大吗。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 9.361,
+      "localDuration": 4.498,
+      "text": "到了 Scale 这一关，问题第一次换了：怎么变得难以替代。"
+    }
+  ]
+}

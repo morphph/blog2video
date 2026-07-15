@@ -1,0 +1,64 @@
+{
+ "scene": 13,
+ "id": "s13",
+ "type": "image",
+ "dataDuration": 59.633,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_13.html",
+ "topbarIndex": "[13/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0.004,
+   "localDuration": 1.341,
+   "text": "先说难被复制。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 1.345,
+   "localDuration": 2.298,
+   "text": "第一种原料，是领域知识。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 3.643,
+   "localDuration": 11.876,
+   "text": "把你知道的一切——行业黑话、监管的坑、边缘情况、为什么显而易见的方案行不通——持续灌给 Claude，放进产品够得着的地方。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 15.664,
+   "localDuration": 12.358,
+   "text": "再用 Skills，也就是可复用的技能包，把重复的领域流程固化成每次都以同样方式执行的例程，比如\"怎么审一份商业租约\"。"
+  },
+  {
+   "id": "sub-5",
+   "localStart": 28.222,
+   "localDuration": 5.403,
+   "text": "几个月积累下来，这会变成一层通用 AI 追不上的专有知识底座。"
+  },
+  {
+   "id": "sub-6",
+   "localStart": 33.772,
+   "localDuration": 2.049,
+   "text": "它会直接变成产品逻辑。"
+  },
+  {
+   "id": "sub-7",
+   "localStart": 35.821,
+   "localDuration": 13.037,
+   "text": "举个例子：美国有一类编号叫三四零B的特殊药品折扣项目，通用的 AI 医疗计费工具，处理这类理赔会直接出错——而你的产品，为它写了专门的逻辑。"
+  },
+  {
+   "id": "sub-8",
+   "localStart": 49,
+   "localDuration": 6.128,
+   "text": "每撞到一个通用竞品必错的边缘情况，就加一条基于真实场景的测试。"
+  },
+  {
+   "id": "sub-9",
+   "localStart": 55.128,
+   "localDuration": 4.349,
+   "text": "日积月累，你的测试套件，就是一张护城河地图。"
+  }
+ ]
+}

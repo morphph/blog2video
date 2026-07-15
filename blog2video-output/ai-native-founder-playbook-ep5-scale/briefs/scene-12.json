@@ -1,0 +1,28 @@
+{
+  "scene": 12,
+  "id": "s12",
+  "type": "comparison_cards",
+  "dataDuration": 15.4,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_12.html",
+  "topbarIndex": "[12/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 2.398,
+      "text": "最后，回到护城河本身。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 2.394,
+      "localDuration": 10.246,
+      "text": "大多数人把护城河当一个词用，其实它是两种方向相反的力：第一种让你难被复制，第二种让你难被离开。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 12.64,
+      "localDuration": 2.616,
+      "text": "混为一谈，就会漏掉一半。"
+    }
+  ]
+}

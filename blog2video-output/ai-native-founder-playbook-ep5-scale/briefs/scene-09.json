@@ -1,0 +1,34 @@
+{
+ "scene": 9,
+ "id": "s09",
+ "type": "image",
+ "dataDuration": 35.133,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_9.html",
+ "topbarIndex": "[09/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 3.267,
+   "text": "接下来说这一关的新税：外部审视。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 3.407,
+   "localDuration": 8.213,
+   "text": "公众投资人、分析师、监管机构、企业采购团队、潜在收购方，全都带着更高的怀疑入场。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 11.82,
+   "localDuration": 9.362,
+   "text": "他们审的不止是产品能力，更是产品周围的组织：治理、合规姿态、财务控制，甚至你讲公司故事的方式。"
+  },
+  {
+   "id": "sub-4",
+   "localStart": 21.335,
+   "localDuration": 13.635,
+   "text": "大客户签多年合同之前，要看另一套东西：产品文档、支持手册，以及 SLA——白纸黑字的服务等级承诺，出了问题多久响应、多久恢复。"
+  }
+ ]
+}

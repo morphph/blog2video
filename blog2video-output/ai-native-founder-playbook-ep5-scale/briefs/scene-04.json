@@ -1,0 +1,28 @@
+{
+ "scene": 4,
+ "id": "s04",
+ "type": "image",
+ "dataDuration": 17.667,
+ "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_4.html",
+ "topbarIndex": "[04/17]",
+ "subtitles": [
+  {
+   "id": "sub-1",
+   "localStart": 0,
+   "localDuration": 5.103,
+   "text": "过去每一关，增长都是你贴着用户、凭手感调出来的。"
+  },
+  {
+   "id": "sub-2",
+   "localStart": 5.096,
+   "localDuration": 1.275,
+   "text": "现在不行了。"
+  },
+  {
+   "id": "sub-3",
+   "localStart": 6.571,
+   "localDuration": 10.941,
+   "text": "从几千人到上百万人，从一个市场到很多个市场，你需要的是系统化的增长——一台不靠你的手感，也能持续运转的增长机器。"
+  }
+ ]
+}

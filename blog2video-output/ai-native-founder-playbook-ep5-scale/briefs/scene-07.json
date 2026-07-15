@@ -1,0 +1,64 @@
+{
+  "scene": 7,
+  "id": "s07",
+  "type": "principle",
+  "dataDuration": 39.967,
+  "srcSlideHtml": "/Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/slide_7.html",
+  "topbarIndex": "[07/17]",
+  "subtitles": [
+    {
+      "id": "sub-1",
+      "localStart": 0,
+      "localDuration": 3.579,
+      "text": "但要走到那道门槛，先要过一道最难的关。"
+    },
+    {
+      "id": "sub-2",
+      "localStart": 3.566,
+      "localDuration": 4.332,
+      "text": "它不是技术关，是心理关：把运营层，真的交出去。"
+    },
+    {
+      "id": "sub-3",
+      "localStart": 8.051,
+      "localDuration": 3.371,
+      "text": "上一集，你已经把系统建了起来。"
+    },
+    {
+      "id": "sub-4",
+      "localStart": 11.422,
+      "localDuration": 7.864,
+      "text": "这一集的功课分两步：第一步，把这些系统养到完全可信；第二步，真的信它。"
+    },
+    {
+      "id": "sub-5",
+      "localStart": 19.286,
+      "localDuration": 3.595,
+      "text": "卡住绝大多数创始人的，是第二步。"
+    },
+    {
+      "id": "sub-6",
+      "localStart": 23.027,
+      "localDuration": 3.208,
+      "text": "这道门还特别窄，两边都是失败模式。"
+    },
+    {
+      "id": "sub-7",
+      "localStart": 26.235,
+      "localDuration": 9.245,
+      "text": "交得太多、太快——尤其是交给 AI 自动化系统——关键决策就会在缺少你独有背景信息的情况下被做出。"
+    },
+    {
+      "id": "sub-8",
+      "localStart": 35.48,
+      "localDuration": 2.453,
+      "text": "抓得太久，你自己就是瓶颈。"
+    },
+    {
+      "id": "sub-9",
+      "localStart": 37.933,
+      "localDuration": 1.887,
+      "text": "没有安全的默认选项。"
+    }
+  ]
+}

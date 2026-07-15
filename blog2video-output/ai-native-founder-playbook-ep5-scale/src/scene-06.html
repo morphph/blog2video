@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-06 特有 —— */
+[data-composition-id='s06'] .prev{margin-top:18px;font-weight:500;font-size:28px;color:#8a8a85;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+[data-composition-id='s06'] .prev .pv{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;border:1px solid #2a2a2c;padding:4px 14px}
+[data-composition-id='s06'] .prev .pa{font-family:'JetBrains Mono',monospace;color:#8a8a85}
+[data-composition-id='s06'] .h1{margin-top:20px}
+[data-composition-id='s06'] .gate{margin-top:26px;width:100%}
+[data-composition-id='s06'] .g-k{font-family:'JetBrains Mono',monospace;font-size:24px;color:#ccff4d;letter-spacing:.05em}
+[data-composition-id='s06'] .g-t{margin-top:12px;font-weight:600;font-size:42px;line-height:1.35;color:#edebe6}
+[data-composition-id='s06'] .g-t .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s06'] .rows{margin-top:26px}
+[data-composition-id='s06'] .rt .rdim{color:#8a8a85;font-weight:500;font-size:32px}
+[data-composition-id='s06'] .rt .en{font-family:'JetBrains Mono',monospace;font-size:34px;color:#5fd3e8;font-weight:700}
+[data-composition-id='s06'] .reqs{margin-top:24px;width:100%}
+[data-composition-id='s06'] .reqs-l{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s06'] .reqs-l .acc{color:#ccff4d}
+[data-composition-id='s06'] .reqs-cs{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s06'] .rc{font-weight:600;font-size:27px;color:#edebe6;border:1px solid rgba(204,255,77,.35);padding:9px 18px;line-height:1.3}
+[data-composition-id='s06'] .rc b{color:#ccff4d;font-weight:700}
+[data-composition-id='s06'] .st-end{margin-top:30px}
+[data-composition-id='s06'] .final{margin-top:18px;font-weight:900;font-size:52px;line-height:1.25;color:#edebe6;display:flex;align-items:center;flex-wrap:wrap}
+[data-composition-id='s06'] .final .f-dim{color:#8a8a85}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s06" data-start="0" data-duration="43.167" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[06/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 第五关 SCALE · <span class="acc">通关判定</span></div>
+
+      <div class="prev">前几关出口 = 里程碑<span class="pa">:</span><span class="pv">证据</span><span class="pa">→</span><span class="pv">PMF</span><span class="pa">→</span><span class="pv">增长可复制</span></div>
+
+      <div class="h1">不是里程碑，是<span class="em">门槛事件</span></div>
+
+      <div class="gate bracket">
+        <div class="g-k">// EXIT CONDITION</div>
+        <div class="g-t">公司离了你的日常运营，<span class="em">也能持续运转</span></div>
+      </div>
+
+      <div class="rows">
+        <div class="row r1"><div class="n">01</div><div class="rb"><div class="rt">持续盈利 <span class="rdim">· 不再需要外部资本</span></div></div></div>
+        <div class="row r2"><div class="n">02</div><div class="rb"><div class="rt">具备公开上市条件 <span class="rdim">·</span> <span class="en">IPO-ready</span></div></div></div>
+        <div class="row r3"><div class="n">03</div><div class="rb"><div class="rt">被收购</div></div></div>
+      </div>
+
+      <div class="reqs">
+        <div class="reqs-l">三种形态 · <span class="acc">同一套要求</span></div>
+        <div class="reqs-cs">
+          <span class="rc">增长<b>系统化</b> · 可审计</span>
+          <span class="rc">护城河<b>扛得住审视</b></span>
+          <span class="rc">组织运营<b>成熟</b></span>
+        </div>
+      </div>
+
+      <div class="status st-end"><span class="dot"></span>EXIT CONDITION MET</div>
+      <div class="final"><span class="f-dim">从一个赌注，变成</span><span class="hl f-hl"><span class="bar"></span><span class="tx">一门生意</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.395" data-track-index="5"><div class="sub-inner">再说这一关什么时候算<span class="sub-k">通关</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.395" data-duration="5.551" data-track-index="5"><div class="sub-inner">前几关的出口都是<span class="sub-k">里程碑</span>：拿到证据，拿到 PMF，增长可复制。</div></div>
+    <div id="sub-3" class="clip sub" data-start="7.946" data-duration="6.107" data-track-index="5"><div class="sub-inner">这一关的出口，是一个<span class="sub-k">门槛事件</span>：公司离了你的日常运营，也能持续运转。</div></div>
+    <div id="sub-4" class="clip sub" data-start="14.209" data-duration="11.673" data-track-index="5"><div class="sub-inner">落到现实里，是<span class="sub-k">三种形态之一</span>：不再需要外部资本的持续盈利；具备公开上市的条件，也就是 IPO-ready；或者被收购。</div></div>
+    <div id="sub-5" class="clip sub" data-start="26.053" data-duration="10.732" data-track-index="5"><div class="sub-inner">三种形态，要求是<span class="sub-k">同一套</span>：增长系统化、经得起审计，护城河扛得住审视，组织运营成熟。</div></div>
+    <div id="sub-6" class="clip sub" data-start="36.925" data-duration="6.077" data-track-index="5"><div class="sub-inner">当这些都成立，恭喜你——你的创业，从一个赌注，变成了<span class="sub-k">一门生意</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s06'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.prev', 2.6, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 8.0, {y:18, d:.36, ease:'expo.out'});
+    D2.enter(tl, R+'.gate', 10.4, {y:16, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 17.2, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 20.3, {x:-22, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 24.6, {x:-22, ease:'power3.out'});
+    D2.enter(tl, R+'.reqs', 26.4, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.rc', 29.2, {y:10, d:.3, ease:'power3.out', step:2.9});
+    D2.enter(tl, R+'.st-end', 37.4, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.final', 40.2, {y:16, d:.34, ease:'expo.out'});
+    D2.sweep(tl, R, '.f-hl', 42.0);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.395],['#sub-3',7.946],['#sub-4',14.209],['#sub-5',26.053],['#sub-6',36.925]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 43.167, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s06'] = tl;
+  })();
+  </script>
+</body>
+</html>

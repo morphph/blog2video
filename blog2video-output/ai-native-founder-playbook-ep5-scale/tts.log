@@ -5,4 +5,3 @@
 Reading script: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/video_1_script.md
 Extracted 3444 characters for TTS (17 slides mapped)
 Calling MiniMax TTS API...
-MiniMax API returned error: {"status_code":1008,"status_msg":"insufficient balance"}

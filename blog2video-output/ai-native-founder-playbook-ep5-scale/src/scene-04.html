@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-04 特有 —— */
+[data-composition-id='s04'] .pane{width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 32px}
+[data-composition-id='s04'] .pane .pl{display:flex;align-items:center;gap:18px;font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s04'] .pane .pb{margin-top:12px;font-weight:600;font-size:42px;line-height:1.3;color:#edebe6}
+[data-composition-id='s04'] .fail{font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;border:1px solid #2a2a2c;padding:3px 14px}
+[data-composition-id='s04'] .jumps{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:24px}
+[data-composition-id='s04'] .jump{display:flex;align-items:baseline;gap:26px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+[data-composition-id='s04'] .jump .from{font-weight:600;font-size:36px;color:#8a8a85}
+[data-composition-id='s04'] .jump .arr{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:#5fd3e8}
+[data-composition-id='s04'] .jump .to{font-weight:900;font-size:46px;color:#5fd3e8}
+[data-composition-id='s04'] .pane-new{padding:30px 34px}
+[data-composition-id='s04'] .pane-new .pl{color:#ccff4d}
+[data-composition-id='s04'] .pane-new .pb{font-weight:900;font-size:54px;line-height:1.25}
+[data-composition-id='s04'] .ntags{display:flex;gap:14px;margin-top:20px}
+[data-composition-id='s04'] .ntags .ntag{font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:5px 16px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s04" data-start="0" data-duration="17.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[04/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// SCALE 规模化 · <span class="acc">增长换挡</span></div>
+      <div class="h1" style="margin-top:18px">你需要一台<span class="em">增长机器</span></div>
+
+      <div class="pane pane-old" style="margin-top:44px">
+        <div class="pl">过去每一关 <span class="fail">× 手感失效</span></div>
+        <div class="pb">贴着用户 · 凭手感调出来</div>
+      </div>
+
+      <div class="jumps">
+        <div class="jump j1"><span class="from">几千人</span><span class="arr">→</span><span class="to">上百万人</span></div>
+        <div class="jump j2"><span class="from">一个市场</span><span class="arr">→</span><span class="to">很多个市场</span></div>
+      </div>
+
+      <div class="pane pane-new bracket" style="margin-top:24px">
+        <div class="pl">现在</div>
+        <div class="pb">系统化的<span style="color:#ccff4d">增长</span></div>
+        <div class="ntags"><span class="ntag">不靠手感</span><span class="ntag">持续运转</span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.103" data-track-index="5"><div class="sub-inner">过去每一关，增长都是你贴着用户、<span class="sub-k">凭手感</span>调出来的。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.096" data-duration="1.275" data-track-index="5"><div class="sub-inner">现在<span class="sub-k">不行了</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="6.571" data-duration="10.941" data-track-index="5"><div class="sub-inner">从几千人到上百万人，从一个市场到很多个市场，你需要的是<span class="sub-k">系统化的增长</span>——一台不靠你的手感，也能持续运转的增长机器。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s04'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .65, {y:20, d:.4, ease:'expo.out'});
+    /* sub-1:过去凭手感 */
+    D2.enter(tl, R+'.pane-old', 1.5, {x:-24, ease:'power3.out'});
+    /* sub-2 5.096「现在不行了」:手感卡压暗 + 失效标记 */
+    tl.to(R+'.pane-old .pb',{opacity:.45,duration:.35,ease:'power1.inOut'},5.2);
+    D2.enter(tl, R+'.fail', 5.25, {y:8, d:.28, ease:'power2.out'});
+    /* sub-3 6.571:规模跳变(电青数据) */
+    D2.enter(tl, R+'.j1', 6.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.j2', 8.5, {x:-24, ease:'expo.out'});
+    /* sub-3 中段「系统化的增长」 */
+    D2.enter(tl, R+'.pane-new', 11.3, {y:18, d:.35, ease:'power3.out'});
+    /* sub-3 尾段「不靠手感,也能持续运转」晚到标签 */
+    D2.stagger(tl, R+'.ntags .ntag', 14.0, {y:12, step:.14, d:.28, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.096],['#sub-3',6.571]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 17.667, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s04'] = tl;
+  })();
+  </script>
+</body>
+</html>

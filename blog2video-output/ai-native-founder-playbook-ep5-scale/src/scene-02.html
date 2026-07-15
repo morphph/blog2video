@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-02 特有 —— */
+[data-composition-id='s02'] .tl-row .wt{font-size:42px;font-weight:700}
+[data-composition-id='s02'] .q3{margin-top:12px;font-weight:500;font-size:27px;color:#8a8a85;line-height:1.45}
+[data-composition-id='s02'] .em2{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s02" data-start="0" data-duration="14" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[02/17]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker k-top">// SCALE · <span class="acc">先看清这一关的题目</span></div>
+      <div class="h1" style="margin-top:20px">问题，<span class="hl"><span class="bar"></span><span class="tx">第一次换了</span></span></div>
+
+      <div class="tl" style="margin-top:46px">
+        <div class="tl-row r0">
+          <div class="yr">01-04</div>
+          <div class="wt"><span class="a0">怎么活下来</span>
+            <div class="q3">想法是真的吗 · 产品配存在吗 · 生意配长大吗</div>
+          </div>
+        </div>
+        <div class="tl-row now r1">
+          <div class="yr">05</div>
+          <div class="wt"><span class="a1">怎么变得<span class="em2">难以替代</span></span><span class="badge">新问题</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.001" data-duration="4.488" data-track-index="5"><div class="sub-inner">前四关，问的其实是同一件事：<span class="sub-k">怎么活下来</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="4.489" data-duration="4.712" data-track-index="5"><div class="sub-inner">想法是真的吗，产品配存在吗，生意配长大吗。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.361" data-duration="4.498" data-track-index="5"><div class="sub-inner">到了 Scale 这一关，问题第一次换了：怎么变得<span class="sub-k">难以替代</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s02'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r0', .95, {x:-22, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.a0', 3.1, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.q3', 4.6, {y:14, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.r1', 10.4, {x:-22, d:.36, ease:'expo.out'});
+    D2.sweep(tl, R, '.hl', 11.3);
+    D2.enter(tl, R+'.a1', 12.4, {y:10, d:.3, ease:'power3.out'});
+    tl.from(R+'.badge',{scale:.6,opacity:0,duration:.3,ease:'expo.out'},12.9);
+    D2.subs(tl, [['#sub-1',0.001],['#sub-2',4.489],['#sub-3',9.361]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 14, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s02'] = tl;
+  })();
+  </script>
+</body>
+</html>

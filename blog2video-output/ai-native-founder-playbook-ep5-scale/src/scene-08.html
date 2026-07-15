@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-08 特有 —— */
+[data-composition-id='s08'] .taglist{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+[data-composition-id='s08'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:5px 16px}
+[data-composition-id='s08'] .tlab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.05em;margin-top:46px}
+[data-composition-id='s08'] .tlab .a2{color:#ccff4d}
+[data-composition-id='s08'] .rt .ak{color:#ccff4d}
+[data-composition-id='s08'] .cy{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#5fd3e8;background:rgba(95,211,232,.1);border:1px solid rgba(95,211,232,.28);padding:1px 10px}
+[data-composition-id='s08'] .foot{width:100%;margin-top:36px}
+[data-composition-id='s08'] .foot .fl{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s08'] .foot .ft{margin-top:14px;font-weight:600;font-size:38px;line-height:1.4;color:#edebe6}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s08" data-start="0" data-duration="32.033" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[08/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 规模化 · <span class="acc">过心理关</span></div>
+      <div class="h1" style="margin-top:18px">把脑子里的机构知识，<br>编码成<span class="em">可转交的系统</span></div>
+      <div class="taglist"><span class="tg">有文档</span><span class="tg">可审计</span><span class="tg">可转交</span></div>
+
+      <div class="tlab">// SELF-TEST · <span class="a2">消失一周推演</span></div>
+      <div class="rows" style="margin-top:18px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">让 <span class="cy">Claude</span> 盘一遍所有经过你的</div>
+          <div class="rd">工作流 · 决策 · 审批</div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt">推演：<span class="ak">你消失一周</span>，每一条会怎样</div>
+        </div></div>
+
+        <div class="row r3 now"><div class="n">03</div><div class="rb">
+          <div class="rt">会停摆的 = <span class="ak">交接没完成</span>的地方</div>
+        </div></div>
+      </div>
+
+      <div class="foot bracket">
+        <div class="fl">// AUTOPILOT · 日常事务</div>
+        <div class="ft">接管和自动化，交给 <span class="cy">Claude Cowork</span> 去跑<span class="cur sm"></span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="10.094" data-track-index="5"><div class="sub-inner">真正的功课，是把只活在你脑子里、没被写下来的<span class="sub-k">机构知识</span>，一条一条，编码成有文档、可审计、可转交的系统。</div></div>
+    <div id="sub-2" class="clip sub" data-start="10.276" data-duration="12.533" data-track-index="5"><div class="sub-inner">有个特别好用的自测：让 Claude 把所有经过你的工作流、决策、审批盘一遍，然后推演，<span class="sub-k">你消失一周</span>，每一条会怎样。</div></div>
+    <div id="sub-3" class="clip sub" data-start="22.809" data-duration="3.958" data-track-index="5"><div class="sub-inner">会停摆的那些，就是<span class="sub-k">交接没完成</span>的地方。</div></div>
+    <div id="sub-4" class="clip sub" data-start="26.908" data-duration="4.974" data-track-index="5"><div class="sub-inner">而日常事务的接管和自动化，可以直接交给 <span class="sub-k">Claude Cowork</span> 去跑。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s08'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.taglist .tg', 6.2, {y:12, step:.14, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tlab', 10.4, {y:-10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r1', 11.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.r1 .rd', 13.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 17.2, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 22.9, {x:-24, ease:'power2.out'});
+    D2.enter(tl, R+'.foot', 27.1, {y:18, d:.35, ease:'power3.out'});
+    D2.blink(tl, R+'.foot .cur', 28.8, 5);
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',10.276],['#sub-3',22.809],['#sub-4',26.908]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 32.033, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s08'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-12 特有 —— */
+[data-composition-id='s12'] .col .it .nm{font-size:48px;font-weight:900;line-height:1.25}
+[data-composition-id='s12'] .col .it .ds{margin-top:14px;font-size:27px}
+[data-composition-id='s12'] .punch{margin-top:48px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s12" data-start="0" data-duration="15.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[12/17]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker">// SCALE · <span class="acc">回到护城河</span></div>
+      <div class="h1" style="margin-top:18px">一个词,其实是<br><span class="em">两种方向相反的力</span></div>
+
+      <div class="cols" style="margin-top:48px">
+        <div class="col f1">
+          <div class="ch">FORCE 01</div>
+          <div class="it"><div class="nm">难被复制</div><div class="ds">→ 挡对手进来</div></div>
+        </div>
+        <div class="col f2 alt">
+          <div class="ch">FORCE 02</div>
+          <div class="it"><div class="nm">难被离开</div><div class="ds">→ 抬高离开的成本</div></div>
+        </div>
+      </div>
+
+      <div class="h2 punch">混为一谈 = <span class="hl"><span class="bar"></span><span class="tx">漏掉一半</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.398" data-track-index="5"><div class="sub-inner">最后，回到<span class="sub-k">护城河</span>本身。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.394" data-duration="10.246" data-track-index="5"><div class="sub-inner">大多数人把护城河当一个词用，其实它是<span class="sub-k">两种方向相反的力</span>：第一种让你难被复制，第二种让你难被离开。</div></div>
+    <div id="sub-3" class="clip sub" data-start="12.64" data-duration="2.616" data-track-index="5"><div class="sub-inner">混为一谈，就会<span class="sub-k">漏掉一半</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s12'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.55, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.col.f1', 7.9, {x:-24, d:.38, ease:'power3.out'});
+    D2.enter(tl, R+'.col.f2', 10.0, {x:24, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.punch', 12.7, {y:16, d:.34, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 13.35);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.394],['#sub-3',12.64]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 15.4, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s12'] = tl;
+  })();
+  </script>
+</body>
+</html>

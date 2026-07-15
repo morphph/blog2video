@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-11 特有 —— */
+[data-composition-id='s11'] .beat{position:absolute;inset:0;padding:236px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;box-sizing:border-box}
+[data-composition-id='s11'] .warn-t{color:#ff6b5e;font-weight:700}
+[data-composition-id='s11'] .kchips{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+[data-composition-id='s11'] .kchip{font-family:'JetBrains Mono',monospace;font-size:24px;color:#edebe6;border:1px solid #2a2a2c;background:#1c1c1e;padding:8px 18px}
+[data-composition-id='s11'] .acap{margin-top:20px;font-weight:600;font-size:34px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s11'] .sigk{margin-top:34px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#8a8a85;letter-spacing:.05em}
+[data-composition-id='s11'] .sigk .x3{color:#ff6b5e;font-weight:700}
+[data-composition-id='s11'] .s3tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ff6b5e;border:1px solid rgba(255,107,94,.4);padding:2px 12px;margin-left:12px;vertical-align:4px}
+[data-composition-id='s11'] .codec{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#5fd3e8;background:rgba(95,211,232,.1);border:1px solid rgba(95,211,232,.28);padding:1px 10px}
+[data-composition-id='s11'] .bdef{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:27px;color:#8a8a85;letter-spacing:.02em}
+[data-composition-id='s11'] .gchips{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+[data-composition-id='s11'] .gc{font-family:'JetBrains Mono',monospace;font-size:23px;color:#edebe6;border:1px solid #2a2a2c;background:#1c1c1e;padding:5px 14px}
+[data-composition-id='s11'] .beval{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:24px;color:#5fd3e8;letter-spacing:.01em}
+[data-composition-id='s11'] .bpunch{margin-top:30px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s11" data-start="0" data-duration="64.767" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[11/17]</div>
+    </div>
+
+    <div class="content top">
+      <!-- BEAT A: 有机增长的天花板 -->
+      <div class="beat" id="beatA">
+        <div class="kicker ka">// SCALE · <span class="acc">增长的墙</span></div>
+        <div class="h1 ah1" style="margin-top:14px">有机增长的<span class="em">天花板</span></div>
+        <div class="kchips">
+          <span class="kchip">创始人亲自卖</span><span class="kchip">靠口碑</span><span class="kchip">好时机的发布</span>
+        </div>
+        <div class="acap">能带你走很远 —— <span class="warn-t">走不到上百万用户</span></div>
+        <div class="sigk">// 撞墙信号 <span class="x3">×3</span></div>
+        <div class="rows" style="margin-top:16px">
+          <div class="row warn as1"><div class="n">01</div><div class="rb">
+            <div class="rt">用户曲线<span class="warn-t">变平</span></div>
+          </div></div>
+          <div class="row warn as2"><div class="n">02</div><div class="rb">
+            <div class="rt">获客成本<span class="warn-t">上升</span></div>
+          </div></div>
+          <div class="row warn as3"><div class="n">03</div><div class="rb">
+            <div class="rt">销售管道，只在<span class="warn-t">你亲自介入</span>时才动<span class="s3tag">最扎心</span></div>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- BEAT B: GTM 引擎 -->
+      <div class="beat" id="beatB" style="opacity:0">
+        <div class="kicker bk">// SCALE · <span class="acc">解法</span></div>
+        <div class="h1 bh1" style="margin-top:14px">一台真正的 <span class="em">GTM 引擎</span></div>
+        <div class="bdef">go-to-market · 把产品系统性推向市场</div>
+        <div class="gchips">
+          <span class="gc">市场分层</span><span class="gc">故事怎么讲</span><span class="gc">卖给谁</span><span class="gc">怎么卖</span>
+        </div>
+        <div class="rows" style="margin-top:30px">
+          <div class="row bt1"><div class="n">01</div><div class="rb">
+            <div class="rt"><span class="codec">Claude</span> · 从零搭 GTM 底料</div>
+            <div class="rd">市场细分 / 信息架构 / 销售手册 / 面向投资人的指标叙事</div>
+          </div></div>
+          <div class="row bt2"><div class="n">02</div><div class="rb">
+            <div class="rt"><span class="codec">Claude Cowork</span> · 执行层</div>
+            <div class="rd">内容管道 / 外联序列 / PR 节奏 / 管道报表</div>
+          </div></div>
+          <div class="row bt3"><div class="n">03</div><div class="rb">
+            <div class="rt"><span class="codec">Claude Code</span> · 产品营销基础设施</div>
+            <div class="rd"><span class="ok">能跑的 demo 环境</span> / 集成文档 / API 参考</div>
+            <div class="beval">企业买家 → 亲手做技术评估</div>
+          </div></div>
+        </div>
+        <div class="h2 bpunch">你在开董事会，<span class="hl"><span class="bar"></span><span class="tx">它在替你签单</span></span></div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="5.02" data-track-index="5"><div class="sub-inner">增长这边，也有一堵墙在等你：<span class="sub-k">有机增长的天花板</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="5.183" data-duration="7.748" data-track-index="5"><div class="sub-inner">靠创始人亲自卖、靠口碑、靠一次好时机的发布，能带你走很远，但<span class="sub-k">走不到上百万用户</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.131" data-duration="11.975" data-track-index="5"><div class="sub-inner">撞墙的信号有三个：用户曲线变平；获客成本上升；以及最扎心的一个——销售管道，<span class="sub-k">只在你亲自介入的时候才动</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="25.271" data-duration="3.719" data-track-index="5"><div class="sub-inner">这时候，你需要一个真正的 <span class="sub-k">GTM 引擎</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="28.99" data-duration="10.412" data-track-index="5"><div class="sub-inner">GTM，go-to-market，就是<span class="sub-k">把产品系统性推向市场</span>的整套动作：市场怎么分层，故事怎么讲，卖给谁，怎么卖。</div></div>
+    <div id="sub-6" class="clip sub" data-start="39.402" data-duration="2.789" data-track-index="5"><div class="sub-inner">绝大多数创始人<span class="sub-k">从来没建过</span>这些。</div></div>
+    <div id="sub-7" class="clip sub" data-start="42.335" data-duration="5.949" data-track-index="5"><div class="sub-inner">但它不需要很大——<span class="sub-k">建产品的那套 AI 基础设施</span>，可以直接把它启动起来。</div></div>
+    <div id="sub-8" class="clip sub" data-start="48.455" data-duration="1.815" data-track-index="5"><div class="sub-inner">有个<span class="sub-k">细节</span>我特别喜欢。</div></div>
+    <div id="sub-9" class="clip sub" data-start="50.27" data-duration="7.442" data-track-index="5"><div class="sub-inner">到了这个阶段，一段演示视频加一份销售材料，已经不够用了，企业买家要<span class="sub-k">亲手做技术评估</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="57.712" data-duration="6.897" data-track-index="5"><div class="sub-inner">所以要建一个真正能跑的 demo 环境——你在开董事会的时候，它在<span class="sub-k">替你签单</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s11'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* BEAT A: 天花板 + 三个撞墙信号 (0 - ~25.1) */
+    D2.enter(tl, R+'.ka', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.ah1', .8, {y:20, d:.4, ease:'expo.out'});
+    D2.stagger(tl, R+'.kchip', 5.5, {y:12, step:.9, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.acap', 10.4, {y:12, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.sigk', 13.3, {y:-10, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.as1', 15.3, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.as2', 17.2, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.as3', 19.9, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.s3tag', 21.4, {y:8, d:.26, ease:'power2.out'});
+
+    /* A -> B swap @ 25.27 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},24.85);
+    tl.set(R+'#beatB',{opacity:1},25.27);
+
+    /* BEAT B: GTM 引擎 (25.27 - 64.7) */
+    D2.enter(tl, R+'.bk', 25.45, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.bh1', 25.8, {y:20, d:.38, ease:'expo.out'});
+    D2.enter(tl, R+'.bdef', 29.2, {y:14, d:.3, ease:'power3.out'});
+    D2.stagger(tl, R+'.gc', 34.4, {y:10, step:1.2, d:.26, ease:'power2.out'});
+    D2.enter(tl, R+'.bt1', 42.6, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.bt2', 44.5, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.bt3', 46.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.beval', 50.5, {y:10, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.bpunch', 57.9, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.bpunch .hl', 62.0);
+
+    D2.subs(tl, [['#sub-1',0],['#sub-2',5.183],['#sub-3',13.131],['#sub-4',25.271],['#sub-5',28.99],['#sub-6',39.402],['#sub-7',42.335],['#sub-8',48.455],['#sub-9',50.27],['#sub-10',57.712]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 64.767, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s11'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-09 特有 —— */
+[data-composition-id='s09'] .crl{color:#ff6b5e}
+[data-composition-id='s09'] .plab{font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;letter-spacing:.05em;color:#ff6b5e}
+[data-composition-id='s09'] .chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;width:760px}
+[data-composition-id='s09'] .chipx{font-weight:600;font-size:31px;line-height:1;color:#edebe6;background:rgba(255,107,94,.08);border:1px solid rgba(255,107,94,.45);padding:16px 24px}
+[data-composition-id='s09'] .audit{margin-top:32px;width:100%}
+[data-composition-id='s09'] .a-lead{margin-top:14px;font-weight:600;font-size:37px;line-height:1.35;color:#edebe6}
+[data-composition-id='s09'] .a-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+[data-composition-id='s09'] .atg{font-weight:600;font-size:28px;line-height:1;color:#edebe6;background:#121212;border:1px solid #2a2a2c;padding:13px 20px}
+[data-composition-id='s09'] .slacard{margin-top:26px;width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 30px}
+[data-composition-id='s09'] .plab-d{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s09'] .docs{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+[data-composition-id='s09'] .doc{font-weight:700;font-size:31px;line-height:1;color:#edebe6;border:1px solid #2a2a2c;background:#121212;padding:15px 22px}
+[data-composition-id='s09'] .doc.sla{font-family:'JetBrains Mono',monospace;color:#ccff4d;background:rgba(204,255,77,.08);border-color:rgba(204,255,77,.4)}
+[data-composition-id='s09'] .sla-x{margin-top:18px;font-weight:600;font-size:31px;color:#edebe6;line-height:1.35}
+[data-composition-id='s09'] .sla-r{margin-top:8px;font-weight:500;font-size:27px;color:#8a8a85;line-height:1.4}
+[data-composition-id='s09'] .sla-r .arr{color:#ccff4d;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s09" data-start="0" data-duration="35.133" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[09/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker k-top">// SCALE · <span class="acc">这一关的新税</span></div>
+      <div class="h1" style="margin-top:18px">外部审视<span class="cur"></span></div>
+      <div class="lead ld" style="margin-top:14px">带着<span class="crl">更高的怀疑</span>入场</div>
+
+      <div class="plab plab-w" style="margin-top:34px">// 谁在审</div>
+      <div class="chips">
+        <span class="chipx">公众投资人</span>
+        <span class="chipx">分析师</span>
+        <span class="chipx">监管机构</span>
+        <span class="chipx">企业采购团队</span>
+        <span class="chipx">潜在收购方</span>
+      </div>
+
+      <div class="bracket audit">
+        <div class="plab">// 审什么</div>
+        <div class="a-lead">不止产品能力，更是<span class="crl">产品周围的组织</span></div>
+        <div class="a-tags">
+          <span class="atg">治理</span>
+          <span class="atg">合规姿态</span>
+          <span class="atg">财务控制</span>
+          <span class="atg">讲公司故事的方式</span>
+        </div>
+      </div>
+
+      <div class="slacard">
+        <div class="plab-d">// 大客户签多年合同前 · 要看</div>
+        <div class="docs">
+          <span class="doc">产品文档</span>
+          <span class="doc">支持手册</span>
+          <span class="doc sla">SLA</span>
+        </div>
+        <div class="sla-x">白纸黑字的服务等级承诺</div>
+        <div class="sla-r">出了问题 <span class="arr">→</span> 多久响应 · 多久恢复</div>
+      </div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="3.267" data-track-index="5"><div class="sub-inner">接下来说这一关的新税：<span class="sub-k">外部审视</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="3.407" data-duration="8.213" data-track-index="5"><div class="sub-inner">公众投资人、分析师、监管机构、企业采购团队、潜在收购方，全都带着<span class="sub-k">更高的怀疑</span>入场。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.82" data-duration="9.362" data-track-index="5"><div class="sub-inner">他们审的不止是产品能力，更是<span class="sub-k">产品周围的组织</span>：治理、合规姿态、财务控制，甚至你讲公司故事的方式。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.335" data-duration="13.635" data-track-index="5"><div class="sub-inner">大客户签多年合同之前，要看另一套东西：产品文档、支持手册，以及 <span class="sub-k">SLA</span>——白纸黑字的服务等级承诺，出了问题多久响应、多久恢复。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s09'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.k-top', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.42, ease:'expo.out'});
+    D2.blink(tl, R+'.h1 .cur', 1.5, 3);
+    D2.enter(tl, R+'.plab-w', 3.5, {y:-10, d:.28, ease:'power2.out'});
+    D2.stagger(tl, R+'.chipx', 3.8, {y:14, step:.95, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.ld', 9.4, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.audit', 12.05, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.a-lead', 13.6, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.atg', 15.9, {y:12, step:.95, d:.28, ease:'power3.out'});
+    D2.enter(tl, R+'.slacard', 21.6, {y:20, d:.38, ease:'power4.out'});
+    D2.stagger(tl, R+'.doc', 25.2, {y:12, step:1.05, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.sla-x', 28.8, {y:12, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.sla-r', 31.4, {y:10, d:.3, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0],['#sub-2',3.407],['#sub-3',11.82],['#sub-4',21.335]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 35.133, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s09'] = tl;
+  })();
+  </script>
+</body>
+</html>

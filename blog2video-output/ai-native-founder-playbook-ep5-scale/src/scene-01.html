@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-01 特有 —— */
+[data-composition-id='s01'] .content{padding:0}
+[data-composition-id='s01'] .beat{position:absolute;inset:0;padding:300px 72px 540px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-sizing:border-box}
+
+/* beat A — 官方手册,从第一天写到终局 */
+[data-composition-id='s01'] .a-h1{margin-top:20px}
+[data-composition-id='s01'] .a-lead{margin-top:26px}
+[data-composition-id='s01'] .a-path{margin-top:72px;display:flex;align-items:center;gap:26px}
+[data-composition-id='s01'] .a-path .pp{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:#edebe6;letter-spacing:.04em}
+[data-composition-id='s01'] .a-path .pline{position:relative;width:330px;height:2px;background:#2a2a2c}
+[data-composition-id='s01'] .a-path .pfill{position:absolute;inset:0;background:#ccff4d;transform:scaleX(0);transform-origin:left center}
+[data-composition-id='s01'] .a-path .pend{font-weight:900;font-size:46px;color:#ccff4d}
+
+/* beat B — EP.05 SCALE · 完结篇 */
+[data-composition-id='s01'] .b-word{margin-top:26px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:128px;letter-spacing:-.02em;line-height:1;color:#edebe6;display:flex;align-items:center}
+[data-composition-id='s01'] .b-word .wcur{display:inline-block;width:54px;height:98px;background:#ccff4d;margin-left:22px}
+[data-composition-id='s01'] .b-zh{margin-top:18px;font-weight:900;font-size:80px;color:#edebe6}
+[data-composition-id='s01'] .b-chip{margin-top:64px}
+
+/* beat C — 自运转的公司 · 几千 → 上百万 */
+[data-composition-id='s01'] .c-brk{margin-top:24px;padding:34px 38px}
+[data-composition-id='s01'] .c-bt{font-weight:900;font-size:60px;line-height:1.25;color:#edebe6}
+[data-composition-id='s01'] .c-lab{margin-top:76px}
+[data-composition-id='s01'] .c-jump{margin-top:26px;display:flex;align-items:baseline;gap:24px}
+[data-composition-id='s01'] .c-jump .jd{font-weight:900;font-size:64px;color:#8a8a85}
+[data-composition-id='s01'] .c-jump .ja{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:56px;color:#ccff4d}
+[data-composition-id='s01'] .c-jump .jm{font-weight:900;font-size:104px;line-height:1;color:#5fd3e8}
+[data-composition-id='s01'] .c-jump .ju{font-weight:600;font-size:36px;color:#8a8a85}
+
+/* beat D — 最后一问 · 主标题 */
+[data-composition-id='s01'] .d-t1{margin-top:22px;font-weight:900;font-size:80px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .d-t2{font-weight:900;font-size:80px;line-height:1.22;color:#edebe6}
+[data-composition-id='s01'] .d-bet{margin-top:60px;display:flex;align-items:center;gap:22px}
+[data-composition-id='s01'] .d-bet .bx{background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 26px;font-weight:600;font-size:40px;color:#8a8a85}
+[data-composition-id='s01'] .d-bet .barr{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:44px;color:#ccff4d}
+[data-composition-id='s01'] .d-bet .b2{border-color:#ccff4d;background:rgba(204,255,77,.07);color:#ccff4d;font-weight:900}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s01" data-start="0" data-duration="34.667" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[01/17]</div>
+    </div>
+
+    <div class="content">
+      <!-- BEAT A: 官方创业手册,从第一天写到终局 -->
+      <div class="beat" id="beatA">
+        <div class="kicker a-kick"><span class="acc">●</span> ANTHROPIC</div>
+        <div class="h1 xl a-h1">官方创业手册</div>
+        <div class="lead a-lead">用 AI <span class="em">白手起家</span></div>
+        <div class="a-path">
+          <span class="pp">DAY 1</span>
+          <span class="pline"><span class="pfill"></span></span>
+          <span class="pend">终局</span>
+        </div>
+      </div>
+
+      <!-- BEAT B: EP.05 SCALE 规模化 · 完结篇 -->
+      <div class="beat" id="beatB" style="opacity:0">
+        <div class="kicker b-kick"><span class="acc">EP.05 / 05</span> · ANTHROPIC OFFICIAL PLAYBOOK</div>
+        <div class="b-word">SCALE<span class="wcur"></span></div>
+        <div class="b-zh">规模化阶段</div>
+        <div class="chip b-chip"><span class="ci">FINAL</span><span class="ct">第 5 集 / 共 5 集 · 完结篇</span></div>
+      </div>
+
+      <!-- BEAT C: 能自己运转的公司 · 几千 → 上百万 -->
+      <div class="beat" id="beatC" style="opacity:0">
+        <div class="kicker c-kick"><span class="acc">›</span> PREVIOUSLY · 上一集结尾</div>
+        <div class="bracket c-brk"><div class="c-bt">一台能自己运转的公司</div></div>
+        <div class="kicker c-lab"><span class="acc">›</span> 最后一关 · 用户规模</div>
+        <div class="c-jump">
+          <span class="jd">几千</span>
+          <span class="ja">→</span>
+          <span class="jm">上百万</span>
+          <span class="ju">用户</span>
+        </div>
+      </div>
+
+      <!-- BEAT D: 最后一问 · 主标题 -->
+      <div class="beat" id="beatD" style="opacity:0">
+        <div class="kicker d-kick"><span class="acc">//</span> 整套打法 · 最后一问</div>
+        <div class="d-t1">巨头今天抄走你的产品，</div>
+        <div class="d-t2">用户凭什么<span class="hl"><span class="bar"></span><span class="tx">留下</span></span>？</div>
+        <div class="d-bet">
+          <span class="bx b1">一个赌注</span>
+          <span class="barr">→</span>
+          <span class="bx b2">一门真正的生意</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBTITLES (local time, verbatim) -->
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="7.748" data-track-index="5"><div class="sub-inner">Anthropic 的<span class="sub-k">官方创业手册</span>，把用 AI 白手起家这条路，从第一天，一直写到了终局。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.92" data-duration="5.609" data-track-index="5"><div class="sub-inner">今天，我们接着上一集，讲 <span class="sub-k">Scale 阶段</span>，规模化阶段。</div></div>
+    <div id="sub-3" class="clip sub" data-start="13.529" data-duration="2.604" data-track-index="5"><div class="sub-inner">这也是这个系列的<span class="sub-k">最后一集</span>。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.272" data-duration="4.698" data-track-index="5"><div class="sub-inner">上一集的结尾，你手里已经有一台<span class="sub-k">能自己运转的公司</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="20.97" data-duration="4.502" data-track-index="5"><div class="sub-inner">这最后一关，要从几千个用户，走到<span class="sub-k">上百万个用户</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="25.632" data-duration="8.898" data-track-index="5"><div class="sub-inner">它要回答的，也是整套打法的最后一个问题：一家公司，怎么从一个赌注，变成<span class="sub-k">一门真正的生意</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s01'] ";
+    var tl=gsap.timeline({paused:true});
+
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+
+    /* BEAT A (0 – 7.9) 官方手册,DAY 1 → 终局 */
+    D2.enter(tl, R+'.a-kick', .45, {y:-14,d:.3,ease:'power2.out'});
+    D2.enter(tl, R+'.a-h1', .95, {y:22,d:.4,ease:'expo.out'});
+    D2.enter(tl, R+'.a-lead', 2.3, {y:18,ease:'power3.out'});
+    D2.enter(tl, R+'.a-path', 4.7, {y:16,d:.3,ease:'power2.out'});
+    tl.to(R+'.a-path .pfill',{scaleX:1,duration:.5,ease:'power3.inOut'},5.3);
+    tl.from(R+'.a-path .pend',{x:-16,opacity:0,duration:.3,ease:'expo.out'},6.2);
+
+    /* A -> B swap @ 7.92 */
+    tl.to(R+'#beatA',{opacity:0,duration:.4,ease:'power2.inOut'},7.5);
+    tl.set(R+'#beatB',{opacity:1},7.92);
+    D2.enter(tl, R+'.b-kick', 8.15, {y:-14,d:.3,ease:'power2.out'});
+    tl.from(R+'.b-word',{x:-40,opacity:0,duration:.42,ease:'expo.out'},8.8);
+    D2.blink(tl, R+'.b-word .wcur', 9.6);
+    D2.enter(tl, R+'.b-zh', 9.7, {y:20,d:.35,ease:'power3.out'});
+    D2.enter(tl, R+'.b-chip', 13.65, {y:18,d:.32,ease:'power3.out'});
+
+    /* B -> C swap @ 16.272 */
+    tl.to(R+'#beatB',{opacity:0,duration:.4,ease:'power2.inOut'},15.85);
+    tl.set(R+'#beatC',{opacity:1},16.272);
+    D2.enter(tl, R+'.c-kick', 16.5, {y:-14,d:.3,ease:'power2.out'});
+    D2.enter(tl, R+'.c-brk', 17.0, {y:20,d:.38,ease:'expo.out'});
+    D2.enter(tl, R+'.c-lab', 21.15, {y:-12,d:.3,ease:'power2.out'});
+    tl.from(R+'.c-jump .jd',{y:18,opacity:0,duration:.3,ease:'power3.out'},22.4);
+    tl.from(R+'.c-jump .ja',{x:-14,opacity:0,duration:.25,ease:'power2.out'},23.4);
+    tl.from(R+'.c-jump .jm',{y:24,opacity:0,duration:.38,ease:'expo.out'},23.85);
+    tl.from(R+'.c-jump .ju',{opacity:0,duration:.3,ease:'power1.out'},24.3);
+
+    /* C -> D swap @ 25.632 */
+    tl.to(R+'#beatC',{opacity:0,duration:.4,ease:'power2.inOut'},25.2);
+    tl.set(R+'#beatD',{opacity:1},25.65);
+    D2.enter(tl, R+'.d-kick', 25.9, {y:-14,d:.3,ease:'power2.out'});
+    D2.enter(tl, R+'.d-t1', 26.7, {y:24,d:.4,ease:'power3.out'});
+    D2.enter(tl, R+'.d-t2', 27.4, {y:24,d:.4,ease:'expo.out'});
+    D2.sweep(tl, R, '.d-t2 .hl', 28.4);
+    tl.from(R+'.d-bet',{y:18,opacity:0,duration:.32,ease:'power3.out'},30.9);
+    tl.from(R+'.d-bet .b2',{x:18,opacity:0,duration:.3,ease:'expo.out'},32.5);
+
+    /* subtitles */
+    D2.subs(tl, [['#sub-1',0],['#sub-2',7.92],['#sub-3',13.529],['#sub-4',16.272],['#sub-5',20.97],['#sub-6',25.632]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 34.667, 'in');
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s01'] = tl;
+  })();
+  </script>
+</body>
+</html>

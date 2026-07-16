@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-16 特有 —— */
+[data-composition-id='s16'] .cols{margin-top:30px}
+[data-composition-id='s16'] .col .ch .cn{color:#8a8a85;font-weight:500}
+[data-composition-id='s16'] .col .it .ds .ar{font-family:'JetBrains Mono',monospace;color:#8a8a85;margin:0 8px}
+[data-composition-id='s16'] .gnote{margin-top:26px;font-weight:600;font-size:34px;line-height:1.4;color:#8a8a85}
+[data-composition-id='s16'] .gnote b{color:#edebe6;font-weight:900}
+[data-composition-id='s16'] .sline{margin-top:26px}
+[data-composition-id='s16'] .punch{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s16" data-start="0" data-duration="41.033" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[16/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// 照例 · <span class="acc">代价说清楚</span></div>
+      <div class="h1" style="margin-top:14px">两笔<span class="em">省不掉的税</span></div>
+
+      <div class="cols">
+        <div class="col left">
+          <div class="ch">TAX_01 <span class="cn">· 交接</span></div>
+          <div class="it it1"><div class="nm">交接的窄门</div><div class="ds">机构知识要持续编码，不是一次性动作</div></div>
+          <div class="it it2"><div class="nm">该交？该留？</div><div class="ds">从来不是显而易见的</div></div>
+        </div>
+        <div class="col right alt">
+          <div class="ch">TAX_02 <span class="cn">· 审视</span></div>
+          <div class="it it1"><div class="nm">外部审视躲不掉</div><div class="ds">造东西的人<span class="ar">→</span>面向公众的高管</div></div>
+          <div class="it it2"><div class="nm">分析师简报 · 上市路演</div><div class="ds">从此要站到公众面前</div></div>
+        </div>
+      </div>
+
+      <div class="gnote">这些活，<b>没一样是建造者天生喜欢的</b></div>
+
+      <div class="sline"><span class="status"><span class="dot"></span>三种通关形态 · 全都要求过关</span></div>
+
+      <div class="h2 punch">精益结构可保住，<span class="hl"><span class="bar"></span><span class="tx">这笔税省不掉</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.005" data-duration="2.245" data-track-index="5"><div class="sub-inner">照例，<span class="sub-k">代价</span>也要说清楚。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.417" data-duration="7.298" data-track-index="5"><div class="sub-inner">第一，交接的窄门是真实的，机构知识的编码是<span class="sub-k">持续的苦工</span>，不是一次性动作。</div></div>
+    <div id="sub-3" class="clip sub" data-start="9.715" data-duration="6.464" data-track-index="5"><div class="sub-inner">就算你天生擅长授权，<span class="sub-k">什么该交、什么该留</span>，也从来不是显而易见的。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.349" data-duration="2.449" data-track-index="5"><div class="sub-inner">第二，<span class="sub-k">外部审视</span>躲不掉。</div></div>
+    <div id="sub-5" class="clip sub" data-start="18.798" data-duration="9.797" data-track-index="5"><div class="sub-inner">走到这一关，你的角色会从造东西的人，变成一个<span class="sub-k">面向公众的高管</span>：给分析师做简报，跑上市路演。</div></div>
+    <div id="sub-6" class="clip sub" data-start="28.595" data-duration="4.454" data-track-index="5"><div class="sub-inner">这些活，几乎没有一样是建造者<span class="sub-k">天生喜欢的</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="33.197" data-duration="3.741" data-track-index="5"><div class="sub-inner">但<span class="sub-k">三种通关形态</span>，全都要求它们过关。</div></div>
+    <div id="sub-8" class="clip sub" data-start="36.938" data-duration="3.961" data-track-index="5"><div class="sub-inner">精益的结构可以保住，这笔税，<span class="sub-k">省不掉</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s16'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .95, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.col.left', 2.6, {x:-24, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.left .it2', 9.8, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.col.right', 16.4, {x:24, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.right .it2', 19.0, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.gnote', 28.7, {y:14, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.sline', 33.3, {y:14, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 37.0, {y:18, d:.36, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 37.7);
+    D2.subs(tl, [['#sub-1',0.005],['#sub-2',2.417],['#sub-3',9.715],['#sub-4',16.349],['#sub-5',18.798],['#sub-6',28.595],['#sub-7',33.197],['#sub-8',36.938]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 41.033, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s16'] = tl;
+  })();
+  </script>
+</body>
+</html>

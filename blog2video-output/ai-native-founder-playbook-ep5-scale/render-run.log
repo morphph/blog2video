@@ -1,1 +1,41 @@
 === d2 render: ai-native-founder-playbook-ep5-scale · 18 场景 · node=v22.22.0 ===
+=== clip 校验 (clip_dur vs scenes-data.dur) ===
+  scene-01  clip= 34.700  data= 34.667  Δ=+0.033
+  scene-02  clip= 14.000  data= 14.000  Δ=+0.000
+  scene-03  clip= 11.100  data= 11.100  Δ=+0.000
+  scene-04  clip= 17.700  data= 17.667  Δ=+0.033
+  scene-05  clip= 44.833  data= 44.833  Δ=+0.000
+  scene-06  clip= 43.200  data= 43.167  Δ=+0.033
+  scene-07  clip= 40.000  data= 39.967  Δ=+0.033
+  scene-08  clip= 32.033  data= 32.033  Δ=+0.000
+  scene-09  clip= 35.133  data= 35.133  Δ=+0.000
+  scene-10  clip= 29.400  data= 29.367  Δ=+0.033
+  scene-11  clip= 64.800  data= 64.767  Δ=+0.033
+  scene-12  clip= 15.400  data= 15.400  Δ=+0.000
+  scene-13  clip= 59.633  data= 59.633  Δ=+0.000
+  scene-14  clip= 57.100  data= 57.067  Δ=+0.033
+  scene-15  clip= 53.900  data= 53.867  Δ=+0.033
+  scene-16  clip= 41.033  data= 41.033  Δ=+0.000
+  scene-17  clip= 74.400  data= 74.400  Δ=+0.000
+  scene-18  clip=  5.000  data=  5.000  Δ=+0.000
+  TOTAL video ≈ 673.367s
+=== concat → silent master ===
+[out#0/mp4 @ 0x8d6c283c0] video:46371KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.174448%
+frame=20201 fps=0.0 q=-1.0 Lsize=   46452KiB time=00:11:13.36 bitrate= 565.1kbits/s speed=5.31e+03x elapsed=0:00:00.12    
+=== mux audio (raw, no loudnorm, no -shortest) → video_1.mp4 ===
+frame=20201 fps=2017 q=-1.0 Lsize=   57847KiB time=00:11:07.26 bitrate= 710.2kbits/s speed=66.6x elapsed=0:00:10.01    
+[aac @ 0x7b1041500] Qavg: 65514.539
+=== FINAL 核验 ===
+codec_name=h264
+codec_type=video
+width=1080
+height=1920
+codec_name=aac
+codec_type=audio
+duration=673.366667
+audio_dur=667.260000
+-rw-r--r--@ 1 yufanp  staff  59235599 16 Jul 10:59 video_1.mp4
+✓ 交付片: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/video_1.mp4
+=== cover screenshot → video_1_cover_photo.png ===
+✓ 封面截图: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/video_1_cover_photo.png
+  源: /Users/yufanp/Desktop/Project/blog2video/blog2video-output/ai-native-founder-playbook-ep5-scale/cover_photo.html

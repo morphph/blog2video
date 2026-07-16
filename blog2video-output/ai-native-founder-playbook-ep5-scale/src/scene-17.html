@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-17 特有(收官 summary)—— */
+[data-composition-id='s17'] .recap{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:26px}
+[data-composition-id='s17'] .rr{background:#1c1c1e;border:1px solid #2a2a2c;border-left:3px solid #ccff4d;padding:15px 26px}
+[data-composition-id='s17'] .rtop{display:flex;align-items:baseline;gap:18px}
+[data-composition-id='s17'] .stg{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:700;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:3px 0;min-width:120px;text-align:center;letter-spacing:.02em}
+[data-composition-id='s17'] .kw{font-weight:600;font-size:33px;color:#edebe6;line-height:1.25}
+[data-composition-id='s17'] .kw .ar{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin:0 6px}
+[data-composition-id='s17'] .kw .eq{color:#8a8a85;font-family:'JetBrains Mono',monospace;margin:0 6px}
+[data-composition-id='s17'] .tf{margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:23px;color:#8a8a85;line-height:1.35;padding-left:138px}
+[data-composition-id='s17'] .tf .tl{color:#edebe6;font-weight:500}
+[data-composition-id='s17'] .tf .ar{color:#ccff4d;margin:0 6px}
+[data-composition-id='s17'] .s-comp{margin-top:22px}
+[data-composition-id='s17'] .s-comp b{color:#edebe6;font-weight:700}
+[data-composition-id='s17'] .s-comp .ar{color:#ccff4d;margin:0 4px}
+[data-composition-id='s17'] .bridge{margin-top:22px;font-weight:600;font-size:40px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s17'] .bridge .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s17'] .punch{margin-top:22px;font-weight:900;font-size:44px;color:#edebe6;line-height:1.3}
+[data-composition-id='s17'] .punch .dim{color:#8a8a85;font-weight:700}
+[data-composition-id='s17'] .thanks{margin-top:22px;font-weight:600;font-size:36px;color:#8a8a85;line-height:1.35}
+[data-composition-id='s17'] .thanks .em{color:#ccff4d;font-weight:700}
+[data-composition-id='s17'] .slogan{margin-top:20px;font-weight:700;font-size:40px;color:#edebe6;line-height:1.3}
+[data-composition-id='s17'] .slogan .em{color:#ccff4d;font-weight:900}
+[data-composition-id='s17'] .signoff{margin-top:20px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s17" data-start="0" data-duration="74.4" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[17/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// 五集收拢 · <span class="acc">四阶段回望</span></div>
+      <div class="h1" style="margin-top:16px">从一个想法，到<span class="em">一门生意</span></div>
+
+      <div class="rows recap">
+        <div class="rr r1">
+          <div class="rtop"><span class="stg">Idea</span><span class="kw">不见证据，不动工</span></div>
+          <div class="tf tf1"><span class="tl">验证</span> · 几个月 <span class="ar">→</span> 几个下午</div>
+        </div>
+        <div class="rr r2">
+          <div class="rtop"><span class="stg">MVP</span><span class="kw">判断力 <span class="eq">=</span> 唯一稀缺</span></div>
+          <div class="tf tf2"><span class="tl">原型</span> · 不必技术栈对口的联创</div>
+        </div>
+        <div class="rr r3">
+          <div class="rtop"><span class="stg">Launch</span><span class="kw">守住 PMF 是组织问题</span></div>
+          <div class="tf tf3"><span class="tl">发布</span> · 赛前冲刺 <span class="ar">→</span> 日常工作流</div>
+        </div>
+        <div class="rr r4">
+          <div class="rtop"><span class="stg">Scale</span><span class="kw">赌注 <span class="ar">→</span> 一门生意</span></div>
+          <div class="tf tf4"><span class="tl">规模化</span> · 运营重量也能托付</div>
+        </div>
+      </div>
+
+      <div class="status s-comp"><span class="dot"></span>四关走完 · <b>把季度 <span class="ar">→</span> 周</b></div>
+
+      <div class="bridge">工作没变 —— <span class="em">变的是路</span></div>
+
+      <div class="punch"><span class="dim">不是你能造什么，</span>是<span class="hl"><span class="bar"></span><span class="tx">你选择造什么</span></span></div>
+
+      <div class="thanks">五集 · 走完<span class="em">整条路</span>，谢谢你</div>
+
+      <div class="slogan">精读一篇，<span class="em">胜过刷一百条</span></div>
+
+      <div class="endchip signoff"><span class="dot"></span><span class="lab">精读AI · 我们下期再见</span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.012" data-duration="2.628" data-track-index="5"><div class="sub-inner">最后，把这五集<span class="sub-k">收拢在一起</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.784" data-duration="3.096" data-track-index="5"><div class="sub-inner">Idea 阶段，<span class="sub-k">不见证据不动工</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="5.88" data-duration="5.031" data-track-index="5"><div class="sub-inner">MVP 阶段，速度免费之后，<span class="sub-k">判断力</span>是唯一稀缺的东西。</div></div>
+    <div id="sub-4" class="clip sub" data-start="10.911" data-duration="6.193" data-track-index="5"><div class="sub-inner">Launch 阶段，找到 PMF 是产品问题，守住它是<span class="sub-k">组织问题</span>。</div></div>
+    <div id="sub-5" class="clip sub" data-start="17.256" data-duration="6.042" data-track-index="5"><div class="sub-inner">Scale 阶段，公司离了你也能转，创业从一个赌注，变成<span class="sub-k">一门生意</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="23.448" data-duration="6.808" data-track-index="5"><div class="sub-inner">四关走完，你会发现 AI 改变的是同一件事：它把<span class="sub-k">季度压成了周</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="30.396" data-duration="14.656" data-track-index="5"><div class="sub-inner">验证，从几个月变成<span class="sub-k">几个下午</span>；原型，不再需要一个技术栈对口的联合创始人；发布，从赛前冲刺变成日常工作流；连规模化的运营重量，也能交出去了。</div></div>
+    <div id="sub-8" class="clip sub" data-start="45.192" data-duration="7.962" data-track-index="5"><div class="sub-inner">创始人的工作<span class="sub-k">没有变</span>：找到一个真问题，做出解决它的东西，再把它做成一家有分量的公司。</div></div>
+    <div id="sub-9" class="clip sub" data-start="53.154" data-duration="0.971" data-track-index="5"><div class="sub-inner"><span class="sub-k">变的是路</span>。</div></div>
+    <div id="sub-10" class="clip sub" data-start="54.125" data-duration="6.408" data-track-index="5"><div class="sub-inner">当造东西这件事不再稀缺，瓶颈就不再是你能造什么，而是<span class="sub-k">你选择造什么</span>。</div></div>
+    <div id="sub-11" class="clip sub" data-start="60.672" data-duration="5.069" data-track-index="5"><div class="sub-inner">五集，陪你走完了从一个想法到一门生意的<span class="sub-k">整条路</span>。</div></div>
+    <div id="sub-12" class="clip sub" data-start="65.741" data-duration="2.203" data-track-index="5"><div class="sub-inner"><span class="sub-k">谢谢你</span>一路听到这里。</div></div>
+    <div id="sub-13" class="clip sub" data-start="68.088" data-duration="3.934" data-track-index="5"><div class="sub-inner">AI 世界很吵，<span class="sub-k">精读一篇，胜过刷一百条</span>。</div></div>
+    <div id="sub-14" class="clip sub" data-start="72.022" data-duration="1.376" data-track-index="5"><div class="sub-inner">我们<span class="sub-k">下期再见</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s17'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .9, {y:20, d:.42, ease:'expo.out'});
+    // 四阶段回望:逐条 build(原则)
+    D2.enter(tl, R+'.r1', 2.8, {x:-20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r2', 5.95, {x:-20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r3', 10.95, {x:-20, d:.4, ease:'power3.out'});
+    D2.enter(tl, R+'.r4', 17.3, {x:-20, d:.4, ease:'expo.out'});
+    // 压缩洞察
+    D2.enter(tl, R+'.s-comp', 23.6, {y:14, d:.34, ease:'power3.out'});
+    // 长 hold(sub-7 14.6s):每行揭示其「变化」子行,依 Idea→MVP→Launch→Scale 顺序
+    D2.enter(tl, R+'.tf1', 31.0, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tf2', 35.0, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tf3', 38.8, {y:8, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.tf4', 42.3, {y:8, d:.28, ease:'power2.out'});
+    // 收束
+    D2.enter(tl, R+'.bridge', 45.5, {y:14, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 54.3, {y:16, d:.4, ease:'expo.out'});
+    D2.sweep(tl, R, '.punch .hl', 55.2);
+    // 告别
+    D2.enter(tl, R+'.thanks', 61.0, {y:14, d:.34, ease:'power3.out'});
+    D2.enter(tl, R+'.slogan', 68.2, {y:14, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.signoff', 72.1, {y:12, d:.32, ease:'power2.out'});
+    D2.subs(tl, [['#sub-1',0.012],['#sub-2',2.784],['#sub-3',5.88],['#sub-4',10.911],['#sub-5',17.256],['#sub-6',23.448],['#sub-7',30.396],['#sub-8',45.192],['#sub-9',53.154],['#sub-10',54.125],['#sub-11',60.672],['#sub-12',65.741],['#sub-13',68.088],['#sub-14',72.022]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 74.4, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s17'] = tl;
+  })();
+  </script>
+</body>
+</html>

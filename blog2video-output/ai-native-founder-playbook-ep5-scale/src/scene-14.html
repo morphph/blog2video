@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-14 特有:飞轮 2×2 循环 + 数据电青 —— */
+[data-composition-id='s14'] .wheel{position:relative;width:100%;height:296px;margin-top:30px}
+[data-composition-id='s14'] .wnode{position:absolute;width:396px;height:86px;padding:0;display:flex;align-items:center;justify-content:center;gap:14px}
+[data-composition-id='s14'] .wn1{top:0;left:0}
+[data-composition-id='s14'] .wn2{top:0;right:0}
+[data-composition-id='s14'] .wn3{bottom:0;right:0}
+[data-composition-id='s14'] .wn4{bottom:0;left:0}
+[data-composition-id='s14'] .wnum{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:#ccff4d}
+[data-composition-id='s14'] .wtx{font-family:'MiSans',sans-serif;font-weight:600;font-size:34px;color:#edebe6}
+[data-composition-id='s14'] .wsub{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:19px;color:#8a8a85}
+[data-composition-id='s14'] .warr{position:absolute;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:44px;line-height:1;color:#ccff4d}
+[data-composition-id='s14'] .wa1{top:20px;left:50%;transform:translateX(-50%)}
+[data-composition-id='s14'] .wa2{top:50%;right:180px;transform:translateY(-50%)}
+[data-composition-id='s14'] .wa3{bottom:20px;left:50%;transform:translateX(-50%)}
+[data-composition-id='s14'] .wa4{top:50%;left:180px;transform:translateY(-50%)}
+[data-composition-id='s14'] .wcen{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;letter-spacing:.1em;color:#8a8a85}
+[data-composition-id='s14'] .wdot{width:12px;height:12px;border-radius:50%;background:#ccff4d}
+[data-composition-id='s14'] .lockrow{display:flex;align-items:center;gap:18px;margin-top:24px}
+[data-composition-id='s14'] .ltag{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:21px;color:#5fd3e8;border:1px solid rgba(95,211,232,.4);padding:3px 12px;flex-shrink:0}
+[data-composition-id='s14'] .ltx{font-weight:600;font-size:30px;color:#edebe6;line-height:1.35}
+[data-composition-id='s14'] .ltx .lc{color:#5fd3e8}
+[data-composition-id='s14'] .pcard{margin-top:24px}
+[data-composition-id='s14'] .pcard .term-bar{padding:12px 22px}
+[data-composition-id='s14'] .pcard .term-body{padding:22px 30px 20px}
+[data-composition-id='s14'] .pcard .term-l1{font-size:38px;color:#edebe6}
+[data-composition-id='s14'] .pchips{display:flex;align-items:center;gap:14px;margin-top:18px;flex-wrap:wrap}
+[data-composition-id='s14'] .pc{font-weight:600;font-size:27px;color:#edebe6;background:#121212;border:1px solid #2a2a2c;padding:8px 18px}
+[data-composition-id='s14'] .pc3{border:1px solid rgba(204,255,77,.4)}
+[data-composition-id='s14'] .pc3 .tx{font-size:27px}
+[data-composition-id='s14'] .psrc{margin-top:18px;font-weight:500;font-size:27px;color:#8a8a85}
+[data-composition-id='s14'] .psrc .pa{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin-right:10px}
+[data-composition-id='s14'] .psrc b{color:#edebe6;font-weight:700}
+[data-composition-id='s14'] .shead{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;color:#8a8a85;letter-spacing:.03em}
+[data-composition-id='s14'] .shead .sh-b{color:#edebe6;font-weight:700}
+[data-composition-id='s14'] .stats{margin-top:12px}
+[data-composition-id='s14'] .stat{padding:20px 16px}
+[data-composition-id='s14'] .stat .num{font-size:54px}
+[data-composition-id='s14'] .stat .lab{margin-top:8px;font-size:24px}
+[data-composition-id='s14'] .fin{display:flex;align-items:center;gap:14px;margin-top:18px}
+[data-composition-id='s14'] .fdot{width:13px;height:13px;border-radius:50%;background:#ccff4d;flex-shrink:0}
+[data-composition-id='s14'] .ft{font-weight:600;font-size:29px;color:#edebe6}
+[data-composition-id='s14'] .ft .em2{color:#ccff4d}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s14" data-start="0" data-duration="57.067" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[14/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// FORCE 01 难被复制 · <span class="acc">原料二 · 用户数据</span></div>
+      <div class="h1" style="margin-top:16px">用户数据的<span class="em">飞轮</span>，<br>竞对花钱也买不到</div>
+
+      <div class="wheel">
+        <div class="bracket wnode wn1"><span class="wnum">01</span><span class="wtx">行为信号</span><span class="wsub">接受 / 拒绝</span></div>
+        <div class="bracket wnode wn2"><span class="wnum">02</span><span class="wtx">产品改进</span></div>
+        <div class="bracket wnode wn3"><span class="wnum">03</span><span class="wtx">更多使用</span></div>
+        <div class="bracket wnode wn4"><span class="wnum">04</span><span class="wtx">更多信号</span></div>
+        <div class="warr wa1">→</div>
+        <div class="warr wa2">↓</div>
+        <div class="warr wa3">←</div>
+        <div class="warr wa4">↑</div>
+        <div class="wcen"><span class="wdot"></span>DATA FLYWHEEL</div>
+      </div>
+
+      <div class="lockrow">
+        <span class="ltag">TIME-LOCKED</span>
+        <span class="ltx">几千个用户磨出的<span class="lc">行为指纹</span>，锁死在时间里</span>
+      </div>
+
+      <div class="term pcard">
+        <div class="term-bar"><span class="d" style="background:#ff6b5e"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span><span class="t">moat_narrative.md</span></div>
+        <div class="term-body">
+          <div class="term-l1"><span class="p">$</span>让 Claude 起草一页护城河叙事</div>
+          <div class="pchips">
+            <span class="pc pc1">飞轮怎么转</span>
+            <span class="pc pc2">转了多久</span>
+            <span class="pc3 hl"><span class="bar"></span><span class="tx">两年也复制不了</span></span>
+          </div>
+          <div class="psrc"><span class="pa">→</span><b>一页纸</b> = 面对巨头拷问的答案</div>
+        </div>
+      </div>
+
+      <div class="shead">// 真实样本 · <span class="sh-b">Carta Healthcare</span> × Claude</div>
+      <div class="stats">
+        <div class="stat cyan st1"><div class="num">0</div><div class="lab">手术病例 / 年 · 临床数据抽取</div></div>
+        <div class="stat cyan st2"><div class="num">-0%</div><div class="lab">数据抽取时间</div></div>
+      </div>
+
+      <div class="fin"><span class="fdot"></span><span class="ft">这种深度，是<span class="em2">一路攒出来的</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0" data-duration="2.31" data-track-index="5"><div class="sub-inner">第二种原料，是<span class="sub-k">用户数据</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="2.32" data-duration="11.859" data-track-index="5"><div class="sub-inner">用户每天在你产品里接受什么、拒绝什么，这些行为信号回流成产品改进，改进带来更多使用，使用又产生更多信号——<span class="sub-k">飞轮</span>就转起来了。</div></div>
+    <div id="sub-3" class="clip sub" data-start="14.315" data-duration="6.936" data-track-index="5"><div class="sub-inner">几千个用户在你产品里打磨出来的<span class="sub-k">行为指纹</span>，锁死在时间里，竞争对手花钱也买不到。</div></div>
+    <div id="sub-4" class="clip sub" data-start="21.407" data-duration="12.996" data-track-index="5"><div class="sub-inner">有个练习值得做：让 Claude 基于你的数据，起草一页<span class="sub-k">护城河叙事</span>——你的飞轮怎么转、转了多久，以及为什么一个资源充足的对手今天从零开始，</div></div>
+    <div id="sub-5" class="clip sub" data-start="34.603" data-duration="1.935" data-track-index="5"><div class="sub-inner"><span class="sub-k">两年之内</span>也复制不了。</div></div>
+    <div id="sub-6" class="clip sub" data-start="36.538" data-duration="3.677" data-track-index="5"><div class="sub-inner">这<span class="sub-k">一页纸</span>，就是你面对巨头拷问时的答案。</div></div>
+    <div id="sub-7" class="clip sub" data-start="40.379" data-duration="1.67" data-track-index="5"><div class="sub-inner"><span class="sub-k">真实的样本</span>已经有了。</div></div>
+    <div id="sub-8" class="clip sub" data-start="42.049" data-duration="11.025" data-track-index="5"><div class="sub-inner">Carta Healthcare 用 Claude 驱动临床数据抽取平台，一年处理两万两千例手术病例，数据抽取时间<span class="sub-k">省了百分之六十六</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="53.074" data-duration="3.842" data-track-index="5"><div class="sub-inner">这种深度，不是从天上掉下来的，是<span class="sub-k">一路攒出来的</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s14'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    /* beat 1:标题(sub-1) */
+    D2.enter(tl, R+'.kicker', .4, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', .8, {y:20, d:.4, ease:'expo.out'});
+    /* beat 2:飞轮逐环点亮(sub-2) */
+    D2.enter(tl, R+'.wn1', 4.4, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.wa1', 7.6, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.wn2', 8.0, {x:24, ease:'power3.out'});
+    D2.enter(tl, R+'.wa2', 9.2, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.wn3', 9.6, {y:18, ease:'expo.out'});
+    D2.enter(tl, R+'.wa3', 11.2, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.wn4', 11.7, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.wa4', 12.9, {y:0, d:.25, ease:'power1.out'});
+    D2.enter(tl, R+'.wcen', 13.3, {y:0, d:.3, ease:'power2.out'});
+    D2.blink(tl, R+'.wcen .wdot', 13.7, 3);
+    /* beat 3:时间锁定的行为指纹(sub-3) */
+    D2.enter(tl, R+'.lockrow', 14.5, {x:-24, ease:'power3.out'});
+    /* beat 4:护城河叙事练习(sub-4/5/6) */
+    D2.enter(tl, R+'.pcard', 21.6, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.pc1', 28.0, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.pc2', 29.5, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.pc3', 31.5, {y:12, d:.3, ease:'power2.out'});
+    D2.sweep(tl, R, '.pc3', 34.8);
+    D2.enter(tl, R+'.psrc', 36.8, {y:12, d:.3, ease:'power2.out'});
+    /* beat 5:Carta 真实样本 count-up(sub-7/8) */
+    D2.enter(tl, R+'.shead', 40.6, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.st1', 45.6, {y:18, ease:'power3.out'});
+    var n1=document.querySelector(R+'.st1 .num'); var p1={v:0};
+    if(n1){ tl.to(p1,{v:22000,duration:1.6,ease:'power2.out',onUpdate:function(){ n1.textContent=Math.round(p1.v).toLocaleString('en-US'); }},46.0); }
+    D2.enter(tl, R+'.st2', 49.4, {y:18, ease:'expo.out'});
+    D2.countUp(tl, R+'.st2 .num', 49.8, 0, 66, 1.4, {prefix:'-', suffix:'%'});
+    /* beat 6:收束(sub-9) */
+    D2.enter(tl, R+'.fin', 53.3, {y:14, d:.32, ease:'power3.out'});
+    D2.blink(tl, R+'.fin .fdot', 54.0, 3);
+    D2.subs(tl, [['#sub-1',0],['#sub-2',2.32],['#sub-3',14.315],['#sub-4',21.407],['#sub-5',34.603],['#sub-6',36.538],['#sub-7',40.379],['#sub-8',42.049],['#sub-9',53.074]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 57.067, 'out');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s14'] = tl;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-13 特有 —— */
+[data-composition-id='s13'] .rows{gap:14px}
+[data-composition-id='s13'] .row{padding:22px 28px}
+[data-composition-id='s13'] .row .rt{font-size:38px}
+[data-composition-id='s13'] .code.cy{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+[data-composition-id='s13'] .taglist{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+[data-composition-id='s13'] .taglist .tg{font-family:'JetBrains Mono',monospace;font-size:23px;color:#edebe6;border:1px solid #3a3a3c;padding:4px 13px}
+[data-composition-id='s13'] .rd2{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#edebe6}
+[data-composition-id='s13'] .rd2 .p{color:#ccff4d;margin-right:10px}
+[data-composition-id='s13'] .case{margin-top:22px;width:100%;padding:26px 30px}
+[data-composition-id='s13'] .case .cs-k{font-family:'JetBrains Mono',monospace;font-size:25px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s13'] .case .cs-k b{color:#5fd3e8;font-weight:700}
+[data-composition-id='s13'] .case .cs-r{margin-top:14px;font-weight:600;font-size:36px;line-height:1.35}
+[data-composition-id='s13'] .case .cs-r .ar{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 8px}
+[data-composition-id='s13'] .case .cs-a{color:#8a8a85}
+[data-composition-id='s13'] .case .cs-b{color:#edebe6}
+[data-composition-id='s13'] .case .cs-b .pro{color:#ccff4d;font-weight:900}
+[data-composition-id='s13'] .fw{margin:24px 0 0 6px;font-size:27px}
+[data-composition-id='s13'] .punch{margin-top:24px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s13" data-start="0" data-duration="59.633" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[13/17]</div>
+    </div>
+
+    <div class="content tight">
+      <div class="kicker">// FORCE 01 难被复制 · <span class="acc">原料一</span></div>
+      <div class="h1" style="margin-top:14px">把<span class="em">领域知识</span><br>灌进产品够得着的地方</div>
+
+      <div class="rows" style="margin-top:34px">
+        <div class="row r1"><div class="n">01</div><div class="rb">
+          <div class="rt">把你知道的一切,持续灌给 <span class="code cy">Claude</span></div>
+          <div class="taglist"><span class="tg">行业黑话</span><span class="tg">监管的坑</span><span class="tg">边缘情况</span><span class="tg">显而易见的方案为何行不通</span></div>
+        </div></div>
+
+        <div class="row r2"><div class="n">02</div><div class="rb">
+          <div class="rt"><span class="code cy">Skills</span> 固化重复流程</div>
+          <div class="rd rd1">可复用技能包 → 每次都以同样方式执行的例程</div>
+          <div class="rd2"><span class="p">$</span>怎么审一份商业租约</div>
+          <div class="rd rd3">几个月 → 通用 AI 追不上的<span class="ok">专有知识底座</span></div>
+        </div></div>
+
+        <div class="row r3"><div class="n">03</div><div class="rb">
+          <div class="rt"><span class="code cy">Claude Code</span> 把它变成产品逻辑</div>
+        </div></div>
+      </div>
+
+      <div class="bracket case">
+        <div class="cs-k">CASE · <b>340B</b> 特殊药品折扣项目</div>
+        <div class="cs-r cs-a">通用 AI 医疗计费工具 <span class="ar">→</span> 理赔直接出错</div>
+        <div class="cs-r cs-b">你的产品 <span class="ar">→</span> <span class="pro">专门逻辑</span></div>
+      </div>
+
+      <div class="flowarrow fw">每撞到必错的边缘情况 <span class="a">→</span> +1 条真实测试</div>
+
+      <div class="h2 punch">测试套件 = <span class="hl"><span class="bar"></span><span class="tx">一张护城河地图</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.004" data-duration="1.341" data-track-index="5"><div class="sub-inner">先说<span class="sub-k">难被复制</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="1.345" data-duration="2.298" data-track-index="5"><div class="sub-inner">第一种原料，是<span class="sub-k">领域知识</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="3.643" data-duration="11.876" data-track-index="5"><div class="sub-inner">把你知道的一切——行业黑话、监管的坑、边缘情况、为什么显而易见的方案行不通——持续灌给 <span class="sub-k">Claude</span>，放进产品够得着的地方。</div></div>
+    <div id="sub-4" class="clip sub" data-start="15.664" data-duration="12.358" data-track-index="5"><div class="sub-inner">再用 <span class="sub-k">Skills</span>，也就是可复用的技能包，把重复的领域流程固化成每次都以同样方式执行的例程，比如"怎么审一份商业租约"。</div></div>
+    <div id="sub-5" class="clip sub" data-start="28.222" data-duration="5.403" data-track-index="5"><div class="sub-inner">几个月积累下来，这会变成一层通用 AI 追不上的<span class="sub-k">专有知识底座</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="33.772" data-duration="2.049" data-track-index="5"><div class="sub-inner">它会直接变成<span class="sub-k">产品逻辑</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="35.821" data-duration="13.037" data-track-index="5"><div class="sub-inner">举个例子：美国有一类编号叫三四零B的特殊药品折扣项目，通用的 AI 医疗计费工具，处理这类理赔会直接出错——而你的产品，为它写了<span class="sub-k">专门的逻辑</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="49" data-duration="6.128" data-track-index="5"><div class="sub-inner">每撞到一个通用竞品必错的边缘情况，就加一条<span class="sub-k">基于真实场景的测试</span>。</div></div>
+    <div id="sub-9" class="clip sub" data-start="55.128" data-duration="4.349" data-track-index="5"><div class="sub-inner">日积月累，你的测试套件，就是一张<span class="sub-k">护城河地图</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s13'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .3, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 1.55, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.r1', 3.9, {x:-24, ease:'power3.out'});
+    D2.stagger(tl, R+'.r1 .taglist .tg', 5.6, {y:12, step:1.55, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2', 15.9, {x:-24, ease:'expo.out'});
+    D2.enter(tl, R+'.r2 .rd1', 20.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .rd2', 26.2, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.r2 .rd3', 28.6, {y:12, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.r3', 33.95, {x:-24, ease:'power3.out'});
+    D2.enter(tl, R+'.case', 36.2, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.case .cs-a', 40.3, {y:12, d:.3, ease:'power2.out'});
+    D2.enter(tl, R+'.case .cs-b', 44.8, {y:12, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.fw', 49.35, {y:14, d:.32, ease:'power2.out'});
+    D2.enter(tl, R+'.punch', 55.35, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 56.4);
+    D2.subs(tl, [['#sub-1',0.004],['#sub-2',1.345],['#sub-3',3.643],['#sub-4',15.664],['#sub-5',28.222],['#sub-6',33.772],['#sub-7',35.821],['#sub-8',49],['#sub-9',55.128]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 59.633, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s13'] = tl;
+  })();
+  </script>
+</body>
+</html>

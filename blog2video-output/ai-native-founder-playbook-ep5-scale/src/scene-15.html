@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+/*@@BASE@@*/
+/* —— scene-15 特有 —— */
+[data-composition-id='s15'] .emb{margin-top:28px;width:100%;padding:28px 32px}
+[data-composition-id='s15'] .emb-k{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s15'] .emb-k b{color:#edebe6;font-weight:700}
+[data-composition-id='s15'] .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+[data-composition-id='s15'] .chips.w2{margin-top:12px}
+[data-composition-id='s15'] .chips .cp{display:inline-flex;align-items:center;background:#161618;border:1px solid #3a3a3c;padding:10px 18px;font-weight:600;font-size:29px;color:#edebe6;line-height:1.3}
+[data-composition-id='s15'] .chips .cp .ci{font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;margin-right:12px}
+[data-composition-id='s15'] .emb-note{margin-top:22px;font-weight:600;font-size:33px;line-height:1.4;color:#edebe6}
+[data-composition-id='s15'] .emb-note .neq{font-family:'JetBrains Mono',monospace;color:#8a8a85;margin:0 6px}
+[data-composition-id='s15'] .emb-note .ar{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 10px}
+[data-composition-id='s15'] .emb-note .em2{color:#ccff4d;font-weight:900}
+[data-composition-id='s15'] .bld{margin-top:24px;width:100%;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 32px}
+[data-composition-id='s15'] .bld-k{font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85;letter-spacing:.04em}
+[data-composition-id='s15'] .bld-k b{color:#5fd3e8;font-weight:700}
+[data-composition-id='s15'] .code.cy{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+[data-composition-id='s15'] .chain{margin-top:18px;font-weight:600;font-size:34px;line-height:1.4;color:#edebe6}
+[data-composition-id='s15'] .chain.c2{margin-top:16px}
+[data-composition-id='s15'] .chain .ar{font-family:'JetBrains Mono',monospace;color:#ccff4d;margin:0 10px}
+[data-composition-id='s15'] .chain .bd{color:#ccff4d;font-weight:900}
+[data-composition-id='s15'] .api{display:flex;gap:12px;margin-top:16px}
+[data-composition-id='s15'] .api .tg{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500;color:#5fd3e8;border:1px solid rgba(95,211,232,.35);padding:6px 18px}
+[data-composition-id='s15'] .punch{margin-top:28px}
+</style>
+</head>
+<body>
+  <div id="root" class="stage" data-composition-id="s15" data-start="0" data-duration="53.867" data-width="1080" data-height="1920">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · AI 原生创业手册<span class="b-cur"></span></div>
+      <div class="idx">[15/17]</div>
+    </div>
+
+    <div class="content top">
+      <div class="kicker">// FORCE 02 · <span class="acc">难被离开</span></div>
+      <div class="h1" style="margin-top:14px">不是挡对手进来，<br>是抬高<span class="em">离开的成本</span></div>
+
+      <div class="bracket emb">
+        <div class="emb-k">// 跑得越久 · <b>嵌得越深</b></div>
+        <div class="chips w1">
+          <span class="cp"><span class="ci">01</span>搭了自动化</span>
+          <span class="cp"><span class="ci">02</span>训练了团队</span>
+          <span class="cp"><span class="ci">03</span>接上了数据源</span>
+        </div>
+        <div class="chips w2">
+          <span class="cp"><span class="ci">04</span>打磨的提示词</span>
+          <span class="cp"><span class="ci">05</span>固化的流程</span>
+          <span class="cp"><span class="ci">06</span>标准化的输出</span>
+        </div>
+        <div class="emb-note">换掉你<span class="neq">≠</span>产品决策<span class="ar">→</span>全公司的<span class="em2">运营工程</span></div>
+      </div>
+
+      <div class="bld">
+        <div class="bld-k">// 建设动作 · <b>铺集成的表面积</b></div>
+        <div class="chain c1"><span class="code cy">Claude Code</span> 快速接上数据管道和工具</div>
+        <div class="api">
+          <span class="tg">API</span>
+          <span class="tg">webhook</span>
+          <span class="tg">SDK</span>
+        </div>
+        <div class="chain c2">不只是使用<span class="ar">→</span>在你的产品之上<span class="bd">构建</span></div>
+      </div>
+
+      <div class="h2 punch">这是<span class="hl"><span class="bar"></span><span class="tx">最深的一种绑定</span></span></div>
+    </div>
+
+    <div id="sub-1" class="clip sub" data-start="0.016" data-duration="7.319" data-track-index="5"><div class="sub-inner">第二种力，方向完全相反：不是挡对手进来，是抬高用户<span class="sub-k">离开的成本</span>。</div></div>
+    <div id="sub-2" class="clip sub" data-start="7.504" data-duration="3.948" data-track-index="5"><div class="sub-inner">用户在你的产品上跑得越久，它就<span class="sub-k">嵌得越深</span>。</div></div>
+    <div id="sub-3" class="clip sub" data-start="11.452" data-duration="5.331" data-track-index="5"><div class="sub-inner">他们在上面搭了<span class="sub-k">自动化</span>，训练了团队，接上了自己的数据源。</div></div>
+    <div id="sub-4" class="clip sub" data-start="16.783" data-duration="6.91" data-track-index="5"><div class="sub-inner">他们打磨的提示词、固化的流程、标准化的输出，全是<span class="sub-k">围绕着你的产品成形</span>的。</div></div>
+    <div id="sub-5" class="clip sub" data-start="23.848" data-duration="6.251" data-track-index="5"><div class="sub-inner">到这一步，换掉你，就不再是一个产品决策，而是一场全公司的<span class="sub-k">运营工程</span>。</div></div>
+    <div id="sub-6" class="clip sub" data-start="30.256" data-duration="4.114" data-track-index="5"><div class="sub-inner">建设动作也和第一种力完全不同：铺<span class="sub-k">集成的表面积</span>。</div></div>
+    <div id="sub-7" class="clip sub" data-start="34.54" data-duration="16.967" data-track-index="5"><div class="sub-inner">用 Claude Code 快速接上用户依赖的数据管道和工具；再往深一步，建好 API、webhook 这些接口，配上 SDK 开发工具包，让客户不只是使用你的产品，而是在你的产品之上，<span class="sub-k">构建他们自己的东西</span>。</div></div>
+    <div id="sub-8" class="clip sub" data-start="51.676" data-duration="2.025" data-track-index="5"><div class="sub-inner">这是<span class="sub-k">最深的一种绑定</span>。</div></div>
+  </div>
+
+  <script>
+  /*@@MOTION@@*/
+  </script>
+  <script>
+  (function(){
+    var R="[data-composition-id='s15'] ";
+    var tl=gsap.timeline({paused:true});
+    tl.from(R+'.grid',{opacity:0,duration:.5,ease:'power1.out'},.02);
+    tl.from(R+'.topbar',{y:-16,opacity:0,duration:.3,ease:'power2.out'},.2);
+    D2.enter(tl, R+'.kicker', .35, {y:-12, ease:'power2.out'});
+    D2.enter(tl, R+'.h1', 2.4, {y:20, d:.4, ease:'expo.out'});
+    D2.enter(tl, R+'.emb', 7.7, {y:18, d:.36, ease:'power3.out'});
+    D2.stagger(tl, R+'.w1 .cp', 11.7, {y:12, step:1.5, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.w2 .cp', 17.0, {y:12, step:1.9, d:.3, ease:'power3.out'});
+    D2.enter(tl, R+'.emb-note', 24.1, {y:14, d:.32, ease:'expo.out'});
+    D2.enter(tl, R+'.bld', 30.5, {y:18, d:.36, ease:'power3.out'});
+    D2.enter(tl, R+'.c1', 34.85, {y:12, d:.3, ease:'power2.out'});
+    D2.stagger(tl, R+'.api .tg', 40.2, {y:12, step:2.2, d:.28, ease:'power2.out'});
+    D2.enter(tl, R+'.c2', 47.6, {y:14, d:.32, ease:'power3.out'});
+    D2.enter(tl, R+'.punch', 51.9, {y:18, d:.35, ease:'power3.out'});
+    D2.sweep(tl, R, '.punch .hl', 52.5);
+    D2.subs(tl, [['#sub-1',0.016],['#sub-2',7.504],['#sub-3',11.452],['#sub-4',16.783],['#sub-5',23.848],['#sub-6',30.256],['#sub-7',34.54],['#sub-8',51.676]].map(function(s){return [R+s[0],s[1]];}));
+    D2.breath(tl, R+'.content', 53.867, 'in');
+    window.__timelines = window.__timelines || {};
+    window.__timelines['s15'] = tl;
+  })();
+  </script>
+</body>
+</html>

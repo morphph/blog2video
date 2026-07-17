@@ -1,0 +1,2412 @@
+1
+00:00:00,000 --> 00:00:03,000
+Everyone's John. So, today we're going
+
+2
+00:00:01,520 --> 00:00:05,160
+to go through probably the biggest
+
+3
+00:00:03,000 --> 00:00:08,080
+buzzwords in AI agent system recently,
+
+4
+00:00:05,160 --> 00:00:09,960
+agent harness, loop engineering, LLMOps,
+
+5
+00:00:08,080 --> 00:00:12,440
+which stands for large language models
+
+6
+00:00:09,960 --> 00:00:15,040
+operations, eval, which stands for
+
+7
+00:00:12,440 --> 00:00:16,920
+evaluation system for AI agents. And
+
+8
+00:00:15,040 --> 00:00:18,680
+these things become popular or become
+
+9
+00:00:16,920 --> 00:00:20,200
+viral on the internet not because they
+
+10
+00:00:18,680 --> 00:00:22,040
+are just some really complicated
+
+11
+00:00:20,200 --> 00:00:23,480
+concepts. Instead, they're actually very
+
+12
+00:00:22,040 --> 00:00:25,520
+simple. And I believe that simple
+
+13
+00:00:23,480 --> 00:00:27,560
+building blocks will actually help us
+
+14
+00:00:25,520 --> 00:00:28,880
+build the biggest architecture in the
+
+15
+00:00:27,560 --> 00:00:30,360
+world that will function like an
+
+16
+00:00:28,880 --> 00:00:31,880
+intelligent system. Let's walk through
+
+17
+00:00:30,360 --> 00:00:34,080
+this step-by-step, and it does not
+
+18
+00:00:31,880 --> 00:00:35,600
+matter if you're technical or not. We're
+
+19
+00:00:34,080 --> 00:00:37,520
+going to go through this and we'll make
+
+20
+00:00:35,600 --> 00:00:39,960
+sure that you're equipped with the right
+
+21
+00:00:37,520 --> 00:00:41,600
+knowledge for prompting your way through
+
+22
+00:00:39,960 --> 00:00:43,080
+building such a system in the future.
+
+23
+00:00:41,600 --> 00:00:44,560
+Let's jump in and get started. For those
+
+24
+00:00:43,080 --> 00:00:46,400
+of you who have watched my previous
+
+25
+00:00:44,560 --> 00:00:47,840
+video on AI agent memories, you're
+
+26
+00:00:46,400 --> 00:00:50,320
+probably already familiar with this
+
+27
+00:00:47,840 --> 00:00:52,800
+chart. This is an AI agent run, which
+
+28
+00:00:50,320 --> 00:00:54,560
+means that it takes an input from a user
+
+29
+00:00:52,800 --> 00:00:57,000
+prompt. For example, you're asking
+
+30
+00:00:54,560 --> 00:00:58,600
+ChatGPT or Deep Seek a question and say,
+
+31
+00:00:57,000 --> 00:00:59,720
+"Hey, when was Sam Altman fired from
+
+32
+00:00:58,600 --> 00:01:01,720
+OpenAI?" And then it's going to go
+
+33
+00:00:59,720 --> 00:01:03,360
+through entire run, but the end goal is
+
+34
+00:01:01,720 --> 00:01:05,040
+that you want to get a response. This is
+
+35
+00:01:03,360 --> 00:01:06,720
+actually ephemeral, which means that
+
+36
+00:01:05,040 --> 00:01:08,280
+there's no memory in this at all. We're
+
+37
+00:01:06,720 --> 00:01:10,280
+sending that question, "When was Sam
+
+38
+00:01:08,280 --> 00:01:11,880
+Altman fired?" and any chat history
+
+39
+00:01:10,280 --> 00:01:13,560
+that's currently in the chat. For
+
+40
+00:01:11,880 --> 00:01:15,400
+example, maybe we had some conversations
+
+41
+00:01:13,560 --> 00:01:17,760
+before that, which for example could be
+
+42
+00:01:15,400 --> 00:01:19,280
+you should talk to me like Elon Musk
+
+43
+00:01:17,760 --> 00:01:20,640
+grilling on Sam Altman because they
+
+44
+00:01:19,280 --> 00:01:21,960
+don't like each other. And then these
+
+45
+00:01:20,640 --> 00:01:23,960
+things will be fed into this thing
+
+46
+00:01:21,960 --> 00:01:25,680
+called a working memory or a context
+
+47
+00:01:23,960 --> 00:01:27,600
+RAM. In this video, we probably won't
+
+48
+00:01:25,680 --> 00:01:29,440
+dive too much in-depth into the memory
+
+49
+00:01:27,600 --> 00:01:30,960
+system because there's a previous video
+
+50
+00:01:29,440 --> 00:01:32,120
+talking about it already. I'll just
+
+51
+00:01:30,960 --> 00:01:34,040
+quickly go through it and then we'll
+
+52
+00:01:32,120 --> 00:01:35,320
+introduce the concept of what a harness
+
+53
+00:01:34,040 --> 00:01:37,080
+means. When you have these kind of
+
+54
+00:01:35,320 --> 00:01:39,320
+short-term working memory, there will be
+
+55
+00:01:37,080 --> 00:01:41,880
+an LLM or a large language model which
+
+56
+00:01:39,320 --> 00:01:42,880
+performs as a question and answer agent.
+
+57
+00:01:41,880 --> 00:01:45,080
+And at the end, you're going to get a
+
+58
+00:01:42,880 --> 00:01:47,720
+reply. But the problem with a simple
+
+59
+00:01:45,080 --> 00:01:49,720
+agent run with simply just the question,
+
+60
+00:01:47,720 --> 00:01:52,040
+current chat history, and system prompt
+
+61
+00:01:49,720 --> 00:01:54,080
+is that the memory is very short-term.
+
+62
+00:01:52,040 --> 00:01:56,200
+But when you run an AI agent system,
+
+63
+00:01:54,080 --> 00:01:58,480
+sometimes we need extra memories. For
+
+64
+00:01:56,200 --> 00:02:00,240
+example, how should the agent respond to
+
+65
+00:01:58,480 --> 00:02:01,920
+the person? A procedural memory is
+
+66
+00:02:00,240 --> 00:02:03,680
+exactly that. It basically tells the
+
+67
+00:02:01,920 --> 00:02:05,280
+agent how to act and what are some of
+
+68
+00:02:03,680 --> 00:02:07,080
+the instructions for the skill. We might
+
+69
+00:02:05,280 --> 00:02:09,560
+also want the agent to know some durable
+
+70
+00:02:07,080 --> 00:02:11,560
+facts about this context. For example, I
+
+71
+00:02:09,560 --> 00:02:13,760
+might want to compare my own early-stage
+
+72
+00:02:11,560 --> 00:02:15,400
+startup journey with Sam Altman's early
+
+73
+00:02:13,760 --> 00:02:17,600
+startup journey. We need this agent to
+
+74
+00:02:15,400 --> 00:02:20,280
+have a memory of who I am, which in this
+
+75
+00:02:17,600 --> 00:02:22,440
+context would be a durable facts or a
+
+76
+00:02:20,280 --> 00:02:23,880
+semantic memory. Who Sean is, what did
+
+77
+00:02:22,440 --> 00:02:25,520
+he build in the past? These kind of
+
+78
+00:02:23,880 --> 00:02:27,120
+things became a fact that you want your
+
+79
+00:02:25,520 --> 00:02:28,720
+agent to know, but they're not publicly
+
+80
+00:02:27,120 --> 00:02:30,520
+available if you're not famous because
+
+81
+00:02:28,720 --> 00:02:32,000
+the AI model won't be trained on such
+
+82
+00:02:30,520 --> 00:02:33,760
+information yet. But if you're famous
+
+83
+00:02:32,000 --> 00:02:35,120
+already, you can skip this. They already
+
+84
+00:02:33,760 --> 00:02:36,880
+know who you are. And another thing we
+
+85
+00:02:35,120 --> 00:02:38,959
+need is called episodic memory, and they
+
+86
+00:02:36,880 --> 00:02:41,320
+include things like the past events or
+
+87
+00:02:38,959 --> 00:02:43,040
+past chat history that does not exist in
+
+88
+00:02:41,320 --> 00:02:44,400
+this current conversation. For example,
+
+89
+00:02:43,040 --> 00:02:46,040
+I might suddenly be wondering, "When was
+
+90
+00:02:44,400 --> 00:02:48,160
+the last time I was preparing for a job
+
+91
+00:02:46,040 --> 00:02:49,880
+application?" And can we retrieve that
+
+92
+00:02:48,160 --> 00:02:52,200
+information and match, you know, if we
+
+93
+00:02:49,880 --> 00:02:54,040
+can get a job in ChatGPT. So, these
+
+94
+00:02:52,200 --> 00:02:55,720
+things will be retrieved from this thing
+
+95
+00:02:54,040 --> 00:02:57,640
+called an episodic memory, which is
+
+96
+00:02:55,720 --> 00:03:00,000
+basically a time series of the previous
+
+97
+00:02:57,640 --> 00:03:01,560
+conversations or previous triggers that
+
+98
+00:03:00,000 --> 00:03:03,160
+happened if you have a more complex
+
+99
+00:03:01,560 --> 00:03:04,920
+system. So, for those of you who have
+
+100
+00:03:03,160 --> 00:03:06,600
+watched my previous memory agent system
+
+101
+00:03:04,920 --> 00:03:07,640
+design, you might be wondering, "Sean,
+
+102
+00:03:06,600 --> 00:03:09,360
+why are you repeating all of these
+
+103
+00:03:07,640 --> 00:03:10,959
+things?" And that is because if you
+
+104
+00:03:09,360 --> 00:03:13,120
+think about the entire thing that we
+
+105
+00:03:10,959 --> 00:03:15,080
+just covered in the past few minutes,
+
+106
+00:03:13,120 --> 00:03:17,160
+we're really stating the one fact that a
+
+107
+00:03:15,080 --> 00:03:18,959
+large language model can't do these
+
+108
+00:03:17,160 --> 00:03:22,160
+things by itself. It's like a really
+
+109
+00:03:18,959 --> 00:03:23,560
+powerful brain that knows everything
+
+110
+00:03:22,160 --> 00:03:25,360
+about humanity, everything about
+
+111
+00:03:23,560 --> 00:03:27,840
+science, anything that happened in human
+
+112
+00:03:25,360 --> 00:03:30,680
+or biology history. But, it does not
+
+113
+00:03:27,840 --> 00:03:32,760
+know you. With you or the software who's
+
+114
+00:03:30,680 --> 00:03:35,519
+running this AI agent system, the large
+
+115
+00:03:32,760 --> 00:03:37,840
+language model has no clue with how you
+
+116
+00:03:35,519 --> 00:03:40,400
+want it to perform. This is why the
+
+117
+00:03:37,840 --> 00:03:42,000
+concept called harness becomes really
+
+118
+00:03:40,400 --> 00:03:44,440
+important in this. What harness means
+
+119
+00:03:42,000 --> 00:03:47,000
+literally is that it's a set of harness
+
+120
+00:03:44,440 --> 00:03:48,040
+tools that you use to control a horse
+
+121
+00:03:47,000 --> 00:03:50,200
+when you're doing a horse riding.
+
+122
+00:03:48,040 --> 00:03:51,519
+Imagine this large language model is a
+
+123
+00:03:50,200 --> 00:03:53,360
+horse, right? This horse is very
+
+124
+00:03:51,519 --> 00:03:55,760
+powerful, they can run around, but if
+
+125
+00:03:53,360 --> 00:03:57,160
+you don't have a good set of tools to
+
+126
+00:03:55,760 --> 00:03:59,360
+ride this horse, you could just get
+
+127
+00:03:57,160 --> 00:04:01,480
+hurt, you might go anywhere, you might
+
+128
+00:03:59,360 --> 00:04:02,480
+go somewhere random. If you're in a war,
+
+129
+00:04:01,480 --> 00:04:04,640
+you don't want that to happen. And
+
+130
+00:04:02,480 --> 00:04:07,080
+that's why we're doing all of these to
+
+131
+00:04:04,640 --> 00:04:08,560
+make sure we have good control over this
+
+132
+00:04:07,080 --> 00:04:10,840
+large language model and make sure we're
+
+133
+00:04:08,560 --> 00:04:12,560
+utilizing it at its maximum potential.
+
+134
+00:04:10,840 --> 00:04:14,520
+That's why in addition to just the
+
+135
+00:04:12,560 --> 00:04:16,560
+question or use a prompt and getting the
+
+136
+00:04:14,520 --> 00:04:18,680
+reply, and we're feeding them all in as
+
+137
+00:04:16,560 --> 00:04:20,519
+a working memory which can be enhanced
+
+138
+00:04:18,680 --> 00:04:21,959
+by these three memories we just talked
+
+139
+00:04:20,519 --> 00:04:23,800
+about. And in order for these three
+
+140
+00:04:21,959 --> 00:04:26,040
+memories to actually work, there's a bit
+
+141
+00:04:23,800 --> 00:04:27,960
+more details and they're all included in
+
+142
+00:04:26,040 --> 00:04:30,880
+Harness. Remember, Harness means we're
+
+143
+00:04:27,960 --> 00:04:32,480
+building this agent framework to control
+
+144
+00:04:30,880 --> 00:04:34,280
+this large language model so that it
+
+145
+00:04:32,480 --> 00:04:35,760
+works the way we want. For those of you
+
+146
+00:04:34,280 --> 00:04:37,160
+who study statistics or machine
+
+147
+00:04:35,760 --> 00:04:38,600
+learning, you would understand that a
+
+148
+00:04:37,160 --> 00:04:40,640
+large language model is actually
+
+149
+00:04:38,600 --> 00:04:42,360
+predicting the probability of the next
+
+150
+00:04:40,640 --> 00:04:43,960
+word that it should spit out. When
+
+151
+00:04:42,360 --> 00:04:45,680
+everything comes with probability,
+
+152
+00:04:43,960 --> 00:04:47,840
+there's randomness in it. But when we
+
+153
+00:04:45,680 --> 00:04:49,800
+solve problems, we sometimes don't want
+
+154
+00:04:47,840 --> 00:04:51,400
+too much randomness. So, that's why we
+
+155
+00:04:49,800 --> 00:04:52,960
+need to have a good control over this
+
+156
+00:04:51,400 --> 00:04:54,680
+technology. Now, let's continue to
+
+157
+00:04:52,960 --> 00:04:56,040
+finish this Harness. There are lots of
+
+158
+00:04:54,680 --> 00:04:58,120
+tools on the market that's already quite
+
+159
+00:04:56,040 --> 00:05:00,480
+useful. For example, you could try tools
+
+160
+00:04:58,120 --> 00:05:01,720
+like LangGraph, LangChain, or Pydantic,
+
+161
+00:05:00,480 --> 00:05:03,240
+and there are many others. In this
+
+162
+00:05:01,720 --> 00:05:04,480
+video, we won't dive too much in depth
+
+163
+00:05:03,240 --> 00:05:06,000
+into that, and we're going to finish
+
+164
+00:05:04,480 --> 00:05:07,800
+building up this Harness before we move
+
+165
+00:05:06,000 --> 00:05:09,400
+on to the next topic. So again, for this
+
+166
+00:05:07,800 --> 00:05:11,400
+agent to work properly, we need this
+
+167
+00:05:09,400 --> 00:05:13,760
+memory system to work, but this memory
+
+168
+00:05:11,400 --> 00:05:15,640
+system needs an update system cuz memory
+
+169
+00:05:13,760 --> 00:05:17,280
+doesn't just exist or pop up from
+
+170
+00:05:15,640 --> 00:05:19,520
+nowhere. You need to constantly update
+
+171
+00:05:17,280 --> 00:05:21,320
+it. That's why we need a database to
+
+172
+00:05:19,520 --> 00:05:23,560
+store all these memories so that when
+
+173
+00:05:21,320 --> 00:05:25,720
+the agent is running in this agent run,
+
+174
+00:05:23,560 --> 00:05:27,560
+it knows where to retrieve these
+
+175
+00:05:25,720 --> 00:05:29,640
+memories. So, whenever you see an icon
+
+176
+00:05:27,560 --> 00:05:31,480
+like this, this is a database, okay?
+
+177
+00:05:29,640 --> 00:05:32,760
+Procedural memory is basically remember
+
+178
+00:05:31,480 --> 00:05:34,280
+it's it's about instructions, right?
+
+179
+00:05:32,760 --> 00:05:35,919
+It's about how the agent should be
+
+180
+00:05:34,280 --> 00:05:37,640
+acting. It's like with a Harness on a
+
+181
+00:05:35,919 --> 00:05:39,080
+horse, you want the horse to ride faster
+
+182
+00:05:37,640 --> 00:05:40,840
+or slower. Normally, these are just
+
+183
+00:05:39,080 --> 00:05:42,080
+files or text, and that's why you
+
+184
+00:05:40,840 --> 00:05:44,360
+probably heard of this buzzword called
+
+185
+00:05:42,080 --> 00:05:46,240
+skills. Skill is basically a piece of
+
+186
+00:05:44,360 --> 00:05:48,440
+text in a markdown file that you feed
+
+187
+00:05:46,240 --> 00:05:50,520
+into AI agent like Clockwork. But, if
+
+188
+00:05:48,440 --> 00:05:52,920
+you want to harness the system well,
+
+189
+00:05:50,520 --> 00:05:54,960
+just having files and text is not
+
+190
+00:05:52,920 --> 00:05:57,800
+enough. And they're stored in databases
+
+191
+00:05:54,960 --> 00:05:58,840
+say like AWS, Superbase, Google Cloud,
+
+192
+00:05:57,800 --> 00:06:00,560
+you know, Azure, all these kind of
+
+193
+00:05:58,840 --> 00:06:01,960
+places. Or you can set up your own
+
+194
+00:06:00,560 --> 00:06:03,080
+server at home if you want, but that's
+
+195
+00:06:01,960 --> 00:06:04,880
+just too expensive. You don't want to do
+
+196
+00:06:03,080 --> 00:06:06,480
+that. And in order for this harness to
+
+197
+00:06:04,880 --> 00:06:09,120
+work properly, you also need to figure
+
+198
+00:06:06,480 --> 00:06:11,000
+out how to store the memories, okay? So,
+
+199
+00:06:09,120 --> 00:06:13,040
+for example, the episodic memory is a
+
+200
+00:06:11,000 --> 00:06:14,840
+time series of the events that happened
+
+201
+00:06:13,040 --> 00:06:16,400
+or the previous chat history, again. The
+
+202
+00:06:14,840 --> 00:06:17,919
+way we store it is actually very simple.
+
+203
+00:06:16,400 --> 00:06:19,520
+You just track every single thing that
+
+204
+00:06:17,919 --> 00:06:21,880
+happened, and then it's going to become
+
+205
+00:06:19,520 --> 00:06:23,640
+like a very long list of things that
+
+206
+00:06:21,880 --> 00:06:24,840
+happened in history with timestamps.
+
+207
+00:06:23,640 --> 00:06:26,800
+Durable facts is different story. You
+
+208
+00:06:24,840 --> 00:06:28,360
+can either input it yourself or you want
+
+209
+00:06:26,800 --> 00:06:30,120
+the system to sort of automatically
+
+210
+00:06:28,360 --> 00:06:32,160
+evolve over time. And the way for it to
+
+211
+00:06:30,120 --> 00:06:34,280
+evolve is that you want to consolidate
+
+212
+00:06:32,160 --> 00:06:36,080
+some of the conversations into the
+
+213
+00:06:34,280 --> 00:06:37,760
+semantic memory. If I'm running a D2C
+
+214
+00:06:36,080 --> 00:06:39,560
+brand e-commerce company, perhaps my
+
+215
+00:06:37,760 --> 00:06:42,280
+customers have talked to my customer
+
+216
+00:06:39,560 --> 00:06:43,840
+service agents for a million times about
+
+217
+00:06:42,280 --> 00:06:45,400
+how do I get reimbursed if this product
+
+218
+00:06:43,840 --> 00:06:48,040
+does not work? You want to consolidate
+
+219
+00:06:45,400 --> 00:06:50,000
+these conversations and distill them as
+
+220
+00:06:48,040 --> 00:06:51,440
+a fact into the semantic memory. And
+
+221
+00:06:50,000 --> 00:06:53,000
+that's why here we have a little gate
+
+222
+00:06:51,440 --> 00:06:54,560
+here. If a brand has a million people
+
+223
+00:06:53,000 --> 00:06:56,640
+purchasing products from it, let's say
+
+224
+00:06:54,560 --> 00:06:57,880
+you're Alibaba or Amazon, it just
+
+225
+00:06:56,640 --> 00:06:59,280
+doesn't make sense, and it's very
+
+226
+00:06:57,880 --> 00:07:00,919
+expensive. So, from a harness
+
+227
+00:06:59,280 --> 00:07:02,280
+perspective, you want to be smart about
+
+228
+00:07:00,919 --> 00:07:03,840
+this, and you want the system to be
+
+229
+00:07:02,280 --> 00:07:05,480
+automatic. And then simple way is
+
+230
+00:07:03,840 --> 00:07:07,280
+probably like maybe consolidate these
+
+231
+00:07:05,480 --> 00:07:08,680
+time-ordered events after every say
+
+232
+00:07:07,280 --> 00:07:10,040
+2,000 conversations because you have a
+
+233
+00:07:08,680 --> 00:07:12,360
+million customers. And then you can feed
+
+234
+00:07:10,040 --> 00:07:14,080
+these things into a summarizer agent,
+
+235
+00:07:12,360 --> 00:07:15,440
+which is another large language model
+
+236
+00:07:14,080 --> 00:07:17,120
+harness. You can define the system
+
+237
+00:07:15,440 --> 00:07:19,320
+prompt in this one. You can probably
+
+238
+00:07:17,120 --> 00:07:21,320
+feed it with some memories, too. Uh you
+
+239
+00:07:19,320 --> 00:07:22,880
+can configure different models. Maybe it
+
+240
+00:07:21,320 --> 00:07:25,520
+could be a cheaper model because you're
+
+241
+00:07:22,880 --> 00:07:27,160
+feeding too much text into it. So, the
+
+242
+00:07:25,520 --> 00:07:28,800
+context window's too big, and probably
+
+243
+00:07:27,160 --> 00:07:30,440
+these are very expensive. So, you can
+
+244
+00:07:28,800 --> 00:07:32,960
+use cheaper open-source models if you
+
+245
+00:07:30,440 --> 00:07:36,320
+want to. Having such a mechanism allows
+
+246
+00:07:32,960 --> 00:07:39,800
+you to consistently update this memory
+
+247
+00:07:36,320 --> 00:07:41,560
+system. The data should be coming from
+
+248
+00:07:39,800 --> 00:07:43,440
+the previous large language model
+
+249
+00:07:41,560 --> 00:07:45,720
+replies. Again, let's review how this
+
+250
+00:07:43,440 --> 00:07:47,880
+harness works. A user sent a prompt
+
+251
+00:07:45,720 --> 00:07:49,840
+where in one Asian runtime with the
+
+252
+00:07:47,880 --> 00:07:52,000
+current chat history and how the agent
+
+253
+00:07:49,840 --> 00:07:53,600
+should be performing, the system prompt,
+
+254
+00:07:52,000 --> 00:07:55,960
+we're preparing a working memory for
+
+255
+00:07:53,600 --> 00:07:58,320
+this AI agent to be able to answer a
+
+256
+00:07:55,960 --> 00:08:00,960
+question. And after every single time it
+
+257
+00:07:58,320 --> 00:08:03,520
+answered a question, it will send these
+
+258
+00:08:00,960 --> 00:08:06,360
+messages to this database. And then this
+
+259
+00:08:03,520 --> 00:08:08,440
+database is basically is feeding back to
+
+260
+00:08:06,360 --> 00:08:10,600
+this working memory every single time
+
+261
+00:08:08,440 --> 00:08:13,000
+when a question is checking for relevant
+
+262
+00:08:10,600 --> 00:08:15,600
+context. And at the same time, because
+
+263
+00:08:13,000 --> 00:08:17,640
+this database is too big, sometimes you
+
+264
+00:08:15,600 --> 00:08:19,800
+want to consolidate them into some
+
+265
+00:08:17,640 --> 00:08:22,480
+summarized information or distilled
+
+266
+00:08:19,800 --> 00:08:24,680
+facts so that they're stored properly in
+
+267
+00:08:22,480 --> 00:08:26,760
+a semantic memory so that the retrieval
+
+268
+00:08:24,680 --> 00:08:28,440
+of such memories is just faster. I know
+
+269
+00:08:26,760 --> 00:08:30,160
+we talked about retrieval a lot and
+
+270
+00:08:28,440 --> 00:08:31,800
+that's just another buzzword called rag,
+
+271
+00:08:30,160 --> 00:08:33,760
+which is retrieval augmented
+
+272
+00:08:31,800 --> 00:08:35,479
+generations. I also have a few videos
+
+273
+00:08:33,760 --> 00:08:36,960
+explaining what rags are. Feel free to
+
+274
+00:08:35,479 --> 00:08:38,680
+watch them. There's a little bit of
+
+275
+00:08:36,960 --> 00:08:41,080
+difference between how retrieve from
+
+276
+00:08:38,680 --> 00:08:42,840
+semantic memory and episodic memory. For
+
+277
+00:08:41,080 --> 00:08:45,480
+semantic memory, it's just rags because
+
+278
+00:08:42,840 --> 00:08:47,320
+these are just facts and text or files,
+
+279
+00:08:45,480 --> 00:08:48,760
+right? But then for episodic memory,
+
+280
+00:08:47,320 --> 00:08:49,839
+remember this is a time series. Let's
+
+281
+00:08:48,760 --> 00:08:51,320
+say we're still in this e-commerce
+
+282
+00:08:49,839 --> 00:08:52,680
+store, right? The user question could be
+
+283
+00:08:51,320 --> 00:08:54,320
+like, "What are the previous 10
+
+284
+00:08:52,680 --> 00:08:56,000
+conversations that we had with this
+
+285
+00:08:54,320 --> 00:08:58,040
+specific customer from the US?" And then
+
+286
+00:08:56,000 --> 00:09:00,240
+you might just need a SQL query to query
+
+287
+00:08:58,040 --> 00:09:02,160
+something that's pretty recent from this
+
+288
+00:09:00,240 --> 00:09:03,480
+episodic memory. But if your question is
+
+289
+00:09:02,160 --> 00:09:05,920
+like, "What were my previous 20
+
+290
+00:09:03,480 --> 00:09:07,360
+conversations that have customer
+
+291
+00:09:05,920 --> 00:09:09,480
+complaints on the quality of the
+
+292
+00:09:07,360 --> 00:09:11,600
+products and our agent did not
+
+293
+00:09:09,480 --> 00:09:14,160
+successfully resolve." With such a
+
+294
+00:09:11,600 --> 00:09:17,160
+question, you not only need a SQL query,
+
+295
+00:09:14,160 --> 00:09:19,839
+which is just capturing the dated events
+
+296
+00:09:17,160 --> 00:09:21,720
+in a data table, you also want to do
+
+297
+00:09:19,839 --> 00:09:23,880
+some semantic search. And that's why
+
+298
+00:09:21,720 --> 00:09:25,760
+here rag is important because it's
+
+299
+00:09:23,880 --> 00:09:27,480
+checking for relevant information for
+
+300
+00:09:25,760 --> 00:09:29,680
+you. You don't want the entire 2,000
+
+301
+00:09:27,480 --> 00:09:32,200
+messages. You want that 20 messages out
+
+302
+00:09:29,680 --> 00:09:34,080
+of these 2,000 that are exactly relevant
+
+303
+00:09:32,200 --> 00:09:36,600
+to what you want. And because these
+
+304
+00:09:34,080 --> 00:09:39,080
+complaints are in text, we need to do
+
+305
+00:09:36,600 --> 00:09:41,720
+some retrieval augmented generation to
+
+306
+00:09:39,080 --> 00:09:43,000
+match the semantic meanings between text
+
+307
+00:09:41,720 --> 00:09:44,680
+and the user prompt, so that you're
+
+308
+00:09:43,000 --> 00:09:46,600
+fetching the right context for the
+
+309
+00:09:44,680 --> 00:09:49,080
+working memory. By now, this is probably
+
+310
+00:09:46,600 --> 00:09:51,000
+a fast walk-through of the memory system
+
+311
+00:09:49,080 --> 00:09:53,240
+again, but we're just thinking about it
+
+312
+00:09:51,000 --> 00:09:54,840
+from a hardness perspective in this
+
+313
+00:09:53,240 --> 00:09:57,040
+video. And remember for harness, we're
+
+314
+00:09:54,840 --> 00:09:59,120
+training this horse of LLM to run
+
+315
+00:09:57,040 --> 00:10:00,920
+autonomously without having too much
+
+316
+00:09:59,120 --> 00:10:02,240
+randomness, okay? There's another piece
+
+317
+00:10:00,920 --> 00:10:04,440
+of it that's quite important, which is
+
+318
+00:10:02,240 --> 00:10:07,760
+the agent might not only just read the
+
+319
+00:10:04,440 --> 00:10:10,480
+memory. It might also do some tasks or
+
+320
+00:10:07,760 --> 00:10:12,960
+call some tools. When an agent calls
+
+321
+00:10:10,480 --> 00:10:14,760
+tools, it might not necessarily be just
+
+322
+00:10:12,960 --> 00:10:17,160
+one-time call. It could be multiple
+
+323
+00:10:14,760 --> 00:10:19,840
+times of calls. For instance, let's say
+
+324
+00:10:17,160 --> 00:10:22,040
+this AI agent has a bunch of agentic
+
+325
+00:10:19,840 --> 00:10:23,960
+tools such as help me schedule a
+
+326
+00:10:22,040 --> 00:10:26,360
+meeting, help me read or write my
+
+327
+00:10:23,960 --> 00:10:28,480
+customer relationship data from the CRM
+
+328
+00:10:26,360 --> 00:10:30,680
+system, or help me fetch the payment
+
+329
+00:10:28,480 --> 00:10:31,400
+information say from Stripe or Alipay.
+
+330
+00:10:30,680 --> 00:10:33,520
+And here's something we should be
+
+331
+00:10:31,400 --> 00:10:36,720
+careful about. If we give this horse or
+
+332
+00:10:33,520 --> 00:10:38,600
+this LLM technology full power, it could
+
+333
+00:10:36,720 --> 00:10:40,640
+just continuously do this forever,
+
+334
+00:10:38,600 --> 00:10:42,800
+right? Or it might not even know what's
+
+335
+00:10:40,640 --> 00:10:44,960
+the right time to stop or what is the
+
+336
+00:10:42,800 --> 00:10:46,640
+right tool calls it should make, when is
+
+337
+00:10:44,960 --> 00:10:48,720
+the end point to decide, okay, this
+
+338
+00:10:46,640 --> 00:10:50,280
+response is good enough, let's move on
+
+339
+00:10:48,720 --> 00:10:52,560
+to reply. That's why we have this
+
+340
+00:10:50,280 --> 00:10:54,040
+mechanism called end loop guardrails.
+
+341
+00:10:52,560 --> 00:10:55,240
+Yes, now we're talking about loop
+
+342
+00:10:54,040 --> 00:10:56,920
+engineering, one of the biggest
+
+343
+00:10:55,240 --> 00:11:00,560
+buzzwords in the recent few months. A
+
+344
+00:10:56,920 --> 00:11:04,480
+loop is part of harness. Why? Because a
+
+345
+00:11:00,560 --> 00:11:06,520
+loop is also helping us to control this
+
+346
+00:11:04,480 --> 00:11:08,760
+technology to make sure it runs the way
+
+347
+00:11:06,520 --> 00:11:11,400
+we want it to run. An example that could
+
+348
+00:11:08,760 --> 00:11:13,960
+be helpful for you is that let's say the
+
+349
+00:11:11,400 --> 00:11:16,000
+custom prompt is help me find out what
+
+350
+00:11:13,960 --> 00:11:17,640
+customers are complaining about our
+
+351
+00:11:16,000 --> 00:11:20,960
+products. What are some of the
+
+352
+00:11:17,640 --> 00:11:23,480
+follow-ups we could do in order to win
+
+353
+00:11:20,960 --> 00:11:25,040
+them back. And if they're asking for
+
+354
+00:11:23,480 --> 00:11:26,960
+reimbursement, have we done the
+
+355
+00:11:25,040 --> 00:11:29,040
+reimbursement or not? If not, can we do
+
+356
+00:11:26,960 --> 00:11:30,560
+that? This is probably a series of
+
+357
+00:11:29,040 --> 00:11:32,840
+questions, but sometimes we just dump
+
+358
+00:11:30,560 --> 00:11:35,080
+all of these things into AI agent, okay?
+
+359
+00:11:32,840 --> 00:11:37,480
+And after you have this prompt, this LLM
+
+360
+00:11:35,080 --> 00:11:39,560
+agent needs to decide, okay, what are
+
+361
+00:11:37,480 --> 00:11:42,080
+some of the tools that could be helpful
+
+362
+00:11:39,560 --> 00:11:45,040
+for me to finish this task? Loop here is
+
+363
+00:11:42,080 --> 00:11:48,280
+basically an architectural thinking of
+
+364
+00:11:45,040 --> 00:11:50,920
+when is good enough so that we stop and
+
+365
+00:11:48,280 --> 00:11:53,280
+give the user or the business owner a
+
+366
+00:11:50,920 --> 00:11:55,080
+reply, okay? So, what might happen here
+
+367
+00:11:53,280 --> 00:11:57,000
+is that the LLM agent is doing a bunch
+
+368
+00:11:55,080 --> 00:11:59,200
+of tool calls, it's doing some thinking,
+
+369
+00:11:57,000 --> 00:12:01,040
+it's saying, let me read from our
+
+370
+00:11:59,200 --> 00:12:03,560
+customer relationship management tool
+
+371
+00:12:01,040 --> 00:12:04,800
+like Salesforce, HubSpot, or Automanous.
+
+372
+00:12:03,560 --> 00:12:07,560
+And then it's going to find out, okay,
+
+373
+00:12:04,800 --> 00:12:09,800
+there were 30 customer complaints in the
+
+374
+00:12:07,560 --> 00:12:11,480
+past 2 months. 12 of them have got
+
+375
+00:12:09,800 --> 00:12:13,600
+reimbursement, the other eight have not
+
+376
+00:12:11,480 --> 00:12:15,600
+got reimbursement. So, after the first
+
+377
+00:12:13,600 --> 00:12:17,200
+initial fetch, it's probably responding
+
+378
+00:12:15,600 --> 00:12:18,600
+to the AI agent, right? And the agent
+
+379
+00:12:17,200 --> 00:12:21,840
+will be probably thinking, okay, the the
+
+380
+00:12:18,600 --> 00:12:23,680
+task or the ask is that can we can we
+
+381
+00:12:21,840 --> 00:12:24,680
+follow up with some of those who did not
+
+382
+00:12:23,680 --> 00:12:26,560
+get
+
+383
+00:12:24,680 --> 00:12:27,960
+the reimbursement, right? So, and then
+
+384
+00:12:26,560 --> 00:12:30,280
+it probably like just make another tool
+
+385
+00:12:27,960 --> 00:12:33,200
+calls and be like, hey, let's schedule a
+
+386
+00:12:30,280 --> 00:12:34,880
+meeting with those customers who did not
+
+387
+00:12:33,200 --> 00:12:36,160
+get a reimbursement, which are the eight
+
+388
+00:12:34,880 --> 00:12:37,960
+of them. If we go a little bit more
+
+389
+00:12:36,160 --> 00:12:39,720
+advanced, we even just use the
+
+390
+00:12:37,960 --> 00:12:41,880
+reimbursement trigger on Stripe or
+
+391
+00:12:39,720 --> 00:12:43,680
+Alipay to refund the customer. Can you
+
+392
+00:12:41,880 --> 00:12:45,160
+see that this is a loop until we finish
+
+393
+00:12:43,680 --> 00:12:47,240
+the task? And but of course, this is
+
+394
+00:12:45,160 --> 00:12:49,360
+like a case-by-case situation. It really
+
+395
+00:12:47,240 --> 00:12:50,920
+depends on what your task is, how you
+
+396
+00:12:49,360 --> 00:12:52,880
+build the system. So, there's no
+
+397
+00:12:50,920 --> 00:12:54,680
+one-solution-fits-all. Here, I'm just
+
+398
+00:12:52,880 --> 00:12:56,920
+explaining what a loop is. The very,
+
+399
+00:12:54,680 --> 00:12:58,480
+very essential part of this loop is that
+
+400
+00:12:56,920 --> 00:13:00,200
+it needs to know when it should stop.
+
+401
+00:12:58,480 --> 00:13:01,720
+That's why we need this end loop
+
+402
+00:13:00,200 --> 00:13:04,040
+guardrails. The guardrails could just
+
+403
+00:13:01,720 --> 00:13:05,600
+simply be the task is done. And perhaps
+
+404
+00:13:04,040 --> 00:13:07,320
+when the agent was doing the planning,
+
+405
+00:13:05,600 --> 00:13:08,800
+it should confirm with the user what is
+
+406
+00:13:07,320 --> 00:13:10,080
+a good ending point. It might clarify
+
+407
+00:13:08,800 --> 00:13:11,640
+with you, is this what you want,
+
+408
+00:13:10,080 --> 00:13:13,200
+reimbursing the other eight people, or
+
+409
+00:13:11,640 --> 00:13:14,360
+should I just tell you who they are and
+
+410
+00:13:13,200 --> 00:13:16,080
+then you will follow up later? All
+
+411
+00:13:14,360 --> 00:13:17,600
+right, these are two different decisions
+
+412
+00:13:16,080 --> 00:13:19,520
+you can make. And after you make, you're
+
+413
+00:13:17,600 --> 00:13:21,600
+basically telling the agent loop that
+
+414
+00:13:19,520 --> 00:13:23,839
+there's an ending scenario. Another good
+
+415
+00:13:21,600 --> 00:13:26,200
+example I saw today is that, you know,
+
+416
+00:13:23,839 --> 00:13:28,280
+when you're doing coding and cloud code
+
+417
+00:13:26,200 --> 00:13:30,200
+can just always pop up some windows and
+
+418
+00:13:28,280 --> 00:13:32,160
+ask you for permissions, right? So, the
+
+419
+00:13:30,200 --> 00:13:34,000
+good way to use a loop engineering here
+
+420
+00:13:32,160 --> 00:13:36,840
+is that you can set up a loop or set up
+
+421
+00:13:34,000 --> 00:13:38,640
+a hook in clock code and telling it that
+
+422
+00:13:36,840 --> 00:13:41,040
+you should always send me a notification
+
+423
+00:13:38,640 --> 00:13:42,560
+on my laptop if you are pending on some
+
+424
+00:13:41,040 --> 00:13:44,400
+permissions from me. Otherwise, if I'm
+
+425
+00:13:42,560 --> 00:13:46,400
+watching YouTube and then when I come
+
+426
+00:13:44,400 --> 00:13:48,240
+back 30 minutes later, I realize that
+
+427
+00:13:46,400 --> 00:13:50,600
+clock code is stuck in that one
+
+428
+00:13:48,240 --> 00:13:52,280
+permission like 25 minutes ago. That
+
+429
+00:13:50,600 --> 00:13:53,960
+would be a waste of my time, okay? So,
+
+430
+00:13:52,280 --> 00:13:55,960
+you can set up a loop like this to make
+
+431
+00:13:53,960 --> 00:13:57,680
+sure that there's a way to send you
+
+432
+00:13:55,960 --> 00:13:59,600
+notification pop-ups so that you know
+
+433
+00:13:57,680 --> 00:14:01,560
+the loop has ended or it needs your
+
+434
+00:13:59,600 --> 00:14:04,000
+input again. Are you guys still with me?
+
+435
+00:14:01,560 --> 00:14:07,040
+Good. So, by far we have covered AI
+
+436
+00:14:04,000 --> 00:14:08,920
+agent run with a memory system, with a
+
+437
+00:14:07,040 --> 00:14:10,720
+loop engineering around the large
+
+438
+00:14:08,920 --> 00:14:12,640
+language model agent, which has a
+
+439
+00:14:10,720 --> 00:14:14,760
+trigger to end the loop so that it sends
+
+440
+00:14:12,640 --> 00:14:17,280
+a reply to the user, and basically this
+
+441
+00:14:14,760 --> 00:14:19,560
+whole thing is an AI agent harness
+
+442
+00:14:17,280 --> 00:14:22,040
+system. What's next is one of the other
+
+443
+00:14:19,560 --> 00:14:24,960
+biggest buzzwords that Y Combinator
+
+444
+00:14:22,040 --> 00:14:27,040
+always mentions, which is eval or LLM
+
+445
+00:14:24,960 --> 00:14:29,480
+ops. Let's jump into it. But firstly, I
+
+446
+00:14:27,040 --> 00:14:31,280
+want you to understand why do we need
+
+447
+00:14:29,480 --> 00:14:33,240
+LLM ops here? Let's still look at the
+
+448
+00:14:31,280 --> 00:14:35,480
+left-hand side with this harness system.
+
+449
+00:14:33,240 --> 00:14:37,440
+The biggest problem here is that we
+
+450
+00:14:35,480 --> 00:14:39,720
+don't know how well it's performing. And
+
+451
+00:14:37,440 --> 00:14:42,200
+that's why we need a feedback loop to
+
+452
+00:14:39,720 --> 00:14:44,320
+help us understand is this agent
+
+453
+00:14:42,200 --> 00:14:47,600
+actually performing properly, right? For
+
+454
+00:14:44,320 --> 00:14:50,360
+my business or for my use case. And can
+
+455
+00:14:47,600 --> 00:14:53,440
+I continuously get feedback on how do we
+
+456
+00:14:50,360 --> 00:14:55,839
+fix it and actually fix it ourselves,
+
+457
+00:14:53,440 --> 00:14:57,600
+okay? And when we say fix it, a simple
+
+458
+00:14:55,839 --> 00:15:00,080
+way to understand it is that
+
+459
+00:14:57,600 --> 00:15:01,440
+can we have a better system prompt?
+
+460
+00:15:00,080 --> 00:15:03,600
+Can we have a better large language
+
+461
+00:15:01,440 --> 00:15:05,360
+model configurations?
+
+462
+00:15:03,600 --> 00:15:08,360
+Is there something we should change for
+
+463
+00:15:05,360 --> 00:15:09,560
+how we retrieve the AI agent memories?
+
+464
+00:15:08,360 --> 00:15:11,560
+These are kind of things that we can
+
+465
+00:15:09,560 --> 00:15:13,760
+continue to iterate. But in order to
+
+466
+00:15:11,560 --> 00:15:17,080
+iterate to make sure this system runs
+
+467
+00:15:13,760 --> 00:15:19,880
+properly, we need a way to evaluate it,
+
+468
+00:15:17,080 --> 00:15:22,720
+diagnose problems, solve the problems
+
+469
+00:15:19,880 --> 00:15:25,080
+until it's a healthy and well-performing
+
+470
+00:15:22,720 --> 00:15:28,440
+system. And that is called large
+
+471
+00:15:25,080 --> 00:15:30,960
+language model operations system, LLM
+
+472
+00:15:28,440 --> 00:15:33,240
+ops. So again, in order to understand
+
+473
+00:15:30,960 --> 00:15:35,680
+this properly, we need to come back to
+
+474
+00:15:33,240 --> 00:15:37,920
+what an agent run is. So an agent run,
+
+475
+00:15:35,680 --> 00:15:39,920
+you can simply understand it as a user
+
+476
+00:15:37,920 --> 00:15:41,960
+question is sent to a large language
+
+477
+00:15:39,920 --> 00:15:44,480
+model and then you get a reply. That is
+
+478
+00:15:41,960 --> 00:15:45,960
+one agent run. But in this agent run,
+
+479
+00:15:44,480 --> 00:15:47,880
+the agent tool calling could happen
+
+480
+00:15:45,960 --> 00:15:49,400
+multiple times. That does not matter,
+
+481
+00:15:47,880 --> 00:15:52,920
+right? We're just talking about from a
+
+482
+00:15:49,400 --> 00:15:55,320
+user input to a response from agent
+
+483
+00:15:52,920 --> 00:15:56,440
+perspective. That's one agent run. And
+
+484
+00:15:55,320 --> 00:15:59,520
+then we're going to introduce this
+
+485
+00:15:56,440 --> 00:16:02,280
+system called a tracing system. So every
+
+486
+00:15:59,520 --> 00:16:04,120
+agent run, we should trace like a tree
+
+487
+00:16:02,280 --> 00:16:05,440
+of events that happened. And there are
+
+488
+00:16:04,120 --> 00:16:06,480
+lots of tools that could help you with
+
+489
+00:16:05,440 --> 00:16:08,600
+that. It could be LangFuse, could be
+
+490
+00:16:06,480 --> 00:16:09,920
+LangSmith, etc., etc. A tree of events
+
+491
+00:16:08,600 --> 00:16:11,880
+could be like what did the person
+
+492
+00:16:09,920 --> 00:16:14,080
+actually ask, what retrievals did the
+
+493
+00:16:11,880 --> 00:16:15,480
+model actually retrieve, how many times
+
+494
+00:16:14,080 --> 00:16:17,680
+did the large language model actually
+
+495
+00:16:15,480 --> 00:16:20,560
+call the tools, and how was the tool
+
+496
+00:16:17,680 --> 00:16:22,080
+usage, how was the response time, right?
+
+497
+00:16:20,560 --> 00:16:24,160
+How long did it take for this entire
+
+498
+00:16:22,080 --> 00:16:26,839
+system to run for checking latencies,
+
+499
+00:16:24,160 --> 00:16:29,680
+and how many tokens have we used when we
+
+500
+00:16:26,839 --> 00:16:31,200
+do these tool calls, agent run, you
+
+501
+00:16:29,680 --> 00:16:33,000
+know, doing this retrieval augmented
+
+502
+00:16:31,200 --> 00:16:35,680
+generation, these kind of things. So
+
+503
+00:16:33,000 --> 00:16:37,120
+trace is helping us to track events,
+
+504
+00:16:35,680 --> 00:16:39,000
+basically. And that's the first step.
+
+505
+00:16:37,120 --> 00:16:41,800
+This is the step first to collect data.
+
+506
+00:16:39,000 --> 00:16:44,240
+And these data will be used for the
+
+507
+00:16:41,800 --> 00:16:46,640
+following two purposes. Was it a good
+
+508
+00:16:44,240 --> 00:16:49,240
+system run? And was it healthy? Which
+
+509
+00:16:46,640 --> 00:16:50,960
+corresponds to evaluation system.
+
+510
+00:16:49,240 --> 00:16:54,320
+We can probably use large language model
+
+511
+00:16:50,960 --> 00:16:56,440
+as a judge here to give us a score on
+
+512
+00:16:54,320 --> 00:16:58,600
+how well it performed. For example, if
+
+513
+00:16:56,440 --> 00:17:00,160
+the task has something to do with
+
+514
+00:16:58,600 --> 00:17:01,400
+schedule meetings, did the meeting
+
+515
+00:17:00,160 --> 00:17:03,200
+actually triggered? How long was the
+
+516
+00:17:01,400 --> 00:17:05,680
+response for an agent to reply to a
+
+517
+00:17:03,200 --> 00:17:07,360
+question? Was it 20 seconds or was it 2
+
+518
+00:17:05,680 --> 00:17:09,520
+milliseconds? And also things like how
+
+519
+00:17:07,360 --> 00:17:11,400
+many tokens have we used? These two are
+
+520
+00:17:09,520 --> 00:17:12,880
+basically in the same system. You can
+
+521
+00:17:11,400 --> 00:17:14,600
+write it as a deterministic code, you
+
+522
+00:17:12,880 --> 00:17:16,360
+can use an AI agent to do it, but this
+
+523
+00:17:14,600 --> 00:17:17,959
+is like part of the procedure, which is
+
+524
+00:17:16,360 --> 00:17:19,400
+helping us to understand was this a
+
+525
+00:17:17,959 --> 00:17:21,160
+healthy system?
+
+526
+00:17:19,400 --> 00:17:23,600
+And was it a good system? And after
+
+527
+00:17:21,160 --> 00:17:25,959
+that, we're going to diagnose, okay,
+
+528
+00:17:23,600 --> 00:17:28,120
+where and why something was broken. For
+
+529
+00:17:25,959 --> 00:17:30,160
+example, the meeting scheduling event
+
+530
+00:17:28,120 --> 00:17:31,360
+was never triggered. Why was that?
+
+531
+00:17:30,160 --> 00:17:33,240
+Right? We want to understand why was
+
+532
+00:17:31,360 --> 00:17:35,280
+that. And we could probably feed that
+
+533
+00:17:33,240 --> 00:17:37,240
+into coding agent in Claude to sort of
+
+534
+00:17:35,280 --> 00:17:39,640
+deep dive into it. Or, you know, if the
+
+535
+00:17:37,240 --> 00:17:41,520
+latency is 20 seconds instead of 2
+
+536
+00:17:39,640 --> 00:17:43,120
+milliseconds, something's wrong. Maybe
+
+537
+00:17:41,520 --> 00:17:44,280
+one of the tool call is taking too much
+
+538
+00:17:43,120 --> 00:17:48,000
+time.
+
+539
+00:17:44,280 --> 00:17:49,880
+Maybe the working memory is too large,
+
+540
+00:17:48,000 --> 00:17:51,960
+uh so that the response time for a large
+
+541
+00:17:49,880 --> 00:17:53,720
+language model to a memory retrieval is
+
+542
+00:17:51,960 --> 00:17:55,760
+just taking too much time. Maybe not
+
+543
+00:17:53,720 --> 00:17:58,560
+every single question requires a
+
+544
+00:17:55,760 --> 00:18:00,240
+retrieval from all these gigantic memory
+
+545
+00:17:58,560 --> 00:18:01,880
+system. Maybe you're just asking a
+
+546
+00:18:00,240 --> 00:18:04,120
+simple question be like, when was my
+
+547
+00:18:01,880 --> 00:18:05,040
+birthday? When was OpenAI started? And
+
+548
+00:18:04,120 --> 00:18:07,080
+these kind of information you probably
+
+549
+00:18:05,040 --> 00:18:08,720
+don't need to do a ton of retrieval. The
+
+550
+00:18:07,080 --> 00:18:10,600
+model itself already knows. So, you
+
+551
+00:18:08,720 --> 00:18:12,200
+basically want this system to provide a
+
+552
+00:18:10,600 --> 00:18:14,320
+dashboard for you to understand the
+
+553
+00:18:12,200 --> 00:18:16,120
+metrics. And then, with these metrics,
+
+554
+00:18:14,320 --> 00:18:16,880
+you can diagnose what is going wrong.
+
+555
+00:18:16,120 --> 00:18:19,280
+And then we're going to have a little
+
+556
+00:18:16,880 --> 00:18:21,200
+gate here, which is if the evaluation
+
+557
+00:18:19,280 --> 00:18:23,240
+system passed, well, you can define the
+
+558
+00:18:21,200 --> 00:18:25,080
+rules, we can either ship some very
+
+559
+00:18:23,240 --> 00:18:26,800
+simple fix, have a new version of the
+
+560
+00:18:25,080 --> 00:18:28,520
+prompt, or update the model
+
+561
+00:18:26,800 --> 00:18:30,680
+configuration, you know, some tool
+
+562
+00:18:28,520 --> 00:18:33,680
+changes, or the parameters for
+
+563
+00:18:30,680 --> 00:18:35,240
+retrievals. The LLM Ops will feed the
+
+564
+00:18:33,680 --> 00:18:37,360
+improved system prompt and the
+
+565
+00:18:35,240 --> 00:18:40,000
+configuration of the model back to this
+
+566
+00:18:37,360 --> 00:18:42,080
+agent run system. When then one LLM Ops
+
+567
+00:18:40,000 --> 00:18:44,520
+loop is finished. If, let's say,
+
+568
+00:18:42,080 --> 00:18:46,320
+something is deeply broken, right? We
+
+569
+00:18:44,520 --> 00:18:48,240
+cannot just simply ship the latest
+
+570
+00:18:46,320 --> 00:18:50,920
+version of the prompt. Then we should go
+
+571
+00:18:48,240 --> 00:18:52,800
+fix the bug, rerun the agent run, resend
+
+572
+00:18:50,920 --> 00:18:55,160
+the question, and then retrace the
+
+573
+00:18:52,800 --> 00:18:57,640
+events, and then redo this evaluation
+
+574
+00:18:55,160 --> 00:19:00,160
+system in this LLM Ops architecture. So,
+
+575
+00:18:57,640 --> 00:19:02,640
+now let's zoom out and look at this
+
+576
+00:19:00,160 --> 00:19:05,040
+chart one more time. We covered what an
+
+577
+00:19:02,640 --> 00:19:07,680
+AI agent run is, we covered how it would
+
+578
+00:19:05,040 --> 00:19:10,440
+retrieve information from memories, and
+
+579
+00:19:07,680 --> 00:19:13,000
+we understood how an LLM agent would ask
+
+580
+00:19:10,440 --> 00:19:15,080
+questions, would call tools to help it
+
+581
+00:19:13,000 --> 00:19:16,800
+finish the task in a loop, and it knows
+
+582
+00:19:15,080 --> 00:19:18,720
+when to stop the loop so that it we can
+
+583
+00:19:16,800 --> 00:19:20,800
+get the reply. This whole thing is a set
+
+584
+00:19:18,720 --> 00:19:23,360
+of harness tools that we're controlling
+
+585
+00:19:20,800 --> 00:19:25,120
+this horse, this technology, to run in
+
+586
+00:19:23,360 --> 00:19:27,400
+the right direction, okay, to do the
+
+587
+00:19:25,120 --> 00:19:29,000
+right task. And at the same time, we
+
+588
+00:19:27,400 --> 00:19:31,920
+have like a health checking system or
+
+589
+00:19:29,000 --> 00:19:34,360
+evaluation system to understand how
+
+590
+00:19:31,920 --> 00:19:37,040
+every single run is being traced, is
+
+591
+00:19:34,360 --> 00:19:39,080
+being observed, and how do we diagnose
+
+592
+00:19:37,040 --> 00:19:41,720
+some problems and fix some problems, and
+
+593
+00:19:39,080 --> 00:19:44,040
+ship the latest updates of the prompt,
+
+594
+00:19:41,720 --> 00:19:46,240
+about the model configuration, about all
+
+595
+00:19:44,040 --> 00:19:49,000
+these parameters or knobs that needs to
+
+596
+00:19:46,240 --> 00:19:50,920
+be updated, so that this system will be
+
+597
+00:19:49,000 --> 00:19:53,360
+an autonomous system that will just
+
+598
+00:19:50,920 --> 00:19:54,920
+self-evolve and grow over time. I really
+
+599
+00:19:53,360 --> 00:19:55,880
+hope this was helpful. Let me know what
+
+600
+00:19:54,920 --> 00:19:57,280
+you think, and if you have any
+
+601
+00:19:55,880 --> 00:19:59,160
+questions, you can always reach out to
+
+602
+00:19:57,280 --> 00:20:01,800
+me. I'll see you in the next video.
+
+603
+00:19:59,160 --> 00:20:01,800
+Thanks so much.
+

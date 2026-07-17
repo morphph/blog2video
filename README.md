@@ -123,6 +123,8 @@ The rendering engine includes 6 built-in slide types:
     └── design/
         └── design-system.md            Visual design spec
 
+templates/                              视频风格模板库(transcript+visual-style-prompt 两半+模板卡,seed→production,见 templates/README.md)
+
 blog2video-remotion/                    Remotion rendering engine
 ├── src/
 │   ├── Root.tsx                        Remotion root

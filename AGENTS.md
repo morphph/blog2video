@@ -46,6 +46,10 @@ MINIMAX_VOICE_ID=moss_audio_ccbe9ed6-3a37-11f1-a1e0-8a43ce7defab
 
 `.claude/skills/blog2video/` — pipeline orchestration logic + per-stage prompt specs (`prompts/`, `design/`, `examples/`). Loaded by `/blog2video` and friends.
 
+## Templates
+
+`templates/` = 视频风格模板库(模板 = transcript + visual-style-prompt 两半 + 模板卡,seed→production),详见 `templates/README.md`。
+
 ## NEVER
 - Never apply loudnorm/boost/post-processing to audio — MiniMax TTS output is used raw
 - Never add `title`, `description`, or `tags` to `meta.json` — Claudiny generates these on the server

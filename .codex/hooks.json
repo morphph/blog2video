@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run --directory ~/Desktop/Project/obsidian-vault-starter python hooks/pre-compact.py",
+            "command": "uv run --directory ~/Developer/obsidian-vault-starter python hooks/pre-compact.py",
             "timeout": 10
           }
         ]
@@ -30,7 +30,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run --directory ~/Desktop/Project/obsidian-vault-starter python hooks/session-start.py",
+            "command": "uv run --directory ~/Developer/obsidian-vault-starter python hooks/session-start.py",
             "timeout": 15
           }
         ]

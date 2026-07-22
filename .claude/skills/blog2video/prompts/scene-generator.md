@@ -13,7 +13,7 @@
 
 ```bash
 export PATH="$HOME/.npm-global/bin:/opt/homebrew/opt/node@22/bin:$PATH"   # hyperframes CLI 在 ~/.npm-global/bin(mac+linux 通用);node v22.x:mac 走 homebrew 路径,linux 上 node22 已在 /usr/bin(homebrew 路径不存在但无害)。node -v 必须 v22.x,否则渲染/快照 OOM
-cd /Users/yufanp/Desktop/Project/blog2video
+cd "$(git rev-parse --show-toplevel)"
 ```
 
 ## 1. 输入(全在磁盘)
@@ -163,7 +163,7 @@ GSAP `.from` 的 immediateRender 会在 t=0 就把 `.late` 设成 opacity:0,于�
 
 ```bash
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-cd /Users/yufanp/Desktop/Project/blog2video
+cd "$(git rev-parse --show-toplevel)"
 node .claude/skills/blog2video/scripts/build-scene.mjs OUT NN
 hyperframes lint OUT/scenes/scene-NN 2>&1 | grep -E "✗|error\(s\)"    # 必须 0 error
 NODE_OPTIONS="--max-old-space-size=5120" hyperframes snapshot OUT/scenes/scene-NN --at <场景内 5-6 个关键时刻,本地秒> --describe false

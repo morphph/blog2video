@@ -7,7 +7,7 @@
 ## Voice（真源按路径引用，不复制）
 
 **必读**：`content-ops/audience-profile.md` 的「Tutor 腔调」节（7 条规则，作者拍板）。
-路径按序探测：`~/content-ops/audience-profile.md`（VPS）→ `~/Desktop/Project/content-ops/audience-profile.md`（Mac）。
+路径按序探测：`~/content-ops/audience-profile.md`（VPS）→ `~/Developer/content-ops/audience-profile.md`（Mac）。
 
 **风格锚**：`.claude/skills/blog2video/design/wb-kit/references/example_transcript.md`
 （Sean's AI Stories 白板讲解视频逐字稿）。读它感受：hook 怎么开、比喻怎么带着图讲、

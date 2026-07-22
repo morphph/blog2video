@@ -2,6 +2,45 @@
 
 This file provides guidance to any coding agent (Claude Code, Codex, Aider, Cursor, etc.) working in this repository. It is a duplicate of CLAUDE.md kept in sync for tools that follow the agents.md convention.
 
+---
+
+## Codex Quick Reference
+
+### Repository structure
+- `blog2video-content/` — CLI orchestration (`cli.mjs`, `smoke.sh`) for the 5-stage pipeline.
+- `blog2video-remotion/` — Remotion rendering engine (TypeScript/React); has its own `package.json` + `.env`.
+- `src/` — root TypeScript sources (scheduler, publishers, queue watcher — compiled to `dist/` via `tsc`).
+- `.claude/` — Claude Code commands, skills, settings (pipeline prompt specs live here; keep intact).
+- `.codex/hooks.json` — hook config (see Safety constraints; contains an auto-deploy hook — review before enabling).
+- `templates/` — video-style template library. `config/`, `scripts/`, `bin/` — helpers.
+- `blog2video-output/` — generated per-video outputs. Committed to git but **not materialized on disk** in this clone (sparse-checkout). Run `git sparse-checkout disable` to fetch them.
+
+### Setup & development commands
+```bash
+npm install                 # root deps (openai, playwright, puppeteer-core, typescript)
+npm run build               # tsc -> dist/  (typecheck + build; safe, no external side effects)
+cd blog2video-remotion && npm install   # rendering engine deps (separate package)
+```
+
+### Lint / typecheck / test / build
+- **Build / typecheck:** `npm run build` (root `tsc`). No dedicated lint or unit-test suite is configured at root.
+- **Smoke (local):** `npm run b2v:smoke` — inspect `blog2video-content/smoke.sh` first; only run if it has no external/publish side effects.
+- There is no `test` script; do not invent one.
+
+### Safety constraints (load-bearing)
+- **Never** run publishing/upload/production commands: `publish:xhs`, `publish:weixin`, `publish:xhs:draft`, `wechat:intake`, `watch`, `scheduler`, `login:*`, `sync-to-gdrive.sh`, `upload.sh`, `gdrive-watcher.sh`, or `scripts/auto-deliver-ec2.sh`.
+- Never request/refresh OAuth tokens or read/print WeChat / Xiaohongshu / Google / MiniMax credentials. Secrets live only in `.env` / `cookies/` (git-ignored) — never commit them.
+- `.codex/hooks.json` defines a `PostToolUse` hook that runs `scripts/auto-deliver-ec2.sh` (deploy) on every Bash call. Do not enable Claude-Code-style hooks in an environment that would auto-run it unless you intend to deploy.
+- Treat rendering/publishing as opt-in: only when the human explicitly asks for that specific run.
+
+### Definition of Done
+- `npm run build` succeeds (no TS errors).
+- No secrets, `.env`, `cookies/`, `dist/`, `node_modules/`, or large generated media added to the commit.
+- Changes to pipeline behavior are reflected in the relevant `.claude/skills/` / `.claude/commands/` spec, per the Documentation Layers table below.
+- Commit message is descriptive; push only the intended files.
+
+---
+
 ## Project Overview
 
 Blog2Video: automated pipeline that converts English technical content (blog posts, PDFs, YouTube videos) into Chinese narrated videos (小红书/视频号 style). Orchestrated by a Claude Code slash command `/blog2video <url-or-file>` that runs 5 core stages via subagents.

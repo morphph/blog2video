@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<!-- slide 9/17 · type: image · 4:44 - 5:17 · 33s
+     d2「终端霓影」内容蓝本 —— scene-generator 从这里取标题/卡片/数字/命令/术语。
+     静态、自包含、无外链。签名色 #ccff4d 必在场。 -->
+<style>
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Demibold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MiSans';src:url('assets/fonts/MiSans-Heavy.ttf') format('truetype');font-weight:900}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#121212;font-family:'MiSans',-apple-system,'PingFang SC','Noto Sans SC',sans-serif;color:#edebe6}
+.stage{position:relative;width:1080px;height:1920px;background:#121212;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(237,235,230,.9) 1px,rgba(237,235,230,0) 1.5px);background-size:56px 56px;background-position:28px 28px;opacity:.045;-webkit-mask-image:radial-gradient(ellipse 78% 60% at 50% 42%,#000 50%,rgba(0,0,0,0) 100%)}
+.topbar{position:absolute;top:120px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5;font-family:'JetBrains Mono',monospace;font-size:25px;font-weight:500;color:#8a8a85;letter-spacing:.04em}
+.topbar .b-cur{display:inline-block;width:13px;height:26px;background:#ccff4d;margin-left:10px;vertical-align:-4px}
+.topbar .idx{color:#ccff4d}
+.content{position:absolute;inset:0;padding:300px 72px 540px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.content.top{justify-content:flex-start;padding-top:236px}
+.content.tight{justify-content:flex-start;padding-top:208px}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;letter-spacing:.05em}
+.kicker .acc{color:#ccff4d}
+.h1{font-weight:900;font-size:72px;line-height:1.12;color:#edebe6}
+.h1.xl{font-size:88px;line-height:1.08}
+.h1 .em{color:#ccff4d}
+.h2{font-weight:900;font-size:56px;line-height:1.2;color:#edebe6}
+.h2 .em{color:#ccff4d}
+.lead{font-weight:600;font-size:40px;line-height:1.45;color:#edebe6}
+.lead .dim{color:#8a8a85}
+.lead .em{color:#ccff4d}
+.hl{position:relative;display:inline-block;padding:4px 14px}
+.hl .bar{position:absolute;inset:0;background:#ccff4d}
+.hl .tx{position:relative;z-index:1;font-weight:900;color:#121212}
+.rows{display:flex;flex-direction:column;gap:16px;width:100%}
+.row{display:flex;align-items:flex-start;gap:24px;background:#1c1c1e;border:1px solid #2a2a2c;padding:24px 30px;width:100%}
+.row .n{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#ccff4d;line-height:1.25;min-width:56px}
+.row .rb{flex:1;min-width:0}
+.row .rt{font-weight:600;font-size:40px;color:#edebe6;line-height:1.28}
+.row .rd{margin-top:8px;font-weight:500;font-size:28px;color:#8a8a85;line-height:1.45}
+.row .rd .ok{color:#ccff4d;font-weight:600}
+.row.now{border-color:#ccff4d}
+.row.past{opacity:.52}
+.flowarrow{font-family:'JetBrains Mono',monospace;font-size:30px;color:#8a8a85;margin:2px 0 2px 14px}
+.flowarrow .a{color:#ccff4d}
+.term{width:100%;background:#1c1c1e;border:1px solid #2a2a2c}
+.term-bar{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid #2a2a2c}
+.term-bar .d{width:12px;height:12px;border-radius:50%}
+.term-bar .t{font-family:'JetBrains Mono',monospace;font-size:24px;color:#8a8a85;margin-left:14px}
+.term-body{padding:44px 40px 48px}
+.term-l1{font-weight:600;font-size:44px;line-height:1.45;color:#8a8a85}
+.term-l1 .p{color:#ccff4d;font-family:'JetBrains Mono',monospace;margin-right:14px}
+.term-l2{margin-top:24px;font-weight:900;font-size:60px;line-height:1.32;color:#edebe6}
+.term-l2 .em{color:#ccff4d}
+.term-en{margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#5fd3e8;line-height:1.5}
+.term-src{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#8a8a85}
+.bracket{position:relative;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 34px}
+.bracket::before,.bracket::after{content:'';position:absolute;width:26px;height:26px;pointer-events:none}
+.bracket::before{top:-1px;left:-1px;border-top:2px solid #ccff4d;border-left:2px solid #ccff4d}
+.bracket::after{bottom:-1px;right:-1px;border-bottom:2px solid #ccff4d;border-right:2px solid #ccff4d}
+.status{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.04em}
+.status .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.cur{display:inline-block;width:30px;height:54px;background:#ccff4d;vertical-align:-8px;margin-left:14px}
+.cols{display:flex;gap:22px;width:100%}
+.col{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:30px 28px;display:flex;flex-direction:column;min-width:0}
+.col .ch{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#ccff4d;letter-spacing:.03em;margin-bottom:22px}
+.col.alt .ch{color:#5fd3e8}
+.col.past{opacity:.6}
+.col.past .ch{color:#8a8a85}
+.col .it{margin-bottom:20px}
+.col .it:last-child{margin-bottom:0}
+.col .it .nm{font-weight:700;font-size:34px;color:#edebe6;line-height:1.25}
+.col .it .ds{margin-top:6px;font-weight:500;font-size:26px;color:#8a8a85;line-height:1.4}
+.col .it code,.code{font-family:'JetBrains Mono',monospace;font-size:.92em;color:#ccff4d;background:rgba(204,255,77,.1);border:1px solid rgba(204,255,77,.28);padding:1px 10px}
+.col.alt .it code{color:#5fd3e8;background:rgba(95,211,232,.1);border-color:rgba(95,211,232,.28)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:500;color:#ccff4d;border:1px solid rgba(204,255,77,.4);padding:2px 12px;margin-left:10px;vertical-align:3px}
+.tl{display:flex;flex-direction:column;gap:14px;width:100%}
+.tl-row{display:flex;align-items:center;gap:30px;background:#1c1c1e;border:1px solid #2a2a2c;padding:22px 30px}
+.tl-row .yr{flex-shrink:0;width:150px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:#8a8a85;letter-spacing:-.01em}
+.tl-row .wt{font-weight:600;font-size:36px;color:#edebe6;line-height:1.3}
+.tl-row .wt .sm{display:block;margin-top:4px;font-weight:500;font-size:26px;color:#8a8a85}
+.tl-row.now{border-color:#ccff4d;background:rgba(204,255,77,.06)}
+.tl-row.now .yr{color:#ccff4d}
+.stats{display:flex;gap:18px;width:100%}
+.stat{flex:1;background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 16px;text-align:center}
+.stat .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:62px;color:#edebe6;font-variant-numeric:tabular-nums;line-height:1}
+.stat .lab{margin-top:10px;font-weight:500;font-size:24px;color:#8a8a85;line-height:1.35}
+.stat.key{border-color:#ccff4d}
+.stat.key .num{color:#ccff4d}
+.stat.cyan .num{color:#5fd3e8}
+.win{width:100%;background:rgba(204,255,77,.07);border:1px solid #ccff4d;padding:28px 34px;text-align:center}
+.win .num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:84px;color:#ccff4d;font-variant-numeric:tabular-nums;line-height:1}
+.win .lab{margin-top:10px;font-weight:500;font-size:28px;color:#edebe6}
+.endchip{display:inline-flex;align-items:center;gap:16px;background:#1c1c1e;border:1px solid #2a2a2c;padding:18px 30px}
+.endchip .dot{width:14px;height:14px;border-radius:50%;background:#ccff4d}
+.endchip .lab{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;letter-spacing:.03em}
+.tncard{background:#1c1c1e;border:1px solid #2a2a2c;padding:26px 30px;width:100%}
+.tncard.past{opacity:.55}
+.tncard.nowc{border-color:#ccff4d}
+.tncard .lab{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:#8a8a85;letter-spacing:.08em;margin-bottom:14px}
+.tncard .lab.acc{color:#ccff4d}
+.tncard .txt{font-weight:600;font-size:33px;line-height:1.38;color:#edebe6}
+.tncard .txt.en{font-family:'JetBrains Mono',monospace;font-size:28px;line-height:1.5}
+.tncard .note{margin-top:12px;font-weight:500;font-size:26px;color:#8a8a85}
+.pipe{display:flex;align-items:center;gap:14px;flex-wrap:wrap;width:100%}
+.pipe .pn{font-family:'JetBrains Mono',monospace;font-size:28px;color:#edebe6;background:#1c1c1e;border:1px solid #2a2a2c;padding:12px 20px}
+.pipe .pn.hi{color:#ccff4d;border-color:#ccff4d}
+.pipe .pa{font-family:'JetBrains Mono',monospace;font-size:28px;color:#ccff4d}
+</style>
+</head>
+<body>
+  <div class="stage" data-slide="9" data-type="image" data-duration="33">
+    <div class="grid"></div>
+    <div class="topbar">
+      <div class="brand">精读AI · CONTEXT ENGINEERING<span class="b-cur"></span></div>
+      <div class="idx">[09/17]</div>
+    </div>
+
+    <div class="content">
+      <div class="kicker"><span class="acc">//</span> PROGRESSIVE DISCLOSURE</div>
+      <div class="h1" style="margin-top:24px">不是每次都用得上，<br>用上时<span class="em">特别关键</span></div>
+      <div class="rows" style="margin-top:40px">
+        <div class="row"><div class="n">01</div><div class="rb">
+          <div class="rt">验证 / 代码审查，<span class="code">搬出系统提示词</span></div>
+          <div class="rd">各自做成一个 Skill，模型需要的时候自己去调</div>
+        </div></div>
+        <div class="row now"><div class="n">02</div><div class="rb">
+          <div class="rt">一部分工具改成<span class="code">延迟加载</span></div>
+          <div class="rd">必须先搜到完整定义，才能调用</div>
+        </div></div>
+      </div>
+      <div class="pipe" style="margin-top:36px">
+        <span class="pn">tool</span><span class="pa">→</span><span class="pn hi">ToolSearch</span><span class="pa">→</span><span class="pn">完整定义</span><span class="pa">→</span><span class="pn">调用</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

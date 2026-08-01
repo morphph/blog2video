@@ -1,0 +1,19 @@
+{
+  "blog_metadata": {
+    "title": "The new rules of context engineering for Claude 5 generation models",
+    "title_zh": "官方删了 80% 提示词，效果没变差",
+    "word_count": 1679,
+    "slug": "trq212-context-engineering-claude5"
+  },
+  "video_plan": {
+    "total_videos": 1,
+    "rationale": "全篇是一条单一因果链——规则吃掉的是模型的判断力预算，所以为弱模型写的保单在强模型上过期；每个 section 都是这条论证的一环，拆开任何一段都会让「删的是冲突不是信息」这个题眼失去支撑。",
+    "episode_transitions": [],
+    "videos": [
+      {
+        "video_number": 1,
+        "title_zh": "官方删了 80% 提示词，效果没变差"
+      }
+    ]
+  }
+}

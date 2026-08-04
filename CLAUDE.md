@@ -117,7 +117,7 @@ All outputs go to `./blog2video-output/<blog-slug>/` — plan, scripts, configs,
 
 - Slide data flows as JSON: subagent generates `video_N_config.json` → copied to `src/data/video_config.json` at render time
 - Audio files go to `public/video_N_audio.mp3` for Remotion's `staticFile()` to find them
-- Script word count target: ~200 chars/minute × target duration
+- Script duration estimate — **use the calibrated model, not a flat chars/minute number**. Measured against 123 historical episodes (VTT end-timestamp = real audio duration), MiniMax TTS delivers: **CJK 324 chars/min, Latin+digit 803 chars/min, punctuation 175 marks/min** (MAPE 2.8%). Formula: `minutes = cjk/324 + latin/803 + punct/175`. A flat 200 chars/min **overestimates duration by ~25%** — it is a writing target, not a speech rate. Punctuation dominates because pauses, not syllables, drive runtime.
 - TTS: MiniMax `speech-02-hd`, voice ID set via `MINIMAX_VOICE_ID` in `blog2video-remotion/.env` (see `scripts/tts.mjs`)
 - Audio is used raw from MiniMax — no loudnorm/boost processing in the render pipeline
 
